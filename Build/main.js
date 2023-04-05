@@ -1282,14 +1282,16 @@ function showSettingsPanel() {
         close.style.right = '10px';
         close.style.fontSize = '30pt';
         close.style.fontWeight = 'bold';
-        close.addEventListener('click', () => {
-            inlineBtnsDiv.dataset.status = 'inlineButtons';
-            inlineBtnsDiv.innerHTML = '';
-            inlineBtnsDiv.style.zIndex = '-1';
-            return;
-        });
+        close.addEventListener('click', () => hideInlineButtonsDiv());
         inlineBtnsDiv.appendChild(close);
     })();
+    function hideInlineButtonsDiv() {
+        inlineBtnsDiv.dataset.status = 'inlineButtons';
+        inlineBtnsDiv.innerHTML = '';
+        inlineBtnsDiv.style.zIndex = '-1';
+        return;
+    }
+    ;
     //Show InstallPWA button
     (function installPWA() {
         btn = createBtn('button', 'button', 'settingsBtn', 'Install PWA', inlineBtnsDiv, 'InstallPWA', undefined, undefined, undefined, undefined, {
@@ -1386,7 +1388,12 @@ function showSettingsPanel() {
                         modifyUserLanguages(lang);
                         newBtn.classList.toggle('langBtnAdd');
                         //We retrieve again the displayed text/prayers by recalling the last button clicked
-                        showChildButtonsOrPrayers(lastClickedButton);
+                        if (containerDiv.children) {
+                            //Only if a text is already displayed
+                            showChildButtonsOrPrayers(lastClickedButton);
+                            showSettingsPanel(); //we display the settings pannel again
+                        }
+                        ;
                     }
                 });
                 if (userLanguages.indexOf(lang) < 0) {
@@ -1412,7 +1419,6 @@ function showSettingsPanel() {
                 btn = createBtn('button', 'button', 'settingsBtn', 'remove ' + actor, container, actor, actor, undefined, undefined, undefined, {
                     event: 'click',
                     fun: () => {
-                        closeSideBar(leftSideBar);
                         show == true ? show = false : show = true;
                         showActors.set(actor, show);
                         if (show == false) {
