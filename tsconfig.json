@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "umd",
+        "esModuleInterop": true,
+       "outDir": "Build",
+        "allowJs": true,
+    },
+  //  "files": ["ProjectCode.ts",
+    //    "modules/Prayers.ts",
+      //  "modules/sw.ts",
+   // ],
+    "exclude": [
+        "node_modules", "old", "NewBuild", "Build", "Build 2023 22 03"
+    ]
+}

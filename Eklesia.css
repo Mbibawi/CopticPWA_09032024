@@ -1,0 +1,441 @@
+@font-face {
+  font-family: AvaShenouda;
+  src: url(./fonts/Avva_Shenouda.ttf);
+}
+@font-face {
+  font-family: ArialCoptic;
+  src: url(./fonts/ArialCoptic.ttf);
+}
+.root{
+  --inline-column-width: 30%;
+  --text-column-width: 30%;
+}
+.Container {
+  display: grid;
+  max-width: 100vw;
+  margin:0px 2px;
+}
+.inlineBtnsContainer{
+  display:grid;
+  position: fixed;
+  top:0px;
+  width:100%;
+  justify-items: center;
+  z-index: 3;
+}
+
+.Content {
+  display: grid;
+  justify-self: center;
+  width:100%;
+  justify-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+body{
+  background-color: ivory;
+  overflow-x: hidden;
+  margin: 0px 1px;
+}
+.prayerTable {
+  display: block;
+}
+.Title {
+  color: rgb(45, 71, 100) !important;
+  font-weight: bold;
+  font-size: 11pt !important;
+  text-align: center !important;
+  padding: 8px 12px;
+  margin: 1px 1px;
+}
+
+.AR,
+.CA {
+  font-size: 14pt;
+  direction: rtl !important;
+}
+.FR,
+.EN {
+  font-size: 14pt;
+}
+.COP {
+  font-family: ArialCoptic;
+  font-weight: 595;
+  font-size: 14;
+}
+.Menu {
+  background-color: #5270a3;
+}
+
+#sideBarBtns{
+  margin-left: 2px;
+  margin-right: 0px;
+  justify-content: center;
+}
+.sideBarBtn, .inlineBtn {
+  border-radius: 9px;
+  background-color: #95190c;
+  margin-bottom: 2px;
+  border-color: #C45911 ;
+  align-items: center !important;
+}
+.sideBarBtn{
+  height: 8rem;
+  max-height: 60px;
+  width: 95%;
+  padding: 0px 1px;
+}
+
+.sideBarBtn > p{
+  padding: 0.1vw 0.1vw;
+  margin: 0.1vw 0.1vw;
+  font-size: 1vmax;
+}
+.inlineBtns{
+  display:grid;
+  justify-items: center;
+  width:95%;
+  align-self: center;
+  justify-self: stretch;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 3px 3px;
+  overflow: hidden;
+}
+.inlineBtn {
+height: fit-content;
+width: 30vmin;
+margin:2px 2px;
+}
+.inlineBtn > p{
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 9pt;
+  padding: 2px 2px;
+  margin: 1px 3px !important;
+}
+
+.centeredBtn {
+  width:80pt !important;
+  height: 55pt !important;
+}
+.centeredBtn > p{
+  line-height: 8pt !important;
+  font-size: 10pt !important;
+  padding: 1px 1px !important;
+}
+
+.homeImg{
+  width: 60%;
+  height: 80%;
+  justify-self: center;
+  align-self: center;
+  padding-bottom: 5px; 
+}
+
+
+#textDisplayArea{
+  max-width: 100%;
+  justify-items: stretch;
+}
+.btnText, .btnLableAR, .btnLableFR, .btnLableEN {
+  font-weight: bold;
+  font-size: 1.3vmax;
+  color: #f1f1f1;
+  font-family: "Times New Roman", Times, serif;
+  line-height:9pt;
+  overflow-wrap: normal;
+  margin:0px 5px;
+}
+.PrayerText {
+  padding: 0vw 0vw;
+  margin: 1vw 1vw;
+}
+
+.addLang, .langBtnAdd, .settingsBtn, .colorbtn {
+  display: grid;
+  background-color: rgba(161, 9, 29, 0.705);
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif; 
+  width: 95%;
+  margin: 1.5px 5px;
+  padding: 3px !important;
+  word-wrap:break-word;
+  max-width: 120px;
+  min-width: 80px;
+  min-height: 50px;
+  max-height: 50px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.TargetRow, .TargetRowTitle {
+  display: grid;
+  text-align: justify;
+  border-radius: 5px;
+  margin: 1px 5px;
+  justify-items: stretch;
+  width: 93vw;
+  line-height: 15pt;
+}
+
+.TargetRowTitle {
+  text-align: center;
+  background-color: #7E3B10 !important;
+  color: white;
+}
+.TargetRow > .AR, .TargetRowTitle >.AR{
+  grid-area: AR;
+}
+.TargetRow > .CA, .TargetRowTitle >.CA{
+  grid-area: CA;
+}
+
+.TargetRow > .FR, .TargetRowTitle >.FR{
+ grid-area: FR;
+}
+
+.TargetRow > .COP, .TargetRowTitle >.COP{
+  grid-area: COP;
+}
+.TargetRowTitle > p{
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+}
+.TargetRow >p, .TargetRowTitle >p{
+  margin:1px 4px;
+  padding:1px 2px;
+}
+.sign {
+  font-size: 13px;
+  color: white;
+  float: inline-start;
+  margin-left: 5px;
+}
+
+.Priest,
+#PriestColor {
+  background-color: #d9f5fc;
+}
+.Diacon,
+#DiaconColor {
+  background-color: #e0ecd0;
+}
+.Assembly,
+#AssemblyColor {
+  background-color: #FFF8AD;
+}
+td{
+  display: table-cell;
+}
+tr{
+  display: table-row;
+}
+table{
+  display: table;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 3pt;
+  font-family: "Times New Roman", Times, serif;
+}
+.colorbtn {
+  border-radius: 10px;
+  padding: 3pt;
+  font-size: 9pt !important;
+  max-width: 100px;
+  max-height: 90px;
+  justify-self: center;
+}
+.colorbtn >p{
+  margin:1px 1px;
+}
+.showDate {
+  color: #5270a3;
+  font-weight: bold;
+  padding: 7px;
+
+}
+
+/* The sidebar menu */
+.sideBar {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Stay on top */
+  top: 0;
+  bottom: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidebar */
+}
+/*the right sidebar*/
+.rightSideBar { 
+  right: 0px !important;
+}
+/*the left sidebar*/
+.leftSideBar {
+  left: 0px !important;
+}
+/*the text of the titles shown in the right sidebar*/
+.sideTitle > a{
+  font-style: italic !important;
+  color:white;
+  font-weight: bold !important;
+  font-size: 12pt !important;
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  text-align: right !important;
+  /*background-color: darkslategray !important;*/
+  border-radius: 10px;
+}
+
+
+/* The sidebar links */
+.sideBar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #c6c5c5;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideBar a:hover, .sideTitle a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sideBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-bottom: 10px ;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 2px;
+  margin: 3px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sideBar {
+    padding-top: 15px;
+  }
+  .sideBar a {
+    font-size: 18px;
+  }
+}
+.label {
+  display: inline;
+  font: 1rem;
+  font-family: "Times New Roman", Times, serif;
+}
+#datePicker {
+  display: inline;
+  width: 20vw;
+  height: 5vw;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(55, 211, 211);
+}
+#ProvideIDFromInput {
+  padding-top: 5vw;
+}
+.amplifiedTextSize{
+  font-size: x-large;
+}
+.Comment, .CommentText{
+  align-content: stretch;
+  background-color: ivory;
+  color: #2F5496;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: justify;
+  padding: 0px 3px !important;
+  font-style: italic;
+}
+.CommentText {
+  color: #C45911 !important;
+}
+.Comment >p{
+  align-content: stretch;
+}
+.settings{
+  width:auto;
+  height: 60px;
+  background-color: green;
+  font-size: 10pt;
+  font-weight: bold;
+  color:white;
+  text-align: center !important;
+  align-content: center !important;
+  border-radius: 10px;
+  margin: 5px 5px;
+  padding: 6px 6px;
+
+}
+.fractionPrayersBtn{
+  background-color: darkslategray !important;
+  width: 30;
+  margin: 2px 2px;
+  height: auto;
+  min-height: 220px;
+  justify-items: center;
+  border-radius: 20px;
+}
+.fractionPrayersBtn >p{
+  font-weight: 600;
+  font-size: 10pt;
+  line-height: 10pt;
+  margin:1px 1px;
+}
+.btnsContainer{
+  position: relative;
+  background-color: beige;
+  display: grid !important;
+  grid-template-columns: 50% 50% !important;
+  justify-content: center !important;
+  width: 100%;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.langBtnAdd{
+  background-color: red !important;
+}
+.settingsBtn{
+  background-color: green;
+  color:white;
+  padding: 12pt;
+}
+.dd{
+  background-color: saddlebrown;
+}

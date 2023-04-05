@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coptic PWA</title>
+
+        <link rel="stylesheet" href="Eklesia.css"/>
+<script>navigator.serviceWorker.register("service-worker.js")</script> 
+        <link rel="manifest" href="manifest.json" />    
+</head>
+<body>
+        <!-- Page content -->
+        <div id='content' class="Content">
+                
+                        <img id="homeImg" src="https://dub01pap001files.storage.live.com/y4msHAWQEvH0jt5CaEU7LRqIRS1-DTFzibcBT-oohLxb1sqhew6Ip4FwE1OQi4xNKCSSZd3FHhAeYMeTsNw4rdVcooMop3_9nW67v5hSNzZIaInXGc2GXeaYC-4qAWHKNopn4nBlHAEHpjyRwtb5gSVYGuiC9rMumv7xHNrwzSQ8F9HbB7Jai9RZyylt54lSIhW?width=794&height=1024&cropmode=none" class="homeImg" alt="Swipe right to open the side bar and start" onclick="toggleSideBars(leftSideBar)">
+                        <!-- the div where the inline buttons are displayed -->
+                        <div id='inlineBtnsContainer'  class='inlineBtnsContainer'>
+                        </div>
+  
+                <!-- The  left sidebar -->
+                <div id='leftSideBar' class="leftSideBar sideBar collapsed">
+                        <!--The close side bar button-->
+                        <a href="javascript:void(0)" 
+                                class="closebtn" 
+                                onclick="closeSideBar(leftSideBar)">
+                                &times;
+                        </a>
+                        <!--The div where the buttons will be displayed-->
+                        <div  id="sideBarBtns"></div>
+                        <!--The Date -->
+                        <div id="showCurrentDate" class="showDate" style="display:none"></div>
+                        <!--Settings-->
+                        <button id="settings" class="settings"  onclick="showSettingsPanel()">Settings
+                        </button> 
+
+        </div>
+                        <!-- The  right sidebar -->
+                <div id='rightSideBar' class="rightSideBar sideBar collapsed">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeSideBar(rightSideBar)">&times;</a>
+                                <div  id="sideBarBtns"></div>
+                        </div>
+                        <!-- the button opening and closing the left side bar -->
+                        <button id="opensidebar" class="openbtn" onclick='toggleSideBars()'>&#9776; Open Sidebar</button>                   
+                        <!--The div where the text of the prayers is displayed -->
+                        <div id='TargetDiv' class = 'Container'></div>                 
+        </div>
+
+
+        <script src="./Build/modules/DeclareGlobalVariables.js" type="text/javascript"></script>
+        <script src="./Build/modules/SetDates.js" type="text/javascript"></script>
+        <script src="./Build/modules/DeclarePrayersConsts.js" type="text/javascript"></script> 
+        <script src="./Build/modules/DeclareSeasonsPrayers.js" type="text/javascript"></script>
+        <script src="./Build/modules/DeclarePrayersArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareGospelVespersArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareGospelDawnArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareStPaulArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareKatholikonArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclarePraxisArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareSynaxariumArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareGospelMassArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareGospelNightArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclarePropheciesDawnArray.js" type="text/javascript"></script>   
+        <script src="./Build/modules/DeclareButtons.js" type="text/javascript"></script>
+        <script src="./Build/main.js" type="text/javascript"></script>   
+</body>
+</html>
+
