@@ -802,7 +802,7 @@ function openSideBar(sideBar) {
     sideBar.style.width = width;
     sideBar.classList.remove('collapsed');
     sideBar.classList.add('extended');
-    sideBar == leftSideBar ? contentDiv.style.marginLeft = width : contentDiv.style.marginRight = width;
+    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
     sideBarBtn.innerText = btnText;
     sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
     sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
@@ -818,7 +818,7 @@ function closeSideBar(sideBar) {
     sideBar.style.width = width;
     sideBar.classList.remove('extended');
     sideBar.classList.add('collapsed');
-    sideBar == leftSideBar ? contentDiv.style.marginLeft = width : contentDiv.style.marginRight = width;
+    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
     sideBarBtn.innerText = btnText;
     sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
     sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
