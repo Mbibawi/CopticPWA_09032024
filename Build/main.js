@@ -1261,6 +1261,7 @@ function showSettingsPanel() {
     let btn;
     inlineBtnsDiv.innerHTML = '';
     inlineBtnsDiv.dataset.status = 'settingsPanel';
+    inlineBtnsDiv.style.zIndex = '3';
     //Show current version
     (function showCurrentVersion() {
         let version = 'v0.7';
@@ -1284,6 +1285,7 @@ function showSettingsPanel() {
         close.addEventListener('click', () => {
             inlineBtnsDiv.dataset.status = 'inlineButtons';
             inlineBtnsDiv.innerHTML = '';
+            inlineBtnsDiv.style.zIndex = '-1';
             return;
         });
         inlineBtnsDiv.appendChild(close);
