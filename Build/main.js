@@ -190,7 +190,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
             p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
             p.textContent = text;
             p.addEventListener('dblclick', (event) => {
-                toggleClassListForAllChildrenOFAnElement(event, 'amplifiedTextSize');
+                toggleAmplifyText(event, 'amplifiedTextSize');
             }); //adding a double click eventListner that amplifies the text size of the chosen language;
             row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
         }
@@ -886,7 +886,7 @@ function DetectFingerSwipe() {
     ;
 }
 ;
-function toggleClassListForAllChildrenOFAnElement(ev, myClass) {
+function toggleAmplifyText(ev, myClass) {
     ev.preventDefault;
     let el = ev.target;
     let dataset = 'p[data-lang="' + el.dataset.lang + '"]';
@@ -895,6 +895,16 @@ function toggleClassListForAllChildrenOFAnElement(ev, myClass) {
         p.classList.toggle(myClass);
         //p.parentElement.style.gridTemplateColumns = We need a way to enlarge the cell containing the text 
     });
+    if (el.classList.contains(myClass)) {
+        //it means that the class was added when the user dbl clicked (not removed)
+        textAmplified.amplified = true;
+        textAmplified.lang = el.dataset.lang;
+    }
+    else {
+        textAmplified.amplified = false;
+        textAmplified.lang = '';
+    }
+    ;
 }
 ;
 /**
@@ -1004,6 +1014,11 @@ function setCSSGridTemplate(container) {
                 }
                 ;
             });
+        }
+        ;
+        if (textAmplified.amplified == true) {
+            //If the user had amplified the text, we will apply this choice to the newly displayed text unless the user changes it
+            container.querySelectorAll('p[data-lang="' + textAmplified.lang + '"]').forEach((el) => el.classList.add('amplifiedTextSize'));
         }
         ;
         /**
