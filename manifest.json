@@ -17,7 +17,7 @@
         "purpose": "maskable"
     },
     {
-        "src": "./assets/JesusChrist512x512.png",
+        "src": "./assets/JesusChrist192x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any"
