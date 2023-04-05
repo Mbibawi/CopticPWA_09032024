@@ -1264,7 +1264,7 @@ function showSettingsPanel() {
     inlineBtnsDiv.style.zIndex = '3';
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v0.7';
+        let version = 'v0.8';
         let p = document.createElement('p');
         p.style.color = 'red';
         p.style.fontSize = '15pt';
