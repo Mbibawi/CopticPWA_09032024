@@ -897,12 +897,10 @@ function toggleAmplifyText(ev, myClass) {
     });
     if (el.classList.contains(myClass)) {
         //it means that the class was added when the user dbl clicked (not removed)
-        textAmplified.amplified = true;
-        textAmplified.lang = el.dataset.lang;
+        textAmplified.set(el.dataset.lang, true);
     }
     else {
-        textAmplified.amplified = false;
-        textAmplified.lang = '';
+        textAmplified.set(el.dataset.lang, false);
     }
     ;
 }
@@ -1016,11 +1014,12 @@ function setCSSGridTemplate(container) {
             });
         }
         ;
-        if (textAmplified.amplified == true) {
-            //If the user had amplified the text, we will apply this choice to the newly displayed text unless the user changes it
-            container.querySelectorAll('p[data-lang="' + textAmplified.lang + '"]').forEach((el) => el.classList.add('amplifiedTextSize'));
-        }
-        ;
+        textAmplified.forEach((value, key) => {
+            if (value == true) {
+                container.querySelectorAll('p[data-lang="' + key + '"]').forEach((el) => el.classList.add('amplifiedTextSize'));
+            }
+            ;
+        });
         /**
         * Returns a string indicating the number of columns and their widths
         * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)

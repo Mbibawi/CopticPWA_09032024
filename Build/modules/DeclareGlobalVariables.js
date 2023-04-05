@@ -117,4 +117,5 @@ showActors.set(actors[4], false); //same comment as above concerning the 'Commen
 let lordFeasts = [
     copticFeasts.Nativity, copticFeasts.Baptism, Seasons.Resurrection, copticFeasts.Ascension, copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple
 ];
-let textAmplified = { lang: '', amplified: false };
+let textAmplified = new Map();
+allLanguages.map(lang => textAmplified.set(lang, false));
