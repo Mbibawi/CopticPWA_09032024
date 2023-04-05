@@ -320,9 +320,13 @@ const btnIncenseDawn = new Button({
         })();
         (function insertGospelReadings() {
             return __awaiter(this, void 0, void 0, function* () {
+                if (showActors.get('Diacon') == false) {
+                    return;
+                }
+                ;
                 let responses = setGospelPrayers(Readings.GospelDawn); //this gives us an array like ['PsalmResponse&D=####', 'RGID', 'GospelResponse&D=####']
                 btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('PrayerGospelPrayerPart2&D=0000') + 1, 0, responses[0]); //inserting Psalm Response id (which corresponds to responses[0])
-                btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('PrayerGospelResponse&D=0000'), 1, responses[2]); //inserting Psalm Response id (which corresponds to responses[0])
+                btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('PrayerGospelResponse&D=0000'), 1, responses[2]); //inserting Gospel Response id (which corresponds to responses[0])
                 //We create a fake button that we will pass to showPrayers() in order to retrieve the Gospel Text and append it to newDiv
                 let fakeBtn = new Button({
                     btnID: 'fakeGospelReadingBtn',
@@ -355,8 +359,8 @@ const btnIncenseDawn = new Button({
                     }
                 }
                 ;
-                containerDiv.querySelector('div[data-root=\"' + 'PrayerGospelIntroductionPsalmComment&D=0000' + '\"').insertAdjacentElement('afterend', psalmDiv);
-                containerDiv.querySelector('div[data-root=\"' + 'PrayerGospelIntroductionGospelComment&D=0000' + '\"').insertAdjacentElement('afterend', gospelDiv);
+                containerDiv.querySelectorAll('div[data-root*="PrayerGospelIntroduction&D=000"')[4].insertAdjacentElement('afterend', psalmDiv);
+                containerDiv.querySelector('div[data-root*="PrayerGospelResponse&D=000"').insertAdjacentElement('beforebegin', gospelDiv);
                 //Setting the number of columns and their widths for the each child of psalmDiv
                 setCSSGridTemplate(psalmDiv);
                 //Setting the number of columns and their widths for the each child of newDiv
@@ -431,6 +435,10 @@ const btnIncenseVespers = new Button({
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
         (function insertGospelReadings() {
             return __awaiter(this, void 0, void 0, function* () {
+                if (showActors.get('Diacon') == false) {
+                    return;
+                }
+                ;
                 let responses = setGospelPrayers(Readings.GospelVespers); //this gives us an array like ['PsalmResponse&D=####', 'RGIV', 'GospelResponse&D=####']
                 btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf('PrayerGospelPrayerPart2&D=0000') + 1, 0, responses[0]); //inserting Psalm Response id (which corresponds to responses[0])
                 btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf('PrayerGospelResponse&D=0000'), 1, responses[2]); //inserting Psalm Response id (which corresponds to responses[0])
@@ -469,8 +477,8 @@ const btnIncenseVespers = new Button({
                     }
                 }
                 ;
-                containerDiv.querySelector('div[data-root=\"' + 'PrayerGospelIntroductionPsalmComment&D=0000' + '\"').insertAdjacentElement('afterend', psalmDiv);
-                containerDiv.querySelector('div[data-root=\"' + 'PrayerGospelIntroductionGospelComment&D=0000' + '\"').insertAdjacentElement('afterend', gospelDiv);
+                containerDiv.querySelectorAll('div[data-root*="PrayerGospelIntroduction&D=000"')[4].insertAdjacentElement('afterend', psalmDiv);
+                containerDiv.querySelector('div[data-root*="PrayerGospelResponse&D=000"').insertAdjacentElement('beforebegin', gospelDiv);
                 //Setting the number of columns and their widths for the each child of psalmDiv
                 setCSSGridTemplate(psalmDiv);
                 //Setting the number of columns and their widths for the each child of newDiv

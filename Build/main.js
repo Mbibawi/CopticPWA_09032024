@@ -1233,8 +1233,8 @@ function findAndProcessPrayers(p, btn, div = containerDiv) {
             //i.e. if the prayer passed to the function = the first element of the first array in the btn.prayersArray (this element is a string representing the title of the Word table from which the text was extracted)
             wordTable.map(row => {
                 createHtmlElementForPrayer(tblTitle, row, btn.languages, userLanguages, row[0].split('&C=')[1], div); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
-                return;
             });
+            return;
         }
         else if (RegExp(/\&D=\(\d{4}\|\|\d{4}\)/).test(tblTitle)) {
             if (RegExp(tblTitle.split('&D=')[0]).test(p.split('&D=')[0])) {

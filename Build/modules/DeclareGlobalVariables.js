@@ -112,6 +112,8 @@ let isFast;
 let actors = ['Priest', 'Diacon', 'Assembly', 'Comment', 'CommentText'];
 let showActors = new Map();
 actors.map(actor => showActors.set(actor, true));
+showActors.set(actors[3], false); //this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
+showActors.set(actors[4], false); //same comment as above concerning the 'CommentText'
 let lordFeasts = [
     copticFeasts.Nativity, copticFeasts.Baptism, Seasons.Resurrection, copticFeasts.Ascension, copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple
 ];
