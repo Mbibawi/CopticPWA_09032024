@@ -23,8 +23,8 @@
   padding-top:3px;
   width:100%;
   justify-items: center;
-  z-index: 4;
   overflow-y: scroll;
+  z-index: -1;
 }
 
 .Content {
