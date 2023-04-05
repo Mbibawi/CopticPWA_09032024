@@ -889,14 +889,12 @@ function DetectFingerSwipe() {
 function toggleClassListForAllChildrenOFAnElement(ev, myClass) {
     ev.preventDefault;
     let el = ev.target;
-    let hasDataLang = containerDiv.querySelectorAll('[data-lang]');
-    for (let i = 0; i < hasDataLang.length; i++) {
-        if (hasDataLang[i].attributes.getNamedItem('data-lang').value == el.attributes.getNamedItem('data-lang').value) {
-            hasDataLang[i].classList.toggle(myClass);
-        }
-        ;
-    }
-    ;
+    let dataset = 'p[data-lang="' + el.dataset.lang + '"]';
+    let sameLang = containerDiv.querySelectorAll(dataset);
+    sameLang.forEach((p) => {
+        p.classList.toggle(myClass);
+        //p.parentElement.style.gridTemplateColumns = We need a way to enlarge the cell containing the text 
+    });
 }
 ;
 /**
