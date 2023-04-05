@@ -1428,8 +1428,12 @@ function showSettingsPanel() {
                         if (actor == 'Comment') {
                             showActors.set('CommentText', show);
                         }
-                        showChildButtonsOrPrayers(lastClickedButton);
-                        inlineBtnsDiv.innerText = '';
+                        if (containerDiv.children) {
+                            //Only if a text is already displayed
+                            showChildButtonsOrPrayers(lastClickedButton);
+                            showSettingsPanel(); //we display the settings pannel again
+                        }
+                        ;
                     }
                 });
                 if (show == false) {
