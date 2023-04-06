@@ -320,10 +320,10 @@ const btnIncenseDawn = new Button({
         })();
         (function insertGospelReadings() {
             return __awaiter(this, void 0, void 0, function* () {
-                if (showActors.get('Diacon') == false) {
+                if (new Map(JSON.parse(localStorage.showActors)).get('Diacon') == false) {
                     return;
                 }
-                ;
+                ; //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
                 let responses = setGospelPrayers(Readings.GospelDawn); //this gives us an array like ['PsalmResponse&D=####', 'RGID', 'GospelResponse&D=####']
                 btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('PrayerGospelPrayerPart2&D=0000') + 1, 0, responses[0]); //inserting Psalm Response id (which corresponds to responses[0])
                 btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('PrayerGospelResponse&D=0000'), 1, responses[2]); //inserting Gospel Response id (which corresponds to responses[0])
@@ -435,10 +435,10 @@ const btnIncenseVespers = new Button({
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
         (function insertGospelReadings() {
             return __awaiter(this, void 0, void 0, function* () {
-                if (showActors.get('Diacon') == false) {
+                if (new Map(JSON.parse(localStorage.showActors)).get('Diacon') == false) {
                     return;
                 }
-                ;
+                ; //If the user hides the Diacon prayers, we cannot show the gospel readings because they are anchored to two of the Diacon's prayers ids 
                 let responses = setGospelPrayers(Readings.GospelVespers); //this gives us an array like ['PsalmResponse&D=####', 'RGIV', 'GospelResponse&D=####']
                 btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf('PrayerGospelPrayerPart2&D=0000') + 1, 0, responses[0]); //inserting Psalm Response id (which corresponds to responses[0])
                 btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf('PrayerGospelResponse&D=0000'), 1, responses[2]); //inserting Psalm Response id (which corresponds to responses[0])

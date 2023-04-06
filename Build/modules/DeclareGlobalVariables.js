@@ -101,6 +101,12 @@ const copticFasts = [
 ];
 const allLanguages = ['AR', 'FR', 'COP', 'CA', 'EN'];
 const userLanguages = ['AR', 'FR', 'COP'];
+//if (localStorage.userLanguages) { console.log('there is user Lanugages', localStorage.userLanguages) };
+//if (localStorage.showActors) { console.log('there is showActors', localStorage.showActors) };
+if (localStorage.userLanguages === 'undefined') {
+    localStorage.userLanguages = JSON.stringify(userLanguages);
+}
+;
 const prayersLanguages = ['COP', 'FR', 'CA', 'AR'];
 const readingsLanguages = ['AR', 'FR', 'EN'];
 //VARS
@@ -114,8 +120,16 @@ let showActors = new Map();
 actors.map(actor => showActors.set(actor, true));
 showActors.set(actors[3], false); //this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
 showActors.set(actors[4], false); //same comment as above concerning the 'CommentText'
+if (localStorage.showActors === 'undefined') {
+    localStorage.showActors = JSON.stringify(Array.from(showActors));
+}
+;
 let lordFeasts = [
     copticFeasts.Nativity, copticFeasts.Baptism, Seasons.Resurrection, copticFeasts.Ascension, copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple
 ];
 let textAmplified = new Map();
 allLanguages.map(lang => textAmplified.set(lang, false));
+if (localStorage.textAmplified === 'undefined') {
+    localStorage.textAmplified = JSON.stringify(Array.from(textAmplified));
+}
+;

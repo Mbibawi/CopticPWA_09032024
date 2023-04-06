@@ -47,6 +47,7 @@ function addOrRemoveLanguage(el) {
         el.innerText = el.innerText.replace("Add", "Remove");
     }
     ;
+    localStorage.userLanguages = JSON.stringify(userLanguages);
     //in order to refresh the view after adding or removing a language, we call the showChildButtonsOrPrayers passing to it the lasClickedButton which is a variable storing the last clicked sideBar Button (its class is Button) that is displaying its prayers/children/inlineBtns, etc.,
     showChildButtonsOrPrayers(lastClickedButton);
 }
@@ -59,14 +60,13 @@ function modifyUserLanguages(lang) {
     if (userLanguages.indexOf(lang) > -1) {
         //lang is included, we will remove it
         userLanguages.splice(userLanguages.indexOf(lang), 1);
-        return false;
     }
     else if (userLanguages.indexOf(lang) < 0) {
         //lang is not included, we will add it
         userLanguages.splice(allLanguages.indexOf(lang), 0, lang);
-        return true;
     }
     ;
+    localStorage.userLanguages = JSON.stringify(userLanguages);
 }
 ;
 /**
@@ -165,7 +165,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
         }
         ; //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
         if (userLanguages.indexOf(lang) > -1) {
-            if (actorClass && showActors.get(actorClass) == false) {
+            if (actorClass && new Map(JSON.parse(localStorage.showActors)).get(actorClass) == false) {
                 return;
             }
             ;
@@ -888,6 +888,7 @@ function DetectFingerSwipe() {
 ;
 function toggleAmplifyText(ev, myClass) {
     ev.preventDefault;
+    let amplified = new Map(JSON.parse(localStorage.textAmplified));
     let el = ev.target;
     let dataset = 'p[data-lang="' + el.dataset.lang + '"]';
     let sameLang = containerDiv.querySelectorAll(dataset);
@@ -897,12 +898,13 @@ function toggleAmplifyText(ev, myClass) {
     });
     if (el.classList.contains(myClass)) {
         //it means that the class was added when the user dbl clicked (not removed)
-        textAmplified.set(el.dataset.lang, true);
+        amplified.set(el.dataset.lang, true);
     }
     else {
-        textAmplified.set(el.dataset.lang, false);
+        amplified.set(el.dataset.lang, false);
     }
     ;
+    localStorage.textAmplified = JSON.stringify(Array.from(amplified));
 }
 ;
 /**
@@ -1014,7 +1016,7 @@ function setCSSGridTemplate(container) {
             });
         }
         ;
-        textAmplified.forEach((value, key) => {
+        new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
             if (value == true) {
                 container.querySelectorAll('p[data-lang="' + key + '"]').forEach((el) => el.classList.add('amplifiedTextSize'));
             }
@@ -1244,7 +1246,7 @@ function findAndProcessPrayers(p, btn, div = containerDiv) {
         if (p == tblTitle) {
             //i.e. if the prayer passed to the function = the first element of the first array in the btn.prayersArray (this element is a string representing the title of the Word table from which the text was extracted)
             wordTable.map(row => {
-                createHtmlElementForPrayer(tblTitle, row, btn.languages, userLanguages, row[0].split('&C=')[1], div); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
+                createHtmlElementForPrayer(tblTitle, row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], div); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
             });
             return;
         }
@@ -1255,7 +1257,7 @@ function findAndProcessPrayers(p, btn, div = containerDiv) {
                     if (p.split('&D=')[1] == dates[i]) {
                         tblTitle = tblTitle.split('&D=(')[0] + '&D=' + dates[i];
                         wordTable.map(row => {
-                            createHtmlElementForPrayer(tblTitle, row, btn.languages, userLanguages, row[0].split('&C=')[1], div); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
+                            createHtmlElementForPrayer(tblTitle, row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], div); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
                         });
                     }
                     ;
@@ -1388,6 +1390,7 @@ function showSettingsPanel() {
     //Appending Add or Remove language Buttons
     (function showAddOrRemoveLanguagesBtns() {
         return __awaiter(this, void 0, void 0, function* () {
+            let parsedUserLanguages = JSON.parse(localStorage.userLanguages);
             let subContainer = document.createElement('div');
             subContainer.style.display = 'grid';
             subContainer.style.gridTemplateColumns = String('30% ').repeat(3);
@@ -1408,7 +1411,7 @@ function showSettingsPanel() {
                         ;
                     }
                 });
-                if (userLanguages.indexOf(lang) < 0) {
+                if (parsedUserLanguages.indexOf(lang) < 0) {
                     //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
                     newBtn.classList.add('langBtnAdd');
                 }
@@ -1427,29 +1430,31 @@ function showSettingsPanel() {
                     return;
                 }
                 ; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
-                let show = showActors.get(actor);
+                let show = new Map(JSON.parse(localStorage.getItem('showActors'))).get(actor);
                 btn = createBtn('button', 'button', 'settingsBtn', 'remove ' + actor, container, actor, actor, undefined, undefined, undefined, {
                     event: 'click',
                     fun: () => {
-                        show == true ? show = false : show = true;
+                        show = !show; //inversing the value of "show"
                         showActors.set(actor, show);
                         if (show == false) {
                             btn.classList.add('langBtnAdd');
                         }
-                        ;
+                        ; //changing the background color of the button to red by adding 'langBtnAdd' as a class
                         if (actor == 'Comment') {
                             showActors.set('CommentText', show);
                         }
+                        ; //setting the value of 'CommentText' same as 'Comment'
+                        localStorage.showActors = JSON.stringify(Array.from(showActors)); //adding the new values to local storage
                         if (containerDiv.children) {
-                            //Only if a text is already displayed
-                            showChildButtonsOrPrayers(lastClickedButton);
+                            //Only if some prayers text is already displayed
+                            showChildButtonsOrPrayers(lastClickedButton); //we re-click the last button to refresh the displayed text by adding or removing the actor according to the new setings chice made by the user.
                             showSettingsPanel(); //we display the settings pannel again
                         }
                         ;
                     }
                 });
                 if (show == false) {
-                    btn.classList.add('langBtnAdd');
+                    btn.classList.toggle('langBtnAdd');
                 }
                 ;
             });
@@ -1578,3 +1583,26 @@ function fetchSynaxarium() {
     });
 }
 ;
+/**
+ * Just trying to figger out if there is a way to prompt the user for installing the app without waiting for the browser to spontaneously trigger the 'beforeinstallprompt' event
+ */
+function playingWithInstalation() {
+    let beforeInstallFired;
+    window.addEventListener('beforeinstallpromt', (e) => {
+        e.preventDefault;
+        beforeInstallFired = e;
+        alert('beforeinstall fired');
+    });
+    //
+    let btn = document.createElement('button');
+    //@ts-ignore
+    let before = new BeforeInstallPromptEvent('beforeInstallPrompt');
+    btn.addEventListener('click', () => {
+        before.trigger();
+        before.prompt().then(r => console.log('response = ', r));
+        console.log(before.userChoice);
+    });
+    window.addEventListener(before, () => btn.click());
+    //btn.click();
+    alert('swipe right or click on the image to open the menu and start');
+}
