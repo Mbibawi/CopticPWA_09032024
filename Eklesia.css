@@ -377,11 +377,13 @@ table{
 #ProvideIDFromInput {
   padding-top: 5vw;
 }
-.amplifiedTextSize{
-  font-size: xx-large;
-  line-height: 35px;
+.TargetRow .amplifiedTextSize, 
+.TargetRowTitle .amplifiedTextSize{
+  font-size: xx-large !important;
+  line-height: 35px !important;
 }
-.Comment, .CommentText{
+.Comment, 
+.CommentText{
   align-content: stretch;
   background-color: ivory;
   color: #2F5496;
