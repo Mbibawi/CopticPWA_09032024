@@ -114,7 +114,7 @@ const btnMass = new Button({
     btnID: 'btnMass',
     label: { AR: "القداسات", FR: "Messes" },
     onClick: () => {
-        btnMass.children = [btnIncenseDawn, btnMassOfferingOfTheLamb, btnMassRoshoumat, btnMassUnBaptised, btnMassBaptised];
+        btnMass.children = [btnIncenseDawn, btnMassUnBaptised, btnMassBaptised];
     }
 });
 const btnIncenseOffice = new Button({
@@ -632,6 +632,7 @@ const btnMassRoshoumat = new Button({
 const btnMassUnBaptised = new Button({
     btnID: 'btnMassUnBaptised',
     label: { AR: 'قداس الموعوظين', FR: 'Messe des non baptisés', EN: 'Unbaptised Mass' },
+    children: [btnMassOfferingOfTheLamb, btnMassRoshoumat],
     prayers: MassPrayers.MassUnbaptized,
     prayersArray: PrayersArray,
     languages: [...prayersLanguages],
@@ -852,18 +853,6 @@ const btnReadingsPropheciesDawn = new Button({
         scrollToTop(); //scrolling to the top of the page
     }
 });
-const btnHeteneyat = new Button({
-    btnID: 'btnHeteneyat',
-    label: { AR: 'الهيتنيات', FR: 'Heteneyat' }
-});
-const btnPraxisResponse = new Button({
-    btnID: 'btnPraxisResponse',
-    label: { AR: 'مرد الإبركسيس', FR: 'Réponse Praxis' }
-});
-const btnMassGospelResponse = new Button({
-    btnID: 'btnMassGospelResponse',
-    label: { AR: 'مرد الإنجيل', FR: 'Réponse Evangile' }
-});
 /**
  * takes a liturgie name like "IncenseDawn" or "IncenseVespers" and replaces the word "Mass" in the buttons gospel readings prayers array by the name of the liturgie. It also sets the psalm and the gospel responses according to some sepcific occasions (e.g.: if we are the 29th day of a coptic month, etc.)
  * @param liturgie {string} - expressing the name of the liturigie that will replace the word "Mass" in the original gospel readings prayers array
@@ -996,14 +985,22 @@ function scrollToTop() {
     });
 }
 ;
+/**
+ * Retrieves the gospel of the Vespers office by the date of the day following the current date. We need this because the date of the gospel is not the date of the date of the Vespers office in which it is read, but the date of the next day
+ * @param {string} prayers -  prayers is a clone of Gospel[] where prayer[1] is the gospel reading which is like "RGIV" (which is the abreviation of  "Readings Gospel Incense Vespers"). We will add to it "&D=" + the date of the gospel that we will retrieve from setSeasonAndCopticReadingsDate()
+ * @returns {string[]} - an array where prayers[1] has been completed with the proper date
+ */
 function getVespersGospel(prayers) {
     if (todayDate.getHours() > 15) {
-        let date = new Date(todayDate.getTime() + calendarDay);
-        let readingsDate = setSeasonAndCopticReadingsDate(convertGregorianDateToCopticDate(date));
-        prayers[1] += '&D=' + readingsDate;
+        //we check that we are in the afternoon
+        let date = new Date(todayDate.getTime() + calendarDay); //we create a date and sets it to the date of the next day
+        let readingsDate = setSeasonAndCopticReadingsDate(convertGregorianDateToCopticDate(date)); //we get the coptic date corresponding to the date we created, and pass it to setSeaonAndCopticReadingsDate() to retrieve the reading date from this function
+        prayers[1] += '&D=' + readingsDate; //we add the reading date to 
         return prayers;
     }
     else {
+        prayers[1] + "&D=" + copticReadingsDate;
         return prayers;
     }
 }
+;
