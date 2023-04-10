@@ -1,7 +1,7 @@
 {
 "name": "Coptic PWA",
 "short_name": "Coptic",
-"start_url": "https://mbibawi.github.io/CopticPWA",
+"start_url": "https://mbibawi.github.io/CopticPWA/",
 "display_override": ["fullscreen", "minimal-ui"],
 "display": "standalone",
 "description": "PWA for coptic liturgies",
