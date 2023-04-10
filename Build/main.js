@@ -176,7 +176,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
                 row.classList.add("TargetRowTitle");
                 row.id = prayers[0];
                 row.tabIndex = 0; //in order to make the div focusable by using the focus() method
-                row.addEventListener('click', () => collapseText(row)); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
+                row.addEventListener('click', (e) => { e.preventDefault; collapseText(row); }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
             }
             else if (actorClass) {
                 //if the prayer is a comment like the comments in the Mass
@@ -937,7 +937,7 @@ function buildSideBar(id) {
     a.innerText = '&times';
     a.setAttribute('href', 'javascript:void(0)');
     a.classList.add('closebtn');
-    a.addEventListener('click', () => closeSideBar(sideBar));
+    a.addEventListener('click', (e) => { e.preventDefault; closeSideBar(sideBar); });
     sideBar.appendChild(a);
     btnsDiv.id = 'sideBarBtns';
     sideBar.appendChild(btnsDiv);
@@ -1287,7 +1287,7 @@ function showInlineBtns(status, clear = false) {
         close.style.right = '15px';
         close.style.fontSize = '30pt';
         close.style.fontWeight = 'bold';
-        close.addEventListener('click', () => hideInlineButtonsDiv());
+        close.addEventListener('click', (e) => { e.preventDefault; hideInlineButtonsDiv(); });
         inlineBtnsDiv.appendChild(close);
     })();
     inlineBtnsDiv.dataset.status = status;
@@ -1503,7 +1503,7 @@ function showSettingsPanel() {
         }
         ;
         if (onClick) {
-            btn.addEventListener(onClick.event, () => onClick.fun());
+            btn.addEventListener(onClick.event, (e) => { e.preventDefault; onClick.fun(); });
         }
         ;
         if (parent) {
