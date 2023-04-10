@@ -151,6 +151,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
     if (actorClass && actorClass !== 'Title') {
         // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
         row.classList.add(actorClass);
+        row.addEventListener('click', (e) => { e.preventDefault; collapseText(row); }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
     }
     ;
     //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id
@@ -176,7 +177,6 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
                 row.classList.add("TargetRowTitle");
                 row.id = prayers[0];
                 row.tabIndex = 0; //in order to make the div focusable by using the focus() method
-                row.addEventListener('click', (e) => { e.preventDefault; collapseText(row); }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
             }
             else if (actorClass) {
                 //if the prayer is a comment like the comments in the Mass
@@ -1311,7 +1311,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v1.2';
+        let version = 'v1.3';
         let p = document.createElement('p');
         p.style.color = 'red';
         p.style.fontSize = '15pt';
