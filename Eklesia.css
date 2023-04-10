@@ -56,17 +56,17 @@ body{
 
 .AR,
 .CA {
-  font-size: 16pt;
+  font-size: 18pt;
+  font-weight: 520;
   direction: rtl !important;
 }
 .FR,
 .EN {
-  font-size: 14pt;
+  font-size: 18pt;
 }
 .COP {
   font-family: ArialCoptic;
-  font-weight: 595;
-  font-size: 14;
+  font-size: 16pt;
 }
 .Menu {
   background-color: #5270a3;
