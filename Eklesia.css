@@ -57,11 +57,13 @@ body{
 .AR,
 .CA {
   font-size: 18pt;
+  font-weight: 450;
   direction: rtl !important;
 }
 .FR,
 .EN {
   font-size: 18pt;
+  font-weight: 450;
 }
 .COP {
   font-family: ArialCoptic;

@@ -228,6 +228,7 @@ const btnIncenseDawn = new Button({
             }
             ;
         })();
+        scrollToTop();
         return btnIncenseDawn.prayers;
     },
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
@@ -390,6 +391,7 @@ const btnIncenseVespers = new Button({
                 })();
             }
         })();
+        scrollToTop();
         return btnIncenseVespers.prayers;
     },
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
@@ -452,6 +454,7 @@ const btnMassStGregory = new Button({
         btnMassStGregory.prayers = [...MassPrayers.MassCommonIntro, ...MassPrayers.MassStGregory, ...MassPrayers.MassCallOfHolySpirit, ...MassPrayers.MassLitanies, ...MassPrayers.Communion];
         //removing irrelevant prayers from the array
         btnMassStGregory.prayers.splice(btnMassStGregory.prayers.indexOf('MC_CallOfTheHolySpiritPart1Comment&D=0000'), 10);
+        scrollToTop();
         return btnMassStGregory.prayers;
     },
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
@@ -478,6 +481,8 @@ const btnMassStBasil = new Button({
         btnMassStBasil.prayersArray = [...CommonPrayersArray, ...MassCommonPrayersArray, ...MassStBasilPrayersArray];
         //Setting the standard mass prayers sequence
         btnMassStBasil.prayers = [...MassPrayers.MassCommonIntro, ...MassPrayers.MassStBasil, ...MassPrayers.MassCallOfHolySpirit, ...MassPrayers.MassLitanies, ...MassPrayers.Communion];
+        //We scroll to the beginning of the page after the prayers have been displayed
+        scrollToTop();
         return btnMassStBasil.prayers;
     },
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
@@ -490,8 +495,6 @@ const btnMassStBasil = new Button({
         //Before Agios
         let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStGregory, btnMassStCyril], "beforebegin");
-        //We scroll to the beginning of the page after the prayers have been displayed
-        scrollToTop();
     })
 });
 const btnMassStJohn = new Button({
