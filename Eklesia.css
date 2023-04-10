@@ -112,6 +112,7 @@ body{
 height: fit-content;
 width: 30vmin;
 margin:2px 2px;
+justify-self: center;
 }
 .inlineBtn > p{
   font-size: 10pt;
@@ -392,6 +393,7 @@ table{
   text-align: justify;
   padding: 0px 3px !important;
   font-style: italic;
+  line-height: 12pt;
 }
 .CommentText {
   color: #C45911 !important;

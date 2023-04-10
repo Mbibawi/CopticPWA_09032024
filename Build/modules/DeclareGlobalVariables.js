@@ -8,6 +8,7 @@ const sideBarBtn = document.getElementById('opensidebar');
 const toggleDevBtn = document.getElementById('toggleDev');
 const inlineBtnsDiv = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates = ["2023-04-16", "2024-05-05", "2025-04-29", "2026-04-12", "2027-05-02", "2028-04-23", "2029-04-8", "2030-04-28"]; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
+const psalmResponsePrefix = 'PR_', gospelResponsePrefix = 'GR_', massCommonPrefix = 'MC_', commonPrayerPrefix = 'PC_', incenseDawnPrefix = 'ID_', incenseVespersPrefix = 'IV_', massStBasilPrefix = 'Basil_', massStCyrilPrefix = 'Cyril_', massStGregoryPrefix = 'Gregory_', massStJohnPrefix = 'John_', fractionPrayerPrefix = 'Fraction_', commonDoxologiesPrefix = 'DC_', commonIncensePrefix = 'IC_', communionPrefix = 'Communion_';
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
 const Readings = {
@@ -110,7 +111,9 @@ if (localStorage.userLanguages === undefined) {
 const prayersLanguages = ['COP', 'FR', 'CA', 'AR'];
 const readingsLanguages = ['AR', 'FR', 'EN'];
 //VARS
-let PrayersArray = [];
+let PrayersArray = [], CommonPrayersArray = [], //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
+MassCommonPrayersArray = [], //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
+MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [];
 let lastClickedButton;
 let copticDate, copticMonth, copticDay, copticReadingsDate, Season, weekDay;
 var todayDate;
