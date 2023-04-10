@@ -329,7 +329,10 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     showTitlesInRightSideBar(containerDiv.querySelectorAll('div.TargetRowTitle'), rightSideBar.querySelector('#sideBarBtns'), btn);
     if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
         createGoBackBtn(btn, btnsDiv, btn.cssClass)
-            .then((b) => b.addEventListener("click", () => showChildButtonsOrPrayers(btn.parentBtn)));
+            .then((b) => b.addEventListener("click", (e) => {
+            e.preventDefault;
+            showChildButtonsOrPrayers(btn.parentBtn);
+        }));
         lastClickedButton = btn;
     }
     ;
@@ -345,6 +348,7 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (btn.parentBtn && btn.btnID == btnGoBack.btnID) {
         showChildButtonsOrPrayers(btn.parentBtn);
     }
+    ;
 }
 ;
 /**
@@ -409,7 +413,10 @@ function createBtn(btn, btnsBar, btnClass, clear = true) {
     btnsBar.appendChild(newBtn);
     if (btn.children || btn.prayers || btn.onClick || btn.inlineBtns) {
         // if the btn object that we used to create the html button element, has children, we add an "onclick" event that passes the btn itself to the showChildButtonsOrPrayers. This will create html button elements for each child and show them
-        newBtn.addEventListener('click', () => showChildButtonsOrPrayers(btn, clear));
+        newBtn.addEventListener('click', (e) => {
+            e.preventDefault;
+            showChildButtonsOrPrayers(btn, clear);
+        });
     }
     ;
     function editBtnInnerText(el, text, btnClass) {
