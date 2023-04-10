@@ -1125,7 +1125,7 @@ function collapseText(element) {
     let parag;
     parag = Array.from(element.children).filter(child => child.textContent.startsWith(String.fromCharCode(10133)) || child.textContent.startsWith(String.fromCharCode(10134)))[0];
     if (parag && parag.textContent.startsWith(String.fromCharCode(10133))) {
-        element.lastChild.textContent = parag.textContent.replace(String.fromCharCode(10133), String.fromCharCode(10134));
+        parag.textContent = parag.textContent.replace(String.fromCharCode(10133), String.fromCharCode(10134));
     }
     else if (parag && parag.textContent.startsWith(String.fromCharCode(10134))) {
         parag.textContent = parag.textContent.replace(String.fromCharCode(10134), String.fromCharCode(10133));
