@@ -1125,7 +1125,8 @@ function collapseText(element) {
     let parag;
     parag = Array.from(element.children).filter(child => child.textContent.startsWith(String.fromCharCode(10133)) || child.textContent.startsWith(String.fromCharCode(10134)))[0];
     if (parag && parag.textContent.startsWith(String.fromCharCode(10133))) {
-        parag.textContent = parag.textContent.replace(String.fromCharCode(10133), String.fromCharCode(10134));
+        https: //mbibawi.github.io/CopticPWA/#TargetDiv
+         parag.textContent = parag.textContent.replace(String.fromCharCode(10133), String.fromCharCode(10134));
     }
     else if (parag && parag.textContent.startsWith(String.fromCharCode(10134))) {
         parag.textContent = parag.textContent.replace(String.fromCharCode(10134), String.fromCharCode(10133));
@@ -1313,7 +1314,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v1.4';
+        let version = 'v1.5';
         let p = document.createElement('p');
         p.style.color = 'red';
         p.style.fontSize = '15pt';
