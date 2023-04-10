@@ -151,6 +151,8 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
     if (actorClass && actorClass !== 'Title') {
         // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
         row.classList.add(actorClass);
+    }
+    else if (actorClass && actorClass == 'Title') {
         row.addEventListener('click', (e) => { e.preventDefault; collapseText(row); }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
     }
     ;
@@ -1311,7 +1313,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v1.3';
+        let version = 'v1.4';
         let p = document.createElement('p');
         p.style.color = 'red';
         p.style.fontSize = '15pt';
