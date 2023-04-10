@@ -949,6 +949,10 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
         let responses = setGospelPrayers(liturgy); //this gives us an array like ['PsalmResponse&D=####', 'RGID', 'GospelResponse&D=####']
         //We will retrieve the  table containing the text of the gospel from the GospeldawnArray directly (instead of call findAndProcessPrayers())
         let g = goseplReadingsArray.filter(table => table[0][0].split('&C=')[0] == responses[1] + '&D=' + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to responses[1], which is like "RG&D=*"
+        if (g.length < 1) {
+            return;
+        }
+        ; //if no readings are returned from the filtering process, then we end the function
         let root = g[0][0][0].split('&C=')[0]; //this is the title of the table without any '&C=*' at its end 
         g[0].map(row => {
             //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
