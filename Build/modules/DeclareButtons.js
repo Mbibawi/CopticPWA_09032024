@@ -425,11 +425,10 @@ const btnMassStCyril = new Button({
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
         showFractionsMasterButton(btnMassStCyril);
         //Adding 2 buttons to redirect to the St Basil or St Gregory Reconciliation prayer
-        redirectToAnotherMass(containerDiv.children[5], [btnMassStBasil, btnMassStGregory, btnMassStJohn], "beforebegin");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Reconciliation&D=0000"]'), [btnMassStBasil, btnMassStGregory, btnMassStJohn], "afterend");
         //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer
         //After "By the intercession of the Virgin St. Mary"
-        let intercession = containerDiv.querySelectorAll('div[data-root="' + massCommonPrefix + 'AssemblyResponseByTheIntercessionOfStMary&D=0000' + '"]'); //We will take the last element of the list having this data-root
-        redirectToAnotherMass(intercession[intercession.length - 1], [btnMassStBasil, btnMassStGregory], "afterend");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStBasil, btnMassStGregory], "afterend");
         //Before Agios
         let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStGregory], "beforebegin");
@@ -460,11 +459,10 @@ const btnMassStGregory = new Button({
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
         showFractionsMasterButton(btnMassStGregory);
         //Adding 3 buttons to redirect to the St Basil or St Cyril Reconciliation prayer
-        redirectToAnotherMass(containerDiv.children[5], [btnMassStBasil, btnMassStCyril, btnMassStJohn], "beforebegin");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Reconciliation&D=0000"]'), [btnMassStBasil, btnMassStCyril, btnMassStJohn], "afterend");
         //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer
         //After "By the intercession of the Virgin St. Mary"
-        let intercession = containerDiv.querySelectorAll('div[data-root="' + massCommonPrefix + 'AssemblyResponseByTheIntercessionOfStMary&D=0000' + '"]'); //We will take the last element of the list having this data-root
-        redirectToAnotherMass(intercession[intercession.length - 1], [btnMassStBasil, btnMassStCyril], "afterend");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStBasil, btnMassStCyril], "afterend");
         //Before Agios
         let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStCyril], "beforebegin");
@@ -488,10 +486,9 @@ const btnMassStBasil = new Button({
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
         showFractionsMasterButton(btnMassStBasil);
         //We add buttons to redirect to the other Reconciliation masses
-        redirectToAnotherMass(containerDiv.children[5], [btnMassStGregory, btnMassStCyril, btnMassStJohn], "beforebegin");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Reconciliation&D=0000"]'), [btnMassStGregory, btnMassStCyril, btnMassStJohn], "afterend");
         //After "By the intercession of the Virgin St. Mary"
-        let intercession = containerDiv.querySelectorAll('div[data-root="' + massCommonPrefix + 'AssemblyResponseByTheIntercessionOfStMary&D=0000' + '"]'); //We will take the last element of the list having this data-root
-        redirectToAnotherMass(intercession[intercession.length - 1], [btnMassStGregory, btnMassStCyril], "afterend");
+        redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStGregory, btnMassStCyril], "afterend");
         //Before Agios
         let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStGregory, btnMassStCyril], "beforebegin");
