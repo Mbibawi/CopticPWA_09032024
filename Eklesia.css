@@ -38,6 +38,8 @@
   margin-right: 0px;
 }
 body{
+  display: grid;
+  width: 100%;
   background-color: ivory;
   overflow-x: hidden;
   margin: 0px 0px;
@@ -56,7 +58,7 @@ body{
 
 .AR,
 .CA {
-  font-size: 18pt;
+  font-size: 16pt;
   font-weight: 450;
   direction: rtl !important;
 }
@@ -66,8 +68,8 @@ body{
   font-weight: 450;
 }
 .COP {
+  font-size: 14pt;
   font-family: ArialCoptic;
-  font-size: 16pt;
 }
 .Menu {
   background-color: #5270a3;
@@ -184,7 +186,7 @@ justify-self: center;
   height:fit-content;
   text-align: justify;
   border-radius: 5px;
-  margin: 1px 1px;
+  margin: 1px 0px;
   padding:1px 0px;
   justify-items: stretch;
   align-items: top;
@@ -217,7 +219,7 @@ justify-self: center;
   text-align: center;
 }
 .TargetRow >p, .TargetRowTitle >p{
-  margin:1px 4px;
+  margin:0px 0px;
   padding:1px 2px;
 }
 .sign {
@@ -379,8 +381,7 @@ table{
 #ProvideIDFromInput {
   padding-top: 5vw;
 }
-.TargetRow .amplifiedTextSize, 
-.TargetRowTitle .amplifiedTextSize{
+.TargetRow .amplifiedText{
   font-size: xx-large !important;
   line-height: 35px !important;
 }

@@ -194,7 +194,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
             p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
             p.textContent = text;
             p.addEventListener('dblclick', (event) => {
-                toggleAmplifyText(event, 'amplifiedTextSize');
+                toggleAmplifyText(event, 'amplifiedText');
             }); //adding a double click eventListner that amplifies the text size of the chosen language;
             row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
         }
@@ -912,19 +912,16 @@ function DetectFingerSwipe() {
 function toggleAmplifyText(ev, myClass) {
     ev.preventDefault;
     let amplified = new Map(JSON.parse(localStorage.textAmplified));
-    let el = ev.target;
-    let dataset = 'p[data-lang="' + el.dataset.lang + '"]';
-    let sameLang = containerDiv.querySelectorAll(dataset);
-    sameLang.forEach((p) => {
-        p.classList.toggle(myClass);
-        //p.parentElement.style.gridTemplateColumns = We need a way to enlarge the cell containing the text 
-    });
-    if (el.classList.contains(myClass)) {
+    let target = ev.target;
+    let selector = 'p[data-lang="' + target.dataset.lang + '"]';
+    let sameLang = containerDiv.querySelectorAll(selector);
+    sameLang.forEach((p) => { p.classList.toggle(myClass); });
+    if (target.classList.contains(myClass)) {
         //it means that the class was added when the user dbl clicked (not removed)
-        amplified.set(el.dataset.lang, true);
+        amplified.set(target.dataset.lang, true);
     }
     else {
-        amplified.set(el.dataset.lang, false);
+        amplified.set(target.dataset.lang, false);
     }
     ;
     localStorage.textAmplified = JSON.stringify(Array.from(amplified));
@@ -1075,12 +1072,7 @@ function applyAmplifiedText(container) {
             if (value == true) {
                 Array.from(container)
                     .filter(el => el.getAttribute('data-lang') == key)
-                    .map(el => {
-                    if (!el.classList.contains('Comment') && !el.classList.contains('CommentText')) {
-                        el.classList.add('amplifiedTextSize');
-                    }
-                });
-                //containerDiv.querySelectorAll('p[data-lang="' + key  + '"]').forEach((el)=>el.classList.add('amplifiedTextSize'))
+                    .map(el => el.classList.add('amplifiedText'));
             }
             ;
         });
@@ -1314,7 +1306,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v1.6 (manifest modified)';
+        let version = 'v1.7 (created Prefix object)';
         let p = document.createElement('p');
         p.style.color = 'red';
         p.style.fontSize = '15pt';
@@ -1634,47 +1626,46 @@ function populatePrayersArrays() {
         //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
         PrayersArray.map(wordTable => {
             //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
-            if (wordTable[0][0].startsWith(commonPrayerPrefix)) {
-                //wordTable[0] is the 1st row of the Word table. WordTable[0][0] contains the title of the table + "&C=" + the class that will be added to the html element that will be created to display the text of the row
+            if (wordTable[0][0].startsWith(Prefix.commonPrayer)) {
                 CommonPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(massStBasilPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.massStBasil)) {
                 MassStBasilPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(massCommonPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.massCommon)) {
                 MassCommonPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(massStGregoryPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.massStGregory)) {
                 MassStGregoryPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(massStCyrilPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.massStCyril)) {
                 MassStCyrilPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(massStJohnPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.massStJohn)) {
                 MassStJohnPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(fractionPrayerPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.fractionPrayer)) {
                 FractionsPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(commonDoxologiesPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.commonDoxologies)) {
                 DoxologiesPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(commonIncensePrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.commonIncense)) {
                 IncensePrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(incenseDawnPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.incenseDawn)) {
                 IncensePrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(incenseVespersPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.incenseVespers)) {
                 IncensePrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(communionPrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.communion)) {
                 CommunionPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(psalmResponsePrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.psalmResponse)) {
                 PsalmAndGospelPrayersArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(gospelResponsePrefix)) {
+            else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
                 PsalmAndGospelPrayersArray.push(wordTable);
             }
         });

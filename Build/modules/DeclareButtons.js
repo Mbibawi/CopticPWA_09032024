@@ -332,7 +332,7 @@ const btnIncenseDawn = new Button({
                 ;
             });
         })();
-        insertGospelReadings(Readings.GospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
+        insertGospelReadings(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
     })
 });
 const btnIncenseVespers = new Button({
@@ -395,7 +395,7 @@ const btnIncenseVespers = new Button({
         return btnIncenseVespers.prayers;
     },
     afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
-        insertGospelReadings(Readings.GospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages);
+        insertGospelReadings(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages);
     })
 });
 const btnMassStCyril = new Button({
@@ -430,7 +430,7 @@ const btnMassStCyril = new Button({
         //After "By the intercession of the Virgin St. Mary"
         redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStBasil, btnMassStGregory], "afterend");
         //Before Agios
-        let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
+        let Agios = containerDiv.querySelector('div[data-root="' + Prefix.massCommon + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStGregory], "beforebegin");
         scrollToTop(); //scrolling to the top of the page
     })
@@ -464,7 +464,7 @@ const btnMassStGregory = new Button({
         //After "By the intercession of the Virgin St. Mary"
         redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStBasil, btnMassStCyril], "afterend");
         //Before Agios
-        let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
+        let Agios = containerDiv.querySelector('div[data-root="' + Prefix.massCommon + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStCyril], "beforebegin");
         scrollToTop(); //scrolling to the top of the page                
     })
@@ -490,7 +490,7 @@ const btnMassStBasil = new Button({
         //After "By the intercession of the Virgin St. Mary"
         redirectToAnotherMass(containerDiv.querySelector('div[data-root*="Anaphora&D=0000"]'), [btnMassStGregory, btnMassStCyril], "afterend");
         //Before Agios
-        let Agios = containerDiv.querySelector('div[data-root="' + massCommonPrefix + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
+        let Agios = containerDiv.querySelector('div[data-root="' + Prefix.massCommon + 'Agios&D=0000' + '"]'); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStGregory, btnMassStCyril], "beforebegin");
     })
 });
@@ -599,7 +599,7 @@ const btnMassReadings = new Button({
         AR: 'القراءات',
         FR: 'Lectures'
     },
-    prayers: [Readings.StPaul, Readings.Katholikon, Readings.Praxis, Readings.Synaxarium, Readings.GospelMass],
+    prayers: [Prefix.stPaul, Prefix.katholikon, Prefix.praxis, Readings.Synaxarium, Prefix.gospelMass],
 });
 const btnDayReadings = new Button({
     btnID: 'btnDayReadings',
@@ -648,7 +648,7 @@ const btnReadingsStPaul = new Button({
         EN: 'Pauline Epistle'
     },
     showPrayers: true,
-    prayers: [Readings.StPaul],
+    prayers: [Prefix.stPaul],
     prayersArray: ReadingsArrays.StPaulArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -662,7 +662,7 @@ const btnReadingsKatholikon = new Button({
         FR: 'Katholikon'
     },
     showPrayers: true,
-    prayers: [Readings.Katholikon],
+    prayers: [Prefix.katholikon],
     prayersArray: ReadingsArrays.KatholikonArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -676,7 +676,7 @@ const btnReadingsPraxis = new Button({
         FR: 'Praxis'
     },
     showPrayers: true,
-    prayers: [Readings.Praxis],
+    prayers: [Prefix.praxis],
     prayersArray: ReadingsArrays.PraxisArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -705,7 +705,7 @@ const btnReadingsGospelMass = new Button({
         EN: 'Gospel'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Readings.GospelMass),
+    prayers: setGospelPrayers(Prefix.gospelMass),
     prayersArray: ReadingsArrays.GospelMassArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -720,7 +720,7 @@ const btnReadingsGospelIncenseVespers = new Button({
         EN: 'Vespers Gospel'
     },
     showPrayers: true,
-    prayers: [Readings.GospelVespers + '&D='],
+    prayers: [Prefix.gospelVespers + '&D='],
     prayersArray: ReadingsArrays.GospelVespersArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -738,7 +738,7 @@ const btnReadingsGospelIncenseDawn = new Button({
         EN: 'Gospel Dawn'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Readings.GospelDawn),
+    prayers: setGospelPrayers(Prefix.gospelDawn),
     prayersArray: ReadingsArrays.GospelDawnArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -753,7 +753,7 @@ const btnReadingsGospelNight = new Button({
         EN: 'Vespers Gospel'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Readings.GospelNight),
+    prayers: setGospelPrayers(Prefix.gospelNight),
     prayersArray: ReadingsArrays.GospelNightArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -768,7 +768,7 @@ const btnReadingsPropheciesDawn = new Button({
     },
     showPrayers: true,
     parentBtn: btnIncenseDawn,
-    prayers: [Readings.PropheciesDawn],
+    prayers: [Prefix.propheciesDawn],
     prayersArray: ReadingsArrays.PropheciesDawnArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -785,7 +785,7 @@ function setGospelPrayers(liturgie) {
     let prayers = [...GospelPrayers], date = '0000';
     let psalm = prayers.indexOf('PR_&D='), gospel = prayers.indexOf('GR_&D=');
     //we replace the word 'Mass' in 'ReadingsGospelMass' by the liturige, e.g.: 'IncenseDawn'
-    prayers[psalm + 1] = prayers[psalm + 1].replace(Readings.GospelMass, liturgie);
+    prayers[psalm + 1] = prayers[psalm + 1].replace(Prefix.gospelMass, liturgie);
     //setting the psalm and gospel responses
     if (Number(copticDay) == 29 && Number(copticMonth) != 4) {
         //we on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast)
@@ -959,8 +959,7 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
             });
         });
         //We will now move the Psaml after the psalm introduction
-        let psalmHtml = containerDiv.querySelectorAll('div[data-root="' + commonPrayerPrefix + "GospelIntroductionPart2&D=0000".replace(/Part\d+/, '') + '"]')[4];
-        //let psalmHtml = containerDiv.querySelector('div[data-root="' + commonPrayerPrefix + "PsalmIntroduction&D=0000" + '"]');
+        let psalmHtml = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + "GospelIntroductionPart2&D=0000".replace(/Part\d+/, '') + '"]')[4];
         let gospelHtml = containerDiv.querySelectorAll('div[data-root="' + root + '"]');
         psalmHtml.insertAdjacentElement('beforebegin', gospelHtml[0]);
         for (let i = 1; i < gospelHtml.length; i++) {

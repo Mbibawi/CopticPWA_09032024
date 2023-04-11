@@ -8,7 +8,30 @@ const sideBarBtn = document.getElementById('opensidebar');
 const toggleDevBtn = document.getElementById('toggleDev');
 const inlineBtnsDiv = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates = ["2023-04-16", "2024-05-05", "2025-04-29", "2026-04-12", "2027-05-02", "2028-04-23", "2029-04-8", "2030-04-28"]; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
-const psalmResponsePrefix = 'PR_', gospelResponsePrefix = 'GR_', massCommonPrefix = 'MC_', commonPrayerPrefix = 'PC_', incenseDawnPrefix = 'ID_', incenseVespersPrefix = 'IV_', massStBasilPrefix = 'Basil_', massStCyrilPrefix = 'Cyril_', massStGregoryPrefix = 'Gregory_', massStJohnPrefix = 'John_', fractionPrayerPrefix = 'Fraction_', commonDoxologiesPrefix = 'DC_', commonIncensePrefix = 'IC_', communionPrefix = 'Communion_';
+const Prefix = {
+    psalmResponse: 'PR_',
+    gospelResponse: 'GR_',
+    massCommon: 'MC_',
+    commonPrayer: 'PC_',
+    incenseDawn: 'ID_',
+    incenseVespers: 'IV_',
+    massStBasil: 'Basil_',
+    massStCyril: 'Cyril_',
+    massStGregory: 'Gregory_',
+    massStJohn: 'John_',
+    fractionPrayer: 'Fraction_',
+    commonDoxologies: 'DC_',
+    commonIncense: 'IC_',
+    communion: 'Communion_',
+    propheciesDawn: "RPD_",
+    stPaul: "RSP_",
+    katholikon: "RK_",
+    praxis: "RP_",
+    gospelVespers: "RGIV_",
+    gospelDawn: "RGID_",
+    gospelMass: "RGM_",
+    gospelNight: "RGN_", //Stands for Readings Gospel Night
+};
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
 const Readings = {
@@ -16,22 +39,14 @@ const Readings = {
     BibleIntroAR: 'قفوا بخوف أمام الله لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار ــــــــــ البشير، والتلميذ الطاهر، بركاته على جميعنا',
     GospelEndFR: '',
     GospelEndAR: '',
-    GospelVespers: "RGIV",
-    GospelDawn: "RGID",
-    GospelMass: "RGM",
-    GospelNight: "RGN",
-    Psalm: "Psalm",
-    StPaul: "RSP",
     StPaulIntroFR: '',
     StPaulIntroAR: '',
     StPaulEndFR: '',
     StPaulEndAR: 'نعمة الله الآب فلتكن مع جميعكم يا آبائي وإخوتي آمين',
-    Katholikon: "RK",
     KatholikonIntroFR: '',
     KatholikonIntroAR: '',
     KatholikonEndFR: '',
     KatholikonEndAR: 'لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد',
-    Praxis: "RP",
     PraxisIntroFR: '',
     PraxisIntroAR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين',
     PraxisEndFR: '',
@@ -40,8 +55,7 @@ const Readings = {
     SynaxariumIntroFR: '',
     SynaxariumIntroAR: '',
     SynaxariumEndFR: '',
-    SynaxariumEndAR: '',
-    PropheciesDawn: "RPD", //Stands for Readings Prophecies Dawn 
+    SynaxariumEndAR: ''
 };
 const ReadingsArrays = {
     PraxisArray: [],
