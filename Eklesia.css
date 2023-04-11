@@ -183,6 +183,7 @@ justify-self: center;
 
 .TargetRow, .TargetRowTitle {
   display: grid;
+  column-gap: 5px ;
   height:fit-content;
   text-align: justify;
   border-radius: 5px;
@@ -218,9 +219,9 @@ justify-self: center;
   font-size: medium;
   text-align: center;
 }
-.TargetRow >p, .TargetRowTitle >p{
+.TargetRow >p, .TargetRowTitle >p, .Comment > p, .CommentText > p{
   margin:0px 0px;
-  padding:1px 2px;
+  padding:3px 3px;
 }
 .sign {
   font-size: 13px;
