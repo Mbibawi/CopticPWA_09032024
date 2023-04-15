@@ -135,7 +135,7 @@ function convertGregorianDateToCopticDate(date) {
  */
 function setSeasonAndCopticReadingsDate(coptDate, today = todayDate) {
     let greatLentOrPentecostal = checkIfInASpecificSeason(today);
-    if (greatLentOrPentecostal != Seasons.NoSeason) {
+    if (greatLentOrPentecostal && greatLentOrPentecostal != Seasons.NoSeason) {
         // it means we are either during the Great Lent period, or the Pentecostal 50 days, or any day/feast within these periods
         return greatLentOrPentecostal;
     }
@@ -151,12 +151,13 @@ function setSeasonAndCopticReadingsDate(coptDate, today = todayDate) {
     }
     else {
         // it means we are in an ordinary day and we follow the ordinary readings calender, this should return a coptic date in a string of "DDMM"
-        for (let i = 0; i < copticReadingsDates.length; i++) {
-            if (coptDate == copticReadingsDates[i][0]) {
-                return copticReadingsDates[i][1];
-            }
+        let date = copticReadingsDates.filter(d => d[0] == coptDate)[0][1];
+        if (date) {
+            return date;
         }
-        return coptDate;
+        else {
+            return coptDate;
+        }
     }
 }
 ;

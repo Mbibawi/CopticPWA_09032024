@@ -30,32 +30,52 @@ const Prefix = {
     gospelVespers: "RGIV_",
     gospelDawn: "RGID_",
     gospelMass: "RGM_",
-    gospelNight: "RGN_", //Stands for Readings Gospel Night
+    gospelNight: "RGN_",
+    synaxarium: "RS_", //Stands for Readings Synaxarium
 };
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
-const Readings = {
-    BibleIntroFR: '',
-    BibleIntroAR: 'قفوا بخوف أمام الله لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار ــــــــــ البشير، والتلميذ الطاهر، بركاته على جميعنا',
-    GospelEndFR: '',
-    GospelEndAR: '',
-    StPaulIntroFR: '',
-    StPaulIntroAR: '',
-    StPaulEndFR: '',
-    StPaulEndAR: 'نعمة الله الآب فلتكن مع جميعكم يا آبائي وإخوتي آمين',
-    KatholikonIntroFR: '',
-    KatholikonIntroAR: '',
-    KatholikonEndFR: '',
-    KatholikonEndAR: 'لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد',
-    PraxisIntroFR: '',
-    PraxisIntroAR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين',
-    PraxisEndFR: '',
-    PraxisEndAR: 'لم تزل كلمة الرب تنمو وتعتز وتكثر في هذا البيعة وكل بيعة يا آبائي وإخوتي آمين',
-    Synaxarium: "RS",
-    SynaxariumIntroFR: '',
-    SynaxariumIntroAR: '',
-    SynaxariumEndFR: '',
-    SynaxariumEndAR: ''
+const ReadingsIntrosAndEnds = {
+    gospelIntro: {
+        AR: 'قفوا بخوف أمام الله وانصتوا لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار () البشير، والتلميذ الطاهر، بركاته على جميعنا',
+        FR: '',
+    },
+    gospelEnd: {
+        AR: 'والمجد لله دائماً',
+        FR: '',
+    },
+    stPaulEnd: {
+        AR: 'نعمة الله الآب فلتكن معكم يا آبائي واختوي آمين.',
+        FR: ''
+    },
+    katholikonIntro: {
+        AR: '',
+        Fr: '',
+    },
+    katholikonEnd: {
+        AR: 'لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد',
+        Fr: '',
+    },
+    psalmIntro: {
+        AR: 'من مزامير تراتيل أبيناداوود النبي والملك، بركاته على جميعنا آمين.',
+        Fr: '',
+    },
+    psalmEnd: {
+        AR: 'هلليلويا',
+        Fr: '',
+    },
+    praxisIntro: {
+        AR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين.',
+        Fr: '',
+    },
+    praxisEnd: {
+        AR: 'لم تزل كلمة الرب تنمو وتعتز وتكثر في هذا البيعة وكل بيعة يا آبائي وإخوتي آمين.',
+        Fr: '',
+    },
+    synaxariumIntro: {
+        AR: 'اليوم () من شهر () المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.',
+        Fr: '',
+    },
 };
 const ReadingsArrays = {
     PraxisArray: [],
@@ -114,25 +134,42 @@ const copticFasts = [
     Seasons.StMaryFast,
     Seasons.JonahFast,
 ];
-const allLanguages = ['AR', 'FR', 'COP', 'CA', 'EN'];
+const saintsFeasts = {
+    stGeorges: '',
+    stMina: '',
+    stPhilopatir: '',
+    stPaul: '',
+    stMarina: '',
+    stDemiane: '',
+    stCyrilVI: '',
+    stBishoyKamel: '',
+    stBishoy: '',
+};
+const allLanguages = ['AR', 'FR', 'COP', 'CA', 'CF', 'EN']; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
 const userLanguages = ['AR', 'FR', 'COP'];
 //if (localStorage.userLanguages) { console.log('there is user Lanugages', localStorage.userLanguages) };
 //if (localStorage.showActors) { console.log('there is showActors', localStorage.showActors) };
 if (localStorage.userLanguages === undefined) {
     localStorage.userLanguages = JSON.stringify(userLanguages);
 }
-;
+; //We check that there isn't already a setting stored in the localStorage
 const prayersLanguages = ['COP', 'FR', 'CA', 'AR'];
 const readingsLanguages = ['AR', 'FR', 'EN'];
+const displayModes = ['Normal', 'Presentation', 'Priest'];
 //VARS
 let PrayersArray = [], CommonPrayersArray = [], //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
 MassCommonPrayersArray = [], //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
 MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [];
 let lastClickedButton;
-let copticDate, copticMonth, copticDay, copticReadingsDate, Season, weekDay;
+let copticDate, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
+copticMonth, //same comment as above
+copticDay, //same comment as above
+copticReadingsDate, //This is the date of the day's readings (gospel, Katholikon, praxis, etc.). It does not neceissarly correspond to the copticDate
+Season, //This is a value telling whether we are during a special period of the year like the Great Lent or the 50 Pentecostal days, etc.
+weekDay; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0
 var todayDate;
 let isFast;
-let actors = ['Priest', 'Diacon', 'Assembly', 'Comment', 'CommentText'];
+let actors = ['Priest', 'Diacon', 'Assembly', 'Comment', 'CommentText']; //These are the names of the classes given to each row accordin to which we give a specific background color to the div element in order to show who tells the prayer
 let showActors = new Map();
 actors.map(actor => showActors.set(actor, true));
 showActors.set(actors[3], false); //this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
@@ -148,5 +185,10 @@ let textAmplified = new Map();
 allLanguages.map(lang => textAmplified.set(lang, false));
 if (localStorage.textAmplified === undefined) {
     localStorage.textAmplified = JSON.stringify(Array.from(textAmplified));
+}
+;
+let displayMode = localStorage[0];
+if (localStorage.displayMode == undefined) {
+    localStorage.displayMode = displayMode;
 }
 ;

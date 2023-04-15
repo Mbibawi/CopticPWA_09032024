@@ -543,18 +543,9 @@ const goToAnotherMass = [
         }
     })
 ];
-const btnMassOfferingOfTheLamb = new Button({
-    btnID: 'btnMassOfferingOfTheLamb',
-    label: { AR: 'تقديم الحمل', FR: "Présentation de l'Agneau" }
-});
-const btnMassRoshoumat = new Button({
-    btnID: 'btnMassRoshoumat',
-    label: { AR: 'رشومات الحمل', FR: "Roshoumat El Hamal" }
-});
 const btnMassUnBaptised = new Button({
     btnID: 'btnMassUnBaptised',
     label: { AR: 'قداس الموعوظين', FR: 'Messe des non baptisés', EN: 'Unbaptised Mass' },
-    children: [btnMassOfferingOfTheLamb, btnMassRoshoumat],
     prayers: MassPrayers.MassUnbaptized,
     prayersArray: PrayersArray,
     languages: [...prayersLanguages],
@@ -593,20 +584,12 @@ const btnMassBaptised = new Button({
     parentBtn: btnMass,
     children: [btnMassStBasil, btnMassStCyril, btnMassStGregory, btnMassStJohn]
 });
-const btnMassReadings = new Button({
-    btnID: 'btnMassReadings',
-    label: {
-        AR: 'القراءات',
-        FR: 'Lectures'
-    },
-    prayers: [Prefix.stPaul, Prefix.katholikon, Prefix.praxis, Readings.Synaxarium, Prefix.gospelMass],
-});
 const btnDayReadings = new Button({
     btnID: 'btnDayReadings',
     label: { AR: "قراءات اليوم", FR: "Lectures du jour", EN: 'Day\'s Readings' },
     onClick: () => {
         //We set the btnDayReadings.children[] property
-        btnDayReadings.children = [btnReadingsGospelIncenseVespers, btnReadingsGospelIncenseDawn, btnReadingsStPaul, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsGospelMass];
+        btnDayReadings.children = [btnReadingsGospelIncenseVespers, btnReadingsGospelIncenseDawn, btnReadingsStPaul, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsSynaxarium, btnReadingsGospelMass];
         if (Season == Seasons.GreatLent && todayDate.getDay() != 6) {
             //we are during the Great Lent and we are not a Saturday
             if (btnDayReadings.children.indexOf(btnReadingsGospelIncenseVespers) > -1) {
@@ -690,11 +673,11 @@ const btnReadingsSynaxarium = new Button({
         FR: 'Synaxarium'
     },
     showPrayers: true,
-    prayers: [Readings.Synaxarium],
     prayersArray: ReadingsArrays.SynaxariumArray,
-    languages: [...readingsLanguages],
+    languages: ['FR', 'AR'],
     onClick: () => {
-        scrollToTop(); //scrolling to the top of the page
+        btnReadingsSynaxarium.prayers = [Prefix.synaxarium + '&D=' + copticDate],
+            scrollToTop(); //scrolling to the top of the page
     }
 });
 const btnReadingsGospelMass = new Button({
@@ -705,7 +688,7 @@ const btnReadingsGospelMass = new Button({
         EN: 'Gospel'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Prefix.gospelMass),
+    prayers: [Prefix.gospelMass + 'Psalm', Prefix.gospelMass + 'Gospel'],
     prayersArray: ReadingsArrays.GospelMassArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -720,7 +703,7 @@ const btnReadingsGospelIncenseVespers = new Button({
         EN: 'Vespers Gospel'
     },
     showPrayers: true,
-    prayers: [Prefix.gospelVespers + '&D='],
+    prayers: [Prefix.gospelVespers + 'Psalm', Prefix.gospelVespers + 'Gospel'],
     prayersArray: ReadingsArrays.GospelVespersArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -738,7 +721,7 @@ const btnReadingsGospelIncenseDawn = new Button({
         EN: 'Gospel Dawn'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Prefix.gospelDawn),
+    prayers: [Prefix.gospelDawn + 'Psalm', Prefix.gospelDawn + 'Gospel'],
     prayersArray: ReadingsArrays.GospelDawnArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -753,7 +736,7 @@ const btnReadingsGospelNight = new Button({
         EN: 'Vespers Gospel'
     },
     showPrayers: true,
-    prayers: setGospelPrayers(Prefix.gospelNight),
+    prayers: [Prefix.gospelNight + 'Psalm', Prefix.gospelNight + 'Gospel'],
     prayersArray: ReadingsArrays.GospelNightArray,
     languages: [...readingsLanguages],
     onClick: () => {
@@ -782,10 +765,12 @@ const btnReadingsPropheciesDawn = new Button({
  */
 function setGospelPrayers(liturgie) {
     //this function sets the date or the season for the Psalm response and the gospel response
-    let prayers = [...GospelPrayers], date = '0000';
-    let psalm = prayers.indexOf('PR_&D='), gospel = prayers.indexOf('GR_&D=');
+    let prayers = [...GospelPrayers], date;
+    let psalm = prayers.indexOf(Prefix.psalmResponse), gospel = prayers.indexOf(Prefix.gospelResponse);
+    prayers.map(p => p += '&D='); //we add '&D=' to each element of prayer
     //we replace the word 'Mass' in 'ReadingsGospelMass' by the liturige, e.g.: 'IncenseDawn'
     prayers[psalm + 1] = prayers[psalm + 1].replace(Prefix.gospelMass, liturgie);
+    prayers[psalm + 2] = prayers[psalm + 2].replace(Prefix.gospelMass, liturgie);
     //setting the psalm and gospel responses
     if (Number(copticDay) == 29 && Number(copticMonth) != 4) {
         //we on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast)
@@ -863,9 +848,11 @@ function setGospelPrayers(liturgie) {
     }
     ;
     function setResponse(index, date) {
-        prayers[index] = prayers[index].replace('&D=', '&D=' + date);
+        prayers[index] += date;
     }
     ;
+    prayers[1] += copticReadingsDate; //We add the date to the psalm reading, which should give an element like "RGMPsalm&D=[copticReadingsDate]"
+    prayers[2] += copticReadingsDate; //We add the date to the gospem reading, which should give an element like "RGMGospel&D=[copticReadingsDate]"
     return prayers;
 }
 ;
@@ -942,51 +929,63 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
             return;
         }
         ; //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
-        let responseHtml = containerDiv.querySelector('div[data-root="PC_GospelResponse&D=0000"]'); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel response before it, and will delete it afterwards
-        let responses = setGospelPrayers(liturgy); //this gives us an array like ['PsalmResponse&D=####', 'RGID', 'GospelResponse&D=####']
-        //We will retrieve the  table containing the text of the gospel from the GospeldawnArray directly (instead of call findAndProcessPrayers())
-        let g = goseplReadingsArray.filter(table => table[0][0].split('&C=')[0] == responses[1] + '&D=' + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to responses[1], which is like "RG&D=*"
+        let gospelRespHtml = containerDiv.querySelectorAll('div[data-root=' + Prefix.commonPrayer + 'GospelResponse&D=0000"]'); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
+        let psalmReadingHtml = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + "GospelIntroductionPart2&D=0000".replace(/Part\d+/, '') + '"]')[4]; //This is the html element after which we will insert the psalm
+        let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
+        let root;
+        //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
+        let g = goseplReadingsArray.filter(table => {
+            table[0][0].split('&C=')[0] == responses[1] ||
+                table[0][0].split('&C=')[0] == responses[2];
+        }); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
         if (g.length < 1) {
             return;
         }
         ; //if no readings are returned from the filtering process, then we end the function
-        let root = g[0][0][0].split('&C=')[0]; //this is the title of the table without any '&C=*' at its end 
-        g[0].map(row => {
-            //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
-            createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], {
-                beforeOrAfter: 'beforebegin',
-                el: responseHtml
+        let position = {
+            beforeOrAfter: 'beforebegin',
+            el: gospelRespHtml[0]
+        };
+        g.map(table => {
+            root = table[0][0].split('&C=')[0]; //this is the title of the table without any '&C=*' at its end
+            table.map(row => {
+                if (row[0].includes('Psalm&D=')) {
+                    position.el = psalmReadingHtml;
+                }
+                ;
+                //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
+                createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], position);
             });
         });
-        //We will now move the Psaml after the psalm introduction
-        let psalmHtml = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + "GospelIntroductionPart2&D=0000".replace(/Part\d+/, '') + '"]')[4];
-        let gospelHtml = containerDiv.querySelectorAll('div[data-root="' + root + '"]');
-        psalmHtml.insertAdjacentElement('beforebegin', gospelHtml[0]);
-        for (let i = 1; i < gospelHtml.length; i++) {
-            if (!gospelHtml[i].classList.contains('TargetRowTitle')) {
-                psalmHtml.insertAdjacentElement('beforebegin', gospelHtml[i]);
-            }
-            else {
-                break;
+        //We will insert the Psalm response
+        (function insertPsalmResponse() {
+            let gospelPrayer = containerDiv.querySelectorAll('div[data-root=""' + Prefix.commonPrayer + 'GospelPrayer&D=0000"]');
+            let psalmResp = PsalmAndGospelPrayersArray.filter(r => r[0][0].split('&C=')[0] == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+            insertResponse(psalmResp, { beforeOrAfter: 'afterend', el: gospelPrayer[gospelPrayer.length - 1] });
+        })();
+        //We will now insert the Gospel response
+        (function insertGospeResponse() {
+            let gospelResp = PsalmAndGospelPrayersArray.filter(r => r[0][0].split('&C=')[0] == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+            insertResponse(gospelResp, {
+                beforeOrAfter: 'beforebegin',
+                el: gospelRespHtml[0]
+            });
+        })();
+        function insertResponse(filteredResp, position) {
+            if (filteredResp.length > 0) {
+                //if a gospel response is found
+                root = filteredResp[0][0][0].split('&C=')[0];
+                filteredResp.map(table => {
+                    table.map(row => {
+                        //for each row in the gospel response table that we retrieved, we wil create an html element and will insert it before responseHtml
+                        createHtmlElementForPrayer(root, row, prayersLanguages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], position);
+                    });
+                });
             }
             ;
         }
         ;
-        //We will now insert the Gospel response
-        let gospelResp = PsalmAndGospelPrayersArray.filter(r => r[0][0].split('&C=')[0] == responses[2]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-        if (gospelResp.length > 0) {
-            //if a gospel response is found
-            root = gospelResp[0][0][0].split('&C=')[0];
-            gospelResp[0].map(row => {
-                //for each row in the gospel response table that we retrieved, we wil create an html element and will insert it before responseHtml
-                createHtmlElementForPrayer(root, row, prayersLanguages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], {
-                    beforeOrAfter: 'beforebegin',
-                    el: responseHtml
-                });
-            });
-            containerDiv.querySelectorAll('div[data-root="' + responseHtml.dataset.root + '"]').forEach(html => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
-        }
-        ;
+        gospelRespHtml.forEach(html => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
     });
 }
 ;
@@ -1001,3 +1000,9 @@ function showFractionsMasterButton(btn) {
     showInlineButtonsForOptionalPrayers(selected, btn, masterBtnDiv, { AR: 'صلوات القسمة', FR: 'Oraisons de la Fraction' }, 'btnFractionPrayers');
 }
 ;
+function getBtnGospelPrayersArray(btn, readingsArray) {
+    let gospel = readingsArray.filter(r => {
+        r[0][0][0].split('&C=')[0] == btn.prayers[1] || r[0][0][0].split('&C=')[0] == btn.prayers[2];
+    });
+    return gospel;
+}
