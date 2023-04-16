@@ -1343,8 +1343,8 @@ ReadingsArrays.PraxisArray = [
         [
             Prefix.praxis + "&D=1503",
             "فقال ها انا انظر السموات مفتوحة وابن الانسان قائما عن يمين الله.  فصاحوا بصوت عظيم وسدوا آذانهم وهجموا عليه بنفس واحدة.  واخرجوه خارج المدينة ورجموه.  ",
-            "56 Il dit : Voici : je vois les cieux ouverts et le Fils de l’homme debout à la droite de Dieu. 57 Ils crièrent alors d’une voix forte, en se bouchant les oreilles, et ils se précipitèrent tous ensemble sur lui, 58 le chassèrent hors de la ville et le lapidèrent.  ",
-            "56 and said, Look! I see the heavens opened and the Son of Man standing at the right hand of God!'' 57 Then they cried out with a loud voice, stopped their ears, and ran at him with one accord; 58 and they cast him out of the city and stoned him.  ",
+            "9thSunday Il dit : Voici : je vois les cieux ouverts et le Fils de l’homme debout à la droite de Dieu. 57 Ils crièrent alors d’une voix forte, en se bouchant les oreilles, et ils se précipitèrent tous ensemble sur lui, 58 le chassèrent hors de la ville et le lapidèrent.  ",
+            "9thSunday and said, Look! I see the heavens opened and the Son of Man standing at the right hand of God!'' 57 Then they cried out with a loud voice, stopped their ears, and ran at him with one accord; 58 and they cast him out of the city and stoned him.  ",
         ],
         [
             Prefix.praxis + "&D=1503",
@@ -4506,7 +4506,7 @@ ReadingsArrays.PraxisArray = [
             Prefix.praxis + "&D=1312",
             "فصاحوا بصوت عظيم وسدوا آذانهم وهجموا عليه بنفس واحدة. واخرجوه خارج المدينة ورجموه.  ",
             "57 Ils poussèrent alors de grands cris, en se bouchant les oreilles. Puis, tous ensemble, il se jetèrent sur lui, l'entraînèrent hors de la ville et se mirent à le lapider.  ",
-            "56 and said, Look! I see the heavens opened and the Son of Man standing at the right hand of God!'' 57 Then they cried out with a loud voice, stopped their ears, and ran at him with one accord; and they cast him out of the city and stoned him.  ",
+            "9thSunday and said, Look! I see the heavens opened and the Son of Man standing at the right hand of God!'' 57 Then they cried out with a loud voice, stopped their ears, and ran at him with one accord; and they cast him out of the city and stoned him.  ",
         ],
         [
             Prefix.praxis + "&D=1312",
@@ -6550,8 +6550,8 @@ ReadingsArrays.PraxisArray = [
         [
             Prefix.praxis + "D&D=" + Seasons.GreatLent + "14",
             "ولما رأى شاول داود خارجا للقاء الفلسطيني قال لابنير رئيس الجيش ابن من هذا الغلام يا ابنير. فقال ابنير وحياتك ايها الملك لست اعلم. فقال الملك اسأل ابن من هذا الغلام.  ",
-            "55 Lorsque Saül avait vu David marcher à la rencontre du Philistin, il avait dit à Abner, chef de l’armée : De qui ce garçon est il le fils, Abner ? Abner avait répondu : Aussi vrai que tu es vivant, ô roi ! je ne le sais pas. 56 Informe toi donc de qui ce jeune homme est le fils, dit le roi.  ",
-            "55 When Saul saw David going out against the Philistine, he said to Abner, the commander of the army, Abner, whose son is this youth? And Abner said, As your soul lives, O king, I do not know. 56 So the king said, Inquire whose son this young man is.  ",
+            "55 Lorsque Saül avait vu David marcher à la rencontre du Philistin, il avait dit à Abner, chef de l’armée : De qui ce garçon est il le fils, Abner ? Abner avait répondu : Aussi vrai que tu es vivant, ô roi ! je ne le sais pas. 9thSunday Informe toi donc de qui ce jeune homme est le fils, dit le roi.  ",
+            "55 When Saul saw David going out against the Philistine, he said to Abner, the commander of the army, Abner, whose son is this youth? And Abner said, As your soul lives, O king, I do not know. 9thSunday So the king said, Inquire whose son this young man is.  ",
         ],
         [
             Prefix.praxis + "D&D=" + Seasons.GreatLent + "14",
@@ -19215,31 +19215,31 @@ ReadingsArrays.PraxisArray = [
     ],
     [
         [
-            Prefix.praxis + "&D=Resurrection&C=Title",
+            Prefix.praxis + "&D=" + Seasons.GreatLent + "9thSunday&C=Title",
             "الإبركسيس فصل من أعمال آبائنا الرسل الأطهار (2 : 22 – 28 ) ",
             "Actes 2:22 - 28 ",
             "Acts 2 : 22 - 28 ",
         ],
         [
-            Prefix.praxis + "&D=Resurrection",
+            Prefix.praxis + "&D=" + Seasons.GreatLent + "9thSunday",
             "ايها الرجال الاسرائيليون اسمعوا هذه الاقوال.يسوع الناصري رجل قد تبرهن لكم من قبل الله بقوات وعجائب وآيات صنعها الله بيده في وسطكم كما انتم ايضا تعلمون. ",
             "22 Israélites, écoutez mes paroles: Jésus le Nazaréen, homme que Dieu avait accrédité auprès de vous en opérant par lui des miracles, des prodiges et des signes au milieu de vous, comme vous le savez,  ",
             "22 Men of Israel, hear these words: Jesus of Nazareth, a Man attested by God to you by miracles, wonders, and signs which God did through Him in your midst, as you yourselves also know-- ",
         ],
         [
-            Prefix.praxis + "&D=Resurrection",
+            Prefix.praxis + "&D=" + Seasons.GreatLent + "9thSunday",
             "هذا اخذتموه مسلّما بمشورة الله المحتومة وعلمه السابق وبايدي اثمة صلبتموه وقتلتموه. الذي اقامه الله ناقضا اوجاع الموت اذ لم يكن ممكنا ان يمسك منه.  ",
             "23 cet homme, selon le plan bien arrêté par Dieu dans sa prescience,vous l'avez livré et supprimé en le faisant crucifier par la main des impies; 24 mais Dieu l'a ressuscité en le délivrant des douleurs de la mort, car il n'était pas possible que la mort le retienne en son pouvoir.  ",
             "23 Him, being delivered by the determined purpose and foreknowledge of God, you have taken by lawless hands, have crucified, and put to death; 24 whom God raised up, having loosed the pains of death, because it was not possible that He should be held by it.  ",
         ],
         [
-            Prefix.praxis + "&D=Resurrection",
+            Prefix.praxis + "&D=" + Seasons.GreatLent + "9thSunday",
             "لان داود يقول فيه كنت ارى الرب امامي في كل حين انه عن يميني لكي لا اتزعزع. لذلك سرّ قلبي وتهلل لساني حتى جسدي ايضا سيسكن على رجاء.   ",
             "25 David en effet dit de lui: Je voyais constamment le Seigneur devant moi, car il est à ma droite pour que je ne sois pas ébranlé. 26 Aussi mon coeur était-il dans la joie et ma langue a chanté d'allégresse. Bien mieux, ma chair reposera dans l'espérance,  ",
             "25 For David says concerning Him: `I foresaw the Lord always before my face, For He is at my right hand, that I may not be shaken. 26 Therefore my heart rejoiced, and my tongue was glad; Moreover my flesh also will rest in hope.  ",
         ],
         [
-            Prefix.praxis + "&D=Resurrection",
+            Prefix.praxis + "&D=" + Seasons.GreatLent + "9thSunday",
             "لانك لن تترك نفسي في الهاوية ولا تدع قدوسك يرى فسادا. عرفتني سبل الحياة وستملأني سرورا مع وجهك. ",
             "27 car tu n'abandonneras pas ma vie au séjour des morts et tu ne laisseras pas ton saint connaître la décomposition. 28 Tu m'as montré les chemins de la vie, tu me rempliras de joie par ta présence.  ",
             "27 For You will not leave my soul in Hades, Nor will You allow Your Holy One to see corruption. 28 You have made known to me the ways of life; You will make me full of joy in Your presence. ",

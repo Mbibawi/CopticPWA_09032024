@@ -10378,13 +10378,13 @@ ReadingsArrays.GospelDawnArray = [
     ],
     [
         [
-            Prefix.gospelDawn + "Psalm&D=Resurrection&C=Title",
+            Prefix.gospelDawn + "Psalm&D=" + Seasons.GreatLent + "9thSunday&C=Title",
             "مزمور باكر 78:65, 69 ",
             "Psaume 78:65, 69 ",
             "Psalms 78:65, 69 ",
         ],
         [
-            Prefix.gospelDawn + "Psalm&D=Resurrection",
+            Prefix.gospelDawn + "Psalm&D=" + Seasons.GreatLent + "9thSunday",
             "فاستيقظ الرب كنائم كجبار معّيط من الخمر. وبنى مثل مرتفعات مقدسه كالارض التي اسسها الى الابد        هللويا.  ",
             "65 Tel un dormeur, le Seigneur s'éveilla, tel un brave que le vin ragaillardit.  69 Il bâtit son sanctuaire pareil aux cimes, et comme la terre, il l'a fondé pour toujours.  ",
             "65 Then the Lord awoke as from sleep, Like a mighty man who shouts because of wine. 69 And He built His sanctuary like the heights, Like the earth which He has established forever.      Alleluia ",
@@ -10392,37 +10392,37 @@ ReadingsArrays.GospelDawnArray = [
     ],
     [
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection&C=Title",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday&C=Title",
             "مرقس ( 16 : 2- 11 ) ",
             "Marc 16:2 - 11 ",
             "Mark 16 : 2 -11 ",
         ],
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "وباكرا جدا في اول الاسبوع أتين الى القبر اذ طلعت الشمس.وكنّ يقلن فيما بينهنّ من يدحرج لنا الحجر عن باب القبر.  ",
             "2 Et de grand matin, le premier jour de la semaine, elles vont à la tombe, le soleil étant levé. 3 Elles se disaient entre elles: 'Qui nous roulera la pierre de l'entrée du tombeau?'  ",
             "2 Very early in the morning, on the first day of the week, they came to the tomb when the sun had risen. 3 And they said among themselves, Who will roll away the stone from the door of the tomb for us?  ",
         ],
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "فتطلعن ورأين ان الحجر قد دحرج.لانه كان عظيما جدا. ولما دخلن القبر رأين شابا جالسا عن اليمين لابسا حلة بيضاء فاندهشن. فقال لهنّ لا تندهشن ",
             "4 Et, levant les yeux, elles voient que la pierre est roulée; or, elle était très grande. 5 Entrées dans le tombeau, elles virent, assis à droite, un jeune homme, vêtu d'une robe blanche, et elles furent saisies de frayeur. 6 Mais il leur dit: 'Ne vous effrayez pas.  ",
             "4 But when they looked up, they saw that the stone had been rolled away--for it was very large. 5 And entering the tomb, they saw a young man clothed in a long white robe sitting on the right side; and they were alarmed. 6 But he said to them, Do not be alarmed.  ",
         ],
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "انتنّ تطلبن يسوع الناصري المصلوب. قد قام.ليس هو ههنا.هوذا الموضع الذي وضعوه فيه.لكن اذهبن وقلن لتلاميذه ولبطرس انه يسبقكم الى الجليل.هناك ترونه كما قال لكم.   ",
             "Vous cherchez Jésus de Nazareth, le crucifié: il est ressuscité, il n'est pas ici; voyez l'endroit où on l'avait déposé. 7Mais allez dire à ses disciples et à Pierre: 'Il vous précède en Galilée; c'est là que vous le verrez, comme il vous l'a dit.  ",
             "You seek Jesus of Nazareth, who was crucified. He is risen! He is not here. See the place where they laid Him. 7 But go, tell His disciples--and Peter--that He is going before you into Galilee; there you will see Him, as He said to you.  ",
         ],
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "فخرجن سريعا وهربن من القبر لان الرعدة والحيرة اخذتاهنّ ولم يقلن لاحد شيئا لانهنّ كنّ خائفات وبعد ما قام باكرا في اول الاسبوع ظهر اولا لمريم المجدلية التي كان قد اخرج منها سبعة شياطين.  ",
             "8 Elles sortirent et s'enfuirent loin du tombeau, car elles étaient toutes tremblantes et bouleversées; et elles ne dirent rien à personne, car elles avaient peur. 9 Ressuscité le matin du premier jour de la semaine, Jésus apparut d'abord à Marie de Magdala, dont il avait chassé sept démons.  ",
             "8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid. 9 Now when He rose early on the first day of the week, He appeared first to Mary Magdalene, out of whom He had cast seven demons.  ",
         ],
         [
-            Prefix.gospelDawn + "Gospel&D=Resurrection",
+            Prefix.gospelDawn + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "فذهبت هذه واخبرت الذين كانوا معه وهم ينوحون ويبكون. فلما سمع اولئك انه حيّ وقد نظرته لم يصدقوا ( والمجد للـه دائماً ) ",
             "10 Celle-ci partit l'annoncer à ceux qui avaient été avec lui et qui étaient dans le deuil et les pleurs.11 Mais, entendant dire qu'il vivait et qu'elle l'avait vu, ceux-ci ne la crurent pas.  ",
             "10 She went and told those who had been with Him, as they mourned and wept. 11 And when they heard that He was alive and had been seen by her, they did not believe.   ",

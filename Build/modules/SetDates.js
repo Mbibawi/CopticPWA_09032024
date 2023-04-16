@@ -220,8 +220,9 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
     let difference = (resDate - today) / calendarDay; // we get the difference between the 2 dates in days (we are dividing the difference in milliseconds by the number of milliseconds in a day, which is a constant declared as calendarDay)
     if (difference == 0 || (difference == 1 && todayDate.getHours() > 15)) {
         //If we are Saturday (which means that difference = 1) and we are after 3 PM, we will retrieve the readings of the Resurrection because we use to celebrate the Resurrection Mass on Saturday evening not on Sunday itself
-        Season = Seasons.Resurrection; //we set teh Season value
-        return Seasons.Resurrection; //we get the reading of Resurrection although we are still Saturday
+        Season = Seasons.GreatLent; //we set teh Season value
+        return isItSundayOrWeekDay(Seasons.GreatLent, 58, weekDay);
+        //return copticFeasts.Resurrection; //we get the reading of Resurrection although we are still Saturday
     }
     else if (difference >= 1 && difference < 58) {
         //We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day

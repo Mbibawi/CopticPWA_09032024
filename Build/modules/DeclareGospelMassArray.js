@@ -13163,13 +13163,13 @@ ReadingsArrays.GospelMassArray = [
     ],
     [
         [
-            Prefix.gospelMass + "Psalm&D=Resurrection&C=Title",
+            Prefix.gospelMass + "Psalm&D=" + Seasons.GreatLent + "9thSunday&C=Title",
             "مزمور 118:24-25, 27",
             "Psaume118:24,25,27",
             "Psalms 118:24-25, 27"
         ],
         [
-            Prefix.gospelMass + "Psalm&D=Resurrection",
+            Prefix.gospelMass + "Psalm&D=" + Seasons.GreatLent + "9thSunday",
             "هذا هو اليوم الذي صنعه الرب.نبتهج ونفرح فيه.آه يا رب خلّص.آه يا رب انقذ.الرب هو الله وقد انار   هللويا.",
             "24 Voici le jour que le Seigneur a fait: qu'il soit notre bonheur et notre joie. 25 Donne, Seigneur, donne la victoire, Donne, Seigneur, donne le triomphe.",
             "24 This is the day the Lord has made; We will rejoice and be glad in it. 25 Save now, I pray, O Lord; O Lord, I pray, send now prosperity."
@@ -13177,61 +13177,61 @@ ReadingsArrays.GospelMassArray = [
     ],
     [
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection&C=Title",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday&C=Title",
             "يوحنا ( 20 :  1- 18 )",
             "Jean 20:1 - 18",
             "John 20:1-18"
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "وفي اول الاسبوع جاءت مريم المجدلية الى القبر باكرا والظلام باق فنظرت الحجر مرفوعا عن القبر. فركضت وجاءت الى سمعان بطرس والى التلميذ الآخر الذي كان يسوع يحبه",
             "1Le premier jour de la semaine, à l'aube, alors qu'il faisait encore sombre, Marie de Magdala se rend au tombeau et voit que la pierre a été enlevée du tombeau.2 Elle court, rejoint Simon Pierre et l'autre disciple, celui que Jésus aimait, ",
             "1 Now on the first day of the week Mary Magdalene went to the tomb early, while it was still dark, and saw that the stone had been taken away from the tomb. 2 Then she ran and came to Simon Peter, and to the other disciple, whom Jesus loved, "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "وقالت لهما اخذوا السيد من القبر ولسنا نعلم اين وضعوه.فخرج بطرس والتلميذ الآخر وأتيا الى القبر.وكان الاثنان يركضان معا.فسبق التلميذ الآخر بطرس وجاء اولا الى القبر ",
             "et elle leur dit: \"On a enlevé du tombeau le Seigneur, et nous ne savons pas où on l'a mis. 3 Alors Pierre sortit, ainsi que l'autre disciple, et ils allèrent au tombeau. 4 Ils couraient tous les deux ensemble, mais l'autre disciple courut plus vite que Pierre et arriva le premier au tombeau. ",
             "and said to them, They have taken away the Lord out of the tomb, and we do not know where they have laid Him. 3 Peter therefore went out, and the other disciple, and were going to the tomb. 4 So they both ran together, and the other disciple outran Peter and came to the tomb first. "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "وانحنى فنظر الاكفان موضوعة ولكنه لم يدخل. ثم جاء سمعان بطرس يتبعه ودخل القبر ونظر الاكفان موضوعة والمنديل الذي كان على راسه ليس موضوعا مع الاكفان",
             "5 Il se penche et voit les bandelettes qui étaient posées là. Toutefois il n'entra pas. 6 Arrive, à son tour, Simon Pierre qui le suivait; il entre dans le tombeau et considère les bandelettes posées là 7 et le linge qui avait recouvert la tête; celui-ci n'avait pas été déposé avec les bandelettes, ",
             "5 And he, stooping down and looking in, saw the linen cloths lying there; yet he did not go in. 6 Then Simon Peter came, following him, and went into the tomb; and he saw the linen cloths lying there, 7 and the handkerchief that had been around His head, not lying with the linen cloths, "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "بل ملفوفا في موضع وحده. فحينئذ دخل ايضا التلميذ الآخر الذي جاء اولا الى القبر ورأى فآمن.لانهم لم يكونوا بعد يعرفون الكتاب انه ينبغي ان يقوم من الاموات. فمضى التلميذان ايضا الى موضعهما ",
             "mais il était roulé à part, dans un autre endroit. 8 C'est alors que l'autre disciple, celui qui était arrivé le premier, entra à son tour dans le tombeau; il vit et il crut. 9 En effet, ils n'avaient pas encore compris l'Écriture selon laquelle Jésus devait se relever d'entre les morts.10 Après quoi, les disciples s'en retournèrent chez eux. ",
             "but folded together in a place by itself. 8 Then the other disciple, who came to the tomb first, went in also; and he saw and believed. 9 For as yet they did not know the Scripture, that He must rise again from the dead. 10 Then the disciples went away again to their own homes. "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "اما مريم فكانت واقفة عند القبر خارجا تبكي.وفيما هي تبكي انحنت الى القبر فنظرت ملاكين بثياب بيض جالسين واحدا عند الراس والآخر عند الرجلين حيث كان جسد يسوع موضوعا. فقالا لها يا امرأة لماذا تبكين. ",
             "11 Marie était restée dehors, près du tombeau, et elle pleurait. Tout en pleurant elle se penche vers le tombeau 12 et elle voit deux anges vêtus de blanc, assis à l'endroit même où le corps de Jésus avait été déposé, l'un à la tête et l'autre aux pieds. 13 \"Femme, lui dirent-ils, pourquoi pleures-tu?\" Elle leur répondit: ",
             "11 But Mary stood outside by the tomb weeping, and as she wept she stooped down and looked into the tomb. 12 And she saw two angels in white sitting, one at the head and the other at the feet, where the body of Jesus had lain. 13 Then they said to her, Woman, why are you weeping? She said to them, "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "قالت لهما انهم اخذوا سيدي ولست اعلم اين وضعوه. ولما قالت هذا التفتت الى الوراء فنظرت يسوع واقفا ولم تعلم انه يسوع. قال لها يسوع يا امرأة لماذا تبكين.من تطلبين. ",
             "\"On a enlevé mon Seigneur, et je ne sais où on l'a mis.14  Tout en parlant elle se retourne et elle voit Jésus qui se tenait là, mais elle ne savait pas que c'était lui. 15 Jésus lui dit: \"Femme, pourquoi pleures-tu? qui cherches-tu?\"",
             "Because they have taken away my Lord, and I do not know where they have laid Him. 14 Now when she had said this, she turned around and saw Jesus standing there, and did not know that it was Jesus. 15 Jesus said to her, Woman, why are you weeping? Whom are you seeking? "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "فظنت تلك انه البستاني فقالت له يا سيد ان كنت انت قد حملته فقل لي اين وضعته وانا آخذه. قال لها يسوع يا مريم.فالتفتت تلك وقالت له ربوني الذي تفسيره يا معلّم.",
             "Mais elle, croyant qu'elle avait affaire au gardien du jardin, lui dit: \"Seigneur, si c'est toi qui l'as enlevé, dis-moi où tu l'as mis et j'irai le prendre. 16 Jésus lui dit: \"Marie\". Elle se retourna et lui dit en hébreu: \"Rabouni\", ce qui signifie maître. ",
             "She, supposing Him to be the gardener, said to Him, Sir, if You have carried Him away, tell me where You have laid Him, and I will take Him away. 16 Jesus said to her, Mary! She turned and said to Him, Rabboni! (which is to say, Teacher). "
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "قال لها يسوع لا تلمسيني لاني لم اصعد بعد الى ابي.ولكن اذهبي الى اخوتي وقولي لهم اني اصعد الى ابي وابيكم والهي والهكم.",
             "17 Jésus lui dit: \"Ne me retiens pas! car je ne suis pas encore monté vers mon Père. Pour toi, va trouver mes frères et dis leur que je monte vers mon Père qui est votre Père, vers mon Dieu qui est votre Dieu\". ",
             "17 Jesus said to her, Do not cling to Me, for I have not yet ascended to My Father; but go to My brethren and say to them, `I am ascending to My Father and your Father, and to My God and your God.'"
         ],
         [
-            Prefix.gospelMass + "Gospel&D=Resurrection",
+            Prefix.gospelMass + "Gospel&D=" + Seasons.GreatLent + "9thSunday",
             "فجاءت مريم المجدلية واخبرت التلاميذ انها رأت الرب وانه قال لها هذا        ",
             "18 Marie de Magdala vint donc annoncer aux disciples: \"J'ai vu le Seigneur, et voilà ce qu'il m'a dit.\"",
             "18 Mary Magdalene came and told the disciples that she had seen the Lord, and that He had spoken these things to her."

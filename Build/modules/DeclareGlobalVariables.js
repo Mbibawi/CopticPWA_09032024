@@ -98,7 +98,6 @@ const Seasons = {
     ApostlesFast: 'Apost',
     Nayrouz: 'Nay',
     CrossFeast: 'Cross',
-    Resurrection: 'Res',
     NoSeason: 'NoSpecificSeason',
 };
 const copticFeasts = {
@@ -122,8 +121,8 @@ const copticFeasts = {
     EndOfGreatLentFriday: Seasons.GreatLent + ' 49',
     LazarusSaturday: Seasons.GreatLent + '50',
     PalmSunday: Seasons.GreatLent + '8thSunday',
-    Resurrection: Seasons.GreatLent + '56',
-    Pentecoste: Seasons.Resurrection + '39',
+    Resurrection: Seasons.GreatLent + '9thSunday',
+    Pentecoste: Seasons.PentecostalDays + '39',
     Ascension: Seasons.PentecostalDays + '7thSunday',
     Apostles: '0511',
 };
@@ -178,9 +177,9 @@ if (localStorage.showActors === undefined) {
     localStorage.showActors = JSON.stringify(Array.from(showActors));
 }
 ;
-let lordFeasts = [
-    copticFeasts.Nativity, copticFeasts.Baptism, Seasons.Resurrection, copticFeasts.Ascension, copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple
-];
+let lordGreatFeasts = [copticFeasts.Annociation, copticFeasts.Nativity, copticFeasts.Baptism, copticFeasts.PalmSunday, copticFeasts.Resurrection, copticFeasts.Ascension, copticFeasts.Pentecoste];
+let lordMinorFeasts = [copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple];
+let lordFeasts = [...lordGreatFeasts, ...lordMinorFeasts];
 let textAmplified = new Map();
 allLanguages.map(lang => textAmplified.set(lang, false));
 if (localStorage.textAmplified === undefined) {

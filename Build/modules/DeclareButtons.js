@@ -129,7 +129,7 @@ const btnIncenseOffice = new Button({
         //show or hide the PropheciesDawn button if we are in the Great Lent or JonahFast:
         if (Season == Seasons.GreatLent || Season == Seasons.JonahFast) {
             //we will remove the btnIncenseVespers from the children of btnIncenseOffice for all the days of the Week except Saturday because there is no Vespers incense office except on Saturday:
-            if (todayDate.getDay() != 6) {
+            if (todayDate.getDay() != 6 && copticReadingsDate != copticFeasts.Resurrection) {
                 btnIncenseOffice.children.splice(btnIncenseOffice.children.indexOf(btnIncenseVespers), 1);
             }
             ;
@@ -209,7 +209,7 @@ const btnIncenseDawn = new Button({
         (function removeEklonominTaghonata() {
             //We remove "Eklonomin Taghonata" from the prayers array
             if ((Season != Seasons.GreatLent && Season != Seasons.JonahFast) || (todayDate.getDay() == 0 || todayDate.getDay() == 6)) {
-                btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf('ID_GodHaveMercyOnUsRefrainComment&D=GL'), 36); //this is the comment, we remove 36 prayers including the comment
+                btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(Prefix.incenseDawn + 'GodHaveMercyOnUsRefrainComment&D=GL'), 36); //this is the comment, we remove 36 prayers including the comment
             }
             ;
         })();
@@ -224,7 +224,7 @@ const btnIncenseDawn = new Button({
             ;
         })();
         (function addResurrectionPrayers() {
-            if (Season == Seasons.Resurrection) {
+            if (copticReadingsDate == copticFeasts.Resurrection) {
             }
             ;
         })();
@@ -280,7 +280,10 @@ const btnIncenseDawn = new Button({
         (function addGreatLentPrayers() {
             return __awaiter(this, void 0, void 0, function* () {
                 let doxologies;
-                if (todayDate.getDay() != 0 && todayDate.getDay() != 6) {
+                if (Season != Seasons.GreatLent || copticReadingsDate == copticFeasts.Resurrection) {
+                    return;
+                }
+                else if (todayDate.getDay() != 0 && todayDate.getDay() != 6) {
                     //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
                     (function showPropheciesDawnBtn() {
                         //If we are during any day of the week, we will add the Prophecies readings to the children of the button
@@ -314,22 +317,22 @@ const btnIncenseDawn = new Button({
                     });
                 }
                 ;
-            });
-        })();
-        (function removeEklonominTaghonataExcessiveTitles() {
-            return __awaiter(this, void 0, void 0, function* () {
-                let titles = containerDiv.querySelectorAll('div[data-root="ID_GodHaveMercyOnUsRefrain&D=GL"]');
-                if (titles) {
-                    for (let i = 7; i < titles.length; i += 7) {
-                        titles[i].remove();
-                    }
-                }
-                ;
-                let links = rightSideBar.querySelector('#sideBarBtns').querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
-                for (let i = 1; i < links.length; i++) {
-                    links[i].remove();
-                }
-                ;
+                (function removeEklonominTaghonataExcessiveTitles() {
+                    return __awaiter(this, void 0, void 0, function* () {
+                        let titles = containerDiv.querySelectorAll('div[data-root="ID_GodHaveMercyOnUsRefrain&D=GL"]');
+                        if (titles) {
+                            for (let i = 7; i < titles.length; i += 7) {
+                                titles[i].remove();
+                            }
+                        }
+                        ;
+                        let links = rightSideBar.querySelector('#sideBarBtns').querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
+                        for (let i = 1; i < links.length; i++) {
+                            links[i].remove();
+                        }
+                        ;
+                    });
+                })();
             });
         })();
         insertGospelReadings(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
@@ -372,7 +375,7 @@ const btnIncenseVespers = new Button({
         })();
         (function removeEklonominTaghonata() {
             //We remove "Eklonomin Taghonata" from the prayers array                           
-            btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf('ID_GodHaveMercyOnUsRefrainComment&S=GL'), 36); //this is the comment, we remove 36 prayers including the comment
+            btnIncenseVespers.prayers.splice(btnIncenseVespers.prayers.indexOf(Prefix.incenseDawn + 'GodHaveMercyOnUsRefrainComment&D=' + Seasons.GreatLent), 36); //this is the comment, we remove 36 prayers including the comment
         })();
         (function addGreatLentPrayers() {
             if (Season == Seasons.GreatLent && todayDate.getDay() != 0 && todayDate.getDay() != 6) {
@@ -590,7 +593,7 @@ const btnDayReadings = new Button({
     onClick: () => {
         //We set the btnDayReadings.children[] property
         btnDayReadings.children = [btnReadingsGospelIncenseVespers, btnReadingsGospelIncenseDawn, btnReadingsStPaul, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsSynaxarium, btnReadingsGospelMass];
-        if (Season == Seasons.GreatLent && todayDate.getDay() != 6) {
+        if (Season == Seasons.GreatLent && todayDate.getDay() != 6 && copticReadingsDate != copticFeasts.Resurrection) {
             //we are during the Great Lent and we are not a Saturday
             if (btnDayReadings.children.indexOf(btnReadingsGospelIncenseVespers) > -1) {
                 //There is no Vespers office: we remove the Vespers Gospel from the list of buttons
@@ -610,7 +613,7 @@ const btnDayReadings = new Button({
                 }
                 ;
             }
-            else if (todayDate.getDay() == 0) {
+            else if (todayDate.getDay() == 0 && copticReadingsDate != copticFeasts.Resurrection) {
                 //However, if we are a Sunday, we add the Night Gospel to the readings list of buttons
                 if (btnDayReadings.children.indexOf(btnReadingsGospelNight) == -1) {
                     // (we do not add it to the Unbaptized mass menu because it is not read during the mass)
@@ -767,7 +770,7 @@ function setGospelPrayers(liturgie) {
     //this function sets the date or the season for the Psalm response and the gospel response
     let prayers = [...GospelPrayers], date;
     let psalm = prayers.indexOf(Prefix.psalmResponse), gospel = prayers.indexOf(Prefix.gospelResponse);
-    prayers.map(p => p += '&D='); //we add '&D=' to each element of prayer
+    prayers.forEach(p => prayers[prayers.indexOf(p)] = p + '&D='); //we add '&D=' to each element of prayer
     //we replace the word 'Mass' in 'ReadingsGospelMass' by the liturige, e.g.: 'IncenseDawn'
     prayers[psalm + 1] = prayers[psalm + 1].replace(Prefix.gospelMass, liturgie);
     prayers[psalm + 2] = prayers[psalm + 2].replace(Prefix.gospelMass, liturgie);
@@ -851,8 +854,8 @@ function setGospelPrayers(liturgie) {
         prayers[index] += date;
     }
     ;
-    prayers[1] += copticReadingsDate; //We add the date to the psalm reading, which should give an element like "RGMPsalm&D=[copticReadingsDate]"
-    prayers[2] += copticReadingsDate; //We add the date to the gospem reading, which should give an element like "RGMGospel&D=[copticReadingsDate]"
+    // prayers[1] += copticReadingsDate; //We add the date to the psalm reading, which should give an element like "RGMPsalm&D=[copticReadingsDate]"
+    // prayers[2] += copticReadingsDate; //We add the date to the gospem reading, which should give an element like "RGMGospel&D=[copticReadingsDate]"
     return prayers;
 }
 ;
@@ -926,33 +929,32 @@ function getVespersGospel(prayers) {
 function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
     return __awaiter(this, void 0, void 0, function* () {
         if (new Map(JSON.parse(localStorage.showActors)).get('Diacon') == false) {
+            alert("Diacon Prayers are set to hidden, we cannot show the gospel");
             return;
         }
         ; //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
-        let gospelRespHtml = containerDiv.querySelectorAll('div[data-root=' + Prefix.commonPrayer + 'GospelResponse&D=0000"]'); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
+        let gospelRespHtml = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + 'GospelResponse&D=0000"]'); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
         let psalmReadingHtml = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + "GospelIntroductionPart2&D=0000".replace(/Part\d+/, '') + '"]')[4]; //This is the html element after which we will insert the psalm
         let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
         let root;
         //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
-        let g = goseplReadingsArray.filter(table => {
-            table[0][0].split('&C=')[0] == responses[1] ||
-                table[0][0].split('&C=')[0] == responses[2];
-        }); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
+        let g = goseplReadingsArray.filter(table => table[0][0].split('&C=')[0] == responses[1] + copticReadingsDate ||
+            table[0][0].split('&C=')[0] == responses[2] + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
         if (g.length < 1) {
             return;
         }
         ; //if no readings are returned from the filtering process, then we end the function
         let position = {
             beforeOrAfter: 'beforebegin',
-            el: gospelRespHtml[0]
+            el: psalmReadingHtml
         };
         g.map(table => {
             root = table[0][0].split('&C=')[0]; //this is the title of the table without any '&C=*' at its end
             table.map(row => {
-                if (row[0].includes('Psalm&D=')) {
-                    position.el = psalmReadingHtml;
+                if (row[0].includes('Gospel&D=')) {
+                    position.beforeOrAfter = 'beforebegin';
+                    position.el = gospelRespHtml[0];
                 }
-                ;
                 //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
                 createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], position);
             });
@@ -966,10 +968,15 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
         //We will now insert the Gospel response
         (function insertGospeResponse() {
             let gospelResp = PsalmAndGospelPrayersArray.filter(r => r[0][0].split('&C=')[0] == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+            if (!gospelResp) {
+                return;
+            }
+            ;
             insertResponse(gospelResp, {
                 beforeOrAfter: 'beforebegin',
                 el: gospelRespHtml[0]
             });
+            gospelRespHtml.forEach(html => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
         })();
         function insertResponse(filteredResp, position) {
             if (filteredResp.length > 0) {
@@ -985,7 +992,6 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
             ;
         }
         ;
-        gospelRespHtml.forEach(html => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
     });
 }
 ;
