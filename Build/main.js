@@ -1227,7 +1227,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = "v1.8 (diffrent fixes)";
+        let version = "v1.9 (changed the text extracted)";
         let p = document.createElement("p");
         p.style.color = "red";
         p.style.fontSize = "15pt";
