@@ -31,7 +31,8 @@ const Prefix = {
     gospelDawn: "RGID_",
     gospelMass: "RGM_",
     gospelNight: "RGN_",
-    synaxarium: "RS_", //Stands for Readings Synaxarium
+    synaxarium: "RS_",
+    cymbalVerses: "CV_"
 };
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';

@@ -220,7 +220,7 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
     let difference = (resDate - today) / calendarDay; // we get the difference between the 2 dates in days (we are dividing the difference in milliseconds by the number of milliseconds in a day, which is a constant declared as calendarDay)
     if (difference == 0 || (difference == 1 && todayDate.getHours() > 15)) {
         //If we are Saturday (which means that difference = 1) and we are after 3 PM, we will retrieve the readings of the Resurrection because we use to celebrate the Resurrection Mass on Saturday evening not on Sunday itself
-        Season = Seasons.GreatLent; //we set teh Season value
+        Season = Seasons.PentecostalDays; //we set teh Season value
         return isItSundayOrWeekDay(Seasons.GreatLent, 58, weekDay);
         //return copticFeasts.Resurrection; //we get the reading of Resurrection although we are still Saturday
     }
@@ -260,6 +260,15 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
         //We are during the St Mary Fast
         Season = Seasons.StMaryFast;
         return Seasons.NoSeason;
+    }
+    else if (copticDate == '2804' && todayDate.getHours() < 15) {
+        //We are on the day before the Nativity Feast, and we are in the morning, it is the Parmoun of the Nativity
+        return copticFeasts.NativityParamoun;
+    }
+    else if (copticDate == '2804' && todayDate.getHours() > 15) {
+        //We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
+        Season = Seasons.Nativity;
+        return copticFeasts.Nativity;
     }
     else if ((Number(copticMonth) == 4 && Number(copticDay) > 29) || (Number(copticMonth) == 5 && Number(copticDay) < 11)) {
         //We are between the Nativity and the Baptism

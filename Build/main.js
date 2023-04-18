@@ -250,6 +250,15 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
             return;
         }
     }
+    if (btn.prayers && btn.prayersArray && btn.languages && btn.showPrayers) {
+        showPrayers(btn, true, true, containerDiv);
+    }
+    if (btn.afterShowPrayers) {
+        btn.afterShowPrayers();
+    }
+    //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
+    setCSSGridTemplate(containerDiv.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
+    applyAmplifiedText(containerDiv.querySelectorAll("p[data-lang]"));
     if (btn.inlineBtns) {
         let newDiv = document.createElement("div");
         newDiv.style.display = "grid";
@@ -274,15 +283,6 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
             createBtn(c, btnsDiv, c.cssClass); //creating and showing a new html button element for each child
         });
     }
-    if (btn.prayers && btn.prayersArray && btn.languages && btn.showPrayers) {
-        showPrayers(btn, true, true, containerDiv);
-    }
-    if (btn.afterShowPrayers) {
-        btn.afterShowPrayers();
-    }
-    //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-    setCSSGridTemplate(containerDiv.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
-    applyAmplifiedText(containerDiv.querySelectorAll("p[data-lang]"));
     showTitlesInRightSideBar(containerDiv.querySelectorAll("div.TargetRowTitle"), rightSideBar.querySelector("#sideBarBtns"), btn);
     if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
         createGoBackBtn(btn, btnsDiv, btn.cssClass).then((b) => b.addEventListener("click", (e) => {
@@ -903,6 +903,9 @@ function buildSideBar(id) {
  */
 function showPrayers(btn, clearContent = true, clearRightSideBar = true, position = containerDiv) {
     return __awaiter(this, void 0, void 0, function* () {
+        if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) {
+            closeSideBar(leftSideBar);
+        }
         if (clearContent) {
             containerDiv.innerHTML = "";
         }
@@ -931,9 +934,6 @@ function showPrayers(btn, clearContent = true, clearRightSideBar = true, positio
                 return;
             }
         });
-        if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) {
-            closeSideBar(leftSideBar);
-        }
     });
 }
 /**
@@ -1060,7 +1060,7 @@ function collapseText(element) {
 function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv, btnLabels, masterBtnID) {
     return __awaiter(this, void 0, void 0, function* () {
         let prayersMasterBtn, next;
-        //Creating a new Button to which we will attach as many inlineBtns as there are fraction prayers suitable for the day (if it is a feast or if it falls during a Season)
+        //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
         prayersMasterBtn = new Button({
             btnID: masterBtnID,
             label: btnLabels,
@@ -1070,7 +1070,7 @@ function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv,
             onClick: () => {
                 //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
                 showInlineBtns(masterBtnID, true);
-                //When the prayersBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
+                //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
                 let newDiv = document.createElement("div");
                 newDiv.id = masterBtnID + "Container";
                 //Customizing the style of newDiv
@@ -1093,12 +1093,10 @@ function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv,
             },
         });
         function showGroupOfSixPrayers(startAt, newDiv) {
-            for (let n = startAt; n < startAt + 6; n++) {
+            for (let n = startAt; n < startAt + 6 && n < prayersMasterBtn.inlineBtns.length; n++) {
                 //We create html buttons for the 1st 6 inline buttons and append them to newDiv
-                if (n < prayersMasterBtn.inlineBtns.length) {
-                    let b = prayersMasterBtn.inlineBtns[n];
-                    createBtn(b, newDiv, b.cssClass);
-                }
+                let b = prayersMasterBtn.inlineBtns[n];
+                createBtn(b, newDiv, b.cssClass);
             }
             if (next) {
                 //If a "next" Button has been set (which means that there is more than 6 inlineBtns in prayersBtn.inlineBtns[] property), we will set its onClick() property to a function that clears newDiv, and advances the startAt index by 6
@@ -1126,7 +1124,6 @@ function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv,
         masterBtnDiv.style.gridTemplateColumns = "100%";
         /**
          *Creates a new inlineBtn for each fraction and pushing it to fractionBtn.inlineBtns[]
-         * @param {Button} target - the button to which the inline buttons that will be created will be attached as members of its inlineBtns[] property
          */
         function createInlineBtns() {
             return __awaiter(this, void 0, void 0, function* () {

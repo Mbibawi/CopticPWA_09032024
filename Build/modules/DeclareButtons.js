@@ -223,11 +223,6 @@ const btnIncenseDawn = new Button({
             }
             ;
         })();
-        (function addResurrectionPrayers() {
-            if (copticReadingsDate == copticFeasts.Resurrection) {
-            }
-            ;
-        })();
         scrollToTop();
         return btnIncenseDawn.prayers;
     },
@@ -334,6 +329,59 @@ const btnIncenseDawn = new Button({
                     });
                 })();
             });
+        })();
+        (function addResurrectionAndPentecostalPrayers() {
+            if (Season != Seasons.PentecostalDays) {
+                return;
+            }
+            (function insertCymbalVerses() {
+                let verses = [];
+                if (copticDate == copticFeasts.Ascension) {
+                    verses.push(Prefix.cymbalVerses + "&D=" + copticFeasts.Ascension);
+                }
+                else if (copticDate == copticFeasts.Pentecoste) {
+                    verses.push(Prefix.cymbalVerses + "&D=" + copticFeasts.Pentecoste);
+                }
+                else {
+                    verses.push(Prefix.cymbalVerses + "&D=" + Seasons.PentecostalDays);
+                }
+                verses.push(Prefix.cymbalVerses + "Common&D=" + Seasons.PentecostalDays);
+                //Removing the "annual" cymbal verses
+                containerDiv.querySelectorAll('div[data-root*="' + Prefix.incenseDawn + 'CymbalVerses"]').forEach(el => el.remove());
+                //Inserting the cymbal verses for the Pentecostal Days
+                let cymbal;
+                verses.forEach(v => {
+                    PrayersArray.forEach(tbl => {
+                        if (tbl[0][0].split('&C=')[0] == v) {
+                            cymbal.push(tbl);
+                        }
+                    });
+                });
+                let thanksGiving = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + 'ThanksGiving&D=0000"]');
+                insertPrayersAdjacentToExistingElement(cymbal, { beforeOrAfter: 'beforebegin', el: thanksGiving[thanksGiving.length - 1] });
+            })();
+            (function insertDoxologies() {
+                let doxology;
+                if (copticDate == copticFeasts.Ascension) {
+                    doxology = DoxologiesPrayersArray.filter(d => eval(d[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) == copticFeasts.Ascension);
+                }
+                else if (copticDate == copticFeasts.Pentecoste) {
+                    doxology = DoxologiesPrayersArray.filter(d => eval(d[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) == copticFeasts.Pentecoste);
+                }
+                else if (Season == Seasons.PentecostalDays) {
+                    doxology = DoxologiesPrayersArray.filter(d => eval(d[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) == Seasons.PentecostalDays);
+                }
+                ;
+                if (doxology) {
+                    insertPrayersAdjacentToExistingElement(doxology, {
+                        beforeOrAfter: 'beforebegin',
+                        el: containerDiv.querySelectorAll('div[data-root="' + Prefix.incenseDawn + 'DoxologyWatesStMary&D=0000"]')[0]
+                    });
+                }
+                ;
+                //Removing Archange Maykel's Doxology (it is replaced by another one)
+                containerDiv.querySelectorAll('div[data-root="' + Prefix.commonIncense + 'ArchangelMichaelWates&D=0000' + '"]').forEach(el => el.remove());
+            })();
         })();
         insertGospelReadings(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
     })
@@ -961,7 +1009,7 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
         });
         //We will insert the Psalm response
         (function insertPsalmResponse() {
-            let gospelPrayer = containerDiv.querySelectorAll('div[data-root=""' + Prefix.commonPrayer + 'GospelPrayer&D=0000"]');
+            let gospelPrayer = containerDiv.querySelectorAll('div[data-root="' + Prefix.commonPrayer + 'GospelPrayer&D=0000"]');
             let psalmResp = PsalmAndGospelPrayersArray.filter(r => r[0][0].split('&C=')[0] == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
             insertResponse(psalmResp, { beforeOrAfter: 'afterend', el: gospelPrayer[gospelPrayer.length - 1] });
         })();
@@ -996,13 +1044,39 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
 }
 ;
 function showFractionsMasterButton(btn) {
-    let selected;
+    let selected = [], title;
     let insertion = containerDiv.querySelector('[data-root=\"MC_FractionPrayerPlaceholder&D=0000\"]'); //this is the id of the html element after which we will insert the inline buttons for the fraction prayers
     let masterBtnDiv = document.createElement('div'); //a new element to which the inline buttons elements will be appended
     insertion.insertAdjacentElement('afterend', masterBtnDiv); //we insert the div after the insertion position
-    selected = FractionsPrayersArray.filter(fraction => fraction[0][0].includes('&D=' + copticDate) || fraction[0][0].includes('&D=' + Season) || (copticDay == '29' && fraction[0][0].includes('&D=2900')));
+    if (Number(copticDay) == 29
+        && Number(copticMonth) != 4) {
+        FractionsPrayersArray.filter(f => f[0][0].includes('&D=2900'));
+    }
+    FractionsPrayersArray.forEach((fraction) => {
+        title = fraction[0][0].split('&D=')[1].split('&C=')[0];
+        if (title.includes('||')) {
+            //if fraction has more than one date separated by '||', its title is constructed like 'Prefix.fractionPrayer + "&D=(1st date or season||2nd date or season||etc.)&C=*"
+            let match = (selectFromMultiDatedTitle(fraction));
+            if (match) {
+                selected.push(match);
+            }
+            ;
+        }
+        else {
+            //We are with a title with a unique date value
+            if (title.startsWith('$')) {
+                title = eval(title.replace('$', ''));
+            }
+            ;
+            if (title === copticDate
+                || title === Season) {
+                selected.push(fraction);
+            }
+        }
+        ;
+    });
     //We add also all the so called "annual" fraction prayers
-    selected = [...selected, ...FractionsPrayersArray.filter(fraction => fraction[0][0].includes('&D=0000'))];
+    selected = [...selected, ...FractionsPrayersArray.filter(fraction => fraction[0][0].includes('&D=0000') || fraction[0][0].includes('||0000'))];
     showInlineButtonsForOptionalPrayers(selected, btn, masterBtnDiv, { AR: 'صلوات القسمة', FR: 'Oraisons de la Fraction' }, 'btnFractionPrayers');
 }
 ;
@@ -1011,4 +1085,36 @@ function getBtnGospelPrayersArray(btn, readingsArray) {
         r[0][0][0].split('&C=')[0] == btn.prayers[1] || r[0][0][0].split('&C=')[0] == btn.prayers[2];
     });
     return gospel;
+}
+function selectFromMultiDatedTitle(fraction) {
+    let x;
+    fraction[0][0].split('&D=')[1].split('&C=')[0].split('||').map((date) => {
+        if (date.startsWith('$')) {
+            date = eval(date.replace('$', ''));
+        }
+        ;
+        //we split the title in order to get an array of only the values of the dates
+        if (date === copticDate || date === Season) {
+            //we loop the array, if today's copticDate or today's Season match the date, it means the fraction is suitable
+            x = fraction;
+        }
+        ;
+    });
+    return x;
+}
+/**
+ * Inserts prayers adjacent to an html child element to containerDiv
+ * @param {string[][][]} prayers - an array of prayers, each representing a table in the Word document from which the text was retrieved
+ * @param {{beforeOrAfter:InsertPosition, el: HTMLElement}} position - the position at which the prayers will be inserted, adjacent to an html element (el) in the containerDiv
+ */
+function insertPrayersAdjacentToExistingElement(prayers, position) {
+    if (!prayers) {
+        return;
+    }
+    ;
+    prayers.map(p => {
+        p.map(row => {
+            createHtmlElementForPrayer(row[0].split('&C=')[0], row, btnIncenseDawn.languages, JSON.parse(localStorage.userLanguages), row[0].split('&C=')[1], position);
+        });
+    });
 }
