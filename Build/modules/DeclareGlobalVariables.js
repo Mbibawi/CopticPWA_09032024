@@ -32,7 +32,8 @@ const Prefix = {
     gospelMass: "RGM_",
     gospelNight: "RGN_",
     synaxarium: "RS_",
-    cymbalVerses: "CV_"
+    cymbalVerses: "CV_",
+    agbeya: "BOP_", //Stands for Book Of Prayers
 };
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
@@ -90,7 +91,9 @@ const ReadingsArrays = {
     PropheciesDawnArray: [],
 };
 const Seasons = {
+    //Seasons are periods of more than 1 day, for which we have specific prayers (e.g.: cymbal verses, doxologies, praxis response, etc.)
     StMaryFast: 'StMFast',
+    Kiahk: '0004',
     NativityFast: 'NF',
     Nativity: 'Nat',
     GreatLent: 'GL',
@@ -98,8 +101,7 @@ const Seasons = {
     JonahFast: 'Jonah',
     ApostlesFast: 'Apost',
     Nayrouz: 'Nay',
-    CrossFeast: 'Cross',
-    LordFeast: 'LordFeast',
+    CrossFeast: 'CrossFeast',
     NoSeason: 'NoSpecificSeason',
 };
 const copticFeasts = {
@@ -134,6 +136,7 @@ const copticFeasts = {
     StMaryFast: '0112',
     Epiphany: '1312',
     StMaryFeast: '1612',
+    theTwentyNinethOfCopticMonth: '2900'
 };
 const copticFasts = [
     Seasons.GreatLent,
@@ -168,7 +171,7 @@ const displayModes = ['Normal', 'Presentation', 'Priest'];
 //VARS
 let PrayersArray = [], CommonPrayersArray = [], //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
 MassCommonPrayersArray = [], //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
-MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [];
+MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [];
 let lastClickedButton;
 let copticDate, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
 copticMonth, //same comment as above

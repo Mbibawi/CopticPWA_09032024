@@ -759,31 +759,35 @@ function closeDev(btn) {
  * @param {HTMLElement} sideBar - the html element representing the side bar that needs to be opened
  */
 function openSideBar(sideBar) {
-    //containerDiv.appendChild(sideBar);
-    let btnText = String.fromCharCode(9776) + "Close Sidebar";
-    let width = "30%";
-    sideBar.style.width = width;
-    sideBar.classList.remove("collapsed");
-    sideBar.classList.add("extended");
-    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
-    sideBarBtn.innerText = btnText;
-    sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
-    sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
+    return __awaiter(this, void 0, void 0, function* () {
+        //containerDiv.appendChild(sideBar);
+        let btnText = String.fromCharCode(9776) + "Close Sidebar";
+        let width = "30%";
+        sideBar.style.width = width;
+        sideBar.classList.remove("collapsed");
+        sideBar.classList.add("extended");
+        //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
+        sideBarBtn.innerText = btnText;
+        sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
+        sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
+    });
 }
 /**
  * Closes the side bar passed to it by setting its width to 0px
  * @param {HTMLElement} sideBar - the html element representing the side bar to be closed
  */
 function closeSideBar(sideBar) {
-    let btnText = String.fromCharCode(9776) + "Open Sidebar";
-    let width = "0px";
-    sideBar.style.width = width;
-    sideBar.classList.remove("extended");
-    sideBar.classList.add("collapsed");
-    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
-    sideBarBtn.innerText = btnText;
-    sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
-    sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
+    return __awaiter(this, void 0, void 0, function* () {
+        let btnText = String.fromCharCode(9776) + "Open Sidebar";
+        let width = "0px";
+        sideBar.style.width = width;
+        sideBar.classList.remove("extended");
+        sideBar.classList.add("collapsed");
+        //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
+        sideBarBtn.innerText = btnText;
+        sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
+        sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
+    });
 }
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
@@ -1576,6 +1580,9 @@ function populatePrayersArrays() {
             else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
                 PsalmAndGospelPrayersArray.push(wordTable);
             }
+            else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
+                cymbalVersesArray.push(wordTable);
+            }
         });
     });
 }
@@ -1602,4 +1609,26 @@ function generateFixedReadingArray(readingArray) {
     });
     console.log(result);
     return result;
+}
+/**
+ * Returns a string representing the query selector for a div element having a data-root attribute equal to root
+ * @param {string} root - the data-root value we want to build a query selector for retrieving the elements with the same value
+ * @returns
+ */
+function getDataRootselector(root) {
+    return 'div[data-root="' + root + '"]';
+}
+/**
+ * Takes a collection of html elements and moves it adjacent to a given child html element to containerDiv
+ * @param {string} targetElementRoot - the data-root value of the html element adjacent to which the block will be moved
+ * @param {InsertPosition} position - the position at which the block of html elements will be moved in relation to the specified html element
+ * @param {NodeListOf<Element>} block - a list of html elements that will be moved to the specified 'position' in relation to another html element in the containerDiv
+ */
+function moveBlockOfRowsAdjacentToAnElement(targetElementRoot, position, block) {
+    return __awaiter(this, void 0, void 0, function* () {
+        Array
+            .from(block)
+            .map(r => containerDiv.querySelector(getDataRootselector(targetElementRoot)).insertAdjacentElement(position, r));
+        contentDiv.querySelectorAll('.class');
+    });
 }
