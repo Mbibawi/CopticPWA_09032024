@@ -261,18 +261,21 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
         Season = Seasons.StMaryFast;
         return Seasons.NoSeason;
     }
-    else if (copticDate == '2804' && todayDate.getHours() < 15) {
+    else if (copticDate == copticFeasts.NativityParamoun && todayDate.getHours() < 15) {
         //We are on the day before the Nativity Feast, and we are in the morning, it is the Parmoun of the Nativity
         return copticFeasts.NativityParamoun;
     }
-    else if (copticDate == '2804' && todayDate.getHours() > 15) {
+    else if ((copticDate == copticFeasts.NativityParamoun && todayDate.getHours() > 15)
+        || (Number(copticMonth) == 4 && Number(copticDay) > 28)
+        || (Number(copticMonth) == 5 && Number(copticDay) < 7)) {
         //We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
         Season = Seasons.Nativity;
         return copticFeasts.Nativity;
     }
-    else if ((Number(copticMonth) == 4 && Number(copticDay) > 29) || (Number(copticMonth) == 5 && Number(copticDay) < 11)) {
+    else if ((Number(copticMonth) == 5 && Number(copticDay) == 10 && todayDate.getHours() > 15) ||
+        (Number(copticMonth) == 5 && Number(copticDay) < 12)) {
         //We are between the Nativity and the Baptism
-        Season = Seasons.Nativity;
+        Season = Seasons.Baptism;
         return Seasons.NoSeason;
     }
     else if (Number(copticMonth) == 1 && Number(copticDay) < 17) {

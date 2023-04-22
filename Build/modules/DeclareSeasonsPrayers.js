@@ -1,6 +1,6 @@
 const giakiAll = [
     {
-        Season: 'Normal',
+        Season: Seasons.NoSeason,
         AR: 'أتيت',
         CA: 'آك إي',
         FR: 'es venus',
@@ -8,18 +8,34 @@ const giakiAll = [
         COP: 'ⲁⲕ̀\''
     },
     {
-        Season: 'Resurrection',
+        Season: Seasons.Nativity,
+        AR: 'ولدت',
+        CA: 'آك ماسف',
+        FR: 'es né',
+        EN: '\'ve born',
+        COP: 'ⲁⲕ̀\''
+    },
+    {
+        Season: Seasons.Baptism,
+        AR: 'اعتمدت',
+        CA: 'آك أومس',
+        FR: 'es baptisé',
+        EN: '\'ve been baptized',
+        COP: 'ⲁⲕ̀\''
+    },
+    {
+        Season: Seasons.PentecostalDays,
         AR: 'قمت',
         CA: 'آك تونك',
         FR: 'es ressuscité',
         EN: '\'ve raised',
         COP: 'ⲁⲕ̀\''
-    }
+    },
 ];
 const closingHymnAll = [
     //This is the variable part of 'Amin Alleluia Zoksa Patri...' closing hymn
     {
-        Season: 'Normal',
+        Season: Seasons.NoSeason,
         AR: '',
         CA: '',
         FR: '',
@@ -27,7 +43,7 @@ const closingHymnAll = [
         COP: ''
     },
     {
-        Season: 'Resurrection',
+        Season: Seasons.PentecostalDays,
         AR: '',
         CA: '',
         FR: '',
@@ -38,11 +54,6 @@ const closingHymnAll = [
 let giaki = setSeasonalText(giakiAll);
 let closingHym = setSeasonalText(closingHymnAll);
 function setSeasonalText(arrayAll) {
-    if (Season == Seasons.PentecostalDays) {
-        return arrayAll[1];
-    }
-    else {
-        return arrayAll[0];
-    }
+    return arrayAll.filter(resp => resp.Season == Season)[0];
 }
 ;

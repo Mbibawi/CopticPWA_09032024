@@ -107,12 +107,13 @@ const Seasons = {
     Kiahk: '0004',
     NativityFast: 'NF',
     Nativity: 'Nat',
+    Baptism: 'Ba',
     GreatLent: 'GL',
     PentecostalDays: 'Pntl',
     JonahFast: 'Jonah',
     ApostlesFast: 'Apost',
     Nayrouz: 'Nay',
-    CrossFeast: 'CrossFeast',
+    CrossFeast: 'Cross',
     NoSeason: 'NoSpecificSeason',
 };
 const copticFeasts = {
