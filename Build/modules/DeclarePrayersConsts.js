@@ -1,4 +1,4 @@
-const IncensePrayers = ["PRAYER_IncenseDawn START &D=0000",
+const IncensePrayers = [
     Prefix.commonIncense + "EleysonImasComment&D=0000",
     Prefix.commonIncense + "EleysonImas&D=0000",
     Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000",

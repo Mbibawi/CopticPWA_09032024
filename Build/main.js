@@ -64,44 +64,57 @@ function modifyUserLanguages(lang) {
     localStorage.userLanguages = JSON.stringify(userLanguages);
 }
 /**
+ * Checks that the value of todayDate is the same as the current date, unless there is another value stored in the local storage, which means that the user had manually set the date
+ */
+function checkDate() {
+    let newDate = new Date();
+    if (localStorage.selectedDate) {
+        newDate.setTime(localStorage.selectedDate);
+    }
+    setCopticDates(newDate);
+}
+/**
  * Changes the current Gregorian date and adjusts the coptic date and the coptic readings date, etc.
  * @param {string} date  - allows the user to pass the Greogrian calendar day to which he wants the date to be set, as a string provided from an input box or by the date picker
  * @param {boolean} next  - used when the user wants to jumb forward or back by only one day
  * @param {number} days  - the number of days by which the user wants to jumb forward or back
  * @returns {Date} - the Gregorian date as set by the user
  */
-function changeDay(date, next = true, days = 1) {
-    let currentDate = todayDate.getTime();
+function changeDate(date, next = true, days = 1) {
     if (date) {
-        currentDate = new Date(date).getTime();
-        todayDate.setTime(currentDate);
-        console.log(todayDate);
+        todayDate.setTime(new Date(date).getTime());
     }
     else {
         if (next) {
-            todayDate.setTime(currentDate + days * calendarDay);
+            todayDate.setTime(todayDate.getTime() + days * calendarDay); //advancing the date by the number of calendar years
         }
         else if (!next) {
-            todayDate.setTime(currentDate - days * calendarDay);
+            todayDate.setTime(todayDate.getTime() - days * calendarDay);
         }
     }
+    console.log(todayDate);
     setCopticDates(todayDate);
+    let newDate = new Date();
+    if (todayDate.getDate() == newDate.getDate() &&
+        todayDate.getMonth() == newDate.getMonth() &&
+        todayDate.getFullYear() == newDate.getFullYear()) {
+        //it means that todayDate = the date of today (same day, same month, same year), in this case we set the local storage to undefined
+        localStorage.selectedDate = undefined;
+    }
+    else {
+        //If todayDate is not equal to the date of today, we store the manually selected date in the local storage
+        localStorage.selectedDate = todayDate.getTime();
+    }
     return todayDate;
 }
-autoRunOnLoad();
 /**
  * Some functions that we run automatically when loading the app
  */
-function autoRunOnLoad() {
+(function autoRunOnLoad() {
     showChildButtonsOrPrayers(btnMain);
-    //appendRepeatable('Test');
     setCopticDates();
-    //setButtonsPrayers();
     DetectFingerSwipe();
-    //loadFonts();
-    //registerServiceWorker()
-    //PWA();
-}
+})();
 /**
  *
  * @param firstElement {string} - this is the id of the prayer in the prayersArray
@@ -172,10 +185,10 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
     }
     //@ts-ignore
     position.el
-        //@ts-ignore
-        ? position.el.insertAdjacentElement(position.beforeOrAfter, row)
-        //@ts-ignore
-        : position.appendChild(row);
+        ? //@ts-ignore
+            position.el.insertAdjacentElement(position.beforeOrAfter, row)
+        : //@ts-ignore
+            position.appendChild(row);
     return row;
 }
 /**
@@ -930,7 +943,7 @@ function showPrayers(btn, clearContent = true, clearRightSideBar = true, positio
                 date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
             }
             p += date;
-            let wordTable = findAndProcessPrayers(p, btn);
+            let wordTable = findPrayerInBtnPrayersArray(p, btn);
             if (wordTable) {
                 wordTable.map((row) => {
                     createHtmlElementForPrayer(row[0].split("&C=")[0], row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
@@ -1155,7 +1168,7 @@ function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv,
                                 beforeOrAfter: "afterend",
                                 el: masterBtnDiv,
                             }); //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
-                            let createdElements = containerDiv.querySelectorAll('div[data-root="' + inlineBtn.prayers[0] + '"]');
+                            let createdElements = containerDiv.querySelectorAll(getDataRootSelector(inlineBtn.prayers[0]));
                             //We will add to each created element a data-group attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
                             createdElements.forEach((el) => el.setAttribute("data-group", "optionalPrayer"));
                             //We format the grid template of the newly added divs
@@ -1179,27 +1192,29 @@ function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv,
  * @param {Button} btn - the Button that we need to search its prayersArray[][][] property for an element[][] having its [0][0] value equal the title of the Word Table
  * @returns {string[][] | undefined} - an array representing the Word Table if found or 'undefined' if not found
  */
-function findAndProcessPrayers(p, btn) {
-    //@ts-ignore
+function findPrayerInBtnPrayersArray(p, btn) {
     let tblTitle;
     for (let i = 0; i < btn.prayersArray.length; i++) {
         tblTitle = btn.prayersArray[i][0][0].split("&C=")[0];
-        if (btn.prayersArray[i][0] &&
-            btn.prayersArray[i][0][0].split("&C=")[0] == p) {
-            return btn.prayersArray[i];
-        }
-        else if (RegExp(/\&D=\(\d{4}\|\|\d{4}\)/).test(tblTitle)) {
-            return;
-            if (RegExp(tblTitle.split("&D=")[0]).test(p.split("&D=")[0])) {
-            }
+        if (btn.prayersArray[i][0] && //we check that btn.prayersArray[i] is not an empty array (it might happen as an error when the text is generated by VBA. Although I believe it has been fixed in my VBA code, but just in ase)
+            btn.prayersArray[i][0][0].split("&C=")[0] == p //i.e., if the id of the table = the id of the prayer
+        ) {
+            return btn.prayersArray[i]; //we return the array representing the Word table (this array is a string[][], each of its elements is a string[] representing a row in the Word table)
         }
     }
 }
+/**
+ * Shows the inlineBtnsDiv
+ * @param status
+ * @param clear
+ */
 function showInlineBtns(status, clear = false) {
     if (clear) {
         inlineBtnsDiv.innerHTML = "";
     }
-    //Appending close button
+    /**
+     * Appending an X button on the top right of inlineBtnsDiv
+     */
     (function appendCloseBtn() {
         let close = document.createElement("a");
         close.innerText = String.fromCharCode(215);
@@ -1215,20 +1230,23 @@ function showInlineBtns(status, clear = false) {
         });
         inlineBtnsDiv.appendChild(close);
     })();
-    inlineBtnsDiv.dataset.status = status;
-    inlineBtnsDiv.style.zIndex = "3";
+    inlineBtnsDiv.dataset.status = status; //giving the inlineBtnsDiv a data-status attribute
+    inlineBtnsDiv.style.display = 'grid';
 }
+/**
+ * hides the inlineBtnsDiv by setting its zIndex to -1
+ */
 function hideInlineButtonsDiv() {
     inlineBtnsDiv.dataset.status = "inlineButtons";
     inlineBtnsDiv.innerHTML = "";
-    inlineBtnsDiv.style.zIndex = "-1";
+    inlineBtnsDiv.style.display = 'none';
 }
 function showSettingsPanel() {
     showInlineBtns("settingsPanel", true);
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = "v1.9 (changed the text extracted)";
+        let version = "v2.0 (added feasts and seasons doxologies to Incense Dawn)";
         let p = document.createElement("p");
         p.style.color = "red";
         p.style.fontSize = "15pt";
@@ -1280,7 +1298,7 @@ function showSettingsPanel() {
     (function showDatePicker() {
         let datePicker = createBtn("input", undefined, undefined, undefined, inlineBtnsDiv, "datePicker", undefined, "date", undefined, undefined, {
             event: "change",
-            fun: () => changeDay(datePicker.value.toString()),
+            fun: () => changeDate(datePicker.value.toString()),
         });
         datePicker.setAttribute("value", todayDate.toString());
         datePicker.setAttribute("min", "1900-01-01");
@@ -1292,9 +1310,9 @@ function showSettingsPanel() {
             (container.style.display = "grid"),
                 (container.style.gridTemplateColumns = String("50%").repeat(2));
             inlineBtnsDiv.appendChild(container);
-            btn = createBtn("button", "button", "settingsBtn", "Next Coptic Day", container, "nextDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDay(undefined, true, 1) });
+            btn = createBtn("button", "button", "settingsBtn", "Next Coptic Day", container, "nextDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, true, 1) });
             btn.style.backgroundColor = "saddlebrown";
-            btn = createBtn("button", "button", "settingsBtn", "Previous Coptic Day", container, "previousDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDay(undefined, false, 1) });
+            btn = createBtn("button", "button", "settingsBtn", "Previous Coptic Day", container, "previousDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, false, 1) });
             btn.style.backgroundColor = "saddlebrown";
         });
     })();
@@ -1382,12 +1400,16 @@ function showSettingsPanel() {
                     fun: () => {
                         if (localStorage.displayMode != mode) {
                             localStorage.displayMode = mode;
-                            Array.from(displayContainer.children).map(b => { b.id != localStorage.displayMode ? b.classList.add('langBtnAdd') : b.classList.remove('langBtnAdd'); });
+                            Array.from(displayContainer.children).map((b) => {
+                                b.id != localStorage.displayMode
+                                    ? b.classList.add("langBtnAdd")
+                                    : b.classList.remove("langBtnAdd");
+                            });
                         }
                     },
                 });
                 if (mode != localStorage.displayMode) {
-                    btn.classList.add('langBtnAdd');
+                    btn.classList.add("langBtnAdd");
                 }
             });
         });
@@ -1583,6 +1605,12 @@ function populatePrayersArrays() {
             else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
                 cymbalVersesArray.push(wordTable);
             }
+            else if (wordTable[0][0].startsWith(Prefix.praxis)) {
+                praxisResponsesArray.push(wordTable);
+            }
+            else if (wordTable[0][0].startsWith(Prefix.bookOfPrayers)) {
+                bookOfPrayersArray.push(wordTable);
+            }
         });
     });
 }
@@ -1613,10 +1641,16 @@ function generateFixedReadingArray(readingArray) {
 /**
  * Returns a string representing the query selector for a div element having a data-root attribute equal to root
  * @param {string} root - the data-root value we want to build a query selector for retrieving the elements with the same value
+ * @param {boolean} isLike - if set to true, the function will return a query selector for an element having a data-root containing the root argument (as opposed to a root exactly matching the root argument)
  * @returns
  */
-function getDataRootselector(root) {
-    return 'div[data-root="' + root + '"]';
+function getDataRootSelector(root, isLike = false) {
+    if (isLike) {
+        return 'div[data-root*="' + root + '"]';
+    }
+    else {
+        return 'div[data-root="' + root + '"]';
+    }
 }
 /**
  * Takes a collection of html elements and moves it adjacent to a given child html element to containerDiv
@@ -1626,9 +1660,19 @@ function getDataRootselector(root) {
  */
 function moveBlockOfRowsAdjacentToAnElement(targetElementRoot, position, block) {
     return __awaiter(this, void 0, void 0, function* () {
-        Array
-            .from(block)
-            .map(r => containerDiv.querySelector(getDataRootselector(targetElementRoot)).insertAdjacentElement(position, r));
-        contentDiv.querySelectorAll('.class');
+        Array.from(block).map((r) => containerDiv
+            .querySelector(getDataRootSelector(targetElementRoot))
+            .insertAdjacentElement(position, r));
+        contentDiv.querySelectorAll(".class");
+    });
+}
+/**
+ * Replaces the css class class of all tables in an array of tables (i.e., a string[][][]). The css class is added as a suffix to the title of each table, preceded by '&C='
+ * @param {string[][][]} prayersArray - the array of tables
+ * @param {string} newClass - the new class that will replace the existing class
+ */
+function replaceClass(prayersArray, newClass) {
+    prayersArray.map(table => {
+        table.map(row => row[0] = row[0].split('&C=')[0] + '&C=' + newClass);
     });
 }

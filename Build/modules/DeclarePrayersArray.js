@@ -183,7 +183,7 @@ PrayersArray = [
             "ثم ينزل أمام باب الهيكل ويعطي ثلاث أياد بخور شرقاً وفي كل مرة يخضع برأسه يقول في اليد الأولى:ـ  "],
         [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
             " ",
-            "نسجد لك أيها المسيح مع أبيك الصالح والروح القدس لأنك ${giaki.AR} وخلصتنا؛ "],
+            "نسجد لك أيها المسيح مع أبيك الصالح والروح القدس لأنك " + giaki.AR + "وخلصتنا؛ "],
         [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
             " ",
             "في اليد الثانية:ـ  "],
@@ -337,10 +337,10 @@ PrayersArray = [
             "هيتن ني ابريسفيا♪ انتي تي ثيؤطوكوس اثؤواب ماريا♪ ابشويس آري إهموت نان امبي كو إيفول انتي ني نوفي. ",
             "بشفاعات والدة الإله♪ القديسة مريم♪ يا رب أنعم لنا بمغفرة خطايانا.  "],
         [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-            "Ⲉⲑⲣⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ${giaki.COP} ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.  ",
-            "Afin que nous Te louions  avec Ton Père très bon  et le Saint Esprit♪ car Tu ${giaki.FR} et Tu nous as sauvés. ",
+            "Ⲉⲑⲣⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ" + giaki.COP + "ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.  ",
+            "Afin que nous Te louions  avec Ton Père très bon  et le Saint Esprit♪ car Tu" + giaki.FR + "et Tu nous as sauvés. ",
             "اثرين هوس♪ إروك♪ نيم بيكيوت إن أغاثوس♪ نيم بي إبنيفما إثؤواب جي ${giaki.CA} آكسوتي إممون ناي نان. ",
-            "لكى نسبحك مع، أبيك♪ الصالح والروح القدس♪ لأنك ${giaki.AR} وخلصتنا أرحمنا. "]
+            "لكى نسبحك مع، أبيك♪ الصالح والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا أرحمنا. "]
     ],
     [
         [Prefix.commonIncense + "Comment1&D=0000&C=Comment",
@@ -2176,10 +2176,10 @@ PrayersArray = [
             "ختام الهيتنيات ",
             "ختام الهيتنيات "],
         [Prefix.massCommon + "WeBowToYouJesusChrist&D=0000&C=Diacon",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ${giaki.COP} ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.  ",
-            "Nous T’adorons, Ô Christ, avec Ton bon Père, et L’Esprit-Saint, car Tu ${giaki.FR} et nous sauvas. Aie pitié de nous. ",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ" + giaki.COP + "ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.  ",
+            "Nous T’adorons, Ô Christ, avec Ton bon Père, et L’Esprit-Saint, car Tu" + giaki.FR + "et nous sauvas. Aie pitié de nous. ",
             "تين أوشت إمموك أو بيخرستوس، نيم بيك يوت إن آغاثوس، نيم بي ابنيفما اثؤواب، جي ${giaki.CA} آكسوتي إممون ناي نان. ",
-            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القدس لأنكَ ${giaki.AR} وخلصتنا. إرحمنا. "]
+            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا. إرحمنا. "]
     ],
     [
         [Prefix.massCommon + "PraxisResponsePart1&D=0000&C=Title",
@@ -2195,10 +2195,10 @@ PrayersArray = [
     ],
     [
         [Prefix.massCommon + "PraxisResponsePart2&D=0000&C=Diacon",
-            "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ${giaki.COP} ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ. ",
-            "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, car tu ${giaki.FR} (ressuscita) et nous sauvas. ",
+            "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ" + giaki.COP + "ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ. ",
+            "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, car tu" + giaki.FR + "(ressuscita) et nous sauvas. ",
             "اك إكسمارؤوت آليثوس نيم بي اكيوت إن آغاثوس نيم بي ابنيفما اثؤواب ${giaki.CA} أكسوتي إممون ناينان ",
-            "مُبَاركٌ أنتَ بالحقيقة مع أبيكَ الصالح والروح القدس لأنكَ ${giaki.AR} وخلصتنا.  "]
+            "مُبَاركٌ أنتَ بالحقيقة مع أبيكَ الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا.  "]
     ],
     [
         [Prefix.massCommon + "ReconciliationComment&D=0000&C=Comment",
@@ -3809,10 +3809,10 @@ PrayersArray = [
             "هيتن ني ابريسفا انتي تي ثيؤطوكوس اثؤواب ماريا، ابتشويس آري إهموت نان إمبيكو إيفول إنتي ني نوفي. ",
             "بشفاعات والدة الإله القديسة مريم يا رب انعم لنا بمغفرة خطايانا. "],
         [Prefix.massCommon + "AssemblyResponseByTheIntercessionOfStMary&D=0000&C=Assembly",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ${giaki.COP} ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ. Ⲉⲗⲉⲟⲥ ⲉⲓ̀Ϯⲣⲏⲛⲏⲥ ⲑⲩⲥⲓⲁ ⲉ̀ⲛⲉⲥⲉⲱⲥ. ",
-            "Nous T’adorons ô Christ, avec Ton Père très Bon et Le Saint Esprit, car Tu ${giaki.FR} et Tu nous as sauvés.  Miséricorde de paix, sacrifice de louange. ",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ" + giaki.COP + "ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ. Ⲉⲗⲉⲟⲥ ⲉⲓ̀Ϯⲣⲏⲛⲏⲥ ⲑⲩⲥⲓⲁ ⲉ̀ⲛⲉⲥⲉⲱⲥ. ",
+            "Nous T’adorons ô Christ, avec Ton Père très Bon et Le Saint Esprit, car Tu" + giaki.FR + "et Tu nous as sauvés.  Miséricorde de paix, sacrifice de louange. ",
             "تين أؤوش إمموك إو بيخريستوس، نيم بيكيوت إن آغاثوس، نيم بي ابنيفما، إثؤوابن جي ${giaki.CA} آكسوتي إممون، إليؤوس، إرينيس ثؤياس إنيسيؤس. ",
-            "نسجدُ لك أيها المسيح مع أبيك الصالح والروح القدس لأنكَ ${giaki.AR} وخلصتنا. رحمة السلام ذبيحة التسبيح.  "]
+            "نسجدُ لك أيها المسيح مع أبيك الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا. رحمة السلام ذبيحة التسبيح.  "]
     ],
     [
         [Prefix.massCommon + "AnaphoraComment1&D=0000&C=Comment",
@@ -6395,10 +6395,10 @@ PrayersArray = [
             " ",
             "ليباركنا كلنا♪ ويطهر قلوبنا♪ ويشفي أمراض♪ نفوسنا وأجسادنا. "],
         [Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
-            "̀Ⲧ̀ⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ${giaki.COP} ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ  ",
-            "Nous T\'adorons ô Christ♪ avec Ton Père très bon♪ et le Saint Esprit♪ car Tu ${giaki.FR} et nous sauvas. ",
+            "̀Ⲧ̀ⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ" + giaki.COP + "ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ  ",
+            "Nous T\'adorons ô Christ♪ avec Ton Père très bon♪ et le Saint Esprit♪ car Tu" + giaki.FR + "et nous sauvas. ",
             " ",
-            "نسجد لك ايها المسيح♪ مع ابيك الصالح♪ والروح القدس♪ لأنك ${giaki.AR} وخلصتنا. "]
+            "نسجد لك ايها المسيح♪ مع ابيك الصالح♪ والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا. "]
     ],
     [
         [Prefix.cymbalVerses + "&D=$copticFeasts.Nayrouz&C=Title",

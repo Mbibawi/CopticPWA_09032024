@@ -309,15 +309,24 @@ function isItSundayOrWeekDay(period, days, weekDay) {
  * Shows the dates (Gregorian, coptic, coptic readings etc.), in an html element in the Temporary Dev Area
  */
 function showDates() {
-    let showDates = document.getElementById("showCurrentDate");
-    showDates.innerText =
-        "Current gregorian date is " +
+    let newDiv;
+    if (document.getElementById('dateDiv')) {
+        newDiv = document.getElementById('dateDiv');
+    }
+    else {
+        newDiv = document.createElement('div');
+        newDiv.id = 'dateDiv';
+    }
+    newDiv.style.fontSize = '8pt';
+    document.getElementById('homeImg').insertAdjacentElement('beforebegin', newDiv);
+    newDiv.innerText =
+        "Today: " +
             todayDate.toString() +
-            " and the coptic date is " +
+            " , Coptic:  " +
             copticDay +
             "/" +
             copticMonth +
-            ". The copticReadingsDate =" +
+            ". Readings =" +
             copticReadingsDate +
             '. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period';
 }

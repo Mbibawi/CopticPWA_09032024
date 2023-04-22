@@ -33,7 +33,7 @@ const Prefix = {
     gospelNight: "RGN_",
     synaxarium: "RS_",
     cymbalVerses: "CV_",
-    agbeya: "BOP_", //Stands for Book Of Prayers
+    bookOfPrayers: "BOP_", //Stands for Book Of Prayers
 };
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
@@ -46,37 +46,48 @@ const ReadingsIntrosAndEnds = {
         AR: 'والمجد لله دائماً',
         FR: '',
     },
+    stPaulIntro: {
+        AR: 'البولس فصل من رسالة معلمنا بولس الرسول  (الأولى/الثانية) إلى ()، بركته على جميعنا آمين',
+        FR: 'Lecture de l\'Epître de Saint Paul à () que sa bénédiction soit sur nous tous, Amen!',
+        EN: '',
+    },
     stPaulEnd: {
         AR: 'نعمة الله الآب فلتكن معكم يا آبائي واختوي آمين.',
-        FR: ''
+        FR: 'Que la grâce de Dieu soit avec vous tous, mes père et mes frères, Amen!',
+        EN: '',
     },
     katholikonIntro: {
-        AR: '',
-        Fr: '',
+        AR: 'الكاثوليكون، فصل من رسالة القديس () بركته على جميعنا آمين',
+        FR: 'Katholikon, lecture de l\'Epître de Saint () que sa bénédiction soit sur nous tous, Amen!',
+        EN: '',
     },
     katholikonEnd: {
         AR: 'لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد',
-        Fr: '',
+        FR: 'N\'aimez pas le monde ni ses convoitises, car le monde va disparaître, mais celui qui fait la volonté de Dieu sera',
+        EN: '',
     },
     psalmIntro: {
         AR: 'من مزامير تراتيل أبيناداوود النبي والملك، بركاته على جميعنا آمين.',
-        Fr: '',
+        FR: 'Psaume de notre père David, le prophète et le roi, que sa bénédiction soit sur nous tous, Amen!',
+        EN: ''
     },
     psalmEnd: {
         AR: 'هلليلويا',
-        Fr: '',
+        FR: '',
     },
     praxisIntro: {
         AR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين.',
-        Fr: '',
+        FR: 'Praxis, actes des Apôtres que leur bénidiction soit sur nous tous, Amen!',
+        EN: '',
     },
     praxisEnd: {
         AR: 'لم تزل كلمة الرب تنمو وتعتز وتكثر في هذا البيعة وكل بيعة يا آبائي وإخوتي آمين.',
-        Fr: '',
+        FR: 'Fin du Praxis',
+        EN: '',
     },
     synaxariumIntro: {
         AR: 'اليوم () من شهر () المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.',
-        Fr: '',
+        FR: '',
     },
 };
 const ReadingsArrays = {
@@ -168,12 +179,31 @@ if (localStorage.userLanguages === undefined) {
 const prayersLanguages = ['COP', 'FR', 'CA', 'AR'];
 const readingsLanguages = ['AR', 'FR', 'EN'];
 const displayModes = ['Normal', 'Presentation', 'Priest'];
+const CommonPrayersArray = []; //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
+const MassCommonPrayersArray = []; //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
+const MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [], praxisResponsesArray = [], bookOfPrayersArray = [];
+const lordGreatFeasts = [
+    copticFeasts.Annonciation,
+    copticFeasts.Nativity,
+    copticFeasts.Baptism,
+    copticFeasts.PalmSunday,
+    copticFeasts.Resurrection,
+    copticFeasts.Ascension,
+    copticFeasts.Pentecoste
+], lordMinorFeasts = [
+    copticFeasts.Epiphany,
+    copticFeasts.Circumcision,
+    copticFeasts.EntryToEgypt,
+    copticFeasts.EntryToTemple
+], lordFeasts = [
+    ...lordGreatFeasts,
+    ...lordMinorFeasts
+], textAmplified = new Map();
 //VARS
-let PrayersArray = [], CommonPrayersArray = [], //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
-MassCommonPrayersArray = [], //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
-MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [];
+let PrayersArray = [];
 let lastClickedButton;
-let copticDate, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
+let selectedDate, //This is the date that the user might have manually selected
+copticDate, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
 copticMonth, //same comment as above
 copticDay, //same comment as above
 copticReadingsDate, //This is the date of the day's readings (gospel, Katholikon, praxis, etc.). It does not neceissarly correspond to the copticDate
@@ -190,10 +220,6 @@ if (localStorage.showActors === undefined) {
     localStorage.showActors = JSON.stringify(Array.from(showActors));
 }
 ;
-let lordGreatFeasts = [copticFeasts.Annonciation, copticFeasts.Nativity, copticFeasts.Baptism, copticFeasts.PalmSunday, copticFeasts.Resurrection, copticFeasts.Ascension, copticFeasts.Pentecoste];
-let lordMinorFeasts = [copticFeasts.Epiphany, copticFeasts.Circumcision, copticFeasts.EntryToEgypt, copticFeasts.EntryToTemple];
-let lordFeasts = [...lordGreatFeasts, ...lordMinorFeasts];
-let textAmplified = new Map();
 allLanguages.map(lang => textAmplified.set(lang, false));
 if (localStorage.textAmplified === undefined) {
     localStorage.textAmplified = JSON.stringify(Array.from(textAmplified));

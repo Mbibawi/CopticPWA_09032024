@@ -17,7 +17,7 @@
   margin:0px 0px;
 }
 .inlineBtnsContainer{
-  display:grid;
+  display:none;
   position: fixed;
   top:0px;
   bottom:0px;
@@ -27,7 +27,7 @@
   background-color: ivory;
   justify-items: center;
   overflow-y: scroll;
-  z-index: -1;
+  z-index: 3;
 }
 
 .Content {
@@ -203,6 +203,7 @@ justify-self: center;
   text-align: center;
   background-color: #7E3B10 !important;
   color: white;
+  border: #b94c04 solid 3pt ;
 }
 .TargetRow > .AR, .TargetRowTitle >.AR{
   grid-area: AR;
@@ -462,4 +463,15 @@ table{
 }
 .dd{
   background-color: saddlebrown;
+}
+div.ReadingIntro{
+  background-color: darkgoldenrod;
+  margin-top: 20px;
+  border-bottom: #111 solid 3pt;
+}
+div.ReadingEnd{
+  background-color: burlywood;
+  margin-bottom: 20px;
+  border-bottom: #111 solid 3pt;
+
 }
