@@ -9,7 +9,7 @@ const giakiAll = [
     },
     {
         Season: Seasons.Nativity,
-        AR: 'ولدت',
+        AR: 'ولِدت',
         CA: 'آك ماسف',
         FR: 'es né',
         EN: '\'ve born',
@@ -17,7 +17,7 @@ const giakiAll = [
     },
     {
         Season: Seasons.Baptism,
-        AR: 'اعتمدت',
+        AR: 'اعتَمَدُت',
         CA: 'آك أومس',
         FR: 'es baptisé',
         EN: '\'ve been baptized',
@@ -25,10 +25,18 @@ const giakiAll = [
     },
     {
         Season: Seasons.PentecostalDays,
-        AR: 'قمت',
+        AR: 'قُمتَ',
         CA: 'آك تونك',
         FR: 'es ressuscité',
         EN: '\'ve raised',
+        COP: 'ⲁⲕ̀\''
+    },
+    {
+        Season: Seasons.CrossFeast,
+        AR: 'صُلِبتَ',
+        CA: 'آك آشك',
+        FR: 'a été crucifié',
+        EN: '\'ve been crossed',
         COP: 'ⲁⲕ̀\''
     },
 ];
@@ -54,6 +62,16 @@ const closingHymnAll = [
 let giaki = setSeasonalText(giakiAll);
 let closingHym = setSeasonalText(closingHymnAll);
 function setSeasonalText(arrayAll) {
-    return arrayAll.filter(resp => resp.Season == Season)[0];
+    let prayer = arrayAll.filter(resp => resp.Season == Season);
+    if (prayer) {
+        return prayer[0];
+    }
+    else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
+        || HolyWeek.indexOf(copticReadingsDate) > -1) {
+        return arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
+    }
+    else if (!prayer) {
+        return arrayAll.filter(resp => resp.Season == Seasons.NoSeason)[0];
+    }
 }
 ;

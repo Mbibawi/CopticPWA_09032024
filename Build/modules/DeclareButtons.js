@@ -874,6 +874,13 @@ const btnDayReadings = new Button({
     btnID: "btnDayReadings",
     label: { AR: "قراءات اليوم", FR: "Lectures du jour", EN: "Day's Readings" },
     onClick: () => {
+        if (Season == Seasons.HolyWeek) {
+            //We should put here child buttons for the Holy Week prayers and readings
+            let div = document.createElement('div');
+            div.innerText = 'We are during the Holy Week, there are no readings, please go to the Holy Week Prayers';
+            containerDiv.appendChild(div);
+            return;
+        }
         //We set the btnDayReadings.children[] property
         btnDayReadings.children = [
             btnReadingsGospelIncenseVespers,

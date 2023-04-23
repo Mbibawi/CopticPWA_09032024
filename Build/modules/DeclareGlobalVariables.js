@@ -109,6 +109,7 @@ const Seasons = {
     Nativity: 'Nat',
     Baptism: 'Ba',
     GreatLent: 'GL',
+    HolyWeek: 'HW',
     PentecostalDays: 'Pntl',
     JonahFast: 'Jonah',
     ApostlesFast: 'Apost',
@@ -199,6 +200,12 @@ const lordGreatFeasts = [
 ], lordFeasts = [
     ...lordGreatFeasts,
     ...lordMinorFeasts
+], HolyWeek = [
+    copticFeasts.HolyMonday,
+    copticFeasts.HolyTuseday,
+    copticFeasts.HolyWednsday,
+    copticFeasts.HolyThursday,
+    copticFeasts.HolyFriday,
 ], textAmplified = new Map();
 //VARS
 let PrayersArray = [];

@@ -253,6 +253,7 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
         return;
     }
     let btnsDiv = leftSideBar.querySelector("#sideBarBtns");
+    hideInlineButtonsDiv();
     if (clear) {
         btnsDiv.innerHTML = "";
         inlineBtnsDiv.innerHTML = "";
@@ -1246,9 +1247,9 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = "v2.0 (added feasts and seasons doxologies to Incense Dawn)";
+        let version = "v2.1 (fixed giaki, and added other seasons)";
         let p = document.createElement("p");
-        p.style.color = "red";
+        p.style.color = 'blue';
         p.style.fontSize = "15pt";
         p.style.fontWeight = "bold";
         p.innerText = version;

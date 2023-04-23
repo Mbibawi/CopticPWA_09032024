@@ -17,7 +17,7 @@ function setCopticDates(today) {
         today ? (todayDate = today) : (todayDate = new Date());
         weekDay = todayDate.getDay();
         copticDate = convertGregorianDateToCopticDate(todayDate);
-        Season = copticDate; //this will be its default value unless it is changed by another function;
+        Season = Seasons.NoSeason; //this will be its default value unless it is changed by another function;
         copticMonth = copticDate.slice(2, 4);
         copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
         copticDay = copticDate.slice(0, 2);
@@ -134,6 +134,8 @@ function convertGregorianDateToCopticDate(date) {
  * @returns {string} - a string expressing the coptic reading date (e.g.: "0512", "GreatLent20", "JonahFeast2", etc.)
  */
 function setSeasonAndCopticReadingsDate(coptDate, today = todayDate) {
+    if (!coptDate)
+        return;
     let greatLentOrPentecostal = checkIfInASpecificSeason(today);
     if (greatLentOrPentecostal && greatLentOrPentecostal != Seasons.NoSeason) {
         // it means we are either during the Great Lent period, or the Pentecostal 50 days, or any day/feast within these periods
@@ -151,9 +153,9 @@ function setSeasonAndCopticReadingsDate(coptDate, today = todayDate) {
     }
     else {
         // it means we are in an ordinary day and we follow the ordinary readings calender, this should return a coptic date in a string of "DDMM"
-        let date = copticReadingsDates.filter(d => d[0] == coptDate)[0][1];
-        if (date) {
-            return date;
+        let date = copticReadingsDates.filter(d => d[0] == coptDate);
+        if (date[0]) {
+            return date[0][1];
         }
         else {
             return coptDate;
@@ -227,6 +229,11 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
     else if (difference >= 1 && difference < 58) {
         //We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day
         Season = Seasons.GreatLent;
+        if ((difference < 7 && difference > 1)
+            || difference == 7 && todayDate.getHours() > 12) {
+            //i.e., if we are between Monday and Friday of the Holy Week or if we are on Palm Sunday afternoon
+            Season = Seasons.HolyWeek;
+        }
         return isItSundayOrWeekDay(Seasons.GreatLent, 58 - difference, weekDay);
     }
     else if (difference > 65 && difference < 70) {
@@ -261,19 +268,24 @@ function checkForUnfixedEvent(today, resDate, weekDay) {
         Season = Seasons.StMaryFast;
         return Seasons.NoSeason;
     }
+    else if ((Number(copticMonth) == 4 && Number(copticDay) < 29)
+        || (Number(copticMonth) == 3 && Number(copticDay) > 15)) {
+        //We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk
+        Season = Seasons.NativityFast;
+    }
     else if (copticDate == copticFeasts.NativityParamoun && todayDate.getHours() < 15) {
-        //We are on the day before the Nativity Feast, and we are in the morning, it is the Parmoun of the Nativity
+        //We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
         return copticFeasts.NativityParamoun;
     }
     else if ((copticDate == copticFeasts.NativityParamoun && todayDate.getHours() > 15)
         || (Number(copticMonth) == 4 && Number(copticDay) > 28)
         || (Number(copticMonth) == 5 && Number(copticDay) < 7)) {
         //We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
-        Season = Seasons.Nativity;
+        Season = Seasons.Nativity; //From 28 Kiahk afternoon to Circumsion (6 Toubi)
         return copticFeasts.Nativity;
     }
     else if ((Number(copticMonth) == 5 && Number(copticDay) == 10 && todayDate.getHours() > 15) ||
-        (Number(copticMonth) == 5 && Number(copticDay) < 12)) {
+        (Number(copticMonth) == 5 && Number(copticDay) > 10 && Number(copticDay) < 13)) {
         //We are between the Nativity and the Baptism
         Season = Seasons.Baptism;
         return Seasons.NoSeason;
@@ -331,6 +343,7 @@ function showDates() {
             copticMonth +
             ". Readings =" +
             copticReadingsDate +
-            '. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period';
+            '. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
+            " . Season = " + Season;
 }
 ;
