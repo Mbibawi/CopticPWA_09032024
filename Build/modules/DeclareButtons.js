@@ -137,7 +137,7 @@ const btnMain = new Button({
         EN: "Back to the main menu",
     },
     onClick: () => {
-        btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings];
+        btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours];
     },
 });
 const btnGoBack = new Button({
@@ -878,7 +878,7 @@ const btnMassUnBaptised = new Button({
                         prayers.forEach(el => el.remove());
                         return;
                     }
-                    let hours = btnBookOfHours.onClick();
+                    let hours = btnBookOfHours.onClick(true); //notice that we pass true as parameter to btnBookOfHours.onClick() in order to make the function return only the hours of the mass not all the hours of the bookOfPrayersArray
                     if (hours.length > 0) {
                         //We will insert the text as divs after the div where the button is displayed
                         insertPrayersAdjacentToExistingElement(hours, btnBookOfHours.languages, { beforeOrAfter: 'beforebegin', el: div.nextElementSibling });
@@ -1091,26 +1091,31 @@ const btnBookOfHours = new Button({
     label: { AR: 'الأجبية', FR: 'Agpia' },
     showPrayers: true,
     languages: [...prayersLanguages],
-    onClick: () => {
-        let hours;
-        if (Season == Seasons.GreatLent) {
-            //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
-            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour, ...bookOfHours.EleventhHour, ...bookOfHours.TwelvethHour];
-        }
-        else if (Season == Seasons.PentecostalDays
-            || todayDate.getDay() == 0
-            || todayDate.getDay() == 6
-            || lordFeasts.indexOf(copticDate) > -1) {
-            //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day,
-            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour];
+    onClick: (mass = false) => {
+        if (mass) {
+            //mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
+            let hours;
+            if (Season == Seasons.GreatLent) {
+                //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
+                hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour, ...bookOfHours.EleventhHour, ...bookOfHours.TwelvethHour];
+            }
+            else if (Season == Seasons.PentecostalDays
+                || todayDate.getDay() == 0
+                || todayDate.getDay() == 6
+                || lordFeasts.indexOf(copticDate) > -1) {
+                //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day,
+                hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour];
+            }
+            else {
+                hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour];
+            }
+            btnBookOfHours.prayersArray = hours;
         }
         else {
-            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour];
+            btnBookOfHours.prayersArray = bookOfHoursArray;
+            btnBookOfHours.prayers = bookOfHoursArray.map(table => table[0][0].split('&C=')[0]);
         }
-        if (hours.length > 0) {
-            btnBookOfHours.prayersArray = hours;
-            return btnBookOfHours.prayersArray;
-        }
+        return btnBookOfHours.prayersArray;
     }
 });
 /**
