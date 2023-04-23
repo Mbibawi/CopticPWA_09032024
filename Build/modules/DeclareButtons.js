@@ -797,12 +797,17 @@ const btnMassUnBaptised = new Button({
     onClick: () => {
         //Adding children buttons to btnMassUnBaptised
         btnMassUnBaptised.children = [
+            btnBookOfHours,
             btnReadingsStPaul,
             btnReadingsKatholikon,
             btnReadingsPraxis,
             btnReadingsSynaxarium,
             btnReadingsGospelMass,
         ];
+        //Adding the creed and 
+        (function addCreed() {
+            btnMassUnBaptised.prayers.unshift(Prefix.commonPrayer + 'WeExaltYouStMary&D=0000', Prefix.commonPrayer + 'Creed&D=0000');
+        })();
         //Replacing AllelujaFayBabi according to the day
         (function replaceAllelujahFayBabi() {
             if (isFast) {
@@ -857,6 +862,31 @@ const btnMassUnBaptised = new Button({
                 [[reading[0][1][0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.praxisEnd.AR, ReadingsIntrosAndEnds.praxisEnd.FR, ReadingsIntrosAndEnds.praxisEnd.EN]]
             ];
             insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
+        })();
+        (function insertBookOfPrayersButton() {
+            let div = document.createElement('div');
+            div.style.display = 'grid';
+            div.id = 'btnAgbeya';
+            let tempBtn = new Button({
+                btnID: btnGoBack.btnID,
+                label: btnBookOfHours.label,
+                showPrayers: true,
+                onClick: () => {
+                    let prayers = containerDiv.querySelectorAll(getDataRootSelector(Prefix.bookOfHours, true));
+                    if (prayers.length > 0) {
+                        //it means the Book of Hours have been inserted before when the user clicked the button, we remove them and return
+                        prayers.forEach(el => el.remove());
+                        return;
+                    }
+                    let hours = btnBookOfHours.onClick();
+                    if (hours.length > 0) {
+                        //We will insert the text as divs after the div where the button is displayed
+                        insertPrayersAdjacentToExistingElement(hours, btnBookOfHours.languages, { beforeOrAfter: 'beforebegin', el: div.nextElementSibling });
+                    }
+                }
+            });
+            createBtn(tempBtn, div, inlineBtnClass, false);
+            containerDiv.children[0].insertAdjacentElement('beforebegin', div);
         })();
     }
 });
@@ -1056,6 +1086,33 @@ const btnReadingsPropheciesDawn = new Button({
         scrollToTop(); //scrolling to the top of the page
     },
 });
+const btnBookOfHours = new Button({
+    btnID: 'btnBookOfHours',
+    label: { AR: 'الأجبية', FR: 'Agpia' },
+    showPrayers: true,
+    languages: [...prayersLanguages],
+    onClick: () => {
+        let hours;
+        if (Season == Seasons.GreatLent) {
+            //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
+            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour, ...bookOfHours.EleventhHour, ...bookOfHours.TwelvethHour];
+        }
+        else if (Season == Seasons.PentecostalDays
+            || todayDate.getDay() == 0
+            || todayDate.getDay() == 6
+            || lordFeasts.indexOf(copticDate) > -1) {
+            //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day,
+            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour];
+        }
+        else {
+            hours = [...bookOfHours.ThirdHour, ...bookOfHours.SixthHour, ...bookOfHours.NinethHour];
+        }
+        if (hours.length > 0) {
+            btnBookOfHours.prayersArray = hours;
+            return btnBookOfHours.prayersArray;
+        }
+    }
+});
 /**
  * takes a liturgie name like "IncenseDawn" or "IncenseVespers" and replaces the word "Mass" in the buttons gospel readings prayers array by the name of the liturgie. It also sets the psalm and the gospel responses according to some sepcific occasions (e.g.: if we are the 29th day of a coptic month, etc.)
  * @param liturgie {string} - expressing the name of the liturigie that will replace the word "Mass" in the original gospel readings prayers array
@@ -1177,9 +1234,8 @@ let btns = [
  */
 function redirectToAnotherMass(targetElement, btns, position) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (!targetElement) {
+        if (!targetElement)
             return;
-        }
         let redirectTo = [];
         btns.map((btn) => {
             //for each button in the btns array, we will create a fake Button and will set its onClick property to a function that retrieves the text of the concerned mass
@@ -1195,10 +1251,8 @@ function redirectToAnotherMass(targetElement, btns, position) {
                     if (containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root))) {
                         //if there is an element in containerDiv having the same data-root as targetElement
                         let target = containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root));
-                        if (!target.id) {
-                            //if it hasn't an id, we will give it one
-                            target.id = "redirectedTo" + btn.btnID;
-                        }
+                        if (!target.id)
+                            target.id = "redirectedTo" + btn.btnID; //if it hasn't an id, we will give it one
                         createFakeAnchor(target.id);
                     }
                 },
@@ -1279,9 +1333,8 @@ function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
         //We will now insert the Gospel response
         (function insertGospeResponse() {
             let gospelResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split("&C=")[0] == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-            if (!gospelResp) {
+            if (!gospelResp)
                 return;
-            }
             insertResponse(gospelResp, {
                 beforeOrAfter: "beforebegin",
                 el: gospelRespHtml[0],
@@ -1378,9 +1431,8 @@ function selectFromMultiDatedTitle(table, coptDate = copticDate) {
  * @returns {HTMLElement[]} - an array of all the html div elements created and appended to the containerDiv
  */
 function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
-    if (!prayers) {
+    if (!prayers)
         return;
-    }
     let createdElements = [], created;
     prayers.map((p) => {
         p.map((row) => {
@@ -1401,15 +1453,12 @@ function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
  */
 function insertCymbalVersesForFeastsAndSeasons(param) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (!param.coptDate) {
+        if (!param.coptDate)
             param.coptDate = copticDate;
-        }
-        if (!param.position) {
+        if (!param.position)
             param.position = "beforebegin";
-        }
-        if (!param.remove) {
+        if (!param.remove)
             param.remove = false;
-        }
         let dataRoot = getDataRootSelector(Prefix.commonIncense + 'CymbalVerses', true);
         //Retrieving the 1st Title in the Cymbal Verses section
         let cymbalsTitle = containerDiv.querySelectorAll(dataRoot)[0];
@@ -1418,9 +1467,8 @@ function insertCymbalVersesForFeastsAndSeasons(param) {
             param.cymbalVerses = cymbalVersesArray.filter((tbl) => eval(tbl[0][0].split("&D=")[1].split("&C=")[0].replace("$", "")) ==
                 param.coptDate);
         }
-        if (!cymbalsTitle || !param.cymbalVerses) {
+        if (!cymbalsTitle || !param.cymbalVerses)
             return;
-        }
         if (param.coptDate in lordGreatFeasts) {
             let endCymbals = cymbalVersesArray.filter((tbl) => tbl[0][0].split("&C=")[0] ==
                 Prefix.cymbalVerses + "LordFeastsEnd&D=0000");

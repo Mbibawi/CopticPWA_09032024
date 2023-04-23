@@ -33,7 +33,7 @@ const Prefix = {
     gospelNight: "RGN_",
     synaxarium: "RS_",
     cymbalVerses: "CV_",
-    bookOfPrayers: "BOP_", //Stands for Book Of Prayers
+    bookOfHours: "BOH_", //Stands for Book Of Prayers
 };
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
@@ -183,7 +183,7 @@ const readingsLanguages = ['AR', 'FR', 'EN'];
 const displayModes = ['Normal', 'Presentation', 'Priest'];
 const CommonPrayersArray = []; //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
 const MassCommonPrayersArray = []; //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
-const MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [], praxisResponsesArray = [], bookOfPrayersArray = [];
+const MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [], praxisResponsesArray = [], bookOfHoursArray = [];
 const lordGreatFeasts = [
     copticFeasts.Annonciation,
     copticFeasts.Nativity,

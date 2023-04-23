@@ -608,3 +608,11 @@ const MassPrayers = {
         Prefix.commonPrayer + "AssemblyResponseAndWithYourSoul&D=0000",
     ], //the sequence of prayers from 'Confession' until the end of the mass, it is common to all masses 
 };
+let bookOfHours = {
+    Dawn: [],
+    ThirdHour: [],
+    SixthHour: [],
+    NinethHour: [],
+    EleventhHour: [],
+    TwelvethHour: [],
+};

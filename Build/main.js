@@ -139,9 +139,11 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
             collapseText(row);
         }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
     }
-    //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id
+    //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
     for (let x = 1; x < prayers.length; x++) {
         //x starts from 1 because prayers[0] is the id
+        if (!prayers[x] || prayers[x] === ' ')
+            continue; //we escape the empty strings if the text is not available in all the button's languages
         if (actorClass &&
             (actorClass == "Comment" || actorClass == "CommentText")) {
             //this means it is a comment
@@ -249,9 +251,8 @@ function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, clear =
  * @returns
  */
 function showChildButtonsOrPrayers(btn, clear = true, click = true) {
-    if (!btn) {
+    if (!btn)
         return;
-    }
     let btnsDiv = leftSideBar.querySelector("#sideBarBtns");
     hideInlineButtonsDiv();
     if (clear) {
@@ -818,9 +819,8 @@ function DetectFingerSwipe() {
         yDown = firstTouch.clientY;
     }
     function handleTouchMove(evt) {
-        if (!xDown || !yDown) {
+        if (!xDown || !yDown)
             return;
-        }
         let xUp = evt.touches[0].clientX;
         let yUp = evt.touches[0].clientY;
         let xDiff = xDown - xUp;
@@ -931,9 +931,8 @@ function showPrayers(btn, clearContent = true, clearRightSideBar = true, positio
             rightSideBar.querySelector("#sideBarBtns").innerHTML = "";
         } //this is the right side bar where the titles are displayed for navigation purposes
         btn.prayers.map((p) => {
-            if (!p) {
+            if (!p)
                 return;
-            }
             let date;
             if (p.includes("&D=") || p.includes("&S=")) {
                 //if the id of the prayer includes the value '&D=' this tells us that this prayer is either not linked to a specific day in the coptic calendar (&D=), or the date has been set by the button function (e.g.: PrayerGospelResponse&D=GLWeek). In this case, we will not add the copticReadingsDate to the prayerID
@@ -960,9 +959,8 @@ function showPrayers(btn, clearContent = true, clearRightSideBar = true, positio
  */
 function setCSSGridTemplate(Rows) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (!Rows) {
+        if (!Rows)
             return;
-        }
         Rows.forEach((r) => {
             r.style.gridTemplateColumns = getColumnsNumberAndWidth(r); //Setting the number of columns and their width for each element having the 'TargetRow' class
             r.style.gridTemplateAreas = setGridAreas(r); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
@@ -1609,8 +1607,26 @@ function populatePrayersArrays() {
             else if (wordTable[0][0].startsWith(Prefix.praxis)) {
                 praxisResponsesArray.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.bookOfPrayers)) {
-                bookOfPrayersArray.push(wordTable);
+            else if (wordTable[0][0].startsWith(Prefix.bookOfHours)) {
+                bookOfHoursArray.push(wordTable);
+                if (wordTable[0][0].includes('1stHour')) {
+                    bookOfHours.Dawn.push(wordTable);
+                }
+                else if (wordTable[0][0].includes('3rdHour')) {
+                    bookOfHours.ThirdHour.push(wordTable);
+                }
+                else if (wordTable[0][0].includes('6thHour')) {
+                    bookOfHours.SixthHour.push(wordTable);
+                }
+                else if (wordTable[0][0].includes('9thHour')) {
+                    bookOfHours.NinethHour.push(wordTable);
+                }
+                else if (wordTable[0][0].includes('11thHour')) {
+                    bookOfHours.EleventhHour.push(wordTable);
+                }
+                else if (wordTable[0][0].includes('12thHour')) {
+                    bookOfHours.TwelvethHour.push(wordTable);
+                }
             }
         });
     });
