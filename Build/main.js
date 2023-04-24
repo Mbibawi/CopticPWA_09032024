@@ -1645,7 +1645,7 @@ function replaceClass(prayersArray, newClass) {
         table.map(row => row[0] = row[0].split('&C=')[0] + '&C=' + newClass);
     });
 }
-function replaceEigthNote(code = 9834) {
+async function replaceEigthNote(code = 9834) {
     let note = String.fromCharCode(code), replaceWith = '<span class="eigthNote">' + note + '</span>';
     containerDiv.querySelectorAll('p').forEach(p => {
         if (p.innerText.includes(note)) {
