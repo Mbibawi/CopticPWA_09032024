@@ -1,12 +1,3 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 const copticReadingsDates = getCopticReadingsDates();
 /**
  * Adds or removes a language to the userLanguages Array
@@ -199,48 +190,46 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
  * @param {HTMLElement} rightTitlesDiv - the right hand side bar div where the titles will be displayed
  * @param {boolean} clear - indicates whether the side bar where the links will be inserted, must be cleared before insertion
  */
-function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, clear = true) {
-    return __awaiter(this, void 0, void 0, function* () {
-        //this function shows the titles in the right side Bar
-        if (clear) {
-            rightTitlesDiv.innerHTML = "";
-        } //we empty the side bar
-        let bookmark, div;
-        for (let i = 0; i < titlesCollection.length; i++) {
-            titlesCollection[i].id += i.toString(); //we do this in order to give each title a distinctive id in cases where all the titles have the same id
-            addTitle(titlesCollection[i]);
+async function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, clear = true) {
+    //this function shows the titles in the right side Bar
+    if (clear) {
+        rightTitlesDiv.innerHTML = "";
+    } //we empty the side bar
+    let bookmark, div;
+    for (let i = 0; i < titlesCollection.length; i++) {
+        titlesCollection[i].id += i.toString(); //we do this in order to give each title a distinctive id in cases where all the titles have the same id
+        addTitle(titlesCollection[i]);
+    }
+    /**
+     * Adds shortcuts to the diffrent sections by redirecting to the title of the section
+     * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given langauge
+     */
+    function addTitle(titles) {
+        let text = "";
+        div = document.createElement("div"); //this is just a container
+        div.role = "button";
+        rightTitlesDiv.appendChild(div);
+        bookmark = document.createElement("a");
+        div.appendChild(bookmark);
+        bookmark.href = "#" + titles.id; //we add a link to the element having as id, the id of the prayer
+        div.classList.add("sideTitle");
+        div.addEventListener("click", () => closeSideBar(rightSideBar)); //when the user clicks on the div, the rightSideBar is closed
+        if (titles.querySelector(".AR")) {
+            //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
+            text += titles
+                .querySelector(".AR")
+                .textContent.replace(String.fromCharCode(10134), ""); //we remove the '-' sign from the text of the Arabic paragraph;
         }
-        /**
-         * Adds shortcuts to the diffrent sections by redirecting to the title of the section
-         * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given langauge
-         */
-        function addTitle(titles) {
-            let text = "";
-            div = document.createElement("div"); //this is just a container
-            div.role = "button";
-            rightTitlesDiv.appendChild(div);
-            bookmark = document.createElement("a");
-            div.appendChild(bookmark);
-            bookmark.href = "#" + titles.id; //we add a link to the element having as id, the id of the prayer
-            div.classList.add("sideTitle");
-            div.addEventListener("click", () => closeSideBar(rightSideBar)); //when the user clicks on the div, the rightSideBar is closed
-            if (titles.querySelector(".AR")) {
-                //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
-                text += titles
-                    .querySelector(".AR")
-                    .textContent.replace(String.fromCharCode(10134), ""); //we remove the '-' sign from the text of the Arabic paragraph;
+        if (titles.querySelector(".FR")) {
+            if (text != "") {
+                text += "\n" + titles.querySelector(".FR").textContent;
             }
-            if (titles.querySelector(".FR")) {
-                if (text != "") {
-                    text += "\n" + titles.querySelector(".FR").textContent;
-                }
-                else {
-                    text += titles.querySelector(".FR").textContent;
-                }
+            else {
+                text += titles.querySelector(".FR").textContent;
             }
-            bookmark.innerText = text;
         }
-    });
+        bookmark.innerText = text;
+    }
 }
 /**
  * Takes a Button and, depending on its properties will do the following: if the button has children[] buttons, it will create an html element in the left side bar for each child; if the button has inlineBtns[], it will create an html element in the main page for each inlineButton; if the button has prayers[] and prayersArray, and languages, it will look in the prayersArray for each prayer in the prayers[], and if found, will create an html element in the main page showing the text of this element. It will only do so for the languages included in the usersLanguages.
@@ -324,25 +313,23 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
  * @param {HTMLElement} div - the html element to which the html element button created and returned by the function, will be appended
  * @returns {Promise<HTMLElement>} - when resolved, the function returns the html button element it has created and appended to div
  */
-function createGoBackBtn(goTo, div, cssClass, bookmarkID) {
-    return __awaiter(this, void 0, void 0, function* () {
-        //We will create a 'Go Back' and will append it to newDiv
-        let goBak = new Button({
-            btnID: btnGoBack.btnID,
-            label: btnGoBack.label,
-            cssClass: inlineBtnClass,
-            onClick: () => {
-                //This should get us back to the fraction prayers section of the Mass. We will temporary set the action to re-displaying the mass
-                showChildButtonsOrPrayers(goTo);
-                if (bookmarkID) {
-                    //We will create a fake HTMLAnchorElement, will set its href to the id of the element provided in the bookmark parameter, and will click it
-                    createFakeAnchor(bookmarkID);
-                }
-            },
-        });
-        goBak.cssClass = cssClass;
-        return createBtn(goBak, div, goBak.cssClass); //notice that we are appending goBak to inlineBtnsDiv (which is the fixed position div), not to the newDiv. We do this in order for the goBack button to appear in a separate div not in the same 'grid' displayed div as the fraction inline buttons
+async function createGoBackBtn(goTo, div, cssClass, bookmarkID) {
+    //We will create a 'Go Back' and will append it to newDiv
+    let goBak = new Button({
+        btnID: btnGoBack.btnID,
+        label: btnGoBack.label,
+        cssClass: inlineBtnClass,
+        onClick: () => {
+            //This should get us back to the fraction prayers section of the Mass. We will temporary set the action to re-displaying the mass
+            showChildButtonsOrPrayers(goTo);
+            if (bookmarkID) {
+                //We will create a fake HTMLAnchorElement, will set its href to the id of the element provided in the bookmark parameter, and will click it
+                createFakeAnchor(bookmarkID);
+            }
+        },
     });
+    goBak.cssClass = cssClass;
+    return createBtn(goBak, div, goBak.cssClass); //notice that we are appending goBak to inlineBtnsDiv (which is the fixed position div), not to the newDiv. We do this in order for the goBack button to appear in a separate div not in the same 'grid' displayed div as the fraction inline buttons
 }
 /** */
 function createFakeAnchor(id) {
@@ -407,10 +394,10 @@ function PWA() {
     }
 }
 function registerServiceWorker() {
-    const registerServiceWorker = () => __awaiter(this, void 0, void 0, function* () {
+    const registerServiceWorker = async () => {
         if ("serviceWorker" in navigator) {
             try {
-                const registration = yield navigator.serviceWorker.register("/sw.js", {
+                const registration = await navigator.serviceWorker.register("/sw.js", {
                     scope: "/",
                 });
                 if (registration.installing) {
@@ -427,7 +414,7 @@ function registerServiceWorker() {
                 console.error(`Registration failed with ${error}`);
             }
         }
-    });
+    };
 }
 /**
  * returns a string[][], each string[] element includes 2 elements: the current coptic date (as as string formatted like "DDMM") and the corresponding readings date if any (also formatted as "DDMM").
@@ -773,36 +760,32 @@ function closeDev(btn) {
  * Opens the side bar by setting its width to a given value
  * @param {HTMLElement} sideBar - the html element representing the side bar that needs to be opened
  */
-function openSideBar(sideBar) {
-    return __awaiter(this, void 0, void 0, function* () {
-        //containerDiv.appendChild(sideBar);
-        let btnText = String.fromCharCode(9776) + "Close Sidebar";
-        let width = "30%";
-        sideBar.style.width = width;
-        sideBar.classList.remove("collapsed");
-        sideBar.classList.add("extended");
-        //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
-        sideBarBtn.innerText = btnText;
-        sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
-        sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
-    });
+async function openSideBar(sideBar) {
+    //containerDiv.appendChild(sideBar);
+    let btnText = String.fromCharCode(9776) + "Close Sidebar";
+    let width = "30%";
+    sideBar.style.width = width;
+    sideBar.classList.remove("collapsed");
+    sideBar.classList.add("extended");
+    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
+    sideBarBtn.innerText = btnText;
+    sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
+    sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
 }
 /**
  * Closes the side bar passed to it by setting its width to 0px
  * @param {HTMLElement} sideBar - the html element representing the side bar to be closed
  */
-function closeSideBar(sideBar) {
-    return __awaiter(this, void 0, void 0, function* () {
-        let btnText = String.fromCharCode(9776) + "Open Sidebar";
-        let width = "0px";
-        sideBar.style.width = width;
-        sideBar.classList.remove("extended");
-        sideBar.classList.add("collapsed");
-        //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
-        sideBarBtn.innerText = btnText;
-        sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
-        sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
-    });
+async function closeSideBar(sideBar) {
+    let btnText = String.fromCharCode(9776) + "Open Sidebar";
+    let width = "0px";
+    sideBar.style.width = width;
+    sideBar.classList.remove("extended");
+    sideBar.classList.add("collapsed");
+    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
+    sideBarBtn.innerText = btnText;
+    sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
+    sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
 }
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
@@ -919,119 +902,110 @@ function buildSideBar(id) {
  *  @param {Boolean} clearSideBar - tells wether the right sideBar needs to be cleared
  * @param {HTMLElement|{beforeOrAfter:insertPosition, el:HtmlElement}} position - if it is an HTML Element, the newly created divs will be appended to this html element. If it is an object, the newly created divs will be placed in the position provided (the position is of type insertPosition) by the beforeOrAfter property, in relation to the html element provied in the el property
  */
-function showPrayers(btn, clearContent = true, clearRightSideBar = true, position = containerDiv) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) {
-            closeSideBar(leftSideBar);
+async function showPrayers(btn, clearContent = true, clearRightSideBar = true, position = containerDiv) {
+    if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID)
+        closeSideBar(leftSideBar);
+    if (clearContent)
+        containerDiv.innerHTML = "";
+    if (clearRightSideBar)
+        rightSideBar.querySelector("#sideBarBtns").innerHTML = "";
+    //this is the right side bar where the titles are displayed for navigation purposes
+    btn.prayers.map((p) => {
+        if (!p)
+            return;
+        let date;
+        if (p.includes("&D=") || p.includes("&S=")) {
+            //if the id of the prayer includes the value '&D=' this tells us that this prayer is either not linked to a specific day in the coptic calendar (&D=), or the date has been set by the button function (e.g.: PrayerGospelResponse&D=GLWeek). In this case, we will not add the copticReadingsDate to the prayerID
+            //Similarly, if the id includes '&S=', it tells us that it is not linked to a specific date but to a given period of the year. We also keep the id as is without adding any date to it
+            date = "";
         }
-        if (clearContent) {
-            containerDiv.innerHTML = "";
+        else {
+            date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
         }
-        if (clearRightSideBar) {
-            rightSideBar.querySelector("#sideBarBtns").innerHTML = "";
-        } //this is the right side bar where the titles are displayed for navigation purposes
-        btn.prayers.map((p) => {
-            if (!p)
-                return;
-            let date;
-            if (p.includes("&D=") || p.includes("&S=")) {
-                //if the id of the prayer includes the value '&D=' this tells us that this prayer is either not linked to a specific day in the coptic calendar (&D=), or the date has been set by the button function (e.g.: PrayerGospelResponse&D=GLWeek). In this case, we will not add the copticReadingsDate to the prayerID
-                //Similarly, if the id includes '&S=', it tells us that it is not linked to a specific date but to a given period of the year. We also keep the id as is without adding any date to it
-                date = "";
-            }
-            else {
-                date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
-            }
-            p += date;
-            let wordTable = findPrayerInBtnPrayersArray(p, btn);
-            if (wordTable) {
-                wordTable.map((row) => {
-                    createHtmlElementForPrayer(row[0].split("&C=")[0], row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
-                });
-                return;
-            }
-        });
+        p += date;
+        let wordTable = findPrayerInBtnPrayersArray(p, btn);
+        if (wordTable) {
+            wordTable.map((row) => {
+                createHtmlElementForPrayer(row[0].split("&C=")[0], row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
+            });
+            return;
+        }
     });
 }
 /**
  * Sets the number of columns and their widths for an html container which style display property = 'grid'
  * @param {HTMLElement} container - The html element to which the text is appended. This is by default containerDiv
  */
-function setCSSGridTemplate(Rows) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (!Rows)
-            return;
-        Rows.forEach((r) => {
-            r.style.gridTemplateColumns = getColumnsNumberAndWidth(r); //Setting the number of columns and their width for each element having the 'TargetRow' class
-            r.style.gridTemplateAreas = setGridAreas(r); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
-            if (r.classList.contains("TargetRowTitle")) {
-                //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
-                r.role = "button";
-                let arabic = r.querySelector('p[data-lang="AR"]');
-                if (arabic &&
-                    !arabic.textContent.startsWith(String.fromCharCode(10134))) {
-                    arabic.textContent =
-                        String.fromCharCode(10134) +
-                            " " +
-                            r.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
-                }
-                else if (!r.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
-                    r.lastElementChild.textContent =
-                        String.fromCharCode(10134) + " " + r.lastElementChild.textContent;
-                }
+async function setCSSGridTemplate(Rows) {
+    if (!Rows)
+        return;
+    Rows.forEach((r) => {
+        r.style.gridTemplateColumns = getColumnsNumberAndWidth(r); //Setting the number of columns and their width for each element having the 'TargetRow' class
+        r.style.gridTemplateAreas = setGridAreas(r); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
+        if (r.classList.contains("TargetRowTitle")) {
+            //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
+            r.role = "button";
+            let arabic = r.querySelector('p[data-lang="AR"]');
+            if (arabic &&
+                !arabic.textContent.startsWith(String.fromCharCode(10134))) {
+                arabic.textContent =
+                    String.fromCharCode(10134) +
+                        " " +
+                        r.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
             }
-        });
-        /**
-         * Returns a string indicating the number of columns and their widths
-         * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
-         * @returns  {string} - a string represneting the value that will be given to the grid-template-columns of the row
-         */
-        function getColumnsNumberAndWidth(row) {
-            let width = (100 / row.children.length).toString() + "% ";
-            return width.repeat(row.children.length);
+            else if (!r.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
+                r.lastElementChild.textContent =
+                    String.fromCharCode(10134) + " " + r.lastElementChild.textContent;
+            }
         }
-        /**
-         * Returns a string representing the grid areas for an html element with a 'display:grid' property, based on the dataset.lang of its children
-         * @param {HTMLElement} row - an html element having children and each child has a dataset.lang
-         * @returns {string} representing the grid areas based on the dataset.lang of the html element children
-         */
-        function setGridAreas(row) {
-            let areas = [], child;
-            for (let i = 0; i < row.children.length; i++) {
-                child = row.children[i];
-                areas.push(child.dataset.lang);
-                child.classList.add(child.dataset.lang); //we profit from the loop to add the language as class to the element (we didn't add it earlier in order to lighten the display of the html element and reduce the delay/latency for the user)
-            }
-            if (areas.indexOf("AR") == 0 &&
-                !row.classList.contains("Comment") &&
-                !row.classList.contains("CommentText")) {
-                //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
-                areas.reverse();
-            }
-            return '"' + areas.toString().split(",").join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
+    });
+    replaceEigthNote();
+    /**
+     * Returns a string indicating the number of columns and their widths
+     * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
+     * @returns  {string} - a string represneting the value that will be given to the grid-template-columns of the row
+     */
+    function getColumnsNumberAndWidth(row) {
+        let width = (100 / row.children.length).toString() + "% ";
+        return width.repeat(row.children.length);
+    }
+    /**
+     * Returns a string representing the grid areas for an html element with a 'display:grid' property, based on the dataset.lang of its children
+     * @param {HTMLElement} row - an html element having children and each child has a dataset.lang
+     * @returns {string} representing the grid areas based on the dataset.lang of the html element children
+     */
+    function setGridAreas(row) {
+        let areas = [], child;
+        for (let i = 0; i < row.children.length; i++) {
+            child = row.children[i];
+            areas.push(child.dataset.lang);
+            child.classList.add(child.dataset.lang); //we profit from the loop to add the language as class to the element (we didn't add it earlier in order to lighten the display of the html element and reduce the delay/latency for the user)
+        }
+        if (areas.indexOf("AR") == 0 &&
+            !row.classList.contains("Comment") &&
+            !row.classList.contains("CommentText")) {
+            //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
+            areas.reverse();
+        }
+        return '"' + areas.toString().split(",").join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
+    }
+}
+async function applyAmplifiedText(container) {
+    new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
+        if (value == true) {
+            Array.from(container)
+                .filter((el) => el.getAttribute("data-lang") == key)
+                .map((el) => el.classList.add("amplifiedText"));
         }
     });
 }
-function applyAmplifiedText(container) {
-    return __awaiter(this, void 0, void 0, function* () {
-        new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
-            if (value == true) {
-                Array.from(container)
-                    .filter((el) => el.getAttribute("data-lang") == key)
-                    .map((el) => el.classList.add("amplifiedText"));
-            }
-        });
-    });
-}
-function setButtonsPrayers() {
-    return __awaiter(this, void 0, void 0, function* () {
-        for (let i = 0; i < btns.length; i++) {
-            btnsPrayers.push([btns[i].btnID, ...(yield btns[i].onClick())]);
-            btns[i].retrieved = true;
-        }
-        console.log("Buttons prayers were set");
-        return btnsPrayers;
-    });
+async function setButtonsPrayers() {
+    for (let i = 0; i < btns.length; i++) {
+        btnsPrayers.push([btns[i].btnID, ...(await btns[i].onClick())]);
+        btns[i].retrieved = true;
+    }
+    console.log("Buttons prayers were set");
+    return btnsPrayers;
 }
 /**
  * Toggles the dipslay property of all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TargetRowTitle'
@@ -1073,117 +1047,113 @@ function collapseText(element) {
  * @param {Object{AR:string, FR:'string'}} btnLabels - An object containing the labels of the master button that the user will click to show a list of buttons, each representing a prayer in selectedPrayers[]
  * @param {string} masterBtnID - The id of the master button
  */
-function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv, btnLabels, masterBtnID) {
-    return __awaiter(this, void 0, void 0, function* () {
-        let prayersMasterBtn, next;
-        //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
-        prayersMasterBtn = new Button({
-            btnID: masterBtnID,
-            label: btnLabels,
-            inlineBtns: yield createInlineBtns(),
-            pursue: false,
-            cssClass: inlineBtnClass,
-            onClick: () => {
-                //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
-                showInlineBtns(masterBtnID, true);
-                //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
-                let newDiv = document.createElement("div");
-                newDiv.id = masterBtnID + "Container";
-                //Customizing the style of newDiv
-                newDiv.classList.add("inlineBtns");
-                //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-                newDiv.style.gridTemplateColumns = "33% 33% 33%";
-                inlineBtnsDiv.style.borderRadius = "10px";
-                let startAt = 0;
-                //We create a "next" Button that we will probably need if
-                if (prayersMasterBtn.inlineBtns.length > 6) {
-                    //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
-                    next = new Button({
-                        btnID: "btnNext",
-                        label: { AR: "التالي", FR: "Suivants" },
-                        cssClass: inlineBtnClass,
-                    });
-                }
-                //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
-                showGroupOfSixPrayers(startAt, newDiv);
-            },
-        });
-        function showGroupOfSixPrayers(startAt, newDiv) {
-            for (let n = startAt; n < startAt + 6 && n < prayersMasterBtn.inlineBtns.length; n++) {
-                //We create html buttons for the 1st 6 inline buttons and append them to newDiv
-                let b = prayersMasterBtn.inlineBtns[n];
-                createBtn(b, newDiv, b.cssClass);
-            }
-            if (next) {
-                //If a "next" Button has been set (which means that there is more than 6 inlineBtns in prayersBtn.inlineBtns[] property), we will set its onClick() property to a function that clears newDiv, and advances the startAt index by 6
-                next.onClick = () => {
-                    //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
-                    newDiv.innerHTML = "";
-                    //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
-                    inlineBtnsDiv.querySelector("#" + next.btnID).remove();
-                    //We set the starting index for the next 6 inline buttons
-                    startAt += 6;
-                    //We call showGroupOfSixPrayers() with the new startAt index
-                    showGroupOfSixPrayers(startAt, newDiv);
-                };
-            }
-            //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
-            inlineBtnsDiv.appendChild(newDiv);
-            //We finaly create an html element representing the "next" button and append it to inlineBtnsDiv directly. We do this only if there is another group of 6 prayers that need to be displayed. We check this before displaying the next button
-            if (next && prayersMasterBtn.inlineBtns.length - startAt > 6) {
-                createBtn(next, inlineBtnsDiv, next.cssClass, false).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
-            }
-        }
-        //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
-        createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass);
-        masterBtnDiv.classList.add("inlineBtns");
-        masterBtnDiv.style.gridTemplateColumns = "100%";
-        /**
-         *Creates a new inlineBtn for each fraction and pushing it to fractionBtn.inlineBtns[]
-         */
-        function createInlineBtns() {
-            return __awaiter(this, void 0, void 0, function* () {
-                let btns = [];
-                selectedPrayers.map((prayerTable) => {
-                    //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
-                    let inlineBtn = new Button({
-                        btnID: prayerTable[0][0].split("&C=")[0],
-                        label: {
-                            AR: prayerTable[0][btn.languages.indexOf("AR") + 1],
-                            FR: prayerTable[0][btn.languages.indexOf("FR") + 1], //same logic and comment as above
-                        },
-                        prayers: [prayerTable[0][0].split("&C=")[0]],
-                        prayersArray: [[...prayerTable].reverse()],
-                        languages: btn.languages,
-                        cssClass: "fractionPrayersBtn",
-                        children: [...btn.parentBtn.children],
-                        onClick: () => {
-                            //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
-                            hideInlineButtonsDiv();
-                            containerDiv
-                                .querySelectorAll('div[data-group="optionalPrayer"]')
-                                .forEach((el) => el.remove());
-                            showPrayers(inlineBtn, false, false, {
-                                beforeOrAfter: "afterend",
-                                el: masterBtnDiv,
-                            }); //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
-                            let createdElements = containerDiv.querySelectorAll(getDataRootSelector(inlineBtn.prayers[0]));
-                            //We will add to each created element a data-group attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-                            createdElements.forEach((el) => el.setAttribute("data-group", "optionalPrayer"));
-                            //We format the grid template of the newly added divs
-                            setCSSGridTemplate(createdElements);
-                            //We apply the amplification of text
-                            applyAmplifiedText(createdElements);
-                            //We scroll to the button
-                            createFakeAnchor(masterBtnID);
-                        },
-                    });
-                    btns.push(inlineBtn);
+async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterBtnDiv, btnLabels, masterBtnID) {
+    let prayersMasterBtn, next;
+    //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
+    prayersMasterBtn = new Button({
+        btnID: masterBtnID,
+        label: btnLabels,
+        inlineBtns: await createInlineBtns(),
+        pursue: false,
+        cssClass: inlineBtnClass,
+        onClick: () => {
+            //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
+            showInlineBtns(masterBtnID, true);
+            //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
+            let newDiv = document.createElement("div");
+            newDiv.id = masterBtnID + "Container";
+            //Customizing the style of newDiv
+            newDiv.classList.add("inlineBtns");
+            //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
+            newDiv.style.gridTemplateColumns = "33% 33% 33%";
+            inlineBtnsDiv.style.borderRadius = "10px";
+            let startAt = 0;
+            //We create a "next" Button that we will probably need if
+            if (prayersMasterBtn.inlineBtns.length > 6) {
+                //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
+                next = new Button({
+                    btnID: "btnNext",
+                    label: { AR: "التالي", FR: "Suivants" },
+                    cssClass: inlineBtnClass,
                 });
-                return btns;
-            });
-        }
+            }
+            //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
+            showGroupOfSixPrayers(startAt, newDiv);
+        },
     });
+    function showGroupOfSixPrayers(startAt, newDiv) {
+        for (let n = startAt; n < startAt + 6 && n < prayersMasterBtn.inlineBtns.length; n++) {
+            //We create html buttons for the 1st 6 inline buttons and append them to newDiv
+            let b = prayersMasterBtn.inlineBtns[n];
+            createBtn(b, newDiv, b.cssClass);
+        }
+        if (next) {
+            //If a "next" Button has been set (which means that there is more than 6 inlineBtns in prayersBtn.inlineBtns[] property), we will set its onClick() property to a function that clears newDiv, and advances the startAt index by 6
+            next.onClick = () => {
+                //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
+                newDiv.innerHTML = "";
+                //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
+                inlineBtnsDiv.querySelector("#" + next.btnID).remove();
+                //We set the starting index for the next 6 inline buttons
+                startAt += 6;
+                //We call showGroupOfSixPrayers() with the new startAt index
+                showGroupOfSixPrayers(startAt, newDiv);
+            };
+        }
+        //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
+        inlineBtnsDiv.appendChild(newDiv);
+        //We finaly create an html element representing the "next" button and append it to inlineBtnsDiv directly. We do this only if there is another group of 6 prayers that need to be displayed. We check this before displaying the next button
+        if (next && prayersMasterBtn.inlineBtns.length - startAt > 6) {
+            createBtn(next, inlineBtnsDiv, next.cssClass, false).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+        }
+    }
+    //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
+    createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass);
+    masterBtnDiv.classList.add("inlineBtns");
+    masterBtnDiv.style.gridTemplateColumns = "100%";
+    /**
+     *Creates a new inlineBtn for each fraction and pushing it to fractionBtn.inlineBtns[]
+     */
+    async function createInlineBtns() {
+        let btns = [];
+        selectedPrayers.map((prayerTable) => {
+            //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
+            let inlineBtn = new Button({
+                btnID: prayerTable[0][0].split("&C=")[0],
+                label: {
+                    AR: prayerTable[0][btn.languages.indexOf("AR") + 1],
+                    FR: prayerTable[0][btn.languages.indexOf("FR") + 1], //same logic and comment as above
+                },
+                prayers: [prayerTable[0][0].split("&C=")[0]],
+                prayersArray: [[...prayerTable].reverse()],
+                languages: btn.languages,
+                cssClass: "fractionPrayersBtn",
+                children: [...btn.parentBtn.children],
+                onClick: () => {
+                    //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
+                    hideInlineButtonsDiv();
+                    containerDiv
+                        .querySelectorAll('div[data-group="optionalPrayer"]')
+                        .forEach((el) => el.remove());
+                    showPrayers(inlineBtn, false, false, {
+                        beforeOrAfter: "afterend",
+                        el: masterBtnDiv,
+                    }); //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
+                    let createdElements = containerDiv.querySelectorAll(getDataRootSelector(inlineBtn.prayers[0]));
+                    //We will add to each created element a data-group attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
+                    createdElements.forEach((el) => el.setAttribute("data-group", "optionalPrayer"));
+                    //We format the grid template of the newly added divs
+                    setCSSGridTemplate(createdElements);
+                    //We apply the amplification of text
+                    applyAmplifiedText(createdElements);
+                    //We scroll to the button
+                    createFakeAnchor(masterBtnID);
+                },
+            });
+            btns.push(inlineBtn);
+        });
+        return btns;
+    }
 }
 /**
  * Takes the title of a Word Table, and loops the button.prayersArray[][][] to check wether an element[0][0] (which reflects a table in the Word document from which the text was retrieved) matches the provided title. If found, it returns the wordTable as a string[][](each array element being a row of the Word table). If dosen't find, it returns 'undefined'
@@ -1257,7 +1227,7 @@ function showSettingsPanel() {
     (function installPWA() {
         btn = createBtn("button", "button", "settingsBtn", "Install PWA", inlineBtnsDiv, "InstallPWA", undefined, undefined, undefined, undefined, {
             event: "click",
-            fun: () => __awaiter(this, void 0, void 0, function* () {
+            fun: async () => {
                 // Initialize deferredPrompt for use later to show browser install prompt.
                 let deferredPrompt;
                 window.addEventListener("beforeinstallprompt", (e) => {
@@ -1267,18 +1237,18 @@ function showSettingsPanel() {
                     deferredPrompt = e;
                 });
                 // Update UI notify the user they can install the PWA
-                (() => __awaiter(this, void 0, void 0, function* () {
+                (async () => {
                     window.dispatchEvent(new Event("beforeinstallprompt"));
                     deferredPrompt.prompt;
                     // Optionally, send analytics event that PWA install promo was shown.
                     console.log(`'beforeinstallprompt' event was fired.`);
                     // Wait for the user to respond to the prompt
-                    const { outcome } = yield deferredPrompt.userChoice;
+                    const { outcome } = await deferredPrompt.userChoice;
                     // Optionally, send analytics event with outcome of user choice
                     console.log(`User response to the install prompt: ${outcome}`);
                     // We've used the prompt, and can't use it again, throw it away
                     deferredPrompt = null;
-                }))();
+                })();
                 function getPWADisplayMode() {
                     const isStandalone = window.matchMedia("(display-mode: standalone)").matches;
                     if (document.referrer.startsWith("android-app://")) {
@@ -1290,7 +1260,7 @@ function showSettingsPanel() {
                     }
                     return "browser";
                 }
-            }),
+            },
         });
     })();
     //Appending date picker
@@ -1303,17 +1273,15 @@ function showSettingsPanel() {
         datePicker.setAttribute("min", "1900-01-01");
     })();
     //Appending 'Next Coptic Day' button
-    (function showNextCopticDayButton() {
-        return __awaiter(this, void 0, void 0, function* () {
-            let container = document.createElement("div");
-            (container.style.display = "grid"),
-                (container.style.gridTemplateColumns = String("50%").repeat(2));
-            inlineBtnsDiv.appendChild(container);
-            btn = createBtn("button", "button", "settingsBtn", "Next Coptic Day", container, "nextDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, true, 1) });
-            btn.style.backgroundColor = "saddlebrown";
-            btn = createBtn("button", "button", "settingsBtn", "Previous Coptic Day", container, "previousDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, false, 1) });
-            btn.style.backgroundColor = "saddlebrown";
-        });
+    (async function showNextCopticDayButton() {
+        let container = document.createElement("div");
+        (container.style.display = "grid"),
+            (container.style.gridTemplateColumns = String("50%").repeat(2));
+        inlineBtnsDiv.appendChild(container);
+        btn = createBtn("button", "button", "settingsBtn", "Next Coptic Day", container, "nextDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, true, 1) });
+        btn.style.backgroundColor = "saddlebrown";
+        btn = createBtn("button", "button", "settingsBtn", "Previous Coptic Day", container, "previousDay", undefined, "submit", undefined, undefined, { event: "click", fun: () => changeDate(undefined, false, 1) });
+        btn.style.backgroundColor = "saddlebrown";
     })();
     let langsContainer = document.createElement("div");
     langsContainer.id = "langsContainer";
@@ -1323,94 +1291,88 @@ function showSettingsPanel() {
     langsContainer.style.justifySelf = "center";
     inlineBtnsDiv.appendChild(langsContainer);
     //Appending Add or Remove language Buttons
-    (function showAddOrRemoveLanguagesBtns() {
-        return __awaiter(this, void 0, void 0, function* () {
-            let parsedUserLanguages = JSON.parse(localStorage.userLanguages);
-            let subContainer = document.createElement("div");
-            subContainer.style.display = "grid";
-            subContainer.style.gridTemplateColumns = String("30% ").repeat(3);
-            subContainer.style.justifyItems = "center";
-            langsContainer.appendChild(subContainer);
-            allLanguages.map((lang) => {
-                let newBtn = createBtn("button", "button", "settingsBtn", lang, subContainer, "userLang", lang, undefined, undefined, undefined, {
-                    event: "click",
-                    fun: () => {
-                        modifyUserLanguages(lang);
-                        newBtn.classList.toggle("langBtnAdd");
-                        //We retrieve again the displayed text/prayers by recalling the last button clicked
-                        if (containerDiv.children) {
-                            //Only if a text is already displayed
-                            showChildButtonsOrPrayers(lastClickedButton);
-                            showSettingsPanel(); //we display the settings pannel again
-                        }
-                    },
-                });
-                if (parsedUserLanguages.indexOf(lang) < 0) {
-                    //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
-                    newBtn.classList.add("langBtnAdd");
-                }
+    (async function showAddOrRemoveLanguagesBtns() {
+        let parsedUserLanguages = JSON.parse(localStorage.userLanguages);
+        let subContainer = document.createElement("div");
+        subContainer.style.display = "grid";
+        subContainer.style.gridTemplateColumns = String("30% ").repeat(3);
+        subContainer.style.justifyItems = "center";
+        langsContainer.appendChild(subContainer);
+        allLanguages.map((lang) => {
+            let newBtn = createBtn("button", "button", "settingsBtn", lang, subContainer, "userLang", lang, undefined, undefined, undefined, {
+                event: "click",
+                fun: () => {
+                    modifyUserLanguages(lang);
+                    newBtn.classList.toggle("langBtnAdd");
+                    //We retrieve again the displayed text/prayers by recalling the last button clicked
+                    if (containerDiv.children) {
+                        //Only if a text is already displayed
+                        showChildButtonsOrPrayers(lastClickedButton);
+                        showSettingsPanel(); //we display the settings pannel again
+                    }
+                },
             });
+            if (parsedUserLanguages.indexOf(lang) < 0) {
+                //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
+                newBtn.classList.add("langBtnAdd");
+            }
         });
     })();
-    (function showExcludeActorButon() {
-        return __awaiter(this, void 0, void 0, function* () {
-            let actorsContainer = document.createElement("div");
-            actorsContainer.style.display = "grid";
-            actorsContainer.style.gridTemplateColumns = String("50%").repeat(2);
-            inlineBtnsDiv.appendChild(actorsContainer);
-            actors.map((actor) => {
-                if (actor == "CommentText") {
-                    return;
-                } //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
-                let show = new Map(JSON.parse(localStorage.getItem("showActors"))).get(actor);
-                btn = createBtn("button", "button", "settingsBtn", actor, actorsContainer, actor, actor, undefined, undefined, undefined, {
-                    event: "click",
-                    fun: () => {
-                        show = !show; //inversing the value of "show"
-                        showActors.set(actor, show);
-                        btn.classList.toggle("langBtnAdd");
-                        //changing the background color of the button to red by adding 'langBtnAdd' as a class
-                        if (actor == "Comment") {
-                            showActors.set("CommentText", show);
-                        } //setting the value of 'CommentText' same as 'Comment'
-                        localStorage.showActors = JSON.stringify(Array.from(showActors)); //adding the new values to local storage
-                        if (containerDiv.children) {
-                            //Only if some prayers text is already displayed
-                            showChildButtonsOrPrayers(lastClickedButton); //we re-click the last button to refresh the displayed text by adding or removing the actor according to the new setings chice made by the user.
-                            showSettingsPanel(); //we display the settings pannel again
-                        }
-                    },
-                });
-                if (show == false) {
-                    btn.classList.add("langBtnAdd");
-                }
+    (async function showExcludeActorButon() {
+        let actorsContainer = document.createElement("div");
+        actorsContainer.style.display = "grid";
+        actorsContainer.style.gridTemplateColumns = String("50%").repeat(2);
+        inlineBtnsDiv.appendChild(actorsContainer);
+        actors.map((actor) => {
+            if (actor == "CommentText") {
+                return;
+            } //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
+            let show = new Map(JSON.parse(localStorage.getItem("showActors"))).get(actor);
+            btn = createBtn("button", "button", "settingsBtn", actor, actorsContainer, actor, actor, undefined, undefined, undefined, {
+                event: "click",
+                fun: () => {
+                    show = !show; //inversing the value of "show"
+                    showActors.set(actor, show);
+                    btn.classList.toggle("langBtnAdd");
+                    //changing the background color of the button to red by adding 'langBtnAdd' as a class
+                    if (actor == "Comment") {
+                        showActors.set("CommentText", show);
+                    } //setting the value of 'CommentText' same as 'Comment'
+                    localStorage.showActors = JSON.stringify(Array.from(showActors)); //adding the new values to local storage
+                    if (containerDiv.children) {
+                        //Only if some prayers text is already displayed
+                        showChildButtonsOrPrayers(lastClickedButton); //we re-click the last button to refresh the displayed text by adding or removing the actor according to the new setings chice made by the user.
+                        showSettingsPanel(); //we display the settings pannel again
+                    }
+                },
             });
+            if (show == false) {
+                btn.classList.add("langBtnAdd");
+            }
         });
     })();
-    (function showDisplayModeBtns() {
-        return __awaiter(this, void 0, void 0, function* () {
-            let displayContainer = document.createElement("div");
-            displayContainer.style.display = "grid";
-            displayContainer.style.gridTemplateColumns = String((100 / 3).toString() + "%").repeat(3);
-            inlineBtnsDiv.appendChild(displayContainer);
-            displayModes.map((mode) => {
-                btn = createBtn("button", "button", "settingsBtn", mode + " Display Mode", displayContainer, mode, undefined, undefined, undefined, undefined, {
-                    event: "click",
-                    fun: () => {
-                        if (localStorage.displayMode != mode) {
-                            localStorage.displayMode = mode;
-                            Array.from(displayContainer.children).map((b) => {
-                                b.id != localStorage.displayMode
-                                    ? b.classList.add("langBtnAdd")
-                                    : b.classList.remove("langBtnAdd");
-                            });
-                        }
-                    },
-                });
-                if (mode != localStorage.displayMode) {
-                    btn.classList.add("langBtnAdd");
-                }
+    (async function showDisplayModeBtns() {
+        let displayContainer = document.createElement("div");
+        displayContainer.style.display = "grid";
+        displayContainer.style.gridTemplateColumns = String((100 / 3).toString() + "%").repeat(3);
+        inlineBtnsDiv.appendChild(displayContainer);
+        displayModes.map((mode) => {
+            btn = createBtn("button", "button", "settingsBtn", mode + " Display Mode", displayContainer, mode, undefined, undefined, undefined, undefined, {
+                event: "click",
+                fun: () => {
+                    if (localStorage.displayMode != mode) {
+                        localStorage.displayMode = mode;
+                        Array.from(displayContainer.children).map((b) => {
+                            b.id != localStorage.displayMode
+                                ? b.classList.add("langBtnAdd")
+                                : b.classList.remove("langBtnAdd");
+                        });
+                    }
+                },
             });
+            if (mode != localStorage.displayMode) {
+                btn.classList.add("langBtnAdd");
+            }
         });
     })();
     function createBtn(tag, role = tag, btnClass, innerText, parent, id, dataSet, type, size, backgroundColor, onClick) {
@@ -1453,42 +1415,40 @@ function showSettingsPanel() {
         return btn;
     }
     //Appending colors keys for actors
-    (function addActorsKeys() {
-        return __awaiter(this, void 0, void 0, function* () {
-            let container = document.createElement("div");
-            container.id = "actors";
-            container.style.display = "grid";
-            container.style.gridTemplateColumns = String("33% ").repeat(3);
-            inlineBtnsDiv.appendChild(container);
-            let actors = [
-                {
-                    id: "PriestColor",
-                    AR: "الكاهن",
-                    FR: "Le Prêtre",
-                    EN: "The Priest",
-                },
-                {
-                    id: "AssemblyColor",
-                    AR: "الشعب",
-                    FR: "L'Assemblée",
-                    EN: "The Assembly",
-                },
-                {
-                    id: "DiaconColor",
-                    AR: "الشماس",
-                    FR: "Le Diacre",
-                    EN: "The Diacon",
-                },
-            ];
-            actors.map((b) => {
-                let newBtn = createBtn("button", undefined, "colorbtn", undefined, container, b.id);
-                for (let i = 1; i < 4; i++) {
-                    let p = document.createElement("p");
-                    p.innerText = b[Object.keys(b)[i]];
-                    //Object.keys(b)[i] 0K;
-                    newBtn.appendChild(p);
-                }
-            });
+    (async function addActorsKeys() {
+        let container = document.createElement("div");
+        container.id = "actors";
+        container.style.display = "grid";
+        container.style.gridTemplateColumns = String("33% ").repeat(3);
+        inlineBtnsDiv.appendChild(container);
+        let actors = [
+            {
+                id: "PriestColor",
+                AR: "الكاهن",
+                FR: "Le Prêtre",
+                EN: "The Priest",
+            },
+            {
+                id: "AssemblyColor",
+                AR: "الشعب",
+                FR: "L'Assemblée",
+                EN: "The Assembly",
+            },
+            {
+                id: "DiaconColor",
+                AR: "الشماس",
+                FR: "Le Diacre",
+                EN: "The Diacon",
+            },
+        ];
+        actors.map((b) => {
+            let newBtn = createBtn("button", undefined, "colorbtn", undefined, container, b.id);
+            for (let i = 1; i < 4; i++) {
+                let p = document.createElement("p");
+                p.innerText = b[Object.keys(b)[i]];
+                //Object.keys(b)[i] 0K;
+                newBtn.appendChild(p);
+            }
         });
     })();
     closeSideBar(leftSideBar);
@@ -1499,36 +1459,32 @@ function showSettingsPanel() {
  * @param {Button[]} btns - an array of Button elements for each of which an html element will be created by createBtn() and appended to a newly created div. Each of the html buttons created will, when clicked
  * @param {InsertPosition} position - the position where the div containing the created html elements for each button, will be inserted compared to the containerDiv child retrieved using the querySelector parameter
  */
-function insertRedirectionButtons(targetElement, btns, position = "beforebegin") {
-    return __awaiter(this, void 0, void 0, function* () {
-        let div = document.createElement("div");
-        div.classList.add("inlineBtns");
-        div.style.gridTemplateColumns = ((100 / btns.length).toString() + "% ").repeat(btns.length);
-        btns.map((b) => div.appendChild(createBtn(b, div, b.cssClass)));
-        targetElement.insertAdjacentElement(position, div);
-    });
+async function insertRedirectionButtons(targetElement, btns, position = "beforebegin") {
+    let div = document.createElement("div");
+    div.classList.add("inlineBtns");
+    div.style.gridTemplateColumns = ((100 / btns.length).toString() + "% ").repeat(btns.length);
+    btns.map((b) => div.appendChild(createBtn(b, div, b.cssClass)));
+    targetElement.insertAdjacentElement(position, div);
 }
 /**Was meant to fetch the Arabic Synaxarium text but didn't work for CORS issue on the api */
-function fetchSynaxarium() {
-    return __awaiter(this, void 0, void 0, function* () {
-        let date = "1_9";
-        let url = "https://www.copticchurch.net/synaxarium/" + `${date}` + ".html?lang=ar";
-        let response = yield fetch("http://katamars.avabishoy.com/api/Katamars/GetSynaxariumStory?id=1&synaxariumSourceId=1", {
-            headers: {
-                accept: "application/json, text/plain, */*",
-                "accept-language": "en-US,en;q=0.9,fr;q=0.8,fr-FR;q=0.7",
-                "cache-control": "no-cache",
-                pragma: "no-cache",
-            },
-            referrer: "http://katamars.avabishoy.com/",
-            referrerPolicy: "strict-origin-when-cross-origin",
-            body: null,
-            method: "GET",
-            mode: "cors",
-            credentials: "omit",
-        });
-        console.log(response);
+async function fetchSynaxarium() {
+    let date = "1_9";
+    let url = "https://www.copticchurch.net/synaxarium/" + `${date}` + ".html?lang=ar";
+    let response = await fetch("http://katamars.avabishoy.com/api/Katamars/GetSynaxariumStory?id=1&synaxariumSourceId=1", {
+        headers: {
+            accept: "application/json, text/plain, */*",
+            "accept-language": "en-US,en;q=0.9,fr;q=0.8,fr-FR;q=0.7",
+            "cache-control": "no-cache",
+            pragma: "no-cache",
+        },
+        referrer: "http://katamars.avabishoy.com/",
+        referrerPolicy: "strict-origin-when-cross-origin",
+        body: null,
+        method: "GET",
+        mode: "cors",
+        credentials: "omit",
     });
+    console.log(response);
 }
 /**
  * Just trying to figger out if there is a way to prompt the user for installing the app without waiting for the browser to spontaneously trigger the 'beforeinstallprompt' event
@@ -1554,81 +1510,79 @@ function playingWithInstalation() {
     alert("swipe right or click on the image to open the menu and start");
 }
 populatePrayersArrays();
-function populatePrayersArrays() {
-    return __awaiter(this, void 0, void 0, function* () {
-        //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
-        PrayersArray.map((wordTable) => {
-            //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
-            if (wordTable[0][0].startsWith(Prefix.commonPrayer)) {
-                CommonPrayersArray.push(wordTable);
+async function populatePrayersArrays() {
+    //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
+    PrayersArray.map((wordTable) => {
+        //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
+        if (wordTable[0][0].startsWith(Prefix.commonPrayer)) {
+            CommonPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.massStBasil)) {
+            MassStBasilPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.massCommon)) {
+            MassCommonPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.massStGregory)) {
+            MassStGregoryPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.massStCyril)) {
+            MassStCyrilPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.massStJohn)) {
+            MassStJohnPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.fractionPrayer)) {
+            FractionsPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.commonDoxologies)) {
+            DoxologiesPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.commonIncense)) {
+            IncensePrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.incenseDawn)) {
+            IncensePrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.incenseVespers)) {
+            IncensePrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.communion)) {
+            CommunionPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.psalmResponse)) {
+            PsalmAndGospelPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
+            PsalmAndGospelPrayersArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
+            cymbalVersesArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.praxis)) {
+            praxisResponsesArray.push(wordTable);
+        }
+        else if (wordTable[0][0].startsWith(Prefix.bookOfHours)) {
+            bookOfHoursArray.push(wordTable);
+            if (wordTable[0][0].includes('1stHour')) {
+                bookOfHours.Dawn.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.massStBasil)) {
-                MassStBasilPrayersArray.push(wordTable);
+            else if (wordTable[0][0].includes('3rdHour')) {
+                bookOfHours.ThirdHour.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.massCommon)) {
-                MassCommonPrayersArray.push(wordTable);
+            else if (wordTable[0][0].includes('6thHour')) {
+                bookOfHours.SixthHour.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.massStGregory)) {
-                MassStGregoryPrayersArray.push(wordTable);
+            else if (wordTable[0][0].includes('9thHour')) {
+                bookOfHours.NinethHour.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.massStCyril)) {
-                MassStCyrilPrayersArray.push(wordTable);
+            else if (wordTable[0][0].includes('11thHour')) {
+                bookOfHours.EleventhHour.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.massStJohn)) {
-                MassStJohnPrayersArray.push(wordTable);
+            else if (wordTable[0][0].includes('12thHour')) {
+                bookOfHours.TwelvethHour.push(wordTable);
             }
-            else if (wordTable[0][0].startsWith(Prefix.fractionPrayer)) {
-                FractionsPrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.commonDoxologies)) {
-                DoxologiesPrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.commonIncense)) {
-                IncensePrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.incenseDawn)) {
-                IncensePrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.incenseVespers)) {
-                IncensePrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.communion)) {
-                CommunionPrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.psalmResponse)) {
-                PsalmAndGospelPrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
-                PsalmAndGospelPrayersArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
-                cymbalVersesArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.praxis)) {
-                praxisResponsesArray.push(wordTable);
-            }
-            else if (wordTable[0][0].startsWith(Prefix.bookOfHours)) {
-                bookOfHoursArray.push(wordTable);
-                if (wordTable[0][0].includes('1stHour')) {
-                    bookOfHours.Dawn.push(wordTable);
-                }
-                else if (wordTable[0][0].includes('3rdHour')) {
-                    bookOfHours.ThirdHour.push(wordTable);
-                }
-                else if (wordTable[0][0].includes('6thHour')) {
-                    bookOfHours.SixthHour.push(wordTable);
-                }
-                else if (wordTable[0][0].includes('9thHour')) {
-                    bookOfHours.NinethHour.push(wordTable);
-                }
-                else if (wordTable[0][0].includes('11thHour')) {
-                    bookOfHours.EleventhHour.push(wordTable);
-                }
-                else if (wordTable[0][0].includes('12thHour')) {
-                    bookOfHours.TwelvethHour.push(wordTable);
-                }
-            }
-        });
+        }
     });
 }
 /**
@@ -1675,13 +1629,11 @@ function getDataRootSelector(root, isLike = false) {
  * @param {InsertPosition} position - the position at which the block of html elements will be moved in relation to the specified html element
  * @param {NodeListOf<Element>} block - a list of html elements that will be moved to the specified 'position' in relation to another html element in the containerDiv
  */
-function moveBlockOfRowsAdjacentToAnElement(targetElementRoot, position, block) {
-    return __awaiter(this, void 0, void 0, function* () {
-        Array.from(block).map((r) => containerDiv
-            .querySelector(getDataRootSelector(targetElementRoot))
-            .insertAdjacentElement(position, r));
-        contentDiv.querySelectorAll(".class");
-    });
+async function moveBlockOfRowsAdjacentToAnElement(targetElementRoot, position, block) {
+    Array.from(block).map((r) => containerDiv
+        .querySelector(getDataRootSelector(targetElementRoot))
+        .insertAdjacentElement(position, r));
+    contentDiv.querySelectorAll(".class");
 }
 /**
  * Replaces the css class class of all tables in an array of tables (i.e., a string[][][]). The css class is added as a suffix to the title of each table, preceded by '&C='
@@ -1691,5 +1643,13 @@ function moveBlockOfRowsAdjacentToAnElement(targetElementRoot, position, block) 
 function replaceClass(prayersArray, newClass) {
     prayersArray.map(table => {
         table.map(row => row[0] = row[0].split('&C=')[0] + '&C=' + newClass);
+    });
+}
+function replaceEigthNote(code = 9834) {
+    let note = String.fromCharCode(code), replaceWith = '<span class="eigthNote">' + note + '</span>';
+    containerDiv.querySelectorAll('p').forEach(p => {
+        if (p.innerText.includes(note)) {
+            p.innerHTML = p.innerHTML.replaceAll(note, replaceWith);
+        }
     });
 }

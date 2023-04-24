@@ -1,12 +1,3 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 class Button {
     constructor(btn) {
         this._retrieved = false;
@@ -269,7 +260,7 @@ const btnIncenseDawn = new Button({
         scrollToTop();
         return btnIncenseDawn.prayers;
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         (function addInlineBtnForAdamDoxolgies() {
             //Adding an inline Button for showing the "Adam" Doxologies, and removing the id of the Adam Doxologies from the btn.prayers array
             let btn = new Button({
@@ -279,7 +270,7 @@ const btnIncenseDawn = new Button({
                     FR: "Doxologies Adam Aube",
                 },
                 cssClass: inlineBtnClass,
-                prayers: ["DC_AdamIntorduction&D=0000"],
+                prayers: [Prefix.commonDoxologies + 'AdamIntorduction&D=0000', Prefix.commonDoxologies + 'Adam&D=0000'],
                 prayersArray: DoxologiesPrayersArray,
                 languages: btnIncenseDawn.languages,
                 inlineBtns: [],
@@ -314,226 +305,220 @@ const btnIncenseDawn = new Button({
             });
             containerDiv.children[0].insertAdjacentElement("beforebegin", newDiv); //Inserting the div containing the button as 1st element of containerDiv
         })();
-        (function addGreatLentPrayers() {
-            return __awaiter(this, void 0, void 0, function* () {
-                let doxologies;
-                if (Season != Seasons.GreatLent ||
-                    copticReadingsDate == copticFeasts.Resurrection) {
-                    return;
-                }
-                else if (todayDate.getDay() != 0 && todayDate.getDay() != 6) {
-                    //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
-                    (function showPropheciesDawnBtn() {
-                        //If we are during any day of the week, we will add the Prophecies readings to the children of the button
-                        if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) == -1) {
-                            btnIncenseDawn.children.unshift(btnReadingsPropheciesDawn);
-                        }
-                    })();
-                }
-                else if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
-                }
-                (function removeEklonominTaghonataExcessiveTitles() {
-                    return __awaiter(this, void 0, void 0, function* () {
-                        let titles = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonIncense + 'GodHaveMercyOnUsRefrain&D=$' + Seasons.GreatLent));
-                        if (titles) {
-                            for (let i = 7; i < titles.length; i += 7) {
-                                titles[i].remove();
-                            }
-                        }
-                        let links = rightSideBar
-                            .querySelector("#sideBarBtns")
-                            .querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
-                        for (let i = 1; i < links.length; i++) {
-                            links[i].remove();
-                        }
-                    });
+        (async function addGreatLentPrayers() {
+            let doxologies;
+            if (Season != Seasons.GreatLent ||
+                copticReadingsDate == copticFeasts.Resurrection) {
+                return;
+            }
+            else if (todayDate.getDay() != 0 && todayDate.getDay() != 6) {
+                //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
+                (function showPropheciesDawnBtn() {
+                    //If we are during any day of the week, we will add the Prophecies readings to the children of the button
+                    if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) == -1) {
+                        btnIncenseDawn.children.unshift(btnReadingsPropheciesDawn);
+                    }
                 })();
-            });
+            }
+            else if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
+            }
+            (async function removeEklonominTaghonataExcessiveTitles() {
+                let titles = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonIncense + 'GodHaveMercyOnUsRefrain&D=$' + Seasons.GreatLent));
+                if (titles) {
+                    for (let i = 7; i < titles.length; i += 7) {
+                        titles[i].remove();
+                    }
+                }
+                let links = rightSideBar
+                    .querySelector("#sideBarBtns")
+                    .querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
+                for (let i = 1; i < links.length; i++) {
+                    links[i].remove();
+                }
+            })();
         })();
-        (function insertCymbalVersesAndDoxologiesForFeastsAndSeasons() {
-            return __awaiter(this, void 0, void 0, function* () {
-                if (copticDate == copticFeasts.Nayrouz) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Nayrouz,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Nayrouz });
-                }
-                else if (copticDate == copticFeasts.Cross) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({ coptDate: copticFeasts.Cross });
-                    insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Cross });
-                }
-                else if (Season == Seasons.Kiahk) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({ coptDate: Seasons.Kiahk });
-                    insertDoxologiesForFeastsAndSeasons({ coptDate: Seasons.Kiahk });
-                }
-                else if (copticDate == copticFeasts.NativityParamoun) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.NativityParamoun,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.NativityParamoun,
-                    });
-                }
-                else if (copticDate == copticFeasts.Circumcision) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Circumcision,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Circumcision,
-                    });
-                }
-                else if (copticDate == copticFeasts.BaptismParamoun) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.BaptismParamoun,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.BaptismParamoun,
-                    });
-                }
-                else if (copticDate == copticFeasts.Baptism) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Baptism,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Baptism });
-                }
-                else if (copticDate == copticFeasts.CanaWedding) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.CanaWedding,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.CanaWedding,
-                    });
-                }
-                else if (copticDate == copticFeasts.EntryToTemple) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.EntryToTemple,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.EntryToTemple,
-                    });
-                }
-                else if (copticDate == copticFeasts.Annonciation) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Annonciation,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Annonciation,
-                    });
-                }
-                else if (Season == Seasons.GreatLent) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: Seasons.GreatLent,
-                        remove: true,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({ coptDate: Seasons.GreatLent });
-                }
-                else if (copticReadingsDate == copticFeasts.LazarusSaturday) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.LazarusSaturday,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.LazarusSaturday,
-                    });
-                }
-                else if (copticReadingsDate == copticFeasts.PalmSunday) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.PalmSunday,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.PalmSunday,
-                    });
-                }
-                //The order during the pentecostal days is important. We start by the last event (Pentecoste), then the "Ascension", and finally the general case which is Seasons.PentecostalDays
-                else if (copticReadingsDate == copticFeasts.Pentecoste) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Pentecoste,
-                        remove: true,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Pentecoste,
-                    });
-                    let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
-                    moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
-                        'Wates2&D=$' + Seasons.PentecostalDays)));
-                    //Removing Archange Maykel's Doxology (it is replaced by another one)
-                    removeElementsByTheirDataRoot(stMaykelRoot);
-                }
-                else if (copticReadingsDate == copticFeasts.Ascension ||
-                    Number(copticReadingsDate.split(Seasons.PentecostalDays)[1]) > 39) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Ascension,
-                        remove: true,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Ascension,
-                    });
-                    let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
-                    moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
-                        'Wates2&D=$' + Seasons.PentecostalDays)));
-                    //Removing Archange Maykel's Doxology (it is replaced by another one)
-                    removeElementsByTheirDataRoot(stMaykelRoot);
-                }
-                else if (Season == Seasons.PentecostalDays) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: Seasons.PentecostalDays,
-                        remove: true,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: Seasons.PentecostalDays,
-                    });
-                    let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
-                    moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
-                        'Wates2&D=$' + Seasons.PentecostalDays)));
-                    //Removing Archange Maykel's Doxology (it is replaced by another one)
-                    removeElementsByTheirDataRoot(stMaykelRoot);
-                }
-                else if (copticDate == copticFeasts.EntryToEgypt) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.EntryToEgypt,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.EntryToEgypt,
-                    });
-                }
-                else if (copticDate == copticFeasts.Epiphany) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Epiphany,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.Epiphany,
-                    });
-                }
-                else if (copticDate == copticFeasts.theTwentyNinethOfCopticMonth) {
-                    //Inserting Cymbal Verses
-                    insertCymbalVersesForFeastsAndSeasons({
-                        coptDate: copticFeasts.theTwentyNinethOfCopticMonth,
-                    });
-                    insertDoxologiesForFeastsAndSeasons({
-                        coptDate: copticFeasts.theTwentyNinethOfCopticMonth,
-                    });
-                }
-            });
+        (async function insertCymbalVersesAndDoxologiesForFeastsAndSeasons() {
+            if (copticDate == copticFeasts.Nayrouz) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Nayrouz,
+                });
+                insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Nayrouz });
+            }
+            else if (copticDate == copticFeasts.Cross) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({ coptDate: copticFeasts.Cross });
+                insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Cross });
+            }
+            else if (Season == Seasons.Kiahk) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({ coptDate: Seasons.Kiahk });
+                insertDoxologiesForFeastsAndSeasons({ coptDate: Seasons.Kiahk });
+            }
+            else if (copticDate == copticFeasts.NativityParamoun) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.NativityParamoun,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.NativityParamoun,
+                });
+            }
+            else if (copticDate == copticFeasts.Circumcision) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Circumcision,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Circumcision,
+                });
+            }
+            else if (copticDate == copticFeasts.BaptismParamoun) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.BaptismParamoun,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.BaptismParamoun,
+                });
+            }
+            else if (copticDate == copticFeasts.Baptism) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Baptism,
+                });
+                insertDoxologiesForFeastsAndSeasons({ coptDate: copticFeasts.Baptism });
+            }
+            else if (copticDate == copticFeasts.CanaWedding) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.CanaWedding,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.CanaWedding,
+                });
+            }
+            else if (copticDate == copticFeasts.EntryToTemple) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.EntryToTemple,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.EntryToTemple,
+                });
+            }
+            else if (copticDate == copticFeasts.Annonciation) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Annonciation,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Annonciation,
+                });
+            }
+            else if (Season == Seasons.GreatLent) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: Seasons.GreatLent,
+                    remove: true,
+                });
+                insertDoxologiesForFeastsAndSeasons({ coptDate: Seasons.GreatLent });
+            }
+            else if (copticReadingsDate == copticFeasts.LazarusSaturday) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.LazarusSaturday,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.LazarusSaturday,
+                });
+            }
+            else if (copticReadingsDate == copticFeasts.PalmSunday) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.PalmSunday,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.PalmSunday,
+                });
+            }
+            //The order during the pentecostal days is important. We start by the last event (Pentecoste), then the "Ascension", and finally the general case which is Seasons.PentecostalDays
+            else if (copticReadingsDate == copticFeasts.Pentecoste) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Pentecoste,
+                    remove: true,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Pentecoste,
+                });
+                let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
+                moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
+                    'Wates2&D=$' + Seasons.PentecostalDays)));
+                //Removing Archange Maykel's Doxology (it is replaced by another one)
+                removeElementsByTheirDataRoot(stMaykelRoot);
+            }
+            else if (copticReadingsDate == copticFeasts.Ascension ||
+                Number(copticReadingsDate.split(Seasons.PentecostalDays)[1]) > 39) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Ascension,
+                    remove: true,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Ascension,
+                });
+                let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
+                moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
+                    'Wates2&D=$' + Seasons.PentecostalDays)));
+                //Removing Archange Maykel's Doxology (it is replaced by another one)
+                removeElementsByTheirDataRoot(stMaykelRoot);
+            }
+            else if (Season == Seasons.PentecostalDays) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: Seasons.PentecostalDays,
+                    remove: true,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: Seasons.PentecostalDays,
+                });
+                let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
+                moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
+                    'Wates2&D=$' + Seasons.PentecostalDays)));
+                //Removing Archange Maykel's Doxology (it is replaced by another one)
+                removeElementsByTheirDataRoot(stMaykelRoot);
+            }
+            else if (copticDate == copticFeasts.EntryToEgypt) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.EntryToEgypt,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.EntryToEgypt,
+                });
+            }
+            else if (copticDate == copticFeasts.Epiphany) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Epiphany,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.Epiphany,
+                });
+            }
+            else if (copticDate == copticFeasts.theTwentyNinethOfCopticMonth) {
+                //Inserting Cymbal Verses
+                insertCymbalVersesForFeastsAndSeasons({
+                    coptDate: copticFeasts.theTwentyNinethOfCopticMonth,
+                });
+                insertDoxologiesForFeastsAndSeasons({
+                    coptDate: copticFeasts.theTwentyNinethOfCopticMonth,
+                });
+            }
         })();
         insertGospelReadings(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
-    }),
+    },
 });
 const btnIncenseVespers = new Button({
     btnID: "btnIncenseVespers",
@@ -601,9 +586,9 @@ const btnIncenseVespers = new Button({
         scrollToTop();
         return btnIncenseVespers.prayers;
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         insertGospelReadings(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages);
-    }),
+    },
 });
 const btnMassStCyril = new Button({
     btnID: "btnMassStCyril",
@@ -639,7 +624,7 @@ const btnMassStCyril = new Button({
         ];
         return btnMassStCyril.prayers;
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStCyril);
         //Adding 2 buttons to redirect to the St Basil or St Gregory Reconciliation prayer
         redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStBasil, btnMassStGregory, btnMassStJohn], "afterend");
@@ -650,7 +635,7 @@ const btnMassStCyril = new Button({
         let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStGregory], "beforebegin");
         scrollToTop(); //scrolling to the top of the page
-    }),
+    },
 });
 const btnMassStGregory = new Button({
     btnID: "btnMassStGregory",
@@ -682,7 +667,7 @@ const btnMassStGregory = new Button({
         scrollToTop();
         return btnMassStGregory.prayers;
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStGregory);
         //Adding 3 buttons to redirect to the St Basil or St Cyril Reconciliation prayer
         redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStBasil, btnMassStCyril, btnMassStJohn], "afterend");
@@ -693,7 +678,7 @@ const btnMassStGregory = new Button({
         let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStCyril], "beforebegin");
         scrollToTop(); //scrolling to the top of the page
-    }),
+    },
 });
 const btnMassStBasil = new Button({
     btnID: "btnMassStBasil",
@@ -719,7 +704,7 @@ const btnMassStBasil = new Button({
         scrollToTop();
         return btnMassStBasil.prayers;
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStBasil);
         //We add buttons to redirect to the other Reconciliation masses
         redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStGregory, btnMassStCyril, btnMassStJohn], "afterend");
@@ -728,7 +713,7 @@ const btnMassStBasil = new Button({
         //Before Agios
         let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
         redirectToAnotherMass(Agios, [btnMassStGregory, btnMassStCyril], "beforebegin");
-    }),
+    },
 });
 const btnMassStJohn = new Button({
     btnID: "btnMassStJohn",
@@ -743,9 +728,9 @@ const btnMassStJohn = new Button({
         ];
         scrollToTop(); //scrolling to the top of the page
     },
-    afterShowPrayers: () => __awaiter(this, void 0, void 0, function* () {
+    afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStJohn);
-    }),
+    },
 });
 const goToAnotherMass = [
     new Button({
@@ -1112,9 +1097,37 @@ const btnBookOfHours = new Button({
             btnBookOfHours.prayersArray = hours;
         }
         else {
-            btnBookOfHours.prayersArray = bookOfHoursArray;
-            btnBookOfHours.prayers = bookOfHoursArray.map(table => table[0][0].split('&C=')[0]);
+            btnBookOfHours.prayersArray = [...bookOfHoursArray, ...CommonPrayersArray];
         }
+        btnBookOfHours.prayers = bookOfHoursArray.map(table => table[0][0].split('&C=')[0]);
+        let kenini = Prefix.commonPrayer + 'NowAlwaysAndForEver&D=0000', zoksaPatri = Prefix.commonPrayer + 'GloryToTheFatherTheSonAndTheSpirit&D=0000', gospelEnd = Prefix.bookOfHours + 'GospelEnd&D=0000', Hallelujah = Prefix.bookOfHours + '+PsalmEnd&D=0000';
+        let btnPrayers = btnBookOfHours.prayers;
+        //We will insert zoksapatri and kenin after the litanies
+        btnPrayers.map(title => {
+            if (title.includes('Litanies1&D=0000')
+                || title.includes('Litanies4&D=0000')) {
+                btnPrayers.splice(btnPrayers.indexOf(title) + 1, 0, zoksaPatri);
+            }
+            else if (title.includes('Litanies2') //second litany
+                || title.includes('Litanies5') //5th litany       
+                || (title.includes('Litanies3') && btnPrayers[btnPrayers.indexOf(title) + 1].includes('Litanies')) //3rd litany if litanies are > 3
+            ) {
+                btnPrayers.splice(btnPrayers.indexOf(title) + 1, 0, kenini);
+            }
+            else if (title.includes('Gospel&D=')) {
+                //Inserting the Gosepl End
+                if (btnPrayers[btnPrayers.indexOf(title) + 1] != gospelEnd) {
+                    btnPrayers.splice(btnPrayers.indexOf(title) + 1, 0, gospelEnd);
+                }
+                ;
+            }
+            else if (title.includes('Psalm')) {
+                if (btnPrayers[btnPrayers.indexOf(title) + 1] != Hallelujah) {
+                    btnPrayers.splice(btnPrayers.indexOf(title) + 1, 0, Hallelujah);
+                }
+                ;
+            }
+        });
         return btnBookOfHours.prayersArray;
     }
 });
@@ -1237,44 +1250,40 @@ let btns = [
  * @param {Button[]} btns - a list of Button for each we will create an inline redirection html button
  * @param {InsertPosition} position - the position where the newly created div containing the html elements, will be placed compared to targetEelement
  */
-function redirectToAnotherMass(targetElement, btns, position) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (!targetElement)
-            return;
-        let redirectTo = [];
-        btns.map((btn) => {
-            //for each button in the btns array, we will create a fake Button and will set its onClick property to a function that retrieves the text of the concerned mass
-            let newBtn = new Button({
-                btnID: "GoTo" + targetElement.dataset.root + "From" + btn.rootID,
-                label: {
-                    AR: btn.label.AR,
-                    FR: btn.label.FR,
-                },
-                cssClass: inlineBtnClass,
-                onClick: () => {
-                    showChildButtonsOrPrayers(btn); //We simulated as if btn itself has been clicked, which will show all its prayers, children, etc.
-                    if (containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root))) {
-                        //if there is an element in containerDiv having the same data-root as targetElement
-                        let target = containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root));
-                        if (!target.id)
-                            target.id = "redirectedTo" + btn.btnID; //if it hasn't an id, we will give it one
-                        createFakeAnchor(target.id);
-                    }
-                },
-            });
-            redirectTo.push(newBtn);
+async function redirectToAnotherMass(targetElement, btns, position) {
+    if (!targetElement)
+        return;
+    let redirectTo = [];
+    btns.map((btn) => {
+        //for each button in the btns array, we will create a fake Button and will set its onClick property to a function that retrieves the text of the concerned mass
+        let newBtn = new Button({
+            btnID: "GoTo" + targetElement.dataset.root + "From" + btn.rootID,
+            label: {
+                AR: btn.label.AR,
+                FR: btn.label.FR,
+            },
+            cssClass: inlineBtnClass,
+            onClick: () => {
+                showChildButtonsOrPrayers(btn); //We simulated as if btn itself has been clicked, which will show all its prayers, children, etc.
+                if (containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root))) {
+                    //if there is an element in containerDiv having the same data-root as targetElement
+                    let target = containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root));
+                    if (!target.id)
+                        target.id = "redirectedTo" + btn.btnID; //if it hasn't an id, we will give it one
+                    createFakeAnchor(target.id);
+                }
+            },
         });
-        insertRedirectionButtons(targetElement, redirectTo, position);
+        redirectTo.push(newBtn);
     });
+    insertRedirectionButtons(targetElement, redirectTo, position);
 }
 /**
  * Scrolls to the top of containerDiv
  */
-function scrollToTop() {
-    return __awaiter(this, void 0, void 0, function* () {
-        //We scroll to the beginning of the page after the prayers have been displayed
-        createFakeAnchor(containerDiv.id);
-    });
+async function scrollToTop() {
+    //We scroll to the beginning of the page after the prayers have been displayed
+    createFakeAnchor(containerDiv.id);
 }
 /**
  * Retrieves the gospel of the Vespers office by the date of the day following the current date. We need this because the date of the gospel is not the date of the date of the Vespers office in which it is read, but the date of the next day
@@ -1294,71 +1303,69 @@ function getVespersGospel(prayers) {
         return prayers;
     }
 }
-function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (new Map(JSON.parse(localStorage.showActors)).get("Diacon") == false) {
-            alert("Diacon Prayers are set to hidden, we cannot show the gospel");
-            return;
-        } //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
-        let gospelRespHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelResponse&D=0000')); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
-        let psalmReadingHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer +
-            "GospelIntroductionPart2&D=0000".replace(/Part\d+/, "")))[4]; //This is the html element after which we will insert the psalm
-        let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
-        let root;
-        //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
-        let g = goseplReadingsArray.filter((table) => table[0][0].split("&C=")[0] == responses[1] + copticReadingsDate ||
-            table[0][0].split("&C=")[0] == responses[2] + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
-        if (g.length < 1) {
-            return;
-        } //if no readings are returned from the filtering process, then we end the function
-        let position = {
-            beforeOrAfter: "beforebegin",
-            el: psalmReadingHtml,
-        };
-        g.map((table) => {
-            root = table[0][0].split("&C=")[0]; //this is the title of the table without any '&C=*' at its end
-            table.map((row) => {
-                if (row[0].includes("Gospel&D=")) {
-                    position.beforeOrAfter = "beforebegin";
-                    position.el = gospelRespHtml[0];
-                }
-                //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
-                createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
-            });
-        });
-        //We will insert the Psalm response
-        (function insertPsalmResponse() {
-            let gospelPrayer = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelPrayer&D=0000'));
-            let psalmResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split("&C=")[0] == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-            insertResponse(psalmResp, {
-                beforeOrAfter: "afterend",
-                el: gospelPrayer[gospelPrayer.length - 1],
-            });
-        })();
-        //We will now insert the Gospel response
-        (function insertGospeResponse() {
-            let gospelResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split("&C=")[0] == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-            if (!gospelResp)
-                return;
-            insertResponse(gospelResp, {
-                beforeOrAfter: "beforebegin",
-                el: gospelRespHtml[0],
-            });
-            gospelRespHtml.forEach((html) => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
-        })();
-        function insertResponse(filteredResp, position) {
-            if (filteredResp.length > 0) {
-                //if a gospel response is found
-                root = filteredResp[0][0][0].split("&C=")[0];
-                filteredResp.map((table) => {
-                    table.map((row) => {
-                        //for each row in the gospel response table that we retrieved, we wil create an html element and will insert it before responseHtml
-                        createHtmlElementForPrayer(root, row, prayersLanguages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
-                    });
-                });
+async function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
+    if (new Map(JSON.parse(localStorage.showActors)).get("Diacon") == false) {
+        alert("Diacon Prayers are set to hidden, we cannot show the gospel");
+        return;
+    } //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
+    let gospelRespHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelResponse&D=0000')); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
+    let psalmReadingHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer +
+        "GospelIntroductionPart2&D=0000".replace(/Part\d+/, "")))[4]; //This is the html element after which we will insert the psalm
+    let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
+    let root;
+    //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
+    let g = goseplReadingsArray.filter((table) => table[0][0].split("&C=")[0] == responses[1] + copticReadingsDate ||
+        table[0][0].split("&C=")[0] == responses[2] + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
+    if (g.length < 1) {
+        return;
+    } //if no readings are returned from the filtering process, then we end the function
+    let position = {
+        beforeOrAfter: "beforebegin",
+        el: psalmReadingHtml,
+    };
+    g.map((table) => {
+        root = table[0][0].split("&C=")[0]; //this is the title of the table without any '&C=*' at its end
+        table.map((row) => {
+            if (row[0].includes("Gospel&D=")) {
+                position.beforeOrAfter = "beforebegin";
+                position.el = gospelRespHtml[0];
             }
-        }
+            //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
+            createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
+        });
     });
+    //We will insert the Psalm response
+    (function insertPsalmResponse() {
+        let gospelPrayer = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelPrayer&D=0000'));
+        let psalmResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split("&C=")[0] == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+        insertResponse(psalmResp, {
+            beforeOrAfter: "afterend",
+            el: gospelPrayer[gospelPrayer.length - 1],
+        });
+    })();
+    //We will now insert the Gospel response
+    (function insertGospeResponse() {
+        let gospelResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split("&C=")[0] == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+        if (!gospelResp)
+            return;
+        insertResponse(gospelResp, {
+            beforeOrAfter: "beforebegin",
+            el: gospelRespHtml[0],
+        });
+        gospelRespHtml.forEach((html) => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
+    })();
+    function insertResponse(filteredResp, position) {
+        if (filteredResp.length > 0) {
+            //if a gospel response is found
+            root = filteredResp[0][0][0].split("&C=")[0];
+            filteredResp.map((table) => {
+                table.map((row) => {
+                    //for each row in the gospel response table that we retrieved, we wil create an html element and will insert it before responseHtml
+                    createHtmlElementForPrayer(root, row, prayersLanguages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
+                });
+            });
+        }
+    }
 }
 function showFractionsMasterButton(btn) {
     let selected = [], filtered;
@@ -1456,79 +1463,73 @@ function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
  * @param {boolean} remove - indicates whether to delete or not all the elements having the same data-root
  * @returns
  */
-function insertCymbalVersesForFeastsAndSeasons(param) {
-    return __awaiter(this, void 0, void 0, function* () {
-        if (!param.coptDate)
-            param.coptDate = copticDate;
-        if (!param.position)
-            param.position = "beforebegin";
-        if (!param.remove)
-            param.remove = false;
-        let dataRoot = getDataRootSelector(Prefix.commonIncense + 'CymbalVerses', true);
-        //Retrieving the 1st Title in the Cymbal Verses section
-        let cymbalsTitle = containerDiv.querySelectorAll(dataRoot)[0];
-        //Retrieving the cymbal vereses of the feast or season
-        if (!param.cymbalVerses) {
-            param.cymbalVerses = cymbalVersesArray.filter((tbl) => eval(tbl[0][0].split("&D=")[1].split("&C=")[0].replace("$", "")) ==
-                param.coptDate);
-        }
-        if (!cymbalsTitle || !param.cymbalVerses)
-            return;
-        if (param.coptDate in lordGreatFeasts) {
-            let endCymbals = cymbalVersesArray.filter((tbl) => tbl[0][0].split("&C=")[0] ==
-                Prefix.cymbalVerses + "LordFeastsEnd&D=0000");
-            if (param.coptDate == copticFeasts.Resurrection ||
-                param.coptDate == copticFeasts.Ascension ||
-                param.coptDate == copticFeasts.Pentecoste) {
-                //Inserting the special Cymbal Verse for St. Maykel
-                param.cymbalVerses = [
-                    ...param.cymbalVerses,
-                    ...cymbalVersesArray.filter((tbl) => tbl[0][0].split("&C=")[0] ==
-                        Prefix.cymbalVerses + "StMaykel&D=$copticFeasts.Resurrection "),
-                ];
-            }
-            if (endCymbals) {
-                param.cymbalVerses = [...param.cymbalVerses, ...endCymbals];
-            }
-        }
-        insertPrayersAdjacentToExistingElement(param.cymbalVerses, btnIncenseDawn.languages, {
-            beforeOrAfter: param.position,
-            el: cymbalsTitle,
-        });
-        if (param.remove) {
-            containerDiv
-                .querySelectorAll(getDataRootSelector(cymbalsTitle.getAttribute("data-root")))
-                .forEach((el) => el.remove());
-        }
-    });
-}
-function insertDoxologiesForFeastsAndSeasons(param) {
-    return __awaiter(this, void 0, void 0, function* () {
-        let doxology;
-        doxology = DoxologiesPrayersArray.filter((d) => eval(d[0][0].split("&D=")[1].split("&C=")[0].replace("$", "")) ==
+async function insertCymbalVersesForFeastsAndSeasons(param) {
+    if (!param.coptDate)
+        param.coptDate = copticDate;
+    if (!param.position)
+        param.position = "beforebegin";
+    if (!param.remove)
+        param.remove = false;
+    let dataRoot = getDataRootSelector(Prefix.commonIncense + 'CymbalVerses', true);
+    //Retrieving the 1st Title in the Cymbal Verses section
+    let cymbalsTitle = containerDiv.querySelectorAll(dataRoot)[0];
+    //Retrieving the cymbal vereses of the feast or season
+    if (!param.cymbalVerses) {
+        param.cymbalVerses = cymbalVersesArray.filter((tbl) => eval(tbl[0][0].split("&D=")[1].split("&C=")[0].replace("$", "")) ==
             param.coptDate);
-        //If we are during the Great Lent, we will select the doxologies according to whether the day is a Saturday or a Sunday, or an ordinary week day
-        if (param.coptDate == Seasons.GreatLent) {
-            if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
-                //We are during the Great Lent and the day is a Saturday or a Sunday
-                doxology = doxology.filter((d) => /GreatLentSundays\&D\=/.test(d[0][0]) == true);
-            }
-            else {
-                doxology = doxology.filter((d) => /GreatLentWeek\d{1}\&D\=/.test(d[0][0]) == true);
-            }
+    }
+    if (!cymbalsTitle || !param.cymbalVerses)
+        return;
+    if (param.coptDate in lordGreatFeasts) {
+        let endCymbals = cymbalVersesArray.filter((tbl) => tbl[0][0].split("&C=")[0] ==
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000");
+        if (param.coptDate == copticFeasts.Resurrection ||
+            param.coptDate == copticFeasts.Ascension ||
+            param.coptDate == copticFeasts.Pentecoste) {
+            //Inserting the special Cymbal Verse for St. Maykel
+            param.cymbalVerses = [
+                ...param.cymbalVerses,
+                ...cymbalVersesArray.filter((tbl) => tbl[0][0].split("&C=")[0] ==
+                    Prefix.cymbalVerses + "StMaykel&D=$copticFeasts.Resurrection "),
+            ];
         }
-        if (doxology) {
-            insertPrayersAdjacentToExistingElement(doxology, btnIncenseDawn.languages, {
-                beforeOrAfter: "beforebegin",
-                el: containerDiv.querySelectorAll(getDataRootSelector(Prefix.incenseDawn + 'DoxologyWatesStMary&D=0000'))[0],
-            });
+        if (endCymbals) {
+            param.cymbalVerses = [...param.cymbalVerses, ...endCymbals];
         }
+    }
+    insertPrayersAdjacentToExistingElement(param.cymbalVerses, btnIncenseDawn.languages, {
+        beforeOrAfter: param.position,
+        el: cymbalsTitle,
     });
-}
-function removeElementsByTheirDataRoot(dataRoot) {
-    return __awaiter(this, void 0, void 0, function* () {
+    if (param.remove) {
         containerDiv
-            .querySelectorAll(getDataRootSelector(dataRoot))
+            .querySelectorAll(getDataRootSelector(cymbalsTitle.getAttribute("data-root")))
             .forEach((el) => el.remove());
-    });
+    }
+}
+async function insertDoxologiesForFeastsAndSeasons(param) {
+    let doxology;
+    doxology = DoxologiesPrayersArray.filter((d) => eval(d[0][0].split("&D=")[1].split("&C=")[0].replace("$", "")) ==
+        param.coptDate);
+    //If we are during the Great Lent, we will select the doxologies according to whether the day is a Saturday or a Sunday, or an ordinary week day
+    if (param.coptDate == Seasons.GreatLent) {
+        if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
+            //We are during the Great Lent and the day is a Saturday or a Sunday
+            doxology = doxology.filter((d) => /GreatLentSundays\&D\=/.test(d[0][0]) == true);
+        }
+        else {
+            doxology = doxology.filter((d) => /GreatLentWeek\d{1}\&D\=/.test(d[0][0]) == true);
+        }
+    }
+    if (doxology) {
+        insertPrayersAdjacentToExistingElement(doxology, btnIncenseDawn.languages, {
+            beforeOrAfter: "beforebegin",
+            el: containerDiv.querySelectorAll(getDataRootSelector(Prefix.incenseDawn + 'DoxologyWatesStMary&D=0000'))[0],
+        });
+    }
+}
+async function removeElementsByTheirDataRoot(dataRoot) {
+    containerDiv
+        .querySelectorAll(getDataRootSelector(dataRoot))
+        .forEach((el) => el.remove());
 }

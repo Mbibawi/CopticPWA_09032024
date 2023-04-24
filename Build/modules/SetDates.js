@@ -1,38 +1,27 @@
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
 setCopticDates();
 /**
  * a function that runs at the beginning and sets some global dates like the coptic date (as a string), today's Gregorian date (as a Date), the day of the week (as a number), the Season (a string), etc.
  * @param {Date} today  - a Gregorian date provided by the user or set automatically to the date of today if missing
  */
-function setCopticDates(today) {
-    return __awaiter(this, void 0, void 0, function* () {
-        today ? (todayDate = today) : (todayDate = new Date());
-        weekDay = todayDate.getDay();
-        copticDate = convertGregorianDateToCopticDate(todayDate);
-        Season = Seasons.NoSeason; //this will be its default value unless it is changed by another function;
-        copticMonth = copticDate.slice(2, 4);
-        copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
-        copticDay = copticDate.slice(0, 2);
-        isFast = (() => {
-            if (copticFasts.indexOf(Season) > -1 || (Season != Seasons.PentecostalDays && weekDay == (3 || 5))) {
-                //i.e. if we are in a fasting day 
-                return true;
-            }
-            else {
-                return false;
-            }
-            ;
-        })();
-        showDates();
-    });
+async function setCopticDates(today) {
+    today ? (todayDate = today) : (todayDate = new Date());
+    weekDay = todayDate.getDay();
+    copticDate = convertGregorianDateToCopticDate(todayDate);
+    Season = Seasons.NoSeason; //this will be its default value unless it is changed by another function;
+    copticMonth = copticDate.slice(2, 4);
+    copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
+    copticDay = copticDate.slice(0, 2);
+    isFast = (() => {
+        if (copticFasts.indexOf(Season) > -1 || (Season != Seasons.PentecostalDays && weekDay == (3 || 5))) {
+            //i.e. if we are in a fasting day 
+            return true;
+        }
+        else {
+            return false;
+        }
+        ;
+    })();
+    showDates();
 }
 ;
 /**
