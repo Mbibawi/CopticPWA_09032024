@@ -242,6 +242,7 @@ async function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, c
 function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (!btn)
         return;
+    //if (eval(localStorage.editingMode)) console.log(editingMode(testEditingArray));
     let btnsDiv = leftSideBar.querySelector("#sideBarBtns");
     hideInlineButtonsDiv();
     if (clear) {
@@ -1375,6 +1376,30 @@ function showSettingsPanel() {
             }
         });
     })();
+    (async function showEditingModeBtn() {
+        if (localStorage.editingMode != 'true')
+            return;
+        let displayContainer = document.createElement("div");
+        displayContainer.style.display = "grid";
+        displayContainer.style.gridTemplateColumns = String((100 / 3).toString() + "%").repeat(3);
+        inlineBtnsDiv.appendChild(displayContainer);
+        btn = createBtn("button", "button", "settingsBtn", "Editing Mode", displayContainer, 'editingMode' + localStorage.editingMode.toString(), undefined, undefined, undefined, undefined, {
+            event: "click",
+            fun: () => {
+                //localStorage.editingMode = String(!eval(localStorage.editingMode));
+                //let b = displayContainer.children[0];
+                // localStorage.editingMode !=  'true'
+                //  ? b.classList.add("langBtnAdd")
+                // : b.classList.remove("langBtnAdd");
+                let tablesArray = eval(prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray'));
+                if (tablesArray) {
+                    editingMode(eval(tablesArray));
+                    hideInlineButtonsDiv();
+                }
+                ;
+            }
+        });
+    })();
     function createBtn(tag, role = tag, btnClass, innerText, parent, id, dataSet, type, size, backgroundColor, onClick) {
         let btn = document.createElement(tag);
         if (role) {
@@ -1646,9 +1671,11 @@ function replaceClass(prayersArray, newClass) {
     });
 }
 async function replaceEigthNote(code = 9834) {
+    if (!containerDiv.children)
+        return;
     let note = String.fromCharCode(code), replaceWith = '<span class="eigthNote">' + note + '</span>';
-    containerDiv.querySelectorAll('p').forEach(p => {
-        if (p.innerText.includes(note)) {
+    containerDiv.querySelectorAll('p.Diacon').forEach((p) => {
+        if (p && p.innerText.includes(note)) {
             p.innerHTML = p.innerHTML.replaceAll(note, replaceWith);
         }
     });

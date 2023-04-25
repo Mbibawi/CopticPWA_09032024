@@ -1099,9 +1099,10 @@ const btnBookOfHours = new Button({
         else {
             btnBookOfHours.prayersArray = [...bookOfHoursArray, ...CommonPrayersArray];
         }
-        btnBookOfHours.prayers = bookOfHoursArray.map(table => table[0][0].split('&C=')[0]);
         let kenini = Prefix.commonPrayer + 'NowAlwaysAndForEver&D=0000', zoksaPatri = Prefix.commonPrayer + 'GloryToTheFatherTheSonAndTheSpirit&D=0000', gospelEnd = Prefix.bookOfHours + 'GospelEnd&D=0000', Hallelujah = Prefix.bookOfHours + '+PsalmEnd&D=0000';
+        btnBookOfHours.prayers = bookOfHoursArray.map(table => table[0][0].split('&C=')[0]);
         let btnPrayers = btnBookOfHours.prayers;
+        btnPrayers.unshift(Prefix.commonPrayer + 'ThanksGivingPart1&D=0000', Prefix.commonPrayer + 'ThanksGivingPart2&D=0000', Prefix.commonPrayer + 'ThanksGivingPart3&D=0000', Prefix.commonPrayer + 'ThanksGivingPart4&D=0000', Prefix.bookOfHours + 'AnyHourPsalm50&D=0000');
         //We will insert zoksapatri and kenin after the litanies
         btnPrayers.map(title => {
             if (title.includes('Litanies1&D=0000')
@@ -1126,6 +1127,9 @@ const btnBookOfHours = new Button({
                     btnPrayers.splice(btnPrayers.indexOf(title) + 1, 0, Hallelujah);
                 }
                 ;
+            }
+            else if (title.includes('EndOfHourPrayer&D=')) {
+                btnPrayers.splice(btnPrayers.indexOf(title), 0, btnPrayers[0], btnPrayers[1]);
             }
         });
         return btnBookOfHours.prayersArray;

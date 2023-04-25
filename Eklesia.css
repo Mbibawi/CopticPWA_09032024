@@ -480,3 +480,11 @@ div.ReadingEnd{
   font-weight: bold !important;
   font-size: 18pt !important;
 }
+.btnEditing{
+  width: 10vmax !important;
+}
+.btnsDiv{
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100%;
+}
