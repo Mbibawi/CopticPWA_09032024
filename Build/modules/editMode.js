@@ -83,18 +83,18 @@ function createEditingButton(btnHtml, fun, label) {
     btnHtml.addEventListener('click', () => fun());
 }
 function exportShadowArray(shadowArray) {
-    let htmlRows = containerDiv.querySelectorAll('.TargetRow'), htmlRow, rowIndex, table, row, filtered, title;
+    let htmlRows = containerDiv.querySelectorAll('.TargetRow'), htmlRow, rowIndex, table, updated, filtered, title;
     for (let i = 0; i < htmlRows.length; i++) {
         //for each div with class = TargetRow
         htmlRow = htmlRows[i];
-        if (title && htmlRow.dataset.root.split('&C=')[0] == title.split('&C=')[0])
-            continue; //if the next html element has the same data-root as the previous one, we jumb to the next until we have a div with a diffrent data-root. This is because we are updating the whole table at once
+        if (updated.indexOf(baseTitle(htmlRow.dataset.root)) < 0)
+            continue; //if the title is in the updated[] array, it means that this table has already been updated, we move to the next html element
         title = htmlRow.dataset.root;
-        filtered = shadowArray.filter(tbl => tbl[0][0] == title); //We search for a table in the shadowARray having the same title as the data-root of the htmlRow
+        filtered = shadowArray.filter(tbl => baseTitle(tbl[0][0]) == baseTitle(title)); //We search for a table in the shadowARray having the same title as the data-root of the htmlRow
         if (filtered.length == 1) {
             //we found a table having the same title, we will retrieve all the html div elements matching the table title
             table = filtered[0];
-            let allRows = containerDiv.querySelectorAll(getDataRootSelector(title.split('&C=')[0], true));
+            let allRows = containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true));
             for (let s = 0; s < allRows.length; s++) {
                 if (allRows[s].dataset.isNewRow) {
                     //it means this is a row we have added, we ad a new row to the table at s 
@@ -109,6 +109,7 @@ function exportShadowArray(shadowArray) {
                     //it means no rows added or deleted, we modify table[s]
                     table[s] = editRow(allRows[s]);
                 }
+                updated.push(title);
             }
         }
         else if (filtered.length == 0) {
