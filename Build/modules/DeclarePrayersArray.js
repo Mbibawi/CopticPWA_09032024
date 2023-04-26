@@ -13942,7 +13942,7 @@ PrayersArray = [
         [
             Prefix.bookOfHours + "6thHourPsalm84&D=0000&C=NoActor",
             " ",
-            "Tu as aimé, Seigneur, cette terre, tu as fait revenir les déportés de Jacob ; tu as ôté le péché de ton peuple, tu as couvert toute sa faute ; tu as mis fin à toutes tes colères, tu es revenu de ta grande fureur.",
+            " ",
             " ",
             "رضيتَ يا رب عن أرضك، رددتَ سبى يعقوب. غفرتَ آثام شعبك، سترتَ جميع خطاياهم. حللتَ كل رجزك، رجعتَ عن سخط غضبك. ",
         ],
