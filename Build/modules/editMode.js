@@ -271,7 +271,7 @@ function addTableToSequence(htmlRow) {
     if (document.getElementById('showSequence')) {
         let tableRows = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(htmlRow.dataset.root), true)));
         tableRows.forEach((row) => {
-            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map(p => p.innerText), ['AR', 'FR'], ['AR', 'FR'], row.dataset.root.split('&C=')[1], document.getElementById('showSequence'));
+            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map(p => p.innerText), ['AR', foreingLanguage], ['AR', foreingLanguage], row.dataset.root.split('&C=')[1], document.getElementById('showSequence'));
         });
         setCSSGridTemplate(document.getElementById('showSequence').querySelectorAll('.TargetRow'));
     }
@@ -311,7 +311,7 @@ function showSequence(sequenceArray = sequence, container = containerDiv) {
     sequenceArray.forEach(title => {
         tableRows = container.querySelectorAll(getDataRootSelector(title, true));
         tableRows.forEach(row => {
-            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map((p) => p.innerText), ['AR', 'FR'], ['AR', 'FR'], row.dataset.root.split('&C=')[1], newDiv);
+            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map((p) => p.innerText), ['AR', foreingLanguage], ['AR', foreingLanguage], row.dataset.root.split('&C=')[1], newDiv);
         });
         setCSSGridTemplate(newDiv.querySelectorAll('.TargetRow'));
     });
@@ -344,6 +344,41 @@ function splitParagraphsToTheRowsBelow(title, lang) {
     let splitted = text.split('\n');
     let clean = splitted.filter(t => t != '');
     for (let i = 1; i < allRows.length; i++) {
+        //@ts-ignore
         allRows[i].querySelectorAll('p[data-lang="' + lang + '"')[0].innerText = clean[i - 1];
+    }
+}
+function cleanPrayersArray(title) {
+    let repeated = PrayersArray.filter(table => baseTitle(table[0][0]) == title);
+    if (repeated.length > 1)
+        PrayersArray.splice(PrayersArray.indexOf(repeated[1]), 1);
+    if (repeated.length == 1 && repeated[0].length > 1) {
+        for (let i = 1; i < repeated[0].length; i++) {
+            if (repeated[0][i][0].endsWith('Title')) {
+                repeated[0].splice(i, repeated[0].length - 1);
+                cleanPrayersArray(title);
+                return;
+            }
+        }
+    }
+}
+function cleanPrayersArrayAllFractionsAndCymbal() {
+    process(Prefix.cymbalVerses);
+    process(Prefix.fractionPrayer);
+    function process(title) {
+        let repeated = PrayersArray.filter(table => baseTitle(table[0][0]).startsWith(title));
+        if (repeated.length > 1) {
+            PrayersArray.splice(PrayersArray.indexOf(repeated[1]), 1);
+        }
+        ;
+        if (repeated.length == 1 && repeated[0].length > 1) {
+            for (let i = 1; i < repeated[0].length; i++) {
+                if (repeated[0][i][0].endsWith('Title')) {
+                    repeated[0].splice(i, repeated[0].length - 1);
+                    cleanPrayersArray(title);
+                    return;
+                }
+            }
+        }
     }
 }

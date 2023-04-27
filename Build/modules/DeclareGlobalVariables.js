@@ -170,16 +170,17 @@ const saintsFeasts = {
     stBishoyKamel: '',
     stBishoy: '',
 };
-const allLanguages = ['AR', 'FR', 'COP', 'CA', 'CF', 'EN']; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
-const userLanguages = ['AR', 'FR', 'COP'];
+const foreingLanguage = 'FR';
+const allLanguages = ['AR', foreingLanguage, 'COP', 'CA', 'CF', 'EN']; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
+const userLanguages = ['AR', foreingLanguage, 'COP'];
 //if (localStorage.userLanguages) { console.log('there is user Lanugages', localStorage.userLanguages) };
 //if (localStorage.showActors) { console.log('there is showActors', localStorage.showActors) };
 if (localStorage.userLanguages === undefined) {
     localStorage.userLanguages = JSON.stringify(userLanguages);
 }
 ; //We check that there isn't already a setting stored in the localStorage
-const prayersLanguages = ['COP', 'FR', 'CA', 'AR'];
-const readingsLanguages = ['AR', 'FR', 'EN'];
+const prayersLanguages = ['COP', foreingLanguage, 'CA', 'AR'];
+const readingsLanguages = ['AR', foreingLanguage, 'EN'];
 const displayModes = ['Normal', 'Presentation', 'Priest'];
 const CommonPrayersArray = []; //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
 const MassCommonPrayersArray = []; //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)

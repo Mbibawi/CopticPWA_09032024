@@ -1524,7 +1524,7 @@ async function insertCymbalVersesForFeastsAndSeasons(param) {
     let cymbalsTitle = containerDiv.querySelectorAll(dataRoot)[0];
     //Retrieving the cymbal vereses of the feast or season
     if (!param.cymbalVerses) {
-        param.cymbalVerses = cymbalVersesArray.filter((tbl) => eval(baseTitle(tbl[0][0].split("&D=")[1]).replace("$", "")) ==
+        param.cymbalVerses = cymbalVersesArray.filter((tbl) => eval(baseTitle(tbl[0][0]).split("&D=")[1].replace("$", "")) ==
             param.coptDate);
     }
     if (!cymbalsTitle || !param.cymbalVerses)
@@ -1532,9 +1532,9 @@ async function insertCymbalVersesForFeastsAndSeasons(param) {
     if (param.coptDate in lordGreatFeasts) {
         let endCymbals = cymbalVersesArray.filter((tbl) => baseTitle(tbl[0][0]) ==
             Prefix.cymbalVerses + "LordFeastsEnd&D=0000");
-        if (param.coptDate == copticFeasts.Resurrection ||
-            param.coptDate == copticFeasts.Ascension ||
-            param.coptDate == copticFeasts.Pentecoste) {
+        if (param.coptDate == copticFeasts.Resurrection
+            || param.coptDate == copticFeasts.Ascension
+            || param.coptDate == copticFeasts.Pentecoste) {
             //Inserting the special Cymbal Verse for St. Maykel
             param.cymbalVerses = [
                 ...param.cymbalVerses,
