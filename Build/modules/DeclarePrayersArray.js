@@ -1,4 +1,5 @@
-PrayersArray = [[
+PrayersArray = [
+    [
         [
             Prefix.commonIncense + "EleysonImasComment&D=0000&C=Comment",
             "",
@@ -30,36 +31,6 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.commonIncense + "EleysonImasNewTable&D=0000&C=Title",
-            "Insert Here Your Text COP",
-            "Insert Here Your Text FR",
-            "Insert Here Your Text CA",
-            " Insert Here Your Text AR",
-        ],
-        [
-            Prefix.commonIncense + "EleysonImasNewTable&D=0000&C=Priest",
-            "Insert Here Your Text COP",
-            "Insert Here Your Text FR",
-            "Insert Here Your Text CA",
-            "Insert Here Your Text AR",
-        ],
-        [
-            Prefix.commonIncense + "EleysonImasNewTable&D=0000&C=Diacon",
-            "Insert Here Your Text COP",
-            "Insert Here Your Text FR",
-            "Insert Here Your Text CA",
-            "Insert Here Your Text AR",
-        ],
-        [
-            Prefix.commonIncense + "EleysonImasNewTable&D=0000&C=Diacon",
-            "Insert Here Your Text COP",
-            "Insert Here Your Text FR",
-            "Insert Here Your Text CA",
-            "Insert Here Your Text AR",
-        ],
-    ],
-    [
-        [
             Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Title",
             "Ϫⲉ Ⲡⲉⲛⲓⲱⲧ",
             "Notre Père qui es aux cieux",
@@ -72,13 +43,6 @@ PrayersArray = [[
             "Notre Père qui es aux cieux, Que Ton Nom soit sanctifié. Que Ton règne vienne. Que Ta volonté soit faite sur la terre comme au ciel.",
             "جي بنيوت إتخين نيفيئوي ماريفطوفو أنجي بيكران. ماريسئي إنجي تيكميتؤرو. بيتهيناك ماريف شوبي إم إفريتي خين أتفي نيم هيجين بي كاهي.",
             "أبانا الذى في السموات، ليتقدس اسمك، ليأت ملكوتك. لتكن مشيئتك كما فى السماء كذلك على الأرض.",
-        ],
-        [
-            Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Assembly",
-            "Insert Here Your Text COP",
-            "Insert Here Your Text FR",
-            "Insert Here Your Text CA",
-            "Insert Here Your Text AR",
         ],
         [
             Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Assembly",
@@ -295,7 +259,9 @@ PrayersArray = [[
         [
             Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
             "",
-            "نسجد لك أيها المسيح مع أبيك الصالح والروح القدس لأنك " + giaki.AR + " وخلصتنا؛",
+            "نسجد لك أيها المسيح مع أبيك الصالح والروح القدس لأنك " +
+                giaki.AR +
+                " وخلصتنا؛",
         ],
         [
             Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
@@ -519,10 +485,18 @@ PrayersArray = [[
         ],
         [
             Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-            "Ⲉⲑⲣⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
-            "Afin que nous Te louions avec Ton Père très bon et le Saint Esprit♪ car Tu " + giaki.FR + " et Tu nous as sauvés.",
-            "اثرين هوس♪ إروك♪ نيم بيكيوت إن أغاثوس♪ نيم بي إبنيفما إثؤواب جي " + giaki.CA + " آكسوتي إممون ناي نان.",
-            "لكى نسبحك مع، أبيك♪ الصالح والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا أرحمنا.",
+            "Ⲉⲑⲣⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
+            "Afin que nous Te louions avec Ton Père très bon et le Saint Esprit♪ car Tu " +
+                giaki.FR +
+                " et Tu nous as sauvés.",
+            "اثرين هوس♪ إروك♪ نيم بيكيوت إن أغاثوس♪ نيم بي إبنيفما إثؤواب جي " +
+                giaki.CA +
+                " آكسوتي إممون ناي نان.",
+            "لكى نسبحك مع، أبيك♪ الصالح والروح القدس♪ لأنك " +
+                giaki.AR +
+                " وخلصتنا أرحمنا.",
         ],
     ],
     [
@@ -832,7 +806,8 @@ PrayersArray = [[
             "يدور الكاهن حول المذبح دورة واحدة وينزل فيعطي البخور أمام الهيكل كما سبق. ثم يعطي البخور للإنجيل الذي على المنجلية (القطمارس) قائلا:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "السلام لربنا يسوع المسيح.",
         ],
@@ -842,7 +817,8 @@ PrayersArray = [[
             "ثم يعطي البخور لأجساد القديسين إن وجدت بالكنيسة وهو يقول:",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "السلام للقديس العظيم (.....) اطلب من الرب عنا ليغفر لنا خطايانا.",
         ],
@@ -852,7 +828,8 @@ PrayersArray = [[
             "ثم يقبل رفات القديسين. إذا كان الأب البطريرك أو المطران أو الأسقف حاضراً يعطيه البخور ثلاث أياد. أول يد للآب البطريرك بعدما يقبل الصليب الذي بيده يقول في اليد الأولى:",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "الرب يحفظ حياة وقيام أبينا المكرم الباب (أو المطران أو الأسقف) أنبا (....).",
         ],
@@ -862,7 +839,8 @@ PrayersArray = [[
             "وفي اليد الثانية:",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "حفظاً احفظه لنا سنين كثيرة وأزمنة سالمة.",
         ],
@@ -872,7 +850,8 @@ PrayersArray = [[
             "وفي اليد الثالثة:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "وأخضع جميع أعدائه تحت قدميه سريعاً.",
         ],
@@ -882,7 +861,8 @@ PrayersArray = [[
             "ثم يقبل الصليب قائلاً:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "اطلب من المسيح عنا ليغفر لنا خطايانا. وللقمص يدان وللقس يد واحدة",
         ],
@@ -892,7 +872,8 @@ PrayersArray = [[
             "ثم يعطي البخور للشعب جميعه. يبتدئ بحري (يسار) باب الهيكل ويدور يميناً وهو يقول في بخور عشية:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "بركة بخور المساء، بركته المقدسة تكون معنا آمين.",
         ],
@@ -902,7 +883,8 @@ PrayersArray = [[
             "وفي بخور باكر:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "بركة بخور باكر، بركته المقدسة تكون معنا آمين.",
         ],
@@ -912,7 +894,8 @@ PrayersArray = [[
             "عند خروجه إلى الخورس الثاني، يقول هذه الخمسة أرباع الخشوعية تمجيداً للسيد المسيح الذي صلب عنا وفدانا بدمه الكريم:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "يسوع المسيح هو هو أمس واليوم وإلى الأبد بأقنوم واحد، نسجد له ونمجده.",
         ],
@@ -922,7 +905,8 @@ PrayersArray = [[
             "يبخر شرقاً قائلاً:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "هذا الذي أصعد ذاته ذبيحة مقبولة على الصليب عن خلاص جنسنا.",
         ],
@@ -932,7 +916,8 @@ PrayersArray = [[
             "يبخر بحرياً (يسار) قائلاً:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "فاشتمه أبوه الصالح وقت المساء على الجلجثة.",
         ],
@@ -942,7 +927,8 @@ PrayersArray = [[
             "يبخر غرباً قائلاً:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "فتح باب الفردوس ورد آدم إلى رئاسته مرة أخرى.",
         ],
@@ -952,7 +938,8 @@ PrayersArray = [[
             "يبخر قبلياً (يميناً) قائلاً:ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "من قبل صليبه وقيامته المقدسة رد الإنسان مرة أخرى إلى الفردوس.",
         ],
@@ -962,7 +949,8 @@ PrayersArray = [[
             "ثم يصعد إلى الهيكل ويعطي البخور فوق المذبح عن اعتراف الشعب جميعه وهو يقول: هذا السر (ويسمى سر الرجعة أو سر اعتراف الشعب):ـ",
         ],
         [
-            Prefix.commonIncense + "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
+            Prefix.commonIncense +
+                "IncenseOfficeDoxolgiesComment&D=0000&C=CommentText",
             "",
             "يا الله الذي قبل إليه اعتراف اللص على الصليب المكرم، اقبل إليك اعتراف شعبك. اغفر لهم جميع خطاياهم من أجل اسمك القدوس الذي دعي علينا. كرحمتك يا رب ولا كخطايانا.",
         ],
@@ -1034,7 +1022,7 @@ PrayersArray = [[
         [
             Prefix.incenseVespers + "LordKeepUsThisNightWithoutSin&D=0000&C=Assembly",
             "Ⲡϭⲟⲓⲥ ⲡⲉⲕⲛⲁⲓ ϣⲟⲡ ϣⲁ ⲉ̀ⲛⲉϩ: ⲛⲓϩ̀ⲃⲏⲟⲩⲓ̀ ⲛ̀ⲧⲉ ⲛⲉⲕϫⲓϫ Ⲡ̀ϭⲟⲓⲥ ⲙ̀ⲡⲉⲣⲭⲁⲩ ⲛ̀ⲥⲱⲕ. Ϫⲉ ⲁⲕϣⲱⲡⲓ ⲛⲁⲛ ⲛ̀ⲟⲩⲙⲁⲙ̀ⲫⲱⲧ ⲓⲥϫⲉⲛ ϫⲱⲟⲩ ϣⲁ ϫⲱⲟⲩ. Ⲁ̀ⲛⲟⲕ ⲁⲓϫⲟⲥ ϫⲉ Ⲡ̀ϭⲟⲓⲥ ⲛⲁⲓ ⲛⲏⲓ: ⲙⲁⲧⲟⲩϫⲟ ⲛ̀ⲧⲁⲯⲩⲭⲏ ϫⲉ ⲁⲓⲉⲣⲛⲟⲃⲓ ⲉ̀ⲣⲟⲕ.",
-            "Tu es béni, Seigneur, éclaire mon esprit de Ta justice. Seigneur, Ta miséricorde est éternelle. Les œuvres de Tes mains, Seigneur, ne les rejette pas. Tu es notre refuge de génération en génération. J’ai dit : \"Seigneur aie pitié de moi et guéris mon âme car j’ai péché contre Toi.",
+            'Tu es béni, Seigneur, éclaire mon esprit de Ta justice. Seigneur, Ta miséricorde est éternelle. Les œuvres de Tes mains, Seigneur, ne les rejette pas. Tu es notre refuge de génération en génération. J’ai dit : "Seigneur aie pitié de moi et guéris mon âme car j’ai péché contre Toi.',
             "",
             "مبارك أنت يا رب، أنر لي برك. يا رب رحمتك دائمة إلى الأبد. أعمال يديك يا رب لا ترفضها، لأنك صرت لي ملجأ من جيل إلى جيل. أنا طلبت الرب وقلت: ارحمني وخلص نفسي، فإني أخطأت إليك.",
         ],
@@ -1085,7 +1073,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.commonPrayer + "GloryToTheFatherTheSonAndTheSpirit&D=0000&C=Assembly",
+            Prefix.commonPrayer +
+                "GloryToTheFatherTheSonAndTheSpirit&D=0000&C=Assembly",
             "Ⲇⲟⲝⲁ ⲡⲁⲧⲣⲓ ⲕⲉ Ⲩ̀Ϯⲓⲱ ⲕⲉ ⲁⲅⲓⲱ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ",
             "Gloire au Père, au Fils et au Saint Esprit.",
             "ذوكسا باتري كي إيو، كي آجيو ابنيفماتي.",
@@ -1272,21 +1261,21 @@ PrayersArray = [[
         [
             Prefix.incenseVespers + "DoxologyVespersWatesStMary&D=0000&C=Diacon",
             "Ⲕⲁⲧⲁ ⲫ̀ⲣⲏϯ ⲉ̀ⲧⲁϥϫⲟⲥ: ⲛ̀ϫⲉ Ⲇⲁⲩⲓⲇ ϧⲉⲛ ⲡⲓⲯ̀ⲁⲗⲟⲙⲥ: ϫⲉ ⲁⲥⲟ̀ϩⲓ ⲉ̀ⲣⲁⲧⲥ ⲛ̀ϫⲉ ϯⲟⲩⲣⲱ: ⲥⲁⲟⲩⲓ̀ⲛⲁⲙ ⲙ̀ⲙⲟⲕ ⲡ̀Ⲟⲩⲣⲟ.",
-            "Et selon ce que David♪ dans le psaume, a déclaré♪ \"voici la Reine se tient♪ se tient à Ta droite ô Roi\".",
+            'Et selon ce que David♪ dans le psaume, a déclaré♪ "voici la Reine se tient♪ se tient à Ta droite ô Roi".',
             "كات إفريتي إتاف جوس♪ إنجي دافيد خين بي إبسالموس♪ جي آس أوهي إراتس إنجي تي أورو♪ سا أوينام إمموك إبؤرو.",
             "كما قال داود♪ فى المزمور♪ قامت الملكة♪ عن يمينك أيها الملك.",
         ],
         [
             Prefix.incenseVespers + "DoxologyVespersWatesStMary&D=0000&C=Diacon",
             "Ⲥⲟⲗⲟⲙⲱⲛ ⲙⲟⲩϯ ⲉⲣⲟⲥ: ϧⲉⲛ ⲡⲓϫⲱ ⲛ̀ⲧⲉ ⲛⲓϫⲱ: ϫⲉ ⲧⲁⲥⲱⲛⲓ ⲟⲩⲟϩ ⲧⲁϣ̀ⲫⲉⲣⲓ: ⲧⲁⲡⲟⲗⲓⲥ ⲙ̀ⲙⲏⲓ Ⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ.",
-            "Salomon l’a appelée♪ au Cantique des cantiques♪ \"Toi ma sœur et mon amie♪ ma vraie ville Jérusalem\".",
+            'Salomon l’a appelée♪ au Cantique des cantiques♪ "Toi ma sœur et mon amie♪ ma vraie ville Jérusalem".',
             "سولومون موتي إيروس♪ خين بيجو إنتي نيجو♪ جي تاسوني أووه تا إشفيري♪ تابوليس إممي يروساليم.",
             "سليمان دعاها♪ فى نشيد الأنشاد وقال♪ أختى صديقتى مدينتى♪ الحقيقية أورشليم.",
         ],
         [
             Prefix.incenseVespers + "DoxologyVespersWatesStMary&D=0000&C=Diacon",
             "Ⲁϥϯⲙⲏⲓⲛⲓ ⲅⲁⲣ ⲉ̀ⲣⲟⲥ: ϧⲉⲛ ϩⲁⲛⲙⲏϣ ⲛ̀ⲣⲁⲛ ⲉⲩϭⲟⲥⲓ: ϫⲉ ⲁ̀ⲙⲏ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲡⲉⲕⲏ̀ⲡⲟⲥ: ⲱ̀ ⲑⲏⲉ̀ⲧⲁⲥⲱⲧⲡ ⲛ̀ⲁ̀ⲣⲱⲙⲁⲧⲁ.",
-            "Car il l’avait désignée♪ de nombreux noms élevés♪ disant : \"sors de ton jardin Ô toi le parfum choisi\".",
+            'Car il l’avait désignée♪ de nombreux noms élevés♪ disant : "sors de ton jardin Ô toi le parfum choisi".',
             "آفتي مينين غار إروس♪ خين هانيميش إنران إفتشوسي♪ جي إمي إفول خين بيك إيبوس♪ أو ثي إتاسوتب إن أروماتا.",
             "لأنه أعطى علامة عنها♪ بأسماء كثيرة عالية♪ قائلا أخرجى من بستانك♪ أيتها العنبر المختار.",
         ],
@@ -1877,10 +1866,18 @@ PrayersArray = [[
         ],
         [
             Prefix.commonDoxologies + "Adam&D=0000&C=Diacon",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲉ̅ⲑ̅ⲩ̅: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ",
-            "Nous T'adorons ô Christ♪ avec Ton Père très bon♪ avec le Saint-Esprit♪ car Tu " + giaki.FR + " et nous sauvas.",
-            "تين أووشت إمموك أوبي إخرستوس♪ نيم بيك يوت إن أغاثوس♪ نيم بي إبنفما إثؤواب♪ " + giaki.CA + " أكسوتي إممون.",
-            "نسجد لك أيها المسيح♪ مع أبيك الصالح♪ والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا.",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲉ̅ⲑ̅ⲩ̅: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ",
+            "Nous T'adorons ô Christ♪ avec Ton Père très bon♪ avec le Saint-Esprit♪ car Tu " +
+                giaki.FR +
+                " et nous sauvas.",
+            "تين أووشت إمموك أوبي إخرستوس♪ نيم بيك يوت إن أغاثوس♪ نيم بي إبنفما إثؤواب♪ " +
+                giaki.CA +
+                " أكسوتي إممون.",
+            "نسجد لك أيها المسيح♪ مع أبيك الصالح♪ والروح القدس♪ لأنك " +
+                giaki.AR +
+                " وخلصتنا.",
         ],
     ],
     [
@@ -2705,7 +2702,7 @@ PrayersArray = [[
             "Ϣ̀ⲗⲏⲗ ⲧⲏⲣⲟⲩ: ϫⲉ Ⲕⲩⲣⲓⲉ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ.",
             "Priez tous en disant: Pitié Seigneur.",
             "",
-            "صلوا جميعاً \"يا رب ارحم.\".",
+            'صلوا جميعاً "يا رب ارحم.".',
         ],
     ],
     [
@@ -3296,7 +3293,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.commonPrayer + "PrayThatGodHaveMercyOnUsIfBishopComment1&D=0000&C=Comment",
+            Prefix.commonPrayer +
+                "PrayThatGodHaveMercyOnUsIfBishopComment1&D=0000&C=Comment",
             "Si un évêque ou un métropolite est présent, on ajoute :",
             "وفي حضور الأسقف أو المطران يضاف:",
         ],
@@ -3312,7 +3310,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "PrayThatGodHaveMercyOnUsIfBishopComment2&D=0000&C=Comment",
+            Prefix.massCommon +
+                "PrayThatGodHaveMercyOnUsIfBishopComment2&D=0000&C=Comment",
             "Ensuite il continue :",
             "ثم يكمل:",
         ],
@@ -3328,14 +3327,16 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "HisFoundationsInTheHolyMountains&D=GreatLent&C=Assembly",
+            Prefix.massCommon +
+                "HisFoundationsInTheHolyMountains&D=GreatLent&C=Assembly",
             "Ⲛⲉϥⲥⲉⲛϯ ϧⲉⲛ ⲛⲓⲧⲱⲟ̀ⲩ ⲉⲑ̅ⲩ̅. ⲀⲠⲟ̅ⲥ̅ ⲙⲉⲓ ⲛ̀ⲛⲓⲡⲩⲗⲏ ⲛ̀ⲧⲉ Ⲥⲓⲱⲛ: ⲉ̀ϩⲟⲧⲉ ⲛⲓⲙⲁ ⲛ̀ϣⲱⲡⲓ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ Ⲓⲁⲕⲱⲃ. Ⲁϥⲥⲁϫⲓ ⲉ̀ⲑⲃⲏϯ ⲛ̀ϩⲁⲛ ⲛ̀ⲃⲏⲟⲩⲓ̀ ⲉⲩⲧⲁⲓⲏⲟⲩⲧ: ϯⲃⲁⲕⲓ ⲛ̀ⲧⲉ Ⲫϯ. Ⲁⲗⲗⲏⲗⲟⲩⲓⲁ.",
             "Elle est fondée sur les montagnes saintes. L’Éternel aime les portes de Sion plus que toutes les demeures de Jacob. Des choses glorieuses ont été dites sur toi, Ville de Dieu !",
             "نيف سينتى خين نى طو أو اثؤواب، أ إبشويس ميى ان نيبى لى انتية سيون، إيهوتي نى ما انشوبى تيرو إنتية ياكوب، آفساچى اثڤيتى ان هان اهڤى أووى افطايوت، تى ڤاكى إنتية افنوتى. الليلويا.",
             "أساساته في الجبال المقدسة. يحب الرب أبواب صهيون، أفضل من جميع مساكن يعقوب. أعمال مجيدة قد قيلت عنك يا مدينة الله. هلليلويا.",
         ],
         [
-            Prefix.massCommon + "HisFoundationsInTheHolyMountains&D=GreatLent&C=Assembly",
+            Prefix.massCommon +
+                "HisFoundationsInTheHolyMountains&D=GreatLent&C=Assembly",
             "Ⲥⲓⲱⲛ ϯⲙⲁⲩ ⲛⲁϫⲟⲥ: ϫⲉ ⲟ̀ⲩⲣⲱⲙⲓ ⲛⲉⲙ ⲟ̀ⲩⲣⲱⲙⲓ ⲁϥϣⲱⲡⲓ ⲛ̀ϧⲏⲧⲥ: ⲟⲩⲟϩ ⲛ̀ⲑⲟϥ Ⲡⲉⲧϭ̀ⲟⲥⲓ: ⲁϥϩⲓⲥⲉⲛϯ ⲙ̀ⲙⲟⲥ ϣⲁ ⲉ̀ⲛⲉϩ. Ⲁⲗⲗⲏⲗⲟⲩⲓⲁ",
             "Mais de Sion il est dit : Tous y sont nés, Et c’est lui, le Très-Haut qui l’affermit. Alleluia.",
             "سيون تى ماڤ ناجوس، چية أو رومى نيم أورومى آفشوبى ان خيتس، أووة انثوف بي إتيتشوسى آف هيسنتى امموس شا اينية. الليلويا.",
@@ -3488,14 +3489,16 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "ByTheIntercessionOfStGeorgeStTheodoreStPhilopatirStMina&D=0000&C=Title",
+            Prefix.massCommon +
+                "ByTheIntercessionOfStGeorgeStTheodoreStPhilopatirStMina&D=0000&C=Title",
             "",
             "Sts Georges, Théodore, Philopatir, et Mina",
             "جورجيوس و ثيؤذوروس وفيلوباتير وأبا مينا",
             " جورجيوس و ثيؤذوروس وفيلوباتير وأبا مينا",
         ],
         [
-            Prefix.massCommon + "ByTheIntercessionOfStGeorgeStTheodoreStPhilopatirStMina&D=0000&C=Diacon",
+            Prefix.massCommon +
+                "ByTheIntercessionOfStGeorgeStTheodoreStPhilopatirStMina&D=0000&C=Diacon",
             "Ϩⲓⲧⲉⲛ ⲛⲓⲉ̀ⲩⲭⲏ ⲛ̀ⲧⲉ ⲛⲓⲁ̀ⲑⲗⲟⲫⲟⲣⲟⲥ ⲙ̀ⲙⲁⲣⲧⲩⲣⲟⲥ ⲡⲁⲟ̅ⲥ̅ Ⲡⲟⲩⲣⲟ Ⲅⲉⲱ̀ⲣⲅⲓⲟⲥ: ⲛⲉⲙ Ⲑⲉⲟ̀ⲇⲱⲣⲟⲥ ⲡⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲗⲁⲧⲏⲥ: Ⲫⲓⲗⲟⲡⲁⲧⲏⲣ Ⲙⲉⲣⲕⲟⲩⲣⲓⲟⲥ: ⲁⲃⲃⲁ Ⲙⲏⲛⲁ ⲛ̀ⲧⲉ ⲛⲓⲪⲁⲓⲁⲧ: ⲡ̀ϭⲟⲓⲥ",
             "Par les prières des martyrs victorieux, mon maître le prince Georges et Théodore le stratège, Philopatir Mercurios, et Abba Mina de Fayat ; O Seigneur, …",
             "هيتين ني إفشي إنتي ني آثلوفوروس إممارتيروس، باشويس ابؤورو جيؤرجيوس، نيم ثيؤدوروس بي استراتيلاتيس، فيلوباتير ماركوريوس، آبا مينا إنتي ني فايات، إبتشويس آري إهموت نان امبي كو إيفول إنتي نين نوفي.",
@@ -3560,10 +3563,18 @@ PrayersArray = [[
         ],
         [
             Prefix.massCommon + "WeBowToYouJesusChrist&D=0000&C=Diacon",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
-            "Nous T’adorons, Ô Christ, avec Ton bon Père, et L’Esprit-Saint, car Tu " + giaki.FR + " et nous sauvas. Aie pitié de nous.",
-            "تين أوشت إمموك أو بيخرستوس، نيم بيك يوت إن آغاثوس، نيم بي ابنيفما اثؤواب، جي " + giaki.CA + " آكسوتي إممون ناي نان.",
-            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا. إرحمنا.",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
+            "Nous T’adorons, Ô Christ, avec Ton bon Père, et L’Esprit-Saint, car Tu " +
+                giaki.FR +
+                " et nous sauvas. Aie pitié de nous.",
+            "تين أوشت إمموك أو بيخرستوس، نيم بيك يوت إن آغاثوس، نيم بي ابنيفما اثؤواب، جي " +
+                giaki.CA +
+                " آكسوتي إممون ناي نان.",
+            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القدس لأنكَ " +
+                giaki.AR +
+                " وخلصتنا. إرحمنا.",
         ],
     ],
     [
@@ -3585,10 +3596,18 @@ PrayersArray = [[
     [
         [
             Prefix.massCommon + "PraxisResponsePart2&D=0000&C=Diacon",
-            "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
-            "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, car tu " + giaki.FR + " (ressuscita) et nous sauvas.",
-            "اك إكسمارؤوت آليثوس نيم بي اكيوت إن آغاثوس نيم بي ابنيفما اثؤواب " + giaki.CA + " أكسوتي إممون ناينان",
-            "مُبَاركٌ أنتَ بالحقيقة مع أبيكَ الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا.",
+            "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
+            "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, car tu " +
+                giaki.FR +
+                " (ressuscita) et nous sauvas.",
+            "اك إكسمارؤوت آليثوس نيم بي اكيوت إن آغاثوس نيم بي ابنيفما اثؤواب " +
+                giaki.CA +
+                " أكسوتي إممون ناينان",
+            "مُبَاركٌ أنتَ بالحقيقة مع أبيكَ الصالح والروح القدس لأنكَ " +
+                giaki.AR +
+                " وخلصتنا.",
         ],
     ],
     [
@@ -4003,21 +4022,24 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "LitanyCombinedForRiversPlantsAndFruitsComment&D=0000&C=Comment",
+            Prefix.massCommon +
+                "LitanyCombinedForRiversPlantsAndFruitsComment&D=0000&C=Comment",
             "",
             "أوشية أهوية السماء وثمرات الأرض ومياه الأنهار والزروع والعشب ونبات الحقل:",
         ],
     ],
     [
         [
-            Prefix.massCommon + "LitanyCombinedForRiversPlantsAndFruits&D=0000&C=Priest",
+            Prefix.massCommon +
+                "LitanyCombinedForRiversPlantsAndFruits&D=0000&C=Priest",
             "Ⲁⲣⲓⲕⲁⲧⲁⲝⲓⲟⲓⲛ ⲡ̀Ϭⲟⲓⲥ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲛⲓⲙⲟⲩⲛϩⲱⲟⲩ ⲛⲉⲙ ⲛⲓⲓⲁⲣⲱⲟⲩ: ⲛⲉⲙ ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ: ⲛⲉⲙ ⲛⲓⲁⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ: ⲉⲧϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲑⲁⲓ: ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.",
             "Daigne, Seigneur bénir les eaux des fleuves, les semences, les fourrages et les produits des champs, les vents du ciel, les fruits de la terre, en cette année.",
             "",
             "تفضّل يا ربُ، أهوية السماء وثمرات الأرض، ومياه الأنهار، والزروع والعشب ونبات الحقل في هذه السنة باركها.",
         ],
         [
-            Prefix.massCommon + "LitanyCombinedForRiversPlantsAndFruits&D=0000&C=Diacon",
+            Prefix.massCommon +
+                "LitanyCombinedForRiversPlantsAndFruits&D=0000&C=Diacon",
             "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲁ̀ⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ: ⲡ̀ϫⲓⲛⲙⲟϣⲓ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ⲛⲓⲓⲁⲣⲱⲟⲩ ⲙ̀ⲙⲱⲟⲩ: ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ: ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲡⲭ̅ⲥ̅ Ⲡⲉⲛⲛⲟⲩϯ ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ ⲟⲩⲟϩ ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁ ⲡⲉϥⲡ̀ⲗⲁⲥⲙⲁ ⲉ̀ⲧⲁ ⲛⲉϥϫⲓϫ ⲑⲁⲙⲓⲟϥ ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.",
             "Implorez pour les vents du ciel et les fruits de la terre, la montée des eaux des fleuves, les semences, les fourrages et les produits des champs. Que le Christ notre Dieu les bénisse, et prenne en affection l’homme, œuvre de ses mains, et nous pardonne nos péchés.",
             "توفه إيجين ني آري إنتي إتفي نيم نيكاربوس إنتي ابكاهي إبجي نيم شو إي إبشوي إنتي ني يارؤو إممو نيسيتي نيم نيسيم نيم نيروتي إنتي إتكوي هينا إنتي بيخرستوس بينوتي، اسمو إروف أووه إنتيف جينهيت خا بيف ابلاسيا إتا نيف جيج ثاميوف إنتيف كا نين نوفي نان إيفول.",
@@ -4186,7 +4208,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "CommemorationOfTheDepartedPart1Comment&D=0000&C=Comment",
+            Prefix.massCommon +
+                "CommemorationOfTheDepartedPart1Comment&D=0000&C=Comment",
             "",
             "يضع الكاهن يده في بخور في المجمرة ويده مستورة بلفافة ويقول:",
         ],
@@ -4305,7 +4328,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "TheHolyBodyAndTheHolyBlodPart1Comment&D=0000&C=Comment",
+            Prefix.massCommon +
+                "TheHolyBodyAndTheHolyBlodPart1Comment&D=0000&C=Comment",
             "",
             "يأخد الكاهن الجسد الطاهر بيده اليمنى ويضعه على يده اليسرى ويضع السبابة اليمنى على يمين الاسبيدايقون ويقول:",
         ],
@@ -4328,7 +4352,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "TheHolyBodyAndTheHolyBlodPart2Comment&D=0000&C=Comment",
+            Prefix.massCommon +
+                "TheHolyBodyAndTheHolyBlodPart2Comment&D=0000&C=Comment",
             "",
             "ثم يرفع اصبعه من على الجسد ويغمس طرفه في الدم الكريم، ثم يرفع اصبعه قليلاً من الدم ويرشم به رشماً واحداً مثال الصليب على الدم داخل الكأس ويقول:",
         ],
@@ -4351,7 +4376,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "TheHolyBodyAndTheHolyBlodPart3Comment&D=0000&C=Comment",
+            Prefix.massCommon +
+                "TheHolyBodyAndTheHolyBlodPart3Comment&D=0000&C=Comment",
             "",
             "ثم يرشم بالدم الذي بإصبعه الجسد الطاهر رشماً فوق المكان الذي قسمه أولاً، أي بجانب الاسباديقون، ورشماً أسفل، أي على ظهره، ثانياً، ويقول:",
         ],
@@ -4892,14 +4918,16 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.psalmResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
+            Prefix.psalmResponse +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
             "",
             "Réponse du Psaume du 29 du mois copte",
             "مرد مزمور يوم 29 في الشهر القبطي",
             " مرد مزمور يوم 29 في الشهر القبطي",
         ],
         [
-            Prefix.psalmResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
+            Prefix.psalmResponse +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲁ̅ⲗ ⲁ̅ⲗ: Ⲓⲏ̅̅ⲥ̅ Ⲡⲭ̅ⲥ̅ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲫϯ: ⲁϥϭⲓⲥⲁⲣⲝ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ϯⲡⲁⲣⲑⲉⲛⲟⲥ ⲟⲩⲟϩ ⲁⲩⲙⲁⲥϥ ϧⲉⲛ Ⲃⲏⲉⲑⲗⲉⲉⲙ ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ: ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩ ϣⲟⲙⲧ: ⲁ̅ⲗ ⲁ̅ⲗ",
             "Alléluia, Alléluia, Jésus- Christ le Fils de Dieu s’est incarné de la Vierge. Et Il est né à Béthleem, selon les paroles prophétiques. Il est ressuscité d’entre les morts, le troisième jour. Alléluia, Alléluia",
             "الليلويا الليلويا ايسوس باخرستوس ابشيري إم افنوتي آفتشي ساركس إفول خين تي بارثينوس أووه آفماسف خين باثليئيم كاتا ني اثمي إم ابروفيتيكون آفتونف إفول خين ني اثمؤوت خين بي إيهؤو إمماه شومت. االليلويا الليلويا",
@@ -5050,14 +5078,7 @@ PrayersArray = [[
             "هليللويا هليللويا. المسيح قام ثم صعد، وأرسل لنا البارقليط، روح الحق. هليللويا هليللويا.",
         ],
     ],
-    [
-        [
-            Prefix.psalmResponse + "&D=0511&C=NoActor",
-            "/",
-            "/",
-            "/",
-        ],
-    ],
+    [[Prefix.psalmResponse + "&D=0511&C=NoActor", "/", "/", "/"]],
     [
         [
             Prefix.psalmResponse + "&D=$copticFeasts.EntryToEgypt&C=Title",
@@ -5682,7 +5703,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5710,7 +5731,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5738,7 +5759,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5766,7 +5787,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5794,7 +5815,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5822,7 +5843,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5850,7 +5871,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5878,7 +5899,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5906,7 +5927,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5934,7 +5955,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5962,7 +5983,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -5990,7 +6011,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6018,7 +6039,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6046,7 +6067,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6074,7 +6095,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6102,7 +6123,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6132,7 +6153,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6160,7 +6181,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6188,7 +6209,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6216,7 +6237,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6244,7 +6265,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6272,7 +6293,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6300,7 +6321,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6328,7 +6349,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6356,7 +6377,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6384,7 +6405,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6412,7 +6433,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6440,7 +6461,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6468,7 +6489,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6496,7 +6517,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6524,7 +6545,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6552,7 +6573,7 @@ PrayersArray = [[
             "Ⲁϥⲉⲣⲙⲉⲑⲣⲉ ⲛ̀ϫⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ϧⲉⲛ ⲡⲓϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ϫⲉ ⲁⲓϯⲱⲙⲥ ⲙ̀ⲡⲁⲥⲱⲧⲏⲣ: ϧⲉⲛ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲡⲓⲒⲟⲣⲇⲁⲛⲏⲥ.",
             "Jean a témoigné dans les quatre Evangiles : « J’ai baptisé mon Sauveur dans les eaux du Jourdain ».",
             "",
-            "شهد يوحنا، في الأناجيل الأربع، \"أني عمدَّت مخلصي، في مياه الأردن.\"",
+            'شهد يوحنا، في الأناجيل الأربع، "أني عمدَّت مخلصي، في مياه الأردن."',
         ],
         [
             Prefix.gospelResponse + "&D=$copticFeasts.BaptismParamoun&C=Diacon",
@@ -6663,9 +6684,9 @@ PrayersArray = [[
         [
             Prefix.gospelResponse + "3&D=$Seasons.JonahFast&C=Diacon",
             "Ϫⲉ ⲁ̀ⲙⲱⲓⲛⲓ ϩⲁⲣⲟⲓ: ⲛⲏⲉⲧⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ⲧⲉ Ⲡⲁⲓⲱⲧ: ⲁ̀ⲣⲓⲕ̀ⲗⲏⲣⲟⲛⲟⲙⲓⲛ ⲙ̀ⲡⲓⲱⲛϧ: ⲉⲑⲙⲏⲛ ⲉ̀ⲃⲟⲗ ϣⲁ ⲉ̀ⲛⲉϩ.",
-            "\"Venez à moi, les bénis de Mon Père et héritez la vie, éternelle pour toujours.\"",
+            '"Venez à moi, les bénis de Mon Père et héritez la vie, éternelle pour toujours."',
             "",
-            "\"تعالوا إليَّ، يا مباركي أبي، رثوا الحياة الدائمة، إلى الأبد.\"",
+            '"تعالوا إليَّ، يا مباركي أبي، رثوا الحياة الدائمة، إلى الأبد."',
         ],
     ],
     [
@@ -6801,7 +6822,8 @@ PrayersArray = [[
             " مرد إنجيل عشية سبت لعازر",
         ],
         [
-            Prefix.gospelResponse + "Vespers&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.gospelResponse +
+                "Vespers&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲭⲉⲣⲉ Ⲗⲁⲍⲁⲣⲟⲥ ⲫⲏⲉ̀ⲧⲁϥⲧⲟⲩⲛⲟⲥϥ: ⲙⲉⲛⲉⲛⲥⲁ ϥ̀ⲧⲟⲟⲩ ⲛ̀ⲉ̀ϩⲟⲟⲩ: ⲙⲁⲧⲟⲩⲛⲟⲥ ⲡⲁϩⲏⲧ Ⲡⲁϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁϥϧⲟⲑⲃⲉϥ ⲛ̀ϫⲉ ⲡⲓⲡⲉⲧϩⲱⲟⲩ.",
             "Salut à Lazare qu’Il a ressuscité après quatre jours. Seigneur Jésus : ressuscite mon cœur que le mal a tué.",
             "",
@@ -6851,7 +6873,9 @@ PrayersArray = [[
         [
             Prefix.gospelResponse + "&D=$Seasons.PentecostalDays&C=Diacon",
             "Ⲭⲟ̀ⲩⲁⲃ Ⲡⲟ̅ⲥ̅ ⲟⲩⲟϩ ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟ̀ⲩⲧ: ⲁⲕϭⲓ ⲙ̀ⲕⲁϩ ⲟⲩⲟϩ ⲙ̀ⲡⲉⲕⲅⲱⲛⲧ: ⲁⲕⲧⲱⲛⲕ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟ̀ⲩⲧ: ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟ̀ⲩ ⲙ̀ⲙⲁϩϣⲟⲙⲧ.",
-            "Saint es-tu Seigneur et Bénis car tu as souffert et tu ne t’es pas mis en colère tu " + giaki.FR + " d’entre les morts le troisième jour.",
+            "Saint es-tu Seigneur et Bénis car tu as souffert et tu ne t’es pas mis en colère tu " +
+                giaki.FR +
+                " d’entre les morts le troisième jour.",
             "",
             "قدوس أنت يا رب ومبارك، لأنك تألمت ولم تغضب، وقمت من بين الأموات، في اليوم الثالث.",
         ],
@@ -7063,7 +7087,8 @@ PrayersArray = [[
             "ثم يكمل الكاهن سراً",
         ],
         [
-            Prefix.massCommon + "ReconciliationStBasilPart2Comment&D=0000&C=CommentText",
+            Prefix.massCommon +
+                "ReconciliationStBasilPart2Comment&D=0000&C=CommentText",
             "",
             "هذا الذي من قبله المجد والكرامة والعزة والسجود، تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين.",
         ],
@@ -7091,18 +7116,28 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseByTheIntercessionOfStMary&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseByTheIntercessionOfStMary&D=0000&C=Assembly",
             "Ϩⲓⲧⲉⲛ ⲛⲓⲡ̀ⲣⲉⲥⲃⲓⲁ: ⲛ̀ⲧⲉ ϯⲑⲉⲟ̀ⲧⲟⲕⲟⲥ: ⲉⲑⲟⲩⲁⲃ Ⲙⲁⲣⲓⲁ: Ⲡ̀ϭⲟⲓⲥ ⲁⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ ⲙ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ.",
             "Par les intercessions de la mère de Dieu, la très Sainte Vierge Marie, Seigneur, Accorde-nous la rémission de nos péchés.",
             "هيتن ني ابريسفا انتي تي ثيؤطوكوس اثؤواب ماريا، ابتشويس آري إهموت نان إمبيكو إيفول إنتي ني نوفي.",
             "بشفاعات والدة الإله القديسة مريم يا رب انعم لنا بمغفرة خطايانا.",
         ],
         [
-            Prefix.massCommon + "AssemblyResponseByTheIntercessionOfStMary&D=0000&C=Assembly",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ. Ⲉⲗⲉⲟⲥ ⲉⲓ̀Ϯⲣⲏⲛⲏⲥ ⲑⲩⲥⲓⲁ ⲉ̀ⲛⲉⲥⲉⲱⲥ.",
-            "Nous T’adorons ô Christ, avec Ton Père très Bon et Le Saint Esprit, car Tu " + giaki.FR + " et Tu nous as sauvés. Miséricorde de paix, sacrifice de louange.",
-            "تين أؤوش إمموك إو بيخريستوس، نيم بيكيوت إن آغاثوس، نيم بي ابنيفما، إثؤوابن جي " + giaki.CA + " آكسوتي إممون، إليؤوس، إرينيس ثؤياس إنيسيؤس.",
-            "نسجدُ لك أيها المسيح مع أبيك الصالح والروح القدس لأنكَ " + giaki.AR + " وخلصتنا. رحمة السلام ذبيحة التسبيح.",
+            Prefix.massCommon +
+                "AssemblyResponseByTheIntercessionOfStMary&D=0000&C=Assembly",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ. Ⲉⲗⲉⲟⲥ ⲉⲓ̀Ϯⲣⲏⲛⲏⲥ ⲑⲩⲥⲓⲁ ⲉ̀ⲛⲉⲥⲉⲱⲥ.",
+            "Nous T’adorons ô Christ, avec Ton Père très Bon et Le Saint Esprit, car Tu " +
+                giaki.FR +
+                " et Tu nous as sauvés. Miséricorde de paix, sacrifice de louange.",
+            "تين أؤوش إمموك إو بيخريستوس، نيم بيكيوت إن آغاثوس، نيم بي ابنيفما، إثؤوابن جي " +
+                giaki.CA +
+                " آكسوتي إممون، إليؤوس، إرينيس ثؤياس إنيسيؤس.",
+            "نسجدُ لك أيها المسيح مع أبيك الصالح والروح القدس لأنكَ " +
+                giaki.AR +
+                " وخلصتنا. رحمة السلام ذبيحة التسبيح.",
         ],
     ],
     [
@@ -7387,7 +7422,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseAsYourMercyNotAsOurSins&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseAsYourMercyNotAsOurSins&D=0000&C=Assembly",
             "Ⲕⲁⲧⲁ ⲧⲟ ⲉ̀ⲗⲉⲟⲥ ⲥⲟⲩ Ⲕⲩⲣⲓⲉ: ⲕⲉ ⲙⲏ ⲕⲁⲧⲁ ⲧⲁⲥ ⲁ̀ⲙⲁⲣⲧⲓⲁⲥ ⲏ̀ⲙⲱⲛ.",
             "Selon Ta miséricorde Seigneur, et non selon nos péchés.",
             "كاتا تو إليوس سو كورييه كي مي كاتا تاس امارتياس إمون",
@@ -7449,7 +7485,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseWeBelieveThatThisIsTrueAmen&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseWeBelieveThatThisIsTrueAmen&D=0000&C=Assembly",
             "Ⲧⲉⲛⲛⲁϩϯ ϫⲉ ⲫⲁⲓ ⲡⲉ ϧⲉⲛ ⲟⲩⲙⲉⲑⲙⲏⲓ: ⲁⲙⲏⲛ.",
             "Nous croyons que cela est en vérité. Amen.",
             "تيناهتي جي خاي بي خين أوميثمي آمين",
@@ -7508,7 +7545,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseWeBelieveWeConfessWeGlorify&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseWeBelieveWeConfessWeGlorify&D=0000&C=Assembly",
             "Ⲁⲙⲏⲛ. Ⲡⲓⲥⲧⲉⲩⲟⲙⲉⲛ ⲕⲉ ⲟ̀ⲙⲟⲗⲟⲅⲟⲩⲙⲉⲛ ⲕⲉ ⲇⲟⲝⲁⲍⲟⲙⲉⲛ",
             "Amen, Nous croyons, nous confessons et nous glorifions.",
             "آمين بيستيف أومين كي أومولوغومين كي ذوكساسومين.",
@@ -7581,7 +7619,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseWeAlsoBelieveConfesseAndGlorify&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseWeAlsoBelieveConfesseAndGlorify&D=0000&C=Assembly",
             "Ⲕⲉ ⲡⲁⲗⲓⲛ Ⲡⲓⲥⲧⲉⲩⲟⲙⲉⲛ ⲕⲉ ⲟ̀ⲙⲟⲗⲟⲅⲟⲩⲙⲉⲛ ⲕⲉ ⲇⲟⲝⲁⲍⲟⲙⲉⲛ.",
             "De même, nous croyons, nous confessons et nous glorifions.",
             "آمين كي بالين بيستيف أومين كي أو مولوغومين، كي ذوكسا ذومين.",
@@ -7613,7 +7652,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseThisIsAlsoReallyTrue&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseThisIsAlsoReallyTrue&D=0000&C=Assembly",
             "Ⲫⲁⲓ ⲟⲛ ⲡⲉ ϧⲉⲛ ⲟⲩⲙⲉⲑⲙⲏⲓ: ⲁⲙⲏⲛ.",
             "Ceci est aussi en vérité. Amen.",
             "فاي أون بي خين أو ميثمي آمين.",
@@ -7654,7 +7694,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AssemblyResponseAmenAmenAmenWeProclaimYourDeath&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AssemblyResponseAmenAmenAmenWeProclaimYourDeath&D=0000&C=Assembly",
             "Ⲁ̀ⲙⲏⲛ ⲁ̀ⲙⲏⲛ ⲁ̀ⲙⲏⲛ ⲧⲟⲛ ⲑⲁⲛⲁⲧⲟⲛ ⲥⲟⲩ Ⲕⲩⲣⲓⲉ ⲕⲁⲧⲁⲅⲅⲉⲗⲟⲙⲉⲛ: ⲕⲉ ⲧⲏⲛ ⲁ̀ⲅⲓⲁⲛ ⲥⲟⲩ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲛ: ⲕⲉ ⲧⲏⲛ ⲁ̀ⲛⲁⲗⲏⲯⲓⲛ ⲥⲟⲩ ⲛ̀ⲧⲏⲥ ⲟⲩⲣⲁⲛⲓⲥ ⲥⲉ ⲟ̀ⲙⲟⲗⲟⲅⲟⲩⲙⲉⲛ. Ⲥⲉ ⲉ̀ⲛⲟⲩⲙⲉⲛ ⲥⲉ ⲉⲩⲗⲟⲅⲟⲩⲙⲉⲛ ⲥⲓ ⲉⲩⲭⲁⲣⲓⲥⲧⲟⲩⲙⲉⲛ Ⲕⲩⲣⲓⲉ: ⲕⲉ ⲇⲉⲟ̀ⲙⲉⲑⲁ ⲥⲟⲩ ⲟ̀ Ⲑⲉⲟⲥ ⲏ̀ⲙⲱⲛ.",
             "Amen, amen, amen, nous proclamons Ta mort, Seigneur Jésus, nous célébrons Ta sainte résurrection nous confessons Ton ascension aux cieux. Nous Te louons, nous Te bénissons, nous Te rendons grâce O Seigneur et nous T’implorons, Ô notre Dieu.",
             "آمين آمين آمين، تون ثاناتون سو كيريه كاتا انجيلومينن كي تين آجيان سو آناستاسين، كي تين آناليفين سو انتيس أورانيس سي أومولوغومين، سي إنومين، سي إبلوغومين، سي إفخاريستي أومين، كيريه، كي ذي أوميثا سو أو ثيؤس إمون؟",
@@ -7663,7 +7704,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AsWeAlsoCommemorateHisHolyPassionPart1&D=0000&C=Priest",
+            Prefix.massCommon +
+                "AsWeAlsoCommemorateHisHolyPassionPart1&D=0000&C=Priest",
             "Ⲉⲛⲓ̀ⲣⲓ ⲟⲩⲛ ϩⲱⲛ ⲙ̀ⲫ̀ⲙⲉⲩⲓ̀ ⲛ̀ⲛⲉϥϧⲓⲥⲓ ⲉⲑⲟⲩⲁⲃ: ⲛⲉⲙ ⲡⲉϥϫⲓⲛⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ: ⲛⲉⲙ ⲡⲉϥϫⲓⲛϣⲉ ⲉ̀ⲡ̀ϣⲱⲓ ⲉ̀ⲛⲓⲫⲏⲟⲩⲓ̀: ⲛⲉⲙ ⲡⲉϥϫⲓⲛϩⲉⲙⲥⲓ ⲥⲁⲧⲉⲕⲟⲩⲓ̀ⲛⲁⲙ ⲫ̀Ⲓⲱⲧ. Ⲛⲉⲙ ⲧⲉϥⲙⲁϩⲥ̀ⲛⲟⲩϯ ⲙ̀ⲡⲁⲣⲟⲩⲥⲓⲁ̀: ⲉⲑⲛⲏⲟⲩ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ̀: ⲉⲧⲟⲓ ⲛ̀ϩⲟϯ ⲟⲩⲟϩ ⲉⲑⲙⲉϩ ⲛ̀ⲱ̀ⲟⲩ. Ⲧⲉⲛⲉⲣⲡ̀ⲣⲟⲥⲫⲉⲣⲓⲛ ⲛⲁⲕ ⲛ̀ⲛⲏⲉ̀ⲧⲉ ⲛⲟⲩⲕ ⲛ̀ⲇⲱⲣⲟⲛ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲧⲉ ⲛⲟⲩⲕ: ⲕⲁⲧⲁ ϩⲱⲃ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ⲉⲑⲃⲉ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϧⲉⲛ ϩⲱⲃ ⲛⲓⲃⲉⲛ.",
             "Tandis que nous aussi nous faisons mémoire de Sa Sainte Passion, de Sa Résurrection d’entre les morts, de Son Ascension aux cieux, de Son siège à Ta droite ô Père, et de Son Second Avènement redoutable et plein de gloire, nous T’offrons Tes dons de ce qui T’appartient selon toutes choses, pour toutes choses et en toutes choses.",
             "إنئيري اون هون إم إفميفئي إن نيف خيسي إثؤواب نيم نيف جين تونف إيفول خين ني إثموؤوت نيم بيف جين شي إي إبشوى إي ني فيئوي نيم بيف جين هيمسي ساتيك أؤي نام إفيو نيم نيف ماه إسنوتي إمباروسيا إثنيو إيفول خين ني فيئوي إتئوي إنهوتي اووه إثميه إن أوأو تين إير إبروس فيرين ناك إن ني إيتينوك إنذورون إيفول خين ني يئينوك كاتا هوب نيفين نيم إتفي هوب نيفين نيم خين هوب نيفين.",
@@ -7672,7 +7714,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "DiaconResponseWorshipGodInFearAndTrembling&D=0000&C=Diacon",
+            Prefix.massCommon +
+                "DiaconResponseWorshipGodInFearAndTrembling&D=0000&C=Diacon",
             "Ⲟⲩⲱϣⲧ ⲙ̀ⲫ̀ⲛⲟⲩϯ ϧⲉⲛ ⲟⲩϩⲟϯ ⲛⲉⲙ ⲟⲩⲥ̀ⲑⲉⲣⲧⲉⲣ.",
             "Prosternez-vous devant Dieu avec crainte et tremblement.",
             "أؤوشت إمفنوتي خين أوهوتي نيم او إسثرتير",
@@ -7688,7 +7731,8 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massCommon + "AsWeAlsoCommemorateHisHolyPassionPart2&D=0000&C=Assembly",
+            Prefix.massCommon +
+                "AsWeAlsoCommemorateHisHolyPassionPart2&D=0000&C=Assembly",
             "Ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲧⲉⲛⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲕ ⲧⲉⲛϣⲉⲙϣⲓ ⲙ̀ⲙⲟⲕ ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ.",
             "Nous Te louons, nous Te bénissons, nous Te servons et nous T’adorons.",
             "تينهوس إيروك، تين اسمو إيروك تينشيمشي إمموك تين أؤوشت إمموك.",
@@ -8134,14 +8178,16 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.massStGregory + "AsWeCommemorateYourHolyPassionPart1&D=0000&C=Priest",
+            Prefix.massStGregory +
+                "AsWeCommemorateYourHolyPassionPart1&D=0000&C=Priest",
             "Ϩⲱⲥⲧⲉ ⲟⲩⲛ ⲡⲉⲛⲛⲏⲃ ⲉⲛⲓ̀ⲣⲓ ⲙ̀ⲫ̀ⲙⲉⲩⲓ̀ ⲙ̀ⲡⲉⲕϫⲉⲛⲓ̀ ⲉ̀ⲡⲉⲥⲏⲧ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲡⲉⲕⲙⲟⲩ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ: ⲛⲉⲙ ⲡⲉⲕⲙ̀ϩⲁⲩ ⲛ̀ϣⲟⲙⲧ ⲛ̀ⲉ̀ϩⲟⲟⲩ. Ⲛⲉⲙ ⲧⲉⲕⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ ⲛⲉⲙ ⲡⲉⲕϫⲓⲛϣⲉ ⲉ̀ⲡ̀ϣⲱⲓ ⲉ̀ⲛⲓⲫⲏⲟⲩⲓ̀ ⲛⲉⲙ ⲡⲉⲕϫⲓⲛϩⲉⲙⲥⲓ ⲥⲁⲟⲩⲓ̀ⲛⲁⲙ ⲙ̀Ⲡⲉⲕⲓⲱⲧ. Ⲛⲉⲙ ⲧⲉⲕⲙⲁϩ ⲥ̀ⲛⲟⲩϯ ⲙ̀ⲡⲁⲣⲟⲩⲥⲓⲁ̀: ⲉⲑⲛⲏⲟⲩ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ̀: ⲉⲧⲟⲓ ⲛ̀ϩⲟϯ ⲟⲩⲟϩ ⲉⲑⲙⲉϩ ⲛ̀ⲱ̀ⲟⲩ. Ⲧⲉⲛⲉⲣⲡ̀ⲣⲟⲥⲫⲉⲣⲓⲛ ⲛⲁⲕ ⲛ̀ⲛⲏⲉ̀ⲧⲉ ⲛⲟⲩⲕ ⲛ̀ⲇⲱⲣⲟⲛ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲧⲉ ⲛⲟⲩⲕ: ⲕⲁⲧⲁ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲉⲑⲃⲉ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϧⲉⲛ ϩⲱⲃ ⲛⲓⲃⲉⲛ.",
             "Tandis que nous aussi, ô Maître, nous faisons mémoire de Ton avènement sur terre, de Ta mort vivifiante¬, de Ta mise en terre trois jours, de Ta résurrection d’entre les morts, de Ton Ascension aux cieux, de Ton siège à la droite de Ton Père, et de Ton second avènement redoutable et plein de gloire, nous T’offrons Tes dons de ce qui T’appartient selon toutes choses, pour toutes choses et en toutes choses.",
             "هوس تي أون بين نيف إني إيري إم في ميفئي إيبي سيت هيجين بي كاهي، نيم بيك مؤو إنريفتانخو، نيم بين إمهاف إنشومتي إن إيهؤو، نيم تيك آناستاسيس إيفول خين ني إثموؤوت نيم بيك جين شي إي إبشوى إنني فيئوي نيم بيك جين هيمسي سا أؤي نام إبيكيوت نيم تيك ماه إنو أوتي إمباروسيا إثنيو إيفول خين ني فيئوي. إتئوي إنهوتي اووه إثميه إن أوأو تين إير إبروس فيرين ناك إن ني إيتينوك إنذورون إيفول خين ني يئينوك كاتا هوب نيفين نيم إتفي هوب نيفين نيم خين هوب نيفين.",
             "فإذاً يا سَيًدناً فيما نَحْنُ نَصنَع ذِكرَ نِزولِكَ علىَ الأرضِ، ومَوتِكَ المُحيي، وقَبِرَكَ ثَلاثَةَ أيامٍ، وقِيامَتْكَ مِنَ الأمْواتِ، وصُعُودِكَ إلىَ السَماواتِ وجِلوسِكَ عَنْ أبيكَ وظهُوركَ الثاني الآتي مِنَ السَماواتْ المَخوفِ المَمْلوءِ مَجداً، نُقَرّبُ لكَ قَرابينَكَ مِنَ الذي لكَ عَلى كُلِ حَالٍ ومِنْ أجلِ كُلِ حَالٍ وفي كُلِ حَالٍ.",
         ],
         [
-            Prefix.massStGregory + "AsWeCommemorateYourHolyPassionPart1&D=0000&C=Diacon",
+            Prefix.massStGregory +
+                "AsWeCommemorateYourHolyPassionPart1&D=0000&C=Diacon",
             "Ⲟⲩⲱϣⲧ ⲙ̀ⲡⲓϩⲓⲏⲃ ⲛ̀ⲗⲟⲅⲟⲥ ⲛ̀ⲧⲉ ⲪϮ.",
             "Prosternez-vous devant l’Agneau, le Verbe de Dieu.",
             "أؤوشت إمبي هييف إنذوكسوس إنتي إفيوت.",
@@ -8716,564 +8762,644 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
     ],
     [
@@ -9301,9 +9427,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||0000 &C=Priest",
             "Ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲙⲉⲧⲁⲧϩⲟϯ ⲉ̀ⲱϣ ⲟⲩⲃⲑⲕ: ⲛ̀ⲟ̀ⲕ ⲡⲓⲁⲧⲥⲟⲛⲧϥ ⲟⲩⲟϩ ⲛ̀ⲁⲧⲁⲣⲭⲑ ⲟⲩⲟϩ ⲛ̀ⲁⲧϫ̀ⲫⲟϥ: Ⲫ̀ⲛⲑⲃ ⲛ̀ⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ: Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲉ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ...",
-            "Qu’avec une voix calme digne des chrétiens, une âme, un corps et un esprit pur, nous osions sans crainte crier vers toi, qui n’es pas créé, sans début, non enfanté, maître de chacun, Dieu père Saint qui es aux cieux et dire : \"Notre père …etc.\"",
+            'Qu’avec une voix calme digne des chrétiens, une âme, un corps et un esprit pur, nous osions sans crainte crier vers toi, qui n’es pas créé, sans début, non enfanté, maître de chacun, Dieu père Saint qui es aux cieux et dire : "Notre père …etc."',
             "",
-            "فبصوت متواضع يليق بالمسيحيين، وبطهارة النفس والجسد والروح. نجسر بدالة بغير خوفٍ أن نصرخ إليك أنت غير المخلوق ولا مبتدئ ولا مولود، سيد كل أحد، الله الآب القدوس الذي في السموات، ونقول: \"أبانا الذي...\".",
+            'فبصوت متواضع يليق بالمسيحيين، وبطهارة النفس والجسد والروح. نجسر بدالة بغير خوفٍ أن نصرخ إليك أنت غير المخلوق ولا مبتدئ ولا مولود، سيد كل أحد، الله الآب القدوس الذي في السموات، ونقول: "أبانا الذي...".',
         ],
     ],
     [
@@ -9324,7 +9450,7 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.GreatLent&C=Priest",
             "Ⲟⲩⲟϩ ⲁϥⲧ̀ⲥⲁⲃⲟⲛ ϫⲉ ϯⲛⲑⲥⲧⲓⲁ ⲛⲉⲙ ⲡⲓϣ̀ⲗⲑⲗ ⲛⲉ ⲛⲑⲉ̀ϣⲁⲩϩⲓⲟⲩⲓ̀ ⲛ̀ⲛⲓⲇⲉⲙⲱⲛ ⲉ̀ⲃⲟⲗ ⲉ̀ⲁϥϫⲟⲥ ϫⲉ ⲡⲁⲓ ⲅⲉⲛⲟⲥ ⲙ̀ⲡⲁϥⲓ̀ ⲉ̀ⲃⲟⲗϧⲉⲛ ϩ̀ⲗⲓ ⲉ̀ⲃⲑⲗ ⲛ̀ⲟⲩⲡ̀ⲣⲟⲥⲉⲩⲭⲑ ⲛⲉⲙ ⲟⲩⲛⲑⲥⲧⲓⲁ.",
-            "et nous a appris que c’est le jeûne et la prière, qui chassent les démons, car Il a dit: \"Quant à cette espèce de démons on ne la fait sortir que par la prière et par le jeûne.\".",
+            'et nous a appris que c’est le jeûne et la prière, qui chassent les démons, car Il a dit: "Quant à cette espèce de démons on ne la fait sortir que par la prière et par le jeûne.".',
             "",
             "وعلمنا أن الصوم والصلاة هما اللذان يخرجان الشياطين، إذ قال: إن هذا الجنس لا يخرج بشيء إلا بالصلاة والصوم.",
         ],
@@ -9380,9 +9506,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.GreatLent&C=Priest",
             "Ⲁ̀ⲛⲟⲛ ϩⲱⲛ ⲙⲁⲣⲉⲛⲉⲣⲛⲑⲥⲧⲉⲩⲓⲛ ⲥⲁⲃⲟⲗ ⲙ̀ⲡⲉⲧϩⲱⲟⲩ ⲛⲓⲃⲉⲛ ϧⲉⲛ ⲟⲩⲧⲟⲩⲃⲟ ⲛⲉⲙ ⲟⲩⲙⲉⲙ̀ⲑⲓ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϯ ⲙ̀ⲡⲉⲛⲟⲩⲟⲓ ⲉ̀ⲧⲁⲓ ⲁ̀ⲅⲓⲁ ⲛ̀ⲩ̀ⲥⲓⲁ ⲛ̀ⲧⲉⲛϭⲓ ⲉ̀ⲃⲟⲗ ⲛ̀ϧⲑⲧⲥ ϧⲉⲛ ⲟⲩϣⲉⲡⲉϩ̀ⲙⲟⲧ ϫⲉ ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ ⲛⲉⲙ ⲟⲩⲯⲩⲭⲑ ⲉ̀ⲁⲥϭⲓⲟⲩⲱⲓⲛⲓ ⲛⲉⲙ ⲟⲩϩⲟ ⲛ̀ⲁⲧϭⲓϣⲓⲡⲓ ⲛⲉⲙ ⲟⲩⲛⲁϩϯ ⲛ̀ⲁⲧⲙⲉⲧϣⲟⲃⲓ ⲛⲉⲙ ⲟⲩⲁ̀ⲅⲁⲡⲑ ⲉⲥϫⲑⲕ ⲉ̀ⲃⲟⲗ ⲛⲉⲙ ⲟⲩϩⲉⲗⲡⲓⲥ ⲉⲥⲧⲁϫⲣⲑⲟⲩⲧ. Ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ ⲉ̀ⲧⲱⲃϩ ⲙ̀ⲙⲟⲕ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲉϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ...",
-            "Jeûnons nous aussi de tout mal, avec pureté et justice, et présentons-nous à ce sacrifice et participons-y en rendant grâce à Dieu. Ainsi, d’un cœur net, une âme éclairée, une face sans honte, une foi sans hypocrisie, un amour parfait et une espérance ferme, nous osions par faveur et sans crainte, Te prier, O Dieu Le Père saint qui est aux cieux en disant: \"Notre père…etc.\".",
+            'Jeûnons nous aussi de tout mal, avec pureté et justice, et présentons-nous à ce sacrifice et participons-y en rendant grâce à Dieu. Ainsi, d’un cœur net, une âme éclairée, une face sans honte, une foi sans hypocrisie, un amour parfait et une espérance ferme, nous osions par faveur et sans crainte, Te prier, O Dieu Le Père saint qui est aux cieux en disant: "Notre père…etc.".',
             "",
-            "ونحن أيضا فلنصم عن كل شر بطهارة وبر، ونتقدم إلى هذه الذبيحة المقدسة ونتناول منها بشكر. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزي، وإيمان بلا رياء، ومحبة كاملة، ورجاء ثابت، نجسر بدالة بغير خوف، أن ندعوك يالله الآب القدوس الذي في السموات، ونقول \"يا أبانا...\"",
+            'ونحن أيضا فلنصم عن كل شر بطهارة وبر، ونتقدم إلى هذه الذبيحة المقدسة ونتناول منها بشكر. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزي، وإيمان بلا رياء، ومحبة كاملة، ورجاء ثابت، نجسر بدالة بغير خوف، أن ندعوك يالله الآب القدوس الذي في السموات، ونقول "يا أبانا..."',
         ],
     ],
     [
@@ -9417,9 +9543,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.PalmSunday||0000&C=Priest",
             "Ϩⲱⲥⲧⲉ ⲛ̀ⲧⲉⲛⲟⲩⲱⲛϩ ⲛⲁⲕ ⲉ̀ⲃⲟⲗ: ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛⲱϣ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ: Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀: ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
-            "Afin que nous nous confessons à Toi, criant à Toi, Ô Père saint qui est aux cieux en disant : \"Notre père…etc.\".",
+            'Afin que nous nous confessons à Toi, criant à Toi, Ô Père saint qui est aux cieux en disant : "Notre père…etc.".',
             "",
-            "لكي نعترف لك، ونصرخ نحوك أيها الآب القدوس الذي في السموات، ونقول: \"يا أبانا...\"",
+            'لكي نعترف لك، ونصرخ نحوك أيها الآب القدوس الذي في السموات، ونقول: "يا أبانا..."',
         ],
     ],
     [
@@ -9440,7 +9566,7 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
             "Ⲁϥⲧⲱⲛϥ ⲇⲉ ⲛ̀ϫⲉ Ⲁⲃⲣⲁⲁⲙ ⲛ̀ⲧⲟⲟⲩⲓ̀ ⲟⲩⲟϩ ⲁϥϫⲱⲕ ⲛ̀ⲧⲉϥⲉ̀ⲱ̀ ⲁϥϭⲓ ⲇⲉ ⲛ̀ⲁ̀ⲗⲟⲩ ⲃ̅ ⲛⲉⲙ Ⲓⲥⲁⲁⲕ ⲡⲉϥϣⲑⲣⲓ ⲁϥϭⲓ ⲛ̀ⲟⲩϫⲟⲣϯ ⲛⲉⲙ ⲟⲩⲭ̀ⲣⲱⲙ ⲁϥⲙⲟϣⲓ ⲉ̀ⲃⲟⲗ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ ⲟⲩⲟϩ ⲁϥⲛⲁⲩ ⲉ̀ⲡⲓⲙⲁ ϩⲓ ⲫ̀ⲟⲩⲉⲓ ⲉ̀ⲧⲁ Ⲡ̀ⲟ̅ⲥ̅ ⲧⲁⲙⲟϥ ⲉ̀ⲣⲟϥ.",
-            "Il lui dit: \"Abraham, Abraham, prends ton fils, que tu aimes Isaac et offre-le en holocauste sur une montagne que Je t’indiquerai.\".",
+            'Il lui dit: "Abraham, Abraham, prends ton fils, que tu aimes Isaac et offre-le en holocauste sur une montagne que Je t’indiquerai.".',
             "",
             "أنه قال له: إبراهيم إبراهيم خذ ابنك الحبيب إسحق وقدمه لى محرقة على الجبل الذي أعلمك به.",
         ],
@@ -9454,7 +9580,7 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
             "Ⲡⲉϫⲉ Ⲓⲥⲁⲁⲕ ⲇⲉ ⲙ̀ⲡⲉϥⲓⲱⲧ ϫⲉ ⲡⲁⲓⲱⲧ ϩⲑⲡⲡⲉ ⲓⲥ ⲡⲓⲭ̀ⲣⲱⲙ ⲛⲉⲙ ⲡⲓⲣⲱⲕϩ ⲁϥⲱ̀ⲛ ⲡⲓⲉ̀ⲥⲱⲟⲩ ⲉ̀ⲧⲉⲛⲛⲁⲉⲛϥ ⲉ̀ⲡⲓϭⲗⲓⲗ ⲡⲉϫⲉ Ⲁⲃⲣⲁⲁⲙ ⲇⲉ ⲛⲁϥ ϫⲉ ⲫϯ ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲁϩⲥⲁϩⲛⲓ ⲛⲁⲛ ⲉ̀ⲧⲁⲗⲟ ⲛⲁϥ ⲛ̀ⲟⲩⲩ̀ⲥⲓⲁ̀ ⲛ̀ⲟ̀ϥ ⲉⲛ̀ⲁⲛⲁⲩ ⲉⲟⲩⲉ̀ⲥⲱⲟⲩ ⲛⲁϥ ⲉ̀ⲡϭ̀ⲗⲓⲗ ⲡⲁϣⲑⲣⲓ",
-            "Et il dit à ses serviteurs: \"Demeurez ici avec l’âne. Moi et Isaac nous irons jusque là-bas, nous adorerons et nous reviendrons vers vous.\".",
+            'Et il dit à ses serviteurs: "Demeurez ici avec l’âne. Moi et Isaac nous irons jusque là-bas, nous adorerons et nous reviendrons vers vous.".',
             "",
             "فقال لغلاميه: إجلسا أنتما ههنا مع الدابة. وأما أنا وإسحق إبنى فنذهب ونسجد ثم نرجع إليكما.",
         ],
@@ -9468,7 +9594,7 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
             "Ⲟⲩⲟϩ ⲁ̀ⲡⲓⲁⲅⲅⲉⲗⲟⲥ ⲛ̀ⲧⲉ Ⲡ̀ⲟ̅ⲥ̅ ⲙⲟⲩϯ ⲉⲃ̀ⲉ Ⲁⲃⲣⲁⲁⲙ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ ⲛⲁϥ ϫⲉ Ⲁⲃⲣⲁⲁⲙ Ⲁⲃⲣⲁⲁⲙ ⲁ̀ⲛⲁⲩ ⲙ̀ⲡⲉⲣϭⲟϩ ⲉ̀ⲡⲉⲕⲁⲗⲟⲩ ⲟⲩⲇⲉ ⲙ̀ⲡⲉⲣⲓ̀ⲣⲓ ⲛⲁϥ ⲛ̀ⲟⲩⲡⲉⲧϩⲱⲟⲩ.",
-            "Alors, Isaac dit à son père: \"Mon père, voilà le feu et le bois, mais où est l’agneau pour l’holocauste?\". Abraham répondit: \"C’est Dieu qui nous a commandé de Lui offrir un sacrifice se pourvoira Lui-même de l’agneau pour l’holocauste, mon fils.\".",
+            'Alors, Isaac dit à son père: "Mon père, voilà le feu et le bois, mais où est l’agneau pour l’holocauste?". Abraham répondit: "C’est Dieu qui nous a commandé de Lui offrir un sacrifice se pourvoira Lui-même de l’agneau pour l’holocauste, mon fils.".',
             "",
             "فقال له إبراهيم: إن اللّه الذي أمرنا أن نرفع له ذبيحة هو يرى حملاً له للمحرقة يا ابنى.",
         ],
@@ -9482,9 +9608,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
             "Ⲟⲩⲟϩ ⲁϥϥⲁⲓ ⲛ̀ⲛⲉϥⲃⲁⲗ ⲛ̀ϫⲉ Ⲁⲃⲣⲁⲁⲙ ⲁϥⲛⲁⲩ ⲉ̀ⲟⲩⲉ̀ⲥⲱⲟⲩ ⲉϥⲭⲑ ϩⲓϫⲉⲛ ⲡⲓϣ̀ϣⲑⲛ ⲉϥⲙⲑⲣ ϧⲉⲛ ⲡⲉϥⲧⲁⲡⲃ̅ ⲟⲩⲟϩ ⲁϥⲭⲱ ⲛ̀Ⲓⲥⲁⲁⲕ ⲡⲉϥϣⲑⲣⲓ ⲁϥϭⲓ ⲙ̀ⲡⲓⲉ̀ⲥⲱⲟⲩ ⲟⲩⲟϩ ⲁϥⲉⲛϥ ⲉ̀ϩ̀ⲣⲑⲓ ⲛ̀ⲟⲩϭ̀ⲗⲓⲗ ⲛ̀ⲧⲉϥϣⲉⲃⲓⲱ.",
-            "Mais l’ange du Seigneur appela Abraham et lui dit: \"Abraham, Abraham, regarde, n’étends pas la main contre l’enfant et ne lui fais aucun mal. Quand Dieu vit ton amour envers Lui, Il dit: \"Moi Le Seigneur ton Dieu, Je le jure par Moi-même, Je te comblerai de bénédictions et Je multiplierai ta postérité.\".",
+            'Mais l’ange du Seigneur appela Abraham et lui dit: "Abraham, Abraham, regarde, n’étends pas la main contre l’enfant et ne lui fais aucun mal. Quand Dieu vit ton amour envers Lui, Il dit: "Moi Le Seigneur ton Dieu, Je le jure par Moi-même, Je te comblerai de bénédictions et Je multiplierai ta postérité.".',
             "",
-            "وان ملاك الرب نادى إبراهيم قائلاً: إبراهيم إبراهيم، أنظر لا تلمس فتاك ولا تصنع به شراً. لما نظر الرب محبتك فيه فقال: \"إني إنا هو الرب إلهك، أقسمت بذاتي إني بالبركة أباركك، وبالكثرة أكثر نسلك\".",
+            'وان ملاك الرب نادى إبراهيم قائلاً: إبراهيم إبراهيم، أنظر لا تلمس فتاك ولا تصنع به شراً. لما نظر الرب محبتك فيه فقال: "إني إنا هو الرب إلهك، أقسمت بذاتي إني بالبركة أباركك، وبالكثرة أكثر نسلك".',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
@@ -9510,9 +9636,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolyThursday&C=Priest",
             "Ⲫ̀ⲛⲟⲩϯ ⲫⲑⲉ̀ⲧⲁϥϭⲓ ⲛ̀ϯⲩ̀ⲥⲓⲁ̀ ⲛ̀ⲧⲉ ⲡⲉⲛⲓⲱⲧ Ⲁⲃⲣⲁⲁⲙ ϭⲓ ⲛ̀ⲧⲁⲓ ⲩ̀ⲥⲓⲁ ⲛ̀ⲧⲟⲧⲉⲛ ϧⲉⲛ ⲧⲁⲓ ⲟⲩⲛⲟⲩ ⲁ̀ⲓ ⲥ̀ⲙⲟⲩ ⲉ̀ⲛⲁⲓ ⲇⲱⲣⲟⲛ ⲛⲁⲓ ⲥ̀ⲙⲟⲩ ⲉ̀ⲛⲑⲉ̀ⲧⲁⲩⲉ̀ⲛⲟⲩ ⲉ̀ϫⲱⲟⲩ ⲙⲁⲙ̀ⲧⲟⲛ ⲛ̀ⲛⲓⲯⲩⲭⲑ ⲛ̀ⲛⲑⲉ̀ⲧⲁⲩⲙⲟⲩ ⲙⲁⲣⲉϥⲥ̀ⲙⲟⲩ ⲛ̀ϫⲉ Ⲡⲭ̅ⲥ̅ ⲉ̀ϫⲉⲛ ⲛⲉⲛϩⲑⲧ ⲧⲑⲣⲟⲩ ⲛⲉⲙ ⲛⲉⲛⲡ̀ⲛⲉⲩⲙⲁ.",
-            "Que Le Christ bénisse nos cœurs et nos esprits. Ainsi par un cœur net, une âme éclairée, une foi sans hypocrisie, un amour parfait, une espérance qui demeure, nous osions par faveur et sans crainte Te supplier, O Dieu Le Père saint qui est aux cieux en disant: \"Notre père …etc.\"",
+            'Que Le Christ bénisse nos cœurs et nos esprits. Ainsi par un cœur net, une âme éclairée, une foi sans hypocrisie, un amour parfait, une espérance qui demeure, nous osions par faveur et sans crainte Te supplier, O Dieu Le Père saint qui est aux cieux en disant: "Notre père …etc."',
             "",
-            "فليبارك المسيح على جميع قلوبنا وأرواحنا. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزى، وإيمان بلا رياء، ومحبة كاملة، ورجاء ثابت. نجسر بدالة بغير خوف، أن ندعوك يا الله الآب القدوس الذي في السموات، ونقول: \"أبانا الذي في السموات ...الخ\"",
+            'فليبارك المسيح على جميع قلوبنا وأرواحنا. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزى، وإيمان بلا رياء، ومحبة كاملة، ورجاء ثابت. نجسر بدالة بغير خوف، أن ندعوك يا الله الآب القدوس الذي في السموات، ونقول: "أبانا الذي في السموات ...الخ"',
         ],
     ],
     [
@@ -9561,9 +9687,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolySaturday&C=Priest",
             "Ⲛ̀ⲟ̀ⲕ ⲡⲉ ⲉ̀ⲧⲁ Ⲑ̀ⲥⲁⲑ̀ⲁⲥ ⲡⲓⲡ̀ⲣⲟⲫⲑⲧⲑⲥ ⲉⲣⲡ̀ⲣⲟⲫⲑⲧⲉⲩⲓⲛ ⲉⲃ̀ⲑⲧⲕ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲙ̀ⲫ̀ⲣⲑϯ ⲛ̀ⲟⲩⲉ̀ⲥⲱⲟⲩ ⲁⲩⲉⲛϥ ⲉ̀ⲡ̀ϧⲟⲗϧⲉⲗ: ⲟⲩⲟϩ ⲙ̀ⲫ̀ⲣⲑϯ ⲛ̀ⲟⲩϩⲓⲑⲃ ⲙ̀ⲡⲉⲙ̀ⲟ̀ ⲙ̀ⲫⲑⲉⲧϧⲱⲕ ⲙ̀ⲙⲟϥ ⲉϥⲟⲓ ⲛ̀ⲁⲧⲥ̀ⲙⲑ: ⲡⲁⲓⲣⲑϯ ⲛ̀ϥ̀ⲟⲩⲱⲛ ⲛ̀ⲣⲱϥ ⲁⲛ: ⲁⲩⲱ̀ⲗⲓ ⲙ̀ⲡⲉϥϩⲁⲡ ϧⲉⲛ ⲡⲉϥⲉ̀ⲃⲓⲟ: ⲧⲉϥⲅⲉⲛⲉⲁ̀ ⲇⲉ ⲛⲓⲙ ⲡⲉⲛ̀ⲁϣ̀ⲫⲓⲣⲓ ⲉ̀ⲣⲟⲥ.",
-            "Tu es celui à qui Isaie a prédit en disant: \"Comme une brebis il a été mené à l’abattoir, comme un agneau muet devant celui qui le tond ainsi Il n’ouvre pas la bouche. Dans Son abaissement Son droit a été dénié et Sa génération, qui la racontera?\".",
+            'Tu es celui à qui Isaie a prédit en disant: "Comme une brebis il a été mené à l’abattoir, comme un agneau muet devant celui qui le tond ainsi Il n’ouvre pas la bouche. Dans Son abaissement Son droit a été dénié et Sa génération, qui la racontera?".',
             "",
-            "أنت هو الذي تنبأ من أجلك أشعياء النبي قائلاً: \"مثل خروف سيق إلى الذبح، ومثل حمل بلا صوت أمام الذي يجزه، هكذا لا يفتح فاه. رُفِع حُكمُه في تواضعه، وجيله من يقدر أن يَقُصَّه؟\"",
+            'أنت هو الذي تنبأ من أجلك أشعياء النبي قائلاً: "مثل خروف سيق إلى الذبح، ومثل حمل بلا صوت أمام الذي يجزه، هكذا لا يفتح فاه. رُفِع حُكمُه في تواضعه، وجيله من يقدر أن يَقُصَّه؟"',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolySaturday&C=Priest",
@@ -9596,9 +9722,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.HolySaturday&C=Priest",
             "Ⲙⲁⲧⲟⲩⲃⲟ ⲛ̀ⲛⲉⲛⲯⲩⲭⲑ ⲛⲉⲙ ⲛⲉⲛⲥⲱⲙⲁ ⲛⲉⲙ ⲛⲉⲛⲡ̀ⲛⲉⲩⲙⲁ ⲛⲉⲙ ⲛⲉⲛⲥⲩⲛⲓⲇⲑⲥⲓⲥ. Ϩⲟⲡⲱⲥ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ: ⲛⲉⲙ ⲟⲩⲯⲩⲭⲑ ⲉ̀ⲁⲥϭⲓⲟⲩⲱⲓⲛⲓ: ⲛⲉⲙ ⲟⲩϩⲟ ⲛ̀ⲁⲧϭⲓϣⲓⲡⲓ: ⲛⲉⲙ ⲟⲩⲛⲁϩϯ ⲛ̀ⲁⲧⲙⲉⲧϣⲟⲃⲓ: ⲛⲉⲙ ⲟⲩⲁ̀ⲅⲁⲡⲑ ⲉⲥϫⲑⲕ ⲉ̀ⲃⲟⲗ: ⲛⲉⲙ ⲟⲩϩⲉⲗⲡⲓⲥ ⲉⲥⲧⲁϫⲣⲑⲟⲩⲧ. Ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ ⲉ̀ϫⲱ ⲛ̀ϯⲉⲩⲭⲑ ⲉⲟ̀ⲩⲁⲃ: ⲑ̀ⲉ̀ⲧⲁⲕⲧⲑⲓⲥ ⲉ̀ⲧⲟⲧⲟⲩ ⲛ̀ⲛⲑⲉ̀ⲧⲉ ⲛⲟⲩⲕ ⲛ̀ⲁ̀ⲅⲓⲟⲥ ⲙ̀ⲙⲁⲑ̀ⲧⲑⲥ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ ⲉⲟ̀ⲩⲁⲃ ⲉⲕϫⲱ ⲙ̀ⲙⲟⲥ ⲛⲱⲟⲩ: ϫⲉ ⲉ̀ϣⲱⲡ ⲁ̀ⲣⲉⲧⲉⲛϣⲁⲛⲉⲣⲡ̀ⲣⲟⲥⲉⲩⲭⲉⲥⲉ̀ ⲧⲱⲃϩ ⲙ̀ⲡⲁⲓⲣⲑϯ ⲟⲩⲟϩ ⲁ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
-            "Purifie nos âmes, nos corps, nos esprits et nos intentions afin qu’avec un cœur net, une âme éclairée, une face sans honte, une foi sans hypocrisie, un amour parfait et une espérance qui demeure nous osions dire par faveur et sans crainte la sainte prière que Tu as donnée à Tes saints disciples et purs apôtres en leurs disant si vous priez: \"Notre père…\".",
+            'Purifie nos âmes, nos corps, nos esprits et nos intentions afin qu’avec un cœur net, une âme éclairée, une face sans honte, une foi sans hypocrisie, un amour parfait et une espérance qui demeure nous osions dire par faveur et sans crainte la sainte prière que Tu as donnée à Tes saints disciples et purs apôtres en leurs disant si vous priez: "Notre père…".',
             "",
-            "طهر نفوسنا، وأجسادنا، وأرواحنا، ونياتنا. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزي، وإيمان بغير رياء، ومحبة كاملة، ورجاء ثابت، نجسر بدالة بغير خوف أن نقول الصلاة المقدسة التي سلمتها لتلاميذك القديسين، ورسلك الأطهار قائلاً لهم: \"متى صليتم فأطلبوا هكذا، وقولوا: أبانا الذي...\"",
+            'طهر نفوسنا، وأجسادنا، وأرواحنا، ونياتنا. لكي بقلب طاهر، ونفس مستنيرة، ووجه غير مخزي، وإيمان بغير رياء، ومحبة كاملة، ورجاء ثابت، نجسر بدالة بغير خوف أن نقول الصلاة المقدسة التي سلمتها لتلاميذك القديسين، ورسلك الأطهار قائلاً لهم: "متى صليتم فأطلبوا هكذا، وقولوا: أبانا الذي..."',
         ],
     ],
     [
@@ -9654,88 +9780,99 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.PentecostalDays&C=Priest",
             "Ⲙⲁⲣⲉϥⲉⲣⲟⲩⲱⲓⲛⲓ ⲉ̀ⲣⲟⲛ ⲛ̀ϫⲉ ⲫ̀ⲟⲩⲱⲓⲛⲓ ⲛ̀ⲧⲉ ⲡⲉⲕⲉ̀ⲙⲓ ⲙ̀ⲙⲑⲓ: ⲉⲣ̀ⲉⲛϯⲙⲟⲩⲉ̀ ϧⲉⲛ ⲡⲉⲕⲥ̀ⲙⲟⲧ ⲛ̀ⲱⲛϧ. Ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ: ⲉ̀ⲱϣ ⲟⲩⲃⲉ Ⲡⲉⲕⲓⲱⲧ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀: ⲟⲩⲟϩ ⲉ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
-            "Que la lumière de Ta vraie connaissance nous illumine afin que nous éclairions de Ton apparence vivifiante, et nous osions par faveur et sans crainte de crier vers Ton Père qui est aux cieux en disant: \"Notre père…\".",
+            'Que la lumière de Ta vraie connaissance nous illumine afin que nous éclairions de Ton apparence vivifiante, et nous osions par faveur et sans crainte de crier vers Ton Père qui est aux cieux en disant: "Notre père…".',
             "",
-            "فليضئ علينا نور معرفتك الحقيقية لنضئ بشكلك المحيي. ونجسر بداله بغير خوف أن نصرخ نحو أبيك الذي في السموات، ونقول: \"يا أبانا...\"",
+            'فليضئ علينا نور معرفتك الحقيقية لنضئ بشكلك المحيي. ونجسر بداله بغير خوف أن نصرخ نحو أبيك الذي في السموات، ونقول: "يا أبانا..."',
         ],
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Title",
             "",
             "Oraison de fraction pour la Résurrection et les 50 jours pascaux (Ô Maitre Seigneur, Dieu Le Pantocrator, Le Père de notre Seigneur)",
             "",
             " قسمة للآب تقال في عيد القيامة والخماسين (أيها السيد الرب الإله الذي من قبل صليبه نزل إلى الجحيم)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ Ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: Ⲫ̀ⲓⲱⲧ ⲙ̀Ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲑⲣ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲉ ⲉ̀ⲃⲟⲗ ϩⲓⲧⲉⲛ Ⲡⲉϥⲥ̀ⲧⲁⲩⲣⲟⲥ ⲁϥⲓ̀ ⲉ̀ⲡⲉⲥⲑⲧ ⲉ̀Ⲁ̀ⲙⲉⲛϯ: ⲁϥⲧⲁⲥⲟ̀ ⲙ̀ⲡⲉⲛⲓⲱⲧ Ⲁ̀ⲇⲁⲙ ⲛⲉⲙ ⲛⲉϥϣⲑⲣⲓ ⲉ̀ϧⲟⲩⲛ ⲉ̀Ⲡⲓⲡⲁⲣⲁⲇⲓⲥⲟⲥ.",
             "Ô Maitre Seigneur, Dieu Le Pantocrator, Le Père de notre Seigneur, Dieu et Sauveur Jésus Christ, qui par Sa croix est descendu aux enfers et a ramené notre père Adam et ses enfants au Paradis.",
             "",
             "أيها السيد الرب الإله ضابط الكل، أبو ربنا واٍلهنا ومخلصنا يسوع المسيح الذي من قبل صليبه نزل إلى الجحيم، ورد أبانا آدم وبنيه إلى الفردوس.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲁϥⲟ̀ⲙⲥⲉⲛ ⲛⲉⲙⲁϥ: ϧⲉⲛ ⲡⲉϥⲙⲟⲩ ⲁϥⲕⲱⲣϥ ⲙ̀ⲡⲓⲁ̀ⲙⲁϩⲓ ⲙ̀ⲫ̀ⲙⲟⲩ: ⲟⲩⲟϩ ϧⲉⲛ ⲡⲓⲙⲁϩϣⲟⲙⲧ ⲛ̀ⲉ̀ϩⲟⲟⲩ ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲑⲉⲙ̀ⲱⲟⲩⲧ.",
             "Il nous a enterré avec Lui. Par Sa mort Il a vaincu le pouvoir de la mort et le troisième jour Il est ressuscité d’entre les morts.",
             "",
             "ودفننا معه، بموته أبطل عز الموت، وفي ثالث يوم قام من بين الأموات.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲁϥⲟⲩⲟⲛϩϥ ⲉ̀Ⲙⲁⲣⲓⲁ Ϯⲙⲁⲅⲇⲁⲗⲓⲛⲑ: ⲁϥⲥⲁϫⲓ ⲛⲉⲙⲁⲥ ⲙ̀ⲡⲁⲓⲣⲑϯ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲙⲁⲧⲁⲙⲉ ⲛⲁⲥ̀ⲛⲑⲟⲩ ϩⲓⲛⲁ ⲛ̀ⲧⲟⲩϣⲉⲛⲱⲟⲩ ⲉ̀Ϯⲅⲁⲗⲓⲗⲉⲁ̀: ⲥⲉⲛⲁⲛⲁⲩ ⲉ̀ⲣⲟⲓ ⲙ̀ⲙⲁⲩ.",
             "Il apparut à Marie Magdalen et Lui parla en disant: “Dis à Mes frères de se rendre en Galilée, c’est là qu’ils Me verront.”",
             "",
-            "وظهر لمريم المجدلية وكلمها هكذا قائلا: \"اعلمى اخوتى أن يذهبوا إلى الجليل هناك يروننى.\"",
+            'وظهر لمريم المجدلية وكلمها هكذا قائلا: "اعلمى اخوتى أن يذهبوا إلى الجليل هناك يروننى."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲡⲓⲁⲣⲭⲑⲁⲅⲅⲉⲗⲟⲥ ⲁϥⲓ̀ ⲉ̀ⲡⲉⲥⲑⲧ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲧ̀ⲫⲉ: ⲁϥⲥ̀ⲕⲉⲣⲕⲉⲣ ⲙ̀ⲡⲓⲱ̀ⲛⲓ ⲉ̀ⲃⲟⲗ ϩⲓ ⲣⲱϥ ⲙ̀ⲡⲓⲙ̀ϩⲁⲩ ⲁϥϩⲓϣⲉⲛⲛⲟⲩϥⲓ ⲛ̀ⲛⲓϩⲓⲟⲙⲓ ⲙ̀ϥⲁⲓⲥⲟϫⲉⲛ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ.",
             "L’archange descendit du ciel, fit rouler la pierre de l’entrée du tombeau et proclama les bonnes nouvelles aux femmes portant les aromates en leur disant:",
             "",
             "رئيس الملائكة نزل من السماء، ودحرج الحجر عن فم القبر وبشر النسوة حاملات الطيب قائلا:",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ϫⲉ Ⲭ̀ⲣⲓⲥⲧⲟⲥ ⲁ̀ⲛⲉⲥⲧⲑ ⲉⲕ ⲛⲉⲕⲣⲱⲛ: ⲁ̀ⲛⲁⲧⲱ ⲁ̀ⲛⲁⲧⲟⲛ ⲡⲁⲧⲑⲥⲁⲥ: ⲕⲉ ⲧⲓⲥ ⲉⲛ ⲧⲓⲥ ⲙ̀ⲛⲑⲙⲁⲥⲓ ⲍⲱⲑⲛ ⲭⲁⲣⲓⲥⲁⲙⲉⲛⲟⲥ.",
-            "\"Le Christ est ressuscité des morts\". Par Sa mort Il a vaincu la mort et Il a donné la vie éternelle à ceux qui étaient dans les tombeaux.\"",
+            '"Le Christ est ressuscité des morts". Par Sa mort Il a vaincu la mort et Il a donné la vie éternelle à ceux qui étaient dans les tombeaux."',
             "",
-            "\"المسيح قام من بين الأموات\". بالموت داس الموت، والذين في القبور أنعم عليهم بالحياة الأبدية.",
+            '"المسيح قام من بين الأموات". بالموت داس الموت، والذين في القبور أنعم عليهم بالحياة الأبدية.',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲁϥⲛⲓϥⲓ ⲉ̀ϧⲟⲩⲛ ϧⲉⲛ ⲡ̀ϩⲟ ⲛ̀ⲛⲉϥⲁ̀ⲅⲓⲟⲥ ⲙ̀ⲙⲁⲑ̀ⲧⲑⲥ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ ⲉⲟ̀ⲩⲁⲃ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ. Ϫⲉ ϭⲓ ⲛⲱⲧⲉⲛ ⲛ̀Ⲟⲩⲡ̀ⲛⲉⲩⲙⲁ Ⲉϥⲟⲩⲁⲃ: ⲛⲑⲉ̀ⲧⲉⲧⲉⲛⲛⲁⲭⲁ ⲛⲟⲩⲛⲟⲃⲓ ⲛⲱⲟⲩ ⲉ̀ⲃⲟⲗ ⲥⲉⲭⲑ ⲛⲱⲟⲩ ⲉ̀ⲃⲟⲗ: ⲟⲩⲟϩ ⲛⲑⲉ̀ⲧⲉⲧⲉⲛⲛⲁⲁ̀ⲙⲟⲛⲓ ⲙ̀ⲙⲱⲟⲩ ⲥⲉⲛⲁⲁ̀ⲙⲟⲛⲓ ⲙ̀ⲙⲱⲟⲩ.",
-            "Il souffla sur le visage de Ses saints disciples et purs apôtres en disant: \"Recevez Le Saint Esprit, ceux à qui vous remettrez les péchés, ils leur seront remis; ceux à qui vous les retiendrez, ils leur seront retenus.\"",
+            'Il souffla sur le visage de Ses saints disciples et purs apôtres en disant: "Recevez Le Saint Esprit, ceux à qui vous remettrez les péchés, ils leur seront remis; ceux à qui vous les retiendrez, ils leur seront retenus."',
             "",
             "ونفخ في وجه تلاميذه القديسين، ورسله الأطهار قائلا: اقبلوا الروح القدس، من غفرتم لهم خطاياهم غفرت، ومن أمسكتموها عليهم أمسكت.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
             "",
             "Entre la fête de l’ascension et les Pentecôtes",
             "",
             "من عيد الصعود إلى العنصرة يضيف الكاهن الاتى:",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲟⲩⲟϩ ⲙⲉⲛⲉⲛⲥⲁ ⲙ̅ (ϩ̀ⲙⲉ) ⲛ̀ⲉ̀ϩⲟⲟⲩ ⲁϥϣⲉⲛⲁϥ ⲉ̀ⲡ̀ϣⲱⲓ ⲉ̀ⲛⲓⲫⲑⲟⲩⲓ̀: ⲁϥϩⲉⲙⲥⲓ ⲥⲁⲟⲩⲓ̀ⲛⲁⲙ ⲙ̀Ⲡⲉϥⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲟ̀ⲥ: ⲁϥⲟⲩⲱⲣⲡ ⲛⲁⲛ ⲙ̀Ⲡⲓⲡⲁⲣⲁⲕⲗⲑⲧⲟⲛ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲛ̀ⲧⲉ ϯⲙⲉⲙ̀ⲑⲓ ⲙ̀ⲫ̀ⲣⲑϯ ⲛ̀ϩⲁⲛⲗⲁⲥ ⲛ̀ⲭ̀ⲣⲱⲙ.",
             "Après quarante jours Il est monté aux cieux, et s’est assis à la droite de Son bon Père et envoya Le Paraclet, L’Esprit de la vérité comme des langues de feu.",
             "",
             "وبعد أربعين يوماً صعد إٍلى السموات، وجلس عن يمين أبيه الصالح، وأرسل لنا المعزى روح الحق مثل ألسنة نار.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
             "",
             "",
             "",
             "ثم يكمل الكاهن:ـ",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Priest",
             "Ⲉⲃ̀ⲉ ⲫⲁⲓ ⲧⲉⲛϯϩⲟ ⲉ̀ⲣⲟⲕ Ⲡⲉⲛⲛⲑⲃ: ⲙⲁⲧⲟⲩⲃⲟⲛ ⲉ̀ⲃⲟⲗ ϩⲁ ϣⲟⲃⲓ ⲛⲓⲃⲉⲛ: ϫⲉ ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ: ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ: ⲉ̀ⲧⲱⲃϩ ⲙ̀ⲙⲟⲕ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲉ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
-            "Pour cela, nous T’invoquons O notre Maître, purifie nous de toute hypocrisie, afin que d’un cœur net, nous osions, par faveur et sans crainte, Te supplier, O Dieu, Le Père qui est aux cieux en disant: \"Notre père …etc.\"",
+            'Pour cela, nous T’invoquons O notre Maître, purifie nous de toute hypocrisie, afin que d’un cœur net, nous osions, par faveur et sans crainte, Te supplier, O Dieu, Le Père qui est aux cieux en disant: "Notre père …etc."',
             "",
-            "من أجل هذا نسألك يا سيدنا طهرنا من كل رياء، لكي بقلب طاهر نجرأ بدالة بغير خوف، أن نطلب إليك يا اللّه الآب الذي في السموات، ونقول: \"أبانا الذي ...\"",
+            'من أجل هذا نسألك يا سيدنا طهرنا من كل رياء، لكي بقلب طاهر نجرأ بدالة بغير خوف، أن نطلب إليك يا اللّه الآب الذي في السموات، ونقول: "أبانا الذي ..."',
         ],
     ],
     [
@@ -9821,7 +9958,7 @@ PrayersArray = [[
             "Ϫⲉ ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ: ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ: ⲉ̀ⲱϣ ⲟⲩⲃⲉ Ⲡⲉⲕⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲉ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
             "",
             "",
-            "لكي بقلب طاهر نجرأ بدالة بغير خوف، أن نصرخ نحو أبيك القدوس الذي في السموات، ونقول \"أبانا الذي...\"",
+            'لكي بقلب طاهر نجرأ بدالة بغير خوف، أن نصرخ نحو أبيك القدوس الذي في السموات، ونقول "أبانا الذي..."',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -9847,23 +9984,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -9875,9 +10012,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -9903,23 +10040,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -9931,9 +10068,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -9959,23 +10096,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -9987,9 +10124,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10015,23 +10152,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10043,9 +10180,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10071,23 +10208,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10099,9 +10236,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10127,23 +10264,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10155,9 +10292,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10183,23 +10320,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10211,9 +10348,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10239,23 +10376,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10267,9 +10404,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10295,23 +10432,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10323,9 +10460,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10351,23 +10488,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10379,9 +10516,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10407,23 +10544,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10435,9 +10572,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10463,23 +10600,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10491,9 +10628,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10519,23 +10656,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10547,9 +10684,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10575,23 +10712,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10603,9 +10740,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10631,23 +10768,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10659,9 +10796,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10687,23 +10824,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10715,9 +10852,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
     ],
     [
@@ -10745,23 +10882,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10773,9 +10910,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10801,23 +10938,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10829,9 +10966,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10857,23 +10994,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10885,9 +11022,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10913,23 +11050,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10941,9 +11078,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -10969,23 +11106,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -10997,9 +11134,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11025,23 +11162,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11053,9 +11190,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11081,23 +11218,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11109,9 +11246,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11137,23 +11274,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11165,9 +11302,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11193,23 +11330,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11221,9 +11358,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11249,23 +11386,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11277,9 +11414,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11305,23 +11442,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11333,9 +11470,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11361,23 +11498,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11389,9 +11526,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11417,23 +11554,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11445,9 +11582,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11473,23 +11610,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11501,9 +11638,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11529,23 +11666,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11557,9 +11694,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Title",
@@ -11585,23 +11722,23 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : \" Que disent les gens de Moi ?\".",
+            'Tu es Pierre, et sur ce roc, je bâtirai mon Eglise, et les portes de l’enfer ne pourront rien contre elle. Ceci fut lorsque tu interrogeas tes purs disciples leur demandant : " Que disent les gens de Moi ?".',
             "",
-            "أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: \"من يقول الناس أني أنا ؟\".",
+            'أنت بطرس وعلى هذه الصخرة سأبني كنيستي وأبواب الجحيم لن تقوي عليها هذا الذي عندما سألت تلاميذك الأطهار قائلًا لهم: "من يقول الناس أني أنا ؟".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Il cria en disant : \"Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde\". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.",
+            'Il cria en disant : "Tu es le Christ, le Fils de Dieu vivant, le Sauveur du monde". Heureux es-tu Pierre, car ce ne sont pas la chair et le sang qui t’ont révélé cela, mais l’esprit de Dieu qui repose sur toi. Celui qui t’a renié devant la servante, t’a reconnu devant les rois et les gouverneurs.',
             "",
-            "صرخ قائلًا: \"أنت هو المسيح ابن الله الحي مخلص العالم\". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.",
+            'صرخ قائلًا: "أنت هو المسيح ابن الله الحي مخلص العالم". طوباك يا بطرس فإن دمًا ولحمًا لم يعلن لك ذلك لكن روح الله الحال فيك. والذي أنكرك امام الجارية أعترف بك أمام الملوك والولاة.',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : \"Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons\".",
+            'Quant à Paul, lui qui pendant longtemps persécutait, tu en as fait un élément choisi portant ton saint nom. Sur son chemin vers Damas, pour aller arrêter les chrétiens et les torturer, une lumière du ciel resplendit aussitôt et il entendit une voix du ciel lui disant : "Saül, Saül, pourquoi me persécutes-tu ? Il te serait dur de regimber contre les aiguillons".',
             "",
-            "أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: \"شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس\".",
+            'أما بولس هذا الذي ظل طاردًا زمانًا طويلًا صيرته إناءًا مختارًا يحمل اسمك القدوس، فيما هو ذاهب إلى دمشق ليقبض على المسيحيين ويعذبهم، بغتة أشرق نور من السماء حوله وسمع صوتًا من السماء يقول به: "شاول، شاول، لماذا تضطهدني، صعب عليك أن ترفس مناخس".',
         ],
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
@@ -11613,9 +11750,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.ApostlesFast||0000&C=Priest",
             "",
-            "Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : \"Notre père …etc.\".",
+            'Ô Dieu qui a accordé à ses apôtres ces grâces immenses, accorde-nous, nous les pécheurs, le pardon de nos péchés, nos offenses et nos iniquités, afin que nous nous adressions à toi avec action de grâces et te dire : "Notre père …etc.".',
             "",
-            "يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: \"أبانا الذي في السموات\".",
+            'يا الله الذي أنعم على رسوليه بتلك النعم الجزيلة أنعم علينا نحن الخطاة بغفران خطايانا وذنوبنا وآثامنا كي ندعوك بشكر: "أبانا الذي في السموات".',
         ],
     ],
     [
@@ -11748,9 +11885,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$Seasons.LordFeast&C=Priest",
             "Ⲫⲑⲉ̀ⲧⲁϥϯⲥ̀ⲃⲱ ⲛ̀ⲛⲉϥⲥⲱⲧⲡ ⲙ̀ⲙⲁⲑ̀ⲧⲑⲥ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ ⲉⲟ̀ⲩⲁⲃ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲉ̀ϣⲱⲡ ⲁ̀ⲣⲉⲧⲉⲛϣⲁⲛⲉⲣⲡ̀ⲣⲟⲥⲉⲩⲭⲉⲥⲉ̀ ⲧⲱⲃϩ ⲙ̀ⲡⲁⲓⲣⲑϯ ⲟⲩⲟϩ ⲁ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ...",
-            "Il a enseigné Ses disciples élus et Ses saints apôtres en disant: quand vous priez demandez ainsi et dites : \"Notre père …etc.\".",
+            'Il a enseigné Ses disciples élus et Ses saints apôtres en disant: quand vous priez demandez ainsi et dites : "Notre père …etc.".',
             "",
-            "الذي علَّم خواصه التلاميذ ورسله القديسين قائلا لهم : \"متى صليتم فاطلبوا هكذا وقولوا: أبانا الذي في السموات...\"",
+            'الذي علَّم خواصه التلاميذ ورسله القديسين قائلا لهم : "متى صليتم فاطلبوا هكذا وقولوا: أبانا الذي في السموات..."',
         ],
     ],
     [
@@ -11766,7 +11903,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "يا حمل الله الذي بأوجاعك حملت خطايا العالم، بتحننك إمح آثامنا يا وحيد الله الذي بآلامك طهرت أدناس المسكونة بمراحمك طهر أدناس نفوسنا يا مسيح الله الذي بموتك قتلت الموت الذي قتل الجميع بقوتك أقم موت نفوسنا يا قابل القرابين الذي بدلًا عن الخطاة قدمت ذاتك، إقبل توبتنا نحن الخطاة، لأننا بدون دالة تقدمنا إلى حضرتك قارعين باب تعطفك، فهب لنا يا غنيًا بالمراحم البرء من كنوز أدويتك إشف HYPERLINK \"https://st-takla.org/Lyrics-Spiritual-Songs/Words-of-Coptic-Alhan-Tasbeha-Kodas/Arabic-Coptic-Liturgy-Lyrics/5-Al-Kesam-Prayers/20-Kesma-Al-Kedis-Kirollos.html\" l \"(1)\" أيها الرؤوف نفوسنا الشقية بمراحم أسرارك المحيية طهر أجسادنا إغسلنا من آثامنا، اجعلنا أهلًا لحلول روحك الطاهر في نفوسنا أنر عقولنا لنعاين سبحك نق أفكارنا وأخلطنا بمجدك حبك أنزلك إلى هبوطنا نعمتك تصعدنا إلى علوك. تحننك غصبك وتجسمت بلحمنا. أظهرت إستنارك للعيان. أظهر في نفوس عبيدك مجد أسرارك الخفية، وعند إصعاد الذبيحة على مذبحك تضمحل الخطية من أعضائنا بنعمتك. عند نزول مجدك على أسرارك ترفع عقولنا لمشاهدة جلالك عند إستحالة الخبز والخمر إلى جسدك ودمك تتحول نفوسنا إلى مشاركة مجدك وتتحد نفوسنا بألوهيتك أخلق فينا يا ربنا وإلهنا قلبًا طاهرًا وأسكن روحك في باطننا جدد حواسنا بقوتك وصيرنا أهلًا لموهبتك من كأس دمك نشرب أعطنا مذاقه روحية لنستطعم مذاقة أسرارك المحيية. نتقدم إلى حضرتك واثقين برحمتك وأنت تحل داخلنا بالمحبة إملأنا من خوفك وألهب قلوبنا بشوقك ألق فينا نعمتك طهر حواسنا برحمتك هب لنا دموعًا نقية وإغسلنا من أدناس الخطية صيرنا هياكل مقدسة لحلولك وأواني مطهرة لقبولك لكي بذوق لحمك نؤهل لذوق نعمتك وبشرب دمك نؤهل لحلاوة محبتك وهبت لنا أن نأكل لحمك علانية أهلنا للإتحاد بك خفية وهبت لنا أن نشرب كأس دمك طاهرًا أهلنا أن نمتزج بطهارتك سرًا وكما أنك واحد في أبيك وروحك القدوس نتحد نحن بك وأنت فينا ويكمل قولك ويكون الجميع واحدًا فينا لكي بدالة ندعو الله أباك أبًا لنا ونقول بصوت جهوري: \"أبانا الذي في السموات\"",
+            'يا حمل الله الذي بأوجاعك حملت خطايا العالم، بتحننك إمح آثامنا يا وحيد الله الذي بآلامك طهرت أدناس المسكونة بمراحمك طهر أدناس نفوسنا يا مسيح الله الذي بموتك قتلت الموت الذي قتل الجميع بقوتك أقم موت نفوسنا يا قابل القرابين الذي بدلًا عن الخطاة قدمت ذاتك، إقبل توبتنا نحن الخطاة، لأننا بدون دالة تقدمنا إلى حضرتك قارعين باب تعطفك، فهب لنا يا غنيًا بالمراحم البرء من كنوز أدويتك إشف HYPERLINK "https://st-takla.org/Lyrics-Spiritual-Songs/Words-of-Coptic-Alhan-Tasbeha-Kodas/Arabic-Coptic-Liturgy-Lyrics/5-Al-Kesam-Prayers/20-Kesma-Al-Kedis-Kirollos.html" l "(1)" أيها الرؤوف نفوسنا الشقية بمراحم أسرارك المحيية طهر أجسادنا إغسلنا من آثامنا، اجعلنا أهلًا لحلول روحك الطاهر في نفوسنا أنر عقولنا لنعاين سبحك نق أفكارنا وأخلطنا بمجدك حبك أنزلك إلى هبوطنا نعمتك تصعدنا إلى علوك. تحننك غصبك وتجسمت بلحمنا. أظهرت إستنارك للعيان. أظهر في نفوس عبيدك مجد أسرارك الخفية، وعند إصعاد الذبيحة على مذبحك تضمحل الخطية من أعضائنا بنعمتك. عند نزول مجدك على أسرارك ترفع عقولنا لمشاهدة جلالك عند إستحالة الخبز والخمر إلى جسدك ودمك تتحول نفوسنا إلى مشاركة مجدك وتتحد نفوسنا بألوهيتك أخلق فينا يا ربنا وإلهنا قلبًا طاهرًا وأسكن روحك في باطننا جدد حواسنا بقوتك وصيرنا أهلًا لموهبتك من كأس دمك نشرب أعطنا مذاقه روحية لنستطعم مذاقة أسرارك المحيية. نتقدم إلى حضرتك واثقين برحمتك وأنت تحل داخلنا بالمحبة إملأنا من خوفك وألهب قلوبنا بشوقك ألق فينا نعمتك طهر حواسنا برحمتك هب لنا دموعًا نقية وإغسلنا من أدناس الخطية صيرنا هياكل مقدسة لحلولك وأواني مطهرة لقبولك لكي بذوق لحمك نؤهل لذوق نعمتك وبشرب دمك نؤهل لحلاوة محبتك وهبت لنا أن نأكل لحمك علانية أهلنا للإتحاد بك خفية وهبت لنا أن نشرب كأس دمك طاهرًا أهلنا أن نمتزج بطهارتك سرًا وكما أنك واحد في أبيك وروحك القدوس نتحد نحن بك وأنت فينا ويكمل قولك ويكون الجميع واحدًا فينا لكي بدالة ندعو الله أباك أبًا لنا ونقول بصوت جهوري: "أبانا الذي في السموات"',
         ],
     ],
     [
@@ -11824,7 +11961,7 @@ PrayersArray = [[
             "Ϫⲉ ⲓⲥ ⲫⲁⲓ ⲁϥϭⲓⲛⲉⲙ ⲛⲉⲕⲥ̀ⲫⲟⲧⲟⲩ: ϥ̀ⲛⲁⲱ̀ⲗⲓ ⲛ̀ⲛⲉⲕⲁ̀ⲛⲟⲙⲓⲁ: ⲟⲩⲟϩ ⲛⲉⲕⲛⲟⲃⲓ ⲧⲑⲣⲟⲩ ϥ̀ⲛⲁⲧⲟⲩⲃⲱⲟⲩ.",
             "“Voici, ceci a touché tes lèvres, ta faute est effacée, ton péché est pardonné.”",
             "",
-            "\"إن هذه قد لمست شفتيك ترفع آثامك، وتطهر جميع خطاياك.\"",
+            '"إن هذه قد لمست شفتيك ترفع آثامك، وتطهر جميع خطاياك."',
         ],
         [
             Prefix.fractionPrayer + "StCyrilForFather&D=0000&C=Priest",
@@ -11859,7 +11996,7 @@ PrayersArray = [[
             "Ⲁⲗⲗⲁ ⲁ̀ⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ ⲙ̀Ⲡⲉⲕⲡ̀ⲛⲉⲩⲙⲁ ⲉ̅̅̀ⲩ̅. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ ⲛⲉⲙ ⲟⲩⲥⲩⲛⲓⲇⲑⲥⲓⲥ ⲉ̀ⲁⲥϭⲓⲟⲩⲱⲓⲛⲓ: ϧⲉⲛ ⲟⲩϩⲟ ⲛ̀ⲁⲧϭⲓϣⲓⲡⲓ ⲛⲉⲙ ⲟⲩⲛⲁϩϯ ⲛ̀ⲁⲧⲙⲉⲧϣⲟⲃⲓ: ϧⲉⲛ ⲟⲩⲁ̀ⲅⲁⲡⲑ ⲉⲥϫⲑⲕ ⲉ̀ⲃⲟⲗ ⲛⲉⲙ ⲟⲩϩⲉⲗⲡⲓⲥ ⲉⲥⲧⲁϫⲣⲑⲟⲩⲧ. Ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛ̀ⲁⲧⲉⲣϩⲟϯ ⲉ̀ϫⲱ ⲛ̀ϯⲉⲩⲭⲑ ⲉ̅̅̀ⲩ̅. :ⲑⲉ̀ⲧⲁ ⲡⲉⲕⲙⲉⲛⲣⲓⲧ ⲛ̀Ϣⲑⲣⲓ ⲧⲑⲓⲥ ⲉ̀ⲧⲟⲧⲟⲩ ⲛ̀ⲛⲑⲉ̀ⲧⲉ ⲛⲟⲩϥ ⲛ̀ⲁ̀ⲅⲓⲟⲥ ⲙ̀ⲙⲁⲑ̀ⲧⲑⲥ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ ⲉ̅̅̀ⲩ̅ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ ⲛⲱⲟⲩ. Ϫⲉ ⲛ̀ⲥⲑⲟⲩ ⲙⲉⲛ ⲅⲁⲣ ⲛⲓⲃⲉⲛ ⲉ̀ϣⲱⲡ ⲁ̀ⲣⲉⲧⲉⲛϣⲁⲛⲉⲣⲡ̀ⲣⲟⲥⲉⲩⲭⲉⲥⲉ̀: ⲧⲱⲃϩ ⲙ̀ⲡⲁⲓⲣⲑϯ ⲟⲩⲟϩ ⲁ̀ϫⲟⲥ. Ϫⲉ ⲡⲉⲛⲒⲱⲧ...",
             "Mais accorde nous Ton Esprit Saint, afin qu’avec un cœur net et une volonté éclairée et une face sans honte, une foi sans hypocrisie, avec tout amour parfait une espérance qui demeure nous osions par faveur et sans crainte de prier la sainte prière qu’a donné Ton Fils bien-aimé à Ses saints disciples et à Ses purs apôtres en leurs disant qu’en tout temps si vous priez dites ainsi:",
             "",
-            "بل أنعم علينا بروحك القدوس. لكيْ بقلب طاهر، وسريرة مستنيرة، بوجه غير مخزي، وإيمان بغير رياء، بمحبة كاملة ورجاء ثابت. نجسر بدالة، بغير خوف، أن نقول الصلاة المقدسة التي أعطاها ابنك الحبيب لتلاميذه القديسين، ورسله الأطهار قائلاً لهم: \"إنه في كل زمان إذا صليتم فاطلبوا: أبانا الذي ...",
+            'بل أنعم علينا بروحك القدوس. لكيْ بقلب طاهر، وسريرة مستنيرة، بوجه غير مخزي، وإيمان بغير رياء، بمحبة كاملة ورجاء ثابت. نجسر بدالة، بغير خوف، أن نقول الصلاة المقدسة التي أعطاها ابنك الحبيب لتلاميذه القديسين، ورسله الأطهار قائلاً لهم: "إنه في كل زمان إذا صليتم فاطلبوا: أبانا الذي ...',
         ],
     ],
     [
@@ -11903,569 +12040,649 @@ PrayersArray = [[
             "",
             "",
             "",
-            "هكذا نحن أيضًا الخطاة الضعفاء نطلب إليك يا الله محب البشر بارك إكليل هذه السنة بصلاحك وطهرنا من كل دنس الجسد والروح واجعلنا مستحقين أن ننال من خيراتك غير الموصوفة خلاصًا لنفوسنا وأجسادنا وأرواحنا لكي بقلب طاهر ونفس مستنيرة نجسر بدالة بغير خوف أن نصرخ نحوك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'هكذا نحن أيضًا الخطاة الضعفاء نطلب إليك يا الله محب البشر بارك إكليل هذه السنة بصلاحك وطهرنا من كل دنس الجسد والروح واجعلنا مستحقين أن ننال من خيراتك غير الموصوفة خلاصًا لنفوسنا وأجسادنا وأرواحنا لكي بقلب طاهر ونفس مستنيرة نجسر بدالة بغير خوف أن نصرخ نحوك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Title",
             "",
             "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)",
             "",
             " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (أيها السيد الرب إلهنا الخالق غير المرئي)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫ̀ⲛⲑⲃ Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ Ⲡⲓⲇⲑⲙⲓⲟⲩⲣⲅⲟⲥ ⲛ̀ⲁ̀ⲟ̀ⲣⲁⲧⲟⲥ Ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ ⲛ̀ⲁⲧⲣⲉⲡⲧⲟⲥ ⲕⲉ ⲁ̀ⲙⲉⲧⲣⲓⲧⲟⲥ. Ⲫⲑⲉ̀ⲧⲁϥⲟⲩⲱⲣⲡ ⲙ̀ⲡⲉϥⲟⲩⲱⲓⲛⲓ ⲛ̀ⲁ̀ⲗⲑⲓ̀ⲛⲟⲥ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲑⲥ ⲛ̀Ϣⲑⲣⲓ Ⲓⲑⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲓⲗⲟⲅⲟⲥ ⲛ̀ⲁⲓⲇⲓⲟⲥ.",
             "Ô Maître Seigneur, notre Dieu le créateur l’invisible, l'infini, l'invariable et immesurable qui a envoyé Sa lumière véritable: Son Fils unique Jésus Christ Le Logos éternel.",
             "",
             "أيها السيد الرب إلهنا الخالق، غير المرئي، غير المحوى، غير المستحيل، غير المفحوص. الذي أرسل نوره الحقيقي، ابنه الوحيد يسوع المسيح، الكلمة الذاتي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲫⲑⲉⲧⲭⲑ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀ⲡⲁⲧⲣⲓⲕⲟⲛ ⲇⲓⲁⲡⲁⲛⲧⲟⲥ ⲁϥⲓ̀ ⲁϥϣⲱⲡⲓ ϧⲉⲛ ϯⲙⲑⲧⲣⲁ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲓⲕⲑ ⲁ̀ⲙⲟⲗⲩⲛⲧⲟⲥ ⲁⲥⲙⲁⲥϥ ⲉⲥⲟⲓ ⲙ̀ⲡⲁⲣⲉ̀ⲛⲟⲥ ⲉⲥⲧⲟⲃ ⲛ̀ϫⲉ ⲧⲉⲥⲡⲁⲣⲉ̀ⲛⲓⲁ.",
             "Celui qui demeure dans le sein du Père pour toujours. Il est venu et a habité dans le sein immaculé de la Vierge; elle l’a enfanté tout en étant vierge et le sceau de sa virginité n’a pas été rompu.",
             "",
             "الكائن في حضنه الأبوي كل حين، أتي وحل في الحشاء البتولي غير الدنس، ولدته وهي عذراء، وبتوليتها مختومة (وبكوريتها دائمة).",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲉ̀ⲣⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϩⲱⲥ ⲉ̀ⲣⲟϥ ⲛⲉⲙ ⲛⲓⲥ̀ⲧ̀ⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲁ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲣϩⲩⲙⲛⲟⲥ ⲉ̀ⲣⲟϥ ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲥⲁⲃⲁⲱ ̀ⲟ̀ ⲟⲩⲣⲁⲛⲟⲥ ⲕⲉ ⲑ̀ⲅⲑ ⲙⲉϩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲉⲕⲱ̀ⲟⲩ ⲉⲟ̀ⲩⲁⲃ.",
-            "Les anges Le louent et les forces célestes Lui chantent en disant: \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant: "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: \"قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه، وأجناد السموات ترتل له، صارخين قائلين: "قدوس، قدوس، قدوس. رب الجنود، السماء والأرض مملوءتان من مجدك الأقدس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Nativity||$Seasons.NativityFast||0000&C=Priest",
             "Ⲡⲁⲓⲣⲑϯ ⲁ̀ⲛⲟⲛ ϩⲱⲛ ϧⲁ ⲛⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲁ̀ⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲛⲉⲙⲱⲟⲩ Ⲡⲉⲛⲛⲑⲃ Ⲡⲓⲁ̀ⲅⲁⲟ̀ⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ. Ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ϥ̀ⲟⲩⲁⲃ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲛⲉⲙⲁϥ ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲟ̀ⲩⲁⲃ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϥⲁⲓ ⲛ̀ⲛⲉⲛⲃⲁⲗ ⲉ̀ⲡ̀ϣⲱⲓ ϩⲁⲣⲟⲕ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϫⲟⲥ.",
-            "De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : \"Notre père …etc.\"",
+            'De même nous aussi les faibles, rends nous dignes avec eux, Ô notre Maître bon et Philanthrope, de Te louer avec un cœur net, avec Lui et Le Saint Esprit, La Trinité toute sainte et consubstantielle; et de lever nos yeux en haut vers Toi, Ô Père saint qui est aux cieux et en disant : "Notre père …etc."',
             "",
-            "هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: \"أبانا الذي ...\".",
+            'هكذا أيضاً نحن الضعفاء، الخطاة، اجعلنا مستحقين معهم يا سيدنا الصالح محب البشر. لكي بقلب طاهر، نسبحك معه مع الروح القدس، الثالوث القدوس المساوي، ونرفع أعيننا إلى فوق، إليك أيها الآب القدوس الذي في السموات ونقول: "أبانا الذي ...".',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Nativity&C=Title",
@@ -12500,7 +12717,7 @@ PrayersArray = [[
             "",
             "Ezéchiel aussi le grand parmi les prophètes prédit en disant : \"Il me ramena vers la porte extérieure du sanctuaire, du côté de l'orient. Mais elle était fermée. Et l'Éternel me dit : Cette porte sera fermée, elle ne s'ouvrira point, et personne n'y passera, car l'Éternel, le Dieu d'Israël est entré par là. Elle restera fermée. Le grand et sage prophète Ezéchiel reprend en disant : \"Et voici je voyais un char élevé au ciel et quatre visages autour du char, un visage de lion, un visage de bœuf, un visage d’homme et un visage d’aigle dans le lieu vers lequel se dirige le char, et les poulies prenaient la direction du char, et une main d’homme sous le char. J’entendis leurs voix au-dessus des chérubins qui criaient et disaient : \"Viens, viens homme de Dieu et prophétise\". La voix ressemblait à celle du Seigneur Sabaoth que j’entendis la première fois près du fleuve de Kebar et qui me disait : \"ô homme de Dieu\".",
             "",
-            "حزقيال أيضًا العظيم في الأنبياء تنبأ قائلًا: رأيت بابًا في المشارق ومختومًا بخاتم عجيب ولم يدخله إلا رب القوات دخل وخرج وهو مغلق كما كان بحاله. وعاد هذا النبي الحكيم حزقيال قائلًا: هوذا إنني أبصرت مركبة مرفوعة في السماء وأربعة اوجه حول المركبة. وجه أسد ووجه ثور ووجه إنسان ووجه نسر بالموضع الذي تتوجه إليه المركبة والبكرات تسير في اتجاه المركبة. ويد إنسان من تحت المركبة، سمعت صوتهم فوق الشاروبيم صرخ قائلًا: \"تعال، تعال، يا رجل الله تنبأ وأن ذلك الصوت يشبه صوت رب الصاباؤوت الذي سمعته لأول مرة على نهر خوبار قائلًا لي: يا رجل الله، أيضًا",
+            'حزقيال أيضًا العظيم في الأنبياء تنبأ قائلًا: رأيت بابًا في المشارق ومختومًا بخاتم عجيب ولم يدخله إلا رب القوات دخل وخرج وهو مغلق كما كان بحاله. وعاد هذا النبي الحكيم حزقيال قائلًا: هوذا إنني أبصرت مركبة مرفوعة في السماء وأربعة اوجه حول المركبة. وجه أسد ووجه ثور ووجه إنسان ووجه نسر بالموضع الذي تتوجه إليه المركبة والبكرات تسير في اتجاه المركبة. ويد إنسان من تحت المركبة، سمعت صوتهم فوق الشاروبيم صرخ قائلًا: "تعال، تعال، يا رجل الله تنبأ وأن ذلك الصوت يشبه صوت رب الصاباؤوت الذي سمعته لأول مرة على نهر خوبار قائلًا لي: يا رجل الله، أيضًا',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Nativity&C=Priest",
@@ -12512,9 +12729,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Nativity&C=Priest",
             "",
-            "Isaïe qui aime la sagesse, rajoute et dit : \"Ce n’est ni un ange, ni un archange, mais Il est un avec Dieu le Père, qui demeure depuis tous les siècles\".",
+            'Isaïe qui aime la sagesse, rajoute et dit : "Ce n’est ni un ange, ni un archange, mais Il est un avec Dieu le Père, qui demeure depuis tous les siècles".',
             "",
-            "محب الحكمة النبي إشعياء قائلًا: \"ليس هو ملاكًا ولا رئيس ملائكة بل هو واحد مع الله الآب الذي قبل الدهور\".",
+            'محب الحكمة النبي إشعياء قائلًا: "ليس هو ملاكًا ولا رئيس ملائكة بل هو واحد مع الله الآب الذي قبل الدهور".',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Nativity&C=Priest",
@@ -12526,88 +12743,99 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Nativity&C=Priest",
             "",
-            "Pour cela, nous te supplions et nous t’implorons ô ami du genre humain, bénis nous, et manifeste pour nous la sanctification des oblations présentes par la descente de Ton Esprit-Saint sur ceux-ci, afin qu’avec un cœur pur nous osions crier à Dieu le Saint qui es aux cieux et dire : \"Notre père …\".",
+            'Pour cela, nous te supplions et nous t’implorons ô ami du genre humain, bénis nous, et manifeste pour nous la sanctification des oblations présentes par la descente de Ton Esprit-Saint sur ceux-ci, afin qu’avec un cœur pur nous osions crier à Dieu le Saint qui es aux cieux et dire : "Notre père …".',
             "",
-            "من أجل هذا نسأل ونتضرع إليك يا محب البشر باركنا أظهر لنا قدس هذه القرابين الموضوعة بحول روح قدسك عليها لكي بقلب طاهر نجسر أن نصرخ إلى الله القدوس الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'من أجل هذا نسأل ونتضرع إليك يا محب البشر باركنا أظهر لنا قدس هذه القرابين الموضوعة بحول روح قدسك عليها لكي بقلب طاهر نجسر أن نصرخ إلى الله القدوس الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Title",
             "",
             "",
             "",
             " قسمة عيد الغطاس وعيد يوحنا المعمدان وسنوي (يا الله الذي أنعم على زكريا من بعد الكبر)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲫ̀ⲛⲟⲩϯ ⲫⲑⲉ̀ⲧⲁϥⲉⲣϩ̀ⲙⲟⲧ ⲛ̀Ⲍⲁⲭⲁⲣⲓⲁⲥ ⲛ̀ⲟⲩϣⲑⲣⲓ ⲙⲉⲛⲉⲛⲥⲁ ϯⲙⲉⲧϧⲉⲗⲗⲟ: ⲟⲩⲟϩ ⲛ̀Ⲉ̀ⲗⲓⲥⲁⲃⲉⲧ ⲙⲉⲛⲉⲛⲥⲁ ϯⲙⲉⲧϧⲉⲗⲗⲱ ⲛⲉⲙ ϯⲙⲉⲧⲁⲧϭⲣⲑⲛ.",
             "",
             "",
             "يا الله الذي أنعم على زكريا من بعد الكبر وعلى أليصابات من بعد الشيخوخة والعُقم.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲁϥⲥⲁϫⲓ ⲛ̀ϫⲉ ⲡⲉϥⲗⲁⲥ ⲙⲉⲛⲉⲛⲥⲁ ⲡⲓⲭⲁⲣⲱϥ ⲟⲩⲟϩ ⲁϥⲥⲁϫⲓ ϧⲉⲛ ϩⲁⲛϩⲱⲥ ⲛⲉⲙ ϩⲁⲛⲇⲟⲝⲟⲗⲟⲅⲓⲁ ⲛⲉⲙ ϩⲁⲛⲙⲉⲧⲛⲓϣϯ.",
             "",
             "",
             "فنطق لسانه من بعد البُكم وتكلم بتسابيح وتماجيد وعظائم.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲟⲩⲟϩ Ⲉ̀ⲗⲓⲥⲁⲃⲉⲧ ⲁⲥⲉ̀ⲗⲑⲗ ⲉⲥϫⲱ ⲙ̀ⲙⲟⲥ ϫⲉ: ϥ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ϫⲉ Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ ⲫⲑⲉ̀ⲧⲁϥⲱ̀ⲗⲓ ⲙ̀ⲡⲁϣⲱϣ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ.",
             "",
             "",
-            "وتهللت أليصابات قائلة: \"مُبارك الرب الإله الذي نزع عاري من بين الناس.\"",
+            'وتهللت أليصابات قائلة: "مُبارك الرب الإله الذي نزع عاري من بين الناس."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲫⲑⲉ̀ⲧⲉ ϧⲉⲛ ⲡ̀ϫⲓⲛⲙⲓⲥⲓ ⲛ̀ⲧⲉ ⲛⲓϩⲓⲟⲙⲓ ⲙ̀ⲙⲟⲛ ϩ̀ⲗⲓ ⲉ̀ⲛⲁⲁϥ: ⲫⲑⲉ̀ⲧⲁϥⲉⲣⲙⲉⲣ̀ⲉ ⲉⲃ̀ⲑⲧϥ ⲟⲩⲟϩ ⲧⲉϥⲙⲉⲧⲙⲉⲣ̀ⲉ ⲟⲩⲙⲑⲓ ⲧⲉ.",
             "",
             "",
             "يا الذي ليس في مواليد النساء أعظم منه. الذي شهد عنه وشهادته حق هي.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ϫⲉ ⲁ̀ⲛⲟⲕ ⲁⲛ ⲡⲉ Ⲙⲁⲥⲓⲁⲥ ⲫⲑⲉⲧϫⲟⲩϣⲧ ⲉ̀ⲣⲟϥ: ⲫⲑⲉⲛ̀ⲑⲟⲩ ⲙⲉⲛⲉⲛⲥⲱⲓ ⲟⲩⲛⲓϣϯ ⲉ̀ⲣⲟⲓ ⲡⲉ.",
             "",
             "",
             "إني لست بماسيا المنتظر. الذي يأتي بعدي هو أعظم مني.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲫⲑⲉ̀ⲧⲁⲩϯ ⲛⲁϥ ⲛ̀ⲟⲩϩ̀ⲙⲟⲧ ⲛ̀ⲧ̀ϣⲉⲃⲓⲱ ⲛ̀ⲟⲩϩ̀ⲙⲟⲧ: ⲁϥⲓ̀ ϩⲁⲣⲟϥ ⲛ̀ϫⲉ Ⲫ̀ⲛⲑⲃ ⲛ̀ⲧⲉ ⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ ⲛ̀ⲧⲉϥϭⲓⲱⲙⲥ ϧⲉⲛ Ⲡⲓⲓⲟⲣⲇⲁⲛⲑⲥ ⲛ̀ⲓⲁⲣⲟ.",
             "",
             "",
             "الذي أعطى نعمة بَدَل نعمة. إذ اتاه سيد الكل مُعتمداً منه في نهر الأردن.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲟⲩⲟϩ ⲁϥⲛⲁⲩ ⲉ̀ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲩⲟⲩⲑⲛ ⲟⲩⲟϩ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ ⲉϥⲛⲑⲟⲩ ⲉ̀ⲡⲉⲥⲑⲧ ⲙ̀ⲫ̀ⲣⲑϯ ⲛ̀ⲟⲩϭⲣⲟⲙⲡⲓ.",
             "",
             "",
             "فرأى السموات مفتوحة والروح القدس نازلاً مثل حمامة.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲟⲩⲟϩ ⲓⲥ ⲟⲩⲥ̀ⲙⲑ ⲁⲥϣⲱⲡⲓ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀ ⲉⲥϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲫⲁⲓ ⲡⲉ Ⲡⲁϣⲑⲣⲓ Ⲡⲁⲙⲉⲛⲣⲓⲧ ⲉ̀ⲧⲁⲓϯⲙⲁϯ ⲛ̀ϧⲑⲧϥ.",
             "",
             "",
-            "وإذا صوت قد حدث من السموات قائلاً: \"هذا هو إبني الحبيب الذي به سررت.\"",
+            'وإذا صوت قد حدث من السموات قائلاً: "هذا هو إبني الحبيب الذي به سررت."',
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲫⲑⲉ̀ⲧⲉ ⲛⲉ ⲧⲉϥϩⲉⲃⲥⲱ ⲟⲩⲉ̀ⲃⲟⲗϧⲉⲛ ϩⲁⲛϥⲱⲓ ⲛ̀ϫⲁⲙⲟⲩⲗ ⲧⲉ: ⲟⲩⲟϩ ⲛⲁϥⲙⲑⲣ ⲛ̀ⲟⲩⲙⲟϫϧ ⲛ̀ϣⲁⲣ ⲉ̀ϫⲉⲛ ⲧⲉϥϯⲡⲓ: ⲧⲉϥϧ̀ⲣⲉ ⲇⲉ ⲛⲉ ⲟⲩϣ̀ϫⲉ ⲧⲉ ⲛⲉⲙ ⲟⲩⲉ̀ⲃⲓⲱ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ.",
             "",
             "",
             "الذي كان لباسه من وَبَر الإبل، وعلى حقويه مِنطَقَة من جلد، وكان طعامه جراداً وعسلاً برياً.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||0000&C=Priest",
             "Ⲓⲱⲁⲛⲛⲑⲥ ⲡ̀ϣⲑⲣⲓ ⲛ̀ϯⲉ̀ⲡⲁⲅⲅⲉⲗⲓⲁ: ⲁ̀ⲣⲓⲡ̀ⲣⲉⲥⲃⲉⲩⲓⲛ ⲉ̀ϩ̀ⲣⲑⲓ ⲉ̀ϫⲱⲛ ⲉⲃ̀ⲉ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲉⲙ ⲛⲉⲛⲡⲁⲣⲁⲡⲧⲱⲙⲁ ϫⲉ ϩⲓⲛⲁ ⲛ̀ⲧⲉⲛⲙⲟⲩϯ ⲉ̀ⲣⲟϥ ϧⲉⲛ ⲟⲩϣⲉⲡϩ̀ⲙⲟⲧ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ...",
             "",
             "",
-            "يا يوحنا يا إبن الموعد شفاعة من أجل خطايانا وذنوبنا لكي ندعوه بشكر قائلين: \"أبانا الذي...\"",
+            'يا يوحنا يا إبن الموعد شفاعة من أجل خطايانا وذنوبنا لكي ندعوه بشكر قائلين: "أبانا الذي..."',
         ],
     ],
     [
@@ -12623,7 +12851,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "لمجد صورة جوهريتك نخضع أيها المسيح إلهنا. أيها الكلمة الذاتي والشخص العجيب الذي لبس صورتنا انت الذي من أجلنا صرت عبدًا للكنيسة الجامعة حملت على هامتك إكليل الشوك من أجلنا أيها السيد وكللتنا بالمجد العجيب يا شعاع مجد الآب. أنت الذي كان بك كل شيء وكونتنا من العدم مما لم يكن أظهرت لنا غوامض حكمتك وخلقت الملائكة من أجلنا، ولأجلنا صنعت كل شيء أبدعتنا على صورتك ومثالك، ورسمت فينا صورة سلطانك ووضعت فينا موهبة النطق، يا كلمة الله، أخضعت تحت أيدينا كل شيء وسلطتنا على جميع حيوانات الحقل قتلت العداوة بالصليب وفي شخصك رسمت صورة المصالحة بيننا وبين أبيك. صيرت العبد حرًا وقربته، والصك القديم بجراحاتك مزقته وبالمسامير رسمت اسمي على كفك تذكارًا أبديًا أمام الأب كل حين كراع صالح سعيت ورائي أنا الضال وجملتني على منكبيك فرحًا وأتيت بي إلى مائدة السرور الخلاصية كأس الفرح أسقيني وبدهن الابتهاج المقدس مسحتني يا من لم يحسب أن يكون معادلًا لله خلسة بل أنت هو الأقنوم الذاتي ويد حكمة الله الآب، حينما وضع للبحر حدًا كنت أنت معه مشيرًا تنازلت من أجلي لشخص العبودية واحتملت ظلم الأشرار أتيت إلى اذبح مثل حمل تأديب سلامي كان عليك وبجراحاتك شفيتني من سم الموت تركت ظهرك للسياط ووجهك لم ترده عن خزي البصاق وخديك للاطمين أظهرت عظيم اهتمامك بي وأكملت ناموسك عني، ربطتني بكمالات الشريعة، وعزيتني بلبان العلم من قبل روحك القدوس، منطقتني بالقوة واتخذتني لك مسكنًا، صنعت لي وليمة النعمة ومن سم الحية شفيتني وأدوية الخلاص سلمتني لأنه هكذا أيها السيد عندما عدمت نفسي من شجرة الحياة أعطيتني مشتهيات الألوهية، وصيرتني معك واحدًا أعطيتني جسدك ودمك ذلك الذي بذلته عن حياة العالم، وسقيتني من ذلك العصير الخارج من جنبك الينبوع الغير المنقطع ينبوع الحياة، تلك المائدة التي فيها شفاء الأمم، يا شمس البر، وقدمتنا لأبيك أبناءًا وعلمتنا أن ندعو أباك أبا لنا ونقول بصوت مرتفع: \"أبانا الذي في السموات\".",
+            'لمجد صورة جوهريتك نخضع أيها المسيح إلهنا. أيها الكلمة الذاتي والشخص العجيب الذي لبس صورتنا انت الذي من أجلنا صرت عبدًا للكنيسة الجامعة حملت على هامتك إكليل الشوك من أجلنا أيها السيد وكللتنا بالمجد العجيب يا شعاع مجد الآب. أنت الذي كان بك كل شيء وكونتنا من العدم مما لم يكن أظهرت لنا غوامض حكمتك وخلقت الملائكة من أجلنا، ولأجلنا صنعت كل شيء أبدعتنا على صورتك ومثالك، ورسمت فينا صورة سلطانك ووضعت فينا موهبة النطق، يا كلمة الله، أخضعت تحت أيدينا كل شيء وسلطتنا على جميع حيوانات الحقل قتلت العداوة بالصليب وفي شخصك رسمت صورة المصالحة بيننا وبين أبيك. صيرت العبد حرًا وقربته، والصك القديم بجراحاتك مزقته وبالمسامير رسمت اسمي على كفك تذكارًا أبديًا أمام الأب كل حين كراع صالح سعيت ورائي أنا الضال وجملتني على منكبيك فرحًا وأتيت بي إلى مائدة السرور الخلاصية كأس الفرح أسقيني وبدهن الابتهاج المقدس مسحتني يا من لم يحسب أن يكون معادلًا لله خلسة بل أنت هو الأقنوم الذاتي ويد حكمة الله الآب، حينما وضع للبحر حدًا كنت أنت معه مشيرًا تنازلت من أجلي لشخص العبودية واحتملت ظلم الأشرار أتيت إلى اذبح مثل حمل تأديب سلامي كان عليك وبجراحاتك شفيتني من سم الموت تركت ظهرك للسياط ووجهك لم ترده عن خزي البصاق وخديك للاطمين أظهرت عظيم اهتمامك بي وأكملت ناموسك عني، ربطتني بكمالات الشريعة، وعزيتني بلبان العلم من قبل روحك القدوس، منطقتني بالقوة واتخذتني لك مسكنًا، صنعت لي وليمة النعمة ومن سم الحية شفيتني وأدوية الخلاص سلمتني لأنه هكذا أيها السيد عندما عدمت نفسي من شجرة الحياة أعطيتني مشتهيات الألوهية، وصيرتني معك واحدًا أعطيتني جسدك ودمك ذلك الذي بذلته عن حياة العالم، وسقيتني من ذلك العصير الخارج من جنبك الينبوع الغير المنقطع ينبوع الحياة، تلك المائدة التي فيها شفاء الأمم، يا شمس البر، وقدمتنا لأبيك أبناءًا وعلمتنا أن ندعو أباك أبا لنا ونقول بصوت مرتفع: "أبانا الذي في السموات".',
         ],
     ],
     [
@@ -12709,7 +12937,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "فنحن نسأل ونطلب من صلاحك يا محب البشر اقبل صلواتنا نحن المرئيين عبيدك من غير المرئيين واحسبنا مع الطقوس السمائية لكي نصرخ باستجابة الغلبة والظفر بأصوات لا تسكت وأفواه لا تصمت رافعين أيدينا إليك أيها الآب القدوس في السموات ونقول: \"ابانا الذي في السموات\"",
+            'فنحن نسأل ونطلب من صلاحك يا محب البشر اقبل صلواتنا نحن المرئيين عبيدك من غير المرئيين واحسبنا مع الطقوس السمائية لكي نصرخ باستجابة الغلبة والظفر بأصوات لا تسكت وأفواه لا تصمت رافعين أيدينا إليك أيها الآب القدوس في السموات ونقول: "ابانا الذي في السموات"',
         ],
     ],
     [
@@ -12788,60 +13016,66 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "ApiFanyous&D=0000&C=Priest",
             "",
-            "La Sagesse a envoyé ses serviteurs proclamer sans cesse, disant : \"Pour celui qui est simple elle se penche vers lui\". Et aux insensés elle dit : \"Venez manger de mon Corps et buvez de mon Sang. Abandonnez toute ignorance et vous vivrez\".",
+            'La Sagesse a envoyé ses serviteurs proclamer sans cesse, disant : "Pour celui qui est simple elle se penche vers lui". Et aux insensés elle dit : "Venez manger de mon Corps et buvez de mon Sang. Abandonnez toute ignorance et vous vivrez".',
             "",
-            "الحكمة أرسلت عبيدها ينادون على الدوام قائلين: \"مَنْ هو بسيط فتمل إليَّ.\" ولناقص الفهم تقول لهم: \"هلموا كلوا من خبزي واشربوا من دمي. أتركوا الجهالة عنكم فتحيوا.\"",
+            'الحكمة أرسلت عبيدها ينادون على الدوام قائلين: "مَنْ هو بسيط فتمل إليَّ." ولناقص الفهم تقول لهم: "هلموا كلوا من خبزي واشربوا من دمي. أتركوا الجهالة عنكم فتحيوا."',
         ],
         [
             Prefix.fractionPrayer + "ApiFanyous&D=0000&C=Priest",
             "",
-            "Quant à la Sagesse, c’est notre Sauveur Jésus-Christ, qui nous a sauvé avec le sacrifice de son Corps, et nous a racheté par son Sang répandu pour nous, et nous a choisi pour son Royaume éternel. C’est pour cela que nous t’implorons ô notre maître, de nous aider à trouver cette Sagesse venant de toi seul. Accepte cette oblation de nos mains, ainsi que nos jeûnes et nos prières, afin qu’avec la confiance des fils nous puissions te clamer ô notre père céleste en disant : \"Notre père …\".",
+            'Quant à la Sagesse, c’est notre Sauveur Jésus-Christ, qui nous a sauvé avec le sacrifice de son Corps, et nous a racheté par son Sang répandu pour nous, et nous a choisi pour son Royaume éternel. C’est pour cela que nous t’implorons ô notre maître, de nous aider à trouver cette Sagesse venant de toi seul. Accepte cette oblation de nos mains, ainsi que nos jeûnes et nos prières, afin qu’avec la confiance des fils nous puissions te clamer ô notre père céleste en disant : "Notre père …".',
             "",
-            "أما الحكمة فهي مخلصنا يسوع المسيح الذي فدانا بذبيحة جسده، واشترانا بسفك دمه، واختارنا لملكوته الأبدي. لهذا نسألك يا سيدنا أن تعطينا أن نجد الحكمة منك وحدك. وأن تقبل هذه الذبيحة من إيدينا وأن تقبل منا أصوامنا وصلواتنا. لكي بدالة البنين نصرخ إليك يا أبانا السماوي قائلين: \"يا أبانا الذي في السموات ...\".",
+            'أما الحكمة فهي مخلصنا يسوع المسيح الذي فدانا بذبيحة جسده، واشترانا بسفك دمه، واختارنا لملكوته الأبدي. لهذا نسألك يا سيدنا أن تعطينا أن نجد الحكمة منك وحدك. وأن تقبل هذه الذبيحة من إيدينا وأن تقبل منا أصوامنا وصلواتنا. لكي بدالة البنين نصرخ إليك يا أبانا السماوي قائلين: "يا أبانا الذي في السموات ...".',
         ],
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Title",
             "",
             "Oraison de fraction pour la fête de la circoncision et l’entrée au Temple (Nous louons et glorifions Le Dieu des dieux, Seigneur des seigneurs)",
             "",
             " قسمة عيد الختان ودخول أورشليم (نسبح ونمجد إله الآلهة ورب الأرباب)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
             "",
             "Nous louons et glorifions Le Dieu des dieux, Seigneur des seigneurs qui s’est incarné de la Vierge Marie, elle l’a accouché à Bethléem. Voici que l’ange de Dieu apparaît aux bergers pour leur annoncer la naissance merveilleuse, et ils sont venus et ils L’ont vu.",
             "",
             "نسبح ونمجد اله الالهة ورب الأرباب الذي تجسد من القديسة مريم العذراء ولدته في بيت لحم، واذا ملاك الرب قد ظهر للرعاة وبشرهم بميلاده العجيب فأتوا ونظروه.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
             "",
             "Notre Seigneur Jésus-Christ le Fils de Dieu véritable, a reçu la circoncision au huitième jour de sa naissance merveilleuse, selon la loi afin de nous affranchir de la circoncision du corps et afin de nous donner Son Esprit-Saint par la perfection.",
             "",
             "ربنا يسوع المسيح ابن الله الحقيقي قبل اليه الختان في اليوم الثامن لميلاده المجيد كعادة الناموس لكي يصيرنا أحرارا من ختان الجسد ولكى يعطينا روحه القدوس بالكمال.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
             "",
             "Lui qui est entré au temple dans les bras de sa mère la Vierge Marie et Joseph le charpentier après quarante jours de sa sainte naissance afin d’accomplir pour lui ce qui a été évoqué dans la loi.",
             "",
             "هذا الذي دخل إلى الهيكل على يدى أمه القديسة مريم العذراء ويوسف النجار بعد أربعين يوما من مولدة المقدس ليصنعا عنه كما جاء في الناموس.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
             "",
-            "Alors Simon le vieillard le porta dans ses bras et bénis Dieu en disant : \"Maintenant ô Maître laisse ton serviteur s’en aller en paix selon ta parole. Car mes yeux ont vu ton salut que tu as préparé devant tous les peuples\".",
+            'Alors Simon le vieillard le porta dans ses bras et bénis Dieu en disant : "Maintenant ô Maître laisse ton serviteur s’en aller en paix selon ta parole. Car mes yeux ont vu ton salut que tu as préparé devant tous les peuples".',
             "",
             "وحملة سمعان الشيخ على ذراعيه وبارك الله قائلا: الآن يا سيدى تطلق عبدك بسلام حسب قولك لأن عيني قد أبصرتا خلاصك الذي أعددته أمام جميع الشعوب.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.Circumcision||$copticFeasts.EntryToTemple&C=Priest",
             "",
-            "Maintenant ô maître illumine les yeux de nos cœurs et purifie nous entièrement dans l’âme, le corps et l’esprit afin qu’avec un cœur pur, des lèvres sans souillure, nous osions avec confiance et sans crainte crier vers ton Père Saint qui es aux cieux et dire : \"Notre père …etc.\".",
+            'Maintenant ô maître illumine les yeux de nos cœurs et purifie nous entièrement dans l’âme, le corps et l’esprit afin qu’avec un cœur pur, des lèvres sans souillure, nous osions avec confiance et sans crainte crier vers ton Père Saint qui es aux cieux et dire : "Notre père …etc.".',
             "",
-            "أنت الآن يا سيدنا أنر عيون قلوبنا وطهرنا كاملين في النفس والجسد والروح. لكي بقلب طاهر وشفتين نقيتين نجسر بغير خوف أن نصرخ نحو أبيك القدوس الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'أنت الآن يا سيدنا أنر عيون قلوبنا وطهرنا كاملين في النفس والجسد والروح. لكي بقلب طاهر وشفتين نقيتين نجسر بغير خوف أن نصرخ نحو أبيك القدوس الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
@@ -12885,7 +13119,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "هكذا أيضًا يا سيدنا نحن الضعفاء الخطاة عبيدك الطالبين رحمتك، تفضل أنعم لنا بسلامك وخلصنا كل حين بيمينك المحيية لكي بطهارة نتناول من هذه الأسرار النقية ونتطهر كلنا كاملين في أنفسنا وأجسادنا وأرواحنا ونجسر بدالة بغير خوف أن ندعوك يا الله الآب الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'هكذا أيضًا يا سيدنا نحن الضعفاء الخطاة عبيدك الطالبين رحمتك، تفضل أنعم لنا بسلامك وخلصنا كل حين بيمينك المحيية لكي بطهارة نتناول من هذه الأسرار النقية ونتطهر كلنا كاملين في أنفسنا وأجسادنا وأرواحنا ونجسر بدالة بغير خوف أن ندعوك يا الله الآب الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
@@ -12950,7 +13184,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "الله إقبلنا نحن أيضًا طاهرين بلا عيب أمامك ونقي بروحك القدوس وبسر القربان المحيي أرواحنا وأنفسنا وأجسادنا بل أيضًا أفكارنًا وقلوبنا ونياتنا حتى نجرؤ بمحبة غير ناقصة ودالة بغير مخادعة أن نصرخ نحو أيها الآب القدوس السماوي بالصلاة التي علمتها لتلاميذك الطهار قائلين: \"أباناالذي في السموات\"",
+            'الله إقبلنا نحن أيضًا طاهرين بلا عيب أمامك ونقي بروحك القدوس وبسر القربان المحيي أرواحنا وأنفسنا وأجسادنا بل أيضًا أفكارنًا وقلوبنا ونياتنا حتى نجرؤ بمحبة غير ناقصة ودالة بغير مخادعة أن نصرخ نحو أيها الآب القدوس السماوي بالصلاة التي علمتها لتلاميذك الطهار قائلين: "أباناالذي في السموات"',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.Apostles&C=Priest",
@@ -12969,95 +13203,108 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Title",
             "",
             "",
             "",
             " قسمة صوم وأعياد العذراء (يا الله الساكن في الأعالي والناظر من علو سماه)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا الله الساكن في الأعالي والناظر من علو سماه إلى قلوب المتواضعين من عبيده، الذي شاء أن يفتقدنا برحمته وأن يجيئ إلينا متجسدًا من الروح القدس ومن القديسة العذراء مريم.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من وعد أبانا آدم بالخلاص وثبت وعده المقدس لجميع الآباء بميلاده البتولي في ملئ الزمان من بكر بتول نقية وعفيفة قدسها وطهرها وملأها نعمة وفضها على نساء العالم. هي العذراء الدائمة البتولية العذراء كل حين مريم – حواء الجديدة فخر جنسنا والسماء الثانية الجسدانية.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من أحبنا وأراد من فيض حبه ورحمته ومن دلائل عدله وبره وثبوت حكمه وقضائه أن يفدينا من موت الخطية الأصلية ويرغ عنا عقوبتها الأبدية بأن يموت بدلًا عنا في جنس البشرية الذي أخذه من العذراء مريم أم الخلاص وكما كانت حواء الأولي أصل البلاء، هكذا صارت حواء الجديدة باب السماء.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من تجسد من البكر البتول، وأكرم بميلاده من العذراء دائمًا وكل حين البتولية الدائمة والعفة الكاملة وهي صورة البهاء الأولية التي خلق الله بها الأبوين الأولين أدم وحواء عندما كانا معًا في فردوس النعيم.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من شرف حواء الثانية بان سكن في أحشائها تسعة أسهر كاملة وكون منها بالروح القدس الذي حل عليها جسدًا بنفس بشرية إتحد به في أقنوم واحد وطبيعة واحدة وولد منها الكلمة الذي كان ولم يزل إلهًا مباركًا إلى الأبد.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من خرج من بطن العذراء وختوم البتولية مختومة يا من رضع من لبن العذراء وهو الساقي الخليقة من نعمته وتربي في حضنها ونام بين يديها وجلس على ركبتيها وهو الجالس على مركبة شاروبيمية وسجدت له الملائكة ورؤساء الملائكة الأطهار.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من شرف مصر بحضوره راكبًا على السحابة السريعة والخفيفة فإرتجت اوثان مصر من وجهه وذاب قلب مصر في داخلها ولم تكن السحابة السريعة الخفيفة إلا العذراء مريم في نقاءها ورقتها وطهارتها كل حين.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من شاء ان يكرم الأمومة في مريم العذراء وكان خاضعًا لها ودائمًا يلبي ندائها ويقبل شفاعتها ويستجيب صلواتها.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من أودع أمه العذراء عند تلميذه يوحنا وجعل لها يوحنا إبنا. وفي يوحنا وهبنا العذراء اما لنا وجعلنا لها بالإيمان أولادًا وبنينًا.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من لم يشأ للعذراء أم الخلاص وقد صارت تابوتًا مقدسًا سكن فيه الرب جسديًا أن يبقي هذا الجسد على الأرض فرفعه بعد موتها إلى السماء على أيدي الملائكة ورؤساء الملائكة القديسين.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
             "يا من شرفنا وشرف جنسنا بأن اتخذ من العذراء مريم جسدًا وصعد به إلى السماء فوجد فداءً أبديًا وجلس به على العرش فصرنا فيه جالسين عن يمين الآب.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.StMaryFeast||$Seasons.StMaryFast||2100&C=Priest",
             "",
             "",
             "",
-            "يا الله الرحوم ارحمنا وإغفر خطايانا وإقبل شفاعة أمك العذراء فينا وأجعلنا مستحقين للمس جسدك المقدس ودمك الكريم لكي بقلب طاهر ونفس مستنيرة ووجه غير مخزي وإيمان بلا رياء ومحبة كاملة ورجاء ثابت نصرخ نحو أبيك القدوس الذي في السموات ونصلي بشكر: \"أبنا الذي في السموات\"",
+            'يا الله الرحوم ارحمنا وإغفر خطايانا وإقبل شفاعة أمك العذراء فينا وأجعلنا مستحقين للمس جسدك المقدس ودمك الكريم لكي بقلب طاهر ونفس مستنيرة ووجه غير مخزي وإيمان بلا رياء ومحبة كاملة ورجاء ثابت نصرخ نحو أبيك القدوس الذي في السموات ونصلي بشكر: "أبنا الذي في السموات"',
         ],
     ],
     [
@@ -13092,9 +13339,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
             "Ⲟⲩⲟϩ ⲡⲓϣⲉ ϩ̀ⲙⲉ ϥ̀ⲧⲟⲩ ⲛ̀ϣⲟ (ⲡⲓⲣ̅ⲙ̅ⲇ̅) ⲛⲓⲡⲁⲣⲉ̀ⲛⲟⲥ ⲛ̀ⲁⲧⲱ̀ⲗⲉⲃ ⲥⲉϩⲱⲥ ⲉ̀Ⲡ̀ϭⲟⲓⲥ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ: ⲁ̀ⲙⲑⲛ: ⲁⲗⲗⲑⲗⲟⲩⲓⲁ.",
-            "Et les cent quarante quatre mille vierges non souillées louent Le Seigneur en disant: \"Saint, saint, saint. Amen. Alléluia\". Au nom du Père, du Fils et du Saint Esprit un seul Dieu, amen. Alléluia.",
+            'Et les cent quarante quatre mille vierges non souillées louent Le Seigneur en disant: "Saint, saint, saint. Amen. Alléluia". Au nom du Père, du Fils et du Saint Esprit un seul Dieu, amen. Alléluia.',
             "",
-            "والمائة وأربعون ألفاً البتوليين غير الدنسين يسبحون الرب قائلين: \"قدوس. قدوس. قدوس. آمين. الليلويا.\"",
+            'والمائة وأربعون ألفاً البتوليين غير الدنسين يسبحون الرب قائلين: "قدوس. قدوس. قدوس. آمين. الليلويا."',
         ],
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
@@ -13106,9 +13353,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
             "Ϫⲉ ϥ̀ⲟⲩⲁⲃ ⲛ̀ϫⲉ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ Ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: ⲁ̀ⲙⲑⲛ: ⲁⲗⲗⲑⲗⲟⲩⲓⲁ.",
-            "\"Saint est Dieu Le Père Le Pantocrator, Amen. Alléluia.",
+            '"Saint est Dieu Le Père Le Pantocrator, Amen. Alléluia.',
             "",
-            "\"قدوس الله الآب ضابط الكل. آمين. الليلويا.",
+            '"قدوس الله الآب ضابط الكل. آمين. الليلويا.',
         ],
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
@@ -13120,9 +13367,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
             "Ϥ̀ⲟⲩⲁⲃ ⲛ̀ϫⲉ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲟ̀ⲩⲁⲃ ⲙ̀ⲡⲁⲣⲁⲕⲗⲑⲧⲟⲛ: ⲁ̀ⲙⲑⲛ: ⲁⲗⲗⲑⲗⲟⲩⲁ.",
-            "Saint est Le Saint Esprit Le Paraclet, Amen. Alléluia\".",
+            'Saint est Le Saint Esprit Le Paraclet, Amen. Alléluia".',
             "",
-            "قدوس الروح القدس الباراقليط. آمين الليلويا.\"",
+            'قدوس الروح القدس الباراقليط. آمين الليلويا."',
         ],
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
@@ -13141,16 +13388,16 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
             "Ⲉⲃ̀ⲉ ⲫⲁⲓ ⲁ̀ Ⲡⲉⲛⲥⲱⲧⲑⲣ ⲛ̀ⲁ̀ⲅⲁⲟ̀ⲥ ⲱϣ ⲉ̀ⲃⲟⲗ ⲉϥϫⲱ ⲙⲙⲟⲥ: ϫⲉ Ⲡⲁⲥⲱⲙⲁ ⲟⲩϧ̀ⲣⲉ ⲙ̀ⲙⲑⲓ ⲧⲉ: ⲟⲩⲟϩ Ⲡⲁⲥ̀ⲛⲟϥ ⲟⲩⲥⲱ ⲙ̀ⲙⲑⲓ ⲡⲉ. Ⲫⲑⲉⲟ̀ⲩⲱⲙ ⲙ̀Ⲡⲁⲥⲱⲙⲁ ⲟⲩⲟϩ ⲉⲧⲥⲱ ⲙ̀Ⲡⲁⲥ̀ⲛⲟϥ ⲉϥⲉ̀ϣⲱⲡⲓ ⲛ̀ϧⲑⲧ: ⲟⲩⲟϩ ⲁ̀ⲛⲟⲕ ϩⲱ ⲉⲓⲉ̀ϣⲱⲡⲓ ⲛ̀ϧⲑⲧϥ.",
-            "Pour cela notre bon Seigneur cria en disant: \"Mon corps est une vraie nourriture, et mon sang est un vrai breuvage. Celui qui mange Mon corps et boit Mon sang demeure en Moi, et Moi en lui.\"",
+            'Pour cela notre bon Seigneur cria en disant: "Mon corps est une vraie nourriture, et mon sang est un vrai breuvage. Celui qui mange Mon corps et boit Mon sang demeure en Moi, et Moi en lui."',
             "",
-            "من أجل هذا صرخ مخلصنا الصالح قائلا: \"إن جسدي هو مأكل حق، ودمي مشرب حق. مَنْ يأكل جسدي ويشرب دمي يكون في وأنا أيضاً أكون فيه.\"",
+            'من أجل هذا صرخ مخلصنا الصالح قائلا: "إن جسدي هو مأكل حق، ودمي مشرب حق. مَنْ يأكل جسدي ويشرب دمي يكون في وأنا أيضاً أكون فيه."',
         ],
         [
             Prefix.fractionPrayer + "StMaryAndAngelsFeasts&D=0000&C=Priest",
             "Ⲧⲉⲛϯϩⲟ ⲉ̀ⲣⲟⲕ Ⲡⲉⲛⲛⲑⲃ ⲙⲁⲧⲟⲩⲃⲟ ⲛ̀ⲛⲉⲛⲯⲩⲭⲑ ⲛⲉⲙ ⲛⲉⲛⲥⲱⲙⲁ ⲛⲉⲙ ⲛⲉⲛⲡ̀ⲛⲉⲩⲙⲁ. Ϫⲉ ϩⲓⲛⲁ ϧⲉⲛ ⲟⲩϩⲑⲧ ⲉϥⲟⲩⲁⲃ: ⲛⲉⲙ ϩⲁⲛⲥ̀ⲫⲟⲧⲟⲩ ⲉⲩⲧⲟⲩⲃⲑⲟⲩⲧ: ⲛⲉⲙ ⲟⲩⲯⲩⲭⲑ ⲉ̀ⲁⲥϭⲓⲟⲩⲱⲓⲛⲓ: ⲛⲉⲙ ⲟⲩϩⲟ ⲛ̀ⲁⲧϭⲓϣⲓⲡⲓ: ⲛⲉⲙ ⲟⲩⲛⲁϩϯ ⲛ̀ⲁⲧⲙⲉⲧϣⲟⲃⲓ: ⲛⲉⲙ ⲟⲩⲥⲩⲛⲓⲇⲑⲥⲓⲥ ⲉⲥⲧⲟⲩⲃⲑⲟⲩⲧ: ⲛⲉⲙ ⲟⲩϩⲩⲡⲟⲙⲟⲛⲑ ⲉⲥϫⲑⲕ ⲉⲃⲟⲗ: ⲛⲉⲙ ⲟⲩϩⲉⲗⲡⲓⲥ ⲉⲥⲧⲁϫⲣⲑⲟⲩⲧ. Ⲛ̀ⲧⲉⲛⲉⲣⲧⲟⲗⲙⲁⲛ ϧⲉⲛ ⲟⲩⲡⲁⲣⲣⲑⲥⲓⲁ ⲛⲁⲧⲉⲣϩⲟϯ ⲉ̀ⲧⲱⲃϩ ⲙ̀ⲙⲟⲕ: Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ ⲉⲟ̀ⲩⲁⲃ ⲉⲧ ϧⲉⲛ ⲛⲓⲫⲑⲟⲩⲓ̀: ⲟⲩⲟϩ ⲉ̀ϫⲟⲥ: ϫⲉ Ⲡⲉⲛⲓⲱⲧ....",
             "Nous T’invoquons, notre Seigneur, purifie nos âmes, nos corps, et nos esprits. Afin que d’un cœur net, des lèvres pures, une âme éclairée, une face sans honte, une foi sans hypocrisie, une intention pure, une patience parfaite, et une espérance qui demeure, nous osions par faveur et sans crainte Te prier à Toi, Père saint qui est aux cieux en disant:",
             "",
-            "نسألك يا سيدنا، طهر نفوسنا وأجسادنا، وأرواحنا. لكيْ بقلب طاهر، وشفتين نقيتين، ونفس مستنيرة، ووجه غير مخزي، وإيمان بلا رياء، ونية نقية، وصبر كامل، ورجاء ثابت، نجسر بدالة بغير خوف، أن نطلب إليك يا الله الآب القدوس الذي في السموات، ونقول \"أبانا الذي في السموات...\"",
+            'نسألك يا سيدنا، طهر نفوسنا وأجسادنا، وأرواحنا. لكيْ بقلب طاهر، وشفتين نقيتين، ونفس مستنيرة، ووجه غير مخزي، وإيمان بلا رياء، ونية نقية، وصبر كامل، ورجاء ثابت، نجسر بدالة بغير خوف، أن نطلب إليك يا الله الآب القدوس الذي في السموات، ونقول "أبانا الذي في السموات..."',
         ],
     ],
     [
@@ -13245,7 +13492,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "لكي بنفس مستنيرة ووجه غير مخزي وقلب طاهر وإيمان بلا رياء ومحبة كاملة ورجاء ثابت نجسر بدالة بغير خوف أن نصلي الصلاة المقدسة التي اعطيتها لتلاميذك القديسين والرسل الأطهار قائلين بشكر: \"أبانا الذي في السموات\"",
+            'لكي بنفس مستنيرة ووجه غير مخزي وقلب طاهر وإيمان بلا رياء ومحبة كاملة ورجاء ثابت نجسر بدالة بغير خوف أن نصلي الصلاة المقدسة التي اعطيتها لتلاميذك القديسين والرسل الأطهار قائلين بشكر: "أبانا الذي في السموات"',
         ],
     ],
     [
@@ -13273,9 +13520,9 @@ PrayersArray = [[
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.EntryToEgypt&C=Priest",
             "",
-            "Les anges Le louent et les forces célestes Lui chantent en disant : \"Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte\".",
+            'Les anges Le louent et les forces célestes Lui chantent en disant : "Saint, saint, saint Le Dieu des armées. Le ciel et la terre sont remplis de Ta gloire sainte".',
             "",
-            "إذ الملائكة تسبحه وعساكر السموات ترتل له صارخين قائلين: \"قدوس قدوس قدوس رب الصباؤوت السماء والأرض مملؤتان من مجدك الأقدس.\"",
+            'إذ الملائكة تسبحه وعساكر السموات ترتل له صارخين قائلين: "قدوس قدوس قدوس رب الصباؤوت السماء والأرض مملؤتان من مجدك الأقدس."',
         ],
         [
             Prefix.fractionPrayer + "&D=$copticFeasts.EntryToEgypt&C=Priest",
@@ -13303,86 +13550,97 @@ PrayersArray = [[
             "",
             "",
             "",
-            "فليبارك المسيح الهنا على قلوبنا وأرواحنا لكي بقلب طاهر ونفس مستنيرة وايمان بلا رياء ومحبة كاملة ورجاء ثابت نجسر بدالة بغير خوف أن ندعوك يا الله الآب القدوس الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'فليبارك المسيح الهنا على قلوبنا وأرواحنا لكي بقلب طاهر ونفس مستنيرة وايمان بلا رياء ومحبة كاملة ورجاء ثابت نجسر بدالة بغير خوف أن ندعوك يا الله الآب القدوس الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
             "",
             "",
             "",
             " قسمة كل يوم 29 من الشهر القبطي (نسجد ونمجد إله الآلهة ورب الأرباب)",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "نسبح ونمجد إله الآلهة ورب الأرباب الذي تجسد من القديسة مريم العذراء وولدته في بيت لحم.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "لأن الرب أرسل جبرائيل الملاك مبشراً سيدتنا كلنا مريم العذراء بتجسد كلمة الآب الأزلي الذي هو مخلصنا يسوع المسيح.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "جبرائيل رئيس الملائكة بشر مريم العذراء وبعد أن منحها السلام ثبتها بهذا الكلام قائلا: لا تخافي يا مريم لأنكى قد وجدت نعمه أمام الله وستلدين ابنا وتسمينه يسوع، القدوس المولود منك يدعى ابن الله.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "هذا هو مخلصنا المسيح ابن الله المولود منه قبل كل الدهور الكائن معه والمساوي له في الأزلية والألوهية. الذي ولد من مريم وهى عذراء بأمر عجيب.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "الرب الإله الذي على الكل، المبارك إلى الأبد، الغير المتجسد، قد تجسد وولد من العذراء ولفته بالخرق ووضعته في المزود. وعساكر السموات ترتل له صارخين: المجد لله في الأعالي وعلى الأرض السلام وفي الناس المسرة.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "الذي نما قليلاً قليلاً بشبة البشر بغير خطية وحده وهو الكائن بسلطانة وليس له بداية ولا نهاية. الذي عوض الخطية المحيطة بالعالم مات بالصليب وفي اليوم الثالث قام من القبر.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "يا كلمة الإله بمحبتك للبشر رفعت الخطايا والآثام أنت الغير خاطئ وحدك، صيرت ذاتك خطية لأجلنا، ولكنك دست الخطية والموت بقيامتك من بين الأموات. لك السموات والأرض وكل ملئها.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "الأرضيون والسمائيون صاروا اليوم واحدا في التسبيح بقيامتك لأنه قد صار فرح في المسكونه من أجل أن الإله صار مع البشر ومن بعد تأنسه أظهر مجد لاهوته بقيامته من بين الأموات.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
             "فنحن أيضا يا سيدنا نؤمن بربوبيتك ونعترف بتجسدك وتأنسك وقيامتك من بين الأموات.",
         ],
         [
-            Prefix.fractionPrayer + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+            Prefix.fractionPrayer +
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
             "",
             "",
             "",
-            "فأنعم علينا بغفران خطايانا وآثامنا وطهر قلوبنا وأجسادنا وأرواحنا. لكي بقلب طاهر ونفس مستنيرة ونصرخ نحو أبيك القدوس الذي في السموات ونقول: \"أبانا الذي في السموات\"",
+            'فأنعم علينا بغفران خطايانا وآثامنا وطهر قلوبنا وأجسادنا وأرواحنا. لكي بقلب طاهر ونفس مستنيرة ونصرخ نحو أبيك القدوس الذي في السموات ونقول: "أبانا الذي في السموات"',
         ],
     ],
     [
@@ -13442,10 +13700,16 @@ PrayersArray = [[
         ],
         [
             Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
-            "̀Ⲧ̀ⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ",
-            "Nous T'adorons ô Christ♪ avec Ton Père très bon♪ et le Saint Esprit♪ car Tu " + giaki.FR + " et nous sauvas.",
+            "̀Ⲧ̀ⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ",
+            "Nous T'adorons ô Christ♪ avec Ton Père très bon♪ et le Saint Esprit♪ car Tu " +
+                giaki.FR +
+                " et nous sauvas.",
             "",
-            "نسجد لك ايها المسيح♪ مع ابيك الصالح♪ والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا.",
+            "نسجد لك ايها المسيح♪ مع ابيك الصالح♪ والروح القدس♪ لأنك " +
+                giaki.AR +
+                " وخلصتنا.",
         ],
     ],
     [
@@ -31429,7 +31693,7 @@ PrayersArray = [[
             "Ⲭⲉⲣⲉ ⲛⲉ ⲉ̀ⲃⲟⲗ ϩⲓⲧⲉⲛ Ⲫ̀ⲛⲟⲩϯ: ⲭⲉⲣⲉ ⲛⲉ ⲉ̀ⲃⲟⲗ ϩⲓⲧⲉⲛ Ⲅⲁⲃⲣⲓⲏⲗ: ⲭⲉⲣⲉ ⲛⲉ ⲉ̀ⲃⲟⲗ ϩⲓⲧⲟⲧⲉⲛ: ϫⲉ ⲭⲉⲣⲉ ⲛⲉ ⲧⲉⲛϭⲓⲥⲓ ⲙ̀ⲙⲟ.",
             "Salut à toi, venant de Dieu Salut à toi, de Gabriel Salut à toi, de notre part Salut, et nous te glorifions",
             "",
-            "السَّلامُ لَكِ مِن قِبَل الله♪ السَّلامُ لَكِ مِنْ قِبَل غَبريّـال♪ السَّلامُ لَكِ مِنْ قِبَلنا♪ قائلين \"السَّلامُ لَكِ نَرْفّعُكِ.\"",
+            'السَّلامُ لَكِ مِن قِبَل الله♪ السَّلامُ لَكِ مِنْ قِبَل غَبريّـال♪ السَّلامُ لَكِ مِنْ قِبَلنا♪ قائلين "السَّلامُ لَكِ نَرْفّعُكِ."',
         ],
         [
             Prefix.commonDoxologies + "1&D=0004&C=Diacon",
@@ -31443,14 +31707,14 @@ PrayersArray = [[
             "Ϫⲉ ⲙ̀ⲡⲉⲣⲉⲣϩⲟϯ Ⲙⲁⲣⲓⲁⲙ: ⲁ̀ⲣⲉϫⲓⲙⲓ ⲅⲁⲣ ⲛ̀ⲟⲩϩ̀ⲙⲟⲧ: ϧⲁⲧⲉⲛ Ⲫ̀ⲛⲟⲩϯ ϩⲏⲡⲡⲉ ⲅⲁⲣ ⲧⲉⲣⲁⲉⲣⲃⲟⲕⲓ: ⲟⲩⲟϩ ⲛ̀ⲧⲉⲙⲓⲥⲓ ⲛ̀ⲟⲩϣⲏⲣⲓ.",
             "« Marie n’aie crainte, sois sans peur Auprès de Dieu, tu trouvas grâce Voici que tu vas concevoir Et tu enfanteras un Fils »",
             "",
-            "\"لا تخافي يا مريم♪ لأنكِ وجدتِ نعمة عند الله♪ ها ستحبلين♪ وتلدين ابناً.",
+            '"لا تخافي يا مريم♪ لأنكِ وجدتِ نعمة عند الله♪ ها ستحبلين♪ وتلدين ابناً.',
         ],
         [
             Prefix.commonDoxologies + "1&D=0004&C=Diacon",
             "Ⲉϥⲉ̀ϯ ⲛⲁϥ ⲛ̀ϫⲉ Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ: ⲙ̀ⲡⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛ̀ⲧⲉ Ⲇⲁⲩⲓⲇ Ⲡⲉϥⲓⲱⲧ: ϥ̀ⲛⲁⲉ̀ⲣⲟⲩⲣⲟ ⲉ̀ϫⲉⲛ ⲡ̀ⲏⲓ ⲛ̀Ⲓⲁⲕⲱⲃ: ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲡⲓⲉ̀ⲛⲉϩ.",
             "« Le Seigneur Dieu lui donnera Le trône de Son père David A tout jamais Il règnera Sur la demeure de Jacob »",
             "",
-            "ويُعطِيه الرَّبُ الإله♪ كُرسي داود أبيه♪ ويَمْلُك على بَيتِ يَعْقوب♪ إلى أبد الآبد.\"",
+            'ويُعطِيه الرَّبُ الإله♪ كُرسي داود أبيه♪ ويَمْلُك على بَيتِ يَعْقوب♪ إلى أبد الآبد."',
         ],
         [
             Prefix.commonDoxologies + "1&D=0004&C=Diacon",
@@ -31513,14 +31777,14 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Kiahk2&D=0004&C=Diacon",
             "Ⲕⲁⲧⲁ ⲫ̀ⲣⲏϯ ⲉ̀ⲧⲁϥϫⲟⲥ: ⲛ̀ϫⲉ Ⲏⲥⲁⲏ̀ⲁⲥ ϧⲉⲛ ⲟⲩⲥ̀ⲙⲏ ⲛ̀ⲑⲉⲗⲏⲗ: ϫⲉ ⲓⲥ ⲁ̀ⲗⲟⲩ ⲙ̀ⲡⲁⲣⲑⲉⲛⲟⲥ: ⲉⲥⲉ̀ⲙⲓⲥⲓ ⲛⲁⲛ ⲛ̀Ⲉⲙⲙⲁⲛⲟⲩⲏⲗ.",
-            "Comme Isaïe l’a annoncé En s’écriant d’une voix joyeuse \"Voici la jeune vierge conçoit Et nous enfante Emmanuel\"",
+            'Comme Isaïe l’a annoncé En s’écriant d’une voix joyeuse "Voici la jeune vierge conçoit Et nous enfante Emmanuel"',
             "",
-            "كما قال أشعياء♪ بصوت التهليل:♪ \"ها فتاة عذراء♪ ستلد لنا عِمَّانوئيل\".",
+            'كما قال أشعياء♪ بصوت التهليل:♪ "ها فتاة عذراء♪ ستلد لنا عِمَّانوئيل".',
         ],
         [
             Prefix.commonDoxologies + "Kiahk2&D=0004&C=Diacon",
             "Ⲧⲉⲛϭⲓⲥⲓ ⲙ̀ⲙⲟ ⲙ̀ⲙⲏⲛⲓ ⲙ̀ⲙⲏⲛⲓ: ⲉⲛϫⲱ ⲙ̀ⲙⲟⲥ ⲛⲉⲙ Ⲅⲁⲃⲣⲓⲏⲗ: ϫⲉ ⲭⲉⲣⲉ ⲕⲉⲭⲁⲣⲓⲧⲱⲙⲉⲛⲏ: ⲟ̀ Ⲕⲩⲣⲓⲟⲥ ⲙⲉⲧⲁ ⲥⲟⲩ.",
-            "Et nous te magnifions toujours Avec l’archange Gabriel \"Pleine de grâce, réjouis-toi Car le Seigneur est avec toi\"",
+            'Et nous te magnifions toujours Avec l’archange Gabriel "Pleine de grâce, réjouis-toi Car le Seigneur est avec toi"',
             "",
             "نعظمك كل يوم قائلين♪ مع غبريال♪ إفرحي يا مُمتلئة نعمة♪ الرب معك.",
         ],
@@ -31552,28 +31816,28 @@ PrayersArray = [[
             "Ϫⲁⲃⲣⲏⲗ ⲡⲓⲁⲅⲅⲉⲗⲟⲥ: ⲁϥϩⲓϣⲉⲛⲟⲩϥⲓ ⲛ̀ϯⲡⲁⲣⲑⲛⲟⲥ: ⲁϥⲉⲣϩⲏⲧⲥ ⲙ̀ⲡⲓⲁⲥⲡⲁⲥⲙⲟⲥ: ϫⲉ ⲭⲉⲣⲉ ⲑⲏⲉⲑⲙⲉϩ ⲛ̀ϩ̀ⲙⲟⲧ.",
             "L’ange Gabriel porta l’annonce Porta l’annonce à la Sainte Vierge En s’écriant : salut à toi Salut à toi pleine de grâce",
             "",
-            "جبرائيل الملاك♪ بشَّر العذراء♪ وابتدأ بالسلام قائلاً♪ \"السلام لكِ يا ممتلئة نعمة.\".",
+            'جبرائيل الملاك♪ بشَّر العذراء♪ وابتدأ بالسلام قائلاً♪ "السلام لكِ يا ممتلئة نعمة.".',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
             "Ⲉⲧⲁⲥⲥⲱⲧⲉⲙ ⲉ̀ⲧⲉϥⲥ̀ⲙⲏ: ⲛ̀ϫⲉ ϯⲁ̀ⲗⲟⲩ ⲛ̀ⲥⲉⲙⲛⲉ: ⲁⲥⲉⲣⲟⲩⲱ̀ ϧⲉⲛ ⲟⲩⲙⲉⲧⲥⲁⲃⲉ: ⲟⲩⲟϩ ⲁⲥⲙⲟⲕⲙⲉⲕ ϫⲉ ⲟⲩ ⲡⲉ ⲫⲁⲓ.",
             "Et quand la jeune fille chaste A entendu la voix de l’ange Elle répondit avec sagesse Mais que cela peut-il donc être ?",
             "",
-            "فلما سمعت صوته♪ الفتاة العفيفة♪ أجابت بحكمة♪ وفكرت \"ما هو هذا؟\".",
+            'فلما سمعت صوته♪ الفتاة العفيفة♪ أجابت بحكمة♪ وفكرت "ما هو هذا؟".',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
             "Ⲡⲉϫⲁϥ ⲛⲁⲥ ⲛ̀ϫⲉ ⲡⲓⲁⲅⲅⲉⲗⲟⲥ: ⲡⲓϣⲁϩ ⲛ̀ⲭⲣⲱⲙ ⲛ̀ⲁⲥⲱⲙⲁⲧⲟⲥ: ϫⲉ ⲧⲁⲟ̅ⲥ̅ ⲙ̀ⲡⲁⲣⲑⲉⲛⲟⲥ: ⲣⲉⲕ ⲡⲉⲙⲁϣϫ ⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲓ.",
             "Et l'ange alors lui déclara L’incorporel ange de feu \"Ô toi ma Dame sainte Vierge Viens tends l’oreille, écoute-moi",
             "",
-            "فقال لها الملاك♪ الملتهب ناراً غير الجسداني♪ \"يا سيدتي العَذراء♪ أميلي سَمعِك واسمعي مني.",
+            'فقال لها الملاك♪ الملتهب ناراً غير الجسداني♪ "يا سيدتي العَذراء♪ أميلي سَمعِك واسمعي مني.',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
             "Ⲙⲡⲉⲣⲉⲣϩⲟϯ ⲟⲩⲇⲉ ⲙ̀ⲡⲉⲣⲕⲓⲙ: Ⲙⲁⲣⲓⲁ ⲧ̀ϣⲉⲣⲓ ⲛ̀Ⲓⲱⲁⲕⲓⲙ: Ⲡ̅ⲟ̅ⲥ̅ Ⲫϯ ⲛ̀ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲁϥⲥⲱⲧⲡ ⲙ̀ⲙⲟ ⲉⲩⲙⲁⲛ̀ϣⲱⲡⲓ ⲛⲁϥ.",
-            "Ne t’effraie pas, et sois sans crainte Marie, ô fille de Joachim Le Seigneur Dieu des Séraphins T’a bien choisie pour Sa demeure\"",
+            'Ne t’effraie pas, et sois sans crainte Marie, ô fille de Joachim Le Seigneur Dieu des Séraphins T’a bien choisie pour Sa demeure"',
             "",
-            "لا تخافِ ولا تتزعزعي♪ يا مريم ابنة يواقيم♪ الرب إله السيرافيم♪ اختاركِ مسكناً له.\".",
+            'لا تخافِ ولا تتزعزعي♪ يا مريم ابنة يواقيم♪ الرب إله السيرافيم♪ اختاركِ مسكناً له.".',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
@@ -31587,19 +31851,19 @@ PrayersArray = [[
             "Ⲡⲱⲥ ⲫⲁⲓ ⲛⲁϣⲱⲡⲓ ⲙ̀ⲙⲟⲓ: ⲙ̀ⲡⲉ ϩ̀ⲗⲓ ϣⲉ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲣⲟⲓ: ϯϯϩⲟ ⲉ̀ⲣⲟⲕ ⲙⲁⲧⲁⲙⲟⲓ: ⲙ̀ⲡⲉⲣϩⲱⲡ ⲛ̀ϩ̀ⲗⲓ ⲉ̀ϫⲱⲓ.",
             "Comment cela se pourra-t-il Voici je ne connais point d'homme Oh ! je te prie de me l’apprendre Aussi de ne rien me cacher",
             "",
-            "\"كيف يكون لي هذا♪ لو لم يدخل إليَّ أحد♪ أسألك أخبرني♪ ولا تخف عني شيئاً.\".",
+            '"كيف يكون لي هذا♪ لو لم يدخل إليَّ أحد♪ أسألك أخبرني♪ ولا تخف عني شيئاً.".',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
             "Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉ̅ⲑ̅ⲩ̅ ⲉⲑⲛⲏⲟⲩ ⲉ̀ϫⲱ: ⲟⲩϫⲟⲙ ⲛ̀ⲧⲉ ⲫⲏⲉⲧϭⲟⲥⲓ ⲉⲑⲛⲁⲉⲣϧⲏⲓⲃⲓ ⲉ̀ⲣⲟ: ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ⲥⲉϩⲱⲥ ⲉ̀ⲣⲟ: ⲉⲑⲃⲉ ⲧ̀ϩⲟϯ ⲙ̀ⲡⲟⲩⲣⲉϥⲥⲱⲛⲧ.",
             "\"Car l'Esprit-Saint viendra sur toi Et le Très-Haut te couvrira De Sa puissance. Les anges te louent Par crainte de leur Créateur",
             "",
-            "\"الروح القدس يحل عليكِ♪ وقوة العليْ تُظَلُكِ♪ الملائكة تُسبحكِ♪ من أجل خوف خالقهم.\".",
+            '"الروح القدس يحل عليكِ♪ وقوة العليْ تُظَلُكِ♪ الملائكة تُسبحكِ♪ من أجل خوف خالقهم.".',
         ],
         [
             Prefix.commonDoxologies + "3&D=0004&C=Diacon",
             "Ⲧⲉⲣⲁⲙⲓⲥⲓ ⲙ̀ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲫϯ: ⲟⲩⲟϩ ϯⲥⲟⲫⲓⲁ ⲛ̀ⲧⲉ Ⲫϯ: ϫⲉ ⲛ̀ⲑⲟϥ ⲡⲉ Ⲫϯ ⲛ̀ⲧⲉ ⲛⲉⲛⲓⲟϯ: ⲙ̀ⲙⲟⲛ ⲕⲉ ⲟⲩⲁⲓ ⲉ̀ⲃⲏⲗ ⲉ̀ⲣⲟϥ.",
-            "Le Fils de Dieu, tu enfanteras Il est la Sagesse de Dieu Car c’est Lui le Dieu de nos pères Et il n’est d’autre Dieu que Lui\"",
+            'Le Fils de Dieu, tu enfanteras Il est la Sagesse de Dieu Car c’est Lui le Dieu de nos pères Et il n’est d’autre Dieu que Lui"',
             "",
             "سَتَلِدينَ ابنَ الله♪ وحِكمة الله♪ لأنه هو إله آبائنا♪ وليس آخر سواه.",
         ],
@@ -31757,7 +32021,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Kiahk5&D=0004&C=Diacon",
             "Ⲁⲕϣⲱⲡⲓ ⲉⲕϯⲛⲟⲙϯ ⲛⲁⲥ: ϫⲉ ⲣⲁϣⲓ ⲟⲩⲛⲟϥ ⲙ̀ⲙⲟ: ϫⲉ ⲭⲉⲣⲉ ⲑⲏⲉ̀ⲑⲙⲉϩ ⲛ̀ϩⲙ̀ⲟⲧ: ⲟⲩⲟϩ Ⲡⲟ̅ⲥ̅ ϣⲟⲡ ⲛⲉⲙⲉ.",
-            "Et tu l’as consolée disant: « Oh ! réjouis-toi et sois heureuse Salut à toi, pleine de grâce Oui le Seigneur est avec toi.\"",
+            'Et tu l’as consolée disant: « Oh ! réjouis-toi et sois heureuse Salut à toi, pleine de grâce Oui le Seigneur est avec toi."',
             "",
             "صِرتَ تعزيها♪ قائلا افرحي وابتهجي♪ السلام لك يا ممتلئة نعمة♪ الرب معك.",
         ],
@@ -31815,77 +32079,88 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Title",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Title",
             "",
             "",
             "ذكصولوجية برامون الميلاد",
             " ذكصولوجية برامون الميلاد",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲁⲓⲛⲁⲩ ⲉ̀ϯⲕ̀ⲧⲏⲥⲓⲥ ⲧⲏⲣⲥ ⲙ̀ⲫⲟⲟⲩ: ⲥ̀Ϯⲉⲣⲗⲁⲙⲡⲓⲛ ϧⲉⲛ ⲟⲩⲛⲓϣϯ ⲛ̀ⲟⲩⲱⲓⲛⲓ: ⲉⲑⲃⲉ ϯⲛⲓϣϯ ⲛ̀Ϯⲑⲉⲱ̀ⲣⲓⲁ̀: ⲉ̀ⲧⲁⲩⲟⲩⲱⲛϩ ⲛⲁⲛ ⲉ̀Ϯⲃⲟⲗ.",
             "Aujourd’hui toute la création a vu une grande illumination à cause de l’apparition divine qui nous a été révélée.",
             "",
             "رأيَتُ الخليقة كلها♪ اليوم مضيئة بلمعان عظيم♪ من أجل الظهور الإلهي♪ الذي أُعلن لنا.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ϫⲉ ⲡⲓⲁⲧⲥⲁⲣⲍ ⲁϥϭⲓⲥⲁⲣⲝ: ⲁⲥⲙⲁⲥϥ ⲛ̀Ϯϫⲉ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀Ϯⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ: ⲉϥⲟⲓ ⲛ̀Ϯⲛⲟⲩϯ ⲉϥⲟⲓ ⲛ̀Ϯⲣⲱⲙⲓ.",
             "Car l’incorporel fut incarné, la vierge l’enfanta comme tout autre, mais Il est Dieu et homme.",
             "",
             "لأن غير المتجسد تجسد♪ ولدته العذراء♪ مثل كُل أحد♪ إلهاً وانسانا.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲃⲏⲑⲗⲉⲉⲙ ⲑ̀Ϯⲃⲁⲕⲓ ⲛ̀ϮⲆⲁⲩⲓⲇ: ϣⲟⲩϣⲟⲩ ⲙ̀ⲙⲟⲥ ϧⲉⲛ ⲟⲩⲑⲉⲗⲏⲗ: ϫⲉ ⲁⲥϥⲁⲓ ⲥⲱⲙⲁⲧⲓⲕⲟⲥ: ϧⲁ ⲫⲏⲉ̀ⲧ ϩⲓϫⲉⲛ ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ.",
             "Bethléem la cité de David se réjouit avec fierté, car elle a porté l’incarné qui est porté par les chérubins.",
             "",
             "بيت لحم مدينة داود♪ تفتخر بتهليل♪ لأنها حملت جسديا♪ الذي على الشاروبيم.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲫⲏⲉ̀ⲧϣⲟⲡ ⲫⲏⲉ̀ⲛⲁϥϣⲟⲡ: ⲟⲩⲟϩ ⲡⲓⲣⲉϥⲥⲱⲛⲧ ⲙ̀ⲙⲁⲩⲁⲧϥ: ⲫⲏⲉ̀ⲧⲥⲱⲗⲡ ⲛ̀ⲥ̀ⲛⲁⲩϩ ⲛ̀ⲧⲉ ⲫ̀ⲛⲟⲃⲓ: ⲁⲩⲕⲟⲩⲗⲱⲗϥ ⲛ̀ϩⲁⲛⲧⲱⲓⲥⲓ.",
             "Celui qui est et qui était l’unique Créateur, le briseur des liens du péché fut enveloppé dans un linge.",
             "",
             "الكائن الذى كان♪ والمبدع وحده♪ القاطع رباط الخطية♪ لُفّ بخرق.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ϯⲡⲁⲣⲑⲉⲛⲟⲥ Ⲙⲁⲣⲓⲁⲙ: ⲛⲉⲙ Ⲓⲱⲥⲏⲫ ⲛⲉⲙ Ⲥⲁⲗⲱⲙⲓ: ⲁⲩⲉⲣϣ̀ⲫⲏⲣⲓ ⲉ̀ⲙⲁϣⲱ: ⲉⲑⲃⲉ ⲛⲏⲉ̀ⲧⲁⲩⲛⲁⲩ ⲉ̀ⲣⲱⲟⲩ.",
             "La vierge Marie, Joseph et Salomé ont été émerveillés de ce qu’ils l’ont vu.",
             "",
             "العذراء مريم♪ ويوسف وسالومي♪ تعجبوا جدا♪ ممن رأوه.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲓⲫⲏⲟⲩⲓ: ⲉⲩⲉⲣϩⲩⲙⲛⲟⲥ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲉⲩϫⲱ ⲛ̀ⲧⲁⲓϩⲩⲙⲛⲟⲥ ⲉⲑⲟⲩⲁⲃ: ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ.",
             "Les armées célestes louent sur terre cette sainte louange en proclamant et en disant :",
             "",
             "العساكر السماوية♪ تسبح على الأرض مُنشِدَه♪ بهذا التسبيح المقدس♪ صارخه قائلة:",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ϫⲉ ⲟⲩⲱ̀ⲟⲩ ϧⲉⲛ ⲛⲏⲉⲧϭⲟⲥⲓ ⲙ̀Ⲫ̀ⲛⲟⲩϯ: ⲛⲉⲙ ⲟⲩϩⲓⲣⲏⲛⲏ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲟⲩϯⲙⲁϯ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ: ϫⲉ ⲁϥⲓ̀ ⲟⲩⲟϩ ⲁϥⲥⲱϯ ⲙ̀ⲙⲟⲛ.",
             "Gloire à Dieu au plus haut des cieux et paix sur terre et joie aux hommes car Il est venu et nous a sauvés.",
             "",
             "المجد لله في الأعالي♪ وعلى الأرض السلام♪ وفى الناس المسرة♪ لأنه أتى وخلصنا.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲛⲓⲙⲁⲛⲉ̀ⲥⲱⲟⲩ ⲉⲧϧⲉⲛ ⲧ̀ⲕⲟⲓ: ⲁⲩⲓ̀ ⲟⲩⲟϩ ⲁⲩⲟⲩⲱϣⲧ ⲙ̀ⲙⲟϥ: ⲁⲛⲟⲛ ϩⲱⲛ ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟϥ: ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛⲉⲣⲙⲉⲑⲣⲉ ϧⲁⲣⲟϥ.",
             "Les bergers qui étaient dans le champ, sont venus et L’ont adoré, et nous aussi nous L’adorons et nous en témoignons,",
             "",
             "الرعاة الذين في الحقل♪ أتوا وسجدوا له♪ ونحن أيضاً نسجد له♪ ونشهد له.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ϫⲉ ⲛ̀ⲑⲟϥ ⲁϥⲓ̀ ⲉ̀ⲡⲓⲕⲟⲥⲙⲟⲥ: ⲁϥⲙⲁⲥϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ⲟⲩⲟϩ ⲁϥⲥⲱϯ ⲙ̀ⲡⲉⲛⲅⲉⲛⲟⲥ: ⲉ̀ⲃⲟⲗ ϩⲁ ⲡⲓⲇⲓⲁ̀ⲃⲟⲗⲟⲥ ⲉⲧϩⲱⲟⲩ.",
             "Qu’Il est venu au monde et fut né d’une vierge, et a sauvé notre race du fielleux Satan.",
             "",
             "أنه أتى إلى العالم♪ ووُلد من العذراء♪ وخَلَّص جنسنا♪ من إبليس الشرير.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.NativityParamoun&C=Diacon",
             "Ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟϥ ⲧⲉⲛϯⲱ̀ⲟⲩ ⲛⲁϥ: ⲧⲉⲛⲉⲣϩⲟⲩⲟ̀ ϭⲓⲥⲓ ⲙ̀ⲙⲟϥ: ϩⲱⲥ ⲁ̀ⲅⲁⲑⲟⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ: ⲛⲁⲓ ⲛⲁⲛ ⲕⲁⲧⲁ ⲡⲉⲕⲛⲓϣϯ ⲛ̀ⲛⲁⲓ.",
             "Nous Le louons, Le glorifions Nous L’exaltons, Lui qui est Bon Ami des hommes. Pitié pour nous Selon Ta grande miséricorde.",
             "",
@@ -32042,21 +32317,21 @@ PrayersArray = [[
             "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲟⲩⲱ̀ⲟⲩ ϧⲉⲛ ⲛⲏⲉⲧϭⲟⲥⲓ ⲙ̀Ⲫϯ: ⲛⲉⲙ ⲟⲩϩⲓⲣⲏⲛⲏ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲟⲩϯⲙⲁϯ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ.",
             "Proclamant et s’écriant : « Gloire à Dieu aux lieux très hauts Que la paix soit sur la terre Et la joie parmi les hommes ».",
             "",
-            "صارخين قائلين: ♪ \"المجد لله في الأعالي♪ وعلى الأرض السلام♪ وفي الناس المسرة.\"",
+            'صارخين قائلين: ♪ "المجد لله في الأعالي♪ وعلى الأرض السلام♪ وفي الناس المسرة."',
         ],
         [
             Prefix.commonDoxologies + "Wates3&D=$copticFeasts.Nativity&C=Diacon",
             "Ⲏⲡⲡⲉ ⲁⲩⲓ̀ ⲛ̀ϫⲉ ϩⲁⲛⲙⲁⲅⲟⲥ: ⲉ̀ⲃⲟⲗ ⲥⲁⲡⲉⲓⲉⲃⲧ ⲉ̀Ⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ: ϫⲉ ⲁϥⲑⲱⲛ ⲫⲏⲉ̀ⲧⲁⲩⲙⲁⲥϥ: ⲡ̀ⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲛⲓⲒⲟⲩⲇⲁⲓ.",
             "Voici, les mages arrivèrent D’Orient à Jérusalem Disant « Où se trouve le Nouveau-Né, le roi des Juifs ? »",
             "",
-            "وإذا مجوس قد أتوا من♪ المشرق إلي أورشليم قائلين♪ \"أين هو المولود♪ ملك اليهود.",
+            'وإذا مجوس قد أتوا من♪ المشرق إلي أورشليم قائلين♪ "أين هو المولود♪ ملك اليهود.',
         ],
         [
             Prefix.commonDoxologies + "Wates3&D=$copticFeasts.Nativity&C=Diacon",
             "Ⲑ̀ⲙⲉⲧⲥⲁⲓⲉ̀ ⲛ̀ⲧⲉ ⲡⲉϥⲥⲓⲟⲩ: ⲁϥⲉⲣⲟⲩⲱⲓⲛⲓ ϧⲉⲛ ⲧⲉⲛⲭⲱⲣⲁ: ⲉ̀ⲣⲉ ϩⲁⲛⲥ̀ϧⲁⲓ ⲥ̀ϧⲏⲟⲩⲧ ⲉ̀ⲣⲟϥ: ⲁⲛⲓ̀ ⲛ̀ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟϥ.",
             "La splendeur de Son étoile Eclaira notre contrée Elle portait des écritures Nous sommes venus L’adorer",
             "",
-            "بهاء نجمه♪ أضاء في كورتنا♪ وعليه كتابات مكتوبة♪ فأتينا لنسجد له\".",
+            'بهاء نجمه♪ أضاء في كورتنا♪ وعليه كتابات مكتوبة♪ فأتينا لنسجد له".',
         ],
         [
             Prefix.commonDoxologies + "Wates3&D=$copticFeasts.Nativity&C=Diacon",
@@ -32070,7 +32345,7 @@ PrayersArray = [[
             "Ⲛⲓⲙⲁⲅⲟⲥ ⲉ̀ⲧⲁⲩⲓ̀ ϣⲁⲣⲟϥ: ⲁⲩϣⲓⲛⲓ ⲉⲑⲃⲏⲧϥ ϧⲉⲛ ⲟⲩⲥ̀ⲡⲟⲩⲇⲏ: ϫⲉ ⲁϥⲑⲱⲛ ⲫⲏⲉ̀ⲧⲁⲩⲙⲁⲥϥ: ⲡ̀ⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲛⲓⲒⲟⲩⲇⲁⲓ.",
             "Et quand arrivèrent les mages Ils L’ont cherché ardemment En disant : « Mais où se trouve Nouveau-né, le roi des Juifs ? »",
             "",
-            "ولما جاء المجوس♪ بحثوا عنه باجتهاد♪ قائلين: \"أين هو المولود♪ ملك اليهود.\".",
+            'ولما جاء المجوس♪ بحثوا عنه باجتهاد♪ قائلين: "أين هو المولود♪ ملك اليهود.".',
         ],
         [
             Prefix.commonDoxologies + "Wates3&D=$copticFeasts.Nativity&C=Diacon",
@@ -32084,7 +32359,7 @@ PrayersArray = [[
             "Ⲡⲁⲓⲣⲏϯ ⲁϥⲙⲟⲩϯ ⲉ̀ⲛⲓⲙⲁⲅⲟⲥ: ⲛ̀ⲭⲱⲡ ⲁϥⲟⲩⲟⲣⲡⲟⲩ ⲉ̀Ⲃⲏⲑⲗⲉⲉⲙ: ϫⲉ ⲁ̀ⲣⲉⲧⲉⲛⲛⲁϫⲓⲙⲓ ⲙ̀ⲡⲓⲁ̀ⲗⲟⲩ: ⲫⲏⲉ̀ⲧⲁⲩⲙⲁⲥϥ ϧⲉⲛ ⲡⲓⲙⲁ ⲉ̀ⲧⲉ ⲙ̀ⲙⲁⲩ.",
             "Il convoqua secrètement Les rois mages à Bethléem Disant : « Vous trouverez l’Enfant Qui naquit en cet endroit ».",
             "",
-            "ولذلك دعا المجوس سرا♪ وأرسلهم إلى بيت لحم♪ قائلا \"ستجدون الصبي♪ الذي وُلد في ذلك الموضع.\"",
+            'ولذلك دعا المجوس سرا♪ وأرسلهم إلى بيت لحم♪ قائلا "ستجدون الصبي♪ الذي وُلد في ذلك الموضع."',
         ],
         [
             Prefix.commonDoxologies + "Wates3&D=$copticFeasts.Nativity&C=Diacon",
@@ -32196,56 +32471,64 @@ PrayersArray = [[
             " ذكصولوجية برمون الغطاس",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲟⲩⲛⲓϣϯ ⲙ̀ⲙⲩⲥⲧⲏⲣⲓⲟⲛ: ⲉ̀ⲧⲁϥⲟⲩⲟⲛϩϥ ⲛⲁⲕ ⲉ̀ⲃⲟⲗ: ⲱ̀ Ⲓⲱⲁⲛⲛⲏⲥ ⲡⲓⲡ̀ⲣⲟⲇⲣⲟⲙⲟⲥ: ⲡ̀ϣⲏⲣⲓ ⲛ̀Ⲍⲁⲭⲁⲣⲓⲁⲥ.",
             "Un grand mystère t’a été révélé ô Jean le précurseur, fils de Zacharie.",
             "",
             "سر عظيم♪ الذي أعلنه لك♪ يا يوحنا السابق♪ ابن زكريا.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲣⲱϥ ⲙ̀Ⲫ̀ⲛⲟⲩϯ ⲁϥⲉⲣⲙⲉⲑⲣⲉ ϧⲁⲣⲟⲕ: ⲱ̀ Ⲓⲱⲁⲛⲛⲏⲥ ⲡⲓⲣⲉϥϯⲱⲙⲥ: ϫⲉ ⲙ̀ⲙⲟⲛ ⲫⲏⲉ̀ⲧⲧⲉⲛⲥⲱⲛϯ ⲉ̀ⲣⲟⲕ: ϧⲉⲛ ⲛⲓⲙⲓⲥⲓ ⲛ̀ⲧⲉ ⲛⲓϩⲓⲟⲙⲓ.",
             "La bouche de Dieu l’a attesté, ô Baptiste «Nul ne te ressemble parmi les nés d’une femme».",
             "",
-            "فَمِ الله شهد لك♪ أيها المعمدان:♪ \"ليس مَنْ يشبهك♪ في مواليد النساء.\".",
+            'فَمِ الله شهد لك♪ أيها المعمدان:♪ "ليس مَنْ يشبهك♪ في مواليد النساء.".',
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲛⲑⲟⲕ ⲡⲉ ⲡ̀ϫⲱⲕ ⲛ̀ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲏⲥ: ⲉ̀ⲧⲁⲩⲓ̀ ϧⲁϫⲱϥ ⲙ̀ⲡⲉⲛⲥⲱⲧⲏⲣ: ⲁⲕⲥⲟⲃϯ ⲛ̀ⲛⲉϥⲙⲁⲙ̀ⲙⲟϣⲓ: ⲕⲁⲧⲁ ⲡ̀ⲥⲁϫⲓ ⲛ̀Ⲏⲥⲁⲏ̀ⲁⲥ.",
             "Tu es la perfection des prophètes qui sont venus avant notre Sauveur, pour préparer Ses chemins, comme a dit Esaïe.",
             "",
             "أنت هو كمال الأنبياء♪ الذين جاءوا قبل مخلصنا♪ لتُعِدَ طُرقه♪ كقول أشعياء.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲛⲁⲕ ϩⲓⲱⲓϣ ⲉⲕϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲛⲟⲕ ⲙⲉⲛ ϯⲱⲙⲥ ⲙ̀ⲙⲱⲧⲉⲛ: ϧⲉⲛ ⲟⲩⲙⲱⲟⲩ ⲙ̀ⲙⲉⲧⲁⲛⲟⲓⲁ: ⲉ̀Ϯⲡ̀ⲭⲱ ⲉ̀Ϯⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲓⲛⲟⲃⲓ.",
             "Et tu prêchais en disant : «Quant à moi, je vous baptise de l’eau de la repentance pour la rémission des péchés.",
             "",
-            "وكنت تكرز قائلا:♪ \"أما أنا فأعمدكم♪ بماء التوبة♪ لمغفرة الخطايا.",
+            'وكنت تكرز قائلا:♪ "أما أنا فأعمدكم♪ بماء التوبة♪ لمغفرة الخطايا.',
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲡⲉⲧⲉ ⲟⲩⲟⲛⲧⲉϥ ϣ̀ⲑⲏⲛ ⲥ̀ⲛⲟⲩϯ: ⲉϥⲉ̀ϯ ⲙ̀ⲡⲉⲧⲉ ⲙ̀ⲙⲟⲛ ⲛ̀ⲧⲁϥ: ⲟⲩⲟϩ ⲡⲉⲧⲉ ⲟⲩⲟⲛⲧⲁϥ ⲛ̀ⲟⲩⲱⲓⲕ: ⲙⲁⲣⲉϥⲓ̀ⲣⲓ ⲟⲛ ⲙ̀ⲡⲁⲓⲣⲏϯ.",
             "Que celui qui a deux tuniques partage avec celui qui n’en a point, et que celui qui a du pain agisse de même.»",
             "",
-            "مَنْ له ثوبان♪ فليُعطِ مَنْ ليس له♪ والذي عنده خبز♪ فليصنع هكذا أيضا\".",
+            'مَنْ له ثوبان♪ فليُعطِ مَنْ ليس له♪ والذي عنده خبز♪ فليصنع هكذا أيضا".',
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲉⲑⲃⲉ ⲫⲁⲓ ⲧⲉⲛⲉⲣⲭⲱⲣⲉⲩⲓⲛ: ⲉⲛⲱϣ ⲉ̀Ϯⲃⲟⲗ ⲛⲉⲙ ⲡⲓⲡ̀ⲣⲟⲫⲏⲧⲏⲥ: ϫⲉ ⲉⲩⲉ̀ⲛⲁⲩ ⲛ̀ϫⲉ ⲥⲁⲣⲝ ⲛⲓⲃⲉⲛ: ⲉ̀Ϯⲡⲓⲥⲱⲧⲏⲣ ⲛ̀ⲧⲉ Ⲫ̀ⲛⲟⲩϯ.",
             "C’est pourquoi, nous louons, proclamant avec le prophète en disant: «Tout corps regarde le Salut de Dieu».",
             "",
-            "لهذا نَمدح صارخين♪ مع النبي قائلين: ♪ \"كل جسد ينظر♪ خلاص الله.\".",
+            'لهذا نَمدح صارخين♪ مع النبي قائلين: ♪ "كل جسد ينظر♪ خلاص الله.".',
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲙⲁⲣⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲡⲉⲛⲥⲱⲧⲏⲣ: ⲡⲓⲙⲁⲓⲣⲱⲙⲓ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ϫⲉ ⲛ̀ⲑⲟϥ ⲁϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ: ⲁϥⲓ̀ ⲟⲩⲟϩ ⲁϥⲥⲱϯ ⲙ̀ⲙⲟⲛ.",
             "Venez prosternons-nous devant notre Sauveur, l’Ami du genre humain, parce qu’Il a été compatissant envers nous, Il est venu et nous a sauvés.",
             "",
             "فلنسجد لمخلصنا♪ الصالح محب البشر♪ لأنه ترأف علينا♪ أتى وخلصنا.",
         ],
         [
-            Prefix.commonDoxologies + "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
+            Prefix.commonDoxologies +
+                "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
             "Ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟϥ ⲧⲉⲛϯⲱ̀ⲟⲩ ⲛⲁϥ: ⲧⲉⲛⲉⲣϩⲟⲩⲟ̀ ϭⲓⲥⲓ ⲙ̀ⲙⲟϥ: ϩⲱⲥ ⲁ̀ⲅⲁⲑⲟⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ: ⲛⲁⲓ ⲛⲁⲛ ⲕⲁⲧⲁ ⲡⲉⲕⲛⲓϣϯ ⲛ̀ⲛⲁⲓ.",
             "Nous Le louons, Le glorifions Nous L’exaltons, Lui qui est Bon Ami des hommes. Pitié pour nous Selon Ta grande miséricorde.",
             "",
@@ -32377,7 +32660,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Wates2&D=$copticFeasts.Baptism&C=Diacon",
             "Ϫⲉ ⲫⲁⲓ ⲡⲉ Ⲡⲁϣⲏⲣⲓ ⲡⲁⲙⲉⲛⲣⲓⲧ: ⲉ̀ⲧⲁ ⲧⲁⲯ̀ⲩⲭⲏ ϯⲙⲁϯ ⲛ̀ϧⲏⲧϥ: ⲁϥⲉ̀ⲣⲡⲁⲟ̀ⲩⲱ̀ϣ ⲥⲱⲧⲉⲙ ⲛ̀ⲥⲱϥ: ϫⲉ ⲛ̀ⲑⲟϥ ⲡⲉ ⲡⲓⲣⲉϥⲧⲁⲛϧⲟ.",
-            "\"Celui-ci est mon Fils Bien-aimé, en qui j’ai mis toute mon affection, il a accompli ma volonté, écoutez-Le car Il est le vivifiant.\"",
+            '"Celui-ci est mon Fils Bien-aimé, en qui j’ai mis toute mon affection, il a accompli ma volonté, écoutez-Le car Il est le vivifiant."',
             "",
             "هذا هو إبني حبيبي♪ الذي سُرّت به نفسي♪ وصنع مشيئتي♪ له اسمعوا لأنه هو المحيي.",
         ],
@@ -32628,126 +32911,144 @@ PrayersArray = [[
             " ذكصولوجية آحاد وسبوت الصوم الكبير",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲛⲉⲕⲛⲁⲓ ⲱϮ Ⲡⲁϭⲟⲓⲥ ϯⲛⲁϩⲱⲥ ⲙϮⲙⲱⲟⲩⲐ ϣⲁ ⲉϮⲛⲉϩ ⲛϮⲧⲉ ⲡⲓⲉϮⲛⲉϩⲐ ⲟⲩⲟϩ ⲓⲥϫⲉⲛ ϫⲱⲟⲩ ϣⲁ ϫⲱⲟⲩⲐ ϯⲛⲁϫⲱ ⲛϮⲧⲉⲕⲙⲉⲏⲙ/ⲓ ϧⲉⲛ ⲣⲱⲓ.",
             "Je loue Tes compassions, Seigneur Éternellement, à tout jamais Et pour toute génération Ma bouche annonce Ta justice.",
             "",
             "مراحمك يا ربى♪ أُسَبحها إلى أبد الأبد♪ ومن جيل إلى جيل♪ بفمي أُخبِر بحقك.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲛⲁⲁ̀ⲛⲟⲙⲓⲁ ⲁⲩϭⲓⲥⲓ ⲉ̀ⲧⲁⲁ̀ⲫⲉ: ⲟⲩⲟϩ ⲁⲩϩ̀ⲣⲟϣ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲓ: Ⲫ̀ⲛⲟⲩϯ ⲥⲱⲧⲉⲙ ⲉ̀ⲡⲁϥⲓⲁ̀ϩⲟⲙ: ϩⲓⲟⲩⲓ ⲙ̀ⲙⲱⲟⲩ ⲉ̀ⲃⲟⲗϩⲁⲣⲟⲓ.",
             "Mes fautes ont recouvert ma tête C’est un fardeau lourd et pesant Ô Dieu, entends mes longs soupirs Ecarte-les bien loin de moi",
             "",
             "آثامى علت على رأسي♪ وثقلت علىّ♪ يا الله اسمع تَنهُدي♪ واطرحها عنى.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲣⲓⲧⲧ ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲡⲓⲧⲉⲗⲱⲛⲏⲥ: ⲫⲏⲉ̀ⲧⲁϥⲉ̀ⲣⲛⲟⲃⲓ ⲉ̀ⲣⲟⲕ: ⲁⲕϣⲉⲛϩⲏⲧ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱϥ: ⲁⲕⲭⲁ ⲛⲉϥⲛⲟⲃⲓ ⲛⲁϥ ⲉ̀ⲃⲟⲗ.",
             "Prends-moi comme le publicain Qui contre Toi avait péché Mais Tu as eu pitié de lui Tu lui as pardonné ses fautes",
             "",
             "اجعلني مثل العشار♪ الذي أخطأ إليك♪ وتراءفت عليه♪ وغفرت له خطاياه.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲣⲓⲧⲧ ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ϯⲡⲟⲣⲛⲏ: ⲑⲏⲉ̀ⲧⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲥ ⲉ̀ⲃⲟⲗ: ⲁⲕⲧⲟⲩⲛⲟⲥ ⲁⲕⲛⲟϩⲉⲙ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁⲥⲣⲁⲛⲁⲕ ⲙ̀ⲡⲉⲕⲙ̀ⲑⲟ.",
             "Prends-moi comme la femme adultère Cette femme que Tu as sauvée Tu l’as aidée et secourue Car elle T’a été agréable",
             "",
             "اجعلني مثل الزانية♪ التي خلصتها♪ وأنقذتها ونجيتها♪ لأنها أرضتك أمامك.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲣⲓⲧⲧ ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲡⲓⲥⲟⲛⲓ: ⲫⲏⲉ̀ⲧⲁⲩⲁϣϥ ⲛ̀ⲥⲁ ⲧⲉⲕⲟⲩⲓ̀ⲛⲁⲙ: ⲁϥⲉⲣⲟ̀ⲙⲟⲗⲟⲅⲓⲛ ⲙ̀ⲙⲟⲕ: ⲙ̀ⲡⲁⲓⲣⲏϯ ⲉϥϫⲱ ⲙ̀ⲙⲟⲥ.",
             "Prends-moi comme le bon larron Qui, à Ta droite, fut crucifié C’est lui qui T’avait reconnu En s’écriant et en disant :",
             "",
             "اجعلني مثل العشار♪ الذي أخطأ إليك♪ وتراءفت عليه♪ وغفرت له خطاياه.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "̀̀Ϫ̀ⲉ ⲁ̀ⲣⲓⲡⲁⲙⲉⲩⲓ̀ ⲱ̀ Ⲡⲁϭⲟⲓⲥ: ⲁ̀ⲣⲓⲡⲁⲙⲉⲩⲓ̀ ⲱ̀ Ⲡⲁⲛⲟⲩϯ: ⲁ̀ⲣⲓⲡⲁⲙⲉⲩⲓ̀ ⲱ̀ Ⲡⲁⲟⲩⲣⲟ: ⲁⲕϣⲁⲛⲓ̀ ϧⲉⲛ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ.",
             "Souviens-Toi de moi Ô mon Seigneur, Souviens-Toi de moi Ô mon Dieu, Souviens-Toi de moi Ô mon Roi, Quand Tu seras dans Ton Royaume.",
             "",
-            "\"اذكرني يا ربي♪ اذكرني يا إلهى♪ اذكرني يا ملكي♪ متى جِئتَ في ملكوتك.\".",
+            '"اذكرني يا ربي♪ اذكرني يا إلهى♪ اذكرني يا ملكي♪ متى جِئتَ في ملكوتك.".',
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "̀̀̀Ⲛ̀ⲑⲟⲕ ⲇⲉ ⲱ̀ Ⲡⲁⲥⲱⲧⲏⲣ: ⲁⲕϣⲱⲡ ⲉ̀ⲣⲟⲕ ⲛ̀ⲧⲉϥⲟ̀ⲙⲟⲗⲟⲅⲓⲁ: ⲁⲕϣⲉⲛϩⲏⲧ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱϥ: ⲁϥⲟⲩⲟⲣⲡϥ ⲉ̀ⲡⲓⲡⲁⲣⲁⲇⲓⲥⲟⲥ.",
             "Ainsi c’est Toi ô mon Sauveur Tu acceptas son témoignage Tu as été compatissant Tu lui donnas le paradis",
             "",
             "فأنت يا مُخلصي♪ قَبِلتَ إليك اعترافه♪ وترآفت عليه♪ وأرسلته إلى الفردوس.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "̀̀̀̀Ⲁ̀ⲛⲟⲕ ϩⲱ ϧⲁ ⲡⲓⲣⲉϥⲉⲣⲛⲟⲃⲓ: Ⲓⲏ̅ⲥ̅ Ⲡⲁⲛⲟⲩϯ ⲡⲁⲟⲩⲣⲟ ⲙ̀ⲙⲏⲓ: ϣⲁⲛⲁϩ̀ⲑⲏⲕ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲓ: ⲁⲣⲓⲧⲧ ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲟⲩⲁⲓ ⲛ̀ⲛⲁⲓ",
             "Et moi aussi qui suis pécheur Jésus mon Dieu et mon vrai Roi Oh ! Traite-moi avec douceur Et compte-moi comme l’un d’entre eux",
             "",
             "وأنا أيضاً الخاطئ يا يسوع♪ إلهى وملكي الحقيقي♪ تحنن علىّ♪ واجعلني كأحد هؤلاء.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ϯⲥⲱⲟⲩⲛ ϫⲉ ⲛ̀ⲑⲟⲕ ⲟⲩⲁ̀ⲅⲁⲑⲟⲥ: ⲛ̀ⲣⲉϥϣⲉⲛϩⲏⲧ ⲟⲩⲟϩ ⲛ̀ⲛⲁⲏⲧ: ⲁ̀ⲣⲓⲡⲁⲙⲉⲩⲓ̀ ϧⲉⲛ ⲡⲉⲕⲛⲁⲓ: ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲡⲓⲉ̀ⲛⲉϩ.",
             "Et je le sais : Tu es Très-Bon Clément et miséricordieux Aussi, prends-moi en Ta pitié Eternellement à tout jamais",
             "",
             "أنا أعرف أنك صالح♪ رؤوف ورحيم♪ اذكرني برحمتك♪ إلى أبد الأبد.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ϯⲧⲱⲃϩ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲁϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅: ⲙ̀ⲡⲉⲣⲥⲟϩⲓ ⲙ̀ⲙⲟⲓ ϧⲉⲛ ⲡⲉⲕϫⲱⲛⲧ: ⲟⲩⲇⲉ ⲟⲛ ϧⲉⲛ ⲡⲉⲕⲙ̀ⲃⲟⲛ: ⲙ̀ⲡⲉⲣϯⲥ̀ⲃⲱ ⲛ̀ⲧⲁⲙⲉⲧⲁⲧⲉ̀ⲙⲓ.",
             "J’implore ô mon Seigneur Jésus Oh ! ne me réprimande pas Sois sans colère et sans rejet Corrige aussi mon ignorance",
             "",
             "أطلب إليك يا ربى يسوع♪ أن لا تبكتني بغضبك♪ ولا برجزك♪ تؤدب جهالتي.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ϫⲉ ⲭ̀ⲟⲩⲱϣ ⲙ̀ⲫ̀ⲙⲟⲩ ⲁⲛ ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲛⲟⲃⲓ: ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲧⲉϥⲕⲟⲧϥ ⲟⲩⲟϩ ⲛ̀ⲧⲉϥⲱⲛϧ: ϣⲁⲛⲁϩ̀ⲑⲏⲕ ⲛ̀ⲧⲁⲙⲉⲧϫⲱⲃ: ⲙ̀ⲡⲉⲣⲥⲟⲙⲥ ⲉ̀ⲣⲟⲓ ϧⲉⲛ ⲟⲩⲙ̀ⲃⲟⲛ.",
             "Tu ne veux pas mort du pécheur Mais qu’il revienne et qu’il revive Et prends pitié de ma faiblesse Ne me traite pas avec colère",
             "",
             "لأنك لا تشاء موت الخاطئ♪ مثل أن يرجع ويحيا♪ تراءف على ضعفي♪ ولا تنظر إلىّ بغضب.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁⲓⲉⲣⲛⲟⲃⲓ Ⲓⲏ̅ⲥ̅ Ⲡⲁϭⲟⲓⲥ: ⲁⲓⲉⲣⲛⲟⲃⲓ Ⲓⲏ̅ⲥ̅ Ⲡⲁⲛⲟⲩϯ: ⲡⲁⲟⲩⲣⲟ ⲙ̀ⲡⲉⲣⲱⲡ ⲉ̀ⲣⲟⲓ: ⲛ̀ⲛⲓⲛⲟⲃⲓ ⲉⲧⲁⲓⲁⲓⲧⲟⲩ.",
             "Oui j’ai péché Seigneur Jésus Oui j’ai péché, Jésus mon Dieu Mon Roi, oh ! ne me compte pas Tous les péchés que j’ai commis",
             "",
             "أخطأت يا يسوع ربى♪ أخطأت يا يسوع إلهي♪ يا ملكي لا تحسب علىّ♪ الخطايا التي صنعتها.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ϯϯϩⲟ ⲉ̀ⲣⲟⲕ ⲱ̀ Ⲡⲁⲥⲱⲧⲏⲣ: ⲙⲁⲣⲉ ⲛⲉⲕⲙⲉⲑⲛⲁⲏⲧ ⲧⲁϩⲟⲓ: ⲛ̀ⲧⲟⲩⲛⲟϩⲉⲙ ⲙ̀ⲙⲟⲓ ϧⲉⲛ ⲛⲓⲁ̀ⲛⲁⲅⲕⲏ: ⲉⲧϯ ⲟⲩⲃⲉ ⲉ̀ⲧⲁⲯⲩⲭⲏ.",
             "Je Te demande ô mon Sauveur Tes compassions, qu’elles me parviennent Délivre-moi de toute épreuve Epreuve qui opprime mon âme",
             "",
             "أسألك يا مخلصي♪ فلتدركني مراحمك♪ لتخلصني من الشدائد♪ المضادة لنفسي.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "̀Ⲙ̀ⲡⲉⲣϩⲓ ⲭ̀ⲣⲱⲙ ⲉ̀ⲧⲁⲙⲉⲧⲁⲧⲥⲱⲟⲩⲛ: ⲙ̀ⲫ̀ⲣⲏϯ ϩⲱϥ ⲛ̀Ⲥⲟⲇⲟⲙⲁ: ⲟⲩⲇⲉ ⲟⲛ ⲙ̀ⲡⲉⲣⲧⲁⲕⲟⲓ: ⲙ̀ⲫ̀ⲣⲏϯ ϩⲱϥ ⲛ̀Ⲅⲟⲙⲟⲣⲣⲁ.",
             "Ne brûle pas mon ignorance Comme le peuple de Sodome Et ne me détruis pas aussi Comme le peuple de Gomorrhe",
             "",
             "لا تحرق عدم معرفتي♪ مثل سدوم♪ ولا تهلكني أيضاً♪ مثل عمورة.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲗⲗⲁ Ⲡⲁϭⲟⲓⲥ ⲁⲣⲓⲟⲩⲓ ⲛⲉⲙⲏⲓ: ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲛⲓⲣⲉⲙⲚⲓⲛⲉⲩⲏ: ⲛⲁⲓ ⲉ̀ⲧⲁⲩⲉⲣⲙⲉⲧⲁⲛⲟⲓⲛ: ⲁⲕⲭⲁ ⲛⲟⲩⲛⲟⲃⲓ ⲛⲱⲟⲩ ⲉ̀ⲃⲟⲗ.",
             "Mais mon Seigneur, oh ! traite-moi Comme le peuple de Ninive Lui qui s’était bien repenti Et leurs péchés, Tu pardonnas",
             "",
             "لكن يا ربى اصنع معي♪ مثل أهل نينوى♪ الذين تابوا♪ فغفرت لهم خطاياهم.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲗⲗⲁ ⲙⲁⲣⲉ ⲛⲉⲕⲙⲉⲑⲛⲁⲏⲧ: ⲧⲁϩⲟⲓ Ⲡⲁϭⲟⲓⲥ ϧⲉⲛ ⲟⲩⲓⲏⲥ: ⲛ̀ⲧⲁⲱϣ ⲉ̀ⲃⲟⲗ ⲛⲉⲙ ⲡⲁⲓⲗⲁⲟⲥ: ϧⲉⲛ ⲟⲩⲥ̀ⲙⲏ ⲛ̀ⲁⲧⲭⲁⲣⲱⲥ.",
             "Que Ta pitié me vienne en aide Rapidement ô mon Seigneur Pour m’écrier avec ce peuple Et d’une voix perpétuelle",
             "",
             "لكن فلتدركني سريعاً♪ مراحمك يا ربى♪ لأصرخ مع هذا الشعب♪ بصوت لا يسكت.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲉⲑⲃⲉ ⲫⲁⲓ ϯⲧⲱⲃϩ ⲙ̀ⲙⲟⲕ: Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ Ⲡⲁⲥⲱⲧⲏⲣ: ⲙ̀ⲡⲉⲣⲓ̀ⲣⲓ ⲛ̀ⲟⲩϩⲁⲡ ⲛⲉⲙⲏⲓ: ⲁ̀ⲛⲟⲕ ϧⲁ ⲡⲓϫⲱⲃ ⲛ̀ⲣⲉϥⲉⲣⲛⲟⲃⲓ.",
             "C’est pour cela que je T’implore Ô Toi Seigneur Dieu et Sauveur Epargne-moi Ton jugement Pour moi qui suis faible et pécheur",
             "",
             "من أجل هذا أطلب إليك♪ أيها الرب الإله♪ مخلصي لا تحاكمني♪ أنا الضعيف الخاطئ.",
         ],
         [
-            Prefix.commonDoxologies + "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
+            Prefix.commonDoxologies +
+                "GreatLentSundays&D=$Seasons.GreatLent&C=Diacon",
             "Ⲁ̀ⲗⲗⲁ ⲃⲱⲗ ⲉ̀ⲃⲟⲗ ⲭⲱ ⲛⲏⲓ ⲉ̀ⲃⲟⲗ: ⲛ̀ⲛⲁⲡⲁⲣⲁⲡ̀ⲧⲱⲙⲁ ⲉⲧⲟϣ: ϩⲱⲥ ⲁ̀ⲅⲁⲑⲟⲥ ⲟⲩⲟϩ ⲙ̀ⲙⲁⲓⲣⲱⲙⲓ: ⲛⲁⲓ ⲛⲁⲛ ⲕⲁⲧⲁ ⲡⲉⲕⲛⲓϣϯ ⲛ̀ⲛⲁⲓ.",
             "Mais viens délie, pardonne-moi Pardonne mes nombreux péchés Pitié ! Ô Bon, Ami des hommes Selon Ta grande miséricorde",
             "",
@@ -32802,7 +33103,7 @@ PrayersArray = [[
             "Ϫⲉ ⲡⲉⲛⲒⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟ̀ⲩⲓ̀: ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ: ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟ̀ⲩⲣⲟ: ϫⲉ ⲫⲱⲕ ⲡⲉ ⲡⲓⲱ̀ⲟ̀ⲩ ϣⲁ ⲛⲓⲉ̀ⲛⲉϩ ⲁ̀ⲙⲏⲛ",
             "Ô notre Père, Toi qui est aux cieux Oui que Ton Nom soit sanctifié Et que Ton Règne arrive aussi A Toi la gloire éternellement",
             "",
-            "\"أبانا الذي في السموات♪ ليتقدس اسمك♪ ليأتْ ملكوتك♪ لأن لك المجد إلى الأبد آمين.\".",
+            '"أبانا الذي في السموات♪ ليتقدس اسمك♪ ليأتْ ملكوتك♪ لأن لك المجد إلى الأبد آمين.".',
         ],
     ],
     [
@@ -32909,21 +33210,21 @@ PrayersArray = [[
             "Ⲁϥⲱ̀ϣ ⲉ̀ⲃⲟⲗ ⲛ̀ϫⲉ Ⲇⲁⲩⲓⲇ: ϧⲉⲛ ⲡⲓⲯ̀ⲁⲗⲧⲏⲣⲓⲟⲛ ⲉ̅ⲑ̅ⲩ̅: ϫⲉ ϯⲛⲁⲕⲟⲗϫ ⲛ̀ⲧⲁⲯ̀ⲩⲭⲏ: ⲙ̀ⲡⲉⲕⲙ̀ⲑⲟ ϧⲉⲛ ⲟ̀ⲩⲛⲏⲥⲧⲓⲁ.",
             "Alors David s’est écrié disant C’est dans le saint livre des Psaumes Devant Toi j’inclinai mon âme Devant Toi par l’oeuvre du jeûne",
             "",
-            "صرخ داود في سفر♪ المزامير المقدس قائلا ♪ \"إني أحنيت نفسي♪ أمامك بالصوم.\".",
+            'صرخ داود في سفر♪ المزامير المقدس قائلا ♪ "إني أحنيت نفسي♪ أمامك بالصوم.".',
         ],
         [
             Prefix.commonDoxologies + "GreatLentWeek2&D=$Seasons.GreatLent&C=Diacon",
             "Ⲡⲁⲩⲗⲟⲥ ⲡⲓⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ: ⲟⲩⲟϩ ⲫ̀ⲗⲁⲥ ⲙ̀ⲡⲓⲥ̀ⲑⲟⲓⲛⲟⲩϥⲓ: ϫⲉ ϧⲉⲛ ⲟ̀ⲩⲛⲏⲥⲧⲓⲁ ⲛⲉⲙ ⲟ̀ⲩϣ̀ⲣⲱⲓⲥ: ϧⲉⲛ ϩⲁⲛⲉ̀ϩⲟⲟ̀ⲩ ⲛⲉⲙ ϩⲁⲛⲉ̀ϫⲱⲣϩ.",
             "Aussi Saint Paul l’apôtre a proclamé Saint Paul à la langue si douce « Moi, dans les veilles et dans le jeûne Pendant le jour, au long des nuits »",
             "",
-            "وبولس الرسول♪ لسان العطر يقول♪ \"إني بصوم وسهر♪ في الأيام والليالي.\".",
+            'وبولس الرسول♪ لسان العطر يقول♪ "إني بصوم وسهر♪ في الأيام والليالي.".',
         ],
         [
             Prefix.commonDoxologies + "GreatLentWeek2&D=$Seasons.GreatLent&C=Diacon",
             "Ϫⲉ ⲡⲉⲛⲒⲱⲧ ⲉⲧϧⲉⲛ ⲛⲓⲫⲏⲟ̀ⲩⲓ̀: ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ: ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟ̀ⲩⲣⲟ: ϫⲉ ⲫⲱⲕ ⲡⲉ ⲡⲓⲱ̀ⲟ̀ⲩ ϣⲁ ⲛⲓⲉ̀ⲛⲉϩ ⲁ̀ⲙⲏⲛ",
             "Ô notre Père, Toi qui est aux cieux Oui que Ton Nom soit sanctifié Et que Ton Règne arrive aussi A Toi la gloire éternellement",
             "",
-            "\"أبانا الذى فى السموات♪ ليتقدس اسمك♪ ليأت ملكوتك♪ لأن لك المجد إلى الأبد آمين.\"",
+            '"أبانا الذى فى السموات♪ ليتقدس اسمك♪ ليأت ملكوتك♪ لأن لك المجد إلى الأبد آمين."',
         ],
     ],
     [
@@ -32946,7 +33247,7 @@ PrayersArray = [[
             "Ⲟⲩⲇⲉ ⲟⲛ ⲙ̀ⲡⲉⲣϫⲟⲥ ⲛⲏⲓ: ϫⲉ ϯⲥⲱⲟ̀ⲩⲛ ⲙ̀ⲙⲟⲕ ⲁⲛ: ⲙⲁϣⲉⲛⲁⲕ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲓ: ⲫⲏⲉ̀ⲧⲥⲉⲃⲧⲱⲧ ⲙ̀ⲡⲓⲭ̀ⲣⲱⲙ ⲛ̀ⲉ̀ⲛⲉϩ.",
             "Ne me dis pas: « Je ne te connais pas Retire-toi de Moi, maudit Et va dans le feu éternel Qui leur a été préparé »",
             "",
-            "ولا تقل لي أيضا♪ \"إني ما أعرفك♪ اذهب عني أيها المعد♪ للنار الأبدية.",
+            'ولا تقل لي أيضا♪ "إني ما أعرفك♪ اذهب عني أيها المعد♪ للنار الأبدية.',
         ],
         [
             Prefix.commonDoxologies + "GreatLentWeek3&D=$Seasons.GreatLent&C=Diacon",
@@ -32960,7 +33261,7 @@ PrayersArray = [[
             "Ϯϫⲱ ⲛ̀ⲧ̀ⲥ̀ⲙⲏ ⲛ̀ⲧⲉ ⲡⲓⲧⲉⲗⲱⲛⲏⲥ: ⲉⲓⲱ̀ϣ ⲉ̀ⲃⲟⲗ ⲉⲓϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ Ⲫ̀ϯ ⲭⲱ ⲛⲏⲓ ⲉ̀ⲃⲟⲗ: ϫⲉ ⲁ̀ⲛⲟⲕ ⲟ̀ⲩⲣⲉϥⲉ̀ⲣⲛⲟⲃⲓ.",
             "Et je le dis comme le publicain En m’écriant et en disant Seigneur mon Dieu pardonne-moi Pardonne-moi qui suis pécheur.",
             "",
-            "أقول بصوت العشار♪ صارخا قائلا♪ \"اللهم اغفر لي♪ أنا الخاطئ\".",
+            'أقول بصوت العشار♪ صارخا قائلا♪ "اللهم اغفر لي♪ أنا الخاطئ".',
         ],
         [
             Prefix.commonDoxologies + "GreatLentWeek3&D=$Seasons.GreatLent&C=Diacon",
@@ -33279,7 +33580,7 @@ PrayersArray = [[
             "Ⲭⲉⲣⲉ ⲑⲏⲉⲑⲙⲉϩ ⲛ̀ϩ̀ⲙⲟⲧ: ⲟⲩⲟϩ Ⲡ̀ϭⲟⲓⲥ ϣⲟⲡ ⲛⲉⲙⲉ: ⲁ̀ⲣⲉϫⲓⲙⲓ ⲅⲁⲣ ⲛ̀ⲟⲩϩ̀ⲙⲟⲧ: ϧⲁⲧⲉⲛ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ.",
             "Salut à la pleine de grâce, le Seigneur est avec toi, tu as trouvé grâce auprès de Dieu le Père.",
             "",
-            "\"السلام للممتلئة نعمة♪ الرب معكِ♪ وجدتِ نعمة♪ عند الله الآب.",
+            '"السلام للممتلئة نعمة♪ الرب معكِ♪ وجدتِ نعمة♪ عند الله الآب.',
         ],
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.Annonciation&C=Diacon",
@@ -33300,14 +33601,14 @@ PrayersArray = [[
             "Ⲟⲩⲟϩ ⲛ̀ⲛⲁⲉⲣϧⲁⲉ̀: ϣⲱⲡⲓ ⲛ̀ⲧⲉ ⲧⲉϥⲙⲉⲧⲟⲩⲣⲟ: ⲟⲩⲟϩ ⲙⲉⲛⲉⲛⲥⲁ ⲑ̀ⲣⲉⲙⲁⲥϥ: ⲉ̀ⲣⲉⲟ̀ϩⲓ ⲉ̀ⲣⲉⲟⲓ ⲙ̀ⲡⲁⲣⲑⲉⲛⲟⲥ.",
             "Et Son royaume n’aura pas de fin, et après lui avoir donné naissance, tu demeureras vierge.",
             "",
-            "ولا نهاية♪ تكون لمُلْكِه♪ وبعد أن تَلِديه♪ تَظَلي عَذراء.\"",
+            'ولا نهاية♪ تكون لمُلْكِه♪ وبعد أن تَلِديه♪ تَظَلي عَذراء."',
         ],
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.Annonciation&C=Diacon",
             "Ⲡⲉϫⲉ Ⲙⲁⲣⲓⲁ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ϫⲉ ⲁ̀ⲛⲟⲕ ⲓⲥ ϯⲃⲱⲕⲓ ⲛ̀ⲧⲉ Ⲡ̀ϭⲟⲓⲥ: ⲉⲥⲉ̀ϣⲱⲡⲓ ⲛⲏⲓ ⲕⲁⲧⲁ ⲡⲉⲕⲥⲁϫⲓ: ⲁϥϣⲉⲛⲁϥ ⲉ̀ⲃⲟⲗ ⲛ̀ϫⲉ ⲡⲓⲁⲅⲅⲉⲗⲟⲥ.",
             "Marie répondit: “Je suis la servante du Seigneur, qu’il me soit fait selon ta parole” et l’ange l’a quitta.",
             "",
-            "فأجابت مريم العذراء:♪ \"ها أنا أَمَةُ الرب♪ ليكن لي كقولك\"♪ فمَضَى الملاك.",
+            'فأجابت مريم العذراء:♪ "ها أنا أَمَةُ الرب♪ ليكن لي كقولك"♪ فمَضَى الملاك.',
         ],
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.Annonciation&C=Diacon",
@@ -33391,49 +33692,56 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Title",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Title",
             "",
             "2ème Doxologie Samedi de Lazare",
             "ذكصولوجية ثانية لسبت لعازر",
             " ذكصولوجية ثانية لسبت لعازر",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "0ⲱⲟⲩϯ ⲧⲏⲣⲟⲩ ⲱ̀ ⲛⲓⲗⲁⲟⲥ: ⲛ̀ⲧⲉⲛϩⲱⲥ ⲙ̀Ⲡⲉⲛⲟ̅ⲥ̅ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ: ⲫⲏⲉ̀ⲧⲁϥⲧⲟⲩⲛⲟⲥ ⲛ̀Ⲗⲁⲍⲁⲣⲟⲥ: ϧⲉⲛ ⲧ̀ϫⲟⲙ ⲛ̀ⲧⲉ ⲧⲉϥⲙⲉⲑⲛⲟⲩϯ.",
             "Réunissez-vous, tous les peoples pour louer notre Seigneur Jésus Christ qui a ressucité Lazare par la puissance de Sa Divinité",
             "",
             "اجتمعوا يا جميع الشعوب♪ لنسبح ربنا يسوع المسيح♪ الذي أقام لعازر♪ بقوة لاهوته.",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲙⲁⲧⲟⲩⲛⲟⲥ ϧⲉⲛ ⲧⲉⲕϫⲟⲙ: ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲧ̀ϧⲏⲓⲃⲓ ⲙ̀ⲫ̀ⲙⲟⲩ: ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲡⲓⲑ̀ⲙⲏⲓ Ⲗⲁⲍⲁⲣⲟⲥ: ⲉ̀ⲧⲁⲕⲧⲟⲩⲛⲟⲥϥ ⲙⲉⲛⲉⲥⲁ ⲡⲉϥⲙⲟⲩ.",
             "Par Ta puissance, relève-nous des affres de la mort comme Lazare le juste que Tu as ressuscité après sa mort",
             "",
             "أقمنا بقوتك♪ من ظلال الموت♪ مثل البار لعازر الذي♪ أقمته من بعد موت.",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲛⲑⲟⲕ ⲡⲉ ⲡⲓⲙⲱⲓⲧ ⲛⲉⲙ ⲡⲓⲱⲛϧ: ⲱ̀ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲡⲓⲇⲩⲙⲓⲟⲣⲅⲟⲥ: ⲛ̀ⲑⲟⲕ ⲡⲉ Ⲫϯ ⲉⲧϯⲙ̀ⲡ̀ⲱⲛϧ: ⲛ̀Ⲗⲁⲍⲁⲣⲟⲥ ⲡⲓⲇⲓⲕⲉⲟⲥ.",
             "Tu es le chemin de la vie, ô Jésus Christ le Créateur. Tu es Dieu qui a donné la vie à Lazare le juste.",
             "",
             "أنت هو الطريق والحياة♪ يا يسوع المسيح الخالق♪ أنت هو الإله المعطي♪ الحياة للعازر الصديق.",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲛⲑⲟⲕ ⲡⲉ ϯⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ: ⲁⲕⲧⲟⲩⲛⲟⲥ ⲙ̀ⲡⲓⲑ̀ⲙϩⲓ Ⲗⲁⲍⲁⲣⲟⲥ: ⲧⲉⲛϯⲟ ⲛⲁϩⲙⲉⲛ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲉⲛⲑ̀ⲗⲩⲯⲓⲥ: ⲙⲟⲓ ⲛⲁⲛ ⲛⲉⲙⲁϥ ⲛ̀ⲟⲩⲙⲉⲣⲟⲥ.",
             "Tu es la Réssurection. Tu as ressuscité Lazare le juste. Nous T’implorons de nous libérer de nos difficultés, fais que nous ayons part avec lui à Ton heritage.",
             "",
             "أنت هو القيامة♪ أقمت البار لعازر♪ نسأل أن تخلصنا♪ من شدائدنا وأعطنا معه نصيباً.",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲙⲁⲣⲉⲛϣⲉⲛⲁⲛ ⲱ̀ ⲛⲓⲡⲓⲥⲧⲟⲥ: ⲉ̀ⲡⲓⲧⲱⲟⲩ ⲛ̀ⲧⲉ ⲛⲓϫⲱⲓⲧ ϯⲁ Ⲃⲏⲑⲁ̀ⲛⲓⲁ̀: ⲛ̀ⲧⲉⲛⲛⲁⲩ ⲉ̀ⲡⲓⲑ̀ⲙϩⲓ Ⲗⲁⲍⲁⲣⲟⲥ: ⲟⲩⲟϩⳣ ⲛ̀ⲧⲉⲛϩⲱⲥ ϧⲉⲛ ⳣϩⲁⲛⲯⲁⲗⲓⲁ̀.",
             "Allons, nous les croyants, vers le mont des Oliviers, vers Béthanie, pour voir le juste Lazare et que nous louions et que nous chantions.",
             "",
             "لنذهب أيها المؤمنين♪ إلى جبل الزيتون♪ إلى بيت عنيا لننظر البار♪ لعازر ونسبح ونرتل.",
         ],
         [
-            Prefix.commonDoxologies + "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
+            Prefix.commonDoxologies +
+                "LazarusSaturday2&D=$copticFeasts.LazarusSaturday&C=Diacon",
             "Ⲙⲁⲣⲉⲛϩⲱⲥ ⲛ̀ⲧⲉⲛϯⲱ̀ⲟⲩ: ⲧⲉⲛⲟⲩⲱϣⲧ ⲛ̀ϯⲧ̀ⲣⲓⲁⲥ ⲉⲑⲟⲩⲁⲃ: ⲉⲥⲟⲓ ⲛ̀ⲟⲩⲙⲟⲟⲩⲥⲓⲟⲥ: ⲉⲑⲙⲏⲛ ⲉ̀ⲃⲟⲗ ϣⲁ ⲉ̀ⲛⲉϩ.",
             "Louons, glorifions et prosternons-nous devant la Sainte Trinité consubstantielle qui demeure éternellement.",
             "",
@@ -33753,7 +34061,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Wates2&D=$Seasons.PentecostalDays&C=Diacon",
             "Ⲁϥⲉ̀ⲣⲟ̀ⲩⲱ̀ ⲟⲩⲟϩ ⲡⲉϫⲁϥ: ⲛ̀ⲛⲓϩⲓⲟⲙⲓ ⲙ̀ϥⲁⲓⲥⲟϫⲉⲛ: ϫⲉ ⲫⲏⲉ̀ⲧⲉⲧⲉⲛⲕⲱϯ ⲛ̀ⲥⲱϥ: ⲁϥⲧⲱⲛϥ ϥ̀ⲭⲏ ⲙ̀ⲡⲁⲓ ⲙⲁ ⲁⲛ.",
-            "Il a répondu aux femmes Qui portaient les aromates « Celui que vous recherchez N’est pas là, ressuscita\"",
+            'Il a répondu aux femmes Qui portaient les aromates « Celui que vous recherchez N’est pas là, ressuscita"',
             "",
             "فأجاب وقال للنسوة♪ حاملات الطيب♪ أن الذي تطلبنه♪ قد قام وليس هَهُنا.",
         ],
@@ -33876,7 +34184,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.Ascension&C=Diacon",
             "Ⲕⲁⲧⲁ ⲫ̀ⲣⲏϯ ⲉ̀ⲧⲁϥϫⲟⲥ: ⲛ̀ϫⲉ Ⲇⲁⲩⲓⲇ ϧⲉⲛ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ ⲡⲉϫⲉ Ⲡ̀ϭⲟⲓⲥ ⲙ̀Ⲡ̀ϭⲟⲓⲥ: ϫⲉ ϩⲉⲙⲥⲓ ⲥⲁⲧⲁⲟⲩⲓⲛⲁⲙ.",
-            "Comme David a dit, par l'Esprit Saint, \"le Seigneur a dit à mon Seigneur, assis- Toi à Ma droite.\"",
+            'Comme David a dit, par l\'Esprit Saint, "le Seigneur a dit à mon Seigneur, assis- Toi à Ma droite."',
             "",
             "كقول داود♪ بالروح القدس♪ قال الرب لربي♪ اجلس عن يميني.",
         ],
@@ -34013,7 +34321,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.EntryToEgypt&C=Diacon",
             "Ⲏⲥⲁⲏ̀ⲁⲥ ⲡⲓⲛⲓϣϯ ⲁϥϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ϥ̀ⲛⲏⲟⲩ ⲛ̀ϫⲉ ⲡ̀ϭⲟⲓⲥ ⲉ̀ⲭⲏⲙⲓ: ⲉ̀ϫⲉⲛ ⲟⲩϭⲏⲡⲓ ⲉⲥⲁ̀ⲥⲓⲱ̀ⲟⲩ: ⲛ̀ⲑⲟϥ ⲡⲉ ⲡ̀ⲟⲩⲣⲟ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ ⲛⲉⲙ ⲡ̀ⲕⲁϩⲓ.",
-            "Esaïe le grand a dit, \"le Seigneur viendra en Egypte, sur un nuage clair, Il est le Roi de ciel et de la terre.”",
+            'Esaïe le grand a dit, "le Seigneur viendra en Egypte, sur un nuage clair, Il est le Roi de ciel et de la terre.”',
             "",
             "أشعياء العظيم قال♪ أن الرب قادم إلى مصر♪ على سحابة خفيفة♪ وهو ملك السماء والأرض.",
         ],
@@ -34064,7 +34372,7 @@ PrayersArray = [[
         [
             Prefix.commonDoxologies + "Wates&D=$copticFeasts.Epiphany&C=Diacon",
             "Ⲟⲩⲟϩ ⲓⲥ ⲟⲩⲥ̀ⲙⲏ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲧ̀ⲫⲉ: ⲉ̀ⲃⲟⲗϩⲓⲧⲉⲛ Ⲫ̀ⲛⲟⲩϯ Ⲫ̀ⲓⲱⲧ: ϫⲉ ⲫⲁⲓ ⲡⲉ ⲡⲁϣⲏⲣⲓ ⲡⲁⲙⲉⲛⲣⲓⲧ: ⲁϥⲉⲣⲡⲁⲟⲩⲱϣ ⲥⲱⲧⲉⲙ ⲛ̀ⲥⲱϥ.",
-            "Et une voix du ciel, de Dieu le Père disait: \"c'est Mon Fils-aimé, Il a fait Ma volonté, écoutez-Le.\"",
+            'Et une voix du ciel, de Dieu le Père disait: "c\'est Mon Fils-aimé, Il a fait Ma volonté, écoutez-Le."',
             "",
             "وإذا بصوت من السماء♪ من عند الله الآب♪ قائلاً هذا هو إبني حبيبي♪ قد صنع إرادتي فاسمعوا له.",
         ],
@@ -34457,7 +34765,7 @@ PrayersArray = [[
             "",
             "Et j’ai crié vers Toi, Seigneur, j’ai supplié mon Dieu : « A quoi Te servirait mon Sang si je descendais dans la tombe? La poussière peut-elle Te rendre grâce et proclamer Ta fidélité?, Écoute, Seigneur, pitié pour moi! Seigneur, viens à mon aide! ».",
             "",
-            "إليك يا رب أصرخ، وإلى إلهي أتضرع: \"أية منفعة من دمى إذا هبطتُ إلى الجحيم؟ هل يعترف لك التراب أو يخبر بحقك؟\"",
+            'إليك يا رب أصرخ، وإلى إلهي أتضرع: "أية منفعة من دمى إذا هبطتُ إلى الجحيم؟ هل يعترف لك التراب أو يخبر بحقك؟"',
         ],
         [
             Prefix.bookOfHours + "3rdHourPsalm29&D=0000&C=NoActor",
@@ -34559,7 +34867,7 @@ PrayersArray = [[
             "",
             "Unis contre moi, mes ennemis murmurent, à mon sujet, ils présagent le pire : « C’est un mal pernicieux qui le ronge ; le voilà couché, il ne pourra plus se lever. ».",
             "",
-            "تهامس على جميع أعدائي، وتشاوروا على بالسوء. وكلاما مخالفا للناموس رتبوا علىّ، قالوا: \"ألا يعود الراقد أن يقوم؟\"",
+            'تهامس على جميع أعدائي، وتشاوروا على بالسوء. وكلاما مخالفا للناموس رتبوا علىّ، قالوا: "ألا يعود الراقد أن يقوم؟"',
         ],
         [
             Prefix.bookOfHours + "3rdHourPsalm40&D=0000&C=NoActor",
@@ -34799,10 +35107,18 @@ PrayersArray = [[
         ],
         [
             Prefix.bookOfHours + "GospelEnd&D=0000&C=Priest",
-            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
-            "Nous T’adorons, O Christ avec Ton bon Père et Le Saint Esprit, car Tu es " + giaki.FR + " et Tu nous as sauvés.",
-            "تين أوؤشت إمموك أو بي اخرستوس نيم بيكيوت إن آغاثوس نيم بي ابنيفما إثؤاوب جي " + giaki.CA + " آكثوتي إممون ناي نان.",
-            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القُدسْ لأنكَ " + giaki.AR + " وخلصتنا.",
+            "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
+                giaki.COP +
+                "ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.",
+            "Nous T’adorons, O Christ avec Ton bon Père et Le Saint Esprit, car Tu es " +
+                giaki.FR +
+                " et Tu nous as sauvés.",
+            "تين أوؤشت إمموك أو بي اخرستوس نيم بيكيوت إن آغاثوس نيم بي ابنيفما إثؤاوب جي " +
+                giaki.CA +
+                " آكثوتي إممون ناي نان.",
+            "نسجدُ لكَ أيها المسيح مع أبيكَ الصالح والروح القُدسْ لأنكَ " +
+                giaki.AR +
+                " وخلصتنا.",
         ],
     ],
     [
@@ -35075,14 +35391,14 @@ PrayersArray = [[
             "",
             "Mon Dieu, viens me délivrer ; Seigneur, viens vite à mon secours ! Qu'ils soient humiliés, déshonorés, ceux qui s'en prennent à ma vie ! Qu'ils reculent, couverts de honte, ceux qui cherchent mon malheur ; que l'humiliation les écrase, ceux qui me disent : « C'est bien fait ! ».",
             "",
-            "اللهم التفت إلى معونتي، يا رب أسرع وأعنى. ليخزى ويخجل طالبو نفسي، وليرتدَّ إلى خلف ويخجل الذين يبتغون لي الشر. وليرجع بالخزي سريعا القائلون لي: \"نِعِمَّا نِعِمَّا\".",
+            'اللهم التفت إلى معونتي، يا رب أسرع وأعنى. ليخزى ويخجل طالبو نفسي، وليرتدَّ إلى خلف ويخجل الذين يبتغون لي الشر. وليرجع بالخزي سريعا القائلون لي: "نِعِمَّا نِعِمَّا".',
         ],
         [
             Prefix.bookOfHours + "6thHourPsalm69&D=0000&C=NoActor",
             "",
             "Mais tu seras l'allégresse et la joie de tous ceux qui te cherchent ; toujours ils rediront : « Dieu est grand ! » ceux qui aiment ton salut.",
             "",
-            "وليبتهج ويفرح بك جميع الذين يلتمسونك، وليقل في كل حين محبو خلاصك: \"فليتعظم الرب\".",
+            'وليبتهج ويفرح بك جميع الذين يلتمسونك، وليقل في كل حين محبو خلاصك: "فليتعظم الرب".',
         ],
         [
             Prefix.bookOfHours + "6thHourPsalm69&D=0000&C=NoActor",
@@ -35274,7 +35590,7 @@ PrayersArray = [[
         [
             Prefix.bookOfHours + "6thHourPsalm92&D=0000&C=NoActor",
             "",
-            "Tes volontés sont vraiment immuables : la sainteté emplit ta maison, Seigneur, pour la suite des temps.\"",
+            'Tes volontés sont vraiment immuables : la sainteté emplit ta maison, Seigneur, pour la suite des temps."',
             "",
             "عجيبة هي أهوال البحر، وعجيب هو الرب في الأعالي. شهاداته صادقة جدا، لبيتك ينبغي التقديس يا رب طول الأيام.",
         ],
@@ -35299,7 +35615,7 @@ PrayersArray = [[
             "",
             "Heureux les pauvres de cœur: le Royaume des cieux est à eux.",
             "",
-            "\"طوبى للمساكين بالروح، لأن لهم ملكوت السموات.",
+            '"طوبى للمساكين بالروح، لأن لهم ملكوت السموات.',
         ],
         [
             Prefix.bookOfHours + "6thHourGospel&D=0000&C=Diacon",
@@ -35819,7 +36135,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "قال الرب لربي: \"اجلس عن يميني حتى أضع أعداءك تحت موطئ قدميك. عصا قوة يرسل لك الرب من صهيون وتسود في وسط أعدائك. معك الرياسة في يوم قوتك، في بهاء القديسين. من البطن قبل كوكب الصبح ولدتك\".",
+            'قال الرب لربي: "اجلس عن يميني حتى أضع أعداءك تحت موطئ قدميك. عصا قوة يرسل لك الرب من صهيون وتسود في وسط أعدائك. معك الرياسة في يوم قوتك، في بهاء القديسين. من البطن قبل كوكب الصبح ولدتك".',
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm109&D=0000&C=NoActor",
@@ -36023,7 +36339,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "ضيقا وحزنا وجدت، وباسم الرب دعوت: \"يا رب نج نفسي\".",
+            'ضيقا وحزنا وجدت، وباسم الرب دعوت: "يا رب نج نفسي".',
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm114&D=0000&C=NoActor",
@@ -36074,7 +36390,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "آمنتُ لذلك تكلمتُ. وأنا اتضعت جدا. أنا قلت في حيرتي: \"إن كل الناس كاذبون\".",
+            'آمنتُ لذلك تكلمتُ. وأنا اتضعت جدا. أنا قلت في حيرتي: "إن كل الناس كاذبون".',
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm115&D=0000&C=NoActor",
@@ -36132,14 +36448,14 @@ PrayersArray = [[
             "",
             "Mais il leur dit : « Donnez-leur vous-mêmes à manger. » Ils répondirent: « Nous n'avons pas plus de cinq pains et deux poissons à moins d'aller nous-mêmes acheter de la nourriture pour tout ce monde ».",
             "",
-            "فقال لهم: \"أعطوهم أنتم ليأكلوا\". فقالوا: ليس عندنا أكثر من خمس خبزات وسمكتين، إلا أن نمضي نحن ونشتري أطعمة لهذا الشعب جميعه\".",
+            'فقال لهم: "أعطوهم أنتم ليأكلوا". فقالوا: ليس عندنا أكثر من خمس خبزات وسمكتين، إلا أن نمضي نحن ونشتري أطعمة لهذا الشعب جميعه".',
         ],
         [
             Prefix.bookOfHours + "9thHourGospel&D=0000&C=Diacon",
             "",
             "Il y avait bien cinq mille hommes. Jésus dit à ses disciples : « Faîtes les asseoir par groupe de cinquante. ».",
             "",
-            "وكانوا نحو خمسة آلاف رجل. فقال لتلاميذه: \"ليتكئوا في كل موضع خمسين خمسين\".",
+            'وكانوا نحو خمسة آلاف رجل. فقال لتلاميذه: "ليتكئوا في كل موضع خمسين خمسين".',
         ],
         [
             Prefix.bookOfHours + "9thHourGospel&D=0000&C=Diacon",
@@ -36198,7 +36514,7 @@ PrayersArray = [[
             "",
             "Ô Toi qui as accepté la confession du brigand sur la croix, accepte-nous, ô Dieu bon, nous qui sommes condamnés à la mort à cause de nos péchés. Avec lui, nous confessons nos péchés, et proclamons Ta divinité, et nous nous écrions tous : « Souviens-Toi de nous, ô Seigneur, quand nous viendrons dans Ton Royaume ».",
             "",
-            "يا من قبل إليه اعتراف اللص على الصليب، اقبلنا إليك أيها الصالح. نحن المستوجبين حكم الموت من أجل خطايانا. نقر بخطايانا معه معترفين بألوهيتك، ونصرخ معه جميعا: \"اذكرنا يا رب متى جئتَ في ملكوتك \"",
+            'يا من قبل إليه اعتراف اللص على الصليب، اقبلنا إليك أيها الصالح. نحن المستوجبين حكم الموت من أجل خطايانا. نقر بخطايانا معه معترفين بألوهيتك، ونصرخ معه جميعا: "اذكرنا يا رب متى جئتَ في ملكوتك "',
         ],
     ],
     [
@@ -36759,7 +37075,7 @@ PrayersArray = [[
             "",
             "Ainsi ne délaisse pas un cœur soumis ayant besoin de Ta miséricorde et qui crie avec humilité vers Toi, ô Seigneur : « Mon père, j’ai péché contre le ciel et contre Toi, je ne mérite pas d’être appelé Ton fils ; traite-moi comme un de Tes ouvriers",
             "",
-            "فلا تتخل عن قلبٍ خاشع مفتقر لرحمتك. لأني إليك أصرخ يا رب بتخشع: \"أخطأت يا أبتاه إلى السماء وقدامك ولست مستحقا أن أدعَى لك ابنا، بل اجعلني كأحد أجرائك\".",
+            'فلا تتخل عن قلبٍ خاشع مفتقر لرحمتك. لأني إليك أصرخ يا رب بتخشع: "أخطأت يا أبتاه إلى السماء وقدامك ولست مستحقا أن أدعَى لك ابنا، بل اجعلني كأحد أجرائك".',
         ],
     ],
     [
@@ -36897,7 +37213,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "من أجل داود عبدك لا ترد وجهك عن مسيحك. حلف الرب لداود حقا ولا يخلف: \"لأجعَلنَّ من ثمرة بطنك على كرسيك. إن حفظ بنوك عهدي وشهاداتي التي أعلمهم إياها، فبنوهم أيضا يجلسون إلى الأبد على كرسيك\".",
+            'من أجل داود عبدك لا ترد وجهك عن مسيحك. حلف الرب لداود حقا ولا يخلف: "لأجعَلنَّ من ثمرة بطنك على كرسيك. إن حفظ بنوك عهدي وشهاداتي التي أعلمهم إياها، فبنوهم أيضا يجلسون إلى الأبد على كرسيك".',
         ],
         [
             Prefix.bookOfHours + "12thHourPsalm131&D=0000&C=NoActor",
@@ -36994,7 +37310,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "اذكر يا رب بني أدوم في يوم أورشليم القائلين: \"انقضوا انقضوا حتى الأساس منها\".",
+            'اذكر يا رب بني أدوم في يوم أورشليم القائلين: "انقضوا انقضوا حتى الأساس منها".',
         ],
         [
             Prefix.bookOfHours + "12thHourPsalm136&D=0000&C=NoActor",
@@ -37105,7 +37421,7 @@ PrayersArray = [[
             "",
             "",
             "",
-            "في الطريق التي أسلك أخفوا لي فخا، تأملت عن اليمين وأبصرت فلم يكن من يعرفني. ضاع المهرب مني وليس من يسأل عن نفسي. فصرختُ إليك يا رب وقلت: \"أنت هو رجائي وحظي في أرض الأحياء\".",
+            'في الطريق التي أسلك أخفوا لي فخا، تأملت عن اليمين وأبصرت فلم يكن من يعرفني. ضاع المهرب مني وليس من يسأل عن نفسي. فصرختُ إليك يا رب وقلت: "أنت هو رجائي وحظي في أرض الأحياء".',
         ],
         [
             Prefix.bookOfHours + "12thHourPsalm141&D=0000&C=NoActor",
@@ -37253,7 +37569,7 @@ PrayersArray = [[
             "",
             "Poussé par l'Esprit, Siméon vint au Temple. Les parents y entraient avec l'enfant Jésus pour accomplir les rites de la Loi qui le concernaient. Siméon prit l'enfant dans ses bras, et il bénit Dieu en disant : « Maintenant ô Maître, tu peux laisser ton serviteur s'en aller dans la paix, selon ta parole. Car mes yeux ont vu ton salut, que tu as préparé à la face de tous les peuples : lumière pour éclairer les nations païennes, et gloire d'Israël ton peuple. »",
             "",
-            "فأقبل بالروح إلى الهيكل. ولما دخل بالطفل يسوع أبواه ليصنعا عنه كما يجب في الناموس، حمله سمعان على ذراعيه وبارك الله قائلا: \"الآن يا سيدي تطلق عبدك بسلام حسب قولك، لأن عيني قد أبصرتا خلاصك الذي أعددته قدام جميع الشعوب. نورا تجلى للأمم، ومجدا لشعبك إسرائيل.\"",
+            'فأقبل بالروح إلى الهيكل. ولما دخل بالطفل يسوع أبواه ليصنعا عنه كما يجب في الناموس، حمله سمعان على ذراعيه وبارك الله قائلا: "الآن يا سيدي تطلق عبدك بسلام حسب قولك، لأن عيني قد أبصرتا خلاصك الذي أعددته قدام جميع الشعوب. نورا تجلى للأمم، ومجدا لشعبك إسرائيل."',
         ],
     ],
     [
@@ -37262,7 +37578,7 @@ PrayersArray = [[
             "",
             "Me voici sur le point de me retrouver devant Le juste Juge, effrayé et terrifié à cause de mes nombreux péchés, car la vie passée dans l'amusement mérite la condamnation. Cependant, repens-toi, ô mon âme, puisque tu demeures encore sur cette terre, car la poussière du tombeau ne chante pas d'hymnes et, dans la mort, personne ne peut se souvenir, pas plus que ceux qui sont aux enfers n'offrent des remerciements. Toutefois, sors de ta paresse, réveille-toi et implore Le Sauveur en te repentant et en disant : « Ô Dieu, aie pitié de moi et sauve-moi ».",
             "",
-            "هوذا أنا عتيد أن أقف أمام الديان العادل، مرعوبا ومرتعبا من كثرة ذنوبي، لأن العمر المنقضي في الملاهي يستوجب الدينونة. لكن توبي يا نفسي مادمتِ في الأرض ساكنة، لأن التراب في القبر لا يسبح. وليس في الموتى من يذكر، ولا في الجحيم من يشكر. بل انهضي من رقاد الكسل وتضرعي إلى المخلص بالتوبة قائلة: \"اللهم ارحمني وخلصني\".",
+            'هوذا أنا عتيد أن أقف أمام الديان العادل، مرعوبا ومرتعبا من كثرة ذنوبي، لأن العمر المنقضي في الملاهي يستوجب الدينونة. لكن توبي يا نفسي مادمتِ في الأرض ساكنة، لأن التراب في القبر لا يسبح. وليس في الموتى من يذكر، ولا في الجحيم من يشكر. بل انهضي من رقاد الكسل وتضرعي إلى المخلص بالتوبة قائلة: "اللهم ارحمني وخلصني".',
         ],
     ],
     [
@@ -37278,7 +37594,7 @@ PrayersArray = [[
             "",
             "Ô Christ notre Dieu, face à Ton redoutable siège du jugement, je suis terrifié; devant l'Assemblée de Ton Jugement, j'éprouve beaucoup de crainte et de révérence ;",
             "",
-            "أيها المسيح إلهنا لكرسي حكمك المرهوب أفزع، ولمجلس دينونتك أخشع، ولنور شعاع لاهوتك أجزع، أنا الشقي المتدنس، الراقد على فراشي المتهاون في حياتي. لكنى أتخذ صورة العشار قارعا صدري، قائلا: \"اللهم اغفر لي فإني خاطئ\".",
+            'أيها المسيح إلهنا لكرسي حكمك المرهوب أفزع، ولمجلس دينونتك أخشع، ولنور شعاع لاهوتك أجزع، أنا الشقي المتدنس، الراقد على فراشي المتهاون في حياتي. لكنى أتخذ صورة العشار قارعا صدري، قائلا: "اللهم اغفر لي فإني خاطئ".',
         ],
     ],
     [
