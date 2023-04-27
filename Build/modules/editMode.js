@@ -1,3 +1,4 @@
+let sequence = [];
 async function editingMode(tblsArray) {
     document.body.addEventListener('keydown', event => {
         if (event.ctrlKey && 'w'.indexOf(event.key) !== -1) {
@@ -9,7 +10,7 @@ async function editingMode(tblsArray) {
     containerDiv.innerHTML = '';
     tblsArray.map(table => {
         for (let i = 0; i < table.length; i++) {
-            el = createHtmlElementForPrayerEditingMode(i, table[i][0], table[i], prayersLanguages, allLanguages, table[i][0].split('&C=')[1], containerDiv);
+            el = createHtmlElementForPrayerEditingMode(table[i][0], table[i], prayersLanguages, allLanguages, table[i][0].split('&C=')[1], containerDiv, i);
             if (el) {
                 Array.from(el.children).map((c) => c.contentEditable = 'true');
                 addEdintingButtons(el, tblsArray);
@@ -32,7 +33,8 @@ function addEdintingButtons(el, shadowArray) {
     //Export to ShadowArray button
     let btnExport = document.createElement('button');
     btnsDiv.appendChild(btnExport);
-    createEditingButton(btnExport, () => exportShadowArray([...shadowArray]), 'Export');
+    //createEditingButton(btnExport, () => exportShadowArrayOld([...shadowArray]), 'Export')
+    createEditingButton(btnExport, () => exportModifiedArray(), 'Export');
     //Modify The Title
     let btnTitle = document.createElement('button');
     btnsDiv.appendChild(btnTitle);
@@ -45,9 +47,17 @@ function addEdintingButtons(el, shadowArray) {
     let btnDelete = document.createElement('button');
     btnsDiv.appendChild(btnDelete);
     createEditingButton(btnDelete, () => deleteRow(btnDelete.parentElement.parentElement), 'Delete');
+    //Add table to sequence
+    let btnAddSequence = document.createElement('button');
+    btnsDiv.appendChild(btnAddSequence);
+    createEditingButton(btnAddSequence, () => addTableToSequence(btnAddSequence.parentElement.parentElement), 'Add To Sequence');
+    //Export Sequence
+    let btnExportSequence = document.createElement('button');
+    btnsDiv.appendChild(btnExportSequence);
+    createEditingButton(btnExportSequence, () => exportSequence(btnExportSequence.parentElement.parentElement), 'Export Sequence');
 }
 function deleteRow(htmlRow) {
-    htmlRow.dataset.deleted = 'deleted';
+    htmlRow.dataset.isDeleted = 'deleted';
     htmlRow.style.display = 'none';
 }
 function changeCssClass(htmlRow) {
@@ -82,116 +92,83 @@ function createEditingButton(btnHtml, fun, label) {
     btnHtml.innerText = label;
     btnHtml.addEventListener('click', () => fun());
 }
-function exportShadowArray(shadowArray) {
-    let htmlRows = containerDiv.querySelectorAll('.TargetRow'), htmlRow, rowIndex, table, updated, filtered, title;
-    for (let i = 0; i < htmlRows.length; i++) {
-        //for each div with class = TargetRow
-        htmlRow = htmlRows[i];
-        if (updated.indexOf(baseTitle(htmlRow.dataset.root)) < 0)
-            continue; //if the title is in the updated[] array, it means that this table has already been updated, we move to the next html element
-        title = htmlRow.dataset.root;
-        filtered = shadowArray.filter(tbl => baseTitle(tbl[0][0]) == baseTitle(title)); //We search for a table in the shadowARray having the same title as the data-root of the htmlRow
-        if (filtered.length == 1) {
-            //we found a table having the same title, we will retrieve all the html div elements matching the table title
-            table = filtered[0];
-            let allRows = containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true));
-            for (let s = 0; s < allRows.length; s++) {
-                if (allRows[s].dataset.isNewRow) {
-                    //it means this is a row we have added, we ad a new row to the table at s 
-                    table.splice(s, 0, [allRows[s].dataset.root]);
-                    table[s] = editRow(allRows[s]);
-                }
-                else if (allRows[s].dataset.deleted) {
-                    //it means this row need to be deleted, we remove the row from the table
-                    table.splice(s, 1);
-                }
-                else {
-                    //it means no rows added or deleted, we modify table[s]
-                    table[s] = editRow(allRows[s]);
-                }
-                updated.push(title);
-            }
+function exportModifiedArray() {
+    let htmlRows = containerDiv.querySelectorAll('.TargetRow'), tableHtmlRows, table, updated = [], newArray = [], title;
+    Array.from(htmlRows).forEach(
+    //for each 'TargetRow' div in containderDiv
+    (htmlRow) => {
+        title = baseTitle(htmlRow.dataset.root);
+        if (updated.indexOf(title) > -1)
+            return; //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
+        tableHtmlRows = containerDiv.querySelectorAll(getDataRootSelector(title, true)); //we selecte all the rows matching the title
+        newArray.push([]); //this is an emepty array for the table
+        table = newArray[newArray.length - 1];
+        for (let i = 0; i < tableHtmlRows.length; i++) {
+            //for each row matching the title
+            table.push(Array.from(tableHtmlRows[i].querySelectorAll('p')).map((p) => p.innerText));
+            table[table.length - 1].unshift(tableHtmlRows[i].dataset.root); //adding the title
         }
-        else if (filtered.length == 0) {
-            //We didin't find any table having the same title matching the data-root of the html div, we will hence need to insert a new table
-            //@ts-ignore
-            let previousTitle = htmlRow.previousSibling.dataset.root.split('&C=')[0]; //we are retrieving the root of the title of the preivous div
-            //We search in shadowArray for a table which title matches the title of the previous div
-            table = shadowArray.filter(t => t[0][0].startsWith(previousTitle))[0];
-            //we insert a new table after the table matching the title of the previous div
-            shadowArray.splice(shadowArray.indexOf(table) + 1, 0, [editRow(htmlRow)]); //we insert  an empty table
-        }
-        ;
-        function editRow(htmlRow) {
-            let row = [htmlRow.dataset.root], text;
-            for (let x = 0; x < htmlRow.children.length; x++) {
-                //for each child paragraph ('p' element) of the html div
-                //@ts-ignore
-                if (!htmlRow.children[x].dataset.lang)
-                    continue; //this is to escape the div containig the editing buttons
-                //@ts-ignore
-                text = htmlRow.children[x].innerText;
-                text = text.replaceAll('"', '\\"');
-                text = text.replaceAll("'", "\\'");
-                text = text.replaceAll(String.fromCharCode(10134) + ' ', '');
-                text = text.replaceAll(String.fromCharCode(10133) + ' ', '');
-                row[x + 1] = text; //we start at 1 because row[0] has been set to title (see above);
-            }
-            return row;
-        }
-    }
-    console.log(getArrayAsText());
-    function getArrayAsText() {
-        let text = '[';
-        shadowArray.map(table => {
-            if (!table || table.length < 1)
-                return;
-            text += '\n[';
-            table.map(row => {
-                if (!row || row.length < 1)
-                    return;
-                text += '\n[';
-                row.map(el => text += '"' + el + '", \n');
-                text += '],';
+        updated.push(title);
+    });
+    let text = replacePrefixes(newArray);
+    localStorage.editedText = text;
+    console.log(localStorage.editedText);
+    exportToTextFile(console, text, 'PrayersArrayModified');
+}
+function replacePrefixes(array) {
+    let text = '[';
+    (function convertArrayToText() {
+        array.forEach(table => {
+            //open table
+            text += '[\n';
+            table.forEach(row => {
+                //open row
+                text += '[\n';
+                for (let i = 0; i < row.length; i++) {
+                    row[i] = row[i].replaceAll('"', '\\"');
+                    if (row[0].endsWith('&C=Title'))
+                        row[i] = row[i].replaceAll(String.fromCharCode(10134), '').replaceAll(String.fromCharCode(10133), '');
+                    text += '"' + row[i] + '", \n';
+                }
+                //close row
+                text += '], \n';
             });
-            text += '],';
+            //close table
+            text += '], \n';
         });
-        text += ']';
-        text = replacePrefixes(text);
+    })();
+    return replaceText(text) + ']';
+    function replaceText(text) {
+        text = text.replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours + "');
+        text = text.replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies + "');
+        text = text.replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense + "');
+        text = text.replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer + "');
+        text = text.replaceAll('"' + Prefix.communion, 'Prefix.communion + "');
+        text = text.replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses + "');
+        text = text.replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer + "');
+        text = text.replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn + "');
+        text = text.replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass + "');
+        text = text.replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight + "');
+        text = text.replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse + "');
+        text = text.replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers + "');
+        text = text.replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn + "');
+        text = text.replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers + "');
+        text = text.replaceAll('"' + Prefix.katholikon, 'Prefix.incenseVespers + "');
+        text = text.replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon + "');
+        text = text.replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil + "');
+        text = text.replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril + "');
+        text = text.replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory + "');
+        text = text.replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn + "');
+        text = text.replaceAll('"' + Prefix.praxis, 'Prefix.praxis + "');
+        text = text.replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn + "');
+        text = text.replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse + "');
+        text = text.replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul + "');
+        text = text.replaceAll(giaki.AR, '" + giaki.AR + "');
+        text = text.replaceAll(giaki.FR, '" + giaki.FR + "');
+        text = text.replaceAll(giaki.COP, '" + giaki.COP + "');
+        text = text.replaceAll(giaki.CA, '" + giaki.CA + "');
         return text;
     }
-    shadowArray = undefined;
-}
-function replacePrefixes(text) {
-    text = text.replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours + "');
-    text = text.replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies + "');
-    text = text.replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense + "');
-    text = text.replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer + "');
-    text = text.replaceAll('"' + Prefix.communion, 'Prefix.communion + "');
-    text = text.replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses + "');
-    text = text.replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer + "');
-    text = text.replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn + "');
-    text = text.replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass + "');
-    text = text.replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight + "');
-    text = text.replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse + "');
-    text = text.replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers + "');
-    text = text.replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn + "');
-    text = text.replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers + "');
-    text = text.replaceAll('"' + Prefix.katholikon, 'Prefix.incenseVespers + "');
-    text = text.replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon + "');
-    text = text.replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil + "');
-    text = text.replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril + "');
-    text = text.replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory + "');
-    text = text.replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn + "');
-    text = text.replaceAll('"' + Prefix.praxis, 'Prefix.praxis + "');
-    text = text.replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn + "');
-    text = text.replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse + "');
-    text = text.replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul + "');
-    text = text.replaceAll(giaki.AR, '" + giaki.AR + "');
-    text = text.replaceAll(giaki.FR, '" + giaki.FR + "');
-    text = text.replaceAll(giaki.COP, '" + giaki.COP + "');
-    text = text.replaceAll(giaki.CA, '" + giaki.CA + "');
-    return text;
 }
 function addNewRow(row, shadowArray) {
     let newRow = document.createElement('div'), p, child;
@@ -220,10 +197,11 @@ function addNewRow(row, shadowArray) {
     addEdintingButtons(newRow, shadowArray);
     row.insertAdjacentElement('afterend', newRow);
 }
-function createHtmlElementForPrayerEditingMode(rowIndex, firstElement, prayers, languagesArray, userLanguages, actorClass, position = containerDiv) {
+function createHtmlElementForPrayerEditingMode(firstElement, prayers, languagesArray, userLanguages, actorClass, position = containerDiv, rowIndex) {
     let row, p, lang, text;
     row = document.createElement("div");
-    row.dataset.index = rowIndex.toString();
+    if (rowIndex)
+        row.dataset.index = rowIndex.toString();
     row.classList.add("TargetRow"); //we add 'TargetRow' class to this div
     let dataRoot = firstElement;
     row.dataset.root = dataRoot;
@@ -285,4 +263,87 @@ function getPrayersSequence() {
     });
     text += ']';
     console.log(text);
+}
+function addTableToSequence(htmlRow) {
+    sequence.push(baseTitle(htmlRow.dataset.root));
+    let result = prompt(sequence.join(', \n'), sequence.join(', \n'));
+    sequence = result.split(', \n');
+    if (document.getElementById('showSequence')) {
+        let tableRows = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(htmlRow.dataset.root), true)));
+        tableRows.forEach((row) => {
+            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map(p => p.innerText), ['AR', 'FR'], ['AR', 'FR'], row.dataset.root.split('&C=')[1], document.getElementById('showSequence'));
+        });
+        setCSSGridTemplate(document.getElementById('showSequence').querySelectorAll('.TargetRow'));
+    }
+}
+function exportSequence(htmlRow) {
+    console.log(sequence);
+    let empty = confirm('Do you want to empty the sequence?');
+    if (empty)
+        sequence = [];
+}
+function showSequence(sequenceArray = sequence, container = containerDiv) {
+    let tableRows;
+    let newDiv = document.createElement('div');
+    document.getElementById('content').insertAdjacentElement('beforebegin', newDiv);
+    (function appendCloseBtn() {
+        let close = document.createElement("a");
+        close.innerText = String.fromCharCode(215);
+        close.classList.add("closebtn");
+        close.style.position = "fixed";
+        close.style.top = "5px";
+        close.style.right = "15px";
+        close.style.fontSize = "30pt";
+        close.style.fontWeight = "bold";
+        close.addEventListener("click", (e) => {
+            e.preventDefault;
+            newDiv.remove();
+        });
+        newDiv.appendChild(close);
+    })();
+    newDiv.id = 'showSequence';
+    newDiv.style.backgroundColor = 'white !important';
+    newDiv.style.height = '50%';
+    newDiv.style.width = '100%';
+    newDiv.style.position = 'fixed';
+    newDiv.style.overflow = 'auto';
+    newDiv.style.zIndex = '3';
+    sequenceArray.forEach(title => {
+        tableRows = container.querySelectorAll(getDataRootSelector(title, true));
+        tableRows.forEach(row => {
+            createHtmlElementForPrayerEditingMode(row.dataset.root, Array.from(row.querySelectorAll('p')).map((p) => p.innerText), ['AR', 'FR'], ['AR', 'FR'], row.dataset.root.split('&C=')[1], newDiv);
+        });
+        setCSSGridTemplate(newDiv.querySelectorAll('.TargetRow'));
+    });
+}
+function exportToTextFile(console, text, fileName) {
+    console.save = function (data, filename) {
+        if (!text) {
+            console.error('Console.save: No data');
+            return;
+        }
+        if (!filename)
+            filename = 'PrayersArrayModifiedd';
+        if (typeof text === "object") {
+            data = JSON.stringify(data, undefined, 4);
+        }
+        text = text.replace('\\\\', '\\');
+        var blob = new Blob([data], { type: 'text/json' }), e = document.createEvent('MouseEvents'), a = document.createElement('a');
+        a.download = filename;
+        a.href = window.URL.createObjectURL(blob);
+        a.dataset.downloadurl = ['text/json', a.download, a.href].join(':');
+        e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        a.dispatchEvent(e);
+    };
+    console.save(text, fileName);
+}
+function splitParagraphsToTheRowsBelow(title, lang) {
+    let allRows = containerDiv.querySelectorAll(getDataRootSelector(title));
+    let firstParag = allRows[0].querySelectorAll('p[data-lang="' + lang + '"');
+    let text = firstParag[0].innerText;
+    let splitted = text.split('\n');
+    let clean = splitted.filter(t => t != '');
+    for (let i = 1; i < allRows.length; i++) {
+        allRows[i].querySelectorAll('p[data-lang="' + lang + '"')[0].innerText = clean[i - 1];
+    }
 }
