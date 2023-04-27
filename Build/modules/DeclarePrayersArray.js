@@ -4919,7 +4919,7 @@ PrayersArray = [
     [
         [
             Prefix.psalmResponse +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Title",
             " ",
             "Réponse du Psaume du 29 du mois copte ",
             "مرد مزمور يوم 29 في الشهر القبطي ",
@@ -4927,7 +4927,7 @@ PrayersArray = [
         ],
         [
             Prefix.psalmResponse +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Diacon",
             "Ⲁ̅ⲗ ⲁ̅ⲗ: Ⲓⲏ̅̅ⲥ̅ Ⲡⲭ̅ⲥ̅ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲫϯ: ⲁϥϭⲓⲥⲁⲣⲝ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ϯⲡⲁⲣⲑⲉⲛⲟⲥ ⲟⲩⲟϩ ⲁⲩⲙⲁⲥϥ ϧⲉⲛ Ⲃⲏⲉⲑⲗⲉⲉⲙ ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ: ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩ ϣⲟⲙⲧ: ⲁ̅ⲗ ⲁ̅ⲗ ",
             "Alléluia, Alléluia, Jésus- Christ le Fils de Dieu s’est incarné de la Vierge. Et Il est né à Béthleem, selon les paroles prophétiques. Il est ressuscité d’entre les morts, le troisième jour.  Alléluia, Alléluia ",
             "الليلويا الليلويا ايسوس باخرستوس ابشيري إم افنوتي آفتشي ساركس إفول خين تي بارثينوس أووه آفماسف خين باثليئيم كاتا ني اثمي إم ابروفيتيكون آفتونف إفول خين ني اثمؤوت خين بي إيهؤو إمماه شومت. االليلويا الليلويا ",
@@ -5693,28 +5693,28 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.gospelResponse + "&D=2900&C=Title",
+            Prefix.gospelResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
             " ",
             "Réponse de l’Évangile du 29 du mois copte ",
             "مرد إنجيل يوم 29 من الشهر القبطي ",
             "مرد إنجيل يوم 29 من الشهر القبطي ",
         ],
         [
-            Prefix.gospelResponse + "&D=2900&C=Diacon",
+            Prefix.gospelResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲁ̅ⲗ ⲁ̅ⲗ ⲁ̅ⲗ ⲁ̅ⲗ: Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲫϯ: ⲁϥϭⲓⲥⲁⲣⲝ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ϯⲡⲁⲣⲑⲉⲛⲟⲥ. ",
             "Alléluia, alléluia, alléluia, alléluia, Jésus-Christ le Fils de Dieu s’est incarné de la Vierge. ",
             " ",
             "هلليلويا هلليلويا هلليلويا هلليلويا يسوع المسيح ابن الله، تجسد من العذراء ",
         ],
         [
-            Prefix.gospelResponse + "&D=2900&C=Diacon",
+            Prefix.gospelResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲟⲩⲟϩ ⲁⲩⲙⲁⲥϥ ϧⲉⲛ Ⲃⲏⲉⲑⲗⲉⲉⲙ ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ: ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩ ϣⲟⲙⲧ. ",
             "Et Il est né à Béthleem, selon les paroles prophétiques. Il est ressuscité d’entre les morts, le troisième jour. ",
             " ",
             "وولد في بيت لحم اليهودية كالأصوات النبويه وقام من بين الأموات، في اليوم الثالث ",
         ],
         [
-            Prefix.gospelResponse + "&D=2900&C=Diacon",
+            Prefix.gospelResponse + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲫⲁⲓ ⲉ̀ⲣⲉ ⲡⲓⲱ̀ⲟⲩ ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁϥ: ⲛⲉⲙ Ⲡⲉϥⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ⲓⲥϫⲉⲛ ϯⲛⲟⲩ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ. ",
             "Celui à qui est due la gloire: avec son bon Père: et le Saint Esprit: Maintenant et pour toujours. ",
             " ",
@@ -9276,7 +9276,7 @@ PrayersArray = [
     [
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Title",
             " ",
             " ",
             " ",
@@ -9284,7 +9284,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9292,7 +9292,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9300,7 +9300,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9308,7 +9308,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9316,7 +9316,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9324,7 +9324,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9332,7 +9332,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9340,7 +9340,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9348,7 +9348,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9356,7 +9356,7 @@ PrayersArray = [
         ],
         [
             Prefix.fractionPrayer +
-                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Priest",
+                "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=&C=Priest",
             " ",
             " ",
             " ",
@@ -9365,61 +9365,61 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.communion + "&D=2904&C=Title",
+            Prefix.communion + "&D=$copticFeasts.Nativity&C=Title",
             " ",
             "في توزيع عيد الميلاد مديحة أنا أفتح فاي بمجد الله ",
         ],
         [
-            Prefix.communion + "&D=2904&C=Diacon",
+            Prefix.communion + "&D=$copticFeasts.Nativity&C=Diacon",
             " ",
             "أنا افتح فاي بمجد الله وأرتل للمسيح على الدوام  لأنه أكمل وعده وأوفاه في إيتاف ماسف خين فيسليئيم  ترأى الملاك بصوت التهليل وبشر رعاة الأغنام  اثقية ابجين ميسى ان امانوئيل في إيتاف ماسف خين فيسليئيم  جميع اللغات تصرخ بصياح المجد لله في العلا وعلى الأرض السلام  وفي الناس بهجة وأفراح في إيتاف ماسف خين فيسليئيم  حينئذ أتوا إليه المجوس من المشرق باهتمام  وسجدوا لأسمه القدوس في إيتاف ماسف خين فيسليئيم  خروا له بعظم إيمان وقدموا قرابين بالتمام  مرا وذهبا ولبان في إيتاف ماسف خين فيسليئيم  دانيال أخبرنا ببيان حين رأى وحية باستفاهم  حجرا قطع بغير يد إنسان في إيتاف ماسف خين فيسليئيم  دعيت يا بيت لحم أفراثا وتشرفني بأسرار عظام  سيدنا منك أتى في إيتاف ماسف خين فيسليئيم  رتل فيك ميخاؤوس ونطق بخفيات عظام  على مولد باشويس ايسوس في إيتاف ماسف خين فيسليئيم  زهرة نبعت من بيت داود وكوكب أشرق من ابرآم  وقج تم الوعد الموعود في إيتاف ماسف خين فيسليئيم  سالومي ويوسف النجار قد نالوا كرامات عظام  ومجد الرب عليهما نار في إيتاف ماسف خين فيسليئيم  اشعياء نطق بسرور وأفراح عذراء في عقب الأيام  تلد راعى شعبه بصلاح في إيتاف ماسف خين فيسليئيم  صبيًا ولد أو إبنا أعطيناه ملاك المشورة الأعظم  رئاسته على منكباه في إيتاف ماسف خين فيسليئيم  صوفونيو عنك خبر ونطق بمجدك يا مريم  شمس البر منك ظهر في إيتاف ماسف خين فيسليئيم  ضوء الكوكب أشرق للمجوس وصار يرشدهم بإلهام  إلى حيث كان الرب ايسوس في إيتاف ماسف خين فيسليئيم  طغمات العرش العلويين يسبحون ببهجة ونظام  بصوت الفرح مبتهجين في إيتاف ماسف خين فيسليئيم  ظهر سيدنا وأوفي الوعد وجاد علينا بالأنعام  تواضع وأخذ شكل العبد في إيتاف ماسف خين فيسليئيم  عمانوئيل نور من نور نورنا من بعد ظلام  وصار معنا إله منظور في إيتاف ماسف خين فيسليئيم  غير المرئي ظهر الآن لأجل خلاص عبده آدم  وعتقنا من أسر الشيطان في إيتاف ماسف خين فيسليئيم  في المذوذ كان ملفوف وسجدت له رعاة الأغنام  وسبحته كل الصفوف في إيتاف ماسف خين فيسليئيم  قال المرتل في المزمور تسجد له سائر الانام  وتقدم له هدايا ونذور في إيتاف ماسف خين فيسليئيم  كل الأنفس مجتمعين اليوم في عيدك الأعظم  بأصوات الفرح مبتهجين في إيتاف ماسف خين فيسليئيم  لوقا الرسول أخبر بما قيل نورا أشرق للأمم  ومجدا لشعبك اسرائيل في إيتاف ماسف خين فيسليئيم  ميلاد ايسوس هكذا كان بعجائب واسرار عظام  والكلمة قد صار إنسان في إيتاف ماسف خين فيسليئيم  نؤمن باسمه القدوس ونسبح بمجد أعظم  أنون خين ني اخرستيانوس في إيتاف ماسف خين فيسليئم  هيرودس ذلك الملعون أراد أن يقتل رب الأنام  أبؤور أن ايه بورانيون في إيتاف ماسف خين فيسليئيم  وغاب صوابه المنجوس وقتل ربوات أطفال تمام  من شأن سيدنا بي اخرستوس في إيتاف ماسف خين فيسليئيم  وظهر ملاك الله في الحين ليوسف يقول أهرب قوام  إلى أرض المصريين في إيتاف ماسف خين فيسليئيم  واتى السيد من أورشليم حتى بلغ إلى قسقام  فوق السحابة الحقيقية مقيم في إيتاف ماسف خين فيسليئيم  لا تنسى يا أم القدوس اشفعي فينا يا مريم  أمام سيدنا بي اخرستوس في إيتاف ماسف خين فيسليئيم  يا من اتيت من علو سماك واشرقت من البتول مريم  تطلع علينا بعين رضاك في إيتاف ماسف خين فيسليئيم  والبيعة تكون في طمأنينتك محفوظة دايما يا مريم  وتكون منصانة بشفاعتك محروسة طول الأيام   ",
         ],
     ],
     [
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Title",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Title",
             " ",
             "Clôture des Quatrins du carillon pour les fêtes du Seigneur ",
             "ختام أرباع الناقوس في الأعياد السيدية  ",
             "ختام أرباع الناقوس في الأعياد السيدية ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅ ⲛ̀ⲥⲁϥ ⲛⲉⲙ ⲫⲟⲟ̀ⲩ: ⲛ̀ⲑⲟϥ ⲛ̀ⲑⲟϥ ⲡⲉ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ: ϧⲉⲛ ⲟⲩϩⲩⲡⲟⲥⲧⲁⲥⲓⲥ ⲛ̀ⲟ̀ⲩⲱ̀ⲧ: ⲧⲉⲛⲟ̀ⲩⲱ̀ϣⲧ ⲙ̀ⲙⲟϥ ⲧⲉⲛϯⲱ̀ⲟ̀ⲩ ⲛⲁϥ.  ",
             "Jésus-Christ est Lui-même hier♪ aujourd’hui et éternellement♪ avec Son hypostase unique♪ Nous l’adorons et nous le glorifions. ",
             " ",
             "يسوع المسيح هو هو♪ أمس واليوم وإلي الأبد♪ بأُقنوم واحد♪ نسجد له ونمجده. ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "Ⲡ̀ⲟⲩⲣⲟ ⲛ̀ⲧⲉ ϯϩⲓⲣⲏⲛⲏ: ⲙⲟⲓ ⲛⲁⲛ ⲛ̀ⲧⲉⲕϩⲓⲣⲏⲛⲏ ⲥⲉⲙⲛⲓ ⲛⲁⲛ ⲛ̀ⲧⲉⲕϩⲓⲣⲏⲛⲏ: ⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.  ",
             "Ô Roi de la paix♪ donne-nous Ta paix♪ accorde-nous Ta paix et pardonne-nous nos péchés ",
             " ",
             "يا ملك السلام أعطنا سلامك♪ قرر لنا سلامك♪ واغفر لنا خطايانا. ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "̀Ϫ̀ⲱⲣ ⲉ̀ⲃⲟⲗ ⲛ̀ⲛⲓϫⲁϫⲓ: ⲛ̀ⲧⲉ ϯⲉⲕⲕ̀ⲗⲏⲥⲓⲁ: ⲁⲣⲓⲥⲟⲃⲧ ⲉ̀ⲣⲟⲥ: ⲛ̀ⲛⲉⲥⲕⲓⲙ ϣⲁ ⲉ̀ⲛⲉϩ. ",
             "Disperse les ennemis de l'Église. Fortifie-la ainsi♪ elle ne sera jamais ébranlée. ",
             " ",
             "فرق أعداء♪ الكنيسة♪ وحصنها فلا♪ تتزعزع إلي الابد. ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "̀Ⲉ̀ⲙⲙⲁⲛⲟⲩⲏⲗ Ⲡⲉⲛⲛⲟⲩϯ: ϧⲉⲛ ⲧⲉⲛⲙⲏϯ ϯⲛⲟⲩ: ϧⲉⲛ ⲡ̀ⲱ̀ⲟⲩ ⲛ̀ⲧⲉ Ⲡⲉϥⲓⲱⲧ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ. ",
             "Emmanuel notre Dieu♪ est maintenant parmi nous♪ avec la gloire de son Père♪ et du Saint Esprit.  ",
             " ",
             "عمانوئيل إلهنا♪ في وسطنا الآن♪ بمجد أبيه♪ والروح القدس. ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "̀̀Ⲛ̀ⲧⲉϥⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲛ ⲧⲏⲣⲉⲛ: ⲛ̀ⲧⲉϥⲧⲟⲩⲃⲟ ⲛ̀ⲛⲉⲛϩⲏⲧ: ⲛ̀ⲧⲉϥⲧⲁⲗϭⲟ ⲛ̀ⲛⲓϣⲱⲛⲓ: ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ ⲛⲉⲙ ⲛⲉⲛⲥⲱⲙⲁ.  ",
             "Qu’Il nous bénisse tous♪ Et purifie nos cœurs♪ guérisse les maladies♪ de nos âmes et nos corps  ",
             " ",
             "ليباركنا كلنا♪ ويطهر قلوبنا♪ ويشفي أمراض♪ نفوسنا وأجسادنا. ",
         ],
         [
-            Prefix.cymbalVerses + " LordFeastsEnd&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "LordFeastsEnd&D=0000&C=Diacon",
             "̀Ⲧ̀ⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ ⲱ̀ Ⲡⲭ̅ⲥ̅: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " +
                 giaki.COP +
                 " ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ  ",
@@ -9519,14 +9519,14 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.cymbalVerses + "&D=&C=Diacon",
+            Prefix.cymbalVerses + "&D=$copticFeasts.Nativity&C=Diacon",
             "Ⲡⲓϫⲓⲛⲙⲓⲥⲓ ⲙ̀ⲡⲁⲣⲑⲉⲛⲓⲕⲟⲛ: ⲟⲩⲟϩ ⲛⲓⲛⲁⲕϩⲓ ⲙ̀ⲡ̀ⲛⲁⲧⲓⲕⲟⲛ:  ⲟⲩϣ̀ⲫⲏⲣⲓ ⲙ̀ⲡⲁⲣⲁⲇⲟⲝⲟⲛ:  ⲕⲁⲧⲁ ⲛⲓⲥⲙⲓ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ.  ",
             "Naissance virginale♪ et douleurs spirituelles♪ surprenant et glorieux♪ selon les prophètes. ",
             "ايجين ميسى إم بارثينيكون: أووه نى ناكهى ام ابنفما تيكون: أو اشفيرى إمبارذوكسون كاتا نى إزمى إمبروفيتكون. ",
             "ميلاد بتولي♪ وطلق روحي عجيب♪ ممجد♪ حسب الأخبار النبوية. ",
         ],
         [
-            Prefix.cymbalVerses + "&D=&C=Diacon",
+            Prefix.cymbalVerses + "&D=$copticFeasts.Nativity&C=Diacon",
             "Ⲭⲉⲣⲉ Ⲃⲏⲑⲗⲉⲉⲙ:  ⲧ̀ⲡⲟⲗⲓⲥ ⲛ̀ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲏⲥ:  ⲑⲏⲉ̀ⲧⲁⲩⲙⲉⲥ Ⲡⲭ̅ⲥ̅ ⲛ̀ϧⲏⲧⲥ:  ⲡⲓⲙⲁϩ ⲥ̀ⲛⲁⲩ ⲛ̀Ⲁⲇⲁⲙ.  ",
             "Salut à toi♪ Bethléem la ville des prophètes♪ où est né le Christ♪ le second Adam. ",
             " شيرى فيثليئيم: إتبوليس إن نى ابروفيتيس: ثيئيتاف ميس بخرستوس انخيتس: بى ماه اثناف ان آدام. ",
@@ -9772,7 +9772,7 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.cymbalVerses + " StMaykel&D=$Seasons.PentecostalDays&C=Diacon",
+            Prefix.cymbalVerses + "StMaykel&D=$Seasons.PentecostalDays&C=Diacon",
             "Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ: ⲡⲓⲛⲓϣϯ ⲛ̀ⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲡⲓⲭ̀ⲣⲓⲙⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ: ⲛ̀ⲧⲉ ϯⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ. ",
             "Salut à Michel le chef des archanges celui qui a annoncé le salut obtenu grâce à la Résurrection. ",
             " ",
@@ -9887,21 +9887,21 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.cymbalVerses + "&D=2900&C=Title",
+            Prefix.cymbalVerses + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title",
             " ",
             "Quatrins du carillon pour le 29 du mois copte ",
             "أرباع الناقوس ليوم 29 من الشهر القبطي  ",
             "أرباع الناقوس ليوم 29 من الشهر القبطي ",
         ],
         [
-            Prefix.cymbalVerses + "&D=2900&C=Diacon",
+            Prefix.cymbalVerses + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲭⲉⲣⲉ Ⲃⲏⲑⲗⲉⲉⲙ:  ⲧ̀ⲡⲟⲗⲓⲥ ⲛ̀ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲏⲥ:  ⲑⲏⲉ̀ⲧⲁⲩⲙⲉⲥ Ⲡⲭ̅ⲥ̅ ⲛ̀ϧⲏⲧⲥ:  ⲡⲓⲙⲁϩ ⲥ̀ⲛⲁⲩ ⲛ̀Ⲁⲇⲁⲙ.  ",
             "Salut à toi♪ Bethléem♪ la ville des prophètes♪ où est né le Christ♪ le second Adam. ",
             " ",
             "السلام لبيت لحم♪ مدينة الأنبياء♪ التي ولد فيها♪ المسيح آدم الثانى. ",
         ],
         [
-            Prefix.cymbalVerses + "&D=2900&C=Diacon",
+            Prefix.cymbalVerses + "&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Diacon",
             "Ⲭⲉⲣⲉ ⲧⲉϥⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ: ⲉ̀ⲧⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ: ϣⲁⲛ̀ⲧⲉϥⲥⲱϯ ⲙ̀ⲙⲟⲛ: ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲉⲛⲛⲟⲃⲓ.  ",
             "Salut à sa Résurrection♪ d’entre les morts♪ pour nous sauver de nos péchés. ",
             " ",
@@ -9910,21 +9910,21 @@ PrayersArray = [
     ],
     [
         [
-            Prefix.cymbalVerses + " PopeAndBishops&D=0000&C=Title",
+            Prefix.cymbalVerses + "PopeAndBishops&D=0000&C=Title",
             " ",
             "Quatrins du carillon en présence du Pape ou d’un Evêque ",
             "أرباع الناقوس في حضور البطرك أو الأسقف  ",
             "أرباع الناقوس في حضور البطرك أو الأسقف ",
         ],
         [
-            Prefix.cymbalVerses + " PopeAndBishops&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "PopeAndBishops&D=0000&C=Diacon",
             "Ⲧⲉⲛϯϩⲟ ⲉ̀ⲣⲟⲕ ⲱ̀ Ⲩ̀ⲓⲟⲥ Ⲑⲉⲟⲥ: ⲉⲑⲣⲉⲕⲁ̀ⲣⲉϩ ⲉ̀ⲡ̀ⲱⲛϧ ⲙ̀ⲡⲉⲛⲡⲁⲧⲣⲓⲁⲣⲭⲏⲥ: ⲡⲁⲡⲁ ⲁⲃⲃⲁ Ⲧⲁⲱⲁⲇⲣⲟⲥ ⲡⲓⲁⲣⲭⲓⲉ̀ⲣⲉⲩⲥ: ⲙⲁⲧⲁϫⲣⲟϥ ϩⲓϫⲉⲛ ⲡⲉϥⲑ̀ⲣⲟⲛⲟⲥ.  ",
             "Nous t’implorons♪ ô Fils de Dieu♪ de conserver la vie de notre patriarche♪ le grand prêtre anba Tawadros ;♪ maintiens-le sur son trône. ",
             " ",
             "نسألك يا أبن الله♪ أن تحفظ حياة♪ بطريركنا البابا أنبا تاوضروس رئيس الكهنة♪ ثبته علي كرسيه. ",
         ],
         [
-            Prefix.cymbalVerses + " PopeAndBishops&D=0000&C=Diacon",
+            Prefix.cymbalVerses + "PopeAndBishops&D=0000&C=Diacon",
             "Ⲛⲉⲙ ⲡⲉϥⲕⲉϣ̀ⲫⲏⲣ ⲛ̀ⲗⲓⲧⲟⲩⲣⲅⲟⲥ ⲡⲉⲛⲓⲱⲧ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲇⲓⲕⲉⲟⲥ: ⲁⲃⲃⲁ (…) ⲡⲓⲉ̀ⲡⲓⲥⲕⲟⲡⲟⲥ: ⲙⲁⲧⲁϫⲣⲟϥ ϩⲓϫⲉⲛ ⲡⲉϥⲑ̀ⲣⲟⲛⲟⲥ.  ",
             "Et son partenaire dans le ministère♪ notre père le juste anba (…) l'évêque ;♪ maintiens-le sur son siège. ",
             " ",
@@ -14313,28 +14313,28 @@ PrayersArray = [
         [
             Prefix.bookOfHours + "9thHourPsalm95&D=0000&C=NoActor",
             " ",
-            " ",
+            "Chantez au Seigneur un chant nouveau, chantez au Seigneur, terre entière, chantez au Seigneur et bénissez son nom ! De jour en jour, proclamez son salut, racontez à tous les peuples sa gloire, à toutes les nations ses merveilles ! Il est grand, le Seigneur, hautement loué, redoutable au-dessus de tous les dieux : néant, tous les dieux des nations ! Lui, le Seigneur, a fait les cieux : devant lui, splendeur et majesté, dans son sanctuaire, puissance et beauté.",
             " ",
             "سبحوا الرب تسبيحا جديدا، سبحي الرب يا كل الأرض، سبحوا الرب وباركوا اسمه. بشروا من يوم إلى يوم بخلاصه. حدثوا في الأمم بمجده وبين جميع الشعوب بعجائبه، لأن الرب عظيم هو ومسبح جدا. مرهوب على كل الآلهة لأن كل آلهة الأمم شَيَاطين، أما الرب فصنع السموات. الجلال والبهاء قدامه، الطهر والجمال العظيم في قدسه. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm95&D=0000&C=NoActor",
             " ",
-            " ",
+            "Rendez au Seigneur, familles des peuples, rendez au Seigneur la gloire et la puissance, rendez au Seigneur la gloire de son nom. Apportez votre offrande, entrez dans ses parvis, adorez le Seigneur, éblouissant de sainteté.",
             " ",
             "قدموا للرب يا جميع قبائل الأمم، قدموا للرب مجدا وكرامة، قدموا للرب مجدا لاسمه. احملوا الذبائح وادخلوا دياره، اسجدوا للرب في دياره المقدسة. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm95&D=0000&C=NoActor",
             " ",
-            " ",
+            "Tremblez devant lui, terre entière. Allez dire aux nations : « Le Seigneur est roi ! » Le monde, inébranlable, tient bon. Il gouverne les peuples avec droiture.",
             " ",
             "فلتتزلزل الأرض كلها من أمام وجهه. قولوا بين الأمم إن الرب قد ملك على خشبة، وأيضا ثبت المسكونة فلن تتزعزع. يدين الشعوب بالاستقامة. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm95&D=0000&C=NoActor",
             " ",
-            " ",
+            "Joie au ciel ! Exulte la terre ! Les masses de la mer mugissent, la campagne tout entière est en fête. Les arbres des forêts dansent de joie devant la face du Seigneur, car il vient, car il vient pour juger la terre. Il jugera le monde avec justice, et les peuples selon sa vérité !",
             " ",
             "فلتفرح السموات ولتبتهج الأرض وليعج البحر وجميع ملئه، تفرح الوديان وكل ما فيها، حينئذ يبتهج كل شجر الغاب أمام وجه الرب، لأنه يأتي ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة. ",
         ],
@@ -14350,63 +14350,63 @@ PrayersArray = [
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Le Seigneur est roi ! Exulte la terre ! Joie pour les îles sans nombre !",
             " ",
             "الرب قد ملك فلتتهلل الأرض، ولتفرح الجزائر الكثيرة.  ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Ténèbre et nuée l'entourent, justice et droit sont l'appui de son trône. Devant lui s'avance un feu qui consume alentour ses ennemis.",
             " ",
             "سحاب وضباب حوله، العدل والقضاء قوام كرسيه، النار تسبق فتسلك أمامه، وبلهيب تحرق أعداءه الذين حوله.  ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Quand ses éclairs illuminèrent le monde, la terre le vit et s'affola ; les montagnes fondaient comme cire devant le Seigneur, devant le Maître de toute la terre.",
             " ",
             "أضاءت بروقه المسكونة. نظرت الأرض فتزلزلت، ذابت الجبال مثل الشمع من قدام وجه الرب، من أمام وجه رب الأرض كلها. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Les cieux ont proclamé sa justice, et tous les peuples ont vu sa gloire.",
             " ",
             "أخبرت السموات بعدله، وعاينت جميع الشعوب مجده . ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Honte aux serviteurs d'idoles qui se vantent de vanités ! A genoux devant lui, tous les dieux !",
             " ",
             "يخزى جميع الساجدين لصنعة الأيدي، المفتخرين بأصنامهم. اسجدوا لله يا جميع ملائكته. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Pour Sion qui entend, grande joie ! Les villes de Juda exultent devant tes jugements, Seigneur ! Tu es, Seigneur, le Très-Haut sur toute la terre : tu domines de haut tous les dieux.",
             " ",
             "سمعت صهيون ففرحت، وتهللت بنات يهوذا، من أجل أحكامك يا رب. لأنك أنت هو الرب العالي على كل الأرض، ارتفعت جدا فوق جميع الآلهة. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Haïssez le mal, vous qui aimez le Seigneur, car il garde la vie de ses fidèles et les arrache aux mains des impies.",
             " ",
             "يا محبي الرب أبغضوا الشر. إن الرب يحفظ نفوس أبراره، وينجيهم من أيدي الخطاة. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Une lumière est semée pour le juste, et pour le coeur simple, une joie.",
             " ",
             "نور أشرق للصديقين وفرح للمستقيمي القلوب. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm96&D=0000&C=NoActor",
             " ",
-            " ",
+            "Que le Seigneur soit votre joie, hommes justes ; rendez grâce en rappelant son nom très saint.",
             " ",
             "افرحوا أيها الصديقون بالرب. واعترفوا لذكر قدسه. ",
         ],
@@ -14422,49 +14422,49 @@ PrayersArray = [
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "Chantez au Seigneur un chant nouveau, car il a fait des merveilles ; par son bras très saint, par sa main puissante, il s'est assuré la victoire. Le Seigneur a fait connaître sa victoire et révélé sa justice aux nations ;  il s'est rappelé sa fidélité, son amour, en faveur de la maison d'Israël ;",
             " ",
             "أعلن الرب خلاصه وكشف قدام الأمم عدله. ذكر رحمته ليعقوب وحقه لبيت إسرائيل. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "",
             " ",
             "سبحوا الرب تسبيحا جديدا لأن الرب قد صنع أعمالا عجيبة، خلصتْ له يمينه وذراعه القدوس. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "la terre tout entière a vu la victoire de notre Dieu.",
             " ",
             "نظرت أقاصي الأرض جميعا خلاص إلهنا. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "Acclamez le Seigneur, terre entière, sonnez, chantez, jouez ;",
             " ",
             "هللوا للرب يا كل الأرض، سبحوا وهللوا ورتلوا. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "Jouez pour le Seigneur sur la cithare, sur la cithare et tous les instruments ; au son de la trompette et du cor, acclamez votre roi, le Seigneur !",
             " ",
             "رتلوا للرب بالقيثارة، بالقيثارة وصوت المزمار. بأبواق خافقة وصوت بوق القرن، هللوا أمام الرب الملك. ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "Que résonnent la mer et sa richesse, le monde et tous ses habitants ;",
             " ",
             "فليعج البحر وكل ملئه، المسكونة وكل الساكنين فيها.  ",
         ],
         [
             Prefix.bookOfHours + "9thHourPsalm97&D=0000&C=NoActor",
             " ",
-            " ",
+            "Que les fleuves battent des mains, que les montagnes chantent leur joie, à la face du Seigneur, car il vient pour gouverner la terre, * pour gouverner le monde avec justice et les peuples avec droiture !",
             " ",
             "تصفق جميع الأنهار، الجبال تبتهج أمام وجه الرب، لأنه أتى ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة ",
         ],
