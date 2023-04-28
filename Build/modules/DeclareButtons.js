@@ -632,9 +632,10 @@ const btnMassStCyril = new Button({
             el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
         }, 'RedirectionToReconciliation');
         //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
         redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
             beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+            el: select[select.length - 1]
         }, 'RedirectionToAnaphora');
         //Adding 2 buttons to redirect to the St Basil or St Gregory before Agios
         redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
@@ -682,9 +683,10 @@ const btnMassStGregory = new Button({
             el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
         }, 'RedirectionToReconciliation');
         //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
         redirectToAnotherMass([btnMassStBasil, btnMassStCyril,], {
             beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+            el: select[select.length - 1]
         }, 'RedirectionToAnaphora');
         //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
         redirectToAnotherMass([btnMassStBasil, btnMassStCyril], {
@@ -726,9 +728,10 @@ const btnMassStBasil = new Button({
             el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
         }, 'RedirectionToReconciliation');
         //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
         redirectToAnotherMass([btnMassStGregory, btnMassStCyril,], {
             beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+            el: select[select.length - 1]
         }, 'RedirectionToAnaphora');
         //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
         redirectToAnotherMass([btnMassStGregory, btnMassStCyril], {
@@ -743,6 +746,8 @@ const btnMassStJohn = new Button({
     showPrayers: false,
     prayers: [],
     onClick: () => {
+        alert('The prayers of this mass have not yet been added. We hope they will be ready soon');
+        return; //until we add the text of this mass
         btnMassStJohn.prayersArray = [
             ...CommonPrayersArray,
             ...MassCommonPrayersArray,
@@ -751,6 +756,7 @@ const btnMassStJohn = new Button({
         scrollToTop(); //scrolling to the top of the page
     },
     afterShowPrayers: async () => {
+        return; //until we add the text of this mass
         showFractionsMasterButton(btnMassStJohn);
         //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. Cyril)
         redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
@@ -758,9 +764,10 @@ const btnMassStJohn = new Button({
             el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
         }, 'RedirectionToReconciliation');
         //Adding 2 buttons to redirect to the St Cyril or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
         redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
             beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+            el: select[select.length - 1]
         }, 'RedirectionToAnaphora');
         //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
         redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
