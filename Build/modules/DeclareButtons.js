@@ -626,14 +626,21 @@ const btnMassStCyril = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStCyril);
-        //Adding 2 buttons to redirect to the St Basil or St Gregory Reconciliation prayer
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStBasil, btnMassStGregory, btnMassStJohn], "afterend");
-        //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer
-        //After "By the intercession of the Virgin St. Mary"
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true)), [btnMassStBasil, btnMassStGregory], "afterend");
-        //Before Agios
-        let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
-        redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStGregory], "beforebegin");
+        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. John)
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStJohn], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+        }, 'RedirectionToReconciliation');
+        //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+        }, 'RedirectionToAnaphora');
+        //Adding 2 buttons to redirect to the St Basil or St Gregory before Agios
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
+            beforeOrAfter: "beforebegin",
+            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+        }, 'RedirectionToAgios');
         scrollToTop(); //scrolling to the top of the page
     },
 });
@@ -669,14 +676,21 @@ const btnMassStGregory = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStGregory);
-        //Adding 3 buttons to redirect to the St Basil or St Cyril Reconciliation prayer
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStBasil, btnMassStCyril, btnMassStJohn], "afterend");
-        //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer
-        //After "By the intercession of the Virgin St. Mary"
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true)), [btnMassStBasil, btnMassStCyril], "afterend");
-        //Before Agios
-        let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
-        redirectToAnotherMass(Agios, [btnMassStBasil, btnMassStCyril], "beforebegin");
+        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Cyril, or St. John)
+        redirectToAnotherMass([btnMassStBasil, btnMassStCyril, btnMassStJohn], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+        }, 'RedirectionToReconciliation');
+        //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        redirectToAnotherMass([btnMassStBasil, btnMassStCyril,], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+        }, 'RedirectionToAnaphora');
+        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+        redirectToAnotherMass([btnMassStBasil, btnMassStCyril], {
+            beforeOrAfter: "beforebegin",
+            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+        }, 'RedirectionToAgios');
         scrollToTop(); //scrolling to the top of the page
     },
 });
@@ -706,13 +720,21 @@ const btnMassStBasil = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStBasil);
-        //We add buttons to redirect to the other Reconciliation masses
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)), [btnMassStGregory, btnMassStCyril, btnMassStJohn], "afterend");
-        //After "By the intercession of the Virgin St. Mary"
-        redirectToAnotherMass(containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true)), [btnMassStGregory, btnMassStCyril], "afterend");
-        //Before Agios
-        let Agios = containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + "Agios&D=0000")); //this will give the 1st "Agios"
-        redirectToAnotherMass(Agios, [btnMassStGregory, btnMassStCyril], "beforebegin");
+        //Adding 3 buttons to redirect to the other masses (St. Gregory, St. Cyril, or St. John)
+        redirectToAnotherMass([btnMassStGregory, btnMassStCyril, btnMassStJohn], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+        }, 'RedirectionToReconciliation');
+        //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        redirectToAnotherMass([btnMassStGregory, btnMassStCyril,], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+        }, 'RedirectionToAnaphora');
+        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+        redirectToAnotherMass([btnMassStGregory, btnMassStCyril], {
+            beforeOrAfter: "beforebegin",
+            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+        }, 'RedirectionToAgios');
     },
 });
 const btnMassStJohn = new Button({
@@ -730,6 +752,21 @@ const btnMassStJohn = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStJohn);
+        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. Cyril)
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+        }, 'RedirectionToReconciliation');
+        //Adding 2 buttons to redirect to the St Cyril or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+            beforeOrAfter: "afterend",
+            el: containerDiv.querySelector(getDataRootSelector('Anaphora&D=0000', true))
+        }, 'RedirectionToAnaphora');
+        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+            beforeOrAfter: "beforebegin",
+            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+        }, 'RedirectionToAgios');
     },
 });
 const goToAnotherMass = [
@@ -1302,18 +1339,19 @@ let btns = [
 ];
 /**
  *
- * @param {HTMLDivElement} targetElement - the html child of containerDiv, in relation to which the newly created div containing the html button elements, will be placed according to a given position
+ * @param {HTMLDivElement} targetElement - the html child of containerDiv, in relation to which the newly created div containing the html buttons elements, will be placed according to a given position
  * @param {Button[]} btns - a list of Button for each we will create an inline redirection html button
- * @param {InsertPosition} position - the position where the newly created div containing the html elements, will be placed compared to targetEelement
+ * @param {InsertPosition} position - an object providing the position where the newly created div containing the html elements, will be placed compared. The div is placed in a position (i.e., the beforeOrAfter property) in relation ton an html element in the containerDiv (el) which is the targetEelement
+ *@param {string} btnsContainerID - the id of the div container to which the html buttons will be appended. This id may be needed to select the div after redirection
  */
-async function redirectToAnotherMass(targetElement, btns, position) {
-    if (!targetElement)
+async function redirectToAnotherMass(btns, position, btnsContainerID) {
+    if (!position.el)
         return;
     let redirectTo = [];
     btns.map((btn) => {
         //for each button in the btns array, we will create a fake Button and will set its onClick property to a function that retrieves the text of the concerned mass
         let newBtn = new Button({
-            btnID: "GoTo" + targetElement.dataset.root + "From" + btn.rootID,
+            btnID: "GoTo" + position.el.dataset.root + "From" + btn.rootID,
             label: {
                 AR: btn.label.AR,
                 FR: btn.label.FR,
@@ -1321,18 +1359,14 @@ async function redirectToAnotherMass(targetElement, btns, position) {
             cssClass: inlineBtnClass,
             onClick: () => {
                 showChildButtonsOrPrayers(btn); //We simulated as if btn itself has been clicked, which will show all its prayers, children, etc.
-                if (containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root))) {
-                    //if there is an element in containerDiv having the same data-root as targetElement
-                    let target = containerDiv.querySelector(getDataRootSelector(targetElement.dataset.root));
-                    if (!target.id)
-                        target.id = "redirectedTo" + btn.btnID; //if it hasn't an id, we will give it one
-                    createFakeAnchor(target.id);
-                }
-            },
+                //if there is an element in containerDiv having the same data-root as targetElement
+                if (containerDiv.querySelector('#' + btnsContainerID))
+                    createFakeAnchor(btnsContainerID);
+            }
         });
         redirectTo.push(newBtn);
     });
-    insertRedirectionButtons(targetElement, redirectTo, position);
+    insertRedirectionButtons(redirectTo, position, btnsContainerID);
 }
 /**
  * Scrolls to the top of containerDiv

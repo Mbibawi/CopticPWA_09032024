@@ -1480,16 +1480,20 @@ function showSettingsPanel() {
 }
 /**
  * Inserts buttons each of which redirects to a specific part in a given mass
- * @param {HTMLElement} targetElement - an child of containerDiv, before or after which the div containing the created html button elements will be appended (the position is provided by the position argument)
+
  * @param {Button[]} btns - an array of Button elements for each of which an html element will be created by createBtn() and appended to a newly created div. Each of the html buttons created will, when clicked
- * @param {InsertPosition} position - the position where the div containing the created html elements for each button, will be inserted compared to the containerDiv child retrieved using the querySelector parameter
+ * @param {InsertPosition} position - the position at which the div containing the created html elements for each button, will be inserted compared to the containerDiv child retrieved using the querySelector parameter
+ * @param {string} btnsContainerID - the id of the div container to which the html buttons will be appended. This id may be needed to select the div after redirection
  */
-async function insertRedirectionButtons(targetElement, btns, position = "beforebegin") {
+async function insertRedirectionButtons(btns, position, btnsContainerID) {
+    if (!position.beforeOrAfter)
+        position.beforeOrAfter = "beforebegin";
     let div = document.createElement("div");
+    div.id = btnsContainerID;
     div.classList.add("inlineBtns");
     div.style.gridTemplateColumns = ((100 / btns.length).toString() + "% ").repeat(btns.length);
     btns.map((b) => div.appendChild(createBtn(b, div, b.cssClass)));
-    targetElement.insertAdjacentElement(position, div);
+    position.el.insertAdjacentElement(position.beforeOrAfter, div);
 }
 /**Was meant to fetch the Arabic Synaxarium text but didn't work for CORS issue on the api */
 async function fetchSynaxarium() {
