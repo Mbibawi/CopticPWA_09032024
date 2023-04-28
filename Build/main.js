@@ -1081,7 +1081,7 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
         next = undefined;
         //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
         if (prayersMasterBtn.inlineBtns.length > groupOfNumber
-            && prayersMasterBtn.inlineBtns.length - startAt > 0) {
+            && prayersMasterBtn.inlineBtns.length - startAt > groupOfNumber) {
             //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
             next = new Button({
                 btnID: "btnNext",
@@ -1100,6 +1100,18 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
             });
             createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
         }
+        else {
+            next = new Button({
+                btnID: "btnNext",
+                label: { AR: "العودة إلى القداس", FR: "Retour à la messe" },
+                cssClass: inlineBtnClass,
+                onClick: () => {
+                    //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
+                    hideInlineButtonsDiv();
+                }
+            });
+            createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+        }
         for (let n = startAt; n < startAt + groupOfNumber && n < prayersMasterBtn.inlineBtns.length; n++) {
             //We create html buttons for the 1st 6 inline buttons and append them to newDiv
             let b = prayersMasterBtn.inlineBtns[n];
@@ -1107,7 +1119,7 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
         }
     }
     //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
-    createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass);
+    createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass, false, prayersMasterBtn.onClick);
     masterBtnDiv.classList.add("inlineBtns");
     masterBtnDiv.style.gridTemplateColumns = "100%";
     /**
