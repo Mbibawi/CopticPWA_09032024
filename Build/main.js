@@ -1615,7 +1615,6 @@ async function populatePrayersArrays() {
  * @param {string} title - the string that we need to split to get rid of the '&C=' string at its end
  */
 function baseTitle(title) {
-    title = title.replace('$', '\$');
     return title.split('&C=')[0];
 }
 /**

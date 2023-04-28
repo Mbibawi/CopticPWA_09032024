@@ -848,7 +848,7 @@ const btnMassUnBaptised = new Button({
             ];
             insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
         })();
-        (function insertBookOfPrayersButton() {
+        (function insertBookOfHoursButton() {
             let div = document.createElement('div');
             div.style.display = 'grid';
             div.id = 'btnAgbeya';
@@ -866,7 +866,14 @@ const btnMassUnBaptised = new Button({
                     let hours = btnBookOfHours.onClick(true); //notice that we pass true as parameter to btnBookOfHours.onClick() in order to make the function return only the hours of the mass not all the hours of the bookOfPrayersArray
                     if (hours.length > 0) {
                         //We will insert the text as divs after the div where the button is displayed
-                        insertPrayersAdjacentToExistingElement(hours, btnBookOfHours.languages, { beforeOrAfter: 'beforebegin', el: div.nextElementSibling });
+                        //We remove the thanks giving and the Psalm 50
+                        hours.filter(title => title.includes('ThanksGiving') || title.includes('Psalm50')).map(title => hours.splice(hours.indexOf(title), 1));
+                        hours.reverse().forEach((title) => {
+                            insertPrayersAdjacentToExistingElement(btnBookOfHours.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == title), btnBookOfHours.languages, {
+                                beforeOrAfter: 'beforebegin',
+                                el: div.nextElementSibling
+                            });
+                        });
                     }
                 }
             });
@@ -1164,7 +1171,7 @@ const btnBookOfHours = new Button({
             btnBookOfHours.prayers = btnPrayers;
         })();
         (function preparingButtonPrayersArray() {
-            //initiating the prayersArray with all the tables in booOfHoursArray
+            //initiating the prayersArray with all the tables in bookOfHoursArray
             btnBookOfHours.prayersArray = [...bookOfHoursArray];
             //Adding the "Zoksa Patri" and "Kenin" and "Hallelujah" tables to the button's prayers array
             btnBookOfHours.prayersArray.push(...CommonPrayersArray.filter(table => baseTitle(table[0][0]) == ZoksaPatri
