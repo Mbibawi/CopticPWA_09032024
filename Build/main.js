@@ -1058,6 +1058,7 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
         pursue: false,
         cssClass: inlineBtnClass,
         onClick: () => {
+            let groupOfNumber = 4;
             //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
             showInlineBtns(masterBtnID, true);
             //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
@@ -1066,46 +1067,43 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
             //Customizing the style of newDiv
             newDiv.classList.add("inlineBtns");
             //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-            newDiv.style.gridTemplateColumns = "33% 33% 33%";
+            newDiv.style.gridTemplateColumns = (String((100 / groupOfNumber) * 2) + '% ').repeat(groupOfNumber / 2);
+            //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
+            inlineBtnsDiv.appendChild(newDiv);
             inlineBtnsDiv.style.borderRadius = "10px";
             let startAt = 0;
-            //We create a "next" Button that we will probably need if
-            if (prayersMasterBtn.inlineBtns.length > 6) {
-                //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
-                next = new Button({
-                    btnID: "btnNext",
-                    label: { AR: "التالي", FR: "Suivants" },
-                    cssClass: inlineBtnClass,
-                });
-            }
             //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
-            showGroupOfSixPrayers(startAt, newDiv);
+            showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
         },
     });
-    function showGroupOfSixPrayers(startAt, newDiv) {
-        for (let n = startAt; n < startAt + 6 && n < prayersMasterBtn.inlineBtns.length; n++) {
+    function showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber) {
+        //We set next to undefined, in case it was created before
+        next = undefined;
+        //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
+        if (prayersMasterBtn.inlineBtns.length > groupOfNumber
+            && prayersMasterBtn.inlineBtns.length - startAt > 0) {
+            //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
+            next = new Button({
+                btnID: "btnNext",
+                label: { AR: "التالي", FR: "Suivants" },
+                cssClass: inlineBtnClass,
+                onClick: () => {
+                    //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
+                    newDiv.innerHTML = "";
+                    //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
+                    inlineBtnsDiv.querySelector('#' + next.btnID).remove();
+                    //We set the starting index for the next 6 inline buttons
+                    startAt += groupOfNumber;
+                    //We call showGroupOfSixPrayers() with the new startAt index
+                    showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
+                }
+            });
+            createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+        }
+        for (let n = startAt; n < startAt + groupOfNumber && n < prayersMasterBtn.inlineBtns.length; n++) {
             //We create html buttons for the 1st 6 inline buttons and append them to newDiv
             let b = prayersMasterBtn.inlineBtns[n];
-            createBtn(b, newDiv, b.cssClass);
-        }
-        if (next) {
-            //If a "next" Button has been set (which means that there is more than 6 inlineBtns in prayersBtn.inlineBtns[] property), we will set its onClick() property to a function that clears newDiv, and advances the startAt index by 6
-            next.onClick = () => {
-                //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
-                newDiv.innerHTML = "";
-                //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
-                inlineBtnsDiv.querySelector("#" + next.btnID).remove();
-                //We set the starting index for the next 6 inline buttons
-                startAt += 6;
-                //We call showGroupOfSixPrayers() with the new startAt index
-                showGroupOfSixPrayers(startAt, newDiv);
-            };
-        }
-        //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
-        inlineBtnsDiv.appendChild(newDiv);
-        //We finaly create an html element representing the "next" button and append it to inlineBtnsDiv directly. We do this only if there is another group of 6 prayers that need to be displayed. We check this before displaying the next button
-        if (next && prayersMasterBtn.inlineBtns.length - startAt > 6) {
-            createBtn(next, inlineBtnsDiv, next.cssClass, false).classList.add("centeredBtn"); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+            createBtn(b, newDiv, b.cssClass, false, b.onClick);
         }
     }
     //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
@@ -1133,13 +1131,16 @@ async function showInlineButtonsForOptionalPrayers(selectedPrayers, btn, masterB
                 onClick: () => {
                     //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
                     hideInlineButtonsDiv();
-                    containerDiv
-                        .querySelectorAll('div[data-group="optionalPrayer"]')
-                        .forEach((el) => el.remove());
+                    let displayed = containerDiv
+                        .querySelectorAll('div[data-group="optionalPrayer"]');
+                    if (displayed.length > 0) {
+                        displayed.forEach((el) => el.remove());
+                    }
                     showPrayers(inlineBtn, false, false, {
                         beforeOrAfter: "afterend",
                         el: masterBtnDiv,
-                    }); //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
+                    });
+                    //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
                     let createdElements = containerDiv.querySelectorAll(getDataRootSelector(inlineBtn.prayers[0]));
                     //We will add to each created element a data-group attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
                     createdElements.forEach((el) => el.setAttribute("data-group", "optionalPrayer"));
