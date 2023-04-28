@@ -344,9 +344,10 @@ function createFakeAnchor(id) {
  * @param {Button} btn  - the button that will be displayed as an html element in the side bar
  * @param {HTMLElement} btnsBar  - the side bar where the button will be displayed
  * @param {string} btnClass  - the class that will be given to the button (it is usually the cssClass property of the button)
+ * @param {Function} onClick - this is the function that will be attached to the 'click' eventListner of the button, and will be called when it is clicked
  * @returns {HTMLElement} - the html element created for the button
  */
-function createBtn(btn, btnsBar, btnClass, clear = true) {
+function createBtn(btn, btnsBar, btnClass, clear = true, onClick = () => showChildButtonsOrPrayers(btn, clear)) {
     let newBtn = document.createElement("button");
     btnClass
         ? newBtn.classList.add(btnClass)
@@ -367,7 +368,7 @@ function createBtn(btn, btnsBar, btnClass, clear = true) {
         // if the btn object that we used to create the html button element, has children, we add an "onclick" event that passes the btn itself to the showChildButtonsOrPrayers. This will create html button elements for each child and show them
         newBtn.addEventListener("click", (e) => {
             e.preventDefault;
-            showChildButtonsOrPrayers(btn, clear);
+            onClick();
         });
     }
     function editBtnInnerText(el, text, btnClass) {

@@ -16,6 +16,7 @@ class Button {
         this._showPrayers = btn.showPrayers;
         this._pursue = btn.pursue;
         this._value = btn.value;
+        this._any = btn.any;
         btn.cssClass
             ? (this._cssClass = btn.cssClass)
             : (this._cssClass = btnClass);
@@ -73,6 +74,9 @@ class Button {
     get inlineBtns() {
         return this._inlineBtns;
     }
+    get any() {
+        return this._any;
+    }
     //Setters
     set btnID(id) {
         this._btnID = id;
@@ -118,6 +122,9 @@ class Button {
     }
     set inlineBtns(btns) {
         this._inlineBtns = btns;
+    }
+    set any(any) {
+        this._any = any;
     }
 }
 const btnMain = new Button({
@@ -262,6 +269,9 @@ const btnIncenseDawn = new Button({
     },
     afterShowPrayers: async () => {
         (function addInlineBtnForAdamDoxolgies() {
+            let newDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
+            newDiv.classList.add("inlineBtns");
+            containerDiv.children[0].insertAdjacentElement("beforebegin", newDiv); //Inserting the div containing the button as 1st element of containerDiv
             //Adding an inline Button for showing the "Adam" Doxologies, and removing the id of the Adam Doxologies from the btn.prayers array
             let btn = new Button({
                 btnID: "AdamDoxologies",
@@ -270,40 +280,29 @@ const btnIncenseDawn = new Button({
                     FR: "Doxologies Adam Aube",
                 },
                 cssClass: inlineBtnClass,
-                prayers: [Prefix.commonDoxologies + 'AdamIntorduction&D=0000', Prefix.commonDoxologies + 'Adam&D=0000'],
-                prayersArray: DoxologiesPrayersArray,
+                prayersArray: [],
                 languages: btnIncenseDawn.languages,
-                inlineBtns: [],
-                showPrayers: false,
                 onClick: () => {
-                    let goBack = new Button({
-                        btnID: btnGoBack.btnID,
-                        label: btnGoBack.label,
-                        cssClass: inlineBtnClass,
-                        parentBtn: btnIncenseDawn,
-                        onClick: () => newDiv.remove(),
+                    let Adam = Array.from(containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies + 'Adam', true)));
+                    if (Adam.length > 0) {
+                        // it means the btn had been clicked before and the adam doxologies are diplayed. We will remove them from the DOM
+                        Adam.forEach(el => el.remove());
+                        return;
+                    }
+                    //If not displayed, we will show
+                    Adam = insertPrayersAdjacentToExistingElement(btn.prayersArray, btn.languages, {
+                        beforeOrAfter: 'beforebegin',
+                        el: newDiv.nextElementSibling
                     });
-                    showPrayers(btn, true, false); //We show the prayers of btn (clearSideBar = false)
-                    //We then create a goBack btn that we will display on top of containerDiv
-                    let goBackDiv = document.createElement("div");
-                    createBtn(goBack, goBackDiv, btn.cssClass, false);
-                    goBackDiv.style.display = "grid";
-                    goBackDiv.id = "goBack";
-                    containerDiv.children[0].insertAdjacentElement("beforebegin", goBackDiv);
+                    //Setting the CSS for the newly added elements
+                    setCSSGridTemplate(Adam);
                 },
             });
-            let newDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
-            newDiv.classList.add("inlineBtns");
-            createBtn(btn, newDiv, btn.cssClass, true); //creating the html div for the button (which is a div with an 'on click' event listener calling showChildButtonsOrPrayers(btn))
-            DoxologiesPrayersArray.map((prayer) => {
-                if (prayer[0][0].startsWith("DC_Adam")) {
-                    //adding the id of the prayer to the prayers of the inline button that we created
-                    btn.prayers.push(prayer[0][0]);
-                    //then removing the prayer id from the btnIncenseDawn.prayers array in order to exclude them unless requested by the user by clicking on the inline button
-                    btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(prayer[0][0]), 1);
-                }
-            });
-            containerDiv.children[0].insertAdjacentElement("beforebegin", newDiv); //Inserting the div containing the button as 1st element of containerDiv
+            //Setting the btn prayersArray to a filtered array of the 'Adam' doxologies
+            btn.prayersArray = DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam'));
+            createBtn(btn, newDiv, btn.cssClass, true, btn.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+            //then removing the prayer id from the btnIncenseDawn.prayers array in order to exclude them unless requested by the user by clicking on the inline button, otherwise they will show twice
+            btn.prayersArray.map(table => btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(table[0][0]), 1));
         })();
         (async function addGreatLentPrayers() {
             let doxologies;
@@ -626,22 +625,24 @@ const btnMassStCyril = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStCyril);
-        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. John)
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStJohn], {
-            beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
-        }, 'RedirectionToReconciliation');
-        //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
-        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
-            beforeOrAfter: "afterend",
-            el: select[select.length - 1]
-        }, 'RedirectionToAnaphora');
-        //Adding 2 buttons to redirect to the St Basil or St Gregory before Agios
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
-            beforeOrAfter: "beforebegin",
-            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
-        }, 'RedirectionToAgios');
+        (function addRedirectionButtons() {
+            //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. John)
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStJohn], {
+                beforeOrAfter: "afterend",
+                el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+            }, 'RedirectionToReconciliation');
+            //Adding 2 buttons to redirect to the St Basil or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+            let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
+                beforeOrAfter: "afterend",
+                el: select[select.length - 1]
+            }, 'RedirectionToAnaphora');
+            //Adding 2 buttons to redirect to the St Basil or St Gregory before Agios
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory], {
+                beforeOrAfter: "beforebegin",
+                el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+            }, 'RedirectionToAgios');
+        })();
         scrollToTop(); //scrolling to the top of the page
     },
 });
@@ -677,22 +678,24 @@ const btnMassStGregory = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStGregory);
-        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Cyril, or St. John)
-        redirectToAnotherMass([btnMassStBasil, btnMassStCyril, btnMassStJohn], {
-            beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
-        }, 'RedirectionToReconciliation');
-        //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
-        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
-        redirectToAnotherMass([btnMassStBasil, btnMassStCyril,], {
-            beforeOrAfter: "afterend",
-            el: select[select.length - 1]
-        }, 'RedirectionToAnaphora');
-        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
-        redirectToAnotherMass([btnMassStBasil, btnMassStCyril], {
-            beforeOrAfter: "beforebegin",
-            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
-        }, 'RedirectionToAgios');
+        (function addRedirectionButtons() {
+            //Adding 3 buttons to redirect to the other masses (St. Basil, St. Cyril, or St. John)
+            redirectToAnotherMass([btnMassStBasil, btnMassStCyril, btnMassStJohn], {
+                beforeOrAfter: "afterend",
+                el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+            }, 'RedirectionToReconciliation');
+            //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+            let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
+            redirectToAnotherMass([btnMassStBasil, btnMassStCyril,], {
+                beforeOrAfter: "afterend",
+                el: select[select.length - 1]
+            }, 'RedirectionToAnaphora');
+            //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+            redirectToAnotherMass([btnMassStBasil, btnMassStCyril], {
+                beforeOrAfter: "beforebegin",
+                el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+            }, 'RedirectionToAgios');
+        })();
         scrollToTop(); //scrolling to the top of the page
     },
 });
@@ -722,22 +725,24 @@ const btnMassStBasil = new Button({
     },
     afterShowPrayers: async () => {
         showFractionsMasterButton(btnMassStBasil);
-        //Adding 3 buttons to redirect to the other masses (St. Gregory, St. Cyril, or St. John)
-        redirectToAnotherMass([btnMassStGregory, btnMassStCyril, btnMassStJohn], {
-            beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
-        }, 'RedirectionToReconciliation');
-        //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
-        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
-        redirectToAnotherMass([btnMassStGregory, btnMassStCyril,], {
-            beforeOrAfter: "afterend",
-            el: select[select.length - 1]
-        }, 'RedirectionToAnaphora');
-        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
-        redirectToAnotherMass([btnMassStGregory, btnMassStCyril], {
-            beforeOrAfter: "beforebegin",
-            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
-        }, 'RedirectionToAgios');
+        (function addRedirectionButtons() {
+            //Adding 3 buttons to redirect to the other masses (St. Gregory, St. Cyril, or St. John)
+            redirectToAnotherMass([btnMassStGregory, btnMassStCyril, btnMassStJohn], {
+                beforeOrAfter: "afterend",
+                el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+            }, 'RedirectionToReconciliation');
+            //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+            let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
+            redirectToAnotherMass([btnMassStGregory, btnMassStCyril,], {
+                beforeOrAfter: "afterend",
+                el: select[select.length - 1]
+            }, 'RedirectionToAnaphora');
+            //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+            redirectToAnotherMass([btnMassStGregory, btnMassStCyril], {
+                beforeOrAfter: "beforebegin",
+                el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+            }, 'RedirectionToAgios');
+        })();
     },
 });
 const btnMassStJohn = new Button({
@@ -758,22 +763,24 @@ const btnMassStJohn = new Button({
     afterShowPrayers: async () => {
         return; //until we add the text of this mass
         showFractionsMasterButton(btnMassStJohn);
-        //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. Cyril)
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
-            beforeOrAfter: "afterend",
-            el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
-        }, 'RedirectionToReconciliation');
-        //Adding 2 buttons to redirect to the St Cyril or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
-        let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
-            beforeOrAfter: "afterend",
-            el: select[select.length - 1]
-        }, 'RedirectionToAnaphora');
-        //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
-        redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
-            beforeOrAfter: "beforebegin",
-            el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
-        }, 'RedirectionToAgios');
+        (function addRedirectionButtons() {
+            //Adding 3 buttons to redirect to the other masses (St. Basil, St. Gregory or St. Cyril)
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+                beforeOrAfter: "afterend",
+                el: containerDiv.querySelector(getDataRootSelector('Reconciliation&D=0000', true)),
+            }, 'RedirectionToReconciliation');
+            //Adding 2 buttons to redirect to the St Cyril or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
+            let select = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=0000', true));
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+                beforeOrAfter: "afterend",
+                el: select[select.length - 1]
+            }, 'RedirectionToAnaphora');
+            //Adding 2 buttons to redirect to the St Cyril or St Gregory before Agios
+            redirectToAnotherMass([btnMassStBasil, btnMassStGregory, btnMassStCyril], {
+                beforeOrAfter: "beforebegin",
+                el: containerDiv.querySelector(getDataRootSelector(Prefix.massCommon + 'Agios&D=0000'))
+            }, 'RedirectionToAgios');
+        })();
     },
 });
 const goToAnotherMass = [
