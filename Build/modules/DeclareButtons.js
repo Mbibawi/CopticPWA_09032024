@@ -283,9 +283,10 @@ const btnIncenseDawn = new Button({
                 prayersArray: [],
                 languages: btnIncenseDawn.languages,
                 onClick: () => {
-                    let Adam = Array.from(containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies + 'Adam', true)));
+                    let Adam = Array.from(containerDiv.querySelectorAll('#' + btn.btnID + 'New'));
                     if (Adam.length > 0) {
                         // it means the btn had been clicked before and the adam doxologies are diplayed. We will remove them from the DOM
+                        //>1 because the btn itself has the same id (btn.btnID), so the length is 1 at least
                         Adam.forEach(el => el.remove());
                         return;
                     }
@@ -294,6 +295,8 @@ const btnIncenseDawn = new Button({
                         beforeOrAfter: 'beforebegin',
                         el: newDiv.nextElementSibling
                     });
+                    //We give the newly created elements the same id
+                    Adam.map(el => el.id = btn.btnID + 'New');
                     //Setting the CSS for the newly added elements
                     setCSSGridTemplate(Adam);
                 },
