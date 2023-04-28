@@ -242,7 +242,6 @@ async function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, c
 function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (!btn)
         return;
-    //if (eval(localStorage.editingMode)) console.log(editingMode(testEditingArray));
     let btnsDiv = leftSideBar.querySelector("#sideBarBtns");
     hideInlineButtonsDiv();
     if (clear) {
@@ -1387,9 +1386,6 @@ function showSettingsPanel() {
         btn = createBtn("button", "button", "settingsBtn", "Editing Mode", displayContainer, 'editingMode' + localStorage.editingMode.toString(), undefined, undefined, undefined, undefined, {
             event: "click",
             fun: () => {
-                //localStorage.editingMode = String(!eval(localStorage.editingMode));
-                //let b = displayContainer.children[0];
-                // localStorage.editingMode !=  'true'
                 //  ? b.classList.add("langBtnAdd")
                 // : b.classList.remove("langBtnAdd");
                 let tablesArray = eval(prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray'));
