@@ -366,13 +366,13 @@ function exportToTextFile(console, text, fileName) {
 }
 function splitParagraphsToTheRowsBelow(title, lang) {
     let allRows = containerDiv.querySelectorAll(getDataRootSelector(title));
-    let firstParag = allRows[0].querySelectorAll('p[data-lang="' + lang + '"');
-    let text = firstParag[0].innerText;
+    let firstCell = allRows[0].querySelector('p[data-lang="' + lang + '"');
+    let text = firstCell.innerText;
     let splitted = text.split('\n');
     let clean = splitted.filter(t => t != '');
-    for (let i = 1; i < allRows.length; i++) {
+    for (let i = 0; i < allRows.length; i++) {
         //@ts-ignore
-        allRows[i].querySelectorAll('p[data-lang="' + lang + '"')[0].innerText = clean[i - 1];
+        allRows[i].querySelector('p[data-lang="' + lang + '"').innerText = clean[i];
     }
 }
 function cleanPrayersArray(title) {
