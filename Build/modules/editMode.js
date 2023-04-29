@@ -56,9 +56,15 @@ function addEdintingButtons(el, shadowArray) {
     btnsDiv.appendChild(btnExportSequence);
     createEditingButton(btnExportSequence, () => exportSequence(btnExportSequence.parentElement.parentElement), 'Export Sequence');
 }
+/**
+ * Delets an html div (row) from the DOM
+ * @param htmlRow - the html div (or any html element), we want to delete
+ * @returns
+ */
 function deleteRow(htmlRow) {
-    htmlRow.dataset.isDeleted = 'deleted';
-    htmlRow.style.display = 'none';
+    if (confirm('Are you sure you want to delete this row?') == false)
+        return;
+    htmlRow.remove();
 }
 function changeCssClass(htmlRow) {
     let className = htmlRow.dataset.root.split('&C=')[1];
