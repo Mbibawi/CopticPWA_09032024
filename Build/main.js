@@ -1399,11 +1399,9 @@ function showSettingsPanel() {
         btn = createBtn("button", "button", "settingsBtn", "Editing Mode", displayContainer, 'editingMode' + localStorage.editingMode.toString(), undefined, undefined, undefined, undefined, {
             event: "click",
             fun: () => {
-                //  ? b.classList.add("langBtnAdd")
-                // : b.classList.remove("langBtnAdd");
                 let tablesArray = eval(prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray'));
                 if (tablesArray) {
-                    editingMode(eval(tablesArray));
+                    editingMode(tablesArray);
                     hideInlineButtonsDiv();
                 }
                 ;

@@ -531,7 +531,7 @@ const btnIncenseDawn = new Button({
                 });
             }
         })();
-        getGospelReadingAndResponses(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
+        getGospelReadingAndResponses(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
     },
 });
 const btnIncenseVespers = new Button({
@@ -601,7 +601,7 @@ const btnIncenseVespers = new Button({
         return btnIncenseVespers.prayers;
     },
     afterShowPrayers: async () => {
-        getGospelReadingAndResponses(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
+        getGospelReadingAndResponses(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages);
     },
 });
 const btnMassStCyril = new Button({
@@ -915,7 +915,7 @@ const btnMassUnBaptised = new Button({
             insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
         })();
         //Inserting the Gospel Reading
-        getGospelReadingAndResponses(Prefix.gospelMass, btnReadingsGospelMass.prayersArray, btnReadingsGospelMass.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
+        getGospelReadingAndResponses(Prefix.gospelMass, btnReadingsGospelMass.prayersArray, btnReadingsGospelMass.languages);
         (function insertBookOfHoursButton() {
             let div = document.createElement('div');
             div.style.display = 'grid';
@@ -1424,7 +1424,7 @@ function getVespersGospel(prayers) {
         return prayers;
     }
 }
-async function getGospelReadingAndResponses(liturgy, goseplReadingsArray, languages, anchorDataRoot) {
+async function getGospelReadingAndResponses(liturgy, goseplReadingsArray, languages) {
     let gospelInsertionPoint = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=0000"))[0]; //This is the html element before which we will insert the gospel litany
     //We start by inserting the standard Gospel Litany
     (function insertGospelLitany() {
@@ -1456,8 +1456,7 @@ async function getGospelReadingAndResponses(liturgy, goseplReadingsArray, langua
         alert("Diacon Prayers are set to hidden, we cannot show the gospel");
         return;
     } //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
-    if (!anchorDataRoot)
-        anchorDataRoot = Prefix.commonPrayer + 'GospelIntroduction&D=0000';
+    let anchorDataRoot = Prefix.commonPrayer + 'GospelIntroduction&D=0000';
     let gospelIntroduction = containerDiv.querySelectorAll(getDataRootSelector(anchorDataRoot));
     //let annualGospelResponse: NodeListOf<HTMLElement> = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelResponse&D=0000')) //This is the first row of the 'annual' gospel response, which is displayed by default
     if (!gospelIntroduction)
