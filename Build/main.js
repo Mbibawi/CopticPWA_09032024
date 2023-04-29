@@ -1701,6 +1701,19 @@ async function replaceEigthNote(code = 9834) {
         }
     });
 }
+function moveElementBeforeOrAfterXSiblings(element, by) {
+    let sibling, position;
+    for (let i = 1; i <= by; i++) {
+        if (by > 0)
+            sibling = element.nextElementSibling;
+        position = 'afterend';
+        if (by < 0)
+            sibling = element.previousSibling;
+        position = 'beforebegin';
+        if (i == by)
+            sibling.insertAdjacentElement(position, element);
+    }
+}
 let testEditingArray = [
     [
         [Prefix.commonIncense + "EleysonImasComment&D=0000&C=Comment",

@@ -482,14 +482,26 @@ const btnIncenseDawn = new Button({
                     coptDate: Seasons.PentecostalDays,
                     remove: true,
                 });
+                //Inserting the doxologies
                 insertDoxologiesForFeastsAndSeasons({
                     coptDate: Seasons.PentecostalDays,
                 });
-                let stMaykelRoot = Prefix.commonIncense + "ArchangelMichaelWates&D=0000";
-                moveBlockOfRowsAdjacentToAnElement(stMaykelRoot, "beforebegin", containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonDoxologies +
-                    'Wates2&D=$' + Seasons.PentecostalDays)));
-                //Removing Archange Maykel's Doxology (it is replaced by another one)
-                removeElementsByTheirDataRoot(stMaykelRoot);
+                (function replaceStMaykeVerse() {
+                    //We will replace the 'annual' cymbal verse of St. Maykel by the Pentecostal verse
+                    let stMaykelAnnual = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonIncense + 'CymablVersesCommon&D=0000'))[3] //this is the 'annual' Cymbal verse  of St. Maykel
+                    , stMaykelPentecostal = containerDiv.querySelectorAll(getDataRootSelector(Prefix.cymbalVerses + 'StMaykel&D=$Seasons.PentecostalDays'))[0]; //this is the newly inserted Cymbal verse               
+                    stMaykelAnnual.insertAdjacentElement('beforebegin', stMaykelPentecostal);
+                    //Removing the Annual verse
+                    stMaykelAnnual.remove();
+                })();
+                (function InsertLordsFeastFinal() {
+                    //Inserting the Final Cymbal verses for the joyfull days and Lord's Feasts
+                    let final = PrayersArray.filter(table => table[0][0] == Prefix.cymbalVerses + 'LordFeastsEnd&D=0000&C=Title'), annualVerses = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonIncense + 'CymablVersesCommon&D=0000')); //annualVereses[8] is the St. Markos annual verse, we will delete the annual verses after it
+                    for (let i = 13; i > 6; i--) {
+                        annualVerses[i].remove();
+                    }
+                    insertPrayersAdjacentToExistingElement(final, btnIncenseDawn.languages, { beforeOrAfter: 'beforebegin', el: annualVerses[6].nextElementSibling });
+                })();
             }
             else if (copticDate == copticFeasts.EntryToEgypt) {
                 //Inserting Cymbal Verses
