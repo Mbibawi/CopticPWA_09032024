@@ -5,6 +5,9 @@ async function editingMode(tblsArray) {
             event.preventDefault();
         }
     });
+    //@ts-ignore
+    if (!console.save)
+        addConsoleSaveMethod(console);
     //alert('Editing mode is active: localStorage = ' + localStorage.editingMode);
     let el;
     containerDiv.innerHTML = '';
@@ -111,12 +114,11 @@ function exportModifiedArray() {
         title = baseTitle(htmlRow.dataset.root); //this is the title without '&C='
         if (!updated.has(title))
             updated.add(title); //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
-        if (htmlRow.dataset.root.includes('$copticFeasts.'))
-            console.log(title);
     });
-    updated.forEach(t => process(t)); //for each title in the set, we will retrieve the text in arrays each representing a row
-    function process(title) {
-        tableHtmlRows = containerDiv.querySelectorAll(getDataRootSelector(title, true)); //we select all the rows matching the title
+    console.save(JSON.stringify(updated), 'Updated');
+    updated.forEach(t => processTable(t)); //for each title in the set, we will retrieve the text in arrays each representing a row
+    function processTable(title) {
+        tableHtmlRows = containerDiv.querySelectorAll('div[data-root*="' + title.split('&C=')[0] + '&C=' + '"]'); //We are adding '&C=' again on purpose, to avoide getting twice the values like 'BaptismParamoun' when the title is 'Baptism'
         if (!tableHtmlRows)
             return;
         newArray.push([]); //this is an emepty array for the table
@@ -131,7 +133,8 @@ function exportModifiedArray() {
     let text = replacePrefixes(newArray);
     localStorage.editedText = text;
     console.log(localStorage.editedText);
-    exportToTextFile(console, text, 'ModifiedArray.js');
+    //@ts-ignore
+    console.save(text, 'ModifiedArray.js');
 }
 function replacePrefixes(array) {
     //Open Array of Tables
@@ -348,17 +351,24 @@ function showSequence(sequenceArray = sequence, container = containerDiv) {
     });
 }
 function exportToTextFile(console, text, fileName) {
+}
+/**
+ * adds a 'save' method to console, which prints a data to a text or a json file
+ */
+function addConsoleSaveMethod(console) {
     console.save = function (data, filename) {
-        if (!text) {
+        if (!data) {
             console.error('Console.save: No data');
             return;
         }
         if (!filename)
             filename = 'PrayersArrayModifiedd';
-        if (typeof text === "object") {
+        if (typeof data === "object") {
             data = JSON.stringify(data, undefined, 4);
         }
-        text = text.replace('\\\\', '\\');
+        if (typeof data === 'string') {
+            data = data.replace('\\\\', '\\');
+        }
         var blob = new Blob([data], { type: 'text/json' }), e = document.createEvent('MouseEvents'), a = document.createElement('a');
         a.download = filename;
         a.href = window.URL.createObjectURL(blob);
@@ -366,7 +376,6 @@ function exportToTextFile(console, text, fileName) {
         e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
         a.dispatchEvent(e);
     };
-    console.save(text, fileName);
 }
 function splitParagraphsToTheRowsBelow(title, lang, index = 0) {
     if (!lang)
