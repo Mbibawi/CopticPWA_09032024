@@ -86,7 +86,8 @@ function changeCssClass(htmlRow) {
     }
     else {
         toggleClass(htmlRow, className);
-        Array.from(htmlRow.children).forEach((element) => {
+        Array.from(htmlRow.children)
+            .forEach((element) => {
             toggleClass(element, className);
         });
     }
@@ -118,16 +119,22 @@ function exportModifiedArray() {
     console.save(JSON.stringify(updated), 'Updated');
     updated.forEach(t => processTable(t)); //for each title in the set, we will retrieve the text in arrays each representing a row
     function processTable(title) {
-        tableHtmlRows = containerDiv.querySelectorAll('div[data-root*="' + title.split('&C=')[0] + '&C=' + '"]'); //We are adding '&C=' again on purpose, to avoide getting twice the values like 'BaptismParamoun' when the title is 'Baptism'
-        if (!tableHtmlRows)
-            return;
         newArray.push([]); //this is an emepty array for the table
         table = newArray[newArray.length - 1];
-        for (let i = 0; i < tableHtmlRows.length; i++) {
-            //for each row matching the title
-            table.push(Array.from(tableHtmlRows[i].querySelectorAll('p')).map((p) => p.innerText));
-            table[table.length - 1].unshift(tableHtmlRows[i].dataset.root); //adding the title as 1st element to the row that we've just pushed to table
-        }
+        containerDiv
+            .querySelectorAll('div.TargetRow')
+            .forEach((div) => {
+            if (div.dataset.root
+                .split('&C=')[0] === title
+                .split('&C=')[0]) {
+                //if the data-root of the div matches exactly the the title
+                table
+                    .push(Array.from(div.querySelectorAll('p'))
+                    .map((p) => p.innerText));
+                table[table.length - 1]
+                    .unshift(div.dataset.root); //adding the title as 1st element to the row that we've just pushed to table
+            }
+        });
     }
     console.log('newArray = ', newArray);
     let text = replacePrefixes(newArray);

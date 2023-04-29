@@ -1341,7 +1341,8 @@ function showSettingsPanel() {
             if (actor == "CommentText") {
                 return;
             } //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
-            let show = new Map(JSON.parse(localStorage.getItem("showActors"))).get(actor);
+            let show = new Map(JSON.parse(localStorage.getItem("showActors")))
+                .get(actor);
             btn = createBtn("button", "button", "settingsBtn", actor, actorsContainer, actor, actor, undefined, undefined, undefined, {
                 event: "click",
                 fun: () => {
@@ -1370,7 +1371,8 @@ function showSettingsPanel() {
         displayContainer.style.display = "grid";
         displayContainer.style.gridTemplateColumns = String((100 / 3).toString() + "%").repeat(3);
         inlineBtnsDiv.appendChild(displayContainer);
-        displayModes.map((mode) => {
+        displayModes
+            .map((mode) => {
             btn = createBtn("button", "button", "settingsBtn", mode + " Display Mode", displayContainer, mode, undefined, undefined, undefined, undefined, {
                 event: "click",
                 fun: () => {
