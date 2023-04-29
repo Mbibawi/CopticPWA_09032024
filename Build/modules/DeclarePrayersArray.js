@@ -2706,6 +2706,13 @@ PrayersArray = [
         ],
     ],
     [
+        [Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=0000",
+            '',
+            '',
+            ''
+        ]
+    ],
+    [
         [
             Prefix.commonIncense + "GospelLitanyComment1&D=0000&C=NoActor",
             " ",
@@ -2913,28 +2920,28 @@ PrayersArray = [
             "مرد الإنجيل سنوي ",
         ],
         [
-            Prefix.commonPrayer + "GospelResponse&D=0000&C=Assembly",
+            Prefix.commonPrayer + "GospelResponse&D=0000&C=Diacon",
             "Ⲙⲁⲣⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲡⲉⲛⲥⲱⲧⲏⲣ: ⲡⲓⲙⲁⲓⲣⲱⲙⲓ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ϫⲉ ⲛ̀ⲑⲟϥ ⲁϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ: ⲁϥⲓ̀ ⲟⲩⲟϩ ⲁϥⲥⲱϯ ⲙ̀ⲙⲟⲛ. ",
             "Adorons notre Sauveur, bon Ami du genre humain, car Il eu compassion de nous, et Il est venu et nous a sauvés. ",
             "مارين أؤوشت إمبين سوتير، بي مايرومي إن آغاثوس، جي إنثوف آفشينهيت خارون، آإفي أووه آفسوتي إممون. ",
             "فلنسجد لمخلصنا محب البشر الصالح، لأنه تراءف علينا وأتى وخلصنا. ",
         ],
         [
-            Prefix.commonPrayer + "GospelResponse&D=0000&C=Assembly",
+            Prefix.commonPrayer + "GospelResponse&D=0000&C=Diacon",
             "Ⲁⲣⲓⲡ̀ⲣⲉⲥⲃⲉⲩⲓⲛ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ: ⲱ̀ ⲧⲉⲛϭⲟⲓⲥ ⲛ̀ⲛⲏⲃ ⲧⲏⲣⲉⲛ ϯⲑⲉⲟ̀ⲧⲟⲕⲟⲥ: Ⲙⲁⲣⲓⲁ ⲑ̀ⲙⲁⲩ ⲙ̀Ⲡⲉⲛⲥⲱⲧⲏⲣ: ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ. ",
             "Intercède pour nous Ô notre dame, la mère de Dieu, Marie la mère de notre Sauveur pour qu’Il nous pardonne nos péchés. ",
             "آريبريسفافين إي إهري يجون، أو تينتشويس إنيب تيرين تي ثيؤطوكوس. ماريا اثماف إمبينسوتير، إنتيفكان إننوفي نان إيفول. ",
             "إشفعي فينا يا سيدتنا كلنا، والدة الإله مريم أم مخلصنا، ليغفر لنا خطايانا. ",
         ],
         [
-            Prefix.commonPrayer + "GospelResponse&D=0000&C=Assembly",
+            Prefix.commonPrayer + "GospelResponse&D=0000&C=Diacon",
             "Ⲁⲣⲓⲡ̀ⲣⲉⲥⲃⲉⲩⲓⲛ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ: ⲱ̀ ⲡⲓⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ ⲉⲑⲟⲩⲁⲃ: Ⲙⲓⲭⲁⲏⲗ ⲡ̀ⲁⲣⲭⲱⲛ ⲛ̀ⲛⲁ ⲛⲓⲫⲏⲟⲩⲓ: ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ. ",
             "Intercède pour nous Ô saint Archange Michel le chef des célestes pour qu’Il nous pardonne nos péchés. ",
             "آريبريسفافين إي إهري إيجون، أو بي آرشي آنجيلوس إثؤواب، ميخائيل إبآرخون ناني فيؤوي، إنتيف كا إننيوفي نان إيفول. ",
             "اشفع فينا يا رئيس الملائكة المقدس ميخائيل رئيس السمائيين، ليغفر لنا خطايانا. ",
         ],
         [
-            Prefix.commonPrayer + "GospelResponse&D=0000&C=Assembly",
+            Prefix.commonPrayer + "GospelResponse&D=0000&C=Diacon",
             "Ϫⲉ ϥ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ϫⲉ Ⲫ̀ⲓⲱⲧ ⲛⲉⲙ Ⲡ̀ϣⲏⲣⲓ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲧϫⲏⲕ ⲉ̀ⲃⲟⲗ: ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲥ ⲧⲉⲛϯⲱ̀ⲟⲩ ⲛⲁⲥ. ",
             "Car il est béni le Père et le Fils et le Saint Esprit, Trinité parfaite. Nous l’adorons et la glorifions.  ",
             "جي إف إسمارؤوت إنجي افيوت نيم ابشيري، نيم بي ابنيفما اثؤواب، تي اترياس إتجيك إيفول تين أؤوشت إمموس تينتي أوناك. ",

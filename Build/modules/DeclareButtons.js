@@ -531,7 +531,7 @@ const btnIncenseDawn = new Button({
                 });
             }
         })();
-        insertGospelReadings(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
+        getGospelReadingAndResponses(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
     },
 });
 const btnIncenseVespers = new Button({
@@ -601,7 +601,7 @@ const btnIncenseVespers = new Button({
         return btnIncenseVespers.prayers;
     },
     afterShowPrayers: async () => {
-        insertGospelReadings(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages);
+        getGospelReadingAndResponses(Prefix.gospelVespers, btnReadingsGospelIncenseVespers.prayersArray, btnReadingsGospelIncenseVespers.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
     },
 });
 const btnMassStCyril = new Button({
@@ -914,6 +914,8 @@ const btnMassUnBaptised = new Button({
             ];
             insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
         })();
+        //Inserting the Gospel Reading
+        getGospelReadingAndResponses(Prefix.gospelMass, btnReadingsGospelMass.prayersArray, btnReadingsGospelMass.languages, Prefix.commonPrayer + 'GospelIntroduction&D=0000');
         (function insertBookOfHoursButton() {
             let div = document.createElement('div');
             div.style.display = 'grid';
@@ -1422,69 +1424,88 @@ function getVespersGospel(prayers) {
         return prayers;
     }
 }
-async function insertGospelReadings(liturgy, goseplReadingsArray, languages) {
+async function getGospelReadingAndResponses(liturgy, goseplReadingsArray, languages, anchorDataRoot) {
+    let gospelInsertionPoint = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=0000"))[0]; //This is the html element before which we will insert the gospel litany
+    //We start by inserting the standard Gospel Litany
+    (function insertGospelLitany() {
+        let gospelLitanySequence = [
+            Prefix.commonIncense + "GospelLitanyComment1&D=0000",
+            Prefix.commonPrayer + "GospelPrayerPart1&D=0000",
+            Prefix.commonPrayer + "KyrieElieson&D=0000",
+            Prefix.commonPrayer + "GospelPrayerPart2&D=0000",
+            Prefix.commonIncense + "GospelLitanyComment2&D=0000",
+            Prefix.commonPrayer + "GospelLitanyComment3&D=0000",
+            Prefix.commonPrayer + "GospelPrayerPart3&D=0000",
+            Prefix.commonPrayer + "GospelIntroductionPart1&D=0000",
+            Prefix.commonPrayer + "ZoksasiKyrie&D=0000",
+            Prefix.commonPrayer + "PsalmIntroduction&D=0000",
+            Prefix.commonPrayer + "GospelIntroductionPsalmComment&D=0000",
+            Prefix.commonPrayer + "GospelIntroductionPart2&D=0000",
+            Prefix.commonPrayer + "GospelIntroductionGospelComment&D=0000"
+        ]; //This is the sequence of the Gospel Prayer/Litany for any liturgy
+        let gospelPrayers = [];
+        gospelLitanySequence.forEach((title) => {
+            gospelPrayers.push(PrayersArray.filter(table => baseTitle(table[0][0]) == title)[0]);
+        });
+        insertPrayersAdjacentToExistingElement(gospelPrayers, prayersLanguages, {
+            beforeOrAfter: 'beforebegin',
+            el: gospelInsertionPoint
+        });
+    })();
     if (new Map(JSON.parse(localStorage.showActors)).get("Diacon") == false) {
         alert("Diacon Prayers are set to hidden, we cannot show the gospel");
         return;
     } //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
-    let gospelRespHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelResponse&D=0000')); //This is the html element where the so called 'annual' gospel response is displayed, we will insert the retrieved gospel text and gospel response before it, and will delete it afterwards
-    let psalmReadingHtml = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer +
-        "GospelIntroductionPart2&D=0000".replace(/Part\d+/, "")))[4]; //This is the html element after which we will insert the psalm
-    let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
-    let root;
-    //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
-    let g = goseplReadingsArray.filter((table) => baseTitle(table[0][0]) == responses[1] + copticReadingsDate ||
-        baseTitle(table[0][0]) == responses[2] + copticReadingsDate); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####"
-    if (g.length < 1) {
+    if (!anchorDataRoot)
+        anchorDataRoot = Prefix.commonPrayer + 'GospelIntroduction&D=0000';
+    let gospelIntroduction = containerDiv.querySelectorAll(getDataRootSelector(anchorDataRoot));
+    //let annualGospelResponse: NodeListOf<HTMLElement> = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelResponse&D=0000')) //This is the first row of the 'annual' gospel response, which is displayed by default
+    if (!gospelIntroduction)
         return;
-    } //if no readings are returned from the filtering process, then we end the function
-    let position = {
-        beforeOrAfter: "beforebegin",
-        el: psalmReadingHtml,
-    };
-    g.map((table) => {
-        root = baseTitle(table[0][0]); //this is the title of the table without any '&C=*' at its end
-        table.map((row) => {
-            if (row[0].includes("Gospel&D=")) {
-                position.beforeOrAfter = "beforebegin";
-                position.el = gospelRespHtml[0];
-            }
-            //For each row in the Gospel table, we will create and html element, and will insert it before the element representing the introduction to the gospel
-            createHtmlElementForPrayer(root, row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
+    let responses = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
+    //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
+    let gospel = goseplReadingsArray.filter((table) => baseTitle(table[0][0]) == responses[1] + copticReadingsDate //this is the pasalm text
+        || baseTitle(table[0][0]) == responses[2] + copticReadingsDate //this is the gospel itself
+    ); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####". We should get a string[][][] of 2 elements: a table for the Psalm, and a table for the Gospel
+    if (gospel.length < 1)
+        return; //if no readings are returned from the filtering process, then we end the function
+    gospel.forEach((table) => {
+        let el; //this is the element before which we will insert the Psaml or the Gospel
+        if (baseTitle(table[0][0]).includes("Gospel&D=")) {
+            //This is the Gospel itself, we insert it before the gospel response
+            el = gospelInsertionPoint;
+        }
+        else if (baseTitle(table[0][0]).includes("Psalm&D=")) {
+            el = gospelIntroduction[gospelIntroduction.length - 1];
+        }
+        insertPrayersAdjacentToExistingElement([table], languages, {
+            beforeOrAfter: 'beforebegin',
+            el: el
         });
     });
+    //We will inserte the Gospel response
+    (function insertGospeResponse() {
+        let gospelResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split('&D=')[0] + '&D=' + eval(r[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+        if (gospelResp.length == 0)
+            gospelResp = PrayersArray.filter((r) => baseTitle(r[0][0]) == Prefix.commonPrayer + 'GospelResponse&D=0000'); //If no specific gospel response is found, we will get the 'annual' gospel response
+        insertPrayersAdjacentToExistingElement(gospelResp, prayersLanguages, {
+            beforeOrAfter: "beforebegin",
+            el: gospelInsertionPoint,
+        });
+        //We will eventy remove the insertion point placeholder
+        gospelInsertionPoint.remove();
+    })();
     //We will insert the Psalm response
     (function insertPsalmResponse() {
-        let gospelPrayer = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelPrayer&D=0000'));
-        let psalmResp = PsalmAndGospelPrayersArray.filter((r) => baseTitle(r[0][0]) == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-        insertResponse(psalmResp, {
-            beforeOrAfter: "afterend",
-            el: gospelPrayer[gospelPrayer.length - 1],
-        });
-    })();
-    //We will now insert the Gospel response
-    (function insertGospeResponse() {
-        let gospelResp = PsalmAndGospelPrayersArray.filter((r) => baseTitle(r[0][0]) == responses[3]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-        if (!gospelResp)
+        let gospelPrayer = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'GospelPrayer&D=0000')); //This is the 'Gospel Litany'. We will insert the Psalm response after its end
+        let psalmResp = PsalmAndGospelPrayersArray.filter((r) => r[0][0].split('&D=')[0] + '&D=' + eval(r[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) == responses[0]); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+        if (!psalmResp || !gospelPrayer)
             return;
-        insertResponse(gospelResp, {
-            beforeOrAfter: "beforebegin",
-            el: gospelRespHtml[0],
+        insertPrayersAdjacentToExistingElement(psalmResp, prayersLanguages, {
+            beforeOrAfter: 'beforebegin',
+            el: gospelPrayer[gospelPrayer.length - 2].nextElementSibling
         });
-        gospelRespHtml.forEach((html) => html.remove()); //we finally delete all the elements having the same data-root value as responseHtml, in order to keep only  the more adapted gospel reponse
     })();
-    function insertResponse(filteredResp, position) {
-        if (filteredResp.length > 0) {
-            //if a gospel response is found
-            root = baseTitle(filteredResp[0][0][0]);
-            filteredResp.map((table) => {
-                table.map((row) => {
-                    //for each row in the gospel response table that we retrieved, we wil create an html element and will insert it before responseHtml
-                    createHtmlElementForPrayer(root, row, prayersLanguages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
-                });
-            });
-        }
-    }
 }
 function showFractionsMasterButton(btn) {
     let selected = [], filtered;
