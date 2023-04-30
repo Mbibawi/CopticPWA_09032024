@@ -253,9 +253,9 @@ function addNewRow(htmlParag, dataRoot) {
     if (!dataRoot)
         dataRoot = prompt("Provide the Title of the new Row", row.dataset.root);
     newRow.dataset.root = dataRoot;
-    newRow.classList.add(newRow.dataset.root.split("&C=")[1]);
+    newRow.classList.add(dataRoot.split("&C=")[1]);
     //newRow.contentEditable = 'true';
-    for (let i = 0; i < row.children.length - 1; i++) {
+    for (let i = 0; i < row.children.length; i++) {
         //length - 1 because the last element is the div contiaining the buttons
         child = row.children[i];
         if (!child.dataset.lang)
