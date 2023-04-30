@@ -287,7 +287,7 @@ const btnIncenseDawn = new Button({
                     if (Adam.length > 0) {
                         // it means the btn had been clicked before and the adam doxologies are diplayed. We will remove them from the DOM
                         //>1 because the btn itself has the same id (btn.btnID), so the length is 1 at least
-                        Adam.forEach(el => el.remove());
+                        Adam.forEach(async (el) => el.remove());
                         return;
                     }
                     //If not displayed, we will show
@@ -296,7 +296,7 @@ const btnIncenseDawn = new Button({
                         el: newDiv.nextElementSibling
                     });
                     //We give the newly created elements the same id
-                    Adam.map(el => el.id = btn.btnID + 'New');
+                    Adam.forEach(async (el) => el.id = btn.btnID + 'New');
                     //Setting the CSS for the newly added elements
                     setCSSGridTemplate(Adam);
                 },
@@ -1574,26 +1574,6 @@ function selectFromMultiDatedTitle(table, coptDate = copticDate) {
         }
     }
     return found;
-}
-/**
- * Inserts prayers adjacent to an html child element to containerDiv
- * @param {string[][][]} prayers - an array of prayers, each representing a table in the Word document from which the text was retrieved
- * @param {string[]} languages - the languages in which the text is available. This is usually the "languages" properety of the button who calls the function
- * @param {{beforeOrAfter:InsertPosition, el: HTMLElement}} position - the position at which the prayers will be inserted, adjacent to an html element (el) in the containerDiv
- * @returns {HTMLElement[]} - an array of all the html div elements created and appended to the containerDiv
- */
-function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
-    if (!prayers)
-        return;
-    let createdElements = [], created;
-    prayers.map((p) => {
-        p.map((row) => {
-            created = createHtmlElementForPrayer(baseTitle(row[0]), row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
-            if (created)
-                createdElements.push(created);
-        });
-    });
-    return createdElements;
 }
 /**
  * Searchs for the cymbal verses of a coptDate, and if found, insert them adjacent to the first element retrieved by a given "data-root" attribute

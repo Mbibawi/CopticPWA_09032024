@@ -762,7 +762,6 @@ function closeDev(btn) {
  * @param {HTMLElement} sideBar - the html element representing the side bar that needs to be opened
  */
 async function openSideBar(sideBar) {
-    //containerDiv.appendChild(sideBar);
     let btnText = String.fromCharCode(9776) + "Close Sidebar";
     let width = "30%";
     sideBar.style.width = width;
@@ -778,13 +777,12 @@ async function openSideBar(sideBar) {
  * @param {HTMLElement} sideBar - the html element representing the side bar to be closed
  */
 async function closeSideBar(sideBar) {
-    let btnText = String.fromCharCode(9776) + "Open Sidebar";
+    //let btnText: string = String.fromCharCode(9776) + "Open Sidebar";
     let width = "0px";
     sideBar.style.width = width;
     sideBar.classList.remove("extended");
     sideBar.classList.add("collapsed");
-    //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
-    sideBarBtn.innerText = btnText;
+    //sideBarBtn.innerText = btnText;
     sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
     sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
 }
@@ -954,7 +952,9 @@ async function setCSSGridTemplate(Rows) {
                         " " +
                         r.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
             }
-            else if (!r.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
+            else if (
+            //If there is no arabic paragraph, we will add the sign to the last child
+            !r.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
                 r.lastElementChild.textContent =
                     String.fromCharCode(10134) + " " + r.lastElementChild.textContent;
             }
@@ -1488,6 +1488,26 @@ function showSettingsPanel() {
     closeSideBar(leftSideBar);
 }
 /**
+ * Loops the tables (i.e., the string[][]) of a string[][][] and, for each row (string[]) of each table, it inserts a div adjacent to an html child element to containerDiv
+ * @param {string[][][]} prayers - an array of prayers, each representing a table in the Word document from which the text was retrieved
+ * @param {string[]} languages - the languages in which the text is available. This is usually the "languages" properety of the button who calls the function
+ * @param {{beforeOrAfter:InsertPosition, el: HTMLElement}} position - the position at which the prayers will be inserted, adjacent to an html element (el) in the containerDiv
+ * @returns {HTMLElement[]} - an array of all the html div elements created and appended to the containerDiv
+ */
+function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
+    if (!prayers)
+        return;
+    let createdElements = [], created;
+    prayers.map((p) => {
+        p.map((row) => {
+            created = createHtmlElementForPrayer(baseTitle(row[0]), row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
+            if (created)
+                createdElements.push(created);
+        });
+    });
+    return createdElements;
+}
+/**
  * Inserts buttons each of which redirects to a specific part in a given mass
 
  * @param {Button[]} btns - an array of Button elements for each of which an html element will be created by createBtn() and appended to a newly created div. Each of the html buttons created will, when clicked
@@ -1690,6 +1710,11 @@ function replaceClass(prayersArray, newClass) {
         table.map(row => row[0] = baseTitle(row[0]) + '&C=' + newClass);
     });
 }
+/**
+ * Replaces the musical eight note sign with a span that allows to give it a class and hence give it a color
+ * @param {number} code - the Char code of the eigth note (or any other character that we want to replace with a span with the same css class)
+ * @returns
+ */
 async function replaceEigthNote(code = 9834) {
     if (!containerDiv.children)
         return;
@@ -1700,6 +1725,11 @@ async function replaceEigthNote(code = 9834) {
         }
     });
 }
+/**
+ * Moves ah html element up or down in the DOM, before or after the specified number of siblings
+ * @param {HTMLElement} element - the html element that we want to move
+ * @param {number} by - the number of sibligns we want to move the element before or after (if number is <0, it moves element up, if >0 it moves it down)
+ */
 function moveElementBeforeOrAfterXSiblings(element, by) {
     let sibling, position;
     for (let i = 1; i <= by; i++) {
@@ -1709,7 +1739,7 @@ function moveElementBeforeOrAfterXSiblings(element, by) {
         if (by < 0)
             sibling = element.previousSibling;
         position = 'beforebegin';
-        if (i == by)
+        if (i == by && sibling)
             sibling.insertAdjacentElement(position, element);
     }
 }
