@@ -77,7 +77,8 @@ function addEdintingButtons() {
  * @returns
  */
 function deleteRow(htmlParag) {
-    if (!checkSelection(htmlParag))
+    htmlParag = checkSelection(htmlParag);
+    if (!htmlParag)
         return;
     let htmlRow = htmlParag.parentElement;
     if (confirm("Are you sure you want to delete this row?") == false)
@@ -89,7 +90,8 @@ function deleteRow(htmlParag) {
  * @param {HTMLElement} htmlRow - the div (row) for which we want to change the css class
  */
 function changeCssClass(htmlParag) {
-    if (!checkSelection(htmlParag))
+    htmlParag = checkSelection(htmlParag);
+    if (!htmlParag)
         return;
     let htmlRow = htmlParag.parentElement;
     let className = htmlRow.dataset.root.split("&C=")[1];
@@ -114,7 +116,8 @@ function toggleClass(element, className) {
     element.classList.toggle(className);
 }
 function changeTitle(htmlParag) {
-    if (!checkSelection(htmlParag))
+    htmlParag = checkSelection(htmlParag);
+    if (!htmlParag)
         return;
     let htmlRow = htmlParag.parentElement;
     let title = prompt("Provide The Title", htmlRow.dataset.root);
@@ -243,7 +246,8 @@ function replaceText(text) {
  * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
  */
 function addNewRow(htmlParag, dataRoot) {
-    if (!checkSelection(htmlParag))
+    htmlParag = checkSelection(htmlParag);
+    if (!htmlParag)
         return;
     let row = htmlParag.parentElement;
     let newRow = document.createElement("div"), p, child;
@@ -340,7 +344,8 @@ function getPrayersSequence() {
     console.log(text);
 }
 function addTableToSequence(htmlParag) {
-    if (!checkSelection(htmlParag))
+    htmlParag = checkSelection(htmlParag);
+    if (!htmlParag)
         return;
     let htmlRow = htmlParag.parentElement;
     sequence.push(baseTitle(htmlRow.dataset.root));
@@ -422,9 +427,9 @@ function addConsoleSaveMethod(console) {
     };
 }
 function splitParagraphsToTheRowsBelow() {
-    let htmlParag = document.getSelection().focusNode.parentElement;
     //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
-    if (!checkSelection(htmlParag))
+    let htmlParag = checkSelection(document.getSelection().focusNode.parentElement);
+    if (!htmlParag)
         return; //We check that we got a paragraph element
     let title = htmlParag.dataset.root, lang = htmlParag.dataset.lang, table = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true))), //Those are all the rows belonging to the same table, including the title
     rowIndex = table.indexOf(htmlParag.parentElement);
@@ -448,7 +453,7 @@ function checkSelection(htmlParag) {
         htmlParag = htmlParag.parentElement;
     if (!htmlParag || htmlParag.tagName !== 'P') {
         alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
-        return false;
+        return undefined;
     }
-    return true;
+    return htmlParag;
 }
