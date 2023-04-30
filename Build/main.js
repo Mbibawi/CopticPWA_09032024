@@ -115,6 +115,8 @@ function changeDate(date, next = true, days = 1) {
  * @param {string} actorClass - a class that will be given to the html element showing the prayer according to who is saying the prayer: is it the Priest, the Diacon, or the Assembly?
  */
 function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userLanguages, actorClass, position = containerDiv) {
+    if (!userLanguages)
+        userLanguages = JSON.parse(localStorage.userLanguages);
     let row, p, lang, text;
     row = document.createElement("div");
     row.classList.add("TargetRow"); //we add 'TargetRow' class to this div
@@ -960,7 +962,7 @@ async function setCSSGridTemplate(Rows) {
             }
         }
     });
-    replaceEigthNote();
+    replaceEigthNote(undefined, undefined);
     /**
      * Returns a string indicating the number of columns and their widths
      * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
@@ -1716,11 +1718,15 @@ function replaceClass(prayersArray, newClass) {
  * @param {number} code - the Char code of the eigth note (or any other character that we want to replace with a span with the same css class)
  * @returns
  */
-async function replaceEigthNote(code = 9834) {
-    if (!containerDiv.children)
+async function replaceEigthNote(code, container) {
+    if (!code)
+        code = 9834;
+    if (!container)
+        container = Array.from(containerDiv.querySelectorAll('p.Diacon'));
+    if (container.length === 0)
         return;
     let note = String.fromCharCode(code), replaceWith = '<span class="eigthNote">' + note + '</span>';
-    containerDiv.querySelectorAll('p.Diacon').forEach((p) => {
+    container.forEach((p) => {
         if (p && p.innerText.includes(note)) {
             p.innerHTML = p.innerHTML.replaceAll(note, replaceWith);
         }
