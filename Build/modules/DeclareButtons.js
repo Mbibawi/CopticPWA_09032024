@@ -925,7 +925,7 @@ const btnMassUnBaptised = new Button({
                 label: btnBookOfHours.label,
                 showPrayers: true,
                 onClick: () => {
-                    let prayers = containerDiv.querySelectorAll(getDataRootSelector(Prefix.bookOfHours, true));
+                    let prayers = containerDiv.querySelectorAll('div[data-group="' + 'BookOfHours' + '"]');
                     if (prayers.length > 0) {
                         //it means the Book of Hours have been inserted before when the user clicked the button, we remove them and return
                         prayers.forEach(el => el.remove());
@@ -936,11 +936,12 @@ const btnMassUnBaptised = new Button({
                         //We will insert the text as divs after the div where the button is displayed
                         //We remove the thanks giving and the Psalm 50
                         hours.filter(title => title.includes('ThanksGiving') || title.includes('Psalm50')).map(title => hours.splice(hours.indexOf(title), 1));
-                        hours.reverse().forEach((title) => {
+                        hours.reverse().map((title) => {
                             insertPrayersAdjacentToExistingElement(btnBookOfHours.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == title), btnBookOfHours.languages, {
                                 beforeOrAfter: 'beforebegin',
                                 el: div.nextElementSibling
-                            });
+                            })
+                                .forEach(created => created.dataset.group = 'BookOfHours'); //We add a data-group attribute for each created element in order to be able to retrieve them later
                         });
                     }
                 }

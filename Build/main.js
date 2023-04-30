@@ -1229,7 +1229,7 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = "v3.0 (addition of the editing mode, getGospelReading(), getting gospel and psalm responses, etc.))";
+        let version = 'v3.1 (substantial modifications to the "Editing Mode" functions and buttons)';
         let p = document.createElement("p");
         p.style.color = 'blue';
         p.style.fontSize = "15pt";
