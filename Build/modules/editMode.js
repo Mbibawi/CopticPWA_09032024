@@ -436,8 +436,8 @@ function splitParagraphsToTheRowsBelow() {
     let clean = splitted.filter((t) => t != "");
     for (let i = 0; i < clean.length; i++) {
         //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
-        if (i + rowIndex > table.length - 1)
-            table.push(addNewRow(htmlParag.parentElement, htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+        if (!table[i + rowIndex])
+            table.push(addNewRow(htmlParag, htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
         Array.from(table[i + rowIndex].children)
             .filter((p) => p.dataset.lang == lang)[0]
             //@ts-ignore
