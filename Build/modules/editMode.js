@@ -434,9 +434,10 @@ function splitParagraphsToTheRowsBelow() {
     let splitted = text.split("\n");
     let clean = splitted.filter((t) => t != "");
     for (let i = 0; i < clean.length; i++) {
-        //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
-        if (!table[i + rowIndex])
-            table.push(addNewRow(table[table.length - 1], htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+        if (!table[i + rowIndex]) {
+            //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
+            table.push(addNewRow(table[table.length - 1].querySelector('p[data-lang="' + lang + '"]'), htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+        }
         Array.from(table[i + rowIndex].children)
             .filter((p) => p.dataset.lang == lang)[0]
             //@ts-ignore
