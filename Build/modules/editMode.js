@@ -422,7 +422,12 @@ function addConsoleSaveMethod(console) {
 }
 function splitParagraphsToTheRowsBelow() {
     let htmlParag = document.getSelection().focusNode.parentElement;
-    checkSelection(htmlParag); //We check that we got a paragraph element
+    //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
+    while (htmlParag.tagName !== 'P' && htmlParag.parentElement) {
+        htmlParag = htmlParag.parentElement;
+    }
+    if (!checkSelection(htmlParag))
+        return; //We check that we got a paragraph element
     let title = htmlParag.dataset.root, lang = htmlParag.dataset.lang, table = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true))), //Those are all the rows belonging to the same table, including the title
     rowIndex = table.indexOf(htmlParag.parentElement);
     //We retrieve the paragraph containing the text
