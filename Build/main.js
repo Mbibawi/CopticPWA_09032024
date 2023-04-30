@@ -1236,8 +1236,8 @@ function showSettingsPanel() {
         p.innerText = version;
         inlineBtnsDiv.appendChild(p);
     })();
-    //Show InstallPWA button
-    (function installPWA() {
+    //Show InstallPWA button//We are not calling it any more
+    function installPWA() {
         btn = createBtn("button", "button", "settingsBtn", "Install PWA", inlineBtnsDiv, "InstallPWA", undefined, undefined, undefined, undefined, {
             event: "click",
             fun: async () => {
@@ -1275,7 +1275,8 @@ function showSettingsPanel() {
                 }
             },
         });
-    })();
+    }
+    ;
     //Appending date picker
     (function showDatePicker() {
         let datePicker = createBtn("input", undefined, undefined, undefined, inlineBtnsDiv, "datePicker", undefined, "date", undefined, undefined, {
@@ -2165,3 +2166,12 @@ let testEditingArray = [
             "الآن وكل أوان وإلى دهر الدهور. آمين. "]
     ]
 ];
+function checkForDuplicates() {
+    PrayersArray.forEach(table => {
+        let filtered = PrayersArray.filter(t => baseTitle(t[0][0]) == baseTitle(table[0][0]));
+        if (filtered.length > 1) {
+            console.log('Found duplicated', filtered);
+        }
+    });
+    console.log('ended');
+}
