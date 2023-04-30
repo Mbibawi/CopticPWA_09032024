@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.2.7 (substantial modifications to the "Editing Mode" functions and buttons; changed containerDiv)';
+const version = 'v3.2.8 (substantial modifications to the "Editing Mode" functions and buttons; changed containerDiv)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');

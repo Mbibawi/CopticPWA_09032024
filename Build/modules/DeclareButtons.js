@@ -283,36 +283,25 @@ const btnIncenseDawn = new Button({
                 prayersArray: [],
                 languages: btnIncenseDawn.languages,
                 onClick: () => {
-                    let Adam = Array.from(containerDiv.querySelectorAll('#' + btn.btnID + 'New'));
-                    if (Adam.length > 0) {
+                    let Adam = containerDiv.querySelector('#' + btn.btnID + 'New');
+                    if (Adam) {
                         // it means the btn had been clicked before and the adam doxologies are diplayed. We will remove them from the DOM
-                        Adam.forEach(async (el) => el.remove());
+                        Adam.remove();
                         return;
                     }
                     //If not displayed, we will show
-                    //We will create a Document Fragment in order to avoid the reflow as much as possible
-                    let fragment = new DocumentFragment();
-                    //We will create a div element for each row of each table in btn.prayersArray, and will give it its id
-                    btn.prayersArray.map(table => table.map(row => createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, undefined, row[0].split('&C=')[1], fragment)
-                        .id = btn.btnID + 'New' //We give the element its id directly
-                    ));
-                    //We will apply the css on the document fragment elements
-                    setCSSGridTemplate(Array.from(fragment.children));
+                    //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
+                    let newDiv = document.createElement('div');
+                    newDiv.id = btn.btnID + 'New';
+                    //We will create a div element for each row of each table in btn.prayersArray
+                    btn.prayersArray.map(table => table.map(row => createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, undefined, row[0].split('&C=')[1], newDiv)));
+                    //We will apply the css on the newDiv children
+                    setCSSGridTemplate(Array.from(newDiv.children));
                     //we replace the eight note
-                    replaceEigthNote(undefined, Array.from(fragment.querySelectorAll('p.Diacon')));
-                    //finally we append the document framgement element to containerDiv
-                    Array.from(fragment.children).forEach((element) => {
-                        containerDiv.children[1].insertAdjacentElement('beforebegin', element);
-                    });
+                    replaceEigthNote(undefined, Array.from(newDiv.querySelectorAll('p.Diacon')));
+                    //finally we append the newDiv to containerDiv
+                    containerDiv.children[1].insertAdjacentElement('beforebegin', newDiv);
                     return;
-                    Adam = insertPrayersAdjacentToExistingElement(btn.prayersArray, btn.languages, {
-                        beforeOrAfter: 'beforebegin',
-                        el: newDiv.nextElementSibling
-                    });
-                    //We give the newly created elements the same id
-                    Adam.forEach(async (el) => el.id = btn.btnID + 'New');
-                    //Setting the CSS for the newly added elements
-                    setCSSGridTemplate(Adam);
                 },
             });
             //Setting the btn prayersArray to a filtered array of the 'Adam' doxologies
@@ -1441,6 +1430,7 @@ function getVespersGospel(prayers) {
 }
 async function getGospelReadingAndResponses(liturgy, goseplReadingsArray, languages) {
     let gospelInsertionPoint = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=0000"))[0]; //This is the html element before which we will insert the gospel litany
+    // let fragment = new DocumentFragment();
     //We start by inserting the standard Gospel Litany
     (function insertGospelLitany() {
         let gospelLitanySequence = [
