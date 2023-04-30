@@ -119,6 +119,8 @@ function changeTitle(htmlParag) {
     let htmlRow = htmlParag.parentElement;
     let title = prompt("Provide The Title", htmlRow.dataset.root);
     htmlRow.dataset.root = title;
+    Array.from(htmlRow.children).forEach((child) => { if (child.tagName === 'P' && child.dataset.root)
+        child.dataset.root = title; });
 }
 /**
  * Creates an html button, and adds
@@ -263,7 +265,7 @@ function addNewRow(htmlParag, dataRoot) {
         p.classList.add(child.dataset.lang);
         p.classList.add(newRow.dataset.root.split("&C=")[1]);
         //child.classList.forEach(className => p.classList.add(className));
-        p.dataset.root = child.dataset.root;
+        p.dataset.root = dataRoot;
         p.dataset.lang = child.dataset.lang;
         //p.innerText = "Insert Here Your Text " + p.dataset.lang;
         p.contentEditable = "true";
@@ -422,9 +424,6 @@ function addConsoleSaveMethod(console) {
 function splitParagraphsToTheRowsBelow() {
     let htmlParag = document.getSelection().focusNode.parentElement;
     //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
-    while (htmlParag.tagName !== 'P' && htmlParag.parentElement) {
-        htmlParag = htmlParag.parentElement;
-    }
     if (!checkSelection(htmlParag))
         return; //We check that we got a paragraph element
     let title = htmlParag.dataset.root, lang = htmlParag.dataset.lang, table = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true))), //Those are all the rows belonging to the same table, including the title
@@ -445,6 +444,8 @@ function splitParagraphsToTheRowsBelow() {
     }
 }
 function checkSelection(htmlParag) {
+    while (htmlParag.tagName !== 'P' && htmlParag.parentElement)
+        htmlParag = htmlParag.parentElement;
     if (!htmlParag || htmlParag.tagName !== 'P') {
         alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
         return false;

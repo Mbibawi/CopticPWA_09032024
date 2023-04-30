@@ -1,4 +1,5 @@
 //CONSTANTS
+const version = 'v3.2.4 (substantial modifications to the "Editing Mode" functions and buttons)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('TargetDiv');
 const leftSideBar = document.getElementById('leftSideBar');

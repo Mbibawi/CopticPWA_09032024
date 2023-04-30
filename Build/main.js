@@ -1229,7 +1229,6 @@ function showSettingsPanel() {
     let btn;
     //Show current version
     (function showCurrentVersion() {
-        let version = 'v3.2.3 (substantial modifications to the "Editing Mode" functions and buttons)';
         let p = document.createElement("p");
         p.style.color = 'blue';
         p.style.fontSize = "15pt";

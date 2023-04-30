@@ -333,6 +333,7 @@ function showDates() {
             ". Readings =" +
             copticReadingsDate +
             '. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
-            " . Season = " + Season;
+            " . Season = " + Season +
+            " . Vresion = " + version;
 }
 ;
