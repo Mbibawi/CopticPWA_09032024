@@ -256,7 +256,6 @@ function addNewRow(htmlParag, dataRoot) {
     newRow.classList.add(dataRoot.split("&C=")[1]);
     //newRow.contentEditable = 'true';
     for (let i = 0; i < row.children.length; i++) {
-        //length - 1 because the last element is the div contiaining the buttons
         child = row.children[i];
         if (!child.dataset.lang)
             continue;
@@ -437,7 +436,7 @@ function splitParagraphsToTheRowsBelow() {
     for (let i = 0; i < clean.length; i++) {
         //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
         if (!table[i + rowIndex])
-            table.push(addNewRow(htmlParag, htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+            table.push(addNewRow(table[table.length - 1], htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
         Array.from(table[i + rowIndex].children)
             .filter((p) => p.dataset.lang == lang)[0]
             //@ts-ignore
