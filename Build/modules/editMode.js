@@ -1,79 +1,97 @@
 let sequence = [];
+/**
+ * This is the function that displayes the elements of the array that we want to edit
+ * @param tblsArray
+ */
 async function editingMode(tblsArray) {
-    document.body.addEventListener("keydown", (event) => {
-        if (event.ctrlKey && "w".indexOf(event.key) !== -1) {
-            event.preventDefault();
-        }
-    });
     //@ts-ignore
     if (!console.save)
-        addConsoleSaveMethod(console);
-    //alert('Editing mode is active: localStorage = ' + localStorage.editingMode);
+        addConsoleSaveMethod(console); //We are adding a save method to the console object
     let el;
-    containerDiv.innerHTML = "";
-    tblsArray.map((table) => {
+    containerDiv.innerHTML = ""; //we empty the containerDiv
+    tblsArray.map(
+    //We will create html elements (rows) for each element in each table in the tblsArray
+    (table) => {
         for (let i = 0; i < table.length; i++) {
             el = createHtmlElementForPrayerEditingMode(table[i][0], table[i], prayersLanguages, allLanguages, table[i][0].split("&C=")[1], containerDiv, i);
             if (el) {
+                //We make the paragraph children of each row, editable
                 Array.from(el.children).map((c) => (c.contentEditable = "true"));
-                addEdintingButtons(el, tblsArray);
             }
         }
     });
+    //We add the editing buttons
+    addEdintingButtons();
+    //Setting the CSS of the newly added rows
     setCSSGridTemplate(containerDiv.querySelectorAll("div.TargetRow"));
+    //Showing the titles in the right side-bar
     showTitlesInRightSideBar(containerDiv.querySelectorAll("div.TargetRowTitle"), rightSideBar.querySelector("#sideBarBtns"), btnBookOfHours, true);
 }
-function addEdintingButtons(el, shadowArray) {
+/**
+ * Adds the editing buttons as an appeded div to each html div (row) displayed
+ * @param {HTMLElement} el - the div representing a row in the table
+ */
+function addEdintingButtons() {
     let btnsDiv = document.createElement("div");
+    let newButton;
     btnsDiv.classList.add("btnsDiv");
     btnsDiv.style.display = "grid";
-    btnsDiv.style.gridTemplateColumns = "100%";
-    el.appendChild(btnsDiv);
+    btnsDiv.style.gridTemplateColumns = String("33%").repeat(3);
+    btnsDiv.style.top = '10px';
+    btnsDiv.style.width = '80%';
+    btnsDiv.style.justifySelf = 'center !important';
+    btnsDiv.style.justifyItems = 'stretch';
+    btnsDiv.style.position = 'fixed';
+    containerDiv.children[0].insertAdjacentElement('beforebegin', btnsDiv);
     //Add new row button
-    let btnNewRow = document.createElement("button");
-    btnsDiv.appendChild(btnNewRow);
-    createEditingButton(btnNewRow, () => addNewRow(btnNewRow.parentElement.parentElement, shadowArray), "Add Row");
-    //Export to ShadowArray button
-    let btnExport = document.createElement("button");
-    btnsDiv.appendChild(btnExport);
-    //createEditingButton(btnExport, () => exportShadowArrayOld([...shadowArray]), 'Export')
-    createEditingButton(btnExport, () => exportModifiedArray(), "Export");
+    newButton = createEditingButton(() => addNewRow(document.getSelection().focusNode.parentElement), "Add Row");
+    btnsDiv.appendChild(newButton);
+    //Save Modified Array to Local Storage
+    newButton = createEditingButton(() => saveModifiedArray(), "Save");
+    btnsDiv.appendChild(newButton);
+    //Export Modified Array  to a JS file
+    //@ts-ignore
+    newButton = createEditingButton(() => console.save(saveModifiedArray(), 'ModifiedArray.js'), "Export");
+    btnsDiv.appendChild(newButton);
     //Modify The Title
-    let btnTitle = document.createElement("button");
-    btnsDiv.appendChild(btnTitle);
-    createEditingButton(btnTitle, () => changeTitle(btnTitle.parentElement.parentElement), "Ttile");
+    newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Ttile");
+    btnsDiv.appendChild(newButton);
     //Modify The Css Class
-    let btnClass = document.createElement("button");
-    btnsDiv.appendChild(btnClass);
-    createEditingButton(btnClass, () => changeCssClass(btnClass.parentElement.parentElement), "Class");
+    newButton = createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), "Class");
+    btnsDiv.appendChild(newButton);
     //Delete row
-    let btnDelete = document.createElement("button");
-    btnsDiv.appendChild(btnDelete);
-    createEditingButton(btnDelete, () => deleteRow(btnDelete.parentElement.parentElement), "Delete");
+    newButton = createEditingButton(() => deleteRow(document.getSelection().focusNode.parentElement), "Delete");
+    btnsDiv.appendChild(newButton);
     //Add table to sequence
-    let btnAddSequence = document.createElement("button");
-    btnsDiv.appendChild(btnAddSequence);
-    createEditingButton(btnAddSequence, () => addTableToSequence(btnAddSequence.parentElement.parentElement), "Add To Sequence");
+    newButton = createEditingButton(() => addTableToSequence(document.getSelection().focusNode.parentElement), "Add To Sequence");
+    btnsDiv.appendChild(newButton);
     //Export Sequence
-    let btnExportSequence = document.createElement("button");
-    btnsDiv.appendChild(btnExportSequence);
-    createEditingButton(btnExportSequence, () => exportSequence(btnExportSequence.parentElement.parentElement), "Export Sequence");
-    //Split Paragraphs In the rows below
-    let btnSplitParagraphsBelow = document.createElement("button");
-    btnsDiv.appendChild(btnSplitParagraphsBelow);
-    createEditingButton(btnSplitParagraphsBelow, () => splitParagraphsToTheRowsBelow(btnSplitParagraphsBelow.parentElement.parentElement.dataset.root, undefined, Array.from(containerDiv.querySelectorAll(getDataRootSelector(btnSplitParagraphsBelow.parentElement.parentElement.dataset.root))).indexOf(btnSplitParagraphsBelow.parentElement.parentElement)), "Split Below");
+    newButton = createEditingButton(() => exportSequence(), "Export Sequence");
+    btnsDiv.appendChild(newButton);
+    newButton = createEditingButton(() => splitParagraphsToTheRowsBelow(), "Split Below");
+    btnsDiv.appendChild(newButton);
 }
 /**
- * Delets an html div (row) from the DOM
- * @param htmlRow - the html div (or any html element), we want to delete
+ * Deletes an html div (row) from the DOM
+ * @param {HTMLElement} htmlRow - the html div (or any html element), we want to delete
  * @returns
  */
-function deleteRow(htmlRow) {
-    if (confirm("Are you sure you want to delete this row?") == false)
+function deleteRow(htmlParag) {
+    if (!checkSelection(htmlParag))
         return;
+    let htmlRow = htmlParag.parentElement;
+    if (confirm("Are you sure you want to delete this row?") == false)
+        return; //We ask the user to confirm before deletion
     htmlRow.remove();
 }
-function changeCssClass(htmlRow) {
+/**
+ * Changes the 'actor' css class of a row
+ * @param {HTMLElement} htmlRow - the div (row) for which we want to change the css class
+ */
+function changeCssClass(htmlParag) {
+    if (!checkSelection(htmlParag))
+        return;
+    let htmlRow = htmlParag.parentElement;
     let className = htmlRow.dataset.root.split("&C=")[1];
     toggleClass(htmlRow, className);
     Array.from(htmlRow.children).forEach((element) => {
@@ -95,17 +113,28 @@ function changeCssClass(htmlRow) {
 function toggleClass(element, className) {
     element.classList.toggle(className);
 }
-function changeTitle(htmlRow) {
+function changeTitle(htmlParag) {
+    if (!checkSelection(htmlParag))
+        return;
+    let htmlRow = htmlParag.parentElement;
     let title = prompt("Provide The Title", htmlRow.dataset.root);
     htmlRow.dataset.root = title;
 }
-function createEditingButton(btnHtml, fun, label) {
+/**
+ * Creates an html button, and adds
+ * @param {Function} fun - the function that will be called when the button is clicked
+ * @param {string} label - the label of the button
+ * @returns {HTMLButtonElement} - the html button that was created
+ */
+function createEditingButton(fun, label) {
+    let btnHtml = document.createElement('button');
     btnHtml.classList.add(inlineBtnClass);
     btnHtml.classList.add("btnEditing");
     btnHtml.innerText = label;
     btnHtml.addEventListener("click", () => fun());
+    return btnHtml;
 }
-function exportModifiedArray() {
+function saveModifiedArray() {
     let htmlRows = containerDiv.querySelectorAll(".TargetRow"), //we retriev all the divs with 'TargetRow' class from the DOM
     tableHtmlRows, table, updated = new Set(), newArray = [], title;
     Array.from(htmlRows).forEach(
@@ -135,8 +164,7 @@ function exportModifiedArray() {
     let text = replacePrefixes(newArray);
     localStorage.editedText = text;
     console.log(localStorage.editedText);
-    //@ts-ignore
-    console.save(text, "ModifiedArray.js");
+    return text;
 }
 function replacePrefixes(array) {
     //Open Array of Tables
@@ -207,14 +235,24 @@ function replaceText(text) {
     text = text.replaceAll(giaki.CA, '" + giaki.CA + "');
     return text;
 }
-function addNewRow(row, shadowArray) {
+/**
+ * Adds a new div (row) below the div (row) passed to it as argument.
+ * @param {HTMLElement} row - the div (row) below which we will add a row
+ * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
+ */
+function addNewRow(htmlParag, dataRoot) {
+    if (!checkSelection(htmlParag))
+        return;
+    let row = htmlParag.parentElement;
     let newRow = document.createElement("div"), p, child;
     newRow.classList.add("TargetRow");
     newRow.dataset.isNewRow = "isNewRow";
     newRow.style.display = row.style.display;
     newRow.style.gridTemplateColumns = row.style.gridTemplateColumns;
     newRow.style.gridTemplateAreas = row.style.gridTemplateAreas;
-    newRow.dataset.root = prompt("Provide the Title of the new Row", row.dataset.root);
+    if (!dataRoot)
+        dataRoot = prompt("Provide the Title of the new Row", row.dataset.root);
+    newRow.dataset.root = dataRoot;
     newRow.classList.add(newRow.dataset.root.split("&C=")[1]);
     //newRow.contentEditable = 'true';
     for (let i = 0; i < row.children.length - 1; i++) {
@@ -228,11 +266,10 @@ function addNewRow(row, shadowArray) {
         //child.classList.forEach(className => p.classList.add(className));
         p.dataset.root = child.dataset.root;
         p.dataset.lang = child.dataset.lang;
-        p.innerText = "Insert Here Your Text " + p.dataset.lang;
+        //p.innerText = "Insert Here Your Text " + p.dataset.lang;
         p.contentEditable = "true";
     }
-    addEdintingButtons(newRow, shadowArray);
-    row.insertAdjacentElement("afterend", newRow);
+    return row.insertAdjacentElement("afterend", newRow);
 }
 function createHtmlElementForPrayerEditingMode(firstElement, prayers, languagesArray, userLanguages, actorClass, position = containerDiv, rowIndex) {
     let row, p, lang, text;
@@ -301,7 +338,10 @@ function getPrayersSequence() {
     text += "]";
     console.log(text);
 }
-function addTableToSequence(htmlRow) {
+function addTableToSequence(htmlParag) {
+    if (!checkSelection(htmlParag))
+        return;
+    let htmlRow = htmlParag.parentElement;
     sequence.push(baseTitle(htmlRow.dataset.root));
     let result = prompt(sequence.join(", \n"), sequence.join(", \n"));
     sequence = result.split(", \n");
@@ -313,7 +353,7 @@ function addTableToSequence(htmlRow) {
         setCSSGridTemplate(document.getElementById("showSequence").querySelectorAll(".TargetRow"));
     }
 }
-function exportSequence(htmlRow) {
+function exportSequence() {
     console.log(sequence);
     let empty = confirm("Do you want to empty the sequence?");
     if (empty)
@@ -355,7 +395,6 @@ function showSequence(sequenceArray = sequence, container = containerDiv) {
         setCSSGridTemplate(newDiv.querySelectorAll(".TargetRow"));
     });
 }
-function exportToTextFile(console, text, fileName) { }
 /**
  * adds a 'save' method to console, which prints a data to a text or a json file
  */
@@ -381,16 +420,29 @@ function addConsoleSaveMethod(console) {
         a.dispatchEvent(e);
     };
 }
-function splitParagraphsToTheRowsBelow(title, lang, index = 0) {
-    if (!lang)
-        lang = prompt("Provide the column language like 'FR'");
-    let allRows = containerDiv.querySelectorAll(getDataRootSelector(title));
-    let firstCell = allRows[0].querySelector('p[data-lang="' + lang + '"');
-    let text = firstCell.innerText;
+function splitParagraphsToTheRowsBelow() {
+    let htmlParag = document.getSelection().focusNode.parentElement;
+    checkSelection(htmlParag); //We check that we got a paragraph element
+    let title = htmlParag.dataset.root, lang = htmlParag.dataset.lang, table = Array.from(containerDiv.querySelectorAll(getDataRootSelector(baseTitle(title), true))), //Those are all the rows belonging to the same table, including the title
+    rowIndex = table.indexOf(htmlParag.parentElement);
+    //We retrieve the paragraph containing the text
+    let text = htmlParag.innerText;
     let splitted = text.split("\n");
     let clean = splitted.filter((t) => t != "");
-    for (let i = index; i < allRows.length; i++) {
-        //@ts-ignore
-        allRows[i].querySelector('p[data-lang="' + lang + '"').innerText = clean[i];
+    for (let i = 0; i < clean.length; i++) {
+        //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
+        if (i + rowIndex > table.length - 1)
+            table.push(addNewRow(htmlParag.parentElement, htmlParag.parentElement.dataset.root)); //we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+        Array.from(table[i + rowIndex].children)
+            .filter((p) => p.dataset.lang == lang)[0]
+            //@ts-ignore
+            .innerText = clean[i];
     }
+}
+function checkSelection(htmlParag) {
+    if (!htmlParag || htmlParag.tagName !== 'P') {
+        alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
+        return false;
+    }
+    return true;
 }
