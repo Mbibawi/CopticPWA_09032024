@@ -883,7 +883,7 @@ const btnMassUnBaptised = new Button({
         return btnMassUnBaptised.prayers;
     },
     afterShowPrayers: () => {
-        let anchor = containerDiv.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'PraxisResponse&D=0000'))[0]; //this is the html element before which we will insert all the readings and responses
+        let anchor = containerDiv.querySelectorAll(getDataRootSelector(Prefix.praxisResponse + 'PraxisResponse&D=0000'))[0]; //this is the html element before which we will insert all the readings and responses
         let reading;
         (function insertStPaulReading() {
             reading = btnReadingsStPaul.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsStPaul.prayers[0] + '&D=' + copticReadingsDate);
@@ -906,9 +906,6 @@ const btnMassUnBaptised = new Button({
             insertPrayersAdjacentToExistingElement(reading, btnReadingsKatholikon.languages, { beforeOrAfter: 'beforebegin', el: anchor });
         })();
         (function insertPraxis() {
-            let response = function getPraxisResponse(coptDate) {
-                PrayersArray.filter(p => baseTitle(p[0][0]) == Prefix.praxis + '&D=');
-            };
             reading = btnReadingsPraxis.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsPraxis.prayers[0] + '&D=' + copticReadingsDate);
             reading = [
                 [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.praxisIntro.AR, ReadingsIntrosAndEnds.praxisIntro.FR, ReadingsIntrosAndEnds.praxisIntro.EN]],
@@ -916,6 +913,28 @@ const btnMassUnBaptised = new Button({
                 [[reading[0][1][0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.praxisEnd.AR, ReadingsIntrosAndEnds.praxisEnd.FR, ReadingsIntrosAndEnds.praxisEnd.EN]]
             ];
             insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
+            (function insertPraxisResponse() {
+                let response = PrayersArray.filter(table => table[0][0].startsWith(Prefix.praxisResponse)
+                    && (eval(baseTitle(table[0][0]).split('&D=')[1].replace('$', '')) === copticDate
+                        || eval(baseTitle(table[0][0]).split('&D=')[1].replace('$', '')) === Season));
+                if (response.length === 0) {
+                    //If we are not on a a cotpic feast or a Season, We will look in the saints feasts
+                    response = PrayersArray.filter(table => table[0][0].startsWith(Prefix.praxisResponse)
+                        && Object.entries(saintsFeasts).filter(entry => entry[1] === eval(baseTitle(table[0][0]).split('&D=')[1].replace('$', ''))).length > 0);
+                }
+                if (response.length > 0) {
+                    //If a Praxis respone was found
+                    if (Season === Seasons.GreatLent) {
+                        // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
+                        if (todayDate.getDay() === 0 || todayDate.getDay() === 6)
+                            response = response.filter(table => table[0][0].includes('Sundays&D='));
+                        if (todayDate.getDay() != 0 && todayDate.getDay() != 6)
+                            response = response.filter(table => table[0][0].includes('Week&D='));
+                    }
+                    insertPrayersAdjacentToExistingElement(response, prayersLanguages, { beforeOrAfter: 'beforebegin', el: anchor });
+                    containerDiv.querySelectorAll(getDataRootSelector(anchor.dataset.root)).forEach(div => div.remove());
+                }
+            })();
         })();
         //Inserting the Gospel Reading
         getGospelReadingAndResponses(Prefix.gospelMass, btnReadingsGospelMass.prayersArray, btnReadingsGospelMass.languages);

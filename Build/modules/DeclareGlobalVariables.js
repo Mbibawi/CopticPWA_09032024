@@ -12,6 +12,7 @@ const ResurrectionDates = ["2023-04-16", "2024-05-05", "2025-04-29", "2026-04-12
 const Prefix = {
     psalmResponse: 'PR_',
     gospelResponse: 'GR_',
+    praxisResponse: 'PRR_',
     massCommon: 'MC_',
     commonPrayer: 'PC_',
     incenseDawn: 'ID_',
@@ -49,7 +50,7 @@ const ReadingsIntrosAndEnds = {
     },
     stPaulIntro: {
         AR: 'البولس فصل من رسالة معلمنا بولس الرسول  (الأولى/الثانية) إلى ()، بركته على جميعنا آمين',
-        FR: 'Lecture de l\'Epître de Saint Paul à () que sa bénédiction soit sur nous tous, Amen!',
+        FR: 'Lecture de l’Epître de Saint Paul à () que sa bénédiction soit sur nous tous, Amen!',
         EN: '',
     },
     stPaulEnd: {
@@ -58,13 +59,13 @@ const ReadingsIntrosAndEnds = {
         EN: '',
     },
     katholikonIntro: {
-        AR: 'الكاثوليكون، فصل من رسالة القديس () بركته على جميعنا آمين',
-        FR: 'Katholikon, lecture de l\'Epître de Saint () que sa bénédiction soit sur nous tous, Amen!',
+        AR: 'الكاثوليكون، فصل من رسالة القديس (الأولى/الثانية/الثالثة)  بركته على جميعنا آمين',
+        FR: 'Katholikon, (1ère/2ème/3ème) épître à l’Église Universelle de notre père (St.), que sa bénédiction repose sur nous tous. Amen!',
         EN: '',
     },
     katholikonEnd: {
         AR: 'لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد',
-        FR: 'N\'aimez pas le monde ni ses convoitises, car le monde va disparaître, mais celui qui fait la volonté de Dieu sera',
+        FR: 'N’aimez pas le monde et ce qui est dans le monde, le monde passe, lui et sa convoitise, mais celui qui fait la volonté de Dieu demeure à jamais. Amen !',
         EN: '',
     },
     psalmIntro: {
@@ -78,12 +79,12 @@ const ReadingsIntrosAndEnds = {
     },
     praxisIntro: {
         AR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين.',
-        FR: 'Praxis, actes des Apôtres que leur bénidiction soit sur nous tous, Amen!',
+        FR: 'Praxis, Actes de nos pères les apôtres, que leurs saintes bénédictions reposent sur nous. Amen!',
         EN: '',
     },
     praxisEnd: {
         AR: 'لم تزل كلمة الرب تنمو وتعتز وتكثر في هذا البيعة وكل بيعة يا آبائي وإخوتي آمين.',
-        FR: 'Fin du Praxis',
+        FR: 'La parole du Seigneur croît, se multiplie et s’enracine dans la sainte Église de Dieu. Amen!',
         EN: '',
     },
     synaxariumIntro: {
@@ -120,7 +121,6 @@ const Seasons = {
 };
 const copticFeasts = {
     Nayrouz: '0101',
-    StJohnBaptist: '0201',
     Cross: '1701',
     BeguiningNativityLent: '1603',
     NativityParamoun: '2804',
@@ -150,7 +150,7 @@ const copticFeasts = {
     StMaryFast: '0112',
     Epiphany: '1312',
     StMaryFeast: '1612',
-    theTwentyNinethOfCopticMonth: '2900'
+    theTwentyNinethOfCopticMonth: '2900',
 };
 const copticFasts = [
     Seasons.GreatLent,
@@ -160,16 +160,35 @@ const copticFasts = [
     Seasons.JonahFast,
 ];
 const saintsFeasts = {
-    stJohnBaptist: '',
-    stGeorges: '',
-    stMina: '',
-    stPhilopatir: '',
-    stPaul: '',
-    stMarina: '',
-    stDemiane: '',
-    stCyrilVI: '',
-    stBishoyKamel: '',
-    stBishoy: '',
+    StJohnBaptist: '0201',
+    FourCelestialBeings: '0803',
+    TwentyFourPriests: '2403',
+    StMaykel: '1203',
+    StGabriel: '1310',
+    StRaphael: '0313',
+    StSourial: '2705',
+    StMarc: '3008',
+    StSteven: '0105',
+    StSergeBacchus: '',
+    StGeorge: '2708',
+    StMina: '1503',
+    StTheodor: '',
+    StPhilopatir: '2503',
+    StCome: '',
+    OneHudredTwentyFourThousands: '',
+    AbakirAndJohn: '',
+    StDamienne: '',
+    StBarbara: '',
+    StMarina: '',
+    StAnton: '2205',
+    StBishoy: '',
+    StShenoute: '',
+    StTeji: '',
+    StPersoma: '',
+    StCyrilVI: '3004',
+    StBishoyKamel: '1207',
+    StMikaelMetropolis: '',
+    StJustAnton: '' //St Just of the St. Anton
 };
 const foreingLanguage = 'FR';
 const allLanguages = ['AR', foreingLanguage, 'COP', 'CA', 'CF', 'EN']; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English

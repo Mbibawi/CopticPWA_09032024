@@ -59,19 +59,22 @@ const closingHymnAll = [
         COP: ''
     }
 ];
-let giaki = setSeasonalText(giakiAll);
-let closingHym = setSeasonalText(closingHymnAll);
-function setSeasonalText(arrayAll) {
-    let prayer = arrayAll.filter(resp => resp.Season == Season);
-    if (prayer) {
-        return prayer[0];
-    }
-    else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
-        || HolyWeek.indexOf(copticReadingsDate) > -1) {
-        return arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
-    }
-    else if (!prayer) {
-        return arrayAll.filter(resp => resp.Season == Seasons.NoSeason)[0];
+let giaki, closingHym;
+setAllSeasonalPrayers();
+function setAllSeasonalPrayers() {
+    giaki = setSeasonalText(giakiAll);
+    closingHym = setSeasonalText(closingHymnAll);
+    function setSeasonalText(arrayAll) {
+        let prayer = arrayAll.filter(resp => resp.Season == Season);
+        if (prayer.length === 1) {
+            return prayer[0];
+        }
+        else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
+            || HolyWeek.indexOf(copticReadingsDate) > -1) {
+            return arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
+        }
+        else if (prayer.length === 0) {
+            return arrayAll.filter(resp => resp.Season === Seasons.NoSeason)[0];
+        }
     }
 }
-;

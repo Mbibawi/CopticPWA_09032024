@@ -65,40 +65,6 @@ function checkDate() {
     setCopticDates(newDate);
 }
 /**
- * Changes the current Gregorian date and adjusts the coptic date and the coptic readings date, etc.
- * @param {string} date  - allows the user to pass the Greogrian calendar day to which he wants the date to be set, as a string provided from an input box or by the date picker
- * @param {boolean} next  - used when the user wants to jumb forward or back by only one day
- * @param {number} days  - the number of days by which the user wants to jumb forward or back
- * @returns {Date} - the Gregorian date as set by the user
- */
-function changeDate(date, next = true, days = 1) {
-    if (date) {
-        todayDate.setTime(new Date(date).getTime());
-    }
-    else {
-        if (next) {
-            todayDate.setTime(todayDate.getTime() + days * calendarDay); //advancing the date by the number of calendar years
-        }
-        else if (!next) {
-            todayDate.setTime(todayDate.getTime() - days * calendarDay);
-        }
-    }
-    console.log(todayDate);
-    setCopticDates(todayDate);
-    let newDate = new Date();
-    if (todayDate.getDate() == newDate.getDate() &&
-        todayDate.getMonth() == newDate.getMonth() &&
-        todayDate.getFullYear() == newDate.getFullYear()) {
-        //it means that todayDate = the date of today (same day, same month, same year), in this case we set the local storage to undefined
-        localStorage.selectedDate = undefined;
-    }
-    else {
-        //If todayDate is not equal to the date of today, we store the manually selected date in the local storage
-        localStorage.selectedDate = todayDate.getTime();
-    }
-    return todayDate;
-}
-/**
  * Some functions that we run automatically when loading the app
  */
 (function autoRunOnLoad() {
