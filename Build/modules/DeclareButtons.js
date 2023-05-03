@@ -1124,13 +1124,17 @@ const btnBookOfHours = new Button({
     showPrayers: true,
     languages: [...prayersLanguages],
     onClick: (mass = false) => {
-        let Kenin = Prefix.commonPrayer + 'NowAlwaysAndForEver&D=$copticFeasts.AnyDay', ZoksaPatri = Prefix.commonPrayer + 'GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay', gospelEnd = Prefix.bookOfHours + 'GospelEnd&D=$copticFeasts.AnyDay', OurFatherWhoArtInHeaven = Prefix.commonPrayer + 'OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay', WeExaltYou = Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay', Agios = Prefix.commonPrayer + 'HolyGodHolyPowerfulPart', HolyLordOfSabaot = Prefix.commonPrayer + 'HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay', Creed = Prefix.commonPrayer + 'Creed&D=$copticFeasts.AnyDay', Hallelujah = Prefix.bookOfHours + '+PsalmEnd&D=$copticFeasts.AnyDay';
-        let HourIntro = [
+        let Kenin = Prefix.commonPrayer + 'NowAlwaysAndForEver&D=$copticFeasts.AnyDay', ZoksaPatri = Prefix.commonPrayer + 'GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay', gospelEnd = Prefix.bookOfHours + 'GospelEnd&D=$copticFeasts.AnyDay', OurFatherWhoArtInHeaven = Prefix.commonPrayer + 'OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay', WeExaltYou = Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay', Agios = Prefix.commonPrayer + 'HolyGodHolyPowerfulPart', HolyLordOfSabaot = Prefix.commonPrayer + 'HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay', Creed = Prefix.commonPrayer + 'Creed&D=$copticFeasts.AnyDay', Hallelujah = Prefix.bookOfHours + '+PsalmEnd&D=$copticFeasts.AnyDay', HourIntro = [
             Prefix.commonPrayer + 'ThanksGivingPart1&D=$copticFeasts.AnyDay',
             Prefix.commonPrayer + 'ThanksGivingPart2&D=$copticFeasts.AnyDay',
             Prefix.commonPrayer + 'ThanksGivingPart3&D=$copticFeasts.AnyDay',
             Prefix.commonPrayer + 'ThanksGivingPart4&D=$copticFeasts.AnyDay',
             Prefix.bookOfHours + 'AnyHourPsalm50&D=$copticFeasts.AnyDay'
+        ], DawnPsalms = [
+            Prefix.bookOfHours + '6thHourPsalm62&D=$copticFeasts.AnyDay',
+            Prefix.bookOfHours + '6thHourPsalm66&D=$copticFeasts.AnyDay',
+            Prefix.bookOfHours + '6thHourPsalm69&D=$copticFeasts.AnyDay',
+            Prefix.bookOfHours + '9thHourPsalm112&D=$copticFeasts.AnyDay',
         ];
         (function preparingButtonPrayers() {
             for (let hour in bookOfHours) {
@@ -1140,6 +1144,8 @@ const btnBookOfHours = new Button({
                     bookOfHours[hour.split('Array')[0]].splice(1, 0, ...HourIntro);
                 }
             }
+            //Adding the repeated psalms (psalms that are found in the 6ths and 9th hour), before pasalm 122
+            bookOfHours.DawnPrayers.splice(bookOfHours.DawnPrayers.indexOf(Prefix.bookOfHours + '1stHourPsalm142&D=$copticFeasts.AnyDay'), 0, ...DawnPsalms);
             if (mass) {
                 //mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
                 if (Season == Seasons.GreatLent) {
@@ -1215,10 +1221,10 @@ const btnBookOfHours = new Button({
             btnBookOfHours.prayersArray = [...bookOfHoursArray];
             //Adding the "Zoksa Patri" and "Kenin" and "Hallelujah" tables to the button's prayers array
             btnBookOfHours.prayersArray.push(...CommonPrayersArray.filter(table => baseTitle(table[0][0]) == ZoksaPatri
-                || new RegExp(Prefix.commonPrayer + 'ThanksGivingPart\\d{1}\\&D\\=\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
+                || new RegExp(Prefix.commonPrayer + 'ThanksGivingPart\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
                 || baseTitle(table[0][0]) == Kenin
                 || baseTitle(table[0][0]) == Hallelujah
-                || new RegExp(Agios + '\\d{1}\\&D\\=\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
+                || new RegExp(Agios + '\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
                 || baseTitle(table[0][0]) == HolyLordOfSabaot
                 || baseTitle(table[0][0]) == WeExaltYou
                 || baseTitle(table[0][0]) == OurFatherWhoArtInHeaven

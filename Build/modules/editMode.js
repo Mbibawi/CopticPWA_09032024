@@ -234,6 +234,7 @@ function replaceText(text) {
     text = text.replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn + "');
     text = text.replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse + "');
     text = text.replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul + "');
+    text = text.replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse + "');
     text = text.replaceAll(giaki.AR, '" + giaki.AR + "');
     text = text.replaceAll(giaki.FR, '" + giaki.FR + "');
     text = text.replaceAll(giaki.COP, '" + giaki.COP + "');
