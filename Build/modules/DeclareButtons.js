@@ -235,67 +235,11 @@ const btnIncenseDawn = new Button({
             }
             btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(cymbals), 1);
         })();
-        let index;
-        (function removeEklonominTaghonata() {
-            //We remove "Eklonomin Taghonata" from the prayers array
-            if ((Season != Seasons.GreatLent && Season != Seasons.JonahFast) ||
-                todayDate.getDay() == 0 ||
-                todayDate.getDay() == 6) {
-                let godHaveMercy = btnIncenseDawn.prayers.filter(title => title.startsWith(Prefix.incenseDawn + "GodHaveMercyOnUs")
-                    && title.includes("&D=" + Seasons.GreatLent));
-                godHaveMercy.forEach(title => btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(title), 1));
-            }
-        })();
         scrollToTop();
         return btnIncenseDawn.prayers;
     },
     afterShowPrayers: async () => {
-        (function addInlineBtnForAdamDoxolgies() {
-            if (containerDiv.children.length === 0)
-                return;
-            let newDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
-            newDiv.classList.add("inlineBtns");
-            containerDiv.children[0].insertAdjacentElement("beforebegin", newDiv); //Inserting the div containing the button as 1st element of containerDiv
-            //Adding an inline Button for showing the "Adam" Doxologies, and removing the id of the Adam Doxologies from the btn.prayers array
-            let btn = new Button({
-                btnID: "AdamDoxologies",
-                label: {
-                    AR: "ذكصولوجيات باكر آدام",
-                    FR: "Doxologies Adam Aube",
-                },
-                cssClass: inlineBtnClass,
-                prayersArray: [],
-                languages: btnIncenseDawn.languages,
-                onClick: () => {
-                    let Adam = containerDiv.querySelector('#' + btn.btnID + 'New');
-                    if (Adam) {
-                        // it means the btn had been clicked before and the adam doxologies are diplayed. We will remove them from the DOM
-                        Adam.remove();
-                        return;
-                    }
-                    //If not displayed, we will show
-                    //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
-                    let newDiv = document.createElement('div');
-                    newDiv.id = btn.btnID + 'New';
-                    //We will create a div element for each row of each table in btn.prayersArray
-                    btn.prayersArray.map(table => table.map(row => createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, undefined, row[0].split('&C=')[1], newDiv)));
-                    //We will apply the css on the newDiv children
-                    setCSSGridTemplate(Array.from(newDiv.children));
-                    //we replace the eight note
-                    replaceEigthNote(undefined, Array.from(newDiv.querySelectorAll('p.Diacon')));
-                    //finally we append the newDiv to containerDiv
-                    containerDiv.children[1].insertAdjacentElement('beforebegin', newDiv);
-                    return;
-                },
-            });
-            //Setting the btn prayersArray to a filtered array of the 'Adam' doxologies
-            btn.prayersArray = DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam'));
-            createBtn(btn, newDiv, btn.cssClass, true, btn.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
-            //then removing the prayer id from the btnIncenseDawn.prayers array in order to exclude them unless requested by the user by clicking on the inline button, otherwise they will show twice
-            btn.prayersArray.map(table => btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(table[0][0]), 1));
-        })();
         (async function addGreatLentPrayers() {
-            let doxologies;
             if (Season != Seasons.GreatLent ||
                 copticReadingsDate == copticFeasts.Resurrection) {
                 return;
@@ -308,23 +252,43 @@ const btnIncenseDawn = new Button({
                         btnIncenseDawn.children.unshift(btnReadingsPropheciesDawn);
                     }
                 })();
+                (async function addEklonominTaghonata() {
+                    let efnotiNaynan = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'EfnotiNaynan&D=$copticFeasts.AnyDay', true));
+                    let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling; //This is the "Kyrie Elison 3 times"
+                    insertion.insertAdjacentElement('beforebegin', insertion.cloneNode(true));
+                    let godHaveMercy = btnIncenseDawn.prayersArray.filter(table => table[0][0].startsWith(Prefix.incenseDawn + 'GodHaveMercyOnUs')); //This will give us all the prayers 
+                    let KyrieElieson = btnIncenseDawn.prayersArray.filter(table => table[0][0] === Prefix.commonPrayer + 'KyrieElieson&D=$copticFeasts.AnyDay&C=Assembly')[0];
+                    let blocks = [];
+                    blocks.push(godHaveMercy[0]); //this is the comment at the begining
+                    for (let i = 2; i < godHaveMercy.length; i += 3) {
+                        blocks.push(godHaveMercy[1]);
+                        blocks.push(godHaveMercy[i]);
+                        blocks.push(KyrieElieson);
+                        blocks.push(godHaveMercy[i + 1]);
+                        blocks.push(KyrieElieson);
+                        blocks.push(godHaveMercy[i + 2]);
+                        if (i + 2 < (godHaveMercy.length - 1))
+                            blocks.push(KyrieElieson);
+                    }
+                    insertPrayersAdjacentToExistingElement(blocks, prayersLanguages, { beforeOrAfter: 'beforebegin', el: insertion });
+                })();
+                (async function removeEklonominTaghonataExcessiveTitles() {
+                    //When "Klonomin Taghnata is inserted, the refrain is inserted with the title, we will remove all the titles and keep only the first one"
+                    let titles = Array.from(containerDiv.querySelectorAll(getDataRootSelector(Prefix.incenseDawn + 'GodHaveMercyOnUsRefrain&D=' + Seasons.GreatLent)))
+                        .filter(div => div.classList.contains('TargetRowTitle'));
+                    if (titles)
+                        for (let i = 1; i < titles.length; i++)
+                            titles[i].remove();
+                    let links = rightSideBar
+                        .querySelector("#sideBarBtns")
+                        .querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
+                    for (let i = 1; i < links.length; i++) {
+                        links[i].remove();
+                    }
+                })();
             }
-            else if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
+            else if (todayDate.getDay() === 0 || todayDate.getDay() === 6) {
             }
-            (async function removeEklonominTaghonataExcessiveTitles() {
-                //When "Klonomin Taghnata is inserted, the refrain is inserted with the title, we will remove all the titles and keep only the first one"
-                let titles = Array.from(containerDiv.querySelectorAll(getDataRootSelector(Prefix.incenseDawn + 'GodHaveMercyOnUsRefrain&D=' + Seasons.GreatLent)))
-                    .filter(div => div.classList.contains('TargetRowTitle'));
-                if (titles)
-                    for (let i = 1; i < titles.length; i++)
-                        titles[i].remove();
-                let links = rightSideBar
-                    .querySelector("#sideBarBtns")
-                    .querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
-                for (let i = 1; i < links.length; i++) {
-                    links[i].remove();
-                }
-            })();
         })();
         (async function insertCymbalVersesAndDoxologiesForFeastsAndSeasons() {
             if (copticDate == copticFeasts.Nayrouz) {
@@ -494,6 +458,48 @@ const btnIncenseDawn = new Button({
             }
         })();
         getGospelReadingAndResponses(Prefix.gospelDawn, btnReadingsGospelIncenseDawn.prayersArray, btnReadingsGospelIncenseDawn.languages);
+        (async function addInlineBtnForAdamDoxolgies() {
+            if (containerDiv.children.length === 0)
+                return;
+            let btnDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
+            btnDiv.classList.add("inlineBtns");
+            containerDiv.children[0].insertAdjacentElement("beforebegin", btnDiv); //Inserting the div containing the button as 1st element of containerDiv
+            //Adding an inline Button for showing the "Adam" Doxologies, and removing the id of the Adam Doxologies from the btn.prayers array
+            let btn = new Button({
+                btnID: "AdamDoxologies",
+                label: {
+                    AR: "ذكصولوجيات باكر آدام",
+                    FR: "Doxologies Adam Aube",
+                },
+                cssClass: inlineBtnClass,
+                prayersArray: [],
+                languages: btnIncenseDawn.languages,
+                onClick: () => {
+                    let doxologyDiv = containerDiv.querySelector('#' + btn.btnID + 'New');
+                    if (!doxologyDiv)
+                        return;
+                    if (doxologyDiv.style.display === 'none')
+                        doxologyDiv.style.display = 'grid';
+                    else if (doxologyDiv.style.display === 'grid')
+                        doxologyDiv.style.display = 'none';
+                },
+            });
+            createBtn(btn, btnDiv, btn.cssClass, true, btn.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+            //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
+            let doxologyDiv = document.createElement('div');
+            doxologyDiv.id = btn.btnID + 'New';
+            doxologyDiv.style.display = 'none';
+            //Setting the btn prayersArray to a filtered array of the 'Adam' doxologies
+            let adam = DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam'));
+            //We will create a div element for each row of each table in btn.prayersArray
+            adam.forEach(table => table.forEach(row => createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, undefined, row[0].split('&C=')[1], doxologyDiv)));
+            //We will apply the css on the newDiv children
+            setCSSGridTemplate(Array.from(doxologyDiv.children));
+            //we replace the eight note
+            replaceEigthNote(undefined, Array.from(doxologyDiv.querySelectorAll('p.Diacon')));
+            //finally we append the newDiv to containerDiv
+            containerDiv.children[1].insertAdjacentElement('beforebegin', doxologyDiv);
+        })();
     },
 });
 const btnIncenseVespers = new Button({
