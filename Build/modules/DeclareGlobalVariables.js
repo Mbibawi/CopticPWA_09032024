@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.2.9 (substantial modifications to the "Editing Mode" functions and buttons; changed containerDiv)';
+const version = 'v3.3 (Praxis responses added)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
@@ -106,7 +106,7 @@ const ReadingsArrays = {
 const Seasons = {
     //Seasons are periods of more than 1 day, for which we have specific prayers (e.g.: cymbal verses, doxologies, praxis response, etc.)
     StMaryFast: 'StMFast',
-    Kiahk: '0004',
+    Kiahk: 'Kiahk',
     NativityFast: 'NF',
     Nativity: 'Nat',
     Baptism: 'Ba',
@@ -120,6 +120,7 @@ const Seasons = {
     NoSeason: 'NoSpecificSeason',
 };
 const copticFeasts = {
+    AnyDay: 'AnyDay',
     Nayrouz: '0101',
     Cross: '1701',
     BeguiningNativityLent: '1603',
