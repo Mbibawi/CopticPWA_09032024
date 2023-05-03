@@ -207,15 +207,15 @@ const btnIncenseDawn = new Button({
         FR: "Encens Aube",
     },
     prayers: [...IncensePrayers],
-    prayersArray: [...CommonPrayersArray, ...IncensePrayersArray],
+    prayersArray: [],
     showPrayers: true,
     children: [],
     languages: [...prayersLanguages],
     onClick: () => {
         btnIncenseDawn.prayersArray = [
             ...CommonPrayersArray,
-            ...IncensePrayersArray,
-        ];
+            ...IncensePrayersArray.filter(table => !table[0][0].startsWith(Prefix.incenseVespers)),
+        ]; //We need this to be done wieh the button is clicked, not when it is declared, because when declared, CommonPrayersArray and IncensePrayersArray are empty (they are popultated by a function in "main.js", which is loaded after "DeclareButtons.js")
         (function setBtnChildrenAndPrayers() {
             //We will set the children of the button:
             btnIncenseDawn.children = [btnReadingsGospelIncenseDawn];
@@ -235,35 +235,15 @@ const btnIncenseDawn = new Button({
             }
             btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(cymbals), 1);
         })();
-        (function removeNonRelevantLitanies() {
-            //removing the Departed Litany from IncenseDawn prayers
-            btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(Prefix.incenseVespers + "DepartedPrayerPart1&D=$copticFeasts.AnyDay"), 5);
-            //removing "Lord keep us this night without sin"
-            btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(Prefix.incenseVespers + "LordKeepUsThisNightWithoutSin&D=$copticFeasts.AnyDay"), 1);
-        })();
-        (function removeStMaryVespersDoxology() {
-            //removing the Wates Vespers' Doxology for St. Mary
-            btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(Prefix.incenseVespers + "DoxologyVespersWatesStMary&D=$copticFeasts.AnyDay"), 1);
-        })();
         let index;
         (function removeEklonominTaghonata() {
             //We remove "Eklonomin Taghonata" from the prayers array
             if ((Season != Seasons.GreatLent && Season != Seasons.JonahFast) ||
                 todayDate.getDay() == 0 ||
                 todayDate.getDay() == 6) {
-                btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(Prefix.incenseDawn + "GodHaveMercyOnUsRefrainComment&D=GL"), 36); //this is the comment, we remove 36 prayers including the comment
-            }
-        })();
-        //We will then add other prayers according to the season or feast
-        (function addKiahkPrayers() {
-            if (Number(copticMonth) == 4) {
-                index =
-                    btnIncenseDawn.prayers.indexOf(Prefix.incenseDawn + "DoxologyWatesStMary&D=$copticFeasts.AnyDay") - 1;
-                let doxologies = [];
-                DoxologiesPrayersArray.map((p) => /DC_\d{1}\&D\=0004/.test(p[0][0])
-                    ? doxologies.push(p[0][0])
-                    : "do nothing");
-                btnIncenseDawn.prayers.splice(index, 0, ...doxologies);
+                let godHaveMercy = btnIncenseDawn.prayers.filter(title => title.startsWith(Prefix.incenseDawn + "GodHaveMercyOnUs")
+                    && title.includes("&D=" + Seasons.GreatLent));
+                godHaveMercy.forEach(title => btnIncenseDawn.prayers.splice(btnIncenseDawn.prayers.indexOf(title), 1));
             }
         })();
         scrollToTop();
@@ -1637,7 +1617,7 @@ async function insertDoxologiesForFeastsAndSeasons(param) {
         && eval(String(baseTitle(d[0][0].split('&D=')[1]).replace('$', ''))) ===
             param.coptDate);
     //If we are during the Great Lent, we will select the doxologies according to whether the day is a Saturday or a Sunday, or an ordinary week day
-    if (param.coptDate == Seasons.GreatLent) {
+    if (param.coptDate === Seasons.GreatLent) {
         if (todayDate.getDay() == 0 || todayDate.getDay() == 6) {
             //We are during the Great Lent and the day is a Saturday or a Sunday
             doxology = doxology.filter((d) => /GreatLentSundays\&D\=/.test(d[0][0]) == true);

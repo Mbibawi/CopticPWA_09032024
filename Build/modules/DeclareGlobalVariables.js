@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.3 (Praxis responses added)';
+const version = 'v3.4 (Rewriting of functions setting the coptic reading date and the season)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
@@ -8,7 +8,7 @@ const contentDiv = document.getElementById('content');
 const sideBarBtn = document.getElementById('opensidebar');
 const toggleDevBtn = document.getElementById('toggleDev');
 const inlineBtnsDiv = document.getElementById('inlineBtnsContainer');
-const ResurrectionDates = ["2023-04-16", "2024-05-05", "2025-04-29", "2026-04-12", "2027-05-02", "2028-04-23", "2029-04-8", "2030-04-28"]; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
+const ResurrectionDates = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
 const Prefix = {
     psalmResponse: 'PR_',
     gospelResponse: 'GR_',
@@ -156,6 +156,7 @@ const copticFeasts = {
 const copticFasts = [
     Seasons.GreatLent,
     Seasons.NativityFast,
+    Seasons.Kiahk,
     Seasons.ApostlesFast,
     Seasons.StMaryFast,
     Seasons.JonahFast,
