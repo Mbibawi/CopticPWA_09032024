@@ -255,13 +255,15 @@ const btnIncenseDawn = new Button({
                 (async function addEklonominTaghonata() {
                     let efnotiNaynan = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'EfnotiNaynan&D=$copticFeasts.AnyDay', true));
                     let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling; //This is the "Kyrie Elison 3 times"
-                    insertion.insertAdjacentElement('beforebegin', insertion.cloneNode(true));
+                    insertion.insertAdjacentElement('beforebegin', insertion.cloneNode(true)); //We duplicated the "Kyrie Elison 3 times"
                     let godHaveMercy = btnIncenseDawn.prayersArray.filter(table => table[0][0].startsWith(Prefix.incenseDawn + 'GodHaveMercyOnUs')); //This will give us all the prayers 
-                    let KyrieElieson = btnIncenseDawn.prayersArray.filter(table => table[0][0] === Prefix.commonPrayer + 'KyrieElieson&D=$copticFeasts.AnyDay&C=Assembly')[0];
+                    let KyrieElieson = btnIncenseDawn.prayersArray.filter(table => table[0][0] === Prefix.commonPrayer + 'KyrieElieson&D=$copticFeasts.AnyDay&C=Assembly')[0]; //This is "Kyrie Elison"
                     let blocks = [];
                     blocks.push(godHaveMercy[0]); //this is the comment at the begining
                     for (let i = 2; i < godHaveMercy.length; i += 3) {
-                        blocks.push(godHaveMercy[1]);
+                        blocks.push([...godHaveMercy[1]]); //This is the refrain repated every 3 parts.We are pushing a copy of it to avoid affecting it by the splice in the next step
+                        if (i > 4)
+                            blocks[blocks.length - 1].splice(0, 1); //This will remove the title from the refrain if it is not the 1st refrain
                         blocks.push(godHaveMercy[i]);
                         blocks.push(KyrieElieson);
                         blocks.push(godHaveMercy[i + 1]);
@@ -271,20 +273,6 @@ const btnIncenseDawn = new Button({
                             blocks.push(KyrieElieson);
                     }
                     insertPrayersAdjacentToExistingElement(blocks, prayersLanguages, { beforeOrAfter: 'beforebegin', el: insertion });
-                })();
-                (async function removeEklonominTaghonataExcessiveTitles() {
-                    //When "Klonomin Taghnata is inserted, the refrain is inserted with the title, we will remove all the titles and keep only the first one"
-                    let titles = Array.from(containerDiv.querySelectorAll(getDataRootSelector(Prefix.incenseDawn + 'GodHaveMercyOnUsRefrain&D=' + Seasons.GreatLent)))
-                        .filter(div => div.classList.contains('TargetRowTitle'));
-                    if (titles)
-                        for (let i = 1; i < titles.length; i++)
-                            titles[i].remove();
-                    let links = rightSideBar
-                        .querySelector("#sideBarBtns")
-                        .querySelectorAll('a[href*="#ID_GodHaveMercyOnUsRefrain"');
-                    for (let i = 1; i < links.length; i++) {
-                        links[i].remove();
-                    }
                 })();
             }
             else if (todayDate.getDay() === 0 || todayDate.getDay() === 6) {
