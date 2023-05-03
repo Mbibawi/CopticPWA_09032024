@@ -240,17 +240,14 @@ const btnIncenseDawn = new Button({
     },
     afterShowPrayers: async () => {
         (async function addGreatLentPrayers() {
-            if (Season != Seasons.GreatLent ||
-                copticReadingsDate == copticFeasts.Resurrection) {
+            if (Season !== Seasons.GreatLent)
                 return;
-            }
-            else if (todayDate.getDay() != 0 && todayDate.getDay() != 6) {
+            if (todayDate.getDay() !== 0 && todayDate.getDay() !== 6) {
                 //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
                 (function showPropheciesDawnBtn() {
                     //If we are during any day of the week, we will add the Prophecies readings to the children of the button
-                    if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) == -1) {
+                    if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) < 0)
                         btnIncenseDawn.children.unshift(btnReadingsPropheciesDawn);
-                    }
                 })();
                 (async function addEklonominTaghonata() {
                     let efnotiNaynan = containerDiv.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'EfnotiNaynan&D=$copticFeasts.AnyDay', true));
@@ -261,9 +258,9 @@ const btnIncenseDawn = new Button({
                     let blocks = [];
                     blocks.push(godHaveMercy[0]); //this is the comment at the begining
                     for (let i = 2; i < godHaveMercy.length; i += 3) {
-                        blocks.push([...godHaveMercy[1]]); //This is the refrain repated every 3 parts.We are pushing a copy of it to avoid affecting it by the splice in the next step
+                        blocks.push([...godHaveMercy[1]]); //This is the refrain repated every 3 parts.We are pushing a copy of it, to avoid affecting it by the splice in the next step
                         if (i > 4)
-                            blocks[blocks.length - 1].splice(0, 1); //This will remove the title from the refrain if it is not the 1st refrain
+                            blocks[blocks.length - 1].splice(0, 1); //This will remove the title from the refrain if it is not the 1st refrain (it removes the 1st row in the refrain table)
                         blocks.push(godHaveMercy[i]);
                         blocks.push(KyrieElieson);
                         blocks.push(godHaveMercy[i + 1]);
@@ -274,8 +271,11 @@ const btnIncenseDawn = new Button({
                     }
                     insertPrayersAdjacentToExistingElement(blocks, prayersLanguages, { beforeOrAfter: 'beforebegin', el: insertion });
                 })();
+                return;
             }
-            else if (todayDate.getDay() === 0 || todayDate.getDay() === 6) {
+            else {
+                if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) > -1)
+                    btnIncenseDawn.children.splice(btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn), 1);
             }
         })();
         (async function insertCymbalVersesAndDoxologiesForFeastsAndSeasons() {
@@ -481,10 +481,6 @@ const btnIncenseDawn = new Button({
             let adam = DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam'));
             //We will create a div element for each row of each table in btn.prayersArray
             adam.forEach(table => table.forEach(row => createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, undefined, row[0].split('&C=')[1], doxologyDiv)));
-            //We will apply the css on the newDiv children
-            setCSSGridTemplate(Array.from(doxologyDiv.children));
-            //we replace the eight note
-            replaceEigthNote(undefined, Array.from(doxologyDiv.querySelectorAll('p.Diacon')));
             //finally we append the newDiv to containerDiv
             containerDiv.children[1].insertAdjacentElement('beforebegin', doxologyDiv);
         })();
