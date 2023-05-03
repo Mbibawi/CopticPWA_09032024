@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.4 (Rewriting of functions setting the coptic reading date and the season)';
+const version = 'v3.5 (Rewriting of functions setting the coptic reading date and the season)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
