@@ -4,6 +4,18 @@ let sequence = [];
  * @param tblsArray
  */
 async function editingMode(tblsArray) {
+    let languages = prayersLanguages;
+    if (tblsArray[0][0][0].startsWith(Prefix.stPaul)
+        || tblsArray[0][0][0].startsWith(Prefix.katholikon)
+        || tblsArray[0][0][0].startsWith(Prefix.praxis)
+        || tblsArray[0][0][0].startsWith(Prefix.gospelDawn)
+        || tblsArray[0][0][0].startsWith(Prefix.gospelVespers)
+        || tblsArray[0][0][0].startsWith(Prefix.gospelMass)
+        || tblsArray[0][0][0].startsWith(Prefix.gospelNight)
+        || tblsArray[0][0][0].startsWith(Prefix.propheciesDawn))
+        languages = readingsLanguages;
+    if (tblsArray[0][0][0].startsWith(Prefix.synaxarium))
+        languages = ['FR', 'AR'];
     //@ts-ignore
     if (!console.save)
         addConsoleSaveMethod(console); //We are adding a save method to the console object
@@ -13,7 +25,7 @@ async function editingMode(tblsArray) {
     //We will create html elements (rows) for each element in each table in the tblsArray
     (table) => {
         for (let i = 0; i < table.length; i++) {
-            el = createHtmlElementForPrayerEditingMode(table[i][0], table[i], prayersLanguages, allLanguages, table[i][0].split("&C=")[1], containerDiv, i);
+            el = createHtmlElementForPrayerEditingMode(table[i][0], table[i], languages, allLanguages, table[i][0].split("&C=")[1], containerDiv, i);
             if (el) {
                 //We make the paragraph children of each row, editable
                 Array.from(el.children).map((c) => (c.contentEditable = "true"));
