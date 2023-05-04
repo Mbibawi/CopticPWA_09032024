@@ -351,7 +351,13 @@ function changeDate(date, next = true, days = 1) {
     }
     console.log(todayDate);
     setCopticDates(todayDate);
-    setAllSeasonalPrayers();
+    setSeasonalTextForAll();
+    reloadScriptToBody(['PrayersArray']);
+    allSubPrayersArrays.forEach((subArray) => {
+        for (let i = subArray.length - 1; i >= 0; i--)
+            subArray.splice(i, 1);
+    });
+    populatePrayersArrays();
     let newDate = new Date();
     if (todayDate.getDate() === newDate.getDate() &&
         todayDate.getMonth() === newDate.getMonth() &&

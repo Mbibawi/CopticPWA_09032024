@@ -59,22 +59,23 @@ const closingHymnAll = [
         COP: ''
     }
 ];
-let giaki, closingHym;
-setAllSeasonalPrayers();
-function setAllSeasonalPrayers() {
-    giaki = setSeasonalText(giakiAll);
-    closingHym = setSeasonalText(closingHymnAll);
-    function setSeasonalText(arrayAll) {
-        let prayer = arrayAll.filter(resp => resp.Season == Season);
-        if (prayer.length === 1) {
-            return prayer[0];
-        }
-        else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
-            || HolyWeek.indexOf(copticReadingsDate) > -1) {
-            return arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
-        }
-        else if (prayer.length === 0) {
-            return arrayAll.filter(resp => resp.Season === Seasons.NoSeason)[0];
-        }
-    }
+let giaki = { Season: '', AR: '', FR: '', CA: '', COP: '', EN: '' }, closingHymn = { Season: '', AR: '', FR: '', CA: '', COP: '', EN: '' };
+let allSeasonalPrayers = [[giaki, giakiAll], [closingHymn, closingHymnAll]];
+setSeasonalTextForAll();
+function setSeasonalTextForAll() {
+    allSeasonalPrayers.forEach((seasonal) => setSeasonalText(seasonal[1], seasonal[0]));
+}
+function setSeasonalText(arrayAll, seasonal) {
+    let found;
+    let prayer = arrayAll.filter(resp => resp.Season == Season);
+    if (prayer.length === 1)
+        found = prayer[0];
+    else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
+        || HolyWeek.indexOf(copticReadingsDate) > -1)
+        found = arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
+    else if (prayer.length === 0)
+        found = arrayAll.filter(resp => resp.Season === Seasons.NoSeason)[0];
+    if (found)
+        for (let prop in found)
+            seasonal[prop] = found[prop];
 }

@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.5 (Rewriting of functions setting the coptic reading date and the season)';
+const version = 'v3.6 (changes to the navigation buttons flow and actions)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
@@ -206,7 +206,23 @@ const readingsLanguages = ['AR', foreingLanguage, 'EN'];
 const displayModes = ['Normal', 'Presentation', 'Priest'];
 const CommonPrayersArray = []; //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
 const MassCommonPrayersArray = []; //an array in which we will save the commons prayers specific to the mass (like the Assembly, Espasmos, etc.)
-const MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], cymbalVersesArray = [], praxisResponsesArray = [], bookOfHoursArray = [];
+const MassStBasilPrayersArray = [], MassStGregoryPrayersArray = [], MassStCyrilPrayersArray = [], MassStJohnPrayersArray = [], FractionsPrayersArray = [], DoxologiesPrayersArray = [], IncensePrayersArray = [], CommunionPrayersArray = [], PsalmAndGospelPrayersArray = [], CymbalVersesPrayersArray = [], PraxisResponsesPrayersArray = [], bookOfHoursPrayersArray = [];
+const allSubPrayersArrays = [
+    CommonPrayersArray,
+    MassCommonPrayersArray,
+    MassStBasilPrayersArray,
+    MassStGregoryPrayersArray,
+    MassStCyrilPrayersArray,
+    MassStJohnPrayersArray,
+    FractionsPrayersArray,
+    DoxologiesPrayersArray,
+    IncensePrayersArray,
+    CommunionPrayersArray,
+    PsalmAndGospelPrayersArray,
+    CymbalVersesPrayersArray,
+    PraxisResponsesPrayersArray,
+    bookOfHoursPrayersArray
+];
 const lordGreatFeasts = [
     copticFeasts.Annonciation,
     copticFeasts.Nativity,
