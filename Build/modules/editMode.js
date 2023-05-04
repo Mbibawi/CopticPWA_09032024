@@ -15,7 +15,7 @@ async function editingMode(tblsArray) {
         || tblsArray[0][0][0].startsWith(Prefix.propheciesDawn))
         languages = readingsLanguages;
     if (tblsArray[0][0][0].startsWith(Prefix.synaxarium))
-        languages = ['FR', 'AR'];
+        languages = ['AR', 'FR'];
     //@ts-ignore
     if (!console.save)
         addConsoleSaveMethod(console); //We are adding a save method to the console object
@@ -216,41 +216,46 @@ function replacePrefixes(array) {
         if (row[0].endsWith("&C=Title"))
             element = element
                 .replaceAll(String.fromCharCode(10134), "")
-                .replaceAll(String.fromCharCode(10133), ""); //removing the + and - characters from the titles
+                .replaceAll(String.fromCharCode(10133), ""); //removing the+and - characters from the titles
+        element = element.replaceAll('\n', '<br>');
         text += '"' + element + '", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
     }
     return replaceText(text) + "]";
 }
 function replaceText(text) {
-    text = text.replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours + "');
-    text = text.replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies + "');
-    text = text.replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense + "');
-    text = text.replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer + "');
-    text = text.replaceAll('"' + Prefix.communion, 'Prefix.communion + "');
-    text = text.replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses + "');
-    text = text.replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer + "');
-    text = text.replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn + "');
-    text = text.replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass + "');
-    text = text.replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight + "');
-    text = text.replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse + "');
-    text = text.replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers + "');
-    text = text.replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn + "');
-    text = text.replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers + "');
-    text = text.replaceAll('"' + Prefix.katholikon, 'Prefix.incenseVespers + "');
-    text = text.replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon + "');
-    text = text.replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil + "');
-    text = text.replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril + "');
-    text = text.replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory + "');
-    text = text.replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn + "');
-    text = text.replaceAll('"' + Prefix.praxis, 'Prefix.praxis + "');
-    text = text.replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn + "');
-    text = text.replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse + "');
-    text = text.replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul + "');
-    text = text.replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse + "');
-    text = text.replaceAll(giaki.AR, '" + giaki.AR + "');
-    text = text.replaceAll(giaki.FR, '" + giaki.FR + "');
-    text = text.replaceAll(giaki.COP, '" + giaki.COP + "');
-    text = text.replaceAll(giaki.CA, '" + giaki.CA + "');
+    text = text.replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"');
+    text = text.replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies+"');
+    text = text.replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"');
+    text = text.replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"');
+    text = text.replaceAll('"' + Prefix.communion, 'Prefix.communion+"');
+    text = text.replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"');
+    text = text.replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"');
+    text = text.replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"');
+    text = text.replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"');
+    text = text.replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"');
+    text = text.replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"');
+    text = text.replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"');
+    text = text.replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil+"');
+    text = text.replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril+"');
+    text = text.replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory+"');
+    text = text.replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"');
+    text = text.replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"');
+    text = text.replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"');
+    //Readings
+    text = text.replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"');
+    text = text.replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"');
+    text = text.replaceAll('"' + Prefix.katholikon, 'Prefix.katholikon+"');
+    text = text.replaceAll('"' + Prefix.praxis, 'Prefix.praxis+"');
+    text = text.replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn+"');
+    text = text.replaceAll('"' + Prefix.gospelDawn, 'Prefix.Prefix.gospelDawn+"');
+    text = text.replaceAll('"' + Prefix.gospelMass, 'Prefix.Prefix.gospelMass+"');
+    text = text.replaceAll('"' + Prefix.gospelNight, 'Prefix.Prefix.gospelNight+"');
+    text = text.replaceAll('"' + Prefix.gospelVespers, 'Prefix.Prefix.gospelVespers+"');
+    //Seasonal 
+    text = text.replaceAll(giaki.AR, '"+giaki.AR+"');
+    text = text.replaceAll(giaki.FR, '"+giaki.FR+"');
+    text = text.replaceAll(giaki.COP, '"+giaki.COP+"');
+    text = text.replaceAll(giaki.CA, '"+giaki.CA+"');
     return text;
 }
 /**
@@ -284,7 +289,7 @@ function addNewRow(htmlParag, dataRoot) {
         //child.classList.forEach(className => p.classList.add(className));
         p.dataset.root = dataRoot;
         p.dataset.lang = child.dataset.lang;
-        //p.innerText = "Insert Here Your Text " + p.dataset.lang;
+        //p.innerText = "Insert Here Your Text "+p.dataset.lang;
         p.contentEditable = "true";
     }
     return row.insertAdjacentElement("afterend", newRow);
