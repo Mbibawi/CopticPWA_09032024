@@ -3,19 +3,7 @@ let sequence = [];
  * This is the function that displayes the elements of the array that we want to edit
  * @param tblsArray
  */
-async function editingMode(tblsArray) {
-    let languages = prayersLanguages;
-    if (tblsArray[0][0][0].startsWith(Prefix.stPaul)
-        || tblsArray[0][0][0].startsWith(Prefix.katholikon)
-        || tblsArray[0][0][0].startsWith(Prefix.praxis)
-        || tblsArray[0][0][0].startsWith(Prefix.gospelDawn)
-        || tblsArray[0][0][0].startsWith(Prefix.gospelVespers)
-        || tblsArray[0][0][0].startsWith(Prefix.gospelMass)
-        || tblsArray[0][0][0].startsWith(Prefix.gospelNight)
-        || tblsArray[0][0][0].startsWith(Prefix.propheciesDawn))
-        languages = readingsLanguages;
-    if (tblsArray[0][0][0].startsWith(Prefix.synaxarium))
-        languages = ['AR', 'FR'];
+async function editingMode(tblsArray, languages) {
     //@ts-ignore
     if (!console.save)
         addConsoleSaveMethod(console); //We are adding a save method to the console object
@@ -43,44 +31,73 @@ async function editingMode(tblsArray) {
  * Adds the editing buttons as an appeded div to each html div (row) displayed
  * @param {HTMLElement} el - the div representing a row in the table
  */
-function addEdintingButtons() {
+function addEdintingButtons(getButtons) {
     let btnsDiv = document.createElement("div");
     let newButton;
     btnsDiv.classList.add("btnsDiv");
     btnsDiv.style.display = "grid";
-    btnsDiv.style.gridTemplateColumns = String("33%").repeat(3);
+    btnsDiv.style.gridTemplateColumns = String("20%").repeat(5);
     btnsDiv.style.top = '10px';
-    btnsDiv.style.width = '80%';
-    btnsDiv.style.justifySelf = 'center !important';
+    btnsDiv.style.width = '90%';
+    btnsDiv.style.justifySelf = 'top !important';
     btnsDiv.style.justifyItems = 'stretch';
     btnsDiv.style.position = 'fixed';
     containerDiv.children[0].insertAdjacentElement('beforebegin', btnsDiv);
-    //Add new row button
-    newButton = createEditingButton(() => addNewRow(document.getSelection().focusNode.parentElement), "Add Row");
+    if (!getButtons)
+        getButtons = [
+            changeTitleBtn,
+            changeClassBtn,
+            saveToLocalStorageBtn,
+            exportToJSFileBtn,
+            addTableToSequenceBtn,
+            exportSequenceBtn,
+            addRowBtn,
+            deleteRowBtn,
+            splitBelowBtn
+        ];
+    getButtons.forEach(fun => fun(btnsDiv));
+}
+function addRowBtn(btnsDiv) {
+    let newButton = createEditingButton(() => addNewRow(document.getSelection().focusNode.parentElement), "Add Row");
     btnsDiv.appendChild(newButton);
-    //Save Modified Array to Local Storage
-    newButton = createEditingButton(() => saveModifiedArray(), "Save");
+}
+function saveToLocalStorageBtn(btnsDiv) {
+    let newButton = createEditingButton(() => saveModifiedArray(), "Save");
     btnsDiv.appendChild(newButton);
-    //Export Modified Array  to a JS file
+}
+function exportToJSFileBtn(btnsDiv) {
     //@ts-ignore
-    newButton = createEditingButton(() => console.save(saveModifiedArray(), 'ModifiedArray.js'), "Export");
+    let newButton = createEditingButton(() => console.save(saveModifiedArray(), 'ModifiedArray.js'), "Export To JS");
     btnsDiv.appendChild(newButton);
-    //Modify The Title
-    newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Ttile");
+}
+function changeTitleBtn(btnsDiv) {
+    let newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Change Ttile");
     btnsDiv.appendChild(newButton);
-    //Modify The Css Class
-    newButton = createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), "Class");
+}
+function changeClassBtn(btnsDiv) {
+    let newButton = createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), "Class");
     btnsDiv.appendChild(newButton);
-    //Delete row
-    newButton = createEditingButton(() => deleteRow(document.getSelection().focusNode.parentElement), "Delete");
+}
+function deleteRowBtn(btnsDiv) {
+    let newButton = createEditingButton(() => deleteRow(document.getSelection().focusNode.parentElement), "Delete Row");
     btnsDiv.appendChild(newButton);
-    //Add table to sequence
-    newButton = createEditingButton(() => addTableToSequence(document.getSelection().focusNode.parentElement), "Add To Sequence");
+}
+function addTableToSequenceBtn(btnsDiv) {
+    let newButton = createEditingButton(() => addTableToSequence(document.getSelection().focusNode.parentElement), "Add To Sequence");
     btnsDiv.appendChild(newButton);
-    //Export Sequence
-    newButton = createEditingButton(() => exportSequence(), "Export Sequence");
+}
+function splitBelowBtn(btnsDiv) {
+    let newButton = createEditingButton(() => splitParagraphsToTheRowsBelow(), "Split Below");
+    btnsDiv.appendChild(newButton);
+}
+function exportSequenceBtn(btnsDiv) {
+    let newButton = createEditingButton(() => exportSequence(), "Export Sequence");
     btnsDiv.appendChild(newButton);
     newButton = createEditingButton(() => splitParagraphsToTheRowsBelow(), "Split Below");
+    btnsDiv.appendChild(newButton);
+}
+function modifyTablesInTheirArrayBtn(btnsDiv) {
+    let newButton = createEditingButton(() => modifyTablesInTheirArray(), "Modify The Original Array");
     btnsDiv.appendChild(newButton);
 }
 /**
@@ -96,6 +113,65 @@ function deleteRow(htmlParag) {
     if (confirm("Are you sure you want to delete this row?") == false)
         return; //We ask the user to confirm before deletion
     htmlRow.remove();
+}
+/**
+ * Replaces each table in the array by the table in newTables[] having a title that matches the title of the target table in array[]
+ * @param {string[][]} newTables - the tables that will replace those in the array
+ * @param {string[][][]} array - the arrary in which we will replace some tables with those in the newTables[] parameter
+ */
+function modifyTablesInTheirArray() {
+    let array = eval(containerDiv.dataset.arrayName), arrayOfTables, filtered;
+    if (!array || array.length === 0) {
+        alert('The array was not found');
+        return;
+    }
+    ;
+    arrayOfTables = getAnArrayOfTablesFromTheHtmlDivs();
+    arrayOfTables
+        //Looping the tables in arrayOfTables
+        .forEach((table) => {
+        //We will filter the array by the title to get the element matching the title
+        filtered = array.filter(t => t[0][0] === table[0][0]);
+        //We will replace the original table with the table array created from the html divs 
+        if (filtered && filtered.length === 1)
+            array.splice(array.indexOf(filtered[0]), 1, table);
+        if (filtered && filtered.length > 1)
+            console.log('found more than 1 table when filtering the original array ', filtered);
+    });
+    //@ts-ignore
+    console.save(replacePrefixes(array), 'Modified' + containerDiv.dataset.arrayName + '.js');
+}
+/**
+ * Loops the divs in containerDiv, and builds a string[][][] from the elements with same data-root attribute (i.e., belonging to the sam table)
+ * @returns a string[][][] of all the tables displayed in container div. Each element is a table; each div in containerDiv is a string[] of a table
+ */
+function getAnArrayOfTablesFromTheHtmlDivs() {
+    let arrayOfTables = [], table, titles;
+    titles = new Set(
+    //We create an array of all the div elements with 'TargetRow' class, and loop all the divs in this array
+    Array.from(containerDiv.querySelectorAll('div.TargetRow'))
+        //We return an array of all the 'data-root' attributes of all the divs. We then create a Set of this array
+        .map((div) => baseTitle(div.dataset.root)));
+    //We will now loop through the "titles" Set
+    Array.from(titles)
+        //For each title in the titles Set, 
+        .forEach((title) => {
+        //We create New array table
+        table = [];
+        //We loop the containerDiv for all the html rows having a "data-root" attribute matching this title
+        containerDiv.querySelectorAll(getDataRootSelector(title, true))
+            //For each div matching the title
+            .forEach((div) => {
+            //We add an array to "table", and add the data-root attribute of the div as 1st element of this array
+            table.push([div.dataset.root]);
+            //We loop the html pragraphs children of the div
+            div.querySelectorAll('p')
+                //And add the textContent of the paragraph html child as elements to the array we just added to "table"
+                .forEach(p => table[table.length - 1].push(p.textContent));
+        });
+        arrayOfTables.push([...table]);
+    });
+    return arrayOfTables;
 }
 /**
  * Changes the 'actor' css class of a row
@@ -474,4 +550,46 @@ function checkSelection(htmlParag) {
         return undefined;
     }
     return htmlParag;
+}
+function showTablesFun(arrayName, title) {
+    //showTablesFun("ReadingsArrays.SynaxariumArray", "0101")
+    let languages = getLanguages(arrayName), el, sourceArray = eval(arrayName);
+    if (!sourceArray || sourceArray.length === 0) {
+        alert('No array was found with the name: ' + arrayName);
+        return;
+    }
+    containerDiv.dataset.arrayName = arrayName;
+    let tables = sourceArray.filter(table => table[0][0].includes(title));
+    if (!tables || tables.length === 0) {
+        alert('No tables were found in the ' + arrayName + ' with a title including ' + title);
+        return;
+    }
+    tables.forEach((table) => table.forEach((row) => {
+        el = createHtmlElementForPrayerEditingMode(row[0], row, languages, allLanguages, row[0].split('&C=')[1]);
+        if (el)
+            Array.from(el.children).map((child) => { if (child.tagName === 'P')
+                child.contentEditable = "true"; });
+    }));
+    //We add the editing buttons
+    addEdintingButtons([
+        addRowBtn,
+        deleteRowBtn,
+        splitBelowBtn,
+        changeTitleBtn,
+        changeClassBtn,
+        modifyTablesInTheirArrayBtn,
+    ]);
+    //Setting the CSS of the newly added rows
+    setCSSGridTemplate(containerDiv.querySelectorAll("div.TargetRow"));
+    //Showing the titles in the right side-bar
+    hideInlineButtonsDiv();
+    showTitlesInRightSideBar(containerDiv.querySelectorAll("div.TargetRowTitle"), rightSideBar.querySelector("#sideBarBtns"), btnBookOfHours, true);
+}
+function getLanguages(arrayName) {
+    let languages = prayersLanguages;
+    if (arrayName.startsWith('ReadingsArrays.'))
+        languages = readingsLanguages;
+    if (arrayName.startsWith('ReadingsArrays.SynaxariumArray'))
+        languages = ['FR', 'AR'];
+    return languages;
 }

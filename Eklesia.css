@@ -6,6 +6,10 @@
   font-family: ArialCoptic;
   src: url(./fonts/ArialCoptic.ttf);
 }
+@font-face {
+  font-family: CormorantGaramond;
+  src: url(./fonts/CormorantGaramond-Regular.ttf);
+}
 .root{
   --inline-column-width: 30%;
   --text-column-width: 30%;
@@ -67,8 +71,9 @@ body{
 }
 .FR,
 .EN {
-  font-size: 14pt;
-  font-weight: 450;
+  font-size: 15pt;
+  font-weight: 600;
+  font-family: CormorantGaramond;
 }
 .COP {
   font-size: 14pt;
@@ -482,7 +487,7 @@ div.ReadingEnd{
   font-size: 18pt !important;
 }
 .btnEditing{
-  width: 10vmax !important;
+  width: 90% !important;
 }
 .btnsDiv{
   justify-content: center;

@@ -210,6 +210,9 @@ async function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, btn, c
 function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (!btn)
         return;
+    let container = containerDiv;
+    if (btn.docFragment)
+        container = btn.docFragment;
     let btnsDiv = leftSideBar.querySelector("#sideBarBtns");
     hideInlineButtonsDiv();
     if (clear) {
@@ -226,8 +229,10 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (btn.afterShowPrayers)
         btn.afterShowPrayers();
     //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-    setCSSGridTemplate(containerDiv.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
-    applyAmplifiedText(containerDiv.querySelectorAll("p[data-lang]"));
+    setCSSGridTemplate(container.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
+    applyAmplifiedText(container.querySelectorAll("p[data-lang]"));
+    if (btn.docFragment)
+        containerDiv.appendChild(btn.docFragment);
     if (btn.inlineBtns) {
         let newDiv = document.createElement("div");
         newDiv.style.display = "grid";
@@ -1367,12 +1372,22 @@ function showSettingsPanel() {
         btn = createBtn("button", "button", "settingsBtn", "Editing Mode", displayContainer, 'editingMode' + localStorage.editingMode.toString(), undefined, undefined, undefined, undefined, {
             event: "click",
             fun: () => {
-                let tablesArray = eval(prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray'));
-                if (tablesArray) {
-                    editingMode(tablesArray);
-                    hideInlineButtonsDiv();
+                //@ts-ignore
+                if (!console.save)
+                    addConsoleSaveMethod(console); //We are adding a save method to the console object
+                containerDiv.innerHTML = '';
+                let entry = prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray');
+                if (entry.includes('Fun(')) {
+                    eval(entry);
+                    return;
                 }
-                ;
+                if (entry)
+                    containerDiv.dataset.arrayName = entry;
+                let tablesArray = eval(entry);
+                if (!tablesArray)
+                    return;
+                editingMode(tablesArray, getLanguages(entry));
+                hideInlineButtonsDiv();
             }
         });
     })();
