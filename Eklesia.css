@@ -10,6 +10,14 @@
   font-family: CormorantGaramond;
   src: url(./fonts/CormorantGaramond-Regular.ttf);
 }
+@font-face {
+  font-family: BookAntiquaRegular;
+  src: url(./fonts/BookAntiquaRegular.ttf);
+}
+@font-face {
+  font-family: ArabicMajalla;
+  src: url(./fonts/majalla.ttf);
+}
 .root{
   --inline-column-width: 30%;
   --text-column-width: 30%;
@@ -64,21 +72,23 @@ body{
 
 .AR,
 .CA {
-  font-size: 16pt;
-  font-weight: 450;
+  font-size: 20pt;
+  font-weight: 500;
   direction: rtl !important;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: ArabicMajalla;
+  line-height: 40px;
 }
 .FR,
 .EN {
   font-size: 15pt;
-  font-weight: 600;
-  font-family: CormorantGaramond;
+  font-weight: 500;
+  font-family: BookAntiquaRegular;
 }
 .COP {
   font-size: 14pt;
   font-family: ArialCoptic;
 }
+
 .Menu {
   background-color: #5270a3;
 }
@@ -393,14 +403,6 @@ table{
 #ProvideIDFromInput {
   padding-top: 5vw;
 }
-.TargetRow .amplifiedText{
-  font-size: xx-large !important;
-  line-height: 35px !important;
-}
-.TargetRow .TargetRowTitle .amplifiedText{
-  font-size: large !important;
-  line-height: 25px !important;
-}
 .Comment, 
 .CommentText{
   align-content: stretch;
@@ -493,4 +495,24 @@ div.ReadingEnd{
   justify-content: center;
   align-items: center;
   grid-template-columns: 100%;
+}
+
+
+/* .TargetRow .amplifiedText{
+  font-size: x-large !important;
+  line-height: 45px;
+} */
+
+.TargetRow > p.amplifiedText.AR{
+  font-size:30pt !important;
+  line-height: 48px;
+}
+.TargetRow > p.amplifiedText.FR{
+  font-size:20pt !important;
+  line-height: 35px;
+}
+
+.TargetRow .TargetRowTitle .amplifiedText{
+  font-size: large !important;
+  line-height: 25px !important;
 }
