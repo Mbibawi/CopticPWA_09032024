@@ -932,8 +932,8 @@ async function setCSSGridTemplate(Rows) {
                     String.fromCharCode(10134) + " " + row.lastElementChild.textContent;
             }
         }
-        replaceEigthNote(undefined, Array.from(row.querySelectorAll('p')));
     });
+    Rows.forEach(row => replaceEigthNote(undefined, Array.from(row.querySelectorAll('p'))));
     /**
      * Returns a string indicating the number of columns and their widths
      * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
@@ -1382,18 +1382,49 @@ function showSettingsPanel() {
                 if (!console.save)
                     addConsoleSaveMethod(console); //We are adding a save method to the console object
                 containerDiv.innerHTML = '';
-                let entry = prompt('Provide the Name of the Array you Want to Edit', 'testEditingArray');
-                if (entry.includes('Fun(')) {
-                    eval(entry);
-                    return;
-                }
-                if (entry)
-                    containerDiv.dataset.arrayName = entry;
-                let tablesArray = eval(entry);
-                if (!tablesArray)
-                    return;
-                editingMode(tablesArray, getLanguages(entry));
+                let editable = [
+                    'Choose from the list',
+                    'Fun("arrayName", "Table\'s Title")',
+                    'testEditingArray',
+                    'PrayersArray',
+                    'ReadingsArrays.GospelDawnArray',
+                    'ReadingsArrays.GospelMassArray',
+                    'ReadingsArrays.GospelNightArray',
+                    'ReadingsArrays.GospelVespersArray',
+                    'ReadingsArrays.KatholikonArray',
+                    'ReadingsArrays.PraxisArray',
+                    'ReadingsArrays.PropheciesDawnArray',
+                    'ReadingsArrays.StPaulArray',
+                    'ReadingsArrays.SynaxariumArray'
+                ];
+                let select = document.createElement('select'), option;
+                select.style.backgroundColor = 'ivory';
+                editable.forEach(name => {
+                    option = document.createElement('option');
+                    option.innerText = name;
+                    option.contentEditable = 'true';
+                    select.add(option);
+                });
+                document.getElementById('homeImg').insertAdjacentElement('afterend', select);
                 hideInlineButtonsDiv();
+                select.addEventListener('change', processSelection);
+                function processSelection() {
+                    let entry = select.selectedOptions[0].innerText;
+                    if (entry === select.options[0].innerText)
+                        return;
+                    if (entry === 'Fun("arrayName", "Table\'s Title")')
+                        entry = prompt('Provide the function and the parameters', entry);
+                    if (entry.includes('Fun(')) {
+                        eval(entry);
+                        return;
+                    }
+                    if (entry)
+                        containerDiv.dataset.arrayName = entry;
+                    let tablesArray = eval(entry);
+                    if (!tablesArray)
+                        return;
+                    editingMode(tablesArray, getLanguages(entry));
+                }
             }
         });
     })();
