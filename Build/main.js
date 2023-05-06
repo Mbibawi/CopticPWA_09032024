@@ -80,14 +80,15 @@ function checkDate() {
  * @param {string[]} userLanguages - a globally declared array of the languages that the user wants to show.
  * @param {string} actorClass - a class that will be given to the html element showing the prayer according to who is saying the prayer: is it the Priest, the Diacon, or the Assembly?
  */
-function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userLanguages, actorClass, position = containerDiv) {
+function createHtmlElementForPrayer(prayers, languagesArray, userLanguages, position = containerDiv) {
     if (!userLanguages)
         userLanguages = JSON.parse(localStorage.userLanguages);
-    let row, p, lang, text;
+    let row, p, lang, text, actorClass, titleBase;
+    titleBase = baseTitle(prayers[0]);
+    actorClass = prayers[0].split('&C=')[1];
     row = document.createElement("div");
     row.classList.add("TargetRow"); //we add 'TargetRow' class to this div
-    let dataRoot = firstElement.replace(/Part\d+/, "");
-    row.dataset.root = dataRoot;
+    row.dataset.root = titleBase.replace(/Part\d+/, "");
     if (actorClass && actorClass !== "Title") {
         // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
         row.classList.add(actorClass);
@@ -132,7 +133,7 @@ function createHtmlElementForPrayer(firstElement, prayers, languagesArray, userL
                 //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
                 p.classList.add("PrayerText");
             }
-            p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
+            p.dataset.root = row.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
             text = prayers[x];
             p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
             p.textContent = text;
@@ -225,14 +226,12 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
             return;
     }
     if (btn.prayers && btn.prayersArray && btn.languages && btn.showPrayers)
-        showPrayers(btn, true, true, containerDiv);
+        showPrayers(btn, true, true, container);
     if (btn.afterShowPrayers)
         btn.afterShowPrayers();
     //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
     setCSSGridTemplate(container.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
     applyAmplifiedText(container.querySelectorAll("p[data-lang]"));
-    if (btn.docFragment)
-        containerDiv.appendChild(btn.docFragment);
     if (btn.inlineBtns) {
         let newDiv = document.createElement("div");
         newDiv.style.display = "grid";
@@ -278,6 +277,8 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (btn.parentBtn && btn.btnID === btnGoBack.btnID) {
         //showChildButtonsOrPrayers(btn.parentBtn);
     }
+    if (btn.docFragment)
+        containerDiv.appendChild(btn.docFragment);
 }
 /**
  * Returns an html button element showing a 'Go Back' button. When clicked, this button passes the goTo button or inline button to showchildButtonsOrPrayers(), as if we had clicked on the goTo button
@@ -896,7 +897,7 @@ async function showPrayers(btn, clearContent = true, clearRightSideBar = true, p
         let wordTable = findPrayerInBtnPrayersArray(p, btn);
         if (wordTable) {
             wordTable.map((row) => {
-                createHtmlElementForPrayer(baseTitle(row[0]), row, btn.languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
+                createHtmlElementForPrayer(row, btn.languages, JSON.parse(localStorage.userLanguages), position); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
             });
             return;
         }
@@ -909,29 +910,29 @@ async function showPrayers(btn, clearContent = true, clearRightSideBar = true, p
 async function setCSSGridTemplate(Rows) {
     if (!Rows)
         return;
-    Rows.forEach((r) => {
-        r.style.gridTemplateColumns = getColumnsNumberAndWidth(r); //Setting the number of columns and their width for each element having the 'TargetRow' class
-        r.style.gridTemplateAreas = setGridAreas(r); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
-        if (r.classList.contains("TargetRowTitle")) {
+    Rows.forEach((row) => {
+        row.style.gridTemplateColumns = getColumnsNumberAndWidth(row); //Setting the number of columns and their width for each element having the 'TargetRow' class
+        row.style.gridTemplateAreas = setGridAreas(row); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
+        if (row.classList.contains("TargetRowTitle")) {
             //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
-            r.role = "button";
-            let arabic = r.querySelector('p[data-lang="AR"]');
+            row.role = "button";
+            let arabic = row.querySelector('p[data-lang="AR"]');
             if (arabic &&
                 !arabic.textContent.startsWith(String.fromCharCode(10134))) {
                 arabic.textContent =
                     String.fromCharCode(10134) +
                         " " +
-                        r.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
+                        row.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
             }
             else if (
             //If there is no arabic paragraph, we will add the sign to the last child
-            !r.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
-                r.lastElementChild.textContent =
-                    String.fromCharCode(10134) + " " + r.lastElementChild.textContent;
+            !row.lastElementChild.textContent.startsWith(String.fromCharCode(10134))) {
+                row.lastElementChild.textContent =
+                    String.fromCharCode(10134) + " " + row.lastElementChild.textContent;
             }
         }
+        replaceEigthNote(undefined, Array.from(row.querySelectorAll('p')));
     });
-    replaceEigthNote(undefined, undefined);
     /**
      * Returns a string indicating the number of columns and their widths
      * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
@@ -1482,7 +1483,7 @@ function insertPrayersAdjacentToExistingElement(prayers, languages, position) {
     let createdElements = [], created;
     prayers.map((p) => {
         p.map((row) => {
-            created = createHtmlElementForPrayer(baseTitle(row[0]), row, languages, JSON.parse(localStorage.userLanguages), row[0].split("&C=")[1], position);
+            created = createHtmlElementForPrayer(row, languages, JSON.parse(localStorage.userLanguages), position);
             if (created)
                 createdElements.push(created);
         });
