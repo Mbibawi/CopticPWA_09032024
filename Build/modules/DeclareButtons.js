@@ -964,6 +964,7 @@ const btnReadingsPropheciesDawn = new Button({
 const btnBookOfHours = new Button({
     btnID: 'btnBookOfHours',
     label: { AR: 'الأجبية', FR: 'Agpia' },
+    docFragment: new DocumentFragment(),
     showPrayers: true,
     languages: [...prayersLanguages],
     onClick: (mass = false) => {
@@ -984,6 +985,7 @@ const btnBookOfHours = new Button({
                 if (hour.endsWith('Array')) {
                     //We populate each hour prayers property of bookOfHours (see its definition) from the title of the hour prayersArray (this property was set when the page was loaded by the populatePrayersArrays() function)
                     bookOfHours[hour.split('Array')[0]] = [...bookOfHours[hour].map(table => baseTitle(table[0][0]))];
+                    //We insert the "Thanks Giving" and "Psalm 50" after the 1st element
                     bookOfHours[hour.split('Array')[0]].splice(1, 0, ...HourIntro);
                 }
             }
@@ -1063,15 +1065,15 @@ const btnBookOfHours = new Button({
             //initiating the prayersArray with all the tables in bookOfHoursArray
             btnBookOfHours.prayersArray = [...bookOfHoursPrayersArray];
             //Adding the "Zoksa Patri" and "Kenin" and "Hallelujah" tables to the button's prayers array
-            btnBookOfHours.prayersArray.push(...CommonPrayersArray.filter(table => baseTitle(table[0][0]) == ZoksaPatri
+            btnBookOfHours.prayersArray.push(...CommonPrayersArray.filter(table => baseTitle(table[0][0]) === ZoksaPatri
                 || new RegExp(Prefix.commonPrayer + 'ThanksGivingPart\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
-                || baseTitle(table[0][0]) == Kenin
-                || baseTitle(table[0][0]) == Hallelujah
+                || baseTitle(table[0][0]) === Kenin
+                || baseTitle(table[0][0]) === Hallelujah
                 || new RegExp(Agios + '\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(baseTitle(table[0][0]))
-                || baseTitle(table[0][0]) == HolyLordOfSabaot
-                || baseTitle(table[0][0]) == WeExaltYou
-                || baseTitle(table[0][0]) == OurFatherWhoArtInHeaven
-                || baseTitle(table[0][0]) == Creed));
+                || baseTitle(table[0][0]) === HolyLordOfSabaot
+                || baseTitle(table[0][0]) === WeExaltYou
+                || baseTitle(table[0][0]) === OurFatherWhoArtInHeaven
+                || baseTitle(table[0][0]) === Creed));
         })();
         scrollToTop();
         return btnBookOfHours.prayers;

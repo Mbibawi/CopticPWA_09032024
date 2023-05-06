@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v3.7 (using Document Fragment for Incense offices and for the masses)';
+const version = 'v3.8 (using Document Fragment for Incense offices and for the masses)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
