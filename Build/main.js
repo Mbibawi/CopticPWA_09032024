@@ -825,6 +825,7 @@ function toggleAmplifyText(ev, myClass) {
     let sameLang = containerDiv.querySelectorAll(selector);
     sameLang.forEach((p) => {
         p.classList.toggle(myClass);
+        Array.from(p.children).forEach(child => child.classList.toggle(myClass));
     });
     if (target.classList.contains(myClass)) {
         //it means that the class was added when the user dbl clicked (not removed)
@@ -967,8 +968,12 @@ async function applyAmplifiedText(container) {
     new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
         if (value == true) {
             Array.from(container)
-                .filter((el) => el.getAttribute("data-lang") == key)
-                .map((el) => el.classList.add("amplifiedText"));
+                .filter((el) => el.getAttribute("data-lang") === key)
+                .forEach((el) => {
+                el.classList.add("amplifiedText");
+                Array.from(el.children)
+                    .forEach(child => child.classList.add("amplifiedText"));
+            });
         }
     });
 }

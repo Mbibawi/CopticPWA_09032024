@@ -18,6 +18,10 @@
   font-family: ArabicMajalla;
   src: url(./fonts/majalla.ttf);
 }
+@font-face {
+  font-family: GentiumBookPlus;
+  src: url(./fonts/GentiumBookPlus-Regular.ttf);
+}
 .root{
   --inline-column-width: 30%;
   --text-column-width: 30%;
@@ -82,7 +86,7 @@ body{
 .EN {
   font-size: 15pt;
   font-weight: 500;
-  font-family: BookAntiquaRegular;
+  font-family: GentiumBookPlus;
 }
 .COP {
   font-size: 14pt;
@@ -483,11 +487,17 @@ div.ReadingEnd{
   border-bottom: #111 solid 3pt;
 
 }
+
+.eigthNote.amplifiedText{
+  font-size: 25pt;
+}
+
 .eigthNote{
   color:  #95190c !important;
   font-weight: bold !important;
-  font-size: 18pt !important;
+  font-size: 18pt;
 }
+
 .btnEditing{
   width: 90% !important;
 }
