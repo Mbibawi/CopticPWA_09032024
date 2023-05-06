@@ -256,7 +256,7 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
             createBtn(childBtn, btnsDiv, childBtn.cssClass);
         });
     }
-    showTitlesInRightSideBar(containerDiv.querySelectorAll("div.TargetRowTitle"), rightSideBar.querySelector("#sideBarBtns"), btn);
+    showTitlesInRightSideBar(container.querySelectorAll("div.TargetRowTitle"), rightSideBar.querySelector("#sideBarBtns"), btn);
     if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
         //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
         //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
