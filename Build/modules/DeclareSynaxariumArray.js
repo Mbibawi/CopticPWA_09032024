@@ -1,8 +1,8 @@
 ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0101&C=Title",
-            "1er Thout (Jour de l’an copte). 1)Commémoration de la guérison de Job le juste; 2)Martyre de l’apôtre saint Barthélémy; 3)Décès de saint Mylious, 3ème pape d’Alexandrie;  4)Décès du pape Marc V – le 98ème patriarche de saint Marc.",
-            "1 توت",
+            "1er Thout (Jour de l’an copte). 1) Commémoration de la guérison de Job le juste; 2) Martyre de l’apôtre saint Barthélémy; 3) Décès de saint Mylious, 3ème pape d’Alexandrie; 4) Décès du pape Marc V – le 98ème patriarche de saint Marc.",
+            " 1 توت",
         ],
         [
             Prefix.synaxarium + "&D=0101",
@@ -99,7 +99,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0201&C=Title",
             "2 Thout 1)Martyre de saint Jean le baptiste; 2)Martyre de saint Dassya, le soldat.",
-            "2 توت",
+            " 2 توت",
         ],
         [
             Prefix.synaxarium + "&D=0201",
@@ -151,7 +151,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0301&C=Title",
             "3 Thout 1)Tenue d'un concile à Alexandrie à l’époque du pape Denys au sujet de l’éternité de l’âme; 2) Décès de sainte Théodora, la pénitente",
-            "3 توت",
+            " 3 توت",
         ],
         [
             Prefix.synaxarium + "&D=0301",
@@ -253,7 +253,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0401&C=Title",
             "4 Thout 1)Commémoration de Josué fils de Noun; 2) Décès de Saint Macaire II, le 69ème pape d'Alexandrie; 3) Décès de sainte Vérén.",
-            "4 توت",
+            " 4 توت",
         ],
         [
             Prefix.synaxarium + "&D=0401",
@@ -370,7 +370,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0501&C=Title",
             "5 Thout Martyre de sainte Sophie",
-            "5 توت",
+            " 5 توت",
         ],
         [
             Prefix.synaxarium + "&D=0501",
@@ -412,7 +412,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0601&C=Title",
             "6 Thout Martyre du prophète Isaïe fils d’Amos. Martyre de sainte Bassiliya",
-            "6 توت",
+            " 6 توت",
         ],
         [
             Prefix.synaxarium + "&D=0601",
@@ -494,7 +494,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0701&C=Title",
             " 7 Thout 1) Décès du pape Dioscore, le 25ème patriarche de la prédication de saint Marc;  2) Décès du pape Jean XII, le 93ème patriarche de la prédication de saint Marc;  3) Martyre de sainte Rébecca et de ses cinq enfants : Agathôn, Pierre, Jean, Amoun et Amouna;  4) Décès du saint Sévérien évêque de Gabala.",
-            "7 توت",
+            " 7 توت",
         ],
         [
             Prefix.synaxarium + "&D=0701",
@@ -651,7 +651,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0801&C=Title",
             " 8 Thout 1) Décès du prophète Moïse;  2) Martyre du prêtre Zacharie. Martyre de saint Diomède",
-            "8 توت",
+            " 8 توت",
         ],
         [
             Prefix.synaxarium + "&D=0801",
@@ -773,7 +773,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0901&C=Title",
             "9 Thout 1) Martyre d’abba Pissora l’évêque; 2) Martyre des deux évêques vénérables Pélée et Nil",
-            "9 توت",
+            " 9 توت",
         ],
         [
             Prefix.synaxarium + "&D=0901",
@@ -820,7 +820,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1001&C=Title",
             "10 Thout 1) Martyre de saint Jean l’égyptien et de ses compagnons;  2) Martyre de sainte Matrouna;  3) Martyre de sainte Bassine et de ces trois enfants. ",
-            "10 توت",
+            " 10 توت",
         ],
         [
             Prefix.synaxarium + "&D=1001",
@@ -877,7 +877,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1101&C=Title",
             "11 Thout 1) Martyre de saint Basilides, le ministre;  2) Martyre des trois paysans d’Esna. ",
-            "11 توت",
+            " 11 توت",
         ],
         [
             Prefix.synaxarium + "&D=1101",
@@ -934,7 +934,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1201&C=Title",
             "12 Thout  1) Commémoration de l’archange Michel;  2) Réunion du concile œcuménique à Ephèse; 3) Transfert des reliques de saint Eqlymus et de ses compagnons",
-            "12 توت",
+            " 12 توت",
         ],
         [
             Prefix.synaxarium + "&D=1201",
@@ -996,7 +996,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1301&C=Title",
             "13 Thout 1) Commémoration du miracle fait par saint Basile le Grand, évêque de Césarée de Cappadoce; 2) Décès du pape Matthieu II, le 90ème patriarche de la prédication de saint Marc",
-            "13 توت",
+            " 13 توت",
         ],
         [
             Prefix.synaxarium + "&D=1301",
@@ -1058,7 +1058,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1401&C=Title",
             "14 Thout 1) Décès des saint Agathôn le stylite;  2) Martyre de saint Felix, de sa sœur sainte Regula ainsi que saint Exuperantius.",
-            "14 توت",
+            " 14 توت",
         ],
         [
             Prefix.synaxarium + "&D=1401",
@@ -1135,7 +1135,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1501&C=Title",
             "15 Thout 1) Translation du corps de saint Etienne;  2) Décès d’abba Athanase de Qous",
-            "15 توت",
+            " 15 توت",
         ],
         [
             Prefix.synaxarium + "&D=1501",
@@ -1202,7 +1202,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1601&C=Title",
             "16 Thout 1) Consécration de la basilique de la Résurrection à Jérusalem ",
-            "16 توت",
+            " 16 توت",
         ],
         [
             Prefix.synaxarium + "&D=1601",
@@ -1228,110 +1228,130 @@ ReadingsArrays.SynaxariumArray = [[
     [
         [
             Prefix.synaxarium + "&D=1701&C=Title",
-            "Commémoration des festivités de la sainte Croix. Martyre de saint Castor, le prêtre Décès de sainte Théoghnosta. Décès d’el Mo’allem Guirguis al-Gohari, le saint. 17 Thout",
-            "",
+            "17 Thout 1)Commémoration des festivités de la sainte Croix;  2) Martyre de saint Castor le prêtre; 3) Décès de sainte Théoghnosta; 4) Décès d’el Mo’allem Guirguis al-Gohari, le saint. ",
+            "17 توت",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "En ce jour de l’an 51 des martyrs (335 après Jésus Christ) les patriarches des Eglises chrétiennes ont célébré la glorieuse Croix en faisant une procession dans la basilique de la Résurrection. Les patriarches présents étaient celui d’Alexandrie, le pape Athanase l’apostolique (الباب القديس أثناسيوس الرسولي), ceux de Constantinple et d’Antioche et saint Macaire (القديس مكاريوس), le patriarche de Jérusalem. A cette occasion de grandes festivités eurent lieu durantlesquelles ils se prosternèrent devant le Seigneur, firent des prières, célébrèrent des liturgies eucharitiques t glrifièrent la Croix puis l’installèrent dans un lieu qui était aménagé à l’intérieur d’un coffret en argent.",
-            "",
+            "En ce jour de l’an 51 des martyrs (335 après Jésus Christ) les patriarches des Eglises chrétiennes ont célébré la glorieuse Croix en faisant une procession dans la basilique de la Résurrection. Les patriarches présents étaient celui d’Alexandrie, le pape Athanase l’apostolique (الباب القديس أثناسيوس الرسولي), ceux de Constantinple et d’Antioche et saint Macaire (القديس مكاريوس), le patriarche de Jérusalem. A cette occasion de grandes festivités eurent lieu durant lesquelles ils se prosternèrent devant le Seigneur, firent des prières, célébrèrent des liturgies eucharstiques et glorifièrent la Croix puis l’installèrent dans un lieu qui était aménagé à l’intérieur d’un coffret en argent.",
+            "في مثل هذا اليوم من سنة 51 للشهداء ( 335م ) احتفل بطاركة الكنائس المسيحية وهم البابا القديس أثناسيوس الرسولي بطريرك الإسكندرية، وبطريرك القسطنطينية، وبطريرك أنطاكية، والقديس مكاريوس بطريرك أورشليم، بأن طافوا بالصليب المجيد في كنيسة القيامة باحتفال عظيم وسجدوا للرب، وأقاموا الصلوات والقداسات، ومجدوا الصليب، ثم وضعوه في الموضع المخصص له داخل خزانة من الفضة.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Ce jour-là correspond aussi à l’apparition d’une Croix lumineuse à ’empereur Constantin alors qu’il allait combattre le despote Maxence fils de Maximien (مكنتيوس بن مكسيميانوس) en 312 après Jésus Christ. Il était accompagné de ses officiers et ses soldats lorsqu’apparut à midi une Croix plus lumineuse que le soleil. Sous cette Croix étaient inscrit : « avec ceci tu vaincras. » Encouragé, il vaincut par la puissance de la glorieuse Croix. Ceci l’influença et provoqua sa conversion à la Foi chrétienne.",
-            "",
+            "ويوافق هذا العيد أيضاً ظهور علامة الصليب المجيد للإمبراطور قسطنطين الكبير، وهو ذاهب لمحاربة الطاغية مكنتيوس بن مكسيميانوس سنة 312م. وذلك أنه رأى أثناء الظهيرة في السماء ومعه الضباط والجنود، علامة الصليب المجيد من نور عظيم أبهي من نور الشمس، وتحت الصليب كلمات: \"بهذا تغلب\"، فتشجع وتشدد وانتصر في الحرب بقوة الصليب المجيد. مما كان له أبلغ الأثر في قبوله الإيمان المسيحي.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Que la bénédiction de la sainte Croix soit avec nous. Amen !",
-            "",
+            "بركة الصليب المجيد فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Nous commémorons aussi aujourd’hui le martyre de saint Castor, le prêtre (أبا قسطور القس) à l’époque de l’empereur Dioclétien au cours du IVème siècle. Ce saint naquit au village de Bardanouha بردنوها) en haute Égypte. Ces parents étaient chrétiens, ils l’élevèrent dans la vertu et la piété et il fut ordonné diacre. Dès lors, il fréquenta assidûment l’église et, après son mariage, fut ordonné prêtre et il s’occupa des fidèles de la meilleure des manières. Il eut un fils qu’il nomma Afraham (أفراهام) et une fille nommée Darmoudah (درمودة).",
-            "",
+            "Nous commémorons aussi aujourd’hui le martyre de saint Castor, le prêtre (أبا قسطور القس) à l’époque de l’empereur Dioclétien au cours du IVème siècle.",
+            "وفيه أيضاً استشهد القديس أبا قسطور القس في أيام الإمبراطور دقلديانوس في القرن الرابع الميلادي.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Le prêtre grandit en âge et devint un vieillard vénérable très aimé par ses fidèles. C’est là que Dioclétien déclencha la persécution des chrétiens et le pèr Castor se mit à visiter les fidèles pour les affermir dans la Fi orthodoxe. Il se rendit au village d’al-Qeis (القيس), qui était à cette époque le chef-lieu de la région, pour visiter les chrétiens emprisonnés à cause de leur Foi et les encourager à rester fermes en Jésus Christ et à refuser d’adorer les idoles. Lorsque le gouverneur apprit ce que faisait Castor, il le fit arrêter et le fit torturer avec les autres prisonniers de toutes les manières possibles. Mais le Seigneur le consolait, l’affermissait et guérissait ses plaies. Lorsqu’il eut été las de le torturer sans résultat, il l’envoya au gouvernur du vieux Caire (مصر القديمة)qui poursuivit les tortures. De nombreux miracles se manifestèrent pendant ses tortures, alors le gouverneur l’envoya à son homologue d’Alexandrie. Celui-ci reprit les tortures et voulut lui faire boire un poison. Saint Castor fit le signe de la croix sur cette boisson avant de la boire, et le poison fut sans effet. N’ayant plus de possibilité, le gouverneur ordonna qu’on le décapite alors qu’il avait atteint environ 110 ans. Alors qu’il priait avant que la sentence ne soit exécutée, une voix venant du ciel l’interpella en disant : « Castor, mon bien-aimé, viens au lieu de ton repos. » Puis, il fut décapité et obtint la couronne du martyre. Saint Jules d’Akfahs (يوليوس ألاقفهصى) rédigea la biographie de saint Castor et l’ensevelît puis l’envoya à son village natal. Il y fut accueilli avec des chants et des louanges et on le mit dans sa maison jusqu’à la fin des persécutions. Alors, ils construisirent une église à son honneur, et elle fut consacrer le 17 Méchir.",
-            "",
+            "Ce saint naquit au village de Bardanouha بردنوها) en haute Égypte. Ces parents étaient chrétiens, ils l’élevèrent dans la vertu et la piété et il fut ordonné diacre. Dès lors, il fréquenta assidûment l’église et, après son mariage, fut ordonné prêtre et il s’occupa des fidèles de la meilleure des manières. Il eut un fils qu’il nomma Afraham (أفراهام) et une fille nommée Darmoudah (درمودة).",
+            "وُلِدَ هذا القديس في قرية بردنوها (بردنوها: قرية بمركز مطاى ـ محافظة المنيا) بصعيد مصر من أبوين مسيحيين، وقد ربياه على الفضيلة والتقوى. رُسم شماساً، فلازم البيعة. بعد ذلك تزوج ورسموه قساً على كنيسة بلدته، فرعى الشعب أحسن رعاية. وقد أنجب ابناً أسماه أفراهام على اسم والده، وابنة اسمها درمودة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "Le prêtre grandit en âge et devint un vieillard vénérable très aimé par ses fidèles. C’est là que Dioclétien déclencha la persécution des chrétiens et le pèr Castor se mit à visiter les fidèles pour les affermir dans la Fi orthodoxe. Il se rendit au village d’al-Qeis (القيس), qui était à cette époque le chef-lieu de la région, pour visiter les chrétiens emprisonnés à cause de leur Foi et les encourager à rester fermes en Jésus Christ et à refuser d’adorer les idoles.",
+            "كبر القس قسطور في العمر وأصبح كاهناً وقوراً ذا شيبة صالحة، وكان محبوباً من شعبه. ولما أثار دقلديانوس الاضطهاد على المسيحيين، أخذ قسطور القس يجول بين شعبه يثبتهم على الإيمان المستقيم. وذهب إلى بلدة القيس (القيس: قرية تابعة لمركز بنى مزار - محافظة المنيا) عاصمة المنطقة والقريبة من بلدته، ليفتقد المسيحيين المسجونين بسبب إيمانهم بالمسيح، وكان يثبتهم ويشجعهم. ",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "Lorsque le gouverneur apprit ce que faisait Castor, il le fit arrêter et le fit torturer avec les autres prisonniers de toutes les manières possibles. Mais le Seigneur le consolait, l’affermissait et guérissait ses plaies. Lorsqu’il eut été las de le torturer sans résultat, il l’envoya au gouverneur du vieux Caire (مصر القديمة) qui poursuivit les tortures. ",
+            "ولما بلغ الوالي أن القس قسطور يشجع المسيحيين على الثبات في الإيمان وعدم السجود للأوثان، أمر بالقبض عليه وإحضاره مع المسجونين للتعذيب الشديد. فعذبوه بكل أنواع العذاب وكان الرب يعزيه ويقويه ويشفيه. بعد ذلك أرسله الوالي إلى والى مصر القديمة وكان اسمه كلكيانوس ليعذبه.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "De nombreux miracles se manifestèrent pendant ses tortures, alors le gouverneur l’envoya à son homologue d’Alexandrie. Celui-ci reprit les tortures et voulut lui faire boire un poison. Saint Castor fit le signe de la croix sur cette boisson avant de la boire, et le poison fut sans effet.",
+            "وبعد أن عذبه كثيراً، وظهرت منه معجزات وعجائب كثيرة أثناء سجنه وتعذيبه، أرسله إلى والى الإسكندرية، فعذبه هو أيضاً بشدة. ثم سقاه سماً مميتاً فلم يضره، لأنه رشم الكأس بعلامة الصليب قبل أن يشربه.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "N’ayant plus de possibilité, le gouverneur ordonna qu’on le décapite alors qu’il avait atteint environ 110 ans. Alors qu’il priait avant que la sentence ne soit exécutée, une voix venant du ciel l’interpella en disant : « Castor, mon bien-aimé, viens au lieu de ton repos. » Puis, il fut décapité et obtint la couronne du martyre.",
+            "ولما تعب من تعذيبه أمر بقطع رأسه، وكان عمره في ذلك الوقت يقرب من مائة وعشر سنين. وبينما هو يصلى قبل تنفيذ الحكم ناداه صوت من السماء قائلاً: \"يا حبيبي قسطور تعال إلى موضع الراحة\". ثم قطعوا رأسه، فنال إكليل الشهادة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "Saint Jules d’Akfahs (يوليوس ألاقفهصى) rédigea la biographie de saint Castor et l’ensevelît puis l’envoya à son village natal. Il y fut accueilli avec des chants et des louanges et on le mit dans sa maison jusqu’à la fin des persécutions. Alors, ils construisirent une église à son honneur, et elle fut consacrer le 17 Méchir.",
+            "وقام القديس يوليوس الأقفهصي بكتابة سيرته وتكفين جسده وأرسله إلى بلدة بردنوها. وهناك استقبله أهلها بالتسابيح والألحان. وحملوه إلى بيته حتى انقضى زمن الاضطهاد، فبنوا كنيسة على اسمه كُرست في اليوم السابع عشر من شهر أمشير.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا. آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "En ce jour nous commémorons aussi le décès de sainte Théoghnosta (ثاؤغنسطا). Cette sainte vécut à l’époque des empereurs justes Arcadius (أركاديوس) et Honorius (أونوريوس). Elle était installée dans un monastère proche de Rome et se retrouva captive des hommes de main du dirigeant d’Edesse (ألرُها) qui l’offrirent à leur maitre. Celui-ci en fit son esclave. Dans son exil, la moniale Théoghnosta faisait son travail dans la joie et la bonne humeur. Le Seigneur aplanit son chemin et sa maitresse en fit la chef des servantes du palais. Son cœur était suspendu à l’espérance en la vie éternelle ; elle pratiquait son jeûne et ses prières avec une grande ferveur.",
-            "",
+            "En ce jour nous commémorons aussi le décès de sainte Théoghnosta (ثاؤغنسطا). Cette sainte vécut à l’époque des empereurs justes Arcadius (أركاديوس) et Honorius (أونوريوس).",
+            "وفيه أيضاً تنيَّحت القديسة ثاؤغنسطا، وذلك في أيام الملكين أركاديوس وأنوريوس.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1701",
+            "Elle était installée dans un monastère proche de Rome et se retrouva captive des hommes de main du dirigeant d’Edesse (ألرُها) qui l’offrirent à leur maitre. Celui-ci en fit son esclave. Dans son exil, la moniale Théoghnosta faisait son travail dans la joie et la bonne humeur. Le Seigneur aplanit son chemin et sa maitresse en fit la chef des servantes du palais. Son cœur était suspendu à l’espérance en la vie éternelle ; elle pratiquait son jeûne et ses prières avec une grande ferveur.",
+            "كانت تقيم بدير بالقرب من روما، فوقعت أسيرة في يد رجال حاكم الرها، حيث قدموها له، فاتخذتها زوجة الحاكم كجارية لها. مارست الراهبة ثاؤغنسطا - المسبية - عملها ببهجة ورضا، فأنجح الرب طريقها وأعطاها نعمة في عيني سيدتها، فأقامتها رئيسة على كل العاملات بالقصر. أما هي فكان قلبها متعلقاً بالحياة السماوية، تمارس نسكها وصلواتها بجهاد عظيم.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Un jour que le fils du roi tomba gravement malade. a mère, la maitresse de maison, demanda à Théoghnosta de prir pour lui. La sainte étendue les bras et pria Dieu afin qu’il se glorifie en guérissant ce fils unique pour le salut d’un grand nombre. Lorsqu’elle eut achevé sa prière, l’enfant était guéri. En conséquence, le dirigeant l’affranchit et, à sa demande, lui affecta un lieu isolé où elle s’installa pour adorer Dieu perpétuellement. Quelques jours plus tard, l’épouse du dirigeant tomba malade à son tour et demanda à Théoghnosta de prier pour elle et elle guérit.",
-            "",
+            "وحدث أن تعرض ابن الحاكم لمرض شديد، وفشلت كل إمكانيات الأطباء في شفائه، فطلبت أمه - سيدتها - من ثاؤغنسطا أن تصلى لأجله، فبسطت يديها وصلت إلى الله أن يتمجد في هذا الابن الوحيد لأجل خلاص الكثيرين. ولما انتهت من صلاتها شفي الطفل في الحال، فحررها الحاكم من العبودية، وأعطى لها مكاناً منفرداً كطلبها، فأقامت متعبدة فيه لله بلا انقطاع. وبعد أيام قليلة مرضت زوجة الحاكم، فطلبت ثاؤغنسطا لتصلى لأجلها فوهبها الله نعمة الشفاء بصلاتها.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Un jour, le dirigeant partit à la chasse dans le désert et s’y égara. Alors, se souvenant ce que faisait sainte Théoghnosta, comment elle s’adressait au Christ et faisait le signe de la croix. Alors, il leva la voix demandant au Christ, le Dieu de Théoghnosta, de le sauver. Immédiatement, il vit une croix lumineuse qui le guida jusqu’à la ville. Le peuple se réjouit de cela et ils demandèrent à la sainte de leur expliquer sa Foi. Elle en fut réjouie et proclama sa Foi en Jésus Christ. Elle suggéra au dirigeant de s’adresser à Honorius pour qu’il leur envoie un prêtre.",
-            "",
+            "ثم خرج الحاكم إلى البرية ذات يوم، ليصطاد، فضلّ الطريق. حينئذ تذكر القديسة ثاؤغنسطا، وكيف تلتجىء إلى السيد المسيح في الضيقات، وترشم ذاتها بعلامة الصليب، فتنال قوة إلهية. فصرخ الحاكم، وطلب من السيد المسيح إله ثاؤغنسطا، أن ينقذه. وإذ به يرى علامة الصليب من نور تتقدمه حتى دخل المدينة. ففرح به شعبه، واستدعوا القديسة ثاؤغنسطا لكي تبشرهم بالإيمان بالسيد المسيح، فتهللت جداً وبشرتهم بالإيمان، وطلبت من الحاكم أن يرسل إلى الإمبراطور أنوريوس لكي يرسل لهم كاهناً تقياً، فأرسل لهم قساً يُدعى ثاؤفانيوس، الذي صار يكرز مجاهداً بالإيمان حتى آمن الجميع، وسُيم ثاؤفانيوس أسقفاً على الرها كطلب الحاكم والشعب.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Alors un prêtre nommé Théophane (ثاؤفانيوس) leur fut envoyé. Il proclama la Foi chrétienne jusqu’à ce que tout le peuple croie en Jésus Christ. A la demande du roi et des fidèles, il fut sacré évêque pour ctte ville. Sainte Théoghnosta servait les femmes. Dieu permit qu’elle ait une courte maladie puis elle décéda en paix.",
-            "",
+            "Alors un prêtre nommé Théophane (ثاؤفانيوس) leur fut envoyé. Il proclama la Foi chrétienne jusqu’à ce que tout le peuple croie en Jésus Christ. A la demande du roi et des fidèles, il fut sacré évêque de cette ville. Sainte Théoghnosta servait les femmes. Dieu permit qu’elle ait une courte maladie puis elle décéda en paix.",
+            "وكانت القديسة ثاؤغنسطا تقوم بخدمة النساء. وسمح الله لها بمرض قصير وتنيَّحت بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتها فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "En ce jour de l’an 1557 des martyrs (1810 après Jésus Christ) décéda saint Guirguis (Georges) al-Gohari (القديس المعلم جرجس الجوهري). Il était l’un des notables coptes de la fin du XVIIIème siècle et le début du XIXème siècle. Il était le frère du mo’allem Ibrahim al-Gohari (المعلم إبراهيم الجوهري). Il eut la même éducation que son frère dans les écoles de cette époque-là à Qalyoub (قليوب). Il apprt la lecture, l’écriture et le calcul en plus des cours de religion et de langue copte. Lorsqu’il grandit, son frère, qui occupait le poste de grand chancelier d’Égypte (رئيس كُتَّاب القطر المصري), l’associa au travail dans l’administration et il fut pour lui un guide et un instructeur.",
-            "",
+            "En ce jour de l’an 1557 des martyrs (1810 après Jésus Christ) décéda saint Guirguis (Georges) al-Gohari (القديس المعلم جرجس الجوهري).",
+            "وفيه أيضاً من سنة 1557 للشهداء (1810م) تنيَّح القديس جرجس الجوهري. ",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Après le décès du mo’allem Ibrahim, Ilsuccéda à son frère et occupa ce poste pendant quatre périods successives :",
-            "",
+            "Il était l’un des notables coptes de la fin du XVIIIème siècle et le début du XIXème siècle. Il était le frère du mo’allem Ibrahim al-Gohari (المعلم إبراهيم الجوهري). Il eut la même éducation que son frère dans les écoles de cette époque-là à Qalyoub (قليوب). Il apprt la lecture, l’écriture et le calcul en plus des cours de religion et de langue copte.",
+            "كان المعلم جرجس الجوهري من مشاهير الأقباط في أواخر القرن الثامن عشر وأوائل القرن التاسع عشر. وهو شقيق المعلم إبراهيم الجوهري (نياحة المعلم إبراهيم الجوهري يوم 25 بشنس). وقد تربى مثل أخيه في كُتاب مدينة قليوب كنظام ذلك العصر، فتعلم القراءة والكتابة والحساب، علاوة على العلوم الدينية واللغة القبطية.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Sous les Mammelouks.",
-            "",
+            "Lorsqu’il grandit, son frère, qui occupait le poste de grand chancelier d’Égypte (رئيس كُتَّاب القطر المصري), l’associa au travail dans l’administration et il fut pour lui un guide et un instructeur. Après le décès du mo’allem Ibrahim, Ilsuccéda à son frère et occupa ce poste pendant quatre périods successives : sous les Mammelouks, pendant l’occupation française, sous le pouvoir Ottoman après le départ de la campagne française d’Égypte, et au début du règne de Méhémet Ali (محمد علي).",
+            "ولما كبر أشركه شقيقه المعلم إبراهيم، الذي كان يشغل منصب رئيس كُتاب مصر ( رئيس المباشرين: وظيفة تشبه وظيفة رئيس الوزراء حالياً)، في الأعمال والأمور الكتابية، فكان له خير مُعلم وأفضل مرشد. وكانت ملازمته لأخيه ذات أثر فعال في مستقبل حياته، وسبباً في نجاحه، عندما تقلد منصب رياسة المباشرين ( رئيس كتاب مصر: وظيفة تشبه وظيفة رئيس الوزراء حالياً)، بعد نياحة أخيه المعلم إبراهيم الجوهري. وقد باشر المعلم جرجس شئون وظيفته في أربعة عهود مختلفة: في حكم المماليك، ومدة حكم الحملة الفرنسية، ومدة حكم الأتراك، ثم أول حكم محمد على باشا.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Pendant l’occupation française.",
-            "",
+            "Il était généreux et faisait des dons aux pauvres et aux nécessiteux. Il en faisait aussi aux églises et aux monastères, surtout dans les occasions. Il aida le pape Marc VIII () pour la construction de la grande cathédrale saint Marc à al-Azbakiah (الأزبكية) ainsi que le siège patriarcal qui lui était associé. Avant son décès il obtint de la part de la Sublime Porte (الباب العالي), le siège de l’empire Ottoman à Istanbul, un décret (فرمان) autorisant cette construction. Ce pape l’avait nommé responsabl d’un grand nombre d’églises tant son amour pour elles et l’intérêt pour leur réhabilitation étaient notables. ",
+            "وقد لاقى شدائد كثيرة، وكان عظيم النفس، كريماً في العطاء، يوزع على الفقراء والمساكين والكنائس والأديرة الأموال الكثيرة، خصوصاً في المناسبات. كما إنه ساعد البابا مرقس الثامن في بناء الكنيسة المرقسية الكبرى بالأزبكية ومقر البطريركية المجاور لها، من أملاكه وأملاك أخيه الذي كان قد حصل قبل نياحته على فرمان من الباب العالي ببنائها. هذا وقد عينه البابا مرقس الثامن ناظراً على كثير من كنائس القاهرة ومصر القديمة وذلك لمحبته للكنائس واهتمامه بتعميرها والعناية بها.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
-            "Sous le pouvoir Ottoman après le départ de la campagne française d’Égypte.",
-            "",
-        ],
-        [
-            Prefix.synaxarium + "&D=1701",
-            "Au début du règne de Méhémet Ali (محمد علي).",
-            "",
-        ],
-        [
-            Prefix.synaxarium + "&D=1701",
-            "Il était généreux et faisait des dons aux pauvres et aux nécessiteux. Il en faisait aussi aux églises et aux monastères, surtout dans les occasions. Il aida le pape Marc VIII () pour la construction de la grande cathédrale saint Marc à al-Azbakiah (الأزبكية) ainsi que le siège patriarcal qui lui était associé. Avant son décès il obtint de la part de la Sublime Porte (الباب العالي), le siège de l’empire Ottoman à Istanbul, un décret (فرمان) autorisant cette construction. Ce pape l’avait nommé responsabl d’un grand nombre d’églises tant son amour pour elles et l’intérêt pour leur réhabilitation étaient notables. A la fn de sa vie, il tomba maade puis décéda en paix. Il fut entrré à côté de son frère dans leur caveau privé situé à côté de l’église saint eorges (مار جرجس) à Darb-el-taka (درب التقا) dan le vieux Caire. Ce caveau existe toujours. Il est surmonté d’une petite chapelle dans laquelle on fait des prières à l’occasion de leurs commémorations.",
-            "",
+            "A la fn de sa vie, il tomba maade puis décéda en paix. Il fut entrré à côté de son frère dans leur caveau privé situé à côté de l’église saint eorges (مار جرجس) à Darb-el-taka (درب التقا) dan le vieux Caire. Ce caveau existe toujours. Il est surmonté d’une petite chapelle dans laquelle on fait des prières à l’occasion de leurs commémorations.",
+            "مرض المعلم جرجس في أواخر حياته، ثم تنيَّح بسلام، ودُفن بجوار شقيقه في المدفن الخاص بهما بجوار كنيسة مار جرجس بدرب التقا بمصر القديمة. ولا يزال قبرهما موجوداً حتى الآن وفوقه كنيسة صغيرة يصلى فيها في تذكاراتهما.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            " بركة صلوات هذا الأرخن القديس فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1801&C=Title",
             "Deuxième jour de la commémoration de la manifestation de la sainte Croix. Martyre de saint Porphyre. Martyre de saint Etienne le prêtre et de sainte Niketé. 18 Thout",
-            "",
+            "18 توت",
         ],
         [
             Prefix.synaxarium + "&D=1801",
@@ -1368,7 +1388,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1901&C=Title",
             "Troisième jour de la commémoration de la manifestation de la sainte Croix. Commémoration de la remontée de saint Grégoire l’arménien de sa fosse. 19 Thout",
-            "",
+            "19 توت",
         ],
         [
             Prefix.synaxarium + "&D=1901",
@@ -1410,7 +1430,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2001&C=Title",
             "Dcès de sainte Théopista. Décès du pape Athanase II, le 28ème patriarche de la prédication de saint Marc. Martyre de sainte Mélitine. 20 Thout",
-            "",
+            "20 توت",
         ],
         [
             Prefix.synaxarium + "&D=2001",
@@ -1467,7 +1487,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2101&C=Title",
             "Commémoration de la sainte vierge Marie. Martyre de saint Cyprien et sainte Justine. 21 Thout",
-            "",
+            "21 توت",
         ],
         [
             Prefix.synaxarium + "&D=2101",
@@ -1509,7 +1529,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2201&C=Title",
             "Martyre de saint Cotylas, de sa sœur sainte Axoua, et de saint Tâtâs son ami. Martyre de saint Jules d’Akfahs, le biographe des martyrs et de ses compagnons. 22 Thout",
-            "",
+            "22 توت",
         ],
         [
             Prefix.synaxarium + "&D=2201",
@@ -1556,7 +1576,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2301&C=Title",
             "Martyre de saint Onanius et saint André. Martyre de sainte Thècle. 23 Thout",
-            "",
+            "23 توت",
         ],
         [
             Prefix.synaxarium + "&D=2301",
@@ -1613,7 +1633,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2401&C=Title",
             "Martyre de saint Quadrat, l’un des soixante-dix disciples. Décès desaint Grégoire, le théologien. Décès de saint Grégoire, le moine. 24 Thout",
-            "",
+            "24 توت",
         ],
         [
             Prefix.synaxarium + "&D=2401",
@@ -1680,7 +1700,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2501&C=Title",
             "Décès du prophète Jonas. Martyre de saint Maurie, commandant de la légion thébaine. 25 Thout",
-            "",
+            "25 توت",
         ],
         [
             Prefix.synaxarium + "&D=2501",
@@ -1737,7 +1757,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2601&C=Title",
             "L’annonce faite par l’ange à Zacharie concernant la naissance de Jean le Baptiste. 26 Thout",
-            "",
+            "26 توت",
         ],
         [
             Prefix.synaxarium + "&D=2601",
@@ -1764,7 +1784,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2701&C=Title",
             "Martyre de saint Eustathe, de ses deux fils et de son épouse. 27 Thout",
-            "",
+            "27 توت",
         ],
         [
             Prefix.synaxarium + "&D=2701",
@@ -1791,7 +1811,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2801&C=Title",
             "Martyre des saints Abadir et Iraï sa sœur. 28 Thout",
-            "",
+            "28 توت",
         ],
         [
             Prefix.synaxarium + "&D=2801",
@@ -1818,7 +1838,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2901&C=Title",
             "Commémoration de l’Annonciation, la Nativité et la Résurrection. Martyre de sainte Rhipsimé et de ses sœurs. Martyre de sainte Fébronya. 29 Thout",
-            "",
+            "29 توت",
         ],
         [
             Prefix.synaxarium + "&D=2901",
@@ -1890,7 +1910,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=3001&C=Title",
             "Commémoration du grand miracle que le Seigneur fit en faveur de saint Athanase l’apostolique. 30 Thout",
-            "",
+            "30 توت",
         ],
         [
             Prefix.synaxarium + "&D=3001",
@@ -1912,7 +1932,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0102&C=Title",
             "Martyre de sainte Anastasie. 1er Paopi",
-            "",
+            "1 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0102",
@@ -1934,7 +1954,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0202&C=Title",
             "Venue en Égypte des saint Sévère, le patriarche d'Antioche. 2 Paopi",
-            "",
+            "2 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0202",
@@ -1971,7 +1991,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0302&C=Title",
             "Décès du pape Simon II, le 51ème pape de la prédication de saint Marc. Martyre de saint Ours et saint Victor de la légion thébaine. Martyre de saint Jean le soldat. Décès de la reine sainte Théodora. 3 Paopi",
-            "",
+            "3 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0302",
@@ -2073,7 +2093,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0402&C=Title",
             "Martyre de saint Bacchus, le compagnon de saint Serges. 4 Paopi",
-            "",
+            "4 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0402",
@@ -2095,7 +2115,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0502&C=Title",
             "Martyre de saint Paul, patriarche de Constantinople. Décès d’aba Pierre, l’évêque de Bahnassa. 5 Paopi",
-            "",
+            "4 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0502",
@@ -2202,7 +2222,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0602&C=Title",
             "Décès d’Anne la juste, la mère du prophète Samuel. 6 Paopi",
-            "",
+            "6 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0602",
@@ -2234,7 +2254,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0702&C=Title",
             "Décès de Paul de Tammouh. 7 Paopi",
-            "",
+            "7 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0702",
@@ -2271,7 +2291,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0802&C=Title",
             "Martyre de saint Matra. Martyre d’abba Hour et de Tossiya et leurs enfants. Martyre d’abba Aghathon l’ermite. 8 Paopi",
-            "",
+            "8 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0802",
@@ -2328,7 +2348,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0902&C=Title",
             "Décès de saint Euménis, le septième pape de la prédication de saint Marc. Commémoration de l'évêque saint Siméon et de ses compagnons. 9 Paopi",
-            "",
+            "9 بابه",
         ],
         [
             Prefix.synaxarium + "&D=0902",
@@ -2370,7 +2390,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1002&C=Title",
             "Martyre de saint Serges le compagnon de saint Bacchus. 10 Paopi",
-            "",
+            "10 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1002",
@@ -2407,7 +2427,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1102&C=Title",
             "Décès de saint Jacques, patriarche d’Antioche. Décès de sainte Pélagie, la pénitente. 11 Paopi",
-            "",
+            "11 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1102",
@@ -2439,7 +2459,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1202&C=Title",
             "Commémoration de l'archane Michel. Martyre de saint Matthieu l'évangéliste. Décès de saint Démétrios 1er le 12ème pape d'Alexandrie. 12 Paopi",
-            "",
+            "12 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1202",
@@ -2516,7 +2536,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1302&C=Title",
             "Décès de saint Zacharie, le moine. 13 Paopi",
-            "",
+            "13 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1302",
@@ -2548,7 +2568,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1402&C=Title",
             "Décès de Saint Philippe, l’un des sept diacres. 14 Paopi",
-            "",
+            "14 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1402",
@@ -2585,7 +2605,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1502&C=Title",
             "Martyre de saint Pantéléïmôn, le médecin. 15 Paopi",
-            "",
+            "15 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1502",
@@ -2612,7 +2632,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1602&C=Title",
             "Décès de saint Agathon, le trente-neuvième pape d'Alexandrie. Commémoration des saints Carpus, Apollos et Pierre. 16 Paopi",
-            "",
+            "16 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1602",
@@ -2654,7 +2674,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1702&C=Title",
             "Décès du pape Dioscore II, le 31ème patriarche de la prédication de saint Marc. 17 Paopi",
-            "",
+            "17 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1702",
@@ -2686,7 +2706,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1802&C=Title",
             "Décès du pape saint Théophile le 23ème patriarche de la prédication de sant Marc. 18 Paopi",
-            "",
+            "18 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1802",
@@ -2738,7 +2758,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1902&C=Title",
             "Martyre à Fayoum de saint Théophile et de sa femme. Tenue du concile d’Antioche pour juger Paul de Samosate. 19 Paopi",
-            "",
+            "19 بابه",
         ],
         [
             Prefix.synaxarium + "&D=1902",
@@ -2780,7 +2800,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2002&C=Title",
             "Décès de saint Jean Colobos. 20 Paopi",
-            "",
+            "20 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2002",
@@ -2827,7 +2847,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2102&C=Title",
             "Commémoration de la Mère de Dieu, la très sainte Vierge Marie. Décès du prophète Joël. Translation des reliques de Lazare, le bien-aimé de notre Seigneur. Décès de saint Freige. 21 Paopi",
-            "",
+            "21 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2102",
@@ -2919,7 +2939,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2202&C=Title",
             "Martyre de Saint Luc l'évangéliste. 22 Paopi",
-            "",
+            "22 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2202",
@@ -2956,7 +2976,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2302&C=Title",
             "Martyre de saint Denys, évêque de Corinthe. Décès du pape Joseph 1er, le cinquante-deuxième patriarche de la prédication de saint Marc. 23 Paopi",
-            "",
+            "23 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2302",
@@ -3008,7 +3028,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2402&C=Title",
             "Décès du moine saint Hilarion le grand. Martyre de sant Paul, saint Longin et sainte Dina. 24 Paopi",
-            "",
+            "24 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2402",
@@ -3055,7 +3075,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2502&C=Title",
             "Décès de saint Abib l’ami de saint Apollo. Conscration de l’église de Saint Jules d’Akfahs. 25 Paopi",
-            "",
+            "25 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2502",
@@ -3107,7 +3127,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2602&C=Title",
             "Martyre de saint Timon, le disciple et le diacre. Commémoration des 7 martyrs de la montagne de saint Antoine. 26 Paopi",
-            "",
+            "26 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2602",
@@ -3139,7 +3159,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2702&C=Title",
             "Martyre de saint Macaire, évêque de Qaw. 27 Paopi",
-            "",
+            "27 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2702",
@@ -3171,7 +3191,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2802&C=Title",
             "Martyre des saints Marcien et Mercure. 28 Paopi",
-            "",
+            "28 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2802",
@@ -3188,7 +3208,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2902&C=Title",
             "Commémoration des 3 fêtes du Seigneur : l’annonciation, la nativité et Pâques. Martyre de saint Dimitri de Thessalonique. Décès du pape Gabriel VII, le 95ème patriarche de la prédication de saint Marc. 29 Paopi",
-            "",
+            "29 بابه",
         ],
         [
             Prefix.synaxarium + "&D=2902",
@@ -3245,7 +3265,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=3002&C=Title",
             "Apparition de la tête de saint Marc, l'évangéliste et Consécration de son église. Décès de saint Abraham l'ermite. 30 Paopi",
-            "",
+            "30 بابه",
         ],
         [
             Prefix.synaxarium + "&D=3002",
@@ -3307,7 +3327,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0103&C=Title",
             "Commémoration de saint Cléopas, un des deux disciples d’Emmaüs. Martre de saint Cyriaque, évêque de Jérusalem, et de sa mère. Martyre des saints Maxime, Numitius, Vctor et Philippe. Martyre de sainte Anastasie la grande et de saint Cyrille. 1er Athor",
-            "",
+            "1 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0103",
@@ -3384,7 +3404,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0203&C=Title",
             "Décès du pape Pierre III, le vingt-septième patriarche de la prédication de saint Marc. Martyre de saint Macaire, le libyen. Décès de saint Ephramios d’Edesse. 2 Athor",
-            "",
+            "22 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0203",
@@ -3456,7 +3476,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0303&C=Title",
             "Martyre de saint Athanase et sa sœur Irène. Martyre de saint Agathon. Décès de saint Cyriaque de Corinthe. 3 Athor",
-            "",
+            "3 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0303",
@@ -3498,7 +3518,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0403&C=Title",
             "Martyre des saints Jean et Jacques, les évêques de Perse. Martyr de saint Thomas, l’évêque. Martyre des saints Epimaque et Gordien. 4 Athor",
-            "",
+            "4 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0403",
@@ -3535,7 +3555,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0503&C=Title",
             "Apparition de la tête de saint Longin, le soldat. Martyre de saint Timothée. Transfert des reliques de saint Théodore à Choteb. Décès de saint Joseph au mont Chamah. 5 Athor",
-            "",
+            "5 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0503",
@@ -3622,7 +3642,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0603&C=Title",
             "Consécration de l'église de la sainte Vierge au monastère al-Moharrak, au mont Kosquâm. Décès de saint Félix, pape de Rome. 6 Athor",
-            "",
+            "6 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0603",
@@ -3669,7 +3689,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0703&C=Title",
             "Consécration de l'église de saint Georges de Cappadoce. Martyre de saint Georges d'Alexandrie. Martyre de saint Nehroua. Martyre des saints Akepsimas, Aithala et Joseph. Décès de saint Menas, l'évêque de Thmouï. 7 Athor",
-            "",
+            "7 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0703",
@@ -3746,7 +3766,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0803&C=Title",
             "Commémoration des quatre vivants incorporels. Martyre de saint Nikandros, le pêtre de Myre. Décès du père Piryos, le directeur de l’écolethéologique d’Alexandrie. 8 Athor",
-            "",
+            "8 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0803",
@@ -3798,7 +3818,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0903&C=Title",
             "Tenue du 1er concile œcuménique à Nicée. Décès du pape Isaac, le quarante-t-unième patriarche de la prédication de saint Marc. 9 Athor",
-            "",
+            "9 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=0903",
@@ -3850,7 +3870,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1003&C=Title",
             "Martyre des 50 vierges et de leur mère spirituelle. Réunion d’un concileà Rome au sujet de la fête de l’Epiphanie et du carême. 10 Athor",
-            "",
+            "10 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1003",
@@ -3897,7 +3917,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1103&C=Title",
             "Décès de sainte Anne, la mère de la sainte Vierge Marie, la ère de Dieu. Martyre de saint Michel, le moine. Commémoration du martyre de saint Archélaüs et de saint Elysée, l’higoumène. 11 Athor",
-            "",
+            "11 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1103",
@@ -3944,7 +3964,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1203&C=Title",
             "Commémoration de l’archange Michel, le chef de l’armée du Seigneur. Décès de saint Jean le syriaque. 12 Athor",
-            "",
+            "12 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1203",
@@ -3986,7 +4006,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1303&C=Title",
             "Commémoration de l’archange Gabriel. Décès du pape abba Zacharie, le 64ème patriarche de la prédication de saint Marc. Martyre de saint Théodore Tiron. Décès de saint Timothée, évêque d’Antinoë. Décès d’Abba Joseph au mont al-Assas. 13 Athor",
-            "",
+            "13 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1303",
@@ -4073,7 +4093,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1403&C=Title",
             "Décès de saint Martin, évêque de Tours. Martyre de l’officier Pharos et de ses enseignants. 14 Athor",
-            "",
+            "14 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1403",
@@ -4130,7 +4150,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1503&C=Title",
             "Martyre de saint Ménas, le thaumaturge. Décès de saint Jean ar-Robbane. 15 Athor",
-            "",
+            "15 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1503",
@@ -4202,7 +4222,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1603&C=Title",
             "Début du jeûne de l’avent pour l’Église copte orthodoxe. Consécration de l’église de saint Onuphre l'Anachorète. Martyre de saint Juste, l’évêque. Décès du pape Ménas II, le 61ème patriarche de la prédication de saint Marc. Décès de saint Nylus le sinaïte. 16 Athor",
-            "",
+            "16 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1603",
@@ -4279,7 +4299,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1703&C=Title",
             "Décès de saint Jean Chrysostome. Décès de saint Paul au mont Danfiq. 17 Athor",
-            "",
+            "17 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1703",
@@ -4316,7 +4336,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1803&C=Title",
             "Martyre de saint Philippe, l’apôtre. Martyre des saintes Atrasis et Jeanne. Commémoration du miracle du transfert de la colline du Mokattam. 18 Athor",
-            "",
+            "18 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1803",
@@ -4388,7 +4408,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=1903&C=Title",
             "Consécration de l’église de saint Serge et saint Bacchus à el-Rassafa. Martyre de saint Habib. 19 Athor",
-            "",
+            "19 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=1903",
@@ -4430,7 +4450,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2003&C=Title",
             "Décès de saint Anien, le second patriarche de la prédication de saint Marc. Consécration de l’église du prince Théodore de Choteb et celle du prince Théodore l’oriental. 20 Athor",
-            "",
+            "20 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2003",
@@ -4472,7 +4492,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2103&C=Title",
             "Commémoration de sainte vierge Marie, la mère de Dieu. Dcès de saint Grégoire le Thaumaturge. Décès du pape Côme II, le 54ème patriarche de la prédication de saint Marc. Décès de Jean de Lycopolis dans la montagne de cette ville. Commémoration des saints Alphée, Zachée, Romain et Jean les martyrs ainsi que des saints Thomas, Victor et Isaac d'al-Achmounein. Transfert du corps de saint Jean Kamé au monastère el-Souryan. 21 Athor",
-            "",
+            "21 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2103",
@@ -4614,7 +4634,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2203&C=Title",
             "Martyre de saint Côme et saint Damien, de leurs frères et de leur mère. 22 Athor",
-            "",
+            "22 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2203",
@@ -4646,7 +4666,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2303&C=Title",
             "Décès de saint Corneille, le centurion. Consécration de l’église de sainte Marina. 23 Athor",
-            "",
+            "23 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2303",
@@ -4688,7 +4708,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2403&C=Title",
             "Commémoration des vingt-quatre prêtres incorporels. Martyre de l’évêque Narcisse et de sainte Tekla. Décès de saint Proclus, le patriarche de Constantinople. 24 Athor",
-            "",
+            "24 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2403",
@@ -4750,7 +4770,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2503&C=Title",
             "Martyre de saint Mercure. 25 Athor",
-            "",
+            "25 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2503",
@@ -4782,7 +4802,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2603&C=Title",
             "Martyre de saint Valérien et saint Tiburce son frère. Commémoration de saint Grégoire, évêque de Nysse. 26 Athor",
-            "",
+            "26 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2603",
@@ -4829,7 +4849,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2703&C=Title",
             "Martyre de saint Jacques l’intercis. Consécration de l’église de saint Victor le martyr, le fils de Romanos. 27 Athor",
-            "",
+            "27 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2703",
@@ -4886,7 +4906,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2803&C=Title",
             "Martyre de saint Sarabamôn, évêque de Nikiou. 28 Athor",
-            "",
+            "28 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2803",
@@ -4923,7 +4943,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=2903&C=Title",
             "Commémoration des 3 fêtes majeures du Seigneur : l’Annonciatio, la Nativité et Pâques. Martyre du pape Pierre, le sceau des martyrs, le dix-septième patriarche de la rédicaton de saint arc. Martyre de saint Clément 1er, le pape de Rome. Martyre de sainte Catherine d’Alexandrie. 29 Athor",
-            "",
+            "29 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=2903",
@@ -5025,7 +5045,7 @@ ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=3003&C=Title",
             "Martyre de saint Macaire. Martyre de saint Jean de Qalyoub, le moine. Décès de saint Acace, patriarche de Constantinople. Consécration de l’églisede saint Côme et saint Damien, de leurs frères et de leur mèe. 30 Athor",
-            "",
+            "30 هاتور",
         ],
         [
             Prefix.synaxarium + "&D=3003",
