@@ -337,6 +337,13 @@ table{
   /*background-color: darkslategray !important;*/
   border-radius: 10px;
 }
+.sideTitle {
+  border: solid;
+  border-color: rgb(124, 108, 108);
+  border-radius: 10px;
+  margin-top: 3px;
+  width: 98%;
+}
 
 
 /* The sidebar links */
@@ -358,10 +365,10 @@ table{
 .sideBar .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 10px;
   font-size: 36px;
-  margin-left: 50px;
   margin-bottom: 15px ;
+  padding: 0px 0px;
 }
 
 /* The button used to open the sidebar */
