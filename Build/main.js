@@ -722,7 +722,7 @@ function toggleSideBars() {
  */
 async function openSideBar(sideBar) {
     let btnText = String.fromCharCode(9776) + "Close Sidebar";
-    let width = "30%";
+    let width = "45%";
     sideBar.style.width = width;
     sideBar.classList.remove("collapsed");
     sideBar.classList.add("extended");
