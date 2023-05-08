@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v4.0 (added inline mapping to complier)';
+const version = 'v4.1 (added inline mapping to complier)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
