@@ -796,7 +796,7 @@ function DetectFingerSwipe() {
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
             console.log('xDiff = ', xDiff, 'yDiff = ', yDiff);
             /*most significant*/
-            if (xDiff > 17) {
+            if (xDiff > 13) {
                 /* right to left swipe */
                 console.log('xDiff = ', xDiff);
                 if (leftSideBar.classList.contains("extended") &&
@@ -808,7 +808,7 @@ function DetectFingerSwipe() {
                     openSideBar(rightSideBar);
                 }
             }
-            else if (xDiff < -17) {
+            else if (xDiff < -13) {
                 /* left to right swipe */
                 console.log('xDiff = ', xDiff);
                 if (leftSideBar.classList.contains("collapsed") &&
