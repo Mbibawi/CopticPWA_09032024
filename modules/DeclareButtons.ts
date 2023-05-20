@@ -259,7 +259,7 @@ const btnIncenseDawn: Button = new Button({
     AR: "بخور باكر",
     FR: "Encens Aube",
   },
-  prayersSequence: [...IncensePrayers],
+  prayersSequence: [...IncensePrayersSequence],
   prayersArray: [],
   showPrayers: true,
   children: [], //we are initiating and empty array in order to avoid errors later
@@ -290,7 +290,7 @@ const btnIncenseDawn: Button = new Button({
       //We will set the children of the button:
       btnIncenseDawn.children = [btnReadingsGospelIncenseDawn];
       //we will also set the prayers of the Incense Dawn button
-      btnIncenseDawn.prayersSequence = [...IncensePrayers];
+      btnIncenseDawn.prayersSequence = [...IncensePrayersSequence];
     })();
 
     (function adaptCymbalVerses() {
@@ -408,7 +408,7 @@ const btnIncenseVespers: Button = new Button({
     AR: "بخور عشية",
     FR: "Incense Vespers",
   },
-  prayersSequence: [...IncensePrayers],
+  prayersSequence: [...IncensePrayersSequence],
   showPrayers: true,
   docFragment: new DocumentFragment(),
   languages: [...prayersLanguages],
@@ -537,8 +537,8 @@ const btnMassStCyril: Button = new Button({
     }
     //Setting the standard mass prayers sequence
     btnMassStCyril.prayersSequence = [
-      ...MassPrayers.MassCommonIntro,
-      ...MassPrayers.MassStCyril,
+      ...MassPrayersSequences.MassCommonIntro,
+      ...MassPrayersSequences.MassStCyril,
       ...[
         "MC_TheHolyBodyAndTheHolyBlodPart3&D=$copticFeasts.AnyDay",
         "PC_KyrieElieson&D=$copticFeasts.AnyDay",
@@ -548,7 +548,7 @@ const btnMassStCyril: Button = new Button({
         "MC_Confession&D=$copticFeasts.AnyDay",
         "MC_ConfessionComment&D=$copticFeasts.AnyDay",
       ],
-      ...MassPrayers.Communion,
+      ...MassPrayersSequences.Communion,
     ];
     return btnMassStCyril.prayersSequence;
   },
@@ -612,11 +612,11 @@ const btnMassStGregory: Button = new Button({
     }
     //Setting the standard mass prayers sequence
     btnMassStGregory.prayersSequence = [
-      ...MassPrayers.MassCommonIntro,
-      ...MassPrayers.MassStGregory,
-      ...MassPrayers.MassCallOfHolySpirit,
-      ...MassPrayers.MassLitanies,
-      ...MassPrayers.Communion,
+      ...MassPrayersSequences.MassCommonIntro,
+      ...MassPrayersSequences.MassStGregory,
+      ...MassPrayersSequences.MassCallOfHolySpirit,
+      ...MassPrayersSequences.MassLitanies,
+      ...MassPrayersSequences.Communion,
     ];
 
     //removing irrelevant prayers from the array
@@ -686,11 +686,11 @@ const btnMassStBasil: Button = new Button({
     ];
     //Setting the standard mass prayers sequence
     btnMassStBasil.prayersSequence = [
-      ...MassPrayers.MassCommonIntro,
-      ...MassPrayers.MassStBasil,
-      ...MassPrayers.MassCallOfHolySpirit,
-      ...MassPrayers.MassLitanies,
-      ...MassPrayers.Communion,
+      ...MassPrayersSequences.MassCommonIntro,
+      ...MassPrayersSequences.MassStBasil,
+      ...MassPrayersSequences.MassCallOfHolySpirit,
+      ...MassPrayersSequences.MassLitanies,
+      ...MassPrayersSequences.Communion,
     ];
 
     //We scroll to the beginning of the page after the prayers have been displayed
@@ -843,7 +843,7 @@ const btnMassUnBaptised: Button = new Button({
   },
   docFragment: new DocumentFragment(),
   showPrayers: true,
-  prayersSequence: MassPrayers.MassUnbaptized,
+  prayersSequence: MassPrayersSequences.MassUnbaptized,
   prayersArray: PrayersArray,
   languages: [...prayersLanguages],
   onClick: () => {
@@ -1313,31 +1313,31 @@ const btnBookOfHours:Button =  new Button({
       }
 
           //Adding the repeated psalms (psalms that are found in the 6ths and 9th hour), before pasalm 122
-      bookOfHours.DawnPrayers.splice(bookOfHours.DawnPrayers.indexOf(Prefix.bookOfHours + '1stHourPsalm142&D=$copticFeasts.AnyDay'), 0, ...DawnPsalms);
+      bookOfHours.DawnPrayersSequence.splice(bookOfHours.DawnPrayersSequence.indexOf(Prefix.bookOfHours + '1stHourPsalm142&D=$copticFeasts.AnyDay'), 0, ...DawnPsalms);
       if (mass) {
         //mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
         if (Season == Seasons.GreatLent) {
           //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
           btnBookOfHours.prayersSequence = [
-            ...bookOfHours.ThirdHourPrayers,
-            ...bookOfHours.SixthHourPrayers,
-            ...bookOfHours.NinethHourPrayers,
-            ...bookOfHours.EleventhHourPrayers,
+            ...bookOfHours.ThirdHourPrayersSequence,
+            ...bookOfHours.SixthHourPrayersSequence,
+            ...bookOfHours.NinethHourPrayersSequence,
+            ...bookOfHours.EleventhHourPrayersSequence,
             ...PrayersArray,
-            ...bookOfHours.TwelvethHourPrayers];
+            ...bookOfHours.TwelvethHourPrayersSequence];
         } else if (Season == Seasons.PentecostalDays
           || todayDate.getDay() == 0
           || todayDate.getDay() == 6
           || lordFeasts.indexOf(copticDate) > -1) {
           //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day,
           btnBookOfHours.prayersSequence = [
-            ...bookOfHours.ThirdHourPrayers,
-            ...bookOfHours.SixthHourPrayers];
+            ...bookOfHours.ThirdHourPrayersSequence,
+            ...bookOfHours.SixthHourPrayersSequence];
         } else {
           btnBookOfHours.prayersSequence = [
-            ...bookOfHours.ThirdHourPrayers,
-            ...bookOfHours.SixthHourPrayers,
-            ...bookOfHours.NinethHourPrayers];
+            ...bookOfHours.ThirdHourPrayersSequence,
+            ...bookOfHours.SixthHourPrayersSequence,
+            ...bookOfHours.NinethHourPrayersSequence];
         }
       } else {
         //This is the case where the Book of Prayers is displayed entirely in order to be used as is outside of any mass or liturgy context
@@ -1406,7 +1406,7 @@ const btnBookOfHours:Button =  new Button({
  */
 function setGospelPrayers(liturgie: string): string[] {
   //this function sets the date or the season for the Psalm response and the gospel response
-  let prayers = [...GospelPrayers],
+  let prayers = [...GospelPrayersSequence],
     date: string;
 
   let psalm: number = prayers.indexOf(Prefix.psalmResponse),
