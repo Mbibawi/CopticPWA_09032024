@@ -760,7 +760,7 @@ function convertCopticFontFromAPI(htmlElement:HTMLElement) {
   request.open('POST', apiURL);
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   request.setRequestHeader( 'accept', 'text');
-  request.send('from=' + fontFrom + '&encoding=unicode&action=translate&data=' + encodeURI(text));
+  request.send('from=' + encodeURI(fontFrom) + '&encoding=unicode&action=translate&data=' + encodeURI(text));
   request.responseType = 'text';
   request.onload = () => {
   if(request.status === 200){
