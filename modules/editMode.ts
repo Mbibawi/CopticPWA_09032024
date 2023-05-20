@@ -65,7 +65,8 @@ function addEdintingButtons(getButtons?:Function[]) {
     exportSequenceBtn,
     addRowBtn,
     deleteRowBtn,
-    splitBelowBtn
+    splitBelowBtn,
+    convertCopticFontsFromAPIBtn
   ];
 
   getButtons.forEach(fun => fun(btnsDiv));
@@ -112,6 +113,13 @@ function addTableToSequenceBtn(btnsDiv:HTMLElement){
   let newButton = createEditingButton(
     () => addTableToSequence(document.getSelection().focusNode.parentElement),
     "Add To Sequence"
+    );
+    btnsDiv.appendChild(newButton);
+}
+function convertCopticFontsFromAPIBtn(btnsDiv: HTMLElement) {
+  let newButton = createEditingButton(
+    () => convertCopticFontFromAPI(document.getSelection().focusNode.parentElement),
+    "Convert Coptic Font"
     );
     btnsDiv.appendChild(newButton);
 }
@@ -744,25 +752,27 @@ function getLanguages(arrayName):string[] {
   return languages
 }
 
-async function convertCopticFontFromAPI(fontFrom:string = 'Coptic1', text:string = '') {
-  const
-      //parag: HTMLElement = document.getSelection().focusNode.parentElement,
-    apiURL: string = 'https://www.copticchurch.net/coptic_language/fonts/convert';
-
-  text = 'Pinis] abba Antwni@ nem pi`;myi abba Paule@ nem pisomt =e=;=u Makarioc@ abba Iwannyc pikoloboc@ abba Piswi@ abba Paule@ nenio] =e=;=u `nrwmeoc Maximoc nem Dometioc@ abba Mwcy@ abba Iwannyc <amy@ abba Daniyl@ abba Icidwroc@ abba Paqwm@ abba Senou]@ ke abba Pavnou]@ abba Parcwma@ abba Teji. Ke pantwn twn or;odidaxantwn@ ton logon@ tyc `aly;iac@ Or;odoxwn@ `epickopwn `precbuterwn@ diakonwn `klyrikwn ky laikwn ke toutwn ke pantwn@ Or;odoxwn@ `amyn';
-  
+function convertCopticFontFromAPI(htmlElement:HTMLElement) {
+  const apiURL: string = 'https://www.copticchurch.net/coptic_language/fonts/convert';
+  let fontFrom: string = prompt('Provide the font', 'Coptic1/CS Avva Shenouda');
+  let text: string = htmlElement.innerText;
   let request = new XMLHttpRequest();
   request.open('POST', apiURL);
-  //request.setRequestHeader('mode', 'cors');
-  //request.setRequestHeader('origin', 'https://www.copticchurch.net');
-  //.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  //request.setRequestHeader( 'accept', 'text');
-  //request.setRequestHeader( 'User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36 OPR/87.0.4390.45');
-
-  request.send('from=' + fontFrom + '&encoding=unicode&action=translate&data=' + text);
-  console.log(request.getAllResponseHeaders());
-  console.log(request.responseText);
-  console.log(request);
-  if (request.statusText === 'OK') parag.innerText = await request.responseText;
-
+  request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  request.setRequestHeader( 'accept', 'text');
+  request.send('from=' + fontFrom + '&encoding=unicode&action=translate&data=' + encodeURI(text));
+  request.responseType = 'text';
+  request.onload = () => {
+  if(request.status === 200){
+    let textArea: HTMLElement = new DOMParser()
+      .parseFromString(request.response, 'text/html')
+      .getElementsByTagName('textarea')[0];
+      console.log('converted text = ', textArea.innerText);
+      htmlElement.innerText = textArea.innerText;
+      return textArea.innerText;
+  } else {
+    console.log('error status text = ', request.statusText);
+    return request.statusText;
+  }
+  }
 }
