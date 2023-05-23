@@ -508,6 +508,7 @@ function createHtmlElementForPrayerEditingMode(
       p.classList.add("PrayerText");
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
+    p.title = dataRoot;
     text = prayers[x];
     p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
@@ -781,3 +782,4 @@ function convertCopticFontFromAPI(htmlElement:HTMLElement) {
   }
   }
 }
+
