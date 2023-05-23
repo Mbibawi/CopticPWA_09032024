@@ -2,12 +2,10 @@ PrayersArray = [
   [
     [
       Prefix.commonIncense +
-        "EleysonImasComment&D=$copticFeasts.AnyDay&C=Comment",
+        "EleysonImas&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "بعد صلاة التسبحة وتلاوة مزامير باكر وتحليل الكهنة، يصافح الكاهن اخوته الكهنة وطلب السماح من المصلين ويخضع أمام الهيكل، ويفتح ستر الهيكل من الشمال إلى اليمين قائلأ:",
     ],
-  ],
-  [
     [
       Prefix.commonIncense + "EleysonImas&D=$copticFeasts.AnyDay&C=Title",
       "",
@@ -2505,12 +2503,10 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "EfnotiNaynanPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يرفع الكاهن الصليب وعليه ثلاث شمعات موقدة ووجهه إلى الشرق ويقول:",
     ],
-  ],
-  [
     [
       Prefix.commonPrayer + "EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Priest",
       "Ⲫⲛⲟⲩϯⲛⲁⲓ ⲛⲁⲛ: Ⲑⲉϣⲟⲩⲛⲁⲓ ⲉ̀ⲣⲟⲛ: Ϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ.",
@@ -2567,12 +2563,10 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.incenseDawn + "GodHaveMercyOnUsRefrainComment&D=GL&C=Comment",
+      Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=GL&C=Comment",
       "",
       "في رفع بخور باكر في صوم يونان وأيام الصوم المقدس، دون سبوته وآحاده، يطفئون شمع المذبح ويغلقون ستر الهيكل ويجلسون. تقرأ النبوات. وبعدها تقال الطلبة.",
     ],
-  ],
-  [
     [
       Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=GL&C=Title",
       "",
@@ -2873,13 +2867,11 @@ PrayersArray = [
   [[Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=$copticFeasts.AnyDay"]],
   [
     [
-      Prefix.commonIncense +
-        "GospelLitanyComment1&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer +
+        "GospelPrayerPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يقدم الشماس للكاهن درج البخور فيضع يد بخور في المجمرة ويقول:.",
     ],
-  ],
-  [
     [
       Prefix.commonPrayer + "GospelPrayerPart1&D=$copticFeasts.AnyDay&C=Title",
       "",
@@ -2924,87 +2916,70 @@ PrayersArray = [
       "",
       "الذين سبقوا فرقدوا نيحهم المرضي اشفهم لأنك انت هو حياتنا كلنا وخلاصنا كلنا ورجاؤنا كلنا وشفاؤنا كلنا وقيامتنا كلنا .",
     ],
-  ],
-  [
     [
-      Prefix.commonIncense +
-        "GospelLitanyComment2&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ويكمل سرا:ـ.",
     ],
     [
-      Prefix.commonIncense +
-        "GospelLitanyComment2&D=$copticFeasts.AnyDay&C=CommentText",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "وأنت الذي نرسل لك إلى فوق المجد والكرامة والسجود مع أبيك الصالح ومع الروح القدس المحيي المساوي لك. الآن وكل أوان وإلى دهر الدهور كلها آمين",
     ],
-  ],
-  [
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يصعد الكاهن إلى الهيكل ويضع يد بخور في المجمرة قائلاً:ـ",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=CommentText",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "مجداً وإكراماً، إكراماً ومجداً للثالوث الأقدس، الآب والابن والروح القدس. الآن وكل أوان وإلى دهر الدهور آمين.",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ويصعد الشماس بالإنجيل إلى الهيكل ويعطي الكاهن البخور للإنجيل وهو دائر حول المذبح دورة واحدة يميناً، والشماس حامل الإنجيل أمامه، ويقول الكاهن صلاة سمعان الشيخ (لو 2: 29-32):",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=CommentText",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "الآن يا سيد تطلق عبد بسلام كقولك، لأن عيني قد أبصرتا خلاصك الذي أعددته قدام جميع الشعوب. نورا تجلى للأمم ومجداً لشعبك إسرائيل.",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يقدم الكاهن كتاب البشارة لباقي الكهنة الحاضرين ليقبلوه وهو يقول:",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=CommentText",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "أما أنتم فطوبى لأعينكم لأنها تبصر، ولآذانكم لأنها تسمع.",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ثم يقدم الكاهن كتاب البشارة للشمامسة الحاضرين ليقبلوه وهو يقول:",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=CommentText",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=CommentText",
       "Prosternez-vous devant l’Évangile de Jésus-Christ.",
       "اسجدوا لإنجيل يسوع المسيح",
     ],
     [
-      Prefix.commonPrayer +
-        "GospelLitanyComment3&D=$copticFeasts.AnyDay&C=Comment",
-      "",
-      "ثم يقف الكاهن عند باب الهيكل ويضع كتاب البشارة على رأسه ويقول:",
-    ],
-  ],
-  [
-    [
-      Prefix.commonPrayer + "GospelPrayerPart3&D=$copticFeasts.AnyDay&C=Diacon",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲥⲧⲁⲑⲏⲧⲉ ⲙⲉⲧⲁ ⲫⲟⲃⲟⲩ Ⲑⲉⲟⲩ ⲁ̀ⲕⲟⲩⲥⲱⲙⲉⲛ ⲧⲟⲩ ⲁ̀ⲅⲓⲟⲩ ⲉⲩⲁ̀ⲅⲅⲉⲗⲓⲟⲩ.",
       "Levons-nous avec crainte de Dieu et soyons attentifs pour écouter le Saint Évangile.",
       "ستاثي تي ميتا فوفو ثيؤ، آكوس أومين تو آجيو إف آنجيليو.",
       "قفوا بخوف الله لسماع الإنجيل المقدس.",
     ],
     [
-      Prefix.commonPrayer + "GospelPrayerPart3&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+      "",
+      "ثم يقف الكاهن عند باب الهيكل ويضع كتاب البشارة على رأسه ويقول:",
+    ],
+    [
+      Prefix.commonPrayer + "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Priest",
       "Ϥⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ϫⲉ ⲫⲏⲉⲑⲛⲏⲟⲩ ϧⲉⲛ ⲫ̀ⲣⲁⲛ ⲙ̀ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲧⲉ ⲛⲓϫⲟⲙ: ⲕⲩⲣⲓⲉ̀ ⲉⲩⲗⲟⲅⲏⲥⲟⲛ ⲉⲕ ⲧⲟⲩ ⲕⲁⲧⲁ (…) ⲁⲅⲓⲟⲩ ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ ⲧⲟ ⲁⲛⲁⲅⲛⲱⲥⲙⲁ.",
       "Béni soit celui qui vient au Nom du Seigneur, notre Seigneur. Ô Dieu bénis la lecture de l’évangile selon Saint (…).",
       "افيسمارؤوت إنجي في إثنيو، خين افران إم إبي تشويس إنتي ني جوم، كيريه افلوغيسون إك تو كاتا (....) آجيو إف آنجليون تو آناغنوسما.",
@@ -3062,11 +3037,9 @@ PrayersArray = [
       "",
       "من مزامير تراتيل أبونا داوود النبي والملك الطاهر بركاته على جميعنا آمين",
     ],
-  ],
-  [
     [
       Prefix.commonPrayer +
-        "GospelIntroductionPsalmComment&D=$copticFeasts.AnyDay&C=Comment",
+        "PsalmIntroduction&D=$copticFeasts.AnyDay&C=Comment",
       "Le Diacre lit le psaume et à la fin l’assemblée répond : Alléluia !",
       "(يقرأ الشماس المزمور وفي ختامه يرد الشعب: الليلويا",
     ],
@@ -3080,11 +3053,9 @@ PrayersArray = [
       "افيسمارؤوت إنجي في إثنيو، خين افران إم إبي تشويس إنتي ني جوم، كيريه افلوغيسون إك تو كاتا (....) آجيو إف آنجليون تو آناغنوسما.",
       "مبارك الآتي باسم الرب، ربنا وإلهنا ومخلصنا يسوع المسيح ابن الله الحي، الذي له المجد الدائم إلى الآبد آمين.",
     ],
-  ],
-  [
     [
       Prefix.commonPrayer +
-        "GospelIntroductionGospelComment&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelIntroductionPart2&D=$copticFeasts.AnyDay&C=Comment",
       "Le Diacre lit l’évangile et conclut en disant : Gloire à notre Dieu éternellement, amen !",
       "يقرأ الشماس الإنجيل وفي ختامه يقول: المجد لإلهنا إلى الأبد آمين.",
     ],
@@ -3517,14 +3488,19 @@ PrayersArray = [
     ],
   ],
   [
+    [Prefix.massCommon +
+      "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Title",
+      "",
+      "En présence du Patriarche, d'un évêque ou d'un métropolite",
+      "",
+      "في حضور البطرك أو اسقف أو مطران"
+    ],
     [
       Prefix.commonPrayer +
-        "PrayThatGodHaveMercyOnUsIfBishopComment1&D=$copticFeasts.AnyDay&C=Comment",
+        "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comment",
       "Si un évêque ou un métropolite est présent, on ajoute :",
       "وفي حضور الأسقف أو المطران يضاف:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Diacon",
@@ -3537,12 +3513,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "PrayThatGodHaveMercyOnUsIfBishopComment2&D=$copticFeasts.AnyDay&C=Comment",
+      "PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Comment",
       "Ensuite il continue :",
       "ثم يكمل:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Diacon",
@@ -3895,12 +3869,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CallOfTheHolySpiritPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يرشم الكاهن القربانة ثلاثة رشومات بسرعة ويقول بصوت عال:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay&C=Priest",
@@ -3923,12 +3895,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CallOfTheHolySpiritPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "CallOfTheHolySpiritPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يرشم الكاهن الكأس ثلاثة رشومات بسرعة ويقول بصوت عال:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "CallOfTheHolySpiritPart2&D=$copticFeasts.AnyDay&C=Priest",
@@ -3961,12 +3931,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitaniesIntroductionComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitaniesIntroduction&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يأخذ الكاهن لفافة على يده اليمنى وأخرى على يده اليسرى ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "LitaniesIntroduction&D=$copticFeasts.AnyDay&C=Priest",
@@ -4005,12 +3973,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyForTheChurchPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyForTheChurchPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يقول الكاهن وهو يشير بيده إلى الدم أولاً وإلى الجسد ثانياً:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "LitanyForTheChurchPart2&D=$copticFeasts.AnyDay&C=Priest",
@@ -4139,80 +4105,74 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "GiNayNanPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "GiNayNan&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يلف الكاهن يده بلفافة ويلتفت إلى الشعب بغير رشم ويقول باللحن القطعة الآتية:",
     ],
-  ],
-  [
     [
-      Prefix.massCommon + "GiNayNanPart1&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "Ⲡⲉⲕⲗⲁⲟⲥ ⲅⲁⲣ ⲛⲉⲙ ⲧⲉⲕⲉⲕⲕ̀ⲗⲏⲥⲓⲁ ⲥⲉϯϩⲟ ⲉ̀ⲣⲟⲕ:",
       "Ton peuple, ton peuple, ton peuple et ton Eglise crient",
       "",
       "شعبك وكنيستك يطلبون .",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
-        "LitanyForThePlacePart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "GiNayNan&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يلتفت إلى الشرق ويكمل:",
     ],
-  ],
-  [
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "ⲟⲩⲟϩ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧⲕ ⲉ̀ⲫ̀ⲓⲱⲧ ⲛⲉⲙⲁⲕ: ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ:",
       "vers Toi, et par Toi vers le Père avec Toi en disant :",
       "",
       "إليك وبك إلى الآب معك قائلين:",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ Ⲫ̀ⲓⲱⲧ ⲡⲓⲠⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu le Père Pantocrator.",
       "",
       "ارحمنا ، ارحمنا ، ارحمنا يا الله الآب ضابط الكل.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ ⲡⲉⲛⲥⲱⲧⲏⲣ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu notre Sauveur.",
       "",
       "ارحمنا ، ارحمنا ، ارحمنا يا الله مخلصنا.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ ⲟⲩⲟϩ ⲛⲁⲓ ⲛⲁⲛ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu et aie pitié de nous.",
       "",
       "ارحمنا ، ارحمنا ، ارحمنا يا الله ثم ارحمنا.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Priest",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Priest",
       "Ⲕⲩⲣⲓⲉ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ.",
       "Pitié Seigneur.",
       "",
       "يا رب ارحم.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Assembly",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Assembly",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ Ⲫ̀ⲓⲱⲧ ⲡⲓⲠⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu le Père Pantocrator.",
       "",
       "ارحمنا ، ارحمنا ، ارحمنا يا الله الآب ضابط الكل.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Assembly",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Assembly",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ ⲡⲉⲛⲥⲱⲧⲏⲣ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu notre Sauveur.",
       "",
       "ارحمنا، ارحمنا ، ارحمنا يا الله مخلصنا.",
     ],
     [
-      Prefix.massCommon + "GiNayNanPart2&D=$copticFeasts.AnyDay&C=Assembly",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Assembly",
       "Ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ: ϫⲉ ⲛⲁⲓ ⲛⲁⲛ Ⲫϯ ⲟⲩⲟϩ ⲛⲁⲓ ⲛⲁⲛ.",
       "Aie pitié de nous, aie pitié de nous, aie pitié de nous ô Dieu et aie pitié de nous.",
       "",
@@ -4232,12 +4192,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyOfTheRiversIntroComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyOfTheRiversPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "من 12 بؤونة إلى 9 بابه:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "LitanyOfTheRiversPart1&D=$copticFeasts.AnyDay&C=Title",
@@ -4266,12 +4224,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyOfThePlantsComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "من 10 بابه إلى 10 طوبة:",
     ],
-  ],
-  [
     [
       Prefix.massCommon + "LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Priest",
       "",
@@ -4290,12 +4246,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyOfTheFruitsComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyOfTheFruits&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "من 11 طوبة إلى 11 بؤونة:",
     ],
-  ],
-  [
     [
       Prefix.massCommon + "LitanyOfTheFruits&D=$copticFeasts.AnyDay&C=Priest",
       "",
@@ -4314,12 +4268,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyCombinedForRiversPlantsAndFruitsComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyCombinedForRiversPlantsAndFruits&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "أوشية أهوية السماء وثمرات الأرض ومياه الأنهار والزروع والعشب ونبات الحقل:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "LitanyCombinedForRiversPlantsAndFruits&D=$copticFeasts.AnyDay&C=Priest",
@@ -4508,12 +4460,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CommemorationOfTheDepartedPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "CommemorationOfTheDepartedPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يضع الكاهن يده في بخور في المجمرة ويده مستورة بلفافة ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "CommemorationOfTheDepartedPart1&D=$copticFeasts.AnyDay&C=Priest",
@@ -4603,12 +4553,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "FractionIntroductionComment&D=$copticFeasts.AnyDay&C=Comment",
+        "LetUsAlsoGiveThanksToGod&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يخضع الكاهن برأسه نحو الكهنة والشمامسة بلا رشم ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "LetUsAlsoGiveThanksToGod&D=$copticFeasts.AnyDay&C=Priest",
@@ -4629,12 +4577,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart1&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "يأخد الكاهن الجسد الطاهر بيده اليمنى ويضعه على يده اليسرى ويضع السبابة اليمنى على يمين الاسبيدايقون ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "TheHolyBodyAndTheHolyBlodPart1&D=$copticFeasts.AnyDay&C=Priest",
@@ -4655,12 +4601,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart2&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ثم يرفع اصبعه من على الجسد ويغمس طرفه في الدم الكريم، ثم يرفع اصبعه قليلاً من الدم ويرشم به رشماً واحداً مثال الصليب على الدم داخل الكأس ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "TheHolyBodyAndTheHolyBlodPart2&D=$copticFeasts.AnyDay&C=Priest",
@@ -4681,12 +4625,10 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart3&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ثم يرشم بالدم الذي بإصبعه الجسد الطاهر رشماً فوق المكان الذي قسمه أولاً، أي بجانب الاسباديقون، ورشماً أسفل، أي على ظهره، ثانياً، ويقول:",
     ],
-  ],
-  [
     [
       Prefix.massCommon +
         "TheHolyBodyAndTheHolyBlodPart3&D=$copticFeasts.AnyDay&C=Priest",
@@ -4798,6 +4740,17 @@ PrayersArray = [
       "آمين آمين آمين، أؤمن، أؤمن، أؤمن، وأعترف إلى النفس الأخير، أن هذا هو الجسد المحيى الذي أخذه ابنِكَ الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح، من سيدتنا وملكتنا كلنا والدة الإله القديسة الطاهرة مريم. وجَعَلهُ واحداً مع لاهوتِهِ بغير اختلاط ولا امتزاج ولا تغيير. واعترف الاعتراف الحسن أمام بيلاطس البنطي. وأسلمَهُ عنا على خشبة الصليب المقدسة بإرادتِهِ وحدِهِ عنا كلنا. بالحقيقة أؤمن أن لاهوتهُ لم يفارق ناسوتَهُ لحظةً واحدة ولا طرفة عين. يُعطى عنا خلاصاً وغفراناً للخطايا وحياةً أبدية لمن يتناول منه. أ ؤمن،.أؤمن،.أؤمن،.أن هذا هو بالحقيقة آمين.",
     ],
     [
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      "",
+      "يقول الكاهن وهو محني الرأس:",
+    ],
+    [
+      Prefix.massCommon +
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
+      "",
+      "إن كل مجد وكل كرامة وكل سجود كل حين، يليق بالثالوث القدوس، الآب والابن والروح القدس، الآن وكل أوان وإلى دهر الدهور كلها آمين. حِلْ واغفر واصفح لنا يا الله عن زلاتنا، التي صنعناها بإرادتنا والتي صنعناها بغير إرادتنا، التي فعلناها بمعرفة والتي فعلناها بغير معرفة، الخفية والظاهرة، يا رب اغفرها لنا من أجل اسمك القدوس الذي دعي علينا. كرحمتك يا رب وليس كخطايانا. يا رئيس الحياة وملك الدهور، كلمة الله الآب، ربنا وإلهنا ومخلصنا يسوع المسيح، الخبز الحقيقي الذي نزل من السماء، واهب الحياة، لمن يتناوله، اجعلنا أهلاً، بغير وقوع في الدينونة، أن نتناول من جسدك المقدس ودمك الكريم. وليصيرنا تناولنا من أسرارك المقدسة، واحداً معك إلى الانقضاء، وباركنا. أنت هو ابن الله. لك المجد معه ومع الروح القدس المحيي، إلى الآبد آمين. إجعلنا مستحقين كلنا يا سيدنا أن نتناول من جسدك المقدس، ودمك الكريم، طهارة لأنفسنا وأجسادنا وأرواحنا، ومغفرة لخطايانا وآثمنا، لكي نكون جسداً واحداً وروحاً واحداً معك. المجد لك، مع أبيك الصالح والروح القدس إلى الأبد آمين. يا ربنا يسوع المسيح، اجعلنا مستحقين أن نتناول من جسدك الطاهر، ودمك الكريم، ولا يكون لنا دينونة. لكن كما قلت لتلاميذك الأطهار، خذوا من جسدي ودمي لمغفرة خطاياكم، يكون لنا شركة مع تلاميذك الأطهار، لننال بتناولنا لأسرارك المحيية لمغفرة خطايانا وصفحاً لآثامنا، وطهراً لأنفسنا وثباتاً على الإيمان باسمك القدوس، بطلبات الطاهرة مرت مريم وكافة قديسيك. آمين.",
+    ],
+    [
       Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲁⲙⲏⲛ ⲁ̀ⲙⲏⲛ ⲁ̀ⲙⲏⲛ ϯⲛⲁϩϯ ϯⲛⲁϩϯ ϯⲛⲁϩϯ ϫⲉ ⲑⲁⲓ ⲧⲉ ϧⲉⲛ ⲟⲩⲙⲉⲑⲙⲏⲓ ⲁ̀ⲙⲏⲛ. Ⲧⲱⲃϩ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ ⲛⲉⲙ ⲉ̀ϫⲉⲛ ⲭ̀ⲣⲓⲥⲧⲓⲁⲛⲟⲥ ⲛⲓⲃⲉⲛ ⲉ̀ⲧⲁⲩϫⲟⲥ ⲛⲁⲛ ⲉⲑⲃⲏⲧⲟⲩ ϫⲉ ⲁ̀ⲣⲓⲡⲉⲛⲙⲉⲩⲓ̀ ϧⲉⲛ ⲡ̀ⲏⲓ ⲙ̀Ⲡⲟ̅ⲥ̅.",
       "Amen. Amen. Amen, Je crois, je crois, je crois que cela est en vérité. Amen. Implorez pour nous et pour tous les chrétiens qui nous ont recommandé de nous souvenir d’eux dans la maison de Seigneur.",
@@ -4811,89 +4764,76 @@ PrayersArray = [
       "",
       "سلام ومحبة يسوع المسيح معكم. رتلوا بنشيد الليلويا. صلوا من أجل التناول باستحقاقٍ من الأسرار المقدسة الطاهرة السمائية، يا ربُ ارحم.",
     ],
-  ],
-  [
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
-      "",
-      "يقول الكاهن وهو محني الرأس:",
-    ],
-    [
-      Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
-      "",
-      "إن كل مجد وكل كرامة وكل سجود كل حين، يليق بالثالوث القدوس، الآب والابن والروح القدس، الآن وكل أوان وإلى دهر الدهور كلها آمين. حِلْ واغفر واصفح لنا يا الله عن زلاتنا، التي صنعناها بإرادتنا والتي صنعناها بغير إرادتنا، التي فعلناها بمعرفة والتي فعلناها بغير معرفة، الخفية والظاهرة، يا رب اغفرها لنا من أجل اسمك القدوس الذي دعي علينا. كرحمتك يا رب وليس كخطايانا. يا رئيس الحياة وملك الدهور، كلمة الله الآب، ربنا وإلهنا ومخلصنا يسوع المسيح، الخبز الحقيقي الذي نزل من السماء، واهب الحياة، لمن يتناوله، اجعلنا أهلاً، بغير وقوع في الدينونة، أن نتناول من جسدك المقدس ودمك الكريم. وليصيرنا تناولنا من أسرارك المقدسة، واحداً معك إلى الانقضاء، وباركنا. أنت هو ابن الله. لك المجد معه ومع الروح القدس المحيي، إلى الآبد آمين. إجعلنا مستحقين كلنا يا سيدنا أن نتناول من جسدك المقدس، ودمك الكريم، طهارة لأنفسنا وأجسادنا وأرواحنا، ومغفرة لخطايانا وآثمنا، لكي نكون جسداً واحداً وروحاً واحداً معك. المجد لك، مع أبيك الصالح والروح القدس إلى الأبد آمين. يا ربنا يسوع المسيح، اجعلنا مستحقين أن نتناول من جسدك الطاهر، ودمك الكريم، ولا يكون لنا دينونة. لكن كما قلت لتلاميذك الأطهار، خذوا من جسدي ودمي لمغفرة خطاياكم، يكون لنا شركة مع تلاميذك الأطهار، لننال بتناولنا لأسرارك المحيية لمغفرة خطايانا وصفحاً لآثامنا، وطهراً لأنفسنا وثباتاً على الإيمان باسمك القدوس، بطلبات الطاهرة مرت مريم وكافة قديسيك. آمين.",
-    ],
-    [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ثم يركع الكاهن أمام المذبح ويطلب الحل من الله بالتناول، ثم يقوم ويأخذ الحل من إخوته الكهنة قائلاً:",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "أخطأت حاللوني",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "ويقول للشعب:",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "أخطأت سامحوني",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "إذا ناول الكاهن الشعب الجسد الطاهر يقول:ـ",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "الجسد الذي لعمانوئيل إلهنا، هذا هو بالحقيقة آمين.",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "إذا ناول الكاهن الشعب الدم الكريم يقول:ـ",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "الدم الذي لعمانوئيل إلهنا، هذا هو بالحقيقة آمين.",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "إذا فرغ الكاهن من مناولة الذين في الهيكل، يضع في الصينية القبة، ويغطيها بلفافة من حرير، ثم يلتفت إلى الغرب ويبارك الشعب بالصينية مثال الصليب ويقول:ـ",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "القدسات للقديسين، مُباركُ الرب يسوع المسيح ابن الله وقدوس الروح القدس، آمين.",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
       "فيسجدون جمعيهم من كبيرهم إلى صغيرهم ويقولون",
     ],
     [
       Prefix.massCommon +
-        "ConfessionComment&D=$copticFeasts.AnyDay&C=CommentText",
+        "Confession&D=$copticFeasts.AnyDay&C=CommentText",
       "",
       "مبارك الآتي باسم الرب",
     ],
     [
-      Prefix.massCommon + "ConfessionComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
       "",
-      "ثم يخرج الكاهن من الهيكل ويناول الشعب. فالمتناول يضرب الميطانية، ثم يتاول.",
+      "ثم يخرج الكاهن من الهيكل ويناول الشعب. فالمتناول يضرب الميطانية، ثم يتناول.",
     ],
   ],
   [
@@ -17505,119 +17445,119 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "Ô tous les chœurs célestes",
       "",
       " يا كل الصفوف السمائيين",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "(Ⲱ̀ ⲛⲓⲙ ⲛⲁⲓ) (ⲅ̅) ⲥⲩⲙⲫⲱⲛⲓⲁ",
       "Quelle harmonieuse symphonie:",
       "",
       "يا للاتفاقات الآتية:",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲛⲓⲭⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲛ̀ⲛⲁⲛⲓⲫⲏⲟⲩⲓ: ⲁⲣⲓⲯⲁⲗⲓⲛ ⲉ̀ⲡⲉⲛⲛⲟⲩϯ ϧⲉⲛ ⲛⲓⲃⲱϩⲉⲙ ⲛ̀ⲧⲉ ⲛⲓϩⲱⲥ.",
       "Ô tous les chœurs célestes, chantez à notre Dieu sur des airs de louanges",
       "",
       "يا كُلَّ الصِفوف السمائيين، رَتِلِوا لإلهنا بِنَغَمَاتْ التسبيح.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲟⲩⲛⲟϥ ⲙ̀ⲙⲱⲧⲉⲛ ⲛⲉⲙⲁⲛ ⲙ̀ⲫⲟⲟⲩ ⲉⲣⲉⲧⲉⲛⲣⲁϣⲓ: ϧⲉⲛ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲫ̀ⲛⲏⲃ Ⲡⲭ̅ⲥ̅.",
       "Et exaltez-vous avec nous en ce jour, réjouis par la résurrection du Christ Seigneur.",
       "",
       "وابتهجوا معنا اليومَ فَرٍحين، بقيامة السيد المسيح.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲁⲩϫⲱⲕ ⲉⲃⲟⲗ ⲙ̀ⲫⲟⲟⲩ ⲛ̀ϫⲉ ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲓⲁ: ⲟⲩⲟϩ ⲁ̀ⲛⲓⲥⲁϫⲓ ⲛ̀ⲧⲉ ⲛⲉⲛⲓⲟϯ ϣⲱⲡⲓ.",
       "Aujourd’hui sont accomplies les prophéties et se sont réalisées les paroles des premiers pères",
       "",
       "اليومَ قَدْ كَمُلَتْ النبوات، وقَدْ تَمَتْ أقوالُ الآباء الأولين.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲉⲑⲃⲉ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲡ̀ϭⲟⲓⲥ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟ̀ⲩⲧ: ⲉϥⲟ̀ⲓ ⲛ̀ϣⲟⲣⲡ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲉ̀ⲛⲕⲧ.",
       "Par la résurrection du Seigneur d’entre les morts; Lui qui est le premier parmi les défunts.",
       "",
       "بقيامة الرَبِّ مَن بين الأموات، وهو بَدءُ المُضْطَجعين.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲁϥⲧⲱⲛϥ ⲛ̀ϫⲉ Ⲡ̀ⲟ̅ⲥ̅ ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲫⲏⲉⲧⲉⲛⲕⲟⲧ: ⲓⲉ ⲕⲉ ⲟⲩⲁⲓ ⲉϥⲑⲁϧⲓ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡ̀ⲏⲣⲡ.",
       "Le Seigneur est ressuscité comme celui qui dors; et comme un ivrogne du vin",
       "",
       "قَدْ قَامَ الربُ مِثلُ النائِم، وكالثمل من الخمرة.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲁϥⲁ̀ⲓⲧⲉⲛ ⲛ̀ⲣⲉⲙϩⲉ ⲉ̀ⲃⲟⲗ ϩⲁ ϯⲙⲉⲧⲃⲱⲕ ⲛ̀ϣⲁϣⲓ. Ⲁϥⲓ̀ⲛⲓ ⲛ̀ⲁ̀ⲙⲉⲛϯ ⲉ̀ⲟ̀ⲩϫⲓⲛⲥⲱⲛϩ:",
       "Il a emmené les captifs, il détruisit les portes de cuivre, et cassa les charnières en fer. Il a changé notre punition en salut.",
       "",
       "وحَطَّمَ أبوابَهُ النُحاسْ، وكَسَرَ متاريسَهُ الحديد كسراً، وأبَدلَ لنا العُقُوبَةَ بالخلاص.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲁϥϧⲟⲙϧⲉⲙ ⲛ̀ϩⲁⲛⲡⲩⲗⲏ ⲛ̀ϩⲟⲙⲧ:Ⲁϥⲕⲱϣ ⲛϩⲁⲛⲙⲟⲭⲗⲟⲩⲥ ⲙ̀ⲃⲉⲛⲓⲡⲓ: ⲛⲧ̀ϣⲉⲃⲓⲱ ⲙ̀ⲡⲓⲥⲟϩⲓ ⲁϥⲭⲱ ⲛ̀ⲟ̀ⲩⲟ̀ⲩϫⲁⲓ.",
       "Il a ramené Adam au paradis, avec joie, allégresse et réjouissance; lui et ses fils qui étaient enfermés (il les a ramenés) au lieu de la joie une autre fois.",
       "",
       "وأعادَ آدم إلى الفِردوسْ، بِفَرَح وبَهجَة ومَسرّة، هو وبنيه الذين كانوا في المحبوس، مَحَلَ النعِيمَ دُفعَةً أُخرى.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "Christ est ressuscité",
       "",
       " المَسيحُ قامَ من الاموات",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲭⲣⲓⲥⲧⲟⲥ ⲁ̀ⲛⲉⲥⲧⲏ ⲉⲕⲛⲉⲕⲣⲱⲛ: ⲑⲁⲛⲁⲧⲱ ⲑⲁⲛⲁⲧⲟⲛ ⲡⲁⲧⲏⲥⲁⲥ: ⲕⲉ ⲧⲓⲥ ⲉⲛ ⲧⲓⲥ ⲙ̀ⲛⲏⲙⲁⲥⲓ ⲍⲱⲏⲛ ⲭⲁⲣⲓⲥⲁⲙⲉⲛⲟⲥ.",
       "Christ est ressuscité des morts. Par la mort, Il a vaincu la mort. A ceux qui sont dans les tombeaux Il a accordé la vie éternelle.",
       "خريستوس أنيستي إيكنيكرون ثاناتو ثاناتون باتيساس كي تيس إنتيس إمني ماسي زوئين خاريسا مينوس.",
       "المَسيحُ قامَ من الأموات، بالمَوتْ داسَ الموتْ والذين في القُبور أنعمَ لهُمْ بالحياة الأبدية.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲇⲟⲝⲁ ⲡⲁⲧⲣⲓ ⲕⲉ Ⲩ̀Ϯⲓⲱ ⲕⲉ ⲁⲅⲓⲱ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲕⲉ ⲛⲩⲛ ⲕⲉ ⲁ̀ⲓ̀ ⲕⲉ ⲓⲥ ⲧⲟⲩⲥ ⲉ̀ⲱ̀ⲛⲁⲥ ⲧⲱⲛ ⲉ̀ⲱ̀ⲛⲱⲛ:ⳣ ⲁ̀ⲙⲏⲛ:",
       "Gloire au Père, au Fils et au Saint Esprit, maintenant, toujours et dans les siècles des siècles. Amen.",
       "ذوكصاباتري كى إيو كي آجيو ابنفماتي. كي نين كي آإي، كي استوس إي أوناس طون أؤنون آمين.",
       "المَجدُ للآب والابن والروح القدس. الآن وكل أوان وإلى دَهرِ الدهور آمين.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "Tonsina Narkhon",
       "",
       " تونسينا نارخون",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲧⲟⲛ ⲥⲩⲛ ⲁⲛⲁⲣⲭⲟⲛ Ⲗⲟⲅⲟⲛ Ⲡⲁⲧⲣⲓ ⲕⲉ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲧⲟⲛ ⲉⲕⲡⲁⲣⲑⲉⲛⲟⲩ ⲧⲉⲭⲑⲉⲛⲧⲁ ⲓⲥ ⲥⲱⲧⲏⲣⲓⲁⲛ ⲏ̀ⲙⲟⲛ:",
       "Nous louons et nous glorifions avec foi le Verbe consubstantiel au Père et au Saint-Esprit dans l’éternité, né de la vierge pour notre salut,",
       "طون سينا نارخـون لوغون باتري كي ابنيفماتي: تـون إكبارثينو تيك ثيندا يس سوتيريان إيـمون:",
       "نُسَبحُكَ نحنُ المؤمنين، ونُمجدُ الكلمة المساوي للآب والروح في الأزلية، المولود من العذراء، لخلاصِنا.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "ⲁⲛⲩⲙⲛⲏⲥⲱⲙⲉⲛ ⲡⲓⲥⲧⲓ ⲕⲉ ⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲱⲙⲉⲛ: ⲟ̀ⲧⲓ ⲏⲩⲇⲟⲕⲏ ⲥⲉ ⲥⲁⲣⲕⲓ: ⲁ̀ⲛⲉⲗⲑⲓⲛ ⲉⲛ ⲧⲱ ⲥ̀ⲧⲁⲩⲣⲟ: ⲕⲉ ⲑⲁⲛⲁⲧⲟⲛ ⲏ̀ⲡⲟⲙⲓⲛⲉ: ⲕⲉ ⲉ̀ⲅⲓⲣⲉ ⲧⲟⲩⲥ ⲧⲉⲑⲛⲉⲱ̀ⲟ̀: ⲧⲁⲥ ⲉⲛⲧⲏ ⲉⲛⲇⲟⲝⲱ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲁⲩⲧⲟⲩ.",
       "Parce qu’Il lui a plu d’être crucifié corporellement, et de supporter la mort, et de relever les morts par sa glorieuse résurrection",
       "أنيم ني سومين بيستي كى إبروس كى نيسـومين: أوتي إفذوكي سى ساركي: أنيلثين إنتو إستافرو كى ثاناتون إيبو ميني: كى إيجيري تـوس نيثنى أوأوو : طاس إنتي إنذوكسو أناستاسي أفتو.",
       "لأنَهُ سُرَّ وارتضى بالجسد أن يعلوا على الصليب، ويحتَمِلَ الموت، ويُنهضَ الموتى بقيامَتِهِ المجيدة.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "",
       "",
       " إن الحَجَرْ لمّا خُتِمَ",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲧⲟⲩ ⲗⲓⲑⲟⲩ ⲥⲫ̀ⲣⲁⲅⲓⲥⲑⲉⲛ ⲧⲟⲥ ⲩ̀ⲡⲟ ⲧⲱⲛ Ⲓ̀ⲟⲩⲇⲉⲱ̀ⲛ: ⲕⲉ ⲥⲧⲣⲁⲧⲓⲱ ⲧⲱⲛ ⲫⲓⲗⲁⲥ ⲥⲟⲛⲧⲱⲛ ⲧⲟ ⲁⲭⲣⲁⲛⲧⲟⲛ ⲥⲟⲩ ⲥⲱⲙⲁ: ⲁ̀ⲛⲉⲥⲧⲏⲥ ⲧⲣⲓⲏ̀ⲙⲉⲣⲟⲥ ⲥⲱⲧⲏⲣ: ⲇⲱⲣⲟⲩⲙⲉⲛⲟⲥ ⲧⲱ ⲕⲟⲥⲙⲱ ⲧⲏⲛ ⲍⲱⲏ̀ⲛ.",
       "Pendant que le rocher était scellé par les Juifs et Ton corps était gardé par les soldats, Tu ressuscita le troisième jour O Sauveur, donnant la vie au monde.",
       "توليثو سفراجيس ثين توس : إيبو توني أو ذيئون كيه اس تراتيو تون فيلاس سون تونتو اكران تون سـو سوما آنيس تيس تري إي ميروس ذورو مينـوس تو كوزمو تين ذوئين سـوتير.",
@@ -17626,56 +17566,56 @@ PrayersArray = [
         " في اليوم الثالث أيها المُخلِص، مانحاً العالم الحياة.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲇⲓⲁ ⲧⲟⲩⲧⲟ ⲉ̀ⲇⲩⲛⲁⲙⲓⲥ ⲧⲱⲛ ⲟ̀ⲩⲣⲁⲛⲱⲛ ⲉ̀ⲃⲟⲱ̀ⲛ ⲥⲓ ⲍⲱⲟ̀ⲇⲟⲧⲁ: ⲇⲟⲝⲁ ⲧⲏ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ: ⲇⲟⲝⲁ ⲧⲏ ⲃⲁⲥⲓⲗⲓⲁ ⲥⲟⲩ: ⲇⲟⲝⲁ ⲧⲏ ⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲥⲟⲩ: ⲙⲟⲛⲉ ⲫⲓⲗⲁⲛⲑ̀ⲣⲱⲡⲉ.",
       "Pour cette raison, les forces célestes crient vers Toi: «O donneur de la vie, gloire à Ta résurrection. O Christ, gloire à Ton royaume, gloire à Ton économie, Toi le seul ami du genre humain »",
       "ذيا توتـو إيذينا ميس تون اورانون : اف اوؤن: ثي زو أوذوتا. ذوكصاتي اناستاسي سو اخريستيه: ذوكصـاتي فاسيليا سو: ذوكصـاتي إي كونو مياسو، موني فيلان اثروبيه.",
       "لأجل هذا قوات السمَوات هتفوا إليك يا واهب الحياة. المجد لقيامتك أيها المسيح، المَجْدُ لمُلكِكَ، المَجْدُ لتدبيرك يا مُحِبْ البشر وحدك.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲧⲏⲛ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲛ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ Ⲥⲱⲧⲏⲣ: ⲁⲅⲅⲉⲗⲓⲩⲙⲛⲟⲩⲥⲓⲛ ⲉⲛ ⲟⲩⲣⲁⲛⲓⲥ: ⲕⲉ ⲏ̀ⲙⲁⲥ ⲧⲟⲩⲥ ⲉ̀ⲡⲓ ⲅⲩⲥ ⲕⲁⲧⲁⲝⲓⲱⲥⲟⲛ: ⲉⲛ ⲕⲁⲑⲁⲣⲁ ⲕⲁⲣⲇⲓⲁ̀ ⲥⲉ ⲇⲟⲝⲁⲍⲓⲛ.",
       "Ô Christ notre Sauveur, les anges dans les cieux louent Ta résurrection. Nous te demandons de nous rendre dignes, nous qui sommes sur terre, de Te glorifier toujours avec des cœurs purs.",
       "تين آناستاسين سو اخريستي سوتير، أنجيليومنوسي إن إن أورانيس، كي إماس توس إبي جوس كاتا ذيوكون، إن كاثارا كارجيا سي ذوكسازين.",
       "من أجل قيامتك أيُها المسيح مُخَلِّصنا، تُسَبِّح ملائكة السماء. ونَحنُ الذين على الأرض، أَهِّلْنا أن نُمَجِّدُكَ بقلوب طاهرة.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "Le Christ est ressuscité",
       "",
       " المسيح قام من الأموات",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ ⲫⲏⲉ̀ⲧⲁϥⲙⲟⲩ ⲁϥϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲫ̀ⲙⲟⲩ ⲟⲩⲟϩ ⲛⲏⲉⲧ̀ⲭⲏ ϧⲉⲛ ⲛⲓⲙ̀ϩⲁⲩ ⲁϥⲉⲣϩ̀ⲙⲟⲧ ⲛⲱⲟⲩ ⲙ̀ⲡⲓⲱⲛϧ ⲛⲉ̀ⲛⲉϩ.",
       "Le Christ est ressuscité des morts, celui qui est mort a écrasé la mort, a ceux qui sont dans les tombeaux, il a accorde la vie éternelle.",
       "بى إخرستوس أفتونف إيفول خين نى إثمو أوت. في إيتاف مو أفهومى إيجين إفمو أووه نى إتكى خين نى إمهاف أفئير إهموت نوؤو إمبى أونخ. إن إينيه.",
       "المَسيحُ قامَ من بين الأموات، بالموت داس الموت، والذين في القبور انعم لهم بالحياة الأبدية.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Title",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Title",
       "",
       "Pashoys Isos",
       "",
       " باشويس إيسوس",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ: ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩϣⲟⲙⲧ: ⲉⲕⲉ̀ⲧⲟⲩⲛⲟⲥⲧⲉⲛ ϧⲉⲛ ⲧⲉⲕϫⲟⲙ.",
       "Ô Seigneur Jesus Christ qui est ressuscité d’entre les morts, le troisième jour, relève-nous par Ta force.",
       "باشويس إيسوس بإخرستوس فيئطاف طونف إيفول خين نى إثموؤت خين بى إيهوؤ إماه شومت إيك إطون أوستين خين تيك جوم.",
       "يا ربي يسوع المَسيحْ الذي قامَ من الأموات في اليوم الثالث، أقِمنا بقوتك.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ ⲛⲉⲙ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲛⲓⲁ̀ⲅⲅⲗⲟⲥ ⲛⲉⲙ ⲛⲓⲁ̀ⲣⲭⲏⲁ̀ⲅⲅⲉⲗⲟⲥ: ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛⲉⲙ ⲛⲓⲉ̀ⲝⲟⲩⲥⲓⲁ: ⲛⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛⲓⲙⲉⲧϭⲟⲓⲥ ⲛⲓϫⲟⲙ.",
       "Les Chérubins et les Séraphins les anges et les archanges les armées et les seigneuries, les trônes et les puissances.",
       "ني شيروفيم نيم ني سيرافيم، ني آنجيلوس نيم ني أرشي آنجيلوس، ني سترتيا، ني إكسوسيا، ني إثرونوس ني متشويش ني جوم،",
       "الشاروبيم والسيرافيم، الملائِكة ورؤساء الملائِكة، والعَساكرْ والسلاطين والكراسي والأرباب.",
     ],
     [
-      Prefix.praxisResponse + " &D=$Seasons.PentecostalDays&C=Diacon",
+      "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ ϫⲉ ⲭ̀ⲟⲩⲁⲃ ⲟⲩⲟϩ ⲭ̀ⲟⲩⲁⲃ ⲭ̀ⲟⲩⲁⲃ Ⲡⲟ̅ⲥ̅ ⲛ̀ⲛⲓⲉ̀ⲱⲛ Ⲭⲣⲓⲥⲧⲟⲥ ⲁⲛⲉⲥⲧⲏ ⲉⲕ ⲉⲛⲕⲣⲱⲛ.",
       "Proclamant et disant, « Saint, Saint, Saint Seigneur des siècles Christ est ressuscité d’entre les morts ».",
       "إفئوش إفول إفجو إمموس: إكؤواب، اووه إكؤواب، إكؤواب ابشويس إننين أون، باخريستوس آنيستي إكنيكرون.",

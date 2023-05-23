@@ -542,8 +542,7 @@ const MassPrayersSequences = {
             Prefix.massCommon+"ConfessionIntroductionPart5&D=$copticFeasts.AnyDay", 
             Prefix.commonPrayer+"AmenWeBelieve&D=$copticFeasts.AnyDay", 
             Prefix.massCommon+"Confession&D=$copticFeasts.AnyDay", 
-            Prefix.commonPrayer+"ZoksasiKyrie&D=$copticFeasts.AnyDay", 
-            Prefix.massCommon+"ConfessionComment&D=$copticFeasts.AnyDay", 
+            Prefix.commonPrayer+"ZoksasiKyrie&D=$copticFeasts.AnyDay"
             ], //The litanies. They are common to all masses except 
         Communion: [
         Prefix.massCommon+"CommunionPsalm150&D=$copticFeasts.AnyDay", 
