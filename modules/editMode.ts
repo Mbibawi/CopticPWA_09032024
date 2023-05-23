@@ -265,8 +265,13 @@ function changeTitle(htmlParag: HTMLElement) {
   if (!htmlParag) return;
   let htmlRow = htmlParag.parentElement as HTMLElement;
   let title: string = prompt("Provide The Title", htmlRow.dataset.root);
-  htmlRow.dataset.root = title;
-  Array.from(htmlRow.children).forEach((child:HTMLElement) => {if(child.tagName === 'P' && child.dataset.root) child.dataset.root = title});
+  if (!title) return;
+    htmlRow.dataset.root = title;
+    Array.from(htmlRow.children)
+      .forEach(
+        (child: HTMLElement) => {
+          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = title
+        });
 }
 
 /**

@@ -1533,16 +1533,16 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲁⲕϯ ⲛⲁⲛ ⲙ̀ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲛ̀ⲧⲉ ϯⲙⲉⲧϣⲏⲣⲓ: ⲉⲛϩⲱⲥ ⲉⲛⲥ̀ⲙⲟⲩ ⲉⲣⲟⲕ: ⲛⲉⲛ ⲛⲉⲕⲁ̀ⲅⲅⲉⲗⲟⲥ.",
-      "Tu nous as donné♪ l'esprit filial.♪ Nous Te louons et Te bénissons♪ avec Tes anges.",
+      "Tu nous as donné♪ l'esprit filial.♪ Nous Te louons et Te bénissons♪ avec Tes anges.",
       "أكتى نان إمبى ابنفما♪ انتى ميت شير♪ إنهوس إن إزمو إيروك♪ نيم نيك آنجيلوس.",
-      "أعطيتنا روح النبوة♪ نسبحك♪ ونباركك♪ مع ملائكتك.",
+      "أعطيتناروح النبوة♪ نسبحك♪ ونباركك♪ مع ملائكتك.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϧⲉⲛ ⲡ̀ϫⲓⲛⲑ̀ⲣⲉϥⲓ̀ ⲛⲁⲛ ⲉ̀ϧⲟⲩⲛ: ⲛ̀ϫⲉ ⲫ̀ⲛⲁⲩ ⲛ̀ϣⲱⲣⲡ: ⲱ̀ Ⲡⲭ̅ⲥ̅ Ⲡⲉⲛⲛⲟⲩϯ: ⲡⲓⲟⲩⲱⲓⲛⲓ ⲛ̀ⲧⲁⲫ̀ⲙⲏⲓ. Ⲙⲁⲣⲟⲩϣⲁⲓ ⲛ̀ϧⲏⲧⲉⲛ: ⲛ̀ϫⲉ ⲛⲓⲗⲟⲅⲓⲥⲙⲟⲥ ⲛ̀ⲧⲉ ⲡⲓⲟⲩⲱⲓⲛⲓ: ⲟⲩⲟϩ ⲙ̀ⲡⲉⲛⲑ̀ⲣⲉϥϩⲟⲃⲥⲧⲉⲛ: ⲛ̀ϫⲉ ⲡ̀ⲭⲁⲕⲓ ⲛ̀ⲛⲓⲡⲁⲑⲟⲥ",
       "Lorsque le jour♪ se lève♪ ô Christ notre Dieu♪ la vraie Lumière.",
       "خين إبجين إثريفئى نان إيخون♪ إنجى إفناف إشورب♪ أو بخرستوس بيننوتى♪ بى أوؤينى انطا إفمى.",
-      "عندما يدخل وقت♪ باكر الينا♪ أيها المسيح الهنا♪ النور الحقيقي.",
+      "عندما يدخل وقت♪  باكر الينا♪ أيها المسيح الهنا♪ النور الحقيقي.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1556,7 +1556,7 @@ PrayersArray = [
       "Ϩⲓⲛⲁ ⲛ̀ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛ̀ⲛⲟⲏ̀ⲧⲟⲥ ⲛⲉⲙ Ⲇⲁⲩⲓⲇ: ⲉ̀ⲛⲱϣ ⲟⲩⲃⲏⲕ: ⲟⲩⲟϩ ⲉ̀ⲛϫⲱ ⲙ̀ⲙⲟⲥ.",
       "Ainsi nos pensées♪ Te louent avec David♪ en clamant♪ et en disant :",
       "هينا إنتين هوس إيروك♪ إن نو إيتوس نيم دافيد♪ إنؤش أوفيك♪ أووه إنجو إمموس.",
-      "لكي نسبحك♪ عقلياً مع داود♪ صارخين نحوك♪ قائلين.",
+      "لكي نسبحك♪ عقلياً مع داود♪ صارخين نحوك♪ قائلين.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1577,21 +1577,21 @@ PrayersArray = [
       "Ⲫϯ ⲡⲓϥⲁⲓⲣⲱⲟⲩϣ: ⲛ̀ⲣⲉϥⲉ̀ⲣⲡⲉⲑⲛⲁⲛⲉϥ: ⲡⲓⲣⲉϥⲉⲣⲟⲓⲕⲟⲛⲟⲙⲓⲛ: ⲛ̀ⲛⲉϥⲥⲱⲧⲡ ⲛ̀ⲕⲁⲗⲱⲥ.",
       "Ô Dieu attentif♪ et bienfaiteur♪ qui conduit♪ bien Ses élus.",
       "إفنوتى بى فاى روؤش♪ إنريف إربيثنانيف♪ بى ريف إر إيكونومين♪ إن نيف سوتب انكالوس.",
-      "يا الله المهتم♪ صانع الخيرات♪ مدبر♪ مختاريه حسناً.",
+      "يا الله المهتم♪ صانع الخيرات♪ مدبر♪ مختاريه حسناً.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲡⲓⲣⲉϥⲉⲣϩⲉⲙⲓ ⲉ̀ⲧϫⲟⲣ: ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲫⲱⲧ ϩⲁⲣⲟϥ: ⲫ̀ⲣⲉϥϭⲓϣϣⲱⲟⲩ ⲛ̀ⲧⲉ ⲟⲩⲟⲛ ⲛⲓⲃⲉⲛ: ⲛⲟϩⲉⲙ ⲛ̀ⲧⲟⲩⲟⲩϫⲁⲓ.",
       "Puissant guide pour ceux♪ qui ont recours à Lui♪ toi qui désire♪ que chacun soit sauvé.",
       "بى ريف إرهيمى إتجور♪ إن نى إيطاف فوت هاروف♪ إفريف ثشيشوؤ انتى أؤ اون نيفين♪ نوهيم إنتوؤجاى.",
-      "المدبر القوي♪ للملتجئين إليه♪ المتشوق لخلاص♪ ونجاة كل أحد.",
+      "المدبر القوي♪ للملتجئين إليه♪ المتشوق لخلاص♪ ونجاة كل أحد.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϧⲉⲛ ⲧⲉⲕⲙⲉⲧⲭ̀ⲣⲏⲥⲧⲟⲥ: ⲁⲕⲥⲟⲃϯ ⲛⲁⲛ ⲙ̀ⲡⲓⲉ̀ϫⲱⲣϩ: ⲁⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ ⲙ̀ⲡⲁⲓⲉ̀ϩⲟⲟⲩ: ⲉ̀ⲛⲟⲓ ⲛ̀ⲁⲑⲛⲟⲃⲓ.",
       "Par Ta bonté♪ Tu as fait passer la nuit.♪ Donne-nous de traverser♪ ce jour sans péché.",
       "خين تيك ميت إخريستوس♪ أكسوفتى نان إمبى إيجوره♪ آرى إهموت نان إمباى إيهوؤ♪ إنؤى إن أثنوفى.",
-      "بصلاحك♪ هيأت لنا الليل♪ انعم لنا بهذا اليوم♪ ونحن بغير خطية.",
+      "بصلاحك♪ هيأت لنا الليل♪ انعم لنا بهذا اليوم♪ ونحن بغير خطية.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1633,7 +1633,7 @@ PrayersArray = [
       "Ⲉⲩⲉⲣⲥⲩⲙⲫⲱⲛⲓⲛ: ϧⲉⲛ ⲟⲩⲁ̀ⲅⲁⲡⲏ ⲙ̀ⲙⲏⲓ: ⲛⲉⲩⲁ̀ⲅⲅⲉⲗⲓⲕⲏ: ⲕⲁⲧⲁ ⲛⲓⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ.",
       "En bonne entente♪ d’un amour véritable♪ en accord avec l'Évangile♪ comme les apôtres.",
       "إف إر سيمفونين♪ خين أو آغابى إممى♪ إن إف انجيليكى♪ كاطا نى آبوسطولوس.",
-      "متفقين♪ بمحبة حقيقية♪ إنجيلية♪ كمِثلِ الرُسل.",
+      "متفقين♪ بمحبة حقيقية♪ إنجيلية♪ كمِثلِ الرُسل.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1647,35 +1647,35 @@ PrayersArray = [
       "Ⲉϥⲑⲱϩⲥ ⲙ̀ⲙⲏⲛⲓ ⲛⲓⲃⲉⲛ: ⲛⲓϧⲉⲗⲗⲟⲓ ⲛⲉⲙ ⲛⲓⲁⲗⲱⲟⲩⲓ̀: ⲛⲉⲙ ⲛⲓϧⲉⲗϣⲓⲣⲓ: ⲛⲉⲙ ⲛⲓⲇⲓⲁ̀ⲕⲟⲛⲓⲥⲧⲏⲥ.",
       "Qui oint chaque jour♪ les anciens les jeunes♪ les enfants♪ et les serviteurs.",
       "افثوهس إممينى نيفين♪ نى خيلوى نيم نى آلوؤيى♪ نيم نى خيلشيرى♪ نيم نى ذياكونيس تيس.",
-      "يمسح كل يوم♪ الشيوخ والصبيان♪ والفتيان♪  والخدام.",
+      "يمسح كل يوم♪ الشيوخ والصبيان♪ والفتيان♪  والخدام.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲛⲁⲓ ⲉ̀ⲧⲁϥϩⲟⲧⲡⲟⲩ ⲉ̀ⲩⲥⲟⲡ: ⲛ̀ϫⲉ Ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲉⲑ̅ⲩ̅: ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲟⲩⲕⲩⲑⲁⲣⲁ: ⲉⲩⲥ̀ⲙⲟⲩ ⲉ̀Ⲫϯ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ.",
       "Eux que l'Esprit Saint♪ a rassemblés♪ comme la cithare♪ ils louent Dieu en tout temps.",
       "ناى إيطاف هوتبو إفسوب♪ إنجى بى ابنفما اثؤاب♪ إمفريتى إنؤكيثارا ♪ إف إزمو إى إفنوتى إنسيو نيفين.",
-      "هؤلاء الذين ألفهم♪ الروح القدس♪ معاً مثل قيثارة♪  مسبحين الله كل حين.",
+      "هؤلاء الذين ألفهم♪ الروح القدس♪ معاً مثل قيثارة♪  مسبحين الله كل حين.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϧⲉⲛ ϩⲁⲛⲯⲁⲗⲙⲟⲥ ⲛⲉⲙ ϩⲁⲛϩⲱⲥ: ⲛⲉⲙ ϩⲁⲛϩⲱⲇⲏ ⲙ̀ⲡ̅ⲛ̅ⲁ̅ⲧⲓⲕⲟⲛ: ⲙⲡⲓⲉ̀ϩⲟⲟⲩ ⲛⲉⲙ ⲡⲓⲉ̀ϫⲱⲣϩ: ϧⲉⲛ ⲟⲩϩⲏⲧ ⲛ̀ⲁⲧⲭⲁⲣⲱϥ.",
       "Sans cesse jour et nuit♪ de tout cœur par des psaumes♪ des louanges♪ et des cantiques spirituels.",
       "خين هان بسالموس نيم هان هوس♪ نيم هان هوذى إمبنفما تيكون♪ إمبى إيهوؤ نيم بى إبجوره♪ خين أوهيت إن آت كاروف.",
-      "بمزامير♪ وتسابيح وترانيم♪ روحية النهار والليل♪ بقلب لا يفتُر.",
+      "بمزامير♪ وتسابيح وترانيم♪ روحيةالنهار والليل♪ بقلب لا يفتُر.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲛⲑⲟ ⲑ̀ⲙⲁⲩ ⲙ̀ⲡⲓⲟⲩⲱⲓⲛⲓ: ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲙ̀ⲙⲁⲥⲛⲟⲩϯ: ⲁ̀ⲣⲉϥⲁⲓ ϧⲁ ⲡⲓⲗⲟⲅⲟⲥ: ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ.",
       "Ô Mère de la Lumière♪ Mère de Dieu vénérée♪ Tu as porté le Verbe♪ Le Verbe illimité.",
       "إنثو إثماف امبى أوو أوينى♪ إت طايوت إم ماسنوتى♪ آرى فاى خابى لوغوس♪ بى آخوريتوس.",
-      "أنت يا أم النور♪ المكرمة♪  والدة الاله♪ حملت الكلمة غير المحوي.",
+      "أنت يا أم النور♪ المكرمة♪ والدة الاله♪ حملت الكلمة غير المحوي.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲙⲉⲛⲉⲛⲥⲁ ⲑ̀ⲣⲉⲙⲁⲥϥ: ⲁⲣⲉⲟ̀ϩⲓ ⲉⲣⲉⲟⲓ ⲙ̀ⲡⲁⲣⲑⲉⲛⲟⲥ: ϧⲉⲛ ϩⲁⲛϩⲱⲥ ⲛⲉⲙ ϩⲁⲛⲥ̀ⲙⲟⲩ: ⲧⲉⲛϭⲓⲥⲓ ⲙ̀ⲙⲟ",
       "Et L’ayant enfanté♪ Tu es demeurée vierge.♪ Nous t'exaltons♪ avec louanges et bénédictions.",
       "مينينسا إثرى ماسف♪ آرى أوهى إريؤى امبارثينوس♪ خين هان هوس نيم هان إزمو♪ تين تشيسى إممو.",
-      "ومن بعد أن ولدته♪ بقيت عذراء♪ نعظمك♪  بتسابيح وبركات.",
+      "ومن بعد أن ولدته♪ بقيت عذراء♪ نعظمك♪ بتسابيح وبركات.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1689,7 +1689,7 @@ PrayersArray = [
       "Ⲁⲛⲟⲛ ϩⲱⲛ ⲧⲉⲛⲧⲱⲃϩ: ⲉⲑⲣⲉⲛϣⲁϣⲛⲓ ⲉⲩⲛⲁⲓ: ϩⲓⲧⲉⲛ ⲛⲉⲡ̀ⲣⲉⲥⲃⲓⲁ̀: ⲛ̀ⲧⲟⲧϥ ⲙ̀ⲡⲓⲙⲁⲓⲣⲱⲙⲓ",
       "Aussi nous demandons♪ d’avoir miséricorde♪ par tes intercessions auprès♪ de l’Ami du genre humain.",
       "آنون هون تين طوفه♪ إثرين شاشنى إفناى♪ هيتين نى ابريسفيا♪ إن توتف إمبى ماى رومى.",
-      "ونحن أيضاً نطلب♪ أن نفوز برحمة♪ بشفاعاتك♪ لدي محب البشر.",
+      "ونحن أيضاً نطلب♪ أن نفوز برحمة♪ بشفاعاتك♪ لدي محب البشر.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1724,7 +1724,7 @@ PrayersArray = [
       "ⲉⲣⲉ ϯⲡ̀ⲣⲟⲥⲧⲁⲧⲏⲥ: ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ: ⲛ̀ⲑⲟ ⲅⲁⲣ ⲁ̀ⲗⲏⲑⲱⲥ: ⲡⲉ ⲡ̀ϣⲟⲩϣⲟⲩ ⲙ̀ⲡⲉⲛⲅⲉⲛⲟⲥ.",
       "Salut à celle qui intercède♪ pour nos âmes♪ tu es en vérité♪ la fierté du genre humain.",
       "شيرى تى إبروستاتيس♪ انتى إبسيشى♪ إنثو غار آليثوس♪ بى إبشوشو إمبين جينوس.",
-      "السلام لشفيعة نفوسنا♪ أنت بالحقيقة♪ فخر♪ جنسنا.",
+      "السلام لشفيعةنفوسنا♪ أنت بالحقيقة♪ فخر♪ جنسنا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1745,7 +1745,7 @@ PrayersArray = [
       "Ϩⲓⲧⲉⲛ ⲛⲓⲡ̀ⲣⲉⲥⲃⲓⲁ̀: ⲛⲧⲉ ϯⲑⲉⲟ̀ⲧⲟⲕⲟⲥ ⲉ̅ⲑ̅ⲩ̅ Ⲙⲁⲣⲓⲁ̀: Ⲡⲟ̅ⲥ̅ ⲁⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ: ⲙ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ.",
       "Par les intercessions♪ de Marie Mère de Dieu♪ Seigneur accorde nous♪ la rémission de nos péchés.",
       "هيتين نى ابريسفيا♪ إنتى تى ثيؤطوكوس اثؤاب ماريا♪ إبشويس آرى إهموت نان♪ امبى كو إيفول انتى نين نوفى.",
-      "بشفاعات♪ والدة الإله♪ القديسة مريم♪ يا رب انعم لنا بمغفرة خطايانا.",
+      "بشفاعات♪ والدة الإله♪ القديسة مريم♪ يا رب انعم لنابمغفرة خطايانا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1759,7 +1759,7 @@ PrayersArray = [
       "Ⲉⲩⲟ̀ϩⲓ ⲉ̀ⲣⲁⲧⲟⲩ: ⲙ̀ⲡⲉⲙ̀ⲑⲟ ⲙ̀ⲡⲓⲑ̀ⲣⲟⲛⲟⲥ: ⲛ̀ⲧⲉ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ.",
       "Ils se tiennent debout,♪ debout devant le trône♪ le trône du Tout-Puissant♪ en clamant et disant :",
       "إفؤهى إيراتو♪ إمبى إمثو إمبى إثرونوس♪ انتى بى بانطوكراطور♪ إف أوش إيفول افجو إمموس.",
-      "وقوف أمام♪ كرسي ضابط الكل♪ صارخين♪ قائلين.",
+      "وقوف أمام♪ كرسي ضابط الكل♪ صارخين♪ قائلين.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1773,7 +1773,7 @@ PrayersArray = [
       "Ϩⲓⲧⲉⲛ ⲛⲓⲡ̀ⲣⲉⲥⲃⲓⲁ: ⲛ̀ⲧⲉ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ ⲛ̀ⲧⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ: Ⲡⲟ̅ⲥ̅...",
       "Par les intercessions♪ de tous les chœurs des anges♪ Seigneur accorde-nous♪ le pardon de nos péchés.",
       "هيتين نى إبريسفيا♪ انتى إبخوروس تيرف إنتى نى انجيلوس♪ إبشويس آرى إهموت نان♪ امبى كو إيفول انتى نين نوفى.",
-      "بشفاعات جميع صفوف♪ الملائكة♪ يارب انعم لنا♪ بمغفرة خطايانا.",
+      "بشفاعات جميع صفوف♪ الملائكة♪ يارب انعم لنا♪ بمغفرة خطايانا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1813,16 +1813,16 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϩⲓⲧⲉⲛ ⲛⲓⲉⲩⲭⲏ: ⲛ̀ⲧⲉ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ ⲛ̀ⲧⲉ ⲛⲓⲙⲁⲣⲧⲩⲣⲟⲥ: Ⲡⲟ̅ⲥ̅....",
-      "Par les prières de tous♪ les chœurs des martyrs♪ Seigneur accorde-nous♪ le pardon de nos péchés.",
+      "Par les prières de tous♪ les chœurs des martyrs♪ Seigneur accorde-nous♪ le pardon de nos péchés.",
       "هيتين نى إفكى♪ إنتى إبخوروس تيرف إنتى نى مارتيروس♪ إبشويس آرى إهموت نان إمبي كو إيفول إنتين نوفي.",
-      "بصلوات جميع صفوف♪ الشهداء♪ يارب انعم لنا♪ بمغفرة خطايانا.",
+      "بصلوات جميع صفوف♪ الشهداء♪ يارب انعم لنا♪ بمغفرة خطايانا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲛⲏⲉ̅ⲑ̅ⲩ̅ ⲛ̀ⲧⲁⲕ: ⲉⲩⲉ̀ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲕ: ⲉⲩⲉ̀ⲥⲁϫⲓ ⲙ̀ⲡ̀ⲱ̀ⲟⲩ: ⲛ̀ⲧⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ.",
-      "Tous Tes saints♪ te bénissent♪ et proclament la gloire♪ de Ton royaume.",
+      "Tous Tes saints♪ te bénissent♪ et proclament la gloire♪ de Ton royaume.",
       "نى إثؤاب إنطاك♪ إف إى إزمو إيروك♪ إف إى ساجى إم إبؤؤ♪ إنتى تيك ميت أورو.",
-      "قديسوك♪ يباركونك♪ وينطقون♪ بمجد ملكوتك.",
+      "قديسوك♪ يباركونك♪ وينطقون♪ بمجد ملكوتك.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1836,7 +1836,7 @@ PrayersArray = [
       "Ϩⲓⲧⲉⲛ ⲛⲓⲉⲩⲭⲏ: ⲛ̀ⲧⲉ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ ⲛ̀ⲧⲉ ⲛⲓⲥ̀ⲧⲁⲩⲣⲟⲫⲟⲣⲟⲥ: ⲛⲉⲙ ⲛⲓⲑ̀ⲙⲏⲓ ⲛⲉⲙ ⲛⲓⲇⲓⲕⲉⲟⲥ: Ⲡⲟ̅ⲥ̅...",
       "Par les prières des justes et pieux♪ qui portent la croix♪ Seigneur accorde-nous♪ le Pardon de nos péchés.",
       "هيتين نى إفشى♪ إنتى إبخوروس تيرف انتى نى استافرفوروس♪ نيم نى إثميى نيم نى ذيكيئوس♪ إبشويس آرى إهموت نان إمبي كو إيفول إنتيني نوفي.",
-      "بصلوات كافة مصاف♪ لابسي الصليب♪ والأبرار والصديقين♪ يارب انعم لنا بمغفرة خطايانا.",
+      "بصلوات كافة مصاف♪ لابسي الصليب♪ والأبرار والصديقين♪ يارب انعم لنا بمغفرة خطايانا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1946,9 +1946,9 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϫⲉ ⲛ̀ⲑⲟⲕ ⲟⲩⲁ̀ⲅⲁⲑⲟⲥ: ⲟⲩⲟϩ ⲛ̀ⲛⲁⲏⲧ: ⲙⲁⲣⲟⲩⲧⲁϩⲟⲛ ⲛ̀ⲭⲱⲗⲉⲙ: ⲛ̀ϫⲉ ⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ.",
-      "Car Tu es très-Bon♪ et miséricordieux ;♪ que Ta compassion♪ nous touche rapidement.",
+      "Car Tu es très-Bon♪ et miséricordieux ;♪ que Ta compassion♪ nous touche rapidement.",
       "أووه إن نائيت♪ ماروطاهون إنكوليم♪ إنجى نيك ميت شينهيت.",
-      "لأنك أنت♪ صالح ورحوم♪ فلتدركنا♪ رأفاتك سريعاً.",
+      "لأنك أنت♪ صالح ورحوم♪ فلتدركنا♪ رأفاتك سريعاً.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1969,7 +1969,7 @@ PrayersArray = [
       "Ϫⲉ ⲧⲁϩⲓⲣⲏⲛⲏ ⲁ̀ⲛⲟⲕ: ϯϯ ⲙ̀ⲙⲟⲥ ⲛⲱⲧⲉⲛ: ⲧ̀ϩⲓⲣⲏⲛⲏ ⲙ̀Ⲡⲁⲓⲱⲧ: ϯⲭⲱ ⲙ̀ⲙⲟⲥ ⲛⲉⲙⲱⲧⲉⲛ.",
       "Ma Paix moi♪ je vous la donne♪ et la Paix de Mon Père♪ je vous la laisse aussi.",
       "جى طاهيرينى آنوك♪ تى تى إمموس نوتين♪ إتهيرينى إمبايوت♪ تى كو إمموس نيموتين.",
-      "سلامي♪ أنا أعطيكم♪ سلام أبى♪ أتركه معكم.",
+      "سلامي♪ أنا  أعطيكم♪ سلام أبى♪ أتركه معكم.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1981,21 +1981,21 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ϫⲱⲣ ⲉ̀ⲃⲟⲗ ⲛ̀ⲛⲓϫⲁϫⲓ: ⲛ̀ⲧⲉ ϯⲉⲕⲕⲗⲏⲥⲓⲁ̀: ⲁ̀ⲣⲓⲥⲟⲃⲧ ⲉ̀ⲣⲟⲥ: ⲛ̀ⲛⲉⲥⲕⲓⲙ ϣⲁ ⲉ̀ⲛⲉϩ.",
-      "Chasse les ennemis♪ les ennemis de l’Église ;♪ fortifie-la afin♪ qu’elle ne s’ébranle jamais.",
+      "Chasse les ennemis♪ les ennemis de l’Église ;♪ fortifie-la afin♪ qu’elle ne s’ébranle jamais.",
       "جور إيفول إن نى جاجى♪ إنتى تى إك إكليسيا♪ آرى سوفت إيروس♪ إن نيسكيم شا إينيه.",
       "فرق أعداء♪ الكنيسة♪ وحصنها فلا♪ تتزعزع إلى الأبد.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲉⲙⲙⲁⲛⲟⲩⲏⲗ Ⲡⲉⲛⲛⲟⲩϯ: ϧⲉⲛ ⲧⲉⲛⲙⲏϯ ϯⲛⲟⲩ: ϧⲉⲛ ⲡ̀ⲱ̀ⲟⲩ ⲛ̀ⲧⲉ Ⲡⲉϥⲓⲱⲧ: ⲛⲉⲙ Ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲉ̅ⲑ̅ⲩ̅.",
-      "Notre Dieu Emmanuel♪ est maintenant parmi nous♪ avec la gloire du Père♪ et le Saint-Esprit.",
+      "Notre Dieu Emmanuel♪ est maintenant parmi nous♪ avec la gloire du Père♪ et le Saint-Esprit.",
       "إممانوئيل بين نوتى♪ خين تين ميتى تينو♪ خين إبؤأو إنتى بيف يوت ♪ نيم بى إبنفما إثؤاب.",
       "عمانوئيل إلهنا♪ في وسطنا الآن♪ بمجد أبيه♪ والروح القدس.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
       "Ⲛⲧⲉϥⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲛ ⲧⲏⲣⲉⲛ: ⲛ̀ⲧⲉϥⲧⲟⲩⲃⲟ ⲛ̀ⲛⲉⲛϩⲏⲧ: ⲛ̀ⲧⲉϥⲧⲁⲗϭⲟ ⲛ̀ⲛⲓϣⲱⲛⲓ: ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ ⲛⲉⲙ ⲛⲉⲛⲥⲱⲙⲁ.",
-      "Qu’Il nous bénisse tous♪ et purifie nos cœurs ;♪ guérisse les maladies♪ de nos âmes et nos corps.",
+      "Qu’Il nous bénisse tous♪ et purifie nos cœurs ;♪ guérisse les maladies♪ de nos âmes et nos corps.",
       "أنتيف إزمو إيرون تيرين♪ إنتيف توفو إن نين هيت♪ إنتيف طالتشو إن نى شونى♪ إنتى نين إبسيشى نيم نين سوما.",
       "ليباركنا كلنا♪ ويُطَهر قلوبنا♪ ويشفي أمراض♪ نفوسنا وأجسادنا.",
     ],
@@ -10537,7 +10537,7 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Kiahk2&D=$Seasons.Kiahk&C=Diacon",
       "Ⲕⲁⲧⲁ ⲡ̀ⲥⲁϫⲓ ⲛ̀Ⲇⲁⲩⲓⲇ ⲡ̀ⲟⲩⲣⲟ: ⲡⲓϩⲩⲙⲛⲟⲇⲟⲥ ϧⲉⲛ ⲡⲓⲯⲁⲗⲙⲟⲥ: ϫⲉ ⲁⲥⲟ̀ϩⲓ ⲉ̀ⲣⲁⲧⲥ ⲛ̀ϫⲉ ϯⲟⲩⲣⲱ: ⲥⲁⲟⲩⲓⲛⲁⲙ ⲙ̀ⲡⲓⲑ̀ⲣⲟⲛⲟⲥ.",
-      "Car c’est ainsi que s’exprima David le chantre dans son psaume « Voici la reine qui se tient Debout à la droite du trône»",
+      "Car c’est ainsi que s’exprima David le chantre dans son psaume « Voici la reine qui se tient Debout à la droite du trône »",
       "",
       "كقول داود الملك♪ المرتل في المزمور♪ قامت الملكة♪ عن يمين العرش",
     ],
@@ -11263,7 +11263,7 @@ PrayersArray = [
       Prefix.commonDoxologies +
         "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
       "Ⲣⲱϥ ⲙ̀Ⲫ̀ⲛⲟⲩϯ ⲁϥⲉⲣⲙⲉⲑⲣⲉ ϧⲁⲣⲟⲕ: ⲱ̀ Ⲓⲱⲁⲛⲛⲏⲥ ⲡⲓⲣⲉϥϯⲱⲙⲥ: ϫⲉ ⲙ̀ⲙⲟⲛ ⲫⲏⲉ̀ⲧⲧⲉⲛⲥⲱⲛϯ ⲉ̀ⲣⲟⲕ: ϧⲉⲛ ⲛⲓⲙⲓⲥⲓ ⲛ̀ⲧⲉ ⲛⲓϩⲓⲟⲙⲓ.",
-      "La bouche de Dieu l’a attesté, ô Baptiste «Nul ne te ressemble parmi les nés d’une femme».",
+      "La bouche de Dieu l’a attesté, ô Baptiste « Nul ne te ressemble parmi les nés d’une femme ».",
       "",
       'فَمِ الله شهد لك♪ أيها المعمدان:♪ "ليس مَنْ يشبهك♪ في مواليد النساء.".',
     ],
@@ -11279,7 +11279,7 @@ PrayersArray = [
       Prefix.commonDoxologies +
         "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
       "Ⲛⲁⲕ ϩⲓⲱⲓϣ ⲉⲕϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲁ̀ⲛⲟⲕ ⲙⲉⲛ ϯⲱⲙⲥ ⲙ̀ⲙⲱⲧⲉⲛ: ϧⲉⲛ ⲟⲩⲙⲱⲟⲩ ⲙ̀ⲙⲉⲧⲁⲛⲟⲓⲁ: ⲉ̀Ϯⲡ̀ⲭⲱ ⲉ̀Ϯⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲓⲛⲟⲃⲓ.",
-      "Et tu prêchais en disant : «Quant à moi, je vous baptise de l’eau de la repentance pour la rémission des péchés.",
+      "Et tu prêchais en disant : « Quant à moi, je vous baptise de l’eau de la repentance pour la rémission des péchés.",
       "",
       'وكنت تكرز قائلا:♪ "أما أنا فأعمدكم♪ بماء التوبة♪ لمغفرة الخطايا.',
     ],
@@ -11287,7 +11287,7 @@ PrayersArray = [
       Prefix.commonDoxologies +
         "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
       "Ⲡⲉⲧⲉ ⲟⲩⲟⲛⲧⲉϥ ϣ̀ⲑⲏⲛ ⲥ̀ⲛⲟⲩϯ: ⲉϥⲉ̀ϯ ⲙ̀ⲡⲉⲧⲉ ⲙ̀ⲙⲟⲛ ⲛ̀ⲧⲁϥ: ⲟⲩⲟϩ ⲡⲉⲧⲉ ⲟⲩⲟⲛⲧⲁϥ ⲛ̀ⲟⲩⲱⲓⲕ: ⲙⲁⲣⲉϥⲓ̀ⲣⲓ ⲟⲛ ⲙ̀ⲡⲁⲓⲣⲏϯ.",
-      "Que celui qui a deux tuniques partage avec celui qui n’en a point, et que celui qui a du pain agisse de même.»",
+      "Que celui qui a deux tuniques partage avec celui qui n’en a point, et que celui qui a du pain agisse de même. »",
       "",
       'مَنْ له ثوبان♪ فليُعطِ مَنْ ليس له♪ والذي عنده خبز♪ فليصنع هكذا أيضا".',
     ],
@@ -11295,7 +11295,7 @@ PrayersArray = [
       Prefix.commonDoxologies +
         "Wates&D=$copticFeasts.BaptismParamoun&C=Diacon",
       "Ⲉⲑⲃⲉ ⲫⲁⲓ ⲧⲉⲛⲉⲣⲭⲱⲣⲉⲩⲓⲛ: ⲉⲛⲱϣ ⲉ̀Ϯⲃⲟⲗ ⲛⲉⲙ ⲡⲓⲡ̀ⲣⲟⲫⲏⲧⲏⲥ: ϫⲉ ⲉⲩⲉ̀ⲛⲁⲩ ⲛ̀ϫⲉ ⲥⲁⲣⲝ ⲛⲓⲃⲉⲛ: ⲉ̀Ϯⲡⲓⲥⲱⲧⲏⲣ ⲛ̀ⲧⲉ Ⲫ̀ⲛⲟⲩϯ.",
-      "C’est pourquoi, nous louons, proclamant avec le prophète en disant: «Tout corps regarde le Salut de Dieu».",
+      "C’est pourquoi, nous louons, proclamant avec le prophète en disant: « Tout corps regarde le Salut de Dieu ».",
       "",
       'لهذا نَمدح صارخين♪ مع النبي قائلين: ♪ "كل جسد ينظر♪ خلاص الله.".',
     ],
@@ -11348,7 +11348,7 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Wates1&D=$copticFeasts.Baptism&C=Diacon",
       "Ⲇⲁⲩⲓⲇ ⲁ̀ⲙⲟⲩ ⲧⲉⲛⲙⲏϯ ⲙ̀ⲫⲟⲟⲩ: ⲉⲑⲣⲉⲕϫⲱ ⲙ̀ⲡ̀ⲧⲁⲓⲟ ⲙ̀ⲡⲁⲓϣⲁⲓ: ϫⲉ ⲡ̀ϧ̀ⲣⲱⲟⲩ ⲙ̀Ⲡ̀ϭⲟⲓⲥ ϩⲓϫⲉⲛ ⲛⲓⲙⲱⲟⲩ: Ⲫ̀ⲛⲟⲩϯ ⲛ̀ⲧⲉ ⲡ̀ⲱ̀ⲟⲩ ⲁϥⲉⲣϧⲁⲣⲁⲃⲁⲓ.",
-      "Viens aujourd’hui David parmi nous pour prononcer l’honneur de cette fête « La voix de l'Éternel retentit sur les eaux, Le Dieu de gloire fait gronder le tonnerre »",
+      "Viens aujourd’hui David parmi nous pour prononcer l’honneur de cette fête « La voix de l'Éternel retentit sur les eaux, Le Dieu de gloire fait gronder le tonnerr »",
       "",
       "تعالَ يا داود في وَسَطِنا♪ اليوم لتنطق بكرامةِ هذا العيد♪ صَوتُ الرب على المياه ♪إلهُ المجدِ أرعَدَ.",
     ],
@@ -11606,7 +11606,7 @@ PrayersArray = [
     [
       Prefix.commonDoxologies + "Wates&D=$copticFeasts.EntryToTemple&C=Diacon",
       "Ϯⲛⲟⲩ ⲡⲁⲛⲏⲃ ⲭ̀ⲛⲁⲭⲁ ⲡⲉⲕⲃⲱⲕ: ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲟ̀ⲩϩⲓⲣⲏⲛⲏ ⲕⲁⲧⲁ ⲡⲉⲕⲥⲁϫⲓ: ϫⲉ ⲁⲩⲛⲁⲩ ⲛ̀ϫⲉ ⲛⲁⲃⲁⲗ ⲉ̀ⲡⲉⲕⲛⲟϩⲉⲙ: ⲫⲏⲉ̀ⲧⲁⲕⲥⲉⲃⲧⲱⲧϥ ⲙ̀ⲡⲉⲙ̀ⲑⲟ ⲛ̀ⲛⲓⲗⲁⲟⲥ.",
-      "«Maintenant ô maître, tu peux laisser Ton serviteur s’en aller dans la paix, selon Ta parole, car mes yeux ont vu Ton salut, que Tu as préparé à la face de tous les peuples»",
+      "« Maintenant ô maître, tu peux laisser Ton serviteur s’en aller dans la paix, selon Ta parole, car mes yeux ont vu Ton salut, que Tu as préparé à la face de tous les peuples »",
       "",
       "الآن يا سيد تطلق♪ عبدك بسلام كقولك♪ لأن عيني قد أبصرتا خلاصك♪ الذي أعددته قدام الشعوب.",
     ],
@@ -15809,14 +15809,14 @@ PrayersArray = [
     [
       Prefix.bookOfHours + "9thHourPsalm100&D=$copticFeasts.AnyDay&C=NoActor",
       "",
-      "Quand viendras-tu jusqu'à moi ? Je marcherai d'un cœur parfait avec ceux de ma maison ; je n'aurai pas même un regard pour les pratiques démoniaques. Je haïrai l'action du traître qui n'aura sur moi nulle prise ; loin de moi, le coeur tortueux ! Le méchant, je ne veux pas le connaître. Qui dénigre en secret son prochain, je le réduirai au silence ; le regard hautain, le coeur ambitieux, je ne peux les tolérer.",
+      "Quand viendras-tu jusqu'à moi ? Je marcherai d'un cœur parfait avec ceux de ma maison ; je n'aurai pas même un regard pour les pratiques démoniaques. Je haïrai l'action du traître qui n'aura sur moi nulle prise ; loin de moi, le coeur tortueux ! Le méchant, je ne veux pas le connaître. Qui dénigre en secret son prochain, je le réduirai au silence ; le regard hautain, le coeur ambitieux, je ne peux les tolérer.",
       "",
       "متى تأتى إليّ؟ لقد كنت أسلك بدعة قلبي في وسط بيتي. لم أضع أمام عيني أمرا يخالف الناموسَ. صانعي المعصية أبغضتُ. لم يلصق بي قلب معوج، وعند ميلان الشرير عنى لم أكن أعلم، والذي يغتاب قريبه سرا كنت أطارده، المستكبر بعينيه والمنتفخ القلب لم أوآكله.",
     ],
     [
       Prefix.bookOfHours + "9thHourPsalm100&D=$copticFeasts.AnyDay&C=NoActor",
       "",
-      "Mes yeux distinguent les hommes sûrs du pays : ils siégeront à mes côtés ; qui se conduira parfaitement celui-là me servira. Pas de siège, parmi ceux de ma maison, pour qui se livre à la fraude ; impossible à qui profère le mensonge de tenir sous mon regard.",
+      "Mes yeux distinguent les hommes sûrs du pays : ils siégeront à mes côtés ; qui se conduira parfaitement celui-là me servira. Pas de siège, parmi ceux de ma maison, pour qui se livre à la fraude ; impossible à qui profère le mensonge de tenir sous mon regard.",
       "",
       "عيناي على جميع أمناء الأرض لكي أجلسهم معي. السالك في الطريق بلا عيب هذا كان يخدمني. المتكبر لم يسكن في وسط بيتي. المتكلم بالظلم لم يستقِم أمام عيني.",
     ],
@@ -16813,7 +16813,7 @@ PrayersArray = [
     [
       Prefix.bookOfHours + "11thHourLitanies1&D=$copticFeasts.AnyDay&C=Priest",
       "",
-      "C’est pourquoi je n’ose pas lever les yeux au ciel, mais je m’en remets à l’abondance de Ta miséricorde et de Ton amour pour l’humanité, criant et disant : « Ô Dieu, pardonne-moi, moi qui suis un pécheur et aie pitié de moi.»",
+      "C’est pourquoi je n’ose pas lever les yeux au ciel, mais je m’en remets à l’abondance de Ta miséricorde et de Ton amour pour l’humanité, criant et disant : « Ô Dieu, pardonne-moi, moi qui suis un pécheur et aie pitié de moi. »",
       "",
       "فما أجسر أن أنظر إلى علو السماء، لكني أتكل على غنى رحمتك ومحبتك للبشرية، صارخا قائلا: اللهم اغفر لي أنا الخاطئ وارحمني",
     ],
@@ -17568,7 +17568,7 @@ PrayersArray = [
     [
       "PentecostalHymns&D=$Seasons.PentecostalDays&C=Diacon",
       "Ⲇⲓⲁ ⲧⲟⲩⲧⲟ ⲉ̀ⲇⲩⲛⲁⲙⲓⲥ ⲧⲱⲛ ⲟ̀ⲩⲣⲁⲛⲱⲛ ⲉ̀ⲃⲟⲱ̀ⲛ ⲥⲓ ⲍⲱⲟ̀ⲇⲟⲧⲁ: ⲇⲟⲝⲁ ⲧⲏ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ: ⲇⲟⲝⲁ ⲧⲏ ⲃⲁⲥⲓⲗⲓⲁ ⲥⲟⲩ: ⲇⲟⲝⲁ ⲧⲏ ⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲥⲟⲩ: ⲙⲟⲛⲉ ⲫⲓⲗⲁⲛⲑ̀ⲣⲱⲡⲉ.",
-      "Pour cette raison, les forces célestes crient vers Toi: «O donneur de la vie, gloire à Ta résurrection. O Christ, gloire à Ton royaume, gloire à Ton économie, Toi le seul ami du genre humain »",
+      "Pour cette raison, les forces célestes crient vers Toi: « O donneur de la vie, gloire à Ta résurrection. O Christ, gloire à Ton royaume, gloire à Ton économie, Toi le seul ami du genre humain »",
       "ذيا توتـو إيذينا ميس تون اورانون : اف اوؤن: ثي زو أوذوتا. ذوكصاتي اناستاسي سو اخريستيه: ذوكصـاتي فاسيليا سو: ذوكصـاتي إي كونو مياسو، موني فيلان اثروبيه.",
       "لأجل هذا قوات السمَوات هتفوا إليك يا واهب الحياة. المجد لقيامتك أيها المسيح، المَجْدُ لمُلكِكَ، المَجْدُ لتدبيرك يا مُحِبْ البشر وحدك.",
     ],
