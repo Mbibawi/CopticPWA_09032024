@@ -1451,7 +1451,7 @@ PrayersArray = [
       "Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ: ⲡⲓⲁⲣⲭⲏⲁⲅⲅⲉⲗⲟⲥ: ⲭⲉⲣⲉ ⲡⲓϫⲟⲩⲧ ϥ̀ⲧⲟⲟⲩ: ⲙ̀ⲡ̀ⲣⲉⲥⲃⲩⲧⲉⲣⲟⲥ.",
       "Et salut à Michel♪ A toi Michel l'archange ;♪ et salut aux vingt-quatre ;♪ Vous les vingt-quatre prêtres.",
       "شيرى ميخائيل♪ بى أرشى أنجيلوس♪ شيرى بى جوت إفنو♪ إم ابريسفيتيروس.",
-      "السلام لميخائيل♪ رئيس الملائكة السلام للأربعة♪   والعشرين قسيساً.",
+      "السلام لميخائيل♪ رئيس الملائكة♪ السلام للأربعة♪ والعشرين قسيساً.",
     ],
     [
       Prefix.commonDoxologies +
@@ -1459,7 +1459,7 @@ PrayersArray = [
       "Ⲭⲉⲣⲉ Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ: ⲭⲉⲣⲉ Ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲭⲉⲣⲉ ⲛⲓⲧⲁⲅⲙⲁ ⲧⲏⲣⲟⲩ: ⲛ̀ⲉ̀ⲡⲟⲩⲣⲁⲛⲓⲟⲛ.",
       "Salut aux chérubins ;♪ Salut aux séraphins ;♪ Salut à tous les grades ;♪ A tous les grades célestes.",
       "شيرى نى شيروفيم♪ شيرى نى سيرافيم♪ شيرى نى طاغما تيرو ♪ إن إيبورانيون.",
-      "السلام للشاروبيم♪\nالسلام للسارافيم♪ السلام لجميع♪الطغمات السمائية.",
+      "السلام للشاروبيم♪ السلام للسارافيم♪ السلام لجميع♪ الطغمات السمائية.",
     ],
     [
       Prefix.commonDoxologies +
@@ -1475,7 +1475,7 @@ PrayersArray = [
       "Ⲭⲉⲣⲉ ⲡⲉⲛⲓⲱⲧ Ⲙⲁⲣⲕⲟⲥ: ⲡⲓⲉⲩⲁⲅⲅⲉⲗⲓⲥⲧⲏⲥ: ⲡⲓⲣⲉϥϫⲱⲣ ⲉ̀ⲃⲟⲗ: ⲛ̀ⲧⲉ ⲛⲓⲓ̀ⲇⲱⲗⲟⲛ.",
       "Salut à notre père,♪ A Marc l’évangéliste ;♪ A lui qui a détruit ;♪ A détruit les idoles.",
       "شيرى بين يوت ماركوس بى إف أنجيليستيس بى ريفجور إيفول♪ انتى نى ايذولون.",
-      "السلام لأبينا♪ مرقس♪  الإنجيلي♪ مُبَدِد الأوثان.",
+      "السلام لأبينا♪ مرقس♪ الإنجيلي♪ مُبَدِد الأوثان.",
     ],
     [
       Prefix.commonDoxologies +
@@ -1491,7 +1491,7 @@ PrayersArray = [
       "Ⲭⲉⲣⲉ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ: ⲛ̀ⲧⲉ ⲛⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲁⲃⲃⲁ Ⲁⲛⲧⲱⲛⲓ: ⲛⲉⲙ ⲡⲓϣⲟⲙⲧ Ⲙⲁⲕⲁⲣⲓⲟⲥ.",
       "Salut à tous les chœurs ;♪ Tous les choeurs des martyrs.♪ Salut à Abba Antoine ;♪ Aussi aux trois Macaire.",
       "شيرى إبخوروس تيرف♪ إنتى نى استافروفوروس شيرى آفا إنطونى♪ نيم بي شومت ماكاريوس.",
-      "السلام لجميع صفوف♪ الشهداء♪ السلام لأنبا أنطونيوس♪والثلاثة مقارات.",
+      "السلام لجميع صفوف♪ الشهداء♪ السلام لأنبا أنطونيوس♪ والثلاثة مقارات.",
     ],
     [
       Prefix.commonDoxologies +
@@ -1499,7 +1499,7 @@ PrayersArray = [
       "Ⲭⲉⲣⲉ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ: ⲛ̀ⲧⲉ ⲛⲓⲥ̀ⲧⲁⲩⲣⲟⲫⲟⲣⲟⲥ: ⲭⲉⲣⲉ ⲛⲏⲉⲑⲟⲩⲁⲃ ⲧⲏⲣⲟⲩ: ⲉ̀ⲧⲁϥⲣⲁⲛⲁϥ ⲙ̀Ⲡ̀ϭⲟⲓⲥ.",
       "Salut à tous les chœurs♪ de ceux qui portent la croix.♪ Salut à tous les saints♪ qui ont plu au Seigneur.",
       "شيرى إبخوروس تيرف♪ إنتى نى استافروفوروس♪ شيرى نى اثؤاب تيرو♪ إيطاف راناف إمبشويس.",
-      "السلام لجميع صفوف♪ لُباس الصليب♪ السلام لجميع القديسين♪ الذين أرضوا الرب.\n",
+      "السلام لجميع صفوف♪ لُباس الصليب♪ السلام لجميع القديسين♪ الذين أرضوا الرب.",
     ],
     [
       Prefix.commonDoxologies +
@@ -13325,6 +13325,110 @@ PrayersArray = [
       "Prière de la 1ère Heure",
       "",
       " صلاة باكر",
+    ],
+  ],
+  [
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=Title",
+      "",
+      "Prosternons-nous",
+      "",
+      "هلمّ نسجد",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Levons-nous, prosternons-nous et prions le Christ notre Dieu. ",
+      "",
+      "هلم نسجد هلم نسأل المسيح إلهنا.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Levons-nous, prosternons-nous et implorons le Christ notre Roi. ",
+      "",
+      "هلم نسجد، هلم نطلب من المسيح ملكنا.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Levons-nous, prosternons-nous et implorons le Christ notre Sauveur. ",
+      "",
+      "هلم نسجد، هلم نتضرع إلى المسيح مخلصنا.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Ô notre Seigneur Jésus-Christ, Verbe de Dieu, par les intercessions de sainte Marie et de tous Tes saints garde-nous,  que nous entamions bien la journée.",
+      "",
+      "يا ربنا يسوع المسيح كلمة الله إلهنا، بشفاعة القديسة مريم وجميع قديسيك، احفظنا ولنبدأ بدءا حسنا.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Aie pitié de nous selon Ta volonté pour toujours. ",
+      "",
+      "ارحمنا كإرادتك إلى الأبد.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourLetsKneel&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "La nuit s'est écoulée, nous Te rendons grâce, notre Seigneur, et nous T'implorons de nous préserver de tout péché en ce jour, et  de nous sauver. ",
+      "",
+      "الليل عبر، نشكرك يا رب ونسأل أن تحفظنا في هذا اليوم بغير خطية وأنقذنا.",
+    ],
+  ],
+  [
+    [
+      Prefix.bookOfHours + "1stHourStPaul&D=$copticFeasts.AnyDay&C=Title",
+      "",
+      "Epître de saint Paul aux Éphésiens (4 : 1 - 5)",
+      "",
+      "البولس من رسالة أفسس (4: 1ـــ5)",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourStPaul&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "1 Moi qui suis en prison à cause du Seigneur, je vous encourage à suivre fidèlement l'appel que vous avez reçu de Dieu ; 2 ayez beaucoup d'humilité, de douceur et de patience, supportez-vous les uns les autres avec amour ; 3 ayez à cœur de garder l'unité dans l'Esprit par le lien de la paix. 4 Comme votre vocation vous a tous appelés à une seule espérance, de même il n'y a qu'un seul Corps et un seul Esprit. 5 Il n'y a qu’un seul Seigneur, une seule foi, un seul baptême.",
+      "",
+      "أسألكم أنا الأسير في الرب أن تسلكوا كما يحق للدعوة التي دعيتم إليها، بكل تواضع القلب والوداعة وطول الأناة، محتملين بعضكم بعضا بالمحبة، مسرعين إلى حفظ وحدانية الروح برباط الصلح الكامل لكي تكونوا جسدًا واحدًا وروحًا واحدا، كما دعيتم في رجاء دعوتكم الواحد. ربٍّ واحد. وإيمان واحد. ومعمودية واحدة.",
+    ],
+  ],
+  [
+    [
+      Prefix.bookOfHours + "1stHourIntro&D=$copticFeasts.AnyDay&C=Title",
+      "",
+      "De la foi de l'Eglise",
+      "",
+      "من إيمان الكنيسة",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourIntro&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Un est Dieu le Père de chacun.",
+      "",
+      "واحد هو الله أبو كل أحد.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourIntro&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Un est aussi Son Fils Jésus-Christ le Verbe qui s'est incarné, qui est mort et qui est ressuscité d'entre les morts le troisième jour. Il nous a ressuscités avec Lui.",
+      "",
+      "واحد هو أيضا ابنه يسوع المسيح الكلمة، الذي تجسد ومات وقام من الأموات في اليوم الثالث وأقامنا معه.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourIntro&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Un est le Saint Esprit consolateur, unique dans son hypostase. Il procède du Père. Il purifie toute la création et nous enseigne à nous prosterner devant la Sainte Trinité : Une seule Divinité et une seule nature.  Nous Le louons et nous Le bénissons pour toujours.  Amen ! ",
+      "",
+      "واحد هو الروح القدس المعزى الواحد بأقنومه، مُنبثق من الآب، يُطهر كل البرية، يُعلمنا أن نسجد للثالوث القدوس بلاهوت واحد وطبيعة واحدة، نسبحه ونباركه إلى الأبد. آمين.",
+    ],
+    [
+      Prefix.bookOfHours + "1stHourIntro&D=$copticFeasts.AnyDay&C=NoActor",
+      "",
+      "Louange de l'aube du jour béni, je l'offre au Christ, mon Roi et mon Dieu, et je Le supplie de me remettre mes péchés. ",
+      "",
+      "صلاة باكر من النهار المبارك، أقدمها للمسيح ملكي وإلهي، وأرجوه أن يغفر لي خطاياي.",
     ],
   ],
   [

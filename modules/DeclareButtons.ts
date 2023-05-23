@@ -1306,9 +1306,9 @@ const btnBookOfHours:Button =  new Button({
       for (let hour in bookOfHours) {
         if (hour.endsWith('Array')) {
           //We populate each hour prayers property of bookOfHours (see its definition) from the title of the hour prayersArray (this property was set when the page was loaded by the populatePrayersArrays() function)
-          bookOfHours[hour.split('Array')[0]] = [...bookOfHours[hour].map(table => baseTitle(table[0][0]))];
+          bookOfHours[hour.replace('Array', 'Sequence')] = [...bookOfHours[hour].map(table => baseTitle(table[0][0]))];
           //We insert the "Thanks Giving" and "Psalm 50" after the 1st element
-          bookOfHours[hour.split('Array')[0]].splice(1, 0, ...HourIntro);
+          bookOfHours[hour.replace('Array', 'Sequence')].splice(1, 0, ...HourIntro);
         }
       }
 
