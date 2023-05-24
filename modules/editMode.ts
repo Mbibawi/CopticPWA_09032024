@@ -44,7 +44,6 @@ async function editingMode(tblsArray: string[][][], languages:string[]) {
  */
 function addEdintingButtons(getButtons?:Function[]) {
   let btnsDiv = document.createElement("div");
-  let newButton: HTMLButtonElement;
   btnsDiv.classList.add("btnsDiv");
   btnsDiv.style.display = "grid";
   btnsDiv.style.gridTemplateColumns = String("20%").repeat(5);
@@ -66,7 +65,8 @@ function addEdintingButtons(getButtons?:Function[]) {
     addRowBtn,
     deleteRowBtn,
     splitBelowBtn,
-    convertCopticFontsFromAPIBtn
+    convertCopticFontsFromAPIBtn,
+    goToTableByTitleBtn
   ];
 
   getButtons.forEach(fun => fun(btnsDiv));
@@ -95,7 +95,13 @@ function changeTitleBtn(btnsDiv:HTMLElement){
   let newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Change Ttile"
   );
     btnsDiv.appendChild(newButton);
-  }
+}
+  
+function goToTableByTitleBtn(btnsDiv) {
+  let newButton = createEditingButton(() => goToTableByTitle(), "Go To Table"
+  );
+    btnsDiv.appendChild(newButton);
+}
 
   function changeClassBtn(btnsDiv:HTMLElement){
     let newButton = createEditingButton(
@@ -783,3 +789,12 @@ function convertCopticFontFromAPI(htmlElement:HTMLElement) {
   }
 }
 
+function goToTableByTitle() {
+  let title = prompt('Provide the title you want to go to');
+  let rows:HTMLElement[] = Array.from(
+    containerDiv.querySelectorAll('.TargetRow') as NodeListOf<HTMLElement>)
+    .filter((row: HTMLElement) => row.dataset.root.includes(title));
+  if (rows.length === 0) return alert('Didn\'t find an element with the provided title');
+  rows[0].id = rows[0].dataset.root + String(0);
+  createFakeAnchor(rows[0].id);
+}
