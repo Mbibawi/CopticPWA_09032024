@@ -1535,7 +1535,7 @@ PrayersArray = [
       "Ⲁⲕϯ ⲛⲁⲛ ⲙ̀ⲡⲓⲡ̅ⲛ̅ⲁ̅ ⲛ̀ⲧⲉ ϯⲙⲉⲧϣⲏⲣⲓ: ⲉⲛϩⲱⲥ ⲉⲛⲥ̀ⲙⲟⲩ ⲉⲣⲟⲕ: ⲛⲉⲛ ⲛⲉⲕⲁ̀ⲅⲅⲉⲗⲟⲥ.",
       "Tu nous as donné♪ l'esprit filial.♪ Nous Te louons et Te bénissons♪ avec Tes anges.",
       "أكتى نان إمبى ابنفما♪ انتى ميت شير♪ إنهوس إن إزمو إيروك♪ نيم نيك آنجيلوس.",
-      "أعطيتناروح النبوة♪ نسبحك♪ ونباركك♪ مع ملائكتك.",
+      "أعطيتنا روح النبوة♪ نسبحك♪ ونباركك♪ مع ملائكتك.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1724,7 +1724,7 @@ PrayersArray = [
       "ⲉⲣⲉ ϯⲡ̀ⲣⲟⲥⲧⲁⲧⲏⲥ: ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ: ⲛ̀ⲑⲟ ⲅⲁⲣ ⲁ̀ⲗⲏⲑⲱⲥ: ⲡⲉ ⲡ̀ϣⲟⲩϣⲟⲩ ⲙ̀ⲡⲉⲛⲅⲉⲛⲟⲥ.",
       "Salut à celle qui intercède♪ pour nos âmes♪ tu es en vérité♪ la fierté du genre humain.",
       "شيرى تى إبروستاتيس♪ انتى إبسيشى♪ إنثو غار آليثوس♪ بى إبشوشو إمبين جينوس.",
-      "السلام لشفيعةنفوسنا♪ أنت بالحقيقة♪ فخر♪ جنسنا.",
+      "السلام لشفيعة نفوسنا♪ أنت بالحقيقة♪ فخر♪ جنسنا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",
@@ -1745,7 +1745,7 @@ PrayersArray = [
       "Ϩⲓⲧⲉⲛ ⲛⲓⲡ̀ⲣⲉⲥⲃⲓⲁ̀: ⲛⲧⲉ ϯⲑⲉⲟ̀ⲧⲟⲕⲟⲥ ⲉ̅ⲑ̅ⲩ̅ Ⲙⲁⲣⲓⲁ̀: Ⲡⲟ̅ⲥ̅ ⲁⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ: ⲙ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ.",
       "Par les intercessions♪ de Marie Mère de Dieu♪ Seigneur accorde nous♪ la rémission de nos péchés.",
       "هيتين نى ابريسفيا♪ إنتى تى ثيؤطوكوس اثؤاب ماريا♪ إبشويس آرى إهموت نان♪ امبى كو إيفول انتى نين نوفى.",
-      "بشفاعات♪ والدة الإله♪ القديسة مريم♪ يا رب انعم لنابمغفرة خطايانا.",
+      "بشفاعات♪ والدة الإله♪ القديسة مريم♪ يا رب انعم لنا بمغفرة خطايانا.",
     ],
     [
       Prefix.commonDoxologies + "Adam&D=$copticFeasts.AnyDay&C=Diacon",

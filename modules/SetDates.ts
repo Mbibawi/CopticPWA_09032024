@@ -340,6 +340,8 @@ function changeDate(
 		todayDate.setTime(todayDate.getTime() - days * calendarDay);
 	  }
 	}
+	
+	
 	console.log(todayDate);
 	setCopticDates(todayDate);
 	setSeasonalTextForAll();
