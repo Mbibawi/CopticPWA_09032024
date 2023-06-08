@@ -24,7 +24,7 @@ async function editingMode(tblsArray: string[][][], languages:string[]) {
       if (el) {
         //We make the paragraph children of each row, editable
         Array.from(el.children).map(
-          (c: HTMLElement) => (c.contentEditable = "true")
+          (c: HTMLElement) => c.contentEditable = "true"
         );
       }
     }
@@ -72,6 +72,11 @@ function addEdintingButtons(getButtons?:Function[]) {
   getButtons.forEach(fun => fun(btnsDiv));
 
 }
+
+/**
+ * Creates a button for adding a new html element div representing a new row in a table
+ * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
+ */
 function addRowBtn(btnsDiv:HTMLElement){
   let newButton= createEditingButton(
      () => addNewRow(document.getSelection().focusNode.parentElement),
@@ -84,7 +89,10 @@ function addRowBtn(btnsDiv:HTMLElement){
     let newButton= createEditingButton(() => saveModifiedArray(), "Save");
       btnsDiv.appendChild(newButton);
 }
-    
+/**
+ * Creates a button for exporting the edited text as an string[][][] in a js file
+ * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
+ */
 function exportToJSFileBtn(btnsDiv: HTMLElement) {
   //@ts-ignore
   let newButton = createEditingButton(() => console.save(saveModifiedArray(), 'ModifiedArray.js'), "Export To JS");
@@ -670,7 +678,6 @@ function addConsoleSaveMethod(console) {
   };
 }
 
-
 function splitParagraphsToTheRowsBelow() {
   //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
   let htmlParag = checkSelection(document.getSelection().focusNode.parentElement);
@@ -700,6 +707,11 @@ function splitParagraphsToTheRowsBelow() {
   }
 }
 
+/**
+ * Checks whether the cursor is placed within a paragraph html element. If not, it triggers an alert message and returns 'undefined'
+ * @param {HTMLElement} htmlParag - the html element within which hte cursor is placed
+ * @returns {HTMLElement | undefined}
+ */
 function checkSelection(htmlParag: HTMLElement): HTMLParagraphElement | undefined {
   while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
   if (!htmlParag || htmlParag.tagName !== 'P') {
@@ -709,14 +721,20 @@ function checkSelection(htmlParag: HTMLElement): HTMLParagraphElement | undefine
   return htmlParag as HTMLParagraphElement
 }
 
+/**
+ * Displays the text of a string[][][] which name is passed to the function as as sting
+ * @param {string} arrayName - the name of the string[][][] array containing the text
+ * @param {string} title 
+ * @returns 
+ */
 function showTablesFun(arrayName: string, title: string) {
-  //showTablesFun("ReadingsArrays.SynaxariumArray", "0101")
   let languages: string[] = getLanguages(arrayName),
         el: HTMLElement,
-        sourceArray = eval(arrayName);
+        sourceArray:string[][][] = eval(arrayName);
         
   if (!sourceArray || sourceArray.length === 0) { alert('No array was found with the name: ' + arrayName);  return}
   
+  //We save the name of the array in a data attribute of containerDiv, in order to be able to retrieve it when exporting the text to a js file
   containerDiv.dataset.arrayName = arrayName;
   
   let tables: string[][][] = sourceArray.filter(table => table[0][0].includes(title));
@@ -757,13 +775,22 @@ function showTablesFun(arrayName: string, title: string) {
       containerDiv.querySelectorAll("div.TargetRowTitle"));
 }
 
+/**
+ * Returns an array of languages based on the name of the array passed to it (if it is a reading, it returns the languages for the readings, if it is the PrayersArray, it returns the prayersLanguages)
+ * @param {string} arrayName - the name of a string[][][], for which we will return the languages corresponding to it
+ * @returns {string[]} - an array of languages
+ */
 function getLanguages(arrayName):string[] {
-  let languages = prayersLanguages;
+  let languages:string[] = prayersLanguages;
   if (arrayName.startsWith('ReadingsArrays.')) languages = readingsLanguages;
   if (arrayName.startsWith('ReadingsArrays.SynaxariumArray')) languages = ['FR', 'AR'];
   return languages
 }
 
+/**
+ * Converts the coptic font of the text in the selected html element, to a unicode font
+ * @param {HTMLElement} htmlElement - an editable html element in which the cursor is placed, containing coptic text in a non unicode font, that we need to convert
+ */
 function convertCopticFontFromAPI(htmlElement:HTMLElement) {
   const apiURL: string = 'https://www.copticchurch.net/coptic_language/fonts/convert';
   let fontFrom: string = prompt('Provide the font', 'Coptic1/CS Avva Shenouda');
