@@ -3166,7 +3166,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=2002",
       "Celui-ci voulut l’éprouver et il lui énuméra toutes les épreuves qu’un moine doit subir. Le jeune homme, plus décidé qu’auparavent, lui répondit : « Ne me renvoie pas, mon père, par amour pour Dieu. Je suis venu pour vivre sous ta tutelle et sous la protection de ta prière. Si tu m’acceptes, je suis confiant que Dieu m’apportera son aide. » Abba Pambo demanda à Dieu de l’éclairer au sujet de ce jeune homme. L’ange duSeigneur lui apparut et lui dit : « Accepte-le car il deviendra un vase élu. » Alors, abba Pambo le fit entrer, lui coupa les cheveux puis le revêtit de l’habit monastique. Par conséquent, le jeune novice entama une vie d’ascèse et de vertus.",
-      'فأراد الشيخ أن يجربه، فأخذ يعدد له متاعب الرهبنة، فكان يزداد تمسكاً ويقول: "لا تردني يا أبى من أجل الله، لأني أتيت لأكون تحت طاعتك، وإذا قبلتني فإن الله سيساعدني بصلواتك". سأل الأنبا بموا السيد المسيح أن يكشف له أمر القديس يوحنا. فظهر له ملاك الرب قائلاً: "اقبل هذا الأخ لأنه سيكون إناءً مختاراً". فقبله الأنبا بموا، وقَصَّ شعر رأسه وألبسه ثياب الرهبنة. فابتدأ بنسك عظيم وأعمال فاضلة.',
+      'فأراد الشيخ أن يجربه، فأخذ يعدد له متاعب الرهبنة، فكان يزداد تمسكاً ويقول: "لا تردني يا أبى من أجل الله، لأني ' +
+        giaki.AR +
+        ' لأكون تحت طاعتك، وإذا قبلتني فإن الله سيساعدني بصلواتك". سأل الأنبا بموا السيد المسيح أن يكشف له أمر القديس يوحنا. فظهر له ملاك الرب قائلاً: "اقبل هذا الأخ لأنه سيكون إناءً مختاراً". فقبله الأنبا بموا، وقَصَّ شعر رأسه وألبسه ثياب الرهبنة. فابتدأ بنسك عظيم وأعمال فاضلة.',
     ],
     [
       Prefix.synaxarium + "&D=2002",
@@ -5622,14 +5624,14 @@ ReadingsArrays.SynaxariumArray = [
     ],
     [
       Prefix.synaxarium + "&D=3003",
-      "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. A",
+      "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. ",
       "",
     ],
   ],
   [
     [
-      Prefix.synaxarium + "&D=0104",
-      "Décès de saint Jean III, le 40ème patriarche de la prédication de saint Marc. Décès de saint Athanase III, le 76ème patriarche de la prédication de saint Marc. Décès de saint Pierre d'Edesse, évêque de Ghazza. Consécration de l'église du martyr Epipham, le soldat, à Abnoub. Consécration de l’église de saint Chénouté, l’archimandrite. 1er Koyak",
+      Prefix.synaxarium + "&D=0104&C=Title",
+      "1er Koyak\n1) Décès de saint Jean III, le 40ème patriarche de la prédication de saint Marc\n2) Décès de saint Athanase III, le 76ème patriarche de la prédication de saint Marc\n3) Décès de saint Pierre d'Edesse, évêque de Ghazza\n4) Consécration de l'église du martyr Epipham, le soldat, à Abnoub\n5) Consécration de l’église de saint Chénouté, l’archimandrite\n",
       "",
     ],
     [
@@ -5712,19 +5714,29 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction des prières de saint Chénouté, l’archimandrite, soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "2 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "3 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "4 Koyak", ""],
     [
       Prefix.synaxarium + "&D=0104",
-      "En ce jour de l’an 62 après Jésus Christ eut lieu le martyre de l’apôtre saint André (اندراوس الرسول) le frère de saint Pierre (بطرس الرسول). Cet apôtre naquit à Bethsaïde en Galilée et il exerçait la profession de pêcheur. Il était le disciple de Jean le Baptiste qui lui montra le Christ, alors il devint son disciple et l’un des douze apôtres.",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
       "",
     ],
     [
       Prefix.synaxarium + "&D=0104",
-      "Après la descente du Saint Esprit le jour de la pentecôte, il proclama l’Évangile en Syrie (الشام), en Asie mineure (اسيا الصغرى), en Achaïe (أخائية), Cappadoce (كبادوكية), Galatie (غلاطية) et la Bithynie (بيثينية), et finalement il subit le martyre à Patras (باتراس) une ville d’Achaïe en Grèce. En effet, il se rendit dans cette ville pour y proclamer l’Évangile et la majorité de ses habitants se convertirent au point que le paganisme faillit en être éradiqué. Le gouverneur ressentit le danger et fit arrêter saint André en lui ordonnant d’encenser les idoles sous peine de mort par crucifixion. Le saint refusa de s’exécuter et proclama sa Foi en Jésus Christ, le vrai Dieu qui nous a sauvés en versant son sang. Le gouverneur ordonna qu’il meure de la même manière que celui qu’il proclame ce qui réjouit l’apôtre. On confectionna une croix sous forme d’un X, toujours appelée la croix de saint André (صليب أندراوس) à laquelle il fut suspendu. Il survécut pendant deux jours, durant lesquels il prêcha à la foule jusqu’à ce qu’il rendit l’âme entre les mains du Seigneur et il obtint la couronne du martyre. Les fidèles recueillirent son corps et l’enterrèrent avec beaucoup d’honneur.",
+      "En ce jour de l’an 978 des martyrs (1261 après Jésus Christ) décéda le pape saint Athanase III (أثناسيوس الثالث) le 70ème de la prédication de saint Marc. Il fut moine au monastère de saint Antoine le grand sous le nom de Paul fils de Kelil (بولس بن كليل). ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104&C=",
+      "Lorsque le siège de saint Marc demeura vacant pendant sept années et demie environ après le décès du pape Cyrille III (Kirillos كيرلس الثالث) connu sous le nom d’ibn louqloq (أبن لقلق), les évêques s’entendirent à le choisir comme patriarche après avoir fait un tirage au sort au-dessus de l’autel (قرعة هيكلية). Son intronisation eut lieu le 12 Paopi 967 des martyrs (1250 après Jésus Christ).",
+      "➖",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      "Ce pape prit soin d’ordonner des prêtres qui vivaient dans la sainteté, visita les fidèles et de les enseigna. Lorsqu’il constata que les églises avaient besoin de saint Chrême (الميرون المقدس) il invita les évêques au monastère de saint Macaire où ils firent les prières rituelles avec beaucoup de joie.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      "Mais le démon jalousa l’Eglise pour cette paix et cette joie qui l’avait comblée, alors, quelques voyous incendièrent une église qui portait le nom de la sainte Vierge et tuèrent un grand nombre de coptes. Tous ces malheurs attristèrent le pape. Le Seigneur voulut le reposer des difficultés de ce monde et il décéda en paix. Les fidèles lui firent leur adieu avec beaucoup d’honneurs en remerciement pour ses bonnes œuvres. Ils l’enterrèrent à l’église de saint Mercure le titulaire des deux épées (كنيسة الشهيد مرقوريوس – أبي سيفين) dans le vieux Caire après qu’il ait siégé sur le trône apostolique pendant environ onze ans.",
       "",
     ],
     [
@@ -5734,7 +5746,27 @@ ReadingsArrays.SynaxariumArray = [
     ],
     [
       Prefix.synaxarium + "&D=0104",
-      "Nous commémorons aussi aujourd'hui la consécration de l’église de saint Jean d’Héraclée, le martyr (الشهيد يوحنا الهرقلي) qui subit le martyr le 4 Paoni. Son corps est encore conservé avec celui de son oncle le martyr Epipham (أبو فام) dans le village d’Om-el-Kossour (أم القصور) dans le district de Manfalout (مركز منفلوط) du gouvernorat d’Assiout.",
+      "Nous commémorons aujourd'hui le décès de saint Pierre d'Edesse (ألرُهاوى بطرس) évêque de Gaza au cours du 5ème siècle. Ce saint est né à Edesse (ألرُها) en Syrie au début du 5ème siècle dans une famille de haut rang et ses parents lui donnèrent une bonne éducation chrétienne. A l'âge de vingt ans, son père le fit entrer au service de l'empereur Théodose le jeune (ثيئودوسيوس الصغير). Saint Pierre se désintéressait des biens de ce monde et, bien qu’il travaillait dans le palais impérial, il continua à pratiquer l’adoration et l’ascèse. Plus tard il quitta le palais et s’installa dans un monastère. Devenu moine sa piété et son ascèse furent augmentées et la réputation de sa sainteté se propageât et, en conséquence, il fut sacré évêque de Gaza contre sa volonté. Toutefois il prit soin des fidèles de la meilleure des manières.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      "Lorsque l'empereur Marcien le chalcédonien (مركيان الخلقيدوني) se mit à persécuter les évêques orthodoxes, saint Pierre s'enfuit en Egypte et s'installa dans un de monastères d’al-Bahnassa (البهنسا). Il y fit la connaissance de saint Isaïe l'égyptien (إشعياء المصري). Après la mort de Marcien, abba Pierre retourna dans son diocèse et se mit à confirmer les fidèles dans la Foi orthodoxe (الإيمان المستقيم). Un jour, pendant que saint Pierre célébrait la sainte liturgie eucharistique, l'attention de certains notables fut détournée de la prière par des discutions mondaine. L'évêque ne leur fit aucun reproche. Un ange lui apparut et le blâma en lui expliquant qu’il ne devait pas négliger de reprendre ceux qui discutaient dans l’église.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      "Et après qu’il eut achevé son bon combat, il fit venir ses fidèles et leur recommanda de rester fermes dans la vraie Foi puis il étendit les mains et rendu l’âme entre les mains du Christ.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      " Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0104",
+      "Nous commémorons aussi aujourd’hui la consécration de l’église du martyr Epipham de Taha (أبو فام الطحاوي), le soldat. Cette église se trouve à Abnoub (أبنوب) au gouvernorat d’Assiout (محافظة أسيوط). Ce saint fut martyr le 1er Paoni.",
       "",
     ],
     [
@@ -5744,232 +5776,12 @@ ReadingsArrays.SynaxariumArray = [
     ],
     [
       Prefix.synaxarium + "&D=0104",
-      "En ce jour nous commémorons aussi le transfert des corps des deux grands saints abba Pichoï (أنبا بشوي) l’homme parfait, l’ami de notre bon Sauveur et abba Paul de Tammouh (أنبا بولا الطموهي). Ces corps qui étaient à l’est de Mallawi (ملوي) à l’emplacement du village actuel Deir el-Bersha (دير البرشا) furent transférés au monastère d’abba Pichoï. Ceci eut lieu en l’an 557 des martyrs (842 après Jésus Christ) à l’époque du pape Joseph 1er (البابا يوساب الأول), le 52ème patriarche. Celui-ci voulut transférer le corps d’abba Pichoï vers son monastère à Scété mais il n’a pas été possible de faire avancer le bateau sur lequel il avait été posé. Un ancien nommé Jérémie (أرميا), qui menait une vie sainte, leur indiqua que le navire n’avancera jamais avec uniquement le corps d’abba Pichoï car il y avait un accord entre lui et abba Paul de ne jamais être séparés sur terre. En conséquence, ils amenèrent le corps de saint Paul sur le bateau qui avança sur le champ, alors, ils louèrent Dieu et glorifièrent ses saints. Arrivés à destination ils mirent les corps des deux saints dans un seul coffret et le déposèrent dans l’église. Ils se trouvent toujours dans un beau sanctuaire (مقصورة) et des miracles sont réalisés.",
+      "Nous commémorons aussi aujourd’hui la consécration de l’église de saint Chénouté, l’archimandrite. Cette église avait la même taille que le monastère qui se trouve actuellement à l’ouest de Sohag (سوهاج) et qui est connu sous le nom de monastère blanc (الدير الأبيض). Cette église est une représentation honorable de l’architecture copte à cause de la taille des pierres qui ont été utilisées et dont certaines dépassent les deux mètres. Saint Chénouté avait regroupé ces pierres des ruines d’anciens bâtiments pharaoniques.",
       "",
     ],
     [
       Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Décès du saint prophète Nahoum. Martyre de saint Victor d’Assiout. Martyre de saint Isidore. 5 Koyak",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous commémorons aujourd'hui le décès du prophète Nahoum(ناحوم) le juste, l'un des douze petits prophètes. Il est né dans le village d'Elqosh(القوش) en Galilée et il est issu de la tribu de Juda. Il a proclamé sa prophétie à l'époque d'Amasias (أموصيا) et d'Osias (عوزيا) son fils. Il reprocha aux fils d'Israël l'adoration des idoles et leur montra que Dieu qui est lent à la colère et miséricordieux est aussi un Dieu jaloux qui se venge de ses adversaires. Il a annoncé la proclamation de l'Évangile ainsi que les apôtres qui vont le proclamer en disant : « Voici sur les montagnes les pieds de Celui qui apporte la bonne nouvelle et qui annonce la paix. ». Il annonça aussi la ruine qui surviendra à Ninive. Dieu fit survenir un tremblement de terre et un incendie qui brûla la ville et le peuple qui avait fait le mal. Mais ceux qui avaient une conduite droite ne furent pas atteints. Après avoir agi selon la volonté de Dieu, ce prophète décéda en paix.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En ce jour eut lieu le martyre de saint Victor (بقطر) qui naquit dans le village de Chaw (شو) du gouvernorat d’Assiout en haute Égypte, sur la rive est du Nil. Il fut nommé soldat à Chaw. Lorsque Dioclétien décréta qu'il fallait adorer les idoles et les encenser, ce saint refusa de le faire. Le gouverneur de Chaw voulut l'amadouer sans y parvenir, alors, il le fit mettre en prison. Ces parents lui rendirent visite en prison et l'encouragèrent à résister. Comme il ne parvenait pas à le détourner de sa Foi, le gouverneur de Chaw finit par l'envoyer au gouverneur d'Assiout en lui expliquant ce qui était arrivé.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Lorsqu'il en prit connaissance, le gouverneur d'Assiout lui fit beaucoup de promesses s'il adorait les idoles. Mais saint Victor rejeta toutes ses propositions. Le gouverneur fut pris par une grande colère et ordonna qu'il soit trainé derrière des chevaux au galop puis lui proposa à nouveau d'adorer les idoles sans résultat. Alors, il ordonna qu'il soit jeté dans la fournaise du bain du village de Mocha (موشا). A leur arrivée, il étendit les mains vers le ciel pour prier, alors, l'ange du Seigneur lui apparut et promit la couronne de la vie. Alors, ses bourreaux le prirent, le ligotèrent et le jetèrent dans la fournaise où il rendit l’âme et obtint la couronne du martyre.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Des fidèles recueillirent son corps et le gardèrent jusqu'à la fin des persécutions. Ensuite, ils construisirent une église à son honneur qui perdure jusqu'à nos jours à Mocha dans le gouvernorat d'Assiout. De nombreux miracles apparurent par l'intermédiaire du corps de ce saint dans le passé comme de nos jours.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En ce jour de l’an 250 après Jésus Christ eut lieu le martyre de saint Isidore d’Alexandrie (القديس إسيذوروس الإسكندري). Ce saint naquit dans cette ville et devint soldat dans l’armée de l’empereur Dèce (ديسيوس) sous la direction d’Homère (أوميريوس). Lorsque ce commandant découvrit qu’il était chrétien, il commença par l’amadouer en lui faisant des promesses et puis en le menaçant mais le saint demeura ferme dans sa Foi. Alors le commandant ordonna qu’on lui coupe la langue puis le fit décapiter et, ainsi, il obtint la couronne du martyre. Ils jetèrent son corps dans un puits qui devint réputé car Dieu y faisait apparaitre des miracles. Par la suite une église fut édifiée à cet endroit. Au 5ème siècle ses reliques furent transférées à Constantinople et il fut honoré par tout le monde.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "6 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "7 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Martyre de saint Aissé et de sa sœur sainte Thècle. Martyre des saintes Barbara et Julienne. Décès de saint Samuel le confesseur. Décès de saint Hiéraclas, 13ème patriarche de la prédication de saint Marc. 8 Koyak",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous célébrons aussi en ce jour le martyre de saint Aissé (إيسى) et de sa sœur sainte Thècle (تكلا) en l’an 20 des martyrs (304 après Jésus Christ). Ils étaient originaires d’Abousir (أبوصير) et naquirent vers la fin du 3ème siècle de parents chrétiens. Ils étaient riche et persévéraient à faire l’aumône aux pauvres et aux miséreux. Saint Aissé se rendit à Alexandrie pour rendre visite à un ami. A cette époque saint Victor (بقطر) fils de Romanus (رومانوس) arriva dans cette ville. Ayant constaté sa conduite et son endurance, Il eut envie de l’imiter. Ce sentiment était accru du fait que saint Victor était un fils de ministre, un officier dans l’armée et un proche de l’empereur. En conséquence, saint Aissé se présenta auprès du gouverneur et confessa sa Foi dans le Christ.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "L’ange du Seigneur apparut à Thècle, la sœur d’Aissé et lui demanda de rejoindre son frère. Elle prit une embarcation sur le Nil pour s’y rendre. La sainte Vierge et Élisabeth, sa cousine, lui apparurent et la consolèrent. La sainte Vierge lui disait : « On a crucifié mon Fils par jalousie. » tandis que sainte Elisabeth lui disait : « J’ai un fils à qui on a tranché la tête injustement » Mais sainte Thècle ne savait pas qui elles étaient.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Arrivée à Alexandrie, elle se joignit à son frère pour confesser sa Foi en Jésus Christ. Le gouverneur la fit torturer par toutes les méthodes puis la remit à son fils, gouverneur de la région d’el-Khossous (ألخصوص) pour les emmener en haute Égypte.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Peu après leur départ, l’embarcation n’avança plus. Le gouverneur ordonna alors qu’on décapite les deux saints et qu’on jette leurs corps au milieu des ronces et de plantes nommées alfa(ألحلفاء). Ceci fut fait et ils obtinrent la couronne du martyre. Dieu inspira un prêtre nommé Macaire (مكاريوس) de Chatanouf (شطانوف) de recueillir leur corps puis il les enterra avec les honneurs.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous commémorons aussi le martyre en l’an 327 après Jésus Christ des deux saintes Barbara (Barbe) (بربارة) et Julienne (يوليانه). Le père de Barbara, qui s’appelait Dioscores (ديسقورس), était un riche notable de Nicomédie (نيقوميدية) et, en raison de son grand amour pour sa fille, il fit construire une tour entourée d’idoles pour qu’elle y demeure et qu’elle les adore. Du haut de cette tour, elle leva les yeux pour contempler la splendeur du ciel avec les planètes et les étoiles et elle en conclut que seul Dieu pouvait en être le créateur et seul lui devait être adoré.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Le savant Origène (أوريجانوس) se trouvant dans cette ville entendit parler de cette sainte par l’une de ses servantes qui était chrétienne et lui expliqua sa soif pour la connaissance. Il alla la voir et lui enseigna les principes du christianisme. Elle alors fut illuminée par la Foi, se fit baptiser au nom de la Sainte Trinité puis communia au saints Sacrements.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Comme le bain de cette tour était aménagée avec deux fenêtres, elle en fit ouvrir une troisième et fit installer une croix. A sa venue son père constata les modifications et lui en demanda la raison. Elle lui répondit : « Ne sais-tu pas, père, que tout s’accomplit dans la sainte Trinité ? Ces trois fenêtres symbolisent le Père, le Fils et le Saint Esprit. Quand à cette croix, elle représente celle du Christ par qui le monde est sauvé. Je te demande, père, de renoncer à ton errance et d’adorer le Dieu qui t’a créé et sauvé. » Ayant entendu cela, son père entra dans une grande colère et, dégainant son épée, voulut la tuer. Elle s’enfuit et il la poursuivit. Un rocher se fendit devant elle et elle passa à travers puis il se referma. Mais le cœur de son père était plus dur que la pierre, alors il le contourna l’attrapa et la livra au gouverneur Marcien (مركيانوس). Celui-ci voulut l’amadouer par de belles paroles, en lui faisant des promesses et enfin en la menaçant mais il ne put pas ôter de son cœur l’amour qu’elle avait pour son Seigneur le Christ. Alors il ordonna qu’elle soit torturée.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Il y avait dans la foule une jeune fille nommée Julienne. Elle vit ce que subissait sainte Barbara et elle pleurait pour elle. Là, elle vit le Christ apparaître à sainte Barbara pour la consoler et lui donner de la force. Son esprit s’illumina et elle crut dans le Christ. Le gouverneur la fit torturer elle aussi mais sans obtenir le résultat qu’il souhaitait. Alors, Il ordonna qu’elles soient décapitées toutes les deux.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Lorsque Barbara eut connaissance de l’ordre du gouverneur, elle pria Dieu pour qu’il reçoive leurs âmes, puis, elles avancèrent avec courage et le bourreau les décapita et elles obtinrent la couronne du martyre.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Son père et le gouverneur qui l’avait torturée moururent d’une mort violente. L’eau du bassin sur lequel elle avait déposé une croix guérissait tous ceux qui s’y lavaient.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Les corps des deux saintes furent déposés dans une église aux environ de Galate. Plus tard on transféra celui de sainte Barbara en Égypte dans l’église qui porte son nom dans le vieux Caire.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de leurs prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En ce jour de l’an 412 des martyrs (696 après Jésus Christ) eut lieu le décès d’abba Samuel le confesseur (الانبا صاموئيل المعترف), l’abbé du monastère d’al-Qualamoun (ألقلمون دير). Il est natif d’un village du diocèse de Massil (ميصيل). Son père, Sillas (سيلاس) était prêtre. Celui-ci vit en songe un être lumineux qui lui dit : « Il est nécessaire que soit confié à ton fils une foule considérable et qu’il soit l’élu du Seigneur. »",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Dès son enfance, Samuel était pur, semblable au prophète Samuel et lorsqu’il grandit, se fit moine à Scété auprès d’un saint homme nommé abba Aghathôn (انبا أغاثون. Trois ans plus tard le saint homme décéda. Samuel se mit alors à jeuner et à prier avec intensité et persévérance ensuite il fut ordonné prêtre pour l’église de saint Macaire le grand.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Un messager apporta au désert le Tome de Léon (طومس لاوون). Il en fit la lecture devant les moines et leur demanda de le signer. L’ayant entendu, abba Samuel fut pris d’un zèle ardent et s’en empara et le déchira en proclamant son désaccord. Le messager se mit en colère et ordonna qu’on frappe abba Samuel. Un de ces coups atteint son œil qui fut arraché. Puis il fut mis hors du monastère. L’ange du Seigneur lui apparut et lui donna l’ordre de se rendre à Qualamoun. Il y alla et construisit un monastère où il demeura, enseignant ceux qui l’entouraient en les affermissant dans la Foi orthodoxe.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Plus tard, les berbères attaquèrent le monastère et l’emmenèrent dans leur pays. Il y rencontra abba Jean (أنبا يؤنس), l’higoumène de Scété et ils se consolaient mutuellement. Son geôlier tenta de le séduire pour qu’il adore le soleil. Comme il n’y parvenait pas, il attacha son pied à celui d’une jeune esclave en leur ordonnant de garder les chameaux dans le but de le faire chuter dans le péché et, dans ce cas, il pourrait en disposer à son gré. Mais avec l’aide de Dieu il put y résister. Plus tard, le fils de son maitre tomba malade et faillit mourir ; le saint pria pour lui et il guérit. Son maitre l’admira, s’excusa en implorant son pardon. Lui ayant demandé ce qu’il souhaitait qu’il fasse pour lui, Samuel répondit qu’il voulait rentrer à son couvent. Il l’y ramena. A son arrivée tous ses enfants spirituels l’entourèrent. Le nombre de ceux-ci s’était multiplié et ils étaient devenus des milliers.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "La sainte vierge lui apparut et lui dit : « Ce lieu est ma demeure pour l’éternité. » Ce saint prononça de nombreuses homélies, écrivit un grand nombre d’articles. A l’approche de son décès il réunit ses disciples, leur recommanda de rester fermes dans la crainte de Dieu et dans la Foi jusqu’au dernier soupir. Puis il rendit l’âme en paix. Son corps est conservé à son monastère qui est proche de Maghagha (مغاغة) au mont Qualamoun (جبل القلمون) dans le désert occidental. Ce monastère est toujours peuplé de moines.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En ce jour de l’an 240 après Jésus Christ décéda le pape saint Hiéraclas (ياروكلاس), le 13ème patriarche de la prédication de saint Marc. Lors de sa naissance, ses parents étaient idolâtres mais, plus tard, eurent la Foi et furent baptisés. Ils l'éduquèrent chrétiennement et il acquit de l’habilité dans l’enseignement et dans les sermonts. En conséquence, saint Démétrios (ديمتريوس), le 12ème pape, l’aima et l'ordonna diacre puis prêtre à Alexandrie. Une grande foule venait pour écouter ses homélies.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En l’an 224 après Jésus Christ il s’installa sur le trône de saint Marc, garda le troupeau du Christ de la meilleure façon et ramena à la Foi un grand nombre. Saint Hiéraclas demeura seize ans, un mois et vingt-six jours sur le siège apostolique puis décéda en paix.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "9 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "10 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "11 Koyak", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous commémorons aujourd’hui le décès d’abba Pijimi, l’anachorète (أنبا بجيمي السائح). Ce saint était natif de la ville de Fichah du diocèse Massil (فيشا التابعة لكرسي ميصيل). A l’âge de douze ans, alors qu’il gardait le troupeau de son père, un ange du Seigneur lui apparut en prenant l’apparence d’un jeune homme qui lui dit : « Allons au désert pour nous faire moines ». Pijimi accepta la suggestion et ils se dirigèrent vers le désert de Scété en un lieu où se trouvaient trois anciens. L’ange le leur confit puis disparut. Quant à Pijimi, il prit goût à la vie au désert et demeura en compagnie de ces moines vingt-quatre ans jusqu’à leur décès. Dès lors, il quitta ce lieu et marcha trois jours dans le désert lorsqu’il il fut assailli par des démons qui prirent l’apparence de monstres, de porcs et de serpents qui l’entouraient et voulaient le dévorer. Pijimi ressentit spirituellement que c’était des démons, alors il pria et ils disparurent. Puis il s’installa trois ans dans ce lieu pendant lesquels il jeûnait une semaine après l’autre et à la fin de chaque semaine il se nourrissait d’une poignée de dattes et buvait un peu d’eau et il n’avait plus que la chair et les os.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Enfin l’ange du Seigneur lui apparut en songe et lui ordonna de retourner à sa ville. Il s’y rendit par obéissance et se construisit une cabane à l’extérieur de la ville où il s’installa pour adorer Dieu et poursuivre son ascèse. Il fut un exemple pour ces concitoyens qui profitaient de la profondeur de ses enseignements spirituels.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Abba Chénouté (أنبا شنودة), l’archimandrite, vit un jour une colonne de lumière éclatante et une voix lui dit : « voici abba Pijimi, l’anachorète ». Il partit à pied pour le rencontrer et ils se reconnurent par inspiration divine. Abba Chénouté demeura quelques jours auprès d’abba Pijimi puis retourna à son monastère.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Lorsque le moment de quitter ce bas monde approcha, il en informa son serviteur lui donnant comme instruction de l’enterrer sur place. Il tomba malade puis vit un groupe de saints venir auprès de lui. Alors il rendit l’âme entre les mains du Seigneur et les anges le portèrent vers les cieux en chantant des louanges.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous commémore aussi en ce jour le martyre de saint Ptolémée (ابطلماوس) de Tentyris (Déndérah – دندرة) à l’ouest de Qéna (قنا). Ce saint était fils unique et reçu une bonne éducation chrétienne de la part de ses parents. Lorsqu’il grandit, il fit la rencontre de saint Paphnouté (Babnouda) l’anachorète (ببنوده السائح) dans les montagnes des environs. Celui-ci lui conseilla de se rendre à Antinoë (أنصنا) auprès d’un adorateur (عابد) nommé Dorothée (دوروثيؤس). Il lui prédit toutes les épreuves qu’il devra subir et l’encouragea à les supporter. Lorsqu’il arriva auprès de Dorothée, celui-ci lui conseilla d’entrer dans la ville et de confesser sa Foi en Jésus Christ afin d’obtenir la couronne du martyre. Il fit cela et confessa sa Foi devant le gouverneur de cette ville. En conséquence, il subit de nombreux tourments qu’il endura avec patience. Finalement, le gouverneur ordonna qu’on le suspende sur un mat élevé, un soldat le transperça au cou et il obtint la couronne du martyre. Des fidèles recueillirent son corps et l’enterrèrent avec grand honneur. Lorsque l’époque des persécutions fut achevée, ils édifièrent une église sur sa tombe et un grand nombre de miracles se réalisèrent.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous. Amen !",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "En ce jour l’Église commémore aussi la consécration de l’église du martyr saint Claude (اقلاديوس) le fils de Ptolémée (ابطلماوس) le frère du roi Numérien (نوماريوس) d’Antioche. Cette église se trouve au village de Bakour (باقور) du district d’Abou-Tig (أبو تيج) au gouvernorat d’Assiout (أسيوط) en haute Égypte. Cette église existe encore de nos jours. La narration de son martyre se trouve dans le Synaxaire du 11 Paoni.",
-      "",
-    ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "12 Koyak", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Nous célébrons aujourd'hui la commémoration mensuelle de l’archange Michel, le chef des armées de notre Seigneur, qui se tient devant Dieu tout-puissant et qui intercède pour les hommes en disant :",
+      "Le sanctuaire (الهيكل) de cette église était si vaste qu’il est utilisé actuellement comme église alors que son abside (شرقية الهيكل) est utilisée comme sanctuaire. L’église actuelle conserve certaines fresques originales. Des tentatives sont actuellement effectuées pour redonner à cette église ses dimensions originales.",
       "",
     ],
     [
@@ -6042,15 +5854,7 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction des prières de ses pères soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "13 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "14 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Décès de saint Grégoire, patriarche des Arméniens. Décès de saint Luc le stylite Décès d’abba Ezéchiel d’ Hermonthis. 15 Koyak",
-      "",
-    ],
     [
       Prefix.synaxarium + "&D=0104",
       "En ce jour de l’an 38 des martyrs (322 après Jésus Christ) décéda saint Grégoire, le patriarche des Arméniens (القديس غريغوريوس بطريرك الارمن). Il est considéré comme un martyr sans effusion de sang. Ce saint naquit vers 257 après Jésus Christ dans la capitale de la région d’Ararat (عاصمة إقليم أرارات) en Arménie. Son père se nommait Anak (أناش) et faisait partie de la famille royale. Celui-ci fut tué et Grégoire resta seul avec son frère. Leur gouvernante s’échappa avec eux à Césarée de Cappadoce (قيصرية الكبادوك) où elle les éleva dans la piété et la sainteté. Par la suite il servit au palais du roi Tiridate (تريداته). Un jour, le roi lui demanda d’offrir un sacrifice aux idoles mais le saint l’informa qu’il était chrétien. Le roi se mit en colère et ordonna qu’on le torture mais le Seigneur le sauvait et le guérissait. Finalement le roi finit par le jeter dans une fosse profonde. Dieu prit soin de lui en envoyant une vieille qui jetait de la nourriture dans cette fosse car elle eut une vision dans laquelle on lui disait de pétrir du pain et de le lancer dans la fosse. Elle fit cela pendant quinze ans.",
@@ -6101,11 +5905,7 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "16 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "17 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "18 Koyak", ""],
     [
       Prefix.synaxarium + "&D=0104",
       "Nous commémorons aujourd’hui le transfert des reliques de saint Tite (تيطس) le disciple de saint Paul, l’apôtre. Ces reliques étaient à l’origine sur l’ile de Crète et furent transférées à Constantinople sur l’ordre de l’empereur Constantin le grand. Cet empereur prit soin des églises qui se trouvaient sur son royaume, en y mettant de belles icônes, les reliques des apôtres, des martyrs et des saints. Lorsqu’il apprit que les reliques de saint Tite se trouvaient en Crète, il y envoya une délégation de prêtres qui ramenèrent le cercueil à Constantinople avec tous les honneurs qui lui sont dus et il fut placé à l’intérieur d’un beau sanctuaire qui avait été spécialement construit pour lui. Dieu honora ce disciple en faisant apparaitre de nombreux miracles de son corps. Son décès est rapporté le 2nd jour du petit mois.",
@@ -6166,16 +5966,7 @@ ReadingsArrays.SynaxariumArray = [
       "Quand Dieu voulut le délivrer des peines de ce monde, il lui envoya saint Antoine le grand et saint Macaire pour l'informer du jour où il le quittera. Il convoqua ses fidèles et leur fit des recommandations utiles pour leur vie puis décéda en paix.",
       "",
     ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "20 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "21 Koyak", ""],
-    [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "22 Koyak", ""],
     [
       Prefix.synaxarium + "&D=0104",
       "Nous commémorons en ce jour l'archange Gabriel l'annonciateur (الملاك الجليل غبريال المبشر) ainsi que la consécration de son église dans la ville de Césarée de Palestine (قيسارية بفلسطين) et les miracles qui s'y sont produits.",
@@ -6236,15 +6027,8 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "23 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "24 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Décès de saint Jean Kamé, le prêtre. Décès de saint Pichaï au mont al-Tôd. 25 Koyak",
-      "",
-    ],
     [
       Prefix.synaxarium + "&D=0104",
       "En ce jour de l’an 575 des martyrs (859 après Jésus Christ) eut lieu le décès de saint Jean Kamé, le prêtre (يوحنا كاما القس). Ce saint habitait à Choubramanso (شبرا منصو) qui faisait partie des dépendances de Sa-al-hagar (التابعة لصا الحجر). Il était fils unique de parents chrétiens craignant Dieu qui l’élevèrent chrétiennement, et le marièrent contre son gré.",
@@ -6295,7 +6079,6 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "26 Koyak", ""],
     [
       Prefix.synaxarium + "&D=0104",
       "Nous commémorons en ce jour le martyre de sainte Anastasie (أنسطاسية) en l’an 20 des martyrs (304 après Jésus Christ). Cette sainte naquit à Rome en l'an 275 après Jésus Christ. Son père était un notable païen de Rome alors que sa mère était chrétienne. Cette dernière l'a faite baptisée en cachette de son père et lui donna une bonne éducation lui inculquant les principes chrétiens. Elle avait un directeur spirituel qui prenait soin d’elle sans que son père ne le sache. Lorsqu'elle atteignit l'âge du mariage, son père la maria contre son gré à un jeune homme païen comme lui mais elle n'arrêtait pas de prier ardemment notre Seigneur le Christ lui implorant de la séparer de ce jeune homme qui n'avait pas la Foi. Dès que son mari quittait son foyer pour travailler, sainte Anastasie allait visiter les chrétiens emprisonnés à cause de leur Foi, afin de les servir et les consoler. Quand son mari se rendit compte de cela, il l'enferma à la maison en faisant poster des gardes. Anastasie ne cessait pas de prier et d'implorer Dieu afin qu'il la délivre. Dieu agréa sa demande et son mari mourut prématurément. Elle s'empressa de distribuer sa fortune aux malheureux et à ceux qui étaient emprisonnés à cause de leur Foi et combattaient pour elle.",
@@ -6321,15 +6104,9 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "27 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "28 Koyak", ""],
+    [Prefix.synaxarium + "&D=0104", "d", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Glorieuse Nativité de notre Seigneur Jésus Christ. Commémoration des martyrs d’Akhmîm. 29 Koyak",
-      "",
-    ],
     [
       Prefix.synaxarium + "&D=0104",
       "En ce jour de l’an 5501 après la création du monde selon la tradition de notre Église copte orthodoxe, et en l’an 42 du règne d’Auguste César, naquit notre Seigneur, notre Dieu et notre Sauveur Jésus Christ selon la chair de la très sainte Vierge Marie. En effet, par la volonté divine, Auguste César émit son édit pour recenser toute la terre. Alors Joseph monta de Nazareth à Bethlehem de Judée avec la Vierge Marie pour s’y inscrire car il était de la tribu de Juda et de la descendance de David. Comme ils étaient là, arrivèrent les jours où elle devait enfanter et elle mit au monde le sauveur du monde. Elle l'emmaillota et le coucha dans une mangeoire, car ils ne trouvèrent pas de logement.",
@@ -6385,11 +6162,8 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "30 Koyak", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "1 Taubi", ""],
     [Prefix.synaxarium + "&D=0104", "", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "2 Taubi", ""],
     [
       Prefix.synaxarium + "&D=0104",
       "En ce jour de l’an 17 des martyrs (301 après Jésus Christ) décéda saint Théonas (أنبا ثاؤنا), le 16ème pape d’Alexandrie. Ce saint avait été sacré patriarche le 2 Koyak (27 novembre 282). Il était un savant pieux, humble, rempli de douceur et d’amour envers tous ses contemporains. Pour que les fidèles puissent y prier, il édifia à Alexandrie une église dédiée à la sainte Vierge Marie. En effet, jusqu’à son époque, les fidèles priaient chez eux ou dans les cavernes par peur des persécutions. Par ailleurs, il put ramener à la Foi en Jésus Christ un grand nombre de païens et les baptiser. A son époque, il y avait à Alexandrie un hérétique nommé Sabellius (سبيليوس) qui prêchait que le Père, le Fils et le Saint Esprit étaient une seule hypostase (personne – أقنوم). Il l’excommunia et prouva la fausseté de ses enseignements en se référant à la sainte Bible. Après avoir achevé son bon combat, il décéda en paix. Il fut enterré au monastère « al-Maghara » (la caverne المغارة).",
@@ -6427,7 +6201,9 @@ ReadingsArrays.SynaxariumArray = [
     ],
     [
       Prefix.synaxarium + "&D=0104",
-      "En ce jour de l’an 2 après la naissance de notre Seigneur Jésus Christ des mages venant d’orient se rendirent au palais d’Hérode pour chercher le nouveau-né et demandèrent : « Où est le roi des Juifs qui vient de naître ? Nous avons vu son étoile à l’orient et nous sommes venus nous prosterner devant lui. » En apprenant cela, le roi Hérode fut bouleversé, et tout Jérusalem avec lui. Il réunit tous les grands prêtres et les scribes du peuple, pour leur demander où devait naître le Christ. Ils lui répondirent : « À Bethléem en Judée, car voici ce qui est écrit par le prophète [Michée] : Et toi, Bethléem, terre de Juda, tu n’es certes pas le dernier parmi les chefs-lieux de Juda, car de toi sortira un chef, qui sera le berger de mon peuple Israël. » Alors Hérode convoqua les mages en secret pour leur faire préciser à quelle date l’étoile était apparue ; puis il les envoya à Bethléem, en leur disant : « Allez, vous renseigner avec précision sur l’enfant. Et quand vous l’aurez trouvé, venez me l’annoncer pour que j’aille, moi aussi, me prosterner devant lui. »",
+      "En ce jour de l’an 2 après la naissance de notre Seigneur Jésus Christ des mages venant d’orient se rendirent au palais d’Hérode pour chercher le nouveau-né et demandèrent : « Où est le roi des Juifs qui vient de naître ? Nous avons vu son étoile à l’orient et nous somm" +
+        giaki.FR +
+        " nous prosterner devant lui. » En apprenant cela, le roi Hérode fut bouleversé, et tout Jérusalem avec lui. Il réunit tous les grands prêtres et les scribes du peuple, pour leur demander où devait naître le Christ. Ils lui répondirent : « À Bethléem en Judée, car voici ce qui est écrit par le prophète [Michée] : Et toi, Bethléem, terre de Juda, tu n’es certes pas le dernier parmi les chefs-lieux de Juda, car de toi sortira un chef, qui sera le berger de mon peuple Israël. » Alors Hérode convoqua les mages en secret pour leur faire préciser à quelle date l’étoile était apparue ; puis il les envoya à Bethléem, en leur disant : « Allez, vous renseigner avec précision sur l’enfant. Et quand vous l’aurez trouvé, venez me l’annoncer pour que j’aille, moi aussi, me prosterner devant lui. »",
       "",
     ],
     [
@@ -6440,14 +6216,6 @@ ReadingsArrays.SynaxariumArray = [
       "Alors Hérode, voyant que les mages s’étaient moqués de lui, entra dans une violente fureur. Il envoya tuer tous les enfants jusqu’à l’âge de deux ans à Bethléem et dans toute la région, d’après la date qu’il s’était fait préciser par les mages. Alors fut accomplie la parole prononcée par le prophète Jérémie : Un cri s’élève dans Rama, pleurs et longue plainte : c’est Rachel qui pleure ses enfants et ne veut pas être consolée, car ils ne sont plus. En effet, le tombeau de Rachel, la femme de Jacob, se trouvait proche de Bethléem.",
       "",
     ],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Que la bénédiction de l’intercession de ces enfants soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-      "",
-    ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "4 Taubi", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "5 Taubi", ""],
-    [Prefix.synaxarium + "&D=0104&C=Title", "6 Taubi", ""],
     [
       Prefix.synaxarium + "&D=0104",
       "L’Église célèbre en ce jour la circoncision de notre Seigneur Jésus Christ le huitième jour après sa naissance selon la Loi juive. Ceci eut lieu afin que s’accomplisse la Loi comme l’a dit l’apôtre saint Paul dans son épître : « Car je vous le déclare : le Christ s’est fait le serviteur des Juifs, en raison de la fidélité de Dieu, pour réaliser les promesses faites à nos pères. » Il nous a donné le signe de la nouvelle alliance, le baptême, comme l’a encore dit saint Paul : « En lui, vous avez reçu une circoncision qui n’est pas celle que pratiquent les hommes, mais celle qui réalise l’entier dépouillement de votre corps de chair ; telle est la circoncision qui vient du Christ. Dans le baptême, vous avez été mis au tombeau avec lui et vous êt" +
@@ -6545,13 +6313,7 @@ ReadingsArrays.SynaxariumArray = [
       "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
       "",
     ],
-    [Prefix.synaxarium + "&D=0104&C=Title", "7 Taubi", ""],
     [Prefix.synaxarium + "&D=0104&C=Title", "8 Taubi", ""],
-    [
-      Prefix.synaxarium + "&D=0104",
-      "Décès de saint Abraham, le compagnon d’abba Gawarguy. Décès d’abba Phîs. 9 Taubi",
-      "",
-    ],
     [
       Prefix.synaxarium + "&D=0104",
       "En ce jour de l’an 409 des martyrs (693 après Jésus Christ) décéda le saint ascète, abba Abraham (أنبا أبرآم), le compagnon d’abba Gawarguy (Georges أنبا جاورجي). Ce saint naquit de parents chrétiens qui l’éduquèrent dans la justice (البر) et la piété. Ils lui apprirent à pratiquer les bonnes œuvres envers tous sans exception. Son père décéda alors qu’il était encore jeune. Lorsqu’il grandit, il voulut devenir moine et fit part de son vœu à sa mère. Celle-ci bénit ce souhait et pria Dieu en lui demandant d’accepter cette offrande de sa part.",
@@ -9364,6 +9126,892 @@ ReadingsArrays.SynaxariumArray = [
   ],
   [
     [
+      Prefix.synaxarium + "&D=0204&C=Title",
+      "2 Koyak\n1) Décès de saint Abba Hour, le moine ;\n2) Décès de saint Hormina, l’anachorète\n",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Nous commémorons en ce jour le décès de saint abba Hour, le moine (أبا هور). C’était un combattant qui surpassa un grand nombre de saints dans l’intensité de ses prières. Il appréciait de s’isoler et s’installa seul dans le désert. Satan le jalousa et lui apparut pour lui dire : « Dans le désert tu peux me battre car tu es isolé. Sois donc courageux et va à Alexandrie. » Lorsque Dieu voulut que ses vertus soient connues et que les gens profitent de ses enseignements, Il le guida pour aller à Alexandrie où il prit l’habitude de porter de l’eau aux prisonniers et aux captifs.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Un jour, des chevaux s’emballèrent et se mirent à courir dans la ville. L’un d’entre eux se rua sur un enfant et le tua sur-le-champ alors qu’Abba Hour se tenait dans les parages. Satan entra dans certains de ceux qui étaient présents qui se mirent à crier : « C’est ce vieux moine qui a tué cet enfant. » Mais le saint ne fut pas troublé, il prit l’enfant dans ses bras et pria Dieu pour que son Nom soit glorifié. Puis il fit le signe de la croix sur l’enfant. Par conséquent, la vie lui fut immédiatement rendue et il le remit à ses parents qui louèrent Dieu ainsi que ceux qui avaient assisté à ce miracle. Un grand nombre appréciaient le saint au point qu’il eut peur d’être envahi par les gloires vaines du monde, alors il repartit au désert et demeura dans un monastère.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Lorsqu’approcha le moment où il devait quitter ce monde éphémère, il vit un groupe de saints qui l’invitaient à les rejoindre. Ceci le réjouit et il fit appeler ses disciples leur fit ses recommandations et leur apprit son départ prochain pour rejoindre le christ. Ils furent tristes à cause de la séparation. Peu après, il tomba légèrement malade puis rendit l’âme entre les mains du Seigneur qu’il a tant aimé.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Nous commémorons aussi aujourd’hui le décès d’abba Hormina (القديس الأنبا هورمينا السائح), l’anachorète. Ce saint naquit à Bahnassa (البهنسا) de parents vertueux qui l’ui donnèrent une éducation chrétienne. Au cours de sa jeunesse il gardait le troupeau de son père. Un jour il eut la vision des deux apôtres Pierre et Jean qui l’invitèrent à entrer dans le monachisme. Il obéit et se rendit au monastère de saint Jacques (دير الأنبا يعقوب), où il rencontra l’abbé du monastère et lui demanda de le guider dans le monachisme. Quelque temps plus tard il revêtit le Schème monastique (إسكيم الرهبنة) et poursuivit son combat spirituel avec intensité en priant sans cesse et en pratiquant l’ascétisme.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Ensuite il entra dans le désert profond où il trouva une source d’eau à côté de laquelle avait poussé un palmier. Il y demeura quelques temps pendant lesquels il rencontra certains pères anachorètes. Puis il se déplaça au nord de la ville de Kaw (قاو) sur la montagne orientale. Il y vécut en combattant intensément et ne cessait pas de faire des prosternations. Son corps et sa vue s’affaiblirent alors que satan, qui ne supportait pas son combat, l’attaquait mais l’ange du Seigneur le sauvait.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "A l’approche de son décès, ses amis Abba Hour et saint Joseph (Youssab – القديس يوساب) et les autres pères qui se trouvaient à cet endroit se regroupèrent autour de lui pour recevoir sa bénédiction puis il remit son âme entre les mains du Seigneur qu’il avait tant aimé. Ils prièrent pour ses funérailles, l’ensevelirent et l’enterrèrent dans l’église de Kaw avec beaucoup de respect. Dieu fit apparaitre un grand nombre de miracles par l’intermédiaire de ses reliques. Un monastère portant le nom de saint Hormina se trouve toujours au nord (بحري) de la ville de Kaw proche de ‘Ezbet-el-Aqbãt (عزبة الأقباط) du district d’al-Badary (مركز البدارى) du gouvernorat de Sohag. Les reliques du saint se trouvent dans ce monastère.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0204",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen ! ",
+      "",
+    ],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=0304&C=Title",
+      "3 Koyak\n1) Entrée de la sainte Vierge Marie au temple de Jérusalem ;\n2) Martyre de saint Bastavrôs le nouveau",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Nous commémorons en ce jour l’entrée de la sainte Vierge Marie, la Mère de Dieu au temple de Jérusalem alors qu’elle n’avait que trois ans car elle avait été vouée à Dieu. En effet sa mère Anne (حنة), qui était stérile, était très affligée ainsi que saint Joachim (يواقيم), son époux. En conséquence, elle fit un vœu au Seigneur et s’engagea à lui consacrer l’enfant qu’Il lui accorderait. Le Seigneur lui donna une fille, notre Dame, qu’elle nomma Marie et l’éleva pendant trois ans. Ensuite, sainte Anne accompagna sa fille au temple du Seigneur, pour qu’elle vive avec les vierges consacrées au Seigneur. Elle y demeura environ dix ans pendant lesquelles elle évoluait dans la vertu et l’ascétisme.  ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Lorsque vint la plénitude des temps, le Seigneur vint dans le monde et s’incarna dans cette vierge pure qu’il avait choisie.  ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Que la bénédiction de son intercession soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "En ce jour de l’an 1229 des martyrs (1512 après Jésus Christ) eut lieu le martyre de saint Bastavrôs le nouveau (بسطفروس الجديد) qui signifie croix (Salib – صليب). Ce saint naquit dans le village d’Ebchadât (إبشادات) qui se trouve proche de Hour (هور) du district de Malawi (مركز ملوي) du gouvernorat de Minieh et il fut appelé Salib et reçut une instruction chrétienne. Lorsqu’il grandit, il voulut mener une vie de chasteté mais ses parents le marièrent contre sa volonté avec une parente à eux. Comme son épouse avait les mêmes penchants que lui, ils menèrent une vie de chasteté parfaite dans la maison conjugale.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Saint Bastavrôs passait le plus clair de son temps avec les moines dans le désert. Il écoutait leurs conseils en priant sans cesse et en recherchant les intercessions de la sainte Vierge pour qu’elle lui procure son secours.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Un jour, une bande de malfaisants s’emparèrent de lui et lui dressèrent un procès sur la base de faux témoignages. Il confessa publiquement sa Foi chrétienne et, en conséquence, ils le jetèrent en prison. L’épouse du geôlier le vit, par une petite fenêtre, prier toute la nuit tandis qu’une femme lumineuse lui disait de patienter car il obtiendra la couronne du martyre et que l’archange Michel lui apportera son secours. Après cela, il fut transférer enchainé au gouverneur du Caire. Le passage en bateau dura plusieurs jours pendant lesquels il fut privé de nourriture. Il passa cette période en prière et la sainte Vierge Marie lui apparaissait pour l’encourager. Arrivé au Caire, il fut arrêté immédiatement et présenté au roi Al-Achraf Qânsûh Al-Ghûrî (الملك الأشرف قنصوه الغوري). Le saint confessa à nouveau sa Foi chrétienne ce qui mit le roi en colère et il l’envoya au juge pour qu’il soit condamné. Devant la fermeté du saint, le juge le condamna à mort et il confia cette tâche à un prince mamelouk.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Alors, ils confectionnèrent une croix en bois sur laquelle ils clouèrent le saint. Puis, ils le posèrent sur un dromadaire pour l’exhiber dans les rues de la ville. Il était heureux d’être considéré digne de cette humiliation à cause du Nom du Christ. Après cela, ils le descendirent du dromadaire et lui promirent de le libérer s’il changeait d’avis mais le saint proclama à voix forte : « Je mourrai chrétien au nom de notre Seigneur, notre Dieu et notre Sauveur Jésus Christ. » En conséquence, le prince ordonna qu’il soit décapité et il obtint la couronne du martyre. Son corps fut mis dans le feu pendant trois jours sans qu’il ne soit affecté. Des fidèles le retirèrent et le portèrent à la cellule patriarcalle située à harat-zouéla (حارة زويلة).",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Le pape Jean XIII (يوأنس الثالث عشر) reçut la dépouille du saint avec beaucoup d’honneurs à l’église antique de la sainte Vierge qui se trouve dans cet endroit et il l’installa dans cette église. Le pape Chénouté III (البابا شنودة الثالث), le 117ème patriarche, autorisa abba Démitrios (أنبا ديمتريوس) l’évêque de Malawi (ملوي) de transférer une partie des reliques qui furent installées à l’église de la sainte Vierge qui se trouve dans le village d’Ebchadât le 15 Paoni 1703 des martyrs (1987 après Jésus Christ).",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0304",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
+      "",
+    ],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=0404&C=Title",
+      "4 Koyak\n1) Martyre de Saint André l’apôtre le frère de saint Pierre\n2) Consécration de l’église de Saint Jean d’Héraclée à Om-el-Kossour à Manfalout\n3) Commémoration des reliques des deux Saints: abba Pichoï et abba Paul\n",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "En ce jour de l’an 62 après Jésus Christ eut lieu le martyre de l’apôtre saint André (اندراوس الرسول) le frère de saint Pierre (بطرس الرسول). Cet apôtre naquit à Bethsaïde en Galilée et il exerçait la profession de pêcheur. Il était le disciple de Jean le Baptiste qui lui montra le Christ, alors il devint son disciple et l’un des douze apôtres.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "Après la descente du Saint Esprit le jour de la pentecôte, il proclama l’Évangile en Syrie (الشام), en Asie mineure (اسيا الصغرى), en Achaïe (أخائية), Cappadoce (كبادوكية), Galatie (غلاطية) et la Bithynie (بيثينية), et finalement il subit le martyre à Patras (باتراس) une ville d’Achaïe en Grèce. En effet, il se rendit dans cette ville pour y proclamer l’Évangile et la majorité de ses habitants se convertirent au point que le paganisme faillit en être éradiqué. Le gouverneur ressentit le danger et fit arrêter saint André en lui ordonnant d’encenser les idoles sous peine de mort par crucifixion. Le saint refusa de s’exécuter et proclama sa Foi en Jésus Christ, le vrai Dieu qui nous a sauvés en versant son sang. Le gouverneur ordonna qu’il meure de la même manière que celui qu’il proclame ce qui réjouit l’apôtre. On confectionna une croix sous forme d’un X, toujours appelée la croix de saint André (صليب أندراوس) à laquelle il fut suspendu. Il survécut pendant deux jours, durant lesquels il prêcha à la foule jusqu’à ce qu’il rendit l’âme entre les mains du Seigneur et il obtint la couronne du martyre. Les fidèles recueillirent son corps et l’enterrèrent avec beaucoup d’honneur.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "Nous commémorons aussi aujourd'hui la consécration de l’église de saint Jean d’Héraclée, le martyr (الشهيد يوحنا الهرقلي) qui subit le martyr le 4 Paoni. Son corps est encore conservé avec celui de son oncle le martyr Epipham (أبو فام) dans le village d’Om-el-Kossour (أم القصور) dans le district de Manfalout (مركز منفلوط) du gouvernorat d’Assiout.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "En ce jour nous commémorons aussi le transfert des corps des deux grands saints abba Pichoï (أنبا بشوي) l’homme parfait, l’ami de notre bon Sauveur et abba Paul de Tammouh (أنبا بولا الطموهي). Ces corps qui étaient à l’est de Mallawi (ملوي) à l’emplacement du village actuel Deir el-Bersha (دير البرشا) furent transférés au monastère d’abba Pichoï. Ceci eut lieu en l’an 557 des martyrs (842 après Jésus Christ) à l’époque du pape Joseph 1er (البابا يوساب الأول), le 52ème patriarche. Celui-ci voulut transférer le corps d’abba Pichoï vers son monastère à Scété mais il n’a pas été possible de faire avancer le bateau sur lequel il avait été posé. Un ancien nommé Jérémie (أرميا), qui menait une vie sainte, leur indiqua que le navire n’avancera jamais avec uniquement le corps d’abba Pichoï car il y avait un accord entre lui et abba Paul de ne jamais être séparés sur terre. En conséquence, ils amenèrent le corps de saint Paul sur le bateau qui avança sur le champ, alors, ils louèrent Dieu et glorifièrent ses saints. Arrivés à destination ils mirent les corps des deux saints dans un seul coffret et le déposèrent dans l’église. Ils se trouvent toujours dans un beau sanctuaire (مقصورة) et des miracles sont réalisés.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0404",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504&C=Title",
+      "5 Koyak\n1) Décès du Saint prophète Nahoum\n2) Martyre de Saint Victor d’Assiout\n3) Martyre de Saint Isidore",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "Nous commémorons aujourd'hui le décès du prophète Nahoum (ناحوم) le juste, l'un des douze petits prophètes. Il est né dans le village d'Elqosh (القوش) en Galilée et il est issu de la tribu de Juda. Il a proclamé sa prophétie à l'époque d'Amasias (أموصيا) et d'Osias (عوزيا) son fils. Il reprocha aux fils d'Israël l'adoration des idoles et leur montra que Dieu qui est lent à la colère et miséricordieux est aussi un Dieu jaloux qui se venge de ses adversaires. Il a annoncé la proclamation de l'Évangile ainsi que les apôtres qui vont le proclamer en disant : « Voici sur les montagnes les pieds de Celui qui apporte la bonne nouvelle et qui annonce la paix. ». Il annonça aussi la ruine qui surviendra à Ninive. Dieu fit survenir un tremblement de terre et un incendie qui brûla la ville et le peuple qui avait fait le mal. Mais ceux qui avaient une conduite droite ne furent pas atteints. Après avoir agi selon la volonté de Dieu, ce prophète décéda en paix.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "En ce jour eut lieu le martyre de saint Victor (بقطر) qui naquit dans le village de Chaw (شو) du gouvernorat d’Assiout en haute Égypte, sur la rive est du Nil. Il fut nommé soldat à Chaw. Lorsque Dioclétien décréta qu'il fallait adorer les idoles et les encenser, ce saint refusa de le faire. Le gouverneur de Chaw voulut l'amadouer sans y parvenir, alors, il le fit mettre en prison. Ces parents lui rendirent visite en prison et l'encouragèrent à résister. Comme il ne parvenait pas à le détourner de sa Foi, le gouverneur de Chaw finit par l'envoyer au gouverneur d'Assiout en lui expliquant ce qui était arrivé.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "Lorsqu'il en prit connaissance, le gouverneur d'Assiout lui fit beaucoup de promesses s'il adorait les idoles. Mais saint Victor rejeta toutes ses propositions. Le gouverneur fut pris par une grande colère et ordonna qu'il soit trainé derrière des chevaux au galop puis lui proposa à nouveau d'adorer les idoles sans résultat. Alors, il ordonna qu'il soit jeté dans la fournaise du bain du village de Mocha (موشا). A leur arrivée, il étendit les mains vers le ciel pour prier, alors, l'ange du Seigneur lui apparut et promit la couronne de la vie. Alors, ses bourreaux le prirent, le ligotèrent et le jetèrent dans la fournaise où il rendit l’âme et obtint la couronne du martyre.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0504",
+      "En ce jour de l’an 250 après Jésus Christ eut lieu le martyre de saint Isidore d’Alexandrie (القديس إسيذوروس الإسكندري). Ce saint naquit dans cette ville et devint soldat dans l’armée de l’empereur Dèce (ديسيوس) sous la direction d’Homère (أوميريوس). Lorsque ce commandant découvrit qu’il était chrétien, il commença par l’amadouer en lui faisant des promesses et puis en le menaçant mais le saint demeura ferme dans sa Foi. Alors le commandant ordonna qu’on lui coupe la langue puis le fit décapiter et, ainsi, il obtint la couronne du martyre. Ils jetèrent son corps dans un puits qui devint réputé car Dieu y faisait apparaitre des miracles. Par la suite une église fut édifiée à cet endroit. Au 5ème siècle ses reliques furent transférées à Constantinople et il fut honoré par tout le monde.",
+      "",
+    ],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=0604&C=Title",
+      "6 Koyak\n1) Décès de Saint Abraham ibn Zara’a, le 62ème pape de la prédication de Saint Marc\n2) Martyre de Saint Patlasse, le prêtre\n",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "En ce jour de l’an 695 des martyrs (979 après Jésus Christ) décéda le pape saint Abraham ibn Zara’a (البابا القديس الأنبا أبرام بن زرعة) le 62ème patriarche d’Alexandrie.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Ce père était un chrétien de Syrie. Il était un riche commerçant et se rendait souvent en Egypte pour les besoins de son travail. Par la suite il s’installa dans ce pays. Abraham était miséricordieux envers les nécessiteux et il fut réputé pour ses connaissances et sa bonté. ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Lorsque le siège patriarcal devint vaquant, les évêques et les notables de l'Eglise furent unanimes pour le choisir comme patriarche. Il distribua ses biens aux pauvres et aux nécessiteux dès son intronisation. Ce patriarche mit fin aux mauvaises habitudes qui s'étaient établies. Il interdit la pratique de la simonie (السيمونية) dans l’église, la prise de concubine et il excommunia tous ceux qui les pratiquaient. Un riche notable qui n’accepta pas de se détacher de son harem fut excommunié par le pape et il subit une mort pitoyable. Celui-ci fut un exemple pour un grand nombre.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "A cette époque eut lieu le miracle du transport de la colline de Mokattam (المقطم).  En effet le calife fatimide Al-Muizz li-Dîn Allah (المعز لدين الله الفاطمي) avait un ministre nommé Jacob fils de Kéllés (يعقوب بن كِلِّس) qui détestait les chrétiens et voulait les piéger. Celui-ci dit au calife qu’il y a dans l’Evangile un verset qui dit : « Si vous avez de la foi gros comme un grain de sénevé, vous direz à cette montagne : Déplace-toi d'ici à là, et elle se déplacera. ». Il dit au calife que ces prétentions sont mensongères et lui suggéra de convoquer le patriarche pour que celui-ci prouve la véracité des paroles de leur Christ. Le calife pensa que si la colline du Mokattam pouvait être un peu plus loin du Caire, le centre-ville sera plus vaste et, si cela n’était pas vrai, il aurait une bonne excuse pour persécuter les chrétiens.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Alors il convoqua le patriarche et lui expliqua ces réflexions. Le patriarche demanda un délai de trois jours qu’il obtint puis il réunit les évêques et les moines qui étaient proches et ils demeurèrent pendant trois jours à l’église de la sainte Vierge – al-Moallaka (كنيسة القديسة العذراء – المعلقة au cours desquels ils prièrent et jeûnèrent sans interruption. A l’aube du troisième jour, la sainte Vierge apparut au patriarche et lui fit savoir que Dieu réalisera ce miracle par l’intermédiaire d’un saint homme, qui était tanneur de son état (دبَّـاغ) nommé Simon (سمعان). Le pape envoya chercher celui-ci puis ils se rendirent chez le calife avec les évêques, les moines et une foule de fidèles et l’informèrent qu’ils étaient prêts. Tous se rendirent auprès de la colline et ils formèrent deux groupes : d’un côté le patriarche avec tous les chrétiens et d’un autre Al-Muizz et ceux qui l’accompagnaient. Le pape et les chrétiens se mirent à prier puis ils se prosternèrent trois fois en disant : Kuri`e `ele`ycon – Pitié Seigneur. A chaque fois qu’ils se levaient la colline se soulevait et à chaque fois qu’ils se prosternaient à terre, elle se reposait. De plus la colline avançait en même temps qu’ils le faisaient. Ce phénomène troubla le calife et ceux qui l’accompagnaient. Alors le calife se rapprocha du patriarche et lui dit : « Dieu est grand, béni soit son Nom. Vous avez prouvé que votre Foi est véritable et qu’elle est vivante » et il lui promit de lui donner tout ce qu’il demandera. Le patriarche commença par décliner la proposition puis, devant l’insistance du calife, demanda de pouvoir rénover les églises, principalement celle de saint Mercure, le détenteur des deux épées (كنيسة القديس مرقوريوس – أبو سيفين) située dans le vieux Caire. Le calife rédigea un décret en ce sens et lui proposa une somme d’argent que le patriarche refusa. Ceci fit grandir le prestige du patriarche auprès du calife. L’église de saint Mercure et de nombreuses autres églises furent reconstruites.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "En commémoration de ce miracle, l’Eglise ajouta trois jours au jeûne de l’Avent (صوم الميلاد) qui devint quarante-trois jours. Ce patriarche institua aussi le jeûne de Jonas (صوم يونان) de trois jours qui était déjà en vigueur chez les syriaques.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Et lorsqu’il acheva son bon combat, ce pape décéda en paix après avoir siégé trois ans et six mois sur le trône de saint Marc.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de ses prières soit avec nous. Amen ! ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Nous commémorons aussi en ce jour le martyre de saint Patlasse (باطلس), le prêtre.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de leurs prières soit avec nous. Amen ! ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      'Nous commémorons aussi aujourd’hui la consécration de l’église de saint abba Éschyrône, plus connu sous le nom de "Abbaskhayrône"[1] (apa ÉC,uron أباسخيرون), qui subit le martyre le 7 Paoni. Cette église se trouve à l’intérieur de l’église saint Pichoï (كنيسة الأنبا بيشوي) du monastère qui porte le même nom à Scété (دير القديس الأنبا بيشوي بوادي النطرون).',
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Cette église aurait été édifiée à l’époque du pape Benjamin II (البابا بنيامين الثاني) le 82ème patriarche lorsque les reliques de ce saint furent transférées dans le monastère. En effet, ce pape avait réhabilité ce monastère. A noter que l’autel d’abba Éschyrône est toujours utilisé pour les prières. ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Nous commémorons aussi en ce jour le décès de saint Jean (القديس يوحنا) l’évêque d’Armânt (أرمنت). Ses parents étaient païens et son père avait le métier de charpentier.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Son frère ainé, Pisentios (بسنتاؤس), partit pour le château de Tod (قصر الطود) où il fut convaincu par la religion chrétienne puis il transmit sa conviction à son frère Jean. Tous deux partirent dans la montagne proche de leur village pour s’isoler et adorer Dieu avec beaucoup de ferveur. Comme leur vertu et leur sainteté étaient connues dans toute la contrée, des notables d’Armânt emmenèrent Jean contre son gré à Alexandrie pour que le pape le consacre évêque pour leur ville. De retour dans la ville, il baptisa un grand nombre de païens et édifia un grand nombre d’églises. Il proclamait la parole de vérité avec courage et droiture. Les gouverneurs païens firent subir à ce père beaucoup de tourments mais il les supporta avec beaucoup de patience. En conséquence les gens le craignirent et le respectèrent ainsi que tout le clergé avec lui. Il prit soin du troupeau du Seigneur avec droiture et de manière vertueuse. Et, lorsqu’il accomplit son bon combat il décéda en paix.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de ses prières soit avec nous. Amen ! ",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Nous commémorons aussi aujourd’hui le martyre de l’architecte copte Saïd ibn Kâteb al-Farghâni (سعيد بن كاتب الفرغاني). Il était natif du village de Farghâne (فرغان).",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Cet architecte avait construit le nilomètre (مقياس النيل) de l'île de Rodah (الروضة) en 864 après Jésus Christ, à l’époque du calife abbasside al-Mutawakkil (المُتَوكِّل). Lorsqu’Ahmad Ibn Touloun (أحمد بن طولون) devint gouverneur d’Egypte, il lui confia ses œuvres les plus importantes. Ainsi il édifia pour lui l'aqueduc d'Ibn Touloun (قناطر ابن طولون), un puits dans la zone de Birket-el-Habach (بركة الحبش) pour alimenter en eau sa capitale d’al-qaṭā’i` (القطائـع). Ceci eut lieu en 872 & 873 après Jésus Christ.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Par la suite, ibn Touloun voulut édifier la plus grande mosquée d’Egypte en utilisant trois cent piliers en marbre. Il lui fut suggéré de prendre ceux de certaines églises après les avoir détruites. Lorsque cet architecte copte apprit cela, il craignit la destruction des églises et écrivit au gouverneur qu’il pouvait lui construire sa mosquée en utilisant uniquement deux colonnes pour la quibla (القبلة). Alors, le gouverneur lui confia la construction pour laquelle il utilisa des techniques innovantes inconnues à son époque. Cette mosquée se trouve toujours dans le quartier d’Ibn-Touloun et témoigne de l’ingéniosité de cet architecte copte.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Saïd ibn Kâteb al-Farghâni refusa de se convertir à l’islam comme le lui suggérait ibn Touloun. En conséquence ce dernier le fit décapiter et il obtint la couronne du martyre.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0604",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen ! ",
+      "",
+    ],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0704&C=Title", "7 Koyak", ""],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Martyre de saint Aissé et de sa sœur sainte Thècle. Martyre des saintes Barbara et Julienne. Décès de saint Samuel le confesseur. Décès de saint Hiéraclas, 13ème patriarche de la prédication de saint Marc. 8 Koyak",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Nous célébrons aussi en ce jour le martyre de saint Aissé (إيسى) et de sa sœur sainte Thècle (تكلا) en l’an 20 des martyrs (304 après Jésus Christ). Ils étaient originaires d’Abousir (أبوصير) et naquirent vers la fin du 3ème siècle de parents chrétiens. Ils étaient riche et persévéraient à faire l’aumône aux pauvres et aux miséreux. Saint Aissé se rendit à Alexandrie pour rendre visite à un ami. A cette époque saint Victor (بقطر) fils de Romanus (رومانوس) arriva dans cette ville. Ayant constaté sa conduite et son endurance, Il eut envie de l’imiter. Ce sentiment était accru du fait que saint Victor était un fils de ministre, un officier dans l’armée et un proche de l’empereur. En conséquence, saint Aissé se présenta auprès du gouverneur et confessa sa Foi dans le Christ.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "L’ange du Seigneur apparut à Thècle, la sœur d’Aissé et lui demanda de rejoindre son frère. Elle prit une embarcation sur le Nil pour s’y rendre. La sainte Vierge et Élisabeth, sa cousine, lui apparurent et la consolèrent. La sainte Vierge lui disait : « On a crucifié mon Fils par jalousie. » tandis que sainte Elisabeth lui disait : « J’ai un fils à qui on a tranché la tête injustement » Mais sainte Thècle ne savait pas qui elles étaient.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Arrivée à Alexandrie, elle se joignit à son frère pour confesser sa Foi en Jésus Christ. Le gouverneur la fit torturer par toutes les méthodes puis la remit à son fils, gouverneur de la région d’el-Khossous (ألخصوص) pour les emmener en haute Égypte.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Peu après leur départ, l’embarcation n’avança plus. Le gouverneur ordonna alors qu’on décapite les deux saints et qu’on jette leurs corps au milieu des ronces et de plantes nommées alfa(ألحلفاء). Ceci fut fait et ils obtinrent la couronne du martyre. Dieu inspira un prêtre nommé Macaire (مكاريوس) de Chatanouf (شطانوف) de recueillir leur corps puis il les enterra avec les honneurs.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Nous commémorons aussi le martyre en l’an 327 après Jésus Christ des deux saintes Barbara (Barbe) (بربارة) et Julienne (يوليانه). Le père de Barbara, qui s’appelait Dioscores (ديسقورس), était un riche notable de Nicomédie (نيقوميدية) et, en raison de son grand amour pour sa fille, il fit construire une tour entourée d’idoles pour qu’elle y demeure et qu’elle les adore. Du haut de cette tour, elle leva les yeux pour contempler la splendeur du ciel avec les planètes et les étoiles et elle en conclut que seul Dieu pouvait en être le créateur et seul lui devait être adoré.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Le savant Origène (أوريجانوس) se trouvant dans cette ville entendit parler de cette sainte par l’une de ses servantes qui était chrétienne et lui expliqua sa soif pour la connaissance. Il alla la voir et lui enseigna les principes du christianisme. Elle alors fut illuminée par la Foi, se fit baptiser au nom de la Sainte Trinité puis communia au saints Sacrements.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Comme le bain de cette tour était aménagée avec deux fenêtres, elle en fit ouvrir une troisième et fit installer une croix. A sa venue son père constata les modifications et lui en demanda la raison. Elle lui répondit : « Ne sais-tu pas, père, que tout s’accomplit dans la sainte Trinité ? Ces trois fenêtres symbolisent le Père, le Fils et le Saint Esprit. Quand à cette croix, elle représente celle du Christ par qui le monde est sauvé. Je te demande, père, de renoncer à ton errance et d’adorer le Dieu qui t’a créé et sauvé. » Ayant entendu cela, son père entra dans une grande colère et, dégainant son épée, voulut la tuer. Elle s’enfuit et il la poursuivit. Un rocher se fendit devant elle et elle passa à travers puis il se referma. Mais le cœur de son père était plus dur que la pierre, alors il le contourna l’attrapa et la livra au gouverneur Marcien (مركيانوس). Celui-ci voulut l’amadouer par de belles paroles, en lui faisant des promesses et enfin en la menaçant mais il ne put pas ôter de son cœur l’amour qu’elle avait pour son Seigneur le Christ. Alors il ordonna qu’elle soit torturée.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Il y avait dans la foule une jeune fille nommée Julienne. Elle vit ce que subissait sainte Barbara et elle pleurait pour elle. Là, elle vit le Christ apparaître à sainte Barbara pour la consoler et lui donner de la force. Son esprit s’illumina et elle crut dans le Christ. Le gouverneur la fit torturer elle aussi mais sans obtenir le résultat qu’il souhaitait. Alors, Il ordonna qu’elles soient décapitées toutes les deux.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Lorsque Barbara eut connaissance de l’ordre du gouverneur, elle pria Dieu pour qu’il reçoive leurs âmes, puis, elles avancèrent avec courage et le bourreau les décapita et elles obtinrent la couronne du martyre.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Son père et le gouverneur qui l’avait torturée moururent d’une mort violente. L’eau du bassin sur lequel elle avait déposé une croix guérissait tous ceux qui s’y lavaient.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Les corps des deux saintes furent déposés dans une église aux environ de Galate. Plus tard on transféra celui de sainte Barbara en Égypte dans l’église qui porte son nom dans le vieux Caire.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "En ce jour de l’an 412 des martyrs (696 après Jésus Christ) eut lieu le décès d’abba Samuel le confesseur (الانبا صاموئيل المعترف), l’abbé du monastère d’al-Qualamoun (ألقلمون دير). Il est natif d’un village du diocèse de Massil (ميصيل). Son père, Sillas (سيلاس) était prêtre. Celui-ci vit en songe un être lumineux qui lui dit : « Il est nécessaire que soit confié à ton fils une foule considérable et qu’il soit l’élu du Seigneur. »",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Dès son enfance, Samuel était pur, semblable au prophète Samuel et lorsqu’il grandit, se fit moine à Scété auprès d’un saint homme nommé abba Aghathôn (انبا أغاثون. Trois ans plus tard le saint homme décéda. Samuel se mit alors à jeuner et à prier avec intensité et persévérance ensuite il fut ordonné prêtre pour l’église de saint Macaire le grand.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Un messager apporta au désert le Tome de Léon (طومس لاوون). Il en fit la lecture devant les moines et leur demanda de le signer. L’ayant entendu, abba Samuel fut pris d’un zèle ardent et s’en empara et le déchira en proclamant son désaccord. Le messager se mit en colère et ordonna qu’on frappe abba Samuel. Un de ces coups atteint son œil qui fut arraché. Puis il fut mis hors du monastère. L’ange du Seigneur lui apparut et lui donna l’ordre de se rendre à Qualamoun. Il y alla et construisit un monastère où il demeura, enseignant ceux qui l’entouraient en les affermissant dans la Foi orthodoxe.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Plus tard, les berbères attaquèrent le monastère et l’emmenèrent dans leur pays. Il y rencontra abba Jean (أنبا يؤنس), l’higoumène de Scété et ils se consolaient mutuellement. Son geôlier tenta de le séduire pour qu’il adore le soleil. Comme il n’y parvenait pas, il attacha son pied à celui d’une jeune esclave en leur ordonnant de garder les chameaux dans le but de le faire chuter dans le péché et, dans ce cas, il pourrait en disposer à son gré. Mais avec l’aide de Dieu il put y résister. Plus tard, le fils de son maitre tomba malade et faillit mourir ; le saint pria pour lui et il guérit. Son maitre l’admira, s’excusa en implorant son pardon. Lui ayant demandé ce qu’il souhaitait qu’il fasse pour lui, Samuel répondit qu’il voulait rentrer à son couvent. Il l’y ramena. A son arrivée tous ses enfants spirituels l’entourèrent. Le nombre de ceux-ci s’était multiplié et ils étaient devenus des milliers.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "La sainte vierge lui apparut et lui dit : « Ce lieu est ma demeure pour l’éternité. » Ce saint prononça de nombreuses homélies, écrivit un grand nombre d’articles. A l’approche de son décès il réunit ses disciples, leur recommanda de rester fermes dans la crainte de Dieu et dans la Foi jusqu’au dernier soupir. Puis il rendit l’âme en paix. Son corps est conservé à son monastère qui est proche de Maghagha (مغاغة) au mont Qualamoun (جبل القلمون) dans le désert occidental. Ce monastère est toujours peuplé de moines.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Que la bénédiction de ses prières soit avec nous. Amen !",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "En ce jour de l’an 240 après Jésus Christ décéda le pape saint Hiéraclas (ياروكلاس), le 13ème patriarche de la prédication de saint Marc. Lors de sa naissance, ses parents étaient idolâtres mais, plus tard, eurent la Foi et furent baptisés. Ils l'éduquèrent chrétiennement et il acquit de l’habilité dans l’enseignement et dans les sermonts. En conséquence, saint Démétrios (ديمتريوس), le 12ème pape, l’aima et l'ordonna diacre puis prêtre à Alexandrie. Une grande foule venait pour écouter ses homélies.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "En l’an 224 après Jésus Christ il s’installa sur le trône de saint Marc, garda le troupeau du Christ de la meilleure façon et ramena à la Foi un grand nombre. Saint Hiéraclas demeura seize ans, un mois et vingt-six jours sur le siège apostolique puis décéda en paix.",
+      "",
+    ],
+    [
+      Prefix.synaxarium + "&D=0704",
+      "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
+      "",
+    ],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0804&C=Title", "8 Koyak", ""],
+    [Prefix.synaxarium + "&D=0804", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0904&C=Title", "9 Koyak", ""],
+    [Prefix.synaxarium + "&D=0904", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1004&C=Title", "10 Koyak", ""],
+    [Prefix.synaxarium + "&D=1004", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1104&C=Title", "11 Koyak", ""],
+    [Prefix.synaxarium + "&D=1104", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1204&C=Title", "12 Koyak", ""],
+    [Prefix.synaxarium + "&D=1204", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1304&C=Title", "13 Koyak", ""],
+    [Prefix.synaxarium + "&D=1304", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1404&C=Title", "14 Koyak", ""],
+    [Prefix.synaxarium + "&D=1404", "", ""],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=1504&C=Title",
+      "15 Koyak\nDécès de saint Grégoire, patriarche des Arméniens\n2) Décès de saint Luc le stylite Décès d’abba Ezéchiel d’ Hermonthis\n",
+      "",
+    ],
+    [Prefix.synaxarium + "&D=1504", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1604&C=Title", "16 Koyak", ""],
+    [Prefix.synaxarium + "&D=1604", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1704&C=Title", "17 Koyak", ""],
+    [Prefix.synaxarium + "&D=1704", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1804&C=Title", "18 Koyak", ""],
+    [Prefix.synaxarium + "&D=1804", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1904&C=Title", "19 Koyak", ""],
+    [Prefix.synaxarium + "&D=1904", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2004&C=Title", "20 Koyak", ""],
+    [Prefix.synaxarium + "&D=2004", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2104&C=Title", "21 Koyak", ""],
+    [Prefix.synaxarium + "&D=2104", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2204&C=Title", "22 Koyak", ""],
+    [Prefix.synaxarium + "&D=2204", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2304&C=Title", "23 Koyak", ""],
+    [Prefix.synaxarium + "&D=2304", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2404&C=Title", "24 Koyak", ""],
+    [Prefix.synaxarium + "&D=2404", "", ""],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=2504&C=Title",
+      "25 Koyak\n1) Décès de saint Jean Kamé, le prêtre ;\n2) Décès de saint Pichaï au mont al-Tôd",
+      "",
+    ],
+    [Prefix.synaxarium + "&D=2504", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2604&C=Title", "26 Koyak", ""],
+    [Prefix.synaxarium + "&D=2604", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2704&C=Title", "27 Koyak", ""],
+    [Prefix.synaxarium + "&D=2704", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2804&C=Title", "28 Koyak", ""],
+    [Prefix.synaxarium + "&D=2804", "", ""],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=2904&C=Title",
+      "29 Koyak\n1) Glorieuse Nativité de notre Seigneur Jésus Christ ;\n2) Commémoration des martyrs d’Akhmîm",
+      "",
+    ],
+    [Prefix.synaxarium + "&D=2904", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=3004&C=Title", "30 Koyak", ""],
+    [Prefix.synaxarium + "&D=3004", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0105&C=Title", "1 Taubi", ""],
+    [Prefix.synaxarium + "&D=0105", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0205&C=Title", "2 Taubi", ""],
+    [Prefix.synaxarium + "&D=0205", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0305&C=Title", "3 Taubi", ""],
+    [Prefix.synaxarium + "&D=0305", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0405&C=Title", "4 Taubi", ""],
+    [Prefix.synaxarium + "&D=0405", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0505&C=Title", "5 Taubi", ""],
+    [Prefix.synaxarium + "&D=0505", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0605&C=Title", "6 Taubi", ""],
+    [Prefix.synaxarium + "&D=0605", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0705&C=Title", "7 Taubi", ""],
+    [Prefix.synaxarium + "&D=0705", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0805", "", ""],
+    [Prefix.synaxarium + "&D=0805", "", ""],
+  ],
+  [
+    [
+      Prefix.synaxarium + "&D=0905&C=Title",
+      "9 Tabui\n1) Décès de saint Abraham, le compagnon d’abba Gawarguy ;\n2) Décès d’abba Phîs",
+      "",
+    ],
+    [Prefix.synaxarium + "&D=0905", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1005&C=Title", "10 Tabui", ""],
+    [Prefix.synaxarium + "&D=1005", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1105&C=Title", "11 Tabui", ""],
+    [Prefix.synaxarium + "&D=1105", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1205&C=Title", "12 Tabui", ""],
+    [Prefix.synaxarium + "&D=1205", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1305&C=Title", "13 Tabui", ""],
+    [Prefix.synaxarium + "&D=1305", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1405&C=Title", "14 Tabui", ""],
+    [Prefix.synaxarium + "&D=1405", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1505&C=Title", "15 Tabui", ""],
+    [Prefix.synaxarium + "&D=1505", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1605&C=Title", "16 Tabui", ""],
+    [Prefix.synaxarium + "&D=1605", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1705&C=Title", "17 Tabui", ""],
+    [Prefix.synaxarium + "&D=1705", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1805&C=Title", "18 Tabui", ""],
+    [Prefix.synaxarium + "&D=1805", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1905&C=Title", "19 Tabui", ""],
+    [Prefix.synaxarium + "&D=1905", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2005&C=Title", "20 Tabui", ""],
+    [Prefix.synaxarium + "&D=2005", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2105&C=Title", "21 Tabui", ""],
+    [Prefix.synaxarium + "&D=2105", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2205&C=Title", "22 Tabui", ""],
+    [Prefix.synaxarium + "&D=2205", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2305&C=Title", "23 Tabui", ""],
+    [Prefix.synaxarium + "&D=2305", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2405&C=Title", "24 Tabui", ""],
+    [Prefix.synaxarium + "&D=2405", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2505&C=Title", "25 Tabui", ""],
+    [Prefix.synaxarium + "&D=2505", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2605&C=Title", "26 Tabui", ""],
+    [Prefix.synaxarium + "&D=2605", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2705&C=Title", "27 Tabui", ""],
+    [Prefix.synaxarium + "&D=2705", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2805&C=Title", "28 Tabui", ""],
+    [Prefix.synaxarium + "&D=2805", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2905&C=Title", "29 Tabui", ""],
+    [Prefix.synaxarium + "&D=2905", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=3005&C=Title", "30 Tabui", ""],
+    [Prefix.synaxarium + "&D=3005", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0106&C=Title", "1er Amshir", ""],
+    [Prefix.synaxarium + "&D=0106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0206&C=Title", "2 Amshir", ""],
+    [Prefix.synaxarium + "&D=0206", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0306&C=Title", "03 Amshir", ""],
+    [Prefix.synaxarium + "&D=0306", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0406&C=Title", "04 Amshir", ""],
+    [Prefix.synaxarium + "&D=0406", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0506&C=Title", "05 Amshir", ""],
+    [Prefix.synaxarium + "&D=0506", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0606&C=Title", "06 Amshir", ""],
+    [Prefix.synaxarium + "&D=0606", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0106&C=Title", "11 Amshir", ""],
+    [Prefix.synaxarium + "&D=0106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0706&C=Title", "07 Amshir", ""],
+    [Prefix.synaxarium + "&D=0706", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0806&C=Title", "08 Amshir", ""],
+    [Prefix.synaxarium + "&D=0806", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0106&C=Title", "11 Amshir", ""],
+    [Prefix.synaxarium + "&D=0106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0906&C=Title", "09 Amshir", ""],
+    [Prefix.synaxarium + "&D=0906", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1006&C=Title", "10 Amshir", ""],
+    [Prefix.synaxarium + "&D=1006", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1106&C=Title", "11 Amshir", ""],
+    [Prefix.synaxarium + "&D=1106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1206&C=Title", "12 Amshir", ""],
+    [Prefix.synaxarium + "&D=1206", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0106&C=Title", "11 Amshir", ""],
+    [Prefix.synaxarium + "&D=0106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1306&C=Title", "13 Amshir", ""],
+    [Prefix.synaxarium + "&D=1306", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1406&C=Title", "14 Amshir", ""],
+    [Prefix.synaxarium + "&D=1406", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1506&C=Title", "15 Amshir", ""],
+    [Prefix.synaxarium + "&D=1506", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1606&C=Title", "16 Amshir", ""],
+    [Prefix.synaxarium + "&D=1606", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1706&C=Title", "17 Amshir", ""],
+    [Prefix.synaxarium + "&D=1706", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1806&C=Title", "18 Amshir", ""],
+    [Prefix.synaxarium + "&D=1806", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1906&C=Title", "19 Amshir", ""],
+    [Prefix.synaxarium + "&D=1906", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2006&C=Title", "20 Amshir", ""],
+    [Prefix.synaxarium + "&D=2006", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2106&C=Title", "21 Amshir", ""],
+    [Prefix.synaxarium + "&D=2106", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2206&C=Title", "22 Amshir", ""],
+    [Prefix.synaxarium + "&D=2206", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2306&C=Title", "23 Amshir", ""],
+    [Prefix.synaxarium + "&D=2306", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2406&C=Title", "24 Amshir", ""],
+    [Prefix.synaxarium + "&D=2406", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2506&C=Title", "25 Amshir", ""],
+    [Prefix.synaxarium + "&D=2506", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2606&C=Title", "26 Amshir", ""],
+    [Prefix.synaxarium + "&D=2606", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2706&C=Title", "27 Amshir", ""],
+    [Prefix.synaxarium + "&D=2706", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2806&C=Title", "28 Amshir", ""],
+    [Prefix.synaxarium + "&D=2806", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2906&C=Title", "29 Amshir", ""],
+    [Prefix.synaxarium + "&D=2906", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=3006&C=Title", "30 Amshir", ""],
+    [Prefix.synaxarium + "&D=3006", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0107&C=Title", "01 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0107", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0207&C=Title", "02 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0207", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0307&C=Title", "03 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0307", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0407&C=Title", "04 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0407", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0507&C=Title", "05 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0507", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0607&C=Title", "06 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0607", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0707&C=Title", "07 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0707", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0807&C=Title", "08 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0807", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=0907&C=Title", "09 Barmahat", ""],
+    [Prefix.synaxarium + "&D=0907", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1007&C=Title", "10 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1007", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1107&C=Title", "11 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1107", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1207&C=Title", "12 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1207", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1307&C=Title", "13 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1307", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1407&C=Title", "14 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1407", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1507&C=Title", "15 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1507", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1607&C=Title", "16 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1607", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1707&C=Title", "17 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1707", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1807&C=Title", "18 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1807", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=1907&C=Title", "19 Barmahat", ""],
+    [Prefix.synaxarium + "&D=1907", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2007&C=Title", "20 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2007", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2107&C=Title", "21 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2107", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2207&C=Title", "22 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2207", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2307&C=Title", "23 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2307", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2407&C=Title", "24 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2407", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2507&C=Title", "25 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2507", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2607&C=Title", "26 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2607", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2707&C=Title", "27 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2707", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2807&C=Title", "28 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2807", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=2907&C=Title", "29 Barmahat", ""],
+    [Prefix.synaxarium + "&D=2907", "", ""],
+  ],
+  [
+    [Prefix.synaxarium + "&D=3007&C=Title", "30 Barmahat", ""],
+    [Prefix.synaxarium + "&D=3007", "", ""],
+  ],
+  [
+    [
       Prefix.synaxarium + "&D=0108&C=Title",
       "1 Parmouté\n1) décès de saint Silvain, le moine;\n2) Décès d'Aaron le prêtre",
       " 1 برمودة",
@@ -10855,7 +11503,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=2808",
       "Les fils du roi de cette région sortirent pour chasser et installèrent des pièges. Ce saint se fit prendre par l’un d’eux alors qu’il était revêtu de peau de bête. En le voyant, les princes prirent peur et lui demandèrent : « Qui es-tu ? D’où viens-tu ? » Il leur répondit : « Je suis un homme et un pécheur qui demeure dans la montagne pour adorer le Seigneur Jésus Christ le Fils du Dieu vivant. » Ils lui répondirent : « il n’y a pas d’autres dieux que le soleil et le feu. Présente-leur tes offrandes et tu auras la vie sauve ». Il leur répondit : « Tout ceci n’est que la créature de Dieu. Vous ne connaissez pas la vérité et il serait préférable que vous adoriez le vrai Dieu qui a créé tout ceci. » Ils lui demandèrent: « Prétends-tu que celui que les juifs ont crucifié est Dieu ? » Il leur répondit : « Oui. Il a lui-même crucifié le péché et tué la mort. ». Alors ils se mirent en colère, attrapèrent les deux disciples, les torturèrent puis les tuèrent. Ensuite ils poursuivirent la persécution de Milius pendant deux semaines.",
-      "وحدث أن خرج ولدا ملك خوراسان لصيد الوحوش ونصبا شباكهما، فوقع هذا القديس داخلها. وكان هذا القديس لابساً ثوباً من الشعر. فلما رأياه خافا منه وسألاه قائلين: 'من أنت ومن أين أتيت '. فأجابهما: 'أنا إنسان خاطىء ساكن في هذا الجبل لعبادة الرب يسوع ابن الله الحي'. فقالا له: 'ليس إله إلا الشمس والنار فتقدم واعبدهما وإلا قتلناك'. فأجابهما: 'إن هذه من صنع الله وأنتما لا تعرفان الحق، والأفضل لكما أن تعبدا الإله الحقيقي خالق هذه كلها'. فقال له: 'أتزعم أن المصلوب من اليهود إله ؟'. فقال: 'نعم ذاك الذي صلب الخطية، وأمات الموت هو الإله'. فحنق الاثنان عليه وأمسكا تلميذيه وعذَّباهما وقتلاهما. وظلا يعذِّبان القديس مدة أسبوعين.",
+      "وحدث أن خرج ولدا ملك خوراسان لصيد الوحوش ونصبا شباكهما، فوقع هذا القديس داخلها. وكان هذا القديس لابساً ثوباً من الشعر. فلما رأياه خافا منه وسألاه قائلين: 'من أنت ومن أين " +
+        giaki.AR +
+        " '. فأجابهما: 'أنا إنسان خاطىء ساكن في هذا الجبل لعبادة الرب يسوع ابن الله الحي'. فقالا له: 'ليس إله إلا الشمس والنار فتقدم واعبدهما وإلا قتلناك'. فأجابهما: 'إن هذه من صنع الله وأنتما لا تعرفان الحق، والأفضل لكما أن تعبدا الإله الحقيقي خالق هذه كلها'. فقال له: 'أتزعم أن المصلوب من اليهود إله ؟'. فقال: 'نعم ذاك الذي صلب الخطية، وأمات الموت هو الإله'. فحنق الاثنان عليه وأمسكا تلميذيه وعذَّباهما وقتلاهما. وظلا يعذِّبان القديس مدة أسبوعين.",
     ],
     [
       Prefix.synaxarium + "&D=2808",
@@ -14540,7 +15190,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=2410",
       "Souvent il s’adressait au soleil en disant : « Si tu es le dieu, fais-le-moi savoir. » Il disait aussi : « Toi, le Dieu que je ne connais pas, fais-Toi connaître à moi.» Un jour il entendit une voix qui lui disait : « Les moines de Scété connaissent Dieu. Rends-toi chez eux et ils te le feront connaitre. » Il se leva sur-le-champ, prit son épée et se rendit au désert. A cet endroit il rencontra saint Isidore (إيسوذوروس) le prêtre de Scété qui, en le voyant, prit peur à cause de son apparence. Moïse le rassura alors en disant qu’il était venu auprès d’eux afin qu’ils lui fassent connaître le vrai Dieu. Alors saint Isidore le conduisit auprès de saint Macaire le grand (مكاريوس الكبير) qui lui parla du Christ, de l’Incarnation et de la Rédemption. Finalement il crut et saint Macaire le baptisa et le reçut comme moine. Moïse se mit alors à prier et à adorer Dieu sans compter. Mais le démon le combattait en lui rappelant sa vie antérieure. Il s’en ouvrait à saint Isidore qui le consolait, et lui enseignait comment faire pour vaincre les forces du mal.",
-      "وكانت الخيوط الأولى من توبته بدأت عندما كان يخاطب الشمس قائلاً: 'إن كنت أنت الإله فعرفيني وأنت أيها الإله الذي لا أعرفه عرفني ذاتك'. فسمع يوماً من يقول له أن رهبان برية شيهيت يعرفون الله فاذهب إليهم، فقام لوقته وتقلد سيفه وأتى إلى البرية، فالتقى بالقديس إيسوذوروس قس الإسقيط، الذي لما رآه خاف من منظره، فطمأنه موسى قائلاً: 'لا تخف فقد أتيت إليكم لتعرفوني الإله الحقيقي'. فأتى به إلى القديس مكاريوس الكبير فكلمه عن السيد المسيح والتجسد والفداء فآمن، فعمده وقبله راهباً فعاش القديس موسى في حياة روحية قوية وكان الشيطان يقاتله بما كان يمارسه أولاً من خطايا، فكان يأتي إلى القديس إيسوذوروس معلمه ويخبره بذلك، فكان يعزيه ويشجعه ويعلمه كيف يتغلب على حيل الشياطين.",
+      "وكانت الخيوط الأولى من توبته بدأت عندما كان يخاطب الشمس قائلاً: 'إن كنت أنت الإله فعرفيني وأنت أيها الإله الذي لا أعرفه عرفني ذاتك'. فسمع يوماً من يقول له أن رهبان برية شيهيت يعرفون الله فاذهب إليهم، فقام لوقته وتقلد سيفه وأتى إلى البرية، فالتقى بالقديس إيسوذوروس قس الإسقيط، الذي لما رآه خاف من منظره، فطمأنه موسى قائلاً: 'لا تخف فقد " +
+        giaki.AR +
+        " إليكم لتعرفوني الإله الحقيقي'. فأتى به إلى القديس مكاريوس الكبير فكلمه عن السيد المسيح والتجسد والفداء فآمن، فعمده وقبله راهباً فعاش القديس موسى في حياة روحية قوية وكان الشيطان يقاتله بما كان يمارسه أولاً من خطايا، فكان يأتي إلى القديس إيسوذوروس معلمه ويخبره بذلك، فكان يعزيه ويشجعه ويعلمه كيف يتغلب على حيل الشياطين.",
     ],
     [
       Prefix.synaxarium + "&D=2410",
@@ -16541,7 +17193,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=0212",
       "Ses nouvelles parvinrent aux moines de Scété (شهيت). Ils en furent très peinés et demandèrent à saint Jean Colobos (abba Iwannyc pikoloboc – يحنس القصير) de l’aider pour le salut de son âme car elle leur avait fait beaucoup de bien. Lorsqu’il arriva, il fut reçu par la servante de Païssa. Alors il lui demanda de l’annoncer à sa maitresse. En entrant il chantait avec le psalmiste : « Même si je marche au milieu des ombres de la mort, je ne craindrai aucun mal, car tu es avec moi »Lorsqu’il s’installa il lui demanda : « Pourquoi as-tu délaissé le Christ pour faire tout ce mal ? » Puis il se mit à pleurer. Elle en fut affectée et lui demanda : « Pourquoi pleures-tu ? » Il lui répondit : « Je pleure parce que je vois sur ton visage les démons s’amuser, c’est pour cela que je pleure pour toi. » Elle lui demanda si elle pouvait se repentir. Il lui répondit : « Oui, mais pas ici ! » Elle lui dit alors : « Emmène-moi où tu veux. »",
-      "وعندما سمع آباء برية شيهيت بذلك حزنوا عليها وأرسلوا إليها القديس يحنس القصير لمساعدتها على خلاص نفسها، وعندما وصل إلى منزلها قال للبوابة: 'اعلمي سيدتك بقدومي'. ثم دخل وهو يرتل: 'إذا سرت في وادي ظل الموت لا أخاف شراً لأنك أنت معي' (مز 23: 4). ثم قال لها: 'لماذا استهنت بالسيد المسيح بهذا القرار وأتيت هذا الأمر الرديء؟'. فتأثرت من كلامه، أما هو فبكى. فقالت له: 'لماذا تبكي؟'. فأجابها: 'لأني أعاين الشياطين تلهو على وجهك فلهذا أنا أبكي'. فقالت له: 'هل لي توبة؟'. فأجابها القديس: 'نعم ولكن ليس في هذا المكان'. فقالت له: 'خذني إلى حيث تشاء'.",
+      "وعندما سمع آباء برية شيهيت بذلك حزنوا عليها وأرسلوا إليها القديس يحنس القصير لمساعدتها على خلاص نفسها، وعندما وصل إلى منزلها قال للبوابة: 'اعلمي سيدتك بقدومي'. ثم دخل وهو يرتل: 'إذا سرت في وادي ظل الموت لا أخاف شراً لأنك أنت معي' (مز 23: 4). ثم قال لها: 'لماذا استهنت بالسيد المسيح بهذا القرار و" +
+        giaki.AR +
+        " هذا الأمر الرديء؟'. فتأثرت من كلامه، أما هو فبكى. فقالت له: 'لماذا تبكي؟'. فأجابها: 'لأني أعاين الشياطين تلهو على وجهك فلهذا أنا أبكي'. فقالت له: 'هل لي توبة؟'. فأجابها القديس: 'نعم ولكن ليس في هذا المكان'. فقالت له: 'خذني إلى حيث تشاء'.",
     ],
     [
       Prefix.synaxarium + "&D=0212",
@@ -17392,7 +18046,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=1812",
       "Ce saint se trouvait chez lui avec des amis idolâtres. Certains firent part de bruits qui couraient concernant une femme qui est arrivée à Achmounein (الأشمونين) accompagnée d'un petit enfant qui avait une allure royale. Après que ses invités l'eurent quitté, Eudamon partit pour Achmounein et, là-bas, il vit Jésus avec sa mère Marie. Alors, il se prosterna devant Lui. Quand l'Enfant le vit, Il lui sourit et lui dit : « Salut à toi, Eudamon, tu as peiné et tu es venu jusqu'ici pour t'assurer du bruit qui court me concernant. En conséquence, j'habiterai chez toi et ta demeure sera ma maison jusqu'à la fin des temps. ».",
-      "وحدث في أحد الأيام أنه استضاف في منزله بعضاً من عابدي الأوثان وكانوا يتحدثون عن امرأة وصلت إلى بلاد الأشمونين ومعها طفل صغير يشبه أولاد الملوك. فلما انصرف الضيوف نهض وادامون وركب دابته ووصل إلى مدينة الأشمونين، وهناك رأى الطفل يسوع مع مريم أمه فسجد له. فلما رآه الطفل تبسم في وجهه وقال له: 'السلام لك يا وادامون. قد تعبت وأتيت إلى هنا لتحقيق ما سمعت من حديث ضيوفك عني لذلك سأقيم عندك ويكون بيتك مسكناً لي إلى الأبد'",
+      "وحدث في أحد الأيام أنه استضاف في منزله بعضاً من عابدي الأوثان وكانوا يتحدثون عن امرأة وصلت إلى بلاد الأشمونين ومعها طفل صغير يشبه أولاد الملوك. فلما انصرف الضيوف نهض وادامون وركب دابته ووصل إلى مدينة الأشمونين، وهناك رأى الطفل يسوع مع مريم أمه فسجد له. فلما رآه الطفل تبسم في وجهه وقال له: 'السلام لك يا وادامون. قد تعبت و" +
+        giaki.AR +
+        " إلى هنا لتحقيق ما سمعت من حديث ضيوفك عني لذلك سأقيم عندك ويكون بيتك مسكناً لي إلى الأبد'",
     ],
     [
       Prefix.synaxarium + "&D=1812",
@@ -17799,7 +18455,9 @@ ReadingsArrays.SynaxariumArray = [
     [
       Prefix.synaxarium + "&D=2512",
       "Un jour, un homme apporta son fils paralytique, le mit à la porte de la cellule de saint Bessarion et s’en alla. L’ayant entendu, ce saint lui demanda : d’où viens-tu ? , l’enfant lui répondit : mon père m’a déposé ici et il est parti. Alors le saint lui dit : Lève-toi et suis-le. Guérit, l’enfant se leva sur le champ et rejoignit son père qui le ramena à la maison en glorifiant Dieu. Dieu fit par son intermédiaire beaucoup d’autres miracles.",
-      "كان لرجل في مصر ابناً مشلولاً، فحمله إلى أنبا بيساريون وتركه على باب قلايته ووقف من بعيد. ولما سمع الشيخ صوت بكاء الولد سأله قائلاً: 'من أين أتيت؟' فقال له: 'أحضرني أبى ومضى'. فقال له الشيخ: 'انهض واذهب وراء والدك'. ففي الحال شُفى الولد ومضى إلى أبيه، فأخذه ورجع إلى بيته ممجداً الله. وقد أجرى الله على يديه آيات كثيرة.",
+      "كان لرجل في مصر ابناً مشلولاً، فحمله إلى أنبا بيساريون وتركه على باب قلايته ووقف من بعيد. ولما سمع الشيخ صوت بكاء الولد سأله قائلاً: 'من أين " +
+        giaki.AR +
+        "؟' فقال له: 'أحضرني أبى ومضى'. فقال له الشيخ: 'انهض واذهب وراء والدك'. ففي الحال شُفى الولد ومضى إلى أبيه، فأخذه ورجع إلى بيته ممجداً الله. وقد أجرى الله على يديه آيات كثيرة.",
     ],
     [
       Prefix.synaxarium + "&D=2512",
@@ -18428,3 +19086,4 @@ ReadingsArrays.SynaxariumArray = [
     ],
   ],
 ];
+;

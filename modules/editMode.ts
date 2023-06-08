@@ -274,18 +274,29 @@ function changeCssClass(htmlParag: HTMLElement) {
 function toggleClass(element: HTMLElement, className: string) {
   element.classList.toggle(className);
 }
-function changeTitle(htmlParag: HTMLElement) {
+function changeTitle(htmlParag: HTMLElement, newTitle?:string) {
   htmlParag = checkSelection(htmlParag);
   if (!htmlParag) return;
   let htmlRow = htmlParag.parentElement as HTMLElement;
-  let title: string = prompt("Provide The Title", htmlRow.dataset.root);
-  if (!title) return;
-    htmlRow.dataset.root = title;
+  let oldTitle = htmlRow.dataset.root;
+  if (!newTitle) newTitle = prompt("Provide The Title", oldTitle);
+  if (!newTitle) return alert('You didn\'t provide a valide title');
+    htmlRow.dataset.root = newTitle;
     Array.from(htmlRow.children)
       .forEach(
         (child: HTMLElement) => {
-          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = title
+          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = newTitle
         });
+  //We will then go to each sibling and change its title if it has the same title as oldTitle
+  htmlRow = htmlRow.nextElementSibling as HTMLElement;
+  while (htmlRow
+    && htmlRow.tagName === 'DIV'
+    && baseTitle(htmlRow.dataset.root) === baseTitle(oldTitle)) {
+    let actorClass: string = htmlRow.dataset.root.split('&C=')[1];
+    if (!actorClass) actorClass = '';
+    actorClass += '&C=';
+    changeTitle(htmlRow, baseTitle(newTitle) + actorClass)
+  }
 }
 
 /**

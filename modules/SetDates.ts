@@ -1,10 +1,14 @@
-setCopticDates();
 /**
  * a function that runs at the beginning and sets some global dates like the coptic date (as a string), today's Gregorian date (as a Date), the day of the week (as a number), the Season (a string), etc.
  * @param {Date} today  - a Gregorian date provided by the user or set automatically to the date of today if missing
  */
 async function setCopticDates(today?: Date) {
-	today ? (todayDate = today) : (todayDate = new Date());
+	if (!today)
+	{
+		today = new Date();
+		if(localStorage.selectedDate) localStorage.removeItem('selectedDate'); //We do this in order to reset the local storage 'selectedDate' when setCopticDates() is called without a date passed to it
+	}
+	todayDate = today;
 	weekDay = todayDate.getDay();
 	copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
@@ -340,26 +344,34 @@ function changeDate(
 		todayDate.setTime(todayDate.getTime() - days * calendarDay);
 	  }
 	}
-	
-	
-	console.log(todayDate);
 	setCopticDates(todayDate);
 	setSeasonalTextForAll();
 	reloadScriptToBody(['PrayersArray']);
 	allSubPrayersArrays.forEach((subArray) => {
 		for (let i = subArray.length - 1; i >= 0; i--) subArray.splice(i, 1)});
 	populatePrayersArrays();
-	let newDate = new Date();
-	if (
-	  todayDate.getDate() === newDate.getDate() &&
-	  todayDate.getMonth() === newDate.getMonth() &&
-	  todayDate.getFullYear() === newDate.getFullYear()
-	) {
-	  //it means that todayDate = the date of today (same day, same month, same year), in this case we set the local storage to undefined
-	  localStorage.selectedDate = undefined;
+	if (checkIfDateIsToday(todayDate)) {
+		localStorage.removeItem('selectedDate');
 	} else {
-	  //If todayDate is not equal to the date of today, we store the manually selected date in the local storage
-	  localStorage.selectedDate = todayDate.getTime();
-	}
+		//If todayDate is not equal to the date of today (not same day and same month and same year), we store the manually selected date in the local storage
+		  localStorage.selectedDate = todayDate.getTime().toString();
+	}	
+	console.log(todayDate);
 	return todayDate;
-  }
+}
+
+/**
+ * Checks whether the date passed to it is today
+ * @param {Date} storedDate  - The date which we want to check if it corresponds to today
+ * @returns {boolean} - returns true if storedDate is same as today
+ */
+function checkIfDateIsToday(date: Date):boolean {
+	let newDate = new Date();
+	if (date.getDate() === newDate.getDate()
+		&& date.getMonth() === newDate.getMonth()
+		&& date.getFullYear() === newDate.getFullYear()
+	) {
+		return true;
+	}
+	return false
+}
