@@ -172,10 +172,9 @@ function modifyTablesInTheirArrayBtn(btnsDiv:HTMLElement){
  * @returns
  */
 function deleteRow(htmlParag: HTMLElement) {
-  htmlParag = checkSelection(htmlParag);
-  if (!htmlParag) return;
-  let htmlRow = htmlParag.parentElement as HTMLElement;
-  if (confirm("Are you sure you want to delete this row?") == false) return;//We ask the user to confirm before deletion
+  let htmlRow = getHtmlRow(htmlParag) as HTMLElement;
+  if (!htmlRow) return;
+  if (confirm("Are you sure you want to delete this row?") === false) return;//We ask the user to confirm before deletion
   htmlRow.remove();
 }
 
@@ -250,10 +249,10 @@ titles = new Set(
  * @param {HTMLElement} htmlRow - the div (row) for which we want to change the css class
  */
 function changeCssClass(htmlParag: HTMLElement) {
-  htmlParag = checkSelection(htmlParag);
-  if (!htmlParag) return;
-  let htmlRow = htmlParag.parentElement as HTMLElement
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
   let className: string = htmlRow.dataset.root.split("&C=")[1];
+  if (!className) return;
   toggleClass(htmlRow, className);
   Array.from(htmlRow.children).forEach((element: HTMLElement) => {
     toggleClass(element, className);
@@ -274,13 +273,13 @@ function changeCssClass(htmlParag: HTMLElement) {
 function toggleClass(element: HTMLElement, className: string) {
   element.classList.toggle(className);
 }
-function changeTitle(htmlParag: HTMLElement, newTitle?:string) {
-  htmlParag = checkSelection(htmlParag);
-  if (!htmlParag) return;
-  let htmlRow = htmlParag.parentElement as HTMLElement;
+function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
   let oldTitle = htmlRow.dataset.root;
   if (!newTitle) newTitle = prompt("Provide The Title", oldTitle);
   if (!newTitle) return alert('You didn\'t provide a valide title');
+  if (newTitle === oldTitle) return;
     htmlRow.dataset.root = newTitle;
     Array.from(htmlRow.children)
       .forEach(
@@ -294,9 +293,9 @@ function changeTitle(htmlParag: HTMLElement, newTitle?:string) {
     && baseTitle(htmlRow.dataset.root) === baseTitle(oldTitle)) {
     let actorClass: string = htmlRow.dataset.root.split('&C=')[1];
     if (!actorClass) actorClass = '';
-    actorClass += '&C=';
+    if (actorClass !== '') actorClass = '&C=' + actorClass;
     changeTitle(htmlRow, baseTitle(newTitle) + actorClass)
-  }
+  } 
 }
 
 /**
@@ -445,28 +444,27 @@ function replaceText(text: string): string {
  * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
  */
 function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
-  htmlParag = checkSelection(htmlParag);
-  if (!htmlParag) return;
-  let row: HTMLElement = htmlParag.parentElement as HTMLElement;
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
  
   let newRow = document.createElement("div"),
     p: HTMLParagraphElement,
     child: HTMLParagraphElement;
   newRow.classList.add("TargetRow");
   newRow.dataset.isNewRow = "isNewRow";
-  newRow.style.display = row.style.display;
-  newRow.style.gridTemplateColumns = row.style.gridTemplateColumns;
-  newRow.style.gridTemplateAreas = row.style.gridTemplateAreas;
+  newRow.style.display = htmlRow.style.display;
+  newRow.style.gridTemplateColumns = htmlRow.style.gridTemplateColumns;
+  newRow.style.gridTemplateAreas = htmlRow.style.gridTemplateAreas;
   if (!dataRoot) dataRoot = prompt(
     "Provide the Title of the new Row",
-    row.dataset.root
+    htmlRow.dataset.root
   );
   newRow.dataset.root = dataRoot;
 
   newRow.classList.add(dataRoot.split("&C=")[1]);
   //newRow.contentEditable = 'true';
-  for (let i = 0; i < row.children.length; i++) {
-    child = row.children[i] as HTMLParagraphElement;
+  for (let i = 0; i < htmlRow.children.length; i++) {
+    child = htmlRow.children[i] as HTMLParagraphElement;
     if (!child.dataset.lang) continue;
     p = newRow.appendChild(document.createElement("p"));
     p.classList.add(child.dataset.lang);
@@ -477,7 +475,7 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
     //p.innerText = "Insert Here Your Text "+p.dataset.lang;
     p.contentEditable = "true";
   }
-  return row.insertAdjacentElement("afterend", newRow) as HTMLElement;
+  return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
 
 function createHtmlElementForPrayerEditingMode(
@@ -560,9 +558,8 @@ function getPrayersSequence() {
 }
 
 function addTableToSequence(htmlParag: HTMLElement) {
-  htmlParag = checkSelection(htmlParag);
-  if (!htmlParag) return;
-  let htmlRow = htmlParag.parentElement as HTMLElement;
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
   sequence.push(baseTitle(htmlRow.dataset.root));
   let result = prompt(sequence.join(", \n"), sequence.join(", \n"));
   sequence = result.split(", \n");
@@ -691,9 +688,12 @@ function addConsoleSaveMethod(console) {
 
 function splitParagraphsToTheRowsBelow() {
   //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
-  let htmlParag = checkSelection(document.getSelection().focusNode.parentElement);
-  if(!htmlParag) return;//We check that we got a paragraph element
+  let showAlert = ()=> alert('Make sure the cursuor is placed within the text of a paragraph/cell');
+  let htmlParag = document.getSelection().focusNode.parentElement;
+  if(!htmlParag) return showAlert();//We check that we got a paragraph element
+  while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
 
+  if (htmlParag.tagName !== 'P') return showAlert();
   let title:string = htmlParag.dataset.root,
     lang:string = htmlParag.dataset.lang,
     table: HTMLElement[] = Array.from(
@@ -719,17 +719,20 @@ function splitParagraphsToTheRowsBelow() {
 }
 
 /**
- * Checks whether the cursor is placed within a paragraph html element. If not, it triggers an alert message and returns 'undefined'
+ * If htmlParag is not a Div, it checks each of its parents until it founds the DIV container. Otherwise, it triggers an alert message and returns 'undefined'
  * @param {HTMLElement} htmlParag - the html element within which hte cursor is placed
- * @returns {HTMLElement | undefined}
+ * @returns {HTMLDivElement | undefined}
  */
-function checkSelection(htmlParag: HTMLElement): HTMLParagraphElement | undefined {
-  while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
-  if (!htmlParag || htmlParag.tagName !== 'P') {
-    alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
+function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
+  if (!htmlParag) return  alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
+  while (htmlParag.tagName !== 'DIV'
+    && !htmlParag.classList.contains('TargetRow')
+    && htmlParag.parentElement){
+    htmlParag = htmlParag.parentElement};
+  if (htmlParag.tagName !== 'DIV'
+    || !htmlParag.classList.contains('TargetRow'))
     return undefined;
-  }
-  return htmlParag as HTMLParagraphElement
+  else return htmlParag as HTMLDivElement;
 }
 
 /**

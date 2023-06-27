@@ -51,17 +51,6 @@ function modifyUserLanguages(lang: string) {
   }
   localStorage.userLanguages = JSON.stringify(userLanguages);
 }
-/**
- * Checks that the value of todayDate is the same as the current date, unless there is another value stored in the local storage, which means that the user had manually set the date
- */
-function checkDate() {
-  let newDate = new Date();
-  if (localStorage.selectedDate) {
-    newDate.setTime(localStorage.selectedDate);
-  }
-  setCopticDates(newDate)
-}
-
 
 document.addEventListener('DOMContentLoaded', autoRunOnLoad);
 
@@ -70,8 +59,14 @@ document.addEventListener('DOMContentLoaded', autoRunOnLoad);
  */
 function autoRunOnLoad() {
   showChildButtonsOrPrayers(btnMain);
-  setCopticDates();
   DetectFingerSwipe();
+  if (localStorage.selectedDate) {
+    let selectedDate: Date = new Date();
+    selectedDate.setTime(Number(localStorage.selectedDate));
+    if (!checkIfDateIsToday(selectedDate)) setCopticDates(selectedDate);
+  } else {
+    setCopticDates()
+  }
 };
 
 /**
@@ -1629,6 +1624,7 @@ function showSettingsPanel() {
           containerDiv.innerHTML = '';
           let editable = [
             'Choose from the list',
+            'NewTable',
             'Fun("arrayName", "Table\'s Title")',
             'testEditingArray',
             'PrayersArray',
@@ -1663,8 +1659,10 @@ function showSettingsPanel() {
           }
           
           if (entry) containerDiv.dataset.arrayName = entry;
-          let tablesArray: string[][][] = eval(entry);
-          if (!tablesArray) return;
+            let tablesArray: string[][][];
+            if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title']]];
+            if(!tablesArray) tablesArray = eval(entry);
+            if (!tablesArray) return;
           editingMode(tablesArray, getLanguages(entry));
      
           }

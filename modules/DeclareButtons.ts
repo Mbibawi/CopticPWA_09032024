@@ -905,6 +905,7 @@ const btnMassUnBaptised: Button = new Button({
                 (function insertStPaulReading() {
                         reading = btnReadingsStPaul.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsStPaul.prayersSequence[0] + '&D=' + copticReadingsDate);
                         //adding the  end of the St Paul reading
+                        if (reading.length === 0) return;
                         reading =[
                         [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.stPaulIntro.AR, ReadingsIntrosAndEnds.stPaulIntro.FR, ReadingsIntrosAndEnds.stPaulIntro.EN]],
                         ...reading,
@@ -913,7 +914,8 @@ const btnMassUnBaptised: Button = new Button({
                         insertPrayersAdjacentToExistingElement(reading, btnReadingsStPaul.languages, { beforeOrAfter: 'beforebegin', el: anchor });
                 })();   
                 (function insertKatholikon() {
-                        reading = btnReadingsKatholikon.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsKatholikon.prayersSequence[0] + '&D=' + copticReadingsDate);
+                  reading = btnReadingsKatholikon.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsKatholikon.prayersSequence[0] + '&D=' + copticReadingsDate);
+                  if (reading.length === 0) return;
                         //ading the introduction and the end of the Katholikon
                         reading = [
                                 [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.katholikonIntro.AR, ReadingsIntrosAndEnds.katholikonIntro.FR, ReadingsIntrosAndEnds.katholikonIntro.EN]],
@@ -923,8 +925,8 @@ const btnMassUnBaptised: Button = new Button({
                   insertPrayersAdjacentToExistingElement(reading, btnReadingsKatholikon.languages, { beforeOrAfter: 'beforebegin', el: anchor });
                 })();   
                 (function insertPraxis() {
-                        reading = btnReadingsPraxis.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsPraxis.prayersSequence[0] +  '&D=' + copticReadingsDate);
-
+                  reading = btnReadingsPraxis.prayersArray.filter(tbl => baseTitle(tbl[0][0]) == btnReadingsPraxis.prayersSequence[0] + '&D=' + copticReadingsDate);
+                  if (reading.length === 0) return;
                         reading = [
                                 [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.praxisIntro.AR, ReadingsIntrosAndEnds.praxisIntro.FR, ReadingsIntrosAndEnds.praxisIntro.EN]],
                                 ...reading,
