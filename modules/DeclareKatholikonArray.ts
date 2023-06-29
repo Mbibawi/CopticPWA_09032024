@@ -3026,7 +3026,7 @@ ReadingsArrays.KatholikonArray = [[
   [
   Prefix.katholikon+"&D=2308", 
   "فَإذْ قَدْ تَألَّمَ الْمَسِيحُ بِالْجَسَدِ عَنَّا، تَسَلَّحُوا أَنْتُمْ أيْضاً بِهذَا الْمِثَالِ. فَإنَّ مَنْ تَألَّمَ بِالْجَسَدِ، كُفَّ عَنِ الْخَطِيَّةِ، لِكَيْ لا يَعِيشَ أيْضاً الزَّمَانَ الْبَاقِيَ في الْجَسَدِ، لِشَهَوَاتِ النَّاسِ، بَلْ لإرَادَةِ اللَّهِ.", 
-  "1 Ainsi donc, puisque Christ a souffert dans la chair, vous aussi armez–vous de la même pensée ; car celui qui a souffert dans la chair en a fini avec le péché, 2 afin de vivre, non plus selon les désirs humains, mais selon la volonté de Dieu pendant le temps qui lui reste (à vivre) dans la chair.", 
+  "1 Ainsi donc, puisque Christ a souffert dans la chair, vous aussi armez–vous de la même pensée ; car celui qui a souffert dans la chair en a fini avec le péché, 2 afin de vivre, non plus selon les désirs humains, mais selon la volonté de Dieu pendant le temps qui lui reste (à vivre) dans la chair.", 
   "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.", 
   ], 
   [
@@ -3038,14 +3038,66 @@ ReadingsArrays.KatholikonArray = [[
   [
   Prefix.katholikon+"&D=2308", 
   "فَإنَّهُ لأَجْلِ هذَا بُشِّرَ الْمَوْتَى أيْضاً، لِكَيْ يُدَانُوا حَسَبَ النَّاسِ بِالْجَسَدِ، وَلكِنْ لِيَحْيَوْا حَسَبَ اللَّهِ بِالرُّوحِ. وَإنَّمَا نِهَايَةُ كُلِّ شَيْءٍ قَدِ اقْتَرَبَتْ، فَتَعَقَّلُوا إذْاً وَاسْهَرُوا في الصَّلَوَاتِ.", 
-  "6 C’est pour cela, en effet, que les morts aussi ont été évangélisés, afin qu’après avoir été jugés selon les hommes quant à la chair, ils vivent selon Dieu quant à l’esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.", 
+  "6 C’est pour cela, en effet, que les morts aussi ont été évangélisés, afin qu’après avoir été jugés selon les hommes quant à la chair, ils vivent selon Dieu quant à l’esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.", 
   "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.", 
   ], 
   [
   Prefix.katholikon+"&D=2308", 
   "وَلكِنْ قَبْلَ كُلِّ شَيْءٍ، فَلْتَكُنِ الْمَحَبَّةُ دَائِمَةً فِيكُمْ بَعْضِكُمْ لِبَعْضٍ؛ لأنَّ الْمَحَبَّةَ تَسْتُرُ كَثْرَةً مِنَ الْخَطَايَا. كُونُوا مُحِبِّينَ ضِيافَةِ الْغُرَّبَاءِ بَعْضُكُمْ لِبَعْضٍ بِلاَ تَذَمُّرٍ. وَلِيَخْدُمْ كُلُّ وَاحِدٍ الآخَرِينَ بِمَا نَالَ مِنَ الْمَوَاهِبِ بَعْضُكُمْ بَعْضَاً، كَوُكَلاَءَ صَالِحِينَ عَلَى نِعْمَةِ اللَّهِ الْمُتَنَوِّعَةِ. مَنْ يَتَكَلَّمُ فَكَأَقْوَالِ اللَّهِ. وَمَنْ يَخْدُمُ فَكَأنهُ مِنْ قُوَّةٍ يُهَيِّئُهَا اللَّهُ، لِكَيْ يَتَمَجَّدَ اللَّهُ في كُلِّ شَيْءٍ بِيَسُوعَ الْمَسيحِ، الَّذِي لَهُ الْمَجْدُ وَالعِزَّةُ إلى أبدِ الآبِدِينَ. آمِينَ.", 
-  "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés. 9 Exercez l’hospitalité les uns envers les autres, sans murmurer. 10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu. 11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !", 
+  "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés. 9 Exercez l’hospitalité les uns envers les autres, sans murmurer. 10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu. 11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !", 
   "8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God. 11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.katholikon+"&D=2708&C=Title", 
+  " الكاثوليكون من رسالة بطرس الرسول الأولى (3:8-15)", 
+  "1 Pierre 3:8-15", 
+  "1 Peter 3:8-15", 
+  ], 
+  [
+  Prefix.katholikon+"&D=2708", 
+  "وَالنِّهَايَةُ، كُونُوا جَمِيعَاً بِرَأيٍ وَاحِدٍ، وَكُونُوا مُشْتَرِكِينَ في الآلامِ. وَكُونُوا مُحِبِّينَ الإخْوَةَ، رَحُومِينَ مُتَوَاضِعِينَ، غَيْرَ مُجَازِينَ عَنْ شَرٍّ بِشَرٍّ أَوْ عَنْ شَتِيمَةٍ بِشَتِيمَةٍ، بَلْ بِالْعَكْسِ مُبَارِكِينَ؛ لأنكُمْ لِهَذَا الأَمْرِ دُعِيتُمْ لِكَيْ تَرِثُوا الْبَرَكَةَ. لأنَّ: \" مَنْ أَرَادَ أنْ يُحِبَّ الْحَيَاةَ وَيَرَى أَيامَاً صَالِحَةً، فَلْيَكْفُفْ لِسَانَهُ عَنِ الشَّرِّ. وَشَفَتَيْهِ ألاَّ تَتَكَلَّمَا بِالْمَكْرِ، وَلِيَحِدْ عَنِ الشَّرِّ وَيَصْنَعِ الْخَيْرَ، وَلِيَطْلُبِ السَّلاَمَ وَيَجِدَّ في أَثَرِهِ؛ لأنَّ عَيْنِيِ الرَّبِّ تَنْظُرَانِ الأبْرَارَ، وَأُذْنَيْهِ تَنْصِتَانِ إلى طِلْبَتِهِمْ، وَأمَّا وَجْهُ الرَّبِّ فَضِدُّ فَاعِلِي الشَّرِّ.", 
+  "8 Enfin, soyez tous dans de mêmes dispositions, compatissants, animés d'un amour fraternel, miséricordieux, humbles. 9 Ne rendez pas le mal pour le mal, ou l'insulte pour l'insulte; au contraire, bénissez, car c'est à cela que vous avez été appelés, afin d'hériter la bénédiction. 10 En effet, qui veut aimer la vie et voir des jours heureux doit garder sa langue du mal et ses lèvres des paroles trompeuses, 11 se détourner du mal et faire le bien, rechercher la paix et la poursuivre. 12 Car les yeux du Seigneur sont sur les justes, et ses oreilles sont attentives à leur prière; mais la face du Seigneur se tourne contre ceux qui font le mal.", 
+  "8 Finally, all of you be of one mind, having compassion for one another; love as brothers, be tenderhearted, be courteous; 9 not returning evil for evil or reviling for reviling, but on the contrary blessing, knowing that you were called to this, that you may inherit a blessing. 10 For He who would love life And see good days, Let him refrain his tongue from evil, And his lips from speaking deceit. 11 Let him turn away from evil and do good; Let him seek peace and pursue it. 12 For the eyes of the Lord are on the righteous, And His ears are open to their prayers; But the face of the Lord is against those who do evil.", 
+  ], 
+  [
+  Prefix.katholikon+"&D=2708", 
+  "فَمَنْ ذَا الَّذِي يُمْكِنُهُ أنْ يُؤْذِيَكُمْ إذَا كُنْتُمْ غَيُّورِينَ عَلَى الْخَيْرِ؟ وَلَكِنْ وَإنْ تَأَلَّمْتُمْ مِنْ أَجْلِ الْبِرِّ، فَطُوبَاكُمْ. وَأَمَّا خَوْفَهُمْ فَلا تَخَافُوهُ وَلا تَضْطَرِبُوا، بَلْ قَدِّسُوا الرَّبَّ الْمَسِيحَ في قُلُوبِكُمْ.", 
+  "13 Et qui vous fera du mal, si vous vous montrez zélés pour le bien? 14 Bien plus, au cas où vous auriez à souffrir pour la justice, heureux êtes-vous. N'ayez d'eux aucune crainte et ne soyez pas troublés; 15 mais sanctifiez dans vos coeurs le Christ qui est Seigneur.", 
+  "13 And who is he who will harm you if you become followers of what is good? 14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled. 15 But sanctify the Lord God in your hearts.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.katholikon+"&D=3008&C=Title", 
+  "الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 14 )", 
+  "1 Pierre 5:1-14", 
+  "1 Peter 5:1-14", 
+  ], 
+  [
+  Prefix.katholikon+"&D=3008", 
+  "أَطْلُبُ إلى الشُّيُوخِ الَّذِينَ بَيْنَكُمْ، أنا الشَّيْخَ شَرِيكَكُمْ، وَالشَّاهِدَ لآلاَمِ الْمَسِيحِ، وَشَرِيكَ الْمَجْدِ الْعَتِيدِ أنْ يُعْلَنَ، ارْعَوْا رَعِيَّةَ اللَّهِ التي بَيْنَكُمْ وَتَعَاهَدُوهَا، لا بِالْقَهْرِ بَلْ بِالاخْتِيَارِ، كَمثلِ اللَّهِ وَلا بِبُخْلٍ بَلْ بِنَشَاطٍ، وَلا كَمَنْ يَتَسَلَّطُ عَلَى الْمَوَارِيثِ، بَلْ صَائِرِينَ أَمْثِلَةً لِلرَّعِيَّةِ. وَمَتَى ظَهَرَ رَئِيسُ الرُّعَاةِ تَنَالُونَ إكْلِيلَ الْمَجْدِ الَّذِي لا يَضْمَحِلُّ.", 
+  "1 J'exhorte donc les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée:2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement. 3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau. 4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas.", 
+  "5:1 The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed: 2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock; 4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away.", 
+  ], 
+  [
+  Prefix.katholikon+"&D=3008", 
+  "كَذلِكَ أَنْتُمْ أيهَا الشُّبَّانُ، اخْضَعُوا لِلشُّيُوخِ، وَكُونُوا جَمِيعاً مُتَسَرْبِلِينَ بِالتَّوَاضُعِ بَعْضُكُمْ لِبَعْضٍ، لأنَّ اللَّهَ يُقَاوِمُ الْمُسْتَكْبِرِينَ، وَيُعْطِي نِعْمَةً لِلْمُتَوَاضِعِينَ. فَتَوَاضَعُوا تَحْتَ يَدِ اللَّهِ الْقَوِيَّةِ لِكَيْ يَرْفَعَكُمْ في زَمَانِ الافْتِقَادِ، مُلْقِينَ كُلَّ هَمِّكُمْ عَلَيْهِ؛ لأنهُ هُوَ يَعْتَنِي بِكُمْ. ", 
+  "5 De même, jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce. Humiliez-vous donc sous la main puissante de Dieu,6 afin qu'il vous élève au moment fixé; 7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous. ", 
+  "5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, But gives grace to the humble. 6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, 7 casting all your care upon Him, for He cares for you. ", 
+  ], 
+  [
+  Prefix.katholikon+"&D=3008", 
+  "كُونُوا مُتَيَقِّظِينَ وَاسْهَرُوا. لأنَّ إبْلِيسَ عَدُوَّكُمْ يَجُولُ كَأَسَدٍ زَائِرٍ، يَلْتَمِسُ مَنْ يَبْتَلِعُهُ. فَقَاوِمُوهُ، رَاسِخِينَ في الإيمَانِ، عَالِمِينَ أنَّ نَفْسَ هذِهِ الآلامِ تُجْرَى عَلَى إخْوَتِكُمُ الَّذِينَ في الْعَالَمِ. وَإلهُ كُلِّ نِعْمَةٍ الَّذِي دَعَاكُمْ إلى مَجْدِهِ الأبدِيِّ في الْمَسِيحِ يَسُوعَ، بَعْدَمَا تَأَلَّمْتُمْ يَسِيراً، هُوَ يُهَيِّئُكُمْ، وَيُثَبِّتُكُمْ، وَيُقَوِّيكُمْ، وَيُمَكِّنُكُمْ. لَهُ السُّلْطَانُ وَالْمَجْدُ إلى الآبادِ. آمِين.", 
+  "8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer. 9 Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères, dans le monde. 10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps; il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles! Amen.", 
+  "8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour. 9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world. 10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while, perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen.", 
+  ], 
+  [
+  Prefix.katholikon+"&D=3008", 
+  "بِيَدِ سِلْوَانُسَ الأخِ الأمِينِ كَمَا أَظُنُّ كَتَبْتُ إلَيْكُمْ بِكَلِمَاتٍ قَلِيلَةٍ وَاعِظاً وَشَاهِداً، أنَّ هذِهِ هيَ نِعْمَةُ اللَّهِ بِالْحَقِّ التي فِيهَا تَقُومُونَ. تُسَلِّمُ عَلَيْكُمُ الصَّدِيقَةُ الْمُخْتَارَةُ التي في بَابِلَ، وَمَرْقُسُ ابْنِي. سَلِّمُوا بَعْضُكُمْ عَلَى بَعْضٍ بِقُبْلَةِ الْمَحَبَّةِ الْمُقدَّسَةِ. السَّلاَمُ لَكُمْ جَمِيعَاً أيهَا الَّذِينَ في الْمَسِيحِ يَسُوعَ. ", 
+  "12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés.13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils.14Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ. \".", 
+  "12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand. 13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.\".", 
   ], 
   ], 
   [

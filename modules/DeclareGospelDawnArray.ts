@@ -3453,7 +3453,7 @@ ReadingsArrays.GospelDawnArray = [[
   [
   [
   Prefix.gospelDawn+"Psalm&D=2308&C=Title", 
-  "مزمور باكر(34:19-20)", 
+  " مزمور باكر(34:19-20)", 
   "Psaumes 34:19-20", 
   "Psalms 34:19-20", 
   ], 
@@ -3467,14 +3467,14 @@ ReadingsArrays.GospelDawnArray = [[
   [
   [
   Prefix.gospelDawn+"Gospel&D=2308&C=Title", 
-  "مرقس (8:34-9:1)", 
+  " مرقس (8:34-9:1)", 
   "Marc 8:34-9:1", 
   "Mark 8:34-9:1", 
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=2308", 
   "وَدَعَا الْجَمْعَ وَتَلامِيذَهُ وَقَالَ لَهُمْ: \"مَنْ أرَادَ أنْ يَأتيَ وَرَائِي فَلْيُنْكِرْ نَفْسَهُ وَيَحْمِلْ صَلِيبَهُ وَيَتْبَعْنِي. لأنَّ مَنْ أرَادَ أنْ يُخَلِّصَ نَفْسَهُ يُهْلِكُهَا، وَمَنْ يُهْلِكُ نَفْسَهُ مِنْ أَجْلِي وَمِنْ أَجْلِ الإنْجِيلِ فَهُوَ يُخَلِّصُهَا. لأنهُ مَاذا يَنْتَفِعُ الإنْسَانُ لَوْ رَبِحَ الْعَالَمَ كُلَّهُ وَخَسِرَ نَفْسَهُ؟ أوْ مَاذا يُعْطِي الإنْسَانُ فِدَاءً عَنْ نَفْسِهِ؟", 
-  "34 Puis il appela la foule avec ses disciples et leur dit : Si quelqu’un veut venir après moi, qu’il renonce à lui–même, qu’il se charge de sa croix et qu’il me suive. 35 Quiconque en effet voudra sauver sa vie la perdra, mais quiconque perdra sa vie à cause de moi et de l’Évangile la sauvera. 36 Et que sert–il à un homme de gagner le monde entier, s’il perd son âme ? 37 Que donnerait un homme en échange de son âme ?", 
+  "34 Puis il appela la foule avec ses disciples et leur dit : Si quelqu’un veut venir après moi, qu’il renonce à lui–même, qu’il se charge de sa croix et qu’il me suive. 35 Quiconque en effet voudra sauver sa vie la perdra, mais quiconque perdra sa vie à cause de moi et de l’Évangile la sauvera. 36 Et que sert–il à un homme de gagner le monde entier, s’il perd son âme ? 37 Que donnerait un homme en échange de son âme ?", 
   "34 When He had called the people to Himself, with His disciples also, He said to them, Whoever desires to come after Me, let him deny himself, and take up his cross, and follow Me. 35 For whoever desires to save his life will lose it, but whoever loses his life for My sake and the gospel's will save it. 36 For what will it profit a man if he gains the whole world, and loses his own soul? 37 Or what will a man give in exchange for his soul?", 
   ], 
   [
@@ -3488,6 +3488,92 @@ ReadingsArrays.GospelDawnArray = [[
   "وَكَانَ يَقُولُ لَهُمْ: \"الْحَقَّ أَقُولُ لَكُمْ: إنَّ قَوْمَاً مِنَ الْقِيَامِ هَهُنَا لا يَذُوقُونَ الْمَوْتَ حَتَّى يَرَوْا مَلَكُوتَ اللَّهِ قَدْ أَتَى بِقُوَّةٍ\".", 
   "1 Il leur dit encore : \"En vérité, je vous le dis, quelques–uns de ceux qui se tiennent ici ne goûteront point la mort avant d’avoir vu le royaume de Dieu venir avec puissance\".", 
   "1 And He said to them, Assuredly, I say to you that there are some standing here who will not taste death till they see the kingdom of God present with power.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelDawn+"Psalm&D=2708&C=Title", 
+  " مزمور باكر 5:11, 12", 
+  "Psaume 5:11, 12", 
+  "Psalms 5:11, 12", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=2708", 
+  "يَفْتَخِرُ بِكَ كُلُّ الَّذِينَ يُحِبُّونَ اسْمَكَ؛ لأَنكَ أَنْتَ يَارَبُّ بَارَكْتَ الصِّدِّيقَ. مِثْلَ سِلاَحِ الْمَسرَّةِ، كَلَّلْتَنَا.", 
+  "11 Et tous ceux qui t'ont pour refuge se réjouiront. 12 C'est toi, Seigneur, qui bénis le juste; tu l'entoures de ta faveur comme d'un bouclier", 
+  "11 But let all those rejoice who put their trust in You. 12 For You, O Lord, will bless the righteous; With favor You will surround him as with a shield.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=2708&C=Title", 
+  " متى 10 : 34 - 42", 
+  "Matthieu 10 : 34 - 42", 
+  "Matthew 10:34-42", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=2708", 
+  "لا تَظُنُّوا أني جِئْتُ لأُلْقِيَ سَلاَماً عَلَى الأَرْضِ، مَا جِئْتُ لأُلْقِيَ سَلاماً بَلْ سَيْفاً. فَإنِّي أَتَيْتُ لأُفَرِّقَ الإنْسَانَ ضِدَّ أبِيهِ، وَالاِبْنَةَ ضِدَّ أُمِّهَا، وَالْعَرُوسَ ضِدَّ حَمَاتِهَا. وَأَعْدَاءُ الإنْسَانِ أَهْلُ بَيْتِهِ.", 
+  "34 N'allez pas croire que je sois venu apporter la paix sur la terre; je ne suis pas venu apporter la paix, mais bien le glaive. 35 Oui, je suis venu séparer l'homme de son père, la fille de sa mère, la belle-fille de sa belle-mère:ى 6 on aura pour ennemis les gens de sa maison.", 
+  "34 Do not think that I came to bring peace on earth. I did not come to bring peace but a sword. 35 For I have come to set a man against his father, a daughter against her mother, and a daughter-in-law against her mother-in-law;ى 6 and `a man's enemies will be those of his own household.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=2708", 
+  "مَنْ أَحَبَّ أَبَاهُ أوْ أُمَّهُ أَكْثَرَ مِنِّي فَلاَ يَسْتَحِقُّنِي، وَمَنْ أَحَبَّ ابْنَهُ أوْ ابْنَتَهُ أَكْثَرَ مِنِّي فَلاَ يَسْتَحِقُّنِي، وَمَنْ لا يَحْمِلُ صَلِيبَهُ وَيَتْبَعُنِي فَلاَ يَسْتَحِقُّنِي. مَنْ وَجَدَ نَفْسَهُ يُضِيعُهَا، وَمَنْ أَضَاعَ نَفْسَهُ مِنْ أَجْلِي يَجِدُهَا. مَنْ يَقْبَلْكُمْ فَقَدْ قَبِلَنِي، وَمَنْ يَقْبَلْنِي فَقَدْ قَبِلَ الَّذِي أَرْسَلَنِي.", 
+  "37 Qui aime son père ou sa mère plus que moi n'est pas digne de moi; qui aime son fils ou sa fille plus que moi n'est pas digne de moi. 38 Qui ne se charge pas de sa croix et ne me suit pas n'est pas digne de moi. 39 Qui aura assuré sa vie la perdra et qui perdra sa vie à cause de moi l'assurera. 40 Qui vous accueille m'accueille moi-même, et qui m'accueille, accueille Celui qui m'a envoyé.", 
+  "37 He who loves father or mother more than Me is not worthy of Me. And he who loves son or daughter more than Me is not worthy of Me. 38 And he who does not take his cross and follow after Me is not worthy of Me. 39 He who finds his life will lose it, and he who loses his life for My sake will find it. 40 He who receives you receives Me, and he who receives Me receives Him who sent Me.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=2708", 
+  "مَنْ يَقْبَلْ نَبِيَّاً بِاسْمِ نَبِيٍّ فَأَجْرَ نَبِيٍّ يَأْخُذُ، وَمَنْ يَقْبَلْ بَارَّاً بِاسْمِ بَارٍّ فَأَجْرَ بَارٍّ يَأْخُذُ. وَمَنْ يَسْقِ أَحَدَ هؤُلاءِ الصِّغَارِ كَأْسَ مَاءٍ بَارِدٍ فَقَطْ بِاسْمِ تِلْمِيذٍ، فَالْحَقَّ أَقُولُ لَكُمْ إنَّهُ لَنْ يَضِيعَ أَجْرُهُ.", 
+  "41 Qui accueille un prophète en sa qualité de prophète recevra une récompense de prophète, et qui accueille un juste en sa qualité de juste recevra une récompense de juste. 42 Quiconque donnera à boire, ne serait-ce qu'un verre d'eau fraîche, à l'un de ces petits en sa qualité de disciple, en vérité, je vous le déclare, il ne perdra pas sa récompense.", 
+  "41 He who receives a prophet in the name of a prophet shall receive a prophet's reward. And he who receives a righteous man in the name of a righteous man shall receive a righteous man's reward. 42 And whoever gives one of these little ones only a cup of cold water in the name of a disciple, assuredly, I say to you, he shall by no means lose his reward.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelDawn+"Psalm&D=3008&C=Title", 
+  "مزمور باكر 105:1, 2-3 ", 
+  "Psaume 105:1, 2-3", 
+  "Psalms 105:1, 2-3", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=3008", 
+  "اِعْتَرِفُوا لِلرَّبِّ وَادْعُوا بِاسْمِهِ. نَادُوا في الأُمَمِ بِأَعْمَالِهِ. سَبِّحُوه وَرَتِّلُوا لَهُ. حَدِّثُوا بِجَمِيعِ عَجَائِبِهِ. افْتَخِرُوا بِاسْمِهِ القُدُّوسِ. ", 
+  "1 Célébrez le Seigneur, proclamez son nom, faites connaître ses exploits parmi les peuples. 2 Réfléchissez à toutes ses merveilles ! 3 Soyez fiers de son saint nom.", 
+  "1 Oh, give thanks to the Lord! Call upon His name; Make known His deeds among the peoples! 2 Talk of all His wondrous works 3 Glory in His holy name.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=3008&C=Title", 
+  "مرقس ( 10 : 17 – 30 )", 
+  "Mark 10:17-30", 
+  "Mark 10:17-30", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=3008", 
+  "وَفِيمَا هُوَ خَارجٌ إلى الطَّرِيقِ، أَسْرَعَ وَاحِدٌ وَجَثَا عَلَى رُكْبَتَيْهِ وَسَأَلَهُ: \"أيهَا الْمُعَلِّمُ الصَّالِحُ، مَاذَا أَعْمَلُ لأَرِثَ الْحَيَاةَ الأَبدِيَّةَ؟\". فَقَالَ لَهُ يَسُوعُ: \"لِمَاذَا تَدْعُوني الصَّالِحَ؟ لَيْسَ أَحَدٌ صَالِحاً إِلاَّ اللَّهُ وَحْدَهُ. أَنْتَ تَعْرِفُ الْوَصَايَا: لا تَقْتُلْ. لا تَزْنِ. لا تَسْرِقْ. لا تَشْهَدْ بِالزُّورِ. لا تَسْلُبْ. أَكْرِمْ أَباكَ وَأُمَّكَ\". فَقَالَ لَهُ: \" يَا مُعَلِّمُ هَذِهِ كُلُّهَا حَفِظْتُهَا مُنْذُ حَدَاثَتِي\".", 
+  "17 Comme il se mettait en route, quelqu'un vint en courant et se jeta à genoux devant lui; il lui demandait: \"Bon Maître, que dois-je faire pour recevoir la vie éternelle en partage?\" 18 Jésus lui dit: \"Pourquoi m'appelles-tu bon? Nul n'est bon que Dieu seul. 19 Tu connais les commandements: Tu ne commettras pas de meurtre, tu ne commettras pas d'adultère, tu ne voleras pas, tu ne porteras pas de faux témoignage, tu ne feras de tort à personne, honore ton père et ta mère. 20 L'homme lui dit: \"Maître, tout cela, je l'ai observé dès ma jeunesse.\"", 
+  "17 Now as He was going out on the road, one came running, knelt before Him, and asked Him, Good Teacher, what shall I do that I may inherit eternal life? 18 So Jesus said to him, Why do you call Me good? No one is good but One, that is, God. 19 You know the commandments: `Do not commit adultery,' `Do not murder,' `Do not steal,' `Do not bear false witness,' `Do not defraud,' `Honor your father and your mother.' 20 And he answered and said to Him, Teacher, all these things I have kept from my youth.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=3008", 
+  "فَنَظَرَ إلَيْهِ يَسُوعُ وَأَحَبَّهُ، وَقَالَ لَهُ: \"أَترِيدُ أنْ تَكُونَ كَامِلاً يُعْوِزُكَ شَيْءٌ وَاحِدٌ: اِذْهَبْ بِعْ كُلَّ مَا لَكَ وَأَعْطِهِ لِلْمَسَاكِينِ، فَتَرْبَحَ لَكَ كَنْزَاً في السَّمَاءِ، وَتَعَالَ اتْبَعْنِي حَامِلاً الصَّلِيبَ\". أَمَّا هُوَ فَاغْتَمَّ مِنَ الْقَوْلِ وَمَضَى حَزِيناً، لأنهُ كَانَ ذَا أَمْوَالٍ كَثِيرَةٍ.", 
+  "21 Jésus lui dit: \"Une seule chose te manque: va, ce que tu as vends-le, donne-le aux pauvres et tu auras un trésor dans le ciel; puis viens, suis-moi. 22 Mais à cette parole, il s'assombrit et il s'en alla tout triste, car il avait de grands biens. ", 
+  "21 Then Jesus, looking at him, loved him, and said to him, One thing you lack: Go your way, sell whatever you have and give to the poor, and you will have treasure in heaven; and come, take up the cross, and follow Me. 22 But he was sad at this word, and went away sorrowful, for he had great possessions.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=3008", 
+  "فَنَظَرَ يَسُوعُ وَقَالَ لِتَلامِيذِهِ: \"مَا أَعْسَرَ دُخُولَ ذَوِي الأَمْوَالِ إلى مَلَكُوتِ اللَّهِ! \"فَخَافَ التَّلاَمِيذُ مِنَ الكَلاَمِ. فَأَجَابَهُمْ يَسُوعُ أَيْضاً وَقَالَ: \"يَا بَنِيَّ، مَا أَعْسَرَ دُخُولَ الْمُتَّكِلِينَ عَلَى الأَمْوَالِ إلى مَلَكُوتِ اللَّهِ! مُرُورُ جَمَلٍ في ثَقْبِ إبْرَةٍ أَيْسَرُ مِنْ أنْ يَدْخُلَ غَنِيٌّ إلى مَلَكُوتِ اللَّهِ\" فَبُهِتُوا إلى الْغَايَةِ قَائِلِينَ لَهُ: \"مَنْ يَسْتَطِيعُ أنْ يَخْلُصَ؟\". فَنَظَرَ إلَيْهِمْ يَسُوعُ وَقَالَ: \"عِنْدَ النَّاسِ غَيْرُ مُسْتَطَاعٍ، وَلَكِنْ لَيْسَ عِنْدَ اللَّهِ؛ لأنَّ كُلَّ شَيْءٍ مُسْتَطَاعٌ عِنْدَ اللَّهِ\".", 
+  "23 Regardant autour de lui, Jésus dit à ses disciples: \"Qu'il sera difficile à ceux qui ont les richesses d'entrer dans le Royaume de Dieu!24 Les disciples étaient déconcertés par ces paroles. Mais Jésus leur répète: \"Mes enfants, qu'il est difficile d'entrer dans le Royaume de Dieu! 25 Il est plus facile à un chameau de passer par le trou d'une aiguille qu'à un riche d'entrer dans le Royaume de Dieu. 26 Ils étaient de plus en plus impressionnés; ils se disaient entre eux: \"Alors qui peut être sauvé? 27 Fixant sur eux son regard, Jésus dit: \"Aux hommes, c'est impossible, mais pas à Dieu, car tout est possible à Dieu.", 
+  "23 Then Jesus looked around and said to His disciples, How hard it is for those who have riches to enter the kingdom of God! 24 And the disciples were astonished at His words. But Jesus answered again and said to them, Children, how hard it is for those who trust in riches to enter the kingdom of God! 25 It is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God. 26 And they were greatly astonished, saying among themselves, Who then can be saved? 27 But Jesus looked at them and said, With men it is impossible, but not with God; for with God all things are possible. ", 
+  ], 
+  [
+  Prefix.gospelDawn+"Gospel&D=3008", 
+  "وَابْتَدَأَ بُطْرُسُ يَقُولُ لَهُ: \"هَا نَحْنُ قَدْ تَرَكْنَا كُلَّ شَيْءٍ وَتَبِعْنَاكَ\". فَأَجَابَ يَسُوعُ وَقَالَ: \"الْحَقَّ أَقُولُ لَكُمْ: لَيْسَ أَحَدٌ تَرَكَ بَيْتاً أَوْ إخْوَةً أَوْ أَخَوَاتٍ أَوْ أُمَّاً أَوْ أَباً أَوِ ابْناً أَوْ حُقُولاً، لأَجْلِي وَلأَجْلِ الإنْجِيلِ، إلاَّ وَيَأْخُذُ مِئَةَ ضِعْفٍ الآنَ في هَذَا الزَّمَانِ، بُيُوتَاً وَإخْوَةً وَأَخَوَاتٍ وَأُمَّهَاتٍ وَأَبناءً وَحُقُولاً، مَعَ اضْطِهَادَاتٍ، وَفي الدَّهْرِ الآتِي الْحَيَاةَ الأَبَدِيَّةَ\".", 
+  "28 Pierre se mit à lui dire: \"Eh bien! nous, nous avons tout laissé pour te suivre. 29 Jésus lui dit: \"En vérité, je vous le déclare, personne n'aura laissé maison, frères, soeurs, mère, père, enfants ou champsà cause de moi et à cause de l'Évangile, 30 sans recevoir au centuple maintenant, en ce temps-ci, maisons, frères, soeurs, mères, enfants, et champs, avec des persécutions, et dans le monde à venir la vie éternelle.", 
+  "28 Then Peter began to say to Him, See, we have left all and followed You. 29 So Jesus answered and said, Assuredly, I say to you, there is no one who has left house or brothers or sisters or father or mother or wife or children or lands, for My sake and the gospel's, 30 who shall not receive a hundredfold now in this time--houses and brothers and sisters and mothers and children and lands, with persecutions--and in the age to come, eternal life.", 
   ], 
   ], 
   [

@@ -3421,7 +3421,7 @@ ReadingsArrays.GospelVespersArray = [[
   [
   [
   Prefix.gospelVespers+"Psalm&D=2308&C=Title", 
-  "مزمور عشية (34:17-18)", 
+  " مزمور عشية (34:17-18)", 
   "Psaume 34:17-18", 
   "Psalms 34:17-18", 
   ], 
@@ -3435,7 +3435,7 @@ ReadingsArrays.GospelVespersArray = [[
   [
   [
   Prefix.gospelVespers+"Gospel&D=2308&C=Title", 
-  "متى ( 10 : 16 – 22 )", 
+  " متى ( 10 : 16 – 22 )", 
   "Matthew 10:16-22", 
   "Matthew 10:16-22", 
   ], 
@@ -3444,6 +3444,86 @@ ReadingsArrays.GospelVespersArray = [[
   "هَا أَنَا أُرْسِلُكُمْ كَخِرَافٍ في وَسَطِ ذِئَابٍ فَكُونُوا حُكَمَاءَ كَالْحَيَّاتِ وَبُسَطَاءَ كَالْحَمَامِ. وَاحْذَرُوا مِنَ النَّاسِ؛ لأنهُمْ سَيُسَلِّمُونَكُمْ إلى مَجَالِسَ وفي مَجَامِعِهِمْ يَجْلِدُونَكُمْ. وَتُقَدَّمُونَ أَمَامَ مُلُوكٍ وَوُلاةٍ مِنْ أَجْلِي شَهَادَةً لَهُمْ وَلِلأُمَمِ. فَمَتَى أَسْلَمُوكُمْ فَلا تَهْتَمُّوا كَيْفَ أوْ بِمَا تَتَكَلَّمُونَ؛ لأنكُمْ تُعْطَوْنَ في تِلْكَ السَّاعَةِ مَا تَتَكَلَّمُونَ بِهِ. لأنكُمْ لَسْتُمْ أَنْتُمُ الْمُتَكَلِّمِينَ بَلْ رُوحُ أَبِيكُمْ الَّذِي يَتَكَلَّمُ فِيكُمْ. وَسَيُسَلِّمُ الأَخُ أَخَاهُ إلى الْمَوْتِ وَيُسَلِّمُ الأَبُ وَلَدَهُ، وَيَقُومُ الأَوْلادُ عَلَى آبَائِهِمْ وَيَقْتُلُونَهُمْ. وَتَكُونُونَ مُبْغَضِينَ مِنَ الْجَمِيعِ مِنْ أَجْلِ اسْمِي، وَالَّذِي يَصْبِرُ إلى الْمُنْتَهَى فَهَذَا يَخْلُصُ.", 
   "16 Voici : je vous envoie comme des brebis au milieu des loups. Soyez donc prudents comme les serpents, et simples comme les colombes. 17 Gardez–vous des hommes, car ils vous livreront aux tribunaux et ils vous flagelleront dans leurs synagogues, 18 vous serez menés, à cause de moi, devant des gouverneurs et devant des rois, pour leur servir de témoignage à eux et aux païens.19 Mais quand on vous livrera, ne vous inquiétez ni de la manière dont vous parlerez ni de ce que vous direz ; ce que vous aurez à dire vous sera donné à l’heure même ; 20 car ce n’est pas vous qui parlerez, c’est l’Esprit de votre Père qui parlera en vous. 21 Le frère livrera son frère à la mort, et le père son enfant, les enfants se soulèveront contre leurs parents et les feront mourir. 22 Vous serez haïs de tous à cause de mon nom ; mais celui qui persévérera jusqu’à la fin sera sauvé.", 
   "16 Behold, I send you out as sheep in the midst of wolves. Therefore be wise as serpents and harmless as doves. 17 But beware of men, for they will deliver you up to councils and scourge you in their synagogues. 18 You will be brought before governors and kings for My sake, as a testimony to them and to the Gentiles. 19 But when they deliver you up, do not worry about how or what you should speak. For it will be given to you in that hour what you should speak; 20 for it is not you who speak, but the Spirit of your Father who speaks in you. 21 Now brother will deliver up brother to death, and a father his child; and children will rise up against parents and cause them to be put to death. 22 And you will be hated by all for My name's sake. But he who endures to the end will be saved.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelVespers+"Psalm&D=2708&C=Title", 
+  " مزمور عشية 4:6-7, 8", 
+  "Psaume 4:6-7, 8", 
+  "Psalms 4:6-7, 8", 
+  ], 
+  [
+  Prefix.gospelVespers+"Psalm&D=2708", 
+  "قَدْ ارْتَسَمَ عَلَيْنَا نُورُ وَجْهِكَ يَارَبُّ. أَعْطيتَ سُرُوراً لِقَلْبِي؛ لأنكَ أنْتَ وَحْدَكَ يَارَبُّ، أَسْكَنْتَنِي عَلَى الرَّجَاءِ.\n", 
+  "6 Fais lever sur nous la lumière de ta face, Seigneur. 7 Tu m'as mis plus de joie au coeur, 8 car toi seul, Seigneur,me fais demeurer en sécurité.", 
+  "6 Lord, lift up the light of Your countenance upon us\n7 You have put gladness in my heart.\n8 For You alone, O Lord, make me dwell in safety.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelVespers+"Gospel&D=2708&C=Title", 
+  " متى (4:23 - 5:1-16)", 
+  "Matthieu 16:24-28", 
+  "Matthew 16:24-28", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=2708", 
+  "حِينَئِذٍ قَالَ يَسُوعُ لِتَلامِيذِهِ: \" مَنْ أَرَادَ أنْ يَتْبَعْنِي فَلْيُنْكِرْ نَفْسَهُ وَيَحْمِلْ صَلِيبَهُ وَيَتْبَعْنِي، لأنَّ مَنْ أَرَادَ أنْ يُخَلِّصَ نَفْسَهُ يُهْلِكُهَا، وَمَنْ يُهْلِكُ نَفْسَهُ مِنْ أَجْلِي يَجِدُهَا.", 
+  "24 Alors Jésus dit à ses disciples: \"Si quelqu'un veut venir à ma suite, qu'il se renie lui-même et prenne sa croix, et qu'il me suive. 25 En effet, qui veut sauvegarder sa vie, la perdra; mais qui perd sa vie à cause de moi, l'assurera.", 
+  "24 Then Jesus said to His disciples, If anyone desires to come after Me, let him deny himself, and take up his cross, and follow Me.25 For whoever desires to save his life will lose it, but whoever loses his life for My sake will find it.", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=2708", 
+  "لأنهُ مَاذا يَنْتَفِعُ الإنْسَانُ لَوْ رَبِحَ الْعَالَمَ كُلَّهُ وَخَسِرَ نَفْسَهُ؟ أوْ مَاذا يُعْطِي الإنْسَانُ فِدَاءً عَنْ نَفْسِهِ؟ لأنَّ ابْنَ الإنْسَانِ سَوْفَ يَأْتِي في مَجْدِ أَبِيهِ مَعَ مَلائِكَتِهِ، وَحِينَئِذٍ يُجَازِي كُلَّ وَاحِدٍ حَسَبَ أَعْمَالِهِ. ", 
+  "26 Et quel avantage l'homme aura-t-il à gagner le monde entier, s'il le paie de sa vie? Ou bien que donnera l'homme qui ait la valeur de sa vie? 27 Car le Fils de l'homme va venir avec ses anges dans la gloire de son Père; et alors il rendra à chacun selon sa conduite.", 
+  "26 For what profit is it to a man if he gains the whole world, and loses his own soul? Or what will a man give in exchange for his soul? 27 For the Son of Man will come in the glory of His Father with His angels, and then He will reward each according to his works.", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=2708", 
+  "الْحَقَّ أَقُولُ لَكُمْ: إنَّ مِنَ الْقِيَامِ هَهُنَا قَوْماً لا يَذُوقُونَ الْمَوْتَ حَتَّى يَرَوْا ابْنَ الإنْسَانِ آتِياً في مَجْدِ أَبِيهِ \".", 
+  "28 En vérité, je vous le déclare, parmi ceux qui sont ici, certains ne mourront pas avant de voir le Fils de l'homme venir comme roi.", 
+  "28 Assuredly, I say to you, there are some standing here who shall not taste death till they see the Son of Man coming in His kingdom.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelVespers+"Psalm&D=3008&C=Title", 
+  "مزمور عشية 40 : 9 , 2", 
+  "Psaume 40:9, 2", 
+  "Psalms 40:9, 2", 
+  ], 
+  [
+  Prefix.gospelVespers+"Psalm&D=3008", 
+  "بَشَّرْتُ بِعَدلِكَ في جَمَاعَةٍ عَظِيمَةٍ، هُوَذَا لا أَمْنَعُ شَفَتَيَّ. أَقَامَ عَلَى الصَّخْرَةِ رِجْلَيَّ. وَسَهَّلَ خُطُوَاتِي.", 
+  "9 Dans la grande assemblée, j'ai annoncé ta justice; non je ne retiens pas mes lèvres. 2 Il m'a remis debout, les pieds sur le rocher, il a assuré mes pas.", 
+  "9 I have proclaimed the good news of righteousness In the great assembly; Indeed, I do not restrain my lips. 2 And set my feet upon a rock, And established my steps.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelVespers+"Gospel&D=3008&C=Title", 
+  "مرقس ( 6 : 6 : 13 ", 
+  "Marc 6:6-13", 
+  "Mark 6:6-13", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=3008", 
+  "وَكَانَ يَطُوفُ الْقُرَى الْمُحِيطَةَ يُعَلِّمُ. وَدَعَا الاثْنَيْ عَشَرَ وَابْتَدَأَ يُرْسِلُهُمُ اثْنَيْنِ اثْنَيْنِ، وَأَعْطَاهُمْ سُلْطَاناً عَلَى الأَرْوَاحِ النَّجِسَةِ، وَأَوْصَاهُمْ أنْ لا يَحْمِلُوا شَيْئاً مَعَهُمْ في الطَّرِيقِ غَيْرَ عَصاً فَقَطْ، وَلا خُبْزاً وَلا مِزْوَداً وَلا نُحَاساً في مَنَاطِقِهِمْ. بَلْ يَكُونُوا مَشْدُودِينَ بِنِعَالٍ، وَلا يَلْبَسُوا ثَوْبَيْنِ.", 
+  "6 Il parcourait les villages des environs en enseignant. 7 Il fait venir les Douze. Et il commença à les envoyer deux par deux, leur donnant autorité sur les esprits impurs. 8 Il leur ordonna de ne rien prendre pour la route, sauf un bâton: pas de pain, pas de sac, pas de monnaie dans la ceinture, 9 mais pour chaussures des sandales, \"et ne mettez pas deux tuniques\".", 
+  "6 Then He went about the villages in a circuit, teaching 7 And He called the twelve to Himself, and began to send them out two by two, and gave them power over unclean spirits. 8 He commanded them to take nothing for the journey except a staff--no bag, no bread, no copper in their money belts-- 9 but to wear sandals, and not to put on two tunics.", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=3008", 
+  "وَقَالَ لَهُمْ: \" حَيْثُمَا دَخَلْتُمْ بَيْتاً فَأَقِيمُوا فِيهِ حَتَّى تَخْرُجُوا مِنْ هُنَاكَ. وَكُلُّ مَوْضِعٍ لا يَقْبَلُكُمْ وَلا يَسْمَعُ لَكُمْ، فَبينَمَا أَنْتُمْ خَارِجُونَ مِنْهُ انْفُضُوا الْغُبَارَ الَّذِي تَحْتَ أرْجُلِكُمْ شَهَادَةً عَلَيْهِمْ. الْحَقَّ أَقُولُ لَكُمْ: سَتَكُونُ لِسَدُومَ وَعَمُورَةَ يَوْمَ الدِّينِ رَاحَةٌ أَكْثَرُ مِمَّا لِتِلْكَ الْمَدِينَةِ \".", 
+  "10 Il leur disait: \"Si, quelque part, vous entrez dans une maison, demeurez-y jusqu'à ce que vous quittiez l'endroit. 11Si une localité ne vous accueille pas et si l'on ne vous écoute pas, en partant de là, secouez la poussière de vos pieds: ils auront là un témoignage.\"", 
+  "10 Also He said to them, In whatever place you enter a house, stay there till you depart from that place. 11 And whoever will not receive you nor hear you, when you depart from there, shake off the dust under your feet as a testimony against them. Assuredly, I say to you, it will be more tolerable for Sodom and Gomorrah in the day of judgment than for that city!", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=3008", 
+  "فَخَرَجُوا وَصَارُوا يَكْرِزُونَ أنْ يَتُوبُوا. وَأَخْرَجُوا شَيَاطِينَ كَثِيرَةً، وَدَهَنُوا بِزَيْتٍ مَرْضَى كَثِيرِينَ فَشَفَوْهُمْ.", 
+  "12 Ils partirent et ils proclamèrent qu'il fallait se convertir. Ils chassaient beaucoup de démons, ils faisaient des onctions d'huile à beaucoup de malades et ils les guérissaient. ", 
+  "12 So they went out and preached that people should repent. 13 And they cast out many demons, and anointed with oil many who were sick, and healed them.", 
   ], 
   ], 
   [
