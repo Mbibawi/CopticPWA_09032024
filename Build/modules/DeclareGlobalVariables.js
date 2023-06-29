@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v4.9.1 (various fixes to the text)';
+const version = 'v4.9.2 (various fixes to the text)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');

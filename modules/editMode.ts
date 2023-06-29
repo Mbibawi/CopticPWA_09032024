@@ -287,7 +287,7 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
           if (child.tagName === 'P' && child.dataset.root) child.dataset.root = newTitle
         });
   //We will then go to each sibling and change its title if it has the same title as oldTitle
-  htmlRow = htmlRow.nextElementSibling as HTMLElement;
+  htmlRow = htmlRow.nextElementSibling as HTMLDivElement;
   while (htmlRow
     && htmlRow.tagName === 'DIV'
     && baseTitle(htmlRow.dataset.root) === baseTitle(oldTitle)) {
