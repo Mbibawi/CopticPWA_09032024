@@ -5531,13 +5531,13 @@ ReadingsArrays.PropheciesDawnArray = [
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35&C=Title",
       "من سفر التثنية لموسى النبي 11:29-12:27 ",
-      "Deutéronome 11:29-12:27 29 Lorsque l’Éternel, ton Dieu, t’aura fait venir dans le pays où tu vas entrer pour en prendre possession, tu prononceras la bénédiction sur le mont Garizim et la malédiction sur le mont Ébal. ",
+      "Deutéronome 11:29-12:27 29",
       "Deuteronomy 11:29-12:27 ",
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
       "ويكُون إذا أدخلك الربُّ إلهُك إلى الأرض التي أنت صائرٌ إليها لترثها فاتلُ البركة على جبل جِرِزِّيم واللَّعنة على جبل عيبال.  ",
-      " ",
+      "29 Lorsque l’Éternel, ton Dieu, t’aura fait venir dans le pays où tu vas entrer pour en prendre possession, tu prononceras la bénédiction sur le mont Garizim et la malédiction sur le mont Ébal.",
       "29 Now it shall be, when the Lord your God has brought you into the land which you go to possess, that you shall put the blessing on Mount Gerizim and the curse on Mount Ebal.  ",
     ],
     [
@@ -5549,25 +5549,25 @@ ReadingsArrays.PropheciesDawnArray = [
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
       "لأنَّكُم عابرُون الأُردُنَّ لتدخُلُوا وتملكُوا الأرض التي أعطاكُم الرب إلهكُم ميراثاً كُل الأيَّام، لتمتلكُوها وتسكنُون فيها، فاحرصُوا على جميع أوامره وأحكامه هذه التي تحفظُونها في الأرض التي أنا واضعٌ أمامكُمُ اليوم.  ",
-      "31Car vous passez le Jourdain pour aller prendre possession du pays que l’Éternel, votre Dieu, vous donne ; vous en prendrez possession et vous y habiterez.32 Vous observerez et vous mettrez en pratique toutes les prescriptions et les ordonnances que je vous donne aujourd’hui. ",
+      "31 Car vous passez le Jourdain pour aller prendre possession du pays que l’Éternel, votre Dieu, vous donne ; vous en prendrez possession et vous y habiterez.32 Vous observerez et vous mettrez en pratique toutes les prescriptions et les ordonnances que je vous donne aujourd’hui. ",
       "31 For you will cross over the Jordan and go in to possess the land which the Lord your God is giving you, and you will possess it and dwell in it. 32 And you shall be careful to observe all the statutes and judgments which I set before you today.  ",
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
       "وهذه هي الرسُوم والأحكامُ التي تحفظُونها لتعملُوها في الأرض التي أعطاك الربُّ إلهُ آبائك لتملكها كُلَّ الأيَّام التي تحيونها على الأرض.  ",
-      "1 Voici les prescriptions et les ordonnances que vous observerez et que vous mettrez en pratique, dans le pays que l’Éternel, le Dieu de vos pères, te donne pour que vous en preniez possession. ",
+      "12:1 Voici les prescriptions et les ordonnances que vous observerez et que vous mettrez en pratique, dans le pays que l’Éternel, le Dieu de vos pères, te donne pour que vous en preniez possession. ",
       "12:1 These are the statutes and judgments which you shall be careful to observe in the land which the Lord God of your fathers is giving you to possess, all the days that you live on the earth.  ",
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
       "تُخربُون جميع الأماكن تخريباً حيثُ عبدت الأُممُ التي ترثُونها على الجبال الشَّامخةِ وعلى التِّلال وتحت كُلِّ شجرةٍ خضراء، وتهدمُون وتُكسِّرُون أنصابهُـم وتُقطِّعُـون غاباتهـُم منقُـوشـات آلهتهـم ",
-      "2 Vous ferez totalement disparaître tous les lieux où les nations que vous allez déposséder rendent un culte à leurs dieux, sur les hautes montagnes, sur les collines et sous tout arbre verdoyant.3 Vous renverserez leurs autels, vous briserez leurs stèles,  ",
+      "2 Vous ferez totalement disparaître tous les lieux où les nations que vous allez déposséder rendent un culte à leurs dieux, sur les hautes montagnes, sur les collines et sous tout arbre verdoyant. 3 Vous renverserez leurs autels, vous briserez leurs stèles,  ",
       "2 You shall utterly destroy all the places where the nations which you shall dispossess served their gods, on the high mountains and on the hills and under every green tree. 3 And you shall destroy their altars, break their sacred pillars,  ",
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
       "تُحـرقُـونها بالنَّار وتمـحُـون أسماءهم مِن ذلك الموضع. لا تصنعُوا هكذا نحو الربِّ إلهكُم، بل الموضع الذي يختارُهُ الربُّ إلهكُم مِن جميع أسباطكُم ",
-      "vous brûlerez au feu leurs poteaux d’Achéra, vous abattrez les statues de leurs dieux et vous ferez disparaître leurs noms de ces lieux–là.4 Vous n’agirez pas ainsi à l’égard de l’Éternel, votre Dieu.5 Mais vous le chercherez au lieu que l’Éternel, votre Dieu, choisira parmi toutes vos tribus ",
+      "vous brûlerez au feu leurs poteaux d’Achéra, vous abattrez les statues de leurs dieux et vous ferez disparaître leurs noms de ces lieux–là. 4 Vous n’agirez pas ainsi à l’égard de l’Éternel, votre Dieu.5 Mais vous le chercherez au lieu que l’Éternel, votre Dieu, choisira parmi toutes vos tribus ",
       "and burn their wooden images with fire; you shall cut down the carved images of their gods and destroy their names from that place. 4 You shall not worship the Lord your God with such things. 5 But you shall seek the place where the Lord your God chooses, out of all your tribes,  ",
     ],
     [
@@ -5590,19 +5590,13 @@ ReadingsArrays.PropheciesDawnArray = [
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
-      "فإنَّكُم لم تبلغُوا بعد الراحة والميراث الذي يُعطيكُم الربُّ إلهكُم. فإذا عبرتُمُ الأُردُنَّ وسكنتُم الأرض التي يعطيكُم الربُّ إلهكُم ",
-      "9 parce que vous n’êtes pas encore arrivés dans le lieu de repos et dans l’héritage que l’Éternel, ton Dieu, te donne.10  Mais vous passerez le Jourdain et vous habiterez dans le pays dont l’Éternel, votre Dieu, vous fait hériter ;  ",
-      "9 for as yet you have not come to the rest and the inheritance which the Lord your God is giving you. 10 But when you cross over the Jordan and dwell in the land which the Lord your God is giving you to inherit,  ",
+      "فإنَّكُم لم تبلغُوا بعد الراحة والميراث الذي يُعطيكُم الربُّ إلهكُم. فإذا عبرتُمُ الأُردُنَّ وسكنتُم الأرض التي يعطيكُم الربُّ إلهكُم ميراثاً وأراحكُم مِن جميع أعدائكُمُ المحيطين بكُم وسكنتُم مطمئنين. ",
+      "9 parce que vous n’êtes pas encore arrivés dans le lieu de repos et dans l’héritage que l’Éternel, ton Dieu, te donne.10  Mais vous passerez le Jourdain et vous habiterez dans le pays dont l’Éternel, votre Dieu, vous fait hériter ; il vous donnera du repos (en vous délivrant) de tous les ennemis qui vous entourent, et vous habiterez en sécurité. ",
+      "9 for as yet you have not come to the rest and the inheritance which the Lord your God is giving you. 10 But when you cross over the Jordan and dwell in the land which the Lord your God is giving you to inherit, and He gives you rest from all your enemies round about, so that you dwell in safety.",
     ],
     [
       Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
-      "ميراثاً وأراحكُم مِن جميع أعدائكُمُ المحيطين بكُم وسكنتُم مطمئنين،  ",
-      "il vous donnera du repos (en vous délivrant) de tous les ennemis qui vous entourent, et vous habiterez en sécurité. ",
-      "and He gives you rest from all your enemies round about, so that you dwell in safety,  ",
-    ],
-    [
-      Prefix.propheciesDawn + "&D=" + Seasons.GreatLent + "35",
-      "فأي موضع يختارهُ الربُّ إلهكُم ليُحلَّ فيهِ اسمه فإليهِ تأتُون بجميع ما أنا آمركُم بهِ مِن مُحرقاتكُم وذبائحكُم وعُشُوركُم ورفائع أيديكُم وقرابينكُم وكُلَّ خيار نُذُوركُمُ التي تنذُرُونها لإلهكُم.  ",
+      "فأي موضع يختارهُ الربُّ إلهكُم ليُحلَّ فيه اسمه فإليهِ تأتُون بجميع ما أنا آمركُم بهِ مِن مُحرقاتكُم وذبائحكُم وعُشُوركُم ورفائع أيديكُم وقرابينكُم وكُلَّ خيار نُذُوركُمُ التي تنذُرُونها لإلهكُم.  ",
       "11 Là sera le lieu que l’Éternel, votre Dieu, choisira pour y faire demeurer son nom. C’est là que vous présenterez tout ce que je vous ordonne, vos holocaustes, vos sacrifices, vos dîmes, vos prélèvements et les offrandes choisies dont vous ferez voeu à l’Éternel. ",
       "11 then there will be the place where the Lord your God chooses to make His name abide. There you shall bring all that I command you: your burnt offerings, your sacrifices, your tithes, the heave offerings of your hand, and all your choice offerings which you vow to the Lord.  ",
     ],

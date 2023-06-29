@@ -1074,7 +1074,7 @@ const btnDayReadings: Button = new Button({
   btnID: "btnDayReadings",
   label: { AR: "قراءات اليوم", FR: "Lectures du jour", EN: "Day's Readings" },
         onClick: () => {
-        if (Season == Seasons.HolyWeek) {
+        if (Season === Seasons.HolyWeek) {
                         //We should put here child buttons for the Holy Week prayers and readings
                         let div = document.createElement('div');
                         div.innerText = 'We are during the Holy Week, there are no readings, please go to the Holy Week Prayers'
@@ -1083,18 +1083,18 @@ const btnDayReadings: Button = new Button({
           }
     //We set the btnDayReadings.children[] property
     btnDayReadings.children = [
-      btnReadingsGospelIncenseVespers,
       btnReadingsGospelIncenseDawn,
       btnReadingsStPaul,
       btnReadingsKatholikon,
       btnReadingsPraxis,
       btnReadingsSynaxarium,
       btnReadingsGospelMass,
+      btnReadingsGospelIncenseVespers,
     ];
     if (
       Season == Seasons.GreatLent &&
       todayDate.getDay() != 6 &&
-      copticReadingsDate != copticFeasts.Resurrection
+      copticReadingsDate !== copticFeasts.Resurrection
     ) {
       //we are during the Great Lent and we are not a Saturday
       if (
@@ -1217,7 +1217,7 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
     EN: "Vespers Gospel",
   },
   showPrayers: true,
-  prayersSequence: [Prefix.gospelVespers + "Psalm", Prefix.gospelVespers + "Gospel"],
+  prayersSequence: ["", ""],
   prayersArray: ReadingsArrays.GospelVespersArray,
   languages: [...readingsLanguages],
   onClick: () => {
@@ -1226,7 +1226,9 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
       convertGregorianDateToCopticDate(today),
       today
     );
-    btnReadingsGospelIncenseVespers.prayersSequence[0] += date;
+    //We add the psalm reading to the begining of the prayersSequence
+    btnReadingsGospelIncenseVespers.prayersSequence[0]=Prefix.gospelVespers + "Psalm&D=" + date;
+    btnReadingsGospelIncenseVespers.prayersSequence[1]=Prefix.gospelVespers + "Gospel&D=" + date;
     scrollToTop(); //scrolling to the top of the page
   },
 });
