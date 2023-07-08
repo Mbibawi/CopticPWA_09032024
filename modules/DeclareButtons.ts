@@ -861,26 +861,39 @@ const btnMassUnBaptised: Button = new Button({
 
     //Replacing AllelujaFayBabi according to the day
     (function replaceAllelujahFayBabi() {
-      if (isFast)
+      if (
+        (Season === Seasons.GreatLent || Season === Seasons.JonahFast)
+        && todayDate.getDay() !== 0
+        && todayDate.getDay() !== 6) {
+        //Inserting "Alleluja E Ikhon" before "Allelujah Fay Bibi"
+        btnMassUnBaptised.prayersSequence.splice(
+          btnMassUnBaptised.prayersSequence.indexOf(
+            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"), 2, Prefix.massCommon + "HallelujahFayBiBiGreatLent&D=$Seasons.GreatLent");
+        //Removing "Allelujah Fay Bibi" and "Allelujha Ge Ef Mev'i"
+        btnMassUnBaptised.prayersSequence.splice(
+          btnMassUnBaptised.prayersSequence.indexOf(
+            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"), 1);
+      } else if (isFast
+        && todayDate.getDay() !== 0
+        && todayDate.getDay() !== 6) {
         //Replace Hellelujah Fay Bibi
         btnMassUnBaptised.prayersSequence.splice(
           btnMassUnBaptised.prayersSequence.indexOf(
             Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"), 1);
-        if (isFast && Season != Seasons.GreatLent && Season != Seasons.JonahFast) 
-          //Remove TayShouray
-          btnMassUnBaptised.prayersSequence.splice(
-            btnMassUnBaptised.prayersSequence.indexOf(
-              Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"), 1);
-        
-       if(!isFast)
+        //Remove TayShouray
+        btnMassUnBaptised.prayersSequence.splice(
+          btnMassUnBaptised.prayersSequence.indexOf(
+            Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"), 1);
+      } else {
         //Remove 'Hallelujah Ji Efmefi'
         btnMassUnBaptised.prayersSequence.splice(
           btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "HallelujahFayBiBiFast&D=$copticFeasts.AnyDay"), 1);
+            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay") +1, 1);
         //Remove Tishoury
         btnMassUnBaptised.prayersSequence.splice(
           btnMassUnBaptised.prayersSequence.indexOf(
             Prefix.massCommon + "Tishoury&D=$copticFeasts.AnyDay"), 1);
+      }
     })();
           scrollToTop();
           return btnMassUnBaptised.prayersSequence;
