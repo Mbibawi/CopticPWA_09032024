@@ -311,8 +311,9 @@ showActors.set(actors[4], false); //same comment as above concerning the 'Commen
 if (localStorage.showActors === undefined) { localStorage.showActors = JSON.stringify(Array.from(showActors)) };
 allLanguages.map(lang => textAmplified.set(lang, false));
 if (localStorage.textAmplified === undefined) { localStorage.textAmplified = JSON.stringify(Array.from(textAmplified)) };
-let displayMode: string = localStorage[0];
-if (localStorage.displayMode == undefined) {localStorage.displayMode = displayMode};
+if (localStorage.displayMode === 'undefined') {
+    localStorage.displayMode = displayModes[0];
+};
 
 
 

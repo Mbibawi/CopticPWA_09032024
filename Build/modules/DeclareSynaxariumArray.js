@@ -1,5 +1,4 @@
-ReadingsArrays.SynaxariumArray = [
-    [
+ReadingsArrays.SynaxariumArray = [[
         [
             Prefix.synaxarium + "&D=0101&C=Title",
             "1er Thout (Jour de l’an copte)\n1) Commémoration de la guérison de Job le juste;\n2) Martyre de l’apôtre saint Barthélémy;\n3) Décès de saint Mylious, 3ème pape d’Alexandrie;\n4) Décès du pape Marc V – le 98ème patriarche de saint Marc",
@@ -28,12 +27,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0101",
             "L'Église commémore aujourd'hui la guérison de Job le juste. Celui-ci habitait le pays d'Uç(أرض عوص). Ce pays était nommé ainsi en référence à son grand père qui portait ce nom. Il est écrit dans la sainte Bible que ce juste était « un homme intègre et droit qui craignait Dieu et se gardait du mal ». La Bible témoigne aussi qu’il était riche et avait beaucoup de biens ; on y lit aussi : « Cet homme était le plus fortuné de tous les fils de l'Orient ». Il prédit la venue du Christ pour le salut de l’humanité en disant : « Car je sais qu'il est éternel Celui qui doit être mon libérateur sur cette terre ». Il croyait aussi en l’éternité de l’âme et la vie après la mort bien qu’il ait vécu avant la Loi. En effet il disait : « Quand ma peau sera détruite, il se lèvera ; Quand je n'aurai plus de chair, je verrai Dieu. »",
-            'رتَّبت الكنيسة أن يكون هذا اليوم تذكاراً لشفاء أيوب البار. وكان يسكن في أرض عوص نسبة إلى جده عوص. ويشهد الكتاب المقدس عن هذا الصديق أنه كان كاملاً ومستقيماً يتقى الله ويحيد عن الشر (أيوب 1: 1). كما شهد الكتاب عنه أنه كان غنياً جداً في الأموال والمقتنيات "كان هذا الرجل أعظم بنى المشرق" (أيوب 1: 3). تنبأ أيوب عن مجيء السيد المسيح لفداء البشرية بقوله "أما أنا فقد علمت أن ولييّ حي ويظهر على الأرض في آخر الزمان" (أيوب 19: 25). كما كان يؤمن بخلود النفس والحياة بعد الموت رغم أنه عاش قبل الناموس بزمن طويل فيقول "وبعد أن يُفنى جلدي هذا وبدون جسدي أرى الله" (أيوب 19: 26).',
+            "رتَّبت الكنيسة أن يكون هذا اليوم تذكاراً لشفاء أيوب البار. وكان يسكن في أرض عوص نسبة إلى جده عوص. ويشهد الكتاب المقدس عن هذا الصديق أنه كان كاملاً ومستقيماً يتقى الله ويحيد عن الشر (أيوب 1: 1). كما شهد الكتاب عنه أنه كان غنياً جداً في الأموال والمقتنيات \"كان هذا الرجل أعظم بنى المشرق\" (أيوب 1: 3). تنبأ أيوب عن مجيء السيد المسيح لفداء البشرية بقوله \"أما أنا فقد علمت أن ولييّ حي ويظهر على الأرض في آخر الزمان\" (أيوب 19: 25). كما كان يؤمن بخلود النفس والحياة بعد الموت رغم أنه عاش قبل الناموس بزمن طويل فيقول \"وبعد أن يُفنى جلدي هذا وبدون جسدي أرى الله\" (أيوب 19: 26).",
         ],
         [
             Prefix.synaxarium + "&D=0101",
             "Dans sa période faste, Job se distingua par de nomreuses vertus : La chasteté : « J’avais conclu un pacte avec mes yeux : comment, alors, aurais-je fixé du regard une jeune fillevierge ? » ; La compassion envers les pauvres et le malheureux : « Jamais étranger ne coucha dehors, au voyageur ma porte restait ouverte. » Ou encore : « Si j'ai mangé seul mon pain, sans que l'orphelin en ait eu sa part, moi qui l'ai dès ma jeunesse élevé comme un pre. » ; L’attachement à l’adoration de Dieu malgré la propagation de l’idolâtrie : « Si j'ai regardé le soleil quand il brillait, La lune quand elle s'avançait majestueuse, Et si mon cœur s'est laissé séduire en secret, ... j'aurais renié le Dieu d'en haut » ; Il comptait sur Dieu plutôt que sur la richesse : « Si j'avais mis ma confiance dans l’or, si j'avais mis mon espoir dans les pierres précieuses ; Si je m'étais réjoui d’avoir possédé de grandes richesses ... » Il s’attachait à se repentir en permanence : « Si, comme les hommes, j'ai caché mes transgressions, et renfermé mes iniquités dans mon sein ... »",
-            'وتميز أيوب في أيام سعته بفضائل كثيرة مثل الطهارة كقوله: "عهداً قطعت لعيني فكيف أتطلع في عذراء" (أيوب 31: 1)، والشفقة على الفقراء والمساكين "فتحت للمسافر أبوابي، هل أكلت لقمتي وحدي ولم يأكل منها اليتيم، منذ صباه كبر عندي كأب" (أيوب 31: 11). والتمسك بعبادة الله رغم انتشار عبادة الأصنام حوله: "إن كنت قد نظرت إلى النور حين أضاء أو إلى القمر يسير بالبهاء وغوى قلبي سراً... لأني أكون قد جحدت الله من فوق: (أيوب 31: 26 – 28). والاتكال على الله لا على الغنى: "إن كنت قد جعلت الذهب عمدتي أو قلت للإبريز أنت متكلي، إن كنت قد فرحت إذ كثرت ثروتي" (أيوب 31: 24)، والتمسك بحياة التوبة المستمرة: :إن كنت قد كتمت كالناس ذنبي لإخفاء إثمي في حضني، بل كنت أخبره بعدد خطواتي" (أيوب 31: 34).',
+            "وتميز أيوب في أيام سعته بفضائل كثيرة مثل الطهارة كقوله: \"عهداً قطعت لعيني فكيف أتطلع في عذراء\" (أيوب 31: 1)، والشفقة على الفقراء والمساكين \"فتحت للمسافر أبوابي، هل أكلت لقمتي وحدي ولم يأكل منها اليتيم، منذ صباه كبر عندي كأب\" (أيوب 31: 11). والتمسك بعبادة الله رغم انتشار عبادة الأصنام حوله: \"إن كنت قد نظرت إلى النور حين أضاء أو إلى القمر يسير بالبهاء وغوى قلبي سراً... لأني أكون قد جحدت الله من فوق: (أيوب 31: 26 – 28). والاتكال على الله لا على الغنى: \"إن كنت قد جعلت الذهب عمدتي أو قلت للإبريز أنت متكلي، إن كنت قد فرحت إذ كثرت ثروتي\" (أيوب 31: 24)، والتمسك بحياة التوبة المستمرة: :إن كنت قد كتمت كالناس ذنبي لإخفاء إثمي في حضني، بل كنت أخبره بعدد خطواتي\" (أيوب 31: 34).",
         ],
         [
             Prefix.synaxarium + "&D=0101",
@@ -120,7 +119,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0201",
             "Le garde s'en alla et le décapita dans la prison ; puis il apporta sa tête sur un plat et la donna à la jeune fille, et la jeune fille la donna à sa mère. Les disciples de Jean, l'ayant appris, vinrent prendre son cadavre et le mirent dans un tombeau. La tête du saint s’envola du plat en disant : « Tu n'as pas le droit de prendre la femme de ton frère. »",
-            'فمضى وقطع رأسه في السجن وأتى برأسه على طبق وأعطاه للصبية والصبية أعطته لأمها. ولما سمع تلاميذه جاءوا ورفعوا جسده وَوَضَعُوهُ في قبر ) ( مر 6: 19 – 29). أما الرأس المقدس فطار في الجو، وهو يصرخ قائلاً "لا يحل لك أن تأخذ امرأة أخيك".',
+            "فمضى وقطع رأسه في السجن وأتى برأسه على طبق وأعطاه للصبية والصبية أعطته لأمها. ولما سمع تلاميذه جاءوا ورفعوا جسده وَوَضَعُوهُ في قبر ) ( مر 6: 19 – 29). أما الرأس المقدس فطار في الجو، وهو يصرخ قائلاً \"لا يحل لك أن تأخذ امرأة أخيك\".",
         ],
         [
             Prefix.synaxarium + "&D=0201",
@@ -167,7 +166,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0301",
             "Devant leur obstination, le pape finit par les excommunier et écrivit un article dans lequel il disait : « L’âme ne meurtpas ni ne disparait mais perdure comme les anges. Elle est spirituelle et ne peut pas être transformée ou se détériorer. Après avoir quitté le corps elle est transportée soit au paradis soit aux enfers selon son mérite. Lors de la résurrection des morts, lorsque l’archange sonnera le cor, chaque âme s’unira à son corps pour se rendre soit au royaume des cieux soit dans la géhenne du feu éternel et y demeurer pour les siècles des siècles",
-            'ولما رأي تمسكهم بآرائهم الفاسدة حرمهم. ووضع مقالاً جاء فيه: "إن الروح لا تموت ولا تضمحل بل هي باقية كبقاء الملائكة، وأنها روحانية لا تقبل تغيُّراً ولا يعتريها فساد. وحينما تخرج من الجسد تؤخذ إلى موضع حسب استحقاقها، إما الفردوس أو الجحيم. وأنها تتحد بجسدها في يوم القيامة العامة عندما ينفخ رئيس الملائكة في البوق فتقوم الأجساد بأمر مكوِّنها. فتذهب إما إلى ملكوت السماوات أو جهنم النار الأبدية. وتبقى مع جسدها في المكان الذي وصلت إليه إلى أبد الآبدين".',
+            "ولما رأي تمسكهم بآرائهم الفاسدة حرمهم. ووضع مقالاً جاء فيه: \"إن الروح لا تموت ولا تضمحل بل هي باقية كبقاء الملائكة، وأنها روحانية لا تقبل تغيُّراً ولا يعتريها فساد. وحينما تخرج من الجسد تؤخذ إلى موضع حسب استحقاقها، إما الفردوس أو الجحيم. وأنها تتحد بجسدها في يوم القيامة العامة عندما ينفخ رئيس الملائكة في البوق فتقوم الأجساد بأمر مكوِّنها. فتذهب إما إلى ملكوت السماوات أو جهنم النار الأبدية. وتبقى مع جسدها في المكان الذي وصلت إليه إلى أبد الآبدين\".",
         ],
         [
             Prefix.synaxarium + "&D=0301",
@@ -222,7 +221,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0301",
             "A l’approche de son décès, elle dit à l’enfant qui lui était imputé : « Mon fils, mon soleil approche de la fin de sa course mais je te laisse entre les mains d’un père miséricordieux qui est le père de tous les orphelins. J’espère que l’abbé du monastère ne te laissera pas tomber et que le moines auront pitié de toi. Ne recherche pas tes origines ni ta parenté car la meilleur des parentés nous provient de la vertu. Ne recherche pas les vaines gloires de ce monde car le Seigneur a dit : ‘Heureux êtes-vous si l’on vous insulte, si l’on vous persécute et si l’on dit faussement toute sorte de mal contre vous, à cause de moi.’ Prie pour les pécheurs, aide les faibles et apporte ton service à ton prochain comme s’il était ton maitre, ainsi tu seras reçu par Jésus Christ qui a pris l’apparence du serviteur. ».",
-            'وعند قرب نياحتها أوصت الابن المنسوب إليها قائلة له: "يا ولدى لقد قاربت شمسي أن تغيب لكنى أتركك بين يدي أب عطوف هو الله أب اليتامى جميعاً. وأملى أن رئيس الدير لا يتخلى عنك والرهبان يعطفون عليك. يا ولدى لا تبحث عن أصلك ونسبك. إن خير الأنساب هو ما يأتينا من الفضيلة. لا تنظر إلى الأمجاد العالمية. ولقد قال الرب يسوع طوبى لكم إذا طردوكم وعيروكم وقالوا عليكم كل كلمة شريرة من أجلى كاذبين. صلِّ لأجل الخطاة. كن عوناً للضعيف. اخدم قريبك كما لو كان سيدك، لكي تكون مقبولاً عند المسيح يسوع الذي لأجلنا أخذ صورة عبد".',
+            "وعند قرب نياحتها أوصت الابن المنسوب إليها قائلة له: \"يا ولدى لقد قاربت شمسي أن تغيب لكنى أتركك بين يدي أب عطوف هو الله أب اليتامى جميعاً. وأملى أن رئيس الدير لا يتخلى عنك والرهبان يعطفون عليك. يا ولدى لا تبحث عن أصلك ونسبك. إن خير الأنساب هو ما يأتينا من الفضيلة. لا تنظر إلى الأمجاد العالمية. ولقد قال الرب يسوع طوبى لكم إذا طردوكم وعيروكم وقالوا عليكم كل كلمة شريرة من أجلى كاذبين. صلِّ لأجل الخطاة. كن عوناً للضعيف. اخدم قريبك كما لو كان سيدك، لكي تكون مقبولاً عند المسيح يسوع الذي لأجلنا أخذ صورة عبد\".",
         ],
         [
             Prefix.synaxarium + "&D=0301",
@@ -269,7 +268,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0401",
             "Durant la guerre ente les fils d’Israël et Amalèk (عماليق), il conduisait l’armée tandis que Moïse se tenait en prière sur la colline. « Josué défit Amaleq et son peuple au fil de l'épée. » ",
-            'وفي أثناء حرب بنى إسرائيل مع عماليق كان هو يقود الجيش بينما موسى على الجبل يصلى "فهزم يشوع عماليق وَقَوْمَهُ بحد السيف" ( ).',
+            "وفي أثناء حرب بنى إسرائيل مع عماليق كان هو يقود الجيش بينما موسى على الجبل يصلى \"فهزم يشوع عماليق وَقَوْمَهُ بحد السيف\" ( ).",
         ],
         [
             Prefix.synaxarium + "&D=0401",
@@ -279,7 +278,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0401",
             "Après la mort de Moïse le Seigneur parla à Josué, fils de Noun, l'auxiliaire de Moïse, et lui dit : « Moïse, mon serviteur, est mort ; maintenant, debout ! Passe le Jourdain que voici, toi et tout ce peuple, vers le pays que je leur donne. Tout lieu que foulera la plante de vos pieds, je vous le donne, comme jel'ai dit à Moïse. ... Je serai avec toi comme j'ai été avec Moïse, je ne t'abandonnerai point ni ne te délaisserai. ... Seulement, sois fort et tiens très bon pour veiller à agir selon toute la Loi que mon serviteur Moïse t'a prescrite. Ne t'en écarte ni à droite ni à gauche, afin de réussir dans toutes tes démarches. Que le livre de cette Loi soit toujours sur tes lèvres : médite-le jour et nuit afin de veiller à agir selon tout ce qui y est écrit. C'est alors que tu seras heureux dans tes entreprises et réussiras. Ne t'ai-je pas donné cet ordre : Sois fort et tiens bon ! Sois sans crainte ni frayeur, car le Seigneur ton Dieu est avec toi dans toutes tes démarches. »",
-            'وكان بعد موت موسى النبي أن الرب كلم يشوع بن نون خادم موسى قائلاً: "موسى عبدي قد مات فالآن قم اعْبُرْ هذا الأردن أنت وكل هذا الشعب إلى الأرض التي أنا معطيها لهم. كل موضع تدوسه بطون أقدامكم لكم أعطيه كما كلمت موسى. كما كنت مع موسى أكون معك لا أهملك ولا أتركك تشدد وتشجع لأنك أنت تقسم لهذا الشعب الأرض التي حلفت لآبائهم أن أعطيهم. كن متشدداً وتشجع جداً لكي تتحفظ للعمل حسب كل الشريعة التي أمرك بها موسى عبدي. لا تمل يميناً ولا شمالاً لكي تفلح حيثما تذهب. لا يبرح سفر هذه الشريعة من فمك بل تلهج فيه نهاراً وليلاً لكي تتحفظ للعمل حسب كل ما هو مكتوب فيه لأنك حينئذ تصلح طريقك وحينئذ تفلح. أما أمرتك. تشدد وتشجع. لا ترهب ولا ترتعب لأن الرب إلهك معك حيثما تذهب" ( ).',
+            "وكان بعد موت موسى النبي أن الرب كلم يشوع بن نون خادم موسى قائلاً: \"موسى عبدي قد مات فالآن قم اعْبُرْ هذا الأردن أنت وكل هذا الشعب إلى الأرض التي أنا معطيها لهم. كل موضع تدوسه بطون أقدامكم لكم أعطيه كما كلمت موسى. كما كنت مع موسى أكون معك لا أهملك ولا أتركك تشدد وتشجع لأنك أنت تقسم لهذا الشعب الأرض التي حلفت لآبائهم أن أعطيهم. كن متشدداً وتشجع جداً لكي تتحفظ للعمل حسب كل الشريعة التي أمرك بها موسى عبدي. لا تمل يميناً ولا شمالاً لكي تفلح حيثما تذهب. لا يبرح سفر هذه الشريعة من فمك بل تلهج فيه نهاراً وليلاً لكي تتحفظ للعمل حسب كل ما هو مكتوب فيه لأنك حينئذ تصلح طريقك وحينئذ تفلح. أما أمرتك. تشدد وتشجع. لا ترهب ولا ترتعب لأن الرب إلهك معك حيثما تذهب\" ( ).",
         ],
         [
             Prefix.synaxarium + "&D=0401",
@@ -442,18 +441,18 @@ ReadingsArrays.SynaxariumArray = [
         ],
         [
             Prefix.synaxarium + "&D=0601",
-            'Isaïe fit ses prophéties pendant la période de 740 à 710 avant Jésus Christ. Son livre comprend de nombreuss prophéties concernant la Nativité de notre Seigneur Jésus Christ : "C\'est pourquoi le Seigneur lui-même vous donnera un signe. Voilà que la Vierge concevra dans son sein, et elle enfantera un fils, et tu lui donneras le nom d\'Emmanuel." "Car un enfant nous est né, un fils nous a étédonné, il a reçu le pouvoir sur ses épaules et on lui a donné ce nom : Conseiller-merveilleux, Dieu-fort, Père-éternel, Prince-de-paix."',
-            'وشملت نبوة إشعياء الفترة من سنة 740 ق. م. إلى سنة 710ق. م. هذا وقد ورد في سفره كثير من النبوات عن ميلاد السيد المسيح المعجزي: "يعطيكم السيد نفسه آية. هوذا العذراء تحبل وتلد ابناً وتدعو اسمه عمانوئيل" ( إش 7: 14). "يولد لنا ولد ونعطى ابناً وتكون الرياسة على كتفه ويدعى اسمه عجيباً مشيراً إلهاً قديراً أباً أبدياً رئيس السلام" ( إش 9: 6).',
+            "Isaïe fit ses prophéties pendant la période de 740 à 710 avant Jésus Christ. Son livre comprend de nombreuss prophéties concernant la Nativité de notre Seigneur Jésus Christ : \"C'est pourquoi le Seigneur lui-même vous donnera un signe. Voilà que la Vierge concevra dans son sein, et elle enfantera un fils, et tu lui donneras le nom d'Emmanuel.\" \"Car un enfant nous est né, un fils nous a étédonné, il a reçu le pouvoir sur ses épaules et on lui a donné ce nom : Conseiller-merveilleux, Dieu-fort, Père-éternel, Prince-de-paix.\"",
+            "وشملت نبوة إشعياء الفترة من سنة 740 ق. م. إلى سنة 710ق. م. هذا وقد ورد في سفره كثير من النبوات عن ميلاد السيد المسيح المعجزي: \"يعطيكم السيد نفسه آية. هوذا العذراء تحبل وتلد ابناً وتدعو اسمه عمانوئيل\" ( إش 7: 14). \"يولد لنا ولد ونعطى ابناً وتكون الرياسة على كتفه ويدعى اسمه عجيباً مشيراً إلهاً قديراً أباً أبدياً رئيس السلام\" ( إش 9: 6).",
         ],
         [
             Prefix.synaxarium + "&D=0601",
             "Il prédit aussi la venue du Christ et de sa mère, la sainte Vierge Marie, en Égypte en disant : Voici que le Seigneur s'est assis sur une nuée légère, et il arrivera en Égypte, et les idoles de l'Égypte seront ébranées devant sa face, et elle faiblira au fond de son cœur. Il fit aussi des prévisions concernant l’installation de l’Église en Égypte en disant : Ce jour-là, il y aura un autel du Seigeur au cœur du pays d’Égypte et une stèle du Seigneur près de sa frontière.",
-            'كما تنبأ عن مجيء السيد المسيح وأمه العذراء مريم إلى مصر بقوله: "هوذا الرب راكب على سحابة سريعة وقادم إلى مصر فترتجف أوثان مصر من وجهه ويذوب قلب مصر داخلها" ( إش 19: 1).كما تنبأ عن تأسيس الكنيسة في مصر بقوله: "في ذلك اليوم يكون مذبح للرب في وسط أرض مصر وعمود للرب عند تخمها فيكون علامة وشهادة لرب الجنود في أرض مصر" ( إش 19: 19).',
+            "كما تنبأ عن مجيء السيد المسيح وأمه العذراء مريم إلى مصر بقوله: \"هوذا الرب راكب على سحابة سريعة وقادم إلى مصر فترتجف أوثان مصر من وجهه ويذوب قلب مصر داخلها\" ( إش 19: 1).كما تنبأ عن تأسيس الكنيسة في مصر بقوله: \"في ذلك اليوم يكون مذبح للرب في وسط أرض مصر وعمود للرب عند تخمها فيكون علامة وشهادة لرب الجنود في أرض مصر\" ( إش 19: 19).",
         ],
         [
             Prefix.synaxarium + "&D=0601",
             "Il prédit aussi la pasion salutaire du Christ en disant : 4Il porte nos péchés, il souffre pour nous ; et nous avons remarqué qu'il était dans la peine, dans la douleur, dans la torture. 5 Mais il avaitété blessé pour nos péchés, il était brisé pour nos crimes ; le châtiment, qui devait nous endre la paix, est tombé sur lui ; nous avons été guéris par ses meurtrissures. 6Nous étions égarés comme des brebis ;tout homme errait dans sa voie. Et le Seigneur l’a livré pournos péchés ; 7 Et lui, si fort qu'on l’ait maltraité, il n'ouvre pas la bouche. Il a été conduit sous le couteau comme une brebis ; et comme l'agneau muet devant le tondeur, ainsi il n'ouvre pas la bouche.",
-            'وأيضاً تنبأ عن آلام السيد المسيح الخلاصية واحتماله بصبر بقوله: "ولكن أحزاننا حملها وأوجاعنا تحملها ونحن حسبناه مصاباً مضروباً من الله ومذلولاً، وهو مجروح لأجل معاصينا، مسحوق لأجل آثامنا. تأديب سلامنا عليه وبحبره شفينا. كلنا كغنم ضللنا، ملنا كل واحد إلى طريقه، والرب وضع عليه إثم جميعنا. ظُلِم أما هو فتذلل ولم يفتح فاه. كشاةٍ تُساق إلى الذبح وكنعجة صامتة أمام جازيها، فلم يفتح فاه| ( إش 53: 4 – 7).',
+            "وأيضاً تنبأ عن آلام السيد المسيح الخلاصية واحتماله بصبر بقوله: \"ولكن أحزاننا حملها وأوجاعنا تحملها ونحن حسبناه مصاباً مضروباً من الله ومذلولاً، وهو مجروح لأجل معاصينا، مسحوق لأجل آثامنا. تأديب سلامنا عليه وبحبره شفينا. كلنا كغنم ضللنا، ملنا كل واحد إلى طريقه، والرب وضع عليه إثم جميعنا. ظُلِم أما هو فتذلل ولم يفتح فاه. كشاةٍ تُساق إلى الذبح وكنعجة صامتة أمام جازيها، فلم يفتح فاه| ( إش 53: 4 – 7).",
         ],
         [
             Prefix.synaxarium + "&D=0601",
@@ -662,7 +661,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0801",
             "Il naquit en Égypte en 1605 avant Jésus Christ à l’époque du pharaon Aménophis (أمينوفيس) qui avait ordonné qu’on tue tous les nouveau-nés mâles des hébreux. Son père se prénommait Amram (عمرام) et sa mère Yokébed(يوكابد) et tous deux faisaient partie de la tribu de Lévi (سبط لاوي). Comme ils le trouvèent gracieux ils le cachèrent pendant trois mois.",
-            'وُلِدَ موسى سنة 1605 ق.م بمصر من أب اسمه عمرام ( عُمرام: اسم عبري معناه (عم مرتفع)، ومن أم اسمها يوكابد (يوكابد اسم عبري معناه "يهوه مُجد"). (خر 2: 1) وكلاهما من سبط لاوي في أيام الملك أمينوفيس فرعون مصر، الذي أمر بقتل كل طفل ذكر يولد للعبرانيين. وبالإيمان خبأه أبواه ثلاثة أشهر لأنهما رأيا أن الصبي جميلٌ ولم يخافا أمر الملك.',
+            "وُلِدَ موسى سنة 1605 ق.م بمصر من أب اسمه عمرام ( عُمرام: اسم عبري معناه (عم مرتفع)، ومن أم اسمها يوكابد (يوكابد اسم عبري معناه \"يهوه مُجد\"). (خر 2: 1) وكلاهما من سبط لاوي في أيام الملك أمينوفيس فرعون مصر، الذي أمر بقتل كل طفل ذكر يولد للعبرانيين. وبالإيمان خبأه أبواه ثلاثة أشهر لأنهما رأيا أن الصبي جميلٌ ولم يخافا أمر الملك.",
         ],
         [
             Prefix.synaxarium + "&D=0801",
@@ -918,7 +917,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1101",
             "Après le martyre des habitants d’Esna, le gouverneur Arien (أريانوس) s’empara d’abba Amonius (أمونيوس) l’évêque de cette ville et l’emmena avec lui jusqu’à Assouan. Sur le chemin du retour, il entra dans Esna qu’il trouva vide. En poursuivant vers le Nord il trouva trois paysans qui proclamèrent à l’unisson qu’ils étaient chrétiens. Le gouverneur leur dit : « Nous avons ms nos épées dans leurs fourreaux. » Alors, ils lui présentèrent leurs haches. ",
-            'وذلك أنه بعد استشهاد شعب إسنا، أخذ الوالي إريانوس، الأنبا أمونيوس أسقف إسنا أسيراً معه إلى أسوان، وعند رجوعه دخل مدينة إسنا فلم يجد فيها أحداً. وسار إلى بحري المدينة فقابله هؤلاء الفلاحون الثلاثة، فصرخوا بصوت واحد نحن مسيحيون. أجاب الوالي: "لقد أرجعنا سيوفنا إلى أغمادها"، فقالوا "معنا فؤوسنا، اقتلنا بها".',
+            "وذلك أنه بعد استشهاد شعب إسنا، أخذ الوالي إريانوس، الأنبا أمونيوس أسقف إسنا أسيراً معه إلى أسوان، وعند رجوعه دخل مدينة إسنا فلم يجد فيها أحداً. وسار إلى بحري المدينة فقابله هؤلاء الفلاحون الثلاثة، فصرخوا بصوت واحد نحن مسيحيون. أجاب الوالي: \"لقد أرجعنا سيوفنا إلى أغمادها\"، فقالوا \"معنا فؤوسنا، اقتلنا بها\".",
         ],
         [
             Prefix.synaxarium + "&D=1101",
@@ -965,7 +964,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1201",
             "Lorsque le pape Cyrille et les pères conciliaires lui demandèrent d’expliquer ses enseignements il répondit que la Vierge Marie avait enfanté un être humain et non Dieu incarné. Lorsque ceux qui étaient assemblés essayèrent de le ramener à la vraie Foi il refusa de le faire. En conséquence, il fut excommunié par le concile et exilé par l’empereur à Akhmîm (أخميم) en haute Égypte et il y mourut.",
-            'وبعد استدعاء نسطور ثلاث مرات رفض الحضور إلى المجمع وقُرئ خطاب القديس كيرلس الثاني إلى نسطور ورد نسطور عليه. وقد أعلن الأساقفة الموفدين إليه للأسف بأن جميع مجهوداتهم معه كانت سدى. وكانت إجابة نسطور "لن أدعو أبداً طفلاً عمره شهرين أو ثلاثة الله " وبالتالي رفض أن تُلقَّب السيدة العذراء بلقب "والدة الإله"، فقرر المجمع المقدس أن يكون نسطور مفصولاً من كرامة الأسقفية ومن كل شركة كهنوتية. هذا الحكم وقَّع عليه المائتين المجتمعين بأفسس. ثم نفاه الإمبراطور إلى أخميم بصعيد مصر حيث توفي ودفن هناك. ثم أثبت المجمع أن العذراء هي والدة الإله الكلمة المتجسد (النصوص الكتابية التي استند عليها المجمع لإثبات أن العذراء هي والدة الإله المتجسد هي: ( لو 1: 35، لو 1: 43، إش 7: 14، إش 9: 6 ). ووضعوا مقدمة قانون الإيمان ( نعظمك يا أم النور الحقيقي... ) ووضعوا ثمانية قوانين كنسية أخرى. ',
+            "وبعد استدعاء نسطور ثلاث مرات رفض الحضور إلى المجمع وقُرئ خطاب القديس كيرلس الثاني إلى نسطور ورد نسطور عليه. وقد أعلن الأساقفة الموفدين إليه للأسف بأن جميع مجهوداتهم معه كانت سدى. وكانت إجابة نسطور \"لن أدعو أبداً طفلاً عمره شهرين أو ثلاثة الله \" وبالتالي رفض أن تُلقَّب السيدة العذراء بلقب \"والدة الإله\"، فقرر المجمع المقدس أن يكون نسطور مفصولاً من كرامة الأسقفية ومن كل شركة كهنوتية. هذا الحكم وقَّع عليه المائتين المجتمعين بأفسس. ثم نفاه الإمبراطور إلى أخميم بصعيد مصر حيث توفي ودفن هناك. ثم أثبت المجمع أن العذراء هي والدة الإله الكلمة المتجسد (النصوص الكتابية التي استند عليها المجمع لإثبات أن العذراء هي والدة الإله المتجسد هي: ( لو 1: 35، لو 1: 43، إش 7: 14، إش 9: 6 ). ووضعوا مقدمة قانون الإيمان ( نعظمك يا أم النور الحقيقي... ) ووضعوا ثمانية قوانين كنسية أخرى. ",
         ],
         [
             Prefix.synaxarium + "&D=1201",
@@ -1114,7 +1113,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1401",
             "Les trois saints entendirent une voix venant du ciel qui leur disait : « N’ayez pas peur car je suis avec vous. Soyez endurant, purifiez vos cœur car l’heure de votre appel est proche, les couronnes sont apprêtées et vous aurez une grande gloire parmi les chœurs célestes. »",
-            'وكانوا يسمعون صوتاً من السماء يقول لهم "لا تخافوا ها أنا معكم، احتملوا ولتُنَقُّوا قلوبكم لأن ساعة دعوتكم قد أتت والأكاليل معدة، وسيكون لكم مجد عظيم وسط صفوف السمائيين".',
+            "وكانوا يسمعون صوتاً من السماء يقول لهم \"لا تخافوا ها أنا معكم، احتملوا ولتُنَقُّوا قلوبكم لأن ساعة دعوتكم قد أتت والأكاليل معدة، وسيكون لكم مجد عظيم وسط صفوف السمائيين\".",
         ],
         [
             Prefix.synaxarium + "&D=1401",
@@ -1240,7 +1239,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1701",
             "Ce jour-là correspond aussi à l’apparition d’une Croix lumineuse à ’empereur Constantin alors qu’il allait combattre le despote Maxence fils de Maximien (مكنتيوس بن مكسيميانوس) en 312 après Jésus Christ. Il était accompagné de ses officiers et ses soldats lorsqu’apparut à midi une Croix plus lumineuse que le soleil. Sous cette Croix étaient inscrit : « avec ceci tu vaincras. » Encouragé, il vaincut par la puissance de la glorieuse Croix. Ceci l’influença et provoqua sa conversion à la Foi chrétienne.",
-            'ويوافق هذا العيد أيضاً ظهور علامة الصليب المجيد للإمبراطور قسطنطين الكبير، وهو ذاهب لمحاربة الطاغية مكنتيوس بن مكسيميانوس سنة 312م. وذلك أنه رأى أثناء الظهيرة في السماء ومعه الضباط والجنود، علامة الصليب المجيد من نور عظيم أبهي من نور الشمس، وتحت الصليب كلمات: "بهذا تغلب"، فتشجع وتشدد وانتصر في الحرب بقوة الصليب المجيد. مما كان له أبلغ الأثر في قبوله الإيمان المسيحي.',
+            "ويوافق هذا العيد أيضاً ظهور علامة الصليب المجيد للإمبراطور قسطنطين الكبير، وهو ذاهب لمحاربة الطاغية مكنتيوس بن مكسيميانوس سنة 312م. وذلك أنه رأى أثناء الظهيرة في السماء ومعه الضباط والجنود، علامة الصليب المجيد من نور عظيم أبهي من نور الشمس، وتحت الصليب كلمات: \"بهذا تغلب\"، فتشجع وتشدد وانتصر في الحرب بقوة الصليب المجيد. مما كان له أبلغ الأثر في قبوله الإيمان المسيحي.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
@@ -1275,7 +1274,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1701",
             "N’ayant plus de possibilité, le gouverneur ordonna qu’on le décapite alors qu’il avait atteint environ 110 ans. Alors qu’il priait avant que la sentence ne soit exécutée, une voix venant du ciel l’interpella en disant : « Castor, mon bien-aimé, viens au lieu de ton repos. » Puis, il fut décapité et obtint la couronne du martyre.",
-            'ولما تعب من تعذيبه أمر بقطع رأسه، وكان عمره في ذلك الوقت يقرب من مائة وعشر سنين. وبينما هو يصلى قبل تنفيذ الحكم ناداه صوت من السماء قائلاً: "يا حبيبي قسطور تعال إلى موضع الراحة". ثم قطعوا رأسه، فنال إكليل الشهادة.',
+            "ولما تعب من تعذيبه أمر بقطع رأسه، وكان عمره في ذلك الوقت يقرب من مائة وعشر سنين. وبينما هو يصلى قبل تنفيذ الحكم ناداه صوت من السماء قائلاً: \"يا حبيبي قسطور تعال إلى موضع الراحة\". ثم قطعوا رأسه، فنال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=1701",
@@ -1476,12 +1475,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2001",
             "Lorsque l’année fut passée, l’évêque avait oublié sa promesse. Une nuit, il la vi en songe resplendissante de clarté et elle lui dit : « Père, comment as-tu pu m’oublier alors que je vais décéder cette nuit ? » Abba Macaire se vit se levant, lui faisait les prières de consécration du moine et qu’il la revêtait du vêtement monacal. Comme il ne trouvait pas de coiffure (قلنسوة), l’évêque retira la sienne et la lui posa sur la tête puis il lui mit le schème des moines. Sainte Théopista avait en main une croix en argent, elle la donna à l’évêque en lui disant : « Accepte cette croix de ta disciple. »",
-            'انقضت السنة ونسى الأب الأسقف طلبها، فرأى ذات ليلة القديسة في شكل مضيء وسمعها تقول: "لماذا نسيتني إلى الآن وأنا سأتنيَّح الليل؟". ورأى نفسه في الحلم أنه قام من نومه وصلى عليها صلاة الرهبنة وألبسها ثوبها، ولما لم يجد قلنسوة، خلع قلنسوته وألبسها لها، ثم وشَّحها بالإسكيم المقدس وكان بيدها صليب من فضة ناولته له قائلة: "اقبل من تلميذتك هذا الصليب".',
+            "انقضت السنة ونسى الأب الأسقف طلبها، فرأى ذات ليلة القديسة في شكل مضيء وسمعها تقول: \"لماذا نسيتني إلى الآن وأنا سأتنيَّح الليل؟\". ورأى نفسه في الحلم أنه قام من نومه وصلى عليها صلاة الرهبنة وألبسها ثوبها، ولما لم يجد قلنسوة، خلع قلنسوته وألبسها لها، ثم وشَّحها بالإسكيم المقدس وكان بيدها صليب من فضة ناولته له قائلة: \"اقبل من تلميذتك هذا الصليب\".",
         ],
         [
             Prefix.synaxarium + "&D=2001",
             "L’évêque se réveilla immédiatement et trouva qu’il avait la croix dans la main. Il fut très surpris et glorifia Dieu. Puis, il alla, accompagné de son disciple, chez Théopista et fut reçu par son fils en pleurs. Celui-ci lui dit que sa mère l’avait appelé au milieu de la nuit pour lui faire ses adieux en lui disant qu’elle allait partir rejoindre le Christ. Puis elle lui recommanda d’obéir à l’évêque et décéda en paix.",
-            'وللحال استيقظ الأب الأسقف من نومه فوجد الصليب بيده، فتعجب ومجد الله، ثم قام ومضى هو وتلميذه إلى بيت القديسة فوجد ابنها جالساً يبكي. فسأله عن سبب بكائه، فقال إن والدتي استدعتني نحو نصف الليل وقالت لي: "سأتنيَّح الليلة وأمضى إلى السيد المسيح" ثم أوصتني قائلة: "احفظ جميع ما يشير به عليك الأب الأسقف"، ثم تنيَّحت بسلام.',
+            "وللحال استيقظ الأب الأسقف من نومه فوجد الصليب بيده، فتعجب ومجد الله، ثم قام ومضى هو وتلميذه إلى بيت القديسة فوجد ابنها جالساً يبكي. فسأله عن سبب بكائه، فقال إن والدتي استدعتني نحو نصف الليل وقالت لي: \"سأتنيَّح الليلة وأمضى إلى السيد المسيح\" ثم أوصتني قائلة: \"احفظ جميع ما يشير به عليك الأب الأسقف\"، ثم تنيَّحت بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=2001",
@@ -1615,7 +1614,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2201",
             "Shapur adorait le feu et le soleil et persécutait les chrétiens dans son pays. Quant à Tâtâs, il gouvernait un district perse. Il fut dénoncé au roi comme étant chrétien, alors ce dernier dépêcha le gouverneur Toumâkher (طوماخر) pour connaitre la vérité et avait pour instructions de torturer Tâtâs si ceci s’avérait vrai. A cette nouvelle, Cotylas partit rejoindre son ami qui avait été arrêté par le gouverneur et qu’on s’apprêtait à jeter dans ne fournaise. Saint Tâtâs fit alors le signe de la Croix sur le feu qui s’éteignit immédiatement. Cotylas en fut surpis et demanda à son ami où il avait appris ce tour de magie. Ce dernier lui répondit que ce n’était pas de la magie mais cela vient de la Foi dans le Christ. Le prince lui demnda : « Et moi, si je croyais, en ferais-je autant ? » Tâtâs lui répondit « Par la Foi tu pourrais faire bien plus. » Alors Cotylas, le fils du roi, crut en Jésus Christ et, s’avançant vers le feu, fit le signe de la Croix. Le feu recula alors de quinze coudées. ",
-            'وقد كان الملك سابور يعبد النار والشمس ويضطهد المؤمنين باسم السيد المسيح في بلاده، وكان تاتاس رئيساً على إحدى البلاد، فوَشى به بعض الأشرار عند الملك بأنه مسيحي، فأرسل إليه طوماخر الوالي ليتحقق من عقيدته ويعذبه إن كان الأمر صحيحاً. ولما سمع الأمير كوتلاس جاء إلى صديقه تاتاس الذي قبض عليه الوالي وأمر بطرحه في أتون النار، فرشم تاتاس النار بعلامة الصليب فانطفأت للحال، فتعجب الأمير كوتلاس وظن أن ذلك بفعل السحر، فأخبره تاتاس أنه بفعل الإيمان بالسيد المسيح. فقال له الأمير: "هل أستطيع أن أفعل هكذا إذا آمنت؟"، فأجابه: "وأكثر من هذا تفعل". فآمن كوتلاس بالسيد المسيح ثم تقدم إلى النار ورشمها بعلامة الصليب فرجعت خمسة عشر ذراعاً.',
+            "وقد كان الملك سابور يعبد النار والشمس ويضطهد المؤمنين باسم السيد المسيح في بلاده، وكان تاتاس رئيساً على إحدى البلاد، فوَشى به بعض الأشرار عند الملك بأنه مسيحي، فأرسل إليه طوماخر الوالي ليتحقق من عقيدته ويعذبه إن كان الأمر صحيحاً. ولما سمع الأمير كوتلاس جاء إلى صديقه تاتاس الذي قبض عليه الوالي وأمر بطرحه في أتون النار، فرشم تاتاس النار بعلامة الصليب فانطفأت للحال، فتعجب الأمير كوتلاس وظن أن ذلك بفعل السحر، فأخبره تاتاس أنه بفعل الإيمان بالسيد المسيح. فقال له الأمير: \"هل أستطيع أن أفعل هكذا إذا آمنت؟\"، فأجابه: \"وأكثر من هذا تفعل\". فآمن كوتلاس بالسيد المسيح ثم تقدم إلى النار ورشمها بعلامة الصليب فرجعت خمسة عشر ذراعاً.",
         ],
         [
             Prefix.synaxarium + "&D=2201",
@@ -1625,7 +1624,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2201",
             "Ensuite il fit torturer son fils de diverses manières, le fit mettre en prison et lui envoya Axoua, sa sœur, pour tenter de l’amadouer et de le ramener à la croyance de son père. Mais Cotylas lui prêcha la bonne parole, la convertit au christianisme puis l’envoya à un prêtre qui la baptisa dans le secret. Revenant vers son père elle lui dit : « J’aurais aimé que tu obtiennes ce que nous avons obtenus, mon frère et moi. Il n’y a pas d’autre Dieu que Jésus Christ. » Le roi s’irrita puis ordonna qu’on la torture jusqu’à ce qu’elle rendit l’âme entre les mains du Christ et elle obtint la couronne du martyre. Ensuite ils attachèrent Cotylas aux queues de plusieurs chevaux qu’on fit galoper jusqu’à ce qu’il rendit l’âme et obtint la couronne du martyre.",
-            'أما كوتلاس فعذبه بأنواع العذاب ثم طرحه في السجن، وأرسل له أكسوا أخته لكي تثنيه عن عزمه، فوعظها وأمال قلبها إلى الإيمان بالسيد المسيح وأرسلها لأحد الكهنة فعمدها سراً، وعادت إلى أبيها تقول: "ليتك يا أبى تحصل على ما حصلت عليه أنا وأخي فإنه ليس إله إلا يسوع المسيح". فغضب الملك وسلَّمها إلى المعذِّبِين، فعذبوها حتى فاضت روحها ونالت إكليل الشهادة. وأخيراً ربطوا كوتلاس في أذيال الخيل حتى تحطمت عظامه وفاضت روحه الطاهرة ونال إكليل الشهادة.',
+            "أما كوتلاس فعذبه بأنواع العذاب ثم طرحه في السجن، وأرسل له أكسوا أخته لكي تثنيه عن عزمه، فوعظها وأمال قلبها إلى الإيمان بالسيد المسيح وأرسلها لأحد الكهنة فعمدها سراً، وعادت إلى أبيها تقول: \"ليتك يا أبى تحصل على ما حصلت عليه أنا وأخي فإنه ليس إله إلا يسوع المسيح\". فغضب الملك وسلَّمها إلى المعذِّبِين، فعذبوها حتى فاضت روحها ونالت إكليل الشهادة. وأخيراً ربطوا كوتلاس في أذيال الخيل حتى تحطمت عظامه وفاضت روحه الطاهرة ونال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=2201",
@@ -1645,7 +1644,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2201",
             "Jules d’Akfahs était une personne riche et le Christ lui inspira de s’occuper des dépouilles des martyrs, de leurs ensevelissements et de les ramener à leurs villages natals. Il faisait cela par lui-même et avait près de trois cent serviteurs et scribes qu’il envoyait dans différents endroits pour rédiger la biographie des martyrs et s’occuper de l’ensevelissement et l’enterrement de leurs dépouilles. Les gouverneurs ne se rendirent pas compte de ce que faisait ce saint et aucun d’entre eux nentrava son chemin car Dieu le préservait pour une bonne œuvrec’est-à-dire le service des saints et la rédaction de leur biographies afin que les générations futures s’en souviennent. Les saints qu’il s’était mis à leur service lui prédisaient qu’il devait verser son sang pour le nom du Christ.",
-            'كان يوليوس الأقفهصي غنياً جداً بالأموال والمقتنيات وقد استخدمه السيد المسيح للعناية بأجساد الشهداء وتكفينهم وإرسالهم إلى بلادهم وكان يفعل ذلك بنفسه، كما كان له ثلاثمائة غلام كاتب زوَّدهم بالأموال وكلَّفهم بالسفر للأماكن المختلفة لكتابة سِيَر الشهداء وتكفينهم ودفنهم. وقد أنزل الله سهواً على قلوب الولاة فلم يمسكوه، لأن الله حفظه سالماً لغاية حسنة، وهي خدمة القديسين وكتابة سِيَرهم تذكاراً للأجيال القادمة. وكان الشهداء الذين يخدمهم يدعون له قائلين: "لابد لك من سفك دمك على اسم السيد المسيح لتُحسَب في عداد الشهداء".',
+            "كان يوليوس الأقفهصي غنياً جداً بالأموال والمقتنيات وقد استخدمه السيد المسيح للعناية بأجساد الشهداء وتكفينهم وإرسالهم إلى بلادهم وكان يفعل ذلك بنفسه، كما كان له ثلاثمائة غلام كاتب زوَّدهم بالأموال وكلَّفهم بالسفر للأماكن المختلفة لكتابة سِيَر الشهداء وتكفينهم ودفنهم. وقد أنزل الله سهواً على قلوب الولاة فلم يمسكوه، لأن الله حفظه سالماً لغاية حسنة، وهي خدمة القديسين وكتابة سِيَرهم تذكاراً للأجيال القادمة. وكان الشهداء الذين يخدمهم يدعون له قائلين: \"لابد لك من سفك دمك على اسم السيد المسيح لتُحسَب في عداد الشهداء\".",
         ],
         [
             Prefix.synaxarium + "&D=2201",
@@ -1841,12 +1840,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2501",
             "Dieu lui avait ordonné d'aller à la ville de Ninive(نينوى) en Irak et d’appeler ses habitants au repentir car leur méchanceté est montée jusqu’à Lui. Mais il désobéit et prit la mer pour s’enfuir à Tarsis (ترشيش). Une grande tempête se leva et le navire menaçait de se briser. Alors, les matelots prirent peur et jetèrent la cargaison par-dessus bord. Chacun d’entre ex appelait son dieu au secours. Quant à Jonas, il était descendu dans la cale du bateau et dormait profondéent. Lechefde l'équipage le réveilla en disant : « -tu à ronfler, toi ? Lève-toi et invoque ton dieu, fin que le dieu nous préserve et que nous ne périssions pas. »Puis ils tirèrent au sort pour savoir à qui ils devaient ce malheur ; et le sort tomba sur Jonas. Lorsqu’ils lui posèrent la question il leur répondit : « Moi, je suis hébreu et je fuis loin de la face du Seigneur. » Ils lui demandèrent : « Que devons-nous te faire pour qu’alors la mer s’apaise en nous épargnant ? » Il leur répondit : « Prenez-moi, jetez-moi à la mer, et la mer s’apisera en vous épargnant ; parce que moi j’ai compris que cette grande houle est sur vous à cause de moi. »Et ils prirent Jonas et le jetèrent à la mer, et la mer s’arrêta, cessant ses secousses. Le Seigneur ordonna à un grand monstre marin d'avaler Jonas ; et Jonas fut dans le ventre du monstre trois jours et trois nuits.",
-            'وقد أمره الله أن يمضى إلى مدينة نينوى بالعراق (تقوم الآن مدينة الموصل بالعراق مكان مدينة نينوى القديمة)، وينادى أهلها ليتوبوا ويرجعوا إلى الله إذ صعد شرهم إلى السماء، ولكنه خالف أمر الله فقام وهرب إلى ترشيش (ترشيش هي ترتيسوس وتقع جنوب أسبانيا قرب جبل طارق) في سفينة، فهاج البحر حتى كادت السفينة تغرق، فخاف كل من بالسفينة وطرحوا الأمتعة في البحر وصرخوا كل واحد إلى إلهه، أما يونان فكان قد نزل إلى جوف السفينة ونام نوماً عميقاً. فجاء إليه رئيس النواتية وأيقظه قائلاً: "لماذا تنام، قم اُصرخ إلى إلهك لئلا نهلك." ثم ألقوا قرعة ليعرفوا بسبب مَنْ هذه البَلِيَّة فوقعت على يونان، ولما سألوه قال: "أنا عبراني هارب من وجه الله". فقالوا له: "ماذا نصنع بك ليهدأ البحر؟"، فقال: "إلقوني في البحر فيهدأ لأني عالم أنه بسبـبي قد حدث هذا النوء العظيم". فأخذوا يونان وطرحوه في البحر فتوقف عن هيجانه. أما الرب فأعدَّ حوتاً عظيماً ليبتلع يونان، فكان في جوف الحوت ثلاثة أيام وثلاث ليال. وصلى يونان في بطن الحوت صلاة عميقة (يونا ص 2)، فأمر الرب الحوت فقذفه إلى البَرّ.',
+            "وقد أمره الله أن يمضى إلى مدينة نينوى بالعراق (تقوم الآن مدينة الموصل بالعراق مكان مدينة نينوى القديمة)، وينادى أهلها ليتوبوا ويرجعوا إلى الله إذ صعد شرهم إلى السماء، ولكنه خالف أمر الله فقام وهرب إلى ترشيش (ترشيش هي ترتيسوس وتقع جنوب أسبانيا قرب جبل طارق) في سفينة، فهاج البحر حتى كادت السفينة تغرق، فخاف كل من بالسفينة وطرحوا الأمتعة في البحر وصرخوا كل واحد إلى إلهه، أما يونان فكان قد نزل إلى جوف السفينة ونام نوماً عميقاً. فجاء إليه رئيس النواتية وأيقظه قائلاً: \"لماذا تنام، قم اُصرخ إلى إلهك لئلا نهلك.\" ثم ألقوا قرعة ليعرفوا بسبب مَنْ هذه البَلِيَّة فوقعت على يونان، ولما سألوه قال: \"أنا عبراني هارب من وجه الله\". فقالوا له: \"ماذا نصنع بك ليهدأ البحر؟\"، فقال: \"إلقوني في البحر فيهدأ لأني عالم أنه بسبـبي قد حدث هذا النوء العظيم\". فأخذوا يونان وطرحوه في البحر فتوقف عن هيجانه. أما الرب فأعدَّ حوتاً عظيماً ليبتلع يونان، فكان في جوف الحوت ثلاثة أيام وثلاث ليال. وصلى يونان في بطن الحوت صلاة عميقة (يونا ص 2)، فأمر الرب الحوت فقذفه إلى البَرّ.",
         ],
         [
             Prefix.synaxarium + "&D=2501",
             "Puis il fit dans le ventre du monstre une prière profonde à Dieu qui ordonna au monstre de le rejeta sur la terre ferme. Il y eut une parole du Seigneur adressée à Jonas pour la deuxième fois, disant : « Lève-toi, va à Ninive la grande ville et fais-y une proclamation conforme à la proclamation précédente que je t’avais dite. » Alors Jonas alla à Ninive et annonça : « Dans quarante jours Ninive sera détruite. » Les habitants de la ville crurent en Dieu, se repentirent en jeûnant, en priant, et en s’humiliant. ",
-            'ثم صار قول الرب إلى يونان ثانية قم اذهب إلى نينوى وناد لها بالمناداة التي أنا مكلمك بها، فقام يونان وذهب إلى نينوى ونادى فيها قائلاً: :بعد أربعين يوماً تنقلب نينوى". فآمن أهل نينوى بالله وتابوا توبة حقيقية بالصوم والصلاة والتذلل.',
+            "ثم صار قول الرب إلى يونان ثانية قم اذهب إلى نينوى وناد لها بالمناداة التي أنا مكلمك بها، فقام يونان وذهب إلى نينوى ونادى فيها قائلاً: :بعد أربعين يوماً تنقلب نينوى\". فآمن أهل نينوى بالله وتابوا توبة حقيقية بالصوم والصلاة والتذلل.",
         ],
         [
             Prefix.synaxarium + "&D=2501",
@@ -1913,12 +1912,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2601",
             "En effet, Dieu envoya son archange auprès de Zacharie alors qu’il offrai l’encens dans le temple tandis que toute la multitude du peuple était en prière au dehors, à l’heure de l’offrande de l’encens. Lorsqu’il vit l’ange, il fut bouleversé et saisi d’une grande crainte mais « 13 L’ange lui dit : ‘Sois sas crainte, Zacharie, car ta supplication a été exaucée : ta femme Élisabeth mettra au monde pour toi un fils, et tu lui donneras le nom de Jean. 14 Tu seras ans la joie et l’allégresse, et beaucoup se réjouiront de sa naissance, 15 car il sera grand devant le Seigneur. Il ne boira pas de vin ni de boisson forte, et il sera rempli d’Esprit Saint dès le ventre de sa mère ; 16 il fera revenir de nmbreux fils d’Israël au Seigneur leur Dieu ; 17 il marchera devant, en présence du Seigneur, avec l’esprit t la pussane du prophète Élie, pour faire revenir le cœur des pères vers leurs enfants, ramener les rebelle à la sagesse des justes, et préparer au Seigneur un peuple bien disposé ».",
-            'وذلك أن الله أرسل رئيس الملائكة جبرائيل إلى زكريا الكاهن بينما كان يرفع البخور داخل الهيكل. وكان جمهور الشعب خارجاً وقت البخور. فلما رأى زكريا الملاك اضطرب وخاف، فقال له الملاك: "لا تخف يا زكريا لأن طلبتك قد سُمعت وامرأتك أليصابات ستلد لك ابناً وتسميه يوحنا. ويكون لك فرح وابتهاج، وكثيرون سيفرحون بولادته، لأنه يكون عظيماً أمام الرب ومن بطن أمه يمتلىء من الروح القدس ويرد كثيرين من بنى إسرائيل إلى الرب إلههم، ويتقدم أمامه بروح إيليا وقوته، ليرد قلوب الآباء إلى الأبناء، والعصاة إلى فكر الأبرار ويهيىء للرب شعباً مستعداً".',
+            "وذلك أن الله أرسل رئيس الملائكة جبرائيل إلى زكريا الكاهن بينما كان يرفع البخور داخل الهيكل. وكان جمهور الشعب خارجاً وقت البخور. فلما رأى زكريا الملاك اضطرب وخاف، فقال له الملاك: \"لا تخف يا زكريا لأن طلبتك قد سُمعت وامرأتك أليصابات ستلد لك ابناً وتسميه يوحنا. ويكون لك فرح وابتهاج، وكثيرون سيفرحون بولادته، لأنه يكون عظيماً أمام الرب ومن بطن أمه يمتلىء من الروح القدس ويرد كثيرين من بنى إسرائيل إلى الرب إلههم، ويتقدم أمامه بروح إيليا وقوته، ليرد قلوب الآباء إلى الأبناء، والعصاة إلى فكر الأبرار ويهيىء للرب شعباً مستعداً\".",
         ],
         [
             Prefix.synaxarium + "&D=2601",
             "Alors Zacharie dit à l’ange : « Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée  ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »",
-            'فقال زكريا للملاك: "كيف أعلم هذا لأني أنا شيخ وامرأتي متقدمة في أيامها". فأجاب الملاك وقال له: "أنا جبرائيل الواقف أمام الله، وأرسلني الله لأبشرك بهذا، وها أنت تكون صامتاً إلى اليوم الذي يكون فيه هذا، لأنك لم تصدِّق كلامي الذي سيتم في حينه" ( لو 1: 8 – 20 ).',
+            "فقال زكريا للملاك: \"كيف أعلم هذا لأني أنا شيخ وامرأتي متقدمة في أيامها\". فأجاب الملاك وقال له: \"أنا جبرائيل الواقف أمام الله، وأرسلني الله لأبشرك بهذا، وها أنت تكون صامتاً إلى اليوم الذي يكون فيه هذا، لأنك لم تصدِّق كلامي الذي سيتم في حينه\" ( لو 1: 8 – 20 ).",
         ],
         [
             Prefix.synaxarium + "&D=2601",
@@ -2133,12 +2132,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0102",
             "Un jour, un autre monastère de vierge célébrait une fête. L’abbesse prit avec elle quelques sœurs, dont sainte Anastasie, et partirent partager cette célébration. Chemin faisant, cette sainte vit les soldats de Dèce (داكيوس) torturer quelques chrétiens. Son cœur en fut tout troublé et elle s’écria : « Que vos cœurs sont endurcis. Est-ce ainsi que vous vous comportez envers ceux que Dieu a créés à son image et à sa ressemblance ? ».",
-            'واتفق أن أحد بيوت العذارى القريبة منها، كانت تحتفل بأحد الأعياد فأخذتها الرئيسة مع بعض العذارى، ومضين للاشتراك في ذلك العيد، فرأت في الطريق جنود ديسيوس الملك يعذبون بعض المسيحيين، فالتهب قلبها بالغيرة المسيحية، وصاحت بهم قائلة: "يا قساة القلوب أهكذا تفعلون بمن خلقهم الله على صورته ومثاله وبذل ذاته عنهم؟!!".',
+            "واتفق أن أحد بيوت العذارى القريبة منها، كانت تحتفل بأحد الأعياد فأخذتها الرئيسة مع بعض العذارى، ومضين للاشتراك في ذلك العيد، فرأت في الطريق جنود ديسيوس الملك يعذبون بعض المسيحيين، فالتهب قلبها بالغيرة المسيحية، وصاحت بهم قائلة: \"يا قساة القلوب أهكذا تفعلون بمن خلقهم الله على صورته ومثاله وبذل ذاته عنهم؟!!\".",
         ],
         [
             Prefix.synaxarium + "&D=0102",
             "Un soldat l’arrêta et la présenta au prince devant qui elle avoua être chrétienne et adorer le crucifié. Il la fit alors torturer sans que cela n’ébranle sa Fi. Enfin il ordonna qu’on la décapite. Elle fit alors une longue prière puis, abaissant sa tête, elle fut décaitée etobtit la couronnedu martyre.",
-            'فقبض عليها أحد الجنود وقدَّمها إلى الوالي، الذي سألها قائلاً: "هل أنت مسيحية تعبدين المصلوب؟" فاعترفت ولم تنكر، فعذبها عذاباً شديداً بعذابات مختلفة. أخيراً أمر بقطع رأسها. فصلَّت صلاة حارة ثم أحنت رأسها، فضرب السياف عنقها، ونالت إكليل الشهادة.',
+            "فقبض عليها أحد الجنود وقدَّمها إلى الوالي، الذي سألها قائلاً: \"هل أنت مسيحية تعبدين المصلوب؟\" فاعترفت ولم تنكر، فعذبها عذاباً شديداً بعذابات مختلفة. أخيراً أمر بقطع رأسها. فصلَّت صلاة حارة ثم أحنت رأسها، فضرب السياف عنقها، ونالت إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=0102",
@@ -2170,7 +2169,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0202",
             "Un jour qu'il était au désert de Scété, il entra dans une église déguisé comme un oine étange. Le prêtre, ayant déposé le pain sur l'autel, encensa l'église et toute les lectures furent dites. Au moment où il leva le drap qui recouvre l'autel (الإبروسفارين), il ne trouva pas le pain dans la patène (الصينية). Ceci le troubla profondément, alors, il se retourna vers l'assemblée et leur dit : « Je ne trouve pas le pain dans la patène et je ne sais pas si ceci est à cause de mes péchés ou des vôtres. » Les fidèles pleurèrent mais l'nge du Seigneur apparut à cet instant et lui dit : « Ceci n'est ni à cause de tes péchés ni des leurs. C'est parce que tu as offert le pain en présence du patriarche. » Le prêtre demanda à l'ange où il était et celui-ci le lui indiqua alors qu'il était assis dans un coin de l'église.",
-            'وحدث أن دخل في إحدى المرات، متنكراً، إلى كنيسة بدير في برية شيهيت، في زى راهب غريب. ولما وضع الكاهن القربان على المذبح وغطاه بالإبروسفارين، وعند بدء القداس رفع الإبروسفارين، فلم يجد قربانة الحمل في الصينية. فاضطرب والتفت إلى المصلين قائلاً: "إني لا أجد القربانة في الصينية، ولست أدرى إن كان هذا من أجل خطيتي أو خطيتكم". فبكى المصلون. وللوقت ظهر ملاك الرب وقال للكاهن: "ليس هذا لأجل خطيتك ولا خطية المصلين، بل لأنك رفعت القربان في حضور الأب البطريرك". فقال له الكاهن: "وأين هو يا سيدي ؟" فأشار إليه الملاك. وكان القديس ساويرس واقفاً بإحدى زوايا الكنيسة.',
+            "وحدث أن دخل في إحدى المرات، متنكراً، إلى كنيسة بدير في برية شيهيت، في زى راهب غريب. ولما وضع الكاهن القربان على المذبح وغطاه بالإبروسفارين، وعند بدء القداس رفع الإبروسفارين، فلم يجد قربانة الحمل في الصينية. فاضطرب والتفت إلى المصلين قائلاً: \"إني لا أجد القربانة في الصينية، ولست أدرى إن كان هذا من أجل خطيتي أو خطيتكم\". فبكى المصلون. وللوقت ظهر ملاك الرب وقال للكاهن: \"ليس هذا لأجل خطيتك ولا خطية المصلين، بل لأنك رفعت القربان في حضور الأب البطريرك\". فقال له الكاهن: \"وأين هو يا سيدي ؟\" فأشار إليه الملاك. وكان القديس ساويرس واقفاً بإحدى زوايا الكنيسة.",
         ],
         [
             Prefix.synaxarium + "&D=0202",
@@ -2411,17 +2410,17 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0502",
             "Il a aussi introduit l’air appelé chami (اللحن الشامي) en référence au mont Chama (جبل شامة) où se trouve le monastère de saint Théodore, le combattant et le martyr (دير الشهيد تواضروس المحارب). Ce mont est à l’ouest de Louxor. A cet endroit on trouve la vallée des morts ainsi que les vallées des rois et des reines. L’air chami est utilisé pour le psaume Pek`Esronoc (Ps 44 : Ton trône, ô Dieu, est un trône éternel) qui se chante la 11ème heure du mardi saint ainsi qe la 12ème heure du vendredi saint. Il est aussi utilisé pour le psaume Af'Etshenoun (Ps 54 : Leurs paroles sont plus douce que l’huile) qui se lit la 3ème heure de la veille du jeudi saint ainsi que pendant la prière de l’aube de ce même jour.",
-            'كذلك قام بإدخال اللحن الشامي في بعض مزامير البصخة مثل مزمور "بيك اثرونوس" ومزمور "أفتشنون" نقله من جبل شامه غرب الأقصر حيث مدينة الموتى في وادي الملوك والملكات وحيث يوجد الآن دير الشهيد تاوضروس المحارب غرب الأقصر.',
+            "كذلك قام بإدخال اللحن الشامي في بعض مزامير البصخة مثل مزمور \"بيك اثرونوس\" ومزمور \"أفتشنون\" نقله من جبل شامه غرب الأقصر حيث مدينة الموتى في وادي الملوك والملكات وحيث يوجد الآن دير الشهيد تاوضروس المحارب غرب الأقصر.",
         ],
         [
             Prefix.synaxarium + "&D=0502",
             "(2) Le rite de la bénédiction de l’eau de la fête des apôtres (5 apip): l’introduction de ce rite précise qu’il a été établi par « notre père abba Pierre, l’évêque de la vill d’al-Bahnassa. »",
-            'ثانياً: طقس لقان عيد الآباء الرسل 5 أبيب: وقيل في مقدمته "قانون وضعه أبونا الأنبا بطرس أسقف مدينة البهنسا% يُقرأ على اللقان في الخامس من أبيب عيد أبوينا الرسولين أبينا بطرس ومعلمنا بولس.',
+            "ثانياً: طقس لقان عيد الآباء الرسل 5 أبيب: وقيل في مقدمته \"قانون وضعه أبونا الأنبا بطرس أسقف مدينة البهنسا% يُقرأ على اللقان في الخامس من أبيب عيد أبوينا الرسولين أبينا بطرس ومعلمنا بولس.",
         ],
         [
             Prefix.synaxarium + "&D=0502",
             "(3) Le rite de la bénédiction des nouveaux baptistères: il s’agit du rite utilisé à ce jour. Dans un manuscrit il est écrit : « Rite établit par notre père abba Pierre, l’évêque de la ville d’al-ahnassa pour la bénédiction des nouveaux baptistères. ».",
-            'ثالثاً: طقس تكريس المعموديات الجديدة: وهو طقس تدشين المعمودية المستعمل حتى الآن وورد في مخطوطة تحوي طقس تكريس المعمودية النص التالي "ترتيب وضعه أبونا القديس أنبا بطرس أسقف البهنسا من أجل تكريز المعمودية الجديدة".',
+            "ثالثاً: طقس تكريس المعموديات الجديدة: وهو طقس تدشين المعمودية المستعمل حتى الآن وورد في مخطوطة تحوي طقس تكريس المعمودية النص التالي \"ترتيب وضعه أبونا القديس أنبا بطرس أسقف البهنسا من أجل تكريز المعمودية الجديدة\".",
         ],
         [
             Prefix.synaxarium + "&D=0502",
@@ -2453,12 +2452,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0602",
             "Cette femme juste était de la tribu de Lévi (سبط لاوي). Son mari, Elqana, fils de Yeroham (ألقانة بن يروحام) avait une autre femme nommée Peninna(فننة). Anne était stérile et Peninna la raillait continuellement à ce sujet. Chaque année, Elqana montait de sa ville pour adorer et pour sacrifier au Seigneur Sabaot à Silo, là où se trouvait le Tabrnacle (ou la tente de la rencontre ou la demeure) (خيمة الاجتماع). Lorqu’il eut offrit son sacrifice, Elqana donna une part à Peninna et à chacun de ses enfants et il donna une part double à Anne car il la préférait. Sa rivale lui faisait aussi des ffronts pour la mettre en colère et Anne pleurait de tristesse et ne mangeait pas. Son mari la consolait en lui disant : « Anne, pourquoi pleures-tu et ne manges-tu pas? Pourquoi es-tu malheureuse ? Est-ceque je ne vaux pas pour toi mieux que dix fils ? »",
-            'كانت هذه البارة من سبط لاوي، وتزوجت ألقانة بن يروحام. وكان لألقانة زوجة أخرى اسمها فننة، وكانت حنة عاقراً، فكانت ضرتها فننة تعيِّرها لعدم النسل. وكان هذا الرجل يصعد كل سنة ليذبح للرب في شيلوه حيث توجد خيمة الاجتماع. ولما ذبح ألقانة الذبيحة أعطى لامرأته فننة ولجميع بنيها وبناتها أنصبة. وأما حنة فأعطاها نصيب اثنين، لأنه كان يحبها. فأغاظتها فننة، فبكت ولم تأكل. فقال لها زوجها: "لماذا تبكين ولا تأكلين؟ أَمَا أنا خير لك من عشرة بنين؟" (صموئيل الأول 1: 1 – 8).',
+            "كانت هذه البارة من سبط لاوي، وتزوجت ألقانة بن يروحام. وكان لألقانة زوجة أخرى اسمها فننة، وكانت حنة عاقراً، فكانت ضرتها فننة تعيِّرها لعدم النسل. وكان هذا الرجل يصعد كل سنة ليذبح للرب في شيلوه حيث توجد خيمة الاجتماع. ولما ذبح ألقانة الذبيحة أعطى لامرأته فننة ولجميع بنيها وبناتها أنصبة. وأما حنة فأعطاها نصيب اثنين، لأنه كان يحبها. فأغاظتها فننة، فبكت ولم تأكل. فقال لها زوجها: \"لماذا تبكين ولا تأكلين؟ أَمَا أنا خير لك من عشرة بنين؟\" (صموئيل الأول 1: 1 – 8).",
         ],
         [
             Prefix.synaxarium + "&D=0602",
             "Anne conçut et, le temps venu, elle enfanta un fils ; elle lui donna le nom de Samuel, c’est-à-dire : Dieu exauce, car, disait-elle : « Je l’ai demandé au Seigneur. ». Lorsque Samuel fut sevré, Anne, le conduisit à la Maison du Seigneur pour accomplir son vœu. Elle le présenta au prêtre Eli en lui expliquant : « je suis la femme que tu as vue assise devant toi, priant le Seigneur. J'ai prié pour obtenir cet enfant, et le Seineur a exaucé la prière que je lui avais faite. 28 Cet enfant, je le donne au Seigneur pour être tous les jours de sa vie au service du Seigneur. »",
-            'فلم تقبل حنة عزاء، ثم صعدت إلى بيت الرب، وعالي الكاهن جالس على الكرسي عند الباب. فصلَّت إلى الرب وبكت ونذرت نذراً للرب إذا أعطاها نسلاً، وقالت: "إذا أعطيتني زرع بشر فإني أعطيه لك كل أيام حياته ولا يعلو رأسه موسى" ( 1صم: 1: 11). ولما رآها عالي الكاهن واقفة ساكتة لأنها كانت تصلى بقلبها فقط، ظنها سكرى، فانتهرها قائلاً: "انزعي خمرك عنك". فأجابت حنة وقالت: "لا يا سيد إني امرأة حزينة الروح ولم أشرب خمراً ولا مسكراً. بل أسكب نفسي أمام الرب من كثرة كربتي". فقال لها عالي: "اذهبي بسلام وإله إسرائيل يعطيك سؤل قلبك". فآمنت ومضت في طريقها، وأكلت ولم يكن وجهها بعد حزيناً. ثم حبلت وولدت ابناً ودعت اسمه صموئيل وهو اسم عبراني معناه "الله سمع". ولما فطمته أصعدته إلى بيت الرب وفاء لنذرها، وقدمته إلى عالي الكاهن قائلة: "أنا المرأة التي وقفت تصلى إلى الرب لأجل هذا الصبي فأعطاني الرب سؤل قلبي. وها أنا أقدمه للرب ليكون خادماً له في بيته إلى الأبد."',
+            "فلم تقبل حنة عزاء، ثم صعدت إلى بيت الرب، وعالي الكاهن جالس على الكرسي عند الباب. فصلَّت إلى الرب وبكت ونذرت نذراً للرب إذا أعطاها نسلاً، وقالت: \"إذا أعطيتني زرع بشر فإني أعطيه لك كل أيام حياته ولا يعلو رأسه موسى\" ( 1صم: 1: 11). ولما رآها عالي الكاهن واقفة ساكتة لأنها كانت تصلى بقلبها فقط، ظنها سكرى، فانتهرها قائلاً: \"انزعي خمرك عنك\". فأجابت حنة وقالت: \"لا يا سيد إني امرأة حزينة الروح ولم أشرب خمراً ولا مسكراً. بل أسكب نفسي أمام الرب من كثرة كربتي\". فقال لها عالي: \"اذهبي بسلام وإله إسرائيل يعطيك سؤل قلبك\". فآمنت ومضت في طريقها، وأكلت ولم يكن وجهها بعد حزيناً. ثم حبلت وولدت ابناً ودعت اسمه صموئيل وهو اسم عبراني معناه \"الله سمع\". ولما فطمته أصعدته إلى بيت الرب وفاء لنذرها، وقدمته إلى عالي الكاهن قائلة: \"أنا المرأة التي وقفت تصلى إلى الرب لأجل هذا الصبي فأعطاني الرب سؤل قلبي. وها أنا أقدمه للرب ليكون خادماً له في بيته إلى الأبد.\"",
         ],
         [
             Prefix.synaxarium + "&D=0602",
@@ -2490,12 +2489,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0702",
             "Ce saint aimait le Seigneur à un tel point que son corps fut affabli à force de jeûnes, d’abstinences, d’ascétismes et de prières. Ces efforts lui valurent une apparition du Seigneur qui lui dit : « Mon bien-aimé Paul, toutes ces peines suffisent. » Il répondit avec humilité : « Seigneur, laisse-moi soumettre mon corps pour à Ton service puisque Tu es mort pour le salut du genre humain alors que Tu es le vrai Dieu. » Le Seigneur le consola puis le quitta.",
-            'ومن عظم محبته للمسيح أضنى جسده بكثرة النسك والأصوام، حتى ظهر له الرب يسوع المسيح قائلاً: "كفاك تعباً يا حبيبي بول"ا. فقال له في اتضاع: "دعني يا سيدي أُتعِب جسدي من أجلك كما تعبت أنت من أجل جنس البشر وأنت الإله الحقيقي مُتَ عنا نحن الخطاة غير المستحقين". فعزاه الرب وقواه ثم صعد إلى السماء.',
+            "ومن عظم محبته للمسيح أضنى جسده بكثرة النسك والأصوام، حتى ظهر له الرب يسوع المسيح قائلاً: \"كفاك تعباً يا حبيبي بول\"ا. فقال له في اتضاع: \"دعني يا سيدي أُتعِب جسدي من أجلك كما تعبت أنت من أجل جنس البشر وأنت الإله الحقيقي مُتَ عنا نحن الخطاة غير المستحقين\". فعزاه الرب وقواه ثم صعد إلى السماء.",
         ],
         [
             Prefix.synaxarium + "&D=0702",
             "Lorsqu’abba Pichoï (أنبا بيشوي) se rendit à Antinoë (أنصنا), après que les berbères envahirent Scété pour la première fois en 407 après Jésus Christ, il fut reçu avec joie par abba Paul car l’ange u Seigneur lui avait promit qu’ils seront enterrés ensemble. En effet, abba Pichoï décéda le 7 Apip 133 des martyrs (417 après Jésus Christ) et fut enterré à Antinoë. Trois mois plus tard eut lieu le décès d’abba Paul qui fut nterré à côté d’abba Pichoï.",
-            'ثم مضى البار الأنبا بيشوي إلى جبل أنصنا بعد غارة البربر الأولى على برية شيهيت سنة 407م، واستقبله القديس بولا بفرح، لأن ملاك الرب كان قد ظهر له وقال له: "إن جسدك سيكون مع جسد الأنبا بيشوي". وقد تم قول الملاك، إذ تنيَّح الأنبا بيشوي في 7 أبيب 133 للشهداء (417م) ودُفن جسده هناك وبعده بثلاثة شهور تنيَّح القديس الأنبا بولا ووضعوا جسده بجوار جسد الأنبا بيشوي.',
+            "ثم مضى البار الأنبا بيشوي إلى جبل أنصنا بعد غارة البربر الأولى على برية شيهيت سنة 407م، واستقبله القديس بولا بفرح، لأن ملاك الرب كان قد ظهر له وقال له: \"إن جسدك سيكون مع جسد الأنبا بيشوي\". وقد تم قول الملاك، إذ تنيَّح الأنبا بيشوي في 7 أبيب 133 للشهداء (417م) ودُفن جسده هناك وبعده بثلاثة شهور تنيَّح القديس الأنبا بولا ووضعوا جسده بجوار جسد الأنبا بيشوي.",
         ],
         [
             Prefix.synaxarium + "&D=0702",
@@ -2532,7 +2531,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0802",
             "Le gouverneur lui ordonna de se prosterner devant les idoles tantôt en lui faisant de grandes promesses et tantôt en le menaçant. Saint Matra demeura ferme et lui dit : « Je ne me prosternerai que devant le Christ, le créateur du ciel et de la terre. Comment puis-je le quitter et me prosterner devant des idoles faites de pierre et de bois qui ne peuvent ni entendre ni voir ? » Le gouverneur entra dans une grande colère et ordonna qu’on le torture cruellement et, devant sa déterminaton, ordonna qu’on le décapite hors de la ville. Ainsi il obtint la couronne du martyre.",
-            'أمره الوالي بالسجود للأصنام ووعده بوعود عظيمة فلم يقبل منه. ثم هدده وتوعده بالعقاب الشديد فلم يرجع عن رأيه بل قال: "أنا أعبد وأسجد للسيد المسيح خالق السماء والأرض فكيف أتركه وأسجد للأصنام المصنوعة من الحجارة والخشب التي لا تسمع ولا تبصر؟!". فغضب الوالي وأمر بضربه، فضربوه وعلقوه من ذراعيه، ثم حبسوه أياماً في حبس مظلم كريه الرائحة، وبعد ذلك أخرجوه وضربوه ثانية وجرحوه، ولما رآه الوالي ثابتاً على إيمانه بالسيد المسيح له المجد أمر بقطع رأسه خارج المدينة، فنال إكليل الشهادة.',
+            "أمره الوالي بالسجود للأصنام ووعده بوعود عظيمة فلم يقبل منه. ثم هدده وتوعده بالعقاب الشديد فلم يرجع عن رأيه بل قال: \"أنا أعبد وأسجد للسيد المسيح خالق السماء والأرض فكيف أتركه وأسجد للأصنام المصنوعة من الحجارة والخشب التي لا تسمع ولا تبصر؟!\". فغضب الوالي وأمر بضربه، فضربوه وعلقوه من ذراعيه، ثم حبسوه أياماً في حبس مظلم كريه الرائحة، وبعد ذلك أخرجوه وضربوه ثانية وجرحوه، ولما رآه الوالي ثابتاً على إيمانه بالسيد المسيح له المجد أمر بقطع رأسه خارج المدينة، فنال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=0802",
@@ -2567,12 +2566,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0802",
             "Il trouva, une fois un homme malade et rejeté. Il le porta dans un foyer et le prit en charge pendant quatre mois. Après que celui-ci soit guéri, abba Aghathon se rendit au désert en se disant : « Si je pouvais trouver un lépreux à qui donner mon corps pour prendre le sien j’en serai content, car tel est la charité parfaite ». On lui attribue un grand nombre de paroles édifiantes. Il affermissait qu’il ne s’est jamais endormi en étant en colre contre quelqu’un et il disait que même si le coléreux resuscite les mort, il ne sera jamais admis chez Dieu.",
-            'ذات مرة وَجَدَ إنساناً مطروحاً عليلاً فحمله إلى بيت وأقام ينفق عليه أربعة شهور وبعد أن شفي انطلق إلى البرية قائلاً لنفسه: "كنت أشاء لو وجدت رجلاً مجذوماً يأخذ جسدي ويعطيني جسده". كما كان يقول: "ما رقدت قَطّ وأنا غاضب من إنسان". وله عبارته الشهيرة: "وإن أقام الغضوب أمواتاً فما هو مقبول عند الله". وله أيضاً أقوال كثيرة نافعة.',
+            "ذات مرة وَجَدَ إنساناً مطروحاً عليلاً فحمله إلى بيت وأقام ينفق عليه أربعة شهور وبعد أن شفي انطلق إلى البرية قائلاً لنفسه: \"كنت أشاء لو وجدت رجلاً مجذوماً يأخذ جسدي ويعطيني جسده\". كما كان يقول: \"ما رقدت قَطّ وأنا غاضب من إنسان\". وله عبارته الشهيرة: \"وإن أقام الغضوب أمواتاً فما هو مقبول عند الله\". وله أيضاً أقوال كثيرة نافعة.",
         ],
         [
             Prefix.synaxarium + "&D=0802",
             "Lorsqu’il fut sur le point de quitter ce monde, il passa trois ours dans une profonde méditation et il disait à ceux qui l’enouraient : « Par charité, ne me parlez plus, car je suis occupé à retrouver le Christ. Puis il décéda en paix et ils virent son visage lumineux et souriant comme quelqu’un qui retrouve un ami qui lui manquait.",
-            'وعند قرب انطلاق روحه إلى السماء مكث ثلاثة أيام في تأمل عميق وقد قال لمن حوله: "اصنعوا محبة فإني مشغول في تلك الساعة بلقاء المسيح". ثم تنيَّح بسلام وأبصروا وجهه منيراً مبتسماً كمَنْ يستقبل حبيبه المشتاق إليه.',
+            "وعند قرب انطلاق روحه إلى السماء مكث ثلاثة أيام في تأمل عميق وقد قال لمن حوله: \"اصنعوا محبة فإني مشغول في تلك الساعة بلقاء المسيح\". ثم تنيَّح بسلام وأبصروا وجهه منيراً مبتسماً كمَنْ يستقبل حبيبه المشتاق إليه.",
         ],
         [
             Prefix.synaxarium + "&D=0802",
@@ -2656,7 +2655,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1002",
             "Après l’avoir torturé, le gouverneur l’envoya alors à Rassafa (الرصافة), en Syrie (الشام). Il dut faire la route tiré par un cheval auquel il avait été accroché et son sang coulait sur le sol. En chemin ils croisèrent une jeune fille qui leur donna à boire. Cette jeune fill fut peinée par l’état dans lequel se trouvait le saint et elle l’encouragea. Celui-ci lui demanda alors de le rejoindre à Rassafa pour recueillir son corps. Alors elle les suivit.",
-            'وبعد ذلك أمر الوالي أن يُسمَر سرجيوس بالمسامير الطويلة في رجليه. فسمروه وأرسلوه إلى الرصافة إحدى مدن الشام، مربوطاً في ذيول الخيل، وكان دمه يقطر على الأرض، وفي الطريق قابلتهم فتاة فاستقوا منها ماء. ولما رأت هذا القديس في هذه الحالة السيئة حزنت عليه، وأخذت تشجعه، فقال لها: "الحقي بي في الرصافة لتأخذي جسدي". فتبعتهم إلى هناك.',
+            "وبعد ذلك أمر الوالي أن يُسمَر سرجيوس بالمسامير الطويلة في رجليه. فسمروه وأرسلوه إلى الرصافة إحدى مدن الشام، مربوطاً في ذيول الخيل، وكان دمه يقطر على الأرض، وفي الطريق قابلتهم فتاة فاستقوا منها ماء. ولما رأت هذا القديس في هذه الحالة السيئة حزنت عليه، وأخذت تشجعه، فقال لها: \"الحقي بي في الرصافة لتأخذي جسدي\". فتبعتهم إلى هناك.",
         ],
         [
             Prefix.synaxarium + "&D=1002",
@@ -2666,7 +2665,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1002",
             "Il existe dans la vieux Caire une église parmi les plus anciennes qu’on appelle « Abou-Serga » (أبو سرجة). En dessous de l’autel de cette église se trouve une grotte dans laquelle la Sainte Famille a vécu lors de sa fuite en Égypte ?",
-            'وتوجد بمصر القديمة كنيسة شهيرة باسم القديس سرجيوس يطلقون عليها كنيسة "أبو سرجة"، وهي من أقدم الكنائس الأثرية. ويوجد تحت هيكلها مغارة العائلة المقدسة، حيث أقامت فيها العائلة المقدسة مدة من الزمان أثناء هروبها إلى مصر.',
+            "وتوجد بمصر القديمة كنيسة شهيرة باسم القديس سرجيوس يطلقون عليها كنيسة \"أبو سرجة\"، وهي من أقدم الكنائس الأثرية. ويوجد تحت هيكلها مغارة العائلة المقدسة، حيث أقامت فيها العائلة المقدسة مدة من الزمان أثناء هروبها إلى مصر.",
         ],
         [
             Prefix.synaxarium + "&D=1002",
@@ -2745,7 +2744,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1202",
             "Nous comméorons aussi aujourd’hui le martyre de saint Matthieu l’évangéliste (متى الانجيلي) en l’an 70 après Jésus Christ. Il faisait partie des douze apôtres. Le nom « Matthieu » est d’origine hébraïque et signifie le don de Dieu.",
-            'وفيه أيضاً من سنة 70م استشهد القديس متى الإنجيلي أحد الاثنى عشر رسولاً. ومتى من الكلمة العبرية " متاثيا " أي عطية الله.',
+            "وفيه أيضاً من سنة 70م استشهد القديس متى الإنجيلي أحد الاثنى عشر رسولاً. ومتى من الكلمة العبرية \" متاثيا \" أي عطية الله.",
         ],
         [
             Prefix.synaxarium + "&D=1202",
@@ -2795,7 +2794,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1202",
             "Lorsqu'approcha le décès de saint Julien (يوليانوس), le 11ème patriarche, un ange du Seigneur lui apparut dans une vision et l'informa qu'il lui succédera sur le trône patriarcal. L'angelui donna un indice : « Demain, un homme viendra te voir, il aura avec lui une grappe de raisin. C’est lui qui te succédera. » A son réveil, il informa son entourage de ce qu’il avait vu. Le lendemain, saint Démétrios trouva une grappe de raisin qui avait poussé hors saison. Il la porta au patriarche pour obtenir sa bénédiction. A sa vue, saint Julien le prit par le bras et dit à ceux qui étaient présents : « Voici celui qui sera votre patriarche après moi » et il le bénit. Alors ils le gardèrent au patriarcat jusqu’au décès du pape Julien.",
-            'ولما قربت نياحة القديس يوليانوس البابا الحادي عشر، ظهر له ملاك الرب في رؤيا وأعلمه بمن سيكون بعده، وأعطاه علامة بقوله: "غداً سيأتيك رجل ومعه عنقود عنب، هو سيخلفك". ولما انتبه البطريرك من نومه أخبر من حوله بهذه الرؤيا وفي الغد دخل القديس ديمتريوس إلى البابا البطريرك ومعه عنقود عنب في غير أوانه ليقدمه للبابا لينال بركته. فأمسكه البابا من يده وقال للحاضرين "هذا بطريرككم من بعدى". ثم صلى عليه فأمسكوه رغماً عنه وأبقوه في الدار البطريركية إلى أن تنيَّح بسلام البابا يوليانوس فأقاموا القديس ديمتريوس بطريركاً وأكملوا الصلوات عليه.',
+            "ولما قربت نياحة القديس يوليانوس البابا الحادي عشر، ظهر له ملاك الرب في رؤيا وأعلمه بمن سيكون بعده، وأعطاه علامة بقوله: \"غداً سيأتيك رجل ومعه عنقود عنب، هو سيخلفك\". ولما انتبه البطريرك من نومه أخبر من حوله بهذه الرؤيا وفي الغد دخل القديس ديمتريوس إلى البابا البطريرك ومعه عنقود عنب في غير أوانه ليقدمه للبابا لينال بركته. فأمسكه البابا من يده وقال للحاضرين \"هذا بطريرككم من بعدى\". ثم صلى عليه فأمسكوه رغماً عنه وأبقوه في الدار البطريركية إلى أن تنيَّح بسلام البابا يوليانوس فأقاموا القديس ديمتريوس بطريركاً وأكملوا الصلوات عليه.",
         ],
         [
             Prefix.synaxarium + "&D=1202",
@@ -2805,7 +2804,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1202",
             "Dieu a toujours soutenu ce pape en raison de sa pureté. Il lui donna la sagesse qui lui permettait de distinguer ceux qui étaient dignes de la communion et ceux qui en étaient indignes. Ilréprimandait les pécheurs et les incitaient à faire pénitence. En conséquence, certains se rebellèrent et se mirent à murmurer : « Cet homme est marié, comment peut-il nous faire des reproches ? » Le Seigneur voulut alors montrer ses vertus au grand jour. L’ange du Seigneur lui apparut et lui dit : « Ne recherche pas ton salut en laissant les autres demeurer dans le doute et périr ». Puis il lui dit : « Tu dois dévoiler au peuple le secret que tu as avec ta femme afin d’ôter le doute. ».",
-            'وكان الله مع هذا الأب لبتوليته، وأعطاه حكمة حتى كان يميز مَنْ يستحق التناول ومَنْ لا يستحق وكان يبكت الخطاة ويحثهم على التوبة، فتذمر بعضهم وقال: "هذا رجل متزوج فكيف يبكتنا". فأراد الله إظهار بتوليته، فأتاه ملاك الرب قائلاً: "لا تطلب خلاصك وحدك وتترك غيرك في شكه، يجب أن تكشف السر الذي بينك وبين زوجتك للشعب، حتى يزول عنهم الشك".',
+            "وكان الله مع هذا الأب لبتوليته، وأعطاه حكمة حتى كان يميز مَنْ يستحق التناول ومَنْ لا يستحق وكان يبكت الخطاة ويحثهم على التوبة، فتذمر بعضهم وقال: \"هذا رجل متزوج فكيف يبكتنا\". فأراد الله إظهار بتوليته، فأتاه ملاك الرب قائلاً: \"لا تطلب خلاصك وحدك وتترك غيرك في شكه، يجب أن تكشف السر الذي بينك وبين زوجتك للشعب، حتى يزول عنهم الشك\".",
         ],
         [
             Prefix.synaxarium + "&D=1202",
@@ -2847,17 +2846,17 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1302",
             "Zacharie grandit au désert où il reçut une bonne éducation et progressa dans la vertu. Alors certains moines se mirent à se plaindre à cause de sa beauté et de sa prestance. Ils disaient : « Comment un garçon comme celui-ci peut-il être au désert parmi les moines ? ». Lorsque saint Zacharie entendit cela, il alla au lac salé de Natroun (النطرون) et y trempa son corps plusieurs heures ce qui transforma son apparence lui donnant une couleur très foncée et le rendit semblable à un lépreux. Après avoir remit ses vêtements, il revint auprès de son père qui ne le reconnut qu’avec difficulté. Zacharie lui expliqua alors ce qu’il avait fait.",
-            'تربى زكريا في البرية تربية صالحة وتقدم في الفضائل ولكن حدث تذمر بسبب جمال صورته وكانوا يقولون "كيف يكون صبى مثل هذا في البرية بين الرهبان؟". ولما سمع زكريا هذا الكلام، ذهب إلى بحيرة النطرون وخلع ثيابه ونزل إليها وانغمس فيها عدة ساعات، فتحوَّل لون جسده إلى السواد، وصار كالمجذوم، ثم صعد من الماء ولبس ثيابه وأتى إلى أبيه فلم يعرفه إلا بعد أن تفرَّس فيه جيداً. فلما سأله عن الذي غيرَّ منظره أعلمه بما عمل.',
+            "تربى زكريا في البرية تربية صالحة وتقدم في الفضائل ولكن حدث تذمر بسبب جمال صورته وكانوا يقولون \"كيف يكون صبى مثل هذا في البرية بين الرهبان؟\". ولما سمع زكريا هذا الكلام، ذهب إلى بحيرة النطرون وخلع ثيابه ونزل إليها وانغمس فيها عدة ساعات، فتحوَّل لون جسده إلى السواد، وصار كالمجذوم، ثم صعد من الماء ولبس ثيابه وأتى إلى أبيه فلم يعرفه إلا بعد أن تفرَّس فيه جيداً. فلما سأله عن الذي غيرَّ منظره أعلمه بما عمل.",
         ],
         [
             Prefix.synaxarium + "&D=1302",
             "Le dimanche suivant, ils se rendirent ensemble à l’église pour communier aux saints sacrements. Dieu dévoila ce que Zacharie avait fait à saint Isidore (ايسيذورس), le prêtre de Scété. Ce dernier déclara : « Zacharie s’est présenté dimanche dernier en tant qu’être humain mais, à présent, il est devenu un ange. ».",
-            'ولما كان يوم الأحد مضى مع أبيه إلى الكنيسة لحضور القداس والتناول من الأسرار المقدسة، فكشف الله للقديس إيسوذوروس قس الإسقيط ما صنعه القديس زكريا فتعجب وقال للرهبان: "إن زكريا قد تناول في الأحد الماضي كإنسان أما الآن فقد صار ملاكاً".',
+            "ولما كان يوم الأحد مضى مع أبيه إلى الكنيسة لحضور القداس والتناول من الأسرار المقدسة، فكشف الله للقديس إيسوذوروس قس الإسقيط ما صنعه القديس زكريا فتعجب وقال للرهبان: \"إن زكريا قد تناول في الأحد الماضي كإنسان أما الآن فقد صار ملاكاً\".",
         ],
         [
             Prefix.synaxarium + "&D=1302",
             "Saint Zacharie eut de grandes qualités spirituelles spécialement l’humilité dans laquelle il excella. Son père disait : « Moi, j’ai beaucoup souffert dans mon combat mais je n’ai pas atteint le niveau de mon fils. »",
-            'نما هذا القديس في جميع الفضائل خصوصاً الاتضاع حتى قال أبوه: "إني تحملت تعباً كثيراً في الجهاد ولكني لم أصل إلى رتبة ابني زكريا".',
+            "نما هذا القديس في جميع الفضائل خصوصاً الاتضاع حتى قال أبوه: \"إني تحملت تعباً كثيراً في الجهاد ولكني لم أصل إلى رتبة ابني زكريا\".",
         ],
         [
             Prefix.synaxarium + "&D=1302",
@@ -2894,12 +2893,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1402",
             "L’ange du Seigneur lui ordonna de se rendre sur la route de Gaza où il rencontra un eunuque éthiopien haut fonctionnaire de Candace (وزير كنداكة) qui rentrait de Jérusalem. Celui-ci était assis sur son char et lisait un passage du prophète Isaïe où il est écrit : « comme une brebis il a été conduit à l’immolation ; comme un agneau qui se tait devant celui qui le tond, de même il n’ouvre pas la bouche. » L’Esprit Saint dit à Philippe : « Avance et rattrape ce char. » Philippe s’approcha et dit à l’eunuque : « Comprends-tu ce que tu lis ? » L’autre lui répondit : « Et comment le pourrais-je s’il n’y a personne pour me guider ? » Alors Philippe s’assit près de lui et, commençant par ce qu’il lisait, il lui annonça la Bonne Nouvelle de Jésus.",
-            'أمر الملاك القديس فيلبس أن يذهب من أورشليم في طريق غزة فوجد الخصي الحبشي وزير كنداكة عند عودته من أورشليم راكباً مركبته وهو يقرأ في سفر إشعياء النبي "مثل شاة سيق إلى الذبح ومثل خروف صامت أمام الذي يجزه هكذا لم يفتح فاه " ( إش 53: 7)... فقال الروح القدس لفيلبس تقدم ورافق هذه المركبة، فبادر إليه فيلبس وجلس معه في المركبة وسأله "أ لعلك تفهم ما تقرأ ؟" فقال: "كيف يمكنني إن لم يرشدني أحد؟". فابتدأ فيلبس من هذا الكتاب وبشَّره بالرب يسوع.',
+            "أمر الملاك القديس فيلبس أن يذهب من أورشليم في طريق غزة فوجد الخصي الحبشي وزير كنداكة عند عودته من أورشليم راكباً مركبته وهو يقرأ في سفر إشعياء النبي \"مثل شاة سيق إلى الذبح ومثل خروف صامت أمام الذي يجزه هكذا لم يفتح فاه \" ( إش 53: 7)... فقال الروح القدس لفيلبس تقدم ورافق هذه المركبة، فبادر إليه فيلبس وجلس معه في المركبة وسأله \"أ لعلك تفهم ما تقرأ ؟\" فقال: \"كيف يمكنني إن لم يرشدني أحد؟\". فابتدأ فيلبس من هذا الكتاب وبشَّره بالرب يسوع.",
         ],
         [
             Prefix.synaxarium + "&D=1402",
             "« Comme ils continuaient leur chemin, ils arrivèrent à un point 'eau. Et l'eunuque dit : Voici de l'eau ; qu'est-ce qui empêche que je ne soi baptisé ? Philippe dit : Si tu crois de tout ton cœur, cela est possible. L'eunuque répondit : Je crois qu Jésus hris est le Fils de Dieu. Il fit arrêter le char ; Philippe et leunuque descendirent tous deux dans l'eau, et Philippe baptisa l'eunuque. Quand ils furent sortis de l'eau, l'Esprit du Seigneur enleva Philippe, et l'eunuque ne le vit plus. Tandis que, joyeux, il poursuivait sa route, Philippe se trouva dans Azot (أشدود), d'où il alla jusqu'à Césarée (قيصرية), en évangélisant toutes les villes ar lesquelles il passait. »",
-            'وفيما هما سائران أقبلا على ماء فقال الخصي: "هوذا ماء ماذا يمنع أن أعتمد؟" فقال له فيلبس: "إن كنت تؤمن من كل قلبك يجوز". فقال: "أنا أؤمن أن يسوع المسيح هو ابن الله". فأمر أن تقف المركبة فنزلا كلاهما إلى الماء، فيلبس والخصي، فعمده ولما صعدا من الماء خطف روح الرب فيلبس، فلم يبصره الخصي. فذهب في طريقه فرحاً. وأما فيلبس فوُجد في أشدود (أشدود: هي إحدى مدن فلسطين الخمسة الكبرى تبعد عن غزة 24 ميلاً إلى الشمال). وبينما هو مجتاز كان يبشر جميع المدن حتى جاء إلى قيصرية (أع 8: 36 – 40. قيصرية: مدينة كبيرة على شاطىء البحر الأبيض على بعد 36 ميلاً جنوب عكا، بناها هيرودس الكبير وسماها قيصرية إكراماً لأوغسطس قيصر. وهي مسقط رأس فيلبس المبشر).',
+            "وفيما هما سائران أقبلا على ماء فقال الخصي: \"هوذا ماء ماذا يمنع أن أعتمد؟\" فقال له فيلبس: \"إن كنت تؤمن من كل قلبك يجوز\". فقال: \"أنا أؤمن أن يسوع المسيح هو ابن الله\". فأمر أن تقف المركبة فنزلا كلاهما إلى الماء، فيلبس والخصي، فعمده ولما صعدا من الماء خطف روح الرب فيلبس، فلم يبصره الخصي. فذهب في طريقه فرحاً. وأما فيلبس فوُجد في أشدود (أشدود: هي إحدى مدن فلسطين الخمسة الكبرى تبعد عن غزة 24 ميلاً إلى الشمال). وبينما هو مجتاز كان يبشر جميع المدن حتى جاء إلى قيصرية (أع 8: 36 – 40. قيصرية: مدينة كبيرة على شاطىء البحر الأبيض على بعد 36 ميلاً جنوب عكا، بناها هيرودس الكبير وسماها قيصرية إكراماً لأوغسطس قيصر. وهي مسقط رأس فيلبس المبشر).",
         ],
         [
             Prefix.synaxarium + "&D=1402",
@@ -3166,29 +3165,27 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2002",
             "Celui-ci voulut l’éprouver et il lui énuméra toutes les épreuves qu’un moine doit subir. Le jeune homme, plus décidé qu’auparavent, lui répondit : « Ne me renvoie pas, mon père, par amour pour Dieu. Je suis venu pour vivre sous ta tutelle et sous la protection de ta prière. Si tu m’acceptes, je suis confiant que Dieu m’apportera son aide. » Abba Pambo demanda à Dieu de l’éclairer au sujet de ce jeune homme. L’ange duSeigneur lui apparut et lui dit : « Accepte-le car il deviendra un vase élu. » Alors, abba Pambo le fit entrer, lui coupa les cheveux puis le revêtit de l’habit monastique. Par conséquent, le jeune novice entama une vie d’ascèse et de vertus.",
-            'فأراد الشيخ أن يجربه، فأخذ يعدد له متاعب الرهبنة، فكان يزداد تمسكاً ويقول: "لا تردني يا أبى من أجل الله، لأني ' +
-                giaki.AR +
-                ' لأكون تحت طاعتك، وإذا قبلتني فإن الله سيساعدني بصلواتك". سأل الأنبا بموا السيد المسيح أن يكشف له أمر القديس يوحنا. فظهر له ملاك الرب قائلاً: "اقبل هذا الأخ لأنه سيكون إناءً مختاراً". فقبله الأنبا بموا، وقَصَّ شعر رأسه وألبسه ثياب الرهبنة. فابتدأ بنسك عظيم وأعمال فاضلة.',
+            "فأراد الشيخ أن يجربه، فأخذ يعدد له متاعب الرهبنة، فكان يزداد تمسكاً ويقول: \"لا تردني يا أبى من أجل الله، لأني " + giaki.AR + " لأكون تحت طاعتك، وإذا قبلتني فإن الله سيساعدني بصلواتك\". سأل الأنبا بموا السيد المسيح أن يكشف له أمر القديس يوحنا. فظهر له ملاك الرب قائلاً: \"اقبل هذا الأخ لأنه سيكون إناءً مختاراً\". فقبله الأنبا بموا، وقَصَّ شعر رأسه وألبسه ثياب الرهبنة. فابتدأ بنسك عظيم وأعمال فاضلة.",
         ],
         [
             Prefix.synaxarium + "&D=2002",
             "Un jour abba Pambo voulut éprouver son disciple Jean et il le mit à la porte de sa cellule. Chaque jour, lorsqu’abba Pambo sortait, il le frappait avec ue branche de palmier, alors, Jean s’agenouillait en disant : « J’ai péché. » Le septième jour, l’ancien sortit pour se rendre à l’église, il vit alors un ange déposant chacun une couronne sur la tête d’abba Jean. A partir de cet instant il ut pour lui une grande estime.",
-            'وأراد مرة الأنبا بموا أن يجرب تلميذه يوحنا، فطرده من عنده، فأقام سبعة أيام خارج الباب وفي كل يوم كان الأنبا بموا يخرج ويضربه، أما هو فكان يعمل له ميطانية ويقول "أخطأت يا أبى". وفي اليوم السابع خرج الشيخ قاصداً الكنيسة فرأى ملاكاً يضع إكليلاً على رأس الأنبا يحنس، فأحبه وقَبِل سُكناه معه.',
+            "وأراد مرة الأنبا بموا أن يجرب تلميذه يوحنا، فطرده من عنده، فأقام سبعة أيام خارج الباب وفي كل يوم كان الأنبا بموا يخرج ويضربه، أما هو فكان يعمل له ميطانية ويقول \"أخطأت يا أبى\". وفي اليوم السابع خرج الشيخ قاصداً الكنيسة فرأى ملاكاً يضع إكليلاً على رأس الأنبا يحنس، فأحبه وقَبِل سُكناه معه.",
         ],
         [
             Prefix.synaxarium + "&D=2002",
             "Une autre fois, il voulut vérifier sa docilité. Il lui donna une branche desséchée en li demanant e la planteret de l’arroser. Il lui obéit et l’arrosa deux fois par jour malgré la grande distance qu’il devait parcourir pour chercher l’eau. Au bout de trois ans, cette branche devint un arbre et donna du fruit. Abba Pambo en cueillit et en offrit à tous les anciens en leur disant : « Mangez du fruit de l’obéissance. »",
-            'وأراد في مرة أخرى أن يختبر طاعته، فأعطاه عوداً يابساً وأمره أن يغرسه ويسقيه، فأطاعه القديس وصار يسقى العود في كل يوم، وكان الماء بعيداً جداً. وبعد ثلاث سنوات نما العود وصار شجرة مثمرة، فأخذ الأنبا بموا من ثمرها وأعطى للشيوخ قائلاً: "خذوا كلوا من ثمرة الطاعة".',
+            "وأراد في مرة أخرى أن يختبر طاعته، فأعطاه عوداً يابساً وأمره أن يغرسه ويسقيه، فأطاعه القديس وصار يسقى العود في كل يوم، وكان الماء بعيداً جداً. وبعد ثلاث سنوات نما العود وصار شجرة مثمرة، فأخذ الأنبا بموا من ثمرها وأعطى للشيوخ قائلاً: \"خذوا كلوا من ثمرة الطاعة\".",
         ],
         [
             Prefix.synaxarium + "&D=2002",
             "Plus tard, abba Pambo tomba malade durant douze ans pendant lesquels le père Jean était à son service. Juste avant son décès, il réunit les anciens, prit jean par la main et le leur recommanda en disant : « Veillez sur lui car c’est un ange et non un homme. » Puis il recommanda à abba jean de s’installer à l’endroit de l’arbre de l’obéissance et il décéda en paix. Abba Jean s’installa où son maitre spirituel le lui avait recommandé et construisit un grand monastère.",
-            'ولما مرض الأنبا بموا، كان هذا القديس يخدمه مدة اثنتي عشرة سنة، وعند نياحته، أمسك بيده وسلَّمه للشيوخ قائلاً: "احتفظوا بهذا فإنه ملاك وليس إنساناً"، وأوصاه أن يسكن في المكان الذي غرس فيه شجرة الطاعة، ثم تنيَّح الأنبا بموا بسلام.',
+            "ولما مرض الأنبا بموا، كان هذا القديس يخدمه مدة اثنتي عشرة سنة، وعند نياحته، أمسك بيده وسلَّمه للشيوخ قائلاً: \"احتفظوا بهذا فإنه ملاك وليس إنساناً\"، وأوصاه أن يسكن في المكان الذي غرس فيه شجرة الطاعة، ثم تنيَّح الأنبا بموا بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=2002",
             "Lorsque le pape Théophile (البابا ثاؤفيلس) voulut l’élever au rang d’hygoumène, il entendit une voix du ciel qui disait trois fois : « Il est digne. » Chaque fois que saint Jean Colobos donnait la communion aux saints sacrements, il reconnaissait celui qui en était digne de celui qui n’en était pas. Saint Jean était réputé pour son humilité.",
-            'أما الأنبا يحنس فسكن بجوار الشجرة وبنى ديراً عظيماً. وإذ أراد البابا ثاؤفيلس أن يرسمه قمصاً، سمع صوتاً من السماء يقول: "مستحق، مستحق، مستحق". وكان هذا الأب عندما يقدِّس الأسرار يعرف من يستحق التناول ومن لا يستحق. وكان في غاية الاتضاع.',
+            "أما الأنبا يحنس فسكن بجوار الشجرة وبنى ديراً عظيماً. وإذ أراد البابا ثاؤفيلس أن يرسمه قمصاً، سمع صوتاً من السماء يقول: \"مستحق، مستحق، مستحق\". وكان هذا الأب عندما يقدِّس الأسرار يعرف من يستحق التناول ومن لا يستحق. وكان في غاية الاتضاع.",
         ],
         [
             Prefix.synaxarium + "&D=2002",
@@ -3290,7 +3287,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2102",
             "A l’âge de vigt ans, il partit pour le Caire puis alla en haute Égypte où il changea son nom de Freige à Rouweis, qui est le dimintif en arabe du mot tête (رأس) ceci pour intensifier son humlité et le reniement de soi. Il se déplaçait perpétuellement n’ayant pas de maison, parlait peu, jeûnait et veillait beaucoup, ne se nourrissait que d’aliments simples avec parcimonie. Il était assidu à la communion au Saint Sacrement avec une réelle prédisposition spirituelle et rempli de crainte de Dieu. Il disait que pour mériter de communier au Saint Sacrement il faut être pur intérieurement comme le ventre de la sainte Vierge était pur et qu’elle mérita de porter notre Seigneur le Christ.",
-            'ولما بلغ سن العشرين سافر إلى القاهرة ومنها إلى الوجه القبلي، حيث غيَّر اسمه من فريج إلى رويس ( رويس: تصغير كلمة رأس) على اسم جمله الصغير إمعاناً في الاتضاع وإنكار الذات، وكان يتنقل من مكان لآخر ولم يكن له بيت أو مأوى ولا قنية، وكان قليل الكلام، كثير الصوم والسهر، لا يأكل إلا قليلاً من الأطعمة البسيطة، مواظباً على التناول من الأسرار المقدسة باستعداد قلبي كامل، وبخوف ورعدة، وكان يقول "إنه لا يستحق التناول من هذه الأسرار المقدسة إلا من كان جوفه طاهراً نقياً كأحشاء سيدتنا الطاهرة مريم التي استحقت أن تحمل السيد المسيح في أحشائها".',
+            "ولما بلغ سن العشرين سافر إلى القاهرة ومنها إلى الوجه القبلي، حيث غيَّر اسمه من فريج إلى رويس ( رويس: تصغير كلمة رأس) على اسم جمله الصغير إمعاناً في الاتضاع وإنكار الذات، وكان يتنقل من مكان لآخر ولم يكن له بيت أو مأوى ولا قنية، وكان قليل الكلام، كثير الصوم والسهر، لا يأكل إلا قليلاً من الأطعمة البسيطة، مواظباً على التناول من الأسرار المقدسة باستعداد قلبي كامل، وبخوف ورعدة، وكان يقول \"إنه لا يستحق التناول من هذه الأسرار المقدسة إلا من كان جوفه طاهراً نقياً كأحشاء سيدتنا الطاهرة مريم التي استحقت أن تحمل السيد المسيح في أحشائها\".",
         ],
         [
             Prefix.synaxarium + "&D=2102",
@@ -3419,7 +3416,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2302",
             "Après le décès du pape Simon II (سيماؤن الثاني) le cinquante et unième patriarche, les évêques et les fidèles invoquèrent Dieu pour qu'Il leur indique celui qu'Il désirait. Inspirés par Dieu, ils choisirent le père Joseph et ils envoyèrent une délégation au désert pour qu'ils l'amènent. En chmin, les envoyés prièrent Dieu en disant : « Nous t’implorons, si Tu as choisi ce père pour monter sur le rône, fis qe sa porte soit ouverte à notre arrivée en signe de Ton choix. » En arrivant ils le trouvèrent saluant des moines qui le quittaient sur le pas de saporte ouverte. Ils l'attrapèrent et l'emmenèrent à Alexandrie et lui imposèrent les mains comme patriarche le 21 Athor 548 des martyrs (831 après Jésus Christ).",
-            'بعد نياحة البابا سيمون الثاني البطريرك الحادي والخمسون، طلب الأساقفة والشعب إلى الله أن يُعرِّفهم من يختاره فأرشدهم إلى هذا الأب، فأرسلوا وفداً إلى البرية لإحضاره. وفي الطريق صلوا قائلين: "نسألك يارب إن كنت اخترت هذا الأب لهذه الرتبة فلتكن علامة ذلك أننا نجد بابه مفتوحاً عند وصولنا إليه". فلما وصلوا وجدوا بابه مفتوحاً حيث كان يودع بعض زائريه من الرهبان، فأمسكوه وأخذوه إلى الإسكندرية ووضعوا عليه اليد بطريركاً يوم 21 هاتور سنة 548 للشهداء (831م).',
+            "بعد نياحة البابا سيمون الثاني البطريرك الحادي والخمسون، طلب الأساقفة والشعب إلى الله أن يُعرِّفهم من يختاره فأرشدهم إلى هذا الأب، فأرسلوا وفداً إلى البرية لإحضاره. وفي الطريق صلوا قائلين: \"نسألك يارب إن كنت اخترت هذا الأب لهذه الرتبة فلتكن علامة ذلك أننا نجد بابه مفتوحاً عند وصولنا إليه\". فلما وصلوا وجدوا بابه مفتوحاً حيث كان يودع بعض زائريه من الرهبان، فأمسكوه وأخذوه إلى الإسكندرية ووضعوا عليه اليد بطريركاً يوم 21 هاتور سنة 548 للشهداء (831م).",
         ],
         [
             Prefix.synaxarium + "&D=2302",
@@ -3508,7 +3505,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2502",
             "Lorsque son père tomba malade et qu’il sentit approcher son départ de ce monde, il fit venir Abib et lui demada de lui pardonner ses reproches et de prier pour lui afin que Dieu ne le juge pas pour les difficultés qu’il lui a faite subir. Il avoua qu’il se conduisait selon des penchants terrestres tandis qu’Abib ne recherchait que Dieu seul. Puis réunissant ses autres enfants il leur dit qu’ils doivent considérer Abib comme leur père, leur guide, leur conseillant d’avoir une conscience vive comme il le leur dira. Tous furent affectés par ce qui leur était dit et l’éternité se révéla à eux tandis que leur père rendait l’âme.",
-            'اشتد المرض بوالده. ولما حضرته الوفاة، ناداه وقال له: "صلِّ يا بنى إلى الرب لكي لا يحاسبني على ما سببته لك من أحزان ومضايقات. لقد كنت أنت تطلب الله وحده، أما أنا فكنت أسلك بمفاهيم بشرية ". وأمسك بيدي ابنه وبكى، ثم جمع أولاده، وأشار إلى أبيب قائلاً: "من الآن هذا هو أبوكم ومعلمكم. اسلكوا بضمير حي كما يقول لكم". تأثر الأبناء جداً، وتجلَّت الأبدية أمام أعينهم، بينما كان والدهم يسلم الروح.',
+            "اشتد المرض بوالده. ولما حضرته الوفاة، ناداه وقال له: \"صلِّ يا بنى إلى الرب لكي لا يحاسبني على ما سببته لك من أحزان ومضايقات. لقد كنت أنت تطلب الله وحده، أما أنا فكنت أسلك بمفاهيم بشرية \". وأمسك بيدي ابنه وبكى، ثم جمع أولاده، وأشار إلى أبيب قائلاً: \"من الآن هذا هو أبوكم ومعلمكم. اسلكوا بضمير حي كما يقول لكم\". تأثر الأبناء جداً، وتجلَّت الأبدية أمام أعينهم، بينما كان والدهم يسلم الروح.",
         ],
         [
             Prefix.synaxarium + "&D=2502",
@@ -3518,17 +3515,17 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2502",
             "Lorsqu’Abib tomba très malade, Apollo accourut pour le servir. Toutefois Abib s’excusa auprès de lui en lui disant qu’il souhaitait reter seul et qu’il le fera appeler lorsque son heure viendra. Par conséquent, Apollo le quitta en pleurs.",
-            'مرض القديس أبيب بشدة، فأسرع إليه أبوللو ليخدمه، فاعتذر له أبيب قائلاً: "اتركني يا أخي بمفردي مع الرب وعندما تحين ساعتي سأناديك". فذهب من عنده مطيعاً لوصيته وعيناه تفيضان دموعاً.',
+            "مرض القديس أبيب بشدة، فأسرع إليه أبوللو ليخدمه، فاعتذر له أبيب قائلاً: \"اتركني يا أخي بمفردي مع الرب وعندما تحين ساعتي سأناديك\". فذهب من عنده مطيعاً لوصيته وعيناه تفيضان دموعاً.",
         ],
         [
             Prefix.synaxarium + "&D=2502",
             "Lorsqu’apprcha l’heure de son décès, saint Abib fit appeler son ami Apollo. A son arrivée, Abib lui dit : « dépêche-toi, car maintenant nous nous retrouverons au paradis. » Apollo eut juste le temps de l’ebrasser avant qu’il ne décède.",
-            'لما حانت ساعة انطلاق القديس أبيب من هذا العالم، أرسل يستدعى صديقه أبوللو. ولما دخل إلى القلاية سمعه يقول: "أسرع، سنلتقي في الفردوس" ولم يجد أبوللو فرصة إلا ليقبِّله. فانطلقت روحه إلى الفردوس.',
+            "لما حانت ساعة انطلاق القديس أبيب من هذا العالم، أرسل يستدعى صديقه أبوللو. ولما دخل إلى القلاية سمعه يقول: \"أسرع، سنلتقي في الفردوس\" ولم يجد أبوللو فرصة إلا ليقبِّله. فانطلقت روحه إلى الفردوس.",
         ],
         [
             Prefix.synaxarium + "&D=2502",
             "Saint Apollo parlait souvent de son ami Abib. Une fois, lors de la commémoration du décès de son ami, il dit que quiconque prie Dieu par l’intermédiaire de saint Abib, il sera exaucé. Certains doutèrent de ces paroles car Apollo les répétait sans cesse. Ce jour-là, un moine décéda et tous les autres l’entourèrent pour prendre sa bénédiction avant son enterrement. Mais, le moine se leva et lur reprocha leurs doutes puis rendit l’âme. En conséquence ils furent tous remplis par la crainte de Dieu.",
-            'كان القديس أبوللو يذكر صديقه أبيب كثيراً في أقواله. وفي تذكار نياحة القديس أبيب قال أبوللو لبعض تلاميذه: "إن مَنْ يصلى للسيد المسيح طالباً صلوات القديس أبيب يُستجاب له". فتشكك البعض بسبب كثرة كلامه عنه. وفي نفس اليوم تنيَّح أحد الرهبان، فذهب الكل لينالوا بركته قبل دفنه. وفجأة قام الراهب ووبخ المتشككين في كلام القديس أبوللو. ثم تنيَّح بسلام. فامتلأ الكل من مخافة الله.',
+            "كان القديس أبوللو يذكر صديقه أبيب كثيراً في أقواله. وفي تذكار نياحة القديس أبيب قال أبوللو لبعض تلاميذه: \"إن مَنْ يصلى للسيد المسيح طالباً صلوات القديس أبيب يُستجاب له\". فتشكك البعض بسبب كثرة كلامه عنه. وفي نفس اليوم تنيَّح أحد الرهبان، فذهب الكل لينالوا بركته قبل دفنه. وفجأة قام الراهب ووبخ المتشككين في كلام القديس أبوللو. ثم تنيَّح بسلام. فامتلأ الكل من مخافة الله.",
         ],
         [
             Prefix.synaxarium + "&D=2502",
@@ -3602,7 +3599,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2702",
             "Ce saint a atteint un niveau sprituel élevé. En effet il voyait les péchés de son peuple et pleurait chaudement à cause d’eux. Un jour, le christ lui appaut dans le sanctuaire tandis que les anges lui présentaient toutes les actions des fidèles. Alors, il entendit une voix qui disait : « Evêque, ne négliges-pas ton peuple. L’évêque doit enseigner, s’ils l’écoutent c’est pour leur bien, mais s’ils rejettent ses paroles alors que leur sang retombe sur leur tête. »",
-            'نال هذا القديس مرتبة عالية من القداسة فكان يرى خطايا الشعب فيبكي عليها. وقد رأي مرة السيد المسيح في الهيكل، والملائكة يقدمون له أعمال الشعب، وسمع صوتاً يقول له: "لا تغفل يا أسقف عن شعبك، لأنه يجب على الأسقف أن يعظ الشعب، فإن قبلوا فلخيرهم وإلا فدمهم على رؤوسهم".',
+            "نال هذا القديس مرتبة عالية من القداسة فكان يرى خطايا الشعب فيبكي عليها. وقد رأي مرة السيد المسيح في الهيكل، والملائكة يقدمون له أعمال الشعب، وسمع صوتاً يقول له: \"لا تغفل يا أسقف عن شعبك، لأنه يجب على الأسقف أن يعظ الشعب، فإن قبلوا فلخيرهم وإلا فدمهم على رؤوسهم\".",
         ],
         [
             Prefix.synaxarium + "&D=2702",
@@ -3612,12 +3609,12 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2702",
             "Lorsqu’ils arrivèrent à l’endroit où se tenait le concile, les gardes voulurent l’empêcher d’entrer à cause de la pauvreté de ses vêtements mais dès qu’ils apprirent qu’il était évêque il fut admis. Lorsqu’il entra, il entendit ce que disaient les hérétiques et il les dénigra. Après cette session illégale, on présena le Tome de Léon (طومس لاون) au pape Dioscore et à saint Macaire. Par conséquent, le pape rédigea sur ce document l'ex-communion. Saint Macaire fut alors exilé sur l'ile de Gangres(ﻏﺎﻏرﺍ) par l'empereur Marcien (الملك مركيان) en compagnie du patriarche. De là, abba Dioscore l’envoya à Alexandrie avec un commerçant qui était croyant en lui disant : « Une couronne du martyre t’attend là-bas. »",
-            'وفي المجمع لم يَدعْه الجنود يدخل لبساطة ملابسه، ولكن لما عرفوا أنه أسقف سمحوا له، فدخل وعند سماعه لقول المخالفين استنكره. وبعد الجلسة غير القانونية للمجمع، أطلعوا البابا ديوسقوروس والقديس مكاريوس على طومس لاون، فكتب عليه القديس ديوسقوروس عبارات الحرمان، واشترك معه هذا الأب في توقيع الحرمان على هذا المعتقد، فنفاه الملك مركيان مع البطريرك الأنبا ديوسقوروس إلى جزيرة غاغرا، ومنها أرسله البابا ديوسقوروس إلى الإسكندرية بصحبة رجل تاجر مؤمن قائلاً له: "إن لك هناك إكليل شهادة".',
+            "وفي المجمع لم يَدعْه الجنود يدخل لبساطة ملابسه، ولكن لما عرفوا أنه أسقف سمحوا له، فدخل وعند سماعه لقول المخالفين استنكره. وبعد الجلسة غير القانونية للمجمع، أطلعوا البابا ديوسقوروس والقديس مكاريوس على طومس لاون، فكتب عليه القديس ديوسقوروس عبارات الحرمان، واشترك معه هذا الأب في توقيع الحرمان على هذا المعتقد، فنفاه الملك مركيان مع البطريرك الأنبا ديوسقوروس إلى جزيرة غاغرا، ومنها أرسله البابا ديوسقوروس إلى الإسكندرية بصحبة رجل تاجر مؤمن قائلاً له: \"إن لك هناك إكليل شهادة\".",
         ],
         [
             Prefix.synaxarium + "&D=2702",
             "Son arrivée à Alexandrie coïncida avec la venue d’un émissaire de l’empereur qui apportait le Tome de Léon incluant la Foi dans deux natures pour le Christ. L’empereur avait décidé que celui quisera le premier à accepter cette doctrine sera patriarche d’Alexandrie et que celui qui la rejettera devra ête tué. ’émisaire de l’empereur rencontra saint Macaire à Alexandie. Lorsqu’il lui proposa de signer le document l’évêque refusa fermement. Alors l’émissaire lui donna un coup de pied qui le tua sur-le-champ. Ainsi, saint Macaire obtint la couronne du martyre.",
-            'وعندما وصل الإسكندرية اتفق وصول رسول الملك مركيان ومعه طومس لاون الذي يحوى الإيمان بالطبيعتين، وأوصاه الملك قائلاً: "مَنْ يوافق على هذه العقيدة أولاً يصير بطريركاً على الإسكندرية، ومن لا يوافق عليها فيُقتَل". قابل رسول الملك القديس مكاريوس بالإسكندرية ولما عرض عليه طومس لاون رفض التوقيع عليه، فضربه رسول الملك ضربة بقدمه أصابت فيه مقتلاً فتنيَّح في الحال ونال إكليل الشهادة. ',
+            "وعندما وصل الإسكندرية اتفق وصول رسول الملك مركيان ومعه طومس لاون الذي يحوى الإيمان بالطبيعتين، وأوصاه الملك قائلاً: \"مَنْ يوافق على هذه العقيدة أولاً يصير بطريركاً على الإسكندرية، ومن لا يوافق عليها فيُقتَل\". قابل رسول الملك القديس مكاريوس بالإسكندرية ولما عرض عليه طومس لاون رفض التوقيع عليه، فضربه رسول الملك ضربة بقدمه أصابت فيه مقتلاً فتنيَّح في الحال ونال إكليل الشهادة. ",
         ],
         [
             Prefix.synaxarium + "&D=2702",
@@ -3661,7 +3658,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2902",
             "L’Église a établi de célébrer en ce jour les trois fêtes majeurs du Seigner : La fête de l’annonciation (البشارة), la nativité (الميلاد) ainsi que Pâques (القيامة).",
-            'رتَّبت الكنيسة أن تحتفل اليوم بتذكار الثلاثة أعياد السيدية الكبرى: "البشارة والميلاد والقيامة "، ويُصلَّى بالطقس الفرايحى.',
+            "رتَّبت الكنيسة أن تحتفل اليوم بتذكار الثلاثة أعياد السيدية الكبرى: \"البشارة والميلاد والقيامة \"، ويُصلَّى بالطقس الفرايحى.",
         ],
         [
             Prefix.synaxarium + "&D=2902",
@@ -3785,7 +3782,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0103&C=Title",
             "1er Athor\n1) Commémoration de saint Cléopas, un des deux disciples d’Emmaüs;\n2) Martre de saint Cyriaque, évêque de Jérusalem, et de sa mère;\n3) Martyre des saints Maxime, Numitius, Victor et Philippe;\n4) Martyre de sainte Anastasie la grande et de saint Cyrille",
-            " 1 هاتور",
+            "1 هاتور\nاستشهاد القديس كليوباس الرسول أحد تلميذي عمواس\n\nاستشهاد القديس كيرياكوس أسقف أورشليم ووالدته\n\nاستشهاد القديسين مكسيموس ونوميتيوس وبقطر وفيلبس\n\nاستشهاد القديسة أنسطاسية الكبيرة، والقديس كيرلس\n",
         ],
         [
             Prefix.synaxarium + "&D=0103",
@@ -3865,7 +3862,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0103",
             "Pendant ce temps elle demanda à boire. Un homme nommé Cyrille qui était présent lui offrit un peu d’eau. En conséquence il fut arrêté par les soldats qui le décapitèrent. Il obtint ainsi la couronne du martyre. Ceci eut lieu parce qu’il avait appliqué le commandement du Seigneur qui avait dit : « Quiconque donnera à boire à l'un de ces petits rien qu'un verre d'eau fraîche, en tant qu'il est un disciple, en vérité je vous le dis, il ne perdra pas sa récompense. »",
-            'وفي أثناء تعذيبها طلبت قليلاً من الماء لتشرب، وكان يقف رجل اسمه كيرلس، أحضر لها كأس ماء، فشربت. فأمسكه الجند وضربوا عنقه، فنال إكليل الشهادة، بسبب تنفيذه لوصية السيد المسيح: "من سقى أحد هؤلاء الصغار كأس ماء بارد، فقط باسمي، الحق أقول لكم أنه لا يضيع أجره (مت 10: 42)".',
+            "وفي أثناء تعذيبها طلبت قليلاً من الماء لتشرب، وكان يقف رجل اسمه كيرلس، أحضر لها كأس ماء، فشربت. فأمسكه الجند وضربوا عنقه، فنال إكليل الشهادة، بسبب تنفيذه لوصية السيد المسيح: \"من سقى أحد هؤلاء الصغار كأس ماء بارد، فقط باسمي، الحق أقول لكم أنه لا يضيع أجره (مت 10: 42)\".",
         ],
         [
             Prefix.synaxarium + "&D=0103",
@@ -3887,7 +3884,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0203&C=Title",
             "2 Athor\n1) Décès du pape Pierre III, le 27ème patriarche de la prédication de Saint Marc;\n2) Martyre de Saint Macaire, le libyen;\n3) Décès de Saint Ephramios d’Edesse ",
-            " 2 هاتور",
+            " 2 هاتور\nنياحة البابا بطرس الثالث البطريرك السابع والعشرين من بطاركة الكرازة المرقسية\n\nاستشهاد القديس مقار الليـبي\n\nنياحة القديس أفراميوس الرهاوى\n",
         ],
         [
             Prefix.synaxarium + "&D=0203",
@@ -3974,7 +3971,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0303&C=Title",
             "3 Athor\n1) Martyre de Saint Athanase et sa sœur Irène;\n2) Martyre de Saint Agathon\n3) Décès de Saint Cyriaque de Corinthe ",
-            " 3 هاتور",
+            " 3 هاتور\nاستشهاد القديس أثناسيوس وأخته إيرينى\n\nاستشهاد القديس أغاثون\n\nنياحة القديس كيرياكوس من أهل كورنثوس\n",
         ],
         [
             Prefix.synaxarium + "&D=0303",
@@ -4046,704 +4043,974 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0403&C=Title",
             "4 Athor\n1) Martyre des saints Jean et Jacques, les évêques de Perse;\n2) Martyr de Saint Thomas, l’évêque;\n3) Martyre des Saints Epimaque et Gordien ",
-            " 4 هاتور",
+            " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\n\nاستشهاد الأنبا توماس الأسقف\n\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n",
         ],
         [
             Prefix.synaxarium + "&D=0403",
-            "Nous commémorons aujourd’hui le martyre de saint Jean (يوحنا) et saint Jacques (يعقوب) qui étaient évêques de Perse à l’époque de Shapur II (سابور) au cours du 3ème siècle après Jésus Christ. En effet, ce dernier leur demanda dadorer le soleil et le feu mais les deux évêques refusèrent e lui obéir. Au contraire, ils ne cessèrent jamais d’enseigner les fidèles et de les enraciner dans la Foi en Jésus Christ. Constatant cela, l’empereur ordonna qu’ils soient persécutés cruellement mais, malgré cela, ils ne se détournèrent pas de leur Foi et continuèrent à enseigner leurs fidèles. Finalement, l’empereur ordonna qu’ils soient jetés dans la fournaise, alrs, ils obtinrent la couronne du martyre avec un grand groupe de saints.",
-            "",
+            "Nous commémorons aujourd’hui le martyre de saint Jean (يوحنا) et saint Jacques (يعقوب) qui étaient évêques de Perse à l’époque de Shapur II (سابور) au cours du 3ème siècle après Jésus Christ.",
+            "في مثل هذا اليوم استشهد القديسان يوحنا ويعقوب أسقفا بلاد فارس في عهد سابور ملك الفرس، في القرن الثالث المسيحي.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0403",
+            "En effet, ce dernier leur demanda dadorer le soleil et le feu mais les deux évêques refusèrent e lui obéir. Au contraire, ils ne cessèrent jamais d’enseigner les fidèles et de les enraciner dans la Foi en Jésus Christ. Constatant cela, l’empereur ordonna qu’ils soient persécutés cruellement mais, malgré cela, ils ne se détournèrent pas de leur Foi et continuèrent à enseigner leurs fidèles.",
+            "طلبهما الملك للسجود للشمس والنار، فلم يطاوعاه، وكانا يُعلِّمان الشعب الثبات على الإيمان بالسيد المسيح، فأمر بتعذيبهما، فلم ينثنيا عن الإيمان، ولم يتراخيا عن تعليم الشعب.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0403",
+            "Finalement, l’empereur ordonna qu’ils soient jetés dans la fournaise, alrs, ils obtinrent la couronne du martyre avec un grand groupe de saints.",
+            "وأخيراً أمر الملك بطرحهما في النار، فنالا إكليل الشهادة هما وجماعة كثيرة من القديسين.",
         ],
         [
             Prefix.synaxarium + "&D=0403",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتهم فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0403",
-            "Nous commémorons aussi en ce jour le martyr de saint Thomas (توماس) qui fut évêque de Damas en Syrie. Celui-ci eut une controverse avec un savant arabe à qui il démontra la justesse de la Foi chrétienne. Ce savant le dénonça auprès du gouverneur en portant contre lui des accusations mensongères. Celui-ci convoqua le saint qui prouva la justesse de sa position et de sa Foi. Toutefois, le gouverneur ordonna qu’il soit décapité et il obtint la couronne du martyre.",
-            "",
+            "Nous commémorons aussi en ce jour le martyr de saint Thomas (توماس) qui fut évêque de Damas en Syrie.",
+            "وفيه أيضاً استشهد القديس الأنبا توماس أسقف مدينة دمشق بالشام.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0403",
+            "Celui-ci eut une controverse avec un savant arabe à qui il démontra la justesse de la Foi chrétienne. Ce savant le dénonça auprès du gouverneur en portant contre lui des accusations mensongères. Celui-ci convoqua le saint qui prouva la justesse de sa position et de sa Foi. Toutefois, le gouverneur ordonna qu’il soit décapité et il obtint la couronne du martyre.",
+            "جادل هذا القديس أحد علماء العرب، وبيَّن له صحة الإيمان المسيحي، فشكاه العالِم إلى الوالي وادَّعى عليه بتُهم باطلة، فأحضره الوالي، فأثبت هذا القديس سلامة موقفه وصحة إيمانه، فأمر بقطع رأسه ونال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=0403",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0403",
-            "Nous commémorons aussi aujourd’hui le martyre des saints Epimaque (أبيماخس) et Gordien (عزاريانوس). Ces deux saints naquirent à Rome au milieu du 3ème siècle après Jésus Christ et reçurent une éducation chrétienne. Ils furent dénoncés auprès du gouverneur nommé par Maximien (مكسميانوس) comme étant chrétiens. Celui-ci les convoqua et les interrogea à propos de leur Foi. Ils affirmèrent être chrétiens et lui reprochèrent d’abandonner l’adoration de Dieu qui a créé le ciel et la terre pour adorer des idoles faites de mains d’hommes. Celles-ci e voient ni n’entendent mais sont habités par Satan qui, par leur intermédiaire, égare les gens. Le gouvernur fut urprs par leurs déclarations et ordonna qu’ils soient décapités. Ils obtinrent ainsi la couronne du martyre.",
-            "",
+            "Nous commémorons aussi aujourd’hui le martyre des saints Epimaque (أبيماخس) et Gordien (عزاريانوس).",
+            "وفيه أيضاً استشهد القديسان أبيماخوس وعزاريانوس. ",
+        ],
+        [
+            Prefix.synaxarium + "&D=0403",
+            "Ces deux saints naquirent à Rome au milieu du 3ème siècle après Jésus Christ et reçurent une éducation chrétienne. Ils furent dénoncés auprès du gouverneur nommé par Maximien (مكسميانوس) comme étant chrétiens. Celui-ci les convoqua et les interrogea à propos de leur Foi. Ils affirmèrent être chrétiens et lui reprochèrent d’abandonner l’adoration de Dieu qui a créé le ciel et la terre pour adorer des idoles faites de mains d’hommes. Celles-ci ne voient ni n’entendent mais sont habités par Satan qui, par leur intermédiaire, égare les gens.",
+            "وُلِدَ هذان القديسان في مدينة روما في منتصف القرن الثالث المسيحي، وتربيَّا تربية مسيحية. فسعى بهما بعض الأشرار لدى الوالي المعيَّن من قبل مكسيميانوس الملك، أنهما مسيحيان، فأحضرهما الوالي وسألهما عن معتقدهما فأقرَّا بأنهما مسيحيان، ووبخاه على تركه عبادة الإله الحيّ الذي خلق السماء والأرض وعبد الأوثان المصنوعة بالأيدي التي لا تنطق ولا تبصر وسكن فيها الشيطان وأضلَّ الناس.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0403",
+            "Le gouverneur fût surpris par leurs déclarations et ordonna qu’ils soient décapités. Ils obtinrent ainsi la couronne du martyre.",
+            "فاندهش الوالي من شجاعتهما وأمر بقطع رأسيهما فنالا إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=0403",
             "Que la bénédiction de ses prières soitavec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواتهما فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=0503&C=Title",
             " 5 Athor\n1) Apparition de la tête de Saint Longin, le soldat. Martyre de saint Timothée;\n2)  Transfert des reliques de Saint Théodore à Choteb;\n3) Décès de Saint Joseph au mont Chamah",
-            " 5 هاتور",
+            " 5 هاتور\nظهور رأس القديس لُونجينوس الجُندي\n\nاستشهاد القديس تيموثاوس وزوجته مورا\n\nنقل جسد الأمير تادرس الشُطبى إلى بلدة شُطب\n\nنياحة القديس يوساب بجبل شامة\n",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Nous commémorons aujourd’hui l’apparition de la tête de saint Longin (القديس لونجينوس), le soldat qui transperça le côté du sauveur avec sa lance, alors qu’Il était crucifié. Ce saint vit tous les prodiges qui se réalisèrent suite à la crucifixion et le Sauveur lui envoya saint Pierre qui lui enseigna les bases de la Foi chrétienne. Il crut et se fit baptiser puis il quitta l’armée et enseigna l’Évangile du Salut en Cappadoce. Les juifs s’emportèrent contre lui et corrompirent Ponce Pilate. Celui-ci le dénonça auprès de l’empereur Tibère (طيباريوس قيصر) qui lui donna l’ordre de le décapiter. Ensuite, il envoya un soldat en Cappadoce qui lui tranca la tête et la ramena à Jérusalem et la remit à Ponce Pilat. Celui-ci l’exposa devant les juifs puis l’enterra dans un terrain vague hors de la ville.",
-            "",
+            "تحتفل الكنيسة في هذا اليوم بتذكار ظهور رأس القديس لُونجينوس الجُندي، الذي طعن جنب المخلص بالحربة وهو على الصليب، ولما رأي ما حدث عند الصليب من عجائب تخشَّعَ قلبه، وبعد القيامة أرسل له المخلص بطرس الرسول فعلَّمه حقائق الإيمان المسيحي فآمن واعتمد وترك الجُندية وذهب إلى بلاد كبادوكية وبشَّر فيها بإنجيل الخلاص، فحنق عليه اليهود وقدموا رشوة لبيلاطس البنطى، فوشى به عند طيباريوس قيصر وحصل منه على أمر بقطع رأسه. ثم أرسل جندياً إلى كبادوكية قطع رأس القديس لُونجينوس وأحضرها إلى بيلاطس في أورشليم، فأراها لليهود وسَرَّهم ذلك. ثم دُفن الرأس بأحد الأكوام خارج أورشليم.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Or, il y avait là une femme aveugle qui avait embrassé la Foi grâce à l’enseignement de ce saint Longin. Elle prit son fils et ils partirent à Jérusalem pour prendre la bénédiction du saint sépulcre. En arrivant à Jérusalem, son fils mourut. Elle fut alors submergée par un grand chagrin. Une nuit, saint Longin lui apparut en songe tenant son fils par la main, lui indiqua où e trouvait sa tête et lui demanda de la ramener avec elle.",
-            "",
+            "أصيبت امرأة من الكبادوك بالعمى كانت قد آمنت بالسيد المسيح على يد القديس لُونجينوس فأخذت ابنها وقصدت أورشليم لتتبارك من قبر المخلص، وعند وصولها أورشليم مات ولدها، فأفرطت في الحزن وبينما هي نائمة في إحدى الليالي، رأت في رؤيا القديس لُونجينوس ومعه ابنها، وأرشدها إلى المكان الذي فيه رأسه وأمرها أن تحمله من هناك.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
-            "Ason réveil, elle fut réjouie et consolée par cette vision. Elle se mit à la recherche de cet endroit, creusa la terre et il en émana une odeur d’encens. Lorsqu’elle parvint à la tête du saint, une grande lumière en sortit et la vue lui revint à l’instant. Elle glorifia le Christ, notre Seigneur, embrassa la tête, l’embauma, la déposa avec le corps de son fils et rentra dans son pays.",
-            "",
+            "A son réveil, elle fut réjouie et consolée par cette vision. Elle se mit à la recherche de cet endroit, creusa la terre et il en émana une odeur d’encens. Lorsqu’elle parvint à la tête du saint, une grande lumière en sortit et la vue lui revint à l’instant. Elle glorifia le Christ, notre Seigneur, embrassa la tête, l’embauma, la déposa avec le corps de son fils et rentra dans son pays.",
+            "فلما انتبهت فرحت وتعزت وسألت عن المكان الذي أعلمها به القديس، وحفرت في الأرض فخرجت رائحة بخور زكية، ولما وصلت إلى الرأس لمع منها نور فانفتحت عيناها وأبصرت في الحال، ومجَّدت السيد المسيح، وقبّلت الرأس وطيبته ووضعته مع جسد ابنها وعادت بهما إلى بلادها.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Que la bénédiction des prières de saint Longin soit avec nous. Amen !",
-            "",
+            "بركة صلوات القديس لُونجينوس فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Nous commémorons aussi le martyre de saint Timothée (القديس تيموثاوس). Ce saint était un diacre dans un village proche d’Antinoë (أنصنا) et il était marié à une jeune femme nommée Mora (مورا).",
-            "",
+            "وفيه أيضاً تُعيِّد الكنيسة بتذكار استشهاد القديس تيموثاوس. كان تيموثاوس شماساً بكنيسة قرية صغيرة بإقليم أنصنا متزوجاً بشابة اسمها مورا.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
-            "Dès que l’empereur Dioclétien (دقلديانوس) décréta la persécution des chrétiens, l’incinération de leurs livres et les obliea à adorer les idoles, il fut convoquer par Arien (أريانوس) le gouverneur d’Antinoë qui lui ordonna d’apprter tos le livres de ’église pour les brûler selon l’ordre qu’il avait reçu. Il lui demanda aussi d’encenser les idoles. Mais Timothée refusa et lui dit : « Est-il concevable qu’un père remette ses enfants à un ennemi ? » Ceci mit le gouverneur en colère et il ordonna à ses soldats de le torturer ceci eut pour résultat de lui faire perdre la vue et l’ouïe. Il lui proposa à nouveau d’encenser les idoles mais Timothée lui répondit : « Il ne sert à rien d’insister puisque les tortures n’ont aucun effet sur moi car mon maitre le Christ soulage mes douleurs. » Alors le gouverneur poursuivit ses tortures puis fit venir Mora, la jeune épouse, pour l’amadouer. Mais le saint lui rappela les paroles de l’Évangile et lui parla de la vie éternelle ainsi que de la couronne du martyre. Alors elle alla retrouver Arien et lui confessa a Foi chrétienne et proclama qu’elle préférait mourir martyre avec son mari plutôt que de vivre en adorant les idoles. En conséquence, le gouverneur la fit torturer mais elle demeura ferme dans sa Foi.",
-            "",
+            "Dès que l’empereur Dioclétien (دقلديانوس) décréta la persécution des chrétiens, l’incinération de leurs livres et les obliea à adorer les idoles, il fut convoquer par Arien (أريانوس) le gouverneur d’Antinoë qui lui ordonna d’apprter tos le livres de ’église pour les brûler selon l’ordre qu’il avait reçu.",
+            "صدرت أوامر الإمبراطور دقلديانوس باضطهاد المسيحيين وحرق كتبهم وإجبارهم على عبادة الأوثان. استدعى إريانوس والي أنصنا الشماس تيموثاوس وأمره أن يحضر له كتب الكنيسة لكي يحرقها كما أمره أن يبخر للأوثان. رفض الشماس تيموثاوس وقال للوالي: \"هل يمكن أن يسلِّم أب أولاده بنفسه لعدو مهلك؟\". فغضب الوالي وأمر جنوده بتعذيب تيموثاوس فوضعوا أسياخ حديد في أذنيه حتى انتفخ وجهه وفقد السمع والبصر معاً.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0503",
+            "Il lui demanda aussi d’encenser les idoles. Mais Timothée refusa et lui dit : « Est-il concevable qu’un père remette ses enfants à un ennemi ? » Ceci mit le gouverneur en colère et il ordonna à ses soldats de le torturer ceci eut pour résultat de lui faire perdre la vue et l’ouïe. Il lui proposa à nouveau d’encenser les idoles mais Timothée lui répondit : « Il ne sert à rien d’insister puisque les tortures n’ont aucun effet sur moi car mon maitre le Christ soulage mes douleurs. » Alors le gouverneur poursuivit ses tortures puis fit venir Mora, la jeune épouse, pour l’amadouer. Mais le saint lui rappela les paroles de l’Évangile et lui parla de la vie éternelle ainsi que de la couronne du martyre. Alors elle alla retrouver Arien et lui confessa a Foi chrétienne et proclama qu’elle préférait mourir martyre avec son mari plutôt que de vivre en adorant les idoles. En conséquence, le gouverneur la fit torturer mais elle demeura ferme dans sa Foi.",
+            "ثم قال إريانوس: \"بخِّر للأوثان وأنا أكف عن تعذيبك\". أجابه تيموثاوس: \"لا فائدة من الإلحاح فأنا لا أحس بالتعذيب لأن سيدي يسوع المسيح يخفف ألمي\". علَّقه إريانوس منكس الرأس على عمود، ثم استدعى عروسه الشابة مورا لكي تستعطفه لعله يلين ويبخر للأوثان، ولكنه وعظها بكلام الإنجيل وكلمها عن الحياة الأبدية وإكليل الاستشهاد فذهبت لإريانوس وأعلنت مسيحيتها وأنها تُفضِّل الاستشهاد مع زوجها على الحياة في عبادة الأوثان، فبدأ الوالي يعذبها بسلسلة رهيبة من العذابات وهي صامدة صابرة.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Après cela, Arien fit crucifier le diacre et son épouse face à face. Ils s’entendirent de rester éveillé pour que le Seigneur ne les trouve pas endormis. Ils demeurèrent plusieurs jours sur la croix puis rendirent leurs âmes entre les mins du Seigneur qu’ils avaient tant aimé et ils obtinrent la couronne du martyre.",
-            "",
+            "بعد ذلك أمر الوالي بصلب تيموثاوس الشماس النقي وزوجته مورا متقابلين، فاتفقا ألا ينعسا على الصليب لئلا يأتي الرب فيجدهما نياماً. ظلا مصلوبين عدة أيام ثم استودعا روحيهما في يدي الله الذي أحباه ونالا إكليل الاستشهاد.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Que la bénédiction de leurs prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتهما فلتكن معنا. آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Nous commémorons aussi en ce jour le transfert des reliques du prince Théodore de Choteb (الأمير تادرس الشُطبي). Ces reliques se trouvaient dans la province d’Achaïe (أخائية) et furent ramenés vers le village de Choteb (شُطب) proche d’Assiout en hate Égypte.",
-            "",
+            "وفيه أيضاً تم نقل جسد الأمير تادرس الشُطبى ( نجد خبر استشهاد الأمير تادرس تحت يوم 20 أبيب) من مقاطعة أخائيّة إلى بلدة شُطب بأسيوط.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "En effet, après la fin des persécutions, ce saint martyr appaut à un prêtre et lui demanda de ramener sa dépouille à Choteb, le village de son père en haute Égypte. Ce prêtre se rendit donc auprès du gouverneur d’Achaïe où le saint était enterré et l’informade cela mais le celui-ci rejeta la demande. Or, le fils de ce gouverneur était sourd-muet. Tout d’un coup il s’écria qu’il fallait transférer les reliques de saint Théodore dans son village en Égypte. Tout le monde fut surpris que le sourd-muet se mette à parler. En conséquence, le gouverneur donna son accord pour le transfert des reliques car la puissance divine avait guéri son fils suite aux prières de saint Théodore.",
-            "",
+            "فقد حدث بعد أن انتهي عصر الاضطهاد، أن ظهر هذا القديس لأحد الكهنة وأمره أن ينقل جسده إلى بلد أبيه شُطب. فذهب هذا الكاهن إلى والي مقاطعة أخائية التي كان جسد القديس مدفوناً فيها وأخبره بضرورة نقل جسد القديس إلى شُطب بصعيد مصر، فرفض الوالي وكان له ابن في الخامسة والعشرين من عمره أصم وأبكم وكان حاضراً هذه المناقشة فصاح قائلاً: \"هيا برفات القديس تادرس إلى موطنه بمصر\"، فاندهش الجميع لنطق هذا الشاب الأبكم ومجّدوا الله الذي شفاه بصلاة الأمير تادرس، وهنا قال الوالي: \"لقد شُفي ابني بقوة الله وبصلاة الأمير تادرس. اذهبوا وانقلوا جسده الطاهر إلى مصر\".",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Alors, ils prirent la dépouille du saint et la déposèrent sur un navire qui arriva à Alexandrie le 5 Athor puis le portèrent à Choteb. Une église y fut construite et on y déposa les reliques après que cette église ait été consacrée par l’évêque. On y constata un grand nombre de miracles dont des guérisons et des exorcismes.",
-            "",
+            "فتم نقل الجسد في احتفال مهيب ووضعوه في سفينة وصلَت إلى مدينة الإسكندرية في الخامس من هاتور. ثم نقلوه إلى شُطب وبنوا له كنيسة، دشنها أسقف مدينة شُطب ووضع الجسد فيها بفرح وتهليل. وقد ظهرت منه عجائب كثيرة منها شفاء الأمراض وإخراج الشياطين.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Nous commémorons aussi en ce jour le décès de saint Joseph (القديس يوساب) le disciple d’abba Elie (أنبا إلياس) au mont Chamah (جبل شامة). Il était le fils d’un notable de Qift (Coptos – قِفط). Son père décéda alors qu’il était encore jeune alors sa mère l’éduqua en lui inculquant la Foi chrétienne. Lorsqu’elle décéda à son tour, son grand frère en prit soin.",
-            "",
+            "وفيه أيضاً تنيَّح القديس يوساب تلميذ الأنبا إلياس بجبل شامة (شامة: جبل بجوار أرمنت). كان هذا القديس من أبناء أشراف قفط (قفط: مدينة قديمة جداً بمحافظة قنا)، توفي والده وهو صغير واهتمت به أمه وأرضعته الإيمان ولكن سرعان ما تنيَّحت هي الأخرى فاهتم به أخوه الأكبر.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Il y avait dans la montagne proche de Qift un saint homme nommé Elie (إلياس) qui fut émerveill par le jeune Joseph. Il pria pour celui-ci en souhaitant que le Seigneur lui accorde un cœur entièrement consacré à l’adoration. Un jour, Joseph tomba gravement malade et les médecins désespérèrent de le soigner. Alors, on l’amena auprès d’abba Elie qui pria pour lui et le jeune homme guérit au nom de notre Seigneur Jéss Christ. Par la suite il resta près du saint homme, devint so disciple et suivit son exemple en toute chose plus particulièrement pour l’adoration et l’ascétisme. Son maitre l’aima à cause de la grâce divine qui émanait de lui.",
-            "",
+            "كان يُقيم بالجبل المجاور لقفط قديس يسمى إلياس، أُعجب بالشاب يوساب وصلى من أجله مشتاقاً أن يهبه الرب قلباً مكرساً بالتمام. مَرِضَ يوساب مرضاً شديداً احتار فيه الأطباء، فاحضروه إلى القديس إلياس الذي صلى لأجله فشُفي في الحال باسم ربنا يسوع المسيح. فالتصق يوساب بالقديس إلياس وتتلمذ على يديه، وكان يتمثل به في كل شيء خاصة في العبادة والنسك، فأحبه معلمه من أجل نعمة الله التي تجلَّت في حياته.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Plus tard Joseph tomba malade et s’endormit dans le Seigneur. Lorsqu’ils le mirent en terre Eli leur demanda d’élargir la tombe pour qu’elle puisse contenir deux personnes. Ils comprirent que son départ de ce monde était proche. En effet, il tomba malade et décéda en paix.",
-            "",
+            "مَرِضِ القديس يوساب ورقد في الرب، فتأثر معلمه تأثراً كبيراً وقال للذين يدفنونه، أوسعوا القبر ليسع لاثنين، فأدركوا أن حياة القديس إلياس قد قربت من الانتهاء. وفعلاً مرض بعد قليل وتنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=0503",
             "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلاتهما فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=0603&C=Title",
             "6 Athor\n1) Consécration de l'église de la Sainte Vierge au monastère al-Moharrak, au mont Kosquâm;\n2) Décès de Saint Félix, pape de Rome",
-            " 6 هاتور",
+            " 6 هاتور\nتذكار تكريس كنيسة القديسة العذراء – الأثرية – بدير المحرق العامر بجبل قسقام\nنياحة القديس فيلكس بابا رومية",
         ],
         [
             Prefix.synaxarium + "&D=0603",
             "Nous commémorons aujourd’hui la consécration de l'église de la sainte Vierge au monastère al-Moharrak (دير المحرق) situé au mont Kosquâm (جبل قسقام). Cette église fut bénie par le Christ lui-même lors de la fuite la sainte famille en Égypte. Ils vécurent six mois en ce lieu et l’autel de cette église et constitué de la pierre sur laquelle notre Seigneur s’asseyait.",
-            "",
+            "في هذا اليوم تُعيِّد الكنيسة بتذكار تكريس كنيسة القديسة العذراء الأثرية بدير المحرق العامر بجبل قسقام، وهي الكنيسة التي باركها السيد المسيح وهو صبى مع والدته عند هروبه من وجه هيرودس، وسكنت فيها العائلة المقدسة مدة ستة أشهر وعدة أيام، ومذبحها هو حَجر المغارة الذي جلس عليه الرب يسوع.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
-            "Ce monastère fut onstruit dans la seconde moitié du quatrième siècle par les fils spirituels de saint Pacôme le père des cénobites (أنبا باخوميوس أب الشركة) en choisissant cette parcelle de terrain qui entoure cette église historique. Le pape Théophile (ثاؤفيلس), le 23ème patriarche d’Alexandrie, voulut consacrer cette église mais, la veille du our prévu pour la consécration, la sainte Vierge lui apparutet lui dit : « Comment peux-tu consacré ce lieu après qu’il l’a été par mon Fils ? »",
-            "",
+            "Ce monastère fut onstruit dans la seconde moitié du quatrième siècle par les fils spirituels de saint Pacôme le père des cénobites (أنبا باخوميوس أب الشركة) en choisissant cette parcelle de terrain qui entoure cette église historique. ",
+            "وقد بنى هذا الدير أبناء القديس الأنبا باخوميوس أب الشركة، في النصف الثاني من القرن الرابع، واختاروا هذه البقعة لتكون ديراً يحيط بتلك الكنيسة الأثرية ذات التاريخ المقدس. ",
         ],
         [
             Prefix.synaxarium + "&D=0603",
-            "Il se contenta alors de célébrer la divine liturgie. Pendant la prière le Christ lui apparut accompagné de sa mère et d’un groupe d’ange et il bénit l’église et ceux qui y étaient assemblés.",
-            "",
+            "Le pape Théophile (ثاؤفيلس), le 23ème patriarche d’Alexandrie, voulut consacrer cette église mais, la veille du our prévu pour la consécration, la sainte Vierge lui apparutet lui dit : « Comment peux-tu consacré ce lieu après qu’il l’a été par mon Fils ? » Il se contenta alors de célébrer la divine liturgie. Pendant la prière le Christ lui apparut accompagné de sa mère et d’un groupe d’ange et il bénit l’église et ceux qui y étaient assemblés.",
+            "وقد جاء البابا ثاؤفيلوس البطريرك الثالث والعشرون لزيارة ذلك المكان المقدس وأراد أن يكرس الكنيسة، فظهرت له القديسة العذراء ليلة التكريس (ميمر البابا ثاؤفيلوس البطريرك الثالث والعشرين) وقالت له: \"كيف تُكرس هذا المكان الذي كرَّسَه ابني!\"، فاكتفي بإقامة القداس الإلهي. وأثناء الصلاة تراءى له الرب يسوع المسيح ومعه أمه العذراء مريم وملائكته القديسون وباركوا البيعة ومَنْ فيها.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
             "Que l’intercession de la sainte Vierge Marie soit avec nous. Amen !",
-            "",
+            "شفاعة القديسة العذراء مريم فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
-            "Nous commémorons ausi aujourd'hui le décès en 274 après Jésus Christ de saint Félix (فيلكس), le pape de Rome. Ce saint naquit à Rome de parents chrétiens en l'an 210 de parents chrétiens qui lui donnèrent une bonne éducation religieuse et profane. Il évolua dans le clergé. Il fut ordonné diacre par le pape Etienne 1er (أسطاسيوس)puis prêtre par Sixte II (يسطس).",
-            "",
+            "Nous commémorons ausi aujourd'hui le décès en 274 après Jésus Christ de saint Félix (فيلكس), le pape de Rome.",
+            "وفيه أيضاً من سنة 274م تنيَّح القديس فيلكس بابا رومية.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
-            "Lorsque le pape Denys (ديوناسيوس) décéda à l'époque du pape Théonas (ثاؤناس) d'Alexandrie, ce saint fut choisi pour lui succéder et il prit soin du troupeau du Christ de la meilleure des façons. A l'époque de l'empereur Aurélien (أوريليانوس), les chrétiens eurent à subir des persécutions et un grand ombre d'entre eux mourut martyr. Le pape Félix dût supporter de grandes difficultés et fut mis en prison. Il s'adressa à Dieu avec ferveur pour l'implorer de délivrer son peuple et de ne pas voir les chrétiens se faire torturer.",
-            "",
+            "Ce saint naquit à Rome de parents chrétiens en l'an 210 de parents chrétiens qui lui donnèrent une bonne éducation religieuse et profane. Il évolua dans le clergé. Il fut ordonné diacre par le pape Etienne 1er (أسطاسيوس)puis prêtre par Sixte II (يسطس).",
+            "وُلِدَ هذا القديس من أبوين مسيحيين بمدينة رومية سنة 210 م، فربياه على الآداب المسيحية والعلوم العالمية. تدرج في الرتب الكهنوتية فرسمه القديس أسطاسيوس بابا رومية شماساً، ورسمه القديس البابا يسطس قساً",
+        ],
+        [
+            Prefix.synaxarium + "&D=0603",
+            "Lorsque le pape Denys (ديوناسيوس) décéda à l'époque du pape Théonas (ثاؤناس) d'Alexandrie, ce saint fut choisi pour lui succéder et il prit soin du troupeau du Christ de la meilleure des façons.",
+            "ولما تنيَّح القديس البابا ديونيسيوس بابا رومية الذي كان معاصراً للقديس البابا ثاؤناس الإسكندري، اُختير هذا الأب لبطريركية رومية، فرعى رعية المسيح أحسن رعاية.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0603",
+            "A l'époque de l'empereur Aurélien (أوريليانوس), les chrétiens eurent à subir des persécutions et un grand ombre d'entre eux mourut martyr. Le pape Félix dût supporter de grandes difficultés et fut mis en prison. Il s'adressa à Dieu avec ferveur pour l'implorer de délivrer son peuple et de ne pas voir les chrétiens se faire torturer.",
+            "ولما ملك الإمبراطور أوريليانوس أثار الاضطهاد على المسيحيين وعذَّبهم بعذابات شديدة، فاستشهد كثيرون.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
             "Il décéda en prison après avoir siégé sur le sièe apostolique cinq ans et demi. Il léga un grand nombre d'écrits comprenant des sermons, des enseignements prcieux e desexplication de la Foi.",
-            "",
+            "وقد نال منه هذا الأب شدائد كثيرة حيث ألقاه في السجن، فابتهل إلى الله أن يرفع هذا الضيق عن الشعب وألا يُريه عذاب أحد من المسيحيين، فاستجاب الله طلبته وتنيَّح داخل السجن بعد أن أقام على الكُرسي خمس سنين ونصف، تاركاً أقوالاً كثيرة مفيدة للوعظ والتعليم.",
         ],
         [
             Prefix.synaxarium + "&D=0603",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=0703&C=Title",
             "7 Athor\n1) Consécration de l'église de Saint Georges de Cappadoce;\n2) Martyre de Saint Georges d'Alexandrie;\n3) Martyre de Saint Nehroua;\n4) Martyre des saints Akepsimas, Aithala et Joseph;\n5) Décès de saint Menas, l'évêque de Thmouï ",
-            " 7 هاتور",
+            " 7 هاتور\nتكريس كنيسة الشهيد العظيم مار جرجس الروماني باللدّ\n\nاستشهاد القديس مار جرجس الإسكندري\n\nاستشهاد الأنبا نهروه\n\nاستشهاد القديسين أكبسيما وإيتالا ويوسف\n\nنياحة القديس الأنبا مينا أسقف تمي الأمديد\n",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "L’Église commémore auourd’hui la consécration de l'église dédiée à saint Georges de Cappadoce dans la ville de Lydda en Palestine (اللد). Ce grand saint avait obtenu la couronne du martyre sous Dioclétien en 263 après Jésus Christ. Sa mère avait caché sa dépouille dans sa ville de Lydda jusqu’à la fin de la période de la persécution. Au début de l’aire de Constantin le grand, les fidèles construisirent une église à son honneur et y déposèrent ses reliques. Cette église fut consacrée en ce jour et de nombreux mircles et des guérisons eurent lieu.",
-            "",
+            "L’Église commémore auourd’hui la consécration de l'église dédiée à saint Georges de Cappadoce dans la ville de Lydda en Palestine (اللد). ",
+            "في مثل هذا اليوم تُعيِّد الكنيسة بتذكار تكريس بيعة الشهيد العظيم مار جرجس الروماني بمدينة اللدّ بفلسطين.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Ce grand saint avait obtenu la couronne du martyre sous Dioclétien en 263 après Jésus Christ. Sa mère avait caché sa dépouille dans sa ville de Lydda jusqu’à la fin de la période de la persécution.",
+            "كان هذا القديس قد نال إكليل الشهادة على يد الإمبراطور داديانوس في عام 263م وقامت والدته بإخفاء الجسد في بلدتها اللدّ إلى انقضاء عصر الاضطهاد. ",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Au début de l’aire de Constantin le grand, les fidèles construisirent une église à son honneur et y déposèrent ses reliques. Cette église fut consacrée en ce jour et de nombreux mircles et des guérisons eurent lieu.",
+            "وفي أوائل عهد قسطنطين الكبير بنى المؤمنون كنيسة على اسم الشهيد مار جرجس الروماني ووضعوا فيها جسده الطاهر، وتم تكريس هذه البيعة المقدسة في مثل هذا اليوم. وقد حدثت معجزات وأشفية كثيرة.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Nous commémorons aussi aujourd'hui le martyre de saint Georges d'Alexandrie (جاؤرجيوس الاسكندري ). So père était un négociant alors que sa mère était la sœur d’Arménius (أرانيوس), le gouverneur de cette ville, et ils n'avaient pas d'enfant. Etant partie un jour à Lydda en Palestine (اللد) alors qu’on célébrait la consécration de l'église de saint Georges de Cappadoce. Il pria Dieu afin qu'il lui donne un fils et il fut exaucé. Le Seigneur lui donna un fils qu'il nomma Georges et éduqua chrétiennement.",
-            "",
+            "Nous commémorons aussi aujourd'hui le martyre de saint Georges d'Alexandrie (جاؤرجيوس الاسكندري ).",
+            "وفيه أيضاً استشهد القديس مار جرجس الإسكندري ابن أخت أرمانيوس والي الإسكندرية.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Après le décès de ses parents, son ncle, le gouverneur, le garda auprès de lui jusqu’à qu’il eut atteint l’âge de 25 ans. Ce dernier avait une fille unique. Elle sortit un jour se promener avec ses amies. Chemin faisant, elle passa près d'un monastère situé hors de la ville d'où se dégageaient les mélodies les plus harmonieuses qui la touchèrent profondément. Elle questionna son cousin Georges à propos de ce qu'elle avait entendu. Celui-ci lui lui parla de la Foi chrétienne, du jugement dernier d’où découleront les récompenses et les tourments éternels. De retour après de son père, elle lui apprit sa conversion au christianisme. Celui-ci voulut la détourner de sa Foi tantôt en lui faisant des promesses, et tantôt par la menace. Devant sa persistance, il l fit décapiter.",
-            "",
+            "Son père était un négociant alors que sa mère était la sœur d’Arménius (أرانيوس), le gouverneur de cette ville, et ils n'avaient pas d'enfant. Etant partie un jour à Lydda en Palestine (اللد) alors qu’on célébrait la consécration de l'église de saint Georges de Cappadoce. Il pria Dieu afin qu'il lui donne un fils et il fut exaucé. Le Seigneur lui donna un fils qu'il nomma Georges et éduqua chrétiennement.",
+            "كان والده تاجراً، ولم يكن له ولد، سافر إلى اللدّ بفلسطين وتصادف عيد تكريس كنيسة الشهيد مار جرجس الروماني. فصلَّى إلى الله أن يرزقه ولداً، فاستجاب الله وأنجب ولداً ودعاه جرجس فأدبه بالآداب المسيحية.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "On rapporta plus tard au gouverneur que c'était Georges qui avait converti sa cousine. Il e fit arête, le tortura cruellement puis l'envoya à Antinoë (إنصنا) où il fut à nouveau persécuté puis décapité. Il obtint ainsi la couronne du martyre. Un diacre appelé Samuel prit son corps et le porta à Mànf (منف) près de Guizeh. Lrsque la femme gouverneur apprit cela, elle le fit enterrer auprès de sa fille qui était morte martyre à Alexandrie.",
-            "",
+            "Après le décès de ses parents, son ncle, le gouverneur, le garda auprès de lui jusqu’à qu’il eut atteint l’âge de 25 ans. Ce dernier avait une fille unique. Elle sortit un jour se promener avec ses amies. Chemin faisant, elle passa près d'un monastère situé hors de la ville d'où se dégageaient les mélodies les plus harmonieuses qui la touchèrent profondément. Elle questionna son cousin Georges à propos de ce qu'elle avait entendu. Celui-ci lui lui parla de la Foi chrétienne, du jugement dernier d’où découleront les récompenses et les tourments éternels.",
+            "ولما توفي والداه، أبقاه خاله الوالي أرمانيوس عنده حتى بلغ الخامسة والعشرين من عمره، وكان لخاله ابنة وحيدة خرجت ذات يوم مع صاحباتها للنزهة، فشاهدت ديراً خارج المدينة، وسمعت الرهبان يرتلون ويسبحون، فتأثرت مما سمعت وسألت القديس مار جرجس، فعرَّفها بالإيمان المسيحي والدينونة والعقاب والثواب.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "De retour après de son père, elle lui apprit sa conversion au christianisme. Celui-ci voulut la détourner de sa Foi tantôt en lui faisant des promesses, et tantôt par la menace. Devant sa persistance, il l fit décapiter.",
+            "وعند عودتها إلى والدها عرَّفته أنها قد آمنت بالسيد المسيح فلاطفها ووعدها وتوعَّدها، ولما لم تُذعِن لرأيه أمر بقطع رأسها فنالت إكليل الشهادة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "On rapporta plus tard au gouverneur que c'était Georges qui avait converti sa cousine. Il e fit arête, le tortura cruellement puis l'envoya à Antinoë (إنصنا) où il fut à nouveau persécuté puis décapité. Il obtint ainsi la couronne du martyre.",
+            "وإذ عرف أن جرجس ابن أخته هو الذي أقنعها بالإيمان المسيحي، عذبه عذاباً شديداً ثم أرسله إلى أنصنا (أنصنا: هي بلدة الشيخ عبادة شرق ملوى محافظة المنيا)، فعذبه واليها وقطع رأسه فنال إكليل الشهادة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Un diacre appelé Samuel prit son corps et le porta à Mànf (منف) près de Guizeh. ",
+            "وكان هناك شماس يُدعى صموئيل أخذ جسده المقدس ومضى به إلى منف ( (منف: مدينة مصرية قديمة ورد ذكرها في الكتاب المقدس باسم نوف ( إش 19: 13 )، وسُميت في العصر اليوناني والروماني ممفيس - وتُسمى الآن ميت رهينة – مركز البدرشين وهي إحدى المدن الأثرية القديمة بمحافظة الجيزة).",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Lorsque la femme gouverneur apprit cela, elle le fit enterrer auprès de sa fille qui était morte martyre à Alexandrie.",
+            "فلما علمت زوجة الوالي أرمانيوس بذلك أرسلت فأخذت الجسد وضمته إلى جسد ابنتها الشهيدة بالإسكندرية.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
             "Que la bénédiction de leurs prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتهما فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Nous commémorons aussi aujourd'hui le martyre de saint Nehrouah (أنبا نهروه) à l’époque de Dioclétien. Ce saint naquit à Fayoum (الفيوم) vers la fin du 3ème siècle. Il était chrétien et craignait Dieu. Quand il apprit qu'un grand nombre de fidèles mouraient pour témoigner de leur Foi, il se dirigea vers Alexandrie pour mourir, lui aussi, pour le nom du Christ. Il eut alors une vsion au cours de laquelle il lui était demandé d'aller à Antoche. Il s’y rendit alors, et se présenta devant Dioclétien pour confesser sa Foi en Jésus Christ. Lorsque l'empereur connu ses origines il fut très surpris de sa venue puis tenta de l'amadouer pour qu'il renonce à sa Foi mais saint Nehrouah restait ferme. Alors, il le menaça et lui fit subir diverses tortures sans résultat. Enfin il fut décapité et obtint la couronne du martyre.",
-            "",
+            "Nous commémorons aussi aujourd'hui le martyre de saint Nehrouah (أنبا نهروه) à l’époque de Dioclétien.",
+            "وفيه أيضاً استشهد القديس الأنبا نهروه في عهد الإمبراطور دقلديانوس.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Saint Jules d’Akfahs(يوليوسألاقفهصى) se trouvait à cette époque à Antioche. Il prit le corps de Nehrouah avec grand respect, ’ensevelit et le fit porter à Fayoum par deux de ses serviteurs.",
-            "",
+            "Ce saint naquit à Fayoum (الفيوم) vers la fin du 3ème siècle. Il était chrétien et craignait Dieu. Quand il apprit qu'un grand nombre de fidèles mouraient pour témoigner de leur Foi, il se dirigea vers Alexandrie pour mourir, lui aussi, pour le nom du Christ. Il eut alors une vsion au cours de laquelle il lui était demandé d'aller à Antoche. ",
+            "وُلِدَ هذا القديس بالفيوم في أواخر الجيل الثالث، وكان مسيحياً يخاف الله كثيراً، فلما سمع بأخبار الشهداء أتى إلى الإسكندرية ليموت على اسم السيد المسيح، فرأي في رؤيا مَنْ يقول له أنه لابد أن يمضى إلى أنطاكي.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Il s’y rendit alors, et se présenta devant Dioclétien pour confesser sa Foi en Jésus Christ. Lorsque l'empereur connu ses origines il fut très surpris de sa venue puis tenta de l'amadouer pour qu'il renonce à sa Foi mais saint Nehrouah restait ferme. Alors, il le menaça et lui fit subir diverses tortures sans résultat. Enfin il fut décapité et obtint la couronne du martyre.",
+            "فمضى إلى هناك ووقف أمام دقلديانوس واعترف بالسيد المسيح. ولما عرف الملك أَمْرَه، تعجب من حضوره فوعده وتوعَّده، ثم أمر بتعذيبه بطرحه إلى الأسود ثم بحرقه بالنار، وأخيراً قطعوا رأسه المقدس، فنال إكليل الشهادة. ",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Saint Jules d’Akfahs(يوليوس ألاقفهصى) se trouvait à cette époque à Antioche. Il prit le corps de Nehrouah avec grand respect, ’ensevelit et le fit porter à Fayoum par deux de ses serviteurs.",
+            "واتفق حضور القديس يوليوس الأقفهصي وقت استشهاده، فأخذ جسده، وكفَّنه بإكرام، وكتب سيرته، ثم أرسله مع غلامين إلى بلدته الفيوم.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Nous commémorons aussi en ce jour le martyre en l’an 92 des martyrs (376 après Jésus Christ le martyre des saints Akepsimas(أكبسيما), Aithala (إيتالا) et Joseph (يوسف). Saint Akepsimas était évêque de Pakaen Perse. Il fut torturé ainsi que de Joseph et le diacre Aithala durant la persécution du roi perse Sapor II. Ils furent arrêtés et emmenés dans la ville d'Arbèles (أربيلا)et furent présentés à un juge qui tenta de les convaincre de renier leur Foi. Ensuite il les menaça de mort s’ils n’adoraient pas le soleil. Devant leur refus, il les fit torturer et emprisonner jusqu’à ce qu’ils obtinrent la couronne du martyre.",
-            "",
+            "Nous commémorons aussi en ce jour le martyre en l’an 92 des martyrs (376 après Jésus Christ le martyre des saints Akepsimas(أكبسيما), Aithala (إيتالا) et Joseph (يوسف).",
+            "وفيه أيضاً من سنة 92 للشهداء ( 376م) استشهد القديسون أكبسيما وإيتالا ويوسف.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Saint Akepsimas était évêque de Pakaen Perse. Il fut torturé ainsi que de Joseph et le diacre Aithala durant la persécution du roi perse Sapor II. Ils furent arrêtés et emmenés dans la ville d'Arbèles (أربيلا)et furent présentés à un juge qui tenta de les convaincre de renier leur Foi. Ensuite il les menaça de mort s’ils n’adoraient pas le soleil.",
+            "تعرّض القديس أكبسيما أسقف مدينة أونيتى ببلاد فارس، ومعه يوسف والشماس إيتالا، للاضطهاد الذي أثاره سابور ملك الفرس، فقبضوا عليهم وأتوا بهم إلى مدينة أربيلا والتقوا بالحاكم الذي حاول إقناعهم لترك الإيمان وهددهم بالموت إن لم يسجدوا للشمس.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Devant leur refus, il les fit torturer et emprisonner jusqu’à ce qu’ils obtinrent la couronne du martyre.",
+            "فلما رفضوا عذبهم ومزّق أجسادهم ووضعهم في السجن حتى نالوا إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
             "Que la bénédiction de leurs prères soit avec nous. Amen !",
-            "",
+            "بركة صلواتهم فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "En ce jour nous faisons aussi mémoire du décès de saint abba Ménas (أنبا مينا), évêque de la ville de Thmouï El-Amdid (تمى الأمديد). Ce père naquit à Samannoud (سمنود) vers la fin du septième siècle. Il était issu d'une famille très pieuse pratiquant le jeûne, la prière et l'ascétisme. Leur réputation se répandit dans tout le pays.",
-            "",
+            "En ce jour nous faisons aussi mémoire du décès de saint abba Ménas (أنبا مينا), évêque de la ville de Thmouï El-Amdid (تمى الأمديد).",
+            "وفيه أيضاً تنيَّح القديس الأنبا مينا أسقف تمي الأمديد (تمي الأمديد: بمركز السنبلاوين – محافظة الدقهلية).",
         ],
         [
             Prefix.synaxarium + "&D=0703",
-            "Lorsqu’il grandit, ses parents le marièrent contre sa volonté. Néanmoins, il se mt d'accord avec sa femme de vivre dans la chasteté et pratiquèent de nombreuses prières. Par la suite ils s’entendirent pour qu’elle s’installe dans un monastère de femmes. Quant à lui, il se rendit au monastère de saint Antoine dans le désert oriental où il rencontra abba Michel (Khaïl خائيل) qui devait devenir le 46ème patriarche d'Alexandrie avant que celui-ci ne devienne moine. Ils se rendirent ensemble au monastère de saint Macaire et ils devinrent moines. Ceci se passait à l'époque des deux saints Abraam (ابرآم) et Gawargui (جاورجي). Saint Ménas devint leur disciple et il évolua dans la prière et surpassa dans la sainteté un grand nombre de ses contemporains et reçut le don de guérir les malades. Lorsque, plus tard, il fut appelé à l’épiscopat, il fut très triste de quitter le désert. Il enseigna ses fidèles sans relâche et après avoir achevé son bon combat, il décéda en aix.",
-            "",
+            "Ce père naquit à Samannoud (سمنود) vers la fin du septième siècle. Il était issu d'une famille très pieuse pratiquant le jeûne, la prière et l'ascétisme. Leur réputation se répandit dans tout le pays.",
+            "وُلِدَ في أواخر الجيل السابع، في سمنود ( سمنود: مركز بمحافظة الغربية) من أبوين تقيين، يمارسان الصلاة والصوم والنسك، حتى شاع صيتهما في البلاد.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Lorsqu’il grandit, ses parents le marièrent contre sa volonté. Néanmoins, il se mt d'accord avec sa femme de vivre dans la chasteté et pratiquèent de nombreuses prières. Par la suite ils s’entendirent pour qu’elle s’installe dans un monastère de femmes. Quant à lui, il se rendit au monastère de saint Antoine dans le désert oriental où il rencontra abba Michel (Khaïl خائيل) qui devait devenir le 46ème patriarche d'Alexandrie avant que celui-ci ne devienne moine. Ils se rendirent ensemble au monastère de saint Macaire et ils devinrent moines. Ceci se passait à l'époque des deux saints Abraam (ابرآم) et Gawargui (جاورجي). Saint Ménas devint leur disciple et il évolua dans la prière et surpassa dans la sainteté un grand nombre de ses contemporains et reçut le don de guérir les malades. ",
+            "لما كبر مينا زوَّجاه بغير إرادته، لكنه اتفق مع زوجته على حياة البتولية، فبقيا زماناً يؤديان عبادات كثيرة. وبعد ذلك اتفق القديس مينا مع زوجته أن تمكث هي في بيت للعذارى وقصد هو إلى دير الأنبا أنطونيوس بالصحراء الشرقية ثم تقابل هناك مع البابا خائيل البطريرك السادس والأربعين قبل رهبانيته، ومضى إلى دير القديس مكاريوس بشيهيت حيث ترَّهبا معاً وكان ذلك في زمن القديسَيْن أبرآم وجاورجى، فتتلمذ مينا لهما وتدرج في العبادة حتى فاق كثيرين، وأعطاه الرب موهبة شفاء الأمراض حتى شاع ذكره.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0703",
+            "Lorsque, plus tard, il fut appelé à l’épiscopat, il fut très triste de quitter le désert. Il enseigna ses fidèles sans relâche et après avoir achevé son bon combat, il décéda en aix.",
+            "ثم دُعي إلى الأسقفية فحزن جداً لفراقه البرية. فداوم على تعليم شعبه، ولما أكمل سعيه الصالح تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=0703",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.\n",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=0803&C=Title",
             " 8 Athor\n1) Commémoration des quatre vivants incorporels;\n2) Martyre de Saint Nikandros, le pêtre de Myre;\n3) Décès du père Piryos, le directeur de l’écolethéologique d’Alexandrie",
-            " 8 هاتور",
+            " 8 هاتور\nتذكار الأربعة مخلوقات الحية غير المتجسدين\n\nاستشهاد القديس نيكاندروس كاهن ميرا\n\nنياحة الأب بيريّوس مدير مدرسة الإسكندرية اللاهوتية\n",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Nous commémorons aujourd'hui les quatre vivants incorporels (ألاربعة مخلوقات الحية غير المتجسدين) qui portent le trône de Dieu comme il est écrit dans le livre de l'apocalypse.",
-            "",
+            "رتَّبت الكنيسة أن تحتفل في هذا اليوم بتذكار الأربعة مخلوقات الحية غير المتجسدين حاملي مركبة الله كما يذكر سفر الرؤيا (رؤ 4: 1 – 8).",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Le prophète Ezéchiel a écrit à leur sujet : « Et je vis, et voilà qu’un vent violent vint du nord, ... Et au milieu du feu il y avait comme la ressemblance de quatre animaux, ... Et voici la ressemblance de leurs faces : une face d'homme et une face de lion à droite des quatre, une face de veau à gauche des quatre, et une face d'aigle aux quatre. »",
-            "",
+            "وقد وصفهم حزقيال النبي بقوله \"ونظرت وإذا بريح عاصفة جاءت من الشمال... ومن وسطها أربعة مخلوقات حية أما شبه وجوهها، فوجه إنسان، ووجه أسد، ووجه ثور، ووجه نسر (حز 1: 4 – 28)...\".",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "L’évangéliste saint Jean a écrit aussi dans l’Apocalypse : « Les vint-quatre Anciens et les quatre Vivants se prosternèrent et adrèrent Dieu qui siège sur le trône ; ils proclamaient : ‘Amen ! Alléluia !’ »",
-            "",
+            "وقال يوحنا الإنجيلي في رؤياه: \"وخر الأربعة مخلوقات الحية وسجدوا للجالس على العرش قائلين آمين هلليلويا\" ( رؤ 19: 4).",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Dieu les garda auprès de Lui afin qu’ils intercèdent pour la création. La face d’homme prie pour les êtres humains, la face de lion prie pour les animaux sauvages, la face de veau prie pour les animaux domestiques et la face d’aigle prie pour les oiseaux. Ilssont plus proches de Dieu que tous les autres chœurs célestes. Un grand nombre des pères de l’Église démontrèrent le grand honneur dont ils bénéficient et des églises furent construites à leur nom.",
-            "",
+            "وقد جعلهم الله بقربه ليسألوه من أجل الخليقة. فوجه الإنسان يسأله عن جنس البشر، ووجه الأسد يسأله عن الوحوش، ووجه الثور يسأله عن البهائم، ووجه النسر يسأله عن الطيور. وهم قريبون من الله أكثر من جميع الطغمات السمائية، وكثيرون من معلمي الكنيسة شهدوا بكرامتهم، وبُنيت كنائس باسمهم.",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Que leur intercession soit avec nous. Amen !",
-            "",
+            "شفاعتهم فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0803",
-            "Nous commémorons aussi en ce jour le martyre de saint Nikandros (القديس نيكاندروس) qui était l’un des pères apostoliquesqui illuminèrent l’Église au cours des deux premiers siècles. Saint Tite, le disciple de l’apôtre Paul, l’ordonna prêtre pour la ville de Myre. Alors il exerça son ministère de la meilleure des manières et convertit un grand nombre de païens au christianisme. Lorsque le gouverneur Libanios (ليبانيوس) entendit parler de lui, il le fit arrêter et lui demanda d’adorer les idoles mais le saint refusa. Alors il le tortura de différentes manière et, finalement, le fit enterrer vivant. Il acheva ainsi son bon combat et obtint la couronne du martyre.",
-            "",
+            "Nous commémorons aussi en ce jour le martyre de saint Nikandros (القديس نيكاندروس) qui était l’un des pères apostoliquesqui illuminèrent l’Église au cours des deux premiers siècles. Saint Tite, le disciple de l’apôtre Paul, l’ordonna prêtre pour la ville de Myre. Alors il exerça son ministère de la meilleure des manières et convertit un grand nombre de païens au christianisme.",
+            "وفيه أيضاً استشهد القديس نيكاندروس، وهو من الآباء الرسوليين (الآباء الرسوليون: هم تلاميذ الآباء الرسل مباشرةً) الذين أناروا الكنيسة في القرنين الأول والثاني. وقد رسمه القديس تيطس تلميذ بولس الرسول كاهناً لمدينة ميرا (ميرا: إحدى بلاد اليونان). فقام بخدمته على خير وجه، وردَّ كثيرين من الوثنيين إلى الإيمان.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0803",
+            "Lorsque le gouverneur Libanios (ليبانيوس) entendit parler de lui, il le fit arrêter et lui demanda d’adorer les idoles mais le saint refusa. Alors il le tortura de différentes manière et, finalement, le fit enterrer vivant. Il acheva ainsi son bon combat et obtint la couronne du martyre.",
+            "ولما علم الوالي ليبانيوس بأمره، قبض عليه وطالبه أن يسجد للأوثان فرفض، فطرحه في النار فلم تؤثر فيه. وأخيراً أمر بتسميره بمسامير حديد غليظة، ودفنه في قبر، ففعل به الجنود ذلك فأكمل جهاده ونال إكليل الحياة.",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0803",
-            "En c jour nous commémorons aussi le décès du père Piriyos (الأب بيريّوس), qui était le directeur de l’école thélogiqued’Alxandrie à l’époque du pape Théonas (ثاؤنا) le seizième patriarche. Ce père était un prêtre cultivé et savait bien interprété la Parole de Dieu. Il avait des connaissances prfondes dans la théologie et la philosophie. Ses interprétations spirituelles étaient très profondes et il dédaignait les biens matériels. De plus il rédigea de nombreux articles trèsdiversifiés et dû supporter beaucoup de difficultés par fidélité et à cause de sa Foi en Jésus Christ. Il passa les derniers jours de sa vie à Rome puis décéda en paix.",
-            "",
+            "En c jour nous commémorons aussi le décès du père Piriyos (الأب بيريّوس), qui était le directeur de l’école thélogiqued’Alxandrie à l’époque du pape Théonas (ثاؤنا) le seizième patriarche. Ce père était un prêtre cultivé et savait bien interprété la Parole de Dieu. Il avait des connaissances prfondes dans la théologie et la philosophie. Ses interprétations spirituelles étaient très profondes et il dédaignait les biens matériels.",
+            "وفيه أيضاً تنيَّح الأب بيريّوس، وكان مديراً لمدرسة الإسكندرية اللاهوتية في عهد البابا ثاؤنا البطريرك السادس عشر، وكان كاهناً مثقفاً، مفسراً قديراً لكلمة الله. اشتهر بتجرده في الماديات مع غزارة علومه اللاهوتية والفلسفية. كما كان متعمقاً في التأملات الروحية.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0803",
+            "De plus il rédigea de nombreux articles trèsdiversifiés et dû supporter beaucoup de difficultés par fidélité et à cause de sa Foi en Jésus Christ. Il passa les derniers jours de sa vie à Rome puis décéda en paix.",
+            "كَتبَ مقالات كثيرة في مواضيع متعددة. احتمل عذابات كثيرة من أجل الإيمان بالسيد المسيح، وقضى أيامه الأخيرة في روما حيث تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=0803",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=0903&C=Title",
             "9 Athor\n1) Tenue du 1er concile œcuménique à Nicée;\n2) Décès du pape Isaac, le 41ème patriarche de la prédication de Saint Marc ",
-            " 9 هاتور",
+            " 9 هاتور\nاجتماع مجمع نيقية المسكونى الأول\nنياحة البابا إسحاق البطريرك الحادي والأربعين من بطاركة الكرازة المرقسية",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "En ce jour de l’an 41 des martyrs (325 après Jésus Christ), 318 pères se réunirent en concile dans la ville de Nicée (نيقية) en Asie mineure à l’époue de l’empereur Constantin le grand (قسطنطين الكبير). Ce concile se teint pour juger Arius (أريوس) qui était un prêtre d’Alexandrie et qui avait blasphémé le Fils de Dieu, notre Seigneur Jésus Christ en prétendant qu’Il n’était ni consubstantiel ni coéternel au Père.",
-            "",
+            "في مثل هذا اليوم من سنة 41 للشهداء (325م) اجتمع الآباء الثلاثمائة والثمانية عشر أسقفاً بمدينة نيقية بآسيا الصغرى في عهد الملك قسطنطين الكبير لمحاكمة أريوس الذي كان قساً بالإسكندرية وجدف على ابن الله ربنا يسوع المسيح قائلاً \"إنه لم يكن مساوياً للآب في الجوهر، وأنه كان زمان لم يكن فيه الابن موجوداً\".",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "Lorsqu’ils se réunirent, les pères du concile s’installèrent aux emplacements qui leurs étaient réservés. Il y avait parmi eux abba Alexandre (الكسندروس), le pape d’Alexandrie accompagné du dacre Athanase (اثناسيوس), son disciple. L’emperer Constantin les salua. Ensuite, il déposa devant eux son sceptre, son épée et son sceau en leur disant : « Vous avez aujourd’hui toute autorité sur le clergé et sur l’empire. Vous pouvez donc exiler ou maintenir comme bon vous semble. » Puis il s’assit à sa place.",
-            "",
+            "ولما انعقد المجلس وجلس الآباء على كراسيهم وكان بينهم البابا ألكسندروس السكندري يرافقه تلميذه العالم الشماس أثناسيوس، جاء الإمبراطور وحياهم ووضع أمامهم القضيب الملوكي وسيفه وخاتمه قائلاً \"قد سلطتكم اليوم على الكهنوت والمملكة، فمَنْ أردتم نفيه فلكم ذلك، ومَنْ أردتم طرده فلكم ذلك أيضاً\"، ثم جلس في مكانه.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "Le Seigneur accomplit sa promesse lorsqu’Il dit : « si deux ou trois sont réunis en mon Nom, je suis au milieu d’eux. » En effet, plusieurs pères éclairés par l’Esprit Saint comptaient les participants et trouvaient 319 alors qu’il n’y avait que 318 personnes. Ainsi, ils s’assurèrent que Dieu était parmi eux.",
-            "",
+            "وقد أتم السيد المسيح وعده القائل: \"حيثما اجتمع اثنان أو ثلاثة باسمي فهناك أكون في وسطهم\"، لأن كثيرين من الذين استنارت عقولهم بنعمة الروح القدس، كانوا يعدُّون المجتمعين فيجدونهم ثلاثمائة وتسعة عشر أي بزيادة واحد عن عدد المجتمعين، فتيقَّنوا أن الله في وسطهم.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
-            "Arius était présent, les pères conciliaires lui posèrent des questions au sujet de sa doctrine et entèrent de le ramener dans le droit chemin mais il s’obstinit dans son avis. En conséquence, ils l’excommunièrent ainsi que tous ceux qui partageaient sa croyance et sa conviction. Puis ils rédigèrent la première partie de l’acte de Foi chrétienne jusqu’à : et Son règne n’aura pas de fin. Ils ordonnèrent que cet acte de Foi soit récité pendant toutes les prières.",
-            "",
+            "Arius était présent, les pères conciliaires lui posèrent des questions au sujet de sa doctrine et tentèrent de le ramener dans le droit chemin, mais il s’obstinit dans son avis. En conséquence, ils l’excommunièrent ainsi que tous ceux qui partageaient sa croyance et sa conviction. Puis ils rédigèrent la première partie de l’acte de Foi chrétienne jusqu’à : et Son règne n’aura pas de fin. Ils ordonnèrent que cet acte de Foi soit récité pendant toutes les prières.",
+            "حضر أريوس وناقشه الآباء كثيراً في معتقده وحاولوا إقناعه بالإيمان الصحيح فلم يرجع عن ضلاله وظل متمسكاً برأيه، فحرموه هو وكل من يعتقد باعتقاده، ووضعوا قانون الإيمان من أول \"نؤمن بإله واحد... \" لغاية \"وليس لملكه انقضاء\"، وأمروا أن يتلوه المسيحيون في جميع صلواتهم.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "Ensuite ils instituèrent quelques canons relatifs à l’organisation de l’Église, puis s’en allèrent en paix.",
-            "",
+            "بعد ذلك وضعوا عدة قوانين أخرى تنظيمية للكنيسة وانصرفوا بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "Que la bénédiction de leurs prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتهم فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
-            "En ce jour de l’an 400 des martyrs (684 après Jésus Christ) décéda le pape Isaac (البابا القديس اسحاق), le quarante-et-unième patriarche de la prédication de saint Marc. Ce pèr naquit au village d’el-Boroulos (البرلس) sur la côte méditerranéenne de l’Égypte de parents riches et pieu. Le jor deson baptême, l’évêque d’el-Boroulos qui officiait vit une croix lumineuse sur la tête de l’enfant. alors, il prophétisa en disant : « l’Egise de Dieu lui sera confiée. » Puis il dit à ses parents de prendre soin de lui. En conséquence, ils l’éduquèrent chrétiennement en lui transmettant les enseignements de l’Église. Lorsqu’il grandit, il lisait assidument l’histoire des saints et fut attiré par le monachisme. Il se rendit donc au désert de saint Macaire (دير القديس مكاريوس) et se mit sous la direction d’un ancien moine nommé Zacharie (زكريا) qui était n saint homme. A son tour, celui-ci vit une croix lumineuse sur la tête du jeune homme qui venait à lui et il le reçut avec joie.",
-            "",
+            "En ce jour de l’an 400 des martyrs (684 après Jésus Christ) décéda le pape Isaac (البابا القديس اسحاق), le quarante-et-unième patriarche de la prédication de saint Marc.",
+            "وفيه أيضاً من سنة 400 للشهداء (684م) تنيَّح البابا القديس إسحاق الحادي والأربعون من بطاركة الكرازة المرقسية.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
-            "Comme le pape Jean III (يوأنس الثالث) recherchait un moine pour qu’il soit son secrétaire, les personnes présentes lui vantèrent les qualités du père Isaac. Ils le firent mander au patriarcat et le pape se réjouit de son énergie et de ses connaissances. Lorsqu’approcha le moment où il devait quitter ce monde, le pape Jean III demanda au Christ de lui faire savoir qui lui sucèdera. Le Seigneur lui dit dans un songe que ce sera son disciple, Isaac, qui sera patriarche après lui. Il fit alors ses recommandations aux fidèles et leur expliqua la vision qu’il avait eue. Jean III décéda en 789 après Jésus Christ et le pape Isaac s’installa sur le trône de saint Marc le 8 Taubi 406 des martys (690 après Jésus Christ). Il prit soin de l’Église et l’éclaira de sa science. Il renouvela l’église de saint Marc ainsi que le siège du patriarcat et de nombreuses autres églises. Il dut subir de nombreuses difficultés et demeura sur le trône environ trois ans puis décéda en paix.",
-            "",
+            "Ce père naquit au village d’el-Boroulos (البرلس) sur la côte méditerranéenne de l’Égypte de parents riches et pieu. Le jour de son baptême, l’évêque d’el-Boroulos qui officiait vit une croix lumineuse sur la tête de l’enfant. Alors, il prophétisa en disant : « l’Egise de Dieu lui sera confiée. », puis il dit à ses parents de prendre soin de lui. En conséquence, ils l’éduquèrent chrétiennement en lui transmettant les enseignements de l’Église.",
+            "وُلِدَ في بلدة البرلُّس على ساحل البحر الأبيض من أبوين غنيين وتقيين، ولما قدماه للعماد، رأي أسقف البرلُّس الذي يعمده صليباً من نور على رأسه وتنبأ من أجله قائلاً: \"هذا سيؤتمن على كنيسة الله \"، وأمر والديه بالعناية به فعلَّماه العلوم الكنسية وأدَّباه بالآداب المسيحية.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0903",
+            "Lorsqu’il grandit, il lisait assidument l’histoire des saints et fut attiré par le monachisme. Il se rendit donc au désert de saint Macaire (دير القديس مكاريوس) et se mit sous la direction d’un ancien moine nommé Zacharie (زكريا) qui était n saint homme. A son tour, celui-ci vit une croix lumineuse sur la tête du jeune homme qui venait à lui et il le reçut avec joie.",
+            "ولما كبر قرأ سِيَر القديسين فمال قلبه إلى حياة الرهبنة، فمضى إلى دير القديس مكاريوس وتتلمذ على يدي راهب شيخ قديس اسمه زكريا، الذي شاهد أيضاً صليباً من نور فوق رأسه عند قدومه، فقبله فرحاً.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0903",
+            "Le patriarche en place rechercha un moine qui deviendra son secrétaire et son confident. Les personnes présentes lui vantèrent les qualités du père Isaac. Il fût appelé au siège patriarchal et le Pape était content de son enthousiasme et ses connaissances. ",
+            "طلب البابا يوأنس الثالث البابا الأربعون راهباً ليكون سكرتيراً له، فمدح له الحاضرون الأب إسحاق فأحضروه إلى الدار البطريركية، وفرح بنشاطه وعِلْمه.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0903",
+            "Lorsqu’approcha le moment où le pape Jean III devait quitter ce monde, il demanda au Christ de lui faire savoir qui lui succèdera. Il lui aurait été dit dans un songe que ce sera son disciple, Isaac, qui sera patriarche après lui. Il fit alors ses recommandations au peuple et l’informa que par ordre Divin ce sera Isaac qui siègera sur le trône après lui.",
+            " وقبل نياحة البابا يوأنس الثالث طلب من السيد المسيح أن يُعرِّفه بمن سيجلس بعده على الكرسي الرسولي، فأعلمه الرب في رؤيا \"سيجلس بعدك تلميذك إسحاق\"، فأخبر الشعب بالرؤيا وأوصاهم به خيراً.",
+        ],
+        [
+            Prefix.synaxarium + "&D=0903",
+            "Après son intronisation, abba Isaac s’occupa de l’Eglise et entreprit la rénovation de nombreuses églises, entre autre celle de saint Marc, l’évangéliste ainsi que la cellule patriarcale. Il dut subir de nombreuses difficultés et demeura sur le trône trois ans et demi puis décéda en paix.",
+            "وفي سنة 689م تنيَّح البابا يوأنس الثالث، فجلس هذا القديس على الكرسي الرسولي يوم 8 طوبه سنة 406 للشهداء (690م) فأنار الكنيسة بعِلْمه، وجدد كنائس كثيرة منها كنيسة القديس مار مرقس الإنجيلي بالإسكندرية والدار البطريركية بها. قاسى شدائد كثيرة. وبعد أن أقام على الكرسي حوالي ثلاث سنوات تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=0903",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1003&C=Title",
             "10 Athor\n1) Martyre des 50 vierges et de leur mère spirituelle;\n2) Réunion d’un concileà Rome au sujet de la fête de l’Epiphanie et du carême ",
-            " 10 هاتور",
+            " 10 هاتور\nاستشهاد العذارى الخمسين وأمهن\nاجتماع مجمع بروما بسبب عيد الغطاس المجيد والصوم الكبير\n",
         ],
         [
             Prefix.synaxarium + "&D=1003",
-            "En ce jour de l’an 79 des martyrs (363 aprèsJésus Christ), eut lieu le martyre des cinquante religieuses pres et saintes ainsi que celui de leur mère spirituelle Sophie (صوفية). Ces saintes venaient de différentes contrées et furent réunies par l’amour de Dieu dans un monastère pour femmes à Edesse (ألرُها). En raison de la sagesse et de la grâce dont elle était douée, la mère supérieure leur avait donné une éducation monastique qui les fit apparaître comme des anges sur terre.",
-            "",
+            "En ce jour de l’an 79 des martyrs (363 aprèsJésus Christ), eut lieu le martyre des cinquante religieuses pres et saintes ainsi que celui de leur mère spirituelle Sophie (صوفية).",
+            "في مثل هذا اليوم من سنة 79 للشهداء (363م) استشهدت القديسات الطاهرات الراهبات الخمسون وأمهن صوفية.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1003",
+            "Ces saintes venaient de différentes contrées et furent réunies par l’amour de Dieu dans un monastère pour femmes à Edesse (ألرُها). En raison de la sagesse et de la grâce dont elle était douée, la mère supérieure leur avait donné une éducation monastique qui les fit apparaître comme des anges sur terre.",
+            "جمعتهن المحبة الإلهية ليعشن في دير للعذارى قريب من مدينة الرَّها (الرَّها: إحدى مدن العراق القديمة)، وكانت القديسة صوفية رئيسة الدير مملوءة نعمة وحكمة، فهذبتهن بالآداب الرهبانية حتى صرنَ كالملائكة.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
             "Quand Julien l’apostat (يوليانوس الجاحد) voulut combattre Sapor (سابور), le roi des Perses, il passa à proximité de ce monastère. Alors, Il donna l’ordre à ses soldats de le piller et de tuer tous ceux qui s’y trouvent. Les soldats exécutèrent cet ordre avec zèle. Dieu finit par punir ce roi apostat qui fut transpercé par la lance d’un soldat perse et tomba mort de son cheval. On dit que celui qui avait lancé cette lance était saint Mercure le titulaire des deux épées (مرقوريوس أبو سيفين).",
-            "",
+            "ولما مضى يوليانوس الجاحد لمحاربة سابور ملك الفرس، مرّ في طريقه بهذا الدير، فأمر جنوده بنهبه وقَتْل من فيه. فدخل الجنود وقتلوا الراهبات بسيوفهم وقطعوا أجسادهن، ونهبوا كل ما وجدوه بالدير وقد انتقم الله من هذا الجاحد بأن أصابته طعنة حربة من يد فارس أثناء الحرب قيل أنه القديس مرقوريوس أبو سيفين، فسقط يوليانوس من على حصانه ومات.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
-            "Mais les vierges reçurent les couronnes du martyre et allèrent au paradis de la joie.",
-            "",
+            "Quant aux vierges, elles reçurent les couronnes du martyre et allèrent au paradis de la joie.",
+            "أما العذارى القديسات فقد نلن أكاليل الشهادة وذهبن إلى فردوس النعيم.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
             "Que la bénédiction de leursprières soit avec nous. Amen !",
-            "",
+            "بركة صلاتهن فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
-            "Nous commémorons aussi aujourd’hui la tenue d’un concile à Rome à l’époque de saint Victor (القديس فيكتور), l’évêque de cette ville, et du pape Démétrios le vigneron (ديمتريوس الكرّام), le 12ème patriarche d’Alexandrie. Ce concile a été convié car les chrétiens, à cette époque, jeûnaient le carême juste après la fête de l’Epiphanie jusqu’au 22 Méchir. Quelques jours plus tard, ils célébraient la semaine sainte juste et Pâques.",
-            "",
+            "Nous commémorons aussi aujourd’hui la tenue d’un concile à Rome à l’époque de saint Victor (القديس فيكتور), l’évêque de cette ville, et du pape Démétrios le vigneron (ديمتريوس الكرّام), le 12ème patriarche d’Alexandrie.",
+            "وفيه أيضاً اجتمع مجمع بروما في عهد أسقفها القديس ڤيكتور، والبابا ديمتريوس الكرّام بطريرك الإسكندرية الثاني عشر.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1003",
+            "Ce concile a été convié car les chrétiens, à cette époque, jeûnaient le carême juste après la fête de l’Epiphanie jusqu’au 22 Méchir. Quelques jours plus tard, ils célébraient la semaine sainte juste et Pâques.",
+            "وسبب انعقاد هذا المجمع، أن المسيحيين كانوا يُعيِّدون عيد الغطاس المجيد وفي اليوم الثاني يصومون الصوم المقدس، ثم يفطرون في اليوم الثاني والعشرين من أمشير، وبعد أيام يحتفلون بأسبوع الآلام والقيامة.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
             "Lorsque saint Démétrios fut consacré patriarche d’Alexandrie, il établit le calcul de l’épacte qui sert à calculer les dates des jeûnes et des fêtes dans l’Église. Il envoya des copies de ce calcul à saint Victor, l’évêque de Rome, saint Maxime (مكسيموس) l’évêque d’Antioche et à Agapiane (أغابيوس) l’évêque de Jérusalem.",
-            "",
+            "فلما جلس البابا ديمتريوس على كرسي الإسكندرية، ووضع حساب الأبقطى، الذي بموجبه ضُبطت وانتظمت الأصوام والأعياد في الكنيسة، أرسل صورة منه إلى القديس ڤيكتور أسقف روما، والقديس مكسيموس أسقف أنطاكية، والقديس أغابيوس أسقف أورشليم.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
-            "Dès qu’il l’eut reçue, le pape Victor lut ce courrier qu’il trouva excellent. Puis, il convoqua quelques savants parmi ses évêques qui approuvèrent cette méthode. Ils décidèrent de l’utiliser dan leurs contrées. Ainsi fut mis fin au différend concernant le carême et la fête de Pâques.",
-            "",
+            "Dès qu’il l’eut reçue, le pape Victor lut ce courrier qu’il trouva excellent. Puis, il convoqua quelques savants parmi ses évêques qui approuvèrent cette méthode. Ils décidèrent de l’utiliser dan leurs contrées. Ainsi fut mis fin au différend concernant le carême et la fête de Pâques. Ainsi fut établit le carême et la fête de Pâque tels qu’ils sont pratiqués dans notre Eglise copte orthodoxe jusqu’à nos jours.",
+            "ولما وصلت هذه الصورة إلى الأب ڤيكتور أسقف روما استحسنها كثيراً وعَقَد هذا المجمع من علماء أساقفته ووافقوا عليها للعمل بها في جميع بلادهم، وبذلك بطُل الخلاف بسبب الصوم المقدس والفصح المجيد، ثم انصرفوا إلى بلادهم ممجدين الله.",
         ],
         [
             Prefix.synaxarium + "&D=1003",
             "Que la bénédictin de lers pières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواتهم فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1103&C=Title",
             "11 Athor\n1) Décès de Sainte Anne, la mère de la sainte Vierge Marie, la mère de Dieu;\n2) Martyre de Saint Michel, le moine;\n3) Commémoration du martyre de Saint Archélaüs et de Saint Elysée, l’higoumène ",
-            " 11 هاتور",
+            " 11 هاتور\nنياحة القديسة حَنّة والدة القديسة العذراء مريم\nاستشهاد القديس ميخائيل الراهب\nاستشهاد القديسَيْن أرشيلاؤس وأليشع القمص",
         ],
         [
             Prefix.synaxarium + "&D=1103",
-            "Nous commémorons aujourd'hui le décès de sainte Anne (حنة), la mère de la très sainte Vierge Marie, la Mère de Dieu. Cette sainte naquit à Bethléem de la tribu de Juda (من سبط يهوذا). Sa mère se prénommait Marie (مريم) et était de cette même tribu et son père était Mathâne (ماتان) fils de Melki (ملكي) et faisait partie de la tribu de Lévi. Ils erent trois filles dont cette sainte qui engendra la très sainte Vierge Marie. Elle était apparentée à sainte Élisabeth la mère de Jean le Baptiste.",
-            "",
+            "Nous commémorons aujourd'hui le décès de sainte Anne (حنة), la mère de la très sainte Vierge Marie, la Mère de Dieu.",
+            "في هذا اليوم تُعيِّد الكنيسة بتذكار نياحة القديسة حَنّة والدة العذراء القديسة الطاهرة مريم.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1103",
+            "Cette sainte naquit à Bethléem de la tribu de Juda (من سبط يهوذا). Sa mère se prénommait Marie (مريم) et était de cette même tribu et son père était Mathâne (ماتان) fils de Melki (ملكي) et faisait partie de la tribu de Lévi. Ils erent trois filles dont cette sainte qui engendra la très sainte Vierge Marie. Elle était apparentée à sainte Élisabeth la mère de Jean le Baptiste.",
+            "وُلِدَت هذه القديسة في بيت لحم من سبط يهوذا، ووالدتها تُدعى مريم من سبط يهوذا ووالدها يُدعى ماتان بن ملكي من سبط لاوي. وُلِدَ لهما ثلاث بنات، إحداها هذه القديسة، التي تزوجت الصديق يواقيم، وأنجبت منه أعظم نساء العالم القديسة الطاهرة مريم. كانت تربطها بالقديسة أليصابات والدة يوحنا المعمدان صلة قرابة.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
             "Cette sainte reçut de Dieu un grand nombre de vertus tel que la sagesse et l’adoration. Prenant exemple sur la mère de Salomon qui s’appelait aussi Anne, sainte Anne pria Dieu pour avoir une descendance alors elle engendra la sainte Vierge Marie. Pour cela nous devons l’honorer et célébrer sa fête. Et lorsqu’elle accomplit son bon combat elle décda en paix.",
-            "",
+            "وقد أفاض الله على الصدّيقة حَنّة، نعماً وافرة، وفضائل كثيرة مثل الحكمة والعبادة. وقد صلّت إلى الله متشبهة بحنة أم صموئيل، أن يرزقها نسلاً، فأعطاها الله القديسة مريم العذراء. فلهذا يجب أن نكرمها ونحتفل بيوم عيدها. ولما أكملت سعيها تنيَّحت بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواتها فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
-            "Nous commémorons ausi en ce jour le martyre de saint Michel, le moine (القديس ميخئيل الراهب). Ce saint était originaire de Damiette. Il s’enrôla au monastère de saint Jean à Scété puis, Satan, l’ennemi des Hommes, le dupa. Il se rendit au Caire où il renia sa Foi et se maria. Puis il vécut avec son épouse huit jours ensuite il regretta ce qu’il avait fait.",
-            "",
+            "Nous commémorons ausi en ce jour le martyre de saint Michel, le moine (القديس ميخئيل الراهب).",
+            "وفيه أيضاً استشهد القديس ميخائيل الراهب.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
-            "Il alla trouver son père confesseur et avoua son péché. Celui-ci lui imposa une pénitence (قانون توبة) adéquate. Ensuite, Michel se présenta devant le roi dEgypte et confessa sa Foi chrétienne et confirma son attachement à cette religion. Le roi tenta de l’amadouer sans y parvenir. Alors il le fit brûler vivant et saint Michel obtint la couronne du martyre.",
-            "",
+            "Ce saint était originaire de Damiette. Il s’enrôla au monastère de saint Jean à Scété puis, Satan, l’ennemi des Hommes, le dupa. Il se rendit au Caire où il renia sa Foi et se maria. Puis il vécut avec son épouse huit jours ensuite il regretta ce qu’il avait fait.",
+            "كان من أهل دمياط وترَّهب في دير القديس أنبا يحنس ببرية شيهيت، وبخديعة من العدو الشيطان نزل يوماً إلى مدينة القاهرة، وأنكر الإيمان وتزوج، وأقام مع زوجته ثمانية أيام.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1103",
+            "Il alla trouver son père confesseur et avoua son péché. Celui-ci lui imposa une pénitence (قانون توبة) adéquate. Ensuite, Michel se présenta devant le roi dEgypte et confessa sa Foi chrétienne et confirma son attachement à cette religion.",
+            "ثم رجع إلى نفسه وندم، وذهب إلى أب كاهن واعترف له بخطيته، فأعطاه قانون توبة، ثم ذهب إلى ملك مصر واعترف أمامه بإيمانه المسيحي، وأعلن له تمسكه به.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1103",
+            "Le roi tenta de l’amadouer sans y parvenir. Alors il le fit brûler vivant et saint Michel obtint la couronne du martyre.",
+            "فوعده الملك بكرامات جزيلة، ولما لم يطاوعه، أمر بحرق جسده بالنار، فنال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
-            "Nous commémorons aussi le martyre de saint Archélaus(أرشيلاؤس)et celui de saint Elysée (أليشع), l’higoumène.",
-            "",
+            "Nous commémorons aussi le martyre de saint Archélaus (أرشيلاؤس)et celui de saint Elysée (أليشع), l’higoumène.",
+            "وفيه أيضاً تُعيِّد الكنيسة باستشهاد القديسَيْن أرشيلاؤس وأليشع القمص.",
         ],
         [
             Prefix.synaxarium + "&D=1103",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            ". بركة صلواتهما فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1203&C=Title",
             "12 Athor\n1) Commémoration de l’Archange Michel;\n2) Décès de Saint Jean le syriaque ",
-            " 12 هاتور",
+            " 12 هاتور\nتذكار رئيس الملائكة الجليل ميخائيل رئيس جند الرب\n\nنياحة القديس يوحنا السرياني\n",
         ],
         [
             Prefix.synaxarium + "&D=1203",
             "L’Église commémoreaujourd’hui l’archange Michel.",
-            "",
+            "في مثل هذا اليوم تُعيِّد الكنيسة، بتذكار رئيس الملائكة الجليل ميخائيل.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
-            "A l’époque du pape Alexandre (البابا ألكسندروس), le dix-neuvième patriarch de la rédiation de saint Marc, les habitants d’Alexandrie célébraient, par ignorance, une fête au temple de Saturne (زحل) le 12 Athor de chaque année. Pendant cette fête ils immolaient des sacrifices et distibuaient leur viande aux pauvres. A cette occasion, le pape réunit les chrétiens et leur expliqua que cette fête célébrait une idole païenne et qu’il convenait de célébrer l’archange Michel qui intercède auprès de Dieu pour toute l’humanité et pour les plantations, les vents du ciel et la montée des eaux. Ainsi l’habitude qui consistait à immoler des bêtes pour les distribuer aux pauvres pouvait être maintenue au nom de l’archange. Une église fut édifiée en son honneur et elle fut consacrée le 1 Athor. Elle porta le nom de cet archange qui accompagne les saints et les martyrs dans leur combat en les renforçant et en les consolant.",
-            "",
+            "A l’époque du pape Alexandre (البابا ألكسندروس), le dix-neuvième patriarch de la rédiation de saint Marc, les habitants d’Alexandrie célébraient, par ignorance, une fête au temple de Saturne (زحل) le 12 Athor de chaque année. Pendant cette fête ils immolaient des sacrifices et distibuaient leur viande aux pauvres. A cette occasion, le pape réunit les chrétiens et leur expliqua que cette fête célébrait une idole païenne et qu’il convenait de célébrer l’archange Michel qui intercède auprès de Dieu pour toute l’humanité et pour les plantations, les vents du ciel et la montée des eaux. Ainsi l’habitude qui consistait à immoler des bêtes pour les distribuer aux pauvres pouvait être maintenue au nom de l’archange.",
+            "وذلك أن البابا ألكسندروس البطريرك التاسع عشر من بطاركة الكرازة المرقسية، وجد أن أهل الإسكندرية يقيمون عن جهل عيداً في هيكل زُحل بالإسكندرية في يوم 12 هاتور من كل سنة، حيث يذبحون الذبائح ويوزعون لحومها على الفقراء، فلما حان العيد جمع البطريرك المسيحيين ووعظهم وشرح لهم أن هذا العيد لإله وثنى، ولابد أن يتحول عيده إلى عيد لرئيس الملائكة ميخائيل الذي يشفع في البشر عند الله من أجل الزروع والأهوية والمياه، وبذلك تبقى عادة الاحتفال مستمرة حيث تُقدَّم الذبائح صدقة للفقراء والمساكين على اسم رئيس الملائكة ميخائيل.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
-            "Voici un des miracles qui lui sont attribués. Un homme nommée Dorothée (دوروثيئوس) et son épouse Théopiste (ثاؤبستي) avait pris l’habitude de commémorer l’archange. Une année, ils se trouvèrent dans la gêne et n’avait plus d quoi payer pour organiser cette commémoration. Ils pensèren vendre leurs vêtements dans ce but. Mais l’ange Michel apparut à Dorothée vêtu comme un grand personnage et lui ordonna d’aller chez un berger pour acheter un mouton pour un tiers de dinar, puis d’aller chez le poissonnier pour acheter un poisson pour un tiers de dinar. Néanmoins, il lui recommanda de ne pas ouvrir le poisson avant de l’avoir revu. Il l’envoyaaussi chez le marchand pour acquérir du blé autant qu’il lui faudra. L’homme fit selon l’ordre qui lui a été donné et invita les gens à la fête. Ceux-ci mangèrent et burent comme ils en avaient pris l’habitude puis rentèrent chez eux. Après que les célébrations eurent été terminées, l’archange revint auprès de Dorothée dans la même allure qu’il avait la premièrefois et lui demanda d’ouvrir le poisson. Dorothée y trouva 30 dinars et trois pièces d’or. L’ange lui dit : « Paye le mouton, le poisson et le blé, et garde le restant pour to, ta femme et à tes enfants. En effet, le Seigneur s’est souvenu de vous et des offrandes que vous avez faies. Il ous donné cet argent en compensation sur terre, et le royaume de Dieu dans la vie éternelle. » Comme ils étaient stuéfaits de ce qui se passait, l’archange leur dit : « e suis Michel, l’archange, qui vous a délivré de tous vos ennuis. J’ai présenté au Seigneur vos offrandes et vos aumônes. Vous ne manquerez plus des biens de ce monde. » Enfin, ils se prosternèrent devant lui puis il disparut.",
-            "",
+            "Une église fut édifiée en son honneur et elle fut consacrée le 1 Athor. Elle porta le nom de cet archange qui accompagne les saints et les martyrs dans leur combat en les renforçant et en les consolant.",
+            "وبُنيت كنيسة كُرِّست في 12 هاتور على اسم رئيس الملائكة ميخائيل الذي كان مع القديسين يقويهم ويعزيهم حتى أكملوا جهادهم.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1203",
+            "Voici un des miracles qui lui sont attribués: Un homme nommé Dorothée (دوروثيئوس) et son épouse Théopiste (ثاؤبستي) avait pris l’habitude de commémorer l’archange. Une année, ils se trouvèrent dans la gêne et n’avait plus d quoi payer pour organiser cette commémoration. Ils pensèren vendre leurs vêtements dans ce but. Mais l’ange Michel apparut à Dorothée vêtu comme un grand personnage et lui ordonna d’aller chez un berger pour acheter un mouton pour un tiers de dinar, puis d’aller chez le poissonnier pour acheter un poisson pour un tiers de dinar. Néanmoins, il lui recommanda de ne pas ouvrir le poisson avant de l’avoir revu. Il l’envoyaaussi chez le marchand pour acquérir du blé autant qu’il lui faudra.",
+            "ومن عجائبه: أن إنساناً محباً لله يُدعى دوروثيئوس وزوجته ثاؤبستى، كانا يصنعان تذكارات الملاك ميخائيل، وقد ضاق بهما الحال في إحدى السنين، ولم يكن لهما ما يعملان به العيد، ففكّرا في بيع ثيابهما، لأجل هذا الأمر. فظهر الملاك ميخائيل لدوروثيئوس في زى رئيس كبير، وأمره أن يمضى إلى صاحب أغنام ويأخذ منه خروفاً بثلث دينار. وإلى صياد ليأخذ منه سمكة بثلث دينار، وألا يفتح بطن السمكة حتى يحضر هو إليه. وأن يذهب إلى تاجر ويأخذ منه قمحاً يكفي للعيد.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1203",
+            "L’homme fit selon l’ordre qui lui a été donné et invita les gens à la fête. Ceux-ci mangèrent et burent comme ils en avaient pris l’habitude puis rentèrent chez eux. Après que les célébrations eurent été terminées, l’archange revint auprès de Dorothée dans la même allure qu’il avait la premièrefois et lui demanda d’ouvrir le poisson. Dorothée y trouva 30 dinars et trois pièces d’or. L’ange lui dit : « Paye le mouton, le poisson et le blé, et garde le restant pour to, ta femme et à tes enfants. En effet, le Seigneur s’est souvenu de vous et des offrandes que vous avez faies. Il ous donné cet argent en compensation sur terre, et le royaume de Dieu dans la vie éternelle. »",
+            "ففعل الرجل كما أمره الملاك وعمل العيد كعادته ودعا الناس فأكلوا وشربوا كالعادة. وبعد إتمام العيد انصرف الحاضرون، فحضر الملاك ميخائيل إلى منزل دوروثيئوس بالهيئة التي رآه بها أولاً، فأمره أن يفتح بطن السمكة، فوجد فيها ثلاثمائة دينار وثلاث قطع ذهبية. وقال له: \"ادفع من هذا المال ثمن الخروف والسمكة والقمح والباقي لكما وأولادكما. لأن الرب قد ذكر لكما صدقاتكما التي تعملانها، فعَوَّضكما عنها في هذه الدنيا بهذا المال، وفي الآخرة بالحياة الأبدية\".",
+        ],
+        [
+            Prefix.synaxarium + "&D=1203",
+            "Comme ils étaient stuéfaits de ce qui se passait, l’archange leur dit : « e suis Michel, l’archange, qui vous a délivré de tous vos ennuis. J’ai présenté au Seigneur vos offrandes et vos aumônes. Vous ne manquerez plus des biens de ce monde. » Enfin, ils se prosternèrent devant lui puis il disparut.",
+            "وفيما هما مندهشان لهذا الكلام، قال لهما: \"أنا هو ميخائيل رئيس الملائكة. أنا الذي خَلَّصتُكما من جميع شدائدكما. أنا الذي قدمت عطاياكما وصدقاتكما قدام الله. وسوف لا تحتاجان شيئاً من خيرات هذا العالم\". فسجدا له، ثم غاب عنهما صاعداً إلى السماء.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
             "Que l’intercession de l’archange Michel soit avec nous. Amen !",
-            "",
+            "شفاعة هذا الملاك الجليل فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
-            "En ce jour de l’an 254 des martyrs (538 après Jésus Christ) décéda saint Jean le syriaque (القديس يوحنا السرياني), le moine. Ce saint naquit après le décès de son père et il fut élevé comme il se devait par sa mère qui était une femme vertueuse. Lorsqu’il grandit il entra au monastère de saint Thomas (دير مار توما) qui se trouvait à Séleucie en Syrie (سلوكية بالشام) et y progressa dans la pratique monastique et dans l’instruction religieuse. Puis il fut ordonné prêtre et devint l’abbé du monastère qu’il dirigea avec patience et sagesse.",
-            "",
+            "En ce jour de l’an 254 des martyrs (538 après Jésus Christ) décéda saint Jean le syriaque (القديس يوحنا السرياني), le moine.",
+            "وفيه أيضاً من سنة 254 للشهداء (538م)، تنيَّح القديس يوحنا السرياني، وهو أحد فضلاء الرهبان السريان.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
-            "En 530 après Jésus Christ il édifia un nouveau monastère sur les bords de l’Euphrate puis prtit à Constantinople où il apprit les sciences grecques. Il rédigea de nombreux livres concernant l’interprétation des livres de la sainte Bible, la Nativité Virginale et la sainte Résurrection. Il écrivit aussi des poèmes (ميامر) concernant les martyrs. Et lorsqu’il acheva son bon combat, il décéda en paix.",
-            "",
+            "Ce saint naquit après le décès de son père et il fut élevé comme il se devait par sa mère qui était une femme vertueuse. Lorsqu’il grandit il entra au monastère de saint Thomas (دير مار توما) qui se trouvait à Séleucie en Syrie (سلوكية بالشام) et y progressa dans la pratique monastique et dans l’instruction religieuse. Puis il fut ordonné prêtre et devint l’abbé du monastère qu’il dirigea avec patience et sagesse.",
+            "وُلِدَ بعد وفاة أبيه فأحسنت أمه الفاضلة تربيته ولما كبر ترَّهب بدير مار توما الرسول في سلوكيّة بالشام، فنما في الحياة الرهبانية ونما في العلوم الدينية ثم رُسم كاهناً، وقَلَّدوه رئاسة الدير فدّبره بصبر وحكمة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1203",
+            "En 530 après Jésus Christ il édifia un nouveau monastère sur les bords de l’Euphrate puis prtit à Constantinople où il apprit les sciences grecques. Il rédigea de nombreux livres concernant l’interprétation des livres de la sainte Bible, la Nativité Virginale et la sainte Résurrection. Il écrivit aussi des poèmes (ميامر) concernant les martyrs.",
+            "ثم بنى ديراً آخر على شاطىء نهر الفرات سنة 530م، وبعد ذلك رحل إلى القسطنطينية وتعلَّم العلوم اليونانية وكتب كتباً كثيرة في تفسير بعض أسفار الكتاب المقدس، والميلاد البتولي والقيامة المجيدة وبعض ميامر الشهداء.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1203",
+            "Et lorsqu’il acheva son bon combat, il décéda en paix.",
+            "ولما أكمل سعيه الصالح تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1203",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1303&C=Title",
             "13 Athor\n1) Commémoration de l’Archange Gabriel;\n2) Décès du pape abba Zacharie, le 64ème patriarche de la prédication de Saint Marc;\n3) Martyre de Saint Théodore Tiron;\n4) Décès de Saint Timothée, évêque d’Antinoë;\n5) Décès d’Abba Joseph au mont al-Assas",
-            " 13 هاتور",
+            " 13 هاتور\nتذكار رئيس الملائكة الجليل جبرائيل\nنياحة البابا الأنبا زخارياس البطريرك الرابع والستين من بطاركة الكرازة المرقسية\nاستشهاد القديس تادرس تيرو\nنياحة الأنبا تيموثاوس أسقف أنصنا\nنياحة الأنبا يوساب بجبل الأساس\n",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "L’Église commémore aujourd’hui l’archange Gabriel. C’est lui qui annonça à Zacharie la naissance de Jean le baptiste. Il annonça aussi à la sainte Vierge Marie la naissance du Sauveur du monde. Pour cela l’Église le surnomme « l’ange de l’annonciation ».",
-            "",
+            "L’Église commémore aujourd’hui l’archange Gabriel.",
+            "في هذا اليوم تُعيِّد الكنيسة بتذكار رئيس الملائكة جبرائيل المبشر.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "C’est lui qui annonça à Zacharie la naissance de Jean le baptiste. Il annonça aussi à la sainte Vierge Marie la naissance du Sauveur du monde. Pour cela l’Église le surnomme « l’ange de l’annonciation ».",
+            "وهو الذي بشَّر زكريا الكاهن بميلاد يوحنا المعمدان ( لو 1: 8 – 22). وكذلك هو الذي بشَّر العذراء مريم بميلاد مخلص العالم ( لو 1: 26 – 38). لذلك أعطته الكنيسة لقب \"ملاك البشارة\". ( تذكارات الملائكة والسمائيين عموماً تكون بمناسبة بناء وتدشين أول كنيسة على اسم هذا الملاك أو ذاك).",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Que son intercession soit avec nous. Amen !",
-            "",
+            "شفاعته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "En ce jour de l’an 747 des martyrs (1032 après Jésus Christ) décéda le pape saint Zacharie (زخارياس) le soixante-quatrième patriarche de la prédication de saint Marc. Ce saint était natif d’Alexandrie et fut éduqué chrétiennement. Il avait été ordonné prêtre à cause de sa piété et fut appréciée de tous à cause de sa bonne conduite.",
-            "",
+            "En ce jour de l’an 747 des martyrs (1032 après Jésus Christ) décéda le pape saint Zacharie (زخارياس) le soixante-quatrième patriarche de la prédication de saint Marc.",
+            "وفيه أيضاً من سنة 748 للشهداء (1032م) تنيَّح البابا القديس زخارياس البطريرك الرابع والستون من بطاركة الكرازة المرقسية.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Après le décès du pape Philotée (فيلوثاؤس), le soixante-troisième patriarche, les évêques se mirent d’accord pour le choisir comme patriarche. Il fut sacré le 20 Taubi 720 des martyrs (1004 après Jésus Christ). Abba Zacharie subit de grandes persécutions. En effet il fut emprisonné par al-Hakim-bi-amr-allah (الحاكم بأمر الله) pendant 3 mois. Ensuite il le jeta aux lions, mais ceux-ci ne li firent aucun mal comme ce fut le cas avec le prophète Daniel. Totefois, le calife ne cessait de le menacer de mort. Après l’intervention d’un prince, il fut libéré et se rendit au monastère de saint Macaire où il demeura neuf ans pendant lesquels le peuple subit de nombreux tourments. Un grand nombre d’entre eux fut tué, leurs maisons furent pillées et leurs églises furent détruites.",
-            "",
+            "Ce saint était natif d’Alexandrie et fut éduqué chrétiennement. Il avait été ordonné prêtre à cause de sa piété et fut appréciée de tous à cause de sa bonne conduite.",
+            "وُلِدَ هذا الأب بالإسكندرية وتأدب بالآداب المسيحية. ونظراً لتقواه رسموه قساً، فسار سيرة حسنة، فأحبه الجميع.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Par la suite, le calife autorisa quelques moines à construire un monastère en dehors du Caire. Ils l’édifièrent et lui donnèrent le nom de saint Mercure le martyr. Le calife se prit d’amitié avec ces moines et leur rendait isite de temps en temps. Ils saisirent cette opportunité pour demander la relaxe du pape Zacharie. Alors celui-ci retourna sur son siège, réhabilita les églises et reconstruisit celles qui avaient été détruites. Ce pape vécut 12 ans après son retour durant lesquelles il s’occupait de ses fidèles. Enfin, il acheva son bon combat et décéda en paix.",
-            "",
+            "Après le décès du pape Philotée (فيلوثاؤس), le soixante-troisième patriarche, les évêques se mirent d’accord pour le choisir comme patriarche. Il fut sacré le 20 Taubi 720 des martyrs (1004 après Jésus Christ).",
+            "ولما تنيَّح البابا فيلوثاؤس البطريرك الثالث والستون، اجتمع رأي الأساقفة والأراخنة على انتخابه بطريركاً، فرُسم في يوم 20 طوبه سنة 720 للشهداء (1004م).",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Abba Zacharie subit de grandes persécutions. En effet il fut emprisonné par al-Hakim-bi-amr-allah (الحاكم بأمر الله) pendant 3 mois. Ensuite il le jeta aux lions, mais ceux-ci ne li firent aucun mal comme ce fut le cas avec le prophète Daniel. Totefois, le calife ne cessait de le menacer de mort. Après l’intervention d’un prince, il fut libéré et se rendit au monastère de saint Macaire où il demeura neuf ans pendant lesquels le peuple subit de nombreux tourments. Un grand nombre d’entre eux fut tué, leurs maisons furent pillées et leurs églises furent détruites.",
+            "وقد لاقى شدائد كثيرة، فقد حبسه الحاكم بأمر الله مدة ثلاثة أشهر، ثم ألقاه للأسود فلم تمسه بسوء كما فعلت مع دانيال النبي. وكان يتوعده بالقتل، وبشفاعة أحد الأمراء أطلق سبيله، فقصد دير القديس مكاريوس حيث مكث هناك تسع سنين، حدثت في أثنائها متاعب كثيرة للمسيحيين إذ قتلوا كثيرين منهم ونهبوا بيوتهم وهدموا كنائسهم.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Par la suite, le calife autorisa quelques moines à construire un monastère en dehors du Caire. Ils l’édifièrent et lui donnèrent le nom de saint Mercure le martyr. Le calife se prit d’amitié avec ces moines et leur rendait isite de temps en temps. Ils saisirent cette opportunité pour demander la relaxe du pape Zacharie. Alors celui-ci retourna sur son siège, réhabilita les églises et reconstruisit celles qui avaient été détruites.",
+            "سمح الحاكم بأمر الله لبعض الرهبان ببناء دير خارج القاهرة، فبنوا ديراً على اسم الشهيد مرقوريوس (وهو الدير المعروف الآن باسم القديس الأنبا برسوم العريان بمعصرة حلوان)، وكان الخليفة يتردد على هذا الدير لأنه استأنس بالرهبان، فانتهز الرهبان فرصة وجوده، والتمسوا منه عفواً برجوع البابا زخارياس، فعاد إلى كرسيه، وعَمَّر الكنائس، ورمم ما هُدم منها.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Ce pape vécut 12 ans après son retour durant lesquelles il s’occupait de ses fidèles. Enfin, il acheva son bon combat et décéda en paix.",
+            "عاش بعد رجوعه اثنتي عشرة سنة، قضاها في خدمة الشعب. ولما أكمل سعيه الصالح تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "n ce jour de l’an 22 des martyrs (306 après Jésus Christ) eut lieu le martyre de saint Théodore Tiron. Celu-ci état unsoldat de l’armée romaine qui refusa de se joindre à ses camarades pour l’adoration des idoles. Le commandant de la troupe le convoqua et lui demanda la raison de son refus, alors, il lui annonça qu’il était chrétien. En conséquence, le commandat le menaça de mort mais il tint bon en disant : « Jésus Christ est mon Dieu. Si tu n’aimes pas ce que je dis, tu peux couper ma langue, ou même amputer tous les membres de mon corps afin que le Christ les reçoive en offrande. » Le commandant le renvoya et patinta quelques temps dans l’espoir qu’il changerad’avis mais, lors d’une seconde convocation, il constata qu’il n’en était rien. Il voulut le soudoyer mais rien ne lui fit changer d’avis. Il supporta beaucoup de tortures en rendant grâce à Dieu car il considérait qu’ainsi il partageait la passion du Christ.",
-            "",
+            "En ce jour de l’an 22 des martyrs (306 après Jésus Christ) eut lieu le martyre de saint Théodore Tiron.",
+            "وفيه أيضاً من سنة 22 للشهداء (306م) استشهد القديس تادرس تيرو، وتيرو هو لقب عائلته.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Ensuite il fut mis en prison où Dieu lui envoya un ange pour le consoler. Enuite il fut convoquer pour la troisième fois et ils le brûlèrent vif et il obtint la couronne du martyre. Une fidèle prit soin de son enterrement.",
-            "",
+            "Ce saint était un soldat de l’armée romaine qui refusa de se joindre à ses camarades pour l’adoration des idoles. Le commandant de la troupe le convoqua et lui demanda la raison de son refus, alors, il lui annonça qu’il était chrétien. En conséquence, le commandat le menaça de mort mais il tint bon en disant : « Jésus Christ est mon Dieu. Si tu n’aimes pas ce que je dis, tu peux couper ma langue, ou même amputer tous les membres de mon corps afin que le Christ les reçoive en offrande. ».",
+            "كان جندياً في الجيش الروماني. وقد رفض مشاركة زملائه في ممارسة العبادة الوثنية، فاستدعاه رئيس الفرقة، وسأله عن سر امتناعه، فأعلن أنه مسيحي. هدده بالقتل فتمسك بالأكثر قائلاً: \"يسوع المسيح هو إلهي. إن كانت كلماتي تضايقك اقطع لساني، بل ابتر كل عضو في جسدي، ليت الله يقبله ذبيحة\". ",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Le commandant le renvoya et patinta quelques temps dans l’espoir qu’il changerad’avis mais, lors d’une seconde convocation, il constata qu’il n’en était rien. Il voulut le soudoyer mais rien ne lui fit changer d’avis. Il supporta beaucoup de tortures en rendant grâce à Dieu car il considérait qu’ainsi il partageait la passion du Christ. Ensuite il fut mis en prison où Dieu lui envoya un ange pour le consoler.",
+            "استبعده رئيس الفرقة إلى حين لعله يرجع عن رأيه، ثم استدعاه ثانية وقدم له إغراءات كثيرة، فلم يتراجع عن إيمانهK فتعرض لعذابات كثيرة، احتملها بشكر لكونها شركة آلام مع المسيح المتألم. ولما ألقوه في السجن، أرسل الله إليه ملاكاً يعزيه.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            " Il fût convoqué pour la troisième foisn et ils le brûlèrent vif et il obtint la couronne du martyre. Une fidèle prit soin de son enterrement.",
+            "استدعوه للمرة الثالثة، وأحرقوه حياً، فنال إكليل الشهادة، وقامت إحدى المؤمنات بدفن جسده.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Nous commémorons aujourd'hui le décès de saint Timothée (تيموثاؤس) évêque d’Antinoë (إنصنا). Ce saint naquit vers la fin du 3ème siècle et devint moine très jeune. En raison de son bon caractère, sa vertu et ses connaissances, il fut choisi pour être évêque de la ville d’Antinoë et consacrait une grande partie de son temps à enseigner les fidèles et à guider les habitants de cette ville à la Foi en Jésus Christ. A cause de son zèle, le gouverneur de cette ville le fit arrêter, torturer et l’emprisonna pendant trois ans.",
-            "",
+            "Nous commémorons aujourd'hui le décès de saint Timothée (تيموثاؤس) évêque d’Antinoë (إنصنا).",
+            "وفيه أيضاً تنيَّح القديس الأنبا تيموثاوس أسقف أنصنا.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Lorsque l’empereur Constantin le grand (قسطنطين الكير) montât sur le trône, il fit libérer ceux qui étaient en prison à cause de leur Foi. Dès sa libération, cet évêque réunit les prêtres et les fidèles et pria pour le salut de l’âme du gouverneur qui l’avait torturé. Cette action surpris celui-ci et le convainquit que cette Foi provenait de Dieu puisqu’à l’injustice il répond par la bonté. Alors il convoqua abba Timothée pour s’enquérir au sujet des vérités du christianisme. Le saint les lui enseigna jusqu’à ce qu’il crut. Alors, il le baptisa. Par la suite, le gouverneur quitta son poste et s’installa dans un monastèr où il devint moine.",
-            "",
+            "Ce saint naquit vers la fin du 3ème siècle et devint moine très jeune. En raison de son bon caractère, sa vertu et ses connaissances, il fut choisi pour être évêque de la ville d’Antinoë et consacrait une grande partie de son temps à enseigner les fidèles et à guider les habitants de cette ville à la Foi en Jésus Christ. A cause de son zèle, le gouverneur de cette ville le fit arrêter, torturer et l’emprisonna pendant trois ans.",
+            "وُلِدَ هذا الأب في أواخر القرن الثالث، وترَّهب منذ شبابه. نما في النعمة والفضيلة. فأقاموه أسقفاً على كرسي أنصنا. وبسبب مداومته على تعليم الشعب الإيمان بالمسيح، قبض عليه والى أنصنا، وعذبه بأنواع العذاب مدة ثلاث سنين وهو داخل السجن.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Lorsque l’empereur Constantin le grand (قسطنطين الكير) montât sur le trône, il fit libérer ceux qui étaient en prison à cause de leur Foi. Dès sa libération, cet évêque réunit les prêtres et les fidèles et pria pour le salut de l’âme du gouverneur qui l’avait torturé.",
+            "ولما مَلك قسطنطين الكبير، أمر بإطلاق المسجونين من أجل الإيمان في جميع أنحاء مملكته، فخرج هذا الأسقف القديس من حبسه وجمع الكهنة والشعب وصلى صلاة من أجل خلاص نفس الوالي الذي عذبه.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Cette action surpris celui-ci et le convainquit que cette Foi provenait de Dieu puisqu’à l’injustice il répond par la bonté.",
+            "فاندهش الوالي لما سمع بهذا، وقال: \"إن مذهب هذا الأسقف مذهب إلهي لأنه يقابل الإساءة بالإحسان\".",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Alors il convoqua abba Timothée pour s’enquérir au sujet des vérités du christianisme. Le saint les lui enseigna jusqu’à ce qu’il crut. Alors, il le baptisa. Par la suite, le gouverneur quitta son poste et s’installa dans un monastèr où il devint moine.",
+            "فاستدعاه واستعلم منه عن حقائق الدين المسيحي، فعلَّمها له، ثم آمن الوالي بالسيد المسيح، فعمَّده الأب الأسقف. ثم ترك الولاية وذهب إلى الدير وترَّهب. ",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Saint Timothée persévéra dans l’enseigement puis décéda en paix.",
-            "",
+            "أما القديس تيموثاوس فواظب على التعليم إلى أن تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Nous commémorons aussi le décès d’Abba Joseph (Youssab أنبا يوساب) au mont al-Assas (جبل الأساس) dans le diocèse de Qift (قفط). Ce saint était originaire de Faw (فاو). Il était fils unique, reçut de ses parents une éducation chrétienne et se rendait souvent au monastère de saint Pacôme, le père des cénobites. Il finit par s’y installer, devint moine et eut une bonne conduite ascétique. Dieu lui donna le don de guérir les malades, en conséquence le nombre de ses visiteurs augmenta.",
-            "",
+            "Nous commémorons aussi le décès d’Abba Joseph (Youssab أنبا يوساب) au mont al-Assas (جبل الأساس) dans le diocèse de Qift (قفط).",
+            "وفيه أيضاً تنيَّح القديس الأنبا يوساب بجبل الأساس بكرسي قفط.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
-            "Alors, il eut peur de perdre le bénéfice de son combat et pria Dieu pour qu’Il lui indique le bon chemin. Par la suite il s’installa dans une grotte au mont al-Assas. Lorsqu’il acheva son bon combat, il décéda en paix. De nombreux miracles apparurent de son corps.",
-            "",
+            "Ce saint était originaire de Faw (فاو). Il était fils unique, reçut de ses parents une éducation chrétienne et se rendait souvent au monastère de saint Pacôme, le père des cénobites. Il finit par s’y installer, devint moine et eut une bonne conduite ascétique. Dieu lui donna le don de guérir les malades, en conséquence le nombre de ses visiteurs augmenta.",
+            "كان هذا القديس من أهل فاو (فاو: بلدة تابعة لمركز دشنا محافظة قنا، وكان بها دير رئيسي للقديس باخوميوس أب الشركة)، وحيداً لأبويه، فربياه تربية مسيحية، وكان يداوم التردد على دير الأنبا باخوميوس أب الشركة، فعملت فيه النعمة، ودخل إلى الدير وترَّهب، وسلك بكل تقوى ونسك. وقد وهبه الله موهبة شفاء الأمراض، فتوافدت عليه الجموع.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Alors, il eut peur de perdre le bénéfice de son combat et pria Dieu pour qu’Il lui indique le bon chemin. Par la suite il s’installa dans une grotte au mont al-Assas.",
+            "خاف أن يضيع تعبه، فصلى إلى الله أن يوضح له الطريق الذي يسلكه. بعد ذلك مضى إلى جبل الأساس وسكن في مغارة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1303",
+            "Lorsqu’il acheva son bon combat, il décéda en paix. De nombreux miracles apparurent de son corps.",
+            "ولما أكمل سعيه الصالح تنيَّح بسلام. وقد أظهر الله من جسده آيات وعجائب كثيرة.",
         ],
         [
             Prefix.synaxarium + "&D=1303",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. men !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1403&C=Title",
             "14 Athor\n1) Décès de Saint Martin, évêque de Tours;\n2) Martyre de l’officier Pharos et de ses enseignants ",
-            " 14 هاتور",
+            " 14 هاتور\nنياحة القديس مرتينوس أسقف ثراكي\nاستشهاد الضابط فاروس ومعلّميه",
         ],
         [
             Prefix.synaxarium + "&D=1403",
-            "Nous commémorons aujourd'hui le décès du grand saint Martin (مرتينوس), l'évêque de Tours (ثراكى). Ce saint état un ascète adorant Dieu et il combattit les adeptes de l'héésie d'Arius. Ils voulurent le tuer, alors il s'installa dans une grotte au bord de la méditerranée.",
-            "",
+            "Nous commémorons aujourd'hui le décès du grand saint Martin (مرتينوس), l'évêque de Tours (ثراكى).",
+            "في مثل هذا اليوم، تنيَّح القديس العظيم مرتينوس أسقف ثراكي باليونان.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1403",
+            "Ce saint état un ascète adorant Dieu et il combattit les adeptes de l'héésie d'Arius. Ils voulurent le tuer, alors il s'installa dans une grotte au bord de la méditerranée.",
+            "كان هذا القديس ناسكاً عابداً، قاوم أتباع أريوس زماناً، فأرادوا قتْله، فسكن في مغارة قرب ساحل البحر الأبيض المتوسط.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Lorsque la réputation de ses vertus s'est répandue aux alentours, il fut choisi pour être évêque de la ville de Tours. Il eut une conduite apostolique et Dieu accomplit par son intermédiaire de nombreux miracles.",
-            "",
+            "فلما ذاع صيت فضائله، انتخبوه أسقفاً لمدينة ثراكي، فسار سيرة رسولية.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Un jour que saint Martin s'acheminait sur la route, il vit passer des gens qui portaient un mort en vue de l’enterrer. Un homme entravait leur passage prétendant que le mort lui devait une grosse somme. Le saint volut s'interposer et essaya de le convaincre de les laisser passer sans résultat. Saint Martin pria Dieu l'implorant de faire éclater la vérité. Le mort se leva instantanément, reprocha à l'imposteur son attitude et démontra devant la foule que ses allégations étaient mensongères. Cet homme mourut instantanément tandis que celui, qu'on voulait enterrer, est retourné chez lui et y vécut de nombreuses années.",
-            "",
+            "وقد شرفه الله بعمل آيات كثيرة، منها أنه أبصر إنساناً أوقف جنازة ميت ومنع أهله من دفنه، مدعياً أن له عليه دين كبير، فطُلب إليه أن يترك الجنازة تسير لدفن الميت، فرفض، فصلى القديس إلى الله لكي يُظهر الحقيقة، فقام الميت وبكّت ذلك الرجل مُظهراً كذبه أمام جميع الحاضرين، وفي الحال مات ذلك الرجل الظالم، أما الذي كان ميتاً فعاد إلى بيته حياً وعاش سنيناً كثيرة.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Après avoir accompli son bon combat, saint Martin décéda en paix.",
-            "",
+            "أما القديس مرتينوس فبعد أن أكمل جهاده الحسن تنيَّح بسلام.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
-            "Nous commémorons aussi le martyre de l’officier Pharos (فاروس)et des six pères ermites dans la montagne de Thèbes (جل طيبة). Cet officier était un haut gradé dans l’armée de l’empereur ioclétien au début du 4ème siècle alors que la persécution ds chrétiens s’accroissait.",
-            "",
+            "Nous commémorons aussi le martyre de l’officier Pharos (فاروس)et des six pères ermites dans la montagne de Thèbes (جل طيبة).",
+            "وفيه أيضاً استشهد الضابط فاروس والآباء الستة النساك بجبل طيبة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1403",
+            "Cet officier était un haut gradé dans l’armée de l’empereur ioclétien au début du 4ème siècle alors que la persécution ds chrétiens s’accroissait.",
+            "كان هذا الضابط قائداً كبيراً في جيش الإمبراطور دقلديانوس في أوائل القرن الرابع، حيث كان الاضطهاد يتصاعد ضد المسيحيين، وكان الوالي كولسيان يبطش بهم بقسوة ووحشية.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Le gouverneur Colsian (كولسيان) était de plus en plus violent envers eux. Il envoya ses soldats pour arrêter six ermites et les mettre en prison. L’officier Pharos alla de nuit les retrouver, défit leurs chaines et leur demanda : « Priez le Seigneur pour moi, mes pères, pour qu’Il m’associe à votre martyre. Je suis officier supérieur et je crains de confesser le Christ à cause des tortures. » Alors, ils prièrent pour lui.",
-            "",
+            "أرسل الوالي جنوده، فقبضوا على ستة من النساك المتوحدين وألقوهم في السجن فذهب إليهم الضابط فاروس ليلاً وفكّ قيودهم وقال لهم: \"اطلبوا من الرب عنى يا آبائي أن يجعلني شريكاً لكم في الاستشهاد. لأنني ضابط كبير ولكني أخاف من الاعتراف بالسيد المسيح لشدة التعذيب\"، فصلّوا لأجله.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Les soldats conduisirent les six erites devant le gouverneur qui tenta de les forcer à encenser les idoles. Alors l’officier Pharos se précipita devant le gouverneur confessa sa Foi en Jésus Christ et prit la défense des ermites. Le gouverneur voulut l’amadouer puis le fit torturer cruellement jusqu’à c que son corps soit mis en pièce et il reçut la couronne du martyre.",
-            "",
+            "قاد الجنود النساك الستة إلى الوالي، وحاول الوالي إرغامهم أن يبخروا للأصنام، لكنهم رفضوا. وهنا اندفع الضابط فاروس يعترف بالسيد المسيح ويدافع عن النساك، فلاطفه الوالي ثم أمر بتعذيبه بعذابات شديدة إلى أن تمزق جسده ونال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
-            "Les six ermites furent torturés puisle gouvrneur les fit décapiter et ils reçurent la couronne du martyre. Par la suite le gouverneur fit porter le corps des martyrs en dehors de la ville pour que les bêtes sauvages les dévorent. Toutefois ceux-ci ne s’en approchèrent pas. Les fidèles prirent ces corps, les portèrent à l’église, firent les prières des funérailles puis les enterrèrent avec beaucoup d’honneur.",
-            "",
+            "Quant aux six ermites furent torturés, puis le gouvrneur les fit décapiter. Ils reçurent ainsi la couronne du martyre.",
+            "أما الستة نساك، فبعد تعذيبهم كثيراً، أمر بقطع رؤوسهم، فنالوا أكاليل الشهادة.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1403",
+            "Par la suite le gouverneur fit porter le corps des martyrs en dehors de la ville pour que les bêtes sauvages les dévorent. Toutefois ceux-ci ne s’en approchèrent pas. Les fidèles prirent ces corps, les portèrent à l’église, firent les prières des funérailles puis les enterrèrent avec beaucoup d’honneur.",
+            "ثم أمر الوالي جنوده أن يحملوا أجساد الشهداء خارج المدينة لتأكلها الوحوش، لكنها لم تقترب إليهاK فجاء المؤمنون وحملوا هذه الأجساد إلى الكنيسة وصلُّوا عليها ودفنوها بإكرام جزيل.",
         ],
         [
             Prefix.synaxarium + "&D=1403",
             "Que la béndiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواتهم فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1503&C=Title",
             "15 Athor\n1) Martyre de Saint Ménas, le thaumaturge;\n2) Décès de Saint Jean ar-Robbane ",
-            " 15 هاتور",
+            " 15 هاتور\nاستشهاد القديس مار مينا العجائبى\n\nنياحة القديس يوحنا الربان\n",
         ],
         [
             Prefix.synaxarium + "&D=1503",
-            "En ce jour de l’an 25 des martyr (309 après Jésus Christ) eut lieu le martyre du grand saint Ménas le thaumaturge (مار مينا العجيبي). Ce saint naquit à Nikiou (نقيوس)de parents chrétiens vers la fin du troisième siècle. Son père s’appelait Eudoxe (أودكسيوس) et sa mère Euphémie (أوفومية).",
-            "",
+            "En ce jour de l’an 25 des martyr (309 après Jésus Christ) eut lieu le martyre du grand saint Ménas le thaumaturge (مار مينا العجيبي).",
+            "في مثل هذا اليوم من سنة 25 للشهداء ( 309م ) استشهد القديس العظيم مار مينا العجائبى.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1503",
+            "Ce saint naquit à Nikiou (نقيوس)de parents chrétiens vers la fin du troisième siècle. Son père s’appelait Eudoxe (أودكسيوس) et sa mère Euphémie (أوفومية).",
+            "وُلِدَ بنيقيوس في أواخر القرن الثالث المسيحي من أب اسمه أودوكسيوس وأم اسمها أوفومية. كان أبوه والياً على مدينة نيقيوس (نيقيوس: مدينة قديمة محلها الآن زاوية رزين بمركز منوف بمحافظة المنوفية)، فحسده أخوه أناطوليوس وسعى به عند الملك فنقله والياً في نواحى شمال أفريقيا – منطقة مريوط – ففرح به أهلها، لأنه كان تقياً خائفاً الله.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Eudoxe était le gouverneur de Nikiou et son frère Anatole (أناطوليوس) le jalousait. Celui-ci porta des accusations mensongères auprès de l'empereur qui le transféra en Afrique du nord dont il fit le gouverneur. Le peuple de cette région s'en réjouit car leur nouveau gouverneur était pieux et craignait Dieu. Euphémie, qui était pieuse et pratiquait perpétuellement l prière et le jeune, était stérile. Elle ne cessait de demander au Seineur de lui accorder une descendance. Elle jeunait jusqu’au oir et faisait des dons aux pauvres et aux miséreux.",
-            "",
+            "وكانت أوفومية سيدة تقية مواظبة على الأصوام والصلوات، ولأنها كانت عاقراً، فكانت تطلب كثيراً من السيد المسيح أن يهبها نسلاً طاهراً، وكانت تصوم إلى المساء وتُقدِّم صدقات كثيرة للفقراء والمساكين.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
-            "Le 21 Taubi, jour de la fête du décès de la sainte Vierge, Euphémie se rendit à son église située à Atrib (أتريب). Elle vit la foule qui s’y rendait et les femmes qui portaient leurs enfants, alors, elle se tint devant l’icôe de la Vierge et pria Dieu avec ferveur en lui demandant de lui donner un enfant. A cet instant elle entendit une voix venant de l'icône qui disait : « Amen ! ». Ceci la réjouit et de retour chez elle, elle raconta à son mari ce qui lui était arrivé. Celui-ci lui répondit alors : « Notre confiance est grande en Dieu qui peut réaliser ce que tu as entendu. » Elle eut un garçon et l’appela « Ménas » car, disait-elle, cela corresondait au mot « Amen » qu’elle avait entendu. Sa naissance fut l’occasion de grandes réjouissances et Eudoxe distribua des présents aux pauvres et aux malheureux.",
-            "",
+            "Le 21 Taubi, jour de la fête du décès de la sainte Vierge, Euphémie se rendit à son église située à Atrib (أتريب). Elle vit la foule qui s’y rendait et les femmes qui portaient leurs enfants, alors, elle se tint devant l’icôe de la Vierge et pria Dieu avec ferveur en lui demandant de lui donner un enfant. A cet instant elle entendit une voix venant de l'icône qui disait : « Amen ! ». Ceci la réjouit et de retour chez elle, elle raconta à son mari ce qui lui était arrivé. Celui-ci lui répondit alors : « Notre confiance est grande en Dieu qui peut réaliser ce que tu as entendu. ». Elle eut un garçon et l’appela « Ménas » car, disait-elle, cela corresondait au mot « Amen » qu’elle avait entendu. Sa naissance fut l’occasion de grandes réjouissances et Eudoxe distribua des présents aux pauvres et aux malheureux.",
+            "وفي عيد نياحة القديسة العذراء (21 طوبة) ذهبت القديسة أوفومية إلى كنيسة العذراء بأتريب (أتريب: مدينة قديمة محلها الآن مدينة بنها، ومازالت آثارها موجودة حتى الآن)، وهناك رأت الجموع يتقاطرون على الكنيسة وهم فرحون متهللون، والسيدات يحملن أطفالهن بفرح، فوقفت أمام أيقونة العذراء وصلَّت رافعة قلبها متضرعة إلى الله بلجاجة أن يهبها نسلاً فسمعت صوتاً من الأيقونة يقول \" آمين \". ففرحت، وبعد انتهاء القداس الإلهي، رجعت إلى بيتها وأخبرت زوجها البار أودوكسيوس بما حدث، ففرح معها وقال \"إن ثقتنا كبيرة في إلهنا القادر أن يفعل كما سَمِعْتِ\". وبعد قليل حملت القديسة أوفومية وكانت تشكر الله على هذه النعمة، وعند الولادة أرادوا تسمية الطفل باسم جده بلوديانوس، ولكن أمه رفضت بسبب كلمة \" آمين \" التي سمعتها من أيقونة القديسة العذراء، ودعت اسمه \" مينا \" قائلة أن مينا هي \" آمين \" بنفس حروفها. وحدث فرح وابتهاج بولادته، ووزع أودوكسيوس صدقات كثيرة على الفقراء والمحتاجين بهذه المناسبة السعيدة.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Ils lui donnèrent une bonne éducation chrétienne et l’encouragèrent à lire la sainte Bible. Ils l’emmenaient avec assiduité à l’église et, le jeune homme, grandit dans une ambiance de piété et de vertu.",
-            "",
+            "اهتم والداه بتربيته تربية روحية وهذَّباه بتعاليم الكنيسة، وكانا يشجعانه دائماً على قراءة الكتاب المقدس، وكانا يترددان به كثيراً على الكنيسة، فشب على التقوى والفضيلة.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "En 296 aprs Jésus Christ, alors que Ménas avait onze ans, Eudoxe décéda. Sa mère aussi décéda trois ans plus tard. Ménas distribua aux pauvres une grande partie de la fortune qu’il avait héritée. Puis il s’enrôla dans l’armée vers 300 après Jésus Christ et il devint le second du commandant qui était un ami de son père. Sa douceur et sa piété lui valurent l’affection de tous.",
-            "",
+            "لما بلغ مينا الحادية عشر من عمره انتقل أبوه للفردوس سنة 296م. وبعد ثلاث سنوات لحقت به أمه. فورث عنهما ثروة كبيرة، وزع منها الكثير على الفقراء والمساكين. وفي حوالي سنة 300م دخل مينا إلى الجيش، ولأن القائد كان صديقاً لأبيه جعله التالي له في السلطة، فأحبه الجميع للُطفه وتقواه.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Lorsque Dioclétien (دقلديانوس) et Maximien (مكسميانوس) abjurèrent leur Foi, ils ordonnèrent l’adoration les idoles, et décrétèrent la persécution des chrétens, cesaint distribua toute sa fortune aux pauvres, quitta l’armée et partit dans le désertpour y jouir de la fréquentation de Dieu dans une adoration pure. Il y demeura cinq années pendant lesquelles il jeûnait et priait jour et nuit. Un jour, il entendit une voix qui lui demandait d’aller en ville et de confesser sa Foi en Jésus Christ devant le gouverneur et lui expliqua qu’il reevra trois couronnes : l’une pour la chasteté, la seconde pour son effort dans l’adoration et l’ascétisme et la troisième pour le martyre.",
-            "",
+            "صدر منشور الملكين دقلديانوس ومكسيميانوس يأمر بعبادة الأوثان واضطهاد المسيحيينK فوزع مينا كل ثروته على الفقراء والمساكين، وترك الجُندية، ورحل إلى الصحراء ليتمكن من التمتع بالعشرة الإلهية في عبادة نقية. عاش في البرية نحو خمس سنوات في أصوام وصلوات نهاراً وليلاً. وفي إحدى الليالي سمع صوتاً يأمره بالنزول إلى المدينة، والاعتراف بالسيد المسيح أمام الوالي وسينال ثلاثة أكاليل، واحد من أجل البتولية، وواحد من أجل العبادة والنسك، وواحد من أجل الاستشهاد.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
-            "En conséquence, Ménas quitta le désert pour revenir en ville et il confessa sa Foi en Jésus Christ publiquement devant le gouverneur. Surpris par son courage, le commandant le fit arrêter et emprisonner. Le lendemain, il essaya de l’amadouer en raison de ses origines et du prestige de sa famille en lui promettant de nombreux dons s’il se prosternait devant les idoles. Mais saint Ménas répondait humblement : « Tot ce que je demande à mon Dieu c’est de me préserver du mal et de me donner la couronne qui ne périt pas. » Alors le gouverneur le fit torturer de diverses manières avant de le jeter à nouveau en prison. Dans la nuit le Sauveur lui apparut, le consola et guérit ses plaie. Finalement il fut décapité après qu’il eut prié intensément. Il obtint ainsi la couronne du martyre.",
-            "",
+            "En conséquence, Ménas quitta le désert pour revenir en ville et il confessa sa Foi en Jésus Christ publiquement devant le gouverneur. Surpris par son courage, le commandant le fit arrêter et emprisonner. Le lendemain, il essaya de l’amadouer en raison de ses origines et du prestige de sa famille en lui promettant de nombreux dons s’il se prosternait devant les idoles. Mais saint Ménas répondait humblement : « Tout ce que je demande à mon Dieu c’est de me préserver du mal et de me donner la couronne qui ne périt pas. ».",
+            "لما سمع مينا هذا الصوت، ترك البرية، وذهب إلى المدينة، واعترف جهاراً بالسيد المسيح أمام الوالي وسط جمهور كثير. فتعجب القائد جداً، وأمر بالقبض عليه وإلقائه في السجن وفي اليوم التالي أحضره وحاول ملاطفته لمَّا عرف بشرف نسبه، لكي يسجد للأوثان ووعده بوعود كثيرة، لكن القديس كان يجيب في وداعة \"إن طلبي الوحيد من إلهي أنْ يحفظ حياتي من الفساد، ويهبني الإكليل الذي لا يُفنى\".",
+        ],
+        [
+            Prefix.synaxarium + "&D=1503",
+            "Alors le gouverneur le fit torturer de diverses manières avant de le jeter à nouveau en prison. Dans la nuit le Sauveur lui apparut, le consola et guérit ses plaie. Finalement il fut décapité après qu’il eut prié intensément. Il obtint ainsi la couronne du martyre.",
+            "وإذ فشل الوالي في إقناعه بعبادة الأوثان بدأ يعذبه بعذابات كثيرة مثل جلده بأعصاب البقر، وتعليقه على الهنبازين، وتمزيق جسده بأسياخ حديدية، وتدليكه بمسوح من شعر، ووضع مشاعل ملتهبة تحت ضلوعه..... ثم ألقاه في السجن، فظهر له المخلص وعزاه وشجعه وشفي جراحاته. ولما احتار الوالي في تعذيبه، كتب قضيته وأمر بقطع رأسه وحرق جسده بالنار. نفَّذ الجنود أمر الوالي فاقتادوا القديس مينا إلى مكان تنفيذ الحكم، وهناك رفع عينيه إلى السماء وصلى صلاة حارة، ثم مدّ عنقه للسيَّاف فقطع رأسه المقدس، فنال إكليل الشهادة.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Ils voulurent incinérer le corps du martyr mais au bout de 3 jours le feu ne l’avait toujours pas attaqué. Alors, quelques fidèles le retirèrent de la fournaise, l’ensevelirent dans des linceuls précieux et l’enterrèrent avec beaucoup de respect.",
-            "",
+            "ولما حاولوا حرق الجسد الطاهر، مكث في النار ثلاثة أيام وثلاث ليال ولم تُؤَثِّر فيه، فأتى بعض المؤمنين وأخذوه من وسط النيران وكفنوه بأكفان فاخرة ودفنوه بإكرام جزيل.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Que la bénédiction de ses prières soit avec nous. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا. آمين.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
-            "Nous commémorons aussi aujourd’hui le décès de saint Jean ar-Robbane (le pilote – القديس يوحنا الربان) le disciple d’abba Hadid, le prêtre (أنباحديد القس). Ce saint naquit au Caire de parents pieux et miséricordieux envers les étrangers et le nécessiteux. Lorsqu’il grandit, il voulut devenir moine. Il visitait assidûment le monastère de Chahrân (دي شهران) où se trouvait un saint moine nommé ar-Robbane Abraham (الربان إبراهيم). Alors, le jeune homme devint son disciple.",
-            "",
+            "Nous commémorons aussi aujourd’hui le décès de saint Jean ar-Robbane (le pilote – القديس يوحنا الربان) le disciple d’abba Hadid, le prêtre (أنباحديد القس).",
+            "وفيه أيضاً تنيَّح القديس يوحنا الربان تلميذ الأنبا حديد القس.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1503",
+            "Ce saint naquit au Caire de parents pieux et miséricordieux envers les étrangers et le nécessiteux. Lorsqu’il grandit, il voulut devenir moine. Il visitait assidûment le monastère de Chahrân (دي شهران) où se trouvait un saint moine nommé ar-Robbane Abraham (الربان إبراهيم). Alors, le jeune homme devint son disciple.",
+            "وُلِدَ بالقاهرة من أبوين تقيين كثيري الرحمة على الغرباء والمساكين، ولما كبر قليلاً اشتهي الرهبنة وكان يتردد على دير شهران (دير شهران: هو دير الأنبا برسوم العريان بمعصرة حلوان حالياً)، وكان بالدير راهب قديس اسمه الربان إبراهيم فتتلمذ له الشاب يوحنا.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Plus tard Jean se rendit à Jérusalem et il s’installa pendant trois ans au monastère de saint Jean le baptiste en poursuivant la prière et le combat spirituel ensuite il revint au monastère de Chahrân. Son père spirituel lui suggéra de se rendre auprès d’aba Hadid, le prêtre, qui se trouvait à Matoubas-al-Roummane (مطوبس الرمان). Il s’installa en ce lieu, regroupa ses disciples chrétiens dans l’église et leur enseigna la lecture et l’écriture. Il poursuivit son combat spirituel en jeûnant, en priant et en veillant de longues nuits.",
-            "",
+            "ذهب إلى أورشليم وسكن هناك في دير يوحنا المعمدان مدة ثلاث سنوات مداوماً على العبادة والجهاد، ثم رجع إلى دير شهران فأشار عليه أبوه الروحاني أن يذهب إلى الأنبا حديد القس فذهب إليه في ماطوبس الرمان (ماطوبس الرمان ومعناها مكان الرمان، هي الآن مركز تابع لمحافظة كفر الشيخ) وسكن معه فكان يجمع إليه أولاده المسيحيين إلى الكنيسة فكان يعلمهم القراءة والكتابة. وظل يجاهد في الصوم والصلاة والسهر الطويل.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
-            "Lorsqu’abba Hadid constata l’évolution de Jean, il le présenta pour qu’il soit ordonné prêtre et il exerça son ministère avec toute fidélité et ceux qui subissaient des difficultés avaient recours à lui. Dieu lui accorda la grâce de guérir les malades. Satan le jalousa et lui fit subir quelques difficultés mais il les supporta avec patience. Jean finit par s’installer à Samannoud (سمنود) et lorsquil accomplit son bon combat il décéda en paix. Les fidèles l’enterrèrent dans l’église de Samannoud.",
-            "",
+            "Lorsqu’abba Hadid constata l’évolution de Jean, il le présenta pour qu’il soit ordonné prêtre et il exerça son ministère avec toute fidélité et ceux qui subissaient des difficultés avaient recours à lui. Dieu lui accorda la grâce de guérir les malades.",
+            "ولما رأي القس حديد تلميذه يوحنا ينمو في النعمة زكَّاه لدرجة الكهنوت، فنال هذه الرتبة وخدم شعبه بكل أمانة وأصبح ميناء خلاص لكل المتعبين. أعطاه الله نعمة شفاء المرضى فشفي الكثيرين.",
+        ],
+        [
+            Prefix.synaxarium + "&D=1503",
+            "Satan le jalousa et lui fit subir quelques difficultés mais il les supporta avec patience. Jean finit par s’installer à Samannoud (سمنود) et lorsquil accomplit son bon combat il décéda en paix. Les fidèles l’enterrèrent dans l’église de Samannoud.",
+            "حسده الشيطان فأثار عليه بعض التجارب فاحتملها بالصبر، واستقر به المقام في سمنود. وبعد أن أكمل جهاده الحسن تنيَّح بسلام، فدفنه المؤمنون في كنيسة سمنود.",
         ],
         [
             Prefix.synaxarium + "&D=1503",
             "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !",
-            "",
+            "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.",
         ],
     ],
     [
@@ -5127,8 +5394,16 @@ ReadingsArrays.SynaxariumArray = [
             "Le monastère du grand saint abba Jean Camé.",
             "",
         ],
-        [Prefix.synaxarium + "&D=2103", "Le monastère des éthiopiens.", ""],
-        [Prefix.synaxarium + "&D=2103", "Le monastère des arméniens.", ""],
+        [
+            Prefix.synaxarium + "&D=2103",
+            "Le monastère des éthiopiens.",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2103",
+            "Le monastère des arméniens.",
+            "",
+        ],
         [
             Prefix.synaxarium + "&D=2103",
             "Ainsi que le cimetière (جبّانة - طافوس) des moines.",
@@ -5632,7 +5907,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0104&C=Title",
             "1er Koyak\n1) Décès de saint Jean III, le 40ème patriarche de la prédication de saint Marc\n2) Décès de saint Athanase III, le 76ème patriarche de la prédication de saint Marc\n3) Décès de saint Pierre d'Edesse, évêque de Ghazza\n4) Consécration de l'église du martyr Epipham, le soldat, à Abnoub\n5) Consécration de l’église de saint Chénouté, l’archimandrite.",
-            "1 كيهك",
+            " 1 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0104",
@@ -5719,7 +5994,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0204&C=Title",
             "2 Koyak\n1) Décès de saint Abba Hour, le moine ;\n2) Décès de saint Hormina, l’anachorète\n",
-            "2 كيهك",
+            " 2 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0204",
@@ -5766,7 +6041,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0304&C=Title",
             "3 Koyak\n1) Entrée de la sainte Vierge Marie au temple de Jérusalem ;\n2) Martyre de Saint Bastavrôs le nouveau",
-            "3 كيهك",
+            " 3 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0304",
@@ -5818,7 +6093,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0404&C=Title",
             "4 Koyak\n1) Martyre de Saint André l’apôtre le frère de saint Pierre\n2) Consécration de l’église de Saint Jean d’Héraclée à Om-el-Kossour à Manfalout\n3) Commémoration des reliques des deux Saints: abba Pichoï et abba Paul\n",
-            "4 كيهك",
+            " 4 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0404",
@@ -5860,7 +6135,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0504&C=Title",
             "5 Koyak\n1) Décès du Saint prophète Nahoum\n2) Martyre de Saint Victor d’Assiout\n3) Martyre de Saint Isidore",
-            "5 كيهك",
+            " 5 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0504",
@@ -5897,7 +6172,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0604&C=Title",
             "6 Koyak\n1) Décès de Saint Abraham ibn Zara’a, le 62ème pape de la prédication de Saint Marc\n2) Martyre de Saint Patlasse, le prêtre\n",
-            "6 كيهك",
+            " 6 كيهك",
         ],
         [
             Prefix.synaxarium + "&D=0604",
@@ -5956,7 +6231,7 @@ ReadingsArrays.SynaxariumArray = [
         ],
         [
             Prefix.synaxarium + "&D=0604",
-            'Nous commémorons aussi aujourd’hui la consécration de l’église de saint abba Éschyrône, plus connu sous le nom de "Abbaskhayrône"[1] (apa ÉC,uron أباسخيرون), qui subit le martyre le 7 Paoni. Cette église se trouve à l’intérieur de l’église saint Pichoï (كنيسة الأنبا بيشوي) du monastère qui porte le même nom à Scété (دير القديس الأنبا بيشوي بوادي النطرون).',
+            "Nous commémorons aussi aujourd’hui la consécration de l’église de saint abba Éschyrône, plus connu sous le nom de \"Abbaskhayrône\"[1] (apa ÉC,uron أباسخيرون), qui subit le martyre le 7 Paoni. Cette église se trouve à l’intérieur de l’église saint Pichoï (كنيسة الأنبا بيشوي) du monastère qui porte le même nom à Scété (دير القديس الأنبا بيشوي بوادي النطرون).",
             "",
         ],
         [
@@ -6011,11 +6286,23 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0704&C=Title", "7 Koyak", "7 كيهك"],
-        [Prefix.synaxarium + "&D=0704", "", ""],
+        [
+            Prefix.synaxarium + "&D=0704&C=Title",
+            "7 Koyak",
+            " 7 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=0704",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0804&C=Title", "8 Koyak", "8 كيهك"],
+        [
+            Prefix.synaxarium + "&D=0804&C=Title",
+            "8 Koyak",
+            " 8 كيهك",
+        ],
         [
             Prefix.synaxarium + "&D=0804",
             "1) Martyre de saint Aissé et de sa sœur sainte Thècle2) Martyre des saintes Barbara et Julienne3) Décès de saint Samuel le confesseur4) Décès de saint Hiéraclas, 13ème patriarche de la prédication de saint Marc",
@@ -6128,23 +6415,55 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0904&C=Title", "9 Koyak", "9 كيهك"],
-        [Prefix.synaxarium + "&D=0904", "", ""],
+        [
+            Prefix.synaxarium + "&D=0904&C=Title",
+            "9 Koyak",
+            " 9 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=0904",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1004&C=Title", "10 Koyak", "10 كيهك"],
-        [Prefix.synaxarium + "&D=1004", "", ""],
+        [
+            Prefix.synaxarium + "&D=1004&C=Title",
+            "10 Koyak",
+            " 10 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1004",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1104&C=Title", "11 Koyak", "11 كيهك"],
-        [Prefix.synaxarium + "&D=1104", "", ""],
-        [Prefix.synaxarium + "&D=1104&C=Title", "12 Koyak", "12 كيهك"],
-        [Prefix.synaxarium + "&D=1104", "", ""],
+        [
+            Prefix.synaxarium + "&D=1104&C=Title",
+            "11 Koyak",
+            " 11 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1104",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1104&C=Title",
+            "12 Koyak",
+            " 12 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1104",
+            "",
+            "",
+        ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1204",
-            'Nous célébrons aujourd\'hui la commémoration mensuelle de l’archange Michel, le chef des armées de notre Seigneur, qui se tient devant Dieu tout-puissant et qui intercède pour les hommes en disant : "Toi qui es compatissant, ne te met pas en colère.""Toi qui es bon, soit compatissant envers ta création.""Toi qui es patient, ne fais pas périr ceux que Tu as créés."',
+            "Nous célébrons aujourd'hui la commémoration mensuelle de l’archange Michel, le chef des armées de notre Seigneur, qui se tient devant Dieu tout-puissant et qui intercède pour les hommes en disant : \"Toi qui es compatissant, ne te met pas en colère.\"\"Toi qui es bon, soit compatissant envers ta création.\"\"Toi qui es patient, ne fais pas périr ceux que Tu as créés.\"",
             "",
         ],
         [
@@ -6204,64 +6523,160 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1304&C=Title", "13 Koyak", " 13 كيهك"],
-        [Prefix.synaxarium + "&D=1304", "", ""],
+        [
+            Prefix.synaxarium + "&D=1304&C=Title",
+            "13 Koyak",
+            "  13 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1304",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1404&C=Title", "14 Koyak", "14 كيهك"],
-        [Prefix.synaxarium + "&D=1404", "", ""],
+        [
+            Prefix.synaxarium + "&D=1404&C=Title",
+            "14 Koyak",
+            " 14 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1404",
+            "",
+            "",
+        ],
     ],
     [
         [
             Prefix.synaxarium + "&D=1504&C=Title",
             "15 Koyak\nDécès de saint Grégoire, patriarche des Arméniens\n2) Décès de saint Luc le stylite Décès d’abba Ezéchiel d’ Hermonthis\n",
-            "15 كيهك",
+            " 15 كيهك",
         ],
-        [Prefix.synaxarium + "&D=1504", "", ""],
+        [
+            Prefix.synaxarium + "&D=1504",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1604&C=Title", "16 Koyak", "16 كيهك"],
-        [Prefix.synaxarium + "&D=1604", "", ""],
+        [
+            Prefix.synaxarium + "&D=1604&C=Title",
+            "16 Koyak",
+            " 16 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1604",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1704&C=Title", "17 Koyak", "17 كيهك"],
-        [Prefix.synaxarium + "&D=1704", "", ""],
+        [
+            Prefix.synaxarium + "&D=1704&C=Title",
+            "17 Koyak",
+            " 17 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1704",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1804&C=Title", "18 Koyak", "18 كيهك"],
-        [Prefix.synaxarium + "&D=1804", "", ""],
+        [
+            Prefix.synaxarium + "&D=1804&C=Title",
+            "18 Koyak",
+            " 18 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1804",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=1904&C=Title", "19 Koyak", "19 كيهك"],
-        [Prefix.synaxarium + "&D=1904", "", ""],
+        [
+            Prefix.synaxarium + "&D=1904&C=Title",
+            "19 Koyak",
+            " 19 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=1904",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2004&C=Title", "20 Koyak", "20 كيهك"],
-        [Prefix.synaxarium + "&D=2004", "", ""],
+        [
+            Prefix.synaxarium + "&D=2004&C=Title",
+            "20 Koyak",
+            " 20 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2004",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2104&C=Title", "21 Koyak", "21 كيهك"],
-        [Prefix.synaxarium + "&D=2104", "", ""],
+        [
+            Prefix.synaxarium + "&D=2104&C=Title",
+            "21 Koyak",
+            " 21 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2104",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2204&C=Title", "22 Koyak", "22 كيهك"],
-        [Prefix.synaxarium + "&D=2204", "", ""],
+        [
+            Prefix.synaxarium + "&D=2204&C=Title",
+            "22 Koyak",
+            " 22 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2204",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2304&C=Title", "23 Koyak", "23 كيهك"],
-        [Prefix.synaxarium + "&D=2304", "", ""],
+        [
+            Prefix.synaxarium + "&D=2304&C=Title",
+            "23 Koyak",
+            " 23 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2304",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2404&C=Title", "24 Koyak", "24 كيهك"],
-        [Prefix.synaxarium + "&D=2404", "", ""],
+        [
+            Prefix.synaxarium + "&D=2404&C=Title",
+            "24 Koyak",
+            " 24 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2404",
+            "",
+            "",
+        ],
     ],
     [
         [
             Prefix.synaxarium + "&D=2504&C=Title",
             "25 Koyak\n1) Décès de saint Jean Kamé, le prêtre ;\n2) Décès de saint Pichaï au mont al-Tôd",
-            "25 كيهك",
+            " 25 كيهك",
         ],
-        [Prefix.synaxarium + "&D=2504", "", ""],
+        [
+            Prefix.synaxarium + "&D=2504",
+            "",
+            "",
+        ],
     ],
     [
         [
@@ -6291,58 +6706,158 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2704&C=Title", "26 Koyak", "26 كيهك"],
-        [Prefix.synaxarium + "&D=2704", "", ""],
-        [Prefix.synaxarium + "&D=2704&C=Title", "27 Koyak", "27 كيهك"],
-        [Prefix.synaxarium + "&D=2704", "", ""],
+        [
+            Prefix.synaxarium + "&D=2704&C=Title",
+            "26 Koyak",
+            " 26 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2704",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2704&C=Title",
+            "27 Koyak",
+            " 27 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2704",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=2804&C=Title", "28 Koyak", "28 كيهك"],
-        [Prefix.synaxarium + "&D=2804", "", ""],
+        [
+            Prefix.synaxarium + "&D=2804&C=Title",
+            "28 Koyak",
+            " 28 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=2804",
+            "",
+            "",
+        ],
     ],
     [
         [
             Prefix.synaxarium + "&D=2904&C=Title",
             "29 Koyak\n1) Glorieuse Nativité de notre Seigneur Jésus Christ ;\n2) Commémoration des martyrs d’Akhmîm",
-            "29 كيهك",
+            " 29 كيهك",
         ],
-        [Prefix.synaxarium + "&D=2904", "", ""],
+        [
+            Prefix.synaxarium + "&D=2904",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=3004&C=Title", "30 Koyak", "30 كيهك"],
-        [Prefix.synaxarium + "&D=3004", "", ""],
+        [
+            Prefix.synaxarium + "&D=3004&C=Title",
+            "30 Koyak",
+            " 30 كيهك",
+        ],
+        [
+            Prefix.synaxarium + "&D=3004",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0105&C=Title", "1 Taubi", ""],
-        [Prefix.synaxarium + "&D=0105", "", ""],
+        [
+            Prefix.synaxarium + "&D=0105&C=Title",
+            "1 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0105",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0205&C=Title", "2 Taubi", ""],
-        [Prefix.synaxarium + "&D=0205", "", ""],
+        [
+            Prefix.synaxarium + "&D=0205&C=Title",
+            "2 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0205",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0305&C=Title", "3 Taubi", ""],
-        [Prefix.synaxarium + "&D=0305", "", ""],
+        [
+            Prefix.synaxarium + "&D=0305&C=Title",
+            "3 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0305",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0405&C=Title", "4 Taubi", ""],
-        [Prefix.synaxarium + "&D=0405", "", ""],
+        [
+            Prefix.synaxarium + "&D=0405&C=Title",
+            "4 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0405",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0505&C=Title", "5 Taubi", ""],
-        [Prefix.synaxarium + "&D=0505", "", ""],
+        [
+            Prefix.synaxarium + "&D=0505&C=Title",
+            "5 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0505",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0605&C=Title", "6 Taubi", ""],
-        [Prefix.synaxarium + "&D=0605", "", ""],
+        [
+            Prefix.synaxarium + "&D=0605&C=Title",
+            "6 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0605",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0705&C=Title", "7 Taubi", ""],
-        [Prefix.synaxarium + "&D=0705", "", ""],
+        [
+            Prefix.synaxarium + "&D=0705&C=Title",
+            "7 Taubi",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0705",
+            "",
+            "",
+        ],
     ],
     [
-        [Prefix.synaxarium + "&D=0805", "", ""],
-        [Prefix.synaxarium + "&D=0805", "", ""],
+        [
+            Prefix.synaxarium + "&D=0805",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0805",
+            "",
+            "",
+        ],
     ],
     [
         [
@@ -6350,337 +6865,1013 @@ ReadingsArrays.SynaxariumArray = [
             "9 Tabui\n1) Décès de saint Abraham, le compagnon d’abba Gawarguy ;\n2) Décès d’abba Phîs",
             "",
         ],
-        [Prefix.synaxarium + "&D=0905", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1005&C=Title", "10 Tabui", ""],
-        [Prefix.synaxarium + "&D=1005", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1105&C=Title", "11 Tabui", ""],
-        [Prefix.synaxarium + "&D=1105", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1205&C=Title", "12 Tabui", ""],
-        [Prefix.synaxarium + "&D=1205", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1305&C=Title", "13 Tabui", ""],
-        [Prefix.synaxarium + "&D=1305", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1405&C=Title", "14 Tabui", ""],
-        [Prefix.synaxarium + "&D=1405", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1505&C=Title", "15 Tabui", ""],
-        [Prefix.synaxarium + "&D=1505", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1605&C=Title", "16 Tabui", ""],
-        [Prefix.synaxarium + "&D=1605", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1705&C=Title", "17 Tabui", ""],
-        [Prefix.synaxarium + "&D=1705", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1805&C=Title", "18 Tabui", ""],
-        [Prefix.synaxarium + "&D=1805", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1905&C=Title", "19 Tabui", ""],
-        [Prefix.synaxarium + "&D=1905", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2005&C=Title", "20 Tabui", ""],
-        [Prefix.synaxarium + "&D=2005", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2105&C=Title", "21 Tabui", ""],
-        [Prefix.synaxarium + "&D=2105", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2205&C=Title", "22 Tabui", ""],
-        [Prefix.synaxarium + "&D=2205", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2305&C=Title", "23 Tabui", ""],
-        [Prefix.synaxarium + "&D=2305", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2405&C=Title", "24 Tabui", ""],
-        [Prefix.synaxarium + "&D=2405", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2505&C=Title", "25 Tabui", ""],
-        [Prefix.synaxarium + "&D=2505", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2605&C=Title", "26 Tabui", ""],
-        [Prefix.synaxarium + "&D=2605", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2705&C=Title", "27 Tabui", ""],
-        [Prefix.synaxarium + "&D=2705", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2805&C=Title", "28 Tabui", ""],
-        [Prefix.synaxarium + "&D=2805", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2905&C=Title", "29 Tabui", ""],
-        [Prefix.synaxarium + "&D=2905", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=3005&C=Title", "30 Tabui", ""],
-        [Prefix.synaxarium + "&D=3005", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0106&C=Title", "1er A", ""],
-        [Prefix.synaxarium + "&D=0106", "", ""],
-        [Prefix.synaxarium + "&D=0106&C=Title", "11 A", ""],
-        [Prefix.synaxarium + "&D=0106", "", ""],
-        [Prefix.synaxarium + "&D=0106&C=Title", "11 A", ""],
-        [Prefix.synaxarium + "&D=0106", "", ""],
-        [Prefix.synaxarium + "&D=0106&C=Title", "1er Amshir", ""],
-        [Prefix.synaxarium + "&D=0106", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0206&C=Title", "2 Amshir", ""],
-        [Prefix.synaxarium + "&D=0206", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0306&C=Title", "03 Amshir", ""],
-        [Prefix.synaxarium + "&D=0306", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0406&C=Title", "04 Amshir", ""],
-        [Prefix.synaxarium + "&D=0406", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0506&C=Title", "05 Amshir", ""],
-        [Prefix.synaxarium + "&D=0506", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0606&C=Title", "06 Amshir", ""],
-        [Prefix.synaxarium + "&D=0606", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0706&C=Title", "07 Amshir", ""],
-        [Prefix.synaxarium + "&D=0706", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0806&C=Title", "08 Amshir", ""],
-        [Prefix.synaxarium + "&D=0806", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0906&C=Title", "09 Amshir", ""],
-        [Prefix.synaxarium + "&D=0906", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1006&C=Title", "10 Amshir", ""],
-        [Prefix.synaxarium + "&D=1006", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1106&C=Title", "11 Amshir", ""],
-        [Prefix.synaxarium + "&D=1106", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1206&C=Title", "12 Amshir", ""],
-        [Prefix.synaxarium + "&D=1206", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1306&C=Title", "13 Amshir", ""],
-        [Prefix.synaxarium + "&D=1306", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1406&C=Title", "14 Amshir", ""],
-        [Prefix.synaxarium + "&D=1406", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1506&C=Title", "15 Amshir", ""],
-        [Prefix.synaxarium + "&D=1506", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1606&C=Title", "16 Amshir", ""],
-        [Prefix.synaxarium + "&D=1606", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1706&C=Title", "17 Amshir", ""],
-        [Prefix.synaxarium + "&D=1706", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1806&C=Title", "18 Amshir", ""],
-        [Prefix.synaxarium + "&D=1806", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1906&C=Title", "19 Amshir", ""],
-        [Prefix.synaxarium + "&D=1906", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2006&C=Title", "20 Amshir", ""],
-        [Prefix.synaxarium + "&D=2006", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2106&C=Title", "21 Amshir", ""],
-        [Prefix.synaxarium + "&D=2106", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2206&C=Title", "22 Amshir", ""],
-        [Prefix.synaxarium + "&D=2206", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2306&C=Title", "23 Amshir", ""],
-        [Prefix.synaxarium + "&D=2306", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2406&C=Title", "24 Amshir", ""],
-        [Prefix.synaxarium + "&D=2406", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2506&C=Title", "25 Amshir", ""],
-        [Prefix.synaxarium + "&D=2506", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2606&C=Title", "26 Amshir", ""],
-        [Prefix.synaxarium + "&D=2606", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2706&C=Title", "27 Amshir", ""],
-        [Prefix.synaxarium + "&D=2706", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2806&C=Title", "28 Amshir", ""],
-        [Prefix.synaxarium + "&D=2806", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2906&C=Title", "29 Amshir", ""],
-        [Prefix.synaxarium + "&D=2906", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=3006&C=Title", "30 Amshir", ""],
-        [Prefix.synaxarium + "&D=3006", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0107&C=Title", "01 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0107", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0207&C=Title", "02 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0207", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0307&C=Title", "03 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0307", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0407&C=Title", "04 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0407", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0507&C=Title", "05 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0507", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0607&C=Title", "06 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0607", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0707&C=Title", "07 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0707", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0807&C=Title", "08 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0807", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=0907&C=Title", "09 Barmahat", ""],
-        [Prefix.synaxarium + "&D=0907", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1007&C=Title", "10 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1007", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1107&C=Title", "11 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1107", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1207&C=Title", "12 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1207", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1307&C=Title", "13 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1307", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1407&C=Title", "14 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1407", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1507&C=Title", "15 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1507", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1607&C=Title", "16 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1607", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1707&C=Title", "17 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1707", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1807&C=Title", "18 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1807", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=1907&C=Title", "19 Barmahat", ""],
-        [Prefix.synaxarium + "&D=1907", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2007&C=Title", "20 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2007", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2107&C=Title", "21 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2107", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2207&C=Title", "22 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2207", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2307&C=Title", "23 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2307", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2407&C=Title", "24 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2407", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2507&C=Title", "25 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2507", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2607&C=Title", "26 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2607", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2707&C=Title", "27 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2707", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2807&C=Title", "28 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2807", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=2907&C=Title", "29 Barmahat", ""],
-        [Prefix.synaxarium + "&D=2907", "", ""],
-    ],
-    [
-        [Prefix.synaxarium + "&D=3007&C=Title", "30 Barmahat", ""],
-        [Prefix.synaxarium + "&D=3007", "", ""],
+        [
+            Prefix.synaxarium + "&D=0905",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1005&C=Title",
+            "10 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1005",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1105&C=Title",
+            "11 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1105",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1205&C=Title",
+            "12 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1205",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1305&C=Title",
+            "13 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1305",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1405&C=Title",
+            "14 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1405",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1505&C=Title",
+            "15 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1505",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1605&C=Title",
+            "16 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1605",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1705&C=Title",
+            "17 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1705",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1805&C=Title",
+            "18 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1805",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1905&C=Title",
+            "19 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1905",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2005&C=Title",
+            "20 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2005",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2105&C=Title",
+            "21 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2105",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2205&C=Title",
+            "22 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2205",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2305&C=Title",
+            "23 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2305",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2405&C=Title",
+            "24 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2405",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2505&C=Title",
+            "25 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2505",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2605&C=Title",
+            "26 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2605",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2705&C=Title",
+            "27 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2705",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2805&C=Title",
+            "28 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2805",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2905&C=Title",
+            "29 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2905",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=3005&C=Title",
+            "30 Tabui",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=3005",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0106&C=Title",
+            "1er A",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106&C=Title",
+            "11 A",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106&C=Title",
+            "11 A",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106",
+            "",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106&C=Title",
+            "1er Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0106",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0206&C=Title",
+            "2 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0206",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0306&C=Title",
+            "03 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0306",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0406&C=Title",
+            "04 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0406",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0506&C=Title",
+            "05 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0506",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0606&C=Title",
+            "06 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0606",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0706&C=Title",
+            "07 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0706",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0806&C=Title",
+            "08 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0806",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0906&C=Title",
+            "09 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0906",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1006&C=Title",
+            "10 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1006",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1106&C=Title",
+            "11 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1106",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1206&C=Title",
+            "12 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1206",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1306&C=Title",
+            "13 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1306",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1406&C=Title",
+            "14 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1406",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1506&C=Title",
+            "15 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1506",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1606&C=Title",
+            "16 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1606",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1706&C=Title",
+            "17 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1706",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1806&C=Title",
+            "18 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1806",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1906&C=Title",
+            "19 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1906",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2006&C=Title",
+            "20 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2006",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2106&C=Title",
+            "21 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2106",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2206&C=Title",
+            "22 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2206",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2306&C=Title",
+            "23 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2306",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2406&C=Title",
+            "24 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2406",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2506&C=Title",
+            "25 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2506",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2606&C=Title",
+            "26 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2606",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2706&C=Title",
+            "27 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2706",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2806&C=Title",
+            "28 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2806",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2906&C=Title",
+            "29 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2906",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=3006&C=Title",
+            "30 Amshir",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=3006",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0107&C=Title",
+            "01 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0107",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0207&C=Title",
+            "02 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0207",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0307&C=Title",
+            "03 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0307",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0407&C=Title",
+            "04 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0407",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0507&C=Title",
+            "05 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0507",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0607&C=Title",
+            "06 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0607",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0707&C=Title",
+            "07 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0707",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0807&C=Title",
+            "08 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0807",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=0907&C=Title",
+            "09 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=0907",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1007&C=Title",
+            "10 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1007",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1107&C=Title",
+            "11 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1107",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1207&C=Title",
+            "12 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1207",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1307&C=Title",
+            "13 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1307",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1407&C=Title",
+            "14 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1407",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1507&C=Title",
+            "15 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1507",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1607&C=Title",
+            "16 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1607",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1707&C=Title",
+            "17 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1707",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1807&C=Title",
+            "18 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1807",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=1907&C=Title",
+            "19 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=1907",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2007&C=Title",
+            "20 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2007",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2107&C=Title",
+            "21 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2107",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2207&C=Title",
+            "22 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2207",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2307&C=Title",
+            "23 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2307",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2407&C=Title",
+            "24 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2407",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2507&C=Title",
+            "25 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2507",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2607&C=Title",
+            "26 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2607",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2707&C=Title",
+            "27 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2707",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2807&C=Title",
+            "28 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2807",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=2907&C=Title",
+            "29 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=2907",
+            "",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.synaxarium + "&D=3007&C=Title",
+            "30 Barmahat",
+            "",
+        ],
+        [
+            Prefix.synaxarium + "&D=3007",
+            "",
+            "",
+        ],
     ],
     [
         [
@@ -6827,7 +8018,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0308&C=Title", "3 Parmouté", " 3 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0308&C=Title",
+            "3 Parmouté",
+            " 3 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0308",
             "En ce jour de l’an 862 des martyrs (1146 après Jésus Christ) décéda le pape Michel II (البابا ميخائيل الثاني), le soixante-et-onzième patriarche de la prédication de saint Marc. Ce père naquit à Dakadôs (دقادوس) et, lorsqu’il grandit, il devint moine au monastère de saint Macaire le grand (دير القديس مكاريوس الكبير) à Scété. Ensuite il mena une vie d’ascétisme en s’adonnant à la prière et aux lectures saintes et il fut réputé pour sa vertu.",
@@ -6875,7 +8070,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0408&C=Title", "4 Parmouté", " 4 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0408&C=Title",
+            "4 Parmouté",
+            " 4 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0408",
             "L’Église commémore aujourd’hui le martyre de saint Victor (بقطر), saint Acace (أكاكيوس), saint Dèce (داكيوس), sainte Iriny la vierge (ايريني العذراء) ainsi que de nombreuses personnes, hommes, femmes et vierges, qui les accompagnaient.",
@@ -6928,7 +8127,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0508&C=Title", "5 Parmouté", " 5 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0508&C=Title",
+            "5 Parmouté",
+            " 5 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0508",
             "En ce jour de l’an 576 avant Jésus Christ eut lieu le martyre du grand prophète Ezéchiel fils de Buzi, le prêtre (حزقيال بن بوزى الكاهن).",
@@ -6981,7 +8184,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0608&C=Title", "6 Parmouté", " 6 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0608&C=Title",
+            "6 Parmouté",
+            " 6 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0608",
             "En ce jour de l’an 137 des martyrs (421 après Jésus Christ) décéda sainte Marie-la-copte (مريم القبطية), l’anachorète (السائحة). Cette sainte naquit à Alexandrie vers l’an 61 des martyrs (345 après Jésus Christ) de parents chrétiens. A l’âge de 12 ans, elle fut tentée par le démon qui fit d’elle un piège par lequel un grand nombre d’âmes fut égaré.",
@@ -7034,7 +8241,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0708&C=Title", "7 Parmouté", " 7 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0708&C=Title",
+            "7 Parmouté",
+            " 7 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0708",
             "Nous commémorons aujourd’hui le décès de saint Joachim le juste (الصديق يواقيم), le père de la sainte Vierge Marie. Il naquit à Nazareth (الناصرة) et était un descendant de David (نسل داود) de la tribu de Judas (سبط يهوذا). Son épouse Anne (حنة) était stérile. Mais Joachim et Anne poursuivaient les prières et Dieu leur accorda la naissance de sainte Marie. Comme Dieu les réjouit par cette naissance, Joachim l’offrit au temple puis il décéda en paix à l’âge de quatre-vingt ans. La sainte Vierge Marie avait atteint l’âge de trois ans.",
@@ -7087,7 +8298,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0808&C=Title", "8 Parmouté", " 8 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0808&C=Title",
+            "8 Parmouté",
+            " 8 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0808",
             "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre des trois vierges Agapé(أغابي), Irène3 (ايريني) et Chionia (سيونية). Ces trois saintes étaient originaires de Thessalonique (تسالونيكي) et leurs parents leur avaient appris à adorer le Christ. Elles décidèrent de vivre dans la chasteté et de mener une vie vertueuse en jeûnant et en priant en permanence. Elles se rendaient régulièrement dans les monastères de vierges pour partager avec les moniales leur ascétisme. Lorsque Maximien (مكسيميانوس) monta sur le trône, rétablit l’adoration des idoles et qu’il déclencha la persécution des chrétiens, ces trois saintes eurent peur et partirent se cacher dans une grotte où elles poursuivirent leurs vies de prière et d’ascétisme. Une vielle chrétienne des environs les visitait toutes les semaines. Elle vendait les œuvres de leurs mains, leur ramenant ce dont elles pouvaient avoir besoin et elle distribuait aux pauvres le surplus à leur demande.",
@@ -7115,7 +8330,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0908&C=Title", "9 Parmouté", " 9 برمودة"],
+        [
+            Prefix.synaxarium + "&D=0908&C=Title",
+            "9 Parmouté",
+            " 9 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=0908",
             "En ce jour de l’an 241 des martyrs (525 après Jésus Christ) décéda saint Zosime (زوسيما), le prêtre. Ce saint était un moine, un adorateur de Jésus Christ et un combattant de la Foi. Il naquit en 426 après Jésus Christ de parents chrétiens résidant en Palestine. A l’âge de 5 ans, ses parents le confièrent à un saint moine qui l’éduqua chrétiennement et lui enseigna la théologie. Peu de temps plus tard il fut ordonné diacre puis devint un moine. Alors, il progressa dans la vertu, s’adonnant à la louange et à la lecture nuit et jour, même pendant qu’il exerçait le travail manuel. Plus tard, à l’âge de trente-cinq ans, il fut ordonné prêtre et ceci l’incita à encore plus d’ascétisme et de combat spirituel.",
@@ -7158,7 +8377,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1008&C=Title", "10 Parmouté", " 10 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1008&C=Title",
+            "10 Parmouté",
+            " 10 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1008",
             "Nous commémorons aujourd’hui le décès du père combattant abba Isaac (أنبا ايساك), le disciple d’abba Apollo (أنبا أبُلوس). Ce saint méprisa le monde dès sa jeunesse et il devint moine à Scété. Il fut disciple d’abba Apollo pendant 25 ans pendant lesquels il lutta pour se débarrasser des désirs du corps. Il acquit les vertus du silence et du calme durant les prières De plus, il avait pris l’habitude de demeurer debout silencieux avec les bras croisés et la tête inclinée pendant toute la liturgie eucharistique. Ensuite, il retournait s’enfermer dans sa cellule et ne rencontrait personne ce jour-là. Lorsqu’on lui demanda : « Pourquoi ne dis-tu rien à personne pendant la prière et la liturgie eucharistique ? » il répondit : « Il y a un temps pour parler et un autre pour prier. »",
@@ -7231,7 +8454,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1108&C=Title", "11 Parmouté", " 11 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1108&C=Title",
+            "11 Parmouté",
+            " 11 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1108",
             "Nous commémorons aujourd’hui le décès de sainte Théodora (الام ثاؤذورا) qui naquit à Alexandrie. Elle était fille unique et ses parents étaient de riches chrétiens de cette ville. Ceux-ci voulurent la marier, alors, ils lui achetèrent une grande quantité de vêtements et de bijoux précieux. Mais la jeune fille n’accepta pas cela car son cœur penchait vers l’adoration de Dieu, l’ascétisme et elle voulait Lui consacrer sa vie. En conséquence, elle vendit tout ce que ses parents lui avaient apporté et distribua une partie aux pauvres puis utilisa le reste pour construire une église hors d’Alexandrie du côté ouest. A l’intérieur de l’enceinte de cette église elle construisit une cellule pour s’y installer. Puis elle continua de faire le bien aux pauvres, aux nécessiteux, aux malades et à ceux qui étaient en prison.",
@@ -7314,7 +8541,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1208&C=Title", "12 Parmouté", " 12 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1208&C=Title",
+            "12 Parmouté",
+            " 12 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1208",
             "En ce jour de chaque mois copte l’Église commémore l’archange Michel, le chef des puissances célestes qui intercède devant Dieu pour l’humanité.",
@@ -7362,7 +8593,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1308&C=Title", "13 Parmouté", " 13 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1308&C=Title",
+            "13 Parmouté",
+            " 13 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1308",
             "Nous commémorons aujourd’hui le martyre des deux saints moines abba Josué (أنبا يشوع) et abba Joseph (أنبا يوسف), les disciples de saint Milius (القديس ميليوس). Ils demeuraient dans une grotte se trouvant au Khorassân (خوراسان) où ils menaient, avec leur père spirituel, une vie d’ascèse et de combat spirituel.",
@@ -7430,7 +8665,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1408&C=Title", "14 Parmouté", " 14 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1408&C=Title",
+            "14 Parmouté",
+            " 14 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1408",
             "En ce jour de l’an 282 après Jésus Christ décéda le pape Maxime (مكسيموس), le quinzième patriarche de la prédication de saint Marc. Ce saint naquit à Alexandrie de parents chrétiens qui l’enrôlèrent dans l’école théologique d’Alexandrie. Il était pieux et craignait Dieu. De plus il maitrisa la langue grecque, la philosophie ainsi que la théologie.",
@@ -7478,7 +8717,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1508&C=Title", "15 Parmouté", " 15 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1508&C=Title",
+            "15 Parmouté",
+            " 15 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1508",
             "Nous commémorons aujourd’hui la consécration de l’église de saint Agabus (أغابوس), l’un des soixante-dix disciples. Ce saint avait prédit ce que devait subir l’apôtre saint Paul en disant : « L’homme à qui appartient cette ceinture, les Juifs le ligoteront de la sorte à Jérusalem et le livreront aux mains des nations. ».",
@@ -7521,7 +8764,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1608&C=Title", "16 Parmouté", " 16 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1608&C=Title",
+            "16 Parmouté",
+            " 16 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1608",
             "Nous commémorons en ce jour le martyre de saint Antipas (القديس أنتيباس), l’évêque de Pergame (برغاموس) et le disciple de l’apôtre saint Jean (يوحنا الرسول). Celui-ci en parla dans son Apocalypse. Ce saint a vécu à l’époque de l’empereur Domitien qui persécuta de nombreux chrétiens et tua certains cruellement.",
@@ -7564,7 +8811,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1708&C=Title", "17 Parmouté", " 17 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1708&C=Title",
+            "17 Parmouté",
+            " 17 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1708",
             "En ce jour de l’an 44 après Jésus Christ eut lieu le martyre de l’apôtre saint Jacques, fils de Zébédée (يعقوب بن زبدي). Il est surnommé Jacques le majeur pour qu’il soit différentié de Jacques le mineur, fils d’Alphée (يعقوب الصغير بن حلفى). Il naquit et fut élevé à Bethsaïde (بيت صيدا) de Galilée (الجليل) qui est aussi la ville de saint Pierre (بطرس) et saint André (أندراوس). Il était célibataire comme son frère Jean (يوحنا).",
@@ -7612,7 +8863,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1808&C=Title", "18 Parmouté", " 18 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1808&C=Title",
+            "18 Parmouté",
+            " 18 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1808",
             "En ce jour de l’an 21 des martyrs (305 après Jésus Christ) eut lieu le martyre de saint Arsène (القديس أرسنيوس) le disciple de saint Sissinius (القديس سوسنيوس). En effet, tandis que Dioclétien torturait saint Sissinius, on l’informa qu’Arsène avait les mêmes convictions que son maitre. Alors, il le fit venir et l’interrogea au sujet de ses croyances. Arsène confessa immédiatement sa Foi en Jésus Christ. Néanmoins, l’empereur tenta de l’amadouer pour lui faire changer d’avis sans résultat. Par contre, Arsène lui reprocha de s’être détourné du vrai Dieu pour adorer les idoles. Ceci mit l’empereur en colère et il ordonna qu’on le torture de toutes les manières et, finalement, il le fit décapiter.",
@@ -7645,7 +8900,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1908&C=Title", "19 Parmouté", " 19 برمودة"],
+        [
+            Prefix.synaxarium + "&D=1908&C=Title",
+            "19 Parmouté",
+            " 19 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=1908",
             "Nous commémorons aujourd’hui le martyre de saint Siméon l’arménien (القديس سمعان الأرمني), l’évêque de Perse (أسقف بلاد الفرس). Ce saint vécut à l’époque du roi Sapor II fils de Hormizd II (سابور بن هرمز) qui persécutait les chrétiens et les traitait avec cruauté.",
@@ -7728,7 +8987,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2008&C=Title", "20 Parmouté", " 20 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2008&C=Title",
+            "20 Parmouté",
+            " 20 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2008",
             "Nous commémorons aujourd’hui le martyre de saint Paphnouté (Babnoudé ببنوده) qui est originaire de Déndérah (Téntyri دندره). Ce saint était un moine ermite. L’ange du Seigneur lui apparut et lui dit de se présenter devant le gouverneur dont le bateau avait jeté l’ancre à Déndérah et qui était à la recherche de Paphnouté.",
@@ -7751,7 +9014,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2108&C=Title", "21 Parmouté", " 21 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2108&C=Title",
+            "21 Parmouté",
+            " 21 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2108",
             "L’église célèbre aujourd’hui la commémoration mensuelle de la très sainte Vierge Marie, la Mère de Dieu.",
@@ -7789,7 +9056,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2208&C=Title", "22 Parmouté", " 22 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2208&C=Title",
+            "22 Parmouté",
+            " 22 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2208",
             "En ce jour de l’an 44 des martyrs (328 après Jésus Christ) décéda saint Alexandre 1er (ألكسندروس الأول), le 19èmepatriarche de la prédication de saint Marc. Ce pape naquit à Alexandrie de parents chrétiens et il fut ordonné lecteur (أغنسطس) par le pape Maxime (مكسيموس). Plus tard le pape Théonas (ثاؤنا) l’ordonna diacre (شماس) ensuite il fut ordonné prêtre (قس) par le pape Pierre (بطرس).",
@@ -7897,7 +9168,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2308&C=Title", "23 Parmouté", " 23 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2308&C=Title",
+            "23 Parmouté",
+            " 23 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2308",
             "Nous commémorons aujourd’hui le martyre de saint Georges (القديس جورجيوس – مار جرجس). Ce saint naquit de parents chrétiens en Cappadoce (كبادوكية) d’Asie mineure (la Turquie actuellement) durant la première moitié du troisième siècle. Sa famille était riche et pieuse. Son père se prénommait Anastase (أنسطاسيوس) et il était gouverneur de Malatya(ملطية) en Cappadoce. Sa mère se prénommait Théopiste (ثاؤبستي) et était la fille du gouverneur de la ville de Lod (اللد) en Palestine. Saint Georges avait deux sœurs qui se prénommaient Cassia (كاسيا) et Madrona (مدرونة). Leur père décéda alors qu’ils étaient encore jeunes et ils furent élevés chrétiennement par leur mère.",
@@ -8002,7 +9277,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2508&C=Title", "25 Parmouté", " 25 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2508&C=Title",
+            "25 Parmouté",
+            " 25 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2508",
             "Nous commémorons aujourd’hui le martyre de sainte Sarah (سارة) et de ses deux fils. Cette sainte était originaire d’Antioche et elle était mariée à un homme nommé Socrate (سقراطس) qui était un officier de Dioclétien (دقلديانوس). Socrate avait renié sa Foi chrétienne pour s’attirer les bonnes grâces de l’empereur et prétendait qu’il le faisait par crainte de ce-dernier.",
@@ -8040,7 +9319,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2608&C=Title", "26 Parmouté", " 26 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2608&C=Title",
+            "26 Parmouté",
+            " 26 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2608",
             "En ce jour de l’an 21 des martyrs (305 après Jésus Christ) eut lieur le martyre de saint Sousnyos (القديس سوسنيوس). Ce saint était le fils unique d’un proche de Dioclétien (دقلديانوس) nommé Sosipater (سوسيبطرس). L’ange du Seigneur était apparu au saint et l’avait encouragé dans sa volonté d’obtenir la couronne du martyre et il conservait tout cela dans son cœur.",
@@ -8108,7 +9391,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2708&C=Title", "27 Parmouté", " 27 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2708&C=Title",
+            "27 Parmouté",
+            " 27 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2708",
             "En ce jour de l’an 22 des martyrs (306 après Jésus Christ) eut lieu le martyre de saint Victor, le fils de Romanos (القديس بقطر بن رومانوس). Son père était ministre de Dioclétien (دقلديانوس). Sa mère Marthe (مرثا) l'éduquât selon les principes chrétiens. Il évolua dans la hiérarchie romaine et devint le troisième personnage dans l'ordre protocolaire alors qu'il était encore jeune. II priait et jeûnait sans cesse, et dédaignait les vanités de ce monde et toutes ses gloires.",
@@ -8166,7 +9453,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2808&C=Title", "28 Parmouté", " 28 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2808&C=Title",
+            "28 Parmouté",
+            " 28 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2808",
             "Nous commémorons en ce jour le martyre de saint Milius (ميليوس). Ce saint était un ermite qui mena le combat spirituel tout au long de sa vie. Il demeurait dans une grotte des monts du Khorassan (خوراسان) avec ses deux disciples abba Josué (أنبا يشوع) et abba Joseph (أنبا يوسف).",
@@ -8175,9 +9466,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2808",
             "Les fils du roi de cette région sortirent pour chasser et installèrent des pièges. Ce saint se fit prendre par l’un d’eux alors qu’il était revêtu de peau de bête. En le voyant, les princes prirent peur et lui demandèrent : « Qui es-tu ? D’où viens-tu ? » Il leur répondit : « Je suis un homme et un pécheur qui demeure dans la montagne pour adorer le Seigneur Jésus Christ le Fils du Dieu vivant. » Ils lui répondirent : « il n’y a pas d’autres dieux que le soleil et le feu. Présente-leur tes offrandes et tu auras la vie sauve ». Il leur répondit : « Tout ceci n’est que la créature de Dieu. Vous ne connaissez pas la vérité et il serait préférable que vous adoriez le vrai Dieu qui a créé tout ceci. » Ils lui demandèrent: « Prétends-tu que celui que les juifs ont crucifié est Dieu ? » Il leur répondit : « Oui. Il a lui-même crucifié le péché et tué la mort. ». Alors ils se mirent en colère, attrapèrent les deux disciples, les torturèrent puis les tuèrent. Ensuite ils poursuivirent la persécution de Milius pendant deux semaines.",
-            "وحدث أن خرج ولدا ملك خوراسان لصيد الوحوش ونصبا شباكهما، فوقع هذا القديس داخلها. وكان هذا القديس لابساً ثوباً من الشعر. فلما رأياه خافا منه وسألاه قائلين: 'من أنت ومن أين " +
-                giaki.AR +
-                " '. فأجابهما: 'أنا إنسان خاطىء ساكن في هذا الجبل لعبادة الرب يسوع ابن الله الحي'. فقالا له: 'ليس إله إلا الشمس والنار فتقدم واعبدهما وإلا قتلناك'. فأجابهما: 'إن هذه من صنع الله وأنتما لا تعرفان الحق، والأفضل لكما أن تعبدا الإله الحقيقي خالق هذه كلها'. فقال له: 'أتزعم أن المصلوب من اليهود إله ؟'. فقال: 'نعم ذاك الذي صلب الخطية، وأمات الموت هو الإله'. فحنق الاثنان عليه وأمسكا تلميذيه وعذَّباهما وقتلاهما. وظلا يعذِّبان القديس مدة أسبوعين.",
+            "وحدث أن خرج ولدا ملك خوراسان لصيد الوحوش ونصبا شباكهما، فوقع هذا القديس داخلها. وكان هذا القديس لابساً ثوباً من الشعر. فلما رأياه خافا منه وسألاه قائلين: 'من أنت ومن أين " + giaki.AR + " '. فأجابهما: 'أنا إنسان خاطىء ساكن في هذا الجبل لعبادة الرب يسوع ابن الله الحي'. فقالا له: 'ليس إله إلا الشمس والنار فتقدم واعبدهما وإلا قتلناك'. فأجابهما: 'إن هذه من صنع الله وأنتما لا تعرفان الحق، والأفضل لكما أن تعبدا الإله الحقيقي خالق هذه كلها'. فقال له: 'أتزعم أن المصلوب من اليهود إله ؟'. فقال: 'نعم ذاك الذي صلب الخطية، وأمات الموت هو الإله'. فحنق الاثنان عليه وأمسكا تلميذيه وعذَّباهما وقتلاهما. وظلا يعذِّبان القديس مدة أسبوعين.",
         ],
         [
             Prefix.synaxarium + "&D=2808",
@@ -8196,7 +9485,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2908&C=Title", "29 Parmouté", " 29 برمودة"],
+        [
+            Prefix.synaxarium + "&D=2908&C=Title",
+            "29 Parmouté",
+            " 29 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=2908",
             "L’Église commémore aujourd’hui les grandes fêtes du Seigneur : l’Annonciation, la Nativité et la Résurrection. En ce jour on chante avec l’air de la joie et on s’abstient de se priver de nourriture et de faire des prosternations.",
@@ -8244,7 +9537,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=3008&C=Title", "30 Parmouté", " 30 برمودة"],
+        [
+            Prefix.synaxarium + "&D=3008&C=Title",
+            "30 Parmouté",
+            " 30 برمودة",
+        ],
         [
             Prefix.synaxarium + "&D=3008",
             "Nous commémorons aujourd’hui le martyre de saint Marc (القديس العظيم مار مرقس), l’un des soixante-dix disciples, en l’an 68 après Jésus Christ. Ce saint était juif de la tribu de Lévi (سبط لاوي) et il s’appelait Jean (يوحنا). Son nom grec était Marc.",
@@ -8302,7 +9599,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0109&C=Title", "1er Pachôns", " 1 بشنس"],
+        [
+            Prefix.synaxarium + "&D=0109&C=Title",
+            "1er Pachôns",
+            " 1 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=0109",
             "L’Église commémore aujourd’hui la naissance de la Mère de Dieu, la très sainte Vierge Marie. Par son intermédiaire le Salut fut donné aux hommes.",
@@ -8397,7 +9698,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0309&C=Title", "3 Pachôns", " 3 بشنس"],
+        [
+            Prefix.synaxarium + "&D=0309&C=Title",
+            "3 Pachôns",
+            " 3 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=0309",
             "Nous commémorons aujourd’hui le décès de saint Jason (ياسون), l’un des soixante-dix disciples. Ce saint naquit à Tarse (طرسوس) et était parent de l’apôtre saint Paul qui le mentionna dans son épître aux romains en disant : « Timothée, mon compagnon de travail, vous salue, ainsi que Lucius (لوكيوس), Jason et Sosipatros (سوسيبابرس), mes parents. » Il fut choisi par le Seigneur parmi les soixante-dix disciples qu’Il envoya en mission. Il prêcha avant la passion de notre sauveur et fit des miracles. Le Saint Esprit descendit sur lui le jour de la Pentecôte.",
@@ -8557,7 +9862,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0509&C=Title", "5 Pachôns", " 5 بشنس"],
+        [
+            Prefix.synaxarium + "&D=0509&C=Title",
+            "5 Pachôns",
+            " 5 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=0509",
             "Nous commémorons aujourd’hui le martyre du grand prophète Jérémie (إرميا). Il est le fils d’Hélkias (حلقيا), le prêtre. Il naquit à Anatoth (عناثوث) dans le territoire de Benjamin (بنيامين) proche de Jérusalem et, comme il faisait partie d’une famille d’ecclésiastiques, il avait une bonne connaissance de la Loi (الشريعة) et assistait assidûment aux festivités religieuses dans les différentes occasions.",
@@ -8772,7 +10081,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0709&C=Title", "7 Pachôns", " 7 بشنس"],
+        [
+            Prefix.synaxarium + "&D=0709&C=Title",
+            "7 Pachôns",
+            " 7 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=0709",
             "Nous commémorons aujourd’hui le décès du pape Athanase l’apostolique (أثاناسيوس الرسولي), le 20ème patriarche d’Alexandrie, en l’an 89 des martyrs (373 après Jésus Christ). Ce saint naquit dans cette ville aux environs de 297 après Jésus Christ et fut attiré par le christianisme en raison des bonnes manières qu’avaient des chrétiens qu’il côtoyait. Il fut baptisé par le pape Alexandre (ألكسندروس) qui l’ordonna diacre et le prit comme disciple. Il fut aussi le disciple de saint Antoine le père des moines (أنطونيوس أبي الرهبان). Rapidement, il se distingua en rédigeant ses deux livres : Contre les païens (ضد الوثنيين) et Sur l’incarnation du Verbe (تجسد الكلمة).",
@@ -8932,7 +10245,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0909&C=Title", "9 Pachôns", " 9 بشنس"],
+        [
+            Prefix.synaxarium + "&D=0909&C=Title",
+            "9 Pachôns",
+            " 9 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=0909",
             "Nous commémorons en ce jour le décès de sainte Hélène, la reine (القديسة هيلانة الملكة) en l’an 327 après Jésus Christ. Cette sainte naquit à Edesse (الرها) vers 247 après Jésus Christ de parents chrétiens qui lui donnèrent une bonne éducation conforme à leur Foi. Elle avait une apparence agréable et une belle âme. L’empereur de Byzance (ملك البيزنطية), Constance Chlore (قسطنطينوس) l’épousa lors d’un passage par cette ville et ils eurent un fils, l’empereur Constantin. Elle lui donna une bonne éducation et il monta sur le trône d’orient après le décès de son père. Il fit de Constantinople sa capitale. Un jour il eut une vision en plein jour et vit une croix illuminée. En dessous de cette croix il était inscrit : Avec ceci tu vaincras (بهذا تغلب). Il fit alors de la croix un fanion pour ses soldats et sortit vainqueur de la guerre.",
@@ -9082,7 +10399,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1109&C=Title", "11 Pachôns", " 11 بشنس"],
+        [
+            Prefix.synaxarium + "&D=1109&C=Title",
+            "11 Pachôns",
+            " 11 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=1109",
             "Nous commémorons en ce jour le décès de saint Paphnouté (أنبا بفنوتيوس), l'évêque, en l'an 570 des martyrs (1034 après Jésus Christ). Ce saint s'enrôla au monastère de saint Macaire le grand où il se consacra à la vie de prière et à l'érémitisme. Il y apprit à lire et à écrire et étudia la sainte Bible, les canons de l'Église et les écrits des pères. En conséquence, il fut ordonné prêtre.",
@@ -9252,7 +10573,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1309&C=Title", "13 Pachôns", " 13 بشنس"],
+        [
+            Prefix.synaxarium + "&D=1309&C=Title",
+            "13 Pachôns",
+            " 13 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=1309",
             "Nous commémorons en ce jour le décès en l'an 163 des martyrs (447 après Jésus Christ) de saint Arsène, le précepteur des fils de l'empereur. Ce saint naquit à Rome en 350 après Jésus Christ de parents pieux et riches. Ils lui enseignèrent les sciences de l'Église puis le présentèrent pour être ordonné diacre. Il apprit aussi le latin et le grec ce qui attira l'attention de l'empereur Théodose le grand qui le choisit pour être le précepteur de ses enfants Arcadius (أركاديوس) et Honorius (أونوريوس - هونوريوس). En conséquence, il acquit l'estime des deux princes.",
@@ -9402,7 +10727,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1509&C=Title", "15 Pachôns", " 15 بشنس"],
+        [
+            Prefix.synaxarium + "&D=1509&C=Title",
+            "15 Pachôns",
+            " 15 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=1509",
             "Nous commémorons en ce jour le martyre, en 68 après Jésus Christ, de saint Siméon le zélote (الغيور) ou le cananite (القانوي), l’un des douze apôtres. Ce saint naquit à Cana en Galilée (قانا الجليل). Il est appelé le zélote car il faisait partie de cette secte rigoriste et révolutionnaire qui était attaché fortement aux rites de Moïse. Il avait rejoint ce groupe environ vingt ans avant d’être appelé par le Seigneur.",
@@ -9512,7 +10841,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1709&C=Title", "17 Pachôns", " 17 بشنس"],
+        [
+            Prefix.synaxarium + "&D=1709&C=Title",
+            "17 Pachôns",
+            " 17 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=1709",
             "En ce jour de l’an 119 des martyrs (403 après Jésus Christ) décéda le grand saint Epiphane (إبيفانيوس), l’évêque de Chypre. Ce saint naquit en Palestine de parents juifs. Son père décéda en laissant derrière lui une grande fortune et sa mère s’occupa de son éducation ainsi que de celle de sa sœur.",
@@ -9647,7 +10980,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1909&C=Title", "19 Pachôns", " 19 بشنس"],
+        [
+            Prefix.synaxarium + "&D=1909&C=Title",
+            "19 Pachôns",
+            " 19 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=1909",
             "Nous commémorons aujourd’hui le décès d’abba Isaac (أنبا إسحاق), le prêtre des Kélias (القلالي). Ce saint naquit en haute Égypte vers 350 après Jésus Christ.",
@@ -9777,7 +11114,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2109&C=Title", "21 Pachôns", " 21 بشنس"],
+        [
+            Prefix.synaxarium + "&D=2109&C=Title",
+            "21 Pachôns",
+            " 21 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=2109",
             "L’Église célèbre aujourd’hui la commémoration mensuelle de la Mère de Dieu, la très sainte Vierge Marie par qui est venu le sauveur du monde.",
@@ -9917,7 +11258,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2309&C=Title", "23 Pachôns", " 23 بشنس"],
+        [
+            Prefix.synaxarium + "&D=2309&C=Title",
+            "23 Pachôns",
+            " 23 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=2309",
             "Nous commémorons en ce jour le décès de saint Junias (القديس يونياس), un des soixante-dix disciples que le Seigneur a choisi pour proclamer le Royaume des Cieux. Il naquit à Beit-Gébraïl (بيت جبرائيل) de la tribu de Juda (سبط يهوذا). Il était présent lors de la descente du Saint Esprit le jour de la Pentecôte. Il accompagna saint Andronique (أندرونيقوس) pour la prédication de l’Évangile. Ces saints étaient en contact avec saint Paul qui leur transmit ses salutations dans son épître aux Romains. Après le décès de saint Andronique, saint Junias l’ensevelit et le mit en terre puis pria le Seigneur pour ne pas qu’il soit séparé de son ami. Alors, il décéda le lendemain.",
@@ -10092,7 +11437,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2509&C=Title", "25 Pachôns", " 25 بشنس"],
+        [
+            Prefix.synaxarium + "&D=2509&C=Title",
+            "25 Pachôns",
+            " 25 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=2509",
             "En ce jour de l’an 22 des martyrs (306 après Jésus Christ) mourut martyr saint Colluthus (كولوتوس) connu sous le nom d’abba Kolta, le médecin (أنبا قلتة الطبيب).",
@@ -10180,7 +11529,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2609&C=Title", "26 Pachôns", " 26 بشنس"],
+        [
+            Prefix.synaxarium + "&D=2609&C=Title",
+            "26 Pachôns",
+            " 26 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=2609",
             "Nous commémorons en ce jour le martyre de l'apôtre saint Thomas (القديس توما) appelé Didyme (ce qui signifie : Jumeau التوأم) en l'an 72 après Jésus Christ. Ce saint est né en Galilée et fut choisi par notre Seigneur Jésus Christ lorsqu'Il nomma ces douze apôtres. Il suivit les enseignements de son maître et vit les miracles qu'Il fit.",
@@ -10340,7 +11693,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2809&C=Title", "28 Pachôns", " 28 بشنس"],
+        [
+            Prefix.synaxarium + "&D=2809&C=Title",
+            "28 Pachôns",
+            " 28 بشنس",
+        ],
         [
             Prefix.synaxarium + "&D=2809",
             "En ce jour de l’an 119 des martyrs (403 après Jésus Christ) arrivèrent à Chypre les reliques de saint Epiphane.",
@@ -10661,7 +12018,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0310&C=Title", "3 Paoni", " 3 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=0310&C=Title",
+            "3 Paoni",
+            " 3 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=0310",
             "Nous commémorons aussi aujourd’hui le martyr de saint Alladius (اللاديوس), l’évêque d’une contrée d’orient. Alors qu’il reprochait au gouverneur « Juliukus » (يوليكوس) d’adorer les idoles, celui-ci lui répondit : tu me considères comme un infidèle parce que je n’adore pas le crucifié ? Je ferai en sorte que toi aussi tu ne l’adores plus. » Il le remit alors à l’un de ses adjoints qui le tortura sans aucune pitié durant toute une année. Puis le gouverneur fit allumer un feu dans une fosse dans laquelle il le jeta. Mais le feu ne lui fit aucun tort. En conséquence, un grand nombre crut et le gouverneur les fit décapiter et ils obtinrent la couronne du martyre. Alors, on fit sortir le saint de la fosse et le gouverneur ordonna qu’on lui tranche la tête. Ainsi, saint Alladius fut décapité et il obtint la couronne des martyrs.",
@@ -10739,7 +12100,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0410&C=Title", "4 Paoni", " 4 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=0410&C=Title",
+            "4 Paoni",
+            " 4 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=0410",
             "Nous commémorons aujourd’hui le martyre de saint Sinoussious (سينوسيوس) qui est originaire de Balkim (بلكيم). Dans son enfance ce saint était berger et gardait des moutons. Il avait pris l’habitude de distribuer son pain aux autres petits bergers et, en conséquence, il passait toute sa journée à jeun car, malgré son jeune âge, son cœur était rempli d’amour pour les pauvres et les nécessiteux.",
@@ -10996,7 +12361,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0710&C=Title", "7 Paoni", " 7 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=0710&C=Title",
+            "7 Paoni",
+            " 7 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=0710",
             "Nous commémorons en ce jour le martyre de saint abba Éschyrône, plus connu sous le nom de 'Abbaskhayrône' (apa ÉC,uron أباسخيرون), le soldat en l’an 20 des martyrs (304 après Jésus Christ). Ce saint était originaire de la ville de Qualline (قلين) et faisait partie des soldats de la troupe d’Atrib (أتريب) à l’époque de Dioclétien (دقلديانوس). Lorsque ce dernier décréta l’adoration des idoles, abba Éschyrône refusa de se soumettre et, en conséquence, il fut mis en prison par le gouverneur de cette ville. Dans sa prison, le saint se mit à prier, alors, l’ange du Seigneur lui apparut pour l’affermir. Puis il fut envoyé auprès d’Arien (أريانوس) le gouverneur d’Antinoë (أنصنا). Dans le bateau qui le transportait, le saint pria et ses chaines se délièrent. Comme Arien se trouvait à Assiout, ils l’emmenèrent là-bas. Le saint confessa alors devant lui sa Foi en Jésus Christ.",
@@ -11086,7 +12455,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0910&C=Title", "9 Paoni", " 9 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=0910&C=Title",
+            "9 Paoni",
+            " 9 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=0910",
             "Nous commémorons aujourd’hui le décès en l’an 2947 après la création du monde du grand prophète Samuel (صاموئيل). Ce juste naquit à Armathaïm de Siphade la montagne d'Éphraïm (راماتايم صوفيم من جبل أفرايم). Son père se prénommait Elkana(القانا) et était lévite tandis que sa mère se prénommait Anne (حنة). Cette dernière était stérile mais ne cessait d’implorer Dieu qui lui accorda un fils qu’elle appela Samuel et l’éleva pendant trois ans puis le porta au temple pour se conformer au vœu qu’elle avait fait avant d’être enceinte. Samuel se mit alors au service d’Eli (عالي) le prêtre jusqu’à ce qu’il grandit. Les enfants d’Eli étaient des vauriens. Le Seigneur appela Samuel dans son sommeil et l’informa qu’Il condamne la maison d'Eli à cause du mal que faisaient ses fils sans qu'il ne les corrige.« Et Samuel devint grand et le Seigneur était avec lui et aucune de toutes ses paroles ne tomba à terre. Et tout Israël, de Dan (دان) jusqu’à Bêrsabée (بئر سبع), sut que Samuel était digne de foi comme prophète du Seigneur. Ainsi le Seigneur recommença à se manifester à Silo(شيلوه) car le Seigneur s’était révélé à Samuel. »",
@@ -11261,7 +12634,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1110&C=Title", "11 Paoni", " 11 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=1110&C=Title",
+            "11 Paoni",
+            " 11 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=1110",
             "En ce jour de l’an de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre du grand saint Euclide (أقلوديوس) fils du roi Ptolémaous (ابطلماوس), le frère du roi Numérien (نوماريوس). Ce saint qui était semblable aux anges était aussi vainqueur dans les combats. Il naquit à Antioche et, lorsqu’il grandit, s’enrôla dans l’armée et en devint un commandant car il était le neveu du roi. Il était aimé des habitants de sa ville à cause de son humilité et son courage.",
@@ -11376,7 +12753,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1310&C=Title", "13 Paoni", " 13 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=1310&C=Title",
+            "13 Paoni",
+            " 13 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=1310",
             "L'Église commémore en ce jour l’archange Gabriel (رئيس الملائكة جبرائيل [غبريال]). Cet archange a annoncé à Daniel le retour d’exil des fils d’Israël. Il annonça aussi à Zacharie la naissance de Jean et, six mois plus tard, il porta l’annonce de la venue du Verbe de Dieu lorsqu’il dit à la Vierge : « Voici que tu vas concevoir et enfanter un fils ; tu lui donneras le nom de Jésus. Il sera grand, Il sera appelé Fils du Très-Haut ; le Seigneur Dieu lui donnera le trône de David son père ; Il régnera pour toujours sur la maison de Jacob, et son règne n'aura pas de fin. ». En conséquence, l’Église lui donne le surnom de l’annonciateur.",
@@ -11456,7 +12837,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1510&C=Title", "15 Paoni", " 15 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=1510&C=Title",
+            "15 Paoni",
+            " 15 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=1510",
             "L'Église commémore aujourd'hui la consécration de l’église de saint Ménas (مار مينا) à Mariout (مريوط). En effet lorsque le Seigneur voulut faire apparaitre le corps de ce martyr, un berger faisait paître son troupeau près de l'endroit où était enterré ce grand saint. Un de ses moutons, malade de la gale, entra dans une mare d'eau qui était à proximité puis se roula dans le sable. Ce mouton guérit sur le champ. Le berger en fut tout étonné. Il prit la terre de cet endroit et la mélangea avec de l’eau de la mare puis en mit sur tous les moutons malades et ils guérissaient.",
@@ -11499,7 +12884,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1610&C=Title", "16 Paoni", " 16 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=1610&C=Title",
+            "16 Paoni",
+            " 16 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=1610",
             "Nous commémorons en ce jour le décès de saint Onuphre ou Abou-Nofr (أبو نفر), l’anachorète (أبو نفر السائح). Ce saint fut comblé de l’amour de Dieu et il s’enrôla dans un monastère d’Hermopolis (هرموبوليس). Il aima les moines et se conduisit avec eux humblement et avec piété. Toutefois il voulut s’isoler et, prenant un pain et quelques légumes, il partit vers le sud dans les montagnes qui séparent la haute Égypte des oasis qui se trouvent dans le désert occidental recherchant les conseils de Dieu. Pendant ce temps il vit son ange gardien qui l’accompagna dans une grotte où se trouvait un saint homme. Il demeura avec lui quelques jours pour apprendre comment être vainqueur dans le combat contre le démon. Après cela, le saint homme emmena Onuphre dans le désert intérieur en un lieu où se trouvait une grotte à côté de laquelle se trouvait un palmier puis il retourna à la sienne. A partir de ce moment saint Onuphre ne vit plus personne.",
@@ -11564,7 +12953,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1810&C=Title", "18 Paoni", " 18 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=1810&C=Title",
+            "18 Paoni",
+            " 18 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=1810",
             "En ce jour de l’an 321 des martyrs (605 après Jésus Christ) eut lieu le décès du pape Damien (البابا داميانوس), le 35ème patriarche de la prédication de saint Marc. Ce pape naquit à Alexandrie de parents chrétiens qui lui donnèrent une bonne éducation chrétienne. Dès sa jeunesse il désira mener une vie monastique, et lorsqu’il grandit il se rendit au désert de Scété pour devenir moine. Ensuite il s’installa au monastère Patirônec'est-à-dire des Pères (دير الآباء) qui se trouve à l'ouest d'Alexandrie où il approfondit sa vie d'ermite.",
@@ -11756,7 +13149,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2110&C=Title", "21 Paoni", " 21 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=2110&C=Title",
+            "21 Paoni",
+            " 21 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=2110",
             "Nous commémorons en ce jour l'édification à Philippes (فيلبي) de la première église dédiée à la très sainte Vierge Marie, la mère de Dieu. Quand l’apôtre Paul porta la Bonne Nouvelle dans cette ville, un grand nombre de ses habitants crurent en Jésus Christ. Ils édifièrent une église dédiée à la sainte Vierge Marie qui fut consacrée en ce jour. Nous nous devons donc de lui consacrer une fête spirituelle.",
@@ -11814,7 +13211,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2210&C=Title", "22 Paoni", " 22 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=2210&C=Title",
+            "22 Paoni",
+            " 22 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=2210",
             "L'Église commémore aujourd'hui la consécration de l'église de saint Côme (قزمان), de saint Damien (دميان), de leurs frères Antime (انثيموس), Léonce (لاونديوس) et Euprépius (ابرابيوس) ainsi que de leur mère Théodote (ثاؤذوتي). Ces saints furent martyrs à l’époque de Dioclétien et les fidèles conservèrent leurs corps. L’église fut édifiée après la fin des persécutions et elle fut consacrée en ce jour.",
@@ -11862,9 +13263,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2410",
             "Souvent il s’adressait au soleil en disant : « Si tu es le dieu, fais-le-moi savoir. » Il disait aussi : « Toi, le Dieu que je ne connais pas, fais-Toi connaître à moi.» Un jour il entendit une voix qui lui disait : « Les moines de Scété connaissent Dieu. Rends-toi chez eux et ils te le feront connaitre. » Il se leva sur-le-champ, prit son épée et se rendit au désert. A cet endroit il rencontra saint Isidore (إيسوذوروس) le prêtre de Scété qui, en le voyant, prit peur à cause de son apparence. Moïse le rassura alors en disant qu’il était venu auprès d’eux afin qu’ils lui fassent connaître le vrai Dieu. Alors saint Isidore le conduisit auprès de saint Macaire le grand (مكاريوس الكبير) qui lui parla du Christ, de l’Incarnation et de la Rédemption. Finalement il crut et saint Macaire le baptisa et le reçut comme moine. Moïse se mit alors à prier et à adorer Dieu sans compter. Mais le démon le combattait en lui rappelant sa vie antérieure. Il s’en ouvrait à saint Isidore qui le consolait, et lui enseignait comment faire pour vaincre les forces du mal.",
-            "وكانت الخيوط الأولى من توبته بدأت عندما كان يخاطب الشمس قائلاً: 'إن كنت أنت الإله فعرفيني وأنت أيها الإله الذي لا أعرفه عرفني ذاتك'. فسمع يوماً من يقول له أن رهبان برية شيهيت يعرفون الله فاذهب إليهم، فقام لوقته وتقلد سيفه وأتى إلى البرية، فالتقى بالقديس إيسوذوروس قس الإسقيط، الذي لما رآه خاف من منظره، فطمأنه موسى قائلاً: 'لا تخف فقد " +
-                giaki.AR +
-                " إليكم لتعرفوني الإله الحقيقي'. فأتى به إلى القديس مكاريوس الكبير فكلمه عن السيد المسيح والتجسد والفداء فآمن، فعمده وقبله راهباً فعاش القديس موسى في حياة روحية قوية وكان الشيطان يقاتله بما كان يمارسه أولاً من خطايا، فكان يأتي إلى القديس إيسوذوروس معلمه ويخبره بذلك، فكان يعزيه ويشجعه ويعلمه كيف يتغلب على حيل الشياطين.",
+            "وكانت الخيوط الأولى من توبته بدأت عندما كان يخاطب الشمس قائلاً: 'إن كنت أنت الإله فعرفيني وأنت أيها الإله الذي لا أعرفه عرفني ذاتك'. فسمع يوماً من يقول له أن رهبان برية شيهيت يعرفون الله فاذهب إليهم، فقام لوقته وتقلد سيفه وأتى إلى البرية، فالتقى بالقديس إيسوذوروس قس الإسقيط، الذي لما رآه خاف من منظره، فطمأنه موسى قائلاً: 'لا تخف فقد " + giaki.AR + " إليكم لتعرفوني الإله الحقيقي'. فأتى به إلى القديس مكاريوس الكبير فكلمه عن السيد المسيح والتجسد والفداء فآمن، فعمده وقبله راهباً فعاش القديس موسى في حياة روحية قوية وكان الشيطان يقاتله بما كان يمارسه أولاً من خطايا، فكان يأتي إلى القديس إيسوذوروس معلمه ويخبره بذلك، فكان يعزيه ويشجعه ويعلمه كيف يتغلب على حيل الشياطين.",
         ],
         [
             Prefix.synaxarium + "&D=2410",
@@ -11928,7 +13327,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2510&C=Title", "25 Paoni", " 25 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=2510&C=Title",
+            "25 Paoni",
+            " 25 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=2510",
             "En ce jour de l’an 285 des martyrs (569 après Jésus Christ) eut lieu le décès du pape Pierre IV (بطرس الرابع), le34ème patriarche de la prédication de saint Marc. En effet lorsque le pape Théodose 1er (البابا ثيؤدوسيوس) fut exilé par l’empereur Justin II (يوستنيان الثاني), celui-ci nomma un évêque intrus nommé Apollinaire (أبوليناريوس) mais le peuple copte le rejeta. Lorsque le pape décéda en exil, Apollinaire crut qu’il pourra enfin diriger l’Église copte.",
@@ -11956,7 +13359,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2610&C=Title", "26 Paoni", " 26 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=2610&C=Title",
+            "26 Paoni",
+            " 26 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=2610",
             "Nous commémorons en ce jour la consécration de l’église de l’archange Gabriel (جبرائيل) l’annonciateur (المبشر) qui se trouve au mont el-Nakloun à Fayoum (جبل النقلون بالفيوم). Cette église existe toujours de nos jours.",
@@ -12041,7 +13448,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2810&C=Title", "28 Paoni", " 28 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=2810&C=Title",
+            "28 Paoni",
+            " 28 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=2810",
             "En ce jour de l’an 283 des martyrs (567 après Jésus Christ) eut lieu le décès du pape saint Théodose (ثاؤدوسيوس), le 33ème patriarche de la prédication de saint Marc. Ce père naquit à Alexandrie et était un savant très chaste ayant une grande connaissance des livres de l’Église. Après le décès du pape Timothée (تيموثاوس), les évêques, les prêtres, les notables et tout le peuple se mirent d’accord pour consacrer ce père comme patriarche. Peu de temps après, le démon incita quelques personnes de se soulever contre lui et, avec le soutien de Julien (يوليانوس), ils sacrèrent patriarche l’archidiacre d’Alexandrie que le pape Timothée avait excommunié car il approuvait le concile de Chalcédoine. Le gouverneur de la ville exila le pape qui s’installa à Mallig (مليج) où il demeura deux ans tandis que saint Sévère d’Antioche (سويرس الانطاكي), qui demeurait à Sakha (سخا), le consolait et l’encourageait.",
@@ -12136,7 +13547,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=3010&C=Title", "30 Paoni", " 30 بؤنة"],
+        [
+            Prefix.synaxarium + "&D=3010&C=Title",
+            "30 Paoni",
+            " 30 بؤنة",
+        ],
         [
             Prefix.synaxarium + "&D=3010",
             "Nous commémorons en ce jour la naissance de saint Jean le baptiste (يوحنا المعمدان), le fils du prêtre Zacharie. Notre Seigneur a dit à son sujet : « Parmi ceux qui sont nés d’une femme, personne ne s’est levé de plus grand que Jean le Baptiste ». Ses parents, Zacharie et Elisabeth « étaient l’un et l’autre des justes devant Dieu : ils suivaient tous les commandements et les préceptes du Seigneur de façon irréprochable. Ils n’avaient pas d’enfant, car Élisabeth était stérile et, de plus, ils étaient l’un et l’autre avancés en âge. »Ils prièrent souvent pour que Dieu leur donne une descendance. Mais Dieu attendit que vienne la plénitude des temps quand le Sauveur devait naitre afin que leur fils Jean soit celui qui marchera devant lui avec l’Esprit d’Elie et sa puissance pour ... ... préparer au Seigneur un peuple bien disposé.",
@@ -12226,7 +13641,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0211&C=Title", "2 Apip", " 2 أبيب"],
+        [
+            Prefix.synaxarium + "&D=0211&C=Title",
+            "2 Apip",
+            " 2 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=0211",
             "En ce jour de l’an 68 après Jésus Christ eut lieu le martyre de l’apôtre saint Jude (القديس يهوذا), l’un des douze apôtres et l’un des frères du Seigneur. Saint Marc l’appelle Thaddée (تداوس) et saint Matthieu l’appelle Lebbaeus surnommé Thaddée (لباوس الملقب تداوس tandis que saint Luc l’appelle Jude le frère de Jacques (يهوذا أخي يعقوب). Ces différentes dénominations signifient « un homme de cœur » et « une personne comblée d’éloges ».",
@@ -12259,7 +13678,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0311&C=Title", "3 Apip", " 3 أبيب"],
+        [
+            Prefix.synaxarium + "&D=0311&C=Title",
+            "3 Apip",
+            " 3 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=0311",
             "En ce jour de l’an 160 des martyrs (444 après Jésus Christ) décéda le pape saint Cyrille 1er, le 24ème patriarche de la prédication de saint Marc. Il est surnommé le pilier de la Foi (عمود الدين) et la lumière de l’orthodoxie (مصباح الكنيسة الارثوذكسية). Ce pape naquit au village de Mahallat-el-Borg (محلة البرج), sa famille était chrétienne depuis plusieurs générations et son oncle était le pape Théophile (ثيؤفيلس), le 23ème patriarche. Il fut attiré par la lecture des livres saints ainsi que la vie des saints. Il était très intéressé par les cantiques de l’Église ainsi que ses louanges. Il étudia à l’école théologique où il apprit les sciences, la philosophie et la théologie et il excella dans toutes ses études.",
@@ -12426,7 +13849,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0611&C=Title", "6 Apip", " 6 أبيب"],
+        [
+            Prefix.synaxarium + "&D=0611&C=Title",
+            "6 Apip",
+            " 6 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=0611",
             "En ce jour de l’an 67 après Jésus Christ eut lieu le martyre de saint Olympas surnommé Paul (أولمباس الملقب بولس), l’un des soixante-dix disciples que notre Seigneur a choisi pour proclamer la Bonne Nouvelle. Il était présent lors de la descente du Saint Esprit le jour de la Pentecôte et accompagna saint Paul dans son voyage missionnaire. Celui-ci l’ordonna évêque pour la ville de Philippes (فيلبي) et il prit soin du troupeau du Christ de la meilleure des manières.",
@@ -12455,7 +13882,7 @@ ReadingsArrays.SynaxariumArray = [
     ],
     [
         [
-            Prefix.synaxarium + "&D=0711",
+            Prefix.synaxarium + "&D=0711&C=Title",
             "Décès d’Abba Chénouda, l’archimandrite. 7 Apip",
             "7 أبيب",
         ],
@@ -12506,7 +13933,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0811&C=Title", "8 Apip", " 8 أبيب"],
+        [
+            Prefix.synaxarium + "&D=0811&C=Title",
+            "8 Apip",
+            " 8 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=0811",
             "En ce jour de l’an 133 des martyrs (417 après Jésus Christ) eut lieu le décès de saint Pichoï, le bien-aimé de notre bon Sauveur. Il naquit dans un village nommé Châncha (شنشا) qui se trouve au gouvernorat de Ménoufieh (محافظة المنوفية) en Égypte en l’an 320 après Jésus Christ et il faisait partie d’une fratrie de six garçons. Leur père décéda et ils furent élevés par leur mère. Celle-ci eut une vision au cours de laquelle un ange du Seigneur lui disait : « Le Seigneur te dit : ‘donne-moi un de tes enfants pour me servir.’ » Elle lui répondit : « Qu’Il prenne celui qu’Il veut. » L’ange indiqua que c’était Pichoï. Sa mère dit alors : « Celui-ci est chétif. » L’ange lui dit alors : « La puissance du Seigneur donne toute sa mesure dans la faiblesse. »",
@@ -12676,7 +14107,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1011&C=Title", "10 Apip", " 10 ابيب"],
+        [
+            Prefix.synaxarium + "&D=1011&C=Title",
+            "10 Apip",
+            " 10 ابيب",
+        ],
         [
             Prefix.synaxarium + "&D=1011",
             "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre de saint Théodore (ثاؤدورس), l’évêque de la Pentapole occidentale (الخمس مدن الغربية). Ce saint fut consacré par le pape Théonas (ثاؤنا), le 16ème patriarche. Un an après sa nomination, la persécution des chrétiens fut déclenchée par Dioclétien (دقلديانوس). Ce dernier envoya un prince nommé Pilate (بيلاطس) comme gouverneur d’Ifriqyah et de ses provinces (افريقيا و اعمالها). Celui-ci entendit parler que cet évêque affermissait les chrétiens dans la Foi, alors, il le convoqua et lui demanda d’encenser les idoles. Saint Théodore lui répondit : « Tous les jours j’offre l’encens à mon Dieu Jésus Christ. » Le gouverneur perdit patience et ordonna qu’on le torture cruellement. Mais le saint demeura ferme dans sa Foi. Alors, il fut décapité et obtint la couronne du martyre.",
@@ -12766,7 +14201,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1211&C=Title", "12 Apip", " 12 أبيب"],
+        [
+            Prefix.synaxarium + "&D=1211&C=Title",
+            "12 Apip",
+            " 12 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=1211",
             "En ce jour, l’Église célèbre la commémoration mensuelle de l'archange Michel le chef des puissances célestes. Il intercède en tout temps auprès de Dieu tout-puissant pour l’humanité entière.",
@@ -12896,7 +14335,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1411&C=Title", "14 Apip", " 14 أبيب"],
+        [
+            Prefix.synaxarium + "&D=1411&C=Title",
+            "14 Apip",
+            " 14 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=1411",
             "En ce jour de l’an 19 des martyrs (303 après Jésus Christ) eut lieu le martyre de saint Procope (بروكونيوس). Ce saint naquit à Jérusalem d’un père chrétien et d’une mère païenne. Après le décès de son père, sa mère l’emmena auprès de Dioclétien (دقلديانوس) à qui elle fit des cadeaux précieux en lui demandant de lui octroyer la charge d’une ville. Celui-ci accepta ces cadeaux et nomma son fils gouverneur d’Alexandrie en lui ordonnant de torturer les chrétiens. Dès qu’il eut quitté Antioche, Procope entendit une voix venant du ciel qui l’appelait par son nom et le mettait en garde de persécuter les chrétiens. Puis, il vit une Croix de lumière et entendit une voix qui disait : « Je suis Jésus Christ, le Fils de Dieu crucifié à Jérusalem. » Cette apparition ressemblait à celle qu’avait vue, jadis, saint Paul sur le chemin de Damas. Procope crut et se fit confectionner une Croix en or sur le modèle de celle qui lui était apparue. En chemin, il fut attaqué par les barbares mais il sortit vainqueur grâce à la Croix.",
@@ -13006,7 +14449,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1611&C=Title", "16 Apip", " 16 أبيب"],
+        [
+            Prefix.synaxarium + "&D=1611&C=Title",
+            "16 Apip",
+            " 16 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=1611",
             "En ce jour de l’an 164 des martyrs (448 après Jésus Christ) décéda saint Jean, le détenteur de l'Évangile en or (القديس يوحنا صاحب الإنجيل الذهب), connu sous le nom de Jean al-koukhi (يوحنا الكوخي). Ce saint naquit à Constantinople d'un père vertueux nommé Atropius(أتروبيوس) qui était un commandant de l’armée et d’une mère qui se nommait Théodora (ثاؤدورة). Jean fut éduqué dans le luxe mais avait un penchant pour la vertu et la fréquentation de l’église. Sur sa demande, son père lui fournit un évangile relié en or et en pierres précieuses.",
@@ -13064,7 +14511,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1711&C=Title", "17 Apip", " 17 أبيب"],
+        [
+            Prefix.synaxarium + "&D=1711&C=Title",
+            "17 Apip",
+            " 17 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=1711",
             "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre de sainte Euphémie (أوفيمية). Cette sainte naquit à Chalcédoine (خلقدونية) de parents pieux et elle grandit dans la piété et la vertu. Lorsque la persécution des chrétiens fut déclenchée par Dioclétien, elle fut arrêtée par Priscus (بروكسوس), le gouverneur d’Asie mineure, en compagnie d’autres chrétiens et il leur ordonna de sacrifier aux idoles mais ils refusèrent. Alors, ils furent torturés et jetés en prison. Il tenta d’amadouer Euphémie mais elle lui répondit : « Je suis chrétienne et rien ne pourra m’éloigner de l’amour du Christ. » Alors il ordonna qu’on la torture mais le Christ la guérissait. Pris de colère, il la tortura de plus en plus cruellement mais ceci ne put que renforcer son amour pour le Christ et elle fit publiquement le signe de la Croix. Ensuite il l’a mise en pâture aux bêtes sauvages sans qu’elles ne l’attaquent et finalement elle rendit l’âme. Ces parents et quelques fidèles prirent son corps et l’enterrèrent dans un tombeau neuf. Après la fin des persécutions une église fut édifiée en son nom à Chalcédoine.",
@@ -13216,7 +14667,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2011&C=Title", "20 Apip", " 20 أبيب"],
+        [
+            Prefix.synaxarium + "&D=2011&C=Title",
+            "20 Apip",
+            " 20 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=2011",
             "En ce jour de l’an 36 des martyrs (320 après Jésus Christ) mourut martyr saint Théodore de Choteb (القديس تادرس الشطبي). Son père se nommait Jean et était originaire de Choteb (شُطب) en haute Égypte. Il fut envoyé à Antioche avec d’autres soldats où il épousa une princesse païenne puis ils eurent un fils à qui ils donnèrent le nom de Théodore. La princesse voulut l'éduquer à la manière des païens et lui apprendre l’adoration des idoles, mais son père s'y opposa car il était chrétien. Sa femme se mit alors en colère et le chassa. L'enfant demeura avec sa mère. Mais Jean priait sans cesse pour le salut de son fils et il s’installa dans son village à Choteb.",
@@ -13286,7 +14741,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2211&C=Title", "22 Apip", " 22 أبيب"],
+        [
+            Prefix.synaxarium + "&D=2211&C=Title",
+            "22 Apip",
+            " 22 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=2211",
             "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre de saint Macaire, le fils du ministre Basile (مكاريوس بن واسيليدس الوزير). Ce saint était un chrétien d’Antioche en Syrie. Il rejeta les ordres de Dioclétien concernant l’adoration des idoles. Quand l’empereur apprit cela, il l'exila à Alexandrie. Macaire fit alors ses adieux à sa mère lui recommandant de s'occuper des pauvres et des faibles puis partit avec la garde. Le Christ lui apparut en vision, l'encouragea et le prévint de ce qui allait lui arriver. Arrivé à Alexandrie, il fut présenté au gouverneur Armanius (أرمانيوس) qui, sachant qu'il était le fils du ministre Basile, commença par l’amadouer. Mais voyant que Macaire ne cédait pas, il le fit torturer. En désespoir de cause, Armanius l'envoya auprès de son homologue de Niquious (نقيوس)qui lui fit subir d'autres tortures et le mutila.",
@@ -13570,7 +15029,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2611&C=Title", "26 Apip", " 26 أبيب"],
+        [
+            Prefix.synaxarium + "&D=2611&C=Title",
+            "26 Apip",
+            " 26 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=2611",
             "En ce jour de l’an 16 après Jésus Christ décéda saint Joseph le juste (يوسف البار), le fiancé de la sainte Vierge Marie. Il est le fils de Jacob fils de Matthan (يعقوب بن متّان) selon la nature, et fils d'Héli, fils de Matthat (هالي بن متثات) selon la loi. Il fait partie de la descendance de David.",
@@ -13648,7 +15111,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2711&C=Title", "27 Apip", " 27 أبيب"],
+        [
+            Prefix.synaxarium + "&D=2711&C=Title",
+            "27 Apip",
+            " 27 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=2711",
             "En ce jour de l’an 19 des martyrs (303 après Jésus Christ) eut lieu le martyre de saint Apamôn (آبامون). Ce saint naquit au village de Tarnout (ترنوط). Il se rendit à Antinoë (أنصنا) et confessa sa Foi en Jésus Christ devant Arien (إريانوس), gouverneur de cette ville. Celui-ci le fit torturer de différentes manières mais le Christ, notre Seigneur, l'encourageait et le guérissait. Arien l'envoya alors chez Armanius (أرمانيوس) le gouverneur d’Alexandrie où il fut encore supplicié. L'ange du Seigneur lui apparut pour l’encourager et lui donner la force nécessaire pour supporter ce qu'il subissait.",
@@ -13723,7 +15190,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2911&C=Title", "29 Apip", " 29 أبيب"],
+        [
+            Prefix.synaxarium + "&D=2911&C=Title",
+            "29 Apip",
+            " 29 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=2911",
             "L’Église commémore en ce jour les trois grandes fêtes du Seigneur : l’Annonciation, la Nativité et la Résurrection. La prière de la liturgie utilise l’air joyeux et il est interdit en ce jour de s’abstenir de nourriture ou de faire des prosternations.",
@@ -13761,7 +15232,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=3011&C=Title", "30 Apip", " 30 أبيب"],
+        [
+            Prefix.synaxarium + "&D=3011&C=Title",
+            "30 Apip",
+            " 30 أبيب",
+        ],
         [
             Prefix.synaxarium + "&D=3011",
             "Nous célébrons en ce jour le martyre des deux saints Mercure (مرقوريوس) et Ephrem (أفرام). Ces deux saints naquirent à Akhmim (أخميم) et reçurent une éducation chrétienne. Lorsqu’ils grandirent, ils s'enrôlèrent dans un monastère des alentours et y demeurèrent pendant vingt ans. Ils vécurent dans une communion et un amour parfait.",
@@ -13851,7 +15326,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0212&C=Title", "2 Messori", " 2 مسرى"],
+        [
+            Prefix.synaxarium + "&D=0212&C=Title",
+            "2 Messori",
+            " 2 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=0212",
             "Nous commémorons aujourd’hui le décès de sainte Païssa (بائيسة). Elle naquit au cours du quatrième siècle à Ménouf (منوف) de parents pieux et riches qui lui donnèrent une éducation chrétienne. Elle persévérait dans le jeûne et la prière et aimait se mettre au service des pauvres et des miséreux.",
@@ -13865,9 +15344,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=0212",
             "Ses nouvelles parvinrent aux moines de Scété (شهيت). Ils en furent très peinés et demandèrent à saint Jean Colobos (abba Iwannyc pikoloboc – يحنس القصير) de l’aider pour le salut de son âme car elle leur avait fait beaucoup de bien. Lorsqu’il arriva, il fut reçu par la servante de Païssa. Alors il lui demanda de l’annoncer à sa maitresse. En entrant il chantait avec le psalmiste : « Même si je marche au milieu des ombres de la mort, je ne craindrai aucun mal, car tu es avec moi »Lorsqu’il s’installa il lui demanda : « Pourquoi as-tu délaissé le Christ pour faire tout ce mal ? » Puis il se mit à pleurer. Elle en fut affectée et lui demanda : « Pourquoi pleures-tu ? » Il lui répondit : « Je pleure parce que je vois sur ton visage les démons s’amuser, c’est pour cela que je pleure pour toi. » Elle lui demanda si elle pouvait se repentir. Il lui répondit : « Oui, mais pas ici ! » Elle lui dit alors : « Emmène-moi où tu veux. »",
-            "وعندما سمع آباء برية شيهيت بذلك حزنوا عليها وأرسلوا إليها القديس يحنس القصير لمساعدتها على خلاص نفسها، وعندما وصل إلى منزلها قال للبوابة: 'اعلمي سيدتك بقدومي'. ثم دخل وهو يرتل: 'إذا سرت في وادي ظل الموت لا أخاف شراً لأنك أنت معي' (مز 23: 4). ثم قال لها: 'لماذا استهنت بالسيد المسيح بهذا القرار و" +
-                giaki.AR +
-                " هذا الأمر الرديء؟'. فتأثرت من كلامه، أما هو فبكى. فقالت له: 'لماذا تبكي؟'. فأجابها: 'لأني أعاين الشياطين تلهو على وجهك فلهذا أنا أبكي'. فقالت له: 'هل لي توبة؟'. فأجابها القديس: 'نعم ولكن ليس في هذا المكان'. فقالت له: 'خذني إلى حيث تشاء'.",
+            "وعندما سمع آباء برية شيهيت بذلك حزنوا عليها وأرسلوا إليها القديس يحنس القصير لمساعدتها على خلاص نفسها، وعندما وصل إلى منزلها قال للبوابة: 'اعلمي سيدتك بقدومي'. ثم دخل وهو يرتل: 'إذا سرت في وادي ظل الموت لا أخاف شراً لأنك أنت معي' (مز 23: 4). ثم قال لها: 'لماذا استهنت بالسيد المسيح بهذا القرار و" + giaki.AR + " هذا الأمر الرديء؟'. فتأثرت من كلامه، أما هو فبكى. فقالت له: 'لماذا تبكي؟'. فأجابها: 'لأني أعاين الشياطين تلهو على وجهك فلهذا أنا أبكي'. فقالت له: 'هل لي توبة؟'. فأجابها القديس: 'نعم ولكن ليس في هذا المكان'. فقالت له: 'خذني إلى حيث تشاء'.",
         ],
         [
             Prefix.synaxarium + "&D=0212",
@@ -13928,7 +15405,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0412&C=Title", "4 Messori", " 4 مسرى"],
+        [
+            Prefix.synaxarium + "&D=0412&C=Title",
+            "4 Messori",
+            " 4 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=0412",
             "En ce jour de l’an 693 avant Jésus Christ décéda le roi Ezéchias (حزقيا) le juste fils d’Achaz (آحاز), le roi de Judée qui était un descendant du roi David.",
@@ -13976,7 +15457,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0512", "5 Messori", "5 مسرى"],
+        [
+            Prefix.synaxarium + "&D=0512",
+            "5 Messori",
+            "5 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=0512",
             "Nous commémorons en ce jour le décès de saint Jean le soldat (يوحنا الجندي) qui adorait Dieu.",
@@ -13994,7 +15479,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0612&C=Title", "6 Messori", " 6 مسرى"],
+        [
+            Prefix.synaxarium + "&D=0612&C=Title",
+            "6 Messori",
+            " 6 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=0612",
             "Nous commémorons aujourd'hui le martyre de sainte Juliette (يوليطة).",
@@ -14184,7 +15673,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=0812&C=Title", "8 Messori", " 8 مسرى"],
+        [
+            Prefix.synaxarium + "&D=0812&C=Title",
+            "8 Messori",
+            " 8 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=0812",
             "En ce jour de l’an 161 avant Jésus Christ eut lieu le martyre d’Eléazar (أليعازر), de son épouse Salomé (سالومي) et de leurs sept enfants.",
@@ -14244,7 +15737,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1012&C=Title", "10 Messori", " 10 مسرى"],
+        [
+            Prefix.synaxarium + "&D=1012&C=Title",
+            "10 Messori",
+            " 10 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=1012",
             "Nous commémorons aussi le martyre de saint Pikhebs (Piqybc بيخيبس).",
@@ -14361,7 +15858,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1312&C=Title", "13 Messori", " 13 مسرى"],
+        [
+            Prefix.synaxarium + "&D=1312&C=Title",
+            "13 Messori",
+            " 13 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=1312",
             "L'Église célèbre aujourd'hui la transfiguration (تجلي) de notre Seigneur et Sauveur Jésus Christ sur le mont Thabor (جبل طابور). Cette fête est une des sept fêtes mineures du Seigneur (الأعياد السيدية الصغرى).",
@@ -14399,7 +15900,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1412&C=Title", "14 Messori", " 14 مسرى"],
+        [
+            Prefix.synaxarium + "&D=1412&C=Title",
+            "14 Messori",
+            " 14 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=1412",
             "L'Église commémore en ce jour le souvenir d'un grand miracle que Dieu a fait à l’époque du pape Théophile (ثاؤفيلس) le 23ème patriarche.",
@@ -14544,7 +16049,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1612&C=Title", "16 Messori", " 16 مسرى"],
+        [
+            Prefix.synaxarium + "&D=1612&C=Title",
+            "16 Messori",
+            " 16 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=1612",
             "Nous commémorons aujourd'hui la proclamation de l'assomption du corps de la toute pure, la sainte Vierge Marie.",
@@ -14679,7 +16188,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=1812&C=Title", "18 Messori", " 18 مسرى"],
+        [
+            Prefix.synaxarium + "&D=1812&C=Title",
+            "18 Messori",
+            " 18 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=1812",
             "En ce jour de l’an 52 des martyrs (336 après Jésus Christ) décéda saint Alexandre (الكسندروس) le patriarche de Constantinople.",
@@ -14718,9 +16231,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=1812",
             "Ce saint se trouvait chez lui avec des amis idolâtres. Certains firent part de bruits qui couraient concernant une femme qui est arrivée à Achmounein (الأشمونين) accompagnée d'un petit enfant qui avait une allure royale. Après que ses invités l'eurent quitté, Eudamon partit pour Achmounein et, là-bas, il vit Jésus avec sa mère Marie. Alors, il se prosterna devant Lui. Quand l'Enfant le vit, Il lui sourit et lui dit : « Salut à toi, Eudamon, tu as peiné et tu es venu jusqu'ici pour t'assurer du bruit qui court me concernant. En conséquence, j'habiterai chez toi et ta demeure sera ma maison jusqu'à la fin des temps. ».",
-            "وحدث في أحد الأيام أنه استضاف في منزله بعضاً من عابدي الأوثان وكانوا يتحدثون عن امرأة وصلت إلى بلاد الأشمونين ومعها طفل صغير يشبه أولاد الملوك. فلما انصرف الضيوف نهض وادامون وركب دابته ووصل إلى مدينة الأشمونين، وهناك رأى الطفل يسوع مع مريم أمه فسجد له. فلما رآه الطفل تبسم في وجهه وقال له: 'السلام لك يا وادامون. قد تعبت و" +
-                giaki.AR +
-                " إلى هنا لتحقيق ما سمعت من حديث ضيوفك عني لذلك سأقيم عندك ويكون بيتك مسكناً لي إلى الأبد'",
+            "وحدث في أحد الأيام أنه استضاف في منزله بعضاً من عابدي الأوثان وكانوا يتحدثون عن امرأة وصلت إلى بلاد الأشمونين ومعها طفل صغير يشبه أولاد الملوك. فلما انصرف الضيوف نهض وادامون وركب دابته ووصل إلى مدينة الأشمونين، وهناك رأى الطفل يسوع مع مريم أمه فسجد له. فلما رآه الطفل تبسم في وجهه وقال له: 'السلام لك يا وادامون. قد تعبت و" + giaki.AR + " إلى هنا لتحقيق ما سمعت من حديث ضيوفك عني لذلك سأقيم عندك ويكون بيتك مسكناً لي إلى الأبد'",
         ],
         [
             Prefix.synaxarium + "&D=1812",
@@ -14781,7 +16292,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2012&C=Title", "20 Messori", " 20 مسرى"],
+        [
+            Prefix.synaxarium + "&D=2012&C=Title",
+            "20 Messori",
+            " 20 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=2012",
             "En ce jour de l’an 250 après Jésus Christ eut lieu le martyre des sept jeunes gens qui furent emmurés à Ephèse. Leurs noms étaient : Maximien (مكسيموس), Malchus (ملخوس), Marcien (مرتينيانوس), Denys (ديوناسيوس), Jean (يوحنا), Sérapion (سيرابيون), et Constantin (قسطنطين).",
@@ -14978,7 +16493,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2312&C=Title", "23 Messori", " 23 مسرى"],
+        [
+            Prefix.synaxarium + "&D=2312&C=Title",
+            "23 Messori",
+            " 23 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=2312",
             "Nous commémorons en ce jour le martyre de trente mille chrétiens à Alexandrie alors que Dioscore (ديسقورس) le pape d’Alexandrie était en exil sur l’ile de Gangra (غاغرا).",
@@ -15021,7 +16540,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2412&C=Title", "24 Messori", " 24 مسرى"],
+        [
+            Prefix.synaxarium + "&D=2412&C=Title",
+            "24 Messori",
+            " 24 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=2412",
             "Nous commémorons en ce jour le décès de saint Thomas (توما), l’évêque de Mar’ach (مرعش) en Syrie.",
@@ -15127,9 +16650,7 @@ ReadingsArrays.SynaxariumArray = [
         [
             Prefix.synaxarium + "&D=2512",
             "Un jour, un homme apporta son fils paralytique, le mit à la porte de la cellule de saint Bessarion et s’en alla. L’ayant entendu, ce saint lui demanda : d’où viens-tu ? , l’enfant lui répondit : mon père m’a déposé ici et il est parti. Alors le saint lui dit : Lève-toi et suis-le. Guérit, l’enfant se leva sur le champ et rejoignit son père qui le ramena à la maison en glorifiant Dieu. Dieu fit par son intermédiaire beaucoup d’autres miracles.",
-            "كان لرجل في مصر ابناً مشلولاً، فحمله إلى أنبا بيساريون وتركه على باب قلايته ووقف من بعيد. ولما سمع الشيخ صوت بكاء الولد سأله قائلاً: 'من أين " +
-                giaki.AR +
-                "؟' فقال له: 'أحضرني أبى ومضى'. فقال له الشيخ: 'انهض واذهب وراء والدك'. ففي الحال شُفى الولد ومضى إلى أبيه، فأخذه ورجع إلى بيته ممجداً الله. وقد أجرى الله على يديه آيات كثيرة.",
+            "كان لرجل في مصر ابناً مشلولاً، فحمله إلى أنبا بيساريون وتركه على باب قلايته ووقف من بعيد. ولما سمع الشيخ صوت بكاء الولد سأله قائلاً: 'من أين " + giaki.AR + "؟' فقال له: 'أحضرني أبى ومضى'. فقال له الشيخ: 'انهض واذهب وراء والدك'. ففي الحال شُفى الولد ومضى إلى أبيه، فأخذه ورجع إلى بيته ممجداً الله. وقد أجرى الله على يديه آيات كثيرة.",
         ],
         [
             Prefix.synaxarium + "&D=2512",
@@ -15240,7 +16761,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2712&C=Title", "27 Messori", " 27 مسرى"],
+        [
+            Prefix.synaxarium + "&D=2712&C=Title",
+            "27 Messori",
+            " 27 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=2712",
             "Nous commémorons en ce jour le martyre de saint Benjamin (القديس بنيامين) et de sa sœur sainte Eudoxie (أودكسية).",
@@ -15380,7 +16905,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=2912&C=Title", "29 Messori", " 29 مسرى"],
+        [
+            Prefix.synaxarium + "&D=2912&C=Title",
+            "29 Messori",
+            " 29 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=2912",
             "L’Église commémore en ce jour l’Annonciation, la Nativité et la Résurrection de notre Seigneur. Ces fêtes font partie des sept fêtes majeures du Seigneur. La prière de la liturgie utilise l’air joyeux et il est interdit en ce jour de s’abstenir de nourriture ou de faire des prosternations.",
@@ -15443,7 +16972,11 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
     [
-        [Prefix.synaxarium + "&D=3012&C=Title", "30 Messori", " 30 مسرى"],
+        [
+            Prefix.synaxarium + "&D=3012&C=Title",
+            "30 Messori",
+            " 30 مسرى",
+        ],
         [
             Prefix.synaxarium + "&D=3012",
             "En ce jour de l’an 430 avant Jésus Christ décéda le prophète Malachie (ملاخي), l’un des 12 prophètes mineurs. Il est le dernier des prophètes de l’ancien testament.",
@@ -15758,4 +17291,4 @@ ReadingsArrays.SynaxariumArray = [
         ],
     ],
 ];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZVN5bmF4YXJpdW1BcnJheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL21vZHVsZXMvRGVjbGFyZVN5bmF4YXJpdW1BcnJheS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLENBQUMsZUFBZSxHQUFHO0lBQy9CO1FBQ0U7WUFDRSxNQUFNLENBQUMsVUFBVSxHQUFHLGlCQUFpQjtZQUNyQyw2T0FBNk87WUFDN08sUUFBUTtTQUNUO1FBQ0Q7WUFDRSxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVM7WUFDN0IsK1hBQStYO1lBQy9YLHVQQUF1UDtTQUN4UDtRQUNEO1lBQ0UsTUFBTSxDQUFDLFVBQVUsR0FBRyxTQUFTO1lBQzdCLDBkQUEwZDtZQUMxZCwyVkFBMlY7U0FDNVY7UUFDRDtZQUNFLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUztZQUM3QixvYkFBb2I7WUFDcGIsMlNBQTJTO1NBQzVTO1FBQ0Q7WUFDRSxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVM7WUFDN0IsbUxBQW1MO1lBQ25MLDZHQUE2RztTQUM5RztRQUNEO1lBQ0UsTUFBTSxDQUFDLFVBQVUsR0FBRyxTQUFTO1lBQzdCLDB6QkFBMHpCO1lBQzF6QiwwakJBQTBqQjtTQUMzakI7UUFDRDtZQUNFLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUztZQUM3Qix5aUNBQXlpQztZQUN6aUMsa3FCQUFrcUI7U0FDbnFCO1FBQ0Q7WUFDRSxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVM7WUFDN0IsNlBBQTZQO1lBQzdQLHNOQUFzTjtTQUN2TjtRQUNEO1lBQ0UsTUFBTSxDQUFDLFVBQVUsR0FBRyxTQUFTO1lBQzdCLHVHQUF1RztZQUN2RyxnRUFBZ0U7U0FDakU7UUFDRDtZQUNFLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUztZQUM3QiwwZkFBMGY7WUFDMWYsbVhBQW1YO1NBQ3BYO1FBQ0Q7WUFDRSxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVM7WUFDN0Isb1NBQW9T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LENBQUMsVUFBVSxHQUFHLFNBQVMsRUFBRSxFQUFFLEVBQUUsRUFBRSxDQUFDO0tBQ3hDO0lBQ0Q7UUFDRSxDQUFDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsaUJBQWlCLEVBQUUsU0FBUyxFQUFFLEVBQUUsQ0FBQztRQUN0RCxDQUFDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUyxFQUFFLEVBQUUsRUFBRSxFQUFFLENBQUM7S0FDeEM7SUFDRDtRQUNFLENBQUMsTUFBTSxDQUFDLFVBQVUsR0FBRyxpQkFBaUIsRUFBRSxTQUFTLEVBQUUsRUFBRSxDQUFDO1FBQ3RELENBQUMsTUFBTSxDQUFDLFVBQVUsR0FBRyxTQUFTLEVBQUUsRUFBRSxFQUFFLEVBQUUsQ0FBQztLQUN4QztJQUNEO1FBQ0UsQ0FBQyxNQUFNLENBQUMsVUFBVSxHQUFHLGlCQUFpQixFQUFFLFNBQVMsRUFBRSxFQUFFLENBQUM7UUFDdEQsQ0FBQyxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVMsRUFBRSxFQUFFLEVBQUUsRUFBRSxDQUFDO0tBQ3hDO0lBQ0Q7UUFDRSxDQUFDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsaUJBQWlCLEVBQUUsU0FBUyxFQUFFLEVBQUUsQ0FBQztRQUN0RCxDQUFDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUyxFQUFFLEVBQUUsRUFBRSxFQUFFLENBQUM7S0FDeEM7SUFDRDtRQUNFLENBQUMsTUFBTSxDQUFDLFVBQVUsR0FBRyxpQkFBaUIsRUFBRSxTQUFTLEVBQUUsRUFBRSxDQUFDO1FBQ3RELENBQUMsTUFBTSxDQUFDLFVBQVUsR0FBRyxTQUFTLEVBQUUsRUFBRSxFQUFFLEVBQUUsQ0FBQztLQUN4QztJQUNEO1FBQ0UsQ0FBQyxNQUFNLENBQUMsVUFBVSxHQUFHLGlCQUFpQixFQUFFLFNBQVMsRUFBRSxFQUFFLENBQUM7UUFDdEQsQ0FBQyxNQUFNLENBQUMsVUFBVSxHQUFHLFNBQVMsRUFBRSxFQUFFLEVBQUUsRUFBRSxDQUFDO0tBQ3hDO0lBQ0Q7UUFDRSxDQUFDLE1BQU0sQ0FBQyxVQUFVLEdBQUcsU0FBUyxFQUFF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
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZVN5bmF4YXJpdW1BcnJheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL21vZHVsZXMvRGVjbGFyZVN5bmF4YXJpdW1BcnJheS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLENBQUMsZUFBZSxHQUFHLENBQUM7UUFDaEM7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw2T0FBNk87WUFDN08sUUFBUTtTQUNQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLFNBQVM7WUFDM0IsK1hBQStYO1lBQy9YLHVQQUF1UDtTQUN0UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxTQUFTO1lBQzNCLDBkQUEwZDtZQUMxZCwyVkFBMlY7U0FDMVY7UUFDRDtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsU0FBUztZQUMzQixvYkFBb2I7WUFDcGIsMlNBQTJTO1NBQzFTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLFNBQVM7WUFDM0IsbUxBQW1MO1lBQ25MLDZHQUE2RztTQUM1RztRQUNEO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxTQUFTO1lBQzNCLDB6QkFBMHpCO1lBQzF6Qixna0JBQWdrQjtTQUMvakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsU0FBUztZQUMzQix5aUNBQXlpQztZQUN6aUMsMHFCQUEwcUI7U0FDenFCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLFNBQVM7WUFDM0IsNlBBQTZQO1lBQzdQLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxTQUFTO1lBQzNCLHVHQUF1RztZQUN2RyxnRUFBZ0U7U0FDL0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsU0FBUztZQUMzQiwwZkFBMGY7WUFDMWYsbVhBQW1YO1NBQ2xYO1FBQ0Q7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLFNBQVM7WUFDM0Isb1NBQW9T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

@@ -208,6 +208,8 @@ justify-self: center;
   column-gap: 5px ;
   height:fit-content;
   text-align: justify;
+  text-justify: inter-word;
+  text-align-last: start;
   border-radius: 5px;
   margin: 1px 0px;
   padding:1px 5px;
@@ -253,6 +255,9 @@ justify-self: center;
   color: white;
   float: inline-start;
   margin-left: 5px;
+}
+.DisplayModePresentation{
+grid-template: "FR AR" 50% "COP COP" 100%;
 }
 
 .Priest,
