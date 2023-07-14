@@ -532,6 +532,10 @@ div.ReadingEnd{
   font-size:20pt !important;
   line-height: 35px;
 }
+.TargetRow > p.amplifiedText.COP{
+  font-size:20pt !important;
+  line-height: 35px;
+}
 
 .TargetRow .TargetRowTitle .amplifiedText{
   font-size: large !important;
