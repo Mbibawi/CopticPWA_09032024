@@ -244,6 +244,7 @@ justify-self: center;
   font-weight: bold;
   font-size: medium;
   text-align: center !important;
+  text-justify: inter-word;
 }
 .TargetRow >p, .TargetRowTitle >p, .Comment > p, .CommentText > p{
   margin:0px 0px;
@@ -518,12 +519,6 @@ div.ReadingEnd{
   grid-template-columns: 100%;
 }
 
-
-/* .TargetRow .amplifiedText{
-  font-size: x-large !important;
-  line-height: 45px;
-} */
-
 .TargetRow > p.amplifiedText.AR{
   font-size:30pt !important;
   line-height: 48px;
@@ -537,7 +532,4 @@ div.ReadingEnd{
   line-height: 35px;
 }
 
-.TargetRow .TargetRowTitle .amplifiedText{
-  font-size: large !important;
-  line-height: 25px !important;
-}
+
