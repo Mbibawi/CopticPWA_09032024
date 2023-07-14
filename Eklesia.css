@@ -209,7 +209,6 @@ justify-self: center;
   height:fit-content;
   text-align: justify;
   text-justify: inter-word;
-  text-align-last: start;
   border-radius: 5px;
   margin: 1px 0px;
   padding:1px 5px;
@@ -244,7 +243,7 @@ justify-self: center;
 .TargetRowTitle > p{
   font-weight: bold;
   font-size: medium;
-  text-align: center;
+  text-align: center !important;
 }
 .TargetRow >p, .TargetRowTitle >p, .Comment > p, .CommentText > p{
   margin:0px 0px;
