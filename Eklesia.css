@@ -257,8 +257,64 @@ justify-self: center;
   margin-left: 5px;
 }
 .DisplayModePresentation{
-grid-template: "FR AR" 50% "COP COP" 100%;
+grid-template: "FR AR"  "COP COP";
+background-color: black !important;
+margin-top: 10px;
 }
+.DisplayModePresentation>p.COP{
+  text-align: center;
+  font-size: 30pt;
+  line-height: 30pt;
+  margin-top: 10px;
+}
+.DisplayModePresentation>p.FR{
+  text-align: justify;
+  font-size: 25pt;
+  border-right-color: white;
+  border-right-style: solid;
+  border-right-width: 3px;
+  padding-right: 10px;
+  line-height: 30pt;
+}
+.DisplayModePresentation>p.AR{
+  text-align: justify;
+  font-size: 35pt !important;
+  line-height: 35pt;
+  border-left: 10px white;
+}
+
+.DisplayModePresentation>p.FR,
+.DisplayModePresentation>p.AR, 
+.DisplayModePresentation>p.COP{
+  background-color: black;
+  color:white;
+}
+
+.DisplayModePresentation.TargetRowTitle{
+  grid-template: "FR AR";
+  font-size: 10pt !important;
+  align-items: stretch;
+  height: 20pt;
+  background-color: beige !important;
+  border-color: beige;
+  color:red !important;
+}
+.DisplayModePresentation.TargetRowTitle>p{
+  font-size: 15pt !important;
+  height: 10px;
+  line-height: 30px;
+  margin: 0px;
+  padding: 0px;
+  row-gap: 0px;
+  color:red;
+  background-color: white;
+}
+div.DisplayModePresentation.Comment,
+div.DisplayModePresentation.CommentText
+{
+  display: none !important;
+}
+
 
 .Priest,
 #PriestColor {
@@ -531,5 +587,13 @@ div.ReadingEnd{
   font-size:20pt !important;
   line-height: 35px;
 }
-
+:lang(ar){
+quotes: '"' '"';
+}
+:lang(fr){
+  quotes: "« " " »" ;
+}
+:lang(en){
+  quotes: '"' '"';
+}
 

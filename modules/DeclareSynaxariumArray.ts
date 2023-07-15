@@ -1916,7 +1916,7 @@ ReadingsArrays.SynaxariumArray = [[
   ], 
   [
   Prefix.synaxarium+"&D=2601", 
-  "Alors Zacharie dit à l’ange : « Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée  ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
+  "Alors Zacharie dit à l’ange : «  »Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
   "فقال زكريا للملاك: \"كيف أعلم هذا لأني أنا شيخ وامرأتي متقدمة في أيامها\". فأجاب الملاك وقال له: \"أنا جبرائيل الواقف أمام الله، وأرسلني الله لأبشرك بهذا، وها أنت تكون صامتاً إلى اليوم الذي يكون فيه هذا، لأنك لم تصدِّق كلامي الذي سيتم في حينه\" ( لو 1: 8 – 20 ).", 
   ], 
   [
@@ -3971,7 +3971,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0303&C=Title", 
   "3 Athor\n1) Martyre de Saint Athanase et sa sœur Irène;\n2) Martyre de Saint Agathon\n3) Décès de Saint Cyriaque de Corinthe ", 
-  " 3 هاتور\nاستشهاد القديس أثناسيوس وأخته إيرينى\n\nاستشهاد القديس أغاثون\n\nنياحة القديس كيرياكوس من أهل كورنثوس\n", 
+  " 3 هاتور\nاستشهاد القديس أثناسيوس وأخته إيرينى\nاستشهاد القديس أغاثون\nنياحة القديس كيرياكوس من أهل كورنثوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0303", 
@@ -4043,7 +4043,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0403&C=Title", 
   "4 Athor\n1) Martyre des saints Jean et Jacques, les évêques de Perse;\n2) Martyr de Saint Thomas, l’évêque;\n3) Martyre des Saints Epimaque et Gordien ", 
-  " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\n\nاستشهاد الأنبا توماس الأسقف\n\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n", 
+  " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\n\nاستشهاد الأنبا توماس الأسقف\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0403", 
@@ -4105,7 +4105,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0503&C=Title", 
   " 5 Athor\n1) Apparition de la tête de Saint Longin, le soldat. Martyre de saint Timothée;\n2)  Transfert des reliques de Saint Théodore à Choteb;\n3) Décès de Saint Joseph au mont Chamah", 
-  " 5 هاتور\nظهور رأس القديس لُونجينوس الجُندي\n\nاستشهاد القديس تيموثاوس وزوجته مورا\n\nنقل جسد الأمير تادرس الشُطبى إلى بلدة شُطب\n\nنياحة القديس يوساب بجبل شامة\n", 
+  " 5 هاتور\nظهور رأس القديس لُونجينوس الجُندي\nاستشهاد القديس تيموثاوس وزوجته مورا\nنقل جسد الأمير تادرس الشُطبى إلى بلدة شُطب\nنياحة القديس يوساب بجبل شامة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0503", 
@@ -11541,7 +11541,7 @@ ReadingsArrays.SynaxariumArray = [[
   ], 
   [
   Prefix.synaxarium+"&D=2609", 
-  "Il était loyal, courageux, recherchant la connaissance, méticuleux dans la recherche de la vérité par la preuve. Sa loyauté est apparue clairement lorsque le Sauveur voulut se rendre auprès de Lazare alors que ses disciples savaient que les Juifs cherchaient à le tuer. Alors Thomas dit : « Allons-y nous aussi, pour mourir avec lui ! ». C'est encore lui qui demanda à notre Seigneur lors du dernier repas : «Seigneur, nous ne savons même pas où tu vas ; comment pourrions-nous savoir le chemin ? » Jésus lui répondit : « Moi, je suis le Chemin, la Vérité et la Vie »", 
+  "Il était loyal, courageux, recherchant la connaissance, méticuleux dans la recherche de la vérité par la preuve. Sa loyauté est apparue clairement lorsque le Sauveur voulut se rendre auprès de Lazare alors que ses disciples savaient que les Juifs cherchaient à le tuer. Alors Thomas dit : « Allons-y nous aussi, pour mourir avec lui ! ». C'est encore lui qui demanda à notre Seigneur lors du dernier repas : « Seigneur, nous ne savons même pas où tu vas ; comment pourrions-nous savoir le chemin ? » Jésus lui répondit : « Moi, je suis le Chemin, la Vérité et la Vie »", 
   "ظهر إخلاصه حين كان السيد المسيح مزمعاً أن يقيم لعازر وكان التلاميذ يعلمون أن اليهود قد عزموا على قتل المخلِّص فقال توما: 'لنذهب نحن أيضاً كي نموت معه' (يو 11: 16). وهو الذي سأل السيد بعد العشاء قائلاً: 'يا سيد لسنا نعلم أين تذهب فكيف نقدر أن نعرف الطريق؟ ' قال له يسوع: ' أنا هو الطريق والحق والحياة' (يو 14: 5، 6).", 
   ], 
   [
