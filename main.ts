@@ -6,24 +6,24 @@ const copticReadingsDates: string[][] = getCopticReadingsDates();
  */
 function addOrRemoveLanguage(el: HTMLElement) {
   let lang: string;
-  lang = el.dataset.lang;
+  lang = el.lang;
   //we check that the language that we need to add is included in the userLanguages array
   if (userLanguages.indexOf(lang) > -1) {
     //The language is included in the userLanguages
-    if (lang == "CA" && userLanguages.indexOf("COP") == -1) {
+    if (lang === "CA" && userLanguages.indexOf("COP") === -1) {
       userLanguages.splice(userLanguages.indexOf(lang), 1, "COP");
-    } else if (lang == "EN" && userLanguages.indexOf("FR") == -1) {
+    } else if (lang === "EN" && userLanguages.indexOf("FR") === -1) {
       userLanguages.splice(userLanguages.indexOf(lang), 1, "FR");
     } else {
       userLanguages.splice(userLanguages.indexOf(lang), 1);
     }
     el.innerText = el.innerText.replace("Remove", "Add");
-  } else if (userLanguages.indexOf(lang) == -1) {
+  } else if (userLanguages.indexOf(lang) === -1) {
     //The language is not included in user languages, we will add it
     //if the user adds the Coptic in Arabic characters, we assume he doesn't need the Coptic text we do the same for English and French
-    if (lang == "CA" && userLanguages.indexOf("COP") > -1) {
+    if (lang === "CA" && userLanguages.indexOf("COP") > -1) {
       userLanguages.splice(userLanguages.indexOf("COP"), 1, lang);
-    } else if (lang == "EN" && userLanguages.indexOf("FR") > -1) {
+    } else if (lang === "EN" && userLanguages.indexOf("FR") > -1) {
       userLanguages.splice(userLanguages.indexOf("FR"), 1, lang);
       console.log(userLanguages);
     } else {
@@ -103,7 +103,7 @@ function createHtmlElementForPrayer(
   if (actorClass && actorClass !== "Title") {
     // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
     htmlRow.classList.add(actorClass);
-  } else if (actorClass && actorClass == "Title") {
+  } else if (actorClass && actorClass === "Title") {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(htmlRow);
@@ -146,15 +146,13 @@ function createHtmlElementForPrayer(
       p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
       text = tblRow[x];
       p.lang = lang.toLowerCase();
-      p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
       p.classList.add(lang);
-
       p.innerText = text;
-      p.addEventListener("dblclick", (event) => {
-        toggleAmplifyText(event, "amplifiedText");
+      p.addEventListener("dblclick", (ev:MouseEvent) => {
+        ev.preventDefault();
+        toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
       }); //adding a double click eventListner that amplifies the text size of the chosen language;
       htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
-    } else {
     }
   }
   try{
@@ -267,7 +265,7 @@ function showChildButtonsOrPrayers(
   
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
   setCSSGridTemplate(container.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
-  applyAmplifiedText(container.querySelectorAll("p[data-lang]"));
+  applyAmplifiedText(container.querySelectorAll("p[lang]"));
   if (btn.inlineBtns) {
     let newDiv = document.createElement("div");
     newDiv.style.display = "grid";
@@ -381,14 +379,13 @@ function createBtn(
   newBtn.id = btn.btnID;
   //Adding the labels to the button
   for (let lang in btn.label) {
+    if (!btn.label[lang]) continue;
     //for each language in btn.text, we create a new "p" element
-    if (btn.label[lang]) {
       let btnLable = document.createElement("p");
       //we edit the p element by adding its innerText (=btn.text[lang], and its class)
       editBtnInnerText(btnLable, btn.label[lang], "btnLable" + lang);
       //we append the "p" element  to the newBtn button
       newBtn.appendChild(btnLable);
-    }
   }
   btnsBar.appendChild(newBtn);
 //If no onClick parameter/argument is passed to createBtn(), and the btn has any of the following properties: children/prayers/onClick or inlinBtns, we set the onClick parameter to a function passing the btn to showChildButtonsOrPrayers
@@ -789,8 +786,14 @@ async function openSideBar(sideBar: HTMLElement) {
   sideBar.classList.add("extended");
   //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
   sideBarBtn.innerText = btnText;
-  sideBarBtn.removeEventListener("click", () => openSideBar(sideBar));
-  sideBarBtn.addEventListener("click", () => closeSideBar(sideBar));
+  sideBarBtn.removeEventListener("click", (ev) => {
+    ev.preventDefault;
+    openSideBar(sideBar);
+  });
+  sideBarBtn.addEventListener("click", (ev) => {
+    ev.preventDefault;
+    closeSideBar(sideBar);
+  });
 }
 
 /**
@@ -823,8 +826,14 @@ async function closeSideBar(sideBar: HTMLElement) {
   sideBar.classList.remove("extended");
   sideBar.classList.add("collapsed");
   //sideBarBtn.innerText = btnText;
-  sideBarBtn.removeEventListener("click", () => closeSideBar(sideBar));
-  sideBarBtn.addEventListener("click", () => openSideBar(sideBar));
+  sideBarBtn.removeEventListener("click", (ev) => {
+    ev.preventDefault;
+    closeSideBar(sideBar);
+  });
+  sideBarBtn.addEventListener("click", (ev) => {
+    ev.preventDefault;
+    openSideBar(sideBar);
+  });
 }
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
@@ -844,6 +853,7 @@ function DetectFingerSwipe() {
   }
 
   function handleTouchMove(evt: TouchEvent) {
+    evt.preventDefault;
     if (!xDown || !yDown)  return;
 
     let xUp = evt.touches[0].clientX;
@@ -896,24 +906,25 @@ function DetectFingerSwipe() {
     yDown = null;
   }
 }
-function toggleAmplifyText(ev: Event, myClass: string) {
-  if (localStorage.displayMode === displayModes[1]) return;
-  ev.preventDefault;
+/**
+ * Takes an Html Element and looks for all the other elements having the same "lang" attribute as the Html element passed to it, then it checks if the size of text is amplified or not: if already amplified, it reduces it, if not, it amplifies it
+ * @param {HTMLElement} target - the Html element containing the text which we will be amplified together with all the text with the same language
+ * @param {string} myClass - the name of the CSS class that will applied to amplify the text
+ */
+function toggleAmplifyText(target:HTMLElement, myClass: string) {
+  if (localStorage.displayMode === displayModes[1]) return; //If we are in the "Presentation" Mode, we will not amplify or reduce the text
   let amplified = new Map(JSON.parse(localStorage.textAmplified));
-  let target: HTMLElement = ev.target as HTMLElement;
-  let selector: string = 'p[data-lang="' + target.dataset.lang + '"]';
-  let sameLang = containerDiv.querySelectorAll(
-    selector
-  ) as NodeListOf<HTMLElement>;
+  let selector: string = 'p[lang="' + target.lang + '"]';
+  let sameLang = containerDiv.querySelectorAll(selector) as NodeListOf<HTMLElement>;
   sameLang.forEach((p) => {
     p.classList.toggle(myClass);
     Array.from(p.children).forEach(child => child.classList.toggle(myClass));
   });
   if (target.classList.contains(myClass)) {
     //it means that the class was added when the user dbl clicked (not removed)
-    amplified.set(target.dataset.lang, true);
+    amplified.set(target.lang.toUpperCase(), true);
   } else {
-    amplified.set(target.dataset.lang, false);
+    amplified.set(target.lang.toUpperCase(), false);
   }
   localStorage.textAmplified = JSON.stringify(Array.from(amplified));
 }
@@ -1020,21 +1031,22 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
     if (row.classList.contains("TargetRowTitle")) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
-      let arabic = row.querySelector('p[data-lang="AR"]');
+      let arabic = row.querySelector('p[lang="ar"]') as HTMLElement;
       if (
         arabic &&
         !arabic.textContent.startsWith(String.fromCharCode(10134))
       ) {
-        arabic.textContent =
+        arabic.innerText=
           String.fromCharCode(10134) +
           " " +
-          row.querySelector('p[data-lang="AR"]').textContent; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its dataset.lang value)
+          arabic.innerText; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its lang value)
       } else if (
         //If there is no arabic paragraph, we will add the sign to the last child
         !row.lastElementChild.textContent.startsWith(String.fromCharCode(10134))
       ) {
-        row.lastElementChild.textContent =
-          String.fromCharCode(10134) + " " + row.lastElementChild.textContent;
+        let lastChild = row.lastElementChild as HTMLElement;
+        lastChild.innerText =
+          String.fromCharCode(10134) + " " +lastChild.innerText;
       }
     }
   });
@@ -1051,9 +1063,9 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
   }
 
   /**
-   * Returns a string representing the grid areas for an html element with a 'display:grid' property, based on the dataset.lang of its children
-   * @param {HTMLElement} row - an html element having children and each child has a dataset.lang
-   * @returns {string} representing the grid areas based on the dataset.lang of the html element children
+   * Returns a string representing the grid areas for an html element with a 'display:grid' property, based on the "lang" attribute of its children
+   * @param {HTMLElement} row - an html element having children and each child has a "lang" attribute
+   * @returns {string} representing the grid areas based on the "lang" attribute of the html element children
    */
   function setGridAreas(row: HTMLElement): string {
     if (localStorage.displayMode === displayModes[1]) return;
@@ -1061,7 +1073,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
       child: HTMLElement;
     for (let i = 0; i < row.children.length; i++) {
       child = row.children[i] as HTMLElement;
-      areas.push(child.dataset.lang);
+      areas.push(child.lang.toUpperCase());
     }
     if (
       areas.indexOf("AR") === 0 &&
@@ -1080,7 +1092,7 @@ async function applyAmplifiedText(container: NodeListOf<Element>) {
   new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
     if (value == true) {
       Array.from(container)
-        .filter((el) => el.getAttribute("data-lang") === key)
+        .filter((el) => el.getAttribute("lang") === String(key).toLowerCase())
         .forEach((el) => {
           el.classList.add("amplifiedText");
           Array.from(el.children)
@@ -1690,7 +1702,7 @@ function showSettingsPanel() {
     innerText: string,
     parent: HTMLElement,
     id?: string,
-    dataSet?: string,
+    lang?: string,
     type?: string,
     size?: string,
     backgroundColor?: string,
@@ -1709,8 +1721,8 @@ function showSettingsPanel() {
     if (id) {
       btn.id = id;
     }
-    if (dataSet) {
-      btn.dataset.lang = dataSet;
+    if (lang) {
+      btn.lang = lang.toLowerCase();
     }
     if (type && btn.nodeType) {
       //@ts-ignore

@@ -357,6 +357,7 @@ function changeDate(
 		  localStorage.selectedDate = todayDate.getTime().toString();
 	}	
 	console.log(todayDate);
+	alert('Date was successfully change to ' + todayDate.getDate().toString() + "/" + todayDate.getMonth().toString() +"/" + todayDate.getFullYear().toString() + " which corresponds to " + copticDate + " of the coptic calendar ")
 	return todayDate;
 }
 
