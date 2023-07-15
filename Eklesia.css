@@ -259,33 +259,32 @@ justify-self: center;
 .DisplayModePresentation{
 grid-template: "FR AR"  "COP COP";
 grid-template-columns: 50% 50%;
+grid-template-rows: 58% 40%;
 background-color: black !important;
 margin-top: 5px;
-height: 96vh;
+height: 98vh;
 }
 .DisplayModePresentation>p.COP{
   text-align: center;
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 5vh;
+  line-height: 4rem;
   margin-top: 10px;
-  height: 27vh;
 }
 .DisplayModePresentation>p.FR{
   text-align: justify;
-  font-size: 25pt;
+  font-size: 5vh;
+  line-height: 3rem;
   border-right-color: white;
   border-right-style: solid;
   border-right-width: 3px;
   padding-right: 10px;
-  line-height: 30pt;
-  height: 55vh;
+
 }
 .DisplayModePresentation>p.AR{
   text-align: justify;
-  font-size: 35pt !important;
-  line-height: 35pt;
+  font-size: 8vh;
+  line-height: 3rem;
   border-left: 10px white;
-  height: 57vh;
 }
 
 .DisplayModePresentation>p.FR,
