@@ -98,6 +98,7 @@ function createHtmlElementForPrayer(
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("TargetRow"); //we add 'TargetRow' class to this div
+  htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
   if (actorClass && actorClass !== "Title") {
     // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
@@ -130,7 +131,7 @@ function createHtmlElementForPrayer(
         return;
       }
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if (actorClass == "Title") {
+      if (actorClass === "Title") {
         //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
         htmlRow.classList.add("TargetRowTitle");
         htmlRow.id = tblRow[0];
@@ -144,7 +145,9 @@ function createHtmlElementForPrayer(
       }
       p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
       text = tblRow[x];
+      p.lang = lang.toLowerCase();
       p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
+      p.classList.add(lang);
 
       p.innerText = text;
       p.addEventListener("dblclick", (event) => {
@@ -562,7 +565,7 @@ function getCopticReadingsDates(): string[][] {
     ["0606", "1503"],
     ["0912", "1503"],
     ["2807", "1601"],
-    ["0909", "1608"],
+    ["0909", "1601"],
     ["1104", "1610"],
     ["1506", "1610"],
     ["1603", "1610"],
@@ -894,6 +897,7 @@ function DetectFingerSwipe() {
   }
 }
 function toggleAmplifyText(ev: Event, myClass: string) {
+  if (localStorage.displayMode === displayModes[1]) return;
   ev.preventDefault;
   let amplified = new Map(JSON.parse(localStorage.textAmplified));
   let target: HTMLElement = ev.target as HTMLElement;
@@ -1001,9 +1005,17 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
 
   Rows.forEach(
     (row: HTMLElement) => {
-    row.style.gridTemplateColumns = getColumnsNumberAndWidth(row); //Setting the number of columns and their width for each element having the 'TargetRow' class
+      //Setting the number of columns and their width for each element having the 'TargetRow' class for each Display Mode
+    if(localStorage.displayMode === displayModes[0]){
+        row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
+        //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
+      row.style.gridTemplateAreas = setGridAreas(row);
+      };
+    
+      if (localStorage.displayMode === displayModes[1]) {
+      //
+      };
 
-    row.style.gridTemplateAreas = setGridAreas(row); //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
 
     if (row.classList.contains("TargetRowTitle")) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
@@ -1044,15 +1056,15 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
    * @returns {string} representing the grid areas based on the dataset.lang of the html element children
    */
   function setGridAreas(row: HTMLElement): string {
+    if (localStorage.displayMode === displayModes[1]) return;
     let areas: string[] = [],
       child: HTMLElement;
     for (let i = 0; i < row.children.length; i++) {
       child = row.children[i] as HTMLElement;
       areas.push(child.dataset.lang);
-      child.classList.add(child.dataset.lang); //we profit from the loop to add the language as class to the element (we didn't add it earlier in order to lighten the display of the html element and reduce the delay/latency for the user)
     }
     if (
-      areas.indexOf("AR") == 0 &&
+      areas.indexOf("AR") === 0 &&
       !row.classList.contains("Comment") &&
       !row.classList.contains("CommentText")
     ) {
@@ -1064,6 +1076,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
 }
 
 async function applyAmplifiedText(container: NodeListOf<Element>) {
+  if (localStorage.displayMode === displayModes[1]) return;
   new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
     if (value == true) {
       Array.from(container)
@@ -1580,10 +1593,10 @@ function showSettingsPanel() {
           {
             event: "click",
             fun: () => {
-              if (localStorage.displayMode != mode) {
+              if (localStorage.displayMode !== mode) {
                 localStorage.displayMode = mode;
                 Array.from(displayContainer.children).map((b) => {
-                  b.id != localStorage.displayMode
+                  b.id !== localStorage.displayMode
                     ? b.classList.add("langBtnAdd")
                     : b.classList.remove("langBtnAdd");
                 });
@@ -1591,7 +1604,7 @@ function showSettingsPanel() {
             },
           }
         );
-        if (mode != localStorage.displayMode) {
+        if (mode !== localStorage.displayMode) {
           btn.classList.add("langBtnAdd");
         }
       });
@@ -2012,7 +2025,12 @@ async function replaceEigthNote(code: number, container: HTMLElement[]) {
   if (!code) code = 9834;
   if (!container) container = Array.from(containerDiv.querySelectorAll('p.Diacon')) as HTMLElement[];
   if (container.length === 0) return;
-  let note = String.fromCharCode(code), replaceWith: string = '<span class="eigthNote">' + note + '</span>';
+  let note = String.fromCharCode(code),
+        replaceWith: string = '<span class="eigthNote">' + note + '</span>';
+  if (localStorage.displayMode === displayModes[1]) {
+    replaceWith = '<span class="eigthNote">' + note + '</span><br>'
+  };
+  
   container.forEach((p:HTMLElement) => {
     if (p && p.innerText.includes(note)){
       p.innerHTML = p.innerHTML.replaceAll(note, replaceWith);
