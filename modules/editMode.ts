@@ -534,6 +534,7 @@ function createHtmlElementForPrayerEditingMode(
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = dataRoot;
     text = prayers[x];
+    p.classList.add(lang.toUpperCase());
     p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
     row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
