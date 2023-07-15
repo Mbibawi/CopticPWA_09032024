@@ -260,13 +260,15 @@ justify-self: center;
 grid-template: "FR AR"  "COP COP";
 grid-template-columns: 50% 50%;
 background-color: black !important;
-margin-top: 10px;
+margin-top: 5px;
+height: 96vh;
 }
 .DisplayModePresentation>p.COP{
   text-align: center;
   font-size: 30pt;
   line-height: 30pt;
   margin-top: 10px;
+  height: 27vh;
 }
 .DisplayModePresentation>p.FR{
   text-align: justify;
@@ -276,12 +278,14 @@ margin-top: 10px;
   border-right-width: 3px;
   padding-right: 10px;
   line-height: 30pt;
+  height: 55vh;
 }
 .DisplayModePresentation>p.AR{
   text-align: justify;
   font-size: 35pt !important;
   line-height: 35pt;
   border-left: 10px white;
+  height: 57vh;
 }
 
 .DisplayModePresentation>p.FR,
@@ -295,16 +299,17 @@ margin-top: 10px;
   grid-template: "FR AR";
   font-size: 10pt !important;
   align-items: stretch;
-  height: 20pt;
+  height: 2vh;
   background-color: beige !important;
   border-color: beige;
   color:red !important;
+  margin-bottom: 0px;
 }
 .DisplayModePresentation.TargetRowTitle>p{
   font-size: 15pt !important;
   height: 10px;
   line-height: 30px;
-  margin: 0px;
+  margin: 0px 0px;
   padding: 0px;
   row-gap: 0px;
   color:red;
@@ -565,6 +570,11 @@ div.ReadingEnd{
   color:  #95190c !important;
   font-weight: bold !important;
   font-size: 18pt;
+}
+.DisplayModePresentation> p>span.eigthNote{
+  color:  #95190c !important;
+  font-weight: bold !important;
+  font-size: 35pt !important;
 }
 
 .btnEditing{
