@@ -1129,16 +1129,16 @@ function collapseText(element: HTMLElement) {
       siblings[i].style.display = "grid";
     }
   }
-  let parag: Element;
+  let parag: HTMLElement;
   parag = Array.from(element.children).filter(
     (child) =>
       child.textContent.startsWith(String.fromCharCode(10133)) ||
       child.textContent.startsWith(String.fromCharCode(10134))
-  )[0];
+  )[0] as HTMLElement;
 
   if (parag && parag.textContent.startsWith(String.fromCharCode(10133))) {
     //mbibawi.github.io/CopticPWA/#TargetDiv
-    https: parag.textContent = parag.textContent.replace(
+    parag.innerText = parag.innerText.replace(
       String.fromCharCode(10133),
       String.fromCharCode(10134)
     );
@@ -1146,7 +1146,7 @@ function collapseText(element: HTMLElement) {
     parag &&
     parag.textContent.startsWith(String.fromCharCode(10134))
   ) {
-    parag.textContent = parag.textContent.replace(
+    parag.innerText = parag.innerText.replace(
       String.fromCharCode(10134),
       String.fromCharCode(10133)
     );

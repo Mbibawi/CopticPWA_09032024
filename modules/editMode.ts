@@ -466,7 +466,7 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   //newRow.contentEditable = 'true';
   for (let i = 0; i < htmlRow.children.length; i++) {
     child = htmlRow.children[i] as HTMLParagraphElement;
-    if (!child.lang) continue;
+    if (!child.lang || child.tagName !=='P') continue;
     p = newRow.appendChild(document.createElement("p"));
     p.classList.add(child.lang);
     p.classList.add(newRow.dataset.root.split("&C=")[1]);
