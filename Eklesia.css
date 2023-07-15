@@ -258,6 +258,7 @@ justify-self: center;
 }
 .DisplayModePresentation{
 grid-template: "FR AR"  "COP COP";
+grid-template-columns: 50% 50%;
 background-color: black !important;
 margin-top: 10px;
 }
