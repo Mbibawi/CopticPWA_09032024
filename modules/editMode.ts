@@ -468,9 +468,8 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
     child = htmlRow.children[i] as HTMLParagraphElement;
     if (!child.lang || child.tagName !=='P') continue;
     p = newRow.appendChild(document.createElement("p"));
-    p.classList.add(child.lang);
+    p.classList.add(child.lang.toUpperCase());
     p.classList.add(newRow.dataset.root.split("&C=")[1]);
-    //child.classList.forEach(className => p.classList.add(className));
     p.dataset.root = dataRoot;
     p.lang = child.lang;
     //p.innerText = "Insert Here Your Text "+p.lang;
