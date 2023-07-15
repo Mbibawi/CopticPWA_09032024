@@ -284,8 +284,9 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
     Array.from(htmlRow.children)
       .forEach(
         (child: HTMLElement) => {
-          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = newTitle
+          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = baseTitle(newTitle)
         });
+  changeCssClass(htmlRow);
   //We will then go to each sibling and change its title if it has the same title as oldTitle
   htmlRow = htmlRow.nextElementSibling as HTMLDivElement;
   while (htmlRow
@@ -465,14 +466,14 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   //newRow.contentEditable = 'true';
   for (let i = 0; i < htmlRow.children.length; i++) {
     child = htmlRow.children[i] as HTMLParagraphElement;
-    if (!child.dataset.lang) continue;
+    if (!child.lang) continue;
     p = newRow.appendChild(document.createElement("p"));
-    p.classList.add(child.dataset.lang);
+    p.classList.add(child.lang);
     p.classList.add(newRow.dataset.root.split("&C=")[1]);
     //child.classList.forEach(className => p.classList.add(className));
     p.dataset.root = dataRoot;
-    p.dataset.lang = child.dataset.lang;
-    //p.innerText = "Insert Here Your Text "+p.dataset.lang;
+    p.lang = child.lang;
+    //p.innerText = "Insert Here Your Text "+p.lang;
     p.contentEditable = "true";
   }
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
@@ -533,7 +534,7 @@ function createHtmlElementForPrayerEditingMode(
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = dataRoot;
     text = prayers[x];
-    p.dataset.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
+    p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
     row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
   }
@@ -695,7 +696,7 @@ function splitParagraphsToTheRowsBelow() {
 
   if (htmlParag.tagName !== 'P') return showAlert();
   let title:string = htmlParag.dataset.root,
-    lang:string = htmlParag.dataset.lang,
+    lang:string = htmlParag.lang,
     table: HTMLElement[] = Array.from(
       containerDiv.querySelectorAll(
         getDataRootSelector(baseTitle(title), true)) as NodeListOf<HTMLElement>),//Those are all the rows belonging to the same table, including the title
@@ -709,10 +710,10 @@ function splitParagraphsToTheRowsBelow() {
   for (let i = 0; i < clean.length; i++) {
     if (!table[i+rowIndex]) {
       //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
-      table.push(addNewRow(table[table.length - 1].querySelector('p[data-lang="'+lang+'"]'), htmlParag.parentElement.dataset.root));//we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+      table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), htmlParag.parentElement.dataset.root));//we provide the data-root in order to avoid to be prompted when the addNewRow() is called
     }
     Array.from(table[i+rowIndex].children)
-    .filter((p: HTMLElement) => p.dataset.lang == lang)[0]
+    .filter((p: HTMLElement) => p.lang == lang)[0]
     //@ts-ignore
       .innerText = clean[i];
   }
