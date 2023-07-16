@@ -13471,7 +13471,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm1&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm1&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 1",
       "",
@@ -13508,7 +13508,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm2&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm2&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 2",
       "",
@@ -13545,7 +13545,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm3&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm3&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 3",
       "",
@@ -13596,7 +13596,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm4&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm4&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 4",
       "",
@@ -13633,7 +13633,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm5&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm5&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 5",
       "",
@@ -13677,7 +13677,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm6&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm6&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 6",
       "",
@@ -13714,7 +13714,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm8&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm8&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 8",
       "",
@@ -13751,7 +13751,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm11&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm11&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 11",
       "",
@@ -13802,7 +13802,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm12&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm12&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 12",
       "",
@@ -13839,7 +13839,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm14&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm14&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 14",
       "",
@@ -13876,7 +13876,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm15&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm15&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 15",
       "",
@@ -13941,7 +13941,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm18&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm18&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 18",
       "",
@@ -13985,7 +13985,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm24&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm24&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 24",
       "",
@@ -14085,7 +14085,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm26&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm26&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 26",
       "",
@@ -14178,7 +14178,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "1stHourPsalm142&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "1stHourPsalm142&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 142",
       "",
@@ -14237,7 +14237,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "1stHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "1stHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la prière du matin",
       "",
@@ -14254,7 +14254,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourTitle&D=$copticFeasts.AnyDay&C=SuperTitle",
+      Prefix.bookOfHours + "3rdHourTitle&D=$copticFeasts.AnyDay&C=Title",
       "",
       "Prière de la 3ème heure",
       "",
@@ -14263,7 +14263,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm19&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm19&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 19",
       "",
@@ -14309,7 +14309,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm22&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm22&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 22",
       "",
@@ -14339,7 +14339,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm23&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm23&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 23",
       "",
@@ -14397,7 +14397,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm25&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm25&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 25",
       "",
@@ -14441,7 +14441,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm28&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm28&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 28",
       "",
@@ -14478,7 +14478,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm29&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm29&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 29",
       "",
@@ -14529,7 +14529,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm33&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm33&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 33",
       "",
@@ -14587,7 +14587,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm40&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm40&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 40",
       "",
@@ -14645,7 +14645,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm42&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm42&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 42",
       "",
@@ -14682,7 +14682,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm44&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm44&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 44",
       "",
@@ -14747,7 +14747,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm45&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm45&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 45",
       "",
@@ -14791,7 +14791,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourPsalm46&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourPsalm46&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 46",
       "",
@@ -14821,7 +14821,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourGospel&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourGospel&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "l’Évangile de la 3ème heure (Saint Jean 14: 15-26)",
       "",
@@ -14876,7 +14876,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "3rdHourLitaniesTitle&D=$copticFeasts.AnyDay&C=Title",
+        "3rdHourLitaniesTitle&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Litanies de la 3ème heure",
       "",
@@ -14940,7 +14940,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "3rdHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "3rdHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la 3ème heure",
       "",
@@ -14990,7 +14990,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm53&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm53&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 53",
       "",
@@ -15020,7 +15020,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm56&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm56&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 56",
       "",
@@ -15071,7 +15071,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm60&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm60&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 60",
       "",
@@ -15101,7 +15101,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm62&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm62&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 62",
       "",
@@ -15131,7 +15131,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm66&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm66&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 66",
       "",
@@ -15168,7 +15168,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm69&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm69&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 69",
       "",
@@ -15198,7 +15198,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm83&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm83&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 83",
       "",
@@ -15235,7 +15235,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm84&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm84&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 84",
       "",
@@ -15272,7 +15272,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm85&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm85&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 85",
       "",
@@ -15309,7 +15309,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm86&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm86&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 86",
       "",
@@ -15332,7 +15332,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm90&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm90&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 90",
       "",
@@ -15355,7 +15355,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourPsalm92&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourPsalm92&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 92",
       "",
@@ -15385,7 +15385,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourGospel&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "l’Évangile de la 6ème heure (Saint Mathieu 5 : 1-16)",
       "",
@@ -15485,7 +15485,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "6thHourLitanies&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "6thHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Litanies de la 6ème heure",
       "",
@@ -15567,7 +15567,7 @@ PrayersArray = [
     [
       Prefix.bookOfHours + "6thHourLitanies5&D=$copticFeasts.AnyDay&C=Diacon",
       "",
-      "6) Nous crions vers Toi et nous Te rendons grâce car Tu as rempli nos cœurs de joie, ô Sauveur, quand Tu es venu pour aider le monde. Ô Seigneur, gloire à Toi.",
+      "Nous crions vers Toi et nous Te rendons grâce car Tu as rempli nos cœurs de joie, ô Sauveur, quand Tu es venu pour aider le monde. Ô Seigneur, gloire à Toi.",
       "",
       "نصرخ إليك ونشكرك لأنك ملأت الكل فرحا، أيها المخلص لما " +
         giaki.AR +
@@ -15578,7 +15578,7 @@ PrayersArray = [
     [
       Prefix.bookOfHours + "6thHourLitanies6&D=$copticFeasts.AnyDay&C=Diacon",
       "",
-      "Tu es pleine de grâce, ô Mère de Dieu, toujours vierge. Nous te louons car c'est par la Croix de Ton fils que l'enfer a été anéanti, la mort vaincue. Nous étions morts, nous avons été relevés et il nous a été accordé les mérites de la Vie éternelle et les délices du paradis.",
+      "6) Tu es pleine de grâce, ô Mère de Dieu, toujours vierge. Nous te louons car c'est par la Croix de Ton fils que l'enfer a été anéanti, la mort vaincue. Nous étions morts, nous avons été relevés et il nous a été accordé les mérites de la Vie éternelle et les délices du paradis.",
       "",
       "أنت هي الممتلئة نعمة يا والدة الإله العذراء. نعظمك لأن من قبل صليب ابنك انهبط الجحيم وبطل الموت. أمواتا كنا فنهضنا، واستحققنا الحياة الأبدية، ونلنا نعيم الفردوس الأول.",
     ],
@@ -15593,7 +15593,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "6thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "6thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la 6ème heure",
       "",
@@ -15643,7 +15643,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm95&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm95&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 95",
       "",
@@ -15680,7 +15680,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm96&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm96&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 96",
       "",
@@ -15752,7 +15752,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm97&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm97&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 97",
       "",
@@ -15803,7 +15803,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm98&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm98&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 98",
       "",
@@ -15868,7 +15868,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm99&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm99&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 99",
       "",
@@ -15905,7 +15905,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm100&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm100&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 100",
       "",
@@ -15942,7 +15942,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm109&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm109&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 109",
       "",
@@ -15993,7 +15993,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm110&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm110&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 110",
       "",
@@ -16058,7 +16058,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm111&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm111&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 111",
       "",
@@ -16109,7 +16109,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm112&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm112&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 112",
       "",
@@ -16153,7 +16153,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm114&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm114&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 114",
       "",
@@ -16204,7 +16204,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourPsalm115&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourPsalm115&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 115",
       "",
@@ -16248,7 +16248,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "9thHourGospel&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "9thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "l’Évangile de la 9ème heure (Saint Luc 9 : 10-17)",
       "",
@@ -16293,7 +16293,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "9thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=Title",
+        "9thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Litanies de la 9ème heure",
       "",
@@ -16364,7 +16364,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "9thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "9thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la 9ème heure",
       "",
@@ -16438,7 +16438,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm116&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm116&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 116",
       "",
@@ -16454,7 +16454,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm117&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm117&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 117",
       "",
@@ -16568,7 +16568,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm119&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm119&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 119",
       "",
@@ -16612,7 +16612,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm120&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm120&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 120",
       "",
@@ -16649,7 +16649,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm121&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm121&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 121",
       "",
@@ -16693,7 +16693,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm122&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm122&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 122",
       "",
@@ -16723,7 +16723,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm123&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm123&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 123",
       "",
@@ -16753,7 +16753,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm124&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm124&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 124",
       "",
@@ -16783,7 +16783,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm125&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm125&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 125",
       "",
@@ -16806,7 +16806,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm126&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm126&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 126",
       "",
@@ -16836,7 +16836,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm127&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm127&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 127",
       "",
@@ -16859,7 +16859,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourPsalm128&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourPsalm128&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 128",
       "",
@@ -16896,7 +16896,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "11thHourGospel&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "11thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "l’Évangile de la 11ème heure (Saint Luc 41 :4-38)",
       "",
@@ -16927,7 +16927,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "11thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=Title",
+        "11thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Litanies de la 11ème heure",
       "",
@@ -16985,7 +16985,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "11thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "11thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la 11ème heure",
       "",
@@ -17029,7 +17029,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm129&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm129&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 129",
       "",
@@ -17073,7 +17073,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm130&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm130&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 130",
       "",
@@ -17096,7 +17096,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm131&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm131&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 131",
       "",
@@ -17140,7 +17140,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm132&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm132&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 132",
       "",
@@ -17170,7 +17170,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm133&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm133&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 133",
       "",
@@ -17193,7 +17193,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm136&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm136&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 136",
       "",
@@ -17230,7 +17230,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm137&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm137&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 137",
       "",
@@ -17274,7 +17274,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm140&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm140&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 140",
       "",
@@ -17318,7 +17318,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm141&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm141&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 141",
       "",
@@ -17348,7 +17348,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm145&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm145&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 145",
       "",
@@ -17392,7 +17392,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm146&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm146&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 146",
       "",
@@ -17443,7 +17443,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourPsalm147&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourPsalm147&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Psaume 147",
       "",
@@ -17480,7 +17480,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "12thHourGospel&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "12thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "l’Évangile de la 12ème heure",
       "",
@@ -17504,7 +17504,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "12thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=Title",
+        "12thHourLitaniesTitle&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Litanies de la 12ème heure",
       "",
@@ -17548,7 +17548,7 @@ PrayersArray = [
   [
     [
       Prefix.bookOfHours +
-        "12thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=Title",
+        "12thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle",
       "",
       "Absolution de la 12ème heure",
       "",

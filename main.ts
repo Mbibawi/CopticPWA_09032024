@@ -97,22 +97,20 @@ function createHtmlElementForPrayer(
   if(!actorClass) actorClass = tblRow[0].split('&C=')[1];
 
   htmlRow = document.createElement("div");
-  htmlRow.classList.add("TargetRow"); //we add 'TargetRow' class to this div
+  htmlRow.classList.add("Row"); //we add 'Row' class to this div
   htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
-  if (actorClass && actorClass !== "Title" && actorClass !== "SuperTitle") {
-    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
+  if (actorClass && !actorClass.includes('Title')) {
+    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TitleRow" (see below)
     htmlRow.classList.add(actorClass);
   } else if (
     actorClass
-    && (
-      actorClass === "Title"
-      || actorClass === "SuperTitle")
+    && actorClass.includes('Title')
   ) {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(htmlRow);
-    }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
+    }); //we also add a 'click' eventListener to the 'TitleRow' elements
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < tblRow.length; x++) {
@@ -136,14 +134,13 @@ function createHtmlElementForPrayer(
         return;
       }
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if (actorClass === "Title" || actorClass === "SuperTitle") {
-        //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title' or '&C=SuperTitle' .
-        htmlRow.classList.add("TargetRowTitle");
-        if (actorClass === "SuperTitle") htmlRow.classList.add(actorClass);
+      if (actorClass && actorClass === 'Title') {
+        //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'
+        htmlRow.classList.add('TitleRow');
         htmlRow.id = tblRow[0];
       } else if (actorClass) {
         //if the prayer is a comment like the comments in the Mass
-        p.classList.add(actorClass);
+        htmlRow.classList.add(actorClass);
       } else {
         //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
         p.classList.add("PrayerText");
@@ -269,7 +266,7 @@ function showChildButtonsOrPrayers(
   if (btn.afterShowPrayers) btn.afterShowPrayers();
   
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-  setCSSGridTemplate(container.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
+  setCSSGridTemplate(container.querySelectorAll(".Row")); //setting the number and width of the columns for each html element with class 'Row'
   applyAmplifiedText(container.querySelectorAll("p[lang]"));
   if (btn.inlineBtns) {
     let newDiv = document.createElement("div");
@@ -296,7 +293,7 @@ function showChildButtonsOrPrayers(
   }
 
   showTitlesInRightSideBar(
-    container.querySelectorAll("div.TargetRowTitle")
+    container.querySelectorAll("div.TitleRow")
   );
 
   if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
@@ -916,7 +913,11 @@ function DetectFingerSwipe() {
  * @param {string} myClass - the name of the CSS class that will applied to amplify the text
  */
 function toggleAmplifyText(target:HTMLElement, myClass: string) {
-  if (localStorage.displayMode === displayModes[1]) return; //If we are in the "Presentation" Mode, we will not amplify or reduce the text
+  if (localStorage.displayMode === displayModes[1]) {
+    //If we are in the "Presentation" Mode, we will not amplify or reduce the text, we will open or close the left side bar
+    toggleSideBars();
+    return
+  }
   let amplified = new Map(JSON.parse(localStorage.textAmplified));
   let selector: string = 'p[lang="' + target.lang + '"]';
   let sameLang = containerDiv.querySelectorAll(selector) as NodeListOf<HTMLElement>;
@@ -1020,7 +1021,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
 
   Rows.forEach(
     (row: HTMLElement) => {
-      //Setting the number of columns and their width for each element having the 'TargetRow' class for each Display Mode
+      //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
     if(localStorage.displayMode === displayModes[0]){
         row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
@@ -1032,7 +1033,8 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
       };
 
 
-      if (row.classList.contains("TargetRowTitle")
+      if ((row.classList.contains('TitleRow')
+        || row.classList.contains('SubTitle'))
         && localStorage.displayMode !== displayModes[1]) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
@@ -1115,24 +1117,22 @@ async function setButtonsPrayers() {
   return btnsPrayers;
 }
 /**
- * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TargetRowTitle'. It does this by toggeling the "display" property of the html elements
+ * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TitleRow'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
 function collapseText(element: HTMLElement) {
   let siblings: HTMLElement[] = [],
-    next: Element;
-  next = element.nextElementSibling;
-  while (next && !next.classList.contains("TargetRowTitle")) {
+    next: Element,
+    titleClass = 'TitleRow';
+    if (element.classList.contains('SubTitle')) titleClass = 'SubTitle';
+    next = element.nextElementSibling;
+  while (next
+    && !next.classList.contains(titleClass)) {
     siblings.push(next as HTMLElement);
     next = next.nextElementSibling as HTMLElement;
   }
   for (let i = 0; i < siblings.length; i++) {
-    siblings[i].classList.toggle("collapsed");
-    if (siblings[i].classList.contains("collapsed")) {
-      siblings[i].style.display = "none";
-    } else {
-      siblings[i].style.display = "grid";
-    }
+    siblings[i].classList.toggle("collapsedTitle");
   }
   let parag: HTMLElement;
   parag = Array.from(element.children).filter(
@@ -1142,7 +1142,6 @@ function collapseText(element: HTMLElement) {
   )[0] as HTMLElement;
 
   if (parag && parag.textContent.startsWith(String.fromCharCode(10133))) {
-    //mbibawi.github.io/CopticPWA/#TargetDiv
     parag.innerText = parag.innerText.replace(
       String.fromCharCode(10133),
       String.fromCharCode(10134)

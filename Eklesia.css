@@ -203,7 +203,10 @@ justify-self: center;
   justify-self: center;
 }
 
-.TargetRow {
+div.Row.collapsedTitle{
+  display:none;
+}
+.Row {
   display: grid;
   column-gap: 5px ;
   height:fit-content;
@@ -220,38 +223,50 @@ justify-self: center;
   line-height: 30px;
 }
 
-.TargetRowTitle {
+.TitleRow, 
+.SubTitle {
   text-align: center;
   background-color: #7E3B10 !important;
   color: white;
   border: #b94c04 solid 3pt ;
 }
-.TargetRow > p.AR, 
-.TargetRowTitle >p.AR{
+.Row > p.AR, 
+.TitleRow >p.AR,
+.SubTitle>p.AR
+{
   grid-area: AR;
 }
-.TargetRow > p.CA, 
-.TargetRowTitle >p.CA{
+.Row > p.CA, 
+.TitleRow >p.CA
+.SubTitle >p.CA
+{
   grid-area: CA;
 }
 
-.TargetRow > p.FR, 
-.TargetRowTitle >p.FR{
+.Row > p.FR, 
+.TitleRow >p.FR,
+.SubTitle >p.FR
+{
  grid-area: FR;
 }
 
-.TargetRow > p.COP, 
-.TargetRowTitle >p.COP{
+.Row > p.COP, 
+.TitleRow >p.COP,
+.SubTitle >p.COP
+{
   grid-area: COP;
 }
-.TargetRowTitle > p{
+.TitleRow > p,
+.SubTitle> p
+{
   font-weight: bold;
   font-size: medium;
   text-align: center !important;
   text-justify: inter-word;
 }
-.TargetRow >p, 
-.TargetRowTitle >p, 
+.Row >p, 
+.TitleRow >p, 
+.SubTitle >p, 
 .Comment > p, 
 .CommentText > p{
   margin:0px 0px;
@@ -303,7 +318,9 @@ border-radius: 20px ;
   border-radius: 20px;
 }
 
-.DisplayModePresentation.TargetRowTitle{
+.DisplayModePresentation.TitleRow,
+.DisplayModePresentation.SubTitle
+{
   grid-template: "FR AR";
   font-size: 10pt !important;
   align-items: stretch;
@@ -313,7 +330,9 @@ border-radius: 20px ;
   margin-bottom: 5px;
   background-color: white !important;
 }
-.DisplayModePresentation.TargetRowTitle>p{
+.DisplayModePresentation.TitleRow>p,
+.DisplayModePresentation.SubTitle>p
+{
   font-size: 15pt !important;
   height: 10px;
   line-height: 10px;
@@ -596,15 +615,15 @@ div.ReadingEnd{
   grid-template-columns: 100%;
 }
 
-.TargetRow > p.amplifiedText.AR{
+.Row > p.amplifiedText.AR{
   font-size:30pt !important;
   line-height: 48px;
 }
-.TargetRow > p.amplifiedText.FR{
+.Row > p.amplifiedText.FR{
   font-size:20pt !important;
   line-height: 35px;
 }
-.TargetRow > p.amplifiedText.COP{
+.Row > p.amplifiedText.COP{
   font-size:20pt !important;
   line-height: 35px;
 }

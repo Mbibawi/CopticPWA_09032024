@@ -1015,6 +1015,7 @@ const btnMassUnBaptised: Button = new Button({
           let bookOfHoursDiv = containerDiv.querySelector('#bookOfHours') as HTMLElement;
           if (bookOfHoursDiv.children.length > 0) {
             //it means the Book of Hours have been inserted before when the user clicked the button, we remove them and return
+            bookOfHoursDiv.querySelectorAll('div.TitleRow').forEach(row => collapseText(row as HTMLLIElement));
             if (bookOfHoursDiv.style.display === 'grid') {
               bookOfHoursDiv.style.display = 'none';
               rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]')
@@ -1023,9 +1024,9 @@ const btnMassUnBaptised: Button = new Button({
                     title.style.display = 'none'
                   });
             } else {
-            bookOfHoursDiv.style.display = 'grid';
+              bookOfHoursDiv.style.display = 'grid';
             rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]').forEach((title: HTMLDivElement) => { title.style.display = 'block' })
-          };
+            };
           return
           }
         
@@ -1060,7 +1061,7 @@ const btnMassUnBaptised: Button = new Button({
             setCSSGridTemplate(Array.from(div.children) as HTMLElement[]);
             
             //We will append the titles of the Book of Hours to the right side Bar, with a display 'none'
-            let titles = await showTitlesInRightSideBar(div.querySelectorAll('div.TargetRowTitle'), undefined, false);
+            let titles = await showTitlesInRightSideBar(div.querySelectorAll('div.TitleRow, div.SubTitle'), undefined, false);
             titles.reverse().forEach(
               (title: HTMLDivElement) => {
                 title.dataset.group = 'bookOfHoursTitle';
@@ -1069,7 +1070,7 @@ const btnMassUnBaptised: Button = new Button({
 
                 rightSideBar.querySelector('#sideBarBtns').children[0].insertAdjacentElement('beforebegin', title);
               });
-          
+              bookOfHoursDiv.querySelectorAll('div.TitleRow').forEach(row => collapseText(row as HTMLLIElement));
         }
       });
       createBtn(bookOfHoursBtn, containerDiv, inlineBtnClass, false, bookOfHoursBtn.onClick);
