@@ -252,19 +252,20 @@ function changeCssClass(htmlParag: HTMLElement) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
   let className: string = htmlRow.dataset.root.split("&C=")[1];
-  if (!className) className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
+  if (className === undefined) className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
   if (!className) return;
-  toggleClass(htmlRow, className);
   htmlRow.dataset.root = htmlRow.dataset.root.split("&C=")[0]+"&C="+className;
+  if (className === 'Title') className = 'TitleRow';
+  if(!htmlRow.classList.contains(className))htmlRow.classList.add(className) ;
 }
 
 function toggleClass(element: HTMLElement, className: string) {
   element.classList.toggle(className);
 }
-function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
+function changeTitle(htmlParag: HTMLElement, newTitle?: string, oldTitle?:string) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  let oldTitle = htmlRow.dataset.root;
+  if(!oldTitle) oldTitle = htmlRow.dataset.root;
   if (!newTitle) newTitle = prompt("Provide The Title", oldTitle);
   if (!newTitle) return alert('You didn\'t provide a valide title');
   if (newTitle === oldTitle) return;
@@ -272,9 +273,12 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
     Array.from(htmlRow.children)
       .forEach(
         (child: HTMLElement) => {
-          if (child.tagName === 'P' && child.dataset.root) child.dataset.root = baseTitle(newTitle)
+          if (child.tagName === 'P' && child.dataset.root) {
+            child.dataset.root = baseTitle(newTitle);
+            child.title = newTitle;
+          }
         });
-  changeCssClass(htmlRow);
+  if(newTitle.includes('&C=')) changeCssClass(htmlRow);
   //We will then go to each sibling and change its title if it has the same title as oldTitle
   htmlRow = htmlRow.nextElementSibling as HTMLDivElement;
   while (htmlRow
@@ -283,7 +287,7 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string) {
     let actorClass: string = htmlRow.dataset.root.split('&C=')[1];
     if (!actorClass) actorClass = '';
     if (actorClass !== '') actorClass = '&C=' + actorClass;
-    changeTitle(htmlRow, baseTitle(newTitle) + actorClass)
+    changeTitle(htmlRow, baseTitle(newTitle) + actorClass, oldTitle)
   } 
 }
 
@@ -569,7 +573,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
       );
     });
     setCSSGridTemplate(
-      document.getElementById("showSequence").querySelectorAll(".Row")
+      document.getElementById("showSequence").querySelectorAll("div.Row")
     );
   }
 }
