@@ -32,10 +32,10 @@ async function editingMode(tblsArray: string[][][], languages:string[]) {
   //We add the editing buttons
   addEdintingButtons();
   //Setting the CSS of the newly added rows
-  setCSSGridTemplate(containerDiv.querySelectorAll("div.TargetRow"));
+  setCSSGridTemplate(containerDiv.querySelectorAll("div.Row"));
   //Showing the titles in the right side-bar
   showTitlesInRightSideBar(
-    containerDiv.querySelectorAll("div.TargetRowTitle"));
+    containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
 }
 
 /**
@@ -213,8 +213,8 @@ function getAnArrayOfTablesFromTheHtmlDivs():string[][][] {
       titles: Set<string>;
 
 titles = new Set(
-  //We create an array of all the div elements with 'TargetRow' class, and loop all the divs in this array
-  Array.from(containerDiv.querySelectorAll('div.TargetRow'))
+  //We create an array of all the div elements with 'Row' class, and loop all the divs in this array
+  Array.from(containerDiv.querySelectorAll('div.Row'))
     //We return an array of all the 'data-root' attributes of all the divs. We then create a Set of this array
     .map((div: HTMLElement) => baseTitle(div.dataset.root)));
   
@@ -261,8 +261,8 @@ function changeCssClass(htmlParag: HTMLElement) {
   className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
   htmlRow.dataset.root =
     htmlRow.dataset.root.split("&C=")[0]+"&C="+className;
-  if (className == "Title") {
-    toggleClass(htmlRow, "TargetRowTitle");
+  if (className === "Title") {
+    toggleClass(htmlRow, "TitleRow");
   } else {
     toggleClass(htmlRow, className);
     Array.from(htmlRow.children).forEach((element: HTMLElement) => {
@@ -318,14 +318,14 @@ function createEditingButton(
 }
 
 function saveModifiedArray() {
-  let htmlRows = containerDiv.querySelectorAll(".TargetRow"), //we retriev all the divs with 'TargetRow' class from the DOM
+  let htmlRows = containerDiv.querySelectorAll(".Row"), //we retriev all the divs with 'Row' class from the DOM
     tableHtmlRows: NodeListOf<HTMLDivElement>,
     table: string[][],
     updated: Set<string> = new Set(),
     newArray: string[][][] = [],
     title: string;
   Array.from(htmlRows).forEach(
-    //for each 'TargetRow' div in containderDiv
+    //for each 'Row' div in containderDiv
     (htmlRow: HTMLDivElement) => {
       title = baseTitle(htmlRow.dataset.root); //this is the title without '&C='
       if (!updated.has(title)) updated.add(title); //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
@@ -338,7 +338,7 @@ function saveModifiedArray() {
     newArray.push([]); //this is an emepty array for the table
     table = newArray[newArray.length - 1];
     containerDiv
-      .querySelectorAll("div.TargetRow")
+      .querySelectorAll("div.Row")
       .forEach((div: HTMLElement) => {
         if (div.dataset.root.split("&C=")[0] === title.split("&C=")[0]) {
           //if the data-root of the div matches exactly the the title
@@ -451,7 +451,7 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   let newRow = document.createElement("div"),
     p: HTMLParagraphElement,
     child: HTMLParagraphElement;
-  newRow.classList.add("TargetRow");
+  newRow.classList.add("Row");
   newRow.dataset.isNewRow = "isNewRow";
   newRow.style.display = htmlRow.style.display;
   newRow.style.gridTemplateColumns = htmlRow.style.gridTemplateColumns;
@@ -493,17 +493,17 @@ function createHtmlElementForPrayerEditingMode(
 
   row = document.createElement("div");
   if (rowIndex) row.dataset.index = rowIndex.toString();
-  row.classList.add("TargetRow"); //we add 'TargetRow' class to this div
+  row.classList.add("Row"); //we add 'Row' class to this div
   let dataRoot: string = firstElement;
   row.dataset.root = dataRoot;
-  if (actorClass && actorClass !== "Title") {
-    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
+  if (actorClass && !actorClass.includes("Title")) {
+    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TitleRow" (see below)
     row.classList.add(actorClass);
-  } else if (actorClass && actorClass == "Title") {
+  } else if (actorClass && actorClass.includes("Title")) {
     row.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(row);
-    }); //we also add a 'click' eventListener to the 'TargetRowTitle' elements
+    }); //we also add a 'click' eventListener to the 'TitleRow' elements
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < prayers.length; x++) {
@@ -520,15 +520,15 @@ function createHtmlElementForPrayerEditingMode(
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
     if (actorClass == "Title") {
       //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
-      row.classList.add("TargetRowTitle");
+      row.classList.add("TitleRow");
       row.id = prayers[0];
       row.tabIndex = 0; //in order to make the div focusable by using the focus() method
     } else if (actorClass) {
       //if the prayer is a comment like the comments in the Mass
-      p.classList.add(actorClass);
+        row.classList.add(actorClass);
     } else {
       //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
-      p.classList.add("PrayerText");
+        p.classList.add("PrayerText");
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = dataRoot;
@@ -548,7 +548,7 @@ function createHtmlElementForPrayerEditingMode(
 }
 
 function getPrayersSequence() {
-  let allRows = containerDiv.querySelectorAll(".TargetRow"),
+  let allRows = containerDiv.querySelectorAll(".Row"),
     text: string = "[";
   allRows.forEach((row) => {
     //@ts-ignore
@@ -581,7 +581,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
       );
     });
     setCSSGridTemplate(
-      document.getElementById("showSequence").querySelectorAll(".TargetRow")
+      document.getElementById("showSequence").querySelectorAll(".Row")
     );
   }
 }
@@ -637,7 +637,7 @@ function showSequence(
         newDiv
       );
     });
-    setCSSGridTemplate(newDiv.querySelectorAll(".TargetRow"));
+    setCSSGridTemplate(newDiv.querySelectorAll(".Row"));
   });
 }
 
@@ -727,11 +727,11 @@ function splitParagraphsToTheRowsBelow() {
 function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
   if (!htmlParag) return  alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
   while (htmlParag.tagName !== 'DIV'
-    && !htmlParag.classList.contains('TargetRow')
+    && !htmlParag.classList.contains('Row')
     && htmlParag.parentElement){
     htmlParag = htmlParag.parentElement};
   if (htmlParag.tagName !== 'DIV'
-    || !htmlParag.classList.contains('TargetRow'))
+    || !htmlParag.classList.contains('Row'))
     return undefined;
   else return htmlParag as HTMLDivElement;
 }
@@ -783,11 +783,11 @@ function showTablesFun(arrayName: string, title: string) {
     modifyTablesInTheirArrayBtn,
   ]);
   //Setting the CSS of the newly added rows
-    setCSSGridTemplate(containerDiv.querySelectorAll("div.TargetRow"));
+    setCSSGridTemplate(containerDiv.querySelectorAll("div.Row"));
     //Showing the titles in the right side-bar
     hideInlineButtonsDiv();
     showTitlesInRightSideBar(
-      containerDiv.querySelectorAll("div.TargetRowTitle"));
+      containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
 }
 
 /**
@@ -834,7 +834,7 @@ function convertCopticFontFromAPI(htmlElement:HTMLElement) {
 function goToTableByTitle() {
   let title = prompt('Provide the title you want to go to');
   let rows:HTMLElement[] = Array.from(
-    containerDiv.querySelectorAll('.TargetRow') as NodeListOf<HTMLElement>)
+    containerDiv.querySelectorAll('.Row') as NodeListOf<HTMLElement>)
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
   if (rows.length === 0) return alert('Didn\'t find an element with the provided title');
   rows[0].id = rows[0].dataset.root + String(0);
