@@ -1997,7 +1997,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2901&C=Title", 
-  "29 Thout\n1) Commémoration de l’Annonciation, la Nativité et la Résurrection;\n2) Martyre de sainte Rhipsimé et de ses sœurs. Martyre de sainte Fébronya. ", 
+  "29 Thout\n1) Commémoration de l’Annonciation, la Nativité et la Résurrection;\n2) Martyre de sainte Rhipsimé et de ses sœurs ;\n3) Martyre de sainte Fébronya", 
   " 29 توت\nتذكار الأعياد الثلاثة السيدية الكبرى\nاستشهاد القديسة أربسيما ومن معها\nاستشهاد القديسة فبرونيا\n", 
   ], 
   [
@@ -2117,7 +2117,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0102&C=Title", 
   " 1er Paopi\nMartyre de sainte Anastasie", 
-  " 1 بابه", 
+  " 1 بابه\nاستشهاد القديسة أنسطاسيه\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0102", 
@@ -2149,7 +2149,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0202&C=Title", 
   "2 Paopi\nVenue en Égypte des saint Sévère, le patriarche d'Antioche ", 
-  " 2 بابه", 
+  " 2 بابه\nتذكار مجيء القديس ساويرس بطريرك أنطاكية إلى مصر\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0202", 
@@ -2190,8 +2190,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0302&C=Title", 
-  " 3 Paopi\n1) Décès du pape Simon II, le 51ème pape de la prédication de saint Marc;\n2) Martyre de saint Ours et saint Victor de la légion thébaine;\n3) Martyre de saint Jean le soldat;\n4) Décès de la reine sainte Théodora", 
-  " 3 بابه", 
+  " 3 Paopi\n1) Décès du pape Simon II, le 51ème pape de la prédication de saint Marc ;\n2) Martyre de saint Ours et saint Victor de la légion thébaine ;\n3) Martyre de saint Jean le soldat ;\n4) Décès de la reine sainte Théodora", 
+  " 3 بابه\nنياحة البابا سيمون الثاني البطريرك الحادي والخمسون من بطاركة الكرازة المرقسية\nاستشهاد القديسين أورسوس وبقطر من الفرقة الطيبية\nاستشهاد القديس يوحنا الجُندي الأشروبي\nنياحة القديسة ثيئودورا الملكة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0302", 
@@ -2308,7 +2308,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0402&C=Title", 
   "4 Paopi\nMartyre de saint Bacchus, le compagnon de saint Serges", 
-  " 4 بابه", 
+  " 4 بابه\nاستشهاد القديس واخس رفيق القديس سرجيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0402", 
@@ -2334,8 +2334,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0502&C=Title", 
-  "5 Paopi\n1) Martyre de saint Paul, patriarche de Constantinople;\n2) Décès d’aba Pierre, l’évêque de Bahnassa ", 
-  " 5 بابه", 
+  "5 Paopi\n1) Martyre de saint Paul, patriarche de Constantinople ;\n2) Décès d’aba Pierre, l’évêque de Bahnassa ", 
+  " 5 بابه\nاستشهاد القديس بولس بطريرك القسطنطينية\nنياحة الأنبا بطرس أسقف البهنسا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0502", 
@@ -2442,7 +2442,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0602&C=Title", 
   "6 Paopi\nDécès d’Anne la juste, la mère du prophète Samuel", 
-  " 6 بابه", 
+  " 6 بابه\nنياحة الصديقة حَنَّة أم صموئيل النبي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0602", 
@@ -2474,7 +2474,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0702&C=Title", 
   "7 Paopi\nDécès de Paul de Tammouh ", 
-  " 7 بابه", 
+  " 7 بابه\nنياحة القديس الأنبا بولا الطموهي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0702", 
@@ -2515,8 +2515,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0802&C=Title", 
-  "8 Paopi\n1) Martyre de saint Matra;\n2) Martyre d’abba Hour et de Tossiya et leurs enfants;\n3) Martyre d’abba Aghathon l’ermite ", 
-  " 8 بابه", 
+  "8 Paopi\n1) Martyre de saint Matra;\n2) Martyre d’abba Hour et de Tossiya et leurs enfants ;\n3) Martyre d’abba Aghathon l’ermite ", 
+  " 8 بابه\nاستشهاد القديس مطرا\nاستشهاد القديسين أباهور وطوسيا وأولادهما\nنياحة القديس الأنبا أغاثون المتوحد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0802", 
@@ -2582,8 +2582,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0902&C=Title", 
-  "9 Paopi\n1) Décès de saint Euménis, le septième pape de la prédication de saint Marc;\n2) Commémoration de l'évêque saint Siméon et de ses compagnons. ", 
-  " 9 بابه", 
+  "9 Paopi\n1) Décès de saint Euménis, le septième pape de la prédication de saint Marc ;\n2) Commémoration de l'évêque saint Siméon et de ses compagnons", 
+  " 9 بابه\nنياحة البابا أومانيوس البطريرك السابع من بطاركة الكرازة المرقسية\nتذكار استشهاد القديس سمعان الأسقف ورفقائه\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0902", 
@@ -2635,7 +2635,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1002&C=Title", 
   "10 Paopi\nMartyre de saint Serges le compagnon de saint Bacchus ", 
-  " 10 بابه", 
+  " 10 بابه\nاستشهاد القديس سرجيوس رفيق واخس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1002", 
@@ -2676,8 +2676,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1102&C=Title", 
-  "11 Paopi\n1) Décès de saint Jacques, patriarche d’Antioche\n2) Décès de sainte Pélagie, la pénitente. ", 
-  " 11 بابه", 
+  "11 Paopi\n1) Décès de saint Jacques, patriarche d’Antioche ;\n2) Décès de sainte Pélagie, la pénitente", 
+  " 11 بابه\nنياحة الأنبا يعقوب بطريرك أنطاكية\nنياحة القديسة بيلاجية التائبة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1102", 
@@ -2728,8 +2728,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1202&C=Title", 
-  " 12 Paopi\n1) Commémoration de l'archane Michel;\n2) Martyre de saint Matthieu l'évangéliste;\n3) Décès de saint Démétrios 1er le 12ème pape d'Alexandrie.", 
-  " 12 بابه", 
+  " 12 Paopi\n1) Commémoration de l'archane Michel ;\n2) Martyre de saint Matthieu l'évangéliste ;\n3) Décès de saint Démétrios 1er le 12ème pape d'Alexandrie", 
+  " 12 بابه\nتذكار رئيس الملائكة الجليل ميخائيل\nاستشهاد القديس متى الإنجيلي المبشر\nنياحة البابا القديس ديمتريوس الكرام البطريرك الثاني عشر من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1202", 
@@ -2826,7 +2826,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1302&C=Title", 
   "13 Paopi\nDécès de saint Zacharie, le moine", 
-  " 13 بابه", 
+  " 13 بابه\nنياحة القديس زكريا الراهب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1302", 
@@ -2873,7 +2873,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1402&C=Title", 
   "14 Paopi\nDécès de Saint Philippe l’un des sept diacres ", 
-  " 14 بابه", 
+  " 14 بابه\nنياحة القديس فيلبس أحد الشمامسة السبعة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1402", 
@@ -2920,7 +2920,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1502&C=Title", 
   " 15 Paopi\nMartyre de saint Pantéléïmôn, le médecin", 
-  " 15 بابه", 
+  " 15 بابه\nاستشهاد بندلائيمون الطبيب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1502", 
@@ -2956,8 +2956,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1602&C=Title", 
-  "16 Paopi\n1) Décès de saint Agathon le trente-neuvième pape d'Alexandrie;\n2) Commémoration des saints Carpus, Apollos et Pierre ", 
-  " 16 بابه", 
+  "16 Paopi\n1) Décès de saint Agathon le trente-neuvième pape d'Alexandrie ;\n2) Commémoration des saints Carpus, Apollos et Pierre ", 
+  " 16 بابه\nنياحة القديس البابا الأنبا أغاثون، البطريرك التاسع والثلاثون من بطاركة الكرازة المرقسية\nتذكار القديسين كاربوس وأبولوس وبطرس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1602", 
@@ -3004,7 +3004,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1702&C=Title", 
   "17 Paopi\nDécès du pape Dioscore II le 31ème patriarche de la prédication de saint Marc", 
-  " 17 بابه", 
+  " 17 بابه\nنياحة البابا الأنبا ديوسقوروس الثاني البطريرك الحادي والثلاثين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1702", 
@@ -3041,7 +3041,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1802&C=Title", 
   "18 Paopi\nDécès du pape saint Théophile le 23ème patriarche de la prédication de sant Marc", 
-  " 18 بابه", 
+  " 18 بابه\nنياحة البابا القديس ثاؤفيلس البطريرك الثالث والعشرين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1802", 
@@ -3097,8 +3097,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1902&C=Title", 
-  "19 Paopi\n1) Martyre à Fayoum de saint Théophile et de sa femme;\n2) Tenue du concile d’Antioche pour juger Paul de Samosate ", 
-  " 19 بابه", 
+  "19 Paopi\n1) Martyre à Fayoum de saint Théophile et de sa femme ;\n2) Tenue du concile d’Antioche pour juger Paul de Samosate ", 
+  " 19 بابه\nاستشهاد القديس ثاؤفيلس وزوجته بالفيوم\nعقد مجمع بأنطاكية لمحاكمة بولس الساموساطي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1902", 
@@ -3150,7 +3150,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2002&C=Title", 
   "20 Paopi\nDécès de saint Jean Colobos ", 
-  " 20 بابه", 
+  " 20 بابه\nنياحة القديس يوحنا القصير\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2002", 
@@ -3206,8 +3206,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2102&C=Title", 
-  "21 Paopi\n1) Commémoration de la Mère de Dieu, la très sainte Vierge Marie;\n2) Décès du prophète Joël;\n3) Translation des reliques de Lazare, le bien-aimé de notre Seigneur;\n4) Décès de saint Freige ", 
-  " 21 بابه", 
+  "21 Paopi\n1) Commémoration de la Mère de Dieu, la très sainte Vierge Marie ;\n2) Décès du prophète Joël ;\n3) Translation des reliques de Lazare, le bien-aimé de notre Seigneur ;\n4) Décès de saint Freige ", 
+  " 21 بابه\nالتذكار الشهري لوالدة الإله القديسة العذراء مريم\nنياحة يوئيل النبي\nنقل جسد لعازر حبيب الرب\nنياحة القديس الأنبا رويس\n21 بابه - 31 اكتوبر", 
   ], 
   [
   Prefix.synaxarium+"&D=2102", 
@@ -3324,7 +3324,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2202&C=Title", 
   "22 Paopi\nMartyre de Saint Luc l'évangéliste ", 
-  " 22 بابه", 
+  " 22 بابه\nاستشهاد القديس لوقا الإنجيلي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2202", 
@@ -3380,8 +3380,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2302&C=Title", 
-  "23 Paopi\n1) Martyre de saint Denys, évêque de Corinthe;\n2) Décès du pape Joseph 1er, le cinquante-deuxième patriarche de la prédication de saint Marc", 
-  " 23 بابه", 
+  "23 Paopi\n1) Martyre de saint Denys, évêque de Corinthe ;\n2) Décès du pape Joseph 1er, le cinquante-deuxième patriarche de la prédication de saint Marc", 
+  " 23 بابه\nاستشهاد القديس ديونيسيوس أسقف كورنثوس\nنياحة البابا يوساب الأول البطريرك الثاني والخمسين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2302", 
@@ -3437,8 +3437,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2402&C=Title", 
-  "24 Paopi\n1) Décès du moine saint Hilarion le grand;\n2) Martyre de sant Paul, saint Longin et sainte Dina ", 
-  " 24 بابه", 
+  "24 Paopi\n1) Décès du moine saint Hilarion le grand ;\n2) Martyre de sant Paul, saint Longin et sainte Dina ", 
+  " 24 بابه\nنياحة القديس إيلاريون الكبير الراهب\nاستشهاد القديسين بولس ولُونجينوس ودينة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2402", 
@@ -3489,8 +3489,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2502&C=Title", 
-  "25 Paopi\n1) Décès de saint Abib l’ami de saint Apollo;\n2)Conscration de l’église de Saint Jules d’Akfahs ", 
-  " 25 بابه", 
+  "25 Paopi\n1) Décès de saint Abib l’ami de saint Apollo ;\n2) Conscration de l’église de Saint Jules d’Akfahs ", 
+  " 25 بابه\nنياحة القديس أبيب صديق القديس أبوللو\nتكريس كنيسة الشهيد يوليوس الأقفهصي كاتب سير الشهداء\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2502", 
@@ -3551,8 +3551,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2602&C=Title", 
-  "26 Paopi\n1) Martyre de saint Timon, le disciple et le diacre;\n2) Commémoration des 7 martyrs de la montagne de saint Antoine ", 
-  " 26 بابه", 
+  "26 Paopi\n1) Martyre de saint Timon, le disciple et le diacre ;\n2) Commémoration des 7 martyrs de la montagne de saint Antoine ", 
+  " 26 بابه\nاستشهاد القديس تيمون الرسول، أحد السبعين، وأحد الشمامسة السبعة\nتذكار السبعة الشهداء بجبل أنطونيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2602", 
@@ -3588,8 +3588,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2702&C=Title", 
-  "27 Paopi\n\nMartyre de saint Macaire, évêque de Qaw ", 
-  " 27 بابه", 
+  "27 Paopi\nMartyre de saint Macaire, évêque de Qaw ", 
+  " 27 بابه\nاستشهاد القديس مكاريوس أسقف قاو\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2702", 
@@ -3631,7 +3631,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2802&C=Title", 
   "28 Paopi\nMartyre des saints Marcien et Mercure ", 
-  " 28 بابه", 
+  " 28 بابه\nاستشهاد القديسين مركيانوس ومركوريوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2802", 
@@ -3652,8 +3652,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2902&C=Title", 
-  "29 Paopi\n1) Commémoration des 3 fêtes du Seigneur : l’annonciation, la nativité et Pâques;\n2) Martyre de saint Dimitri de Thessalonique;\n3) Décès du pape Gabriel VII, le 95ème patriarche de la prédication de saint Marc ", 
-  " 29 بابه", 
+  "29 Paopi\n1) Commémoration des 3 fêtes du Seigneur : l’annonciation, la nativité et Pâques ;\n2) Martyre de saint Dimitri de Thessalonique ;\n3) Décès du pape Gabriel VII, le 95ème patriarche de la prédication de saint Marc ", 
+  " 29 بابه\nتذكار الأعياد الثلاثة السيدية \" البشارة والميلاد والقيامة \"\nاستشهاد القديس ديمتريوس التسالونيكي\nنياحة البابا القديس غبريال السابع البطريرك الخامس والتسعين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2902", 
@@ -3714,8 +3714,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=3002&C=Title", 
-  "30 Paopi\n1) Apparition de la tête de saint Marc, l'évangéliste et Consécration de son église;\n2) Décès de saint Abraham l'ermite. ", 
-  " 30 بابه", 
+  "30 Paopi\n1) Apparition de la tête de saint Marc, l'évangéliste et Consécration de son église ;\n2) Décès de saint Abraham l'ermite ", 
+  " 30 بابه\nظهور رأس القديس مار مرقس الإنجيلي الرسول، وتكريس كنيسته\nنياحة القديس إبراهيم المنوفي المتوحد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3002", 
@@ -3781,7 +3781,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0103&C=Title", 
-  "1er Athor\n1) Commémoration de saint Cléopas, un des deux disciples d’Emmaüs;\n2) Martre de saint Cyriaque, évêque de Jérusalem, et de sa mère;\n3) Martyre des saints Maxime, Numitius, Victor et Philippe;\n4) Martyre de sainte Anastasie la grande et de saint Cyrille", 
+  "1er Athor\n1) Commémoration de saint Cléopas, un des deux disciples d’Emmaüs ;\n2) Martre de saint Cyriaque, évêque de Jérusalem, et de sa mère ;\n3) Martyre des saints Maxime, Numitius, Victor et Philippe ;\n4) Martyre de sainte Anastasie la grande et de saint Cyrille", 
   " 1 هاتور\nاستشهاد القديس كليوباس الرسول أحد تلميذي عمواس\nاستشهاد القديس كيرياكوس أسقف أورشليم ووالدته\nاستشهاد القديسين مكسيموس ونوميتيوس وبقطر وفيلبس\nاستشهاد القديسة أنسطاسية الكبيرة، والقديس كيرلس\n", 
   ], 
   [
@@ -3883,7 +3883,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0203&C=Title", 
-  "2 Athor\n1) Décès du pape Pierre III, le 27ème patriarche de la prédication de Saint Marc;\n2) Martyre de Saint Macaire, le libyen;\n3) Décès de Saint Ephramios d’Edesse ", 
+  "2 Athor\n1) Décès du pape Pierre III, le 27ème patriarche de la prédication de Saint Marc ;\n2) Martyre de Saint Macaire, le libyen ;\n3) Décès de Saint Ephramios d’Edesse", 
   " 2 هاتور\nنياحة البابا بطرس الثالث البطريرك السابع والعشرين من بطاركة الكرازة المرقسية\nاستشهاد القديس مقار الليـبي\nنياحة القديس أفراميوس الرهاوى\n", 
   ], 
   [
@@ -3970,7 +3970,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0303&C=Title", 
-  "3 Athor\n1) Martyre de Saint Athanase et sa sœur Irène;\n2) Martyre de Saint Agathon\n3) Décès de Saint Cyriaque de Corinthe ", 
+  "3 Athor\n1) Martyre de Saint Athanase et sa sœur Irène ;\n2) Martyre de Saint Agathon ;\n3) Décès de Saint Cyriaque de Corinthe ", 
   " 3 هاتور\nاستشهاد القديس أثناسيوس وأخته إيرينى\nاستشهاد القديس أغاثون\nنياحة القديس كيرياكوس من أهل كورنثوس\n", 
   ], 
   [
@@ -4042,7 +4042,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0403&C=Title", 
-  "4 Athor\n1) Martyre des saints Jean et Jacques, les évêques de Perse;\n2) Martyr de Saint Thomas, l’évêque;\n3) Martyre des Saints Epimaque et Gordien ", 
+  "4 Athor\n1) Martyre des saints Jean et Jacques, les évêques de Perse ;\n2) Martyr de Saint Thomas, l’évêque ;\n3) Martyre des Saints Epimaque et Gordien ", 
   " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\nاستشهاد الأنبا توماس الأسقف\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n", 
   ], 
   [
@@ -4104,7 +4104,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0503&C=Title", 
-  " 5 Athor\n1) Apparition de la tête de Saint Longin, le soldat. Martyre de saint Timothée;\n2)  Transfert des reliques de Saint Théodore à Choteb;\n3) Décès de Saint Joseph au mont Chamah", 
+  " 5 Athor\n1) Apparition de la tête de Saint Longin, le soldat ;\n2) Martyre de saint Timothée ;\n3)  Transfert des reliques de Saint Théodore à Choteb ;\n4) Décès de Saint Joseph au mont Chamah", 
   " 5 هاتور\nظهور رأس القديس لُونجينوس الجُندي\nاستشهاد القديس تيموثاوس وزوجته مورا\nنقل جسد الأمير تادرس الشُطبى إلى بلدة شُطب\nنياحة القديس يوساب بجبل شامة\n", 
   ], 
   [
@@ -4196,7 +4196,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0603&C=Title", 
-  "6 Athor\n1) Consécration de l'église de la Sainte Vierge au monastère al-Moharrak, au mont Kosquâm;\n2) Décès de Saint Félix, pape de Rome", 
+  "6 Athor\n1) Consécration de l'église de la Sainte Vierge au monastère al-Moharrak, au mont Kosquâm ;\n2) Décès de Saint Félix, pape de Rome", 
   " 6 هاتور\nتذكار تكريس كنيسة القديسة العذراء – الأثرية – بدير المحرق العامر بجبل قسقام\nنياحة القديس فيلكس بابا رومية", 
   ], 
   [
@@ -4253,7 +4253,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0703&C=Title", 
-  "7 Athor\n1) Consécration de l'église de Saint Georges de Cappadoce;\n2) Martyre de Saint Georges d'Alexandrie;\n3) Martyre de Saint Nehroua;\n4) Martyre des saints Akepsimas, Aithala et Joseph;\n5) Décès de saint Menas, l'évêque de Thmouï ", 
+  "7 Athor\n1) Consécration de l'église de Saint Georges de Cappadoce ;\n2) Martyre de Saint Georges d'Alexandrie ;\n3) Martyre de Saint Nehroua ;\n4) Martyre des saints Akepsimas, Aithala et Joseph ;\n5) Décès de saint Menas, l'évêque de Thmouï ", 
   " 7 هاتور\nتكريس كنيسة الشهيد العظيم مار جرجس الروماني باللدّ\nاستشهاد القديس مار جرجس الإسكندري\nاستشهاد الأنبا نهروه\nاستشهاد القديسين أكبسيما وإيتالا ويوسف\nنياحة القديس الأنبا مينا أسقف تمي الأمديد\n", 
   ], 
   [
@@ -4384,13 +4384,13 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0703", 
   "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.\n", 
+  "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0803&C=Title", 
-  " 8 Athor\n1) Commémoration des quatre vivants incorporels;\n2) Martyre de Saint Nikandros, le pêtre de Myre;\n3) Décès du père Piryos, le directeur de l’écolethéologique d’Alexandrie", 
+  " 8 Athor\n1) Commémoration des quatre vivants incorporels ;\n2) Martyre de Saint Nikandros, le pêtre de Myre ;\n3) Décès du père Piryos, le directeur de l’écolethéologique d’Alexandrie", 
   " 8 هاتور\nتذكار الأربعة مخلوقات الحية غير المتجسدين\nاستشهاد القديس نيكاندروس كاهن ميرا\nنياحة الأب بيريّوس مدير مدرسة الإسكندرية اللاهوتية\n", 
   ], 
   [
@@ -4452,7 +4452,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0903&C=Title", 
-  "9 Athor\n1) Tenue du 1er concile œcuménique à Nicée;\n2) Décès du pape Isaac, le 41ème patriarche de la prédication de Saint Marc ", 
+  "9 Athor\n1) Tenue du 1er concile œcuménique à Nicée ;\n2) Décès du pape Isaac, le 41ème patriarche de la prédication de Saint Marc ", 
   " 9 هاتور\nاجتماع مجمع نيقية المسكونى الأول\nنياحة البابا إسحاق البطريرك الحادي والأربعين من بطاركة الكرازة المرقسية", 
   ], 
   [
@@ -4524,7 +4524,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1003&C=Title", 
-  "10 Athor\n1) Martyre des 50 vierges et de leur mère spirituelle;\n2) Réunion d’un concileà Rome au sujet de la fête de l’Epiphanie et du carême ", 
+  "10 Athor\n1) Martyre des 50 vierges et de leur mère spirituelle ;\n2) Réunion d’un concileà Rome au sujet de la fête de l’Epiphanie et du carême ", 
   " 10 هاتور\nاستشهاد العذارى الخمسين وأمهن\nاجتماع مجمع بروما بسبب عيد الغطاس المجيد والصوم الكبير\n", 
   ], 
   [
@@ -4581,7 +4581,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1103&C=Title", 
-  "11 Athor\n1) Décès de Sainte Anne, la mère de la sainte Vierge Marie, la mère de Dieu;\n2) Martyre de Saint Michel, le moine;\n3) Commémoration du martyre de Saint Archélaüs et de Saint Elysée, l’higoumène ", 
+  "11 Athor\n1) Décès de Sainte Anne, la mère de la sainte Vierge Marie, la mère de Dieu ;\n2) Martyre de Saint Michel, le moine ;\n3) Commémoration du martyre de Saint Archélaüs et de Saint Elysée, l’higoumène ", 
   " 11 هاتور\nنياحة القديسة حَنّة والدة القديسة العذراء مريم\nاستشهاد القديس ميخائيل الراهب\nاستشهاد القديسَيْن أرشيلاؤس وأليشع القمص", 
   ], 
   [
@@ -4643,7 +4643,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1203&C=Title", 
-  "12 Athor\n1) Commémoration de l’Archange Michel;\n2) Décès de Saint Jean le syriaque ", 
+  "12 Athor\n1) Commémoration de l’Archange Michel ;\n2) Décès de Saint Jean le syriaque ", 
   " 12 هاتور\nتذكار رئيس الملائكة الجليل ميخائيل رئيس جند الرب\nنياحة القديس يوحنا السرياني\n", 
   ], 
   [
@@ -4710,7 +4710,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1303&C=Title", 
-  "13 Athor\n1) Commémoration de l’Archange Gabriel;\n2) Décès du pape abba Zacharie, le 64ème patriarche de la prédication de Saint Marc;\n3) Martyre de Saint Théodore Tiron;\n4) Décès de Saint Timothée, évêque d’Antinoë;\n5) Décès d’Abba Joseph au mont al-Assas", 
+  "13 Athor\n1) Commémoration de l’Archange Gabriel ;\n2) Décès du pape abba Zacharie, le 64ème patriarche de la prédication de Saint Marc ;\n3) Martyre de Saint Théodore Tiron ;\n4) Décès de Saint Timothée, évêque d’Antinoë ;\n5) Décès d’Abba Joseph au mont al-Assas", 
   " 13 هاتور\nتذكار رئيس الملائكة الجليل جبرائيل\nنياحة البابا الأنبا زخارياس البطريرك الرابع والستين من بطاركة الكرازة المرقسية\nاستشهاد القديس تادرس تيرو\nنياحة الأنبا تيموثاوس أسقف أنصنا\nنياحة الأنبا يوساب بجبل الأساس\n", 
   ], 
   [
@@ -4852,7 +4852,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1403&C=Title", 
-  "14 Athor\n1) Décès de Saint Martin, évêque de Tours;\n2) Martyre de l’officier Pharos et de ses enseignants ", 
+  "14 Athor\n1) Décès de Saint Martin, évêque de Tours ;\n2) Martyre de l’officier Pharos et de ses enseignants ", 
   " 14 هاتور\nنياحة القديس مرتينوس أسقف ثراكي\nاستشهاد الضابط فاروس ومعلّميه", 
   ], 
   [
@@ -4924,7 +4924,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1503&C=Title", 
-  "15 Athor\n1) Martyre de Saint Ménas, le thaumaturge;\n2) Décès de Saint Jean ar-Robbane ", 
+  "15 Athor\n1) Martyre de Saint Ménas, le thaumaturge ;\n2) Décès de Saint Jean ar-Robbane ", 
   " 15 هاتور\nاستشهاد القديس مار مينا العجائبى\nنياحة القديس يوحنا الربان\n", 
   ], 
   [
@@ -5016,7 +5016,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1603&C=Title", 
-  "16 Athor\n1) Début du jeûne de l’avent pour l’Église copte orthodoxe;\n2) Consécration de l’église de Saint Onuphre l'Anachorète;\n3) Martyre de Saint Juste, l’évêque;\n4) Décès du pape Ménas II, le 61ème patriarche de la prédication de saint Marc;\n5) Décès de Saint Nylus le sinaïte ", 
+  "16 Athor\n1) Début du jeûne de l’avent pour l’Église copte orthodoxe ;\n2) Consécration de l’église de Saint Onuphre l'Anachorète ;\n3) Martyre de Saint Juste, l’évêque ;\n4) Décès du pape Ménas II, le 61ème patriarche de la prédication de saint Marc ;\n5) Décès de Saint Nylus le sinaïte ", 
   " 16 هاتور\nبدء صوم الميلاد في كنيستنا القبطية الأرثوذكسية\nتكريس كنيسة القديس أبى نُفر السائح\nاستشهاد القديس يسطس الأسقف\nنياحة البابا مينا الثاني البطريرك الحادي والستين من بطاركة الكرازة المرقسية\nنياحة القديس نيلس السينائى\n", 
   ], 
   [
@@ -5118,7 +5118,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1703&C=Title", 
-  "17 Athor\n1) Décès de saint Jean Chrysostome;\n2) Décès de saint Paul au mont Danfiq ", 
+  "17 Athor\n1) Décès de saint Jean Chrysostome ;\n2) Décès de saint Paul au mont Danfiq ", 
   " 17 هاتور\nنياحة القديس يوحنا ذهبي الفم\nنياحة القديس بولس بجبل دنفيق\n", 
   ], 
   [
@@ -5180,7 +5180,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1803&C=Title", 
-  "18 Athor\n1) Martyre de Saint Philippe, l’apôtre;\n2) Martyre des Saintes Atrasis et Jeanne;\n3) Commémoration du miracle du transfert de la colline du Mokattam ", 
+  "18 Athor\n1) Martyre de Saint Philippe, l’apôtre ;\n2) Martyre des Saintes Atrasis et Jeanne ;\n3) Commémoration du miracle du transfert de la colline du Mokattam ", 
   " 18 هاتور\nاستشهاد القديس فيلبس الرسول\nاستشهاد القديستين أدروسيس ويوأنا\nتذكار معجزة نقل الجبل المقطم\n", 
   ], 
   [
@@ -5277,7 +5277,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1903&C=Title", 
-  "19 Athor\n1) Consécration de l’église de Saint Serge et Saint Bacchus à el-Rassafa;\n2) Martyre de Saint Habib", 
+  "19 Athor\n1) Consécration de l’église de Saint Serge et Saint Bacchus à el-Rassafa ;\n2) Martyre de Saint Habib", 
   " 19 هاتور\nتكريس كنيسة سرجيوس وواخس – بالرصافة\nاستشهاد القديس أبيبوس\n", 
   ], 
   [
@@ -5319,7 +5319,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2003&C=Title", 
-  "20 Athor\n1) Décès de Saint Anien, le 2ème patriarche de la prédication de Saint Marc;\n2) Consécration de l’église du prince Théodore de Choteb et celle du prince Théodore l’oriental", 
+  "20 Athor\n1) Décès de Saint Anien, le 2ème patriarche de la prédication de Saint Marc ;\n2) Consécration de l’église du prince Théodore de Choteb et celle du prince Théodore l’oriental", 
   " 20 هاتور\nنياحة القديس إنيانوس البطريرك الثاني من بطاركة الكرازة المرقسية\nتكريس بيعتي الأمير تادرس الشُطبى والأمير تادرس المشرقي\n", 
   ], 
   [
@@ -5381,7 +5381,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2103&C=Title", 
-  "21 Athor\n1) Commémoration de Sainte vierge Marie, la mère de Dieu;\n2) Décès de Saint Grégoire le Thaumaturge;\n3) Décès du pape Côme II, le 54ème patriarche de la prédication de Saint Marc;\n4) Décès de Jean de Lycopolis dans la montagne de cette ville;\n5) Commémoration des saints Alphée, Zachée, Romain et Jean les martyrs ainsi que des saints Thomas, Victor et Isaac d'al-Achmounein;\n6) Transfert du corps de saint Jean Kamé au monastère el-Souryan ", 
+  "21 Athor\n1) Commémoration de Sainte vierge Marie, la mère de Dieu ;\n2) Décès de Saint Grégoire le Thaumaturge ;\n3) Décès du pape Côme II, le 54ème patriarche de la prédication de Saint Marc ;\n4) Décès de Jean de Lycopolis dans la montagne de cette ville ;\n5) Commémoration des saints Alphée, Zachée, Romain et Jean les martyrs ainsi que des saints Thomas, Victor et Isaac d'al-Achmounein ;\n6) Transfert du corps de saint Jean Kamé au monastère el-Souryan ", 
   " 21 هاتور\nتذكار نياحة القديسة مريم العذراء والدة الإله\nنياحة القديس غريغوريوس العجائبى\nنياحة البابا قسما الثاني البطريرك الرابع والخمسين من بطاركة الكرازة المرقسية\nنياحة القديس يوحنا التبايسي بجبل أسيوط\nتذكار القديسين حلفا وزكا ورومانوس ويوحنا الشهداء. وتذكار القديسين توما وبقطر وإسحاق من الأشمونين\nنقل جسد القديس الأنبا يحنس كاما من ديره إلى دير السريان\n", 
   ], 
   [
@@ -5615,8 +5615,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2303&C=Title", 
-  "23 Athor\n1) Décès de Saint Corneille, le centurion;\n2) Consécration de l’église de Sainte Marina ", 
-  " 23 هاتور", 
+  "23 Athor\n1) Décès de Saint Corneille, le centurion ;\n2) Consécration de l’église de Sainte Marina ", 
+  " 23 هاتور\nنياحة القديس كرنيليوس قائد المائة\nتذكار تكريس كنيسة القديسة مارينا الشهيدة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
@@ -5657,8 +5657,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2403&C=Title", 
-  "24 Athor\nCommémoration des 24 prêtres incorporels;\n2) Martyre de l’évêque Narcisse et de sainte Tekla;\n3) Décès de Saint Proclus, le patriarche de Constantinople ", 
-  " 24 هاتور", 
+  "24 Athor\nCommémoration des 24 prêtres incorporels ;\n2) Martyre de l’évêque Narcisse et de sainte Tekla ;\n3) Décès de Saint Proclus, le patriarche de Constantinople ", 
+  " 24 هاتور\nتذكار الأربعة والعشرين قسيساً غير الجسدانيين\nاستشهاد الأسقف نارسيس والقديسة تكلا\nنياحة البابا بروكلس بطريرك القسطنطينية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2403", 
@@ -5720,7 +5720,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2503&C=Title", 
   "25 Athor\nMartyre de Saint Mercure ", 
-  " 25 هاتور", 
+  " 25 هاتور\nاستشهاد القديس مرقوريوس الشهير بأبي سيفين\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2503", 
@@ -5751,8 +5751,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2603&C=Title", 
-  "26 Athor\n1) Martyre de Saint Valérien et Saint Tiburce son frère;\n2° Commémoration de Saint Grégoire, évêque de Nysse ", 
-  " 26 هاتور", 
+  "26 Athor\n1) Martyre de Saint Valérien et Saint Tiburce son frère ;\n2° Commémoration de Saint Grégoire, évêque de Nysse ", 
+  " 26 هاتور\nاستشهاد القديس بالاريانوس وأخيه تيبورينوس\nنياحة القديس غريغوريوس النيصي أسقف نيصص\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2603", 
@@ -5798,8 +5798,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2703&C=Title", 
-  "27 Athor\n1) Martyre de Saint Jacques l’intercis;\n2) Consécration de l’église de Saint Victor le martyr, le fils de Romanos ", 
-  " 27 هاتور", 
+  "27 Athor\n1) Martyre de Saint Jacques l’intercis ;\n2) Consécration de l’église de Saint Victor le martyr, le fils de Romanos ", 
+  " 27 هاتور\nاستشهاد القديس يعقوب الفارسي المقطع\nتكريس كنيسة الشهيد بقطر بن رومانوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2703", 
@@ -5856,7 +5856,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2803&C=Title", 
   "28 Athor\nMartyre de Saint Sarabamôn, évêque de Nikiou ", 
-  " 28 هاتور", 
+  " 28 هاتور\nاستشهاد القديس صرابامون أسقف نيقيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2803", 
@@ -5892,8 +5892,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2903&C=Title", 
-  "29 Athor\n1) Commémoration des 3 fêtes majeures du Seigneur : l’Annonciatio, la Nativité et Pâques;\n2) Martyre du pape Pierre, le sceau des martyrs, le 17ème patriarche de la prédication de Saint Marc;\n3) Martyre de Saint Clément 1er, le pape de Rome;\n4) Martyre de Sainte Catherine d’Alexandrie ", 
-  " 29 هاتور", 
+  "29 Athor\n1) Commémoration des 3 fêtes majeures du Seigneur : l’Annonciatio, la Nativité et Pâques ;\n2) Martyre du pape Pierre, le sceau des martyrs, le 17ème patriarche de la prédication de Saint Marc ;\n3) Martyre de Saint Clément 1er, le pape de Rome ;\n4) Martyre de Sainte Catherine d’Alexandrie", 
+  " 29 هاتور\nتذكار الأعياد الثلاثة السيدية الكبرى \" البشارة والميلاد والقيامة \"\nاستشهاد البابا بطرس \" خاتم الشهداء \" البطريرك السابع عشر من بطاركة الكرسي المرقسي\nاستشهاد القديس إكليمنضس الأول بابا روما\nاستشهاد القديسة كاترين الإسكندرانية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2903", 
@@ -5994,8 +5994,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=3003&C=Title", 
-  "30 Athor\n1) Martyre de Saint Macaire;\n2) Martyre de Saint Jean de Qalyoub, le moine;\n3) Décès de Saint Acace, patriarche de Constantinople;\n4) Consécration de l’églisede Saint Côme et Saint Damien, de leurs frères et de leur mère ", 
-  " 30 هاتور", 
+  "30 Athor\n1) Martyre de Saint Macaire ;\n2) Martyre de Saint Jean de Qalyoub, le moine ;\n3) Décès de Saint Acace, patriarche de Constantinople ;\n4) Consécration de l’églisede Saint Côme et Saint Damien, de leurs frères et de leur mère ", 
+  " 30 هاتور\nاستشهاد القديس مكاريوس\nاستشهاد الراهب القديس يوحنا القليوبي\nنياحة القديس أكاكيوس بطريرك القسطنطينية\nتكريس بيعة القديسين قزمان ودميان وإخوتهما وأمهم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3003", 
@@ -13747,7 +13747,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0111&C=Title", 
   "1er Apip\n1) Martyre de sainte Fébronia, l’ascète;\n2) Décès des saints Bioukha et Tayâban les prêtres;\n3) Consécration de l’église de saint Ménas au mont Abnoub ", 
-  "1 أبيب\nاستشهاد القديسة أفرونيا الناسكة\n\nنياحة القديسين بيوخا وتيابان القسيسين\n\nتكريس كنيسة الشهيد مار مينا بجبل أبنوب\n", 
+  " 1 أبيب\nاستشهاد القديسة أفرونيا الناسكة\nنياحة القديسين بيوخا وتيابان القسيسين\nتكريس كنيسة الشهيد مار مينا بجبل أبنوب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0111", 
@@ -13798,8 +13798,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0211&C=Title", 
-  "2 Apip", 
-  " 2 أبيب", 
+  "2 Apip\nDécès de l'apôtre saint Jude (Lebbaeus surnommé Thaddée)\n", 
+  " 2 أبيب\nاستشهاد القديس يهوذا الرسول ( لباوس الملقب تداوس )\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0211", 
@@ -13835,8 +13835,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0311&C=Title", 
-  "3 Apip", 
-  " 3 أبيب", 
+  "3 Apip\n1) Décès du pape saint Cyrille 1er, le 24ème patriarche de la prédication de saint Marc ;\n\n2) Décès de saint Célestin, le pape de Rome", 
+  " 3 أبيب\nنياحة القديس البابا كيرلس الأول البطريرك الرابع والعشرين من بطاركة الكرازة المرقسية\nنياحة القديس كلستينوس بابا روما\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0311", 
@@ -13907,8 +13907,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0411&C=Title", 
-  "Translation des reliques de saint Cyr et saint Jean. 4 Apip", 
-  "4 أبيب", 
+  "1) 4 Apip\nTransfert des reliques de saint Cyr et saint Jean", 
+  " 4 أبيب\nتذكار نقل أعضاء الشهيدين أباكير ويوجنا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0411", 
@@ -13934,8 +13934,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0511&C=Title", 
-  "Martyre de saint Pierre et saint Paul. Martyre de saint Marc, le gouverneur d’al-Borollos, le père de sainte Damiana. 5 Apip", 
-  "5 أبيب", 
+  "5 Apip\n1) Martyre de saint Pierre et saint Paul ;\n2) Martyre de saint Marc, le gouverneur d’al-Borollos ", 
+  " 5 أبيب\nاستشهاد القديسين بطرس وبولس\nاستشهاد القديس مرقس والي البرلس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0511", 
@@ -14006,8 +14006,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0611&C=Title", 
-  "6 Apip", 
-  " 6 أبيب", 
+  "6 Apip\n1) Martyre de saint Olympas, le disciple ;\n2) Martyre de sainte Théodosie et de ses compagnons", 
+  " 6 أبيب\nاستشهاد القديس أولمباس أحد السبعين تلميذاً\nاستشهاد القديسة ثاؤدوسية ومن معها\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0611", 
@@ -14038,8 +14038,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0711&C=Title", 
-  "Décès d’Abba Chénouda, l’archimandrite. 7 Apip", 
-  " 7 أبيب", 
+  "7 Apip\nDécès d’Abba Chénouda, l’archimandrite\n", 
+  " 7 أبيب\nنياحة القديس العظيم الأنبا شنوده رئيس المتوحدين\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0711", 
@@ -14090,8 +14090,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0811&C=Title", 
-  "8 Apip", 
-  " 8 أبيب", 
+  "8 Apip\n1) Décès de saint Pichoï ;\n2) Martyre de saint Pirô’ouh et saint Athom ;\n3) Martyre de saint Plana, le prêtre ;\n4) Martyre de saint Pimanôn ;\n5) Décès de saint Karas frère du roi Théodose ;\n6)  Décès de saint Marc al-Antouni", 
+  " 8 أبيب\nنياحة القديس الأنبا بيشوي\nاستشهاد القديسين أبيرؤوه وأثوم\nاستشهاد القديس بلانا القس\nاستشهاد القديس بيمانون\nنياحة القديس الأنبا كاراس السائح\nنياحة القديس مرقس الأنطوني\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0811", 
@@ -14222,8 +14222,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0911&C=Title", 
-  "Martyre de Simon fils d’Alphée, l’évêque de Jérusalem. Décès du pape Céladion le 9ème patriarche de la prédication de saint Marc. 9 Apip", 
-  "9 أبيب", 
+  "9 Apip\n1) Martyre de Simon fils d’Alphée, l’évêque de Jérusalem ;\n2) Décès du pape Céladion le 9ème patriarche de la prédication de saint Marc ", 
+  " 9 أبيب\nاستشهاد القديس سمعان بن حلفي أسقف أورشليم\nنياحة القديس البابا كلاوديانوس البطريرك التاسع من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0911", 
@@ -14264,8 +14264,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1011&C=Title", 
-  "10 Apip", 
-  " 10 ابيب", 
+  "10 Apip\n1) Martyre de saint Théodore, évêque de la Pentapole occidentale ;\n2) Martyre de saint Théodore, évêque de Corinthe ainsi que ses compagnons", 
+  " 10 ابيب\nاستشهاد القديس ثاؤدوروس أسقف الخمس مدن الغربية\nاستشهاد القديس ثاؤدوروس أسقف كورنثوس ومن معه\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1011", 
@@ -14301,8 +14301,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1111&C=Title", 
-  "Martyre de saint Jean et de son cousin Siméon. Décès de saint Isaïe de Scété. 11 Apip", 
-  "11 أبيب", 
+  "11 Apip\n1) Martyre de saint Jean et de son cousin Siméon ;\n2) Décès de saint Isaïe de Scété", 
+  " 11 أبيب\nاستشهاد القديسين يوحنا وسمعان ابن عمه\nنياحة القديس العظيم الأنبا إشعياء الإسقيطى\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1111", 
@@ -14358,8 +14358,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1211&C=Title", 
-  "12 Apip", 
-  " 12 أبيب", 
+  "12 Apip\n1) Commémoration de l'archange Michel ;\n2) Martyre de saint abba Hour El-Siriakousy ;\nDécès de saint Sisoès le grand\n", 
+  " 12 أبيب\nتذكار رئيس الملائكة الجليل ميخائيل رئيس جند الرب\nاستشهاد القديس أباهور السرياقوسي\nنياحة القديس الأنبا شيشوي الكبير\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1211", 
@@ -14430,8 +14430,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1311&C=Title", 
-  "Décès de saint Pisentius, l’évêque de Qift (Coptos). Martyre de saint Abamôn de Toukh. Martyre de saint Chénouté, au début de l'époque arabe. 13 Apip", 
-  "13 أبيب", 
+  "13 Apip\n1) Décès de saint Pisentius, l’évêque de Qift (Coptos) ;\n2) Martyre de saint Abamôn de Toukh ; \n2) Martyre de saint Chénouté, au début de l'époque arabe ", 
+  " 13 أبيب\nنياحة القديس بسنتاؤس أسقف قفط\nاستشهاد القديس أبامون الطوخى\nاستشهاد القديس شنوده في أوائل حكم العرب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1311", 
@@ -14492,8 +14492,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1411&C=Title", 
-  "14 Apip", 
-  " 14 أبيب", 
+  "14 Apip\n1) Martyre de saint Procope ;\n2) Décès du pape Pierre V, le 83ème patriarche de la prédication de saint Marc", 
+  " 14 أبيب\nاستشهاد القديس بروكونيوس\nنياحة القديس البابا بطرس الخامس البطريرك الثالث والثمانين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1411", 
@@ -14524,8 +14524,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1511&C=Title", 
-  "Décès de saint Ephrem le syriaque. Martyr de saint Cyr et sainte Julitte. Martyr de saint Horesius de Soul. 15 Apip", 
-  "15 أبيب", 
+  "15 Apip\n1) Décès de saint Ephrem le syriaque ;\n2) Martyr de saint Cyr et sainte Julitte ;\n3) Martyr de saint Horesius de Soul", 
+  " 15 أبيب\nنياحة القديس مار أفرام السرياني\nاستشهاد القديسين كيرياكوس ويوليطة أمه\nاستشهاد القديس أوروسيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1511", 
@@ -14606,8 +14606,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1611&C=Title", 
-  "16 Apip", 
-  " 16 أبيب", 
+  "16 Apip\n1) Décès de saint Jean, le détenteur de l'Evangile en or ;\n2) Arrivée de la dépouille du grand martyr saint Georges de Cappadoce à son église du vieux Caire ;\n3) Consécration de l’église de saint Philotée", 
+  " 16 أبيب\nنياحة القديس يوحنا صاحب الإنجيل الذهب\nوضع جسد الشهيد مار جرجس الروماني بكنيسته بمصر القديمة\nتكريس بيعة الشهيد فيلوثيئوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1611", 
@@ -14668,8 +14668,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1711&C=Title", 
-  "17 Apip", 
-  " 17 أبيب", 
+  "17 Apip\n1) Martyre de sainte Euphémie ;\n\n2) Martyre de sainte Téklé et sainte Marthe d’Esna\n", 
+  " 17 أبيب\nاستشهاد القديسة أوفيمية\nاستشهاد القديستين تكلا ومرثا من إسنا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1711", 
@@ -14695,8 +14695,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1811&C=Title", 
-  "Martyre de l’apôtre saint Jacques, le frère du Seigneur. 18 Apip", 
-  "18 أبيب", 
+  "18 Apip\nMartyre de l’apôtre saint Jacques, le frère du Seigneur\n", 
+  " 18 أبيب\nاستشهاد القديس يعقوب الرسول أخي الرب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1811", 
@@ -14732,8 +14732,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1911&C=Title", 
-  "Martyre de saint Badaba, évêque de Coptos ainsi qu'abba André et abba Christodule. Commémoration des martyrs de la tuerie d’Esna. Martyre de saint Pantaléon, le médecin. Décès d'abba Jean X, le 85ème patriarche d'Alexandrie. 19 Apip", 
-  "19 أبيب", 
+  "19 Apip\n1) Martyre de saint Badaba, évêque de Coptos ainsi qu'abba André et abba Christodule ;\n2) Commémoration des martyrs de la tuerie d’Esna ;\n3) Martyre de saint Pantaléon, le médecin ;\n4) Décès d'abba Jean X, le 85ème patriarche d'Alexandrie \n", 
+  " 19 أبيب\nاستشهاد القديسين الأنبا بضابا أسقف قفط وأنبا أندراوس وأنبا خرستوذولوس\nاستشهاد شهداء مذبحة إسنا\nاستشهاد القديس بطلون الطبيب\nنياحة القديس البابا يوأنس العاشر البطريرك الخامس والثمانين من بطاركة الكرازة المر\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1911", 
@@ -14824,8 +14824,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2011&C=Title", 
-  "20 Apip", 
-  " 20 أبيب", 
+  "20 Apip\nMartyre de saint Théodore de Choteb\n", 
+  " 20 أبيب\nاستشهاد القديس تادرس الشُطبي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2011", 
@@ -14866,8 +14866,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2111&C=Title", 
-  "Commémoration de la sainte Vierge Marie. Décès de saint Sisinnios (Sosenius), l’eunuque. 21 Apip", 
-  "21 أبيب", 
+  "21 Apip\n1) Commémoration de la sainte Vierge Marie ;\n2) Décès de saint Sisinnios (Sosenius), l’eunuque \n", 
+  " 21 أبيب\nتذكار القديسة العذراء مريم\nنياحة القديس سوسنيوس الخصي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2111", 
@@ -14898,8 +14898,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2211&C=Title", 
-  "22 Apip", 
-  " 22 أبيب", 
+  "22 Apip\n1) Martyre de saint Macaire, le fils du ministre Basile ;\n2) Martyre de saint Léonce", 
+  " 22 أبيب\nاستشهاد القديس مكاريوس بن واسيليدس الوزير\nاستشهاد القديس لاونديوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2211", 
@@ -14950,8 +14950,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2311&C=Title", 
-  "Martyre de saint Longin, le centurion. Martyre de sainte Marina. 23 Apip", 
-  "23 أبيب", 
+  "23 Apip\n1) Martyre de saint Longin, le centurion ;\n2) Martyre de sainte Marina\n", 
+  " 23 أبيب\nاستشهاد القديس لونجينوس القائد\nاستشهاد القديسة مارينا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2311", 
@@ -15002,8 +15002,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2411&C=Title", 
-  "Martyre de saint abba Noub de Nahissa. Décès du pape Simon 1er, le 42ème patriarche de la prédication de saint Marc. 24 Apip", 
-  "24 أبيب", 
+  "24 Apip\n1) Martyre de saint abba Noub de Nahissa ;\n2) Décès du pape Simon 1er, le 42ème patriarche de la prédication de saint Marc ", 
+  " 24 أبيب\nاستشهاد القديس أبانوب النهيسي\n\nنياحة القديس البابا سيماؤن الثاني البطريرك الثاني والأربعين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2411", 
@@ -15069,8 +15069,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2511&C=Title", 
-  "Consécration de l’église de saint Mercure, le détenteur des deux épées. Martyre de saint abba Isaac. Martyre de sainte Hilarie. Martyre de sainte Thècle et sainte Mouji. Martyre de saint Antoine de Béba. Martyre de Saint Aba Kragon Martyre de saint Domitien le syrien. Décès de saint Plamôn. 25 Apip", 
-  "25 أبيب", 
+  "25 Apip\n1) Consécration de l’église de saint Mercure, le détenteur des deux épées; \n2) Martyre de saint abba Isaac ;\n3) Martyre de sainte Hilarie ;\n4) Martyre de sainte Thècle et sainte Mouji ;\n5) Martyre de saint Antoine de Béba ;\n6) Martyre de Saint Aba Kragon ;\n7) Martyre de saint Domitien le syrien ;\n8) Décès de saint Plamôn ", 
+  " 25 أبيب\nتكريس كنيسة الشهيد مرقوريوس أبي سيفين\nاستشهاد القديس إسحاق\nاستشهاد القديسة ليارية\nاستشهاد القديستين تكلة وموجي\nاستشهاد القديس أنطونيوس البباوي\nاستشهاد القديس أباكراجون\nاستشهاد القديس دوماديوس السرياني\nنياحة القديس بلامون\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2511", 
@@ -15186,8 +15186,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2611&C=Title", 
-  "26 Apip", 
-  " 26 أبيب", 
+  "26 Apip\n1) Décès de saint Joseph, le juste, le fiancé de la sainte Vierge Marie ;\n2) Décès de saint Timothée, le 22ème patriarche de la prédication de saint Marc", 
+  " 26 أبيب\nنياحة القديس يوسف البار خطيب القديسة مريم العذراء\nنياحة القديس البابا تيموثاوس الأول البطريرك الثاني والعشرين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2611", 
@@ -15268,8 +15268,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2711&C=Title", 
-  "27 Apip", 
-  " 27 أبيب", 
+  "27 Apip\n1) Martyre de saint Apamôn ;\n2) Consécration de l'église de saint Abba Fâm", 
+  " 27 أبيب\nاستشهاد القديس أبامون\nتكريس كنيسة القديس أبي فام الجندي الأوسيمي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2711", 
@@ -15300,8 +15300,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2811&C=Title", 
-  "Décès de sainte Marie de Magdala. 28 Apip", 
-  "28 أبيب", 
+  "28 Apip\nDécès de sainte Marie de Magdala\n", 
+  " 28 أبيب\nنياحة القديسة مريم المجدلية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2811", 
@@ -15347,8 +15347,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2911&C=Title", 
-  "29 Apip", 
-  " 29 أبيب", 
+  "29 Apip\n1) Commémoration de l’Annonciation, la Nativité et la Résurrection ;\n2) Transfert des reliques de l'apôtre saint André ;\n3) Martyre de saint Warchenoufa", 
+  " 29 أبيب\nتذكار الأعياد السيدية البشارة والميلاد والقيامة\nتذكار نقل أعضاء القديس أندراوس الرسول\nاستشهاد القديس ورشنوفيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2911", 
@@ -15389,8 +15389,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=3011&C=Title", 
-  "30 Apip", 
-  " 30 أبيب", 
+  "30 Apip\nMartyre des saints Mercure et Ephrem\n", 
+  " 30 أبيب\nاستشهاد القديس مرقوريوس وأفرام من أخميم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3011", 
@@ -15416,8 +15416,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0112&C=Title", 
-  "Martyre de saint Apali fils de Juste. Décès du pape Cyrille V le 112ème patriarche de la prédication de saint Marc. 1er Messori", 
-  "1 مسرى", 
+  "1er Messori\n1) Martyre de saint Apali fils de Juste ;\n2) Décès du pape Cyrille V le 112ème patriarche de la prédication de saint Marc \n", 
+  " 1 مسرى\nاستشهاد القديس أبالي بن يسطس\nنياحة القديس البابا كيرلس الخامس البطريرك الثاني عشر بعد المائة من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0112", 
@@ -15483,8 +15483,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0212&C=Title", 
-  "2 Messori", 
-  " 2 مسرى", 
+  "2 Messori\nDécès de sainte Païssa\n", 
+  " 2 مسرى\nنياحة القديسة بائيسة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0212", 
@@ -15520,8 +15520,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0312&C=Title", 
-  "Translation à Constantinople des reliques de saint Siméon le stylite. Décès du pape Prime, le 5ème patriarche de la prédication de saint Marc. 3 Messori", 
-  "3 مسرى", 
+  "3 Messori\n1) Translation à Constantinople des reliques de saint Siméon le stylite ;\n2) Décès du pape Prime, le 5ème patriarche de la prédication de saint Marc ", 
+  " 3 مسرى\nنقل جسد القديس سمعان العمودي إلى مدينة القسطنطينية\nنياحة القديس البابا إبريموس البطريرك الخامس من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0312", 
@@ -15562,8 +15562,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0412&C=Title", 
-  "4 Messori", 
-  " 4 مسرى", 
+  "4 Messori\n1) Translation à Constantinople des reliques de saint Siméon le stylite ;\n2) Décès du pape Prime, le 5ème patriarche de la prédication de saint Marc", 
+  " 4 مسرى\nنياحة حزقيا الملك البار\nتكريس كنيسة القديس العظيم الأنبا أنطونيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0412", 
@@ -15614,8 +15614,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0512&C=Title", 
-  "5 Messori", 
-  "5 مسرى", 
+  "5 Messori\nDécès de saint Jean le soldat\n", 
+  " 5 مسرى\nنياحة القديس يوحنا الجُندي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0512", 
@@ -15636,8 +15636,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0612&C=Title", 
-  "6 Messori", 
-  " 6 مسرى", 
+  "6 Messori\n1) Martyre de sainte Julitte, la combattante ;\n2) Décès de saint Jacques Baradée ;\n3) Décès d’abba Wissa, le disciple de saint Chénouté, l’archimandrite", 
+  " 6 مسرى\nاستشهاد القديسة يوليطة المجاهدة\nنياحة القديس يعقوب البرادعي\nنياحة القديس الأنبا ويصا تلميذ الأنبا شنوده رئيس المتوحدين", 
   ], 
   [
   Prefix.synaxarium+"&D=0612", 
@@ -15748,8 +15748,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0712&C=Title", 
-  "Annonce de la naissance de la sainte Vierge à saint Joachim. Décès de saint Timothée II, 26ème Patriarche de la prédication de saint Marc. Décès de saint Pasentaos, l’ermite, sur le mont el-Tod. 7 Messori", 
-  "7 مسرى", 
+  "7 Messori\n1) Annonce de la naissance de la sainte Vierge à saint Joachim ;\n2) Décès de saint Timothée II, 26ème Patriarche de la prédication de saint Marc ;\n3) Décès de saint Pasentaos, l’ermite, sur le mont el-Tod", 
+  " 7 مسرى\nبشارة الملاك للقديس يواقيم بميلاد القديسة العذراء مريم\nنياحة القديس البابا تيموثاوس الثاني البطريرك السادس والعشرين من بطاركة الكرازة المرقسية\nنياحة القديس بسنتاؤس الناسك بجبل الطود\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0712", 
@@ -15830,8 +15830,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0812&C=Title", 
-  "8 Messori", 
-  " 8 مسرى", 
+  "8 Messori\nMartyre d’Eléazar, de son épouse Salomé et de leurs enfants\n", 
+  " 8 مسرى\nاستشهاد القديسين أليعازر وزوجته سالومى وأولادهما\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0812", 
@@ -15857,8 +15857,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0912&C=Title", 
-  "Martyre de saint Ari, prêtre de Chetnouf. 9 Messori", 
-  "9 مسرى", 
+  "9 Messori\nMartyre de saint Ari, prêtre de Chetnouf ", 
+  " 9 مسرى\nاستشهاد القديس آري الشطانوفي القس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0912", 
@@ -15894,8 +15894,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1012&C=Title", 
-  "10 Messori", 
-  " 10 مسرى", 
+  "10 Messori\n1) Martyre de saint Pikhebs ;\n2) Martyre de saint Matra", 
+  " 10 مسرى\nاستشهاد القديس بيخبيس\nاستشهاد القديس مطرا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1012", 
@@ -15936,8 +15936,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1112&C=Title", 
-  "Décès de saint Moïse évêque d’Oussim. 11 Messori", 
-  "11 مسرى", 
+  "11 Messori\nDécès de saint Moïse évêque d’Oussim", 
+  " 11 مسرى\nنياحة القديس مويسيس أسقف أوسيم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1112", 
@@ -15973,8 +15973,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1212&C=Title", 
-  "Commémoration de l’archange Michel. Intronisation de l’empereur Constantin. 12 Messori", 
-  "12 مسرى", 
+  "12 Messori\n1) Commémoration de l’archange Michel ;\n2) Intronisation de l’empereur Constantin ", 
+  " 12 مسرى\nتذكار رئيس الملائكة الجليل ميخائيل\nتذكار تملك الإمبراطور قسطنطين على عرش روما\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1212", 
@@ -16015,8 +16015,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1312&C=Title", 
-  "13 Messori", 
-  " 13 مسرى", 
+  "13 Messori\nTransfiguration de notre Seigneur Jésus Christ sur le mont Thabor\n", 
+  " 13 مسرى\nعيد التجلي المجيد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1312", 
@@ -16057,8 +16057,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1412&C=Title", 
-  "14 Messori", 
-  " 14 مسرى", 
+  "14 Messori\nCommémoration du grand miracle que Dieu a fait à l’époque du pape Théophile le 23ème patriarche\n", 
+  " 14 مسرى\nتذكار الآية العظيمة التي صنعها الله في عهد البابا ثاؤفيلس البطريرك الثالث والعشرين\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1412", 
@@ -16099,8 +16099,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1512&C=Title", 
-  "Décès de sainte Marina, la moniale. 15 Messori", 
-  "15 مسرى", 
+  "15 Messori\nDécès de sainte Marina, la moniale\n", 
+  " 15 مسرى\nنياحة القديسة مارينا الراهبة\nنياحة القديس الأرشيدياكون حبيب جرجس \n", 
   ], 
   [
   Prefix.synaxarium+"&D=1512", 
@@ -16206,8 +16206,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1612&C=Title", 
-  "16 Messori", 
-  " 16 مسرى", 
+  "16 Messori\n1) Proclamation de l’assomption du corps de la très sainte vierge Marie ;\n2) Décès du pape Matthieu IV le 102ème patriarche de la prédication de saint Marc", 
+  " 16 مسرى\nإعلان إصعاد جسد القديسة الطاهرة مريم إلى السماء\nنياحة القديس البابا متاؤس الرابع البطريرك الثاني بعد المائة من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1612", 
@@ -16298,8 +16298,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1712&C=Title", 
-  "Martyre de saint Jacques, le soldat. 17 Messori", 
-  "17 مسرى", 
+  "17 Messori\nMartyre de saint Jacques, le soldat\n", 
+  " 17 مسرى\nاستشهاد القديس يعقوب الجُندي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1712", 
@@ -16345,8 +16345,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1812&C=Title", 
-  "18 Messori", 
-  " 18 مسرى", 
+  "18 Messori\n1) Décès de saint Alexandre, le patriarche de Constantinople ;\n2) Martyre de saint Eudamon d’Hermonthis", 
+  " 18 مسرى\nنياحة البابا ألكسندروس بطريرك القسطنطينية\nاستشهاد وادامون الأرمنتي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1812", 
@@ -16412,8 +16412,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=1912&C=Title", 
-  "Rapatriement des reliques de saint Macaire à son monastère de Scété. 19 Messori", 
-  "19 مسرى", 
+  "19 Messori\nRapatriement des reliques de saint Macaire à son monastère de Scété \n", 
+  " 19 مسرى\nإعادة جسد القديس مكاريوس الكبير إلى ديره ببرية شيهيت\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1912", 
@@ -16449,8 +16449,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2012&C=Title", 
-  "20 Messori", 
-  " 20 مسرى", 
+  "20 Messori\nMartyre des 7 jeunes à Ephèse\n", 
+  " 20 مسرى\nاستشهاد الفتية السبعة الذين من أفسس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2012", 
@@ -16476,8 +16476,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2112&C=Title", 
-  "Commémoration de la mère de Dieu, la sainte vierge Marie. Décès de sainte Irène. 21 Messori", 
-  "21 مسرى", 
+  "21 Messori\n1) Commémoration de la mère de Dieu, la sainte vierge Marie ;\n2) Décès de sainte Irène ", 
+  " 21 مسرى\nتذكار القديسة العذراء مريم والدة الإله\nنياحة القديسة إيريني\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2112", 
@@ -16543,8 +16543,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2212&C=Title", 
-  "Décès du prophète Michée. Décès de saint Augustin. 22 Messori", 
-  "22 مسرى", 
+  "22 Messori\n1) Décès du prophète Michée ;\n2) Décès de saint Augustin", 
+  " 22 مسرى\nنياحة ميخا النبي\nنياحة القديس أوغسطينوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2212", 
@@ -16650,8 +16650,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2312&C=Title", 
-  "23 Messori", 
-  " 23 مسرى", 
+  "23 Messori\n1) Martyre de trente mille chrétiens à Alexandrie ;\n2) Martyre de saint Damien à Antioche", 
+  " 23 مسرى\nاستشهاد ثلاثين ألف مسيحي بمدينة الإسكندرية\nاستشهاد القديس دميان بأنطاكية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2312", 
@@ -16697,8 +16697,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2412&C=Title", 
-  "24 Messori", 
-  " 24 مسرى", 
+  "24 Messori\n1) Décès de saint Thomas, évêque de Mar’ach ;\n2) Décès de saint Takla-Haymanot, l’éthiopien", 
+  " 24 مسرى\nنياحة القديس توما أسقف مرعش\nنياحة القديس تكلاهيمانوت الحبشي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2412", 
@@ -16779,8 +16779,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2512&C=Title", 
-  "Décès de Saint Bessarion le grand. Décès du pape Macaire III, le 114ème patriarche de la prédication de saint Marc. 25 Messori", 
-  "25 مسرى", 
+  "25 Messori\n1) Décès de Saint Bessarion le grand ;\n2) Décès du pape Macaire III, le 114ème patriarche de la prédication de saint Marc ", 
+  " 25 مسرى\nنياحة القديس بيساريون الكبير\nنياحة القديس البابا مكاريوس الثالث البطريرك الرابع عشر بعد المائة من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2512", 
@@ -16871,8 +16871,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2612&C=Title", 
-  "Martyre de saint Moïse et sa sœur Sara. Martyre de saint Agapius, le soldat, et sa sœur Thécla. 26 Messori", 
-  "26 مسرى", 
+  "26 Messori\n1) Martyre de saint Moïse et sa sœur Sara ;\n2) Martyre de saint Agapius, le soldat, et sa sœur Thécla ", 
+  " 26 مسرى\nاستشهاد القديس مويسيس والبارة سارة أخته\nاستشهاد القديس أغابيوس الجندي والبارة تكلة أخته\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2612", 
@@ -16918,8 +16918,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2712&C=Title", 
-  "27 Messori", 
-  " 27 مسرى", 
+  "27 Messori\n1) Martyre de saint Benjamin et de sa sœur sainte Eudoxie ;\n2) Martyre de sainte Marie l'arménienne", 
+  " 27 مسرى\nاستشهاد القديس بنيامين وأودكسية أخته\nاستشهاد القديسة مريم الأرمنية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2712", 
@@ -16980,8 +16980,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2812&C=Title", 
-  "Commémoration des patriarches Abraham, Isaac et Jacob. 28 Messori", 
-  "28 مسرى", 
+  "28 Messori\nCommémoration des patriarches Abraham, Isaac et Jacob\n", 
+  " 28 مسرى\nتذكار الآباء القديسين إبراهيم وإسحاق ويعقوب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2812", 
@@ -17062,8 +17062,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=2912&C=Title", 
-  "29 Messori", 
-  " 29 مسرى", 
+  "29 Messori\n1) Commémoration de l’Annonciation, la Nativité et la Résurrection ;\n2) Martyre de saint Athanase, l’évêque ainsi que ses deux disciples;\n3) Translation des reliques de saint Jean Colobos au désert de Scété\n", 
+  " 29 مسرى\nتذكار الأعياد السيدية البشارة والميلاد والقيامة\nاستشهاد القديس أثناسيوس الأسقف وغلاميه\nوصول جسد القديس يحنس القصير إلى برية شيهيت\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2912", 
@@ -17129,8 +17129,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=3012&C=Title", 
-  "30 Messori", 
-  " 30 مسرى", 
+  "30 Messori\nDécès du prophète Malachie\n", 
+  " 30 مسرى\nنياحة ملاخي النبي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3012", 
@@ -17161,8 +17161,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0113&C=Title", 
-  "Décès de saint Eutyque. Martyre de saint Pishaï d'Antioche, le frère de saint abba Hour. 1er jour du petit mois", 
-  " 1 نسىي", 
+  "1er jour du petit mois\n1) Décès de saint Eutyque ;\n2) Martyre de saint Pishaï d'Antioche, le frère de saint abba Hour \n", 
+  " 1 نسىي\nنياحة القديس أفتيخوس\nاستشهاد القديس بشاي أخي القديس أباهور\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0113", 
@@ -17198,8 +17198,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0213&C=Title", 
-  "2ème jour du petit mois", 
-  " 2 نسي", 
+  "2ème jour du petit mois\nDécès de Saint Tite, le disciple\n", 
+  " 2 نسي\nنياحة القديس تيطس الرسول\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0213", 
@@ -17230,8 +17230,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0313&C=Title", 
-  "Commémoration de l’archange Raphaël. Martyre de saint Adrien et ses compagnons. Décès du pape Jean XIV, le 96ème patriarche de la prédication de saint Marc. 3ème jour du petit mois", 
-  " 3 نسي", 
+  "3ème jour du petit mois\n1) Commémoration de l’archange Raphaël ;\n2) Martyre de saint Adrien et ses compagnons ;\n3) Décès du pape Jean XIV, le 96ème patriarche de la prédication de saint Marc ", 
+  " 3 نسي\nتذكار رئيس الملائكة الجليل روفائيل\nاستشهاد القديسين أندريانوس ومن معه\nنياحة القديس البابا يوأنس الرابع عشر البطريرك السادس والتسعين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0313", 
@@ -17287,8 +17287,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0413&C=Title", 
-  "4ème jour du petit mois", 
-  " 4 نسي", 
+  "4ème jour du petit mois\nDécès d’Abba Pœmen, l’ermite\n", 
+  " 4 نسي\nنياحة القديس بيمن المتوحد", 
   ], 
   [
   Prefix.synaxarium+"&D=0413", 
@@ -17334,8 +17334,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0513&C=Title", 
-  "Décès du prophète Amos. Décès de saint Jacques – évêque du Caire. Décès du pape Jean XV, le 99ème patriarche de la prédication de saint Marc. Décès de saint Barsouma el-Iryân (le nu). 5ème jour du petit mois", 
-  " 5 نسي", 
+  "5ème jour du petit mois\n1) Décès du prophète Amos ;\n2) Décès de saint Jacques – évêque du Caire ;\n3) Décès du pape Jean XV, le 99ème patriarche de la prédication de saint Marc ;\n4) Décès de saint Barsouma el-Iryân (le nu). ", 
+  " 5 نسي\nنياحة عاموس النبي\nنياحة القديس يعقوب أسقف مصر\nنياحة القديس البابا يوأنس الخامس عشر البطريرك التاسع والتسعين من بطاركة الكرازة المرقسية\nنياحة القديس برسوم العريان", 
   ], 
   [
   Prefix.synaxarium+"&D=0513", 
@@ -17426,8 +17426,8 @@ ReadingsArrays.SynaxariumArray = [[
   [
   [
   Prefix.synaxarium+"&D=0613&C=Title", 
-  "6ème jour du petit mois", 
-  " 6 نسي", 
+  "6ème jour du petit mois\nAction de Grâce\n", 
+  " 6 نسي\nاليوم السادس من الشهر الصغير المبارك شكر إلى الله\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0613", 
