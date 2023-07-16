@@ -1,8 +1,8 @@
 ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0101&C=Title", 
-  "1er Thout (Jour de l’an copte)\n1) Commémoration de la guérison de Job le juste;\n2) Martyre de l’apôtre saint Barthélémy;\n3) Décès de saint Mylious, 3ème pape d’Alexandrie;\n4) Décès du pape Marc V – le 98ème patriarche de saint Marc", 
-  " 1 توت", 
+  "1er Thout\n1) Jour de l’an copte\n2) Commémoration de la guérison de Job le juste;\n3) Martyre de l’apôtre saint Barthélémy;\n4) Décès de saint Mylious, 3ème pape d’Alexandrie;\n5) Décès du pape Marc V – le 98ème patriarche de saint Marc", 
+  " 1 توت\nعيد النيروز رأس السنة القبطية\nتذكار شفاء أيوب الصدِّيق\nاستشهاد القديس برثولماوس الرسول\nنياحة البابا ميليوس البطريرك الثالث من بطاركة الكرازة المرقسية\nنياحة البابا مرقس الخامس البطريرك الثامن والتسعين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0101", 
@@ -99,7 +99,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0201&C=Title", 
   "2 Thout\n1) Martyre de saint Jean le baptiste; \n2) Martyre de saint Dassya, le soldat", 
-  " 2 توت", 
+  " 2 توت\nاستشهاد القديس يوحنا المعمدان\n استشهاد القديس داسيه الجندى\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0201", 
@@ -151,7 +151,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0301&C=Title", 
   "3 Thout \n1) Tenue d'un concile à Alexandrie à l’époque du pape Denys au sujet de l’éternité de l’âme; \n2) Décès de sainte Théodora, la pénitente", 
-  " 3 توت", 
+  " 3 توت\nنياحة البابا كيرلس الأول عمود الدين\nنياحة البابا كلستينوس بابا رومية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0301", 
@@ -253,7 +253,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0401&C=Title", 
   "4 Thout \n1) Commémoration de Josué fils de Noun; \n2) Décès de Saint Macaire II, le 69ème pape d'Alexandrie; \n3) Décès de sainte Vérén", 
-  " 4 توت", 
+  " 4 توت\nتذكار يشوع بن نون\nنياحة البابا مكاريوس الثاني البطريرك التاسع والستون من بطاركة الكرازة المرقسية\nنياحة القديسة فيرينا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0401", 
@@ -370,7 +370,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0501&C=Title", 
   "5 Thout\nMartyre de sainte Sophie", 
-  " 5 توت", 
+  " 5 توت\nاستشهاد القديسة صوفيا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0501", 
@@ -412,7 +412,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0601&C=Title", 
   "6 Thout\n1) Martyre du prophète Isaïe fils d’Amos;\n2) Martyre de sainte Bassiliya", 
-  " 6 توت", 
+  " 6 توت\nاستشهاد إشعياء النبي بن آموص\nاستشهاد القديسة باشيلية أو باسيليا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0601", 
@@ -494,7 +494,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0701&C=Title", 
   " 7 Thout\n1) Décès du pape Dioscore, le 25ème patriarche de la prédication de saint Marc; \n2) Décès du pape Jean XII, le 93ème patriarche de la prédication de saint Marc; \n3) Martyre de sainte Rébecca et de ses cinq enfants : Agathôn, Pierre, Jean, Amoun et Amouna; \n4) Décès du saint Sévérien évêque de Gabala", 
-  " 7 توت", 
+  " 7 توت\nنياحة البابا ديوسقوروس البطريرك الخامس والعشرين من بطاركة الكرازة المرقسية\nنياحة البابا يوأنس الثاني عشر البطريرك الثالث والتسعين من بطاركة الكرازة المرقسية\nاستشهاد القديسة رفقة وأولادها الخمسة أغاثون وبطرس ويوحنا وآمون وآمونة\nنياحة القديس سوريانوس أسقف جبلة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0701", 
@@ -651,7 +651,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0801&C=Title", 
   " 8 Thout\n1) Décès du prophète Moïse; \n2) Martyre du prêtre Zacharie\n3) Martyre de saint Diomède", 
-  " 8 توت", 
+  " 8 توت\nنياحة موسى النبي\nاستشهاد زكريا الكاهن\nاستشهاد القديس ديميدس القس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0801", 
@@ -773,7 +773,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0901&C=Title", 
   "9 Thout\n1) Martyre d’abba Pissora l’évêque;\n2) Martyre des deux évêques vénérables Pélée et Nil", 
-  " 9 توت", 
+  " 9 توت\nاستشهاد الأب القديس الأنبا بيسورة الأسقف\nاستشهاد الأسقفين الجليلين بيلوس ونيليوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0901", 
@@ -820,7 +820,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1001&C=Title", 
   "10 Thout\n1) Martyre de saint Jean l’égyptien et de ses compagnons; \n2) Martyre de sainte Matrouna; \n3) Martyre de sainte Bassine et de ces trois enfants ", 
-  " 10 توت", 
+  " 10 توت\nاستشهاد القديسين يوأنس المصري وزملائه\nاستشهاد القديسة مطرونة\nتذكار استشهاد القديسة باسين وأولادها الثلاثة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1001", 
@@ -877,7 +877,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1101&C=Title", 
   "11 Thout\n1) Martyre de saint Basilides, le ministre; \n2) Martyre des trois paysans d’Esna ", 
-  " 11 توت", 
+  " 11 توت\nاستشهاد القديس واسيليدس الوزير\nاستشهاد الثلاثة فلاحين بإسنا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1101", 
@@ -934,7 +934,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1201&C=Title", 
   "12 Thout \n1) Commémoration de l’archange Michel; \n2) Réunion du concile œcuménique à Ephèse;\n3) Transfert des reliques de saint Eqlymus et de ses compagnons", 
-  " 12 توت", 
+  " 12 توت\nتذكار رئيس الملائكة الجليل ميخائيل\nتذكار انعقاد المجمع المسكوني بأفسس\nنقل أعضاء القديسين إقليمس وأصحابه\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1201", 
@@ -996,7 +996,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1301&C=Title", 
   "13 Thout\n1) Commémoration du miracle fait par saint Basile le Grand, évêque de Césarée de Cappadoce;\n2) Décès du pape Matthieu II, le 90ème patriarche de la prédication de saint Marc", 
-  " 13 توت", 
+  " 13 توت\nتذكار الأعجوبة التي صنعها القديس باسيليوس الكبير أسقف قيصارية الكبادوك\nنياحة البابا متاؤس الثاني البطريرك التسعين من بطاركة الكرازة المرقسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1301", 
@@ -1058,7 +1058,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1401&C=Title", 
   "14 Thout\n1) Décès des saint Agathôn le stylite; \n2) Martyre de saint Felix, de sa sœur sainte Regula ainsi que saint Exuperantius", 
-  " 14 توت", 
+  " 14 توت\nنياحة القديس أغاثون العمودي\nاستشهاد القديس فيلكس وريجولا أخته والقديس أكسيوبرانتيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1401", 
@@ -1135,7 +1135,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1501&C=Title", 
   "15 Thout\n1) Translation du corps de saint Etienne; \n2) Décès d’abba Athanase de Qous", 
-  " 15 توت", 
+  " 15 توت\nنقل جسد القديس إسطفانوس\nنياحة الأنبا أثناسيوس القوصي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1501", 
@@ -1202,7 +1202,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1601&C=Title", 
   "16 Thout\n1) Consécration de la basilique de la Résurrection à Jérusalem ", 
-  " 16 توت", 
+  " 16 توت\nتكريس كنيسة القيامة بأورشليم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1601", 
@@ -1229,7 +1229,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1701&C=Title", 
   "17 Thout\n1)Commémoration des festivités de la sainte Croix; \n2) Martyre de saint Castor le prêtre;\n3) Décès de sainte Théoghnosta;\n4) Décès d’el Mo’allem Guirguis al-Gohari, le saint ", 
-  " 17 توت", 
+  " 17 توت\nتذكار الاحتفال بالصليب المجيد في كنيسة القيامة\nاستشهاد القديس قسطور القس\nنياحة القديسة ثاؤغنسطا\nنياحة القديس المعلم جرجس الجوهري\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1701", 
@@ -1351,7 +1351,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1801&C=Title", 
   " 18 Thout\n1) Deuxième jour de la commémoration de la manifestation de la sainte Croix;\n2) Martyre de saint Porphyre;\n3) Martyre de saint Etienne le prêtre et de sainte Niketé", 
-  " 18 توت", 
+  " 18 توت\nثاني يوم عيد الصليب\nاستشهاد القديس بروفوريوس\nاستشهاد القديس إسطفانوس القس والقديسة نيكيتي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1801", 
@@ -1408,7 +1408,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1901&C=Title", 
   "19 Thout\n1) Troisième jour de la commémoration de la manifestation de la sainte Croix;\n2) Commémoration de la remontée de saint Grégoire l’arménien de sa fosse", 
-  " 19 توت", 
+  " 19 توت\nاليوم الثالث من أيام عيد الصليب المجيد\nتذكار إصعاد القديس غريغوريوس الأرمني من الجب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1901", 
@@ -1460,7 +1460,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2001&C=Title", 
   "20 Thout\n1) Décès de sainte Théopista. Décès du pape Athanase II, le 28ème patriarche de la prédication de saint Marc; \n2) Martyre de sainte Mélitine", 
-  " 20 توت", 
+  " 20 توت\nنياحة القديسة ثاؤبستى\nنياحة البابا أثناسيوس الثاني البطريرك الثامن والعشرين من بطاركة الكرازة المرقسية\nاستشهاد القديسة ملاتينى العذراء\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2001", 
@@ -1537,7 +1537,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2101&C=Title", 
   "21 Thout\n1) Commémoration de la sainte vierge Marie;\n2)Martyre de saint Cyprien et sainte Justine", 
-  " 21 توت", 
+  " 21 توت\nتذكار والدة الإله القديسة مريم\nاستشهاد القديس كبريانوس الأسقف والقديسة يوستينة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2101", 
@@ -1604,7 +1604,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2201&C=Title", 
   "22 Thout\n1) Martyre de saint Cotylas, de sa sœur sainte Axoua, et de saint Tâtâs son ami;  \n2) Martyre de saint Jules d’Akfahs, le biographe des martyrs et de ses compagnons; ", 
-  " 22 توت", 
+  " 22 توت\nاستشهاد القديسين كوتلاس وأكسوا أخته وتاتاس صديقه\nاستشهاد القديس يوليوس الأقفهصى كاتب سِيَر الشهداء ومن معه\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2201", 
@@ -1671,7 +1671,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2301&C=Title", 
   " 23 Thout\n1) Martyre de saint Onanius et saint André;\n2) Martyre de sainte Thècle", 
-  " 23 توت", 
+  " 23 توت\nاستشهاد القديسين أونانيوس وأندراوس أخيه\nتذكار القديسة الشهيدة تكلا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2301", 
@@ -1738,7 +1738,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2401&C=Title", 
   "24 Thout\n1) Martyre de saint Quadrat, l’un des soixante-dix disciples;\n2) Décès desaint Grégoire, le théologien;\n3) Décès de saint Grégoire, le moine", 
-  " 24 توت", 
+  " 24 توت\nاستشهاد القديس كودارتوس أحد السبعين رسولاً وتلميذاً\nنياحة القديس غريغوريوس الثيئولوغوس\nنياحة القديس غريغوريوس الراهب", 
   ], 
   [
   Prefix.synaxarium+"&D=2401", 
@@ -1830,7 +1830,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2501&C=Title", 
   "25 Thout\n1) Décès du prophète Jonas;\n2) Martyre de saint Maurie, commandant de la légion thébaine ", 
-  " 25 توت", 
+  " 25 توت\nتذكار نياحة يونان النبي\nاستشهاد القديس موريس قائد الفرقة الطيبية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2501", 
@@ -1902,7 +1902,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2601&C=Title", 
   "26 Thout\nL’annonce faite par l’ange à Zacharie concernant la naissance de Jean le Baptiste ", 
-  " 26 توت", 
+  " 26 توت\nبشارة زكريا الكاهن بميلاد يوحنا المعمدان\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2601", 
@@ -1916,7 +1916,7 @@ ReadingsArrays.SynaxariumArray = [[
   ], 
   [
   Prefix.synaxarium+"&D=2601", 
-  "Alors Zacharie dit à l’ange : « »Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
+  "Alors Zacharie dit à l’ange : «  »Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
   "فقال زكريا للملاك: \"كيف أعلم هذا لأني أنا شيخ وامرأتي متقدمة في أيامها\". فأجاب الملاك وقال له: \"أنا جبرائيل الواقف أمام الله، وأرسلني الله لأبشرك بهذا، وها أنت تكون صامتاً إلى اليوم الذي يكون فيه هذا، لأنك لم تصدِّق كلامي الذي سيتم في حينه\" ( لو 1: 8 – 20 ).", 
   ], 
   [
@@ -1934,7 +1934,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2701&C=Title", 
   "27 Thout\nMartyre de saint Eustathe, de ses deux fils et de son épouse", 
-  " 27 توت", 
+  " 27 توت\nاستشهاد القديس أسطاثيوس وولديه وزوجته\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2701", 
@@ -1966,7 +1966,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2801&C=Title", 
   "28 Thout\nMartyre des saints Abadir et Iraï sa sœur ", 
-  " 28 توت", 
+  " 28 توت\nاستشهاد القديسين أبادير وإيرائى اخته\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2801", 
@@ -1998,7 +1998,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2901&C=Title", 
   "29 Thout\n1) Commémoration de l’Annonciation, la Nativité et la Résurrection;\n2) Martyre de sainte Rhipsimé et de ses sœurs. Martyre de sainte Fébronya. ", 
-  " 29 توت", 
+  " 29 توت\nتذكار الأعياد الثلاثة السيدية الكبرى\nاستشهاد القديسة أربسيما ومن معها\nاستشهاد القديسة فبرونيا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2901", 
@@ -2085,7 +2085,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=3001&C=Title", 
   "30 Thout\nCommémoration du grand miracle que le Seigneur fit en faveur de saint Athanase l’apostolique", 
-  " 30 توت", 
+  " 30 توت\nتذكار المعجزة التي صنعها الرب مع القديس أثناسيوس الرسولي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3001", 
@@ -5181,330 +5181,435 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1803&C=Title", 
   "18 Athor\n1) Martyre de Saint Philippe, l’apôtre;\n2) Martyre des Saintes Atrasis et Jeanne;\n3) Commémoration du miracle du transfert de la colline du Mokattam ", 
-  " 18 هاتور", 
+  " 18 هاتور\nاستشهاد القديس فيلبس الرسول\nاستشهاد القديستين أدروسيس ويوأنا\nتذكار معجزة نقل الجبل المقطم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "En ce jour de l’an 80 après Jésus Christ eut lieu le martyre de saint Philippe (القديس فيلبس), l’un des douze apôtres. Ce saint naquit à Bethsaïde en Galilée (بيت صيدا بالجليل). Dès sa jeunesse il étudia la sainte Bible et les prophéties qui parlaient de la venue du Sauveur. C’est la raison pour laquelle il suivit le Christ sans hésiter lorsque celui-ci lui dit : « Suis-moi. »", 
-  "", 
+  "En ce jour de l’an 80 après Jésus Christ eut lieu le martyre de saint Philippe (القديس فيلبس), l’un des douze apôtres.", 
+  "في مثل هذا اليوم من سنة 80م استشهد القديس فيلبس، أحد الرسل الاثنى عشر.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "Philippe trouva Nathanaël (نثنائيل) et le ramena au Christ car il était sûr qu’une seule rencontre suffira pour le convaincre que Jésus est le Christ dont parlait les prophètes. En conséquence, Nathanaël devint l’un des disciples du Christ. Philippe suivit le Christ tout au long de son ministère sur terre et, après son Ascension, il reçut le Saint Esprit le jour de la Pentecôte. Cependant, il commença son ministère à Jérusalem puis se rendit en Asie mineure et convertit un grand nombre. Lorsque Satan vit que son royaume s’effondrait à cause des enseignements de Philippe, il incita les prêtres païens d’Hiérapolis(هيرابوليس) à l’arrêter et à le crucifier. Néanmoins, un tremblement de terre eut lieu en ce lieu qui fit fuir les persécuteurs. Les fidèles voulurent le descendre de la croix mais il refusa et demeura ainsi jusqu’à ce qu’il accomplit son bon combat. Ainsi, il rendit l’âme et reçut la couronne de l’apostolat et celle du martyre. Les fidèles d’Hiérpolis l’enterrèrent en Asie mineure.", 
-  "", 
+  "Ce saint naquit à Bethsaïde en Galilée (بيت صيدا بالجليل). Dès sa jeunesse il étudia la sainte Bible et les prophéties qui parlaient de la venue du Sauveur. C’est la raison pour laquelle il suivit le Christ sans hésiter lorsque celui-ci lui dit : « Suis-moi. »", 
+  "وُلِدَ في بيت صيدا بالجليل، عكف منذ صباه على دراسة الكتب المقدسة وعرف النبوات التي تتحدث عن مجيء المخلص، لذلك نراه يلبى دعوة السيد المسيح بسرعة عندما قال له اتبعني (يو 1: 43).", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1803", 
+  "Philippe trouva Nathanaël (نثنائيل) et le ramena au Christ car il était sûr qu’une seule rencontre suffira pour le convaincre que Jésus est le Christ dont parlait les prophètes. En conséquence, Nathanaël devint l’un des disciples du Christ.", 
+  "فيلبس وجد نثنائيل وأحضره إلى يسوع إيماناً منه بأن مقابلة واحدة مع يسوع ستقنعه أنه هو السيد المسيح الذي تكلَّمَتْ عنه النبوات، وهكذا كان فانضم نثنائيل إلى رسل السيد المسيح (يو 1: 47 – 51).", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1803", 
+  "Philippe suivit le Christ tout au long de son ministère sur terre et, après son Ascension, il reçut le Saint Esprit le jour de la Pentecôte. Cependant, il commença son ministère à Jérusalem puis se rendit en Asie mineure et convertit un grand nombre.", 
+  "تبع فيلبس السيد المسيح طوال مدة خدمته على الأرض، متتلمذاً عليه مع بقية الرسل وبعد صعود الرب إلى السماء، وحلول الروح القدس على التلاميذ، خدم أولاً في أورشليم ثم ذهب ليكرز في بلاد آسيا الصغرى، حيث آمن كثيرون على يديه.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1803", 
+  "Lorsque Satan vit que son royaume s’effondrait à cause des enseignements de Philippe, il incita les prêtres païens d’Hiérapolis (هيرابوليس) à l’arrêter et à le crucifier. Néanmoins, un tremblement de terre eut lieu en ce lieu qui fit fuir les persécuteurs. Les fidèles voulurent le descendre de la croix mais il refusa et demeura ainsi jusqu’à ce qu’il accomplit son bon combat. Ainsi, il rendit l’âme et reçut la couronne de l’apostolat et celle du martyre. Les fidèles d’Hiérpolis l’enterrèrent en Asie mineure.", 
+  "ولما رأي الشيطان أن مملكته سقطت بفعل كرازة فيلبس الرسول، حرّض كهنة الأوثان في بلدة هيرابوليس فقبضوا عليه وصلبوه، فحدثت زلزلة جعلتهم يهربون من المكان، فجاء المؤمنون وطلبوا أن يُنزلوه عن الصليب فرفض، وظل هكذا حتى أكمل جهادهK وأسلم الروح ونال إكليل الرسولية وإكليل الشهادة. فدفنه المؤمنون في هيرابوليس بآسيا الصغرى.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "Que la bénédiction deses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "Nous commémorons aussi en ce jour le martyre des saintes Atrâsis (أدروسيس) et Jeanne (يوأنا). Atrasis était la fille d’Hadrien(أدريانوس), l’empereur idolâtre (117 – 138 après Jésus Christ). Celui-ci l’aimait tellement qu’il lui fit construire une chambre indépendante pour qu’elle puisse s’isoler de la vue des gens.", 
-  "", 
+  "Nous commémorons aussi en ce jour le martyre des saintes Atrâsis (أدروسيس) et Jeanne (يوأنا).", 
+  "وفيه أيضاً استشهدت القديستان أدروسيس ويوأنا.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "Quant à elle, elle méditait sur le cours rapide de ce monde, sur cette vie éphémère et, nuit et jour, elle recherchait le droit chemin qui la conduira à une vie éternelle heureuse. La nuit elle vit en rêve quelqu’un lui dire de faire venir Jeanne, la fille de Losophron (لوسفرون) qui lui enseignera le chemin du Seigneur. A son réveil, Atrâsis se sentit heureuse et envoya demander à Jeanne de venir. Lorsqu’elle arriva, la princesse la reçut avec joie et lui demanda de la guider dans le droit chemin. Celle-ci lui expliqua l’incarnation du Christ, sa Nativit, sa Crucifixion et sa Résurrection. Elle lui parla aussi de la création d’Adam, sa sortie du paradis et l’mprise e saan sur le monde et de la Rédemption que le Seigneur a accomplie sur la Croix. Elle lui explicita les promesses que Dieu a faites à ceux qui croient en Lu et combattent pour son Nom. La princesse crut et pratiqua le prière chrétienne à l’insu de son père.", 
-  "", 
+  "Atrasis était la fille d’Hadrien (أدريانوس), l’empereur idolâtre (117 – 138 après Jésus Christ). Celui-ci l’aimait tellement qu’il lui fit construire une chambre indépendante pour qu’elle puisse s’isoler de la vue des gens. Quant à elle, elle méditait sur le cours rapide de ce monde, sur cette vie éphémère et, nuit et jour, elle recherchait le droit chemin qui la conduira à une vie éternelle heureuse. La nuit elle vit en rêve quelqu’un lui dire de faire venir Jeanne, la fille de Losophron (لوسفرون) qui lui enseignera le chemin du Seigneur. ", 
+  "كانت أدروسيس ابنة الملك الوثني أدريانوس (117 – 138م) ولشدة محبته لابنته بنى لها قصراً خاصاً سكنت فيه. أما هي فكانت تفكر في زوال هذا العالم، وتطلب نهاراً وليلاً الاهتداء للطريق المستقيم المؤدى إلى الحياة الأبدية السعيدة الدائمة، فرأت في رؤيا الليل من يقول لها \"استحضري يوأنا العذراء ابنة لوسفرون، وهي تعلمك الطريق لله\".", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "Lorsqu’Hadrien voulut marier sa fille, il lui demanda d’encenser les idoles avant le mariage selon la coutume des idolâtres. Elle refusa en lui reprochant de délaisser le Dieu du ciel et d’adorer les idoles impures. Elle lui demanda de croire en Dieu qui l’a créé et qui détient das Sa main son destin. Son père fut outré par ces paroles et demanda quelle était la personne qui lui enseigna cela. On lui répondit que c’est Jeanne qui l’avait convertie au christianisme.", 
-  "", 
+  "A son réveil, Atrâsis se sentit heureuse et envoya demander à Jeanne de venir. Lorsqu’elle arriva, la princesse la reçut avec joie et lui demanda de la guider dans le droit chemin. Celle-ci lui expliqua l’incarnation du Christ, sa Nativit, sa Crucifixion et sa Résurrection. Elle lui parla aussi de la création d’Adam, sa sortie du paradis et l’mprise e saan sur le monde et de la Rédemption que le Seigneur a accomplie sur la Croix. Elle lui explicita les promesses que Dieu a faites à ceux qui croient en Lu et combattent pour son Nom. La princesse crut et pratiqua le prière chrétienne à l’insu de son père.", 
+  "فلما استيقظت ابتهجت كثيراً، وأرسلت إلى يوأنا، فأتت إليها وقابلتها بفرح وطلبت منها أن ترشدها إلى طريق الله الحقيقي، فقصَّت عليها في الحال قصة تجسد السيد المسيح وميلاده وصلبه وقيامته مبتدئة من خلقة آدم وخروجه من الفردوس، وتسلط الشيطان على العالم، والفداء الذي أتمه الرب على الصليب، وأعلمتها بالوعود السمائية التي وعد بها الله الذين يؤمنون به ويتعبون لأجل اسمه، فآمنت الأميرة بالسيد المسيح، وبدأت تمارس العبادة المسيحية دون علم والدها.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "En conséquence, l’empereur ordonna que toutes les deux soient brûlées vives. Dans la fournaise, elles se mirent à prier et décédèrent en paix. Lorsque le feu fut éteint, des fidèles présents trouvèrent leurs dépouilles intactes, collées l’une à l’autre. Ils les déposèrent dans un lieu sûr jusqu’à la fin de l’époque de la persécution. Alors on leur construisit une grande église.", 
-  "", 
+  "Lorsqu’Hadrien voulut marier sa fille, il lui demanda d’encenser les idoles avant le mariage selon la coutume des idolâtres. Elle refusa en lui reprochant de délaisser le Dieu du ciel et d’adorer les idoles impures. Elle lui demanda de croire en Dieu qui l’a créé et qui détient das Sa main son destin. Son père fut outré par ces paroles et demanda quelle était la personne qui lui enseigna cela. On lui répondit que c’est Jeanne qui l’avait convertie au christianisme. En conséquence, l’empereur ordonna que toutes les deux soient brûlées vives.", 
+  "لما أراد الملك تزويج ابنته أدروسيس أمرها أن تبخر للأوثان قبل الزفاف حسب عادة الوثنيين، فرفضت وقالت له \"كيف تترك إله السماء وتعبد هذه الأوثان النجسة، ارجع يا أبى إلى الله الذي خلقك وحياتك في يديه\". فلما سمع الملك هذا الكلام غضب جداً، وسأل عن سبب هذا التحوُّل في حياتها، فعرف أن يوأنا هي التي غيرت فكرها وجذبتها إلى المسيحية، فأمر في الحال بإحراقهما معاً.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1803", 
+  "Dans la fournaise, elles se mirent à prier et décédèrent en paix. Lorsque le feu fut éteint, des fidèles présents trouvèrent leurs dépouilles intactes, collées l’une à l’autre. Ils les déposèrent dans un lieu sûr jusqu’à la fin de l’époque de la persécution. Alors on leur construisit une grande église.", 
+  "صلَّت القديستان في النار، ثم تنيَّحتا بسلام وبعد أن أُخمدت النيران وجد المؤمنون جسديهما متلاصقين، ولم يتغيرا في شيء، فاحتفظوا بهما. ولما انقضى زمان الاضطهاد بنوا عليهما كنيسة عظيمة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "Que la bénédiction de leurs prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلاتهما فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "Nous commémorons aussi aujourd’hui le miracle du déplacement de la colline du Mokattam. Ceci eut lieu à l’époque du pape Abraham 1er ibn-zara’a (البابا أبرآم بن زرعة), le 62ème patriarche de la prédication de saint Marc.", 
-  "", 
+  "وفيه أيضاً تُعيِّد الكنيسة بتذكار معجزة نقل الجبل المقطم وذلك أنه في عهد البابا أبرآم بن زرعة البطريرك الثاني والستين من بطاركة الكرازة المرقسية، تمت معجزة نقل الجبل المقطم الشهيرة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "En effet, le calife fatimide Al-Muizz li-Dîn Allah (المعز لدين الله الفاطمي) avait un ministre nommé Jacob fils de Kéllés (يعقوب بن كِلِّس) qui détestait les crétiens et voulait les piéger. Celui-ci dit au calife qu’ily a dans l’Évangile un verset qui dit : « Si vous avez de la foi gros comme un grain de sénevé, vous direz à cette montagne : Déplace-toi d'ici à là, et elle se déplacera. » Il dit au calife que ces prétentions sont mensongères et lui suggéra de convoquer le patriarche pour que celui-ci prouve la véracité de ces dires. e calife pensa que si la colline du Mokattam pouvait être un peu plus loin du Caire, le centre-ville sera plus vaste et, si cela n’était pas vrai, il aurait une bonne excuse pour persécuter les chrétiens.", 
-  "", 
+  "وذلك أنه كان للخليفة المعز لدين الله الفاطمي وزير اسمه يعقوب بن كِلِّس يكره المسيحيين ويريد الإيقاع بهم، فدخل على الخليفة وقال له: يوجد في إنجيل المسيحيين آية تقول: \"لو كان لكم إيمان مثل حبة خردل لكنتم تقولون لهذا الجبل انتقل من هنا إلى هناك فينتقل\" ( مت 17: 2)، ولا يُخفي على أمير المؤمنين ما في هذه الأقوال من الادعاء الباطل. وللتحقق من ذلك يجب استدعاء بطريركهم ليقيم الدليل على صدق قول مسيحهم. ففكر الخليفة قليلاً ثم قال: \"إذا كان قول المسيح هذا صحيحاً فلنا فائدة عظمى، فإن الجبل الذي يكتنف القاهرة، إذا ابتعد عنها يصير مركز المدينة أعظم وأوسع، وإذا لم يكن صحيحاً تكون لنا حجة على اضطهاد المسيحيين\".", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
-  "Alors il convoqua le patriarche et lui expliqua ces réflexions. Le patriarche demanda un délai de trois jours qu’il obtint puis il réunit les évêques et les moines qui étaient proches et ils demeurèrent pendant trois jours à l’église de la sainte Vierge – al-Moallaka (كنيسة القديسة العذراء – المعلقة au cours desquels ils prièrent et jeûnèrent sans interruption. A l’aube du troisième jour, la sainte Vierge apparut au patriarche et lui fit savoir que Dieu réalisera ce miracle par l’intermédiaire d’un saint homme, qui était tanneur de son état (دبَّـاغ) nommé Simon (سمعان). Le pape envoya chercher celui-ci puis ils se rendirent chez le calife avec les évêques, les moines et une foule de fidèles et l’informèrent qu’ils étaientprêts. Tous se rendirent auprès de la colline et ils formèrent deux groupes : d’un côté le patriarche avec tous les chrétiens et d’un autre Al-Muizz et ceux qui l’accompagnaient. Le pape et les chrétiens se mirent à prier puis ils se prosternèrent trois fois en disant : Kuri`e `ele`ycon – Pitié Seigneur. A chaque fois qu’ils se levaient la colline se soulevait et à chaque fois qu’ils se prosternaient à terre, elle se reposait. De plus la colline avançait en même temps q’ils avançaient. Ce phénomène troubla le calife et ceux qui l’accompagnaient. Alors le calife se rapprocha du patriarche et lui dit : « Dieu est grand, bénit soit son Nom. Vous avez prouvé que votre Foi est véritable et qu’elle est vivante » et il lui promit de lui donner tout ce qu’il demandera. Le patriarche commença par décliner la proposition puis, devant l’insistance du calife demanda de pouvoir rénover les églises, principalement celle e saint Mercure, le détenteur des deux épées (كنيسة القديس مرقوريوس – أبو سيفين) située dans le vieux Caire. Le calife rédigea un décret en ce sens et lui proposa une somme d’argent que le patriarche refusa. Ceci fit grandir l prestige du patriarche auprès du calife. L’église de saint Mercure et de nombreuses autres églises furent reconstruites.", 
-  "", 
+  "Alors il convoqua le patriarche et lui expliqua ces réflexions. Le patriarche demanda un délai de trois jours qu’il obtint puis il réunit les évêques et les moines qui étaient proches et ils demeurèrent pendant trois jours à l’église de la sainte Vierge – al-Moallaka (كنيسة القديسة العذراء – المعلقة au cours desquels ils prièrent et jeûnèrent sans interruption.", 
+  "ثم دعا الخليفة الأب البطريرك وعرض عليه هذا الكلام، فطلب منه مهلة ثلاثة أيام، فأمهله. ولما خرج من لدنه جمع الأساقفة والرهبان القريبين ومكثوا بكنيسة القديسة العذراء – المعلقة – بمصر القديمة، ثلاثة أيام صائمين ومصلين لله.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1803", 
+  "A l’aube du troisième jour, la sainte Vierge apparut au patriarche et lui fit savoir que Dieu réalisera ce miracle par l’intermédiaire d’un saint homme, qui était tanneur de son état (دبَّـاغ) nommé Simon (سمعان). Le pape envoya chercher celui-ci puis ils se rendirent chez le calife avec les évêques, les moines et une foule de fidèles et l’informèrent qu’ils étaientprêts. Tous se rendirent auprès de la colline et ils formèrent deux groupes : d’un côté le patriarche avec tous les chrétiens et d’un autre Al-Muizz et ceux qui l’accompagnaient. Le pape et les chrétiens se mirent à prier puis ils se prosternèrent trois fois en disant : Kuri`e `ele`ycon – Pitié Seigneur. A chaque fois qu’ils se levaient la colline se soulevait et à chaque fois qu’ils se prosternaient à terre, elle se reposait. De plus la colline avançait en même temps q’ils avançaient. Ce phénomène troubla le calife et ceux qui l’accompagnaient. Alors le calife se rapprocha du patriarche et lui dit : « Dieu est grand, bénit soit son Nom. Vous avez prouvé que votre Foi est véritable et qu’elle est vivante » et il lui promit de lui donner tout ce qu’il demandera. Le patriarche commença par décliner la proposition puis, devant l’insistance du calife demanda de pouvoir rénover les églises, principalement celle e saint Mercure, le détenteur des deux épées (كنيسة القديس مرقوريوس – أبو سيفين) située dans le vieux Caire. Le calife rédigea un décret en ce sens et lui proposa une somme d’argent que le patriarche refusa. Ceci fit grandir l prestige du patriarche auprès du calife. L’église de saint Mercure et de nombreuses autres églises furent reconstruites.", 
+  "وفي فجر اليوم الثالث ظهرت القديسة العذراء للأب البطريرك وأعلمته عن إنسان دبَّاغ قديس اسمه سمعان، سيُجري الله على يديه هذه المعجزة. فاستحضره وأخذه معه وجماعة من الأساقفة والكهنة والرهبان والشعب، ومَثَلُوا بين يدي المعز، وأبلغوه باستعدادهم لنقل الجبل، فخرج المعز ومعه رجال الدولة إلى قرب الجبل المقطم، فوقف البطريرك ومن معه في جانب، والمعز ومن معه في جانب آخر، ثم صلى البطريرك والمسيحيون الذين معه وسجدوا ثلاث مرات قائلين \"كيرياليسون... يارب ارحم\"، وكان عندما يرفع البطريرك والشعب رؤوسهم بعد كل ميطانية يرتفع الجبل، وكلما سجدوا ينزل إلى الأرض، وإذا ساروا سار أمامهم. فوقع الرعب في قلب الخليفة ومن معه، فتقدم الخليفة من البطريرك وهتف قائلاً: \"عظيم هو الله وتبارك اسمه، لقد أثبتم أن إيمانكم حقيقي حي، فاطلب ما تشاء وأنا أعطيه لك\". فلم يقبل البطريرك أن يطلب شيئاً ولما ألح عليه قال له: \"أريد تعمير الكنائس وخاصة كنيسة القديس مرقوريوس – أبو سيفين – بمصر القديمة\". فكتب له منشوراً بذلك وقدم له من بيت المال مبلغاً كبيراً، فشكره ودعا له وامتنع عن قبول المال، فازداد توقيراً عند المعز. فبنى البابا البطريرك كنيسة أبى سيفين وكنائس أخرى كثيرة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "En commémoration de ce miracle, l’Église ajouta trois jours au jeûne de l’Avent (صوم الميلاد) qui devint quarante-trois jours. Ce patriarche institua aussi le jeûne de Jonas (صوم يونان) de trois jours qui était déjà en vigueur chez les syriaques.", 
-  "", 
+  "وتذكاراً لمعجزة نقل الجبل المقطم أضافت الكنيسة ثلاثة أيام إلى صوم الميلاد فأصبح 43 يوماً، كذلك أخذت الكنيسة عن هذا البابا صوم يونان (3 أيام) التي كان يصومها السريان.", 
   ], 
   [
   Prefix.synaxarium+"&D=1803", 
   "Que la bénédiction des prières du pape Abraham ibn-zara’a soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلوات البابا أبرآم بن زرعة فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=1903&C=Title", 
   "19 Athor\n1) Consécration de l’église de Saint Serge et Saint Bacchus à el-Rassafa;\n2) Martyre de Saint Habib", 
-  " 19 هاتور", 
+  " 19 هاتور\nتكريس كنيسة سرجيوس وواخس – بالرصافة\nاستشهاد القديس أبيبوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Nous commémorons aujourd’hui la consécration de la première église construite en l’honneur de saint Serge (سرجيوس) et saint Bacchus (واس) dans la ville d’el-Rassafa en Syrie (الرصافة بالشام).", 
-  "", 
+  "تُعيِّد الكنيسة في هذا اليوم بتذكار تكريس أول كنيسة بُنيت على اسم الشهيدين سرجيوس وواخس، بالرصافة بالشام.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Ces deux saints étaient des officiers supérieurs dans l’armée de l’empereur Maximien (مكسيميانوس قيصر). Ils crurent en Jésus Christ, furent arrêtés et dégradés puis envoyés au gouverneur de Syrie qui s’appelait Antiochus (أنطيوخس). Il ordonna qu’on tue Bacchus et de le jeter ensuite dans le fleuve. Sa dépouille fut repêchée par des ascètes. Quant-à Serges, il fut décapité à el-Rassafa.", 
-  "", 
+  "كان هذان القديسان من كبار الضباط في جيش مكسيميانوس قيصر، آمنا بالسيد المسيح، فقبض عليهما وجرَّدهما من رُتبهما، ثم أرسلهما إلى أنطيوخس والى سوريا، فأمر بذبح واخس وإلقائه في النهر، فانتشل جسده بعض النساك. أما سرجيوس فقطعوا رأسه في الرصافة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Des fidèles recueillirent leurs corps. Ils édifièrent une grande église dans cette ville qui fut consacrée à cette date et y déposèrent les reliques. Cette consécration fut célébrée par quinze évêques en présence d’une grande foule de fidèles. De l’huile odorante coulait des corps des deux martyrs et guérissait les malades.", 
-  "", 
+  "جمع المؤمنون جسديهما معاً وبنوا لهما كنيسة عظيمة بالرصافة، كُرست في مثل هذا اليوم، وحضر صلاة التكريس خمسة عشر أسقفاً وشعب كثير، وكان يسيل من جسديّ القديسين دهن طيب يشفي الأمراض.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Que la bénédiction de leurs prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواتهما فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "En ce jour de l’an 32 des martyrs (316 après Jésus Christ) eut lieu le martyre de saint Habib (Abibus – القديس أبيبوس – حبيب). Ceci eut lieu à l’époque de l’empereur Licinius (ليكينيوس قيصر).", 
-  "", 
+  "وفيه أيضاً من سنة 32 للشهداء (316م)، استشهد القديس أبيبوس ( أبيبوس: حبيب) في أيام الملك ليكينيوس قيصر.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Lorsque l’empereur entendit parler de saint Habib, il voulut l’arrêter. Néanmoins, le saint se présenta à lui volontairement. Lorsque l’empereur vit qu’il était ferme dans sa Foi, il le fit suspendre et torturer. Puis il le fit incinérer hors de la ville où il fut suspendu en haut d’un mat. Il obtint ainsi la couronne du martyre.", 
-  "", 
+  "وذلك أنه لما سمع الملك بالقديس أبيبوس أصدر أمره بالقبض عليه، ولكنه قدَّم نفسه إليه. وعندما رأي تمسكه بالإيمان أمر أن يُربط على خشبة ويُمزق جسده بأمشاط من حديد، ففعل الجنود ذلك. أخيراً أمر أن يُحرق خارج المدينة، وربطوه على خشبة عالية وأوقدوا تحته النار، فاحترق جسده ونال إكليل الشهادة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1903", 
   "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=2003&C=Title", 
   "20 Athor\n1) Décès de Saint Anien, le 2ème patriarche de la prédication de Saint Marc;\n2) Consécration de l’église du prince Théodore de Choteb et celle du prince Théodore l’oriental", 
-  " 20 هاتور", 
+  " 20 هاتور\nنياحة القديس إنيانوس البطريرك الثاني من بطاركة الكرازة المرقسية\nتكريس بيعتي الأمير تادرس الشُطبى والأمير تادرس المشرقي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
-  "Nous commémorons le décès en l’an 83 après Jésus Christ de saint Anien (إنيانس), le second patriarche d’Alexandrie. Ce saint naquit à Alexandrie et ses parents étaient païens. Il exerçait le métier de cordonnier.", 
-  "", 
+  "Nous commémorons le décès en l’an 83 après Jésus Christ de saint Anien (إنيانس), le second patriarche d’Alexandrie.", 
+  "في مثل هذا اليوم من سنة 83م تنيَّح القديس العظيم إنيانوس ثاني بطاركة الإسكندرية.", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
-  "Lorsque saint Marc arriva à Alexandrie et se déplaça dans ses rues, sa chaussure se déchira. Il la donna à réparer à Anien. En la cousant, elui-ci se blessa avec son aiguille et il s’écria « Ô Dieu unique » (Ic :eoc). Saint Marc prit immédiatement de la terre, en fit de la boue et en recouvra la blessure d’Anien qui guérit au nom de Jésus Christ. Anien en fut surpris et l’apôtre le parladu Dieu unique alors, il crut. Par la suite, il l’invita chez lui où saint Marc prêcha la Foi en Jésus Christ devant tous ceux qui étaien. Il crurent tous et il les baptisa au Nom du Père, du Fils et du Saint Esprit.", 
-  "", 
+  "Ce saint naquit à Alexandrie et ses parents étaient païens. Il exerçait le métier de cordonnier. Lorsque saint Marc arriva à Alexandrie et se déplaça dans ses rues, sa chaussure se déchira. Il la donna à réparer à Anien. En la cousant, elui-ci se blessa avec son aiguille et il s’écria « Ô Dieu unique » (Ic :eoc). Saint Marc prit immédiatement de la terre, en fit de la boue et en recouvra la blessure d’Anien qui guérit au nom de Jésus Christ.", 
+  "وُلِدَ بالإسكندرية من أبوين وثنيين. وكانت صناعته إسكافياً. وحدث أنه لما دخل القديس مرقس مدينة الإسكندرية وجال في شوارعها تهرَّأ حذاؤه، فأعطاه لإنيانوس الإسكافي ليصلحه، وإذ كان يغرس فيه المخراز جرحه في يده، فصرخ من الألم باليونانية \"إيوس ثيئوس\" أي يا الله الواحد. وفي الحال أخذ القديس مرقس تراباً من الأرض وتفل عليه ووضعه على الجرح فشفاه باسم السيد المسيح.", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
-  "Anien ouvrit sa maison pour y rcevoir tous les croyants que saint Marc avait convertis. Il demeura proche de l’apôtre, écoutant ses enseignements et, de cette manière, il apprit la théologie et les rites de l’Église. Lorsque l’vangéliste voulut partir pour la Pentapole (الخمس مدن الغربية) en 64 après Jésus Christ, il imposa les mains à Anien pour le sacrer évêque. Anien poursuivit l’évangélisation des habitants d’Alexandrie baptisant en secret tous ceux qui se convertissaient et les affermissait dans la Foi. Sa maison fut transformée en église où se réunissaient les fidèles tous les dimanches ainsi que pour les êtes. Il succéda à saint Marc après le martyre de celui-ci en l’an 68 après Jésus Christ et demeura sur le siège apostolique pendant dix-neuf ans puis décéda en paix.", 
-  "", 
+  "Anien en fut surpris et l’apôtre le parladu Dieu unique alors, il crut. Par la suite, il l’invita chez lui où saint Marc prêcha la Foi en Jésus Christ devant tous ceux qui étaien. Il crurent tous et il les baptisa au Nom du Père, du Fils et du Saint Esprit.", 
+  "تعجب إنيانوس من ذلك، فبدأ القديس يبشره بالإله الواحد فآمن، ثم أخذه إلى بيته، فكلمهم مار مرقس، فآمنوا جميعهم بالسيد المسيح، فعمدهم باسم الآب والابن والروح القدس الإله الواحد.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2003", 
+  "Anien ouvrit sa maison pour y rcevoir tous les croyants que saint Marc avait convertis. Il demeura proche de l’apôtre, écoutant ses enseignements et, de cette manière, il apprit la théologie et les rites de l’Église.", 
+  "فتح إنيانوس بيته ليضم فيه المؤمنين الذين كان يعلمهم القديس مار مرقس، وظل ملازماً للرسول مرقس يسمع تعاليمه حتى حفظ كل علوم البيعة وطقوسها.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2003", 
+  "Lorsque l’évangéliste voulut partir pour la Pentapole (الخمس مدن الغربية) en 64 après Jésus Christ, il imposa les mains à Anien pour le sacrer évêque. Anien poursuivit l’évangélisation des habitants d’Alexandrie baptisant en secret tous ceux qui se convertissaient et les affermissait dans la Foi.", 
+  "ولما عزم القديس مرقس على الذهاب للخمس مدن ليكرز فيها بالسيد المسيحK وضع اليد على القديس إنيانوس ليكون أسقفاً عام 64م. فظل يبشر أهل الإسكندرية بالسيد المسيح ويعمد كل من يؤمن منهم سراً، ويعضدهم ويثبتهم على الإيمان بالسيد المسيح.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2003", 
+  "Sa maison fut transformée en église où se réunissaient les fidèles tous les dimanches ainsi que pour les êtes. Il succéda à saint Marc après le martyre de celui-ci en l’an 68 après Jésus Christ et demeura sur le siège apostolique pendant dix-neuf ans puis décéda en paix.", 
+  "تحول بيته إلى كنيسة يجتمع فيها المؤمنون أيام الآحاد والأعياد وخَلفَ القديس مار مرقس الرسول على كرسيه بعد استشهاده عام 68م، وأقام على كرسي الكرازة حوالي تسعة عشرة عاماً. ثم تنيَّح بسلام.", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
-  "Nous commémorons aussi en ce jour la consécration de l’église du prince Théodore de Choteb (الامير تادرسالشطبي), ainsi que celle du prince Théodore l’oriental (الامي تادرس المشرقي).", 
-  "", 
+  "Nous commémorons aussi en ce jour la consécration de l’église du prince Théodore de Choteb (الامير تادرس الشطبي), ainsi que celle du prince Théodore l’oriental (الامير تادرس المشرقي).", 
+  "وفيه أيضاً تم تكريس كنيستي الأمير تادرس الشُطبى (خبر استشهاد القديس تادرس الشُطبى يوجد تحت يوم 20 أبيب ونقل جسده تحت يوم 5 هاتور) والأمير تادرس المشرقي (خبر استشهاد القديس تادرس المشرقي تحت يوم 12 طوبه).", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
-  "En effet, après le transfert des reliques de saint Théodore de Choteb dans son village, les habitants commencèrent à construire une église. Tandis qu’ils creusaient pour les fonations, l’un d’entre-eux trouva un trésor, le cacha dans ses vêtements et voulut l’emmener chez lui. Tandis qu’il fuyait, un cavalier lui coupa le chemin. Il eut peur et lui proposa de lui laisser la moitié du trésor pour qu’il le laisse passer. Mais, celui-ci lui dit d’aller remettre le trésor au chef de chantier. Le même cavalier aparut au chef de chantier pour lui annoncer la venue de cet homme. Lorsqu’ils se rencontrèrent, ils allèrentensembl remttre le trésor au prêtre. Ainsi ils purent achever l’église qui fut consacrée par l’évêque de la ville et on y transféra les reliques du saint. Une autre église en l’honneur de saintThéodore l’oriental fut consacrée le même jour.", 
-  "", 
+  "En effet, après le transfert des reliques de saint Théodore de Choteb dans son village, les habitants commencèrent à construire une église. Tandis qu’ils creusaient pour les fonations, l’un d’entre-eux trouva un trésor, le cacha dans ses vêtements et voulut l’emmener chez lui. Tandis qu’il fuyait, un cavalier lui coupa le chemin. Il eut peur et lui proposa de lui laisser la moitié du trésor pour qu’il le laisse passer. Mais, celui-ci lui dit d’aller remettre le trésor au chef de chantier. Le même cavalier aparut au chef de chantier pour lui annoncer la venue de cet homme. Lorsqu’ils se rencontrèrent, ils allèrentensembl remttre le trésor au prêtre. Ainsi ils purent achever l’église qui fut consacrée par l’évêque de la ville et on y transféra les reliques du saint.", 
+  "ذلك أنه بعد أن تم نقل جسد القديس الأمير تادرس الشُطبى إلى بلدة شُطب (شُطب: قرية تابعة لمحافظة أسيوط)، بدأوا في بناء كنيسة له، وبينما يحفر العمال الأساسات وجد أحدهم كنزاً فيه ذهب، فأخفاه في ملابسه وأراد الفرار إلى منزله، وإذا بفارس يعترض طريقه، فخاف الرجل جداً وقال للفارس: \"خذ نصفه واتركني\". فقال له الفارس: \"اذهب إلى المسئول عن بناء الكنيسة وسلم له الذهب\"، ثم ظهر للمسئول نفس الفارس وأبلغه بحضور الرجل إليه ليسلمه الذهب. فلما تقابل الاثنان ذهبا إلى الأب الكاهن فأخذ منهما الذهب وبُنيت الكنيسة ودشَّنها أسقف مدينة شُطب، ونُقل إليها جسد الشهيد تادرس الشُطبى بفرح وتهليل وعملوا عيداً عظيماً.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2003", 
+  "Une autre église en l’honneur de saintThéodore l’oriental fut consacrée le même jour.", 
+  "وفي نفس اليوم تم تكريس كنيسة الأمير تادرس المشرقي.", 
   ], 
   [
   Prefix.synaxarium+"&D=2003", 
   "Que la bénédiction de leurs prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلاتهما فلتكن معنا ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=2103&C=Title", 
   "21 Athor\n1) Commémoration de Sainte vierge Marie, la mère de Dieu;\n2) Décès de Saint Grégoire le Thaumaturge;\n3) Décès du pape Côme II, le 54ème patriarche de la prédication de Saint Marc;\n4) Décès de Jean de Lycopolis dans la montagne de cette ville;\n5) Commémoration des saints Alphée, Zachée, Romain et Jean les martyrs ainsi que des saints Thomas, Victor et Isaac d'al-Achmounein;\n6) Transfert du corps de saint Jean Kamé au monastère el-Souryan ", 
-  " 21 هاتور", 
+  " 21 هاتور\nتذكار نياحة القديسة مريم العذراء والدة الإله\nنياحة القديس غريغوريوس العجائبى\nنياحة البابا قسما الثاني البطريرك الرابع والخمسين من بطاركة الكرازة المرقسية\nنياحة القديس يوحنا التبايسي بجبل أسيوط\nتذكار القديسين حلفا وزكا ورومانوس ويوحنا الشهداء. وتذكار القديسين توما وبقطر وإسحاق من الأشمونين\nنقل جسد القديس الأنبا يحنس كاما من ديره إلى دير السريان\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "L’Église commémore aujourd’hui, comme chaque 21ème jour du mois copte, la sainte mère de Dieu, la Vierge Marie.", 
-  "", 
+  "في مثل هذا اليوم تُعيِّد الكنيسة بالتذكار الشهري لوالدة الإله القديسة مريم العذراء.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que son intercession soit avec nous. Amen !", 
-  "", 
+  "شفاعتها فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Nous commémorons aussi en ce jour le décès en l'an 270 après Jésus Crist de saint Grégoire le thaumaturge (غريغوريوس العجائبي). Ce saint fut l'évêque de Néocésarée (قيصرية الجديدة). Il naquit dans cette ville en l’an 213 et était issu de parents païens et riches. Ses parents le nommèrent Théodore (ثيؤدورس). Dès sa prime enfance, il étudia la sagesse et la philosophie puis il alla à Athènes pour étudier les sciences grecques et latines et, de là, il alla à Césarée de Palestine (قيصرية فلسطين) où il retrouva le savant Origène (أوريجانوس). Il apprit la philosophie chrétienne et la théologie ainsi que l’interprétation des saintes Ecritures. Il se dirigea ensuite vers Alexandrie en l'an 235 après Jésus Christ où il acheva ses études puis il rentra dans sa ville natale en 237. Il fut baptisé en 239 puis se rendit au désert pour se consacrer à la prièr et à l’adoration.", 
-  "", 
+  "Nous commémorons aussi en ce jour le décès en l'an 270 après Jésus Crist de saint Grégoire le thaumaturge (غريغوريوس العجائبي).", 
+  "وفيه أيضاً من سنة 270م تنيَّح القديس غريغوريوس المعروف بصانع العجائب أسقف قيصرية الجديدة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Lorsque le siège épiscopal de Néocésaréedevint vacant, l'évêque d'Amasée, Faidimos (فيديم أسقف أماسيا) fut inspiré par Dieu que Théodore l’adorateur (ثيؤدورس العابد) était celui qui convenait à ce poste. Dès qu’il eut vent de ceprojet, le saint s’évada dans le désert ce qui obligea l’évêque Faidimos à l’ordonner à distance, sans lui imposer les mains directement. Il apporta un Évangile et le consacra évêque en lui donnant le nom de Grégoire. Dans sa fuite, Grégoire eut une vision qui lui apprit que cette ordination était voulue par Dieu. Alors, il retourna en Néocésarée et ils achevèrent la cérémonie de la consécration en 244 après Jésus Christ. Dieu fit par son intermédiaire de nombreux miracles au point qu'il fut surnommé « le Thaumaturge ». Parmi ses fidèles deux frères possédaient un lac d'où ils péchaient une grande quantité de poisson. Ils commencèrent à se disputer, chacun d'eux prétendant que l'étang lui appartenait à lui seul. Ils s'adressèrent à saint Grégoire. Celui-ci leur demanda de partager entre eux le fruit de la vente à part égale. Comme ils n'acceptaient pas on jugement et continuaient leur dispute, saint Grégoire pria Dieu et le lac fut asséché.", 
-  "", 
+  "Ce saint fut l'évêque de Néocésarée (قيصرية الجديدة). Il naquit dans cette ville en l’an 213 et était issu de parents païens et riches. Ses parents le nommèrent Théodore (ثيؤدورس). Dès sa prime enfance, il étudia la sagesse et la philosophie puis il alla à Athènes pour étudier les sciences grecques et latines et, de là, il alla à Césarée de Palestine (قيصرية فلسطين) où il retrouva le savant Origène (أوريجانوس). Il apprit la philosophie chrétienne et la théologie ainsi que l’interprétation des saintes Ecritures.", 
+  "وُلِدَ هذا القديس في مدينة قيصرية الجديدة سنة 213م وكان اسمه ثيئودورس من أبوين وثنيين غنيين. تعلم منذ صغره الحكمة والفلسفة. مضى إلى أثينا ودرس العلوم اليونانية واللاتينية ثم ذهب إلى قيصرية فلسطين، وتقابل هناك مع العلامة أوريجانوس، حيث درس على يده الفلسفة المسيحية واللاهوت وتفسير الكتب المقدسة.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Il se dirigea ensuite vers Alexandrie en l'an 235 après Jésus Christ où il acheva ses études puis il rentra dans sa ville natale en 237. Il fut baptisé en 239 puis se rendit au désert pour se consacrer à la prièr et à l’adoration.", 
+  "وفي سنة 235م مضى إلى الإسكندرية حيث درس ما كان ينقصه من العلوم، وفي سنة 237م عاد إلى بلدته قيصرية. وفي سنة 239م اصطبغ بالمعمودية. ثم انطلق إلى البرية وتفرغ للصلاة والعبادة.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Lorsque le siège épiscopal de Néocésaréedevint vacant, l'évêque d'Amasée, Faidimos (فيديم أسقف أماسيا) fut inspiré par Dieu que Théodore l’adorateur (ثيؤدورس العابد) était celui qui convenait à ce poste. Dès qu’il eut vent de ceprojet, le saint s’évada dans le désert ce qui obligea l’évêque Faidimos à l’ordonner à distance, sans lui imposer les mains directement. Il apporta un Évangile et le consacra évêque en lui donnant le nom de Grégoire. Dans sa fuite, Grégoire eut une vision qui lui apprit que cette ordination était voulue par Dieu. Alors, il retourna en Néocésarée et ils achevèrent la cérémonie de la consécration en 244 après Jésus Christ.", 
+  "وبعد أن خلا كرسي قيصرية الجديدة رأي فيديم أسقف أماسيا، بإعلان سماوي أن من يستحق رتبة الأسقفية هو ثيئودورس العابد. ولما علم القديس بذلك كان يهرب من برية إلى برية، مما اضطر الأسقف فيديم أن أحضر إنجيلاً وصلى عليه ورسمه أسقفاً باسم غريغوريوس. وأثناء هروبه رأي في رؤيا من يخبره بأن هذه الرسامة من الله. فرجع إلى قيصرية الجديدة، واستقبله الشعب بكرامة عظيمة، وكملوا تكريسه في سنة 244م.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Dieu fit par son intermédiaire de nombreux miracles au point qu'il fut surnommé « le Thaumaturge ». Parmi ses fidèles deux frères possédaient un lac d'où ils péchaient une grande quantité de poisson. Ils commencèrent à se disputer, chacun d'eux prétendant que l'étang lui appartenait à lui seul. Ils s'adressèrent à saint Grégoire. Celui-ci leur demanda de partager entre eux le fruit de la vente à part égale. Comme ils n'acceptaient pas on jugement et continuaient leur dispute, saint Grégoire pria Dieu et le lac fut asséché.", 
+  "وقد أظهر الله على يديه عجائب كثيرة حتى دُعي بالعجائبى، منها أنه كان لأخوين بحيرة سمك، واختلفا عليها، فذهبا إلى القديس ليفصل في الأمر، فحكم أن يقسم محصولها مناصفة، ولما لم يقبلا حُكمه طلب إلى الله فجفَّ ماء البحيرة وصارت أرضاً يابسة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Pendant la persécuion queDèceavait suscitée en l’an 250 après Jésus Christ, saint Grégoire se cacha. Lorsque les persécuteurs surent où il se trouvait, ils s’y rendirent mais ils n’y virent que deux arbres au lieu d’y trouver l’évêque et son diacre.", 
-  "", 
+  "أثناء اضطهاد ديسيوس سنة 250م اختبأ القديس. ولما عرفوا مكانه مضوا إلى هناك، ولكنهم لم يتبينوا إلا شجرتين بدلاً من الأسقف وشماسه.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Ce saint était présent au concile qui eut lieu en 262 pour juger Paul de Samosate (بولس الساموساطي). Après avoir achevé son bon combat, il décéda en paix et fut enterré dans l’église qu’il avait édifiée en Néocésaée.", 
-  "", 
+  "هذا وقد حضر القديس مجمع سنة 262م لمحاكمة بولس الساموساطى. وبعد أن أكمل جهاده الصالح تنيَّح بسلام. ودُفن في الكنيسة التي بناها بقيصرية الجديدة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "En ce jour de l'an 575 des martyrs (859 après Jésus Chrst) décéda saint Côme II (قسما الثاني), le cinqante-quatrième patriarche de la prédication de saint Marc. Il naquit à Samânnoude (سمنود) et fut moine au monastère de saint Macaire. Ce père eut une conduite vertueuse et fut choisi comme patriarche. Sa consécration eut lieu le 14 Apip 567 des martyrs (851 après Jésus Christ) et il envoya un courrier à son frère spirituel, le patriarche d’Antioche, pour lui faire part de son union avec lui dans la Foi orthodoxe. Il reçut une réponse confirmant ce qu’il avait écrit.", 
-  "", 
+  "En ce jour de l'an 575 des martyrs (859 après Jésus Chrst) décéda saint Côme II (قسما الثاني), le cinqante-quatrième patriarche de la prédication de saint Marc.", 
+  "وفيه أيضاً من سنة 575 للشهداء (859م) تنيَّح البابا القديس قسما الثاني البطريرك الرابع والخمسون من بطاركة الكرازة المرقسية.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Il naquit à Samânnoude (سمنود) et fut moine au monastère de saint Macaire. Ce père eut une conduite vertueuse et fut choisi comme patriarche. Sa consécration eut lieu le 14 Apip 567 des martyrs (851 après Jésus Christ).", 
+  "وُلِدَ هذا القديس بسمنود وترَّهب بدير القديس مكاريوس. سار هذا الأب سيرة فاضلة فانتخبوه بطريركاً ورسموه في 14 من أبيب سنة 567 للشهداء (851م). ", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Il envoya un courrier à son frère spirituel, le patriarche d’Antioche, pour lui faire part de son union avec lui dans la Foi orthodoxe. Il reçut une réponse confirmant ce qu’il avait écrit.", 
+  "أرسل رسالة إلى أخيه بطريرك أنطاكية عبَّرت عن وحدة الإيمان الأرثوذكسي، فجاءه الرد بتأييد العقيدة الأرثوذكسية.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Ce patriarche et les fidèles subirent de nombreuses difficultés particulièrement à cause des chalcédoniens. Malgré tout cela, saint Côme ne se lassa pas d'enseigner le peuple et de les conforter dans la Foi orthodoxe. Après avoir accompli son bon combat, il décéda en paix.", 
-  "", 
+  "لحقت بهذا البابا وبشعبه بلايا كثيرة وأحزان شديدة خاصة بسبب الخلقيدونيين. لكنه في وسط كل هذا كان يداوم على تعليم الشعب وتثبيته على الإيمان القويم.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "وبعد أن أكمل سعيه تنيَّح بسلام. بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "En ce jour de l’an 394 après Jésus Christ décéda saint Jean de Lycopolis ousaint Jean d’Assiout (القديس يوحنا التبايسي الشهير بيوحنا الأسيوطي). Ce saint naquit au début du 4ème siècle dans la ville d’Assiout de parents chrétiens qui lui donnèrent une bonne éducation conforme à leur Foi. Il se rendit à Scété où il devint un disciple de saint Isidore et y vécut pendant cinq années dans l’ascèse et l’adoration. Après cela, un ange lui apparut et lui indiquât qu’il devait retourner à la montagne d’Assiout où il s’installa dans une grotte. Il y vécut pour le restant de sa vie.", 
-  "", 
+  "En ce jour de l’an 394 après Jésus Christ décéda saint Jean de Lycopolis ousaint Jean d’Assiout (القديس يوحنا التبايسي الشهير بيوحنا الأسيوطي).", 
+  "وفيه أيضاً من سنة 494م تنيَّح القديس يوحنا التبايسي الشهير بيوحنا الأسيوطي.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Saint Jean de Lycopolis était connu pour son ascèse très stricte, ses prévisions pour l’avenir et les miracles qu’il faisait et il gardait souvent le silence dans sa grotte pendant de longues heures. Mais ceci ne l’empêchait pas de recevoir ses visiteurs dans la bonne humeur car un grand nombre de personnes venaient prendre son avis. Il encourageait tous ceux qui venaient à lui à se préoccuper des pauvres et des miséreux, à payer leur dîme qu’ils devaient partager en trois parts, l’une pour le clergé, la seconde pour l’édification des églises et la troisième pour les pauvres. Il rédigea des livres, des interprétations de la nouvelle alliance ainsi qu’un grand nombre de parles spirituelles utiles. Lorsqu’il se rendit compte que son décès était proche, il demanda que personne ne le dérange pendant trois jours qu’il passa dans la prière puis décéda en paix.", 
-  "", 
+  "Ce saint naquit au début du 4ème siècle dans la ville d’Assiout de parents chrétiens qui lui donnèrent une bonne éducation conforme à leur Foi. Il se rendit à Scété où il devint un disciple de saint Isidore et y vécut pendant cinq années dans l’ascèse et l’adoration. Après cela, un ange lui apparut et lui indiquât qu’il devait retourner à la montagne d’Assiout où il s’installa dans une grotte. Il y vécut pour le restant de sa vie.", 
+  "وُلِدَ هذا القديس بأسيوط في أوائل القرن الرابع الميلادي، من أبوين مسيحيين ربياه على الآداب المسيحية. مضى إلى برية شيهيت. ترَّهب على يد القديس إيسوذوروس وقضى هناك خمس سنوات في جهاد وعبادة. ظهر له ملاك الرب وأرشده أن يمضى إلى جبل أسيوط وأقام هناك مغارة قضى فيها بقية حياته.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Saint Jean de Lycopolis était connu pour son ascèse très stricte, ses prévisions pour l’avenir et les miracles qu’il faisait et il gardait souvent le silence dans sa grotte pendant de longues heures. Mais ceci ne l’empêchait pas de recevoir ses visiteurs dans la bonne humeur car un grand nombre de personnes venaient prendre son avis.", 
+  "اشتهر بالنسك الشديد ورغم ذلك كان يقابل زائريه ببشاشة، وكان يقصده الكثيرون لطلب المشورة. اشتهر أيضاً بالتنبؤ بأشياء قبل حدوثها. واشتهر بعمل المعجزات.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Il encourageait tous ceux qui venaient à lui à se préoccuper des pauvres et des miséreux, à payer leur dîme qu’ils devaient partager en trois parts, l’une pour le clergé, la seconde pour l’édification des églises et la troisième pour les pauvres.", 
+  "كان هذا القديس يحفظ السكون في المغارة لفترات طويلة. وعلى الرغم من هذا فإنه كان يقابل من يأتي إليه طلباً للمشورة أو للشفاء وكان يشجع الزائرين له على الاهتمام بالفقراء والمساكين ودفْع العشور التي كان يُقسِّمها ثلاثة أجزاء، الأول للإكليروس والثاني لعمارة الكنائس والثالث للفقراء.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Il rédigea des livres, des interprétations de la nouvelle alliance ainsi qu’un grand nombre de parles spirituelles utiles. Lorsqu’il se rendit compte que son décès était proche, il demanda que personne ne le dérange pendant trois jours qu’il passa dans la prière puis décéda en paix.", 
+  "كتب هذا القديس مؤلفات عديدة وتفاسير للعهد الجديد وأقوال روحية نافعة. ولما أدرك قرب نياحته، التمس أن لا يطلبه أحد مدة ثلاثة أيام صرفها مصلياً ثم تنيَّح بسلام.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Nous commémrons aussi les saints Alphée (حلفا), Zachée (زكا), Romain (رومانوس) et Jean (يوحنا) qui furent martyrs ainsi que des saints Thomas (توما), Victor (بقطر) et Isaac d'al-Achmounayn (اسحاق من الاشمونين).", 
-  "", 
+  "وفيه أيضاً تُعيِّد الكنيسة بتذكار القديسين حلفا وزكا ورومانوس ويوحنا الشهداء. وتذكار القديسين توما وبقطر وإسحاق من الأشمونين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Zachée était de petit taille comme le Zachée dont parle l’Évangile et il était undiacre de l’église de Gadare (جدرا) en Palestine. Il fut conduit chargé de fer au tribunal lorsque Dioclétien déclencha la persécution des chrétiens où il confessa avec courage sa Foi en Jésus Christ. En conséquence ils le battirent cruellement et le torturèrent de diverses manières. Alphée, qui était originaire de Baysân (بيسان)était avec lui et affronta les même tortures. Le lendemain ils furent décapités et reçurent la couronne du martyre. Ceci eut lieu en 303 après Jésus Christ.", 
-  "", 
+  "Zachée était de petit taille comme le Zachée dont parle l’Évangile et il était undiacre de l’église de Gadare (جدرا) en Palestine. Il fut conduit chargé de fer au tribunal lorsque Dioclétien déclencha la persécution des chrétiens où il confessa avec courage sa Foi en Jésus Christ. En conséquence ils le battirent cruellement et le torturèrent de diverses manières.", 
+  "وقد كان زكا قصير القامة كزكا المذكور في الإنجيل، وكان شماس كنيسة جدرا في فلسطين. سيق للمحاكمة بعدما ثارت موجة من الاضطهاد على المسيحيين في زمن دقلديانوس. كان العسكر قد جعلوا في عنقه سلسلة حديدية ثقيلة. اعترف بالرب يسوع المسيح بكل جرأة فانهالوا عليه بالسياط ونزعوا أظافره وعذَّبوه وسحقوا قدميه بملزمة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Saint Romain était originaire d’Antioche ou, peut-être, de Palestine. Il était diacre ans l’Église et était à Antioche alors que se déroulait les persécutions déclenchées par Dioclétien. Il se déplaçait chez les fidèles, dans leurs maisons et dans leurs commerces, et les exhortait à demeurer fermes dans la Foi. Le gouverneur entendit parler de ce qu’il faisait e ordonna qu’on l’interpelle. Alors que les soldats le recherhaient, il se mit en travers de la route du gouverneur qui se rendait au temple païen pour présenter des offrandes. Comme le gouverneur était tout ébahi, un soldat lui glissa à l’oreille que cet homme était celui qu’il recherchait car il était accusé d’inciter les chrétiens à l’insubordination envers l’empire romain. Immédiatement, il le fit arrêter et ordonna ses soldats de le torturer. Devant sa fermeté, il lui fit arracher la langue, casser les jambes et, finalement, il fut étouffé et obtint la couronne du martyre.", 
-  "", 
+  "Alphée, qui était originaire de Baysân (بيسان)était avec lui et affronta les même tortures. Le lendemain ils furent décapités et reçurent la couronne du martyre. Ceci eut lieu en 303 après Jésus Christ.", 
+  "وكان حلفا معه وهو من بيسان، وقد واجه نفس المصير. وفي اليوم التالي قطع الجلادون رأسيّ المجاهدين بحد السيف سنة 303م ونالا إكليل الشهادة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "L’Église commémore en même temps le martyre de saint Jean aini que les martyrs d’al-Achmounein Thomas, Victor et Isaac.", 
-  "", 
+  "Saint Romain était originaire d’Antioche ou, peut-être, de Palestine. Il était diacre ans l’Église et était à Antioche alors que se déroulait les persécutions déclenchées par Dioclétien. Il se déplaçait chez les fidèles, dans leurs maisons et dans leurs commerces, et les exhortait à demeurer fermes dans la Foi. Le gouverneur entendit parler de ce qu’il faisait e ordonna qu’on l’interpelle. Alors que les soldats le recherhaient, il se mit en travers de la route du gouverneur qui se rendait au temple païen pour présenter des offrandes. Comme le gouverneur était tout ébahi, un soldat lui glissa à l’oreille que cet homme était celui qu’il recherchait car il était accusé d’inciter les chrétiens à l’insubordination envers l’empire romain. Immédiatement, il le fit arrêter et ordonna ses soldats de le torturer.", 
+  "أما القديس رومانوس فهو من أصل أنطاكي أو ربما فلسطيني. وكان شماساً في الكنيسة. كان في أنطاكية وقت الاضطهاد على المسيحيين في زمن الإمبراطور دقلديانوس، وإذ دبت فيه الغيرة الإلهية فشرع يطوف على المؤمنين في بيوتهم ومتاجرهم يقويهم ويشدّد عزائمهم، فوصل خَبره إلى الحاكم فأمر بإلقاء القبض عليه. وفيما كان الجنود يبحثون عنه، إذ به يعترض الحاكم في طريقه إلى هيكل الأوثان لتقديم ذبائحه، فبُهتَ الحاكم من جسارته. فهمس أحد الجنود في أذن الحاكم بأنه هو الشخص المطلوب بتهمة تحريض المسيحيين على عصيان الأوامر الملكية، فأمر في الحال بإلقاء القبض عليه. وأمر الحاكم جنوده بأن يجلدوه فجلدوه بعنف ومزّقوا جسده بأمشاط من حديد.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2103", 
+  "Devant sa fermeté, il lui fit arracher la langue, casser les jambes et, finalement, il fut étouffé et obtint la couronne du martyre. L’Église commémore en même temps le martyre de saint Jean aini que les martyrs d’al-Achmounein Thomas, Victor et Isaac.", 
+  "ولما رأى الحاكم إصراره وثباته على الإيمان المسيحي، أمر بنزع لسانه وألقاه في السجن وكسر الجنود ساقيه وأخيراً خنقوه ونال إكليل الشهادة. وتُعيِّد له الكنيسة مع الشهداء الآخرين يوحنا وشهداء الأشمونين توما وبقطر وإسحاق.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que la bénédiction de leurs prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواتهم جميعاً فلتكن معنا. آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Nous commémorons aussi le transfert des reliques du grand saint, abba Jean Camé (أنبا يحنس كاما) au monastère d’al-Souryan (دير السريان) en provenance de son monastère qui se trouvait à Birket-al-Adiora (بركة الأديرة) qui était située à environ trois kilomètres au sud-est du monastère d’abba Pichoï (دير الأنبا بيشوي). A cet endroit se trouvaient plusieurs monastères qui furent détruits vers la fin du 15ème et le début du 16ème siècle à cause de l’attaque des termites (النمل الأبيض) et du faible nombre de moines et leur pauvreté. Ces monastères étaient :", 
-  "", 
+  "Nous commémorons aussi le transfert des reliques du grand saint, abba Jean Camé (أنبا يحنس كاما) au monastère d’al-Souryan (دير السريان) en provenance de son monastère qui se trouvait à Birket-al-Adiora (بركة الأديرة) qui était située à environ trois kilomètres au sud-est du monastère d’abba Pichoï (دير الأنبا بيشوي). A cet endroit se trouvaient plusieurs monastères :", 
+  "وفيه أيضاً من سنة 1232 للشهداء (1515م) تم نقل جسد القديس العظيم الأنبا يحنس كاما القس  إلى دير السريان (وقد وُجِدَ هذا الخبر في حاشية بمخطوطة سنكسار جزء أول (من توت إلى أمشير) بمكتبة دير البرموس العامر تحت رقم 6 / 221.) من ديره الكائن ببِركة الأديرة والتي تبعد عن دير القديس الأنبا بيشوي بحوالي ثلاثة كيلومترات إلى ناحية الجنوب الشرقي وكان يوجد بها:", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Le monastère du grand saint abba Jean Colobos (abba Iwannyc pikoloboc – يؤنس القصير).", 
-  "", 
+  "– Le monastère du grand saint abba Jean Colobos (abba Iwannyc pikoloboc – يؤنس القصير) ;", 
+  "– دير القديس العظيم الأنبا يحنس القصير وهو أكبرها.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Le monastère du grand saint abba Jean Camé.", 
-  "", 
+  "– Le monastère du grand saint abba Jean Camé ;", 
+  "– دير القديس العظيم الأنبا يحنس كاما القس.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Le monastère des éthiopiens.", 
-  "", 
+  "– Le monastère des éthiopiens ;", 
+  "– دير الحَبَش.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Le monastère des arméniens.", 
-  "", 
+  "– Le monastère des arméniens ;", 
+  "– دير الأرمن.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Ainsi que le cimetière (جبّانة - طافوس) des moines.", 
-  "", 
+  "– Ainsi que le cimetière (جبّانة - طافوس) des moines.", 
+  "– كذلك جبّانة (طافوس) الآباء الرهبان.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
-  "Les ruines de ces monastères sont encore visibles de nos jours.", 
-  "", 
+  "Ces monastères furent détruits vers la fin du 15ème et le début du 16ème siècle à cause de l’attaque des termites (النمل الأبيض) et du faible nombre de moines et leur pauvreté. Les ruines de ces monastères sont encore visibles de nos jours.", 
+  " وقد تخرَّبت هذه الأديرة في أواخر القرن الخامس عشر وأوائل القرن السادس عشر بسبب تناقص عدد رهبانها جداً وهجوم النمل الأبيض على أخشابها، وعدم مقدرة الرهبان القليلين جداً والفقراء جداً على تجديدها. ومازالت أطلال هذه الأديرة باقية وظاهرة حتى الآن.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Les moines restants se déplacèrent au monastère de la sainte Vierge (al-Souryan) et emportèrent avec eux les reliques de leur père spirituel abba Jean Came dans une rne en bois. Ils l’installèrent dans un sanctuaire (مقصورة). Ils emportèrent aussi avec eux une plaque de marbre sur laquelle est indiquée en copte la date du décès du saint : 25 Koyak 575 des martyrs (859 après Jésus Christ) et la fixèrent dans le premier chœur de l’église de la sainte Vierge. Cette plaque s’y trouve toujours.", 
-  "", 
+  "جاء ما تبقَّى من رهبان دير الأنبا يحنس كاما إلى دير السيدة العذراء (السريان) ومعهم رفات أبيهم الأنبا يحنس كاما في أنبوبة خشبية ووضعوه في مقصورة بالدير، ومعهم كذلك الحجر الرخامي المدون عليه باللغة القبطية تاريخ نياحة هذا القديس 25 كيهك سنة 575 للشهداء (859م) وثبّتوه في حائط الخورس الأول بكنيسة السيدة العذراء السريان ومازال موجوداً بها للآن.", 
   ], 
   [
   Prefix.synaxarium+"&D=2103", 
   "Que la bénédiction des prières de ce grand saint soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة هذا القديس العظيم فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=2203&C=Title", 
   "22 Athor\n1) Martyre de Saint Côme et de Saint Damien, de leurs frères et de leur mère ", 
-  " 22 هاتور", 
+  " 22 هاتور\nاستشهاد القديسين قزمان ودميان وإخوتهما وأمهما\n\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2203", 
-  "En ce jour de l’an 22 des martyrs (36 après Jésus Christ) eut lieu le martyre de saint Côme (قزمان), de saint Damien (دميان), de leurs frères Antime (انتيموس), Léonce (لاونديوس) et Euprépius (أبرابيوس) ainsi que de leur mère Théodote (ثاؤذوتي). Cette famille était originaire de l’Arabia en Asie mineure. Leur mère se trouva veuve alors que ses enfants étaient encore en bas âge et elle les éleva dans la crainte de Dieu. Côme et Damien apprirent la médecine tandis que leurs trois frères partirent pour le désert pour se faire moines.", 
-  "", 
+  "En ce jour de l’an 22 des martyrs (36 après Jésus Christ) eut lieu le martyre de saint Côme (قزمان), de saint Damien (دميان), de leurs frères Antime (انتيموس), Léonce (لاونديوس) et Euprépius (أبرابيوس) ainsi que de leur mère Théodote (ثاؤذوتي).", 
+  "في مثل هذا اليوم من سنة 22 للشهداء (306م) استشهد القديسون قزمان ودميان وإخوتهما أنتيموس ولاونديوس وأبرابيوس وأمهم ثاؤذوتى.", 
   ], 
   [
   Prefix.synaxarium+"&D=2203", 
-  "Côme et Damien utilisèrent leur art pour attirer les païens au christianisme. Ils n'acceptaient aucun paiement pour leurs services et il était notoire que le gain matériel ne les intéressait pas. Ils comptaient sur la prière pour leur traitement guérisse les malades. Is furent arrêtés par le gouverneur Lysias (ليسياس) sur l’ordre de Dioclétien. Celui-ci convoqua aussi leurs trois frères et leur mère et il leur ordonna d’encenser les idoles mais ilsrefusèrent d’obéir. Il tenta de les amadouer par des promesses mais sans résultat. Alors, il les fit torturer en utilisant ivers instruments puis il les fit enchainer et jeter à la mer ais l’ange du Seigneur brisa les chaines et ils revinrent sains et saufs sur le rivage. La foule fut stupéfaite par ce qu’elle voyait mais la rage du gouverneur s’amplifia et il tomba malade. Par les prières des cinq frères il fut guérit et l’on crut qu’il allait les relâcher. Toutefois son ingratitude reprit le dessus et il poursuivit leur persécution en crucifiant et lapidant les deux ainés et en faisant transpercer les autres par des flèches. Mais les pierres et le flèches rebondissaient vers ceux qui les lançaient. Alors il les fit jeter dans une fournase mais leur mère les encourageait à demeurer fermes dans la Foi et les consolait. En conéquence le gouverneur la fit décapiter et elle btint la couronne du martyre.", 
-  "", 
+  "Cette famille était originaire de l’Arabia en Asie mineure. Leur mère se trouva veuve alors que ses enfants étaient encore en bas âge et elle les éleva dans la crainte de Dieu. Côme et Damien apprirent la médecine tandis que leurs trois frères partirent pour le désert pour se faire moines.", 
+  "كانت هذه الأسرة من بلدة من بلاد أرابيا بآسيا الصغرى. ترملت والدتهم وكانوا صغاراً، فرّبتهم وعلّمتهم مخافة الله. تعلَّم قزمان ودميان مهنة الطب، أما إخوتهما الثلاثة فمضوا إلى البرية للعبادة.", 
   ], 
   [
   Prefix.synaxarium+"&D=2203", 
-  "Mis son corps resta étalé par tere sans que personne n'ose l'enterrer. Alors Côme aposropha la foule en disant : « n'y a-t-il personne dans cette ville aant un cœur assez généreux pour protéger le corps de cette vielle veuve et l'enterrer ? » Alors Victor (بقطر) le fils de Romanos (رومانوس) prit le corps, l'ensevelit et l'enterra. Apprenant cela, le gouverneur exila saint Victor en Égypte où il reçut la couronne du martyre.", 
-  "", 
+  "Côme et Damien utilisèrent leur art pour attirer les païens au christianisme. Ils n'acceptaient aucun paiement pour leurs services et il était notoire que le gain matériel ne les intéressait pas. Ils comptaient sur la prière pour leur traitement guérisse les malades. ", 
+  "استخدم قزمان ودميان مهنة الطب كوسيلة لجذب الوثنيين إلى الإيمان المسيحي. وكانا يعملان بلا أجر، واشتهرا أنهما يبغضان الفضة. واعتمدا بالأكثر على الصلاة في شفاء المرضى.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2203", 
+  "Ils furent arrêtés par le gouverneur Lysias (ليسياس) sur l’ordre de Dioclétien. Celui-ci convoqua aussi leurs trois frères et leur mère et il leur ordonna d’encenser les idoles mais ilsrefusèrent d’obéir. Il tenta de les amadouer par des promesses mais sans résultat. Alors, il les fit torturer en utilisant ivers instruments puis il les fit enchainer et jeter à la mer ais l’ange du Seigneur brisa les chaines et ils revinrent sains et saufs sur le rivage. La foule fut stupéfaite par ce qu’elle voyait.", 
+  "وبسبب أوامر دقلديانوس استدعاهما الوالي ليسياس وعرف أن لهما ثلاثة إخوة فأرسل واستدعى بقية الإخوة وأمهم، وأمرهم أن يبخروا للأوثان فلم يطيعوا أمره فاستخدم معهم أسلوب الوعد ولما رأي ثباتهم عذَّبهم بطرحهم في مستوقد حمَّام، ثم وضعهم في دواليب بارزة من الحديد حتى ترضضت عظامهم، ثم قيّدوهم بسلاسل وألقوهم في البحر، فأرسل الله ملاكه، وحطّم السلاسل، ووقفوا على الشاطىء، فانذهل الجميع وآمن كثير من الجنود والشعب.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2203", 
+  "Or, la rage du gouverneur s’amplifia. Il tomba malade au point d'être amené à convoquer les saints et leur demander de le pardonner. Par les prières des cinq frères il fut guérit et l’on crut qu’il allait les relâcher. Toutefois son ingratitude reprit le dessus et il poursuivit leur persécution en crucifiant et lapidant les deux ainés et en faisant transpercer les autres par des flèches. Mais les pierres et le flèches rebondissaient vers ceux qui les lançaient. ", 
+  "فازداد غضب الوالي ليسياس جداً، فأصابه مرض شديد، مما اضطره أن يستدعى القديسين ويتوسل إليهم طالباً العفو. فصلُّوا من أجله فشفاه الله بصلواتهم، فظن الناس أنه سوف يطلقهم لكنه بعد فترة تنكر لعمل الله فيه. فأمر أن يُعلَّق الأخوان الكبيران على صليبين ويُرجما بالحجارة، أما باقي الإخوة فيقيَّدون ويُضرَبون بالسهام. فكانت الحجارة والسهام ترتد وتصيب الضاربين. ", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2203", 
+  "Alors il les fit jeter dans une fournase mais leur mère les encourageait à demeurer fermes dans la Foi et les consolait. En conéquence le gouverneur la fit décapiter et elle btint la couronne du martyre. Mis son corps resta étalé par tere sans que personne n'ose l'enterrer. Alors Côme aposropha la foule en disant : « n'y a-t-il personne dans cette ville aant un cœur assez généreux pour protéger le corps de cette vielle veuve et l'enterrer ? » Alors Victor (بقطر) le fils de Romanos (رومانوس) prit le corps, l'ensevelit et l'enterra. Apprenant cela, le gouverneur exila saint Victor en Égypte où il reçut la couronne du martyre.", 
+  "بعد ذلك أمر الوالي بحل وثاقهم وطرحهم في أتون النار. ولما سمعت أمهم هذا الحكم أخذت تشجعهم وتثبتهم على الإيمان مما أثار غضب الوالي فأمر بقطع رأسها ونالت إكليل الشهادة. بقى جسدها مطروحاً لم يجسر أحد أن يدفنه. فصرخ القديس قزمان قائلاً: \"يا أهل هذه المدينة أما يوجد أحد قلبه رحيم يتقدم ويستر جسد هذه الأرملة العجوز ويدفنها؟\". عندئذ تقدم القائد الشجاع بقطر بن رومانوس وأخذ الجسد وكفَّنه ودفنه. ولما علم الوالي بما صنعه القديس بقطر، أمر بنفيه إلى ديار مصر، حيث عُذب هناك واستشهد على اسم السيد المسيح.", 
   ], 
   [
   Prefix.synaxarium+"&D=2203", 
   "Constatant son échec, le gouverneur ordonna qu’on décapite les cinq frères. Ils furent conduits au lieu de l’exécution tout en restant calmes et souriants et en louant Dieu. On les décapita et ils obtinrent la couronne du maryre. Quelques fidèles recueillirent leurs dépouilles et les enterrèrent.", 
-  "", 
+  "لما رأي ليسياس عجزه أمام هؤلاء القديسين أمر بقطع رؤوسهم جميعاً، فساقوهم إلى مكان الاستشهاد، وكانوا هادئي البال مبتسمي الوجه مسبحين الله. وأخيراً قطعوا رؤوسهم فنالوا أكاليل الشهادة، فتقدم بعض المؤمنين وحملوا الأجساد ودفنوها.", 
   ], 
   [
   Prefix.synaxarium+"&D=2203", 
   "Que la bénédiction de leurs prières soit avec nos et glire oit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلواتهم فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
