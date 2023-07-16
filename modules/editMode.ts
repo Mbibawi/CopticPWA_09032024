@@ -252,24 +252,12 @@ function changeCssClass(htmlParag: HTMLElement) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
   let className: string = htmlRow.dataset.root.split("&C=")[1];
+  if (!className) className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
   if (!className) return;
   toggleClass(htmlRow, className);
-  Array.from(htmlRow.children).forEach((element: HTMLElement) => {
-    toggleClass(element, className);
-  });
-
-  className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
-  htmlRow.dataset.root =
-    htmlRow.dataset.root.split("&C=")[0]+"&C="+className;
-  if (className === "Title") {
-    toggleClass(htmlRow, "TitleRow");
-  } else {
-    toggleClass(htmlRow, className);
-    Array.from(htmlRow.children).forEach((element: HTMLElement) => {
-      toggleClass(element, className);
-    });
-  }
+  htmlRow.dataset.root = htmlRow.dataset.root.split("&C=")[0]+"&C="+className;
 }
+
 function toggleClass(element: HTMLElement, className: string) {
   element.classList.toggle(className);
 }
