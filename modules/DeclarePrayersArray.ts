@@ -14254,7 +14254,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.bookOfHours + "3rdHourTitle&D=$copticFeasts.AnyDay&C=Title",
+      Prefix.bookOfHours + "3rdHourTitle&D=$copticFeasts.AnyDay&C=SuperTitle",
       "",
       "Prière de la 3ème heure",
       "",

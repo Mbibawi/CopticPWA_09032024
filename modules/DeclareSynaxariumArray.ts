@@ -1916,7 +1916,7 @@ ReadingsArrays.SynaxariumArray = [[
   ], 
   [
   Prefix.synaxarium+"&D=2601", 
-  "Alors Zacharie dit à l’ange : «  »Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
+  "Alors Zacharie dit à l’ange : « »Comment vais-je savoir que cela arrivera ? Moi, en effet, je suis un vieillard et ma femme est avancée en âgeée ». L’ange lui répondit : « Je suis Gabriel et je me tiens en présence de Dieu. J’ai été envoyé pour te parler et pour t’annoncer cette bonne nouvelle. Mais voici que tu seras réduit au silence et, jusqu’au jour où cela se réalisera, tu ne pourras plus parler, parce que tu n’as pas cru à mes paroles ; celles-ci s’accompliront en leur temps. »", 
   "فقال زكريا للملاك: \"كيف أعلم هذا لأني أنا شيخ وامرأتي متقدمة في أيامها\". فأجاب الملاك وقال له: \"أنا جبرائيل الواقف أمام الله، وأرسلني الله لأبشرك بهذا، وها أنت تكون صامتاً إلى اليوم الذي يكون فيه هذا، لأنك لم تصدِّق كلامي الذي سيتم في حينه\" ( لو 1: 8 – 20 ).", 
   ], 
   [
@@ -3782,7 +3782,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0103&C=Title", 
   "1er Athor\n1) Commémoration de saint Cléopas, un des deux disciples d’Emmaüs;\n2) Martre de saint Cyriaque, évêque de Jérusalem, et de sa mère;\n3) Martyre des saints Maxime, Numitius, Victor et Philippe;\n4) Martyre de sainte Anastasie la grande et de saint Cyrille", 
-  "1 هاتور\nاستشهاد القديس كليوباس الرسول أحد تلميذي عمواس\n\nاستشهاد القديس كيرياكوس أسقف أورشليم ووالدته\n\nاستشهاد القديسين مكسيموس ونوميتيوس وبقطر وفيلبس\n\nاستشهاد القديسة أنسطاسية الكبيرة، والقديس كيرلس\n", 
+  " 1 هاتور\nاستشهاد القديس كليوباس الرسول أحد تلميذي عمواس\nاستشهاد القديس كيرياكوس أسقف أورشليم ووالدته\nاستشهاد القديسين مكسيموس ونوميتيوس وبقطر وفيلبس\nاستشهاد القديسة أنسطاسية الكبيرة، والقديس كيرلس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0103", 
@@ -3884,7 +3884,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0203&C=Title", 
   "2 Athor\n1) Décès du pape Pierre III, le 27ème patriarche de la prédication de Saint Marc;\n2) Martyre de Saint Macaire, le libyen;\n3) Décès de Saint Ephramios d’Edesse ", 
-  " 2 هاتور\nنياحة البابا بطرس الثالث البطريرك السابع والعشرين من بطاركة الكرازة المرقسية\n\nاستشهاد القديس مقار الليـبي\n\nنياحة القديس أفراميوس الرهاوى\n", 
+  " 2 هاتور\nنياحة البابا بطرس الثالث البطريرك السابع والعشرين من بطاركة الكرازة المرقسية\nاستشهاد القديس مقار الليـبي\nنياحة القديس أفراميوس الرهاوى\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0203", 
@@ -4043,7 +4043,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0403&C=Title", 
   "4 Athor\n1) Martyre des saints Jean et Jacques, les évêques de Perse;\n2) Martyr de Saint Thomas, l’évêque;\n3) Martyre des Saints Epimaque et Gordien ", 
-  " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\n\nاستشهاد الأنبا توماس الأسقف\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n", 
+  " 4 هاتور\nاستشهاد القديسين يوحنا ويعقوب أسقفيّ فارس\nاستشهاد الأنبا توماس الأسقف\nاستشهاد القديسَيْن أبيماخوس وعزاريانوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0403", 
@@ -4254,7 +4254,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0703&C=Title", 
   "7 Athor\n1) Consécration de l'église de Saint Georges de Cappadoce;\n2) Martyre de Saint Georges d'Alexandrie;\n3) Martyre de Saint Nehroua;\n4) Martyre des saints Akepsimas, Aithala et Joseph;\n5) Décès de saint Menas, l'évêque de Thmouï ", 
-  " 7 هاتور\nتكريس كنيسة الشهيد العظيم مار جرجس الروماني باللدّ\n\nاستشهاد القديس مار جرجس الإسكندري\n\nاستشهاد الأنبا نهروه\n\nاستشهاد القديسين أكبسيما وإيتالا ويوسف\n\nنياحة القديس الأنبا مينا أسقف تمي الأمديد\n", 
+  " 7 هاتور\nتكريس كنيسة الشهيد العظيم مار جرجس الروماني باللدّ\nاستشهاد القديس مار جرجس الإسكندري\nاستشهاد الأنبا نهروه\nاستشهاد القديسين أكبسيما وإيتالا ويوسف\nنياحة القديس الأنبا مينا أسقف تمي الأمديد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0703", 
@@ -4391,7 +4391,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0803&C=Title", 
   " 8 Athor\n1) Commémoration des quatre vivants incorporels;\n2) Martyre de Saint Nikandros, le pêtre de Myre;\n3) Décès du père Piryos, le directeur de l’écolethéologique d’Alexandrie", 
-  " 8 هاتور\nتذكار الأربعة مخلوقات الحية غير المتجسدين\n\nاستشهاد القديس نيكاندروس كاهن ميرا\n\nنياحة الأب بيريّوس مدير مدرسة الإسكندرية اللاهوتية\n", 
+  " 8 هاتور\nتذكار الأربعة مخلوقات الحية غير المتجسدين\nاستشهاد القديس نيكاندروس كاهن ميرا\nنياحة الأب بيريّوس مدير مدرسة الإسكندرية اللاهوتية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0803", 
@@ -4644,7 +4644,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1203&C=Title", 
   "12 Athor\n1) Commémoration de l’Archange Michel;\n2) Décès de Saint Jean le syriaque ", 
-  " 12 هاتور\nتذكار رئيس الملائكة الجليل ميخائيل رئيس جند الرب\n\nنياحة القديس يوحنا السرياني\n", 
+  " 12 هاتور\nتذكار رئيس الملائكة الجليل ميخائيل رئيس جند الرب\nنياحة القديس يوحنا السرياني\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1203", 
@@ -4925,7 +4925,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1503&C=Title", 
   "15 Athor\n1) Martyre de Saint Ménas, le thaumaturge;\n2) Décès de Saint Jean ar-Robbane ", 
-  " 15 هاتور\nاستشهاد القديس مار مينا العجائبى\n\nنياحة القديس يوحنا الربان\n", 
+  " 15 هاتور\nاستشهاد القديس مار مينا العجائبى\nنياحة القديس يوحنا الربان\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1503", 
@@ -5017,114 +5017,164 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=1603&C=Title", 
   "16 Athor\n1) Début du jeûne de l’avent pour l’Église copte orthodoxe;\n2) Consécration de l’église de Saint Onuphre l'Anachorète;\n3) Martyre de Saint Juste, l’évêque;\n4) Décès du pape Ménas II, le 61ème patriarche de la prédication de saint Marc;\n5) Décès de Saint Nylus le sinaïte ", 
-  " 16 هاتور", 
+  " 16 هاتور\nبدء صوم الميلاد في كنيستنا القبطية الأرثوذكسية\nتكريس كنيسة القديس أبى نُفر السائح\nاستشهاد القديس يسطس الأسقف\nنياحة البابا مينا الثاني البطريرك الحادي والستين من بطاركة الكرازة المرقسية\nنياحة القديس نيلس السينائى\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "En ce jour de chaque année commence dans l’Église copte orthodoxe le jeûne de l’avent ou jeûne de Noël. Ce jeûne prend fin le jour de la fête de la nativité de notre bon sauveur, le Seigneur Jésus Christ. Nous implorons le Seigneur, qui a accompli notre Salut et qui a daigné se livrer pour nous afin de ous délivrer de l’esclavage du péché, de nous guider pour agir selon Sa volonté en ces jours de jeûne et tous les jours de notre vie. Puisse-t-il agréer notre jeûne et nos prières.", 
-  "", 
+  "يوافق هذا اليوم من كل عام بدء صوم الميلاد المجيد، في كنيستنا القبطية الأرثوذكسية والذي ينتهي بعيد ميلاد مخلصنا الصالح ربنا يسوع المسيح. نسأل إلهنا، متمِّم خلاصنا، الذي تنازل كالتدبير لفداء جنس البشر، أن يعيننا على العمل بما يرضيه، في هذا الصوم المقدس وكل أيام حياتنا. ويقبل أصوامنا وصلواتنا.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "A lui est due la gloire éternellement. Amen !", 
-  "", 
+  "له المجد الدائم إلى الأبد آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
-  "Nous commémorons aujord’hui la consécration de l’église de saint Onuphre l’anachoète (أبو نفر السائح) qui se trouvait au Caire. Ce saint vécut pendant soixante années dans le désert profond sans rencontrer personne et devint un anachorète. Il vécut à l’ombre d'un palmier et proche d’une source d’eau. Le palmier lui donnait la quantité de dates qui lui était nécessaire pour un an et il buvait à l’eau de la source. A la fin de sa vie, saint Paphnouté (القديس بفنوتيوس), l’ermite, vint jusqu’à lui et connut son histoire. Puis il l’ensevelit, l’enterra dans s grotte et rédigea l’histoire de sa vie pour en faire bénéficier les générations qui suivirent. Quelques églises furent édifiées en l’honneur de saint Onuphre.", 
-  "", 
+  "Nous commémorons aujord’hui la consécration de l’église de saint Onuphre l’anachoète (أبو نفر السائح) qui se trouvait au Caire.", 
+  "وفيه أيضاً تم تكريس كنيسة القديس أبى نُفر السائح، التي كانت بالقاهرة.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1603", 
+  "Ce saint vécut pendant soixante années dans le désert profond sans rencontrer personne et devint un anachorète. Il vécut à l’ombre d'un palmier et proche d’une source d’eau. Le palmier lui donnait la quantité de dates qui lui était nécessaire pour un an et il buvait à l’eau de la source. ", 
+  "وقد عاش القديس أبو نُفر في البراري الداخلية مدة ستين سنة لم يَرَ فيها وجه إنسان، ووصل إلى درجة السياحة، وكان يعيش في البرية إلى جانب نخلة، وعين ماء، فتطرح له النخلة بلحاً يكفيه السنة كلها، ويشرب من عين الماء.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1603", 
+  "A la fin de sa vie, saint Paphnouté (القديس بفنوتيوس), l’ermite, vint jusqu’à lui et connut son histoire. Puis il l’ensevelit, l’enterra dans s grotte et rédigea l’histoire de sa vie pour en faire bénéficier les générations qui suivirent. Quelques églises furent édifiées en l’honneur de saint Onuphre.", 
+  "وفي آخر حياته ذهب إليه القديس بفنوتيوس المتوحد، وعرف قصة القديس أبى نُفر، ثم كفنه ودفنه في مغارته وكتب سيرته منفعة للأجيال، وبُنيت على اسمه بعض الكنائس.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Nous commémorons aussi le martyre de saint Juste (القديس يسطس) l’évêque qui, sur les ordres du prince Maxime (الأمير مكسيموس), fut torturé avec cruauté et, finalement, obtint la couronne du martyre.", 
-  "", 
+  "وفيه أيضاً استشهد القديس يسطس الأسقف، الذي نال إكليل الشهادة، على يد مكسيموس الأمير، بعد أن عذَّبه عذابات شديدة من أجل إنكار الإيمان.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
-  "En ce jour de l’an 691 des martyrs (974 après Jésus Christ) décéda lepape Ménas II (مينا الثاني), le 61ème patriarche de la prédication de saint Marc. Ce père naquit à Sândala (صندلا) de parents chrétiens. Lorsqu’il grandit, ils le marièrent contre sa volonté mais il se mit d’accord avec son épouse de vivre dans la chasteté. Plus tard, avec l’accord de son épouse, il partit pour Scété et s’installa au monastère de saint Macaire où il eut une bonne conduite.", 
-  "", 
+  "En ce jour de l’an 691 des martyrs (974 après Jésus Christ) décéda lepape Ménas II (مينا الثاني), le 61ème patriarche de la prédication de saint Marc.", 
+  "وفيه أيضاً من سنة 691 للشهداء (974م) تنيَّح الأب القديس البابا مينا الثاني، البطريرك الحادي والستون من بطاركة الكرسي المرقسي.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
-  "Après le décès du pape Théophane (البابا ثاؤفانيوس), le 60ème patriarche, les évêques et les fidèles se mirentd’accord pour choisir le père Ménas pour qu’il devienne patriarche. Il fut sacré le 11 Koyak 673 des martyr (956 arès ésus Christ). Certaines personnes eurent quelques appréhensions car il avait été marié mais lorsqu’ils connurent sa chasteté ils le considérèrent digne d’être patriarche et lui furent soumis.", 
-  "", 
+  "Ce père naquit à Sândala (صندلا) de parents chrétiens. Lorsqu’il grandit, ils le marièrent contre sa volonté mais il se mit d’accord avec son épouse de vivre dans la chasteté. Plus tard, avec l’accord de son épouse, il partit pour Scété et s’installa au monastère de saint Macaire où il eut une bonne conduite.", 
+  "وُلِدَ وتربى في بلدة صندلا (صندلا: إحدى قرى محافظة كفر الشيخ حالياً) من أبوين مسيحيين، ولما كبر زوجاه رغم إرادته، لكنه اتفق مع زوجته أن يعيشا معاً حياة البتولية. ثم استأذنها وذهب إلى برية شيهيت وترَّهب في برية مكاريوس الكبير، حيث سار سيرة صالحة.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1603", 
+  "Après le décès du pape Théophane (البابا ثاؤفانيوس), le 60ème patriarche, les évêques et les fidèles se mirentd’accord pour choisir le père Ménas pour qu’il devienne patriarche. Il fut sacré le 11 Koyak 673 des martyr (956 arès ésus Christ).", 
+  "بعد نياحة البابا ثاؤفانيوس البطريرك الستين، استقر رأي الأساقفة والشعب على الأب مينا ليصير بطريركاً، فتمت سيامته في 11 كيهك سنة 673 للشهداء (956م).", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1603", 
+  "Certaines personnes eurent quelques appréhensions car il avait été marié mais lorsqu’ils connurent sa chasteté ils le considérèrent digne d’être patriarche et lui furent soumis.", 
+  "ولكن قاومه بعض الشعب بحجة أنه كان متزوجاً، ولما عرفوا أنه لم يعرف زوجته معرفة الزواج البتة، عَدَلُوا عن رأيهم واعتبروه مستحقاً لرتبته وخضعوا له. ", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Ce saint subit beaucoup de difficultés qu’il affronta avec patience en prian et jeûnant. Il décéda en paix après avoir siégé sur le trône patriarcal environ 18 années.", 
-  "", 
+  "لاقى هذا القديس متاعب كثيرة، احتملها بصبر وصلوات وأصوام، تنيَّح بسلام بعد أن أقام على الكرسي حوالي ثمانية عشرة عاماً.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
-  "Nous commémorons encore aujourd’hui le décès de de saint Nylus le sinaïte (القديس نيلُس السينائي). Ce saint naquit au milieu du 4ème siècle d’une riche famille chrétienne et ses parents lui donnèrent une bonne éducation conforme à leur Foi. Il grandit orné de toutes les vertus spirituelles et excella dans les sciences et les lettres. Ceci onduit l’empereur Théodose le grand (ثيؤدوسيوس البير) à le faire évoluer dans la hiérarchie de l’empire. Il se maria et eut un garçon et une fille. Néanmoins, il désira mener une vie monastique et délaisser les affaires de ce monde. En conséquence, il se mit d’accord avec son épouse, quitta Constantinople et se retira comme anachorète sur le mont Sinaï avec son fils Théodore (ثاؤدورس) qui partageait avec son père la vie d’isolement et de dépouillement. Quant à son épouse et sa fille, elles s’installèrent dans un monastère de moniales.", 
-  "", 
+  "Nous commémorons encore aujourd’hui le décès de de saint Nylus le sinaïte (القديس نيلُس السينائي).", 
+  "وفيه أيضاً تنيَّح القديس نيلُس السينائى.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1603", 
+  "Ce saint naquit au milieu du 4ème siècle d’une riche famille chrétienne et ses parents lui donnèrent une bonne éducation conforme à leur Foi. Il grandit orné de toutes les vertus spirituelles et excella dans les sciences et les lettres. Ceci onduit l’empereur Théodose le grand (ثيؤدوسيوس البير) à le faire évoluer dans la hiérarchie de l’empire. Il se maria et eut un garçon et une fille. Néanmoins, il désira mener une vie monastique et délaisser les affaires de ce monde. En conséquence, il se mit d’accord avec son épouse, quitta Constantinople et se retira comme anachorète sur le mont Sinaï avec son fils Théodore (ثاؤدورس) qui partageait avec son père la vie d’isolement et de dépouillement. Quant à son épouse et sa fille, elles s’installèrent dans un monastère de moniales.", 
+  "وُلِدَ هذا القديس نحو منتصف القرن الرابع الميلادي من أسرة مسيحية غنية. ربَّاه والده تربية مسيحية حقيقية، فنشأ متحلّياً بالفضائل الروحية، كما نبغ في العلوم والآداب، مما جعل الإمبراطور ثيئودوسيوس الكبير يرفعه إلى أعظم مراتب المملكة. ثم تزوج وأنجب ولداً وبنتاً، ولكنه اشتاق إلى حياة الرهبنة وزهد في أمور هذا العالم، فاتفق مع زوجته وترك مدينة القسطنطينية وذهب إلى دير طور سينا، عاش هناك عيشة الوحدة والتجرد هو وابنه المدعو ثاؤدوروس الذي كان يشارك أباه حياة الوحدة والتجرد، أما زوجته وابنته فعاشتا في أحد أديرة الراهبات.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Saint Nylus poursuivit son combat contre les forces du mal et les démons et sortait vainqueur par la force que Dieu lui donnait. En conséquence il eut une grande expérience dans ce domaine et rédigea des lettres à quelques moines pur les réconforter et les encourager. Il leur écrivait : « Nayez pas peur des attaques des mauvais esprits ni même de leur apparition sous forme de serpents, de scorpions ou d’animaux sauvages car nous avons affronté ce genre-là qui est anéanti tant que vous ave les armes spirituelles. Il a aussi laissé de nombreuses maxmes monastiques.", 
-  "", 
+  "داوم القديس نيلُس على الجهاد وقتال الشياطين، وكان ينتصر بقوة الله وصارت له خبرة كبيرة في هذا المجال، وكتب رسائل تعزية وتشجيع لبعض الرهبان يقول فيها: \"يجب ألا تخيفكم محاربات الأرواح الشريرة ولا حتى ظهورهم في شكل حيات وعقارب أو وحوش مفترسة، فمثل هذه الأمور قابلناها كثيراً، وهي كالعدم ما دمتم متذرِّعين بالأسلحة الروحية\". وله أقوال رهبانية أخرى كثيرة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Des troupes attaquèrent cette vallée en 430 après Jésus Christ et kidnappèrent Théodore et les vendirent comme esclave en Palestine. Saint Nylus en fut attristé et partit à sa recherche. Il finit par le retrouver et le ramena au monastère. Il poursuivit l’ascèse et l’adoration jusqu’à un âge avancé et décéda après avoir eu une vieillesse pieuse.", 
-  "", 
+  "هجم بعض الجنود على البرية حوالي سنة 430م، وأخذوا الابن ثاؤدوروس أسيراً وباعوه كعبد في فلسطين، فحزن عليه القديس نيلُس وبحث عنه حتى وجده، فرجع به إلى الدير، وثابر على أعمال النسك والعبادة، إلى أن تقدم في السن وتنيَّح بشيخوخة صالحة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1603", 
   "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen", 
-  "", 
+  "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=1703&C=Title", 
   "17 Athor\n1) Décès de saint Jean Chrysostome;\n2) Décès de saint Paul au mont Danfiq ", 
-  " 17 هاتور", 
+  " 17 هاتور\nنياحة القديس يوحنا ذهبي الفم\nنياحة القديس بولس بجبل دنفيق\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
-  "En ce jour de l’an 123 des martyrs (407 après Jésus Christ) décéda saint Jean Chrysostome, le patriarche de Constantinople. Il naquit en 347 après Jésus Christ, son père se nommait Secundus (اسكوندس) et il était commandant dans l’armée. Sa mère était une femme pieuse et se nommait Anthuse (أنثوسا). Son père décède alors qu’il était ecore enfant alors que sa mère n’avait que vingt ans. Cette femme pieuse se consacra alors à l’éducation de son fils qui grandit dans la piété et toutes les vertus chrétienes. Dans son effort pour lui donner une bonne éducation, ell l’envoya auprès du professeur de rhétorique Libanios(ليبانيوس الأنطاكي). Il progressa dans la connaissance de ces sciences et, finalement, étudia le droit et devint avocat.", 
-  "", 
+  "En ce jour de l’an 123 des martyrs (407 après Jésus Christ) décéda saint Jean Chrysostome, le patriarche de Constantinople.", 
+  "في مثل هذا اليوم من سنة 123 للشهداء (407م) تنيَّح القديس يوحنا ذهبي الفم، بطريرك القسطنطينية.", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
-  "Par la suite, il délaissa les affaires de ce monde et se consacra à l’étude de la sainte Bible en s’efforçant d’acquérir les vertus chrétiennes. Sur l’avis de son ami saint Basile, il rechercha l’isolement mais, en raison de l’insistance de sa mère, il revint et s’isola chez lui pour pratiquer l’adoration et l’ascétisme. Plus tard, il s’installa au-dessus d’une montagne à proximité de chez lui étudiant la Bible sans cesse. Toutefois, en raison de ses problèmes de santé, il dût retourner à Antioche. Il évolua dans le sacerdoce puis, en raison de son éloquence et sa spiritualité, il fut choisi comme patriarche de Constantinople en 398 après Jésus Christ à l’époque de l’empereur Arcadius (أركاديوس). . Ilpersévérait dans l’enseignement et les sermons, et blâmait les pêcheurs et celles qui portaient des tenue indécentes. Quelques personnes mal intentionnées rapportèrent à l’impératrice Eudoxie (أفدوكسيا) que ce discours lui était particulièrement adressé. En conséquence, elle provoqua la colère de l’empereur qui ordonna qu’il soit exilé. Cette décision irrita les fidèles, mais le saint les calma et se rendit aux soldats qui le conduisirent à son exil de nuit. Mais cet exil ne dura qu’un seul jour car un tremblement de terre violent eut lieu et une grande partie de la ille fut détruite. Effrayée, l'impératrice Eudoxie se précipita auprès de l’empereur pour lui demander de rappeler l'exilé qui fut accueilli par les fidèles dans la joie et les hymnes. Il entra dans l’église des apôtres accompagné des évêques et il reprit ses fonctions épiscopales.", 
-  "", 
+  "Il naquit en 347 après Jésus Christ, son père se nommait Secundus (اسكوندس) et il était commandant dans l’armée. Sa mère était une femme pieuse et se nommait Anthuse (أنثوسا). Son père décède alors qu’il était ecore enfant alors que sa mère n’avait que vingt ans. Cette femme pieuse se consacra alors à l’éducation de son fils qui grandit dans la piété et toutes les vertus chrétienes. Dans son effort pour lui donner une bonne éducation, ell l’envoya auprès du professeur de rhétorique Libanios(ليبانيوس الأنطاكي). Il progressa dans la connaissance de ces sciences et, finalement, étudia le droit et devint avocat.", 
+  "وُلِدَ هذا القديس في سنة 347م من أب شريف اسمه اسكوندس كان قائداً في الجيش، وأم تقية اسمها أنثوسا. مات أبوه وهو طفل، وترك والدته وسنها عشرين سنة، فكرست الأم التقية حياتها لتربية طفلها، فشب على التقوى وكل فضيلة مقدسة، واجتهدت في تعليمه فأرسلته إلى الفيلسوف ليبانيوس الأنطاكي، فنبغ يوحنا في هذه العلوم، ثم درس القانون وعمل محامياً.", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
-  "Mais cet épisode ne dura pas longtemps car l’impératrice se mit de nuveau en colère à cause de ses sermons enflammés contre l’indécence. Elle réussit à réunir un concile qui écida d le estituer et de l’exiler. En effet, sur l’ordre de l’empereur, il fut exilé à Cucuus (كوكوزا), en Arménie. Lorsque son activité et l’amour que les fidèles avaient pour lui devinrent évidents, il fut décidé de le transférer ailleurs. A bout de force, il rendit l’âme à Comona (كومانا) entre les mains de Dieu qu’il a tant aimé, après avoir étendu les mains et prié et il fut enterré à cet endroit. Il laissa de nombreux livres parlant de la théologie, l’interprétation de la Bible, les devoirs du sacerdoce et la vie des quelques ermites.", 
-  "", 
+  "Par la suite, il délaissa les affaires de ce monde et se consacra à l’étude de la sainte Bible en s’efforçant d’acquérir les vertus chrétiennes. Sur l’avis de son ami saint Basile, il rechercha l’isolement mais, en raison de l’insistance de sa mère, il revint et s’isola chez lui pour pratiquer l’adoration et l’ascétisme. Plus tard, il s’installa au-dessus d’une montagne à proximité de chez lui étudiant la Bible sans cesse. Toutefois, en raison de ses problèmes de santé, il dût retourner à Antioche.", 
+  "زهد بعد ذلك في أمور العالم، وتفرغ لدراسة الأسفار الإلهية، واهتم باقتناء الفضائل المسيحية، ثم عزم على اعتزال العالم تبعاً لمشورة صديقه المحبوب باسيليوس، ولكن إلحاح والدته جعله يعدل عن هذا الفكر، فعكف في مقر سكنه على سيرة النسك والعبادة ثم انفرد في جبل قريب، مواظباً على دراسة الكتاب المقدس مع التقشفات الشديدة، ولكنه لاعتلال صحته اضطر أن يعود إلى أنطاكية.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1703", 
+  "Il évolua dans le sacerdoce puis, en raison de son éloquence et sa spiritualité, il fut choisi comme patriarche de Constantinople en 398 après Jésus Christ à l’époque de l’empereur Arcadius (أركاديوس). . Ilpersévérait dans l’enseignement et les sermons, et blâmait les pêcheurs et celles qui portaient des tenue indécentes. Quelques personnes mal intentionnées rapportèrent à l’impératrice Eudoxie (أفدوكسيا) que ce discours lui était particulièrement adressé. En conséquence, elle provoqua la colère de l’empereur qui ordonna qu’il soit exilé. Cette décision irrita les fidèles, mais le saint les calma et se rendit aux soldats qui le conduisirent à son exil de nuit. Mais cet exil ne dura qu’un seul jour car un tremblement de terre violent eut lieu et une grande partie de la ille fut détruite. Effrayée, l'impératrice Eudoxie se précipita auprès de l’empereur pour lui demander de rappeler l'exilé qui fut accueilli par les fidèles dans la joie et les hymnes. Il entra dans l’église des apôtres accompagné des évêques et il reprit ses fonctions épiscopales.", 
+  "ارتقى إلى درجة الكهنوت وكان يعظ في الكنائس، فذاع صيت فصاحته وروحانيته، فانتخبوه بطريركاً للقسطنطينية عام 398م في عهد أركاديوس الملك، فظل القديس يجاهد في تعليم شعبه، ويوبخ المخالفين خصوصاً السيدات المتبرجات في ملابسهن لكي يلزمن الحشمة، فوشى به بعض الأشرار إلى الملكة أفدوكسيا، أنه يقصدها بالذات، فغضبت وأضمرت له الشر وهيجت الملك أركاديوس عليه، فأصدر أمراً بنفيه، فغضب الشعب وثار، ولكن القديس هدَّأ مشاعرهم وسَلَّم نفسه للجند، فأخذوه ليلاً إلى المنفي الذي لم يستمر فيه إلا يوماً واحداً إذ حدثت زلزلة عظيمة هدمت جانباً كبيراً من المدينة، فارتعبت الملكة من ذلك وسَعَت لدى الملك لاستعادة القديس من نفيه في الحال، وهكذا عاد القديس بين فرح الشعب وتهليله ودخل كنيسة الرسل بصحبة الأساقفة وبدأ يمارس مهامه الروحية.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1703", 
+  "Mais cet épisode ne dura pas longtemps car l’impératrice se mit de nuveau en colère à cause de ses sermons enflammés contre l’indécence. Elle réussit à réunir un concile qui écida d le estituer et de l’exiler. En effet, sur l’ordre de l’empereur, il fut exilé à Cucuus (كوكوزا), en Arménie. ", 
+  "لم يدم هذا الصفو طويلاً، إذ غضبت الملكة أفدوكسيا مرة أخرى بسبب عظاته النارية التي تستنكر الخلاعة والبذخ، وعزمت أن تعقد مجمعاً للحكم عليه، وفعلاً نجحت في أن تجعل المجمع يحكم بعزله ونفيه، فنُفي بأمر المجمع والملك إلى مدينة كوكوزا بأرمينيا.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1703", 
+  "Lorsque son activité et l’amour que les fidèles avaient pour lui devinrent évidents, il fut décidé de le transférer ailleurs. A bout de force, il rendit l’âme à Comona (كومانا) entre les mains de Dieu qu’il a tant aimé, après avoir étendu les mains et prié et il fut enterré à cet endroit. Il laissa de nombreux livres parlant de la théologie, l’interprétation de la Bible, les devoirs du sacerdoce et la vie des quelques ermites.", 
+  "ولما رأوا نشاطه هناك وحب الشعب له، نقلوه إلى منطقة أخرى تسمى كومانا (كومانا: مدينة قديمة في منطقة الكبادوك)، فوصلها في آخر رمق، إذ كانت صحته قد تدهورت، فصلى وبسط يديه وأسلم روحه الطاهرة في يدي الله الذي أحبه، فدفنوه هناك بعد أن ترك كتباً كثيرة في العقائد وتفاسير الكتاب المقدس، وواجبات الكهنوت، وسيَر بعض النساك.", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
-  "En ce jour décéda le saint moine Paul (بولس) dans la montagne de Danfiq (جبل دنفيق). Il naquit dans la bourgade de Danfiq où son père était paysan et il apprit le métier de charpentier. Lorsqu’il grandit il voulut se faire moine quitta ce monde et tout ce qui s’y trouve et s’installa dans le mont Danfiq proche de chez lui. Il devint moine et suivait les enseignements d’un ancien de ce lieu. Comme il était simple et pur, il fut ordonné prêtre et devint le supérieur (مدبراً) de ses frères les moines et il les conduisit dans le chemin de la vertu et de l’ascétisme. Comme il avait atteint un haut degré de sainteté, il fut élevé au ciel où il vit les secrets mystérieux et les anges qui louaient Dieu. Lorsque le Seigneur voulut le transférer dans le lieu du repos éternel, il réunit les moines leur recommanda de garder les règles du monachisme puis décéda en paix. Il fut enterré par ceux-ci avec respect.", 
-  "", 
+  "En ce jour décéda le saint moine Paul (بولس) dans la montagne de Danfiq (جبل دنفيق).", 
+  "وفيه أيضاً تنيَّح الأب القديس الراهب بولس، بجبل دنفيق (دنفيق: قرب نقادة الحالية بمحافظة قنا).", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1703", 
+  "Il naquit dans la bourgade de Danfiq où son père était paysan et il apprit le métier de charpentier. Lorsqu’il grandit il voulut se faire moine quitta ce monde et tout ce qui s’y trouve et s’installa dans le mont Danfiq proche de chez lui. Il devint moine et suivait les enseignements d’un ancien de ce lieu.", 
+  "وُلِدَ هذا القديس بقرية دنفيق، وكان والده فلاحاً، وعَلَّمه مهنة النجارة. لما كبر بولس اشتاق للحياة الرهبانية، وزهد العالم وما فيه، وذهب إلى جبل دنفيق القريب من بلدته وترَّهب هناك متتلمذاً على يديّ أحد شيوخ هذا الجبل.", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=1703", 
+  "Comme il était simple et pur, il fut ordonné prêtre et devint le supérieur (مدبراً) de ses frères les moines et il les conduisit dans le chemin de la vertu et de l’ascétisme. Comme il avait atteint un haut degré de sainteté, il fut élevé au ciel où il vit les secrets mystérieux et les anges qui louaient Dieu. Lorsque le Seigneur voulut le transférer dans le lieu du repos éternel, il réunit les moines leur recommanda de garder les règles du monachisme puis décéda en paix. Il fut enterré par ceux-ci avec respect.", 
+  "وكان بسيطاً طاهراً، فأقاموه قساً ومدبراً للإخوة، فأحسن تدبيرهم بمخافة الله وقادهم في طريق الفضيلة والنسك، وكان قد بلغ إلى درجات عالية من القداسة فاختُطف إلى السماء، وأبصر الأسرار الغامضة، ورأي الملائكة يسبحون الله. وحين أراد الرب أن ينقله إلى مواضع النياح الأبدي، جمع الرهبان وأوصاهم بحفظ قوانين الرهبنة، ثم تنيَّح بسلام، فدفنه الرهبان بكرامة عظيمة.", 
   ], 
   [
   Prefix.synaxarium+"&D=1703", 
   "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
@@ -13884,7 +13934,7 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=0711&C=Title", 
   "Décès d’Abba Chénouda, l’archimandrite. 7 Apip", 
-  "7 أبيب", 
+  " 7 أبيب", 
   ], 
   [
   Prefix.synaxarium+"&D=0711", 

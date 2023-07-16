@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.9.3 (Started developping the \"Presentation Mode\" and made some fixes to the code and the text)';
+const version: string = 'v4.9.4 (Started developping the \"Presentation Mode\" and made some fixes to the code and the text)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -69,15 +69,15 @@ const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
 const ReadingsIntrosAndEnds = {
     gospelIntro: {
-        AR: 'قفوا بخوف أمام الله وانصتوا لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار () البشير، والتلميذ الطاهر، بركاته على جميعنا',
-        FR:'',
+        AR: 'قفوا بخوف أمام الله وانصتوا لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار (....) البشير، والتلميذ الطاهر، بركاته على جميعنا',
+        FR:'Levons-nous avec crainte de Dieu pour écouter le Saint Évangile. Lecture du Saint évangile selon Saint (....), Que sa bénédiction soit sur nous tous, Amen !',
     },
     gospelEnd: {
         AR: 'والمجد لله دائماً',
-        FR: '',
+        FR: 'Gloire à Dieu éternellement, Amen !',
     },
     stPaulIntro: {
-        AR:  'البولس فصل من رسالة معلمنا بولس الرسول  (الأولى/الثانية) إلى ()، بركته على جميعنا آمين',
+        AR:  'البولس فصل من رسالة معلمنا بولس الرسول  (الأولى/الثانية) إلى (......)، بركته على جميعنا آمين',
         FR: 'Lecture de l’Epître de Saint Paul à () que sa bénédiction soit sur nous tous, Amen!',
         EN:'',
     },
@@ -88,7 +88,7 @@ const ReadingsIntrosAndEnds = {
     },
     katholikonIntro: {
         AR: 'الكاثوليكون، فصل من رسالة القديس (الأولى/الثانية/الثالثة)  بركته على جميعنا آمين',
-        FR: 'Katholikon, (1ère/2ème/3ème) épître à l’Église Universelle de notre père (St.), que sa bénédiction repose sur nous tous. Amen!',
+        FR: 'Katholikon, (1ère/2ème/3ème) épître à l’Église Universelle de notre père St.(....), que sa bénédiction repose sur nous tous, Amen!',
         EN:'',
     },
     katholikonEnd: {
@@ -303,7 +303,31 @@ let selectedDate: number, //This is the date that the user might have manually s
     weekDay: number; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0
 var todayDate: Date;
 let isFast: boolean;
-let actors = ['Priest', 'Diacon', 'Assembly', 'Comment', 'CommentText']; //These are the names of the classes given to each row accordin to which we give a specific background color to the div element in order to show who tells the prayer
+let actors = [
+    {
+        EN: 'Priest',
+        FR: 'Prêtre',
+        AR: 'الكاهن',
+    },
+    {
+        EN: 'Diacon',
+        FR: 'Diacre',
+        AR: 'الشماس',
+    },
+    {
+        EN: 'Assembly',
+        FR: 'Assemblée',
+        AR: 'الشعب',
+    },
+    {
+        EN: 'Comments',
+        FR: 'Commentaires',
+        AR: 'تعليقات'
+    },
+    {
+        EN: 'CommentText',
+    }
+]; //These are the names of the classes given to each row accordin to which we give a specific background color to the div element in order to show who tells the prayer
 let showActors = new Map();
 actors.map(actor => showActors.set(actor, true));
 showActors.set(actors[3], false);//this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants

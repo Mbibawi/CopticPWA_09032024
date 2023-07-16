@@ -203,7 +203,7 @@ justify-self: center;
   justify-self: center;
 }
 
-.TargetRow, .TargetRowTitle {
+.TargetRow {
   display: grid;
   column-gap: 5px ;
   height:fit-content;
@@ -226,18 +226,22 @@ justify-self: center;
   color: white;
   border: #b94c04 solid 3pt ;
 }
-.TargetRow > .AR, .TargetRowTitle >.AR{
+.TargetRow > p.AR, 
+.TargetRowTitle >p.AR{
   grid-area: AR;
 }
-.TargetRow > .CA, .TargetRowTitle >.CA{
+.TargetRow > p.CA, 
+.TargetRowTitle >p.CA{
   grid-area: CA;
 }
 
-.TargetRow > .FR, .TargetRowTitle >.FR{
+.TargetRow > p.FR, 
+.TargetRowTitle >p.FR{
  grid-area: FR;
 }
 
-.TargetRow > .COP, .TargetRowTitle >.COP{
+.TargetRow > p.COP, 
+.TargetRowTitle >p.COP{
   grid-area: COP;
 }
 .TargetRowTitle > p{
@@ -246,7 +250,10 @@ justify-self: center;
   text-align: center !important;
   text-justify: inter-word;
 }
-.TargetRow >p, .TargetRowTitle >p, .Comment > p, .CommentText > p{
+.TargetRow >p, 
+.TargetRowTitle >p, 
+.Comment > p, 
+.CommentText > p{
   margin:0px 0px;
   padding:3px 3px;
 }
@@ -259,15 +266,15 @@ justify-self: center;
 .DisplayModePresentation{
 grid-template: "FR AR"  "COP COP";
 grid-template-columns: 50% 50%;
-grid-template-rows: 58% 40%;
+grid-template-rows: 65% 35%;
 background-color: black !important;
-margin-top: 5px;
 height: 98vh;
+border-radius: 20px ;
 }
 .DisplayModePresentation>p.COP{
   text-align: center;
   font-size: 5vh;
-  line-height: 4rem;
+  line-height: 3rem;
   margin-top: 10px;
 }
 .DisplayModePresentation>p.FR{
@@ -277,6 +284,8 @@ height: 98vh;
   border-right-color: white;
   border-right-style: solid;
   border-right-width: 3px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
   padding-right: 10px;
 
 }
@@ -284,7 +293,6 @@ height: 98vh;
   text-align: justify;
   font-size: 8vh;
   line-height: 3rem;
-  border-left: 10px white;
 }
 
 .DisplayModePresentation>p.FR,
@@ -292,6 +300,7 @@ height: 98vh;
 .DisplayModePresentation>p.COP{
   background-color: black;
   color:white;
+  border-radius: 20px;
 }
 
 .DisplayModePresentation.TargetRowTitle{
@@ -299,16 +308,18 @@ height: 98vh;
   font-size: 10pt !important;
   align-items: stretch;
   height: 2vh;
-  background-color: beige !important;
-  border-color: beige;
-  color:red !important;
-  margin-bottom: 0px;
+  border-style: hidden;
+  border-width: 0;
+  margin-bottom: 5px;
+  background-color: white !important;
 }
 .DisplayModePresentation.TargetRowTitle>p{
   font-size: 15pt !important;
   height: 10px;
-  line-height: 30px;
-  margin: 0px 0px;
+  line-height: 10px;
+  padding-top: 2px;
+  padding-bottom:2px;
+  align-self: center;
   padding: 0px;
   row-gap: 0px;
   color:red;

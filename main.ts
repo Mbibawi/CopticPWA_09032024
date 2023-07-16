@@ -100,10 +100,15 @@ function createHtmlElementForPrayer(
   htmlRow.classList.add("TargetRow"); //we add 'TargetRow' class to this div
   htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
-  if (actorClass && actorClass !== "Title") {
+  if (actorClass && actorClass !== "Title" && actorClass !== "SuperTitle") {
     // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TargetRowTitle" (see below)
     htmlRow.classList.add(actorClass);
-  } else if (actorClass && actorClass === "Title") {
+  } else if (
+    actorClass
+    && (
+      actorClass === "Title"
+      || actorClass === "SuperTitle")
+  ) {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(htmlRow);
@@ -115,10 +120,10 @@ function createHtmlElementForPrayer(
     if (!tblRow[x] || tblRow[x] === ' ') continue;//we escape the empty strings if the text is not available in all the button's languages
     if (
       actorClass &&
-      (actorClass == "Comment" || actorClass == "CommentText")
+      (actorClass === "Comment" || actorClass === "CommentText")
     ) {
       //this means it is a comment
-      x == 1 ? (lang = languagesArray[1]) : (lang = languagesArray[3]);
+      x === 1 ? (lang = languagesArray[1]) : (lang = languagesArray[3]);
     } else {
       lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
@@ -131,11 +136,11 @@ function createHtmlElementForPrayer(
         return;
       }
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if (actorClass === "Title") {
-        //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
+      if (actorClass === "Title" || actorClass === "SuperTitle") {
+        //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title' or '&C=SuperTitle' .
         htmlRow.classList.add("TargetRowTitle");
+        if (actorClass === "SuperTitle") htmlRow.classList.add(actorClass);
         htmlRow.id = tblRow[0];
-        htmlRow.tabIndex = 0; //in order to make the div focusable by using the focus() method
       } else if (actorClass) {
         //if the prayer is a comment like the comments in the Mass
         p.classList.add(actorClass);
@@ -257,7 +262,7 @@ function showChildButtonsOrPrayers(
 
   if (btn.onClick && click) {
     btn.onClick();
-    if (btn.pursue == false) return;
+    if (btn.pursue === false) return;
   }
   if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers) showPrayers(btn, true, true, container);
   
@@ -784,7 +789,6 @@ async function openSideBar(sideBar: HTMLElement) {
   sideBar.style.width = width;
   sideBar.classList.remove("collapsed");
   sideBar.classList.add("extended");
-  //sideBar == leftSideBar? contentDiv.style.marginLeft = width: contentDiv.style.marginRight = width ;
   sideBarBtn.innerText = btnText;
   sideBarBtn.removeEventListener("click", (ev) => {
     ev.preventDefault;
@@ -954,9 +958,9 @@ function buildSideBar(id: string) {
   sideBar.appendChild(a);
   btnsDiv.id = "sideBarBtns";
   sideBar.appendChild(btnsDiv);
-  if (id == "leftSideBar") {
+  if (id === "leftSideBar") {
     //leftSideBar = sideBar
-  } else if (id == "rightSideBar") {
+  } else if (id === "rightSideBar") {
     //rightSideBar = sideBar
   }
   return sideBar;
@@ -1028,7 +1032,8 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
       };
 
 
-    if (row.classList.contains("TargetRowTitle")) {
+      if (row.classList.contains("TargetRowTitle")
+        && localStorage.displayMode !== displayModes[1]) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
       let arabic = row.querySelector('p[lang="ar"]') as HTMLElement;
@@ -1110,7 +1115,7 @@ async function setButtonsPrayers() {
   return btnsPrayers;
 }
 /**
- * Toggles the dipslay property of all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TargetRowTitle'
+ * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TargetRowTitle'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
 function collapseText(element: HTMLElement) {
@@ -1313,7 +1318,7 @@ function findPrayerInBtnPrayersArray(p: string, btn: Button): string[][] | undef
     tblTitle = baseTitle(btn.prayersArray[i][0][0]);
     if (
       btn.prayersArray[i][0] && //we check that btn.prayersArray[i] is not an empty array (it might happen as an error when the text is generated by VBA. Although I believe it has been fixed in my VBA code, but just in ase)
-      baseTitle(btn.prayersArray[i][0][0]) == p //i.e., if the id of the table = the id of the prayer
+      baseTitle(btn.prayersArray[i][0][0]) === p //i.e., if the id of the table = the id of the prayer
     ) {
       return btn.prayersArray[i]; //we return the array representing the Word table (this array is a string[][], each of its elements is a string[] representing a row in the Word table)
     }
@@ -1539,7 +1544,7 @@ function showSettingsPanel() {
 
     inlineBtnsDiv.appendChild(actorsContainer);
     actors.map((actor) => {
-      if (actor == "CommentText") {
+      if (actor.EN === "CommentText") {
         return;
       } //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
       let show: boolean =
@@ -1549,10 +1554,10 @@ function showSettingsPanel() {
         "button",
         "button",
         "settingsBtn",
-        actor,
+        actor[foreingLanguage],
         actorsContainer,
-        actor,
-        actor,
+        actor.EN,
+        actor.EN,
         undefined,
         undefined,
         undefined,
@@ -1563,7 +1568,7 @@ function showSettingsPanel() {
             showActors.set(actor, show);
             btn.classList.toggle("langBtnAdd");
             //changing the background color of the button to red by adding 'langBtnAdd' as a class
-            if (actor == "Comment") {
+            if (actor.EN === "Comment") {
               showActors.set("CommentText", show);
             } //setting the value of 'CommentText' same as 'Comment'
             localStorage.showActors = JSON.stringify(Array.from(showActors)); //adding the new values to local storage
@@ -1575,7 +1580,7 @@ function showSettingsPanel() {
           },
         }
       );
-      if (show == false) {
+      if (show === false) {
         btn.classList.add("langBtnAdd");
       }
     });
@@ -1607,10 +1612,10 @@ function showSettingsPanel() {
             fun: () => {
               if (localStorage.displayMode !== mode) {
                 localStorage.displayMode = mode;
-                Array.from(displayContainer.children).map((b) => {
-                  b.id !== localStorage.displayMode
-                    ? b.classList.add("langBtnAdd")
-                    : b.classList.remove("langBtnAdd");
+                Array.from(displayContainer.children).map((btn) => {
+                  btn.id !== localStorage.displayMode
+                    ? btn.classList.add("langBtnAdd")
+                    : btn.classList.remove("langBtnAdd");
                 });
               }
             },
@@ -1753,39 +1758,18 @@ function showSettingsPanel() {
     container.style.display = "grid";
     container.style.gridTemplateColumns = String("33% ").repeat(3);
     inlineBtnsDiv.appendChild(container);
-    let actors = [
-      {
-        id: "PriestColor",
-        AR: "الكاهن",
-        FR: "Le Prêtre",
-        EN: "The Priest",
-      },
-      {
-        id: "AssemblyColor",
-        AR: "الشعب",
-        FR: "L'Assemblée",
-        EN: "The Assembly",
-      },
-      {
-        id: "DiaconColor",
-        AR: "الشماس",
-        FR: "Le Diacre",
-        EN: "The Diacon",
-      },
-    ];
-    actors.map((b) => {
+    actors.map((actor) => {
       let newBtn = createBtn(
         "button",
         undefined,
         "colorbtn",
         undefined,
         container,
-        b.id
+        actor.EN + 'Color'
       );
       for (let i = 1; i < 4; i++) {
         let p = document.createElement("p");
-        p.innerText = b[Object.keys(b)[i]];
-        //Object.keys(b)[i] 0K;
+        p.innerText = actor[Object.keys(actor)[i]];
         newBtn.appendChild(p);
       }
     });
@@ -1976,7 +1960,7 @@ function generateFixedReadingArray(readingArray): string[][][] {
   unique.forEach((title) => {
     table = [];
     readingArray.forEach((row) => {
-      if (baseTitle(row[0]) == title) {
+      if (baseTitle(row[0]) === title) {
         table.push(row);
       }
     });
@@ -2067,417 +2051,3 @@ function moveElementBeforeOrAfterXSiblings(element: HTMLElement,
 
 }
 
-
-
-
-
-
-let testEditingArray = [
-  [
-    [Prefix.commonIncense + "EleysonImasComment&D=0000&C=Comment",
-      " ",
-      "بعد صلاة التسبحة وتلاوة مزامير باكر وتحليل الكهنة، يصافح الكاهن اخوته الكهنة وطلب السماح من المصلين ويخضع أمام الهيكل، ويفتح ستر الهيكل من الشمال إلى اليمين قائلأ: "]],
-  [
-    [Prefix.commonIncense + "EleysonImas&D=0000&C=Title",
-      "Ⲉⲗⲉⲏⲥⲟⲛ ⲏ̀ⲙⲁⲥ ",
-      "Aie pitié de nous ",
-      "ارحمنا يا الله ",
-      "ارحمنا يا الله "],
-    [Prefix.commonIncense + "EleysonImas&D=0000&C=Priest",
-      "Ⲉⲗⲉⲏⲥⲟⲛ ⲏ̀ⲙⲁⲥ ⲟ̀ Ⲑⲉⲟⲥ ⲟ̀ Ⲡⲁⲧⲏⲣ ⲟ̀ Ⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: ⲡⲁⲛⲁ̀ⲅⲓⲁ ⲧ̀ⲣⲓⲁⲥ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ: Ⲡϭⲟⲓⲥ ⲫⲛⲟⲩϯ ⲛ̀ⲧⲉ ⲛⲓϫⲟⲙ ϣⲱⲡⲓ ⲛⲉⲙⲁⲛ: ϫⲉ ⲙ̀ⲙⲟⲛ ⲛ̀ⲧⲁⲛ ⲛ̀ⲟⲩⲃⲟⲏ̀ⲑⲟⲥ ϧⲉⲛ ⲛⲉⲛⲑ̀ⲗⲓⲯⲓⲥ ⲛⲉⲙ ⲛⲉⲛϩⲟϫϩⲉϫ ⲉ̀ⲃⲏⲗ ⲉ̀ⲣⲟⲕ. ",
-      "Aie pitié de nous ô Dieu le Père Pantocrator. Ô Seigneur Dieu des puissances, sois avec nous. Car nous n’avons d’autre secours que Toi dans nos difficultés et nos angoisses. ",
-      "إلياسون إيماس أو ثيؤس أو باتير أو بانتوكراتور: بانآجيا اترياس إليسون إيماس بيخرستوس بننوتي إنتي نيجوم شوبي نيمان جي إممون إنتان إنوفوإيثوس خين نينإثليفيس نيم نينهوج هيج إيفيل إروك. ",
-      "ارحمنا يا الله الآب ضابط الكل. أيها الثالوث القدوس ارحمنا. لأنه ليس  لنا معين في شدائدنا وضيقاتنا سواك. "],
-    [Prefix.commonIncense + "EleysonImas&D=0000&C=Priest",
-      "Ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϯⲁ ⲛ̀ϫⲟⲥ ⲯⲉⲛ ⲟⲩϯⲉⲡⳣ̀ⲙⲟⲧ, ",
-      "Rends nous dignes de dire en action de grâce: ",
-      " آريتين إن أم إبشا إنجوس خين أو شبئهموت. ",
-      "اجعلنا مستحقين أن نقول بشكر: "]],
-  [
-    [Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Title",
-      "Ϫⲉ Ⲡⲉⲛⲓⲱⲧ ",
-      "Notre Père qui es aux cieux ",
-      "جي بنيوت إتخين نيفيئوي ",
-      "أبانا الذى في السموات "],
-    [Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Assembly",
-      "Ϫⲉ Ⲡⲉⲛⲓⲱⲧ ⲉⲧ ⲯⲉⲛ ⲛⲓⲫϩⲟⲩⲓ̀, ⲙⲁⲣⲉϥⲧⲟⲩⲃⲟ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ,  ⲙⲁⲣⲉⲥⲓ̀ ⲛ̀ϫⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ, ⲡⲉⲧⲉⳣⲛⲁⲕ ⲙⲁⲣⲉϥϯⲱⲡⲓ ⲙ̀ⲫ̀ⲣϩ ̀ⲯⲉⲛ ⲧ̀ⲫⲉ ⲛⲉⲙ ⳣⲓϫⲉⲛ ⲡⲓⲕⲁⳣ, ",
-      "Notre Père qui es aux cieux, Que Ton Nom soit sanctifié. Que Ton règne vienne. Que Ta volonté soit faite sur la terre comme au ciel. ",
-      "جي بنيوت إتخين نيفيئوي ماريفطوفو أنجي بيكران. ماريسئي إنجي تيكميتؤرو. بيتهيناك ماريف شوبي إم إفريتي خين أتفي نيم هيجين بي كاهي.  ",
-      "أبانا الذى في السموات، ليتقدس اسمك، ليأت ملكوتك. لتكن مشيئتك كما فى السماء كذلك على الأرض.  "],
-    [Prefix.commonPrayer + "OurFatherWhoArtInHeaven&D=0000&C=Assembly",
-      "ⲡⲉⲛⲱⲓⲕ ⲛ̀ⲧⲉ ⲣⲁⲥ ̀ⲙϩⲓϥ ⲛⲁⲛ ⲙ̀ⲫⲟⲟⲩ,  ⲟⲩⲟⳣ ⲝⲁ ⲛϩⲉ̀ⲧⲉⲣⲟⲛ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ,  ⲙ̀ⲫ̀ⲣϩ ̀ⳣⲱⲛ ⲛ̀ⲧⲉⲛⲝⲱ ⲉ̀ⲃⲟⲗⲛ̀ⲛϩⲉ̀ⲧⲉ ⲟⲩⲟⲛ ⲛ̀ⲧⲁⲛ ⲉ̀ⲣⲱⲟⲩ,  ⲟⲩⲟⳣ ⲙ̀ⲡⲉⲣⲉⲛⲧⲉⲛ ⲉ̀ⲯⲟⲩⲛ ⲉ̀ⲡⲓⲣⲁⲥⲙⲟⲥ,  ⲁⲗⲗⲁ ⲛⲁⳣⲙⲉⲛ ⲉ̀ⲃⲟⲗⳣⲁ ⲡⲓⲡⲉⲧⳣⲱⲟⲩ, ⲯⲉⲛ Ⲡⲓⲝ̀ⲣⲓⲥⲧⲟⲥ Ⲓϩⲥⲟⲩⲥ Ⲡⲉⲛϣⲟⲓⲥ. ",
-      "Donne-nous aujourd’hui notre pain de ce jour; pardonne-nous nos offenses, comme nous pardonnons aussi à ceux qui nous ont offensés; ne nous soumets pas à la tentation, mais délivre-nous du mal, par le Christ Jésus, Notre Seigneur, car c’est à Toi qu’appartiennent le règne, la puissance et la gloire dans les siècles des siècles. Amen. ",
-      "بين أويك إنتي راستي ميف نان إمفوؤو أووه كانيئتيرون نان إيفول إم إفريتي هون إنتين كو إيفول إن نيئتي أوؤن إنتان إيرؤو. أووه إمبير إنتين إيخون إى بي راموس. أللا ناهمين إيفول هابي بيتهوؤو خين بي إخرستوس إيسوس بين شويس. ",
-      "خبزنا الذى للغد أعطنا اليوم واغفر لنا ذنوبنا كما نغفر نحن أيضا للمذنبين إلينا. ولا تدخلنا فى تجربة لكن نجنا من الشرير بالمسيح يسوع ربنا. "]],
-  [
-    [Prefix.commonPrayer + "InTheNameOfJesusOurLord&D=0000&C=Diacon",
-      "Ϧⲉⲛ Ⲡⲭ̅ⲥ̅ Ⲓⲏ̅ⲥ̅ ⲡⲉⲛϭⲟⲓⲥ. ",
-      "Par le Christ Jésus notre Seigneur. ",
-      "خين باخريستوس بينشويس ",
-      "بالمسيح يسوع ربنا. "]],
-  [
-    [Prefix.commonIncense + "ThanksGivingPart1Comment&D=0000&C=Comment",
-      " ",
-      "ثم يسجد أمام باب الهيكل قائلأ: "]],
-  [
-    [Prefix.commonPrayer + "BlockShlil&D=0000&C=Priest",
-      "Ϣ̀ⲗⲏⲗ ",
-      "Prions. ",
-      "شليل ",
-      "صلوا. "],
-    [Prefix.commonPrayer + "BlockShlil&D=0000&C=Diacon",
-      "Ⲉ̀ⲡⲓ ⲡ̀ⲣⲟⲥⲉⲩⲭⲏ ⲥ̀ⲧⲁⲑⲏⲧⲉ. ",
-      "Pour la prière levons-nous. ",
-      "إيبى إبروس إفشي إستاثيتى ",
-      "للصلاة قفوا "]],
-  [
-    [Prefix.commonPrayer + "BlockIriniPassi&D=0000&C=Priest",
-      "Ⲓⲣⲏⲛⲏ ⲡⲁⲥⲓ. ",
-      "La paix soit avec vous. ",
-      "إيريني باسي ",
-      "السلام لجميعكم.  "],
-    [Prefix.commonPrayer + "BlockIriniPassi&D=0000&C=Assembly",
-      "Ⲕⲉ ⲧⲟⲩ ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ ⲥⲟⲩ. ",
-      "Et avec vôtre esprit. ",
-      "كيطو ابنفماتي سو ",
-      "ولروحِكَ أيضاً. "]],
-  [
-    [Prefix.commonPrayer + "ThanksGivingPart1&D=0000&C=Title",
-      "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧϥ ",
-      "Action de grâce ",
-      "صلاة الشكر ",
-      "صلاة الشكر "],
-    [Prefix.commonPrayer + "ThanksGivingPart1&D=0000&C=Priest",
-      "Ⲙⲁⲣⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧϥ ⲙ̀ⲡⲓⲣⲉϥ- ⲉⲣⲡⲉⲑⲛⲁⲛⲉϥ ⲟⲩⲟϩ ⲛ̀ⲛⲁⲏⲧ: Ⲫⲛⲟⲩϯ Ⲫⲓⲱⲧ ⲙ̀Ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: Ϫⲉ ⲁϥⲉⲣⲥ̀ⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ: ⲁϥⲉⲣⲃⲟⲏ̀ⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲁϥⲁ̀ⲣⲉϩ ⲉ̀ⲣⲟⲛ: ",
-      "Rendons grâce  à Dieu le bienfaiteur et miséricordieux, Père de notre Seigneur, Dieu et Sauveur Jésus Christ, parce qu’Il nous a  protégés, aidés, préservés,  reçus avec bonté, traités avec miséricorde, fortifiés et fait parvenir jusqu’à cette heure. ",
-      "مارين شييهموت إنتوتك إنبي ريف إربي ثينانيف أووه إننايت افنوتي فيوت إمبينتشويس أووه بيننوتي أووه بينسوتير إيسوس بيخريستوس. جي آفير إسكيباذين إجون آف إرفو إثين إرون آف آريه إيرون آفشوبت إن إرون آفتياسو إيرون ",
-      "فلنشكر صانع الخيرات، الرحوم الله، أبا ربَنَا وإلهَنَا ومُخَلصُنَا يسوع المسيح. لأنه سترنا وأعاننا وحفظنا وقبلنا إليه وأشفقَ علينا وعضدنا وأتى بنا إلى هذه الساعة. "],
-    [Prefix.commonPrayer + "ThanksGivingPart1&D=0000&C=Priest",
-      "ⲁϥϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟϥ ⲁϥϯⲁ̀ⲥⲟ ⲉ̀ⲣⲟⲛ: ⲁϥϯⲧⲟⲧⲉⲛ ⲁϥⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ. Ⲛⲑⲟϥ ⲟⲛ ⲙⲁⲣⲉⲛϯϩⲟ ⲉ̀ⲣⲟϥ ϩⲟⲡⲱⲥ ⲛ̀ⲧⲉϥⲁ̀Ϯⲣⲉϩ ⲉ̀ⲣⲟⲛ: ϧⲉⲛ ⲡⲁⲓⲉ̀ϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ ⲛⲉⲙ ⲛⲓⲉ̀ϩⲟⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ: ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ: ⲛ̀ϫⲉ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ Ⲡϭⲟⲓⲥ Ⲡⲉⲛⲛⲟⲩϯ. ",
-      "Supplions-Le encore de nous garder en ce saint jour et tous les jours de notre vie en toute paix; Lui qui est Tout-Puissant, le Seigneur notre Dieu. ",
-      "آفتي توتين آف إنتين شا إي إهري إتآيونو ثاي ىثوف أون مارين تيهو إيروف هوبوس إنتيف آريه إيرون. خين باي إيهؤو إثؤواب خاي نيم ني إيهؤو تيروف إنتي بينؤنخ خين هيريني نيفين إنجي بي بانتوكراتور ابشويس بينوتي.  ",
-      "هو أيضاً فلنسألهُ أن يحفظنا في هذا اليوم المقدس وكل أيام حياتنا بكل سلام، ضابط الكل الربُ إلهُنا.  "]],
-  [
-    [Prefix.commonPrayer + "DiaconResponsePray&D=0000&C=Diacon",
-      "Ⲡⲣⲟⲥⲉⲩⲝⲁⲥⲑⲉ. ",
-      "Prions. ",
-      "بروس إيفكساسي ",
-      "صلوا. "]],
-  [
-    [Prefix.commonPrayer + "ThanksGivingPart2&D=0000&C=Priest",
-      "Ⲫⲛⲏⲃ Ⲡϭⲟⲓⲥ Ⲫⲛⲟⲩϯ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: Ⲫⲓⲱⲧ ⲙ̀Ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ",
-      "Ô Maître Seigneur, Dieu Tout-Puissant, Père de  notre Seigneur, Dieu et Sauveur Jésus-Christ, nous Te rendons grâce, de  toute circonstance, pour toute circonstance et en toute circonstance. ",
-      "فنيف بشويس بينوتي بيبانتوكراتور افيوت إمبينشويس أووه بيننوتي أووه بينسوتير إيسوس باخرستوس. تين شيبيهموت انتوتك ناتا هوف نيفين نيم إثفو هوف نيفين نيم خين هوف نيفين. ",
-      "أيها السيدُ الربُ الإله ضابط الكل أبو ربَنَا وإلهَنَا ومُخَلصُنا يسوع المسيح، نشكرك على كل حالٍ ومن أجل كل حالٍ وفى كل حالٍ. "],
-    [Prefix.commonPrayer + "ThanksGivingPart2&D=0000&C=Priest",
-      "ⲧⲉⲛϣⲉⲡϩ̀ⲙⲟⲧ ⲛ̀ⲧⲟⲧⲕ ⲕⲁⲧⲁ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲉⲑⲃⲉ ϩⲱⲃ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϧⲉⲛ ϩⲱⲃ ⲛⲓⲃⲉⲛ. Ϫⲉ ⲁⲕⲉⲣⲥ̀ⲕⲉⲡⲁⲍⲓⲛ ⲉ̀ϫⲱⲛ: ⲁⲕⲉⲣⲃⲟⲏ̀ⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲁⲕⲁ̀ⲣⲉϩ ⲉ̀ⲣⲟⲛ: ⲁⲕϣⲟⲡⲧⲉⲛ ⲉ̀ⲣⲟⲕ: ⲁⲕϯⲁ̀ⲥⲟ ⲉ̀ⲣⲟⲛ: ⲁⲕϯⲧⲟⲧⲉⲛ: ⲁⲕⲉⲛⲧⲉⲛ ϣⲁ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ⲧⲁⲓⲟⲩⲛⲟⲩ ⲑⲁⲓ. ",
-      "Parce que Tu nous as protégés, aidés, préservés,  reçus avec bonté, traités avec miséricorde, fortifiés et fait parvenir jusqu’à cette heure. ",
-      "جي آك إر إسكيباذين إيجون آك إرفو إثين إرون آك آر إيه إرون آكشوبتين إروك آك تي آسو إرون آك تي توتين آكينتين شا إي إيري إتايونو ثاي. ",
-      "لأنكَ سترتنا وأعنتنا وحفظتنا وقبلتنا إليكَ وأشفقتَ علينا وعضدتنا وأتيتَ بنا إلى هذه السـاعة. "]],
-  [
-    [Prefix.commonIncense + "PrayThatGodHaveMercyOnUs&D=0000&C=Diacon",
-      "Ⲧⲱⲃϩ ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲫϯ ⲛⲁⲓ ⲛⲁⲛ: ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ ⲛ̀ⲧⲉϥⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥϭⲓ ⲛ̀ⲛⲓϯϩⲟ ⲛⲉⲙ ⲛⲓⲧⲱⲃϩ ⲛ̀ⲧⲉ ⲛⲏⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁϥ ⲛ̀ⲧⲟⲧⲟⲩ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ ⲉ̀ⲡⲓⲁ̀ⲅⲁⲑⲟⲛ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ. ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ. ",
-      "Implorez pour que Dieu ait pitié de nous, qu’Il soit compatissant envers nous, nous écoute et nous aide, qu’Il agrée les demandes et les supplications que ses saints Lui adressent continuellement en notre faveur, et qu’Il nous pardonne nos péchés. ",
-      "طوفه هينا إنتي افنوتي ناي نان إنتيف شينهيت خارون إنتيف سوتيم إرون إنتيف إرفويثين إرون إنتيف اتشي إني تيهو نيم نيطوفه إنتيني إثؤواب إنتاف إنطوطو إي إهري إجون إبي آغاثون إنسيو نيفين إنتيفكا إننوفي نان إيفول. ",
-      "اطلبوا لكى يرحمنا الله ويتراءف علينا ويَسمعنا ويُعيننا ويقبل سؤالات وطلبات قديسيه منهم بالصلاح عنا في كل حين ويَغفر لنا خطايانا.  "]],
-  [
-    [Prefix.commonPrayer + "ThanksGivingPart3&D=0000&C=Priest",
-      "Ⲉⲑⲃⲉ ⲫⲁⲓ ⲧⲉⲛϯϩⲟ ⲟⲩⲟϩ ⲧⲉⲛⲧⲱⲃϩ ⲛ̀ⲧⲉⲕ ⲙⲉⲧⲁ̀ⲅⲁⲑⲟⲥ ⲡⲓⲙⲁⲓⲣⲱⲙⲓ: ⲙⲏⲓⲥ ⲛⲁⲛ ⲉⲑⲣⲉⲛϫⲱⲕ ⲉ̀ⲃⲟⲗ ⲙ̀ⲡⲁⲓ ⲕⲉ ⲉ̀ϩⲟⲟⲩ ⲉⲑⲟⲩⲁⲃ ⲫⲁⲓ: ⲛⲉⲙ ⲛⲓⲉ̀ϩⲟⲟⲩ ⲏⲣⲟⲩ ⲛ̀ⲧⲉ ⲡⲉⲛⲱⲛϧ: ϧⲉⲛ ϩⲓⲣⲏⲛⲏ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲧⲉⲕϩⲟϯ. Ⲫⲑⲟⲛⲟⲥ ⲛⲓⲃⲉⲛ: ⲡⲓⲣⲁⲥⲙⲟⲥ ⲛⲓⲃⲉⲛ: ⲉⲛⲉⲣⲅⲓⲁ̀ ⲛⲓⲃⲉⲛ ⲛ̀ⲧⲉ ⲡ̀ⲥⲁⲧⲁⲛⲁⲥ: ",
-      "Pour cela, nous implorons Ta bonté, ô Ami du genre humain, donne nous d’achever ce saint jour et tous les jours de notre vie en toute paix dans Ta crainte. Toute envie, toute tentation, toute œuvre de Satan. ",
-      "إثفي فاي تين تيهو أووه إنتيوفه إنتيك ميت أغاثوس، بي مايرومي ميس نان إثرينجوك إفول إمباي كي إيهو إثؤواب شاي، نيم نيهؤو إروف إنتي بينؤنخ، خين هيريني نيفين نيم تيكهوتي فثونوس نيفين، بيراسموس نيفين، إن إرجيا نيفين، إنتي إبساتاناس. ",
-      "من أجل هذا نسأل ونطلب من صلاحِكَ يا مُحب البشر امنحنا أن نكمل هذا اليَوم المقدس وكل أيام حياتنا بكل سلام مع خَوفِك. كل حسدٍ وكل تجربةٍ وكل فعل الشيطان: "],
-    [Prefix.commonPrayer + "ThanksGivingPart3&D=0000&C=Priest",
-      "ⲡ̀ⲥⲟϭⲛⲓ ⲛ̀ⲧⲉ ϩⲁⲛⲣⲱⲙⲓ ⲉⲩϩⲱⲟⲩ: ⲛⲉⲙ ⲡ̀ⲧⲱⲛϥ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ϩⲁⲛϫⲁϫⲓ ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙ ⲛⲏⲉⲑⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ. Ⲁⲗⲓⲧⲟⲩ ⲉ̀ⲃⲟⲗϩⲁⲣⲟⲛ. Ⲛⲉⲙ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲉⲕⲗⲁⲟⲥ ⲧⲏⲣϥ Ⲛⲉⲙ ⲉ̀ⲃⲟⲗϩⲁ ⲡⲁⲓ ⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁⲕ ⲫⲁⲓ. Ⲛⲉⲙ ⲉ̀ⲃⲟⲗϩⲁ ⲧⲁⲓⲉⲕⲕ̀ⲗⲏⲥⲓⲁ ⲫⲁⲓ. ",
-      "toute intrigue des hommes méchants, toute attaque des ennemis visibles et invisibles: éloigne-les de nous et de tout ton peuple et de ce lieu saint qui est à Toi et de cette église. ",
-      "إبسوتشي ني إنتي هانرومي هينرومي إفهؤو نيم إبتونف إن إبشوي هانجاجي نيتهويب نيم ني إثؤ أونه إيفول آليتوف إفول هارون نيم إفول ها بيكلاؤس تيرف نيم إيفول ها بايما إثؤواب إنتاك شاي نيم إفول ها تاي إي إكليسيا شاي. ",
-      "ومؤامرة الناس الأشرار وقيام الأعداء الخفيين والظاهرين، انزعها عنا، وعن سائر شعبك، و عن مَوضعِكَ المُقدس هذا (في بخور عشية) وعن هَذِه الكنيسة (في بخور باكر).  "],
-    [Prefix.commonPrayer + "ThanksGivingPart3&D=0000&C=Priest",
-      "Ⲛⲏ ⲇⲉ ⲉⲑⲛⲁⲛⲉⲩ ⲛⲉⲙ ⲛⲏⲉ̀ⲧⲉⲣⲛⲟϥⲣⲓ ⲥⲁϩⲛⲓ ⲙ̀ⲙⲱⲟⲩ ⲛⲁⲛ: ϫⲉ ⲛ̀ⲑⲟⲕ ⲡⲉ ⲉ̀ⲧⲁⲕϯ ⲙ̀ⲡⲓⲉⲣϣⲓϣⲓ ⲛⲁⲛ: ⲉ̀ϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲛⲓϩⲟϥ ⲛⲉⲙ ⲛⲓϭⲗⲏ: ⲛⲉⲙ ⲉ̀ϫⲉⲛ ϯϫⲟⲙ ⲧⲏⲣⲥ ⲛ̀ⲧⲉ ⲡⲓϫⲁϫⲓ. ",
-      "Comble-nous de tous les biens et de tous les dons convenables car c’est Toi qui nous as donné le pouvoir de fouler aux pieds les serpents, les scorpions et toute la puissance de l’ennemi. ",
-      "ني جي إثنانيف نيم ني إيترنوفري ساهني إممؤو نان. جي إنثوك بي إتاكتي إمبي إيرشيشي نان. إيهومي إجين نيهوف نيم نيتش لا إجون تي جوم تيرس إنتي بيجاجي. ",
-      "أما الصالحات والنافعات فارزقنا إياها لأنكَ أنتَ الذى أعطيتنا السلطان أن ندوس الحيات والعقارب وكل قوة العدو. "]],
-  [
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يكمل سراً: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "ولا تدخلنا في تجربة لكن نجنا من الشرير بالنعمة والرأفات ومحبة البشر اللواتي لابنك الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح. هذا الذي من قبله، المجد والكرامة والعز والسجود. تليق بك منع ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "وفي أثناء ذلك، يصعد الكاهن إلى الهيكل ويقدم له الشماس المجمرة فيضع خمس أياد بخور وهو يرشم درج البخور وفي كل مرة يجاوبه الشماس (آمين). ويرتل الشعب أرباع الناقوس. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "وفي رفع بخور عشية يقول الكاهن هذه الأوشية للإبن سراً: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "أيها المسيح إلهنا المخوف الحقيقي الابن الوحيد، وكلمة الآب، طيب مسكوب هو اسمك القدوس، في كل مكان يُقدم بخور لاسمك القدوس، وصعيدة طاهرة. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ويرد الشماس: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "صلوا من أجل ذبيحتنا والذين قدموها. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ويكمل الكاهن:ـ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "نسألك يا سيدنا اقبل إليك طلباتنا ولتستقم أمامك صلاتنا مثل بخور. رفع أيدينا ذبيحة مسائية. لأنك أنت هو ذبيحة المساء الحقيقية، الذي أصعدت ذاتك من أجل خطايانا على الصليب المكرم، كإرادة أبيك الصالح. هذا الذي أنت مبارك معه ومع الروح القدس المحي المساوي لك. الآن وكل أوان وإلى دهر الدهور آمين "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يبخر الكاهن حول المذبح ويطوف ثلاث دورات ويقول الأواشي الثلاث الصغار: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "أوشية السلامة:ـ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "ونسألك يا سيدنا، اذكر يا رب سلامة كنيستك الواحدة الوحيدة المقدسة الجامعة الرسولية. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "أوشية الأباء:ـ  "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "اذكر يا رب بطريركنا الآب المكرم رئيس الكهنة البابا أنبا (....) أوشية الاجتماعات:ـ اذكر يا رب اجتماعتنا باركها. إجعلها أن تكون لنا بغير مانع ولا عائق لنصنعها كمشيئتك المقدسة الطوباوية، بيوت صلاة بيوت طهارة، بيوت بركة، أنعم بها علينا يا رب وعلى عبيدك الآتين بعدنا إلى الأبد. قم أيها الرب الإله وليتفرق جميع أعدائك وليهرب من قدام وجهك كل مبغضي اسمك القدوس. وأما شعبك فليكن بالبركة ألوف ألوف وربوات ربوات يصنعون إرادتك. بالنعمة والرآفات ومحبة البشر اللواتي لابنك الوحيد الجنس ربنا وإلاهنا ومخلصنا يسوع المسيح. هذا الذي من قبله المجد والكرامة والعزة والسجود تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور آمين. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم ينزل أمام باب الهيكل ويعطي ثلاث أياد بخور شرقاً وفي كل مرة يخضع برأسه يقول في اليد الأولى:ـ  "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-    "نسجد لك أيها المسيح مع أبيك الصالح والروح القدس لأنك " + giaki.AR + " وخلصتنا؛ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "في اليد الثانية:ـ  "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "وأنا مثل كثرة رحمتك أدخل بيتك وأسجد نحو هيكلك المقدس؛ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "وفي اليد الثالثة: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "ـ أمام الملائكة أرتل لك وأسجد نحو هيكلك المقدس. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يبخر لجهة بحري لأجل السيدة العذراء قائلاً: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "نعطيكي السلام مع جبرائيل الملاك قائلين: السلام لك يا ممتلئة نعمة الرب معك. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يبخر إلى جهة الغرب ويقول: "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "السلام لمصاف الملائكة وسادتي الآباء الرسل وصفوف الشهداء وجميع القديسين. "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يبخر إلى جهة قبلي ويقول:ـ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "السلام ليوحنا بن زكريا، السلام للكاهن ابن الكاهن؛ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=Comment",
-      " ",
-      "ثم يبخر إلى جهة الشرق ويقول:ـ "],
-    [Prefix.commonIncense + "ThanksGivingPart3Comment&D=0000&C=CommentText",
-      " ",
-      "فلنسجد لمخلصنا محب البشر الصالح لأنه تراءف علينا، أتى وخلصنا. "]],
-  [
-    [Prefix.commonIncense + "CymbalVersesWates&D=0000&C=Title",
-      "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀Ⲫ̀ⲓⲱⲧ ",
-      "Cymbals Verses Adam ",
-      "أرباع الناقوس واطس ",
-      "أرباع الناقوس واطس "],
-    [Prefix.commonIncense + "CymbalVersesWates&D=0000&C=Diacon",
-      "Ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀Ⲫ̀ⲓⲱⲧ ⲛⲉⲙ Ⲡ̀ϣⲏⲣⲓ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲑⲟⲩⲁⲃ: ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ",
-      "Nous adorons le Père,♪ le Fils, et le Saint-Esprit♪, trinité Sainte, et consubstantielle. ",
-      "تين أوؤشت إم افيوت نيم ابشيري♪ نيم ني ابنيفما اثؤواب♪ تيترياس اثؤواب إن أوموسيوس. ",
-      "نسجد للآب والابن♪ والروح القدس♪ الثالوث، القدوس، المساوي في الجوهر. "],
-    [Prefix.commonIncense + "CymbalVersesWates&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ϯⲉⲕⲕ̀ⲗⲏⲥⲓⲁ: ⲡ̀ⲏⲓ ⲛ̀ⲧⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ: ⲭⲉⲣⲉ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ⲉ̀ⲧⲁⲥⲙⲉⲥ Ⲡⲉⲛⲥⲱⲧⲏⲣ. ",
-      "Salut à l’Église,♪ la maison des anges.♪ Salut à la vierge qui a enfanté notre Sauveur ",
-      "شيري تي إكليسيا♪ بي إنتي ني آنجيلوس♪ شيري تي بارثينوس إيتاسميس بينسوتير. ",
-      "السلام للكنيسة♪ بيت الملائكة♪ السلام، للعذراء، التي، ولدت، مخلصنا. "]],
-  [
-    [Prefix.commonIncense + "CymbalVersesAdam&D=0000&C=Title",
-      "Ⲁⲙⲱⲓⲛⲓ ⲙⲁⲣⲉⲛⲟ̀ⲩⲱϣⲧ ",
-      "Cymbals Verses Adam ",
-      "أرباع الناقوس آدام ",
-      "أرباع الناقوس آدام "],
-    [Prefix.commonIncense + "CymbalVersesAdam&D=0000&C=Diacon",
-      "Ⲁⲙⲱⲓⲛⲓ ⲙⲁⲣⲉⲛⲟ̀ⲩⲱϣⲧ: ⲛ̀Ϯⲧ̀ⲣⲓⲁⲥ ⲉⲑⲟⲩⲁⲃ: ⲉ̀ⲧⲉ ⲫ̀Ϯⲓⲱⲧ ⲛⲉⲙ ⲡ̀ϣⲏⲣⲓ: ⲛⲉⲙ ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ. ",
-      "Venez, prosternons-nous♪ Pour la Sainte Trinité♪ qui est le Père, Fils♪ et l’Esprit-Saint. ",
-      "آمويني مارين أؤوشت♪ إن تي اترياس اثؤواب♪ إتي فيوتي نيم ابشيري نيم بي ابنيفما اثؤواب. ",
-      "تعالوا فلنسجد♪ للثالوث القدوس♪ الذي هو الآب والابن♪ والروح القدس.  "],
-    [Prefix.commonIncense + "CymbalVersesAdam&D=0000&C=Diacon",
-      "Ⲁⲛⲟⲛ ϧⲁ ⲛⲓⲗⲁⲟⲥ: ⲛ̀ⲭ̀ⲣⲓⲥⲧⲓⲁⲛⲟⲥ: ⲫⲁⲓ ⲅⲁⲣ ⲡⲉ ⲡⲉⲛⲛⲟⲩϯ: ⲛ̀ⲁ̀ⲗⲏⲑⲓⲛⲟⲥ. ",
-      "Nous les peoples Chrétiens♪ car il est notre♪ Dieu En vérité. ",
-      "آنون خا ني لاؤس♪ إن اخرستيانوس♪ فاي غار بي بينوتي إن آليثينوس. ",
-      "نحن الشعوب♪ المسيحيين♪ لأن هذا هو إلهنا♪ الحقيقي. "],
-    [Prefix.commonIncense + "CymbalVersesAdam&D=0000&C=Diacon",
-      "Ⲟⲩⲟⲛ ⲟⲩϩⲉⲗⲡⲓⲥ ⲛ̀ⲧⲁⲛ: ϧⲉⲛ ⲑⲏⲉ̀ⲑⲟⲩⲁⲃ Ⲙⲁⲣⲓⲁ: ⲉ̀ⲣⲉ ⲫ̀ⲛⲟⲩϯ ⲛⲁⲓ ⲛⲁⲛ: ϩⲓⲧⲉⲛ ⲛⲉⲥⲡ̀ⲣⲉⲥⲃⲓⲁ. ",
-      "Nous espérons♪ en Sainte Marie♪ que Dieu aie pitié de nous par son intercession. ",
-      "أو أون أو هلبيس إنتان♪ خين ثي إثؤواب ماريا♪ إري فنوتي ناي نان هيتين ني ابريسفيا. ",
-      "لنا رجاء في♪ القديسة مريم♪ الله يرحمنا بشفاعاتها. "],
-    [Prefix.commonIncense + "CymbalVersesAdam&D=0000&C=Diacon",
-      "Ⲟⲩⲟⲛ ⲟⲩⲙⲉⲧⲥⲉⲙⲛⲟⲥ: ⲛ̀ϩ̀ⲣⲏⲓ ϧⲉⲛ ⲡⲓⲕⲟⲥⲙⲟⲥ: ⲉ̀ⲃⲟⲗϩⲓⲧⲉⲛ ⲡⲓϣ̀ⲗⲏⲗ: ⲛ̀ⲧⲉ ϯⲁⲅⲓⲁ Ⲙⲁⲣⲓⲁ̀ ϯⲡⲁⲣⲑⲉⲛⲟⲥ. ",
-      "Tout calme dans le monde♪ est dû à la prière♪ de la sainte vierge Marie. ",
-      "أو أون أوميت سيمنوس♪ إن إهري جين بي كوسموس♪ إفول هيتين بي إشلال إنتي تي آجيا ماريا تي بارثينوس. ",
-      "كل هدوء في♪ العالم من قبل♪ صلاة القديسة♪ مريم العذراء. "]],
-  [
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Title",
-      "Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ ",
-      "Suite Versés du Cymbal ",
-      "تابع أرباع الناقوس ",
-      "تابع أرباع الناقوس "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ: ϯϭ̀ⲣⲟⲙⲡⲓ ⲉⲑⲛⲉⲥⲱⲥ: ⲑⲏⲉ̀ⲧⲁⲥⲙⲓⲥⲓ ⲛⲁⲛ: ⲙ̀Ⲫ̀ⲛⲟⲩϯ ⲡⲓⲗⲟⲅⲟⲥ.  ",
-      "Salut à toi Marie♪ la belle colombe♪ Celle qui a enfanté pour nous Dieu le Verbe ",
-      "شيري ني ماريا♪ تي إتشرومبي إثنيسوس♪ ثي إيتاسميسي نان إم افنوتي بي لوغوس. ",
-      "السلام لك يا مريم♪ الحمامة الحسنة♪ التي، ولدت لنا، الله الكلمة.  "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ: ϧⲉⲛ ⲟⲩⲭⲉⲣⲉ ⲉϥⲟⲩⲁⲃ: ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ: ⲑ̀ⲙⲁⲩ ⲙ̀ⲫⲏⲉⲑⲟⲩⲁⲃ. ",
-      "Salut à toi Marie♪ un saint salut. Salut à toi Marie♪ La mère du Saint. ",
-      "شيري ني ماريا♪ خين أوشيري افؤواب♪ شيري ني ماريا اثماف إمفي اثؤواب. ",
-      "السلام لك يا مريم♪ سلام مقدس♪ السلام لك يا مريم، ام القدوس. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ: ⲡⲓⲛⲓϣϯ ⲛ̀ⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲭⲉⲣⲉ Ⲅⲁⲃⲣⲓⲏⲗ: ⲡⲓⲥⲟⲧⲡ ⲙ̀ⲡⲓϥⲁⲓϣⲉⲛⲛⲟⲩϥⲓ ",
-      "Salut à Michel♪ le grand archange♪ Salut à Gabriel, l’annonciateur élu. ",
-      "شيري ميخائيل♪ بينيشتي إن أرشي أنجيلوس♪ شيري غابرييل بيسوتب إمبي فاي شينوفي. ",
-      "السلام لميخائيل♪ رئيس الملائكة العظيم♪ السلام لغبريال، المبشر المختار. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ: ⲭⲉⲣⲉ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲭⲉⲣⲉ ⲛⲓⲧⲁⲅⲙⲁ ⲧⲏⲣⲟⲩ: ⲛ̀ⲉ̀ⲡⲟⲩⲣⲁⲛⲓⲟⲛ. ",
-      "Salut aux Chérubins♪ salut aux Séraphins♪ salut à tous les grades célestes. ",
-      "شيري شيروبيم♪ شيري ني سيرافيم♪ شيري ني طاغما تيرو إن إيبورانيون. ",
-      "السلام للشاروبيم♪ السلام للسيرافيم♪ السلام، لجميع، الطغمات، السمائية. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ Ⲓⲱⲁⲛⲛⲏⲥ: ⲡⲓⲛⲓϣϯ ⲙ̀ⲡ̀ⲣⲟⲇⲣⲟⲙⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲟⲩⲏⲃ: ⲡ̀ⲥⲩⲅⲅⲉⲛⲏⲥ ⲛ̀Ⲉⲙⲙⲁⲛⲟⲩⲏⲗ ",
-      "Salut à Jean♪ le grand précurseur♪ salut au prêtre, Parent d\'Emmanuel.  ",
-      "شيري يوآنس♪ بي نيشتي إبروذروموس♪ شيري بيؤويف إبسنجنيس إن إمانوئيل. ",
-      "السلام ليوحنا♪ السابق العظيم♪ السلام، للكاهن، نسيب، عمانوئيل.  "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁϭⲟⲓⲥ ⲛ̀ⲓⲟϯ: ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ: ⲭⲉⲣⲉ ⲛⲓⲙⲁⲑⲏⲧⲏⲥ: ⲛ̀ⲧⲉ Ⲡⲉⲛϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅. ",
-      "Salut à mes seigneurs♪ les pères apôtres♪ salut aux disciples de notre Seigneur Jésus-Christ. ",
-      "شيري ناتشويس إنيوتي♪ إن آبوسطولوس♪ شيري ني ماثيتيس♪ إنتي بينتشويس إيسوس بيخريستوس. ",
-      "السلام لساداتي♪ وآبائي الرسل♪ السلام، لتلاميذ، ربنا، يسوع المسيح. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁⲕ ⲱ̀ ⲡⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲉⲩⲁⲅⲅⲉⲗⲓⲥⲧⲏⲥ: ⲭⲉⲣⲉ ⲡⲓⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ: Ⲙⲁⲣⲕⲟⲥ ⲡⲓⲑⲉⲱ̀ⲣⲓⲙⲟⲥ. ",
-      "Salut à toi martyr♪ salut à l\'évangéliste♪ salut à l\'apôtre♪ Marc le contemplateur de Dieu. ",
-      "شيري ناك أوبي مارتيروس♪ شيري بي إف آنجيليستيس♪ شيري بي أبوسطولوس♪ مارقوس بيثيؤريموس. ",
-      "السلام لك أيها الشهيد، السلام♪ للإنجيلي♪ السلام، للرسول، مرقس ناظر الإله. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ Ⲥⲧⲉⲫⲁⲛⲟⲥ: ⲡⲓϣⲟⲣⲡ ⲙ̀ⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲁⲣⲭⲓⲇⲓⲁⲕⲱⲛ: ⲟⲩⲟϩ ⲧ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ. ",
-      "Salut à Etienne♪ Le premier martyrs♪ salut à l’archidiacre béni. ",
-      "شيري استيفانوس♪ بيشورب إممارتيروس♪ شيري بي أرشيذياكون♪ أووه إت إسماروؤت. ",
-      "السلام لاسطفانوس♪ أول الشهداء♪ السلام لرئيس الشمامسة المبارك. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁⲕ ⲱ̀ ⲡⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓϣⲱⲓϫ ⲛ̀ⲅⲉⲛⲛⲉⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲁⲑⲗⲟⲫⲟⲣⲟⲥ: ⲡⲁϭⲟⲓⲥ ⲡ̀ⲟⲩⲣⲟ Ⲅⲉⲱ̀ⲣⲅⲓⲟⲥ. ",
-      "Salut à toi ô martyr♪ salut au héros courageux♪ salut au persévérant♪ mon seigneur le roi Georges. ",
-      "شيري ناك أوبي مارتيروس♪ شيري بيشويج إن جينيؤوس♪ شيري بي آثلوفوروس؛ باشويس ابؤورو جاؤرجيوس. ",
-      "السلام لك أيها الشهيد، السلام♪ للشجاع البطل♪ السلام للابس الجهاد، سيدي الملك، جؤرجيوس.  "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁⲕ ⲱ̀ ⲡⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓϣⲱⲓϫ ⲛ̀ⲅⲉⲛⲛⲉⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲁⲑⲗⲟⲫⲟⲣⲟⲥ: Ⲑⲉⲟ̀ⲇⲱⲣⲟⲥ ⲡⲓⲥ̀ⲧⲣⲁⲧⲓⲗⲁⲧⲏⲥ. ",
-      "Salut à toi ô martyr♪ salut au héros courageux♪ salut au persévérant♪ Théodore le stratège. ",
-      "شيري ناك أوبي مارتيروس♪ شيري بيشويج إن جينيؤوس♪ شيري بي آثلوفوروس؛ ثيؤدوروس بي استراتيلاتيس. ",
-      "السلام لك أيها الشهيد، السلام♪ للشجاع البطل♪ السلام للابس الجهاد♪ ثيؤدوروس، الأسفهسلار. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁⲕ ⲱ̀ ⲡⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓϣⲱⲓϫ ⲛ̀ⲅⲉⲛⲛⲉⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲁⲑⲗⲟⲫⲟⲣⲟⲥ: ⲫⲓⲗⲟⲡⲁⲧⲏⲣ Ⲙⲉⲣⲕⲟⲩⲣⲓⲟⲥ. ",
-      "Salut à toi ô martyr♪ salut au héros courageux♪ salut au persévérant, Philopatir Mercorios. ",
-      "شيري ناك أوبي مارتيروس♪ شيري بيشويج إن جينيؤوس♪ شيري بي آثلوفوروس؛ فيلوباتير مارقوريوس. ",
-      "السلام لك أيها الشهيد، السلام♪ للشجاع البطل♪ السلام للابس الجهاد، فيلوباتير مرقوريوس. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ⲭⲉⲣⲉ ⲛⲁⲕ ⲱ̀ ⲡⲓⲙⲁⲣⲧⲩⲣⲟⲥ: ⲭⲉⲣⲉ ⲡⲓϣⲱⲓϫ ⲛ̀ⲅⲉⲛⲛⲉⲟⲥ: ⲭⲉⲣⲉ ⲡⲓⲁⲑⲗⲟⲫⲟⲣⲟⲥ: ⲡⲓⲁ̀ⲅⲓⲟⲥ ⲁⲃⲃⲁ Ⲙⲏⲛⲁ. ",
-      "Salut à toi ô martyr♪ salut au héros courageux♪ salut au persévérant♪ abba Mina. ",
-      "شيري ناك أوبي مارتيروس♪ شيري بيشويج إن جينيؤوس♪ شيري بي آثلوفوروس؛ بي آجيوس آبا مينا. ",
-      "السلام لك أيها الشهيد، السلام♪ للشجاع البطل♪ السلام للابس الجهاد، القديس آبا مينا. "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-      "Ϩⲓⲧⲉⲛ ⲛⲓⲡ̀ⲣⲉⲥⲃⲓⲁ: ⲛ̀ⲧⲉ ϯⲑⲉⲟ̀ⲧⲟⲕⲟⲥ ⲉⲑⲟⲩⲁⲃ Ⲙⲁⲣⲓⲁ: Ⲡ̀ϭⲟⲓⲥ ⲁ̀ⲣⲓϩ̀ⲙⲟⲧ ⲛⲁⲛ ⲙ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ. ",
-      "Par les intercessions de Sainte Marie♪ Mère de Dieu♪ Seigneur accorde nous la rémission de nos péchés. ",
-      "هيتن ني ابريسفيا♪ انتي تي ثيؤطوكوس اثؤواب ماريا♪ ابشويس آري إهموت نان امبي كو إيفول انتي ني نوفي. ",
-      "بشفاعات والدة الإله♪ القديسة مريم♪ يا رب أنعم لنا بمغفرة خطايانا.  "],
-    [Prefix.commonIncense + "CymablVersesCommon&D=0000&C=Diacon",
-    "Ⲉⲑⲣⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: ϫⲉ " + giaki.COP + " ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ ⲛⲁⲓ ⲛⲁⲛ.  ",
-    "Afin que nous Te louions  avec Ton Père très bon  et le Saint Esprit♪ car Tu " + giaki.FR + " et Tu nous as sauvés. ",
-    "اثرين هوس♪ إروك♪ نيم بيكيوت إن أغاثوس♪ نيم بي إبنيفما إثؤواب جي " + giaki.CA + " آكسوتي إممون ناي نان. ",
-    "لكى نسبحك مع، أبيك♪ الصالح والروح القدس♪ لأنك " + giaki.AR + " وخلصتنا أرحمنا. "]],
-  [
-    [Prefix.commonIncense + "Comment1&D=0000&C=Comment",
-      " ",
-      "وعند فراغ الشعب من الترتيل، يلتفت الكاهن إلى الشرق والشماس واقف خلفه ويقول الكاهن:ـ "]],
-  [
-    [Prefix.incenseVespers + "PriestLitaniesComment&D=0000&C=Comment",
-      " ",
-      "يبخر الكاهن حول المذبح ويطوف ثلاثة دورات ويقول الأواشي الصغار: أوشية السلامة، أوشية الآباء، أوشية الاجتماعات. ثم ينزل أمام باب الهيكل ويعطي ثلاثة أياد بخور شرقا قائلاً: [....]، ثم يبخر لجهة البحري (يساره) لأجل السيدة العذراء ويقول [...]، ثم يبخر إلى جهة الغرب (خلفه) ويقول [...]، ثم يبخر إلى جهة قبلي (يمينه) ويقول [...]. وعندما يفرغ الشعب من ترتيل أرباع الناقوس، يلتفت الكاهن إلى الشرق والشماس واقف خلفه ويقول الأواشي الكبار: المرضى، المسافرين في باكر، الراقدين (في عشية وفي باكر السبوت)، أو القرابين في الآحاد والأعياد والأيام التي ليس فيها صوم انقطاعي. "]],
-  [
-    [Prefix.incenseDawn + "SickPrayerPart1&D=0000&C=Title",
-      "Ⲡⲁⲗⲓⲛ ⲟⲛ ⲙⲁⲣⲉⲛϯϩⲟ ",
-      "Oraison des maladies ",
-      "أوشية المرضى ",
-      "أوشية المرضى "],
-    [Prefix.incenseDawn + "SickPrayerPart1&D=0000&C=Priest",
-      "Ⲡⲁⲗⲓⲛ ⲟⲛ ⲙⲁⲣⲉⲛϯϩⲟ ⲉ̀ Ⲫⲛⲟⲩϯ ⲡⲓⲡⲁⲛⲧⲟⲕⲣⲁⲧⲱⲣ: ⲫⲓⲱⲧ ⲙ̀Ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ.  Ⲧⲉⲛϯϩⲟ ⲟⲩⲟϩ ⲧⲉⲛⲧⲱⲃϩ  ⲛ̀ⲧⲉⲕⲙⲉⲧⲁ̀ⲅⲁⲑⲟⲥ ⲡⲓⲙⲁⲓⲣⲱⲙⲓ.  Ⲁⲣⲓϥ̀ⲙⲉⲩⲓ̀ Ⲡϭⲟⲓⲥ ⲛ̀ⲛⲏⲉⲧϣⲱⲛⲓ ⲛ̀ⲧⲉ ⲡⲉⲕⲗⲁⲟⲥ.  ",
-      "Implorons encore Dieu Tout-Puissant, Père de notre Seigneur, Dieu et Sauveur Jésus-Christ. Nous invoquons et nous supplions Ta bonté ô Ami du genre humain, Souviens-Toi Seigneur, des malades de Ton peuple. ",
-      "بالين اون مارين تيهو إى إفنوتى بى بانطوكراطور إفيوت إم بين شويس أووه بيننوتى أووه بين سوتير إيسوس بى إخرستوس، تين تيهو أووه تين طفه إنتيك ميت آغاثوس بى ماى رومى آرى إفميفئى إبشويس إن نيئتشونى إنتى بيك لاؤس. ",
-      "وأيضاً فلنسأل الله ضابط الكل أبا ربنا وإلهنا ومخلصنا يسوع المسيح نسأل ونطلب من صلاحِكَ يا مُحب البشر، اذكر يا ربُ مرضى شعبك. "],
-    [Prefix.incenseDawn + "SickPrayerPart1&D=0000&C=Diacon",
-      "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲉⲛⲓⲟϯ ⲛⲉⲙ ⲛⲉⲛⲥ̀ⲛⲏⲟⲩ ⲉⲧϣⲱⲛⲓ ϧⲉⲛ ϫⲓⲛϣⲱⲛⲓ ⲛⲓⲃⲉⲛ: ⲓ̀ⲧⲉ ϧⲉⲛ ⲡⲁⲓⲧⲟⲡⲟⲥ ⲓ̀ⲧⲉ ϧⲉⲛ ⲙⲁⲓ ⲛⲓⲃⲉⲛ ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲡⲉⲛⲛⲟⲩϯ ⲉⲣϩ̀ⲙⲟⲧ ⲛⲁⲛ ⲛⲉⲙⲱⲟⲩ ⲙ̀ⲡⲓⲟⲩϫⲁⲓ ⲛⲉⲙ ⲡⲓⲧⲁⲗϭⲟ: ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉⲃⲟⲗ. ",
-      "Implorez pour nos pères, et nos frères les malades de toute maladie, ici ou ailleurs pour que Le Christ notre Dieu leur accorde ainsi qu’à nous la santé et la guérison, et nous pardonne nos péchés. ",
-      "طفه إيجين نينوتى نيم نين إسنيو إتشونى خين جنشونى نيفين إيتى خين باى توبوس إيتى خين ماى نيفين هينا إنتى بى خرستوس بيننوتى إرإهموت نان نيمؤو إمبى أوجاى نيم بى طالتشو إنتيف كانين نوفى نان إيفول. ",
-      "اطلبوا عن آبائنا وإخوتنا المرضى بكل مرضٍ إن كان فى هذا المسكن أو بكل مَوضع لكى المسيح إلهُنا يُنعم علينا وعليهم بالعافية والشفاء ويغفر لنا خطايانا. "]],
-  [
-    [Prefix.commonPrayer + "KyrieElieson&D=0000&C=Assembly",
-      "Ⲕⲩⲣⲓⲉ̀ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ. ",
-      "Pitié Seigneur. ",
-      "كيرياليسون ",
-      "يا ربُ ارحم. "]],
-  [
-    [Prefix.incenseDawn + "SickPrayerPart2&D=0000&C=Priest",
-      "Ⲉⲁⲕϫⲉⲙⲡⲟⲩϣⲓⲛⲓ ϧⲉⲛ ϩⲁⲛⲛⲁⲓ ⲛⲉⲙ ϩⲁⲛⲙⲉⲧϣⲉⲛϩⲏⲧ ⲙⲁⲧⲁ-ⲗϭⲱⲟⲩ. Ⲁⲗⲓⲟⲩⲓ̀ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲱⲟⲩ ⲛⲉⲙ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲛ ⲛ̀ⲛⲓϣⲱⲛⲓ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲓⲁⲃⲓ ⲛⲓⲃⲉⲛ: ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲛ̀ⲧⲉ ⲛⲓϣⲱⲛⲓ ϭⲟϫⲓ ⲛ̀ⲥⲱϥ. Ⲛⲏⲉ̀ⲧⲁⲩⲱⲥⲕ ⲉⲩϣ̀ⲧⲏⲟⲩⲧ ϧⲉⲛ ⲛⲓⲓⲁⲃⲓ ⲙⲁⲧⲟⲩⲛⲟⲥⲟⲩ ⲟⲩⲟϩ ⲙⲁⲛⲟⲙϯ ⲛⲱⲟⲩ. Ⲛⲏⲉⲧⲧ̀ϩⲉⲙⲕⲏⲟⲩⲧ ⲛ̀ⲧⲟⲧⲟⲩ ⲛ̀ⲛⲓⲡ̀ⲛⲉⲩⲙⲁ ⲛ̀ⲁ̀ⲕⲁⲑⲁⲣⲧⲟⲛ ⲁ̀ⲣⲓⲧⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲣⲉⲙϩⲉ.  ",
-      "Comble-les de Ta miséricorde et de Ta compassion et guéris-les. Éloigne d’eux et de nous toute maladie et toute affliction. Chasse l’esprit du mal. Ceux qui demeurent longtemps frappés par la maladie, relève-les et console-les. Ceux que tourmentent les esprits impurs, délivre-les. ",
-      "إى أكجيم بوشينى خين هان. ناى نيم هان متشينهيت ماطالتشو أليئوى إيفول هارؤونيم إيفول هارون إنشونى نيفين نيم يافى نيفين بى إبنيفما إنتى نى شونى إتشوجى إنسوف نيئتاف أوسك إيفئشتيوت خين نى يافى ماطونوسو أووه ما نومتى نؤو نيئت إتهمكيوت إنطوطو إن نى إبنيفما إن أكاثارطون أريتو تيرو إنريمهى. ",
-      "تعهّدهم بالمراحم والرأفات. اشفهم. انزع عنهم وعنا كل مرضٍ وكل سقم وروح الأمراض اطرده. والذين أبطأوا مطروحين في الأمراض أقمهم وعزّهم والمُعذبون من الأرواح النجسة اعتقهم جميعاً.  "],
-    [Prefix.incenseDawn + "SickPrayerPart2&D=0000&C=Priest",
-      "Ⲛⲏⲉⲧ ϧⲉⲛ ⲛⲓϣ̀ⲧⲉⲕⲱⲟⲩ ⲓⲉ ⲛⲓⲙⲉⲧⲁ̀ⲗⲱⲥ: ⲓⲉ ⲛⲏⲉⲧⲭⲏ ϧⲉⲛ ⲛⲓⲉⲝⲟⲣⲓⲥⲧⲓⲁ̀: ⲓⲉ ⲛⲓⲉⲭⲙⲁⲗⲱⲥⲓⲁ̀: ⲓⲉ ⲛⲏⲉ̀ⲧⲟⲩⲁ̀ⲙⲟⲛⲓ ⲙ̀ⲙⲱⲟⲩ ϧⲉⲛ ⲟⲩⲙⲉⲧⲃⲱⲕ ⲉⲥⲉⲛϣⲁϣⲓ: Ⲡϭⲟⲓⲥ ⲁ̀ⲣⲓⲧⲟⲩ ⲧⲏⲣⲟⲩ ⲛ̀ⲣⲉⲙϩⲉ ⲟⲩⲟϩ ⲛⲁⲓ ⲛⲱⲟⲩ.  ",
-      "Les détenus dans les prisons et les cachots souterrains, les exilés, les bannis et ceux qui sont maintenus dans une amère servitude, délivre-les, Seigneur, et aie pitié d’eux. ",
-      "نيئت خين نى إشتيكؤو بى نى ميت آلوس يى نيئتكى خين نى أكسوريستيا يى نيخمالوسيا بى نيئيتو أمونى امؤو خين أو ميتفوك إيسى إنشاشى إبشويس أريتو تيرو إنريمهى أووه ناى نؤو. ",
-      "الذينَ في السجون أو المطابق أو الذين في النفي أو السبي أو المقبوض عليهم فى عبودية مرّة، يا رب اعتقهم جميعهم وارحمهم.  "],
-    [Prefix.incenseDawn + "SickPrayerPart2&D=0000&C=Priest",
-      "Ϫⲉ ⲛ̀ⲑⲟⲕ ⲡⲉⲧⲃⲱⲗ ⲛ̀ⲛⲏⲉⲧⲥⲱⲛϩ ⲉ̀ⲃⲟⲗ: ⲟⲩⲟϩ ⲉⲧⲧⲁϩⲟ ⲉ̀ⲣⲁⲧⲟⲩ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲣⲁϧⲧⲟⲩ ⲉ̀ϧ̀ⲣⲏⲓ. Ϯϩⲉⲗⲡⲓⲥ ⲛ̀ⲧⲉ ⲛⲏⲉ̀ⲧⲉ ⲙ̀ⲙⲟⲛⲧⲟⲩ ϩⲉⲗⲡⲓⲥ: ϯⲃⲟⲏ̀ⲑⲓⲁ̀ ⲛ̀ⲧⲉ ⲛⲏⲉ̀ⲧⲉ ⲙ̀ⲙⲟⲛⲧⲟⲩ ⲃⲟⲏ̀ⲑⲟⲥ.  Ⲑⲛⲟⲙϯ ⲛ̀ⲧⲉ ⲛⲏⲉⲧⲟⲓ ⲛ̀ⲕⲟⲩϫⲓ ⲛ̀ϩⲏⲧ: ⲡⲓⲗⲩⲙⲏⲛ ⲛ̀ⲧⲉ ⲛⲏⲉⲧⲭⲏ ϧⲉⲛ ⲡⲓⲭⲓⲙⲱⲛ.   ",
-      "Car c’est Toi qui délies ceux qui sont enchaînés, et relèves ceux qui sont tombés. Tu es l’espoir de ceux qui n’ont plus d’espérance, le secours de ceux qui n’ont plus d’assistance. Tu es la consolation de ceux qui ont le cœur serré, le port de ceux qui sont dans la tempête. ",
-      "جى إنثوك بيتفول إن نيؤتسونه إيفول أووه إتكاهو إيراتو إن نيئتافراختوى إى إخرى. تى هيلبيس إنتى نيئتى إممون تو هيلبيس تى فوئيثيا إنتى نيئتى إممون توفوئيثوس إثنومتى إنتى نيتؤوى إنكوجى إنهيت بى ليمين إنتينى إتكى خين بى شيمون. ",
-      "لأنكَ أنتَ الذى تحل المربوطين وتقيمُ الساقطين. رجاء من ليس له رجاء. ومُعين من ليس له مُعين. عزاء صغيري القلوب. ميناء الذين في العاصف. "],
-    [Prefix.incenseDawn + "SickPrayerPart2&D=0000&C=Priest",
-      "Ⲯⲩⲭⲏ ⲛⲓⲃⲉⲛ ⲉⲧϩⲉϫϩⲱϫ ⲟⲩⲟϩ ⲉⲧⲟⲩⲁ̀ⲙⲟⲛⲓ ⲉ̀ϫⲱⲟⲩ Ⲙⲟⲓ ⲛⲱⲟⲩ Ⲡⲟ̅ⲥ̅ ⲛ̀ⲟⲩⲛⲁⲓ: ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲟⲩⲙ̀ⲧⲟⲛ: ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲟⲩⲭ̀ⲃⲟⲃ:  ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲟⲩϩ̀ⲙⲟⲧ: ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲟⲩⲃⲟⲏ̀ⲑⲓⲁ̀: ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲥⲱⲧⲏⲣⲓⲁ̀: ⲙⲟⲓ ⲛⲱⲟⲩ ⲛ̀ⲟⲩⲙⲉⲧⲣⲉϥⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲟⲩⲛⲟⲃⲓ ⲛⲉⲙ ⲛⲟⲩⲁ̀ⲛⲟⲙⲓⲁ̀. ",
-      "Les âmes tourmentées et captives, Seigneur, aie pitié d’elles. Donne-leur le repos et la fraîcheur. Donne-leur la grâce. Secours-les, donne-leur le salut, accorde-leur le pardon de leurs péchés et de leurs iniquités. ",
-      "إبسيشى نيفين إتهيجهوج أووه إيطو أمونى إيجؤو موى نوؤو إبشويس إن أوناى، موى نوؤو إن أو إمطون موى نوؤوإن أو إكفوف موى نوؤ إن أوإهموت موى نوؤوإن أوسوتيريا موى نوؤو إن أومتريفكوإيفول إنتى نونوفى نيم نو آنوميا. ",
-      "كل الأنفس المتضايقة أو المقبوض عليها، أعطها يارب رحمة أعطها نياحا أعطها برودة أعطها نعمة أعطها معونة أعطها خلاصاً أعطها غفران خطاياها وآثامها. "],
-    [Prefix.incenseDawn + "SickPrayerPart2&D=0000&C=Priest",
-      "Ⲁⲛⲟⲛ ⲇⲉ ϩⲱⲛ Ⲡϭⲟⲓⲥ ⲛⲓϣⲱⲛⲓ ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ ⲙⲁⲧⲁⲗϭⲱⲟⲩ: ⲟⲩⲟϩ ⲛⲁ ⲛⲉⲛⲕⲉⲥⲱⲙⲁ ⲁ̀ⲣⲓⲫⲁϧⲣⲓ ⲉⲣⲱⲟⲩ. Ⲡⲓⲥⲏⲓⲛⲓ ⲙ̀ⲙⲏⲓ ⲛ̀ⲧⲉ ⲛⲉⲛⲯⲩⲭⲏ ⲛⲉⲙ ⲛⲉⲛⲥⲱⲙⲁ: ⲡⲓⲉ̀ⲡⲓⲥⲕⲟⲡⲟⲥ ⲛ̀ⲧⲉ ⲥⲁⲣⲝ ⲛⲓⲃⲉⲛ:  ϫⲉⲙⲡⲉⲛϣⲓⲛⲓ ϧⲉⲛ ⲡⲉⲕⲟⲩϫⲁⲓ  ",
-      "Quant à nous, Seigneur, guéris les maladies de nos âmes et soigne celles de nos corps, Ô Médecin véritable de nos âmes et de nos corps, Maître de toute chair, accorde-nous Ton Salut.  ",
-      "انون ذى هون إبشويس نى شونى إنتى نين إبسيشى ماطالتشو أووه نان إن كى سوما أريف إخرىإيروؤو بى سينى إممى إنتى نين إبسيشى نيم نين سوما بى إبيكوبوس إنتى ساركس نيفين، جيمبينشينى خين بيك اوجاى. ",
-      "ونحن أيضاً يا رب أمراض نفوسنا اشفها والتي لأجسادنا عافها. أيها الطبيب الحقيقي الذى لأنفسنا وأجسادنا يا مُدبر كل جسد تعهدنا بخلاصك.  "]],
-  [
-    [Prefix.commonPrayer + "ThanksGivingPart4&D=0000&C=Priest",
-      "Ϧⲉⲛ ⲡⲓϩ̀ⲙⲟⲧ ⲛⲉⲙ ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ ⲛⲉⲙ ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ: ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀Ϣⲏⲣⲓ: Ⲡⲉⲛⲟ̅ⲥ̅ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ: ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ. ",
-      " ",
-      " ",
-      "بالنعمة والرآفات ومحبة البشر اللواتي لابنك الوحيد الجنس، ربنا وإلهنا ومخلصنا يسوع المسيح.  "],
-    [Prefix.commonPrayer + "ThanksGivingPart4&D=0000&C=Priest",
-      "Ⲫⲁⲓ ⲉ̀ⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ ⲉ̀ⲣⲉ ⲡⲓⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ̀ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ⲛⲉⲙ ϯⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ: ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁⲕ ⲛⲉⲙⲁϥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲟⲩⲟϩ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲛⲉⲙⲁⲕ. ",
-      " ",
-      " ",
-      "هذا الذي من قبله المجد والكرامة والعزة والسجود. تليق بك معه ومع الروح القدس. المحيي المساوي لك. "],
-    [Prefix.commonPrayer + "ThanksGivingPart4&D=0000&C=Priest",
-      "Ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉ̀ⲛⲉϩ ⲧⲏⲣⲟⲩ: ⲁ̀ⲙⲏⲛ. ",
-      " ",
-      " ",
-      "الآن وكل أوان وإلى دهر الدهور. آمين. "]]];
-
-      function checkForDuplicates() {
-        PrayersArray.forEach(table => {
-            let filtered = PrayersArray.filter(t => baseTitle(t[0][0]) == baseTitle(table[0][0]))
-            if (filtered.length > 1) {
-                console.log('Found duplicated', filtered)
-            }
-        })
-        console.log('ended');
-    }
