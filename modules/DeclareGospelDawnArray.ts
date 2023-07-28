@@ -3452,6 +3452,44 @@ ReadingsArrays.GospelDawnArray = [[
   ], 
   [
   [
+  Prefix.gospelDawn+"Psalm&D=1307&C=Title", 
+  "مزمور باكر 37:39-40", 
+  "Psaume 37:39-40", 
+  "Psalms 37:39-40", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=1307", 
+  "خلاصُ الصدِّيقينَ مِنْ قِبل الربِّ، وهو ناصِرهُم في زمانِ الضيقِ. يُعينُهُم الربَّ ويُنَجيَّهُم، ويُخلِّصُهُم لأنهُم تَوكَّلوا عليهِ.", 
+  "39 Le salut des justes vient du Seigneur: Il est leur forteresse au temps du danger. 40 Le Seigneur les aide et les libère; Il les libère, car ils l'ont pris pour refuge.", 
+  "39 But the salvation of the righteous is from the Lord; He is their strength in the time of trouble. 40 And the Lord shall help them and deliver them. And save them, Because they trust in Him.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=1307&C=Title", 
+  "مرقس ( 13 : 9 – 13)", 
+  "Marc 13 : 9 - 13", 
+  "Mark 13:9-13", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=1307", 
+  "انظُروا إلى نفوسِكُم، لأنَّهُم سيسلِّمونكُم إلى مجالسَ وسيَضربونكُم في المحافِل وتُوقفُونَ أمامَ ولاةٍ وملوكٍ مِن أجْلي شهادةً لهُم ولجميع الأُمَم. ويَنبَغي أوَّلاً أنْ يُكرزَ بالإنجيلِ.", 
+  "9 Soyez sur vos gardes. On vous livrera aux tribunaux et aux synagogues, vous serez roués de coups, vous comparaîtrez devant des gouverneurs et des rois à cause de moi: ils auront là un témoignage. 10 Car il faut d'abord que l'Évangile soit proclamé à toutes les nations.", 
+  "9 But watch out for yourselves, for they will deliver you up to councils, and you will be beaten in the synagogues. You will be brought before rulers and kings for My sake, for a testimony to them. 10 And the gospel must first be preached to all the nations.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=1307", 
+  "فإذا قدَّموكُم ليُسلِّموكُم فلا تَهتمُّوا مِن قَبْلُ بِما تتكلَّمونَ به، لأنَّكُم تُعطونَ في تِلكَ السَّاعـةِ ما تتكلَّمـونَ به، لأنَّ لستُم أنتُم المُتكلِّمينَ بَل الرُّوحُ القُدسُ.", 
+  "11 Quand on vous conduira pour vous livrer, ne soyez pas inquiets à l'avance de ce que vous direz; mais ce qui vous sera donné à cette heure-là, dites-le; car ce n'est pas vous qui parlerez, mais l'Esprit Saint.", 
+  "11 But when they arrest you and deliver you up, do not worry beforehand, or premeditate what you will speak. But whatever is given you in that hour, speak that; for it is not you who speak, but the Holy Spirit.", 
+  ], 
+  [
+  Prefix.gospelDawn+"Psalm&D=1307", 
+  "وسيسلِّم الأخُ أخاهُ إلى الموتِ والأبُ يُسلِّم ابنهُ، ويقومُ الأولادُ على آبائِهم ويقتلونَهُم. وتَكونونَ مُبغَضِينَ مِن الجميع مِنْ أجْلِ اسمي، والَّذى يَصبرُ إلى المُنتهَى فهَذا يَخلُصُ.", 
+  "12 Le frère livrera son frère à la mort, et le père son enfant; les enfants se dresseront contre leurs parents et les feront condamner à mort.13 Vous serez haïs de tous à cause de mon nom. Mais celui qui tiendra jusqu'à la fin, celui-là sera sauvé.", 
+  "12 Now brother will betray brother to death, and a father his child; and children will rise up against parents and cause them to be put to death. 13 And you will be hated by all for My name's sake. But he who endures to the end shall be saved.", 
+  ], 
+  ], 
+  [
+  [
   Prefix.gospelDawn+"Psalm&D=2308&C=Title", 
   " مزمور باكر(34:19-20)", 
   "Psaumes 34:19-20", 
@@ -3533,7 +3571,7 @@ ReadingsArrays.GospelDawnArray = [[
   [
   [
   Prefix.gospelDawn+"Psalm&D=3008&C=Title", 
-  "مزمور باكر 105:1, 2-3 ", 
+  " مزمور باكر 105:1, 2-3 ", 
   "Psaume 105:1, 2-3", 
   "Psalms 105:1, 2-3", 
   ], 
@@ -3547,7 +3585,7 @@ ReadingsArrays.GospelDawnArray = [[
   [
   [
   Prefix.gospelDawn+"Gospel&D=3008&C=Title", 
-  "مرقس ( 10 : 17 – 30 )", 
+  " مرقس ( 10 : 17 – 30 )", 
   "Mark 10:17-30", 
   "Mark 10:17-30", 
   ], 

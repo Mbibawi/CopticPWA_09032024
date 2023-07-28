@@ -3096,6 +3096,44 @@ ReadingsArrays.PraxisArray = [[
   ], 
   [
   [
+  Prefix.praxis+"&D=1307&C=Title", 
+  "الإبركسيس فصل من أعمال آبائنا الرسل الأطهار 12:25-13:12", 
+  "Actes 12:25-13:12", 
+  "Acts 12:25-13:12", 
+  ], 
+  [
+  Prefix.praxis+"&D=1307", 
+  "ورجع برنابا وشاول من أورشليم بعدما كمَّلا الخدمة، وأخذا معهما يوحنَّا أيضاً المُلقَّب مرقس. وكان في كنيسة أنطاكية أنبياء ومعلِّمون: برنابا، وسمعان الذي يُدعَى نيجر، ولوقيوس القيروانيُّ، ومناين الذي تربَّى مع هيرودس رئيس الرُّبع، وشاول.", 
+  "25 Quant à Barnabas et Saul, ils repartirent, une fois assuré leur service en faveur de Jérusalem; ils emmenaient avec eux Jean, surnommé Marc.13:1 Il y avait à Antioche, dans l'Église du lieu, des prophètes et des hommes chargés de l'enseignement. Barnabas, Syméon, Manaen compagnon d'enfance d'Hérode le tétrarque, et Saul.", 
+  "25 And Barnabas and Saul returned from Jerusalem when they had fulfilled their ministry, and they also took with them John whose surname was Mark. 13:1 Now in the church that was at Antioch there were certain prophets and teachers: Barnabas, Simeon who was called Niger, Lucius of Cyrene, Manaen who had been brought up with Herod the tetrarch, and Saul.", 
+  ], 
+  [
+  Prefix.praxis+"&D=1307", 
+  "وبينما هم يخدمون الربَّ ويصومون، قال الرُّوح القدس: \"افرزوا لي برنابا وشاول للعمل الذي قد دعوتهما إليه\". حينئذٍ صاموا وصلُّوا ووضعوا عليهما الأيادي ثُمَّ أطلقوهما.", 
+  "2 Un jour qu'ils célébraient le culte du Seigneur et jeûnaient, l'Esprit Saint dit: \"Réservez-moi donc Barnabas et Saul pour l'oeuvre à laquelle je les destine. 3 Alors, après avoir jeûné et prié, et leur avoir imposé les mains, ils leur donnèrent congé.", 
+  "2 As they ministered to the Lord and fasted, the Holy Spirit said, Now separate to Me Barnabas and Saul for the work to which I have called them. 3 Then, having fasted and prayed, and laid hands on them, they sent them away.", 
+  ], 
+  [
+  Prefix.praxis+"&D=1307", 
+  "فهذان إذ أُرسِلا من الرُّوح القدس انحدرا إلى سلوكية، ومن هناك سافرا في البحر إلى قبرس. ولمَّا وصلا إلى سلامينا ناديا بكلمة الله في مجامع اليهود. وكانا معهما يوحنَّا خادماً.", 
+  "4 Se trouvant ainsi envoyés en mission par le Saint Esprit, Barnabas et Saul descendirent à Séleucie, d'où ils firent voile vers Chypre. 5 Arrivés à Salamine, ils annonçaient la parole de Dieu dans les synagogues des Juifs. Il y avait également Jean, leur auxiliaire.", 
+  "4 So, being sent out by the Holy Spirit, they went down to Seleucia, and from there they sailed to Cyprus. 5 And when they arrived in Salamis, they preached the word of God in the synagogues of the Jews. They also had John as their assistant.", 
+  ], 
+  [
+  Prefix.praxis+"&D=1307", 
+  "ولمَّا اجتازا الجزيرة كلها إلى بافوس، وجدا رجلاً سـاحراً نبيَّاً كـذَّاباً يهوديَّــاً اســمه باريشوع، هذا كان مع الوالي سرجيوس بولـس، وهو رجلٌ فهيمٌ. فهذا دعا برنابا وشاول والتمس أن يسمع كلمة الله. فقاوَمهما عليمٌ السَّاحر، لأن هكذا يُترجَم اسمه، طالباً أن يُفسِد الوالي عن الإيمان. وأمَّا شاول، الذي هو بولس أيضاً، فامتلأ من الرُّوح القدس وقال: \"أيُّها المُمتلئُ من كـلِّ غشٍّ وكـلِّ خبثٍ! يا ابن إبليـس! يا عـدوَّ كلِّ برٍّ! ألاَّ تـزال تُفسِد سُبل الربِّ المُستقيمة؟ فالآن هوذا يد الربِّ تأتي عليكَ، فتكون أعمى لا تُبصر الشَّمس إلى حينٍ\". ففي الحال وقع عليه ضبابٌ وظلمةٌ، وكان يَدورُ مُلتمِساً مَن يقوده بيده.", 
+  "6 Après avoir traversé toute l'île jusqu'à Paphos, ils rencontrèrent là un magicien, soi-disant prophète: c'était un Juif, du nom de Bar-Jésus, 7 qui appartenait à l'entourage du proconsul Sergius Paulus, un homme intelligent. Celui-ci invita Barnabas et Saul et manifesta le désir d'entendre la parole de Dieu. 8 Mais Elymas, le magicien - car c'est ainsi que se traduit son nom - s'opposait à eux et cherchait à détourner de la foi le proconsul. 9 Alors Saul, ou plutôt Paul, rempli d'Esprit Saint, fixa son regard sur lui10 et lui dit: \"Toi qui es pétri de ruse et de manigances, fils du diable, ennemi juré de la justice, ne vas-tu pas cesser de fausser la rectitude des voies du Seigneur? 11Voici, du reste, que la main du Seigneur est sur toi: tu vas être aveugle et, jusqu'à nouvel ordre, tu ne verras même plus le soleil. A l'instant même, l'obscurité et les ténèbres l'envahirent, et il tournait en rond à la recherche d'un guide.", 
+  "6 Now when they had gone through the island to Paphos, they found a certain sorcerer, a false prophet, a Jew whose name was Bar-Jesus, 7 who was with the proconsul, Sergius Paulus, an intelligent man. This man called for Barnabas and Saul and sought to hear the word of God. 8 But Elymas the sorcerer (for so his name is translated) withstood them, seeking to turn the proconsul away from the faith. 9 Then Saul, who also is called Paul, filled with the Holy Spirit, looked intently at him10 and said, O full of all deceit and all fraud, you son of the devil, you enemy of all righteousness, will you not cease perverting the straight ways of the Lord? 11 And now, indeed, the hand of the Lord is upon you, and you shall be blind, not seeing the sun for a time. And immediately a dark mist fell on him, and he went around seeking someone to lead him by the hand.", 
+  ], 
+  [
+  Prefix.praxis+"&D=1307", 
+  "فالوالي حينئذٍ لمَّا رأى، آمن وتعجب مِن تعليم الربِّ.", 
+  "12 Quand il eut vu ce qui se passait, le proconsul devint croyant; car la doctrine du Seigneur l'avait vivement impressionné.", 
+  "12 Then the proconsul believed, when he saw what had been done, being astonished at the teaching of the Lord.", 
+  ], 
+  ], 
+  [
+  [
   Prefix.praxis+"&D=2308&C=Title", 
   " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار( 16 : 16 ـ 34 )", 
   "Actes 16:16-34", 
@@ -3161,7 +3199,7 @@ ReadingsArrays.PraxisArray = [[
   [
   [
   Prefix.praxis+"&D=3008&C=Title", 
-  "الإبركسيس فصل من أعمال آبائنا الرسل الأطهار( 15 : 36 ـ 16 : 1 ـ 5 ) ", 
+  " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار( 15 : 36 ـ 16 : 1 ـ 5 ) ", 
   "Actes 15:36-16:5", 
   "Acts 15:36-16:5", 
   ], 

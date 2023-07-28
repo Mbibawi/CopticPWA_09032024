@@ -3018,6 +3018,32 @@ ReadingsArrays.KatholikonArray = [[
   ], 
   [
   [
+  Prefix.katholikon+"&D=1307&C=Title", 
+  "الكاثوليكون من رسالة بطرس الرسول الأولى (4 : 1 ـ 11)", 
+  "1 Pierre 4:1-11", 
+  "1 Peter 4:1-11", 
+  ], 
+  [
+  Prefix.katholikon+"&D=1307", 
+  "فإذ قد تألَّم المسيح بالجسد عنَّا، تسلَّحوا أنتُم أيضاً بهذا المثال. فإنَّ مَن تألَّم بالجسد، كُفَّ عن الخطيَّة، لكي لا يعيش أيضاً الزَّمان الباقي في الجسد، لشهوات النَّاس، بل لإرادة الله.", 
+  "1 Ainsi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché, pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.", 
+  "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.", 
+  ], 
+  [
+  Prefix.katholikon+"&D=1307", 
+  "لأنَّه يكفيكم الزَّمان الذي مَضى إذ كنتم تصنعون فيه إرادة الأُمَم، وتسلكون في النجاسات والشَّهوات، وإدمان المُسكرات المتنوعة، والخلاعة، والدنس، وعبادة الأوثان المرذولة، الأمر الذي فيه يستغربونَ أنَّكُم لستُم تركضون معهم إلى فيض عدم الصَّحة عينها، مُجدِّفينَ. الذين سوف يُعطون جواباً للذي هو على استعدادٍ أن يُدين الأحياء والأموات. فإنَّه لأجل هذا بُشِّرَ الموتى أيضاً، لكي يُدانوا حسب النَّاس بالجسد، ولكن ليَحيَوا حسب الله بالرُّوح.", 
+  "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes. 4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts. 6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit.", 
+  " 3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries. 4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead. 6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit.", 
+  ], 
+  [
+  Prefix.katholikon+"&D=1307", 
+  " وإنَّما نهاية كلِّ شيءٍ قد اقتربت، فتعقَّلوا إذاً واسهروا في الصَّلوات. ولكن قبل كلِّ شيءٍ، فلتكن المحبَّة دائمةً فيكُم بعضكُم لبعضٍ، لأنَّ المحبَّة تستُر كثرةً من الخطايا. كونوا مُحبِّين ضيافة الغُرباء بعضكم لبعضٍ بلا تذمُّر. وليخدم كلُّ واحدٍ الآخرين بما نال من المواهب بعضكم بعضاً، كوكلاء صالحين على نعمة الله المتنوِّعة. مَن يتكلَّم فكأقوال الله. ومَن يخدم فكأنَّه من قوَّةٍ يُهيئها الله، لكي يتمجَّد الله في كلِّ شيءٍ بيسوع المسيح، الذي له المجد والسُّلطان إلى أبدِ الآبدينَ. آمين.", 
+  "7 La fin de toutes choses est proche. Montrez donc de la sagesse et soyez sobres afin de pouvoir prier. 8 Ayez avant tout un amour constant les uns pour les autres, car l'amour couvre une multitude de péchés. 9 Pratiquez l'hospitalité les uns envers les autres, sans murmurer. 10 Mettez-vous, chacun selon le don qu'il a reçu, au service les uns des autres, comme de bons administrateurs de la grâce de Dieu, variée en ses effets. 11 Si quelqu'un parle, que ce soit pour transmettre les paroles de Dieu; si quelqu'un assure le service, que ce soit avec la force que Dieu accorde, afin que par Jésus Christ Dieu soit totalement glorifié, lui à qui appartiennent gloire et domination pour les siècles des siècles, Amen.", 
+  "7 But the end of all things is at hand; therefore be serious and watchful in your prayers. 8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God. 11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
+  ], 
+  ], 
+  [
+  [
   Prefix.katholikon+"&D=2308&C=Title", 
   " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 1 ـ 11 )", 
   "1 Pierre 4:1-11", 
@@ -3071,7 +3097,7 @@ ReadingsArrays.KatholikonArray = [[
   [
   [
   Prefix.katholikon+"&D=3008&C=Title", 
-  "الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 14 )", 
+  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 14 )", 
   "1 Pierre 5:1-14", 
   "1 Peter 5:1-14", 
   ], 

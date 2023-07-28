@@ -3420,6 +3420,52 @@ ReadingsArrays.GospelVespersArray = [[
   ], 
   [
   [
+  Prefix.gospelVespers+"Psalm&D=1307&C=Title", 
+  "مزمور عشية 34 : 19 - 20", 
+  "Psaume 34 : 19-20", 
+  "Psalms 34 : 19-20", 
+  ], 
+  [
+  Prefix.gospelVespers+"Psalm&D=1307", 
+  "كثيرةٌ هيَ أحزانُ الصدِّيقينَ، ومِنْ جميعها يُنجيهم الربُّ، يحفظُ الربُّ جميع عظامهم، وواحدةٌ منها لا تنكَسِر.", 
+  "19 Le juste a beaucoup de malheurs, Chaque fois, le Seigneur le délivre. 20 Il veille sur tous ses os, Pas un seul ne s'est brisé.", 
+  "19 Many are the afflictions of the righteous, But the Lord delivers him out of them all. 20 He guards all his bones; Not one of them is broken.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelVespers+"Gospel&D=1307&C=Title", 
+  "متى (16 : 24 - 28)", 
+  "Matthieu 16 : 24 - 28", 
+  "Matthew 16:24-28", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=1307", 
+  "حينئذٍ قال يسوع لتلاميذه: \"مَن يريد أن يتبعني فَليُنكِر نفسه ويحمل صليبه ويتبعني، لأنَّ مَن أراد أن يُخلِّص نفسه يُهلِكُها، ومن يُهلِكُ نفسه مِن أجلي يجدها.", 
+  "24 Alors Jésus dit à ses disciples: \"Si quelqu'un veut venir à ma suite, qu'il se renie lui-même et prenne sa croix, et qu'il me suive. 25 En effet, qui veut sauvegarder sa vie, la perdra; mais qui perd sa vie à cause de moi, l'assurera.", 
+  "24 Then Jesus said to His disciples, If anyone desires to come after Me, let him deny himself, and take up his cross, and follow Me. 25 For whoever desires to save his life will lose it, but whoever loses his life for My sake will find it. ", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=1307", 
+  "لأنَّه ماذا ينتفع الإنسانُ لو رَبِح العالم كلَّه وخسِرَ نفسه؟ أو ماذا يُعطي الإنسان فداءً عن نفسه؟", 
+  "26 Et quel avantage l'homme aura-t-il à gagner le monde entier, s'il le paie de sa vie? Ou bien que donnera l'homme qui ait la valeur de sa vie?", 
+  "26 For what profit is it to a man if he gains the whole world, and loses his own soul? Or what will a man give in exchange for his soul?", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=1307", 
+  "لأنَّ ابن الإنسان سـوف يأتي في مجد أبيه مع ملائكته، وحينئذٍ يُجازي كلّ واحدٍ حسب عمله.", 
+  "27 Car le Fils de l'homme va venir avec ses anges dans la gloire de son Père; et alors il rendra à chacun selon sa conduite.", 
+  "27 For the Son of Man will come in the glory of His Father with His angels, and then He will reward each according to his works.", 
+  ], 
+  [
+  Prefix.gospelVespers+"Gospel&D=1307", 
+  "الحقَّ أقول لكم إن من القيام ههنا قوم لا يذوقون الموت حتَّى يروا ابن الإنسان آتياً في مجد أبيه\".", 
+  "28 En vérité, je vous le déclare, parmi ceux qui sont ici, certains ne mourront pas avant de voir le Fils de l'homme venir comme roi. ", 
+  "28 Assuredly, I say to you, there are some standing here who shall not taste death till they see the Son of Man coming in His kingdom.", 
+  ], 
+  ], 
+  [
+  [
   Prefix.gospelVespers+"Psalm&D=2308&C=Title", 
   " مزمور عشية (34:17-18)", 
   "Psaume 34:17-18", 
@@ -3489,7 +3535,7 @@ ReadingsArrays.GospelVespersArray = [[
   [
   [
   Prefix.gospelVespers+"Psalm&D=3008&C=Title", 
-  "مزمور عشية 40 : 9 , 2", 
+  " مزمور عشية 40 : 9 , 2", 
   "Psaume 40:9, 2", 
   "Psalms 40:9, 2", 
   ], 
@@ -3503,7 +3549,7 @@ ReadingsArrays.GospelVespersArray = [[
   [
   [
   Prefix.gospelVespers+"Gospel&D=3008&C=Title", 
-  "مرقس ( 6 : 6 : 13 ", 
+  " مرقس ( 6 : 6 : 13 ", 
   "Marc 6:6-13", 
   "Mark 6:6-13", 
   ], 

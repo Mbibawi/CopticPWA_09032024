@@ -4486,6 +4486,64 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   [
+  Prefix.gospelMass+"Psalm&D=1307&C=Title", 
+  "مزمور 97:11-12", 
+  "Psaume 97:11-12", 
+  "Psalms 97:11-12", 
+  ], 
+  [
+  Prefix.gospelMass+"Psalm&D=1307", 
+  "نُورٌ أشرق للصدِّيقينَ. وفرحٌ للمُستقيمينَ بقلبهِم. افرحوا أيُّها الصِّدِّيقونَ بالربِّ. واعترفوا لذِكر قُدسِهِ.", 
+  "11 Pour le juste une lumière est semée; Et c'est une joie pour les coeurs droits. 12 Justes, réjouissez-vous à cause du Seigneur, célébrez-le en évoquant sa sainteté.", 
+  "11 Light is sown for the righteous, And gladness for the upright in heart. 12 Rejoice in the Lord, you righteous, And give thanks at the remembrance of His holy name.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.gospelMass+"Gospel&D=1307&C=Title", 
+  "لوقا 11:53-12:12", 
+  "Luc 11:53-12:12", 
+  "Luke 11:53-12:12", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "وفيمَا هو يقول هذا ابتدأَ الكتبةُ والفرِّيسيُّونَ يَنظرونَ رَدِياً، ويكلِّمونهُ في أمورٍ كثيرةٍ، ويَمكُرونَ لِيَصطادوهُ بكلمةٍ مِن فمهِ.", 
+  "53 Quand il fut sorti de là, les scribes et les Pharisiens se mirent à s'acharner contre lui et à lui arracher des réponses sur quantité de sujets,54 lui tendant des pièges pour s'emparer d'un de ses propos.", 
+  "53 And as He said these things to them, the scribes and the Pharisees began to assail Him vehemently, and to cross-examine Him about many things, 54 lying in wait for Him, and seeking to catch Him in something He might say, that they might accuse Him. ", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "وفى أثناءَ ذلِكَ إذ اجتمعَ رَبَواتٌ كثيرةٌ، حتَّى داسَ بعضُهُم بعضاً، ابتدأَ يسوعُ يقولُ لتلاميذِهِ: \"أولاً تَحرَّزوا لأنفسِكُم مِن خميرِ الفرِّيسيِّينَ الذي هو رياؤهُم، فليسَ شئٌ مكتومٌ إلاَّ وسيظهَرُ، ولا خفيٌ إلاَّ وسيُعلَمُ. والَّذى تقولونهُ في الظُّلمةِ سيُسمعُ في النُّورِ، وما قلتموهُ في الأذنِ في المَخادع يُنادَى به على السُّطوح. ولكنْ أقولُ لكُم يا أصدقائي: لا تخَافُوا مِنَ الَّذينَ يَقتلُونَ جَسَدَكُم، وبعد ذلِكَ ليسَ لهُم أنْ يَفعلوا شيئاً أكثرَ. بَـل أُعلِمكُم مِمَّنْ تخافُونَ: خَافُوا مِنَ الذي بعدما يَقتُلُ، لهُ سلطانٌ أنْ يُلِقِيَ في جَهنَّمَ. نَعَم أقولُ لكُم: مِنْ هَذا خَافُوا‍.", 
+  "12:1 Là-dessus, comme la foule était assemblée par milliers, au point qu'on s'écrasait, il commença par dire à ses disciples: \"Avant tout, gardez-vous du levain des Pharisiens, la fausseté. 2 Rien n'est voilé qui ne sera dévoilé, rien n'est secret qui ne sera connu. 3 Parce que tout ce que vous avez dit dans l'ombre sera entendu au grand jour; et ce que vous avez dit à l'oreille dans la cave sera proclamé sur les terrasses. 4 Je vous le dis à vous, mes amis: Ne craignez pas ceux qui tuent le corps et qui, après cela, ne peuvent rien faire de plus. 5 Je vais vous montrer qui vous devez craindre: craignez celui qui, après avoir tué, a le pouvoir de jeter dans la géhenne. Oui, je vous le déclare, c'est celui-là que vous devez craindre.", 
+  "12:1 In the meantime, when an innumerable multitude of people had gathered together, so that they trampled one another, He began to say to His disciples first of all, Beware of the leaven of the Pharisees, which is hypocrisy. 2 For there is nothing covered that will not be revealed, nor hidden that will not be known. 3 Therefore whatever you have spoken in the dark will be heard in the light, and what you have spoken in the ear in inner rooms will be proclaimed on the housetops. 4 And I say to you, My friends, do not be afraid of those who kill the body, and after that have no more that they can do. 5 But I will show you whom you should fear: Fear Him who, after He has killed, has power to cast into hell; yes, I say to you, fear Him! ", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "أَلَيسَتْ خَمسَةُ عصافيرَ تُباعُ بِفَلْسَيْنِ، وواحدٌ مِنها لا يُنسَى قُدَّام اللهِ؟ بَل شُعورُ رؤوسِكُم أيضاً جميعُها مُحصاةٌ. فلا تَخافُوا الآنَ. أنتُم أفضَلُ مِنْ عَصافيرَ كثيرةٍ.", 
+  "6 Est-ce que l'on ne vend pas cinq moineaux pour deux sous? Pourtant pas un d'entre eux n'est oublié de Dieu. 7 Bien plus, même vos cheveux sont tous comptés. Soyez sans crainte, vous valez mieux que tous les moineaux.", 
+  "6 Are not five sparrows sold for two copper coins? And not one of them is forgotten before God. 7 But the very hairs of your head are all numbered. Do not fear therefore; you are of more value than many sparrows.", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "وأقولُ لكُم: إنَّ كُلَّ مَنْ يَعترفُ بي قُدَّامَ النَّاسِ، يَعترفُ بهِ ابنُ الإنسانِ أيضاً قُدَّامَ مَلائِكةِ اللهِ. ومَنْ أَنكَرَني قُدَّامَ النَّاسِ، يُنكَرُ قُدَّامَ مَلائِكةِ اللهِ.", 
+  "8 Je vous le dis: quiconque se déclarera pour moi devant les hommes, le Fils de l'homme aussi se déclarera pour lui devant les anges de Dieu; 9 mais celui qui m'aura renié par devant les hommes sera renié par devant les anges de Dieu.", 
+  "8 Also I say to you, whoever confesses Me before men, him the Son of Man also will confess before the angels of God. 9 But he who denies Me before men will be denied before the angels of God. ", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "وكُلُّ مَنْ يقول كلمةً على ابنِ الإنسانِ يُغفَرُ لهُ، وأمَّا مَنْ يُجدِّف على الرُّوح القُدسِ فلن يُغفَرُ لهُ.", 
+  "10 Et quiconque dira une parole contre le Fils de l'homme, cela lui sera pardonné; mais qui aura blasphémé contre le Saint Esprit, cela ne lui sera pas pardonné.", 
+  "10 And anyone who speaks a word against the Son of Man, it will be forgiven him; but to him who blasphemes against the Holy Spirit, it will not be forgiven.", 
+  ], 
+  [
+  Prefix.gospelMass+"Gospel&D=1307", 
+  "ومَتَى قدَّمُوكُم إلى المجامِع والرُّؤساءِ والسَّلاطِينِ فلا تَهتمُّوا كيفَ أو بِمَا تُجِيبونَ أو بِمَا تَقولونَ، لأنَّ الرُّوحَ القُدُسَ يُعلِّمُكُم في تِلكَ السَّاعةِ مَا يَجِبُ أنْ تَقولوهُ.", 
+  "11 Lorsqu'on vous amènera devant les synagogues, les chefs et les autorités, ne vous inquiétez pas de savoir comment vous défendre et que dire. 12 Car le Saint Esprit vous enseignera à l'heure même ce qu'il faut dire. ", 
+  "11 Now when they bring you to the synagogues and magistrates and authorities, do not worry about how or what you should answer, or what you should say. 12 For the Holy Spirit will teach you in that very hour what you ought to say.", 
+  ], 
+  ], 
+  [
+  [
   Prefix.gospelMass+"Psalm&D=2308&C=Title", 
   " مزمور (97:11-12 )", 
   "Psaume 97:11-12", 
@@ -4579,7 +4637,7 @@ ReadingsArrays.GospelMassArray = [[
   [
   [
   Prefix.gospelMass+"Psalm&D=3008&C=Title", 
-  "مزمور 96:1-2", 
+  " مزمور 96:1-2", 
   "Psaume 96:1-2", 
   "Psalms 96:1-2", 
   ], 
@@ -4593,7 +4651,7 @@ ReadingsArrays.GospelMassArray = [[
   [
   [
   Prefix.gospelMass+"Gospel&D=3008&C=Title", 
-  "مرقس ( 1 : 1 ـ 11 ) ", 
+  " مرقس ( 1 : 1 ـ 11 ) ", 
   "Marc 1 : 1 - 11", 
   "Mark 1:1-11", 
   ], 
