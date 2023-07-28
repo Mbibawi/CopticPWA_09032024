@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.9.5 (added the readings of 1703)';
+const version: string = 'v4.9.6 (fixed Allelujah Ji Ev Mev\'i for Wednesdays and Fridays if Season === NoSeason)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
