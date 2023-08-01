@@ -209,24 +209,24 @@ async function showTitlesInRightSideBar(
     bookmark.href = "#" + titles.id; //we add a link to the element having as id, the id of the prayer
     div.classList.add("sideTitle");
     div.addEventListener("click", () => closeSideBar(rightSideBar)); //when the user clicks on the div, the rightSideBar is closed
-    if (titles.querySelector(".AR")) {
+    if (titles.querySelector('.' + defaultLanguage)) {
       //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
       text += titles
-        .querySelector(".AR")
+        .querySelector('.' + defaultLanguage)
         //@ts-ignore
-        .innerText.split('\n')[0].replace(String.fromCharCode(10134), ""); //we remove the '-' sign from the text of the Arabic paragraph;
+        .innerText.split('\n')[0].replace(String.fromCharCode(10134), ''); //we remove the '-' sign from the text of the Arabic paragraph;
     }
-    if (titles.querySelector(".FR")) {
-      if (text !== "") {
-        text += "\n" + titles.querySelector(".FR")
+    if (titles.querySelector('.' + foreingLanguage)) {
+      if (text !== '') {
+        text += "\n" + titles.querySelector('.' + foreingLanguage)
           //@ts-ignore
           .innerText.split('\n')[0];
       } else {
-        text += titles.querySelector(".FR")
+        text += titles.querySelector('.' + foreingLanguage)
           //@ts-ignore
           .innerText.split('\n')[0];
       }
-    }
+    };
     bookmark.innerText = text;
     return div
   }
@@ -316,8 +316,28 @@ function showChildButtonsOrPrayers(
   if (btn.parentBtn && btn.btnID === btnGoBack.btnID) {
     //showChildButtonsOrPrayers(btn.parentBtn);
   }
-  if(btn.docFragment) containerDiv.appendChild(btn.docFragment) 
+  
+  addDataGroupsToContainerChildren(container);
+
+  if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 }
+
+/**
+ * Adds the data-group attribute to all all the divs children of the html element passed to it as an argument
+ * @param {htmle}  container - the html element container for which we will  add the data-group attribute to each of its div children  
+ */
+function addDataGroupsToContainerChildren(container:HTMLElement | DocumentFragment, titleClass:string = 'TitleRow'){
+  if (!container.children) return;
+
+  Array.from(container.children)
+  .forEach((child: HTMLElement) => {
+    if (!child.classList.contains(titleClass)) {
+      let prevSibling = child.previousSibling as HTMLElement; 
+      if(prevSibling) child.dataset.group = prevSibling.dataset.group;
+    } else {
+      child.dataset.group = child.dataset.root;
+}
+})}
 
 
 /**
@@ -1016,48 +1036,40 @@ async function showPrayers(
  * Sets the number of columns and their widths for the provided list of html elements which style display property = 'grid'
  * @param {NodeListOf<Element>} Rows - The html elements for which we will set the css. These are usually the div children of containerDiv
  */
-async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
+async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
   if (!Rows) return;
 
   Rows.forEach(
     (row: HTMLElement) => {
       //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
-    if(localStorage.displayMode === displayModes[0]){
+      if (localStorage.displayMode === displayModes[0]) {
         row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
-      row.style.gridTemplateAreas = setGridAreas(row);
+        row.style.gridTemplateAreas = setGridAreas(row);
       };
     
       if (localStorage.displayMode === displayModes[1]) {
-      //
+        return;
       };
 
-
-      if ((row.classList.contains('TitleRow')
-        || row.classList.contains('SubTitle'))
-        && localStorage.displayMode !== displayModes[1]) {
-      //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
-      row.role = "button";
-      let arabic = row.querySelector('p[lang="ar"]') as HTMLElement;
-      if (
-        arabic &&
-        !arabic.textContent.startsWith(String.fromCharCode(10134))
-      ) {
-        arabic.innerText=
-          String.fromCharCode(10134) +
-          " " +
-          arabic.innerText; //we add the minus sign at the begining of the paragraph containing the Arabic text of the title (we retrieve it by its lang value)
-      } else if (
-        //If there is no arabic paragraph, we will add the sign to the last child
-        !row.lastElementChild.textContent.startsWith(String.fromCharCode(10134))
-      ) {
-        let lastChild = row.lastElementChild as HTMLElement;
-        lastChild.innerText =
-          String.fromCharCode(10134) + " " +lastChild.innerText;
-      }
-    }
-  });
-  Rows.forEach(row=>replaceEigthNote(undefined, Array.from(row.querySelectorAll('p'))));
+      if (row.classList.contains('TitleRow')
+        || row.classList.contains('SubTitle')) {
+        //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
+        row.role = "button";
+        let defLangParag = row.querySelector('p[lang="' + defaultLanguage.toLowerCase() + '"]') as HTMLElement;
+        if (!defLangParag) defLangParag = row.lastElementChild as HTMLElement;
+        if (!defLangParag) return console.log('no paragraph with lang= ' + defaultLanguage);
+        if (!row.dataset.isCollapsed) row.dataset.isCollapsed = 'false'; //If row doesn't have data-is-collapsed attribute, we add it and set it to 'false' which means that the title is not collapsed
+        if (defLangParag.textContent.includes(String.fromCharCode(plusCharCode) + ' ')) defLangParag.textContent = defLangParag.textContent.replace(String.fromCharCode(plusCharCode) + ' ', '');//We remove the + sign in the begining (if it exists)
+        if (defLangParag.textContent.includes(String.fromCharCode(plusCharCode + 1) + ' ')) defLangParag.textContent = defLangParag.textContent.replace(String.fromCharCode(plusCharCode + 1) + ' ', ''); //We remove the minus (-) sign from the begining of the paragraph
+        if (row.dataset.isCollapsed === 'true') defLangParag.innerText =
+          String.fromCharCode(plusCharCode) + " " + defLangParag.innerText; //We add the plus (+) sign at the begining
+        if (row.dataset.isCollapsed === 'false') defLangParag.innerText =
+          String.fromCharCode(plusCharCode + 1) + " " + defLangParag.innerText;//We add the minus (-) sig at the begining
+        };
+        Rows.forEach(row => replaceEigthNote(undefined, Array.from(row.querySelectorAll('p'))));
+    });
+};
 
   /**
    * Returns a string indicating the number of columns and their widths
@@ -1083,7 +1095,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
       areas.push(child.lang.toUpperCase());
     }
     if (
-      areas.indexOf("AR") === 0 &&
+      areas.indexOf(defaultLanguage) === 0 &&
       !row.classList.contains("Comment") &&
       !row.classList.contains("CommentText")
     ) {
@@ -1091,8 +1103,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element>|HTMLElement[]) {
       areas.reverse();
     }
     return '"' + areas.toString().split(",").join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
-  }
-}
+};
 
 async function applyAmplifiedText(container: NodeListOf<Element>) {
   if (localStorage.displayMode === displayModes[1]) return;
@@ -1120,42 +1131,61 @@ async function setButtonsPrayers() {
  * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TitleRow'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
-function collapseText(element: HTMLElement) {
-  let siblings: HTMLElement[] = [],
-    next: Element,
-    titleClass = 'TitleRow';
-    if (element.classList.contains('SubTitle')) titleClass = 'SubTitle';
-    next = element.nextElementSibling;
-  while (next
-    && !next.classList.contains(titleClass)) {
-    siblings.push(next as HTMLElement);
-    next = next.nextElementSibling as HTMLElement;
-  }
-  for (let i = 0; i < siblings.length; i++) {
-    siblings[i].classList.toggle("collapsedTitle");
-  }
-  let parag: HTMLElement;
-  parag = Array.from(element.children).filter(
-    (child) =>
-      child.textContent.startsWith(String.fromCharCode(10133)) ||
-      child.textContent.startsWith(String.fromCharCode(10134))
-  )[0] as HTMLElement;
+function collapseText(titleRow: HTMLElement) {
+  containerDiv.querySelectorAll('div[data-group="' + titleRow.dataset.group + '"]')
+    .forEach((div: HTMLDivElement) => {
+      if(div !== titleRow) div.classList.toggle('collapsedTitle')
+    });
+  togglePlusAndMinusSignsForTitles(titleRow);
+};
 
-  if (parag && parag.textContent.startsWith(String.fromCharCode(10133))) {
+/**
+ * Toggels the minus and plus signs in the Title 
+ * @param {HTMLElement} titleRow - the html element (usually a div with class 'TitleRow') that we wqnt to toggle the minus or plus signs according to whether the text is collapsed or not
+ * @returns 
+ */
+async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:number = plusCharCode) {
+  if (!titleRow.children) return;
+  let parag: HTMLElement;
+  parag = Array.from(titleRow.children)
+    .filter(child=>
+            child.textContent.startsWith(String.fromCharCode(plusCode))
+      || child.textContent.startsWith(String.fromCharCode(plusCode+1))
+  )[0] as HTMLElement;
+  if (!parag) return;
+  if (parag.textContent.includes(String.fromCharCode(plusCode))) {
+    titleRow.dataset.isCollapsed = 'false';
     parag.innerText = parag.innerText.replace(
-      String.fromCharCode(10133),
-      String.fromCharCode(10134)
+      String.fromCharCode(plusCode),
+      String.fromCharCode(plusCode+1)
     );
-  } else if (
-    parag &&
-    parag.textContent.startsWith(String.fromCharCode(10134))
+  } else if (parag.textContent.includes(String.fromCharCode(plusCode+1))
   ) {
+    titleRow.dataset.isCollapsed = 'true';
     parag.innerText = parag.innerText.replace(
-      String.fromCharCode(10134),
-      String.fromCharCode(10133)
+      String.fromCharCode(plusCode+1),
+      String.fromCharCode(plusCode)
     );
+   }
+ }
+
+/**
+ * Collapses all the tiltes (i.e. all the divs with class 'TitleRow' or 'SubTitle') in the html element passed as argument
+ * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'TitleRow' or 'SubTitle'
+ */
+ function collapseAllTitles(container:HTMLElement | DocumentFragment){
+  container.querySelectorAll('div')
+    .forEach(row => {
+      if (!row.classList.contains('TitleRow')
+        && !row.classList.contains('SubTitle')){
+        row.classList.add('collapsedTitle');
+      } else {
+        row.dataset.isCollapsed = 'true';
+        togglePlusAndMinusSignsForTitles(row);
+      }
+    });
   }
-}
+
 /**
  *
  * @param {string[][][]} selectedPrayers - An array containing the optional prayers for which we want to display html button elements in order for the user to choose which one to show
@@ -1168,7 +1198,7 @@ async function showInlineButtonsForOptionalPrayers(
   selectedPrayers: string[][][],
   btn: Button,
   masterBtnDiv: HTMLElement,
-  btnLabels: { AR: string; FR: string },
+  btnLabels: { defaultLanguage: string, foreignLanguage: string },
   masterBtnID: string
 ) {
   let prayersMasterBtn: Button, next: Button;
@@ -1209,7 +1239,7 @@ async function showInlineButtonsForOptionalPrayers(
             //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
             next = new Button({
               btnID: "btnNext",
-              label: { AR: "التالي", FR: "Suivants" },
+              label: { defaultLanguage: "التالي", foreignLanguage: "Suivants" },
               cssClass: inlineBtnClass,
               onClick: () => {
                 //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
@@ -1226,7 +1256,7 @@ async function showInlineButtonsForOptionalPrayers(
     } else {
       next = new Button({
         btnID: "btnNext",
-        label: { AR: "العودة إلى القداس", FR: "Retour à la messe" },
+        label: { defaultLanguage: "العودة إلى القداس", foreignLanguage: "Retour à la messe" },
         cssClass: inlineBtnClass,
         onClick: () => {
           //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
@@ -1262,8 +1292,8 @@ async function showInlineButtonsForOptionalPrayers(
       let inlineBtn: Button = new Button({
         btnID: baseTitle(prayerTable[0][0]), //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
-          AR: prayerTable[0][btn.languages.indexOf("AR") + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
-          FR: prayerTable[0][btn.languages.indexOf("FR") + 1], //same logic and comment as above
+          defaultLanguage: prayerTable[0][btn.languages.indexOf(defaultLanguage) + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
+          foreignLanguage: prayerTable[0][btn.languages.indexOf(foreingLanguage) + 1], //same logic and comment as above
         },
         prayersSequence: [baseTitle(prayerTable[0][0])], //this gives the title of the table without '&C=*'
         prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable

@@ -1,8 +1,8 @@
 //TYPES
 type typeBtnLabel = {
-    AR: string,
-    FR: string,
-    EN?: string
+    defaultLanguage: string,
+    foreignLanguage: string,
+    otherLanguage?: string
 }
 type typeButton = {
     btnID: string, //the id is used to exclude a button from being displayed in certain scenarios: like the Go Back button in some cases
@@ -64,7 +64,7 @@ const Prefix = {
     cymbalVerses: "CV_", //Stands for Cymbal Verses
     bookOfHours: "BOH_", //Stands for Book Of Prayers
 };
-
+const plusCharCode: number = 10133;
 const btnClass = 'sideBarBtn';
 const inlineBtnClass = 'inlineBtn';
 const ReadingsIntrosAndEnds = {
@@ -220,9 +220,10 @@ const saintsFeasts = {
     StMikaelMetropolis: '',//St Mikhael the Metropolis of Assiut
     StJustAnton:'' //St Just of the St. Anton
 };
-const foreingLanguage:string = 'FR'
-const allLanguages: string[] = ['AR', foreingLanguage, 'COP', 'CA', 'CF', 'EN'];//AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
-const userLanguages: string[] = ['AR', foreingLanguage, 'COP'];
+const foreingLanguage: string = 'FR'; //'FR' stands for 'French'
+const defaultLanguage: string = 'AR'; //'AR' stands for Arabic
+const allLanguages: string[] = [defaultLanguage, foreingLanguage, 'COP', 'CA', 'CF', 'EN'];//AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
+const userLanguages: string[] = [defaultLanguage, foreingLanguage, 'COP'];
 //if (localStorage.userLanguages) { console.log('there is user Lanugages', localStorage.userLanguages) };
 //if (localStorage.showActors) { console.log('there is showActors', localStorage.showActors) };
 if (localStorage.userLanguages === undefined) { localStorage.userLanguages = JSON.stringify(userLanguages) }; //We check that there isn't already a setting stored in the localStorage
