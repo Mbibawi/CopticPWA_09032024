@@ -48,6 +48,7 @@
 
 .Content {
   display: grid;
+  opacity: 1;
   justify-self: center;
   width:100%;
   justify-items: stretch;
@@ -56,9 +57,11 @@
   overflow-x: hidden;
 }
 body{
+  background-image: url(./assets/PageBackgroundCoss.png);
+  background-size:20%;
+  background-repeat: repeat;
   display: grid;
   width: 100%;
-  background-color: ivory;
   overflow-x: hidden;
   margin: 0px 0px;
 }
@@ -79,7 +82,8 @@ body{
   font-size: 20pt;
   font-weight: 500;
   direction: rtl !important;
-  font-family: ArabicMajalla;
+  font-family: GentiumBookPlus;
+ 
   line-height: 40px;
 }
 .FR,
