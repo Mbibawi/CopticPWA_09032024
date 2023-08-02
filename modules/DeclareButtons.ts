@@ -588,7 +588,7 @@ const btnMassStCyril: Button = new Button({
     )})();
     scrollToTop(); //scrolling to the top of the page
         //Collapsing all the Titles
-        collapseAllTitles(btnMassStCyril.docFragment);
+        //collapseAllTitles(btnMassStCyril.docFragment);
   },
 });
 
@@ -669,7 +669,7 @@ const btnMassStGregory: Button = new Button({
       )})();
 
     scrollToTop(); //scrolling to the top of the page
-    collapseAllTitles(btnMassStGregory.docFragment);
+    //collapseAllTitles(btnMassStGregory.docFragment);
   },
 });
 
@@ -737,7 +737,7 @@ const btnMassStBasil: Button = new Button({
       )
     })();
         //Collapsing all the Titles
-        collapseAllTitles(btnMassStBasil.docFragment);
+        //collapseAllTitles(btnMassStBasil.docFragment);
 
   },
 });
@@ -798,7 +798,7 @@ const btnMassStJohn: Button = new Button({
             'RedirectionToAgios'
           )})();
               //Collapsing all the Titles
-    collapseAllTitles(btnMassStJohn.docFragment);
+      //collapseAllTitles(btnMassStJohn.docFragment);
   },
 });
 
@@ -1024,32 +1024,32 @@ const btnMassUnBaptised: Button = new Button({
         label: btnBookOfHours.label,
         showPrayers: true,
         onClick: async () => {
-          let bookOfHoursDiv = containerDiv.querySelector('#bookOfHours') as HTMLElement;
-          if (bookOfHoursDiv.children.length > 0) {
-            //it means the Book of Hours have been inserted before when the user clicked the button, we remove them and return
-            if (bookOfHoursDiv.style.display === 'grid') {
-              bookOfHoursDiv.style.display = 'none';
-              rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]')
-                .forEach(
-                  (title: HTMLDivElement) => {
-                    title.style.display = 'none'
-                  });
-            } else {
-              bookOfHoursDiv.style.display = 'grid';
-            rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]').forEach((title: HTMLDivElement) => { title.style.display = 'block' })
-            };
-          return
-          }
+            let bookOfHoursDiv = containerDiv.querySelector('#bookOfHours') as HTMLElement;
+            if (bookOfHoursDiv.children.length > 0) {
+              //it means the Book of Hours have been inserted before when the user clicked the button, we remove them and return
+              if (bookOfHoursDiv.style.display === 'grid') {
+                bookOfHoursDiv.style.display = 'none';
+                rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]')
+                  .forEach(
+                    (title: HTMLDivElement) => {
+                      title.style.display = 'none'
+                    });
+              } else {
+                bookOfHoursDiv.style.display = 'grid';
+                rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]').forEach((title: HTMLDivElement) => { title.style.display = 'block' })
+              };
+              return
+          };
         
-          let hours = btnBookOfHours.onClick(true); //notice that we pass true as parameter to btnBookOfHours.onClick() in order to make the function return only the hours of the mass not all the hours of the bookOfPrayersArray
-          if (hours.length === 0) return console.log('hours = 0');
+            let hours = btnBookOfHours.onClick(true); //notice that we pass true as parameter to btnBookOfHours.onClick() in order to make the function return only the hours of the mass not all the hours of the bookOfPrayersArray
+            if (hours.length === 0) return console.log('hours = 0');
             //We will insert the text as divs after the div where the button is displayed
             //We remove the thanks giving and the Psalm 50
             hours
-              .filter((title:string) => title.includes('ThanksGiving') || title.includes('Psalm50'))
-              .map(title => hours.splice(hours.indexOf(title), 1)); 
+              .filter((title: string) => title.includes('ThanksGiving') || title.includes('Psalm50'))
+              .map(title => hours.splice(hours.indexOf(title), 1));
             
-          let bookOfHours: string[][][] = [];
+            let bookOfHours: string[][][] = [];
           
             hours.map(
               (title: string) => {
@@ -1057,8 +1057,8 @@ const btnMassUnBaptised: Button = new Button({
               }
             );
 
-          bookOfHours
-            .forEach((table: string[][]) =>
+            bookOfHours
+              .forEach((table: string[][]) =>
                 table
                   .forEach((row: string[]) =>
                     createHtmlElementForPrayer(
@@ -1066,25 +1066,31 @@ const btnMassUnBaptised: Button = new Button({
                       btnBookOfHours.languages,
                       undefined,
                       div)
-                )
-            );
+                  )
+              );
           
             setCSSGridTemplate(Array.from(div.children) as HTMLElement[]);
+          
+          addDataGroupsToContainerChildren(div, 'SubTitle'); //This must come before collapsing the Subtitles (see below)
+          
+          div
+            .querySelectorAll('div.SubTitle')
+            .forEach((subTitle: HTMLElement) => collapseText(subTitle, div));
             
             //We will append the titles of the Book of Hours to the right side Bar, with a display 'none'
             let titles = await showTitlesInRightSideBar(div.querySelectorAll('div.TitleRow, div.SubTitle'), undefined, false);
-            titles.reverse().forEach(
-              (title: HTMLDivElement) => {
-                title.dataset.group = 'bookOfHoursTitle';
-
-                title.style.display = 'block';
-
-                rightSideBar.querySelector('#sideBarBtns').children[0].insertAdjacentElement('beforebegin', title);
-              });
-          addDataGroupsToContainerChildren(bookOfHoursDiv, 'SubTitle');
-          bookOfHoursDiv.querySelectorAll('div.SubTitle')
-            .forEach((titleRow: HTMLDivElement) => collapseText(titleRow));
-        }
+            titles
+              .reverse()
+              .forEach(
+                (title: HTMLDivElement) => {
+                  title.dataset.group = 'bookOfHoursTitle';
+                  title.style.display = 'block';
+                  rightSideBar
+                    .querySelector('#sideBarBtns')
+                    .children[0]
+                    .insertAdjacentElement('beforebegin', title);
+                });
+        },
       });
       createBtn(bookOfHoursBtn, containerDiv, inlineBtnClass, false, bookOfHoursBtn.onClick);
     })();

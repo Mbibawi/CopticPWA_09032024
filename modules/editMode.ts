@@ -3,7 +3,8 @@ let sequence: string[] = [];
  * This is the function that displayes the elements of the array that we want to edit
  * @param tblsArray 
  */
-async function editingMode(tblsArray: string[][][], languages:string[]) {
+async function editingMode(tblsArray: string[][][], languages: string[]) {
+  localStorage.displayMode === displayModes[0];
   //@ts-ignore
   if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
   let el: HTMLElement;

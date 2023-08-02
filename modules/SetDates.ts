@@ -16,12 +16,13 @@ async function setCopticDates(today?: Date) {
 	copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
 	copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
-		if (copticFasts.indexOf(Season)>-1 || (Season != Seasons.PentecostalDays && weekDay === (3 || 5))) {
+		if (copticFasts.indexOf(Season) > -1 || (Season != Seasons.PentecostalDays && weekDay === (3 || 5))) {
 			//i.e. if we are in a fasting day 
 			return true
-		}else{return false};
-	})()
-	showDates();
+		} else { return false };
+	})();
+	//Showing the dates and the version
+	document.getElementById('homeImg').insertAdjacentElement('beforebegin', showDates());
 };
 /**
  * Converts the Gregorian date to a string expressing the coptic date (e.g.: "0207")
@@ -298,17 +299,11 @@ function isItSundayOrWeekDay(
 /**
  * Shows the dates (Gregorian, coptic, coptic readings etc.), in an html element in the Temporary Dev Area
  */
-function showDates() {
-	let newDiv:HTMLDivElement
-	if (document.getElementById('dateDiv')) {
-		newDiv = document.getElementById('dateDiv') as HTMLDivElement
-	} else {
-		newDiv = document.createElement('div');
-		newDiv.id = 'dateDiv';
-	}
-
+function showDates(newDiv?:HTMLDivElement):HTMLDivElement {
+	if (!newDiv) newDiv = document.getElementById('dateDiv') as HTMLDivElement;
+	if(!newDiv) newDiv = document.createElement('div');	
+	newDiv.id = 'dateDiv';
 	newDiv.style.fontSize = '8pt';
-	document.getElementById('homeImg').insertAdjacentElement('beforebegin', newDiv);
 	newDiv.innerText =
 		"Today: " +
 		todayDate.toString() +
@@ -321,6 +316,7 @@ function showDates() {
 		'. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
 		" . Season = " + Season +
 		" . Version = " + version;
+	return newDiv
 };
 
 /**

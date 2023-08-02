@@ -214,7 +214,7 @@ async function showTitlesInRightSideBar(
       text += titles
         .querySelector('.' + defaultLanguage)
         //@ts-ignore
-        .innerText.split('\n')[0].replace(String.fromCharCode(10134), ''); //we remove the '-' sign from the text of the Arabic paragraph;
+        .innerText.split('\n')[0];
     }
     if (titles.querySelector('.' + foreingLanguage)) {
       if (text !== '') {
@@ -227,6 +227,10 @@ async function showTitlesInRightSideBar(
           .innerText.split('\n')[0];
       }
     };
+    //we remove the plus(+) or minus(-) signs from the begining text of the Arabic paragraph;
+    text = text
+      .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
+      .replaceAll(String.fromCharCode(plusCharCode + 1) + ' ', '');
     bookmark.innerText = text;
     return div
   }
@@ -326,7 +330,7 @@ function showChildButtonsOrPrayers(
  * Adds the data-group attribute to all all the divs children of the html element passed to it as an argument
  * @param {htmle}  container - the html element container for which we will  add the data-group attribute to each of its div children  
  */
-function addDataGroupsToContainerChildren(container:HTMLElement | DocumentFragment, titleClass:string = 'TitleRow'){
+async function addDataGroupsToContainerChildren(container:HTMLElement | DocumentFragment, titleClass:string = 'TitleRow'){
   if (!container.children) return;
 
   Array.from(container.children)
@@ -1131,8 +1135,8 @@ async function setButtonsPrayers() {
  * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TitleRow'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
-function collapseText(titleRow: HTMLElement) {
-  containerDiv.querySelectorAll('div[data-group="' + titleRow.dataset.group + '"]')
+function collapseText(titleRow: HTMLElement, container:HTMLElement=containerDiv) {
+  container.querySelectorAll('div[data-group="' + titleRow.dataset.group + '"]')
     .forEach((div: HTMLDivElement) => {
       if(div !== titleRow) div.classList.toggle('collapsedTitle')
     });
@@ -1396,14 +1400,11 @@ function showSettingsPanel() {
   showInlineBtns("settingsPanel", true);
   let btn: HTMLElement;
   //Show current version
-  (function showCurrentVersion() {
-    let p: HTMLElement = document.createElement("p");
-    p.style.color = 'blue';
-    p.style.fontSize = "15pt";
-    p.style.fontWeight = "bold";
-    p.innerText = version;
-    inlineBtnsDiv.appendChild(p);
-  })();
+  
+
+    if (!inlineBtnsDiv.querySelector('#dateDiv'))
+    inlineBtnsDiv.appendChild(showDates().cloneNode()) as HTMLElement;
+
 
   //Show InstallPWA button//We are not calling it any more
   function installPWA() {
