@@ -296,8 +296,7 @@ function showChildButtonsOrPrayers(
     });
   }
 
-  showTitlesInRightSideBar(
-    container.querySelectorAll("div.TitleRow")
+  showTitlesInRightSideBar(container.querySelectorAll("div.TitleRow")
   );
 
   if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
@@ -321,27 +320,29 @@ function showChildButtonsOrPrayers(
     //showChildButtonsOrPrayers(btn.parentBtn);
   }
   
-  addDataGroupsToContainerChildren(container);
-
-  if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
+    if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 }
 
 /**
  * Adds the data-group attribute to all all the divs children of the html element passed to it as an argument
  * @param {htmle}  container - the html element container for which we will  add the data-group attribute to each of its div children  
  */
-async function addDataGroupsToContainerChildren(container:HTMLElement | DocumentFragment, titleClass:string = 'TitleRow'){
-  if (!container.children) return;
+async function addDataGroupsToContainerChildren(container: HTMLElement | DocumentFragment, titleClass: string = 'TitleRow', titleRow?: HTMLElement) {
+  if (titleRow
+      && titleRow.classList.contains(titleClass)) {
+    let nextSibling = titleRow.nextElementSibling as HTMLElement;
+    while (nextSibling
+      && !nextSibling.classList.contains(titleClass)) {
+      nextSibling.dataset.group =titleRow.dataset.root;
+      nextSibling = nextSibling.nextElementSibling as HTMLElement;
+    }
+    return
+  };
 
+  if (!container || !container.children) return;
   Array.from(container.children)
-  .forEach((child: HTMLElement) => {
-    if (!child.classList.contains(titleClass)) {
-      let prevSibling = child.previousSibling as HTMLElement; 
-      if(prevSibling) child.dataset.group = prevSibling.dataset.group;
-    } else {
-      child.dataset.group = child.dataset.root;
+    .forEach((child: HTMLElement) => {addDataGroupsToContainerChildren(undefined, undefined, child) })
 }
-})}
 
 
 /**
@@ -1043,6 +1044,8 @@ async function showPrayers(
 async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
   if (!Rows) return;
 
+  let plusSign = String.fromCharCode(plusCharCode), minusSign = String.fromCharCode(plusCharCode + 1);
+
   Rows.forEach(
     (row: HTMLElement) => {
       //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
@@ -1064,14 +1067,17 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
         if (!defLangParag) defLangParag = row.lastElementChild as HTMLElement;
         if (!defLangParag) return console.log('no paragraph with lang= ' + defaultLanguage);
         if (!row.dataset.isCollapsed) row.dataset.isCollapsed = 'false'; //If row doesn't have data-is-collapsed attribute, we add it and set it to 'false' which means that the title is not collapsed
-        if (defLangParag.textContent.includes(String.fromCharCode(plusCharCode) + ' ')) defLangParag.textContent = defLangParag.textContent.replace(String.fromCharCode(plusCharCode) + ' ', '');//We remove the + sign in the begining (if it exists)
-        if (defLangParag.textContent.includes(String.fromCharCode(plusCharCode + 1) + ' ')) defLangParag.textContent = defLangParag.textContent.replace(String.fromCharCode(plusCharCode + 1) + ' ', ''); //We remove the minus (-) sign from the begining of the paragraph
+        if (defLangParag.textContent.includes(plusSign + ' ')) defLangParag.textContent = defLangParag.textContent.replace(plusSign + ' ', '');//We remove the + sign in the begining (if it exists)
+        if (defLangParag.textContent.includes(minusSign + ' ')) defLangParag.textContent = defLangParag.textContent.replace(minusSign + ' ', ''); //We remove the minus (-) sign from the begining of the paragraph
         if (row.dataset.isCollapsed === 'true') defLangParag.innerText =
-          String.fromCharCode(plusCharCode) + " " + defLangParag.innerText; //We add the plus (+) sign at the begining
+          plusSign + " " + defLangParag.innerText; //We add the plus (+) sign at the begining
         if (row.dataset.isCollapsed === 'false') defLangParag.innerText =
-          String.fromCharCode(plusCharCode + 1) + " " + defLangParag.innerText;//We add the minus (-) sig at the begining
+          minusSign + " " + defLangParag.innerText;//We add the minus (-) sig at the begining;
+        if (row.classList.contains('TitleRow'))addDataGroupsToContainerChildren(undefined, 'TitleRow', row);
+        if (row.classList.contains('SubTitle')) addDataGroupsToContainerChildren(undefined, 'SubTitle', row);
+      } else {
+        replaceEigthNote(undefined, Array.from(row.querySelectorAll('p')));
         };
-        Rows.forEach(row => replaceEigthNote(undefined, Array.from(row.querySelectorAll('p'))));
     });
 };
 
@@ -1136,7 +1142,7 @@ async function setButtonsPrayers() {
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
 function collapseText(titleRow: HTMLElement, container:HTMLElement=containerDiv) {
-  container.querySelectorAll('div[data-group="' + titleRow.dataset.group + '"]')
+  container.querySelectorAll('div[data-group="' + titleRow.dataset.root + '"]')
     .forEach((div: HTMLDivElement) => {
       if(div !== titleRow) div.classList.toggle('collapsedTitle')
     });
@@ -1594,7 +1600,8 @@ function showSettingsPanel() {
         {
           event: "click",
           fun: () => {
-            show = !show; //inversing the value of "show"
+            let stored = new Map(JSON.parse(localStorage.getItem("showActors"))).get(actor) as boolean;
+            show = !stored; //inversing the value of "show"
             showActors.set(actor, show);
             btn.classList.toggle("langBtnAdd");
             //changing the background color of the button to red by adding 'langBtnAdd' as a class

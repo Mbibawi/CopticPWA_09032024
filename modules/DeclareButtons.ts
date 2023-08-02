@@ -1071,8 +1071,6 @@ const btnMassUnBaptised: Button = new Button({
           
             setCSSGridTemplate(Array.from(div.children) as HTMLElement[]);
           
-          addDataGroupsToContainerChildren(div, 'SubTitle'); //This must come before collapsing the Subtitles (see below)
-          
           div
             .querySelectorAll('div.SubTitle')
             .forEach((subTitle: HTMLElement) => collapseText(subTitle, div));

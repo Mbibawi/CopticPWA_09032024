@@ -362,9 +362,9 @@ div.DisplayModePresentation.CommentText
 
 .Priest,
 #PriestColor {
-  background-color: #fdcdc9;
-  border-left-color: red;
-  border-right-color: red;
+  background-color: #bdd6fb;
+  border-left-color: #001f54;
+  border-right-color: #001f54;
   border-left-width: 7px;
   border-right-width: 7px;
   border-left-style: solid;
@@ -373,8 +373,8 @@ div.DisplayModePresentation.CommentText
 .Diacon,
 #DiaconColor {
   background-color: #a3b091;
-  border-left-color: green;
-  border-right-color: green;
+  border-left-color: #162701;
+  border-right-color: #162701;
   border-left-width: 7px;
   border-right-width: 7px;
   border-left-style: solid;
@@ -382,12 +382,9 @@ div.DisplayModePresentation.CommentText
 }
 .Assembly,
 #AssemblyColor {
-  background-color: #bdd6fb;
-  z-index: 1;
-  background-position-x: center;
-  opacity: 1;
-  border-left-color: #001f54;
-  border-right-color: #001f54;
+  background-color: #eff3c3;
+  border-left-color: #eeff00;
+  border-right-color: #eeff00;
   border-left-width: 7px;
   border-right-width: 7px;
   border-left-style: solid;
