@@ -47,6 +47,10 @@
 }
 
 .Content {
+  filter:none !important;
+  z-index: 2;
+  background-image: none;
+  opacity: 1;
   display: grid;
   opacity: 1;
   justify-self: center;
@@ -57,6 +61,7 @@
   overflow-x: hidden;
 }
 body{
+  z-index: 0;
   background-image: url(./assets/PageBackgroundCoss.png);
   background-size:20%;
   background-repeat: repeat;
@@ -212,6 +217,7 @@ div.Row.collapsedTitle{
 }
 .Row {
   display: grid;
+  border-left-width: 10pt;
   column-gap: 5px ;
   height:fit-content;
   text-align: justify;
@@ -239,6 +245,7 @@ div.Row.collapsedTitle{
 .SubTitle>p.AR
 {
   grid-area: AR;
+  font-size: 18pt;
 }
 .Row > p.CA, 
 .TitleRow >p.CA
@@ -274,7 +281,7 @@ div.Row.collapsedTitle{
 .Comment > p, 
 .CommentText > p{
   margin:0px 0px;
-  padding:3px 3px;
+  padding-right:8px;
 }
 .sign {
   font-size: 13px;
@@ -357,15 +364,36 @@ div.DisplayModePresentation.CommentText
 
 .Priest,
 #PriestColor {
-  background-color: #d9f5fc;
+  /*background-color: #d9f5fc;*/
+  border-left-color: red;
+  border-right-color: red;
+  border-left-width: 7px;
+  border-right-width: 7px;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 .Diacon,
 #DiaconColor {
-  background-color: #e0ecd0;
+  /*background-color: #e0ecd0;*/
+  border-left-color: green;
+  border-right-color: green;
+  border-left-width: 7px;
+  border-right-width: 7px;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 .Assembly,
 #AssemblyColor {
-  background-color: #FFF8AD;
+  /* background-color: #FFF8AD; */
+  z-index: 1;
+  background-position-x: center;
+  opacity: 1;
+  border-left-color: yellow;
+  border-right-color: yellow;
+  border-left-width: 7px;
+  border-right-width: 7px;
+  border-left-style: solid;
+  border-right-style: solid;
 }
 td{
   display: table-cell;
