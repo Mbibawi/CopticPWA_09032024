@@ -47,9 +47,7 @@
 }
 
 .Content {
-  filter:none !important;
   z-index: 2;
-  background-image: none;
   opacity: 1;
   display: grid;
   opacity: 1;
@@ -62,8 +60,8 @@
 }
 body{
   z-index: 0;
-  background-image: url(./assets/PageBackgroundCoss.jpg);
-  background-size:20%;
+  background-image: url(./assets/PageBackgroundCross.png);
+  background-size:1.5%;
   background-repeat: repeat;
   display: grid;
   width: 100%;
@@ -364,7 +362,7 @@ div.DisplayModePresentation.CommentText
 
 .Priest,
 #PriestColor {
-  /*background-color: #d9f5fc;*/
+  background-color: #fdcdc9;
   border-left-color: red;
   border-right-color: red;
   border-left-width: 7px;
@@ -374,7 +372,7 @@ div.DisplayModePresentation.CommentText
 }
 .Diacon,
 #DiaconColor {
-  /*background-color: #e0ecd0;*/
+  background-color: #a3b091;
   border-left-color: green;
   border-right-color: green;
   border-left-width: 7px;
@@ -384,12 +382,12 @@ div.DisplayModePresentation.CommentText
 }
 .Assembly,
 #AssemblyColor {
-  /* background-color: #FFF8AD; */
+  background-color: #bdd6fb;
   z-index: 1;
   background-position-x: center;
   opacity: 1;
-  border-left-color: yellow;
-  border-right-color: yellow;
+  border-left-color: #001f54;
+  border-right-color: #001f54;
   border-left-width: 7px;
   border-right-width: 7px;
   border-left-style: solid;
