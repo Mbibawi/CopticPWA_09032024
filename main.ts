@@ -2088,3 +2088,28 @@ function moveElementBeforeOrAfterXSiblings(element: HTMLElement,
 
 }
 
+//compareArrays(ReadingsArrays.SynaxariumArray, SynaxariumArray2);
+function compareArrays(sourceArray:string[][][], editedArray:string[][][]) {
+  let table: string[][], tblRow:string[];
+  for (let i = 0; i < sourceArray.length; i++) {
+    table = sourceArray[i];
+    for (let row = 0; row < table.length; row++){
+      tblRow = table[row];
+      for (let text = 0; text < tblRow.length; text++)
+      if (tblRow[text] !== editedArray[i][row][text]) {
+        console.log('different rows: \n', sourceArray[i][row][text], '\n\n', editedArray[i][row][text], '\n\n');
+      }
+    };
+    if (sourceArray[i][0][0] !== editedArray[i][0][0]) {
+      console.log('Original = ', sourceArray[i], ' and new = ', editedArray);
+    }else{
+      console.log('SameTitle')
+    }
+    }
+  if(sourceArray.length !== editedArray.length){
+    console.log('sourceArray length = ', sourceArray.length, ' editedArray length = ', editedArray.length)
+  }else{
+    console.log('source Array length = edited Array length = ', sourceArray.length)
+  }
+  ;
+}

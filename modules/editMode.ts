@@ -5,9 +5,16 @@ let sequence: string[] = [];
  */
 async function editTablesArray(entry: string) {
   let tablesArray: string[][][];
+  containerDiv.dataset.singleTable = 'false';
+  if (confirm('Do you want to edit a single table in the array?')) containerDiv.dataset.singleTable = 'true';
   if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title', 'New Table Added', 'New Table Added']]];
-  if(!tablesArray) tablesArray = eval(entry);
+  if (!tablesArray) tablesArray = eval(entry);
   if (!tablesArray) return;
+  if (containerDiv.dataset.singleTable = 'true') {
+    let tableTitle = eval(prompt('Provide the name of the table you want to edit'));
+    tablesArray = tablesArray.filter(tbl => baseTitle(tbl[0][0]) === baseTitle(tableTitle));
+    if (tablesArray.length < 1) return alert('There is no table in the array matching this title');
+  }
   let languages = getLanguages(entry);
   if (!languages) languages = allLanguages;
   localStorage.displayMode === displayModes[0];
@@ -327,21 +334,49 @@ function createEditingButton(
   return btnHtml
 }
 
-function saveModifiedArray():string {
-  let htmlRows = containerDiv.querySelectorAll(".Row"), //we retriev all the divs with 'Row' class from the DOM
-    table: string[][],
-    updated: Set<string> = new Set(),
+function saveModifiedArray(): string {
+    let table: string[][],
     newArray: string[][][] = [],
     title: string;
-  Array.from(htmlRows).forEach(
-    //for each 'Row' div in containderDiv
-    (htmlRow: HTMLDivElement) => {
-      title = baseTitle(htmlRow.dataset.root); //this is the title without '&C='
-      if (!updated.has(title)) updated.add(title); //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
-    }
-  );
 
-  updated.forEach((tableTitle) => processTablesTitles(tableTitle)); //for each title in the set, we will retrieve the text in arrays each representing a row
+
+  if (containerDiv.dataset.singleTable === 'false') {
+    let updated: Set<string> = new Set(),
+      htmlRows: HTMLElement[] = Array.from(containerDiv.querySelectorAll(".Row")); //we retriev all the divs with 'Row' class from the DOM
+    
+    Array.from(htmlRows).forEach(
+      //for each 'Row' div in containderDiv
+      (htmlRow: HTMLDivElement) => {
+        title = baseTitle(htmlRow.dataset.root); //this is the title without '&C='
+        if (!updated.has(title)) updated.add(title); //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
+      }
+    );
+    updated.forEach((tableTitle) => processTablesTitles(tableTitle));
+  } //for each title in the set, we will retrieve the text in arrays each representing a row
+
+
+  if (containerDiv.dataset.singleTable === 'true') {
+    //i.e. if we were editing a single table of the array
+    let editedTable:string[][] = [];
+    Array.from(containerDiv.querySelectorAll(".Row"))
+      .forEach((row:HTMLElement) => {
+        editedTable
+          .push(Array.from(row.children)
+            .map((p: HTMLElement) => p.innerText));
+        editedTable[editedTable.length-1].unshift(row.dataset.root)
+      });
+    newArray = eval(containerDiv.dataset.arrayName) as string[][][];
+    if (!newArray){
+      alert('the array name provided could not be evaluated to a valid array: containerDiv.dataset.arrayName')
+      return
+    };
+    newArray.splice(
+      newArray.indexOf(
+        newArray.filter(tbl => tbl[0][0] === editedTable[0][0])[0]),
+      1,
+      editedTable
+    );
+  }
 
   function processTablesTitles(tableTitle: string) {
     newArray.push([]); //this is an emepty array for the table
