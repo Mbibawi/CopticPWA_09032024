@@ -1371,6 +1371,11 @@ function showInlineBtns(status: string, clear: boolean = false) {
   if (clear) {
     inlineBtnsDiv.innerHTML = "";
   }
+
+  inlineBtnsDiv.style.backgroundImage = 'url(./assets/PageBackgroundCross.jpg)';
+  inlineBtnsDiv.style.backgroundSize = '10%';
+  inlineBtnsDiv.style.backgroundRepeat = 'repeat';
+
   /**
    * Appending an X button on the top right of inlineBtnsDiv
    */
@@ -1405,6 +1410,9 @@ function showSettingsPanel() {
   showInlineBtns("settingsPanel", true);
   let btn: HTMLElement;
   //Show current version
+
+
+
   
 
     if (!inlineBtnsDiv.querySelector('#dateDiv'))
