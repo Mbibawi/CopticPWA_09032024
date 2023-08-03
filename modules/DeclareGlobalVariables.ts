@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.9.9 (fixed the settings actors buttons and made changes to the colors and background)';
+const version: string = 'v4.5.0 (added screen orientation)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');

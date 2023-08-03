@@ -67,8 +67,9 @@ function autoRunOnLoad() {
   } else {
     setCopticDates()
   }
-  screen.orientation.lock("portrait-secondary").catch(error=> alert(error));
-  alert(screen.orientation.type.toString())
+  document.getElementsByTagName('body')[0].requestFullscreen().then(r => screen.orientation.lock("portrait-secondary").catch(error => alert(error)));
+
+  //alert(screen.orientation.type.toString())
 };
 
 /**
