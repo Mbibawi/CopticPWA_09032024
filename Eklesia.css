@@ -276,7 +276,7 @@ div.Row.collapsedTitle{
 .Row >p, 
 .TitleRow >p, 
 .SubTitle >p, 
-.Comment > p, 
+.Comments > p, 
 .CommentText > p{
   margin:0px 0px;
   padding-right:8px;
@@ -353,7 +353,7 @@ border-radius: 20px ;
   color:red;
   background-color: white;
 }
-div.DisplayModePresentation.Comment,
+div.DisplayModePresentation.Comments,
 div.DisplayModePresentation.CommentText
 {
   display: none !important;
@@ -537,7 +537,7 @@ table{
 #ProvideIDFromInput {
   padding-top: 5vw;
 }
-.Comment, 
+.Comments, 
 .CommentText{
   align-content: stretch;
   background-color: ivory;
@@ -552,7 +552,7 @@ table{
 .CommentText {
   color: #C45911 !important;
 }
-.Comment >p{
+.Comments >p{
   align-content: stretch;
 }
 .settings{

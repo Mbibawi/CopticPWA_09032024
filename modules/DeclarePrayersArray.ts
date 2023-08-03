@@ -1,7 +1,7 @@
 PrayersArray = [
   [
     [
-      Prefix.commonIncense + "EleysonImas&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonIncense + "EleysonImas&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "بعد صلاة التسبحة وتلاوة مزامير باكر وتحليل الكهنة، يصافح الكاهن اخوته الكهنة وطلب السماح من المصلين ويخضع أمام الهيكل، ويفتح ستر الهيكل من الشمال إلى اليمين قائلأ:",
     ],
@@ -66,7 +66,7 @@ PrayersArray = [
   [
     [
       Prefix.commonIncense +
-        "ThanksGivingPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart1Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يسجد أمام باب الهيكل قائلأ:",
     ],
@@ -190,7 +190,7 @@ PrayersArray = [
   [
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يكمل سراً:",
     ],
@@ -202,13 +202,13 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي أثناء ذلك، يصعد الكاهن إلى الهيكل ويقدم له الشماس المجمرة فيضع خمس أياد بخور وهو يرشم درج البخور وفي كل مرة يجاوبه الشماس (آمين). ويرتل الشعب أرباع الناقوس.",
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي رفع بخور عشية يقول الكاهن هذه الأوشية للإبن سراً:",
     ],
@@ -220,19 +220,19 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويرد الشماس:",
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "صلوا من أجل ذبيحتنا والذين قدموها.",
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويكمل الكاهن:ـ",
     ],
@@ -244,13 +244,13 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يبخر الكاهن حول المذبح ويطوف ثلاث دورات ويقول الأواشي الثلاث الصغار:",
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "أوشية السلامة:ـ",
     ],
@@ -262,7 +262,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "أوشية الأباء:ـ",
     ],
@@ -274,7 +274,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم ينزل أمام باب الهيكل ويعطي ثلاث أياد بخور شرقاً وفي كل مرة يخضع برأسه يقول في اليد الأولى:ـ",
     ],
@@ -288,7 +288,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "في اليد الثانية:ـ",
     ],
@@ -300,7 +300,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي اليد الثالثة:",
     ],
@@ -312,7 +312,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يبخر لجهة بحري لأجل السيدة العذراء قائلاً:",
     ],
@@ -324,7 +324,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يبخر إلى جهة الغرب ويقول:",
     ],
@@ -336,7 +336,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يبخر إلى جهة قبلي ويقول:ـ",
     ],
@@ -348,7 +348,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ThanksGivingPart3Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يبخر إلى جهة الشرق ويقول:ـ",
     ],
@@ -553,7 +553,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.commonIncense + "Comment1&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.commonIncense + "Comment1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وعند فراغ الشعب من الترتيل، يلتفت الكاهن إلى الشرق والشماس واقف خلفه ويقول الكاهن:ـ",
     ],
@@ -561,7 +561,7 @@ PrayersArray = [
   [
     [
       Prefix.incenseVespers +
-        "PriestLitaniesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "PriestLitaniesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يبخر الكاهن حول المذبح ويطوف ثلاثة دورات ويقول الأواشي الصغار: أوشية السلامة، أوشية الآباء، أوشية الاجتماعات. ثم ينزل أمام باب الهيكل ويعطي ثلاثة أياد بخور شرقا قائلاً: [....]، ثم يبخر لجهة البحري (يساره) لأجل السيدة العذراء ويقول [...]، ثم يبخر إلى جهة الغرب (خلفه) ويقول [...]، ثم يبخر إلى جهة قبلي (يمينه) ويقول [...]. وعندما يفرغ الشعب من ترتيل أرباع الناقوس، يلتفت الكاهن إلى الشرق والشماس واقف خلفه ويقول الأواشي الكبار: المرضى، المسافرين في باكر، الراقدين (في عشية وفي باكر السبوت)، أو القرابين في الآحاد والأعياد والأيام التي ليس فيها صوم انقطاعي.",
     ],
@@ -881,7 +881,7 @@ PrayersArray = [
   [
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يدور الكاهن حول المذبح دورة واحدة وينزل فيعطي البخور أمام الهيكل كما سبق. ثم يعطي البخور للإنجيل الذي على المنجلية (القطمارس) قائلا:ـ",
     ],
@@ -893,7 +893,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يعطي البخور لأجساد القديسين إن وجدت بالكنيسة وهو يقول:",
     ],
@@ -905,7 +905,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقبل رفات القديسين. إذا كان الأب البطريرك أو المطران أو الأسقف حاضراً يعطيه البخور ثلاث أياد. أول يد للآب البطريرك بعدما يقبل الصليب الذي بيده يقول في اليد الأولى:",
     ],
@@ -917,7 +917,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي اليد الثانية:",
     ],
@@ -929,7 +929,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي اليد الثالثة:ـ",
     ],
@@ -941,7 +941,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقبل الصليب قائلاً:ـ",
     ],
@@ -953,7 +953,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يعطي البخور للشعب جميعه. يبتدئ بحري (يسار) باب الهيكل ويدور يميناً وهو يقول في بخور عشية:ـ",
     ],
@@ -965,7 +965,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي بخور باكر:ـ",
     ],
@@ -977,7 +977,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "عند خروجه إلى الخورس الثاني، يقول هذه الخمسة أرباع الخشوعية تمجيداً للسيد المسيح الذي صلب عنا وفدانا بدمه الكريم:ـ",
     ],
@@ -989,7 +989,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يبخر شرقاً قائلاً:ـ",
     ],
@@ -1001,7 +1001,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يبخر بحرياً (يسار) قائلاً:ـ",
     ],
@@ -1013,7 +1013,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يبخر غرباً قائلاً:ـ",
     ],
@@ -1025,7 +1025,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يبخر قبلياً (يميناً) قائلاً:ـ",
     ],
@@ -1037,7 +1037,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يصعد إلى الهيكل ويعطي البخور فوق المذبح عن اعتراف الشعب جميعه وهو يقول: هذا السر (ويسمى سر الرجعة أو سر اعتراف الشعب):ـ",
     ],
@@ -1049,7 +1049,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonIncense +
-        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comment",
+        "IncenseOfficeDoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يدور حول المذبح دورة واحدة ويقبله وينزل. ويقف أمام الهيكل ويعطي البخور قدام بابه ثلاث أياد كما شرحنا أولاً. ويبخر إلى جهة بحري وغرباً وقبلياً وشرقاً. ويعطي البخور لإخوته الكهنة فقط واحداً بعد واحد، كالأول، ويجاوبونه كالأول. ولا يعطي البخور للشعب. وإذا كان الأب البطريرك أو المطران أو لأسقف حاضراً فلا يعط الكهنة البخور ثانية، بل يعطيه البخور وحده.",
     ],
@@ -2510,7 +2510,7 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرفع الكاهن الصليب وعليه ثلاث شمعات موقدة ووجهه إلى الشرق ويقول:",
     ],
@@ -2570,7 +2570,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=GL&C=Comment",
+      Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=GL&C=Comments",
       "",
       "في رفع بخور باكر في صوم يونان وأيام الصوم المقدس، دون سبوته وآحاده، يطفئون شمع المذبح ويغلقون ستر الهيكل ويجلسون. تقرأ النبوات. وبعدها تقال الطلبة.",
     ],
@@ -2875,7 +2875,7 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقدم الشماس للكاهن درج البخور فيضع يد بخور في المجمرة ويقول:.",
     ],
@@ -2925,7 +2925,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويكمل سرا:ـ.",
     ],
@@ -2937,7 +2937,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يصعد الكاهن إلى الهيكل ويضع يد بخور في المجمرة قائلاً:ـ",
     ],
@@ -2949,7 +2949,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويصعد الشماس بالإنجيل إلى الهيكل ويعطي الكاهن البخور للإنجيل وهو دائر حول المذبح دورة واحدة يميناً، والشماس حامل الإنجيل أمامه، ويقول الكاهن صلاة سمعان الشيخ (لو 2: 29-32):",
     ],
@@ -2961,7 +2961,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقدم الكاهن كتاب البشارة لباقي الكهنة الحاضرين ليقبلوه وهو يقول:",
     ],
@@ -2973,7 +2973,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقدم الكاهن كتاب البشارة للشمامسة الحاضرين ليقبلوه وهو يقول:",
     ],
@@ -2992,7 +2992,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelPrayerPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقف الكاهن عند باب الهيكل ويضع كتاب البشارة على رأسه ويقول:",
     ],
@@ -3057,7 +3057,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "PsalmIntroduction&D=$copticFeasts.AnyDay&C=Comment",
+        "PsalmIntroduction&D=$copticFeasts.AnyDay&C=Comments",
       "Le Diacre lit le psaume et à la fin l’assemblée répond : Alléluia !",
       "(يقرأ الشماس المزمور وفي ختامه يرد الشعب: الليلويا",
     ],
@@ -3073,7 +3073,7 @@ PrayersArray = [
     ],
     [
       Prefix.commonPrayer +
-        "GospelIntroductionPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelIntroductionPart2&D=$copticFeasts.AnyDay&C=Comments",
       "Le Diacre lit l’évangile et conclut en disant : Gloire à notre Dieu éternellement, amen !",
       "يقرأ الشماس الإنجيل وفي ختامه يقول: المجد لإلهنا إلى الأبد آمين.",
     ],
@@ -3118,7 +3118,7 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "GospelLitanyComment4&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelLitanyComment4&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي أثناء ذلك يأخذ الكاهن الصليب من الشماس أو من فوق المذبح، ويحول وجهه إلى الشرق ويقول هذه الصلوات للأبن:ـ",
     ],
@@ -3166,7 +3166,7 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "GospelLitanyComment5&D=$copticFeasts.AnyDay&C=Comment",
+        "GospelLitanyComment5&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وفي أثناء ذلك يأخذ الكاهن الصليب من الشماس أو من فوق المذبح، ويحول وجهه إلى الشرق ويقول هذه الصلوات للأبن:ـ",
     ],
@@ -3544,7 +3544,7 @@ PrayersArray = [
   [
     [
       Prefix.commonPrayer +
-        "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comment",
+        "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments",
       "Si un évêque ou un métropolite est présent, on ajoute :",
       "وفي حضور الأسقف أو المطران يضاف:",
     ],
@@ -3552,7 +3552,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Comments",
       "Ensuite il continue :",
       "ثم يكمل:",
     ],
@@ -3876,7 +3876,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "ReconciliationComment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "وأثناء تلاوة قانون الإيمان، يغسل الكاهن يديه ثلاث مرات وهو يقول مزمور 50 7 و8 ومزمور 25 6 و7",
     ],
@@ -3900,7 +3900,7 @@ PrayersArray = [
     ],
     [
       Prefix.massCommon +
-        "ReconciliationComment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم ينفضها وبهذا كأنه يحذر الشعب لئلا ينكر أحد إيمانه بالسيد المسيح أو أن يكون قانون الإيمان من الفم فقط، ويعلن بنفض يديه براءته من المخالف، وبعد ذلك ينشف يديه جيداً ويقف أمام المذبح بخشوع.",
     ],
@@ -3908,7 +3908,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرشم الكاهن القربانة ثلاثة رشومات بسرعة ويقول بصوت عال:",
     ],
@@ -3934,7 +3934,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CallOfTheHolySpiritPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "CallOfTheHolySpiritPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرشم الكاهن الكأس ثلاثة رشومات بسرعة ويقول بصوت عال:",
     ],
@@ -3970,7 +3970,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitaniesIntroduction&D=$copticFeasts.AnyDay&C=Comment",
+        "LitaniesIntroduction&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يأخذ الكاهن لفافة على يده اليمنى وأخرى على يده اليسرى ويقول:",
     ],
@@ -4012,7 +4012,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyForTheChurchPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyForTheChurchPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقول الكاهن وهو يشير بيده إلى الدم أولاً وإلى الجسد ثانياً:",
     ],
@@ -4143,7 +4143,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يلف الكاهن يده بلفافة ويلتفت إلى الشعب بغير رشم ويقول باللحن القطعة الآتية:",
     ],
@@ -4155,7 +4155,7 @@ PrayersArray = [
       "شعبك وكنيستك يطلبون .",
     ],
     [
-      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "GiNayNan&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يلتفت إلى الشرق ويكمل:",
     ],
@@ -4229,7 +4229,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyOfTheRiversPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyOfTheRiversPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "من 12 بؤونة إلى 9 بابه:",
     ],
@@ -4260,7 +4260,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "من 10 بابه إلى 10 طوبة:",
     ],
@@ -4281,7 +4281,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "LitanyOfTheFruits&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "LitanyOfTheFruits&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "من 11 طوبة إلى 11 بؤونة:",
     ],
@@ -4303,7 +4303,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LitanyCombinedForRiversPlantsAndFruits&D=$copticFeasts.AnyDay&C=Comment",
+        "LitanyCombinedForRiversPlantsAndFruits&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "أوشية أهوية السماء وثمرات الأرض ومياه الأنهار والزروع والعشب ونبات الحقل:",
     ],
@@ -4495,7 +4495,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "CommemorationOfTheDepartedPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "CommemorationOfTheDepartedPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن يده في بخور في المجمرة ويده مستورة بلفافة ويقول:",
     ],
@@ -4588,7 +4588,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "LetUsAlsoGiveThanksToGod&D=$copticFeasts.AnyDay&C=Comment",
+        "LetUsAlsoGiveThanksToGod&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يخضع الكاهن برأسه نحو الكهنة والشمامسة بلا رشم ويقول:",
     ],
@@ -4612,7 +4612,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart1&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يأخد الكاهن الجسد الطاهر بيده اليمنى ويضعه على يده اليسرى ويضع السبابة اليمنى على يمين الاسبيدايقون ويقول:",
     ],
@@ -4636,7 +4636,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart2&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يرفع اصبعه من على الجسد ويغمس طرفه في الدم الكريم، ثم يرفع اصبعه قليلاً من الدم ويرشم به رشماً واحداً مثال الصليب على الدم داخل الكأس ويقول:",
     ],
@@ -4660,7 +4660,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "TheHolyBodyAndTheHolyBlodPart3&D=$copticFeasts.AnyDay&C=Comment",
+        "TheHolyBodyAndTheHolyBlodPart3&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يرشم بالدم الذي بإصبعه الجسد الطاهر رشماً فوق المكان الذي قسمه أولاً، أي بجانب الاسباديقون، ورشماً أسفل، أي على ظهره، ثانياً، ويقول:",
     ],
@@ -4775,7 +4775,7 @@ PrayersArray = [
       "آمين آمين آمين، أؤمن، أؤمن، أؤمن، وأعترف إلى النفس الأخير، أن هذا هو الجسد المحيى الذي أخذه ابنِكَ الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح، من سيدتنا وملكتنا كلنا والدة الإله القديسة الطاهرة مريم. وجَعَلهُ واحداً مع لاهوتِهِ بغير اختلاط ولا امتزاج ولا تغيير. واعترف الاعتراف الحسن أمام بيلاطس البنطي. وأسلمَهُ عنا على خشبة الصليب المقدسة بإرادتِهِ وحدِهِ عنا كلنا. بالحقيقة أؤمن أن لاهوتهُ لم يفارق ناسوتَهُ لحظةً واحدة ولا طرفة عين. يُعطى عنا خلاصاً وغفراناً للخطايا وحياةً أبدية لمن يتناول منه. أ ؤمن،.أؤمن،.أؤمن،.أن هذا هو بالحقيقة آمين.",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقول الكاهن وهو محني الرأس:",
     ],
@@ -4799,7 +4799,7 @@ PrayersArray = [
       "سلام ومحبة يسوع المسيح معكم. رتلوا بنشيد الليلويا. صلوا من أجل التناول باستحقاقٍ من الأسرار المقدسة الطاهرة السمائية، يا ربُ ارحم.",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يركع الكاهن أمام المذبح ويطلب الحل من الله بالتناول، ثم يقوم ويأخذ الحل من إخوته الكهنة قائلاً:",
     ],
@@ -4809,7 +4809,7 @@ PrayersArray = [
       "أخطأت حاللوني",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويقول للشعب:",
     ],
@@ -4819,7 +4819,7 @@ PrayersArray = [
       "أخطأت سامحوني",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا ناول الكاهن الشعب الجسد الطاهر يقول:ـ",
     ],
@@ -4829,7 +4829,7 @@ PrayersArray = [
       "الجسد الذي لعمانوئيل إلهنا، هذا هو بالحقيقة آمين.",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا ناول الكاهن الشعب الدم الكريم يقول:ـ",
     ],
@@ -4839,7 +4839,7 @@ PrayersArray = [
       "الدم الذي لعمانوئيل إلهنا، هذا هو بالحقيقة آمين.",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا فرغ الكاهن من مناولة الذين في الهيكل، يضع في الصينية القبة، ويغطيها بلفافة من حرير، ثم يلتفت إلى الغرب ويبارك الشعب بالصينية مثال الصليب ويقول:ـ",
     ],
@@ -4849,7 +4849,7 @@ PrayersArray = [
       "القدسات للقديسين، مُباركُ الرب يسوع المسيح ابن الله وقدوس الروح القدس، آمين.",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "فيسجدون جمعيهم من كبيرهم إلى صغيرهم ويقولون",
     ],
@@ -4859,7 +4859,7 @@ PrayersArray = [
       "مبارك الآتي باسم الرب",
     ],
     [
-      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "Confession&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يخرج الكاهن من الهيكل ويناول الشعب. فالمتناول يضرب الميطانية، ثم يتناول.",
     ],
@@ -6056,7 +6056,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "ReconciliationStBasilPart1Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationStBasilPart1Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرفع الكاهن اللفافة الختم أمام وجهه منثنية على شكل مثلث وفي مقابله يرفع الشماس الصليب.",
     ],
@@ -6082,7 +6082,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يكمل الكاهن سراً",
     ],
@@ -6094,7 +6094,7 @@ PrayersArray = [
     ],
     [
       Prefix.massCommon +
-        "ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا أرادوا، يقول الشعب الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام",
     ],
@@ -6145,7 +6145,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AnaphoraComment1&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AnaphoraComment1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن اللفافة الختم على يده اليسرى ويأخذ بيده اليمنى اللفافة التي على القربانة ويمسك الصليب ويرشم الشعب ويقول:",
     ],
@@ -6161,7 +6161,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AnaphoraComment2&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AnaphoraComment2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقول الكاهن وهو يرشم الخدام شرقاً:",
     ],
@@ -6184,7 +6184,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AnaphoraComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AnaphoraComment3&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقول الكاهن وهو يرشم ذاته:",
     ],
@@ -6277,7 +6277,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "SpasmosComment&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "SpasmosComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا أرادوا، يقو الشعب الاسبسمس الواطس السنوي أو غيره من الاسبسموسات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام.",
     ],
@@ -6307,7 +6307,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment1&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment1&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن اللفافة التي على يده اليسرى على المذبح ويأخذ اللفافة التي على يده اليمنى ويضعها على يده اليسرى ويأخذ بيده اليمنى اللفافة التي على الكأس ويمسك الصليب ويرشم ذاته ويقول:",
     ],
@@ -6323,21 +6323,21 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment2&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment2&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يرشم الخدام عن يمينه ويقول:",
     ],
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment3&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment3&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يرشم الشعب إلى الغرب ويقول:",
     ],
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment4&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment4&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقبل الصليب ويضعه على المذبح ويقول:",
     ],
@@ -6367,12 +6367,12 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment5&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment5&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقدم الشماس المجمرة للكاهن",
     ],
     [
-      Prefix.massCommon + "AgiosComment5&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment5&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن يد بخور في المجمرة ويقول:",
     ],
@@ -6438,12 +6438,12 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment6&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment6&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقدم الشماس المجمرة للكاهن",
     ],
     [
-      Prefix.massCommon + "AgiosComment6&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment6&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يشير الكاهن بيديه إلى الخبز والخمر، ثم إذ يكون قد قدموا له المجمرة، يترك اللفافتين من يده على المذبح ويبخر يديه على المجمرة ثلاث دفعات استعداداً لإمساك ما هو موضوع قدامه، إذ يفعل ذلك يقول:",
     ],
@@ -6460,7 +6460,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment7&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment7&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يرفع يديه من فوق المجمرة بالبخور ويقول:",
     ],
@@ -6477,7 +6477,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment8&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment8&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يأخذ الكاهن الخبز على يديه ويرفع اللفافة الحرير التي في الصينية ويقبلها بفيه ويتركها على المذبح ويقول:",
     ],
@@ -6504,7 +6504,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment9&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment9&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن يده اليمنى على الخبز الذي على يده اليسرى ويرفع نظره إلى فوق ويقول:",
     ],
@@ -6521,7 +6521,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment10&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment10&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرشم الكاهن الخبز بأصبعه ثلاث رشومات ويقول:",
     ],
@@ -6568,7 +6568,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment11&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment11&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يقسم القربانة ثلثين عن يساره وثلثاً عن يمينه بلطف من غير فصل بعضها من بعض ومن غير أن يلمس الإسباديقون الذي في وسطها:",
     ],
@@ -6585,7 +6585,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment12&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment12&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "هنا يفرق رأس القربانة من فوق قليلاً بأطراف أصابعه من غير فصل ويضعها في الصينية، ثم ينظف يديه داخل الصينية.",
     ],
@@ -6612,7 +6612,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment13&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment13&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يضع الكاهن يده على حافة الكأس ويقول:",
     ],
@@ -6629,7 +6629,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment14&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment14&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يرشم الكاهن ثلاث رشومات ويقول:",
     ],
@@ -6646,7 +6646,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment15&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment15&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يمسك الكاهن فم الكأس بيده ويقول:",
     ],
@@ -6681,7 +6681,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment16&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment16&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يشير الكاهن بيده إلى الجسد ويقول:",
     ],
@@ -6698,7 +6698,7 @@ PrayersArray = [
   ],
   [
     [
-      Prefix.massCommon + "AgiosComment17&D=$copticFeasts.AnyDay&C=Comment",
+      Prefix.massCommon + "AgiosComment17&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يشير الكاهن بيده إلى الكأس ويقول:",
     ],
@@ -6746,7 +6746,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "InstitutionNarrative13Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "InstitutionNarrative13Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يسجد جميع الشعب لله ويقولون وهم حانيين رؤسهم:",
     ],
@@ -6764,7 +6764,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "HolySpiritLitanyComment&D=$copticFeasts.AnyDay&C=Comment",
+        "HolySpiritLitanyComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يقول الكاهن أوشية حلول الروح القدس سراً وهو ساجد وباسط يديه:",
     ],
@@ -6776,7 +6776,7 @@ PrayersArray = [
     ],
     [
       Prefix.massCommon +
-        "HolySpiritLitanyComment&D=$copticFeasts.AnyDay&C=Comment",
+        "HolySpiritLitanyComment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ويشير عندئذ إلى ذاته ثم إلى القرابين ويكمل قائلا:",
     ],
@@ -6868,7 +6868,7 @@ PrayersArray = [
   [
     [
       Prefix.massCommon +
-        "ReconciliationPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationPart2Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "ثم يكمل الكاهن سراً",
     ],
@@ -6880,7 +6880,7 @@ PrayersArray = [
     ],
     [
       Prefix.massCommon +
-        "ReconciliationPart2Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "ReconciliationPart2Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "إذا أرادوا، يقول الشعب الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام",
     ],
@@ -7613,7 +7613,7 @@ PrayersArray = [
   [
     [
       Prefix.massStBasil +
-        "InstitutionNarrative10Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "InstitutionNarrative10Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يمسك الكاهن فم الكأس بيده ويقول:",
     ],
@@ -7621,7 +7621,7 @@ PrayersArray = [
   [
     [
       Prefix.massStBasil +
-        "InstitutionNarrative11Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "InstitutionNarrative11Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يشير الكاهن بيده إلى الجسد ويقول:",
     ],
@@ -7629,7 +7629,7 @@ PrayersArray = [
   [
     [
       Prefix.massStBasil +
-        "InstitutionNarrative12Comment&D=$copticFeasts.AnyDay&C=Comment",
+        "InstitutionNarrative12Comment&D=$copticFeasts.AnyDay&C=Comments",
       "",
       "يشير الكاهن بيده إلى الكأس ويقول:",
     ],
@@ -8273,7 +8273,7 @@ PrayersArray = [
     ],
     [
       Prefix.fractionPrayer +
-        "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
+        "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comments",
       "",
       "Entre la fête de l’ascension et les Pentecôtes",
       "",
@@ -8289,7 +8289,7 @@ PrayersArray = [
     ],
     [
       Prefix.fractionPrayer +
-        "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comment",
+        "&D=$copticFeasts.Resurrection||$Seasons.PentecostalDays&C=Comments",
       "",
       "",
       "",

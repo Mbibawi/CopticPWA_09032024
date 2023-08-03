@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.9.7 (added collapseAllTitles feature, added defaultLanguage and foreignLanguage)';
+const version: string = 'v4.9.8 (fixed the settings actors buttons)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -291,7 +291,7 @@ const
         copticFeasts.HolyThursday,
         copticFeasts.HolyFriday,
     ],
-    textAmplified = new Map();
+    textAmplified = [];
 //VARS
 let PrayersArray: string[][][] = []; 
 let lastClickedButton: Button;
@@ -329,13 +329,14 @@ let actors = [
         EN: 'CommentText',
     }
 ]; //These are the names of the classes given to each row accordin to which we give a specific background color to the div element in order to show who tells the prayer
-let showActors = new Map();
-actors.map(actor => showActors.set(actor, true));
-showActors.set(actors[3], false);//this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
-showActors.set(actors[4], false); //same comment as above concerning the 'CommentText'
-if (localStorage.showActors === undefined) { localStorage.showActors = JSON.stringify(Array.from(showActors)) };
-allLanguages.map(lang => textAmplified.set(lang, false));
-if (localStorage.textAmplified === undefined) { localStorage.textAmplified = JSON.stringify(Array.from(textAmplified)) };
+let showActors = [];
+actors.map(actor => showActors.push([actor, true]));
+showActors[3][1] = false;//this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
+showActors[4][1] = false ; //same comment as above concerning the 'CommentText'
+if (localStorage.showActors === undefined
+    || JSON.parse(localStorage.showActors)[0][0] !== showActors[0][0]) { localStorage.showActors = JSON.stringify(showActors) };
+allLanguages.map(lang => textAmplified.push([lang, false]));
+if (localStorage.textAmplified === undefined) { localStorage.textAmplified = JSON.stringify(textAmplified) };
 if (!localStorage.displayMode 
     || localStorage.displayMode === 'undefined') {
     localStorage.displayMode = displayModes[0];

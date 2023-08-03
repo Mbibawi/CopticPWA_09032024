@@ -87,14 +87,20 @@ function createHtmlElementForPrayer(
     | { beforeOrAfter: InsertPosition; el: HTMLElement },
     actorClass?:string
 ): HTMLDivElement {
-  //@ts-ignore
-  if (!tblRow) return console.log('No tblRow argument is provided to createHtmlElementForPrayer() ');
+    //@ts-ignore
+    if (!tblRow) return console.log('No tblRow argument is provided to createHtmlElementForPrayer() ');
+  if (!actorClass) actorClass = tblRow[0].split('&C=')[1];
+  if (actorClass) {
+    let parsed = JSON
+      .parse(localStorage.showActors)
+      .filter(el => el[0].EN === actorClass)
+    if (parsed.length > 0 && parsed[0][1] === false) return; //If had hide an actor, we will stop and return
+  };
   if (!userLanguages) userLanguages = JSON.parse(localStorage.userLanguages);
   if (!position) position = containerDiv;
   let htmlRow: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string, titleBase:string;
   
   titleBase = baseTitle(tblRow[0]);
-  if(!actorClass) actorClass = tblRow[0].split('&C=')[1];
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
@@ -118,21 +124,14 @@ function createHtmlElementForPrayer(
     if (!tblRow[x] || tblRow[x] === ' ') continue;//we escape the empty strings if the text is not available in all the button's languages
     if (
       actorClass &&
-      (actorClass === "Comment" || actorClass === "CommentText")
+      (actorClass === "Comments" || actorClass === "CommentText")
     ) {
       //this means it is a comment
       x === 1 ? (lang = languagesArray[1]) : (lang = languagesArray[3]);
     } else {
       lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
-    if (userLanguages.indexOf(lang) > -1) {
-      if (
-        actorClass &&
-        new Map(JSON.parse(localStorage.showActors)).get(actorClass) == false
-      ) {
-        //If had hide an actor, we will stop and return
-        return;
-      }
+    if (userLanguages.indexOf(lang) > -1) {  
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
       if (actorClass && actorClass === 'Title') {
         //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'
@@ -935,7 +934,7 @@ function DetectFingerSwipe() {
 /**
  * Takes an Html Element and looks for all the other elements having the same "lang" attribute as the Html element passed to it, then it checks if the size of text is amplified or not: if already amplified, it reduces it, if not, it amplifies it
  * @param {HTMLElement} target - the Html element containing the text which we will be amplified together with all the text with the same language
- * @param {string} myClass - the name of the CSS class that will applied to amplify the text
+ * @param {string} myClass - the name of the CSS class that will be applied to amplify the text
  */
 function toggleAmplifyText(target:HTMLElement, myClass: string) {
   if (localStorage.displayMode === displayModes[1]) {
@@ -943,7 +942,7 @@ function toggleAmplifyText(target:HTMLElement, myClass: string) {
     toggleSideBars();
     return
   }
-  let amplified = new Map(JSON.parse(localStorage.textAmplified));
+  let amplified:[[string, boolean]] = JSON.parse(localStorage.textAmplified);
   let selector: string = 'p[lang="' + target.lang + '"]';
   let sameLang = containerDiv.querySelectorAll(selector) as NodeListOf<HTMLElement>;
   sameLang.forEach((p) => {
@@ -951,12 +950,12 @@ function toggleAmplifyText(target:HTMLElement, myClass: string) {
     Array.from(p.children).forEach(child => child.classList.toggle(myClass));
   });
   if (target.classList.contains(myClass)) {
-    //it means that the class was added when the user dbl clicked (not removed)
-    amplified.set(target.lang.toUpperCase(), true);
+    //it means that the class was added (not removed) when the user dbl clicked 
+    amplified.filter(el => el[0] === target.lang.toUpperCase())[0][1] = true;
   } else {
-    amplified.set(target.lang.toUpperCase(), false);
+    amplified.filter(el => el[0] === target.lang.toUpperCase())[0][1] = false;
   }
-  localStorage.textAmplified = JSON.stringify(Array.from(amplified));
+  localStorage.textAmplified = JSON.stringify(amplified);
 }
 
 /**
@@ -1106,7 +1105,7 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
     }
     if (
       areas.indexOf(defaultLanguage) === 0 &&
-      !row.classList.contains("Comment") &&
+      !row.classList.contains("Comments") &&
       !row.classList.contains("CommentText")
     ) {
       //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
@@ -1580,12 +1579,8 @@ function showSettingsPanel() {
 
     inlineBtnsDiv.appendChild(actorsContainer);
     actors.map((actor) => {
-      if (actor.EN === "CommentText") {
-        return;
-      } //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
-      let show: boolean =
-        new Map(JSON.parse(localStorage.getItem("showActors")))
-          .get(actor) as boolean;
+      if (actor.EN === "CommentText") return; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
+      let show =  JSON.parse(localStorage.getItem("showActors")).filter(el => el[0].AR === actor.AR)[0][1] as boolean;
       btn = createBtn(
         "button",
         "button",
@@ -1600,15 +1595,14 @@ function showSettingsPanel() {
         {
           event: "click",
           fun: () => {
-            let stored = new Map(JSON.parse(localStorage.getItem("showActors"))).get(actor) as boolean;
-            show = !stored; //inversing the value of "show"
-            showActors.set(actor, show);
+            show = !show;
+            showActors.filter(el=>el[0].EN === actor.EN)[0][1] = show;
             btn.classList.toggle("langBtnAdd");
             //changing the background color of the button to red by adding 'langBtnAdd' as a class
-            if (actor.EN === "Comment") {
-              showActors.set("CommentText", show);
+            if (actor.EN === "Comments") {
+              showActors.filter(el=>el[0].EN === "CommentText")[0][1] = show;
             } //setting the value of 'CommentText' same as 'Comment'
-            localStorage.showActors = JSON.stringify(Array.from(showActors)); //adding the new values to local storage
+            localStorage.showActors = JSON.stringify(showActors); //adding the new values to local storage
             if (containerDiv.children) {
               //Only if some prayers text is already displayed
               showChildButtonsOrPrayers(lastClickedButton); //we re-click the last button to refresh the displayed text by adding or removing the actor according to the new setings chice made by the user.
