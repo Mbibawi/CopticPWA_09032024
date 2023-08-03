@@ -68,6 +68,7 @@ function autoRunOnLoad() {
     setCopticDates()
   }
   screen.orientation.lock("portrait-secondary").catch(error=> alert(error));
+  alert(screen.orientation.type.toString())
 };
 
 /**
