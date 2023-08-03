@@ -9,7 +9,7 @@
 "dir": "auto",
 "theme_color": "#000000",
 "background_color": "#000000",
-"orientation": "any",
+"orientation": "landscape-primary",
 "icons": [
     {
         "src": "./assets/JesusChrist512x512.png",
