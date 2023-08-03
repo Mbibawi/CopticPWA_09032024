@@ -67,6 +67,7 @@ function autoRunOnLoad() {
   } else {
     setCopticDates()
   }
+  screen.orientation.lock("portrait-secondary");
 };
 
 /**
