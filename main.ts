@@ -73,8 +73,6 @@ function autoRunOnLoad() {
 };
 
 /**
- *
- * @param firstElement {string} - this is the id of the prayer in the prayersArray
  * @param {string[]} tblRow - an array of the text of the prayer which id matched the id in the idsArray. The first element in this array is the id of the prayer. The other elements are, each, the text in a given language. The prayers array is hence structured like this : ['prayerID', 'prayer text in Arabic', 'prayer text in French', 'prayer text in Coptic']
  * @param {string[]} languagesArray - the languages available for this prayer. The button itself provides this array from its "Languages" property
  * @param {string[]} userLanguages - a globally declared array of the languages that the user wants to show.
@@ -1723,19 +1721,16 @@ function showSettingsPanel() {
           select.addEventListener('change', processSelection)
           function processSelection() {
             let entry = select.selectedOptions[0].innerText;
-            if (entry === select.options[0].innerText) return;
-            if (entry === 'Fun("arrayName", "Table\'s Title")') entry = prompt('Provide the function and the parameters', entry);
+            if (entry === select.options[0].innerText) return; //if the selection is the 1st option (which is 'Choose from the list'), we return
+            if (entry === editable[2]) entry = prompt('Provide the function and the parameters', entry);
           if (entry.includes('Fun(')) {
             eval(entry);
             return
           }
           
           if (entry) containerDiv.dataset.arrayName = entry;
-            let tablesArray: string[][][];
-            if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title']]];
-            if(!tablesArray) tablesArray = eval(entry);
-            if (!tablesArray) return;
-          editingMode(tablesArray, getLanguages(entry));
+
+          editTablesArray(entry);
      
           }
         }

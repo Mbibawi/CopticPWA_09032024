@@ -3,33 +3,28 @@ let sequence: string[] = [];
  * This is the function that displayes the elements of the array that we want to edit
  * @param tblsArray 
  */
-async function editingMode(tblsArray: string[][][], languages: string[]) {
+async function editTablesArray(entry: string) {
+  let tablesArray: string[][][];
+  if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title', 'New Table Added', 'New Table Added']]];
+  if(!tablesArray) tablesArray = eval(entry);
+  if (!tablesArray) return;
+  let languages = getLanguages(entry);
+  if (!languages) languages = allLanguages;
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
   if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
   let el: HTMLElement;
   containerDiv.innerHTML = ""; //we empty the containerDiv
-  tblsArray.map(
-  //We will create html elements (rows) for each element in each table in the tblsArray
-    (table) => {
-    for (let i = 0; i < table.length; i++) {
-      el = createHtmlElementForPrayerEditingMode(
-        table[i][0],
-        table[i],
-        languages,
-        allLanguages,
-        table[i][0].split("&C=")[1],
-        containerDiv,
-        i
-      );
-      if (el) {
-        //We make the paragraph children of each row, editable
-        Array.from(el.children).map(
-          (c: HTMLElement) => c.contentEditable = "true"
-        );
-      }
-    }
+  
+  //We create an html div element to display the text of each row of each table in tablesArray
+  tablesArray.forEach(table => {
+    table.forEach(row => {
+      el = createHtmlElementForPrayerEditingMode(row, languages);
+      //We make the paragraph children of each row, editable
+      if (el) Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true");
     });
+  });
+  
   //We add the editing buttons
   addEdintingButtons();
   //Setting the CSS of the newly added rows
@@ -64,6 +59,7 @@ function addEdintingButtons(getButtons?:Function[]) {
     addTableToSequenceBtn,
     exportSequenceBtn,
     addRowBtn,
+    addColumnBtn,
     deleteRowBtn,
     splitBelowBtn,
     convertCopticFontsFromAPIBtn,
@@ -84,7 +80,16 @@ function addRowBtn(btnsDiv:HTMLElement){
      "Add Row"
      );
      btnsDiv.appendChild(newButton);
-}
+};
+
+function addColumnBtn(btnsDiv:HTMLElement){
+  let newButton= createEditingButton(
+     () => addNewColumn(document.getSelection().focusNode as HTMLElement),
+     "Add Column"
+     );
+     btnsDiv.appendChild(newButton);
+};
+
 
   function saveToLocalStorageBtn(btnsDiv:HTMLElement){
     let newButton= createEditingButton(() => saveModifiedArray(), "Save");
@@ -95,8 +100,20 @@ function addRowBtn(btnsDiv:HTMLElement){
  * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
  */
 function exportToJSFileBtn(btnsDiv: HTMLElement) {
+  let today = new Date();
+  let fileName = containerDiv.dataset.arrayName
+    + '_[ModifiedOn'
+    + String(today.getDate())
+    + String(today.getMonth())
+    + String(today.getFullYear())
+    + 'at'
+    + String(today.getHours())
+    +'h'
+    + String(today.getMinutes())
+    + '].js';
+
   //@ts-ignore
-  let newButton = createEditingButton(() => console.save(saveModifiedArray(), 'ModifiedArray.js'), "Export To JS");
+  let newButton = createEditingButton(() => console.save(saveModifiedArray(), fileName), "Export To JS");
   btnsDiv.appendChild(newButton);
 }
 
@@ -310,9 +327,8 @@ function createEditingButton(
   return btnHtml
 }
 
-function saveModifiedArray() {
+function saveModifiedArray():string {
   let htmlRows = containerDiv.querySelectorAll(".Row"), //we retriev all the divs with 'Row' class from the DOM
-    tableHtmlRows: NodeListOf<HTMLDivElement>,
     table: string[][],
     updated: Set<string> = new Set(),
     newArray: string[][][] = [],
@@ -325,110 +341,108 @@ function saveModifiedArray() {
     }
   );
 
-  updated.forEach((t) => processTable(t)); //for each title in the set, we will retrieve the text in arrays each representing a row
+  updated.forEach((tableTitle) => processTablesTitles(tableTitle)); //for each title in the set, we will retrieve the text in arrays each representing a row
 
-  function processTable(title: string) {
+  function processTablesTitles(tableTitle: string) {
     newArray.push([]); //this is an emepty array for the table
     table = newArray[newArray.length - 1];
-    containerDiv
-      .querySelectorAll("div.Row")
-      .forEach((div: HTMLElement) => {
-        if (div.dataset.root.split("&C=")[0] === title.split("&C=")[0]) {
-          //if the data-root of the div matches exactly the the title
+    Array.from(containerDiv
+      .querySelectorAll("div.Row"))
+      .filter((div: HTMLElement) =>
+        baseTitle(div.dataset.root) === baseTitle(tableTitle))
+          .forEach((div: HTMLElement) => {
             table
                 .push(
                     Array.from(div.querySelectorAll("p"))
-                        .map((p: HTMLElement) => p.innerText)
+                        .map((p: HTMLElement) => p.innerText)//we are pushing to table a new array containing the innerText of each 'p' html element child of the div (eg.: ['innertText paragraph1', 'innertText paragraph2', etc])
           );
           table[table.length - 1].unshift(div.dataset.root); //adding the title as 1st element to the row that we've just pushed to table
-        }
       });
   }
 
   console.log("newArray = ", newArray);
-  let text = replacePrefixes(newArray);
+  let text = processTablesArray(newArray);
   localStorage.editedText = text;
   console.log(localStorage.editedText);
   return text
 }
 
-function replacePrefixes(array: string[][][]) {
+function processTablesArray(tablesArray: string[][][]):string {
   //Open Array of Tables
   let text: string = "[";
-  (function convertArrayToText() {
-    array.forEach((table: string[][]) => {
-      processTable(table);
-    });
-  })();
+  tablesArray.forEach((table: string[][]) => {processTable(table)});
 
   function processTable(table: string[][]) {
     //open table array
     text += "[\n";
     table.forEach((row: string[]) => {
-      processRow(row);
+      processTableRow(row);
     });
     //close table
     text += "], \n";
-  }
-  function processRow(row: string[]) {
+  };
+  function processTableRow(row: string[]) {
     //open row array
     text += "[\n";
     //loop row elements
-    for (let i = 0; i < row.length; i++) {
-      processStringElement(row[i], row);
-    }
+    row.forEach((element:string)=>processStringElement(element, row))
     //close row
     text += "], \n";
-  }
+  };
 
   function processStringElement(element: string, row: string[]) {
     //for each string element in row[]
     element = element.replaceAll('"', '\\"'); //replacing '"" by '\"'
+    element = element.replaceAll('\n', '\\n');
 
     if (row[0].endsWith("&C=Title"))
       element = element
-        .replaceAll(String.fromCharCode(10134), "")
-        .replaceAll(String.fromCharCode(10133), ""); //removing the+and - characters from the titles
-    element = element.replaceAll('\n', '\\n');
+        .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
+        .replaceAll(String.fromCharCode(plusCharCode +1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
+
     text += '"'+element+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
-  }
-  return replaceText(text)+"]";
+  };
+  text = replacePrefixes(text);
+  text = containerDiv.dataset.arrayName + "= " + text;
+  text += "];";
+  return  text
 }
 
-function replaceText(text: string): string {
-  text = text.replaceAll('"'+Prefix.bookOfHours, 'Prefix.bookOfHours+"');
-  text = text.replaceAll('"'+Prefix.commonDoxologies, 'Prefix.commonDoxologies+"');
-  text = text.replaceAll('"'+Prefix.commonIncense, 'Prefix.commonIncense+"');
-  text = text.replaceAll('"'+Prefix.commonPrayer, 'Prefix.commonPrayer+"');
-  text = text.replaceAll('"'+Prefix.communion, 'Prefix.communion+"');
-  text = text.replaceAll('"'+Prefix.cymbalVerses, 'Prefix.cymbalVerses+"');
-  text = text.replaceAll('"'+Prefix.fractionPrayer, 'Prefix.fractionPrayer+"');
-  text = text.replaceAll('"'+Prefix.gospelResponse, 'Prefix.gospelResponse+"');
-  text = text.replaceAll('"'+Prefix.gospelVespers, 'Prefix.gospelVespers+"');
-  text = text.replaceAll('"'+Prefix.incenseDawn, 'Prefix.incenseDawn+"');
-  text = text.replaceAll('"'+Prefix.incenseVespers, 'Prefix.incenseVespers+"');
-  text = text.replaceAll('"'+Prefix.massCommon, 'Prefix.massCommon+"');
-  text = text.replaceAll('"'+Prefix.massStBasil, 'Prefix.massStBasil+"');
-  text = text.replaceAll('"'+Prefix.massStCyril, 'Prefix.massStCyril+"');
-  text = text.replaceAll('"'+Prefix.massStGregory, 'Prefix.massStGregory+"');
-  text = text.replaceAll('"'+Prefix.massStJohn, 'Prefix.massStJohn+"');
-  text = text.replaceAll('"'+Prefix.psalmResponse, 'Prefix.psalmResponse+"');
-  text = text.replaceAll('"'+Prefix.praxisResponse, 'Prefix.praxisResponse+"');
-//Readings
-  text = text.replaceAll('"'+Prefix.synaxarium, 'Prefix.synaxarium+"');
-  text = text.replaceAll('"'+Prefix.stPaul, 'Prefix.stPaul+"');
-  text = text.replaceAll('"'+Prefix.katholikon, 'Prefix.katholikon+"');
-  text = text.replaceAll('"'+Prefix.praxis, 'Prefix.praxis+"');
-  text = text.replaceAll('"'+Prefix.propheciesDawn, 'Prefix.propheciesDawn+"');
-  text = text.replaceAll('"'+Prefix.gospelDawn, 'Prefix.Prefix.gospelDawn+"');
-  text = text.replaceAll('"'+Prefix.gospelMass, 'Prefix.Prefix.gospelMass+"');
-  text = text.replaceAll('"'+Prefix.gospelNight, 'Prefix.Prefix.gospelNight+"');
-  text = text.replaceAll('"'+Prefix.gospelVespers, 'Prefix.Prefix.gospelVespers+"');
-//Seasonal 
-  text = text.replaceAll(giaki.AR, '"+giaki.AR+"');
-  text = text.replaceAll(giaki.FR, '"+giaki.FR+"');
-  text = text.replaceAll(giaki.COP, '"+giaki.COP+"');
-  text = text.replaceAll(giaki.CA, '"+giaki.CA+"');
+function replacePrefixes(text: string): string {
+  text = text
+    .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
+    .replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies+"')
+    .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
+    .replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"')
+    .replaceAll('"' + Prefix.communion, 'Prefix.communion+"')
+    .replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"')
+    .replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"')
+    .replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"')
+    .replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"')
+    .replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"')
+    .replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"')
+    .replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil+"')
+    .replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril+"')
+    .replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory+"')
+    .replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"')
+    .replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"')
+    .replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"')
+    //Readings
+    .replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"')
+    .replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"')
+    .replaceAll('"' + Prefix.katholikon, 'Prefix.katholikon+"')
+    .replaceAll('"' + Prefix.praxis, 'Prefix.praxis+"')
+    .replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn+"')
+    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+    .replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn+"')
+    .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
+    .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
+    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+    //Seasonal 
+    .replaceAll(giaki.AR, '"+giaki.AR+"')
+    .replaceAll(giaki.FR, '"+giaki.FR+"')
+    .replaceAll(giaki.COP, '"+giaki.COP+"')
+    .replaceAll(giaki.CA, '"+giaki.CA+"');
   return text;
 }
 
@@ -470,25 +484,54 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   }
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
+function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
+  if (htmlParag.tagName !== 'P') return alert('The html element passed to addNewColumn is not a paragraph');
+  let htmlRow = getHtmlRow(htmlParag) as HTMLElement;
+  if (!htmlRow) return;
+  let langClass = prompt('You must proivde a language class (like "AR", "FR", etc. for the new column. It must not be more than 3 letters, and can be either uper case or lower case', 'AR').toUpperCase();
+  if (!langClass || langClass.length > 3) return alert('You didn\'t provide a valid language class');
+  let newColumn:HTMLElement = document.createElement('p');
+  newColumn.contentEditable = 'true';
+  newColumn.classList.add(langClass);
+  newColumn.lang = langClass;
+  newColumn.innerText = 'New column added with class = ' + newColumn.lang;
+  htmlRow.appendChild(newColumn);
+  newColumn.dataset.isNew = "isNewColumn";
+  htmlRow.style.gridTemplateColumns = ((100 / htmlRow.children.length).toString() + '% ').repeat(htmlRow.children.length);
+  
+
+  let languages = Array.from(htmlRow.children).map((p: HTMLElement) => p.lang);
+  let areas:string = languages.join(' ');
+  areas = prompt('Do we want to rearrange the languages areas?', areas);
+  
+    areas
+      .split(' ')
+      .map((language) => {
+        let parag =
+          Array.from(htmlRow.children)
+            .filter((p: HTMLElement) => p.lang === language)[0] as HTMLElement;
+        htmlRow.appendChild(parag); //we are arranging the html paragraphs elements in the same order as provided by the user when prompted
+      });
+    areas = areas.replaceAll(',', '');
+    htmlRow.style.gridTemplateAreas = '"' + areas + '"';
+
+  return htmlRow;
+}
 
 function createHtmlElementForPrayerEditingMode(
-  firstElement: string,
-  prayers: string[],
+  tblRow: string[],
   languagesArray: string[],
-  userLanguages: string[],
-  actorClass: string,
   position:
     | HTMLElement
-    | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv,
-  rowIndex?: number
+    | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv
 ): HTMLDivElement {
   let row: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string;
 
   row = document.createElement("div");
-  if (rowIndex) row.dataset.index = rowIndex.toString();
   row.classList.add("Row"); //we add 'Row' class to this div
-  let dataRoot: string = firstElement;
+  let dataRoot: string = tblRow[0];
   row.dataset.root = dataRoot;
+  let actorClass = tblRow[0].split('&C=')[1];
   if (actorClass && !actorClass.includes("Title")) {
     // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TitleRow" (see below)
     row.classList.add(actorClass);
@@ -499,7 +542,7 @@ function createHtmlElementForPrayerEditingMode(
     }); //we also add a 'click' eventListener to the 'TitleRow' elements
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
-  for (let x = 1; x < prayers.length; x++) {
+  for (let x = 1; x < tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
     if (
       actorClass &&
@@ -511,10 +554,11 @@ function createHtmlElementForPrayerEditingMode(
       lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-    if (actorClass == "Title") {
+    if (actorClass === "Title" || actorClass === 'SubTitle') {
       //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
       row.classList.add("TitleRow");
-      row.id = prayers[0];
+      if (actorClass === 'SubTitle') row.classList.replace('TitleRow', 'SubTitle');
+      row.id = tblRow[0];
       row.tabIndex = 0; //in order to make the div focusable by using the focus() method
     } else if (actorClass) {
       //if the prayer is a comment like the comments in the Mass
@@ -525,7 +569,7 @@ function createHtmlElementForPrayerEditingMode(
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = dataRoot;
-    text = prayers[x];
+    text = tblRow[x];
     p.classList.add(lang.toUpperCase());
     p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
@@ -565,11 +609,8 @@ function addTableToSequence(htmlParag: HTMLElement) {
     );
     tableRows.forEach((row: HTMLDivElement) => {
       createHtmlElementForPrayerEditingMode(
-        row.dataset.root,
         Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
-        ["AR", foreingLanguage],
-        ["AR", foreingLanguage],
-        row.dataset.root.split("&C=")[1],
+        allLanguages,
         document.getElementById("showSequence")
       );
     });
@@ -620,13 +661,8 @@ function showSequence(
     tableRows = container.querySelectorAll(getDataRootSelector(title, true));
     tableRows.forEach((row) => {
       createHtmlElementForPrayerEditingMode(
-        row.dataset.root,
-        Array.from(row.querySelectorAll("p")).map(
-          (p: HTMLElement) => p.innerText
-        ),
-        ["AR", foreingLanguage],
-        ["AR", foreingLanguage],
-        row.dataset.root.split("&C=")[1],
+        Array.from(row.querySelectorAll("p")).map((p: HTMLElement) => p.innerText),
+        allLanguages,
         newDiv
       );
     });
@@ -756,11 +792,8 @@ function showTablesFun(arrayName: string, title: string) {
         (row:string[]) =>
     {
           el = createHtmlElementForPrayerEditingMode(
-            row[0],
             row,
-            languages,
-            allLanguages,
-            row[0].split('&C=')[1]
+            allLanguages
           );
       
           if (el) Array.from(el.children).map((child: HTMLElement) =>{ if(child.tagName === 'P') child.contentEditable = "true"});
@@ -792,6 +825,7 @@ function getLanguages(arrayName):string[] {
   let languages:string[] = prayersLanguages;
   if (arrayName.startsWith('ReadingsArrays.')) languages = readingsLanguages;
   if (arrayName.startsWith('ReadingsArrays.SynaxariumArray')) languages = ['FR', 'AR'];
+  if (arrayName === 'NewTable') languages = ['AR', 'FR'];
   return languages
 }
 
