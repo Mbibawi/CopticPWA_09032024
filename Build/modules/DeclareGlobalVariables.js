@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v4.5.0 (added screen orientation)';
+const version = 'v4.5.1 (added screen orientation)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
