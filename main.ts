@@ -1313,10 +1313,13 @@ async function showInlineButtonsForOptionalPrayers(
         onClick: () => {
           //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
           hideInlineButtonsDiv();
-          let displayed =  containerDiv
-            .querySelectorAll('div[data-group="optionalPrayer"]')
-          if (displayed.length > 0) {              
-            displayed.forEach((el) => el.remove());
+          let displayedFraction = containerDiv
+            .querySelectorAll('div[data-group="optionalPrayer"]') as NodeListOf<HTMLElement>;
+          if (displayedFraction.length > 0) {
+            //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute
+            containerDiv
+              .querySelectorAll('div[data-root="' + displayedFraction[0].dataset.root + '"]')
+              .forEach(div => div.remove());
             }
 
           showPrayers(inlineBtn, false, false, {
@@ -1721,7 +1724,11 @@ function showSettingsPanel() {
           select.addEventListener('change', processSelection)
           function processSelection() {
             let entry = select.selectedOptions[0].innerText;
-            if (entry === select.options[0].innerText) return; //if the selection is the 1st option (which is 'Choose from the list'), we return
+
+              //if the selection is te same as what is already selected (which is 'Choose from the list'), we return
+              if (entry === select.options[0].innerText
+                && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')) return
+            
             if (entry === editable[2]) entry = prompt('Provide the function and the parameters', entry);
           if (entry.includes('Fun(')) {
             eval(entry);

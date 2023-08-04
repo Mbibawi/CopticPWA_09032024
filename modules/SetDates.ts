@@ -24,6 +24,11 @@ async function setCopticDates(today?: Date) {
 	//Showing the dates and the version
 	document.getElementById('homeImg').insertAdjacentElement('beforebegin', showDates());
 };
+/**
+ * 
+ * @param today 
+ * @returns 
+ */
 function convertGregorianDateToCopticDateExperimental(today?:number): number[]{
 	let tout1: number = new Date('1883.09.11').setUTCHours(0, 0, 0, 0); //this is the Gregorian date for the 1st of Tout of the Coptic year 1600 
 	
@@ -48,25 +53,35 @@ function convertGregorianDateToCopticDateExperimental(today?:number): number[]{
 	let numberOfExtraDays = Math.floor((diffrenceInYears)/ 4); //how many 4  years during the period. For each set of 4 years, we will need to substract a day from daysInCurrentYear
 	console.log('number of  extra days = ', numberOfExtraDays);
 
-	daysInCurrentYear = daysInCurrentYear - numberOfExtraDays +1;
+	daysInCurrentYear = daysInCurrentYear - numberOfExtraDays +2;
 											console.log('days in current year recalculated =', daysInCurrentYear);
 
 	let copticmonth = Math.ceil(daysInCurrentYear / 30);//we use Math.ceil, to round up the number of month: if we are more than 10, it means we are during the 11th month
 											console.log('coptic month = ', copticmonth);
-	
+	//if (copticmonth === 0) copticmonth = 1;
+
 	let copticday = Math.abs(Math.ceil(daysInCurrentYear % 30));
 											console.log('copticday = ', copticday);
 
 
 	copticYear += Math.floor(diffrenceInYears);
-							console.log('coptic year = ', copticYear);
-	if (new Date(today).getFullYear() % 4 === 3 && copticmonth ===1 && copticday ===1) {
+	console.log('coptic year = ', copticYear);
+	
+	if (new Date(today).getFullYear() % 4 === 3
+		&& copticmonth <=0
+		&& copticday <=0) {
 		//We are in a coptic leap year of 366 days
 		console.log('we are in a leap year')
 		copticYear -= 1;
-		copticmonth += 12;
-		copticday += 5;
+		copticmonth = 13;
+		copticday = 6;
 	}
+	if (copticmonth === 13
+		&& copticday > 6) {
+		copticday -= 6;
+		copticmonth = 1;
+		copticYear += 1;
+	};
 
 	return [copticday, copticmonth, copticYear]
 }
@@ -95,7 +110,7 @@ function convertGregorianDateToCopticDate(date: Date): string {
 	} else if (month === 7) {
 		day < 8 ? (dm = [23, 10]) : (dm = [-7, 11]);
 	} else if (month === 8) {
-		day < 7 ? (dm = [25, 11]) : (dm = [-6, 12]);
+		day < 7 ? (dm = [24, 11]) : (dm = [-6, 12]);
 	} else if (month === 9) {
 		if (day < 6) {
 			dm = [25, 12];

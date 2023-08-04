@@ -9,6 +9,7 @@ async function editTablesArray(entry: string) {
   if (confirm('Do you want to edit a single table in the array?')) containerDiv.dataset.singleTable = 'true';
   if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title', 'New Table Added', 'New Table Added']]];
   if (!tablesArray) tablesArray = eval(entry);
+  if (!tablesArray && containerDiv.dataset.singleTable === 'true') alert('We could not find a table with the title you provided');
   if (!tablesArray) return;
   if (containerDiv.dataset.singleTable = 'true') {
     let tableTitle = eval(prompt('Provide the name of the table you want to edit'));
