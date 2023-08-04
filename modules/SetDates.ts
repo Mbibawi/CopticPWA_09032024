@@ -10,11 +10,12 @@ async function setCopticDates(today?: Date) {
 	}
 	todayDate = today;
 	weekDay = todayDate.getDay();
-	copticDate = convertGregorianDateToCopticDate(todayDate);
+	convertGregorianDateToCopticDate();
+	//copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
-	copticMonth = copticDate.slice(2, 4);
+	//copticMonth = copticDate.slice(2, 4);
 	copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
-	copticDay = copticDate.slice(0, 2);
+	//copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
 		if (copticFasts.indexOf(Season) > -1 || (Season != Seasons.PentecostalDays && weekDay === (3 || 5))) {
 			//i.e. if we are in a fasting day 
@@ -25,72 +26,56 @@ async function setCopticDates(today?: Date) {
 	document.getElementById('homeImg').insertAdjacentElement('beforebegin', showDates());
 };
 /**
- * 
- * @param today 
- * @returns 
+ * Converts the provided Gregorian date into Coptic Date
+ * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
+ * @returns {number[]} - an array containing the following elements: [coptic day, coptic month, coptic year ]
  */
-function convertGregorianDateToCopticDateExperimental(today?:number): number[]{
+function convertGregorianDateToCopticDate(today?: number): number[]{
+	
 	let tout1: number = new Date('1883.09.11').setUTCHours(0, 0, 0, 0); //this is the Gregorian date for the 1st of Tout of the Coptic year 1600 
 	
-	let copticYear: number = 1600; //this is the coptic year starting on Sept 11, 1883
+	let year: number = 1600; //this is the coptic year starting on Sept 11, 1883
 	
 	today ?
-		today = new Date(today).setUTCHours(0, 0, 0, 0)
-		: today = new Date().setUTCHours(0,0,0,0);
+		today = new Date(today).setHours(0, 0, 0, 0)
+		: today = new Date().setHours(0, 0, 0, 0);
 	
 	let differenceInDays = (today - tout1) / calendarDay;
-	console.log('diffrence in days = ', differenceInDays)
-	
-	
-	let diffrenceInYears = Math.floor(differenceInDays / 365); //This gives the number of full 365 days Coptic years ellapsed
-	console.log('diffrence in years = ', diffrenceInYears);
-										
-	
-	let daysInCurrentYear = differenceInDays % 365;//This will give the number of days from which we will extract 1 day for each 4 Coptic years ellapsed  
-									console.log('days in current year = ', daysInCurrentYear);
-	
 
-	let numberOfExtraDays = Math.floor((diffrenceInYears)/ 4); //how many 4  years during the period. For each set of 4 years, we will need to substract a day from daysInCurrentYear
-	console.log('number of  extra days = ', numberOfExtraDays);
+	let diffrenceInYears = Math.floor(differenceInDays / 365.25); //This gives the number of full Coptic years (based on 365.25 day/year)
 
-	daysInCurrentYear = daysInCurrentYear - numberOfExtraDays +2;
-											console.log('days in current year recalculated =', daysInCurrentYear);
+	let daysInCurrentYear = ((differenceInDays / 365.25) - Math.trunc(differenceInDays / 365.25)) * 365.25;
+	if (daysInCurrentYear === 0) daysInCurrentYear += 1;
+	daysInCurrentYear = Math.ceil(daysInCurrentYear);
 
-	let copticmonth = Math.ceil(daysInCurrentYear / 30);//we use Math.ceil, to round up the number of month: if we are more than 10, it means we are during the 11th month
-											console.log('coptic month = ', copticmonth);
-	//if (copticmonth === 0) copticmonth = 1;
+	let month = Math.ceil(daysInCurrentYear / 30);
+	if (daysInCurrentYear % 30 === 0) month += 1;
 
-	let copticday = Math.abs(Math.ceil(daysInCurrentYear % 30));
-											console.log('copticday = ', copticday);
+	let day = Math.ceil(daysInCurrentYear % 30);
+	if (day > 30) day -= 30;
 
-
-	copticYear += Math.floor(diffrenceInYears);
-	console.log('coptic year = ', copticYear);
-	
-	if (new Date(today).getFullYear() % 4 === 3
-		&& copticmonth <=0
-		&& copticday <=0) {
-		//We are in a coptic leap year of 366 days
-		console.log('we are in a leap year')
-		copticYear -= 1;
-		copticmonth = 13;
-		copticday = 6;
+	if (new Date(today).getFullYear() % 4 !== 3
+		&& month === 13
+		&& day === 6) {
+		//We are not in a leap year
+		day = 1;
+		month = 1;
+		year += 1;
 	}
-	if (copticmonth === 13
-		&& copticday > 6) {
-		copticday -= 6;
-		copticmonth = 1;
-		copticYear += 1;
-	};
+	year += Math.floor(diffrenceInYears);
 
-	return [copticday, copticmonth, copticYear]
+	copticDay = day.toString();
+	copticMonth = month.toString();
+	copticDate = copticDay + copticMonth;
+	copticYear = year.toString();
+	return [day,month, year]
 }
 /**
  * Converts the Gregorian date to a string expressing the coptic date (e.g.: "0207")
  * @param {Date} date  - a date value expressing any Gregorian calendar date
  * @returns {string} - a string expressing the coptic date
  */
-function convertGregorianDateToCopticDate(date: Date): string {
+function convertGregorianDateToCopticDate_Old(date: Date): string {
 	let day: number = date.getDate();
 	let month: number = date.getMonth() + 1; //we add one because the months count starts at 0
 	let coptMonth: number, coptDay: number, dm: number[];
@@ -362,19 +347,22 @@ function isItSundayOrWeekDay(
  */
 function showDates(newDiv?:HTMLDivElement):HTMLDivElement {
 	if (!newDiv) newDiv = document.getElementById('dateDiv') as HTMLDivElement;
-	if(!newDiv) newDiv = document.createElement('div');	
+	if (!newDiv) newDiv = document.createElement('div');
+	newDiv.style.padding = '3px 20px';
 	newDiv.id = 'dateDiv';
 	newDiv.style.fontSize = '8pt';
 	newDiv.innerText =
 		"Today: " +
 		todayDate.toString() +
-		" , Coptic:  " +
+		" , Coptic date :  " +
 		copticDay +
 		"/" +
-		copticMonth +
-		". Readings =" +
+	copticMonth +
+	"/" +
+		copticYear +
+		". Coptic Readings: " +
 		copticReadingsDate +
-		'. And we ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
+		'.\n We ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
 		" . Season = " + Season +
 		" . Version = " + version;
 	return newDiv

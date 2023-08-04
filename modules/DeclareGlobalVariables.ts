@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.5.3 (fixes to the amplified text, fixes to the display of the fraction prayers, removed psalms and conclusion in Presentation Mode)';
+const version: string = 'v4.5.4 (intorduced new method for calculating the coptic date)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -299,6 +299,7 @@ let selectedDate: number, //This is the date that the user might have manually s
     copticDate: string, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
     copticMonth: string, //same comment as above
     copticDay: string, //same comment as above
+    copticYear: string, //same comment as above
     copticReadingsDate: string, //This is the date of the day's readings (gospel, Katholikon, praxis, etc.). It does not neceissarly correspond to the copticDate
     Season: string, //This is a value telling whether we are during a special period of the year like the Great Lent or the 50 Pentecostal days, etc.
     weekDay: number; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0

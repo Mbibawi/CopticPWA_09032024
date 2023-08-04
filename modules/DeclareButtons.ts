@@ -1274,8 +1274,17 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
   languages: [...readingsLanguages],
   onClick: () => {
     let today: Date = new Date(todayDate.getTime() + calendarDay); //We create a date corresponding to the  the next day. This is because in the PowerPoint presentations from which the gospel text was retrieved, the Vespers gospel of each day is linked to the day itself not to the day before it: i.e., if we are a Monday and want the gospel that will be read in the Vespers incense office, we should look for the Vespers gospel of the next day (Tuesday).
+
+   /* let date: string = setSeasonAndCopticReadingsDate(
+      convertGregorianDateToCopticDate(today.getTime()),
+      today
+    );*/
+
     let date: string = setSeasonAndCopticReadingsDate(
-      convertGregorianDateToCopticDate(today),
+      convertGregorianDateToCopticDate(today.getTime())
+        .splice(2, 1)
+      .join(',')
+      .replaceAll(',', ''),
       today
     );
     //We add the psalm reading to the begining of the prayersSequence
@@ -1644,8 +1653,15 @@ function getVespersGospel(prayers: string[]): string[] {
   if (todayDate.getHours() > 15) {
     //we check that we are in the afternoon
     let date = new Date(todayDate.getTime() + calendarDay); //we create a date and sets it to the date of the next day
-    let readingsDate = setSeasonAndCopticReadingsDate(
+    /*let readingsDate = setSeasonAndCopticReadingsDate(
       convertGregorianDateToCopticDate(date)
+    ); //we get the coptic date corresponding to the date we created, and pass it to setSeaonAndCopticReadingsDate() to retrieve the reading date from this function*/
+
+    let readingsDate = setSeasonAndCopticReadingsDate(
+        convertGregorianDateToCopticDate(date.getTime())
+        .splice(2, 1)
+      .join(',')
+      .replaceAll(',', ''),
     ); //we get the coptic date corresponding to the date we created, and pass it to setSeaonAndCopticReadingsDate() to retrieve the reading date from this function
     prayers[1] += "&D=" + readingsDate; //we add the reading date to
     return prayers;
