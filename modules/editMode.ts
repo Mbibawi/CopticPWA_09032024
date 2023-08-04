@@ -112,10 +112,10 @@ function exportToJSFileBtn(btnsDiv: HTMLElement) {
   let fileName = containerDiv.dataset.arrayName
     + '_[ModifiedOn'
     + String(today.getDate())
-    + String(today.getMonth())
+    + String(today.getMonth()+1)//we add 1 because the months are counted from 0
     + String(today.getFullYear())
     + 'at'
-    + String(today.getHours())
+    + String(today.getHours() +1)
     +'h'
     + String(today.getMinutes())
     + '].js';

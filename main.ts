@@ -1731,8 +1731,8 @@ function showSettingsPanel() {
             let entry = select.selectedOptions[0].innerText;
 
               //if the selection is te same as what is already selected (which is 'Choose from the list'), we return
-              if (entry === select.options[0].innerText
-                && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')) return
+            if (entry === select.options[0].innerText) return;
+            if (!confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')) return;
             
             if (entry === editable[2]) entry = prompt('Provide the function and the parameters', entry);
           if (entry.includes('Fun(')) {

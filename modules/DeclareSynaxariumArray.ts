@@ -1,4 +1,4 @@
-ReadingsArrays.SynaxariumArray = [[
+ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=0101&C=Title", 
   "1er Thout\n1) Jour de l’an copte\n2) Commémoration de la guérison de Job le juste;\n3) Martyre de l’apôtre saint Barthélémy;\n4) Décès de saint Mylious, 3ème pape d’Alexandrie;\n5) Décès du pape Marc V – le 98ème patriarche de saint Marc", 
@@ -5616,42 +5616,52 @@ ReadingsArrays.SynaxariumArray = [[
   [
   Prefix.synaxarium+"&D=2303&C=Title", 
   "23 Athor\n1) Décès de Saint Corneille, le centurion ;\n2) Consécration de l’église de Sainte Marina ", 
-  " 23 هاتور\nنياحة القديس كرنيليوس قائد المائة\nتذكار تكريس كنيسة القديسة مارينا الشهيدة\n", 
+  "23 هاتور\nنياحة القديس كرنيليوس قائد المائة\nتذكار تكريس كنيسة القديسة مارينا الشهيدة\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
-  "Nous commémorons en ce jor le décès de saint Corneille (كرنليوس) qui était Romain et le centurion (قائد المئة) de la cohorte Italique (الكتيبة الإيطالية) qui se trouvait à Césarée (قيصرية). Il adorait les astres. Lorsqu’il entendit parler des apôtres et qu’il constata les miracles que Dieu faisait par leurs intermédiaires, il en fut très surpris. Par conséquent, il renonça à adorer les astres et se mit à prier et à jeûner en pratiquant la charité. Dans sa prière il disait : « Ô Dieu, guide-moi et montre-moi ton chemin. » Dieu le prit en compassion, agréa sa rière et ses actions de charité. Vers la neuvième heure du jour, il eut la vision très claire d’un ange de Dieu qui entrait chez lui et lui disait : « Corneille ! » Celui-ci le fixa du regard et, saisi de crainte, demanda : « Qu’y a-t-il, Seigneur ? » L’ange lui répondit : « Tes prières et tes aumônes sont montées devant Dieu pour qu’il se souvienne de toi. Et maintenant, envoie des hommes à Jaffa et fais venir un certain Simon surnommé Pierre : il est logé chez un autre Simon qui travaille le cuir et dont la maison est au bord de la mer. Il te dira ce que tu dois faire. »", 
-  "", 
+  "Nous commémorons en ce jour le décès de saint Corneille (كرنليوس) qui était Romain et le centurion (قائد المئة) de la cohorte Italique (الكتيبة الإيطالية) qui se trouvait à Césarée (قيصرية).", 
+  "في مثل هذا اليوم تنيَّح القديس كرنيليوس قائد المائة، وهو روماني الجنس، من الكتيبة الإيطالية في قيصرية.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
-  "Saint Pierre avait été informé par une vision qu’il ne devait pas faire obstruction à ce que les nations (الأمم) entrent dans la Foi. Il rencontra les envoyés de Corneille et les suivit à Césarée. Comme Pierre arrivait, Corneille vint à sa rencontre et, tombant à ses pieds, il se prosterna. Mais Pierre le releva en disant : « Lève-toi. Je ne suis qu’un homme, moi aussi. » Tout en conversant avec lui, il entra et il trouva beaucoup de gens réunis. Il leur dit : « Vous savez qu’un Juif n’est pas autorisé à fréquenter un étranger ni à entrer en contact avec lui. Mais à moi, Dieu a montré qu’il ne fallait déclarer interdit ou impur aucun être humain. C’est pourquoi, quand vous m’avez envoyé chercher, je suis venu sans réticence. » Pierre leur parla de la Foi en Jésus Christ, d l’Incarnation, la Rédemption, la Résurrection et l’Ascension. Il parla aussi des miracles qui se faisaient en son Nom. Corneille crut ainsi que toute sa maison, et ceux qui étaient avec lui. Ils furent baptisés et l’Esprit Saint se répandit sur eux par l’imposition des mains de saint Pierre.", 
-  "", 
+  "Il adorait les astres. Lorsqu’il entendit parler des apôtres et qu’il constata les miracles que Dieu faisait par leurs intermédiaires, il en fut très surpris. Par conséquent, il renonça à adorer les astres et se mit à prier et à jeûner en pratiquant la charité. Dans sa prière il disait : « Ô Dieu, guide-moi et montre-moi ton chemin. » Dieu le prit en compassion, agréa sa prière et ses actions de charité. Vers la neuvième heure du jour, il eut la vision très claire d’un ange de Dieu qui entrait chez lui et lui disait : « Corneille ! » Celui-ci le fixa du regard et, saisi de crainte, demanda : « Qu’y a-t-il, Seigneur ? » L’ange lui répondit : « Tes prières et tes aumônes sont montées devant Dieu pour qu’il se souvienne de toi. Et maintenant, envoie des hommes à Jaffa et fais venir un certain Simon surnommé Pierre : il est logé chez un autre Simon qui travaille le cuir et dont la maison est au bord de la mer. Il te dira ce que tu dois faire. »", 
+  "كان يعبد الكواكب، فلما سمع عن التلاميذ، ورأى الآيات التي كانت تُعمل على أيديهم. انذهل عقله، وترك عبادة الكواكب، وداوم على الصوم والصلاة والرحمة. وكان يقول: \"أيها الإله أرشدني واهدني إليك\". فتحنن الله عليه وقَبِل صلاته وصدقته. فرأى ظاهراً في رؤيا نحو الساعة التاسعة من النهار ملاكاً من الله داخلاً إليه وقائلاً له: \"يا كرنيليوس\". فلما شخص إليه ودخله الخوف قال له: \"صلواتك وصدقاتك صعدَتْ تذكاراً أمام الله. والآن أرسِلْ إلى يافا رجالاً واستدع سمعان الملقب بطرس. إنه نازل عند سمعان رجل دباغ بيته عند البحر. هو يقول لك ماذا ينبغي أن تفعل\" ( أع 10: 3 – 6).", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2303", 
+  "Saint Pierre avait été informé par une vision qu’il ne devait pas faire obstruction à ce que les nations (الأمم) entrent dans la Foi. Il rencontra les envoyés de Corneille et les suivit à Césarée. Comme Pierre arrivait, Corneille vint à sa rencontre et, tombant à ses pieds, il se prosterna. Mais Pierre le releva en disant : « Lève-toi. Je ne suis qu’un homme, moi aussi. ».", 
+  "ثم تقابل القديس بطرس الرسول مع الرجال وذهب معهم إلى قيصرية، وكان القديس قد أُعلم بإعلان إلهي أن لا يمانع في دخول الأمم إلى الإيمان (أع 10: 9 – 20). \" ولما دخل بطرس استقبله كرنيليوس وسجد واقعاً على قدميه، فأقامه بطرس قائلاً: \"قم أنا أيضاً إنسان\".", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=2303", 
+  "Tout en conversant avec lui, il entra et il trouva beaucoup de gens réunis. Il leur dit : « Vous savez qu’un Juif n’est pas autorisé à fréquenter un étranger ni à entrer en contact avec lui. Mais à moi, Dieu a montré qu’il ne fallait déclarer interdit ou impur aucun être humain. C’est pourquoi, quand vous m’avez envoyé chercher, je suis venu sans réticence. » Pierre leur parla de la Foi en Jésus Christ, d l’Incarnation, la Rédemption, la Résurrection et l’Ascension. Il parla aussi des miracles qui se faisaient en son Nom. Corneille crut ainsi que toute sa maison, et ceux qui étaient avec lui. Ils furent baptisés et l’Esprit Saint se répandit sur eux par l’imposition des mains de saint Pierre.", 
+  "ثم دخل وهو يتكلم معه ووجد كثيرين مجتمعين. فقال لهم: \"أنتم تعلمون كيف هو محرَّم على رجل يهودي أن يلتصق بأحد أجنبي أو يأتي إليه. وأما أنا فقد أراني الله أن لا أقول عن إنسان ما أنه دنس أو نجس. فلذلك جئتُ من دون مناقضة\" (أع 10: 25 – 29). ثم كلمهم بطرس عن الإيمان وعن سر التجسد والفداء والقيامة والصعود وعمل الآيات باسمه، فآمن كرنيليوس وأهل بيته والذين معه، واعتمدوا وحلَّ عليهم الروح القدس بوضع يد القديس بطرس.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
   "Par la suite, Corneille quitta l’armée et se consacra au service du Seigneur. Saint Pierre le sacra évêque de Césarée de Palestine. Il ’y installa et proclama l’Évangile parmi ses habitants. Leurs esprits s’illuminèrent par la Foi en Jésus Christ. Corneille les conforta dans leur Foi par les miracles qu’il fit parmi eux et les baptisa. Le gouverneur Démétrius (ديمتريوس) faisait partie de la foule des baptisés.", 
-  "", 
+  "فترك كرنيليوس خدمة الجُندية وتفرغ لخدمة الرب مما دعا القديس بطرس لرسامته أسقفاً على مدينة قيصرية فلسطين. فمضى إليها وبشَّر فيها بالسيد المسيح، فاستنارت عقولهم وآمنوا. ثم ثبتهم بما صنعه معهم من الآيات والمعجزات. وعمَّدهم جميعاً. وكان بينهم ديمتريوس الوالي.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
   "Et après avoir accomplison bon combat, Corneille décéda en paix.", 
-  "", 
+  "وبعد أن أكمل القديس كرنيليوس جهاده الصالح تنيَّح بسلام.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
   "Que la bénédiction de ses prières soit avec nous. Amen !", 
-  "", 
+  "بركة صلواته فلتكن معنا آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
   "Nous ommémorns assi aujourd’ui la consécration de l’église sainte Marina (مارينا) la martyre qui est à Antioche. En effet, après la fin des persécutions et de l’idolâtrie à l’époque de l’empereur Constantin, cette église fut édifiée à l’endroit où se trouvait sa dépouille.", 
-  "", 
+  "وفيه أيضاً تذكار تكريس كنيسة الشهيدة العظيمة عروس المسيح المنتخبة القديسة مارينا المجاهدة، وذلك بمدينة أنطاكية، وذلك أنه بعد انقضاء عبادة الأصنام في عهد الإمبراطور قسطنطين، بُنيت هذه الكنيسة في نفس الموضع الذي وُضعَ فيه جسدها الطاهر.", 
   ], 
   [
   Prefix.synaxarium+"&D=2303", 
   "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-  "", 
+  "بركة صلواتها فلتكن معنا، ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   ], 
   [
