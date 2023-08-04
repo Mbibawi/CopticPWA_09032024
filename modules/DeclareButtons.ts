@@ -1036,7 +1036,8 @@ const btnMassUnBaptised: Button = new Button({
                     });
               } else {
                 bookOfHoursDiv.style.display = 'grid';
-                rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]').forEach((title: HTMLDivElement) => { title.style.display = 'block' })
+                rightSideBar.querySelectorAll('div[data-group="bookOfHoursTitle"]')
+                  .forEach((title: HTMLDivElement) => { title.style.display = 'block' })
               };
               return
           };
@@ -1056,24 +1057,36 @@ const btnMassUnBaptised: Button = new Button({
                 bookOfHours.push(...btnBookOfHours.prayersArray.filter(tbl => baseTitle(tbl[0][0]) === title))
               }
             );
-
-            bookOfHours
-              .forEach((table: string[][]) =>
-                table
-                  .forEach((row: string[]) =>
+          bookOfHours
+            .forEach((table: string[][]) => {
+              table
+                .forEach((row: string[]) => {
                     createHtmlElementForPrayer(
                       row,
                       btnBookOfHours.languages,
                       undefined,
                       div)
-                  )
-              );
+                });
+            });
+            
+          setCSSGridTemplate(Array.from(div.querySelectorAll('div.Row')));
           
-            setCSSGridTemplate(Array.from(div.children) as HTMLElement[]);
+          applyAmplifiedText(Array.from(div.querySelectorAll('div.Row')));
           
           div
             .querySelectorAll('div.SubTitle')
             .forEach((subTitle: HTMLElement) => collapseText(subTitle, div));
+          
+          if (localStorage.displayMode === displayModes[1]) {
+            //If we are in the 'Presentation Mode'
+            Array.from(div.querySelectorAll('div.Row'))
+              .filter((row: HTMLElement) => row.dataset.root.includes('HourPsalm') || row.dataset.root.includes('EndOfHourPrayer'))
+              .forEach(row => row.remove());//we remove all the psalms and keep only the Gospel and the Litanies,
+            Array.from(rightSideBar.querySelector('#sideBarBtns')
+                .querySelectorAll('div.Row'))
+              .filter((row: HTMLElement) =>row.dataset.root.includes('HourPsalm') || row.dataset.root.includes('EndOfHourPrayer'))
+              .forEach(row => row.remove());//We do the same for the titles
+          }
             
             //We will append the titles of the Book of Hours to the right side Bar, with a display 'none'
             let titles = await showTitlesInRightSideBar(div.querySelectorAll('div.TitleRow, div.SubTitle'), undefined, false);

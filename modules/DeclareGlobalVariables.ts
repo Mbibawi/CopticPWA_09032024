@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.5.2 (added screen orientation - not working)';
+const version: string = 'v4.5.3 (fixes to the amplified text, fixes to the display of the fraction prayers, removed psalms and conclusion in Presentation Mode)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');

@@ -270,8 +270,8 @@ function showChildButtonsOrPrayers(
   if (btn.afterShowPrayers) btn.afterShowPrayers();
   
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-  setCSSGridTemplate(container.querySelectorAll(".Row")); //setting the number and width of the columns for each html element with class 'Row'
-  applyAmplifiedText(container.querySelectorAll("p[lang]"));
+  setCSSGridTemplate(Array.from(container.querySelectorAll('div.Row'))); //setting the number and width of the columns for each html element with class 'Row'
+  applyAmplifiedText(Array.from(container.querySelectorAll('div.Row')) as HTMLDivElement[]);
   if (btn.inlineBtns) {
     let newDiv = document.createElement("div");
     newDiv.style.display = "grid";
@@ -998,14 +998,14 @@ function buildSideBar(id: string) {
  *  @param {Boolean} clearSideBar - tells wether the right sideBar needs to be cleared
  * @param {HTMLElement|{beforeOrAfter:insertPosition, el:HtmlElement}} position - if it is an HTML Element, the newly created divs will be appended to this html element. If it is an object, the newly created divs will be placed in the position provided (the position is of type insertPosition) by the beforeOrAfter property, in relation to the html element provied in the el property
  */
-async function showPrayers(
+function showPrayers(
   btn: Button,
   clearContent = true,
   clearRightSideBar: boolean = true,
   position:
     { el: HTMLElement; beforeOrAfter: InsertPosition }
     | HTMLElement | DocumentFragment = containerDiv 
-) {
+): HTMLDivElement[] | void {
   if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) closeSideBar(leftSideBar);
   if (clearContent) containerDiv.innerHTML = "";
   if (clearRightSideBar) rightSideBar.querySelector("#sideBarBtns").innerHTML = "";
@@ -1023,17 +1023,18 @@ async function showPrayers(
     }
     p += date;
     let wordTable = findPrayerInBtnPrayersArray(p, btn);
-    if (wordTable) {
-      wordTable.map((row) => {
-        createHtmlElementForPrayer(
+    if (!wordTable) return;
+    
+    //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
+    return wordTable.map((row) => {
+        return createHtmlElementForPrayer(
           row,
           btn.languages,
           JSON.parse(localStorage.userLanguages),
           position
-        ); //row[0] is the title of the table modified as the case may be to reflect wether the row contains the titles of the prayer, or who chants the prayer (in such case the words 'Title' or '&C=' + 'Priest', 'Diacon', or 'Assembly' are added to the title)
+        );
       });
-      return;
-    }
+    
   });
 }
 
@@ -1041,23 +1042,19 @@ async function showPrayers(
  * Sets the number of columns and their widths for the provided list of html elements which style display property = 'grid'
  * @param {NodeListOf<Element>} Rows - The html elements for which we will set the css. These are usually the div children of containerDiv
  */
-async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
-  if (!Rows) return;
-
+async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
+  if (localStorage.displayMode === displayModes[1]) return;
+  if (!htmlRows) return;
   let plusSign = String.fromCharCode(plusCharCode), minusSign = String.fromCharCode(plusCharCode + 1);
 
-  Rows.forEach(
+  htmlRows.forEach(
     (row: HTMLElement) => {
+      
       //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
-      if (localStorage.displayMode === displayModes[0]) {
         row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
         row.style.gridTemplateAreas = setGridAreas(row);
-      };
-    
-      if (localStorage.displayMode === displayModes[1]) {
-        return;
-      };
+ 
 
       if (row.classList.contains('TitleRow')
         || row.classList.contains('SubTitle')) {
@@ -1115,20 +1112,28 @@ async function setCSSGridTemplate(Rows: NodeListOf<Element> | HTMLElement[]) {
     return '"' + areas.toString().split(",").join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
 };
 
-async function applyAmplifiedText(container: NodeListOf<Element>) {
-  if (localStorage.displayMode === displayModes[1]) return;
-  new Map(JSON.parse(localStorage.textAmplified)).forEach((value, key) => {
-    if (value == true) {
-      Array.from(container)
-        .filter((el) => el.getAttribute("lang") === String(key).toLowerCase())
-        .forEach((el) => {
-          el.classList.add("amplifiedText");
-          Array.from(el.children)
-            .forEach(child => child.classList.add("amplifiedText"))
+async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
+  if (localStorage.displayMode === displayModes[1]) return;//We don't amplify the text if we are in the 'Presentation Mode'
+  
+  let langs = JSON.parse(localStorage.textAmplified) as [string, boolean][];
+  langs  = langs.filter(lang => lang[1] === true);
+
+  htmlRows
+    .forEach(row => {
+      //looping the rows in the htmlRows []
+      Array.from(row.children)
+        //looping the children of each row (these children are supposedly paragraph elements)
+        .forEach((child: HTMLElement) => {
+          if (!child.lang) return;
+          //if the child has the lang attribute set, we will loop each language in langs, and if 
+          langs
+            .forEach(lang => {
+              if (child.lang === lang[0].toLowerCase()) child.classList.add("amplifiedText");
+            })   
         });
-    }
-  });
+    });
 }
+
 async function setButtonsPrayers() {
   for (let i = 0; i < btns.length; i++) {
     btnsPrayers.push([btns[i].btnID, ...(await btns[i].onClick())]);
@@ -1141,7 +1146,8 @@ async function setButtonsPrayers() {
  * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TitleRow'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
-function collapseText(titleRow: HTMLElement, container:HTMLElement=containerDiv) {
+function collapseText(titleRow: HTMLElement, container: HTMLElement = containerDiv) {
+  if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div[data-group="' + titleRow.dataset.root + '"]')
     .forEach((div: HTMLDivElement) => {
       if(div !== titleRow) div.classList.toggle('collapsedTitle')
@@ -1183,7 +1189,8 @@ async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:
  * Collapses all the tiltes (i.e. all the divs with class 'TitleRow' or 'SubTitle') in the html element passed as argument
  * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'TitleRow' or 'SubTitle'
  */
- function collapseAllTitles(container:HTMLElement | DocumentFragment){
+function collapseAllTitles(container: HTMLElement | DocumentFragment) {
+  if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div')
     .forEach(row => {
       if (!row.classList.contains('TitleRow')
@@ -1313,27 +1320,25 @@ async function showInlineButtonsForOptionalPrayers(
         onClick: () => {
           //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
           hideInlineButtonsDiv();
-          let displayedFraction = containerDiv
-            .querySelectorAll('div[data-group="optionalPrayer"]') as NodeListOf<HTMLElement>;
-          if (displayedFraction.length > 0) {
-            //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute
+
+          if (masterBtnDiv.dataset.displayedOptionalPrayer) {
+            //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute, which  we had is stored as data-displayed-Fraction attribued of the masterBtnDiv
             containerDiv
-              .querySelectorAll('div[data-root="' + displayedFraction[0].dataset.root + '"]')
+              .querySelectorAll('div[data-root="' + masterBtnDiv.dataset.displayedOptionalPrayer + '"]')
               .forEach(div => div.remove());
             }
-
-          showPrayers(inlineBtn, false, false, {
+          
+          //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
+          let createdElements = showPrayers(inlineBtn, false, false, {
             beforeOrAfter: "afterend",
             el: masterBtnDiv,
-          });
-          //We will append the newly created html elements after btnsDiv (notice that btnsDiv contains the prayersMasterBtn)
-          let createdElements: NodeListOf<Element> =
-            containerDiv.querySelectorAll(getDataRootSelector(inlineBtn.prayersSequence[0])
-            );
-          //We will add to each created element a data-group attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-          createdElements.forEach((el) =>
-            el.setAttribute("data-group", "optionalPrayer")
-          );
+          }) as HTMLDivElement[];
+
+          masterBtnDiv.dataset.displayedOptionalPrayer = baseTitle(prayerTable[0][0]); //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
+
+          //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
+          createdElements.forEach(el => el.dataset.optionalPrayer = el.dataset.root);
+          
           //We format the grid template of the newly added divs
           setCSSGridTemplate(createdElements);
           //We apply the amplification of text

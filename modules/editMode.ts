@@ -36,7 +36,7 @@ async function editTablesArray(entry: string) {
   //We add the editing buttons
   addEdintingButtons();
   //Setting the CSS of the newly added rows
-  setCSSGridTemplate(containerDiv.querySelectorAll("div.Row"));
+  setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
   //Showing the titles in the right side-bar
   showTitlesInRightSideBar(
     containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
@@ -651,7 +651,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
       );
     });
     setCSSGridTemplate(
-      document.getElementById("showSequence").querySelectorAll("div.Row")
+      Array.from(document.getElementById("showSequence").querySelectorAll("div.Row"))
     );
   }
 }
@@ -702,7 +702,7 @@ function showSequence(
         newDiv
       );
     });
-    setCSSGridTemplate(newDiv.querySelectorAll(".Row"));
+    setCSSGridTemplate(Array.from(newDiv.querySelectorAll(".Row")));
   });
 }
 
@@ -845,7 +845,7 @@ function showTablesFun(arrayName: string, title: string) {
     modifyTablesInTheirArrayBtn,
   ]);
   //Setting the CSS of the newly added rows
-    setCSSGridTemplate(containerDiv.querySelectorAll("div.Row"));
+    setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
     //Showing the titles in the right side-bar
     hideInlineButtonsDiv();
     showTitlesInRightSideBar(
