@@ -10,7 +10,7 @@ async function setCopticDates(today?: Date) {
 	}
 	todayDate = today;
 	weekDay = todayDate.getDay();
-	convertGregorianDateToCopticDate();
+	convertGregorianDateToCopticDate(today.getTime());
 	//copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
 	//copticMonth = copticDate.slice(2, 4);

@@ -61,9 +61,14 @@ function autoRunOnLoad() {
   showChildButtonsOrPrayers(btnMain);
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
-    let selectedDate: Date = new Date();
-    selectedDate.setTime(Number(localStorage.selectedDate));
-    if (!checkIfDateIsToday(selectedDate)) setCopticDates(selectedDate);
+    let newDate = new Date(), selectedDate: Date;
+          if(localStorage.selectedDate) selectedDate = new Date(Number(localStorage.selectedDate));//We create a date from the date saved in th localStorage 
+    //selectedDate.setTime();
+    if (selectedDate && !checkIfDateIsToday(selectedDate)) {
+      alert('WARNING ! The date is manually set by the user to ' + selectedDate.getDate().toString() + '/' + (selectedDate.getMonth() +1).toString() + '/' + selectedDate.getFullYear().toString() + '. This choice will not kept. If you want the current date, you have to change the date manually');
+      selectedDate.setHours(newDate.getHours(), newDate.getMinutes(), newDate.getSeconds(), newDate.getMilliseconds());//We set its hours, minutes, and seconds to the current time
+      setCopticDates(selectedDate);
+    };
   } else {
     setCopticDates()
   }
