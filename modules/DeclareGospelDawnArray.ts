@@ -1028,61 +1028,57 @@ ReadingsArrays.GospelDawnArray = [[
   ], 
   [
   [
-  Prefix.gospelDawn+"&D=2702&C=Title", 
+  Prefix.gospelDawn+"Psalm&D=2702&C=Title", 
   " مزمور باكر(132:1-2,9-10)", 
   "Psaumes 132:1-2,9-10", 
   "Psalms 132:1-2,9-10", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Psalm&D=2702", 
   "اذكر يا رب داود كل ذله. كيف حلف للرب نذر لعزيز يعقوب.", 
   "1 Éternel, souviens–toi de David, De toutes ses peines ! 2 Il fit ce serment à l’Éternel, Ce voeu au puissant de Jacob :", 
   "1 LORD, remember David and all his afflictions; 2 How he swore to the LORD, and vowed to the Mighty One of Jacob:", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702&C=Title", 
-  " مزمور باكر(132:1-2,9-10)", 
-  "Psaumes 132:1-2,9-10", 
-  "Psalms 132:1-2,9-10", 
-  ], 
-  [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Psalm&D=2702", 
   "كهنتك يلبسون البر واتقياؤك يهتفون. من اجل داود عبدك لا ترد وجه مسيحك.", 
   "9 Que tes sacrificateurs soient revêtus de justice, Et que tes fidèles poussent des cris de joie ! 10 A cause de David, ton serviteur, Ne repousse pas ton messie !", 
   "9 Let Your priests be clothed with righteousness, and let Your saints shout for joy 10 For Your servant David's sake.", 
+    ]
   ], 
   [
-  Prefix.gospelDawn+"&D=2702&C=Title", 
+    [
+  Prefix.gospelDawn+"Gospel&D=2702&C=Title", 
   " لوقا (6 : 17 – 23 )", 
   "Luke 6:17-23", 
   "Luke 6:17-23", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Gospel&D=2702", 
   "ونزل معهم ووقف في موضع سهل هو وجمع من تلاميذه وجمهور كثير من الشعب من جميع اليهودية واورشليم وساحل صور وصيدا الذين جاءوا ليسمعوه ويشفوا من امراضهم.", 
   "17 Il descendit avec eux et s’arrêta sur un plateau où se trouvait une grande foule de ses disciples et une multitude de peuples de toute la Judée, de Jérusalem et du littoral de Tyr et de Sidon. Ils étaient venus pour l’entendre et pour être guéris de leurs maladies.", 
   "17 And He came down with them and stood on a level place with a crowd of His disciples and a great multitude of people from all Judea and Jerusalem, and from the seacoast of Tyre and Sidon, who came to hear Him and be healed of their diseases,", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Gospel&D=2702", 
   "والمعذبون من ارواح نجسة.وكانوا يبرأون. وكل الجمع طلبوا ان يلمسوه لان قوة كانت تخرج منه وتشفي الجميع", 
   "18 Ceux qui étaient tourmentés par des esprits impurs étaient guéris. 19 Et toute la foule cherchait à le toucher, parce qu’une force sortait de lui et les guérissait tous.", 
   "18 as well as those who were tormented with unclean spirits. And they were healed. 19 And the whole multitude sought to touch Him, for power went out from Him and healed them all.", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Gospel&D=2702", 
   "ورفع عينيه الى تلاميذه وقال طوباكم ايها المساكين لان لكم ملكوت الله. طوباكم ايها الجياع الآن لانكم تشبعون.طوباكم ايها الباكون الآن لانكم ستضحكون.", 
   "20 Alors il leva les yeux sur ses disciples et dit : Heureux vous les pauvres, car le royaume de Dieu est à vous !21 Heureux vous qui avez faim maintenant, car vous serez rassasiés ! Heureux vous qui pleurez maintenant, car vous serez dans la joie !", 
   "20 Then He lifted up His eyes toward His disciples, and said: Blessed are you poor, for yours is the kingdom of God. 21 Blessed are you who hunger now, for you shall be filled. Blessed are you who weep now, for you shall laugh.", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Gospel&D=2702", 
   "طوباكم اذا ابغضكم الناس واذا افرزوكم وعيّروكم واخرجوا اسمكم كشرير من اجل ابن الانسان.", 
   "22 Heureux serez–vous, lorsque les hommes vous haïront, lorsqu’ils vous chasseront, vous insulteront et rejetteront votre nom comme infâme, à cause du Fils de l’homme.", 
   "22 Blessed are you when men hate you, and when they exclude you, and revile you, and cast out your name as evil, for the Son of Man's sake.", 
   ], 
   [
-  Prefix.gospelDawn+"&D=2702", 
+  Prefix.gospelDawn+"Gospel&D=2702", 
   "افرحوا في ذلك اليوم وتهللوا. فهوذا اجركم عظيم في السماء. لان آباءهم هكذا كانوا يفعلون بالانبياء.", 
   "23 Réjouissez–vous en ce jour–là et tressaillez de joie, parce que votre récompense sera grande dans le ciel ; car c’est ainsi que leurs pères agissaient à l’égard des prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 

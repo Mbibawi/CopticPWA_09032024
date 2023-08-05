@@ -30,7 +30,7 @@ async function setCopticDates(today?: Date) {
  * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
  * @returns {number[]} - an array containing the following elements: [coptic day, coptic month, coptic year ]
  */
-function convertGregorianDateToCopticDate(today?: number): number[]{
+function convertGregorianDateToCopticDate(today?: number): [number[], string]{
 	
 	let tout1: number = new Date('1883.09.11').setUTCHours(0, 0, 0, 0); //this is the Gregorian date for the 1st of Tout of the Coptic year 1600 
 	
@@ -48,11 +48,13 @@ function convertGregorianDateToCopticDate(today?: number): number[]{
 	if (daysInCurrentYear === 0) daysInCurrentYear += 1;
 	daysInCurrentYear = Math.ceil(daysInCurrentYear);
 
-	let month = Math.ceil(daysInCurrentYear / 30);
-	if (daysInCurrentYear % 30 === 0) month += 1;
+	let month = daysInCurrentYear / 30;
+	if (daysInCurrentYear / 30 === 0) month = 1;
+	month = Math.ceil(month);
 
 	let day = Math.ceil(daysInCurrentYear % 30);
 	if (day > 30) day -= 30;
+	if (daysInCurrentYear % 30 === 0) day = 30;
 
 	if (new Date(today).getFullYear() % 4 !== 3
 		&& month === 13
@@ -65,10 +67,12 @@ function convertGregorianDateToCopticDate(today?: number): number[]{
 	year += Math.floor(diffrenceInYears);
 
 	copticDay = day.toString();
+	if (day < 10) copticDay = '0' + copticDay;
 	copticMonth = month.toString();
+	if (month < 10) copticMonth = '0' + copticMonth;
 	copticDate = copticDay + copticMonth;
 	copticYear = year.toString();
-	return [day,month, year]
+	return [[day,month, year], copticDate]
 }
 /**
  * Converts the Gregorian date to a string expressing the coptic date (e.g.: "0207")
@@ -160,8 +164,7 @@ function convertGregorianDateToCopticDate_Old(date: Date): string {
  * @param {string} coptDate  - a string expressing the coptic day and month (e.g.: "0306")
  * @returns {string} - a string expressing the coptic reading date (e.g.: "0512", "GreatLent20", "JonahFeast2", etc.)
  */
-function setSeasonAndCopticReadingsDate(coptDate: string, today: Date = todayDate): string {
-	if (!coptDate) return;
+function setSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string {
 	let specialSeason: string = checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
@@ -193,7 +196,11 @@ function setSeasonAndCopticReadingsDate(coptDate: string, today: Date = todayDat
  * The function returns a string like "1stSunday", "2nd Sunday", etc.
  */
 function checkWhichSundayWeAre(day: number): string {
-	let n: number = Math.ceil(day / 7);
+	if (weekDay !== 0) return;
+	let n: number = day;
+	if (Season === Seasons.GreatLent)
+		n = n - 2;
+	n = Math.ceil(n / 7);
 	let sunday: string = n.toString();
 	if (n === 1 || (n > 20 && n % 10 === 1)) {
 		sunday = sunday + "stSunday";
@@ -217,9 +224,9 @@ function checkIfInASpecificSeason(today: Date): string {
 	let resurrectionDate: string = ResurrectionDates.filter(date => new Date(date).getFullYear() === today.getFullYear())[0];
 
 	//We create a new Date from the selected resurrection date, and will set its hour to UTC 0
-	let resurrection = new Date(resurrectionDate).setUTCHours(0, 0, 0, 0);
+	let resurrection = new Date(resurrectionDate).setHours(0, 0, 0, 0);
 	//We create a new date equal to "today", and will set its hour to 0
-	let todayUTC:number = new Date(today).setUTCHours(0, 0, 0, 0);
+	let todayUTC:number = new Date(today).setHours(0, 0, 0, 0);
 	readingsDate = checkForUnfixedEvent(
 				todayUTC, //this is a number reflecting the date of today at UTC 0 hour
 				resurrection, //we get a number reflecting the resurrection date at UTC 0 hour
@@ -241,7 +248,7 @@ function checkForUnfixedEvent(
 	resDate: number,
 	weekDay: number
 ): string {
-	let difference = (resDate - today) / calendarDay // we get the difference between the 2 dates in days
+	let difference = Math.floor((resDate - today) / calendarDay) // we get the difference between the 2 dates in days
 	//We initiate the Season to NoSeason
 	Season = Seasons.NoSeason;
 
@@ -334,7 +341,7 @@ function isItSundayOrWeekDay(
 	days: number,
 	weekDay: number
 ): string {
-	if (weekDay === 0) {
+	 if (weekDay === 0) {
 		//we are a Sunday
 		return period + checkWhichSundayWeAre(days);
 	} else {
@@ -378,7 +385,8 @@ function showDates(newDiv?:HTMLDivElement):HTMLDivElement {
 function changeDate(
 	date?: string,
 	next: boolean = true,
-	days: number = 1
+	days: number = 1,
+	showAlert:boolean = true
   ): Date {
 	if (date) {
 	  todayDate.setTime(new Date(date).getTime());
@@ -402,7 +410,7 @@ function changeDate(
 		  localStorage.selectedDate = todayDate.getTime().toString();
 	}	
 	console.log(todayDate);
-	alert('Date was successfully change to ' + todayDate.getDate().toString() + "/" + todayDate.getMonth().toString() +"/" + todayDate.getFullYear().toString() + " which corresponds to " + copticDate + " of the coptic calendar ")
+	if(showAlert) alert('Date was successfully changed to ' + todayDate.getDate().toString() + "/" + todayDate.getMonth().toString() +"/" + todayDate.getFullYear().toString() + " which corresponds to " + copticDate + " of the coptic calendar ")
 	return todayDate;
 }
 
@@ -420,4 +428,53 @@ function checkIfDateIsToday(date: Date):boolean {
 		return true;
 	}
 	return false
+}
+
+function testReadings() {
+	addConsoleSaveMethod(console);
+	let btns: Button[] = [btnReadingsGospelIncenseDawn, btnReadingsGospelIncenseVespers, btnReadingsGospelMass, btnReadingsGospelNight, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsPropheciesDawn, btnReadingsStPaul, btnReadingsSynaxarium];
+	let query: string, result:string = '';
+	setCopticDates(new Date('2023.01.01'));
+
+	for (let i = 1; i < 367; i++){
+		changeDate(undefined, true,undefined,false);
+		result += 'copticDate = ' +  copticDate + '\n';
+		result += 'copticReadingsDate = ' + copticReadingsDate + '\n';
+		if(weekDay === 0) result += 'it is a Sunday \n'
+
+		btns.forEach(btn => {
+			if (
+				(!(Season === Seasons.GreatLent
+					|| Season === Seasons.JonahFast))
+				&& (btn === btnReadingsGospelNight || btn === btnReadingsPropheciesDawn)) return;
+			if (
+				(Season === Seasons.GreatLent
+					|| Season === Seasons.JonahFast)
+				&&
+				(weekDay === 0
+					|| weekDay === 6)
+				&&
+				(btn === btnReadingsPropheciesDawn
+					|| btn === btnReadingsGospelNight)
+			) return;
+			if (
+				(Season === Seasons.GreatLent
+					|| Season === Seasons.JonahFast)
+				&&
+				weekDay !== 0
+				&& btn === btnReadingsGospelIncenseVespers) return;
+			if (btn.prayersArray && btn.prayersSequence) {
+				query = btn.prayersSequence[0] + '&D=' + copticReadingsDate + '&C=';
+				let reading: string[][][] = btn.prayersArray.filter(tbl => tbl[0][0].startsWith(query));
+				
+				if (reading.length < 1) result += '\tmissing: ' + btn.label.foreignLanguage + '\nquery= ' + query + '\n';
+				if (reading.length > 1) result += '\textra table: ' + query;
+			}
+		}
+		);
+
+	}
+	//@ts-ignore
+	console.save(result, 'testReadings Result.doc')
+
 }

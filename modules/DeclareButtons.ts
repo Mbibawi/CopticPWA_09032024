@@ -1269,7 +1269,7 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
     otherLanguage: "Vespers Gospel",
   },
   showPrayers: true,
-  prayersSequence: ["", ""],
+  prayersSequence: [Prefix.gospelVespers + "Psalm", Prefix.gospelVespers + "Gospel"],
   prayersArray: ReadingsArrays.GospelVespersArray,
   languages: [...readingsLanguages],
   onClick: () => {

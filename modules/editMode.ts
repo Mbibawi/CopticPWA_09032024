@@ -710,6 +710,7 @@ function showSequence(
  * adds a 'save' method to console, which prints a data to a text or a json file
  */
 function addConsoleSaveMethod(console) {
+  if (console.save) return;
   console.save = function (data, filename) {
     if (!data) {
       console.error("Console.save: No data");
