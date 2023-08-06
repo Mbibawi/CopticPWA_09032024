@@ -1502,7 +1502,7 @@ function showSettingsPanel() {
       undefined,
       {
         event: "change",
-        fun: () => changeDate(datePicker.value.toString()),
+        fun: () => changeDate(new Date(datePicker.value.toString())),
       }
     ) as HTMLInputElement;
     datePicker.setAttribute("value", todayDate.toString());
@@ -1736,8 +1736,11 @@ function showSettingsPanel() {
             let entry = select.selectedOptions[0].innerText;
 
               //if the selection is te same as what is already selected (which is 'Choose from the list'), we return
-            if (entry === select.options[0].innerText) return;
-            if (!confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')) return;
+            if (
+              containerDiv.dataset.arrayName
+              && entry === containerDiv.dataset.arrayName
+              && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
+            ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
             
             if (entry === editable[2]) entry = prompt('Provide the function and the parameters', entry);
           if (entry.includes('Fun(')) {
@@ -2029,13 +2032,13 @@ function generateFixedReadingArray(readingArray): string[][][] {
  * @param {boolean} isLike - if set to true, the function will return a query selector for an element having a data-root containing the root argument (as opposed to a root exactly matching the root argument)
  * @returns
  */
-function getDataRootSelector(root: string, isLike: boolean = false):string {
-  if (isLike) {
-    return 'div[data-root*="' + root + '"]';
-  } else {
-    return 'div[data-root="' + root + '"]';
+function getDataRootSelector(root: string, isLike: boolean = false, htmlTag:string = 'div'):string {
+  if (isLike)
+    return htmlTag + '[data-root*="' + root + '"]';
+  else
+      return htmlTag + '[data-root="' + root + '"]';
   }
-}
+
 /**
  * Takes a collection of html elements and moves it adjacent to a given child html element to containerDiv
  * @param {string} targetElementRoot - the data-root value of the html element adjacent to which the block will be moved
@@ -2103,7 +2106,26 @@ function moveElementBeforeOrAfterXSiblings(element: HTMLElement,
     if(i==by && sibling) sibling.insertAdjacentElement(position, element)
   }
 
-}
+};
+
+
+/**
+ * Converts an group of html div elements each representing a row in the same table (i.e., the group of divs reprsents the entire table), into a string[][] each element represents a row of the table, and each element of each row, represents the text in a given cell of this row
+ * @param {HTMLDivElement} htmlRows - the group of html div elements displayed as children of containerDiv, each representing a row of a table, and collectively representing the entire table
+ *@returns {string[][]} - an array representing the entire table where each element represents a row of the table (i.e., corresponding to a div element)
+ */
+ function convertHtmlDivElementsIntoArrayTable(htmlRows:HTMLDivElement[]):string[][] {
+  let table: string[][] = [];
+   htmlRows
+    .forEach((row: HTMLElement) => {
+      table
+        .push(Array.from(row.children)
+          .map((p: HTMLElement) => p.innerText));
+      table[table.length - 1].unshift(row.dataset.root)
+    });
+    return table
+  };
+
 
 //compareArrays(ReadingsArrays.SynaxariumArray, SynaxariumArray2);
 function compareArrays(sourceArray:string[][][], editedArray:string[][][]) {

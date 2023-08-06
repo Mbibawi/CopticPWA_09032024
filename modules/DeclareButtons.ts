@@ -188,7 +188,7 @@ const btnIncenseOffice: Button = new Button({
   btnID: "btnIncenseOffice",
   label: {
     defaultLanguage: "رفع بخور باكر أو عشية",
-    foreignLanguage: "Office des Encens Aube et Soir",
+    foreignLanguage: "Office des Encens Aube et Vêpres",
   },
   onClick: () => {
     //setting the children of the btnIncenseOffice. This must be done by the onClick() in order to reset them each time the button is clicked
@@ -1314,8 +1314,8 @@ const btnReadingsGospelNight: Button = new Button({
   btnID: "btnReadingsGospelNight",
   label: {
     defaultLanguage: "إنجيل المساء",
-    foreignLanguage: "Evangile Soir",
-    otherLanguage: "Vespers Gospel",
+    foreignLanguage: "Evangile du Soir",
+    otherLanguage: "Night Gospel",
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelNight + "Psalm", Prefix.gospelNight + "Gospel"],

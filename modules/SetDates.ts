@@ -383,13 +383,14 @@ function showDates(newDiv?:HTMLDivElement):HTMLDivElement {
  * @returns {Date} - the Gregorian date as set by the user
  */
 function changeDate(
-	date?: string,
+	date?: Date,
 	next: boolean = true,
 	days: number = 1,
 	showAlert:boolean = true
   ): Date {
 	if (date) {
-	  todayDate.setTime(new Date(date).getTime());
+		if (checkIfDateIsToday(date)) todayDate = new Date();
+		else	todayDate.setTime(new Date(date).getTime());
 	} else {
 	  if (next) {
 		todayDate.setTime(todayDate.getTime() + days * calendarDay); //advancing the date by the number of calendar years
@@ -410,7 +411,7 @@ function changeDate(
 		  localStorage.selectedDate = todayDate.getTime().toString();
 	}	
 	console.log(todayDate);
-	if(showAlert) alert('Date was successfully changed to ' + todayDate.getDate().toString() + "/" + todayDate.getMonth().toString() +"/" + todayDate.getFullYear().toString() + " which corresponds to " + copticDate + " of the coptic calendar ")
+	if(showAlert) alert('Date was successfully changed to ' + todayDate.getDate().toString() + "/" + (todayDate.getMonth() +1).toString() +"/" + todayDate.getFullYear().toString() + " which corresponds to " + copticDate + " of the coptic calendar ")
 	return todayDate;
 }
 
@@ -434,7 +435,7 @@ function testReadings() {
 	addConsoleSaveMethod(console);
 	let btns: Button[] = [btnReadingsGospelIncenseDawn, btnReadingsGospelIncenseVespers, btnReadingsGospelMass, btnReadingsGospelNight, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsPropheciesDawn, btnReadingsStPaul, btnReadingsSynaxarium];
 	let query: string, result:string = '';
-	setCopticDates(new Date('2023.01.01'));
+	setCopticDates(new Date('2022.12.31'));
 
 	for (let i = 1; i < 367; i++){
 		changeDate(undefined, true,undefined,false);
@@ -446,7 +447,9 @@ function testReadings() {
 			if (
 				(!(Season === Seasons.GreatLent
 					|| Season === Seasons.JonahFast))
-				&& (btn === btnReadingsGospelNight || btn === btnReadingsPropheciesDawn)) return;
+				&& (btn === btnReadingsGospelNight
+					|| btn === btnReadingsPropheciesDawn))
+				return;
 			if (
 				(Season === Seasons.GreatLent
 					|| Season === Seasons.JonahFast)
@@ -454,15 +457,26 @@ function testReadings() {
 				(weekDay === 0
 					|| weekDay === 6)
 				&&
-				(btn === btnReadingsPropheciesDawn
-					|| btn === btnReadingsGospelNight)
-			) return;
+				(btn === btnReadingsPropheciesDawn)
+			) return; //During the Great Lent and Jonah Fast, only the week-days have Prophecies Readings in the Incense Dawn office
 			if (
-				(Season === Seasons.GreatLent
-					|| Season === Seasons.JonahFast)
-				&&
-				weekDay !== 0
-				&& btn === btnReadingsGospelIncenseVespers) return;
+				Season === Seasons.GreatLent
+				&& weekDay !== 0
+				&& (btn === btnReadingsGospelIncenseVespers
+					|| btn === btnReadingsGospelNight)
+			) return; //During the Great Lent, only Sunday has Vespers (on Saturday afternoon), and Gospel Night (on Sunday afternoon)
+			if (
+				Season === Seasons.GreatLent
+				&& weekDay === 0
+				&& btn === btnReadingsGospelIncenseVespers
+				&& copticReadingsDate === 'GL9thSunday'
+			) return; //no vespers for the Resurrection Sunday
+			if (
+				Season === Seasons.JonahFast
+				&& weekDay !== 1
+				&& btn === btnReadingsGospelIncenseVespers
+			) return; //During the Jonah Fast, only Monday has Vespers prayers
+			if (Season === Seasons.HolyWeek) return;//No readings during the holy week
 			if (btn.prayersArray && btn.prayersSequence) {
 				query = btn.prayersSequence[0] + '&D=' + copticReadingsDate + '&C=';
 				let reading: string[][][] = btn.prayersArray.filter(tbl => tbl[0][0].startsWith(query));
@@ -475,6 +489,8 @@ function testReadings() {
 
 	}
 	//@ts-ignore
-	console.save(result, 'testReadings Result.doc')
+	console.save(result, 'testReadings Result.doc');
+
+	changeDate(new Date());
 
 }

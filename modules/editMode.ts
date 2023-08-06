@@ -3,30 +3,49 @@ let sequence: string[] = [];
  * This is the function that displayes the elements of the array that we want to edit
  * @param tblsArray 
  */
-async function editTablesArray(entry: string) {
+async function editTablesArray(entry: string, clear:boolean = true) {
   let tablesArray: string[][][];
-  containerDiv.dataset.singleTable = 'false';
-  if (confirm('Do you want to edit a single table in the array?')) containerDiv.dataset.singleTable = 'true';
+  containerDiv.dataset.specificTables = 'false';
   if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title', 'New Table Added', 'New Table Added']]];
+  if (!tablesArray && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " ')) containerDiv.dataset.specificTables = 'true';
   if (!tablesArray) tablesArray = eval(entry);
-  if (!tablesArray && containerDiv.dataset.singleTable === 'true') alert('We could not find a table with the title you provided');
   if (!tablesArray) return;
-  if (containerDiv.dataset.singleTable = 'true') {
-    let tableTitle = eval(prompt('Provide the name of the table you want to edit'));
-    tablesArray = tablesArray.filter(tbl => baseTitle(tbl[0][0]) === baseTitle(tableTitle));
-    if (tablesArray.length < 1) return alert('There is no table in the array matching this title');
-  }
+
+
+  if (containerDiv.dataset.specificTables = 'true') {
+    let tableTitle = prompt('Provide the name of the table you want to edit');
+    let filteredArray:string[][][] = [];
+    console.log('splitted = ', tableTitle.split(', '));
+    tableTitle.split(', ')
+        .map(title =>{
+          filteredArray.push(
+            tablesArray.filter(
+              tbl => tbl[0][0] === eval(title)
+            )[0]
+            );
+          
+          if (!filteredArray[filteredArray.length - 1]) console.log('the filtering gave an invalid result : ',  filteredArray[filteredArray.length - 1]);
+        }
+    );
+    tablesArray = filteredArray;
+    //tablesArray = tablesArray.filter(tbl => tbl[0][0] === tableTitle);
+    if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
+    console.log('filteredArray = ', filteredArray)
+  };
   let languages = getLanguages(entry);
   if (!languages) languages = allLanguages;
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
   if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
   let el: HTMLElement;
-  containerDiv.innerHTML = ""; //we empty the containerDiv
+
+ if(clear) containerDiv.innerHTML = ""; //we empty the containerDiv
   
   //We create an html div element to display the text of each row of each table in tablesArray
   tablesArray.forEach(table => {
+    if (!table) return;
     table.forEach(row => {
+      if (!row) return;
       el = createHtmlElementForPrayerEditingMode(row, languages);
       //We make the paragraph children of each row, editable
       if (el) Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true");
@@ -38,6 +57,15 @@ async function editTablesArray(entry: string) {
   //Setting the CSS of the newly added rows
   setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
   //Showing the titles in the right side-bar
+  
+  //removing the minus sign at the begining of the title
+  Array.from(containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"))
+    .forEach(div =>
+      Array.from(div.getElementsByTagName('P'))
+      .forEach((p: HTMLElement) =>
+        p.innerText = p.innerText.replaceAll(String.fromCharCode(plusCharCode + 1), '')
+    ));
+
   showTitlesInRightSideBar(
     containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
 }
@@ -206,8 +234,6 @@ function deleteRow(htmlParag: HTMLElement) {
 
 /**
  * Replaces each table in the array by the table in newTables[] having a title that matches the title of the target table in array[]
- * @param {string[][]} newTables - the tables that will replace those in the array
- * @param {string[][][]} array - the arrary in which we will replace some tables with those in the newTables[] parameter
  */
 function modifyTablesInTheirArray() {
   let array = eval(containerDiv.dataset.arrayName), arrayOfTables:string[][][], filtered: string[][][];
@@ -336,72 +362,60 @@ function createEditingButton(
 }
 
 function saveModifiedArray(): string {
-    let table: string[][],
-    newArray: string[][][] = [],
-    title: string;
-
-
-  if (containerDiv.dataset.singleTable === 'false') {
-    let updated: Set<string> = new Set(),
-      htmlRows: HTMLElement[] = Array.from(containerDiv.querySelectorAll(".Row")); //we retriev all the divs with 'Row' class from the DOM
+    let  editedArray: string[][][] = [],
+    title: string, 
+    titles: Set<string> = new Set(),
+    htmlTable:HTMLDivElement[],
+    htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll(".Row")); //we retriev all the divs with 'Row' class from the DOM
     
-    Array.from(htmlRows).forEach(
+  Array.from(htmlRows)
+  .forEach((htmlRow: HTMLDivElement) => {
       //for each 'Row' div in containderDiv
-      (htmlRow: HTMLDivElement) => {
-        title = baseTitle(htmlRow.dataset.root); //this is the title without '&C='
-        if (!updated.has(title)) updated.add(title); //if the table has already been added, its title will be in the updated[], we will escape the row since it has already been processed
+        title = htmlRow.dataset.root; //this is the title without '&C='
+        if (!titles.has(title))
+          titles.add(title)
+          processTableTitle(title);
       }
-    );
-    updated.forEach((tableTitle) => processTablesTitles(tableTitle));
-  } //for each title in the set, we will retrieve the text in arrays each representing a row
+  );
+  
+  function processTableTitle(tableTitle: string) {
+    htmlTable = Array.from(containerDiv.querySelectorAll( getDataRootSelector(baseTitle(tableTitle), true)));//notice that we pass the isLike = true in order to get a selector like "data-root*=" instead of 'data-root='
 
+    if (containerDiv.dataset.specificTables === 'true') {
+      //i.e. if we were editing a single or specific table(s) of the array
+      editedArray = eval(containerDiv.dataset.arrayName) as string[][][];
 
-  if (containerDiv.dataset.singleTable === 'true') {
-    //i.e. if we were editing a single table of the array
-    let editedTable:string[][] = [];
-    Array.from(containerDiv.querySelectorAll(".Row"))
-      .forEach((row:HTMLElement) => {
-        editedTable
-          .push(Array.from(row.children)
-            .map((p: HTMLElement) => p.innerText));
-        editedTable[editedTable.length-1].unshift(row.dataset.root)
-      });
-    newArray = eval(containerDiv.dataset.arrayName) as string[][][];
-    if (!newArray){
-      alert('the array name provided could not be evaluated to a valid array: containerDiv.dataset.arrayName')
+      if (!editedArray) {
+        alert('the array name provided could not be evaluated to a valid array: containerDiv.dataset.arrayName')
+        return
+      };
+
+      let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+
+      let oldTable: string[][] = editedArray.filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+      
+      if (oldTable) editedArray.splice(editedArray.indexOf(oldTable), 1, editedTable);
+      else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table ')) editedArray.push(editedTable);
+        
       return
     };
-    newArray.splice(
-      newArray.indexOf(
-        newArray.filter(tbl => tbl[0][0] === editedTable[0][0])[0]),
-      1,
-      editedTable
-    );
+    
+    editedArray.push(convertHtmlDivElementsIntoArrayTable(htmlTable)); //we push the string[][] representing the table to editedArray
+    
   }
 
-  function processTablesTitles(tableTitle: string) {
-    newArray.push([]); //this is an emepty array for the table
-    table = newArray[newArray.length - 1];
-    Array.from(containerDiv
-      .querySelectorAll("div.Row"))
-      .filter((div: HTMLElement) =>
-        baseTitle(div.dataset.root) === baseTitle(tableTitle))
-          .forEach((div: HTMLElement) => {
-            table
-                .push(
-                    Array.from(div.querySelectorAll("p"))
-                        .map((p: HTMLElement) => p.innerText)//we are pushing to table a new array containing the innerText of each 'p' html element child of the div (eg.: ['innertText paragraph1', 'innertText paragraph2', etc])
-          );
-          table[table.length - 1].unshift(div.dataset.root); //adding the title as 1st element to the row that we've just pushed to table
-      });
-  }
-
-  console.log("newArray = ", newArray);
-  let text = processTablesArray(newArray);
+  console.log("newArray = ", editedArray);
+  let text = processTablesArray(editedArray);
   localStorage.editedText = text;
   console.log(localStorage.editedText);
   return text
-}
+};
+/**
+ * Converts the provided array of all the html divs of a table into a string[][] representing the table rows
+ * @param {HTMLDivElement[]} htmlRows - an array of html divs each reprsenting a row in a table 
+ * @returns {string[][]} an array representing the table 
+ */
+
 
 function processTablesArray(tablesArray: string[][][]):string {
   //Open Array of Tables
@@ -409,6 +423,10 @@ function processTablesArray(tablesArray: string[][][]):string {
   tablesArray.forEach((table: string[][]) => {processTable(table)});
 
   function processTable(table: string[][]) {
+    if (!table || table.length < 1){
+      console.log('error with table in processTable() = ', table)
+        return alert('Something went wrong')
+      };
     //open table array
     text += "[\n";
     table.forEach((row: string[]) => {
@@ -418,9 +436,15 @@ function processTablesArray(tablesArray: string[][][]):string {
     text += "], \n";
   };
   function processTableRow(row: string[]) {
+    if (!row || row.length < 1){
+    console.log('error with row in processTable() = ', row)
+      return alert('Something went wrong')
+    };
+    
     //open row array
     text += "[\n";
     //loop row elements
+    console.log(row);
     row.forEach((element:string)=>processStringElement(element, row))
     //close row
     text += "], \n";
@@ -509,7 +533,7 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   //newRow.contentEditable = 'true';
   for (let i = 0; i < htmlRow.children.length; i++) {
     child = htmlRow.children[i] as HTMLParagraphElement;
-    if (!child.lang || child.tagName !=='P') continue;
+    if (!child || !child.lang || child.tagName !=='P') continue;
     p = newRow.appendChild(document.createElement("p"));
     p.classList.add(child.lang.toUpperCase());
     p.classList.add(newRow.dataset.root.split("&C=")[1]);
@@ -606,7 +630,8 @@ function createHtmlElementForPrayerEditingMode(
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = dataRoot;
     text = tblRow[x];
-    p.classList.add(lang.toUpperCase());
+    if (lang)
+      p.classList.add(lang.toUpperCase())
     p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
     row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
@@ -653,6 +678,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
     setCSSGridTemplate(
       Array.from(document.getElementById("showSequence").querySelectorAll("div.Row"))
     );
+    
   }
 }
 
