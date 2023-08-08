@@ -353,50 +353,18 @@ const btnIncenseDawn: Button = new Button({
     );
     (async function addInlineBtnForAdamDoxolgies() {
       if (btnIncenseDawn.docFragment.children.length === 0) return;
-      let btnDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
-      btnDiv.classList.add("inlineBtns");
-      btnIncenseDawn.docFragment.children[0].insertAdjacentElement("beforebegin", btnDiv); //Inserting the div containing the button as 1st element of containerDiv
-    
-      //Adding an inline Button for showing the "Adam" Doxologies, and removing the id of the Adam Doxologies from the btn.prayers array
-      let btn = new Button({
-        btnID: "AdamDoxologies",
-        label: {
-          defaultLanguage: "ذكصولوجيات باكر آدام",
-          foreignLanguage: "Doxologies Adam Aube",
-        },
-        cssClass: inlineBtnClass,
-        prayersArray: [],
-        languages: btnIncenseDawn.languages,
-        onClick: () => {
-          let doxologyDiv = containerDiv.querySelector('#' + btn.btnID + 'New') as HTMLElement;
-          if(!doxologyDiv) return
-         if(doxologyDiv.style.display === 'none') doxologyDiv.style.display = 'grid'
-         else if(doxologyDiv.style.display === 'grid') doxologyDiv.style.display = 'none'
-        },
-      });
 
-          createBtn(btn, btnDiv, btn.cssClass, true, btn.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+      let doxologiesDiv:HTMLDivElement = addExpandablePrayer(
+        btnIncenseDawn.docFragment.children[0] as HTMLElement,
+        "AdamDoxologies", {
+        defaultLanguage: "ذكصولوجيات باكر آدام",
+        foreignLanguage: "Doxologies Adam Aube",
+      },
+      DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam')),
+      );
 
-      //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
-        let doxologyDiv = document.createElement('div');
-        doxologyDiv.id = btn.btnID + 'New';
-      doxologyDiv.style.display = 'none';
-      
-      //Setting the btn prayersArray to a filtered array of the 'Adam' doxologies
-      let adam = DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonDoxologies + 'Adam'));
-
-          //We will create a div element for each row of each table in btn.prayersArray
-            adam.forEach(table =>
-              table.forEach(row =>
-                createHtmlElementForPrayer(
-                      row,
-                      btn.languages,
-                      undefined,
-                      doxologyDiv
-                )
-            ));
                 //finally we append the newDiv to containerDiv
-                btnIncenseDawn.docFragment.children[1].insertAdjacentElement('beforebegin', doxologyDiv)
+                btnIncenseDawn.docFragment.children[1].insertAdjacentElement('beforebegin', doxologiesDiv)
     })();
   },
 });
@@ -675,6 +643,23 @@ const btnMassStBasil: Button = new Button({
         'RedirectionToAgios'
       )
     })();
+    (function insertStMaryAdamSpasmos() {
+      //We insert it during the Saint Mary Fast and on every 21th of the coptic month
+      let spasmos = PrayersArray.filter(table => table[0][0] === Prefix.massCommon + "StMaryAdamSpasmos&D=$Seasons.StMaryFast&C=Title");
+      if (!spasmos) return
+      let anchor = btn.docFragment.querySelector('div[data-root="' + Prefix.massCommon + "DiaconResponseKissEachOther&D=$copticFeasts.AnyDay") as HTMLDivElement;
+      
+      let spasmosDiv: HTMLDivElement = addExpandablePrayer(
+        anchor,
+        'StMaryAdamSpasmos',
+        {
+          defaultLanguage: "افرحي يا مريم",
+          foreignLanguage: "Réjouis-toi Marie"
+        },
+        spasmos
+      );
+      anchor.insertAdjacentElement('beforebegin', spasmosDiv);
+    })();
   },
 });
 
@@ -891,6 +876,7 @@ const btnMassUnBaptised: Button = new Button({
                           && Object.entries(saintsFeasts).filter(entry=> entry[1] === eval(splitTitle(table[0][0])[0].split('&D=')[1].replace('$', ''))).length>0)
                       }
                     if (response.length > 0) {
+                      console.log('praxis response = ', response);
                       //If a Praxis response was found
                       if (Season === Seasons.GreatLent) {
                         // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
@@ -898,7 +884,7 @@ const btnMassUnBaptised: Button = new Button({
                           || todayDate.getDay() === 6)
                           response = response.filter(table => table[0][0].includes('Sundays&D='));
                         else response = response.filter(table => table[0][0].includes('Week&D='));
-                      }
+                      };
                       insertPrayersAdjacentToExistingElement(response, prayersLanguages, { beforeOrAfter: 'beforebegin', el: praxis[0] });
                     };
 
@@ -919,10 +905,14 @@ const btnMassUnBaptised: Button = new Button({
                   if (synaxarium.length === 0) return;
 
                   synaxarium[0].splice(1, 0, [
-                    splitTitle(synaxarium[0][0][0])[0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.synaxariumIntro.AR,
-                    ReadingsIntrosAndEnds.synaxariumIntro.FR,
-                    ReadingsIntrosAndEnds.synaxariumIntro.EN,
+                    splitTitle(synaxarium[0][0][0])[0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.synaxariumIntro.FR.replace('theday', copticDay).replace('themonth', 
+                    copticMonths[Number(copticMonth)].FR),
+
+                    ReadingsIntrosAndEnds.synaxariumIntro.AR.replace('theday', copticDay).replace('themonth', copticMonths[Number(copticMonth)].AR),
+
+                    ReadingsIntrosAndEnds.synaxariumIntro.EN.replace('theday', copticDay).replace('themonth', copticMonths[Number(copticMonth)].EN),
                   ]);
+                  synaxarium[0].splice(0,1,[splitTitle(synaxarium[0][0][0])[0] + '&C=Title', 'Synixaire', 'السنكسار']);
                   
                   let praxisElements: HTMLElement[] =
                     Array.from(
@@ -2166,4 +2156,53 @@ async function removeElementsByTheirDataRoot(dataRoot: string) {
   containerDiv
     .querySelectorAll(getDataRootSelector(dataRoot))
     .forEach((el) => el.remove());
+}
+/**
+ * Adds a button that when clicked shows or hides certain prayers from containerDiv
+ * @param {HTMLElement} insertion - the html element before which the button will be inserted
+ * @param {string} btnID - the id of the html element button that will be created
+ * @param {typeBtnLabel} label - the label of the button that will be created
+ * @param {string[][][]} prayers - the prayers that will shown or hidden or shown
+ * @returns {HTMLDivElement} - the created div element that contains the prayers, and will be hidden or shown when the button is clicked
+ */
+function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeBtnLabel, prayers: string[][][]): HTMLDivElement {
+  
+  let btnDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
+  btnDiv.classList.add("inlineBtns");
+
+  insertion.insertAdjacentElement("beforebegin", btnDiv); //Inserting the div containing the button as 1st element of containerDiv
+
+  let btn = new Button({
+    btnID: btnID,
+    label: label,
+    cssClass: inlineBtnClass,
+    prayersArray: [],
+    languages: btnIncenseDawn.languages,
+    onClick: () => {
+      let prayersContainerDiv = containerDiv.querySelector('#' + btn.btnID + 'Expandable') as HTMLElement;
+      if(!prayersContainerDiv) return
+     if(prayersContainerDiv.style.display === 'none') prayersContainerDiv.style.display = 'grid'
+     else if(prayersContainerDiv.style.display === 'grid') prayersContainerDiv.style.display = 'none'
+    },
+  });
+
+  createBtn(btn, btnDiv, btn.cssClass, true, btn.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+
+  //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
+    let prayersContainerDiv = document.createElement('div');
+    prayersContainerDiv.id = btn.btnID + 'Expandable';
+    prayersContainerDiv.style.display = 'none';
+
+  
+            //We will create a div element for each row of each table in btn.prayersArray
+            prayers.forEach(table =>
+              table.forEach(row =>
+                createHtmlElementForPrayer(
+                      row,
+                      btn.languages,
+                      undefined,
+                      prayersContainerDiv
+                )
+              ));
+              return prayersContainerDiv
 }

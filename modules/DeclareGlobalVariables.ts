@@ -37,8 +37,12 @@ const toggleDevBtn = document.getElementById('toggleDev') as HTMLButtonElement;
 const inlineBtnsDiv: HTMLElement = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates: string[] = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
 
-const copticMonths: object[] = [
-    {},
+const copticMonths: {AR:string, FR:string, EN:string }[] = [
+    {
+        //This is just added in order to count the months from 1 instead of 0
+        AR: 'none',
+        FR: 'none',
+        EN: 'none'},
     {
         AR: "توت",
         FR: "Tout",
@@ -185,10 +189,10 @@ const ReadingsIntrosAndEnds = {
         FR: 'La parole du Seigneur croît, se multiplie et s’enracine dans la sainte Église de Dieu. Amen!',
         EN:'',
     },
-    synaxariumIntro:  {
-        AR: 'اليوم () من شهر () المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.',
-        FR: 'Le () du mois copte ... ',
-        EN: 'We are the ()th day of the month of () '
+    synaxariumIntro: {
+        AR: `اليوم theday من شهر themonth المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.`,
+        FR: 'Le theday du mois copte themonth ',
+        EN: 'We are the theday day of the themonth of () ',
     },
 };
 const ReadingsArrays = {
