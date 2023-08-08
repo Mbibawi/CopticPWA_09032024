@@ -601,8 +601,11 @@ table{
 }
 div.ReadingIntro{
   background-color: darkgoldenrod;
-  margin-top: 20px;
-  border-bottom: #111 solid 3pt;
+  margin-top: 0px;
+  border-top: #111 solid 2pt;
+  border-bottom: #111 solid 2pt;
+  border-left: #111 solid 2pt;
+  border-right: #111 solid 2pt;
 }
 div.ReadingEnd{
   background-color: burlywood;

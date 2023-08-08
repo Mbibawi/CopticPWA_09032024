@@ -433,7 +433,7 @@ function checkIfDateIsToday(date: Date):boolean {
 
 function testReadings() {
 	addConsoleSaveMethod(console);
-	let btns: Button[] = [btnReadingsGospelIncenseDawn, btnReadingsGospelIncenseVespers, btnReadingsGospelMass, btnReadingsGospelNight, btnReadingsKatholikon, btnReadingsPraxis, btnReadingsPropheciesDawn, btnReadingsStPaul, btnReadingsSynaxarium];
+	let btns: Button[] = [...btnDayReadings.children, btnReadingsGospelNight, btnReadingsPropheciesDawn];
 	let query: string, result:string = '';
 	setCopticDates(new Date('2022.12.31'));
 

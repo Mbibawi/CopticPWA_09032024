@@ -756,13 +756,11 @@ const btnMassUnBaptised: Button = new Button({
     //The prayers sequence must be set when the button is clicked
     btnMassUnBaptised.prayersSequence = [...MassPrayersSequences.MassUnbaptized],
     //Adding children buttons to btnMassUnBaptised
-    btnMassUnBaptised.children = [
-      btnReadingsStPaul,
-      btnReadingsKatholikon,
-      btnReadingsPraxis,
-      btnReadingsSynaxarium,
-      btnReadingsGospelMass,
-          ];
+    btnMassUnBaptised.children = [...btnDayReadings.children];
+    btnMassUnBaptised.children.splice(0, 1);
+    btnMassUnBaptised.children.splice(btnMassUnBaptised.children.length-1, 1);
+    
+    
         //Adding the creed and 
           (function addCreed() {
                   btnMassUnBaptised.prayersSequence.unshift(Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay', Prefix.commonPrayer + 'Creed&D=$copticFeasts.AnyDay')
@@ -830,39 +828,57 @@ const btnMassUnBaptised: Button = new Button({
                 let anchor: HTMLElement = btnMassUnBaptised.docFragment.querySelectorAll(getDataRootSelector(Prefix.commonPrayer + 'HolyGodHolyPowerful&D=$copticFeasts.AnyDay'))[0] as HTMLElement; //this is the html element before which we will insert all the readings and responses
                 let reading: string[][][];
                 (function insertStPaulReading() {
-                        reading = btnReadingsStPaul.prayersArray.filter(tbl => splitTitle(tbl[0][0])[0] === btnReadingsStPaul.prayersSequence[0] + '&D=' + copticReadingsDate);
+                        reading = ReadingsArrays.StPaulArray.filter(tbl => splitTitle(tbl[0][0])[0] === Prefix.stPaul + '&D=' + copticReadingsDate);
                         //adding the  end of the St Paul reading
                         if (reading.length === 0) return;
-                        reading =[
-                        [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.stPaulIntro.AR, ReadingsIntrosAndEnds.stPaulIntro.FR, ReadingsIntrosAndEnds.stPaulIntro.EN]],
-                        ...reading,
-                        [[reading[0][1][0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.stPaulEnd.AR, ReadingsIntrosAndEnds.stPaulEnd.FR, ReadingsIntrosAndEnds.stPaulEnd.EN]]];
+
+                  //Adding the reading end
+                        reading.push([[splitTitle(reading[0][0][0])[0]  + '&C=ReadingEnd', ReadingsIntrosAndEnds.stPaulEnd.AR, ReadingsIntrosAndEnds.stPaulEnd.FR, ReadingsIntrosAndEnds.stPaulEnd.EN]]);
+
+                  //Inserting the reading intro after the title
+                  reading[0].splice(1, 0, [
+                    splitTitle(reading[0][0][0])[0] + '&C=ReadingIntro',
+                    ReadingsIntrosAndEnds.stPaulIntro.AR,
+                    ReadingsIntrosAndEnds.stPaulIntro.FR,
+                    ReadingsIntrosAndEnds.stPaulIntro.EN
+                  ]);//We replace the first row in the first table of reading (which is the title of the Praxis, with the introduction table
                                
-                        insertPrayersAdjacentToExistingElement(reading, btnReadingsStPaul.languages, { beforeOrAfter: 'beforebegin', el: anchor });
+                        insertPrayersAdjacentToExistingElement(reading, readingsLanguages, { beforeOrAfter: 'beforebegin', el: anchor });
                 })();   
                 (function insertKatholikon() {
-                  reading = btnReadingsKatholikon.prayersArray.filter(tbl => splitTitle(tbl[0][0])[0] === btnReadingsKatholikon.prayersSequence[0] + '&D=' + copticReadingsDate);
+                  reading = ReadingsArrays.KatholikonArray.filter(tbl => splitTitle(tbl[0][0])[0] === Prefix.katholikon + '&D=' + copticReadingsDate);
                   if (reading.length === 0) return;
                         //ading the introduction and the end of the Katholikon
-                        reading = [
-                                [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.katholikonIntro.AR, ReadingsIntrosAndEnds.katholikonIntro.FR, ReadingsIntrosAndEnds.katholikonIntro.EN]],
-                                ...reading,
-                                [[reading[0][1][0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.katholikonEnd.AR, ReadingsIntrosAndEnds.katholikonEnd.FR, ReadingsIntrosAndEnds.katholikonEnd.EN]]];
+                  reading.push([[
+                    splitTitle(reading[0][0][0])[0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.katholikonEnd.AR, ReadingsIntrosAndEnds.katholikonEnd.FR, ReadingsIntrosAndEnds.katholikonEnd.EN
+                  ]]);
+
+                  //Inserting the reading intro after the title
+                  reading[0].splice(1, 0,
+                    [splitTitle(reading[0][0][0])[0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.katholikonIntro.AR, ReadingsIntrosAndEnds.katholikonIntro.FR, ReadingsIntrosAndEnds.katholikonIntro.EN
+                    ]);//We replace the second row in the table of reading (which is the title of the Katholikon, with the introduction table)
         
-                  insertPrayersAdjacentToExistingElement(reading, btnReadingsKatholikon.languages, { beforeOrAfter: 'beforebegin', el: anchor });
+                  insertPrayersAdjacentToExistingElement(reading, readingsLanguages, { beforeOrAfter: 'beforebegin', el: anchor });
                 })();   
                 (function insertPraxis() {
-                  reading = btnReadingsPraxis.prayersArray.filter(tbl => splitTitle(tbl[0][0])[0] === btnReadingsPraxis.prayersSequence[0] + '&D=' + copticReadingsDate);
+                  reading = ReadingsArrays.PraxisArray.filter(tbl => splitTitle(tbl[0][0])[0] === Prefix.praxis + '&D=' + copticReadingsDate);
                   if (reading.length === 0) return;
-                        reading = [
-                                [[reading[0][1][0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.praxisIntro.AR, ReadingsIntrosAndEnds.praxisIntro.FR, ReadingsIntrosAndEnds.praxisIntro.EN]],
-                                ...reading,
-                                [[reading[0][1][0] + '&C=ReadingEnd', ReadingsIntrosAndEnds.praxisEnd.AR, ReadingsIntrosAndEnds.praxisEnd.FR, ReadingsIntrosAndEnds.praxisEnd.EN]]];
+
+                    reading.push([[splitTitle(reading[0][0][0])[0]  + '&C=ReadingEnd', ReadingsIntrosAndEnds.praxisEnd.AR, ReadingsIntrosAndEnds.praxisEnd.FR, ReadingsIntrosAndEnds.praxisEnd.EN]])
+                  
+                  //Inserting the reading intro after the title
+                  reading[0].splice(1, 0, [splitTitle(reading[0][0][0])[0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.praxisIntro.AR, ReadingsIntrosAndEnds.praxisIntro.FR, ReadingsIntrosAndEnds.praxisIntro.EN]);//We replace the first row in the first table of reading (which is the title of the Praxis, with the introduction table
         
-                        insertPrayersAdjacentToExistingElement(reading, btnReadingsPraxis.languages, { beforeOrAfter: 'beforebegin', el: anchor });
+                        insertPrayersAdjacentToExistingElement(reading, readingsLanguages, { beforeOrAfter: 'beforebegin', el: anchor });
                         
                   (function insertPraxisResponse() {
-                    let response: string[][][] = PrayersArray.filter(table =>
+                    let praxis: HTMLElement[] = Array.from(
+                      btnMassUnBaptised.docFragment.querySelectorAll(getDataRootSelector(Prefix.praxis + '&D=', true))
+                    );
+                    if (praxis.length === 0) return;
+
+                    let response: string[][][] = PrayersArray
+                      .filter(table =>
                       table[0][0].startsWith(Prefix.praxisResponse)
                       && (
                         eval(splitTitle(table[0][0])[0].split('&D=')[1].replace('$', '')) === copticDate
@@ -878,42 +894,77 @@ const btnMassUnBaptised: Button = new Button({
                       //If a Praxis response was found
                       if (Season === Seasons.GreatLent) {
                         // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
-                        if (todayDate.getDay() === 0 || todayDate.getDay() === 6) response = response.filter(table => table[0][0].includes('Sundays&D='));
-                        if (todayDate.getDay() != 0 && todayDate.getDay() != 6) response = response.filter(table => table[0][0].includes('Week&D='));
+                        if (todayDate.getDay() === 0
+                          || todayDate.getDay() === 6)
+                          response = response.filter(table => table[0][0].includes('Sundays&D='));
+                        else response = response.filter(table => table[0][0].includes('Week&D='));
                       }
-                      insertPrayersAdjacentToExistingElement(response, prayersLanguages, { beforeOrAfter: 'beforebegin', el: btnMassUnBaptised.docFragment.querySelectorAll(getDataRootSelector(Prefix.praxis, true))[0] as HTMLElement });
-                             
-                      //Moving the annual response
-                      let annual = btnMassUnBaptised.docFragment.querySelectorAll(getDataRootSelector(Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay")) as NodeListOf<HTMLElement>;
-                      if(!annual || annual.length ===0) return console.log('error: annual = ', annual);
+                      insertPrayersAdjacentToExistingElement(response, prayersLanguages, { beforeOrAfter: 'beforebegin', el: praxis[0] });
+                    };
 
-                      Array.from(annual).forEach(
-                        (el: HTMLElement) => {
-                          btnMassUnBaptised.docFragment
-                            .querySelectorAll(getDataRootSelector(Prefix.praxis, true))[0]
-                            .insertAdjacentElement('beforebegin', el)
-                    }) 
-                }
-                    })();
-    })();
-    (function insertPentecostalHymns() {
-      if (Season !== Seasons.PentecostalDays) return;
-      let hymns: string[][][] = PrayersArray.filter((table) => table[0][0].startsWith("PentecostalHymns&D=$Seasons.PentecostalDays"));
-      if (hymns.length > 0) {
-        insertPrayersAdjacentToExistingElement(hymns, prayersLanguages, { beforeOrAfter: 'beforebegin', el: anchor })
-      }
-    })();
+                    //Moving the annual response
+                    let noSeasonResponse: HTMLElement[] = Array.from(
+                      btnMassUnBaptised.docFragment.querySelectorAll(getDataRootSelector(Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay"))
+                    );
 
-    (function insertGospelReading() {
+                    if(!noSeasonResponse || noSeasonResponse.length ===0) return console.log('error: annual = ', noSeasonResponse);
+                    
+                    noSeasonResponse.forEach(htmlRow => praxis[0].insertAdjacentElement('beforebegin', htmlRow));
 
-      //Inserting the Gospel Reading
-      getGospelReadingAndResponses(
-        Prefix.gospelMass,
-        btnReadingsGospelMass.prayersArray,
-        btnReadingsGospelMass.languages,
-        btnMassUnBaptised.docFragment
-      );
-    })();
+                  })();
+                })();
+                (function insertSynaxarium() {
+                  let synaxarium = ReadingsArrays.SynaxariumArray.filter(table => table[0][0].includes('&D=' + copticDate));
+
+                  if (synaxarium.length === 0) return;
+
+                  synaxarium[0].splice(1, 0, [
+                    splitTitle(synaxarium[0][0][0])[0] + '&C=ReadingIntro', ReadingsIntrosAndEnds.synaxariumIntro.AR,
+                    ReadingsIntrosAndEnds.synaxariumIntro.FR,
+                    ReadingsIntrosAndEnds.synaxariumIntro.EN,
+                  ]);
+                  
+                  let praxisElements: HTMLElement[] =
+                    Array.from(
+                      btnMassUnBaptised.docFragment
+                        .querySelectorAll(getDataRootSelector(Prefix.praxis + '&D=', true))
+                    );
+                  
+                  let position:{beforeOrAfter:InsertPosition, el:HTMLElement} = {
+                    beforeOrAfter: 'beforebegin',
+                    el: praxisElements[praxisElements.length-1].nextElementSibling as HTMLElement,
+                  };
+
+                  synaxarium
+                    .forEach(table => {
+                      table
+                        .map(row => {
+                          return createHtmlElementForPrayer(
+                            row,
+                            ['FR', 'AR'],
+                            undefined,
+                            position)
+                        });
+                    });
+                  
+                })();
+                (function insertPentecostalHymns() {
+                  if (Season !== Seasons.PentecostalDays) return;
+                  let hymns: string[][][] = PrayersArray.filter((table) => table[0][0].startsWith("PentecostalHymns&D=$Seasons.PentecostalDays"));
+                  if (hymns.length > 0) {
+                    insertPrayersAdjacentToExistingElement(hymns, prayersLanguages, { beforeOrAfter: 'beforebegin', el: anchor })
+                  }
+                })();
+                (function insertGospelReading() {
+
+                  //Inserting the Gospel Reading
+                  getGospelReadingAndResponses(
+                    Prefix.gospelMass,
+                    ReadingsArrays.GospelMassArray,
+                    readingsLanguages,
+                    btnMassUnBaptised.docFragment
+                  );
+                })();
 
     
     (function insertBookOfHoursButton() {
@@ -1026,7 +1077,85 @@ const btnMassBaptised: Button = new Button({
 
 const btnDayReadings: Button = new Button({
   btnID: "btnDayReadings",
-  label: {defaultLanguage: "قراءات اليوم", foreignLanguage: "Lectures du jour", otherLanguage: "Day's Readings" },
+  children: [
+    new Button({
+      btnID: "btnReadingsStPaul",
+      label: {
+        defaultLanguage: "البولس",
+        foreignLanguage: "Epître de Saint Paul",
+        otherLanguage: "Pauline Epistle",
+      },
+      showPrayers: true,
+      prayersSequence: [Prefix.stPaul],
+      prayersArray: ReadingsArrays.StPaulArray,
+      languages: [...readingsLanguages],
+      onClick: () => {
+        scrollToTop(); //scrolling to the top of the page
+      },
+    }),
+    new Button({
+      btnID: "btnReadingsKatholikon",
+      label: {
+        defaultLanguage: "الكاثوليكون",
+        foreignLanguage: "Katholikon",
+      },
+      showPrayers: true,
+      prayersSequence: [Prefix.katholikon],
+      prayersArray: ReadingsArrays.KatholikonArray,
+      languages: [...readingsLanguages],
+      onClick: () => {
+        scrollToTop(); //scrolling to the top of the page
+      },
+    }),
+    
+    new Button({
+      btnID: "btnReadingsPraxis",
+      label: {
+        defaultLanguage: "الإبركسيس",
+        foreignLanguage: "Praxis",
+      },
+      showPrayers: true,
+      prayersSequence: [Prefix.praxis],
+      prayersArray: ReadingsArrays.PraxisArray,
+      languages: [...readingsLanguages],
+      onClick: () => {
+        scrollToTop(); //scrolling to the top of the page
+      },
+    }), 
+    new Button({
+      btnID: "btnReadingsSynaxarium",
+      label: {
+        defaultLanguage: "السنكسار",
+        foreignLanguage: "Synaxarium",
+      },
+      showPrayers: true,
+      prayersArray: ReadingsArrays.SynaxariumArray,
+      languages: ['FR', "AR"],
+      onClick: function (this:Button) {
+        //We can't use an arrow function here because we need to use this
+        this.prayersSequence = [Prefix.synaxarium + '&D=' + copticDate];
+          scrollToTop(); //scrolling to the top of the page
+      },
+    }), 
+    new Button({
+      btnID: "btnReadingsGospelMass",
+      label: {
+        defaultLanguage: "إنجيل القداس",
+        foreignLanguage: "l'Evangile",
+        otherLanguage: "Gospel",
+      },
+      showPrayers: true,
+      prayersSequence: [Prefix.gospelMass + "Psalm", Prefix.gospelMass + "Gospel"],
+      prayersArray: ReadingsArrays.GospelMassArray,
+      languages: [...readingsLanguages],
+      onClick: () => {
+        scrollToTop(); //scrolling to the top of the page
+      },
+    })],
+  label: {
+    defaultLanguage: "قراءات اليوم", foreignLanguage: "Lectures du jour",
+    otherLanguage: "Day's Readings"
+  },
         onClick: () => {
         if (Season === Seasons.HolyWeek) {
                         //We should put here child buttons for the Holy Week prayers and readings
@@ -1036,15 +1165,8 @@ const btnDayReadings: Button = new Button({
                         return
           }
     //We set the btnDayReadings.children[] property
-    btnDayReadings.children = [
-      btnReadingsGospelIncenseDawn,
-      btnReadingsStPaul,
-      btnReadingsKatholikon,
-      btnReadingsPraxis,
-      btnReadingsSynaxarium,
-      btnReadingsGospelMass,
-      btnReadingsGospelIncenseVespers,
-    ];
+    btnDayReadings.children.push(btnReadingsGospelIncenseVespers);
+    btnDayReadings.children.unshift(btnReadingsGospelIncenseDawn);
     if (
       Season === Seasons.GreatLent &&
       todayDate.getDay() != 6 &&
@@ -1087,81 +1209,7 @@ const btnDayReadings: Button = new Button({
   },
 });
 
-const btnReadingsStPaul: Button = new Button({
-  btnID: "btnReadingsStPaul",
-  label: {
-    defaultLanguage: "البولس",
-    foreignLanguage: "Epître de Saint Paul",
-    otherLanguage: "Pauline Epistle",
-  },
-  showPrayers: true,
-  prayersSequence: [Prefix.stPaul],
-  prayersArray: ReadingsArrays.StPaulArray,
-  languages: [...readingsLanguages],
-  onClick: () => {
-    scrollToTop(); //scrolling to the top of the page
-  },
-});
-const btnReadingsKatholikon: Button = new Button({
-  btnID: "btnReadingsKatholikon",
-  label: {
-    defaultLanguage: "الكاثوليكون",
-    foreignLanguage: "Katholikon",
-  },
-  showPrayers: true,
-  prayersSequence: [Prefix.katholikon],
-  prayersArray: ReadingsArrays.KatholikonArray,
-  languages: [...readingsLanguages],
-  onClick: () => {
-    scrollToTop(); //scrolling to the top of the page
-  },
-});
 
-const btnReadingsPraxis: Button = new Button({
-  btnID: "btnReadingsPraxis",
-  label: {
-    defaultLanguage: "الإبركسيس",
-    foreignLanguage: "Praxis",
-  },
-  showPrayers: true,
-  prayersSequence: [Prefix.praxis],
-  prayersArray: ReadingsArrays.PraxisArray,
-  languages: [...readingsLanguages],
-  onClick: () => {
-    scrollToTop(); //scrolling to the top of the page
-  },
-});
-
-const btnReadingsSynaxarium: Button = new Button({
-  btnID: "btnReadingsSynaxarium",
-  label: {
-    defaultLanguage: "السنكسار",
-    foreignLanguage: "Synaxarium",
-  },
-  showPrayers: true,
-  prayersArray: ReadingsArrays.SynaxariumArray,
-  languages: ["FR", "AR"],
-  onClick: () => {
-    (btnReadingsSynaxarium.prayersSequence = [Prefix.synaxarium + "&D=" + copticDate]),
-      scrollToTop(); //scrolling to the top of the page
-  },
-});
-
-const btnReadingsGospelMass: Button = new Button({
-  btnID: "btnReadingsGospelMass",
-  label: {
-    defaultLanguage: "إنجيل القداس",
-    foreignLanguage: "l'Evangile",
-    otherLanguage: "Gospel",
-  },
-  showPrayers: true,
-  prayersSequence: [Prefix.gospelMass + "Psalm", Prefix.gospelMass + "Gospel"],
-  prayersArray: ReadingsArrays.GospelMassArray,
-  languages: [...readingsLanguages],
-  onClick: () => {
-    scrollToTop(); //scrolling to the top of the page
-  },
-});
 
 const btnReadingsGospelIncenseVespers: Button = new Button({
   btnID: "btnReadingsGospelIncenseVespers",

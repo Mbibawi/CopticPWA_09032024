@@ -36,6 +36,76 @@ const sideBarBtn = document.getElementById('opensidebar') as HTMLButtonElement;
 const toggleDevBtn = document.getElementById('toggleDev') as HTMLButtonElement;
 const inlineBtnsDiv: HTMLElement = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates: string[] = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
+
+const copticMonths: object[] = [
+    {},
+    {
+        AR: "توت",
+        FR: "Tout",
+        EN: "Tut"
+    },
+    {
+        AR: "بابه",
+        FR: "Bâbah",
+        EN: "Babah"
+    },
+    {
+        AR: "هاتور",
+        FR: "Hâtour",
+        EN: "Hatour"
+    },
+    {
+        AR: "كيهك",
+        FR: "Kiahk",
+        EN: "Kiahk"
+    },
+    {
+        AR: "طوبة",
+        FR: "Toubah",
+        EN: ""
+    },
+    {
+        AR: "أمشير",
+        FR: "Amshir",
+        EN: "Amshir"
+    },
+    {
+        AR: "برمهات",
+        FR: "Baramhât",
+        EN: "Baramhat"
+    },
+    {
+        AR: "برمودة",
+        FR: "Baramoudah",
+        EN: "Baramudah"
+    },
+    {
+        AR: "بشنس",
+        FR: "Bachans",
+        EN: "Bashans"
+    },
+    {
+        AR: "بؤونة",
+        FR: "Baounah",
+        EN: "Baounah"
+    },
+    {
+        AR: "أبيب",
+        FR: "Abîb",
+        EN: "Abib"
+    },
+    {
+        AR: "مسرى",
+        FR: "Misra",
+        EN: "Mesra"
+    },
+    {
+        AR: "نسي",
+        FR: "Nassie",
+        EN: "Nassie"
+    },
+    
+];
 const Prefix = {
     psalmResponse: 'PR_',
     gospelResponse: 'GR_',
@@ -117,7 +187,8 @@ const ReadingsIntrosAndEnds = {
     },
     synaxariumIntro:  {
         AR: 'اليوم () من شهر () المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.',
-        FR: '',
+        FR: 'Le () du mois copte ... ',
+        EN: 'We are the ()th day of the month of () '
     },
 };
 const ReadingsArrays = {
