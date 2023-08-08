@@ -75,11 +75,7 @@ body{
 
 .AR,
 .CA {
-  font-size: 20pt;
   font-weight: 500;
-  direction: rtl !important;
-  font-family: GentiumBookPlus;
- 
   line-height: 40px;
 }
 .FR,
@@ -237,12 +233,17 @@ div.Row.collapsedTitle{
 {
   font-size: 20pt;
   grid-area: AR;
+  direction: rtl !important;
+  font-family: GentiumBookPlus;
 }
 .Row > p.CA, 
 .Title >p.CA
 .SubTitle >p.CA
 {
+  font-size: 20pt;
   grid-area: CA;
+  direction: rtl !important;
+  font-family: GentiumBookPlus;
 }
 
 .Row > p.FR, 
@@ -638,7 +639,8 @@ div.ReadingEnd{
   grid-template-columns: 100%;
 }
 
-.Row > p.amplifiedText.AR{
+.Row > p.amplifiedText.AR,
+.Row > p.amplifiedText.CA{
   font-size:30pt !important;
   line-height: 48px;
 }
