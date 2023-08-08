@@ -235,8 +235,8 @@ div.Row.collapsedTitle{
 .Title >p.AR,
 .SubTitle>p.AR
 {
+  font-size: 20pt;
   grid-area: AR;
-  font-size: 14pt;
 }
 .Row > p.CA, 
 .Title >p.CA
@@ -639,11 +639,11 @@ div.ReadingEnd{
 }
 
 .Row > p.amplifiedText.AR{
-  font-size:26pt !important;
+  font-size:30pt !important;
   line-height: 48px;
 }
 .Row > p.amplifiedText.FR{
-  font-size:20pt !important;
+  font-size:24pt !important;
   line-height: 35px;
 }
 .Row > p.amplifiedText.COP{
