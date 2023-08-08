@@ -4646,15 +4646,15 @@ ReadingsArrays.GospelVespersArray = [
   [
     [
       Prefix.gospelVespers + "Psalm&D=121stSunday&C=Title",
-      "مزمور العشية  33 : 22,18",
+      "مزمور العشية33 : 22,18",
       "Psaume 33 : 22,18",
-      "EN",
+      "English missing",
     ],
     [
       Prefix.gospelVespers + "Psalm&D=121stSunday",
       "لتكن يا رب رحمتك علينا حسبما انتظرناك هوذا عين الرب على خائفيه الراجين رحمته. ",
       "22 Que ta fidélité, Seigneur, soit sur nous, comme notre espoir est en toi.18 Mais le Seigneur veille sur ceux qui le craignent, sur ceux qui espèrent en sa fidélité.\n\n",
-      "EN",
+      "English missing",
     ],
   ],
   [
@@ -4662,31 +4662,31 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Gospel&D=121stSunday&C=Title",
       "متى ( 6: 45 – 56 )",
       "Marc 6 : 45 - 56",
-      "EN",
+      "English missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=121stSunday",
       "وللوقت ألزم تلاميذه ان يدخلوا السفينة ويسبقوا الى العبر الى بيت صيدا حتى يكون قد صرف الجمع. وبعدما ودعهم مضى الى الجبل ليصلّي. ولما صار المساء كانت السفينة في وسط البحر وهو على البر وحده. ورآهم معذبين في الجذف. لان الريح كانت ضدهم. ",
       "45 Aussitôt, Jésus obligea ses disciples à monter dans la barque et à le précéder sur l'autre rive, vers Bethsaïde, pendant que lui-même renvoyait la foule. 46 Après l'avoir congédiée, il partit dans la montagne pour prier. 47 Le soir venu, la barque était au milieu de la mer, et lui, seul, à terre. 48 Voyant qu'ils se battaient à ramer contre le vent qui leur était contraire.",
-      "EN",
+      "English missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=121stSunday",
       "ونحو الهزيع الرابع من الليل اتاهم ماشيا على البحر واراد ان يتجاوزهم. فلما رأوه ماشيا على البحر ظنوه خيالا فصرخوا. لان الجميع رأوه واضطربوا. فللوقت كلمهم وقال لهم ثقوا.انا هو. لا تخافوا.",
       "vers la fin de la nuit, il vient vers eux en marchant sur la mer, et il allait les dépasser. 49 En le voyant marcher sur la mer, ils crurent que c'était un fantôme et ils poussèrent des cris. 50 Car ils le virent tous et ils furent affolés. Mais lui aussitôt leur parla; il leur dit: \"Confiance, c'est moi, n'ayez pas peur.\"\n\n",
-      "",
+      "English missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=121stSunday",
       "فصعد اليهم الى السفينة فسكنت الريح.فبهتوا وتعجبوا في انفسهم جدا الى الغاية.لانهم لم يفهموا بالارغفة اذ كانت قلوبهم غليظة. فلما عبروا جاءوا الى ارض جنيسارت وارسوا ولما خرجوا من السفينة للوقت عرفوه. فطافوا جميع تلك الكورة المحيطة وابتدأوا يحملون المرضى على اسرّة الى حيث سمعوا انه هناك.\n\n",
       "51 Il monta auprès d'eux dans la barque, et le vent tomba. Ils étaient extrêmement bouleversés. 52 En effet, ils n'avaient rien compris à l'affaire des pains, leur cœur était endurci. 53 Après la traversée, ils touchèrent terre à Génésareth et ils abordèrent. 54 Dès qu'ils eurent débarqué, les gens reconnurent Jésus; 55 ils parcoururent tout le pays et se mirent à apporter les malades sur des brancards là où l'on apprenait qu'il était. ",
-      "",
+      "English missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=121stSunday",
       "وحيثما دخل الى قرى او مدن او ضياع وضعوا المرضى في الاسواق وطلبوا اليه ان يلمسوا ولو هدب ثوبه.وكل من لمسه شفي.",
       "56 Partout où il entrait, villages, villes ou hameaux, on mettait les malades sur les places; on le suppliait de les laisser toucher seulement la frange de son vêtement; et ceux qui le touchaient étaient tous sauvés.",
-      "",
+      "English missing",
     ],
   ],
   [
@@ -4694,7 +4694,7 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Psalm&D=122ndSunday&C=Title",
       "مزمور عشية (119 : 145 – 146)",
       "Psaume 119 : 145,146",
-      "EN",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Psalm&D=122ndSunday",
@@ -4708,7 +4708,7 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Gospel&D=122ndSunday&C=Title",
       "لوقا (18:9-17 )",
       "Luc 18:9-17",
-      "EN",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=122ndSunday",
@@ -4720,19 +4720,19 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Gospel&D=122ndSunday",
       "اصوم مرتين في الاسبوع واعشر كل ما اقتنيه. واما العشار فوقف من بعيد لا يشاء ان يرفع عينيه نحو السماء.بل قرع على صدره قائلا اللهم ارحمني انا الخاطئ. ",
       "12 Je jeûne deux fois par semaine, je paie la dîme de tout ce que je me procure. 13 Le collecteur d'impôts, se tenant à distance, ne voulait même pas lever les yeux au ciel, mais il se frappait la poitrine en disant: \"Ô Dieu, prends pitié du pécheur que je suis. ",
-      "",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=122ndSunday",
       "اقول لكم ان هذا نزل الى بيته مبررا دون ذاك.لان كل من يرفع نفسه يتضع ومن يضع نفسه يرتفع. فقدّموا اليه الاطفال ايضا ليلمسهم فلما رآهم التلاميذ انتهروهم.  اما يسوع فدعاهم وقال دعوا الاولاد يأتون اليّ ولا تمنعوهم ",
       "14 Je vous le déclare: celui-ci redescendit chez lui justifié, et non l'autre, car tout homme qui s'élève sera abaissé, mais celui qui s'abaisse sera élevé.\"15 Des gens lui amenaient même les bébés pour qu'il les touche. Voyant cela, les disciples les rabrouaient. 16 Mais Jésus fit venir à lui les bébés en disant: \"Laissez les enfants venir à moi; ne les empêchez pas.",
-      "",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=122ndSunday",
       "لان لمثل هؤلاء ملكوت الله.الحق اقول لكم من لا يقبل ملكوت الله مثل ولد فلن يدخله.",
       "car le Royaume de Dieu est à ceux qui sont comme eux. 17 En vérité, je vous le déclare, qui n'accueille pas le Royaume de Dieu comme un enfant n'y entrera pas.",
-      "",
+      "English is missing",
     ],
   ],
   [
@@ -4740,13 +4740,13 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Psalm&D=123rdSunday&C=Title",
       "مزمور عشية (5:7, 11 )",
       "Psaume 5:7, 11",
-      "EN",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Psalm&D=123rdSunday",
       "اما انا فبكثرة رحمتك ادخل بيتك.اسجد في هيكل قدسك بخوفك ويفرح جميع المتكلين عليك. الى الابد يهتفون وتظللهم. ويبتهج بك محبو اسمك.",
       "7 Mais moi, grâce à ta fidélité, j'entre dans ta maison; avec crainte je me prosterne vers ton temple saint. 11 Et tous ceux qui t'ont pour refuge se réjouiront; toujours ils exulteront.",
-      "EN",
+      "English is missing",
     ],
   ],
   [
@@ -4754,13 +4754,13 @@ ReadingsArrays.GospelVespersArray = [
       Prefix.gospelVespers + "Gospel&D=123rdSunday&C=Title",
       "لوقا( 11 : 27 - 36) ",
       "Luc 11:27-36",
-      "EN",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=123rdSunday",
       "وفيما هو يتكلم بهذا رفعت امرأة صوتها من الجمع وقالت له طوبى للبطن الذي حملك والثديين اللذين رضعتهما. اما هو فقال بل طوبى للذين يسمعون كلام الله ويحفظونه وفيما كان الجموع مزدحمين ابتدأ يقول.هذا الجيل شرير.يطلب آية ولا تعطى له آية الا آية يونان النبي.",
       "27 Or comme il disait cela, une femme éleva la voix du milieu de la foule et lui dit: \"Heureuse celle qui t'a porté et allaité!\"28 Mais lui, il dit: \"Heureux plutôt ceux qui écoutent la parole de Dieu et qui l'observent. 29 Comme les foules s'amassaient, il se mit à dire: \"Cette génération est une génération mauvaise; elle demande un signe! En fait de signe, il ne lui en sera donné d'autre que le signe de Jonas.",
-      "EN",
+      "English is missing",
     ],
     [
       Prefix.gospelVespers + "Gospel&D=123rdSunday",

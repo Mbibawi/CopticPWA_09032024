@@ -71,14 +71,7 @@ body{
 .prayerTable {
   display: block;
 }
-.Title {
-  color: rgb(45, 71, 100) !important;
-  font-weight: bold;
-  font-size: 11pt !important;
-  text-align: center !important;
-  padding: 8px 12px;
-  margin: 1px 1px;
-}
+
 
 .AR,
 .CA {
@@ -231,7 +224,7 @@ div.Row.collapsedTitle{
   line-height: 30px;
 }
 
-.TitleRow, 
+.Title, 
 .SubTitle {
   text-align: center;
   background-color: #7E3B10 !important;
@@ -239,33 +232,33 @@ div.Row.collapsedTitle{
   border: #b94c04 solid 3pt ;
 }
 .Row > p.AR, 
-.TitleRow >p.AR,
+.Title >p.AR,
 .SubTitle>p.AR
 {
   grid-area: AR;
   font-size: 14pt;
 }
 .Row > p.CA, 
-.TitleRow >p.CA
+.Title >p.CA
 .SubTitle >p.CA
 {
   grid-area: CA;
 }
 
 .Row > p.FR, 
-.TitleRow >p.FR,
+.Title >p.FR,
 .SubTitle >p.FR
 {
  grid-area: FR;
 }
 
 .Row > p.COP, 
-.TitleRow >p.COP,
+.Title >p.COP,
 .SubTitle >p.COP
 {
   grid-area: COP;
 }
-.TitleRow > p,
+.Title > p,
 .SubTitle> p
 {
   font-weight: bold;
@@ -274,7 +267,7 @@ div.Row.collapsedTitle{
   text-justify: inter-word;
 }
 .Row >p, 
-.TitleRow >p, 
+.Title >p, 
 .SubTitle >p, 
 .Comments > p, 
 .CommentText > p{
@@ -327,7 +320,7 @@ border-radius: 20px ;
   border-radius: 20px;
 }
 
-.DisplayModePresentation.TitleRow,
+.DisplayModePresentation.Title,
 .DisplayModePresentation.SubTitle
 {
   grid-template: "FR AR";
@@ -339,7 +332,7 @@ border-radius: 20px ;
   margin-bottom: 5px;
   background-color: white !important;
 }
-.DisplayModePresentation.TitleRow>p,
+.DisplayModePresentation.Title>p,
 .DisplayModePresentation.SubTitle>p
 {
   font-size: 15pt !important;

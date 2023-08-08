@@ -95,7 +95,7 @@ function createHtmlElementForPrayer(
 ): HTMLDivElement {
     //@ts-ignore
     if (!tblRow) return console.log('No tblRow argument is provided to createHtmlElementForPrayer() ');
-  if (!actorClass) actorClass = tblRow[0].split('&C=')[1];
+  if (!actorClass) actorClass = splitTitle(tblRow[0])[1];
   if (actorClass) {
     let parsed = JSON
       .parse(localStorage.showActors)
@@ -106,24 +106,22 @@ function createHtmlElementForPrayer(
   if (!position) position = containerDiv;
   let htmlRow: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string, titleBase:string;
   
-  titleBase = baseTitle(tblRow[0]);
+  titleBase = splitTitle(tblRow[0])[0];
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
   htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
-  if (actorClass && !actorClass.includes('Title')) {
-    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TitleRow" (see below)
-    htmlRow.classList.add(actorClass);
-  } else if (
-    actorClass
-    && actorClass.includes('Title')
-  ) {
+
+  if (actorClass) htmlRow.classList.add(actorClass); 
+  if (actorClass && actorClass.includes('Title')) {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(htmlRow);
-    }); //we also add a 'click' eventListener to the 'TitleRow' elements
-  }
+    }); //we also add a 'click' eventListener to the 'Title' elements
+   htmlRow.id = tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
+  };
+
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
@@ -139,17 +137,8 @@ function createHtmlElementForPrayer(
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     if (userLanguages.indexOf(lang) > -1) {  
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if (actorClass && actorClass === 'Title') {
-        //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'
-        htmlRow.classList.add('TitleRow');
-        htmlRow.id = tblRow[0];
-      } else if (actorClass) {
-        //if the prayer is a comment like the comments in the Mass
-        htmlRow.classList.add(actorClass);
-      } else {
-        //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
-        p.classList.add("PrayerText");
-      }
+      if(!actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
+      
       p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
       text = tblRow[x];
       p.lang = lang.toLowerCase();
@@ -301,7 +290,7 @@ function showChildButtonsOrPrayers(
     });
   }
 
-  showTitlesInRightSideBar(container.querySelectorAll("div.TitleRow")
+  showTitlesInRightSideBar(container.querySelectorAll("div.Title")
   );
 
   if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
@@ -332,7 +321,7 @@ function showChildButtonsOrPrayers(
  * Adds the data-group attribute to all all the divs children of the html element passed to it as an argument
  * @param {htmle}  container - the html element container for which we will  add the data-group attribute to each of its div children  
  */
-async function addDataGroupsToContainerChildren(container: HTMLElement | DocumentFragment, titleClass: string = 'TitleRow', titleRow?: HTMLElement) {
+async function addDataGroupsToContainerChildren(container: HTMLElement | DocumentFragment, titleClass: string = 'Title', titleRow?: HTMLElement) {
   if (titleRow
       && titleRow.classList.contains(titleClass)) {
     let nextSibling = titleRow.nextElementSibling as HTMLElement;
@@ -1010,37 +999,36 @@ function showPrayers(
   position:
     { el: HTMLElement; beforeOrAfter: InsertPosition }
     | HTMLElement | DocumentFragment = containerDiv 
-): HTMLDivElement[] | void {
+): HTMLDivElement[][] | void {
+
+  if (!btn || !btn.prayersSequence) return;
+
   if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) closeSideBar(leftSideBar);
   if (clearContent) containerDiv.innerHTML = "";
-  if (clearRightSideBar) rightSideBar.querySelector("#sideBarBtns").innerHTML = "";
-   //this is the right side bar where the titles are displayed for navigation purposes
-  btn.prayersSequence.map((p) => {
-    if (!p) return;
- 
-    let date: string;
-    if (p.includes("&D=") || p.includes("&S=")) {
-      //if the id of the prayer includes the value '&D=' this tells us that this prayer is either not linked to a specific day in the coptic calendar (&D=), or the date has been set by the button function (e.g.: PrayerGospelResponse&D=GLWeek). In this case, we will not add the copticReadingsDate to the prayerID
-      //Similarly, if the id includes '&S=', it tells us that it is not linked to a specific date but to a given period of the year. We also keep the id as is without adding any date to it
-      date = "";
-    } else {
-      date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
-    }
-    p += date;
-    let wordTable = findPrayerInBtnPrayersArray(p, btn);
-    if (!wordTable) return;
-    
-    //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
-    return wordTable.map((row) => {
-        return createHtmlElementForPrayer(
-          row,
-          btn.languages,
-          JSON.parse(localStorage.userLanguages),
-          position
-        );
-      });
-    
-  });
+  if (clearRightSideBar) rightSideBar.querySelector("#sideBarBtns").innerHTML = "";    //this is the right side bar where the titles are displayed for navigation purposes
+
+  let date: string;
+  return btn.prayersSequence
+    .map((prayer: string) => {
+      if (!prayer) console.log('no prayer');
+        if (!prayer) return;
+        if (prayer.includes("&D=")) date = "";
+        else date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
+        prayer += date;
+      let wordTable = findPrayerInBtnPrayersArray(prayer, btn);
+        if (!wordTable) return;
+        
+        //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
+      return wordTable
+        .map((row) => {
+            return createHtmlElementForPrayer(
+              row,
+              btn.languages,
+              JSON.parse(localStorage.userLanguages),
+              position
+            );
+        });
+  }) as HTMLDivElement[][];
 }
 
 /**
@@ -1048,6 +1036,7 @@ function showPrayers(
  * @param {NodeListOf<Element>} Rows - The html elements for which we will set the css. These are usually the div children of containerDiv
  */
 async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
+  if (!htmlRows) return;
   if (localStorage.displayMode === displayModes[1]) return;
   if (!htmlRows) return;
   let plusSign = String.fromCharCode(plusCharCode), minusSign = String.fromCharCode(plusCharCode + 1);
@@ -1061,7 +1050,7 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
         row.style.gridTemplateAreas = setGridAreas(row);
  
 
-      if (row.classList.contains('TitleRow')
+      if (row.classList.contains('Title')
         || row.classList.contains('SubTitle')) {
         //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
         row.role = "button";
@@ -1075,7 +1064,7 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
           plusSign + " " + defLangParag.innerText; //We add the plus (+) sign at the begining
         if (row.dataset.isCollapsed === 'false') defLangParag.innerText =
           minusSign + " " + defLangParag.innerText;//We add the minus (-) sig at the begining;
-        if (row.classList.contains('TitleRow'))addDataGroupsToContainerChildren(undefined, 'TitleRow', row);
+        if (row.classList.contains('Title'))addDataGroupsToContainerChildren(undefined, 'Title', row);
         if (row.classList.contains('SubTitle')) addDataGroupsToContainerChildren(undefined, 'SubTitle', row);
       } else {
         replaceEigthNote(undefined, Array.from(row.querySelectorAll('p')));
@@ -1118,6 +1107,7 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
 };
 
 async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
+  if (!htmlRows) return;
   if (localStorage.displayMode === displayModes[1]) return;//We don't amplify the text if we are in the 'Presentation Mode'
   
   let langs = JSON.parse(localStorage.textAmplified) as [string, boolean][];
@@ -1139,16 +1129,14 @@ async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
     });
 }
 
-async function setButtonsPrayers() {
-  for (let i = 0; i < btns.length; i++) {
-    btnsPrayers.push([btns[i].btnID, ...(await btns[i].onClick())]);
-    btns[i].retrieved = true;
-  }
-  console.log("Buttons prayers were set");
-  return btnsPrayers;
+async function setButtonsPrayers(){
+ btns.map((btn: Button) => {
+   btnsPrayersSequences.push( btn.onClick()) ;
+   btn.retrieved = true;
+  });
 }
 /**
- * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'TitleRow'. It does this by toggeling the "display" property of the html elements
+ * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'Title'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
 function collapseText(titleRow: HTMLElement, container: HTMLElement = containerDiv) {
@@ -1162,7 +1150,7 @@ function collapseText(titleRow: HTMLElement, container: HTMLElement = containerD
 
 /**
  * Toggels the minus and plus signs in the Title 
- * @param {HTMLElement} titleRow - the html element (usually a div with class 'TitleRow') that we wqnt to toggle the minus or plus signs according to whether the text is collapsed or not
+ * @param {HTMLElement} titleRow - the html element (usually a div with class 'Title') that we wqnt to toggle the minus or plus signs according to whether the text is collapsed or not
  * @returns 
  */
 async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:number = plusCharCode) {
@@ -1191,14 +1179,14 @@ async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:
  }
 
 /**
- * Collapses all the tiltes (i.e. all the divs with class 'TitleRow' or 'SubTitle') in the html element passed as argument
- * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'TitleRow' or 'SubTitle'
+ * Collapses all the tiltes (i.e. all the divs with class 'Title' or 'SubTitle') in the html element passed as argument
+ * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'Title' or 'SubTitle'
  */
 function collapseAllTitles(container: HTMLElement | DocumentFragment) {
   if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div')
     .forEach(row => {
-      if (!row.classList.contains('TitleRow')
+      if (!row.classList.contains('Title')
         && !row.classList.contains('SubTitle')){
         row.classList.add('collapsedTitle');
       } else {
@@ -1312,12 +1300,12 @@ async function showInlineButtonsForOptionalPrayers(
     selectedPrayers.map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       let inlineBtn: Button = new Button({
-        btnID: baseTitle(prayerTable[0][0]), //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
+        btnID: splitTitle(prayerTable[0][0])[0], //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
           defaultLanguage: prayerTable[0][btn.languages.indexOf(defaultLanguage) + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
           foreignLanguage: prayerTable[0][btn.languages.indexOf(foreingLanguage) + 1], //same logic and comment as above
         },
-        prayersSequence: [baseTitle(prayerTable[0][0])], //this gives the title of the table without '&C=*'
+        prayersSequence: [splitTitle(prayerTable[0][0])[0]], //this gives the title of the table without '&C=*'
         prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable
         languages: btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
         cssClass: "fractionPrayersBtn",
@@ -1334,20 +1322,29 @@ async function showInlineButtonsForOptionalPrayers(
             }
           
           //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
-          let createdElements = showPrayers(inlineBtn, false, false, {
-            beforeOrAfter: "afterend",
+          let createdElements =
+            showPrayers(inlineBtn, false, false, {
             el: masterBtnDiv,
-          }) as HTMLDivElement[];
+            beforeOrAfter: "afterend",
+          }) as HTMLDivElement[][];
 
-          masterBtnDiv.dataset.displayedOptionalPrayer = baseTitle(prayerTable[0][0]); //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
+          masterBtnDiv.dataset.displayedOptionalPrayer = splitTitle(prayerTable[0][0])[0]; //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
 
+
+          createdElements
+            .map((table: HTMLDivElement[]) => {
+              if (table.length === 0) return;
+            
+              table.forEach(el =>
+                
           //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-          createdElements.forEach(el => el.dataset.optionalPrayer = el.dataset.root);
-          
-          //We format the grid template of the newly added divs
-          setCSSGridTemplate(createdElements);
-          //We apply the amplification of text
-          applyAmplifiedText(createdElements);
+                el.dataset.optionalPrayer = el.dataset.root);
+              //We format the grid template of the newly added divs
+              setCSSGridTemplate(table)
+              //We apply the amplification of text
+              applyAmplifiedText(table);
+          });
+        
           //We scroll to the button
           createFakeAnchor(masterBtnID);
         },
@@ -1367,10 +1364,10 @@ async function showInlineButtonsForOptionalPrayers(
 function findPrayerInBtnPrayersArray(p: string, btn: Button): string[][] | undefined {
   let tblTitle: string;
   for (let i = 0; i < btn.prayersArray.length; i++) {
-    tblTitle = baseTitle(btn.prayersArray[i][0][0]);
+    tblTitle = splitTitle(btn.prayersArray[i][0][0])[0];
     if (
       btn.prayersArray[i][0] && //we check that btn.prayersArray[i] is not an empty array (it might happen as an error when the text is generated by VBA. Although I believe it has been fixed in my VBA code, but just in ase)
-      baseTitle(btn.prayersArray[i][0][0]) === p //i.e., if the id of the table = the id of the prayer
+      splitTitle(btn.prayersArray[i][0][0])[0] === p //i.e., if the id of the table = the id of the prayer
     ) {
       return btn.prayersArray[i]; //we return the array representing the Word table (this array is a string[][], each of its elements is a string[] representing a row in the Word table)
     }
@@ -1720,9 +1717,10 @@ function showSettingsPanel() {
             'ReadingsArrays.PropheciesDawnArray',
             'ReadingsArrays.StPaulArray',
             'ReadingsArrays.SynaxariumArray'
-          ]
+          ];
           let select = document.createElement('select'), option: HTMLOptionElement;
           select.style.backgroundColor = 'ivory';
+          select.style.height = "16pt";
           editable.forEach(name => {
             option = document.createElement('option');
             option.innerText = name;
@@ -1731,28 +1729,7 @@ function showSettingsPanel() {
           })
           document.getElementById('homeImg').insertAdjacentElement('afterend', select);
           hideInlineButtonsDiv();
-          select.addEventListener('change', processSelection)
-          function processSelection() {
-            let entry = select.selectedOptions[0].innerText;
-
-              //if the selection is te same as what is already selected (which is 'Choose from the list'), we return
-            if (
-              containerDiv.dataset.arrayName
-              && entry === containerDiv.dataset.arrayName
-              && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
-            ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
-            
-            if (entry === editable[2]) entry = prompt('Provide the function and the parameters', entry);
-          if (entry.includes('Fun(')) {
-            eval(entry);
-            return
-          }
-          
-          if (entry) containerDiv.dataset.arrayName = entry;
-
-          editTablesArray(entry);
-     
-          }
+          select.addEventListener('change', ()=>editTablesArray(select))
         }
       });
   })();
@@ -1990,25 +1967,25 @@ async function populatePrayersArrays() {
   });
 }
 /**
- * Returns the title of the table without the '&C=' added at its end in order to indicate the class of each row. It returns the value of title.split('&C=')[0]
- * @param {string} title - the string that we need to split to get rid of the '&C=' string at its end
+ * Returns the string[] resulting from title.split('&C=')
+ * @param {string} title - the string that we need to split
  */
-function baseTitle(title): string{
-  if (!title) {console.log('title is = ', title); return};
-  return title.split('&C=')[0];
+function splitTitle(title): string[]{
+  if (!title.includes('&C=')) return [title, ''];
+  return title.split('&C=');
 }
 
 /**
  * This function generates a string[][][] from the string[][] generated by Word VBA for the readings
  */
-//console.log(correctReading(btnReadingsKatholikon.prayersArray));
+
 function generateFixedReadingArray(readingArray): string[][][] {
   let unique: string[] = [],
     title: string,
     table: string[][],
     result: string[][][] = [];
   readingArray.forEach((row) => {
-    title = baseTitle(row[0]);
+    title = splitTitle(row[0])[0];
     if (unique.indexOf(title) < 0) {
       unique.push(title);
     }
@@ -2017,7 +1994,7 @@ function generateFixedReadingArray(readingArray): string[][][] {
   unique.forEach((title) => {
     table = [];
     readingArray.forEach((row) => {
-      if (baseTitle(row[0]) === title) {
+      if (splitTitle(row[0])[0] === title) {
         table.push(row);
       }
     });
@@ -2066,7 +2043,7 @@ function replaceClass(prayersArray: string[][][], newClass:string) {
   prayersArray.map(
           table => {
                   table.map(
-                          row => row[0] = baseTitle(row[0]) + '&C=' + newClass)
+                          row => row[0] = splitTitle(row[0])[0] + '&C=' + newClass)
           })
 }
 /**

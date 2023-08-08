@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.5.4 (intorduced new method for calculating the coptic date)';
+const version: string = 'v4.5.5 (substantial changes to the mass buttons afterShowPrayers() method, replaced class  \"TitleRow\" with \"Title\", some readings were updated, changes to the edit-mode functions)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');

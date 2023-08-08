@@ -1,18 +1,46 @@
 let sequence: string[] = [];
 /**
  * This is the function that displayes the elements of the array that we want to edit
- * @param tblsArray 
+ * @param {HTMLSelectElement}  select - the selection element from which we selet the options
+ * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-async function editTablesArray(entry: string, clear:boolean = true) {
+function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
+  let entry: string = select.selectedOptions[0].innerText;
+
+  if (!entry) return;
+
+  if (entry === select.options[0].innerText) return; //entries[0] === 'Choose From the List'
+
+  if (
+    containerDiv.dataset.arrayName
+    && entry === containerDiv.dataset.arrayName
+    && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
+  ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
+
+  containerDiv.dataset.arrayName = entry;
+
+  if (entry === select.options[2].innerText) entry = prompt('Provide the function and the parameters', entry);//under development
+  if (entry.includes('Fun(')) {
+    eval(entry);
+    return
+  }
+
   let tablesArray: string[][][];
   containerDiv.dataset.specificTables = 'false';
-  if (entry === 'NewTable') tablesArray = [[['NewTable&C=Title', 'New Table Added', 'New Table Added']]];
-  if (!tablesArray && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " ')) containerDiv.dataset.specificTables = 'true';
+
+  if (entry === select.options[1].innerText) tablesArray =
+      [[['NewTable&C=Title', 'New Table Added', 'New Table Added'], ['AR', 'FR', 'EN']]]; //entries[1] == newTable
+    
+  if (!tablesArray
+    &&entry !== select.options[1].innerText //i.e. if it is not 'new table'
+    && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
+  { containerDiv.dataset.specificTables = 'true' };
+  
   if (!tablesArray) tablesArray = eval(entry);
   if (!tablesArray) return;
 
 
-  if (containerDiv.dataset.specificTables = 'true') {
+  if (containerDiv.dataset.specificTables === 'true') {
     let tableTitle = prompt('Provide the name of the table you want to edit');
     let filteredArray:string[][][] = [];
     console.log('splitted = ', tableTitle.split(', '));
@@ -59,7 +87,7 @@ async function editTablesArray(entry: string, clear:boolean = true) {
   //Showing the titles in the right side-bar
   
   //removing the minus sign at the begining of the title
-  Array.from(containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"))
+  Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
     .forEach(div =>
       Array.from(div.getElementsByTagName('P'))
       .forEach((p: HTMLElement) =>
@@ -67,7 +95,7 @@ async function editTablesArray(entry: string, clear:boolean = true) {
     ));
 
   showTitlesInRightSideBar(
-    containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
+    containerDiv.querySelectorAll("div.Title, div.SubTitle"));
 }
 
 /**
@@ -268,7 +296,7 @@ titles = new Set(
   //We create an array of all the div elements with 'Row' class, and loop all the divs in this array
   Array.from(containerDiv.querySelectorAll('div.Row'))
     //We return an array of all the 'data-root' attributes of all the divs. We then create a Set of this array
-    .map((div: HTMLElement) => baseTitle(div.dataset.root)));
+    .map((div: HTMLElement) => splitTitle(div.dataset.root)[0]));
   
   
     //We will now loop through the "titles" Set
@@ -303,11 +331,10 @@ titles = new Set(
 function changeCssClass(htmlParag: HTMLElement) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  let className: string = htmlRow.dataset.root.split("&C=")[1];
-  if (className === undefined) className = prompt("Provide The Title", htmlRow.dataset.root.split("&C=")[1]);
+  let className: string = splitTitle(htmlRow.dataset.root)[1];
+  if (className === undefined) className = prompt("Provide The Title", splitTitle(htmlRow.dataset.root)[1]);
   if (!className) return;
-  htmlRow.dataset.root = htmlRow.dataset.root.split("&C=")[0]+"&C="+className;
-  if (className === 'Title') className = 'TitleRow';
+  htmlRow.dataset.root = splitTitle(htmlRow.dataset.root)[0]+"&C="+className;
   if(!htmlRow.classList.contains(className))htmlRow.classList.add(className) ;
 }
 
@@ -326,20 +353,20 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string, oldTitle?:string
       .forEach(
         (child: HTMLElement) => {
           if (child.tagName === 'P' && child.dataset.root) {
-            child.dataset.root = baseTitle(newTitle);
+            child.dataset.root = splitTitle(newTitle)[0];
             child.title = newTitle;
           }
         });
-  if(newTitle.includes('&C=')) changeCssClass(htmlRow);
+  if(newTitle.includes('&C=')) htmlRow.classList.add(splitTitle(newTitle)[1]);
   //We will then go to each sibling and change its title if it has the same title as oldTitle
   htmlRow = htmlRow.nextElementSibling as HTMLDivElement;
   while (htmlRow
     && htmlRow.tagName === 'DIV'
-    && baseTitle(htmlRow.dataset.root) === baseTitle(oldTitle)) {
-    let actorClass: string = htmlRow.dataset.root.split('&C=')[1];
+    && splitTitle(htmlRow.dataset.root)[0] === splitTitle(oldTitle)[0]) {
+    let actorClass: string = splitTitle(htmlRow.dataset.root)[1];
     if (!actorClass) actorClass = '';
     if (actorClass !== '') actorClass = '&C=' + actorClass;
-    changeTitle(htmlRow, baseTitle(newTitle) + actorClass, oldTitle)
+    changeTitle(htmlRow, splitTitle(newTitle)[0] + actorClass, oldTitle)
   } 
 }
 
@@ -379,7 +406,7 @@ function saveModifiedArray(): string {
   );
   
   function processTableTitle(tableTitle: string) {
-    htmlTable = Array.from(containerDiv.querySelectorAll( getDataRootSelector(baseTitle(tableTitle), true)));//notice that we pass the isLike = true in order to get a selector like "data-root*=" instead of 'data-root='
+    htmlTable = Array.from(containerDiv.querySelectorAll( getDataRootSelector(splitTitle(tableTitle)[0], true)));//notice that we pass the isLike = true in order to get a selector like "data-root*=" instead of 'data-root='
 
     if (containerDiv.dataset.specificTables === 'true') {
       //i.e. if we were editing a single or specific table(s) of the array
@@ -455,7 +482,7 @@ function processTablesArray(tablesArray: string[][][]):string {
     element = element.replaceAll('"', '\\"'); //replacing '"" by '\"'
     element = element.replaceAll('\n', '\\n');
 
-    if (row[0].endsWith("&C=Title"))
+    if (splitTitle(row[0])[1] === 'Title')
       element = element
         .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
         .replaceAll(String.fromCharCode(plusCharCode +1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
@@ -529,14 +556,14 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
   );
   newRow.dataset.root = dataRoot;
 
-  newRow.classList.add(dataRoot.split("&C=")[1]);
+  newRow.classList.add(splitTitle(dataRoot)[1]);
   //newRow.contentEditable = 'true';
   for (let i = 0; i < htmlRow.children.length; i++) {
     child = htmlRow.children[i] as HTMLParagraphElement;
     if (!child || !child.lang || child.tagName !=='P') continue;
     p = newRow.appendChild(document.createElement("p"));
     p.classList.add(child.lang.toUpperCase());
-    p.classList.add(newRow.dataset.root.split("&C=")[1]);
+    p.classList.add(splitTitle(newRow.dataset.root)[1]);
     p.dataset.root = dataRoot;
     p.lang = child.lang;
     //p.innerText = "Insert Here Your Text "+p.lang;
@@ -591,15 +618,15 @@ function createHtmlElementForPrayerEditingMode(
   row.classList.add("Row"); //we add 'Row' class to this div
   let dataRoot: string = tblRow[0];
   row.dataset.root = dataRoot;
-  let actorClass = tblRow[0].split('&C=')[1];
+  let actorClass = splitTitle(tblRow[0])[1];
   if (actorClass && !actorClass.includes("Title")) {
-    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "TitleRow" (see below)
+    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "Title" (see below)
     row.classList.add(actorClass);
   } else if (actorClass && actorClass.includes("Title")) {
     row.addEventListener("click", (e) => {
       e.preventDefault;
       collapseText(row);
-    }); //we also add a 'click' eventListener to the 'TitleRow' elements
+    }); //we also add a 'click' eventListener to the 'Title' elements
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < tblRow.length; x++) {
@@ -616,8 +643,7 @@ function createHtmlElementForPrayerEditingMode(
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
     if (actorClass === "Title" || actorClass === 'SubTitle') {
       //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
-      row.classList.add("TitleRow");
-      if (actorClass === 'SubTitle') row.classList.replace('TitleRow', 'SubTitle');
+      row.classList.add(actorClass);
       row.id = tblRow[0];
       row.tabIndex = 0; //in order to make the div focusable by using the focus() method
     } else if (actorClass) {
@@ -659,13 +685,13 @@ function getPrayersSequence() {
 function addTableToSequence(htmlParag: HTMLElement) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  sequence.push(baseTitle(htmlRow.dataset.root));
+  sequence.push(splitTitle(htmlRow.dataset.root)[0]);
   let result = prompt(sequence.join(", \n"), sequence.join(", \n"));
   sequence = result.split(", \n");
   if (document.getElementById("showSequence")) {
     let tableRows = Array.from(
       containerDiv.querySelectorAll(
-        getDataRootSelector(baseTitle(htmlRow.dataset.root), true)
+        getDataRootSelector(splitTitle(htmlRow.dataset.root)[0], true)
       )
     );
     tableRows.forEach((row: HTMLDivElement) => {
@@ -791,7 +817,7 @@ function splitParagraphsToTheRowsBelow() {
     lang:string = htmlParag.lang,
     table: HTMLElement[] = Array.from(
       containerDiv.querySelectorAll(
-        getDataRootSelector(baseTitle(title), true)) as NodeListOf<HTMLElement>),//Those are all the rows belonging to the same table, including the title
+        getDataRootSelector(splitTitle(title)[0], true)) as NodeListOf<HTMLElement>),//Those are all the rows belonging to the same table, including the title
     rowIndex: number = table.indexOf(htmlParag.parentElement);
   //We retrieve the paragraph containing the text
  
@@ -817,10 +843,10 @@ function splitParagraphsToTheRowsBelow() {
  * @returns {HTMLDivElement | undefined}
  */
 function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
-  if (!htmlParag) return  alert('Make sure your cursor is within the cell/paragraph where the text to be splitted is found');
-  while (htmlParag.tagName !== 'DIV'
-    && !htmlParag.classList.contains('Row')
-    && htmlParag.parentElement){
+  if (!htmlParag) return  alert('Make sure your cursor is within the cell/paragraph where the text is to be found');
+  while (!htmlParag.classList.contains('Row')
+    && htmlParag.parentElement
+  && htmlParag.parentElement !== containerDiv) {
     htmlParag = htmlParag.parentElement};
   if (htmlParag.tagName !== 'DIV'
     || !htmlParag.classList.contains('Row'))
@@ -876,7 +902,7 @@ function showTablesFun(arrayName: string, title: string) {
     //Showing the titles in the right side-bar
     hideInlineButtonsDiv();
     showTitlesInRightSideBar(
-      containerDiv.querySelectorAll("div.TitleRow, div.SubTitle"));
+      containerDiv.querySelectorAll("div.Title, div.SubTitle"));
 }
 
 /**
@@ -888,7 +914,7 @@ function getLanguages(arrayName):string[] {
   let languages:string[] = prayersLanguages;
   if (arrayName.startsWith('ReadingsArrays.')) languages = readingsLanguages;
   if (arrayName.startsWith('ReadingsArrays.SynaxariumArray')) languages = ['FR', 'AR'];
-  if (arrayName === 'NewTable') languages = ['AR', 'FR'];
+  if (arrayName === 'NewTable') languages = ['AR', 'FR', "EN"];
   return languages
 }
 
