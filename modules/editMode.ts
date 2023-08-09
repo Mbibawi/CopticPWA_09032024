@@ -5,6 +5,7 @@ let sequence: string[] = [];
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
 function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
+  containerDiv.style.gridTemplateColumns = '100%';
   let entry: string = select.selectedOptions[0].innerText;
 
   if (!entry) return;
@@ -76,7 +77,8 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
  * @param {string[][][]} tablesArray - an array containing the tables that we need to show and start editing
  * @param {string[]} languages - the languages included in the tables
  */
-function showTables(tablesArray:string[][][], languages:string[]) {
+function showTables(tablesArray: string[][][], languages: string[], clear: boolean = true) {
+  if (clear) containerDiv.innerHTML = '';
   let el: HTMLDivElement;
   //We create an html div element to display the text of each row of each table in tablesArray
 tablesArray.forEach(table => {
@@ -990,16 +992,24 @@ function goToTableByTitle() {
   createFakeAnchor(rows[0].id);
 }
 function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
-  if (containerDiv.dataset.specificTables !== 'true') return;//We don't use it if we are not in the 'edinting specific table(s) mode'
+  if (containerDiv.dataset.specificTables !== 'true') return;//We don't run this function unless we are in the 'edinting specific table(s) mode'
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  let title = htmlRow.dataset.root;
-  let array:string[][][] = eval(containerDiv.dataset.arrayName);
-  let table: string[][] = array.filter(table => splitTitle(table[0][0][0] === title))[0];
-  if (!table) return;
+  let title:string = htmlRow.dataset.root;
+  let array: string[][][] = eval(containerDiv.dataset.arrayName);
+
+  let tables:string[][][] = array.map(tbl =>{
+    if (splitTitle(tbl[0][0])[0] === splitTitle(title)[0]) return tbl;
+  });//! CAUTION We had to do this because the array.filter() method filtered the array itself, we needed the array to remain unfiltered in order to reflect the entirety of the array not a filtered version of it (P.S., the spread operator on the result did'nt work)
+
+  let table = tables.filter(tbl => tbl !== undefined)[0];//The previous method gives an array with undefined values, we needed to get rid of them
+
+  if (!table || table.length < 1) return;
+  
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
+  if (!table) return;
   showTables([table], getLanguages(containerDiv.dataset.arrayName))
   
 };
