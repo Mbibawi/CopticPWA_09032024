@@ -67,35 +67,44 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
   if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
   let el: HTMLElement;
 
- if(clear) containerDiv.innerHTML = ""; //we empty the containerDiv
-  
-  //We create an html div element to display the text of each row of each table in tablesArray
-  tablesArray.forEach(table => {
-    if (!table) return;
-    table.forEach(row => {
-      if (!row) return;
-      el = createHtmlElementForPrayerEditingMode(row, languages);
-      //We make the paragraph children of each row, editable
-      if (el) Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true");
-    });
-  });
-  
-  //We add the editing buttons
-  addEdintingButtons();
-  //Setting the CSS of the newly added rows
-  setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
-  //Showing the titles in the right side-bar
-  
-  //removing the minus sign at the begining of the title
-  Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
-    .forEach(div =>
-      Array.from(div.getElementsByTagName('P'))
-      .forEach((p: HTMLElement) =>
-        p.innerText = p.innerText.replaceAll(String.fromCharCode(plusCharCode + 1), '')
-    ));
+  if (clear) containerDiv.innerHTML = ""; //we empty the containerDiv
+  showTables(tablesArray, languages);
 
-  showTitlesInRightSideBar(
-    containerDiv.querySelectorAll("div.Title, div.SubTitle"));
+}
+/**
+ * Takes a string[][][] (i.e., and array of tables, each being a string[][], where each string[] represents a rowh),  that we want to edit,and creates html div elements representing the text of each row of eah table in the tablesArray
+ * @param {string[][][]} tablesArray - an array containing the tables that we need to show and start editing
+ * @param {string[]} languages - the languages included in the tables
+ */
+function showTables(tablesArray:string[][][], languages:string[]) {
+  let el: HTMLDivElement;
+  //We create an html div element to display the text of each row of each table in tablesArray
+tablesArray.forEach(table => {
+  if (!table) return;
+  table.forEach(row => {
+    if (!row) return;
+    el = createHtmlElementForPrayerEditingMode(row, languages);
+    //We make the paragraph children of each row, editable
+    if (el) Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true");
+  });
+});
+  
+   //We add the editing buttons
+addEdintingButtons();
+//Setting the CSS of the newly added rows
+setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
+//Showing the titles in the right side-bar
+
+//removing the minus sign at the begining of the title
+Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
+  .forEach(div =>
+    Array.from(div.getElementsByTagName('P'))
+    .forEach((p: HTMLElement) =>
+      p.innerText = p.innerText.replaceAll(String.fromCharCode(plusCharCode + 1), '')
+  ));
+
+showTitlesInRightSideBar(
+  containerDiv.querySelectorAll("div.Title, div.SubTitle"));
 }
 
 /**
@@ -127,7 +136,9 @@ function addEdintingButtons(getButtons?:Function[]) {
     deleteRowBtn,
     splitBelowBtn,
     convertCopticFontsFromAPIBtn,
-    goToTableByTitleBtn
+    goToTableByTitleBtn,
+    editNextTableBtn,
+    editPreviousTableBtn
   ];
 
   getButtons.forEach(fun => fun(btnsDiv));
@@ -261,6 +272,29 @@ function deleteRow(htmlParag: HTMLElement) {
 }
 
 /**
+ * Displays the next table in the array if we are in a single table editing mode
+ * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
+ */
+function editNextTableBtn(btnsDiv:HTMLElement){
+  let newButton= createEditingButton(
+     () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, true),
+     "Next Table"
+     );
+     btnsDiv.appendChild(newButton);
+};
+/**
+ * Edits the previous table in the array if we are in a single table editing mode
+ * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
+ */
+function editPreviousTableBtn(btnsDiv:HTMLElement){
+  let newButton= createEditingButton(
+     () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, false),
+     "Previous Table"
+     );
+     btnsDiv.appendChild(newButton);
+};
+
+/**
  * Replaces each table in the array by the table in newTables[] having a title that matches the title of the target table in array[]
  */
 function modifyTablesInTheirArray() {
@@ -287,12 +321,11 @@ function modifyTablesInTheirArray() {
  * Loops the divs in containerDiv, and builds a string[][][] from the elements with same data-root attribute (i.e., belonging to the sam table)
  * @returns a string[][][] of all the tables displayed in container div. Each element is a table; each div in containerDiv is a string[] of a table
  */
-function getAnArrayOfTablesFromTheHtmlDivs():string[][][] {
-  let arrayOfTables: string[][][] =[  ],
-      table: string[][],
-      titles: Set<string>;
+function getAnArrayOfTablesFromTheHtmlDivs(titles?:Set<string>, container:HTMLElement = containerDiv):string[][][] {
+  let arrayOfTables: string[][][] =[],
+      table: string[][];
 
-titles = new Set(
+if(!titles) titles = new Set(
   //We create an array of all the div elements with 'Row' class, and loop all the divs in this array
   Array.from(containerDiv.querySelectorAll('div.Row'))
     //We return an array of all the 'data-root' attributes of all the divs. We then create a Set of this array
@@ -307,7 +340,7 @@ titles = new Set(
         //We create New array table
         table = [];
         //We loop the containerDiv for all the html rows having a "data-root" attribute matching this title
-        containerDiv.querySelectorAll(getDataRootSelector(title, true))
+        container.querySelectorAll(getDataRootSelector(title, true))
           //For each div matching the title
           .forEach(
             (div: HTMLDivElement) => {
@@ -956,3 +989,17 @@ function goToTableByTitle() {
   rows[0].id = rows[0].dataset.root + String(0);
   createFakeAnchor(rows[0].id);
 }
+function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
+  if (containerDiv.dataset.specificTables !== 'true') return;//We don't use it if we are not in the 'edinting specific table(s) mode'
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
+  let title = htmlRow.dataset.root;
+  let array:string[][][] = eval(containerDiv.dataset.arrayName);
+  let table: string[][] = array.filter(table => splitTitle(table[0][0][0] === title))[0];
+  if (!table) return;
+  if (next) table = array[array.indexOf(table) + 1];
+  else table = array[array.indexOf(table) - 1];
+
+  showTables([table], getLanguages(containerDiv.dataset.arrayName))
+  
+};

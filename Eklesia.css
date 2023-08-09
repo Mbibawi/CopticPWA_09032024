@@ -94,6 +94,7 @@ body{
 }
 
 #sideBarBtns{
+  margin-top:10px;
   margin-left: 2px;
   margin-right: 0px;
   justify-content: center;
@@ -112,6 +113,7 @@ body{
   padding: 0px 1px;
 }
 
+
 .sideBarBtn > p{
   padding: 0.1vw 0.1vw;
   margin: 0.1vw 0.1vw;
@@ -129,13 +131,23 @@ body{
   margin: 3px 3px;
   overflow: hidden;
 }
-.inlineBtn {
+.inlineBtn, .mainPageBtns {
 height: fit-content;
 width: 30vmin;
 margin:2px 2px;
 justify-self: center;
 }
-.inlineBtn > p{
+
+.mainPageBtns{
+  background-position: center;
+  background-size:cover;
+  background-clip: border-box;
+  height: 90%;
+  border-radius: 20px;
+  margin-bottom: 70px;
+}
+
+.inlineBtn > p, .mainPageBtns>p{
   font-size: 10pt;
   font-weight: bold;
   line-height: 9pt;
@@ -143,10 +155,21 @@ justify-self: center;
   margin: 1px 3px !important;
 }
 
+.mainPageBtns>p{
+  opacity: 100%;
+  color:rgb(255, 255, 255) !important;
+  width: 97%;
+  font-size: 14pt;
+  font-weight: bolder !important;
+  line-height: 18px;
+}
+
 .centeredBtn {
   width:80pt !important;
   height: 55pt !important;
 }
+
+
 .centeredBtn > p{
   line-height: 8pt !important;
   font-size: 10pt !important;
@@ -199,8 +222,8 @@ justify-self: center;
   justify-self: center;
 }
 
-div.Row.collapsedTitle{
-  display:none;
+div.Row.collapsedTitle, div.collapsedTitle {
+  display:none !important;
 }
 .Row {
   display: grid;
@@ -484,7 +507,7 @@ table{
   top: 0;
   right: 10px;
   font-size: 36px;
-  margin-bottom: 15px ;
+  margin-bottom: 10px ;
   padding: 0px 0px;
 }
 

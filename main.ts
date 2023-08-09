@@ -253,6 +253,7 @@ function showChildButtonsOrPrayers(
   if (clear) {
     btnsDiv.innerHTML = "";
     inlineBtnsDiv.innerHTML = "";
+    containerDiv.style.gridTemplateColumns = "100%";
   }
 
   if (btn.onClick && click) {
@@ -314,7 +315,13 @@ function showChildButtonsOrPrayers(
     //showChildButtonsOrPrayers(btn.parentBtn);
   }
   
-    if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
+  if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
+
+  //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containrDiv
+  if (btn.btnID !== btnMain.btnID
+    && containerDiv.children.length >0
+    && containerDiv.children[0].classList.contains('mainPageBtns')
+  ) btnMain.onClick();
 }
 
 /**
@@ -1185,7 +1192,7 @@ async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:
 function collapseAllTitles(container: HTMLElement | DocumentFragment) {
   if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div')
-    .forEach(row => {
+    .forEach((row:HTMLElement) => {
       if (!row.classList.contains('Title')
         && !row.classList.contains('SubTitle')){
         row.classList.add('collapsedTitle');
@@ -1971,6 +1978,7 @@ async function populatePrayersArrays() {
  * @param {string} title - the string that we need to split
  */
 function splitTitle(title): string[]{
+  if (!title) return [];
   if (!title.includes('&C=')) return [title, ''];
   return title.split('&C=');
 }

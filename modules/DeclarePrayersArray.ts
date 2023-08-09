@@ -3259,14 +3259,12 @@ PrayersArray= [[
   "طوفه هينا إنتي افنوتي ناي نان إنتيف شينهيت خارون إنتيف سوتيم إرون إنتيف إرفويثين إرون إنتيف اتشي إني تيهو نيم نيطوفه إنتيني إثؤواب إنتاف إنطوطو إي إهري إجون إبي آغاثون إنسيو نيفين.", 
   "اطلبوا لكى يرحمنا الله ويتراءف علينا ويَسمعنا ويُعيننا ويقبل سؤالات وطلبات قديسيه منهم بالصلاح عنا في كل حين.", 
   ], 
-  ], 
   [
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
-  "En présence du Patriarche, d'un évêque ou d'un métropolite", 
+  "Patriarche our évêques", 
   "", 
-  " في حضور البطرك أو اسقف أو مطران", 
+  " البطرك أو الأساقفة", 
   ], 
   [
   Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Diacon", 
@@ -3275,22 +3273,13 @@ PrayersArray= [[
   "", 
   "و وأن يحفظ حياة و قيام أبينا المكرم البابا الأنبا تاوضروس و شريكه في الخدمة الرسولية أبينا الأسقف/المطران أنبا ().", 
   ], 
-  ], 
   [
-  [
-  Prefix.commonPrayer+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
-  "Si un évêque ou un métropolite est présent, on ajoute :", 
-  "وفي حضور الأسقف أو المطران يضاف:", 
-  ], 
-  ], 
-  [
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart&D=$copticFeasts.AnyDay&C=Comments", 
   "Ensuite il continue :", 
   "ثم يكمل:", 
   ], 
   [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart2&D=$copticFeasts.AnyDay&C=Diacon", 
+  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲧⲉϥⲁ̀ⲓⲧⲉⲛ ⲛ̀ⲉ̀ⲙⲡ̀ϣⲁ ⲉⲑⲣⲉⲛϭⲓ ⲉ̀ⲃⲟⲗϧⲉⲛ ϯⲕⲟⲓⲛⲱⲛⲓⲁ ⲛ̀ⲧⲉ ⲛⲉϥⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲉ̅ⲑ̅ⲩ̅: ⲉⲧⲥ̀ⲙⲁⲣⲱⲟ̀ⲩⲧ ⲉ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ.", 
   "Et nous rende dignes de communier à ces saints sacrements bénis pour la rémission de nos péchés.", 
   "", 
