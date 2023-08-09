@@ -998,11 +998,10 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   let title:string = htmlRow.dataset.root;
   let array: string[][][] = eval(containerDiv.dataset.arrayName);
 
-  let tables:string[][][] = array.map(tbl =>{
-    if (splitTitle(tbl[0][0])[0] === splitTitle(title)[0]) return tbl;
-  });//! CAUTION We had to do this because the array.filter() method filtered the array itself, we needed the array to remain unfiltered in order to reflect the entirety of the array not a filtered version of it (P.S., the spread operator on the result did'nt work)
+  let table = array.filter(tbl => splitTitle(tbl[0][0])[0] === splitTitle(title)[0])[0];
+  
+  array = eval(containerDiv.dataset.arrayName);//!CAUTION we needed to do this in order to unfilter the array again after it had been filtered (P.S.: the spread operator did'nt work)
 
-  let table = tables.filter(tbl => tbl !== undefined)[0];//The previous method gives an array with undefined values, we needed to get rid of them
 
   if (!table || table.length < 1) return;
   
