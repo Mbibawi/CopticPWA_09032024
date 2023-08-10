@@ -71,7 +71,8 @@ function autoRunOnLoad() {
     };
   } else {
     setCopticDates()
-  }
+  };
+  populatePrayersArrays();
 };
 
 /**
@@ -1062,12 +1063,13 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
         if (!defLangParag) defLangParag = row.lastElementChild as HTMLElement;
         if (!defLangParag) return console.log('no paragraph with lang= ' + defaultLanguage);
         if (!row.dataset.isCollapsed) row.dataset.isCollapsed = 'false'; //If row doesn't have data-is-collapsed attribute, we add it and set it to 'false' which means that the title is not collapsed
-        if (defLangParag.textContent.includes(plusSign + ' ')) defLangParag.textContent = defLangParag.textContent.replace(plusSign + ' ', '');//We remove the + sign in the begining (if it exists)
-        if (defLangParag.textContent.includes(minusSign + ' ')) defLangParag.textContent = defLangParag.textContent.replace(minusSign + ' ', ''); //We remove the minus (-) sign from the begining of the paragraph
-        if (row.dataset.isCollapsed === 'true') defLangParag.innerText =
-          plusSign + " " + defLangParag.innerText; //We add the plus (+) sign at the begining
-        if (row.dataset.isCollapsed === 'false') defLangParag.innerText =
-          minusSign + " " + defLangParag.innerText;//We add the minus (-) sig at the begining;
+        if (defLangParag.innerText.includes(plusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(plusSign + ' ', '');//We remove the + sign in the begining (if it exists)
+        
+        if (defLangParag.innerText.includes(minusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(minusSign + ' ', ''); //!Caution: we need to work withthe innerHTML in order to avoid losing the new line or any formatting to the title text when adding the + or - sing. So don't change the innerHTML to innerText or textContent 
+        if (row.dataset.isCollapsed === 'true') defLangParag.innerHTML =
+          plusSign + " " + defLangParag.innerHTML; //We add the plus (+) sign at the begining
+        if (row.dataset.isCollapsed === 'false') defLangParag.innerHTML =
+          minusSign + " " + defLangParag.innerHTML;//We add the minus (-) sig at the begining;
         if (row.classList.contains('Title'))addDataGroupsToContainerChildren(undefined, 'Title', row);
         if (row.classList.contains('SubTitle')) addDataGroupsToContainerChildren(undefined, 'SubTitle', row);
       } else {
@@ -1208,13 +1210,22 @@ function collapseAllTitles(container: HTMLElement | DocumentFragment) {
  * @param {Object{AR:string, FR:'string'}} btnLabels - An object containing the labels of the master button that the user will click to show a list of buttons, each representing a prayer in selectedPrayers[]
  * @param {string} masterBtnID - The id of the master button
  */
-async function showInlineButtonsForOptionalPrayers(
-  selectedPrayers: string[][][],
+async function showMultipleChoicePrayersButton(
+  filteredPrayers: string[][][],
   btn: Button,
-  masterBtnDiv: HTMLElement,
   btnLabels: { defaultLanguage: string, foreignLanguage: string },
-  masterBtnID: string
+  masterBtnID: string,
+  masterBtnDiv?: HTMLElement,
+  anchor?:HTMLElement
 ) {
+  console.log('filteredPrayers = ', filteredPrayers);
+  if (!anchor) console.log('anchor missing');
+  if (!masterBtnDiv && anchor) {
+    masterBtnDiv = document.createElement("div"); //a new element to which the inline buttons elements will be appended
+    anchor.insertAdjacentElement("afterend", masterBtnDiv); //we insert the div after the insertion position
+    console.log('created master div', masterBtnDiv)
+  }
+  
   let prayersMasterBtn: Button, next: Button;
 
   //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
@@ -1295,13 +1306,13 @@ async function showInlineButtonsForOptionalPrayers(
   createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass, false, prayersMasterBtn.onClick);
   masterBtnDiv.classList.add("inlineBtns");
   masterBtnDiv.style.gridTemplateColumns = "100%";
-
+  
   /**
    *Creates a new inlineBtn for each fraction and pushing it to fractionBtn.inlineBtns[]
    */
   async function createInlineBtns() {
     let btns: Button[] = [];
-    selectedPrayers.map((prayerTable) => {
+    filteredPrayers.map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
@@ -1313,7 +1324,7 @@ async function showInlineButtonsForOptionalPrayers(
         prayersSequence: [splitTitle(prayerTable[0][0])[0]], //this gives the title of the table without '&C=*'
         prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable
         languages: btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
-        cssClass: "fractionPrayersBtn",
+        cssClass: "multipleChoicePrayersBtn",
         children: (() =>{if (btn.parentBtn && btn.parentBtn.children) return [...btn.parentBtn.children]})(), //we give it btn as a child in order to show the buttons tree of btn.parentBtn.children in the leftSideBar menu
         onClick: () => {
           //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
@@ -1916,7 +1927,6 @@ function playingWithInstalation() {
   alert("swipe right or click on the image to open the menu and start");
 }
 
-populatePrayersArrays();
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
   PrayersArray.map((wordTable) => {

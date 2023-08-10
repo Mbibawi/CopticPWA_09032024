@@ -586,7 +586,7 @@ table{
   padding: 6px 6px;
 
 }
-.fractionPrayersBtn{
+.multipleChoicePrayersBtn{
   background-color: darkslategray !important;
   width: 30;
   margin: 2px 2px;
@@ -595,7 +595,7 @@ table{
   justify-items: center;
   border-radius: 20px;
 }
-.fractionPrayersBtn >p{
+.multipleChoicePrayersBtn >p{
   font-weight: 600;
   font-size: 10pt;
   line-height: 10pt;

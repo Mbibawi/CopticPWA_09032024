@@ -674,7 +674,13 @@ const btnMassStBasil: Button = new Button({
       [btnMassStBasil, btnMassStGregory, btnMassStCyril, btnMassStJohn];
     massButtons.splice(massButtons.indexOf(btn), 1);
     massButtons.splice(massButtons.indexOf(btnMassStJohn), 1); 
-    showFractionsMasterButton(btn, btn.docFragment);
+
+    showFractionPrayersMasterButton(
+      btn,
+      btn.docFragment.querySelector('[data-root="' + Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay"]') as HTMLElement,
+      { defaultLanguage: "صلوات القسمة", foreignLanguage: "Oraisons de la Fraction" },
+      "btnFractionPrayers",
+    FractionsPrayersArray);
 
     (function addRedirectionButtons() {
       //Adding 3 buttons to redirect to the other masses (St. Gregory, St. Cyril, or St. John)
@@ -728,6 +734,31 @@ const btnMassStBasil: Button = new Button({
         btnMassStBasil.languages
       )[1];
       //anchor.insertAdjacentElement('beforebegin', spasmosDiv);
+    })();
+    (function insertCommunionChants() {
+      //Inserting the Communion Chants after the Psalm 150
+      let psalm = btn.docFragment.querySelectorAll(getDataRootSelector(Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay", false, 'div'));
+  
+
+      let filtered: string[][][] = CommunionPrayersArray.filter(tbl => {
+        selectFromMultiDatedTitle(tbl[0][0], copticDate) === true
+          || selectFromMultiDatedTitle(tbl[0][0], Season) === true
+      });
+  
+      if (filtered.length === 0) filtered = CommunionPrayersArray.filter(tbl => selectFromMultiDatedTitle(tbl[0][0], copticFeasts.AnyDay) === true);
+      
+      
+      showMultipleChoicePrayersButton(
+        filtered,
+        btn,
+        {
+          defaultLanguage: 'مدائح التوزيع',
+          foreignLanguage: 'Chants de la communion'
+        },
+        'communionChants',
+        undefined,
+        psalm[psalm.length-1] as HTMLElement
+      )
     })();
   },
 });
@@ -1028,11 +1059,17 @@ const btnMassUnBaptised: Button = new Button({
       ]);
 
       //Replacing the title row of the table with a new title row
+        /*let details: string[] = [
+          splitTitle(reading[0][0][0])[0],
+          Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].FR + '\n' + reading[0][0][1].replace('\n', '&&&').split('&&&')[1],
+          Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].AR + '\n' + reading[0][0][2].replace('\n', '&&&').split('&&&')[1]
+        ];*/ //This row includes the details of the Synaxarium of the day, I need to think if I should insert it
+    
       reading[0].splice(0, 1,
         [
           splitTitle(reading[0][0][0])[0] + '&C=Title',
-          'Synixaire' + '\n' + Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].FR,
-          'السنكسار' + '\n' + Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].AR
+          'Synixaire' + '\n' +  Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].FR,
+          'السنكسار' + '\n' + Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].AR ,
         ]);
       
       let praxisElements: HTMLElement[] =
@@ -1841,63 +1878,41 @@ async function getGospelReadingAndResponses(
 
 }
 
-function showFractionsMasterButton(btn: Button, container:HTMLElement | DocumentFragment) {
-  let selected: string[][][] = [],
-    filtered: string[][][];
-  let insertion = container.querySelector(
-    '[data-root="' + Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay"]'
-  ) as HTMLElement; //this is the id of the html element after which we will insert the inline buttons for the fraction prayers
-  let masterBtnDiv = document.createElement("div"); //a new element to which the inline buttons elements will be appended
-  insertion.insertAdjacentElement("afterend", masterBtnDiv); //we insert the div after the insertion position
-  for (let feast in copticFeasts) {
-    //Looping the feasts and, if found adding them first
-    filtered = filterFractions(copticFeasts[feast]);
-    pushIfItNotExisting(filtered);
-  }
-  for (let season in Seasons) {
-    //We also loop the seasons and add the fractions having the Season as date value in its title
-    filtered = filterFractions(Seasons[season]);
-    pushIfItNotExisting(filtered);
-  }
-  //We add the fraction of the 29th of each month
 
-  //We finally also add all the so called "annual" fraction prayers
-  filtered = FractionsPrayersArray.filter(
-    (fraction) =>
-      fraction[0][0].includes("&D=$copticFeasts.AnyDay") || fraction[0][0].includes("||0000")
-  );
-  pushIfItNotExisting(filtered);
+/**
+ * Filters the FractionsPrayersArray and Insert a button (a "Master Button") in the specified place (i.e. the anchor). This button when clicked, opens a panel displaying buttons. Each button represents a Fraction. User choises a prayer by clicking on the button. 
+ * @param {Button} - btn
+ * @param {HTMLElement} anchor - the html element after which the "Master Button" will be inserted
+ * @param {typeBtnLabel} lable - the lable of the "Master Button"
+ * @param {string} masterBtnID - the id that will be given to the html element created for the "Master Button"
+ * @param {string[][][]} prayersArray - the array that will be filtered in order to retrieve the prayers that will be displayed by the buttons
+ */
+function showFractionPrayersMasterButton(btn: Button, anchor:HTMLElement, label:typeBtnLabel, masterBtnID:string, prayersArray:string[][][])  {
+  let filtered: Set<string[][]> = new Set();
 
-  function pushIfItNotExisting(filtered: string[][][]) {
-    if (filtered) {
-      filtered.map((f) => {
-        if (selected.indexOf(f) < 0) {
-          selected.push(f);
-        }
-      });
-    }
-  }
+  if (Number(copticDay) === 29 && Number(copticMonth) !== 4)
+    filterPrayersArray(copticFeasts.theTwentyNinethOfCopticMonth, prayersArray, filtered);//We start by adding the fraction of the 29th of each coptic month if we are on the 29th of the month
+  //console.log('filteredSet = ', filtered)
 
-  function filterFractions(date: string): string[][][] | undefined {
-    if (date === copticDate || date === Season) {
-      return FractionsPrayersArray.filter(
-        (f) =>
-          eval(splitTitle(f[0][0].split("&D=")[1])[0].replace("$", "")) ===
-            date || //we use eval() for the case where the value of the date in the title starts with ($)
-            splitTitle(f[0][0].split("&D=")[1])[0] === date || //this is the case where the date is not a variable
-          (f[0][0].includes("||") && selectFromMultiDatedTitle(f, date))
-      ); //this is the case where there are more than one date
-    } else {
-      return undefined;
-    }
-  }
+  filterPrayersArray(copticDate, prayersArray, filtered); //we then add the fractions (if any) having the same date as the current copticDate
 
-  showInlineButtonsForOptionalPrayers(
-    selected,
+  filterPrayersArray(Season, prayersArray, filtered); //We then add the fractions (if any) having a date = to the current Season
+
+
+  filterPrayersArray(copticFeasts.AnyDay, prayersArray, filtered); //We finally add the fractions having as date copticFeasts.AnyDay
+
+  function filterPrayersArray(date: string, prayersArray:string[][][], filtered:Set<string[][]>){
+    prayersArray.map(table => {
+      if (selectFromMultiDatedTitle(table[0][0], date) === true && !filtered.has(table)) filtered.add(table);
+    });
+  };
+  showMultipleChoicePrayersButton(
+    Array.from(filtered),
     btn,
-    masterBtnDiv,
-    {defaultLanguage: "صلوات القسمة", foreignLanguage: "Oraisons de la Fraction" },
-    "btnFractionPrayers"
+    label,
+    masterBtnID,
+    undefined,
+    anchor
   );
 }
 /**
@@ -1913,23 +1928,31 @@ function getBtnGospelPrayersArray(btn: Button, readingsArray): string[][][] {
   });
   return gospel;
 }
+/**
+ * Takes a table title with muliple date values separated by '||', and checks if any of these dates include the date passed to it as coptDate
+ * @param {string} tableTitle - a title of a table including multiple dates separated by '||'
+ * @param {string} coptDate - the date that we want to check if it is included in the title. If omitted, it is given the value of the current copticDate
+ * @returns {boolean} - return true if the date was found, and false otherwise
+ */
 function selectFromMultiDatedTitle(
-  table: string[][],
+  tableTitle: string,
   coptDate: string = copticDate
 ): boolean {
-  let date: string,
-    found: boolean = false;
-  let dates = splitTitle(table[0][0].split("&D=")[1])[0].split("||");
-  for (let i = 0; i < dates.length; i++) {
-    date = dates[i];
-    if (date.startsWith("$")) {
-      date = eval(date.replace("$", ""));
-    }
-    if (date === coptDate) {
-      found = true;
-    }
-  }
-  return found;
+  if (!tableTitle.includes('&D=')) return false;
+  tableTitle = splitTitle(tableTitle)[0].split("&D=")[1]; 
+  let dates = tableTitle.split("||");
+  if (
+    dates.map(date => {
+      if (date.startsWith('$')) {
+        date = date.replace('$', '');
+        if (!date) return false
+        date = eval(date);
+      };  
+    if (date === coptDate) return true;
+    else return false
+    }).includes(true) 
+  ) return true;
+  else return false
 }
 
 /**
