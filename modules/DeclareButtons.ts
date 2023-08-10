@@ -175,8 +175,8 @@ const btnMain: Button = new Button({
       'url(./assets/btnBOHBackground.jpg)',
     ];
     containerDiv.innerHTML = '';
-    containerDiv.style.gridTemplateColumns = '50% 50%';
-
+    containerDiv.style.gridTemplateColumns = ((100 / 3).toString() + '% ').repeat(3);
+    
     btnMain.children
       .map(btn => {
         return createBtn(
