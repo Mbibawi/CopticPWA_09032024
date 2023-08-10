@@ -173,34 +173,61 @@ const btnMain: Button = new Button({
       'url(./assets/btnIncenseBackground.jpg)',
       'url(./assets/btnReadingsBackground.jpg)',
       'url(./assets/btnBOHBackground.jpg)',
-    ]
+    ];
     containerDiv.innerHTML = '';
     containerDiv.style.gridTemplateColumns = '50% 50%';
+
     btnMain.children
       .map(btn => {
         return createBtn(
           btn, containerDiv,
           'mainPageBtns',
           true,
-          function (main: Button = btnMain) {
-            if (!btn.children) btn.onClick(true);
-            console.log(btn.children);
-            containerDiv.innerHTML = "";
-            if (btn.children && btn.children.length > 0)
-              btn.children
-                .map(childBtn =>
-                  createBtn(childBtn, containerDiv, 'mainPageBtns')
-                    .style.backgroundImage = images[main.children.indexOf(btn)]
-                );
-              
-            else showChildButtonsOrPrayers(btn);
-            createBtn(btnMain, containerDiv, 'mainPageBtns').style.backgroundImage = images[0];
-          }
-        )
+          ()=>onClickBtnFunction(btn)
+        );
       })
       .map(htmlBtn => {
+        //For each btn created from the children of btnMain, we give it an image background from the images[] array of links
         htmlBtn.style.backgroundImage = images[Array.from(containerDiv.children).indexOf(htmlBtn)];
       });
+      
+    function onClickBtnFunction(btn:Button) {
+      if (!btn.children) btn.onClick({ returnBtnChildren: true });//if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
+        let parentHtmlBtn = containerDiv.querySelector('#' + btn.btnID) as HTMLElement;
+        let backgroundImage;
+
+        if (parentHtmlBtn) backgroundImage = parentHtmlBtn.style.backgroundImage;
+
+      containerDiv.innerHTML = "";
+      
+      if (!btn.children
+        || btn.children.length === 0
+        || (
+        btn.prayersSequence
+          && btn.prayersSequence.length > 0)){
+        
+        showChildButtonsOrPrayers(btn)//If btn does not have children, it means that it shows prayers. We pass it to showChildButtonsOrPrayers
+        return
+      };
+      //else, we will show the btn children
+      btn.children
+        //for each child button of btn
+        .map(childBtn => {
+          //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
+          createBtn(
+            childBtn,
+            containerDiv,
+            'mainPageBtns',
+            false,
+            () => onClickBtnFunction(childBtn)
+          )
+            .style.backgroundImage = backgroundImage;
+            
+        });
+      
+        createBtn(btnMain, containerDiv, 'mainPageBtns').style.backgroundImage = images[0];//Finlay, we create and extra html button for btnMain, in order for the user to be able to navigate back to the btnMain menu of buttons
+          
+    };
   },
 });
 
@@ -539,7 +566,7 @@ const btnMassStCyril: Button = new Button({
     ];
     if (btnMassStCyril.retrieved === true) {
       //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      btnMassStCyril.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStCyril)];
+      //sbtnMassStCyril.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStCyril)];
       return;
     }
     //Setting the standard mass prayers sequence
@@ -580,7 +607,7 @@ const btnMassStGregory: Button = new Button({
     ];
     if (btnMassStGregory.retrieved === true) {
       //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      btnMassStGregory.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStGregory)];
+     // btnMassStGregory.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStGregory)];
       return;
     }
     //Setting the standard mass prayers sequence
@@ -624,7 +651,7 @@ const btnMassStBasil: Button = new Button({
     ];
     if (btnMassStBasil.retrieved === true) {
       //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      btnMassStCyril.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStCyril)];
+      //btnMassStBasil.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStBasil)];
       return;
     }
     //Setting the standard mass prayers sequence
@@ -648,6 +675,7 @@ const btnMassStBasil: Button = new Button({
     massButtons.splice(massButtons.indexOf(btn), 1);
     massButtons.splice(massButtons.indexOf(btnMassStJohn), 1); 
     showFractionsMasterButton(btn, btn.docFragment);
+
     (function addRedirectionButtons() {
       //Adding 3 buttons to redirect to the other masses (St. Gregory, St. Cyril, or St. John)
       redirectToAnotherMass(
@@ -844,13 +872,11 @@ const btnMassUnBaptised: Button = new Button({
       let godHaveMercyHtml = btnMassUnBaptised.docFragment
         .querySelectorAll(getDataRootSelector(dataRoot));
      
-      
       let godHaveMercy = btnMassUnBaptised.prayersArray.filter(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);
-      console.log(godHaveMercy);
       
       if (godHaveMercy.length < 1) return;
             
-      let div = addExpandablePrayer(
+      let createdDiv = addExpandablePrayer(
         godHaveMercyHtml[0] as HTMLDivElement,
         'godHaveMercy',
         {
@@ -860,12 +886,12 @@ const btnMassUnBaptised: Button = new Button({
         [[godHaveMercy[0][1], godHaveMercy[0][2]]],
         btnMassUnBaptised.languages
       )[1];
-      console.log(div);
-      div.classList.add('Row');
-      div.children[0].classList.remove('collapsedTitle');
-      div.children[0].dataset.root = dataRoot + 'Collapsable';
+      
+      createdDiv.classList.add('Row');
+      createdDiv.children[0].classList.remove('collapsedTitle');
+      //@ts-ignore
+      createdDiv.children[0].dataset.root = dataRoot + 'Collapsable';
   
-
       godHaveMercyHtml.forEach(
         (row: HTMLDivElement) => row.remove()
       );
@@ -2269,19 +2295,20 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
   //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
     let prayersContainerDiv = document.createElement('div');
     prayersContainerDiv.id = btn.btnID + 'Expandable';
-  prayersContainerDiv.classList.add('collapsedTitle');
+    prayersContainerDiv.classList.add('collapsedTitle');
+    prayersContainerDiv.style.display = 'grid'; //This is important, otherwise the divs that will be add will not be aligned with the rest of the divs
     insertion.insertAdjacentElement('beforebegin', prayersContainerDiv);
 
   
-            //We will create a div element for each row of each table in btn.prayersArray
-            prayers.forEach(table =>
-              table.forEach(row =>
-                createHtmlElementForPrayer(
-                      row,
-                      btn.languages,
-                      undefined,
-                      prayersContainerDiv
-                )
-              ));
+      //We will create a div element for each row of each table in btn.prayersArray
+      prayers.forEach(table =>
+        table.forEach(row =>
+          createHtmlElementForPrayer(
+                row,
+                btn.languages,
+                undefined,
+                prayersContainerDiv
+          )
+        ));
               return [createdButton, prayersContainerDiv]
 }

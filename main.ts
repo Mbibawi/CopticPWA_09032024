@@ -1303,6 +1303,7 @@ async function showInlineButtonsForOptionalPrayers(
     let btns: Button[] = [];
     selectedPrayers.map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
+      if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
         btnID: splitTitle(prayerTable[0][0])[0], //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
@@ -1313,7 +1314,7 @@ async function showInlineButtonsForOptionalPrayers(
         prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable
         languages: btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
         cssClass: "fractionPrayersBtn",
-        children: [...btn.parentBtn.children], //we give it btn as a child in order to show the buttons tree of btn in the leftSideBar menu
+        children: (() =>{if (btn.parentBtn && btn.parentBtn.children) return [...btn.parentBtn.children]})(), //we give it btn as a child in order to show the buttons tree of btn.parentBtn.children in the leftSideBar menu
         onClick: () => {
           //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
           hideInlineButtonsDiv();
