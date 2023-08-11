@@ -29,7 +29,7 @@ async function setCopticDates(today?: Date) {
 /**
  * Converts the provided Gregorian date into Coptic Date
  * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
- * @returns {number[]} - an array containing the following elements: [coptic day, coptic month, coptic year ]
+ * @returns {[number[], string]} - an array containing as 1st element an array representing the coptic day, coptic month, and coptic year, the second elemement of the array is a string representing the copitc date formatted as 'DDMM'
  */
 function convertGregorianDateToCopticDate(today?: number): [number[], string]{
 	
@@ -80,7 +80,7 @@ function convertGregorianDateToCopticDate(today?: number): [number[], string]{
  * @param {Date} date  - a date value expressing any Gregorian calendar date
  * @returns {string} - a string expressing the coptic date
  */
-function convertGregorianDateToCopticDate_Old(date: Date): string {
+function convertGregorianDateToCopticDate_OldNotUsedAnyMore(date: Date): string {
 	let day: number = date.getDate();
 	let month: number = date.getMonth() + 1; //we add one because the months count starts at 0
 	let coptMonth: number, coptDay: number, dm: number[];
@@ -516,6 +516,23 @@ function testReadings() {
 	}
 	//@ts-ignore
 	console.save(result, 'testReadings Result.doc');
+
+	changeDate(new Date());
+
+}
+function testDateFunction(date:Date=new Date('2022.12.31')) {
+	addConsoleSaveMethod(console);
+
+	setCopticDates(date);
+	let text: string = '';
+	for (let i = 1; i < 800; i++){
+		changeDate(undefined, true, undefined, false);
+		text += 'Gregorian = ' + todayDate.getDate().toString() + '/' + (todayDate.getMonth()+1).toString() + '/' + todayDate.getFullYear().toString() + '\t'
+		text += 'Coptic = ' +  copticDate + '\t';
+		text += 'Readings = ' + copticReadingsDate + '\n';
+	}
+	//@ts-ignore
+	console.save(text, 'testDateFunction.doc');
 
 	changeDate(new Date());
 

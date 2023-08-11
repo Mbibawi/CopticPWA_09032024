@@ -76,7 +76,6 @@ body{
 .AR,
 .CA {
   font-weight: 500;
-  line-height: 40px;
 }
 .FR,
 .EN {
@@ -239,7 +238,7 @@ div.Row.collapsedTitle, div.collapsedTitle {
   text-align: justify;
   text-justify: inter-word;
   border-radius: 5px;
-  margin: 1px 0px;
+  margin: 0px 0px;
   padding:1px 5px;
   justify-items: stretch;
   justify-self: center ;
@@ -260,19 +259,20 @@ div.Row.collapsedTitle, div.collapsedTitle {
 .Title >p.AR,
 .SubTitle>p.AR
 {
-  font-size: 20pt;
   grid-area: AR;
   direction: rtl !important;
   font-family: GentiumBookPlus;
+  font-size: 3vmax;
 }
 .Row > p.CA, 
 .Title >p.CA
 .SubTitle >p.CA
 {
-  font-size: 20pt;
+  font-size: 2.3vmax;
   grid-area: CA;
   direction: rtl !important;
   font-family: GentiumBookPlus;
+  border-right-style: groove;
 }
 
 .Row > p.FR, 
@@ -280,6 +280,8 @@ div.Row.collapsedTitle, div.collapsedTitle {
 .SubTitle >p.FR
 {
  grid-area: FR;
+ border-right-style: groove;
+ font-size: 2.2vmax;
 }
 
 .Row > p.COP, 
@@ -287,6 +289,8 @@ div.Row.collapsedTitle, div.collapsedTitle {
 .SubTitle >p.COP
 {
   grid-area: COP;
+  border-right-style: groove;
+  font-size: 2.1vmax;
 }
 .Title > p,
 .SubTitle> p
@@ -301,14 +305,15 @@ div.Row.collapsedTitle, div.collapsedTitle {
 .SubTitle >p, 
 .Comments > p, 
 .CommentText > p{
-  margin:0px 0px;
+  margin: 3px 3px;
   padding-right:8px;
+  line-height: 4vmax;
 }
 .sign {
   font-size: 13px;
   color: white;
   float: inline-start;
-  margin-left: 5px;
+
 }
 .DisplayModePresentation{
 grid-template: "FR AR"  "COP COP";
@@ -592,19 +597,22 @@ table{
   padding: 6px 6px;
 
 }
+#btnFractionPrayersContainer{
+  margin-top: 30px !important;
+  width:95%;
+}
 .multipleChoicePrayersBtn{
-  background-color: darkslategray !important;
+  background-color: rgb(41, 43, 43) !important;
   width: 30;
   margin: 2px 2px;
-  height: auto;
-  min-height: 220px;
+  min-height: 25vh;
   justify-items: center;
   border-radius: 20px;
 }
 .multipleChoicePrayersBtn >p{
   font-weight: 600;
   font-size: 10pt;
-  line-height: 10pt;
+  line-height: 14pt;
   margin:1px 1px;
 }
 .btnsContainer{
