@@ -1052,12 +1052,10 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
 
   htmlRows.forEach(
     (row: HTMLElement) => {
-      
       //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
         row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
         row.style.gridTemplateAreas = setGridAreas(row);
- 
 
       if (row.classList.contains('Title')
         || row.classList.contains('SubTitle')) {
@@ -1076,9 +1074,9 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
           minusSign + " " + defLangParag.innerHTML;//We add the minus (-) sig at the begining;
         if (row.classList.contains('Title'))addDataGroupsToContainerChildren(undefined, 'Title', row);
         if (row.classList.contains('SubTitle')) addDataGroupsToContainerChildren(undefined, 'SubTitle', row);
-      } else {
-        replaceEigthNote(undefined, Array.from(row.querySelectorAll('p')));
-        };
+      };
+
+      if (row.classList.contains('Diacon')) replaceMusicalNoteSign(Array.from(row.querySelectorAll('p')));
     });
 };
 
@@ -2075,22 +2073,20 @@ function replaceClass(prayersArray: string[][][], newClass:string) {
  * @param {number} code - the Char code of the eigth note (or any other character that we want to replace with a span with the same css class)
  * @returns 
  */
-async function replaceEigthNote(code: number, container: HTMLElement[]) {
-  if (!code) code = 9834;
+async function replaceMusicalNoteSign(container: HTMLElement[]) {
   if (!container) container = Array.from(containerDiv.querySelectorAll('p.Diacon')) as HTMLElement[];
   if (container.length === 0) return;
-  let note = String.fromCharCode(code),
-        replaceWith: string = '<span class="eigthNote">' + note + '</span>';
-  if (localStorage.displayMode === displayModes[1]) {
-    replaceWith = '<span class="eigthNote">' + note + '</span><br>'
-  };
+
+  let notes: string[] = [String.fromCharCode(eighthNoteCode), String.fromCharCode(beamedEighthNoteCode)];
   
-  container.forEach((p:HTMLElement) => {
-    if (p && p.innerText.includes(note)){
-      p.innerHTML = p.innerHTML.replaceAll(note, replaceWith);
-    }
-  }
-    )
+  notes
+    .forEach(note => {
+  container
+    .forEach((p: HTMLElement) => {
+      if(!p.innerText.includes(note)) return;
+      p.innerHTML = p.innerHTML.replaceAll(note, '<span class="musicalNote">' + note + '</span>');
+    })
+  })
 }
 
 /**

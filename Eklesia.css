@@ -676,16 +676,16 @@ div.ReadingEnd{
 
 }
 
-.eigthNote.amplifiedText{
+.musicalNote.amplifiedText{
   font-size: 25pt;
 }
 
-.eigthNote{
+.musicalNote{
   color:  #95190c !important;
   font-weight: bold !important;
   font-size: 18pt;
 }
-.DisplayModePresentation> p>span.eigthNote{
+.DisplayModePresentation> p>span.musicalNote{
   color:  #95190c !important;
   font-weight: bold !important;
   font-size: 35pt !important;

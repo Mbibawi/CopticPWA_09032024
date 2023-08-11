@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.6.1 (Some CSS to the fonts size, and added the testDatesFunction())';
+const version: string = 'v4.6.2 (Changed the musical note from eigth note to beamed note and made changes to the function formatting the note)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -141,6 +141,8 @@ const Prefix = {
 };
 const plusCharCode: number = 10133;
 const btnClass = 'sideBarBtn';
+const eighthNoteCode: number = 9834;
+const beamedEighthNoteCode: number = 9835;
 const inlineBtnClass = 'inlineBtn';
 const ReadingsIntrosAndEnds = {
     gospelIntro: {
