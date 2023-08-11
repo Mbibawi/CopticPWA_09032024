@@ -23,7 +23,8 @@ async function setCopticDates(today?: Date) {
 		} else { return false };
 	})();
 	//Showing the dates and the version
-	document.getElementById('homeImg').insertAdjacentElement('beforebegin', showDates());
+	showDates();
+	createFakeAnchor('homeImg');
 };
 /**
  * Converts the provided Gregorian date into Coptic Date
@@ -352,27 +353,52 @@ function isItSundayOrWeekDay(
 /**
  * Shows the dates (Gregorian, coptic, coptic readings etc.), in an html element in the Temporary Dev Area
  */
-function showDates(newDiv?:HTMLDivElement):HTMLDivElement {
-	if (!newDiv) newDiv = document.getElementById('dateDiv') as HTMLDivElement;
-	if (!newDiv) newDiv = document.createElement('div');
-	newDiv.style.padding = '3px 20px';
-	newDiv.id = 'dateDiv';
-	newDiv.style.fontSize = '8pt';
-	newDiv.innerText =
-		"Today: " +
+function showDates(dateDiv?:HTMLDivElement):HTMLDivElement {
+	if (!dateDiv) dateDiv = document.getElementById('dateDiv') as HTMLDivElement;
+	if (!dateDiv) dateDiv = containerDiv.insertAdjacentElement('beforebegin', document.createElement('div')) as HTMLDivElement;
+	dateDiv.classList.add('dateDiv');
+	
+	//Inserting the Gregorian date
+	let date:string = 'Date: ' +
+	todayDate.getDate().toString() + '/' +
+	(todayDate.getMonth()+1).toLocaleString('en-US') + '/' +
+	(todayDate.getFullYear() + 1).toString()
+	
+	insertDateBox(date);
+	//Inserting the home image after the dateBox
+	dateDiv.appendChild(document.getElementById('homeImg'));
+	//Inserting the Coptic date
+	date = 'Coptic Date: ' +
+	copticDay + ' ' +
+	copticMonths[Number(copticMonth)].EN + ' ' +
+		copticYear + ' \n' +
+		'Readings date: ' + copticReadingsDate.slice(0, 2) + ' ' +
+		copticMonths[Number(copticReadingsDate.slice(2, 4))].EN;
+	
+	insertDateBox(date);
+
+	function insertDateBox(date: string) {
+		//Inserting a date box
+		let dateBox = dateDiv.appendChild(document.createElement('div'));
+		dateBox.style.display = 'block !important';
+		let p = dateBox.appendChild(document.createElement('p'))
+		p.classList.add('dateBox');
+		p.innerText = date;
+	}
+	
+	//Inserting a creditials Div after containerDiv
+	let credentialsDiv = containerDiv.insertAdjacentElement('afterend', document.createElement('div')) as HTMLElement;
+	credentialsDiv.classList.add('credentialsDiv');
+	credentialsDiv.id = 'credentialsDiv';
+		credentialsDiv.style.padding = '3px 20px';
+		credentialsDiv.innerText =
+			"Today: " +
 		todayDate.toString() +
-		" , Coptic date :  " +
-		copticDay +
-		"/" +
-	copticMonth +
-	"/" +
-		copticYear +
-		". Coptic Readings: " +
-		copticReadingsDate +
-		'.\n We ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period' +
-		" . Season = " + Season +
-		" . Version = " + version;
-	return newDiv
+		" .\n Season = " + Season +
+		" .\n Version = " + version + '.\n' +
+			'We ' + `${isFast ? 'are ' : 'are not '}` + 'during a fast period or on a fast day (Wednesday or Friday';
+
+	return dateDiv
 };
 
 /**

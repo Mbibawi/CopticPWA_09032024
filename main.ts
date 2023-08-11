@@ -191,30 +191,34 @@ async function showTitlesInRightSideBar(
    * Adds shortcuts to the diffrent sections by redirecting to the title of the section
    * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given langauge
    */
-  function addTitle(titles: HTMLElement):HTMLDivElement {
+  function addTitle(titlesRow: HTMLElement):HTMLDivElement {
     let text: string = "",
-      div:HTMLDivElement = document.createElement("div"); //this is just a container
-    div.role = "button";
-    rightTitlesDiv.appendChild(div);
+      titleDiv:HTMLDivElement = document.createElement("div"); //this is just a container
+    titleDiv.role = "button";
+    rightTitlesDiv.appendChild(titleDiv);
     bookmark = document.createElement("a");
-    div.appendChild(bookmark);
-    bookmark.href = "#" + titles.id; //we add a link to the element having as id, the id of the prayer
-    div.classList.add("sideTitle");
-    div.addEventListener("click", () => closeSideBar(rightSideBar)); //when the user clicks on the div, the rightSideBar is closed
-    if (titles.querySelector('.' + defaultLanguage)) {
+    titleDiv.appendChild(bookmark);
+    bookmark.href = "#" + titlesRow.id; //we add a link to the element having as id, the id of the prayer
+
+    titleDiv.classList.add("sideTitle");
+    titleDiv.addEventListener("click", () => {
+      closeSideBar(rightSideBar);
+      collapseText(titlesRow, undefined, true);
+    }); //when the user clicks on the div, the rightSideBar is closed
+    if (titlesRow.querySelector('.' + defaultLanguage)) {
       //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
-      text += titles
+      text += titlesRow
         .querySelector('.' + defaultLanguage)
         //@ts-ignore
         .innerText.split('\n')[0];
     }
-    if (titles.querySelector('.' + foreingLanguage)) {
+    if (titlesRow.querySelector('.' + foreingLanguage)) {
       if (text !== '') {
-        text += "\n" + titles.querySelector('.' + foreingLanguage)
+        text += "\n" + titlesRow.querySelector('.' + foreingLanguage)
           //@ts-ignore
           .innerText.split('\n')[0];
       } else {
-        text += titles.querySelector('.' + foreingLanguage)
+        text += titlesRow.querySelector('.' + foreingLanguage)
           //@ts-ignore
           .innerText.split('\n')[0];
       }
@@ -224,7 +228,7 @@ async function showTitlesInRightSideBar(
       .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
       .replaceAll(String.fromCharCode(plusCharCode + 1) + ' ', '');
     bookmark.innerText = text;
-    return div
+    return titleDiv
   }
   return titlesArray;
 }
@@ -1145,11 +1149,15 @@ async function setButtonsPrayers(){
  * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'Title'. It does this by toggeling the "display" property of the html elements
  * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
  */
-function collapseText(titleRow: HTMLElement, container: HTMLElement = containerDiv) {
+function collapseText(titleRow: HTMLElement, container: HTMLElement = containerDiv, show:boolean= null) {
   if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div[data-group="' + titleRow.dataset.root + '"]')
     .forEach((div: HTMLDivElement) => {
-      if(div !== titleRow) div.classList.toggle('collapsedTitle')
+      if(div !== titleRow) {
+        console.log("show = ", show);
+        if (show === true && div.classList.contains('collapsedTitle')) div.classList.remove('collapsedTitle');
+        if(show === false || show === null) div.classList.toggle('collapsedTitle');
+      }
     });
   togglePlusAndMinusSignsForTitles(titleRow);
 };

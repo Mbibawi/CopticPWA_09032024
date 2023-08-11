@@ -142,9 +142,16 @@ justify-self: center;
   background-position: center;
   background-size:cover;
   background-clip: border-box;
-  height: 90%;
+  height: 35vmin;
+  width: 40vmin;
+  max-width: 97.5%;
   border-radius: 20px;
-  margin-bottom: 70px;
+  margin: 5px 5px;
+
+}
+.credentialsDiv{
+  font-style: italic;
+  font-size: 8pt;
 }
 
 .inlineBtn > p, .mainPageBtns>p{
@@ -177,11 +184,10 @@ justify-self: center;
 }
 
 .homeImg{
-  width: 13%;
-  height: 70%;
-  justify-self: center;
-  align-self: center;
-  padding-bottom: 5px; 
+align-self: center;
+justify-self: center;
+  margin-top: 5px;
+  width: 33%;
 }
 
 
@@ -612,17 +618,41 @@ table{
   align-self: center;
 }
 
+.dateDiv{
+  display:grid;
+  grid-template-columns: 40% 30% 40%;
+  row-gap: 10px;
+  margin-bottom: 5px;
+}
+.dateBox{
+  display:grid;
+  background-color: #d84f008a;
+  color:rgb(255, 255, 255);
+  opacity: 95%;
+  width:70%;
+  margin: 3px 3px;
+  font-size: 10pt;
+  font-weight: bold;
+  font-style: italic;
+  line-height: normal;
+  border-style: groove;
+  border-color: #7E3B10;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 4px 4px;
+
+}
+
 .langBtnAdd{
   background-color: red !important;
 }
+
 .settingsBtn{
   background-color: green;
   color:white;
   padding: 12pt;
 }
-.dd{
-  background-color: saddlebrown;
-}
+
 div.ReadingIntro{
   background-color: darkgoldenrod;
   margin-top: 0px;

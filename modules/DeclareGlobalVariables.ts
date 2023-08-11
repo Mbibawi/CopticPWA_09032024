@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.5.9 (Added more communion chants)';
+const version: string = 'v4.6.0 (Added date boxes and made collapsed sections uncollapsed when the right sidebar shortcut is clicked)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -66,7 +66,7 @@ const copticMonths: {AR:string, FR:string, EN:string }[] = [
     {
         AR: "طوبة",
         FR: "Toubah",
-        EN: ""
+        EN: "Toubah"
     },
     {
         AR: "أمشير",
@@ -126,6 +126,7 @@ const Prefix = {
     commonDoxologies: 'DC_',
     commonIncense: 'IC_',
     communion: 'Communion_',
+    hymns: 'Hymns_',
     propheciesDawn: "RPD_", //Stands for Readings Prophecies Dawn 
     stPaul: "RSP_", //Stands for Readings St Paul
     katholikon: "RK_", //Stands for Readings Katholikon
