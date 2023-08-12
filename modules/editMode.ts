@@ -65,7 +65,7 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
   if (!languages) languages = allLanguages;
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
-  if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
+ // if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
   let el: HTMLElement;
 
   if (clear) containerDiv.innerHTML = ""; //we empty the containerDiv
@@ -177,21 +177,28 @@ function addColumnBtn(btnsDiv:HTMLElement){
  * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
  */
 function exportToJSFileBtn(btnsDiv: HTMLElement) {
-  let today = new Date();
-  let fileName = containerDiv.dataset.arrayName
-    + '_[ModifiedOn'
-    + String(today.getDate())
-    + String(today.getMonth()+1)//we add 1 because the months are counted from 0
-    + String(today.getFullYear())
-    + 'at'
-    + String(today.getHours() +1)
-    +'h'
-    + String(today.getMinutes())
-    + '].js';
-
-  //@ts-ignore
-  let newButton = createEditingButton(() => console.save(saveModifiedArray(), fileName), "Export To JS");
+  let newButton = createEditingButton(() =>exportToJSFile(saveModifiedArray(), containerDiv.dataset.arrayName), "Export To JS");
   btnsDiv.appendChild(newButton);
+}
+
+/**
+ * Generates a file name for the JS file, including the name of the array, the date on which it was modified, and the time
+ * @param {string} arrayName - the name of the array for which we want to generate a file name
+ */
+function getJSFileName(arrayName: string): string {
+  let today = new Date();
+  return arrayName
+  + '_[ModifiedOn'
+  + String(today.getDate())
+  + String(today.getMonth()+1)//we add 1 because the months are counted from 0
+  + String(today.getFullYear())
+  + 'at'
+  + String(today.getHours() +1)
+  +'h'
+  + String(today.getMinutes())
+  + '].js';
+
+  
 }
 
 function changeTitleBtn(btnsDiv:HTMLElement){
@@ -316,7 +323,8 @@ function modifyTablesInTheirArray() {
         if (filtered && filtered.length > 1) console.log('found more than 1 table when filtering the original array ', filtered);
     });
   //@ts-ignore
-  console.save(replacePrefixes(array), 'Modified' + containerDiv.dataset.arrayName+ '.js');
+  //console.save(replacePrefixes(array), 'Modified' + containerDiv.dataset.arrayName+ '.js');
+  createJSFile(replacePrefixes(array), 'Modified' + containerDiv.dataset.arrayName+ '.js');
 }
 
 /**
@@ -423,6 +431,23 @@ function createEditingButton(
   return btnHtml
 }
 
+/**
+ * Takes the text of a modified array, and exports it to a js file
+ * @param {string} arrayText - The text of the modified array. It is a text where the prefixes and other special charachters are processed
+ * @param {string} fileName -The name that will be given to the js file
+ */
+function exportToJSFile(arrayText: string, arrayName: string) {
+  //@ts-ignore
+  //console.save(arrayText, fileName);
+  createJsFile(arrayText, getJSFileName(arrayName));
+}
+
+
+/**
+ * Converts the provided array of all the html divs of a table into a string[][] representing the table rows
+ * @param {HTMLDivElement[]} htmlRows - an array of html divs each reprsenting a row in a table 
+ * @returns {string[][]} an array representing the table 
+ */
 function saveModifiedArray(): string {
     let  editedArray: string[][][] = [],
     title: string, 
@@ -467,19 +492,20 @@ function saveModifiedArray(): string {
   }
 
   console.log("newArray = ", editedArray);
-  let text = processTablesArray(editedArray);
+  let text = processArrayTextForJsFile(editedArray, containerDiv.dataset.arrayName);
   localStorage.editedText = text;
   console.log(localStorage.editedText);
   return text
 };
+
+
+
 /**
- * Converts the provided array of all the html divs of a table into a string[][] representing the table rows
- * @param {HTMLDivElement[]} htmlRows - an array of html divs each reprsenting a row in a table 
- * @returns {string[][]} an array representing the table 
+ * Takes a table array, and process the strings in the array, in order to restore the prefixes and insert escape characters before the new lines, etc. in a format that suits a js file
+ * @param {string[][][]} tablesArray - the string[][][] that will be processed and returned as a text the js file
+ * @return {string} the text representing the array in a js file
  */
-
-
-function processTablesArray(tablesArray: string[][][]):string {
+function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string): string {
   //Open Array of Tables
   let text: string = "[";
   tablesArray.forEach((table: string[][]) => {processTable(table)});
@@ -525,7 +551,7 @@ function processTablesArray(tablesArray: string[][][]):string {
     text += '"'+element+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
   };
   text = replacePrefixes(text);
-  text = containerDiv.dataset.arrayName + "= " + text;
+  text = arrayName + "= " + text;
   text += "];";
   return  text
 }
@@ -798,47 +824,56 @@ function showSequence(
  */
 function addConsoleSaveMethod(console) {
   if (console.save) return;
-  console.save = function (data, filename) {
-    if (!data) {
-      console.error("Console.save: No data");
-      return;
-    }
-    if (!filename) filename = "PrayersArrayModifiedd";
+  console.save = createJsFile
 
-    if (typeof data === "object") {
-      data = JSON.stringify(data, undefined, 4);
-    }
-    if (typeof data === "string") {
-      data = data.replace("\\\\", "\\");
-    }
-
-    var blob = new Blob([data], { type: "text/json" }),
-      e = document.createEvent("MouseEvents"),
-      a = document.createElement("a");
-
-    a.download = filename;
-    a.href = window.URL.createObjectURL(blob);
-    a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
-    e.initMouseEvent(
-      "click",
-      true,
-      false,
-      window,
-      0,
-      0,
-      0,
-      0,
-      0,
-      false,
-      false,
-      false,
-      false,
-      0,
-      null
-    );
-    a.dispatchEvent(e);
-  };
 }
+
+/**
+ * Creates a downloadable JS file from the date passed as an argument, and downloads the file with the provided fileName
+ * @param data 
+ * @param filename 
+ * @returns 
+ */
+function createJsFile(data:Object | string, filename:string) {
+  if (!data) {
+    console.error("Console.save: No data");
+    return;
+  }
+  if (!filename) filename = "PrayersArrayModifiedd";
+
+  if (typeof data === "object") {
+    data = JSON.stringify(data, undefined, 4);
+  }
+  if (typeof data === "string") {
+    data = data.replace("\\\\", "\\");
+  }
+
+  var blob = new Blob([data as BlobPart], { type: "text/json" }),
+    e = document.createEvent("MouseEvents"),
+    a = document.createElement("a");
+
+  a.download = filename;
+  a.href = window.URL.createObjectURL(blob);
+  a.dataset.downloadurl = ["text/json", a.download, a.href].join(":");
+  e.initMouseEvent(
+    "click",
+    true,
+    false,
+    window,
+    0,
+    0,
+    0,
+    0,
+    0,
+    false,
+    false,
+    false,
+    false,
+    0,
+    null
+  );
+  a.dispatchEvent(e);
+};
 
 function splitParagraphsToTheRowsBelow() {
   //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
@@ -1012,3 +1047,17 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   showTables([table], getLanguages(containerDiv.dataset.arrayName))
   
 };
+
+function reArangeTablesColumns(tblTitle: string, arrayName: string) {
+  //@ts-ignore
+ // if (!console.save) addConsoleSaveMethod(console);
+  let array:string[][][] = eval(arrayName);
+  let table: string[][] = array.filter(tbl => tbl[0][0] === tblTitle)[0];
+  table.forEach(row => {
+    row[row.length - 1] = row[1];
+    row[1] = '';
+    row.splice(1, 0, '');
+    row.splice(1, 0, '');
+  });
+  exportToJSFile(processArrayTextForJsFile(array, arrayName),arrayName);
+}
