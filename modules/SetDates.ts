@@ -357,6 +357,7 @@ function showDates(dateDiv?:HTMLDivElement):HTMLDivElement {
 	if (!dateDiv) dateDiv = document.getElementById('dateDiv') as HTMLDivElement;
 	if (!dateDiv) dateDiv = containerDiv.insertAdjacentElement('beforebegin', document.createElement('div')) as HTMLDivElement;
 	dateDiv.classList.add('dateDiv');
+	dateDiv.id = 'dateDiv';
 	if (dateDiv && dateDiv.children.length > 0) return;
 	
 	//Inserting the Gregorian date
