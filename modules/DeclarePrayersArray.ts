@@ -4295,7 +4295,30 @@ PrayersArray= [[
   "آمين آمين ابروس ايف اكساثتي.", 
   "آمين آمين صلوا.", 
   ], 
-  ], 
+  ],
+  [
+    [
+      Prefix.massCommon + 'PrayerForTheFather&D=$copticFeasts.AnyDay&C=CommentsText',
+      "",
+      "Oui, nous Te supplions ô Père saint et bon, ne nous soumets pas à la tentation et que toute iniquité n’ait aucun pouvoir sur nous. Mais délivre-nous des futilités, leurs pensées, leurs actions, leurs images et leurs sensations. Inhibe le tentateur, éloigne-le de nous. Interpelle les mouvements qu’il cherche à nous inculper. Détourne de nous les raisons qui conduisent au péché. Délivre-nous par Ta sainte Puissance, par le Christ Jésus notre Seigneur par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dus avec Lui et le Saint- Esprit vivifiant et consubstantiel à Toi. Maintenant et toujours et pour les siècles des siècles. Amen",
+      "",
+      "نعم نسألك أيھا الآب القدوس الصالح محب الصلاح لا تدخلنا في تجربة ولا يتسلط علينا كل إثم، لكن نجنا من الأعمال الغير النافعة وأفكارھا وحركاتھا ومناظرھا وملامسھا، والمجرب ابطله واطرده عنا، وانتھر أيضاً حركاته المغروسة فينا، واقطع عنا الأسباب التي تسوقنا إلى الخطية، ونجنا بقوتك المقدسة، بالمسيح يسوع ربنا، ھذا الذي من قِبَلِهِ المجد والكرامة والعزة والسجود تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دھر الدھور آمين."
+    ],
+    [
+      Prefix.massCommon + 'PrayerForTheFather&D=$copticFeasts.AnyDay&C=CommentsText',
+      "",
+      "Les dons de la bonté de Ton fils unique notre Seigneur, notre Dieu et notre Sauveur Jésus-Christ ont été accomplis. Nous avons confessé Sa Passion salvatrice, nous avons annoncé Sa Mort, nous avons cru en Sa Résurrection ; le Mystère a été accompli. Nous Te rendons grâce ô Seigneur Dieu Tout-Puissant car Ta pitié est grande pour nous. Tu nous as préparé ce que les anges souhaitent contempler. Nous implorons et nous supplions Ta bonté ô Ami du genre humain afin que Tu nous unisses à Toi par la communion à Tes saints Sacrements divins car Tu nous as tous purifiés. Fais que nous soyons remplis de Ton Esprit Saint, ancrés dans la rectitude de Ta Foi, pleins du désir de Ton Amour véritable et que nous proclamions Ta gloire en tout temps. Par le Christ Jésus notre Seigneur par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dus avec Lui et le Saint-Esprit vivifiant et consubstantiel à Toi Maintenant et toujours et pour les siècles des siècles. Amen.",
+      "",
+      "كملت نعم إحسان ابنك الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح اعترفنا بآلامه المخلصة بشرنا بموته آمنّا بقيامته، وكَمُلَ السر. نشكرك أيها الرب الإله ضابط الكل لأن رحمتك عظيمة علينا إذ أعددت لنا ما تشتهي الملائكة أن تطلع عليه. نسأل ونطلب من صلاحك يا محب البشر لكي إذ طهرتنا كلنا، توحدنا بك من جهة تناولنا من أسرارك الإلهية، لكي نكون مملوئين من روحك القدوس وثابتين في إيمانك الأرثوذكسي ومملوئين من شوق محبتك الحقيقة، وننطق بمجدك كل حين بالمسيح يسوع ربنا، هذا الذي من قبله المجد والكرامة والعزة والسجود تليق بك معه، ومع الروح القدس المحيي المساوي لك الآن وكل أوان والى دهر الدهور كلها. آمين."
+    ],
+  [
+    Prefix.massCommon + 'PrayerForTheFather&D=$copticFeasts.AnyDay&C=CommentsText',
+    "",
+    "Ô Maître Seigneur, Dieu Tout-Puissant, Qui guérit nos âmes, nos corps et nos esprits, Tu as dit à notre père Pierre par la bouche de Ton Fils Unique, notre Seigneur, notre Dieu et notre Sauveur Jésus-Christ : Tu es Pierre et sur ce rocher je bâtirai mon Église et les portes del’enfer ne tiendront pas contre elle. Je te donne les clés du Royaume des cieux, tout ce que tu lieras sur la terre sera lié dans les cieux et tout ce que tu délieras sur la terre sera délié dans les cieux. Fais, Seigneur, que Tes serviteurs mes pères et mes frères ainsi que mon humble personne, nous soyons absous de ma bouche par ton Esprit Saint, Toi qui es bon et Ami du genre humain. Ô Dieu qui enlèves les péchés du monde, hâte-Toi d’agréer le repentir de Tes serviteurs. Qu’il soit la lumière de leurs connaissances et la rémission de leurs péchés. Car Tu es un Dieu compatissant, plein de miséricorde, patient et juste. Daigne pardonner et remettre tout ce que nous avons commis contre Toi en parole ou en action, Toi qui es bon et Ami du genre humain. Ô Dieu, absousnous et absous tout Ton peuple de toute malédiction, de toute apostasie, de tout parjure et de toute compromission avec les hérétiques et les incroyants. Accorde-nous, Seigneur, l’intelligence, la force et la compréhension nécessaire pour nous évader complètement des actions de l’ennemi. Donne-nous de faire Ta volonté en tout temps. Inscris nos noms parmi les chœurs de Tes saints dans le Royaume des cieux par le Christ Jésus notre Seigneur ...etc.",
+    "",
+    "أيها السيدُ الربُ الإله ضابط الكل، وشافي نفوسنا وأجسادنا وأرواحنا، أنتَ الذي قُلتَ لأبينا بطرس من فم ابنكَ الوحيد ربنا وإلهنا ومخلصنا يسوع المسيح : \"أنتُ هو بطرس على هذه الصخرة أبنى كنيستي، وأبواب الجحيم لن تقوى عليها، وأعطيك مفاتيح ملكوت السموات، وما ربطته على الأرض يكون مربوطاً في السماء، وما حللته على الأرض يكون محلولا في السموات\". فليكن يا سيدنا عبيدك آبائي، واخوتي، وحقارتي، مُحَللين من فمي بروحِكَ القدوس، أيها الصالح محب البشر. اللهم يا حامل خطية العالم ابدأ بقبول توبة عبيدك منهم، نوراً للمعرفة، وغفراناُ للخطايا لأنكَ أنتَ إله رؤوف ورحوم أنتَ طويل الاناة، كثير الرحمة وبار. وإن كنا قد أخطأنا إليك بالقول أو بالفعل فسامح واغفر لنا كصالح و محب البشر. اللهم حَللنا وحَلل شعبك من كل خطية، ومن كل لعنة، ومن كل جحود، ومن كل يمين كاذب، ومن كل ملاقاة الهراطقة والوثنيين. أنعِم علينا يا سيدنا بعقل وقوة وفهم لنهرب إلى التمام من كل أم رُ ردئ وامنحنا أن نصنع مرضاتك كل حين. اكتب أسماءنا مع كل صفوف قديسيك في ملكوت السموات بالمسيح يسوع ربنا هذا الذي من قبله المجد ..."
+  ],
+  ],
   [
   [
   Prefix.massCommon+"FractionPrayerPlaceholder&D=$copticFeasts.AnyDay&C=Title", 
@@ -6492,7 +6515,7 @@ PrayersArray= [[
   [
   Prefix.massStGregory+"AnaphoraPart1&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲑ ⲁ̀ⲅⲁⲡⲑ ⲧⲟⲩ :ⲉⲟⲩ ⲕⲉ Ⲡⲁⲧⲣⲟⲥ: ⲕⲉ ⲑ̀ ⲭⲁⲣⲓⲥ ⲧⲟⲩ ⲙⲟⲛⲟⲅⲉⲛⲟⲩⲥ Ⲩⲓⲟⲩ Ⲕⲩⲣⲓⲟⲩ ⲇⲉ ⲕⲉ :ⲉⲟⲩ ⲕⲉ ⲥⲱⲧⲑⲣⲟⲥ ⲑ̀ⲙⲱⲛ Ⲓⲑⲥⲟⲩ Ⲭⲣⲓⲥⲧⲟⲩ ⲕⲉ ⲑ̀ ⲕⲓⲟⲛⲉⲛⲓⲁ̀ ⲕⲉ ⲑ̀ ⲇⲱⲣⲉⲁ̀ ⲧⲟⲩ ⲁ̀ⲅⲓⲟⲩ Ⲡⲛⲉⲩⲙⲁⲧⲟⲥ ⲓ̀ ⲑ̀ ⲙⲉⲧⲁ ⲡⲁⲛⲧⲱⲛ ⲩ̀ⲙⲱⲛ", 
-  "Le Seigneur soit avec vous tous.", 
+  "L’amour de Dieu Le Père, la grâce du Fils unique, notre Seigneur, Dieu et Sauveur Jésus Christ, la communion et le don du Saint Esprit soient avec vous tous.", 
   "إي أغابي تو ثيؤ كي باتروس، كي إي خاريس تو مينو جينوس، إيو كيريو جي كي ثيؤ كي سوتيروس إيمون، إيسو خريستو كي إي كيو نيني آ كي إي ذو ري آ، تو آجيو بنيفماتوس، إي إي ميتا بانتون أومون..", 
   "محبة الله الآب، ونعمة الابن الوحيد، ربنا وإلهنا ومخلصنا يسوع المسيح، وشركة وموهبة الروح القدس، تكون مع جميعكم.", 
   ], 
@@ -6940,12 +6963,12 @@ PrayersArray= [[
   "", 
   "Convertis les incroyants et mets fin aux divisions de ton Eglise.", 
   "", 
-  "غير ردهم لتنقض انقسامات الكنيسة.", 
+  "غير المؤمنين ردهم لتنقض انقسامات الكنيسة.", 
   ], 
-  ], 
+  ],
   [
   [
-  Prefix.massStGregory+"LitaniesIntroductionPart12&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massStGregory+"LitaniesIntroductionPart12&D=$copticFeasts.AnyDay&C=Priest",  
   "", 
   "Brise l'orgueil des hérétiques. Accueille-nous tous dans l'unité de ta piété.", 
   "", 

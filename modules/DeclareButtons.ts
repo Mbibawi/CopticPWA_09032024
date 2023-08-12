@@ -674,10 +674,13 @@ const btnMassStBasil: Button = new Button({
       [btnMassStBasil, btnMassStGregory, btnMassStCyril, btnMassStJohn];
     massButtons.splice(massButtons.indexOf(btn), 1);
     massButtons.splice(massButtons.indexOf(btnMassStJohn), 1); 
+    
+    let btnDocFragmentChildren = Array.from(btn.docFragment.children).filter(htmlRow=>htmlRow.tagName === 'DIV') as HTMLDivElement[];
 
     showFractionPrayersMasterButton(
       btn,
-      btn.docFragment.querySelector('[data-root="' + Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay"]') as HTMLElement,
+      btnDocFragmentChildren
+        .filter(htmlRow => htmlRow.dataset.root === Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay')[0],
       { defaultLanguage: "صلوات القسمة", foreignLanguage: "Oraisons de la Fraction" },
       "btnFractionPrayers",
     FractionsPrayersArray);
@@ -688,15 +691,13 @@ const btnMassStBasil: Button = new Button({
         [...massButtons],
         {
           beforeOrAfter: "afterend",
-          el: btn.docFragment.querySelector(
-            getDataRootSelector('Reconciliation&D=$copticFeasts.AnyDay', true)
-          ) as HTMLDivElement,
+          el: btnDocFragmentChildren.filter(htmlRow=>htmlRow.dataset.root.includes('Reconciliation&D=$copticFeasts.AnyDay'))[0],
         },
         'RedirectionToReconciliation'
       );
 
       //Adding 2 buttons to redirect to the St Cyrill or St Gregory Anaphora prayer After "By the intercession of the Virgin St. Mary"
-      let select = btn.docFragment.querySelectorAll(getDataRootSelector(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=$copticFeasts.AnyDay', true)) as NodeListOf<HTMLDivElement>;
+      let select = btnDocFragmentChildren.filter(htmlRow=>htmlRow.dataset.root.includes(Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=$copticFeasts.AnyDay'));
       redirectToAnotherMass(
         [...massButtons],
         {
@@ -711,8 +712,7 @@ const btnMassStBasil: Button = new Button({
         [...massButtons],
         {
           beforeOrAfter: "beforebegin",
-          el: btn.docFragment.querySelector(
-            getDataRootSelector(Prefix.massCommon + 'Agios&D=$copticFeasts.AnyDay')) as HTMLDivElement
+          el: btnDocFragmentChildren.filter(htmlRow=>htmlRow.dataset.root === Prefix.massCommon + 'Agios&D=$copticFeasts.AnyDay')[0]
         },
         'RedirectionToAgios'
       )
@@ -721,9 +721,9 @@ const btnMassStBasil: Button = new Button({
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
       let spasmos = PrayersArray.filter(table => table[0][0] === Prefix.massCommon + "StMaryAdamSpasmos&D=$Seasons.StMaryFast&C=Title");
       if (!spasmos) return
-      let anchor = btn.docFragment.querySelector('div[data-root="' + Prefix.massCommon + "DiaconResponseKissEachOther&D=$copticFeasts.AnyDay") as HTMLDivElement;
+      let anchor = btnDocFragmentChildren.filter(htmlRow=>htmlRow.dataset.root === Prefix.massCommon + "DiaconResponseKissEachOther&D=$copticFeasts.AnyDay")[0];
       
-      let spasmosDiv: HTMLDivElement = addExpandablePrayer(
+      addExpandablePrayer(
         anchor,
         'StMaryAdamSpasmos',
         {
@@ -733,13 +733,11 @@ const btnMassStBasil: Button = new Button({
         spasmos,
         btnMassStBasil.languages
       )[1];
-      //anchor.insertAdjacentElement('beforebegin', spasmosDiv);
     })();
     (function insertCommunionChants() {
       //Inserting the Communion Chants after the Psalm 150
-      let psalm = btn.docFragment.querySelectorAll(getDataRootSelector(Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay", false, 'div'));
+      let psalm = btnDocFragmentChildren.filter(htmlRow=> htmlRow.dataset.root === Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay");
   
-
       let filtered: string[][][] = CommunionPrayersArray.filter(tbl => {
         selectFromMultiDatedTitle(tbl[0][0], copticDate) === true
           || selectFromMultiDatedTitle(tbl[0][0], Season) === true
@@ -758,6 +756,42 @@ const btnMassStBasil: Button = new Button({
         'communionChants',
         undefined,
         psalm[psalm.length-1] as HTMLElement
+      )
+    })();
+    (function insertIndeedWePrayYou() {
+      if (btn !== btnMassStBasil) return; //This button appears only in St Basil Mass
+
+      let prayers: string[][][] = MassStGregoryPrayersArray.filter(tbl => tbl[0][0].startsWith(Prefix.massStGregory + "LitaniesIntroductionPart"));
+
+      if (prayers.length === 0) return;
+      
+      let kyrielieson = CommonPrayersArray.filter(tbl => tbl[0][0] ===
+        Prefix.commonPrayer + "KyrieElieson&D=$copticFeasts.AnyDay&C=Assembly")[0];
+      
+      for (let i = 1; i < prayers.length; i+=2){
+        console.log('i=', i, 'payers[i] = ', prayers[i]);
+        prayers.splice(i, 0, kyrielieson);
+      }
+    
+
+
+      let kyrielieson3Times = CommonPrayersArray.filter(tbl => tbl[0][0] === Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay&C=Assembly")[0];
+      
+      prayers.push(kyrielieson3Times);
+      console.log(prayers);
+
+      let anchor = btnDocFragmentChildren.filter(htmlRow=> htmlRow.dataset.root === Prefix.massCommon+"LitaniesIntroduction&D=$copticFeasts.AnyDay")[0];
+        
+      if (!anchor) return console.log('no anchor');
+      console.log('anchor = ', anchor);
+      addExpandablePrayer(anchor,
+        'btnIndeedWePrayYou',
+        {
+        defaultLanguage: "...نعم نسألك أيها المسيح إلهنا",
+        foreignLanguage: 'Oui, nous t\'implorons ô Christ notre Dieu...'
+      },
+        prayers,
+        btn.languages
       )
     })();
   },

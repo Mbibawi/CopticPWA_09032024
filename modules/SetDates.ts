@@ -353,22 +353,25 @@ function isItSundayOrWeekDay(
 /**
  * Shows the dates (Gregorian, coptic, coptic readings etc.), in an html element in the Temporary Dev Area
  */
-function showDates(dateDiv?:HTMLDivElement):HTMLDivElement {
-	if (!dateDiv) dateDiv = document.getElementById('dateDiv') as HTMLDivElement;
-	if (!dateDiv) dateDiv = containerDiv.insertAdjacentElement('beforebegin', document.createElement('div')) as HTMLDivElement;
-	dateDiv.classList.add('dateDiv');
-	dateDiv.id = 'dateDiv';
-	if (dateDiv && dateDiv.children.length > 0) return;
-	
+function showDates(dateDiv:HTMLDivElement = document.getElementById('dateDiv') as HTMLDivElement):HTMLDivElement {
+	if (!dateDiv) {
+		dateDiv = containerDiv.insertAdjacentElement('beforebegin', document.createElement('div')) as HTMLDivElement;
+		dateDiv.classList.add('dateDiv');
+		dateDiv.id = 'dateDiv'
+	};
+	if (!dateDiv) return;
+
 	//Inserting the Gregorian date
 	let date:string = 'Date: ' +
 	todayDate.getDate().toString() + '/' +
 	(todayDate.getMonth()+1).toLocaleString('en-US') + '/' +
 	(todayDate.getFullYear() + 1).toString()
 	
-	insertDateBox(date);
+	insertDateBox(date, 'gregorianDateBox');
+
 	//Inserting the home image after the dateBox
-	dateDiv.appendChild(document.getElementById('homeImg'));
+	if (!dateDiv.querySelector('#homeImg')) dateDiv.appendChild(document.getElementById('homeImg'));
+	
 	//Inserting the Coptic date
 	date = 'Coptic Date: ' +
 	copticDay + ' ' +
@@ -377,12 +380,17 @@ function showDates(dateDiv?:HTMLDivElement):HTMLDivElement {
 		'Readings date: ' + copticReadingsDate.slice(0, 2) + ' ' +
 		copticMonths[Number(copticReadingsDate.slice(2, 4))].EN;
 	
-	insertDateBox(date);
+	insertDateBox(date, 'copticDateBox');
 
-	function insertDateBox(date: string) {
+	function insertDateBox(date: string, id: string) {
+		let dateBox: HTMLDivElement = document.getElementById(id) as HTMLDivElement;
 		//Inserting a date box
-		let dateBox = dateDiv.appendChild(document.createElement('div'));
-		dateBox.style.display = 'block !important';
+		if(!dateBox){
+			dateBox = dateDiv.appendChild(document.createElement('div'))
+			dateBox.id = id
+			dateBox.style.display = 'block !important';
+		};
+		dateBox.innerHTML = ''; //we empty the div
 		let p = dateBox.appendChild(document.createElement('p'))
 		p.classList.add('dateBox');
 		p.innerText = date;
