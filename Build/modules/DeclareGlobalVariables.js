@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = 'v4.7 (added buton for \'Indeed we pray you\' نعم نسألك أيها المسيح الهنا)';
+const version = 'v4.6.4 (added buton for \'Indeed we pray you\' نعم نسألك أيها المسيح الهنا)';
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById('containerDiv');
 const leftSideBar = document.getElementById('leftSideBar');
