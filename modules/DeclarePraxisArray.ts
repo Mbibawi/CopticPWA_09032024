@@ -3405,13 +3405,13 @@ ReadingsArrays.PraxisArray = [[
   [
   [
   Prefix.praxis+"&D=1009&C=Title", 
-  " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار( 19: 23ـ 40 وحدث في ذلك الوقت اضطرابٌ ليس بقليل بسبب الطَّريق، لأن واحداً اسمه ديمتريوس، صائغ فضة صانع هياكل فضة لأرطاميس، كان يُربِّح الصُّنَّاع ربحاً ليس بقليل.", 
+  "إبركسيس فصل من أعمال آبائنا الرسل الأطهار ( 19: 23ـ 40)", 
   "Actes 19 : 23 - 40", 
   "Acts 19:23-41", 
   ], 
   [
   Prefix.praxis+"&D=1009", 
-  "", 
+  "وحدث في ذلك الوقت اضطرابٌ ليس بقليل بسبب الطَّريق، لأن واحداً اسمه ديمتريوس، صائغ فضة صانع هياكل فضة لأرطاميس، كان يُربِّح الصُّنَّاع ربحاً ليس بقليل.", 
   "23 C'est à cette époque que se produisirent des troubles assez graves à propos de la Voie. 24 Un orfèvre en effet, du nom de Démétrius, fabriquait des temples d'Artémis en argent et procurait ainsi aux artisans des gains très appréciables.", 
   "23 And about that time there arose a great commotion about the Way. 24 For a certain man named Demetrius, a silversmith, who made silver shrines of Diana, brought no small profit to the craftsmen.", 
   ], 

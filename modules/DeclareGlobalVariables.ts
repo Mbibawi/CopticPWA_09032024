@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.7 (added buton for \'Indeed we pray you\' نعم نسألك أيها المسيح الهنا)';
+const version: string = 'v4.6.5 (added children buttons for book of prayers, added selectElementsByDataRoot(), made changes to the editingMode, new Table, and processing edited tables)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar: HTMLElement = document.getElementById('leftSideBar');
@@ -198,6 +198,44 @@ const ReadingsIntrosAndEnds = {
         EN: 'We are the theday day of the themonth of () ',
     },
 };
+const bookOfHoursLabels:{id:string, AR:string, FR:string, EN:string}[] =  [
+    {
+      id: 'Dawn',
+      AR: 'باكر',
+      FR: 'Aube',
+      EN: 'Dawn'
+    },
+    {
+      id: 'ThirdHour',
+      AR: 'الساعة الثالثة',
+      FR: '3ème heure',
+      EN: 'Third Hour'
+    },
+    {
+      id: 'SixthHour',
+      AR: 'الساعة السادسة',
+      FR: '6ème heure',
+      EN: '6th Hour'
+    },
+    {
+      id: 'NinethHour',
+      AR: 'الساعة التاسعة',
+      FR: '9ème heure',
+      EN: '9th Hour'
+    },
+    {
+      id: 'EleventhHour',
+      AR: 'الساعة الحادية عشر (الغروب)',
+      FR: '11ème heure',
+      EN: '11th Hour'
+    },
+    {
+      id: 'TwelvethHour',
+      AR: 'الساعة الثانية عشر (النوم)',
+      FR: '12ème heure',
+      EN: '12th Hour'
+    },
+  ];
 const ReadingsArrays = {
     PraxisArray: [],
     KatholikonArray: [],
@@ -208,7 +246,7 @@ const ReadingsArrays = {
     GospelDawnArray: [],
     GospelNightArray: [],
     PropheciesDawnArray: [],
-};   
+};
 const Seasons = {
     //Seasons are periods of more than 1 day, for which we have specific prayers (e.g.: cymbal verses, doxologies, praxis response, etc.)
     StMaryFast: 'StMFast', //stands for Saint Mary Feast

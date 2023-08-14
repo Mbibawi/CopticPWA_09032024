@@ -1194,19 +1194,46 @@ async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:
  * Collapses all the tiltes (i.e. all the divs with class 'Title' or 'SubTitle') in the html element passed as argument
  * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'Title' or 'SubTitle'
  */
-function collapseAllTitles(container: HTMLElement | DocumentFragment) {
+function collapseAllTitles(htmlRows: HTMLDivElement[]) {
+  if (!htmlRows || htmlRows.length === 0) return;
   if (localStorage.displayMode === displayModes[1]) return;
-  container.querySelectorAll('div')
+  htmlRows
     .forEach((row:HTMLElement) => {
       if (!row.classList.contains('Title')
-        && !row.classList.contains('SubTitle')){
+        && !row.classList.contains('SubTitle')) {
         row.classList.add('collapsedTitle');
       } else {
         row.dataset.isCollapsed = 'true';
         togglePlusAndMinusSignsForTitles(row);
       }
     });
+}
+/**
+ * Creates an array from all the children of a given html element (container), and filteres the array based on the data-root attribute provided, and on the criteria provided in options
+ * @param {HTMLElement | DocumentFragment} container - the html element containing the children that we want to filter based on their data-root attributed
+ * @param {string} dataRoot - the data-root attribute based on which we want to filter the children of container
+ * @param {{equal?:boolean, includes?:boolean, startsWith?:boolean, endsWith?:boolean}} options - the criteria according to which we want the data-root attribute of each child element to mach dataRoot: absolutely equal (===)? startsWith(dataRoot)?, etc.
+ * @returns {HTMLDivElement[]} - the children of container filtered based on their data-root attributes
+ */
+function selectElementsByDataRoot(container: HTMLElement | DocumentFragment, dataRoot: string, options: {equal?:boolean, includes?:boolean, startsWith?:boolean, endsWith?:boolean}):HTMLDivElement[] {
+  let children = Array.from(container.children) as HTMLDivElement[];
+  if (options.equal) {
+    return children.filter(htmlRow =>
+      htmlRow.tagName === 'DIV' && htmlRow.dataset.root && htmlRow.dataset.root === dataRoot)
   }
+  else if (options.includes) {
+    return children.filter(htmlRow =>
+      htmlRow.tagName === 'DIV' && htmlRow.dataset.root && htmlRow.dataset.root.includes(dataRoot))
+  }
+  else if (options.startsWith) {
+    return children.filter(htmlRow =>
+      htmlRow.tagName === 'DIV' && htmlRow.dataset.root && htmlRow.dataset.root.startsWith(dataRoot))
+  }
+  else if (options.endsWith) {
+    return children.filter(htmlRow =>
+      htmlRow.tagName === 'DIV' && htmlRow.dataset.root && htmlRow.dataset.root.endsWith(dataRoot))
+  }
+}
 
 /**
  *
@@ -1444,12 +1471,10 @@ function showSettingsPanel() {
   let btn: HTMLElement;
   //Show current version
 
-
-
-  
+ 
 
     if (!inlineBtnsDiv.querySelector('#dateDiv'))
-    inlineBtnsDiv.appendChild(showDates().cloneNode()) as HTMLElement;
+    //inlineBtnsDiv.appendChild(document.getElementById('#dateDiv').cloneNode()) as HTMLElement;
 
 
   //Show InstallPWA button//We are not calling it any more
@@ -2038,24 +2063,6 @@ function getDataRootSelector(root: string, isLike: boolean = false, htmlTag:stri
       return htmlTag + '[data-root="' + root + '"]';
   }
 
-/**
- * Takes a collection of html elements and moves it adjacent to a given child html element to containerDiv
- * @param {string} targetElementRoot - the data-root value of the html element adjacent to which the block will be moved
- * @param {InsertPosition} position - the position at which the block of html elements will be moved in relation to the specified html element
- * @param {NodeListOf<Element>} block - a list of html elements that will be moved to the specified 'position' in relation to another html element in the containerDiv
- */
-async function moveBlockOfRowsAdjacentToAnElement(
-  targetElementRoot: string,
-  position: InsertPosition,
-  block: NodeListOf<Element>
-) {
-  Array.from(block).map((r) =>
-    containerDiv
-      .querySelector(getDataRootSelector(targetElementRoot))
-      .insertAdjacentElement(position, r as HTMLElement)
-  );
-  contentDiv.querySelectorAll(".class");
-}
 /**
  * Replaces the css class class of all tables in an array of tables (i.e., a string[][][]). The css class is added as a suffix to the title of each table, preceded by '&C='
  * @param {string[][][]} prayersArray - the array of tables 

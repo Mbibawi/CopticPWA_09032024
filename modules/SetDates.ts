@@ -353,7 +353,7 @@ function isItSundayOrWeekDay(
 /**
  * Shows the dates (Gregorian, coptic, coptic readings etc.), in an html element in the Temporary Dev Area
  */
-function showDates(dateDiv:HTMLDivElement = document.getElementById('dateDiv') as HTMLDivElement):HTMLDivElement {
+function showDates(dateDiv: HTMLDivElement = document.getElementById('dateDiv') as HTMLDivElement): HTMLDivElement {
 	if (!dateDiv) {
 		dateDiv = containerDiv.insertAdjacentElement('beforebegin', document.createElement('div')) as HTMLDivElement;
 		dateDiv.classList.add('dateDiv');
@@ -377,8 +377,20 @@ function showDates(dateDiv:HTMLDivElement = document.getElementById('dateDiv') a
 	copticDay + ' ' +
 	copticMonths[Number(copticMonth)].EN + ' ' +
 		copticYear + ' \n' +
-		'Readings date: ' + copticReadingsDate.slice(0, 2) + ' ' +
-		copticMonths[Number(copticReadingsDate.slice(2, 4))].EN;
+		'Readings date: ' +
+		(() => {
+		if (copticReadingsDate.startsWith(Seasons.GreatLent)) return 'Day ' + copticReadingsDate.split(Seasons.GreatLent)[1] + 'of the Great Lent';
+
+		if (copticReadingsDate.startsWith(Seasons.PentecostalDays)) return 'Day ' + copticReadingsDate.split(Seasons.PentecostalDays)[1] + ' of the 50 Pentecostal Days';
+		
+		if (copticReadingsDate.endsWith('Sunday')
+		&& copticMonths[Number(copticReadingsDate.slice(0, 2))]) return copticMonths[Number(copticReadingsDate.slice(0, 2))].EN + ' ' + copticReadingsDate.slice(2, copticReadingsDate.length).split('Sunday')[0] + ' Sunday';
+		
+		if (copticMonths[Number(copticReadingsDate.slice(2, 4))]) return copticReadingsDate.slice(0, 2) + ' ' +
+			copticMonths[Number(copticReadingsDate.slice(2, 4))].EN;
+		
+		return '';
+		})();
 	
 	insertDateBox(date, 'copticDateBox');
 
@@ -389,10 +401,10 @@ function showDates(dateDiv:HTMLDivElement = document.getElementById('dateDiv') a
 			dateBox = dateDiv.appendChild(document.createElement('div'))
 			dateBox.id = id
 			dateBox.style.display = 'block !important';
+			dateBox.classList.add('dateBox');
 		};
 		dateBox.innerHTML = ''; //we empty the div
-		let p = dateBox.appendChild(document.createElement('p'))
-		p.classList.add('dateBox');
+		let p = dateBox.appendChild(document.createElement('p'));
 		p.innerText = date;
 	}
 	

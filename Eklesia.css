@@ -31,6 +31,7 @@
   justify-items: stretch;
   max-width: 100vw;
   margin:0px 0px;
+  align-content: center;
 }
 .inlineBtnsContainer{
   display:none;
@@ -185,8 +186,8 @@ justify-self: center;
 .homeImg{
 align-self: center;
 justify-self: center;
-  margin-top: 5px;
-  width: 33%;
+margin-top: 5px;
+width: 40%;
 }
 
 
@@ -628,28 +629,34 @@ table{
 
 .dateDiv{
   display:grid;
-  grid-template-columns: 40% 30% 40%;
-  row-gap: 10px;
+  grid-template-columns: 34% 29% 34%;
+  max-height: 15%;
   margin-bottom: 5px;
+  width: 97%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  justify-self: stretch;
 }
 .dateBox{
-  display:grid;
-  background-color: #d84f008a;
+  display:block;
+  background-color: #0000008a !important;
   color:rgb(255, 255, 255);
-  opacity: 95%;
-  width:70%;
-  margin: 3px 3px;
-  font-size: 10pt;
+  font-size: 8pt;
   font-weight: bold;
   font-style: italic;
   line-height: normal;
   border-style: groove;
-  border-color: #7E3B10;
+  border-color: #422121;
   border-radius: 5px;
-  margin-bottom: 5px;
   padding: 4px 4px;
+  margin-left:40px; 
+  margin-right:40px;
+  justify-self: stretch;
+
 
 }
+
 
 .langBtnAdd{
   background-color: red !important;
@@ -664,10 +671,10 @@ table{
 div.ReadingIntro{
   background-color: darkgoldenrod;
   margin-top: 0px;
-  border-top: #111 solid 2pt;
-  border-bottom: #111 solid 2pt;
-  border-left: #111 solid 2pt;
-  border-right: #111 solid 2pt;
+ /* border-top: #111 solid 2pt;
+  border-bottom: #111 solid 2pt;*/
+  border-left: #111 solid 4pt;
+  border-right: #111 solid 4pt;
 }
 div.ReadingEnd{
   background-color: burlywood;
