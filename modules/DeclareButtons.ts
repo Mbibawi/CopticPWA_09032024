@@ -1230,7 +1230,9 @@ const btnMassUnBaptised: Button = new Button({
       )
       
       btnsDiv.style.display = 'grid';
-      btnsDiv.style.gridTemplateColumns = ((100/hoursBtns.length).toString() + '% ').repeat(hoursBtns.length)
+      let x = hoursBtns.length;
+      if (x > 3) x = 3;//we limit the number of columns to 3
+      if (x>1) btnsDiv.style.gridTemplateColumns = ((100/x).toString() + '% ').repeat(x)
     })();
 
     
