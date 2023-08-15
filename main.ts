@@ -171,13 +171,13 @@ function createHtmlElementForPrayer(
  * @param {boolean} clear - indicates whether the side bar where the links will be inserted, must be cleared before insertion
  */
 async function showTitlesInRightSideBar(
-  titlesCollection: NodeListOf<HTMLElement>,
+  titlesCollection: HTMLDivElement[],
   rightTitlesDiv?: HTMLElement,
   clear: boolean = true
 ) {
   let titlesArray: HTMLDivElement[] = [];
   //this function shows the titles in the right side Bar
-  if (!rightTitlesDiv) rightTitlesDiv = rightSideBar.querySelector("#sideBarBtns");
+  if (!rightTitlesDiv) rightTitlesDiv = sideBarTitlesContainer;
   
   if (clear) {
     rightTitlesDiv.innerHTML = "";
@@ -189,7 +189,7 @@ async function showTitlesInRightSideBar(
   }
   /**
    * Adds shortcuts to the diffrent sections by redirecting to the title of the section
-   * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given langauge
+   * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given language
    */
   function addTitle(titlesRow: HTMLElement):HTMLDivElement {
     let text: string = "",
@@ -249,11 +249,10 @@ function showChildButtonsOrPrayers(
   if (!btn) return;
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;
-
-  let btnsDiv: HTMLElement = leftSideBar.querySelector("#sideBarBtns");
+;
   hideInlineButtonsDiv();
   if (clear) {
-    btnsDiv.innerHTML = "";
+    sideBarBtnsContainer.innerHTML = "";
     inlineBtnsDiv.innerHTML = "";
     containerDiv.style.gridTemplateColumns = "100%";
   }
@@ -289,24 +288,23 @@ function showChildButtonsOrPrayers(
       //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
       if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
       //We create the html element reprsenting the childBtn and append it to btnsDiv
-      createBtn(childBtn, btnsDiv, childBtn.cssClass); 
+      createBtn(childBtn, sideBarBtnsContainer, childBtn.cssClass); 
     });
   }
 
-  showTitlesInRightSideBar(container.querySelectorAll("div.Title")
-  );
+  showTitlesInRightSideBar(Array.from(container.querySelectorAll("div.Title")) as HTMLDivElement[]);
 
   if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
     //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
     //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
-    createGoBackBtn(btn.parentBtn, btnsDiv, btn.cssClass);
+    createGoBackBtn(btn.parentBtn, sideBarBtnsContainer, btn.cssClass);
     lastClickedButton = btn;
   }
   if (btn.btnID !== btnMain.btnID //The button itself is not btnMain
     && btn.btnID !== btnGoBack.btnID //The button itself is not btnGoBack
-    && !btnsDiv.querySelector('#' + btnMain.btnID) //No btnMain is displayed in the sideBar
+    && !sideBarBtnsContainer.querySelector('#' + btnMain.btnID) //No btnMain is displayed in the sideBar
   ) {
-    createBtn(btnMain, btnsDiv, btnMain.cssClass);
+    createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
     let image = document.getElementById("homeImg");
     if (image) {
       document.getElementById("homeImg").style.width = "20vmax";
@@ -1014,7 +1012,7 @@ function showPrayers(
 
   if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) closeSideBar(leftSideBar);
   if (clearContent) containerDiv.innerHTML = "";
-  if (clearRightSideBar) rightSideBar.querySelector("#sideBarBtns").innerHTML = "";    //this is the right side bar where the titles are displayed for navigation purposes
+  if (clearRightSideBar) sideBarTitlesContainer.innerHTML = "";    //this is the right side bar where the titles are displayed for navigation purposes
 
   let date: string;
   return btn.prayersSequence

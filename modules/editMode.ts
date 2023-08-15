@@ -109,8 +109,8 @@ Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
       p.innerText = p.innerText.replaceAll(String.fromCharCode(plusCharCode + 1), '')
   ));
 
-showTitlesInRightSideBar(
-  containerDiv.querySelectorAll("div.Title, div.SubTitle"));
+showTitlesInRightSideBar(Array.from(
+  containerDiv.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
 }
 
 /**
@@ -958,7 +958,7 @@ function showTablesFun(arrayName: string, title: string) {
     //Showing the titles in the right side-bar
     hideInlineButtonsDiv();
     showTitlesInRightSideBar(
-      containerDiv.querySelectorAll("div.Title, div.SubTitle"));
+      Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
 }
 
 /**

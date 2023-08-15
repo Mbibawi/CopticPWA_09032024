@@ -175,7 +175,7 @@ const btnMain: Button = new Button({
       'url(./assets/btnBOHBackground.jpg)',
     ];
     containerDiv.innerHTML = '';
-    containerDiv.style.gridTemplateColumns = ((100 / 3).toString() + '% ').repeat(3);
+    containerDiv.style.gridTemplateColumns = ((100/ 3).toString() + '% ').repeat(3);
     
     btnMain.children
       .map(btn => {
@@ -192,7 +192,7 @@ const btnMain: Button = new Button({
       });
       
     function onClickBtnFunction(btn:Button) {
-      if (!btn.children) btn.onClick({ returnBtnChildren: true });//if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
+      if (!btn.children || btn.children.length ===0) btn.onClick({ returnBtnChildren: true });//if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
         let parentHtmlBtn = containerDiv.querySelector('#' + btn.btnID) as HTMLElement;
         let backgroundImage;
 
@@ -1039,7 +1039,6 @@ const btnMassUnBaptised: Button = new Button({
       (function insertPraxisResponse() {
         let praxis: HTMLElement[] =
           selectElementsByDataRoot(btnMassUnBaptised.docFragment, Prefix.praxis + '&D=', { startsWith: true });
-          console.log('praxis readings ', praxis)
         
         if (praxis.length === 0) return;
 
@@ -1152,7 +1151,6 @@ const btnMassUnBaptised: Button = new Button({
 
       let bookOfHours: string[][][] = [];
       hoursBtns.forEach(btn => bookOfHours.push(...btn.prayersArray));
-      console.log('bookOfHours', bookOfHours);
 
       let btnsDiv: HTMLDivElement = document.createElement('div');
       btnsDiv.classList.add('inlineBtns');
@@ -1185,15 +1183,59 @@ const btnMassUnBaptised: Button = new Button({
 
           createdButton.addEventListener(
             'click',
-            () => {
-              rightSideBar
-                .querySelectorAll('div[data-group="bookOfHoursTitle"]')
-                .forEach(
-                  (titleDiv: HTMLDivElement) => {
-                    titleDiv.classList.toggle('collapsedTitle');
-                  });
-              });
-            
+              ()=>showTitles('#bookOfHours' + btn.btnID + 'Expandable'));
+
+          async function showTitles(id: string) {
+            //!CAUTION: we had to pass the id instead of the createdContainer itself, because the refrence to createdContainer is not maintained for each button. It keeps the reference to the last created button. Until we find a way to bind it, we use the id of the createdContainer in order to retrieve it later
+            let BOHContainer = containerDiv.querySelector(id);
+            console.log('BOHContainer', BOHContainer.id);
+                let sideBarChildren = Array.from(sideBarTitlesContainer.children) as HTMLDivElement[];
+                //We remove the already existing title for this hour
+            sideBarChildren.filter(htmlDiv =>
+              htmlDiv.children[0]
+              //@ts-ignore
+              && htmlDiv.children[0].href.includes(Prefix.bookOfHours)).forEach(titleDiv=>titleDiv.remove());
+
+  
+                //Removing any other Book of Hours titles, if previously added when the button was clicked
+                let anchorsDivs = sideBarChildren.filter(htmlDiv =>
+                  htmlDiv.dataset.group === 'bookOfHoursTitle');
+  
+                anchorsDivs.forEach(anchor => anchor.remove());
+  
+                let btnTitles =
+                  Array.from(BOHContainer.children)
+                    .filter((htmlRow: HTMLDivElement) => htmlRow.classList.contains('Title') || htmlRow.classList.contains('SubTitle')) as HTMLDivElement[];
+                
+                    //Moving the newly created titles to the top of the sideBar menu, and giving each of them a data-group = 'bookOfHoursTitle'
+                let addedTitles = await showTitlesInRightSideBar(btnTitles, undefined, false);
+                addedTitles.reverse().forEach(titleDiv => {
+                  sideBarTitlesContainer.prepend(titleDiv);
+                  titleDiv.dataset.group = 'bookOfHoursTitle';
+                });
+  
+                //hiding the expandable divs of the other buttons, if they were expanded before
+            hideOtherExpandables();
+            function hideOtherExpandables(){
+                    let expandables =
+                    Array.from(containerDiv.children)
+                      .filter((htmlRow: HTMLDivElement) =>
+                        htmlRow.id.endsWith('Expandable')) as HTMLDivElement[];
+                        console.log('expandables = ', expandables);
+                  if (expandables.length === 0) return;
+            expandables
+              .forEach(container => {
+                        if (container.id === 'bookOfHours' + btn.btnID + 'Expandable') return;
+                        container.classList.add('collapsedTitle');
+              })
+            };
+};
+
+              (function hideAllOtherExpandableDivs() {
+                //if (!args.isMass) return; //This function only runs when the buttons are shown in a Mass context (i.e., when the prayers are hidden and shown upon clicking the button)
+                
+              })();
+              
               createdContainer
                 .querySelectorAll('div.SubTitle')
                 .forEach((subTitle: HTMLElement) => collapseText(subTitle, createdContainer));
@@ -1203,28 +1245,12 @@ const btnMassUnBaptised: Button = new Button({
                   Array.from(createdContainer.querySelectorAll('div.Row'))
                     .filter((row: HTMLElement) => row.dataset.root.includes('HourPsalm') || row.dataset.root.includes('EndOfHourPrayer'))
                     .forEach(row => row.remove());//we remove all the psalms and keep only the Gospel and the Litanies,
-                  Array.from(rightSideBar.querySelector('#sideBarBtns')
-                      .querySelectorAll('div.Row'))
-                    .filter((row: HTMLElement) =>row.dataset.root.includes('HourPsalm') || row.dataset.root.includes('EndOfHourPrayer'))
+                  Array.from(sideBarTitlesContainer.children)
+                    .filter((row: HTMLDivElement) =>
+                      row.dataset.root.includes('HourPsalm')
+                    || row.dataset.root.includes('EndOfHourPrayer'))
                     .forEach(row => row.remove());//We do the same for the titles
                 }
-
-                      //We will append the titles of the Book of Hours to the right side Bar, with a display 'none'
-      let titles = await showTitlesInRightSideBar(
-        createdContainer.querySelectorAll('div.SubTitle'), undefined, false);
-    
-      titles
-            .reverse()
-            .forEach(
-              (title: HTMLDivElement) => {
-                title.dataset.group = 'bookOfHoursTitle';
-                title.style.display = 'block';
-                rightSideBar
-                  .querySelector('#sideBarBtns')
-                  .children[0]
-                  .insertAdjacentElement('beforebegin', title);
-                title.classList.add('collapsedTitle');//We add the 'collapsedTitle' class in order to match the status of createdContainer (i.e., hide the titles until the button is pressed)
-              });
           
           }
       )
@@ -1481,7 +1507,6 @@ const btnBookOfHours:Button =  new Button({
         docFragment:new DocumentFragment(),
         showPrayers: true,
         languages: [...prayersLanguages],
-        children:[],
   onClick: (args: { returnBtnChildren?: boolean, isMass: boolean }={isMass:false}) => {
    let
       Kenin: string =
@@ -1544,7 +1569,7 @@ const btnBookOfHours:Button =  new Button({
     return commonPrayers
     };
 
-    (function appendChildButtonForEachHour() {
+    (function addAChildButtonForEachHour() {
         let btn: typeButton;
       
         for (let hour in bookOfHours) {
@@ -1564,7 +1589,7 @@ const btnBookOfHours:Button =  new Button({
           let createdBtn = new Button(btn);
           //Adding the onClick() property to the button
           createdBtn.onClick =
-            (args: { returnBtnChildren?: boolean, isMass: boolean }, newButton: Button = createdBtn) => {
+            (args: { returnBtnChildren?: boolean, isMass: boolean}, newButton: Button = createdBtn) => {
       
             (function buildBtnPrayersSequence() {
               newButton.prayersSequence =
@@ -1637,23 +1662,7 @@ const btnBookOfHours:Button =  new Button({
       };
     })();
     
-    (function removeActorsFromPrayersArrays() {
-      if(args.returnBtnChildren || args.isMass) return
-      btnBookOfHours.children
-        .forEach(childBtn => {
-          childBtn.prayersArray
-            .forEach(tbl => {
-              tbl.forEach(row => {
-                if (!row[0].endsWith('&C=Title') && !row[0].endsWith('&C=SubTitle')) {
-                  row[0] = splitTitle(row[0])[0];
-                    console.log(row[0]);
-                }
-            })
-          })
-      })
-    })();
- 
-    if (args.returnBtnChildren) return btnBookOfHours.children;
+
     
     if (args.isMass) {
         //args.mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
@@ -1672,9 +1681,23 @@ const btnBookOfHours:Button =  new Button({
       }
       return hours
     };
-    
 
-
+    if (args.returnBtnChildren) return btnBookOfHours.children;
+  
+    (function removeActorsFromPrayersArrays() {
+      //When showing just the Book of Prayers independant of any Mass context, we remove all the actors classes from the prayersArray of all the buttons
+      if(args.returnBtnChildren || args.isMass) return
+      btnBookOfHours.children
+        .forEach(childBtn => {
+          childBtn.prayersArray
+            .forEach(tbl => {
+              tbl.forEach(row => {
+                if (row[0].endsWith('&C=Title') || row[0].endsWith('&C=SubTitle')) return;
+                  row[0] = splitTitle(row[0])[0];
+            })
+          })
+      })
+    })();
 
     scrollToTop();
     return btnBookOfHours.prayersSequence;
