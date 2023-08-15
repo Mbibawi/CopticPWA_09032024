@@ -1538,7 +1538,7 @@ const btnBookOfHours:Button =  new Button({
         showPrayers: true,
         languages: [...prayersLanguages],
   onClick: (returnBtnChildren: boolean = false) => {
-   let
+   let 
       Kenin: string =
         Prefix.commonPrayer + 'NowAlwaysAndForEver&D=$copticFeasts.AnyDay',
       ZoksaPatri: string =
@@ -1552,7 +1552,8 @@ const btnBookOfHours:Button =  new Button({
       WeExaltYou:string =
         Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay',
      Agios: string =
-        Prefix.commonPrayer+ 'HolyGodHolyPowerfullPart',
+       Prefix.commonPrayer + 'HolyGodHolyPowerfullPart',
+     Kyrielison41Times:string = Prefix.commonPrayer+'Kyrielison41Times&D=$copticFeasts.AnyDay',
       HolyLordOfSabaot :string=
         Prefix.commonPrayer + 'HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay',
       Creed:string =
@@ -1590,6 +1591,7 @@ const btnBookOfHours:Button =  new Button({
          || splitTitle(table[0][0])[0] === Creed
          || splitTitle(table[0][0])[0] === OurFatherWhoArtInHeaven
          || splitTitle(table[0][0])[0] === AngelsPrayers
+         || splitTitle(table[0][0])[0] === Kyrielison41Times
          || splitTitle(table[0][0])[0].startsWith(Agios)
        || new RegExp(Prefix.commonPrayer + 'ThanksGivingPart\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(splitTitle(table[0][0])[0])
        || new RegExp(Agios + '\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(splitTitle(table[0][0])[0])
@@ -1628,7 +1630,7 @@ const btnBookOfHours:Button =  new Button({
       
             (function buildBtnPrayersSequence() {
               //We will add the prayers sequence to btn.prayersSequence[]
-              let endOfPrayer: string[] = [AngelsPrayers, Agios + '1&D=$copticFeasts.AnyDay', Agios + '2&D=$copticFeasts.AnyDay',OurFatherWhoArtInHeaven, HailToYouMaria, WeExaltYou, Creed, HolyLordOfSabaot, OurFatherWhoArtInHeaven];
+              let endOfPrayer: string[] = [AngelsPrayers, Agios + '1&D=$copticFeasts.AnyDay', Agios + '2&D=$copticFeasts.AnyDay',OurFatherWhoArtInHeaven, HailToYouMaria, WeExaltYou, Creed, Kyrielison41Times, HolyLordOfSabaot, OurFatherWhoArtInHeaven];
 
               btn.prayersSequence =
                 bookOfHours[hour]
@@ -1637,7 +1639,7 @@ const btnBookOfHours:Button =  new Button({
               if (hourName !== 'Dawn' && hourName !=='TwelvethHour') {
                 //We don't add the End of All Hours Prayers to the 'Dawn' Prayer, because it is already attached to it by default (: its title includes '1stHour')
                 btn.prayersSequence
-                  .splice(btn.prayersSequence.length - 1, 0, HolyLordOfSabaot, OurFatherWhoArtInHeaven);
+                  .splice(btn.prayersSequence.length - 1, 0, Kyrielison41Times, HolyLordOfSabaot, OurFatherWhoArtInHeaven);
                 btn.prayersSequence.push(EndOfAllHours);
               };
               
