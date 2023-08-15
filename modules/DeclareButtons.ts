@@ -956,7 +956,7 @@ const btnMassUnBaptised: Button = new Button({
       )[1];
       
       createdDiv.classList.add('Row');
-      createdDiv.children[0].classList.remove('collapsedTitle');
+      createdDiv.children[0].classList.remove(hidden);
       //@ts-ignore
       createdDiv.children[0].dataset.root = dataRoot + 'Collapsable';
   
@@ -1148,71 +1148,74 @@ const btnMassUnBaptised: Button = new Button({
     })();   
     (async function insertBookOfHoursButton() {
       let hoursBtns:Button[] = btnBookOfHours.onClick({isMass:true}); //We get buttons for the relevant hours according to the day
+      let bookOfHoursMasterDiv = document.createElement('div');//This is the div that will contain the master button which shows or hides the Book of Hours sub buttons
+      bookOfHoursMasterDiv.classList.add('inlineBtns');
+      bookOfHoursMasterDiv.id = 'masterBOHBtn';
 
-      let bookOfHours: string[][][] = [];
-      hoursBtns.forEach(btn => bookOfHours.push(...btn.prayersArray));
-
-      let btnsDiv: HTMLDivElement = document.createElement('div');
+      let btnsDiv: HTMLDivElement = document.createElement('div');//This is the div that contains the sub buttons for each Hour of the Book of Hours
       btnsDiv.classList.add('inlineBtns');
-      btnsDiv.id = 'bookOfHoursBtns';
+      btnsDiv.classList.add(hidden);
+
+      let masterBtn = new Button({
+        btnID: 'BOH_Master',
+        label: {
+          defaultLanguage: 'الأجبية',
+          foreignLanguage: 'Agpia'
+        },
+        onClick: () => { btnsDiv.classList.toggle(hidden) }
+      });
       
-      btnMassUnBaptised.docFragment.prepend(btnsDiv);
+      bookOfHoursMasterDiv.prepend(createBtn(masterBtn, bookOfHoursMasterDiv, 'inlineBtn', true, masterBtn.onClick));//We add the master button as 1st element of bookOfHoursMasterDiv
 
       let createdElements: [HTMLElement, HTMLDivElement];
-      let createdContainer: HTMLDivElement;
-      let createdButton: HTMLElement;
 
+              //We will create a button and an expandable div for each hour
       hoursBtns
       .reverse()
-        .forEach(async (btn) =>{
+        .forEach(async (btn) => {
           btn.prayersArray =
           btn.prayersArray
-              .filter(tbl => !tbl[0][0].includes('ThanksGiving') && !tbl[0][0].includes('Psalm50'));
+              .filter(tbl => !tbl[0][0].includes('ThanksGiving') && !tbl[0][0].includes('Psalm50'));//We remove the 'Thanks Giving' (فلنشكر صانع الخيرات) and Psalm 50 (المزمور الخمسين) from the array
 
               createdElements = addExpandablePrayer(
-                btnMassUnBaptised.docFragment.children[1] as HTMLDivElement, //We insert the btn div after the 1st element which is btnsDiv that we created
+                btnDocFragment.children[0] as HTMLDivElement,
                 'bookOfHours' + btn.btnID,
                 btn.label,
                 btn.prayersArray,
                 btnBookOfHours.languages
           );
-          createdButton = createdElements[0];
-          createdContainer = createdElements[1];
-              
-          btnsDiv.appendChild(createdButton);//We add all the buttons to the same div instead of 3 divs;
+             
+          btnsDiv.appendChild(createdElements[0]);//We add all the buttons to the same div instead of 3 divs;
 
-          createdButton.addEventListener(
+          createdElements[0].addEventListener(
             'click',
               ()=>showTitles('#bookOfHours' + btn.btnID + 'Expandable'));
 
           async function showTitles(id: string) {
-            //!CAUTION: we had to pass the id instead of the createdContainer itself, because the refrence to createdContainer is not maintained for each button. It keeps the reference to the last created button. Until we find a way to bind it, we use the id of the createdContainer in order to retrieve it later
+            //!CAUTION: we had to pass the id of the expandable Div instead of the div itself, because the refrence to the div is not maintained for each button. It keeps the reference to the last created button. Until we find a way to bind it, we use the id of the createdContainer in order to retrieve it later
             let BOHContainer = containerDiv.querySelector(id);
-            console.log('BOHContainer', BOHContainer.id);
                 let sideBarChildren = Array.from(sideBarTitlesContainer.children) as HTMLDivElement[];
                 //We remove the already existing title for this hour
-            sideBarChildren.filter(htmlDiv =>
-              htmlDiv.children[0]
-              //@ts-ignore
-              && htmlDiv.children[0].href.includes(Prefix.bookOfHours)).forEach(titleDiv=>titleDiv.remove());
+            
+            //When the button is clicked, we remove all the book of hours titles
+            sideBarChildren.filter(htmlDiv => htmlDiv.dataset.group.startsWith(Prefix.bookOfHours))
+              .forEach(titleDiv => titleDiv.remove());
+            
+            if (!BOHContainer.classList.contains(hidden)){
+              //If BOHContainer is not hidden, we add its titles to the right sideBar
+              let btnTitles =
+                Array.from(BOHContainer.children)
+                .filter((htmlRow: HTMLDivElement) => htmlRow.classList.contains('Title') || htmlRow.classList.contains('SubTitle')) as HTMLDivElement[];
 
-  
-                //Removing any other Book of Hours titles, if previously added when the button was clicked
-                let anchorsDivs = sideBarChildren.filter(htmlDiv =>
-                  htmlDiv.dataset.group === 'bookOfHoursTitle');
-  
-                anchorsDivs.forEach(anchor => anchor.remove());
-  
-                let btnTitles =
-                  Array.from(BOHContainer.children)
-                    .filter((htmlRow: HTMLDivElement) => htmlRow.classList.contains('Title') || htmlRow.classList.contains('SubTitle')) as HTMLDivElement[];
-                
-                    //Moving the newly created titles to the top of the sideBar menu, and giving each of them a data-group = 'bookOfHoursTitle'
-                let addedTitles = await showTitlesInRightSideBar(btnTitles, undefined, false);
-                addedTitles.reverse().forEach(titleDiv => {
+
+            let addedTitles = await showTitlesInRightSideBar(btnTitles, undefined, false, BOHContainer.id);
+            addedTitles
+              .reverse()
+              .forEach(titleDiv => {
+                //Moving the title to the top of the sideBar menu, and giving each of them a data-group = 'bookOfHoursTitle'
                   sideBarTitlesContainer.prepend(titleDiv);
-                  titleDiv.dataset.group = 'bookOfHoursTitle';
-                });
+              });
+            }
   
                 //hiding the expandable divs of the other buttons, if they were expanded before
             hideOtherExpandables();
@@ -1221,28 +1224,22 @@ const btnMassUnBaptised: Button = new Button({
                     Array.from(containerDiv.children)
                       .filter((htmlRow: HTMLDivElement) =>
                         htmlRow.id.endsWith('Expandable')) as HTMLDivElement[];
-                        console.log('expandables = ', expandables);
                   if (expandables.length === 0) return;
             expandables
               .forEach(container => {
                         if (container.id === 'bookOfHours' + btn.btnID + 'Expandable') return;
-                        container.classList.add('collapsedTitle');
+                        container.classList.add(hidden);
               })
             };
 };
-
-              (function hideAllOtherExpandableDivs() {
-                //if (!args.isMass) return; //This function only runs when the buttons are shown in a Mass context (i.e., when the prayers are hidden and shown upon clicking the button)
-                
-              })();
               
-              createdContainer
+              createdElements[1]
                 .querySelectorAll('div.SubTitle')
-                .forEach((subTitle: HTMLElement) => collapseText(subTitle, createdContainer));
+                .forEach((subTitle: HTMLElement) => collapseText(subTitle, createdElements[1]));
 
                 if (localStorage.displayMode === displayModes[1]) {
                   //If we are in the 'Presentation Mode'
-                  Array.from(createdContainer.querySelectorAll('div.Row'))
+                  Array.from(createdElements[1].querySelectorAll('div.Row'))
                     .filter((row: HTMLElement) => row.dataset.root.includes('HourPsalm') || row.dataset.root.includes('EndOfHourPrayer'))
                     .forEach(row => row.remove());//we remove all the psalms and keep only the Gospel and the Litanies,
                   Array.from(sideBarTitlesContainer.children)
@@ -1250,11 +1247,13 @@ const btnMassUnBaptised: Button = new Button({
                       row.dataset.root.includes('HourPsalm')
                     || row.dataset.root.includes('EndOfHourPrayer'))
                     .forEach(row => row.remove());//We do the same for the titles
-                }
+          };
           
           }
       )
-      
+
+      btnDocFragment.prepend(btnsDiv);
+      btnDocFragment.prepend(bookOfHoursMasterDiv);
       btnsDiv.style.display = 'grid';
       let x = hoursBtns.length;
       if (x > 3) x = 3;//we limit the number of columns to 3
@@ -1264,10 +1263,9 @@ const btnMassUnBaptised: Button = new Button({
     
     //Collapsing all the Titles
     collapseAllTitles(
-      Array.from(btnMassUnBaptised.docFragment.children) as HTMLDivElement[]
-    );
+      Array.from(btnDocFragment.children) as HTMLDivElement[]);
 
-    btnMassUnBaptised.docFragment.getElementById('bookOfHoursBtns').classList.toggle('collapsedTitle');//We remove 'collapsedTitle' from btnsDiv
+    btnMassUnBaptised.docFragment.getElementById('masterBOHBtn').classList.toggle(hidden);//We remove hidden from btnsDiv
     
   }
 });
@@ -2445,8 +2443,15 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
     onClick: ()=>{//We need to name this function because in some cases we need to remove the 'click' event-listner and replace it with another function
       let prayersContainerDiv = containerDiv.querySelector('#' + btn.btnID + 'Expandable') as HTMLElement;
       if (!prayersContainerDiv) return console.log('no collapsable div was found');
-      prayersContainerDiv.classList.toggle('collapsedTitle');
-      //Array.from(prayersContainerDiv.children).forEach(child => child.classList.toggle('collapsedTitle'));
+      prayersContainerDiv.classList.toggle(hidden);
+      //Making the children classList match prayersContainerDiv classList
+      Array.from(prayersContainerDiv.children)
+        .forEach(child => {
+        if (prayersContainerDiv.classList.contains(hidden))
+          child.classList.add(hidden);
+        else child.classList.remove(hidden);
+      }
+      );
     },
   });
 
@@ -2455,7 +2460,7 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
   //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
     let prayersContainerDiv = document.createElement('div');
     prayersContainerDiv.id = btn.btnID + 'Expandable';
-    prayersContainerDiv.classList.add('collapsedTitle');
+    prayersContainerDiv.classList.add(hidden);
     prayersContainerDiv.style.display = 'grid'; //This is important, otherwise the divs that will be add will not be aligned with the rest of the divs
     insertion.insertAdjacentElement('beforebegin', prayersContainerDiv);
 

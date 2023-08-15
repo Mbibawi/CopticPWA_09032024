@@ -173,7 +173,8 @@ function createHtmlElementForPrayer(
 async function showTitlesInRightSideBar(
   titlesCollection: HTMLDivElement[],
   rightTitlesDiv?: HTMLElement,
-  clear: boolean = true
+  clear: boolean = true,
+  dataGroup?: string
 ) {
   let titlesArray: HTMLDivElement[] = [];
   //this function shows the titles in the right side Bar
@@ -195,6 +196,8 @@ async function showTitlesInRightSideBar(
     let text: string = "",
       titleDiv:HTMLDivElement = document.createElement("div"); //this is just a container
     titleDiv.role = "button";
+    if (dataGroup) titleDiv.dataset.group = dataGroup;
+    else titleDiv.dataset.group = titlesRow.dataset.root;
     rightTitlesDiv.appendChild(titleDiv);
     bookmark = document.createElement("a");
     titleDiv.appendChild(bookmark);
@@ -1151,8 +1154,8 @@ function collapseText(titleRow: HTMLElement, container: HTMLElement = containerD
     .forEach((div: HTMLDivElement) => {
       if(div !== titleRow) {
         console.log("show = ", show);
-        if (show === true && div.classList.contains('collapsedTitle')) div.classList.remove('collapsedTitle');
-        if(show === false || show === null) div.classList.toggle('collapsedTitle');
+        if (show === true && div.classList.contains(hidden)) div.classList.remove(hidden);
+        if(show === false || show === null) div.classList.toggle(hidden);
       }
     });
   togglePlusAndMinusSignsForTitles(titleRow);
@@ -1199,7 +1202,7 @@ function collapseAllTitles(htmlRows: HTMLDivElement[]) {
     .forEach((row:HTMLElement) => {
       if (!row.classList.contains('Title')
         && !row.classList.contains('SubTitle')) {
-        row.classList.add('collapsedTitle');
+        row.classList.add(hidden);
       } else {
         row.dataset.isCollapsed = 'true';
         togglePlusAndMinusSignsForTitles(row);

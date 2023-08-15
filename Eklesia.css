@@ -228,7 +228,7 @@ width: 40%;
   justify-self: center;
 }
 
-div.Row.collapsedTitle, div.collapsedTitle {
+div.Row.hiddenElement, div.hiddenElement {
   display:none !important;
 }
 .Row {

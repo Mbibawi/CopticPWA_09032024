@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.6.6 (fixed the sidebar titles for the Book of Hours)';
+const version: string = 'v4.6.7 (fixed the sidebar titles for the Book of Hours)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -146,6 +146,7 @@ const btnClass = 'sideBarBtn';
 const eighthNoteCode: number = 9834;
 const beamedEighthNoteCode: number = 9835;
 const inlineBtnClass = 'inlineBtn';
+const hidden = 'hiddenElement';
 const ReadingsIntrosAndEnds = {
     gospelIntro: {
         AR: 'قفوا بخوف أمام الله وانصتوا لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار (....) البشير، والتلميذ الطاهر، بركاته على جميعنا',
