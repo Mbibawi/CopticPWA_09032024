@@ -1546,24 +1546,27 @@ const btnBookOfHours:Button =  new Button({
       gospelEnd: string =
         Prefix.bookOfHours + 'GospelEnd&D=$copticFeasts.AnyDay',
       OurFatherWhoArtInHeaven:string =
-        Prefix.commonPrayer + 'OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay',
+       Prefix.commonPrayer + 'OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay',
+      AngelsPrayers:string = Prefix.commonPrayer+'AngelsPrayer&D=$copticFeasts.AnyDay',
+      HailToYouMaria:string = Prefix.commonPrayer+'WeSaluteYouMary&D=$copticFeasts.AnyDay',
       WeExaltYou:string =
         Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay',
-      Agios:string =
-        Prefix.commonPrayer + 'HolyGodHolyPowerfulPart',
+     Agios: string =
+        Prefix.commonPrayer+ 'HolyGodHolyPowerfullPart',
       HolyLordOfSabaot :string=
         Prefix.commonPrayer + 'HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay',
       Creed:string =
         Prefix.commonPrayer + 'Creed&D=$copticFeasts.AnyDay',
       Hallelujah:string =
-      Prefix.bookOfHours + 'PsalmEnd&D=$copticFeasts.AnyDay',
+       Prefix.bookOfHours + 'PsalmEnd&D=$copticFeasts.AnyDay',
+      EndOfAllHours:string = Prefix.bookOfHours + '1stHourEndOfAllHoursPrayer&D=$copticFeasts.AnyDay',
       HourIntro: string[] = [
         Prefix.commonPrayer + 'ThanksGivingPart1&D=$copticFeasts.AnyDay',
         Prefix.commonPrayer + 'ThanksGivingPart2&D=$copticFeasts.AnyDay',
         Prefix.commonPrayer + 'ThanksGivingPart3&D=$copticFeasts.AnyDay',
         Prefix.commonPrayer + 'ThanksGivingPart4&D=$copticFeasts.AnyDay',
         Prefix.bookOfHours + 'AnyHourPsalm50&D=$copticFeasts.AnyDay'
-      ],
+     ],
       DawnPsalms = [
         Prefix.bookOfHours + '6thHourPsalm62&D=$copticFeasts.AnyDay',
         Prefix.bookOfHours + '6thHourPsalm66&D=$copticFeasts.AnyDay',
@@ -1582,9 +1585,12 @@ const btnBookOfHours:Button =  new Button({
                splitTitle(table[0][0])[0] === ZoksaPatri
          || splitTitle(table[0][0])[0] === Kenin
          || splitTitle(table[0][0])[0] === HolyLordOfSabaot
+         || splitTitle(table[0][0])[0] === HailToYouMaria
          || splitTitle(table[0][0])[0] === WeExaltYou
          || splitTitle(table[0][0])[0] === Creed
          || splitTitle(table[0][0])[0] === OurFatherWhoArtInHeaven
+         || splitTitle(table[0][0])[0] === AngelsPrayers
+         || splitTitle(table[0][0])[0].startsWith(Agios)
        || new RegExp(Prefix.commonPrayer + 'ThanksGivingPart\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(splitTitle(table[0][0])[0])
        || new RegExp(Agios + '\\d{1}\\&D\\=\\$copticFeasts.AnyDay').test(splitTitle(table[0][0])[0])
      )];
@@ -1595,67 +1601,91 @@ const btnBookOfHours:Button =  new Button({
             splitTitle(tbl[0][0])[0] === HourIntro[HourIntro.length - 1]//this is Psalm 50
             || splitTitle(tbl[0][0])[0] === gospelEnd
             || splitTitle(tbl[0][0])[0] === Hallelujah
+            || splitTitle(tbl[0][0])[0] === EndOfAllHours
         ));
     return commonPrayers
     };
 
     (function addAChildButtonForEachHour() {
-        let btn: typeButton;
-      
         for (let hour in bookOfHours) {
           if (!hour.endsWith('PrayersArray')) continue;
+
           let hourName = hour.split('PrayersArray')[0];
-          btn = {
+
+          let createdBtn = new Button({
             btnID: hourName,
             label: {
               defaultLanguage: bookOfHoursLabels.filter(label => label.id === hourName)[0].AR,
               foreignLanguage: bookOfHoursLabels.filter(label => label.id === hourName)[0].FR
             },
-            prayersArray: [...bookOfHours[hour]],
             prayersSequence: [],
             languages: btnBookOfHours.languages,
             showPrayers: true,
-          };
-          let createdBtn = new Button(btn);
+            onClick: ()=>hourBtnOnClick(createdBtn),
+          });
           //Adding the onClick() property to the button
-          createdBtn.onClick =
-            (args: { returnBtnChildren?: boolean, isMass: boolean}, newButton: Button = createdBtn) => {
+          function hourBtnOnClick(btn: Button){
       
             (function buildBtnPrayersSequence() {
-              newButton.prayersSequence =
-                newButton.prayersArray
+              //We will add the prayers sequence to btn.prayersSequence[]
+              let endOfPrayer: string[] = [AngelsPrayers, Agios + '1&D=$copticFeasts.AnyDay', Agios + '2&D=$copticFeasts.AnyDay',OurFatherWhoArtInHeaven, HailToYouMaria, WeExaltYou, Creed, HolyLordOfSabaot, OurFatherWhoArtInHeaven];
+
+              btn.prayersSequence =
+                bookOfHours[hour]
                   .map(table => splitTitle(table[0][0])[0]); //we add all the titles to the prayersSequence
-                newButton.prayersSequence.splice(1, 0, ...HourIntro);//We also add the titles in HourIntro before the 1st element of btn.prayersSequence[]
+                btn.prayersSequence.splice(1, 0, ...HourIntro);//We also add the titles in HourIntro before the 1st element of btn.prayersSequence[]
+              if (hourName !== 'Dawn' && hourName !=='TwelvethHour') {
+                //We don't add the End of All Hours Prayers to the 'Dawn' Prayer, because it is already attached to it by default (: its title includes '1stHour')
+                btn.prayersSequence
+                  .splice(btn.prayersSequence.length - 1, 0, HolyLordOfSabaot, OurFatherWhoArtInHeaven);
+                btn.prayersSequence.push(EndOfAllHours);
+              };
               
               if (hourName === 'Dawn') {
                 //Adding the repeated psalms (psalms that are found in the 6ths and 9th hour), before pasalm 122
-                newButton.prayersSequence.splice(newButton.prayersSequence.indexOf(Prefix.bookOfHours + '1stHourPsalm142&D=$copticFeasts.AnyDay'), 0, ...DawnPsalms)
+                btn.prayersSequence
+                  .splice(btn.prayersSequence.indexOf(Prefix.bookOfHours + '1stHourPsalm142&D=$copticFeasts.AnyDay'), 0, ...DawnPsalms);
+
+                btn.prayersSequence
+                  .splice(
+                    btn.prayersSequence.indexOf(Prefix.bookOfHours + "1stHourEndOfHourPrayer1&D=$copticFeasts.AnyDay"), 0, ...endOfPrayer)
+                return
               };
+
+              if (hourName === 'TwelvethHour') {
+                btn.prayersSequence.push(EndOfAllHours); //We add the end of hours prayer that we hadn't added before
+
+                let copy = [...endOfPrayer];
+
+                copy.splice(0, 1);
+                  //we remove the Angels Prayer
+                btn.prayersSequence.splice(btn.prayersSequence.indexOf(Prefix.bookOfHours + '12thHourEndOfHourPrayer&D=$copticFeasts.AnyDay'), 0, ...copy);
+                }
             })();
       
             (function insertZoksaPatri() {
-              newButton.prayersSequence
+              btn.prayersSequence
                 .filter(title => title.includes('Litanies'))
                 .forEach(
                   tblTitle => {
                   if (tblTitle.includes('Litanies1')
                     || tblTitle.includes('Litanies4'))
                   {
-                      newButton.prayersSequence.splice(newButton.prayersSequence.indexOf(tblTitle) + 1, 0, ZoksaPatri)
+                      btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, ZoksaPatri)
                     } else if (
                     tblTitle.includes('Litanies2') //second litany
                     || tblTitle.includes('Litanies5') //5th litany
                     || (
                       tblTitle.includes('Litanies3')
-                      && newButton.prayersSequence[newButton.prayersSequence.indexOf(tblTitle) + 1].includes('Litanies4')) //3rd litany if litanies are > 3
+                      && btn.prayersSequence[btn.prayersSequence.indexOf(tblTitle) + 1].includes('Litanies4')) //3rd litany if litanies are > 3
                   ){
-                      newButton.prayersSequence.splice(newButton.prayersSequence.indexOf(tblTitle) + 1, 0, Kenin)
+                      btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, Kenin)
                   }
                   });
               })();
 
               (function insertPsalmAndGospelEnds() {
-                newButton.prayersSequence
+                btn.prayersSequence
                   .filter(
                     title => title.includes('Psalm')
                       || title.includes('Gospel&D=$copticFeasts.AnyDay')
@@ -1664,21 +1694,22 @@ const btnBookOfHours:Button =  new Button({
                     tblTitle => {
                       if (
                         tblTitle.includes('Gospel')
-                        && newButton.prayersSequence[newButton.prayersSequence.indexOf(tblTitle) + 1] != gospelEnd) //Inserting the Gosepl End
+                        && btn.prayersSequence[btn.prayersSequence.indexOf(tblTitle) + 1] !== gospelEnd) //Inserting the Gosepl End
                       {
-                        newButton.prayersSequence.splice(newButton.prayersSequence.indexOf(tblTitle) + 1, 0, gospelEnd)
+                        btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, gospelEnd)
                       } else if (
                         tblTitle.includes('Psalm')
-                        && newButton.prayersSequence[newButton.prayersSequence.indexOf(tblTitle) + 1] != Hallelujah) {
-                        newButton.prayersSequence.splice(newButton.prayersSequence.indexOf(tblTitle) + 1, 0, Hallelujah)
+                        && btn.prayersSequence[btn.prayersSequence.indexOf(tblTitle) + 1] !== Hallelujah) {
+                        btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, Hallelujah)
                       };
                     });
                   })();
             
-              (function pushCommonPrayers() {
-                newButton.prayersArray.push(...commonPrayers);
+            (function pushCommonPrayers() {
+              btn.prayersArray = [...bookOfHours[hour]];
+                btn.prayersArray.push(...commonPrayers);
                 if (hourName === 'Dawn') {
-                  newButton.prayersArray
+                  btn.prayersArray
                     .push(
                       ...DawnPsalms
                         .map(psalm =>
@@ -1687,7 +1718,7 @@ const btnBookOfHours:Button =  new Button({
                     );
                 };
               })();
-          };
+            };
           btnBookOfHours.children.push(createdBtn);
       };
     })();
@@ -1699,6 +1730,7 @@ const btnBookOfHours:Button =  new Button({
       if (returnBtnChildren) return;
       btnBookOfHours.children
         .forEach(childBtn => {
+          if (!childBtn.prayersArray) return;
           childBtn.prayersArray
             .forEach(tbl => {
               tbl.forEach(row => {
