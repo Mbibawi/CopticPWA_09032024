@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.6.7 (fixed the sidebar titles for the Book of Hours)';
+const version: string = 'v4.6.8 (various fixes to the editing methods, and added the "Bi Oyk" to the communion chants)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

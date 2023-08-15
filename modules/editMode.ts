@@ -29,13 +29,26 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
   let tablesArray: string[][][];
   containerDiv.dataset.specificTables = 'false';
 
+  let languages = getLanguages(entry);
+  if (!languages) languages = allLanguages;
+
   if (entry === select.options[1].innerText) {
-    
-    containerDiv.dataset.editedArray = '';//We delete the dataSet value in order to avoid adding the table to the same array
-    tablesArray =
-       [[['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', 'AR'], ['NewTable&D=$copticFeasts.AnyDay', 'COP', 'FR', 'CA', 'AR']]]; //select.options[1] = newTable
+    //select.options[1] = newTable
+    containerDiv.dataset.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
+    containerDiv.dataset.editedArray = 'PrayersArray';//We delete the dataSet value in order to avoid adding the table to the same array
+
+    languages = []; //We empty the languages array and will fill it according to what the user will provide
+    let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
+    tablesArray = [[['NewTable&D=$copticFeasts.AnyDay&C=Title']]];//We create a string[][][] with one table having only 1 row
+    let tbl1 = tablesArray[0]
+    langs.split(', ').forEach(lang => {
+      tbl1[0].push(lang);
+      languages.push(lang);
+    });
+    tbl1.push([...tbl1[0]]);
+    tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0];
   }; 
-    
+
   if (!tablesArray
     &&entry !== select.options[1].innerText //i.e. if it is not 'new table'
     && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
@@ -65,8 +78,7 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
     if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
     console.log('filteredArray = ', filteredArray)
   };
-  let languages = getLanguages(entry);
-  if (!languages) languages = allLanguages;
+
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
  // if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
@@ -360,12 +372,13 @@ function modifyTablesInTheirArray(container:HTMLElement = containerDiv) {
  */
 function changeCssClass(htmlParag: HTMLElement) {
   let htmlRow = getHtmlRow(htmlParag);
-  if (!htmlRow) return;
-  let className: string = splitTitle(htmlRow.dataset.root)[1];
-  if (className === undefined) className = prompt("Provide The Title", splitTitle(htmlRow.dataset.root)[1]);
-  if (!className) return;
-  htmlRow.dataset.root = splitTitle(htmlRow.dataset.root)[0]+"&C="+className;
-  if(!htmlRow.classList.contains(className))htmlRow.classList.add(className) ;
+  if (!htmlRow) return alert('Did not find the parent Div');
+  let currentClass = splitTitle(htmlRow.dataset.root)[1];
+  let newClass: string = prompt("Provide The New Class", currentClass);
+  if (!newClass || newClass === currentClass) return;
+  htmlRow.dataset.root = splitTitle(htmlRow.dataset.root)[0] + "&C=" + newClass;
+  if (currentClass) htmlRow.classList.replace(currentClass, newClass);
+  else if(!htmlRow.classList.contains(newClass))htmlRow.classList.add(newClass);
 }
 
 function toggleClass(element: HTMLElement, className: string) {
@@ -605,15 +618,14 @@ function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
     htmlRow.dataset.root
   );
   newRow.dataset.root = dataRoot;
-
-  newRow.classList.add(splitTitle(dataRoot)[1]);
+  let cssClass = splitTitle(dataRoot)[1];
+  if(cssClass) newRow.classList.add(cssClass);
   //newRow.contentEditable = 'true';
   for (let i = 0; i < htmlRow.children.length; i++) {
     child = htmlRow.children[i] as HTMLParagraphElement;
     if (!child || !child.lang || child.tagName !=='P') continue;
     p = newRow.appendChild(document.createElement("p"));
     p.classList.add(child.lang.toUpperCase());
-    p.classList.add(splitTitle(newRow.dataset.root)[1]);
     p.dataset.root = dataRoot;
     p.lang = child.lang;
     //p.innerText = "Insert Here Your Text "+p.lang;
@@ -873,11 +885,15 @@ function splitParagraphsToTheRowsBelow() {
   if (htmlParag.tagName !== 'P') return showAlert();
   let title:string = htmlParag.dataset.root,
     lang:string = htmlParag.lang,
-    table: HTMLElement[] = Array.from(containerDiv.children).filter((htmlRow:HTMLDivElement)=>htmlRow.dataset.root.startsWith(splitTitle(title)[0])) as HTMLElement[],//Those are all the rows belonging to the same table, including the title
+    table: HTMLElement[] =
+      Array.from(containerDiv.children)
+        .filter((htmlRow: HTMLDivElement) =>
+          htmlRow.dataset.root
+          && htmlRow.dataset.root.startsWith(splitTitle(title)[0])) as HTMLElement[],//Those are all the rows belonging to the same table, including the title
     rowIndex: number = table.indexOf(htmlParag.parentElement);
   //We retrieve the paragraph containing the text
  
-  let text = htmlParag.innerText;
+  let text = Array.from(htmlParag.children).map(child => child.textContent).join('\n');
   
   let splitted = text.split("\n");
   let clean = splitted.filter((t) => t != "");
@@ -970,7 +986,7 @@ function getLanguages(arrayName):string[] {
   let languages:string[] = prayersLanguages;
   if (arrayName.startsWith('ReadingsArrays.')) languages = readingsLanguages;
   if (arrayName.startsWith('ReadingsArrays.SynaxariumArray')) languages = ['FR', 'AR'];
-  if (arrayName === 'NewTable') languages = ['AR', 'FR', "EN"];
+  if (arrayName === 'NewTable') languages = ['COP', 'FR', 'EN', 'CA', 'AR'];
   return languages
 }
 
@@ -981,7 +997,9 @@ function getLanguages(arrayName):string[] {
 function convertCopticFontFromAPI(htmlElement:HTMLElement) {
   const apiURL: string = 'https://www.copticchurch.net/coptic_language/fonts/convert';
   let fontFrom: string = prompt('Provide the font', 'Coptic1/CS Avva Shenouda');
-  let text: string = htmlElement.innerText;
+
+while (htmlElement.tagName !== 'P' && htmlElement.parentElement) htmlElement = htmlElement.parentElement;
+  let text: string = htmlElement.textContent;
   let request = new XMLHttpRequest();
   request.open('POST', apiURL);
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
