@@ -1147,7 +1147,38 @@ const btnMassUnBaptised: Button = new Button({
                   );
     })();   
     (async function insertBookOfHoursButton() {
-      let hoursBtns:Button[] = btnBookOfHours.onClick({isMass:true}); //We get buttons for the relevant hours according to the day
+      
+      if (copticReadingsDate === copticFeasts.Resurrection
+        || copticDate === copticFeasts.Nativity
+        || copticDate === copticFeasts.Baptism)
+        //In these feasts we don't pray any hour
+        return;  
+      
+      let hoursBtns:Button[] = btnBookOfHours.onClick(true); //We get buttons for the relevant hours according to the day
+      if (!hoursBtns) return;
+
+      (function filterHours() {
+        //args.mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
+        let hours = [hoursBtns[1], hoursBtns[2], hoursBtns[3]];//Those are the 3rd, 6th and 9th hours
+      
+        if ((Season === Seasons.GreatLent
+        || Season === Seasons.JonahFast)
+          && todayDate.getDay() !== 0
+          && todayDate.getDay() !== 6)
+          //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
+          hours.push(hoursBtns[4], hoursBtns[5]);
+
+        else if (
+          todayDate.getDay() === 0
+          || todayDate.getDay() === 6 //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
+          || lordFeasts.indexOf(copticDate) > -1
+          || !isFast)
+          //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day, or we are during no specific period but today is not a Wednesday nor a Friday
+          hours.pop();//we remove the 9th hour
+        
+        hoursBtns = hours
+      })();
+
       let bookOfHoursMasterDiv = document.createElement('div');//This is the div that will contain the master button which shows or hides the Book of Hours sub buttons
       bookOfHoursMasterDiv.classList.add('inlineBtns');
       bookOfHoursMasterDiv.id = 'masterBOHBtn';
@@ -1505,7 +1536,7 @@ const btnBookOfHours:Button =  new Button({
         docFragment:new DocumentFragment(),
         showPrayers: true,
         languages: [...prayersLanguages],
-  onClick: (args: { returnBtnChildren?: boolean, isMass: boolean }={isMass:false}) => {
+  onClick: (returnBtnChildren: boolean = false) => {
    let
       Kenin: string =
         Prefix.commonPrayer + 'NowAlwaysAndForEver&D=$copticFeasts.AnyDay',
@@ -1660,31 +1691,11 @@ const btnBookOfHours:Button =  new Button({
       };
     })();
     
-
-    
-    if (args.isMass) {
-        //args.mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
-        let hours = [btnBookOfHours.children[1], btnBookOfHours.children[2], btnBookOfHours.children[3]];//Those are the 3rd, 6th and 9th hours
-        if (Season === Seasons.GreatLent) {
-          //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
-          if (todayDate.getDay() !== 0 && todayDate.getDay() !== 6)
-            hours.push(btnBookOfHours.children[4], btnBookOfHours.children[5]);
-    
-        } else if (Season === Seasons.PentecostalDays
-          || todayDate.getDay() === 0
-          || todayDate.getDay() === 6
-          || lordFeasts.indexOf(copticDate) > -1) {
-          //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day,
-          hours.pop();//we remove the 9th hour
-      }
-      return hours
-    };
-
-    if (args.returnBtnChildren) return btnBookOfHours.children;
+    if (returnBtnChildren) return btnBookOfHours.children;
   
     (function removeActorsFromPrayersArrays() {
       //When showing just the Book of Prayers independant of any Mass context, we remove all the actors classes from the prayersArray of all the buttons
-      if(args.returnBtnChildren || args.isMass) return
+      if (returnBtnChildren) return;
       btnBookOfHours.children
         .forEach(childBtn => {
           childBtn.prayersArray
