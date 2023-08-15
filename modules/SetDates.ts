@@ -17,10 +17,10 @@ async function setCopticDates(today?: Date) {
 	copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
 	//copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
-		if (copticFasts.indexOf(Season) > -1 || (Season != Seasons.PentecostalDays && weekDay === (3 || 5))) {
-			//i.e. if we are in a fasting day 
-			return true
-		} else { return false };
+		if (Season === Seasons.PentecostalDays) return false;
+		else if (copticFasts.indexOf(Season) > -1) return true; //i.e. if we are during a fast period 
+		else if (weekDay === (3 || 5)) return true;
+		else return false;
 	})();
 	//Showing the dates and the version
 	showDates();

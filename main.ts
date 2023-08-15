@@ -1152,8 +1152,7 @@ function collapseText(titleRow: HTMLElement, container: HTMLElement = containerD
   if (localStorage.displayMode === displayModes[1]) return;
   container.querySelectorAll('div[data-group="' + titleRow.dataset.root + '"]')
     .forEach((div: HTMLDivElement) => {
-      if(div !== titleRow) {
-        console.log("show = ", show);
+      if(div !== titleRow && !div.id.endsWith('Expandable')) {
         if (show === true && div.classList.contains(hidden)) div.classList.remove(hidden);
         if(show === false || show === null) div.classList.toggle(hidden);
       }

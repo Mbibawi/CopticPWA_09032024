@@ -719,6 +719,7 @@ const btnMassStBasil: Button = new Button({
         'RedirectionToAgios'
       )
     })();
+
     (function insertStMaryAdamSpasmos() {
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
       let spasmos = PrayersArray.filter(table => table[0][0] === Prefix.massCommon + "StMaryAdamSpasmos&D=$Seasons.StMaryFast&C=Title");
@@ -736,6 +737,7 @@ const btnMassStBasil: Button = new Button({
         btnMassStBasil.languages
       )[1];
     })();
+
     (function insertCommunionChants() {
       //Inserting the Communion Chants after the Psalm 150
       let psalm = selectElementsByDataRoot(btnDocFragment, Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay", {equal:true});
@@ -760,6 +762,7 @@ const btnMassStBasil: Button = new Button({
         psalm[psalm.length-1] as HTMLElement
       )
     })();
+
     (function insertIndeedWePrayYou() {
       if (btn !== btnMassStBasil) return; //This button appears only in St Basil Mass
 
@@ -935,7 +938,6 @@ const btnMassUnBaptised: Button = new Button({
     let btnDocFragment = btnMassUnBaptised.docFragment;
 
     (function hideGodHaveMercyOnUsIfBishop() {
-      
       let dataRoot = Prefix.massCommon + "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay";
       
       let godHaveMercyHtml = selectElementsByDataRoot(btnDocFragment, dataRoot, {equal:true});
@@ -956,9 +958,7 @@ const btnMassUnBaptised: Button = new Button({
       )[1];
       
       createdDiv.classList.add('Row');
-      createdDiv.children[0].classList.remove(hidden);
-      //@ts-ignore
-      createdDiv.children[0].dataset.root = dataRoot + 'Collapsable';
+      createdDiv.classList.add(hidden);
   
       godHaveMercyHtml.forEach(
         (row: HTMLDivElement) => row.remove()
@@ -1147,7 +1147,7 @@ const btnMassUnBaptised: Button = new Button({
                   );
     })();   
     (async function insertBookOfHoursButton() {
-      
+
       if (copticReadingsDate === copticFeasts.Resurrection
         || copticDate === copticFeasts.Nativity
         || copticDate === copticFeasts.Baptism)
@@ -1167,13 +1167,14 @@ const btnMassUnBaptised: Button = new Button({
           && todayDate.getDay() !== 6)
           //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
           hours.push(hoursBtns[4], hoursBtns[5]);
+        
 
         else if (
           todayDate.getDay() === 0
           || todayDate.getDay() === 6 //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
           || lordFeasts.indexOf(copticDate) > -1
-          || !isFast)
-          //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day, or we are during no specific period but today is not a Wednesday nor a Friday
+          ||!isFast)
+          //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day, or we are during a no fast period
           hours.pop();//we remove the 9th hour
         
         hoursBtns = hours

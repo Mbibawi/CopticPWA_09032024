@@ -3262,16 +3262,16 @@ PrayersArray= [[
   [
   Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
-  "Patriarche our évêques", 
+  "En présence du Patriarche de métropolites ou d'évêques", 
   "", 
-  " البطرك أو الأساقفة", 
+  " وفي حضور البطرك أو الأسقف أو المطران", 
   ], 
   [
   Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲧⲉϥⲁ̀ⲣⲉϩ ⲉ̀ⲡ̀ⲱⲛϧ ⲛⲉⲙ ⲡ̀ⲧⲁϩⲟ ⲉ̀ⲣⲁⲧϥ ⲙ̀ⲡⲉⲛⲓⲱⲧ ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲛ̀ⲁⲣⲭⲏⲉ̀ⲣⲉⲩⲥ ⲡⲁⲡⲁ ⲁⲃⲃⲁ Ⲧⲁⲱⲁⲇⲣⲟⲥ ⲛⲉⲙ ⲡⲉϥⲕⲉϣ̀ⲫⲏⲣ ⲛ̀ⲗⲓⲧⲟⲩⲣⲅⲟⲥ ⲡⲉⲛⲓⲱⲧ ⲛ̀ⲉⲡⲓⲥⲕⲟⲡⲟⲥ ⲁⲃⲃⲁ ().", 
   "Et qu’il préserve la vie de notre bienheureux père, le grand prêtre, le pape anba Tawadros et son partenaire dans le ministère apostolique notre père l’évêque anba () ;", 
   "", 
-  "و وأن يحفظ حياة و قيام أبينا المكرم البابا الأنبا تاوضروس و شريكه في الخدمة الرسولية أبينا الأسقف/المطران أنبا ().", 
+  "وأن يحفظ حياة وقيام أبينا المكرم البابا الأنبا تاوضروس وشريكه في الخدمة الرسولية أبينا الأسقف/المطران أنبا ().", 
   ], 
   [
   Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart&D=$copticFeasts.AnyDay&C=Comments", 
