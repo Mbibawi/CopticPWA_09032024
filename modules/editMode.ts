@@ -133,7 +133,7 @@ function addEdintingButtons(getButtons?:Function[]) {
   let btnsDiv = document.createElement("div");
   btnsDiv.classList.add("btnsDiv");
   btnsDiv.style.display = "grid";
-  btnsDiv.style.gridTemplateColumns = String("20%").repeat(5);
+  btnsDiv.style.gridTemplateColumns = ((100/3).toString() +'% ').repeat(3);
   btnsDiv.style.top = '10px';
   btnsDiv.style.width = '90%';
   btnsDiv.style.justifySelf = 'top !important';
@@ -883,29 +883,30 @@ function splitParagraphsToTheRowsBelow() {
   while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
 
   if (htmlParag.tagName !== 'P') return showAlert();
-  let title:string = htmlParag.dataset.root,
-    lang:string = htmlParag.lang,
+  let dataRoot: string = htmlParag.dataset.root,
+    lang: string = htmlParag.lang,
     table: HTMLElement[] =
       Array.from(containerDiv.children)
         .filter((htmlRow: HTMLDivElement) =>
           htmlRow.dataset.root
-          && htmlRow.dataset.root.startsWith(splitTitle(title)[0])) as HTMLElement[],//Those are all the rows belonging to the same table, including the title
-    rowIndex: number = table.indexOf(htmlParag.parentElement);
+          && htmlRow.dataset.root === splitTitle(dataRoot)[0]) as HTMLElement[];//Those are all the rows belonging to the same table, including the title
+  if (!table || table.length === 0) return alert('We didn\'t find any elements having the same data-root as the selected paragraph: ' + dataRoot);
+  
+    let rowIndex: number = table.indexOf(htmlParag.parentElement);
   //We retrieve the paragraph containing the text
  
-  let text = Array.from(htmlParag.children).map(child => child.textContent).join('\n');
-  
-  let splitted = text.split("\n");
-  let clean = splitted.filter((t) => t != "");
-  for (let i = 0; i < clean.length; i++) {
+ 
+  let splitted = htmlParag.innerText.split('\n');
+  for (let i = 0; i < splitted.length; i++) {
+    if (!splitted[i] || splitted[i] === '') continue;
     if (!table[i+rowIndex]) {
       //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
-      table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), htmlParag.parentElement.dataset.root));//we provide the data-root in order to avoid to be prompted when the addNewRow() is called
+      table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), dataRoot));
     }
-    Array.from(table[i+rowIndex].children)
-    .filter((p: HTMLElement) => p.lang == lang)[0]
-    //@ts-ignore
-      .innerText = clean[i];
+    let paragraph = Array.from(table[i + rowIndex].children)
+      .filter((p: HTMLElement) => p.lang === lang)[0] as HTMLElement;
+      paragraph.textContent = '';
+      paragraph.innerText = splitted[i];
   }
 }
 
@@ -1036,7 +1037,7 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
   let title: string = htmlRow.dataset.root;
-  
+
   if (!title) return alert('We couldn\'t retrieve the data-root of the current table. Make sure the cursor is placed within one of the table\'s cells');
   
   //We first save the changes to the array

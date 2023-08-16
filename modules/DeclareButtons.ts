@@ -1095,12 +1095,6 @@ const btnMassUnBaptised: Button = new Button({
         ReadingsIntrosAndEnds.synaxariumIntro.EN.replace('theday', Number(copticDay).toString()).replace('themonth', copticMonths[Number(copticMonth)].EN),
       ]);
 
-      //Replacing the title row of the table with a new title row
-        /*let details: string[] = [
-          splitTitle(reading[0][0][0])[0],
-          Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].FR + '\n' + reading[0][0][1].replace('\n', '&&&').split('&&&')[1],
-          Number(copticDay).toString() + ' ' + copticMonths[Number(copticMonth)].AR + '\n' + reading[0][0][2].replace('\n', '&&&').split('&&&')[1]
-        ];*/ //This row includes the details of the Synaxarium of the day, I need to think if I should insert it
     
       reading[0].splice(0, 1,
         [
@@ -1139,12 +1133,12 @@ const btnMassUnBaptised: Button = new Button({
       }
     })();
     (function insertGospelReading() {
-      //We will create a facke btn
                   //Inserting the Gospel Reading
                   getGospelReadingAndResponses(
                     Prefix.gospelMass,
-                    //We create a fake button to pass as argument because no declared button has the Gospel prayersArray and the languages
-                    new Button({ btnID: 'Fake', label: {defaultLanguage: 'Fake', foreignLanguage:'Fake'}, prayersArray: ReadingsArrays.GospelMassArray, languages: readingsLanguages}),
+                    {
+                      prayersArray: ReadingsArrays.GospelMassArray, languages: readingsLanguages
+                    },
                     btnMassUnBaptised.docFragment
                   );
     })();   
@@ -1925,17 +1919,16 @@ async function scrollToTop() {
 
 
 /**
- * Retrievs and adds html div elements representing the Gospel Litany, the Gospel and psalm introductions, and the Gospel and Psalm readings for a given liturgy 
+ * Retrieves and adds html div elements representing the Gospel Litany, the Gospel and psalm introductions, and the Gospel and Psalm readings for a given liturgy 
  * @param {string} liturgy - the prefix of the liturgie for which we want to retrieve the gospel reading
- * @param {string[][][]} goseplReadingsArray - the array containing the gospel reading (gospel and psalm)
- * @param {string[]} languages - the languages sequence of the gospelReadingsArray
+ * @param {Button | {prayersArray:string[][][], languages:string[]}} btn - the  button object or any object  having as property a string[][][] containing the the text of the gospel and the psalm, and a string[] containing the languages order of the gospel and psalm readings
  * @param {HTMLElement | DocumentFragment} container - the html element to which the html elements (i.e. div) containing the gospel will be appended after being created
  * @param {HTMLElement} gospelInsertionPoint - the html element in relation to which the created html elements will be inserted in the container
  * @returns 
  */
 async function getGospelReadingAndResponses(
   liturgy: string,
-  btn: Button,
+  btn: Button | { prayersArray: string[][][], languages: string[] },
   container?: HTMLElement | DocumentFragment,
   gospelInsertionPoint?: HTMLElement
 ) {
@@ -1943,7 +1936,6 @@ async function getGospelReadingAndResponses(
 
   if (!gospelInsertionPoint) gospelInsertionPoint =
     selectElementsByDataRoot(container, Prefix.commonPrayer + "GospelPrayerPlaceHolder&D=$copticFeasts.AnyDay", { equal: true })[0];
-
 
   //We start by inserting the standard Gospel Litany
   (function insertGospelLitany() {
@@ -1958,15 +1950,11 @@ async function getGospelReadingAndResponses(
       Prefix.commonPrayer + "GospelIntroductionPart2&D=$copticFeasts.AnyDay"
     ];//This is the sequence of the Gospel Prayer/Litany for any liturgy
   
-    let gospelLitanyPrayers: string[][][] = [];
-    gospelLitanyPrayers =
+    let gospelLitanyPrayers: string[][][] =
       gospelLitanySequence
-        .map((title: string) => {
-        return PrayersArray.filter(table =>
-          splitTitle(table[0][0])[0] === title
-        )[0];
-      }
-    );
+        .map(title => findTableInPrayersArray(title, PrayersArray));
+    
+    if (!gospelLitanyPrayers || gospelLitanyPrayers.length === 0) return;
 
     insertPrayersAdjacentToExistingElement(
       gospelLitanyPrayers,
@@ -1985,7 +1973,6 @@ async function getGospelReadingAndResponses(
 
   let anchorDataRoot = Prefix.commonPrayer + 'GospelIntroduction&D=$copticFeasts.AnyDay';
   
-
   let gospelIntroduction =
     selectElementsByDataRoot(container, anchorDataRoot, { equal: true });
   
@@ -1995,7 +1982,7 @@ async function getGospelReadingAndResponses(
 
   //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
   let date = copticReadingsDate;
-  if(liturgy === Prefix.gospelVespers){
+  if (liturgy === Prefix.gospelVespers) {
     date = btnReadingsGospelIncenseVespers.onClick(true)
   };
 
@@ -2006,26 +1993,38 @@ async function getGospelReadingAndResponses(
   ); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####". We should get a string[][][] of 2 elements: a table for the Psalm, and a table for the Gospel
 
   if (gospel.length === 0) return console.log('gospel.length = 0');  //if no readings are returned from the filtering process, then we end the function
-  
-  gospel.forEach((table:string[][]) => {
-    let el: HTMLElement; //this is the element before which we will insert the Psaml or the Gospel
-    if (splitTitle(table[0][0])[0].includes("Gospel&D=")) {
-      //This is the Gospel itself, we insert it before the gospel response
-      el = gospelInsertionPoint;
-    } else if (splitTitle(table[0][0])[0].includes("Psalm&D=")) {
-      el = gospelIntroduction[gospelIntroduction.length-1];
-    }
-    if (!el) return;
-    insertPrayersAdjacentToExistingElement(
-      [table],
-      btn.languages,
-      {
-        beforeOrAfter: 'beforebegin',
-        el: el
-      })
-  });
+ 
 
-    //We will insert the Gospel response
+  /**
+   * Appends the gospel and psalm readings before gospelInsertionPoint(which is an html element)
+   */
+  (function insertPsalmAndGospel(){
+    gospel
+      .forEach((table: string[][]) => {
+        let el: HTMLElement; //this is the element before which we will insert the Psaml or the Gospel
+        if (splitTitle(table[0][0])[0].includes("Gospel&D="))
+          //This is the Gospel itself, we insert it before the gospel response
+          el = gospelInsertionPoint;
+
+        else if (splitTitle(table[0][0])[0].includes("Psalm&D="))
+          el = gospelIntroduction[gospelIntroduction.length - 1];
+    
+        if (!el) return;
+        insertPrayersAdjacentToExistingElement(
+          [table],
+          btn.languages,
+          {
+            beforeOrAfter: 'beforebegin',
+            el: el
+          });
+      });
+
+  })();
+     
+
+    /**
+     * Appends the Gospel response before gospelInsertion point
+     */
     (function insertGospeResponse() {
       let gospelResp: string[][][] = PsalmAndGospelPrayersArray.filter(
         (r) => r[0][0].split('&D=')[0] +'&D=' + eval(r[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) === responses[3]
@@ -2045,8 +2044,11 @@ async function getGospelReadingAndResponses(
    
          //We will eventy remove the insertion point placeholder
             gospelInsertionPoint.remove();
-    })();
-  //We will insert the Psalm response
+  })();
+  
+  /**
+   * Inserts the Psalm response after the end of the Gospel Litany
+   */
   (function insertPsalmResponse() {
     let gospelPrayer = selectElementsByDataRoot(container, Prefix.commonPrayer + 'GospelPrayer&D=$copticFeasts.AnyDay', { equal: true }); //This is the 'Gospel Litany'. We will insert the Psalm response after its end
 
@@ -2064,7 +2066,6 @@ async function getGospelReadingAndResponses(
   })();
 
 }
-
 
 /**
  * Filters the FractionsPrayersArray and Insert a button (a "Master Button") in the specified place (i.e. the anchor). This button when clicked, opens a panel displaying buttons. Each button represents a Fraction. User choises a prayer by clicking on the button. 

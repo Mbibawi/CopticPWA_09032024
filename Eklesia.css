@@ -689,7 +689,8 @@ div.ReadingEnd{
 }
 
 .btnEditing{
-  width: 90% !important;
+  min-width: 15vw !important;
+  max-width: 15vw !important;
 }
 .btnsDiv{
   justify-content: center;
