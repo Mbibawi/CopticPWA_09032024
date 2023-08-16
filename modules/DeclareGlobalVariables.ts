@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.7.0 (fixed the gospel of the Vespers)';
+const version: string = 'v4.7.1 (made changes to the navigation buttons logic ad flow for the main page and the side bar)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

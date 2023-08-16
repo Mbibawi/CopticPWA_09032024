@@ -165,69 +165,77 @@ const btnMain: Button = new Button({
   },
   onClick: () => {
     btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours];
-    let images: string[] = [
-      'url(./assets/btnMassBackground.jpg)',
-      'url(./assets/btnMassBackground.jpg)',
-      'url(./assets/btnMassBackground.jpg)',
-      'url(./assets/btnMassBackground.jpg)',
-      'url(./assets/btnIncenseBackground.jpg)',
-      'url(./assets/btnReadingsBackground.jpg)',
-      'url(./assets/btnBOHBackground.jpg)',
-    ];
-    containerDiv.innerHTML = '';
-    containerDiv.style.gridTemplateColumns = ((100/ 3).toString() + '% ').repeat(3);
-    
-    btnMain.children
-      .map(btn => {
-        return createBtn(
-          btn, containerDiv,
-          'mainPageBtns',
-          true,
-          ()=>onClickBtnFunction(btn)
-        );
-      })
-      .map(htmlBtn => {
-        //For each btn created from the children of btnMain, we give it an image background from the images[] array of links
-        htmlBtn.style.backgroundImage = images[Array.from(containerDiv.children).indexOf(htmlBtn)];
-      });
+
+
+    (function showBtnsOnMainPage() {
+      if (leftSideBar.classList.contains('extended')) return;//If the left side bar is not hidden, we do not show the buttons on the main page because it means that the user is using the buttons in the side bar and doesn't need to navigate using the btns in the main page
       
-    function onClickBtnFunction(btn:Button) {
-      if (!btn.children || btn.children.length ===0) btn.onClick({ returnBtnChildren: true });//if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
+      let images: string[] = [
+        'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnIncenseBackground.jpg)',
+        'url(./assets/btnReadingsBackground.jpg)',
+        'url(./assets/btnBOHBackground.jpg)',
+      ];
+      containerDiv.innerHTML = '';
+      containerDiv.style.gridTemplateColumns = ((100 / 3).toString() + '% ').repeat(3);
+    
+      //We create html elemements representing each of btnMain children. The created buttons will be appended to containerDiv directly
+      btnMain.children
+        .map(btn => {
+          return createBtn(
+            btn,
+            containerDiv,
+            'mainPageBtns',
+            true,
+            () => onClickBtnFunction(btn)
+          );
+        })
+        .map(htmlBtn => {
+          //For each btn created from the children of btnMain, we give it an image background from the images[] array of links
+          htmlBtn.style.backgroundImage = images[Array.from(containerDiv.children).indexOf(htmlBtn)];
+        });
+      
+      function onClickBtnFunction(btn: Button) {
+        if (!btn.children || btn.children.length === 0) btn.onClick({ returnBtnChildren: true });//if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
         let parentHtmlBtn = containerDiv.querySelector('#' + btn.btnID) as HTMLElement;
         let backgroundImage;
 
         if (parentHtmlBtn) backgroundImage = parentHtmlBtn.style.backgroundImage;
 
-      containerDiv.innerHTML = "";
+        containerDiv.innerHTML = "";
       
-      if (!btn.children
-        || btn.children.length === 0
-        || (
-        btn.prayersSequence
-          && btn.prayersSequence.length > 0)){
+        if (!btn.children
+          || btn.children.length === 0
+          || (
+            btn.prayersSequence
+            && btn.prayersSequence.length > 0)) {
         
-        showChildButtonsOrPrayers(btn)//If btn does not have children, it means that it shows prayers. We pass it to showChildButtonsOrPrayers
-        return
-      };
-      //else, we will show the btn children
-      btn.children
-        //for each child button of btn
-        .map(childBtn => {
-          //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
-          createBtn(
-            childBtn,
-            containerDiv,
-            'mainPageBtns',
-            false,
-            () => onClickBtnFunction(childBtn)
-          )
-            .style.backgroundImage = backgroundImage;
+          showChildButtonsOrPrayers(btn)//If btn does not have children, it means that it shows prayers. We pass it to showChildButtonsOrPrayers
+          return
+        };
+        //else, we will show the btn children
+        btn.children
+          //for each child button of btn
+          .map(childBtn => {
+            //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
+            createBtn(
+              childBtn,
+              containerDiv,
+              'mainPageBtns',
+              false,
+              () => onClickBtnFunction(childBtn)
+            )
+              .style.backgroundImage = backgroundImage;
             
-        });
+          });
       
         createBtn(btnMain, containerDiv, 'mainPageBtns').style.backgroundImage = images[0];//Finlay, we create and extra html button for btnMain, in order for the user to be able to navigate back to the btnMain menu of buttons
           
-    };
+      };
+    })();
   },
 });
 

@@ -253,8 +253,8 @@ function showChildButtonsOrPrayers(
   if (btn.docFragment) container = btn.docFragment;
 ;
   hideInlineButtonsDiv();
+
   if (clear) {
-    sideBarBtnsContainer.innerHTML = "";
     inlineBtnsDiv.innerHTML = "";
     containerDiv.style.gridTemplateColumns = "100%";
   }
@@ -263,8 +263,9 @@ function showChildButtonsOrPrayers(
     btn.onClick();
     if (btn.pursue === false) return;
   }
-  if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers) showPrayers(btn, true, true, container);
-  
+
+if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers) showPrayers(btn, true, true, container);
+    
   if (btn.afterShowPrayers) btn.afterShowPrayers();
   
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
@@ -285,7 +286,15 @@ function showChildButtonsOrPrayers(
     newDiv.classList.add("inlineBtns");
     inlineBtnsDiv.appendChild(newDiv);
   }
-  if (btn.children) {
+
+  
+  if (btn.children && btn.children.length > 0) {
+    if (clear) {
+      //We will not empty the left side bar unless the btn has children to be shown  in the side bar instead of the children of the btn's parent (btn being itself one of those children)
+          //!CAUTION, this must come after btn.onClick() is called because some buttons are not initiated with children, but their children are added  when their onClick()  is called
+      sideBarBtnsContainer.innerHTML = "";
+    }
+    
     btn.children.forEach((childBtn:Button) => {
       //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
       if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
@@ -296,7 +305,9 @@ function showChildButtonsOrPrayers(
 
   showTitlesInRightSideBar(Array.from(container.querySelectorAll("div.Title")) as HTMLDivElement[]);
 
-  if (btn.parentBtn && btn.btnID !== btnGoBack.btnID) {
+  if (btn.parentBtn
+    && btn.btnID !== btnGoBack.btnID
+    && !sideBarBtnsContainer.querySelector('#' + btnGoBack.btnID)) {
     //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
     //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
     createGoBackBtn(btn.parentBtn, sideBarBtnsContainer, btn.cssClass);
@@ -307,11 +318,11 @@ function showChildButtonsOrPrayers(
     && !sideBarBtnsContainer.querySelector('#' + btnMain.btnID) //No btnMain is displayed in the sideBar
   ) {
     createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
-    let image = document.getElementById("homeImg");
+    /*let image = document.getElementById("homeImg");
     if (image) {
       document.getElementById("homeImg").style.width = "20vmax";
       document.getElementById("homeImg").style.height = "25vmax";
-    }
+    }*/
   }
   if (btn.parentBtn && btn.btnID === btnGoBack.btnID) {
     //showChildButtonsOrPrayers(btn.parentBtn);
@@ -319,7 +330,7 @@ function showChildButtonsOrPrayers(
   
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 
-  //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containrDiv
+  //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containerDiv
   if (btn.btnID !== btnMain.btnID
     && containerDiv.children.length >0
     && containerDiv.children[0].classList.contains('mainPageBtns')
