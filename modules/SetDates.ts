@@ -14,7 +14,7 @@ async function setCopticDates(today?: Date) {
 	//copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
 	//copticMonth = copticDate.slice(2, 4);
-	copticReadingsDate = setSeasonAndCopticReadingsDate(copticDate);
+	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate);
 	//copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
 		if (Season === Seasons.PentecostalDays) return false;
@@ -29,9 +29,10 @@ async function setCopticDates(today?: Date) {
 /**
  * Converts the provided Gregorian date into Coptic Date
  * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
+ * @param {boolean} changeDates - tells whether the function should change the Coptic dates or should just return the new Coptic Date
  * @returns {[number[], string]} - an array containing as 1st element an array representing the coptic day, coptic month, and coptic year, the second elemement of the array is a string representing the copitc date formatted as 'DDMM'
  */
-function convertGregorianDateToCopticDate(today?: number): [number[], string]{
+function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = true): [number[], string]{
 	
 	let tout1: number = new Date('1883.09.11').setUTCHours(0, 0, 0, 0); //this is the Gregorian date for the 1st of Tout of the Coptic year 1600 
 	
@@ -66,13 +67,14 @@ function convertGregorianDateToCopticDate(today?: number): [number[], string]{
 		year += 1;
 	}
 	year += Math.floor(diffrenceInYears);
-
-	copticDay = day.toString();
-	if (day < 10) copticDay = '0' + copticDay;
-	copticMonth = month.toString();
-	if (month < 10) copticMonth = '0' + copticMonth;
-	copticDate = copticDay + copticMonth;
-	copticYear = year.toString();
+	if(changeDates){
+		copticDay = day.toString();
+		if (day < 10) copticDay = '0' + copticDay;
+		copticMonth = month.toString();
+		if (month < 10) copticMonth = '0' + copticMonth;
+		copticDate = copticDay + copticMonth;
+		copticYear = year.toString();
+	}
 	return [[day,month, year], copticDate]
 }
 /**
@@ -165,7 +167,7 @@ function convertGregorianDateToCopticDate_OldNotUsedAnyMore(date: Date): string 
  * @param {string} coptDate  - a string expressing the coptic day and month (e.g.: "0306")
  * @returns {string} - a string expressing the coptic reading date (e.g.: "0512", "GreatLent20", "JonahFeast2", etc.)
  */
-function setSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string {
+function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string {
 	let specialSeason: string = checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)

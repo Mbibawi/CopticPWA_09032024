@@ -415,8 +415,7 @@ const btnIncenseDawn: Button = new Button({
 
     getGospelReadingAndResponses(
       Prefix.gospelDawn,
-      btnReadingsGospelIncenseDawn.prayersArray,
-      btnReadingsGospelIncenseDawn.languages,
+      btnReadingsGospelIncenseDawn,
       btnIncenseDawn.docFragment
     );
     (async function addInlineBtnForAdamDoxolgies() {
@@ -547,8 +546,7 @@ const btnIncenseVespers: Button = new Button({
     insertCymbalVersesAndDoxologiesForFeastsAndSeasons(btnIncenseVespers.docFragment);
     getGospelReadingAndResponses(
       Prefix.gospelVespers,
-      btnReadingsGospelIncenseVespers.prayersArray,
-      btnReadingsGospelIncenseVespers.languages,
+      btnReadingsGospelIncenseVespers,
       btnIncenseVespers.docFragment
     );
   },
@@ -1133,12 +1131,12 @@ const btnMassUnBaptised: Button = new Button({
       }
     })();
     (function insertGospelReading() {
-
+      //We will create a facke btn
                   //Inserting the Gospel Reading
                   getGospelReadingAndResponses(
                     Prefix.gospelMass,
-                    ReadingsArrays.GospelMassArray,
-                    readingsLanguages,
+                    //We create a fake button to pass as argument because no declared button has the Gospel prayersArray and the languages
+                    new Button({ btnID: 'Fake', label: {defaultLanguage: 'Fake', foreignLanguage:'Fake'}, prayersArray: ReadingsArrays.GospelMassArray, languages: readingsLanguages}),
                     btnMassUnBaptised.docFragment
                   );
     })();   
@@ -1462,21 +1460,24 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
   prayersSequence: [Prefix.gospelVespers + "Psalm", Prefix.gospelVespers + "Gospel"],
   prayersArray: ReadingsArrays.GospelVespersArray,
   languages: [...readingsLanguages],
-  onClick: () => {
+  onClick: (returnDate:boolean = false) => {
+
+    let date: string = getTomorowCopticReadingDate()
+    function getTomorowCopticReadingDate():string{
     let today: Date = new Date(todayDate.getTime() + calendarDay); //We create a date corresponding to the  the next day. This is because in the PowerPoint presentations from which the gospel text was retrieved, the Vespers gospel of each day is linked to the day itself not to the day before it: i.e., if we are a Monday and want the gospel that will be read in the Vespers incense office, we should look for the Vespers gospel of the next day (Tuesday).
 
-   /* let date: string = setSeasonAndCopticReadingsDate(
-      convertGregorianDateToCopticDate(today.getTime()),
-      today
-    );*/
 
-    let date: string = setSeasonAndCopticReadingsDate(
-      convertGregorianDateToCopticDate(today.getTime())
-        .splice(2, 1)
-      .join(',')
-      .replaceAll(',', ''),
+    return getSeasonAndCopticReadingsDate(
+      convertGregorianDateToCopticDate(today.getTime(), false)
+        //Notice that we pass changeDate argument as 'false' in order to avoid changing the dates
+      
+      [1],
       today
-    );
+      )
+    };
+    console.log(date);
+    
+    if (returnDate) return date;
     //We add the psalm reading to the begining of the prayersSequence
     btnReadingsGospelIncenseVespers.prayersSequence[0]=Prefix.gospelVespers + "Psalm&D=" + date;
     btnReadingsGospelIncenseVespers.prayersSequence[1]=Prefix.gospelVespers + "Gospel&D=" + date;
@@ -1767,96 +1768,98 @@ function setGospelPrayers(liturgie: string): string[] {
   prayers[psalm + 1] = prayers[psalm + 1].replace(Prefix.gospelMass, liturgie);
   prayers[psalm + 2] = prayers[psalm + 2].replace(Prefix.gospelMass, liturgie);
   //setting the psalm and gospel responses
-  if (lordFeasts.indexOf(copticDate) > -1) {
-    //This means we are on a Lord Feast, there is always a specific gospel and psalm response for these feasts, even when it falls during the Great Lent (Annonciation does sometimes)
-    date = copticDate;
-    prayers[psalm] += date;
-    prayers[gospel] += date;
-  } else if (Number(copticDay) === 29
-  && [4, 5, 6].indexOf(Number(copticMonth)) < 0) {
-    //we are on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast), and Touba and Amshir (they are excluded because they precede the annonciation)
-    date = copticFeasts.theTwentyNinethOfCopticMonth;
-    prayers[psalm] += date;
-    prayers[gospel] += date;
-  } else if (Season === Seasons.StMaryFast) {
-    //we are during the Saint Mary Fast. There are diffrent gospel responses for Incense Dawn & Vespers
-    if (todayDate.getHours() < 15) {
-      prayers[gospel] === prayers[gospel].replace("&D=", "Dawn&D=");
-    } else {
-      prayers[gospel] === prayers[gospel].replace("&D=", "Vespers&D=");
-    }
-    date = Season;
-    prayers[psalm] += date;
-    prayers[gospel] += date;
-  } else if (Season === Seasons.Kiahk) {
-    // we are during Kiahk month: the first 2 weeks have their own gospel response, and the second 2 weeks have another gospel response
-    date = Season;
-    if (
-      checkWhichSundayWeAre(Number(copticDay)) === ("1stSunday" || "2ndSunday")
-    ) {
-      prayers[gospel] = prayers[gospel].replace("&D=", "1&D=");
-    } else {
-      prayers[gospel] = prayers[gospel].replace("&D=", "2&D=");
-    }
-    prayers[psalm] += "0000";
-    prayers[gospel] += date;
-  } else if (Season === Seasons.GreatLent) {
-    //we are during the Great Lent period
-    if (copticReadingsDate === copticFeasts.EndOfGreatLentFriday) {
-      if (todayDate.getHours() > 15) {
-        //We are in the vespers of Lazarus Saturday
-        date = copticFeasts.LazarusSaturday;
-        prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
-        date = copticFeasts.LazarusSaturday;
-      } else {
-        //We are in the morning
-        date = copticFeasts.EndOfGreatLentFriday;
-      }
-      prayers[gospel] += date;
-    }
-    else if (copticReadingsDate === copticFeasts.LazarusSaturday) {
-      if (todayDate.getHours() < 15) {
-        //We are in the morning
-        date = copticFeasts.LazarusSaturday;
-      } else {
-        //We are in the Vespers of the Palm Sunday
-        date = copticFeasts.PalmSunday;
-        prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
-      }
+  (function setPsalmAndGospelResponses() {
+    if (lordFeasts.indexOf(copticDate) > -1) {
+      //This means we are on a Lord Feast, there is always a specific gospel and psalm response for these feasts, even when it falls during the Great Lent (Annonciation does sometimes)
+      date = copticDate;
       prayers[psalm] += date;
       prayers[gospel] += date;
-    } else {
-      date = Seasons.GreatLent;
-      todayDate.getDay() === 0
-        || todayDate.getDay() === 6
-        ? (prayers[gospel] = prayers[gospel].replace(
+    } else if (Number(copticDay) === 29
+      && [4, 5, 6].indexOf(Number(copticMonth)) < 0) {
+      //we are on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast), and Touba and Amshir (they are excluded because they precede the annonciation)
+      date = copticFeasts.theTwentyNinethOfCopticMonth;
+      prayers[psalm] += date;
+      prayers[gospel] += date;
+    } else if (Season === Seasons.StMaryFast) {
+      //we are during the Saint Mary Fast. There are diffrent gospel responses for Incense Dawn & Vespers
+      if (todayDate.getHours() < 15) {
+        prayers[gospel] === prayers[gospel].replace("&D=", "Dawn&D=");
+      } else {
+        prayers[gospel] === prayers[gospel].replace("&D=", "Vespers&D=");
+      }
+      date = Season;
+      prayers[psalm] += date;
+      prayers[gospel] += date;
+    } else if (Season === Seasons.Kiahk) {
+      // we are during Kiahk month: the first 2 weeks have their own gospel response, and the second 2 weeks have another gospel response
+      date = Season;
+      if (
+        checkWhichSundayWeAre(Number(copticDay)) === ("1stSunday" || "2ndSunday")
+      ) {
+        prayers[gospel] = prayers[gospel].replace("&D=", "1&D=");
+      } else {
+        prayers[gospel] = prayers[gospel].replace("&D=", "2&D=");
+      }
+      prayers[psalm] += "0000";
+      prayers[gospel] += date;
+    } else if (Season === Seasons.GreatLent) {
+      //we are during the Great Lent period
+      if (copticReadingsDate === copticFeasts.EndOfGreatLentFriday) {
+        if (todayDate.getHours() > 15) {
+          //We are in the vespers of Lazarus Saturday
+          date = copticFeasts.LazarusSaturday;
+          prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
+          date = copticFeasts.LazarusSaturday;
+        } else {
+          //We are in the morning
+          date = copticFeasts.EndOfGreatLentFriday;
+        }
+        prayers[gospel] += date;
+      }
+      else if (copticReadingsDate === copticFeasts.LazarusSaturday) {
+        if (todayDate.getHours() < 15) {
+          //We are in the morning
+          date = copticFeasts.LazarusSaturday;
+        } else {
+          //We are in the Vespers of the Palm Sunday
+          date = copticFeasts.PalmSunday;
+          prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
+        }
+        prayers[psalm] += date;
+        prayers[gospel] += date;
+      } else {
+        date = Seasons.GreatLent;
+        todayDate.getDay() === 0
+          || todayDate.getDay() === 6
+          ? (prayers[gospel] = prayers[gospel].replace(
             "&D=",
             Seasons.GreatLent + "Sundays&D="
           ))
-        : (prayers[gospel] = prayers[gospel].replace(
+          : (prayers[gospel] = prayers[gospel].replace(
             "&D=",
             Seasons.GreatLent + "Week&D="
           ));
+      }
+      prayers[psalm] += copticFeasts.AnyDay;
+      prayers[gospel] += date;
+    } else if (Season === Seasons.JonahFast) {
+      date = Season;
+      prayers[gospel] = prayers[gospel].replace(
+        "&D=",
+        copticReadingsDate.split(Season)[1] + "&D="
+      );
+      prayers[psalm] += "0000";
+      prayers[gospel] += date;
+    } else if (Season === Seasons.PentecostalDays) {
+      date = Seasons.PentecostalDays;
+      prayers[psalm] += date;
+      prayers[gospel] += date;
+    } else if (Season === Seasons.NoSeason) {
+      date = "0000";
+      prayers[psalm] += date;
+      prayers[gospel] += date;
     }
-        prayers[psalm] += "0000";
-        prayers[gospel] += date;
-  } else if (Season === Seasons.JonahFast) {
-    date = Season;
-    prayers[gospel] = prayers[gospel].replace(
-      "&D=",
-      copticReadingsDate.split(Season)[1] + "&D="
-    );
-    prayers[psalm] += "0000";
-    prayers[gospel] += date;
-  } else if (Season === Seasons.PentecostalDays) {
-    date = Seasons.PentecostalDays;
-    prayers[psalm] += date;
-    prayers[gospel] += date;
-  } else if (Season === Seasons.NoSeason) {
-    date = "0000";
-    prayers[psalm] += date;
-    prayers[gospel] += date;
-  }
+  })();
   return prayers;
 }
 
@@ -1912,37 +1915,19 @@ async function scrollToTop() {
   createFakeAnchor('homeImg');
 }
 
+
 /**
- * Retrieves the gospel of the Vespers office by the date of the day following the current date. We need this because the date of the gospel is not the date of the date of the Vespers office in which it is read, but the date of the next day
- * @param {string} prayers -  prayers is a clone of Gospel[] where prayer[1] is the gospel reading which is like "RGIV" (which is the abreviation of  "Readings Gospel Incense Vespers"). We will add to it "&D=" + the date of the gospel that we will retrieve from setSeasonAndCopticReadingsDate()
- * @returns {string[]} - an array where prayers[1] has been completed with the proper date
+ * Retrievs and adds html div elements representing the Gospel Litany, the Gospel and psalm introductions, and the Gospel and Psalm readings for a given liturgy 
+ * @param {string} liturgy - the prefix of the liturgie for which we want to retrieve the gospel reading
+ * @param {string[][][]} goseplReadingsArray - the array containing the gospel reading (gospel and psalm)
+ * @param {string[]} languages - the languages sequence of the gospelReadingsArray
+ * @param {HTMLElement | DocumentFragment} container - the html element to which the html elements (i.e. div) containing the gospel will be appended after being created
+ * @param {HTMLElement} gospelInsertionPoint - the html element in relation to which the created html elements will be inserted in the container
+ * @returns 
  */
-function getVespersGospel(prayers: string[]): string[] {
-  if (todayDate.getHours() > 15) {
-    //we check that we are in the afternoon
-    let date = new Date(todayDate.getTime() + calendarDay); //we create a date and sets it to the date of the next day
-    /*let readingsDate = setSeasonAndCopticReadingsDate(
-      convertGregorianDateToCopticDate(date)
-    ); //we get the coptic date corresponding to the date we created, and pass it to setSeaonAndCopticReadingsDate() to retrieve the reading date from this function*/
-
-    let readingsDate = setSeasonAndCopticReadingsDate(
-        convertGregorianDateToCopticDate(date.getTime())
-        .splice(2, 1)
-      .join(',')
-      .replaceAll(',', ''),
-    ); //we get the coptic date corresponding to the date we created, and pass it to setSeaonAndCopticReadingsDate() to retrieve the reading date from this function
-    prayers[1] += "&D=" + readingsDate; //we add the reading date to
-    return prayers;
-  } else {
-    prayers[1] + "&D=" + copticReadingsDate;
-    return prayers;
-  }
-}
-
 async function getGospelReadingAndResponses(
   liturgy: string,
-  goseplReadingsArray: string[][][],
-  languages: string[],
+  btn: Button,
   container?: HTMLElement | DocumentFragment,
   gospelInsertionPoint?: HTMLElement
 ) {
@@ -1965,17 +1950,18 @@ async function getGospelReadingAndResponses(
       Prefix.commonPrayer + "GospelIntroductionPart2&D=$copticFeasts.AnyDay"
     ];//This is the sequence of the Gospel Prayer/Litany for any liturgy
   
-    let gospelPrayers: string[][][] = [];
-    gospelLitanySequence.forEach(
-      (title: string) => {
-        gospelPrayers.push(PrayersArray.filter(table =>
+    let gospelLitanyPrayers: string[][][] = [];
+    gospelLitanyPrayers =
+      gospelLitanySequence
+        .map((title: string) => {
+        return PrayersArray.filter(table =>
           splitTitle(table[0][0])[0] === title
-        )[0]);
+        )[0];
       }
     );
 
     insertPrayersAdjacentToExistingElement(
-      gospelPrayers,
+      gospelLitanyPrayers,
       prayersLanguages,
       {
         beforeOrAfter: 'beforebegin',
@@ -2000,10 +1986,15 @@ async function getGospelReadingAndResponses(
   let responses: string[] = setGospelPrayers(liturgy); //this gives us an array like ['PR_&D=####', 'RGID_Psalm&D=', 'RGID_Gospel&D=', 'GR_&D=####']
 
   //We will retrieve the tables containing the text of the gospel and the psalm from the GospeldawnArray directly (instead of call findAndProcessPrayers())
-  let gospel: string[][][] = goseplReadingsArray.filter(
+  let date = copticReadingsDate;
+  if(liturgy === Prefix.gospelVespers){
+    date = btnReadingsGospelIncenseVespers.onClick(true)
+  };
+
+  let gospel: string[][][] = btn.prayersArray.filter(
     (table) =>
-      splitTitle(table[0][0])[0] === responses[1] + copticReadingsDate //this is the pasalm text
-      || splitTitle(table[0][0])[0] === responses[2] + copticReadingsDate //this is the gospel itself
+      splitTitle(table[0][0])[0] === responses[1] + date //this is the pasalm text
+      || splitTitle(table[0][0])[0] === responses[2] + date //this is the gospel itself
   ); //we filter the GospelDawnArray to retrieve the table having a title = to response[1] which is like "RGID_Psalm&D=####"  responses[2], which is like "RGID_Gospel&D=####". We should get a string[][][] of 2 elements: a table for the Psalm, and a table for the Gospel
 
   if (gospel.length === 0) return console.log('gospel.length = 0');  //if no readings are returned from the filtering process, then we end the function
@@ -2019,7 +2010,7 @@ async function getGospelReadingAndResponses(
     if (!el) return;
     insertPrayersAdjacentToExistingElement(
       [table],
-      languages,
+      btn.languages,
       {
         beforeOrAfter: 'beforebegin',
         el: el
