@@ -26,7 +26,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.6.8 (various fixes to the editing methods, and added the "Bi Oyk" to the communion chants)';
+const version: string = 'v4.6.9 (added missing prayers in Book of Hours Dawn prayer, and fixed issues with Book of Hours)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

@@ -1035,7 +1035,9 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
 
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  let title:string = htmlRow.dataset.root;
+  let title: string = htmlRow.dataset.root;
+  
+  if (!title) return alert('We couldn\'t retrieve the data-root of the current table. Make sure the cursor is placed within one of the table\'s cells');
   
   //We first save the changes to the array
   saveModifiedArray(containerDiv.dataset.arrayName, false, true);

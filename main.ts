@@ -25,7 +25,6 @@ function addOrRemoveLanguage(el: HTMLElement) {
       userLanguages.splice(userLanguages.indexOf("COP"), 1, lang);
     } else if (lang === "EN" && userLanguages.indexOf("FR") > -1) {
       userLanguages.splice(userLanguages.indexOf("FR"), 1, lang);
-      console.log(userLanguages);
     } else {
       userLanguages.push(lang);
     }
@@ -893,11 +892,9 @@ function DetectFingerSwipe() {
     let yDiff = yDown - yUp;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      console.log('xDiff = ', xDiff, 'yDiff = ', yDiff)
       /*most significant*/
       if (xDiff > 10) {
         /* right to left swipe */
-        console.log('xDiff = ', xDiff)
         if (
           leftSideBar.classList.contains("extended") &&
           rightSideBar.classList.contains("collapsed")
@@ -911,7 +908,6 @@ function DetectFingerSwipe() {
         }
       } else if (xDiff < -10) {
         /* left to right swipe */
-        console.log('xDiff = ', xDiff)
         if (
           leftSideBar.classList.contains("collapsed") &&
           rightSideBar.classList.contains("collapsed")
@@ -2047,7 +2043,6 @@ function generateFixedReadingArray(readingArray): string[][][] {
     });
     result.push(table);
   });
-  console.log(result);
   return result;
 }
 /**
