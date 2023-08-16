@@ -1306,7 +1306,7 @@ async function showMultipleChoicePrayersButton(
                 showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
               }
             });
-              createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick).classList.add("centeredBtn") //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+              createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick)//notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
     } else {
       next = new Button({
         btnID: "btnNext",
@@ -1317,7 +1317,7 @@ async function showMultipleChoicePrayersButton(
           hideInlineButtonsDiv();
         }
       });
-        createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick).classList.add("centeredBtn") //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+        createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick)//notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
       
     }
     

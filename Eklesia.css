@@ -124,8 +124,9 @@ body{
   justify-items: center;
   width:95%;
   align-self: center;
-  justify-self: stretch;
+  justify-self: center;
   justify-content: center;
+  justify-items: center;
   align-content: center;
   align-items: center;
   margin: 3px 3px;
@@ -133,7 +134,8 @@ body{
 }
 .inlineBtn, .mainPageBtns {
 height: fit-content;
-width: 30vmin;
+max-height: 28vh;
+min-width: 30vw;
 margin:2px 2px;
 justify-self: center;
 }
@@ -142,9 +144,7 @@ justify-self: center;
   background-position: center;
   background-size:cover;
   background-clip: border-box;
-  height: 35vmin;
-  width: 40vmin;
-  max-width: 97.5%;
+  min-height: 22vh;
   border-radius: 20px;
   margin: 5px 5px;
 
@@ -171,17 +171,7 @@ justify-self: center;
   line-height: 18px;
 }
 
-.centeredBtn {
-  width:80pt !important;
-  height: 55pt !important;
-}
 
-
-.centeredBtn > p{
-  line-height: 8pt !important;
-  font-size: 10pt !important;
-  padding: 1px 1px !important;
-}
 
 .homeImg{
 align-self: center;
@@ -604,9 +594,9 @@ table{
 }
 .multipleChoicePrayersBtn{
   background-color: rgb(41, 43, 43) !important;
-  width: 30;
+  width: 41vw;
   margin: 2px 2px;
-  min-height: 25vh;
+  min-height: 38vh;
   justify-items: center;
   border-radius: 20px;
 }
