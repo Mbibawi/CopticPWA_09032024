@@ -61,7 +61,6 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
   if (containerDiv.dataset.specificTables === 'true') {
     let tableTitle = prompt('Provide the name of the table you want to edit');
     let filteredArray:string[][][] = [];
-    console.log('splitted = ', tableTitle.split(', '));
     tableTitle.split(', ')
         .map(title =>{
           filteredArray.push(
@@ -76,7 +75,6 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
     tablesArray = filteredArray;
     //tablesArray = tablesArray.filter(tbl => tbl[0][0] === tableTitle);
     if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
-    console.log('filteredArray = ', filteredArray)
   };
 
   localStorage.displayMode === displayModes[0];
@@ -140,7 +138,7 @@ function addEdintingButtons(getButtons?:Function[]) {
   btnsDiv.style.justifyItems = 'stretch';
   btnsDiv.style.position = 'fixed';
 
-  containerDiv.children[0].insertAdjacentElement('beforebegin', btnsDiv);
+  containerDiv.prepend(btnsDiv);
 
   if (!getButtons) getButtons = [
     changeTitleBtn,
@@ -370,13 +368,15 @@ function modifyTablesInTheirArray(container:HTMLElement = containerDiv) {
  * Changes the 'actor' css class of a row
  * @param {HTMLElement} htmlRow - the div (row) for which we want to change the css class
  */
-function changeCssClass(htmlParag: HTMLElement) {
+function changeCssClass(htmlParag: HTMLElement, newClass?:string) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return alert('Did not find the parent Div');
-  let currentClass = splitTitle(htmlRow.dataset.root)[1];
-  let newClass: string = prompt("Provide The New Class", currentClass);
+  let currentClass = splitTitle(htmlRow.title)[1];
+  if (!newClass) newClass = prompt("Provide The New Class", currentClass);
   if (!newClass || newClass === currentClass) return;
-  htmlRow.dataset.root = splitTitle(htmlRow.dataset.root)[0] + "&C=" + newClass;
+
+  htmlRow.title = splitTitle(htmlRow.title)[0] + "&C=" + newClass;
+
   if (currentClass) htmlRow.classList.replace(currentClass, newClass);
   else if(!htmlRow.classList.contains(newClass))htmlRow.classList.add(newClass);
 }
@@ -384,33 +384,48 @@ function changeCssClass(htmlParag: HTMLElement) {
 function toggleClass(element: HTMLElement, className: string) {
   element.classList.toggle(className);
 }
+
 function changeTitle(htmlParag: HTMLElement, newTitle?: string, oldTitle?:string) {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
-  if(!oldTitle) oldTitle = htmlRow.dataset.root;
+  if(!oldTitle) oldTitle = htmlRow.title;
   if (!newTitle) newTitle = prompt("Provide The Title", oldTitle);
-  if (!newTitle) return alert('You didn\'t provide a valide title');
+  if (!newTitle) return alert('You didn\'t provide a valid title');
   if (newTitle === oldTitle) return;
-    htmlRow.dataset.root = newTitle;
-    Array.from(htmlRow.children)
-      .forEach(
-        (child: HTMLElement) => {
-          if (child.tagName === 'P' && child.dataset.root) {
-            child.dataset.root = splitTitle(newTitle)[0];
-            child.title = newTitle;
-          }
-        });
-  if(newTitle.includes('&C=')) htmlRow.classList.add(splitTitle(newTitle)[1]);
-  //We will then go to each sibling and change its title if it has the same title as oldTitle
-  htmlRow = htmlRow.nextElementSibling as HTMLDivElement;
-  while (htmlRow
-    && htmlRow.tagName === 'DIV'
-    && splitTitle(htmlRow.dataset.root)[0] === splitTitle(oldTitle)[0]) {
-    let actorClass: string = splitTitle(htmlRow.dataset.root)[1];
-    if (!actorClass) actorClass = '';
-    if (actorClass !== '') actorClass = '&C=' + actorClass;
-    changeTitle(htmlRow, splitTitle(newTitle)[0] + actorClass, oldTitle)
-  } 
+
+  htmlRow.dataset.root = splitTitle(newTitle)[0];
+  htmlRow.title = newTitle;
+
+  changeParagraphsDataRoot();
+  
+  function changeParagraphsDataRoot(row: HTMLDivElement = htmlRow as HTMLDivElement, title:string = newTitle) {
+    Array.from(row.querySelectorAll('p'))
+      .filter(child => child.dataset.root && child.title)
+      .forEach(child => {
+        child.dataset.root =  splitTitle(title)[0];
+        child.title = title
+      })
+  };
+  
+  let actorClass: string = splitTitle(newTitle)[1];
+
+
+  if(actorClass && !htmlRow.classList.contains(actorClass)) htmlRow.classList.add(actorClass);
+
+  (function changeSiblingsDataRoot() {
+    Array.from(containerDiv.children)
+      .filter((sibling: HTMLElement) =>
+        sibling.dataset.root === splitTitle(oldTitle)[0])
+      .forEach((sibling: HTMLElement) => {
+        sibling.dataset.root = splitTitle(newTitle)[0];
+        let cssClass = splitTitle(sibling.title)[1];
+        sibling.title = sibling.dataset.root;
+        if(cssClass) sibling.title += '&C=' + cssClass ;
+        changeParagraphsDataRoot(sibling as HTMLDivElement, sibling.title);
+      })
+        
+    })();
+
 }
 
 /**
@@ -463,7 +478,7 @@ function saveModifiedArray(arrayName:string=containerDiv.dataset.arrayName, expo
   htmlRows
   .forEach(htmlRow => {
       //for each 'Row' div in containderDiv
-        title = splitTitle(htmlRow.dataset.root)[0]; //this is the title without '&C='
+        title = htmlRow.dataset.root; //this is the title without '&C='
     if (titles.has(title)) return;
           titles.add(title)
           processTableTitle(title, tablesArray);
@@ -492,7 +507,7 @@ function processTableTitle(tableTitle: string, tablesArray: string[][][] = eval(
 
   let htmlTable =
     Array.from(containerDiv.children)
-      .filter((htmlRow: HTMLDivElement) => splitTitle(htmlRow.dataset.root)[0] === tableTitle) as HTMLDivElement[];
+      .filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
 
     if (htmlTable.length === 0) return;
 
@@ -502,7 +517,8 @@ function processTableTitle(tableTitle: string, tablesArray: string[][][] = eval(
     
   if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
       
-  else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table ')) tablesArray.push(editedTable);
+  else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
+   tablesArray.push(editedTable);
 }
 
 /**
@@ -561,7 +577,7 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string):
 function replacePrefixes(text: string): string {
   text = text
     .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
-    .replaceAll('"' + Prefix.commonDoxologies, 'Prefix.commonDoxologies+"')
+    .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
     .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
     .replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"')
     .replaceAll('"' + Prefix.communion, 'Prefix.communion+"')
@@ -601,36 +617,41 @@ function replacePrefixes(text: string): string {
  * @param {HTMLElement} row - the div (row) below which we will add a row
  * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
  */
-function addNewRow(htmlParag: HTMLElement, dataRoot?: string): HTMLElement {
+function addNewRow(htmlParag: HTMLElement, title?: string): HTMLElement {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
  
   let newRow = document.createElement("div"),
-    p: HTMLParagraphElement,
-    child: HTMLParagraphElement;
+    p: HTMLParagraphElement;
+  
   newRow.classList.add("Row");
   newRow.dataset.isNewRow = "isNewRow";
   newRow.style.display = htmlRow.style.display;
   newRow.style.gridTemplateColumns = htmlRow.style.gridTemplateColumns;
   newRow.style.gridTemplateAreas = htmlRow.style.gridTemplateAreas;
-  if (!dataRoot) dataRoot = prompt(
+
+  if (!title) title = prompt(
     "Provide the Title of the new Row",
-    htmlRow.dataset.root
+    htmlRow.title
   );
-  newRow.dataset.root = dataRoot;
-  let cssClass = splitTitle(dataRoot)[1];
-  if(cssClass) newRow.classList.add(cssClass);
-  //newRow.contentEditable = 'true';
-  for (let i = 0; i < htmlRow.children.length; i++) {
-    child = htmlRow.children[i] as HTMLParagraphElement;
-    if (!child || !child.lang || child.tagName !=='P') continue;
-    p = newRow.appendChild(document.createElement("p"));
-    p.classList.add(child.lang.toUpperCase());
-    p.dataset.root = dataRoot;
-    p.lang = child.lang;
-    //p.innerText = "Insert Here Your Text "+p.lang;
-    p.contentEditable = "true";
-  }
+  newRow.dataset.root = splitTitle(title)[0];
+  newRow.title = title;
+  let cssClass = splitTitle(title)[1];
+  if (cssClass) newRow.classList.add(cssClass);
+  if (cssClass.includes('Title')) newRow.id = title;
+
+  Array.from(htmlRow.children)
+    .forEach((child: HTMLElement) => {
+      if (!child.lang || child.tagName !== 'P') return;
+      p = newRow.appendChild(document.createElement("p"));
+      p.title = title;
+      p.dataset.root = newRow.dataset.root;
+      p.lang = child.lang;
+      p.classList.add(p.lang.toUpperCase());
+      p.contentEditable = "true";
+    }  
+    );
+  
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
 function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
@@ -678,17 +699,19 @@ function createHtmlElementForPrayerEditingMode(
 
   row = document.createElement("div");
   row.classList.add("Row"); //we add 'Row' class to this div
-  let dataRoot: string = tblRow[0];
-  row.dataset.root = dataRoot;
-  let actorClass = splitTitle(tblRow[0])[1];
-  if (actorClass && !actorClass.includes("Title")) {
-    // we don't add the actorClass if it is "Title", because in this case we add a specific class called "Title" (see below)
-    row.classList.add(actorClass);
-  } else if (actorClass && actorClass.includes("Title")) {
-    row.addEventListener("click", (e) => {
+  row.title = tblRow[0];
+  let dataRoot: string = splitTitle(tblRow[0])[0];
+  row.dataset.root = splitTitle(dataRoot)[0];
+  let actorClass = splitTitle(row.title)[1];
+  if (actorClass) row.classList.add(actorClass);
+
+  if (actorClass && actorClass.includes("Title")) {
+    row.addEventListener("dblClick", (e) => {
       e.preventDefault;
-      collapseText(row);
-    }); //we also add a 'click' eventListener to the 'Title' elements
+      collapseOrExpandText({titleRow:row});
+      row.id = row.title;
+      row.tabIndex = 0; //in order to make the div focusable by using the focus() method
+    }); 
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < tblRow.length; x++) {
@@ -703,20 +726,13 @@ function createHtmlElementForPrayerEditingMode(
       lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-    if (actorClass === "Title" || actorClass === 'SubTitle') {
-      //this means that the 'prayer' array includes the titles of the prayer since its first element ends with '&C=Title'.
-      row.classList.add(actorClass);
-      row.id = tblRow[0];
-      row.tabIndex = 0; //in order to make the div focusable by using the focus() method
-    } else if (actorClass) {
-      //if the prayer is a comment like the comments in the Mass
-        row.classList.add(actorClass);
-    } else {
+   
+   if (! actorClass) {
       //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
         p.classList.add("PrayerText");
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
-    p.title = dataRoot;
+    p.title = row.title;
     text = tblRow[x];
     if (lang)
       p.classList.add(lang.toUpperCase())

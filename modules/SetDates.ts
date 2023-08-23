@@ -14,7 +14,8 @@ async function setCopticDates(today?: Date) {
 	//copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
 	//copticMonth = copticDate.slice(2, 4);
-	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate);
+	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
+	if (!copticReadingsDate) return console.log('copticReadingsDate was not property set = ', copticReadingsDate);
 	//copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
 		if (Season === Seasons.PentecostalDays) return false;
@@ -167,7 +168,9 @@ function convertGregorianDateToCopticDate_OldNotUsedAnyMore(date: Date): string 
  * @param {string} coptDate  - a string expressing the coptic day and month (e.g.: "0306")
  * @returns {string} - a string expressing the coptic reading date (e.g.: "0512", "GreatLent20", "JonahFeast2", etc.)
  */
-function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string {
+function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string | void {
+	if (!coptDate) return console.log('coptDate is not valid = ', coptDate);
+
 	let specialSeason: string = checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
@@ -175,9 +178,7 @@ function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Da
 	} else if (today.getDay() === 0) {
 		// it means we are on an ordinary  Sunday (any sunday other than Great lent and Pentecostal period Sundays)
 		// console.log('We are on a sunday')
-		let sunday: string = checkWhichSundayWeAre(
-			Number(coptDate.slice(0, 2))
-		);
+		let sunday: string = checkWhichSundayWeAre(Number(copticDay), today.getDay());
 		//the readings for the 5th sunday of any coptic month (other than the 5th sunday of the Great Lent or the Pentecostal Days) are the same. We will then retrieve the readings of the 5th sunday of the first coptic month (Tout)
 		sunday === "5thSunday"
 			? (sunday = "01" + sunday)
@@ -198,8 +199,9 @@ function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Da
  * @param {number} day  - the day of the coptic month or the number of days since the beginning of a season like the Great Lent or the Pentecostal days
  * The function returns a string like "1stSunday", "2nd Sunday", etc.
  */
-function checkWhichSundayWeAre(day: number): string {
-	if (weekDay !== 0) return;
+function checkWhichSundayWeAre(day: number, theWeekDay:number): string
+{
+	if (theWeekDay !== 0) return;
 	let n: number = day;
 	if (Season === Seasons.GreatLent)
 		n = n - 2;
@@ -346,7 +348,7 @@ function isItSundayOrWeekDay(
 ): string {
 	 if (weekDay === 0) {
 		//we are a Sunday
-		return period + checkWhichSundayWeAre(days);
+		return period + checkWhichSundayWeAre(days, weekDay);
 	} else {
 		// we are not a sunday
 		return period + days.toString();
@@ -451,8 +453,8 @@ function changeDate(
 	setCopticDates(todayDate);
 	setSeasonalTextForAll();
 	reloadScriptToBody(['PrayersArray']);
-	allSubPrayersArrays.forEach((subArray) => {
-		for (let i = subArray.length - 1; i >= 0; i--) subArray.splice(i, 1)});
+	Object.entries(PrayersArrays)
+		.forEach((array) => PrayersArrays[array[0]] = []);
 	populatePrayersArrays();
 	if (checkIfDateIsToday(todayDate)) {
 		localStorage.removeItem('selectedDate');

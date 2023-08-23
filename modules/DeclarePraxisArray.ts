@@ -4471,13 +4471,13 @@ ReadingsArrays.PraxisArray = [[
   [
   [
   Prefix.praxis+"&D=122ndSunday&C=Title", 
-  " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار (20:(1 – 12 وبعد ما انتهى الشغب دعا بولس التلاميذ وودعهم وخرج ليذهب الى مكدونية.ولما كان قد اجتاز في تلك النواحي ووعظهم بكلام كثير جاء الى هلاس", 
+  " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار (20:(1 – 12 ", 
   "Actes 20:1-12", 
   "Acts 20:1-12", 
   ], 
   [
   Prefix.praxis+"&D=122ndSunday", 
-  "", 
+  "وبعد ما انتهى الشغب دعا بولس التلاميذ وودعهم وخرج ليذهب الى مكدونية.ولما كان قد اجتاز في تلك النواحي ووعظهم بكلام كثير جاء الى هلاس", 
   "1 Quand le tumulte se fut calmé, Paul fit venir les disciples et les encouragea. Puis il leur dit adieu et prit la route pour la Macédoine. 2 Après avoir traversé ces régions et y avoir encouragé longuement les frères, il parvint en Grèce,", 
   "20:1 After the uproar had ceased, Paul called the disciples to himself, embraced them, and departed to go to Macedonia. 2 Now when he had gone over that region and encouraged them with many words, he came to Greece", 
   ], 

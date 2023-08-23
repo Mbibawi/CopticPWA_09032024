@@ -2167,15 +2167,9 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=2703", 
-  "فلا يكون هكذا فيكم.بل من اراد ان يصير فيكم عظيما يكون لكم خادما.", 
+  "فلا يكون هكذا فيكم. بل من أراد ان يصير فيكم عظيما يكون لكم خادما. ومن أراد أن يصير فيكم اولا يكون للجميع عبدا. لان ابن الانسان ايضا لم يأت ليخدم بل ليخدم وليبذل نفسه فدية عن كثيرين.", 
   "43 Au contraire, si quelqu'un veut être grand parmi vous, qu'il soit votre serviteur.44 Et si quelqu'un veut être le premier parmi vous, qu'il soit l'esclave de tous.45 Car le Fils de l'homme est venu non pour être servi, mais pour servir et donner sa vie en rançon pour la multitude.", 
   "43 Yet it shall not be so among you; but whoever desires to become great among you shall be your servant. 44 And whoever of you desires to be first shall be slave of all. 45 For even the Son of Man did not come to be served, but to serve, and to give His life a ransom for many.", 
-  ], 
-  [
-  Prefix.gospelMass+"Gospel&D=2703", 
-  "ومن اراد ان يصير فيكم اولا يكون للجميع عبدا. لان ابن الانسان ايضا لم يأت ليخدم بل ليخدم وليبذل نفسه فدية عن كثيرين(والمجد للـه دائماً )", 
-  "", 
-  "", 
   ], 
   ], 
   [
@@ -4078,13 +4072,13 @@ ReadingsArrays.GospelMassArray = [[
   [
   Prefix.gospelMass+"Psalm&D=3005&C=Title", 
   " مزمور 45:14-15", 
-  "Psaume 45:14-15 14 Les demoiselles de sa suite, ses compagnes, sont introduites auprès de toi.", 
+  "Psaume 45:14-15 14", 
   "Psalms 45:14-15", 
   ], 
   [
   Prefix.gospelMass+"Psalm&D=3005", 
-  "بملابس مطرّزة تحضر الى الملك.في اثرها عذارى صاحباتها.مقدمات اليك. يحضرن بفرح وابتهاج.يدخلنّ الى قصر الملك. هللويا.", 
-  "15 En un joyeux cortège, elles entrent dans le palais royal", 
+  "بملابس مطرّزة تحضر الى الملك. في اثرها عذارى صاحباتها. مقدمات إليك. يحضرن بفرح وابتهاج. يدخلنّ الى قصر الملك.", 
+  "14 Les demoiselles de sa suite, ses compagnes, sont introduites auprès de toi. 15 En un joyeux cortège, elles entrent dans le palais royal", 
   "14 She shall be brought to the King in robes of many colors; the virgins, her companions who follow her, shall be brought to You.", 
   ], 
   ], 

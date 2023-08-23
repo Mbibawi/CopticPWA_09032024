@@ -7,18 +7,15 @@ type typeBtnLabel = {
 type typeButton = {
     btnID: string, //the id is used to exclude a button from being displayed in certain scenarios: like the Go Back button in some cases
     label: typeBtnLabel, //contains the text (in different languages) that is displayed in the html element created to show the button
-    rootID?: string, //not used yet
     parentBtn?: Button, //a button that when clicked our button (which is its child) is displayed
     children?: Button[], //a list of child buttons that are displayed in the left side bar when the button is clicked
     inlineBtns?: Button[], //a list of button that are shown in the main area above the text (the buttons in the children[] list of buttons are shown in the left side-bar)
     prayersSequence?: string[], //the sequence of prayers that will be dispolayed when the button is clicked. Each "prayer" is a string representing an id (the id corresponds to the title of one of tables in the Word document from which the text was extracted). A function loops the prayersArray (see below) and looks for an array of string[][] which 1st element is = to the "prayer". If it finds it, the text is retrieved and shown in html elements 
     prayersArray?: string[][][], //an array containing all the Word tables retrived from the Word document. Each table is a string[][], where each string[] element is a row of the table. Each row is structred like ['prayer id', 'prayer text in a given language', 'prayer text in another language', etc.]. prayersArray is the array where the text of the button's prayers will be looked for when the button is clicked.
-    titlesArray?:string[][], //an array that contains the prayers which id ends with 'Title'
     retrieved?:boolean, //not used any more but kept in case
     languages?: string[], //the list of languages in which the prayers that will be shown by the button are available (for example, the button showing the gospel will not have the coptic language in its languages[] because the text extracted from the ppt slides was only available in Arabic, French and English)
     onClick?: Function, //a function that is called when the html element created for the button is clicked
     afterShowPrayers?: Function, //a function that will be called after the prayers of the button are processed and appended as html children of containerDiv
-    value?: string, //not used
     cssClass?: string, //the CSS class that will be added to the html element created to display the button
     showPrayers?: boolean; //Tells whether to show the button's prayers when it is clicked. We need it in some scenarios where the button.onClick() function calls showPrayers(), and we don't hence need showChildButtonsOrPrayers() to call it again
     pursue?: boolean; //this is a boolean that will tell the showchildButtonsOrPrayers() whether to continue after calling the onClick() property of the button
@@ -26,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.7.2 (fixes to the editing mode and added Synaxarium 29/03)';
+const version: string = 'v4.7.3 (Major changes to the expandable and Book of Hours buttons and logic, fixes to the praxis response, adding the PrayersArrays object for all the prayersArrays, etc.)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -125,7 +122,7 @@ const Prefix = {
     massStGregory: 'Gregory_',
     massStJohn: 'John_',
     fractionPrayer: 'Fraction_',
-    commonDoxologies: 'DC_',
+    doxologies: 'Dox_',
     commonIncense: 'IC_',
     communion: 'Communion_',
     hymns: 'Hymns_',
@@ -183,7 +180,7 @@ const ReadingsIntrosAndEnds = {
     },
     psalmEnd: {
         AR: 'هلليلويا',
-        FR: '',
+        FR: 'Halleluja',
     },
     praxisIntro: {
         AR: 'الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين.',
@@ -364,21 +361,23 @@ const MassStBasilPrayersArray: string[][][] = [],
         CymbalVersesPrayersArray: string[][][] = [],
         PraxisResponsesPrayersArray: string[][][] = [],
         bookOfHoursPrayersArray: string[][][] = [];
-const allSubPrayersArrays = [
-    CommonPrayersArray,
-    MassCommonPrayersArray,
-    MassStBasilPrayersArray,
-    MassStGregoryPrayersArray,
-    MassStCyrilPrayersArray,
-    MassStJohnPrayersArray,
-    FractionsPrayersArray,
-    DoxologiesPrayersArray,
-    IncensePrayersArray,
-    CommunionPrayersArray,
-    PsalmAndGospelPrayersArray,
-    CymbalVersesPrayersArray,
-    PraxisResponsesPrayersArray,
-    bookOfHoursPrayersArray];
+const PrayersArrays = 
+    {
+    CommonPrayersArray: CommonPrayersArray,
+    MassCommonPrayersArray: MassCommonPrayersArray,
+    MassStBasilPrayersArray: MassStBasilPrayersArray,
+    MassStGregoryPrayersArray: MassStGregoryPrayersArray,
+    MassStCyrilPrayersArray: MassStCyrilPrayersArray,
+    MassStJohnPrayersArray: MassStJohnPrayersArray,
+    FractionsPrayersArray: FractionsPrayersArray,
+    DoxologiesPrayersArray: DoxologiesPrayersArray,
+    IncensePrayersArray: IncensePrayersArray,
+    CommunionPrayersArray: CommunionPrayersArray,
+    PsalmAndGospelPrayersArray:PsalmAndGospelPrayersArray,
+    CymbalVersesPrayersArray:CymbalVersesPrayersArray,
+    PraxisResponsesPrayersArray: PraxisResponsesPrayersArray,
+    bookOfHoursPrayersArray: bookOfHoursPrayersArray
+    };
 
 const
     lordGreatFeasts = [

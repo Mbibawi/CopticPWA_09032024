@@ -14,25 +14,42 @@
   font-family: BookAntiquaRegular;
   src: url(./fonts/BookAntiquaRegular.ttf);
 }
-@font-face {
-  font-family: ArabicMajalla;
-  src: url(./fonts/majalla.ttf);
-}
+
 @font-face {
   font-family: GentiumBookPlus;
   src: url(./fonts/GentiumBookPlus-Regular.ttf);
 }
+@font-face {
+  font-family: DCO;
+  src: url(./fonts/DCO-Bold.ttf);
+}
+@font-face {
+  font-family: DCO;
+  src: url(./fonts/DCO-BoldItalic.ttf);
+}
+@font-face {
+  font-family: DCO;
+  src: url(./fonts/DCO-Italic.ttf);
+}
+@font-face {
+  font-family: DCO;
+  src: url(./fonts/DCO-Regular.ttf);
+}
+
+
 .root{
   --inline-column-width: 30%;
   --text-column-width: 30%;
 }
+.Content{
+  display:grid;
+  grid-template-columns: 99.9vw;
+}
 .Container {
   display: grid;
-  justify-items: stretch;
-  max-width: 100vw;
-  margin:0px 0px;
-  align-content: center;
+  margin-top: 30px;
 }
+
 .inlineBtnsContainer{
   display:none;
   position: fixed;
@@ -47,129 +64,46 @@
   z-index: 3;
 }
 
-.Content {
-  z-index: 2;
-  opacity: 1;
-  display: grid;
-  opacity: 1;
-  justify-self: center;
-  width:100%;
-  justify-items: stretch;
-  margin-left: 0px;
-  margin-right: 0px;
-  overflow-x: hidden;
-}
+
 body{
-  z-index: 0;
+  display: grid;
+  grid-template-columns: 100%;
   background-image: url(./assets/PageBackgroundCross.jpg);
   background-size:7%;
   background-repeat: repeat;
-  display: grid;
-  width: 100%;
   overflow-x: hidden;
-  margin: 0px 0px;
-}
-.prayerTable {
-  display: block;
-}
-
-
-.AR,
-.CA {
-  font-weight: 500;
-}
-.FR,
-.EN {
-  font-size: 15pt;
-  font-weight: 500;
-  font-family: GentiumBookPlus;
-}
-.COP {
-  font-size: 14pt;
-  font-family: ArialCoptic;
+  margin: 1px;
+  justify-items: center ;
+  align-items: center;
 }
 
-.Menu {
-  background-color: #5270a3;
-}
+
 
 #sideBarBtns{
-  margin-top:10px;
-  margin-left: 2px;
-  margin-right: 0px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 98%;
+  margin-bottom: 5px;
+  margin-top:20px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
-.sideBarBtn, .inlineBtn {
-  border-radius: 9px;
-  background-color: #95190c;
-  margin-bottom: 2px;
-  border-color: #C45911 ;
-  align-items: center !important;
-}
+
 .sideBarBtn{
-  height: 8rem;
-  max-height: 60px;
-  width: 95%;
-  padding: 0px 1px;
+  color:white;
+  background-color: #95190c;
+  border-radius: 9px;
+  border-color: #c93702;
+  font-size: 12pt !important;
+  font-weight: bold !important;
+  height: fit-content;
+  max-height: 200px;
+  min-height: 9vw;
+  text-align: center;
+  width:98%;
+  margin-top: 2px !important;
+margin-bottom: 2px !important;
 }
 
-
-.sideBarBtn > p{
-  padding: 0.1vw 0.1vw;
-  margin: 0.1vw 0.1vw;
-  font-size: 1vmax;
-}
-.inlineBtns{
-  display:grid;
-  justify-items: center;
-  width:95%;
-  align-self: center;
-  justify-self: center;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  margin: 3px 3px;
-  overflow: hidden;
-}
-.inlineBtn, .mainPageBtns {
-height: fit-content;
-max-height: 28vh;
-min-width: 30vw;
-margin:2px 2px;
-justify-self: center;
-}
-
-.mainPageBtns{
-  background-position: center;
-  background-size:cover;
-  background-clip: border-box;
-  min-height: 22vh;
-  border-radius: 20px;
-  margin: 5px 5px;
-
-}
-.credentialsDiv{
-  font-style: italic;
-  font-size: 8pt;
-}
-
-.inlineBtn > p, .mainPageBtns>p{
-  font-size: 10pt;
-  font-weight: bold;
-  line-height: 9pt;
-  padding: 2px 2px;
-  margin: 1px 3px !important;
-}
-
-.mainPageBtns>p{
-  opacity: 100%;
-  color:rgb(255, 255, 255) !important;
-  width: 97%;
-  font-size: 14pt;
-  font-weight: bolder !important;
-  line-height: 18px;
-}
 
 
 
@@ -185,25 +119,13 @@ width: 40%;
   max-width: 100%;
   justify-items: stretch;
 }
-.btnText, .btnLableAR, .btnLableFR, .btnLableEN {
-  font-weight: bold;
-  font-size: 1.3vmax;
-  color: #f1f1f1;
-  font-family: "Times New Roman", Times, serif;
-  line-height:9pt;
-  overflow-wrap: normal;
-  margin:0px 5px;
-}
-.PrayerText {
-  padding: 0vw 0vw;
-  margin: 1vw 1vw;
-}
+
 
 .addLang, .langBtnAdd, .settingsBtn, .colorbtn {
   display: grid;
   background-color: rgba(161, 9, 29, 0.705);
   border-radius: 10px;
-  font-family: "Times New Roman", Times, serif; 
+  font-family: DCO; 
   width: 95%;
   margin: 1.5px 5px;
   padding: 3px !important;
@@ -218,88 +140,125 @@ width: 40%;
   justify-self: center;
 }
 
-div.Row.hiddenElement, div.hiddenElement {
+.hiddenElement {
   display:none !important;
 }
 .Row {
   display: grid;
-  border-left-width: 10pt;
-  column-gap: 5px ;
   height:fit-content;
   text-align: justify;
-  text-justify: inter-word;
   border-radius: 5px;
-  margin: 0px 0px;
-  padding:1px 5px;
-  justify-items: stretch;
-  justify-self: center ;
-  align-self: center;
-  align-items: top;
-  width: 93vw;
-  line-height: 30px;
+  justify-self: stretch !important;
+  max-width: 99.7vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
-.Title, 
-.SubTitle {
-  text-align: center;
-  background-color: #7E3B10 !important;
-  color: white;
-  border: #b94c04 solid 3pt ;
+p{
+  padding-right:7px;
+  padding-left:7px;
 }
-.Row > p.AR, 
-.Title >p.AR,
-.SubTitle>p.AR
+
+.AR
 {
   grid-area: AR;
   direction: rtl !important;
   font-family: GentiumBookPlus;
-  font-size: 3vmax;
+  font-size: 18.5pt;
+  font-weight: 500;
+  line-height: 30px;
 }
-.Row > p.CA, 
-.Title >p.CA
-.SubTitle >p.CA
+
+
+.CA
 {
-  font-size: 2.3vmax;
+  font-size: 12pt;
   grid-area: CA;
   direction: rtl !important;
   font-family: GentiumBookPlus;
   border-right-style: groove;
+  font-weight: 500;
+  line-height: 30px;
 }
 
-.Row > p.FR, 
-.Title >p.FR,
-.SubTitle >p.FR
+.FR
 {
  grid-area: FR;
  border-right-style: groove;
- font-size: 2.2vmax;
+ font-family: DCO;
+ font-size: 13pt;
+ font-weight: normal;
 }
 
-.Row > p.COP, 
-.Title >p.COP,
-.SubTitle >p.COP
+.COP
 {
   grid-area: COP;
   border-right-style: groove;
-  font-size: 2.1vmax;
+  font-family: ArialCoptic;
+  line-height: 25px;
 }
-.Title > p,
-.SubTitle> p
-{
+
+.Title, .SubTitle {
+  background-color: #7E3B10 !important;
+  color: white;
+  border: #b94c04 solid 3pt ;
   font-weight: bold;
-  font-size: medium;
+  font-size: medium !important;
   text-align: center !important;
-  text-justify: inter-word;
 }
-.Row >p, 
-.Title >p, 
-.SubTitle >p, 
-.Comments > p, 
-.CommentText > p{
-  margin: 3px 3px;
-  padding-right:8px;
-  line-height: 4vmax;
+
+.inlineBtns{
+  display:grid;
+  justify-items: center;
+  align-self: stretch;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  margin: 5px 5px;
+  overflow: hidden;
+  width:97%
 }
+
+.inlineBtn {
+  background-color: #95190c;
+height: fit-content;
+max-height: 120px;
+min-width: 150px;
+justify-self: center;
+border-color: #d44d2b;
+border-radius: 9px;
+color:white;
+}
+.inlineBtn>p, .sideBarBtn>p{
+  font-size: 12pt !important;
+  border: none !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  line-height: 20px;
+}
+
+.mainPageBtns{
+  background-position: center;
+  background-size:cover;
+  background-clip: border-box;
+  border-radius: 15px;
+  border: none !important;
+  margin: 5px 2px;
+  height: fit-content;
+  min-height: 24vw;
+  max-height: 24vw;
+  justify-self: stretch;
+  width: 97%;
+  color:rgb(255, 255, 255) !important;
+  font-size: 16pt !important;
+  font-weight: bolder !important;
+  line-height: 4vw;
+}
+.credentialsDiv{
+  font-style: italic;
+  font-size: 8pt;
+}
+
 .sign {
   font-size: 13px;
   color: white;
@@ -332,22 +291,22 @@ border-radius: 20px ;
   padding-right: 10px;
 
 }
-.DisplayModePresentation>p.AR{
+.DisplayModePresentation>.AR{
   text-align: justify;
   font-size: 8vh;
   line-height: 3rem;
 }
 
-.DisplayModePresentation>p.FR,
-.DisplayModePresentation>p.AR, 
-.DisplayModePresentation>p.COP{
+.DisplayModePresentation>.FR,
+.DisplayModePresentation>.AR, 
+.DisplayModePresentation>.COP{
   background-color: black;
   color:white;
   border-radius: 20px;
 }
 
-.DisplayModePresentation.Title,
-.DisplayModePresentation.SubTitle
+.Title.DisplayModePresentation,
+.SubTitle.DisplayModePresentation
 {
   grid-template: "FR AR";
   font-size: 10pt !important;
@@ -358,8 +317,8 @@ border-radius: 20px ;
   margin-bottom: 5px;
   background-color: white !important;
 }
-.DisplayModePresentation.Title>p,
-.DisplayModePresentation.SubTitle>p
+.Title.DisplayModePresentation>p,
+.SubTitle.DisplayModePresentation>p
 {
   font-size: 15pt !important;
   height: 10px;
@@ -372,8 +331,8 @@ border-radius: 20px ;
   color:red;
   background-color: white;
 }
-div.DisplayModePresentation.Comments,
-div.DisplayModePresentation.CommentText
+.Comments.DisplayModePresentation,
+.CommentText.DisplayModePresentation
 {
   display: none !important;
 }
@@ -409,22 +368,14 @@ div.DisplayModePresentation.CommentText
   border-left-style: solid;
   border-right-style: solid;
 }
-td{
-  display: table-cell;
-}
-tr{
-  display: table-row;
-}
-table{
-  display: table;
-}
+
 .btns {
   display: flex;
   align-items: center;
   flex-direction: row;
   align-items: stretch;
   padding: 3pt;
-  font-family: "Times New Roman", Times, serif;
+  font-family: DCO;
 }
 .colorbtn {
   border-radius: 10px;
@@ -447,7 +398,8 @@ table{
 /* The sidebar menu */
 .sideBar {
   height: 100%; /* 100% Full-height */
-  width: 0px; /* 0 width - change this with JavaScript */
+  min-width: 60px !important;
+  max-width: 250px;
   position: fixed; /* Stay in place */
   z-index: 3; /* Stay on top */
   top: 0;
@@ -469,15 +421,14 @@ table{
 .sideTitle > a{
   font-style: italic !important;
   color:white;
-  font-weight: bold !important;
-  font-size: 12pt !important;
-  padding-left: 3px !important;
-  padding-right: 3px !important;
-  margin-left: 4px !important;
-  margin-right: 4px !important;
+  font-size: 11pt !important;
   text-align: right !important;
-  /*background-color: darkslategray !important;*/
-  border-radius: 10px;
+  padding: 8px 8px 3px 3px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #c6c5c5;
+  display: block;
+  transition: 0.3s;
 }
 .sideTitle {
   border: solid;
@@ -485,18 +436,9 @@ table{
   border-radius: 10px;
   margin-top: 3px;
   width: 98%;
+  align-self: stretch;
 }
 
-
-/* The sidebar links */
-.sideBar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #c6c5c5;
-  display: block;
-  transition: 0.3s;
-}
 
 /* When you mouse over the navigation links, change their color */
 .sideBar a:hover, .sideTitle a:hover {
@@ -505,12 +447,15 @@ table{
 
 /* Position and style the close button (top right corner) */
 .sideBar .closebtn {
+  color:white;
   position: absolute;
   top: 0;
   right: 10px;
   font-size: 36px;
-  margin-bottom: 10px ;
+  margin-bottom: 3px ;
   padding: 0px 0px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 /* The button used to open the sidebar */
@@ -532,18 +477,11 @@ table{
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sideBar {
-    padding-top: 15px;
-  }
-  .sideBar a {
-    font-size: 18px;
-  }
-}
+
 .label {
   display: inline;
   font: 1rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: DCO;
 }
 #datePicker {
   display: inline;
@@ -553,15 +491,13 @@ table{
   padding-bottom: 5px;
   background-color: rgb(55, 211, 211);
 }
-#ProvideIDFromInput {
-  padding-top: 5vw;
-}
+
 .Comments, 
 .CommentText{
   align-content: stretch;
   background-color: ivory;
-  color: #2F5496;
-  font-size: 10pt;
+  color: #aac3ef;
+  font-size: 11pt !important;
   font-weight: bold;
   text-align: justify;
   padding: 0px 3px !important;
@@ -571,9 +507,7 @@ table{
 .CommentText {
   color: #C45911 !important;
 }
-.Comments >p{
-  align-content: stretch;
-}
+
 .settings{
   width:auto;
   height: 60px;
@@ -596,15 +530,18 @@ table{
   background-color: rgb(41, 43, 43) !important;
   width: 41vw;
   margin: 2px 2px;
-  min-height: 38vh;
+  height: fit-content;
+  min-height: 40vh;
   justify-items: center;
   border-radius: 20px;
 }
 .multipleChoicePrayersBtn >p{
+  color:white;
   font-weight: 600;
-  font-size: 10pt;
+  font-size: 11pt;
   line-height: 14pt;
   margin:1px 1px;
+  border-right: none !important ;
 }
 .btnsContainer{
   position: relative;
@@ -620,10 +557,9 @@ table{
 .dateDiv{
   display:grid;
   grid-template-columns: 34% 29% 34%;
-  max-height: 15%;
   margin-bottom: 5px;
   width: 97%;
-  align-items: center;
+  align-items: top;
   justify-items: center;
   justify-content: center;
   justify-self: stretch;
@@ -632,19 +568,16 @@ table{
   display:block;
   background-color: #0000008a !important;
   color:rgb(255, 255, 255);
-  font-size: 8pt;
+  font-size: 3vw;
   font-weight: bold;
   font-style: italic;
-  line-height: normal;
   border-style: groove;
   border-color: #422121;
   border-radius: 5px;
-  padding: 4px 4px;
-  margin-left:40px; 
-  margin-right:40px;
+  margin-top: 5px;
+  align-self: top;
+  padding: 1px 2px;
   justify-self: stretch;
-
-
 }
 
 
@@ -658,7 +591,7 @@ table{
   padding: 12pt;
 }
 
-div.ReadingIntro{
+.ReadingIntro{
   background-color: darkgoldenrod;
   margin-top: 0px;
  /* border-top: #111 solid 2pt;
@@ -666,7 +599,7 @@ div.ReadingIntro{
   border-left: #111 solid 4pt;
   border-right: #111 solid 4pt;
 }
-div.ReadingEnd{
+.ReadingEnd{
   background-color: burlywood;
   margin-bottom: 20px;
   border-bottom: #111 solid 3pt;
@@ -698,18 +631,18 @@ div.ReadingEnd{
   grid-template-columns: 100%;
 }
 
-.Row > p.amplifiedText.AR,
-.Row > p.amplifiedText.CA{
-  font-size:30pt !important;
-  line-height: 48px;
+.AR.amplifiedText,
+.CA.amplifiedText{
+  font-size:5vw !important;
+  line-height: 5.5vw;
 }
-.Row > p.amplifiedText.FR{
-  font-size:24pt !important;
-  line-height: 35px;
+.FR.amplifiedText{
+  font-size:5vw !important;
+  line-height:5.5vw;
 }
-.Row > p.amplifiedText.COP{
-  font-size:20pt !important;
-  line-height: 35px;
+.COP.amplifiedText{
+  font-size:5vw !important;
+  line-height: 5.5vw;
 }
 :lang(ar){
 quotes: '"' '"';

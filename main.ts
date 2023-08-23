@@ -1,5 +1,6 @@
 const copticReadingsDates: string[][] = getCopticReadingsDates();
 
+
 /**
  * Adds or removes a language to the userLanguages Array
  * @param el {HTMLElement} - the html button on which the user clicked to add or remove the language. The language is retrieved from the element's dataset
@@ -79,65 +80,69 @@ function autoRunOnLoad() {
  * @param {string[]} languagesArray - the languages available for this prayer. The button itself provides this array from its "Languages" property
  * @param {string[]} userLanguages - a globally declared array of the languages that the user wants to show.
  * @param {string} actorClass - a CSS class that will be given to the html element (a div) in which the text of the table row. This class sets the background color of the div according to who is saying the prayer: is it the Priest, the Diacon, or the Assembly?
+ * @param {HTMLDivElement} container - this is the html div element to which the newly created row will be appended at the specified position. If omitted, its default value is containerDiv
  */
-function createHtmlElementForPrayer(
-  tblRow: string[],
-  languagesArray: string[],
-  userLanguages: string[],
+function createHtmlElementForPrayer(params: {
+  tblRow: string[];
+  languagesArray: string[];
+  userLanguages?: string[];
   position?:
     | HTMLElement
     | DocumentFragment
     | { beforeOrAfter: InsertPosition; el: HTMLElement },
-    actorClass?:string
+  actorClass?: string,
+  container?: HTMLDivElement | DocumentFragment
+  }
 ): HTMLDivElement {
     //@ts-ignore
-    if (!tblRow || tblRow.length ===0) return console.log('No valid tblRow[][] object is passed to createHtmlElementForPrayer() ');
-  if (!actorClass) actorClass = splitTitle(tblRow[0])[1];
-  if (actorClass) {
+    if (!params.tblRow || params.tblRow.length ===0) return console.log('No valid tblRow[][] object is passed to createHtmlElementForPrayer() ');
+  if (!params.actorClass) params.actorClass = splitTitle(params.tblRow[0])[1];
+  if (params.actorClass) {
     let parsed = JSON
       .parse(localStorage.showActors)
-      .filter(el => el[0].EN === actorClass)
+      .filter(el => el[0].EN === params.actorClass)
     if (parsed.length > 0 && parsed[0][1] === false) return; //If had hide an actor, we will stop and return
   };
-  if (!userLanguages) userLanguages = JSON.parse(localStorage.userLanguages);
-  if (!position) position = containerDiv;
+  if (!params.userLanguages) params.userLanguages = JSON.parse(localStorage.userLanguages);
+  if (!params.position) params.position = containerDiv;
   let htmlRow: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string, titleBase:string;
+  if (!params.container) params.container = containerDiv;
   
-  titleBase = splitTitle(tblRow[0])[0];
+  titleBase = splitTitle(params.tblRow[0])[0];
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
   htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
 
-  if (actorClass) htmlRow.classList.add(actorClass); 
-  if (actorClass && actorClass.includes('Title')) {
+  if (params.actorClass) htmlRow.classList.add(params.actorClass); 
+  if (params.actorClass && params.actorClass.includes('Title')) {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
-      collapseText(htmlRow);
+      collapseOrExpandText({titleRow: htmlRow});
     }); //we also add a 'click' eventListener to the 'Title' elements
-   htmlRow.id = tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
+   htmlRow.id = params.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
   };
 
-  //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
-  for (let x = 1; x < tblRow.length; x++) {
+  //looping the elemparams.ents containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
+  for (let x = 1; x < params.tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
-    if (!tblRow[x] || tblRow[x] === ' ') continue;//we escape the empty strings if the text is not available in all the button's languages
+    if (!params.tblRow[x] || params.tblRow[x] === ' ') continue;//we escape the empty strings if the text is not available in all the button's languages
     if (
-      actorClass &&
-      (actorClass === "Comments" || actorClass === "CommentText")
+      params.actorClass &&
+      (params.actorClass === "Comments" || params.actorClass === "CommentText")
     ) {
       //this means it is a comment
-      x === 1 ? (lang = languagesArray[1]) : (lang = languagesArray[3]);
+      x === 1 ? (lang = params.languagesArray[1]) : (lang = params.languagesArray[3]);
     } else {
-      lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
+      lang = params.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     if (userLanguages.indexOf(lang) > -1) {  
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if(!actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
+      if(!params.actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
       
       p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
-      text = tblRow[x];
+      text = params.tblRow[x];
       p.lang = lang.toLowerCase();
       p.classList.add(lang);
       p.innerText = text;
@@ -150,14 +155,14 @@ function createHtmlElementForPrayer(
   }
   try{
   //@ts-ignore
-  position.el
+  params.position.el
     ? //@ts-ignore
-      position.el.insertAdjacentElement(position.beforeOrAfter, htmlRow)
+      params.position.el.insertAdjacentElement(params.position.beforeOrAfter, htmlRow)
     : //@ts-ignore
-      position.appendChild(htmlRow);
+      params.position.appendChild(htmlRow);
       return htmlRow;
   } catch (error) {
-    console.log('an error occured: position = ', position, ' and tblRow = ', tblRow);
+    console.log('an error occured: position = ', params.position, ' and tblRow = ', params.tblRow);
     console.log(error);
   }
 }
@@ -183,10 +188,14 @@ async function showTitlesInRightSideBar(
     rightTitlesDiv.innerHTML = "";
   } //we empty the side bar
   let bookmark: HTMLAnchorElement;
-  for (let i = 0; i < titlesCollection.length; i++) {
-    titlesCollection[i].id += i.toString(); //we do this in order to give each title a distinctive id in cases where all the titles have the same id
-    titlesArray.push(addTitle(titlesCollection[i] as HTMLElement));
-  }
+
+  titlesArray =
+    titlesCollection
+      .map(titleRow => {
+        titleRow.id += titlesCollection.indexOf(titleRow).toString();
+        return addTitle(titleRow)
+      });
+
   /**
    * Adds shortcuts to the diffrent sections by redirecting to the title of the section
    * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given language
@@ -196,17 +205,21 @@ async function showTitlesInRightSideBar(
       titleDiv:HTMLDivElement = document.createElement("div"); //this is just a container
     titleDiv.role = "button";
     if (dataGroup) titleDiv.dataset.group = dataGroup;
-    else titleDiv.dataset.group = titlesRow.dataset.root;
+    else titleDiv.dataset.group = titlesRow.id;
+    
+    titleDiv.classList.add("sideTitle");    
+    if (titlesRow.classList.contains(hidden)) titleDiv.classList.add(hidden); //if the html element from which we will create the title is hidden, we hide the title as well
+    
     rightTitlesDiv.appendChild(titleDiv);
     bookmark = document.createElement("a");
     titleDiv.appendChild(bookmark);
     bookmark.href = "#" + titlesRow.id; //we add a link to the element having as id, the id of the prayer
 
-    titleDiv.classList.add("sideTitle");
+
     titleDiv.addEventListener("click", () => {
-      closeSideBar(rightSideBar);
-      collapseText(titlesRow, undefined, true);
-    }); //when the user clicks on the div, the rightSideBar is closed
+      closeSideBar(rightSideBar); //when the user clicks on the div, the rightSideBar is closed
+      collapseOrExpandText({titleRow: titlesRow, collapse:false}); //We pass the 'toggleHidden' paramater = false in order to always show/uncollapse the sibligns 
+    }); 
     if (titlesRow.querySelector('.' + defaultLanguage)) {
       //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
       text += titlesRow
@@ -230,6 +243,8 @@ async function showTitlesInRightSideBar(
       .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
       .replaceAll(String.fromCharCode(plusCharCode + 1) + ' ', '');
     bookmark.innerText = text;
+    //If the container is an 'Expandable' container, we hide the title
+    if (titlesRow.parentElement && titlesRow.parentElement.classList.contains('Expandable')) titleDiv.classList.add(hidden);
     return titleDiv
   }
   return titlesArray;
@@ -245,13 +260,12 @@ async function showTitlesInRightSideBar(
  */
 function showChildButtonsOrPrayers(
   btn: Button,
-  clear: boolean = true,
-  click: boolean = true
+  clear: boolean = true
 ) {
   if (!btn) return;
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;
-;
+
   hideInlineButtonsDiv();
 
   if (clear) {
@@ -259,10 +273,8 @@ function showChildButtonsOrPrayers(
     containerDiv.style.gridTemplateColumns = "100%";
   }
 
-  if (btn.onClick && click) {
-    btn.onClick();
-    if (btn.pursue === false) return;
-  }
+  if (btn.onClick) btn.onClick();
+  
 
 if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers) showPrayers(btn, true, true, container);
     
@@ -271,21 +283,6 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
   setCSSGridTemplate(Array.from(container.querySelectorAll('div.Row'))); //setting the number and width of the columns for each html element with class 'Row'
   applyAmplifiedText(Array.from(container.querySelectorAll('div.Row')) as HTMLDivElement[]);
-  if (btn.inlineBtns) {
-    let newDiv = document.createElement("div");
-    newDiv.style.display = "grid";
-    btn.inlineBtns.map((b) => {
-      if (btn.btnID != btnGoBack.btnID) {
-        // for each child button that will be created, we set btn as its parent in case we need to use this property on the button
-        b.parentBtn = btn.parentBtn;
-      }
-      createBtn(b, newDiv, b.cssClass);
-    });
-    let s: string = (100 / newDiv.children.length).toString() + "% ";
-    newDiv.style.gridTemplateColumns = s.repeat(newDiv.children.length);
-    newDiv.classList.add("inlineBtns");
-    inlineBtnsDiv.appendChild(newDiv);
-  }
 
   
   if (btn.children && btn.children.length > 0) {
@@ -303,7 +300,7 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
     });
   }
 
-  showTitlesInRightSideBar(Array.from(container.querySelectorAll("div.Title")) as HTMLDivElement[]);
+  showTitlesInRightSideBar(Array.from(container.querySelectorAll(".Title, .SubTitle")) as HTMLDivElement[]);
 
   if (btn.parentBtn
     && btn.btnID !== btnGoBack.btnID
@@ -338,24 +335,20 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
 }
 
 /**
- * Adds the data-group attribute to all all the divs children of the html element passed to it as an argument
- * @param {htmle}  container - the html element container for which we will  add the data-group attribute to each of its div children  
+ * This function adds the same data-group to all the divs that need to be hidden or shown when a div having the class 'Title' or 'SubTitle' is clicked (this div is passed to the function in the titleRow argument). The data-group that will be given to each div is same as the data-root of the titleRow div.
+ * @param {string} titleClass - the type of name of the title class ('Title' or 'SubTitle'), of the main div. Its default value is 'Title'
+ * @param {HTMLElement} titleRow - is a div element having as class either 'Title' or 'Subtitle'
  */
-async function addDataGroupsToContainerChildren(container: HTMLElement | DocumentFragment, titleClass: string = 'Title', titleRow?: HTMLElement) {
-  if (titleRow
-      && titleRow.classList.contains(titleClass)) {
+async function addDataGroupsToContainerChildren(titleClass: string = 'Title', titleRow: HTMLElement) {
+  if (!titleRow
+    || !titleRow.classList.contains(titleClass)) return;
+    //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
     let nextSibling = titleRow.nextElementSibling as HTMLElement;
     while (nextSibling
       && !nextSibling.classList.contains(titleClass)) {
       nextSibling.dataset.group =titleRow.dataset.root;
       nextSibling = nextSibling.nextElementSibling as HTMLElement;
     }
-    return
-  };
-
-  if (!container || !container.children) return;
-  Array.from(container.children)
-    .forEach((child: HTMLElement) => {addDataGroupsToContainerChildren(undefined, undefined, child) })
 }
 
 
@@ -420,17 +413,20 @@ function createBtn(
   newBtn.id = btn.btnID;
   //Adding the labels to the button
   for (let lang in btn.label) {
-    if (!btn.label[lang]) continue;
+    if (!btn.label[lang]
+      || (Object.keys(btn.label).indexOf(lang) !== 0
+       && Object.keys(btn.label).indexOf(lang) !==1)) continue;
     //for each language in btn.text, we create a new "p" element
       let btnLable = document.createElement("p");
       //we edit the p element by adding its innerText (=btn.text[lang], and its class)
-      editBtnInnerText(btnLable, btn.label[lang], "btnLable" + lang);
+
+      editBtnInnerText(btnLable, btn.label[lang], userLanguages[Object.keys(btn.label).indexOf(lang)]);
       //we append the "p" element  to the newBtn button
       newBtn.appendChild(btnLable);
   }
   btnsBar.appendChild(newBtn);
 //If no onClick parameter/argument is passed to createBtn(), and the btn has any of the following properties: children/prayers/onClick or inlinBtns, we set the onClick parameter to a function passing the btn to showChildButtonsOrPrayers
-  if(!onClick && (btn.children || btn.prayersSequence || btn.onClick || btn.inlineBtns)) onClick = () => showChildButtonsOrPrayers(btn, clear);
+  if(!onClick && (btn.children || btn.prayersSequence || btn.onClick)) onClick = () => showChildButtonsOrPrayers(btn, clear);
 //Else, it is the onClick parametr that will be attached to the eventListner
     newBtn.addEventListener("click", (e) => {
       e.preventDefault;
@@ -794,18 +790,18 @@ function getCopticReadingsDates(): string[][] {
 
 function toggleSideBars() {
   if (
-    leftSideBar.classList.contains("extended") &&
-    rightSideBar.classList.contains("collapsed")
+    !leftSideBar.classList.contains(hidden) &&
+    rightSideBar.classList.contains(hidden)
   ) {
     closeSideBar(leftSideBar);
   } else if (
-    rightSideBar.classList.contains("extended") &&
-    leftSideBar.classList.contains("collapsed")
+    !rightSideBar.classList.contains(hidden) &&
+    leftSideBar.classList.contains(hidden)
   ) {
     closeSideBar(rightSideBar);
   } else if (
-    leftSideBar.classList.contains("collapsed") &&
-    leftSideBar.classList.contains("collapsed")
+    leftSideBar.classList.contains(hidden) &&
+    leftSideBar.classList.contains(hidden)
   ) {
     openSideBar(leftSideBar);
   }
@@ -818,13 +814,8 @@ function toggleSideBars() {
 async function openSideBar(sideBar: HTMLElement) {
   let btnText: string = String.fromCharCode(9776) + "Close Sidebar";
   let closeBtn = sideBar.querySelector('.closebtn') as HTMLElement;
-  let width: string = "40%";
-  if (sideBar === rightSideBar)
-    {closeBtn.style.left = '10px'; width = '50%'};
-
-  sideBar.style.width = width;
-  sideBar.classList.remove("collapsed");
-  sideBar.classList.add("extended");
+  
+  sideBar.classList.remove(hidden);
   sideBarBtn.innerText = btnText;
   sideBarBtn.removeEventListener("click", (ev) => {
     ev.preventDefault;
@@ -861,10 +852,8 @@ function reloadScriptToBody(scriptIDs: string[]) {
  */
 async function closeSideBar(sideBar: HTMLElement) {
   //let btnText: string = String.fromCharCode(9776) + "Open Sidebar";
-  let width: string = "0px";
-  sideBar.style.width = width;
-  sideBar.classList.remove("extended");
-  sideBar.classList.add("collapsed");
+  //sideBar.classList.remove("extended");
+  sideBar.classList.add(hidden);
   //sideBarBtn.innerText = btnText;
   sideBarBtn.removeEventListener("click", (ev) => {
     ev.preventDefault;
@@ -907,26 +896,26 @@ function DetectFingerSwipe() {
       if (xDiff > 10) {
         /* right to left swipe */
         if (
-          leftSideBar.classList.contains("extended") &&
-          rightSideBar.classList.contains("collapsed")
+          !leftSideBar.classList.contains(hidden) &&
+          rightSideBar.classList.contains(hidden)
         ) {
           closeSideBar(leftSideBar);
         } else if (
-          rightSideBar.classList.contains("collapsed") &&
-          leftSideBar.classList.contains("collapsed")
+          rightSideBar.classList.contains(hidden) &&
+          leftSideBar.classList.contains(hidden)
         ) {
           openSideBar(rightSideBar);
         }
       } else if (xDiff < -10) {
         /* left to right swipe */
         if (
-          leftSideBar.classList.contains("collapsed") &&
-          rightSideBar.classList.contains("collapsed")
+          leftSideBar.classList.contains(hidden) &&
+          rightSideBar.classList.contains(hidden)
         ) {
           openSideBar(leftSideBar);
         } else if (
-          rightSideBar.classList.contains("extended") &&
-          leftSideBar.classList.contains("collapsed")
+          !rightSideBar.classList.contains(hidden) &&
+          leftSideBar.classList.contains(hidden)
         ) {
           closeSideBar(rightSideBar);
         }
@@ -1014,10 +1003,14 @@ function showPrayers(
   clearContent = true,
   clearRightSideBar: boolean = true,
   position:
-    { el: HTMLElement; beforeOrAfter: InsertPosition }
+    {
+      el: HTMLElement;
+      beforeOrAfter: InsertPosition
+    }
     | HTMLElement | DocumentFragment = containerDiv 
 ): HTMLDivElement[][] | void {
-
+  let container: DocumentFragment;
+  if (btn.docFragment) { container = btn.docFragment };
   if (!btn || !btn.prayersSequence) return;
 
   if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID) closeSideBar(leftSideBar);
@@ -1039,10 +1032,12 @@ function showPrayers(
       return wordTable
         .map((row) => {
             return createHtmlElementForPrayer(
-              row,
-              btn.languages,
-              JSON.parse(localStorage.userLanguages),
-              position
+              {
+                tblRow: row,
+              languagesArray: btn.languages,
+              position: position,
+              container: container
+              }
             );
         });
   }) as HTMLDivElement[][];
@@ -1065,26 +1060,120 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
         row.style.gridTemplateAreas = setGridAreas(row);
 
-      if (row.classList.contains('Title')
-        || row.classList.contains('SubTitle')) {
+      if (checkIfTitle(row)) {
         //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
         row.role = "button";
-        let defLangParag = row.querySelector('p[lang="' + defaultLanguage.toLowerCase() + '"]') as HTMLElement;
-        if (!defLangParag) defLangParag = row.lastElementChild as HTMLElement;
-        if (!defLangParag) return console.log('no paragraph with lang= ' + defaultLanguage);
-        if (!row.dataset.isCollapsed) row.dataset.isCollapsed = 'false'; //If row doesn't have data-is-collapsed attribute, we add it and set it to 'false' which means that the title is not collapsed
-        if (defLangParag.innerText.includes(plusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(plusSign + ' ', '');//We remove the + sign in the begining (if it exists)
-        
-        if (defLangParag.innerText.includes(minusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(minusSign + ' ', ''); //!Caution: we need to work withthe innerHTML in order to avoid losing the new line or any formatting to the title text when adding the + or - sing. So don't change the innerHTML to innerText or textContent 
-        if (row.dataset.isCollapsed === 'true') defLangParag.innerHTML =
-          plusSign + " " + defLangParag.innerHTML; //We add the plus (+) sign at the begining
-        if (row.dataset.isCollapsed === 'false') defLangParag.innerHTML =
-          minusSign + " " + defLangParag.innerHTML;//We add the minus (-) sig at the begining;
-        if (row.classList.contains('Title'))addDataGroupsToContainerChildren(undefined, 'Title', row);
-        if (row.classList.contains('SubTitle')) addDataGroupsToContainerChildren(undefined, 'SubTitle', row);
+
+
+        addDataGroupsToContainerChildren(row.classList[row.classList.length - 1], row);
+
+
+        (async function addPlusAndMinusSigns(){
+            let defLangParag = row.querySelector('p[lang="' + defaultLanguage.toLowerCase() + '"]') as HTMLElement;
+            if (!defLangParag) defLangParag = row.lastElementChild as HTMLElement;
+            if (!defLangParag) return console.log('no paragraph with lang= ' + defaultLanguage);
+            
+          if (defLangParag.innerHTML.includes(plusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(plusSign + ' ', '');//We remove the + sign in the begining (if it exists)
+          
+            if (defLangParag.innerHTML.includes(minusSign + ' ')) defLangParag.innerHTML = defLangParag.innerHTML.replace(minusSign + ' ', ''); //!Caution: we need to work with the innerHTML in order to avoid losing the new line or any formatting to the title text when adding the + or - sing. So don't change the innerHTML to innerText or textContent 
+    
+            if (row.dataset.isCollapsed) defLangParag.innerHTML =
+            plusSign + " " + defLangParag.innerHTML; //We add the plus (+) sign at the begining
+          
+            if (!row.dataset.isCollapsed) defLangParag.innerHTML =
+              minusSign + " " + defLangParag.innerHTML;//We add the minus (-) sig at the begining;
+    
+        })();
       };
 
       if (row.classList.contains('Diacon')) replaceMusicalNoteSign(Array.from(row.querySelectorAll('p')));
+
+      (function formatRow() {
+        return;
+
+        if (row.classList.contains('showDae')) {
+          row.style.color =  '#5270a3';
+          row.style.fontWeight=  'bold';
+          row.style.padding = '7px';
+        }
+        if (row.classList.contains(displayModes[1])) {
+          if (row.classList.contains('Comments') || row.classList.contains('CommentText')) row.classList.add(hidden);
+        };
+
+
+        
+      })();
+
+
+      (function formatParagraphs() {
+        return;
+      let paragraphs = Array.from(row.children) as HTMLParagraphElement[];
+        paragraphs.forEach(p => {
+          if (p.tagName !== 'P') return;
+
+          p.style.display = 'block';
+          p.style.gridArea = p.lang.toUpperCase();
+          p.style.padding = '0px 7px 0px 7px';
+          p.style.textAlign = 'justify';
+
+          if (paragraphs.indexOf(p) !== paragraphs.length - 1) {
+            p.style.borderRightStyle = 'groove';
+          }
+
+          if (row.classList.contains(displayModes[1])) {
+            p.style.backgroundColor = 'black';
+            p.style.color = 'white';
+            p.style.borderRadius = '20px';
+          }
+
+          if (p.lang === 'ar' || p.lang === 'ca') {
+            p.style.direction = 'rtl';
+            p.style.fontFamily = 'GentiumBookPlus';
+            p.style.fontSize = '18.5pt';
+            p.style.fontWeight = '500';
+            p.style.lineHeight = '30px';
+            if (row.classList.contains(displayModes[1])) {
+              p.style.fontSize = '8vh';
+              p.style.lineHeight = '3rem';
+            }
+          } else if (p.lang === 'fr' || p.lang === 'fr') {
+            p.style.fontFamily = 'DCO';
+            p.style.fontSize = '13pt';
+            p.style.fontWeight = 'normal';
+          } else if (p.lang === 'cop') {
+            p.style.fontFamily = 'ArialCoptic';
+            p.style.lineHeight = '25px';
+          
+          }
+
+          if (row.classList.contains('Title') || row.classList.contains('SubTitle')){
+            p.style.textAlign = 'center';
+
+          }
+          if (row.classList.contains('colorbtn')){
+            p.style.margin = '1px 1px';
+
+          }
+          if (row.classList.contains('inlineBtn') || row.classList.contains('sideBarBtn')  ){
+            p.style.fontSize = '12pt';
+            p.style.marginTop = '1px';
+            p.style.marginBottom = '1px';
+            p.style.lineHeight = '20px';
+
+          }
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+        }
+        )
+      })();
     });
 };
 
@@ -1152,19 +1241,43 @@ async function setButtonsPrayers(){
   });
 }
 /**
- * Hides all the nextElementSiblings of the element, if the nextElementSibling classList does not include 'Title'. It does this by toggeling the "display" property of the html elements
- * @param {HTMLElement} element - the html element which nextElementSiblings display property will be toggled between 'none' and 'grid'
+ * Hides all the nextElementSiblings of a title html element (i.e., a div having the class 'Title' or 'SubsTitle') if the nextElementSibling has the same data-group attribute as the title html element
+ * @param {HTMLElement} titleRow - the html element containing the title, which, when clicked, we will toggle the 'hidden' class from all its  nextElementSiblings
+ * @param {HTMLElement} container - the html element containing the titleRow and its siblings. If ommitted, its default value is containerDiv
+ * @param {boolean} toggleHidden - if set to 'true', the function will not toggle the 'hidden' class from the sibligings, but will instead always remove it if presnet. i.e., this option will make the function always show the siblings and never hide them. This was needed in some scenarios
  */
-function collapseText(titleRow: HTMLElement, container: HTMLElement = containerDiv, show:boolean= null) {
-  if (localStorage.displayMode === displayModes[1]) return;
-  container.querySelectorAll('div[data-group="' + titleRow.dataset.root + '"]')
-    .forEach((div: HTMLDivElement) => {
-      if(div !== titleRow && !div.id.endsWith('Expandable')) {
-        if (show === true && div.classList.contains(hidden)) div.classList.remove(hidden);
-        if(show === false || show === null) div.classList.toggle(hidden);
-      }
+function collapseOrExpandText(params:
+  {
+    titleRow: HTMLElement;
+    collapse?: boolean
+}) {
+  if (localStorage.displayMode === displayModes[1]) return; //When we are in the 'Presentation' display mode, the titles sibligins are not hidden when we click the title div
+
+  if (params.collapse === true) {
+    params.titleRow.dataset.isCollapsed = 'true';
+  } else if (params.collapse === false) {
+    params.titleRow.dataset.isCollapsed = '' 
+  } else {
+    //In this case we will toggle the isCollapsed status
+    if (params.titleRow.dataset.isCollapsed)
+    params.titleRow.dataset.isCollapsed = '';
+    else if (!params.titleRow.dataset.isCollapsed)
+    params.titleRow.dataset.isCollapsed = 'true';
+  }
+  togglePlusAndMinusSignsForTitles(params.titleRow);
+
+  //Hiding or showing the elements linked to the title (titleRow)
+  Array.from(params.titleRow.parentElement.children)
+    .filter((div: HTMLElement) =>
+      div.dataset.group
+      && div.dataset.group === params.titleRow.dataset.root)
+    .forEach(div => {
+      if (div === params.titleRow) return;
+
+      if (params.titleRow.dataset.isCollapsed && !div.classList.contains(hidden)) div.classList.add(hidden);
+      else if(div.classList.contains(hidden) && !div.classList.contains('Expandable')) div.classList.remove(hidden);
     });
-  togglePlusAndMinusSignsForTitles(titleRow);
+
 };
 
 /**
@@ -1175,22 +1288,20 @@ function collapseText(titleRow: HTMLElement, container: HTMLElement = containerD
 async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:number = plusCharCode) {
   if (!titleRow.children) return;
   let parag: HTMLElement;
-  parag = Array.from(titleRow.children)
+  parag =
+    Array.from(titleRow.children)
     .filter(child=>
-            child.textContent.startsWith(String.fromCharCode(plusCode))
-      || child.textContent.startsWith(String.fromCharCode(plusCode+1))
+            child.innerHTML.startsWith(String.fromCharCode(plusCode))
+      || child.innerHTML.startsWith(String.fromCharCode(plusCode+1))
   )[0] as HTMLElement;
   if (!parag) return;
-  if (parag.textContent.includes(String.fromCharCode(plusCode))) {
-    titleRow.dataset.isCollapsed = 'false';
-    parag.innerText = parag.innerText.replace(
+  if (!titleRow.dataset.isCollapsed) {
+    parag.innerHTML = parag.innerHTML.replace(
       String.fromCharCode(plusCode),
       String.fromCharCode(plusCode+1)
     );
-  } else if (parag.textContent.includes(String.fromCharCode(plusCode+1))
-  ) {
-    titleRow.dataset.isCollapsed = 'true';
-    parag.innerText = parag.innerText.replace(
+  } else if (titleRow.dataset.isCollapsed) {
+    parag.innerHTML = parag.innerHTML.replace(
       String.fromCharCode(plusCode+1),
       String.fromCharCode(plusCode)
     );
@@ -1201,18 +1312,18 @@ async function togglePlusAndMinusSignsForTitles(titleRow: HTMLElement, plusCode:
  * Collapses all the tiltes (i.e. all the divs with class 'Title' or 'SubTitle') in the html element passed as argument
  * @param {HTMLElement} container - the html element in which we will collapse all the divs having as class 'Title' or 'SubTitle'
  */
-function collapseAllTitles(htmlRows: HTMLDivElement[]) {
+function collapseAllTitles(htmlRows: HTMLDivElement[], hideSideBarTitle:boolean = false) {
   if (!htmlRows || htmlRows.length === 0) return;
   if (localStorage.displayMode === displayModes[1]) return;
   htmlRows
     .forEach((row:HTMLElement) => {
-      if (!row.classList.contains('Title')
-        && !row.classList.contains('SubTitle')) {
-        row.classList.add(hidden);
-      } else {
+      if (!checkIfTitle(row) && !row.classList.contains(hidden))
+          row.classList.add(hidden);
+      else {
         row.dataset.isCollapsed = 'true';
         togglePlusAndMinusSignsForTitles(row);
-      }
+        if(hideSideBarTitle) hideOrShowTitle(row, true)
+      };
     });
 }
 /**
@@ -1258,12 +1369,10 @@ async function showMultipleChoicePrayersButton(
   masterBtnDiv?: HTMLElement,
   anchor?:HTMLElement
 ) {
-  console.log('filteredPrayers = ', filteredPrayers);
   if (!anchor) console.log('anchor missing');
   if (!masterBtnDiv && anchor) {
     masterBtnDiv = document.createElement("div"); //a new element to which the inline buttons elements will be appended
     anchor.insertAdjacentElement("afterend", masterBtnDiv); //we insert the div after the insertion position
-    console.log('created master div', masterBtnDiv)
   }
   
   let prayersMasterBtn: Button, next: Button;
@@ -1272,7 +1381,7 @@ async function showMultipleChoicePrayersButton(
   prayersMasterBtn = new Button({
     btnID: masterBtnID,
     label: btnLabels,
-    inlineBtns: await createInlineBtns(), //The inlineBtns are not added immediately, they are added later by createInlineBtns() below
+    children: await createInlineBtns(), //The inlineBtns are not added immediately, they are added later by createInlineBtns() below
     pursue: false, //Important! we must keep it false in order to stop the showChildButtonsOrPrayers() from continuing the execution after calling the onClick() property of the master button. Otherwise, this will show again the inlineButtons of the master button
     cssClass: inlineBtnClass,
     onClick: () => {
@@ -1296,11 +1405,12 @@ async function showMultipleChoicePrayersButton(
     },
   });
   function showGroupOfNumberOfPrayers(startAt: number, newDiv: HTMLDivElement, groupOfNumber: number) {
+    let childBtn: Button;
     //We set next to undefined, in case it was created before
     next = undefined;
           //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
-    if (prayersMasterBtn.inlineBtns.length > groupOfNumber
-      && prayersMasterBtn.inlineBtns.length - startAt > groupOfNumber) {
+    if (prayersMasterBtn.children.length > groupOfNumber
+      && prayersMasterBtn.children.length - startAt > groupOfNumber) {
             //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
             next = new Button({
               btnID: "btnNext",
@@ -1317,7 +1427,6 @@ async function showMultipleChoicePrayersButton(
                 showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
               }
             });
-              createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick)//notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
     } else {
       next = new Button({
         btnID: "btnNext",
@@ -1326,22 +1435,23 @@ async function showMultipleChoicePrayersButton(
         onClick: () => {
           //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
           hideInlineButtonsDiv();
+          createFakeAnchor(prayersMasterBtn.btnID);
         }
-      });
-        createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick)//notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 3 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
-      
-    }
+      });      
+    };
+
+    createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick)//notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 2 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
     
     for (
       let n = startAt;
-      n < startAt + groupOfNumber && n < prayersMasterBtn.inlineBtns.length;
+      n < startAt + groupOfNumber && n < prayersMasterBtn.children.length;
       n++
     ) {
       //We create html buttons for the 1st 6 inline buttons and append them to newDiv
-      let b = prayersMasterBtn.inlineBtns[n];
-      createBtn(b, newDiv, b.cssClass, false, b.onClick);
+      childBtn = prayersMasterBtn.children[n];
+      createBtn(childBtn, newDiv, childBtn.cssClass, false, childBtn.onClick);
     }
-  }
+  };
   //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
   createBtn(prayersMasterBtn, masterBtnDiv, prayersMasterBtn.cssClass, false, prayersMasterBtn.onClick);
   masterBtnDiv.classList.add("inlineBtns");
@@ -1352,7 +1462,8 @@ async function showMultipleChoicePrayersButton(
    */
   async function createInlineBtns() {
     let btns: Button[] = [];
-    filteredPrayers.map((prayerTable) => {
+    btns = filteredPrayers
+      .map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
@@ -1405,7 +1516,7 @@ async function showMultipleChoicePrayersButton(
           createFakeAnchor(masterBtnID);
         },
       });
-      btns.push(inlineBtn);
+      return inlineBtn;
     });
     return btns;
   }
@@ -1869,22 +1980,24 @@ function insertPrayersAdjacentToExistingElement(
   tables: string[][][],
   languages: string[],
 position: { beforeOrAfter: InsertPosition; el: HTMLElement }
-):HTMLElement[]{
+):HTMLElement[] | void | void[]{
+  
   if (!tables) return;
- 
-  let createdElements: HTMLElement[] = [],
-    created: HTMLDivElement
-  tables
-    .map((table) => {
-  if (!table || table.length === 0) return;
+  
+  return tables
+    .map(table => {
+      if (!table || table.length === 0) return;
       table
-        .map((row) => {
-created = createHtmlElementForPrayer(
-  row, languages, undefined, position);
-      if(created) createdElements.push(created)
-});
-});
-  return createdElements
+        .map(row => {
+          return createHtmlElementForPrayer(
+            {
+              tblRow: row,
+              languagesArray: languages,
+              position: position
+            }
+          ) as HTMLElement;
+        });
+    });
 }
 
 /**
@@ -1962,42 +2075,43 @@ function playingWithInstalation() {
 
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
-  PrayersArray.map((wordTable) => {
+  PrayersArray
+    .map((wordTable) => {
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
     if (wordTable[0][0].startsWith(Prefix.commonPrayer)) {
-      CommonPrayersArray.push(wordTable);
+      PrayersArrays.CommonPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.massStBasil)) {
-      MassStBasilPrayersArray.push(wordTable);
+      PrayersArrays.MassStBasilPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.massCommon)) {
-      MassCommonPrayersArray.push(wordTable);
+      PrayersArrays.MassCommonPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.massStGregory)) {
-      MassStGregoryPrayersArray.push(wordTable);
+      PrayersArrays.MassStGregoryPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.massStCyril)) {
-      MassStCyrilPrayersArray.push(wordTable);
+      PrayersArrays.MassStCyrilPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.massStJohn)) {
-      MassStJohnPrayersArray.push(wordTable);
+      PrayersArrays.MassStJohnPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.fractionPrayer)) {
-      FractionsPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.commonDoxologies)) {
-      DoxologiesPrayersArray.push(wordTable);
+      PrayersArrays.FractionsPrayersArray.push(wordTable);
+    } else if (wordTable[0][0].startsWith(Prefix.doxologies)) {
+      PrayersArrays.DoxologiesPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.commonIncense)) {
-      IncensePrayersArray.push(wordTable);
+      PrayersArrays.IncensePrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.incenseDawn)) {
-      IncensePrayersArray.push(wordTable);
+      PrayersArrays.IncensePrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.incenseVespers)) {
-      IncensePrayersArray.push(wordTable);
+      PrayersArrays.IncensePrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.communion)) {
-      CommunionPrayersArray.push(wordTable);
+      PrayersArrays.CommunionPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.psalmResponse)) {
-      PsalmAndGospelPrayersArray.push(wordTable);
+      PrayersArrays.PsalmAndGospelPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
-      PsalmAndGospelPrayersArray.push(wordTable);
+      PrayersArrays.PsalmAndGospelPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
-      CymbalVersesPrayersArray.push(wordTable);
-    }else if (wordTable[0][0].startsWith(Prefix.praxis)) {
-      PraxisResponsesPrayersArray.push(wordTable);
+      PrayersArrays.CymbalVersesPrayersArray.push(wordTable);
+    }else if (wordTable[0][0].startsWith(Prefix.praxisResponse)) {
+      PrayersArrays.PraxisResponsesPrayersArray.push(wordTable);
     } else if (wordTable[0][0].startsWith(Prefix.bookOfHours)) {
-      bookOfHoursPrayersArray.push(wordTable);
+      PrayersArrays.bookOfHoursPrayersArray.push(wordTable);
       if (wordTable[0][0].includes('1stHour')) {
         bookOfHours.DawnPrayersArray.push(wordTable);
       } else if (wordTable[0][0].includes('3rdHour')) {
@@ -2065,18 +2179,6 @@ function getDataRootSelector(root: string, isLike: boolean = false, htmlTag:stri
   }
 
 /**
- * Replaces the css class class of all tables in an array of tables (i.e., a string[][][]). The css class is added as a suffix to the title of each table, preceded by '&C='
- * @param {string[][][]} prayersArray - the array of tables 
- * @param {string} newClass - the new class that will replace the existing class
- */
-function replaceClass(prayersArray: string[][][], newClass:string) {
-  prayersArray.map(
-          table => {
-                  table.map(
-                          row => row[0] = splitTitle(row[0])[0] + '&C=' + newClass)
-          })
-}
-/**
  * Replaces the musical eight note sign with a span that allows to give it a class and hence give it a color
  * @param {number} code - the Char code of the eigth note (or any other character that we want to replace with a span with the same css class)
  * @returns 
@@ -2097,22 +2199,6 @@ async function replaceMusicalNoteSign(container: HTMLElement[]) {
   })
 }
 
-/**
- * Moves ah html element up or down in the DOM, before or after the specified number of siblings
- * @param {HTMLElement} element - the html element that we want to move
- * @param {number} by - the number of sibligns we want to move the element before or after (if number is <0, it moves element up, if >0 it moves it down)
- */
-function moveElementBeforeOrAfterXSiblings(element: HTMLElement,
-  by: number) {
-    let sibling:HTMLElement, position:InsertPosition
-  for (let i = 1; i <= by; i++){
-    if (by > 0) sibling = element.nextElementSibling as HTMLElement; position = 'afterend'
-    if (by < 0) sibling = element.previousSibling as HTMLElement; position = 'beforebegin'
-    if(i==by && sibling) sibling.insertAdjacentElement(position, element)
-  }
-
-};
-
 
 /**
  * Converts an group of html div elements each representing a row in the same table (i.e., the group of divs reprsents the entire table), into a string[][] each element represents a row of the table, and each element of each row, represents the text in a given cell of this row
@@ -2122,11 +2208,12 @@ function moveElementBeforeOrAfterXSiblings(element: HTMLElement,
  function convertHtmlDivElementsIntoArrayTable(htmlRows:HTMLDivElement[]):string[][] {
   let table: string[][] = [];
    htmlRows
-    .forEach((row: HTMLElement) => {
+     .forEach((row: HTMLElement) => {
+       if (!row.title) return alert('the row dosen\'t have title');
       table
         .push(Array.from(row.children)
           .map((p: HTMLElement) => p.innerText));
-      table[table.length - 1].unshift(row.dataset.root)
+       table[table.length - 1].unshift(row.title);
     });
     return table
   };
@@ -2156,4 +2243,61 @@ function compareArrays(sourceArray:string[][][], editedArray:string[][][]) {
     console.log('source Array length = edited Array length = ', sourceArray.length)
   }
   ;
+}
+function removeDuplicates(array:string[][][]) {
+  array
+    .map(tbl => {
+      array
+        .forEach(t => {
+          if (array.indexOf(t) !== array.indexOf(tbl)
+            && t[0][0] === tbl[0][0]
+            && t.length === tbl.length) {
+            console.log('first table = ', tbl, ' and duplicate = ', t);
+          }
+          else console.log(t[0][0]);
+    })
+  })
+}
+
+function makeExpandableButtonContainerFloatOnTop(btnContainer:HTMLDivElement, top:string) {
+    btnContainer.style.position = 'fixed';
+  btnContainer.style.top = top;
+  btnContainer.style.justifySelf = 'center';
+};
+
+function checkIfTitle(htmlRow: HTMLElement):boolean {
+  if (htmlRow.classList.contains('Title')
+    || htmlRow.classList.contains('SubTitle'))
+    return true;
+  else return false;
+};
+
+/**
+ * Hides all the titles shortcuts for the the html div elements included in the container, from the right side bar 
+ * @param {HTMLElement} container - the html element containing the title divs which we want to hide their titles shortcuts from the right side Bar
+ */
+function hideOrShowAllTitlesInAContainer(container: HTMLElement, hide:boolean = true) {
+  //We hide all the titles from the right side Bar
+ 
+  Array.from(container.children)
+    .filter((child: HTMLElement) => checkIfTitle(child))
+    .forEach(child => hideOrShowTitle(child as HTMLElement, hide));
+};
+/**
+ * Hides a title shortcut from the right side bar based on the id of the html element passed to it
+ * @param {HTMLElement} htmlTitle - the html element for which we want to hide the shortcut title in the side bar
+ */
+function hideOrShowTitle(htmlTitle:HTMLElement, hide:boolean){
+  let titles = Array.from(sideBarTitlesContainer.children) as HTMLDivElement[],
+    title: HTMLDivElement;
+  title =
+    titles
+    .filter((title: HTMLElement) =>
+      title.dataset.group === htmlTitle.id)[0];
+  if(!title) return
+  if (hide && !title.classList.contains(hidden))
+    title.classList.add(hidden);
+  if (!hide && title.classList.contains(hidden))
+    title.classList.remove(hidden);
+
 }
