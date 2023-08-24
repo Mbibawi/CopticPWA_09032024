@@ -1917,7 +1917,7 @@ function showSettingsPanel() {
           })
           document.getElementById('homeImg').insertAdjacentElement('afterend', select);
           hideInlineButtonsDiv();
-          select.addEventListener('change', ()=>editTablesArray(select))
+          select.addEventListener('change', () => editTablesArray({select:select }))
         }
       });
   })();

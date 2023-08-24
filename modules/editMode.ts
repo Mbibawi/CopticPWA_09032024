@@ -4,36 +4,40 @@ let sequence: string[] = [];
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
+function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, entry?: string, tableTitle?: string }) {
+
+ 
+  if (!args.clear) args.clear = true;
+  if(!args.entry && args.select) args.entry = args.select.selectedOptions[0].innerText;
+  
+  if (!args.entry) return;
+  
+  if (args.select && args.entry === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
+  
   containerDiv.style.gridTemplateColumns = '100%';
-  let entry: string = select.selectedOptions[0].innerText;
-
-  if (!entry) return;
-
-  if (entry === select.options[0].innerText) return; //entries[0] === 'Choose From the List'
 
   if (
     containerDiv.dataset.arrayName
-    && entry === containerDiv.dataset.arrayName
+    && args.entry === containerDiv.dataset.arrayName
     && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
   ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
 
-  containerDiv.dataset.arrayName = entry;
+  containerDiv.dataset.arrayName = args.entry;
 
-  if (entry === select.options[2].innerText) entry = prompt('Provide the function and the parameters', entry);//under development
-  if (entry.includes('Fun(')) {
-    eval(entry);
+  if (args.select && args.entry === args.select.options[2].innerText) args.entry = prompt('Provide the function and the parameters', args.entry);//under development
+  if (args.entry.includes('Fun(')) {
+    eval(args.entry);
     return
   }
 
   let tablesArray: string[][][];
   containerDiv.dataset.specificTables = 'false';
 
-  let languages = getLanguages(entry);
+  let languages = getLanguages(args.entry);
   if (!languages) languages = allLanguages;
 
-  if (entry === select.options[1].innerText) {
-    //select.options[1] = newTable
+  if (args.select && args.entry === args.select.options[1].innerText) {
+    //This is the add new table case
     containerDiv.dataset.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
     containerDiv.dataset.editedArray = 'PrayersArray';//We delete the dataSet value in order to avoid adding the table to the same array
 
@@ -50,18 +54,23 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
   }; 
 
   if (!tablesArray
-    &&entry !== select.options[1].innerText //i.e. if it is not 'new table'
+    && args.select
+    && args.entry
+    && args.entry !== args.select.options[1].innerText //i.e. if it is not 'new table'
     && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
   { containerDiv.dataset.specificTables = 'true' };
+
+  if(!tablesArray && !args.select && args.entry && args.tableTitle)
+  containerDiv.dataset.specificTables = 'true';//If we ware calling the function givint it the name of the array (entry) and the title of a table (tableTitle) without passing any select element, we will be editing a specific table not the whole tables in the array
   
-  if (!tablesArray) tablesArray = eval(entry);
+  if (!tablesArray) tablesArray = eval(args.entry);
   if (!tablesArray) return;
 
 
   if (containerDiv.dataset.specificTables === 'true') {
-    let tableTitle = prompt('Provide the name of the table you want to edit');
+    if (!args.tableTitle) args.tableTitle = prompt('Provide the name of the table you want to edit');
     let filteredArray:string[][][] = [];
-    tableTitle.split(', ')
+    args.tableTitle.split(', ')
         .map(title =>{
           filteredArray.push(
             tablesArray.filter(
@@ -79,10 +88,8 @@ function editTablesArray(select: HTMLSelectElement, clear: boolean = true) {
 
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
- // if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
-  let el: HTMLElement;
 
-  if (clear) containerDiv.innerHTML = ""; //we empty the containerDiv
+  if (args.clear) containerDiv.innerHTML = ""; //we empty the containerDiv
   showTables(tablesArray, languages);
 
 }
@@ -157,42 +164,49 @@ function addEdintingButtons(getButtons?:Function[]) {
     editPreviousTableBtn
   ];
 
-  getButtons.forEach(fun => fun(btnsDiv));
-
-}
+  getButtons.map(fun => fun(btnsDiv))
+    .forEach((btn: HTMLElement) => {
+      btn.style.maxHeight = '30px';
+      btn.style.marginBottom = '5px';
+    });
+  }
 
 /**
  * Creates a button for adding a new html element div representing a new row in a table
  * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
  */
-function addRowBtn(btnsDiv:HTMLElement){
+function addRowBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton= createEditingButton(
      () => addNewRow(document.getSelection().focusNode.parentElement),
      "Add Row"
      );
-     btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 };
 
-function addColumnBtn(btnsDiv:HTMLElement){
+function addColumnBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton= createEditingButton(
      () => addNewColumn(document.getSelection().focusNode as HTMLElement),
      "Add Column"
      );
-     btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 };
 
 
-  function saveToLocalStorageBtn(btnsDiv:HTMLElement){
+  function saveToLocalStorageBtn(btnsDiv:HTMLElement):HTMLButtonElement{
     let newButton= createEditingButton(() => saveModifiedArray(), "Save");
       btnsDiv.appendChild(newButton);
+      return newButton;
 }
 /**
  * Creates a button for exporting the edited text as an string[][][] in a js file
  * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
  */
-function exportToJSFileBtn(btnsDiv: HTMLElement) {
+function exportToJSFileBtn(btnsDiv: HTMLElement):HTMLButtonElement {
   let newButton = createEditingButton(() =>exportToJSFile(saveModifiedArray(), containerDiv.dataset.arrayName), "Export To JS");
   btnsDiv.appendChild(newButton);
+  return newButton;
 }
 
 /**
@@ -215,64 +229,67 @@ function getJSFileName(arrayName: string): string {
   
 }
 
-function changeTitleBtn(btnsDiv:HTMLElement){
+function changeTitleBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Change Ttile"
   );
-    btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 }
   
-function goToTableByTitleBtn(btnsDiv) {
+function goToTableByTitleBtn(btnsDiv):HTMLButtonElement{
   let newButton = createEditingButton(() => goToTableByTitle(), "Go To Table"
   );
-    btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 }
 
-  function changeClassBtn(btnsDiv:HTMLElement){
+  function changeClassBtn(btnsDiv:HTMLElement):HTMLButtonElement{
     let newButton = createEditingButton(
       () => changeCssClass(document.getSelection().focusNode.parentElement), "Class");
     btnsDiv.appendChild(newButton);
+    return newButton;
   }
 
-function deleteRowBtn(btnsDiv: HTMLElement) {
+function deleteRowBtn(btnsDiv: HTMLElement):HTMLButtonElement {
     let newButton = createEditingButton(
       () => deleteRow(document.getSelection().focusNode.parentElement), "Delete Row");
-      btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 }
   
-function addTableToSequenceBtn(btnsDiv:HTMLElement){
+function addTableToSequenceBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton = createEditingButton(
     () => addTableToSequence(document.getSelection().focusNode.parentElement),
     "Add To Sequence"
     );
-    btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 }
-function convertCopticFontsFromAPIBtn(btnsDiv: HTMLElement) {
+function convertCopticFontsFromAPIBtn(btnsDiv: HTMLElement):HTMLButtonElement {
   let newButton = createEditingButton(
     () => convertCopticFontFromAPI(document.getSelection().focusNode.parentElement),
     "Convert Coptic Font"
     );
-    btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 }
 
-function splitBelowBtn(btnsDiv:HTMLElement){
+function splitBelowBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton = createEditingButton(
   ()=>splitParagraphsToTheRowsBelow(),
   "Split Below"
 );
   btnsDiv.appendChild(newButton);
+  return newButton;
 }
 
-function exportSequenceBtn(btnsDiv:HTMLElement){
+function exportSequenceBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton = createEditingButton(
     () => exportSequence(),
     "Export Sequence"
     );
     btnsDiv.appendChild(newButton);
-    newButton = createEditingButton(
-    ()=>splitParagraphsToTheRowsBelow(),
-    "Split Below"
-  );
-    btnsDiv.appendChild(newButton);
+  return newButton;
   }
 function modifyTablesInTheirArrayBtn(btnsDiv:HTMLElement){
   let newButton = createEditingButton(
@@ -298,23 +315,25 @@ function deleteRow(htmlParag: HTMLElement) {
  * Displays the next table in the array if we are in a single table editing mode
  * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
  */
-function editNextTableBtn(btnsDiv:HTMLElement){
+function editNextTableBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton= createEditingButton(
      () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, true),
      "Next Table"
      );
-     btnsDiv.appendChild(newButton);
+  btnsDiv.appendChild(newButton);
+  return newButton;
 };
 /**
  * Edits the previous table in the array if we are in a single table editing mode
  * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
  */
-function editPreviousTableBtn(btnsDiv:HTMLElement){
+function editPreviousTableBtn(btnsDiv:HTMLElement):HTMLButtonElement{
   let newButton= createEditingButton(
      () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, false),
      "Previous Table"
      );
      btnsDiv.appendChild(newButton);
+     return newButton
 };
 
 /**
@@ -783,7 +802,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
   }
 }
 
-function exportSequence() {
+function exportSequence(){
   console.log(sequence);
   let empty = confirm("Do you want to empty the sequence?");
   if (empty) sequence = [];
@@ -1043,7 +1062,16 @@ function goToTableByTitle() {
   let rows:HTMLElement[] = Array.from(
     containerDiv.querySelectorAll('.Row') as NodeListOf<HTMLElement>)
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
-  if (rows.length === 0) return alert('Didn\'t find an element with the provided title');
+  if (rows.length === 0){
+    editTablesArray({
+      entry: containerDiv.dataset.arrayName,
+      tableTitle: title,
+      clear: true
+    });
+    return
+  }
+  
+  if(rows.length ===0) return alert('Didn\'t find an element with the provided title');
   rows[0].id = rows[0].dataset.root + String(0);
   createFakeAnchor(rows[0].id);
 }
