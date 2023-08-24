@@ -7015,7 +7015,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=1004", 
   " Lorsqu’il eut accompli son bon combat, il mourut octogénaire après avoir siégé sur le trône épiscopal un peu plus de 40 ans.", 
-  "ولما أكمل سعيه الصالح بسلام انتقل إلى الرب بعد أن أقام على كرسى الأسقفية أكثر من أربعين سنة،وكانت سُنوّ حياته تناهز الثمانين عاماً.", 
+  "ولما أكمل سعيه الصالح بسلام انتقل إلى الرب بعد أن أقام على كرسى الأسقفية أكثر من أربعين سنة، وكانت سُنوّ حياته تناهز الثمانين عاماً.", 
   ], 
   [
   Prefix.synaxarium+"&D=1004", 
@@ -7059,7 +7059,7 @@ ReadingsArrays.SynaxariumArray= [[
   ], 
   [
   Prefix.synaxarium+"&D=1004", 
-  "Ce saint décéda à la maison d’un notable aimant Dieu dans la ville de Sakha (سخا) nommé Dorothée (دوروثاؤس). Celui-ci l’envoya avec un groupe de personnes de confiance vers le monastère Az-zogag situé à l’ouest de la ville d’Alexandrie pour qu’il y soit enterré. En chemin ils trouvèrent que l’eau du Nil n’était pas assez profonde pour leur navire. Ils furent troublés et inquiets. Néanmoins Dieu permit que le navire passe malgré le peu d’eau et ils avancèrent une distance de six miles jusqu’à ce qu’ils atteignent la mer méditerranée. Ensuite ils voguèrent vers l’ouest et arrivèrent au monastère qui était situé en bord de mer. Ils y portèrent le corps de saint Sévère avec beaucoup d’honneur et l’installèrent dans le mausolée qu’avait érigé Dorothée pour lui. ", 
+  "Ce saint décéda à la maison d’un notable aimant Dieu dans la ville de Sakha (سخا) nommé Dorothée (دوروثاؤس).  Celui-ci l’envoya avec un groupe de personnes de confiance vers le monastère Az-zogag situé à l’ouest de la ville d’Alexandrie pour qu’il y soit enterré. En chemin ils trouvèrent que l’eau du Nil n’était pas assez profonde pour leur navire. Ils furent troublés et inquiets. Néanmoins Dieu permit que le navire passe malgré le peu d’eau et ils avancèrent une distance de six miles jusqu’à ce qu’ils atteignent la mer méditerranée. Ensuite ils voguèrent vers l’ouest et arrivèrent au monastère qui était situé en bord de mer. Ils y portèrent le corps de saint Sévère avec beaucoup d’honneur et l’installèrent dans le mausolée qu’avait érigé Dorothée pour lui. ", 
   "وذلك أنه تنيَّح في سخا (سخا مدينة تابعة لمحافظة كفر الشيخ، زارتها العائلة المقدسة ويوجد بها الحجر المطبوع عليه قدم السيد المسيح. كانت قديماً تسمى إيسوس خا أي كعب يسوع وتحرَّفت إلى سخا) عند أرخن مبارك اسمه دوروثيئوس، فأرسله مع بعض رجاله في سفينة إلى دير الزجاج غرب الإسكندرية ليُدفن هناك. ولما سارت السفينة في النيل لم تجد ماء كافياً لتحريكها، فاحتاروا وقلقوا. ولكن الله أظهر آية بأن جعل السفينة تسير في هذا الماء الضحل لمسافة ستة أميال، حتى وصلوا إلى شاطىء البحر الأبيض، ثم ساروا في البحر ناحية الغرب إلى أن وصلوا دير الزجاج على الشاطىء، فأنزلوه بإكرام عظيم ووضعوه في المكان الذي بناه له الأرخن دوروثيئوس.", 
   ], 
   [
@@ -8330,7 +8330,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=3004", 
   "En ce jour de l’an 391 des martyrs (675 après Jésus Christ) décéda saint Jean (يؤنس), l’higoumène de Scété (شيهيت).", 
-  "", 
+  "في مثل هذا اليوم من سنة 391 للشهداء ( 675م ) تنيَّح القديس الأنبا يوأنس قمص برية شيهيت. وُلِدَ هذا القديس سنة 585م ببلدة شبرا منصو التابعة لبلدة صا الحجر (صا الحجر: هي الآن قرية تابعة لمركز بسيون محافظة الغربية) من أبوين مسيحيين ربياه في حياة التقوى والفضيلة وعلماه العلوم الكنسية. ولما كبر اشتاق إلى الرهبنة فذهب وترَّهب في دير القديس مكاريوس ببرية شيهيت سنة 603م. وبعد مدة رسموه قساً ثم قمصاً للبرية سنة 641م. فاستضاءت البرية بتعاليمه وصار أباً لكثيرين من القديسين منهم الأنبا أبرآم والأنبا جاورجى، والأنبا مينا أسقف مدينة تمى، والأنبا زخارياس أسقف سخا، والأنبا إسحاق البطريرك 41، وكثيرون آخرون تتلمذوا على يديه. ولعظم تقواه كان عندما يوزع الأسرار المقدسة يعرف المستحق من غير المستحق. ومرات كثيرة كان يرى السيد المسيح على المذبح والملائكة تحيط به. وقع هذا القديس في أسر البربر ثلاث مرات، فاستعبدوه وأذلّوه، التقى في المرة الأخيرة بالقديس صموئيل المعترف رئيس دير جبل القلمون. وبنعمة الله عاد إلى ديره وإلى أولاده. وعندما قرُبَت أيام هذا الكاهن البار عَلِمَ بساعة انتقاله بإعلان سماوي فجمع أبناءه الرهبان وأوصاهم بحفظ وصايا الله والسير في طريق الآباء القديسين لينالوا معهم النصيب الصالح في فردوس النعيم. ثم مرض وأثناء مرضه رأى جماعة من القديسين قد حضروا لمرافقة روحه ففاضت روحه بيد الرب الذي أحبه، وصلى عليه الآباء الرهبان ودفنوه بإكرام جزيل. ولشدة محبتهم له احتفظوا بقطع من ثيابه وكانت سبباً في شفاء مرضى كثيرين.\nبركة صلواته فلتكن معنا. آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=3004", 
@@ -8355,7 +8355,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=3004", 
   "En ce jour de la seconde année après Jésus Christ les mages arrivèrent d’orient et ils se prosternèrent devant Lui.", 
-  "", 
+  "وفيه أيضاً من السنة الثانية لميلاد المخلص وصل المجوس من بلاد المشرق وسجدوا له في بيت لحم وقدَّموا له هداياهم ذهباً ولباناً ومراً. فالذهب يدل على أنه ملك، واللبان يدل على أنه إله يُقدَّم له البخور في الصلوات، والمر يدل على موته المحيى لأجل خلاص العالم. ثم أوحى إليهم في حلم ألا يرجعوا إلى هيرودس لئلا يأتي ويقتل الصبي فانصرفوا في طريق أخرى إلى كورتهم ( مت 2: 9 – 12)، مبشرين بظهور الإله متجسداً لأجل خلاص جنس البشر. له المجد والكرامة إلى الأبد آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=3004", 
@@ -8370,7 +8370,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=3004", 
   "En ce jour de l’an 1240 des martyrs (1524 après Jésus Christ) eut lieu le martyre de l’higoumène Michel de Toukh (القمص ميخائيل الطوخي).", 
-  "", 
+  "وفيه أيضاً من سنة 1240 للشهداء (1524م) استشهد القديس القمص ميخائيل الطوخي. وكان من بلدة طوخ النصارى محافظة المنوفية. حفظ الكتب الإلهية وعلوم الكنيسة منذ صغره، فصار شماساً، وبعد أن تزوج اختاره الشعب قساً، ثم صار قمصاً مدبراً لشعبه. وشى به الأشرار إلى والي مصر، فأمر بالقبض عليه وأتوا به مُكبَّلاً بالحديد وأودعوه السجن، ثم حفروا له حفرة في الأرض وصُلبَ فيها منكساً طول النهار. أما القديس فكان شاكراً ومُسبِّحاً الله. ثم أمر الوالي بأن يطوفوا به في شوارع المدينة وهم يشتمونه. ولما علم بذلك البابا الأنبا غبريال الخامس، مكث ثلاثة أيام يصلى ويطلب من القديسة العذراء مريم أن تساعده على إتمام جهاده. فلما سمع القمص ميخائيل بصلاة البابا من أجله تعزّى وابتهجت نفسه. بعد ذلك عرض عليه الوالي إنكار الإيمان فرفض بشجاعة. فأشعلوا ناراً عظيمة مثل أتون بابل وألقوا فيها القديس فلم تؤثّر ولا على ثيابه، وكان يرى القديسة العذراء ومعها أربعة ملائكة يحيطون به. ثم طعنه جندي بحربة ففاضت روحه ونال إكليل الشهادة. بركة صلواته فلتكن معنا. آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=3004", 
@@ -8390,7 +8390,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=3004", 
   "En ce jour de l’an 20 des martyrs (304 après Jésus Christ), eut lieu le martyre de l’enfant saint Zacharie (القديس زكريا الطفل) et de son père saint Fag (القديس فاج) ainsi que 604 autres personnes.", 
-  "", 
+  "وفيه أيضاً من سنة 20 للشهداء (304م) استشهد القديس زكريا الطفل ووالده القديس فاج، و604 آخرون. وذلك أنه ثاني يوم المذبحة التي حدثت في مدينة أخميم وفي الوقت الذي كان الجنود يطرحون فيه بعض الشهداء في النار، رأى الطفل زكريا ملائكة يحيطون بالشهداء ويضعون أكاليل بهية على رؤوسهم، فصرخ زكريا إلى أبيه وأعلمه بهذا المنظر. ولما سمعت الجماهير صراخ الطفل أسرعوا نحوه يستفسرون منه عما رأى وإذ رأى الوالي الجموع تندفع نحو الطفل، سأل عن السبب، فعرَّفوه، فاستدعى الطفل وأمر بقطع لسانه وهو على كتف والده. وللحال نزل رئيس الملائكة ميخائيل وشفي لسان الطفل فصار يتكلم ويتهلل. فلما سمع الوالي بالمعجزة أمر بحرق الطفل ووالده. وبسببها آمن كثيرون وأعلنوا مسيحيتهم أمام الوالي الذي أمر بقتلهم بالسيوف والرماح وكان عددهم 604 شهيد، فنالوا أكاليل الشهادة. بركة صلواتهم فلتكن معنا. ولربنا المجد دائماً أبدياً آمين.", 
   ], 
   [
   Prefix.synaxarium+"&D=3004", 
@@ -8406,68 +8406,298 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=0105&C=Title", 
-  "1 Taubi", 
-  "1 طوبة\nاستشهاد القديس إسطفانوس رئيس الشمامسة\n\nاستشهاد القديس لاونديانوس\n\nاستشهاد القديسين ديوسقوروس وأخيه سكلابيوس\n", 
+  "1 Taubi\n1) Martyre de saint Etienne, l’archidiacre ;\n2) Martyre de saint Léonce ;\n\n3) Martyre de saint Dioscores et de son frère saint Séclapios", 
+  "1 طوبة\nاستشهاد القديس إسطفانوس رئيس الشمامسة\nاستشهاد القديس لاونديانوس\nاستشهاد القديسين ديوسقوروس وأخيه سكلابيوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0105", 
+  "En de jour de l’an 37 après Jésus Christ eut lieu le martyre de saint Etienne (استفانوس), l’archidiacre et le premier martyr.", 
   "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Il fut choisi, avec six autres diacres remplis d’Esprit Saint, de sagesse et de Foi, pour le ministère du diaconat et pour le service des pauvres.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Étienne, proclamait l’Evangile et il opérait de grands prodiges et signes parmi le peuple. Sa personnalité et ses miracles provoquèrent la jalousie de ses concitoyens juifs et grecs qui ne pouvaient pas résister à la sagesse et à l’Esprit qui le faisaient parler. Alors, ils s’emparèrent de lui, l’emmenèrent dans leur synagogue et l’accusèrent de blasphème contre le temple et la Loi. Etienne présenta sa défense en utilisant des arguments historiques d’une manière convaincante. Ceux qui siégeaient au Conseil suprême virent que son visage était comme celui d’un ange. Tous ensemble, ils se précipitèrent sur lui, l’entraînèrent hors de la ville et se mirent à le lapider. Étienne, pendant qu’on le lapidait, priait ainsi : « Seigneur Jésus, reçois mon esprit. »  Puis, se mettant à genoux, il s’écria d’une voix forte : « Seigneur, ne leur compte pas ce péché. » Et, après cette parole, il s’endormit dans la mort.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Les fidèles recueillirent son corps et l’enterrèrent avec beaucoup de respect.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Nous commémorons aussi aujourd’hui le martyre de saint Léonce (لاونديانوس).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Ceci eut lieu en Syrie à l’époque de l’empereur païen Maxime (مكسيميانوس). Celui-ci convoqua ce saint et lui promit une grande fortune s’il abandonnait le Christ et adorait les idoles. Mais Léonce refusa tous ces dons. En conséquence, l’empereur le fit torturer cruellement en utilisant diverses méthodes mais le saint supporta les souffrances et les tortures avec patience car le Christ lui donnait la force nécessaire et le relevait saint et sauf. Lorsque l’empereur perdit patience, il ordonna qu’on le décapite et il obtint ainsi la couronne du martyre. Le Seigneur fit apparaître de son corps de grands prodiges et sa réputation grandit dans toute la Syrie. Ils construisirent en son honneur des églises. ", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Nous commémorons aussi aujourd’hui le martyre de saint Léonce (لاونديانوس).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Ceci eut lieu en Syrie à l’époque de l’empereur païen Maxime (مكسيميانوس). Celui-ci convoqua ce saint et lui promit une grande fortune s’il abandonnait le Christ et adorait les idoles. Mais Léonce refusa tous ces dons. En conséquence, l’empereur le fit torturer cruellement en utilisant diverses méthodes mais le saint supporta les souffrances et les tortures avec patience car le Christ lui donnait la force nécessaire et le relevait saint et sauf. Lorsque l’empereur perdit patience, il ordonna qu’on le décapite et il obtint ainsi la couronne du martyre. Le Seigneur fit apparaître de son corps de grands prodiges et sa réputation grandit dans toute la Syrie. Ils construisirent en son honneur des églises. ", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0105", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
   "", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0205&C=Title", 
-  "2 Taubi", 
+  "2 Taubi\n1) Décès de saint Théonas ;\n2) Martyre de saint Gallinicus, évêque d’Oussime ;\n3) Décès de saint Youna", 
   "2 طوبة\nنياحة الأنبا ثاؤناس\nاستشهاد القديس غللينيكوس أسقف أوسيم\n\nنياحة القديس الأنبا يونا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0205", 
+  "En ce jour de l’an 17 des martyrs (301 après Jésus Christ) décéda saint Théonas (أنبا ثاؤنا), le 16ème pape d’Alexandrie.", 
   "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Ce saint avait été sacré patriarche le 2 Koyak (27 novembre 282). Il était un savant pieux, humble, rempli de douceur et d’amour envers tous ses contemporains. Pour que les fidèles puissent y prier, il édifia à Alexandrie une église dédiée à la sainte Vierge Marie. En effet, jusqu’à son époque, les fidèles priaient chez eux ou dans les cavernes par peur des persécutions. Par ailleurs, il put ramener à la Foi en Jésus Christ un grand nombre de païens et les baptiser. A son époque, il y avait à Alexandrie un hérétique nommé Sabellius (سبيليوس) qui prêchait que le Père, le Fils et le Saint Esprit étaient une seule hypostase (personne – أقنوم). Il l’excommunia et prouva la fausseté de ses enseignements en se référant à la sainte Bible. Après avoir achevé son bon combat, il décéda en paix. Il fut enterré au monastère « al-Maghara » (la caverne المغارة).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  " Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Nous commémorons aussi le martyre de saint Gallinicus (غللينيكوس), évêque d’Oussime (أوسيم) en l’an 21 des martyrs (305 après Jésus Christ).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Ce saint prodiguait ses enseignements à ses fidèles et les incitait à demeurer fermes dans la Foi et à ne pas adorer des idoles ni les encenser. Lorsque Dioclétien apprit cela, il ordonna qu’on l’arrête et le torture. En conséquence, le saint réunit ses fidèles à l’église, célébra la sainte liturgie eucharistique et les communia aux saints sacrements puis se rendit aux soldats alors que les fidèles étaient très tristes. Les soldats l’emmenèrent et le livrèrent à Arien le gouverneur d’Antinoë (أريانوس والي أنصنا) qui le fit torturer mais le Seigneur le guérissait et le consolait. Finalement, il rendit l’âme et obtint la couronne du martyre et les soldats jetèrent sa dépouille sur une dune. Des fidèles arrivèrent par inspiration divine, ils emmenèrent le corps et l’ensevelirent avec beaucoup d’honneurs.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Nous commémorons aussi le décès d’abba Youna (أنبا يونا), l’ermite.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Ce saint a vécu dans un monastère de Hager-Armânt (حاجر أرمنت) et il s’épuisait à force de jeûnes et d’ascétisme. Il reçut du Seigneur le don de chasser les démons et de guérir les malades. Lorsqu’approcha pour lui le moment de quitter ce monde, il eut la vision de quelques saints qui l’invitaient à recevoir la joie éternelle. Il décéda à l’âge de soixante-dix ans approximativement et il fut enterré à côté de l’église du monastère avec beaucoup d’honneurs. ", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0205", 
+  "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
   "", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0305&C=Title", 
-  "3 Taubi", 
+  "3 Taubi\nCommémoration de l’assassinat des enfants de Bethléem\n", 
   "3 طوبة\nاستشهاد أطفال بيت لحم\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0305", 
+  "En ce jour de l’an 2 après la naissance de notre Seigneur Jésus Christ des mages venant d’orient se rendirent au palais d’Hérode pour chercher le nouveau-né et demandèrent : « Où est le roi des Juifs qui vient de naître ? Nous avons vu son étoile à l’orient et nous somm"+giaki.FR+" nous prosterner devant lui. » En apprenant cela, le roi Hérode fut bouleversé, et tout Jérusalem avec lui. Il réunit tous les grands prêtres et les scribes du peuple, pour leur demander où devait naître le Christ. Ils lui répondirent : « À Bethléem en Judée, car voici ce qui est écrit par le prophète [Michée] : Et toi, Bethléem, terre de Juda, tu n’es certes pas le dernier parmi les chefs-lieux de Juda, car de toi sortira un chef, qui sera le berger de mon peuple Israël. » Alors Hérode convoqua les mages en secret pour leur faire préciser à quelle date l’étoile était apparue ; puis il les envoya à Bethléem, en leur disant : « Allez, vous renseigner avec précision sur l’enfant. Et quand vous l’aurez trouvé, venez me l’annoncer pour que j’aille, moi aussi, me prosterner devant lui. »", 
   "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0305", 
+  "Alors ils se rendirent à Bethléem tandis que l’étoile qu’ils avaient vue à l’orient les précédait, jusqu’à ce qu’elle vienne s’arrêter au-dessus de l’endroit où se trouvait l’enfant. A leur arrivée, ils se prosternèrent devant lui. Ils ouvrirent leurs coffrets, et lui offrirent leurs présents : de l’or, de l’encens et de la myrrhe. Mais, avertis en songe de ne pas retourner chez Hérode, ils regagnèrent leur pays par un autre chemin.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0305", 
+  "Alors Hérode, voyant que les mages s’étaient moqués de lui, entra dans une violente fureur. Il envoya tuer tous les enfants jusqu’à l’âge de deux ans à Bethléem et dans toute la région, d’après la date qu’il s’était fait préciser par les mages. Alors fut accomplie la parole prononcée par le prophète Jérémie : Un cri s’élève dans Rama, pleurs et longue plainte : c’est Rachel qui pleure ses enfants et ne veut pas être consolée, car ils ne sont plus. En effet, le tombeau de Rachel, la femme de Jacob, se trouvait proche de Bethléem.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0305", 
+  "Que la bénédiction de l’intercession de ces enfants soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
   "", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0405&C=Title", 
-  "4 Taubi", 
+  "4 Taubi\nDécès de saint Jean l’évangéliste\n", 
   "4 طوبة\nنياحة القديس يوحنا الإنجيلي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0405", 
+  "En ce jour de l’an 100 après Jésus Christ eut lieu le décès de saint Jean (القديس يوحنا), le fils de Zébédée (ابن زبدي), l’évangéliste et l’apôtre.", 
   "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Il est le frère de saint Jacques le majeur (يعقوب الكبير). Ce saint naquit à Bethsaïde (بيت صيدا) qui était proche du lac de Tibériade (mer de Galilée – بحر الجليل). Il était pêcheur de poissons et exerçait cette profession en compagnie de son frère et de son père Zébédée. Sa famille possédait plusieurs bateaux ainsi que des terrains. Jean fut en premier lieu disciple de saint Jean le Baptiste puis il fut appelé par le Seigneur ainsi que son frère. Alors, laissant dans la barque leur père Zébédée avec ses ouvriers, ils partirent à sa suite. Il était le disciple que Jésus aimait et il Le suivit jusqu’à la Croix lorsque le Seigneur lui confia la sainte Vierge Marie. A partir de cette heure-là elle demeura chez lui jusqu’à son décès. Il faisait partie de trois principaux apôtres (piliers – أعمدة) à qui le Seigneur donna le privilège d’assister à quelques occasions majeures. Ils étaient avec Lui lors de Sa transfiguration sur le mont Thabor (جبل طابور). Ils étaient aussi présents lorsqu’Il ressuscita la fille de Jaïre (إقامة إبنة يايروس). Enfin, ils étaient avec lui au jardin de Gethsémani (بستان جثسماني) avant qu’Il soit arrêté lors de Sa passion. Saint Jean rédigea l’Evangile qui porte son nom. Dans son Evangile il parle en détail de la divinité du Christ. De plus, il rédigea aussi trois épîtres qui parlent de l’amour ainsi que le livre de l’Apocalypse.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Saint Jean était le plus jeune des apôtres. Il vécut dans le célibat (بتولا) et il était présent lorsque le Saint Esprit se répandit sur les apôtres le jour de la Pentecôte. Après cela, il proclama l’Evangile à Jérusalem et dans la Judée avec saint Pierre et il l’accompagnait lorsqu’il releva l’infirme de naissance à la porte du Temple, appelée la « Belle-Porte ». Ce miracle provoqua leur arrestation par les juifs qui les présentèrent au Sanhédrin pour être juger.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Après le décès de la sainte Vierge Marie, saint Jean se rendit en Asie mineure et s’installa à Ephèse (أفسس) pour exercer son ministère. A cet endroit, Dieu fit par son intermédiaire le miracle de la résurrection d’un fils unique qui fut la cause de la propagation de la Foi en Jésus Christ. Puis il proclama l’Evangile à Smyrne (سميرنا) où il installa son disciple Polycarpe (بوليكاربوس) comme évêque.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Son ministère fut étendu et la conversion d’un grand nombre provoqua son arrestation par l’empereur Domitien (دومتيان) qui le fit torturer et ébouillanter dans de l’huile mais Dieu le sauvait de toutes ces exactions. Finalement il l’exila sur l’ile de Patmos (باطمس) où il demeura pendant un an et demi. Il y eut sa vision qu’il relata dans le livre de l’Apocalypse. Après le décès de Domitien, il retourna à Ephèse et il poursuivit son ministère auprès des fidèles d’Asie mineure. Il y installa des évêques et des prêtres. Lorsqu’il avança en âge, on le portait à l’église pour qu’il donne son enseignement qui se limitait à dire : « Mes enfants, aimez-vous les uns les autres. »", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Lorsqu’il eut le sentiment que l’heure de son départ de ce monde approchait, saint Jean sortit de la ville, demanda à ses disciples de creuser un trou, s’y installa et levant les bras il pria. Puis il rendit son âme au Seigneur qu’il avait tant aimé. Les fidèles furent très attristés puis ils l’enterrèrent dans ce trou avec beaucoup de respect.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0405", 
+  "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen ! ", 
   "", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0505&C=Title", 
-  "5 Taubi", 
-  "5 طوبة\nاستشهاد القديس أوساغنيوس الجُندي\n\nاستشهاد القديس بانيكاروس\n\nنياحة البابا ثيئودوسيوس الثاني\n\nنياحة البابا متاؤس الأول\n", 
+  "5 Taubi\n1) Martyre de saint Eugénios, le soldat ;\n2) Martyre de saint Bâniqouros ;\n3) Décès du pape Théodose II ;\n4) Décès du pape Matthieu 1er", 
+  "5 طوبة\nاستشهاد القديس أوساغنيوس الجُندي\nاستشهاد القديس بانيكاروس\nنياحة البابا ثيئودوسيوس الثاني\nنياحة البابا متاؤس الأول\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0505", 
+  "En ce jour de l’an 78 des martyrs (362 après Jésus Christ) eut lieu le martyre de saint Eugénios, le soldat (القديس أوساغنيوس الجندي).", 
   "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Ce saint faisait partie des soldats de l’empereur Constantin (قسطنطين). Il était chrétien et réputé pour sa piété et sa miséricorde envers les pauvres. Lorsque Constantin vit l’image de la Croix avec l’inscription Avec ceci tu vaincras (بهذا تغلب), il convoqua ce soldat pour que celui-ci lui explique ce que ceci pouvait signifier. Il lui répondit qu’il s’agissait de l’emblème du Christ.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Eugénios vécut jusqu’à l’époque de Julien l’apostat (يوليانوس الجاحد). Un jour qu’il circulait dans une rue d’Antioche, deux protagonistes l’interpelèrent et lui demandèrent de les départager en raison de son âge avancé et de sa dignité. Il trancha leur différent de manière satisfaisante mais quelques malfaisants allèrent le dénoncer auprès de l’empereur prétendant qu’il s’était ériger comme juge. Celui-ci le convoqua et lui demanda comment pouvait-il se permettre de juger entre les habitants dans cette ville. Eugénios lui répondit : « Je ne suis pas juge mais c’est toi qui t’es détourné de l’adoration du Dieu véritable pour adorer les idoles sataniques. L’empereur se mit en colère puis ordonna qu’on le crucifie et qu’on lui brûle les côtés. Mais le saint supportait cela patiemment en remerciant Dieu. Finalement l’empereur le fit décapiter et il obtint la couronne du martyre.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre de saint Bâniqouros, le persan (بانيكاروس الفارسي).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Ce saint était un officier dans l’armée et il était aimé par le roi à cause de son courage. Il fit la connaissance de saint Théodore l’oriental (al-Méchréqui تادرس المشرقي) ainsi que saint Léonce (لاونديوس) avec qui il se lia d’amitié. Lorsque l’empereur Dioclétien eut vent de cette amitié soudaine, il les convoqua et les interrogea sur la raison de cette relation. Puis il envoya Bâniqouros encadré de quatre gardes auprès d’Armanius (أرمانيوس), qui était le gouverneur d’Alexandrie et de la Pentapole occidentale (الخمس مدن الغربية). Celui-ci le fit mettre en prison mais, le soir même, il eut une vision dans laquelle le Christ l’encourageait et le renforçait. Le lendemain, il le fit torturer cruellement de différentes manières mais à chaque fois l’ange du Seigneur le délivrait. Finalement, il le fit décapiter et saint Bâniqouros obtint la couronne du martyre.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Un prince nommé Théogneste (ثاؤغنسطس) prit sa dépouille et la cacha chez lui jusqu’à la fin des persécutions. Ensuite, il édifia une grande église dans laquelle elle fut déposée.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Que la bénédiction de ses prières soit avec nous. Amen !", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "En ce jour de l’an 1016 des martyrs (1300 après Jésus Christ) décéda le pape Théodose II (ثيئودوسيوس الثاني), le soixante-douzième patriarche de la prédication de saint Marc. \nCe père naquit à Méniat-Béni-Khassib (مِنْيَة بني خصيب) et son nom d’origine était Abd-el-Messih ibn Abi-Makkine (عبد المسيح بن أبي مكين). Il devint moine au monastère d’Abi-Phana (دير أبي فانا) et il prit le nom de Théodose.\nLorsque le siège patriarcal devint vacant suite au décès du pape Jean VII (يوأنس السابع), les évêques choisirent ce père pour lui succéder. Ils l’ordonnèrent prêtre dans son monastère puis le conduisirent au Caire pour le consacrer patriarche en 1294 après Jésus Christ. La persécution qui avait été déclenchée à l’époque de son prédécesseur se calma.\nEn 1299 il consacra le saint Chrême (الميرون المقدس) à l’église de saint Mercure le détenteur des deux épées (مرقوريوس أبي سيفين) dans le vieux Caire. Il était accompagné de douze évêques lors de cette consécration. Ce patriarche siégea sur le trône apostolique pendant cinq années, cinq mois et vingt-huit jours puis il décéda en paix. Il fut enterré au monastère d’al-Nastour (دير النسطور) dans la région d’al-Basatine.\nQue la bénédiction de ses prières soit avec nous. Amen ! ", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "En ce jour de l’an 1125 des martyrs (1408 après Jésus Christ) décéda le pape Matthieu 1er (متاؤس الأول), le quatre-vingt-septième patriarche de la prédication de saint Marc. ", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Ce père naquit à Bani-Roh (بني روح) qui fait partie des dépendances d’al-Achmounayn (الأشمونين). Ses parents lui donnèrent une bonne éducation chrétienne et il apprit la lecture et l’écriture auprès des enseignants (كُـتَّـاب) de l’église. De plus il apprit par cœur les psaumes ainsi que les chants rituels.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Dans sa jeunesse il gardait le troupeau de son père en recherchant la solitude et l’ascétisme. Plus tard, il s’enrôla au monastère d’Abou-Fana (ou abba Véni – Abba Beni – دير أبو فانا أو آڤا فيني) qui était à proximité de son village. Il y demeura quelques années puis s’installa au monastère de la sainte Vierge (دير القديسة العذراء) connu sous le nom d’al-Moharrak (المحرق) en prenant le nom du moine Matthieu (الراهب متى). Par la suite, il fut ordonné prêtre en raison de ses vertus.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Quittant ce monastère, il se rendit à celui de saint Antoine sans informé les moines de ce monastère qu’il était prêtre. En conséquence il servit la liturgie comme un diacre. Tandis qu’il se trouvait dans le sanctuaire on vit une main sortir de l’autel et l’encenser trois fois. Alors, les anciens du monastère surent qu’il était prêtre et qu’il devait devenir patriarche.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Craignant les vaines gloires de ce monde périssable, il s’enfuit du monastère et se rendit à Jérusalem où il travailla comme serviteur tout en veillant la nuit pour prier. Mais la réputation de ses vertus se propagea, alors, il retourna au monastère de saint Antoine.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Ce père fut persécuté par le prince Yalbogha (الأمير يَلبُـغا) en compagnie de saint Marc al-Antouni (القديس مرقس الأنطوني). Après avoir été libéré, il se rendit au monastère al-Moharrak où il devint un bon exemple pour les moines.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Après le décès du pape Gabriel IV (غبريال الرابع), les évêques et les notables se réunirent et choisirent le père Matthieu pour lui succéder. Dès qu’il entendit cette nouvelle, il se cacha mais Dieu permit qu’on le retrouve. On le ramena au Caire mais il était triste et se trancha la langue avec des ciseaux. Toutefois Dieu le guérit et tous furent rassurés qu’il était choisi par Dieu. Il fut consacré patriarche en 1378 après Jésus Christ.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Après son intronisation, il ne changea rien à ses habitudes de prière, d’humilité et d’ascétisme. Il prit soin des monastères et se préoccupa des besoins des pauvres avec amour au point qu’il ne restait plus d’argent dans les caisses du patriarcat. Certains l’accusèrent de gaspillage mais d’autres personnes riches suivirent son exemple en faisant l’aumône. Lorsqu’il se tenait devant l’autel, le visage de ce pape resplendissait d’une lumière céleste et il voyait le Christ présent sur l’autel. Il aida à l’établissement de la paix entre le royaume d’Ethiopie et le sultan Barqouq (السلطان برقوق), le roi d’Egypte, avec qui un lien d’amitié s’était établi. Toutefois, les successeurs de ce sultan lui firent subir beaucoup de tourments.", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Ce pape connu le jour de son décès. Il tomba malade en ayant une forte fièvre puis quitta ce monde pour rejoindre le paradis alors qu’il avait plus de soixante-dix ans. Il avait siégé sur le trône apostolique pendant trente années, cinq mois et six jours. Il fut enterré dans le caveau des patriarches situé au monastère al-Khandak (دير الخندق), en dessous de l’église d’abba Freige (كنيسة الأنبا رويس).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Plusieurs saints vécurent à son époque. Les plus connus sont abba Freige, saint Marc al-Antouni et l’higoumène Abraham al-Antouni (القمص أبرآم الأنطوني ).", 
+  "", 
+  ], 
+  [
+  Prefix.synaxarium+"&D=0505", 
+  "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
   "", 
   ], 
   ], 
   [
   [
   Prefix.synaxarium+"&D=0605&C=Title", 
-  "6 Taubi", 
-  "6 طوبة\nعيد الختان المجيد\n\nتذكار صعود إيليا النبي إلى السماء حياً\n\nاستشهاد الأربعة أراخنة بإسنا\n\nنياحة البابا مركيانوس\n\nنياحة البابا مرقس\n\nنياحة البابا غبريال الثالث\n\nنياحة القديس باسيليوس الكبير\n\nتكريس كنيسة الشهيد إسحاق الدفراوي\n", 
+  "6 Taubi\n1) Fête de la circoncision de Notre Seigneur Jésus Christ ;\n2) Commémoration de l’enlèvement du prophète Elie ;\n3) Martyre des quatre notables d’Esna ;\n4) Décès du pape Marcien, huitième patriarche de la prédication de saint Marc ;\n5) Décès du pape Marc III ;\n6) Décès du pape Gabriel III ;\n7) Décès de saint Basile le grand, archevêque de Césarée en Capadoce ; \n8) Consécration de l’église du martyr Isaac al-Dafrawi\n", 
+  "6 طوبة\nعيد الختان المجيد\nتذكار صعود إيليا النبي إلى السماء حياً\nاستشهاد الأربعة أراخنة بإسنا\nنياحة البابا مركيانوس\nنياحة البابا مرقس\nنياحة البابا غبريال الثالث\nنياحة القديس باسيليوس الكبير\nتكريس كنيسة الشهيد إسحاق الدفراوي\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0605", 
@@ -8478,7 +8708,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=0705&C=Title", 
-  "7 Taubi", 
+  "7 Taubi\nDécès de saint Sylvestre, le pape de Rome\n", 
   "7 طوبة\nنياحة القديس سلفستروس بابا روما\n", 
   ], 
   [
@@ -8490,8 +8720,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=0805&C=Title", 
-  "", 
-  "8 طوبة\nعودة رأس القديس مار مرقس الرسول\n\nنياحة البابا أندرونيقوس\n\nنياحة البابا بنيامين الأول\n\nنياحة البابا غبريال الخامس\n\nتذكار تكريس كنيسة القديس مكاريوس الكبير\n", 
+  "8 Taubi\n1) Restitution de la tête de l’apôtre saint Marc ;\n2) Décès du pape Andronic ;\n3) Décès du pape Benjamin 1er ;\n4) Décès du pape Gabriel V ;\n5) Consécration de l’église de saint Macaire le grand\n", 
+  "8 طوبة\nعودة رأس القديس مار مرقس الرسول\nنياحة البابا أندرونيقوس\nنياحة البابا بنيامين الأول\nنياحة البابا غبريال الخامس\nتذكار تكريس كنيسة القديس مكاريوس الكبير\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0805", 
@@ -8503,7 +8733,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   Prefix.synaxarium+"&D=0905&C=Title", 
   "9 Tabui\n1) Décès de saint Abraham, le compagnon d’abba Gawarguy ;\n2) Décès d’abba Phîs", 
-  "9 طوبة\nنياحة القديس أبرآم رفيق الأنبا جاورجي\n\nنياحة القديس أنبا فيس\n", 
+  "9 طوبة\nنياحة القديس أبرآم رفيق الأنبا جاورجي\nنياحة القديس أنبا فيس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=0905", 
@@ -8514,8 +8744,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1005&C=Title", 
-  "10 Tabui", 
-  "10 طوبة\nبرمون عيد الغطاس المجيد\n\nنياحة القديس يسطس تلميذ الأنبا صموئيل المعترف\n", 
+  "10 Tabui\n1) Préparation (برمون) de la fête de l'Epiphanie ;\n2) Décès de saint Juste, le disciple d’abba Samuel le confesseur\n", 
+  "10 طوبة\nبرمون عيد الغطاس المجيد\nنياحة القديس يسطس تلميذ الأنبا صموئيل المعترف\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1005", 
@@ -8526,8 +8756,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1105&C=Title", 
-  "11 Tabui", 
-  "11 طوبة\nعيد الظهور الإلهي (الغطاس المجيد)\n\nنياحة البابا يوأنس السادس\n\nنياحة البابا بنيامين الثاني", 
+  "11 Tabui\n1) Fête de la Théophanie ;\n2) Décès du pape Jean VI ;\n3) Décès du pape Benjamin II\n", 
+  "11 طوبة\nعيد الظهور الإلهي (الغطاس المجيد)\nنياحة البابا يوأنس السادس\nنياحة البابا بنيامين الثاني", 
   ], 
   [
   Prefix.synaxarium+"&D=1105", 
@@ -8538,8 +8768,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1205&C=Title", 
-  "12 Tabui", 
-  "12 طوبة\nثاني أيام عيد الغطاس المجيد\n\nتذكار رئيس الملائكة الجليل ميخائيل\n\nاستشهاد القديس تادرس المشرقي\n\nاستشهاد القديس أناطوليوس\n", 
+  "12 Tabui\n1) Lendemain de la fête de la Théophanie ;\n2) Commémoration de l’archange Michel ;\n3) Martyre de saint Théodore l’oriental ;\n4) Martyre de saint Anatole\n", 
+  "12 طوبة\nثاني أيام عيد الغطاس المجيد\nتذكار رئيس الملائكة الجليل ميخائيل\nاستشهاد القديس تادرس المشرقي\nاستشهاد القديس أناطوليوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1205", 
@@ -8550,8 +8780,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1305&C=Title", 
-  "13 Tabui", 
-  "13 طوبة\nعيد عرس قانا الجليل\n\nاستشهاد القديسة دميانة\n\nنياحة القديس ثاؤفيلس الراهب\n", 
+  "13 Tabui\n1) Commémoration de la noce de Cana en Galilée ;\n2) Martyre de sainte Damiana ;\n3)Décès de saint Théophile le moine\n", 
+  "13 طوبة\nعيد عرس قانا الجليل\nاستشهاد القديسة دميانة\nنياحة القديس ثاؤفيلس الراهب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1305", 
@@ -8562,8 +8792,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1405&C=Title", 
-  "14 Tabui", 
-  "14 طوبة\nنياحة القديس أرشليدس الراهب\n\nاستشهاد القديسة مُهْراتي\n\nنياحة القديس مكسيموس أخى دوماديوس\n", 
+  "14 Tabui\n1) Décès de saint Archélides ;\n2) Martyre de sainte Mohrati ;\n3) Décès de saint Maxime frère de Dométien\n", 
+  "14 طوبة\nنياحة القديس أرشليدس الراهب\nاستشهاد القديسة مُهْراتي\nنياحة القديس مكسيموس أخى دوماديوس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1405", 
@@ -8574,7 +8804,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1505&C=Title", 
-  "15 Tabui", 
+  "15 Tabui\nDécès du saint prophète Abdias\n", 
   "15 طوبة\nنياحة عوبديا النبي\n", 
   ], 
   [
@@ -8586,8 +8816,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1605&C=Title", 
-  "16 Tabui", 
-  "16 طوبة\nاستشهاد القديس فيلوثيئوس\n\nنياحة البابا يوأنس الرابع\n", 
+  "16 Tabui\n1) Martyre de saint Philothée ;\n2) Décès de saint Jean\n", 
+  "16 طوبة\nاستشهاد القديس فيلوثيئوس\nنياحة البابا يوأنس الرابع\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1605", 
@@ -8598,8 +8828,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1705&C=Title", 
-  "17 Tabui", 
-  "17 طوبة\nنياحة القديس دوماديوس أخي القديس مكسيموس\n\nنياحة القديس الأنبا يوساب الأبحّ أسقف جرجا\n", 
+  "17 Tabui\n1) Décès de saint Domitien (Domèce), le frère de saint Maxime ;\n2) Décès d'Abba Youssab al-abah, évêque de Guérga\n", 
+  "17 طوبة\nنياحة القديس دوماديوس أخي القديس مكسيموس\nنياحة القديس الأنبا يوساب الأبحّ أسقف جرجا\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1705", 
@@ -8610,8 +8840,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1805&C=Title", 
-  "18 Tabui", 
-  "18 طوبة\nنياحة القديس يعقوب أسقف نصيبين\n\nتذكار مريم ومرثا أختيّ لعازر الحبيب\n\nنياحة الأنبا أندراس الشهير بـ (أبو الليف)\n", 
+  "18 Tabui\n1) Décès de saint Jacques, l’évêque de Nisibe ;\n2) Commémoration de Marie et Marthe, les deux sœurs de Lazare, le bien-aimé ;\n3) Décès de saint Andrâs surnommé Abou-l-lif\n", 
+  "18 طوبة\nنياحة القديس يعقوب أسقف نصيبين\nتذكار مريم ومرثا أختيّ لعازر الحبيب\nنياحة الأنبا أندراس الشهير بـ (أبو الليف)\n", 
   ], 
   [
   Prefix.synaxarium+"&D=1805", 
@@ -8622,7 +8852,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=1905&C=Title", 
-  "19 Tabui", 
+  "19 Tabui\nDécouverte des reliques de saint abba Hour, saint Pissouri ainsi que sainte Ampira, leur mère\n", 
   "19 طوبة\nاكتشاف أعضاء القديسين أباهور وبيسوري وأمبيرة أمهما\n", 
   ], 
   [
@@ -8634,8 +8864,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2005&C=Title", 
-  "20 Tabui", 
-  "20 طوبة\nنياحة القديس بروخورس أحد السبعين رسولاً\n\nاستشهاد القديس أبا كلوج القس\n\nاستشهاد القديس بهناو\n\nتذكار تكريس كنيسة القديس يوحنا صاحب الإنجيل الذهب\n", 
+  "20 Tabui\n1) Décès de saint Prochore, l’un des 70 disciples ;\n2) Martyre de saint Klog, le prêtre - Martyre de saint Bahna ;\n3) Consécration de l’église de saint Jean le détenteur de l'Evangile en or\n", 
+  "20 طوبة\nنياحة القديس بروخورس أحد السبعين رسولاً\nاستشهاد القديس أبا كلوج القس\nاستشهاد القديس بهناو\nتذكار تكريس كنيسة القديس يوحنا صاحب الإنجيل الذهب\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2005", 
@@ -8646,8 +8876,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2105&C=Title", 
-  "21 Tabui", 
-  "21 طوبة\nنياحة والدة الإله القديسة مريم العذراء\n\nنياحة القديسة إيلارية ابنة الملك زينون\n", 
+  "21 Tabui\n1) Décès de notre Dame, la Vierge Marie, la sainte Mère de Dieu ;\n2) Décès de sainte Hilarie, la fille de l’empereur Zénon\n", 
+  "21 طوبة\nنياحة والدة الإله القديسة مريم العذراء\nنياحة القديسة إيلارية ابنة الملك زينون\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2105", 
@@ -8658,7 +8888,7 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2205&C=Title", 
-  "22 Tabui", 
+  "22 Tabui\nDécès de saint Antoine le grand, le père de tous les moines\n", 
   "22 طوبة\nنياحة القديس العظيم الأنبا أنطونيوس أب جميع الرهبان\n", 
   ], 
   [
@@ -8670,8 +8900,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2305&C=Title", 
-  "23 Tabui", 
-  "23 طوبة\nاستشهاد القديس تيموثاوس أسقف أفسس\n\nنياحة البابا كيرلس الرابع", 
+  "23 Tabui\n1) Martyre de saint Timothée, le disciple de l’apôtre saint Paul et l’évêque d’Ephèse ;\n2) Décès d’abba Cyrille IV\n", 
+  "23 طوبة\nاستشهاد القديس تيموثاوس أسقف أفسس\nنياحة البابا كيرلس الرابع", 
   ], 
   [
   Prefix.synaxarium+"&D=2305", 
@@ -8682,8 +8912,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2405&C=Title", 
-  "24 Tabui", 
-  "24 طوبة\nنياحة القديسة مريم الحبيسة الناسك\n\nاستشهاد القديس بساده القس\n", 
+  "24 Tabui\n1) Décès de sainte Marie l’ascète ;\n2) Martyre d'Abba Bissada le prêtre\n", 
+  "24 طوبة\nنياحة القديسة مريم الحبيسة الناسك\nاستشهاد القديس بساده القس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2405", 
@@ -8694,8 +8924,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2505&C=Title", 
-  "25 Tabui", 
-  "25 طوبة\nنياحة القديس بطرس العابد\n\nاستشهاد القديس أسكلاس\n", 
+  "25 Tabui\n1) Décès de saint Pierre, l’adorateur ;\n2) Martyre de saint Askalâs\n", 
+  "25 طوبة\nنياحة القديس بطرس العابد\nاستشهاد القديس أسكلاس\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2505", 
@@ -8706,8 +8936,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2605&C=Title", 
-  "26 Tabui", 
-  "26 طوبة\nاستشهاد التسعة والأربعين شهيداً شيوخ شيهيت\n\nاستشهاد القديس بجوش\n\nنياحة القديسة أنسطاسية\n", 
+  "26 Tabui\n1) Martyre des 49 saints, les anciens de Scété ;\n2) Martyre de saint Bagouch ;\n3) Décès de sainte Anastasie\n", 
+  "26 طوبة\nاستشهاد التسعة والأربعين شهيداً شيوخ شيهيت\nاستشهاد القديس بجوش\nنياحة القديسة أنسطاسية\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2605", 
@@ -8718,8 +8948,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2705&C=Title", 
-  "27 Tabui", 
-  "27 طوبة\nتذكار رئيس الملائكة الجليل سوريال\n\nاستشهاد القديس أبى فام الجُندي الأوسيمي\n\nاستشهاد القديس سيرابيون\n\nتذكار نقل جسد القديس تيموثاوس تلميذ القديس بولس الرسول\n", 
+  "27 Tabui\n1) Commémoration de l’archange Suriel ;\n2) Martyre d’abba Fam (Phœbammon) d’Ossîm, le soldat ;\n3) Martyre de saint Sérapion ;\n4) Translation des reliques de saint Timothée, le disciple de l’apôtre saint Paul\n", 
+  "27 طوبة\nتذكار رئيس الملائكة الجليل سوريال\nاستشهاد القديس أبى فام الجُندي الأوسيمي\nاستشهاد القديس سيرابيون\nتذكار نقل جسد القديس تيموثاوس تلميذ القديس بولس الرسول\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2705", 
@@ -8730,8 +8960,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2805&C=Title", 
-  "28 Tabui", 
-  "28 طوبة\nاستشهاد القديس الأنبا كاؤو\n\nاستشهاد القديس إكليمنضس أسقف أنقرة\n\nاستشهاد القديس فيلياس أسقف تمي الأمديد\n", 
+  "28 Tabui\n1) Martyre d’abba Kaou ;\n2) Martyre de saint Clément, l’évêque d’Ankara ;\n3)Martyre de saint Phylias, l’évêque de Tamyel-Amdid\n", 
+  "28 طوبة\nاستشهاد القديس الأنبا كاؤو\nاستشهاد القديس إكليمنضس أسقف أنقرة\nاستشهاد القديس فيلياس أسقف تمي الأمديد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2805", 
@@ -8742,8 +8972,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=2905&C=Title", 
-  "29 Tabui", 
-  "29 طوبة\nنياحة القديسة أكساني\n\nنياحة القديس سرياكوس المجاهد\n", 
+  "29 Tabui\n1) Décès de sainte Xani ;\n2) Commémoration de saint Syriaque, le combattant\n", 
+  "29 طوبة\nنياحة القديسة أكساني\nنياحة القديس سرياكوس المجاهد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=2905", 
@@ -8754,8 +8984,8 @@ ReadingsArrays.SynaxariumArray= [[
   [
   [
   Prefix.synaxarium+"&D=3005&C=Title", 
-  "30 Tabui", 
-  "30 طوبة\nاستشهاد العذارى القديسات بيستيس وهلبيس وأغابى ونياحة أمهن صوفية\n\nنياحة البابا مينا الأول\n\nنياحة القديس إبراهيم الرهاوي المتوحد\n", 
+  "30 Tabui\n1) Martyre des trois vierges saintes Pistis, Helpis et Agapi et décès de leur mère Sophie ;\n2) Décès du pape Ménas 1er ;\n3) Décès de saint Abraham d’Edesse\n", 
+  "30 طوبة\nاستشهاد العذارى القديسات بيستيس وهلبيس وأغابى ونياحة أمهن صوفية\nنياحة البابا مينا الأول\nنياحة القديس إبراهيم الرهاوي المتوحد\n", 
   ], 
   [
   Prefix.synaxarium+"&D=3005", 
