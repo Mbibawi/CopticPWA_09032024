@@ -74,7 +74,7 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, en
         .map(title =>{
           filteredArray.push(
             tablesArray.filter(
-              tbl => tbl[0][0] === eval(title)
+              tbl => tbl[0][0].includes(eval(title))
             )[0]
             );
           
@@ -1098,7 +1098,8 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
-  showTables([table], getLanguages(containerDiv.dataset.arrayName))
+  showTables([table], getLanguages(containerDiv.dataset.arrayName));
+  scrollToTop();
 
 };
 
