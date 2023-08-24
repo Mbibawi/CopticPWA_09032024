@@ -4,39 +4,39 @@ let sequence: string[] = [];
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, entry?: string, tableTitle?: string }) {
+function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?: string, tableTitle?: string }) {
 
  
-  if (!args.clear) args.clear = true;
-  if(!args.entry && args.select) args.entry = args.select.selectedOptions[0].innerText;
+  if (args.clear !==false) args.clear = true;
+  if(!args.arrayName && args.select) args.arrayName = args.select.selectedOptions[0].innerText;
   
-  if (!args.entry) return;
+  if (!args.arrayName) return;
   
-  if (args.select && args.entry === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
+  if (args.select && args.arrayName === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
   
   containerDiv.style.gridTemplateColumns = '100%';
 
   if (
     containerDiv.dataset.arrayName
-    && args.entry === containerDiv.dataset.arrayName
+    && args.arrayName === containerDiv.dataset.arrayName
     && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
   ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
 
-  containerDiv.dataset.arrayName = args.entry;
+  containerDiv.dataset.arrayName = args.arrayName;
 
-  if (args.select && args.entry === args.select.options[2].innerText) args.entry = prompt('Provide the function and the parameters', args.entry);//under development
-  if (args.entry.includes('Fun(')) {
-    eval(args.entry);
+  if (args.select && args.arrayName === args.select.options[2].innerText) args.arrayName = prompt('Provide the function and the parameters', args.arrayName);//under development
+  if (args.arrayName.includes('Fun(')) {
+    eval(args.arrayName);
     return
   }
 
   let tablesArray: string[][][];
   containerDiv.dataset.specificTables = 'false';
 
-  let languages = getLanguages(args.entry);
+  let languages = getLanguages(args.arrayName);
   if (!languages) languages = allLanguages;
 
-  if (args.select && args.entry === args.select.options[1].innerText) {
+  if (args.select && args.arrayName === args.select.options[1].innerText) {
     //This is the add new table case
     containerDiv.dataset.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
     containerDiv.dataset.editedArray = 'PrayersArray';//We delete the dataSet value in order to avoid adding the table to the same array
@@ -55,26 +55,29 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, en
 
   if (!tablesArray
     && args.select
-    && args.entry
-    && args.entry !== args.select.options[1].innerText //i.e. if it is not 'new table'
+    && args.arrayName
+    && args.arrayName !== args.select.options[1].innerText //i.e. if it is not 'new table'
     && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
   { containerDiv.dataset.specificTables = 'true' };
 
-  if(!tablesArray && !args.select && args.entry && args.tableTitle)
+  if (!tablesArray && !args.select && args.arrayName && args.tableTitle)
   containerDiv.dataset.specificTables = 'true';//If we ware calling the function givint it the name of the array (entry) and the title of a table (tableTitle) without passing any select element, we will be editing a specific table not the whole tables in the array
   
-  if (!tablesArray) tablesArray = eval(args.entry);
+  if (!tablesArray) tablesArray = eval(args.arrayName);
   if (!tablesArray) return;
 
 
   if (containerDiv.dataset.specificTables === 'true') {
     if (!args.tableTitle) args.tableTitle = prompt('Provide the name of the table you want to edit');
     let filteredArray:string[][][] = [];
-    args.tableTitle.split(', ')
+    args.tableTitle
+      .split(', ')
         .map(title =>{
+          if (title.startsWith('Prefix.')) title = eval(title);
           filteredArray.push(
-            tablesArray.filter(
-              tbl => tbl[0][0].includes(eval(title))
+            tablesArray
+              .filter(
+              tbl => tbl[0][0].includes(title)
             )[0]
             );
           
@@ -89,8 +92,7 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, en
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
 
-  if (args.clear) containerDiv.innerHTML = ""; //we empty the containerDiv
-  showTables(tablesArray, languages);
+  showTables(tablesArray, args.arrayName, languages, args.clear);
 
 }
 /**
@@ -98,17 +100,23 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, en
  * @param {string[][][]} tablesArray - an array containing the tables that we need to show and start editing
  * @param {string[]} languages - the languages included in the tables
  */
-function showTables(tablesArray: string[][][], languages: string[], clear: boolean = true) {
-  if (clear) containerDiv.innerHTML = '';
+function showTables(tablesArray: string[][][], arrayName:string, languages: string[], clear: boolean = true) {
+  if (!arrayName) return;
+  if (clear === true) containerDiv.innerHTML = '';
   let el: HTMLDivElement;
   //We create an html div element to display the text of each row of each table in tablesArray
-tablesArray.forEach(table => {
+  tablesArray
+    .forEach(table => {
   if (!table) return;
-  table.forEach(row => {
+      table
+        .forEach(row => {
     if (!row) return;
     el = createHtmlElementForPrayerEditingMode(row, languages);
     //We make the paragraph children of each row, editable
-    if (el) Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true");
+          if (el) {
+            el.dataset.arrayName = arrayName;
+            Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true")
+          };
   });
 });
   
@@ -203,8 +211,8 @@ function addColumnBtn(btnsDiv:HTMLElement):HTMLButtonElement{
  * Creates a button for exporting the edited text as an string[][][] in a js file
  * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
  */
-function exportToJSFileBtn(btnsDiv: HTMLElement):HTMLButtonElement {
-  let newButton = createEditingButton(() =>exportToJSFile(saveModifiedArray(), containerDiv.dataset.arrayName), "Export To JS");
+function exportToJSFileBtn(btnsDiv: HTMLElement): HTMLButtonElement {
+  let newButton = createEditingButton(() => exportToJSFile(saveModifiedArray(true, true)), "Export To JS");
   btnsDiv.appendChild(newButton);
   return newButton;
 }
@@ -467,13 +475,11 @@ function createEditingButton(
 
 /**
  * Takes the text of a modified array, and exports it to a js file
- * @param {string} arrayText - The text of the modified array. It is a text where the prefixes and other special charachters are processed
- * @param {string} fileName -The name that will be given to the js file
+ * @param {[string, string]} arrayText - the first element is the modified text of the array that we will export to a Js file. The second element is the name of the array
  */
-function exportToJSFile(arrayText: string, arrayName: string) {
-  //@ts-ignore
-  //console.save(arrayText, fileName);
-  createJsFile(arrayText, getJSFileName(arrayName));
+function exportToJSFile(arrayText: [string, string] | void) {
+  if (!arrayText) return;
+  createJsFile(arrayText[0], getJSFileName(arrayText[1]));
 }
 
 
@@ -482,42 +488,51 @@ function exportToJSFile(arrayText: string, arrayName: string) {
  * @param {string} arrayName - the name of the array that we were editing containing the tables that we modified or added . Its default value is containerDiv.dataset.arrayName
  * @param {boolean} exportToFile - If true, the text of the modified array will be returned. Its default value is "true".
  * @param {boolean} exportToStorage - If true, the text of the modified array will be saved to localStorage.editedText. Its default value is "true".
- * @returns {string} the text of the modified array
+ * @returns {[string, string] | void} the text of the modified array
  */
-function saveModifiedArray(arrayName:string=containerDiv.dataset.arrayName, exportToFile:boolean = true, exportToStorage:boolean=true): string {
-  let title: string,
-    titles: Set<string> = new Set(),
-    tablesArray:string[][][] = eval(arrayName);
+function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolean = true): [string, string] | void {
   
-  if (!tablesArray) tablesArray = [];
-    
+  let title: string,
+    titles: Set<[string, string]> = new Set(),
+    arrayName: string;
+      
     let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row")); //we retrieve all the divs with 'Row' class from the DOM
     
   //Adding the tables' titles as unique values to the titles set
   htmlRows
   .forEach(htmlRow => {
       //for each 'Row' div in containderDiv
-        title = htmlRow.dataset.root; //this is the title without '&C='
-    if (titles.has(title)) return;
-          titles.add(title)
-          processTableTitle(title, tablesArray);
+    title = htmlRow.dataset.root; //this is the title without '&C='
+    arrayName = htmlRow.dataset.arrayName
+    if (titles.has([title, arrayName])) return;
+          titles.add([title, arrayName])
+          processTableTitle([title, arrayName]);
       }
   );
-  
   if (!exportToFile && !exportToStorage) return;
 
-  console.log("modified array = ", tablesArray);
+  let tablesArray: string[][][];
+
+  titles
+    .forEach(title => {
+      tablesArray = eval(title[1]);
+      if (!tablesArray) return;
+      console.log("modified array = ", tablesArray);
   
-  let text:string = processArrayTextForJsFile(tablesArray, containerDiv.dataset.arrayName);
-  
-  if (exportToStorage) {
-    localStorage.editedText = text;
-    console.log(localStorage.editedText);
-  };
-   if(exportToFile ) return text
+      let text: string = processArrayTextForJsFile(tablesArray, title[1]);
+    
+      if (exportToStorage) {
+        localStorage.editedText = text;
+        console.log(localStorage.editedText);
+      };
+      return [text, arrayName];
+    });
+
 };
 
-function processTableTitle(tableTitle: string, tablesArray: string[][][] = eval(containerDiv.dataset.arrayName)) {
+function processTableTitle(tableTitle: [string, string], tablesArray?: string[][][]) {
+
+  if (!tablesArray) tablesArray = eval(tableTitle[1]);
 
   if (!tablesArray) {
     alert('tablesArray is missing')
@@ -526,13 +541,16 @@ function processTableTitle(tableTitle: string, tablesArray: string[][][] = eval(
 
   let htmlTable =
     Array.from(containerDiv.children)
-      .filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
+      .filter((htmlRow: HTMLDivElement) =>
+        htmlRow.dataset.root === tableTitle[0]) as HTMLDivElement[];
 
     if (htmlTable.length === 0) return;
 
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
 
-    let oldTable: string[][] = tablesArray.filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+  let oldTable: string[][] =
+    tablesArray
+    .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
     
   if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
       
@@ -1058,13 +1076,14 @@ while (htmlElement.tagName !== 'P' && htmlElement.parentElement) htmlElement = h
 }
 
 function goToTableByTitle() {
+  saveModifiedArray(false, true);
   let title = prompt('Provide the title you want to go to');
   let rows:HTMLElement[] = Array.from(
     containerDiv.querySelectorAll('.Row') as NodeListOf<HTMLElement>)
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
   if (rows.length === 0){
     editTablesArray({
-      entry: containerDiv.dataset.arrayName,
+      arrayName: containerDiv.dataset.arrayName,
       tableTitle: title,
       clear: true
     });
@@ -1076,7 +1095,7 @@ function goToTableByTitle() {
   createFakeAnchor(rows[0].id);
 }
 function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
-  if (containerDiv.dataset.specificTables !== 'true') return;//We don't run this function unless we are in the 'edinting specific table(s) mode'
+  if (containerDiv.dataset.specificTables !== 'true' ||!containerDiv.dataset.arrayName) return;//We don't run this function unless we are in the 'edinting specific table(s) mode'
 
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
@@ -1085,7 +1104,7 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (!title) return alert('We couldn\'t retrieve the data-root of the current table. Make sure the cursor is placed within one of the table\'s cells');
   
   //We first save the changes to the array
-  saveModifiedArray(containerDiv.dataset.arrayName, false, true);
+  saveModifiedArray(false, true);
   
   let array: string[][][] = eval(containerDiv.dataset.arrayName);
 
@@ -1098,7 +1117,7 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
-  showTables([table], getLanguages(containerDiv.dataset.arrayName));
+  showTables([table], undefined, getLanguages(containerDiv.dataset.arrayName));
   scrollToTop();
 
 };
@@ -1114,5 +1133,21 @@ function reArangeTablesColumns(tblTitle: string, arrayName: string) {
     row.splice(1, 0, '');
     row.splice(1, 0, '');
   });
-  exportToJSFile(processArrayTextForJsFile(array, arrayName),arrayName);
+  exportToJSFile([processArrayTextForJsFile(array, arrayName),arrayName]);
+}
+
+function editDayReadings() {
+  containerDiv.innerHTML = '';
+  let date = prompt('Provide the date as DDMM');
+  for (let arrayName in ReadingsArrays) {
+    ReadingsArrays[arrayName]
+      .filter(table => table[0][0].includes(date))
+      .forEach(table => {
+        editTablesArray({
+          arrayName: 'ReadingsArrays.' + arrayName,
+          tableTitle: table[0][0],
+          clear:false
+        })
+    });
+  };
 }
