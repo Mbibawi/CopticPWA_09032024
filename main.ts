@@ -52,6 +52,10 @@ function modifyUserLanguages(lang: string) {
   localStorage.userLanguages = JSON.stringify(userLanguages);
 }
 
+function modifyDefaultAndForeignLanguages() {
+  
+}
+
 document.addEventListener('DOMContentLoaded', autoRunOnLoad);
 
 /**
@@ -281,7 +285,7 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
   if (btn.afterShowPrayers) btn.afterShowPrayers();
   
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-  setCSSGridTemplate(Array.from(container.querySelectorAll('div.Row'))); //setting the number and width of the columns for each html element with class 'Row'
+  setCSS(Array.from(container.querySelectorAll('div.Row'))); //setting the number and width of the columns for each html element with class 'Row'
   applyAmplifiedText(Array.from(container.querySelectorAll('div.Row')) as HTMLDivElement[]);
 
   
@@ -321,11 +325,11 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
       document.getElementById("homeImg").style.height = "25vmax";
     }*/
   }
-  if (btn.parentBtn && btn.btnID === btnGoBack.btnID) {
-    //showChildButtonsOrPrayers(btn.parentBtn);
-  }
+
   
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
+
+  if (btn.btnID === btnMain.btnID) addSettingsButton();
 
   //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containerDiv
   if (btn.btnID !== btnMain.btnID
@@ -333,6 +337,24 @@ if (btn.prayersSequence && btn.prayersArray && btn.languages && btn.showPrayers)
     && containerDiv.children[0].classList.contains('mainPageBtns')
   ) btnMain.onClick();
 }
+
+/** 
+ * Appends the settings button to the right side bar
+*/
+function addSettingsButton() {
+  let settingsBtn: HTMLElement = sideBarBtnsContainer.querySelector('#settings');
+  //We finally add the settings button to the right side Bar
+  if (settingsBtn) 
+   return  sideBarBtnsContainer.append(settingsBtn);  //If the button is already there, we move it to the bottom of the list
+
+//Esle: we create a new Buton
+  settingsBtn = document.createElement('div');
+  settingsBtn.id = 'settings';
+  settingsBtn.classList.add('settings');
+  settingsBtn.innerText = 'Settings';
+  settingsBtn.addEventListener('click', () => showSettingsPanel());
+  sideBarBtnsContainer.appendChild(settingsBtn);
+};
 
 /**
  * This function adds the same data-group to all the divs that need to be hidden or shown when a div having the class 'Title' or 'SubTitle' is clicked (this div is passed to the function in the titleRow argument). The data-group that will be given to each div is same as the data-root of the titleRow div.
@@ -361,8 +383,7 @@ async function addDataGroupsToContainerChildren(titleClass: string = 'Title', ti
 async function createGoBackBtn(
   goTo: Button,
   btnsDiv: HTMLElement,
-  cssClass: string,
-  bookmarkID?: string
+  cssClass: string
 ) {
   //We will create a 'Go Back' and will append it to btnsDiv
   let goBak = new Button({
@@ -370,12 +391,16 @@ async function createGoBackBtn(
                       label: btnGoBack.label,
                       cssClass: cssClass,
     onClick: () => {
-                        //When the goBack button is clicked, it will show the children Buttons of goTo. It will not show its prayers or any other thing
-                        btnsDiv.innerHTML = '';
-      if (goTo.children) goTo.children.forEach(childBtn => {createBtn(childBtn, btnsDiv, childBtn.cssClass, true)});
-      if (goTo.parentBtn) createGoBackBtn(goTo.parentBtn, btnsDiv, goTo.parentBtn.cssClass);
-                        //showChildButtonsOrPrayers(goTo);
-                      },
+      btnsDiv.innerHTML = '';
+      if (goTo.children)
+        goTo.children
+          .forEach(childBtn => {
+            createBtn(childBtn, btnsDiv, childBtn.cssClass, true)
+          });
+      if (goTo.parentBtn)
+        createGoBackBtn(goTo.parentBtn, btnsDiv, goTo.parentBtn.cssClass);
+        if(btnsDiv === sideBarBtnsContainer) addSettingsButton();
+        },
   });
   return createBtn(goBak, btnsDiv, goBak.cssClass, false, goBak.onClick);
 }
@@ -812,19 +837,9 @@ function toggleSideBars() {
  * @param {HTMLElement} sideBar - the html element representing the side bar that needs to be opened
  */
 async function openSideBar(sideBar: HTMLElement) {
-  let btnText: string = String.fromCharCode(9776) + "Close Sidebar";
-  let closeBtn = sideBar.querySelector('.closebtn') as HTMLElement;
   
   sideBar.classList.remove(hidden);
-  sideBarBtn.innerText = btnText;
-  sideBarBtn.removeEventListener("click", (ev) => {
-    ev.preventDefault;
-    openSideBar(sideBar);
-  });
-  sideBarBtn.addEventListener("click", (ev) => {
-    ev.preventDefault;
-    closeSideBar(sideBar);
-  });
+
 }
 
 /**
@@ -851,18 +866,10 @@ function reloadScriptToBody(scriptIDs: string[]) {
  * @param {HTMLElement} sideBar - the html element representing the side bar to be closed
  */
 async function closeSideBar(sideBar: HTMLElement) {
-  //let btnText: string = String.fromCharCode(9776) + "Open Sidebar";
-  //sideBar.classList.remove("extended");
+
   sideBar.classList.add(hidden);
-  //sideBarBtn.innerText = btnText;
-  sideBarBtn.removeEventListener("click", (ev) => {
-    ev.preventDefault;
-    closeSideBar(sideBar);
-  });
-  sideBarBtn.addEventListener("click", (ev) => {
-    ev.preventDefault;
-    openSideBar(sideBar);
-  });
+
+
 }
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
@@ -1047,18 +1054,29 @@ function showPrayers(
  * Sets the number of columns and their widths for the provided list of html elements which style display property = 'grid'
  * @param {NodeListOf<Element>} Rows - The html elements for which we will set the css. These are usually the div children of containerDiv
  */
-async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
+async function setCSS(htmlRows: HTMLElement[]) {
   if (!htmlRows) return;
   if (localStorage.displayMode === displayModes[1]) return;
   if (!htmlRows) return;
-  let plusSign = String.fromCharCode(plusCharCode), minusSign = String.fromCharCode(plusCharCode + 1);
+  let plusSign = String.fromCharCode(plusCharCode),
+    minusSign = String.fromCharCode(plusCharCode + 1);
 
-  htmlRows.forEach(
-    (row: HTMLElement) => {
+  htmlRows
+    .forEach(
+    row => {
       //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
         row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
         //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
         row.style.gridTemplateAreas = setGridAreas(row);
+
+        (function addRightBorders() {
+          let rowChildren = Array.from(row.children) as HTMLParagraphElement[];
+          rowChildren
+            .forEach(parag => {
+              if (rowChildren.indexOf(parag) !== rowChildren.length - 1)
+                parag.style.borderRightStyle = 'groove';
+            });
+        })();
 
       if (checkIfTitle(row)) {
         //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
@@ -1066,6 +1084,7 @@ async function setCSSGridTemplate(htmlRows: HTMLElement[]) {
 
 
         addDataGroupsToContainerChildren(row.classList[row.classList.length - 1], row);
+
 
 
         (async function addPlusAndMinusSigns(){
@@ -1387,7 +1406,7 @@ async function showMultipleChoicePrayersButton(
     onClick: () => {
       let groupOfNumber: number = 4;
       //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
-      showInlineBtns(masterBtnID, true);
+      showInlineBtnsDiv(masterBtnID, true);
       //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
       let newDiv = document.createElement("div");
       newDiv.id = masterBtnID + "Container";
@@ -1507,7 +1526,7 @@ async function showMultipleChoicePrayersButton(
           //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
                 el.dataset.optionalPrayer = el.dataset.root);
               //We format the grid template of the newly added divs
-              setCSSGridTemplate(table)
+              setCSS(table)
               //We apply the amplification of text
               applyAmplifiedText(table);
           });
@@ -1538,7 +1557,7 @@ function findTableInPrayersArray(tableTitle: string, prayersArray: string[][][])
  * @param {string} status - a string that is added as a dataset (data-status) to indicated the context in which the inlineBtns div is displayed (settings pannel, optional prayers, etc.)
  * @param {boolean} clear - indicates whether the content of the inlineBtns div should be cleared when shwoInlineBtns is called. Its value is set to 'false' by default
  */
-function showInlineBtns(status: string, clear: boolean = false) {
+function showInlineBtnsDiv(status: string, clear: boolean = false) {
   if (clear) {
     inlineBtnsDiv.innerHTML = "";
   }
@@ -1557,8 +1576,6 @@ function showInlineBtns(status: string, clear: boolean = false) {
     close.style.position = "fixed";
     close.style.top = "5px";
     close.style.right = "15px";
-    close.style.fontSize = "30pt";
-    close.style.fontWeight = "bold";
     close.addEventListener("click", (e) => {
       e.preventDefault;
       hideInlineButtonsDiv();
@@ -1566,7 +1583,7 @@ function showInlineBtns(status: string, clear: boolean = false) {
     inlineBtnsDiv.appendChild(close);
   })();
   inlineBtnsDiv.dataset.status = status; //giving the inlineBtnsDiv a data-status attribute
-  inlineBtnsDiv.style.display = 'grid';
+  inlineBtnsDiv.classList.remove(hidden);
 }
 /**
  * hides the inlineBtnsDiv by setting its zIndex to -1
@@ -1574,19 +1591,13 @@ function showInlineBtns(status: string, clear: boolean = false) {
 function hideInlineButtonsDiv() {
   inlineBtnsDiv.dataset.status = "inlineButtons";
   inlineBtnsDiv.innerHTML = "";
-  inlineBtnsDiv.style.display = 'none';
+  inlineBtnsDiv.classList.add(hidden);
 }
 
 function showSettingsPanel() {
-  showInlineBtns("settingsPanel", true);
+  showInlineBtnsDiv("settingsPanel", true);
   let btn: HTMLElement;
   //Show current version
-
- 
-
-    if (!inlineBtnsDiv.querySelector('#dateDiv'))
-    //inlineBtnsDiv.appendChild(document.getElementById('#dateDiv').cloneNode()) as HTMLElement;
-
 
   //Show InstallPWA button//We are not calling it any more
   function installPWA() {
@@ -1708,16 +1719,34 @@ function showSettingsPanel() {
   langsContainer.style.justifySelf = "center";
   inlineBtnsDiv.appendChild(langsContainer);
 
+  /*showing the select languages buttons*/
+ /* showAddOrRemoveLanguagesBtns({
+    langsOptions: allLanguages.filter(lang => lang !== 'COP' && lang !== 'CA'),
+    storagedLangs: localStorage.defaultLanguages,
+    fun: () => {
+      modifyDefaultAndForeignLanguages();
+    }
+  });*/
+  /*adding the select defaultLanguage and defaultForeignLanguage buttons*/
+  showAddOrRemoveLanguagesBtns({
+    langsOptions: allLanguages,
+    storagedLangs: localStorage.userLanguages,
+    fun: (lang: string) => {
+      modifyUserLanguages(lang);
+    }
+  });
   //Appending Add or Remove language Buttons
-  (async function showAddOrRemoveLanguagesBtns() {
-    let parsedUserLanguages: string[] = JSON.parse(localStorage.userLanguages);
+  async function showAddOrRemoveLanguagesBtns(params:{langsOptions?:string[], storagedLangs?:string, fun?:Function}) {
+    let parsedLanguages: string[] = JSON.parse(params.storagedLangs);
     let subContainer = document.createElement("div");
     subContainer.style.display = "grid";
     subContainer.style.gridTemplateColumns = String("30% ").repeat(3);
     subContainer.style.justifyItems = "center";
     langsContainer.appendChild(subContainer);
-    allLanguages.map((lang) => {
-      let newBtn = createBtn(
+    let newBtn: HTMLElement;
+    params.langsOptions
+      .map((lang) => {
+      newBtn = createBtn(
         "button",
         "button",
         "settingsBtn",
@@ -1731,7 +1760,7 @@ function showSettingsPanel() {
         {
           event: "click",
           fun: () => {
-            modifyUserLanguages(lang);
+            params.fun(lang);
             newBtn.classList.toggle("langBtnAdd");
             //We retrieve again the displayed text/prayers by recalling the last button clicked
             if (containerDiv.children) {
@@ -1742,12 +1771,13 @@ function showSettingsPanel() {
           },
         }
       );
-      if (parsedUserLanguages.indexOf(lang) < 0) {
+      if (parsedLanguages.indexOf(lang) < 0) {
         //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
         newBtn.classList.add("langBtnAdd");
       }
     });
-  })();
+  };
+
 
   (async function showExcludeActorButon() {
     let actorsContainer = document.createElement("div");

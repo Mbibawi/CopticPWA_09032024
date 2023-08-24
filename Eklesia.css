@@ -51,7 +51,7 @@
 }
 
 .inlineBtnsContainer{
-  display:none;
+  display:grid;
   position: fixed;
   top:0px;
   bottom:0px;
@@ -83,7 +83,7 @@ body{
   display: grid;
   grid-template-columns: 98%;
   margin-bottom: 5px;
-  margin-top:20px;
+  margin-top:7px;
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -95,9 +95,8 @@ body{
   border-color: #c93702;
   font-size: 12pt !important;
   font-weight: bold !important;
-  height: fit-content;
-  max-height: 200px;
-  min-height: 9vw;
+  height: 16vh;
+  max-height: 70px;
   text-align: center;
   width:98%;
   margin-top: 2px !important;
@@ -157,36 +156,35 @@ width: 40%;
 p{
   padding-right:7px;
   padding-left:7px;
+  margin-top:10px;
+  margin-bottom:10px;
+  font-stretch: ultra-condensed ;
 }
 
-.AR
+.AR,
+.CA
 {
-  grid-area: AR;
   direction: rtl !important;
   font-family: GentiumBookPlus;
-  font-size: 18.5pt;
+  font-size: 3.5cqi;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 5cqi;
 }
 
+.AR{
+  grid-area: AR;
+}
 
 .CA
 {
-  font-size: 12pt;
   grid-area: CA;
-  direction: rtl !important;
-  font-family: GentiumBookPlus;
-  border-right-style: groove;
-  font-weight: 500;
-  line-height: 30px;
 }
 
 .FR
 {
  grid-area: FR;
- border-right-style: groove;
  font-family: DCO;
- font-size: 13pt;
+ font-size: 3cqi;
  font-weight: normal;
 }
 
@@ -195,10 +193,17 @@ p{
   grid-area: COP;
   border-right-style: groove;
   font-family: ArialCoptic;
-  line-height: 25px;
+  font-size: 3cqi;
+  line-height: 4cqi;
+  font-stretch: condensed;
+}
+.EN{
+  grid-area:EN;
+  font-family:'Times New Roman', Times, serif;
 }
 
-.Title, .SubTitle {
+.Title, 
+.SubTitle {
   background-color: #7E3B10 !important;
   color: white;
   border: #b94c04 solid 3pt ;
@@ -220,9 +225,8 @@ p{
 }
 
 .inlineBtn {
-  background-color: #95190c;
-height: fit-content;
-max-height: 120px;
+background-color: #95190c;
+height: 60px;
 min-width: 150px;
 justify-self: center;
 border-color: #d44d2b;
@@ -231,6 +235,7 @@ color:white;
 }
 .inlineBtn>p, .sideBarBtn>p{
   font-size: 12pt !important;
+  text-align: center!important;
   border: none !important;
   margin-top: 1px;
   margin-bottom: 1px;
@@ -244,15 +249,17 @@ color:white;
   border-radius: 15px;
   border: none !important;
   margin: 5px 2px;
-  height: fit-content;
-  min-height: 24vw;
-  max-height: 24vw;
+  height: 16vh;
+  width: 18vw;
   justify-self: stretch;
   width: 97%;
+}
+.mainPageBtns>p{
+  text-align: center !important;
   color:rgb(255, 255, 255) !important;
-  font-size: 16pt !important;
-  font-weight: bolder !important;
-  line-height: 4vw;
+  font-size: 12pt !important;
+  font-weight: bold !important;
+  line-height: 12pt;
 }
 .credentialsDiv{
   font-style: italic;
@@ -273,13 +280,13 @@ background-color: black !important;
 height: 98vh;
 border-radius: 20px ;
 }
-.DisplayModePresentation>p.COP{
+.DisplayModePresentation>.COP{
   text-align: center;
   font-size: 5vh;
   line-height: 3rem;
   margin-top: 10px;
 }
-.DisplayModePresentation>p.FR{
+.DisplayModePresentation>.FR{
   text-align: justify;
   font-size: 5vh;
   line-height: 3rem;
@@ -397,7 +404,7 @@ border-radius: 20px ;
 
 /* The sidebar menu */
 .sideBar {
-  height: 100%; /* 100% Full-height */
+  min-height: 100%; /* 100% Full-height */
   min-width: 60px !important;
   max-width: 250px;
   position: fixed; /* Stay in place */
@@ -406,6 +413,7 @@ border-radius: 20px ;
   bottom: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto;
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.2s; /* 0.5 second transition effect to slide in the sidebar */
 }
@@ -446,16 +454,23 @@ border-radius: 20px ;
 }
 
 /* Position and style the close button (top right corner) */
-.sideBar .closebtn {
-  color:white;
+.closebtn {
+  background-color: rgb(109, 99, 99);
+  color: white;
   position: absolute;
-  top: 0;
+  top: 3px;
   right: 10px;
-  font-size: 36px;
-  margin-bottom: 3px ;
+  font-size:3.5cqi;
   padding: 0px 0px;
-  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
   text-decoration: none;
+  border-radius: 40px;
+  width: 3.4cqi;
+  height: 3.4cqi;
+  border-style: groove;
+  text-shadow: #01043f;
+  border-width: 3px;
 }
 
 /* The button used to open the sidebar */
@@ -509,17 +524,19 @@ border-radius: 20px ;
 }
 
 .settings{
-  width:auto;
-  height: 60px;
-  background-color: green;
-  font-size: 10pt;
+  width:fit-content;
+  height: fit-content;
+  text-align: center;
+  text-justify: center ;
+  background-color: rgb(81, 0, 128);
+  font-size: 12pt;
   font-weight: bold;
   color:white;
-  text-align: center !important;
-  align-content: center !important;
-  border-radius: 10px;
-  margin: 5px 5px;
-  padding: 6px 6px;
+  border-radius: 30px;
+  border-style: groove;
+  border-width: 3px;
+  margin:3px 3px;
+  padding: 10px 10px;
 
 }
 #btnFractionPrayersContainer{
@@ -556,27 +573,28 @@ border-radius: 20px ;
 
 .dateDiv{
   display:grid;
-  grid-template-columns: 34% 29% 34%;
+  grid-template-columns: 33% 24% 38%;
   margin-bottom: 5px;
-  width: 97%;
+  width: 98%;
   align-items: top;
   justify-items: center;
   justify-content: center;
-  justify-self: stretch;
+  align-self: stretch;
+  justify-self: center;
 }
 .dateBox{
   display:block;
   background-color: #0000008a !important;
   color:rgb(255, 255, 255);
-  font-size: 3vw;
-  font-weight: bold;
+  height: 55px;
+  font-size: 2.8cqi;
   font-style: italic;
   border-style: groove;
   border-color: #422121;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 3px;
+  align-items: stretch;
   align-self: top;
-  padding: 1px 2px;
   justify-self: stretch;
 }
 
@@ -613,7 +631,7 @@ border-radius: 20px ;
 .musicalNote{
   color:  #95190c !important;
   font-weight: bold !important;
-  font-size: 18pt;
+  font-size: 4.5cqi !important;
 }
 .DisplayModePresentation> p>span.musicalNote{
   color:  #95190c !important;
@@ -633,16 +651,16 @@ border-radius: 20px ;
 
 .AR.amplifiedText,
 .CA.amplifiedText{
-  font-size:5vw !important;
+  font-size:5cqi !important;
   line-height: 5.5vw;
 }
 .FR.amplifiedText{
-  font-size:5vw !important;
+  font-size:4.5cqi !important;
   line-height:5.5vw;
 }
 .COP.amplifiedText{
-  font-size:5vw !important;
-  line-height: 5.5vw;
+  font-size:3.7cqi !important;
+  line-height: 5cqi;
 }
 :lang(ar){
 quotes: '"' '"';

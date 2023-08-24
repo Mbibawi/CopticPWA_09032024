@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.7.3 (Major changes to the expandable and Book of Hours buttons and logic, fixes to the praxis response, adding the PrayersArrays object for all the prayersArrays, etc.)';
+const version: string = 'v4.7.4 (Changed the settings button, some css and other fixes)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -31,7 +31,7 @@ const sideBarBtnsContainer: HTMLDivElement =leftSideBar.querySelector('#sideBarB
 const rightSideBar = document.getElementById('rightSideBar') as HTMLDivElement;
 const sideBarTitlesContainer: HTMLDivElement = rightSideBar.querySelector('#sideBarBtns');
 const contentDiv: HTMLElement = document.getElementById('content');
-const sideBarBtn = document.getElementById('opensidebar') as HTMLButtonElement;
+
 const toggleDevBtn = document.getElementById('toggleDev') as HTMLButtonElement;
 const inlineBtnsDiv: HTMLElement = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates: string[] = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google

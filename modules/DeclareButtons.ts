@@ -2139,7 +2139,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
       Prefix.doxologies + "StMinaWates&D=$copticFeasts.AnyDay",
       Prefix.doxologies + "EndOfDoxologiesWates&D=$copticFeasts.AnyDay"];
       
-    if (btn.btnID === btnIncenseVespers.btnID) sequence[0] === sequence[0].replace('Dawn', 'Vespers');
+    if (btn.btnID === btnIncenseVespers.btnID) sequence[0] = sequence[0].replace('Dawn', 'Vespers');
     
     let doxologies: string[][][] =
       sequence
@@ -2148,7 +2148,6 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
             .filter(tbl => splitTitle(tbl[0][0])[0] === doxologyTitle)[0];
         });
     if (doxologies.length === 0) return console.log('doxologies = ', doxologies);
-
 
     doxologies.reverse().forEach(tbl => tbl.reverse());
 

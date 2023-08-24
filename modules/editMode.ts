@@ -108,7 +108,7 @@ tablesArray.forEach(table => {
    //We add the editing buttons
 addEdintingButtons();
 //Setting the CSS of the newly added rows
-setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
+setCSS(Array.from(containerDiv.querySelectorAll("div.Row")));
 //Showing the titles in the right side-bar
 
 //removing the minus sign at the begining of the title
@@ -776,7 +776,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
         document.getElementById("showSequence")
       );
     });
-    setCSSGridTemplate(
+    setCSS(
       Array.from(document.getElementById("showSequence").querySelectorAll("div.Row"))
     );
     
@@ -831,7 +831,7 @@ function showSequence(
         newDiv
       );
     });
-    setCSSGridTemplate(Array.from(newDiv.querySelectorAll(".Row")));
+    setCSS(Array.from(newDiv.querySelectorAll(".Row")));
   });
 }
 
@@ -987,7 +987,7 @@ function showTablesFun(arrayName: string, title: string) {
     modifyTablesInTheirArrayBtn,
   ]);
   //Setting the CSS of the newly added rows
-    setCSSGridTemplate(Array.from(containerDiv.querySelectorAll("div.Row")));
+    setCSS(Array.from(containerDiv.querySelectorAll("div.Row")));
     //Showing the titles in the right side-bar
     hideInlineButtonsDiv();
     showTitlesInRightSideBar(
