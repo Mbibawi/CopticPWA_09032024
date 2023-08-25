@@ -180,7 +180,8 @@ p{
   grid-area: CA;
 }
 
-.FR
+.FR,
+.EN
 {
  grid-area: FR;
  font-family: DCO;
@@ -640,8 +641,10 @@ border-radius: 20px ;
 }
 
 .btnEditing{
-  min-width: 15vw !important;
-  max-width: 15vw !important;
+  min-width: 20vw !important;
+  max-width: 20vw !important;
+  max-height: 40px !important;
+  margin-bottom: 4px !important;
 }
 .btnsDiv{
   justify-content: center;

@@ -39,18 +39,28 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
   if (args.select && args.arrayName === args.select.options[1].innerText) {
     //This is the add new table case
     containerDiv.dataset.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
-    containerDiv.dataset.editedArray = 'PrayersArray';//We delete the dataSet value in order to avoid adding the table to the same array
 
     languages = []; //We empty the languages array and will fill it according to what the user will provide
     let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
-    tablesArray = [[['NewTable&D=$copticFeasts.AnyDay&C=Title']]];//We create a string[][][] with one table having only 1 row
-    let tbl1 = tablesArray[0]
-    langs.split(', ').forEach(lang => {
-      tbl1[0].push(lang);
-      languages.push(lang);
-    });
-    tbl1.push([...tbl1[0]]);
-    tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0];
+    tablesArray = [
+      [
+        ['NewTable&D=$copticFeasts.AnyDay&C=Title']
+      ]
+    ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
+    let tbl1 = tablesArray[0];
+    langs
+      .split(', ')
+      .forEach(lang => {
+        tbl1[0] //this is the 1st row of the table, we add the languages as elements to this row, which gives us a row like ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'AR', 'FR', etc.]
+          .push(lang);
+        languages
+          .push(lang);//We add the languages to the 'languages'
+      });
+    
+    tbl1
+      .push([...tbl1[0]]); //We add a second row to the table
+    
+    tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0]; //We remove the '&C=Title' from the second row
   }; 
 
   if (!tablesArray
@@ -142,7 +152,7 @@ showTitlesInRightSideBar(Array.from(
  * Adds the editing buttons as an appeded div to each html div (row) displayed
  * @param {HTMLElement} el - the div representing a row in the table
  */
-function addEdintingButtons(getButtons?:Function[]) {
+function addEdintingButtons() {
   let btnsDiv = document.createElement("div");
   btnsDiv.classList.add("btnsDiv");
   btnsDiv.style.display = "grid";
@@ -153,69 +163,37 @@ function addEdintingButtons(getButtons?:Function[]) {
   btnsDiv.style.justifyItems = 'stretch';
   btnsDiv.style.position = 'fixed';
 
-  containerDiv.prepend(btnsDiv);
+  containerDiv.insertAdjacentElement('beforebegin', btnsDiv);
 
-  if (!getButtons) getButtons = [
-    changeTitleBtn,
-    changeClassBtn,
-    saveToLocalStorageBtn,
-    exportToJSFileBtn,
-    addTableToSequenceBtn,
-    exportSequenceBtn,
-    addRowBtn,
-    addColumnBtn,
-    deleteRowBtn,
-    splitBelowBtn,
-    convertCopticFontsFromAPIBtn,
-    goToTableByTitleBtn,
-    editNextTableBtn,
-    editPreviousTableBtn
-  ];
+    createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), 'Change Title', btnsDiv);
+  
+  createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), 'Change Class', btnsDiv);
+  
+  createEditingButton(() => saveModifiedArray(false, true), 'Save', btnsDiv);
+  
+  createEditingButton(() => saveModifiedArray(true, true), 'Export to JS file', btnsDiv);
+  
+  createEditingButton(() => addTableToSequence(document.getSelection().focusNode.parentElement), 'Add Table to Sequence', btnsDiv);
+  
+  createEditingButton(() => exportSequence(), 'Export Sequence', btnsDiv);
+  
+  createEditingButton(()=>addNewRow(document.getSelection().focusNode.parentElement), 'Add Row', btnsDiv);
+  createEditingButton(()=>addNewColumn(document.getSelection().focusNode.parentElement), 'Add Column', btnsDiv);
+  createEditingButton(()=>deleteRow(document.getSelection().focusNode.parentElement), 'Delete Row', btnsDiv);
+  createEditingButton(() => splitParagraphsToTheRowsBelow(document.getSelection().focusNode.parentElement), 'Split Below', btnsDiv);
+  
+  createEditingButton(() => convertCopticFontFromAPI(document.getSelection().focusNode.parentElement), 'Convert Coptic Fonts', btnsDiv);
+  
+  createEditingButton(()=>goToTableByTitle(), 'Go to Table', btnsDiv);
+  createEditingButton(()=>editNextOrPreviousTable(document.getSelection().focusNode.parentElement, true), 'Next  Table', btnsDiv);
+  createEditingButton(()=>editNextOrPreviousTable(document.getSelection().focusNode.parentElement, false), 'Previous Table', btnsDiv);
 
-  getButtons.map(fun => fun(btnsDiv))
-    .forEach((btn: HTMLElement) => {
-      btn.style.maxHeight = '30px';
-      btn.style.marginBottom = '5px';
-    });
   }
 
-/**
- * Creates a button for adding a new html element div representing a new row in a table
- * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
- */
-function addRowBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton= createEditingButton(
-     () => addNewRow(document.getSelection().focusNode.parentElement),
-     "Add Row"
-     );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-};
-
-function addColumnBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton= createEditingButton(
-     () => addNewColumn(document.getSelection().focusNode as HTMLElement),
-     "Add Column"
-     );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-};
 
 
-  function saveToLocalStorageBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-    let newButton= createEditingButton(() => saveModifiedArray(), "Save");
-      btnsDiv.appendChild(newButton);
-      return newButton;
-}
-/**
- * Creates a button for exporting the edited text as an string[][][] in a js file
- * @param {HTMLElement} btnsDiv - the html div in  which the buttons are displayed
- */
-function exportToJSFileBtn(btnsDiv: HTMLElement): HTMLButtonElement {
-  let newButton = createEditingButton(() => exportToJSFile(saveModifiedArray(true, true)), "Export To JS");
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
+
+
 
 /**
  * Generates a file name for the JS file, including the name of the array, the date on which it was modified, and the time
@@ -237,75 +215,6 @@ function getJSFileName(arrayName: string): string {
   
 }
 
-function changeTitleBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton = createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), "Change Ttile"
-  );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-  
-function goToTableByTitleBtn(btnsDiv):HTMLButtonElement{
-  let newButton = createEditingButton(() => goToTableByTitle(), "Go To Table"
-  );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-
-  function changeClassBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-    let newButton = createEditingButton(
-      () => changeCssClass(document.getSelection().focusNode.parentElement), "Class");
-    btnsDiv.appendChild(newButton);
-    return newButton;
-  }
-
-function deleteRowBtn(btnsDiv: HTMLElement):HTMLButtonElement {
-    let newButton = createEditingButton(
-      () => deleteRow(document.getSelection().focusNode.parentElement), "Delete Row");
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-  
-function addTableToSequenceBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton = createEditingButton(
-    () => addTableToSequence(document.getSelection().focusNode.parentElement),
-    "Add To Sequence"
-    );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-function convertCopticFontsFromAPIBtn(btnsDiv: HTMLElement):HTMLButtonElement {
-  let newButton = createEditingButton(
-    () => convertCopticFontFromAPI(document.getSelection().focusNode.parentElement),
-    "Convert Coptic Font"
-    );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-
-function splitBelowBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton = createEditingButton(
-  ()=>splitParagraphsToTheRowsBelow(),
-  "Split Below"
-);
-  btnsDiv.appendChild(newButton);
-  return newButton;
-}
-
-function exportSequenceBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton = createEditingButton(
-    () => exportSequence(),
-    "Export Sequence"
-    );
-    btnsDiv.appendChild(newButton);
-  return newButton;
-  }
-function modifyTablesInTheirArrayBtn(btnsDiv:HTMLElement){
-  let newButton = createEditingButton(
-    () => modifyTablesInTheirArray(),
-    "Modify The Original Array"
-  );
-    btnsDiv.appendChild(newButton);
-  }
 
 /**
  * Deletes an html div (row) from the DOM
@@ -318,78 +227,6 @@ function deleteRow(htmlParag: HTMLElement) {
   if (confirm("Are you sure you want to delete this row?") === false) return;//We ask the user to confirm before deletion
   htmlRow.remove();
 }
-
-/**
- * Displays the next table in the array if we are in a single table editing mode
- * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
- */
-function editNextTableBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton= createEditingButton(
-     () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, true),
-     "Next Table"
-     );
-  btnsDiv.appendChild(newButton);
-  return newButton;
-};
-/**
- * Edits the previous table in the array if we are in a single table editing mode
- * @param {HTMLElement} btnsDiv - the html  div in which the buttons are shown
- */
-function editPreviousTableBtn(btnsDiv:HTMLElement):HTMLButtonElement{
-  let newButton= createEditingButton(
-     () => editNextOrPreviousTable(document.getSelection().focusNode.parentElement, false),
-     "Previous Table"
-     );
-     btnsDiv.appendChild(newButton);
-     return newButton
-};
-
-/**
- * Replaces each table in the array by the table in newTables[] having a title that matches the title of the target table in array[]
- */
-function modifyTablesInTheirArray(container:HTMLElement = containerDiv) {
-  let array = eval(containerDiv.dataset.arrayName), arrayOfTables:string[][][] =[], filtered: string[][][];
-
-  if (!array || array.length === 0) { alert('The array was not found'); return };
-  let titles: Set<string> = new Set();
-
-  let containerChildren = Array.from(container.children) as HTMLDivElement[];
-  let title: string;
-  
-    containerChildren
-      .forEach(
-        (htmlRow: HTMLDivElement) => {
-          title = splitTitle(htmlRow.dataset.root)[0]
-          if (titles.has(title)) return;
-
-          titles.add(title)[0];
-
-          arrayOfTables
-            .push(
-              convertHtmlDivElementsIntoArrayTable(
-                containerChildren
-                  .filter(row => splitTitle(row.dataset.root)[0] === title)
-              )
-            );
-
-        });
-        
-  if (arrayOfTables.length === 0) return;
-
-  arrayOfTables
-    //Looping the tables in arrayOfTables
-    .forEach(
-      (table: string[][]) => {
-        //We will filter the array by the title to get the element matching the title
-        filtered = array.filter(t => t[0][0] === table[0][0]);
-        //We will replace the original table with the table array created from the html divs 
-        if (filtered && filtered.length === 1) array.splice(array.indexOf(filtered[0]), 1, table);
-        if (filtered && filtered.length > 1) console.log('found more than 1 table when filtering the original array ', filtered);
-    });
-  //@ts-ignore
-  createJSFile(replacePrefixes(array), 'Modified' + containerDiv.dataset.arrayName+ '.js');
-}
-
 
 /**
  * Changes the 'actor' css class of a row
@@ -463,13 +300,15 @@ function changeTitle(htmlParag: HTMLElement, newTitle?: string, oldTitle?:string
  */
 function createEditingButton(
   fun: Function,
-  label: string
-):HTMLButtonElement {
+  label: string,
+  btnsDiv:HTMLElement
+): HTMLButtonElement {
   let btnHtml:HTMLButtonElement = document.createElement('button')
   btnHtml.classList.add(inlineBtnClass);
   btnHtml.classList.add("btnEditing");
   btnHtml.innerText = label;
   btnHtml.addEventListener("click", () => fun());
+  btnsDiv.appendChild(btnHtml);
   return btnHtml
 }
 
@@ -477,9 +316,9 @@ function createEditingButton(
  * Takes the text of a modified array, and exports it to a js file
  * @param {[string, string]} arrayText - the first element is the modified text of the array that we will export to a Js file. The second element is the name of the array
  */
-function exportToJSFile(arrayText: [string, string] | void) {
-  if (!arrayText) return;
-  createJsFile(arrayText[0], getJSFileName(arrayText[1]));
+function exportToJSFile(arrayText: string, arrayName:string) {
+  if (!arrayText || !arrayName) return;
+  createJsFile(arrayText, getJSFileName(arrayName));
 }
 
 
@@ -491,72 +330,81 @@ function exportToJSFile(arrayText: [string, string] | void) {
  * @returns {[string, string] | void} the text of the modified array
  */
 function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolean = true): [string, string] | void {
+
+  if (!exportToFile && !exportToStorage) return;
   
   let title: string,
-    titles: Set<[string, string]> = new Set(),
-    arrayName: string;
+    titles: Set<string> = new Set(),
+    savedArrays: Set<string> = new Set(),
+    arrayName: string,
+    tablesArray:string[][][];
       
     let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row")); //we retrieve all the divs with 'Row' class from the DOM
     
   //Adding the tables' titles as unique values to the titles set
   htmlRows
-  .forEach(htmlRow => {
+    .forEach(htmlRow => {
       //for each 'Row' div in containderDiv
     title = htmlRow.dataset.root; //this is the title without '&C='
-    arrayName = htmlRow.dataset.arrayName
-    if (titles.has([title, arrayName])) return;
-          titles.add([title, arrayName])
-          processTableTitle([title, arrayName]);
+      arrayName = htmlRow.dataset.arrayName
+      
+      if (!title || !arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
+      
+      if (titles.has(title)) return;
+
+      titles.add(title);
+
+      tablesArray = eval(arrayName);
+
+      if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', arrayName);
+
+      modifyArray(title, tablesArray);
+
+      if (savedArrays.has(arrayName)) return;  //We do this in order to avoid saving or exporting the same gospel array twice: one for the Psalm table and another time for the Gospel table
+      savedArrays.add(arrayName);
+      saveOrExportArray(title, tablesArray, arrayName);
       }
   );
-  if (!exportToFile && !exportToStorage) return;
 
-  let tablesArray: string[][][];
-
-  titles
-    .forEach(title => {
-      tablesArray = eval(title[1]);
-      if (!tablesArray) return;
-      console.log("modified array = ", tablesArray);
+  function modifyArray(tableTitle: string, tablesArray: string[][][]) {
   
-      let text: string = processArrayTextForJsFile(tablesArray, title[1]);
-    
-      if (exportToStorage) {
-        localStorage.editedText = text;
-        console.log(localStorage.editedText);
-      };
-      return [text, arrayName];
-    });
-
-};
-
-function processTableTitle(tableTitle: [string, string], tablesArray?: string[][][]) {
-
-  if (!tablesArray) tablesArray = eval(tableTitle[1]);
-
-  if (!tablesArray) {
-    alert('tablesArray is missing')
-    return
+    let htmlTable =
+      Array.from(containerDiv.children)
+        .filter((htmlRow: HTMLDivElement) =>
+          htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
+  
+      if (htmlTable.length === 0) return;
+  
+      let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+  
+    let oldTable: string[][] =
+      tablesArray
+      .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+      
+    if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
+        
+    else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
+     tablesArray.push(editedTable);
   };
 
-  let htmlTable =
-    Array.from(containerDiv.children)
-      .filter((htmlRow: HTMLDivElement) =>
-        htmlRow.dataset.root === tableTitle[0]) as HTMLDivElement[];
-
-    if (htmlTable.length === 0) return;
-
-    let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
-
-  let oldTable: string[][] =
-    tablesArray
-    .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+  function saveOrExportArray(title: string, tablesArray, arrayName: string) {
+    let text: string;
+   console.log("modified array = ", tablesArray);
     
-  if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
-      
-  else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
-   tablesArray.push(editedTable);
-}
+  text = processArrayTextForJsFile(tablesArray, arrayName);
+  
+  if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile(). title = ', title, ' and arrayName = ', arrayName);
+  
+    if (exportToStorage) {
+          localStorage.editedText = text;
+          console.log(localStorage.editedText);
+    };
+
+    if(exportToFile) exportToJSFile(text, arrayName);
+  };
+};
+
+
 
 /**
  * Takes a table array, and process the strings in the array, in order to restore the prefixes and insert escape characters before the new lines, etc. in a format that suits a js file
@@ -928,10 +776,9 @@ function createJsFile(data:Object | string, filename:string) {
   a.dispatchEvent(e);
 };
 
-function splitParagraphsToTheRowsBelow() {
+function splitParagraphsToTheRowsBelow(htmlParag:HTMLElement) {
   //Sometimes when copied, the text is inserted as a SPAN or a div, we will go up until we get the paragraph element itslef
   let showAlert = ()=> alert('Make sure the cursuor is placed within the text of a paragraph/cell');
-  let htmlParag = document.getSelection().focusNode.parentElement;
   if(!htmlParag) return showAlert();//We check that we got a paragraph element
   while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
 
@@ -980,56 +827,6 @@ function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
   else return htmlParag as HTMLDivElement;
 }
 
-/**
- * Displays the text of a string[][][] which name is passed to the function as as sting
- * @param {string} arrayName - the name of the string[][][] array containing the text
- * @param {string} title 
- * @returns 
- */
-function showTablesFun(arrayName: string, title: string) {
-  let languages: string[] = getLanguages(arrayName),
-        el: HTMLElement,
-        sourceArray:string[][][] = eval(arrayName);
-        
-  if (!sourceArray || sourceArray.length === 0) { alert('No array was found with the name: ' + arrayName);  return}
-  
-  //We save the name of the array in a data attribute of containerDiv, in order to be able to retrieve it when exporting the text to a js file
-  containerDiv.dataset.arrayName = arrayName;
-  
-  let tables: string[][][] = sourceArray.filter(table => table[0][0].includes(title));
-  
-  if (!tables || tables.length === 0) { alert('No tables were found in the ' + arrayName + ' with a title including ' + title); return }
-  
-  
-  tables.forEach(
-    (table: string[][]) =>
-      table.forEach(
-        (row:string[]) =>
-    {
-          el = createHtmlElementForPrayerEditingMode(
-            row,
-            allLanguages
-          );
-      
-          if (el) Array.from(el.children).map((child: HTMLElement) =>{ if(child.tagName === 'P') child.contentEditable = "true"});
-    }
-    ));
-    //We add the editing buttons
-  addEdintingButtons([
-    addRowBtn,
-    deleteRowBtn,
-    splitBelowBtn,
-    changeTitleBtn,
-    changeClassBtn,
-    modifyTablesInTheirArrayBtn,
-  ]);
-  //Setting the CSS of the newly added rows
-    setCSS(Array.from(containerDiv.querySelectorAll("div.Row")));
-    //Showing the titles in the right side-bar
-    hideInlineButtonsDiv();
-    showTitlesInRightSideBar(
-      Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
-}
 
 /**
  * Returns an array of languages based on the name of the array passed to it (if it is a reading, it returns the languages for the readings, if it is the PrayersArray, it returns the prayersLanguages)
@@ -1077,8 +874,19 @@ while (htmlElement.tagName !== 'P' && htmlElement.parentElement) htmlElement = h
 
 function goToTableByTitle() {
   saveModifiedArray(false, true);
-  let title = prompt('Provide the title you want to go to');
-  let rows:HTMLElement[] = Array.from(
+  let title: string = '';
+  //@ts-ignore
+  if (containerDiv.children.length > 0 && containerDiv.children[0].dataset.root) title = containerDiv.children[0].dataset.root;
+
+  title = prompt('Provide the title you want to go to. If you want to show the readings of a given day, you provide the date of the readings in this format\"ReadignsDate = [date]\"', title);
+
+  if (title.startsWith('ReadingsDate = ')) {
+    editDayReadings(title.split('ReadingsDate = ')[1]);
+    return;
+  };
+
+  let rows: HTMLElement[] =
+    Array.from(
     containerDiv.querySelectorAll('.Row') as NodeListOf<HTMLElement>)
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
   if (rows.length === 0){
@@ -1095,6 +903,7 @@ function goToTableByTitle() {
   createFakeAnchor(rows[0].id);
 }
 function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
+
   if (containerDiv.dataset.specificTables !== 'true' ||!containerDiv.dataset.arrayName) return;//We don't run this function unless we are in the 'edinting specific table(s) mode'
 
   let htmlRow = getHtmlRow(htmlParag);
@@ -1106,18 +915,20 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   //We first save the changes to the array
   saveModifiedArray(false, true);
   
-  let array: string[][][] = eval(containerDiv.dataset.arrayName);
+  let arrayName = containerDiv.dataset.arrayName
+  
+  let array: string[][][] = eval(arrayName);
 
   let table = array.filter(tbl => splitTitle(tbl[0][0])[0] === splitTitle(title)[0])[0];
   
   if (!table || table.length < 1) return;
 
-  array = eval(containerDiv.dataset.arrayName);//!CAUTION we needed to do this in order to unfilter the array again after it had been filtered (P.S.: the spread operator did'nt work)
+  array = eval(arrayName);//!CAUTION we needed to do this in order to unfilter the array again after it had been filtered (P.S.: the spread operator did'nt work)
   
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
-  showTables([table], undefined, getLanguages(containerDiv.dataset.arrayName));
+  showTables([table], arrayName, getLanguages(arrayName));
   scrollToTop();
 
 };
@@ -1133,12 +944,17 @@ function reArangeTablesColumns(tblTitle: string, arrayName: string) {
     row.splice(1, 0, '');
     row.splice(1, 0, '');
   });
-  exportToJSFile([processArrayTextForJsFile(array, arrayName),arrayName]);
+  exportToJSFile(processArrayTextForJsFile(array, arrayName),arrayName);
 }
 
-function editDayReadings() {
+function editDayReadings(date?: string) {
+  if (date) saveModifiedArray(true, true);
+
+  if (!date) date = prompt('Provide the date as DDMM');
+
+  if (!date) return;
+  
   containerDiv.innerHTML = '';
-  let date = prompt('Provide the date as DDMM');
   for (let arrayName in ReadingsArrays) {
     ReadingsArrays[arrayName]
       .filter(table => table[0][0].includes(date))
