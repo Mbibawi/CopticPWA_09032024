@@ -38,7 +38,7 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
 
   if (args.select && args.arrayName === args.select.options[1].innerText) {
     //This is the add new table case
-    args.arrayName = 'PrayresArray'
+    args.arrayName = 'PrayersArray';
     containerDiv.dataset.arrayName = args.arrayName;//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
 
     languages = []; //We empty the languages array and will fill it according to what the user will provide
