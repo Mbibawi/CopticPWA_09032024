@@ -319,16 +319,15 @@ PrayersArray= [[
   "فلنسجد لمخلصنا محب البشر الصالح لأنه تراءف علينا، أتى وخلصنا.", 
   ], 
   ], 
-
   [
-    [
-    Prefix.commonIncense+"CymbalVersesPlaceHolder&D=$copticFeasts.AnyDay",
-    "",
-    "",
-    "",
-    ""
-  ]
-],
+  [
+  Prefix.commonIncense+"CymbalVersesPlaceHolder&D=$copticFeasts.AnyDay", 
+  "", 
+  "", 
+  "", 
+  "", 
+  ], 
+  ], 
   [
   [
   Prefix.cymbalVerses+"Wates&D=$copticFeasts.AnyDay&C=Title", 
@@ -795,16 +794,16 @@ PrayersArray= [[
   "", 
   "وأما نحنُ كلنا فهَب لنا كمالاً مسيحياً يُرضيكَ أمامك وأعطهم وإيانا نصيباً وميراثاً مع كافة قديسيك.", 
   ], 
-  ],
+  ], 
   [
-    [
-    Prefix.commonIncense+"DoxologiesPlaceHolder&D=$copticFeasts.AnyDay", 
-    "",
-    "",
-    "",
-    ""
-  ]
-],
+  [
+  Prefix.commonIncense+"DoxologiesPlaceHolder&D=$copticFeasts.AnyDay", 
+  "", 
+  "", 
+  "", 
+  "", 
+  ], 
+  ], 
   [
   [
   Prefix.commonIncense+"DoxolgiesComment&D=$copticFeasts.AnyDay&C=Comments", 
@@ -1363,14 +1362,13 @@ PrayersArray= [[
   "هيتين نو إفشى♫ بخرستوس بين أورو♫ آرى أوناى نيمان♫ خين تيك ميت أورو.", 
   "أيها المسيح ملكنا♫ بصلواتهم♫ اصنع معنا رحمة♫ في ملكوتك.", 
   ], 
-    [
-      Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-      "",
-      "Ô Lumière véritable",
-      "",
-      "ذكصولوجية باكر لربي يسوع"
-    ],
-
+  [
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Ô Lumière véritable", 
+  "", 
+  "ذكصولوجية باكر لربي يسوع", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲡⲓⲟⲩⲱⲓⲛⲓ ⲛ̀ⲧⲁⲫ̀ⲙⲏⲓ: ⲫⲏⲉ̀ⲧⲉⲣⲟ̀ⲩⲱⲓⲛⲓ: ⲉ̀ⲣⲱⲙⲓ ⲛⲓⲃⲉⲛ: ⲉⲑⲛⲏⲟⲩ ⲉ̀ⲡⲓⲕⲟⲥⲙⲟⲥ.", 
@@ -1524,14 +1522,14 @@ PrayersArray= [[
   "Sans cesse jour et nuit♫ de tout cœur par des psaumes♫ des louanges♫ et des cantiques spirituels.", 
   "خين هان بسالموس نيم هان هوس♫ نيم هان هوذى إمبنفما تيكون♫ إمبى إيهوؤ نيم بى إبجوره♫ خين أوهيت إن آت كاروف.", 
   "بمزامير♫ وتسابيح وترانيم♫ روحيةالنهار والليل♫ بقلب لا يفتُر.", 
-  ],
+  ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Ô Mère de la Lumière",
-    "",
-    "ذكصولوجية باكر لأجل السيدة العذراء"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Ô Mère de la Lumière", 
+  "", 
+  "ذكصولوجية باكر لأجل السيدة العذراء", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲑⲟ ⲑ̀ⲙⲁⲩ ⲙ̀ⲡⲓⲟⲩⲱⲓⲛⲓ: ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲙ̀ⲙⲁⲥⲛⲟⲩϯ: ⲁ̀ⲣⲉϥⲁⲓ ϧⲁ ⲡⲓⲗⲟⲅⲟⲥ: ⲡⲓⲁ̀ⲭⲱⲣⲓⲧⲟⲥ.", 
@@ -1561,12 +1559,12 @@ PrayersArray= [[
   "ونحن أيضاً نطلب♫ أن نفوز برحمة♫ بشفاعاتك♫ لدي محب البشر.", 
   ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "L'encens sélectionné de ta virginité",
-    "",
-    "ذكصولوجية باكر لأجل السيدة العذراء"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "L'encens sélectionné de ta virginité", 
+  "", 
+  "ذكصولوجية باكر لأجل السيدة العذراء", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲁⲡⲓⲥ̀ⲑⲟⲓⲛⲟϥⲓ ⲉⲧⲥⲱⲧⲡ: ⲛ̀ⲧⲉ ⲧⲉⲡⲁⲣⲑⲉⲛⲓⲁ̀: ⲁϥϣⲉⲛⲁϥ ⲉ̀ⲡ̀ϣⲱⲓ: ϣⲁ ⲡⲓⲑ̀ⲣⲟⲛⲟⲥ ⲙ̀Ⲫⲓⲱⲧ.", 
@@ -1624,12 +1622,12 @@ PrayersArray= [[
   "بشفاعات♫ والدة الإله♫ القديسة مريم♫ يا رب انعم لنا بمغفرة خطايانا.", 
   ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Doxologie aube pour les anges",
-    "",
-    "ذكصولوجية باكر لأجل الملائكة"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Doxologie aube pour les anges", 
+  "", 
+  "ذكصولوجية باكر لأجل الملائكة", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ϩⲁⲛⲁⲛϣⲟ ⲛ̀ϣⲟ: ⲛⲉⲙ ϩⲁⲛⲑ̀ⲃⲁ ⲛ̀ⲑ̀ⲃⲁ: ⲛ̀ⲁⲣⲭⲏⲁⲅⲅⲉⲗⲟⲥ: ⲛⲉⲙ ⲁⲅⲅⲉⲗⲟⲥ ⲉ̅ⲑ̅ⲩ̅.", 
@@ -1659,12 +1657,12 @@ PrayersArray= [[
   "بشفاعات جميع صفوف♫ الملائكة♫ يارب انعم لنا♫ بمغفرة خطايانا.", 
   ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Doxologie aube pour les apôtres",
-    "",
-    "ذكصولوجية باكر لأجل الآباء الرسل"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Doxologie aube pour les apôtres", 
+  "", 
+  "ذكصولوجية باكر لأجل الآباء الرسل", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲉⲛⲓⲟϯ ⲛ̀ⲁ̀ⲡⲟⲥⲧⲟⲗⲟⲥ: ⲁⲩϩⲓⲱⲓϣ ϧⲉⲛ ⲛⲓⲉⲑⲛⲟⲥ: ϧⲉⲛ ⲡⲓⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ: ⲛ̀ⲧⲉ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅.", 
@@ -1687,12 +1685,12 @@ PrayersArray= [[
   "بصلوات♫ سادتي الآباء الرسل♫ يا رب انعم لنا♫ بمغفرة خطايانا.", 
   ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Doxologie aube pour les martyrs",
-    "",
-    "ذكصولوجية باكر لأجل الشهداء"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Doxologie aube pour les martyrs", 
+  "", 
+  "ذكصولوجية باكر لأجل الشهداء", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ϩⲁⲛⲭ̀ⲗⲟⲙ ⲛ̀ⲁⲧⲗⲱⲙ: ⲁϥⲧⲏⲓⲧⲟⲩ ⲛ̀ϫⲉ Ⲡⲟ̅ⲥ̅: ϩⲓϫⲉⲛ ⲡ̀ⲭⲟⲣⲟⲥ ⲧⲏⲣϥ: ⲛ̀ⲧⲉ ⲛⲓⲙⲁⲣⲧⲩⲣⲟⲥ.", 
@@ -1713,14 +1711,14 @@ PrayersArray= [[
   "Par les prières de tous♫ les chœurs des martyrs♫ Seigneur accorde-nous♫ le pardon de nos péchés.", 
   "هيتين نى إفكى♫ إنتى إبخوروس تيرف إنتى نى مارتيروس♫ إبشويس آرى إهموت نان إمبي كو إيفول إنتين نوفي.", 
   "بصلوات جميع صفوف♫ الشهداء♫ يارب انعم لنا♫ بمغفرة خطايانا.", 
-  ],
+  ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Doxologie aube pour les saints",
-    "",
-    "ذكصولوجيه لأجل القديسين"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Doxologie aube pour les saints", 
+  "", 
+  "ذكصولوجيه لأجل القديسين", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲏⲉ̅ⲑ̅ⲩ̅ ⲛ̀ⲧⲁⲕ: ⲉⲩⲉ̀ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲕ: ⲉⲩⲉ̀ⲥⲁϫⲓ ⲙ̀ⲡ̀ⲱ̀ⲟⲩ: ⲛ̀ⲧⲉ ⲧⲉⲕⲙⲉⲧⲟⲩⲣⲟ.", 
@@ -1741,14 +1739,14 @@ PrayersArray= [[
   "Par les prières des justes et pieux♫ qui portent la croix♫ Seigneur accorde-nous♫ le Pardon de nos péchés.", 
   "هيتين نى إفشى♫ إنتى إبخوروس تيرف انتى نى استافرفوروس♫ نيم نى إثميى نيم نى ذيكيئوس♫ إبشويس آرى إهموت نان إمبي كو إيفول إنتيني نوفي.", 
   "بصلوات كافة مصاف♫ لابسي الصليب♫ والأبرار والصديقين♫ يارب انعم لنا بمغفرة خطايانا.", 
-  ],
+  ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Doxologie aube pour les prohètes et les patriarches",
-    "",
-    "ذكصولوجية من أجل الآباء و الأنبياء"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Doxologie aube pour les prohètes et les patriarches", 
+  "", 
+  "ذكصولوجية من أجل الآباء و الأنبياء", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "ⲉⲣⲉ Ⲏⲗⲓⲁⲥ: ⲡⲓⲥⲟⲫⲣⲟⲛ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲏⲥ: ⲛⲉⲙ Ⲉⲗⲓⲥⲉⲟⲥ: ⲡⲉϥⲥⲱⲧⲡ ⲙ̀ⲙⲁⲑⲏⲧⲏⲥ.", 
@@ -1799,12 +1797,12 @@ PrayersArray= [[
   "بصلواتهم♫ أنعم لنا يا الله♫ بمغفرة خطايانا♫ وأعطنا سلاماً.", 
   ], 
   [
-    Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title",
-    "",
-    "Tes compassions mon Dieu",
-    "",
-    "مراحمك يا إلهي"
-  ],
+  Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Tes compassions mon Dieu", 
+  "", 
+  "مراحمك يا إلهي", 
+  ], 
   [
   Prefix.doxologies+"AdamDawn&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲉⲕⲛⲁⲓ ⲱ̀ Ⲡⲁⲛⲟⲩϯ: ϩⲁⲛⲁⲧϭⲓⲏ̀ⲡⲓ ⲙ̀ⲙⲱⲟⲩ: ⲥⲉⲟϣ ⲉ̀ⲙⲁϣⲱ: ⲛ̀ϫⲉ ⲛⲉⲕⲙⲉⲧϣⲉⲛϩⲏⲧ.", 
@@ -3162,24 +3160,28 @@ PrayersArray= [[
   ], 
   ], 
   [
-   [ Prefix.commonPrayer+"Kyrielison41TimesMassIntro&D=$copticFeasts.AnyDay&C=Priest",
-    "",
-    "Agneau de Dieu qui porte les péchés, du monde, nous T'implorons écoute nous et aie pitié de nous",
-    "",
-    "نسألك يا حمل الله يا حامل خطية العالم اسمعنا وارحمنا واغفر لنا خطايانا آمين."]
-  ],
   [
-   [ Prefix.commonPrayer+"Kyrielison41TimesNoMassIntro&D=$copticFeasts.AnyDay&C=Priest",
-    "",
-    "Agneau de Dieu qui porte les péchés, du monde, nous T'implorons écoute nous et aie pitié de nous",
-    "",
-    "نسألك يا رب اسمعنا وارحمنا واغفر لنا خطايانا آمين."]
-  ],
+  Prefix.commonPrayer+"Kyrielison41TimesMassIntro&D=$copticFeasts.AnyDay&C=Priest", 
+  "", 
+  "Agneau de Dieu qui porte les péchés, du monde, nous T'implorons écoute nous et aie pitié de nous", 
+  "", 
+  "نسألك يا حمل الله يا حامل خطية العالم اسمعنا وارحمنا واغفر لنا خطايانا آمين.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.commonPrayer+"Kyrielison41TimesNoMassIntro&D=$copticFeasts.AnyDay&C=Priest", 
+  "", 
+  "Agneau de Dieu qui porte les péchés, du monde, nous T'implorons écoute nous et aie pitié de nous", 
+  "", 
+  "نسألك يا رب اسمعنا وارحمنا واغفر لنا خطايانا آمين.", 
+  ], 
+  ], 
   [
   [
   Prefix.commonPrayer+"Kyrielison41Times&D=$copticFeasts.AnyDay&C=Assembly", 
   "Ⲕⲩⲣⲓⲉ̀ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ: Ⲕⲩⲣⲓⲉ̀ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ: Ⲕⲩⲣⲓⲉ̀ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ:", 
-  "Pitié Seigneur. 41 fois Aie pitié ô Dieu Écoute et aie pitié de nous",
+  "Pitié Seigneur. 41 fois Aie pitié ô Dieu Écoute et aie pitié de nous", 
   "كيرياليسون (41)", 
   "يا رب ارحم (41 مرة) ارحمنا يا الله، اسمعنا وارحمنا", 
   ], 
@@ -20723,4 +20725,178 @@ PrayersArray= [[
   "بشفاعات رئيسيّ الملائكة الطاهرين مِيخائيل وغبريال، يا ربُ انعِم لنا بِمَغفِرة خطايانا.", 
   ], 
   ], 
+  [
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Title", 
+  "", 
+  "À Toi la puissance", 
+  "Thine is the power", 
+  "", 
+  "لك القوة والمجد", 
+  ],
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Assembly", 
+  "Ⲑⲱⲕ ⲧⲉ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲩⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲥ̀ⲙⲟⲩ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ: Ⲉⲙⲙⲁⲛⲟⲩⲏⲗ ⲡⲉⲛⲛⲟⲩϯ ⲡⲉⲛⲟⲩⲣⲟ.", 
+  "À Toi la puissance, la gloire, la bénédiction et la magnificence éternellement, Amen ! Emmanuel notre Dieu et notre Roi.", 
+  "Thine is the power, the glory, the blessing, and the majesty, forever. Amen. Emmanuel our God and our King.", 
+  "ثوك تي تي جوم نيم بي أوؤو نيم بي أزمو نيم بي آما هي شا اينيه آمين، إممانوئيل بين نوتي بين أورو.", 
+  "لك القوة والمجد والبركة والعزة إلى الأبد. آمين. عمانوئيل إلهنا وملكنا.", 
+  ], 
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Assembly", 
+  "Ⲑⲱⲕ ⲧⲉ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲩⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲥ̀ⲙⲟⲩ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ: Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ.", 
+  "À Toi la puissance, la gloire, la bénédiction et la magnificence éternellement, Amen ! Mon Seigneur Jésus Christ.", 
+  "Thine is the power, the glory, the blessing, and the majesty, forever. Amen. O my Lord Jesus Christ.", 
+  "ثوك تي تي جوم نيم بي أوؤو نيم بي إزمو نيم بي آما هي، شا إينيه آمين، باشويس إيسوس بي اخرستوس.", 
+  "لك القوة، والمجد، والبركة، والعزة، إلى الأبد. آمين. يا ربى يسوع المسيح.", 
+  ], 
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Assembly", 
+  "Ⲑⲱⲕ ⲧⲉ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲩⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲥ̀ⲙⲟⲩ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ.", 
+  "À Toi la puissance, la gloire, la bénédiction et la magnificence éternellement, Amen !", 
+  "Thine is the power, the glory, the blessing, and the majesty, forever. Amen.", 
+  "ثوك تي تي جوم نيم بي أوؤو نيم بي إزمو نيم بى آما هي، شا إينيه آمين.", 
+  "لك القوة، والمجد، والبركة، والعزة، إلى الأبد. آمين.", 
+  ], 
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Assembly", 
+  "Ⲑⲱⲕ ⲧⲉ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲩⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲥ̀ⲙⲟⲩ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ: Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ ⲡⲁⲥⲱⲧⲏⲣ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ.", 
+  "À Toi la puissance, la gloire, la bénédiction et la magnificence éternellement, Amen ! Mon Seigneur Jésus Christ, mon Bon Sauveur.", 
+  "Thine is the power, the glory, the blessing, and the majesty, forever. Amen. O my Lord Jesus Christ my good Savior.", 
+  "ثوك تي تي جوم نيم بي أوؤو نيم بي إزمو نيم بي آما هي، شا إينيه آمين، باشويس إيسوس بي اخرستوس، باسوتير إن أغاثوس.", 
+  "لك القوة، والمجد، والبركة، والعزة، إلى الأبد. آمين. يا ربى يسوع المسيح مخلصي الصالح.", 
+  ],
+  [
+  Prefix.HolyWeek +"ThokTatiGom&D=$Seasons.HolyWeek&C=Assembly", 
+  "Ⲑⲱⲕ ⲧⲉ ϯϫⲟⲙ ⲛⲉⲙ ⲡⲩⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲥ̀ⲙⲟⲩ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ: Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ ⲡⲁⲥⲱⲧⲏⲣ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲧⲁϫⲟⲙ ⲛⲉⲙ ⲡⲁⲥ̀ⲙⲟⲩ ⲡⲉ ϮⲠⲟ̅ⲥ̅ ⲁϥϣⲱⲡⲓ ⲛⲏⲓ ⲉⲩⲥⲱⲧⲏⲣⲓⲁ̀ ⲉ̀ϥⲟⲩⲁⲃ.", 
+  "À Toi la puissance, la gloire, la bénédiction et la magnificence éternellement, Amen ! Mon Seigneur Jésus Christ, mon Bon Sauveur. Ma force et ma louange sont le Seigneur et Il est devenu pour moi un saint salut. ", 
+  "Thine is the power, the glory, the blessing, and the majesty, forever. Amen. O my Lord Jesus Christ my good Savior. The Lord is my strength, my praise, and has become my holy salvation.", 
+  "ثوك تي تي جوم نيم بي أوؤو نيم بي إزمو نيم بي آما هي، شا إينيه آمين، باشويس إيسوس بي اخرستوس، باسوتير إن أغاثوس، تاجوم نيم با أزمو بى أبشويس أفشوبى نى إن إف سوتيريا إف أوواب.", 
+  "لك القوة، والمجد، والبركة، والعزة، إلى الأبد. آمين. يا ربى يسوع المسيح مخلصي الصالح. قوتي، وتسبحتي، هو الرب و قد صار لي خلاصاً مقدساً.", 
+  ]
+  ], 
+  [
+    [
+        Prefix.HolyWeek+ "KiEbirto&D=$Seasons.HolyWeek&C=Title",
+        "",
+        "Ⲕⲉ ⲩⲡⲉⲣⲧⲟⲩ ⲕⲁⲧⲁ ⲝⲓⲱ",
+        "",
+        "",
+        "كي إيبرتو"
+    ],
+    [
+        Prefix.HolyWeek+ "KiEbirto&D=$Seasons.HolyWeek&C=Diacon",
+        "Ⲕⲉ ⲩⲡⲉⲣⲧⲟⲩ ⲕⲁⲧⲁ ⲝⲓⲱ ⲑⲏⲛⲉ ⲏ̀ⲙⲁⲥ: ⲧⲏⲥ ⲁⲕⲣⲟ ⲁ̀ⲥⲉⲱⲥ ⲧⲟⲩ ⲁ̀ⲅⲓⲟⲩ ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲩ: ⲕⲩⲣⲓⲟⲛ ⲕⲉ ⲧⲟⲛ ⲑⲉⲟⲛ ⲏ̀ⲙⲱⲛ: ⲓ̀ⲕⲉⲧⲉⲩⲥⲱⲙⲉⲛ ⲥⲟⲫⲓⲁ̀ ⲟⲣⲑⲓ ⲁⲕⲟⲩⲥⲱⲙⲉⲛ ⲧⲟⲩ ⲁ̀ⲅⲓⲟⲩ ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲩ.",
+        "Afin que nous soyons dignes d'écouter le Saint Évangile. Notre Seigneur et notre Dieu, Soyons attentifs avec sagesse et droiture pour écouter le Saint Évangile.",
+        "We beseech our Lord and God, that we may be worthy to hear the holy and Divine Gospel. In wisdom, let us attend to the Holy Gospel.",
+        "كى ايبريتو كاطا أكسيو ثينا إيماس، تيس أكرو أسيئوس طو آجيو إيف انجيليو، كيريون كى تون ثيئون ايمون، ايكاتيف سومين سوفيا أورثى أكوسومين تو آجيو إيف انجيليو.",
+        "من أجل أن نكون مستحقين لسماع الإنجيل المقدس. إلى ربنا وإلهنا نتوسل بحكمة مستقيمين أنصتوا للإنجيل المقدس."
+    ],
+    ],
+    [
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Title",
+        "",
+        "Au nom de la Trinité",
+        "",
+        "",
+        "باسم الثالوث المساوي"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "Ⲯⲉⲛ ⲫ̀ⲣⲁⲛ ⲛ̀ⲑⲧ̀ⲣⲓⲁⲥ:",
+        "Au nom de la Trinité,",
+        "In the name of the Trinity,",
+        "خين إفران إن تي ترياس،",
+        "باسم الثالوث،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ⲛ̀ⲟⲩⲙⲟⲟⲩⲥⲓⲟⲥ.",
+        "consubstantielle,",
+        "one in essence,",
+        "إن أوموسيوس،",
+        "المساوي،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "ϮⲪⲓⲱⲧ ⲛⲉⲙ ϮⲠϯϩⲣⲓ:",
+        "le Père et le Fils,",
+        "the Father and the Son,",
+        "إفيوت نيم إبشيري،",
+        "الآب والإبن،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ⲛⲉⲙ Ⲡⲓⲡⲛⲉⲩⲙⲁ ⲉ̀ϧⲟⲩⲁⲃ.",
+        "et le Saint Esprit.",
+        "and the Holy Spirit.",
+        "نيم بي إبنيفما إثؤواب.",
+        "والروح القدس."
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "Ⲡⲓⲟⲩⲱⲓⲛⲓ ⲛ̀ⲧⲁⲫ̀ⲙϩⲓ:",
+        "La Lumière,",
+        "O true light,",
+        "بي أوأوينى أنتا إفمي،",
+        "أيها النور الحقيقي،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ⲫϩⲉⲧⲉⲣⲟⲩⲱⲓⲛⲓ:",
+        "véritable,",
+        "which enlightens,",
+        "في إيت إير أوواينى،",
+        "الذي يضئ،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "ⲉⲣⲱⲙⲓ ⲛⲓⲃⲉⲛ:",
+        "qui éclaire tout homme,",
+        "every man,",
+        "إيرومي نيفين،",
+        "لكل إنسان،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ⲉϧⲛϩⲟⲩ ⲉ̀ⲡⲓⲕⲟⲥⲙⲟⲥ.",
+        "venant en ce monde.",
+        "that cometh into the world.",
+        "ايثنيو إي بي كوزموس.",
+        "آتٍ إلى العالم."
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "Ⲭⲉⲣⲉ ⲛⲉ Ⲙⲁⲣⲓⲁ̀:",
+        "Salut à toi Marie,",
+        "Hail thee O Mary,",
+        "شيري ني ماريا،",
+        "السلام لك يا مريم،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ϭ̀ⲣⲟⲙⲡⲓ ⲉⲑⲛⲉⲥⲱⲥ:",
+        "La belle colombe,",
+        "the pure dove,",
+        "تي إتشرومبي إيث نيسوس،",
+        "الحمامة الحسنة،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Priest",
+        "ⲑⲏⲉ̀ⲧⲁⲥⲙⲓⲥⲓ ⲛⲁⲛ:",
+        "qui a enfanté pour nous,",
+        "who has born for us,",
+        "ثي إيتا سيمسى نان،",
+        "التي ولدت لنا،"
+    ],
+    [
+        Prefix.HolyWeek+ "KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly",
+        "ⲙ̀Ⲫϯ ⲡⲓⲗⲟⲅⲟⲥ.",
+        "Dieu le Verbe.",
+        "God the Logos.",
+        "إم إفنوتي بي لوغوس.",
+        "الله الكلمة."
+    ]
+    ],
   ];

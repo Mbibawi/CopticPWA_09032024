@@ -346,25 +346,25 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
     .forEach(htmlRow => {
       //for each 'Row' div in containderDiv
     title = htmlRow.dataset.root; //this is the title without '&C='
+      if (titles.has(title)) return;
+      else titles.add(title);
+      
       arrayName = htmlRow.dataset.arrayName
       
-      if (!title || !arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
+      if (!arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
+      else if (!savedArrays.has(arrayName)) savedArrays.add(arrayName);
       
-      if (titles.has(title)) return;
-
-      titles.add(title);
-
       tablesArray = eval(arrayName);
 
       if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', arrayName);
 
       modifyArray(title, tablesArray);
-
-      if (savedArrays.has(arrayName)) return;  //We do this in order to avoid saving or exporting the same gospel array twice: one for the Psalm table and another time for the Gospel table
-      savedArrays.add(arrayName);
-      saveOrExportArray(title, tablesArray, arrayName);
-      }
+    }
   );
+  
+  //We finally save or export each array in the savedArrays
+  savedArrays
+    .forEach(arrayName => saveOrExportArray(arrayName));
 
   function modifyArray(tableTitle: string, tablesArray: string[][][]) {
   
@@ -387,13 +387,13 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
      tablesArray.push(editedTable);
   };
 
-  function saveOrExportArray(title: string, tablesArray, arrayName: string) {
+  function saveOrExportArray(arrayName: string) {
     let text: string;
-   console.log("modified array = ", tablesArray);
+   console.log("modified array = ", eval(arrayName));
     
-  text = processArrayTextForJsFile(tablesArray, arrayName);
+  text = processArrayTextForJsFile(eval(arrayName), arrayName);
   
-  if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile(). title = ', title, ' and arrayName = ', arrayName);
+  if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile().  arrayName = ', arrayName);
   
     if (exportToStorage) {
           localStorage.editedText = text;
@@ -520,6 +520,8 @@ function addNewRow(htmlParag: HTMLElement, title?: string): HTMLElement {
     htmlRow.title
   );
   newRow.dataset.root = splitTitle(title)[0];
+  let arrayName = prompt('Provide the name of the array', htmlRow.dataset.arrayName);
+  newRow.dataset.arrayName= arrayName ;
   newRow.title = title;
   let cssClass = splitTitle(title)[1];
   if (cssClass) newRow.classList.add(cssClass);
