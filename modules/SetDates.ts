@@ -186,12 +186,9 @@ function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Da
 		return sunday;
 	} else {
 		// it means we are in an ordinary day and we follow the ordinary readings calender, this should return a coptic date in a string of "DDMM"
-		let date: string[][] = copticReadingsDates.filter(d => d[0] === coptDate);
-		if (date[0]) {
-			return date[0][1]
-		} else {
-			return coptDate
-		}
+		let date: string[][] = copticReadingsDates.filter(datesArray => datesArray.indexOf(coptDate)>0);
+		if (date[0]) return date[0][0];
+		else return coptDate;
 	}
 };
 /**
@@ -563,3 +560,38 @@ function testDateFunction(date:Date=new Date('2022.12.31')) {
 	changeDate(new Date());
 
 }
+
+/**
+ * It was created to reorganise the copticReadingsDates array. It was used once, and we will not most probably need to use it again. Will not delete it immediately though
+ */
+function groupReadingsDates() {
+	let unique:Set<string>= new Set();
+	let dates: string[][] = [];
+	copticReadingsDates
+		.forEach(dateArray => {
+			if (unique.has(dateArray[1])) return;
+			unique.add(dateArray[1]);
+			dates.push([dateArray[1]]);
+			copticReadingsDates
+				.filter(array => array[1] === dateArray[1])
+				.forEach(arrayDate => dates[dates.length - 1].push(arrayDate[0]))
+		});
+	console.log(dates);
+	
+	dates
+		.forEach(groupArray => {
+		copticReadingsDates
+			.filter(dateArray => dateArray[1] === groupArray[0])
+			.forEach(dateArray => {
+				console.log(dateArray[0]);
+				if (groupArray.indexOf(dateArray[0]) < 0) console.log('something wrong', groupArray);
+			})
+		
+	})
+	
+}
+
+
+
+
+
