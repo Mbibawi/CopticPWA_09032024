@@ -38,7 +38,8 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
 
   if (args.select && args.arrayName === args.select.options[1].innerText) {
     //This is the add new table case
-    containerDiv.dataset.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
+    args.arrayName = 'PrayresArray'
+    containerDiv.dataset.arrayName = args.arrayName;//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
 
     languages = []; //We empty the languages array and will fill it according to what the user will provide
     let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
@@ -66,7 +67,6 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
   if (!tablesArray
     && args.select
     && args.arrayName
-    && args.arrayName !== args.select.options[1].innerText //i.e. if it is not 'new table'
     && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
   { containerDiv.dataset.specificTables = 'true' };
 

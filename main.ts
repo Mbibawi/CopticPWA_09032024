@@ -2106,54 +2106,56 @@ function playingWithInstalation() {
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
   PrayersArray
-    .map((wordTable) => {
+    .map((table) => {
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
-    if (wordTable[0][0].startsWith(Prefix.commonPrayer)) {
-      PrayersArrays.CommonPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.massStBasil)) {
-      PrayersArrays.MassStBasilPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.massCommon)) {
-      PrayersArrays.MassCommonPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.massStGregory)) {
-      PrayersArrays.MassStGregoryPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.massStCyril)) {
-      PrayersArrays.MassStCyrilPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.massStJohn)) {
-      PrayersArrays.MassStJohnPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.fractionPrayer)) {
-      PrayersArrays.FractionsPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.doxologies)) {
-      PrayersArrays.DoxologiesPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.commonIncense)) {
-      PrayersArrays.IncensePrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.incenseDawn)) {
-      PrayersArrays.IncensePrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.incenseVespers)) {
-      PrayersArrays.IncensePrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.communion)) {
-      PrayersArrays.CommunionPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.psalmResponse)) {
-      PrayersArrays.PsalmAndGospelPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.gospelResponse)) {
-      PrayersArrays.PsalmAndGospelPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.cymbalVerses)) {
-      PrayersArrays.CymbalVersesPrayersArray.push(wordTable);
-    }else if (wordTable[0][0].startsWith(Prefix.praxisResponse)) {
-      PrayersArrays.PraxisResponsesPrayersArray.push(wordTable);
-    } else if (wordTable[0][0].startsWith(Prefix.bookOfHours)) {
-      PrayersArrays.bookOfHoursPrayersArray.push(wordTable);
-      if (wordTable[0][0].includes('1stHour')) {
-        bookOfHours.DawnPrayersArray.push(wordTable);
-      } else if (wordTable[0][0].includes('3rdHour')) {
-        bookOfHours.ThirdHourPrayersArray.push(wordTable);
-      }else if (wordTable[0][0].includes('6thHour')) {
-        bookOfHours.SixthHourPrayersArray.push(wordTable);
-      }else if (wordTable[0][0].includes('9thHour')) {
-        bookOfHours.NinethHourPrayersArray.push(wordTable);
-      }else if (wordTable[0][0].includes('11thHour')) {
-        bookOfHours.EleventhHourPrayersArray.push(wordTable);
-      }else if (wordTable[0][0].includes('12thHour')) {
-        bookOfHours.TwelvethHourPrayersArray.push(wordTable);
+    if (table[0][0].startsWith(Prefix.commonPrayer)) {
+      PrayersArrays.CommonPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.massStBasil)) {
+      PrayersArrays.MassStBasilPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.massCommon)) {
+      PrayersArrays.MassCommonPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.massStGregory)) {
+      PrayersArrays.MassStGregoryPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.massStCyril)) {
+      PrayersArrays.MassStCyrilPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.massStJohn)) {
+      PrayersArrays.MassStJohnPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.fractionPrayer)) {
+      PrayersArrays.FractionsPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.doxologies)) {
+      PrayersArrays.DoxologiesPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.commonIncense)) {
+      PrayersArrays.IncensePrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.incenseDawn)) {
+      PrayersArrays.IncensePrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.incenseVespers)) {
+      PrayersArrays.IncensePrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.communion)) {
+      PrayersArrays.CommunionPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.psalmResponse)) {
+      PrayersArrays.PsalmAndGospelPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.gospelResponse)) {
+      PrayersArrays.PsalmAndGospelPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.cymbalVerses)) {
+      PrayersArrays.CymbalVersesPrayersArray.push(table);
+    }else if (table[0][0].startsWith(Prefix.praxisResponse)) {
+      PrayersArrays.PraxisResponsesPrayersArray.push(table);
+    }else if (table[0][0].startsWith(Prefix.HolyWeek)) {
+      PrayersArrays.holyWeekPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.bookOfHours)) {
+      PrayersArrays.bookOfHoursPrayersArray.push(table);
+      if (table[0][0].includes('1stHour')) {
+        bookOfHours.DawnPrayersArray.push(table);
+      } else if (table[0][0].includes('3rdHour')) {
+        bookOfHours.ThirdHourPrayersArray.push(table);
+      }else if (table[0][0].includes('6thHour')) {
+        bookOfHours.SixthHourPrayersArray.push(table);
+      }else if (table[0][0].includes('9thHour')) {
+        bookOfHours.NinethHourPrayersArray.push(table);
+      }else if (table[0][0].includes('11thHour')) {
+        bookOfHours.EleventhHourPrayersArray.push(table);
+      }else if (table[0][0].includes('12thHour')) {
+        bookOfHours.TwelvethHourPrayersArray.push(table);
       }
     }
   });

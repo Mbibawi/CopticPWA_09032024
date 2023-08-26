@@ -137,6 +137,7 @@ const Prefix = {
     synaxarium: "RS_", //Stands for Readings Synaxarium
     cymbalVerses: "CV_", //Stands for Cymbal Verses
     bookOfHours: "BOH_", //Stands for Book Of Prayers
+    HolyWeek: 'HW_', //Stands for Holy Week
 };
 const plusCharCode: number = 10133;
 const btnClass = 'sideBarBtn';
@@ -360,7 +361,8 @@ const MassStBasilPrayersArray: string[][][] = [],
         PsalmAndGospelPrayersArray: string[][][] = [],
         CymbalVersesPrayersArray: string[][][] = [],
         PraxisResponsesPrayersArray: string[][][] = [],
-        bookOfHoursPrayersArray: string[][][] = [];
+        bookOfHoursPrayersArray: string[][][] = [],
+        holyWeekPrayersArray: string[][][] = [];
 const PrayersArrays = 
     {
     CommonPrayersArray: CommonPrayersArray,
@@ -376,7 +378,8 @@ const PrayersArrays =
     PsalmAndGospelPrayersArray:PsalmAndGospelPrayersArray,
     CymbalVersesPrayersArray:CymbalVersesPrayersArray,
     PraxisResponsesPrayersArray: PraxisResponsesPrayersArray,
-    bookOfHoursPrayersArray: bookOfHoursPrayersArray
+    bookOfHoursPrayersArray: bookOfHoursPrayersArray,
+    holyWeekPrayersArray: holyWeekPrayersArray
     };
 
 const
