@@ -4,8 +4,7 @@ let sequence: string[] = [];
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?: string, tableTitle?: string }) {
-
+function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?: string, tableTitle?: string }) {
  
   if (args.clear !==false) args.clear = true;
   if(!args.arrayName && args.select) args.arrayName = args.select.selectedOptions[0].innerText;
@@ -104,6 +103,7 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
 
   showTables(tablesArray, args.arrayName, languages, args.clear);
 
+  
 }
 /**
  * Takes a string[][][] (i.e., and array of tables, each being a string[][], where each string[] represents a rowh),  that we want to edit,and creates html div elements representing the text of each row of eah table in the tablesArray
@@ -113,7 +113,7 @@ function editTablesArray(args: { select?: HTMLSelectElement, clear?: boolean, ar
 function showTables(tablesArray: string[][][], arrayName:string, languages: string[], clear: boolean = true) {
   if (!arrayName) return;
   if (clear === true) containerDiv.innerHTML = '';
-  let el: HTMLDivElement;
+  let htmlRow: HTMLDivElement;
   //We create an html div element to display the text of each row of each table in tablesArray
   tablesArray
     .forEach(table => {
@@ -121,11 +121,14 @@ function showTables(tablesArray: string[][][], arrayName:string, languages: stri
       table
         .forEach(row => {
     if (!row) return;
-    el = createHtmlElementForPrayerEditingMode(row, languages);
+    htmlRow = createHtmlElementForPrayerEditingMode(row, languages);
     //We make the paragraph children of each row, editable
-          if (el) {
-            el.dataset.arrayName = arrayName;
-            Array.from(el.children).forEach((c: HTMLElement) => c.contentEditable = "true")
+          if (htmlRow) {
+            htmlRow.dataset.arrayName = arrayName;
+            Array.from(htmlRow.children)
+              .forEach((paragraph: HTMLParagraphElement) =>{
+              paragraph.contentEditable = "true";
+            });
           };
   });
 });
@@ -358,60 +361,73 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
 
       if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', arrayName);
 
-      modifyArray(title, tablesArray);
+      modifyEditedArray(title, tablesArray);
     }
   );
   
   //We finally save or export each array in the savedArrays
   savedArrays
-    .forEach(arrayName => saveOrExportArray(arrayName));
-
-  function modifyArray(tableTitle: string, tablesArray: string[][][]) {
+    .forEach(arrayName => saveOrExportArray(arrayName, exportToFile, exportToStorage));
   
-    let htmlTable =
-      Array.from(containerDiv.children)
-        .filter((htmlRow: HTMLDivElement) =>
-          htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
-  
-      if (htmlTable.length === 0) return;
-  
-      let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
-  
-    let oldTable: string[][] =
-      tablesArray
-      .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
-      
-    if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
-        
-    else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
-     tablesArray.push(editedTable);
-  };
-
-  function saveOrExportArray(arrayName: string) {
-    let text: string;
-   console.log("modified array = ", eval(arrayName));
-    
-  text = processArrayTextForJsFile(eval(arrayName), arrayName);
-  
-  if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile().  arrayName = ', arrayName);
-  
-    if (exportToStorage) {
-          localStorage.editedText = text;
-          console.log(localStorage.editedText);
-    };
-
-    if(exportToFile) exportToJSFile(text, arrayName);
-  };
 };
 
+    /**
+     * Creates string[][] tables  from the html children of containerDiv,  as edited and modified. It does so by selecting all the div elements having the same data-set-root, and converting the text in each such div element into a string[], and adds all the created string[] to a string[][]. 
+     * It then loops the tablesArray (i.e., the original array of tables that we were editing), and looks if it contains a table (i.e. a string[][])  with the same title as the table created from the div elements. If so, it replaces this string[][] in the tablesArray table with the string[][] created from the div elements. Otherwise, it prompts the user wheter he wants to add the created string[][] as a new table at the end of the tablesArray.
+     * @param {string} tableTitle - The title of a table in the tablesArray (which is a string[][][])
+     * @param {string[][][]} tablesArray - the array that we were editing.
+     */
+    function modifyEditedArray(tableTitle: string, tablesArray: string[][][]) {
+      //We select all the div elements having same data-set-root attribute as the title of the table (tabeTitle)
+      let htmlTable =
+        Array.from(containerDiv.children)
+          .filter((htmlRow: HTMLDivElement) =>
+            htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
+    
+        if (htmlTable.length === 0) return;
+      
+      //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
+        let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+    
+      let oldTable: string[][] =
+        tablesArray
+        .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+        
+      if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
+          
+      else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
+       tablesArray.push(editedTable);
+    };
 
+/**
+ * 
+ * @param {string} arrayName - Name of the modified array that we want to save to local storage or export to a JS file
+ * @param {boolean} exportToStorage - if true the array is saved in localStorage.editedText. Its default value is true
+ * @param {boolean} exportToFile - if true the array text is export as a JS file. Its default value is true
+ */
+function saveOrExportArray(arrayName: string, exportToFile:boolean = true, exportToStorage:boolean =true) {
+  let text: string;
+ console.log("modified array = ", arrayName);
+  
+text = processArrayTextForJsFile(eval(arrayName), arrayName);
+
+if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile().  arrayName = ', arrayName);
+
+  if (exportToStorage) {
+        localStorage.editedText = text;
+        console.log(localStorage.editedText);
+  };
+
+  if(exportToFile) exportToJSFile(text, arrayName);
+};
 
 /**
  * Takes a table array, and process the strings in the array, in order to restore the prefixes and insert escape characters before the new lines, etc. in a format that suits a js file
  * @param {string[][][]} tablesArray - the string[][][] that will be processed and returned as a text the js file
  * @return {string} the text representing the array in a js file
  */
-function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string): string {
+function processArrayTextForJsFile(tablesArray: string[][][], arrayName: string): string {
+  let languages = getLanguages(arrayName);
   //Open Array of Tables
   let text: string = "[";
   tablesArray.forEach((table: string[][]) => processTable(table));
@@ -437,27 +453,45 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string):
     
     //open row array
     text += "[\n";
-    row.forEach((element:string)=>processStringElement(element, row))
+    row
+      .forEach((stringElement: string) => processStringElement(stringElement, row))
     //close row
     text += "], \n";
   };
 
-  function processStringElement(element: string, row: string[]) {
+  function processStringElement(stringElement: string, row: string[]) {
     //for each string element in row[]
-    element = element.replaceAll('"', '\\"'); //replacing '"" by '\"'
-    element = element.replaceAll('\n', '\\n');
+    stringElement = stringElement.replaceAll('"', '\\"'); //replacing '"" by '\"'
+    stringElement = stringElement.replaceAll('\n', '\\n');
 
-    if (splitTitle(row[0])[1] === 'Title')
-      element = element
-        .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
-        .replaceAll(String.fromCharCode(plusCharCode +1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
+    if (splitTitle(row[0])[1].includes('Title'))
+      stringElement =
+        stringElement
+          .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
+          .replaceAll(String.fromCharCode(plusCharCode + 1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
 
-    text += '"'+element+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
+    text += '"'+stringElement+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
   };
+
+
   text = replacePrefixes(text);
   text = arrayName + "= " + text + "];";
   return  text
 }
+
+function replaceHtmlQuotes(innerHtml: string, lang:string): string{
+  if (!innerHtml.includes('<q>')) return innerHtml;
+  if (lang === 'FR')
+    return innerHtml
+      .replaceAll('<q>', String.fromCharCode(171))
+      .replaceAll('</q>', String.fromCharCode(187));
+  
+  else if (lang === 'AR' || lang === 'EN')
+    return innerHtml
+      .replaceAll('<q>', "\"")
+      .replaceAll('</q>', "\"");
+  return innerHtml;
+};
 
 function replacePrefixes(text: string): string {
   text = text
@@ -469,6 +503,7 @@ function replacePrefixes(text: string): string {
     .replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"')
     .replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"')
     .replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"')
+    .replaceAll('"' + Prefix.HolyWeek, 'Prefix.HolyWeek+"')
     .replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"')
     .replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"')
     .replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"')
@@ -892,7 +927,7 @@ function goToTableByTitle() {
     containerDiv.querySelectorAll('.Row') as NodeListOf<HTMLElement>)
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
   if (rows.length === 0){
-    editTablesArray({
+    startEditingMode({
       arrayName: containerDiv.dataset.arrayName,
       tableTitle: title,
       clear: true
@@ -961,7 +996,7 @@ function editDayReadings(date?: string) {
     ReadingsArrays[arrayName]
       .filter(table => table[0][0].includes(date))
       .forEach(table => {
-        editTablesArray({
+        startEditingMode({
           arrayName: 'ReadingsArrays.' + arrayName,
           tableTitle: table[0][0],
           clear:false

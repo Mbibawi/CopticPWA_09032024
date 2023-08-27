@@ -74,7 +74,7 @@ const copticMonths: {AR:string, FR:string, EN:string }[] = [
     },
     {
         AR: "برمهات",
-        FR: "Baramhât",
+        FR: "Baramhat",
         EN: "Baramhat"
     },
     {

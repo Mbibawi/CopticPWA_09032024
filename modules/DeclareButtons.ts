@@ -2408,7 +2408,7 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
   prayers
     .forEach(table => {
       table
-        .forEach(row => {{
+        .forEach(row => {
           htmlRow = createHtmlElementForPrayer(
             {
               tblRow: row,
@@ -2416,8 +2416,7 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
               position: prayersContainerDiv,
               container: prayersContainerDiv,
             }
-          );
-        }
+          ) as HTMLDivElement;
         }
       )      
   });

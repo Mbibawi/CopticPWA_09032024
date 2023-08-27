@@ -53,12 +53,12 @@ function modifyUserLanguages(lang: string) {
 
 function modifyDefaultAndForeignLanguages() {}
 
-document.addEventListener("DOMContentLoaded", autoRunOnLoad);
+document.addEventListener("DOMContentLoaded", startApp);
 
 /**
- * Some functions that we run automatically when loading the app
+ * This function starts the App by setting a number of global variables like the dates, displaying the home page/main menu buttons, etc.
  */
-function autoRunOnLoad() {
+function startApp() {
   showChildButtonsOrPrayers(btnMain);
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
@@ -1396,15 +1396,14 @@ function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
     .forEach((paragraph) => {
       if (paragraph.classList.contains("FR")) {
         paragraph.innerHTML = paragraph.innerHTML
-          .replaceAll("«", "<q>")
-          .replaceAll("»", "</q>");
+          .replaceAll(String.fromCharCode(171), "<q>")
+          .replaceAll(String.fromCharCode(187), "</q>");
       } else if (paragraph.classList.contains("AR")) {
         splitted = paragraph.innerHTML.split('"');
         splitted.forEach((part) => {
           if (splitted.indexOf(part) % 2 !== 0)
             splitted[splitted.indexOf(part)] = "<q>" + part + "</q>";
         });
-        console.log(splitted.join(""));
         if (splitted.length > 0) paragraph.innerHTML = splitted.join("");
       }
     });
@@ -2201,7 +2200,7 @@ function showSettingsPanel() {
             .insertAdjacentElement("afterend", select);
           hideInlineButtonsDiv();
           select.addEventListener("change", () =>
-            editTablesArray({ select: select })
+            startEditingMode({ select: select })
           );
         },
       }
@@ -2504,9 +2503,18 @@ function convertHtmlDivElementsIntoArrayTable(
   htmlRows: HTMLDivElement[]
 ): string[][] {
   let table: string[][] = [];
-  htmlRows.forEach((row: HTMLElement) => {
+  htmlRows
+    .forEach((row: HTMLElement) => {
     if (!row.title) return alert("the row dosen't have title");
-    table.push(Array.from(row.children).map((p: HTMLElement) => p.innerText));
+    table
+      .push(
+        Array.from(row.children)
+          .map((p: HTMLElement) => {
+            //We replace the quotes in the innerHTML of the paragraph, but we will return the innerText of the paragraph in order to avoid getting <br> or any other html tags in the returned text
+             p.innerHTML = replaceHtmlQuotes(p.innerHTML, p.lang);
+            return p.innerText;
+          })
+      );
     table[table.length - 1].unshift(row.title);
   });
   return table;
@@ -2611,14 +2619,14 @@ function hideOrShowTitle(htmlTitle: HTMLElement, hide: boolean) {
   if (!hide && title.classList.contains(hidden)) title.classList.remove(hidden);
 }
 
-async function callFetchKatamars(){
+async function callFetchSynaxariumArabic(){
   for (let i=5; i<8; i++){
-    await fetchSynaxarium(i)
+    await fetchSynaxariumArabic(i)
   }
   console.log(ReadingsArrays.SynaxariumArray)
-}
+};
 
-async function fetchSynaxarium(month: number) {
+async function fetchSynaxariumArabic(month: number) {
   let tbl:string[][], daystring:string, monthstring:string;
   let apiRoot = 'http://katamars.avabishoy.com/api/Katamars/'
   monthstring = month.toString();
@@ -2673,21 +2681,113 @@ function sendHttpRequest(apiURL:string):Document| void{
 
 
  }
-/*
-async function fetchKatamars_() {
-  let url1 =
-      "http://katamars.avabishoy.com/api/Katamars/GetSynaxariumStory?id=",
-    url2 = "&synaxariumSourceId=0";
-  let response;
-  let init: RequestInit = {
-    referrerPolicy: "strict-origin-when-cross-origin",
+async function fetchSynaxariumFrench(months:string[]) {
+
+  if(!months) months = ['50-toubah', '51-amshir', '52-baramhat'];
+
+  let table:string[][], 
+    apiInitial: string = 'https://coptipedia.com/index.php/livre-1-les-temoins-de-la-foi/le-synaxaire/' ,
+    textContainer: HTMLElement, 
+    text:string;
+
+  months
+    .forEach(async query => {
+      let month = 
+      copticMonths.indexOf(
+        copticMonths
+          .filter(coptMonth => coptMonth.FR.toLowerCase() === query.split('-')[1])[0])
+        .toString();
+      if (Number(month) < 10) month = '0' + month;
+        console.log('month =', month);
+      await processMonth(query, month)
+     // console.log(ReadingsArrays.SynaxariumArray);
+    });
+
+ async function processMonth(monthQuery:string, month){ 
+    if (!month) return console.log('month is undefined = ', month);
+      
+      let url = apiInitial + monthQuery + '.html'; //This will return an html page with links to all the days of the month. We will retrieve these links and fetch each of them in order to retrieve the text
+   let bodyText = await fetchURL(url);
+   if (!bodyText) return console.log('bodyText is undefined = ', bodyText);
+    return await processResponse(new DOMParser().parseFromString(bodyText, 'text/html'), month, monthQuery, url);
   };
 
-  for (let i = 1; i < 10; i++) {
-    response = await fetch(url1 + i + url2, init);
-    console.log(response);
+
+  async function processResponse(responseDoc: Document, month:string, monthQuery:string, url:string) {
+    if (!responseDoc) return console.log('responseDoc is undefined = ', responseDoc);
+    let anchors = responseDoc.querySelectorAll('a');
+  
+    if (!anchors) return console.log('anchors is undefined = ', anchors);
+    let unique: Set<string> = new Set();
+    let i: number = 1;
+    
+    Array.from(anchors)
+      .filter((link: HTMLAnchorElement) =>
+        link.href.includes('/index.php/livre-1-les-temoins-de-la-foi/le-synaxaire/' + monthQuery + '/'))
+      .forEach(async link => {
+        if (unique.has(link.href)) return;
+        unique.add(link.href);
+        console.log(link.href);
+        let bodyText = await fetchURL(link.href);
+        if (!bodyText) return console.log('bodyText is undefined = ', bodyText);
+        let fetchedText = await (editTableCell(bodyText, i++, month));
+        if (fetchedText) localStorage.fetchedText += fetchedText;
+      });
+  };
+  
+    async function fetchURL(url:string){
+      let response  = await fetch(url);
+      return await response.text();
+  };
+    async function editTableCell(bodyText:string, i:number, month:string):Promise<string|void>{
+      let day:string = i.toString();
+      if (i < 10) day = '0' + day;
+      console.log('day=', day, ' and month =', month);
+      table = 
+        ReadingsArrays.SynaxariumArray
+          .filter(tbl => tbl[0][0].includes('&D=' + day + month))[0];
+      console.log('table = ', table);
+          if (!table || !table[1]) return  console.log('table is undefined', table);
+      if (table.length === 2) table[1][1] = await getText(new DOMParser().parseFromString(bodyText, 'text/html')) as string;
+      else return await getText(new DOMParser().parseFromString(bodyText, 'text/html'));
+    }
+
+
+    async function getText(responseDoc:Document):Promise<string|void> {
+      textContainer = responseDoc.querySelector('.article-content');
+      if(!textContainer || !textContainer.children || textContainer.children.length === 0) return console.log('no textContainer = ', textContainer);
+      return textContainer.innerText;
+      
+    }
   }
-}*/
+
+      
+
+
+
+function sendHttpRequest(apiURL:string, responseDoc:Document):Document| void{
+  let request = new XMLHttpRequest();
+  request.open('GET', apiURL);
+
+  try {
+    request.send();
+    
+  } catch (error) {
+    console.log(error)
+  }
+  request.onload = async () => {
+  if(request.status === 200){
+     responseDoc = new DOMParser()
+    .parseFromString(request.response, 'text/html');
+  } else {
+    console.log('error status text = ', request.statusText);
+    return request.statusText;
+    }
+  }
+ 
+  }
+
+
 
 let synaxariumIndex = [
   {

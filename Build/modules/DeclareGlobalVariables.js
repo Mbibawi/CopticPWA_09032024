@@ -49,7 +49,7 @@ const copticMonths = [
     },
     {
         AR: "برمهات",
-        FR: "Baramhât",
+        FR: "Baramhat",
         EN: "Baramhat"
     },
     {
