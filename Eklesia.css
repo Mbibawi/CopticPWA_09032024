@@ -87,10 +87,10 @@ body{
 #sideBarBtns{
   display: grid;
   grid-template-columns: 98%;
-  margin-bottom: 5px;
-  margin-top:7px;
-  padding-left: 3px;
-  padding-right: 3px;
+  width: fit-content;
+  margin-top:3px;
+  justify-content: center;
+  margin-bottom: 10cqi;
 }
 
 .sideBarBtn{
@@ -98,12 +98,12 @@ body{
   background-color: #95190c;
   border-radius: 9px;
   border-color: #c93702;
-  font-size: 12pt !important;
   font-weight: bold !important;
-  height: 16vh;
-  max-height: 70px;
   text-align: center;
-  width:98%;
+  width:38cqi;
+  max-width: 400px;
+  height: 13cqi;
+  max-height: 80px;
   margin-top: 2px !important;
 margin-bottom: 2px !important;
 }
@@ -172,7 +172,6 @@ p{
   direction: rtl !important;
   font-family: Amiri;
   font-weight: 100;
-  font-style: normal;
   font-size: 3.5cqi;
   line-height: 5cqi;
 }
@@ -240,13 +239,13 @@ border-color: #d44d2b;
 border-radius: 9px;
 color:white;
 }
-.inlineBtn>p, .sideBarBtn>p{
-  font-size: 12pt !important;
+.btnText{
+  font-size: 2cqw !important;
   text-align: center!important;
   border: none !important;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  line-height: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  line-height: 3cqi;
 }
 
 .mainPageBtns{
@@ -412,21 +411,24 @@ border-radius: 20px ;
 /* The sidebar menu */
 .sideBar {
   min-height: 100%; /* 100% Full-height */
-  min-width: 60px !important;
-  max-width: 250px;
+  width: fit-content;
   position: fixed; /* Stay in place */
   z-index: 3; /* Stay on top */
   top: 0;
   bottom: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: auto;
+  overflow-y:auto;
   padding-top: 60px; /* Place content 60px from the top */
+  padding-left:10px;
+  padding-right:10px;
   transition: 0.2s; /* 0.5 second transition effect to slide in the sidebar */
+  justify-content: center;
 }
 /*the right sidebar*/
 .rightSideBar { 
   right: 0px !important;
+  direction: rtl !important;
 }
 /*the left sidebar*/
 .leftSideBar {
@@ -517,14 +519,10 @@ border-radius: 20px ;
 .Comments, 
 .CommentText{
   align-content: stretch;
-  background-color: ivory;
-  color: #aac3ef;
-  font-size: 11pt !important;
-  font-weight: bold;
-  text-align: justify;
-  padding: 0px 3px !important;
-  font-style: italic;
-  line-height: 12pt;
+  background-color: rgb(232, 229, 229);
+  color: #a2c2fa;
+  font-style: italic !important;
+  padding-right: 2px 2px;
 }
 .CommentText {
   color: #C45911 !important;
@@ -683,4 +681,4 @@ quotes: '"' '"';
 
 q{
   font-style: italic;
-}
+}   

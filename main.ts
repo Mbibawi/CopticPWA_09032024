@@ -89,6 +89,7 @@ function startApp() {
     setCopticDates();
   }
   populatePrayersArrays();
+  addKeyDownListnerToElement(document);
 }
 
 /**
@@ -103,13 +104,34 @@ function createHtmlElementForPrayer(params: {
   languagesArray: string[];
   userLanguages?: string[];
   position?:
-    | HTMLElement
-    | DocumentFragment
-    | { beforeOrAfter: InsertPosition; el: HTMLElement };
+  | HTMLElement
+  | DocumentFragment
+  | { beforeOrAfter: InsertPosition; el: HTMLElement };
   actorClass?: string;
   container?: HTMLDivElement | DocumentFragment;
-}): HTMLDivElement |void {
+}): HTMLDivElement | void {
   //@ts-ignore
+  if (params.tblRow[0].startsWith(Prefix.placeHolder)) {
+    //If the row is just a placeholder and its value needs to be retrieved from its title
+
+      let tbl = findTableInPrayersArray(
+        params.tblRow[2], //We retrieve the title
+        eval(params.tblRow[1]), //we retrieve the Array
+        { equal: true }) as string[][];
+    
+        if(!tbl) return console.log('params.tblRow[2]  =', params.tblRow[2]);
+      tbl.forEach(row =>
+        createHtmlElementForPrayer({
+          tblRow:row,
+          languagesArray: params.languagesArray,
+          actorClass:params.actorClass,
+          userLanguages:params.userLanguages,
+          position:params.position,
+          container:params.container
+        }))
+        return
+  };
+
   if (!params.tblRow || params.tblRow.length === 0)
     return console.log(
       "No valid tblRow[][] object is passed to createHtmlElementForPrayer() "
@@ -136,6 +158,7 @@ function createHtmlElementForPrayer(params: {
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
   htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
+  if (localStorage.displayMode === displayModes[1]) htmlRow.classList.add(hidden);
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
 
   if (params.actorClass) htmlRow.classList.add(params.actorClass);
@@ -153,12 +176,12 @@ function createHtmlElementForPrayer(params: {
     if (!params.tblRow[x] || params.tblRow[x] === " ") continue; //we escape the empty strings if the text is not available in all the button's languages
     if (
       params.actorClass &&
-      (params.actorClass === "Comments" || params.actorClass === "CommentText")
+      (params.actorClass === "Comments")
     ) {
       //this means it is a comment
-      x === 1
-        ? (lang = params.languagesArray[1])
-        : (lang = params.languagesArray[3]);
+      x === 1?
+      lang = foreingLanguage
+      : lang = defaultLanguage;
     } else {
       lang = params.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
@@ -348,9 +371,9 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   );
 
   if (
-    btn.parentBtn &&
-    btn.btnID !== btnGoBack.btnID &&
-    !sideBarBtnsContainer.querySelector("#" + btnGoBack.btnID)
+    btn.parentBtn
+    && btn.btnID !== btnGoBack.btnID 
+    && !sideBarBtnsContainer.querySelector("#" + btnGoBack.btnID)
   ) {
     //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
     //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
@@ -358,9 +381,10 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     lastClickedButton = btn;
   }
   if (
-    btn.btnID !== btnMain.btnID && //The button itself is not btnMain
-    btn.btnID !== btnGoBack.btnID && //The button itself is not btnGoBack
-    !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
+    btn.btnID !== btnMain.btnID  //The button itself is not btnMain
+    && btn.btnID !== btnGoBack.btnID //The button itself is not btnGoBack
+    && !sideBarBtnsContainer.querySelector("#" + 'settings')
+   && !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
   ) {
     createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
     /*let image = document.getElementById("homeImg");
@@ -373,12 +397,16 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 
   if (btn.btnID === btnMain.btnID) addSettingsButton();
+  if (localStorage.displayMode === displayModes[1]) {
+    let firstSlide = containerDiv.querySelector('div.Row');
+    if (firstSlide) firstSlide.classList.remove(hidden);
+  };
 
   //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containerDiv
   if (
-    btn.btnID !== btnMain.btnID &&
-    containerDiv.children.length > 0 &&
-    containerDiv.children[0].classList.contains("mainPageBtns")
+    btn.btnID !== btnMain.btnID
+    && containerDiv.children.length > 0 
+    && containerDiv.children[0].classList.contains("mainPageBtns")
   )
     btnMain.onClick();
 }
@@ -402,9 +430,6 @@ function addSettingsButton() {
 }
 
 /**
- * This function adds the same data-group to all the divs that need to be hidden or shown when a div having the class 'Title' or 'SubTitle' is clicked (this div is passed to the function in the titleRow argument). The data-group that will be given to each div is same as the data-root of the titleRow div.
- * @param {string} titleClass - the type of name of the title class ('Title' or 'SubTitle'), of the main div. Its default value is 'Title'
- * @param {HTMLElement} titleRow - is a div element having as class either 'Title' or 'Subtitle'
  */
 async function addDataGroupsToContainerChildren(
   titleClass: string = "Title",
@@ -1208,16 +1233,21 @@ function showPrayers(
 
   let date: string;
   return btn.prayersSequence.map((prayer: string) => {
-    if (!prayer) console.log("no prayer");
-    if (!prayer) return;
-    if (prayer.includes("&D=")) date = "";
-    else date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
-    prayer += date;
-    let wordTable = findTableInPrayersArray(prayer, btn.prayersArray);
-    if (!wordTable) return;
+    if (!prayer) return console.log("no prayer");
+    let wordTable: string[][];
+  
+      if (prayer.includes("&D=")) date = "";
+      else date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
+      prayer += date;
+      wordTable = findTableInPrayersArray(prayer, btn.prayersArray) as string[][];     
+  
+      if (!wordTable) return;
+
+
 
     //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
-    return wordTable.map((row) => {
+    return wordTable
+      .map((row) => {
       return createHtmlElementForPrayer({
         tblRow: row,
         languagesArray: btn.languages,
@@ -1583,34 +1613,30 @@ function selectElementsByDataRoot(
     includes?: boolean;
     startsWith?: boolean;
     endsWith?: boolean;
-  }
+  } = {equal:true}
 ): HTMLDivElement[] {
-  let children = Array.from(container.children) as HTMLDivElement[];
+  let children = Array.from(container.querySelectorAll('div')) as HTMLDivElement[];
   if (options.equal) {
     return children.filter(
       (htmlRow) =>
-        htmlRow.tagName === "DIV" &&
         htmlRow.dataset.root &&
         htmlRow.dataset.root === dataRoot
     );
   } else if (options.includes) {
     return children.filter(
       (htmlRow) =>
-        htmlRow.tagName === "DIV" &&
         htmlRow.dataset.root &&
         htmlRow.dataset.root.includes(dataRoot)
     );
   } else if (options.startsWith) {
     return children.filter(
       (htmlRow) =>
-        htmlRow.tagName === "DIV" &&
         htmlRow.dataset.root &&
         htmlRow.dataset.root.startsWith(dataRoot)
     );
   } else if (options.endsWith) {
     return children.filter(
       (htmlRow) =>
-        htmlRow.tagName === "DIV" &&
         htmlRow.dataset.root &&
         htmlRow.dataset.root.endsWith(dataRoot)
     );
@@ -1813,19 +1839,37 @@ async function showMultipleChoicePrayersButton(
 
 /**
  * Takes the title of a Word Table, and loops the prayersArray[][][] to check wether an element[0][0] (which reflects a table in the Word document from which the text was retrieved) matches the provided title. If found, it returns the wordTable as a string[][](each array element being a row of the Word table). If dosen't find, it returns 'undefined'
- * @param {string} tableTitle - The title of the table that we need to find in the button's prayersArray[][][]. It corresponds to the element[0][0]
+ * @param {string} tableTitle - The title of the table (without '&C=', i.e., we search for splitTitle(tableTitle)[0])  that we need to find in the button's prayersArray[][][]. 
  * @param {string[][][]} prayersArray - the Button that we need to search its prayersArray[][][] property for an element[][] having its [0][0] value equal the title of the Word Table
- * @returns {string[][] | undefined} - an array representing the Word Table if found or 'undefined' if not found
+ * @param {equal?:boolean, startsWith?:boolean, endsWith?:boolean, includes?:boolean} Options - the matching options by which the function will search for the table: equal means the title of table in the array mush be exactly matching tableTitle, startsWith, means it must start with tableTitle, etc.
+ * @returns {string[][] | void} - an array representing the Word Table if found or 'undefined' if not found
  */
 function findTableInPrayersArray(
   tableTitle: string,
-  prayersArray: string[][][]
-): string[][] | undefined {
-  let filtered: string[][][] = prayersArray.filter(
-    (table) => table[0][0] && splitTitle(table[0][0])[0] === tableTitle
-  );
-  if (filtered.length === 1) return filtered[0];
-  else return undefined;
+  prayersArray: string[][][],
+  options:{equal?:boolean, startsWith?:boolean, endsWith?:boolean, includes?:boolean} = {equal:true}
+): string[][] | void {
+  if(!prayersArray) return console.log(tableTitle);
+  let table: string[][];
+  if (options.equal)
+    table =
+      prayersArray
+        .find((tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0] === tableTitle);
+  else if (options.startsWith)
+  table =
+  prayersArray
+    .find((tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].startsWith(tableTitle));
+  else if (options.endsWith)
+  table =
+  prayersArray
+    .find((tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].endsWith(tableTitle));
+  else if (options.includes)
+  table =
+  prayersArray
+    .find((tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].includes(tableTitle));
+  
+  if (table) return table;
+  else return console.log('no table with the provided title was found : ', tableTitle);
 }
 /**
  * Shows the inlineBtnsDiv
@@ -2422,6 +2466,46 @@ function splitTitle(title): string[] {
   if (!title) return [];
   if (!title.includes("&C=")) return [title, ""];
   return title.split("&C=");
+}
+
+
+
+/**
+ * Hides the current slide, and unhides the next or previous slide based on the value of 'next'
+ * @param {boolean} next - If true, the next slide is displayed. If false, the previous one is displayed. Its default value is true.
+ * @returns 
+ */
+function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
+if (localStorage.displayMode !== displayModes[1]) return;
+  let currentSlide =
+    Array.from(containerDiv.querySelectorAll('div.Row'))
+      .find(div => !div.classList.contains(hidden)) as HTMLDivElement;
+  
+  let nextSlide: HTMLDivElement;
+  next?
+    nextSlide = currentSlide.nextElementSibling as HTMLDivElement
+  :
+    nextSlide = currentSlide.previousElementSibling as HTMLDivElement;
+  
+    if (!nextSlide) return;
+
+    currentSlide.classList.add(hidden);
+    nextSlide.classList.remove(hidden);
+}
+
+function addKeyDownListnerToElement(htmlRow:Document){
+  htmlRow
+    .addEventListener("keydown", function (event) {
+      console.log('entred');
+      if (
+        event.code === 'ArrowDown'
+        || event.code === 'ArrowLeft'
+        || event.code === 'PageDown') showNextOrPreviousSildeInPresentationMode(false);
+      else if (
+        event.code === 'ArrowUp'
+        || event.code === 'PageUp'
+        || event.code === 'ArrowRight') showNextOrPreviousSildeInPresentationMode(true);
+});
 }
 
 /**

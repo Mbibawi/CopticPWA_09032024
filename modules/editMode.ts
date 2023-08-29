@@ -617,6 +617,7 @@ function createHtmlElementForPrayerEditingMode(
     | HTMLElement
     | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv
 ): HTMLDivElement {
+  if (tblRow[0].startsWith(Prefix.placeHolder)) return;
   let row: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string;
 
   row = document.createElement("div");

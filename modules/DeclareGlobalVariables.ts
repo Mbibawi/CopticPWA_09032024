@@ -138,6 +138,7 @@ const Prefix = {
     cymbalVerses: "CV_", //Stands for Cymbal Verses
     bookOfHours: "BOH_", //Stands for Book Of Prayers
     HolyWeek: 'HW_', //Stands for Holy Week
+    placeHolder: 'PlaceHolder_'
 };
 const plusCharCode: number = 10133;
 const btnClass = 'sideBarBtn';
