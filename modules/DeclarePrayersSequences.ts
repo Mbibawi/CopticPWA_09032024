@@ -133,23 +133,11 @@ const MassPrayersSequences = {
         ], //the introduction of reconciliation for all masses
         MassStBasil: [
         Prefix.massStBasil+"ReconciliationPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AnaphoraPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment3&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment4&D=$copticFeasts.AnyDay", 
-        Prefix.massStBasil+"AgiosPart2&D=$copticFeasts.AnyDay", 
-        Prefix.massStBasil+"InstitutionNarrativePart1&D=$copticFeasts.AnyDay", 
-        Prefix.massStBasil+"InstitutionNarrativePart2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart3&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart4&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart5&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart6&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart7&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrativePart8&D=$copticFeasts.AnyDay", 
+            Prefix.massCommon + "AnaphoraPart1&D=$copticFeasts.AnyDay", 
+        
+        Prefix.massStBasil + "Agios&D=$copticFeasts.AnyDay", 
+        
+        Prefix.massStBasil+"InstitutionNarrative&D=$copticFeasts.AnyDay",  
         Prefix.massCommon+"AsWeAlsoCommemorateHisHolyPassionPart1&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"DiaconResponseWorshipGodInFearAndTrembling&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"InstitutionNarrative13Comment&D=$copticFeasts.AnyDay", 
@@ -159,50 +147,12 @@ const MassPrayersSequences = {
         ], //The sequence of prayers of St Basil Mass (starting from Reconciliation)
         MassStGregory: [
         Prefix.massStGregory+"ReconciliationPart1&D=$copticFeasts.AnyDay", 
-    Prefix.massStGregory+"AnaphoraPart1&D=$copticFeasts.AnyDay", 
-  
-        , 
+        Prefix.massStGregory + "AnaphoraPart1&D=$copticFeasts.AnyDay", 
+       //     Prefix.massCommon+"AgiosComment1&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment3&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment4&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"AgiosPart1&D=$copticFeasts.AnyDay", 
-         
-
-   
-        , 
-      , 
-        , 
-        , 
-        
-        
-        //Will not delete those
-        Prefix.massCommon+"AgiosComment1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosComment3&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AgiosPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon + "AgiosComment4&D=$copticFeasts.AnyDay", 
-        
-
-        Prefix.massStGregory+"AgiosPart1&D=$copticFeasts.AnyDay", 
-
         Prefix.massStGregory+"AsWeCommemorateYourHolyPassionPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"InstitutionNarrative13Comment&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AsWeAlsoCommemorateHisHolyPassionPart2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"HolySpiritLitanyComment&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"DiaconResponseLetUsAttendAmen&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"CallOfTheHolySpiritPart1Comment&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AssemblyResponseWeBelieve&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"CallOfTheHolySpiritPart2Comment&D=$copticFeasts.AnyDay", 
-        Prefix.massStGregory+"CallOfTheHolySpiritPart2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"AssemblyResponseWeAlsoBelieve&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"CallOfTheHolySpiritPart3&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"LitaniesIntroduction&D=$copticFeasts.AnyDay"
         ], //The sequence of prayers of St Gregory Mass (starting from reconciliation)
         MassStCyril:[

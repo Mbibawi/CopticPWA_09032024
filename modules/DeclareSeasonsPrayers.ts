@@ -76,7 +76,10 @@ let allSeasonalPrayers = [[giaki, giakiAll], [closingHymn, closingHymnAll]];
 
 setSeasonalTextForAll();
 function setSeasonalTextForAll() {
-    allSeasonalPrayers.forEach((seasonal) => setSeasonalText(seasonal[1] as seasonalPrayers[], seasonal[0] as seasonalPrayers));
+    if (!Season) return console.log('The Season was not set');
+    allSeasonalPrayers
+        .forEach((seasonal) =>
+            setSeasonalText(seasonal[1] as seasonalPrayers[], seasonal[0] as seasonalPrayers));
 }
        
 function setSeasonalText(arrayAll: seasonalPrayers[], seasonal: seasonalPrayers) {

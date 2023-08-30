@@ -1,8 +1,8 @@
 //TYPES
 type typeBtnLabel = {
-    defaultLanguage: string,
-    foreignLanguage: string,
-    otherLanguage?: string
+    AR?: string,
+    FR?: string,
+    EN?: string
 }
 type typeButton = {
     btnID: string, //the id is used to exclude a button from being displayed in certain scenarios: like the Go Back button in some cases
@@ -109,6 +109,26 @@ const copticMonths: {AR:string, FR:string, EN:string }[] = [
     },
     
 ];
+/* function getPrefixes() {
+    type prefix = { prefix?: string, array?: string[][][] }
+    let prefixes: prefix[] = [];
+    for (let pref in Prefix) {
+        let newPrefix: prefix =
+        {
+            prefix: 'Prefix.' + pref,
+            array:
+                (() => {
+                    let matching = Object.entries(PrayersArrays)
+                        .filter(array => array[0].toLowerCase().startsWith(pref.toLowerCase()))[0];
+                    if (matching) return matching[0];
+                })()
+        };
+        console.log(newPrefix)
+        prefixes.push(newPrefix)         
+    }
+    console.log(prefixes.filter(el=>el.array))
+} */
+
 const Prefix = {
     psalmResponse: 'PR_',
     gospelResponse: 'GR_',
@@ -338,13 +358,17 @@ const saintsFeasts = {
     StMikaelMetropolis: '',//St Mikhael the Metropolis of Assiut
     StJustAnton:'' //St Just of the St. Anton
 };
-const foreingLanguage: string = 'FR'; //'FR' stands for 'French'
-const defaultLanguage: string = 'AR'; //'AR' stands for Arabic
-const allLanguages: string[] = [defaultLanguage, foreingLanguage, 'COP', 'CA', 'CF', 'EN'];//AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
-const userLanguages: string[] = [defaultLanguage, foreingLanguage, 'COP'];
-//if (localStorage.userLanguages) { console.log('there is user Lanugages', localStorage.userLanguages) };
-//if (localStorage.showActors) { console.log('there is showActors', localStorage.showActors) };
-if (localStorage.userLanguages === undefined) { localStorage.userLanguages = JSON.stringify(userLanguages) }; //We check that there isn't already a setting stored in the localStorage
+
+const allLanguages: string[] = ['AR', 'FR', 'COP', 'CA', 'CF', 'EN'];//AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
+
+const userLanguages: string[] = [];
+if (localStorage.userLanguages!==null) localStorage.userLanguages = JSON.stringify(["AR", "FR", "COP"]);
+JSON.parse(localStorage.userLanguages).forEach(lang => userLanguages.push(lang));
+
+var defaultLanguage: string = userLanguages[0];
+var foreingLanguage: string = userLanguages[1];
+var copticLanguage: string = userLanguages[2];
+
 const prayersLanguages: string[] = ['COP', foreingLanguage, 'CA', 'AR'];
 const readingsLanguages: string[] = ['AR', foreingLanguage, 'EN'];
 const displayModes = ['Normal', 'Presentation', 'Priest'];
@@ -456,14 +480,29 @@ let showActors = [];
 actors.map(actor => showActors.push([actor, true]));
 showActors[3][1] = false;//this is in order to initiate the app without the comments displayed. The user will activate it from the settings if he wants
 showActors[4][1] = false ; //same comment as above concerning the 'CommentText'
-if (localStorage.showActors === undefined
-    || JSON.parse(localStorage.showActors)[0][0] !== showActors[0][0]) { localStorage.showActors = JSON.stringify(showActors) };
+if (localStorage.showActors === undefined) { localStorage.showActors = JSON.stringify(showActors)};
 allLanguages.map(lang => textAmplified.push([lang, false]));
 if (localStorage.textAmplified === undefined) { localStorage.textAmplified = JSON.stringify(textAmplified) };
 if (!localStorage.displayMode 
     || localStorage.displayMode === 'undefined') {
     localStorage.displayMode = displayModes[0];
 };
+const PrayersArraysKeys:[string, string[][][]][]= [
+    [Prefix.praxisResponse, PraxisResponsesPrayersArray],
+    [Prefix.massCommon, MassCommonPrayersArray],
+    [Prefix.commonPrayer, CommonPrayersArray],
+    [Prefix.massStBasil, MassStBasilPrayersArray],
+    [Prefix.massStCyril, MassStCyrilPrayersArray],
+    [Prefix.massStGregory, MassStGregoryPrayersArray],
+    [Prefix.massStJohn, MassStJohnPrayersArray],
+    [Prefix.doxologies, DoxologiesPrayersArray],
+    [Prefix.communion, CommunionPrayersArray],
+    [Prefix.praxis, PraxisResponsesPrayersArray],
+    [Prefix.cymbalVerses, CymbalVersesPrayersArray],
+    [Prefix.bookOfHours, bookOfHoursPrayersArray],
+    [Prefix.HolyWeek, holyWeekPrayersArray]
+];
+
 
 
 

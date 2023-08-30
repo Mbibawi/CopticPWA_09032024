@@ -99,7 +99,7 @@ function startApp() {
  * @param {string} actorClass - a CSS class that will be given to the html element (a div) in which the text of the table row. This class sets the background color of the div according to who is saying the prayer: is it the Priest, the Diacon, or the Assembly?
  * @param {HTMLDivElement} container - this is the html div element to which the newly created row will be appended at the specified position. If omitted, its default value is containerDiv
  */
-function createHtmlElementForPrayer(params: {
+function createHtmlElementForPrayer(args: {
   tblRow: string[];
   languagesArray: string[];
   userLanguages?: string[];
@@ -110,50 +110,31 @@ function createHtmlElementForPrayer(params: {
   actorClass?: string;
   container?: HTMLDivElement | DocumentFragment;
 }): HTMLDivElement | void {
-  //@ts-ignore
-  if (params.tblRow[0].startsWith(Prefix.placeHolder)) {
-    //If the row is just a placeholder and its value needs to be retrieved from its title
 
-      let tbl = findTableInPrayersArray(
-        params.tblRow[2], //We retrieve the title
-        eval(params.tblRow[1]), //we retrieve the Array
-        { equal: true }) as string[][];
-    
-        if(!tbl) return console.log('params.tblRow[2]  =', params.tblRow[2]);
-      tbl.forEach(row =>
-        createHtmlElementForPrayer({
-          tblRow:row,
-          languagesArray: params.languagesArray,
-          actorClass:params.actorClass,
-          userLanguages:params.userLanguages,
-          position:params.position,
-          container:params.container
-        }))
-        return
-  };
 
-  if (!params.tblRow || params.tblRow.length === 0)
+
+  if (!args.tblRow || args.tblRow.length === 0)
     return console.log(
       "No valid tblRow[][] object is passed to createHtmlElementForPrayer() "
     );
-  if (!params.actorClass) params.actorClass = splitTitle(params.tblRow[0])[1];
-  if (params.actorClass) {
+  if (!args.actorClass) args.actorClass = splitTitle(args.tblRow[0])[1];
+  if (args.actorClass) {
     let parsed = JSON.parse(localStorage.showActors).filter(
-      (el) => el[0].EN === params.actorClass
+      (el) => el[0].EN === args.actorClass
     );
     if (parsed.length > 0 && parsed[0][1] === false) return; //If had hide an actor, we will stop and return
   }
-  if (!params.userLanguages)
-    params.userLanguages = JSON.parse(localStorage.userLanguages);
-  if (!params.position) params.position = containerDiv;
+  if (!args.userLanguages)
+    args.userLanguages = JSON.parse(localStorage.userLanguages);
+  if (!args.position) args.position = containerDiv;
   let htmlRow: HTMLDivElement,
     p: HTMLParagraphElement,
     lang: string,
     text: string,
     titleBase: string;
-  if (!params.container) params.container = containerDiv;
+  if (!args.container) args.container = containerDiv;
 
-  titleBase = splitTitle(params.tblRow[0])[0];
+  titleBase = splitTitle(args.tblRow[0])[0];
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
@@ -161,36 +142,36 @@ function createHtmlElementForPrayer(params: {
   if (localStorage.displayMode === displayModes[1]) htmlRow.classList.add(hidden);
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
 
-  if (params.actorClass) htmlRow.classList.add(params.actorClass);
-  if (params.actorClass && params.actorClass.includes("Title")) {
+  if (args.actorClass) htmlRow.classList.add(args.actorClass);
+  if (args.actorClass && args.actorClass.includes("Title")) {
     htmlRow.addEventListener("click", (e) => {
       e.preventDefault;
       collapseOrExpandText({ titleRow: htmlRow });
     }); //we also add a 'click' eventListener to the 'Title' elements
-    htmlRow.id = params.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
+    htmlRow.id = args.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
   }
 
   //looping the elemparams.ents containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
-  for (let x = 1; x < params.tblRow.length; x++) {
+  for (let x = 1; x < args.tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
-    if (!params.tblRow[x] || params.tblRow[x] === " ") continue; //we escape the empty strings if the text is not available in all the button's languages
+    if (!args.tblRow[x] || args.tblRow[x] === " ") continue; //we escape the empty strings if the text is not available in all the button's languages
     if (
-      params.actorClass &&
-      (params.actorClass === "Comments")
+      args.actorClass &&
+      (args.actorClass === "Comments")
     ) {
       //this means it is a comment
       x === 1?
       lang = foreingLanguage
       : lang = defaultLanguage;
     } else {
-      lang = params.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
+      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
-    if (userLanguages.indexOf(lang) > -1) {
+    if (args.userLanguages.indexOf(lang) < 0) continue;
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
-      if (!params.actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
+      if (!args.actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
 
       p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
-      text = params.tblRow[x];
+      text = args.tblRow[x];
       p.lang = lang.toLowerCase();
       p.classList.add(lang);
       p.innerText = text;
@@ -199,26 +180,26 @@ function createHtmlElementForPrayer(params: {
         toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
       }); //adding a double click eventListner that amplifies the text size of the chosen language;
       htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
-    }
+    
   }
   try {
     //@ts-ignore
-    params.position.el
+    args.position.el
       ? //@ts-ignore
-      params.position.el.insertAdjacentElement(
+      args.position.el.insertAdjacentElement(
         //@ts-ignore
           params.position.beforeOrAfter,
           htmlRow
         )
       : //@ts-ignore
-        params.position.appendChild(htmlRow);
+        args.position.appendChild(htmlRow);
     return htmlRow;
   } catch (error) {
     console.log(
       "an error occured: position = ",
-      params.position,
+      args.position,
       " and tblRow = ",
-      params.tblRow
+      args.tblRow
     );
     console.log(error);
   }
@@ -509,8 +490,8 @@ function createBtn(
   for (let lang in btn.label) {
     if (
       !btn.label[lang] ||
-      (Object.keys(btn.label).indexOf(lang) !== 0 &&
-        Object.keys(btn.label).indexOf(lang) !== 1)
+      (lang !== defaultLanguage
+        && lang !== foreingLanguage)
     )
       continue;
     //for each language in btn.text, we create a new "p" element
@@ -520,11 +501,11 @@ function createBtn(
     editBtnInnerText(
       btnLable,
       btn.label[lang],
-      userLanguages[Object.keys(btn.label).indexOf(lang)]
+      lang
     );
     //we append the "p" element  to the newBtn button
     newBtn.appendChild(btnLable);
-  }
+  };
   btnsBar.appendChild(newBtn);
   //If no onClick parameter/argument is passed to createBtn(), and the btn has any of the following properties: children/prayers/onClick or inlinBtns, we set the onClick parameter to a function passing the btn to showChildButtonsOrPrayers
   if (!onClick && (btn.children || btn.prayersSequence || btn.onClick))
@@ -541,7 +522,7 @@ function createBtn(
     if (btnClass) {
       el.classList.add(btnClass);
     }
-  }
+  };
   return newBtn;
 }
 
@@ -1214,12 +1195,12 @@ function showPrayers(
   clearRightSideBar: boolean = true,
   position:
     | {
-        el: HTMLElement;
-        beforeOrAfter: InsertPosition;
-      }
+      el: HTMLElement;
+      beforeOrAfter: InsertPosition;
+    }
     | HTMLElement
     | DocumentFragment = containerDiv
-): HTMLDivElement[][] | void {
+): HTMLDivElement[][] {
   let container: DocumentFragment;
   if (btn.docFragment) {
     container = btn.docFragment;
@@ -1232,30 +1213,56 @@ function showPrayers(
   if (clearRightSideBar) sideBarTitlesContainer.innerHTML = ""; //this is the right side bar where the titles are displayed for navigation purposes
 
   let date: string;
-  return btn.prayersSequence.map((prayer: string) => {
-    if (!prayer) return console.log("no prayer");
-    let wordTable: string[][];
+
+  return btn.prayersSequence
+    .map((prayer: string) => {
+      if (!prayer) {console.log("no prayer");  return};
+      let wordTable: string[][];
   
       if (prayer.includes("&D=")) date = "";
       else date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
       prayer += date;
-      wordTable = findTableInPrayersArray(prayer, btn.prayersArray) as string[][];     
+      wordTable = findTableInPrayersArray(prayer, btn.prayersArray) as string[][];
   
       if (!wordTable) return;
-
-
-
-    //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
-    return wordTable
-      .map((row) => {
-      return createHtmlElementForPrayer({
-        tblRow: row,
-        languagesArray: btn.languages,
-        position: position,
-        container: container,
+      //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
+      let tblHtmlDivs: HTMLDivElement[]=[];
+      wordTable.map((row) => {
+        let divs = processRow(row);
+        if (!divs || divs.length ===0) return;
+        tblHtmlDivs.push(...divs);
       });
+      return tblHtmlDivs;//We remove the void or invalid elements
     });
-  }) as HTMLDivElement[][];
+  
+  function processRow(row:string[]):HTMLDivElement[] {
+    if (row[0].startsWith(Prefix.placeHolder)) 
+      return processPlaceHolder(row);
+    else return [createElement(row)];
+  };
+  function processPlaceHolder(row:string[]):HTMLDivElement[] {
+    if (!row[1]) {console.log(row); return};
+    let tblsArray = PrayersArraysKeys.find(array => row[1].startsWith(array[0]));
+    if (!tblsArray) console.log(row[1]);
+      let tbl = findTableInPrayersArray(
+            row[1], //We retrieve the title
+            tblsArray[1], //we retrieve the Array
+            { equal: true }) as string[][];
+        
+        if (!tbl) {console.log('Could\'t find the placeHolder table : row[2]  =', row[2]); return}; 
+      return tbl.map(tblRow => createElement(tblRow));
+  }
+  function createElement(row:string[]):HTMLDivElement{
+    if (row[0].startsWith(Prefix.placeHolder)) return;
+    return createHtmlElementForPrayer({
+      tblRow: row,
+      languagesArray: btn.languages,
+      position: position,
+      container: container,
+    }) as HTMLDivElement
+  };
+
+
 }
 
 /**
@@ -1654,7 +1661,7 @@ function selectElementsByDataRoot(
 async function showMultipleChoicePrayersButton(
   filteredPrayers: string[][][],
   btn: Button,
-  btnLabels: { defaultLanguage: string; foreignLanguage: string },
+  btnLabels: typeBtnLabel,
   masterBtnID: string,
   masterBtnDiv?: HTMLElement,
   anchor?: HTMLElement
@@ -1712,7 +1719,7 @@ async function showMultipleChoicePrayersButton(
       //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
       next = new Button({
         btnID: "btnNext",
-        label: { defaultLanguage: "التالي", foreignLanguage: "Suivants" },
+        label: { AR: "التالي", FR: "Suivants" },
         cssClass: inlineBtnClass,
         onClick: () => {
           //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
@@ -1729,8 +1736,8 @@ async function showMultipleChoicePrayersButton(
       next = new Button({
         btnID: "btnNext",
         label: {
-          defaultLanguage: "العودة إلى القداس",
-          foreignLanguage: "Retour à la messe",
+          AR: "العودة إلى القداس",
+          FR: "Retour à la messe",
         },
         cssClass: inlineBtnClass,
         onClick: () => {
@@ -1775,9 +1782,9 @@ async function showMultipleChoicePrayersButton(
       let inlineBtn: Button = new Button({
         btnID: splitTitle(prayerTable[0][0])[0], //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
-          defaultLanguage:
+          AR:
             prayerTable[0][btn.languages.indexOf(defaultLanguage) + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
-          foreignLanguage:
+          FR:
             prayerTable[0][btn.languages.indexOf(foreingLanguage) + 1], //same logic and comment as above
         },
         prayersSequence: [splitTitle(prayerTable[0][0])[0]], //this gives the title of the table without '&C=*'
@@ -1817,9 +1824,9 @@ async function showMultipleChoicePrayersButton(
             if (table.length === 0) return;
 
             table.forEach(
-              (el) =>
+              (htmlRow) =>
                 //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-                (el.dataset.optionalPrayer = el.dataset.root)
+                (htmlRow.dataset.optionalPrayer = htmlRow.dataset.root)
             );
             //We format the grid template of the newly added divs
             setCSS(table);
@@ -1916,22 +1923,18 @@ function hideInlineButtonsDiv() {
 function showSettingsPanel() {
   showInlineBtnsDiv("settingsPanel", true);
   let btn: HTMLElement;
-  //Show current version
 
   //Show InstallPWA button//We are not calling it any more
   function installPWA() {
-    btn = createBtn(
-      "button",
-      "button",
-      "settingsBtn",
-      "Install PWA",
-      inlineBtnsDiv,
-      "InstallPWA",
-      undefined,
-      undefined,
-      undefined,
-      undefined,
+    btn = createSettingBtn(
       {
+      tag:"button",
+      role:"button",
+      btnClass:"settingsBtn",
+      innerText:"Install PWA",
+      btnsContainer:inlineBtnsDiv,
+      id: "InstallPWA",
+      onClick:{
         event: "click",
         fun: async () => {
           // Initialize deferredPrompt for use later to show browser install prompt.
@@ -1968,26 +1971,24 @@ function showSettingsPanel() {
             return "browser";
           }
         },
+        }
       }
     );
-  }
+  };
 
   //Appending date picker
   (function showDatePicker() {
-    let datePicker: HTMLInputElement = createBtn(
-      "input",
-      undefined,
-      undefined,
-      undefined,
-      inlineBtnsDiv,
-      "datePicker",
-      undefined,
-      "date",
-      undefined,
-      undefined,
+    let datePicker: HTMLInputElement = createSettingBtn(
       {
+      tag:"input",
+      btnsContainer:inlineBtnsDiv,
+      id: "datePicker",
+      type:"date",
+      onClick:
+        {
         event: "change",
         fun: () => changeDate(new Date(datePicker.value.toString())),
+        }
       }
     ) as HTMLInputElement;
     datePicker.setAttribute("value", todayDate.toString());
@@ -1996,133 +1997,161 @@ function showSettingsPanel() {
 
   //Appending 'Next Coptic Day' button
   (async function showNextCopticDayButton() {
-    let container = document.createElement("div");
-    (container.style.display = "grid"),
-      (container.style.gridTemplateColumns = String("50%").repeat(2));
-    inlineBtnsDiv.appendChild(container);
-    btn = createBtn(
-      "button",
-      "button",
-      "settingsBtn",
-      "Next Coptic Day",
-      container,
-      "nextDay",
-      undefined,
-      "submit",
-      undefined,
-      undefined,
-      { event: "click", fun: () => changeDate(undefined, true, 1) }
+    let btnsContainer = createBtnsContainer('showNextCopticDate', 'Move to the next or previous day');
+    btn = createSettingBtn(
+      {
+      tag:"button",
+      role:"button",
+      btnClass:"settingsBtn",
+      innerText:"Next Coptic Day",
+      btnsContainer:btnsContainer,
+      id:"nextDay",
+      type:"submit",
+      onClick:
+      {
+        event: "click",
+        fun: () => changeDate(undefined, true, 1)
+      }
+    }
     );
-    btn.style.backgroundColor = "saddlebrown";
-    btn = createBtn(
-      "button",
-      "button",
-      "settingsBtn",
-      "Previous Coptic Day",
-      container,
-      "previousDay",
-      undefined,
-      "submit",
-      undefined,
-      undefined,
-      { event: "click", fun: () => changeDate(undefined, false, 1) }
-    );
-    btn.style.backgroundColor = "saddlebrown";
+    setStyle(btn);
+    btn = createSettingBtn(
+      {
+      tag:"button",
+      role:"button",
+      btnClass:"settingsBtn",
+      innerText:"Previous Coptic Day",
+      btnsContainer:btnsContainer,
+      id:"previousDay",
+      type:"submit",
+        onClick:
+          {
+            event: "click",
+          fun: () => changeDate(undefined, false, 1)
+        }
+      });
+    setBtnsContainerGridColumns(btnsContainer);
+    setStyle(btn);
+    function setStyle(htmlBtn:HTMLElement){
+      htmlBtn.style.backgroundColor = "saddlebrown";    
+    };
+
   })();
 
-  let langsContainer = document.createElement("div");
-  langsContainer.id = "langsContainer";
-  langsContainer.style.display = "grid";
-  langsContainer.id = "langsContainer";
-  langsContainer.style.justifyItems = "center";
-  langsContainer.style.justifySelf = "center";
-  inlineBtnsDiv.appendChild(langsContainer);
+    //Appending Add or Remove language Buttons
+    (async function showAddOrRemoveLanguagesBtns() {;
+      let langs = [
+        ['AR', 'العربية'],
+        ['FR', 'Français'],
+        ['EN', 'English'],
+        ['COP', 'Coptic'],
+        ['CA', 'قبطي مُعرب'],
+      ];
+  
+      let defaultLangContainer = createBtnsContainer('defaultLanguage', 'Choose the default Language');
+      
+      let foreignLangContainer =createBtnsContainer('foreignLanguage', 'Choose the foreign Language');
+      
+      let copticLangContainer = createBtnsContainer('copticLanguage', 'Choose the coptic language version');
 
-  /*showing the select languages buttons*/
-  /* showAddOrRemoveLanguagesBtns({
-    langsOptions: allLanguages.filter(lang => lang !== 'COP' && lang !== 'CA'),
-    storagedLangs: localStorage.defaultLanguages,
-    fun: () => {
-      modifyDefaultAndForeignLanguages();
-    }
-  });*/
-  /*adding the select defaultLanguage and defaultForeignLanguage buttons*/
-  showAddOrRemoveLanguagesBtns({
-    langsOptions: allLanguages,
-    storagedLangs: localStorage.userLanguages,
-    fun: (lang: string) => {
-      modifyUserLanguages(lang);
-    },
-  });
-  //Appending Add or Remove language Buttons
-  async function showAddOrRemoveLanguagesBtns(params: {
-    langsOptions?: string[];
-    storagedLangs?: string;
-    fun?: Function;
-  }) {
-    let parsedLanguages: string[] = JSON.parse(params.storagedLangs);
-    let subContainer = document.createElement("div");
-    subContainer.style.display = "grid";
-    subContainer.style.gridTemplateColumns = String("30% ").repeat(3);
-    subContainer.style.justifyItems = "center";
-    langsContainer.appendChild(subContainer);
-    let newBtn: HTMLElement;
-    params.langsOptions.map((lang) => {
-      newBtn = createBtn(
-        "button",
-        "button",
-        "settingsBtn",
-        lang,
-        subContainer,
-        "userLang",
-        lang,
-        undefined,
-        undefined,
-        undefined,
-        {
-          event: "click",
-          fun: () => {
-            params.fun(lang);
-            newBtn.classList.toggle("langBtnAdd");
-            //We retrieve again the displayed text/prayers by recalling the last button clicked
-            if (containerDiv.children) {
-              //Only if a text is already displayed
-              showChildButtonsOrPrayers(lastClickedButton);
-              showSettingsPanel(); //we display the settings pannel again
-            }
-          },
-        }
-      );
-      if (parsedLanguages.indexOf(lang) < 0) {
-        //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
-        newBtn.classList.add("langBtnAdd");
+      addLangsBtns({
+        btnsContainer: defaultLangContainer,
+        fun: (lang) => setLanguage(lang, 0),
+        langsOptions: [langs[0], langs[1], langs[2]],
+        index:0
+      });
+      
+      addLangsBtns({
+        btnsContainer: foreignLangContainer,
+        fun: (lang) => setLanguage(lang, 1),
+        langsOptions: [langs[0], langs[1], langs[2]],
+        index:1
+      });
+
+      addLangsBtns({
+        btnsContainer: copticLangContainer,
+        fun: (lang) => setLanguage(lang, 2),
+        langsOptions: [langs[3], langs[4]],
+        index:2
+      });
+
+
+      function setLanguage(lang:string, index:number){
+        let stored:string[] = JSON.parse(localStorage.userLanguages);
+        if (index>0 && stored.indexOf(lang) === index)
+          stored[index] = undefined;//If the language is already defined at the same index, we give it undefined. We never set the default language (i.e. stored[0]) to undefined
+        
+        else if (stored.indexOf(lang) < 0) stored[index] = lang;
+
+        else if ((stored.indexOf(lang) > -1)){
+          //This means that the language exists at another index than 'index'. We will not add it again. A language cannot be defined as both default and foreign
+          let current: string;
+          if (stored.indexOf(lang) === 0) current = 'default language';
+          if (stored.indexOf(lang) === 1) current = 'foreign language';
+          return alert(lang + ' is already set as ' + current + '. You cannot set the same language as default and foreign language at the same time. You must change the setting for the ' + current + ' before being able to make this change');
+
+        };
+        defaultLanguage = stored[0];
+        foreingLanguage = stored[1];
+        copticLanguage = stored[2];
+
+
+        localStorage.userLanguages = JSON.stringify(stored);
+        console.log(localStorage.userLanguages);
       }
-    });
-  }
-
-  (async function showExcludeActorButon() {
-    let actorsContainer = document.createElement("div");
-    actorsContainer.style.display = "grid";
-    actorsContainer.style.gridTemplateColumns = String("50%").repeat(2);
-
-    inlineBtnsDiv.appendChild(actorsContainer);
-    actors.map((actor) => {
+      
+      function addLangsBtns(args:{
+        btnsContainer: HTMLElement, fun: Function, langsOptions:string[][], index:number }) {
+      let newBtn: HTMLElement;
+        args.langsOptions
+        .map((lang) => {
+        newBtn = createSettingBtn(
+          {
+          tag:"button",
+          role:"button",
+          btnClass:"settingsBtn",
+          innerText:lang[1],
+          btnsContainer:args.btnsContainer,
+          id:"userLang",
+            onClick:
+            {
+            event: "click",
+            fun: () => {
+              args.fun(lang[0]);
+              newBtn.classList.toggle("langBtnAdd");
+              //We retrieve again the displayed text/prayers by recalling the last button clicked
+              if (containerDiv.children) {
+                //Only if a text is already displayed
+                showChildButtonsOrPrayers(lastClickedButton);
+                showSettingsPanel(); //we display the settings pannel again
+              }
+            },
+          }
+        }
+        );
+        if (JSON.parse(localStorage.userLanguages)[args.index] !==lang[0])  newBtn.classList.add("langBtnAdd");  //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
+        });
+        setBtnsContainerGridColumns(args.btnsContainer);
+      }
+  })();
+  
+ ( async function showExcludeActorButon() {
+    let btnsContainer = createBtnsContainer('showOrHideActor', 'Show or hide an actor');
+   actors
+     .map((actor) => {
       if (actor.EN === "CommentText") return; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
       let show = JSON.parse(localStorage.getItem("showActors")).filter(
         (el) => el[0].AR === actor.AR
       )[0][1] as boolean;
-      btn = createBtn(
-        "button",
-        "button",
-        "settingsBtn",
-        actor[foreingLanguage],
-        actorsContainer,
-        actor.EN,
-        actor.EN,
-        undefined,
-        undefined,
-        undefined,
-        {
+      btn = createSettingBtn(
+        {tag:"button",
+        role:"button",
+        btnClass:"settingsBtn",
+        innerText:actor[foreingLanguage],
+        btnsContainer:btnsContainer,
+        id:actor.EN,
+        lang:actor.EN,
+        onClick:{
           event: "click",
           fun: () => {
             show = !show;
@@ -2140,74 +2169,63 @@ function showSettingsPanel() {
               showSettingsPanel(); //we display the settings pannel again
             }
           },
+          }
         }
       );
       if (show === false) {
         btn.classList.add("langBtnAdd");
       }
     });
+    setBtnsContainerGridColumns(btnsContainer);
   })();
 
   (async function showDisplayModeBtns() {
-    let displayContainer = document.createElement("div");
-    displayContainer.style.display = "grid";
-    displayContainer.style.gridTemplateColumns = String(
-      (100 / 3).toString() + "%"
-    ).repeat(3);
+    let btnsContainer =createBtnsContainer('changeDisplayMode', 'Change the display mode');
 
-    inlineBtnsDiv.appendChild(displayContainer);
-    displayModes.map((mode) => {
-      btn = createBtn(
-        "button",
-        "button",
-        "settingsBtn",
-        mode + " Display Mode",
-        displayContainer,
-        mode,
-        undefined,
-        undefined,
-        undefined,
-        undefined,
-        {
+    inlineBtnsDiv.appendChild(btnsContainer);
+    displayModes
+      .map((mode) => {
+      btn = createSettingBtn(
+        {tag:"button",
+        role:"button",
+        btnClass:"settingsBtn",
+        innerText:mode + " Display Mode",
+        btnsContainer:btnsContainer,
+        id:mode,
+        onClick:{
           event: "click",
           fun: () => {
             if (localStorage.displayMode !== mode) {
               localStorage.displayMode = mode;
-              Array.from(displayContainer.children).map((btn) => {
+              Array.from(btnsContainer.children).map((btn) => {
                 btn.id !== localStorage.displayMode
                   ? btn.classList.add("langBtnAdd")
                   : btn.classList.remove("langBtnAdd");
               });
             }
           },
+          }
         }
       );
       if (mode !== localStorage.displayMode) {
         btn.classList.add("langBtnAdd");
       }
     });
+    setBtnsContainerGridColumns(btnsContainer);
   })();
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
-    let displayContainer = document.createElement("div");
-    displayContainer.style.display = "grid";
-    displayContainer.style.gridTemplateColumns = String(
-      (100 / 3).toString() + "%"
-    ).repeat(3);
+    let btnsContainer = createBtnsContainer('enterEditingMode', 'Enter Editing Mode');
 
-    inlineBtnsDiv.appendChild(displayContainer);
-    btn = createBtn(
-      "button",
-      "button",
-      "settingsBtn",
-      "Editing Mode",
-      displayContainer,
-      "editingMode" + localStorage.editingMode.toString(),
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      {
+    inlineBtnsDiv.appendChild(btnsContainer);
+    btn = createSettingBtn({
+      tag:"button",
+      role: "button",
+      btnClass:"settingsBtn",
+      innerText:"Editing Mode",
+      btnsContainer: btnsContainer,
+      id: "editingMode" + localStorage.editingMode.toString(),
+      onClick:{
         event: "click",
         fun: () => {
           //@ts-ignore
@@ -2247,76 +2265,97 @@ function showSettingsPanel() {
             startEditingMode({ select: select })
           );
         },
-      }
+      }}
     );
+    setBtnsContainerGridColumns(btnsContainer);
   })();
 
-  function createBtn(
-    tag: string,
-    role: string = tag,
-    btnClass: string,
-    innerText: string,
-    parent: HTMLElement,
+  function createBtnsContainer(id: string, labelText:string) {
+    let btnsContainer = document.createElement("div");
+    btnsContainer.id = id;
+    btnsContainer.style.display = "grid";
+    btnsContainer.style.columnGap = "3px";
+    btnsContainer.style.justifyItems = "center";
+    btnsContainer.style.height = 'fit-content';
+    btnsContainer.style.width = 'fit-content';
+    inlineBtnsDiv.appendChild(btnsContainer);
+    let label = document.createElement('h3');
+    label.innerText = labelText;
+    btnsContainer.insertAdjacentElement('beforebegin', label)
+    return btnsContainer
+  };
+  function setBtnsContainerGridColumns(btnsContainer:HTMLElement){
+    let columns:number
+    columns = btnsContainer.children.length;
+    if (columns === 4) columns = 2;
+    btnsContainer.style.gridTemplateColumns = ((100 / columns).toString() + '% ').repeat(columns)
+  };
+
+  function createSettingBtn(args:
+    {tag: string,
+    role?: string
+    btnClass?: string,
+    innerText?: string,
+    btnsContainer?: HTMLElement,
     id?: string,
     lang?: string,
     type?: string,
     size?: string,
     backgroundColor?: string,
-    onClick?: { event: string; fun: Function }
+    onClick?: { event: string; fun: Function }}
   ): HTMLElement {
-    let btn = document.createElement(tag);
-    if (role) {
-      btn.role = role;
+    let btn = document.createElement(args.tag);
+    if (!args.role) args.role = args.tag;
+    if (args.role) {
+      btn.role = args.role;
     }
-    if (innerText) {
-      btn.innerHTML = innerText;
+    if (args.innerText) {
+      btn.innerHTML = args.innerText;
     }
-    if (btnClass) {
-      btn.classList.add(btnClass);
+    if (args.btnClass) {
+      btn.classList.add(args.btnClass);
     }
-    if (id) {
-      btn.id = id;
+    if (args.id) {
+      btn.id = args.id;
     }
-    if (lang) {
-      btn.lang = lang.toLowerCase();
+    if (args.lang) {
+      btn.lang = args.lang.toLowerCase();
     }
-    if (type && btn.nodeType) {
+    if (args.type && btn.nodeType) {
       //@ts-ignore
-      btn.type = type;
+      btn.type = args.type;
     }
-    if (size) {
+    if (args.size) {
       //@ts-ignore
-      btn.size = size;
+      btn.size = args.size;
     }
-    if (backgroundColor) {
-      btn.style.backgroundColor = backgroundColor;
+    if (args.backgroundColor) {
+      btn.style.backgroundColor = args.backgroundColor;
     }
-    if (onClick) {
-      btn.addEventListener(onClick.event, (e) => {
+    if (args.onClick) {
+      btn.addEventListener(args.onClick.event, (e) => {
         e.preventDefault;
-        onClick.fun();
+        args.onClick.fun();
       });
     }
-    if (parent) {
-      parent.appendChild(btn);
+    if (args.btnsContainer) {
+      args.btnsContainer.appendChild(btn);
     }
+
     return btn;
   }
   //Appending colors keys for actors
   (async function addActorsKeys() {
-    let container = document.createElement("div");
-    container.id = "actors";
-    container.style.display = "grid";
-    container.style.gridTemplateColumns = String("33% ").repeat(3);
-    inlineBtnsDiv.appendChild(container);
-    actors.map((actor) => {
-      let newBtn = createBtn(
-        "button",
-        undefined,
-        "colorbtn",
-        undefined,
-        container,
-        actor.EN + "Color"
+    let btnsContainer = createBtnsContainer('actorsKeys', 'Colors keys');
+    actors
+      .map((actor) => {
+      let newBtn = createSettingBtn(
+       {
+        tag:"button",
+        btnClass:"colorbtn",
+        btnsContainer:btnsContainer,
+        id: actor.EN + "Color"
+        }
       );
       for (let i = 1; i < 4; i++) {
         let p = document.createElement("p");
@@ -2324,6 +2363,7 @@ function showSettingsPanel() {
         newBtn.appendChild(p);
       }
     });
+    btnsContainer.style.gridTemplateColumns = ((100/btnsContainer.children.length).toString() + '% ').repeat(btnsContainer.children.length);
   })();
   closeSideBar(leftSideBar);
 }
@@ -2468,8 +2508,17 @@ function splitTitle(title): string[] {
   return title.split("&C=");
 }
 
-
-
+function consoleLogArrayTextInDefaultLanguage(title:string)
+{
+  let Table:string[][] = PrayersArray.filter(tbl=>tbl[0][0].startsWith(title))[0];
+  if (!Table) return console.log('Didn\'t find the table');
+  
+  Table.forEach(row => {
+    if (row[0] === Prefix.placeHolder)
+      return console.log('Placeholder & title =', row[row.length - 1]);
+    return console.log(row[row.length - 1])
+  })
+};
 /**
  * Hides the current slide, and unhides the next or previous slide based on the value of 'next'
  * @param {boolean} next - If true, the next slide is displayed. If false, the previous one is displayed. Its default value is true.
@@ -2844,10 +2893,6 @@ async function fetchSynaxariumFrench(months:string[]) {
       
     }
   }
-
-      
-
-
 
 function sendHttpRequest(apiURL:string, responseDoc:Document):Document| void{
   let request = new XMLHttpRequest();

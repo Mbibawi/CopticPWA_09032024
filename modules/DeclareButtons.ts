@@ -126,9 +126,9 @@ class Button {
 const btnMain: Button = new Button({
   btnID: "btnMain",
   label: {
-    defaultLanguage: "العودة إلى القائمة الرئيسية",
-    foreignLanguage: "Retour au menu principal",
-    otherLanguage: "Back to the main menu",
+    AR: "العودة إلى القائمة الرئيسية",
+    FR: "Retour au menu principal",
+    EN: "Back to the main menu",
   },
   onClick: () => {
     btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours];
@@ -208,7 +208,7 @@ const btnMain: Button = new Button({
 
 const btnGoBack: Button = new Button({
   btnID: "btnGoBack",
-  label: { defaultLanguage: "السابق", foreignLanguage: "Retour", otherLanguage: "Go Back" },
+  label: { AR: "السابق", FR: "Retour", EN: "Go Back" },
   onClick: () => {
     scrollToTop(); //scrolling to the top of the page
   },
@@ -216,7 +216,7 @@ const btnGoBack: Button = new Button({
 
 const btnMass: Button = new Button({
   btnID: "btnMass",
-  label: { defaultLanguage: "القداسات", foreignLanguage: "Messes" },
+  label: { AR: "القداسات", FR: "Messes" },
   onClick: (args:{returnBtnChildren?:boolean}={returnBtnChildren:false}) => {
     btnMass.children = [btnIncenseDawn, btnMassUnBaptised, btnMassBaptised];
     if (args.returnBtnChildren) return btnMass.children;
@@ -226,8 +226,8 @@ const btnMass: Button = new Button({
 const btnIncenseOffice: Button = new Button({
   btnID: "btnIncenseOffice",
   label: {
-    defaultLanguage: "رفع بخور باكر أو عشية",
-    foreignLanguage: "Office des Encens Aube et Vêpres",
+    AR: "رفع بخور باكر أو عشية",
+    FR: "Office des Encens Aube et Vêpres",
   },
   onClick: (args:{returnBtnChildren?:boolean}={returnBtnChildren:false}) => {
     //setting the children of the btnIncenseOffice. This must be done by the onClick() in order to reset them each time the button is clicked
@@ -295,8 +295,8 @@ const btnIncenseOffice: Button = new Button({
 const btnIncenseDawn: Button = new Button({
   btnID: "btnIncenseDawn",
   label: {
-    defaultLanguage: "بخور باكر",
-    foreignLanguage: "Encens Aube",
+    AR: "بخور باكر",
+    FR: "Encens Aube",
   },
   showPrayers: true,
   children: [], //we are initiating and empty array in order to avoid errors later
@@ -381,8 +381,8 @@ const btnIncenseDawn: Button = new Button({
         btndocFragment.children[0] as HTMLElement,
         "AdamDoxologies",
         {
-        defaultLanguage: "ذكصولوجيات باكر آدام",
-        foreignLanguage: "Doxologies Adam Aube",
+        AR: "ذكصولوجيات باكر آدام",
+        FR: "Doxologies Adam Aube",
       },
         PrayersArrays.DoxologiesPrayersArray.filter(table => table[0][0].startsWith(Prefix.doxologies + 'AdamDawn')),
       btnIncenseDawn.languages
@@ -397,8 +397,8 @@ const btnIncenseDawn: Button = new Button({
 const btnIncenseVespers: Button = new Button({
   btnID: "btnIncenseVespers",
   label: {
-    defaultLanguage: "بخور عشية",
-    foreignLanguage: "Incense Vespers",
+    AR: "بخور عشية",
+    FR: "Incense Vespers",
   },
   showPrayers: true,
   docFragment: new DocumentFragment(),
@@ -428,7 +428,7 @@ const btnIncenseVespers: Button = new Button({
 
 const btnMassStCyril: Button = new Button({
   btnID: "btnMassStCyril",
-  label: { defaultLanguage: "كيرلسي", foreignLanguage: "Saint Cyril", otherLanguage: "St Cyril" },
+  label: { AR: "كيرلسي", FR: "Saint Cyril", EN: "St Cyril" },
   docFragment: new DocumentFragment(),
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
@@ -468,7 +468,7 @@ const btnMassStCyril: Button = new Button({
 
 const btnMassStGregory: Button = new Button({
   btnID: "btnMassStGregory",
-  label: { defaultLanguage: "غريغوري", foreignLanguage: "Saint Gregory" },
+  label: { AR: "غريغوري", FR: "Saint Gregory" },
   docFragment: new DocumentFragment(),
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
@@ -512,7 +512,7 @@ const btnMassStGregory: Button = new Button({
 
 const btnMassStBasil: Button = new Button({
   btnID: "btnMassStBasil",
-  label: { defaultLanguage:"باسيلي", foreignLanguage: "Saint Basil", otherLanguage: "St Basil" },
+  label: { AR:"باسيلي", FR: "Saint Basil", EN: "St Basil" },
   docFragment: new DocumentFragment(),
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
@@ -553,7 +553,7 @@ const btnMassStBasil: Button = new Button({
     showFractionPrayersMasterButton(
       btn,
       selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay', {equal:true})[0],
-      { defaultLanguage: "صلوات القسمة", foreignLanguage: "Oraisons de la Fraction" },
+      { AR: "صلوات القسمة", FR: "Oraisons de la Fraction" },
       "btnFractionPrayers",
     PrayersArrays.FractionsPrayersArray);
 
@@ -569,7 +569,7 @@ const btnMassStBasil: Button = new Button({
       );
 
       //Adding 2 buttons to redirect to the other masses at the Anaphora prayer After "By the intercession of the Virgin St. Mary"
-      let select = selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'AssemblyResponseByTheIntercessionOfStMary&D=$copticFeasts.AnyDay', {endsWith:true});
+      let select = selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'SpasmosAdamShort&D=$copticFeasts.AnyDay', {endsWith:true});
       redirectToAnotherMass(
         [...massButtons],
         {
@@ -630,14 +630,14 @@ const btnMassStBasil: Button = new Button({
       console.log('spasmos = ', spasmos)
       let anchor = selectElementsByDataRoot(btndocFragment, anchorTitle, {startsWith:true})[0];
       if (!anchor) console.log('didn\'t find anchor : ', anchorTitle);
-      console.log('anchor = ', anchor);
+  
       
       let createdElements = addExpandablePrayer(
         anchor,
         spasmosTitle.split('&D=')[0],
         {
-          defaultLanguage: spasmos[0][btn.languages.indexOf(defaultLanguage) +1],
-          foreignLanguage: spasmos[0][btn.languages.indexOf(foreingLanguage) +1]
+          AR: spasmos[0][btn.languages.indexOf(defaultLanguage) +1],
+          FR: spasmos[0][btn.languages.indexOf(foreingLanguage) +1]
         },
         [spasmos],
         btn.languages
@@ -663,8 +663,8 @@ const btnMassStBasil: Button = new Button({
         filtered,
         btn,
         {
-          defaultLanguage: 'مدائح التوزيع',
-          foreignLanguage: 'Chants de la communion'
+          AR: 'مدائح التوزيع',
+          FR: 'Chants de la communion'
         },
         'communionChants',
         undefined,
@@ -683,16 +683,11 @@ const btnMassStBasil: Button = new Button({
       
       if (!anchor) return console.log('Di not find the Anchor');
 
-      let lable =
-      {
-        AR: "...نعم نسألك أيها المسيح إلهنا",
-        FR: 'Oui, nous t\'implorons ô Christ notre Dieu...'
-      };
       let createdElements = addExpandablePrayer(anchor,
         'btnStGregoryLitanies',
         {
-          defaultLanguage: lable[defaultLanguage],
-          foreignLanguage: lable[foreingLanguage]
+          AR: "...نعم نسألك أيها المسيح إلهنا",
+          FR: 'Oui, nous t\'implorons ô Christ notre Dieu...'
         },
         litaniesIntro,
         btn.languages
@@ -706,11 +701,7 @@ const btnMassStBasil: Button = new Button({
       
       if (litaniesIntro.length === 0) console.log('Did not find the St Cyril Litanies Introduction');
 
-      lable =
-      {
-        AR: 'طلبة القداس الكيرلسي',
-        FR: 'Litanies de la messe de Saint Cyril'
-      };
+ 
       //We will create the expandable div and its button, but will append the button to the div
       let btnsDiv = createdElements[0]
         .parentElement as HTMLDivElement;
@@ -721,8 +712,8 @@ const btnMassStBasil: Button = new Button({
             anchor,
             'btnStCyrilLitanies',
             {
-              defaultLanguage: lable[defaultLanguage],
-              foreignLanguage: lable[foreingLanguage]
+              AR: 'طلبة القداس الكيرلسي',
+              FR: 'Litanies de la messe de Saint Cyril'
             },
             litaniesIntro,
             btnMassStCyril.languages
@@ -735,7 +726,7 @@ const btnMassStBasil: Button = new Button({
 
 const btnMassStJohn: Button = new Button({
   btnID: "btnMassStJohn",
-  label: { defaultLanguage: "القديس يوحنا", foreignLanguage: "Saint Jean" },
+  label: { AR: "القديس يوحنا", FR: "Saint Jean" },
   docFragment: new DocumentFragment(),
   showPrayers: false, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   prayersSequence: [],
@@ -762,7 +753,7 @@ const btnMassStJohn: Button = new Button({
 const goToAnotherMass: Button[] = [
   new Button({
     btnID: "btnGoToStBasilReconciliation",
-    label: { defaultLanguage: " باسيلي", foreignLanguage: " Saint Basil" },
+    label: { AR: " باسيلي", FR: " Saint Basil" },
     cssClass: inlineBtnClass,
     onClick: () => {
       showChildButtonsOrPrayers(btnMassStBasil);
@@ -770,7 +761,7 @@ const goToAnotherMass: Button[] = [
   }),
   new Button({
     btnID: "btnGoToStGregoryReconciliation",
-    label: { defaultLanguage: "غريغوري", foreignLanguage: " Saint Gregory" },
+    label: { AR: "غريغوري", FR: " Saint Gregory" },
     cssClass: inlineBtnClass,
     onClick: () => {
       showChildButtonsOrPrayers(btnMassStGregory);
@@ -778,7 +769,7 @@ const goToAnotherMass: Button[] = [
   }),
   new Button({
     btnID: "btnGoToStCyrilReconciliation",
-    label: { defaultLanguage: "كيرلسي", foreignLanguage: "Saint Cyril" },
+    label: { AR: "كيرلسي", FR: "Saint Cyril" },
     cssClass: inlineBtnClass,
     onClick: () => {
       showChildButtonsOrPrayers(btnMassStCyril);
@@ -786,7 +777,7 @@ const goToAnotherMass: Button[] = [
   }),
   new Button({
     btnID: "btnGoToStJeanReconciliation",
-    label: { defaultLanguage: "القديس يوحنا", foreignLanguage: "Saint Jean" },
+    label: { AR: "القديس يوحنا", FR: "Saint Jean" },
     cssClass: inlineBtnClass,
     parentBtn: btnMass,
     onClick: () => {
@@ -798,9 +789,9 @@ const goToAnotherMass: Button[] = [
 const btnMassUnBaptised: Button = new Button({
   btnID: "btnMassUnBaptised",
   label: {
-    defaultLanguage: "قداس الموعوظين",
-    foreignLanguage: "Messe des non baptisés",
-    otherLanguage: "Unbaptised Mass",
+    AR: "قداس الموعوظين",
+    FR: "Messe des non baptisés",
+    EN: "Unbaptised Mass",
   },
   docFragment: new DocumentFragment(),
   showPrayers: true,
@@ -876,8 +867,8 @@ const btnMassUnBaptised: Button = new Button({
         godHaveMercyHtml[0] as HTMLDivElement,
         'godHaveMercy',
         {
-          defaultLanguage: godHaveMercy[0][1][4],//This is the arabic text of the lable 
-          foreignLanguage: godHaveMercy[0][1][2], //this is the French text of the label
+          AR: godHaveMercy[0][1][4],//This is the arabic text of the lable 
+          FR: godHaveMercy[0][1][2], //this is the French text of the label
         },
         [[godHaveMercy[0][2]]],//We add only the second row, the 1st row is a comment from which we retrieved the text for the title
         btnMassUnBaptised.languages
@@ -1122,8 +1113,8 @@ const btnMassUnBaptised: Button = new Button({
       let masterBtn = new Button({
         btnID: 'BOH_Master',
         label: {
-          defaultLanguage: 'الأجبية',
-          foreignLanguage: 'Agpia'
+          AR: 'الأجبية',
+          FR: 'Agpia'
         },
         onClick: () => {
           //We toggle the div containing the buttons for each hour
@@ -1311,9 +1302,9 @@ const btnMassUnBaptised: Button = new Button({
 const btnMassBaptised: Button = new Button({
   btnID: "btnMassBaptised",
   label: {
-    defaultLanguage: "قداس المؤمنين",
-    foreignLanguage: "Messe des Croyants",
-    otherLanguage: "Baptized Mass",
+    AR: "قداس المؤمنين",
+    FR: "Messe des Croyants",
+    EN: "Baptized Mass",
   },
   parentBtn: btnMass,
   children: [btnMassStBasil, btnMassStCyril, btnMassStGregory, btnMassStJohn],
@@ -1325,9 +1316,9 @@ const btnDayReadings: Button = new Button({
     new Button({
       btnID: "btnReadingsStPaul",
       label: {
-        defaultLanguage: "البولس",
-        foreignLanguage: "Epître de Saint Paul",
-        otherLanguage: "Pauline Epistle",
+        AR: "البولس",
+        FR: "Epître de Saint Paul",
+        EN: "Pauline Epistle",
       },
       showPrayers: true,
       prayersSequence: [Prefix.stPaul],
@@ -1340,8 +1331,8 @@ const btnDayReadings: Button = new Button({
     new Button({
       btnID: "btnReadingsKatholikon",
       label: {
-        defaultLanguage: "الكاثوليكون",
-        foreignLanguage: "Katholikon",
+        AR: "الكاثوليكون",
+        FR: "Katholikon",
       },
       showPrayers: true,
       prayersSequence: [Prefix.katholikon],
@@ -1354,8 +1345,8 @@ const btnDayReadings: Button = new Button({
     new Button({
       btnID: "btnReadingsPraxis",
       label: {
-        defaultLanguage: "الإبركسيس",
-        foreignLanguage: "Praxis",
+        AR: "الإبركسيس",
+        FR: "Praxis",
       },
       showPrayers: true,
       prayersSequence: [Prefix.praxis],
@@ -1368,8 +1359,8 @@ const btnDayReadings: Button = new Button({
     new Button({
       btnID: "btnReadingsSynaxarium",
       label: {
-        defaultLanguage: "السنكسار",
-        foreignLanguage: "Synaxarium",
+        AR: "السنكسار",
+        FR: "Synaxarium",
       },
       showPrayers: true,
       prayersArray: ReadingsArrays.SynaxariumArray,
@@ -1383,9 +1374,9 @@ const btnDayReadings: Button = new Button({
     new Button({
       btnID: "btnReadingsGospelMass",
       label: {
-        defaultLanguage: "إنجيل القداس",
-        foreignLanguage: "l'Evangile",
-        otherLanguage: "Gospel",
+        AR: "إنجيل القداس",
+        FR: "l'Evangile",
+        EN: "Gospel",
       },
       showPrayers: true,
       prayersSequence: [Prefix.gospelMass + "Psalm", Prefix.gospelMass + "Gospel"],
@@ -1396,8 +1387,9 @@ const btnDayReadings: Button = new Button({
       },
     })],
   label: {
-    defaultLanguage: "قراءات اليوم", foreignLanguage: "Lectures du jour",
-    otherLanguage: "Day's Readings"
+    AR: "قراءات اليوم", 
+    FR: "Lectures du jour",
+    EN: "Day's Readings"
   },
         onClick: (args:{returnBtnChildren?:boolean}={returnBtnChildren:false}) => {
         if (Season === Seasons.HolyWeek) {
@@ -1459,9 +1451,9 @@ const btnDayReadings: Button = new Button({
 const btnReadingsGospelIncenseVespers: Button = new Button({
   btnID: "btnReadingsGospelIncenseVespers",
   label: {
-    defaultLanguage: "إنجيل عشية",
-    foreignLanguage: "Evangile  Vêpres",
-    otherLanguage: "Vespers Gospel",
+    AR: "إنجيل عشية",
+    FR: "Evangile  Vêpres",
+    EN: "Vespers Gospel",
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelVespers + "Psalm", Prefix.gospelVespers + "Gospel"],
@@ -1494,9 +1486,9 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
 const btnReadingsGospelIncenseDawn: Button = new Button({
   btnID: "btnReadingsGospelIncenseDawn",
   label: {
-    defaultLanguage: "إنجيل باكر",
-    foreignLanguage: "Evangile Aube",
-    otherLanguage: "Gospel Dawn",
+    AR: "إنجيل باكر",
+    FR: "Evangile Aube",
+    EN: "Gospel Dawn",
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelDawn + "Psalm", Prefix.gospelDawn + "Gospel"],
@@ -1511,9 +1503,9 @@ const btnReadingsGospelIncenseDawn: Button = new Button({
 const btnReadingsGospelNight: Button = new Button({
   btnID: "btnReadingsGospelNight",
   label: {
-    defaultLanguage: "إنجيل المساء",
-    foreignLanguage: "Evangile du Soir",
-    otherLanguage: "Night Gospel",
+    AR: "إنجيل المساء",
+    FR: "Evangile du Soir",
+    EN: "Night Gospel",
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelNight + "Psalm", Prefix.gospelNight + "Gospel"],
@@ -1527,8 +1519,8 @@ const btnReadingsGospelNight: Button = new Button({
 const btnReadingsPropheciesDawn: Button = new Button({
   btnID: "btnReadingsPropheciesDawn",
   label: {
-    defaultLanguage: "نبوات باكر",
-    foreignLanguage: "Propheties Matin",
+    AR: "نبوات باكر",
+    FR: "Propheties Matin",
   },
   showPrayers: true,
   parentBtn: btnIncenseDawn,
@@ -1542,7 +1534,7 @@ const btnReadingsPropheciesDawn: Button = new Button({
 
 const btnBookOfHours:Button =  new Button({
         btnID: 'btnBookOfHours',
-        label: { defaultLanguage: 'الأجبية', foreignLanguage: 'Agpia', otherLanguage: 'Book of Hours'},
+        label: { AR: 'الأجبية', FR: 'Agpia', EN: 'Book of Hours'},
         docFragment:new DocumentFragment(),
         showPrayers: true,
         languages: [...prayersLanguages],
@@ -1629,8 +1621,8 @@ const btnBookOfHours:Button =  new Button({
           let hourBtn = new Button({
             btnID: 'btn' + hourName,
             label: {
-              defaultLanguage: bookOfHoursLabels.filter(label => label.id === hourName)[0].AR,
-              foreignLanguage: bookOfHoursLabels.filter(label => label.id === hourName)[0].FR
+              AR: bookOfHoursLabels.filter(label => label.id === hourName)[0].AR,
+              FR: bookOfHoursLabels.filter(label => label.id === hourName)[0].FR
             },
             languages: btnBookOfHours.languages,
             showPrayers: true,
@@ -1915,8 +1907,8 @@ async function redirectToAnotherMass(
     let newBtn: Button = new Button({
       btnID: "GoTo_" + btn.btnID.split('btn')[1] + "_From_" + position.el.dataset.root ,
       label: {
-        defaultLanguage: btn.label.defaultLanguage,
-        foreignLanguage: btn.label.foreignLanguage,
+        AR: btn.label.AR,
+        FR: btn.label.FR,
       },
       cssClass: inlineBtnClass,
       onClick: () => {

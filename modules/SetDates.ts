@@ -530,7 +530,7 @@ function testReadings() {
 				query = btn.prayersSequence[0] + '&D=' + copticReadingsDate + '&C=';
 				let reading: string[][][] = btn.prayersArray.filter(tbl => tbl[0][0].startsWith(query));
 				
-				if (reading.length < 1) result += '\tmissing: ' + btn.label.foreignLanguage + '\nquery= ' + query + '\n';
+				if (reading.length < 1) result += '\tmissing: ' + btn.label.FR + '\nquery= ' + query + '\n';
 				if (reading.length > 1) result += '\textra table: ' + query;
 			}
 		}
