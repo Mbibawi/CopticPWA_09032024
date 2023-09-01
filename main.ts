@@ -108,7 +108,7 @@ function createHtmlElementForPrayer(args: {
   | DocumentFragment
   | { beforeOrAfter: InsertPosition; el: HTMLElement };
   actorClass?: string;
-  container?: HTMLDivElement | DocumentFragment;
+  container?: HTMLElement | DocumentFragment;
 }): HTMLDivElement | void {
 
 
@@ -188,7 +188,7 @@ function createHtmlElementForPrayer(args: {
       ? //@ts-ignore
       args.position.el.insertAdjacentElement(
         //@ts-ignore
-          params.position.beforeOrAfter,
+          args.position.beforeOrAfter,
           htmlRow
         )
       : //@ts-ignore
@@ -319,8 +319,9 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     btn.prayersArray &&
     btn.languages &&
     btn.showPrayers
-  )
-    showPrayers(btn, true, true, container);
+  ){
+    showPrayers({ btn: btn, clearContainerDiv: true, clearRightSideBar: true, container: container, languages: btn.languages, prayersSequence: btn.prayersSequence, position: container });
+    };
 
   if (btn.afterShowPrayers) btn.afterShowPrayers();
 
@@ -1183,87 +1184,122 @@ function buildSideBar(id: string) {
   return sideBar;
 }
 /**
- * This function takes an string[][] representing a Word table (where each each string[][] represents a row of the table, and has as a 1st string element the title of the Word table. Each next string element represents the text of the each cell of the row in a given language.
+ * If args.wordTable is omitted, this function creates div elements for each string[] (row) in each table (i.e., string[][]) referenced in the button's (i.e., args.btn) prayersSequence, which is a string[] containing an ordered list of the titles of the tables of prayers that will be shown when the button is clicked. If args.wordTable is provided, the function will create div elements for each row (i.e. string[]) of this table.
  * @param {Button} btn
- * @param {boolean} clearContent - tells wether the containerDiv content needs to be cleared
- *  @param {Boolean} clearSideBar - tells wether the right sideBar needs to be cleared
+ * @param {string[]} prayersSequence - if wordTable is missing, the function will retrieve the tables from the titles in the prayersSequence. If this argument is missing, it will be set to btn.prayersSequence.
+ * @param {DocumentFragment | HTMLDivElement} container - the html element to which the created divs will be appended at the position provided by the "position" argument.
+ * @param {boolean} clearContainer - tells wether the containerDiv content needs to be cleared. If ommitted, its default value is true.
+ *  @param {Boolean} clearSideBar - tells wether the right sideBar needs to be cleared. If ommitted, its default value is true.
  * @param {HTMLElement|{beforeOrAfter:insertPosition, el:HtmlElement}} position - if it is an HTML Element, the newly created divs will be appended to this html element. If it is an object, the newly created divs will be placed in the position provided (the position is of type insertPosition) by the beforeOrAfter property, in relation to the html element provied in the el property
+ * @param {string[][]} wordTable - If a table is passed as argument, the function will create and return div elements for each row (i.e., each string[]) in the table. If omitted, the function will retrieve all the tables referenced in the button's (i.e. args.btn) prayers' sequence (i.e. args.btn.prayersSequence) and will create html divs for each row (i.e. string[]) in each table.
  */
-function showPrayers(
-  btn: Button,
-  clearContent = true,
-  clearRightSideBar: boolean = true,
-  position:
-    | {
-      el: HTMLElement;
-      beforeOrAfter: InsertPosition;
-    }
-    | HTMLElement
-    | DocumentFragment = containerDiv
-): HTMLDivElement[][] {
-  let container: DocumentFragment;
-  if (btn.docFragment) {
-    container = btn.docFragment;
+function showPrayers(args:
+  {
+  btn?: Button,
+  prayersSequence?:string[],
+  container?:DocumentFragment | HTMLElement,
+  clearContainerDiv?:boolean,
+  clearRightSideBar?: boolean,
+  position?: {
+    el: HTMLElement; beforeOrAfter: InsertPosition;
   }
-  if (!btn || !btn.prayersSequence) return;
-
-  if (btn.btnID != btnGoBack.btnID && btn.btnID != btnMain.btnID)
-    closeSideBar(leftSideBar);
-  if (clearContent) containerDiv.innerHTML = "";
-  if (clearRightSideBar) sideBarTitlesContainer.innerHTML = ""; //this is the right side bar where the titles are displayed for navigation purposes
-
-  let date: string;
-
-  return btn.prayersSequence
-    .map((prayer: string) => {
-      if (!prayer) {console.log("no prayer");  return};
-      let wordTable: string[][];
+  | HTMLElement | DocumentFragment,
+    wordTable?:string[][],
+    languages?:string[]
+  }
+): HTMLDivElement[][] {
+  if (!args.btn && !args.wordTable) { console.log('You must provide either a button with prayersSequence and prayersArray, either a word table. None of those arguments is provided'); return};
   
-      if (prayer.includes("&D=")) date = "";
-      else date = "&D=" + copticReadingsDate; //this is the default case where the date equals the copticReadingsDate. This works for most of the occasions.
-      prayer += date;
-      wordTable = findTableInPrayersArray(prayer, btn.prayersArray) as string[][];
+  //Setting container, and the values for the missing arguments
+  if (!args.container && args.btn && args.btn.docFragment) args.container = args.btn.docFragment;
+  if (!args.container) args.container = containerDiv;
+  if (!args.position) args.position = args.container;
+
+  if (args.clearContainerDiv !== false) args.clearContainerDiv = true;
+  if (args.clearRightSideBar !==false) args.clearRightSideBar = true;
+
+
+  if (!args.languages && args.btn) args.languages = args.btn.languages;
+  if (!args.languages) {console.log('the languages argument is missing or undefined'); return};
+
+  if (args.btn && args.btn.btnID != btnGoBack.btnID && args.btn.btnID != btnMain.btnID) closeSideBar(leftSideBar);
+  if (args.clearContainerDiv ===true) containerDiv.innerHTML = "";
+  if (args.clearRightSideBar ===true) sideBarTitlesContainer.innerHTML = ""; //this is the right side bar where the titles are displayed for navigation purposes
+
+  let date: string, tables: string[][][] = [];
   
-      if (!wordTable) return;
-      //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
-      let tblHtmlDivs: HTMLDivElement[]=[];
-      wordTable.map((row) => {
+  if (!args.wordTable) {
+    if (!args.prayersSequence) args.prayersSequence = args.btn.prayersSequence;
+    if (!args.prayersSequence || !args.btn.prayersArray) { console.log('Either the prayersSequence or the prayersArray are missing, we cannot retrieve the tables'); return };
+    args.prayersSequence
+    .forEach(tableTitle => {
+        //If no string[][] was passed in the arguments, we will retrieve the table from its title (prayer)
+        if (!tableTitle) {console.log("No tableTitle : ");  return};
+        //If the date value is already set in the title of the table, we do not add it again
+        if (tableTitle.includes("&D=")) date = "";
+        else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
+        tableTitle += date; //we add the date to the title of the table
+      tables.push(findTableInPrayersArray(tableTitle, args.btn.prayersArray) as string[][]);
+    })
+  } else if(args.wordTable) tables.push(args.wordTable);
+
+  if (tables.length === 0) return;
+
+    //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
+  
+  return tables.filter(table=>table).map(table => {
+    let tblHtmlDivs: HTMLDivElement[] = [];
+    if (!table) { console.log('tables = ', tables); return };
+    table
+      .map(row => {
         let divs = processRow(row);
-        if (!divs || divs.length ===0) return;
+        if (!divs || divs.length === 0) return;
         tblHtmlDivs.push(...divs);
       });
-      return tblHtmlDivs;//We remove the void or invalid elements
-    });
-  
+    return tblHtmlDivs;
+  });
+
   function processRow(row:string[]):HTMLDivElement[] {
-    if (row[0].startsWith(Prefix.placeHolder)) 
-      return processPlaceHolder(row);
-    else return [createElement(row)];
+    //We check if the row (string[]) is not a mere placeholder for another table
+    if (row[0].startsWith(Prefix.placeHolder)) return processPlaceHolder(row);//If the row is a placeholder, we retrieve the table refrenced in row[1]
+    else return [createElement(row)];//If it is not a placeholder, we created a div element with the text of the row
   };
+
   function processPlaceHolder(row:string[]):HTMLDivElement[] {
     if (!row[1]) {console.log(row); return};
-    let tblsArray = PrayersArraysKeys.find(array => row[1].startsWith(array[0]));
-    if (!tblsArray) console.log(row[1]);
-      let tbl = findTableInPrayersArray(
-            row[1], //We retrieve the title
-            tblsArray[1], //we retrieve the Array
-            { equal: true }) as string[][];
+    //We retrieve the tables' array (which is a string[][][]) from the title of the table in row[1]
+    let tblsArray = getTablesArrayFromTitlePrefix(row[1]);
+    if (!tblsArray) console.log('Failed to retrieve the tables array form the title : ', row[1]); 
+    
+    //We retrieve the table itself
+    let tbl = findTableInPrayersArray(row[1], tblsArray, { equal: true }) as string[][];
         
-        if (!tbl) {console.log('Could\'t find the placeHolder table : row[2]  =', row[2]); return}; 
-      return tbl.map(tblRow => createElement(tblRow));
-  }
+    if (!tbl) { console.log('Could\'t find the placeHolder table : row[2]  =', row[2]); return }; 
+    
+    //We create html div elements representing each row (i.e., string[]) in the table
+    return tbl.map(tblRow => createElement(tblRow));
+  };
+
   function createElement(row:string[]):HTMLDivElement{
     if (row[0].startsWith(Prefix.placeHolder)) return;
     return createHtmlElementForPrayer({
       tblRow: row,
-      languagesArray: btn.languages,
-      position: position,
-      container: container,
+      languagesArray: args.languages,
+      position: args.position,
+      container: args.container,
     }) as HTMLDivElement
   };
 
-
 }
+
+/**
+ * Uses the prefix at the begining of the title of a table or a row (i.e. Prefi.something) to find the string[][][] array where a table which title starts with the same prefix, should be found.
+ * @param {string} title: the title starting with a prefix, from which the string[][][] is retrived
+ * @return {string[][][]} - the array in which a table which title starts with such prefix, should be found
+ */
+function getTablesArrayFromTitlePrefix(title:string):string[][][]{
+  return PrayersArraysKeys.find(array => title.startsWith(array[0]))[1];
+};
 
 /**
  * Sets the number of columns and their widths for the provided list of html elements which style display property = 'grid'
@@ -1278,7 +1314,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
   htmlRows.forEach((row) => {
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
-    row.style.gridTemplateColumns = getColumnsNumberAndWidth(row);
+    setGridColumnsNumber(row, undefined, undefined);
     //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
     row.style.gridTemplateAreas = setGridAreas(row);
 
@@ -1446,15 +1482,6 @@ function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
     });
 }
 
-/**
- * Returns a string indicating the number of columns and their widths
- * @param {HTMLElement} row - the html element created to show the text representing a row in the Word table from which the text of the prayer was taken (the text is provided as a string[] where the 1st element is the tabel's id and the other elements represent each the text in a given language)
- * @returns  {string} - a string represneting the value that will be given to the grid-template-columns of the row
- */
-function getColumnsNumberAndWidth(row: HTMLElement) {
-  let width: string = (100 / row.children.length).toString() + "% ";
-  return width.repeat(row.children.length);
-}
 
 /**
  * Returns a string representing the grid areas for an html element with a 'display:grid' property, based on the "lang" attribute of its children
@@ -1691,9 +1718,8 @@ async function showMultipleChoicePrayersButton(
       //Customizing the style of newDiv
       newDiv.classList.add("inlineBtns");
       //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-      newDiv.style.gridTemplateColumns = (
-        String((100 / groupOfNumber) * 2) + "% "
-      ).repeat(groupOfNumber / 2);
+      setGridColumnsNumber(newDiv, 2, 2);
+
       //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
       inlineBtnsDiv.appendChild(newDiv);
 
@@ -1801,20 +1827,21 @@ async function showMultipleChoicePrayersButton(
 
           if (masterBtnDiv.dataset.displayedOptionalPrayer) {
             //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute, which  we had is stored as data-displayed-Fraction attribued of the masterBtnDiv
-            containerDiv
-              .querySelectorAll(
-                'div[data-root="' +
-                  masterBtnDiv.dataset.displayedOptionalPrayer +
-                  '"]'
-              )
+
+            selectElementsByDataRoot(containerDiv, masterBtnDiv.dataset.displayedOptionalPrayer, {equal:true})
               .forEach((div) => div.remove());
           }
 
           //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
-          let createdElements = showPrayers(inlineBtn, false, false, {
-            el: masterBtnDiv,
-            beforeOrAfter: "afterend",
-          }) as HTMLDivElement[][];
+          let createdElements =
+            showPrayers(
+              {
+                wordTable:inlineBtn.prayersArray[0],
+                languages:inlineBtn.languages,
+                clearContainerDiv: false,
+                clearRightSideBar: false,
+                position: { el: masterBtnDiv, beforeOrAfter: "afterend" }
+              }) as HTMLDivElement[][];
 
           masterBtnDiv.dataset.displayedOptionalPrayer = splitTitle(
             prayerTable[0][0]
@@ -1822,7 +1849,6 @@ async function showMultipleChoicePrayersButton(
 
           createdElements.map((table: HTMLDivElement[]) => {
             if (table.length === 0) return;
-
             table.forEach(
               (htmlRow) =>
                 //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
@@ -1856,7 +1882,8 @@ function findTableInPrayersArray(
   prayersArray: string[][][],
   options:{equal?:boolean, startsWith?:boolean, endsWith?:boolean, includes?:boolean} = {equal:true}
 ): string[][] | void {
-  if(!prayersArray) return console.log(tableTitle);
+  if (!prayersArray) prayersArray = getTablesArrayFromTitlePrefix(tableTitle);
+  if(!prayersArray) return console.log('No prayers Array', tableTitle);
   let table: string[][];
   if (options.equal)
     table =
@@ -1876,7 +1903,7 @@ function findTableInPrayersArray(
     .find((tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].includes(tableTitle));
   
   if (table) return table;
-  else return console.log('no table with the provided title was found : ', tableTitle);
+  else console.log('no table with the provided title was found : ', tableTitle, ' prayersArray =', prayersArray);
 }
 /**
  * Shows the inlineBtnsDiv
@@ -2030,7 +2057,7 @@ function showSettingsPanel() {
           fun: () => changeDate(undefined, false, 1)
         }
       });
-    setBtnsContainerGridColumns(btnsContainer);
+    setGridColumnsNumber(btnsContainer, 3, 2);
     setStyle(btn);
     function setStyle(htmlBtn:HTMLElement){
       htmlBtn.style.backgroundColor = "saddlebrown";    
@@ -2131,7 +2158,7 @@ function showSettingsPanel() {
         );
         if (JSON.parse(localStorage.userLanguages)[args.index] !==lang[0])  newBtn.classList.add("langBtnAdd");  //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
         });
-        setBtnsContainerGridColumns(args.btnsContainer);
+        setGridColumnsNumber(args.btnsContainer, 3, 2);
       }
   })();
   
@@ -2176,7 +2203,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setBtnsContainerGridColumns(btnsContainer);
+    setGridColumnsNumber(btnsContainer, 3,2);
   })();
 
   (async function showDisplayModeBtns() {
@@ -2211,7 +2238,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setBtnsContainerGridColumns(btnsContainer);
+    setGridColumnsNumber(btnsContainer,3,2);
   })();
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
@@ -2267,7 +2294,7 @@ function showSettingsPanel() {
         },
       }}
     );
-    setBtnsContainerGridColumns(btnsContainer);
+    setGridColumnsNumber(btnsContainer,3,2);
   })();
 
   function createBtnsContainer(id: string, labelText:string) {
@@ -2284,12 +2311,7 @@ function showSettingsPanel() {
     btnsContainer.insertAdjacentElement('beforebegin', label)
     return btnsContainer
   };
-  function setBtnsContainerGridColumns(btnsContainer:HTMLElement){
-    let columns:number
-    columns = btnsContainer.children.length;
-    if (columns === 4) columns = 2;
-    btnsContainer.style.gridTemplateColumns = ((100 / columns).toString() + '% ').repeat(columns)
-  };
+
 
   function createSettingBtn(args:
     {tag: string,
@@ -2363,10 +2385,24 @@ function showSettingsPanel() {
         newBtn.appendChild(p);
       }
     });
-    btnsContainer.style.gridTemplateColumns = ((100/btnsContainer.children.length).toString() + '% ').repeat(btnsContainer.children.length);
+    setGridColumnsNumber(btnsContainer);
   })();
   closeSideBar(leftSideBar);
 }
+
+/**
+ * Sets the number of columns of a "display-grid' html element based on the number of its children.
+ * @param {HTMLElement} htmlContainer - the html element for which we want to set the number of columns based on the number of its children
+ * @param {number} max - the maximum number of columns that if exceeded, the number will be automatically reduced to a value = reduce. Its default value is 3.
+ * @param {number} reduce - the number of columns that will be retained if the number of columns resulting from the number of htmlContainer children is greater than "max"
+ */
+function setGridColumnsNumber(htmlContainer:HTMLElement, max?, reduce?){
+  let columns: number;
+  columns = htmlContainer.children.length;
+  if (max && columns > max && reduce) columns = reduce;
+  else if (max && reduce && max === reduce) columns = reduce;
+  htmlContainer.style.gridTemplateColumns = ((100 / columns).toString() + '% ').repeat(columns)
+};
 
 /**
  * Loops the tables (i.e., the string[][]) of a string[][][] and, for each row (string[]) of each table, it inserts a div adjacent to an html child element to containerDiv
@@ -2410,11 +2446,11 @@ async function insertRedirectionButtons(
   let div = document.createElement("div");
   div.id = btnsContainerID;
   div.classList.add("inlineBtns");
-  div.style.gridTemplateColumns = (
-    (100 / btns.length).toString() + "% "
-  ).repeat(btns.length);
-  btns.map((b) => div.appendChild(createBtn(b, div, b.cssClass)));
+  btns
+    .map((btn) =>
+      div.appendChild(createBtn(btn, div, btn.cssClass)));
   position.el.insertAdjacentElement(position.beforeOrAfter, div);
+  setGridColumnsNumber(div);
 }
 
 
@@ -2445,6 +2481,7 @@ function playingWithInstalation() {
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
   PrayersArray.map((table) => {
+    if (!table[0] || !table[0][0]) return;
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
     if (table[0][0].startsWith(Prefix.commonPrayer)) {
       PrayersArrays.CommonPrayersArray.push(table);

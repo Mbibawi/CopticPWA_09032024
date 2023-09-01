@@ -584,7 +584,7 @@ const btnMassStBasil: Button = new Button({
         [...massButtons],
         {
           beforeOrAfter: "beforebegin",
-          el: selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0],
+          el: selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0].previousElementSibling as HTMLElement,
         },
         'RedirectionToAgios'
       );
@@ -672,32 +672,37 @@ const btnMassStBasil: Button = new Button({
       )
     })();
 
-    (function insertIndeedWePrayYou() {
+    (function insertLitaniesIntroductionFromOtherMasses() {
       if (btn !== btnMassStBasil) return; //This button appears only in St Basil Mass
 
-      let litaniesIntro: string[][][] = PrayersArrays.MassStGregoryPrayersArray.filter(tbl => tbl[0][0].startsWith(Prefix.massStGregory + "LitaniesIntroduction"));
+      let litaniesIntro: string[][] = PrayersArrays.MassStGregoryPrayersArray.find(tbl => tbl[0][0].startsWith(Prefix.massStGregory + "LitaniesIntroduction"));
 
-      if (litaniesIntro.length === 0) return console.log('Did not find the Litanies Introduction');
+      if (!litaniesIntro) return console.log('Did not find the Litanies Introduction');
       
       let anchor = selectElementsByDataRoot(btndocFragment, Prefix.massCommon + "LitaniesIntroduction&D=$copticFeasts.AnyDay", { equal: true })[0];
       
       if (!anchor) return console.log('Di not find the Anchor');
 
       let createdElements = addExpandablePrayer(anchor,
-        'btnStGregoryLitanies',
+        'btnStGregoryLitaniesIntro',
         {
-          AR: "...نعم نسألك أيها المسيح إلهنا",
-          FR: 'Oui, nous t\'implorons ô Christ notre Dieu...'
+          AR: "طلبات القداس الغريوري",
+          FR: 'Litanies de St. Gregory'
         },
-        litaniesIntro,
+        [litaniesIntro],
         btn.languages
       );
         //Adding the St Cyril Litanies Introduction to the St. Basil Mass only. St Gregory Mass has its own intro, and we do not of course add it to St Cyrill since it is already included
 
       litaniesIntro =
         PrayersArrays.MassStCyrilPrayersArray
-          .filter(tbl =>
+          .find(tbl =>
             splitTitle(tbl[0][0])[0].startsWith(Prefix.massStCyril + "LitaniesIntroduction"));
+      
+      litaniesIntro = structuredClone(litaniesIntro);
+
+        console.log(litaniesIntro[litaniesIntro.length-1]);
+      litaniesIntro.splice(litaniesIntro.length-1, 1);//We remove the last row in the table of litaniesIntro because it is the "As it were, let it always be.../كما كان هكذا يكون/tel qu'il fût ainsi soit-il..."
       
       if (litaniesIntro.length === 0) console.log('Did not find the St Cyril Litanies Introduction');
 
@@ -705,20 +710,34 @@ const btnMassStBasil: Button = new Button({
       //We will create the expandable div and its button, but will append the button to the div
       let btnsDiv = createdElements[0]
         .parentElement as HTMLDivElement;
-      btnsDiv.style.gridTemplateColumns = ((100/2).toString() + '% ').repeat(2);
       btnsDiv
         .appendChild(
           addExpandablePrayer(
             anchor,
-            'btnStCyrilLitanies',
+            'btnStCyrilLitaniesIntro',
             {
-              AR: 'طلبة القداس الكيرلسي',
+              AR: 'طلبات القداس الكيرلسي',
               FR: 'Litanies de la messe de Saint Cyril'
             },
-            litaniesIntro,
+            [litaniesIntro],
             btnMassStCyril.languages
           )[0] //this is the buton created by addExpandablePrayer
-        );
+      );
+
+      //We add to each button a 'click' event listner that will hide the other litanies
+      Array.from(btnsDiv.children).forEach(child => child.addEventListener('click', () => toggleOtherLitanies(child.id)));
+
+      setGridColumnsNumber(btnsDiv);
+      
+      function toggleOtherLitanies(btnID:string) {
+        let div =
+          Array
+          .from(containerDiv.querySelectorAll('.Expandable'))
+          .find(btn => btn.id.includes('LitaniesIntro') && !btn.id.startsWith(btnID));
+        
+        if (div && !div.classList.contains(hidden)) div.classList.add(hidden);
+      };
+  
     })();
     
   },
@@ -1196,7 +1215,7 @@ const btnMassUnBaptised: Button = new Button({
                 } else if (expandableDiv.id.startsWith(hourBtn.id)) {
                     //this is the container of the prayers related to the button
                     if (!expandableDiv.classList.contains(hidden)) {
-                      makeExpandableButtonContainerFloatOnTop(btnsDiv, '35px'); 
+                      makeExpandableButtonContainerFloatOnTop(btnsDiv, '10px'); 
                       masterBtnDiv.classList.add(hidden);
                       createFakeAnchor(expandableDiv.id);
                     } else {
@@ -1213,9 +1232,7 @@ const btnMassUnBaptised: Button = new Button({
       btndocFragment.prepend(btnsDiv);
       btndocFragment.prepend(masterBtnDiv);
       btnsDiv.style.display = 'grid';
-      let x = hoursBtns.length;
-      if (x > 3) x = 3;//we limit the number of columns to 3
-      if (x > 1) btnsDiv.style.gridTemplateColumns = ((100 / x).toString() + '% ').repeat(x)
+      setGridColumnsNumber(btnsDiv, 3, 3);
       
       function InsertHourFinalPrayers(hourBtn:Button) {
         let Agios: string = Prefix.commonPrayer + 'HolyGodHolyPowerfullPart1&D=$copticFeasts.AnyDay',
@@ -2448,6 +2465,45 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
     onClick: btnOnClick
   });
 
+return createBtnAndExpandableDiv();
+  
+function createBtnAndExpandableDiv():[HTMLElement, HTMLDivElement]{
+  let createdButton:HTMLElement = createBtn(btnExpand, btnDiv, btnExpand.cssClass, true, btnExpand.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+
+  //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
+    let prayersContainerDiv = document.createElement('div');
+    prayersContainerDiv.id = btnExpand.btnID + 'Expandable';
+    prayersContainerDiv.classList.add(hidden);
+    prayersContainerDiv.classList.add('Expandable');
+    prayersContainerDiv.style.display = 'grid'; //This is important, otherwise the divs that will be add will not be aligned with the rest of the divs
+    insertion.insertAdjacentElement('beforebegin', prayersContainerDiv);
+
+  
+    //We will create a div element for each row of each table in btn.prayersArray
+
+  prayers.map(table => {
+    showPrayers(
+      {
+        wordTable: table,
+        languages: btnExpand.languages,
+        position: prayersContainerDiv,
+        container: prayersContainerDiv,
+        clearContainerDiv: false,
+        clearRightSideBar: false
+      });
+  });
+
+
+
+  Array.from(prayersContainerDiv.children)
+  .filter(child =>
+    checkIfTitle(child as HTMLElement))
+  .forEach(child =>{
+    addDataGroupsToContainerChildren(child.classList[child.classList.length - 1], prayersContainerDiv);
+  });
+  return [createdButton, prayersContainerDiv]
+  };
+  
   async function btnOnClick(): Promise<HTMLElement[] | void>{
 
     let prayersContainerDiv = containerDiv.querySelector('#' + btnExpand.btnID + 'Expandable') as HTMLDivElement;
@@ -2462,44 +2518,7 @@ function addExpandablePrayer(insertion: HTMLElement, btnID: string, label: typeB
     else
       hideOrShowAllTitlesInAContainer(prayersContainerDiv, false);
   };
-
-  let createdButton:HTMLElement = createBtn(btnExpand, btnDiv, btnExpand.cssClass, true, btnExpand.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
-
-  //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
-    let prayersContainerDiv = document.createElement('div');
-    prayersContainerDiv.id = btnExpand.btnID + 'Expandable';
-    prayersContainerDiv.classList.add(hidden);
-    prayersContainerDiv.classList.add('Expandable');
-    prayersContainerDiv.style.display = 'grid'; //This is important, otherwise the divs that will be add will not be aligned with the rest of the divs
-    insertion.insertAdjacentElement('beforebegin', prayersContainerDiv);
-
-  
-      //We will create a div element for each row of each table in btn.prayersArray
-  let htmlRow: HTMLDivElement;
-  prayers
-    .forEach(table => {
-      table
-        .forEach(row => {
-          htmlRow = createHtmlElementForPrayer(
-            {
-              tblRow: row,
-              languagesArray: btnExpand.languages,
-              position: prayersContainerDiv,
-              container: prayersContainerDiv,
-            }
-          ) as HTMLDivElement;
-        }
-      )      
-  });
-
-  Array.from(prayersContainerDiv.children)
-  .filter(child =>
-    checkIfTitle(child as HTMLElement))
-  .forEach(child =>{
-    addDataGroupsToContainerChildren(child.classList[child.classList.length - 1], prayersContainerDiv);
-  });
- 
-              return [createdButton, prayersContainerDiv]
+              
 }
 
 

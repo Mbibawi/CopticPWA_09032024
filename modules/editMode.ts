@@ -85,9 +85,9 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
           if (title.startsWith('Prefix.')) title = eval(title);
           filteredArray.push(
             tablesArray
-              .filter(
+              .find(
               tbl => tbl[0][0].includes(title)
-            )[0]
+            )
             );
           
           if (!filteredArray[filteredArray.length - 1]) console.log('the filtering gave an invalid result : ',  filteredArray[filteredArray.length - 1]);
@@ -342,7 +342,7 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
     arrayName: string,
     tablesArray:string[][][];
       
-    let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row")); //we retrieve all the divs with 'Row' class from the DOM
+    let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row, div.PlaceHolder")); //we retrieve all the divs with 'Row' class from the DOM
     
   //Adding the tables' titles as unique values to the titles set
   htmlRows
@@ -384,10 +384,13 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
           .filter((htmlRow: HTMLDivElement) =>
             htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
     
-        if (htmlTable.length === 0) return;
+      if (htmlTable.length === 0) return;
       
+     
       //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
-        let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+      let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+      
+      editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length ===3).forEach(row =>{ row.splice(0, 1); row[0] = Prefix.placeHolder});
     
       let oldTable: string[][] =
         tablesArray
@@ -428,10 +431,13 @@ if (!text) return console.log('We\'ve got a problem when we called processArrayT
  */
 function processArrayTextForJsFile(tablesArray: string[][][], arrayName: string): string {
   let languages = getLanguages(arrayName);
+  console.log('tablesArray.toString() = ', tablesArray.toString());
+  let stringified = replacePrefixes(JSON.stringify(tablesArray));
+  console.log(stringified);
+  return stringified;
   //Open Array of Tables
   let text: string = "[";
   tablesArray.forEach((table: string[][]) => processTable(table));
-
   function processTable(table: string[][]) {
     if (!table || table.length < 1){
       console.log('error with table in processTable() = ', table)
@@ -513,6 +519,7 @@ function replacePrefixes(text: string): string {
     .replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"')
     .replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"')
     .replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"')
+    .replaceAll('"' + Prefix.placeHolder, 'Prefix.placeHolder')
     //Readings
     .replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"')
     .replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"')
@@ -525,10 +532,14 @@ function replacePrefixes(text: string): string {
     .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
     .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
     //Seasonal 
+  return text;
+  text =
+    text
     .replaceAll(giaki.AR, '"+giaki.AR+"')
     .replaceAll(giaki.FR, '"+giaki.FR+"')
-    .replaceAll(giaki.COP, '"+giaki.COP+"')
-    .replaceAll(giaki.CA, '"+giaki.CA+"');
+  return text;
+   // .replaceAll(giaki.COP, '"+giaki.COP+"')
+  //  .replaceAll(giaki.CA, '"+giaki.CA+"');
   return text;
 }
 
@@ -617,16 +628,30 @@ function createHtmlElementForPrayerEditingMode(
     | HTMLElement
     | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv
 ): HTMLDivElement {
-  if (tblRow[0].startsWith(Prefix.placeHolder)) return;
+  let isPlaceHolder: boolean = false;
+  if (tblRow[0].startsWith(Prefix.placeHolder)) isPlaceHolder = true;
   let row: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string;
 
   row = document.createElement("div");
+  let dataRoot: string, actorClass: string;
+  if(!isPlaceHolder){
   row.classList.add("Row"); //we add 'Row' class to this div
   row.title = tblRow[0];
-  let dataRoot: string = splitTitle(tblRow[0])[0];
+  dataRoot= splitTitle(tblRow[0])[0];
   row.dataset.root = splitTitle(dataRoot)[0];
-  let actorClass = splitTitle(row.title)[1];
+   actorClass = splitTitle(row.title)[1];
   if (actorClass) row.classList.add(actorClass);
+  } else if (isPlaceHolder) {
+    tblRow = [...tblRow];
+    tblRow.unshift(tblRow[0]);
+    let children = Array.from(containerDiv.children) as HTMLDivElement[];
+    row.classList.add('PlaceHolder');
+    row.dataset.isPlaceHolder = Prefix.placeHolder;
+    row.dataset.root = children[children.length - 1].dataset.root;
+    row.title = children[children.length - 1].title;
+    row.style.backgroundColor = 'grey';
+    languagesArray = ['FR', 'FR', 'FR'];
+  };
 
   if (actorClass && actorClass.includes("Title")) {
     row.addEventListener("dblClick", (e) => {
