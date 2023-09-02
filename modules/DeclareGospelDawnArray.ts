@@ -407,7 +407,7 @@ ReadingsArrays.GospelDawnArray= [[
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=1701", 
-  "اقول.ايها الآب نجني من هذه الساعة.ولكن لاجل هذا "+giaki.AR+" الى هذه الساعة. ايها الآب مجد اسمك.فجاء صوت من السماء مجدت وامجد ايضا.", 
+  "اقول.ايها الآب نجني من هذه الساعة.ولكن لاجل هذا أتيت إلى هذه الساعة. ايها الآب مجد اسمك.فجاء صوت من السماء مجدت وامجد ايضا.", 
   "Et que dirai–je ? Père, sauve–moi de cette heure ? Mais c’est pour cela que je suis venu jusqu’à cette heure. 28 Père, glorifie ton nom ! Une voix vint alors du ciel : Je l’ai glorifié et je le glorifierai de nouveau.", 
   "and what shall I say? `Father, save Me from this hour'? But for this purpose I came to this hour. 28 Father, glorify Your name. Then a voice came from heaven, saying, I have both glorified it and will glorify it again.", 
   ], 
@@ -1367,7 +1367,7 @@ ReadingsArrays.GospelDawnArray= [[
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=0803", 
-  "ولكن لاجل هذا "+giaki.AR+" الى هذه الساعة.ايها الآب مجد اسمك.فجاء صوت من السماء مجدت وامجد ايضا. فالجمع الذي كان واقفا وسمع قال قد حدث رعد.وآخرون قالوا قد كلمه ملاك.", 
+  "ولكن لاجل هذا أتيت إلى هذه الساعة.ايها الآب مجد اسمك.فجاء صوت من السماء مجدت وامجد ايضا. فالجمع الذي كان واقفا وسمع قال قد حدث رعد.وآخرون قالوا قد كلمه ملاك.", 
   "Mais c'est précisément pour cette heure que je suis venu. 28 Père, glorifie ton nom. Alors, une voix vint du ciel: 'Je l'ai glorifié et je le glorifierai encore. 29 La foule qui se trouvait là et qui avait entendu disait que c'était le tonnerre; d'autres disaient qu'un ange lui avait parlé.", 
   "But for this purpose I came to this hour. 28 Father, glorify Your name.'' Then a voice came from heaven, saying, I have both glorified it and will glorify it again.'' 29 Therefore the people who stood by and heard it said that it had thundered. Others said, An angel has spoken to Him.''", 
   ], 
@@ -2503,7 +2503,7 @@ ReadingsArrays.GospelDawnArray= [[
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=051stSunday", 
-  "وكان يوجد في المجمع رجُلٌ بهِ روحُ شيطانٍ نجسٍ، فصاحَ بصوتٍ عظيم قائلاً: ' ما لنا ولكَ يا يسوعُ النَّاصريُّ! "+giaki.AR+" لتُهلِكنا!", 
+  "وكان يوجد في المجمع رجُلٌ بهِ روحُ شيطانٍ نجسٍ، فصاحَ بصوتٍ عظيم قائلاً: ' ما لنا ولكَ يا يسوعُ النَّاصريُّ! أتيت لتُهلِكنا!", 
   "33 Now in the synagogue there was a man who had a spirit of an unclean demon. And he cried out with a loud voice, 34 saying, Let us alone! What have we to do with You, Jesus of Nazareth? Did You come to destroy us?", 
   "33 Il se trouva dans la synagogue un homme qui avait un esprit de démon impur, et qui s’écria d’une voix forte : 34 Hé ! que nous veux tu, Jésus de Nazareth ? Tu es venu nous perdre.", 
   ], 
@@ -2589,7 +2589,7 @@ ReadingsArrays.GospelDawnArray= [[
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=053rdSunday", 
-  "وكانَ إنسانٌ من الفرِّيسيِّينَ اسمهُ نيقوديموس، رئيسٌ لليهود. هذا أتى إلى يسوعَ ليلاً و قالَ لهُ: ' يا معلِّمُ، نعلمُ أنَّكَ قد "+giaki.AR+"َ من اللـه مُعلِّماً،", 
+  "وكانَ إنسانٌ من الفرِّيسيِّينَ اسمهُ نيقوديموس، رئيسٌ لليهود. هذا أتى إلى يسوعَ ليلاً و قالَ لهُ: ' يا معلِّمُ، نعلمُ أنَّكَ قد أتيت من اللـه مُعلِّماً،", 
   "1 There was a man of the Pharisees named Nicodemus, a ruler of the Jews. 2 This man came to Jesus by night and said to Him, Rabbi, we know that You are a teacher come from God;", 
   "1 Mais il y avait parmi les Pharisiens un chef des Juifs, nommé Nicodème ; 2 il vint de nuit auprès de Jésus et lui dit : Rabbi, nous savons que tu es un docteur venu de la part de Dieu ;", 
   ], 
@@ -7274,7 +7274,7 @@ ReadingsArrays.GospelDawnArray= [[
   [
   Prefix.gospelDawn+"Gospel&D=GL40", 
   "واجتمعَ إليهِ الفرِّيسيُّونَ وقومٌ مِن الكتبةِ الذين جاءوا مِن أُورُشليم. فرأوا بعض تلاميذه يأكُلُون الخُبز بأيدٍ دنسةٍ، أي غَير مغسُولةٍ،", 
-  "1 Les Pharisiens et quelques scrib"+giaki.FR+" de Jérusalem s’assemblèrent autour de Jésus. 2 Ils virent quelques–uns de ses disciples prendre leur pain avec des mains impures, c’est–à–dire non lavées.", 
+  "1 Les Pharisiens et quelques scrib venus de Jérusalem s’assemblèrent autour de Jésus. 2 Ils virent quelques–uns de ses disciples prendre leur pain avec des mains impures, c’est–à–dire non lavées.", 
   "7:1 Then the Pharisees and some of the scribes came together to Him, having come from Jerusalem. 2 Now when they saw some of His disciples eat bread with defiled, that is, with unwashed hands, they found fault.", 
   ], 
   [
@@ -8547,7 +8547,7 @@ ReadingsArrays.GospelDawnArray= [[
   ], 
   [
   Prefix.gospelDawn+"Gospel&D=Pntl13", 
-  "انا قد "+giaki.AR+" باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه. كيف تقدرون ان تؤمنوا وانتم تقبلون مجدا بعضكم من بعض.والمجد الذي من الاله الواحد لستم تطلبونه", 
+  "انا قد أتيت باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه. كيف تقدرون ان تؤمنوا وانتم تقبلون مجدا بعضكم من بعض.والمجد الذي من الاله الواحد لستم تطلبونه", 
   "43 Je suis venu au nom de mon Père, et vous refusez de me recevoir. Qu'un autre vienne en son propre nom, celui-là vous le recevrez. Comment pourriez-vous croire, vous qui tenez votre gloire les uns des autres et qui ne cherchez pas la gloire qui vient de Dieu seul?", 
   "43 I have come in My Father's name, and you do not receive Me; if another comes in his own name, him you will receive. 44 How can you believe, who receive honor from one another, and do not seek the honor that comes from the only God?", 
   ], 

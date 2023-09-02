@@ -1,3 +1,4 @@
+
 /**
  * a function that runs at the beginning and sets some global dates like the coptic date (as a string), today's Gregorian date (as a Date), the day of the week (as a number), the Season (a string), etc.
  * @param {Date} today  - a Gregorian date provided by the user or set automatically to the date of today if missing
@@ -15,6 +16,10 @@ async function setCopticDates(today?: Date) {
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
 	//copticMonth = copticDate.slice(2, 4);
 	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
+	setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
+	//Showing the dates and the version
+	showDates();
+	createFakeAnchor('homeImg');
 	if (!copticReadingsDate) return console.log('copticReadingsDate was not property set = ', copticReadingsDate);
 	//copticDay = copticDate.slice(0, 2);
 	isFast = (() => {
@@ -23,10 +28,7 @@ async function setCopticDates(today?: Date) {
 		else if (weekDay === (3 || 5)) return true;
 		else return false;
 	})();
-	//Showing the dates and the version
-	showDates();
-	createFakeAnchor('homeImg');
-};
+}
 /**
  * Converts the provided Gregorian date into Coptic Date
  * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
@@ -448,7 +450,6 @@ function changeDate(
 	  }
 	}
 	setCopticDates(todayDate);
-	setSeasonalTextForAll();
 	reloadScriptToBody(['PrayersArray']);
 	Object.entries(PrayersArrays)
 		.forEach((array) => PrayersArrays[array[0]] = []);

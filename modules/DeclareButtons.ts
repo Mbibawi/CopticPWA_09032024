@@ -588,6 +588,7 @@ const btnMassStBasil: Button = new Button({
         },
         'RedirectionToAgios'
       );
+
       //Adding 2 buttons to redirect to the other masses before the Call upon the Holy Spirit
       redirectToAnotherMass(
         [...massButtons],
@@ -597,7 +598,22 @@ const btnMassStBasil: Button = new Button({
         },
         'RedirectionToLitanies'
       );
+
+      //Adding 2 buttons to redirect to the other masses before the Fraction Introduction
+      redirectToAnotherMass(
+        [...massButtons],
+        {
+          beforeOrAfter: "beforebegin",
+          el: selectElementsByDataRoot(btndocFragment, 'FractionIntroduction&D=$copticFeasts.AnyDay', { includes: true })[0],
+        },
+        'RedirectionToFractionIntroduction'
+      );
     })();
+
+
+
+
+
 
     (function insertAdamAndWatesSpasmos() {
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
@@ -814,11 +830,12 @@ const btnMassUnBaptised: Button = new Button({
   },
   docFragment: new DocumentFragment(),
   showPrayers: true,
-  prayersArray: [...PrayersArray],
   languages: [...prayersLanguages],
   onClick: () => {
-    //The prayers sequence must be set when the button is clicked
-    btnMassUnBaptised.prayersSequence = [...MassPrayersSequences.MassUnbaptized],
+    //The prayersArray andprayersSequence must be set when the button is clicked
+    
+    btnMassUnBaptised.prayersArray = [...PrayersArray];
+    btnMassUnBaptised.prayersSequence = [...MassPrayersSequences.MassUnbaptized];
       //Adding children buttons to btnMassUnBaptised
     btnMassUnBaptised.children = [...btnDayReadings.children];
     btnMassUnBaptised.children.splice(0, 1);

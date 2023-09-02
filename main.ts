@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", startApp);
 /**
  * This function starts the App by setting a number of global variables like the dates, displaying the home page/main menu buttons, etc.
  */
-function startApp() {
+async function startApp() {
   showChildButtonsOrPrayers(btnMain);
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
@@ -87,8 +87,35 @@ function startApp() {
     }
   } else {
     setCopticDates();
-  }
-  populatePrayersArrays();
+  };
+  await loadTextScripts();
+  async function loadTextScripts() {
+    //! We must load the text scripts after the dates were set and the giaki variable was defined
+    let textFiles: string[] = [
+      "./Build/modules/DeclarePrayersArray.js",
+      "./Build/modules/DeclarePrayersSequences.js",
+      "./Build/modules/DeclareGospelVespersArray.js",
+      "./Build/modules/DeclareGospelDawnArray.js",
+      "./Build/modules/DeclareStPaulArray.js",
+      "./Build/modules/DeclareKatholikonArray.js",
+      "./Build/modules/DeclarePraxisArray.js",
+      "./Build/modules/DeclareSynaxariumArray.js",
+      "./Build/modules/DeclareGospelMassArray.js",
+      "./Build/modules/DeclareGospelNightArray.js",
+      "./Build/modules/DeclarePropheciesDawnArray.js",
+    ];
+    let script: HTMLScriptElement;
+    textFiles
+      .forEach(async (link) => {
+      script = document.createElement("script");
+      script.src = link;
+      script.id = link.split('/Declare')[1].split('.js')[0];
+      script.type = "text/javascript";
+      return await document.getElementsByTagName("body")[0].appendChild(script);
+      });
+  };
+
+  document.getElementById('PrayersArray').onload = ()=>populatePrayersArrays(); //! We must wait that the PrayersArray script is loaded before calling populatePrayersArrays  
   addKeyDownListnerToElement(document);
 }
 
@@ -2480,6 +2507,8 @@ function playingWithInstalation() {
 
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
+  if (PrayersArray.length === 0) return console.log('PrayersArray is empty = ', PrayersArray);
+  else console.log('PrayersArray length = ', PrayersArray.length)
   PrayersArray.map((table) => {
     if (!table[0] || !table[0][0]) return;
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved

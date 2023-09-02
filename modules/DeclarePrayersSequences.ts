@@ -145,7 +145,8 @@ const MassPrayersSequences = {
         Prefix.massStGregory+"AsWeCommemorateYourHolyPassionPart1&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory + "LitaniesIntroduction&D=$copticFeasts.AnyDay",
-        Prefix.massStGregory + "FractionIntroduction&D=$copticFeasts.AnyDay&C=Title"
+        Prefix.massStGregory + "Litanies&D=$copticFeasts.AnyDay",
+        Prefix.massStGregory + "FractionIntroduction&D=$copticFeasts.AnyDay"
         ], //The sequence of prayers of St Gregory Mass (starting from reconciliation)
         MassStCyril:[
         Prefix.massStCyril+"ReconciliationPart1&D=$copticFeasts.AnyDay", 

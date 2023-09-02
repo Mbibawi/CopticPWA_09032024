@@ -424,20 +424,17 @@ if (!text) return console.log('We\'ve got a problem when we called processArrayT
   if(exportToFile) exportToJSFile(text, arrayName);
 };
 
+
 /**
  * Takes a table array, and process the strings in the array, in order to restore the prefixes and insert escape characters before the new lines, etc. in a format that suits a js file
  * @param {string[][][]} tablesArray - the string[][][] that will be processed and returned as a text the js file
  * @return {string} the text representing the array in a js file
  */
-function processArrayTextForJsFile(tablesArray: string[][][], arrayName: string): string {
-  let languages = getLanguages(arrayName);
-  console.log('tablesArray.toString() = ', tablesArray.toString());
-  let stringified = replacePrefixes(JSON.stringify(tablesArray));
-  console.log(stringified);
-  return stringified;
+function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string): string {
   //Open Array of Tables
   let text: string = "[";
   tablesArray.forEach((table: string[][]) => processTable(table));
+
   function processTable(table: string[][]) {
     if (!table || table.length < 1){
       console.log('error with table in processTable() = ', table)
@@ -459,30 +456,65 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName: string)
     
     //open row array
     text += "[\n";
-    row
-      .forEach((stringElement: string) => processStringElement(stringElement, row))
+    row.forEach((element:string)=>processStringElement(element, row))
     //close row
     text += "], \n";
   };
 
-  function processStringElement(stringElement: string, row: string[]) {
+  function processStringElement(element: string, row: string[]) {
     //for each string element in row[]
-    stringElement = stringElement.replaceAll('"', '\\"'); //replacing '"" by '\"'
-    stringElement = stringElement.replaceAll('\n', '\\n');
+    element = element.replaceAll('"', '\\"'); //replacing '"" by '\"'
+    element = element.replaceAll('\n', '\\n');
 
-    if (splitTitle(row[0])[1].includes('Title'))
-      stringElement =
-        stringElement
-          .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
-          .replaceAll(String.fromCharCode(plusCharCode + 1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
+    if (splitTitle(row[0])[1] === 'Title')
+      element = element
+        .replaceAll(String.fromCharCode(plusCharCode) + ' ', '')
+        .replaceAll(String.fromCharCode(plusCharCode +1) + ' ', ''); //removing the plus(+) and minus(-à characters from the titles
 
-    text += '"'+stringElement+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
+    text += '"'+element+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
   };
-
-
   text = replacePrefixes(text);
   text = arrayName + "= " + text + "];";
   return  text
+}
+
+function replacePrefixes(text: string): string {
+  text = text
+    .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
+    .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
+    .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
+    .replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"')
+    .replaceAll('"' + Prefix.communion, 'Prefix.communion+"')
+    .replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"')
+    .replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"')
+    .replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"')
+    .replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"')
+    .replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"')
+    .replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"')
+    .replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil+"')
+    .replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril+"')
+    .replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory+"')
+    .replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"')
+    .replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"')
+    .replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"')
+    .replaceAll('"' + Prefix.placeHolder + '"', 'Prefix.placeHolder')
+    //Readings
+    .replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"')
+    .replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"')
+    .replaceAll('"' + Prefix.katholikon, 'Prefix.katholikon+"')
+    .replaceAll('"' + Prefix.praxis, 'Prefix.praxis+"')
+    .replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn+"')
+    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+    .replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn+"')
+    .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
+    .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
+    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+    //Seasonal 
+    .replaceAll(giaki.AR, '"+giaki.AR+"')
+    .replaceAll(giaki.FR, '"+giaki.FR+"')
+    .replaceAll(giaki.COP, '"+giaki.COP+"')
+    .replaceAll(giaki.CA, '"+giaki.CA+"');
+  return text;
 }
 
 function replaceHtmlQuotes(innerHtml: string, lang:string): string{
@@ -498,50 +530,6 @@ function replaceHtmlQuotes(innerHtml: string, lang:string): string{
       .replaceAll('</q>', "\"");
   return innerHtml;
 };
-
-function replacePrefixes(text: string): string {
-  text = text
-    .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
-    .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
-    .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
-    .replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"')
-    .replaceAll('"' + Prefix.communion, 'Prefix.communion+"')
-    .replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"')
-    .replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"')
-    .replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"')
-    .replaceAll('"' + Prefix.HolyWeek, 'Prefix.HolyWeek+"')
-    .replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"')
-    .replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"')
-    .replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"')
-    .replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil+"')
-    .replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril+"')
-    .replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory+"')
-    .replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"')
-    .replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"')
-    .replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"')
-    .replaceAll('"' + Prefix.placeHolder, 'Prefix.placeHolder')
-    //Readings
-    .replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"')
-    .replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"')
-    .replaceAll('"' + Prefix.katholikon, 'Prefix.katholikon+"')
-    .replaceAll('"' + Prefix.praxis, 'Prefix.praxis+"')
-    .replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn+"')
-    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
-    .replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn+"')
-    .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
-    .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
-    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
-    //Seasonal 
-  return text;
-  text =
-    text
-    .replaceAll(giaki.AR, '"+giaki.AR+"')
-    .replaceAll(giaki.FR, '"+giaki.FR+"')
-  return text;
-   // .replaceAll(giaki.COP, '"+giaki.COP+"')
-  //  .replaceAll(giaki.CA, '"+giaki.CA+"');
-  return text;
-}
 
 /**
  * Adds a new div (row) below the div (row) passed to it as argument. 

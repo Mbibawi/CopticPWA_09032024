@@ -1179,7 +1179,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=1402", 
-  "كان انسان من الفريسيين اسمه نيقوديموس رئيس لليهود.هذا جاء الى يسوع ليلا وقال له يا معلّم نعلم انك قد "+giaki.AR+" من الله معلّما لان ليس احد يقدر ان يعمل هذه الآيات التي انت تعمل ان لم يكن الله معه.", 
+  "كان انسان من الفريسيين اسمه نيقوديموس رئيس لليهود.هذا جاء الى يسوع ليلا وقال له يا معلّم نعلم انك قد أتيت من الله معلّما لان ليس احد يقدر ان يعمل هذه الآيات التي انت تعمل ان لم يكن الله معه.", 
   "1 Mais il y avait parmi les Pharisiens un chef des Juifs, nommé Nicodème ;", 
   "1 There was a man of the Pharisees named Nicodemus, a ruler of the Jews. 2 This man came to Jesus by night and said to Him, Rabbi, we know that You are a teacher come from God; for no one can do these signs that You do unless God is with him.", 
   ], 
@@ -1941,7 +1941,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=1703", 
-  "السارق لا يأتي الا ليسرق ويذبح ويهلك.واما انا فقد "+giaki.AR+" لتكون لهم حياة وليكون لهم افضل. انا هو الراعي الصالح.والراعي الصالح يبذل نفسه عن الخراف.", 
+  "السارق لا يأتي الا ليسرق ويذبح ويهلك.واما انا فقد أتيت  لتكون لهم حياة وليكون لهم افضل. انا هو الراعي الصالح.والراعي الصالح يبذل نفسه عن الخراف.", 
   "10 Le voleur ne se présente que pour voler, pour tuer et pour perdre; moi, je suis venu pour que les hommes aient la vie et qu'ils l'aient en abondance.11 Je suis le bon berger: le bon berger se dessaisit de sa vie pour ses brebis.", 
   "10 The thief does not come except to steal, and to kill, and to destroy. I have come that they may have life, and that they may have it more abundantly. 11 I am the good shepherd. The good shepherd gives His life for the sheep.", 
   ], 
@@ -2225,7 +2225,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=2803", 
-  "خرجت من عند الآب وقد "+giaki.AR+" الى العالم وايضا اترك العالم واذهب الى الآب. قال له تلاميذه هوذا الآن تتكلم علانية ولست تقول مثلا واحدا.", 
+  "خرجت من عند الآب وقد أتيت الى العالم وايضا اترك العالم واذهب الى الآب. قال له تلاميذه هوذا الآن تتكلم علانية ولست تقول مثلا واحدا.", 
   "28 Je suis sorti du Père et je suis venu dans le monde; tandis qu'à présent je quitte le monde et je vais au Père. 29 Ses disciples lui dirent: \"Voici que maintenant tu parles ouvertement et que tu abandonnes tout langage énigmatique;", 
   "28 I came forth from the Father and have come into the world. Again, I leave the world and go to the Father.'' 29 His disciples said to Him, See, now You are speaking plainly, and using no figure of speech!", 
   ], 
@@ -2860,13 +2860,13 @@ ReadingsArrays.GospelMassArray = [[
   [
   Prefix.gospelMass+"Gospel&D=2904", 
   "ولما ولد يسوع في بيت لحم اليهودية في ايام هيرودس الملك اذا مجوس من المشرق قد جاءوا الى اورشليم.", 
-  "1 Jésus étant né à Bethléem de Judée, au temps du roi Hérode, voici que des mag"+giaki.FR+" d'Orient arrivèrent à Jérusalem et", 
+  "1 Jésus étant né à Bethléem de Judée, au temps du roi Hérode, voici que des mages venus d'Orient arrivèrent à Jérusalem et", 
   "1Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the East came to Jerusalem,", 
   ], 
   [
   Prefix.gospelMass+"Gospel&D=2904", 
   "قائلين اين هو المولود ملك اليهود.فاننا رأينا نجمه في المشرق واتينا لنسجد له.", 
-  "2 demandèrent: \"Où est le roi des Juifs qui vient de naître? Nous avons vu son astre à l'Orient et nous somm"+giaki.FR+" lui rendre hommage.\"", 
+  "2 demandèrent: \"Où est le roi des Juifs qui vient de naître? Nous avons vu son astre à l'Orient et nous sommes venus lui rendre hommage.\"", 
   "2 saying, Where is He who has been born King of the Jews? For we have seen His star in the East and have come to worship Him.''", 
   ], 
   [
@@ -4213,7 +4213,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=061stSunday", 
-  "ولمَّا وجَدوهُ في عَبرِ البَحرِ قالوا لهُ: ' يا مُعَلِّمُ، متى "+giaki.AR+"َ إلى هُنا؟ ' أجابَهُم يَسوعُ وقال لهُمْ: ' الحَقَّ الحَقَّ أقولُ لكُمْ: تَطلُبونَنِي ليسَ لأنَّكُمْ", 
+  "ولمَّا وجَدوهُ في عَبرِ البَحرِ قالوا لهُ: ' يا مُعَلِّمُ، متى أتيت إلى هُنا؟ ' أجابَهُم يَسوعُ وقال لهُمْ: ' الحَقَّ الحَقَّ أقولُ لكُمْ: تَطلُبونَنِي ليسَ لأنَّكُمْ", 
   "25 Et quand ils l'eurent trouvé de l'autre côté de la mer, ils lui dirent: \"Rabbi, quand es-tu arrivé ici? 26 Jésus leur répondit: En vérité, en vérité, je vous le dis, ce n'est pas parce que vous avez vu des signes que vous me cherchez, mais parce que vous avez mangé des pains à satiété.", 
   "25 And when they found Him on the other side of the sea, they said to Him, Rabbi, when did You come here? 26 Jesus answered them and said, Most assuredly, I say to you, you seek Me, not because you saw the signs, but because you ate of the loaves and were filled.", 
   ], 
@@ -5561,7 +5561,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=0311", 
-  "السارق لا يأتي الا ليسرق ويذبح ويهلك.واما انا فقد "+giaki.AR+" لتكون لهم حياة وليكون لهم افضل.", 
+  "السارق لا يأتي الا ليسرق ويذبح ويهلك.واما انا فقد أتيت لتكون لهم حياة وليكون لهم افضل.", 
   "10 Le voleur ne se présente que pour voler, pour tuer et pour perdre; moi, je suis venu pour que les hommes aient la vie et qu'ils l'aient en abondance.", 
   "10 The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.", 
   ], 
@@ -6985,8 +6985,8 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=0313", 
-  "لاني جعت فاطعمتموني.عطشت فسقيتموني.كنت غريبا فآويتموني. عريانا فكسيتموني.مريضا فزرتموني.محبوسا ف"+giaki.AR+"م اليّ.", 
-  "35 Car j'ai eu faim et vous m'avez donné à manger; j'ai eu soif et vous m'avez donné à boire; j'étais un étranger et vous m'avez recueilli; 36 nu, et vous m'avez vêtu; malade, et vous m'avez visité; en prison, et vous êt"+giaki.FR+" à moi.\"", 
+  "لاني جعت فاطعمتموني.عطشت فسقيتموني.كنت غريبا فآويتموني. عريانا فكسيتموني.مريضا فزرتموني.محبوسا فأتيتم اليّ.", 
+  "35 Car j'ai eu faim et vous m'avez donné à manger; j'ai eu soif et vous m'avez donné à boire; j'étais un étranger et vous m'avez recueilli; 36 nu, et vous m'avez vêtu; malade, et vous m'avez visité; en prison, et vous êtes venus à moi.\"", 
   "35 for I was hungry and you gave Me food; I was thirsty and you gave Me drink; I was a stranger and you took Me in; 36 I was naked and you clothed Me; I was sick and you visited Me; I was in prison and you came to Me.'", 
   ], 
   [
@@ -8537,7 +8537,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=GL32", 
-  "أجاب يسوعُ وقال لهُم: ' إني وإن كُنتُ قد شهدت لنفسي فشهادتي حقٌّ، لأنِّي أعلمُ مِن أين "+giaki.AR+"ُ وإلى أين أذهبُ. وأمَّا أنتُم فلستُم تعلمُون مِن أين "+giaki.AR+"ُ ولا إلى أين أمضي. أنتُم إنما تدينُون بحسب الجسد، وأمَّا أنا فلستُ أدينُ أحداً.", 
+  "أجاب يسوعُ وقال لهُم: ' إني وإن كُنتُ قد شهدت لنفسي فشهادتي حقٌّ، لأنِّي أعلمُ مِن أين أتيت وإلى أين أذهبُ. وأمَّا أنتُم فلستُم تعلمُون مِن أين أتيت ولا إلى أين أمضي. أنتُم إنما تدينُون بحسب الجسد، وأمَّا أنا فلستُ أدينُ أحداً.", 
   "14 Jésus leur répondit : Quoique je rende témoignage de moi–même, mon témoignage est vrai, car je sais d’où je suis venu et où je vais ; mais vous, vous ne savez pas d’où je viens, ni où je vais.15 Vous, vous jugez selon la chair ; moi, je ne juge personne.", 
   "14 Jesus answered and said to them, Even if I bear witness of Myself, My witness is true, for I know where I came from and where I am going; but you do not know where I come from and where I am going. 15 You judge according to the flesh; I judge no one.", 
   ], 
@@ -8920,7 +8920,7 @@ ReadingsArrays.GospelMassArray = [[
   [
   Prefix.gospelMass+"Gospel&D=GL39", 
   "فأجابُوا وقالوا: ' يقُولُون يُوحنَّا المعمدانُ. وآخرُون يقُولُون: إيليَّا. وآخرُون يقُولُون: نبيًّ مِن الأولين قام '. فقال لهُم: ' أنتُم مَن تقُولُون أنِّي أنا؟ ' فأجاب بطرسُ وقال: ' أنت المسيح اللَّـه! '.", 
-  "19 Ils répondirent : Jean–Baptiste ; d’autres, Élie ; d’autres un des anciens prophèt"+giaki.FR+". 20 Mais vous, leur dit–il, qui dites–vous que je suis ? Pierre répondit : Le Christ de Dieu.", 
+  "19 Ils répondirent : Jean–Baptiste ; d’autres, Élie ; d’autres un des anciens prophètes resuscité. 20 Mais vous, leur dit–il, qui dites–vous que je suis ? Pierre répondit : Le Christ de Dieu.", 
   "19 So they answered and said, John the Baptist, but some say Elijah; and others say that one of the old prophets has risen again. 20 He said to them, But who do you say that I am? Peter answered and said, The Christ of God.", 
   ], 
   [
@@ -9247,7 +9247,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=GL42", 
-  "وكان رجلٌ مِن الفرِّيسيِّين اسمُهُ نيقُوديمُوسُ، رئيسٌ لليهُود. هذا جاء إلى يسُوع ليلاً وقالَ لهُ: ' يا مُعَلِّمُ، نعلمُ أنَّكَ "+giaki.AR+" مِن اللَّـهِ مُعلِّماً، لأنه ليس أحدٌ يقدرُ أن يعملَ هذه الآيات التي تعملها ما لم يكُن اللَّـهُ معهُ '.", 
+  "وكان رجلٌ مِن الفرِّيسيِّين اسمُهُ نيقُوديمُوسُ، رئيسٌ لليهُود. هذا جاء إلى يسُوع ليلاً وقالَ لهُ: ' يا مُعَلِّمُ، نعلمُ أنَّكَ  أتيت مِن اللَّـهِ مُعلِّماً، لأنه ليس أحدٌ يقدرُ أن يعملَ هذه الآيات التي تعملها ما لم يكُن اللَّـهُ معهُ '.", 
   "1 Mais il y avait parmi les Pharisiens un chef des Juifs, nommé Nicodème ;2 il vint de nuit auprès de Jésus et lui dit : Rabbi, nous savons que tu es un docteur venu de la part de Dieu ; car personne ne peut faire ces miracles que tu fais, si Dieu n’est avec lui.", 
   "3:1 There was a man of the Pharisees named Nicodemus, a ruler of the Jews. 2 This man came to Jesus by night and said to Him, Rabbi, we know that You are a teacher come from God; for no one can do these signs that You do unless God is with him.", 
   ], 
@@ -9381,7 +9381,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=GL45", 
-  "أنا "+giaki.AR+"ُ بِاسم أبي ولَستُمْ تَقبلُوني. وإن أتى آخرُ بِاسم نفسِهِ تقبلُونَهُ. كيفَ يُمكنكُم أن تُؤمُنوا وأنتُم تَقبَـلُونَ مجداً بعضُكُم مِن بعضٍ؟ ومجدُ الإلهِ الواحدِ لستُم تَطلُبونَهُ؟.", 
+  "أنا أتيت بِاسم أبي ولَستُمْ تَقبلُوني. وإن أتى آخرُ بِاسم نفسِهِ تقبلُونَهُ. كيفَ يُمكنكُم أن تُؤمُنوا وأنتُم تَقبَـلُونَ مجداً بعضُكُم مِن بعضٍ؟ ومجدُ الإلهِ الواحدِ لستُم تَطلُبونَهُ؟.", 
   "43 Je suis venu au nom de mon Père, et vous refusez de me recevoir. Qu'un autre vienne en son propre nom, celui-là vous le recevrez! Comment pourriez-vous croire, vous qui tenez votre gloire les uns des autres et qui ne cherchez pas la gloire qui vient de Dieu seul?", 
   "43 I have come in My Father's name, and you do not receive Me; if another comes in his own name, him you will receive. 44 How can you believe, who receive honor from one another, and do not seek the honor that comes from the only God?", 
   ], 
@@ -10371,7 +10371,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=GL7thSunday", 
-  "فقالَ يسوعُ: ' "+giaki.AR+" أنا دينونة للعالم، حتَّى يُبصِرَ العُميان ويَعمي المُبصِرُون '. فسمِعَ قُوم مِن الفرِّيسيِّين الذين كانُوا معهُ، وقالُوا لهُ: ' ألعلَّنا نحنُ أيضاً عُميانٌ؟ '", 
+  "فقالَ يسوعُ: ' أتيت أنا دينونة للعالم، حتَّى يُبصِرَ العُميان ويَعمي المُبصِرُون '. فسمِعَ قُوم مِن الفرِّيسيِّين الذين كانُوا معهُ، وقالُوا لهُ: ' ألعلَّنا نحنُ أيضاً عُميانٌ؟ '", 
   "39 Et Jésus dit alors: \"C'est pour un jugement que je suis venu dans le monde, pour que ceux qui ne voyaient pas voient, et que ceux qui voyaient deviennent aveugles. 40 Les Pharisiens qui étaient avec lui entendirent ces paroles et lui dirent: \"Est-ce que, par hasard, nous serions des aveugles, nous aussi?", 
   "39 And Jesus said, For judgment I have come into this world, that those who do not see may see, and that those who see may be made blind. 40 Then some of the Pharisees who were with Him heard these words, and said to Him, Are we blind also?", 
   ], 
@@ -10733,7 +10733,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=Pntl11", 
-  "ولكني قد عرفتكم ان ليست لكم محبة الله في انفسكم. انا قد "+giaki.AR+" باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه. كيف تقدرون ان تؤمنوا وانتم تقبلون مجدا بعضكم من بعض.", 
+  "ولكني قد عرفتكم ان ليست لكم محبة الله في انفسكم. انا قد أتيت باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه. كيف تقدرون ان تؤمنوا وانتم تقبلون مجدا بعضكم من بعض.", 
   "42 Mais je vous connais, vous n'avez pas en vous l'amour de Dieu. 43 Je suis venu au nom de mon Père, et vous refusez de me recevoir. Qu'un autre vienne en son propre nom, celui-là vous le recevrez. Comment pourriez-vous croire, vous qui tenez votre gloire les uns des autres", 
   "42 But I know you, that you do not have the love of God in you. 43 I have come in My Father's name, and you do not receive Me; if another comes in his own name, him you will receive. 44 How can you believe, who receive honor from one another,", 
   ], 
@@ -10915,7 +10915,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=Pntl16", 
-  "اجاب يسوع وقال لهم وان كنت اشهد لنفسي فشهادتي حق لاني اعلم من اين "+giaki.AR+" والى اين اذهب.واما انتم فلا تعلمون من اين آتي ولا الى اين اذهب.", 
+  "اجاب يسوع وقال لهم وان كنت اشهد لنفسي فشهادتي حق لاني اعلم من اين أتيت والى اين اذهب.واما انتم فلا تعلمون من اين آتي ولا الى اين اذهب.", 
   "14 Jésus leur répondit: \"Il est vrai que je me rends témoignage à moi-même, et pourtant mon témoignage est recevable, parce que je sais d'où je viens et où je vais; tandis que vous, vous ne savez d'où je viens ni où je vais.", 
   "14 Jesus answered and said to them, Even if I bear witness of Myself, My witness is true, for I know where I came from and where I am going; but you do not know where I come from and where I am going.", 
   ], 
@@ -11313,7 +11313,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=Pntl22", 
-  "فقال لهم يسوع لو كان الله اباكم لكنتم تحبونني لاني خرجت من قبل الله و"+giaki.AR+".لاني لم آت من نفسي بل ذاك ارسلني.", 
+  "فقال لهم يسوع لو كان الله اباكم لكنتم تحبونني لاني خرجت من قبل الله وأتيت.لاني لم آت من نفسي بل ذاك ارسلني.", 
   "Jésus leur dit: \"Si Dieu était votre père, vous m'auriez aimé, car c'est de Dieu que je suis sorti et que je viens; je ne suis pas venu de mon propre chef, c'est lui qui m'a envoyé.", 
   "42 Jesus said to them, If God were your Father, you would love Me, for I proceeded forth and came from God; nor have I come of Myself, but He sent Me.", 
   ], 
@@ -12019,7 +12019,7 @@ ReadingsArrays.GospelMassArray = [[
   ], 
   [
   Prefix.gospelMass+"Gospel&D=Pntl37", 
-  "لان الآب نفسه يحبكم لانكم قد احببتموني وآمنتم اني من عند الله خرجت.خرجت من عند الآب وقد "+giaki.AR+" الى العالم وايضا اترك العالم واذهب الى الآب", 
+  "لان الآب نفسه يحبكم لانكم قد احببتموني وآمنتم اني من عند الله خرجت.خرجت من عند الآب وقد أتيت الى العالم وايضا اترك العالم واذهب الى الآب", 
   "27 car le Père lui-même vous aime parce que vous m'avez aimé et que vous avez cru que je suis sorti de Dieu. 28 Je suis sorti du Père et je suis venu dans le monde; tandis qu'à présent je quitte le monde et je vais au Père.", 
   "27 for the Father Himself loves you, because you have loved Me, and have believed that I came forth from God. 28 I came forth from the Father and have come into the world. Again, I leave the world and go to the Father.", 
   ], 

@@ -444,9 +444,7 @@ ReadingsArrays.GospelVespersArray = [
     ],
     [
       Prefix.gospelVespers + "Gospel&D=1701",
-      "قال لهم يسوع لو كان الله اباكم لكنتم تحبونني لاني خرجت من قبل الله و" +
-        giaki.AR +
-        ". لاني لم آت من نفسي بل ذاك ارسلني.",
+      "قال لهم يسوع لو كان الله اباكم لكنتم تحبونني لاني خرجت من قبل الله وأتيت. لاني لم آت من نفسي بل ذاك ارسلني.",
       "42 Jésus leur dit : Si Dieu était votre Père, vous m’aimeriez, car c’est de Dieu que je suis sorti et que je viens ; je ne suis pas venu de moi–même, mais c’est lui qui m’a envoyé.",
       "42 Jesus said to them, If God were your Father, you would love Me, for I proceeded forth and came from God; nor have I come of Myself, but He sent Me.",
     ],
@@ -1958,9 +1956,7 @@ ReadingsArrays.GospelVespersArray = [
     ],
     [
       Prefix.gospelVespers + "Gospel&D=043rdSunday",
-      "وللوقتِ كانَ في مَجمعهم رجُلٌ بهِ روحٌ نَجسٌ، فصرخَ قائلاً: ' آه! ما لنا ولكَ يا يسوعُ النَّاصريُّ! " +
-        giaki.AR +
-        "َ لتُهلِكنا! إننا نعرفُكَ مَنْ أنتَ، قُدُّوسُ اللهِ! '",
+      "وللوقتِ كانَ في مَجمعهم رجُلٌ بهِ روحٌ نَجسٌ، فصرخَ قائلاً: ' آه! ما لنا ولكَ يا يسوعُ النَّاصريُّ! أتيت لتُهلِكنا! إننا نعرفُكَ مَنْ أنتَ، قُدُّوسُ اللهِ! '",
       "23 Now there was a man in their synagogue with an unclean spirit. And he cried out, 24 saying, Let us alone! What have we to do with You, Jesus of Nazareth? Did You come to destroy us? I know who You are--the Holy One of God!",
       "23 Il se trouvait justement dans leur synagogue un homme (possédé) d’un esprit impur, et qui s’écria : 24 Que nous veux–tu, Jésus de Nazareth ? Tu es venu pour nous perdre. Je sais qui tu es : le Saint de Dieu.",
     ],
@@ -2702,9 +2698,7 @@ ReadingsArrays.GospelVespersArray = [
     ],
     [
       Prefix.gospelVespers + "Gospel&D=054thSunday",
-      "ولا تُريدونَ أن تَأتُوا إليَّ لتكونَ لكُم حياةٌ. مَجداً مِن النَّاسِ لستُ أقبَلُ، ولكنِّي قد عَرَفتكُم أنْ ليستْ لكُمْ محبَّةُ اللهِ في أنفُسِكُم. أنا قد " +
-        giaki.AR +
-        "ُ بِاسم أبي ولَستُم تَقبلونَني. إن أتى آخرُ بِاسم نفسِهِ فذلكَ تقبلونَهُ.",
+      "ولا تُريدونَ أن تَأتُوا إليَّ لتكونَ لكُم حياةٌ. مَجداً مِن النَّاسِ لستُ أقبَلُ، ولكنِّي قد عَرَفتكُم أنْ ليستْ لكُمْ محبَّةُ اللهِ في أنفُسِكُم. أنا قدأتيت بِاسم أبي ولَستُم تَقبلونَني. إن أتى آخرُ بِاسم نفسِهِ فذلكَ تقبلونَهُ.",
       "40 But you are not willing to come to Me that you may have life. 41 I do not receive honor from men. 42 But I know you, that you do not have the love of God in you. 43 I have come in My Father's name, and you do not receive Me; if another comes in his own name, him you will receive.",
       "40 Et vous ne voulez pas venir à moi pour avoir la vie !41 Je ne reçois pas de gloire des hommes… 42 Mais je vous connais : vous n’avez pas en vous l’amour de Dieu. 43 Je suis venu au nom de mon Père, et vous ne me recevez pas ; si un autre vient en son propre nom, vous le recevrez !",
     ],
@@ -3286,9 +3280,7 @@ ReadingsArrays.GospelVespersArray = [
     ],
     [
       Prefix.gospelVespers + "Gospel&D=063rdSunday",
-      "ولكني قد عرفتكم ان ليست لكم محبة الله في انفسكم. انا قد " +
-        giaki.AR +
-        " باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه.",
+      "ولكني قد عرفتكم ان ليست لكم محبة الله في انفسكم. انا قد أتيت باسم ابي ولستم تقبلونني.ان أتى آخر باسم نفسه فذلك تقبلونه.",
       "42 Mais je vous connais, vous n'avez pas en vous l'amour de Dieu. 43 Je suis venu au nom de mon Père, et vous refusez de me recevoir. Qu'un autre vienne en son propre nom, celui-là vous le recevrez!",
       "42 But I know you, that ye have not the love of God in you. 43 I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive.",
     ],
@@ -6506,9 +6498,7 @@ ReadingsArrays.GospelVespersArray = [
     [
       Prefix.gospelVespers + "Gospel&D=Pntl25",
       "واجتمع اليه الفريسيون وقوم من الكتبة قادمين من اورشليم. ولما رأوا بعضا من تلاميذه يأكلون خبزا بايد دنسة اي غير مغسولة لاموا.",
-      "1 Les Pharisiens et quelques scrib" +
-        giaki.FR +
-        " de Jérusalem se rassemblent auprès de Jésus. Ils voient que certains de ses disciples prennent leurs repas avec des mains impures, c'est-à-dire sans les avoir lavées.",
+      "1 Les Pharisiens et quelques scribes venu de Jérusalem se rassemblent auprès de Jésus. Ils voient que certains de ses disciples prennent leurs repas avec des mains impures, c'est-à-dire sans les avoir lavées.",
       "7:1 Then the Pharisees and some of the scribes came together to Him, having come from Jerusalem. 2 Now when they saw some of His disciples eat bread with defiled, that is, with unwashed hands, they found fault.",
     ],
     [
@@ -7237,9 +7227,7 @@ ReadingsArrays.GospelVespersArray = [
     ],
     [
       Prefix.gospelVespers + "Gospel&D=Pntl3rdSunday",
-      "شهادتك ليست حقا. اجاب يسوع وقال لهم وان كنت اشهد لنفسي فشهادتي حق لاني اعلم من اين " +
-        giaki.AR +
-        " والى اين اذهب.واما انتم فلا تعلمون من اين آتي ولا الى اين اذهب.",
+      "شهادتك ليست حقا. اجاب يسوع وقال لهم وان كنت اشهد لنفسي فشهادتي حق لاني اعلم من اين أتيت والى اين اذهب.واما انتم فلا تعلمون من اين آتي ولا الى اين اذهب.",
       "Ton témoignage n'est pas recevable!14 Jésus leur répondit: 'Il est vrai que je me rends témoignage à moi-même, et pourtant mon témoignage est recevable, parce que je sais d'où je viens et où je vais; tandis que vous, vous ne savez ni d'où je viens ni où je vais.",
       "Your witness is not true.14 Jesus answered and said to them, Even if I bear witness of Myself, My witness is true, for I know where I came from and where I am going; but you do not know where I come from and where I am going.",
     ],

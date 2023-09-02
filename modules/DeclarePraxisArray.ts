@@ -3459,7 +3459,7 @@ ReadingsArrays.PraxisArray = [[
   ], 
   [
   Prefix.praxis+"&D=1009", 
-  "ولتمثالها الذي هبط من زَفْسَ؟ وليس أحد يقدر أن يُقاوم هذه الأشياء، فلذا ينبغى أن تكونوا ثابتين ولا تفعلوا شيئاً بخفة. لأنكم "+giaki.AR+"م بهذَيْن الرَّجلين إلى هنا، وهما ليسا سارقي هياكل، ولا مُجدِّفين، على آلهتكم.", 
+  "ولتمثالها الذي هبط من زَفْسَ؟ وليس أحد يقدر أن يُقاوم هذه الأشياء، فلذا ينبغى أن تكونوا ثابتين ولا تفعلوا شيئاً بخفة. لأنكم أتيتم بهذَيْن الرَّجلين إلى هنا، وهما ليسا سارقي هياكل، ولا مُجدِّفين، على آلهتكم.", 
   "et de sa statue tombée du ciel? 36 Puisque la réponse ne fait pas de doute, il vous faut donc retrouver le calme, et éviter les fausses manoeuvres. 37 Vous avez en effet amené ici des hommes qui n'ont commis ni sacrilège ni blasphème contre notre déesse.", 
   "and of the image which fell down from Zeus? 36 Therefore, since these things cannot be denied, you ought to be quiet and do nothing rashly. 37 For you have brought these men here who are neither robbers of temples nor blasphemers of your goddess.", 
   ], 
@@ -4451,7 +4451,7 @@ ReadingsArrays.PraxisArray = [[
   ], 
   [
   Prefix.praxis+"&D=121stSunday", 
-  "فاذ كانت هذه الاشياء لا تقاوم ينبغي ان تكونوا هادئين ولا تفعلوا شيئا اقتحاما. لانكم "+giaki.AR+"م بهذين الرجلين وهما ليسا سارقي هياكل ولا مجدفين على الهتكم.", 
+  "فاذ كانت هذه الاشياء لا تقاوم ينبغي ان تكونوا هادئين ولا تفعلوا شيئا اقتحاما. لانكم أتيتم بهذين الرجلين وهما ليسا سارقي هياكل ولا مجدفين على الهتكم.", 
   "Puisque la réponse ne fait pas de doute, il vous faut donc retrouver le calme et éviter les fausses manœuvres. Vous avez en effet amené ici des hommes qui n'ont commis ni sacrilège ni blasphème contre notre déesse.", 
   "'Therefore, since these things cannot be denied, you ought to be quiet and do nothing rashly. 'For you have brought these men here who are neither robbers of temples nor blasphemers of your goddess.", 
   ], 
@@ -5892,7 +5892,7 @@ ReadingsArrays.PraxisArray = [[
   [
   Prefix.praxis+"D&D=GL13", 
   "فقيل لملك اريحا هوذا قد دخل الى هنا الليلة رجلان من بني اسرائيل لكي يتجسّسا الارض. فارسل ملك اريحا الى راحاب يقول اخرجي الرجلين اللذين أتيا اليك ودخلا بيتك لانهما قد أتيا لكي يتجسّسا الارض كلها.", 
-  "2 On dit au roi de Jéricho : Voici que des Israélites sont arrivés ici cette nuit pour explorer le pays. 3 Alors le roi de Jéricho envoya dire à Rahab : Fais sortir les homm"+giaki.FR+" chez toi, ceux qui sont entrés dans ta maison, car c’est pour explorer tout le pays qu’ils sont venus.", 
+  "2 On dit au roi de Jéricho : Voici que des Israélites sont arrivés ici cette nuit pour explorer le pays. 3 Alors le roi de Jéricho envoya dire à Rahab : Fais sortir les hommes venus chez toi, ceux qui sont entrés dans ta maison, car c’est pour explorer tout le pays qu’ils sont venus.", 
   "2 And it was told the king of Jericho, saying, Behold, men have come here tonight from the children of Israel to search out the country. 3 So the king of Jericho sent to Rahab, saying, Bring out the men who have come to you, who have entered your house, for they have come to search out all the country", 
   ], 
   [
@@ -6215,7 +6215,7 @@ ReadingsArrays.PraxisArray = [[
   ], 
   [
   Prefix.praxis+"D&D=GL13", 
-  "فقال كلا بل انا رئيس جند الرب.الآن "+giaki.AR+".فسقط يشوع على وجهه الى الارض وسجد وقال له بماذا يكلم سيدي عبده.", 
+  "فقال كلا بل انا رئيس جند الرب.الآن أتيت. فسقط يشوع على وجهه الى الارض وسجد وقال له بماذا يكلم سيدي عبده.", 
   "14 Il dit : Non, mais je suis le chef de l’armée de l’Éternel, j’arrive maintenant. Josué tomba le visage contre terre, se prosterna et lui dit : Qu’est–ce que mon seigneur dit à son serviteur ?", 
   "14 So He said, No, but as Commander of the army of the Lord I have now come. And Joshua fell on his face to the earth and worshiped, and said to Him, What does my Lord say to His servant?", 
   ], 
@@ -9445,7 +9445,7 @@ ReadingsArrays.PraxisArray = [[
   ], 
   [
   Prefix.praxis+"D&D=GL26", 
-  "وكان ذاتَ يَومٍ أن جَاءَ ملائكة اللَّـه ليَمثُلُوا أَمامَ الرَّبِّ وجاءَ الشَّيطانُ أيضا معهُم، ووقف على الأرض وعبر فيها. فقال الرَّبُّ للشَّيطان مِن أينَ "+giaki.AR+"؟. فأجابَ الشَّيطان وقال طُفت في الأرض كُلها وجُلت تحت السَّماء وها أنا هُنا", 
+  "وكان ذاتَ يَومٍ أن جَاءَ ملائكة اللَّـه ليَمثُلُوا أَمامَ الرَّبِّ وجاءَ الشَّيطانُ أيضا معهُم، ووقف على الأرض وعبر فيها. فقال الرَّبُّ للشَّيطان مِن أينَ أتي؟. فأجابَ الشَّيطان وقال طُفت في الأرض كُلها وجُلت تحت السَّماء وها أنا هُنا", 
   "6 Le jour advint où les Fils de Dieu se rendaient à l'audience du Seigneur. L'adversaire vint aussi parmi eux. 7 Le Seigneur dit à l'Adversaire: 'D'où viens-tu?' - 'De parcourir la terre, répondit-il, et d'y rôder.'", 
   "6 Now there was a day when the sons of God came to present themselves before the Lord, and Satan also came among them. 7 And the Lord said to Satan, From where do you come? So Satan answered the Lord and said, From going to and fro on the earth, and from walking back and forth on it.", 
   ], 

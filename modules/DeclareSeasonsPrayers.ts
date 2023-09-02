@@ -9,43 +9,44 @@ type seasonalPrayers = {
 const giakiAll: seasonalPrayers[] = [
     {
         Season: Seasons.NoSeason,
-        AR: 'أتيت',
-        CA: 'آك إي',
-        FR: 'es venus',
-        EN: '\'ve come',
-        COP: 'ⲁⲕ̀\''
+        AR: 'لأنكَ أتيْتَ وخَلصْتَنا',
+        CA: 'جي آك إي أكسوتي إمّون',
+        FR: 'car Tu es venu et nous as sauvés',
+        EN: 'for You\'ve come and saved us',
+        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
         Season: Seasons.Nativity,
-        AR: 'ولِدت',
-        CA: 'آك ماسف',
-        FR: 'es né',
-        EN: '\'ve born',
-        COP: 'ⲁⲕ̀\''
+        AR: 'لأنكَ ولِدتَ وخَلصْتَنا',
+        CA: 'جي آك ماسف أكسوتي إمّون',
+        FR: 'car Tu es né et nous as sauvés',
+        EN: 'for You\'ve born and saved us',
+        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
         Season: Seasons.Baptism,
-        AR: 'اعتَمَدُت',
-        CA: 'آك أومس',
-        FR: 'es baptisé',
-        EN: '\'ve been baptized',
-        COP: 'ⲁⲕ̀\''
+        AR: 'لأنكَ اعتمدت وخَلصْتَنا',
+        CA: 'جي آك أومس أكسوتي إمّون',
+        FR: 'car Tu es baptisé et nous as sauvés',
+        EN: 'for You\'ve been baptized and saved us',
+        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
+ 
         Season: Seasons.PentecostalDays,
-        AR: 'قُمتَ',
-        CA: 'آك تونك',
-        FR: 'es ressuscité',
-        EN: '\'ve raised',
-        COP: 'ⲁⲕ̀\''
+        AR: 'لأنكَ قُمتَ وخَلصْتَنا',
+        CA: 'جي آك تونك أكسوتي إمّون',
+        FR: 'car Tu es ressuscité et nous as sauvés',
+        EN: 'for You\'ve raised and saved us',
+        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
         Season: Seasons.CrossFeast,
-        AR: 'صُلِبتَ',
-        CA: 'آك آشك',
-        FR: 'a été crucifié',
-        EN: '\'ve been crossed',
-        COP: 'ⲁⲕ̀\''
+        AR: 'لأنكَ صُلبتَ وخَلصْتَنا',
+        CA: 'جي آك آشك أكسوتي إمّون',
+        FR: 'car Tu as été crucifié et nous as sauvés',
+        EN: 'for You\'ve been crucified and saved us',
+        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
 ];
 const closingHymnAll: seasonalPrayers[] = [
@@ -65,37 +66,69 @@ const closingHymnAll: seasonalPrayers[] = [
         FR: '',
         EN: '',
         COP: ''
+    },
+    {
+        Season: Seasons.PentecostalDays,
+        AR: '',
+        CA: '',
+        FR: '',
+        EN: '',
+        COP: ''
     }
 ];
 
 
-let giaki: seasonalPrayers = {Season:'', AR: '', FR:'', CA:'', COP:'', EN:''},
-closingHymn: seasonalPrayers = {Season:'', AR: '', FR:'', CA:'', COP:'', EN:''};
+var giaki ={} as seasonalPrayers,
+closingHymn ={} as seasonalPrayers;
 
-let allSeasonalPrayers = [[giaki, giakiAll], [closingHymn, closingHymnAll]];
+let allSeasonalPrayers:[seasonalPrayers, seasonalPrayers[]][] = [[giaki, giakiAll]];
 
-setSeasonalTextForAll();
-function setSeasonalTextForAll() {
-    if (!Season) return console.log('The Season was not set');
-    allSeasonalPrayers
-        .forEach((seasonal) =>
-            setSeasonalText(seasonal[1] as seasonalPrayers[], seasonal[0] as seasonalPrayers));
-}
-       
-function setSeasonalText(arrayAll: seasonalPrayers[], seasonal: seasonalPrayers) {
+function setSeasonalTextForAll(season:string){
+allSeasonalPrayers
+    .forEach(seasonal => {
+        Object.assign(seasonal[0], setSeasonalText(seasonal[1], season));
+        console.log('giaki = ', seasonal[0])
+    });
+};
+
+function setSeasonalText(arrayAll: seasonalPrayers[], season:string):seasonalPrayers {
     let found:seasonalPrayers;
-        let prayer = arrayAll.filter(resp => resp.Season == Season);
-        if (prayer.length ===1) found = prayer[0];
         
-        else if ((copticReadingsDate == copticFeasts.PalmSunday && todayDate.getHours() > 15)
-            || HolyWeek.indexOf(copticReadingsDate) > -1) 
-            found = arrayAll.filter(resp => resp.Season == Seasons.CrossFeast)[0];
+    found = arrayAll.find(resp => resp.Season === season);
+
+    if (!found
+        && (copticReadingsDate === copticFeasts.PalmSunday && todayDate.getHours() > 15)
+        || HolyWeek.indexOf(copticReadingsDate) > -1) 
         
-        else if (prayer.length === 0) 
-            found = arrayAll.filter(resp => resp.Season === Seasons.NoSeason)[0];
-    
-    if (found) for (let prop in found) seasonal[prop] = found[prop];
+        found = arrayAll.find(resp => resp.Season === Seasons.CrossFeast);
+        
+    if (!found) 
+    found = arrayAll.find(resp => resp.Season === Seasons.NoSeason);
+    if (found) return found;
 }
 
+function setClosingHymn(coptDay:number, coptMonth:number) {
+    let month = Number(copticMonth);
+    let daysFromYearBegining: number;
+    let daysNumber: number = getDaysNumber();
+    function getDaysNumber(){
+    if (coptMonth > 1) return ((coptMonth - 1) * 30) + Number(coptDay-1);
+        if (month === 1) return Number(coptDay - 1);
+    }
+    console.log('daysNumber = ', daysNumber);
 
+    if (daysNumber >= 280 && daysNumber <38) {
+        console.log('we are between 12/10 && 09/02'); return closingHymnAll[2];
+    } else if (daysNumber >= 38 && daysNumber <129) {
+        console.log('we are between 10/02 && 10/05'); return closingHymnAll[1];
+    } else if (daysNumber >= 129 && daysNumber <280) {
+        console.log('we are between 11/05 && 11/10'); return closingHymn[0];
+    };
+    
+    
+
+
+    
+    console.log(daysNumber);
+}
 
