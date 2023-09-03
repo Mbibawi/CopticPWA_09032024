@@ -148,10 +148,36 @@ PrayersArray= [[
   [
   [
   Prefix.commonIncense+"PrayThatGodHaveMercyOnUs&D=$copticFeasts.AnyDay&C=Diacon", 
-  "Ⲧⲱⲃϩ ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲫϯ ⲛⲁⲓ ⲛⲁⲛ: ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ ⲛ̀ⲧⲉϥⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥϭⲓ ⲛ̀ⲛⲓϯϩⲟ ⲛⲉⲙ ⲛⲓⲧⲱⲃϩ ⲛ̀ⲧⲉ ⲛⲏⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁϥ ⲛ̀ⲧⲟⲧⲟⲩ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ ⲉ̀ⲡⲓⲁ̀ⲅⲁⲑⲟⲛ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ. ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
-  "Implorez pour que Dieu ait pitié de nous, qu’Il soit compatissant envers nous, nous écoute et nous aide, qu’Il agrée les demandes et les supplications que ses saints Lui adressent continuellement en notre faveur, et qu’Il nous pardonne nos péchés.", 
-  "طوفه هينا إنتي افنوتي ناي نان إنتيف شينهيت خارون إنتيف سوتيم إرون إنتيف إرفويثين إرون إنتيف اتشي إني تيهو نيم نيطوفه إنتيني إثؤواب إنتاف إنطوطو إي إهري إجون إبي آغاثون إنسيو نيفين إنتيفكا إننوفي نان إيفول.", 
-  "اطلبوا لكى يرحمنا الله ويتراءف علينا ويَسمعنا ويُعيننا ويقبل سؤالات وطلبات قديسيه منهم بالصلاح عنا في كل حين ويَغفر لنا خطايانا.", 
+  "Ⲧⲱⲃϩ ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲫϯ ⲛⲁⲓ ⲛⲁⲛ: ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ ⲛ̀ⲧⲉϥⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥϭⲓ ⲛ̀ⲛⲓϯϩⲟ ⲛⲉⲙ ⲛⲓⲧⲱⲃϩ ⲛ̀ⲧⲉ ⲛⲏⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁϥ ⲛ̀ⲧⲟⲧⲟⲩ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ ⲉ̀ⲡⲓⲁ̀ⲅⲁⲑⲟⲛ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ.", 
+  "Implorez pour que Dieu ait pitié de nous, qu’Il soit compatissant envers nous, nous écoute et nous aide, qu’Il agrée les demandes et les supplications que ses saints Lui adressent continuellement en notre faveur,", 
+  "طوفه هينا إنتي افنوتي ناي نان إنتيف شينهيت خارون إنتيف سوتيم إرون إنتيف إرفويثين إرون إنتيف اتشي إني تيهو نيم نيطوفه إنتيني إثؤواب إنتاف إنطوطو إي إهري إجون إبي آغاثون إنسيو نيفين.", 
+  "اطلبوا لكى يرحمنا الله ويتراءف علينا ويَسمعنا ويُعيننا ويقبل سؤالات وطلبات قديسيه منهم بالصلاح عنا في كل حين.", 
+  ], 
+  [
+  Prefix.commonIncense+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
+  "", 
+  "En présence du Patriarche de métropolites ou d'évêques", 
+  "", 
+  " وفي حضور البطرك أو الأسقف أو المطران", 
+  ], 
+  [
+  Prefix.commonIncense+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Diacon", 
+  "Ⲛⲧⲉϥⲁ̀ⲣⲉϩ ⲉ̀ⲡ̀ⲱⲛϧ ⲛⲉⲙ ⲡ̀ⲧⲁϩⲟ ⲉ̀ⲣⲁⲧϥ ⲙ̀ⲡⲉⲛⲓⲱⲧ ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲛ̀ⲁⲣⲭⲏⲉ̀ⲣⲉⲩⲥ ⲡⲁⲡⲁ ⲁⲃⲃⲁ Ⲧⲁⲱⲁⲇⲣⲟⲥ ⲛⲉⲙ ⲡⲉϥⲕⲉϣ̀ⲫⲏⲣ ⲛ̀ⲗⲓⲧⲟⲩⲣⲅⲟⲥ ⲡⲉⲛⲓⲱⲧ ⲛ̀ⲉⲡⲓⲥⲕⲟⲡⲟⲥ ⲁⲃⲃⲁ ().", 
+  "Et qu’il préserve la vie de notre bienheureux père, le grand prêtre, le pape anba Tawadros et son partenaire dans le ministère apostolique notre père l’évêque anba () ;", 
+  "", 
+  "وأن يحفظ حياة وقيام أبينا المكرم البابا الأنبا تاوضروس وشريكه في الخدمة الرسولية أبينا الأسقف/المطران أنبا ().", 
+  ], 
+  [
+  Prefix.commonIncense+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
+  "Ensuite il continue :", 
+  "ثم يكمل:", 
+  ], 
+  [
+  Prefix.commonIncense+"PrayThatGodHaveMercyOnUs&D=$copticFeasts.AnyDay&C=Diacon", 
+  " ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
+  "et qu’Il nous pardonne nos péchés", 
+  "إنتيف كن إنوفي نان إيفول.", 
+  "ويغفر لنا خطايانا.", 
   ], 
   ], 
   [
@@ -1889,20 +1915,6 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.commonPrayer+"EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Comments", 
-  "", 
-  "يرفع الكاهن الصليب وعليه ثلاث شمعات موقدة ووجهه إلى الشرق ويقول:", 
-  ], 
-  [
-  Prefix.commonPrayer+"EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Priest", 
-  "Ⲫⲛⲟⲩϯⲛⲁⲓ ⲛⲁⲛ: Ⲑⲉϣⲟⲩⲛⲁⲓ ⲉ̀ⲣⲟⲛ: Ϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ.", 
-  "Dieu aie pitié. Accorde-nous ta miséricorde. Sois compatissant envers nous.", 
-  "افنوتي ناي نان، ثيشو ناي إيرونن شين هيت خارون", 
-  "اللهم ارحمنا، قرر لنا رحمة، ترآف علينا.", 
-  ], 
-  ], 
-  [
-  [
   Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay&C=Assembly", 
   "Ⲁⲙⲏⲛ.", 
   "Amen.", 
@@ -1912,29 +1924,53 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.commonPrayer+"EfnotiNaynanPart2&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.commonPrayer+"EfnotiNaynanPart1&D=$copticFeasts.AnyDay&C=Comments", 
+  "", 
+  "يرفع الكاهن الصليب وعليه ثلاث شمعات موقدة ووجهه إلى الشرق ويقول:", 
+  ], 
+  [
+  Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ⲫⲛⲟⲩϯⲛⲁⲓ ⲛⲁⲛ: Ⲑⲉϣⲟⲩⲛⲁⲓ ⲉ̀ⲣⲟⲛ: Ϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ.", 
+  "Dieu aie pitié. Accorde-nous ta miséricorde. Sois compatissant envers nous.", 
+  "افنوتي ناي نان، ثيشو ناي إيرونن شين هيت خارون", 
+  "اللهم ارحمنا، قرر لنا رحمة، ترآف علينا.", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲛ.", 
   "Écoute- nous.", 
   "سوتيم إيرون", 
   "واسمعنا.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.commonPrayer+"EfnotiNaynanPart3&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲥⲙⲟⲩ ⲉ̀ⲣⲟⲛ: ⲁ̀ⲣⲉϩ ⲉ̀ⲣⲟⲛ: ⲁ̀ⲣⲓⲃⲟⲏ̀ⲑⲓⲛ ⲉ̀ⲣⲟⲛ.", 
   "Bénis-nous, préserve-nous, aide-nous.", 
   "سمو إيرون، آريه إيرون آري فو إيثين إيرون", 
   "باركنا واحفظنا وأعنا.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.commonPrayer+"EfnotiNaynanPart4&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲱⲗⲓ ⲙ̀ⲡⲉⲕϫⲱⲛⲧ ⲉ̀ⲃⲟⲗ ϩⲁⲣⲟⲛ: ϫⲉⲙⲡⲉⲛϣⲓⲛⲓ ϧⲉⲛ ⲡⲉⲕⲟⲩϫⲁⲓ: ⲟⲩⲟϩ ⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
   "Eloigne de nous ta colère. Accorde-nous ton salut. Et pardonne-nous nos péchés.", 
   "أولي إمبيك كونتي إيفوك هارون، جيم بين شيني خين بيك أوجاي، أووه كا إنين نوفي نان إيفول.", 
   "وارفع غضبك عنا وافتقدنا بخلاصك واغفر لنا خطايانا.", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
   ], 
   ], 
   [
@@ -1948,54 +1984,49 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Comments", 
-  "", 
-  "في رفع بخور باكر في صوم يونان وأيام الصوم المقدس، دون سبوته وآحاده، يطفئون شمع المذبح ويغلقون ستر الهيكل ويجلسون. تقرأ النبوات. وبعدها تقال الطلبة.", 
-  ], 
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Title", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Title", 
   "", 
   "Supplication du Grand Carême de du Jeûne de Jonas", 
   "", 
   " طلبة الصوم الكبير وصوم يونان", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Priest", 
   "ϮⲔⲗⲓⲛⲱⲙⲉⲛ ⲧⲁ ⲅⲟⲛⲁⲧⲁ.", 
   "Agenouillons-nous.", 
   "اكلينومين تاغوناتا", 
   "نحنى ركبنا.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Assembly", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Assembly", 
   "Ⲛⲁⲓ ⲛⲁⲛ Ⲫⲑ ϮⲪⲓⲱⲧ ⲡⲓⲡⲁⲛⲧⲱⲕⲣⲁⲧⲱⲣ.", 
   "Aie pitié de nous, ô Dieu le Père tout-puissant.", 
   "ناى نان افنوتى افيوت بى باطوكراتور.", 
   "ارحمنا يا الله الآب ضابط الكل.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁⲛⲁⲥⲧⲱⲙⲉⲛ ⲕ̀ⲗⲓⲛⲱⲙⲉⲛ ⲧⲁ ⲅⲟⲛⲁⲧⲁ.", 
   "Levons-nous puis agenouillons-nous.", 
   "آنستومين اكلينومين تاغوناتا", 
   "نقف ونحنى ركبنا.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Assembly", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Assembly", 
   "Ⲛⲁⲓ ⲛⲁⲛ ϮⲪⲛⲟⲩⲑ Ⲡⲉⲛⲥⲱⲧϩⲣ.", 
   "Aie pitié de nous, ô Dieu notre Sauveur.", 
   "ناى نان افنوتى بين سوتير", 
   "ارحمنا يا الله مخلصنا.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Priest", 
   "Ⲕⲉ ⲁ̀ⲛⲁⲥⲧⲱⲙⲉⲛ ⲕ̀ⲗⲓⲛⲱⲙⲉⲛ ⲧⲁ ⲅⲟⲛⲁⲧⲁ.", 
   "Encore, levons-nous, puis agenouillons-nous.", 
   "كى آنستومين اكلينومين تاغوناتا", 
   "ثم نقف ونحنى ركبنا.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=GL&C=Assembly", 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Assembly", 
   "Ⲛⲁⲓ ⲛⲁⲛ ϮⲪⲛⲟⲩⲑ ⲟⲩⲟⳣ ⲛⲁⲓ ⲛⲁⲛ.", 
   "Aie pitié de nous, ô Dieu aie pitié de nous.", 
   "ناى نان افنوتى أووه ناى نان", 
@@ -2004,249 +2035,310 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart1&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Comments", 
+  "", 
+  "في رفع بخور باكر في صوم يونان وأيام الصوم المقدس، دون سبوته وآحاده، يطفئون شمع المذبح ويغلقون ستر الهيكل ويجلسون. تقرأ النبوات. وبعدها تقال الطلبة.", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent", 
+  ], 
+  [
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲡⲓⲣⲉϥⲱ̀ⲟⲩⲛ̀ϩⲏⲧ: ⲫⲁ ⲡⲓⲙⲏϣ ⲛ̀ⲛⲁⲓ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲗⲏⲑⲓⲛⲟⲥ: ϭⲓ ⲛ̀ⲛⲉⲛϯϩⲟ ⲛⲉⲙ ⲛⲉⲛⲧⲱⲃϩ ⲛ̀ⲧⲟⲧⲉⲛ: ϭⲓⲛ̀ⲧⲉⲛⲡⲁⲣⲁⲕⲗⲏⲥⲓⲥ ⲛ̀ⲧⲟⲧⲉⲛ: ⲛⲉⲙ ⲧⲉⲛⲙⲉ-ⲧⲁⲛⲟⲓⲁ: ⲛⲉⲙ ⲡⲉⲛⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ: ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲉⲛ ⲡⲉⲕⲙⲁ ⲛ̀ⲉⲣϣⲱⲟⲩϣⲓ ⲉ̅ⲑ̅ⲩ̅ ⲛ̀ⲁⲧⲑⲱⲗⲉⲃ: ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ.", 
   "Toi qui es patient et véritablement miséricordieux, reçois nos demandes et nos supplications. Accepte nos implorations, notre pénitence, notre confession sur Ton saint autel pur et céleste.", 
   "", 
   "أيها الطويل الأناة، الكثير الرحمة الحقيقي، اقبل سؤلتنا وطلباتنا منا، اقبل ابتهالاتنا، وتوبتنا واعترفنا على مذبحك المقدس الغير الدنس السمائي.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart1&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲙⲁⲣⲉⲛⲉⲣⲡ̀ⲉⲙⲡ̀ϣⲁ ⲙ̀ⲡⲓⲥⲱⲧⲉⲙ ⲛ̀ⲧⲉ ⲛⲉⲕⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ ⲉⲑⲟⲩⲁⲃ: ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛⲁ̀ⲣⲉϩ ⲉ̀ⲛⲉⲕⲉⲛⲧⲟⲗⲏ ⲛⲉⲙ ⲛⲉⲕⲟⲩⲁϩⲥⲁϩⲛⲓ. Ⲟⲩⲟϩ ⲛ̀ⲧⲉⲛϯⲟⲩⲧⲁϩ ⲛ̀ϧⲏⲧⲟⲩ ⲛ̀ϩ̀ⲣⲏⲓ ϧⲉⲛ ϣⲉ ⲛⲉⲙ ⲥⲉ ⲛⲉⲙ ⲙⲁⲡ: ϧⲉⲛ Ⲡⲓⲭ̀ⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ Ⲡⲉⲛϭⲟⲓⲥ.", 
   "Que nous soyons dignes d’écouter Ton saint Évangile et de garder Tes commandements et Tes préceptes. Et que les nous fassions fructifier par cent, soixante et trente fois, par le Christ Jésus notre Seigneur.", 
   "", 
   "فلنستحق سماع أناجيلك المقدسة، ونحفظ وصاياك وأوامرك. ونثمر فيها بمئة وستين وثلاثين، بالمسيح يسوع ربنا.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart1&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉⲧⲟⲛϧ.", 
   "Priez pour les vivants.", 
   "", 
   "صلوا من أجل الأحياء.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart2&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ⲟ̅ⲥ̅ ⲛ̀ⲛⲏ-ⲉⲧϣⲱⲛⲓ ⲛ̀ⲧⲉ ⲡⲉⲕⲗⲁⲟⲥ: ⲉ̀ⲁⲕϫⲉⲙⲡⲟⲩϣⲓⲛⲓ ϧⲉⲛ ϩⲁⲛⲛⲁⲓ ⲛⲉⲙ ϩⲁⲛⲙⲉⲧ-ϣⲉⲛϩⲏⲧ ⲙⲁⲧⲁⲗϭⲱⲟⲩ.", 
   "Souviens-Toi, Seigneur des malades de Ton peuple : guéris-les.", 
   "", 
   "اذكر يا رب مرضى شعبك، افتقدهم بالمراحم والرآفات، اشفهم.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart2&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉⲧϣⲱⲛⲓ.", 
   "Priez pour les maladies.", 
   "", 
   "صلوا من أجل المرضى.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart3&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ⲟ̅ⲥ̅ ⲛ̀ⲛⲉⲛⲓⲟϯ ⲛⲉⲙ ⲛⲉⲛⲥ̀ⲛⲏⲟⲩ ⲉ̀ⲧⲁⲩϣⲉ ⲉ̀ⲡ̀ϣⲉⲙⲙⲟ: ⲙⲁⲧⲁⲥⲑⲱⲟⲩ ⲉ̀ⲛⲏⲉ̀ⲧⲉ ⲛⲟⲩⲟⲩ ⲙ̀ⲙⲁ ⲛ̀ϣⲱⲡⲓ ϧⲉⲛ ⲟⲩϩⲓⲣⲏⲛⲏ ⲛⲉⲙ ⲟⲩⲟⲩϫⲁⲓ.", 
   "Souviens-Toi Seigneur de nos pères et nos frères qui sont en voyage, ramène-les sains et saufs dans leur pays.", 
   "", 
   "اذكر يا رب أباءنا واخوتنا المسافرين، ردهم إلى أوطانهم بسلامة وعافية.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart3&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉ̀ⲧⲁⲩϣⲉ ⲉ̀ⲡ̀ϣⲉⲙⲙⲟ.", 
   "Priez pour les voyageurs.", 
   "", 
   "صلوا من أجل المسافرين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
+  Prefix.placeHolder, 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent", 
+  ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart4&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ⲟ̅ⲥ̅ ⲛ̀ⲛⲓⲁ̀ⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ: ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ: ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.", 
   "Souviens-Toi Seigneur des vents des cieux et des fruits de la terre: bénis-les.", 
   "", 
   "اذكر يا رب أهوية السماء وثمرات الأرض باركها.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart4&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲡⲓⲁ̀ⲏⲣ ⲉⲑⲛⲁⲛⲉϥ ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ.", 
   "Priez pour un vent favorable et les fruits de la terre.", 
   "", 
   "صلوا من أجل الهواء الصالح وثمار الأرض.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart5&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲫ̀ⲓⲁⲣⲟ: ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ: ⲁ̀ⲛⲓⲧⲟⲩ ⲉ̀ⲡ̀ϣⲱⲓ ⲕⲁⲧⲁ ⲛⲟⲩϣⲓ: ⲕⲁⲧⲁ ⲫⲏⲉ̀ⲧⲉ ⲫⲱⲕ ⲛ̀ϩ̀ⲙⲟⲧ.", 
   "Souviens-Toi Seigneur des vents des cieux et des fruits de la terre: bénis-les.", 
   "", 
   "اذكر يا رب مياه النهر، باركها، أصعدها كمقدارها كنعمتك.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart5&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲡ̀ϫⲓⲛⲙⲟϣⲓ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ⲛⲓⲓⲁⲣⲱⲟⲩ ⲙ̀ⲙⲱⲟⲩ ⲛⲉⲙ ⲛⲉϥϫⲓⲛⲓ̀ ⲉ̀ⲡ̀ϣⲱⲓ ⲕⲁⲧⲁ ⲛⲟⲩϣⲓ.", 
   "Priez pour la montée des eaux des fleuves à hauteur convenable.", 
   "", 
   "صلوا من أجل صعود مياه الأنهار وارتفاعها كمقدارها.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart6&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ: ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.", 
   "Souviens-Toi Seigneur des semences, des fourrages et des produits des champs : bénis-les.", 
   "", 
   "اذكر يا رب الزروع والعشب ونبات الحقل، باركها.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart6&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲙⲟⲩⲛϩⲱⲟⲩ ⲉⲑⲛⲁⲛⲉϥ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ.", 
   "Priez pour les semences, les fourrages et les produits des champs.", 
   "", 
   "صلوا من أجل الأمطار الصالحة ومزروعات الأرض.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
+  Prefix.placeHolder, 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent", 
+  ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart7&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲧ̀ⲥⲱⲧⲏⲣⲓⲁ ⲛ̀ⲛⲓⲣⲱⲙⲓ ⲛⲉⲙ ⲛⲓⲧⲉⲃⲛⲱⲟⲩⲓ̀.", 
   "Souviens-Toi Seigneur du salut des hommes et des animaux.", 
   "", 
   "اذكر يا رب خلاص الناس والبهائم.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart7&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲫ̀ⲛⲟϩⲉⲙ ⲛ̀ⲧⲉ ⲛⲓⲣⲱⲙⲓ ⲛⲉⲙ ⲛⲓⲧⲉⲃⲛⲱⲟⲩⲓ̀.", 
   "Priez pour le salut des hommes et des animaux.", 
   "", 
   "صلوا من أجل خلاص الناس والبهائم.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart8&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲧ̀ⲥⲱⲧⲏⲣⲓⲁ ⲙ̀ⲡⲁⲓⲧⲟⲡⲟⲥ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁⲕ ⲫⲁⲓ: ⲛⲉⲙ ⲧⲟⲡⲟⲥ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ⲙⲟⲛⲁⲥⲧⲏⲣⲓⲟⲛ ⲛⲓⲃⲉⲛ ⲛ̀ⲧⲉ ⲛⲉⲛⲓⲟϯ ⲛ̀ⲟⲣⲑⲟⲇⲟⲝⲟⲥ.", 
   "Souviens-Toi Seigneur du salut de ce lieu saint qui est à Toi, de tous les lieux qui Te sont consacrés et des monastères de nos pères orthodoxes.", 
   "", 
   "اذكر يا رب خلاص هذا الموضع المقدس الذي لك، وكل المواضع وكل أديرة آبائنا الأرثوذكسيين.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart8&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲧ̀ⲥⲱⲧⲏⲣⲓⲁ ⲙ̀ⲡⲓⲕⲟⲥⲙⲟⲥ.", 
   "Priez pour le salut du monde et de cette ville.", 
   "", 
   "صلوا من أجل خلاص العالم وهذه المدينة.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart9&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ⲟ̅ⲥ̅ ⲙ̀ⲡⲓⲁⲣⲭⲏ (ⲙ̀ⲡⲓⲟⲩⲣⲟ) ⲛ̀ⲧⲉ ⲡⲉⲛⲕⲁϩⲓ ⲡⲉⲕⲃⲱⲕ: ⲁ̀ⲣⲉϩ ⲉ̀ⲣⲟϥ ϧⲉⲛ ⲟⲩϩⲓⲣⲏⲛⲏ ⲛⲉⲙ ⲟⲩⲙⲉⲑⲙⲏⲓ ⲛⲉⲙ ⲟⲩⲙⲉⲧϫⲱⲣⲓ.", 
   "Souviens-Toi Seigneur des dirigeants de notre terre et des dirigeants orthodoxes qui aiment le Christ.", 
   "", 
   "اذكر يا رب عبدك رئيس (ملك) أرضنا، احفظه في سلام وعدل ومقدرة.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart9&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲉⲛⲁⲣⲭⲏ (ⲛⲉⲛⲟⲩⲣⲱⲟⲩ) ⲙ̀ⲙⲁⲓⲭ̀ⲣⲓⲥⲧⲟⲥ.", 
   "Priez pour les dirigeants de notre terre et des dirigeants orthodoxes qui aiment le Christ.", 
   "", 
   "صلوا من أجل رؤسائنا (ملوكنا) محبي المسيح.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
+  Prefix.placeHolder, 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent", 
+  ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart10&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲉⲣⲭ̀ⲙⲁⲗⲱⲧⲉⲩⲓⲛ ⲙ̀ⲙⲱⲟⲩ: ⲛⲁϩⲙⲟⲩ ⲧⲏⲣⲟⲩ.", 
   "Souviens-Toi Seigneur des captifs, délivre-les tous.", 
   "", 
   "اذكر يا رب المسببين، نجهم جميعاً.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart10&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉ̀ⲧⲁⲩ-ⲉⲣⲭ̀ⲙⲁⲗⲱⲧⲉⲩⲓⲛ ⲙ̀ⲙⲱⲟⲩ.", 
   "Priez pour les captifs.", 
   "", 
   "صلوا من أجل المسببين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart11&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲉⲛⲓⲟϯ ⲛⲉⲙ ⲛⲉⲛⲥ̀ⲛⲏⲟⲩ ⲉ̀ⲧⲁⲩⲉⲛⲕⲟⲧ ⲁⲩⲙ̀ⲧⲟⲛ ⲙ̀ⲙⲱⲟⲩ: ϧⲉⲛ ⲫ̀ⲛⲁϩϯ ⲛ̀ⲟⲣⲑⲟⲗⲟⲝⲟⲥ: ⲙⲁⲙ̀ⲧⲟⲛ ⲛ̀ⲛⲟⲩⲯⲩⲭⲏ ⲧⲏⲣⲟⲩ.", 
   "Souviens-Toi Seigneur de nos pères et nos frères décédés, qui se sont endormis dans la Foi orthodoxe. Accorde le repos à leurs âmes.", 
   "", 
   "اذكر يا رب آبائنا واخوتنا الذين رقدوا وتنيحوا في الإيمان الأرثوذكسي، نيِّح نفوسهم أجمعين.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart11&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉ̀ⲧⲁⲩⲉⲛⲕⲟⲧ.", 
   "Priez pour les défunts.", 
   "", 
   "صلوا من أجل المتنيحين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart12&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ⲟ̅ⲥ̅ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲓ̀ⲛⲓ ⲛⲁⲕ ⲉ̀ϧⲟⲩⲛ ⲛ̀ⲛⲁⲓⲇⲱⲣⲟⲛ: ⲛⲉⲙ ⲛⲏⲉ̀ⲧⲁⲩⲉ̀ⲛⲟⲩ ⲉ̀ϫⲱⲟⲩ: ⲛⲉⲙ ⲛⲏⲉ̀ⲧⲁⲩⲉ̀ⲛⲟⲩ ⲉ̀ⲃⲟⲗ ϩⲓⲧⲟⲧⲟⲩ: ⲙⲟⲓ ⲛⲱⲟⲩ ⲧⲏⲣⲟⲩ ⲙ̀ⲡⲓⲃⲉⲭⲉ ⲡⲓⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ̀.", 
   "Souviens-Toi Seigneur de nos pères et nos frères décédés, qui se sont endormis dans la Foi orthodoxe. Accorde le repos à leurs âmes.", 
   "", 
   "اذكر يا رب الذين قدموا لك هذه القرابين، والذين قدمت عنهم، والذين قدمت بواسطتهم، أعطهم كلهم الأجر السمائي.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart12&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲑⲩⲥⲓⲁ ⲛⲉⲙ ⲛⲓⲡ̀ⲣⲟⲥⲫⲟⲣⲁ.", 
   "Priez pour les offrandes et les oblations.", 
   "", 
   "صلوا من أجل الصعائد والقرابين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
+  Prefix.placeHolder, 
+  Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent", 
+  ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart13&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓ̀ⲫⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲏⲉⲧϩⲉϫϩⲱϫ ϧⲉⲛ ⲛⲓⲑ̀ⲗⲓⲯⲓⲥ ⲛⲉⲙ ⲛⲓⲁ̀ⲛⲁⲅⲕⲏ: ⲛⲁϩⲱⲟⲩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲟⲩϩⲟϫϩⲉϫ ⲧⲏⲣⲟⲩ.", 
   "Souviens-Toi Seigneur de tous ceux qui sont dans les épreuves et les difficultés. Délivre-les de tous leurs ennuis.", 
   "", 
   "اذكر يا رب المتضايقين في الشدائد والضيقات، خلصهم من جميع شدائدهم.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart13&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲏⲉⲧϩⲉϫϩⲱϫ.", 
   "Priez pour ceux qui sont dans les épreuves et les difficultés.", 
   "", 
   "صلوا من أجل المتضايقين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart14&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲁ̀ⲣⲓⲫ̀ⲙⲉⲩⲓ̀ Ⲡ̀ϭⲟⲓⲥ ⲛ̀ⲛⲓⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ ⲛ̀ⲧⲉ ⲡⲉⲕⲗⲁⲟⲥ: ⲛⲁⲓ ⲛⲱⲟⲩ.", 
   "Souviens-Toi Seigneur des catéchumènes de ton peuple. Aie pitié d'eux.", 
   "", 
   "اذكر يا رب موعوظي شعبك، إرحمهم.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart14&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ.", 
   "Priez pour les catéchumènes.", 
   "", 
   "صلوا من أجل الموعوظين.", 
   ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart15&D=GL&C=Priest", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Priest", 
   "Ⲥⲱϫⲡ ⲛⲓⲃⲉⲛ ⲙ̀ⲙⲉⲧϣⲁⲙϣⲉ ⲓ̀ⲇⲱⲗⲟⲛ ϩⲓⲧⲟⲩ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡⲟⲩϩⲏⲧ. Ⲡⲉⲕⲛⲟⲙⲟⲥ ⲧⲉⲕϩⲟϯ ⲛⲉⲕⲉⲛⲧⲟⲗⲏ ⲛⲉⲕⲙⲉⲑⲙⲏⲓ ⲛⲉⲕⲟⲩⲁϩⲥⲁϩⲛⲓ ⲉⲑⲟⲩⲁⲃ: ⲙⲁⲧⲁϫⲣⲱⲟⲩ ⲛ̀ϧ̀ⲣⲏⲓ ϧⲉⲛ ⲛⲟⲩϩⲏⲧ. Ⲙⲏⲓⲥ ⲛⲱⲟⲩ ⲉⲑⲣⲟⲩⲥⲟⲩⲉⲛ ⲡ̀ⲧⲁϫⲣⲟ ⲛ̀ⲛⲓⲥⲁϫⲓ ⲉ̀ⲧⲁⲩⲉⲣⲕⲁⲧⲏⲭⲓⲛ ⲙ̀ⲙⲱⲟⲩ ⲛ̀ϧⲏⲧⲟⲩ. Ϧⲉⲛ ⲡⲓⲥⲏⲟⲩ ⲇⲉ ⲉⲧⲑⲏϣ ⲙⲁⲣⲟⲩⲉⲣⲡ̀ⲉⲙⲡ̀ϣⲁ ⲙ̀ⲡⲓϫⲱⲕⲉⲙ ⲛ̀ⲧⲉ ⲡⲓⲟⲩⲁ̀ϩⲉⲙ ⲙⲓⲥⲓ ⲉ̀ⲡ̀ⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲟⲩⲛⲟⲃⲓ: ⲉⲕⲥⲟⲃϯ ⲙ̀ⲙⲱⲟⲩ ⲛ̀ⲟⲩⲉⲣⲫⲉⲓ ⲛ̀ⲧⲉ Ⲡⲉⲕⲡ̀ⲛⲉⲩⲙⲁ Ⲉⲑⲟⲩⲁⲃ.", 
   "Affermis-les dans Ta Foi. Ôte de leurs cœurs tout reste du culte des idoles. Enracine dans leurs cœurs Ta Loi, Ta crainte, Tes commandements, Tes droits et Tes saints préceptes. Accorde-leur de reconnaître la solidité de la doctrine qui leur est enseignée.", 
   "", 
   "كل بقية عبادة الأوثان، انزعها من قلوبهم. ناموسك، خوفك، وصاياك، حقوقك، أوامرك المقدسة ثبتها في قلوبهم. أعطهم ان يعرفوا ثبات الكلام الذي وعظوا به. وفي الزمن المُحدد فليستحقوا حميم الميلاد الجديد لغفران خطاياهم، إذ تعدهم هيكلاً لروحك المقدس.", 
   ], 
   [
-  Prefix.incenseDawn+"GodHaveMercyOnUsPart15&D=GL&C=Diacon", 
+  Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent&C=Diacon", 
   "Ϣ̀ⲗⲏⲗ ⲧⲏⲣⲟⲩ: ϫⲉ Ⲕⲩⲣⲓⲉ ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ.", 
   "Priez tous en disant: Pitié Seigneur.", 
   "", 
   "صلوا جميعاً \"يا رب ارحم.\".", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
   ], 
   ], 
   [
@@ -2552,7 +2644,7 @@ PrayersArray= [[
   "", 
   "Absolution du Fils", 
   "", 
-  " تحليل الإبن", 
+  " تحليل الابن", 
   ], 
   [
   Prefix.commonPrayer+"AbsolutionForTheSon&D=$copticFeasts.AnyDay&C=Priest", 
@@ -2869,33 +2961,14 @@ PrayersArray= [[
   ], 
   [
   [
+  Prefix.massCommon+"PrayThatGodHaveMercyOnUs&D=$copticFeasts.AnyDay&C=Comments", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonIncense+"PrayThatGodHaveMercyOnUs&D=$copticFeasts.AnyDay", 
+  ], 
+  [
   Prefix.massCommon+"PrayThatGodHaveMercyOnUs&D=$copticFeasts.AnyDay&C=Diacon", 
-  "Ⲧⲱⲃϩ ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲫϯ ⲛⲁⲓ ⲛⲁⲛ: ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁⲣⲟⲛ ⲛ̀ⲧⲉϥⲥⲱⲧⲉⲙ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥⲉⲣⲃⲟⲏⲑⲓⲛ ⲉ̀ⲣⲟⲛ: ⲛ̀ⲧⲉϥϭⲓ ⲛ̀ⲛⲓϯϩⲟ ⲛⲉⲙ ⲛⲓⲧⲱⲃϩ ⲛ̀ⲧⲉ ⲛⲏⲉⲑⲟⲩⲁⲃ ⲛ̀ⲧⲁϥ ⲛ̀ⲧⲟⲧⲟⲩ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ ⲉ̀ⲡⲓⲁ̀ⲅⲁⲑⲟⲛ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ. ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
-  "Implorez pour que Dieu ait pitié de nous, qu’Il soit compatissant envers nous, nous écoute et nous aide, qu’Il agrée les demandes et les supplications que ses saints Lui adressent continuellement en notre faveur;", 
-  "طوفه هينا إنتي افنوتي ناي نان إنتيف شينهيت خارون إنتيف سوتيم إرون إنتيف إرفويثين إرون إنتيف اتشي إني تيهو نيم نيطوفه إنتيني إثؤواب إنتاف إنطوطو إي إهري إجون إبي آغاثون إنسيو نيفين.", 
-  "اطلبوا لكى يرحمنا الله ويتراءف علينا ويَسمعنا ويُعيننا ويقبل سؤالات وطلبات قديسيه منهم بالصلاح عنا في كل حين.", 
-  ], 
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Comments", 
-  "", 
-  "En présence du Patriarche de métropolites ou d'évêques", 
-  "", 
-  " وفي حضور البطرك أو الأسقف أو المطران", 
-  ], 
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay&C=Diacon", 
-  "Ⲛⲧⲉϥⲁ̀ⲣⲉϩ ⲉ̀ⲡ̀ⲱⲛϧ ⲛⲉⲙ ⲡ̀ⲧⲁϩⲟ ⲉ̀ⲣⲁⲧϥ ⲙ̀ⲡⲉⲛⲓⲱⲧ ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲛ̀ⲁⲣⲭⲏⲉ̀ⲣⲉⲩⲥ ⲡⲁⲡⲁ ⲁⲃⲃⲁ Ⲧⲁⲱⲁⲇⲣⲟⲥ ⲛⲉⲙ ⲡⲉϥⲕⲉϣ̀ⲫⲏⲣ ⲛ̀ⲗⲓⲧⲟⲩⲣⲅⲟⲥ ⲡⲉⲛⲓⲱⲧ ⲛ̀ⲉⲡⲓⲥⲕⲟⲡⲟⲥ ⲁⲃⲃⲁ ().", 
-  "Et qu’il préserve la vie de notre bienheureux père, le grand prêtre, le pape anba Tawadros et son partenaire dans le ministère apostolique notre père l’évêque anba () ;", 
-  "", 
-  "وأن يحفظ حياة وقيام أبينا المكرم البابا الأنبا تاوضروس وشريكه في الخدمة الرسولية أبينا الأسقف/المطران أنبا ().", 
-  ], 
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart&D=$copticFeasts.AnyDay&C=Comments", 
-  "Ensuite il continue :", 
-  "ثم يكمل:", 
-  ], 
-  [
-  Prefix.massCommon+"PrayThatGodHaveMercyOnUsPart&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲛⲧⲉϥⲁ̀ⲓⲧⲉⲛ ⲛ̀ⲉ̀ⲙⲡ̀ϣⲁ ⲉⲑⲣⲉⲛϭⲓ ⲉ̀ⲃⲟⲗϧⲉⲛ ϯⲕⲟⲓⲛⲱⲛⲓⲁ ⲛ̀ⲧⲉ ⲛⲉϥⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲉ̅ⲑ̅ⲩ̅: ⲉⲧⲥ̀ⲙⲁⲣⲱⲟ̀ⲩⲧ ⲉ̀ⲡⲓⲭⲱ ⲉ̀ⲃⲟⲗ ⲛ̀ⲧⲉ ⲛⲉⲛⲛⲟⲃⲓ.", 
   "Et nous rende dignes de communier à ces saints sacrements bénis pour la rémission de nos péchés.", 
   "", 
@@ -2980,6 +3053,58 @@ PrayersArray= [[
   "L'encensoir en or est la vierge et son arôme est Notre Sauveur. Elle l'a enfanté, Il nous a sauvés et nous a remis nos péchés.", 
   "تى شورى إن نوف تى تى بارثينوس. بس أروماتا بى بنسوتير. اسميسى امموف افسوتى اممون اووه اف كانين نوفى نان إيفول.", 
   "المجمرة الذهب هى العذراء ، و عنبرها هو مخلصنا، قد ولدتَه و خلَصنا، و غفرَ لنا خطايانا.", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.massCommon+"IntercessionsHymn&D=$copticFeasts.AnyDay&C=Title", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfStMary&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfStMichael&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfTheArchangels&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfTheApostles&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfStMarc&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfStSteven&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfStGeorgeStTheodoreStPhilopatirStMina&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"ByTheIntercessionOfTodaySaints&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"IntercessionForPope&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"IntercessionForBishop&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"WeBowToYouJesusChrist&D=$copticFeasts.AnyDay", 
   ], 
   ], 
   [
@@ -3227,7 +3352,7 @@ PrayersArray= [[
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massCommon+"CallOfTheHolySpiritPart3&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massCommon+"CallOfTheHolySpiritPart3&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
@@ -3350,15 +3475,15 @@ PrayersArray= [[
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay", 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massCommon+"LitanyOfThePlants&D=$copticFeasts.AnyDay", 
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massCommon+"LitanyOfTheHarvest&D=$copticFeasts.AnyDay", 
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
@@ -3611,71 +3736,85 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "من 12 بؤونة إلى 9 بابه:", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Title", 
   "", 
-  "Oraison des pluies", 
+  "Oraison de l'eau des fleuves", 
   "", 
-  " أوشية مياه الأمطار", 
+  "أوشية مياه النهر", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Priest", 
-  "", 
-  "", 
-  "", 
-  "تفضل يا رب مياه النهر في هذه السنة باركها", 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ⲁⲣⲓⲕⲁⲧⲁⲝⲓⲟⲓⲛ Ⲡⲟ̅ⲥ̅ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲫ̀ⲓⲁⲣⲟ ⲉⲧϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲁ̀ⲓ ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.", 
+  "Daigne, Seigneur, bénir les eaux des fleuves en cette année.", 
+  "أرى كاطا كسين إبشويس نى موؤو إنتى إفيارو إتخين طاى رومبى ثاى إزمو إيروؤو.", 
+  "تفضل يا رب مياه النهر في هذه السنة باركها.", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Diacon", 
-  "", 
-  "", 
-  "", 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay&C=Diacon", 
+  "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲡ̀ϫⲓⲛⲙⲟϣⲓ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ⲛⲓⲓⲁⲣⲱⲟⲩ ⲙ̀ⲙⲱⲟⲩ ϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲁ̀ⲓ : ϩⲓⲛⲁ ⲛ̀ⲧⲉ ⲠⲓÉⲬⲣⲓⲥⲧⲟⲥ ⲡⲉⲛⲚⲟⲩϯ ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ : ⲛ̀ⲧⲉϥⲉ̀ⲛⲟⲩ ⲉ̀ⲡ̀ϣⲱⲓ ⲕⲁⲧⲁ ⲛⲟⲩϣⲓ : ⲛ̀ⲧⲉϥϯ ⲙ̀ⲡ̀ⲟⲩⲛⲟϥ ⲙ̀ⲡ̀ϩⲟ ⲙ̀ⲡ̀ⲕⲁϩⲓ : ⲛ̀-ⲧⲉϥϣⲁⲛⲟⲩϣⲧⲉⲛ ϧⲁ ⲛⲓϣⲑ-ⲣⲓ ⲛ̀ⲧⲉ ⲛⲓⲣⲱⲙⲓ : ⲛ̀ⲧⲉϥϯ ⲙ̀ⲫ̀ⲛⲟϩⲉⲙ ⲛ̀ⲛⲓⲧⲉⲃⲛⲱⲟⲩⲓ̀ ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
+  "Implorez pour la montée des eaux des fleuves en cette année. Que le Christ notre Dieu les bénisse, les rende abondantes et réjouisse la face de la terre. Qu’Il prenne soin des hommes, sauve les animaux et nous pardonne nos péchés.", 
+  "طُفه إيجين إب جين موشى إى إبشوى إنتى نى يارؤو إم موؤو خين تاى رومبى ثاى هينا إنتى بى إخرستوس بننوتى إزمو إيروؤو إنتيف إينو إئبشوى كاطانوشى إنتيفتى إم إبؤونوف إم إبهو إم إبكاهى إنتيف شانو إشتين خانيشيرى إنتى نى رومى إنتيفتى إم إفنوهيم إن نيتيفنوؤوى. إنتيف كانين نوفى نان إيفول.", 
   "اطلبوا عن صعود مياه الأنهار في هذه السنة، لكي يباركها المسيح إلهنا ويصعدها كمقدارها، ويفرح وجه الأرض، ويعولنا نحن البشر ويعطي النجاة للبهائم، ويغفر لنا خطايانا.", 
   ], 
   ], 
   [
   [
-  Prefix.massCommon+"LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "من 10 بابه إلى 10 طوبة:", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay&C=Title", 
   "", 
+  "Oraison des semences", 
+  "", 
+  "أوشية الزروع والعشب", 
+  ], 
+  [
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ⲁⲣⲓⲕⲁⲧⲁⲝⲓⲟⲓⲛ Ⲡⲟ̅ⲥ̅ ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ : ⲉⲧϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲁ̀ⲓ : ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.", 
   "Souviens-Toi Seigneur des semences, des fourrages et des produits des champs : bénis-les.", 
-  "", 
+  "آري كاطاكسين إبشويس نيسيتي نيم ني سيم نيم ني روت إنتي إتكوي إيت خين تاي رومبي ثاي إزمو إيروؤو.", 
   "تفضّل يا ربُ الزروع والعشب ونبات الحقل في هذه السنة باركها", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfThePlants&D=$copticFeasts.AnyDay&C=Diacon", 
-  "", 
-  "", 
-  "", 
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay&C=Diacon", 
+  "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ ϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲁ̀ⲓ : ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲡⲭ̅ⲥ̅ ⲡⲉⲛⲚⲟⲩϯ ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ : ⲛ̀ⲧⲟⲩⲁⲓⲁⲓ ⲟⲩⲟϩ ⲛ̀ⲧⲟⲩ ̀ⲁϣⲁⲓ ϣⲁ ⲛ̀ⲧⲟⲩϫⲱⲕ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲟⲩⲛⲓϣϯ ⲛ̀ⲕⲁⲣⲡⲟⲥ : ⲟⲩⲟϩ ⲛ̀ⲧⲉϥ-ϣⲉⲛϩⲑⲧ ϧⲁ ⲡⲉϥⲡ̀ⲗⲁⲥⲙⲁ ⲉ̀ⲧⲁ ⲛⲉϥϫⲓϫ ⲁ̀ⲙⲓⲟϥ : ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
+  "Implorez pour les semences, les fourrages, et les produits des champs en cette année. Que le Christ notre Dieu les bénisse ; qu’elles croissent et se multiplient jusqu’à l’accomplissement en donnant de nombreux fruits. Que le Seigneur prenne en affection l’homme, oeuvre de Ses mains, et nous pardonne nos péchés.", 
+  "طُفه إيجين ني سيتي نيم مي سيم نيم ني روت إنتي إتكوي خين تاي رومبي ثاي هينا إنتي بي إخرستوس بيننوتي إزمو إيروؤو إنتو آي آي أووه إينتو آشاي شا إنتو جوك إيقول خين أونشتي إن كاربوس أووه إنتيف شينهيت خابيف إبلازما إيتانيف جيج ثاميوف إنتيف كانين نوفي نان إيفول.", 
   "اطلبوا عن الزروع والعشب ونبات الحقل في هذه السنة، لكي يباركها المسيح إلهنا لتنمو وتكثر إلى أن تكمل بثمرة عظيمة، ويتحنن على جبلته التي صنعتها يداه، ويغفر لنا خطايانا.", 
   ], 
   ], 
   [
   [
-  Prefix.massCommon+"LitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "من 11 طوبة إلى 11 بؤونة:", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Title", 
   "", 
-  "Souviens-Toi Seigneur des vents des cieux et des fruits de la terre: bénis-les.", 
+  "Oraison des pluies et de la moisson", 
   "", 
+  "أوشية أهوية السماء وثمرات الأرض", 
+  ], 
+  [
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ⲁⲣⲓⲕⲁⲧⲁⲝⲓⲟⲓⲛ Ⲡⲟ̅ⲥ̅ ⲛⲓ̀ⲁ̀ⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ: ⲛⲉⲙ ⲛⲓⲙⲱⲟⲩ ⲛ̀ⲧⲉ ⲫ̀ⲓⲁⲣⲟ: ⲛⲉⲙ ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ: ⲉⲧϧⲉⲛ ⲧⲁⲓⲣⲟⲙⲡⲓ ⲑⲁⲓ: ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ.", 
+  "Souviens-Toi Seigneur des pluies et des fruits de la terre: bénis-les.", 
+  "آري كاطاسكين إبشويس ني آإيرإنتي إتفي نيم ني كاربوس إنتي إبكاهي خين تاي رومبي ثاي إزمو إيروؤو.", 
   "تفضّل يا ربُ، أهوية السماء وثمرات الأرض في هذه السنة؛ بَاركهَا", 
   ], 
   [
-  Prefix.massCommon+"LitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Diacon", 
-  "", 
-  "", 
-  "", 
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay&C=Diacon", 
+  "Ⲧⲱⲃϩ ⲉ̀ϫⲉⲛ ⲛⲓⲁ̀ⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ ⲛⲉⲙ ⲛⲓⲕⲁⲣⲡⲟⲥ ⲛ̀ⲧⲉ ⲡ̀ⲕⲁϩⲓ: ⲡ̀ϫⲓⲛⲙⲟϣⲓ ⲉ̀ⲡ̀ϣⲱⲓ ⲛ̀ⲧⲉ ⲛⲓⲓⲁⲣⲱⲟⲩ ⲙ̀ⲙⲱⲟⲩ: ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ ⲛⲉⲙ ⲛⲓⲣⲱⲧ ⲛ̀ⲧⲉ ⲧ̀ⲕⲟⲓ: ϩⲓⲛⲁ ⲛ̀ⲧⲉ Ⲡⲭ̅ⲥ̅ ⲡⲉⲛⲛⲟⲩϯ ⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲱⲟⲩ ⲟⲩⲟϩ ⲛ̀ⲧⲉϥϣⲉⲛϩⲏⲧ ϧⲁ ⲡⲉϥⲡ̀ⲗⲁⲥⲙⲁ ⲉ̀ⲧⲁ ⲛⲉϥϫⲓϫ ⲑⲁⲙⲓⲟϥ ⲛ̀ⲧⲉϥⲭⲁ ⲛⲉⲛⲛⲟⲃⲓ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
+  "Implorez pour les vents du ciel, les fruits de la terre, les arbres, les vignes et tout arbre fruitier dans l’univers. Que le Christ notre Dieu les bénisse et les amène à maturité sans dommage et nous pardonne nos péchés.", 
+  "طُفه إيجين ني آإيرإنتي إتفي نيم ني كاربوس إنتي إبكاهي نيم فاي إششين نيم فاني ما إن ألولي نيم إششين نيقين إنريفتي كاربوس إيتخين تي أى كومبني تيرس هينا إنتي بي إخرستوس بين نوتي إزمو إيروؤو إنتيف جوك إيقول خين أو هيريني أتشني إمكاه إنتيف كانين نوفي نان إيفول.\n", 
   "اطلبوا عن أهوية السماء وثمرات الأرض، والشجر والكروم وكل شجرة مثمرة في كل المسكونة لكى يُبَاركهَا المسيحُ إلهُنا، ويُكمّلها سالمة بغير آفة، ويغفر لنا خطايانا.", 
   ], 
   ], 
@@ -3684,6 +3823,13 @@ PrayersArray= [[
   Prefix.massCommon+"CombinedSeasonalLitanies&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "أوشية أهوية السماء وثمرات الأرض ومياه الأنهار والزروع والعشب ونبات الحقل:", 
+  ], 
+  [
+  Prefix.massCommon+"CombinedSeasonalLitanies&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Oraison de toutes les saisons", 
+  "", 
+  "أوشية لكل فصول السنة", 
   ], 
   [
   Prefix.massCommon+"CombinedSeasonalLitanies&D=$copticFeasts.AnyDay&C=Priest", 
@@ -4449,7 +4595,7 @@ PrayersArray= [[
   "Ⲇⲟⲝⲁ ⲡⲁⲧⲣⲓ ⲕⲉ Ⲩ̀ⲓⲱ ⲕⲉ ⲁⲅⲓⲱ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ", 
   "Gloire au Père au Fils et au Saint Esprit. Alleluia.", 
   "ذكوساباتري كي إيو، كي آجيو إبنيفماتي.", 
-  "المجدُ للآب والإبن والروح القدس هلليلويا.", 
+  "المجدُ للآب والابن والروح القدس هلليلويا.", 
   ], 
   [
   Prefix.massCommon+"CommunionPsalm150&D=$copticFeasts.AnyDay&C=Diacon", 
@@ -5511,21 +5657,21 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.massStBasil+"ReconciliationPart1&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Reconciliation", 
   "", 
   " صلاة الصلح", 
   ], 
   [
-  Prefix.massStBasil+"ReconciliationPart1&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲫⲛⲟⲩϯ ⲡⲓⲛⲓϣϯ ⲡⲓϣⲁⲉ̀ⲛⲉϩ ⲫⲏⲉⲧⲁϥⲕⲱⲧ ⲙ̀ⲡⲓⲣⲱⲙⲓ ⲉ̀ϩⲣϩⲏⲓ ⲉϫⲉⲛ ϯⲙⲉⲧⲁⲧⲧⲁⲕⲟ. Ⲟⲩⲟϩ ⲫ̀ⲙⲟⲩ ⲉⲧⲁϥⲓ̀ ⲉϧⲟⲩⲛ ⲉ̀ⲡⲓⲕⲟⲥⲙⲟⲥ: ϩⲓⲧⲉⲛ ⲡⲓⲫ̀ⲑⲟⲛⲟⲥ ⲛ̀ⲧⲉ ⲡⲓⲇⲓⲁⲃⲟⲗⲟⲥ. Ⲁⲕϣⲉⲣϣⲱⲣϥ ϩⲓⲧⲉⲛ ⲡⲓⲟⲩⲱⲛϩ ⲉⲃⲟⲗ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀Ϣⲏⲣⲓ Ⲡⲉⲛϭⲟⲓⲥ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ.", 
   "Ô Dieu grand et éternel qui a créé l’homme sans corruption. Tu as détruit la mort, introduite dans le monde par l’envie du démon par la manifestation vivifiante de Ton Fils Unique Notre Seigneur, Notre Dieu, et Notre Sauveur Jésus Christ.", 
   "إفنوتي بي نشتي بي شا إينيه في إبطاف كوت إمبي رومي إى إهري إيجين تي ميت أتطاكو. أووه إفمو إيطاف إي إيخون إي بي كوزموس هيتين بي إفثونوس إنتي بي ذيافولوس آك شير شورف. هيتين بي أو أونه إيفول إنريف تنخو إنتي بيك مونوجينيس إنشيري بين شويس أووه بين نوتي أووه بين سوتير إيسوس بي إخرستوس.", 
   "يا اللهُ العظيم الأبدي الذي جَبَلَ الإنسان على غير فسادٍ. والموتُ الذي دَخَلَ إلى العالم بحَسَدِ إبليس، هَدَمتهُ بالظهور المحيي الذي لابنك الوحيد الجنس رَبَنا وإلهَنا ومُخلصنا يسوعَ المسيح.", 
   ], 
   [
-  Prefix.massStBasil+"ReconciliationPart1&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay&C=Priest", 
   "Ⲟⲩⲟϩ ⲁⲕⲙⲟϩ ⲙ̀ⲡⲓⲕⲁϩⲓ ⲉⲃⲟⲗϧⲉⲛ ϯϩⲓⲣⲏⲛⲏ ϯⲉⲃⲟⲗϧⲉⲛ ⲛⲓⲫⲏⲟⲩⲓ. Ⲑⲁⲓ ⲉⲧⲉ̀ⲣⲉ ϯⲥⲧⲣⲁⲧⲓⲁ ⲛ̀ⲧⲉ ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ϯⲱⲟⲩ ⲛⲁⲕ ⲛ̀ϧⲏⲧⲥ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ. Ϫⲉ ⲟⲩⲱⲟⲩ ⲙ̀Ⲫⲛⲟⲩϯ ϧⲉⲛ ⲛⲏⲉⲧϭⲟⲥⲓ: ⲛⲉⲙ ⲟⲩϩⲓⲣⲏⲛⲏ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲟⲩϯⲙⲁϯ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ.", 
   "Tu as rempli la terre de la paix céleste avec laquelle les armées des anges Te glorifient en disant: “Gloire à Dieu au plus haut des cieux, et paix sur terre et joie aux hommes.”", 
   "أووه آك موه إم بي كاهي إيفول خين تي هيريني تي إيفول خين نيفيئووي ثاي إت إيري تي ستراتيا إنتي ني آنجيلوس تي أو اوناك إنخيتس إفجو إمموس جي أوأو أو إم إفنوتي خين ني إتتشوسي نيم أو هيريني هيجين بي كاهي نيم أوتيماتي خين ني رومي.", 
@@ -5540,16 +5686,86 @@ PrayersArray= [[
   Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
   ], 
   [
-  Prefix.placeHolder, 
-  Prefix.massCommon+"ReconciliationStBasilPart1Comment&D=$copticFeasts.AnyDay", 
+  Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay&C=Comments", 
+  "", 
+  "يرفع الكاهن اللفافة الختم أمام وجهه منثنية على شكل مثلث وفي مقابله يرفع الشماس الصليب.", 
+  ], 
+  [
+  Prefix.massStBasil+"Reconciliation1StBasil&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ϧⲉⲛ ⲡⲉⲕϯⲙⲁϯ Ⲫ̀ⲛⲟⲩϯ ⲙⲟϩ ⲛ̀ⲛⲉⲛϩⲏⲧ ϧⲉⲛ ⲧⲉⲕϩⲓⲣⲏⲛⲏ. Ⲟⲩⲟϩ ⲙⲁⲧⲟⲩⲃⲟⲛ ⲉⲃⲟⲗϩⲁ ⲑⲱⲗⲉⲃ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ⲭ̀ⲣⲟϥ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲙⲉⲧϣⲟⲃⲓ ⲛⲓⲃⲉⲛ. Ⲛⲉⲙ ⲡⲁⲛⲟⲩⲣⲅⲓⲁ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ϯⲙⲉⲧⲣⲉϥⲉⲣⲫ̀ⲙⲉⲩⲓ ⲛ̀ⲧⲉ ϯⲕⲁⲕⲓⲁ ⲉ̀ⲧⲉⲣⲫⲟⲣⲓⲛ ⲙ̀ⲫ̀ⲙⲟⲩ.", 
+  "Dans Ta bienveillance, Ô Dieu, remplis nos cœurs de Ta paix. Purifie-nous de toute souillure, de toute ruse, de toute hypocrisie, de toute malice et de toute pensée mauvaise conduisant à la mort.", 
+  "خين بيك تيماتي إفنوتي موه إننهيت خين تيك هيريني. أووه ماطوفون إيفول هاثوليب نيفين نيم إكروف نيفين. نيم ميتشوفي نيقين نيم بان أورجيا نيقين. نيم تي ميت ريف إيبر إفميفئي إنتي تي كاكيا إتئيرفورين إم إفمو.", 
+  "بمسرتِكَ يا الله املأ قلوبَنا من سلامِكَ. وطهّرنا من كل دنسٍ ومن كل غشٍ ومن كل رياءٍ ومن كل فعلٍ خبيث ومن تذكار الشر المُلبس المَوت.", 
+  ], 
+  [
+  Prefix.massStBasil+"Reconciliation1StBasil&D=$copticFeasts.AnyDay&C=Priest", 
+  "Ⲟⲩⲟϩ ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲧⲏⲣⲉⲛ ⲡⲉⲛⲛⲏⲃ: ⲉ̀ⲑ̀ⲣⲉⲛⲉⲣⲁⲥⲡⲁⲍⲉⲥⲑⲉ ⲛ̀ⲛⲉⲛⲉ̀ⲣⲏⲟⲩ ϧⲉⲛ ⲟⲩⲫⲓ ⲉⲑⲟⲩⲁⲃ. Ⲉ̀ⲡ̀ϫⲓⲛⲧⲉⲛϭⲓ ϧⲉⲛ ⲟⲩⲙⲉⲧⲁⲧϩⲓⲧⲧⲉⲛ ⲉ̀ⲡ̀ϩⲁⲡ: ⲉⲃⲟⲗϧⲉⲛ ⲧⲉⲕⲇⲱⲣⲉⲁ ⲛ̀ⲁⲑⲙⲟⲩ ⲟⲩⲟϩ ⲛ̀ⲉ̀ⲡⲟⲩⲣⲁⲛⲓⲟⲛ: ϧⲉⲛ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ Ⲡⲉⲛϭⲟⲓⲥ.", 
+  "Rends-nous tous digne, Ô Seigneur, d’échanger un saint baiser, afin que, sans encourir la condamnation, nous recevions de Tes dons immortels et célestes, par Jésus-Christ notre Seigneur.", 
+  "أووه آريتين إن إم إبشاتيرين بين نيب إيثرين إير أسبازيستي إنين إيريؤخين أوفي إثؤواب. إى إيجين تين تشي خين أو ميت أت هي تتين إي إبهاب إيفول خين تيك ذوريا إن أثمو أووه إن إيبورانيون خين بي إخرستوس إيسوس بين شويس.", 
+  "واجعَلنا مستحقين كلنا يا سيدنا أن نقبّلَ بعضنا بعضاً بقبلةٍ مقدسة. لكى نَنَالَ بغير وقوع في دينونةٍ من مَوهبتِكَ غير المائتة السمائية. بالمَسيح يسوع رَبنا.", 
+  ], 
+  [
+  Prefix.massCommon+"ReconciliationStBasil&D=$copticFeasts.AnyDay&C=Comments", 
+  "Et il achève à voix basse:", 
+  "ثم يكمل الكاهن سراً:", 
+  ], 
+  [
+  Prefix.massCommon+"ReconciliationStBasil&D=$copticFeasts.AnyDay&C=CommentText", 
+  "", 
+  "par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dûs avec Lui et le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen.", 
+  "", 
+  "هذا الذي من قبله المجد والكرامة والعزة والسجود، تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين.", 
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massStBasil+"ReconciliationStBasilPart2&D=$copticFeasts.AnyDay", 
+  Prefix.massCommon+"EndOfReconciliationComment&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
-  Prefix.massCommon+"ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay", 
+  Prefix.massCommon+"DiaconResponseKissEachOther&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"SpasmosAdamShort&D=$copticFeasts.AnyDay", 
+  ], 
+  ], 
+  [
+  [
+  Prefix.massStBasil+"Reconciliation2&D=$copticFeasts.AnyDay&C=Title", 
+  "", 
+  "Reconciliaiton de Saint Jean", 
+  "", 
+  "صلاة صلح القديس يوحنا", 
+  ], 
+  [
+  Prefix.massStBasil+"Reconciliation2&D=$copticFeasts.AnyDay&C=Priest", 
+  "", 
+  "Elle dépasse tout entendement et toute compréhension la richesse de Tes dons, ô Maître.", 
+  "", 
+  "عالٍ فوق كل قوة النطق، وكل فكر العقل، غني مواهبك يا سيدنا. لأن ما أخفيته عن الحكماء والفُهماء، هذا اعلنته لنا، نحن الأطفال الصغار.، وما اشتهي الانبياء والملوك ان يروه ولم يروا، هذا أنعمت به لنا نحن الخطاة، لكي نخدمه ونتطهر من قِبله، عندما أقمت لنا تدبير ابنك الوحيد الجنس، والسر الخفي الذي لهذه الذبيحة. هذه التي ليس دم الناموس حولها، ولا بر الجسد. لكن الخروف فروَحي، والسكين فنطقية غير جسمية، هذه الذبيحة التي نقدمها لك. نسأل ونطلب من صلاحك يا محب البشر. طهر شفاهنا واعتق عقولنا من كل اخلاط الهيولي. وارسل لنا نعمة روحك القدوس. واجعلنا أهلاً، أن يقبل بعضُنا بعضاً بقبلة مقدسة.", 
+  ], 
+  [
+  Prefix.massStBasil+"Reconciliation2&D=$copticFeasts.AnyDay&C=Priest", 
+  "", 
+  "Car ce que tu as caché aux sages et aux savants, tu nous l’as révélé, à nous les tout-petits ; et ce que les prophètes et les rois ont désiré voir et ne l’ont pas vu, Tu nous l’as accordé, à nous les pécheurs afin que nous le servions et que nous soyons purifiés en établissant la règle de Ton Fils unique et le mystère invisible de ce sacrifice non sanglant. Ce sacrifice qui n'est pas soumis à la Loi ni à la justice du corps. Car l’agneau est spirituel et le couteau est immatériel. Voici le sacrifice que nous T'offrons. Nous implorons et nous supplions Ta bonté ô Ami du genre humain purifie nos lèvres et délivre nos pensées de toute mauvaise tentation, accorde-nous la grâce de Ton Esprit Saint, et rends nous dignes d’échanger un saint baiser afin que, sans encou-rir la condamnation, nous recevions de Tes dons immortels et célestes par Jésus Christ notre Seigneur", 
+  "", 
+  "", 
+  ], 
+  [
+  Prefix.massCommon+"ReconciliationStBasil&D=$copticFeasts.AnyDay&C=Comments", 
+  "Et il achève à voix basse:", 
+  "ثم يكمل الكاهن سراً:", 
+  ], 
+  [
+  Prefix.massCommon+"ReconciliationStBasil&D=$copticFeasts.AnyDay&C=CommentText", 
+  "", 
+  "par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dûs avec Lui et le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen.", 
+  "", 
+  "هذا الذي من قبله المجد والكرامة والعزة والسجود، تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين.", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"EndOfReconciliationComment&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.placeHolder, 
@@ -5571,42 +5787,7 @@ PrayersArray= [[
   ], 
   [
   [
-  Prefix.massCommon+"ReconciliationStBasilPart1Comment&D=$copticFeasts.AnyDay&C=Comments", 
-  "", 
-  "يرفع الكاهن اللفافة الختم أمام وجهه منثنية على شكل مثلث وفي مقابله يرفع الشماس الصليب.", 
-  ], 
-  ], 
-  [
-  [
-  Prefix.massStBasil+"ReconciliationStBasilPart2&D=$copticFeasts.AnyDay&C=Priest", 
-  "Ϧⲉⲛ ⲡⲉⲕϯⲙⲁϯ Ⲫ̀ⲛⲟⲩϯ ⲙⲟϩ ⲛ̀ⲛⲉⲛϩⲏⲧ ϧⲉⲛ ⲧⲉⲕϩⲓⲣⲏⲛⲏ. Ⲟⲩⲟϩ ⲙⲁⲧⲟⲩⲃⲟⲛ ⲉⲃⲟⲗϩⲁ ⲑⲱⲗⲉⲃ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ⲭ̀ⲣⲟϥ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ⲙⲉⲧϣⲟⲃⲓ ⲛⲓⲃⲉⲛ. Ⲛⲉⲙ ⲡⲁⲛⲟⲩⲣⲅⲓⲁ ⲛⲓⲃⲉⲛ: ⲛⲉⲙ ϯⲙⲉⲧⲣⲉϥⲉⲣⲫ̀ⲙⲉⲩⲓ ⲛ̀ⲧⲉ ϯⲕⲁⲕⲓⲁ ⲉ̀ⲧⲉⲣⲫⲟⲣⲓⲛ ⲙ̀ⲫ̀ⲙⲟⲩ.", 
-  "Dans Ta bienveillance, Ô Dieu, remplis nos cœurs de Ta paix. Purifie-nous de toute souillure, de toute ruse, de toute hypocrisie, de toute malice et de toute pensée mauvaise conduisant à la mort.", 
-  "خين بيك تيماتي إفنوتي موه إننهيت خين تيك هيريني. أووه ماطوفون إيفول هاثوليب نيفين نيم إكروف نيفين. نيم ميتشوفي نيقين نيم بان أورجيا نيقين. نيم تي ميت ريف إيبر إفميفئي إنتي تي كاكيا إتئيرفورين إم إفمو.", 
-  "بمسرتِكَ يا الله املأ قلوبَنا من سلامِكَ. وطهّرنا من كل دنسٍ ومن كل غشٍ ومن كل رياءٍ ومن كل فعلٍ خبيث ومن تذكار الشر المُلبس المَوت.", 
-  ], 
-  [
-  Prefix.massStBasil+"ReconciliationStBasilPart2&D=$copticFeasts.AnyDay&C=Priest", 
-  "Ⲟⲩⲟϩ ⲁⲣⲓⲧⲉⲛ ⲛ̀ⲉⲙⲡ̀ϣⲁ ⲧⲏⲣⲉⲛ ⲡⲉⲛⲛⲏⲃ: ⲉ̀ⲑ̀ⲣⲉⲛⲉⲣⲁⲥⲡⲁⲍⲉⲥⲑⲉ ⲛ̀ⲛⲉⲛⲉ̀ⲣⲏⲟⲩ ϧⲉⲛ ⲟⲩⲫⲓ ⲉⲑⲟⲩⲁⲃ. Ⲉ̀ⲡ̀ϫⲓⲛⲧⲉⲛϭⲓ ϧⲉⲛ ⲟⲩⲙⲉⲧⲁⲧϩⲓⲧⲧⲉⲛ ⲉ̀ⲡ̀ϩⲁⲡ: ⲉⲃⲟⲗϧⲉⲛ ⲧⲉⲕⲇⲱⲣⲉⲁ ⲛ̀ⲁⲑⲙⲟⲩ ⲟⲩⲟϩ ⲛ̀ⲉ̀ⲡⲟⲩⲣⲁⲛⲓⲟⲛ: ϧⲉⲛ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ Ⲓⲏⲥⲟⲩⲥ Ⲡⲉⲛϭⲟⲓⲥ.", 
-  "Rends-nous tous digne, Ô Seigneur, d’échanger un saint baiser, afin que, sans encourir la condamnation, nous recevions de Tes dons immortels et célestes, par Jésus-Christ notre Seigneur.", 
-  "أووه آريتين إن إم إبشاتيرين بين نيب إيثرين إير أسبازيستي إنين إيريؤخين أوفي إثؤواب. إى إيجين تين تشي خين أو ميت أت هي تتين إي إبهاب إيفول خين تيك ذوريا إن أثمو أووه إن إيبورانيون خين بي إخرستوس إيسوس بين شويس.", 
-  "واجعَلنا مستحقين كلنا يا سيدنا أن نقبّلَ بعضنا بعضاً بقبلةٍ مقدسة. لكى نَنَالَ بغير وقوع في دينونةٍ من مَوهبتِكَ غير المائتة السمائية. بالمَسيح يسوع رَبنا.", 
-  ], 
-  ], 
-  [
-  [
-  Prefix.massCommon+"ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comments", 
-  "", 
-  "ثم يكمل الكاهن سراً", 
-  ], 
-  [
-  Prefix.massCommon+"ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=CommentText", 
-  "", 
-  "...par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dûs avec Lui et le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen.", 
-  "", 
-  "هذا الذي من قبله المجد والكرامة والعزة والسجود، تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين.", 
-  ], 
-  [
-  Prefix.massCommon+"ReconciliationStBasilPart2Comment&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.massCommon+"EndOfReconciliationComment&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "إذا أرادوا، يقول الشعب الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام", 
   ], 
@@ -6682,16 +6863,16 @@ PrayersArray= [[
   "أؤوشت إمفنوتي خين أوهوتي نيم او إسثرتير", 
   "اسْجُدوا للهِ بخوفٍ ورعدةٍ.", 
   ], 
-  ],
+  ], 
   [
-    [
-      Prefix.massCommon+"AssemblyResponseWePraiseServeAndBow&D=$copticFeasts.AnyDay&C=Assembly", 
-      "Ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲧⲉⲛⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲕ ⲧⲉⲛϣⲉⲙϣⲓ ⲙ̀ⲙⲟⲕ ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ.", 
-      "Nous Te louons, nous Te bénissons, nous Te servons et nous T’adorons.", 
-      "تينهوس إيروك، تين اسمو إيروك تينشيمشي إمموك تين أؤوشت إمموك.", 
-      "نسبحك. نباركك. نخدمك، يارب، ونسجد لك.", 
-      ], 
-  ],
+  [
+  Prefix.massCommon+"AssemblyResponseWePraiseServeAndBow&D=$copticFeasts.AnyDay&C=Assembly", 
+  "Ⲧⲉⲛϩⲱⲥ ⲉ̀ⲣⲟⲕ ⲧⲉⲛⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟⲕ ⲧⲉⲛϣⲉⲙϣⲓ ⲙ̀ⲙⲟⲕ ⲧⲉⲛⲟⲩⲱϣⲧ ⲙ̀ⲙⲟⲕ.", 
+  "Nous Te louons, nous Te bénissons, nous Te servons et nous T’adorons.", 
+  "تينهوس إيروك، تين اسمو إيروك تينشيمشي إمموك تين أؤوشت إمموك.", 
+  "نسبحك. نباركك. نخدمك، يارب، ونسجد لك.", 
+  ], 
+  ], 
   [
   [
   Prefix.massCommon+"InstitutionNarrative13Comment&D=$copticFeasts.AnyDay&C=Comments", 
@@ -6871,9 +7052,8 @@ PrayersArray= [[
   "هذا الذي من قبله المجد والكرامة والعزة والسجود، تليق بك معه ومع الروح القدس المحيي المساوي لك الآن وكل أوان وإلى دهر الدهور كلها آمين.", 
   ], 
   [
-  Prefix.massCommon+"ReconciliationPart2Comment&D=$copticFeasts.AnyDay&C=Comments", 
-  "", 
-  "إذا أرادوا، يقول الشعب الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام", 
+  Prefix.placeHolder, 
+  Prefix.massCommon+"EndOfReconciliationComment&D=$copticFeasts.AnyDay", 
   ], 
   ], 
   [
@@ -7461,9 +7641,9 @@ PrayersArray= [[
   "اسْجُدوا للحَمَلِ كَلِمَةُ الله.", 
   ], 
   [
-    Prefix.placeHolder, 
-    Prefix.massCommon+"AssemblyResponseWePraiseServeAndBow&D=$copticFeasts.AnyDay", 
-    ], 
+  Prefix.placeHolder, 
+  Prefix.massCommon+"AssemblyResponseWePraiseServeAndBow&D=$copticFeasts.AnyDay", 
+  ], 
   [
   Prefix.placeHolder, 
   Prefix.massCommon+"InstitutionNarrative13Comment&D=$copticFeasts.AnyDay", 
@@ -7508,7 +7688,7 @@ PrayersArray= [[
   [
   Prefix.placeHolder, 
   Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
-  ],
+  ], 
   ], 
   [
   [
@@ -7533,8 +7713,8 @@ PrayersArray= [[
   "لأنك أنت هو الله الرحوم الذي لا يشاء موت الخاطئ مثل ما يرجع ويحيا\nردنا يا الله إلى خلاصك واصنع معنا كصلاحك يا من يصنع أكثر مما نسأل أو نفهم.", 
   ], 
   [
-      Prefix.placeHolder, 
-      Prefix.massCommon+"AssemblyResponseAsItWereSoLetItBe&D=$copticFeasts.AnyDay", 
+  Prefix.placeHolder, 
+  Prefix.massCommon+"AssemblyResponseAsItWereSoLetItBe&D=$copticFeasts.AnyDay", 
   ], 
   [
   Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Priest", 
@@ -7618,9 +7798,9 @@ PrayersArray= [[
   Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
   ], 
   [
-    Prefix.placeHolder, 
-    Prefix.massCommon+"FractionPrayerPlaceholder&D=$copticFeasts.AnyDay", 
-    ], 
+  Prefix.placeHolder, 
+  Prefix.massCommon+"FractionPrayerPlaceholder&D=$copticFeasts.AnyDay", 
+  ], 
   ], 
   [
   [
@@ -7766,109 +7946,110 @@ PrayersArray= [[
   ], 
   ], 
   [
-    [Prefix.massStGregory+"Litanies&D=$copticFeasts.AnyDay"
-    ],
-      [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForTheChurchPart1&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForTheChurchPart2&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePopeAndBishopsPart1&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePopeAndBishopsPart2&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePriestAndDiaconsPart1&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePriestAndDiaconsPart2&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePlacePart1&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyForThePlacePart2&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"GiNayNan&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"IntroToSeasonalLitanies&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyOfTheRiver&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyOfThePlants&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyOfTheHarvest&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"CombinedSeasonalLitanies&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitaniesFinal&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"LitanyOblations&D=$copticFeasts.AnyDay", 
-        ], 
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
-        ],
-        [
-        Prefix.placeHolder, 
-        Prefix.massCommon+"SaintsCommemoration&D=$copticFeasts.AnyDay"
-        ],
-  ],
+  [
+  Prefix.massStGregory+"Litanies&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForTheChurchPart1&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForTheChurchPart2&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePopeAndBishopsPart1&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePopeAndBishopsPart2&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePriestAndDiaconsPart1&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePriestAndDiaconsPart2&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePlacePart1&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyForThePlacePart2&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"GiNayNan&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"IntroToSeasonalLitanies&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"SeasonalLitanyOfTheRiver&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"SeasonalLitanyOfThePlants&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"SeasonalLitanyOfTheHarvest&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"CombinedSeasonalLitanies&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieEliesonThreeTimes&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitaniesFinal&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"LitanyOblations&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay", 
+  ], 
+  [
+  Prefix.placeHolder, 
+  Prefix.massCommon+"SaintsCommemoration&D=$copticFeasts.AnyDay", 
+  ], 
+  ], 
   [
   [
   Prefix.massStCyril+"ReconciliationPart1&D=$copticFeasts.AnyDay&C=Title", 
@@ -7961,7 +8142,7 @@ PrayersArray= [[
   "Ⲟⲩⲟϩ ⲛ̀ⲑⲟⲕ ⲡⲉⲧⲉⲛⲟⲩⲱⲣⲡ ⲛⲁⲕ ⲉ̀ⲡ̀ϣⲱⲓ ⲙ̀ⲡⲓⲱ̀ⲟⲩ: ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ: ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ: ⲛⲉⲙ ϯⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ: ⲫ̀Ⲓⲱⲧ ⲛⲉⲙ ⲡ̀Ϣⲏⲣⲓ ⲛⲉⲙ ⲡⲓⲠ̀ⲛⲉⲩⲙⲁ ⲉ̅ⲑ̅ⲩ̅. Ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉ̀ⲛⲉϩ ⲧⲏⲣⲟⲩ. Ⲁ̀ⲙⲏⲛ.", 
   "", 
   "", 
-  "(وأنت الذي نرسل لك إلي فوق المجد والكرامة والعز والسجود، أيها الآب والإبن والروح القدس. الآن وكل أوان وإلي دهر الدهور. آمين", 
+  "(وأنت الذي نرسل لك إلي فوق المجد والكرامة والعز والسجود، أيها الآب والابن والروح القدس. الآن وكل أوان وإلي دهر الدهور. آمين", 
   ], 
   ], 
   [
@@ -9767,7 +9948,7 @@ PrayersArray= [[
   "", 
   "", 
   "", 
-  "يا الله الآب السماوي القادر على كل شيء أبا ربنا وإلهنا ومخلصنا وملكنا يسوع المسيح الذي دعا له إثني عشر رسولًا ليكونا له تلاميذ وسبعين آخرين وأعطاهم السلطان أن يشفوا المرضي ويطهروا البرص ويطردوا الشياطين والأرواح النجسة ويقيموا الموتي، وليكرزوا بالإنجيل للخليقة كلها ويعمدوهم باسم الآب والإبن والروح القدس.", 
+  "يا الله الآب السماوي القادر على كل شيء أبا ربنا وإلهنا ومخلصنا وملكنا يسوع المسيح الذي دعا له إثني عشر رسولًا ليكونا له تلاميذ وسبعين آخرين وأعطاهم السلطان أن يشفوا المرضي ويطهروا البرص ويطردوا الشياطين والأرواح النجسة ويقيموا الموتي، وليكرزوا بالإنجيل للخليقة كلها ويعمدوهم باسم الآب والابن والروح القدس.", 
   ], 
   [
   Prefix.fractionPrayer+"&D=$copticFeasts.Apostles&C=Priest", 
@@ -21643,7 +21824,7 @@ PrayersArray= [[
   "le Père et le Fils,", 
   "the Father and the Son,", 
   "إفيوت نيم إبشيري،", 
-  "الآب والإبن،", 
+  "الآب والابن،", 
   ], 
   [
   "HW_KhinEfranInTetriays&D=$Seasons.HolyWeek&C=Assembly", 

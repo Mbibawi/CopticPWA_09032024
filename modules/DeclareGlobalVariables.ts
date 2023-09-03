@@ -500,7 +500,10 @@ const PrayersArraysKeys:[string, string[][][]][]= [
     [Prefix.praxis, PraxisResponsesPrayersArray],
     [Prefix.cymbalVerses, CymbalVersesPrayersArray],
     [Prefix.bookOfHours, bookOfHoursPrayersArray],
-    [Prefix.HolyWeek, holyWeekPrayersArray]
+    [Prefix.HolyWeek, holyWeekPrayersArray],
+    [Prefix.incenseDawn, IncensePrayersArray],
+    [Prefix.incenseDawn, IncensePrayersArray],
+    [Prefix.commonIncense, IncensePrayersArray],
 ];
 
 

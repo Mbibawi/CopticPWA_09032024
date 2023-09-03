@@ -334,6 +334,28 @@ const btnIncenseDawn: Button = new Button({
       gospelButton.onClick({returnPrefix:true}),
       gospelButton,
       btndocFragment);
+    
+      (function hideGodHaveMercyOnUsIfBishop() {
+        let dataRoot = Prefix.commonIncense + "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay";
+        
+        let godHaveMercyHtml: HTMLDivElement[] = selectElementsByDataRoot(btndocFragment, dataRoot.split('IfBishop')[0], { startsWith: true }); //We select all the paragraphs not only the paragraph for the Bishop
+        godHaveMercyHtml.filter(row => godHaveMercyHtml.indexOf(row) > 0 &&  godHaveMercyHtml.indexOf(row)< godHaveMercyHtml.length-1).forEach(row => row.remove());
+       
+        let godHaveMercy: string[][] = IncensePrayersArray.find(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);//We get the whole table not only the second row. Notice that the first row of the table is the row containing the title
+        
+        if (!godHaveMercy) return console.log('Didn\'t find table Gode Have Mercy');
+              
+        addExpandablePrayer(
+          godHaveMercyHtml[0].nextElementSibling as HTMLDivElement,
+          'godHaveMercy',
+          {
+            AR: godHaveMercy[1][4],//This is the arabic text of the lable 
+            FR: godHaveMercy[1][2], //this is the French text of the label
+          },
+          [[godHaveMercy[2], godHaveMercy[3]]],//We add only the second and third row, the 1st row is a comment from which we retrieved the text for the title
+          btnMassUnBaptised.languages
+        );
+      })();
 
     (async function addGreatLentPrayers() {
       if (btn.btnID !== btnIncenseDawn.btnID) return;
@@ -345,27 +367,20 @@ const btnIncenseDawn: Button = new Button({
           //If we are during any day of the week, we will add the Prophecies readings to the children of the button
           if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn)<0) btnIncenseDawn.children.unshift(btnReadingsPropheciesDawn);
         })();
-        (async function addEklonominTaghonata() {
+        (async function insertEklonominTaghonata() {
           let efnotiNaynan: HTMLDivElement[] =
             selectElementsByDataRoot(btndocFragment, Prefix.commonPrayer + 'EfnotiNaynan&D=$copticFeasts.AnyDay', { startsWith: true });
           
           let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling as HTMLElement; //This is the "Kyrie Elison 3 times"
-          insertion.insertAdjacentElement('beforebegin', insertion.cloneNode(true) as HTMLElement);//We duplicated the "Kyrie Elison 3 times"
-          let godHaveMercy: string[][][] = btnIncenseDawn.prayersArray.filter(table => table[0][0].startsWith(Prefix.incenseDawn + 'GodHaveMercyOnUs')); //This will give us all the prayers 
-          let KyrieElieson:string[][] = btnIncenseDawn.prayersArray.filter(table => table[0][0] === Prefix.commonPrayer + 'KyrieElieson&D=$copticFeasts.AnyDay&C=Assembly')[0]; //This is "Kyrie Elison"
-          let blocks: string[][][] = [];
-          blocks.push(godHaveMercy[0]);//this is the comment at the begining
-          for (let i = 2; i < godHaveMercy.length; i += 3){
-            blocks.push([...godHaveMercy[1]]); //This is the refrain repated every 3 parts.We are pushing a copy of it, to avoid affecting it by the splice in the next step
-            if(i>4) blocks[blocks.length-1].splice(0, 1);//This will remove the title from the refrain if it is not the 1st refrain (it removes the 1st row in the refrain table)
-            blocks.push(godHaveMercy[i]);
-            blocks.push(KyrieElieson);
-            blocks.push(godHaveMercy[i+1]);
-            blocks.push(KyrieElieson);
-            blocks.push(godHaveMercy[i + 2]);
-            if(i+2<(godHaveMercy.length -1)) blocks.push(KyrieElieson)
-          }
-          insertPrayersAdjacentToExistingElement(blocks, prayersLanguages, { beforeOrAfter: 'beforebegin', el: insertion });
+          let godHaveMercy: string[][] = btnIncenseDawn.prayersArray.find(table => table[0][0].startsWith(Prefix.incenseDawn + 'GodHaveMercyOnUs&D=$Seasons.GreatLent')); //This will give us all the prayers 
+
+          let refrainsTitles = godHaveMercy.filter(row => row[0] === 'Prefix.incenseDawn+"GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent&C=Title'); //Those are all the titles of the refrain
+
+          refrainsTitles
+            .filter(title => refrainsTitles.indexOf(title) !== 0)
+            .forEach(title => refrainsTitles.splice(refrainsTitles.indexOf(title), 1));
+            
+          insertPrayersAdjacentToExistingElement([godHaveMercy], prayersLanguages, { beforeOrAfter: 'beforebegin', el: insertion });
         })();
         return
       } else {
@@ -550,6 +565,31 @@ const btnMassStBasil: Button = new Button({
     
     let btndocFragment = btn.docFragment;
 
+    (function insertStBasilSecondReconciliationBtn() {
+      if(btn !== btnMassStBasil) return;
+      let reconciliation = PrayersArrays.MassStBasilPrayersArray.find(table => table[0][0].startsWith(Prefix.massStBasil + 'Reconciliation2'));
+      if (!reconciliation) return console.log('Didn\'t find reconciliation');
+      let htmlBtn = addExpandablePrayer(
+        selectElementsByDataRoot(btndocFragment, 'Reconciliation&D=$copticFeasts.AnyDay', { includes: true })[0].nextElementSibling as HTMLDivElement,
+        'secondStBasilReconciliation',
+        {
+          AR: reconciliation[0][2],
+          FR: reconciliation[0][4]
+        },
+        [reconciliation],
+        btn.languages
+      )[0];
+      htmlBtn.addEventListener('click', () => {
+        let reconciliation =
+        Array.from(containerDiv.querySelectorAll('.Row')) as HTMLDivElement[];
+        reconciliation
+          .filter(row => row.dataset.group === Prefix.massStBasil + 'Reconciliation&D=$copticFeasts.AnyDay')
+          .forEach(row => {row.classList.toggle(hidden);
+        })
+
+      })    
+    })();
+
     showFractionPrayersMasterButton(
       btn,
       selectElementsByDataRoot(btndocFragment, Prefix.massCommon + 'FractionPrayerPlaceholder&D=$copticFeasts.AnyDay', {equal:true})[0],
@@ -609,11 +649,6 @@ const btnMassStBasil: Button = new Button({
         'RedirectionToFractionIntroduction'
       );
     })();
-
-
-
-
-
 
     (function insertAdamAndWatesSpasmos() {
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
@@ -755,6 +790,18 @@ const btnMassStBasil: Button = new Button({
       };
   
     })();
+
+    (function removeNonRelevantSeasonalLitany() {
+      let seasonal = Array.from(btndocFragment.querySelectorAll('.Row')) as HTMLDivElement[]
+      seasonal = seasonal.filter(row => row.dataset.root.includes('SeasonalLitanyOf'));
+      let dataRoot: string;
+      if (closingHymn.Season === closingHymnAll[0].Season) dataRoot ='SeasonalLitanyOfThe' + closingHymn.Season;//River
+      else if(closingHymn.Season === closingHymnAll[1].Season) dataRoot ='SeasonalLitanyOfThe' + closingHymn.Season; //Plants
+      else if (closingHymn.Season === closingHymnAll[2].Season) dataRoot ='SeasonalLitanyOfThe' + closingHymn.Season; //Hervest
+      
+      seasonal.filter(row => !row.dataset.root.includes(dataRoot)).forEach(row => row.remove());
+;
+    })();
     
   },
 });
@@ -891,29 +938,26 @@ const btnMassUnBaptised: Button = new Button({
     let btndocFragment = btnMassUnBaptised.docFragment;
 
     (function hideGodHaveMercyOnUsIfBishop() {
-      let dataRoot = Prefix.massCommon + "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay";
+      let dataRoot = Prefix.commonIncense + "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay";
       
-      let godHaveMercyHtml = selectElementsByDataRoot(btndocFragment, dataRoot, { equal: true });
+      let godHaveMercyHtml: HTMLDivElement[] = selectElementsByDataRoot(btndocFragment, dataRoot.split('IfBishop')[0], { startsWith: true }); //We select all the paragraphs not only the paragraph for the Bishop
+
+      godHaveMercyHtml.filter(row => godHaveMercyHtml.indexOf(row) > 0).forEach(row => row.remove());
      
-      let godHaveMercy = btnMassUnBaptised.prayersArray.filter(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);//We get the whole table not only the second row. Notice that the first row of the table is the row containing the title
+      let godHaveMercy: string[][] = IncensePrayersArray.find(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);//We get the whole table not only the second row. Notice that the first row of the table is the row containing the title
       
-      if (godHaveMercy.length < 1) return;
+      if (!godHaveMercy) return console.log('Didn\'t find table Gode Have Mercy');
             
       addExpandablePrayer(
-        godHaveMercyHtml[0] as HTMLDivElement,
+        godHaveMercyHtml[0].nextElementSibling as HTMLDivElement,
         'godHaveMercy',
         {
-          AR: godHaveMercy[0][1][4],//This is the arabic text of the lable 
-          FR: godHaveMercy[0][1][2], //this is the French text of the label
+          AR: godHaveMercy[1][4],//This is the arabic text of the lable 
+          FR: godHaveMercy[1][2], //this is the French text of the label
         },
-        [[godHaveMercy[0][2]]],//We add only the second row, the 1st row is a comment from which we retrieved the text for the title
+        [[godHaveMercy[2], godHaveMercy[3]]],//We add only the second and third row, the 1st row is a comment from which we retrieved the text for the title
         btnMassUnBaptised.languages
-      )[1];
-        
-      godHaveMercyHtml.forEach(
-        (row: HTMLDivElement) => row.remove()
       );
-
     })();
 
     if (Season === Seasons.GreatLent
@@ -1526,9 +1570,9 @@ const btnReadingsGospelIncenseDawn: Button = new Button({
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelDawn + "Psalm", Prefix.gospelDawn + "Gospel"],
-  prayersArray: [ReadingsArrays.GospelDawnArray],
   languages: [...readingsLanguages],
   onClick: (returnPrefix:{returnPrefix:boolean} ={returnPrefix:false}) => {
+    btnReadingsGospelIncenseDawn.prayersArray = ReadingsArrays.GospelDawnArray;
     scrollToTop(); //scrolling to the top of the page
     if(returnPrefix.returnPrefix) return Prefix.gospelDawn
   },
@@ -1543,9 +1587,9 @@ const btnReadingsGospelNight: Button = new Button({
   },
   showPrayers: true,
   prayersSequence: [Prefix.gospelNight + "Psalm", Prefix.gospelNight + "Gospel"],
-  prayersArray: ReadingsArrays.GospelNightArray,
   languages: [...readingsLanguages],
   onClick: () => {
+    btnReadingsGospelNight.prayersArray = ReadingsArrays.GospelNightArray;
     scrollToTop(); //scrolling to the top of the page
   },
 });
