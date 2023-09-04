@@ -104,18 +104,19 @@ async function startApp() {
       "./Build/modules/DeclareGospelNightArray.js",
       "./Build/modules/DeclarePropheciesDawnArray.js",
     ];
-    let script: HTMLScriptElement;
     textFiles
       .forEach(async (link) => {
-      script = document.createElement("script");
-      script.src = link;
-      script.id = link.split('/Declare')[1].split('.js')[0];
-      script.type = "text/javascript";
-      return await document.getElementsByTagName("body")[0].appendChild(script);
+        let script: HTMLScriptElement = document.createElement("script");
+        script.src = link;
+        script.id = link.split('/Declare')[1].split('.js')[0];
+        script.type = "text/javascript";
+        script.onload = ()=> console.log(script.id + ' has been loaded');
+        if (script.id === 'PrayersArray')
+          script.onload = () => populatePrayersArrays(); //! We must wait that the PrayersArray script is loaded before calling populatePrayersArrays 
+        return await document.getElementsByTagName("body")[0].appendChild(script);
       });
   };
 
-  document.getElementById('PrayersArray').onload = ()=>populatePrayersArrays(); //! We must wait that the PrayersArray script is loaded before calling populatePrayersArrays  
   addKeyDownListnerToElement(document);
 }
 
@@ -329,6 +330,7 @@ async function showTitlesInRightSideBar(
  */
 function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   if (!btn) return;
+  if(containerDiv.dataset.editingMode) return showBtnInEditingMode(btn);
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;
 
@@ -1325,7 +1327,21 @@ function showPrayers(args:
  * @return {string[][][]} - the array in which a table which title starts with such prefix, should be found
  */
 function getTablesArrayFromTitlePrefix(title:string):string[][][]{
-  return PrayersArraysKeys.find(array => title.startsWith(array[0]))[1];
+  let array:string[][][] = PrayersArraysKeys.find(entry => title.startsWith(entry[0]))[1];
+  if(!array) array = PrayersArraysKeys.find(entry => title.startsWith(entry[0]))[1];
+  return array
+};
+
+/**
+ * Returns the name of the array passed to it as an argument
+ * @param {string[][][]} array
+ */
+function getArrayNameFromArray(array: string[][][]):string {
+let arrayName: string = Object.entries(PrayersArrays).find(entry => entry[1] === array)[0];
+ if (arrayName)  return 'PrayersArray';
+ else if (!arrayName) arrayName = Object.entries(ReadingsArrays).find(entry => entry[1] === array)[0];
+if (arrayName) return 'ReadingsArray.' + arrayName;
+
 };
 
 /**
@@ -2285,6 +2301,7 @@ function showSettingsPanel() {
           //@ts-ignore
           if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
           containerDiv.innerHTML = "";
+          containerDiv.dataset.editingMode = 'true';
           let editable = [
             "Choose from the list",
             "NewTable",

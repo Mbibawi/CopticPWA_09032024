@@ -503,7 +503,14 @@ const PrayersArraysKeys:[string, string[][][]][]= [
     [Prefix.HolyWeek, holyWeekPrayersArray],
     [Prefix.incenseDawn, IncensePrayersArray],
     [Prefix.incenseDawn, IncensePrayersArray],
-    [Prefix.commonIncense, IncensePrayersArray],
+    [Prefix.gospelMass, ReadingsArrays.GospelMassArray],
+    [Prefix.gospelDawn, ReadingsArrays.GospelDawnArray],
+    [Prefix.gospelVespers, ReadingsArrays.GospelVespersArray],
+    [Prefix.gospelNight, ReadingsArrays.GospelNightArray],
+    [Prefix.stPaul, ReadingsArrays.StPaulArray],
+    [Prefix.katholikon, ReadingsArrays.KatholikonArray],
+    [Prefix.praxis, ReadingsArrays.PraxisArray],
+    [Prefix.synaxarium, ReadingsArrays.SynaxariumArray],
 ];
 
 

@@ -101,7 +101,7 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
   localStorage.displayMode === displayModes[0];
   //@ts-ignore
 
-  showTables(tablesArray, args.arrayName, languages, args.clear);
+  showTables(tablesArray, args.arrayName, languages, containerDiv, containerDiv, args.clear);
 
   
 }
@@ -110,7 +110,14 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
  * @param {string[][][]} tablesArray - an array containing the tables that we need to show and start editing
  * @param {string[]} languages - the languages included in the tables
  */
-function showTables(tablesArray: string[][][], arrayName:string, languages: string[], clear: boolean = true) {
+function showTables(
+  tablesArray: string[][][],
+  arrayName: string,
+  languages: string[],
+  position: HTMLElement | DocumentFragment | { el: HTMLElement, beforeOrAfter: InsertPosition } = containerDiv,
+  container: HTMLElement | DocumentFragment = containerDiv,
+  clear: boolean = true,
+isPlaceHolder:boolean = false) {
   if (!arrayName) return;
   if (clear === true) containerDiv.innerHTML = '';
   let htmlRow: HTMLDivElement;
@@ -121,10 +128,11 @@ function showTables(tablesArray: string[][][], arrayName:string, languages: stri
       table
         .forEach(row => {
     if (!row) return;
-    htmlRow = createHtmlElementForPrayerEditingMode(row, languages);
+    htmlRow = createHtmlElementForPrayerEditingMode(row, languages, position, container);
     //We make the paragraph children of each row, editable
           if (htmlRow) {
             htmlRow.dataset.arrayName = arrayName;
+            if (isPlaceHolder) htmlRow.dataset.isPlaceHolder = htmlRow.dataset.group;
             Array.from(htmlRow.children)
               .forEach((paragraph: HTMLParagraphElement) =>{
               paragraph.contentEditable = "true";
@@ -136,11 +144,11 @@ function showTables(tablesArray: string[][][], arrayName:string, languages: stri
    //We add the editing buttons
 addEdintingButtons();
 //Setting the CSS of the newly added rows
-setCSS(Array.from(containerDiv.querySelectorAll("div.Row")));
+setCSS(Array.from(container.querySelectorAll("div.Row")));
 //Showing the titles in the right side-bar
 
 //removing the minus sign at the begining of the title
-Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
+Array.from(container.querySelectorAll("div.Title, div.SubTitle"))
   .forEach(div =>
     Array.from(div.getElementsByTagName('P'))
     .forEach((p: HTMLElement) =>
@@ -148,7 +156,7 @@ Array.from(containerDiv.querySelectorAll("div.Title, div.SubTitle"))
   ));
 
 showTitlesInRightSideBar(Array.from(
-  containerDiv.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
+  container.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
 }
 
 /**
@@ -352,7 +360,7 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
       if (titles.has(title)) return;
       else titles.add(title);
       
-      arrayName = htmlRow.dataset.arrayName
+      arrayName = htmlRow.dataset.arrayName;
       
       if (!arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
       else if (!savedArrays.has(arrayName)) savedArrays.add(arrayName);
@@ -385,12 +393,22 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
             htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
     
       if (htmlTable.length === 0) return;
+
+      if (htmlTable[0].dataset.isPlaceHolder) modifyArray(htmlTable, false);
+      if (!htmlTable[0].dataset.isPlaceHolder) modifyArray(htmlTable, true);
+    
+
+
       
-     
-      //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
-      let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+  function modifyArray(htmlTable:HTMLDivElement[], replaceWithPlaceHolder:boolean = false) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
+    let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
+    //If we have placeHolders rows that were not converted:
+    editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length === 3).forEach(row => { row.splice(0, 1); row[0] = Prefix.placeHolder });
+    
+    //If we have placeHolders rows that were converted into html rows
+    if(replaceWithPlaceHolder) htmlTable.filter(row => row.dataset.isPlaceHolder).forEach(row => editedTable[htmlTable.indexOf(row)] = [Prefix.placeHolder, row.title]);
       
-      editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length ===3).forEach(row =>{ row.splice(0, 1); row[0] = Prefix.placeHolder});
+
     
       let oldTable: string[][] =
         tablesArray
@@ -400,7 +418,8 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
           
       else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
        tablesArray.push(editedTable);
-    };
+  }
+};
 
 /**
  * 
@@ -614,7 +633,9 @@ function createHtmlElementForPrayerEditingMode(
   languagesArray: string[],
   position:
     | HTMLElement
-    | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv
+    | DocumentFragment
+    | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv,
+    container:HTMLElement | DocumentFragment = containerDiv
 ): HTMLDivElement {
   let isPlaceHolder: boolean = false;
   if (tblRow[0].startsWith(Prefix.placeHolder)) isPlaceHolder = true;
@@ -631,14 +652,49 @@ function createHtmlElementForPrayerEditingMode(
   if (actorClass) row.classList.add(actorClass);
   } else if (isPlaceHolder) {
     tblRow = [...tblRow];
+    let array: string[][][] = getTablesArrayFromTitlePrefix(tblRow[1]);
+    let arrayName: string = getArrayNameFromArray(array);
+    if (!arrayName) return;
+    showTables([array.find(tbl => splitTitle(tbl[0][0])[0] === tblRow[1])], arrayName, getLanguages(arrayName), container, container, false)
+
+
     tblRow.unshift(tblRow[0]);
-    let children = Array.from(containerDiv.children) as HTMLDivElement[];
+    let children = Array.from(container.children) as HTMLDivElement[];
     row.classList.add('PlaceHolder');
     row.dataset.isPlaceHolder = Prefix.placeHolder;
     row.dataset.root = children[children.length - 1].dataset.root;
     row.title = children[children.length - 1].title;
     row.style.backgroundColor = 'grey';
-    languagesArray = ['FR', 'FR', 'FR'];
+    let copyLangs = [...languagesArray];
+    row.addEventListener('click', () => {
+      let shown = Array.from(containerDiv.querySelectorAll('div'))
+        .filter(div => div.dataset.placeHolderTitle === tblRow[2]);
+      if (shown.length > 0)
+      {
+        shown.forEach(div => div.remove());
+        return
+      };
+      let created = showPrayers({
+        wordTable: getTablesArrayFromTitlePrefix(tblRow[2]).find(tbl => splitTitle(tbl[0][0])[0] === tblRow[2]).reverse(),
+        clearContainerDiv: false,
+        clearRightSideBar: false,
+        languages: copyLangs, //We pass a copy of the languages array
+        position: {
+          el: row,
+          beforeOrAfter: 'afterend'
+        }
+      });
+      created.forEach(divArray => {
+        //Prefix.massStBasil + 'Reconciliation'
+        setCSS(divArray);
+        divArray.forEach(div =>{ 
+          div.dataset.placeHolderTitle = tblRow[2];
+        }
+        )
+      });
+      //row.classList.toggle(hidden);
+  });
+    languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been add to the placeHolder row
   };
 
   if (actorClass && actorClass.includes("Title")) {
@@ -979,7 +1035,7 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
-  showTables([table], arrayName, getLanguages(arrayName));
+  showTables([table], arrayName, getLanguages(arrayName), containerDiv, containerDiv);
   scrollToTop();
 
 };
@@ -1017,4 +1073,100 @@ function editDayReadings(date?: string) {
         })
     });
   };
+}
+function showBtnInEditingMode(btn: Button) {
+
+ if(containerDiv.children.length>0) saveModifiedArray(true, true);
+
+  let container: HTMLElement | DocumentFragment = containerDiv;
+  if (btn.docFragment) container = btn.docFragment;
+    hideInlineButtonsDiv();
+    inlineBtnsDiv.innerHTML = "";
+    containerDiv.style.gridTemplateColumns = "100%";
+  if (btn.onClick) btn.onClick();
+  
+  if (
+    btn.prayersSequence &&
+    btn.prayersArray &&
+    btn.languages
+  ) showPrayersFromSequence();
+
+    closeSideBar(leftSideBar);
+
+ function showPrayersFromSequence(){
+  
+     btn.prayersSequence
+       .forEach(title => {
+         if (!title.includes('&D=')) return;
+         let array: string[][][] = getTablesArrayFromTitlePrefix(title);
+         let arrayName: string = getArrayNameFromArray(array);
+         if (!arrayName) return;
+         showTables([array.find(tbl => splitTitle(tbl[0][0])[0] === title)], arrayName, getLanguages(arrayName), container, container, false)
+     });
+
+  };
+    
+  /**
+   *          .forEach(tbl => {
+           tbl
+             .forEach(row => {
+               createHtmlElementForPrayerEditingMode(row, btn.languages, container, container)
+             })
+         })
+   */
+
+/*     showPrayers({ btn: btn, clearContainerDiv: true, clearRightSideBar: true, container: container, languages: btn.languages, prayersSequence: btn.prayersSequence, position: container });
+    }; */
+
+  //if (btn.afterShowPrayers) btn.afterShowPrayers();
+
+  //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
+//  setCSS(Array.from(container.querySelectorAll("div.Row"))); //setting the number and width of the columns for each html element with class 'Row'
+
+
+  if (btn.children && btn.children.length > 0) {
+  
+      //We will not empty the left side bar unless the btn has children to be shown  in the side bar instead of the children of the btn's parent (btn being itself one of those children)
+      //!CAUTION, this must come after btn.onClick() is called because some buttons are not initiated with children, but their children are added  when their onClick()  is called
+      sideBarBtnsContainer.innerHTML = "";
+    
+
+    btn.children.forEach((childBtn: Button) => {
+      //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
+      if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
+      //We create the html element reprsenting the childBtn and append it to btnsDiv
+      createBtn(childBtn, sideBarBtnsContainer, childBtn.cssClass);
+    });
+  }
+
+  showTitlesInRightSideBar(
+    Array.from(
+      container.querySelectorAll(".Title, .SubTitle")
+    ) as HTMLDivElement[]
+  );
+
+  if (
+    btn.parentBtn
+    && btn.btnID !== btnGoBack.btnID 
+    && !sideBarBtnsContainer.querySelector("#" + btnGoBack.btnID)
+  ) {
+    //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
+    //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
+    createGoBackBtn(btn.parentBtn, sideBarBtnsContainer, btn.cssClass);
+    lastClickedButton = btn;
+  }
+  if (
+    btn.btnID !== btnMain.btnID  //The button itself is not btnMain
+    && btn.btnID !== btnGoBack.btnID //The button itself is not btnGoBack
+    && !sideBarBtnsContainer.querySelector("#" + 'settings')
+   && !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
+  ) {
+    createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
+
+  }
+
+  if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
+
+  if (btn.btnID === btnMain.btnID) addSettingsButton();
+  
 }
