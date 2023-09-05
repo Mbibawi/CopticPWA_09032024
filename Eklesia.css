@@ -150,6 +150,7 @@ width: 40%;
 }
 .Row {
   display: grid;
+  align-items: start;
   height:fit-content;
   text-align: justify;
   border-radius: 5px;
@@ -173,8 +174,8 @@ p{
   direction: rtl !important;
   font-family: Amiri;
   font-weight: 100;
-  font-size: 3.5cqi;
-  line-height: 5cqi;
+  font-size: 3.4cqi;
+  line-height: 1.5em;
 }
 
 .AR{
@@ -192,6 +193,7 @@ p{
  grid-area: FR;
  font-family: DCO;
  font-size: 3cqi;
+ line-height: 1.5em;
  font-weight: normal;
 }
 
@@ -200,8 +202,8 @@ p{
   grid-area: COP;
   border-right-style: groove;
   font-family: ArialCoptic;
-  font-size: 3cqi;
-  line-height: 4cqi;
+  font-size: 2.8cqi;
+  line-height: 1.5em;
   font-stretch: condensed;
 }
 .EN{
@@ -659,16 +661,13 @@ border-radius: 20px ;
 
 .AR.amplifiedText,
 .CA.amplifiedText{
-  font-size:5cqi !important;
-  line-height: 5.5vw;
+  font-size:1.3em !important;
 }
 .FR.amplifiedText{
-  font-size:4.5cqi !important;
-  line-height:5.5vw;
+  font-size:1.3em !important;
 }
 .COP.amplifiedText{
-  font-size:3.7cqi !important;
-  line-height: 5cqi;
+  font-size:1.2em !important;
 }
 :lang(ar){
 quotes: '"' '"';

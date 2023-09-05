@@ -257,7 +257,22 @@ const bookOfHoursLabels:{id:string, AR:string, FR:string, EN:string}[] =  [
       FR: '12ème heure',
       EN: '12th Hour'
     },
-  ];
+];
+
+const bookOfHours = {
+    DawnPrayersArray: [],
+    DawnPrayersSequence: [],
+    ThirdHourPrayersArray: [],
+    ThirdHourPrayersSequence: [],
+    SixthHourPrayersArray: [],
+    SixthHourPrayersSequence: [],
+    NinethHourPrayersArray: [],
+    NinethHourPrayersSequence: [],
+    EleventhHourPrayersArray: [],
+    EleventhHourPrayersSequence: [],
+    TwelvethHourPrayersArray: [],
+    TwelvethHourPrayersSequence: [],
+};   
 const ReadingsArrays = {
     PraxisArray: [],
     KatholikonArray: [],

@@ -196,17 +196,3 @@ const MassPrayersSequences = {
         ], //the sequence of prayers from 'Confession' until the end of the mass, it is common to all masses 
 };    
 
-let bookOfHours = {
-    DawnPrayersArray: [],
-    DawnPrayersSequence: [],
-    ThirdHourPrayersArray: [],
-    ThirdHourPrayersSequence: [],
-    SixthHourPrayersArray: [],
-    SixthHourPrayersSequence: [],
-    NinethHourPrayersArray: [],
-    NinethHourPrayersSequence: [],
-    EleventhHourPrayersArray: [],
-    EleventhHourPrayersSequence: [],
-    TwelvethHourPrayersArray: [],
-    TwelvethHourPrayersSequence: [],
-};   
