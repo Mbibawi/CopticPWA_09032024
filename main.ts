@@ -149,9 +149,11 @@ function createHtmlElementForPrayer(args: {
   if (args.actorClass) {
     let parsed = JSON.parse(localStorage.showActors).filter(
       (el) => el[0].EN === args.actorClass
-    );
-    if (parsed.length > 0 && parsed[0][1] === false) return; //If had hide an actor, we will stop and return
+    ); //localStorage.showActors is an array where each element is the actor object (i.e., a {AR:string, FR:string, EN:sstring}) and its status as boolean: i.e. an array of [[{actor}, boolean], [{actor}, boolean]]
+    if (parsed.length > 0 && parsed[0][1] === false) return; //If the actor status is false, we will not process the row
   }
+  if (!args.actorClass) args.actorClass = 'NoActor';
+  
   if (!args.userLanguages)
     args.userLanguages = JSON.parse(localStorage.userLanguages);
   if (!args.position) args.position = containerDiv;
@@ -177,7 +179,9 @@ function createHtmlElementForPrayer(args: {
       collapseOrExpandText({ titleRow: htmlRow });
     }); //we also add a 'click' eventListener to the 'Title' elements
     htmlRow.id = args.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
-  }
+  };
+
+
 
   //looping the elemparams.ents containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < args.tblRow.length; x++) {
@@ -1236,7 +1240,7 @@ function showPrayers(args:
     wordTable?:string[][],
     languages?:string[]
   }
-): HTMLDivElement[][] {
+): HTMLDivElement[] {
   if (!args.btn && !args.wordTable) { console.log('You must provide either a button with prayersSequence and prayersArray, either a word table. None of those arguments is provided'); return};
   
   //Setting container, and the values for the missing arguments
@@ -1259,7 +1263,7 @@ function showPrayers(args:
   
   if (!args.wordTable) {
     if (!args.prayersSequence) args.prayersSequence = args.btn.prayersSequence;
-    if (!args.prayersSequence || !args.btn.prayersArray) { console.log('Either the prayersSequence or the prayersArray are missing, we cannot retrieve the tables'); return };
+    if (!args.prayersSequence) { console.log('The prayersSequenceis missing, we cannot retrieve the tables'); return };
     args.prayersSequence
     .forEach(tableTitle => {
         //If no string[][] was passed in the arguments, we will retrieve the table from its title (prayer)
@@ -1268,7 +1272,7 @@ function showPrayers(args:
         if (tableTitle.includes("&D=")) date = "";
         else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
         tableTitle += date; //we add the date to the title of the table
-      tables.push(findTableInPrayersArray(tableTitle, args.btn.prayersArray) as string[][]);
+      tables.push(findTableInPrayersArray(tableTitle, getTablesArrayFromTitlePrefix(tableTitle)) as string[][]);
     })
   } else if(args.wordTable) tables.push(args.wordTable);
 
@@ -1276,8 +1280,9 @@ function showPrayers(args:
 
     //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
   
-  return tables.filter(table=>table).map(table => {
-    let tblHtmlDivs: HTMLDivElement[] = [];
+  let tblHtmlDivs: HTMLDivElement[] = []; 
+  tables
+    .forEach(table => {
     if (!table) { console.log('tables = ', tables); return };
     table
       .map(row => {
@@ -1285,8 +1290,8 @@ function showPrayers(args:
         if (!divs || divs.length === 0) return;
         tblHtmlDivs.push(...divs);
       });
-    return tblHtmlDivs;
   });
+  return tblHtmlDivs;
 
   function processRow(row:string[]):HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
@@ -1297,23 +1302,23 @@ function showPrayers(args:
   function processPlaceHolder(row:string[]):HTMLDivElement[] {
     if (!row[1]) {console.log(row); return};
     //We retrieve the tables' array (which is a string[][][]) from the title of the table in row[1]
-    let tblsArray = getTablesArrayFromTitlePrefix(row[1]);
-    if (!tblsArray) console.log('Failed to retrieve the tables array form the title : ', row[1]); 
     
     //We retrieve the table itself
-    let tbl = findTableInPrayersArray(row[1], tblsArray, { equal: true }) as string[][];
+    let tbl = findTableInPrayersArray(row[1], getTablesArrayFromTitlePrefix(row[1]), { equal: true }) as string[][];
         
     if (!tbl) { console.log('Could\'t find the placeHolder table : row[2]  =', row[2]); return }; 
     
     //We create html div elements representing each row (i.e., string[]) in the table
+    
     return tbl.map(tblRow => createElement(tblRow));
   };
 
   function createElement(row:string[]):HTMLDivElement{
-    if (row[0].startsWith(Prefix.placeHolder)) return;
+    if (!row) return;
+    if (row[0] === Prefix.placeHolder) {processPlaceHolder(row); return};
     return createHtmlElementForPrayer({
       tblRow: row,
-      languagesArray: args.languages,
+      languagesArray: args.languages, 
       position: args.position,
       container: args.container,
     }) as HTMLDivElement
@@ -1327,9 +1332,8 @@ function showPrayers(args:
  * @return {string[][][]} - the array in which a table which title starts with such prefix, should be found
  */
 function getTablesArrayFromTitlePrefix(title:string):string[][][]{
-  let array:string[][][] = PrayersArraysKeys.find(entry => title.startsWith(entry[0]))[1];
-  if(!array) array = PrayersArraysKeys.find(entry => title.startsWith(entry[0]))[1];
-  return array
+  let array:[string, string] = PrayersArraysKeys.find(entry => title.startsWith(entry[0]));
+  if (array && array[1]) return eval(array[1]);
 };
 
 /**
@@ -1357,7 +1361,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
   htmlRows.forEach((row) => {
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
-    setGridColumnsNumber(row, undefined, undefined);
+    setGridColumnsNumber(row);
     //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
     row.style.gridTemplateAreas = setGridAreas(row);
 
@@ -1761,7 +1765,7 @@ async function showMultipleChoicePrayersButton(
       //Customizing the style of newDiv
       newDiv.classList.add("inlineBtns");
       //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-      setGridColumnsNumber(newDiv, 2, 2);
+      setGridColumnsNumber(newDiv,undefined, 2);
 
       //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
       inlineBtnsDiv.appendChild(newDiv);
@@ -1884,24 +1888,23 @@ async function showMultipleChoicePrayersButton(
                 clearContainerDiv: false,
                 clearRightSideBar: false,
                 position: { el: masterBtnDiv, beforeOrAfter: "afterend" }
-              }) as HTMLDivElement[][];
+              });
 
           masterBtnDiv.dataset.displayedOptionalPrayer = splitTitle(
             prayerTable[0][0]
           )[0]; //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
 
-          createdElements.map((table: HTMLDivElement[]) => {
-            if (table.length === 0) return;
-            table.forEach(
-              (htmlRow) =>
-                //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-                (htmlRow.dataset.optionalPrayer = htmlRow.dataset.root)
-            );
-            //We format the grid template of the newly added divs
-            setCSS(table);
-            //We apply the amplification of text
-            applyAmplifiedText(table);
+          createdElements.forEach(htmlRow => 
+          {
+            //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
+            if (htmlRow) htmlRow.dataset.optionalPrayer = htmlRow.dataset.root
           });
+
+        //We format the grid template of the newly added divs
+          setCSS(createdElements);
+          
+        //We apply the amplification of text
+        applyAmplifiedText(createdElements);
 
           //We scroll to the button
           createFakeAnchor(masterBtnID);
@@ -2100,7 +2103,7 @@ function showSettingsPanel() {
           fun: () => changeDate(undefined, false, 1)
         }
       });
-    setGridColumnsNumber(btnsContainer, 3, 2);
+    setGridColumnsNumber(btnsContainer, 3);
     setStyle(btn);
     function setStyle(htmlBtn:HTMLElement){
       htmlBtn.style.backgroundColor = "saddlebrown";    
@@ -2201,7 +2204,7 @@ function showSettingsPanel() {
         );
         if (JSON.parse(localStorage.userLanguages)[args.index] !==lang[0])  newBtn.classList.add("langBtnAdd");  //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
         });
-        setGridColumnsNumber(args.btnsContainer, 3, 2);
+        setGridColumnsNumber(args.btnsContainer, 3);
       }
   })();
   
@@ -2246,7 +2249,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setGridColumnsNumber(btnsContainer, 3,2);
+    setGridColumnsNumber(btnsContainer, 5);
   })();
 
   (async function showDisplayModeBtns() {
@@ -2281,7 +2284,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setGridColumnsNumber(btnsContainer,3,2);
+    setGridColumnsNumber(btnsContainer,3);
   })();
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
@@ -2338,7 +2341,7 @@ function showSettingsPanel() {
         },
       }}
     );
-    setGridColumnsNumber(btnsContainer,3,2);
+    setGridColumnsNumber(btnsContainer,3);
   })();
 
   function createBtnsContainer(id: string, labelText:string) {
@@ -2413,8 +2416,10 @@ function showSettingsPanel() {
   //Appending colors keys for actors
   (async function addActorsKeys() {
     let btnsContainer = createBtnsContainer('actorsKeys', 'Colors keys');
+    btnsContainer.style.width = 'fit-content'
     actors
       .map((actor) => {
+        if (actor.EN === 'CommentText') return;
       let newBtn = createSettingBtn(
        {
         tag:"button",
@@ -2423,13 +2428,13 @@ function showSettingsPanel() {
         id: actor.EN + "Color"
         }
       );
-      for (let i = 1; i < 4; i++) {
+      for (let key in actor) {
         let p = document.createElement("p");
-        p.innerText = actor[Object.keys(actor)[i]];
+        if(actor[key]) p.innerText = actor[key];
         newBtn.appendChild(p);
       }
     });
-    setGridColumnsNumber(btnsContainer);
+    setGridColumnsNumber(btnsContainer, 5);
   })();
   closeSideBar(leftSideBar);
 }
@@ -2440,11 +2445,11 @@ function showSettingsPanel() {
  * @param {number} max - the maximum number of columns that if exceeded, the number will be automatically reduced to a value = reduce. Its default value is 3.
  * @param {number} reduce - the number of columns that will be retained if the number of columns resulting from the number of htmlContainer children is greater than "max"
  */
-function setGridColumnsNumber(htmlContainer:HTMLElement, max?, reduce?){
+function setGridColumnsNumber(htmlContainer:HTMLElement, max?:number, exact?:number){
   let columns: number;
   columns = htmlContainer.children.length;
-  if (max && columns > max && reduce) columns = reduce;
-  else if (max && reduce && max === reduce) columns = reduce;
+  if (max && columns > max) columns = max;
+  else if (exact) columns = exact;
   htmlContainer.style.gridTemplateColumns = ((100 / columns).toString() + '% ').repeat(columns)
 };
 
@@ -2455,21 +2460,23 @@ function setGridColumnsNumber(htmlContainer:HTMLElement, max?, reduce?){
  * @param {{beforeOrAfter:InsertPosition, el: HTMLElement}} position - the position at which the prayers will be inserted, adjacent to an html element (el) in the containerDiv
  * @returns {HTMLElement[]} - an array of all the html div elements created and appended to the containerDiv
  */
-function insertPrayersAdjacentToExistingElement(
-  tables: string[][][],
+function insertPrayersAdjacentToExistingElement(args:
+  {tables: string[][][],
   languages: string[],
-  position: { beforeOrAfter: InsertPosition; el: HTMLElement }
-): HTMLElement[] | void | void[] {
-  if (!tables) return;
+  position: { beforeOrAfter: InsertPosition; el: HTMLElement },
+  container: HTMLElement | DocumentFragment}
+): HTMLElement[][] {
+  if (!args.tables) return;
+  if (!args.container) args.container = containerDiv;
 
-  return tables.map((table) => {
+  return args.tables.map((table) => {
     if (!table || table.length === 0) return;
-    table.map((row) => {
-      return createHtmlElementForPrayer({
-        tblRow: row,
-        languagesArray: languages,
-        position: position,
-      }) as HTMLElement;
+    return showPrayers({
+      wordTable: table,
+      position:args.position,
+      languages: args.languages,
+      clearRightSideBar:false,
+      clearContainerDiv:false
     });
   });
 }
@@ -2494,7 +2501,7 @@ async function insertRedirectionButtons(
     .map((btn) =>
       div.appendChild(createBtn(btn, div, btn.cssClass)));
   position.el.insertAdjacentElement(position.beforeOrAfter, div);
-  setGridColumnsNumber(div);
+  setGridColumnsNumber(div, 3);
 }
 
 

@@ -394,21 +394,13 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
     
       if (htmlTable.length === 0) return;
 
-      if (htmlTable[0].dataset.isPlaceHolder) modifyArray(htmlTable, false);
-      if (!htmlTable[0].dataset.isPlaceHolder) modifyArray(htmlTable, true);
-    
-
-
-      
-  function modifyArray(htmlTable:HTMLDivElement[], replaceWithPlaceHolder:boolean = false) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
+      //We start by modifiying the array to which the table belongs
+      modifyArray(htmlTable);
+        
+  function modifyArray(htmlTable:HTMLDivElement[]) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
     //If we have placeHolders rows that were not converted:
     editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length === 3).forEach(row => { row.splice(0, 1); row[0] = Prefix.placeHolder });
-    
-    //If we have placeHolders rows that were converted into html rows
-    if(replaceWithPlaceHolder) htmlTable.filter(row => row.dataset.isPlaceHolder).forEach(row => editedTable[htmlTable.indexOf(row)] = [Prefix.placeHolder, row.title]);
-      
-
     
       let oldTable: string[][] =
         tablesArray
@@ -639,70 +631,73 @@ function createHtmlElementForPrayerEditingMode(
 ): HTMLDivElement {
   let isPlaceHolder: boolean = false;
   if (tblRow[0].startsWith(Prefix.placeHolder)) isPlaceHolder = true;
-  let row: HTMLDivElement, p: HTMLParagraphElement, lang: string, text: string;
+  
+  let htmlRow: HTMLDivElement,
+    p: HTMLParagraphElement,
+    lang: string,
+    text: string,
+    dataRoot: string,
+    actorClass: string;;
 
-  row = document.createElement("div");
-  let dataRoot: string, actorClass: string;
+  htmlRow = document.createElement("div");
+ 
   if(!isPlaceHolder){
-  row.classList.add("Row"); //we add 'Row' class to this div
-  row.title = tblRow[0];
+  htmlRow.classList.add("Row"); //we add 'Row' class to this div
+  htmlRow.title = tblRow[0];
   dataRoot= splitTitle(tblRow[0])[0];
-  row.dataset.root = splitTitle(dataRoot)[0];
-   actorClass = splitTitle(row.title)[1];
-  if (actorClass) row.classList.add(actorClass);
+  htmlRow.dataset.root = splitTitle(dataRoot)[0];
+   actorClass = splitTitle(htmlRow.title)[1];
+  if (actorClass) htmlRow.classList.add(actorClass);
   } else if (isPlaceHolder) {
     tblRow = [...tblRow];
-    let array: string[][][] = getTablesArrayFromTitlePrefix(tblRow[1]);
-    let arrayName: string = getArrayNameFromArray(array);
-    if (!arrayName) return;
-    showTables([array.find(tbl => splitTitle(tbl[0][0])[0] === tblRow[1])], arrayName, getLanguages(arrayName), container, container, false)
-
-
-    tblRow.unshift(tblRow[0]);
     let children = Array.from(container.children) as HTMLDivElement[];
-    row.classList.add('PlaceHolder');
-    row.dataset.isPlaceHolder = Prefix.placeHolder;
-    row.dataset.root = children[children.length - 1].dataset.root;
-    row.title = children[children.length - 1].title;
-    row.style.backgroundColor = 'grey';
+    htmlRow.classList.add('PlaceHolder');
+    htmlRow.dataset.isPlaceHolder = tblRow[1]; //This is the title of the table referrenced by the placeHolder row
+    htmlRow.dataset.root = children[children.length - 1].dataset.root;
+    htmlRow.title = children[children.length - 1].title;
+    htmlRow.style.backgroundColor = 'grey';
     let copyLangs = [...languagesArray];
-    row.addEventListener('click', () => {
-      let shown = Array.from(containerDiv.querySelectorAll('div'))
-        .filter(div => div.dataset.placeHolderTitle === tblRow[2]);
-      if (shown.length > 0)
-      {
+    htmlRow.addEventListener('click', () => {
+      let shown =
+        Array.from(containerDiv.querySelectorAll('div'))
+        .filter(div => div.dataset.isPlaceHolder === tblRow[1]);
+      if (shown.length > 0) {
+        saveOrExportArray(shown[0].dataset.arrayName, false, true);
         shown.forEach(div => div.remove());
         return
       };
-      let created = showPrayers({
-        wordTable: getTablesArrayFromTitlePrefix(tblRow[2]).find(tbl => splitTitle(tbl[0][0])[0] === tblRow[2]).reverse(),
-        clearContainerDiv: false,
-        clearRightSideBar: false,
-        languages: copyLangs, //We pass a copy of the languages array
-        position: {
-          el: row,
-          beforeOrAfter: 'afterend'
-        }
-      });
-      created.forEach(divArray => {
-        //Prefix.massStBasil + 'Reconciliation'
-        setCSS(divArray);
-        divArray.forEach(div =>{ 
-          div.dataset.placeHolderTitle = tblRow[2];
-        }
-        )
-      });
-      //row.classList.toggle(hidden);
-  });
+      let created =
+        getTablesArrayFromTitlePrefix(tblRow[1])
+          .find(tbl => splitTitle(tbl[0][0])[0] === tblRow[1])
+          .reverse()
+          .map(row => {
+            return createHtmlElementForPrayerEditingMode(
+              row,
+              copyLangs,
+              {
+                el: htmlRow,
+                beforeOrAfter: 'afterend'
+              },
+              container)
+          })
+        
+      setCSS(created);
+      //Prefix.massStBasil + 'Reconciliation' 
+      let arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(tblRow[1]));
+      created.forEach(div => {
+        div.dataset.isPlaceHolder = tblRow[1];
+        div.dataset.array = arrayName;
+      })
+    });
     languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been add to the placeHolder row
   };
 
   if (actorClass && actorClass.includes("Title")) {
-    row.addEventListener("dblClick", (e) => {
+    htmlRow.addEventListener("dblClick", (e) => {
       e.preventDefault;
-      collapseOrExpandText({titleRow:row});
-      row.id = row.title;
-      row.tabIndex = 0; //in order to make the div focusable by using the focus() method
+      collapseOrExpandText({titleRow:htmlRow});
+    //--------->  htmlRow.id = row.title;
+      htmlRow.tabIndex = 0; //in order to make the div focusable by using the focus() method
     }); 
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
@@ -724,21 +719,21 @@ function createHtmlElementForPrayerEditingMode(
         p.classList.add("PrayerText");
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
-    p.title = row.title;
+    p.title = htmlRow.title;
     text = tblRow[x];
     if (lang)
       p.classList.add(lang.toUpperCase())
     p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
-    row.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
+    htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
   }
   //@ts-ignore
   position.el
     ? //@ts-ignore
-      position.el.insertAdjacentElement(position.beforeOrAfter, row)
+      position.el.insertAdjacentElement(position.beforeOrAfter, htmlRow)
     : //@ts-ignore
       position.appendChild(row);
-  return row;
+  return htmlRow;
 }
 
 function getPrayersSequence() {

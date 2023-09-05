@@ -145,6 +145,9 @@ width: 40%;
 .hiddenElement {
   display:none !important;
 }
+.NoActor{
+  background: cornsilk;
+}
 .Row {
   display: grid;
   height:fit-content;
@@ -208,9 +211,9 @@ p{
 
 .Title, 
 .SubTitle {
-  background-color: #7E3B10 !important;
+  background-color: #786b63 !important;
   color: white;
-  border: #b94c04 solid 3pt ;
+  border: #9e9894 solid 3pt ;
   font-weight: bold;
   font-size: medium !important;
   text-align: center !important;
@@ -351,7 +354,7 @@ border-radius: 20px ;
 
 .Priest,
 #PriestColor {
-  background-color: #bdd6fb;
+  background-color: #99aecc;
   border-left-color: #003187;
   border-right-color: #003187;
   border-left-width: 7px;
@@ -361,7 +364,7 @@ border-radius: 20px ;
 }
 .Diacon,
 #DiaconColor {
-  background-color: #a3b091;
+  background-color: #9eac89;
   border-left-color: #233f01;
   border-right-color: #233f01;
   border-left-width: 7px;

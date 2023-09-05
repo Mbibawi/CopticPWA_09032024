@@ -317,7 +317,7 @@ const copticFeasts = {
     StMaryFast: '0112',
     Epiphany: '1312',
     StMaryFeast: '1612',
-    theTwentyNinethOfCopticMonth: '2900',   
+    theTwentyNinethOfCopticMonth: '000000', //This value will be set to copticDate by setCopticDates() if today is 29th of the Coptic month and we are in a month where this feast is celebrated 
 };
 const copticFasts = [
     Seasons.GreatLent,
@@ -415,7 +415,7 @@ const
         copticFeasts.PalmSunday,
         copticFeasts.Resurrection,
         copticFeasts.Ascension,
-        copticFeasts.Pentecoste
+        copticFeasts.Pentecoste,
     ],
 
     lordMinorFeasts = [
@@ -487,30 +487,30 @@ if (!localStorage.displayMode
     || localStorage.displayMode === 'undefined') {
     localStorage.displayMode = displayModes[0];
 };
-const PrayersArraysKeys:[string, string[][][]][]= [
-    [Prefix.praxisResponse, PraxisResponsesPrayersArray],
-    [Prefix.massCommon, MassCommonPrayersArray],
-    [Prefix.commonPrayer, CommonPrayersArray],
-    [Prefix.massStBasil, MassStBasilPrayersArray],
-    [Prefix.massStCyril, MassStCyrilPrayersArray],
-    [Prefix.massStGregory, MassStGregoryPrayersArray],
-    [Prefix.massStJohn, MassStJohnPrayersArray],
-    [Prefix.doxologies, DoxologiesPrayersArray],
-    [Prefix.communion, CommunionPrayersArray],
-    [Prefix.praxis, PraxisResponsesPrayersArray],
-    [Prefix.cymbalVerses, CymbalVersesPrayersArray],
-    [Prefix.bookOfHours, bookOfHoursPrayersArray],
-    [Prefix.HolyWeek, holyWeekPrayersArray],
-    [Prefix.incenseDawn, IncensePrayersArray],
-    [Prefix.incenseDawn, IncensePrayersArray],
-    [Prefix.gospelMass, ReadingsArrays.GospelMassArray],
-    [Prefix.gospelDawn, ReadingsArrays.GospelDawnArray],
-    [Prefix.gospelVespers, ReadingsArrays.GospelVespersArray],
-    [Prefix.gospelNight, ReadingsArrays.GospelNightArray],
-    [Prefix.stPaul, ReadingsArrays.StPaulArray],
-    [Prefix.katholikon, ReadingsArrays.KatholikonArray],
-    [Prefix.praxis, ReadingsArrays.PraxisArray],
-    [Prefix.synaxarium, ReadingsArrays.SynaxariumArray],
+const PrayersArraysKeys:[string, string][]= [
+    [Prefix.praxisResponse, 'PraxisResponsesPrayersArray'],
+    [Prefix.massCommon, 'MassCommonPrayersArray'],
+    [Prefix.commonPrayer, 'CommonPrayersArray'],
+    [Prefix.massStBasil, 'MassStBasilPrayersArray'],
+    [Prefix.massStCyril, 'MassStCyrilPrayersArray'],
+    [Prefix.massStGregory, 'MassStGregoryPrayersArray'],
+    [Prefix.massStJohn, 'MassStJohnPrayersArray'],
+    [Prefix.doxologies, 'DoxologiesPrayersArray'],
+    [Prefix.communion, 'CommunionPrayersArray'],
+    [Prefix.cymbalVerses, 'CymbalVersesPrayersArray'],
+    [Prefix.bookOfHours, 'bookOfHoursPrayersArray'],
+    [Prefix.HolyWeek, 'holyWeekPrayersArray'],
+    [Prefix.incenseDawn, 'IncensePrayersArray'],
+    [Prefix.incenseVespers, 'IncensePrayersArray'],
+    [Prefix.commonIncense, 'IncensePrayersArray'],
+    [Prefix.gospelMass, 'ReadingsArrays.GospelMassArray'],
+    [Prefix.gospelDawn, 'ReadingsArrays.GospelDawnArray'],
+    [Prefix.gospelVespers, 'ReadingsArrays.GospelVespersArray'],
+    [Prefix.gospelNight, 'ReadingsArrays.GospelNightArray'],
+    [Prefix.stPaul, 'ReadingsArrays.StPaulArray'],
+    [Prefix.katholikon, 'ReadingsArrays.KatholikonArray'],
+    [Prefix.praxis, 'ReadingsArrays.PraxisArray'],
+    [Prefix.synaxarium, 'ReadingsArrays.SynaxariumArray'],
 ];
 
 

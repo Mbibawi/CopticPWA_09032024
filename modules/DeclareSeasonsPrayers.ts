@@ -38,7 +38,7 @@ const giakiAll: seasonalPrayers[] = [
         CA: 'جي آك تونك أكسوتي إمّون',
         FR: 'car Tu es ressuscité et nous as sauvés',
         EN: 'for You\'ve raised and saved us',
-        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
+        COP: 'ϫⲉ ⲁⲕⲧⲱⲛⲕ ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
         Season: Seasons.CrossFeast,
@@ -53,27 +53,35 @@ const closingHymnAll: seasonalPrayers[] = [
     //This is the variable part of 'Amin Alleluia Zoksa Patri...' closing hymn
     {
         Season: 'River',
-        AR: '',
-        CA: '',
-        FR: '',
+        AR: 'بارك مياه الأنهار',
+        CA: 'اسمو إنيمؤو إمبيف يارو',
+        FR: 'bénis les eaux des fleuves',
         EN: '',
-        COP: ''
+        COP: 'Ⲥ̀ⲙⲟⲩ ⲉ̀ⲛⲓⲙⲱⲟⲩ ⲙ̀ⲫⲓⲁⲣⲟⲩ'
     },
     {
         Season: 'Plants',
-        AR: '',
-        CA: '',
-        FR: '',
+        AR: 'بارك الزروع والعشب',
+        CA: 'اسمو إينيسيتي نيم نيسيم',
+        FR: 'Bénis les semences et les fourrages',
         EN: '',
-        COP: ''
+        COP: 'Ⲥ̀ⲙⲟⲩ ⲉ̀ⲛⲓⲥⲓϯ ⲛⲉⲙ ⲛⲓⲥⲓⲙ'
     },
     {
         Season: 'Harvest',
-        AR: '',
-        CA: '',
-        FR: '',
+        AR: 'بارك أهوية السماء',
+        CA: 'اسمو إي إنيائير إنتي إتفي',
+        FR: 'Bénis les pluies',
         EN: '',
-        COP: ''
+        COP: 'Ⲥ̀ⲙⲟⲩ ⲉ̀ⲛⲓⲁⲏⲣ ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ'
+    },
+    {
+        Season: 'Resurrection',
+        AR: 'ملك المجد قام من بين الأموات',
+        CA: 'إبؤورو إنتي إبؤ أو آفطونف إيفول خين نيئثموؤت',
+        FR: 'le roi de gloire est résuscité le troisième jour',
+        EN: '',
+        COP: 'Ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲏⲉⲑⲙⲱⲟⲩⲧ ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ'
     }
 ];
 
@@ -108,26 +116,36 @@ function setSeasonalText(arrayAll: seasonalPrayers[], season:string):seasonalPra
 }
 
 function setClosingHymn(day?: number, month?: number) {
+    let index: number;
+    if (checkIf29thOfCopticMonth || Season === Seasons.PentecostalDays) index = closingHymnAll.indexOf(closingHymnAll.find(hymn => hymn.Season === 'Resurrection'));
+    
+    else index = getAgricultureSeason(day, month);
+
+    Object.assign(closingHymn, closingHymnAll[index]);
+
+};
+
+function getAgricultureSeason(day?:number, month?:number):number {
     if (!day) day = Number(copticDay) - 1;
     if (!month) month = Number(copticMonth);
     let daysNumber: number = day + ((month - 1) * 30);
     console.log(daysNumber);
-    Object.assign(closingHymn, getHymn(daysNumber))
-    
-    function getHymn(daysNumber: number) {
-        console.log(daysNumber);
         if (daysNumber < 38 || daysNumber >= 282) {
             console.log('we are between 12/10 and 09/02');
-            return closingHymnAll[0]; //River litany
+            return 0; //River litany
         } else if (daysNumber >= 38 && daysNumber < 129) {
             console.log('we are between 10/02 and 10/05');
-            return closingHymnAll[1]; //Plants litany
+            return 1; //Plants litany
         } else if (daysNumber >= 129) {
             console.log('we are between 11/05 and 11/10');
-            return closingHymn[2]; //Harvest litany
+            return 2;//Harvest litany
         }
-    }
-};
+}
     
+function checkIf29thOfCopticMonth():boolean {
+    let day = Number(copticDay), month = Number(copticMonth);
+    if (day !== 29 || (month>3 && month<8)) return false;
+    else return true
+}
 
 

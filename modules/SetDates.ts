@@ -14,8 +14,9 @@ async function setCopticDates(today?: Date) {
 	convertGregorianDateToCopticDate(today.getTime());
 	//copticDate = convertGregorianDateToCopticDate(todayDate);
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
-	//copticMonth = copticDate.slice(2, 4);
 	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
+	if(checkIf29thOfCopticMonth()) copticFeasts.theTwentyNinethOfCopticMonth = copticDate;
+
 	setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
 	//Showing the dates and the version
 	showDates();
@@ -69,16 +70,16 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
 		month = 1;
 		year += 1;
 	}
-	year += Math.floor(diffrenceInYears);
+	
+	let dayString = day.toString().padStart(2, '0');
+	let monthString = month.toString().padStart(2,'0')
 	if(changeDates){
-		copticDay = day.toString();
-		if (day < 10) copticDay = '0' + copticDay;
-		copticMonth = month.toString();
-		if (month < 10) copticMonth = '0' + copticMonth;
-		copticDate = copticDay + copticMonth;
+		copticDay = dayString;
+		copticMonth = monthString;
+		copticDate = dayString + monthString;
 		copticYear = year.toString();
 	}
-	return [[day,month, year], copticDate]
+	return [[day,month, year], dayString + monthString]
 }
 /**
  * Converts the Gregorian date to a string expressing the coptic date (e.g.: "0207")
