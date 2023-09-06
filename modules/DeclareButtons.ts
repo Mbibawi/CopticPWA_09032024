@@ -1556,10 +1556,10 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
     EN: "Vespers Gospel",
   },
   showPrayers: true,
-  prayersSequence: [Prefix.gospelVespers + "Psalm&D=", Prefix.gospelVespers + "Gospel&D="],
   languages: [...readingsLanguages],
   onClick: (args:{returnDate?:boolean, returnGospelPrefix?:boolean}) => {
     let btn = btnReadingsGospelIncenseVespers;
+    btn.prayersSequence = [Prefix.gospelVespers + "Psalm&D=", Prefix.gospelVespers + "Gospel&D="]; //!We need this to be set when the button is clicked not when it is declared because we add the date to it, which changes its value each time the button is clicked
     console.log('this = ', this);
     btnReadingsGospelIncenseVespers.prayersArray = ReadingsArrays.GospelVespersArray;
     if (args && args.returnGospelPrefix) return Prefix.gospelVespers; //!this must come after the prayersArray has been set
@@ -2286,7 +2286,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
 
     if (feast) sequence[1] = sequence[1].replace('AnyDay', feast[0]);
     
-    if (!feast) sequence.splice(1, 0, sequence[1].replace('copticFeasts.AnyDay', 'Seasons.' + feast[0])) //We insert an element for the Season
+    if (!feast) sequence.splice(1, 0, sequence[1].replace('copticFeasts.AnyDay', 'Seasons.' + Object.entries(Seasons).find(entry=>entry[1]===Season)[0])) //We insert an element for the Season
    
     let cymbals: string[][][] =
       sequence
@@ -2334,7 +2334,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
     if (feast) sequence.splice(0, 0, Prefix.doxologies + '&D=$copticFeasts.' + feast[0]);//We insert the feast doxologie(s) before the 1st doxology
 
     //If copticDate and copticReadingsDate, didn't match any copticFeast, we insert an element for the Season
-    if (!feast) sequence.splice(0, 0, Prefix.doxologies + '&D=$Seasons.' + feast[0]);
+    if (!feast) sequence.splice(0, 0, Prefix.doxologies + '&D=$Seasons.' + Object.entries(Seasons).find(entry=>entry[1] === Season)[0]);
 
     //We also check if today is a saint's feast
     feast = Object.entries(saintsFeasts).find(entry => entry[1] === copticDate); 

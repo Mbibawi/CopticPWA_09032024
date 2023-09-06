@@ -151,21 +151,22 @@ width: 40%;
 .Row {
   display: grid;
   align-items: start;
-  height:fit-content;
+  height:fit-content; /*The height must fit the content of the paragraphs*/
   text-align: justify;
   border-radius: 5px;
   justify-self: stretch !important;
   max-width: 99.7vw;
   margin-left: 1vw;
   margin-right: 1vw;
+  padding-top: 2px; /*Tis is what sets the space beween the paragraphs*/
+  padding-bottom: 2px; /*Tis is what sets the space beween the paragraphs*/
 }
 
 p{
   padding-right:7px;
   padding-left:7px;
-  margin-top:10px;
-  margin-bottom:10px;
   font-stretch: ultra-condensed ;
+  align-self: stretch; /*This is what makes the paragraph extend vertically over the height of the row*/
 }
 
 .AR,
@@ -526,11 +527,14 @@ border-radius: 20px ;
   color: #a2c2fa;
   font-style: italic !important;
   padding-right: 2px 2px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top:0px !important;
+  margin-bottom: 0px !important;
 }
 .CommentText {
   color: #C45911 !important;
 }
-
 .settings{
   width:fit-content;
   height: fit-content;

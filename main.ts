@@ -515,47 +515,38 @@ function createBtn(
   clear: boolean = true,
   onClick?: Function
 ): HTMLElement {
+  if (!btn || !btn.label) {
+    console.log('The button is either undefined, or has no lable'); return
+  };
+  
   let newBtn: HTMLElement = document.createElement("button");
   btnClass
     ? newBtn.classList.add(btnClass)
     : newBtn.classList.add(btn.cssClass);
-  newBtn.id = btn.btnID;
-  //Adding the labels to the button
-  for (let lang in btn.label) {
-    if (
-      !btn.label[lang] ||
-      (lang !== defaultLanguage
-        && lang !== foreingLanguage)
-    )
-      continue;
-    //for each language in btn.text, we create a new "p" element
-    let btnLable = document.createElement("p");
-    //we edit the p element by adding its innerText (=btn.text[lang], and its class)
+    newBtn.id = btn.btnID;
 
-    editBtnInnerText(
-      btnLable,
-      btn.label[lang],
-      lang
-    );
-    //we append the "p" element  to the newBtn button
-    newBtn.appendChild(btnLable);
-  };
+  
+  //Adding the labels to the button
+  if (btn.label[defaultLanguage]) editBtnInnerText(btn.label[defaultLanguage], defaultLanguage);
+  if (btn.label[foreingLanguage]) editBtnInnerText(btn.label[foreingLanguage], foreingLanguage);
+  
   btnsBar.appendChild(newBtn);
   //If no onClick parameter/argument is passed to createBtn(), and the btn has any of the following properties: children/prayers/onClick or inlinBtns, we set the onClick parameter to a function passing the btn to showChildButtonsOrPrayers
   if (!onClick && (btn.children || btn.prayersSequence || btn.onClick))
     onClick = () => showChildButtonsOrPrayers(btn, clear);
-  //Else, it is the onClick parametr that will be attached to the eventListner
-  newBtn.addEventListener("click", (e) => {
+  //Else, it is the onClick parameter that will be attached to the eventListner
+  if(onClick) newBtn.addEventListener("click", (e) => {
     e.preventDefault;
     onClick();
   });
 
-  function editBtnInnerText(el: HTMLElement, text: string, btnClass?: string) {
-    el.innerText = text;
-    el.classList.add("btnText");
-    if (btnClass) {
-      el.classList.add(btnClass);
-    }
+  function editBtnInnerText(text: string, btnClass?: string) {
+    if (!text) return;
+    let btnLable = document.createElement("p");
+    btnLable.innerText = text;
+    btnLable.classList.add("btnText");
+    if (btnClass) btnLable.classList.add(btnClass);
+    newBtn.appendChild(btnLable)
   };
   return newBtn;
 }
@@ -2129,41 +2120,57 @@ function showSettingsPanel() {
 
       addLangsBtns({
         btnsContainer: defaultLangContainer,
-        fun: (lang) => setLanguage(lang, 0),
+        fun: (lang) => setLanguage(lang, 0), //0 means that we are changing the element from which the default language is retrieved
         langsOptions: [langs[0], langs[1], langs[2]],
         index:0
       });
       
       addLangsBtns({
         btnsContainer: foreignLangContainer,
-        fun: (lang) => setLanguage(lang, 1),
+        fun: (lang) => setLanguage(lang, 1), //1 means that we are changing the element from which the foreign language is retrieved
         langsOptions: [langs[0], langs[1], langs[2]],
         index:1
       });
 
       addLangsBtns({
         btnsContainer: copticLangContainer,
-        fun: (lang) => setLanguage(lang, 2),
+        fun: (lang) => setLanguage(lang, 2),//2 means that we are changing the element from which the coptic version is retrieved
         langsOptions: [langs[3], langs[4]],
         index:2
       });
 
 
+      /**
+       * @param {string} lang - the language that the button changes when clicked
+       * @param {number} index - the index of the language in the userLanguages array stored in the localStorage. This index indicated whether the language is the defaultLanguage (index=0) or the foreignLanguage (index=1), or the version of the Coptic text (index=2)
+       */
       function setLanguage(lang:string, index:number){
         let stored:string[] = JSON.parse(localStorage.userLanguages);
-        if (index>0 && stored.indexOf(lang) === index)
-          stored[index] = undefined;//If the language is already defined at the same index, we give it undefined. We never set the default language (i.e. stored[0]) to undefined
-        
-        else if (stored.indexOf(lang) < 0) stored[index] = lang;
-
-        else if ((stored.indexOf(lang) > -1)){
-          //This means that the language exists at another index than 'index'. We will not add it again. A language cannot be defined as both default and foreign
-          let current: string;
-          if (stored.indexOf(lang) === 0) current = 'default language';
-          if (stored.indexOf(lang) === 1) current = 'foreign language';
-          return alert(lang + ' is already set as ' + current + '. You cannot set the same language as default and foreign language at the same time. You must change the setting for the ' + current + ' before being able to make this change');
-
+        if (index>0 && stored.indexOf(lang) === index){
+          //If the language is already defined at the same index, we will set the element at the same index to undefined (i.e., we will desactivate the language and remove it from the list of userLanguages). We never set the default language (i.e. stored[0]) to undefined that's why we exclude the case where index = 0
+          stored[index] = undefined;
+        }
+        else if (index === 0 && stored.indexOf(lang) === index){
+          return alert('You cannot not desactivate the default language. You can replace it by choosing another language')
+        }
+        else if (stored.indexOf(lang) === 0 && index === 1 && stored[index]) {
+           //If the language is already set as defaultLanguage (it is set at index 0), and we want to make it the foreign language (index = 1), we check if the value of index 1 (the index of the foreign language) is not undefined. If so, we make the foreign language default language and we replace it with lang
+          stored[0] = stored[index];
+          stored[index] = lang;
+        }        
+        else if (stored.indexOf(lang) === 0 && index === 1 && !stored[index]) {
+           return alert('You must first replace the default langauge by another language before being able to set it as foreign language' )
+        }        
+        else if (stored.indexOf(lang) === 1 && index === 0) {
+           //If the language is already set as foreignLanguage (it is set at index 1), and we want to make it the default language (index = 0). If so, we set the foreign language as undefined default language and we set the language as default language
+          stored[1] = undefined;
+          stored[index] = lang;
+        }        
+        else if (stored.indexOf(lang) < 0) {
+          //If the array does not contain the language at any of its indexes, we add it at the index passed as argument
+          stored[index] = lang;
         };
+
         defaultLanguage = stored[0];
         foreingLanguage = stored[1];
         copticLanguage = stored[2];
