@@ -201,7 +201,6 @@ p{
 .COP
 {
   grid-area: COP;
-  border-right-style: groove;
   font-family: ArialCoptic;
   font-size: 2.8cqi;
   line-height: 1.5em;

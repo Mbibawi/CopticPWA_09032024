@@ -1358,9 +1358,14 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
     (function addRightBorders() {
       let rowChildren = Array.from(row.children) as HTMLParagraphElement[];
-      rowChildren.forEach((parag) => {
-        if (rowChildren.indexOf(parag) !== rowChildren.length - 1)
-          parag.style.borderRightStyle = "groove";
+      let gridAreas = row.style.gridTemplateAreas.replaceAll('"', '').split(' ');
+      if (gridAreas.length <= 1) return;
+      gridAreas
+        .forEach(area => {
+        if (gridAreas.indexOf(area) === gridAreas.length - 1) return;
+          rowChildren
+            .find(child => child.lang.toUpperCase() === area)
+            .style.borderRightStyle = "groove";
       });
     })();
 
