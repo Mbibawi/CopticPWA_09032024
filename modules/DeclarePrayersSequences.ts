@@ -29,7 +29,6 @@ const IncensePrayersSequence: string[] =[
 ]
 ; //    this is the generic sequence of all prayers for incense dawn and incense vespers. The onClick function triggered by btnIncenseDawn and btnIncenseVespers, will remove what is irrelevant and add what needs to be added according to whether it is a Dawn or Vespers office
     
-const GospelPrayersSequence: string[] = [Prefix.psalmResponse, Prefix.gospelMass + 'Psalm', Prefix.gospelMass + 'Gospel', Prefix.gospelResponse]; //This is the generic sequence for the prayers related to the lecture of the gospel at any liturgy (mass, incense office, etc.). The OnClick function triggered by the liturgy, adds the dates of the readings and of the psalm and gospel responses
     
 const MassPrayersSequences = {
     //those are the sequences of the 'Baptized' mass prayers (starting from Reconciliation) for each mass

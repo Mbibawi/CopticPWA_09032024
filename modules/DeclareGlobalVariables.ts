@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v4.7.4 (Changed the settings button, some css and other fixes)';
+const version: string = 'v5.0.0 (Major changes and fixes)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

@@ -1052,10 +1052,23 @@ const btnMassUnBaptised: Button = new Button({
       });
 
       (function insertPraxisResponse() {
+
         let praxis: HTMLElement[] =
-          selectElementsByDataRoot(btnDocFragment, Prefix.praxis + '&D=', { startsWith: true });
+          selectElementsByDataRoot(btnDocFragment, Prefix.praxis + '&D=', { startsWith: true }); //This is the praxis reading
         
         if (praxis.length === 0) return;
+
+        let annualResponse: HTMLElement[]; //This is the praxis response for any ordinary day (it is included by default)
+
+        (function moveAnnualResponseBeforePraxis() {
+          //Moving the annual response
+          annualResponse = selectElementsByDataRoot(btnDocFragment, Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay", { equal: true });
+ 
+          if (!annualResponse || annualResponse.length === 0) return console.log('error: annual = ', annualResponse);
+         
+          annualResponse
+            .forEach(htmlRow => praxis[0].insertAdjacentElement('beforebegin', htmlRow));
+        })();
 
         let response: string[][][] =
           PrayersArrays
@@ -1064,35 +1077,29 @@ const btnMassUnBaptised: Button = new Button({
               selectFromMultiDatedTitle(table[0][0], copticDate)
               || selectFromMultiDatedTitle(table[0][0], Season)
             );
-        
+                  
+        if (!response || response.length === 0) return;
 
         (function insertSpecialResponse(){
-        if (response.length === 0) return;
         if (Season === Seasons.GreatLent) {
           //If a Praxis response was found
             // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
             if (todayDate.getDay() === 0
               || todayDate.getDay() === 6)
-              response = response.filter(table => table[0][0].includes('Sundays&D='));
-          else response = response.filter(table => table[0][0].includes('Week&D='));
+              response = [response.find(table => table[0][0].includes('Sundays&D='))];
+          else response = [response.find(table => table[0][0].includes('Week&D='))];
+        };
           
-            insertPrayersAdjacentToExistingElement({
-              tables: response,
-              languages: prayersLanguages,
-              position: { beforeOrAfter: 'beforebegin', el: praxis[0] },
-            container: btnDocFragment});
-          };
+        insertPrayersAdjacentToExistingElement({
+          tables: response,
+          languages: prayersLanguages,
+          position: { beforeOrAfter: 'beforebegin', el: annualResponse[0] },
+        container: btnDocFragment});
+
+        //We remove the first 2 rows of the Annual response
+        annualResponse.forEach(htmlRow => { if (annualResponse.indexOf(htmlRow) < 2) htmlRow.remove() });
         })();
 
-        (function moveAnnualResponseBeforePraxis() {
-          //Moving the annual response
-          let annualResponse: HTMLElement[] = selectElementsByDataRoot(btnDocFragment, Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay", { equal: true });
- 
-          if (!annualResponse || annualResponse.length === 0) return console.log('error: annual = ', annualResponse);
-         
-          annualResponse
-            .forEach(htmlRow => praxis[0].insertAdjacentElement('beforebegin', htmlRow));
-        })();
 
       })();
     })();
@@ -1167,7 +1174,8 @@ const btnMassUnBaptised: Button = new Button({
       getGospelReadingAndResponses(
         Prefix.gospelMass,
         {
-          prayersArray: ReadingsArrays.GospelMassArray, languages: readingsLanguages
+          prayersArray: ReadingsArrays.GospelMassArray,
+          languages: readingsLanguages
         },
         btnDocFragment
       );
@@ -1871,113 +1879,94 @@ const btnBookOfHours:Button =  new Button({
  * @param liturgie {string} - expressing the name of the liturigie that will replace the word "Mass" in the original gospel readings prayers array
  * @returns {string} - returns an array representing the sequence of the gospel reading prayers, i.e., an array like ['Psalm Response', 'Psalm', 'Gospel', 'Gospel Response']
  */
-function setGospelPrayers(liturgie: string): string[] {
+function setGospelPrayers(liturgy: string): string[] {
   //this function sets the date or the season for the Psalm response and the gospel response
-  let prayers = [...GospelPrayersSequence],
-    date: string;
+  const prayersSequence: string[] = [
+    Prefix.psalmResponse + '&D=',
+    liturgy + 'Psalm&D=',
+    liturgy + 'Gospel&D=',
+    Prefix.gospelResponse + '&D=']; //This is the generic sequence for the prayers related to the lecture of the gospel at any liturgy (mass, incense office, etc.). The OnClick function triggered by the liturgy, adds the dates of the readings and of the psalm and gospel responses
+  let date: string;
 
-  let psalm: number = prayers.indexOf(Prefix.psalmResponse),
-    gospel: number = prayers.indexOf(Prefix.gospelResponse);
+  let psalmResponse: string = prayersSequence[0],
+    gospelResponse: string = prayersSequence[3];
 
-  prayers.forEach((p) => (prayers[prayers.indexOf(p)] = p + "&D=")); //we add '&D=' to each element of prayer
-
-  //we replace the word 'Mass' in 'ReadingsGospelMass' by the liturige, e.g.: 'IncenseDawn'
-  prayers[psalm + 1] = prayers[psalm + 1].replace(Prefix.gospelMass, liturgie);
-  prayers[psalm + 2] = prayers[psalm + 2].replace(Prefix.gospelMass, liturgie);
   //setting the psalm and gospel responses
   (function setPsalmAndGospelResponses() {
     if (lordFeasts.indexOf(copticDate) > -1) {
       //This means we are on a Lord Feast, there is always a specific gospel and psalm response for these feasts, even when it falls during the Great Lent (Annonciation does sometimes)
-      date = copticDate;
-      prayers[psalm] += date;
-      prayers[gospel] += date;
+      addDate(copticDate);
     } else if (Number(copticDay) === 29
       && [4, 5, 6].indexOf(Number(copticMonth)) < 0) {
       //we are on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast), and Touba and Amshir (they are excluded because they precede the annonciation)
-      date = copticFeasts.theTwentyNinethOfCopticMonth;
-      prayers[psalm] += date;
-      prayers[gospel] += date;
+      addDate(copticFeasts.theTwentyNinethOfCopticMonth);
     } else if (Season === Seasons.StMaryFast) {
       //we are during the Saint Mary Fast. There are diffrent gospel responses for Incense Dawn & Vespers
       if (todayDate.getHours() < 15) {
-        prayers[gospel] === prayers[gospel].replace("&D=", "Dawn&D=");
+        gospelResponse === gospelResponse.replace("&D=", "Dawn&D=");
       } else {
-        prayers[gospel] === prayers[gospel].replace("&D=", "Vespers&D=");
+        gospelResponse === gospelResponse.replace("&D=", "Vespers&D=");
       }
-      date = Season;
-      prayers[psalm] += date;
-      prayers[gospel] += date;
+      addDate(Season);
     } else if (Season === Seasons.Kiahk) {
       // we are during Kiahk month: the first 2 weeks have their own gospel response, and the second 2 weeks have another gospel response
-      date = Season;
       if (
         checkWhichSundayWeAre(Number(copticDay), todayDate.getDay()) === ("1stSunday" || "2ndSunday")
       ) {
-        prayers[gospel] = prayers[gospel].replace("&D=", "1&D=");
+        gospelResponse = gospelResponse.replace("&D=", "1&D=");
       } else {
-        prayers[gospel] = prayers[gospel].replace("&D=", "2&D=");
-      }
-      prayers[psalm] += "0000";
-      prayers[gospel] += date;
+        gospelResponse = gospelResponse.replace("&D=", "2&D=")
+      };
+      addDate(Season);
     } else if (Season === Seasons.GreatLent) {
       //we are during the Great Lent period
       if (copticReadingsDate === copticFeasts.EndOfGreatLentFriday) {
         if (todayDate.getHours() > 15) {
           //We are in the vespers of Lazarus Saturday
-          date = copticFeasts.LazarusSaturday;
-          prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
-          date = copticFeasts.LazarusSaturday;
+          gospelResponse = gospelResponse.replace("&D=", "Vespers&D=");
+          addDate(copticFeasts.LazarusSaturday);
         } else {
           //We are in the morning
-          date = copticFeasts.EndOfGreatLentFriday;
+          addDate(copticFeasts.EndOfGreatLentFriday);
         }
-        prayers[gospel] += date;
-      }
-      else if (copticReadingsDate === copticFeasts.LazarusSaturday) {
+      } else if (copticReadingsDate === copticFeasts.LazarusSaturday) {
         if (todayDate.getHours() < 15) {
           //We are in the morning
-          date = copticFeasts.LazarusSaturday;
+          addDate(copticFeasts.LazarusSaturday);
         } else {
           //We are in the Vespers of the Palm Sunday
-          date = copticFeasts.PalmSunday;
-          prayers[gospel] = prayers[gospel].replace("&D=", "Vespers&D=");
+          gospelResponse = gospelResponse.replace("&D=", "Vespers&D=");
+          addDate(copticFeasts.PalmSunday);
         }
-        prayers[psalm] += date;
-        prayers[gospel] += date;
-      } else {
-        date = Seasons.GreatLent;
+      } else 
         todayDate.getDay() === 0
           || todayDate.getDay() === 6
-          ? (prayers[gospel] = prayers[gospel].replace(
+          ? (gospelResponse = gospelResponse.replace(
             "&D=",
-            Seasons.GreatLent + "Sundays&D="
+            "Sundays&D="
           ))
-          : (prayers[gospel] = prayers[gospel].replace(
+          : gospelResponse = gospelResponse.replace(
             "&D=",
-            Seasons.GreatLent + "Week&D="
-          ));
-      }
-      prayers[psalm] += copticFeasts.AnyDay;
-      prayers[gospel] += date;
+            "Week&D="
+          );
+          addDate(Season);  
     } else if (Season === Seasons.JonahFast) {
-      date = Season;
-      prayers[gospel] = prayers[gospel].replace(
+      gospelResponse = gospelResponse.replace(
         "&D=",
         copticReadingsDate.split(Season)[1] + "&D="
       );
-      prayers[psalm] += "0000";
-      prayers[gospel] += date;
-    } else if (Season === Seasons.PentecostalDays) {
-      date = Seasons.PentecostalDays;
-      prayers[psalm] += date;
-      prayers[gospel] += date;
+      addDate(Season);
+    } else if (Season !== Seasons.NoSeason) {
+      addDate(Season);
     } else if (Season === Seasons.NoSeason) {
-      date = "0000";
-      prayers[psalm] += date;
-      prayers[gospel] += date;
+      addDate(copticFeasts.AnyDay); 
     }
   })();
-  return prayers;
+  function addDate(date: string) {
+    prayersSequence[0] = psalmResponse + date;
+    prayersSequence[3] = gospelResponse + date;
+  };
+  return prayersSequence;
 }
 
 let btnsPrayersSequences: string[][]= [];
@@ -2131,55 +2120,45 @@ async function getGospelReadingAndResponses(
       });
 
   })();
-     
 
-    /**
-     * Appends the Gospel response before gospelInsertion point
-     */
-    (function insertGospeResponse() {
-      let gospelResp: string[][][] = PrayersArrays.PsalmAndGospelPrayersArray.filter(
-        (r) => r[0][0].split('&D=')[0] +'&D=' + eval(r[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) === responses[3]
-      ); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-      if (gospelResp.length===0) gospelResp = PrayersArray.filter(
-        (r) => splitTitle(r[0][0])[0] ===  Prefix.commonPrayer + 'GospelResponse&D=$copticFeasts.AnyDay'
-      );//If no specific gospel response is found, we will get the 'annual' gospel response
+  (function insertPsalmAndGospelResponses(){
+      //Inserting the gospel response
+      insertGospelOrPsalmResponse(3, Prefix.gospelResponse, gospelInsertionPoint);
 
-      insertPrayersAdjacentToExistingElement({
-        tables: gospelResp,
-        languages: prayersLanguages,
-        position: {
-          beforeOrAfter: "beforebegin",
-          el: gospelInsertionPoint,
-        },
-        container: container
-      });
-   
-         //We will eventy remove the insertion point placeholder
-            gospelInsertionPoint.remove();
-  })();
+      //We remove the insertion point placeholder
+      gospelInsertionPoint.remove();
+      
+      let gospelPrayer = selectElementsByDataRoot(container, Prefix.commonPrayer + 'GospelPrayer&D=$copticFeasts.AnyDay', { equal: true }); //This is the 'Gospel Litany'. We will insert the Psalm response after its end
   
-  /**
-   * Inserts the Psalm response after the end of the Gospel Litany
-   */
-  (function insertPsalmResponse() {
-    let gospelPrayer = selectElementsByDataRoot(container, Prefix.commonPrayer + 'GospelPrayer&D=$copticFeasts.AnyDay', { equal: true }); //This is the 'Gospel Litany'. We will insert the Psalm response after its end
-
-    let psalmResp: string[][][] = PrayersArrays.PsalmAndGospelPrayersArray.filter(
-      (r) => r[0][0].split('&D=')[0] +'&D=' + eval(r[0][0].split('&D=')[1].split('&C=')[0].replace('$', '')) === responses[0]
-    ); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
-
-    if (!psalmResp || !gospelPrayer) return;
-
-    insertPrayersAdjacentToExistingElement({
-      tables: psalmResp,
-      languages: prayersLanguages,
-      position:{
-            beforeOrAfter: 'beforebegin',
-            el: gospelPrayer[gospelPrayer.length - 2].nextElementSibling as HTMLElement
-      },
-      container: container
-    })
+      if (!gospelPrayer) return;
+  
+      insertGospelOrPsalmResponse(0, Prefix.psalmResponse, gospelPrayer[gospelPrayer.length - 2].nextElementSibling as HTMLElement);
   })();
+     
+  function insertGospelOrPsalmResponse(index:number, prefix:string, insertion:HTMLElement){
+    let response: string[][] =
+          PrayersArrays.PsalmAndGospelPrayersArray
+            .find(tbl =>
+              tbl[0][0].split('&D=')[0] === responses[index].split('&D=')[0]
+              && selectFromMultiDatedTitle(tbl[0][0], responses[index].split('&D=')[1])); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
+        if (!response || response.length=== 0)
+        //If no specresponse response is found, we will get the 'annual' gospel response
+          response =
+            PrayersArrays.PsalmAndGospelPrayersArray
+              .find(tbl => splitTitle(tbl[0][0])[0] === prefix + '&D=$copticFeasts.AnyDay');
+        
+        if (!response || response.length === 0) return;
+  
+        insertPrayersAdjacentToExistingElement({
+          tables: [response],
+          languages: prayersLanguages,
+          position: {
+            beforeOrAfter: "beforebegin",
+            el: insertion,
+          },
+          container: container
+        });
+  }
 
 }
 

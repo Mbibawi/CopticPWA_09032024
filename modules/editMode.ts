@@ -86,15 +86,23 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
         .split(', ')
     if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
     if (args.arrayName && !tablesArray) tablesArray = eval(args.arrayName);
-      tablesArray =
-        titles
-          .map(title => {
-            if (title.startsWith('Prefix.')) title = eval(title);
-            if (!title) return;
-            return tablesArray.find(tbl => tbl[0][0].includes(title));
-          })
-          .filter(tbl => tbl); //We remove the undefined tables
-      
+    let temp =
+      titles
+        .map(title => {
+          if (title.startsWith('Prefix.')) title = eval(title);
+          if (!title) return;
+          let filtered = tablesArray.filter(tbl => tbl[0][0].includes(title));
+          if (filtered.length > -1) filtered = filtered.filter(tbl => tbl);
+          return filtered
+        });
+    tablesArray = [];
+    temp
+      .forEach(tblsArray =>
+        tblsArray
+          .forEach(tbl => tablesArray.push(tbl)));
+     
+
+    console.log('tablesArray = ', tablesArray);
       if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
   };
 
