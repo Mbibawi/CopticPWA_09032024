@@ -2739,7 +2739,7 @@ function convertHtmlDivElementsIntoArrayTable(
 ): string[][] {
   let table: string[][] = [];
   htmlRows
-    .forEach((row: HTMLElement) => {
+    .forEach(row => {
     if (!row.title) return alert("the row dosen't have title");
     table
       .push(

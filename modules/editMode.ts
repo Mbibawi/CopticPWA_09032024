@@ -4,151 +4,164 @@ let sequence: string[] = [];
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?: string, tableTitle?: string }) {
- 
-  if (args.clear !==false) args.clear = true;
-  if(!args.arrayName && args.select) args.arrayName = args.select.selectedOptions[0].innerText;
+function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?:string, tableTitle?: string }) {
+
+  let tablesArray: string[][][];
+
+  if (args.clear !== false) args.clear = true;
+  
+  if(args.select && !args.arrayName && !args.tableTitle){
+    //We deal with all the cases where a select element is passed as argument to the function.
+
+    args.arrayName = args.select.selectedOptions[0].innerText;
+
+    if (args.arrayName === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
+
+    if (args.arrayName === args.select.options[1].innerText)  addNewTable();
+
+    if (args.arrayName === args.select.options[2].innerText) {
+      //under development
+      args.arrayName = prompt('Provide the function and the parameters', args.arrayName);
+      if (!args.arrayName) return;
+      if (args.arrayName.includes('Fun(')) eval(args.arrayName);
+      return
+    }
+    else  editSpecificTable();
+  }
+
+  else if (!args.select && args.arrayName && args.tableTitle) editSpecificTable();
   
   if (!args.arrayName) return;
-  
-  if (args.select && args.arrayName === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
-  
-  containerDiv.style.gridTemplateColumns = '100%';
 
-  if (
+ if (
     containerDiv.dataset.arrayName
     && args.arrayName === containerDiv.dataset.arrayName
     && !confirm('Warning !! you are about to reload the same array, you will loose all your modifications. Are you sure you want to reload the same array? ')
   ) return; //If the selected option is the same as the already loaded array, and the user does not confirm reloading the array, we return
 
   containerDiv.dataset.arrayName = args.arrayName;
-
-  if (args.select && args.arrayName === args.select.options[2].innerText) args.arrayName = prompt('Provide the function and the parameters', args.arrayName);//under development
-  if (args.arrayName.includes('Fun(')) {
-    eval(args.arrayName);
-    return
-  }
-
-  let tablesArray: string[][][];
+  containerDiv.style.gridTemplateColumns = '100%';
   containerDiv.dataset.specificTables = 'false';
 
   let languages = getLanguages(args.arrayName);
   if (!languages) languages = allLanguages;
 
-  if (args.select && args.arrayName === args.select.options[1].innerText) {
-    //This is the add new table case
-    args.arrayName = 'PrayersArray';
-    containerDiv.dataset.arrayName = args.arrayName;//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arraName), and the saveModifiedArray() will stop without exporting the text to file
-
-    languages = []; //We empty the languages array and will fill it according to what the user will provide
-    let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
-    tablesArray = [
-      [
-        ['NewTable&D=$copticFeasts.AnyDay&C=Title']
-      ]
-    ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
-    let tbl1 = tablesArray[0];
-    langs
-      .split(', ')
-      .forEach(lang => {
-        tbl1[0] //this is the 1st row of the table, we add the languages as elements to this row, which gives us a row like ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'AR', 'FR', etc.]
-          .push(lang);
-        languages
-          .push(lang);//We add the languages to the 'languages'
-      });
+  function addNewTable() {
+      args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
+      languages = []; //We empty the languages array and will fill it according to what the user will provide
+      let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
+      tablesArray = [
+        [
+          ['NewTable&D=$copticFeasts.AnyDay&C=Title']
+        ]
+      ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
+      let tbl1 = tablesArray[0];
+      langs
+        .split(', ')
+        .forEach(lang => {
+          tbl1[0] //this is the 1st row of the table, we add the languages as elements to this row, which gives us a row like ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'AR', 'FR', etc.]
+            .push(lang);
+          languages
+            .push(lang);//We add the languages to the 'languages'
+        });
     
-    tbl1
-      .push([...tbl1[0]]); //We add a second row to the table
+      tbl1
+        .push([...tbl1[0]]); //We add a second row to the table
     
-    tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0]; //We remove the '&C=Title' from the second row
-  }; 
-
-  if (!tablesArray
-    && args.select
-    && args.arrayName
-    && confirm('Do you want to edit a single or specific table(s) in the array? (if more than one table, provide the titles separated by ", " '))
-  { containerDiv.dataset.specificTables = 'true' };
-
-  if (!tablesArray && !args.select && args.arrayName && args.tableTitle)
-  containerDiv.dataset.specificTables = 'true';//If we ware calling the function givint it the name of the array (entry) and the title of a table (tableTitle) without passing any select element, we will be editing a specific table not the whole tables in the array
-  
-  if (!tablesArray) tablesArray = eval(args.arrayName);
-  if (!tablesArray) return;
-
-
-  if (containerDiv.dataset.specificTables === 'true') {
-    if (!args.tableTitle) args.tableTitle = prompt('Provide the name of the table you want to edit');
-    let filteredArray:string[][][] = [];
-    args.tableTitle
-      .split(', ')
-        .map(title =>{
-          if (title.startsWith('Prefix.')) title = eval(title);
-          filteredArray.push(
-            tablesArray
-              .find(
-              tbl => tbl[0][0].includes(title)
-            )
-            );
-          
-          if (!filteredArray[filteredArray.length - 1]) console.log('the filtering gave an invalid result : ',  filteredArray[filteredArray.length - 1]);
-        }
-    );
-    tablesArray = filteredArray;
-    //tablesArray = tablesArray.filter(tbl => tbl[0][0] === tableTitle);
-    if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
+      tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0]; //We remove the '&C=Title' from the second row
   };
 
-  localStorage.displayMode === displayModes[0];
-  //@ts-ignore
+ 
+  function editSpecificTable(){
+      if (!args.tableTitle //args.tableTitle was not already provided as argument
+        && confirm('Do you want to edit a single or specific table(s) in the array?'))
+        args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
 
-  showTables(tablesArray, args.arrayName, languages, containerDiv, containerDiv, args.clear);
+    if (!args.tableTitle) return; //If despite having confirmed that he wants to edit a specifc table, the tableTitle he provided is not valid, we assume he cancelled or changed his mind, and we return
+    
+    //In all the cases where at this point, the tableTitle is provided (whether when the function was called, or when the user was prompted), we set specificTables to true
+    if (args.tableTitle) containerDiv.dataset.specificTables = 'true';
 
-  
+    let titles = args.tableTitle
+        .split(', ')
+    if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
+    if (args.arrayName && !tablesArray) tablesArray = eval(args.arrayName);
+      tablesArray =
+        titles
+          .map(title => {
+            if (title.startsWith('Prefix.')) title = eval(title);
+            if (!title) return;
+            return tablesArray.find(tbl => tbl[0][0].includes(title));
+          })
+          .filter(tbl => tbl); //We remove the undefined tables
+      
+      if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
+  };
+
+
+  (function editTables() {
+    if (!tablesArray) tablesArray = eval(args.arrayName);
+    if (!tablesArray) return console.log('tablesArray was not set');
+    
+    localStorage.displayMode === displayModes[0];
+
+    showTables({
+      tablesArray: tablesArray,
+      arrayName: args.arrayName,
+      languages: languages,
+      position: containerDiv,
+      container: containerDiv,
+      clear: args.clear
+    });
+  })();
 }
 /**
  * Takes a string[][][] (i.e., and array of tables, each being a string[][], where each string[] represents a rowh),  that we want to edit,and creates html div elements representing the text of each row of eah table in the tablesArray
  * @param {string[][][]} tablesArray - an array containing the tables that we need to show and start editing
  * @param {string[]} languages - the languages included in the tables
  */
-function showTables(
+function showTables(args: {
   tablesArray: string[][][],
   arrayName: string,
   languages: string[],
-  position: HTMLElement | DocumentFragment | { el: HTMLElement, beforeOrAfter: InsertPosition } = containerDiv,
-  container: HTMLElement | DocumentFragment = containerDiv,
-  clear: boolean = true,
-isPlaceHolder:boolean = false) {
-  if (!arrayName) return;
-  if (clear === true) containerDiv.innerHTML = '';
+  position?: HTMLElement | DocumentFragment | { el: HTMLElement, beforeOrAfter: InsertPosition },
+  container?: HTMLElement | DocumentFragment,
+  clear?: boolean,
+  isPlaceHolder?: boolean
+}) {
+  if (!args.arrayName) return;
+  if (!args.container) args.container = containerDiv;
+  if (!args.position) args.position = containerDiv;
+  if(args.clear !==false) args.clear = true;
+  if (args.isPlaceHolder !== true) args.isPlaceHolder = false;
+
+  if (args.clear === true) containerDiv.innerHTML = '';
   let htmlRow: HTMLDivElement;
   //We create an html div element to display the text of each row of each table in tablesArray
-  tablesArray
+  args.tablesArray
     .forEach(table => {
   if (!table) return;
       table
         .forEach(row => {
     if (!row) return;
-    htmlRow = createHtmlElementForPrayerEditingMode(row, languages, position, container);
-    //We make the paragraph children of each row, editable
-          if (htmlRow) {
-            htmlRow.dataset.arrayName = arrayName;
-            if (isPlaceHolder) htmlRow.dataset.isPlaceHolder = htmlRow.dataset.group;
-            Array.from(htmlRow.children)
-              .forEach((paragraph: HTMLParagraphElement) =>{
-              paragraph.contentEditable = "true";
-            });
-          };
+    htmlRow = createHtmlElementForPrayerEditingMode({
+      tblRow:row,
+      languagesArray: args.languages,
+      position: args.position,
+      container: args.container,
+      arrayName: args.arrayName,
+      isPlaceHolder:args.isPlaceHolder});     
   });
 });
   
    //We add the editing buttons
 addEdintingButtons();
 //Setting the CSS of the newly added rows
-setCSS(Array.from(container.querySelectorAll("div.Row")));
+setCSS(Array.from(args.container.querySelectorAll("div.Row")));
 //Showing the titles in the right side-bar
 
 //removing the minus sign at the begining of the title
-Array.from(container.querySelectorAll("div.Title, div.SubTitle"))
+Array.from(args.container.querySelectorAll("div.Title, div.SubTitle"))
   .forEach(div =>
     Array.from(div.getElementsByTagName('P'))
     .forEach((p: HTMLElement) =>
@@ -156,7 +169,7 @@ Array.from(container.querySelectorAll("div.Title, div.SubTitle"))
   ));
 
 showTitlesInRightSideBar(Array.from(
-  container.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
+  args.container.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
 }
 
 /**
@@ -340,17 +353,19 @@ function exportToJSFile(arrayText: string, arrayName:string) {
  * @param {boolean} exportToStorage - If true, the text of the modified array will be saved to localStorage.editedText. Its default value is "true".
  * @returns {[string, string] | void} the text of the modified array
  */
-function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolean = true): [string, string] | void {
+function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolean = true, dataRoot?:string): [string, string] | void {
 
   if (!exportToFile && !exportToStorage) return;
   
   let title: string,
     titles: Set<string> = new Set(),
     savedArrays: Set<string> = new Set(),
-    arrayName: string,
+    arrayName:string,
     tablesArray:string[][][];
       
-    let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row, div.PlaceHolder")); //we retrieve all the divs with 'Row' class from the DOM
+  let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row, div.PlaceHolder")); //we retrieve all the divs with 'Row' class from the DOM
+  
+  if (dataRoot) htmlRows = htmlRows.filter(htmlRow => htmlRow.dataset.root === dataRoot);
     
   //Adding the tables' titles as unique values to the titles set
   htmlRows
@@ -387,9 +402,10 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
      */
     function modifyEditedArray(tableTitle: string, tablesArray: string[][][]) {
       //We select all the div elements having same data-set-root attribute as the title of the table (tabeTitle)
+
       let htmlTable =
-        Array.from(containerDiv.children)
-          .filter((htmlRow: HTMLDivElement) =>
+        Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
+          .filter(htmlRow =>
             htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
     
       if (htmlTable.length === 0) return;
@@ -400,7 +416,7 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
   function modifyArray(htmlTable:HTMLDivElement[]) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
     //If we have placeHolders rows that were not converted:
-    editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length === 3).forEach(row => { row.splice(0, 1); row[0] = Prefix.placeHolder });
+    editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length === 1).forEach(row => {row[0] = Prefix.placeHolder });
     
       let oldTable: string[][] =
         tablesArray
@@ -620,76 +636,93 @@ function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
   return htmlRow;
 }
 
-function createHtmlElementForPrayerEditingMode(
+function createHtmlElementForPrayerEditingMode(args: {
   tblRow: string[],
   languagesArray: string[],
-  position:
+  position?:
     | HTMLElement
     | DocumentFragment
-    | { beforeOrAfter: InsertPosition; el: HTMLElement } = containerDiv,
-    container:HTMLElement | DocumentFragment = containerDiv
+    | { beforeOrAfter: InsertPosition; el: HTMLElement },
+  container?: HTMLElement | DocumentFragment,
+  arrayName?: string,
+  isPlaceHolder?:boolean
+}
 ): HTMLDivElement {
-  let isPlaceHolder: boolean = false;
-  if (tblRow[0].startsWith(Prefix.placeHolder)) isPlaceHolder = true;
+  if(!args.position) args.position = containerDiv;
+  if (!args.container) args.container = containerDiv;
+  if (args.isPlaceHolder !== true && args.tblRow[0].startsWith(Prefix.placeHolder)) args.isPlaceHolder = true;
   
   let htmlRow: HTMLDivElement,
     p: HTMLParagraphElement,
     lang: string,
     text: string,
     dataRoot: string,
-    actorClass: string;;
+    actorClass: string;
 
   htmlRow = document.createElement("div");
+  if (args.arrayName) htmlRow.dataset.arrayName = args.arrayName;
  
-  if(!isPlaceHolder){
+  if(!args.isPlaceHolder){
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  htmlRow.title = tblRow[0];
-  dataRoot= splitTitle(tblRow[0])[0];
-  htmlRow.dataset.root = splitTitle(dataRoot)[0];
-   actorClass = splitTitle(htmlRow.title)[1];
+  htmlRow.title = args.tblRow[0];
+  htmlRow.dataset.root = splitTitle(args.tblRow[0])[0];
+  htmlRow.dataset.group = htmlRow.dataset.root;
+   actorClass = splitTitle(args.tblRow[0])[1];
   if (actorClass) htmlRow.classList.add(actorClass);
-  } else if (isPlaceHolder) {
-    tblRow = [...tblRow];
-    let children = Array.from(container.children) as HTMLDivElement[];
+  }
+  else if (args.isPlaceHolder) {
+    args.tblRow = [...args.tblRow];
+    let children = Array.from(args.container.children) as HTMLDivElement[];
     htmlRow.classList.add('PlaceHolder');
-    htmlRow.dataset.isPlaceHolder = tblRow[1]; //This is the title of the table referrenced by the placeHolder row
+    htmlRow.dataset.isPlaceHolder = args.tblRow[1]; //This is the title of the table referrenced by the placeHolder row
     htmlRow.dataset.root = children[children.length - 1].dataset.root;
     htmlRow.title = children[children.length - 1].title;
+    htmlRow.dataset.goup = children[children.length - 1].dataset.group;
     htmlRow.style.backgroundColor = 'grey';
-    let copyLangs = [...languagesArray];
-    htmlRow.addEventListener('click', () => {
+    let copyLangs = [...args.languagesArray];
+    htmlRow.addEventListener('click',
+      () => {
+        let referrencedTblTitle: string = args.tblRow[1];
       let shown =
         Array.from(containerDiv.querySelectorAll('div'))
-        .filter(div => div.dataset.isPlaceHolder === tblRow[1]);
-      if (shown.length > 0) {
-        saveOrExportArray(shown[0].dataset.arrayName, false, true);
+        .filter(div => div.dataset.isPlaceHolder === referrencedTblTitle);
+        if (shown.length > 0) {
+          saveModifiedArray(false, true, referrencedTblTitle);
         shown.forEach(div => div.remove());
         return
-      };
+        };
+        let tblsArray = getTablesArrayFromTitlePrefix(referrencedTblTitle);
       let created =
-        getTablesArrayFromTitlePrefix(tblRow[1])
-          .find(tbl => splitTitle(tbl[0][0])[0] === tblRow[1])
+        tblsArray
+          .find(tbl => splitTitle(tbl[0][0])[0] === referrencedTblTitle)
           .reverse()
           .map(row => {
-            return createHtmlElementForPrayerEditingMode(
-              row,
-              copyLangs,
-              {
+            return createHtmlElementForPrayerEditingMode({
+              tblRow:row,
+              languagesArray: copyLangs,
+              position:{
                 el: htmlRow,
                 beforeOrAfter: 'afterend'
               },
-              container)
+              container: args.container,
+              arrayName: getArrayNameFromArray(tblsArray) //This is the array name of the embeded table not for the table including the placeHolder referencing the embeded table
+            })
           })
         
       setCSS(created);
       //Prefix.massStBasil + 'Reconciliation' 
-      let arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(tblRow[1]));
-      created.forEach(div => {
-        div.dataset.isPlaceHolder = tblRow[1];
-        div.dataset.array = arrayName;
+      let arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(args.tblRow[1]));
+      created
+        .forEach(div => {
+          div.dataset.isPlaceHolder = args.tblRow[1];
+          div.dataset.arrayName = arrayName;
+          Array.from(div.children)
+            .forEach((paragraph: HTMLParagraphElement) =>{
+            paragraph.contentEditable = "true";
+          });
       })
     });
-    languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been add to the placeHolder row
+    args.languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been add to the placeHolder row
   };
 
   if (actorClass && actorClass.includes("Title")) {
@@ -701,16 +734,16 @@ function createHtmlElementForPrayerEditingMode(
     }); 
   }
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
-  for (let x = 1; x < tblRow.length; x++) {
+  for (let x = 1; x < args.tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
     if (
       actorClass &&
       (actorClass == "Comment" || actorClass == "CommentText")
     ) {
       //this means it is a comment
-      x == 1 ? (lang = languagesArray[1]) : (lang = languagesArray[3]);
+      x == 1 ? (lang = args.languagesArray[1]) : (lang = args.languagesArray[3]);
     } else {
-      lang = languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
+      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
    
@@ -720,19 +753,21 @@ function createHtmlElementForPrayerEditingMode(
     }
     p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = htmlRow.title;
-    text = tblRow[x];
+    text = args.tblRow[x];
     if (lang)
       p.classList.add(lang.toUpperCase())
     p.lang = lang; //we are adding this in order to be able to retrieve all the paragraphs in a given language by its data attribute. We need to do this in order for example to amplify the font of a given language when the user double clicks
     p.innerText = text;
+    p.contentEditable = 'true';
     htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
   }
   //@ts-ignore
-  position.el
+  args.position.el
     ? //@ts-ignore
-      position.el.insertAdjacentElement(position.beforeOrAfter, htmlRow)
+      args.position.el.insertAdjacentElement(position.beforeOrAfter, htmlRow)
     : //@ts-ignore
-      position.appendChild(row);
+    args.position.appendChild(htmlRow);
+
   return htmlRow;
 }
 
@@ -757,11 +792,11 @@ function addTableToSequence(htmlParag: HTMLElement) {
     let tableRows = Array.from(containerDiv.children).filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root.startsWith(splitTitle(htmlRow.dataset.root)[0]));
     
     tableRows.forEach((row: HTMLDivElement) => {
-      createHtmlElementForPrayerEditingMode(
-        Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
-        allLanguages,
-        document.getElementById("showSequence")
-      );
+      createHtmlElementForPrayerEditingMode({
+        tblRow:Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
+        languagesArray:allLanguages,
+        position: document.getElementById("showSequence") as HTMLElement
+      });
     });
     setCSS(
       Array.from(document.getElementById("showSequence").querySelectorAll("div.Row"))
@@ -812,10 +847,11 @@ function showSequence(
       .filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root.startsWith(title)) as HTMLDivElement[];
     tableRows
       .forEach((row) => {
-      createHtmlElementForPrayerEditingMode(
-        Array.from(row.querySelectorAll("p")).map((p: HTMLElement) => p.innerText),
-        allLanguages,
-        newDiv
+      createHtmlElementForPrayerEditingMode({
+        tblRow:Array.from(row.querySelectorAll("p")).map((p: HTMLElement) => p.innerText),
+        languagesArray:allLanguages,
+        position: newDiv
+      }
       );
     });
     setCSS(Array.from(newDiv.querySelectorAll(".Row")));
@@ -993,7 +1029,6 @@ function goToTableByTitle() {
     .filter((row: HTMLElement) => row.dataset.root.includes(title));
   if (rows.length === 0){
     startEditingMode({
-      arrayName: containerDiv.dataset.arrayName,
       tableTitle: title,
       clear: true
     });
@@ -1030,7 +1065,13 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
 
-  showTables([table], arrayName, getLanguages(arrayName), containerDiv, containerDiv);
+  showTables({
+    tablesArray:[table], 
+    arrayName:arrayName,
+    languages: getLanguages(arrayName),
+    position: containerDiv,
+    container:containerDiv
+  });
   scrollToTop();
 
 };
@@ -1062,7 +1103,7 @@ function editDayReadings(date?: string) {
       .filter(table => table[0][0].includes(date))
       .forEach(table => {
         startEditingMode({
-          arrayName: 'ReadingsArrays.' + arrayName,
+      //    arrayName: 'ReadingsArrays.' + arrayName,
           tableTitle: table[0][0],
           clear:false
         })
@@ -1096,7 +1137,13 @@ function showBtnInEditingMode(btn: Button) {
          let array: string[][][] = getTablesArrayFromTitlePrefix(title);
          let arrayName: string = getArrayNameFromArray(array);
          if (!arrayName) return;
-         showTables([array.find(tbl => splitTitle(tbl[0][0])[0] === title)], arrayName, getLanguages(arrayName), container, container, false)
+         showTables({
+          tablesArray:[array.find(tbl => splitTitle(tbl[0][0])[0] === title)],
+          arrayName:arrayName,
+          languages:getLanguages(arrayName),
+           position: container,
+           container: container,
+           clear:false})
      });
 
   };

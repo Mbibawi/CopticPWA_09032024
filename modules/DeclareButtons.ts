@@ -330,8 +330,12 @@ const btnIncenseDawn: Button = new Button({
         let dataRoot = Prefix.commonIncense + "PrayThatGodHaveMercyOnUsIfBishop&D=$copticFeasts.AnyDay";
         
         let godHaveMercyHtml: HTMLDivElement[] = selectElementsByDataRoot(btnDocFragment, dataRoot.split('IfBishop')[0], { startsWith: true }); //We select all the paragraphs not only the paragraph for the Bishop
-        godHaveMercyHtml.filter(row => godHaveMercyHtml.indexOf(row) > 0 &&  godHaveMercyHtml.indexOf(row)< godHaveMercyHtml.length-1).forEach(row => row.remove());
-       
+        godHaveMercyHtml
+        .filter(htmlRow =>
+          godHaveMercyHtml.indexOf(htmlRow) > 0
+          && godHaveMercyHtml.indexOf(htmlRow) !== godHaveMercyHtml.length - 2)
+          .forEach(htmlRow => htmlRow.remove());
+
         let godHaveMercy: string[][] = IncensePrayersArray.find(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);//We get the whole table not only the second row. Notice that the first row of the table is the row containing the title
         
         if (!godHaveMercy || godHaveMercy.length<1) return console.log('Didn\'t find table Gode Have Mercy');
@@ -934,10 +938,15 @@ const btnMassUnBaptised: Button = new Button({
       
       let godHaveMercyHtml: HTMLDivElement[] = selectElementsByDataRoot(btnDocFragment, dataRoot.split('IfBishop')[0], { startsWith: true }); //We select all the paragraphs not only the paragraph for the Bishop
 
-      godHaveMercyHtml.filter(htmlRow => godHaveMercyHtml.indexOf(htmlRow) > 0).forEach(htmlRow => htmlRow.remove());
+      godHaveMercyHtml
+        .filter(htmlRow =>
+          godHaveMercyHtml.indexOf(htmlRow) > 0
+          && godHaveMercyHtml.indexOf(htmlRow) < godHaveMercyHtml.length - 1)
+        .forEach(htmlRow => htmlRow.remove());
      
       let godHaveMercy: string[][] = IncensePrayersArray.find(tbl => tbl[1] && splitTitle(tbl[1][0])[0] === dataRoot);//We get the whole table not only the second row. Notice that the first row of the table is the row containing the title
-      
+    
+
       if (!godHaveMercy) return console.log('Didn\'t find table Gode Have Mercy');
             
       addExpandablePrayer({
@@ -950,6 +959,7 @@ const btnMassUnBaptised: Button = new Button({
         prayers:[[godHaveMercy[2], godHaveMercy[3]]],//We add only the second and third row, the 1st row is a comment from which we retrieved the text for the title
         languages:btnMassUnBaptised.languages
       });
+      
     })();
 
     if (Season === Seasons.GreatLent
@@ -2261,7 +2271,7 @@ function selectFromMultiDatedTitle(
  */
 async function insertCymbalVersesAndDoxologies(btn:Button) {
   
-  if (!btn.docFragment) return console.log('btn.docFragment = ', btn.docFragment);
+  if (!btn.docFragment) return console.log('btn.docFragment is undefined = ', btn.docFragment);
 
   (async function InsertCymbalVerses() {
 
@@ -2281,17 +2291,31 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
     let feast: [string, string];
     
     feast = Object.entries(copticFeasts).find(entry => entry[1] === copticDate); //We check if today is a feast
-
+     
     if (!feast) feast = Object.entries(copticFeasts).find(entry => entry[1] === copticReadingsDate); //We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
 
-    if (feast) sequence[1] = sequence[1].replace('AnyDay', feast[0]);
+    if (!feast) feast = Object.entries(Seasons).find(entry => entry[1] === Season);
+    if (feast) insertFeastInSequence(sequence, feast[1], 1);
     
-    if (!feast) sequence.splice(1, 0, sequence[1].replace('copticFeasts.AnyDay', 'Seasons.' + Object.entries(Seasons).find(entry=>entry[1]===Season)[0])) //We insert an element for the Season
    
-    let cymbals: string[][][] =
+    let cymbals: string[][][] = [];
+    let cymbalTable: string[][];
+
       sequence
         .map(cymbalsTitle => 
-          findTableInPrayersArray(cymbalsTitle, PrayersArrays.CymbalVersesPrayersArray, { equal: true }) as string[][]
+        {
+          if (cymbalsTitle.startsWith('&Insert='))
+            cymbalTable = PrayersArrays.CymbalVersesPrayersArray
+              .find(tbl =>
+                selectFromMultiDatedTitle(
+                  tbl[0][0],
+                  cymbalsTitle.split('&Insert=')[1])
+              )
+
+          else cymbalTable = findTableInPrayersArray(cymbalsTitle, PrayersArrays.CymbalVersesPrayersArray, { equal: true }) as string[][];
+          
+          cymbals.push(cymbalTable);
+        }
         );
     if (cymbals.length <1) return console.log('cymbals= ', cymbals);
     
@@ -2326,24 +2350,41 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
 
     let feast: [string, string];
     //if the copticDate is a feast
+    
+    let excludeFeast = [saintsFeasts.StMina, saintsFeasts.StGeorge, saintsFeasts.StMarc, saintsFeasts.StMaykel]; //Those saints feast will be excluded because the doxologies of those saints are included by default
+
+    if (excludeFeast.indexOf(copticDate) < 0)
+      feast = Object.entries(saintsFeasts)
+        .find(entry => entry[1] === copticDate); 
+    
+    if (feast) insertFeastInSequence(sequence, feast[1], 1);
 
     feast  = Object.entries(copticFeasts).find(entry => entry[1] === copticDate);
       //Else if the copticReadingsDate is a feast
-    if(!feast)  feast  = Object.entries(copticFeasts).find(entry => entry[1] === copticReadingsDate);
+    
+    if (!feast) feast = Object.entries(copticFeasts).find(entry => entry[1] === copticReadingsDate);
+    
+    if (!feast) feast = Object.entries(Seasons).find(entry => entry[1] === Season);
 
-    if (feast) sequence.splice(0, 0, Prefix.doxologies + '&D=$copticFeasts.' + feast[0]);//We insert the feast doxologie(s) before the 1st doxology
+    if (feast) insertFeastInSequence(sequence, feast[1], 0);
 
-    //If copticDate and copticReadingsDate, didn't match any copticFeast, we insert an element for the Season
-    if (!feast) sequence.splice(0, 0, Prefix.doxologies + '&D=$Seasons.' + Object.entries(Seasons).find(entry=>entry[1] === Season)[0]);
 
-    //We also check if today is a saint's feast
-    feast = Object.entries(saintsFeasts).find(entry => entry[1] === copticDate); 
-    if (feast) sequence.splice(sequence.length-2, 0, Prefix.doxologies + '&D=$saintsFeasts.' + feast[0]);// we insert the saint doxology before the last doxology
+    let doxologies: string[][][] = [];
 
-    let doxologies: string[][][] =
-      sequence
-        .map(doxologyTitle => 
-        findTableInPrayersArray(doxologyTitle, PrayersArrays.DoxologiesPrayersArray, { equal: true }) as string[][]);
+    sequence
+      .map(doxologyTitle => 
+        {
+          if (doxologyTitle.startsWith('&Insert='))
+            PrayersArrays.DoxologiesPrayersArray
+              .filter(tbl => selectFromMultiDatedTitle(tbl[0][0], doxologyTitle.split('&Insert=')[1]))
+              .forEach(doxology => doxologies.push(doxology)); //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
+
+          else doxologies
+            .push(
+              findTableInPrayersArray(doxologyTitle, PrayersArrays.DoxologiesPrayersArray, { equal: true }) as string[][]
+            )
+        }
+      );
   
     
     if (doxologies.length === 0) return console.log('doxologies = ', doxologies);
@@ -2351,6 +2392,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
 
 
     if (Season === Seasons.GreatLent){
+      //For the Great Lent, there is a doxology for the Sundays and 4 doxologies for the week days
       if (todayDate.getDay() === 0 || todayDate.getDay() === 6) doxologies = doxologies
         .filter(tbl => tbl[0][0].includes('Seasons.GreatLent'))
         .filter(tbl => !tbl[0][0].includes('Week'));
@@ -2369,6 +2411,13 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
       container: btn.docFragment
     });
   })();
+
+  function insertFeastInSequence(sequence:string[], feastString:string, index:number) {
+    if (lordFeasts.indexOf(eval(feastString)) < 0
+      && Season !== Seasons.PentecostalDays)
+      sequence.splice(index, 0, '&Insert=' + feastString);
+    else sequence.splice(index, 1, '&Insert=' + feastString);
+  }
 
 };
  

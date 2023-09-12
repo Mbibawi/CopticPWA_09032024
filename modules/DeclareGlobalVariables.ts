@@ -287,8 +287,9 @@ const ReadingsArrays = {
 const Seasons = {
     //Seasons are periods of more than 1 day, for which we have specific prayers (e.g.: cymbal verses, doxologies, praxis response, etc.)
     StMaryFast: 'StMFast', //stands for Saint Mary Feast
-    Kiahk: 'Kiahk',
+    Nayrouz: 'Nay', //Stands for Nayrouz from 1 Tout to 16 Tout
     NativityFast: 'NF', //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
+    Kiahk: 'Kiahk',
     Nativity: 'Nat', //from 28 Kiahk afternoon to 6 Toubi
     Baptism:'Ba', //from 10 Toubi until 12 Toubi 
     GreatLent: 'GL', // Stand for Great Lent
@@ -296,7 +297,6 @@ const Seasons = {
     PentecostalDays: 'Pntl', //(from the Holy Saturday Afternoon, until the 7th Sunday)  Stands for Pentecostal Days
     JonahFast: 'Jonah', //Stands for Jonah Feast
     ApostlesFast: 'Apost', //Stands for Apostles Feast
-    Nayrouz: 'Nay', //Stands for Nayrouz
     CrossFeast: 'Cross', //Stands for Cross Feast
     NoSeason: 'NoSpecificSeason',
 };

@@ -261,23 +261,28 @@ function checkForUnfixedEvent(
 		//If we are Saturday (which means that difference = 1) and we are after 3 PM, we will retrieve the readings of the Resurrection because we use to celebrate the Resurrection Mass on Saturday evening not on Sunday itself
 		Season = Seasons.PentecostalDays; //we set teh Season value
 		return isItSundayOrWeekDay(Seasons.GreatLent, 58, weekDay);
-		//return copticFeasts.Resurrection; //we get the reading of Resurrection although we are still Saturday
-	} else if (difference >= 1 && difference < 58) {
+		
+	} else if (difference >0 && difference < 58) {
 		//We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day
-		Season = Seasons.GreatLent;
-		if ((difference < 7 && difference > 1)
-			|| difference === 7 && todayDate.getHours() > 12) {
-			//i.e., if we are between Monday and Friday of the Holy Week or if we are on Palm Sunday afternoon
-			Season = Seasons.HolyWeek
-		}
+		if (copticDate === '1007')
+			Season = Seasons.CrossFeast; //! CAUTION: This must come BEFORE Seasons.GreatLent because the cross feast is celebrated twice, one of which during the Great Lent (10 Bramhat). If we do not place this 'else if' condition before the Great Lent season, it will never be fulfilled during the Great Lent
+	
+		else if (difference < 7
+			|| (difference === 7 && todayDate.getHours() > 12))
+			Season = Seasons.HolyWeek; //i.e., if we are between Monday and Friday of the Holy Week or if we are on Palm Sunday afternoon 
+
+		else Season = Seasons.GreatLent;
+		
 		return isItSundayOrWeekDay(Seasons.GreatLent, 58 - difference, weekDay);
+
 	} else if (difference > 65 && difference < 70) {
 		//We are in the Jonah Feast days (3 days + 1)
 		//The Jonah feast starts 15 days before the begining of the Great Lent
 		//I didn't find the readings for this period in the Power Point presentations
 		Season = Seasons.JonahFast;
 		return isItSundayOrWeekDay(Seasons.JonahFast, Math.abs(70 - difference), weekDay);
-	} else if (difference < 0 && Math.abs(difference) < 50) {
+
+	} else if (Math.abs(difference) < 50) {
 		difference
 		// we are during the 50 Pentecostal days
 		Season = Seasons.PentecostalDays;
@@ -286,33 +291,41 @@ function checkForUnfixedEvent(
 			Math.abs(difference),
 			weekDay
 		);
-	}else if (Number(copticMonth) === 12 && Number(copticDay) < 16) {
+	} else if (Number(copticMonth) === 12 && Number(copticDay) < 16) {
 		//We are during the St Mary Fast
 		Season = Seasons.StMaryFast;
+
+	} else if ((Number(copticMonth) === 1) && Number(copticDay)<20) {
+		if (Number(copticDay) < 17) Season = Seasons.Nayrouz;
+		else if (Number(copticDay) > 16) Season = Seasons.CrossFeast;
+
 	} else if (Number(copticMonth) === 4 && Number(copticDay) < 29) {
 		//We are during the month of Kiahk which starts on 16 Hatour and ends on 29 Kiahk
 		Season = Seasons.Kiahk;
+
 	} else if (Number(copticMonth) === 3 && Number(copticDay) > 15) {
 		//We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk, but we are not during the month of Kiahk
 		Season = Seasons.NativityFast;
+
 	} else if (copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15) {
 		//We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
 		return copticFeasts.NativityParamoun;
+
 	} else if (
 		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() > 15) 
 		|| (Number(copticMonth) === 4 && Number(copticDay) > 28)
 		||(Number(copticMonth) === 5 && Number(copticDay) < 7)) {
 		//We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
 		Season = Seasons.Nativity; //From 28 Kiahk afternoon to Circumsion (6 Toubi)
+
 	} else if (
 		(Number(copticMonth) === 5 && Number(copticDay) === 10 && todayDate.getHours() > 15) ||
 		(Number(copticMonth) === 5 && Number(copticDay) > 10 && Number(copticDay) < 13)) {
 		//We are between the Nativity and the Baptism
 		Season = Seasons.Baptism;
+		
 	} else if (Number(copticMonth) === 1 && Number(copticDay) < 17) {
 		Season = Seasons.Nayrouz;
-	} else if (Number(copticMonth) === 1 && Number(copticDay) > 16 && Number(copticDay) > 20) {
-		Season = Seasons.CrossFeast;
 	} else if (
 		difference < 0 && Math.abs(difference) > 49
 		&& (
@@ -321,18 +334,10 @@ function checkForUnfixedEvent(
 			(Number(copticMonth) === 11 && Number(copticDay) < 5)
 		)
 	) {
-		//IMPORTANT ! this must come after all the cases preceding the begining of the Great Lent (otherwise, the 3rd condition: copticMonth <11, will be fulfilled and we will fall into this else if statement)
-		//We are more than 50 days after Resurrection, which means that we are potentially during the Apostles Lent
-			// We are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
+		//!CAUTION: this must come after all the cases preceding the begining of the Great Lent (otherwise, the 3rd condition: copticMonth <11, will be fulfilled and we will fall into this else if statement)
+		//We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
 			//I didn't find specific readings for this period. I assume there are no specific reading and we follow the ordinary readings. This needs however to be checked that's why I kept this "else if" case
 			Season = Seasons.ApostlesFast;
-			//My understanding is that the readings during the Apostle fast follow the coptic calendar as any ordinary day. If not, we may activate the return value below
-			return //We are for now blocking the next return until we see if there are special readings
-			return isItSundayOrWeekDay(
-				Seasons.ApostlesFast,
-				Math.abs(difference) - 49,
-				weekDay
-			);	
 	} 
 };
 /**
