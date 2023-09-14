@@ -2392,7 +2392,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
   })();
 
   function insertFeastInSequence(sequence:string[], feastString:string, index:number) {
-    if (lordFeasts.indexOf(eval(feastString)) < 0
+    if (lordFeasts.indexOf(feastString) < 0
       && Season !== Seasons.PentecostalDays)
       sequence.splice(index, 0, '&Insert=' + feastString);
     else sequence.splice(index, 1, '&Insert=' + feastString);

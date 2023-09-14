@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.0.0 (Major changes and fixes)';
+const version: string = 'v5.0.1 (Changes to the Presentation mode)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -383,6 +383,7 @@ JSON.parse(localStorage.userLanguages).forEach(lang => userLanguages.push(lang))
 var defaultLanguage: string = userLanguages[0];
 var foreingLanguage: string = userLanguages[1];
 var copticLanguage: string = userLanguages[2];
+var lastScrollTop:number = 0;
 
 const prayersLanguages: string[] = ['COP', foreingLanguage, 'CA', 'AR'];
 const readingsLanguages: string[] = ['AR', foreingLanguage, 'EN'];
@@ -466,20 +467,23 @@ let selectedDate: number, //This is the date that the user might have manually s
     weekDay: number; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0
 var todayDate: Date;
 let isFast: boolean;
-let actors = [
+let actors: { EN: string; FR?: string; AR?: string;  COP?:string}[] = [
     {
         EN: 'Priest',
         FR: 'Prêtre',
+        COP: 'Prêtre',
         AR: 'الكاهن',
     },
     {
         EN: 'Diacon',
         FR: 'Diacre',
+        COP: 'Diacre',
         AR: 'الشماس',
     },
     {
         EN: 'Assembly',
         FR: 'Assemblée',
+        COP: 'Assemblée',
         AR: 'الشعب',
     },
     {

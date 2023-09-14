@@ -42,13 +42,14 @@
 }
 
 
-.root{
+:root{
   --inline-column-width: 30%;
   --text-column-width: 30%;
 }
 .Content{
   display:grid;
   grid-template-columns: 99.9vw;
+  --fSize: 0.5;
 }
 .Container {
   display: grid;
@@ -130,6 +131,7 @@ width: 40%;
   background-color: rgba(161, 9, 29, 0.705);
   border-radius: 10px;
   font-family: DCO; 
+  font-size: calc(var(--fSize)*3cqi);
   width:fit-content;
   min-width: 60px;
   min-height: 50px;
@@ -175,8 +177,8 @@ p{
   direction: rtl !important;
   font-family: Amiri;
   font-weight: 100;
-  font-size: 3.4cqi;
-  line-height: 1.5em;
+  font-size: calc(var(--fSize)* 3.4cqi);
+  line-height: calc(var(--fSize) *5cqi);
 }
 
 .AR{
@@ -193,8 +195,8 @@ p{
 {
  grid-area: FR;
  font-family: DCO;
- font-size: 3cqi;
- line-height: 1.5em;
+ font-size: calc(var(--fSize)*3cqi);
+ line-height: calc(var(--fSize) * 4cqi);
  font-weight: normal;
 }
 
@@ -202,8 +204,8 @@ p{
 {
   grid-area: COP;
   font-family: ArialCoptic;
-  font-size: 2.8cqi;
-  line-height: 1.5em;
+  font-size: calc(var(--fSize) * 2.8cqi);
+  line-height: calc(var(--fSize) *4cqi);
   font-stretch: condensed;
 }
 .EN{
@@ -284,48 +286,49 @@ color:white;
 .DisplayModePresentation{
 grid-template: "FR AR"  "COP COP";
 grid-template-columns: 50% 50%;
-grid-template-rows: 65% 35%;
+grid-template-rows: fit-content fit-content;
 background-color: black !important;
-height: 98vh;
-border-radius: 20px ;
+width: 98%;
+height:98%;
+position:fixed; 
+top:0px; 
 }
+
 .DisplayModePresentation>.COP{
-  text-align: center;
-  font-size: 5vh;
-  line-height: 3rem;
-  margin-top: 10px;
+  margin-top: calc(var(--fSize)*2vh);
+  text-align: center !important;
 }
-.DisplayModePresentation>.FR{
-  text-align: justify;
-  font-size: 5vh;
-  line-height: 3rem;
+.DisplayModePresentation>.FR
+{
   border-right-color: white;
   border-right-style: solid;
   border-right-width: 3px;
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   padding-right: 10px;
+}
 
-}
-.DisplayModePresentation>.AR{
-  text-align: justify;
-  font-size: 8vh;
-  line-height: 3rem;
-}
 
 .DisplayModePresentation>.FR,
 .DisplayModePresentation>.AR, 
 .DisplayModePresentation>.COP{
   background-color: black;
   color:white;
-  border-radius: 20px;
+  text-align: justify;
+  font-size: calc(var(--fSize)*6vh) !important;
+  line-height: calc(var(--fSize)*6vh) !important;
+  height: fit-content !important;
+}
+br{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .Title.DisplayModePresentation,
 .SubTitle.DisplayModePresentation
 {
   grid-template: "FR AR";
-  font-size: 10pt !important;
+  font-size: calc(var(--fSize)*6cqi);
   align-items: stretch;
   height: 2vh;
   border-style: hidden;
@@ -337,8 +340,8 @@ border-radius: 20px ;
 .SubTitle.DisplayModePresentation>p
 {
   font-size: 15pt !important;
-  height: 10px;
-  line-height: 10px;
+  height: 2cqi;
+  line-height: 1cqi;
   padding-top: 2px;
   padding-bottom:2px;
   align-self: center;
@@ -351,6 +354,24 @@ border-radius: 20px ;
 .CommentText.DisplayModePresentation
 {
   display: none !important;
+}
+
+.slideTitle{
+  /*This is the title formatting in the Presentation Display Mode*/
+ /* text-decoration: underline;*/
+}
+.actorSpan{
+  /*This is the actor text formatting in the Presentation Display Mode*/
+  display: block;
+  text-decoration: underline;
+  font-weight: bolder;
+  margin-top: 0.5vh !important;
+}
+
+.textSpan{
+  display: block;
+  margin-top: 3.5vh !important;
+  margin-bottom: 0.5vh !important;
 }
 
 
@@ -636,13 +657,13 @@ border-radius: 20px ;
 }
 
 .musicalNote.amplifiedText{
-  font-size: 25pt;
+  font-size: calc(var(--fSize) *5cqi) !important;
 }
 
 .musicalNote{
   color:  #95190c !important;
   font-weight: bold !important;
-  font-size: 4.5cqi !important;
+  font-size: calc(var(--fSize) *4cqi) !important;
 }
 .DisplayModePresentation> p>span.musicalNote{
   color:  #95190c !important;
@@ -685,3 +706,105 @@ quotes: '"' '"';
 q{
   font-style: italic;
 }   
+
+/*Formatting the input for font size*/
+#inputFontSize {
+  height: 38px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+#inputFontSize:focus {
+  outline: none;
+}
+#inputFontSize::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071A9;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+#inputFontSize::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11px;
+}
+#inputFontSize:focus::-webkit-slider-runnable-track {
+  background: #3071A9;
+}
+#inputFontSize::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #3071A9;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+#inputFontSize::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#inputFontSize::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#inputFontSize::-ms-fill-lower {
+  background: #3071A9;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+#inputFontSize::-ms-fill-upper {
+  background: #3071A9;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+#inputFontSize::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#inputFontSize:focus::-ms-fill-lower {
+  background: #3071A9;
+}
+#inputFontSize:focus::-ms-fill-upper {
+  background: #3071A9;
+}
+
+.settingsLabel{
+  margin: 5px 5px;
+  text-align: center;
+  text-justify: auto;
+}
+
+h3{
+  margin: 5px 5px;
+  font-size: calc(var(--fSize) *4cqi);
+}

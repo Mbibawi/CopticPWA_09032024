@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", startApp);
  * This function starts the App by setting a number of global variables like the dates, displaying the home page/main menu buttons, etc.
  */
 async function startApp() {
+  if (localStorage.fontSize) setFontSize(localStorage.fontSize);
+
   showChildButtonsOrPrayers(btnMain);
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
@@ -117,7 +119,7 @@ async function startApp() {
       });
   };
 
-  addKeyDownListnerToElement(document);
+  addKeyDownListnerToElement(document, 'keydown', undefined);
 }
 
 /**
@@ -209,7 +211,8 @@ function createHtmlElementForPrayer(args: {
       p.innerText = text;
       p.addEventListener("dblclick", (ev: MouseEvent) => {
         ev.preventDefault();
-        toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
+        localStorage.fontSize !== '1.9' ? setFontSize('1.9') : setFontSize('1');
+        //toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
       }); //adding a double click eventListner that amplifies the text size of the chosen language;
       htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
     
@@ -412,10 +415,8 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 
   if (btn.btnID === btnMain.btnID) addSettingsButton();
-  if (localStorage.displayMode === displayModes[1]) {
-    let firstSlide = containerDiv.querySelector('div.Row');
-    if (firstSlide) firstSlide.classList.remove(hidden);
-  };
+
+  if (localStorage.displayMode === displayModes[1])showSlidesInPresentationMode();
 
   //If at the end no prayers are displayed in containerDiv, we will show the children of btnMain in containerDiv
   if (
@@ -424,6 +425,169 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     && containerDiv.children[0].classList.contains("mainPageBtns")
   )
     btnMain.onClick();
+}
+
+function showSlidesInPresentationMode() {
+  let countMax: number = 1500, countMin: number = 1700;
+  let toMerge: HTMLDivElement[] = [];
+  
+  mergeContainerSlidesIfTooSmall(containerDiv);
+
+  showFirstSlide(containerDiv);
+  function showFirstSlide(container:HTMLDivElement) {
+    //!CAUTION: This must come after merging the slides (i.e. after calling mergeSlides()) because merge slides may append the first slide to a container (if we start by showing the first slide before it is appended the container, its nextSiblingElement will be a children of the container not a direct children of containerDiv. When we will scroll up or down (or press the Arrow key up or down), we will move between the children of the container not between the direct children of containerDiv)
+//We will unhide the first row (i.e. slide) in containerDiv
+    let firstSlide = Array.from(container.children as HTMLCollectionOf<HTMLDivElement>)
+      .find(row => row.classList.contains('Row') && !checkIfCommentOrCommentText(row));
+  if (firstSlide) {
+    console.log('found first slide')
+    showOrHideSlide(firstSlide, true)
+    }
+  };
+
+
+  function mergeContainerSlidesIfTooSmall(container: HTMLDivElement) {
+      //This function will count the number of words in each html div element with class 'DisplayedModePresentation'. If the number is below a certain number, it will add the text in the next html div. It will do so until we reach the maximum number. It will then append all the divs to a container (a div having the class 'Row'). 
+    let slide = container.querySelector('div.DisplayModePresentation') as HTMLDivElement;
+
+  while (slide && !slide.classList.contains('inlineBtns') && slide.children.length > 0) {
+    
+    if (slide.classList.contains('Expandable')) mergeContainerSlidesIfTooSmall(slide);
+    
+    countWords(slide);
+    
+    if (toMerge.length > 1) wrapSlidesInAContainer();
+
+    toMerge = [];
+
+    
+    if (slide.nextElementSibling)
+      slide = slide.nextElementSibling as HTMLDivElement;
+    else if (slide.parentElement && slide.parentElement.classList.contains('Expandable'))
+      slide = slide.parentElement.nextElementSibling as HTMLDivElement;
+    else slide = undefined
+  };
+
+  function countWords(slide: HTMLDivElement) {
+    let count: number = 0;
+
+    if(!checkIfCommentOrCommentText(slide))
+    toMerge.push(slide); //!CAUTION: we need the slide to be pushed when the function, because when it is called for the first time, if the slide is not already in toMerge[], we will add its nextSibling but the first slide itself will never be added to toMerge.
+
+    //We start by counting the number of letters in toMerge[]
+    toMerge.forEach(child => count += child.innerHTML.length);
+
+    if (count > countMax) {
+      toMerge.pop(); //if the number of letters exceeds the maximum we remove the last slide from toMerge[]
+      return;
+    };
+
+    let nextSlide = selectNextSlide(slide);
+    
+    function selectNextSlide(slide:HTMLDivElement):HTMLDivElement {
+      let next: HTMLDivElement;
+      if (slide.nextElementSibling) next = slide.nextElementSibling as HTMLDivElement;
+      else if (slide.parentElement && slide.parentElement.classList.contains('Expandable')) next = slide.parentElement.nextElementSibling as HTMLDivElement;
+
+      if (checkIfCommentOrCommentText(next)) selectNextSlide(next);
+      
+      return next
+    }
+
+    if (!nextSlide) return;
+    
+    if (count <= countMin) countWords(nextSlide);
+
+  };
+
+  function wrapSlidesInAContainer():HTMLDivElement {  
+    console.log('ToMerge = ', toMerge);
+
+      if (toMerge[toMerge.length - 1].classList.contains('Title')
+      || toMerge[toMerge.length - 1].classList.contains('SubTitle'))
+      toMerge.pop(); //If the last element of toMerge[] is a title slide, we remove it
+      
+    if (toMerge.length < 2) return; 
+    
+        let mergedContainer = document.createElement('div');
+        mergedContainer.classList.add('Row');
+        mergedContainer.classList.add('DisplayModePresentation');
+        mergedContainer.dataset.isMeregedContainer='true';
+        mergedContainer.classList.add(hidden);
+        toMerge[0].insertAdjacentElement('beforebegin', mergedContainer);
+      
+        toMerge
+          .forEach(mergedSlide => {
+            if (mergedSlide.classList.contains('Comments') || mergedSlide.classList.contains('CommentText')) return console.log('mergedSlide contains comments !!!');
+            let actor = actors.find(actor => mergedSlide.classList.contains(actor.EN));
+            
+            Array.from(mergedSlide.children as HTMLCollectionOf<HTMLParagraphElement>)
+              .forEach(parag =>{
+                if(checkIfTitle(mergedSlide))
+                parag.classList.add('slideTitle');
+                if(actor){
+                  parag.innerHTML = '<span class="actorSpan">' + actor[parag.lang.toUpperCase()] + ': </span>' + '<span class="textSpan">' + parag.innerHTML + '</span>'
+                }
+              });
+            
+            
+            mergedContainer.innerHTML += mergedSlide.innerHTML;
+            mergedSlide.remove();
+          });
+    let langs = ['ar', 'fr', 'cop'];
+    let paragraphs = Array.from(mergedContainer.children) as HTMLParagraphElement[];
+    langs
+      .map(lang => paragraphs.filter(p => p.lang === lang))
+      .forEach(sameLangs =>
+        sameLangs
+        .forEach(p => {
+          if (sameLangs.indexOf(p) === 0) return;
+          sameLangs[0].innerHTML += '<span class="textSpan">' + p.innerHTML + '</span>';
+          p.remove();
+        }))
+    
+        slide = mergedContainer; //This is in order to move the the nextSibling of container not of slide itself because slide is now appended to container and we do not want to move to the next container child, but to the next child of containerDiv 
+  };
+
+  };
+
+  (function moveExpandableBtns(){
+    let btn: HTMLElement;
+      let expandables = Array.from(containerDiv.querySelectorAll('.Expandable')) as HTMLDivElement[];
+    if (expandables.length < 1) return console.log('Couldn\'t find any expandable');
+    expandables
+      .forEach(expandable => {
+        btn = containerDiv.querySelector('#' + expandable.id.replace('Expandable', ''));
+        if (!btn) return console.log('couldn\'t find btn');
+        sideBarBtnsContainer.prepend(btn);
+        
+
+        btn.addEventListener('click', () => {
+          let currentlyDisplayed = containerDiv.querySelector('div[data-is-displayed="true"') as HTMLDivElement;
+          if (currentlyDisplayed) showOrHideSlide(currentlyDisplayed, false);
+          showFirstSlide(expandable);
+          closeSideBar(rightSideBar);
+
+        });
+        console.log('expandable btn = ', btn)
+      })
+
+  })();
+};
+
+/**
+ * Shows or hides a slide in Display Presentation Mode
+ * @param {HTMLDivElement} slide - the html div that we want to show or hide
+ * @param {boolean} show - a boolean that indicates whether the slide should be displayed or hidden (true = display, flase = hide)
+ */
+function showOrHideSlide(slide:HTMLDivElement, show:boolean){
+  if (show) {
+    slide.classList.remove(hidden);
+  slide.dataset.isDisplayed = 'true';
+}else if(!show){
+  slide.classList.add(hidden);
+  slide.removeAttribute('data-is-displayed');
+}
 }
 
 /**
@@ -535,7 +699,7 @@ function createBtn(
   if (!onClick && (btn.children || btn.prayersSequence || btn.onClick))
     onClick = () => showChildButtonsOrPrayers(btn, clear);
   //Else, it is the onClick parameter that will be attached to the eventListner
-  if(onClick) newBtn.addEventListener("click", (e) => {
+  if(onClick) newBtn.addEventListener("click", (e)=>{
     e.preventDefault;
     onClick();
   });
@@ -1082,7 +1246,8 @@ async function closeSideBar(sideBar: HTMLElement) {
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
  */
-function DetectFingerSwipe() {
+function DetectFingerSwipe():string {
+  let direction:string;
   //Add finger swipe event
   let xDown = null;
   let yDown = null;
@@ -1109,6 +1274,7 @@ function DetectFingerSwipe() {
       /*most significant*/
       if (xDiff > 10) {
         /* right to left swipe */
+        direction = 'left'
         if (
           !leftSideBar.classList.contains(hidden) &&
           rightSideBar.classList.contains(hidden)
@@ -1122,6 +1288,7 @@ function DetectFingerSwipe() {
         }
       } else if (xDiff < -10) {
         /* left to right swipe */
+        direction = 'right'
         if (
           leftSideBar.classList.contains(hidden) &&
           rightSideBar.classList.contains(hidden)
@@ -1137,14 +1304,19 @@ function DetectFingerSwipe() {
     } else {
       if (yDiff > 0) {
         /* down swipe */
+        direction = 'down'
+        if (localStorage.displayMode === displayModes[1]) goToNextOrPreviousSlide(undefined, direction)
       } else {
         /* up swipe */
+        direction = 'up'
+        if (localStorage.displayMode === displayModes[1]) goToNextOrPreviousSlide(undefined, direction)
       }
     }
     /* reset values */
     xDown = null;
     yDown = null;
   }
+  return direction;
 }
 /**
  * Takes an Html Element and looks for all the other elements having the same "lang" attribute as the Html element passed to it, then it checks if the size of text is amplified or not: if already amplified, it reduces it, if not, it amplifies it
@@ -2066,7 +2238,7 @@ function showSettingsPanel() {
 
   //Appending 'Next Coptic Day' button
   (async function showNextCopticDayButton() {
-    let btnsContainer = createBtnsContainer('showNextCopticDate', 'Move to the next or previous day');
+    let btnsContainer = createBtnsContainer('showNextCopticDate', {AR:'انتقل إلى اليوم التالي أو السابق', FR:'Aller au jour suivant ou précédant', EN:'Move to the next or previous day'});
     btn = createSettingBtn(
       {
       tag:"button",
@@ -2107,6 +2279,43 @@ function showSettingsPanel() {
 
   })();
 
+  (function showChangeFontSizeBtn(){
+    let btnsContainer = createBtnsContainer('changeFontSize', {AR:'تكبير أو تصغير حجم الأحرف', FR: 'Changer la taille de police', EN: 'Increase or decrease the fonts size'} );
+    let input = createSettingBtn({
+      tag: 'input',
+      btnsContainer:btnsContainer,
+      id: 'fontsSize',
+    }) as HTMLInputElement;
+    let dataList: HTMLDataListElement = createDataList();
+    if (!dataList) return console.log('dataList was not generated : ', dataList);
+    input.type = 'range';
+    input.setAttribute('list', dataList.id);
+    input.id = 'inputFontSize';
+    input.min = '0.3';
+    input.max = '1.9';
+   
+    Number(localStorage.fontSize) ? input.defaultValue = localStorage.fontSize : input.defaultValue = '0.5';
+    input.step = '0.1';
+    input.onchange = () => {
+      console.log('input.value = ' + input.value);
+      setFontSize(input.value as string)
+    };
+
+    function createDataList():HTMLDataListElement{
+    let list = document.createElement('datalist');
+    list.id = 'fontSizes';
+    list.classList.add(hidden);
+    btnsContainer.appendChild(list);
+    for(let i=0.3; i<2; i+=0.1){
+      let option = document.createElement('option');
+      option.value = i.toString();
+      list.appendChild(option)
+    };
+    return list
+    }
+  })();
+
+
     //Appending Add or Remove language Buttons
     (async function showAddOrRemoveLanguagesBtns() {;
       let langs = [
@@ -2117,12 +2326,12 @@ function showSettingsPanel() {
         ['CA', 'قبطي مُعرب'],
       ];
   
-      let defaultLangContainer = createBtnsContainer('defaultLanguage', 'Choose the default Language');
+      let defaultLangContainer = createBtnsContainer('defaultLanguage', {AR:'اختر اللغة الأساسية (لغة الإعدادات)', FR: 'Sélectionner la langue par défaut', EN: 'Choose the default Language'});
       
-      let foreignLangContainer =createBtnsContainer('foreignLanguage', 'Choose the foreign Language');
+      let foreignLangContainer =createBtnsContainer('foreignLanguage', {AR:'اختر اللغة الأجنبية (اختياري)', FR: 'Sélectionner une langue étrangère (optionnel)', EN: 'Choose the foreign Language'});
       
-      let copticLangContainer = createBtnsContainer('copticLanguage', 'Choose the coptic language version');
-
+      let copticLangContainer = createBtnsContainer('copticLanguage', {AR:'اختر نسخة النص القبطي (أحرف قبطية أو قبطي معرب )', FR: 'Sélectionner les caractères d\'affichage de la version copte (si disponible)', EN: 'Choose the coptic language version'});
+      
       addLangsBtns({
         btnsContainer: defaultLangContainer,
         fun: (lang) => setLanguage(lang, 0), //0 means that we are changing the element from which the default language is retrieved
@@ -2221,7 +2430,7 @@ function showSettingsPanel() {
   })();
   
  ( async function showExcludeActorButon() {
-    let btnsContainer = createBtnsContainer('showOrHideActor', 'Show or hide an actor');
+    let btnsContainer = createBtnsContainer('showOrHideActor', {AR:'إظهار أو إخفاء مردات الكاهن أو الشماس أو الشعب', FR: 'Afficher ou cacher un acteur', EN: 'Show or hide an actor'});
    actors
      .map((actor) => {
       if (actor.EN === "CommentText") return; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
@@ -2265,7 +2474,7 @@ function showSettingsPanel() {
   })();
 
   (async function showDisplayModeBtns() {
-    let btnsContainer =createBtnsContainer('changeDisplayMode', 'Change the display mode');
+    let btnsContainer =createBtnsContainer('changeDisplayMode', {AR:'اختار نظام العرض', FR: 'Changer le mode d\'affichage', EN: 'Change the display mode'});
 
     inlineBtnsDiv.appendChild(btnsContainer);
     displayModes
@@ -2300,7 +2509,7 @@ function showSettingsPanel() {
   })();
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
-    let btnsContainer = createBtnsContainer('enterEditingMode', 'Enter Editing Mode');
+    let btnsContainer = createBtnsContainer('enterEditingMode', { AR: 'فعل تعديل النصوص', FR: 'Activer le mode édition', EN: '' });
 
     inlineBtnsDiv.appendChild(btnsContainer);
     btn = createSettingBtn({
@@ -2356,18 +2565,28 @@ function showSettingsPanel() {
     setGridColumnsNumber(btnsContainer,3);
   })();
 
-  function createBtnsContainer(id: string, labelText:string) {
+  function createBtnsContainer(id: string, labelText: {AR?: string; FR?: string; EN?:string}) {
     let btnsContainer = document.createElement("div");
     btnsContainer.id = id;
     btnsContainer.style.display = "grid";
-    btnsContainer.style.columnGap = "3px";
+    //btnsContainer.classList.add('settingsBtnsContainer');
+    btnsContainer.style.columnGap = "5px";
     btnsContainer.style.justifyItems = "center";
     btnsContainer.style.height = 'fit-content';
     btnsContainer.style.width = 'fit-content';
     inlineBtnsDiv.appendChild(btnsContainer);
+    let labelsDiv = document.createElement('div');
+    labelsDiv.classList.add('settingsLabel');
+    btnsContainer.insertAdjacentElement('beforebegin', labelsDiv);
     let label = document.createElement('h3');
-    label.innerText = labelText;
-    btnsContainer.insertAdjacentElement('beforebegin', label)
+    label.innerText = labelText[defaultLanguage];
+    labelsDiv.appendChild(label)
+
+    if (foreingLanguage) {
+      let foreignLabel = document.createElement('h3'); 
+      foreignLabel.innerText = labelText[foreingLanguage];
+      labelsDiv.appendChild(foreignLabel);
+    };
     return btnsContainer
   };
 
@@ -2427,7 +2646,7 @@ function showSettingsPanel() {
   }
   //Appending colors keys for actors
   (async function addActorsKeys() {
-    let btnsContainer = createBtnsContainer('actorsKeys', 'Colors keys');
+    let btnsContainer = createBtnsContainer('actorsKeys', {AR:'مفاتيح الألوان', FR: 'Clés des couleurs', EN: 'Colors keys'});
     btnsContainer.style.width = 'fit-content'
     actors
       .map((actor) => {
@@ -2450,6 +2669,17 @@ function showSettingsPanel() {
   })();
   closeSideBar(leftSideBar);
 }
+
+/**
+ * Changes the value of the Css variable fSize on the '.Content' html element
+ * @param {string} size - the size of the font 
+ */
+function setFontSize(size:string){
+  if (!Number(size)) return;
+  let content = document.querySelector('.Content') as HTMLElement;
+  content.style.setProperty('--fSize', size);
+  localStorage.fontSize = size;
+};
 
 /**
  * Sets the number of columns of a "display-grid' html element based on the number of its children.
@@ -2628,35 +2858,60 @@ function consoleLogArrayTextInDefaultLanguage(title:string)
  */
 function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
 if (localStorage.displayMode !== displayModes[1]) return;
-  let currentSlide =
-    Array.from(containerDiv.querySelectorAll('div.Row'))
-      .find(div => !div.classList.contains(hidden)) as HTMLDivElement;
+  let Slides = Array.from(containerDiv.querySelectorAll('.Row')) as HTMLDivElement[];
+  let currentSlide = Slides.find(slide => slide.dataset.isDisplayed === 'true');
+
+  
+  console.log('currentSlide = ', currentSlide);
+
+  
   
   let nextSlide: HTMLDivElement;
-  next?
-    nextSlide = currentSlide.nextElementSibling as HTMLDivElement
-  :
-    nextSlide = currentSlide.previousElementSibling as HTMLDivElement;
-  
-    if (!nextSlide) return;
+  selectNextSlide(currentSlide);
 
-    currentSlide.classList.add(hidden);
-    nextSlide.classList.remove(hidden);
+  function selectNextSlide(slide:HTMLDivElement){
+    if (!slide) return console.log('slide is not defined');
+    if (next && slide.nextElementSibling)
+      nextSlide = slide.nextElementSibling as HTMLDivElement;
+    else if (next && slide.parentElement && currentSlide.parentElement.classList.contains('Expandable'))
+      nextSlide =slide.parentElement.nextElementSibling as HTMLDivElement;
+    else if (!next && slide.previousElementSibling)
+      nextSlide = slide.previousElementSibling as HTMLDivElement;
+    else if (!next && slide.parentElement && slide.parentElement.classList.contains('Expandable'))
+      nextSlide = slide.parentElement.previousElementSibling as HTMLDivElement;
+    if (checkIfCommentOrCommentText(nextSlide)) selectNextSlide(nextSlide);
+  }
+  if (!nextSlide) return;
+  
+      showOrHideSlide(currentSlide, false);
+      showOrHideSlide(nextSlide, true);
+
 }
 
-function addKeyDownListnerToElement(htmlRow:Document){
-  htmlRow
-    .addEventListener("keydown", function (event) {
-      console.log('entred');
-      if (
-        event.code === 'ArrowDown'
-        || event.code === 'ArrowLeft'
-        || event.code === 'PageDown') showNextOrPreviousSildeInPresentationMode(false);
-      else if (
-        event.code === 'ArrowUp'
-        || event.code === 'PageUp'
-        || event.code === 'ArrowRight') showNextOrPreviousSildeInPresentationMode(true);
-});
+function addKeyDownListnerToElement(htmlRow:Document, eventName:string, direction:string){
+  if (localStorage.displayMode !== displayModes[1]) return;
+  if(!direction) htmlRow.addEventListener(eventName, (event:KeyboardEvent)=>goToNextOrPreviousSlide(event, direction) );
+}
+
+function goToNextOrPreviousSlide(event?: KeyboardEvent, direction?:string) {
+  console.log('entred');
+  if (!event && !direction) return;
+  let code:string
+  if(event) code = event.code;
+  else if(direction === 'up') code = 'PageUp'; //next slide
+  else if(direction === 'down') code = 'PageDown'; //previous slide
+  console.log(code)
+  
+  if (
+          code === 'ArrowDown'
+    || code === 'PageDown'
+    || code === 'ArrowRight')
+    showNextOrPreviousSildeInPresentationMode(true); //next slide
+  else if (
+         code === 'ArrowUp'
+    || code === 'PageUp'
+    || code === 'ArrowLeft')
+    showNextOrPreviousSildeInPresentationMode(false); //previous slide
 }
 
 /**
@@ -2823,6 +3078,15 @@ function checkIfTitle(htmlRow: HTMLElement): boolean {
   )
     return true;
   else return false;
+}
+/**
+ * Checks if the html element passed to it as an argument has 'Comments' or 'CommentText' in its classList
+ * @param {HTMLDivElement} htmlRow - the html element that we want to check if it has any of the classes related to comments
+ */
+function checkIfCommentOrCommentText(htmlRow:HTMLDivElement):boolean{
+  if (!htmlRow) return undefined;
+  else if(htmlRow.classList.contains('Comments') || htmlRow.classList.contains('CommentText')) return true;
+  else return false
 }
 
 /**
