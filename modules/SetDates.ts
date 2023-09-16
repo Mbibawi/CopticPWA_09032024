@@ -50,6 +50,8 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
 
 	let diffrenceInYears = Math.floor(differenceInDays / 365.25); //This gives the number of full Coptic years (based on 365.25 day/year)
 
+	year += diffrenceInYears;
+
 	let daysInCurrentYear = ((differenceInDays / 365.25) - Math.trunc(differenceInDays / 365.25)) * 365.25;
 	if (daysInCurrentYear === 0) daysInCurrentYear += 1;
 	daysInCurrentYear = Math.ceil(daysInCurrentYear);
