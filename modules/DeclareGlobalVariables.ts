@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.0.1 (Changes to the Presentation mode)';
+const version: string = 'v5.0.2 (Changes to the Presentation mode and fixes to Unbaptised mass book of hours)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

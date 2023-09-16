@@ -774,7 +774,7 @@ const btnMassStBasil: Button = new Button({
       //We add to each button a 'click' event listner that will hide the other litanies
       Array.from(btnsDiv.children).forEach(child => child.addEventListener('click', () => toggleOtherLitanies(child.id)));
 
-      setGridColumnsNumber(btnsDiv, 3);
+      btnsDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsDiv, 3);
       
       function toggleOtherLitanies(btnID:string) {
         let div =
@@ -1208,6 +1208,8 @@ const btnMassUnBaptised: Button = new Button({
           || todayDate.getDay() === 6 //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
           || lordFeasts.indexOf(copticDate) > -1
           || Season === Seasons.PentecostalDays
+          || Season === Seasons.Nayrouz
+          || Season === Seasons.CrossFeast
           || (
             !isFast
             && todayDate.getDay() !== 3 
@@ -1316,7 +1318,7 @@ const btnMassUnBaptised: Button = new Button({
                 } else if (expandableDiv.id.startsWith(hourBtn.id)) {
                     //this is the container of the prayers related to the button
                     if (!expandableDiv.classList.contains(hidden)) {
-                      makeExpandableButtonContainerFloatOnTop(btnsDiv, '10px'); 
+                      makeExpandableButtonContainerFloatOnTop(btnsDiv, '5px'); 
                       masterBtnDiv.classList.add(hidden);
                       createFakeAnchor(expandableDiv.id);
                     } else {
@@ -1333,10 +1335,10 @@ const btnMassUnBaptised: Button = new Button({
       btnDocFragment.prepend(btnsDiv);
       btnDocFragment.prepend(masterBtnDiv);
       btnsDiv.style.display = 'grid';
-      setGridColumnsNumber(btnsDiv, 3);
+      btnsDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsDiv, 3);
       
       function InsertHourFinalPrayers(hourBtn:Button) {
-        let Agios: string = Prefix.commonPrayer + 'HolyGodHolyPowerfullPart1&D=$copticFeasts.AnyDay',
+        let Agios: string = Prefix.commonPrayer+'HolyGodHolyPowerfull&D=$copticFeasts.AnyDay',
           Kyrielison41Times: string = Prefix.commonPrayer + 'Kyrielison41Times&D=$copticFeasts.AnyDay',
           KyrielisonIntro:string = Kyrielison41Times.replace('&D=', 'NoMassIntro&D='),
           KyrielisonMassIntro:string = Kyrielison41Times.replace('&D=', 'MassIntro&D='),
@@ -1359,7 +1361,7 @@ const btnMassUnBaptised: Button = new Button({
         //!CAUTION, the order of the buttons in hourBtn is reversed (eg.: [9th, 6th, 3rd] instead of [3rd, 6th, 9th])
 
         if (hoursBtns.indexOf(hourBtn) === 0){
-        //This is the last hour
+        //This is the last hour because the ours are inversed
           hourBtn.prayersArray.push(
             CommonPrayersArray
               .filter(tbl => splitTitle(tbl[0][0])[0] === KyrielisonMassIntro)[0]
@@ -1378,10 +1380,7 @@ const btnMassUnBaptised: Button = new Button({
           //this is the before last
           sequence =
             [
-              KyrielisonIntro,
-              Kyrielison41Times,
               Agios,
-              Agios.replace('Part1', 'Part2'),
               OurFatherWhoArtInHeaven,
               HailToYouMaria
             ];
@@ -1671,7 +1670,7 @@ const btnBookOfHours:Button =  new Button({
       WeExaltYou:string =
         Prefix.commonPrayer + 'WeExaltYouStMary&D=$copticFeasts.AnyDay',
      Agios: string =
-       Prefix.commonPrayer + 'HolyGodHolyPowerfullPart1&D=$copticFeasts.AnyDay',
+       Prefix.commonPrayer + 'HolyGodHolyPowerfull&D=$copticFeasts.AnyDay',
      Kyrielison41Times:string = Prefix.commonPrayer+'Kyrielison41Times&D=$copticFeasts.AnyDay',
      KyrielisonIntro:string = Kyrielison41Times.replace('&D=', 'NoMassIntro&D='),
       HolyLordOfSabaot :string=

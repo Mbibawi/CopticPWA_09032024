@@ -8066,16 +8066,16 @@ Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Title",
 [
 Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Assembly", 
 "Ⲃⲟⲗ ⲉ̀ⲃⲟⲗ: ⲭⲱ ⲉ̀ⲃⲟⲗ: ⲁ̀ⲣⲓⲥⲩⲛⲭⲱⲣⲓⲛ ⲛⲁⲛ Ⲫϯ ⲛ̀ⲛⲉⲛⲡⲁⲣⲁⲡⲧⲱⲙⲁ: ⲛⲏⲉ̀ⲧⲁⲛⲁⲓⲧⲟⲩ ϧⲉⲛⲡⲉⲛⲟⲩⲱϣ ⲛⲉⲙ ⲛⲏⲉ̀ⲧⲁⲛⲁⲓⲧⲟⲩ ϧⲉⲛ ⲡⲉⲛⲟⲩⲱϣ ⲁⲛ: ⲛⲏⲉ̀ⲧⲁⲛⲁⲓⲧⲟⲩ ϧⲉⲛ ⲟⲩⲉ̀ⲙⲓ ⲛⲉⲙ ⲛⲏⲉ̀ⲧⲁⲛⲁⲓⲧⲟⲩ ϧⲉⲛ ⲟⲩⲙⲉⲧⲁⲧⲉ̀ⲙⲓ: ⲛⲏⲉⲧϩⲏⲡ ⲛⲉⲙ ⲛⲏⲉ̀ⲑⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ: Ⲡϭⲟⲓⲥ ⲉⲕⲉ̀ⲭⲁⲩ ⲛⲁⲛ ⲉ̀ⲃⲟⲗ.", 
-"Absous, pardonne et remet nos péchés ô Dieu : ceux que nous avons commis volontairement et ceux que nous avons commis involontairement, ceux que nous avons commis consciement ou par indavertance, les cachés et les manifestés. Seigneur pardonne-les nous.", 
-"فول إيفول كو إيفول أريسين خورين نان إفنوتي إن نين بارابطوما. ني إيتان آيتو خين بين أواوش، نيم ني إيتان\nآيتو خين بين أوأوش آن. ني إيتان آيتو خين أو إيمي، نيم ني إيتان آيتو خين أو ميت آتئيمي. ني إتهيب نيم ني إثؤو أونه إيفول، إبشويس إيك إيكاف نان إيفول.", 
+"Absous, pardonne et remet nos péchés ô Dieu : ceux que nous avons commis volontairement et ceux que nous avons commis involontairement, ceux que nous avons commis consciement ou par indavertance, les cachés et les manifestés. Seigneur pardonne-les nous.", 
+"فول إيفول كو إيفول أريسين خورين نان إفنوتي إن نين بارابطوما. ني إيتان آيتو خين بين أواوش، نيم ني إيتان\nآيتو خين بين أوأوش آن. ني إيتان آيتو خين أو إيمي، نيم ني إيتان آيتو خين أو ميت آتئيمي. ني إتهيب نيم ني إثؤو أونه إيفول، إبشويس إيك إيكاف نان إيفول.", 
 "حل وأغفر وإصفح لنا يا الله عن ذلاتنا التي صنعناها بإرادتنا، والتي صنعناها بغير إرادتنا. التي فعلناها بمعرفة والتي فعلناها بغير بمعرفة. الخفية والظاهرة، يا رب اغفر لنا.", 
 ], 
 [
 Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Priest", 
-"Ⲛ̀ⲑⲟⲕ ⲅⲁⲣ ⲡⲉ Ⲫϯ ⲡⲓⲛⲁⲏⲧ: ⲫⲏⲉⲑⲟⲩⲱϣ ⲙ̀ⲫ̀ⲙⲟⲩ ⲁⲛ ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲧⲉϥⲕⲟⲧϥ ⲟⲩⲟϩ ⲛ̀ⲧⲉϥⲱⲛϧ. Ⲙⲁⲧⲁⲥⲑⲟⲛ Ⲫϯ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲉⲕⲟⲩϫⲁⲓ: ⲁ̀ⲣⲓⲟⲩⲓ ⲛⲉⲙⲁⲛ ⲕⲁⲧⲁ ⲧⲉⲕⲙⲉⲧⲁ̀ⲅⲁⲑⲟⲥ: ⲫⲏⲉⲧⲓ̀ⲣⲓ ⲙ̀ⲡⲓϩⲟⲩⲟ̀ ⲉ̀ⲛⲏⲉ̀ⲧⲉⲛⲉ̀ⲣⲉⲧⲓⲛ ⲙ̀ⲙⲱⲟⲩ: ⲓⲉ ⲛⲏⲉ̀ⲧⲉⲛⲕⲁϯ ⲉ̀ⲣⲱⲟⲩ.", 
+"Ⲛ̀ⲑⲟⲕ ⲅⲁⲣ ⲡⲉ Ⲫϯ ⲡⲓⲛⲁⲏⲧ: ⲫⲏⲉⲑⲟⲩⲱϣ ⲙ̀ⲫ̀ⲙⲟⲩ ⲁⲛ ⲙ̀ⲡⲓⲣⲉϥⲉⲣⲛⲟⲃⲓ ⲙ̀ⲫ̀ⲣⲏϯ ⲛ̀ⲧⲉϥⲕⲟⲧϥ ⲟⲩⲟϩ ⲛ̀ⲧⲉϥⲱⲛϧ. Ⲙⲁⲧⲁⲥⲑⲟⲛ Ⲫϯ ⲉ̀ϧⲟⲩⲛ ⲉ̀ⲡⲉⲕⲟⲩϫⲁⲓ: ⲁ̀ⲣⲓⲟⲩⲓ ⲛⲉⲙⲁⲛ ⲕⲁⲧⲁ ⲧⲉⲕⲙⲉⲧⲁ̀ⲅⲁⲑⲟⲥ: ⲫⲏⲉⲧⲓ̀ⲣⲓ ⲙ̀ⲡⲓϩⲟⲩⲟ̀ ⲉ̀ⲛⲏⲉ̀ⲧⲉⲛⲉ̀ⲣⲉⲧⲓⲛ ⲙ̀ⲙⲱⲟⲩ: ⲓⲉ ⲛⲏⲉ̀ⲧⲉⲛⲕⲁϯ ⲉ̀ⲣⲱⲟⲩ.", 
 "Car Tu es un Dieu miséricordieux qui ne souhaite pas la mort du pècheur autant qu’il revienne et vive. Ramène-nous ô Dieu vers Ton salut et agis en nous selon Ta bonté, Toi qui a le pouvoir de réaliser en nous infiniment plus que nous ne pouvons demander ou même imaginer.", 
 "إنثوك غاربي إفنوتي بي نائيت في إثؤو أوشي إم إفمو آن إم بي ريفئير نوفي إم إفريتي إنتيف كوتف أووه إنتيف اونخ ماطاستون إفنوتي إيخون إيبك أوجاي. آري اوى نيمان كاطاتيك ميت آغاثوس فيئيت إيري إم بي هوؤو إي نيئيتين إريتين إم موؤويى نيئيتين كاتي إيروؤو.", 
-"لأنك أنت هو الله الرحوم الذي لا يشاء موت الخاطئ مثل ما يرجع ويحيا\nردنا يا الله إلى خلاصك واصنع معنا كصلاحك يا من يصنع أكثر مما نسأل أو نفهم.", 
+"لأنك أنت هو الله الرحوم الذي لا يشاء موت الخاطئ مثل ما يرجع ويحياردنا يا الله إلى خلاصك واصنع معنا كصلاحك يا من يصنع أكثر مما نسأل أو نفهم.", 
 ], 
 [
 Prefix.placeHolder, 
@@ -8104,7 +8104,7 @@ Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Priest",
 "Ⲫⲏⲉ̀ⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲉⲛ ⲡ̀ⲁ̀ϣⲁⲓ ⲛ̀ⲧⲉ ⲡⲉϥⲛⲁⲓ: ⲁϥⲃⲱⲗ ⲉ̀ⲃⲟⲗ ⲛ̀ϯⲙⲉⲧϫⲁϫⲓ ⲛ̀ⲧⲉ ⲛⲓⲣⲱⲙⲓ. Ⲡⲓⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀ⲛⲟⲩϯ: ⲫⲏⲉⲧⲭⲏ ϧⲉⲛ ⲕⲉⲛϥ ⲙ̀Ⲡⲉϥⲓⲱⲧ.", 
 "Toi qui dans sa grande miséricorde a délié l'animosité des hommes, Ô Dieu unique qui demeure dans le sein du Père, Seigneur bénis.", 
 "فيئيتي إيفول هيتين إب آشاى إنتي بيف ناي أف فول إيفول إنتي ميتجاجي إنتي ني رومي بي مونوجينيس أن نوتي فيئتكي خين كينف إم بيفيوت كيريي إفلوجيصون.", 
-"الذي بكثرة رحمتهِ حلَّ عداوة البشر. أيها الإله الوحيد الجنس الذي في حضن أبيه. ", 
+"الذي بكثرة رحمتهِ حلَّ عداوة البشر. أيها الإله الوحيد الجنس الذي في حضن أبيه، يا رب بارك. ", 
 ], 
 [
 Prefix.placeHolder, 
@@ -8149,7 +8149,7 @@ Prefix.massStGregory+"FractionIntroduction&D=$copticFeasts.AnyDay&C=Priest",
 "Toi, qui as donné à tes saints disciples et apôtres bienheureux en ce temps là, donnes nous maintenant ô notre maître ainsi qu’à tout ton peuple; Toi qui est le Tout-puissant, le Seigneur notre Dieu.", 
 "فيئيطاف تي أى طوطو إنتيف آجيوس إم ماثيتيس أووه إن آبسطولوس إثؤواب إم بي سيو تينو اون بين نيب موى نان نيم بيك لاؤس تيرف بي بانطوكراطور إبشويس بيننوتي.", 
 "يا الذي أعطي تلاميذه القديسين، ورسله الأطهار في ذلك الزمان، الآن أيضاً يا سيدنا أعطنا وكل شعبك، يا ضابط الكل أيها الرب إلهنا.", 
-], 
+],
 [
 Prefix.placeHolder, 
 Prefix.massCommon+"DiaconResponseAmenAmenPray&D=$copticFeasts.AnyDay", 
@@ -8165,6 +8165,22 @@ Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay",
 [
 Prefix.placeHolder, 
 Prefix.massCommon+"FractionPrayerPlaceholder&D=$copticFeasts.AnyDay", 
+], 
+[
+Prefix.placeHolder,
+Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay", 
+], 
+[
+Prefix.placeHolder,
+Prefix.commonPrayer + "BlockInTheNameOfOurLord&D=$copticFeasts.AnyDay", 
+], 
+[
+Prefix.placeHolder,
+Prefix.massCommon+"PrayerForTheFather&D=$copticFeasts.AnyDay",
+], 
+[
+Prefix.placeHolder,
+Prefix.commonPrayer + "BlockIriniPassi&D=$copticFeasts.AnyDay", 
 ], 
 ], 
 [
@@ -8413,7 +8429,10 @@ Prefix.commonPrayer+"KyrieElieson&D=$copticFeasts.AnyDay",
 [
 Prefix.placeHolder, 
 Prefix.massCommon+"SaintsCommemoration&D=$copticFeasts.AnyDay", 
-], 
+],
+
+
+
 ], 
 [
 [

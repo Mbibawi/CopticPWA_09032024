@@ -170,7 +170,7 @@ function createHtmlElementForPrayer(args: {
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  htmlRow.classList.add("DisplayMode" + localStorage.displayMode); //we add the displayMode class to this div
+  if(localStorage.displayMode === displayModes[1]) htmlRow.classList.replace('Row', 'SlideRow'); //we add the displayMode class to this div
   if (localStorage.displayMode === displayModes[1]) htmlRow.classList.add(hidden);
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
 
@@ -428,51 +428,68 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
 }
 
 function showSlidesInPresentationMode() {
-  let countMax: number = 1500, countMin: number = 1700;
+  let countMax: number = 2000, countMin: number = 2500;
   let toMerge: HTMLDivElement[] = [];
-  
-  mergeContainerSlidesIfTooSmall(containerDiv);
+  let children = Array.from(containerDiv.querySelectorAll('div')) as HTMLDivElement[];
 
-  showFirstSlide(containerDiv);
-  function showFirstSlide(container:HTMLDivElement) {
-    //!CAUTION: This must come after merging the slides (i.e. after calling mergeSlides()) because merge slides may append the first slide to a container (if we start by showing the first slide before it is appended the container, its nextSiblingElement will be a children of the container not a direct children of containerDiv. When we will scroll up or down (or press the Arrow key up or down), we will move between the children of the container not between the direct children of containerDiv)
-//We will unhide the first row (i.e. slide) in containerDiv
-    let firstSlide = Array.from(container.children as HTMLCollectionOf<HTMLDivElement>)
-      .find(row => row.classList.contains('Row') && !checkIfCommentOrCommentText(row));
-  if (firstSlide) {
-    console.log('found first slide')
-    showOrHideSlide(firstSlide, true)
-    }
-  };
+
+  (function setSlidesCSS() {
+    let slides = children.filter(child=>child.classList.contains('SlideRow'));
+
+    slides.forEach(div=>{
+      setGridColumnsOrRowsNumber(div);
+      div.style.gridTemplateAreas = setGridAreas(div);
+    })
+
+  })();
+ 
+  mergeContainerSlidesIfTooSmall(containerDiv);
 
 
   function mergeContainerSlidesIfTooSmall(container: HTMLDivElement) {
       //This function will count the number of words in each html div element with class 'DisplayedModePresentation'. If the number is below a certain number, it will add the text in the next html div. It will do so until we reach the maximum number. It will then append all the divs to a container (a div having the class 'Row'). 
-    let slide = container.querySelector('div.DisplayModePresentation') as HTMLDivElement;
 
-  while (slide && !slide.classList.contains('inlineBtns') && slide.children.length > 0) {
-    
-    if (slide.classList.contains('Expandable')) mergeContainerSlidesIfTooSmall(slide);
-    
-    countWords(slide);
-    
-    if (toMerge.length > 1) wrapSlidesInAContainer();
+    let slide = children[0] as HTMLDivElement;
 
+    while (slide) {
+      while (excludeSlide(slide)) slide = selectNextSlide(slide);
+      
+      if (slide.classList.contains('Expandable')) {
+        slide = slide.children[0] as HTMLDivElement;
+        continue
+      };
+      
+      slide.dataset.sameSlide = slide.dataset.root + children.indexOf(slide);
+
+      countWords(slide);
+      
+    if (toMerge.length > 1) {
+      prepareSameSlideGroup();
+      slide = toMerge[toMerge.length - 1];
+    };
+      
     toMerge = [];
+    slide = selectNextSlide(slide);
+};
 
-    
-    if (slide.nextElementSibling)
-      slide = slide.nextElementSibling as HTMLDivElement;
-    else if (slide.parentElement && slide.parentElement.classList.contains('Expandable'))
-      slide = slide.parentElement.nextElementSibling as HTMLDivElement;
-    else slide = undefined
-  };
+function excludeSlide(slide:HTMLDivElement){
+  if (checkIfCommentOrCommentText(slide)
+    || slide.children.length <1
+    || (
+      !slide.classList.contains('SlideRow')
+      && !slide.classList.contains('Expandable')
+    ))
+    return true
+}
 
+    /**
+     * Cournts the letters in the innerHTML of a group of divs added to a the toMerge[] array. If the innerHTML does not exceed the countMax, it adds the next div to the toMerge[] array until the maxCount is reached or exceeded
+     */
   function countWords(slide: HTMLDivElement) {
     let count: number = 0;
 
-    if(!checkIfCommentOrCommentText(slide))
     toMerge.push(slide); //!CAUTION: we need the slide to be pushed when the function, because when it is called for the first time, if the slide is not already in toMerge[], we will add its nextSibling but the first slide itself will never be added to toMerge.
+
 
     //We start by counting the number of letters in toMerge[]
     toMerge.forEach(child => count += child.innerHTML.length);
@@ -482,76 +499,30 @@ function showSlidesInPresentationMode() {
       return;
     };
 
-    let nextSlide = selectNextSlide(slide);
-    
-    function selectNextSlide(slide:HTMLDivElement):HTMLDivElement {
-      let next: HTMLDivElement;
-      if (slide.nextElementSibling) next = slide.nextElementSibling as HTMLDivElement;
-      else if (slide.parentElement && slide.parentElement.classList.contains('Expandable')) next = slide.parentElement.nextElementSibling as HTMLDivElement;
-
-      if (checkIfCommentOrCommentText(next)) selectNextSlide(next);
-      
-      return next
-    }
+    let nextSlide = selectNextSlide(slide);    
 
     if (!nextSlide) return;
-    
+
     if (count <= countMin) countWords(nextSlide);
 
   };
 
-  function wrapSlidesInAContainer():HTMLDivElement {  
+  function prepareSameSlideGroup():HTMLDivElement {  
     console.log('ToMerge = ', toMerge);
 
       if (toMerge[toMerge.length - 1].classList.contains('Title')
       || toMerge[toMerge.length - 1].classList.contains('SubTitle'))
-      toMerge.pop(); //If the last element of toMerge[] is a title slide, we remove it
-      
+      toMerge.pop(); //If the last element of toMerge[] is a title slide, we remove it      
     if (toMerge.length < 2) return; 
-    
-        let mergedContainer = document.createElement('div');
-        mergedContainer.classList.add('Row');
-        mergedContainer.classList.add('DisplayModePresentation');
-        mergedContainer.dataset.isMeregedContainer='true';
-        mergedContainer.classList.add(hidden);
-        toMerge[0].insertAdjacentElement('beforebegin', mergedContainer);
-      
         toMerge
           .forEach(mergedSlide => {
-            if (mergedSlide.classList.contains('Comments') || mergedSlide.classList.contains('CommentText')) return console.log('mergedSlide contains comments !!!');
-            let actor = actors.find(actor => mergedSlide.classList.contains(actor.EN));
-            
-            Array.from(mergedSlide.children as HTMLCollectionOf<HTMLParagraphElement>)
-              .forEach(parag =>{
-                if(checkIfTitle(mergedSlide))
-                parag.classList.add('slideTitle');
-                if(actor){
-                  parag.innerHTML = '<span class="actorSpan">' + actor[parag.lang.toUpperCase()] + ': </span>' + '<span class="textSpan">' + parag.innerHTML + '</span>'
-                }
-              });
-            
-            
-            mergedContainer.innerHTML += mergedSlide.innerHTML;
-            mergedSlide.remove();
+            if (checkIfCommentOrCommentText(mergedSlide)) return console.log('mergedSlide contains comments !!!');      
+            mergedSlide.dataset.sameSlide = toMerge[0].dataset.sameSlide; //We will give all the slides the same data-same-slide value in order to retrieve them together later
           });
-    let langs = ['ar', 'fr', 'cop'];
-    let paragraphs = Array.from(mergedContainer.children) as HTMLParagraphElement[];
-    langs
-      .map(lang => paragraphs.filter(p => p.lang === lang))
-      .forEach(sameLangs =>
-        sameLangs
-        .forEach(p => {
-          if (sameLangs.indexOf(p) === 0) return;
-          sameLangs[0].innerHTML += '<span class="textSpan">' + p.innerHTML + '</span>';
-          p.remove();
-        }))
-    
-        slide = mergedContainer; //This is in order to move the the nextSibling of container not of slide itself because slide is now appended to container and we do not want to move to the next container child, but to the next child of containerDiv 
+  };
   };
 
-  };
-
-  (function moveExpandableBtns(){
+  (function moveExpandableBtns() {
     let btn: HTMLElement;
       let expandables = Array.from(containerDiv.querySelectorAll('.Expandable')) as HTMLDivElement[];
     if (expandables.length < 1) return console.log('Couldn\'t find any expandable');
@@ -561,32 +532,88 @@ function showSlidesInPresentationMode() {
         if (!btn) return console.log('couldn\'t find btn');
         sideBarBtnsContainer.prepend(btn);
         
-
         btn.addEventListener('click', () => {
-          let currentlyDisplayed = containerDiv.querySelector('div[data-is-displayed="true"') as HTMLDivElement;
-          if (currentlyDisplayed) showOrHideSlide(currentlyDisplayed, false);
-          showFirstSlide(expandable);
-          closeSideBar(rightSideBar);
 
+          showOrHideSlide(false); //We don't need to pass a value for dataSameSlide if the boolean is false, because in this case its the element 'Slide' that will be removed and the function does not need dataSameSlide
+
+          let dataSameSlide: string = Array.from(expandable.children as HTMLCollectionOf<HTMLDivElement>).find(child => child.dataset.sameSlide).dataset.sameSlide;
+          showOrHideSlide(true, dataSameSlide);
+          closeSideBar(leftSideBar);
         });
         console.log('expandable btn = ', btn)
-      })
+      });
 
   })();
+
+  let hasSameSlide = Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>).find(div=>div.dataset.sameSlide) as HTMLDivElement;
+ if(hasSameSlide) showOrHideSlide(true, hasSameSlide.dataset.sameSlide);
+
+  function selectNextSlide(currentSlide:HTMLDivElement):HTMLDivElement {
+    let next: HTMLDivElement;
+    if (currentSlide.nextElementSibling)
+        next = currentSlide.nextElementSibling as HTMLDivElement;
+    else if (currentSlide.parentElement && currentSlide.parentElement.classList.contains('Expandable'))
+      next = currentSlide.parentElement.nextElementSibling as HTMLDivElement; 
+    return next
+  }
+};
+
+/**
+ * Retrieves and returns the div elements having the same data-same-slide attribute
+ * @param {string} dataSameSlide - the value of the data-same-slide attribute by which the divs will be filtered and retrieved
+ * @param {HTMLElement} container - the html container that will be filtered while looking for the div elements with the same data-same-slide value 
+ * @return {HTMLDivElement[]} an array of the div elements retrieved
+ */
+function buildSlideFromDataSameSlideGroup(dataSameSlide:string):HTMLDivElement {
+  let sameSlide = 
+  Array.from(containerDiv.querySelectorAll('div[data-same-slide]') as NodeListOf<HTMLDivElement>)
+  .filter(div=>div.dataset.sameSlide === dataSameSlide && !checkIfCommentOrCommentText(div));
+  if(!sameSlide || sameSlide.length<1) return;
+  let slide = document.createElement('div');
+  slide.classList.add('Slide');
+  slide.id = dataSameSlide;
+  let child: HTMLDivElement;
+  sameSlide
+    .forEach(div => {
+    slide.appendChild(div.cloneNode(true));
+      child = slide.lastChild as HTMLDivElement;
+      child.removeAttribute('data-same-slide');
+      addActorToSlide(child);
+      child.style.gridTemplateColumns = setGridColumnsOrRowsNumber(child);
+    });
+  slide.style.gridTemplateRows = setGridColumnsOrRowsNumber(slide);
+
+  containerDiv.prepend(slide)
+  return slide;
+
+  function addActorToSlide(slide:HTMLDivElement){
+      let actor = actors.find(actor => slide.classList.contains(actor.EN));
+      if(!actor) return
+    Array.from(slide.children as HTMLCollectionOf<HTMLParagraphElement>)
+      .forEach(parag =>{
+          parag.innerHTML = '<span class="actorSpan">' + actor[parag.lang.toUpperCase()] + ': </span>' + '<span class="textSpan">' + parag.innerHTML + '</span>'
+        });
+  }
 };
 
 /**
  * Shows or hides a slide in Display Presentation Mode
- * @param {HTMLDivElement} slide - the html div that we want to show or hide
+ * @param {string} datSameSlide - If show = false, this argument can be undefined. This agrument is the value of the data-same-slide attribute, by which we will retrieve the div elements that will be displayed in a new '.Slide' element if show = true
  * @param {boolean} show - a boolean that indicates whether the slide should be displayed or hidden (true = display, flase = hide)
  */
-function showOrHideSlide(slide:HTMLDivElement, show:boolean){
+function showOrHideSlide(show:boolean, dataSameSlide?:string){
+  let slide: HTMLDivElement;
   if (show) {
-    slide.classList.remove(hidden);
-  slide.dataset.isDisplayed = 'true';
+    if (!dataSameSlide) return console.log('You must provide the dataSameSlide argument');
+    slide = buildSlideFromDataSameSlideGroup(dataSameSlide);
+    if (!slide || slide.children.length < 1) return;
+    let children = Array.from(slide.children) as HTMLDivElement[];
+    children
+      .forEach(div => div.classList.remove(hidden));
 }else if(!show){
-  slide.classList.add(hidden);
-  slide.removeAttribute('data-is-displayed');
+    slide = containerDiv.querySelector('.Slide'); 
+    if (!slide) return;
+    slide.remove();
 }
 }
 
@@ -1405,7 +1432,7 @@ function showPrayers(args:
   }
 ): HTMLDivElement[] {
   if (!args.btn && !args.wordTable) { console.log('You must provide either a button with prayersSequence and prayersArray, either a word table. None of those arguments is provided'); return};
-  
+      
   //Setting container, and the values for the missing arguments
   if (!args.container && args.btn && args.btn.docFragment) args.container = args.btn.docFragment;
   if (!args.container) args.container = containerDiv;
@@ -1524,7 +1551,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
   htmlRows.forEach((row) => {
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
-    setGridColumnsNumber(row);
+    row.style.gridTemplateColumns = setGridColumnsOrRowsNumber(row);
     //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
     row.style.gridTemplateAreas = setGridAreas(row);
 
@@ -1704,7 +1731,6 @@ function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
  * @returns {string} representing the grid areas based on the "lang" attribute of the html element children
  */
 function setGridAreas(row: HTMLElement): string {
-  if (localStorage.displayMode === displayModes[1]) return;
   let areas: string[] = [],
     child: HTMLElement;
   for (let i = 0; i < row.children.length; i++) {
@@ -1933,7 +1959,7 @@ async function showMultipleChoicePrayersButton(
       //Customizing the style of newDiv
       newDiv.classList.add("inlineBtns");
       //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-      setGridColumnsNumber(newDiv,undefined, 2);
+      newDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(newDiv,undefined, 2);
 
       //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
       inlineBtnsDiv.appendChild(newDiv);
@@ -2271,7 +2297,7 @@ function showSettingsPanel() {
           fun: () => changeDate(undefined, false, 1)
         }
       });
-    setGridColumnsNumber(btnsContainer, 3);
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer, 3);
     setStyle(btn);
     function setStyle(htmlBtn:HTMLElement){
       htmlBtn.style.backgroundColor = "saddlebrown";    
@@ -2425,7 +2451,7 @@ function showSettingsPanel() {
         );
         if (JSON.parse(localStorage.userLanguages)[args.index] !==lang[0])  newBtn.classList.add("langBtnAdd");  //The language of the button is absent from userLanguages[], we will give the button the class 'langBtnAdd'
         });
-        setGridColumnsNumber(args.btnsContainer, 3);
+        args.btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(args.btnsContainer, 3);
       }
   })();
   
@@ -2470,7 +2496,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setGridColumnsNumber(btnsContainer, 5);
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer, 5);
   })();
 
   (async function showDisplayModeBtns() {
@@ -2505,7 +2531,7 @@ function showSettingsPanel() {
         btn.classList.add("langBtnAdd");
       }
     });
-    setGridColumnsNumber(btnsContainer,3);
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer,3);
   })();
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
@@ -2562,7 +2588,7 @@ function showSettingsPanel() {
         },
       }}
     );
-    setGridColumnsNumber(btnsContainer,3);
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer,3);
   })();
 
   function createBtnsContainer(id: string, labelText: {AR?: string; FR?: string; EN?:string}) {
@@ -2665,7 +2691,7 @@ function showSettingsPanel() {
         newBtn.appendChild(p);
       }
     });
-    setGridColumnsNumber(btnsContainer, 5);
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer, 5);
   })();
   closeSideBar(leftSideBar);
 }
@@ -2687,12 +2713,12 @@ function setFontSize(size:string){
  * @param {number} max - the maximum number of columns that if exceeded, the number will be automatically reduced to a value = reduce. Its default value is 3.
  * @param {number} reduce - the number of columns that will be retained if the number of columns resulting from the number of htmlContainer children is greater than "max"
  */
-function setGridColumnsNumber(htmlContainer:HTMLElement, max?:number, exact?:number){
-  let columns: number;
-  columns = htmlContainer.children.length;
-  if (max && columns > max) columns = max;
-  else if (exact) columns = exact;
-  htmlContainer.style.gridTemplateColumns = ((100 / columns).toString() + '% ').repeat(columns)
+function setGridColumnsOrRowsNumber(htmlContainer:HTMLElement, max?:number, exact?:number){
+  let units: number;
+  units = htmlContainer.children.length;
+  if (max && units > max) units = max;
+  else if (exact) units = exact;
+  return ((100 / units).toString() + '% ').repeat(units)
 };
 
 /**
@@ -2743,7 +2769,7 @@ async function insertRedirectionButtons(
     .map((btn) =>
       div.appendChild(createBtn(btn, div, btn.cssClass)));
   position.el.insertAdjacentElement(position.beforeOrAfter, div);
-  setGridColumnsNumber(div, 3);
+  div.style.gridTemplateColumns = setGridColumnsOrRowsNumber(div, 3);
 }
 
 
@@ -2857,35 +2883,51 @@ function consoleLogArrayTextInDefaultLanguage(title:string)
  * @returns 
  */
 function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
-if (localStorage.displayMode !== displayModes[1]) return;
-  let Slides = Array.from(containerDiv.querySelectorAll('.Row')) as HTMLDivElement[];
-  let currentSlide = Slides.find(slide => slide.dataset.isDisplayed === 'true');
+  if (localStorage.displayMode !== displayModes[1]) return;
 
+  let children =Array.from(containerDiv.querySelectorAll('div[data-same-slide]')) as HTMLDivElement[];
   
-  console.log('currentSlide = ', currentSlide);
+  
+  let displayed = containerDiv.querySelector('.Slide');
 
-  
-  
+  if (!displayed || displayed.children.length < 1)
+    return showOrHideSlide(true, children[0].dataset.sameSlide);
+
+  let sameSlide =
+    children
+      .filter(div => div.dataset.sameSlide === displayed.id);
+
   let nextSlide: HTMLDivElement;
-  selectNextSlide(currentSlide);
+
+  selectNextSlide(sameSlide[sameSlide.length - 1]);
 
   function selectNextSlide(slide:HTMLDivElement){
     if (!slide) return console.log('slide is not defined');
     if (next && slide.nextElementSibling)
       nextSlide = slide.nextElementSibling as HTMLDivElement;
-    else if (next && slide.parentElement && currentSlide.parentElement.classList.contains('Expandable'))
-      nextSlide =slide.parentElement.nextElementSibling as HTMLDivElement;
+    else if (next && slide.parentElement && slide.parentElement.classList.contains('Expandable'))
+      nextSlide = slide.parentElement.nextElementSibling as HTMLDivElement;
     else if (!next && slide.previousElementSibling)
       nextSlide = slide.previousElementSibling as HTMLDivElement;
     else if (!next && slide.parentElement && slide.parentElement.classList.contains('Expandable'))
       nextSlide = slide.parentElement.previousElementSibling as HTMLDivElement;
-    if (checkIfCommentOrCommentText(nextSlide)) selectNextSlide(nextSlide);
+    else nextSlide = undefined; //!CAUTION: we must set nextSlide to undefined if none of the above cases applies. Otherwise the function will loop infintely
+
+    if(nextSlide && exclude(nextSlide, slide.dataset.sameSlide)) selectNextSlide(nextSlide);
   }
   if (!nextSlide) return;
-  
-      showOrHideSlide(currentSlide, false);
-      showOrHideSlide(nextSlide, true);
+      showOrHideSlide(false);
+      showOrHideSlide(true, nextSlide.dataset.sameSlide);
 
+  function exclude(div:HTMLDivElement, dataSameSlide:string):boolean {
+    if (
+      div.classList.contains('Slide')
+      ||!div.classList.contains('SlideRow')
+      || div.dataset.sameSlide === dataSameSlide
+      || checkIfCommentOrCommentText(div)
+    )
+      return true;
+  }
 }
 
 function addKeyDownListnerToElement(htmlRow:Document, eventName:string, direction:string){
