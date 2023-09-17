@@ -521,8 +521,24 @@ function excludeSlide(slide:HTMLDivElement){
 
   (function changeRightSideBarShortCutsOnClidk() {
     Array.from(sideBarTitlesContainer.children as HTMLCollectionOf<HTMLButtonElement>)
-    .forEach(child=>{
-      child.click = () => buildSlideFromDataSameSlideGroup(child.querySelector('a').href.replace('#', ''));
+    .forEach(btn=>{
+      btn.classList.remove(hidden);
+      
+      btn.addEventListener('click', onClick);
+      function onClick() {
+        let currentSlide: HTMLDivElement;
+        currentSlide = containerDiv.querySelector('.Slide');
+        let target = Array.from(containerDiv.querySelectorAll('.SlideRow') as NodeListOf<HTMLDivElement>)
+          .find(div => div.id === btn.dataset.group && div.dataset.sameSlide);
+        console.log('target = ', target);
+        if (!target) return console.log('target was not found ');
+        let dataSameSlide = target.dataset.sameSlide;
+        let slide = buildSlideFromDataSameSlideGroup(dataSameSlide)
+        showOrHideSlide(true, slide.dataset.sameSlide);
+        console.log('currentSlide =', currentSlide);
+        if(currentSlide) showOrHideSlide(false, currentSlide.id);
+        else showOrHideSlide(false);
+      };
     })
     
   })();
