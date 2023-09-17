@@ -467,7 +467,9 @@ let selectedDate: number, //This is the date that the user might have manually s
     weekDay: number; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0
 var todayDate: Date;
 let isFast: boolean;
-let actors: { EN: string; FR?: string; AR?: string;  COP?:string}[] = [
+type Actor = { EN: string; FR?: string; AR?: string; COP?: string };
+
+let actors: Actor[] = [
     {
         EN: 'Priest',
         FR: 'Prêtre',

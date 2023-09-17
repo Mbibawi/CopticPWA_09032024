@@ -440,14 +440,14 @@ function showSlidesInPresentationMode() {
       div.style.gridTemplateColumns = setGridColumnsOrRowsNumber(div);
       div.style.gridTemplateAreas = setGridAreas(div);
     })
-
   })();
  
   mergeContainerSlidesIfTooSmall(containerDiv);
 
-
+/**
+ *This function will count the number of words in each html div element with class '.SlideRow'. If the number is below a certain number, it will add the text in the next html div. It will do so until we reach the maximum number. 
+ */
   function mergeContainerSlidesIfTooSmall(container: HTMLDivElement) {
-      //This function will count the number of words in each html div element with class 'DisplayedModePresentation'. If the number is below a certain number, it will add the text in the next html div. It will do so until we reach the maximum number. It will then append all the divs to a container (a div having the class 'Row'). 
 
     let slide = children[0] as HTMLDivElement;
 
@@ -459,7 +459,7 @@ function showSlidesInPresentationMode() {
         continue;
       };
       
-      slide.dataset.sameSlide = slide.dataset.root + children.indexOf(slide);
+        slide.dataset.sameSlide = slide.dataset.root + children.indexOf(slide);
 
       countWords(slide);
       
@@ -478,6 +478,7 @@ function excludeSlide(slide:HTMLDivElement){
     || (
       !slide.classList.contains('SlideRow')
       && !slide.classList.contains('Expandable')
+      &&!slide.classList.contains('inlineBtns')
     ))
     return true
 }
@@ -492,18 +493,27 @@ function excludeSlide(slide:HTMLDivElement){
 
 
     //We start by counting the number of letters in toMerge[]
-    toMerge.forEach(child => count += child.innerHTML.length);
+    toMerge.forEach(child => {
+      if (!child.classList.contains('inlineBtns'))
+        count += child.innerHTML.length
+    });
 
     if (count > countMax) {
       toMerge.pop(); //if the number of letters exceeds the maximum we remove the last slide from toMerge[]
       return;
     };
 
-    let nextSlide = selectNextSlide(slide);    
+    let nextSlide = selectNextSlide(slide); 
 
     if (!nextSlide) return;
 
-    if (count < countMax) countWords(nextSlide);
+    let inlineBtns = toMerge.filter(div => div.classList.contains('inlineBtns'));
+    
+    if (inlineBtns.length > 0
+      && count < (countMax - ((countMax * (10 / 100) * inlineBtns.length))))
+      countWords(nextSlide);
+
+    else if (count < countMax) countWords(nextSlide);
 
   };
 
@@ -526,8 +536,6 @@ function excludeSlide(slide:HTMLDivElement){
       
       btn.addEventListener('click', onClick);
       function onClick() {
-        let currentSlide: HTMLDivElement;
-        currentSlide = containerDiv.querySelector('.Slide');
         let target = Array.from(containerDiv.querySelectorAll('.SlideRow') as NodeListOf<HTMLDivElement>)
           .find(div => div.id === btn.dataset.group && div.dataset.sameSlide);
         console.log('target = ', target);
@@ -535,44 +543,15 @@ function excludeSlide(slide:HTMLDivElement){
         let dataSameSlide = target.dataset.sameSlide;
         let slide = buildSlideFromDataSameSlideGroup(dataSameSlide)
         showOrHideSlide(true, slide.dataset.sameSlide);
-        console.log('currentSlide =', currentSlide);
-        if(currentSlide) showOrHideSlide(false, currentSlide.id);
-        else showOrHideSlide(false);
       };
     })
     
   })();
 
-  (function moveExpandableBtns() {
-    let btn: HTMLElement;
-    let expandables = Array.from(containerDiv.querySelectorAll('.Expandable')) as HTMLDivElement[];
-    
-    if (expandables.length < 1) return console.log('Couldn\'t find any expandable');
 
-    expandables
-      .forEach(expandable => {
-        btn = containerDiv.querySelector('#' + expandable.id.replace('Expandable', ''));
-        if (!btn) return console.log('couldn\'t find btn');
-        sideBarBtnsContainer.prepend(btn);
 
-        btn.classList.replace('inlineBtn', 'sideBarBtn')
-        
-        btn.addEventListener('click', () => {
-
-          showOrHideSlide(false); //We don't need to pass a value for dataSameSlide if the boolean is false, because in this case its the element 'Slide' that will be removed and the function does not need dataSameSlide
-
-          let dataSameSlide: string = Array.from(expandable.children as HTMLCollectionOf<HTMLDivElement>).find(child => child.dataset.sameSlide).dataset.sameSlide;
-          showOrHideSlide(true, dataSameSlide);
-          closeSideBar(leftSideBar);
-        });
-        console.log('expandable btn = ', btn)
-      });
-    
-  })();
-
-  let hasSameSlide = Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>).find(div=>div.dataset.sameSlide) as HTMLDivElement;
- if(hasSameSlide) showOrHideSlide(true, hasSameSlide.dataset.sameSlide);
-
+  showTheFirstSlideInContainer(containerDiv);
+  
   function selectNextSlide(currentSlide:HTMLDivElement):HTMLDivElement {
     let next: HTMLDivElement;
     if (currentSlide.nextElementSibling)
@@ -584,35 +563,60 @@ function excludeSlide(slide:HTMLDivElement){
 };
 
 /**
+ * Retrieves the first element of the container having a 'data-same-slide' attribute, and shows the slide containing all the elements with the same 'data-same-slide' attribute
+ */
+function showTheFirstSlideInContainer(container:HTMLDivElement){
+  let hasSameSlide = Array.from(container.children as HTMLCollectionOf<HTMLDivElement>)
+    .find(div => div.dataset.sameSlide) as HTMLDivElement;
+  if (hasSameSlide) showOrHideSlide(true, hasSameSlide.dataset.sameSlide)
+};
+
+
+/**
  * Retrieves and returns the div elements having the same data-same-slide attribute
  * @param {string} dataSameSlide - the value of the data-same-slide attribute by which the divs will be filtered and retrieved
  * @param {HTMLElement} container - the html container that will be filtered while looking for the div elements with the same data-same-slide value 
  * @return {HTMLDivElement[]} an array of the div elements retrieved
  */
-function buildSlideFromDataSameSlideGroup(dataSameSlide:string):HTMLDivElement {
+function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSlide:boolean = true):HTMLDivElement {
   let sameSlide = 
   Array.from(containerDiv.querySelectorAll('div[data-same-slide]') as NodeListOf<HTMLDivElement>)
   .filter(div=>div.dataset.sameSlide === dataSameSlide && !checkIfCommentOrCommentText(div));
-  if(!sameSlide || sameSlide.length<1) return;
+  if (!sameSlide || sameSlide.length < 1) return;
+  
+  let lastActor:Actor = getLastActor(); //This is the actor of the last element in the currently displayed slide (if any)
+  
+  if (removeCurrentSlide) showOrHideSlide(false);
+
   let slide = document.createElement('div');
   slide.classList.add('Slide');
   slide.id = dataSameSlide;
   sameSlide
-    .forEach(div => slide.appendChild(div.cloneNode(true)));
+    .forEach(div => {
+      let clone = div.cloneNode(true) as HTMLDivElement;
+      if (div.classList.contains('inlineBtns'))
+      //!The cloneNode() methods does not clone the event listners of an element. There is no way to retrieve these events by javascript. We will hence add a data-original-btn-id attribute in which we will store the id of the orignal button, in order to be able to retrieve it later and, if needed, mimic its 'onclick' action
+        Array.from(clone.children)
+          .forEach(child=> child.id = 'Clone_' + child.id);
+      slide.appendChild(clone)  
+    });
   
   let slideChildren = Array.from(slide.children) as HTMLDivElement[];
 
   slideChildren
   .forEach(child => {
       child.classList.remove(hidden);
-      child.removeAttribute('data-same-slide'); //We remove this attribute in order to avoid getting the children selected if we perform a querySelector by the data-same-slide. In such case the result will be the original div elements not the clones that we appended to the slide.
+      child.dataset.sameSlide = 'Clone_' + child.dataset.sameSlide; //We remove this attribute in order to avoid getting the children selected if we perform a querySelector by the data-same-slide. In such case the result will be the original div elements not the clones that we appended to the slide.
       child.style.gridTemplateColumns = setGridColumnsOrRowsNumber(child);
-      addActorToSlide(child);
+      addActorToSlide(child, lastActor);
     });
   
   slide.style.gridTemplateRows = setGridRowsTemplateForSlide();
 
-  containerDiv.prepend(slide)
+  changeInlineBtnsOnClick();
+
+  containerDiv.prepend(slide);
+  
   return slide;
 
   function setGridRowsTemplateForSlide():string{
@@ -626,38 +630,98 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string):HTMLDivElement {
     return rowsTemplate;
   };
 
-  function addActorToSlide(slideChild:HTMLDivElement){
+  /**
+   * gets the actor of the last paragraph of the currently exposed slide
+   */
+  function getLastActor():Actor {
+    let oldSlide = containerDiv.querySelector('.Slide') as HTMLDivElement;
+    if (!oldSlide) return;
+    return getActor(oldSlide.children[oldSlide.children.length - 1] as HTMLDivElement)
+  }
+
+  function addActorToSlide(slideChild:HTMLDivElement, lastActor:Actor){
     let actor = getActor(slideChild);
     if (!actor) return;
-    let oldSlide = containerDiv.querySelector('.Slide') as HTMLDivElement;
-
     if (
-      (
-      slideChildren.indexOf(slideChild) > 0 
-      && actor === getActor(slideChildren[slideChildren.indexOf(slideChild) - 1])
-      )
+      (slideChildren.indexOf(slideChild) > 0 
+        && actor === getActor(slideChildren[slideChildren.indexOf(slideChild) - 1]))
+        ||
+      (lastActor && slideChildren.indexOf(slideChild) === 0
+        && actor === lastActor)
       ||
-      (oldSlide
-        && slideChildren.indexOf(slideChild) === 0
-        && actor === getActor(oldSlide.children[oldSlide.children.length - 1] as HTMLDivElement)
-      )
-      ||
-      (oldSlide
-        && slideChildren.indexOf(slideChild) === 1
+      (lastActor && slideChildren.indexOf(slideChild) === 1
         && checkIfTitle(slideChildren[0])
-        && actor === getActor(oldSlide.children[oldSlide.children.length - 1] as HTMLDivElement)
-      )
+        && actor === lastActor)
     ) return;
 
     Array.from(slideChild.children)
       .forEach((parag:HTMLParagraphElement) =>{
           parag.innerHTML = '<span class="actorSpan">' + actor[parag.lang.toUpperCase()] + ': </span>' + '<span class="textSpan">' + parag.innerHTML + '</span>'
         });
-    function getActor(child: HTMLDivElement) {
-      if (!child) return undefined;
-      return actors.find(actor => child.classList.contains(actor.EN))
+  };
+
+  function getActor(child: HTMLDivElement):Actor {
+    if (!child) return undefined;
+    return actors.find(actor => child.classList.contains(actor.EN))
+  };
+
+  function changeInlineBtnsOnClick() {
+    let inlineBtns = slideChildren.filter(child=>child.classList.contains('inlineBtns')) as HTMLDivElement[];
+    if (inlineBtns.length < 1) return console.log('inlineBtns is empty');
+  
+    (function expandables() {
+      let expandBtnsContainer = inlineBtns.filter(container => container.children.length>0 &&  container.children[0].classList.contains('expand')); 
+
+      changeBtnOnClick(expandBtnsContainer, onClickFun)
+       
+      function onClickFun(btn:HTMLElement){
+        let container = containerDiv.querySelector('#' + btn.id.split('Clone_')[1] + 'Expandable');
+        if (!container) return console.log('could not find the expandable container');
+
+        let dataSameSlide: string = Array.from(container.children as HTMLCollectionOf<HTMLDivElement>).find(child => child.dataset.sameSlide).dataset.sameSlide;
+        showOrHideSlide(true, dataSameSlide);
       }
-  }
+    })();
+
+      (function redirectToAnotherMass() {
+        let redirectToBtnsContainer =
+          inlineBtns
+          .filter(container => 
+            container.children.length > 0
+            && container.children[0].id.startsWith('Clone_GoTo_'));
+        console.log('redirectTo = ', redirectToBtnsContainer);
+
+        changeBtnOnClick(redirectToBtnsContainer, onClickFun)
+        
+        function onClickFun(btn:HTMLElement) {
+          let originalBtn: HTMLDivElement =
+            Array.from(containerDiv.querySelectorAll('.inlineBtn') as NodeListOf<HTMLDivElement>)
+              .find(childBtn => childBtn.id === btn.id.split('Clone_')[1]);
+          
+          if (!originalBtn) return console.log('could not find the original button');
+          
+          originalBtn.click();
+          let children = Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>); //!children must be defined after orginalBtn.click() is called otherwise dataSameSlide will get is value from the children of containerDiv as they were before originalBtn.click() is called
+          
+          let dataRoot = btn.id.split('From_')[1];
+          let dataSameSlide: string =
+            children
+            .find(child => child.dataset.root && child.dataset.root === dataRoot && child.dataset.sameSlide).dataset.sameSlide;
+          
+          showOrHideSlide(true, dataSameSlide);
+          };
+      })();
+
+
+    function changeBtnOnClick(containers: HTMLDivElement[], onClickFun: Function) {
+      if (containers.length < 1) return console.log('Couldn\'t find any btns containers');
+      containers.forEach(container => {
+        let btns = Array.from(container.children) as HTMLElement[];
+        btns.forEach(btn =>btn.addEventListener('click', () => onClickFun(btn)))
+      });
+    }
+  };
+
 };
 
 /**
@@ -2951,18 +3015,21 @@ function consoleLogArrayTextInDefaultLanguage(title:string)
 function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
   if (localStorage.displayMode !== displayModes[1]) return;
 
-  let children =Array.from(containerDiv.querySelectorAll('div[data-same-slide]')) as HTMLDivElement[];
+  let children =Array.from(containerDiv.children) as HTMLDivElement[];
   
   
-  let displayed = containerDiv.querySelector('.Slide');
+  let currentSlide = containerDiv.querySelector('.Slide');
 
-  if (!displayed || displayed.children.length < 1)
-    return showOrHideSlide(true, children[0].dataset.sameSlide);
+  if (!currentSlide)
+    return showOrHideSlide(true, children.find(child=>child.dataset.sameSlide).dataset.sameSlide);
 
   let sameSlide =
     children
-      .filter(div => div.dataset.sameSlide === displayed.id);
+      .filter(div => div.dataset.sameSlide && div.dataset.sameSlide === currentSlide.id); //This is an array of the elements sharing the same data-same-slide attribute and are all inlcuded and displayed in the currentSlide (i.e., their data-same-slide === curentSlide.id)
 
+ 
+  if(sameSlide.length<1) return console.log('We could not find divs having as data-same-slide the id of the currently displayed Slide')
+  
   let nextSlide: HTMLDivElement;
 
   selectNextSlide(sameSlide[sameSlide.length - 1]);
@@ -2979,17 +3046,18 @@ function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
       nextSlide = slide.parentElement.previousElementSibling as HTMLDivElement;
     else nextSlide = undefined; //!CAUTION: we must set nextSlide to undefined if none of the above cases applies. Otherwise the function will loop infintely
 
-    if(nextSlide && exclude(nextSlide, slide.dataset.sameSlide)) selectNextSlide(nextSlide);
+    console.log('nextSlide = ', nextSlide);
+    
+    if(nextSlide && exclude(nextSlide, slide)) selectNextSlide(nextSlide);
   }
   if (!nextSlide) return;
-  showOrHideSlide(true, nextSlide.dataset.sameSlide);
-  showOrHideSlide(false, displayed.id);//!We need to call this after showing the new slide, because we need the old slide to remain until buildSlideFromDataSameSlideGroup() has checked what is the 'actor' of the last child of the old slide. We also mus pass displayed.id as dataSameSlide argument otherwise it is the new slide that will be removed not the old one.
+  showOrHideSlide(false); //We remove the currently displayed slide
+  showOrHideSlide(true, nextSlide.dataset.sameSlide); //We show the new slide
 
-  function exclude(div:HTMLDivElement, dataSameSlide:string):boolean {
-    if (
-      div.classList.contains('Slide')
-      ||!div.classList.contains('SlideRow')
-      || div.dataset.sameSlide === dataSameSlide
+  function exclude(div:HTMLDivElement, previousDiv:HTMLDivElement):boolean {
+    if (!div.dataset.sameSlide
+      ||!previousDiv.dataset.sameSlide
+      || div.dataset.sameSlide === previousDiv.dataset.sameSlide
       || checkIfCommentOrCommentText(div)
     )
       return true;

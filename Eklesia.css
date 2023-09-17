@@ -294,6 +294,9 @@ color:white;
   background-color: black !important;
   row-gap: 5px !important;
 }
+.Slide>.inlineBtns{
+  background-color: black;
+}
 .SlideRow{
 display: grid;
 background-color: black !important;
@@ -662,6 +665,7 @@ br{
   font-weight: bold !important;
   font-size: calc(var(--fSize) *4cqi) !important;
 }
+
 .Slide> p>span.musicalNote{
   color:  #95190c !important;
   font-weight: bold !important;

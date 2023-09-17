@@ -2438,6 +2438,8 @@ return createBtnAndExpandableDiv();
 function createBtnAndExpandableDiv():[HTMLElement, HTMLDivElement]{
   let createdButton:HTMLElement = createBtn(btnExpand, btnDiv, btnExpand.cssClass, true, btnExpand.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
 
+  createdButton.classList.add('expand'); //We need this class in order to retrieve the btn in Display Presentation Mode
+
   //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
     let prayersContainerDiv = document.createElement('div');
     prayersContainerDiv.id = btnExpand.btnID + 'Expandable';
