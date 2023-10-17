@@ -508,12 +508,12 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string):
 
     text += '"'+element+'", \n'; //adding the text of row[i](after being cleaned from the unwatted characters) to text
   };
-  text = replacePrefixes(text);
+  text = replacePrefixes(text, arrayName);
   text = arrayName + "= " + text + "];";
   return  text
 }
 
-function replacePrefixes(text: string): string {
+function replacePrefixes(text: string, arrayName:string): string {
   text = text
     .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
     .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
@@ -544,7 +544,9 @@ function replacePrefixes(text: string): string {
     .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
     .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
     .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+  if (arrayName !== 'PrayersArray') return text;
     //Seasonal 
+  text = text
     .replaceAll(giaki.AR, '"+giaki.AR+"')
     .replaceAll(giaki.FR, '"+giaki.FR+"')
     .replaceAll(giaki.COP, '"+giaki.COP+"')

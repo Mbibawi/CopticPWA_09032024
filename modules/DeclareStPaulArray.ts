@@ -145,13 +145,13 @@ ReadingsArrays.StPaulArray= [[
   ], 
   [
   Prefix.stPaul+"&D=013rdSunday", 
-  "وأنا أيضاً لما "+giaki.AR+" إليكم يا إخوتي ما "+giaki.AR+" بسمو الكلام أو الحكمة معلماً إياكم بسر الله.", 
+  "وأنا أيضاً لما أتيت إليكم يا إخوتي ما أتيت بسمو الكلام أو الحكمة معلماً إياكم بسر الله.", 
   "1 Pour moi, frères, lorsque je suis allé chez vous, ce n’est pas avec une supériorité de langage ou de sagesse que je suis allé vous annoncer le témoignage de Dieu.", 
   "2:1 And I, brethren, when I came to you, did not come with excellence of speech or of wisdom declaring to you the testimony of God.", 
   ], 
   [
   Prefix.stPaul+"&D=013rdSunday", 
-  "لأني لم أحكم أن أعرف شيئاً بينكم إلاَّ يسوع المسيح وإياه مصلوباً أنا "+giaki.AR+" عندكم في ضعف وخوف ورعدة كثيرة.", 
+  "لأني لم أحكم أن أعرف شيئاً بينكم إلاَّ يسوع المسيح وإياه مصلوباً أنا أتيت عندكم في ضعف وخوف ورعدة كثيرة.", 
   "2 Car je n’ai pas jugé bon de savoir autre chose parmi vous, sinon Jésus–Christ, et Jésus–Christ crucifié. 3 Moi–même j’étais auprès de vous dans un état de faiblesse, de crainte et de grand tremblement ;", 
   "2 For I determined not to know anything among you except Jesus Christ and Him crucified. 3 I was with you in weakness, in fear, and in much trembling.", 
   ], 
@@ -665,7 +665,7 @@ ReadingsArrays.StPaulArray= [[
   ], 
   [
   Prefix.stPaul+"&D=021stSunday", 
-  "ولمَّا "+giaki.AR+"ُ إلى ترواس، لأجل إنجيلِ المسيحِ، وانفتحَ لي بابٌ في الربِّ، لمْ تسترِحْ روحي، لأنِّي لم أَجِدْ تيطُسَ أخي. لكنْ ودَّعتُهُمْ وخرَجتُ من هناك إلى مَكِدُونيَّةَ.", 
+  "ولمَّا أتيت إلى ترواس، لأجل إنجيلِ المسيحِ، وانفتحَ لي بابٌ في الربِّ، لمْ تسترِحْ روحي، لأنِّي لم أَجِدْ تيطُسَ أخي. لكنْ ودَّعتُهُمْ وخرَجتُ من هناك إلى مَكِدُونيَّةَ.", 
   "12 J'arrivai alors à Troas pour prêcher l'Évangile du Christ et, bien que le Seigneur m'ouvrit grande la porte, 13 je n'eus pas l'esprit en repos, car je ne trouvai pas Tite, mon frère. J'ai donc pris congé d'eux et je suis parti pour la Macédoine.", 
   "12 Furthermore, when I came to Troas to preach Christ's gospel, and a door was opened to me by the Lord, 13 I had no rest in my spirit, because I did not find Titus my brother; but taking my leave of them, I departed for Macedonia.", 
   ], 
@@ -1147,7 +1147,7 @@ ReadingsArrays.StPaulArray= [[
   ], 
   [
   Prefix.stPaul+"&D=0803", 
-  "وكان المنظر هكذا مخيفا حتى قال موسى انا مرتعب ومرتعد. بل قد "+giaki.AR+"م الى جبل صهيون والى مدينة الله الحي اورشليم السماوية والى ربوات هم محفل ملائكة", 
+  "وكان المنظر هكذا مخيفا حتى قال موسى انا مرتعب ومرتعد. بل قد أتيتم الى جبل صهيون والى مدينة الله الحي اورشليم السماوية والى ربوات هم محفل ملائكة", 
   "21 Et si terrifiant était ce spectacle, que Moïse dit: Je suis terrifié et tremblant. 22 Mais vous vous êtes approchés de la montagne de Sion et de la ville du Dieu vivant, la Jérusalem céleste, et des myriades d'anges", 
   "21 And so terrifying was the sight that Moses said, I am exceedingly afraid and trembling. 22 But you have come to Mount Zion and to the city of the living God, the heavenly Jerusalem, to an innumerable company of angels,", 
   ], 
@@ -8089,13 +8089,13 @@ ReadingsArrays.StPaulArray= [[
   ], 
   [
   Prefix.stPaul+"&D=GL50", 
-  "وأنا أيضاً لمَّا "+giaki.AR+"ُ إليكُم يا إخوتي، ما "+giaki.AR+"ُ بسمُوِّ الكلامِ أو الحكمة مُعلِّماً إياكُم بِسرِ اللَّهِ لأنِّي لمْ أحكُم أن أعرِفَ شيئاً بَينكُم إلاَّ يسوعَ المسيحَ وإيَّاهُ مَصلوباً.", 
+  "وأنا أيضاً لمَّا أتيت إليكُم يا إخوتي، ما أتيت بسمُوِّ الكلامِ أو الحكمة مُعلِّماً إياكُم بِسرِ اللَّهِ لأنِّي لمْ أحكُم أن أعرِفَ شيئاً بَينكُم إلاَّ يسوعَ المسيحَ وإيَّاهُ مَصلوباً.", 
   "1 Moi-même, quand je suis venu chez vous, frères, ce n'est pas avec le prestige de la parole ou de la sagesse que je suis venu vous annoncer le mystère de Dieu. Car j'ai décidé de ne rien savoir parmi vous, sinon Jésus Christ, et Jésus Christ crucifié.", 
   "2:1 And I, brethren, when I came to you, did not come with excellence of speech or of wisdom declaring to you the testimony of God. 2 For I determined not to know anything among you except Jesus Christ and Him crucified.", 
   ], 
   [
   Prefix.stPaul+"&D=GL50", 
-  "وأنا "+giaki.AR+"ُ عندكُمْ في ضَعفٍ، وخَوفٍ، ورِعْدَةٍ كثيرةٍ، وكَلامِي وكرازَتِي لمْ يَكونَا بإقناعٍ، بكلامِ حكمة النَّاس، لكن بِبُرهَانِ الرُّوح والقوَّةِ، لكي لا يكونَ إيمانُكُم بِحكمةِ النَّاسِ بل بِقوَّةِ اللَّهِ.", 
+  "وأنا أتيت عندكُمْ في ضَعفٍ، وخَوفٍ، ورِعْدَةٍ كثيرةٍ، وكَلامِي وكرازَتِي لمْ يَكونَا بإقناعٍ، بكلامِ حكمة النَّاس، لكن بِبُرهَانِ الرُّوح والقوَّةِ، لكي لا يكونَ إيمانُكُم بِحكمةِ النَّاسِ بل بِقوَّةِ اللَّهِ.", 
   "3 Aussi ai-je été devant vous faible, craintif et tout tremblant: ma parole et ma prédication n'avaient rien des discours persuasifs de la sagesse, mais elles étaient une démonstration faite par la puissance de l'Esprit, afin que votre foi ne soit pas fondée sur la sagesse des hommes, mais sur la puissance de Dieu.", 
   "3 I was with you in weakness, in fear, and in much trembling. 4 And my speech and my preaching were not with persuasive words of human wisdom, but in demonstration of the Spirit and of power, 5 that your faith should not be in the wisdom of men but in the power of God.", 
   ], 
