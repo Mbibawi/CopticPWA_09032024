@@ -33,7 +33,7 @@ const sideBarTitlesContainer: HTMLDivElement = rightSideBar.querySelector('#side
 const contentDiv: HTMLElement = document.getElementById('content');
 
 const toggleDevBtn = document.getElementById('toggleDev') as HTMLButtonElement;
-const inlineBtnsDiv: HTMLElement = document.getElementById('inlineBtnsContainer');
+const expandableBtnsPannel: HTMLElement = document.getElementById('inlineBtnsContainer');
 const ResurrectionDates: string[] = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
 
 const copticMonths: {AR:string, FR:string, EN:string }[] = [
@@ -165,6 +165,7 @@ const btnClass = 'sideBarBtn';
 const eighthNoteCode: number = 9834;
 const beamedEighthNoteCode: number = 9835;
 const inlineBtnClass = 'inlineBtn';
+const inlineBtnsContainerClass = 'inlineBtns';
 const hidden = 'hiddenElement';
 const ReadingsIntrosAndEnds = {
     gospelIntro: {

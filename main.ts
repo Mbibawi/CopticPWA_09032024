@@ -120,6 +120,7 @@ async function startApp() {
   };
 
   addKeyDownListnerToElement(document, 'keydown', undefined);
+  if (todayDate.getDay() === 0) reloadScriptToBody(['PrayersArray']);
 }
 
 /**
@@ -170,8 +171,8 @@ function createHtmlElementForPrayer(args: {
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  if(localStorage.displayMode === displayModes[1]) htmlRow.classList.replace('Row', 'SlideRow'); //we add the displayMode class to this div
-  if (localStorage.displayMode === displayModes[1]) htmlRow.classList.add(hidden);
+  if(localStorage.displayMode === displayModes[1]) htmlRow.classList.replace('Row', 'SlideRow');
+
   htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
 
   if (args.actorClass) htmlRow.classList.add(args.actorClass);
@@ -335,16 +336,16 @@ async function showTitlesInRightSideBar(
  * @param {boolean} pursue - after the onClick function is called, if pursue = false, the showchildButtonsOrPrayers() will return, otherwise, it will continue processing the other properties of the button
  * @returns
  */
-function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
+async function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   if (!btn) return;
   if(containerDiv.dataset.editingMode) return showBtnInEditingMode(btn);
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;
 
-  hideInlineButtonsDiv();
+  hideExpandableButtonsPannel();
 
   if (clear) {
-    inlineBtnsDiv.innerHTML = "";
+    expandableBtnsPannel.innerHTML = "";
     containerDiv.style.gridTemplateColumns = "100%";
   }
 
@@ -357,9 +358,10 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     btn.showPrayers
   ){
     showPrayers({ btn: btn, clearContainerDiv: true, clearRightSideBar: true, container: container, languages: btn.languages, prayersSequence: btn.prayersSequence, position: container });
-    };
+  };
 
-  if (btn.afterShowPrayers) btn.afterShowPrayers();
+  if (btn.afterShowPrayers && localStorage.displayMode === displayModes[1]) await btn.afterShowPrayers();
+  else if (btn.afterShowPrayers) btn.afterShowPrayers();//!btn.afterShowPrayers() is an async function, that's why we don't call it here when in Presentation Mode because , it will not have ended inserting the new elements when showPrayersInPresentationMode() is called
 
   //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
   setCSS(Array.from(container.querySelectorAll("div.Row"))); //setting the number and width of the columns for each html element with class 'Row'
@@ -378,7 +380,7 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
       //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
       if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
       //We create the html element reprsenting the childBtn and append it to btnsDiv
-      createBtn(childBtn, sideBarBtnsContainer, childBtn.cssClass);
+      createBtn({btn:childBtn, btnsContainer: sideBarBtnsContainer,  btnClass: childBtn.cssClass});
     });
   }
 
@@ -404,7 +406,7 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     && !sideBarBtnsContainer.querySelector("#" + 'settings')
    && !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
   ) {
-    createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
+    createBtn({btn:btnMain, btnsContainer: sideBarBtnsContainer, btnClass: btnMain.cssClass});
     /*let image = document.getElementById("homeImg");
     if (image) {
       document.getElementById("homeImg").style.width = "20vmax";
@@ -427,106 +429,104 @@ function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
     btnMain.onClick();
 }
 
-function showSlidesInPresentationMode() {
-  let countMax: number = 1400;
+async function showSlidesInPresentationMode() {
+  let countMax: number = 1750;
   let toMerge: HTMLDivElement[] = [];
-  let children = Array.from(containerDiv.querySelectorAll('div')) as HTMLDivElement[];
+  let children = Array.from(containerDiv.querySelectorAll('.Expandable, .SlideRow, .' + inlineBtnsContainerClass)) as HTMLDivElement[];
+
+  children.forEach(child => {
+      child.classList.add(hidden);
+      setSlidesCSS(child);
+  });//!We need to remove all the divs that are empty (some of which are inlineBtns divs that were emptied when the buttons were moved to anohter container). If we do not remove them, they may be given data-same-slide attributes that will interfere with the flow of the slides
 
 
-  (function setSlidesCSS() {
-    let slides = children.filter(child=>child.classList.contains('SlideRow'));
-
-    slides.forEach(div=>{
-      div.style.gridTemplateColumns = setGridColumnsOrRowsNumber(div);
-      div.style.gridTemplateAreas = setGridAreas(div);
-    })
-  })();
+  function setSlidesCSS(slideRow:HTMLDivElement) {
+    if (!slideRow.classList.contains('SlideRow')) return;
+      slideRow.style.gridTemplateColumns = setGridColumnsOrRowsNumber(slideRow);
+      slideRow.style.gridTemplateAreas = setGridAreas(slideRow);
+  };
  
-  mergeContainerSlidesIfTooSmall(containerDiv);
+  mergeContainerSlidesIfTooSmall(children[0]);
 
 /**
  *This function will count the number of words in each html div element with class '.SlideRow'. If the number is below a certain number, it will add the text in the next html div. It will do so until we reach the maximum number. 
  */
-  function mergeContainerSlidesIfTooSmall(container: HTMLDivElement) {
+  function mergeContainerSlidesIfTooSmall(firstSlideRow:HTMLDivElement) {
 
-    let slide = children[0] as HTMLDivElement;
+    processSlideRow(firstSlideRow);
 
-    while (slide) {
-      while (excludeSlide(slide)) slide = selectNextSlide(slide);
+    function processSlideRow(slideRow: HTMLDivElement) {
+      toMerge = [];
       
-      if (slide.classList.contains('Expandable')) {
-        slide = slide.children[0] as HTMLDivElement;
-        continue;
-      };
-      
-        slide.dataset.sameSlide = slide.dataset.root + children.indexOf(slide);
+      while (slideRow && (slideRow.children.length < 1 || isCommentContainer(slideRow))) slideRow = nextSlideRow(slideRow);
 
-      countWords(slide);
+      if (!slideRow) return;
       
-    if (toMerge.length > 1) {
-      prepareSameSlideGroup();
-      slide = toMerge[toMerge.length - 1];
+      if (slideRow.classList.contains('Expandable') && slideRow.children.length>0) 
+        processSlideRow(slideRow.children[0] as HTMLDivElement);
+     
+    countWords(slideRow);
+      toMerge = toMerge.filter(div => div);
+    let hasDataRoot = toMerge.find(div => div.dataset.root);
+
+    if(hasDataRoot)
+      toMerge
+        .forEach(div =>
+          div.dataset.sameSlide = hasDataRoot.dataset.root + children.indexOf(hasDataRoot));
+            
+      if (toMerge.length > 1) {
+      while (toMerge.length > 1
+        && (isTitlesContainer(toMerge[toMerge.length - 1])
+          || toMerge[toMerge.length - 1].classList.contains(inlineBtnsContainerClass))
+      ) toMerge.pop(); //If the last element of toMerge[] is a title slide or an inlineBtns container, we remove it;
+      if(toMerge.length>=1) processSlideRow(nextSlideRow(toMerge[toMerge.length - 1]));
     };
-      
-    toMerge = [];
-    slide = selectNextSlide(slide);
-};
 
-function excludeSlide(slide:HTMLDivElement){
-  if (checkIfCommentOrCommentText(slide)
-    || slide.children.length <1
-    || (
-      !slide.classList.contains('SlideRow')
-      && !slide.classList.contains('Expandable')
-      &&!slide.classList.contains('inlineBtns')
-    ))
-    return true
-}
+    processSlideRow(nextSlideRow(slideRow));
+      
+    };
+
 
     /**
      * Cournts the letters in the innerHTML of a group of divs added to a the toMerge[] array. If the innerHTML does not exceed the countMax, it adds the next div to the toMerge[] array until the maxCount is reached or exceeded
      */
-  function countWords(slide: HTMLDivElement) {
-    let count: number = 0;
+  function countWords(slideRow: HTMLDivElement) {
+    if(!slideRow || slideRow.classList.contains('Expandable')) return;
 
-    toMerge.push(slide); //!CAUTION: we need the slide to be pushed when the function, because when it is called for the first time, if the slide is not already in toMerge[], we will add its nextSibling but the first slide itself will never be added to toMerge.
+    if(slideRow.innerHTML.length > countMax){
+      //We are in presence of a sole element with text exceedin the limit, we need to split it;
+      let newDiv = slideRow.cloneNode(true) as HTMLDivElement;
+      let phrases: string[];
 
+      Array.from(slideRow.children as HTMLCollectionOf<HTMLDivElement>)
+        .forEach(child => {
+          if (child.innerHTML.includes('span')) console.log('there are spans');
+          phrases = child.innerHTML.split('. ');
+          let parag = newDiv.children[Array.from(slideRow.children).indexOf(child)];
+          parag.innerHTML = '';
+          phrases
+            .forEach(phrase => {
+              if (phrases.indexOf(phrase) > (phrases.length / 2))
+                parag.innerHTML += phrase + '. '
+              child.innerHTML = child.innerHTML.replace(phrase, '');
+            });
+        });
+      
+      slideRow.insertAdjacentElement('afterend', newDiv)
+    }
+ 
+    toMerge.push(slideRow); //!CAUTION: we need the slideRow div to be pushed when the function, because when it is called for the first time, if the slide is not already in toMerge[], we will add its nextSibling but the first slide itself will never be added to toMerge. However, we never add an 'Expandable' div as an html element that can potentially be included in a Slide
 
-    //We start by counting the number of letters in toMerge[]
-    toMerge.forEach(child => {
-      if (!child.classList.contains('inlineBtns'))
-        count += child.innerHTML.length
-    });
+  
+    let inlineBtns: number = toMerge.filter(div => div.classList.contains(inlineBtnsContainerClass)).length;    
 
-    if (count > countMax) {
+    if (countInnerHTML(0) > countMax * (1 - ((6 / 100) * inlineBtns))) {
       toMerge.pop(); //if the number of letters exceeds the maximum we remove the last slide from toMerge[]
-      return;
-    };
-
-    let nextSlide = selectNextSlide(slide); 
-
-    if (!nextSlide) return;
-
-    let inlineBtns = toMerge.filter(div => div.classList.contains('inlineBtns'));
-    
-    if (inlineBtns.length > 0
-      && count < (countMax - ((countMax * (10 / 100) * inlineBtns.length))))
-      countWords(nextSlide);
-
-    else if (count < countMax) countWords(nextSlide);
-
+      return toMerge;
+    }
+    else countWords(nextSlideRow(slideRow));
   };
 
-  function prepareSameSlideGroup():HTMLDivElement {  
-      if ( checkIfTitle(toMerge[toMerge.length - 1]))
-      toMerge.pop(); //If the last element of toMerge[] is a title slide, we remove it      
-    if (toMerge.length < 2) return; 
-        toMerge
-          .forEach(mergedSlide => {
-            if (checkIfCommentOrCommentText(mergedSlide)) return;
-            mergedSlide.dataset.sameSlide = toMerge[0].dataset.sameSlide; //We will give all the slides the same data-same-slide value in order to retrieve them together later
-          });
-  };
   };
 
   (function changeRightSideBarShortCutsOnClidk() {
@@ -552,16 +552,24 @@ function excludeSlide(slide:HTMLDivElement){
 
   showTheFirstSlideInContainer(containerDiv);
   
-  function selectNextSlide(currentSlide:HTMLDivElement):HTMLDivElement {
+  function nextSlideRow(currentSlideRow:HTMLDivElement):HTMLDivElement {
+    if (!currentSlideRow) return undefined;
     let next: HTMLDivElement;
-    if (currentSlide.nextElementSibling)
-        next = currentSlide.nextElementSibling as HTMLDivElement;
-    else if (currentSlide.parentElement && currentSlide.parentElement.classList.contains('Expandable'))
-      next = currentSlide.parentElement.nextElementSibling as HTMLDivElement; 
+    if (currentSlideRow.nextElementSibling)
+        next = currentSlideRow.nextElementSibling as HTMLDivElement;
+    else if (currentSlideRow.parentElement && currentSlideRow.parentElement.classList.contains('Expandable'))
+      next = currentSlideRow.parentElement.nextElementSibling as HTMLDivElement; 
     return next
   };
-};
 
+  function countInnerHTML(count:number):number {
+    toMerge
+      .forEach(child => {
+        if (!child.classList.contains(inlineBtnsContainerClass)) count += child.innerHTML.length;
+      });
+    return count;
+  }
+};
 /**
  * Retrieves the first element of the container having a 'data-same-slide' attribute, and shows the slide containing all the elements with the same 'data-same-slide' attribute
  */
@@ -581,7 +589,7 @@ function showTheFirstSlideInContainer(container:HTMLDivElement){
 function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSlide:boolean = true):HTMLDivElement {
   let sameSlide = 
   Array.from(containerDiv.querySelectorAll('div[data-same-slide]') as NodeListOf<HTMLDivElement>)
-  .filter(div=>div.dataset.sameSlide === dataSameSlide && !checkIfCommentOrCommentText(div));
+  .filter(div=>div.dataset.sameSlide === dataSameSlide && !isCommentContainer(div));
   if (!sameSlide || sameSlide.length < 1) return;
   
   let lastActor:Actor = getLastActor(); //This is the actor of the last element in the currently displayed slide (if any)
@@ -594,7 +602,7 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
   sameSlide
     .forEach(div => {
       let clone = div.cloneNode(true) as HTMLDivElement;
-      if (div.classList.contains('inlineBtns'))
+      if (div.classList.contains(inlineBtnsContainerClass))
       //!The cloneNode() methods does not clone the event listners of an element. There is no way to retrieve these events by javascript. We will hence add a data-original-btn-id attribute in which we will store the id of the orignal button, in order to be able to retrieve it later and, if needed, mimic its 'onclick' action
         Array.from(clone.children)
           .forEach(child=> child.id = 'Clone_' + child.id);
@@ -611,7 +619,7 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
       addActorToSlide(child, lastActor);
     });
   
-  slide.style.gridTemplateRows = setGridRowsTemplateForSlide();
+ // slide.style.gridTemplateRows = setGridRowsTemplateForSlide();
 
   changeInlineBtnsOnClick();
 
@@ -650,7 +658,7 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
         && actor === lastActor)
       ||
       (lastActor && slideChildren.indexOf(slideChild) === 1
-        && checkIfTitle(slideChildren[0])
+        && isTitlesContainer(slideChildren[0])
         && actor === lastActor)
     ) return;
 
@@ -666,7 +674,7 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
   };
 
   function changeInlineBtnsOnClick() {
-    let inlineBtns = slideChildren.filter(child=>child.classList.contains('inlineBtns')) as HTMLDivElement[];
+    let inlineBtns = slideChildren.filter(child=>child.classList.contains(inlineBtnsContainerClass)) as HTMLDivElement[];
     if (inlineBtns.length < 1) return console.log('inlineBtns is empty');
   
     (function expandables() {
@@ -679,7 +687,8 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
         if (!container) return console.log('could not find the expandable container');
 
         let dataSameSlide: string = Array.from(container.children as HTMLCollectionOf<HTMLDivElement>).find(child => child.dataset.sameSlide).dataset.sameSlide;
-        showOrHideSlide(true, dataSameSlide);
+        let slide = showOrHideSlide(true, dataSameSlide);
+        if (slide) slide.dataset.isExpandable = container.id;
       }
     })();
 
@@ -695,7 +704,7 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
         
         function onClickFun(btn:HTMLElement) {
           let originalBtn: HTMLDivElement =
-            Array.from(containerDiv.querySelectorAll('.inlineBtn') as NodeListOf<HTMLDivElement>)
+            Array.from(containerDiv.querySelectorAll('.' + inlineBtnClass) as NodeListOf<HTMLDivElement>)
               .find(childBtn => childBtn.id === btn.id.split('Clone_')[1]);
           
           if (!originalBtn) return console.log('could not find the original button');
@@ -709,6 +718,54 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
             .find(child => child.dataset.root && child.dataset.root === dataRoot && child.dataset.sameSlide).dataset.sameSlide;
           
           showOrHideSlide(true, dataSameSlide);
+          };
+      })();
+      (function MasterBtnMultipleChoices() {
+        let masterBtnContainers =
+          inlineBtns
+          .filter(container => 
+            container.children.length > 0
+            && container.classList.contains('masterBtnDiv'));
+        console.log('masterBtnContainers = ', masterBtnContainers);
+
+        changeBtnOnClick(masterBtnContainers, onClickFun)
+        
+        function onClickFun(btn:HTMLElement) {
+          let originalBtn: HTMLDivElement =
+            Array.from(containerDiv.querySelectorAll('.' + inlineBtnClass) as NodeListOf<HTMLDivElement>)
+              .find(childBtn => childBtn.id === btn.id.split('Clone_')[1]);
+          
+          if (!originalBtn) return console.log('could not find the original button');
+          
+          originalBtn.click();
+
+          addEventListenersToPannelBtns();
+
+          
+          function addEventListenersToPannelBtns(){
+            let pannelBtns = Array.from(expandableBtnsPannel.querySelectorAll('.multipleChoicePrayersBtn')) as HTMLButtonElement[];
+            if (pannelBtns.length < 1) return console.log('No buttons in the pannel');
+            pannelBtns.forEach(childBtn => childBtn.addEventListener('click', showOptionalPrayer));
+
+            let btnNext: HTMLButtonElement = expandableBtnsPannel.querySelector('#btnNext');
+
+            if (btnNext) btnNext.addEventListener('click', () => addEventListenersToPannelBtns());
+          };
+          
+          function showOptionalPrayer(){
+          let children = Array.from(containerDiv.querySelectorAll('div[data-optional-prayer]')) as HTMLDivElement[];
+
+          
+          children = children.filter(child => child.dataset.optionalPrayer === originalBtn.dataset.displayedOptionalPrayer);
+
+          if (children.length < 1) return console.log('no option prayer is displayed');
+
+            children.forEach(child =>
+              child.dataset.sameSlide =
+              child.dataset.root + Array.from(containerDiv.children).indexOf(children[0])
+            );
+          
+          showOrHideSlide(true, children[0].dataset.sameSlide)};
           };
       })();
 
@@ -730,12 +787,11 @@ function buildSlideFromDataSameSlideGroup(dataSameSlide:string, removeCurrentSli
  * If show = false, this argument can be omitted, however if provided, it means that we want a specific slide to be removed and we want it to be selected by its id (this is needed in some scenarios). 
  * @param {boolean} show - a boolean that indicates whether the slide should be displayed or hidden (true = display, flase = hide)
  */
-function showOrHideSlide(show:boolean, dataSameSlide?:string){
+function showOrHideSlide(show:boolean, dataSameSlide?:string):HTMLDivElement | void {
   let slide: HTMLDivElement;
   if (show) {
     if (!dataSameSlide) return console.log('You must provide the dataSameSlide argument');
-    slide = buildSlideFromDataSameSlideGroup(dataSameSlide);
-    if (!slide || slide.children.length < 1) return;
+    return buildSlideFromDataSameSlideGroup(dataSameSlide);
 }else if(!show && dataSameSlide){
   slide =Array.from(containerDiv.children).find(child=>child.id ===dataSameSlide) as HTMLDivElement;//!We could not perform a querySelector because the format of the id contains characters that are not allowed in querySelector. 
   if(!slide) return
@@ -746,6 +802,7 @@ function showOrHideSlide(show:boolean, dataSameSlide?:string){
     slide.remove();
 }
 }
+
 
 /**
  * Appends the settings button to the right side bar
@@ -800,14 +857,14 @@ async function createGoBackBtn(
       btnsDiv.innerHTML = "";
       if (goTo.children)
         goTo.children.forEach((childBtn) => {
-          createBtn(childBtn, btnsDiv, childBtn.cssClass, true);
+          createBtn({btn:childBtn, btnsContainer:btnsDiv, btnClass:childBtn.cssClass, clear:true});
         });
       if (goTo.parentBtn)
         createGoBackBtn(goTo.parentBtn, btnsDiv, goTo.parentBtn.cssClass);
       if (btnsDiv === sideBarBtnsContainer) addSettingsButton();
     },
   });
-  return createBtn(goBak, btnsDiv, goBak.cssClass, false, goBak.onClick);
+  return createBtn({btn:goBak, btnsContainer:btnsDiv, btnClass:goBak.cssClass, clear:false, onClick:goBak.onClick});
 }
 /**
  * Creates a an anchor html element and sets its href attribute to the id parameter, then clicks the anchor in order to scroll to it and, finally, removes the anchor
@@ -823,42 +880,44 @@ function createFakeAnchor(id: string) {
 /**
  * Creates an html element for the button and shows it in the relevant side bar. It also attaches an 'onclick' event listener to the html element which passes the button it self to showChildButtonsOrPrayers()
  * @param {Button} btn  - the button that will be displayed as an html element in the side bar
- * @param {HTMLElement} btnsBar  - the side bar where the button will be displayed
+ * @param {HTMLElement} btnsContainer  - the div conainer to which the created html button will be appended
  * @param {string} btnClass  - the class that will be given to the button (it is usually the cssClass property of the button)
  * @param {boolean} clear - a boolean indicating whether or not the text already displayed (in containerDiv) should be cleared when the button is clicked. This parameter will only work (i.e., will be useful) if the onClick parameter is missing, because in this case the onClick parameter is set to showChildButtonsOrPrayers(), and clear is passed to it as a parameter. Otherwise, it is the function passed as the onClick paramater that will be called.
  * @param {Function} onClick - this is the function that will be attached to the 'click' eventListner of the button, and will be called when it is clicked
  * @returns {HTMLElement} - the html element created for the button
  */
-function createBtn(
-  btn: Button,
-  btnsBar: HTMLElement,
-  btnClass?: string,
-  clear: boolean = true,
+function createBtn(args:{
+  btn: Button;
+  btnsContainer: HTMLElement;
+  btnClass?: string;
+  clear?: boolean;
   onClick?: Function
-): HTMLElement {
-  if (!btn || !btn.label) {
+}): HTMLElement {
+  if (!args.btn || !args.btn.label) {
     console.log('The button is either undefined, or has no lable'); return
   };
+  if (!args.clear) args.clear = true;
   
   let newBtn: HTMLElement = document.createElement("button");
-  btnClass
-    ? newBtn.classList.add(btnClass)
-    : newBtn.classList.add(btn.cssClass);
-    newBtn.id = btn.btnID;
+  args.btnClass
+    ? newBtn.classList.add(args.btnClass)
+    : newBtn.classList.add(args.btn.cssClass);
+  
+  newBtn.id = args.btn.btnID;
 
   
   //Adding the labels to the button
-  if (btn.label[defaultLanguage]) editBtnInnerText(btn.label[defaultLanguage], defaultLanguage);
-  if (btn.label[foreingLanguage]) editBtnInnerText(btn.label[foreingLanguage], foreingLanguage);
+  if (args.btn.label[defaultLanguage]) editBtnInnerText(args.btn.label[defaultLanguage], defaultLanguage);
+  if (args.btn.label[foreingLanguage]) editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage);
   
-  btnsBar.appendChild(newBtn);
+  args.btnsContainer.appendChild(newBtn);
   //If no onClick parameter/argument is passed to createBtn(), and the btn has any of the following properties: children/prayers/onClick or inlinBtns, we set the onClick parameter to a function passing the btn to showChildButtonsOrPrayers
-  if (!onClick && (btn.children || btn.prayersSequence || btn.onClick))
-    onClick = () => showChildButtonsOrPrayers(btn, clear);
+  if (!args.onClick && (args.btn.children || args.btn.prayersSequence || args.btn.onClick))
+    args.onClick = () => showChildButtonsOrPrayers(args.btn, args.clear);
   //Else, it is the onClick parameter that will be attached to the eventListner
-  if(onClick) newBtn.addEventListener("click", (e)=>{
+  if(args.onClick) newBtn.addEventListener("click", (e)=>{
     e.preventDefault;
-    onClick();
+    args.onClick();
   });
 
   function editBtnInnerText(text: string, btnClass?: string) {
@@ -928,6 +987,7 @@ function getCopticReadingsDates(): string[][] {
     [
       "1703",
       "1301",
+      "3001",
       "1209",
       "1406",
       "1412",
@@ -1187,10 +1247,6 @@ function getCopticReadingsDates(): string[][] {
       "1212"
     ],
     [
-      "1705",
-      "3001"
-    ],
-    [
       "2009",
       "1008",
       "1206",
@@ -1403,7 +1459,7 @@ async function closeSideBar(sideBar: HTMLElement) {
 /**
  * Detects whether the user swiped his fingers on the screen, and opens or closes teh right or left side bars accordingly
  */
-function DetectFingerSwipe():string {
+function DetectFingerSwipe(): string {
   let direction:string;
   //Add finger swipe event
   let xDown = null;
@@ -1418,6 +1474,7 @@ function DetectFingerSwipe():string {
   }
 
   function handleTouchMove(evt: TouchEvent) {
+    if(!expandableBtnsPannel.classList.contains(hidden)) return; //If the expandable pannel is not hidden, it means we entered the settings pannel or we are choosing a prayer from a multiple choices screen. We do not associate any action to the figuer swipe
     evt.preventDefault;
     if (!xDown || !yDown) return;
 
@@ -1698,7 +1755,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
       });
     })();
 
-    if (checkIfTitle(row)) {
+    if (isTitlesContainer(row)) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
 
@@ -1994,7 +2051,7 @@ function collapseAllTitles(
   if (!htmlRows || htmlRows.length === 0) return;
   if (localStorage.displayMode === displayModes[1]) return;
   htmlRows.forEach((row: HTMLElement) => {
-    if (!checkIfTitle(row) && !row.classList.contains(hidden))
+    if (!isTitlesContainer(row) && !row.classList.contains(hidden))
       row.classList.add(hidden);
     else {
       row.dataset.isCollapsed = "true";
@@ -2056,45 +2113,46 @@ function selectElementsByDataRoot(
  * @param {Object{AR:string, FR:'string'}} btnLabels - An object containing the labels of the master button that the user will click to show a list of buttons, each representing a prayer in selectedPrayers[]
  * @param {string} masterBtnID - The id of the master button
  */
-async function showMultipleChoicePrayersButton(
-  filteredPrayers: string[][][],
-  btn: Button,
-  btnLabels: typeBtnLabel,
-  masterBtnID: string,
-  masterBtnDiv?: HTMLElement,
-  anchor?: HTMLElement
+async function showMultipleChoicePrayersButton(args:{
+  filteredPrayers: string[][][];
+  btn: Button;
+  btnLabels: typeBtnLabel;
+  masterBtnID: string;
+  masterBtnDiv?: HTMLElement;
+  anchor?: HTMLElement;
+}
 ) {
-  if (!anchor) console.log("anchor missing");
-  if (!masterBtnDiv && anchor) {
-    masterBtnDiv = document.createElement("div"); //a new element to which the inline buttons elements will be appended
-    anchor.insertAdjacentElement("afterend", masterBtnDiv); //we insert the div after the insertion position
+  if (!args.anchor) console.log("anchor missing");
+  if (!args.masterBtnDiv && args.anchor) {
+    args.masterBtnDiv = document.createElement("div"); //a new element to which the inline buttons elements will be appended
+    args.anchor.insertAdjacentElement("afterend", args.masterBtnDiv); //we insert the div after the insertion position
   }
 
   let prayersMasterBtn: Button, next: Button;
 
   //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
   prayersMasterBtn = new Button({
-    btnID: masterBtnID,
-    label: btnLabels,
+    btnID: args.masterBtnID,
+    label: args.btnLabels,
     children: await createInlineBtns(), //The inlineBtns are not added immediately, they are added later by createInlineBtns() below
-    pursue: false, //Important! we must keep it false in order to stop the showChildButtonsOrPrayers() from continuing the execution after calling the onClick() property of the master button. Otherwise, this will show again the inlineButtons of the master button
+    pursue: false, //!CAUTION: we must keep it false in order to stop the showChildButtonsOrPrayers() from continuing the execution after calling the onClick() property of the master button. Otherwise, this will show again the inlineButtons of the master button
     cssClass: inlineBtnClass,
     onClick: () => {
       let groupOfNumber: number = 4;
       //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
-      showInlineBtnsDiv(masterBtnID, true);
+      showExpandableBtnsPannel(args.masterBtnID, true);
       //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
       let newDiv = document.createElement("div");
-      newDiv.id = masterBtnID + "Container";
+      newDiv.id = args.masterBtnID + "Container";
       //Customizing the style of newDiv
-      newDiv.classList.add("inlineBtns");
+      newDiv.classList.add(inlineBtnsContainerClass);
       //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
       newDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(newDiv,undefined, 2);
 
       //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
-      inlineBtnsDiv.appendChild(newDiv);
+      expandableBtnsPannel.appendChild(newDiv);
 
-      inlineBtnsDiv.style.borderRadius = "10px";
+      expandableBtnsPannel.style.borderRadius = "10px";
       let startAt: number = 0;
       //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
       showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
@@ -2122,7 +2180,7 @@ async function showMultipleChoicePrayersButton(
           //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
           newDiv.innerHTML = "";
           //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
-          inlineBtnsDiv.querySelector("#" + next.btnID).remove();
+          expandableBtnsPannel.querySelector("#" + next.btnID).remove();
           //We set the starting index for the next 6 inline buttons
           startAt += groupOfNumber;
           //We call showGroupOfSixPrayers() with the new startAt index
@@ -2139,13 +2197,13 @@ async function showMultipleChoicePrayersButton(
         cssClass: inlineBtnClass,
         onClick: () => {
           //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
-          hideInlineButtonsDiv();
+          hideExpandableButtonsPannel();
           createFakeAnchor(prayersMasterBtn.btnID);
         },
       });
     }
 
-    createBtn(next, inlineBtnsDiv, next.cssClass, false, next.onClick); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 2 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
+    createBtn({btn:next, btnsContainer:expandableBtnsPannel, btnClass:next.cssClass, clear:false, onClick:next.onClick}); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 2 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
 
     for (
       let n = startAt;
@@ -2154,52 +2212,55 @@ async function showMultipleChoicePrayersButton(
     ) {
       //We create html buttons for the 1st 6 inline buttons and append them to newDiv
       childBtn = prayersMasterBtn.children[n];
-      createBtn(childBtn, newDiv, childBtn.cssClass, false, childBtn.onClick);
+      createBtn({btn:childBtn, btnsContainer:newDiv, btnClass:childBtn.cssClass, clear:false, onClick:childBtn.onClick});
     }
   }
   //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
-  createBtn(
-    prayersMasterBtn,
-    masterBtnDiv,
-    prayersMasterBtn.cssClass,
-    false,
-    prayersMasterBtn.onClick
-  );
-  masterBtnDiv.classList.add("inlineBtns");
-  masterBtnDiv.style.gridTemplateColumns = "100%";
+  createBtn({
+    btn:prayersMasterBtn,
+    btnsContainer:args.masterBtnDiv,
+    btnClass:prayersMasterBtn.cssClass,
+    clear:false,
+    onClick:prayersMasterBtn.onClick
+  });
+  args.masterBtnDiv.classList.add(inlineBtnsContainerClass);
+  args.masterBtnDiv.classList.add("masterBtnDiv");
+  args.masterBtnDiv.style.gridTemplateColumns = "100%";
 
   /**
    *Creates a new inlineBtn for each fraction and pushing it to fractionBtn.inlineBtns[]
    */
   async function createInlineBtns() {
     let btns: Button[] = [];
-    btns = filteredPrayers.map((prayerTable) => {
+    btns = args.filteredPrayers.map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
         btnID: splitTitle(prayerTable[0][0])[0], //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
           AR:
-            prayerTable[0][btn.languages.indexOf(defaultLanguage) + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
+            prayerTable[0][args.btn.languages.indexOf(defaultLanguage) + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
           FR:
-            prayerTable[0][btn.languages.indexOf(foreingLanguage) + 1], //same logic and comment as above
+            prayerTable[0][args.btn.languages.indexOf(foreingLanguage) + 1], //same logic and comment as above
         },
         prayersSequence: [splitTitle(prayerTable[0][0])[0]], //this gives the title of the table without '&C=*'
         prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable
-        languages: btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
+        languages: args.btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
         cssClass: "multipleChoicePrayersBtn",
         children: (() => {
-          if (btn.parentBtn && btn.parentBtn.children)
-            return [...btn.parentBtn.children];
+          if (args.btn.parentBtn && args.btn.parentBtn.children)
+            return [...args.btn.parentBtn.children];
         })(), //we give it btn as a child in order to show the buttons tree of btn.parentBtn.children in the leftSideBar menu
         onClick: () => {
+          let masterBtn:HTMLButtonElement= (Array.from(containerDiv.querySelectorAll('.' + inlineBtnClass)) as HTMLButtonElement[])
+          .find(child => child.id === args.masterBtnID);
           //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
-          hideInlineButtonsDiv();
+          hideExpandableButtonsPannel();
 
-          if (masterBtnDiv.dataset.displayedOptionalPrayer) {
+          if (masterBtn.dataset.displayedOptionalPrayer) {
             //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute, which  we had is stored as data-displayed-Fraction attribued of the masterBtnDiv
 
-            selectElementsByDataRoot(containerDiv, masterBtnDiv.dataset.displayedOptionalPrayer, {equal:true})
+            selectElementsByDataRoot(containerDiv, masterBtn.dataset.displayedOptionalPrayer, {equal:true})
               .forEach((div) => div.remove());
           }
 
@@ -2211,13 +2272,12 @@ async function showMultipleChoicePrayersButton(
                 languages:inlineBtn.languages,
                 clearContainerDiv: false,
                 clearRightSideBar: false,
-                position: { el: masterBtnDiv, beforeOrAfter: "afterend" }
+                position: { el: args.masterBtnDiv, beforeOrAfter: "afterend" }
               });
 
-          masterBtnDiv.dataset.displayedOptionalPrayer = splitTitle(
-            prayerTable[0][0]
-          )[0]; //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
-
+          masterBtn.dataset.displayedOptionalPrayer =
+            splitTitle(prayerTable[0][0])[0]; //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
+                  
           createdElements.forEach(htmlRow => 
           {
             //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
@@ -2231,7 +2291,7 @@ async function showMultipleChoicePrayersButton(
         applyAmplifiedText(createdElements);
 
           //We scroll to the button
-          createFakeAnchor(masterBtnID);
+          createFakeAnchor(args.masterBtnID);
         },
       });
       return inlineBtn;
@@ -2280,14 +2340,14 @@ function findTableInPrayersArray(
  * @param {string} status - a string that is added as a dataset (data-status) to indicated the context in which the inlineBtns div is displayed (settings pannel, optional prayers, etc.)
  * @param {boolean} clear - indicates whether the content of the inlineBtns div should be cleared when shwoInlineBtns is called. Its value is set to 'false' by default
  */
-function showInlineBtnsDiv(status: string, clear: boolean = false) {
+function showExpandableBtnsPannel(status: string, clear: boolean = false) {
   if (clear) {
-    inlineBtnsDiv.innerHTML = "";
+    expandableBtnsPannel.innerHTML = "";
   }
 
-  inlineBtnsDiv.style.backgroundImage = "url(./assets/PageBackgroundCross.jpg)";
-  inlineBtnsDiv.style.backgroundSize = "10%";
-  inlineBtnsDiv.style.backgroundRepeat = "repeat";
+  expandableBtnsPannel.style.backgroundImage = "url(./assets/PageBackgroundCross.jpg)";
+  expandableBtnsPannel.style.backgroundSize = "10%";
+  expandableBtnsPannel.style.backgroundRepeat = "repeat";
 
   /**
    * Appending an X button on the top right of inlineBtnsDiv
@@ -2301,24 +2361,24 @@ function showInlineBtnsDiv(status: string, clear: boolean = false) {
     close.style.right = "15px";
     close.addEventListener("click", (e) => {
       e.preventDefault;
-      hideInlineButtonsDiv();
+      hideExpandableButtonsPannel();
     });
-    inlineBtnsDiv.appendChild(close);
+    expandableBtnsPannel.appendChild(close);
   })();
-  inlineBtnsDiv.dataset.status = status; //giving the inlineBtnsDiv a data-status attribute
-  inlineBtnsDiv.classList.remove(hidden);
+  expandableBtnsPannel.dataset.status = status; //giving the inlineBtnsDiv a data-status attribute
+  expandableBtnsPannel.classList.remove(hidden);
 }
 /**
  * hides the inlineBtnsDiv by setting its zIndex to -1
  */
-function hideInlineButtonsDiv() {
-  inlineBtnsDiv.dataset.status = "inlineButtons";
-  inlineBtnsDiv.innerHTML = "";
-  inlineBtnsDiv.classList.add(hidden);
+function hideExpandableButtonsPannel() {
+  expandableBtnsPannel.dataset.status = "expandablePannel";
+  expandableBtnsPannel.innerHTML = "";
+  expandableBtnsPannel.classList.add(hidden);
 }
 
 function showSettingsPanel() {
-  showInlineBtnsDiv("settingsPanel", true);
+  showExpandableBtnsPannel("settingsPanel", true);
   let btn: HTMLElement;
 
   //Show InstallPWA button//We are not calling it any more
@@ -2329,7 +2389,7 @@ function showSettingsPanel() {
       role:"button",
       btnClass:"settingsBtn",
       innerText:"Install PWA",
-      btnsContainer:inlineBtnsDiv,
+      btnsContainer:expandableBtnsPannel,
       id: "InstallPWA",
       onClick:{
         event: "click",
@@ -2378,7 +2438,7 @@ function showSettingsPanel() {
     let datePicker: HTMLInputElement = createSettingBtn(
       {
       tag:"input",
-      btnsContainer:inlineBtnsDiv,
+      btnsContainer:expandableBtnsPannel,
       id: "datePicker",
       type:"date",
       onClick:
@@ -2592,7 +2652,8 @@ function showSettingsPanel() {
       if (actor.EN === "CommentText") return; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
       let show = JSON.parse(localStorage.getItem("showActors")).filter(
         (el) => el[0].AR === actor.AR
-      )[0][1] as boolean;
+      );
+      if(show.length>0) show = show[0][1] as boolean;
       btn = createSettingBtn(
         {tag:"button",
         role:"button",
@@ -2632,7 +2693,7 @@ function showSettingsPanel() {
   (async function showDisplayModeBtns() {
     let btnsContainer =createBtnsContainer('changeDisplayMode', {AR:'اختار نظام العرض', FR: 'Changer le mode d\'affichage', EN: 'Change the display mode'});
 
-    inlineBtnsDiv.appendChild(btnsContainer);
+    expandableBtnsPannel.appendChild(btnsContainer);
     displayModes
       .map((mode) => {
       btn = createSettingBtn(
@@ -2667,7 +2728,7 @@ function showSettingsPanel() {
     if (localStorage.editingMode != "true") return;
     let btnsContainer = createBtnsContainer('enterEditingMode', { AR: 'فعل تعديل النصوص', FR: 'Activer le mode édition', EN: '' });
 
-    inlineBtnsDiv.appendChild(btnsContainer);
+    expandableBtnsPannel.appendChild(btnsContainer);
     btn = createSettingBtn({
       tag:"button",
       role: "button",
@@ -2711,7 +2772,7 @@ function showSettingsPanel() {
           document
             .getElementById("homeImg")
             .insertAdjacentElement("afterend", select);
-          hideInlineButtonsDiv();
+          hideExpandableButtonsPannel();
           select.addEventListener("change", () =>
             startEditingMode({ select: select })
           );
@@ -2730,7 +2791,7 @@ function showSettingsPanel() {
     btnsContainer.style.justifyItems = "center";
     btnsContainer.style.height = 'fit-content';
     btnsContainer.style.width = 'fit-content';
-    inlineBtnsDiv.appendChild(btnsContainer);
+    expandableBtnsPannel.appendChild(btnsContainer);
     let labelsDiv = document.createElement('div');
     labelsDiv.classList.add('settingsLabel');
     btnsContainer.insertAdjacentElement('beforebegin', labelsDiv);
@@ -2894,10 +2955,10 @@ async function insertRedirectionButtons(
   if (!position.beforeOrAfter) position.beforeOrAfter = "beforebegin";
   let div = document.createElement("div");
   div.id = btnsContainerID;
-  div.classList.add("inlineBtns");
+  div.classList.add(inlineBtnsContainerClass);
   btns
     .map((btn) =>
-      div.appendChild(createBtn(btn, div, btn.cssClass)));
+      div.appendChild(createBtn({btn:btn, btnsContainer:div, btnClass:btn.cssClass})));
   position.el.insertAdjacentElement(position.beforeOrAfter, div);
   div.style.gridTemplateColumns = setGridColumnsOrRowsNumber(div, 3);
 }
@@ -2930,7 +2991,6 @@ function playingWithInstalation() {
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
   if (PrayersArray.length === 0) return console.log('PrayersArray is empty = ', PrayersArray);
-  else console.log('PrayersArray length = ', PrayersArray.length)
   PrayersArray.map((table) => {
     if (!table[0] || !table[0][0]) return;
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
@@ -2996,17 +3056,6 @@ function splitTitle(title): string[] {
   return title.split("&C=");
 }
 
-function consoleLogArrayTextInDefaultLanguage(title:string)
-{
-  let Table:string[][] = PrayersArray.filter(tbl=>tbl[0][0].startsWith(title))[0];
-  if (!Table) return console.log('Didn\'t find the table');
-  
-  Table.forEach(row => {
-    if (row[0] === Prefix.placeHolder)
-      return console.log('Placeholder & title =', row[row.length - 1]);
-    return console.log(row[row.length - 1])
-  })
-};
 /**
  * Hides the current slide, and unhides the next or previous slide based on the value of 'next'
  * @param {boolean} next - If true, the next slide is displayed. If false, the previous one is displayed. Its default value is true.
@@ -3015,50 +3064,48 @@ function consoleLogArrayTextInDefaultLanguage(title:string)
 function showNextOrPreviousSildeInPresentationMode(next:boolean = true){
   if (localStorage.displayMode !== displayModes[1]) return;
 
-  let children =Array.from(containerDiv.children) as HTMLDivElement[];
-  
-  
-  let currentSlide = containerDiv.querySelector('.Slide');
+  let children = Array.from(containerDiv.querySelectorAll('div[data-same-slide]')) as HTMLDivElement[];
+
+  let currentSlide = containerDiv.querySelector('.Slide') as HTMLDivElement;
 
   if (!currentSlide)
-    return showOrHideSlide(true, children.find(child=>child.dataset.sameSlide).dataset.sameSlide);
+  return showOrHideSlide(true, children[0].dataset.sameSlide); //If not slide is already displayed, we display the slide built from the 1st data-same-slide child of containerDiv, and return
 
   let sameSlide =
     children
-      .filter(div => div.dataset.sameSlide && div.dataset.sameSlide === currentSlide.id); //This is an array of the elements sharing the same data-same-slide attribute and are all inlcuded and displayed in the currentSlide (i.e., their data-same-slide === curentSlide.id)
-
- 
-  if(sameSlide.length<1) return console.log('We could not find divs having as data-same-slide the id of the currently displayed Slide')
+      .filter(div => div.dataset.sameSlide === currentSlide.id); //If a slide is already diplayed, we retrieve all the containerDiv children having the same data-same-slide attribute as the data-same-slide value stored in the currentSlide.id. 
+   
+  if(sameSlide.length<1) return console.log('We could not find divs having as data-same-slide the id of the currently displayed Slide'); //Noramly, this should not occur
   
-  let nextSlide: HTMLDivElement;
+  let nextDiv: HTMLDivElement;
 
-  selectNextSlide(sameSlide[sameSlide.length - 1]);
+  if(next) selectNextDiv(sameSlide[sameSlide.length - 1]); //We set nextSlide by passing the last element of sameSlide as argument
+  if(!next) selectNextDiv(sameSlide[0]); //We set nextSlide by passing the 1st element of sameSlide as argument
 
-  function selectNextSlide(slide:HTMLDivElement){
-    if (!slide) return console.log('slide is not defined');
-    if (next && slide.nextElementSibling)
-      nextSlide = slide.nextElementSibling as HTMLDivElement;
-    else if (next && slide.parentElement && slide.parentElement.classList.contains('Expandable'))
-      nextSlide = slide.parentElement.nextElementSibling as HTMLDivElement;
-    else if (!next && slide.previousElementSibling)
-      nextSlide = slide.previousElementSibling as HTMLDivElement;
-    else if (!next && slide.parentElement && slide.parentElement.classList.contains('Expandable'))
-      nextSlide = slide.parentElement.previousElementSibling as HTMLDivElement;
-    else nextSlide = undefined; //!CAUTION: we must set nextSlide to undefined if none of the above cases applies. Otherwise the function will loop infintely
+  function selectNextDiv(div:HTMLDivElement){
+    if (!div) return console.log('slide is not defined'); //This would occur if nextSlide was set to undefined
+    if (next && div.nextElementSibling)
+      nextDiv = div.nextElementSibling as HTMLDivElement;
+    else if (next && div.parentElement && div.parentElement.classList.contains('Expandable'))
+      nextDiv = div.parentElement.nextElementSibling as HTMLDivElement;
+    else if (!next && div.previousElementSibling)
+      nextDiv = div.previousElementSibling as HTMLDivElement;
+    else if (!next && div.parentElement && div.parentElement.classList.contains('Expandable'))
+      nextDiv = div.parentElement.previousElementSibling as HTMLDivElement;
+    else nextDiv = undefined; //!CAUTION: we must set nextSlide to undefined if none of the above cases applies. Otherwise the function will loop infintely
 
-    console.log('nextSlide = ', nextSlide);
-    
-    if(nextSlide && exclude(nextSlide, slide)) selectNextSlide(nextSlide);
+  
+     
+    if(nextDiv && exclude(nextDiv, currentSlide.id)) selectNextDiv(nextDiv);
   }
-  if (!nextSlide) return;
+  if (!nextDiv) return;
   showOrHideSlide(false); //We remove the currently displayed slide
-  showOrHideSlide(true, nextSlide.dataset.sameSlide); //We show the new slide
+  showOrHideSlide(true, nextDiv.dataset.sameSlide); //We show the new slide
 
-  function exclude(div:HTMLDivElement, previousDiv:HTMLDivElement):boolean {
+  function exclude(div: HTMLDivElement, currentDataSameSlide: string): boolean {
+    
     if (!div.dataset.sameSlide
-      ||!previousDiv.dataset.sameSlide
-      || div.dataset.sameSlide === previousDiv.dataset.sameSlide
-      || checkIfCommentOrCommentText(div)
+      || div.dataset.sameSlide === currentDataSameSlide
     )
       return true;
   }
@@ -3070,13 +3117,11 @@ function addKeyDownListnerToElement(htmlRow:Document, eventName:string, directio
 }
 
 function goToNextOrPreviousSlide(event?: KeyboardEvent, direction?:string) {
-  console.log('entred');
   if (!event && !direction) return;
   let code:string
   if(event) code = event.code;
   else if(direction === 'up') code = 'PageUp'; //next slide
   else if(direction === 'down') code = 'PageDown'; //previous slide
-  console.log(code)
   
   if (
           code === 'ArrowDown'
@@ -3247,22 +3292,38 @@ function makeExpandableButtonContainerFloatOnTop(
   btnContainer.style.justifySelf = "center";
 }
 
-function checkIfTitle(htmlRow: HTMLElement): boolean {
-  if (
-    htmlRow.classList.contains("Title") ||
-    htmlRow.classList.contains("SubTitle")
-  )
-    return true;
+/**
+ * Checks whether the html element passed as argument, has either the class 'Title', or 'SubTitle' and returns true if this is the case
+ * @param {HTMLElement} htmlRow - the hmtl element that we want to check whether it has 'Title' or 'SubTitle' in its classList
+ * @return {boolean} returns true if the html element has any of the titel classes
+ */
+function isTitlesContainer(htmlRow: HTMLElement): boolean {
+  return hasClass(htmlRow, ['Title', 'SubTitle']);
+}
+
+/**
+ * Checks whether the html element passed as argument, has any of the classes passed in the classList[] array. It returns true if this is the case
+ * @param {HTMLElement} htmlRow - the hmtl element that we want to check whether it has 'Title' or 'SubTitle' in its classList
+ * @param {string[]} classList - a list of the classes that we want to check if the html element includes in its classList
+ * @return {boolean} returns true if the html element has any of the titel classes
+ */
+function hasClass(htmlRow:HTMLElement | Element, classList:string[]){
+  if (!htmlRow) return;
+  return classList
+    .filter(className => htmlRow.classList.contains(className))
+    .length > 0;
+}
+
+function isInlineBtnsContainer(htmlRow: HTMLElement): boolean {
+  if (htmlRow && htmlRow.classList.contains(inlineBtnsContainerClass)) return true;
   else return false;
 }
 /**
  * Checks if the html element passed to it as an argument has 'Comments' or 'CommentText' in its classList
  * @param {HTMLDivElement} htmlRow - the html element that we want to check if it has any of the classes related to comments
  */
-function checkIfCommentOrCommentText(htmlRow:HTMLDivElement):boolean{
-  if (!htmlRow) return undefined;
-  else if(htmlRow.classList.contains('Comments') || htmlRow.classList.contains('CommentText')) return true;
-  else return false
+function isCommentContainer(htmlRow:HTMLDivElement | Element):boolean{
+  return hasClass(htmlRow, ['Comments', 'CommentText']);
 }
 
 /**
@@ -3276,7 +3337,7 @@ function hideOrShowAllTitlesInAContainer(
   //We hide all the titles from the right side Bar
 
   Array.from(container.children)
-    .filter((child: HTMLElement) => checkIfTitle(child))
+    .filter((child: HTMLElement) => isTitlesContainer(child))
     .forEach((child) => hideOrShowTitle(child as HTMLElement, hide));
 }
 /**

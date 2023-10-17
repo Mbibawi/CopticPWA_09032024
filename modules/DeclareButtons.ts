@@ -152,13 +152,13 @@ const btnMain: Button = new Button({
       //We create html elemements representing each of btnMain children. The created buttons will be appended to containerDiv directly
       btnMain.children
         .map(btn => {
-          return createBtn(
-            btn,
-            containerDiv,
-            'mainPageBtns',
-            true,
-            () => onClickBtnFunction(btn)
-          );
+          return createBtn({
+            btn:btn,
+            btnsContainer:containerDiv,
+            btnClass:'mainPageBtns',
+            clear:true,
+            onClick:() => onClickBtnFunction(btn)
+          });
         })
         .map(htmlBtn => {
           //For each btn created from the children of btnMain, we give it an image background from the images[] array of links
@@ -188,18 +188,18 @@ const btnMain: Button = new Button({
           //for each child button of btn
           .map(childBtn => {
             //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
-            createBtn(
-              childBtn,
-              containerDiv,
-              'mainPageBtns',
-              false,
-              () => onClickBtnFunction(childBtn)
-            )
+            createBtn({
+              btn:childBtn,
+              btnsContainer:containerDiv,
+              btnClass:'mainPageBtns',
+              clear:false,
+              onClick:() => onClickBtnFunction(childBtn)
+            })
               .style.backgroundImage = backgroundImage;
             
           });
       
-        createBtn(btnMain, containerDiv, 'mainPageBtns').style.backgroundImage = images[0];//Finlay, we create and extra html button for btnMain, in order for the user to be able to navigate back to the btnMain menu of buttons
+        createBtn({btn:btnMain, btnsContainer:containerDiv, btnClass:'mainPageBtns'}).style.backgroundImage = images[0];//Finlay, we create and extra html button for btnMain, in order for the user to be able to navigate back to the btnMain menu of buttons
           
       };
     })();
@@ -705,17 +705,17 @@ const btnMassStBasil: Button = new Button({
       if (filtered.length === 0) filtered = PrayersArrays.CommunionPrayersArray.filter(tbl => selectFromMultiDatedTitle(tbl[0][0], copticFeasts.AnyDay) === true);
       
       
-      showMultipleChoicePrayersButton(
-        filtered,
-        btn,
-        {
+      showMultipleChoicePrayersButton({
+        filteredPrayers: filtered,
+        btn: btn,
+        btnLabels: {
           AR: 'مدائح التوزيع',
           FR: 'Chants de la communion'
         },
-        'communionChants',
-        undefined,
-        psalm[psalm.length-1] as HTMLElement
-      )
+        masterBtnID: 'communionChants',
+        anchor: psalm[psalm.length - 1] as HTMLElement
+      });
+
     })();
 
     (function insertLitaniesIntroductionFromOtherMasses() {
@@ -1223,11 +1223,11 @@ const btnMassUnBaptised: Button = new Button({
       })();
 
       let masterBtnDiv = document.createElement('div');//This is the div that will contain the master button which shows or hides the Book of Hours sub buttons
-      masterBtnDiv.classList.add('inlineBtns');
+      masterBtnDiv.classList.add(inlineBtnsContainerClass);
       masterBtnDiv.id = 'masterBOHBtn';
 
       let btnsDiv: HTMLDivElement = document.createElement('div');//This is the div that contains the sub buttons for each Hour of the Book of Hours
-      btnsDiv.classList.add('inlineBtns');
+      btnsDiv.classList.add(inlineBtnsContainerClass);
       btnsDiv.classList.add(hidden);
 
       let masterBtn = new Button({
@@ -1249,7 +1249,7 @@ const btnMassUnBaptised: Button = new Button({
       
       masterBtnDiv
         .prepend(
-          createBtn(masterBtn, masterBtnDiv, 'inlineBtn', true, masterBtn.onClick)
+          createBtn({btn:masterBtn, btnsContainer:masterBtnDiv, btnClass:inlineBtnClass, clear:true, onClick:masterBtn.onClick})
         );//We add the master button to the bookOfHoursMasterDiv
 
       let createdElements: [HTMLElement, HTMLDivElement];
@@ -2188,14 +2188,13 @@ function showFractionPrayersMasterButton(btn: Button, anchor:HTMLElement, label:
       if (selectFromMultiDatedTitle(table[0][0], date) === true && !filtered.has(table)) filtered.add(table);
     });
   };
-  showMultipleChoicePrayersButton(
-    Array.from(filtered),
-    btn,
-    label,
-    masterBtnID,
-    undefined,
-    anchor
-  );
+  showMultipleChoicePrayersButton({
+    filteredPrayers:Array.from(filtered),
+    btn:btn,
+    btnLabels:label,
+    masterBtnID:masterBtnID,
+    anchor:anchor
+  });
 }
 /**
  * Filters the array containing the gospel text for each liturgie (e.g., Incense Dawn, Vepspers, etc.) and returns the text of the gospel and the psaume. The fil
@@ -2421,7 +2420,7 @@ function addExpandablePrayer(args:{
   if (!args.insertion) return console.log('btnID = ', args.btnID);
 
   let btnDiv = document.createElement("div"); //Creating a div container in which the btn will be displayed
-  btnDiv.classList.add("inlineBtns");
+  btnDiv.classList.add(inlineBtnsContainerClass);
 
   args.insertion.insertAdjacentElement("beforebegin", btnDiv); //Inserting the div containing the button as 1st element of containerDiv
 
@@ -2436,7 +2435,7 @@ function addExpandablePrayer(args:{
 return createBtnAndExpandableDiv();
   
 function createBtnAndExpandableDiv():[HTMLElement, HTMLDivElement]{
-  let createdButton:HTMLElement = createBtn(btnExpand, btnDiv, btnExpand.cssClass, true, btnExpand.onClick); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+  let createdButton:HTMLElement = createBtn({btn:btnExpand, btnsContainer:btnDiv, btnClass:btnExpand.cssClass, clear:true, onClick:btnExpand.onClick}); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
 
   createdButton.classList.add('expand'); //We need this class in order to retrieve the btn in Display Presentation Mode
 
@@ -2467,7 +2466,7 @@ function createBtnAndExpandableDiv():[HTMLElement, HTMLDivElement]{
 
   Array.from(prayersContainerDiv.children)
   .filter(child =>
-    checkIfTitle(child as HTMLElement))
+    isTitlesContainer(child as HTMLElement))
   .forEach(child =>{
     addDataGroupsToContainerChildren(child.classList[child.classList.length - 1], prayersContainerDiv);
   });

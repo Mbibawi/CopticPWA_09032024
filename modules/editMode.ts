@@ -1124,8 +1124,8 @@ function showBtnInEditingMode(btn: Button) {
 
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;
-    hideInlineButtonsDiv();
-    inlineBtnsDiv.innerHTML = "";
+    hideExpandableButtonsPannel();
+    expandableBtnsPannel.innerHTML = "";
     containerDiv.style.gridTemplateColumns = "100%";
   if (btn.onClick) btn.onClick();
   
@@ -1185,7 +1185,7 @@ function showBtnInEditingMode(btn: Button) {
       //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
       if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
       //We create the html element reprsenting the childBtn and append it to btnsDiv
-      createBtn(childBtn, sideBarBtnsContainer, childBtn.cssClass);
+      createBtn({btn:childBtn, btnsContainer:sideBarBtnsContainer, btnClass:childBtn.cssClass});
     });
   }
 
@@ -1211,8 +1211,7 @@ function showBtnInEditingMode(btn: Button) {
     && !sideBarBtnsContainer.querySelector("#" + 'settings')
    && !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
   ) {
-    createBtn(btnMain, sideBarBtnsContainer, btnMain.cssClass);
-
+    createBtn({btn:btnMain, btnsContainer:sideBarBtnsContainer, btnClass:btnMain.cssClass});
   }
 
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);

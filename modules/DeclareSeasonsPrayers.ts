@@ -99,8 +99,11 @@ allSeasonalPrayers
 setClosingHymn();
 };
 
-function setSeasonalText(arrayAll: seasonalPrayers[], season:string):seasonalPrayers {
-    let found:seasonalPrayers;
+function setSeasonalText(arrayAll: seasonalPrayers[], season: string): seasonalPrayers {
+    if (!arrayAll) return;
+    let found: seasonalPrayers;
+    //If we are a Sunday, giAki will be ge aktonk as during the Pentecostal Days
+    if(todayDate.getDay() ===0) return  arrayAll.find(resp => resp.Season === Seasons.PentecostalDays);  
         
     found = arrayAll.find(resp => resp.Season === season);
 

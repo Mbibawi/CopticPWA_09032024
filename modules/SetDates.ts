@@ -331,14 +331,15 @@ function checkForUnfixedEvent(
 	} else if (
 		difference < 0 && Math.abs(difference) > 49
 		&& (
-			Number(copticMonth) < 11
+			Number(copticMonth) === 9
+		||	
+			Number(copticMonth) === 10
 		||
 			(Number(copticMonth) === 11 && Number(copticDay) < 5)
 		)
 	) {
 		//!CAUTION: this must come after all the cases preceding the begining of the Great Lent (otherwise, the 3rd condition: copticMonth <11, will be fulfilled and we will fall into this else if statement)
 		//We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
-			//I didn't find specific readings for this period. I assume there are no specific reading and we follow the ordinary readings. This needs however to be checked that's why I kept this "else if" case
 			Season = Seasons.ApostlesFast;
 	} 
 };
