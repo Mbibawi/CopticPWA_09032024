@@ -17,7 +17,8 @@ async function setCopticDates(today?: Date) {
 	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
 	if(checkIf29thOfCopticMonth()) copticFeasts.theTwentyNinethOfCopticMonth = copticDate;
 
-	setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
+	await setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
+	reloadScriptToBody(['PrayersArray']);
 	//Showing the dates and the version
 	showDates();
 	createFakeAnchor('homeImg');
@@ -83,91 +84,7 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
 	}
 	return [[day,month, year], dayString + monthString]
 }
-/**
- * Converts the Gregorian date to a string expressing the coptic date (e.g.: "0207")
- * @param {Date} date  - a date value expressing any Gregorian calendar date
- * @returns {string} - a string expressing the coptic date
- */
-function convertGregorianDateToCopticDate_OldNotUsedAnyMore(date: Date): string {
-	let day: number = date.getDate();
-	let month: number = date.getMonth() + 1; //we add one because the months count starts at 0
-	let coptMonth: number, coptDay: number, dm: number[];
-	if (month === 1) {
-		day < 9 ? (dm = [22, 4]) : (dm = [-8, 5]);
-	} else if (month === 2) {
-		day < 7 ? (dm = [23, 5]) : (dm = [-7, 6]);
-	} else if (month === 3) {
-		day < 10 ? (dm = [21, 6]) : (dm = [-9, 7]);
-		//console.log("march ", day + dm[0]);
-	} else if (month === 4) {
-		day < 9 ? (dm = [23, 7]) : (dm = [-8, 8]);
-	} else if (month === 5) {
-		day < 9 ? (dm = [23, 8]) : (dm = [-8, 9]);
-	} else if (month === 6) {
-		day < 8 ? (dm = [23, 9]) : (dm = [-7, 10]);
-	} else if (month === 7) {
-		day < 8 ? (dm = [23, 10]) : (dm = [-7, 11]);
-	} else if (month === 8) {
-		day < 7 ? (dm = [24, 11]) : (dm = [-6, 12]);
-	} else if (month === 9) {
-		if (day < 6) {
-			dm = [25, 12];
-		} else if (
-			(day > 5 && day < 11) ||
-			(day === 11 && date.getFullYear() % 4 === 3)
-		) {
-			//the 13th coptic month gets an additional 6th day every 4 years. It falls 1 year before the leap year of the Gregorian calendar. When we divide by 4, the remainder is 3
-			dm = [-5, 13];
-		} else {
-			dm = [-10, 1];
-		}
-	} else if (month === 10) {
-		day < 11 ? (dm = [20, 1]) : (dm = [-10, 2]);
-	} else if (month === 11) {
-		day < 11 ? (dm = [21, 2]) : (dm = [-9, 3]);
-	} else if (month === 12) {
-		day < 10 ? (dm = [21, 3]) : (dm = [-9, 4]);
-	}
-	setCopticDayAndMonth(dm);
-	function setCopticDayAndMonth(daysMonth: number[]) {
-		coptDay = day + daysMonth[0];
-		coptMonth = daysMonth[1];
-	}
-	if (coptDay > 30) {
-		console.log("copt day > 30", coptDay, coptMonth);
-		coptDay = 1;
-		coptMonth = coptMonth + 1;
-	}
-	if (date.getFullYear() % 4 === 0) {
-		console.log("we are in a leap year");
-		// we first check that we are in a leap year. Then we check that the day is after Feb 28th. If this is the case, we add 1 to the coptDay
-		console.log(
-			"original coptic day and month are: ",
-			coptDay,
-			coptMonth
-		);
-		date > new Date(date.getFullYear().toString() + "-02-28") &&
-		month === 2
-			? (coptDay = coptDay - 1)
-			: coptDay;
-		if (coptDay === 0) {
-			coptDay = 30;
-			coptMonth = coptMonth - 1;
-		}
-	};
 
-	function getTwoDigitsStringFromNumber(n: number): string {
-		if (n < 10) {
-			return "0" + n.toString();
-		} else {
-			return n.toString();
-		}
-	};
-	return (
-		getTwoDigitsStringFromNumber(coptDay) +
-		getTwoDigitsStringFromNumber(coptMonth)
-	);
-};
 /**
  * Sets the coptic readings date according to the Katamaras
  * @param {string} coptDate  - a string expressing the coptic day and month (e.g.: "0306")
@@ -355,8 +272,8 @@ function isItSundayOrWeekDay(
 	weekDay: number
 ): string {
 	 if (weekDay === 0) {
-		//we are a Sunday
-		return period + checkWhichSundayWeAre(days, weekDay);
+		 //we are a Sunday
+		 return period + checkWhichSundayWeAre(days, weekDay);
 	} else {
 		// we are not a sunday
 		return period + days.toString();
@@ -442,12 +359,12 @@ function showDates(dateDiv: HTMLDivElement = document.getElementById('dateDiv') 
  * @param {number} days  - the number of days by which the user wants to jumb forward or back
  * @returns {Date} - the Gregorian date as set by the user
  */
-function changeDate(
+async function changeDate(
 	date?: Date,
 	next: boolean = true,
 	days: number = 1,
 	showAlert:boolean = true
-  ): Date {
+  ): Promise<Date> {
 	if (date) {
 		if (checkIfDateIsToday(date)) todayDate = new Date();
 		else	todayDate.setTime(new Date(date).getTime());
@@ -458,8 +375,7 @@ function changeDate(
 		todayDate.setTime(todayDate.getTime() - days * calendarDay);
 	  }
 	}
-	setCopticDates(todayDate);
-	reloadScriptToBody(['PrayersArray']);
+	await setCopticDates(todayDate);
 	Object.entries(PrayersArrays)
 		.forEach((array) => PrayersArrays[array[0]] = []);
 	populatePrayersArrays();

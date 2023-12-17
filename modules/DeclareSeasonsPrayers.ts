@@ -91,19 +91,20 @@ closingHymn ={} as seasonalPrayers;
 
 let allSeasonalPrayers:[seasonalPrayers, seasonalPrayers[]][] = [[giaki, giakiAll]];
 
-function setSeasonalTextForAll(season:string){
+async function setSeasonalTextForAll(season:string){
 allSeasonalPrayers
     .forEach(seasonal => {
        Object.assign(seasonal[0], setSeasonalText(seasonal[1], season));
     });
-setClosingHymn();
+    setClosingHymn();
+    
 };
 
 function setSeasonalText(arrayAll: seasonalPrayers[], season: string): seasonalPrayers {
     if (!arrayAll) return;
     let found: seasonalPrayers;
     //If we are a Sunday, giAki will be ge aktonk as during the Pentecostal Days
-    if(todayDate.getDay() ===0) return  arrayAll.find(resp => resp.Season === Seasons.PentecostalDays);  
+    if(todayDate.getDay() ===0) return arrayAll.find(resp => resp.Season === Seasons.PentecostalDays);  
         
     found = arrayAll.find(resp => resp.Season === season);
 
@@ -114,7 +115,8 @@ function setSeasonalText(arrayAll: seasonalPrayers[], season: string): seasonalP
         found = arrayAll.find(resp => resp.Season === Seasons.CrossFeast);
         
     if (!found) 
-    found = arrayAll.find(resp => resp.Season === Seasons.NoSeason);
+        found = arrayAll.find(resp => resp.Season === Seasons.NoSeason);
+    
     if (found) return found;
 }
 

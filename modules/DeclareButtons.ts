@@ -305,13 +305,22 @@ const btnIncenseDawn: Button = new Button({
   onClick: (): string[]=> {
     btnIncenseDawn.prayersSequence =
       [...IncensePrayersSequence]
-        .filter(title => !title.startsWith(Prefix.incenseVespers));   //We will remove all the Incense Vespers titles from the prayersSequence Array
+        .filter(title =>!title.startsWith(Prefix.incenseVespers));   //We will remove all the Incense Vespers titles from the prayersSequence Array
 
+    if (todayDate.getDay() === 6)
+    //If we are a Saturday, we pray only the 'Departed Litany', we will hence remove the 'Sick Litany' and the 'Travellers Litany'
+      btnIncenseDawn.prayersSequence.splice(btnIncenseDawn.prayersSequence.indexOf(Prefix.incenseDawn+ 'SickPrayer&D=$copticFeasts.AnyDay'), 3, Prefix.incenseVespers + 'DepartedPrayer&D=$copticFeasts.AnyDay');
+    else if (todayDate.getDay() === 0 || lordFeasts.indexOf(copticDate) > -1)
+      //If we are a Sunday or the day is a Lord's Feast, or the oblation is present, we remove the 'Travellers Litany' and keep the 'Sick Litany' and the 'Oblation Litany'
+      btnIncenseDawn.prayersSequence.splice(btnIncenseDawn.prayersSequence.indexOf(Prefix.incenseDawn + 'TravelersPrayer&D=$copticFeasts.AnyDay'), 1);
+    else;
 
     btnIncenseDawn.prayersArray = [
       ...PrayersArrays.CommonPrayersArray,
       ...PrayersArrays.IncensePrayersArray.filter(table=>!table[0][0].startsWith(Prefix.incenseVespers)),
     ];//We need this to be done when the button is clicked, not when it is declared, because when declared, CommonPrayersArray and IncensePrayersArray are empty (they are popultated by a function in "main.js", which is loaded after "DeclareButtons.js")
+
+    if (todayDate.getDay() === 6) btnIncenseDawn.prayersArray.push(PrayersArrays.IncensePrayersArray.find(table => table[0][0].startsWith(Prefix.incenseVespers + 'DepartedPrayer&D=$copticFeasts.AnyDay')));//i.e., if we are a Saturday, we include the 'Departed Litany' in the prayersArray of the button
 
     scrollToTop();
     return btnIncenseDawn.prayersSequence;
@@ -1262,7 +1271,7 @@ const btnMassUnBaptised: Button = new Button({
 
           InsertHourFinalPrayers(btn); //Inserting Kyrielison 41 times, Agios, Holy God of Sabaot, etc.
 
-          //We will filter the btn.prayersSequence in order to keep only those prayers tables (string[][]) matching the btn.prayersSequence order
+          //We will filter the btn.prayersArray in order to keep only those prayers tables (string[][]) matching the btn.prayersSequence order
           let filteredPrayers:string[][][] =  btn.prayersSequence
           .map(title => {
             return btn.prayersArray
@@ -1813,11 +1822,11 @@ const btnBookOfHours:Button =  new Button({
 
               litanies
                 .forEach(tblTitle => {
-                  if(litanies.indexOf(tblTitle) === 0) return; //this is the title of the litanies section
+                  if(litanies.indexOf(tblTitle) === 0 || litanies.indexOf(tblTitle) === litanies.length -1) return; //this is either the title of the litanies section, or the last litany. In both cases we do not insert anything after those paragraphs
                   if (litanies.indexOf(tblTitle) === 1
                     || litanies.indexOf(tblTitle) === 4)
                     prayer = ZoksaPatri; //If it is the 1st or 4th litany (litanies[0] is the title), we insert Zoksa patry
-                  else if (litanies.indexOf(tblTitle) !== litanies.length - 1) prayer = Kenin; //If it is not the last litnay
+                  else prayer = Kenin; //If it is not the first nor the 4th litany, the insert 'Kenin'
                     
                     btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, prayer)
                   });
@@ -2281,7 +2290,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
       sequence
         .map(cymbalsTitle => 
         {
-          if (cymbalsTitle.startsWith('&Insert='))
+          if (cymbalsTitle.startsWith('&Insert=')) //i.e., if this is the placeholder element that we inserted for the current feast or Season
             cymbalTable = PrayersArrays.CymbalVersesPrayersArray
               .find(tbl =>
                 selectFromMultiDatedTitle(
@@ -2291,7 +2300,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
 
           else cymbalTable = findTableInPrayersArray(cymbalsTitle, PrayersArrays.CymbalVersesPrayersArray, { equal: true }) as string[][];
           
-          cymbals.push(cymbalTable);
+            if(cymbalTable) cymbals.push(cymbalTable);
         }
         );
     if (cymbals.length <1) return console.log('cymbals= ', cymbals);
@@ -2388,7 +2397,12 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
       container: btn.docFragment
     });
   })();
-
+/**
+ * Inserts a new element in the btn.prayersSequence[]. This elment will serve as a placeholder to insert the relevant prayers (Cymbal Verses or Doxologies) for the current season or feast
+ * @param {string[]} sequence - the btn's prayers sequence in which the new placeholder element will be inserted
+ * @param {string} feastString - the string representing the feast or the season
+ * @param {number} index - the index at which the new placeholder element will be inserted.
+ */
   function insertFeastInSequence(sequence:string[], feastString:string, index:number) {
     if (lordFeasts.indexOf(feastString) < 0
       && Season !== Seasons.PentecostalDays)

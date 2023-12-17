@@ -4,14 +4,19 @@ let sequence: string[] = [];
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
  */
-function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, arrayName?:string, tableTitle?: string }) {
+function startEditingMode(args: {
+  select?: HTMLSelectElement,
+  clear?: boolean,
+  arrayName?: string,
+  tableTitle?: string
+}) {
 
   let tablesArray: string[][][];
 
   if (args.clear !== false) args.clear = true;
   
   if(args.select && !args.arrayName && !args.tableTitle){
-    //We deal with all the cases where a select element is passed as argument to the function.
+    //We deal with all the cases where a select element is passed as argument to the function. We exclude the case where arrayName is provided as an argument and the case where the tableTitle is provided.
 
     args.arrayName = args.select.selectedOptions[0].innerText;
 
@@ -20,7 +25,7 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
     if (args.arrayName === args.select.options[1].innerText)  addNewTable();
 
     if (args.arrayName === args.select.options[2].innerText) {
-      //under development
+      //under development : the user will provide a function and the function will be called when he press enter
       args.arrayName = prompt('Provide the function and the parameters', args.arrayName);
       if (!args.arrayName) return;
       if (args.arrayName.includes('Fun(')) eval(args.arrayName);
@@ -29,7 +34,7 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
     else  editSpecificTable();
   }
 
-  else if (!args.select && args.arrayName && args.tableTitle) editSpecificTable();
+  else if (!args.select && args.arrayName && args.tableTitle) tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
   
   if (!args.arrayName) return;
 
@@ -43,67 +48,57 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
   containerDiv.style.gridTemplateColumns = '100%';
   containerDiv.dataset.specificTables = 'false';
 
-  let languages = getLanguages(args.arrayName);
-  if (!languages) languages = allLanguages;
+  let languages = getLanguages(args.arrayName) || allLanguages;
 
   function addNewTable() {
       args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
-      languages = []; //We empty the languages array and will fill it according to what the user will provide
-      let langs = prompt('Provide the sequence of the languages columns', 'COP, FR, EN, CA, AR');
+    languages = prompt('Provide the sequence of the languages columns', 'COP, FR, CA, AR').split(', ') || getLanguages(args.arrayName);
+    
       tablesArray = [
         [
           ['NewTable&D=$copticFeasts.AnyDay&C=Title']
         ]
-      ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
-      let tbl1 = tablesArray[0];
-      langs
-        .split(', ')
-        .forEach(lang => {
-          tbl1[0] //this is the 1st row of the table, we add the languages as elements to this row, which gives us a row like ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'AR', 'FR', etc.]
-            .push(lang);
-          languages
-            .push(lang);//We add the languages to the 'languages'
-        });
+    ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
     
-      tbl1
-        .push([...tbl1[0]]); //We add a second row to the table
+    tablesArray[0][0].push(...languages);//We push the languages to the first row of the first table in tablesArray. This will give us a first row like  ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', etc.]
     
-      tbl1[tbl1.length - 1][0] = tbl1[tbl1.length - 1][0].split('&C=')[0]; //We remove the '&C=Title' from the second row
+    
+      let secondRow:string = tablesArray[0][tablesArray[0].push(...tablesArray[0])-1][0]; //We add a second row to the table. the push() method returns the new length of the  array  after the new row has been pushed, we use the new length  to reference the first element of the 2nd row in order to remove the '&C=' from its end
+    
+      secondRow = secondRow.split('&C=')[0]; //We remove the '&C=Title' from the second row
   };
 
  
-  function editSpecificTable(){
+  function editSpecificTable():string[][][] | void{
       if (!args.tableTitle //args.tableTitle was not already provided as argument
         && confirm('Do you want to edit a single or specific table(s) in the array?'))
         args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
 
     if (!args.tableTitle) return; //If despite having confirmed that he wants to edit a specifc table, the tableTitle he provided is not valid, we assume he cancelled or changed his mind, and we return
     
-    //In all the cases where at this point, the tableTitle is provided (whether when the function was called, or when the user was prompted), we set specificTables to true
-    if (args.tableTitle) containerDiv.dataset.specificTables = 'true';
-
     let titles = args.tableTitle
-        .split(', ')
+      .split(', '); //if tableTitle is a comma separated string, it means there are multiple table titles provided
+    
     if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
-    if (args.arrayName && !tablesArray) tablesArray = eval(args.arrayName);
-    let temp =
-      titles
-        .map(title => {
-          if (title.startsWith('Prefix.')) title = eval(title);
-          if (!title) return;
-          let filtered = tablesArray.filter(tbl => tbl[0][0].includes(title));
-          if (filtered.length > -1) filtered = filtered.filter(tbl => tbl);
-          return filtered
-        });
-    tablesArray = [];
-    temp
-      .forEach(tblsArray =>
-        tblsArray
-          .forEach(tbl => tablesArray.push(tbl)));
-     
 
-    console.log('tablesArray = ', tablesArray);
-      if (tablesArray.length < 1) return alert('There is no table in the array matching the title you provided');
+    if (!tablesArray) tablesArray = eval(args.arrayName); //No need to check that arrayName is provided because editSpecificTable is called only when arrayName is provided
+
+    let matchingTables: string[][][] = [];
+
+      titles
+        .forEach(title => {
+          if (title.startsWith('Prefix.')) title = eval(title);
+
+          if (!title) return;
+
+          matchingTables.push(...tablesArray.filter(tbl => tbl[0][0].includes(title)));
+        });
+
+    if (matchingTables.length < 1) return alert('There is no table in the array matching the title you provided');
+
+    //In all the cases, if matchingTables is not empty, we set the containerDiv attribute "data-specificTables" to true
+    containerDiv.dataset.specificTables = 'true'; 
+    return matchingTables
   };
 
 
@@ -111,7 +106,7 @@ function startEditingMode(args: { select?: HTMLSelectElement, clear?: boolean, a
     if (!tablesArray) tablesArray = eval(args.arrayName);
     if (!tablesArray) return console.log('tablesArray was not set');
     
-    localStorage.displayMode === displayModes[0];
+    localStorage.displayMode === displayModes[0] //We make sure that we are in the 'Normal' display mode before showing the text of the tables;
 
     showTables({
       tablesArray: tablesArray,
@@ -144,7 +139,6 @@ function showTables(args: {
   if (args.isPlaceHolder !== true) args.isPlaceHolder = false;
 
   if (args.clear === true) containerDiv.innerHTML = '';
-  let htmlRow: HTMLDivElement;
   //We create an html div element to display the text of each row of each table in tablesArray
   args.tablesArray
     .forEach(table => {
@@ -152,7 +146,7 @@ function showTables(args: {
       table
         .forEach(row => {
     if (!row) return;
-    htmlRow = createHtmlElementForPrayerEditingMode({
+    createHtmlElementForPrayerEditingMode({
       tblRow:row,
       languagesArray: args.languages,
       position: args.position,
@@ -168,16 +162,16 @@ addEdintingButtons();
 setCSS(Array.from(args.container.querySelectorAll("div.Row")));
 //Showing the titles in the right side-bar
 
+  let titles = Array.from(args.container.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[] || [];
 //removing the minus sign at the begining of the title
-Array.from(args.container.querySelectorAll("div.Title, div.SubTitle"))
+titles
   .forEach(div =>
     Array.from(div.getElementsByTagName('P'))
     .forEach((p: HTMLElement) =>
       p.innerText = p.innerText.replaceAll(String.fromCharCode(plusCharCode + 1), '')
   ));
 
-showTitlesInRightSideBar(Array.from(
-  args.container.querySelectorAll("div.Title, div.SubTitle")) as HTMLDivElement[]);
+showTitlesInRightSideBar(titles);
 }
 
 /**
@@ -669,30 +663,32 @@ function createHtmlElementForPrayerEditingMode(args: {
     dataRoot: string,
     actorClass: string;
 
-  htmlRow = document.createElement("div");
+  htmlRow = document.createElement('div');
   if (args.arrayName) htmlRow.dataset.arrayName = args.arrayName;
  
   if(!args.isPlaceHolder){
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
   htmlRow.title = args.tblRow[0];
   htmlRow.dataset.root = splitTitle(args.tblRow[0])[0];
-  htmlRow.dataset.group = htmlRow.dataset.root;
-   actorClass = splitTitle(args.tblRow[0])[1];
-  if (actorClass) htmlRow.classList.add(actorClass);
+    htmlRow.dataset.group = htmlRow.dataset.root;
+    actorClass = splitTitle(args.tblRow[0])[1] ||'';
+  htmlRow.classList.add(actorClass);
   }
   else if (args.isPlaceHolder) {
-    args.tblRow = [...args.tblRow];
+    args.tblRow = [...args.tblRow]; //We create a copy of the row
     let children = Array.from(args.container.children) as HTMLDivElement[];
+    let lastChild = children[children.length - 1];
     htmlRow.classList.add('PlaceHolder');
     htmlRow.dataset.isPlaceHolder = args.tblRow[1]; //This is the title of the table referrenced by the placeHolder row
-    htmlRow.dataset.root = children[children.length - 1].dataset.root;
-    htmlRow.title = children[children.length - 1].title;
-    htmlRow.dataset.goup = children[children.length - 1].dataset.group;
+    htmlRow.dataset.root = lastChild.dataset.root; //We add as data-root the data-root of the previous element appended to the container. We do this because we want the placeHolder div to be part of the main table and be retrieved with the same data root and title
+    htmlRow.title = lastChild.title; //We do the same for the data-title attribute as for the data-root. 
+    htmlRow.dataset.goup = lastChild.dataset.group; //Same as above
     htmlRow.style.backgroundColor = 'grey';
     let copyLangs = [...args.languagesArray];
+
     htmlRow.addEventListener('click',
       () => {
-        let referrencedTblTitle: string = args.tblRow[1];
+        let referrencedTblTitle: string = args.tblRow[1]; //When tblRow is a 'PlaceHoder', it has 2 elements: the first of which is  'Prefix.placeHolder' and the second (i.e., args.tblRow[1]) is the title of the table that is refrenced
       let shown =
         Array.from(containerDiv.querySelectorAll('div'))
         .filter(div => div.dataset.isPlaceHolder === referrencedTblTitle);
@@ -732,7 +728,7 @@ function createHtmlElementForPrayerEditingMode(args: {
           });
       })
     });
-    args.languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been add to the placeHolder row
+    args.languagesArray = ['FR', 'FR', 'FR'];//! The languagesArray must be changed after the addEventListner has been added to the placeHolder row
   };
 
   if (actorClass && actorClass.includes("Title")) {
@@ -748,7 +744,7 @@ function createHtmlElementForPrayerEditingMode(args: {
     //x starts from 1 because prayers[0] is the id
     if (
       actorClass &&
-      (actorClass == "Comment" || actorClass == "CommentText")
+      (actorClass === "Comment" || actorClass === "CommentText")
     ) {
       //this means it is a comment
       x == 1 ? (lang = args.languagesArray[1]) : (lang = args.languagesArray[3]);
