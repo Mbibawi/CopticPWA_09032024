@@ -123,18 +123,14 @@ function checkWhichSundayWeAre(day: number, theWeekDay:number): string
 	if (theWeekDay !== 0) return;
 	let n: number = day;
 	if (Season === Seasons.GreatLent)
+		//The counting of the nubmer of days during the Great Lent starts from the Saturday preceding the first day of the Great Lent (which is a Monday). We hence substract 2 from the number of days elapsed in order to count for the 2 extra days added to the actual number of days elapsed since the begining of the Great Lent
 		n = n - 2;
-	n = Math.ceil(n / 7);
+		n = Math.ceil(n / 7);
 	let sunday: string = n.toString();
-	if (n === 1 || (n > 20 && n % 10 === 1)) {
-		sunday = sunday + "stSunday";
-	} else if (n === 2 || (n > 20 && n % 10 === 2)) {
-		sunday = sunday + "ndSunday";
-	} else if (n === 3 || (n > 20 && n % 10 === 3)) {
-		sunday = sunday + "rdSunday";
-	} else {
-		sunday = sunday + "thSunday";
-	}
+	if (n === 1 || (n > 20 && n % 10 === 1)) sunday = sunday + "stSunday";
+	else if (n === 2 || (n > 20 && n % 10 === 2)) sunday = sunday + "ndSunday";
+	else if (n === 3 || (n > 20 && n % 10 === 3))		sunday = sunday + "rdSunday";
+	else sunday = sunday + "thSunday";
 	return sunday;
 };
 /**

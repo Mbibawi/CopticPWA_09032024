@@ -1916,15 +1916,13 @@ function setGospelPrayers(liturgy: string): string[] {
         gospelResponse === gospelResponse.replace("&D=", "Vespers&D=");
       }
       addDate(Season);
-    } else if (Season === Seasons.Kiahk) {
+    } else if (Season === Seasons.Kiahk && (Number(copticDay)<28 || (Number(copticDay) ===28 && todayDate.getHours()>13))) {
       // we are during Kiahk month: the first 2 weeks have their own gospel response, and the second 2 weeks have another gospel response
-      if (
-        checkWhichSundayWeAre(Number(copticDay), todayDate.getDay()) === ("1stSunday" || "2ndSunday")
-      ) {
-        gospelResponse = gospelResponse.replace("&D=", "1&D=");
-      } else {
-        gospelResponse = gospelResponse.replace("&D=", "2&D=")
-      };
+      let sunday = checkWhichSundayWeAre(Number(copticDay) - todayDate.getDay(), 0); //!Notice that the pass the weekDay as 0 regardless of whether we are actualy a Sunday because otherwise the function will return. Notice also that we substract the number of days (todayDate.getDay()) in order to get the preceding sunday during the Coptic month
+      sunday === '1stSunday' || sunday ==='2ndSunday' ?
+        gospelResponse = gospelResponse.replace ('&D=', '1&D=')
+        :
+        gospelResponse = gospelResponse.replace('&D=', '2&D=');
       addDate(Season);
     } else if (Season === Seasons.GreatLent) {
       //we are during the Great Lent period
@@ -2040,7 +2038,7 @@ async function scrollToTop() {
  */
 async function getGospelReadingAndResponses(
   liturgy: string,
-  btn: Button | { prayersArray: string[][][], languages: string[] },
+  btn: Button | { prayersArray: string[][][], languages: string[]},
   container?: HTMLElement | DocumentFragment,
   gospelInsertionPoint?: HTMLElement
 ) {
@@ -2155,8 +2153,10 @@ async function getGospelReadingAndResponses(
             PrayersArrays.PsalmAndGospelPrayersArray
               .find(tbl => splitTitle(tbl[0][0])[0] === prefix + '&D=$copticFeasts.AnyDay');
         
-        if (!response || response.length === 0) return;
+    if (!response || response.length === 0) return;
+    
   
+        
         insertPrayersAdjacentToExistingElement({
           tables: [response],
           languages: prayersLanguages,
@@ -2337,13 +2337,21 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
     let feast: [string, string];
     //if the copticDate is a feast
     
-    let excludeFeast = [saintsFeasts.StMina, saintsFeasts.StGeorge, saintsFeasts.StMarc, saintsFeasts.StMaykel]; //Those saints feast will be excluded because the doxologies of those saints are included by default
+    let excludeFeast = [saintsFeasts.StMaykel, saintsFeasts.StMarc, saintsFeasts.StGeorge, saintsFeasts.StMina]; //Those saints feast will be excluded because the doxologies of those saints are included by default
 
     if (excludeFeast.indexOf(copticDate) < 0)
       feast = Object.entries(saintsFeasts)
         .find(entry => entry[1] === copticDate); 
     
     if (feast) insertFeastInSequence(sequence, feast[1], 1);
+
+    if (excludeFeast.indexOf(copticDate) > 0) {
+      //If today is the feast of the saints included in excludeFeast. ! Notice that we start from 1 not from 0 because 0 is St. Maykel feast and it is already the first doxology in the saints doxologies
+
+      let doxologyIndex = excludeFeast.indexOf(copticDate) + 2;
+      sequence.splice(2,0, sequence[doxologyIndex]);//We insert the doxology after St. Maykel doxology
+      sequence.splice(doxologyIndex +1, 1);//We remove the original doxolgoy from the sequence
+    };
 
     feast  = Object.entries(copticFeasts).find(entry => entry[1] === copticDate);
       //Else if the copticReadingsDate is a feast
@@ -2387,7 +2395,6 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
         .filter(tbl => tbl[0][0].includes('Seasons.GreatLent'))
         .filter(tbl => !tbl[0][0].includes('Sundays'));
     };
-
 
 
     insertPrayersAdjacentToExistingElement({
