@@ -2396,6 +2396,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
         .filter(tbl => !tbl[0][0].includes('Sundays'));
     };
 
+    if(Season === Seasons.Kiahk) doxologies.splice(1,6);//This is in order to remove the repetitive doxologies
 
     insertPrayersAdjacentToExistingElement({
       tables: doxologies,
