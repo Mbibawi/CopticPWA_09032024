@@ -214,7 +214,8 @@ function createHtmlElementForPrayer(args: {
         //toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
       }); //adding a double click eventListner that amplifies the text size of the chosen language;
       p.addEventListener('contextmenu', (event) => {
-        //event.preventDefault();
+        if(localStorage.editingMode != "true") return;
+        event.preventDefault();
         if (!confirm('Do you want to edit the table?')) return;
         if (!htmlRow.dataset.root) return;
         startEditingMode({clear:true, arrayName: getArrayNameFromArray(getTablesArrayFromTitlePrefix(htmlRow.dataset.root)), tableTitle: htmlRow.dataset.root });

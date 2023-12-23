@@ -670,7 +670,6 @@ function createHtmlElementForPrayerEditingMode(args: {
         p: HTMLParagraphElement,
         lang: string,
         text: string,
-        dataRoot: string,
         actorClass: string,
         isPlaceHolder: boolean;
   
@@ -721,7 +720,8 @@ function createHtmlElementForPrayerEditingMode(args: {
                   div.remove();
                 });
             displayed.remove();
-          });
+            });
+          
         return
         };
 
@@ -788,7 +788,7 @@ function createHtmlElementForPrayerEditingMode(args: {
       //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
         p.classList.add("PrayerText");
     }
-    p.dataset.root = dataRoot; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
+    p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     p.title = htmlRow.title;
     text = args.tblRow[x];
     if (lang)

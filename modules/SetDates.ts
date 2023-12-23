@@ -92,7 +92,7 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
  */
 function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string | void {
 	if (!coptDate) return console.log('coptDate is not valid = ', coptDate);
-
+	
 	let specialSeason: string = checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
@@ -100,7 +100,7 @@ function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Da
 	} else if (today.getDay() === 0) {
 		// it means we are on an ordinary  Sunday (any sunday other than Great lent and Pentecostal period Sundays)
 		// console.log('We are on a sunday')
-		let sunday: string = checkWhichSundayWeAre(Number(copticDay), today.getDay());
+		let sunday: string = checkWhichSundayWeAre(Number(copticDay),0);
 		//the readings for the 5th sunday of any coptic month (other than the 5th sunday of the Great Lent or the Pentecostal Days) are the same. We will then retrieve the readings of the 5th sunday of the first coptic month (Tout)
 		sunday === "5thSunday"
 			? (sunday = "01" + sunday)
@@ -232,6 +232,12 @@ function checkForUnfixedEvent(
 		//We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
 		Season = Seasons.Nativity; //From 28 Kiahk afternoon to Circumsion (6 Toubi)
 
+	} else if (
+		(copticDate === '0805' || copticDate === '0905')
+		&& todayDate.getDay() === 5) {
+		//This means that  we are Friday and the Baptism feast (11 Toubah) is either next Monday or Sunday, which means that the Baptism Paramoun will be either 3 or 2 days (Friday, Saturday and Sunday, or Friday and Saturday)
+		Season = Seasons.BaptismParamoun;
+		return '1005';//The readings during the Baptism Paramoun are those of 10 Toubah
 	} else if (
 		(Number(copticMonth) === 5 && Number(copticDay) === 10 && todayDate.getHours() > 15) ||
 		(Number(copticMonth) === 5 && Number(copticDay) > 10 && Number(copticDay) < 13)) {

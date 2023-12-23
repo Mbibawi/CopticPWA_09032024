@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.0.6 (Fixes and added Communion chant for Kiahk in Arabic and French)';
+const version: string = 'v5.0.8 (Fixes and completed Synaxarium for Toubah, Fixed Baptism Paramoun\'s readings if Baptism Feast comes on a Monday or on a Sunday)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -293,7 +293,8 @@ const Seasons = {
     KiahkWeek1: 'Kiahk1',//First 2 Sundays of Kiahk
     KiahkWeek2: 'Kiahk2',//Second 2 Sundays of Kiahk
     Nativity: 'Nat', //from 28 Kiahk afternoon to 6 Toubi
-    Baptism:'Ba', //from 10 Toubi until 12 Toubi 
+    BaptismParamoun:'BP', //If the Baptism Feast comes a Monday or a Sunday , the Baptism Paramoun is 3 or 2 days 
+    Baptism:'Ba', //from 11 Toubi until 12 Toubi 
     GreatLent: 'GL', // Stand for Great Lent
     HolyWeek: 'HW', //Stands for Holy Week
     PentecostalDays: 'Pntl', //(from the Holy Saturday Afternoon, until the 7th Sunday)  Stands for Pentecostal Days
