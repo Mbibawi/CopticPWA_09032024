@@ -167,6 +167,7 @@ width: 40%;
 }
 
 p{
+ /* z-index: 10;/*We need this in order to activiate the keydown event attached to the paragraphs*/
   padding-right:7px;
   padding-left:7px;
   font-stretch: ultra-condensed ;

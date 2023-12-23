@@ -14,8 +14,9 @@ function startEditingMode(args: {
   let tablesArray: string[][][];
 
   if (args.clear !== false) args.clear = true;
+  containerDiv.dataset.specificTables = 'false';
   
-  if(args.select && !args.arrayName && !args.tableTitle){
+  if(args.select){
     //We deal with all the cases where a select element is passed as argument to the function. We exclude the case where arrayName is provided as an argument and the case where the tableTitle is provided.
 
     args.arrayName = args.select.selectedOptions[0].innerText;
@@ -27,14 +28,13 @@ function startEditingMode(args: {
     if (args.arrayName === args.select.options[2].innerText) {
       //under development : the user will provide a function and the function will be called when he press enter
       args.arrayName = prompt('Provide the function and the parameters', args.arrayName);
-      if (!args.arrayName) return;
-      if (args.arrayName.includes('Fun(')) eval(args.arrayName);
+      if (args.arrayName && args.arrayName.includes('Fun(')) eval(args.arrayName);
       return
     }
-    else  editSpecificTable();
+    tablesArray = editSpecificTable() ||[];
   }
 
-  else if (!args.select && args.arrayName && args.tableTitle) tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
+  else tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
   
   if (!args.arrayName) return;
 
@@ -46,7 +46,6 @@ function startEditingMode(args: {
 
   containerDiv.dataset.arrayName = args.arrayName;
   containerDiv.style.gridTemplateColumns = '100%';
-  containerDiv.dataset.specificTables = 'false';
 
   let languages = getLanguages(args.arrayName) || allLanguages;
 
@@ -69,7 +68,8 @@ function startEditingMode(args: {
   };
 
  
-  function editSpecificTable():string[][][] | void{
+  function editSpecificTable(arrayName:string=args.arrayName):string[][][] | void{
+      if (!arrayName) return;
       if (!args.tableTitle //args.tableTitle was not already provided as argument
         && confirm('Do you want to edit a single or specific table(s) in the array?'))
         args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
@@ -81,7 +81,9 @@ function startEditingMode(args: {
     
     if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
 
-    if (!tablesArray) tablesArray = eval(args.arrayName); //No need to check that arrayName is provided because editSpecificTable is called only when arrayName is provided
+    if (!tablesArray) tablesArray = eval(arrayName);
+
+    if (!tablesArray) return;
 
     let matchingTables: string[][][] = [];
 
@@ -101,11 +103,9 @@ function startEditingMode(args: {
     return matchingTables
   };
 
-
-  (function editTables() {
-    if (!tablesArray) tablesArray = eval(args.arrayName);
-    if (!tablesArray) return console.log('tablesArray was not set');
-    
+  if (!tablesArray || tablesArray.length < 1) return console.log('tablesArray was not set');
+  
+  (function editTables() {  
     localStorage.displayMode === displayModes[0] //We make sure that we are in the 'Normal' display mode before showing the text of the tables;
 
     showTables({
@@ -129,30 +129,28 @@ function showTables(args: {
   languages: string[],
   position?: HTMLElement | DocumentFragment | { el: HTMLElement, beforeOrAfter: InsertPosition },
   container?: HTMLElement | DocumentFragment,
-  clear?: boolean,
-  isPlaceHolder?: boolean
+  clear?: boolean
 }) {
   if (!args.arrayName) return;
   if (!args.container) args.container = containerDiv;
   if (!args.position) args.position = containerDiv;
   if(args.clear !==false) args.clear = true;
-  if (args.isPlaceHolder !== true) args.isPlaceHolder = false;
 
-  if (args.clear === true) containerDiv.innerHTML = '';
+    if (args.clear === true) containerDiv.innerHTML = '';
   //We create an html div element to display the text of each row of each table in tablesArray
   args.tablesArray
     .forEach(table => {
   if (!table) return;
       table
         .forEach(row => {
-    if (!row) return;
-    createHtmlElementForPrayerEditingMode({
-      tblRow:row,
-      languagesArray: args.languages,
-      position: args.position,
-      container: args.container,
-      arrayName: args.arrayName,
-      isPlaceHolder:args.isPlaceHolder});     
+          if (!row) return;
+          
+        createHtmlElementForPrayerEditingMode({
+          tblRow:row,
+          languagesArray: args.languages,
+          position: args.position,
+          container: args.container,
+          arrayName: args.arrayName});     
   });
 });
   
@@ -195,9 +193,9 @@ function addEdintingButtons() {
   
   createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), 'Change Class', btnsDiv);
   
-  createEditingButton(() => saveModifiedArray(false, true), 'Save', btnsDiv);
+  createEditingButton(() => saveModifiedArray({exportToFile:false, exportToStorage:true}), 'Save', btnsDiv);
   
-  createEditingButton(() => saveModifiedArray(true, true), 'Export to JS file', btnsDiv);
+  createEditingButton(() => saveModifiedArray({exportToFile:true, exportToStorage:true}), 'Export to JS file', btnsDiv);
   
   createEditingButton(() => addTableToSequence(document.getSelection().focusNode.parentElement), 'Add Table to Sequence', btnsDiv);
   
@@ -355,44 +353,54 @@ function exportToJSFile(arrayText: string, arrayName:string) {
  * @param {boolean} exportToStorage - If true, the text of the modified array will be saved to localStorage.editedText. Its default value is "true".
  * @returns {[string, string] | void} the text of the modified array
  */
-function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolean = true, dataRoot?:string): [string, string] | void {
+function saveModifiedArray(args: {
+  exportToFile: boolean,
+  exportToStorage: boolean,
+  dataRoot?: string
+  htmlRows?:HTMLDivElement[]}): [string, string] | void {
 
-  if (!exportToFile && !exportToStorage) return;
-  
   let title: string,
     titles: Set<string> = new Set(),
     savedArrays: Set<string> = new Set(),
-    arrayName:string,
     tablesArray:string[][][];
       
-  let htmlRows: HTMLDivElement[] = Array.from(containerDiv.querySelectorAll("div.Row, div.PlaceHolder")); //we retrieve all the divs with 'Row' class from the DOM
+  if(!args.htmlRows) args.htmlRows = Array.from(containerDiv.querySelectorAll('div.Row, div.PlaceHolder') as NodeListOf<HTMLDivElement>)
+    .filter(div => div.dataset.root); //we retrieve all the divs with 'Row' class from the DOM
   
-  if (dataRoot) htmlRows = htmlRows.filter(htmlRow => htmlRow.dataset.root === dataRoot);
+  if (args.dataRoot) args.htmlRows = args.htmlRows.filter(htmlRow => htmlRow.dataset.root === args.dataRoot);
     
   //Adding the tables' titles as unique values to the titles set
-  htmlRows
+  args.htmlRows
     .forEach(htmlRow => {
-      //for each 'Row' div in containderDiv
-    title = htmlRow.dataset.root; //this is the title without '&C='
+      if (!htmlRow) return; //This will happen if the row was row of a table referrenced by a placeholder, that was later on hidden when the click() event of the placeholder row was triggered (see below)
+       
+      if (htmlRow.dataset.isPlaceHolder) {
+        saveModifiedArray({exportToFile:false, exportToStorage: true, dataRoot: htmlRow.dataset.isPlaceHolder });
+        args.htmlRows.filter(div => !div.dataset.isPlaceHolder && div.dataset.root && div.dataset.root === htmlRow.dataset.isPlaceHolder).forEach(div => div.remove())
+        return;
+      };
+        
+      title = htmlRow.dataset.root; //this is the title without '&C='
       if (titles.has(title)) return;
-      else titles.add(title);
       
-      arrayName = htmlRow.dataset.arrayName;
+      titles.add(title);
       
-      if (!arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
-      else if (!savedArrays.has(arrayName)) savedArrays.add(arrayName);
+      if (!htmlRow.dataset.arrayName) return console.log('We encountered a problem with one of the rows : ', htmlRow);
       
-      tablesArray = eval(arrayName);
+      if (!savedArrays.has(htmlRow.dataset.arrayName)) savedArrays.add(htmlRow.dataset.arrayName);
 
-      if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', arrayName);
+      tablesArray = eval(htmlRow.dataset.arrayName);
+      
+      if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', htmlRow.dataset.arrayName);
 
+      
       modifyEditedArray(title, tablesArray);
     }
   );
   
   //We finally save or export each array in the savedArrays
   savedArrays
-    .forEach(arrayName => saveOrExportArray(arrayName, exportToFile, exportToStorage));
+    .forEach(arrayName => saveOrExportArray(arrayName, args.exportToFile, args.exportToStorage));
   
 };
 
@@ -404,11 +412,11 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
      */
     function modifyEditedArray(tableTitle: string, tablesArray: string[][][]) {
       //We select all the div elements having same data-set-root attribute as the title of the table (tabeTitle)
-
+      if (!tablesArray || !tableTitle) return; 
       let htmlTable =
-        Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
+        Array.from(containerDiv.querySelectorAll('div.Row, div.PlaceHolder') as NodeListOf<HTMLDivElement>)
           .filter(htmlRow =>
-            htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
+            htmlRow.dataset.root && htmlRow.dataset.root === tableTitle) as HTMLDivElement[];
     
       if (htmlTable.length === 0) return;
 
@@ -418,11 +426,11 @@ function saveModifiedArray(exportToFile: boolean = true, exportToStorage: boolea
   function modifyArray(htmlTable:HTMLDivElement[]) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
     //If we have placeHolders rows that were not converted:
-    editedTable.filter(row => row[1].startsWith(Prefix.placeHolder) && row.length === 1).forEach(row => {row[0] = Prefix.placeHolder });
+    editedTable.filter(row => row[0].startsWith(Prefix.placeHolder) && row.length === 1).forEach(row => row.unshift( Prefix.placeHolder));
     
       let oldTable: string[][] =
         tablesArray
-        .filter(tbl => tbl[0][0] === editedTable[0][0])[0];
+        .find(tbl => splitTitle(tbl[0][0])[0] === splitTitle(editedTable[0][0])[0]);
         
       if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
           
@@ -441,7 +449,7 @@ function saveOrExportArray(arrayName: string, exportToFile:boolean = true, expor
   let text: string;
  console.log("modified array = ", arrayName);
   
-text = processArrayTextForJsFile(eval(arrayName), arrayName);
+text = processArrayTextForJsFile(arrayName);
 
 if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile().  arrayName = ', arrayName);
 
@@ -459,10 +467,12 @@ if (!text) return console.log('We\'ve got a problem when we called processArrayT
  * @param {string[][][]} tablesArray - the string[][][] that will be processed and returned as a text the js file
  * @return {string} the text representing the array in a js file
  */
-function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string): string {
+function processArrayTextForJsFile(arrayName:string, tablesArray?: string[][][]): string {
   //Open Array of Tables
+  if (!tablesArray) tablesArray = eval(arrayName);
+  if (!tablesArray) return;
   let text: string = "[";
-  tablesArray.forEach((table: string[][]) => processTable(table));
+  tablesArray.forEach(table => processTable(table));
 
   function processTable(table: string[][]) {
     if (!table || table.length < 1){
@@ -471,11 +481,11 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string):
       };
     //open table array
     text += "[\n";
-    table.forEach((row: string[]) => {
+    table.forEach(row => {
       processTableRow(row);
     });
     //close table
-    text += "], \n";
+    text += "],\n";
   };
   function processTableRow(row: string[]) {
     if (!row || row.length < 1){
@@ -487,13 +497,13 @@ function processArrayTextForJsFile(tablesArray: string[][][], arrayName:string):
     text += "[\n";
     row.forEach((element:string)=>processStringElement(element, row))
     //close row
-    text += "], \n";
+    text += "],\n";
   };
 
   function processStringElement(element: string, row: string[]) {
     //for each string element in row[]
-    element = element.replaceAll('"', '\\"'); //replacing '"" by '\"'
-    element = element.replaceAll('\n', '\\n');
+    element = element.replaceAll('"', '\\"')//replacing '"" by '\"'
+    .replaceAll('\n', '\\n');
 
     if (splitTitle(row[0])[1] === 'Title')
       element = element
@@ -648,33 +658,35 @@ function createHtmlElementForPrayerEditingMode(args: {
     | DocumentFragment
     | { beforeOrAfter: InsertPosition; el: HTMLElement },
   container?: HTMLElement | DocumentFragment,
-  arrayName?: string,
-  isPlaceHolder?:boolean
+  arrayName?: string
 }
 ): HTMLDivElement {
   if(!args.position) args.position = containerDiv;
   if (!args.container) args.container = containerDiv;
-  if (args.isPlaceHolder !== true && args.tblRow[0].startsWith(Prefix.placeHolder)) args.isPlaceHolder = true;
+  
+
   
   let htmlRow: HTMLDivElement,
-    p: HTMLParagraphElement,
-    lang: string,
-    text: string,
-    dataRoot: string,
-    actorClass: string;
-
+        p: HTMLParagraphElement,
+        lang: string,
+        text: string,
+        dataRoot: string,
+        actorClass: string,
+        isPlaceHolder: boolean;
+  
+  args.tblRow[0].startsWith(Prefix.placeHolder) ? isPlaceHolder = true : isPlaceHolder = false;
+  
   htmlRow = document.createElement('div');
   if (args.arrayName) htmlRow.dataset.arrayName = args.arrayName;
  
-  if(!args.isPlaceHolder){
+  if(!isPlaceHolder){
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  htmlRow.title = args.tblRow[0];
+  htmlRow.title = args.tblRow[0];//We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
   htmlRow.dataset.root = splitTitle(args.tblRow[0])[0];
-    htmlRow.dataset.group = htmlRow.dataset.root;
+    htmlRow.dataset.group = htmlRow.dataset.root;//The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
     actorClass = splitTitle(args.tblRow[0])[1] ||'';
-  htmlRow.classList.add(actorClass);
-  }
-  else if (args.isPlaceHolder) {
+    if(actorClass) htmlRow.classList.add(actorClass);
+  } else if (isPlaceHolder) {
     args.tblRow = [...args.tblRow]; //We create a copy of the row
     let children = Array.from(args.container.children) as HTMLDivElement[];
     let lastChild = children[children.length - 1];
@@ -688,19 +700,40 @@ function createHtmlElementForPrayerEditingMode(args: {
 
     htmlRow.addEventListener('click',
       () => {
-        let referrencedTblTitle: string = args.tblRow[1]; //When tblRow is a 'PlaceHoder', it has 2 elements: the first of which is  'Prefix.placeHolder' and the second (i.e., args.tblRow[1]) is the title of the table that is refrenced
+        let referrencedTblTitle: string = htmlRow.dataset.isPlaceHolder; //When tblRow is a 'PlaceHoder', it has 2 elements: the first of which is  'Prefix.placeHolder' and the second (i.e., args.tblRow[1]) is the title of the table that is refrenced
       let shown =
         Array.from(containerDiv.querySelectorAll('div'))
-        .filter(div => div.dataset.isPlaceHolder === referrencedTblTitle);
+            .filter(div => div.dataset.displayedPlaceHolder && div.dataset.displayedPlaceHolder === referrencedTblTitle);
+        
         if (shown.length > 0) {
-          saveModifiedArray(false, true, referrencedTblTitle);
-        shown.forEach(div => div.remove());
+          //This means that the table referrenced in tblRow[1] is displayed. We will save any changes made to it and remove it
+          saveModifiedArray({ exportToFile: false, exportToStorage: true, dataRoot: referrencedTblTitle });
+          
+          shown
+            .forEach(displayed => {
+            if (displayed.dataset.isPlaceHolder)
+              Array.from(containerDiv.querySelectorAll('div.Row') as NodeListOf<HTMLDivElement>)
+                .filter(div => div.dataset.root && div.dataset.root === displayed.dataset.isPlaceHolder)
+                .forEach(div => {
+                  saveModifiedArray({
+                    exportToFile: false, exportToStorage: true, dataRoot: displayed.dataset.isPlaceHolder
+                  });
+                  div.remove();
+                });
+            displayed.remove();
+          });
         return
         };
+
         let tblsArray = getTablesArrayFromTitlePrefix(referrencedTblTitle);
+
+        if (!tblsArray) return console.log('We could not identifiy the array in which the referrenced table is to be retrieved');
+
+        let tableArrayName = getArrayNameFromArray(tblsArray);
+
       let created =
-        tblsArray
-          .find(tbl => splitTitle(tbl[0][0])[0] === referrencedTblTitle)
+        [...tblsArray
+          .find(tbl => splitTitle(tbl[0][0])[0] === referrencedTblTitle)]//!Caution, we must create a copy of the table otherwise the original table may be reversed in it its array
           .reverse()
           .map(row => {
             return createHtmlElementForPrayerEditingMode({
@@ -711,17 +744,15 @@ function createHtmlElementForPrayerEditingMode(args: {
                 beforeOrAfter: 'afterend'
               },
               container: args.container,
-              arrayName: getArrayNameFromArray(tblsArray) //This is the array name of the embeded table not for the table including the placeHolder referencing the embeded table
+              arrayName: tableArrayName //This is the array name of the embeded table not for the table including the placeHolder referencing the embeded table
             })
           })
         
       setCSS(created);
       //Prefix.massStBasil + 'Reconciliation' 
-      let arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(args.tblRow[1]));
       created
         .forEach(div => {
-          div.dataset.isPlaceHolder = args.tblRow[1];
-          div.dataset.arrayName = arrayName;
+          div.dataset.displayedPlaceHolder = referrencedTblTitle;
           Array.from(div.children)
             .forEach((paragraph: HTMLParagraphElement) =>{
             paragraph.contentEditable = "true";
@@ -770,7 +801,7 @@ function createHtmlElementForPrayerEditingMode(args: {
   //@ts-ignore
   args.position.el
     ? //@ts-ignore
-      args.position.el.insertAdjacentElement(position.beforeOrAfter, htmlRow)
+      args.position.el.insertAdjacentElement(args.position.beforeOrAfter, htmlRow)
     : //@ts-ignore
     args.position.appendChild(htmlRow);
 
@@ -1017,7 +1048,7 @@ while (htmlElement.tagName !== 'P' && htmlElement.parentElement) htmlElement = h
 }
 
 function goToTableByTitle() {
-  saveModifiedArray(false, true);
+  saveModifiedArray({exportToFile:false, exportToStorage:true});
   let title: string = '';
   //@ts-ignore
   if (containerDiv.children.length > 0 && containerDiv.children[0].dataset.root) title = containerDiv.children[0].dataset.root;
@@ -1056,7 +1087,7 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
   if (!title) return alert('We couldn\'t retrieve the data-root of the current table. Make sure the cursor is placed within one of the table\'s cells');
   
   //We first save the changes to the array
-  saveModifiedArray(false, true);
+  saveModifiedArray({exportToFile:false, exportToStorage:true});
   
   let arrayName = containerDiv.dataset.arrayName
   
@@ -1093,11 +1124,11 @@ function reArangeTablesColumns(tblTitle: string, arrayName: string) {
     row.splice(1, 0, '');
     row.splice(1, 0, '');
   });
-  exportToJSFile(processArrayTextForJsFile(array, arrayName),arrayName);
+  exportToJSFile(processArrayTextForJsFile(arrayName, array),arrayName);
 }
 
 function editDayReadings(date?: string) {
-  if (date) saveModifiedArray(true, true);
+  if (date) saveModifiedArray({exportToFile:true, exportToStorage:true});
 
   if (!date) date = prompt('Provide the date as DDMM');
 
@@ -1118,7 +1149,7 @@ function editDayReadings(date?: string) {
 }
 function showBtnInEditingMode(btn: Button) {
 
- if(containerDiv.children.length>0) saveModifiedArray(true, true);
+ if(containerDiv.children.length>0) saveModifiedArray({exportToFile:true, exportToStorage:true});
 
   let container: HTMLElement | DocumentFragment = containerDiv;
   if (btn.docFragment) container = btn.docFragment;

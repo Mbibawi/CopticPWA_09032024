@@ -118,14 +118,12 @@ function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Da
  * @param {number} day  - the day of the coptic month or the number of days since the beginning of a season like the Great Lent or the Pentecostal days
  * The function returns a string like "1stSunday", "2nd Sunday", etc.
  */
-function checkWhichSundayWeAre(day: number, theWeekDay:number): string
+function checkWhichSundayWeAre(day: number, theWeekDay:number=0): string
 {
 	if (theWeekDay !== 0) return;
 	let n: number = day;
-	if (Season === Seasons.GreatLent)
-		//The counting of the nubmer of days during the Great Lent starts from the Saturday preceding the first day of the Great Lent (which is a Monday). We hence substract 2 from the number of days elapsed in order to count for the 2 extra days added to the actual number of days elapsed since the begining of the Great Lent
-		n = n - 2;
-		n = Math.ceil(n / 7);
+	if (Season === Seasons.GreatLent) n = n - 2; //The counting of the nubmer of days during the Great Lent starts from the Saturday preceding the first day of the Great Lent (which is a Monday). We hence substract 2 from the number of days elapsed in order to count for the 2 extra days added to the actual number of days elapsed since the begining of the Great Lent
+	n = Math.abs(Math.ceil(n / 7));//We use Math.abs in order to deal with cases where the difference is <0
 	let sunday: string = n.toString();
 	if (n === 1 || (n > 20 && n % 10 === 1)) sunday = sunday + "stSunday";
 	else if (n === 2 || (n > 20 && n % 10 === 2)) sunday = sunday + "ndSunday";
@@ -215,9 +213,10 @@ function checkForUnfixedEvent(
 		else if (Number(copticDay) > 16) Season = Seasons.CrossFeast;
 
 	} else if (Number(copticMonth) === 4 && Number(copticDay) < 29) {
+		let sunday = checkWhichSundayWeAre(Number(copticDay) - todayDate.getDay());
 		//We are during the month of Kiahk which starts on 16 Hatour and ends on 29 Kiahk
-		Season = Seasons.Kiahk;
-
+		if (sunday === '1stSunday' || sunday === '2ndSunday') Season = Seasons.KiahkWeek1;
+		else if (sunday === '3rdSunday' || sunday === '4thSunday') Season = Seasons.KiahkWeek2;
 	} else if (Number(copticMonth) === 3 && Number(copticDay) > 15) {
 		//We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk, but we are not during the month of Kiahk
 		Season = Seasons.NativityFast;

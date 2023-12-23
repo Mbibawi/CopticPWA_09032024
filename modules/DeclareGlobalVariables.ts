@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.0.5 (Fixed Kiahk Fraction Prayer)';
+const version: string = 'v5.0.6 (Fixes and added Communion chant for Kiahk in Arabic and French)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -290,7 +290,8 @@ const Seasons = {
     StMaryFast: 'StMFast', //stands for Saint Mary Feast
     Nayrouz: 'Nay', //Stands for Nayrouz from 1 Tout to 16 Tout
     NativityFast: 'NF', //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
-    Kiahk: 'Kiahk',
+    KiahkWeek1: 'Kiahk1',//First 2 Sundays of Kiahk
+    KiahkWeek2: 'Kiahk2',//Second 2 Sundays of Kiahk
     Nativity: 'Nat', //from 28 Kiahk afternoon to 6 Toubi
     Baptism:'Ba', //from 10 Toubi until 12 Toubi 
     GreatLent: 'GL', // Stand for Great Lent
@@ -338,7 +339,8 @@ const copticFeasts = {
 const copticFasts = [
     Seasons.GreatLent,
     Seasons.NativityFast,
-    Seasons.Kiahk,
+    Seasons.KiahkWeek1,
+    Seasons.KiahkWeek2,
     Seasons.ApostlesFast,
     Seasons.StMaryFast,
     Seasons.JonahFast,

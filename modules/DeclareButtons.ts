@@ -706,10 +706,10 @@ const btnMassStBasil: Button = new Button({
       //Inserting the Communion Chants after the Psalm 150
       let psalm = selectElementsByDataRoot(btnDocFragment, Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay", {equal:true});
   
-      let filtered: string[][][] = PrayersArrays.CommunionPrayersArray.filter(tbl => {
+      let filtered: string[][][] = PrayersArrays.CommunionPrayersArray.filter(tbl => 
         selectFromMultiDatedTitle(tbl[0][0], copticDate) === true
           || selectFromMultiDatedTitle(tbl[0][0], Season) === true
-      });
+      );
   
       if (filtered.length === 0) filtered = PrayersArrays.CommunionPrayersArray.filter(tbl => selectFromMultiDatedTitle(tbl[0][0], copticFeasts.AnyDay) === true);
       
@@ -1916,10 +1916,10 @@ function setGospelPrayers(liturgy: string): string[] {
         gospelResponse === gospelResponse.replace("&D=", "Vespers&D=");
       }
       addDate(Season);
-    } else if (Season === Seasons.Kiahk && (Number(copticDay)<28 || (Number(copticDay) ===28 && todayDate.getHours()>13))) {
+    } else if ((Season === Seasons.KiahkWeek1 ||Season === Seasons.KiahkWeek2) && (Number(copticDay)<28 || (Number(copticDay) ===28 && todayDate.getHours()<13))) {
       // we are during Kiahk month: the first 2 weeks have their own gospel response, and the second 2 weeks have another gospel response
-      let sunday = checkWhichSundayWeAre(Number(copticDay) - todayDate.getDay(), 0); //!Notice that the pass the weekDay as 0 regardless of whether we are actualy a Sunday because otherwise the function will return. Notice also that we substract the number of days (todayDate.getDay()) in order to get the preceding sunday during the Coptic month
-      sunday === '1stSunday' || sunday ==='2ndSunday' ?
+      
+      Season === Seasons.KiahkWeek1 ?
         gospelResponse = gospelResponse.replace ('&D=', '1&D=')
         :
         gospelResponse = gospelResponse.replace('&D=', '2&D=');
@@ -2381,8 +2381,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
       );
   
     
-    if (doxologies.length === 0) return console.log('doxologies = ', doxologies);
-    console.log('doxologies = ', doxologies);
+    if (doxologies.length === 0) return console.log('Did not find any relevant doxologies');
 
 
     if (Season === Seasons.GreatLent){
@@ -2396,7 +2395,7 @@ async function insertCymbalVersesAndDoxologies(btn:Button) {
         .filter(tbl => !tbl[0][0].includes('Sundays'));
     };
 
-    if(Season === Seasons.Kiahk) doxologies.splice(1,6);//This is in order to remove the repetitive doxologies
+    if(Season === Seasons.KiahkWeek1 ||Season === Seasons.KiahkWeek2) doxologies.splice(1,6);//This is in order to remove the repetitive doxologies
 
     insertPrayersAdjacentToExistingElement({
       tables: doxologies,

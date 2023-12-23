@@ -213,6 +213,12 @@ function createHtmlElementForPrayer(args: {
         localStorage.fontSize !== '1.9' ? setFontSize('1.9') : setFontSize('1');
         //toggleAmplifyText(ev.target as HTMLElement, "amplifiedText");
       }); //adding a double click eventListner that amplifies the text size of the chosen language;
+      p.addEventListener('contextmenu', (event) => {
+        //event.preventDefault();
+        if (!confirm('Do you want to edit the table?')) return;
+        if (!htmlRow.dataset.root) return;
+        startEditingMode({clear:true, arrayName: getArrayNameFromArray(getTablesArrayFromTitlePrefix(htmlRow.dataset.root)), tableTitle: htmlRow.dataset.root });
+      })
       htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
     
   }
@@ -3226,11 +3232,11 @@ function convertHtmlDivElementsIntoArrayTable(
         Array.from(row.children)
           .map((p: HTMLElement) => {
             //We replace the quotes in the innerHTML of the paragraph, but we will return the innerText of the paragraph in order to avoid getting <br> or any other html tags in the returned text
-             p.innerHTML = replaceHtmlQuotes(p.innerHTML, p.lang);
+             p.innerHTML = replaceHtmlQuotes(p.innerHTML, p.lang);//When the text is displayed, the <quote> elment is replaced with the quotes symbol of the relevant language. We replace the quotes with the html <quote> element
             return p.innerText;
           })
       );
-    table[table.length - 1].unshift(row.title);
+    table[table.length - 1].unshift(row.title);//We add the title as the first element in the table
   });
   return table;
 }
