@@ -888,10 +888,6 @@ PrayersArray = [
       Prefix.placeHolder,
       Prefix.commonPrayer + "KyrieElieson&D=$copticFeasts.AnyDay",
     ],
-    [
-      Prefix.placeHolder,
-      Prefix.commonPrayer + "IncenseLitaniesEnd&D=$copticFeasts.AnyDay",
-    ],
   ],
   [
     [
@@ -4972,7 +4968,9 @@ PrayersArray = [
     ],
   ],
   [
-    [Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay"],
+      [
+          Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay"
+      ],
     [
       Prefix.placeHolder,
       Prefix.commonPrayer + "BlockShlil&D=$copticFeasts.AnyDay",

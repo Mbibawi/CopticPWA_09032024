@@ -167,6 +167,7 @@ function createHtmlElementForPrayer(args: {
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
+ 
   if(localStorage.displayMode === displayModes[1]) htmlRow.classList.replace('Row', 'SlideRow');
 
   if(args.titleBase) htmlRow.dataset.root = args.titleBase.replace(/Part\d+/, "");
@@ -1700,6 +1701,8 @@ function showPrayers(args:
     return tbl.map(tblRow => createElement(tblRow, titleBase));
   };
 
+ 
+
   function createElement(row:string[], titleBase:string):HTMLDivElement{
     if (!row) return;
     if (row[0] === Prefix.placeHolder) {processPlaceHolder(row); return};
@@ -1713,6 +1716,16 @@ function showPrayers(args:
   };
 
 }
+
+
+   /**
+   * returns the perfix according to the 
+   */
+   function getMassPrefix(btnID:string):string{
+    if(btnID === btnMassStBasil.btnID) return Prefix.massStBasil;
+    if(btnID === btnMassStGregory.btnID) return Prefix.massStGregory;
+    if(btnID === btnMassStCyril.btnID) return Prefix.massStCyril;
+   }
 
 /**
  * Uses the prefix at the begining of the title of a table or a row (i.e. Prefi.something) to find the string[][][] array where a table which title starts with the same prefix, should be found.
@@ -1748,6 +1761,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
     minusSign = String.fromCharCode(plusCharCode + 1);
 
   htmlRows.forEach((row) => {
+    if (row.children.length === 0) row.classList.add(hidden); //If the row has no children, it means that it is a row created as a name of a table or as a placeholder. We will hide the html element
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
     row.style.gridTemplateColumns = setGridColumnsOrRowsNumber(row);
     //Defining grid areas for each language in order to be able to control the order in which the languages are displayed (Arabic always on the last column from left to right, and Coptic on the first column from left to right)
@@ -1818,83 +1832,6 @@ async function setCSS(htmlRows: HTMLElement[]) {
     )
       replaceQuotes(paragraphs);
 
-    (function formatRow() {
-      return;
-
-      if (row.classList.contains("showDae")) {
-        row.style.color = "#5270a3";
-        row.style.fontWeight = "bold";
-        row.style.padding = "7px";
-      }
-      if (row.classList.contains(displayModes[1])) {
-        if (
-          row.classList.contains("Comments") ||
-          row.classList.contains("CommentText")
-        )
-          row.classList.add(hidden);
-      }
-    })();
-
-    (function formatParagraphs() {
-      return;
-      let paragraphs = Array.from(row.children) as HTMLParagraphElement[];
-      paragraphs.forEach((p) => {
-        if (p.tagName !== "P") return;
-
-        p.style.display = "block";
-        p.style.gridArea = p.lang.toUpperCase();
-        p.style.padding = "0px 7px 0px 7px";
-        p.style.textAlign = "justify";
-
-        if (paragraphs.indexOf(p) !== paragraphs.length - 1) {
-          p.style.borderRightStyle = "groove";
-        }
-
-        if (row.classList.contains(displayModes[1])) {
-          p.style.backgroundColor = "black";
-          p.style.color = "white";
-          p.style.borderRadius = "20px";
-        }
-
-        if (p.lang === "ar" || p.lang === "ca") {
-          p.style.direction = "rtl";
-          p.style.fontFamily = "GentiumBookPlus";
-          p.style.fontSize = "18.5pt";
-          p.style.fontWeight = "500";
-          p.style.lineHeight = "30px";
-          if (row.classList.contains(displayModes[1])) {
-            p.style.fontSize = "8vh";
-            p.style.lineHeight = "3rem";
-          }
-        } else if (p.lang === "fr" || p.lang === "fr") {
-          p.style.fontFamily = "DCO";
-          p.style.fontSize = "13pt";
-          p.style.fontWeight = "normal";
-        } else if (p.lang === "cop") {
-          p.style.fontFamily = "ArialCoptic";
-          p.style.lineHeight = "25px";
-        }
-
-        if (
-          row.classList.contains("Title") ||
-          row.classList.contains("SubTitle")
-        ) {
-          p.style.textAlign = "center";
-        }
-        if (row.classList.contains("colorbtn")) {
-          p.style.margin = "1px 1px";
-        }
-        if (
-          row.classList.contains("inlineBtn") ||
-          row.classList.contains("sideBarBtn")
-        ) {
-          p.style.fontSize = "12pt";
-          p.style.marginTop = "1px";
-          p.style.marginBottom = "1px";
-          p.style.lineHeight = "20px";
-        }
-      });
-    })();
   });
 }
 

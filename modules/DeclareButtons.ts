@@ -632,15 +632,8 @@ const btnMassStBasil: Button = new Button({
       redirectToAnotherMass(
         [...massButtons],
         {
-          beforeOrAfter: "beforebegin",
-          el: (()=>{
-            let prefix: string;
-            if(btn.btnID === btnMassStBasil.btnID) prefix = Prefix.massStBasil;
-            if(btn.btnID === btnMassStGregory.btnID) prefix = Prefix.massStGregory;
-            if(btn.btnID === btnMassStCyril.btnID) prefix = Prefix.massStCyril;
-            console.log(prefix);
-            return selectElementsByDataRoot(btnDocFragment, prefix + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0].previousElementSibling as HTMLElement
-          })(),
+          beforeOrAfter: "afterend",
+          el: selectElementsByDataRoot(btnDocFragment, getMassPrefix(btn.btnID) + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0].previousElementSibling as HTMLElement
         },
         'RedirectionToAgios'
       );
