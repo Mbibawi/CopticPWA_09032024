@@ -132,6 +132,7 @@ const btnMain: Button = new Button({
   },
   onClick: () => {
     btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours];
+    if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnMain.children.push(btnKiahk);
 
 
     (function showBtnsOnMainPage() {
@@ -142,8 +143,11 @@ const btnMain: Button = new Button({
         'url(./assets/btnMassBackground.jpg)',
         'url(./assets/btnMassBackground.jpg)',
         'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnMassBackground.jpg)',
+        'url(./assets/btnMassBackground.jpg)',
         'url(./assets/btnIncenseBackground.jpg)',
         'url(./assets/btnReadingsBackground.jpg)',
+        'url(./assets/btnBOHBackground.jpg)',
         'url(./assets/btnBOHBackground.jpg)',
       ];
       containerDiv.innerHTML = '';
@@ -629,7 +633,14 @@ const btnMassStBasil: Button = new Button({
         [...massButtons],
         {
           beforeOrAfter: "beforebegin",
-          el: selectElementsByDataRoot(btnDocFragment, Prefix.massCommon + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0].previousElementSibling as HTMLElement,
+          el: (()=>{
+            let prefix: string;
+            if(btn.btnID === btnMassStBasil.btnID) prefix = Prefix.massStBasil;
+            if(btn.btnID === btnMassStGregory.btnID) prefix = Prefix.massStGregory;
+            if(btn.btnID === btnMassStCyril.btnID) prefix = Prefix.massStCyril;
+            console.log(prefix);
+            return selectElementsByDataRoot(btnDocFragment, prefix + 'Agios&D=$copticFeasts.AnyDay', { equal: true })[0].previousElementSibling as HTMLElement
+          })(),
         },
         'RedirectionToAgios'
       );
@@ -757,7 +768,6 @@ const btnMassStBasil: Button = new Button({
       
       litaniesIntro = structuredClone(litaniesIntro);
 
-        console.log(litaniesIntro[litaniesIntro.length-1]);
       litaniesIntro.splice(litaniesIntro.length-1, 1);//We remove the last row in the table of litaniesIntro because it is the "As it were, let it always be.../كما كان هكذا يكون/tel qu'il fût ainsi soit-il..."
       
       if (litaniesIntro.length === 0) console.log('Did not find the St Cyril Litanies Introduction');
@@ -1145,14 +1155,17 @@ const btnMassUnBaptised: Button = new Button({
         beforeOrAfter: 'beforebegin',
         el: praxisElements[praxisElements.length - 1].nextElementSibling as HTMLElement,
       };
-
+      let titleBase: string;
       reading
         .forEach(table => {
+          titleBase = splitTitle(table[0][0])[0];
           table
             .map(row => {
+              if(!row[0].startsWith(Prefix.same)) titleBase =  row[0];
               return createHtmlElementForPrayer(
                 {
                   tblRow: row,
+                  titleBase:titleBase,
                   languagesArray: ['FR', 'AR'],
                   position: anchor
                 }
@@ -1879,8 +1892,22 @@ const btnBookOfHours:Button =  new Button({
     scrollToTop();
     return btnBookOfHours.prayersSequence;
     }
-    }
-);
+    });
+
+    const btnKiahk: Button = new Button({
+      btnID: "btnKiahk",
+      label: {
+        AR: "تسبحة كيهك",
+        FR: "Louanges de l'Avent",
+      },
+      onClick: () => {
+        if (Season !== Seasons.KiahkWeek1 && Season !== Seasons.KiahkWeek2) return;
+        btnKiahk.prayersArray = PrayersArrays.psalmodyPrayersArray;
+        btnKiahk.prayersSequence = [Prefix.psalmody + 'KiahkChants&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek1']
+    
+          
+          },
+    });
 
 /**
  * takes a liturgie name like "IncenseDawn" or "IncenseVespers" and replaces the word "Mass" in the buttons gospel readings prayers array by the name of the liturgie. It also sets the psalm and the gospel responses according to some sepcific occasions (e.g.: if we are the 29th day of a coptic month, etc.)

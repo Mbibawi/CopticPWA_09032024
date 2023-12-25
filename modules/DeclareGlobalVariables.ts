@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.0.8 (Fixes and completed Synaxarium for Toubah, Fixed Baptism Paramoun\'s readings if Baptism Feast comes on a Monday or on a Sunday)';
+const version: string = 'v5.0.9 (Shortened the prefixes, made changes to the masses arrays in PrayersArray)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;
@@ -34,7 +34,7 @@ const contentDiv: HTMLElement = document.getElementById('content');
 
 const toggleDevBtn = document.getElementById('toggleDev') as HTMLButtonElement;
 const expandableBtnsPannel: HTMLElement = document.getElementById('inlineBtnsContainer');
-const ResurrectionDates: string[] = ['2022-04-24', '2023-04-16', '2024-05-05', '2025-04-29', '2026-04-12', '2027-05-02', '2028-04-23', '2029-04-8', '2030-04-28']; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
+const ResurrectionDates: [number, string][] = [[2022, '2022-04-24'], [2023, '2023-04-16'], [2024, '2024-05-05'], [2025, '2025-04-29'], [2026, '2026-04-12'], [2027, '2027-05-02'], [2028, '2028-04-23'],  [2029, '2029-04-08'], [2030, '2030-04-28']]; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
 
 const copticMonths: {AR:string, FR:string, EN:string }[] = [
     {
@@ -109,27 +109,9 @@ const copticMonths: {AR:string, FR:string, EN:string }[] = [
     },
     
 ];
-/* function getPrefixes() {
-    type prefix = { prefix?: string, array?: string[][][] }
-    let prefixes: prefix[] = [];
-    for (let pref in Prefix) {
-        let newPrefix: prefix =
-        {
-            prefix: 'Prefix.' + pref,
-            array:
-                (() => {
-                    let matching = Object.entries(PrayersArrays)
-                        .filter(array => array[0].toLowerCase().startsWith(pref.toLowerCase()))[0];
-                    if (matching) return matching[0];
-                })()
-        };
-        console.log(newPrefix)
-        prefixes.push(newPrefix)         
-    }
-    console.log(prefixes.filter(el=>el.array))
-} */
 
 const Prefix = {
+    same:'S_',
     psalmResponse: 'PR_',
     gospelResponse: 'GR_',
     praxisResponse: 'PRR_',
@@ -158,7 +140,8 @@ const Prefix = {
     cymbalVerses: "CV_", //Stands for Cymbal Verses
     bookOfHours: "BOH_", //Stands for Book Of Prayers
     HolyWeek: 'HW_', //Stands for Holy Week
-    placeHolder: 'PlaceHolder_'
+    placeHolder: 'PlaceHolder_',
+    psalmody: 'Psalmody_'
 };
 const plusCharCode: number = 10133;
 const btnClass = 'sideBarBtn';
@@ -407,7 +390,8 @@ const MassStBasilPrayersArray: string[][][] = [],
         CymbalVersesPrayersArray: string[][][] = [],
         PraxisResponsesPrayersArray: string[][][] = [],
         bookOfHoursPrayersArray: string[][][] = [],
-        holyWeekPrayersArray: string[][][] = [];
+        HolyWeekPrayersArray: string[][][] = [],
+        PsalmodyPrayersArray: string[][][] = [];
 const PrayersArrays = 
     {
     CommonPrayersArray: CommonPrayersArray,
@@ -424,7 +408,8 @@ const PrayersArrays =
     CymbalVersesPrayersArray:CymbalVersesPrayersArray,
     PraxisResponsesPrayersArray: PraxisResponsesPrayersArray,
     bookOfHoursPrayersArray: bookOfHoursPrayersArray,
-    holyWeekPrayersArray: holyWeekPrayersArray
+    holyWeekPrayersArray: HolyWeekPrayersArray,
+    psalmodyPrayersArray: PsalmodyPrayersArray
     };
 
 const
@@ -499,6 +484,9 @@ let actors: Actor[] = [
     },
     {
         EN: 'CommentText',
+    },
+    {
+        EN:'NoActor'
     }
 ]; //These are the names of the classes given to each row accordin to which we give a specific background color to the div element in order to show who tells the prayer
 let showActors = [];
@@ -536,6 +524,7 @@ const PrayersArraysKeys:[string, string][]= [
     [Prefix.katholikon, 'ReadingsArrays.KatholikonArray'],
     [Prefix.praxis, 'ReadingsArrays.PraxisArray'],
     [Prefix.synaxarium, 'ReadingsArrays.SynaxariumArray'],
+    [Prefix.psalmody, 'PsalmodyPrayersArray'],
 ];
 
 

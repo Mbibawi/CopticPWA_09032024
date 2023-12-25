@@ -130,6 +130,7 @@ async function startApp() {
  */
 function createHtmlElementForPrayer(args: {
   tblRow: string[];
+  titleBase: string;
   languagesArray: string[];
   userLanguages?: string[];
   position?:
@@ -161,17 +162,14 @@ function createHtmlElementForPrayer(args: {
   let htmlRow: HTMLDivElement,
     p: HTMLParagraphElement,
     lang: string,
-    text: string,
-    titleBase: string;
+    text: string;
   if (!args.container) args.container = containerDiv;
-
-  titleBase = splitTitle(args.tblRow[0])[0];
 
   htmlRow = document.createElement("div");
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
   if(localStorage.displayMode === displayModes[1]) htmlRow.classList.replace('Row', 'SlideRow');
 
-  htmlRow.dataset.root = titleBase.replace(/Part\d+/, "");
+  if(args.titleBase) htmlRow.dataset.root = args.titleBase.replace(/Part\d+/, "");
 
   if (args.actorClass) htmlRow.classList.add(args.actorClass);
   if (args.actorClass && args.actorClass.includes("Title")) {
@@ -179,7 +177,7 @@ function createHtmlElementForPrayer(args: {
       e.preventDefault;
       collapseOrExpandText({ titleRow: htmlRow });
     }); //we also add a 'click' eventListener to the 'Title' elements
-    htmlRow.id = args.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
+    htmlRow.id = args.titleBase + args.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
   };
 
 
@@ -197,7 +195,7 @@ function createHtmlElementForPrayer(args: {
       lang = foreingLanguage
       : lang = defaultLanguage;
     } else {
-      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, that's why we start from x-1.
+      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, redrethat's why we start from x-1.
     } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     if (args.userLanguages.indexOf(lang) < 0) continue;
       p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
@@ -1671,20 +1669,21 @@ function showPrayers(args:
   let tblHtmlDivs: HTMLDivElement[] = []; 
   tables
     .forEach(table => {
-    if (!table) { console.log('tables = ', tables); return };
+    if (!table) return;
+    let titleBase: string = splitTitle(table[0][0])[0];
     table
       .map(row => {
-        let divs = processRow(row);
+        let divs = processRow(row, titleBase);
         if (!divs || divs.length === 0) return;
         tblHtmlDivs.push(...divs);
       });
   });
   return tblHtmlDivs;
 
-  function processRow(row:string[]):HTMLDivElement[] {
+  function processRow(row:string[], titleBase:string):HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
     if (row[0].startsWith(Prefix.placeHolder)) return processPlaceHolder(row);//If the row is a placeholder, we retrieve the table refrenced in row[1]
-    else return [createElement(row)];//If it is not a placeholder, we created a div element with the text of the row
+    else return [createElement(row, titleBase)];//If it is not a placeholder, we created a div element with the text of the row
   };
 
   function processPlaceHolder(row:string[]):HTMLDivElement[] {
@@ -1697,15 +1696,16 @@ function showPrayers(args:
     if (!tbl) { console.log('Could\'t find the placeHolder table : row[2]  =', row[2]); return }; 
     
     //We create html div elements representing each row (i.e., string[]) in the table
-    
-    return tbl.map(tblRow => createElement(tblRow));
+    let titleBase: string = splitTitle(tbl[0][0])[0];
+    return tbl.map(tblRow => createElement(tblRow, titleBase));
   };
 
-  function createElement(row:string[]):HTMLDivElement{
+  function createElement(row:string[], titleBase:string):HTMLDivElement{
     if (!row) return;
     if (row[0] === Prefix.placeHolder) {processPlaceHolder(row); return};
     return createHtmlElementForPrayer({
       tblRow: row,
+      titleBase:titleBase,
       languagesArray: args.languages, 
       position: args.position,
       container: args.container,
@@ -3039,6 +3039,8 @@ async function populatePrayersArrays() {
       PrayersArrays.PraxisResponsesPrayersArray.push(table);
     } else if (table[0][0].startsWith(Prefix.HolyWeek)) {
       PrayersArrays.holyWeekPrayersArray.push(table);
+    } else if (table[0][0].startsWith(Prefix.psalmody)) {
+      PrayersArrays.psalmodyPrayersArray.push(table);
     } else if (table[0][0].startsWith(Prefix.bookOfHours)) {
       PrayersArrays.bookOfHoursPrayersArray.push(table);
       if (table[0][0].includes("1stHour")) {
@@ -11409,3 +11411,28 @@ let synaxariumIndex = [
     month: 13,
   },
 ];
+
+function ReduceArrays(args: { arrayName, tblFun?: Function, rowFun?: Function }) {
+  let array = eval(args.arrayName) as string[][][];
+  loopTables(array, args.rowFun, args.tblFun);
+  console.log(array);
+  exportToJSFile(processArrayTextForJsFile(args.arrayName, array), args.arrayName);
+
+  function loopTables(array:string[][][], rowFun:Function, tblFun?:Function){
+    array.forEach(tbl => {
+      if (tblFun) tblFun(tbl);
+      loopRows(tbl, rowFun, splitTitle(tbl[0][0])[0])
+    })
+  }
+  function loopRows(tbl:string[][], rowFun:Function, tblTitle:string) {
+      tbl.forEach(row=>rowFun(tbl, row, tblTitle))
+    
+  }
+}
+function shortenRowsTitles(tbl:string[][],row: string[], tblTitle:string) {
+  //return;
+  if (tbl.indexOf(row) === 0) return;
+  let rowTitle = splitTitle(row[0])[0];
+  if (!rowTitle.startsWith(Prefix.placeHolder) && rowTitle !== tblTitle) console.log('row[0] = ', rowTitle, 'tblTitle = ', tblTitle);
+  else if (rowTitle === tblTitle) row[0] = (Prefix.same + '&' + splitTitle(row[0])[1]).replace('&', '&C=');
+}

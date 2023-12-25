@@ -11,7 +11,8 @@ function startEditingMode(args: {
   tableTitle?: string
 }) {
 
-  let tablesArray: string[][][];
+  let tablesArray: string[][][],
+    languages:string[];
 
   if (args.clear !== false) args.clear = true;
   containerDiv.dataset.specificTables = 'false';
@@ -23,15 +24,12 @@ function startEditingMode(args: {
 
     if (args.arrayName === args.select.options[0].innerText) return; //entries[0] === 'Choose From the List'
 
-    if (args.arrayName === args.select.options[1].innerText)  addNewTable();
+    else if (args.arrayName === args.select.options[1].innerText)  addNewTable();
 
-    if (args.arrayName === args.select.options[2].innerText) {
+    else if (args.arrayName === args.select.options[2].innerText) return runFunction();
       //under development : the user will provide a function and the function will be called when he press enter
-      args.arrayName = prompt('Provide the function and the parameters', args.arrayName);
-      if (args.arrayName && args.arrayName.includes('Fun(')) eval(args.arrayName);
-      return
-    }
-    tablesArray = editSpecificTable() ||[];
+
+    else tablesArray = editSpecificTable() ||[];
   }
 
   else tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
@@ -47,24 +45,24 @@ function startEditingMode(args: {
   containerDiv.dataset.arrayName = args.arrayName;
   containerDiv.style.gridTemplateColumns = '100%';
 
-  let languages = getLanguages(args.arrayName) || allLanguages;
+  languages = getLanguages(args.arrayName) || allLanguages;
 
   function addNewTable() {
-      args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
+    args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
     languages = prompt('Provide the sequence of the languages columns', 'COP, FR, CA, AR').split(', ') || getLanguages(args.arrayName);
     
       tablesArray = [
         [
-          ['NewTable&D=$copticFeasts.AnyDay&C=Title']
+          ['NewTable&D=$copticFeasts.AnyDay']
         ]
     ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
     
     tablesArray[0][0].push(...languages);//We push the languages to the first row of the first table in tablesArray. This will give us a first row like  ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', etc.]
     
     
-      let secondRow:string = tablesArray[0][tablesArray[0].push(...tablesArray[0])-1][0]; //We add a second row to the table. the push() method returns the new length of the  array  after the new row has been pushed, we use the new length  to reference the first element of the 2nd row in order to remove the '&C=' from its end
+      tablesArray[0].push([...tablesArray[0][0]]); //!Caution, we need to deconstruct the elements of the row. Otherwise it will not be a true copy. We add a second row to the table.
     
-      secondRow = secondRow.split('&C=')[0]; //We remove the '&C=Title' from the second row
+    tablesArray[0][0][0] += tablesArray[0][0][0] + '&C=Title'; //We remove the '&C=Title' from the second row
   };
 
  
@@ -103,6 +101,11 @@ function startEditingMode(args: {
     return matchingTables
   };
 
+  function runFunction() {
+    args.arrayName = prompt('Provide the function and the parameters', args.arrayName);
+      if (args.arrayName && args.arrayName.includes('Fun(')) eval(args.arrayName);
+  }
+
   if (!tablesArray || tablesArray.length < 1) return console.log('tablesArray was not set');
   
   (function editTables() {  
@@ -138,15 +141,17 @@ function showTables(args: {
 
     if (args.clear === true) containerDiv.innerHTML = '';
   //We create an html div element to display the text of each row of each table in tablesArray
+  let titleBase: string;
   args.tablesArray
     .forEach(table => {
   if (!table) return;
+      titleBase = splitTitle(table[0][0])[0] || 'NoTitle';
       table
         .forEach(row => {
           if (!row) return;
-          
         createHtmlElementForPrayerEditingMode({
-          tblRow:row,
+          tblRow: row,
+          titleBase:titleBase,
           languagesArray: args.languages,
           position: args.position,
           container: args.container,
@@ -519,6 +524,7 @@ function processArrayTextForJsFile(arrayName:string, tablesArray?: string[][][])
 
 function replacePrefixes(text: string, arrayName:string): string {
   text = text
+    .replaceAll('"' + Prefix.same, 'Prefix.same+"')
     .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
     .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
     .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
@@ -548,6 +554,8 @@ function replacePrefixes(text: string, arrayName:string): string {
     .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
     .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
     .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
+    //Psalmody
+    .replaceAll('"' + Prefix.psalmody, 'Prefix.psalmody+"')
   if (arrayName !== 'PrayersArray') return text;
     //Seasonal 
   text = text
@@ -652,6 +660,7 @@ function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
 
 function createHtmlElementForPrayerEditingMode(args: {
   tblRow: string[],
+  titleBase:string,
   languagesArray: string[],
   position?:
     | HTMLElement
@@ -680,8 +689,8 @@ function createHtmlElementForPrayerEditingMode(args: {
  
   if(!isPlaceHolder){
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  htmlRow.title = args.tblRow[0];//We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
-  htmlRow.dataset.root = splitTitle(args.tblRow[0])[0];
+  htmlRow.title = args.titleBase;//We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
+  htmlRow.dataset.root = args.titleBase;
     htmlRow.dataset.group = htmlRow.dataset.root;//The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
     actorClass = splitTitle(args.tblRow[0])[1] ||'';
     if(actorClass) htmlRow.classList.add(actorClass);
@@ -735,9 +744,10 @@ function createHtmlElementForPrayerEditingMode(args: {
         [...tblsArray
           .find(tbl => splitTitle(tbl[0][0])[0] === referrencedTblTitle)]//!Caution, we must create a copy of the table otherwise the original table may be reversed in it its array
           .reverse()
-          .map(row => {
+          .map((row, tbl) => {
             return createHtmlElementForPrayerEditingMode({
-              tblRow:row,
+              tblRow: row,
+              titleBase: splitTitle(tbl[0][0])[0],
               languagesArray: copyLangs,
               position:{
                 el: htmlRow,
@@ -826,11 +836,12 @@ function addTableToSequence(htmlParag: HTMLElement) {
   let result = prompt(sequence.join(", \n"), sequence.join(", \n"));
   sequence = result.split(", \n");
   if (document.getElementById("showSequence")) {
-    let tableRows = Array.from(containerDiv.children).filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root.startsWith(splitTitle(htmlRow.dataset.root)[0]));
+    let tableRows = Array.from(containerDiv.children).filter((htmlRow: HTMLDivElement) => htmlRow.dataset.root);
     
     tableRows.forEach((row: HTMLDivElement) => {
       createHtmlElementForPrayerEditingMode({
-        tblRow:Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
+        tblRow: Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
+        titleBase:row.dataset.root,
         languagesArray:allLanguages,
         position: document.getElementById("showSequence") as HTMLElement
       });
@@ -885,7 +896,8 @@ function showSequence(
     tableRows
       .forEach((row) => {
       createHtmlElementForPrayerEditingMode({
-        tblRow:Array.from(row.querySelectorAll("p")).map((p: HTMLElement) => p.innerText),
+        tblRow: Array.from(row.querySelectorAll("p")).map((p: HTMLElement) => p.innerText),
+        titleBase:title,
         languagesArray:allLanguages,
         position: newDiv
       }

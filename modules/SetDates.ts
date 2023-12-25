@@ -11,8 +11,8 @@ async function setCopticDates(today?: Date) {
 	}
 	todayDate = today;
 	weekDay = todayDate.getDay();
-	convertGregorianDateToCopticDate(today.getTime());
-	//copticDate = convertGregorianDateToCopticDate(todayDate);
+	convertGregorianDateToCopticDate(today.getTime(), true);
+
 	Season = Seasons.NoSeason //this will be its default value unless it is changed by another function;
 	copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
 	if(checkIf29thOfCopticMonth()) copticFeasts.theTwentyNinethOfCopticMonth = copticDate;
@@ -32,10 +32,35 @@ async function setCopticDates(today?: Date) {
 	})();
 }
 /**
+ * Converts a date 
+ * @param {number[]} copticDate - the copticDate for which we want to get the gregorian date, it must be formatted as [day, month, year] 
+ * @returns 
+ */
+function convertCopticDateToGregorianDate(copticDate: number[], gregorianDate?:number) {
+	if (!copticDate || copticDate.length < 3) return;
+	
+	let currentCopticDate = convertGregorianDateToCopticDate()[0]; //This will give a [day, month, year] array
+
+	let yearsDifference = copticDate[2] - currentCopticDate[2];
+	let monthsDifference = copticDate[1] - currentCopticDate[1];
+	let daysDifference = copticDate[0] - currentCopticDate[0];
+
+	let calendarDaysDifference = ((yearsDifference * 365) + (monthsDifference * 30) + daysDifference) * calendarDay;
+
+	calendarDaysDifference = calendarDaysDifference + (yearsDifference / 4) //Leap years
+
+	if (!gregorianDate) gregorianDate = todayDate.getDate();
+	
+	gregorianDate = gregorianDate - calendarDaysDifference;
+	
+	return gregorianDate
+
+}
+/**
  * Converts the provided Gregorian date into Coptic Date
  * @param {number} today - a number reflecting a date, which we will convert into coptic date. If ommitted, it will be set to the current date 
  * @param {boolean} changeDates - tells whether the function should change the Coptic dates or should just return the new Coptic Date
- * @returns {[number[], string]} - an array containing as 1st element an array representing the coptic day, coptic month, and coptic year, the second elemement of the array is a string representing the copitc date formatted as 'DDMM'
+ * @returns {[number[], string]} - an array containing as 1st element a number[] = [day, month, year] representing the coptic day, coptic month, and coptic year, the second elemement of the array is a string representing the copitc date formatted as 'DDMM'
  */
 function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = true): [number[], string]{
 	
@@ -93,14 +118,14 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
 function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string | void {
 	if (!coptDate) return console.log('coptDate is not valid = ', coptDate);
 	
-	let specialSeason: string = checkIfInASpecificSeason(today);
+	let specialSeason: string = 	checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
 		return specialSeason;
-	} else if (today.getDay() === 0) {
+	} else if (weekDay === 0) {
 		// it means we are on an ordinary  Sunday (any sunday other than Great lent and Pentecostal period Sundays)
 		// console.log('We are on a sunday')
-		let sunday: string = checkWhichSundayWeAre(Number(copticDay),0);
+		let sunday: string = checkWhichSundayWeAre(Number(copticDay),weekDay);
 		//the readings for the 5th sunday of any coptic month (other than the 5th sunday of the Great Lent or the Pentecostal Days) are the same. We will then retrieve the readings of the 5th sunday of the first coptic month (Tout)
 		sunday === "5thSunday"
 			? (sunday = "01" + sunday)
@@ -139,7 +164,7 @@ function checkWhichSundayWeAre(day: number, theWeekDay:number=0): string
 function checkIfInASpecificSeason(today: Date): string {
 	let readingsDate: string;
 	//We filter the ResurrectionDates array for the resurrection date for the current year: 
-	let resurrectionDate: string = ResurrectionDates.filter(date => new Date(date).getFullYear() === today.getFullYear())[0];
+	let resurrectionDate: string = ResurrectionDates.find(date => date[0] === today.getFullYear())[1];
 
 	//We create a new Date from the selected resurrection date, and will set its hour to UTC 0
 	let resurrection = new Date(resurrectionDate).setHours(0, 0, 0, 0);
@@ -174,7 +199,12 @@ function checkForUnfixedEvent(
 		//If we are Saturday (which means that difference = 1) and we are after 3 PM, we will retrieve the readings of the Resurrection because we use to celebrate the Resurrection Mass on Saturday evening not on Sunday itself
 		Season = Seasons.PentecostalDays; //we set teh Season value
 		return isItSundayOrWeekDay(Seasons.GreatLent, 58, weekDay);
-		
+	} else if (difference > 65 && difference < 70) {
+		//We are in the Jonah Feast days (3 days + 1)
+		//The Jonah feast starts 15 days before the begining of the Great Lent
+		//I didn't find the readings for this period in the Power Point presentations
+		Season = Seasons.JonahFast;
+		return isItSundayOrWeekDay(Seasons.JonahFast, Math.abs(70 - difference), weekDay);
 	} else if (difference >0 && difference < 58) {
 		//We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day
 		if (copticDate === '1007')
@@ -188,14 +218,7 @@ function checkForUnfixedEvent(
 		
 		return isItSundayOrWeekDay(Seasons.GreatLent, 58 - difference, weekDay);
 
-	} else if (difference > 65 && difference < 70) {
-		//We are in the Jonah Feast days (3 days + 1)
-		//The Jonah feast starts 15 days before the begining of the Great Lent
-		//I didn't find the readings for this period in the Power Point presentations
-		Season = Seasons.JonahFast;
-		return isItSundayOrWeekDay(Seasons.JonahFast, Math.abs(70 - difference), weekDay);
-
-	} else if (Math.abs(difference) < 50) {
+	} else if (difference <0 && Math.abs(difference) < 50) {
 		difference
 		// we are during the 50 Pentecostal days
 		Season = Seasons.PentecostalDays;
@@ -204,16 +227,29 @@ function checkForUnfixedEvent(
 			Math.abs(difference),
 			weekDay
 		);
+	} else if (
+		difference < 0 && Math.abs(difference) > 49
+		&& Number(copticMonth) > convertGregorianDateToCopticDate(resDate, false)[0][1]//This is the coptic month for the Resurrection day
+		&& (
+			Number(copticMonth) < 11
+		||
+			(Number(copticMonth) === 11 && Number(copticDay) < 5) //This is the Apostles Feast
+		)
+	) {
+		//We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
+			Season = Seasons.ApostlesFast;
 	} else if (Number(copticMonth) === 12 && Number(copticDay) < 16) {
 		//We are during the St Mary Fast
 		Season = Seasons.StMaryFast;
 
 	} else if ((Number(copticMonth) === 1) && Number(copticDay)<20) {
-		if (Number(copticDay) < 17) Season = Seasons.Nayrouz;
-		else if (Number(copticDay) > 16) Season = Seasons.CrossFeast;
+		if (Number(copticDay) < 17)
+			Season = Seasons.Nayrouz;
+		else if (Number(copticDay) > 16)
+			Season = Seasons.CrossFeast;
 
 	} else if (Number(copticMonth) === 4 && Number(copticDay) < 29) {
-		let sunday = checkWhichSundayWeAre(Number(copticDay) - todayDate.getDay());
+		let sunday = checkWhichSundayWeAre(Number(copticDay) - weekDay);
 		//We are during the month of Kiahk which starts on 16 Hatour and ends on 29 Kiahk
 		if (sunday === '1stSunday' || sunday === '2ndSunday') Season = Seasons.KiahkWeek1;
 		else if (sunday === '3rdSunday' || sunday === '4thSunday') Season = Seasons.KiahkWeek2;
@@ -224,14 +260,12 @@ function checkForUnfixedEvent(
 	} else if (copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15) {
 		//We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
 		return copticFeasts.NativityParamoun;
-
 	} else if (
 		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() > 15) 
 		|| (Number(copticMonth) === 4 && Number(copticDay) > 28)
 		||(Number(copticMonth) === 5 && Number(copticDay) < 7)) {
 		//We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
 		Season = Seasons.Nativity; //From 28 Kiahk afternoon to Circumsion (6 Toubi)
-
 	} else if (
 		(copticDate === '0805' || copticDate === '0905')
 		&& todayDate.getDay() === 5) {
@@ -243,22 +277,8 @@ function checkForUnfixedEvent(
 		(Number(copticMonth) === 5 && Number(copticDay) > 10 && Number(copticDay) < 13)) {
 		//We are between the Nativity and the Baptism
 		Season = Seasons.Baptism;
-		
 	} else if (Number(copticMonth) === 1 && Number(copticDay) < 17) {
 		Season = Seasons.Nayrouz;
-	} else if (
-		difference < 0 && Math.abs(difference) > 49
-		&& (
-			Number(copticMonth) === 9
-		||	
-			Number(copticMonth) === 10
-		||
-			(Number(copticMonth) === 11 && Number(copticDay) < 5)
-		)
-	) {
-		//!CAUTION: this must come after all the cases preceding the begining of the Great Lent (otherwise, the 3rd condition: copticMonth <11, will be fulfilled and we will fall into this else if statement)
-		//We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
-			Season = Seasons.ApostlesFast;
 	} 
 };
 /**
@@ -295,7 +315,7 @@ function showDates(dateDiv: HTMLDivElement = document.getElementById('dateDiv') 
 	let date:string = 'Date: ' +
 	todayDate.getDate().toString() + '/' +
 	(todayDate.getMonth()+1).toLocaleString('en-US') + '/' +
-	(todayDate.getFullYear() + 1).toString()
+	(todayDate.getFullYear()).toString()
 	
 	insertDateBox(date, 'gregorianDateBox');
 
@@ -312,7 +332,8 @@ function showDates(dateDiv: HTMLDivElement = document.getElementById('dateDiv') 
 		if (copticReadingsDate.startsWith(Seasons.GreatLent)) return 'Day ' + copticReadingsDate.split(Seasons.GreatLent)[1] + 'of the Great Lent';
 
 		if (copticReadingsDate.startsWith(Seasons.PentecostalDays)) return 'Day ' + copticReadingsDate.split(Seasons.PentecostalDays)[1] + ' of the 50 Pentecostal Days';
-		
+
+				
 		if (copticReadingsDate.endsWith('Sunday')
 		&& copticMonths[Number(copticReadingsDate.slice(0, 2))]) return copticMonths[Number(copticReadingsDate.slice(0, 2))].EN + ' ' + copticReadingsDate.slice(2, copticReadingsDate.length).split('Sunday')[0] + ' Sunday';
 		
