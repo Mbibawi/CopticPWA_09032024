@@ -131,9 +131,7 @@ const btnMain: Button = new Button({
     EN: "Back to the main menu",
   },
   onClick: () => {
-    btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours];
-    if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnMain.children.push(btnKiahk);
-
+    btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours, btnPsalmody];
 
     (function showBtnsOnMainPage() {
       if (leftSideBar.classList.contains('extended')) return;//If the left side bar is not hidden, we do not show the buttons on the main page because it means that the user is using the buttons in the side bar and doesn't need to navigate using the btns in the main page
@@ -1887,16 +1885,20 @@ const btnBookOfHours:Button =  new Button({
     }
     });
 
-    const btnKiahk: Button = new Button({
-      btnID: "btnKiahk",
+    const btnPsalmody: Button = new Button({
+      btnID: "btnPsalmody",
       label: {
         AR: "تسبحة كيهك",
         FR: "Louanges de l'Avent",
       },
+      languages:[...prayersLanguages],
+      showPrayers:true,
       onClick: () => {
-        if (Season !== Seasons.KiahkWeek1 && Season !== Seasons.KiahkWeek2) return;
-        btnKiahk.prayersArray = PrayersArrays.psalmodyPrayersArray;
-        btnKiahk.prayersSequence = [Prefix.psalmody + 'KiahkChants&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek1']
+        btnPsalmody.prayersArray = PrayersArrays.psalmodyPrayersArray;
+
+        if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnPsalmody.prayersSequence = [Prefix.psalmody +
+          "KiahkChants&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek1"];
+        else btnPsalmody.prayersSequence = PrayersArrays.psalmodyPrayersArray.map(tbl => tbl[0][0]); 
     
           
           },
