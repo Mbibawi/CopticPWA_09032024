@@ -953,14 +953,16 @@ function splitParagraphsToTheRowsBelow(htmlParag:HTMLElement) {
   while (htmlParag.tagName !== 'P' && htmlParag.parentElement) htmlParag = htmlParag.parentElement;
 
   if (htmlParag.tagName !== 'P') return showAlert();
-  let dataRoot: string = htmlParag.dataset.root,
+  let title: string =
+    htmlParag.parentElement.dataset.title
+    || htmlParag.parentElement.dataset.root + '&C=' + Array.from(htmlParag.parentElement.classList).find(c=>c !== 'Row'),
     lang: string = htmlParag.lang,
     table: HTMLElement[] =
       Array.from(containerDiv.children)
         .filter((htmlRow: HTMLDivElement) =>
           htmlRow.dataset.root
-          && htmlRow.dataset.root === splitTitle(dataRoot)[0]) as HTMLElement[];//Those are all the rows belonging to the same table, including the title
-  if (!table || table.length === 0) return alert('We didn\'t find any elements having the same data-root as the selected paragraph: ' + dataRoot);
+          && htmlRow.dataset.root === splitTitle(title)[0]) as HTMLElement[];//Those are all the rows belonging to the same table, including the title
+  if (!table || table.length === 0) return alert('We didn\'t find any elements having the same data-root as the selected paragraph: ' + title);
   
     let rowIndex: number = table.indexOf(htmlParag.parentElement);
   //We retrieve the paragraph containing the text
@@ -971,7 +973,7 @@ function splitParagraphsToTheRowsBelow(htmlParag:HTMLElement) {
     if (!splitted[i] || splitted[i] === '') continue;
     if (!table[i+rowIndex]) {
       //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
-      table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), dataRoot));
+      table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), title));
     }
     let paragraph = Array.from(table[i + rowIndex].children)
       .filter((p: HTMLElement) => p.lang === lang)[0] as HTMLElement;
