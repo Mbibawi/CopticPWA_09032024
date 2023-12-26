@@ -430,9 +430,10 @@ function saveModifiedArray(args: {
         
   function modifyArray(htmlTable:HTMLDivElement[]) {   //We generate a string[][] array from the div elements we selected. Each div element is an elemet of the string[][], and each paragraph attached to such div is a string element.
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
-    //If we have placeHolders rows that were not converted:
-    editedTable.filter(row => row[0].startsWith(Prefix.placeHolder) && row.length === 1).forEach(row => row.unshift( Prefix.placeHolder));
+
+    if (!editedTable || editedTable.length < 1) return console.log('convertHtmlDivElementsIntoArrayTable() returned undefined, or empty aray');
     
+   
       let oldTable: string[][] =
         tablesArray
         .find(tbl => splitTitle(tbl[0][0])[0] === splitTitle(editedTable[0][0])[0]);
@@ -522,41 +523,19 @@ function processArrayTextForJsFile(arrayName:string, tablesArray?: string[][][])
   return  text
 }
 
-function replacePrefixes(text: string, arrayName:string): string {
-  text = text
-    .replaceAll('"' + Prefix.same, 'Prefix.same+"')
-    .replaceAll('"' + Prefix.bookOfHours, 'Prefix.bookOfHours+"')
-    .replaceAll('"' + Prefix.doxologies, 'Prefix.doxologies+"')
-    .replaceAll('"' + Prefix.commonIncense, 'Prefix.commonIncense+"')
-    .replaceAll('"' + Prefix.commonPrayer, 'Prefix.commonPrayer+"')
-    .replaceAll('"' + Prefix.communion, 'Prefix.communion+"')
-    .replaceAll('"' + Prefix.cymbalVerses, 'Prefix.cymbalVerses+"')
-    .replaceAll('"' + Prefix.fractionPrayer, 'Prefix.fractionPrayer+"')
-    .replaceAll('"' + Prefix.gospelResponse, 'Prefix.gospelResponse+"')
-    .replaceAll('"' + Prefix.incenseDawn, 'Prefix.incenseDawn+"')
-    .replaceAll('"' + Prefix.incenseVespers, 'Prefix.incenseVespers+"')
-    .replaceAll('"' + Prefix.massCommon, 'Prefix.massCommon+"')
-    .replaceAll('"' + Prefix.massStBasil, 'Prefix.massStBasil+"')
-    .replaceAll('"' + Prefix.massStCyril, 'Prefix.massStCyril+"')
-    .replaceAll('"' + Prefix.massStGregory, 'Prefix.massStGregory+"')
-    .replaceAll('"' + Prefix.massStJohn, 'Prefix.massStJohn+"')
-    .replaceAll('"' + Prefix.psalmResponse, 'Prefix.psalmResponse+"')
-    .replaceAll('"' + Prefix.praxisResponse, 'Prefix.praxisResponse+"')
-    .replaceAll('"' + Prefix.placeHolder + '"', 'Prefix.placeHolder')
-    //Readings
-    .replaceAll('"' + Prefix.synaxarium, 'Prefix.synaxarium+"')
-    .replaceAll('"' + Prefix.stPaul, 'Prefix.stPaul+"')
-    .replaceAll('"' + Prefix.katholikon, 'Prefix.katholikon+"')
-    .replaceAll('"' + Prefix.praxis, 'Prefix.praxis+"')
-    .replaceAll('"' + Prefix.propheciesDawn, 'Prefix.propheciesDawn+"')
-    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
-    .replaceAll('"' + Prefix.gospelDawn, 'Prefix.gospelDawn+"')
-    .replaceAll('"' + Prefix.gospelMass, 'Prefix.gospelMass+"')
-    .replaceAll('"' + Prefix.gospelNight, 'Prefix.gospelNight+"')
-    .replaceAll('"' + Prefix.gospelVespers, 'Prefix.gospelVespers+"')
-    //Psalmody
-    .replaceAll('"' + Prefix.psalmody, 'Prefix.psalmody+"')
-  if (arrayName !== 'PrayersArray') return text;
+function replacePrefixes(text: string, arrayName: string): string {
+  let prefix:string;
+  Object.entries(Prefix)
+    .forEach(entry => {
+      prefix = 'Prefix.' + entry[0];
+      
+      if (entry[1] === Prefix.placeHolder)
+        text = text.replaceAll('\"' + eval(prefix) + '\"', prefix);
+        
+      else text = text.replaceAll('\"' + eval(prefix), prefix+= '+"');
+    });
+  
+    if (arrayName !== 'PrayersArray') return text;
     //Seasonal 
   text = text
     .replaceAll(giaki.AR, '"+giaki.AR+"')
@@ -565,6 +544,8 @@ function replacePrefixes(text: string, arrayName:string): string {
     .replaceAll(giaki.CA, '"+giaki.CA+"');
   return text;
 }
+
+
 
 function replaceHtmlQuotes(innerHtml: string, lang:string): string{
   if (!innerHtml.includes('<q>')) return innerHtml;
@@ -667,14 +648,14 @@ function createHtmlElementForPrayerEditingMode(args: {
     | DocumentFragment
     | { beforeOrAfter: InsertPosition; el: HTMLElement },
   container?: HTMLElement | DocumentFragment,
-  arrayName?: string
+  arrayName?: string,
+  actorClass?:string
 }
 ): HTMLDivElement {
   if(!args.position) args.position = containerDiv;
   if (!args.container) args.container = containerDiv;
   
 
-  
   let htmlRow: HTMLDivElement,
         p: HTMLParagraphElement,
         lang: string,
@@ -683,16 +664,18 @@ function createHtmlElementForPrayerEditingMode(args: {
         isPlaceHolder: boolean;
   
   args.tblRow[0].startsWith(Prefix.placeHolder) ? isPlaceHolder = true : isPlaceHolder = false;
+
+  actorClass = splitTitle(args.tblRow[0])[1] ||'';
   
   htmlRow = document.createElement('div');
   if (args.arrayName) htmlRow.dataset.arrayName = args.arrayName;
  
   if(!isPlaceHolder){
   htmlRow.classList.add("Row"); //we add 'Row' class to this div
-  htmlRow.title = args.titleBase;//We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
+  htmlRow.title = args.titleBase + '&C=' + actorClass;//We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
   htmlRow.dataset.root = args.titleBase;
-    htmlRow.dataset.group = htmlRow.dataset.root;//The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
-    actorClass = splitTitle(args.tblRow[0])[1] ||'';
+  htmlRow.dataset.group =  args.titleBase;//The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
+
     if(actorClass) htmlRow.classList.add(actorClass);
   } else if (isPlaceHolder) {
     args.tblRow = [...args.tblRow]; //We create a copy of the row
@@ -1260,3 +1243,4 @@ function showBtnInEditingMode(btn: Button) {
   if (btn.btnID === btnMain.btnID) addSettingsButton();
   
 }
+

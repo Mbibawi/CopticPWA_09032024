@@ -3166,7 +3166,7 @@ function convertHtmlDivElementsIntoArrayTable(
   let table: string[][] = [];
   htmlRows
     .forEach(row => {
-    if (!row.title) return alert("the row dosen't have title");
+    if (!row.title || !row.dataset.root) return alert("the row dosen't have title");
     table
       .push(
         Array.from(row.children)
@@ -3176,7 +3176,18 @@ function convertHtmlDivElementsIntoArrayTable(
             return p.innerText;
           })
       );
-    table[table.length - 1].unshift(row.title);//We add the title as the first element in the table
+          let first:string
+      if (row.dataset.isPlaceHolder)
+        first = Prefix.placeHolder;
+        
+      else if (htmlRows.indexOf(row) > 0 && row.dataset.root === htmlRows[0].dataset.root)
+        first = Prefix.same + row.title.split(row.dataset.root)[1];
+        
+      else first = row.title;
+      
+      table[table.length - 1].unshift(first);
+
+    
   });
   return table;
 }
