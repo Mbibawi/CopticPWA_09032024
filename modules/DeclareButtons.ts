@@ -133,6 +133,12 @@ const btnMain: Button = new Button({
   onClick: () => {
     btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours, btnPsalmody];
 
+    if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnPsalmody.label =
+    {
+      AR: "الإبصلمودية الكيهكية",
+      FR: "Psalmodie de Kiahk",
+    };
+
     (function showBtnsOnMainPage() {
       if (leftSideBar.classList.contains('extended')) return;//If the left side bar is not hidden, we do not show the buttons on the main page because it means that the user is using the buttons in the side bar and doesn't need to navigate using the btns in the main page
       
@@ -1885,24 +1891,24 @@ const btnBookOfHours:Button =  new Button({
     }
     });
 
-    const btnPsalmody: Button = new Button({
-      btnID: "btnPsalmody",
-      label: {
-        AR: "تسبحة كيهك",
-        FR: "Louanges de l'Avent",
-      },
-      languages:[...prayersLanguages],
-      showPrayers:true,
-      onClick: () => {
-        btnPsalmody.prayersArray = PrayersArrays.psalmodyPrayersArray;
+const btnPsalmody: Button = new Button({
+  btnID: "btnPsalmody",
+  label: {
+    AR: "الإبصلمودية السنوية",
+    FR: "Psalmodie",
+  },
+  languages: [...prayersLanguages],
+  showPrayers: true,
+  onClick: () => {
+    btnPsalmody.prayersArray = PrayersArrays.psalmodyPrayersArray;
 
-        if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnPsalmody.prayersSequence = [Prefix.psalmody +
-          "KiahkChants&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek1"];
-        else btnPsalmody.prayersSequence = PrayersArrays.psalmodyPrayersArray.map(tbl => tbl[0][0]); 
-    
-          
-          },
-    });
+    btnPsalmody.prayersSequence = PsalmodyPrayersSequences.PsalmodyYear;
+
+    if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnPsalmody.prayersSequence = PsalmodyPrayersSequences.PsalmodyKiahk;
+
+  }
+});
+
 
 /**
  * takes a liturgie name like "IncenseDawn" or "IncenseVespers" and replaces the word "Mass" in the buttons gospel readings prayers array by the name of the liturgie. It also sets the psalm and the gospel responses according to some sepcific occasions (e.g.: if we are the 29th day of a coptic month, etc.)

@@ -22925,38 +22925,6 @@ PrayersArray = [
   [
     [
       Prefix.psalmody +
-        "KiahkChants&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek1",
-    ],
-        [
-            Prefix.placeHolder,
-            "Psalmody_WakeUpSonsOfLight&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2"
-        ],
-        [
-            Prefix.placeHolder,
-            "Psalmody_KiahkHos&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2"
-        ],
-        [
-            Prefix.placeHolder,
-            Prefix.psalmody +
-              "ChantAgiosOsiOs&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2",
-          ],
-        [
-            Prefix.placeHolder,
-            "Psalmody_EpsalyOnFirstHos&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.AnyDay"],
-        [
-            Prefix.placeHolder,
-            "Psalmody_FirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2"],
-        [
-            Prefix.placeHolder,
-            "Psalmody_LobshFirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2"],
-        [
-            Prefix.placeHolder,
-            "Psalmody_ChantGodSaidToMoses&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2"
-        ],
-  ],
-  [
-    [
-      Prefix.psalmody +
         "ChantAgiosOsiOs&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2&C=Title",
       "",
       "Cantique Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ",
@@ -24575,4 +24543,55 @@ PrayersArray = [
         "وكَانْ مُوسَى يُسَبِّحْ قُدَّامْ، وطِلعوا مِنْ المِيناءْ، إلي حِينْ وصلوا بِسَلامْ، هي إبشافي إن سينا. ", 
         ],
         ],
+        [
+            [
+            Prefix.psalmody+"CommentaryOnHos1&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||Seasons.KiahkWeek2&C=Title", 
+            "", 
+            "Commentaire du 1er Hos", 
+            "", 
+            "طرح آدام على الهوس الأول", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Dieu dit à Moïse, de frapper de son bâton la Mer Rouge, et elle se divisera en deux, afin que les fils d’Israël traversent la mer sur une terre sèche. Que tous les Égyptiens sachent que Je suis l’Éternel, et personne d’autre que Moi.", 
+            "", 
+            "قَالَ الرَبُّ لِمُوسَى: \"مِدّْ عَصَاكْ عَلَى البَحْرْ الأحْمَرْ، فَيَنْشَقْ نِصْفِينْ. ليَدخْلوا بَنْو إسْرائْيل فِي وسَطْ البَحْرْ مِثْلِ اليابِسْ. ولِيَعْلَمْ جَمِيعْ أهْلْ مِصْرْ أنّي أنا الرَبّْ ولَيْسَ أحَدٌ غَيْري.", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Alors Moïse étendit sa main sur la Mer Rouge, et la frappa comme lui dit l’Éternel. La mer se divisa, les eaux se fendirent, et les fils d’Israël ont traversé la mer. Les Égyptiens les poursuivirent, ainsi que Pharaon le roi, avec tous ses chars et cavaliers. Les eaux revinrent, et couvrirent les Égyptiens, les cavaliers et toute l’armée de Pharaon. Ils furent tous noyés, au milieu de la mer, et il n’en échappa pas un seul.", 
+            "", 
+            "فَمَدَّ مُوسَى يَدَهُ عَلى البَحْرْ الأحْمَرْ، وضَرَبَهُ كَمَا قَالَ الرَبّْ، فَافْتَرَقْ البَحْرْ، والمَيَاهْ انْشَقَّتْ، وعَبَرَ بَنْو إسْرائيلْ البَحْرْ، فَتَبِعَهُمْ المِصْريونْ وفِرْعَون المَلِكْ، وكُلِّ مَركَبَاتُه وخِيوله، فَرَجَعَ المَاء وغَطَّى المِصْريونْ، وخِيول فِرْعَونْ والراكْبينْ عَلَيّها، وغَرَقْ الجَميعْ في وسَطْ البَحرْ، ولَمْ يَبْقَ مِنْهُمْ ولاَ واحِدْ.", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Alors, les fils d’Israël marchaient à sec en plein mer. Et les eaux étaient pour eux comme une muraille à leur droite et à leur gauche.", 
+            "", 
+            "وكَانَ بَنْو إسْرائيلْ يَمْشُونْ عَلى اليَابِسْ في وَسَطْ البَحْرْ، وكَان المَاءْ لَهُمْ مِثْلَ السُور عَن يَمِينِهِمْ ويَسارِهِمْ.", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Quand les Israélites virent ce grand miracle, et que les Égyptiens périrent dans la mer, ils furent tous remplis de crainte pour le Seigneur, et ils crurent au Seigneur et à son serviteur Moïse.", 
+            "", 
+            "فَلَمَّا رَأى إسْرائيلْ هَذهِ الأُعْجُوبَةْ العَظِيمَةْ، وأنَّ المِصْريينْ مَاتُوا في البَحْرِ، فَخَافْ الرَبّْ جَميعْ الشَعبْ، وآمَنَ بِالله وبِعَبْدِهِ مُوسَى.", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Alors Moïse et le les fils d’Israël louèrent le Seigneur d’une seule voix en disant : « Louons notre Seigneur car de gloire, Il s’est glorifié ».", 
+            "", 
+            "حِينَئِذٍ، بِالتَسْبيحْ قَدْ سَبَّحَ مُوسَى وبَنو إسْرائيلْ بِهَذِهِ التَسْبِحَةْ، وقَالَ ليَقُولُوا مِنْ فَمٍّ واحِدْ: \"فَلْنُسَبِحْ الرَبّْ لأنَّهُ بِالمَجْدِ قَدّ تَمَجَدْ.\"", 
+            ],
+            [
+            Prefix.same+"&C=Assembly", 
+            "", 
+            "Par les prières de Moïse chef des prophètes, Seigneur accorde-nous le pardon de nos péchés. Amen Alléluia.", 
+            "", 
+            "بِطَلِباتْ مُوسى رَئِيسُ الأنبياء، يا رَبّ اِنْعِمْ لَنا بِغُفْرانْ خَطَايَانا. آمْينْ هللّيلويا.", 
+            ],
+            ],
 ];

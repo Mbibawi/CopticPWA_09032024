@@ -62,7 +62,7 @@ function startEditingMode(args: {
     
       tablesArray[0].push([...tablesArray[0][0]]); //!Caution, we need to deconstruct the elements of the row. Otherwise it will not be a true copy. We add a second row to the table.
     
-    tablesArray[0][0][0] += tablesArray[0][0][0] + '&C=Title'; //We remove the '&C=Title' from the second row
+    tablesArray[0][0][0] +=  '&C=Title'; //We remove the '&C=Title' from the second row
   };
 
  

@@ -61,34 +61,37 @@ document.addEventListener("DOMContentLoaded", startApp);
 async function startApp() {
   if (localStorage.fontSize) setFontSize(localStorage.fontSize);
 
-  showChildButtonsOrPrayers(btnMain);
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
     let newDate = new Date(),
-      selectedDate: Date;
-      selectedDate = new Date(Number(localStorage.selectedDate)); //We create a date from the date saved in th localStorage
+    selectedDate: Date;
+    selectedDate = new Date(Number(localStorage.selectedDate)); //We create a date from the date saved in th localStorage
     //selectedDate.setTime();
     if (!checkIfDateIsToday(selectedDate)) {
       alert(
         "WARNING ! The date is manually set by the user to " +
-          selectedDate.getDate().toString() +
-          "/" +
-          (selectedDate.getMonth() + 1).toString() +
-          "/" +
-          selectedDate.getFullYear().toString() +
-          ". This choice will not kept. If you want the current date, you have to change the date manually"
-      );
-      selectedDate.setHours(
-        newDate.getHours(),
-        newDate.getMinutes(),
+        selectedDate.getDate().toString() +
+        "/" +
+        (selectedDate.getMonth() + 1).toString() +
+        "/" +
+        selectedDate.getFullYear().toString() +
+        ". This choice will not kept. If you want the current date, you have to change the date manually"
+        );
+        selectedDate.setHours(
+          newDate.getHours(),
+          newDate.getMinutes(),
         newDate.getSeconds(),
         newDate.getMilliseconds()
-      ); //We set its hours, minutes, and seconds to the current time
-      setCopticDates(selectedDate);
-    }
-  } else {
-    setCopticDates();
+        ); //We set its hours, minutes, and seconds to the current time
+        setCopticDates(selectedDate);
+      }
+    } else {
+      setCopticDates();
   };
+
+
+  showChildButtonsOrPrayers(btnMain); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
+
   await loadTextScripts();
   async function loadTextScripts() {
     //! We must load the text scripts after the dates were set and the 'giaki' variable was defined
@@ -367,8 +370,9 @@ async function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
   if (btn.afterShowPrayers && localStorage.displayMode === displayModes[1]) await btn.afterShowPrayers();
   else if (btn.afterShowPrayers) btn.afterShowPrayers();//!btn.afterShowPrayers() is an async function, that's why we don't call it here when in Presentation Mode because , it will not have ended inserting the new elements when showPrayersInPresentationMode() is called
 
-  //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-  setCSS(Array.from(container.querySelectorAll("div.Row"))); //setting the number and width of the columns for each html element with class 'Row'
+
+  setCSS(Array.from(container.querySelectorAll("div.Row")));   //!Important : setCSSGridTemplate() MUST be called after btn.afterShowPrayres() in order to set the CSS for all the elements that btn.afterShowPrayers() might insert
+
   applyAmplifiedText(
     Array.from(container.querySelectorAll("div.Row")) as HTMLDivElement[]
   );
@@ -1750,8 +1754,9 @@ if (arrayName) return 'ReadingsArray.' + arrayName;
 };
 
 /**
- * Sets the number of columns and their widths for the provided list of html elements which style display property = 'grid'
+ * This function mainly sets the the CSS gridAreasTemplate, the number of grid columns, and the width of each column for the provided list of html elements. It also other CSS properties (inserts + or - signs for titles, encircules the beam note with a span, etc.)
  * @param {NodeListOf<Element>} Rows - The html elements for which we will set the css. These are usually the div children of containerDiv
+ * @param {HTMLElement[]} - the html divs for which we want to set their CSS.
  */
 async function setCSS(htmlRows: HTMLElement[]) {
   if (!htmlRows) return;
@@ -1760,7 +1765,8 @@ async function setCSS(htmlRows: HTMLElement[]) {
   let plusSign = String.fromCharCode(plusCharCode),
     minusSign = String.fromCharCode(plusCharCode + 1);
 
-  htmlRows.forEach((row) => {
+  htmlRows
+  .forEach((row) => {
     if (row.children.length === 0) row.classList.add(hidden); //If the row has no children, it means that it is a row created as a name of a table or as a placeholder. We will hide the html element
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
     row.style.gridTemplateColumns = setGridColumnsOrRowsNumber(row);

@@ -117,6 +117,29 @@ const MassPrayersSequences = {
         Communion: [
         Prefix.massCommon+"CommunionPsalm150&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"LiturgyEnd&D=$copticFeasts.AnyDay", 
-        ], //the sequence of prayers from 'Confession' until the end of the mass, it is common to all masses 
-};    
+    ], //the sequence of prayers from 'Confession' until the end of the mass, it is common to all masses 
+}; 
+
+const PsalmodyPrayersSequences = {
+    PsalmodyYear: [ Prefix.psalmody+"WakeUpSonsOfLight&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+   
+    Prefix.psalmody+"EpsalyOnFirstHos&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.AnyDay",],
+    PsalmodyKiahk: [ 
+        Prefix.psalmody+"WakeUpSonsOfLight&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+              
+        Prefix.psalmody+"KiahkHos&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2",
+    
+        Prefix.psalmody + "ChantAgiosOsiOs&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2",
+        
+        Prefix.psalmody+"EpsalyOnFirstHos&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.AnyDay",
+          
+        Prefix.psalmody+"FirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+    
+        Prefix.psalmody+"LobshFirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+          
+        Prefix.psalmody + "ChantGodSaidToMoses&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+
+        Prefix.psalmody+"CommentaryOnHos1&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||Seasons.KiahkWeek2",
+    ],
+}   
 
