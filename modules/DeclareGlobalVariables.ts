@@ -23,7 +23,7 @@ type typeButton = {
     any?: any
 };
 //CONSTANTS
-const version: string = 'v5.1.3 (Added chants to the Psalmody and fixes errors)';
+const version: string = 'v5.1.4 (Added chants to the Psalmody)';
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById('containerDiv') as HTMLDivElement;
 const leftSideBar = document.getElementById('leftSideBar') as HTMLDivElement;

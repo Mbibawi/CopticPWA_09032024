@@ -50,12 +50,8 @@ function startEditingMode(args: {
   function addNewTable() {
     args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
     languages = prompt('Provide the sequence of the languages columns', 'COP, FR, CA, AR').split(', ') || getLanguages(args.arrayName);
-    
-      tablesArray = [
-        [
-          ['NewTable&D=$copticFeasts.AnyDay']
-        ]
-    ];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
+    let title = prompt('Provide the title for the table', 'NewTable&D=$copticFeasts.AnyDay') || 'NewTable&D=$copticFeasts.AnyDay';
+      tablesArray = [[[title]]];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
     
     tablesArray[0][0].push(...languages);//We push the languages to the first row of the first table in tablesArray. This will give us a first row like  ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', etc.]
     
