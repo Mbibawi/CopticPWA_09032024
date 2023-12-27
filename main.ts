@@ -2485,7 +2485,6 @@ function showSettingsPanel() {
     }
   })();
 
-
     //Appending Add or Remove language Buttons
     (async function showAddOrRemoveLanguagesBtns() {;
       let langs = [
@@ -2678,6 +2677,7 @@ function showSettingsPanel() {
     });
     btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer,3);
   })();
+  
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
     let btnsContainer = createBtnsContainer('enterEditingMode', { AR: 'فعل تعديل النصوص', FR: 'Activer le mode édition', EN: '' });

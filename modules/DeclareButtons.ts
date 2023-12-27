@@ -133,6 +133,58 @@ const btnMain: Button = new Button({
   onClick: () => {
     btnMain.children = [btnMass, btnIncenseOffice, btnDayReadings, btnBookOfHours, btnPsalmody];
 
+    if (localStorage.editingMode === 'true')
+    {
+      let editMode = new Button({
+        btnID: 'btnEditMode',
+        label: { AR: 'تعديل النص', FR: 'Enter Editing Mode', EN: 'Enter Editing Mode' },
+        onClick: () => {
+          //@ts-ignore
+          if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
+          containerDiv.innerHTML = "";
+          containerDiv.dataset.editingMode = 'true';
+          if (document.getElementById('selectArray')) return;//Si un select element is already appended, we return
+          let editable = [
+            "Choose from the list",
+            "NewTable",
+            'Fun("arrayName", "Table\'s Title")',
+            "testEditingArray",
+            "PrayersArray",
+            "ReadingsArrays.GospelDawnArray",
+            "ReadingsArrays.GospelMassArray",
+            "ReadingsArrays.GospelNightArray",
+            "ReadingsArrays.GospelVespersArray",
+            "ReadingsArrays.KatholikonArray",
+            "ReadingsArrays.PraxisArray",
+            "ReadingsArrays.PropheciesDawnArray",
+            "ReadingsArrays.StPaulArray",
+            "ReadingsArrays.SynaxariumArray",
+          ];
+          let select = document.createElement("select"),
+            option: HTMLOptionElement;
+          select.id = 'selectArray';
+          select.style.backgroundColor = "ivory";
+          select.style.height = "16pt";
+          editable
+            .forEach((name) => {
+              option = document.createElement("option");
+              option.innerText = name;
+              option.contentEditable = "true";
+              select.add(option);
+            });
+          
+          document
+            .getElementById("homeImg")
+            .insertAdjacentElement("afterend", select);
+          select.addEventListener("change", () =>
+            startEditingMode({ select: select })
+          )
+        }
+      });
+
+      btnMain.children.push(editMode);
+    };
+
     if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2) btnPsalmody.label =
     {
       AR: "الإبصلمودية الكيهكية",

@@ -60,7 +60,6 @@ function startEditingMode(args: {
     
     tablesArray[0][0][0] +=  '&C=Title'; //We remove the '&C=Title' from the second row
   };
-
  
   function editSpecificTable(arrayName:string=args.arrayName):string[][][] | void{
       if (!arrayName) return;
@@ -1177,24 +1176,6 @@ function showBtnInEditingMode(btn: Button) {
      });
 
   };
-    
-  /**
-   *          .forEach(tbl => {
-           tbl
-             .forEach(row => {
-               createHtmlElementForPrayerEditingMode(row, btn.languages, container, container)
-             })
-         })
-   */
-
-/*     showPrayers({ btn: btn, clearContainerDiv: true, clearRightSideBar: true, container: container, languages: btn.languages, prayersSequence: btn.prayersSequence, position: container });
-    }; */
-
-  //if (btn.afterShowPrayers) btn.afterShowPrayers();
-
-  //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-//  setCSS(Array.from(container.querySelectorAll("div.Row"))); //setting the number and width of the columns for each html element with class 'Row'
-
 
   if (btn.children && btn.children.length > 0) {
   
