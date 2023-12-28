@@ -1876,24 +1876,6 @@ const btnBookOfHours:Button =  new Button({
               })()
             })();
       
-            (function insertZoksaPatryInBtnPrayersSequence() {
-              let litanies:string[] =
-                btn.prayersSequence
-                  .filter(title => title.includes('Litanies'));
-              let prayer: string;
-
-              litanies
-                .forEach(tblTitle => {
-                  if(litanies.indexOf(tblTitle) === 0 || litanies.indexOf(tblTitle) === litanies.length -1) return; //this is either the title of the litanies section, or the last litany. In both cases we do not insert anything after those paragraphs
-                  if (litanies.indexOf(tblTitle) === 1
-                    || litanies.indexOf(tblTitle) === 4)
-                    prayer = ZoksaPatri; //If it is the 1st or 4th litany (litanies[0] is the title), we insert Zoksa patry
-                  else prayer = Kenin; //If it is not the first nor the 4th litany, the insert 'Kenin'
-                    
-                    btn.prayersSequence.splice(btn.prayersSequence.indexOf(tblTitle) + 1, 0, prayer)
-                  });
-            })();
-
             (function insertPsalmAndGospelEndsInBtnPrayersSequence() {
               btn.prayersSequence
                 .filter(

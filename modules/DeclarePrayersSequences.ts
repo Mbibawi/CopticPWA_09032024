@@ -148,7 +148,9 @@ const PsalmodyPrayersSequences = {
 
         Prefix.psalmody + "SecondHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
         
-        Prefix.psalmody+"LobshSecondHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+        Prefix.psalmody + "LobshSecondHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
+        
+        Prefix.psalmody+"ChantLetsSingWithDavid&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
     ],
 }   
 
