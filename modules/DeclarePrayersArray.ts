@@ -49,7 +49,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Notre Père qui es aux cieux", 
   "", 
@@ -147,7 +147,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.commonPrayer+"ThanksGivingPart1&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.commonPrayer+"ThanksGivingPart1&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Action de grâce", 
   "", 
@@ -267,7 +267,7 @@ PrayersArray= [[
   [
   Prefix.same+"&C=CommentText", 
   "", 
-  "", 
+  "ne nous soumets pas à la tentation, mais délivre-nous du mal, par la grâce, la compassion et l’amour du genre humain de Ton Fils unique notre Seigneur, notre Dieu et notre Sauveur Jésus Christ par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dus avec Lui et le Saint Esprit vivifiant et consubstantiel à Toi maintenant et toujours et dans les siècles des siècles. Amen !", 
   "", 
   "ولا تُدْخِلْنَا في تَجْرِبَة لَكِنْ نجنا من الشِرّيرْ بِالْنِعْمَة والرأفات ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد رَبّنا وإلَهْنَا ومُخَلِصّْنَا يَسُوعْ المسيح. هَذا الذي من قبله، المَجْدُ والكَرَامَةْ والعزة والسُجُودْ. تليق بك منع ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدُهُورْ كلها آمْينْ.", 
   ],
@@ -843,24 +843,10 @@ PrayersArray= [[
   [
   [
   Prefix.commonPrayer+"ThanksGivingPart4&D=$copticFeasts.AnyDay&C=Priest", 
-  "Ϧⲉⲛ ⲡⲓϩ̀ⲙⲟⲧ ⲛⲉⲙ ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ ⲛⲉⲙ ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ: ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀Ϣⲏⲣⲓ: Ⲡⲉⲛⲟ̅ⲥ̅ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ: ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ.", 
+  "Ϧⲉⲛ ⲡⲓϩ̀ⲙⲟⲧ ⲛⲉⲙ ⲛⲓⲙⲉⲧϣⲉⲛϩⲏⲧ ⲛⲉⲙ ϯⲙⲉⲧⲙⲁⲓⲣⲱⲙⲓ: ⲛ̀ⲧⲉ ⲡⲉⲕⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀Ϣⲏⲣⲓ: Ⲡⲉⲛⲟ̅ⲥ̅ ⲟⲩⲟϩ Ⲡⲉⲛⲛⲟⲩϯ: ⲟⲩⲟϩ Ⲡⲉⲛⲥⲱⲧⲏⲣ Ⲓⲏⲥⲟⲩⲥ Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ. Ⲫⲁⲓ ⲉ̀ⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ ⲉ̀ⲣⲉ ⲡⲓⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ̀ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ⲛⲉⲙ ϯⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ: ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁⲕ ⲛⲉⲙⲁϥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲟⲩⲟϩ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲛⲉⲙⲁⲕ Ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉ̀ⲛⲉϩ ⲧⲏⲣⲟⲩ: ⲁ̀ⲙⲏⲛ.", 
+  "Par la grâce, la compassion et l’amour du genre humain de Ton Fils unique notre Seigneur, notre Dieu et notre Sauveur Jésus Christ, par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dus avec Lui et le Saint-Esprit vivifiant et consubstantiel à Toi Maintenant et toujours et pour les siècles des siècles. Amen.", 
   "", 
-  "", 
-  "بِالْنِعْمَة والرَآفَاتْ ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد الجنس، رَبّنا وإلَهْنَا ومُخَلِصّْنَا يَسُوعْ المسيح.", 
-  ],
-  [
-  Prefix.same+"&C=Priest", 
-  "Ⲫⲁⲓ ⲉ̀ⲧⲉ ⲉ̀ⲃⲟⲗϩⲓⲧⲟⲧϥ ⲉ̀ⲣⲉ ⲡⲓⲱ̀ⲟⲩ ⲛⲉⲙ ⲡⲓⲧⲁⲓⲟ̀ ⲛⲉⲙ ⲡⲓⲁ̀ⲙⲁϩⲓ ⲛⲉⲙ ϯⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲓⲥ: ⲉⲣⲡ̀ⲣⲉⲡⲓ ⲛⲁⲕ ⲛⲉⲙⲁϥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲛ̀ⲣⲉϥⲧⲁⲛϧⲟ ⲟⲩⲟϩ ⲛ̀ⲟ̀ⲙⲟⲟⲩⲥⲓⲟⲥ ⲛⲉⲙⲁⲕ.", 
-  "", 
-  "", 
-  "هذا الذي مِنْ قِبَلِهِ المَجْدُ والكَرَامَةْ والعزة  والسجو د. تليق بك مَعَه ومَعَ الْرُوحْ القُدُسْ. المُحْيّي المُسَاوي لك.", 
-  ],
-  [
-  Prefix.same+"&C=Priest", 
-  "Ϯⲛⲟⲩ ⲛⲉⲙ ⲛ̀ⲥⲏⲟⲩ ⲛⲓⲃⲉⲛ ⲛⲉⲙ ϣⲁ ⲉ̀ⲛⲉϩ ⲛ̀ⲧⲉ ⲛⲓⲉ̀ⲛⲉϩ ⲧⲏⲣⲟⲩ: ⲁ̀ⲙⲏⲛ.", 
-  "", 
-  "", 
-  "الآن وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
+  "بِالْنِعْمَة والرَآفَاتْ ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد الجنس، رَبّنا وإلَهْنَا ومُخَلِصّْنَا يَسُوعْ المسيح، هذا الذي مِنْ قِبَلِهِ المَجْدُ والكَرَامَةْ والعزة  والسجود. تليق بك مَعَه ومَعَ الْرُوحْ القُدُسْ، المُحْيّي المُسَاوي لك، الآن وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
   ],
   ],
   [
@@ -3049,7 +3035,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.commonPrayer+"HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.commonPrayer+"HolyHolyHolyLordOfSabaot&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Saint, Saint, Saint Seigneur sabaot", 
   "", 
@@ -14444,7 +14430,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"AnyHourPsalm50&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm50&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 50", 
   "", 
@@ -14527,10 +14513,14 @@ PrayersArray= [[
   "", 
   "انعم يا رَبّ بمسرتك على صهيون، ولتُبنَ أسوار أورشليم. حينئذ تسر بذبائح البر قرَبّانا ومحرقات ويقرَبّون على مذابحك العجول.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"FirstHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 1ère Heure", 
   "", 
@@ -14539,7 +14529,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourLetsKneel&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"FirstHourLetsKneel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Prosternons-nous", 
   "", 
@@ -14590,7 +14580,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourStPaul&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"FirstHourStPaul&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Epître de saint Paul aux Éphésiens (4 : 1 - 5)", 
   "", 
@@ -14606,7 +14596,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourIntro&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"FirstHourIntro&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "De la foi de l'Eglise", 
   "", 
@@ -14643,7 +14633,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm1&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm1&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 1", 
   "", 
@@ -14677,10 +14667,14 @@ PrayersArray= [[
   "", 
   "فلهذا لا يقوم المنافقون في الدينونة، ولا الخطاة في مجمع الصديقين. لِأنَّ الرَبّ يعرف طريق الأبرار، وأما طريق المنافقين فتباد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm2&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm2&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 2", 
   "", 
@@ -14714,10 +14708,14 @@ PrayersArray= [[
   "", 
   "فالآن أيُّهَا المُلُوكُ افهموا، وتأدبوا يا جَمِيعْ قضاة الأرْضْ اعبدوا الرَبّ بخشية. وهللوا لَهُ برعدة. الزموا الأدب لئلا يغضب الرَبّ فتضلوا عن طريق الحق. عِنْدَمَا يتقد غضبه بسرعة، طوبى لجميع المتكلين عليه", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm3&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm3&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 3", 
   "", 
@@ -14765,10 +14763,14 @@ PrayersArray= [[
   "", 
   "للرَبّ الخلاص وعلى شعبه بركته.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm4&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm4&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 4", 
   "", 
@@ -14802,10 +14804,14 @@ PrayersArray= [[
   "", 
   " كثيرون يقولون: من يرينا الخَيّْرَاتْ؟ قَدّْ أضاء علينا نور وجهك يا رَبّ. أعطيت سرورا لقلبي أوفر من الذين كثرت حنطتهم وخمرهم وزيتهم. فبالسَّلامُة أضطجع أيضا وأنام، لأنَّكَ أنْتَ وحدك يا رَبّ أسكنتني على الرجاء.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm5&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm5&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 5", 
   "", 
@@ -14846,10 +14852,14 @@ PrayersArray= [[
   "", 
   "وليفرح جَمِيعْ المتكلين عليك، إلى الأبَدْ يسرون وتحل فيهم. ويفتخر بك كُلِّ الذين يحبون اسْمَكْ. لأنَّكَ أنْتَ باركت الصديق يا رَبّ. كما بترس المسرة كللتنا.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm6&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm6&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 6", 
   "", 
@@ -14883,10 +14893,14 @@ PrayersArray= [[
   "", 
   "ابعدوا عني يا جَمِيعْ فاعلي الإثُمَّ. لِأنَّ الرَبّ قَدّْ سمع صوت بكائي. الرَبّ سمع تضرعي، الرَبّ لصلاتي قبل، فليَخزَ وليضطرَبّ جدا جَمِيعْ أعدائي، وليرتدوا إلى ورائهم بالخزي سريعا جدا.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm8&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm8&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 8", 
   "", 
@@ -14920,10 +14934,14 @@ PrayersArray= [[
   "", 
   "أَيُّهَااَلرَبّ رَبّنا. ما أعجب اسمك في الأرْضْ كلها.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm11&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm11&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 11", 
   "", 
@@ -14971,10 +14989,14 @@ PrayersArray= [[
   "", 
   "المنافقون حولنا يمشون. مِثْلَ ارتفاعك أكثرت أعمار بنى البشر.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm12&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm12&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 12", 
   "", 
@@ -15008,10 +15030,14 @@ PrayersArray= [[
   "", 
   "أما أَنا فعلى رَحْمَتُكَ توكُلَّت. يبتهج قَلْبِي بخلاصك. أُسَبِّحْ الرَبّ المحسنَ إلي، وأُرَتِّلُ لاسم الرَبّ العلي. ", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm14&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm14&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 14", 
   "", 
@@ -15045,10 +15071,14 @@ PrayersArray= [[
   "", 
   "الذي يحلف لقريبه ولا يغدر به. ولا يعطى فضته بالرَبّا، ولا يقبل الرشوة على الأبرياء. الذي يصنع هَذا لا يتزعزع إلى الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm15&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm15&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 15", 
   "", 
@@ -15110,10 +15140,14 @@ PrayersArray= [[
   "", 
   "قد عرفتني سبل الحياة. تملأني فرحا مَعَ وجهك. البهجة في يمينك إلى الانقضاء.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm18&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm18&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 18", 
   "", 
@@ -15148,16 +15182,13 @@ PrayersArray= [[
   "الهفوات من يشعر بها؟ من الخطايا المستترة يا رَبّ طهرني، ومن الغرَبّاء احفظ عبدك حتى لا يتسلطوا على، فحينئذ أكون بلا عيب، وأتنقى من خطية عظيمة، وتكون جَمِيعْ أقوال فمي وفكر قَلْبِي مرضية أمامك في كُلِّ حين. يا رَبّ أنْتَ مُعِينِي ومخلصي.", 
   ],
   [
-  Prefix.same+"&C=NoActor", 
-  "", 
-  "", 
-  "", 
-  "", 
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
   ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm24&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm24&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 24", 
   "", 
@@ -15254,10 +15285,14 @@ PrayersArray= [[
   "", 
   "الذين لا شر فيهم والمستقيمون لصقوا بي، لأني انتظرتك يا رَبّ. يا اللّه أنقذ إسرائيل مِنْ جَمِيعْ شدائده.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm26&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm26&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 26", 
   "", 
@@ -15347,10 +15382,14 @@ PrayersArray= [[
   "", 
   "انتظر الرَبّّ، تقوَّ وليتشدد قلبك وانتظر الرَبّ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourPsalm142&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm142&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 142", 
   "", 
@@ -15405,10 +15444,14 @@ PrayersArray= [[
   "", 
   "روحك القُدُّوسْ فليهدني إلى الاستقامة، من أجل اسمك يا رَبّ تحييني. بحقك تخرج من الشدة نَفْسِي، وبرحمتك تستأصل أعدائي. وتهلك جَمِيعْ مضايقي نَفْسِي، لأني أَنا هو عبدك أنا.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"FirstHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Évangile selon saint Jean  ( 1 : 1 - 17 )", 
   "", 
@@ -15456,10 +15499,14 @@ PrayersArray= [[
   "", 
   "يوحَنّا شَهدَ لَهُ وصَرَخَ قَائِلاً: هَذا هُوَّ الذي قُلْتُ عَنْهُ إنَّ الذي يَأتْي بَعْديْ كَانَ قَبْلي، لِأنَّهُ كَانَ أَقْدَمْ مِني. ونَحْنُ جَميعَاً أخْذْنَا مِنْ مِلئهِ، ونِعْمَةٌ عِوضَاً عَنْ نِعْمَةٍ. لِأنَّ النَامُوسْ بِموسى أُعْطْى. أَمَّا النعْمَة والحَقّْ فَبِيَسُوعْ المَسِيحْ صَار. والَمْجدُ لله دائمًا أبديًا آمْينْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"FirstHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de l'Aube", 
   "", 
@@ -15511,7 +15558,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourEndOfHourPrayer1&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"FirstHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la prière du matin", 
   "", 
@@ -15545,40 +15592,44 @@ PrayersArray= [[
   "", 
   "بِالْنِعْمَة والرأفة ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد يَسُوعْ المسيح، وموهبة روحك القُدُّوسْ. الآنْ وكُلَّ أوانْ وإلى الأبد. آمْينْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+'FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay'
+  ]
+  ],
+  [
+    [
+      Prefix.bookOfHours+"FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay&C=SubTitle", 
+      "", 
+      "Seconde prière d'absolution", 
+      "", 
+      "تَحليلْ آخَرْ", 
+      ],
+      [
+      Prefix.same+"&C=", 
+      "", 
+      "Toi qui envois la lumière qui nous éclaire. Tu fais lever le soleil sur les bons comme sur les méchants. Tu créas la lumière pour éclairer l'univers. Eclaire nos coeurs, Toi, le maître de chacun. ", 
+      "", 
+      "أَيُّهَااَلباعث النور فينطلق، المشرق شمسه على الأبرار والأشرار، الذي صنع النور الذي يضئ على المسكونة، أنر عقولنا وقلوبنا وأفهامنا يا سيد الكل.", 
+      ],
+      [
+      Prefix.same+"&C=", 
+      "", 
+      "Accorde-nous aujourd'hui de Te satisfaire. Protège-nous de tout mal, de tout péché et de toute force de l'ennemi.", 
+      "", 
+      "هب لنا في هَذا اليوم الحاضر أنْ نرضيك فيه، واحرسنا من كُلِّ شيء رديء ومن كُلِّ خطيئة، ومن كُلِّ قوة مضادة.", 
+      ],
+      [
+      Prefix.same+"&C=", 
+      "", 
+      "Par le Christ Jésus notre Seigneur avec qui Tu es béni ainsi que le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen !", 
+      "", 
+      "بِالْمَسِيحْ يَسُوعْ رَبّنا، هَذا الذي أنْتَ مُبَارَكْ مَعَه مَعَ الْرُوحْ القُدُسْ المحيى، المساوي لك، الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
+      ],
   ],
   [
   [
-  Prefix.bookOfHours+"1stHourEndOfHourPrayer2&D=$copticFeasts.AnyDay&C=Title", 
-  "", 
-  "Seconde prière d'absolution", 
-  "", 
-  "تَحليلْ آخَرْ", 
-  ],
-  [
-  Prefix.same+"&C=", 
-  "", 
-  "Toi qui envois la lumière qui nous éclaire. Tu fais lever le soleil sur les bons comme sur les méchants. Tu créas la lumière pour éclairer l'univers. Eclaire nos coeurs, Toi, le maître de chacun. ", 
-  "", 
-  "أَيُّهَااَلباعث النور فينطلق، المشرق شمسه على الأبرار والأشرار، الذي صنع النور الذي يضئ على المسكونة، أنر عقولنا وقلوبنا وأفهامنا يا سيد الكل.", 
-  ],
-  [
-  Prefix.same+"&C=", 
-  "", 
-  "Accorde-nous aujourd'hui de Te satisfaire. Protège-nous de tout mal, de tout péché et de toute force de l'ennemi.", 
-  "", 
-  "هب لنا في هَذا اليوم الحاضر أنْ نرضيك فيه، واحرسنا من كُلِّ شيء رديء ومن كُلِّ خطيئة، ومن كُلِّ قوة مضادة.", 
-  ],
-  [
-  Prefix.same+"&C=", 
-  "", 
-  "Par le Christ Jésus notre Seigneur avec qui Tu es béni ainsi que le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen !", 
-  "", 
-  "بِالْمَسِيحْ يَسُوعْ رَبّنا، هَذا الذي أنْتَ مُبَارَكْ مَعَه مَعَ الْرُوحْ القُدُسْ المحيى، المساوي لك، الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
-  ],
-  ],
-  [
-  [
-  Prefix.bookOfHours+"1stHourEndOfAllHoursPrayer&D=$copticFeasts.AnyDay&C=Title", 
+    Prefix.bookOfHours+"AllHoursFinalPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Conclusion de chaque heure", 
   "", 
@@ -15615,7 +15666,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"ThirdHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 3ème heure", 
   "", 
@@ -15624,7 +15675,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm19&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm19&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 19", 
   "", 
@@ -15658,6 +15709,10 @@ PrayersArray= [[
   "", 
   "يا رَبّ خلص مَلِكك واستجب لنا يوم ندعوك.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
@@ -15670,7 +15725,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm22&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm22&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 22", 
   "", 
@@ -15697,10 +15752,18 @@ PrayersArray= [[
   "", 
   "هيأت قدامى مائدة تجاه مضايقي. مسحت بالزيت رأسي، وكأسك روتني بقوة. ورحمتك تدركني جَمِيعْ أيام حياتي، ومسكني في بيت الرَبّ إلى مدى الأيام.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ], 
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm23&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm23&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 23", 
   "", 
@@ -15755,10 +15818,14 @@ PrayersArray= [[
   "", 
   "من هو هَذا ملك المَجْدُ؟ رَبّ القوات، هَذا هو ملك المَجْدُ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm25&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm25&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 25", 
   "", 
@@ -15799,10 +15866,14 @@ PrayersArray= [[
   "", 
   "أما أَنا فبدعتي سلكت. أنقذني وارحمني لِأنَّ رجلي وقفت في الاستقامة. في الجماعات أُبَارِكُكَ يا رَبّ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm28&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm28&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 28", 
   "", 
@@ -15835,11 +15906,15 @@ PrayersArray= [[
   "Au déluge le Seigneur a siégé ; Il siège, le Seigneur, il est Roi pour toujours ! Le Seigneur accorde à son peuple la puissance, le Seigneur bénit son peuple en lui donnant la paix.", 
   "", 
   "الرَبّ يسكن في الطوفان، الرَبّ يجلس ملكا إلى الأبد. الرَبّ يعطى شعبه قوة، الرَبّ يبارك شعبه بالسَّلامُ.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm29&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm29&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 29", 
   "", 
@@ -15887,10 +15962,14 @@ PrayersArray= [[
   "", 
   "سمع الرَبّ فرحمني، الرَبّ صار لي عونا. حولت نوحي إلى فرح لي، مزقت مسحي ومنطقتني سرورا. لكي ترتل لَكَ نَفْسِي ولا يحزن قَلْبِي. أيُّهَا الرَبّ إلهي إلى الأبَدْ أعترف لك.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm33&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm33&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 33", 
   "", 
@@ -15945,10 +16024,14 @@ PrayersArray= [[
   "", 
   "قريب هو الرَبّ من منسحقي القلب، ويخلص المتواضعين بالروح. كثيرة هي أحزان الصديقين، ومن جميعها ينجيهم الرَبّ. يحفظ الرَبّ جَمِيعْ عظامهم، وواحدة منها لا تنكسر. يموت الخطاة بشرهم، ومبغضو الصديق يندمون. الرَبّ ينقذ نفوس عبيده، ولا يندم جَمِيعْ المتكلين عليه.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm40&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm40&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 40", 
   "", 
@@ -16003,10 +16086,14 @@ PrayersArray= [[
   "", 
   "مبارك الرَبّ إله إسرائيل، من الأزل وإلى الأبَدْ يكون.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm42&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm42&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 42", 
   "", 
@@ -16040,10 +16127,14 @@ PrayersArray= [[
   "", 
   "لماذا أنْتَ حزينة يا نَفْسِي، ولماذا تزعجينني؟ توكُلَّي على اللّه فإني أعترف له، خلاص وجهي هو إلهي.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm44&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm44&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 44", 
   "", 
@@ -16105,10 +16196,14 @@ PrayersArray= [[
   "", 
   "ويكون لَكَ أبناءٌ عوضا عن آبائك، تقيمهم رؤساء على سَائِرْ الأرض، ويذكرون اسمك جيلا بعد جيل. من أجل ذلك تعترف لَكَ الشِعُوبْ يا اللّه إلى الدهر، وإلى دَهْرِ الدِهُورْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm45&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm45&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 45", 
   "", 
@@ -16149,10 +16244,14 @@ PrayersArray= [[
   "", 
   "ثابروا واعلموا أنى أَنا هو اللّه، أرتفع بين الأمم وأتعالى في الأرْضَ. الرَبّ إله القوات مَعَنا، ناصرنا هو إله يعقوب.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourPsalm46&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm46&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 46", 
   "", 
@@ -16179,10 +16278,14 @@ PrayersArray= [[
   "", 
   "رؤساء الشِعُوبْ اجتمعوا مَعَ إله إبراهيم، لِأنَّ أعزاء اللّه قَدّْ ارتفعوا في الأرْضْ جدا.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"ThirdHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la 3ème heure (Saint Jean 14: 15-26)", 
   "", 
@@ -16208,7 +16311,11 @@ PrayersArray= [[
   "Moi Je suis La vraie vigne et Mon Père est le Vigneron. Tout sarment qui est en Moi mais qui ne porte pas de fruit, mon Père l’enlève; et tout sarment qui donne du fruit, Il le nettoie pour qu'il en donne d’avantage. Mais vous, déjà vous voici nets et purifiés grâce à la parole que Je vous ai dite: demeurez en Moi, comme moi en vous.", 
   "", 
   "أنا هو الكرمة الحقيقية وأبى الكرام. كُلِّ غصن فيّ لا يأتي بثُمَّر يقطعه. وكُلَّ ما يأتي بثُمَّر ينقيه لِيأتْي بثُمَّر أكثر. وأنتم من قبْل أنقياءُ من أجل الكلام الذي كلمتكم به. اثبتوا في وأنا أيضا فيكم.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
@@ -16228,7 +16335,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"ThirdHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de la 3ème heure", 
   "", 
@@ -16299,7 +16406,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"3rdHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"ThirdHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la 3ème heure", 
   "", 
@@ -16336,7 +16443,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"SixthHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 6ème heure", 
   "", 
@@ -16345,7 +16452,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm53&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm53&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 53", 
   "", 
@@ -16372,10 +16479,14 @@ PrayersArray= [[
   "", 
   "بحقك استأصلهم. فأذبح لَكَ طائعا، وأعترف لاسْمِكَ يا رَبّ فإنه صالح. لأنَّكَ مِنْ جَمِيعْ الشدائد نجيتني، وبأعدائي نظرت عيناي.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm56&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm56&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 56", 
   "", 
@@ -16423,10 +16534,14 @@ PrayersArray= [[
   "", 
   "اَللَّهُمَّ ارتفع على السَّمَواتْ، وليرتفع مَجْدَكْ على سَائِرْ الأرْضَ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm60&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm60&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 60", 
   "", 
@@ -16453,10 +16568,14 @@ PrayersArray= [[
   "", 
   "هكذا أُرَتِّلُ لاسْمِكَ إلى دَهْرِ الدِهُورْ، لأفي نذوري يَومَاً فيوما.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm62&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm62&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 62", 
   "", 
@@ -16483,10 +16602,14 @@ PrayersArray= [[
   "", 
   "التحقت نَفْسِي وراءك، ويَمِينُكَ عضدتني. أَمَّا الذين طَلَبوا نَفْسِي للهلاك، فيدخلون في أسافل الأرْضَ. ويدفعون إلى يَدِ السيف، ويكونون أنصبة للثعالب. أَمَّا المَلِكْ فيفرح باللّه، ويفتخر كُلِّ من يحلف به. لِأنَّ أفواه المُتَكَلِمِينْ بالظلم تسد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm66&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm66&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 66", 
   "", 
@@ -16520,10 +16643,14 @@ PrayersArray= [[
   "", 
   "الأرض أعْطَتْ ثُمَّرتها، فَليُبَارِكْنا اللّه إلَهْنَا. ليباركنا اللّه، فلتخشه جَمِيعْ أقطار الأرْضَ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm69&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm69&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 69", 
   "", 
@@ -16550,10 +16677,14 @@ PrayersArray= [[
   "", 
   "وأما أَنا فمسكين وفقير، اَللَّهُمَّ أعنى. أنْتَ مُعِينِي ومُخَلِّصي يا رَبّ فلا تبطئ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm83&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm83&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 83", 
   "", 
@@ -16587,10 +16718,14 @@ PrayersArray= [[
   "", 
   "الرَبّ لا يمنع الخَيّْرَاتْ عن السالكين بالدعة. يا رَبّ إله القوات، طوبى للإنسان المتكل عليك.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm84&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm84&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 84", 
   "", 
@@ -16624,10 +16759,14 @@ PrayersArray= [[
   "", 
   "لَيسكن المَجْدُ في أرضنا. الرَحْمَةْ والحق تلاقيا، البر والسَّلامُ تلاثُمَّا. الحق من الأرْضْ أشرق، والبر من السَّمَاء تطلع. لِأنَّ الرَبّ يعطى الخَيّْرَاتْ، وأرضنا تعطى ثُمَّرها. البر أمامه يسلك ويطأ في طريق خطواته.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm85&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm85&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 85", 
   "", 
@@ -16661,10 +16800,14 @@ PrayersArray= [[
   "", 
   "اَللَّهُمَّ إن مخالفي الناموس قَدّْ قاموا علىّ ومجمع الأعزاء طَلَبوا نَفْسِي، ولم يسبقوا أنْ يجعلوك أمامهم. وأنت أيُّهَا الرَبّ الإله أنْتَ رؤوف ورحيم. أنْتَ طويل الروح، وكثير الرَحْمَةْ وصادق. انظر إلي وارحمني. أعطِ عزة لعبدك، وخلص ابن أمتك. اصنع مَعَي آية صالحة، ليرى ذلك مبغضي فيخزوا. لأنَّكَ أنْتَ يا رَبّ أعنتني وعزيتني.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm86&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm86&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 86", 
   "", 
@@ -16684,10 +16827,14 @@ PrayersArray= [[
   "", 
   "أذكر رَهَبَ وبابل اللتين تعرفانني. هوذا القبائل الغريبة وصور وشعب الحبشة، هؤلاء كانوا هناك. صهيون الأم تقول إن إنسانا وإنسانا ولد فيها، وهو العلي الذي أسسها إلى الأبد. الرَبّ يحدّث في كتب الشِعُوبْ والرؤساء، أولئك الذين ولدوا فيها. لِأنَّ سكنى الفرحين جميعهم فيكِ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm90&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm90&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 90", 
   "", 
@@ -16707,10 +16854,14 @@ PrayersArray= [[
   "", 
   "لأنك أنْتَ يا رَبّ رجائي. جعلتَ العليَّ ملجأك. فلا تصيبك الشرور، ولا تدنو ضرَبّة من مسكنك. لِأنَّهُ يوصى ملائكته بك، ليحفظوك في سَائِرْ طرقك. وعلى أيديهم يحملونك، لئلا تعثر بحجر رجلك. تطأ الأفعى وملكَ الحيات، وتسحق الأسد والتنين. لِأنَّهُ على أتكل فأنجيه، أرَفعه (أستره) لِأنَّهُ عرف اسمي. يدعوني فأستجيب له. مَعَه أَنا في الشدة، أنقذه وأمجده. ومن طول الأيام أشبعه، وأريه خلاصي.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourPsalm92&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm92&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 92", 
   "", 
@@ -16737,10 +16888,14 @@ PrayersArray= [[
   "", 
   "عجيبة هي أهوال البحر، وعجيب هو الرَبّ في الأعالي. شهاداته صادقة جدا، لبيتك ينبغي التقديس يا رَبّ طول الأيام.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"SixthHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la 6ème heure (Saint Mathieu 5 : 1-16)", 
   "", 
@@ -16837,10 +16992,14 @@ PrayersArray= [[
   "", 
   "هكذا فليضئ نوركم قدام الناس، لكي يروا أعمالكم الصالحة فيمجدوا أباكم الذي في السَّمَواتْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"SixthHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de la 6ème heure", 
   "", 
@@ -16953,7 +17112,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"6thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"SixthHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la 6ème heure", 
   "", 
@@ -16990,7 +17149,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"NinethHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 9ème heure", 
   "", 
@@ -16999,7 +17158,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm95&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm95&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 95", 
   "", 
@@ -17033,10 +17192,14 @@ PrayersArray= [[
   "", 
   "فلتفرح السَّمَواتْ ولتبتهج الأرْضْ وليعج البحر وجميع ملئه، تفرح الوديان وكُلَّ ما فيها، حينئذ يبتهج كُلِّ شجر الغاب أمام وَجْهْ الرَبّ، لِأنَّهُ يأتي ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm96&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm96&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 96", 
   "", 
@@ -17105,10 +17268,14 @@ PrayersArray= [[
   "", 
   "افرحوا أيُّهَا الصديقون بالرَبّ. واعترفوا لذكر قدسه.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm97&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm97&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 97", 
   "", 
@@ -17156,10 +17323,14 @@ PrayersArray= [[
   "", 
   "تصفق جَمِيعْ الِأنَّهُار، الجبال تبتهج أمام وَجْهْ الرَبّ، لِأنَّهُ أتى ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm98&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm98&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 98", 
   "", 
@@ -17221,10 +17392,14 @@ PrayersArray= [[
   "", 
   "ارفعوا الرَبّ إلهنا، واسجدوا في جبله المُقَدَّسْ، فإن الرَبَّّ إلَهْنَا قُدُّوسْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm99&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm99&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 99", 
   "", 
@@ -17258,10 +17433,14 @@ PrayersArray= [[
   "", 
   "اعترفوا له، وباركوا اسمه. فإن الرَبّ صالح هو، والى الأبَدْ رحمته، وإلى جيل فجيل حقه.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm100&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm100&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 100", 
   "", 
@@ -17295,10 +17474,14 @@ PrayersArray= [[
   "", 
   "في أوقَاتْ الغدوات كُنْتُ أقتل جَمِيعْ خطاة الأرض، لأبيد من مدينة الرَبّ جَمِيعْ صانعي الإثُمَّ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm109&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm109&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 109", 
   "", 
@@ -17346,10 +17529,14 @@ PrayersArray= [[
   "", 
   "يسحق رؤوس كثيرين على الأرْضَ. وفي الطريق يشرَبّ الماء من الوادي. لذلكَ يرفع رأسه.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm110&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm110&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 110", 
   "", 
@@ -17411,10 +17598,14 @@ PrayersArray= [[
   "", 
   "رأس الحكمة مخافة الرَبّ، والفهم صالح لكل من يعمل بِهِ، وتسبحته دائمة إلى الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm111&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm111&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 111", 
   "", 
@@ -17462,10 +17653,14 @@ PrayersArray= [[
   "", 
   "الخاطئ يبصر فيغتاظ ويصر بأسنانه ويذوب، شهوة الخاطئ تبيد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm112&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm112&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 112", 
   "", 
@@ -17506,10 +17701,14 @@ PrayersArray= [[
   "", 
   "الذي يجعل العاقر ساكنة في بيت أم أولادٍ فرحة.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm114&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm114&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 114", 
   "", 
@@ -17557,10 +17756,14 @@ PrayersArray= [[
   "", 
   "أرضي الرَبَّّ أمامه في كورة الأحياء.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourPsalm115&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm115&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 115", 
   "", 
@@ -17601,10 +17804,14 @@ PrayersArray= [[
   "", 
   "أوفي للرَبّ نذوري في ديار بيت الرَبّ، قدام كُلِّ شعبه، في وسط أورشليم.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"NinethHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la 9ème heure (Saint Luc 9 : 10-17)", 
   "", 
@@ -17645,10 +17852,14 @@ PrayersArray= [[
   "", 
   "ففعلوا هَكَذا وأتكأوهم أجمعين. فأخذ الخمسَ خبزاتٍ والسمكتين، ونظر إلى السَّمَاء، وباركها وقسمها، وأعطى التلاميذ ليضعوا أمام الجموع. فأكلوا جميعهم وشبعوا. ثُمَّ رفعوا ما فضل عَنْهُمْ اثنتي عشرة قفة مملوءة.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"NinethHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de la 9ème heure", 
   "", 
@@ -17726,7 +17937,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"9thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"NinethHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la 9ème heure", 
   "", 
@@ -17784,7 +17995,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"EleventhHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 11ème heure (le Crépuscule)", 
   "", 
@@ -17793,7 +18004,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm116&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm116&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 116", 
   "", 
@@ -17806,10 +18017,14 @@ PrayersArray= [[
   "", 
   "سَبِّحُوا الرَبَّّ يا جَمِيعْ الأُمَمْ ولتباركه كافة الشعوب. لِأنَّ رحمته قَدّْ ثبتت علينا وحق الرَبّ يدوم إلى الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm117&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm117&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 117", 
   "", 
@@ -17920,10 +18135,14 @@ PrayersArray= [[
   "", 
   "اشكروا الرَبّ فإنه صالح وأن إلى الأبَدْ رحمته.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm119&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm119&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 119", 
   "", 
@@ -17964,10 +18183,14 @@ PrayersArray= [[
   "", 
   "طويلا سكنتْ نَفْسِي في الغرَبّة، ومَعَ مبغضي السَّلامُ كُنْتُ صاحب سَلام، وحين كُنْتُ أكلمهم كانوا يقاتلونني باطلاً.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm120&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm120&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 120", 
   "", 
@@ -18001,10 +18224,14 @@ PrayersArray= [[
   "", 
   "الرَبّ يحفظك من كُلِّ سوء. الرَبّ يحفظ نفسك. الرَبّ يحفظ دخولك وخروجك، من الآنْ والي الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm121&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm121&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 121", 
   "", 
@@ -18045,10 +18272,14 @@ PrayersArray= [[
   "", 
   "من أجل اخوتي وأقرَبّائي تكلمت من أجلك بالسَّلامُ، ومن أجل بيت الرَبّ إلَهْنَا التمست لَكَ الخَيّْرَاتْ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm122&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm122&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 122", 
   "", 
@@ -18075,10 +18306,14 @@ PrayersArray= [[
   "", 
   "العار اردده على المخصبين والهوان على المتعظمين.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm123&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm123&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 123", 
   "", 
@@ -18104,11 +18339,15 @@ PrayersArray= [[
   "Béni soit le Seigneur qui n'a pas fait de nous la proie de leurs dents ! Comme un oiseau, nous avons échappé au filet du chasseur ; le filet s'est rompu : nous avons échappé. Notre secours est le nom du Seigneur qui a fait le ciel et la terre.", 
   "", 
   "مبارك الرَبّ الذي لَمّْ يسلمنا فريسة لأسنانهم. نجت أنفسنا مِثْلَ العصفور من فخ الصيادين، الفخ انكسر ونحن نجونا، عوننا باسم الرَبّ الذي صنع السَّمَاء والأرض.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm124&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm124&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 124", 
   "", 
@@ -18135,10 +18374,14 @@ PrayersArray= [[
   "", 
   "أحسن يا رَبّ إلى الصالحين وإلى المستقيمي القلوب. أَمَّا الذين يميلون إلى العثرات فينزعهم الرَبّ مَعَ فعلة الإثُمَّ. والسَّلامُ على إسرائيل.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm125&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm125&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 125", 
   "", 
@@ -18158,10 +18401,14 @@ PrayersArray= [[
   "", 
   "اردد يا رَبّ سبينا مِثْلَ السيول في الجنوب. الذين يزرعون بالدموع يحصدون بالابتهاج. سيرا كانوا يسيرون وهم باكون حاملين بذارهم، ويعودون بالفرح حاملين أغمارهم.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm126&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm126&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 126", 
   "", 
@@ -18188,10 +18435,14 @@ PrayersArray= [[
   "", 
   "البنون ميراث من الرَبّ أجرة ثُمَّرة البطن. كالسهام بيد القوي كذلك أبناء المتيقظين. مغبوط هو الرجل الذي يملا جعبته منهم. حينئذ لا يخزون إذا كلموا أعداءهم في الأبواب.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm127&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm127&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 127", 
   "", 
@@ -18211,10 +18462,14 @@ PrayersArray= [[
   "", 
   "هكذا يُبارَك الإنسان المتقي الرَبَّّ. يباركك الرَبّ من صهيون، وتبصر خيرات أورشليم جَمِيعْ أيام حياتك، وترى بني بنيك، والسَّلامُ على إسرائيل.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourPsalm128&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm128&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 128", 
   "", 
@@ -18248,10 +18503,14 @@ PrayersArray= [[
   "", 
   "باركناكم باسم الرَبّ.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"EleventhHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la 11ème heure (Saint Luc 41 :4-38)", 
   "", 
@@ -18278,10 +18537,14 @@ PrayersArray= [[
   "", 
   "فكان ينتهرهم ولا يدَعهم ينطقون، لِأنَّهُم كانوا قَدّْ عرفوه أنه هو المسيح", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"EleventhHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de la 11ème heure", 
   "", 
@@ -18340,7 +18603,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"11thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"EleventhHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la 11ème heure", 
   "", 
@@ -18370,7 +18633,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.bookOfHours+"TwelvethHourTitle&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Prière de la 12ème heure", 
   "", 
@@ -18379,18 +18642,18 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm129&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm129&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 129", 
   "", 
-  "المَزْمُورْ المائة وتسعة وعشرين", 
+  "المَزْمُورْ المائة وتِسْعَة وعِشْرينْ \n(مِنَ الأعْمَاقْ صَرَخْتَ إليَكَ يا رَبّْ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Des profondeurs je crie vers toi, Seigneur, Seigneur, écoute mon appel ! Que ton oreille se fasse attentive au cri de ma prière !", 
   "", 
-  "من الأعماق صرخت إليَكَ يا رَبّ، يا رَبّ استمع صوتي . لِتَكُنْ أذناك مصغيتين إلى صوت تضرعي.", 
+  "مِنَ الأعْمَاقْ صَرَخْتَ إليَكَ يا رَبّْ، يا رَبّ استمع صوتي . لِتَكُنْ أذناك مصغيتين إلى صوت تضرعي.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18419,22 +18682,26 @@ PrayersArray= [[
   "C'est lui qui rachètera Israël de toutes ses fautes.", 
   "", 
   "عظيم هو خلاصه وهو يفتدي إسرائيل من كُلِّ آثامه.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm130&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm130&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 130", 
   "", 
-  " المَزْمُورْ المائة وثلاين", 
+  "المَزْمُورْ المائة وثلاين \n(يا رَبّ لَمّْ يَرْتَفِعْ قَلْبِي)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Seigneur, je n'ai pas le coeur fier ni le regard ambitieux ; je ne poursuis ni grands desseins, ni merveilles qui me dépassent.", 
   "", 
-  "يا رَبّ لَمّْ يرتفع قَلْبِي، ولم تستعلِ عيناي، ولم أسلك في العظائم ولا في العجائب التي هي أعلى مني.", 
+  "يا رَبّ لَمّْ يَرْتَفِعْ قَلْبِي، ولم تستعلِ عيناي، ولم أسلك في العظائم ولا في العجائب التي هي أعلى مني.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18443,21 +18710,25 @@ PrayersArray= [[
   "", 
   "فإن كُنْتُ لَمّْ أتضع لَكِنْ رفعت صوتي مِثْلَ الفطيم من اللبن على أمه، كذلك المجازاة على نَفْسِي. فليتكل إسرائيل على الرَبّ من الآنْ والى الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm131&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm131&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 131", 
   "", 
-  " المَزْمُورْ المائة وواحد وثلاثين", 
+  "المَزْمُورْ المائة وواحد وثلاثين \n(اذْكُرْ يا رَبّ دَاوّدْ وَكُلِّ دعَتُهْ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Souviens-toi, Seigneur, de David et de sa grande soumission, quand il fit au Seigneur un serment, une promesse au Puissant de Jacob : « Jamais je n'entrerai sous ma tente, et jamais ne m'étendrai sur mon lit, j'interdirai tout sommeil à mes yeux et tout répit à mes paupières, avant d'avoir trouvé un lieu pour le Seigneur, une demeure pour le Puissant de Jacob. »", 
   "", 
-  "اذكر يا رَبّ داود وكُلَّ دعته، كيف أقسم للرَبّ ونذر لإله يعقوب: إني لا أدخل إلى مسكن بيتي، ولا أصعد على سرير فراشي، ولا أعطى لعيني نوما، ولا لأجفاني نعاسا، ولا راحة لصدغيَّ، إلى أنْ أجد موضعا للرَبّ ومسكنا لإله يعقوبَ.", 
+  "اذْكُرْ يا رَبّ دَاوّدْ وَكُلِّ دعَتُهْ، كيف أقسم للرَبّ ونذر لإله يعقوب: إني لا أدخل إلى مسكن بيتي، ولا أصعد على سرير فراشي، ولا أعطى لعيني نوما، ولا لأجفاني نعاسا، ولا راحة لصدغيَّ، إلى أنْ أجد موضعا للرَبّ ومسكنا لإله يعقوبَ.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18487,21 +18758,25 @@ PrayersArray= [[
   "", 
   "لأن الرَبّ اختار صهيون ورضيها مسكنًا له. هَذا هو موضع راحتي إلى أبد الأبد، ههنا أسكن لأني أردته. لصيدها أبارك بركة، لمساكينها أشبع خبزا، لكهنتها ألبس الخلاص وأبرارها يبتهجون ابتهاجا. هناك أقيم قرنا لداود. هيأتُ سراجا لمسيحي. لأعدائه ألبس الخزي وعليه يزهر قدسي.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm132&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm132&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 132", 
   "", 
-  " المَزْمُورْ المائة واثنين وثلاثين", 
+  "المَزْمُورْ المائة واثنين وثلاثين \n(ما أحْسَنْ وما أحْلَي أَنْ يَسْكُنْ الإخْوَة مَعاً)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Oui, il est bon, il est doux pour des frères de vivre ensemble et d'être unis !", 
   "", 
-  "هوذا ما أحسن وما أحلي أنْ يسكن الاخوة مَعَا.", 
+  "هُوذَّا ما أحْسَنْ وما أحْلَي أَنْ يَسْكُنْ الإخْوَة مَعاً.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18517,21 +18792,25 @@ PrayersArray= [[
   "", 
   "لأن هناك أمر الرَبّ بالبركة والحياة إلى الأبد.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm133&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm133&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 133", 
   "", 
-  " المَزْمُورْ المائة وثلاثة وثلاثين", 
+  "المَزْمُورْ المائة وثلاثة وثلاثين \n(ها بارِكُوا الرَبَّّ يا عَبيْدْ الرَبّْ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Vous tous, bénissez le Seigneur, vous qui servez le Seigneur, qui veillez dans la maison du Seigneur au long des nuits. ", 
   "", 
-  "ها باركوا الرَبَّّ يا عبيدَ الرَبّ، القائمين في بيت الرَبّ في ديار إلَهْنَا.", 
+  "ها بارِكُوا الرَبَّّ يا عَبيْدْ الرَبّْ، القائمين في بيت الرَبّ في ديار إلَهْنَا.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18540,21 +18819,25 @@ PrayersArray= [[
   "", 
   "في الليالي ارفعوا أيديكم إلى القدس وباركوا الرَبّ. يبارككم الرَبّ من صهيون الذي خلق السَّمَاء والأرض.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm136&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm136&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 136", 
   "", 
-  " المَزْمُورْ المائة وستة وثلاثين", 
+  "المَزْمُورْ المائة وستة وثلاثين \n(عَلى أنْهارْ بَابِلْ هُنَاكَ جَلَسْنَا)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Au bord des fleuves de Babylone nous étions assis et nous pleurions, nous souvenant de Sion ; aux saules des alentours nous avions pendu nos harpes. C'est là que nos vainqueurs nous demandèrent des chansons, et nos bourreaux, des airs joyeux : « Chantez-nous, disaient-ils, quelque chant de Sion. »", 
   "", 
-  "على أنهار بابل هناك جلسنا، فبكينا عِنْدَمَا تذكرنا صهيون. على الصفصاف في وسطها علقنا قيثاراتنا، لِأنَّهاً هناك سألنا الذين سبونا أقوالَ التسبيح. والذين استاقونا إلى هناك قالوا: سبحوا لنا تسبحة من تسابيح صهيون.", 
+  "عَلى أنْهارْ بَابِلْ هُنَاكَ جَلَسْنَا، فبكينا عِنْدَمَا تذكرنا صهيون. على الصفصاف في وسطها علقنا قيثاراتنا، لِأنَّهاً هناك سألنا الذين سبونا أقوالَ التسبيح. والذين استاقونا إلى هناك قالوا: سبحوا لنا تسبحة من تسابيح صهيون.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18577,21 +18860,25 @@ PrayersArray= [[
   "", 
   "يا بنت بابل الشقية طوبى لمن يكافئك مكافأتك التي جازيتينا. طوبى لمن يمسك أطفالك ويدفنهم عند الصخرة.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm137&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm137&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 137", 
   "", 
-  " المَزْمُورْ المائة وسبعة وثلاثين", 
+  "المَزْمُورْ المائة وسبعة وثلاثين \n(أعْتَرِفْ لَكَ يا رَبّ مِنْ كُلِِّ قَلْبِي)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "De tout mon coeur, Seigneur, je te rends grâce : tu as entendu les paroles de ma bouche. Je te chante en présence des anges, vers ton temple sacré, je me prosterne. Je rends grâce à ton nom pour ton amour et ta vérité, car tu élèves, au-dessus de tout, ton nom et ta parole.", 
   "", 
-  "أعترف لَكَ يا رَبّ من كُلِّ قَلْبِي لأنَّكَ استمعت كُلِّ كلمات فمي. أمام المَلائِكَةْ أُرَتِّلُ لَكَ وأسجد قدام هَيْكَلَكَ المُقَدَّسْ، وأعترف لاسْمِكَ على رَحْمَتُكَ وحقك، لأنَّكَ قَدّْ عظمت اسمك القُدُّوسْ على الكل.", 
+  "أعْتَرِفْ لَكَ يا رَبّ مِنْ كُلِِّ قَلْبِي لأنَّكَ استمعت كُلِّ كلمات فمي. أمام المَلائِكَةْ أُرَتِّلُ لَكَ وأسجد قدام هَيْكَلَكَ المُقَدَّسْ، وأعترف لاسْمِكَ على رَحْمَتُكَ وحقك، لأنَّكَ قَدّْ عظمت اسمك القُدُّوسْ على الكل.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18621,21 +18908,25 @@ PrayersArray= [[
   "", 
   "الرَبّ يجازي عني، يا رَبّ رَحْمَتُكَ دائمة إلى الأبد. أعمال يديك يا رَبّ لا تتركها.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm140&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm140&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 140", 
   "", 
-  " المَزْمُورْ المائة وأرَبّعين", 
+  "المَزْمُورْ المائة وأرَبّعين \n(يا رَبُّ إليَكَ صَرَخْتُ فاسْتْمَِعْ لي)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Seigneur, je t'appelle : accours vers moi ! Écoute mon appel quand je crie vers toi ! Que ma prière devant toi s'élève comme un encens, et mes mains, comme l'offrande du soir.", 
   "", 
-  "يا رَبّ إليَكَ صرخت فاستمع لي. أنصت إلى  صوت تضرعي، إذا ما صرختُ إليك. لتستقم صَلاتي كالبخور قدامك. وليكن رفع يدي كذبيحة مسائية.", 
+  "يا رَبُّ إليَكَ صَرَخْتُ فاسْتْمَِعْ لي. أنصت إلى صوت تضرعي، إذا ما صرختُ إليك. لتستقم صَلاتي كالبخور قدامك. وليكن رفع يدي كذبيحة مسائية.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18664,22 +18955,26 @@ PrayersArray= [[
   "Les impies tomberont dans leur piège ; seul, moi, je passerai.", 
   "", 
   "يسقط الخطاة في شبكتهم، وأكون أَنا وحدي حتى يجوزَ الإثُمَّ.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm141&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm141&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 141", 
   "", 
-  " المَزْمُورْ المائة وواحد وأرَبّعين", 
+  "المَزْمُورْ المائة وواحد وأرَبّعين \n(بِصَوتِي إلىَ الرَبِّ صَرَخْتُْ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "A pleine voix, je crie vers le Seigneur ! A pleine voix, je supplie le Seigneur ! Je répands devant lui ma plainte, devant lui, je dis ma détresse. Lorsque le souffle me manque, toi, tu sais mon chemin. ", 
   "", 
-  "بصوتي إلى الرَبّ صرختُ، بصوتي إلى الرَبّ تضرعتُ. أسكب أمامه توسلي. أبث لديه ضيقي، عند فناء روحي مني وأنت علمتَ سبلي.", 
+  "بِصَوتِي إلىَ الرَبِّ صَرَخْتُْ، بصوتي إلى الرَبّ تضرعتُ. أسكب أمامه توسلي. أبث لديه ضيقي، عند فناء روحي مني وأنت علمتَ سبلي.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18695,21 +18990,25 @@ PrayersArray= [[
   "", 
   "أنصت إلى طلبتي فإنني قَدّْ تذللتُ جدا. نجني من الذين يضطهدونني لِأنَّهُم قَدّْ اعتزوا أكثر مني. أخرج من الحبس نَفْسِي، لكي أشكر اسمك يا رَبّ. إياي ينتظر الصديقون حتى تجازيني.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm145&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm145&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 145", 
   "", 
-  " المَزْمُورْ المائة وخمسة وأرَبّعين", 
+  "المَزْمُورْ المائة وخمسة وأرَبّعين \n(سَبِّحي يا نَفْسِي الرَبَّّ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Chante, ô mon âme, la louange du Seigneur ! Je veux louer le Seigneur tant que je vis, chanter mes hymnes pour mon Dieu tant que je dure.", 
   "", 
-  "سبحي يا نَفْسِي الرَبَّّ، أُسَبِّحْ الرَبّ في حياتي وأُرَتِّلُ لإلهي ما دمت موجودا.", 
+  "سَبِّحي يا نَفْسِي الرَبَّّ، أُسَبِّحْ الرَبّ في حياتي وأُرَتِّلُ لإلهي ما دمت موجودا.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18738,22 +19037,26 @@ PrayersArray= [[
   "D'âge en âge, le Seigneur régnera : ton Dieu, ô Sion, pour toujours !", 
   "", 
   "يملك الرَبّ إلى الدهر، وإلهك يا صهيون من جيل إلى جيل.", 
-  ],
+    ],
+    [
+      Prefix.placeHolder,
+      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+    ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm146&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm146&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 146", 
   "", 
-  " المَزْمُورْ المائة وستة وأرَبّعين", 
+  "المَزْمُورْ المائة وستة وأرَبّعين \n(سَبِّحوا الرَبَّ فإنَّ المَزْمُورْ جَيِّدْ)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Il est bon de fêter notre Dieu, il est beau de chanter sa louange !", 
-  "", 
-  "سبحوا الرَبّ فان المَزْمُورْ جيد، ولإلَهْنَا يلذ التسبيح.", 
+  "ّ", 
+  "سَبِّحوا الرَبَّ فإنَّ المَزْمُورْ جَيِّدْ، ولإلَهْنَا يلذ التسبيح.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18790,21 +19093,25 @@ PrayersArray= [[
   "", 
   "لا يؤْثر قوة الفرس ولا يسر بساقي الرجل، بل يسر الرَبّ بخائفيه وبالراجين رحمته.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourPsalm147&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"Psalm147&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Psaume 147", 
   "", 
-  " المَزْمُورْ المائة وسبعة وأرَبّعين", 
+  "المَزْمُورْ المائة وسبعة وأرَبّعين \n(سَبِِّحِي الرَبَّ يا أوُرُشَلِيْم)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Glorifie le Seigneur, Jérusalem ! Célèbre ton Dieu, ô Sion ! Il a consolidé les barres de tes portes, dans tes murs il a béni tes enfants ; il fait régner la paix à tes frontières, et d'un pain de froment te rassasie.", 
   "", 
-  "سبحي الرَبّ يا أورشليم، سبحي إلهك يا صهيون. لِأنَّهُ قَدّْ قوى مغاليق أبوابك وبارك بنيك فيك. الذي جعل تخومَك في سَلام، ويملأك من شحم الحنطة.", 
+  "سَبِِّحِي الرَبَّ يا أوُرُشَلِيْم، سبحي إلهك يا صهيون. لِأنَّهُ قَدّْ قوى مغاليق أبوابك وبارك بنيك فيك. الذي جعل تخومَك في سَلام، ويملأك من شحم الحنطة.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18827,14 +19134,18 @@ PrayersArray= [[
   "", 
   "المخبر كلمته ليعقوب وفرائضه وأحكامه لإسرائيل. لم يصنع هَكَذا بِكُلَّ الأمم، وأحكامُه لَمّْ يوضحها لهم.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"TwelvethHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la 12ème heure", 
   "", 
-  " إنجيل السَاعَةْ الثانية عشر", 
+  "إنجيل السَاعَةْ الثانية عشر", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -18850,14 +19161,18 @@ PrayersArray= [[
   "", 
   "فأقبل بالروح إلى الهَيْكَلْ. ولما دخل بالطفل يَسُوعْ أبواه ليصنعا عنه كما يجب في الناموس، حمله سمعان على ذراعيه وبارك اللّه قائلا: \"الآن يا سيدي تطلق عبدك بسلام حسب قولك، لِأنَّ عيني قَدّْ أبصرتا خلاصك الذي أعددته قدام جَمِيعْ الشعوب. نورا تجلى للأمم، ومجدا لشعبك إسرائيل.\"", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  ],
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"TwelvethHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Litanies de la 12ème heure", 
   "", 
-  "قطع السَاعَةْ الثانية عشر", 
+  "قِطَعْ السَاعَةْ الثانية عَشْرْ", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -18898,11 +19213,11 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.bookOfHours+"12thHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"TwelvethHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Absolution de la 12ème heure", 
   "", 
-  " تحليل صَلاةْ السَاعَةْ الثانية عشر", 
+  "تَحْليلْ صَلاةْ السَاعَةْ الثَانِيَةَ عَشْرْ", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -18914,14 +19229,14 @@ PrayersArray= [[
   [
   Prefix.same+"&C=NoActor", 
   "", 
-  "Accorde-nous, Seigneur, une nuit paisible. Fais que notre sommeil soit pur et sans inquiétude.", 
+  "Accorde-nous, Seigneur, une nuit paisible. Fais que notre sommeil soit pur et sans inquiétude. Envoie nous l'ange de la paix, qu'il nous protège de tout mal, de toute attaque et de toute tentation de l'ennemi.", 
   "", 
   "وأنعم علينا اَللَّهُمَّ بليلة سالمة، وبهذا النوم طاهرا من كُلِّ قلق. وأرسل لنا ملاك السَّلامُة ليحرسنا من كُلِّ شر، ومن كُلِّ ضرَبّة، ومن كُلِّ تجرَبّة العدو.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
-  "Envoie nous l'ange de la paix, qu'il nous protège de tout mal, de toute attaque et de toute tentation de l'ennemi.", 
+  "Par la grâce, la compassion et l’amour du genre humain de Ton Fils unique notre Seigneur, notre Dieu et notre Sauveur Jésus Christ.", 
   "", 
   "بِالْنِعْمَة والرأفات ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد رَبّنا وإلَهْنَا ومُخَلِصّْنَا يَسُوعْ المسيح.", 
   ],
@@ -18939,7 +19254,7 @@ PrayersArray= [[
   "", 
   "Ô tous les chœurs célestes", 
   "", 
-  " يا كُلِّ الصفوف السمائيين", 
+  "يا كُلَِّ الصِفُوفْ السَّمائِيينْ", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19002,7 +19317,7 @@ PrayersArray= [[
   "", 
   "Christ est ressuscité", 
   "", 
-  " المَسيحُ قامَ من الاموات", 
+  "المَسيحُ قامَ من الاموات", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19023,7 +19338,7 @@ PrayersArray= [[
   "", 
   "Tonsina Narkhon", 
   "", 
-  " تونسينا نارخون", 
+  "تونسينا نارخون", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19044,7 +19359,7 @@ PrayersArray= [[
   "", 
   "", 
   "", 
-  " إن الحَجَرْ لمّا خُتِمَ", 
+  "إن الحَجَرْ لمّا خُتِمَ", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19072,7 +19387,7 @@ PrayersArray= [[
   "", 
   "Le Christ est ressuscité", 
   "", 
-  " المَسِيحْ قام من الأموات", 
+  "المَسِيحْ قام من الأموات", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19086,7 +19401,7 @@ PrayersArray= [[
   "", 
   "Pashoys Isos", 
   "", 
-  " باشويس إيسوس", 
+  "باشويس إيسوس", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -25425,19 +25740,182 @@ PrayersArray= [[
   ],
   ],
   [
-  [
-  Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
-  "", 
-  "", 
-  "", 
-  "", 
-  ],
-  [
-  Prefix.same+"&C=Assembly", 
-  "", 
-  "", 
-  "", 
-  "", 
-  ],
-  ],
+    [
+    Prefix.bookOfHours+"Psalm118&D=$copticFeasts.AnyDay&C=SubTitle", 
+    "", 
+    "Psaume 118", 
+    "", 
+    "المَزْمُورْ المَائة والثَامِنْ عَشْرْ\n(طُوبَاهُمْ الذينَ بِلا عِيْبْ)", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "1119 Heureux ceux qui sont intègres dans leur voie, Qui marchent selon la loi de l'Éternel! 2 Heureux ceux qui gardent ses préceptes, Qui le cherchent de tout leur coeur, 3 Qui ne commettent point d'iniquité, Et qui marchent dans ses voies! 4 Tu as prescrit tes ordonnances, Pour qu'on les observe avec soin. 5 Puissent mes actions être bien réglées, Afin que je garde tes statuts! 6 Alors je ne rougirai point, A la vue de tous tes commandements. 7 Je te louerai dans la droiture de mon coeur, En apprenant les lois de ta justice. 8 Je veux garder tes statuts: Ne m'abandonne pas entièrement!", 
+    "", 
+    "1ـ طوباهم الذين بِلا عِيْبْ في الطريق، السَالِكُونْ في نَامُوسْ الرَبّ. طُوباهُمْ الذين يَفْحَصْونْ عَنْ شِهادَاتُه، ومن قلوبهم يطلبونه، لأن صانعي الإثم لم يهووا أن يسلكوا في سبله. أنت أمرت أن تحفظ وصاياك جدا، فيا ليت طرقي تستقيم إلى حفظ حقوقك. حينئذ لا أخزى إذا ما اطلعت على جميع وصاياك. أشكرك يا رب باستقامة قلبي، إذ عرفت أحكام عدلك. حقوقك أحفظ، فلا ترفضني إلى الغاية. ذُكْصاسْي فِلا نيثرومبي", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "9 Comment le jeune homme rendra-t-il pur son sentier? En se dirigeant d'après ta parole. 10 Je te cherche de tout mon coeur: Ne me laisse pas égarer loin de tes commandements! 11 Je serre ta parole dans mon coeur, Afin de ne pas pécher contre toi. 12 Béni sois-tu, ô Éternel! Enseigne-moi tes statuts! 13 De mes lèvres j'énumère Toutes les sentences de ta bouche. 14 Je me réjouis en suivant tes préceptes, Comme si je possédais tous les trésors. 15 Je médite tes ordonnances, J'ai tes sentiers sous les yeux. 16 Je fais mes délices de tes statuts, Je n'oublie point ta parole.", 
+    "", 
+    "2ـ بماذا يقوم الشاب طريقه؟ بحفظه أقوالك. من كل قلبي طلبتك، فلا تبعدني عن وصاياك أخفيت أقوالك في قلبي لكي لا أخطئ إليك. مبارك أنت يا رب علمني حقوقك. بشفتي أظهرت كل أحكام فمك، وفرحت بطريق شهاداتك كما بكل غنى. بوصاياك أتكلم وأتفهم في طرقك، بفرائضك ألهج، ولا أنسى كلامك. ذُكْصاسْي فِلا نيثرومبي", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "17 Fais du bien à ton serviteur, pour que je vive Et que j'observe ta parole! 18 Ouvre mes yeux, pour que je contemple Les merveilles de ta loi! 19 Je suis un étranger sur la terre: Ne me cache pas tes commandements! 20 Mon âme est brisée par le désir Qui toujours la porte vers tes lois. 21 Tu menaces les orgueilleux, ces maudits, Qui s'égarent loin de tes commandements. 22 Décharge-moi de l'opprobre et du mépris! Car j'observe tes préceptes. 23 Des princes ont beau s'asseoir et parler contre moi, Ton serviteur médite tes statuts. 24 Tes préceptes font mes délices, Ce sont mes conseillers.", 
+    "", 
+    "3ـ كافئ عبدك فأحيا وأحفظ أقوالك. اكشف عن عيني فـأرى عجائب من ناموسك. غريب أنا في الأرض فلا تخفِ عنى وصاياك. اشتاقت نفسي إلى اشتهاء أحكامك في كل حين. إنك انتهرت المتكبرين الملاعين الذين حادوا عن وصاياك. انزع عنى العار والخزي فإني لشهاداتك ابتغيتُ. جلس الرؤساء وتقاولوا على، أما عبدك فكان يهتمُ بحقوقك، لأن شهاداتك هي درسي وحقوقك هي مشورتي ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "25 Mon âme est attachée à la poussière: Rends-moi la vie selon ta parole! 26 Je raconte mes voies, et tu m'exauces: Enseigne-moi tes statuts! 27 Fais-moi comprendre la voie de tes ordonnances, Et je méditerai sur tes merveilles! 28 Mon âme pleure de chagrin: Relève-moi selon ta parole! 29 Éloigne de moi la voie du mensonge, Et accorde-moi la grâce de suivre ta loi! 30 Je choisis la voie de la vérité, Je place tes lois sous mes yeux. 31 Je m'attache à tes préceptes: Éternel, ne me rends point confus! 32 Je cours dans la voie de tes commandements, Car tu élargis mon coeur.", 
+    "", 
+    "4ـ لصقت بالتراب نفسي فأحيني ككلمتك. أخبرت بطرقك فاستجب لي. علمني حقوقك، وطريق عدلك فهمني، فألهج في عجائبك. ذبلت نفسي من الحزن، فثبتني في أقوالك. طريق الظلم أبعد عنى وبناموسك ارحمني. إني اخترت طريق الحق وأحكامك لم أنس. لصقتُ بشهاداتك يا رب فلا تخزني. في طريق وصاياك سعيتُ عندما وسعتَ قلبي ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "33 Enseigne-moi, Éternel, la voie de tes statuts, pour que je la retienne jusqu'à la fin! 34 Donne-moi l'intelligence, pour que je garde ta loi Et que je l'observe de tout mon coeur! 35 Conduis-moi dans le sentier de tes commandements! Car je l'aime.  36 Incline mon coeur vers tes préceptes, Et non vers le gain!  37 Détourne mes yeux de la vue des choses vaines, Fais-moi vivre dans ta voie! 38 Accomplis envers ton serviteur ta promesse, Qui est pour ceux qui te craignent! 39 Éloigne de moi l'opprobre que je redoute! Car tes jugements sont pleins de bonté. 40 Voici, je désire pratiquer tes ordonnances: Fais-moi vivre dans ta justice!", 
+    "", 
+    "5ـ ضع لي يا رب ناموسا في طريق حقوقك فأتبعَه كل حين. فهمني فأبحث عن ناموسك وأحفظه بكل قلبي. اهدني في سبيل وصاياك فإني إياها هويت. أمل قلبي إلى شهاداتك لا إلى الظلم. اردد عيني لئلا تعاينا الأباطيل، وفى سبلك أحيني. ثبت قولك لعبدك في خوفك، وانزع عنى العار الذي حَذِرْتُ منه، فإن أحكامك حلوة. هاأنذا قد اشتهيتُ وصاياك، فأحيني ببرك ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "41 Éternel, que ta miséricorde vienne sur moi, Ton salut selon ta promesse! 42 Et je pourrai répondre à celui qui m'outrage, Car je me confie en ta parole. 43 N'ôte pas entièrement de ma bouche la parole de la vérité! Car j'espère en tes jugements. 44 Je garderai ta loi constamment, A toujours et à perpétuité. 45 Je marcherai au large, Car je recherche tes ordonnances. 46 Je parlerai de tes préceptes devant les rois, Et je ne rougirai point. 47 Je fais mes délices de tes commandements. Je les aime. 48 Je lève mes mains vers tes commandements que j'aime, Et je veux méditer tes statuts.", 
+    "", 
+    "6ـ  لتأت عليّ رحمتك يا رب وخلاصك كقولك. فأجيب معيري بكلمة. لأني اتكلت على أقوالك، لا تنزع من فمي قول الحق، لأني توكلت على أحكامك، واحفظ شريعتك في كل حين، إلى الأبد والى مدى الدهر. كنتُ أسلك في السعة لأني لوصاياك ابتغيتُ. وتكلمت بشهاداتك قدام الملوك ولم أخزَ. ولهجتُ بوصاياك التي أحببتُها جدا، ورفعت يدي إلى وصاياك التي وددتُها جدا. وتأملتُ فرائضك. ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "49 Souviens-toi de ta promesse à ton serviteur, Puisque tu m'as donné l'espérance! 50 C'est ma consolation dans ma misère, Car ta promesse me rend la vie. 51 Des orgueilleux me chargent de railleries; Je ne m'écarte point de ta loi. 52 Je pense à tes jugements d'autrefois, ô Éternel! Et je me console. 53 Une colère ardente me saisit à la vue des méchants Qui abandonnent ta loi. 54 Tes statuts sont le sujet de mes cantiques, Dans la maison où je suis étranger. 55 La nuit je me rappelle ton nom, ô Éternel! Et je garde ta loi.", 
+    "", 
+    "7ـ اذكر لعبدك كلامك الذي جعلتني عليه أتكل. هذا الذي عزاني في مذلتي. لأن قولك أحياني. إن المتكبرين تجاوزوا الناموس إلى الغاية، أما أنا فعن ناموسك لم أمِل. تذكرتُ أحكامك يا رب منذ الدهر فتعزيتُ. الكآبة ملكتني من أجل الخطاة الذين تركوا ناموسك. حقوقك كانت لي مزاميرَ في موضع غربتي. ذكرتُ في الليل اسمك يا رب، وحفظت شريعتك. هذا صار لي لأني طلبت حقوقك. ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "56 C'est là ce qui m'est propre, Car j'observe tes ordonnances. 57 Ma part, ô Éternel! je le dis, C'est de garder tes paroles. 58 Je t'implore de tout mon coeur: Aie pitié de moi, selon ta promesse! 59 Je réfléchis à mes voies, Et je dirige mes pieds vers tes préceptes. 60 Je me hâte, je ne diffère point D'observer tes commandements. 61 Les pièges des méchants m'environnent; Je n'oublie point ta loi. 62 Au milieu de la nuit je me lève pour te louer, A cause des jugements de ta justice. 63 Je suis l'ami de tous ceux qui te craignent, Et de ceux qui gardent tes ordonnances. 64 La terre, ô Éternel! est pleine de ta bonté; Enseigne-moi tes statuts!", 
+    "", 
+    "8ـ نصيبي أنت يا رب فقلت أن أحفظ وصاياك. ترضيت وجهك بكل قلبي، فارحمني كقولك. لأني تفكرت في طرقك ورددت قدمي إلى شهاداتك. تهيأت ولم أتوانَ لحفظ وصاياك. رباطات الخطاة التفت على، أما شريعتك فلم أنسَها. في نصف الليل نهضت لأشكرك على أحكام عدلك. شريك أنا لكل الذين يخافونك، وللحافظين وصاياك. من رحمتك يا رب امتلأت الأرضُ فعلمني عدلك ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "65 Tu fais du bien à ton serviteur, O Éternel! selon ta promesse. 66 Enseigne-moi le bon sens et l'intelligence! Car je crois à tes commandements. 67 Avant d'avoir été humilié, je m'égarais; Maintenant j'observe ta parole. 68 Tu es bon et bienfaisant; Enseigne-moi tes statuts! 69 Des orgueilleux imaginent contre moi des faussetés; Moi, je garde de tout mon coeur tes ordonnances. 70 Leur coeur est insensible comme la graisse; Moi, je fais mes délices de ta loi. 71 Il m'est bon d'être humilié, Afin que j'apprenne tes statuts. 72 Mieux vaut pour moi la loi de ta bouche Que mille objets d'or et d'argent.", 
+    "", 
+    "9ـ خيرا صنعتَ مع عبدك يا رب حسب قولك، صلاحا وأدبا ومعرفة، علمني فإني قد صدقت وصاياك. قبل أن أتواضع أنا تكاسلتُ. فلهذا حفظتُ كلامك. صالح أنت يا رب فبصلاحك علمني حقوقك. كثر عليّ ظلم المتكبرين، وأنا بكل قلبي أبحث عن وصاياك. تجبن مثل اللبن قلبهم، وأنا لهجت بناموسك. خير لي أنك أذللتني حتى أتعلمَ حقوقك. ناموس فمك خير لي من ألوف ذهب وفضة ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "73 Tes mains m'ont créé, elles m'ont formé; Donne-moi l'intelligence, pour que j'apprenne tes commandements! 74 Ceux qui te craignent me voient et se réjouissent, Car j'espère en tes promesses. 75 Je sais, ô Éternel! que tes jugements sont justes; C'est par fidélité que tu m'as humilié. 76 Que ta bonté soit ma consolation, Comme tu l'as promis à ton serviteur! 77 Que tes compassions viennent sur moi, pour que je vive! Car ta loi fait mes délices. 78 Qu'ils soient confondus, les orgueilleux qui m'oppriment sans cause! Moi, je médite sur tes ordonnances. 79 Qu'ils reviennent à moi, ceux qui te craignent, Et ceux qui connaissent tes préceptes! 80 Que mon coeur soit sincère dans tes statuts, Afin que je ne sois pas couvert de honte!", 
+    "", 
+    "10ـ يداك صنعتاني وجبلتاني. فهمني فأتعلم وصاياك. الذين يخافونك يبصرونني ويفرحون، لأني بكلامك وثقت. قد علمتُ يا رب أن أحكامك عادلة وبحق أذللتني. فلتأتِ عليّ رحمتك لتعزيني، نظير قولك لعبدك. لتأتني رأفتك فأحيا فإن ناموسك هو درسي. وليخز المتكبرون لأنهم خالفوا الشرع عليّ ظلما، وأنا كنت مثابرا على وصاياك. وليرجع إليّ الذين يتقونك ويعرفون عجائبك، وليصر قلبي بلا عيب في عدلك لكي لا أخزي ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "81 Mon âme languit après ton salut; J'espère en ta promesse. 82 Mes yeux languissent après ta promesse; Je dis: Quand me consoleras-tu? 83 Car je suis comme une outre dans la fumée; Je n'oublie point tes statuts. 84 Quel est le nombre des jours de ton serviteur? Quand feras-tu justice de ceux qui me persécutent? 85 Des orgueilleux creusent des fosses devant moi; Ils n'agissent point selon ta loi. 86 Tous tes commandements ne sont que fidélité; Ils me persécutent sans cause: secours-moi! 87 Ils ont failli me terrasser et m'anéantir; Et moi, je n'abandonne point tes ordonnances. 88 Rends-moi la vie selon ta bonté, Afin que j'observe les préceptes de ta bouche!", 
+    "", 
+    "11ـ تاقت نفسي إلى خلاصك وعلى كلامك توكلت. كلت عيناي من انتظار أقوالك قائلتين: \"متى تعزيني ؟\". صرتُ مثل زق في جليد ولحقوقك لم أنس. كم هي أيام عبدك ؟ متى تجري لي حكما على الذين يضطهدونني؟ تكلم معي مخالفو الناموس بكلام هذيان، لكن ليس كناموسك يا رب، لأن كل وصاياك هي حق. وبظلم قد طردوني فأعني؟ كادوا يفنونني على الأرض، أما أنا فلم أترك وصاياك. حسب رحمتك أحيني فأحفظ شهادات فمك ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "89 A toujours, ô Éternel! Ta parole subsiste dans les cieux. 90 De génération en génération ta fidélité subsiste; Tu as fondé la terre, et elle demeure ferme. 91 C'est d'après tes lois que tout subsiste aujourd'hui, Car toutes choses te sont assujetties. 92 Si ta loi n'eût fait mes délices, J'eusse alors péri dans ma misère. 93 Je n'oublierai jamais tes ordonnances, Car c'est par elles que tu me rends la vie. 94 Je suis à toi: sauve-moi! Car je recherche tes ordonnances. 95 Des méchants m'attendent pour me faire périr; Je suis attentif à tes préceptes. 96 Je vois des bornes à tout ce qui est parfait: Tes commandements n'ont point de limite.\n", 
+    "", 
+    "12ـ يا رب كلمتك دائمة في السموات إلى الأبد، وإلى جيل فجيل حقك. أسست الأرض فهي ثابتة بأمرك، والنهار أيضا ثابت. لأن كل الأشياء متعبدة لك. لو لم تكن شريعتك تلاوتي لهلكتُ حينئذ في مذلتي. وإلى الدهر لا أنسى وصاياك لأنك بها أحييتني يا رب. لك أنا فخلصني يا رب، لأني لوصاياك طلبتُ. إياي انتظر الخطاة ليهلكوني، ولشهاداتك فهمت. لكل تمام رأيت منتهى أما وصاياك فواسعة جدا ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "97 Combien j'aime ta loi! Elle est tout le jour l'objet de ma méditation. 98 Tes commandements me rendent plus sage que mes ennemis, Car je les ai toujours avec moi. 99 Je suis plus instruit que tous mes maîtres, Car tes préceptes sont l'objet de ma méditation. 100 J'ai plus d'intelligence que les vieillards, Car j'observe tes ordonnances. 101 Je retiens mon pied loin de tout mauvais chemin, Afin de garder ta parole. 102 Je ne m'écarte pas de tes lois, Car c'est toi qui m'enseignes. 103 Que tes paroles sont douces à mon palais, Plus que le miel à ma bouche! 104 Par tes ordonnances je deviens intelligent, Aussi je hais toute voie de mensonge.\n", 
+    "", 
+    "13ـ محبوب هو اسمك يا رب، فهو طولَ النهار تلاوتي. علمتني وصاياك أفضل من أعدائي، لأنها ثابتة لي إلى الأبد. أكثر من جميع الذين يعلمونني فهمتُ، لأن شهادتك هي درسي. أكثر من الشيوخ فهمتُ، لأني طلبتُ وصاياك. من كل طريق خبيث منعتُ رجليّ لكي أحفظ كلامك. عن كلامك لم أحد، لأنك وضعتَ لي ناموسا. إن كلماتك حلوة في حلقي، أفضل من العسل والشهد في فمي. من وصاياك تفطنتُ، فلهذا أبغضت كل طرق الظلم. (لأنك وضعتَ لي ناموسًا) ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "105 Ta parole est une lampe à mes pieds, Et une lumière sur mon sentier. 106 Je jure, et je le tiendrai, D'observer les lois de ta justice. 107 Je suis bien humilié: Éternel, rends-moi la vie selon ta parole! 108 Agrée, ô Éternel! les sentiments que ma bouche exprime, Et enseigne-moi tes lois! 109 Ma vie est continuellement exposée, Et je n'oublie point ta loi. 110 Des méchants me tendent des pièges, Et je ne m'égare pas loin de tes ordonnances. 111 Tes préceptes sont pour toujours mon héritage, Car ils sont la joie de mon cœur. 112 J'incline mon cœur à pratiquer tes statuts, Toujours, jusqu'à la fin.\n", 
+    "", 
+    "14ـ مصباح لرجلي كلامك ونور لسبلي. حلفت فأقمت على حفظ أحكام عدلك. تذللت جدا إلى الغاية يا رب، أحيني كقولك. تعهدات فمي باركها يا رب، وأحكامك علمني. نفسي في يديك كل حين، وناموسك لم أنسَ، أخفى الخطاة لي فخا، ولم أضل عن وصاياك. ورثت شهاداتك إلى الأبد، لأنها بهجة قلبي. عطفت قلبي لأصنع برك إلى الأبد (من أجل المكافأة) (ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "113 Je hais les hommes indécis, Et j'aime ta loi. 114 Tu es mon asile et mon bouclier; J'espère en ta promesse. 115 Éloignez-vous de moi, méchants, Afin que j'observe les commandements de mon Dieu! 116 Soutiens-moi selon ta promesse, afin que je vive, Et ne me rends point confus dans mon espérance! 117 Sois mon appui, pour que je sois sauvé, Et que je m'occupe sans cesse de tes statuts! 118 Tu méprises tous ceux qui s'écartent de tes statuts, Car leur tromperie est sans effet. 119 Tu enlèves comme de l'écume tous les méchants de la terre; C'est pourquoi j'aime tes préceptes. 120 Ma chair frissonne de l'effroi que tu m'inspires, Et je crains tes jugements.\n", 
+    "", 
+    "15ـ لمتجاوزي الناموس أبغضتُ ولناموسك أحببت. لأنك أنت معيني وناصري. وعلى كلامك توكلت. ابعدوا عني أيها الأشرار فأفحص عن وصايا إلهي. عضدني حسب قولك فأحيا ولا تخيب رجائي. أعني فأخلص، وأدرس في وصاياك كل حين. رذلتَ سائر الذين حادوا عن وصاياك لأن فكرهم ظلم. عصاة حسبتَ سائر خطاة الأرض، فلهذا أحببتُ شهاداتك في كل حين. سمر خوفك في لحمي لأني من أحكامك جزعتُ ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "121 J'observe la loi et la justice: Ne m'abandonne pas à mes oppresseurs! 122 Prends sous ta garantie le bien de ton serviteur, Ne me laisse pas opprimer par des orgueilleux! 123 Mes yeux languissent après ton salut, Et après la promesse de ta justice. 124 Agis envers ton serviteur selon ta bonté, Et enseigne-moi tes statuts! 125 Je suis ton serviteur: donne-moi l'intelligence, Pour que je connaisse tes préceptes! 126 Il est temps que l'Éternel agisse: Ils transgressent ta loi. 127 C'est pourquoi j'aime tes commandements, Plus que l'or et que l'or fin; 128 C'est pourquoi je trouve justes toutes tes ordonnances, Je hais toute voie de mensonge.\n", 
+    "", 
+    "16ـ قد أجريتُ حكما وعدلا فلا تسلمني إلى الذين يظلمونني. كن لعبدك كفيلا في الخير، لئلا يجوزَ عليّ المتكبرون. عيناي قد ذبلتا من انتظار خلاصك وقول عدلك. اصنع مع عبدك حسب رحمتك، وحقوقك علمني. عبدك أنا، فهمني فأعرف شهاداتك. إنه وقتٌ يعمل فيه للرب، لأنهم قد نقضوا ناموسك. لأجل هذا أحببتُ وصاياك أفضل من الذهب والجوهر، ولأجل هذا بازاء كل وصاياك تقومتُ، وكل طريق ظلم أبغضتُ ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "129 Tes préceptes sont admirables: Aussi mon âme les observe. 130 La révélation de tes paroles éclaire, Elle donne de l'intelligence aux simples. 131 J'ouvre la bouche et je soupire, Car je suis avide de tes commandements. 132 Tourne vers moi ta face, et aie pitié de moi, Selon ta coutume à l'égard de ceux qui aiment ton nom! 133 Affermis mes pas dans ta parole, Et ne laisse aucune iniquité dominer sur moi! 134 Délivre-moi de l'oppression des hommes, Afin que je garde tes ordonnances! 135 Fais luire ta face sur ton serviteur, Et enseigne-moi tes statuts! 136 Mes yeux répandent des torrents d'eaux, Parce qu'on n'observe point ta loi.\n", 
+    "", 
+    "17ـ عجيبة هي شهاداتك لذلك حفظتها نفسي. إعلان أقوالك ينير لي، ويفهم الأطفال والصغار. فتحت فهمي واجتذبتُ لي روحا، لأني لوصاياك اشتقتُ. انظر إليّ وارحمني كرحمتك للذين يحبون اسمك. قوم خطواتي كقولك فلا يتسلط على أيُّ إثم. أنقذني من ظلم الناس فأحفظ وصاياك. أضئ بوجهك على عبدك وعلمني حقوقك. غاصت عيناي في مجاري المياه، لأنهم لم يحفظوا ناموسك. ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "137 Tu es juste, ô Éternel! Et tes jugements sont équitables; 138 Tu fondes tes préceptes sur la justice Et sur la plus grande fidélité. 139 Mon zèle me consume, Parce que mes adversaires oublient tes paroles. 140 Ta parole est entièrement éprouvée, Et ton serviteur l'aime. 141 Je suis petit et méprisé; Je n'oublie point tes ordonnances. 142 Ta justice est une justice éternelle, Et ta loi est la vérité. 143 La détresse et l'angoisse m'atteignent: Tes commandements font mes délices. 144 Tes préceptes sont éternellement justes: Donne-moi l'intelligence, pour que je vive!\n", 
+    "", 
+    "18ـ عادل أنت يا رب وقضاؤك مستقيم. أوصيتَ كثيرا بالعدل والحق اللذين هما شهاداتك. غيرة بيتك أكلتني، لأن أعدائي نسوا وصاياك. ممحص قولك جدا، وعبدك أحبه. صغيرٌ أنا ومرذول وحقوقك لم أنسَ. عدلك حق هو إلى الأبد، وكلامك حق هو. ضيق وشدة أدركاني، ووصاياك هي درسي. عادلة هي شهاداتك إلى الأبد. فهمني فأحيا ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "145 Je t'invoque de tout mon coeur: exauce-moi, Éternel, Afin que je garde tes statuts! 146 Je t'invoque: sauve-moi, Afin que j'observe tes préceptes! 147 Je devance l'aurore et je crie; J'espère en tes promesses. 148 Je devance les veilles et j'ouvre les yeux, Pour méditer ta parole. 149 Écoute ma voix selon ta bonté! Rends-moi la vie selon ton jugement! 150 Ils s'approchent, ceux qui poursuivent le crime, Ils s'éloignent de la loi. 151 Tu es proche, ô Éternel! Et tous tes commandements sont la vérité. 152 Dès longtemps je sais par tes préceptes Que tu les as établis pour toujours.\n", 
+    "", 
+    "19ـ صرخت من كل قلبي، فاستجب لي يا رب. إني أبتغي حقوقك. صرختُ إليك فخلصني، لأحفظ شهاداتك. سبقتُ وقمتُ قبل الوقتِ وصرخت، وعلى كلامك توكلتُ. سبقتْ عيناي وقت السحَر، لأتلو في جميع أقوالك، فاسمع صوتي يا رب كرحمتك، وبحسب أحكامك أحيني. اقترب بالإثم الذين يطردونني، وعن ناموسك ابتعدوا. قريب أنت يا رب، وكل وصاياك حق هي. منذ البدء عرفتُ من شهاداتك أنك إلى الدهر أسستها ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "153 Vois ma misère, et délivre-moi! Car je n'oublie point ta loi. 154 Défends ma cause, et rachète-moi; Rends-moi la vie selon ta promesse! 155 Le salut est loin des méchants, Car ils ne recherchent pas tes statuts. 156 Tes compassions sont grandes, ô Éternel! Rends-moi la vie selon tes jugements! 157 Mes persécuteurs et mes adversaires sont nombreux; Je ne m'écarte point de tes préceptes, 158 Je vois avec dégoût des traîtres Qui n'observent pas ta parole. 159 Considère que j'aime tes ordonnances: Éternel, rends-moi la vie selon ta bonté! 160 Le fondement de ta parole est la vérité, Et toutes les lois de ta justice sont éternelles.\n", 
+    "", 
+    "20ـ انظر إلى مذلتي وأنقذني، فإني لم أنس ناموسك. احكم لي في دعواي ونجني. من أجل كلامك أحيني. بعيد هو الخلاص عن الخطاة، لأنهم لم يطلبوا حقوقك. رأفتك كثيرة جدا يا رب. حسب أحكامك أحيني. كثيرون هُمُ الذين يضطهدونني ويحزنونني، وعن شهاداتك لم أجنح. رأيت الذين لا يفهمون فاكتأبت، لأنهم لأقوالك لم يحفظوا. انظر يا رب، فإني أحببت وصاياك. برحمتك يا رب أحيني. بدء كلامك حقٌ، وإلي الأبد كل أحكام عدلك ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "161 Des princes me persécutent sans cause; Mais mon coeur ne tremble qu'à tes paroles. 162 Je me réjouis de ta parole, Comme celui qui trouve un grand butin.  163 Je hais, je déteste le mensonge; J'aime ta loi.  164 Sept fois le jour je te célèbre, A cause des lois de ta justice. 165 Il y a beaucoup de paix pour ceux qui aiment ta loi, Et il ne leur arrive aucun malheur. 166 J'espère en ton salut, ô Éternel! Et je pratique tes commandements. 167 Mon âme observe tes préceptes, Et je les aime beaucoup. 168 Je garde tes ordonnances et tes préceptes, Car toutes mes voies sont devant toi.\n", 
+    "", 
+    "21ـ الرؤساء اضطهدوني بلا سبب. من أقوالك جزع قلبي. أبتهج أنا بكلامك كمن وجد غنائمَ كثيرة. أبغضتُ الظلم ورذلته، أما ناموسك فأحببته. سبع مرات في النهار سبحتك على أحكام عدلك. فليكن سلام عظيم للذين يحبون اسمك، وليس لهم شك. توقعتُ خلاصك يا رب ووصاياك أحببتها. حفظتْ نفسي شهاداتك وأحببتها جدا. حفظتُ وصاياك وشهاداتك، وكل طرقي أمامك يا رب. ذُكْصاسْي فِلا نيثرومبي.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "169 Que mon cri parvienne jusqu'à toi, ô Éternel! Donne-moi l'intelligence, selon ta promesse! 170 Que ma supplication arrive jusqu'à toi! Délivre-moi, selon ta promesse! 171 Que mes lèvres publient ta louange! Car tu m'enseignes tes statuts. 172 Que ma langue chante ta parole! Car tous tes commandements sont justes. 173 Que ta main me soit en aide! Car j'ai choisi tes ordonnances. 174 Je soupire après ton salut, ô Éternel! Et ta loi fait mes délices. 175 Que mon âme vive et qu'elle te loue! Et que tes jugements me soutiennent! 176 Je suis errant comme une brebis perdue; cherche ton serviteur, Car je n'oublie point tes commandements.", 
+    "", 
+    "22ـ فلتدن وسيلتي قدامك يا رب، كقولك فهمني. فلتدخل طلبتي إلى حضرتك يا رب، ككلمتك أحيني. تفيض شفتاي السبح إذا ما علمتني حقوقك. لساني ينطق بأقوالك لأن جميع وصاياك عادلة. لتكن يدك لخلاصي لأنني اشتهيت وصاياك. اشتقتُ إلى خلاصك يا رب، وناموسك هو تلاوتي. تحيا نفسي وتسبحك، وأحكامك تعينيني. ضللت مثل الخروف الضال، فاطلب عبدك، فإني لوصاياك لم أنسَ هللويا.", 
+    ],
+    ],
+    [
+    [
+    Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "", 
+    "", 
+    "", 
+    ],
+    ],
   ];

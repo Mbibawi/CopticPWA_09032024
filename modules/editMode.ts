@@ -8,14 +8,15 @@ function startEditingMode(args: {
   select?: HTMLSelectElement,
   clear?: boolean,
   arrayName?: string,
-  tableTitle?: string
+  tableTitle?: string,
+  tablesArray?: string[][][],
+  languages?:string[]
 }) {
 
-  let tablesArray: string[][][],
-    languages:string[];
 
   if (args.clear !== false) args.clear = true;
   containerDiv.dataset.specificTables = 'false';
+
   
   if(args.select){
     //We deal with all the cases where a select element is passed as argument to the function. We exclude the case where arrayName is provided as an argument and the case where the tableTitle is provided.
@@ -29,10 +30,10 @@ function startEditingMode(args: {
     else if (args.arrayName === args.select.options[2].innerText) return runFunction();
       //under development : the user will provide a function and the function will be called when he press enter
 
-    else tablesArray = editSpecificTable() ||[];
+    else args.tablesArray = editSpecificTable() ||[];
   }
 
-  else tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
+  else args.tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
   
   if (!args.arrayName) return;
 
@@ -45,55 +46,54 @@ function startEditingMode(args: {
   containerDiv.dataset.arrayName = args.arrayName;
   containerDiv.style.gridTemplateColumns = '100%';
 
-  languages = getLanguages(args.arrayName) || allLanguages;
+  if(!args.languages) args.languages = getLanguages(args.arrayName) || allLanguages;
 
   function addNewTable() {
     args.arrayName = 'PrayersArray';//!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
-    languages = prompt('Provide the sequence of the languages columns', 'COP, FR, CA, AR').split(', ') || getLanguages(args.arrayName);
+    args.languages = prompt('Provide the sequence of the languages columns', 'COP, FR, CA, AR').split(', ') || getLanguages(args.arrayName);
     let title = prompt('Provide the title for the table', 'NewTable&D=$copticFeasts.AnyDay') || 'NewTable&D=$copticFeasts.AnyDay';
-      tablesArray = [[[title]]];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
+      args.tablesArray = [[[title]]];//We create a string[][][] with one string[][] (i.e. table) having only 1 string[] (i.e. row)
     
-    tablesArray[0][0].push(...languages);//We push the languages to the first row of the first table in tablesArray. This will give us a first row like  ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', etc.]
+    args.tablesArray[0][0].push(...args.languages);//We push the languages to the first row of the first table in tablesArray. This will give us a first row like  ['NewTable&D=$copticFeasts.AnyDay&C=Title', 'COP', 'FR', 'CA', etc.]
     
     
-      tablesArray[0].push([...tablesArray[0][0]]); //!Caution, we need to deconstruct the elements of the row. Otherwise it will not be a true copy. We add a second row to the table.
+      args.tablesArray[0].push([...args.tablesArray[0][0]]); //!Caution, we need to deconstruct the elements of the row. Otherwise it will not be a true copy. We add a second row to the table.
     
-    tablesArray[0][0][0] +=  '&C=Title'; //We remove the '&C=Title' from the second row
+    args.tablesArray[0][0][0] +=  '&C=Title'; //We remove the '&C=Title' from the second row
   };
  
-  function editSpecificTable(arrayName:string=args.arrayName):string[][][] | void{
-      if (!arrayName) return;
+  function editSpecificTable(arrayName:string=args.arrayName):string[][][]| void{
+    if (!arrayName) return console.log('arrayName is missing');
       if (!args.tableTitle //args.tableTitle was not already provided as argument
         && confirm('Do you want to edit a single or specific table(s) in the array?'))
         args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
 
-    if (!args.tableTitle) return; //If despite having confirmed that he wants to edit a specifc table, the tableTitle he provided is not valid, we assume he cancelled or changed his mind, and we return
+    if (!args.tableTitle) return console.log('tableTitle is missing'); //If despite having confirmed that he wants to edit a specifc table, the tableTitle he provided is not valid, we assume he cancelled or changed his mind, and we return
     
     let titles = args.tableTitle
       .split(', '); //if tableTitle is a comma separated string, it means there are multiple table titles provided
     
     if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
 
-    if (!tablesArray) tablesArray = eval(arrayName);
+    containerDiv.dataset.specificTables = 'true'; 
 
-    if (!tablesArray) return;
+    return titles.map(title =>
+        findTableInPrayersArray(
+          title,
+          getTablesArrayFromTitlePrefix(title),
+          { startsWith: true })|| undefined) || [];
+    
 
-    let matchingTables: string[][][] = [];
+   // if (!args.tablesArray) args.tablesArray = eval(arrayName);
 
-      titles
-        .forEach(title => {
-          if (title.startsWith('Prefix.')) title = eval(title);
+    //if (!args.tablesArray) return;
 
-          if (!title) return;
 
-          matchingTables.push(...tablesArray.filter(tbl => tbl[0][0].includes(title)));
-        });
 
-    if (matchingTables.length < 1) return alert('There is no table in the array matching the title you provided');
+   // if (matchingTables.length < 1) return alert('There is no table in the array matching the title you provided');
 
     //In all the cases, if matchingTables is not empty, we set the containerDiv attribute "data-specificTables" to true
-    containerDiv.dataset.specificTables = 'true'; 
-    return matchingTables
+    //return matchingTables
   };
 
   function runFunction() {
@@ -101,15 +101,14 @@ function startEditingMode(args: {
       if (args.arrayName && args.arrayName.includes('Fun(')) eval(args.arrayName);
   }
 
-  if (!tablesArray || tablesArray.length < 1) return console.log('tablesArray was not set');
+ // if (!args.tablesArray || args.tablesArray.length < 1) return console.log('tablesArray was not set');
   
   (function editTables() {  
     localStorage.displayMode === displayModes[0] //We make sure that we are in the 'Normal' display mode before showing the text of the tables;
 
     showTables({
-      tablesArray: tablesArray,
-      arrayName: args.arrayName,
-      languages: languages,
+      tablesArray: args.tablesArray,
+      languages: args.languages,
       position: containerDiv,
       container: containerDiv,
       clear: args.clear
@@ -123,37 +122,41 @@ function startEditingMode(args: {
  */
 function showTables(args: {
   tablesArray: string[][][],
-  arrayName: string,
-  languages: string[],
+  languages?: string[],
   position?: HTMLElement | DocumentFragment | { el: HTMLElement, beforeOrAfter: InsertPosition },
   container?: HTMLElement | DocumentFragment,
   clear?: boolean
 }) {
-  if (!args.arrayName) return;
   if (!args.container) args.container = containerDiv;
   if (!args.position) args.position = containerDiv;
   if(args.clear !==false) args.clear = true;
 
+
     if (args.clear === true) containerDiv.innerHTML = '';
   //We create an html div element to display the text of each row of each table in tablesArray
-  let titleBase: string;
+
+  let titleBase: string, arrayName: string;
+  
   args.tablesArray
     .forEach(table => {
-  if (!table) return;
+      if (!table) return;
       titleBase = splitTitle(table[0][0])[0] || 'NoTitle';
+      arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(titleBase));
+      if (!arrayName) return console.log('arrayName is missing');
+    
       table
         .forEach(row => {
           if (!row) return;
         createHtmlElementForPrayerEditingMode({
           tblRow: row,
           titleBase:titleBase,
-          languagesArray: args.languages,
+          languagesArray: args.languages || getLanguages(arrayName),
           position: args.position,
           container: args.container,
-          arrayName: args.arrayName});     
+          arrayName: arrayName});     
   });
 });
-  
+
    //We add the editing buttons
 addEdintingButtons();
 //Setting the CSS of the newly added rows
@@ -646,9 +649,11 @@ function createHtmlElementForPrayerEditingMode(args: {
   arrayName?: string,
   actorClass?:string
 }
-): HTMLDivElement {
+): HTMLDivElement{
   if(!args.position) args.position = containerDiv;
   if (!args.container) args.container = containerDiv;
+  if (!args.arrayName) args.arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(args.titleBase));
+  if (!args.arrayName) return;
   
 
   let htmlRow: HTMLDivElement,
@@ -1096,7 +1101,6 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
 
   showTables({
     tablesArray:[table], 
-    arrayName:arrayName,
     languages: getLanguages(arrayName),
     position: containerDiv,
     container:containerDiv
@@ -1158,21 +1162,21 @@ function showBtnInEditingMode(btn: Button) {
 
     closeSideBar(leftSideBar);
 
- function showPrayersFromSequence(){
+  function showPrayersFromSequence() {
+    let array:string[][][];
   
-     btn.prayersSequence
-       .forEach(title => {
-         if (!title.includes('&D=')) return;
-         let array: string[][][] = getTablesArrayFromTitlePrefix(title);
-         let arrayName: string = getArrayNameFromArray(array);
-         if (!arrayName) return;
+    btn.prayersSequence
+      .forEach(title => {
+        if (!title.includes('&D=')) return;
+        array = getTablesArrayFromTitlePrefix(title);
+        if (!array) return console.log('tablesArray is undefined');
          showTables({
-          tablesArray:[array.find(tbl => splitTitle(tbl[0][0])[0] === title)],
-          arrayName:arrayName,
-          languages:getLanguages(arrayName),
+          tablesArray:[findTableInPrayersArray(title, array, {equal:true}) as string[][]],
+          languages:getLanguages(getArrayNameFromArray(array)),
            position: container,
            container: container,
            clear:false})
+
      });
 
   };

@@ -19,8 +19,6 @@ async function setCopticDates(today?: Date) {
 
 	await setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
 	reloadScriptToBody(['PrayersArray']);
-	//Showing the dates and the version
-	showDates();
 	createFakeAnchor('homeImg');
 	if (!copticReadingsDate) return console.log('copticReadingsDate was not property set = ', copticReadingsDate);
 	//copticDay = copticDate.slice(0, 2);
@@ -30,6 +28,8 @@ async function setCopticDates(today?: Date) {
 		else if (weekDay === (3 || 5)) return true;
 		else return false;
 	})();
+	//Showing the dates and the version
+	showDates(); //!Caution: showDates must come after isFast is set.
 }
 /**
  * Converts a date 
