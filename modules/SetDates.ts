@@ -398,8 +398,7 @@ async function changeDate(
 	  }
 	}
 	await setCopticDates(todayDate);
-	Object.entries(PrayersArrays)
-		.forEach((array) => PrayersArrays[array[0]] = []);
+	PrayersArrays.forEach(array => array = []);
 	populatePrayersArrays();
 	if (checkIfDateIsToday(todayDate)) {
 		localStorage.removeItem('selectedDate');

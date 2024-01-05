@@ -472,7 +472,7 @@ const btnIncenseDawn: Button = new Button({
           AR: "ذكصولوجيات باكر آدام",
           FR: "Doxologies Adam Aube",
         },
-        prayers: PrayersArrays.DoxologiesPrayersArray
+        prayers: DoxologiesPrayersArray
           .filter(table => table[0][0].startsWith(Prefix.doxologies + "AdamDawn")),
         languages: btnIncenseDawn.languages,
       })[1];
@@ -612,7 +612,7 @@ const btnMassStBasil: Button = new Button({
 
     (function insertStBasilSecondReconciliationBtn() {
       if (btn !== btnMassStBasil) return;
-      let reconciliation = PrayersArrays.MassStBasilPrayersArray.find((table) =>
+      let reconciliation = MassStBasilPrayersArray.find((table) =>
         table[0][0].startsWith(Prefix.massStBasil + "Reconciliation2")
       );
       if (!reconciliation) return console.log("Didn't find reconciliation");
@@ -655,7 +655,7 @@ const btnMassStBasil: Button = new Button({
       )[0],
       { AR: "صلوات القسمة", FR: "Oraisons de la Fraction" },
       "btnFractionPrayers",
-      PrayersArrays.FractionsPrayersArray
+      FractionsPrayersArray
     );
 
     (function addRedirectionButtons() {
@@ -791,14 +791,14 @@ const btnMassStBasil: Button = new Button({
         { equal: true }
       );
 
-      let filtered: string[][][] = PrayersArrays.CommunionPrayersArray.filter(
+      let filtered: string[][][] = CommunionPrayersArray.filter(
         (tbl) =>
           selectFromMultiDatedTitle(tbl[0][0], copticDate) === true ||
           selectFromMultiDatedTitle(tbl[0][0], Season) === true
       );
 
       if (filtered.length === 0)
-        filtered = PrayersArrays.CommunionPrayersArray.filter(
+        filtered = CommunionPrayersArray.filter(
           (tbl) =>
             selectFromMultiDatedTitle(tbl[0][0], copticFeasts.AnyDay) === true
         );
@@ -818,10 +818,10 @@ const btnMassStBasil: Button = new Button({
     (function insertLitaniesIntroductionFromOtherMasses() {
       if (btn !== btnMassStBasil) return; //This button appears only in St Basil Mass
 
-      let litaniesIntro: string[][] =
-        PrayersArrays.MassStGregoryPrayersArray.find((tbl) =>
-          tbl[0][0].startsWith(Prefix.massStGregory + "LitaniesIntroduction")
-        );
+      let litaniesIntro =
+        findTableInPrayersArray(
+          Prefix.massStGregory + "LitaniesIntroduction", MassStGregoryPrayersArray,
+          { startsWith: true });
 
       if (!litaniesIntro)
         return console.log("Did not find the Litanies Introduction");
@@ -846,18 +846,20 @@ const btnMassStBasil: Button = new Button({
       });
       //Adding the St Cyril Litanies Introduction to the St. Basil Mass only. St Gregory Mass has its own intro, and we do not of course add it to St Cyrill since it is already included
 
-      litaniesIntro = PrayersArrays.MassStCyrilPrayersArray.find((tbl) =>
-        splitTitle(tbl[0][0])[0].startsWith(
-          Prefix.massStCyril + "LitaniesIntroduction"
-        )
-      );
-
-      litaniesIntro = structuredClone(litaniesIntro);
-
-      litaniesIntro.splice(litaniesIntro.length - 1, 1); //We remove the last row in the table of litaniesIntro because it is the "As it were, let it always be.../كما كان هكذا يكون/tel qu'il fût ainsi soit-il..."
-
-      if (litaniesIntro.length === 0)
-        console.log("Did not find the St Cyril Litanies Introduction");
+      litaniesIntro =
+        findTableInPrayersArray(
+          Prefix.massStCyril + "LitaniesIntroduction",
+          MassStCyrilPrayersArray,
+          { startsWith: true }
+        ) as string[][];
+      
+        if (!litaniesIntro.length) console.log("Did not find the St Cyril Litanies Introduction");
+      
+      if (litaniesIntro) {
+        litaniesIntro =
+          structuredClone(litaniesIntro)
+            .splice(litaniesIntro.length - 1, 1) //We remove the last row in the table of litaniesIntro because it is the "As it were, let it always be.../كما كان هكذا يكون/tel qu'il fût ainsi soit-il..."
+      };
 
       //We will create the expandable div and its button, but will append the button to the div
       let btnsDiv = createdElements[0].parentElement as HTMLDivElement;
@@ -1267,8 +1269,8 @@ const btnMassUnBaptised: Button = new Button({
         })();
 
         let response: string[][][] =
-          PrayersArrays.PraxisResponsesPrayersArray.filter(
-            (table) =>
+          PraxisResponsesPrayersArray.filter(
+            table =>
               selectFromMultiDatedTitle(table[0][0], copticDate) ||
               selectFromMultiDatedTitle(table[0][0], Season)
           );
@@ -1927,24 +1929,23 @@ const btnBookOfHours: Button = new Button({
 
     (function addAChildButtonForEachHour() {
       Object.entries(bookOfHours)
-        .filter(entry => entry[0].endsWith("PrayersArray"))
-        .forEach((entry: [string, string[][][]]) => {
-          let hourName = entry[0].split("PrayersArray")[0];
+        .forEach(entry => {
+          let hourName = entry[0];
 
           let hourBtn = new Button({
             btnID: "btn" + hourName,
             label: {
               AR:
-                bookOfHoursLabels.find((label) => label.id === hourName).AR ||
+                bookOfHoursLabels.find(label => label.id === hourName).AR ||
                 "",
               FR:
-                bookOfHoursLabels.find((label) => label.id === hourName)[0] ||
+                bookOfHoursLabels.find(label => label.id === hourName)[0] ||
                 "",
             },
             languages: btnBookOfHours.languages,
             showPrayers: true,
-            prayersArray: [...entry[1]],
-            onClick: (isMass:boolean = false) => hourBtnOnClick(hourBtn, hourName, isMass),
+            prayersArray: [...entry[1][0]],
+            onClick: (isMass:boolean = false) =>  hourBtnOnClick(hourBtn, hourName, isMass),
             afterShowPrayers: () =>
               Array.from(
                 containerDiv.querySelectorAll(
@@ -1972,23 +1973,16 @@ const btnBookOfHours: Button = new Button({
         isMass:boolean
       ) {
         (function buildBtnPrayersSequence() {
-          //We will add the prayers sequence to btn.prayersSequence[]
-          btn.prayersSequence = [
-            ...Object.entries(bookOfHours)
-              .find(entry => entry[0] === hourName + "PrayersSequence"
-            )[1],
-          ] as string[];
-
           let titleTemplate =
-            Prefix.bookOfHours + "&D=$copticFeasts.AnyDay";
+          Prefix.bookOfHours + "&D=$copticFeasts.AnyDay";
+          //We will add the prayers sequence to btn.prayersSequence[]
+          btn.prayersSequence = 
+            Object.entries(bookOfHours)
+              .find(entry => entry[0] === hourName)[1][1]
+              .map(title => titleTemplate.replace("&D=", "Psalm" + title.toString() +'&D='));
 
-          btn.prayersSequence
+          ['Gospel', 'Litanies', 'EndOfHourPrayer']
             .forEach(title =>
-              (btn.prayersSequence[btn.prayersSequence.indexOf(title)] =
-                titleTemplate.replace("&D=", "Psalm" + title.toString()+'&D='))
-          );
-          
-          ['Gospel', 'Litanies', 'EndOfHourPrayer'].forEach((title) =>
             btn.prayersSequence.push(
               titleTemplate.replace("&D=", hourName + title + '&D='))
           );
@@ -2023,8 +2017,8 @@ const btnBookOfHours: Button = new Button({
 
             btn.prayersSequence.splice(1, 0, ...HourIntro); //We also add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
             if (
-              btn.prayersArray !== bookOfHours.FirstHourPrayersArray
-              && btn.prayersArray !== bookOfHours.TwelvethHourPrayersArray
+              btn.prayersArray !== bookOfHours.FirstHour[0]
+              && btn.prayersArray !== bookOfHours.TwelvethHour[0]
             ) {
               //If its is not the 1st Hour (Dawn) or the 12th Hour (Night), we insert only Kyrielison 41 times, and "Holy Lord of Sabaot" and "Our Father Who Art In Heavean"
               btn.prayersSequence.splice(
@@ -2037,7 +2031,7 @@ const btnBookOfHours: Button = new Button({
               );
             }
 
-            if (btn.prayersArray === bookOfHours.FirstHourPrayersArray) {
+            if (btn.prayersArray[0][0][0] === bookOfHours.FirstHour[0][0][0][0]) {
               //If it is the 1st hour (Dawn) prayer:
               //We add the psalms borrowed from the 6ths and 9th hour: Psalms 66, 69, 122 etc.), before pasalm 142
               let DawnPsalms = [62, 66, 69, 112];
@@ -2056,7 +2050,7 @@ const btnBookOfHours: Button = new Button({
               btn.prayersSequence.splice(btn.prayersSequence.length-2,0, ...endOfHourPrayersSequence);
             }
 
-            if (btn.prayersArray === bookOfHours.TwelvethHourPrayersArray)
+            if (btn.prayersArray[0][0][0] === bookOfHours.TwelvethHour[0][0][0][0])
             //It is the 12th (Night) Hour
               btn.prayersSequence.splice(btn.prayersSequence.length-2, 0, ... [...endOfHourPrayersSequence].splice(0,1));//we remove the Angels Prayer from endOfHourPrayersSequence
           })();
@@ -2266,7 +2260,7 @@ async function getGospelReadingAndResponses(
     ]; //This is the sequence of the Gospel Prayer/Litany for any liturgy
 
     let gospelLitanyPrayers = gospelLitanySequence.map((title) =>
-      findTableInPrayersArray(title, PrayersArrays.CommonPrayersArray)
+      findTableInPrayersArray(title, CommonPrayersArray)
     ) as string[][][];
 
     if (!gospelLitanyPrayers || gospelLitanyPrayers.length === 0) return;
@@ -2363,14 +2357,15 @@ async function getGospelReadingAndResponses(
     prefix: string,
     insertion: HTMLElement
   ) {
-    let response: string[][] = PrayersArrays.PsalmAndGospelPrayersArray.find(
-      (tbl) =>
+    let response: string[][] =
+      PsalmAndGospelPrayersArray
+        .find(tbl =>
         tbl[0][0].split("&D=")[0] === responses[index].split("&D=")[0] &&
         selectFromMultiDatedTitle(tbl[0][0], responses[index].split("&D=")[1])
     ); //we filter the PsalmAndGospelPrayersArray to get the table which title is = to response[2] which is the id of the gospel response of the day: eg. during the Great lent, it ends with '&D=GLSundays' or '&D=GLWeek'
     if (!response || response.length === 0)
       //If no specresponse response is found, we will get the 'annual' gospel response
-      response = PrayersArrays.PsalmAndGospelPrayersArray.find(
+      response = PsalmAndGospelPrayersArray.find(
         (tbl) => splitTitle(tbl[0][0])[0] === prefix + "&D=$copticFeasts.AnyDay"
       );
 
@@ -2530,16 +2525,19 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
     sequence.map((cymbalsTitle) => {
       if (cymbalsTitle.startsWith("&Insert="))
         //i.e., if this is the placeholder element that we inserted for the current feast or Season
-        cymbalTable = PrayersArrays.CymbalVersesPrayersArray.find((tbl) =>
-          selectFromMultiDatedTitle(
+        cymbalTable =
+          CymbalVersesPrayersArray
+          .find(tbl =>
+            selectFromMultiDatedTitle(
             tbl[0][0],
             cymbalsTitle.split("&Insert=")[1]
           )
         );
       else
-        cymbalTable = findTableInPrayersArray(
+        cymbalTable =
+          findTableInPrayersArray(
           cymbalsTitle,
-          PrayersArrays.CymbalVersesPrayersArray,
+          CymbalVersesPrayersArray,
           { equal: true }
         ) as string[][];
 
@@ -2628,18 +2626,20 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
 
     sequence.map((doxologyTitle) => {
       if (doxologyTitle.startsWith("&Insert="))
-        PrayersArrays.DoxologiesPrayersArray.filter((tbl) =>
-          selectFromMultiDatedTitle(
+        DoxologiesPrayersArray
+           //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
+          .filter(tbl =>
+            selectFromMultiDatedTitle(
             tbl[0][0],
             doxologyTitle.split("&Insert=")[1]
-          )
-        ).forEach((doxology) => doxologies.push(doxology));
-      //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
+          ))
+          .forEach((doxology) => doxologies.push(doxology));
+
       else
         doxologies.push(
           findTableInPrayersArray(
             doxologyTitle,
-            PrayersArrays.DoxologiesPrayersArray,
+            DoxologiesPrayersArray,
             { equal: true }
           ) as string[][]
         );
