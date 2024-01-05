@@ -1931,7 +1931,6 @@ const btnBookOfHours: Button = new Button({
       Object.entries(bookOfHours)
         .forEach(entry => {
           let hourName = entry[0];
-
           let hourBtn = new Button({
             btnID: "btn" + hourName,
             label: {
@@ -2016,9 +2015,12 @@ const btnBookOfHours: Button = new Button({
           ];
 
             btn.prayersSequence.splice(1, 0, ...HourIntro); //We also add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
+            
+            if (!btn.prayersArray || btn.prayersArray.length < 1) return;
+
             if (
-              btn.prayersArray !== bookOfHours.FirstHour[0]
-              && btn.prayersArray !== bookOfHours.TwelvethHour[0]
+              btn.prayersArray[0][0][0] !== bookOfHours.FirstHour[0][0][0][0]
+              && btn.prayersArray[0][0][0] !== bookOfHours.TwelvethHour[0][0][0][0]
             ) {
               //If its is not the 1st Hour (Dawn) or the 12th Hour (Night), we insert only Kyrielison 41 times, and "Holy Lord of Sabaot" and "Our Father Who Art In Heavean"
               btn.prayersSequence.splice(
