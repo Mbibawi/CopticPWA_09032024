@@ -23,7 +23,7 @@ type typeButton = {
   any?: any;
 };
 //CONSTANTS
-const version: string = "v5.1.5 (Changes to the Book of Hours)";
+const version: string = "v5.1.7 (Changes to the Book of Hours and fixes to the Editing Mode)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -439,7 +439,7 @@ const PrayersArrays = {
   CymbalVersesPrayersArray: CymbalVersesPrayersArray,
   PraxisResponsesPrayersArray: PraxisResponsesPrayersArray,
   bookOfHoursPrayersArray: bookOfHoursPrayersArray,
-  holyWeekPrayersArray: HolyWeekPrayersArray,
+  HolyWeekPrayersArray: HolyWeekPrayersArray,
   psalmodyPrayersArray: PsalmodyPrayersArray,
 };
 
@@ -539,7 +539,7 @@ const PrayersArraysKeys: [string, string][] = [
   [Prefix.communion, "CommunionPrayersArray"],
   [Prefix.cymbalVerses, "CymbalVersesPrayersArray"],
   [Prefix.bookOfHours, "bookOfHoursPrayersArray"],
-  [Prefix.HolyWeek, "holyWeekPrayersArray"],
+  [Prefix.HolyWeek, "HolyWeekPrayersArray"],
   [Prefix.incenseDawn, "IncensePrayersArray"],
   [Prefix.incenseVespers, "IncensePrayersArray"],
   [Prefix.commonIncense, "IncensePrayersArray"],

@@ -139,59 +139,8 @@ const btnMain: Button = new Button({
       btnPsalmody,
     ];
 
-    if (localStorage.editingMode === "true") {
-      let editMode = new Button({
-        btnID: "btnEditMode",
-        label: {
-          AR: "تعديل النص",
-          FR: "Enter Editing Mode",
-          EN: "Enter Editing Mode",
-        },
-        onClick: () => {
-          //@ts-ignore
-          if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
-          containerDiv.innerHTML = "";
-          containerDiv.dataset.editingMode = "true";
-          if (document.getElementById("selectArray")) return; //Si un select element is already appended, we return
-          let editable = [
-            "Choose from the list",
-            "NewTable",
-            'Fun("arrayName", "Table\'s Title")',
-            "testEditingArray",
-            "PrayersArray",
-            "ReadingsArrays.GospelDawnArray",
-            "ReadingsArrays.GospelMassArray",
-            "ReadingsArrays.GospelNightArray",
-            "ReadingsArrays.GospelVespersArray",
-            "ReadingsArrays.KatholikonArray",
-            "ReadingsArrays.PraxisArray",
-            "ReadingsArrays.PropheciesDawnArray",
-            "ReadingsArrays.StPaulArray",
-            "ReadingsArrays.SynaxariumArray",
-          ];
-          let select = document.createElement("select"),
-            option: HTMLOptionElement;
-          select.id = "selectArray";
-          select.style.backgroundColor = "ivory";
-          select.style.height = "16pt";
-          editable.forEach((name) => {
-            option = document.createElement("option");
-            option.innerText = name;
-            option.contentEditable = "true";
-            select.add(option);
-          });
-
-          document
-            .getElementById("homeImg")
-            .insertAdjacentElement("afterend", select);
-          select.addEventListener("change", () =>
-            startEditingMode({ select: select })
-          );
-        },
-      });
-
-      btnMain.children.push(editMode);
-    }
+    if (localStorage.editingMode === "true") btnMain.children.push(getEditModeButton());
+    
 
     if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2)
       btnPsalmody.label = {
@@ -403,23 +352,6 @@ const btnIncenseDawn: Button = new Button({
         ),
         1
       );
-    else;
-
-    btnIncenseDawn.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.IncensePrayersArray.filter(
-        (table) => !table[0][0].startsWith(Prefix.incenseVespers)
-      ),
-    ]; //We need this to be done when the button is clicked, not when it is declared, because when declared, CommonPrayersArray and IncensePrayersArray are empty (they are popultated by a function in "main.js", which is loaded after "DeclareButtons.js")
-
-    if (todayDate.getDay() === 6)
-      btnIncenseDawn.prayersArray.push(
-        PrayersArrays.IncensePrayersArray.find((table) =>
-          table[0][0].startsWith(
-            Prefix.incenseVespers + "DepartedPrayer&D=$copticFeasts.AnyDay"
-          )
-        )
-      ); //i.e., if we are a Saturday, we include the 'Departed Litany' in the prayersArray of the button
 
     scrollToTop();
     return btnIncenseDawn.prayersSequence;
@@ -540,9 +472,8 @@ const btnIncenseDawn: Button = new Button({
           AR: "ذكصولوجيات باكر آدام",
           FR: "Doxologies Adam Aube",
         },
-        prayers: PrayersArrays.DoxologiesPrayersArray.filter((table) =>
-          table[0][0].startsWith(Prefix.doxologies + "AdamDawn")
-        ),
+        prayers: PrayersArrays.DoxologiesPrayersArray
+          .filter(table => table[0][0].startsWith(Prefix.doxologies + "AdamDawn")),
         languages: btnIncenseDawn.languages,
       })[1];
 
@@ -568,13 +499,6 @@ const btnIncenseVespers: Button = new Button({
         !title.startsWith(Prefix.incenseDawn)
     );
 
-    btnIncenseVespers.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.IncensePrayersArray.filter(
-        (table) => !table[0][0].startsWith(Prefix.incenseDawn)
-      ),
-    ];
-
     scrollToTop();
     return btnIncenseVespers.prayersSequence;
   },
@@ -593,16 +517,7 @@ const btnMassStCyril: Button = new Button({
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
   onClick: (): string[] => {
-    btnMassStCyril.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.MassCommonPrayersArray,
-      ...PrayersArrays.MassStCyrilPrayersArray,
-    ];
-    if (btnMassStCyril.retrieved === true) {
-      //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      //sbtnMassStCyril.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStCyril)];
-      return;
-    }
+
     //Setting the standard mass prayers sequence
     btnMassStCyril.prayersSequence = [
       ...MassPrayersSequences.MassCommonIntro,
@@ -634,16 +549,6 @@ const btnMassStGregory: Button = new Button({
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
   onClick: (): string[] => {
-    btnMassStGregory.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.MassCommonPrayersArray,
-      ...PrayersArrays.MassStGregoryPrayersArray,
-    ];
-    if (btnMassStGregory.retrieved === true) {
-      //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      // btnMassStGregory.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStGregory)];
-      return;
-    }
     //Setting the standard mass prayers sequence
     btnMassStGregory.prayersSequence = [
       ...MassPrayersSequences.MassCommonIntro,
@@ -678,16 +583,6 @@ const btnMassStBasil: Button = new Button({
   showPrayers: true, //we set it to false in order to escape showing the prayers again after inserting the redirection buttons. The showPrayers() function is called by onClick()
   languages: [...prayersLanguages],
   onClick: (): string[] => {
-    btnMassStBasil.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.MassCommonPrayersArray,
-      ...PrayersArrays.MassStBasilPrayersArray,
-    ];
-    if (btnMassStBasil.retrieved === true) {
-      //if the prayers array of this button had already been set by the async function setButtonsPrayers(), which is called when the app is loaded, then we will not recalculate the paryers array and will use the preset array
-      //btnMassStBasil.prayersSequence = btnsPrayersSequences[btns.indexOf(btnMassStBasil)];
-      return;
-    }
     //Setting the standard mass prayers sequence
     btnMassStBasil.prayersSequence = [
       ...MassPrayersSequences.MassCommonIntro,
@@ -1031,11 +926,6 @@ const btnMassStJohn: Button = new Button({
       "The prayers of this mass have not yet been added. We hope they will be ready soon"
     );
     return; //until we add the text of this mass
-    btnMassStJohn.prayersArray = [
-      ...PrayersArrays.CommonPrayersArray,
-      ...PrayersArrays.MassCommonPrayersArray,
-      ...PrayersArrays.MassStJohnPrayersArray,
-    ];
 
     scrollToTop(); //scrolling to the top of the page
 
@@ -2185,8 +2075,6 @@ const btnPsalmody: Button = new Button({
   languages: [...prayersLanguages],
   showPrayers: true,
   onClick: () => {
-    btnPsalmody.prayersArray = PrayersArrays.psalmodyPrayersArray;
-
     btnPsalmody.prayersSequence = PsalmodyPrayersSequences.PsalmodyYear;
 
     if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2)

@@ -33,10 +33,8 @@ function startEditingMode(args: {
     else args.tablesArray = editSpecificTable() ||[];
   }
 
-  else args.tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
+  else if(!args.tablesArray) args.tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
   
-  if (!args.arrayName) return;
-
  if (
     containerDiv.dataset.arrayName
     && args.arrayName === containerDiv.dataset.arrayName
@@ -63,37 +61,26 @@ function startEditingMode(args: {
   };
  
   function editSpecificTable(arrayName:string=args.arrayName):string[][][]| void{
-    if (!arrayName) return console.log('arrayName is missing');
       if (!args.tableTitle //args.tableTitle was not already provided as argument
         && confirm('Do you want to edit a single or specific table(s) in the array?'))
         args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
 
-    if (!args.tableTitle) return console.log('tableTitle is missing'); //If despite having confirmed that he wants to edit a specifc table, the tableTitle he provided is not valid, we assume he cancelled or changed his mind, and we return
-    
+    if (!args.tableTitle && !args.arrayName) return;//If no tableTitle is provided, and no arrayName, we will return
+
+    if (!args.tableTitle && confirm('No tableTitle is provided, do you want to edit the entire tables array?')) return eval(arrayName);//If no tableTitle if provided, we will return the entire array
+  
     let titles = args.tableTitle
       .split(', '); //if tableTitle is a comma separated string, it means there are multiple table titles provided
     
     if (!titles || titles.length < 1) return console.log('The provided tableTitle argument is not valid');
 
     containerDiv.dataset.specificTables = 'true'; 
-
-    return titles.map(title =>
+    return titles
+      .map(title =>  
         findTableInPrayersArray(
           title,
-          getTablesArrayFromTitlePrefix(title),
-          { startsWith: true })|| undefined) || [];
-    
-
-   // if (!args.tablesArray) args.tablesArray = eval(arrayName);
-
-    //if (!args.tablesArray) return;
-
-
-
-   // if (matchingTables.length < 1) return alert('There is no table in the array matching the title you provided');
-
-    //In all the cases, if matchingTables is not empty, we set the containerDiv attribute "data-specificTables" to true
-    //return matchingTables
+          args.arrayName? eval(args.arrayName): undefined,
+          { includes: true })||undefined);
   };
 
   function runFunction() {
@@ -101,7 +88,7 @@ function startEditingMode(args: {
       if (args.arrayName && args.arrayName.includes('Fun(')) eval(args.arrayName);
   }
 
- // if (!args.tablesArray || args.tablesArray.length < 1) return console.log('tablesArray was not set');
+ if (!args.tablesArray || args.tablesArray.length < 1) return console.log('tablesArray was not set');
   
   (function editTables() {  
     localStorage.displayMode === displayModes[0] //We make sure that we are in the 'Normal' display mode before showing the text of the tables;
@@ -142,7 +129,8 @@ function showTables(args: {
       if (!table) return;
       titleBase = splitTitle(table[0][0])[0] || 'NoTitle';
       arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(titleBase));
-      if (!arrayName) return console.log('arrayName is missing');
+      if (!arrayName && confirm('We could not infer the name of the array from the title of the table, do you want to set it to \"PrayersArray?\"')) arrayName = 'PrayersArray';
+      if (!arrayName) return console.log('The name of the array is missing');
     
       table
         .forEach(row => {
@@ -216,10 +204,6 @@ function addEdintingButtons() {
   createEditingButton(()=>editNextOrPreviousTable(document.getSelection().focusNode.parentElement, false), 'Previous Table', btnsDiv);
 
   }
-
-
-
-
 
 
 /**
@@ -1136,7 +1120,6 @@ function editDayReadings(date?: string) {
       .filter(table => table[0][0].includes(date))
       .forEach(table => {
         startEditingMode({
-      //    arrayName: 'ReadingsArrays.' + arrayName,
           tableTitle: table[0][0],
           clear:false
         })

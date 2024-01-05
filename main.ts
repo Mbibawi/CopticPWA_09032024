@@ -425,11 +425,6 @@ async function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
       btnsContainer: sideBarBtnsContainer,
       btnClass: btnMain.cssClass,
     });
-    /*let image = document.getElementById("homeImg");
-    if (image) {
-      document.getElementById("homeImg").style.width = "20vmax";
-      document.getElementById("homeImg").style.height = "25vmax";
-    }*/
   }
 
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
@@ -909,6 +904,61 @@ function addSettingsButton() {
   settingsBtn.innerText = "Settings";
   settingsBtn.addEventListener("click", () => showSettingsPanel());
   sideBarBtnsContainer.appendChild(settingsBtn);
+}
+
+/**
+ * returns a Button for entering the "Editing Mode" and start editings the text 
+ */
+function getEditModeButton(): Button{
+  return new Button({
+    btnID: "btnEditMode",
+    label: {
+      AR: "تعديل النص",
+      FR: "Enter Editing Mode",
+      EN: "Enter Editing Mode",
+    },
+    onClick: () => {
+      if (document.getElementById("selectArray")) return; //If a select element is already appended, we return
+      //@ts-ignore
+      if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
+      containerDiv.innerHTML = "";
+      containerDiv.dataset.editingMode = "true";
+      let editable = [
+        "Choose from the list",
+        "NewTable",
+        'Fun("arrayName", "Table\'s Title")',
+        "testEditingArray",
+        "PrayersArray",
+        "ReadingsArrays.GospelDawnArray",
+        "ReadingsArrays.GospelMassArray",
+        "ReadingsArrays.GospelNightArray",
+        "ReadingsArrays.GospelVespersArray",
+        "ReadingsArrays.KatholikonArray",
+        "ReadingsArrays.PraxisArray",
+        "ReadingsArrays.PropheciesDawnArray",
+        "ReadingsArrays.StPaulArray",
+        "ReadingsArrays.SynaxariumArray",
+      ];
+      let select = document.createElement("select"),
+        option: HTMLOptionElement;
+      select.id = "selectArray";
+      select.style.backgroundColor = "ivory";
+      select.style.height = "30pt";
+      editable.forEach((name) => {
+        option = document.createElement("option");
+        option.innerText = name;
+        option.contentEditable = "true";
+        select.add(option);
+      });
+
+      document
+        containerDiv
+        .insertAdjacentElement('beforebegin', select);
+      select.addEventListener('change', () =>
+        startEditingMode({ select: select })
+      );
+    },
+  });
 }
 
 /**
@@ -1726,15 +1776,8 @@ function getTablesArrayFromTitlePrefix(title: string): string[][][] {
  * @param {string[][][]} array
  */
 function getArrayNameFromArray(array: string[][][]): string {
-  let arrayName: string = Object.entries(PrayersArrays).find(
-    (entry) => entry[1] === array
-  )[0];
-  if (arrayName) return "PrayersArray";
-  else if (!arrayName)
-    arrayName = Object.entries(ReadingsArrays).find(
-      (entry) => entry[1] === array
-    )[0];
-  if (arrayName) return "ReadingsArray." + arrayName;
+  let keys = PrayersArraysKeys.find(key => eval(key[1]) === array);
+  if (keys) return keys[1];
 }
 
 /**
@@ -2347,7 +2390,7 @@ function showSettingsPanel() {
 
   //Show InstallPWA button//We are not calling it any more
   function installPWA() {
-    btn = createSettingBtn({
+    btn = createSettingsBtn({
       tag: "button",
       role: "button",
       btnClass: "settingsBtn",
@@ -2397,7 +2440,7 @@ function showSettingsPanel() {
 
   //Appending date picker
   (function showDatePicker() {
-    let datePicker: HTMLInputElement = createSettingBtn({
+    let datePicker: HTMLInputElement = createSettingsBtn({
       tag: "input",
       btnsContainer: expandableBtnsPannel,
       id: "datePicker",
@@ -2418,7 +2461,7 @@ function showSettingsPanel() {
       FR: "Aller au jour suivant ou précédant",
       EN: "Move to the next or previous day",
     });
-    btn = createSettingBtn({
+    btn = createSettingsBtn({
       tag: "button",
       role: "button",
       btnClass: "settingsBtn",
@@ -2432,7 +2475,7 @@ function showSettingsPanel() {
       },
     });
     setStyle(btn);
-    btn = createSettingBtn({
+    btn = createSettingsBtn({
       tag: "button",
       role: "button",
       btnClass: "settingsBtn",
@@ -2461,7 +2504,7 @@ function showSettingsPanel() {
       FR: "Changer la taille de police",
       EN: "Increase or decrease the fonts size",
     });
-    let input = createSettingBtn({
+    let input = createSettingsBtn({
       tag: "input",
       btnsContainer: btnsContainer,
       id: "fontsSize",
@@ -2593,7 +2636,7 @@ function showSettingsPanel() {
     }) {
       let newBtn: HTMLElement;
       args.langsOptions.map((lang) => {
-        newBtn = createSettingBtn({
+        newBtn = createSettingsBtn({
           tag: "button",
           role: "button",
           btnClass: "settingsBtn",
@@ -2636,7 +2679,7 @@ function showSettingsPanel() {
         (el) => el[0].AR === actor.AR
       );
       if (show.length > 0) show = show[0][1] as boolean;
-      btn = createSettingBtn({
+      btn = createSettingsBtn({
         tag: "button",
         role: "button",
         btnClass: "settingsBtn",
@@ -2683,7 +2726,7 @@ function showSettingsPanel() {
 
     expandableBtnsPannel.appendChild(btnsContainer);
     displayModes.map((mode) => {
-      btn = createSettingBtn({
+      btn = createSettingsBtn({
         tag: "button",
         role: "button",
         btnClass: "settingsBtn",
@@ -2717,60 +2760,25 @@ function showSettingsPanel() {
   (async function showEditingModeBtn() {
     if (localStorage.editingMode != "true") return;
     let btnsContainer = createBtnsContainer("enterEditingMode", {
-      AR: "فعل تعديل النصوص",
+      AR: " تعديل النصوص",
       FR: "Activer le mode édition",
-      EN: "",
+      EN: "Enter Editing Mode",
     });
-
     expandableBtnsPannel.appendChild(btnsContainer);
-    btn = createSettingBtn({
+
+    let editingBtn = getEditModeButton();
+
+    btn = createSettingsBtn({
       tag: "button",
       role: "button",
       btnClass: "settingsBtn",
-      innerText: "Editing Mode",
+      innerText:  editingBtn.label[defaultLanguage],
       btnsContainer: btnsContainer,
       id: "editingMode" + localStorage.editingMode.toString(),
-      onClick: {
+      onClick:
+      {
         event: "click",
-        fun: () => {
-          //@ts-ignore
-          if (!console.save) addConsoleSaveMethod(console); //We are adding a save method to the console object
-          containerDiv.innerHTML = "";
-          containerDiv.dataset.editingMode = "true";
-          let editable = [
-            "Choose from the list",
-            "NewTable",
-            'Fun("arrayName", "Table\'s Title")',
-            "testEditingArray",
-            "PrayersArray",
-            "ReadingsArrays.GospelDawnArray",
-            "ReadingsArrays.GospelMassArray",
-            "ReadingsArrays.GospelNightArray",
-            "ReadingsArrays.GospelVespersArray",
-            "ReadingsArrays.KatholikonArray",
-            "ReadingsArrays.PraxisArray",
-            "ReadingsArrays.PropheciesDawnArray",
-            "ReadingsArrays.StPaulArray",
-            "ReadingsArrays.SynaxariumArray",
-          ];
-          let select = document.createElement("select"),
-            option: HTMLOptionElement;
-          select.style.backgroundColor = "ivory";
-          select.style.height = "16pt";
-          editable.forEach((name) => {
-            option = document.createElement("option");
-            option.innerText = name;
-            option.contentEditable = "true";
-            select.add(option);
-          });
-          document
-            .getElementById("homeImg")
-            .insertAdjacentElement("afterend", select);
-          hideExpandableButtonsPannel();
-          select.addEventListener("change", () =>
-            startEditingMode({ select: select })
-          );
-        },
+        fun: editingBtn.onClick,
       },
     });
     btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
@@ -2807,7 +2815,7 @@ function showSettingsPanel() {
     return btnsContainer;
   }
 
-  function createSettingBtn(args: {
+  function createSettingsBtn(args: {
     tag: string;
     role?: string;
     btnClass?: string;
@@ -2870,7 +2878,7 @@ function showSettingsPanel() {
     btnsContainer.style.width = "fit-content";
     actors.map((actor) => {
       if (actor.EN === "CommentText") return;
-      let newBtn = createSettingBtn({
+      let newBtn = createSettingsBtn({
         tag: "button",
         btnClass: "colorbtn",
         btnsContainer: btnsContainer,
@@ -3036,7 +3044,7 @@ async function populatePrayersArrays() {
     } else if (table[0][0].startsWith(Prefix.praxisResponse)) {
       PrayersArrays.PraxisResponsesPrayersArray.push(table);
     } else if (table[0][0].startsWith(Prefix.HolyWeek)) {
-      PrayersArrays.holyWeekPrayersArray.push(table);
+      PrayersArrays.HolyWeekPrayersArray.push(table);
     } else if (table[0][0].startsWith(Prefix.psalmody)) {
       PrayersArrays.psalmodyPrayersArray.push(table);
     } else if (table[0][0].startsWith(Prefix.bookOfHours)) {
@@ -11502,11 +11510,23 @@ function shortenRowsTitles(tbl: string[][], row: string[], tblTitle: string) {
     row[0] = (Prefix.same + "&" + splitTitle(row[0])[1]).replace("&", "&C=");
 }
 
-function prepareArabicText(text:string){
+function HelperPrepareArabicChant(){
   //temporary function 
-  let splitted = text.split('_&_')
-  if (splitted.length % 2 > 0) return console.log('splitted is not even');
-  for (let i = (splitted.length /2); i < splitted.length - 1; i++){
-    splitted.splice(i-(splitted.length/2) +1,0, splitted[i])
+  let text:string = prompt('Enter text');
+  if (!text) return;
+  let splitted = text.split('_&_'), array:string[]=[];
+  for (let i = 0; i <splitted.length; i+=20){
+    preparePart(splitted.slice(i, i+20))
   }
+
+  function preparePart(part:string[]){
+  if (part.length % 2 > 0) return console.log('splitted is not even');
+  for (let i = 0; i < (part.length/2); i++){
+    array.push(part[i]);
+    array.push(' ' + String.fromCharCode(beamedEighthNoteCode).repeat(2) + ' '+part[i + (part.length / 2)] + '_&&_');
+    }
+  };
+  text = array.toString();
+  console.log(text);
+  localStorage.temp = text;
 }
