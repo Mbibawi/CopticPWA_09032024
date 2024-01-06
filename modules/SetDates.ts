@@ -118,7 +118,7 @@ function convertGregorianDateToCopticDate(today?: number, changeDates:boolean = 
 function getSeasonAndCopticReadingsDate(coptDate: string = copticDate, today: Date = todayDate): string | void {
 	if (!coptDate) return console.log('coptDate is not valid = ', coptDate);
 	
-	let specialSeason: string = 	checkIfInASpecificSeason(today);
+	let specialSeason: string = checkIfInASpecificSeason(today);
 	if (specialSeason) {
 		// it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
 		return specialSeason;
@@ -242,30 +242,51 @@ function checkForUnfixedEvent(
 		//We are during the St Mary Fast
 		Season = Seasons.StMaryFast;
 
-	} else if ((Number(copticMonth) === 1) && Number(copticDay) < 20) {
+	} else if (Number(copticMonth) === 1 && Number(copticDay) < 20) {
 		if (Number(copticDay) < 17)
 			Season = Seasons.Nayrouz;
 		else if (Number(copticDay) > 16)
 			Season = Seasons.CrossFeast;
-
-	} else if (Number(copticMonth) === 4 && Number(copticDay) < 29) {
-		let sunday = checkWhichSundayWeAre(Number(copticDay) - weekDay);
+	} else if (todayDate.getMonth() === 1 && todayDate.getDay() < 7) {
+		//!Caution: this must come before the Kiahk Season
+		//If we are before January 7th
+		if (
+			(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15)
+			||
+			(todayDate.getDate() === 6 && todayDate.getHours() < 15)//The Nativity Feast has been fixed to January 7th, we will consider that January 6th is the Paramoun regardless of whether it is the 28th or the 27th of Kiahk
+			||
+			([4, 5].includes(todayDate.getDate()) && todayDate.getDay() === 5)//If January 4 or January 5, is a Friday, it means that the Feast (i.e., January 7th) will be a Monday or a Sunday. In both cases, the Paramoun will start on Friday
+			||
+			(todayDate.getDate() === 5 && todayDate.getDay() === 6)//If January 5, is a Saturday, it means that the Nativity Feast (i.e., January 7th will be a Monday), the Paramoun will start on January 4th throughout January 6
+			||
+			(['2604', '2704'].includes(copticDate) && todayDate.getDay() === 5)
+			||
+			(copticDate === '2704' && todayDate.getDay() === 6)
+				
+			//We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
+		) {
+			
+			Season = Seasons.NativityParamoun;
+			return copticFeasts.NativityParamoun;
+		}
+	} else if (copticDate === '3003' && todayDate.getDay() === 0){
+		//If 30th of Hatour is a Sunday, it means that Kiahk will have only 3 Sundays before Kiahk 28th (i.e., on the 7th, 14th && 21th). We hence consider that 30th of Hatour is the 1st Sunday of Kiahk
+		Season = Seasons.KiahkWeek1;
+		return checkWhichSundayWeAre(7,0);
+	} else if (Number(copticMonth) === 4 && Number(copticDay) < 28) {
 		//We are during the month of Kiahk which starts on 16 Hatour and ends on 29 Kiahk
+		let sunday: string;
+		if([0, 7,14,21].includes(Number(copticDay) - weekDay))
+			//When the 1st of Kiahk is a Monday, Kiahk will have only 3 Sundays before Kiahk 28th (i.e., on the 7th, the 14th, and the 21th of Kiahk), we will hence consider that the 30th of Hatour is the 1st Sunday of Kiahk, and will count Kiahk's Sundays from 2 
+			sunday = checkWhichSundayWeAre(Number(copticDay) + 7 - weekDay);
+		else sunday  = checkWhichSundayWeAre(Number(copticDay) - weekDay);
 		if (sunday === '1stSunday' || sunday === '2ndSunday') Season = Seasons.KiahkWeek1;
 		else if (sunday === '3rdSunday' || sunday === '4thSunday') Season = Seasons.KiahkWeek2;
+
+		if(weekDay ===0 ) return sunday;//!Caution: we need to return the value of Sunday (which will set the readings for this day not only the Season), because it is modified when Kiahk has only 3 Sundays. We do this for the Sundays only because the readings of the other days are not affected. It is just the Season that changes.
 	} else if (Number(copticMonth) === 3 && Number(copticDay) > 15) {
 		//We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk, but we are not during the month of Kiahk
 		Season = Seasons.NativityFast;
-
-	} else if (
-		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15)
-		||
-		(['2604','2704'].includes(copticDate)
-			&& todayDate.getDay() === 5) //It means that 2804 is either a Saturday or a Sunday. In this case, the Paramoun starts from the preceding Friday
-	) {
-		//We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
-		Season = Seasons.NativityParamoun;
-		return copticFeasts.NativityParamoun;
 	} else if (
 		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() > 15) 
 		|| (Number(copticMonth) === 4 && Number(copticDay) > 28)
@@ -277,6 +298,8 @@ function checkForUnfixedEvent(
 			||
 		(['0805', '0905'].includes(copticDate)
 		&& todayDate.getDay() === 5)
+			||
+		(copticDate === '0905'&& todayDate.getDay() === 6)
 	) {
 		//This means that  we are Friday and the Baptism feast (11 Toubah) is either next Monday or Sunday, which means that the Baptism Paramoun will be either 3 or 2 days (Friday, Saturday and Sunday, or Friday and Saturday)
 		Season = Seasons.BaptismParamoun;
