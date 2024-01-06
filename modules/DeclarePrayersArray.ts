@@ -3394,7 +3394,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"ByTheIntercessionOfStJohnBaptist&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.massCommon+"ByTheIntercessionOfStJohnBaptist&D=$Seasons.Kiahk&C=Title", 
   "", 
   "St Jean-Baptiste (Kiahk)", 
   "", 
@@ -3410,7 +3410,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"ByTheIntercessionOfStZakaryAndElisabeth&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.massCommon+"ByTheIntercessionOfStZakaryAndElisabeth&D=$Seasons.Kiahk||$Seasons.Nativity&C=Title", 
   "", 
   "St Zachary et Ste Elisabeth", 
   "", 
@@ -3426,7 +3426,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"ByTheIntercessionOfStJoakimAndHanna&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.massCommon+"ByTheIntercessionOfStJoakimAndHanna&D=$Seasons.Kiahk||$Seasons.Nativity&C=Title", 
   "", 
   "St Joakim et Hanna", 
   "", 
@@ -3442,7 +3442,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"ByTheIntercessionOfStJosephAndStNikodimos&D=$Seasons.PentecostalDays||$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.massCommon+"ByTheIntercessionOfStJosephAndStNikodimos&D=$Seasons.PentecostalDays||$copticFeasts.Coptic29th&C=Title", 
   "", 
   "St Joseph et St Nikodimos", 
   "", 
@@ -3618,7 +3618,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"PraxisResponsePart1&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.praxisResponse+"PraxisResponse&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Répons du Praxis", 
   "", 
@@ -3631,10 +3631,8 @@ PrayersArray= [[
   "شيري ني ماريا تي اتشرومبي إثنيسوس. ثي إيتاس ميسي نان إم افنوتي بي لوغوس.", 
   "السَّلامُُ لكِ يا مريم الحمامة الحسنة التى ولدت لنا اللّه الكلمة.", 
   ],
-  ],
   [
-  [
-  Prefix.praxisResponse+"PraxisResponsePart2&D=$copticFeasts.AnyDay&C=Diacon", 
+  Prefix.same +"&C=Diacon", 
   "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: "+giaki.COP+" ⲛⲁⲓ ⲛⲁⲛ.", 
   "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, "+giaki.FR+", aie pitié de nous.", 
   "اك إكسمارؤوت آليثوس نيم بي اكيوت إن آغاثوس نيم بي ابنيفما اثؤواب"+giaki.CA+" ناينان.", 
@@ -5204,7 +5202,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmResponse+"&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.psalmResponse+"&D=$copticFeasts.Coptic29th&C=Title", 
   "", 
   "Réponse du Psaume du 29 du mois copte", 
   "", 
@@ -5431,7 +5429,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$Seasons.KiahkWeek1&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
   "", 
   "Réponse de l’Évangile de la première et deuxième semaine de Kiahk", 
   "", 
@@ -5454,7 +5452,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$Seasons.KiahkWeek2&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.KiahkWeek3||$Seasons.KiahkWeek4&C=Title", 
   "", 
   "Réponse de l’Évangile de la troisième et quatirème semaine de Kiahk", 
   "", 
@@ -5950,7 +5948,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.gospelResponse+"&D=$copticFeasts.Coptic29th&C=Title", 
   "", 
   "Réponse de l’Évangile du 29 du mois copte", 
   "", 
@@ -6340,6 +6338,75 @@ PrayersArray= [[
   ],
   ],
   [
+    [
+      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek1&C=Title", 
+    "", 
+    "Aspasmos Adam  pour la 1ère semaine de Kiahk", 
+    "", 
+    "اسبسمس آدام للأسبوع الأول من شهر كيهك", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Ⲍⲁⲭⲁⲣⲓⲁⲥ ⲡⲓⲟⲩⲏⲃ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲃⲁⲣⲁⲭⲓⲁⲥ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉ̀ⲣⲫⲉⲓ: ⲉϥⲧⲁⲗⲉ ⲟⲩⲥ̀ⲑⲟⲓⲛⲟⲩϥⲓ ⲉ̀ⲡ̀ϣⲱⲓ.", 
+    "Zacharie le prêtre le fils de Barachie était dans le temple, élevant l’encens.", 
+    "زخارياس بي أويب إبشيري إمفاراشياس إفكي خين بي إرفي إفطالي أو إستوي نوفي إي إبشوي.", 
+    "زكريا الكاهن ابن براخيا فيما هو في الهيكل يرفع البخور.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Ⲉⲧⲁϥⲛⲁⲩ ⲉ̀ⲡⲓⲟ̀ⲩⲱⲓⲛⲓ: �⳥�⳥ ⲉⲧⲭⲏ ϧⲉⲛ ⲡⲉϥϩⲟ ⲁϥⲉ̀ⲣϩⲟϯ ⲟⲩⲟϩ ⲁϥϩⲉⲓ ϧⲁⲣⲁⲧⲟⲩ ⲛ̀ⲛⲉϥ ϭⲁⲗⲁⲩϫ.", 
+    "Quand il vit la lumière, qui était sur son visage, il fut terrifié et tomba, sous ses pieds.", 
+    "إيتاف ناف إي بي أوأويني إتكي خين بيف هو آفئيرهوتي أووه آف هي خاراتو إن نيف إتشالفج.", 
+    "لما رأي النور الكائن في وجه خاف وسقط تحت رجليه.", 
+    ],
+    ],
+    [
+    [
+      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek2&C=Title", 
+    "COP", 
+    "Aspasmos Adam pour la 2ème semaine de Kiahk", 
+    "CA", 
+    "اسبسمس آدام للإسبوع الثاني من شهر كيهك", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Nyok on akhwl: say/ e~youab Maria akhisennoufi nac: m~v~rasi m~pikocmoc.\nOuoh akws e~bol e~roc qen ouc~m/i n~yel/l: ,e ,ere y/e~ymeh n~h~mot Po#c# sop neme.", 
+    "Toi aussi tu as volé, vers Marie Sainte et lui as annoncé, la joie du monde.", 
+    "", 
+    "أنت أيضاً طرت إلي القديسة مريم، وبشرتها بفرح العالم.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "Et tu as proclamé d'une voix allègre: \"Salut à toi ô pleine de grâce, le Seigneur est avec toi.", 
+    "", 
+    "وصرخت إليها بصوت التهليل قائلاً: \"السلام لك يا ممتلئة نعمة، الرب معك\".", 
+    ],
+    ],
+    [
+    [
+      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek4&C=Title", 
+    "", 
+    "Aspasmos Adam pour la 4ème semaine de Kiahk", 
+    "", 
+    "اسبسمس آدام للإسبوع الرابع من شهر كيهك", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Ouo~uwini pe V]: efsop qen pio~uwini: han aggeloc n~o~uwini e~terhumnoc erof.\nA~piouwini sai e~bol qen Maria: E~licabet && mici m~pip~rodromoc.", 
+    "Dieu est lumière et Il demeure dans la lumière. Les anges lumineux Le louent.", 
+    "", 
+    "الله هو نور وساكن في نور، وملائكة النور تسبحه.", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "", 
+    "Par Marie cette lumière s’est levée en rayonnant. Elisabeth a enfanté le précurseur.", 
+    "", 
+    "النور أشرق من مريم وأليصابات ولدت السابق.", 
+    ],
+    ],
+  [
   [
   Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
   "", 
@@ -6398,7 +6465,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.StMaryFast||$Seasons.NoSeason&C=Title", 
+  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.StMaryFast||$Seasons.KiahkWeek3||$Seasons.NoSeason&C=Title", 
   "", 
   "Réjouis-toi Marie", 
   "", 
@@ -9762,7 +9829,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$copticFeasts.Nativity||$Seasons.NativityFast||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.anyDay&C=Title", 
+  Prefix.fractionPrayer+"&D=$copticFeasts.Nativity||$Seasons.NativityFast||$Seasons.Kiahk||$copticFeasts.anyDay&C=Title", 
   "", 
   "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)", 
   "", 
@@ -10739,7 +10806,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.fractionPrayer+"&D=$copticFeasts.Coptic29th&C=Title", 
   "", 
   " Oraison de Fraction du 29 de chaque mois copte", 
   "", 
@@ -10920,7 +10987,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.Kiahk&C=Title", 
   "", 
   "Quatrins du carillon pour le mois de Kiahk", 
   "", 
@@ -11341,7 +11408,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.cymbalVerses+"&D=$copticFeasts.Coptic29th&C=Title", 
   "", 
   "Quatrins du carillon pour le 29 du mois copte", 
   "", 
@@ -11433,7 +11500,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$copticFeasts.theTwentyNinethOfCopticMonth", 
+  Prefix.doxologies+"&D=$copticFeasts.Coptic29th", 
   ],
   [
   Prefix.placeHolder, 
@@ -11650,36 +11717,36 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"1&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"1&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"2&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"2&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"3&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"3&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"4&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"4&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"5&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"5&D=$Seasons.Kiahk", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"6&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2", 
+  Prefix.doxologies+"6&D=$Seasons.Kiahk", 
   ],
   ],
   [
   [
-  Prefix.doxologies+"1&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"1&D=$Seasons.Kiahk&C=Title", 
   "", 
   "1ère Doxologie pour Kiahk", 
   "", 
@@ -11772,7 +11839,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"2&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"2&D=$Seasons.Kiahk&C=Title", 
   "", 
   "2ème Doxologie pour Kiahk", 
   "", 
@@ -11837,7 +11904,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"3&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"3&D=$Seasons.Kiahk&C=Title", 
   "", 
   "3ème Doxologie pour Kiahk", 
   "", 
@@ -11930,7 +11997,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"4&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"4&D=$Seasons.Kiahk&C=Title", 
   "", 
   "4ème Doxologie pour Kiahk", 
   "", 
@@ -11981,7 +12048,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"5&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"5&D=$Seasons.Kiahk&C=Title", 
   "", 
   "5ème Doxologie pour Kiahk", 
   "", 
@@ -12060,7 +12127,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"6&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.doxologies+"6&D=$Seasons.Kiahk&C=Title", 
   "", 
   "6ème Doxologie pour Kiahk", 
   "", 
@@ -19459,11 +19526,11 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek3&C=Title", 
   "", 
-  "Réponse Praxis 1ère et 3ème semaine de Kiahk", 
+  "Réponse Praxis 1ère et 2ème semaine de Kiahk", 
   "", 
-  " مرد الإبركسيس لعيد النيروز للاسبوع الأول والثالث من كيهك", 
+  " مرد الإبركسيس للأحد الأول والثالث من كيهك", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19475,11 +19542,11 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.KiahkWeek2||$Seasons.KiahkWeek4&C=Title", 
   "", 
   "Réponse Praxis 3ème semaine de Kiahk", 
   "", 
-  " مرد الإبركسيس للاسبوع الثَالِثْ من كيهك", 
+  " مرد الإبركسيس للأحد الثاني والرابع من كيهك", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -19507,7 +19574,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=copticFeasts.Nativity&C=Title", 
+  Prefix.praxisResponse+"&D=copticFeasts.Nativity||$Seasons.Nativity&C=Title", 
   "", 
   "Nativité", 
   "", 
@@ -19713,7 +19780,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.praxisResponse+"&D=$copticFeasts.Coptic29th&C=Title", 
   "", 
   "Du 29 du mois copte", 
   "", 
@@ -20926,7 +20993,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.communion+"Chant&D=$Seasons.KiahkWeek1&C=Title", 
+  Prefix.communion+"Chant&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
   "", 
   "Cantique pour la 1ère et 2ème semaine de l'Avent(Kiahk)", 
   "", 
@@ -22325,7 +22392,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.communion+"Chant&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$Seasons.StMaryFast&C=Title", 
+  Prefix.communion+"Chant&D=$Seasons.Kiahk||$Seasons.StMaryFast&C=Title", 
   "", 
   "FR", 
   "", 
@@ -23349,7 +23416,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"ByTheIntercessionOfStJosephAndStSalome&D=$Seasons.PentecostalDays||$copticFeasts.theTwentyNinethOfCopticMonth&C=Title", 
+  Prefix.massCommon+"ByTheIntercessionOfStJosephAndStSalome&D=$Seasons.Nativity||$copticFeasts.Coptic29th&C=Title", 
   "", 
   "Saint Joseph le menuisier et Sainte Salomé", 
   "", 
@@ -23365,7 +23432,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"ChantAgiosOsiOs&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"ChantAgiosOsiOs&D=$Seasons.Kiahk&C=Title", 
   "", 
   "Cantique Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
   "", 
@@ -23717,7 +23784,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"WakeUpSonsOfLight&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"WakeUpSonsOfLight&D=$Seasons.Kiahk&C=Title", 
   "Ⲧⲉⲛⲑⲏⲛⲟⲩ", 
   "Levons-nous, fils de lumière", 
   "CA", 
@@ -23887,7 +23954,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"KiahkHos&D=$Seasons.KiahkWeek1||Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"KiahkHos&D=$Seasons.Kiahk&C=Title", 
   "", 
   "Hos de Kiahk", 
   "", 
@@ -24218,7 +24285,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"PsalyOnFirstHos&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.AnyDay&C=Title", 
+  Prefix.psalmody+"PsalyOnFirstHos&D=$Seasons.Kiahk||$copticFeasts.AnyDay&C=Title", 
   "", 
   "Psalie pour le 1er Hos", 
   "", 
@@ -24409,7 +24476,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"FirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"FirstHos&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "1er Hos\nLouange de Moïse le prophète\n(Exode 15)", 
   "", 
@@ -24586,7 +24653,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"LobshFirstHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"LobshFirstHos&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "Lobsh du 1er Hos", 
   "", 
@@ -24658,7 +24725,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"ChantGodSaidToMoses&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"ChantGodSaidToMoses&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "Cantique « Dieu dit à Moïse »", 
   "", 
@@ -24982,7 +25049,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"CommentaryOnHos1&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"CommentaryOnHos1&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "Commentaire du 1er Hos", 
   "", 
@@ -25033,7 +25100,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"PsalyOnSecondHos&D=$Seasons.KiahkWeek1||$Seasons.KiahkWeek2||$copticFeasts.AnyDay&C=Title", 
+  Prefix.psalmody+"PsalyOnSecondHos&D=$Seasons.Kiahk||$copticFeasts.AnyDay&C=Title", 
   "COP", 
   "Psalie pour le 2ème Hos", 
   "", 
@@ -25252,7 +25319,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"SecondHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"SecondHos&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "2ème Hos", 
   "", 
@@ -25457,7 +25524,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"LobshSecondHos&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"LobshSecondHos&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "Lobsh du 2ème Hos", 
   "", 
@@ -25550,7 +25617,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmody+"ChantLetsSingWithDavid&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+  Prefix.psalmody+"ChantLetsSingWithDavid&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
   "", 
   "Cantique \"Avec David Chantez\"", 
   "", 
@@ -25904,7 +25971,7 @@ PrayersArray= [[
     ],
     [
       [
-      Prefix.communion+"ADoveCameToZacharieHome&D=$Seasons.KiahkWeek2&C=Title", 
+      Prefix.communion+"ADoveCameToZacharieHome&D=$Seasons.KiahkWeek3||$Seasons.KiahkWeek4&C=Title", 
       "", 
       "", 
       "", 
@@ -26739,7 +26806,7 @@ PrayersArray= [[
       ],
     [
     [
-    Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2&C=Title", 
+    Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
     "", 
     "", 
     "", 

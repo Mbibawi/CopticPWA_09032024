@@ -222,23 +222,37 @@ const ReadingsIntrosAndEnds = {
 };
 
 const bookOfHours: {
-  FirstHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  ThirdHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  SixthHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  NinethHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  EleventhHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  TwelvethHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
-  MidNightHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  FirstHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
+  ThirdHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
+  SixthHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
+  NinethHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
+  EleventhHour: [
+    string[][][],
+    number[],
+    { AR: string; FR: string; EN: string }
+  ];
+  TwelvethHour: [
+    string[][][],
+    number[],
+    { AR: string; FR: string; EN: string }
+  ];
+  MidNightHour: [
+    string[][][],
+    number[],
+    { AR: string; FR: string; EN: string }
+  ];
 } = {
   //The first element is the array that will be populated with the text tables. The second element is the sequence of the hour's psalms
 
   FirstHour: [
     [],
-    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 142], {
-    AR: "باكر",
-    FR: "Aube",
-    EN: "Dawn",
-  }], 
+    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 142],
+    {
+      AR: "باكر",
+      FR: "Aube",
+      EN: "Dawn",
+    },
+  ],
   ThirdHour: [
     [],
     [19, 22, 23, 25, 28, 29, 33, 40, 42, 44, 45, 46],
@@ -246,7 +260,8 @@ const bookOfHours: {
       AR: "الساعة الثالثة",
       FR: "3ème heure",
       EN: "Third Hour",
-    }],
+    },
+  ],
   SixthHour: [
     [],
     [53, 56, 60, 62, 66, 69, 83, 84, 85, 86, 90, 92],
@@ -254,7 +269,7 @@ const bookOfHours: {
       AR: "الساعة السادسة",
       FR: "6ème heure",
       EN: "6th Hour",
-    }
+    },
   ],
   NinethHour: [
     [],
@@ -263,7 +278,8 @@ const bookOfHours: {
       AR: "الساعة التاسعة",
       FR: "9ème heure",
       EN: "9th Hour",
-    }],
+    },
+  ],
   EleventhHour: [
     [],
     [116, 117, 119, 120, 121, 122, 124, 25, 26, 27, 28],
@@ -271,7 +287,8 @@ const bookOfHours: {
       AR: "الساعة الحادية عشر (الغروب)",
       FR: "11ème heure",
       EN: "11th Hour",
-    }],
+    },
+  ],
   TwelvethHour: [
     [],
     [129, 130, 131, 132, 136, 137, 140, 141, 145, 146, 147],
@@ -279,7 +296,8 @@ const bookOfHours: {
       AR: "الساعة الثانية عشر (النوم)",
       FR: "12ème heure",
       EN: "12th Hour",
-    }],
+    },
+  ],
   MidNightHour: [
     [],
     [14, 17, 20, 29, 72, 74, 101, 102, 118],
@@ -287,9 +305,9 @@ const bookOfHours: {
       AR: "صلاة نصف الليل",
       FR: "Minuit",
       EN: "Mid Night",
-    }]
+    },
+  ],
 };
-
 
 const ReadingsArrays = {
   PraxisArray: [],
@@ -307,8 +325,10 @@ const Seasons = {
   StMaryFast: "StMFast", //stands for Saint Mary Feast
   Nayrouz: "Nay", //Stands for Nayrouz from 1 Tout to 16 Tout
   NativityFast: "NF", //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
-  KiahkWeek1: "Kiahk1", //First 2 Sundays of Kiahk
-  KiahkWeek2: "Kiahk2", //Second 2 Sundays of Kiahk
+  KiahkWeek1: "Kiahk1", //1st Week of Kiahk
+  KiahkWeek2: "Kiahk2", //2nd Week of Kiahk
+  KiahkWeek3: "Kiahk3", //3rd Week of Kiahk
+  KiahkWeek4: "Kiahk4", //4th Week of Kiahk
   NativityParamoun: "NP", //either 2804 before 3 PM or 26, 27 and 2804 if 2904 is a Monday, or 27 and 28 if 2904 is a Sunday
   Nativity: "Nat", //from 28 Kiahk afternoon to 6 Toubi
   BaptismParamoun: "BP", //If the Baptism Feast comes a Monday or a Sunday , the Baptism Paramoun is 3 or 2 days
@@ -353,13 +373,15 @@ const copticFeasts = {
   StMaryFast: "0112",
   Epiphany: "1312",
   StMaryFeast: "1612",
-  theTwentyNinethOfCopticMonth: "000000", //This value will be set to copticDate by setCopticDates() if today is 29th of the Coptic month and we are in a month where this feast is celebrated
+  Coptic29th: "000000", //This value will be set to copticDate by setCopticDates() if today is 29th of the Coptic month and we are in a month where this feast is celebrated
 };
 const copticFasts = [
   Seasons.GreatLent,
   Seasons.NativityFast,
   Seasons.KiahkWeek1,
   Seasons.KiahkWeek2,
+  Seasons.KiahkWeek3,
+  Seasons.KiahkWeek4,
   Seasons.ApostlesFast,
   Seasons.StMaryFast,
   Seasons.JonahFast,
@@ -447,7 +469,7 @@ const PrayersArrays = [
   BookOfHoursPrayersArray,
   HolyWeekPrayersArray,
   PsalmodyPrayersArray,
-];//All these arrays are populated by elements from PrayersArray
+]; //All these arrays are populated by elements from PrayersArray
 
 const lordGreatFeasts = [
     copticFeasts.Annonciation,
@@ -534,12 +556,20 @@ if (!localStorage.displayMode || localStorage.displayMode === "undefined") {
   localStorage.displayMode = displayModes[0];
 }
 const PrayersArraysKeys: [string, string, string[][][]][] = [
-  [Prefix.praxisResponse, "PraxisResponsesPrayersArray", PraxisResponsesPrayersArray],
+  [
+    Prefix.praxisResponse,
+    "PraxisResponsesPrayersArray",
+    PraxisResponsesPrayersArray,
+  ],
   [Prefix.massCommon, "MassCommonPrayersArray", MassCommonPrayersArray],
   [Prefix.commonPrayer, "CommonPrayersArray", CommonPrayersArray],
   [Prefix.massStBasil, "MassStBasilPrayersArray", MassStBasilPrayersArray],
   [Prefix.massStCyril, "MassStCyrilPrayersArray", MassStCyrilPrayersArray],
-  [Prefix.massStGregory, "MassStGregoryPrayersArray", MassStGregoryPrayersArray],
+  [
+    Prefix.massStGregory,
+    "MassStGregoryPrayersArray",
+    MassStGregoryPrayersArray,
+  ],
   [Prefix.massStJohn, "MassStJohnPrayersArray", MassStJohnPrayersArray],
   [Prefix.doxologies, "DoxologiesPrayersArray", DoxologiesPrayersArray],
   [Prefix.communion, "CommunionPrayersArray", CommunionPrayersArray],
@@ -549,13 +579,37 @@ const PrayersArraysKeys: [string, string, string[][][]][] = [
   [Prefix.incenseDawn, "IncensePrayersArray", IncensePrayersArray],
   [Prefix.incenseVespers, "IncensePrayersArray", IncensePrayersArray],
   [Prefix.commonIncense, "IncensePrayersArray", IncensePrayersArray],
-  [Prefix.gospelMass, "ReadingsArrays.GospelMassArray", ReadingsArrays.GospelMassArray],
-  [Prefix.gospelDawn, "ReadingsArrays.GospelDawnArray", ReadingsArrays.GospelDawnArray],
-  [Prefix.gospelVespers, "ReadingsArrays.GospelVespersArray", ReadingsArrays.GospelVespersArray],
-  [Prefix.gospelNight, "ReadingsArrays.GospelNightArray",ReadingsArrays.GospelNightArray],
+  [
+    Prefix.gospelMass,
+    "ReadingsArrays.GospelMassArray",
+    ReadingsArrays.GospelMassArray,
+  ],
+  [
+    Prefix.gospelDawn,
+    "ReadingsArrays.GospelDawnArray",
+    ReadingsArrays.GospelDawnArray,
+  ],
+  [
+    Prefix.gospelVespers,
+    "ReadingsArrays.GospelVespersArray",
+    ReadingsArrays.GospelVespersArray,
+  ],
+  [
+    Prefix.gospelNight,
+    "ReadingsArrays.GospelNightArray",
+    ReadingsArrays.GospelNightArray,
+  ],
   [Prefix.stPaul, "ReadingsArrays.StPaulArray", ReadingsArrays.StPaulArray],
-  [Prefix.katholikon, "ReadingsArrays.KatholikonArray", ReadingsArrays.KatholikonArray],
+  [
+    Prefix.katholikon,
+    "ReadingsArrays.KatholikonArray",
+    ReadingsArrays.KatholikonArray,
+  ],
   [Prefix.praxis, "ReadingsArrays.PraxisArray", ReadingsArrays.PraxisArray],
-  [Prefix.synaxarium, "ReadingsArrays.SynaxariumArray", ReadingsArrays.SynaxariumArray],
+  [
+    Prefix.synaxarium,
+    "ReadingsArrays.SynaxariumArray",
+    ReadingsArrays.SynaxariumArray,
+  ],
   [Prefix.psalmody, "PsalmodyPrayersArray", PsalmodyPrayersArray],
 ];

@@ -148,8 +148,9 @@ function getAgricultureSeason(day?:number, month?:number):number {
 }
     
 function checkIf29thOfCopticMonth():boolean {
-    let day = Number(copticDay), month = Number(copticMonth);
-    if (day !== 29 || (month>3 && month<8)) return false;
+    if (Number(copticDay) !== 29
+        || (Number(copticMonth) > 3 && Number(copticMonth) < 8)
+    ) return false;
     else return true
 }
 
