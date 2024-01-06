@@ -5284,7 +5284,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmResponse+"&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.psalmResponse+"&D=$Seasons.Baptism&C=Title", 
   "", 
   "Réponse du Psaume Fête de l’Épiphanie", 
   "", 
@@ -5477,7 +5477,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$copticFeasts.NativityParamoun&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.NativityParamoun&C=Title", 
   "", 
   "Réponse de l’Évangile du Parmoun de la Nativité", 
   "", 
@@ -5540,7 +5540,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$Seasons.BaptismParamoun||$copticFeasts.BaptismParamoun&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.BaptismParamoun&C=Title", 
   "", 
   "Réponse de l’Évangile du Paramoun de l’Épiphanie", 
   "", 
@@ -5570,7 +5570,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.Baptism&C=Title", 
   "", 
   "Réponse de l’Évangile de la fête de l’Épiphanie", 
   "", 
@@ -8898,7 +8898,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$copticFeasts.Baptism||$copticFeasts.anyDay&C=Title", 
+  Prefix.fractionPrayer+"&D=$Seasons.Baptism||$copticFeasts.anyDay&C=Title", 
   "", 
   "Oraison de fraction pour l’Epiphanie (Puisque tu nous as accordé la grâce d’être tes enfants)", 
   "", 
@@ -9799,7 +9799,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$copticFeasts.Baptism||$saintsFeasts.stJohnBaptist||$copticFeasts.anyDay&C=Title", 
+  Prefix.fractionPrayer+"&D=$Seasons.Baptism||$saintsFeasts.StJohnBaptist||$copticFeasts.anyDay&C=Title", 
   "", 
   "Oraison de fraction de l'Epiphanie et de la fête de Saint Jean-Baptiste", 
   "", 
@@ -10943,7 +10943,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$copticFeasts.NativityParamoun&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.NativityParamoun&C=Title", 
   "", 
   "Quatrins du carillon pour le Paramoun de la Nativité", 
   "", 
@@ -11005,7 +11005,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$Seasons.BaptismParamoun||$copticFeasts.BaptismParamoun&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.BaptismParamoun&C=Title", 
   "", 
   "Quatrins du carillon pour le paramoun du Baptême du Christ", 
   "", 
@@ -11028,7 +11028,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.Baptism&C=Title", 
   "", 
   "Quatrins du carillon pour le Baptême du Christ", 
   "", 
@@ -12111,7 +12111,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$copticFeasts.NativityParamoun&C=Title", 
+  Prefix.doxologies+"&D=$Seasons.NativityParamoun&C=Title", 
   "", 
   "", 
   "", 
@@ -12502,7 +12502,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$Seasons.BaptismParamoun||$copticFeasts.BaptismParamoun&C=Title", 
+  Prefix.doxologies+"&D=$Seasons.BaptismParamoun&C=Title", 
   "", 
   "Doxologie du paramoun de l’Épiphanie", 
   "", 
@@ -12567,20 +12567,20 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$copticFeasts.Baptism", 
+  Prefix.doxologies+"&D=$Seasons.Baptism", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"1&D=$copticFeasts.Baptism", 
+  Prefix.doxologies+"1&D=$Seasons.Baptism", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"2&D=$copticFeasts.Baptism", 
+  Prefix.doxologies+"2&D=$Seasons.Baptism", 
   ],
   ],
   [
   [
-  Prefix.doxologies+"1&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.doxologies+"1&D=$Seasons.Baptism&C=Title", 
   "", 
   "Doxologie pour la fête de l’Épiphanie", 
   "", 
@@ -12670,7 +12670,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"2&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.doxologies+"2&D=$Seasons.Baptism&C=Title", 
   "", 
   "Deuxième Doxologie pour la fête de l’Épiphanie", 
   "", 
@@ -19491,7 +19491,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=$copticFeasts.NativityParamoun&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.NativityParamoun&C=Title", 
   "", 
   "Paramoun de la Nativité", 
   "", 
@@ -19539,7 +19539,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=$copticFeasts.Baptism&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.Baptism&C=Title", 
   "", 
   "Fête de l’Épiphanie", 
   "", 

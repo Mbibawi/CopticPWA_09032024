@@ -205,7 +205,7 @@ function checkForUnfixedEvent(
 		//I didn't find the readings for this period in the Power Point presentations
 		Season = Seasons.JonahFast;
 		return isItSundayOrWeekDay(Seasons.JonahFast, Math.abs(70 - difference), weekDay);
-	} else if (difference >0 && difference < 58) {
+	} else if (difference > 0 && difference < 58) {
 		//We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day
 		if (copticDate === '1007')
 			Season = Seasons.CrossFeast; //! CAUTION: This must come BEFORE Seasons.GreatLent because the cross feast is celebrated twice, one of which during the Great Lent (10 Bramhat). If we do not place this 'else if' condition before the Great Lent season, it will never be fulfilled during the Great Lent
@@ -218,7 +218,7 @@ function checkForUnfixedEvent(
 		
 		return isItSundayOrWeekDay(Seasons.GreatLent, 58 - difference, weekDay);
 
-	} else if (difference <0 && Math.abs(difference) < 50) {
+	} else if (difference < 0 && Math.abs(difference) < 50) {
 		difference
 		// we are during the 50 Pentecostal days
 		Season = Seasons.PentecostalDays;
@@ -232,17 +232,17 @@ function checkForUnfixedEvent(
 		&& Number(copticMonth) > convertGregorianDateToCopticDate(resDate, false)[0][1]//This is the coptic month for the Resurrection day
 		&& (
 			Number(copticMonth) < 11
-		||
+			||
 			(Number(copticMonth) === 11 && Number(copticDay) < 5) //This is the Apostles Feast
 		)
 	) {
 		//We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
-			Season = Seasons.ApostlesFast;
+		Season = Seasons.ApostlesFast;
 	} else if (Number(copticMonth) === 12 && Number(copticDay) < 16) {
 		//We are during the St Mary Fast
 		Season = Seasons.StMaryFast;
 
-	} else if ((Number(copticMonth) === 1) && Number(copticDay)<20) {
+	} else if ((Number(copticMonth) === 1) && Number(copticDay) < 20) {
 		if (Number(copticDay) < 17)
 			Season = Seasons.Nayrouz;
 		else if (Number(copticDay) > 16)
@@ -257,25 +257,40 @@ function checkForUnfixedEvent(
 		//We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk, but we are not during the month of Kiahk
 		Season = Seasons.NativityFast;
 
-	} else if (copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15) {
+	} else if (
+		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() < 15)
+		||
+		(['2604','2704'].includes(copticDate)
+			&& todayDate.getDay() === 5) //It means that 2804 is either a Saturday or a Sunday. In this case, the Paramoun starts from the preceding Friday
+	) {
 		//We are on the day before the Nativity Feast (28 Kiahk), and we are in the morning, it is the Parmoun of the Nativity
+		Season = Seasons.NativityParamoun;
 		return copticFeasts.NativityParamoun;
 	} else if (
 		(copticDate === copticFeasts.NativityParamoun && todayDate.getHours() > 15) 
 		|| (Number(copticMonth) === 4 && Number(copticDay) > 28)
 		||(Number(copticMonth) === 5 && Number(copticDay) < 7)) {
-		//We are on the day before the Nativity Feast, and we are in the afternoon we will set the Season as Nativity and the copticReadingsDate to those of nativity
 		Season = Seasons.Nativity; //From 28 Kiahk afternoon to Circumsion (6 Toubi)
 	} else if (
-		(copticDate === '0805' || copticDate === '0905')
-		&& todayDate.getDay() === 5) {
+		(copticDate === copticFeasts.BaptismParamoun
+			&& todayDate.getHours() < 15)
+			||
+		(['0805', '0905'].includes(copticDate)
+		&& todayDate.getDay() === 5)
+	) {
 		//This means that  we are Friday and the Baptism feast (11 Toubah) is either next Monday or Sunday, which means that the Baptism Paramoun will be either 3 or 2 days (Friday, Saturday and Sunday, or Friday and Saturday)
 		Season = Seasons.BaptismParamoun;
-		return '1005';//The readings during the Baptism Paramoun are those of 10 Toubah
+		return copticFeasts.BaptismParamoun;//The readings during the Baptism Paramoun are those of 10 Toubah
 	} else if (
-		(Number(copticMonth) === 5 && Number(copticDay) === 10 && todayDate.getHours() > 15) ||
-		(Number(copticMonth) === 5 && Number(copticDay) > 10 && Number(copticDay) < 13)) {
-		//We are between the Nativity and the Baptism
+		copticDate === copticFeasts.BaptismParamoun
+		&& todayDate.getHours() > 15
+	) {
+		//If we are on the Baptism Paramoun after 3PM, we will pray the Baptism ceremony
+		Season = Seasons.Baptism;
+		return copticFeasts.Baptism;
+	} else if (
+		(Number(copticMonth) === 5 && Number(copticDay) > 10 && Number(copticDay) < 14)) {
+		//We are during the 3 days of Baptism Feast
 		Season = Seasons.Baptism;
 	} else if (Number(copticMonth) === 1 && Number(copticDay) < 17) {
 		Season = Seasons.Nayrouz;

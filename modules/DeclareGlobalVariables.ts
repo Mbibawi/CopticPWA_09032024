@@ -23,7 +23,7 @@ type typeButton = {
   any?: any;
 };
 //CONSTANTS
-const version: string = "v5.1.8 (Changes to the global varialbes and added Synaxiarium until 1805)";
+const version: string = "v5.2.0 (Fixes to the Book of Hours)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -220,70 +220,74 @@ const ReadingsIntrosAndEnds = {
     EN: "We are the theday day of the themonth of () ",
   },
 };
-const bookOfHoursLabels: { id: string; AR: string; FR: string; EN: string }[] =
-  [
-    {
-      id: "FirstHour",
-      AR: "باكر",
-      FR: "Aube",
-      EN: "Dawn",
-    },
-    {
-      id: "ThirdHour",
-      AR: "الساعة الثالثة",
-      FR: "3ème heure",
-      EN: "Third Hour",
-    },
-    {
-      id: "SixthHour",
-      AR: "الساعة السادسة",
-      FR: "6ème heure",
-      EN: "6th Hour",
-    },
-    {
-      id: "NinethHour",
-      AR: "الساعة التاسعة",
-      FR: "9ème heure",
-      EN: "9th Hour",
-    },
-    {
-      id: "EleventhHour",
-      AR: "الساعة الحادية عشر (الغروب)",
-      FR: "11ème heure",
-      EN: "11th Hour",
-    },
-    {
-      id: "TwelvethHour",
-      AR: "الساعة الثانية عشر (النوم)",
-      FR: "12ème heure",
-      EN: "12th Hour",
-    },
-    {
-      id: "MidNightHour",
-      AR: "صلاة نصف الليل",
-      FR: "Minuit",
-      EN: "Mid Night",
-    },
-  ];
 
 const bookOfHours: {
-  FirstHour: [string[][][], number[]],
-  ThirdHour: [string[][][], number[]],
-  SixthHour: [string[][][], number[]],
-  NinethHour: [string[][][], number[]],
-  EleventhHour: [string[][][], number[]],
-  TwelvethHour: [string[][][], number[]],
-  MidNightHour: [string[][][], number[]],
+  FirstHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  ThirdHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  SixthHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  NinethHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  EleventhHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  TwelvethHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
+  MidNightHour: [string[][][], number[],{AR:string, FR:string, EN:string}],
 } = {
   //The first element is the array that will be populated with the text tables. The second element is the sequence of the hour's psalms
 
-  FirstHour: [[],[1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 142]], 
-  ThirdHour: [[],[19, 22, 23, 25, 28, 29, 33, 40, 42, 44, 45, 46]],
-  SixthHour: [[],[53, 52, 60, 62, 66, 69, 83, 84, 85, 86, 90, 92]],
-  NinethHour: [[],[95, 96, 97, 98, 99, 100, 109, 111, 112, 114, 115]],
-  EleventhHour: [[],[116, 117, 119, 120, 121, 122, 124, 25, 26, 27, 28]],
-  TwelvethHour: [[],[129, 130, 131, 132, 136, 137, 140, 141, 145, 146, 147]],
-  MidNightHour: [[],[14, 17, 20, 29, 72, 74, 101, 102, 118]]
+  FirstHour: [
+    [],
+    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 142], {
+    AR: "باكر",
+    FR: "Aube",
+    EN: "Dawn",
+  }], 
+  ThirdHour: [
+    [],
+    [19, 22, 23, 25, 28, 29, 33, 40, 42, 44, 45, 46],
+    {
+      AR: "الساعة الثالثة",
+      FR: "3ème heure",
+      EN: "Third Hour",
+    }],
+  SixthHour: [
+    [],
+    [53, 56, 60, 62, 66, 69, 83, 84, 85, 86, 90, 92],
+    {
+      AR: "الساعة السادسة",
+      FR: "6ème heure",
+      EN: "6th Hour",
+    }
+  ],
+  NinethHour: [
+    [],
+    [95, 96, 97, 98, 99, 100, 109, 111, 112, 114, 115],
+    {
+      AR: "الساعة التاسعة",
+      FR: "9ème heure",
+      EN: "9th Hour",
+    }],
+  EleventhHour: [
+    [],
+    [116, 117, 119, 120, 121, 122, 124, 25, 26, 27, 28],
+    {
+      AR: "الساعة الحادية عشر (الغروب)",
+      FR: "11ème heure",
+      EN: "11th Hour",
+    }],
+  TwelvethHour: [
+    [],
+    [129, 130, 131, 132, 136, 137, 140, 141, 145, 146, 147],
+    {
+      AR: "الساعة الثانية عشر (النوم)",
+      FR: "12ème heure",
+      EN: "12th Hour",
+    }],
+  MidNightHour: [
+    [],
+    [14, 17, 20, 29, 72, 74, 101, 102, 118],
+    {
+      AR: "صلاة نصف الليل",
+      FR: "Minuit",
+      EN: "Mid Night",
+    }]
 };
 
 
@@ -305,6 +309,7 @@ const Seasons = {
   NativityFast: "NF", //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
   KiahkWeek1: "Kiahk1", //First 2 Sundays of Kiahk
   KiahkWeek2: "Kiahk2", //Second 2 Sundays of Kiahk
+  NativityParamoun: "NP", //either 2804 before 3 PM or 26, 27 and 2804 if 2904 is a Monday, or 27 and 28 if 2904 is a Sunday
   Nativity: "Nat", //from 28 Kiahk afternoon to 6 Toubi
   BaptismParamoun: "BP", //If the Baptism Feast comes a Monday or a Sunday , the Baptism Paramoun is 3 or 2 days
   Baptism: "Ba", //from 11 Toubi until 12 Toubi

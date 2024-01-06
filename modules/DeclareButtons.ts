@@ -1406,42 +1406,35 @@ const btnMassUnBaptised: Button = new Button({
     })();
 
     (async function insertBookOfHoursButton() {
-      if (
-        copticReadingsDate === copticFeasts.Resurrection ||
-        copticDate === copticFeasts.Nativity ||
-        copticDate === copticFeasts.Baptism
-      )
+      if ([copticFeasts.Resurrection, copticFeasts.Nativity, copticFeasts.Baptism].includes(copticReadingsDate))
         //In these feasts we don't pray any hour
         return;
 
       let hoursBtns: Button[] = btnBookOfHours.onClick(true); //We get buttons for the relevant hours according to the day
       if (!hoursBtns) return;
+      
+      hoursBtns = selectRelevantHoursAccordingToTheDay();
 
-      (function selectRelevantHoursAccordingToTheDay() {
+      function selectRelevantHoursAccordingToTheDay():Button[] {
         //args.mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
         let hours = [hoursBtns[1], hoursBtns[2], hoursBtns[3]]; //Those are the 3rd, 6th and 9th hours
 
         if (
-          (Season === Seasons.GreatLent || Season === Seasons.JonahFast) &&
-          todayDate.getDay() !== 0 &&
-          todayDate.getDay() !== 6
-        )
-          //We are during the Great Lent, we pray the 3rd, 6th, 9th, 11th, and 12th hours
-          hours.push(hoursBtns[4], hoursBtns[5]);
+          [Seasons.GreatLent, Seasons.JonahFast, Seasons.NativityParamoun, Seasons.BaptismParamoun].includes(Season)
+          && ![0, 6].includes(todayDate.getDay())
+          //We are during the Great Lent or during the Nativity Paramoun or the Baptism Paramoun and today is a Friday. In such cases, we pray the 3rd, 6th, 9th, 11th, and 12th hours
+        ) hours.push(hoursBtns[4], hoursBtns[5]);
+        
         else if (
-          todayDate.getDay() === 0 ||
-          todayDate.getDay() === 6 || //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
-          lordFeasts.indexOf(copticDate) > -1 ||
-          Season === Seasons.PentecostalDays ||
-          Season === Seasons.Nayrouz ||
-          Season === Seasons.CrossFeast ||
-          (!isFast && todayDate.getDay() !== 3 && todayDate.getDay() !== 5)
-        )
-          //We are a Sunday or a Saturday, or during the 50 Pentecostal days, or on a Lord Feast day, or we are during a no fast period
-          hours.pop(); //we remove the 9th hour
+          //We remove the 9th hour in the following days
+          [0,6].includes(todayDate.getDay()) //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
+          || lordFeasts.includes(copticDate) //This is a Lord Feast. We remove the 9th hour
+          || [Seasons.Nativity, Seasons.Baptism, Seasons.PentecostalDays, Seasons.Nayrouz, Seasons.CrossFeast].includes(Season) //These are joyfull seasons
+          || (!isFast && ![3,5].includes(todayDate.getDay())) //We are not during a feast or joyfull season, but we are not neither a Wednesday nor a Firday
+        )  hours.pop(); //we remove the 9th hour
 
-        hoursBtns = hours;
-      })();
+        return hours;
+      };
 
       let masterBtnDiv = document.createElement("div"); //This is the div that will contain the master button which shows or hides the Book of Hours sub buttons
       masterBtnDiv.classList.add(inlineBtnsContainerClass);
@@ -1488,6 +1481,12 @@ const btnMassUnBaptised: Button = new Button({
 
           InsertHourFinalPrayers(btn); //Inserting Kyrielison 41 times, Agios, Holy God of Sabaot, etc.
 
+          if (localStorage.displayMode === displayModes[1])
+            //If we are in the 'Presentation Mode', we remove all the psalms and keep only the Gospel and the Litanies
+            btn.prayersSequence
+              .filter(title => title.includes('Psalm'))
+              .forEach(title => btn.prayersSequence.splice(btn.prayersSequence.indexOf(title), 1));
+
           let btnPrayers: string[][][] =
             btn.prayersSequence
               .map(title => findTableInPrayersArray(title, getTablesArrayFromTitlePrefix(title)) as string[][]);//We create an array containing all the tables includes in the button's prayersSequence.
@@ -1508,24 +1507,6 @@ const btnMassUnBaptised: Button = new Button({
           collapseAllTitles(
             Array.from(createdElements[1].children) as HTMLDivElement[]
           ); //We collapse all the titles
-
-          if (localStorage.displayMode === displayModes[1]) {
-            //If we are in the 'Presentation Mode'
-            Array.from(createdElements[1].querySelectorAll("div.Row"))
-              .filter(
-                (row: HTMLElement) =>
-                  row.dataset.root.includes("HourPsalm") ||
-                  row.dataset.root.includes("EndOfHourPrayer")
-              )
-              .forEach((row) => row.remove()); //we remove all the psalms and keep only the Gospel and the Litanies,
-            Array.from(sideBarTitlesContainer.children)
-              .filter(
-                (row: HTMLDivElement) =>
-                  row.dataset.root.includes("HourPsalm") ||
-                  row.dataset.root.includes("EndOfHourPrayer")
-              )
-              .forEach((row) => row.remove()); //We do the same for the titles
-          }
         });
 
       function addOnClickToHourBtn(hourBtn: HTMLElement) {
@@ -1933,14 +1914,7 @@ const btnBookOfHours: Button = new Button({
           let hourName = entry[0];
           let hourBtn = new Button({
             btnID: "btn" + hourName,
-            label: {
-              AR:
-                bookOfHoursLabels.find(label => label.id === hourName).AR ||
-                "",
-              FR:
-                bookOfHoursLabels.find(label => label.id === hourName)[0] ||
-                "",
-            },
+            label: entry[1][2],
             languages: btnBookOfHours.languages,
             showPrayers: true,
             prayersArray: [...entry[1][0]],
@@ -1956,14 +1930,8 @@ const btnBookOfHours: Button = new Button({
                 htmlRow.classList.replace("Assembly", "NoActor");
               }),
           });
-
           btnBookOfHours.children.push(hourBtn);
         });
-
-      if (returnBtnChildren) return btnBookOfHours.children;
-
-      scrollToTop();
-      return btnBookOfHours.prayersSequence;
 
       //Adding the onClick() property to the button
     function hourBtnOnClick(
@@ -2059,6 +2027,11 @@ const btnBookOfHours: Button = new Button({
       })();
       }
     })();
+
+    if (returnBtnChildren) return btnBookOfHours.children;
+
+    scrollToTop();
+    return btnBookOfHours.prayersSequence;
   },
 });
 
