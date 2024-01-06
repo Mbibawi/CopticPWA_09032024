@@ -1967,24 +1967,21 @@ function collapseOrExpandText(params: {
 
   //Hiding or showing the elements linked to the title (titleRow)
   Array.from(
-    containerDiv.querySelectorAll("div.Row") as NodeListOf<HTMLDivElement>
-  )
-    .filter(
-      (div) =>
-        div !== params.titleRow &&
-        div.dataset.group &&
-        div.dataset.group === params.titleRow.dataset.root
-    )
-    .forEach((div) => {
-      if (
-        params.titleRow.dataset.isCollapsed &&
-        !div.classList.contains(hidden)
-      )
-        div.classList.add(hidden);
-      else if (
-        div.classList.contains(hidden) &&
+    containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
+    .filter(div =>
+      div !== params.titleRow
+      &&
         !div.classList.contains("Expandable")
-      )
+      &&
+      div.dataset.group
+      &&
+        div.dataset.group === params.titleRow.dataset.root)
+    .forEach(div => {
+      if (params.titleRow.dataset.isCollapsed
+        &&
+        !div.classList.contains(hidden))
+        div.classList.add(hidden);
+      else if (div.classList.contains(hidden))
         div.classList.remove(hidden);
     });
 }

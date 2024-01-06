@@ -1548,8 +1548,9 @@ const btnMassUnBaptised: Button = new Button({
                 )
               );
 
-          let btnPrayers: string[][][] = btn.prayersSequence.map(
-            (title) =>
+          let btnPrayers: string[][][] =
+            btn.prayersSequence
+              .map(title =>
               findTableInPrayersArray(
                 title,
                 getTablesArrayFromTitlePrefix(title)
@@ -1566,7 +1567,7 @@ const btnMassUnBaptised: Button = new Button({
               languages: btnBookOfHours.languages,
             }) as [HTMLElement, HTMLDivElement];
 
-          addOnClickToHourBtn(createdElements[0]);
+          addOnClickToHourBtn(createdElements[0]); //This is the button that will show or hid each hour's button
 
           btnsDiv.appendChild(createdElements[0]); //We add all the buttons to the same div instead of 3 divs;
 
@@ -1687,14 +1688,11 @@ const btnMassUnBaptised: Button = new Button({
           );
         }
       }
-
-      //Collapsing all the Titles
-      collapseAllTitles(
-        Array.from(btnDocFragment.children) as HTMLDivElement[]
-      );
-
-      btnDocFragment.getElementById("masterBOHBtn").classList.toggle(hidden); //We remove hidden from btnsDiv
     })();
+          //Collapsing all the Titles
+      collapseAllTitles(
+        Array.from(btnDocFragment.children) as HTMLDivElement[]);
+      btnDocFragment.getElementById("masterBOHBtn").classList.toggle(hidden); //We remove hidden from btnsDiv
   },
 });
 
