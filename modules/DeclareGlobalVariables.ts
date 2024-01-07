@@ -23,7 +23,7 @@ type typeButton = {
   any?: any;
 };
 //CONSTANTS
-const version: string = "v5.2.1 (Substantial changes and fixes to the readings buttons and to the gospel fetching functions)";
+const version: string = "v5.2.2 (Substantial restructring and changes to the function which checks the special Seasons and dates. )";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
