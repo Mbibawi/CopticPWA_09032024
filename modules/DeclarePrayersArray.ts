@@ -5113,7 +5113,14 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmResponse+"&D=$copticFeasts.AnyDay&C=Diacon", 
+  Prefix.psalmResponse+"&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
+  "", 
+  "Réponse du Psaume", 
+  "", 
+  "مرد المزمور", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
   "Ⲁⲗⲗⲏⲗⲟⲩⲓⲁ ⲁ̅ⲗ̅", 
   "Alléluia (2 fois)", 
   "ألليلويا ألليلويا", 
@@ -5491,7 +5498,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.Nativity&C=Title", 
   "", 
   "Réponse de l’Évangile de la fête de la Nativité", 
   "", 
@@ -5781,7 +5788,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"Vespers&D=$copticFeasts.LazarusSaturday&C=Title", 
+  Prefix.gospelResponse+"Vespers&D=$copticFeasts.EndOfGreatLentFriday&C=Title", 
   "", 
   "Réponse de l’Évangile des Vêpres du Samedi de Lazarus", 
   "", 
@@ -5797,7 +5804,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"Vespers&D=$copticFeasts.PalmSunday&C=Title", 
+  Prefix.gospelResponse+"Vespers&D=$copticFeasts.LazarusSaturday&C=Title", 
   "", 
   "Réponse de l’Évangile des Vêpres du Dimanche des Rameaux", 
   "", 
@@ -5896,7 +5903,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=2409&C=Title", 
+  Prefix.gospelResponse+"&D=$copticFeasts.EntryToEgypt&C=Title", 
   "", 
   "Réponse de l’Évangile de la Fête de l’entrée du Christ en Égypte", 
   "", 

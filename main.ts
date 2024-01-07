@@ -1934,12 +1934,7 @@ async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
   });
 }
 
-async function setButtonsPrayers() {
-  btns.map((btn: Button) => {
-    btnsPrayersSequences.push(btn.onClick());
-    btn.retrieved = true;
-  });
-}
+
 /**
  * Hides all the nextElementSiblings of a title html element (i.e., a div having the class 'Title' or 'SubsTitle') if the nextElementSibling has the same data-group attribute as the title html element
  * @param {HTMLElement} titleRow - the html element containing the title, which, when clicked, we will toggle the 'hidden' class from all its  nextElementSiblings
@@ -1977,9 +1972,7 @@ function collapseOrExpandText(params: {
       &&
         div.dataset.group === params.titleRow.dataset.root)
     .forEach(div => {
-      if (params.titleRow.dataset.isCollapsed
-        &&
-        !div.classList.contains(hidden))
+      if (params.titleRow.dataset.isCollapsed && !div.classList.contains(hidden))
         div.classList.add(hidden);
       else if (div.classList.contains(hidden))
         div.classList.remove(hidden);
@@ -2938,7 +2931,8 @@ function insertPrayersAdjacentToExistingElement(args: {
   if (!args.tables) return;
   if (!args.container) args.container = containerDiv;
 
-  return args.tables.map((table) => {
+  return args.tables
+    .map(table => {
     if (!table || table.length === 0) return;
     return showPrayers({
       wordTable: table,
@@ -3005,23 +2999,22 @@ async function populatePrayersArrays() {
   if (PrayersArray.length === 0)
     return console.log("PrayersArray is empty = ", PrayersArray);
 
-  let array: [string, string, string[][][]],
-    SubPrayersArray = PrayersArraysKeys.filter(array => PrayersArrays.includes(array[2])),
-    BOH;
-
+  let array: [string, string, string[][][]], BOH;
 
   PrayersArray
-    .forEach((table) => {
+    .forEach(table => {
     if (!table[0] || !table[0][0]) return;
     //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
       array =
-        SubPrayersArray
+        PrayersArraysKeys
           .find(array => table[0][0].startsWith(array[0]));
 
       if (array) array[2].push(table);
 
       if (table[0][0].startsWith(Prefix.bookOfHours)) {
-        BOH = Object.entries(bookOfHours).find(entry => table[0][0].includes(entry[0]));
+        BOH = 
+          Object.entries(bookOfHours)
+            .find(entry => table[0][0].includes(entry[0]));
         if (BOH) BOH[1][0].push(table);
       }   
   });
