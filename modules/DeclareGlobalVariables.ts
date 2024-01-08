@@ -23,7 +23,8 @@ type typeButton = {
   any?: any;
 };
 //CONSTANTS
-const version: string = "v5.2.3 (Fixes to the Unbaptized Mass and to the Fractions)";
+const version: string =
+  "v5.2.3 (Fixes to the Unbaptized Mass and to the Fractions)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -555,33 +556,103 @@ if (localStorage.textAmplified === undefined) {
 if (!localStorage.displayMode || localStorage.displayMode === "undefined") {
   localStorage.displayMode = displayModes[0];
 }
-const PrayersArraysKeys: [string, string, string[][][]][] = [
-  [Prefix.praxisResponse, "PraxisResponsesPrayersArray", PraxisResponsesPrayersArray],
-  [Prefix.psalmResponse, "PsalmAndGospelPrayersArray", PsalmAndGospelPrayersArray],
-  [Prefix.gospelResponse, "PsalmAndGospelPrayersArray", PsalmAndGospelPrayersArray],
-  [Prefix.massCommon, "MassCommonPrayersArray", MassCommonPrayersArray],
-  [Prefix.commonPrayer, "CommonPrayersArray", CommonPrayersArray],
-  [Prefix.massStBasil, "MassStBasilPrayersArray", MassStBasilPrayersArray],
-  [Prefix.massStCyril, "MassStCyrilPrayersArray", MassStCyrilPrayersArray],
-  [Prefix.massStGregory, "MassStGregoryPrayersArray", MassStGregoryPrayersArray],
-  [Prefix.massStJohn, "MassStJohnPrayersArray", MassStJohnPrayersArray],
-  [Prefix.doxologies, "DoxologiesPrayersArray", DoxologiesPrayersArray],
-  [Prefix.communion, "CommunionPrayersArray", CommunionPrayersArray],
-  [Prefix.fractionPrayer, "FractionsPrayersArray", FractionsPrayersArray],
-  [Prefix.cymbalVerses, "CymbalVersesPrayersArray", CymbalVersesPrayersArray],
-  [Prefix.bookOfHours, "BookOfHoursPrayersArray", BookOfHoursPrayersArray],
-  [Prefix.HolyWeek, "HolyWeekPrayersArray", HolyWeekPrayersArray],
-  [Prefix.incenseDawn, "IncensePrayersArray", IncensePrayersArray],
-  [Prefix.incenseVespers, "IncensePrayersArray", IncensePrayersArray],
-  [Prefix.commonIncense, "IncensePrayersArray", IncensePrayersArray],
-  [Prefix.gospelMass, "ReadingsArrays.GospelMassArray", ReadingsArrays.GospelMassArray],
-  [Prefix.gospelDawn, "ReadingsArrays.GospelDawnArray", ReadingsArrays.GospelDawnArray],
-  [Prefix.gospelVespers, "ReadingsArrays.GospelVespersArray", ReadingsArrays.GospelVespersArray],
-  [Prefix.gospelNight, "ReadingsArrays.GospelNightArray", ReadingsArrays.GospelNightArray],
-  [Prefix.stPaul, "ReadingsArrays.StPaulArray", ReadingsArrays.StPaulArray],
-  [Prefix.katholikon, "ReadingsArrays.KatholikonArray", ReadingsArrays.KatholikonArray],
-  [Prefix.praxis, "ReadingsArrays.PraxisArray", ReadingsArrays.PraxisArray],
-  [Prefix.synaxarium, "ReadingsArrays.SynaxariumArray", ReadingsArrays.SynaxariumArray],
-  [Prefix.propheciesDawn, "ReadingsArrays.PropheciesDawnArray", ReadingsArrays.PropheciesDawnArray],
-  [Prefix.psalmody, "PsalmodyPrayersArray", PsalmodyPrayersArray],
+const PrayersArraysKeys: [string, string, Function][] = [
+  //!Caution: we needed to make the last element a function that returns the array instead of referrecing the array itself, because when the DeclareGlobalVariables.js file is loaded, the ReadingsPrayersArrays are still empty since the readings texts files are not loaded yet
+  [
+    Prefix.praxisResponse,
+    "PraxisResponsesPrayersArray",
+    () => PraxisResponsesPrayersArray,
+  ],
+  [
+    Prefix.psalmResponse,
+    "PsalmAndGospelPrayersArray",
+    () => PsalmAndGospelPrayersArray,
+  ],
+  [
+    Prefix.gospelResponse,
+    "PsalmAndGospelPrayersArray",
+    () => PsalmAndGospelPrayersArray,
+  ],
+  [Prefix.massCommon, "MassCommonPrayersArray", () => MassCommonPrayersArray],
+  [Prefix.commonPrayer, "CommonPrayersArray", () => CommonPrayersArray],
+  [
+    Prefix.massStBasil,
+    "MassStBasilPrayersArray",
+    () => MassStBasilPrayersArray,
+  ],
+  [
+    Prefix.massStCyril,
+    "MassStCyrilPrayersArray",
+    () => MassStCyrilPrayersArray,
+  ],
+  [
+    Prefix.massStGregory,
+    "MassStGregoryPrayersArray",
+    () => MassStGregoryPrayersArray,
+  ],
+  [Prefix.massStJohn, "MassStJohnPrayersArray", () => MassStJohnPrayersArray],
+  [Prefix.doxologies, "DoxologiesPrayersArray", () => DoxologiesPrayersArray],
+  [Prefix.communion, "CommunionPrayersArray", () => CommunionPrayersArray],
+  [Prefix.fractionPrayer, "FractionsPrayersArray", () => FractionsPrayersArray],
+  [
+    Prefix.cymbalVerses,
+    "CymbalVersesPrayersArray",
+    () => CymbalVersesPrayersArray,
+  ],
+  [
+    Prefix.bookOfHours,
+    "BookOfHoursPrayersArray",
+    () => BookOfHoursPrayersArray,
+  ],
+  [Prefix.HolyWeek, "HolyWeekPrayersArray", () => HolyWeekPrayersArray],
+  [Prefix.incenseDawn, "IncensePrayersArray", () => IncensePrayersArray],
+  [Prefix.incenseVespers, "IncensePrayersArray", () => IncensePrayersArray],
+  [Prefix.commonIncense, "IncensePrayersArray", () => IncensePrayersArray],
+  [
+    Prefix.gospelMass,
+    "ReadingsArrays.GospelMassArray",
+    () => ReadingsArrays.GospelMassArray,
+  ],
+  [
+    Prefix.gospelDawn,
+    "ReadingsArrays.GospelDawnArray",
+    () => ReadingsArrays.GospelDawnArray,
+  ],
+  [
+    Prefix.gospelVespers,
+    "ReadingsArrays.GospelVespersArray",
+    () => ReadingsArrays.GospelVespersArray,
+  ],
+  [
+    Prefix.gospelNight,
+    "ReadingsArrays.GospelNightArray",
+    () => ReadingsArrays.GospelNightArray,
+  ],
+  [
+    Prefix.stPaul,
+    "ReadingsArrays.StPaulArray",
+    () => ReadingsArrays.StPaulArray,
+  ],
+  [
+    Prefix.katholikon,
+    "ReadingsArrays.KatholikonArray",
+    () => ReadingsArrays.KatholikonArray,
+  ],
+  [
+    Prefix.praxis,
+    "ReadingsArrays.PraxisArray",
+    () => ReadingsArrays.PraxisArray,
+  ],
+
+  [
+    Prefix.synaxarium,
+    "ReadingsArrays.SynaxariumArray",
+    () => ReadingsArrays.SynaxariumArray,
+  ],
+  [
+    Prefix.propheciesDawn,
+    "ReadingsArrays.PropheciesDawnArray",
+    () => ReadingsArrays.PropheciesDawnArray,
+  ],
+  [Prefix.psalmody, "PsalmodyPrayersArray", () => PsalmodyPrayersArray],
 ];

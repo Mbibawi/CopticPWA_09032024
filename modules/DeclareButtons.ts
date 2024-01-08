@@ -426,7 +426,7 @@ const btnIncenseDawn: Button = new Button({
     })();
 
     (async function addExpandableBtnForAdamDoxolgies() {
-      if (btn.btnID !== btnIncenseDawn.btnID) return;
+      if (btn !== btnIncenseDawn) return;
       if (btnDocFragment.children.length === 0) return;
 
       addExpandablePrayer({
@@ -436,14 +436,11 @@ const btnIncenseDawn: Button = new Button({
           AR: "ذكصولوجيات باكر آدام",
           FR: "Doxologies Adam Aube",
         },
-        prayers: DoxologiesPrayersArray.filter((table) =>
-          table[0][0].startsWith(Prefix.doxologies + "AdamDawn")
+        prayers: DoxologiesPrayersArray
+          .filter(table => table[0][0].startsWith(Prefix.doxologies + "AdamDawn")
         ),
         languages: btnIncenseDawn.languages,
       })[1];
-
-      //finally we append the newDiv to containerDiv
-      //btnIncenseDawn.docFragment.children[1].insertAdjacentElement('beforebegin', doxologiesDiv)
     })();
   },
 });
@@ -1112,7 +1109,7 @@ const btnMassUnBaptised: Button = new Button({
       if (!stMary) return;
       
       insertPrayersAdjacentToExistingElement({
-        tables: seasonalIntercessions.reverse(),
+        tables: getUniqueValuesFromArray(seasonalIntercessions.reverse()) as string[][][],
         languages: getLanguages(getArrayNameFromArray(MassCommonPrayersArray)),
         position: {
           beforeOrAfter: 'afterend',
@@ -1160,7 +1157,7 @@ const btnMassUnBaptised: Button = new Button({
   
       })();
       
-      (function insertSpecialResponse() {
+      (function insertSpecialPraxisResponse() {
         let response: string[][][] =
           PraxisResponsesPrayersArray
             .filter(table =>
@@ -1187,7 +1184,7 @@ const btnMassUnBaptised: Button = new Button({
 
         //We insert the special response between the first and 2nd rows
         insertPrayersAdjacentToExistingElement({
-          tables: response,
+          tables: getUniqueValuesFromArray(response) as string[][][],//We remove duplicates if any
           languages: prayersLanguages,
           position: {
             beforeOrAfter: "beforebegin",
@@ -1588,8 +1585,7 @@ const btnReadingsGospelIncenseVespers: Button = new Button({
   showPrayers: true,
   onClick: () => {
     btnReadingsGospelIncenseDawn.onClick(
-      Prefix.gospelVespers,
-      ReadingsArrays.GospelVespersArray)
+      Prefix.gospelVespers)
   },
 });
 
@@ -1601,17 +1597,22 @@ const btnReadingsGospelIncenseDawn: Button = new Button({
     EN: "Gospel Dawn",
   },
   showPrayers: true,
-  onClick: (
-    gospelPrefix: string = Prefix.gospelDawn,
-    gospelArray: string[][][] = ReadingsArrays.GospelDawnArray) => {
+  onClick: (gospelPrefix: string = Prefix.gospelDawn) => {
+
+    let prayersArray: [string, string, Function] = PrayersArraysKeys.find(entry => entry[0] === gospelPrefix);
+
+    if(!prayersArray) return;
+    
     containerDiv.innerHTML = '';
+
+    
   getGospelReadingAndResponses(
    {
       liturgy: gospelPrefix,
       btn:
       {
-      prayersArray: gospelArray,
-      languages: getLanguages(PrayersArraysKeys.find(array=>array[0]===gospelPrefix)[1])
+      prayersArray: prayersArray[2](),
+      languages: getLanguages(prayersArray[1])
       },
       container:containerDiv,
       isMass:false,
@@ -1660,8 +1661,7 @@ const btnDayReadings: Button = new Button({
     FR: "Lectures du jour",
     EN: "Day's Readings",
   },
-  onClick: (
-    args: { returnBtnChildren?: boolean } = { returnBtnChildren: false }
+  onClick: (args: { returnBtnChildren?: boolean } = { returnBtnChildren: false }
   ) => {
 
     //We set the button's children
@@ -2395,6 +2395,23 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
   if (!btn.docFragment)
     return console.log("btn.docFragment is undefined = ", btn.docFragment);
 
+  let feast: string[] =  (() => {
+    let feast: string[]=[];
+      let relevant: [string, string] =
+        Object.entries(copticFeasts)
+          .find(entry =>
+            [copticDate, copticReadingsDate].includes(entry[1])); //We check if today is a feast. We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
+    
+    if (relevant) feast.push(relevant[1]);//We push the date
+
+    relevant = Object.entries(Seasons).find(entry => entry[1] === Season);//We check also for the season
+
+    if(Season !==Seasons.NoSeason) feast.push(Season); //We also push the Season
+    
+      if (feast.length>0) return getUniqueValuesFromArray(feast) as string[];
+  })();
+  
+
   (async function InsertCymbalVerses() {
     let cymbalsPlaceHolder: HTMLElement = selectElementsByDataRoot(
       btn.docFragment,
@@ -2415,45 +2432,15 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
     if (todayDate.getDay() > 2)
       sequence[0] = sequence[0].replace("Wates&D", "Adam&D");
 
-    let feast: [string, string];
+    if(feast) insertFeastInSequence(sequence, feast, 1);
 
-    feast =
-      Object.entries(copticFeasts)
-        .find(entry =>
-          [copticDate, copticReadingsDate].includes(entry[1])); //We check if today is a feast. We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
-
-    if (!feast)
-      feast =
-        Object.entries(Seasons)
-          .find(entry => entry[1] === Season);
-    
-    if (feast) insertFeastInSequence(sequence, feast[1], 1);
-
-    let cymbals: string[][][] = [];
-    let cymbalTable: string[][];
-
-    sequence
-      .map(cymbalsTitle => {
-        if (cymbalsTitle.startsWith("&Insert="))
-        //i.e., if this is the placeholder element that we inserted for the current feast or Season
-        cymbalTable =
-          CymbalVersesPrayersArray
-            .find(tbl =>
-            selectFromMultiDatedTitle(tbl[0][0], cymbalsTitle.split("&Insert=")[1]
-          ));
-      else
-        cymbalTable = findTableInPrayersArray(
-          cymbalsTitle,
-          CymbalVersesPrayersArray,
-          { equal: true }
-        ) as string[][];
-
-      if (cymbalTable) cymbals.push(cymbalTable);
-    });
-    if (cymbals.length < 1) return console.log("cymbals= ", cymbals);
+   
+    let cymbals: string[][][] = processSequence(sequence, CymbalVersesPrayersArray);
+   
+    if (cymbals.length < 1) return console.log("no cymbals were found by the provided sequence: ", sequence);
 
     insertPrayersAdjacentToExistingElement({
-      tables: cymbals,
+      tables: getUniqueValuesFromArray(cymbals) as string[][][],
       languages: btn.languages,
       position: {
         beforeOrAfter: "beforebegin",
@@ -2486,69 +2473,30 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
       Prefix.doxologies + "EndOfDoxologiesWates&D=$copticFeasts.AnyDay",
     ];
 
-    if (btn.btnID === btnIncenseVespers.btnID)
+    if (btn === btnIncenseVespers)
       sequence[0] = sequence[0].replace("Dawn", "Vespers");
 
-    let feast: [string, string];
-    //if the copticDate is a feast
-
-    let excludeFeast = [
+    let excludedFeasts = [
       saintsFeasts.StMaykel,
       saintsFeasts.StMarc,
       saintsFeasts.StGeorge,
       saintsFeasts.StMina,
-    ]; //Those saints feast will be excluded because the doxologies of those saints are included by default
+    ]; //Those saints feast will be excluded because the doxologies of those saints are already included by default
 
-    if (excludeFeast.indexOf(copticDate) < 0)
-      feast = Object.entries(saintsFeasts).find(
-        (entry) => entry[1] === copticDate
-      );
 
-    if (feast) insertFeastInSequence(sequence, feast[1], 1);
-
-    if (excludeFeast.indexOf(copticDate) > 0) {
+    if (excludedFeasts.includes(copticDate)) {
       //If today is the feast of the saints included in excludeFeast. ! Notice that we start from 1 not from 0 because 0 is St. Maykel feast and it is already the first doxology in the saints doxologies
 
-      let doxologyIndex = excludeFeast.indexOf(copticDate) + 2;
-      sequence.splice(2, 0, sequence[doxologyIndex]); //We insert the doxology after St. Maykel doxology
-      sequence.splice(doxologyIndex + 1, 1); //We remove the original doxolgoy from the sequence
+      let doxologyIndex = excludedFeasts.indexOf(copticDate) + 2;
+      sequence.splice(2, 0, sequence[doxologyIndex]); //We insert the doxology after St. Maykel's doxology
+      sequence.splice(doxologyIndex + 1, 1); //We remove the original doxology from the sequence
     }
 
-    feast = Object.entries(copticFeasts).find(
-      (entry) => entry[1] === copticDate
-    );
-    //Else if the copticReadingsDate is a feast
+    if (feast && !excludedFeasts.find(f=>feast.includes(f))) insertFeastInSequence(sequence, feast, 1);
 
-    if (!feast)
-      feast = Object.entries(copticFeasts).find(
-        (entry) => entry[1] === copticReadingsDate
-      );
-
-    if (!feast)
-      feast = Object.entries(Seasons).find((entry) => entry[1] === Season);
-
-    if (feast) insertFeastInSequence(sequence, feast[1], 0);
-
-    let doxologies: string[][][] = [];
-
-    sequence.map((doxologyTitle) => {
-      if (doxologyTitle.startsWith("&Insert="))
-        DoxologiesPrayersArray
-          //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
-          .filter((tbl) =>
-            selectFromMultiDatedTitle(
-              tbl[0][0],
-              doxologyTitle.split("&Insert=")[1]
-            )
-          )
-          .forEach((doxology) => doxologies.push(doxology));
-      else
-        doxologies.push(
-          findTableInPrayersArray(doxologyTitle, DoxologiesPrayersArray, {
-            equal: true,
-          }) as string[][]
-        );
-    });
+    let doxologies: string[][][] =
+      processSequence(sequence, DoxologiesPrayersArray);
+    
 
     if (doxologies.length === 0)
       return console.log("Did not find any relevant doxologies");
@@ -2565,11 +2513,10 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
           .filter((tbl) => !tbl[0][0].includes("Sundays"));
     }
 
-    if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2)
-      doxologies.splice(1, 6); //This is in order to remove the repetitive doxologies
+
 
     insertPrayersAdjacentToExistingElement({
-      tables: doxologies,
+      tables: getUniqueValuesFromArray(doxologies) as string[][][],
       languages: btn.languages,
       position: {
         beforeOrAfter: "beforebegin",
@@ -2577,25 +2524,61 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
       },
       container: btn.docFragment,
     });
+
   })();
   /**
    * Inserts a new element in the btn.prayersSequence[]. This elment will serve as a placeholder to insert the relevant prayers (Cymbal Verses or Doxologies) for the current season or feast
    * @param {string[]} sequence - the btn's prayers sequence in which the new placeholder element will be inserted
-   * @param {string} feastString - the string representing the feast or the season
+   * @param {string} feastDate - the string representing the feast or the season
    * @param {number} index - the index at which the new placeholder element will be inserted.
    */
   function insertFeastInSequence(
     sequence: string[],
-    feastString: string,
+    feastDates: string[],
     index: number
   ) {
-    if (
-      !lordFeasts.includes(feastString) &&
-      Season !== Seasons.PentecostalDays
-    )
-      sequence.splice(index, 0, "&Insert=" + feastString);
-    else sequence.splice(index, 1, "&Insert=" + feastString);
-  }
+    feastDates
+      .forEach(feastDate => {
+        if (
+          !lordFeasts.includes(feastDate) &&
+          Season !== Seasons.PentecostalDays
+        )
+          sequence.splice(index, 0, "&Insert=" + feastDate);
+        else sequence.splice(index, 1, "&Insert=" + feastDate);
+      });
+
+    }
+
+/**
+ * Searchs in tablesArray for the tables matching each title in sequence, which is a string[] of titles, and returns a string[][][] of the tables found in the
+ * @param {string[]} sequence - An arry of titles that we will be looking for tables matching each of them in tablesArray[][] 
+ * @param {string[][][]} tablesArray - The array containg the text tables in which we will be looking for the tables[][] having titles matching the titles in sequence[] 
+ * @returns {string[][][]} - an array of the tables[][] found
+ */
+  function processSequence(sequence: string[], tablesArray: string[][][]) {
+    let tables:string[][][] =[]
+    
+    sequence
+      .map(title => {
+        if (title.startsWith("&Insert="))
+          tablesArray
+            //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
+            .filter(tbl =>
+              selectFromMultiDatedTitle(
+                tbl[0][0],
+                title.split("&Insert=")[1]
+              )
+            )
+            .forEach(tbl => tables.push(tbl));
+        else
+          tables.push(
+            findTableInPrayersArray(title, tablesArray, {   equal: true}) as string[][]
+          );
+        
+      });
+
+      return tables;
+    }
 }
 
 async function removeElementsByTheirDataRoot(
