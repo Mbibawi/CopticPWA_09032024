@@ -23,7 +23,7 @@ type typeButton = {
   any?: any;
 };
 //CONSTANTS
-const version: string = "v5.2.2 (Substantial restructring and changes to the function which checks the special Seasons and dates. )";
+const version: string = "v5.2.3 (Fixes to the Unbaptized Mass and to the Fractions)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -567,6 +567,7 @@ const PrayersArraysKeys: [string, string, string[][][]][] = [
   [Prefix.massStJohn, "MassStJohnPrayersArray", MassStJohnPrayersArray],
   [Prefix.doxologies, "DoxologiesPrayersArray", DoxologiesPrayersArray],
   [Prefix.communion, "CommunionPrayersArray", CommunionPrayersArray],
+  [Prefix.fractionPrayer, "FractionsPrayersArray", FractionsPrayersArray],
   [Prefix.cymbalVerses, "CymbalVersesPrayersArray", CymbalVersesPrayersArray],
   [Prefix.bookOfHours, "BookOfHoursPrayersArray", BookOfHoursPrayersArray],
   [Prefix.HolyWeek, "HolyWeekPrayersArray", HolyWeekPrayersArray],

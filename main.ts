@@ -2213,7 +2213,9 @@ async function showMultipleChoicePrayersButton(args: {
    */
   async function createInlineBtns() {
     let btns: Button[] = [];
-    btns = args.filteredPrayers.map((prayerTable) => {
+    btns =
+      args.filteredPrayers
+        .map(prayerTable => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
@@ -2930,7 +2932,7 @@ function insertPrayersAdjacentToExistingElement(args: {
 }): HTMLElement[][] {
   if (!args.tables) return;
   if (!args.container) args.container = containerDiv;
-
+  
   return args.tables
     .map(table => {
     if (!table || table.length === 0) return;

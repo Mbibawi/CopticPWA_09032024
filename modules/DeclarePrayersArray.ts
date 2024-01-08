@@ -5273,7 +5273,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmResponse+"&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.psalmResponse+"&D=$Seasons.Nativity&C=Title", 
   "", 
   "Réponse du Psaume Fête de la Nativité", 
   "", 
@@ -9836,7 +9836,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$copticFeasts.Nativity||$Seasons.NativityFast||$Seasons.Kiahk||$copticFeasts.anyDay&C=Title", 
+  Prefix.fractionPrayer+"&D=$Seasons.Nativity||$Seasons.NativityFast||$Seasons.Kiahk||$copticFeasts.anyDay&C=Title", 
   "", 
   "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)", 
   "", 
@@ -10892,7 +10892,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.communion+"Chant&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.communion+"Chant&D=$Seasons.Nativity&C=Title", 
   "Chant de communion pour la fête de la Nativité", 
   " في توزيع عيد الميلاد مديحة أَنا أفتح فاي بمجد اللّه", 
   ],
@@ -11040,7 +11040,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.Nativity&C=Title", 
   "", 
   "Quatrins du carillon pour la Nativité", 
   "", 
@@ -11427,7 +11427,7 @@ PrayersArray= [[
   ],
   [
   Prefix.placeHolder, 
-  Prefix.cymbalVerses+"&D=$copticFeasts.Nativity", 
+  Prefix.cymbalVerses+"&D=$Seasons.Nativity", 
   ],
   [
   Prefix.placeHolder, 
@@ -11515,7 +11515,7 @@ PrayersArray= [[
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"&D=$copticFeasts.Nativity", 
+  Prefix.doxologies+"&D=$Seasons.Nativity", 
   ],
   [
   Prefix.placeHolder, 
@@ -12264,24 +12264,24 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$copticFeasts.Nativity", 
+  Prefix.doxologies+"&D=$Seasons.Nativity", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"1&D=$copticFeasts.Nativity", 
+  Prefix.doxologies+"1&D=$Seasons.Nativity", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"2&D=$copticFeasts.Nativity", 
+  Prefix.doxologies+"2&D=$Seasons.Nativity", 
   ],
   [
   Prefix.placeHolder, 
-  Prefix.doxologies+"3&D=$copticFeasts.Nativity", 
+  Prefix.doxologies+"3&D=$Seasons.Nativity", 
   ],
   ],
   [
   [
-  Prefix.doxologies+"1&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.doxologies+"1&D=$Seasons.Nativity&C=Title", 
   "", 
   "1ère Doxologie pour la Nativité", 
   "", 
@@ -12357,7 +12357,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"2&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.doxologies+"2&D=$Seasons.Nativity&C=Title", 
   "", 
   "2ème Doxologie pour la Nativité", 
   "", 
@@ -12394,7 +12394,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"3&D=$copticFeasts.Nativity&C=Title", 
+  Prefix.doxologies+"3&D=$Seasons.Nativity&C=Title", 
   "", 
   "3ème Doxologie pour la Nativité", 
   "", 
@@ -19581,7 +19581,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=copticFeasts.Nativity||$Seasons.Nativity&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.Nativity&C=Title", 
   "", 
   "Nativité", 
   "", 

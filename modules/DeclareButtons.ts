@@ -1279,7 +1279,7 @@ const btnMassUnBaptised: Button = new Button({
         ].includes(copticReadingsDate)
       )
         //In these feasts we don't pray any hour
-        return;
+        return alert('We do not pray the Book of Hours prayers on the Ressurection, Nativity (Kiahk 29th), and Baptism (Toubi 11th) feasts\' masses');
 
       let hoursBtns: Button[] = btnBookOfHours.onClick(true); //We get buttons for the relevant hours according to the day
       if (!hoursBtns) return;
@@ -1561,7 +1561,8 @@ const btnMassUnBaptised: Button = new Button({
     //Collapsing all the Titles
     collapseAllTitles(Array.from(btnDocFragment.children) as HTMLDivElement[]);
 
-    btnDocFragment.getElementById("masterBOHBtn").classList.toggle(hidden); //We remove hidden from btnsDiv
+    let BOHMasterButton = btnDocFragment.getElementById("masterBOHBtn");
+    if(BOHMasterButton) BOHMasterButton.classList.toggle(hidden); //We remove hidden from btnsDiv
   }
 });
 
@@ -2307,7 +2308,7 @@ function showFractionPrayersMasterButton(
 ) {
   let filtered: Set<string[][]> = new Set();
 
-  if (Number(copticDay) === 29 && Number(copticMonth) !== 4)
+  if (Number(copticDay) === 29 && ![4,5,6].includes(Number(copticMonth)))
     filterPrayersArray(copticFeasts.Coptic29th, prayersArray, filtered); //We start by adding the fraction of the 29th of each coptic month if we are on the 29th of the month
   //console.log('filteredSet = ', filtered)
 
@@ -2322,9 +2323,12 @@ function showFractionPrayersMasterButton(
     prayersArray: string[][][],
     filtered: Set<string[][]>
   ) {
-    prayersArray.map((table) => {
+    prayersArray
+      .map(table => {
+      if (!table) return;
       if (
-        selectFromMultiDatedTitle(table[0][0], date) === true &&
+        selectFromMultiDatedTitle(table[0][0], date) === true
+        &&
         !filtered.has(table)
       )
         filtered.add(table);
@@ -2413,31 +2417,30 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
 
     let feast: [string, string];
 
-    feast = Object.entries(copticFeasts).find(
-      (entry) => entry[1] === copticDate
-    ); //We check if today is a feast
+    feast =
+      Object.entries(copticFeasts)
+        .find(entry =>
+          [copticDate, copticReadingsDate].includes(entry[1])); //We check if today is a feast. We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
 
     if (!feast)
-      feast = Object.entries(copticFeasts).find(
-        (entry) => entry[1] === copticReadingsDate
-      ); //We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
-
-    if (!feast)
-      feast = Object.entries(Seasons).find((entry) => entry[1] === Season);
+      feast =
+        Object.entries(Seasons)
+          .find(entry => entry[1] === Season);
+    
     if (feast) insertFeastInSequence(sequence, feast[1], 1);
 
     let cymbals: string[][][] = [];
     let cymbalTable: string[][];
 
-    sequence.map((cymbalsTitle) => {
-      if (cymbalsTitle.startsWith("&Insert="))
+    sequence
+      .map(cymbalsTitle => {
+        if (cymbalsTitle.startsWith("&Insert="))
         //i.e., if this is the placeholder element that we inserted for the current feast or Season
-        cymbalTable = CymbalVersesPrayersArray.find((tbl) =>
-          selectFromMultiDatedTitle(
-            tbl[0][0],
-            cymbalsTitle.split("&Insert=")[1]
-          )
-        );
+        cymbalTable =
+          CymbalVersesPrayersArray
+            .find(tbl =>
+            selectFromMultiDatedTitle(tbl[0][0], cymbalsTitle.split("&Insert=")[1]
+          ));
       else
         cymbalTable = findTableInPrayersArray(
           cymbalsTitle,
@@ -2587,7 +2590,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
     index: number
   ) {
     if (
-      lordFeasts.indexOf(feastString) < 0 &&
+      !lordFeasts.includes(feastString) &&
       Season !== Seasons.PentecostalDays
     )
       sequence.splice(index, 0, "&Insert=" + feastString);
