@@ -53,11 +53,8 @@ const MassPrayersSequences = {
         Prefix.massCommon+"Tayshoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"Tishoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon + "IntercessionsHymn&D=$copticFeasts.AnyDay", 
-        Prefix.praxisResponse+"PraxisResponse&D=$copticFeasts.AnyDay", 
         Prefix.massCommon + 'ReadingsPlaceHolder&D=&D=$copticFeasts.AnyDay',
-        Prefix.commonPrayer+"HolyGodHolyPowerfullPart1&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer + "GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"HolyGodHolyPowerfullPart2&D=$copticFeasts.AnyDay", 
+        Prefix.commonPrayer+"HolyGodHolyPowerfull&D=$copticFeasts.AnyDay", 
         Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"GospelPrayerPlaceHolder&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"Creed&D=$copticFeasts.AnyDay"

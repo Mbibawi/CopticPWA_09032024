@@ -1131,34 +1131,20 @@ const btnMassUnBaptised: Button = new Button({
 
     (function insertPraxis() {
 
-      insertMassReading(Prefix.praxis, ReadingsArrays.PraxisArray, ReadingsIntrosAndEnds.praxisIntro, ReadingsIntrosAndEnds.praxisEnd);
+      (function insertPraxisResponse() {
+        //!Caution, we must start by inserting the Praxis Response before inserting the Praxis reading
 
-      let praxis = selectElementsByDataRoot(
-        btnDocFragment,
-        Prefix.praxis + '&D=' + copticReadingsDate,
-        { equal: true });
-      
-      if (!praxis) return console.log('Did not find the praxis elements inserted');
-
-      let annualResponse: HTMLElement[]; //This is the praxis response for any ordinary day (it is included by default)
-
-      (function moveAnnualResponseBeforePraxis() {
-        //Moving the annual response
-        annualResponse = selectElementsByDataRoot(
-          btnDocFragment,
-          Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay",
-          { equal: true });
-
-        if (!annualResponse || annualResponse.length === 0)
-          return console.log("error: annual = ", annualResponse);
-
-        annualResponse.forEach((htmlRow) =>
-          praxis[0].insertAdjacentElement("beforebegin", htmlRow));
-  
-      })();
-      
-      (function insertSpecialPraxisResponse() {
-        let response: string[][][] =
+        let annualResponseHTML: HTMLElement[] = insertPrayersAdjacentToExistingElement({
+            tables:[findTableInPrayersArray(Prefix.praxisResponse + "PraxisResponse&D=$copticFeasts.AnyDay", PraxisResponsesPrayersArray, {equal:true}) || undefined],
+            languages: getLanguages(PrayersArraysKeys.find(array=>array[2]() === PraxisResponsesPrayersArray)[1]),
+            position:{
+              beforeOrAfter:'beforebegin',
+              el: readingsAnchor,
+            },
+            container:btnDocFragment
+          })[0];
+       
+        let specialResponse: string[][][] =
           PraxisResponsesPrayersArray
             .filter(table =>
               selectFromMultiDatedTitle(table[0][0], copticDate)
@@ -1166,46 +1152,87 @@ const btnMassUnBaptised: Button = new Button({
               selectFromMultiDatedTitle(table[0][0], Season)
             );
 
-        if (!response || response.length === 0) return console.log('Did not find any specific praxis response');
+        if (specialResponse.length === 0)
+          return console.log('Did not find any specific praxis response');
         
         if (Season === Seasons.GreatLent) {
           //If a Praxis response was found
           // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
           if (todayDate.getDay() === 0 || todayDate.getDay() === 6)
-            response = [
-              response.find((table) => table[0][0].includes("Sundays&D=")),
+            specialResponse = [
+              specialResponse.find((table) => table[0][0].includes("Sundays&D=")),
             ];
           else
-            response = [
-              response.find((table) => table[0][0].includes("Week&D=")),
+            specialResponse = [
+              specialResponse.find((table) => table[0][0].includes("Week&D=")),
             ];
         }
 
-
-        //We insert the special response between the first and 2nd rows
-        insertPrayersAdjacentToExistingElement({
-          tables: getUniqueValuesFromArray(response) as string[][][],//We remove duplicates if any
+         //We insert the special response between the first and 2nd rows
+        let specialResponseHTML = insertPrayersAdjacentToExistingElement({
+          tables: getUniqueValuesFromArray(specialResponse) as string[][][],//We remove duplicates if any
           languages: prayersLanguages,
           position: {
             beforeOrAfter: "beforebegin",
-            el: annualResponse[2] //This is the 'Ek Esmaroot' part of the annual response
+            el: annualResponseHTML[2] //This is the 'Ek Esmaroot' part of the annual response
           },
           container: btnDocFragment,
         });
 
-        //We remove the annual response title row
-        annualResponse[0].remove();
-        annualResponse[1].remove();
-     
-        /*
-         !We need to check whether the 'Sheri Ni Maria' part should be kept or not. if so we will reinstate the code below
-        
-        //We remove the first row of the Annual response which is  'Sheri ni Maria' after the title of the specific response
-        annualResponse[1].nextElementSibling.insertAdjacentElement('afterend', annualResponse[1]) */
-      
+        //We move 'Sheri Ne Maria' after the title of the special response
+        specialResponseHTML[0][0].insertAdjacentElement("afterend", annualResponseHTML[1]);
+
+        //We remove the title of the annual response
+        annualResponseHTML[0].remove();
 
       })();
 
+      ///Then we insert the Praxis reading
+      insertMassReading(Prefix.praxis, ReadingsArrays.PraxisArray, ReadingsIntrosAndEnds.praxisIntro, ReadingsIntrosAndEnds.praxisEnd);
+    })();
+
+    (function insertSepcialAgiosIfFeast() {
+      let Agios: string,
+        oldAgios: HTMLElement[] = selectElementsByDataRoot(btnDocFragment, Prefix.commonPrayer+"HolyGodHolyPowerfull&D=$copticFeasts.AnyDay", { equal: true });
+      
+      if (!oldAgios || oldAgios.length < 1) return console.log('did not find Agios');
+
+
+      if (Season === Seasons.Nativity) Agios = "Agios&D=$Seasons.Nativity";
+      else if (Season === Seasons.PentecostalDays) Agios = "Agios&D=$Seasons.PentecostalDays"
+      else if (Season === Seasons.Baptism) Agios = "Agios&D=Seaons.Baptism"
+      else if (Season === Seasons.CrossFeast) Agios = "Agios&D=Seaons.CrossFeast"
+    
+      if (!Agios) return;
+      
+      Agios = Prefix.massCommon + Agios;
+
+      let AgiosTable = findTableInPrayersArray(Agios, MassCommonPrayersArray, { equal: true }) || undefined;
+
+      if (!AgiosTable) return console.log('Didn\'t find the special Agios table in PrayersArray');
+
+      if (Number(copticReadingsDate.split(Seasons.PentecostalDays)[1]) > 39) {
+        //We are between the Pentecoste & the Assumption feasts
+
+        let raisedAndAscended = findTableInPrayersArray(oldAgios[1].id, PrayersArray, { equal: true })[3] as string[];//This is the 3rd paragraph of the ordinary Agios Osios Hymn ('For He Raised and Ascended to the Heaveans'...etc.)
+
+        if (!raisedAndAscended) return;
+
+        for (let i = 1; i < 4; i++)
+          AgiosTable.splice(AgiosTable.length - i, 1, raisedAndAscended);
+      };
+
+      insertPrayersAdjacentToExistingElement({
+        tables: [AgiosTable],
+        languages: getLanguages(getArrayNameFromArray(MassCommonPrayersArray)),
+        position: {
+          beforeOrAfter: 'beforebegin',
+          el: oldAgios[0]
+        },
+        container: btnDocFragment
+      });
+
+      oldAgios.forEach(div => div.remove());
 
     })();
 
@@ -1234,23 +1261,9 @@ const btnMassUnBaptised: Button = new Button({
       introHTML.children[0].insertAdjacentElement('beforebegin', introHTML.children[1]);
     })();
 
-    (function insertPentecostalHymns() {
-      if (Season !== Seasons.PentecostalDays) return;
-      let hymns: string[][][] = PrayersArray.filter((table) =>
-        table[0][0].startsWith("PentecostalHymns&D=$Seasons.PentecostalDays")
-      );
-      if (hymns.length > 0) {
-        insertPrayersAdjacentToExistingElement({
-          tables: hymns,
-          languages: prayersLanguages,
-          position: {
-            beforeOrAfter: "beforebegin",
-            el: readingsAnchor,
-          },
-          container: btnDocFragment,
-        });
-      }
-    })();
+    
+    
+
 
     (function insertGospelReading() {
       getGospelReadingAndResponses(
@@ -2201,7 +2214,6 @@ async function getGospelReadingAndResponses(args: {
     console.log(date);
   }
   
-
   let gospel: string[][][] =
     args.btn.prayersArray
       .filter(table =>
@@ -2264,8 +2276,8 @@ async function getGospelReadingAndResponses(args: {
       let response: string[][] =
         PsalmAndGospelPrayersArray
           .find(tbl =>
-            tbl[0][0].startsWith(prayersSequence[index])); //we filter the PsalmAndGospelPrayersArray to get the relevant table
-  
+            splitTitle(tbl[0][0])[0] === prayersSequence[index]); //!Caution: this must be an '===' search operator not startWith() because otherwise, 'NativitayParamoun' will be selected for the 'Nativity' Season, and 'Baptism Paramoun' might be selected for the 'Baptism' Season if their tables in PrayersArray are before those of the relevant table
+      
       if (!response || response.length === 0) return;
   
       insertPrayersAdjacentToExistingElement({

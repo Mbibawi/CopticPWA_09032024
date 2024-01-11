@@ -3,6 +3,10 @@ let sequence: string[] = [];
  * This is the function that displayes the elements of the array that we want to edit
  * @param {HTMLSelectElement}  select - the selection element from which we selet the options
  * @param {boolean} clear - whether or not we should remove all the children of the containerDiv content
+ * @param {string} arrayNam - the name of the array where the text of the prayer will be searched for
+  *@param {string} tableTitle - the title of the table that we want to retrieve in order to edit
+  @param {string[][][]} tablesArray - the array where the table we want to edit will be looked for
+ * @param { {includes: boolean}|{equal:boolean } |{startsWith:boolean}} operator - This is the crieteria by which we will be looking for the table by the provides args.tableTitle. Its default value is {includes:true}
  */
 function startEditingMode(args: {
   select?: HTMLSelectElement,
@@ -10,7 +14,8 @@ function startEditingMode(args: {
   arrayName?: string,
   tableTitle?: string,
   tablesArray?: string[][][],
-  languages?:string[]
+  languages?: string[],
+  operator?: { includes: boolean }|{equal:boolean } |{startsWith:boolean}
 }) {
 
 
@@ -29,6 +34,8 @@ function startEditingMode(args: {
 
     else if (args.arrayName === args.select.options[2].innerText) return runFunction();
       //under development : the user will provide a function and the function will be called when he press enter
+
+    else if (args.arrayName === args.select.options[3].innerText)return editDayReadings(); //Editing all the readings of ta give Coptic Date
 
     else args.tablesArray = editSpecificTable() ||[];
   }
@@ -60,7 +67,7 @@ function startEditingMode(args: {
     args.tablesArray[0][0][0] +=  '&C=Title'; //We remove the '&C=Title' from the second row
   };
  
-  function editSpecificTable(arrayName:string=args.arrayName):string[][][]| void{
+  function editSpecificTable(arrayName: string = args.arrayName): string[][][] | void{
       if (!args.tableTitle //args.tableTitle was not already provided as argument
         && confirm('Do you want to edit a single or specific table(s) in the array?'))
         args.tableTitle = prompt('Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " ');
@@ -80,7 +87,7 @@ function startEditingMode(args: {
         findTableInPrayersArray(
           title,
           args.arrayName? eval(args.arrayName): undefined,
-          { includes: true })||undefined);
+          args.operator||{includes:true})||undefined);
   };
 
   function runFunction() {
@@ -122,13 +129,14 @@ function showTables(args: {
     if (args.clear === true) containerDiv.innerHTML = '';
   //We create an html div element to display the text of each row of each table in tablesArray
 
-  let titleBase: string, arrayName: string;
+  let titleBase: string, arrayName: string, prayersArray:string[][][];
   
   args.tablesArray
     .forEach(table => {
       if (!table) return;
       titleBase = splitTitle(table[0][0])[0] || 'NoTitle';
-      arrayName = getArrayNameFromArray(getTablesArrayFromTitlePrefix(titleBase));
+      prayersArray = getTablesArrayFromTitlePrefix(titleBase);
+      PrayersArrays.includes(prayersArray)? arrayName = 'PrayersArray' : arrayName = getArrayNameFromArray(prayersArray); //If the array of tables that includes the table is one of the arrays in the 'PrayersArrays' list, we set the arrayName to 'PrayersArray', or otherwise, we retrieve its name from the PrayersArraysKeys by calling getArrayNameFromArray(prayersArray)
       if (!arrayName && confirm('We could not infer the name of the array from the title of the table, do you want to set it to \"PrayersArray?\"')) arrayName = 'PrayersArray';
       if (!arrayName) return console.log('The name of the array is missing');
     
@@ -362,8 +370,16 @@ function saveModifiedArray(args: {
       if (!htmlRow) return; //This will happen if the row was row of a table referrenced by a placeholder, that was later on hidden when the click() event of the placeholder row was triggered (see below)
        
       if (htmlRow.dataset.isPlaceHolder) {
-        saveModifiedArray({exportToFile:false, exportToStorage: true, dataRoot: htmlRow.dataset.isPlaceHolder });
-        args.htmlRows.filter(div => !div.dataset.isPlaceHolder && div.dataset.root && div.dataset.root === htmlRow.dataset.isPlaceHolder).forEach(div => div.remove())
+        saveModifiedArray({
+          exportToFile: false,
+          exportToStorage: true,
+          dataRoot: htmlRow.dataset.isPlaceHolder
+        });
+        args.htmlRows
+          .filter(div =>
+            !div.dataset.isPlaceHolder
+            && div.dataset.root
+            && div.dataset.root === htmlRow.dataset.isPlaceHolder).forEach(div => div.remove())//We remove all the html elements that were created to show the rows of the table referenced by the 'PlaceHolder' element.
         return;
       };
         
@@ -377,6 +393,8 @@ function saveModifiedArray(args: {
       if (!savedArrays.has(htmlRow.dataset.arrayName)) savedArrays.add(htmlRow.dataset.arrayName);
 
       tablesArray = eval(htmlRow.dataset.arrayName);
+
+      if (PrayersArrays.includes(tablesArray)) tablesArray = PrayersArray;//If the array is one of the arrays in PrayersArrays, the Array that need to be saved is Prayers Array not the sub array itself
       
       if (!tablesArray) return console.log('We\'ve got a problem while executing saveOrExportArray(): title = ', title, ' and arrayName = ', htmlRow.dataset.arrayName);
 
@@ -387,8 +405,7 @@ function saveModifiedArray(args: {
   
   //We finally save or export each array in the savedArrays
   savedArrays
-    .forEach(arrayName => saveOrExportArray(arrayName, args.exportToFile, args.exportToStorage));
-  
+    .forEach(arrayName => saveOrExportArray(eval(arrayName), arrayName, args.exportToFile, args.exportToStorage));
 };
 
     /**
@@ -433,11 +450,15 @@ function saveModifiedArray(args: {
  * @param {boolean} exportToStorage - if true the array is saved in localStorage.editedText. Its default value is true
  * @param {boolean} exportToFile - if true the array text is export as a JS file. Its default value is true
  */
-function saveOrExportArray(arrayName: string, exportToFile:boolean = true, exportToStorage:boolean =true) {
+function saveOrExportArray(tablesArray: string[][][], arrayName:string, exportToFile:boolean = true, exportToStorage:boolean =true) {
   let text: string;
+
+  if (!tablesArray) return console.log('tablesArray is undefined:  ', tablesArray);
+   
+  if (!arrayName) return console.log('No array nam is provided');
  console.log("modified array = ", arrayName);
   
-text = processArrayTextForJsFile(arrayName);
+text = processArrayTextForJsFile(arrayName, tablesArray);
 
 if (!text) return console.log('We\'ve got a problem when we called processArrayTextForJsFile().  arrayName = ', arrayName);
 
@@ -455,7 +476,7 @@ if (!text) return console.log('We\'ve got a problem when we called processArrayT
  * @param {string[][][]} tablesArray - the string[][][] that will be processed and returned as a text the js file
  * @return {string} the text representing the array in a js file
  */
-function processArrayTextForJsFile(arrayName:string, tablesArray?: string[][][]): string {
+function processArrayTextForJsFile(arrayName:string, tablesArray: string[][][]): string {
   //Open Array of Tables
   if (!tablesArray) tablesArray = eval(arrayName);
   if (!tablesArray) return;
@@ -889,12 +910,12 @@ function addConsoleSaveMethod(console) {
  * @param filename 
  * @returns 
  */
-function createJsFile(data:Object | string, filename:string) {
+function createJsFile(data: Object | string, filename: string) {
   if (!data) {
     console.error("Console.save: No data");
     return;
   }
-  if (!filename) filename = "PrayersArrayModifiedd";
+  if (!filename) filename = "PrayersArrayModified";
 
   if (typeof data === "object") {
     data = JSON.stringify(data, undefined, 4);
@@ -989,8 +1010,9 @@ function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
  * @param {string} arrayName - the name of a string[][][], for which we will return the languages corresponding to it
  * @returns {string[]} - an array of languages
  */
-function getLanguages(arrayName):string[] {
+function getLanguages(arrayName): string[] {
   let languages:string[] = prayersLanguages;
+  if (!arrayName) return languages;
   if (arrayName.startsWith('ReadingsArrays.')) languages = readingsLanguages;
   if (arrayName.startsWith('ReadingsArrays.SynaxariumArray')) languages = ['FR', 'AR'];
   if (arrayName === 'NewTable') languages = ['COP', 'FR', 'EN', 'CA', 'AR'];
@@ -1036,10 +1058,12 @@ function goToTableByTitle() {
 
   title = prompt('Provide the title you want to go to. If you want to show the readings of a given day, you provide the date of the readings in this format\"ReadignsDate = [date]\"', title);
 
-  if (title.startsWith('ReadingsDate = ')) {
-    editDayReadings(title.split('ReadingsDate = ')[1]);
-    return;
-  };
+  if (confirm('Do you want to edit the readings of a given date?')) {
+    let date = prompt('Provide the Coptic date as DDMM of the readings you want to edit');
+    if (!date) return;
+    return editDayReadings(date);
+  }
+
 
   let rows: HTMLElement[] =
     Array.from(
@@ -1104,17 +1128,42 @@ function reArangeTablesColumns(tblTitle: string, arrayName: string) {
     row.splice(1, 0, '');
     row.splice(1, 0, '');
   });
-  exportToJSFile(processArrayTextForJsFile(arrayName, array),arrayName);
+  exportToJSFile(processArrayTextForJsFile(arrayName, array), arrayName);
 }
 
 function editDayReadings(date?: string) {
   if (date) saveModifiedArray({exportToFile:true, exportToStorage:true});
 
-  if (!date) date = prompt('Provide the date as DDMM');
+  if (!date) date = prompt('Provide the Coptic date as DDMM of the readings you want to edit');
 
   if (!date) return;
   
+  let readings: string[][][] = [];
+
+  Object.entries(ReadingsArrays)
+    .forEach(readingArray =>
+      readingArray[1]
+        .filter(tbl =>
+          tbl[0][0].includes(date))//!This must be a filter not a find operation because the Gospel Psalm and the Gospel itself for a given day are in 2 separate tables
+        .forEach(tbl => readings.push(tbl))
+    );
+  if (readings.length < 1) return;
+
   containerDiv.innerHTML = '';
+  let tblTitle: string;
+  readings
+    .forEach(tbl => {
+      if (!tbl) return;
+      tblTitle = splitTitle(tbl[0][0])[0];
+      startEditingMode({
+        tableTitle: tblTitle,
+        arrayName:PrayersArraysKeys.find(array=>tblTitle.startsWith(array[0]))[1],
+        clear: false,
+        operator:{equal:true}
+      })
+  })
+  
+
   for (let arrayName in ReadingsArrays) {
     ReadingsArrays[arrayName]
       .filter(table => table[0][0].includes(date))

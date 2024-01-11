@@ -178,7 +178,7 @@ function createHtmlElementForPrayer(args: {
       e.preventDefault;
       collapseOrExpandText({ titleRow: htmlRow });
     }); //we also add a 'click' eventListener to the 'Title' elements
-    htmlRow.id = args.titleBase + args.tblRow[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
+    htmlRow.id = splitTitle(args.tblRow[0])[0]; //we add an id to all the titles in order to be able to retrieve them for the sake of adding a title shortcut in the titles right side bar
   }
 
   //looping the elemparams.ents containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
@@ -216,6 +216,7 @@ function createHtmlElementForPrayer(args: {
           getTablesArrayFromTitlePrefix(htmlRow.dataset.root)
         ),
         tableTitle: htmlRow.dataset.root,
+        operator:{equal:true} //!We need to look for the table by the exact title beacause some titles like 'NativityParamoun' or 'BaptismParamoun' may be retrieved if the Season is 'Nativity' or 'Baptism'
       });
     });
     htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
@@ -264,7 +265,9 @@ async function showTitlesInRightSideBar(
   } //we empty the side bar
   let bookmark: HTMLAnchorElement;
 
-  titlesArray = titlesCollection.map((titleRow) => {
+  titlesArray =
+    titlesCollection
+    .map(titleRow => {
     titleRow.id += titlesCollection.indexOf(titleRow).toString();
     return addTitle(titleRow);
   });
@@ -927,7 +930,7 @@ function getEditModeButton(): Button{
         "Choose from the list",
         "NewTable",
         'Fun("arrayName", "Table\'s Title")',
-        "testEditingArray",
+        "Edit Day Readings",
         "PrayersArray",
         "ReadingsArrays.GospelDawnArray",
         "ReadingsArrays.GospelMassArray",
@@ -1790,7 +1793,8 @@ async function setCSS(htmlRows: HTMLElement[]) {
   let plusSign = String.fromCharCode(plusCharCode),
     minusSign = String.fromCharCode(plusCharCode + 1);
 
-  htmlRows.forEach((row) => {
+  htmlRows
+    .forEach(row => {
     if (row.children.length === 0) row.classList.add(hidden); //If the row has no children, it means that it is a row created as a name of a table or as a placeholder. We will hide the html element
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
     row.style.gridTemplateColumns = setGridColumnsOrRowsNumber(row);
@@ -2350,16 +2354,13 @@ function findTableInPrayersArray(
     table = prayersArray.find(
       (tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].includes(tableTitle)
     );
-
-  if (table) return table;
-  else
-    console.log(
-      "no table with the provided title was found : ",
-      tableTitle,
-      " prayersArray =",
-      prayersArray
-    );
-}
+    
+    if(!table)  return console.log(
+      "no table with the provided title was found : ", tableTitle,
+      " prayersArray =", PrayersArraysKeys.find(array => array[2]() === prayersArray)[1]);
+  
+  return table
+  }
 /**
  * Shows the inlineBtnsDiv
  * @param {string} status - a string that is added as a dataset (data-status) to indicated the context in which the inlineBtns div is displayed (settings pannel, optional prayers, etc.)
