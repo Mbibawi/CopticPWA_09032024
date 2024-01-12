@@ -431,16 +431,24 @@ function saveModifiedArray(args: {
     let editedTable: string[][] = convertHtmlDivElementsIntoArrayTable(htmlTable);
 
     if (!editedTable || editedTable.length < 1) return console.log('convertHtmlDivElementsIntoArrayTable() returned undefined, or empty aray');
+
+
+    [tablesArray, getTablesArrayFromTitlePrefix(htmlTable[0].dataset.root)]
+      .forEach(array => modifyTheMainAndSubArrays(array)); //We will modify the tabl in its main Array (retrieved by the arrayName argument, and any other sub array in which th etable might be also included (like PrayersArrays.massCommon, PrayersArrays.IncenseDawn, etc.));
     
-   
+    function modifyTheMainAndSubArrays(targetTablesArray: string[][][]) {
+      if (!targetTablesArray) return;
       let oldTable: string[][] =
-        tablesArray
+        targetTablesArray
         .find(tbl => splitTitle(tbl[0][0])[0] === splitTitle(editedTable[0][0])[0]);
         
-      if (oldTable) tablesArray.splice(tablesArray.indexOf(oldTable), 1, editedTable);
-          
+      if (oldTable) targetTablesArray.splice(targetTablesArray.indexOf(oldTable), 1, editedTable);
+        
       else if (confirm('No table with the same title was found in the array, do you want to add the edited table as a new table '))
-       tablesArray.push(editedTable);
+       targetTablesArray.push(editedTable);
+      
+    };
+          
   }
 };
 
@@ -728,14 +736,15 @@ function createHtmlElementForPrayerEditingMode(args: {
 
         let tableArrayName = getArrayNameFromArray(tblsArray);
 
-      let created =
-        [...tblsArray
+        let table = [...tblsArray
           .find(tbl => splitTitle(tbl[0][0])[0] === referrencedTblTitle)]//!Caution, we must create a copy of the table otherwise the original table may be reversed in it its array
-          .reverse()
-          .map((row, tbl) => {
+          .reverse();
+        
+        let created =
+          table.map(row => {
             return createHtmlElementForPrayerEditingMode({
               tblRow: row,
-              titleBase: splitTitle(tbl[0][0])[0],
+              titleBase: splitTitle(table[0][0])[0],
               languagesArray: copyLangs,
               position:{
                 el: htmlRow,

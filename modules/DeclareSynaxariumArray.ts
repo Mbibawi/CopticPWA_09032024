@@ -10074,7 +10074,7 @@ ReadingsArrays.SynaxariumArray= [[
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Il fait partie des sept diacres institués par les apôtres. Ceux-ci étaient estimés de tous, remplis d'Esprit Saint et de sagesse.[1] Il était apparenté à saint Etienne (إسطفانوس) l’archidiacre et le protomartyr (أول الشهداء) et accompagna saint Jean le théologien (et l’évangéliste) dans la plupart de ses voyages missionnaires aussi celui-ci l’institua évêque de de Nicomédie (نيقوميدية) en Bithynie. Il proclama aux habitants de cette ville la Foi en Jésus Christ et baptisa ceux qui crurent. Il dût subir de nombreux tourments à cause de son ministère et sa proclamation puis, après avoir accompli son bon combat, il décéda en paix. ", 
+    "Il fait partie des sept diacres institués par les apôtres. Ceux-ci étaient estimés de tous, remplis d'Esprit Saint et de sagesse. Il était apparenté à saint Etienne (إسطفانوس) l’archidiacre et le protomartyr (أول الشهداء) et accompagna saint Jean le théologien (et l’évangéliste) dans la plupart de ses voyages missionnaires aussi celui-ci l’institua évêque de de Nicomédie (نيقوميدية) en Bithynie. Il proclama aux habitants de cette ville la Foi en Jésus Christ et baptisa ceux qui crurent. Il dût subir de nombreux tourments à cause de son ministère et sa proclamation puis, après avoir accompli son bon combat, il décéda en paix. ", 
     "هو أحد الشمامسة السَبْعة الذين أقَامَهُمْ الرُسل، وشُهد لَهُمْ أنهم ممتلئون من الروح القدس والحكمة. وهو قريب القِدِّيسْ إسطفانوس رئيس الشمامسة وأوَّلْ الشُهداء. وقد صاحب القِدّيسْ يوحَنّا اللاهوتي في أغلب جولاته التبشيرية، فأقامه أسقفاً على مدينة نيقوميدية فبشَّر أهلها بالسيد المسيح، وعمد من آمن منهم، واحتمل ضيقات كثيرة بسبب خدمته وكرازته. ولما أكمل سعيه الصالح تنيَّح بسلام.", 
     ],
     [
@@ -10084,57 +10084,57 @@ ReadingsArrays.SynaxariumArray= [[
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Nous commémorons aussi aujourd’hui la consécration de l’église de saint Jean al-Koukhy le détenteur de l'Evangile en or (يوحنا الكوخي صاحب الانجيل الذهب) ainsi que la translation de ses reliques qui étaient à Constantinople dans cette église. La narration de son histoire et de son décès se trouve dans le synaxaire du 16 Apip. ", 
     "وفيه أيضاً تذكار تكريس كنيسة القديس يوحنا الكوخي صاحب الإنجيل الذهب، بمدينة روما، ونَقْلِ جسده إليها من القسطنطينية. وتجد خبر نياحته تحت اليوم السادس عشر من شهر أبيب.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Que la bénédiction de ses prières soit avec nous. Amen !", 
     "بركة صلواته فلتكن معنا. ولربنا المجد دائماً أبدياً آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "En ce jour de l’an 20 des martyrs (304 après Jésus Christ) eut lieu le martyre de saint Kloug le prêtre (أباكلوج القس).", 
     "وفيه أيضاً من سنة 20 للشهداء (304م)، استشهد القديس أباكلوج القِسْ، الذي من بلدة الفنت (الفنت: قرية تابعة لمركز الفشن بمحافظة بنى سويف).", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Ce saint est originaire du village d’al-Fént (الفنت)[1] et ses parents étaient chrétiens ; son père s’appelait Dioscores (ديوسقورس) et sa mère Euphémie (أوفومية). Ceux-ci lui donnèrent une bonne éducation et il apprit les saintes Ecritures. Il était miséricordieux envers les pauvres et les miséreux et les signes de sa sainteté étaient visibles dès son enfance.", 
     "ولد من أبوين مسيحيين. كان والده ديوسقوروس وأمه أوفومية، ربيّاه تربية مسيحية وتعلَّم العلوم الكنسية في كُتَّاب القرية، وظهرت عليه علامات القداسة مُنْذُ صِغَره، وكان عطوفاً على الفقراء مُحِبّاً للمساكين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Constatant toutes ses vertus, les fidèles le présentèrent à l’évêque pour qu’il l’ordonne prêtre pour le village. Pendant les prières d’ordination ils entendirent une voix qui disait : \"il est digne, il est digne, il est digne.\" ", 
     "ولما رأى الشعب كثرة فضائله، قدَّموه إلى الأب الأسقف، فرَسَمَهُ قِسّاً على كنيسة القرية. وأثناء الرسامة سَمِعَ الجميع صوتاً يقول \"مُسْتَحِقْ، مُسْتَحِقْ، مُسْتَحِقْ\".", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
-    "ورعى شعبه بأمانة واسْتِقامة حتى انتشرت رائحة سيرته الزكية في كُلّ مكان، واشتهي القديس يوليوس الأقفهصي أن يراه، فجاء إليه مع بعض غِلْمَانُه، وتَبارك مِنه، ثُمَّ أخَذه إلى قريته أقفهص (أقفهص: قرية مازالت بنفس اسمها بجوار الفنت)، حيث ظَلَّ فيها عدة أيام ثم عاد إلى بلده.", 
+    "Abba Kloug prit soin des croyants de son village avec fidélité et droiture et sa réputation atteignit saint Jules d’Akfahs (يوليوس ألاقفهصى) qui chercha à le voir et reçut sa bénédiction ainsi que ses gens. Il l’invita à Akfahs (أقفهص) où il resta quelques temps puis retourna chez lui.", 
+    "رعى شعبه بأمانة واسْتِقامة حتى انتشرت رائحة سيرته الزكية في كُلّ مكان، واشتهي القديس يوليوس الأقفهصي أن يراه، فجاء إليه مع بعض غِلْمَانُه، وتَبارك مِنه، ثُمَّ أخَذه إلى قريته أقفهص (أقفهص: قرية مازالت بنفس اسمها بجوار الفنت)، حيث ظَلَّ فيها عدة أيام ثم عاد إلى بلده.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Lorsque la persécution des chrétiens prit de l’ampleur, le gouverneur Arien (أريانوس) se rendit à al-Fént pour obliger les gens à adorer les idoles. Lorsqu’abba Kloug sut qu’il allait arriver, il réunit son peuple à l’église et célébra la divine liturgie pendant laquelle il leur fit un sermon pour les affermir dans leur Foi jusqu’au dernier soupir. Puis il se présenta à Arien et confessa sa Foi en Jésus Christ. En conséquence, il fut arrêté et Arien voulut l’amadouer par les promesses pour qu’il renie sa Foi. Mais Kloug demeura ferme dans la Foi orthodoxe et il fut torturé. Puis il l’emmena à Ehnassiya[3] (أهناسيا) où il le rejugea puis repris les tortures mais l’ange du Seigneur le renforçait et il y eut plusieurs miracles. Alors le gouverneur ordonna qu’on le ramène dans son village pour qu’il y soit décapité. Ainsi il obtint la couronne du martyre.", 
     "اشْتَدَّ الاضطهاد على المسيحيين، وجاء إريانوس الوالي إلى الفنت لإجبار الناس على عبادة الأوثان. فلما أحسَّ أباكلوج بقدومه، جمع شعبه في الكنيسة وأقام لهم قداساً، ووعظهم على الثبات في الإيمان حتى النفس الأخير، ثُمَّ ذَهَبَ إلى إريانوس واعترف أمامه بالسيد المسيح، فقبض عليه وحاول أن يغريه بالمناصب العالية فرفض، فَتَوَعَّدَهُ بِأشَدّ أنواع العذاب، ولكن القديس استهان بالعذاب وثَبَتَ على إيمانه المستقيم، فَعَذَّبَهُ الوالي بعذابات كثيرة، وأخذه إلى أهناسيا (أهناسيا: مدينة أثرية قديمة تقع على بعد 24 كيلومتراً غرب مدينة بنى سويف)، حيث أعاد محاكمته وتعذيبه. وكان ملاك الرب يقويه ويشدّده، وحدثت منه بعض المعجزات، فأمَرَ الوالي بإعادته إلى بلده وقطع رأسه هناك، فنال إكليل الشهادة. ", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Ses reliques se trouvent toujours dans l’église portant son nom à al-Fént.", 
     "ومازال جسده يوجد في أنبوبة في الكنيسة التي تحمل اسمه بالفنت.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Que la bénédiction de ses prières soit avec nous. Amen !", 
     "بركة صلوات القديس أبا كلوج فلتكن معنا. آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "En ce jour nous commémorons aussi le martyre de saint Bahnaw (بهناو).", 
     "وفيه أيضاً استشهد القديس بهناو.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "", 
+    "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
     "بركة صلواته فلتكن معنا آمين.", 
     ],
     ],
@@ -10152,12 +10152,12 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "Après l’Ascension de notre Seigneur Jésus Christ, elle vécut pendant quinze années chez saint Jean, le bien-aimé de nôtre Seigneur. Elle avait pris l’habitude de prier souvent auprès du saint Sépulcre et elle sût par l’Esprit quand elle quittera ce monde. Alors, elle se réjouit de la proximité de ce moment. Les apôtres se réunirent autour d’elle pour prendre sa bénédiction.", 
-    "حيث عاشت بعد صعود ربنا يسوع المسيح إلى السماء في بيت القديس يوحنا الحبيب، خمس عشرة سنة.كانت تتردد على القبر المقدس كثيراً وتصلى هناك، فعَلِمَتْ بالروح القدس بموعد انتقالها، ففرحت، فاجتمع الآباء الرسل فباركتهم السيدة العذراء.", 
+    "حَيثُ عاشت بعد صعود ربنا يسوع المسيح إلى السَّماء في بيت القديس يوحنا الحبيب، خَمْسَ عَشرة سنة.كانت تتردد على القبر المقدس كثيراً وتُصَلّى هُنَاكْ، فعَلِمَتْ بالروح القُدُسْ بموعد انتقالِها، ففرِحَتْ، فاجْتمَعَ الآباء الرسل فباركتهم السيدة العذراء.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ensuite, le Christ lui-même vint, accompagné de ses saints anges, pour recueillir son âme toute pure et l’emmener au ciel. Les apôtres ensevelirent son corps et le portèrent à Gethsémani (الجثمانية) pour l’enterrer sur le mont Josaphat (جبل يهوشافاط).,En chemin, un juif tenta de s’interposer pour empêcher l’enterrement. Lorsqu’il posa les mains sur le cercueil, celles-ci se détachèrent de son corps et y demeurèrent accrochées. Cet homme pleura à chaudes larmes en regrettant sa mauvaise action, alors, les apôtres prièrent pour lui et ses mains reprirent leur position initiale puis il crut en Jésus Christ. Ensuite, les apôtres poursuivirent leur chemin et ils enterrèrent notre Dame avec tout le respect qui lui est dû. Elle vécut sur terre pendant soixante années. ", 
-    "ثم جاء السيد المسيح بنفسه مع ملائكته القديسين، واستلم روحها الطاهرة وصعد بها إلى السماء، أما جسدها الطاهر، فكفَّنه الآباء الرسل وحملوه إلى الجثمانية ليدفنوه في جبل يهوشافاط، وفي الطريق حاول أحد اليهود منعهم من ذلك وأمسك بالتابوت، فانفصلت يداه عن جسده وبقيتا معلَّقتَينْ، فندم وبكى على سوء فعله، وبتوسلات الآباء الرسل القديسين عادت يداه كما كانت، فآمن لوقته بالرب يسوع، ثم أكمل الرسل سَيْرهم حتى وصلوا الجثمانية ودفنوها هناك بإكرام جزيل وكانت سنو حياتها على الأرض نحو ستين عاماً.", 
+    "ثُمَّ جَاء السَيِّدْ المَسْيْحْ بِنَفْسِهُ مَعَ ملائكته القديسين، واستلم روحها الطاهرة وصعد بها إلى السماء، أمَّا جسدها الطاهر، فكفَّنه الآباء الرسل وحملوه إلى الجثمانية ليدفنوه في جبل يهوشافاط. وفي الطريق حاول أحد اليهود منعهم من ذلك وأمسك بالتابوت، فانفصلت يداه عن جسده وبقيتا معلَّقتَينْ، فندم وبكى على سوء فعله، وبتوسلات الآباء الرسل القديسين عادت يداه كما كانت، فآمن لوقته بالرب يسوع، ثم أكمل الرسل سَيْرهم حتى وصلوا الجثمانية، ودفنوها هناك بإكرام جزيل. وكانت سنو حياتها على الأرض نحو ستين عاماً.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
@@ -10167,7 +10167,7 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 229 des martyrs (513 après Jésus Christ) décéda sainte Hilarie, l’ascète (القديسة ايلارية الناسكة) la fille de l’empereur Zénon (زينون).", 
-    "وفيه أيضاً من سنة 229 للشهداء (513م) تنيَّحت القديسة البارة إيلارية الناسكة ابنة الملك زينون.", 
+    "وفيه أيضاً من سنة 229 للشهداء (513م) تنيَّحت القديسة البارة إيلارية الناسِكَةْ ابْنَة المَلِكْ زينون.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
@@ -10415,22 +10415,22 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.synaxarium+"&D=2505&C=Title", 
     "25 Tabui\n1) Décès de saint Pierre, l’adorateur ;\n2) Martyre de saint Askalâs\n", 
-    "25 طوبة\nنياحة القديس بطرس العابد\nاستشهاد القديس أسكلاس\n", 
+    "25 طوبة\nنياحة القِدِّيسْ بُطرس العَابِد\nاستشهاد القديس أسكلاس\n", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Nous commémorons aujourd'hui le décès de saint Pierre, l’adorateur (بطرس ألعابد).", 
-    "في مثل هذا اليوم تنيَّح القديس بطرس العابد.", 
+    "في مِثْلِ هذا اليوم، تنيَّح القديس بُطْرُسْ العَابِدْ.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ce saint était à l’origine un publicain, c’est à dire un percepteur d’impôt (عشّار). De plus il était dur et sans pitié. Un jour, un pauvre homme vint à lui pour lui demander l’aumône, mais il ne voulut rien lui donner. Au même moment, son serviteur arriva, lui apportant le plateau de repas. Agacé, le percepteur prit alors un pain et le jeta à la tête du mendiant pour lui signifier qu’il devait partir et ne plus revenir. La nuit suivante il vit dans un rêve qu’il était au jour du jugement dernier, une balance était dressée. Les démons se présentèrent et déposèrent ses péchés et son injustice dans le plateau de gauche. Les anges de lumière avancèrent à côté du plateau de droite sans rien trouver à y déposer. Puis l’un d’eux s’approcha tenant le pain que le percepteur avait jeté à la tête du mendiant, il le déposa sur le plateau en disant :  Nous n’avons trouvé que ce pain pour cet homme. ", 
-    "كان في أول أمره عشَّاراً قاسي القلب عديم الرحمة بالفقراء، وذات يوم جاء إليه فقير يطلب صَدَقَةْ بإلحاح، ولم يُرِدْ أن يعطيه شيئاً واتفق وصول خادمه حاملاً الطعام إليه فتناول خبزة وضرب بها الفقير على رأسه حتى لا يعود إليه مرة أخرى. وفي الليل رأى في نومه رؤيا كأنه في اليوم الأخير وقد نُصِبَ الميزان والشياطين تقدَّموا ووضعوا خطاياه وظلمه في كفة الميزان اليسرى ثم حضرت جماعة من الملائكة النورانيين ووقفوا بجوار كفة الميزان اليمنى وبدت عليهم الحيرة لأنهم لم يجدوا ما يضعونه فيها من أعمال صالحة فتقدَّم أحدهم ووضع الخبزة التي كان قد ضرب بها رأس الفقير وقال: \"ليس لهذا الرجل سوى هذه الخبزة\".", 
+    "كان في أوَّلِ أمْرُه عَشَّاراً قَاسي القلب عديم الرحمة بالفقراء، وذات يوم جاء إليه فقير يَطْلُبْ صَدَقَةْ بإلحاح، ولم يُرِدْ أن يعطيه شيئاً واتفق وصول خادمه حاملاً الطعام إليه فتناول خبزة وضرب بها الفقير على رأسه حتى لا يعود إليه مرة أخرى. وفي الليل رأى في نومه رؤيا كأنه في اليوم الأخير وقد نُصِبَ الميزان والشياطين تقدَّموا ووضعوا خطاياه وظلمه في كفة الميزان اليسرى ثم حضرت جماعة من الملائكة النورانيين ووقفوا بجوار كفة الميزان اليمنى وبدت عليهم الحيرة لأنهم لم يجدوا ما يضعونه فيها من أعمال صالحة فتقدَّم أحدهم ووضع الخبزة التي كان قد ضرب بها رأس الفقير وقال: \"ليس لهذا الرجل سوى هذه الخبزة\".", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Alors, Pierre se réveilla en sursaut. Il était tout terrifié et se reprochait ses mauvaises actions et la dureté de son cœur. Il commença à s’intéresser à son prochain et à avoir de la compassion. En effet, il se mit à distribuer tout ce qu’il possédait aux pauvres et aux nécessiteux, jusqu’à son dernier vêtement. N’ayant plus rien, il se vendit comme esclave et distribua le montant aux pauvres. Comme il devenait très réputé, il s’échappa de ce lieu et alla s’installé dans la vallée de Scété. Il se fit moine et eut une vie d’ascète. Sa conduite irréprochable le rendit digne de connaître le jour de son départ. Le moment venu, il convoqua les anciens de la vallée pour leur faire ses adieux puis décéda en paix.\n", 
-    "استيقظ بطرس من نَوْمِه فَزِعَاً مَرْعوباً، فأخذ يلوم نفسه على ظُلمِه وقساوته فباع كل أملاكه ووزع أمواله على الفقراء والمحتاجين. ولمَّا لَمْ يَبقَ له شيء يوزعه على الفقراء، بَاعَ نفسه كعبد وتصدَّق بالثمن على الفقراء، ولما اشتهر أمره هرب إلى برية شيهيت وترَّهب وسار سيرة حسنة أهَّلته لأن يعرف يوم انتقاله فاستدعى الرهبان وودَّعهم وتنيَّح بسلام. ", 
+    "اسْتَيْقَظَ بُطْرُسْ مِنْ نَوْمِه فَزِعَاً مَرْعوباً، فأخذ يلوم نفسه على ظُلمِه وقساوته فباع كل أملاكه ووزع أمواله على الفقراء والمحتاجين. ولمَّا لَمْ يَبقَ له شيء يوزعه على الفقراء، بَاعَ نفسه كعبد وتصدَّق بالثمن على الفقراء، ولما اشتهر أمره هرب إلى برية شيهيت وترَّهب وسار سيرة حسنة أهَّلته لأن يعرف يوم انتقاله فاستدعى الرهبان وودَّعهم وتنيَّح بسلام. ", 
     ],
     [
     Prefix.same+"&C=NoActor", 
@@ -10455,7 +10455,7 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen ! ", 
-    "بركة صلواته فلتكن معنا. ولربنا المجد دائماً أبدياً آمين. ", 
+    "بركة صلواته فلتكن معنا، ولربنا المجد دائماً أبدياً آمين. ", 
     ],
     ],
     [
@@ -10467,7 +10467,7 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 160 des martyrs (444 après Jésus Christ) eut lieu le martyre des 49 saints, les anciens de Scété (شيوخ شيهيت).", 
-    "في مثل هذا اليوم من سنة 160 للشهداء (444م) استشهد التسعة والأربعون شيوخ شيهيت.", 
+    "في مِثْلِ هذا اليوم مِنْ سنة 160 للشهداء (444م) استشهد التسعة والأربعون شيوخ شيهيت.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
@@ -10549,82 +10549,97 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.synaxarium+"&D=2705&C=Title", 
     "27 Tabui\n1) Commémoration de l’archange Suriel ;\n2) Martyre d’abba Fam (Phœbammon) d’Ossîm, le soldat ;\n3) Martyre de saint Sérapion ;\n4) Translation des reliques de saint Timothée, le disciple de l’apôtre saint Paul\n", 
-    "27 طوبة\nتذكار رئيس الملائكة الجليل سوريال\nاستشهاد القديس أبى فام الجُندي الأوسيمي\nاستشهاد القديس سيرابيون\nتذكار نقل جسد القديس تيموثاوس تلميذ القديس بولس الرسول\n", 
+    "27 طوبة\nتذكار رئيس الملائكة الجليل سُورِيَالْ\nاستشهاد القديس أبى فام الجُندي الأوسيمي\nاستشهاد القديس سيرابيون\nتذكار نقل جسد القديس تيموثاوس تلميذ القديس بولس الرسول\n", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Aujourd’hui l'Eglise commémore l’archange Suriel, l’un des sept archanges.", 
-    "في هذا اليوم تُعيِّد الكنيسة بتذكار رئيس الملائكة الجليل سوريال، أحد السبعة رؤساء الملائكة، وهو أحد السبعة الأرواح التي أمام عرش الله ( رؤ 1: 4)، وموطنهم في السماء ولكنهم يرسلون لخدمة بنى البشر حيث أن \" ملاك الرب حال حول خائفيه وينجيهم \" ( مز 34: 7). وهم \" أرواح خادمة مرسلة للخدمة لأجل العتيدين أن يرثوا الخلاص \" ( عب 1: 14). خلقهم الله أرواحاً نورانية ( مز 104: 4)، لها طبيعة شفافة ترى الله ولكن على قدر ما تحتمل. ورئيس الملائكة سوريال ( الذي معنى اسمه بوق الله )، سوف يبوِّق في اليوم الأخير حين يرسل الله ملائكته ببوق عظيم الصوت فيجمعون مختاريه من الأربع الرياح من أقصاء السماوات إلى أقصائها ( مت 24: 31). بنى له القديس يوحنا ذهبي الفم كنيسة عظيمة بالقسطنطينية وكرَّسها باسمه في اليوم السابع والعشرين من شهر طوبه، وحدثت منها معجزات كثيرة بشفاعته. شفاعته فلتكن معنا. آمين.\nوفيه أيضاً من سنة 20 للشهداء ( 304م )، استشهد القديس أبو فام الجُندي. وُلِدَ هذا القديس بأوسيم ( أوسيم: أحد مراكز محافظة الجيزة)، من أبوين مسيحيين غنيين، ربيّاه تربية مسيحية، فشَبَّ على خوف الله والشفقة على المساكين، مواظباً على الصلاة والصوم. وعرض عليه أبواه الزواج فلم يَقْبل. ولما كفر دقلديانوس وأعلن الاضطهاد على المسيحيين، تَقَّدم القديس إلى والي المنطقة واعترف أمامه بالسيد المسيح فعذَّبه كثيراً، وتصادف وجود إريانوس والي أنصنا بأوسيم فأخذ القديس معه إلى قاو وهناك ربطه في ذيل حصان وطاف به المدينة كلها، ثم أمر بعصره في الهنبازين، وكان الرب يشفيه ويقويه، وبعد ذلك أمر الوالي إريانوس بربط حجر في عنق القديس وإلقائه في النهر. فأرسل الرب ملاكه وأنقذه من الغرق. فاستشاط الوالي غيظاً وأمر بوضع القديس في أتون نار، فلم تؤذه النار وصارت كندى بارد، وأخيراً أمر الوالي بقطع رأسه فنال إكليل الشهادة. وأخذ بعض المؤمنين جسده الطاهر وكفَّنوه بإكرام جزيل ودفنوه بمدينة طما وبُنيت له كنيسة باسمه، وقد ظهرت من جسده آيات وعجائب كثيرة. بركة صلواته فلتكن معنا. آمين.\nوفيه أيضاً من سنة 21 للشهداء ( 305م ) استشهد القديس سيرابيون، وُلِدَ هذا القديس بمصر، من أبوين مسيحيين غنيين. فنشأ محباً للفقراء والمساكين. وسمع عن تعذيب المسيحيين بالإسكندرية، فمضى إليها ومعه صديق يُدعى ثاؤدورس وأحد رعاة غنمه اسمه توما، وهناك تقدموا إلى أرمانيوس الوالي واعترفوا بالسيد المسيح، فأمر بطرحهم في السجن. ثم عذّبهم بالعصر في الهنبازين، وطرحهم في قطران مغلي، وصلبهم وضربهم بالحراب، وكان ملاك الرب يقيمهم سالمين من جميع هذه العذابات ويشددهم ويقويهم. ولما تضايق الوالي أمر رئيس جنده المدعو أوريون أن يقطع رأس القديس سيرابيون، فنال إكليل الشهادة. بركة صلواته فلتكن معنا. آمين.\nوفيه أيضاً تحتفل الكنيسة بتذكار نقل جسد القديس تيموثاوس أسقف أفسس وتلميذ معلمنا القديس بولس الرسول، من أفسس إلى القسطنطينية بأمر الإمبراطور قسطنطين الكبير، حيث وضعوه بإكرام عظيم داخل كنيسة الآباء الرسل القديسين وتجد خبر استشهاد القديس تيموثاوس تحت يوم 23 طوبه. بركة صلواته فلتكن معنا. ولربنا المجد دائماً أبدياً آمين.\n", 
+    "في هذا اليوم تُعيِّد الكنيسة بتذكار رئيس الملائكة الجليل سُورِيَالْ، أحد السبعة رؤساء الملائكة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Il fait partie des sept esprits qui sont devant le trône de Dieu. Ils demeurent au ciel mais ils sont envoyés sur terre pour servir parmi les hommes car :  l’ange du Seigneur établira son camp autour de ceux qui le craignent, et il les délivrera.  Ils sont des esprits chargés d'un ministère, envoyés en service pour ceux qui doivent hériter du salut. Dieu les a créés comme des esprits de lumière, transparents par nature. Ils voient Dieu autant qu’ils peuvent le supporter.", 
-    "", 
+    "Il fait partie des sept esprits qui sont devant le trône de Dieu. Ils demeurent au ciel mais ils sont envoyés sur terre pour servir parmi les hommes car : \"l’ange du Seigneur établira son camp autour de ceux qui le craignent, et il les délivrera\". Ils sont des esprits chargés d'un ministère, envoyés en service pour ceux qui doivent hériter du salut. Dieu les a créés comme des esprits de lumière, transparents par nature. Ils voient Dieu autant qu’ils peuvent le supporter.", 
+    "وهو أحد السبعة الأرواح التي أمام عرش الله (رؤ 1: 4)، وموطنهم في السماء ولكنهم يرسلون لخدمة بنى البشر حيث أن \"ملاك الرَبِّ حالٍ حَولَ خائفيه ويُنَجِّيهُمْ\" (مز 34: 7)، وهُمْ \"أرواح خادمة مُرسَلَة للخدمة لأجْلِ العَتيدين أن يَرِثوا الخلاصْ\" (عب 1: 14). خلقهم الله أرواحاً نورانية (مز 104: 4)، لها طبيعة شفافة ترى الله، ولكن على قَدْرِ ما تحتمل.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "L’archange Suriel dont le nom signifie  le cor (trompette) de Dieu  sonnera du cor au dernier jour lorsque Dieu enverra ses anges avec une trompette retentissante, et ils rassembleront ses élus des quatre coins du monde, d’une extrémité des cieux jusqu’à l’autre.", 
-    "", 
+    "L’archange Suriel dont le nom signifie le cor (trompette) de Dieu sonnera du cor au dernier jour lorsque Dieu enverra ses anges avec une trompette retentissante, et ils rassembleront ses élus des quatre coins du monde, d’une extrémité des cieux jusqu’à l’autre.", 
+    "ورئيس الملائكة سُورِيَالْ (الذي معنى اسمه \"بوق الله\")، سوف يبوِّق في اليوم الأخير، حِينَ يُرْسِل الله ملائكته بِبوقْ عَظيم الصوت، فيجمعون مُختاريه مِنْ الأربع الرياحْ، مِنْ أقصاء السماوات إلى أقصائها (مت 24: 31).", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Saint Jean Chrysostome construisit une grande église en son honneur et il la consacra le 27 Taubi. De nombreux miracles eurent lieu dans cette église par son intercession.", 
-    "", 
+    "Saint Jean Chrysostome construisit une grande église en son honneur et il la consacra le 27 Taubi. De nombreux miracles eurent lieu dans cette église par son intercession.", 
+    "بنى له القديس يوحَنّا ذَهَبيّ الفَمْ كنيسة عظيمة بالقُسْطَنطينية، وكرَّسَها باسمِهِ في اليوم السابع والعشرين من شهر طوبه، وحدثت منها مُعْجِزاتْ كثيرة بشفاعته.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que son intercession soit avec nous. Amen !", 
-    "", 
+    "شَفاعَتْهُ فَلتَكُنْ معنا، آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Nous commémorons aussi le martyre d’Abba Fam (Phœbammon – أبو فام) le soldat en l’an 20 des martyrs (304 après Jésus Christ).", 
-    "", 
+    "وفيه أيضاً من سنة 20 للشُهدَاءْ (304م)، استشهد القديس أبو فام الجُندي.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ce saint naquit à Oussim (أوسيم) de riches parents chrétiens qui lui donnèrent une bonne éducation. Il grandit dans la crainte de Dieu, dans la compassion envers les malheureux ainsi que dans la prière et le jeune. Lorsque ses parents voulurent le marier il refusa.", 
-    "", 
+    "وُلِدَ هذا القديس بأوسيم (أوسيم: أحد مراكز محافظة الجيزة)، من أبوين مسيحيين غَنِيَّينْ، ربيّاه تربية مَسِيحِيَّة، فَشََبَّ على خوف الله والشفقة على المساكين، مواظباً على الصلاة والصوم. وعرض عليه أبواه الزواج فلم يَقْبل.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Lorsque Dioclétien abjura sa Foi et qu’il déclencha la persécution des chrétiens, ce saint confessa sa Foi devant le gouverneur de cette région. Comme Arien (أريانوس), le gouverneur d’Antinoë (أنصنا) se trouvait à Oussim, il emmena le saint à Qaw (قاو). Puis il l’y tortura mais le Seigneur le guérissait et l’affermissait. Une fois, il voulut le noyer dans le fleuve en accrochant une pierre à son cou mais le Seigneur envoya son ange pour le sauver de la noyade. Puis il le fit jeter dans une fournaise mais le feu ne lui fit aucun tort. Enfin il le fit décapiter et le obtint ainsi la couronne du martyre. Des fidèles recueillirent son corps et l’enterrèrent avec tous les honneurs dans la ville de Téma (طما) et ils y construisirent une église en son honneur. De nombreux miracles eurent lieu par l’intermédiaire de ses reliques. ", 
-    "", 
+    "Lorsque Dioclétien abjura sa Foi et qu’il déclencha la persécution des chrétiens, ce saint confessa sa Foi devant le gouverneur de cette région. Comme Arien (أريانوس), le gouverneur d’Antinoë (أنصنا) se trouvait à Oussim, il emmena le saint à Qaw (قاو). Puis il l’y tortura mais le Seigneur le guérissait et l’affermissait. Une fois, il voulut le noyer dans le fleuve en accrochant une pierre à son cou mais le Seigneur envoya son ange pour le sauver de la noyade. Puis il le fit jeter dans une fournaise mais le feu ne lui fit aucun tort.", 
+    "ولما كَفَرْ دِقْلِدْيانُوسْ وأعلن الاضطهاد على المسيحيين، تَقَّدم القديس إلى والي المَنْطِقَة واعترف أمامه بالسَيّْدْ المَسْيحْ، فعَذَّبَهُ كَثيراً. وتصادف وجود إريانوس، والي أَنْصِنْا، بأوسيم، فأخَذَ القديسْ مَعَهُ إلى قاو، وهناك رَبَطَهُ في ذَيّلِ حِصان وطاف به المدينة كُلَّها، ثُمَّ أَمَرَ بعَصْرِهِ في الهِنْبازينْ، وكان الرَبُّ يَشفيه ويُقَوّيه. وبعد ذلك أَمَرَ الوالي إريانوس بِرَبط حَجر في عُنِقْ القِدّيْسْ، وإلقائه في النهر. فأرْسَلَ الرَبُّ مَلاكُه وأنْقَذَه من الغَرَقْ، فاسْتَشاطْ الوالي غَيظاً، وأمَرَ بِوضْعِ القِدّيسْ في أتون نار، فَلَمْ تُؤذِهِ النار، وصَارَتْ كَنَدَى بارد.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "Enfin il le fit décapiter et le obtint ainsi la couronne du martyre. Des fidèles recueillirent son corps et l’enterrèrent avec tous les honneurs dans la ville de Téma (طما) et ils y construisirent une église en son honneur. De nombreux miracles eurent lieu par l’intermédiaire de ses reliques. ", 
+    "وأخيراً أمر الوالي بقطع رأسْهِ، فنَالَ إكليل الشهادة، وأخَذَ بعض المؤمنين جَسَدَهُ الطاهر، وكفَّنُوه بإكرامٍ جَزيلْ، ودَفَنُوه بِمدِينة طِمْا، وبُنِيَتْ لَهُ كنيسة باسْمِهِ. وقَدْ ظَهَرَتْ مِنْ جَسَدِهِ آياتٍْ وعجائب كَثِيرة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous. Amen ! ", 
-    "", 
+    "بَرَكِة صَلَواتُه فَلتَكُنْ مَعْنا، آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 21 des martyrs (305 après Jésus Christ) eut lieu le martyre de saint Sérapion (سرابيون).", 
-    "", 
+    "وفيه أيضاً مِنْ سنة 21 لِلْشُهَداء (305م)، اسْتَشْهَدَ القِدِّيسْ سِيرابيون.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Ce saint naquit en Egypte (بمصر) de riches parents chrétiens et il grandit dans l’amour des pauvres et des nécessiteux. Dès qu’il apprit que les chrétiens étaient persécutés, il se rendit à Alexandrie avec un de ses amis qui s’appelait Théodore (ثاؤدورس) et un berger nommé Thomas (توما) puis confessa sa Foi en Jésus Christ devant le gouverneur de cette ville, Armanious (أرمانيوس). Ce dernier les fit alors mettre en prison puis leur fit subir de diverses souffrances mais l’ange du Seigneur les guérissait de leurs plaies en les affermissant.  En fin de compte, le gouverneur ordonna au commandant de sa troupe Orion (أوريون) de décapiter saint Sérapion qui obtint ainsi la couronne du martyre. ", 
-    "", 
+    "Ce saint naquit en Egypte (بمصر) de riches parents chrétiens et il grandit dans l’amour des pauvres et des nécessiteux.", 
+    "وُلِدَ هذا القِدّيسْ بمصر، مِن أبَويْنِ مَسيحيين غنيين، فنَشأ مُحِباً لِلْفُقَراء والمساكين. ", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "Dès qu’il apprit que les chrétiens étaient persécutés, il se rendit à Alexandrie avec un de ses amis qui s’appelait Théodore (ثاؤدورس) et un berger nommé Thomas (توما) puis confessa sa Foi en Jésus Christ devant le gouverneur de cette ville, Armanious (أرمانيوس). Ce dernier les fit alors mettre en prison puis leur fit subir de diverses souffrances mais l’ange du Seigneur les guérissait de leurs plaies en les affermissant.", 
+    "سِمِعَ عَنْ تَعْذيب المَسيحيين بالإسكندرية، فَمَضَى إليها ومعه صَديقْ يُدعَى ثاؤدورس، وأحَدْ رُعَاة غَنَمُه، اسمه توما، وهناك تقدموا إلى أرمانيوس الوالي واعترفوا بالسيد المسيح، فأمَرَ بَطرحهم في السجن، ثُمَّ عَذّبَهُمْ بالعصر في الهِنْبازْينْ، وطَرَحَهُمْ في قَطْرانْ مَغْلي، وصَلَبَهُمْ، وضَرَبَهُمْ بالِحرابْ، وكانَ مَلاكُ الرَبِّ يُقِيمَهُمْ سالمين مِنْ جميع هذه العذابات، ويُشَدِّدْهُمْ ويُقَوِّيهُمْ.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "En fin de compte, le gouverneur ordonna au commandant de sa troupe Orion (أوريون) de décapiter saint Sérapion qui obtint ainsi la couronne du martyre. ", 
+    "ولَمَّا تَضَايَقْ الوالي، أمْرَ رئيس جُنْدِّه المَدعو أورْيونْ، أن يَقْطَعْ رأس القِدّيْسْ سيرابيون، فنالَ إكْليل الشِهادَة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous. Amen !", 
-    "", 
+    "برَكَةِ صَلَواتُهْ فَلْتَكُنْ مَعْنا، آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Nous commémorons aussi aujourd’hui la translation des reliques de saint Timothée (القديس تيموثاؤس), l’évêque d’Ephèse et le disciple de saint Paul par les soins de l’empereur Constantin le grand.", 
-    "", 
+    "وفيه أيضاً تَحْتَفِلْ الكنيسة بِتِذْكْار نَقل جَسَدْ القِدّيسْ تِيموثَاوُسْ أُسْقُفْ أفَسُسْ وتِلميذْ مُعَلِمْنَا القِدِّيسْ بُولِسْ الرَسول، مِنْ أفَسُسْ إلى القُسْطنطينية، بأمْرِ الإمبراطور قُسْطَنْطِينْ الكَبير، حَيْثُ وَضَعُوه بِإكْرَامْ عَظِيمْ داخِلْ كَنيسَة الآبَاء الرُسُلْ القِدّيْسِينْ.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "En effet, celui-ci fit transporter les reliques du saint qui étaient à Ephèse pour l’installer dans l’église des saints apôtres à Constantinople. Le martyre de saint Timothée est relaté le 23 Taubi. ", 
-    "", 
+    "وتَجِدْ خَبَرْ استشهاد القِدّيسْ تِيموثاوس تَحْتَ يوم 23 طوبه.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-    "", 
+    "بَركَةِ صَلَواتُه فَلتَكُنْ مَعَنا، ولِرَبِنا الَمجْدْ دائماً أبَدياً آمين.", 
     ],
     ],
     [
@@ -10636,82 +10651,92 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 21 des martyrs (305 après Jésus Christ) eut lieu le martyre des saint Kaou, l’ermite (القديس كاؤو الناسك).", 
-    "في مثل هذا اليوم من سنة 21 للشهداء ( 305م )، استشهد القديس كاؤو الناسك، وُلِدَ هذا القديس في بلدة ديموشيه ( ديموشيه: إحدى بلاد الفيوم)، في أواخر القرن الثالث الميلادي، وكان محباً للقراءة والتأمل في الكتاب المقدس، فمضى وسكن في مغارة بصحراء الفيوم. ولما ثار الاضطهاد على المسيحيين، ظهر له ملاك الرب في الرؤيا وقال له: \" لماذا أنت جالس هنا والأكاليل معدَّة للشهداء، قم اذهب إلى اللاهون واعترف هناك باسم السيد المسيح \". وللوقت قام ومضى إلى المدينة، فوجد هناك رسول الوالي، الذي أُعجب بشيبته وحُسن منظره، فأكرمه وأجلسه، ثم أخرج له صنماً من ذهب مرصَّعاً بالأحجار الكريمة، وقال له هذا هدية الملك لوالي أنصنا فأخذه القديس ثم طرحه على الأرض وكسره. فغضب رسول الوالي وأمر الجنود فربطوا القديس، وأخذه معه إلى والي أنصنا، وهناك قدَّمه للوالي فعذَّبه كثيراً بضربه وعصره بالهنبازين. ثم أرسله إلى والي البهنسا الذي بدوره ضربه بالمطارق الحديدية، وجلده حتى تناثر لحمه، ثم ربطوا أسياخ حديدية مُحمَّاة بالنار في جسده، وكان الرب <span style=\"&quot;color:blue;&quot;\" uib-popover=\"&quot;'هوشع\" ،=\"\" يشوع=\"\" يسوع=\"\" أليشع=\"\" اسم=\"\" عبرى=\"\" معناه=\"\" يهوه=\"\" معين=\"\" أو=\"\" مخلِّص=\"\" يخلص=\"\" خلاص'\"=\"\" popover-placement=\"&quot;left-top&quot;\">يسوع</span> يشفيه ويعافيه وينقذه. ولما احتار الوالي أمر بقطع رأسه بحد السيف فنال إكليل الشهادة. فأخذ بعض المؤمنين جسده وكفنوه بإكرام جزيل، ودفنوه في الموضع الذي كان يتعبد فيه. بركة صلواته فلتكن معنا. آمين.\nوفيه أيضاً من سنة 26 للشهداء ( 310م ) استشهد القديس فيلياس أسقف تمي الأمديد ( تمي الأمديد: حالياً قرية بمركز السنبلاوين محافظة الدقهلية). وُلِدَ هذا القديس من أسرة عريقة في تمي الأمديد، وتعلَّم الفلسفة والعلوم والآداب ونبغ فيها فعيَّنه الإمبراطور والياً على منطقته. ونظراً لحياة التقوى والقداسة التي كان يعيشها، ترك أعمال الولاية ورُسم أسقفاً على نفس الإيبارشية، فاهتم بالوعظ وتعليم الشعب وافتقاده، وقيادته في طريق القداسة والثبات على الإيمان في فترة الاضطهاد. مضى القديس إلى الإسكندرية لينال بركة البابا القديس بطرس خاتم الشهداء، فرأى هناك عذابات شهداء الإسكندرية وكان يشدِّدهم ويشجعهم، فقبض عليه الوالي وأودعه في السجن، فأرسل رسالة رعوية إلى شعب إيبارشيته يدعوهم أن يثبتوا على الإيمان ويحتملوا الآلام من أجل اسم المسيح ومن أجل أن ينالوا الحياة الأبدية السعيدة. اقتيد إلى ساحة الاستشهاد وهناك مدَّ ذراعيه على شكل صليب وصلى بصوت عالٍ، ثم ضرب الجند عنقه بحد السيف فنال إكليل الشهادة. بركة صلواته فلتكن معنا. ولربنا المجد دائماً أبدياً آمين.\nوفيه أيضاً من سنة 25 للشهداء ( 309م )، استشهد القديس إكليمنضس أسقف أنقرة ( أنقرة: بإقليم غلاطية بآسيا الصغرى، وهي الآن عاصمة تركيا). وُلِدَ هذا القديس سنة 257م في أنقرة، ومات أبوه الوثني وهو رضيع، فربته أمه المسيحية وأرضعته لبن الإيمان. وكان يحب الفقراء والمساكين ويهتم باحتياجاتهم الروحية والجسدية، ولنموه في الفضيلة رسموه شماساً، فازداد في تقواه ونسكه فأقاموه قساً، ثم صار أسقفاً فيما بعد على أنقرة، فأخذ يجاهد في سبيل رعيته بمحبة باذلة وغيرة شديدة. ذاع صيت هذا القديس فسمع به الإمبراطور دقلديانوس، فأمر والي غلاطية بالقبض عليه وعرض عليه أن يسجد للأوثان فرفض، فأمر بتعذيبه وتمزيق جسده بمخالب حديدية، ورشقه بالحجارة، ثم ألقاه في السجن. احتار الوالي في تعذيب القديس، فأرسله إلى الإمبراطور، الذي لاطفه كثيراً محاولاً أن ينكر إيمانه، ولما لم يستطع أن يثنيه عن إيمانه، أمر بتمزيق جسده في دولاب حديدي به أسنان حادة، وكان الرب ينقذه حتى آمن كثير من الوثنيين. وقد تولَّى تعذيبه كثيرون حتى أنه أُوقف أمام سبعة مجالس للحكم كان آخرها في أنقرة، وفي كل مرة كان يزداد تمسكاً وقوة. وأخيراً قطعوا رأسه فنال إكليل الشهادة، وأخذت جسده امرأة مؤمنة اسمها صوفية ودفنته بإكرام جزيل. بركة صلواته فلتكن معنا. آمين.\n\"", 
+    "في مثل هذا اليوم من سنة 21 للشهداء (305م)، استشهد القديس كاؤو الناسك.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ce saint naquit à Dimouchyyah (ديموشيه) en Egypte vers la fin du troisième siècle. Il était miséricordieux envers les pauvres et aimait méditer la sainte Bible. Alors, il s’installa au désert dans une grotte de cette région.", 
-    "", 
+    "وُلِدَ هذا القديس في بلدة ديموشيه (ديموشيه: إحدى بلاد الفيوم)، في أواخر القرن الثالث الميلادي. كان محباً للقراءة والتأمل في الكتاب المقدس، فمضى وسكن في مغارة بصحراء الفيوم. ", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Lorsque la persécution fut déclenchée contre les chrétiens, l’ange du Seigneur lui apparut en songe et lui dit :  \"Pourquoi restes-tu assis alors que les couronnes sont apprêtée ? Lève-toi maintenant et va à El-Lahoun (اللاهون) où tu confesseras ta Foi en Jésus Christ\".", 
-    "", 
+    "ولمَّا ثَارَ الاضطهاد على المسيحيين، ظهر له مَلاكْ الرَبِّ في الرؤيا، وقال له: \"لماذا أنتَ جالِسْ هُنا والأكاليل مُعَدَّة لِلْشُهَداء؟ قم اذْهَبْ إلى اللاهُونْ، واعْتَرِفْ هُنَاكَ باسْم السَيّدْ المسيح\".", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Rapidement, il se leva et se rendit dans la ville et il y trouva le messager du gouverneur qui fut surpris par sa prestance et sa présentation. Il le reçut avec respect et le fit assoir. Puis sortit de sa poche une idole en or incrustée de pierre précieuse et lui dit :  voici le cadeau du roi au gouverneur d’Antinoë (أنصنا).  Le saint la prit en main, admira la beauté de sa confection puis la jeta par terre et le brisa. Le messager se mit en colère, ordonna qu’il soit arrêté et l’emmena avec lui à Antinoë. Il raconta au gouverneur ce qui s’était passé. Ce dernier le fit torturer cruellement puis l’envoya au gouverneur de Bahnassa (البهنسا) qui le tortura à son tour mais le Seigneur le guérissait.", 
-    "", 
+    "Rapidement, il se leva et se rendit dans la ville et il y trouva le messager du gouverneur qui fut surpris par sa prestance et sa présentation. Il le reçut avec respect et le fit assoir. Puis sortit de sa poche une idole en or incrustée de pierre précieuse et lui dit :  \"voici le cadeau du roi au gouverneur d’Antinoë (أنصنا)\". Le saint la prit en main, admira la beauté de sa confection puis la jeta par terre et le brisa. Le messager se mit en colère, ordonna qu’il soit arrêté et l’emmena avec lui à Antinoë. Il raconta au gouverneur ce qui s’était passé. Ce dernier le fit torturer cruellement puis l’envoya au gouverneur de Bahnassa (البهنسا) qui le tortura à son tour mais le Seigneur le guérissait.", 
+    "ولِلْوَقْتِ قَامَ ومَضَى إلى المَدينْة، فَوَجَدَ هُناك رَسْولْ الوالي، الذي أُُعْجَبَ بِشِيبَتِهِ وحُسْنِ مَنْظرِه، فَأكْرَمَهُ وأجْلَسَهُ، ثُمَّ أخْرَجْ لَهُ صَنمَاً مِن ذَهَبْ مُرَصَّعاً بالأحْجَار الكَريمة، وقَالَ له: \"هذا هَدِيَّة المَلِكْ لوالي أنْصِنَا\". فَأخَذَهُ الِقدّيْسْ، ثُمَّ طَرَحَهُ على الأرْضِ وكَسَرَهُ، فغَضِبَ رَسُولُ الوالي، وأمَرَ الجِنُود، فرَبَطوا القِدّيسْ، وأخَذَهُ مَعَهُ إلى والي أنْصِنْا، وهناك قَدَّمَهُ للوالي، فَعَذَّبَه كَثِيراً بِضَرْبِهِ، وعَصْرِه بِالهِنْبازين، ثُمَّ أرْسَلَه إلى والي البَهْنَسَا، الذي بِدَوْرّه ضَرَبَه بِالمَطارِقْ الَحديدية، وجَلَدَهُ حَتَّى تَنَاثَرَ لَحْمَهُ، ثُمَّ ربطوا أسْياخْ حديدية مُحَمَّاة بِالنَار في جِسَدَهُ، وكانَ الرَبُّ يسوع يشفيه ويُعافيهْ، ويُنْقِذَهُ.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Comme il refusait toujours d’adorer les idoles, le gouverneur de Bahnassa le fit décapiter et il obtint ainsi la couronne du martyre. Quelques fidèles prirent son corps et l’emmenèrent à l’endroit où le saint s’était installé pour adorer Dieu et ils l’enterrèrent.", 
-    "", 
+    "ولمَّا احْتارَ الوالي، أمَرَ بِقَطْعِ رأسَهُ بِحَدِّ السَيْف، فَنَالَ إكليل الشِهادْة، فأخَذَ بَعْضُ المؤمنين جَسَدَهُ، وكَفَّنُوه بِإكْرامٍ جَزيلْ، ودَفَنُوه في المَوْضِعْ الذي كَانَ يَتَعَبَّدْ فِيه.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous. Amen !", 
-    "", 
+    "بركة صلواته فلتكن معنا، آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 25 des martyrs (309 après Jésus Christ) eut lieu le martyre de saint Clément (اكلمنضوس), l’évêque d’Ankara (Ancyre – أنقرة).", 
-    "", 
+    "وفيه أيضاً من سنة 25 للشهداء (309م)، استشهد القديس إكليمنضس أُسْقُف أَنْقَرَة (أنقرة: بإقليم غلاطية بآسيا الصغرى، وهي الآن عاصمة تركيا).", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Ce saint naquit dans cette ville en 257 après Jésus Christ. Son père était païen et il mourut alors qu’il était encore un nourrisson. Alors, sa mère qui était chrétienne, s’occupa de son éducation en lui inculquant la Foi chrétienne. Il aimait les pauvres et les nécessiteux et se préoccupait de leurs besoins spirituels et matériels. Comme il progressait dans la vertu, il fut ordonné diacre. En conséquence, il progressa dans la piété et l’ascétisme, ce qui conduisit l’évêque à l’ordonné prêtre. Plus tard il devint évêque d’Ankara. Alors il se mit à lutter pour le bien de son troupeau avec un amour et un zèle très dévoués.", 
-    "", 
+    "Ce saint naquit dans cette ville en 257 après Jésus Christ. Son père était païen et il mourut alors qu’il était encore un nourrisson. Alors, sa mère qui était chrétienne, s’occupa de son éducation en lui inculquant la Foi chrétienne.", 
+    "وُلِدَ هذا القديس سنة 257م في أنقرة، وماتَ أبُوهُ الوَثَني وهو رَضْيعْ، فَرَبَّتْهُ أُمُّه المَسيحِيّة، وأرْضَعَتْهُ لَبَنَ الإيمان.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "La renommée de saint Clément se répandit au point que l’empereur Dioclétien en entendit parler et demanda au gouverneur de cette région de le faire arrêter. Ce dernier lui proposa d’adorer les idoles mais le saint évêque refusa. En conséquence il le fit torturer et lapider mais sans obtenir le résultat escompté. Alors, il fut mis en prison. Lorsque le gouverneur se lassa, il envoya le saint à l’empereur qui tentât de l’amadouer pour le conduire à renier sa Foi mais ne put pas le détourner du Christ. Alors, il poursuivit sa torture mais le Seigneur le guérissait au point qu’un grand nombre de païens se convertirent. Un grand nombre de personnes se succédèrent pour le torturer sans pouvoir le faire plier. Il comparut devant sept tribunaux et, à chaque fois, il était plus ferme dans sa Foi. Finalement, il fut décapité et il obtint la couronne du martyre.", 
-    "", 
+    "Il aimait les pauvres et les nécessiteux et se préoccupait de leurs besoins spirituels et matériels. Comme il progressait dans la vertu, il fut ordonné diacre. En conséquence, il progressa dans la piété et l’ascétisme, ce qui conduisit l’évêque à l’ordonné prêtre. Plus tard il devint évêque d’Ankara. Alors il se mit à lutter pour le bien de son troupeau avec un amour et un zèle très dévoués.", 
+    "كان يحب الفقراء والمساكين ويهتم باحتياجاتهم الروحية والجسدية، ولِنُمُوّهُ في الفضيلة، رَسَموهُ شَمَّاسْاً، فازدْادَ في تَقْواهْ ونُسْكِه، فأقَامُوه قِسّاً، ثُمَّ صَارَ أُسْقُفَاً فيما بعد على أنْقَرَة، فأخَذَ يُجاهِدْ في سَبيلْ رَعِيَّتَهِ بمحبة، باذِلَة، وغِيرَة شَدِيدَة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
-    "Une fidèle nommée Sophie recueillit sa dépouille et l’enterra avec beaucoup de respect. ", 
-    "", 
+    "La renommée de saint Clément se répandit au point que l’empereur Dioclétien en entendit parler et demanda au gouverneur de cette région de le faire arrêter. Ce dernier lui proposa d’adorer les idoles mais le saint évêque refusa. En conséquence il le fit torturer et lapider mais sans obtenir le résultat escompté. Alors, il fut mis en prison. ", 
+    "ذاعَ صِيتُ هذا القِدّيسْ، فسَمِعَ بِه الإمبراطور دِقْلِدْيانوسْ، فَأمَرَ والي غَلاطْية بالقَبْضِ عَليه، وعَرَضَ عَليه أن يَسْجُدْ لِلأوْثانْ، فرفض، فأَمَرَ بتعذيبه وتمزيق جَسَدِه بمخالب حِديدِيّة، ورَشْقَهُ بالحجارة، ثم ألقاه في السِجْنْ.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "Lorsque le gouverneur se lassa, il envoya le saint à l’empereur qui tentât de l’amadouer pour le conduire à renier sa Foi mais ne put pas le détourner du Christ. Alors, il poursuivit sa torture mais le Seigneur le guérissait au point qu’un grand nombre de païens se convertirent.", 
+    "احْتارَ الوالي في تَعْذيب القِديس، فأَرْسَلَهُ إلى الإمبراطور، الذي لاطَفَهُ كَثيراً مُحَاوِلاً أنْ يَجْعَلَه يُنْكر إيمانه. ولمّا لَمْ يَسْتَطِعْ أن يُثْنيهْ عن إيمانه، أَمَرَ بِتمْزيقْ جَسَدَهُ في دُولابْ حَديدِيّ بِهِ أسْنانْ حَادَة، وكَانَ الرَبُّ يُنْقِذَهُ حَتَّى آمَنَ كَثيرٌ مِن الوَثَنِيّينْ.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "Un grand nombre de personnes se succédèrent pour le torturer sans pouvoir le faire plier. Il comparut devant sept tribunaux et, à chaque fois, il était plus ferme dans sa Foi. Finalement, il fut décapité et il obtint la couronne du martyre. Une fidèle nommée Sophie recueillit sa dépouille et l’enterra avec beaucoup de respect. ", 
+    "وقَدْ تولَّى تَعْذيبَهُ كَثيرونْ، حَتَّى أنّهُ أُوقِفَ أمامَ سَبْعَة مَجالِسْ لِلْحُكْمْ، كانَ آخِرُها في أنْقَرَةْ، وفي كُلِّ مَرَّةٍ كانَ يْزداد تَمَسّكاً وقُوة. أخيراً، قَطعوا رَأسَهُ، فَنالَ إكْليلْ الشِهادَة، وأخَذَتْ جَسَدَهُ امْرَأةً مُؤمِنَةْ اسْمَها صُوفِيّة، ودَفَنَتْهُ بإكرامْ جَزيل.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous. Amen ! ", 
-    "", 
+    "بركة صلواته فلتكن معنا، آمين.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "En ce jour de l’an 26 des martyrs (310 après Jésus Christ) eut lieu le martyre de saint Phylias (القديس فيلياس), l’évêque de Tamyel-Amdid (تمي الأمديد).", 
-    "", 
+    "وفيه أيضاً من سنة 26 للشهداء (310م)، اسْتَشْهَدَ القديس فيلياس أُسْقُفْ تَمَى الأمْديدْ (تَمَى الأمديد: حالياً قرية بمركز السنبلاوين محافظة الدقهلية).", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ce saint naquit dans une ancienne famille de cette ville et fut instruit dans la philosophie, les sciences et les lettres et il excella dans tout ce qu’il apprit. En conséquence il fut nommé gouverneur de cette région par l’empereur. En raison de sa piété et sa sainteté, il quitta son poste et il fut sacré évêque de ce diocèse (Eparchie – الإبارشية). En conséquence, il se préoccupa de l’enseignement de ses fidèles et les visitait pour les conduire sur le chemin de la sainteté en les affermissant dans la Foi.", 
-    "", 
+    "وُلِدَ هذا القديس مِن أُسْرَة عَريقَة في تَمى الأمْديدْ، وتَعَلَّمَ الفَلْسَفَة والعُلومْ والآدْاب ونَبَغَ فيها، فَعَيَّنَهُ الإمبراطور والياً على مَنْطِقَتُهُ. ونظراً لِحياةْ التَقْوى والقَدَاسْة التي كانَ يَعْيشْها، تَرَكَ أعْمالْ الوِلاية، ورُسِمَ أُسْقُفاً على نَفسْ الإيبارشية، فَاهْتَمَّ بالوْعْظ وتَعْليمْ الشَعْبْ وافْتِقادُه، وقِيادَتِه في طَريقْ القَداسْة والثَبَاتْ عَلى الإيمان في فَتْرَة الاضطهاد.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Le saint se rendit à Alexandrie pour recevoir la bénédiction du pape Pierre, le sceau des martyrs (البابا بطرس خاتم الشهداء), et il y vit les tortures que subissaient les martyrs de cette ville. Il se mit à les encourager et les affermir. Le gouverneur le fit arrêter. De sa prison, le saint adressa une lettre à ses fidèles pour les inciter à demeurer fermes dans la Foi et à supporter les tortures qu’ils auront à subir pour le Nom du Christ afin qu’ils obtiennent la Vie éternelle.", 
-    "", 
+    "مَضى القِدّيسْ إلى الإسْكَندَرية لينال بركة البابا القِدّيسْ بُطْرُسْ خَاتِمْ الشُهداءْ، فرأى هُنَاكْ عَذاباتْ شُهَداء الإسْكَندرية، وكان يُشَدِّدَهُمْ ويُشَجِّعَهُمْ، فَقَبَضَ عَلَيه الوالي، وأوْدَعَهُ في السِجْنْ، فَأرْسَلَ رِسَالَة رَعَويْة إلى شَعْبْ إيبرَاشِيَّتْه يَدْعُوهُمْ أن يَثبَتُوا على الإيمانْ، ويَحتَمِلوا الآلامْ مِنْ أجْلِ اسْمِ المَسِيحْ، ومِن أجْلِ أن يَنالوا الحَياة الأبدية السَعيدة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Ensuite, il fut conduit sur la place des exécutions, il tendit les bras sous forme de croix et pria à haute voix. Les soldats lui tranchèrent la tête et il obtint la couronne du martyre.", 
-    "", 
+    "اُقْتِيدَ إلى ساحِة الاسْتِشْهادْ، وهُنَاكْ مَدَّ ذِراعَيّهِ على شَكْلِ صَليبْ، وصَلَّى بِصَوتٍْ عَالٍْ، ثُم ضَرَبَ الُجنّدُ عُنَقَهُ بَِحدِّ السَيفْ، فَنالَ إكْليل الشِهادَة.", 
     ],
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-    "", 
+    "بَرَكة صَلواتُهُ فَلْتَكُنْ مَعَنا، ولِرَبِنَا المجد دائماً أبدياً آمين. ", 
     ],
     ],
     [
@@ -10753,11 +10778,6 @@ ReadingsArrays.SynaxariumArray= [[
     [
     Prefix.same+"&C=NoActor", 
     "Que la bénédiction de ses prières soit avec nous et gloire soit à notre Seigneur éternellement. Amen !", 
-    "", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    " ", 
     "", 
     ],
     ],

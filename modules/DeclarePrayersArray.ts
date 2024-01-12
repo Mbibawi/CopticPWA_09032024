@@ -3632,7 +3632,7 @@ PrayersArray= [[
   "السَّلامُُ لكِ يا مريم الحمامة الحسنة التى ولدت لنا اللّه الكلمة.", 
   ],
   [
-  Prefix.same +"&C=Diacon", 
+  Prefix.same+"&C=Diacon", 
   "Ⲕ̀ⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲁ̀ⲗⲏⲑⲱⲥ: ⲛⲉⲙ Ⲡⲉⲕⲓⲱⲧ ⲛ̀ⲁ̀ⲅⲁⲑⲟⲥ: ⲛⲉⲙ Ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ: "+giaki.COP+" ⲛⲁⲓ ⲛⲁⲛ.", 
   "Bénis es-tu en vérité, avec ton Père très bon, et l’Esprit-Saint, "+giaki.FR+", aie pitié de nous.", 
   "اك إكسمارؤوت آليثوس نيم بي اكيوت إن آغاثوس نيم بي ابنيفما اثؤواب"+giaki.CA+" ناينان.", 
@@ -6345,74 +6345,74 @@ PrayersArray= [[
   ],
   ],
   [
-    [
-      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek1&C=Title", 
-    "", 
-    "Aspasmos Adam  pour la 1ère semaine de Kiahk", 
-    "", 
-    "اسبسمس آدام للأسبوع الأول من شهر كيهك", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲍⲁⲭⲁⲣⲓⲁⲥ ⲡⲓⲟⲩⲏⲃ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲃⲁⲣⲁⲭⲓⲁⲥ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉ̀ⲣⲫⲉⲓ: ⲉϥⲧⲁⲗⲉ ⲟⲩⲥ̀ⲑⲟⲓⲛⲟⲩϥⲓ ⲉ̀ⲡ̀ϣⲱⲓ.", 
-    "Zacharie le prêtre le fils de Barachie était dans le temple, élevant l’encens.", 
-    "زخارياس بي أويب إبشيري إمفاراشياس إفكي خين بي إرفي إفطالي أو إستوي نوفي إي إبشوي.", 
-    "زكريا الكاهن ابن براخيا فيما هو في الهيكل يرفع البخور.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲉⲧⲁϥⲛⲁⲩ ⲉ̀ⲡⲓⲟ̀ⲩⲱⲓⲛⲓ: �⳥�⳥ ⲉⲧⲭⲏ ϧⲉⲛ ⲡⲉϥϩⲟ ⲁϥⲉ̀ⲣϩⲟϯ ⲟⲩⲟϩ ⲁϥϩⲉⲓ ϧⲁⲣⲁⲧⲟⲩ ⲛ̀ⲛⲉϥ ϭⲁⲗⲁⲩϫ.", 
-    "Quand il vit la lumière, qui était sur son visage, il fut terrifié et tomba, sous ses pieds.", 
-    "إيتاف ناف إي بي أوأويني إتكي خين بيف هو آفئيرهوتي أووه آف هي خاراتو إن نيف إتشالفج.", 
-    "لما رأي النور الكائن في وجه خاف وسقط تحت رجليه.", 
-    ],
-    ],
-    [
-    [
-      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek2&C=Title", 
-    "COP", 
-    "Aspasmos Adam pour la 2ème semaine de Kiahk", 
-    "CA", 
-    "اسبسمس آدام للإسبوع الثاني من شهر كيهك", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Nyok on akhwl: say/ e~youab Maria akhisennoufi nac: m~v~rasi m~pikocmoc.\nOuoh akws e~bol e~roc qen ouc~m/i n~yel/l: ,e ,ere y/e~ymeh n~h~mot Po#c# sop neme.", 
-    "Toi aussi tu as volé, vers Marie Sainte et lui as annoncé, la joie du monde.", 
-    "", 
-    "أنت أيضاً طرت إلي القديسة مريم، وبشرتها بفرح العالم.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "Et tu as proclamé d'une voix allègre: \"Salut à toi ô pleine de grâce, le Seigneur est avec toi.", 
-    "", 
-    "وصرخت إليها بصوت التهليل قائلاً: \"السلام لك يا ممتلئة نعمة، الرب معك\".", 
-    ],
-    ],
-    [
-    [
-      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek4&C=Title", 
-    "", 
-    "Aspasmos Adam pour la 4ème semaine de Kiahk", 
-    "", 
-    "اسبسمس آدام للإسبوع الرابع من شهر كيهك", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ouo~uwini pe V]: efsop qen pio~uwini: han aggeloc n~o~uwini e~terhumnoc erof.\nA~piouwini sai e~bol qen Maria: E~licabet && mici m~pip~rodromoc.", 
-    "Dieu est lumière et Il demeure dans la lumière. Les anges lumineux Le louent.", 
-    "", 
-    "الله هو نور وساكن في نور، وملائكة النور تسبحه.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "Par Marie cette lumière s’est levée en rayonnant. Elisabeth a enfanté le précurseur.", 
-    "", 
-    "النور أشرق من مريم وأليصابات ولدت السابق.", 
-    ],
-    ],
+  [
+  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek1&C=Title", 
+  "", 
+  "Aspasmos Adam  pour la 1ère semaine de Kiahk", 
+  "", 
+  "اسبسمس آدام للأسبوع الأول من شهر كيهك", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲍⲁⲭⲁⲣⲓⲁⲥ ⲡⲓⲟⲩⲏⲃ ⲡ̀ϣⲏⲣⲓ ⲙ̀Ⲃⲁⲣⲁⲭⲓⲁⲥ ⲉⲩⲭⲏ ϧⲉⲛ ⲡⲓⲉ̀ⲣⲫⲉⲓ: ⲉϥⲧⲁⲗⲉ ⲟⲩⲥ̀ⲑⲟⲓⲛⲟⲩϥⲓ ⲉ̀ⲡ̀ϣⲱⲓ.", 
+  "Zacharie le prêtre le fils de Barachie était dans le temple, élevant l’encens.", 
+  "زخارياس بي أويب إبشيري إمفاراشياس إفكي خين بي إرفي إفطالي أو إستوي نوفي إي إبشوي.", 
+  "زكريا الكاهن ابن براخيا فيما هو في الهيكل يرفع البخور.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲉⲧⲁϥⲛⲁⲩ ⲉ̀ⲡⲓⲟ̀ⲩⲱⲓⲛⲓ: �⳥�⳥ ⲉⲧⲭⲏ ϧⲉⲛ ⲡⲉϥϩⲟ ⲁϥⲉ̀ⲣϩⲟϯ ⲟⲩⲟϩ ⲁϥϩⲉⲓ ϧⲁⲣⲁⲧⲟⲩ ⲛ̀ⲛⲉϥ ϭⲁⲗⲁⲩϫ.", 
+  "Quand il vit la lumière, qui était sur son visage, il fut terrifié et tomba, sous ses pieds.", 
+  "إيتاف ناف إي بي أوأويني إتكي خين بيف هو آفئيرهوتي أووه آف هي خاراتو إن نيف إتشالفج.", 
+  "لما رأي النور الكائن في وجه خاف وسقط تحت رجليه.", 
+  ],
+  ],
+  [
+  [
+  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek2&C=Title", 
+  "COP", 
+  "Aspasmos Adam pour la 2ème semaine de Kiahk", 
+  "CA", 
+  "اسبسمس آدام للإسبوع الثاني من شهر كيهك", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Nyok on akhwl: say/ e~youab Maria akhisennoufi nac: m~v~rasi m~pikocmoc.\nOuoh akws e~bol e~roc qen ouc~m/i n~yel/l: ,e ,ere y/e~ymeh n~h~mot Po#c# sop neme.", 
+  "Toi aussi tu as volé, vers Marie Sainte et lui as annoncé, la joie du monde.", 
+  "", 
+  "أنت أيضاً طرت إلي القديسة مريم، وبشرتها بفرح العالم.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "Et tu as proclamé d'une voix allègre: \"Salut à toi ô pleine de grâce, le Seigneur est avec toi.", 
+  "", 
+  "وصرخت إليها بصوت التهليل قائلاً: \"السلام لك يا ممتلئة نعمة، الرب معك\".", 
+  ],
+  ],
+  [
+  [
+  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.KiahkWeek4&C=Title", 
+  "", 
+  "Aspasmos Adam pour la 4ème semaine de Kiahk", 
+  "", 
+  "اسبسمس آدام للإسبوع الرابع من شهر كيهك", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ouo~uwini pe V]: efsop qen pio~uwini: han aggeloc n~o~uwini e~terhumnoc erof.\nA~piouwini sai e~bol qen Maria: E~licabet && mici m~pip~rodromoc.", 
+  "Dieu est lumière et Il demeure dans la lumière. Les anges lumineux Le louent.", 
+  "", 
+  "الله هو نور وساكن في نور، وملائكة النور تسبحه.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "Par Marie cette lumière s’est levée en rayonnant. Elisabeth a enfanté le précurseur.", 
+  "", 
+  "النور أشرق من مريم وأليصابات ولدت السابق.", 
+  ],
+  ],
   [
   [
   Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
@@ -6631,7 +6631,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massStBasil+"Agios&D=$copticFeasts.AnyDay", 
+  Prefix.massStBasil+"Agios&D=$copticFeasts.AnyDay&C=", 
   "", 
   "", 
   "", 
@@ -6711,14 +6711,14 @@ PrayersArray= [[
   [
   Prefix.massCommon+"AgiosComment2&D=$copticFeasts.AnyDay&C=Comments", 
   "Il signe les servants à sa droite et dit :", 
-  "ثُمَّ يرشم الخدام عن يمينه ويقول:", 
+  "ثُمَّ يَرْشِمْ الخُدَّامْ عَنْ يَمِينِه ويَقُول:", 
   ],
   ],
   [
   [
   Prefix.massCommon+"AgiosComment3&D=$copticFeasts.AnyDay&C=Comments", 
   "Il signe les fidèles et dit :", 
-  "ثُمَّ يرشم الشَعْبْ إلى الغرَبّ ويقول:", 
+  "ثُمَّ يَرْشِمْ الشَعْبْ إلى الغرَبّ ويَقول:", 
   ],
   ],
   [
@@ -10891,322 +10891,322 @@ PrayersArray= [[
   ],
   ],
   [
-    [
-    Prefix.communion+"Chant&D=$Seasons.Nativity&C=Title", 
-    "Chant de communion pour la fête de la Nativité", 
-    "في توزيع عيد الميلاد مديحة أَنا أفتح فاي بمجد اللّه", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "أنا أفْتَحْ فاي بِمَجْدْ اللّه ♫♫ وأُرَتِّلُ لِلْمَسِيْحْ عَلَىْ الدَوامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "لِأنَّهُ أَكْمَلْ وَعْدَهُ وأوفَاهْ ♫♫ في إيتاف مَاسْفْ خِيْنْ فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "ترآى المَلاكْ بِصَوتْ التَهْلْيلْ ♫♫ وبَشْرْ رُعُاةْ الأغْنَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "إثفية ايجْينْ مِيسْي إنْ إمّانُوئيل ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "جَمِيعْ اللّغُاتْ تَصْرُخْ بِصِياحْ ♫♫ المَجْدُ لله في العلا وعلى الأرْضْ السَّلامُ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وفي النَاسْ بِهْجَةْ وأفْراحْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "حِينَئِذٍ أتُوا إليْه المَجُوسْ ♫♫ مِنَ المَشْرِقْ باهْتِمَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وسَجَدُوا لاسْمِهِ القُدُّوسْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "خَرُّوا لَهُ بِعِظَمْ إيمان ♫♫ وقدموا قرابين بالتمام", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "مُرَّاً وذَهَبَاً ولُبَان في ♫♫ إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "دانيال أخبرنا ببيان ♫♫ حين رأى وحْيَهُ باستفاهم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "حَجَراً قُطِعْ بِغَيْر يَدِ إنسان ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "دعيت يا بيت لحم أفراثا ♫♫ وتشرفني بأسرارٍعِظَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "سَيِّدنْا منك أتى ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "رتل فيك ميخاؤوس ♫♫ ونطق بخفيات عظام ♫♫", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "على مولد باشويس ايسوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "زهرة نبعت من بيت داود ♫♫ وكوكب أشرق من ابرآم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وقَدّْ تَمَّ الوعْدْ المَوعُودْ ♫♫ في إيتاف مَاسْف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "سالومي ويوسِف النجار ♫♫ قَدّْ نالوا كَرامَاتْ عِظامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "ومَجْدْ الرَبّ عَلَيْهُما أنَارْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "أشعياء نَطَقْ بِسِرورْ وأفراحْ ♫♫ عَذْراء فِي عَقِبْ الأيام", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "تَلِدْ راعي شَعْبَهُ بِصَلاحْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "صبيًا ولِدَ وإبْناً أعْطْيناه ♫♫ مَلاكْ المَشُورَة الأعْظَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "رِئَاسَتِهِ على مِنْكَبَاه ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "صوفونيو عَنِّكْ خَبَّرْ ♫♫ ونَطَقْ بِمَجْدِكْ يا مريم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "شَمْسِ البِرِّ مِنْكِ ظَهَرْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "ضُوءْ الكَوكَبْ أشْرَقْ للمجوس ♫♫ وصَار يرشدهم بإلهام", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "إلى حَيْثُ كَان الرَبّ ايسوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "طَغَمَاتْ العَرْشْ العُلُويينْ ♫♫ يُسَبِّحُونْ بِبَهْجَة ونِظَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "بِصَوتْ الفَرَحْ مُبْتَهِجيْنْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "ظَهَرْ سَيِّدنْا وأَوْفَى الوَعْدْ ♫♫ وجَادَ عَليْنَا بالأنْعَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "تَواضَعْ وأَخَذْ شَكْلِ العَبْدْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "عِمَّانوئيلْ نَورْ مِنْ نُورْ ♫♫ نَوَّرْنَا مِنْ بَعْدِ ظَلامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وصَارْ مَعْنا إلَهْ مَنْظُورْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "غَيْرِ المَرْئي ظَهَرْ الآنْ ♫♫ لِأَجْلِ خَلاصْ عَبْدُه آدم ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وعَتَقْنَا مِنْ أَسْرِ الَشيّطانْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "في المِذّوَد كان مَلْفُوفْ ♫♫ وسَجَدَتْ لَهُ رُعَاة الأَغْنَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وسَبَّحَتْهُ كُلِّ الصِفُوفْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "قَالِ المُرَتِلْ في المَزْمُورْ ♫♫ تَسْجُدْ لَهُ سَائِرْ الآنَامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وتُقَدِّمْ لَهُ هَدايا ونِذُورْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "كُلِّ الأَنْفُسْ مُجْتَمِعْينْ اليْومْ ♫♫ في عِيدَكْ الأعْظَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "بأصْواتْ الفَرَحْ مُبْتَهِجينْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "لُوقَا الرَسُولْ أَخْبَرْ ♫♫ بِما قِيلْ نُوراً أشْرَقْ لِلْأُمَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "ومَجْداً لِشَعْبَكْ اسرائيل ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "مِيلادْ إيسوسْ هَكَذا كَانْ ♫♫ بِعَجائِبْ وأسْرارْ عِظْامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "والكَلِمَة قَدّْ صَارْ إنسْانْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "نُؤْمِنْ باسْمِهِ القُدُّوسْ ♫♫ ونُسَبِّحْ بِمَجْدٍ أعْظَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "آنون خْينْ نْي اخرستيانوس ♫♫ في إيتاف ماسف خين فيسليئم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "هِيرُودُسْ ذَلِكَ المَلْعُونْ ♫♫ أرادَ أنْ يَقْتُلْ رَبّ الآنْامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "إبؤرو إنْ إيه بورانيون ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وغَابْ صَوَابُه المَنْجُوسْ ♫♫ وقَتَلْ رِبَّواتْ أطْفَالْ تَمْامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "مِنْ شأن سَيِّدنْا بي اخرستوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وظَهَرْ مَلاكْ اللّه في الحْينْ ♫♫ لِيوسِفْ يَقُولْ اهْرَبّ قَوامْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "إلى أَرْضِ المَصْرِيينْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وأتَى السَيّدْ مِنْ أورْشَلْيمْ ♫♫ حتى بلغ إلى قسقام", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "فُوقْ السَحَابَة الحَقِيقيةْ مُقيْمْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "لا تَنْسي يا أُمِّ القُدُّوسْ ♫♫ إشْفَعِي فِينَا يا مَرْيَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "أمَامْ سَيِّدنْا بي إخرستوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "يا مَنْ أتْيَتَ مِنْ عُلُوِّ سَمَاكْ ♫♫ وأشْرَقْتَ مِنْ البَتُولْ مَريَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "تَطَلَّعْ عَلْينا بِعَيْنْ رِضَاكْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "والبِيْعْة تَكونْ فِي طَمأنينتك ♫♫ مَحْفْوظَة دايماً يا مَرْيَمْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "", 
-    "وتَكْونْ مِنْصَانَة بِشَفَاعْتَكْ ♫♫ مَحْروسَة طُول الأيامْ", 
-    ],
-    ],
+  [
+  Prefix.communion+"Chant&D=$Seasons.Nativity&C=Title", 
+  "Chant de communion pour la fête de la Nativité", 
+  "في توزيع عيد الميلاد مديحة أَنا أفتح فاي بمجد اللّه", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "أنا أفْتَحْ فاي بِمَجْدْ اللّه ♫♫ وأُرَتِّلُ لِلْمَسِيْحْ عَلَىْ الدَوامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "لِأنَّهُ أَكْمَلْ وَعْدَهُ وأوفَاهْ ♫♫ في إيتاف مَاسْفْ خِيْنْ فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "ترآى المَلاكْ بِصَوتْ التَهْلْيلْ ♫♫ وبَشْرْ رُعُاةْ الأغْنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "إثفية ايجْينْ مِيسْي إنْ إمّانُوئيل ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "جَمِيعْ اللّغُاتْ تَصْرُخْ بِصِياحْ ♫♫ المَجْدُ لله في العلا وعلى الأرْضْ السَّلامُ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وفي النَاسْ بِهْجَةْ وأفْراحْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "حِينَئِذٍ أتُوا إليْه المَجُوسْ ♫♫ مِنَ المَشْرِقْ باهْتِمَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وسَجَدُوا لاسْمِهِ القُدُّوسْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "خَرُّوا لَهُ بِعِظَمْ إيمان ♫♫ وقدموا قرابين بالتمام", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "مُرَّاً وذَهَبَاً ولُبَان في ♫♫ إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "دانيال أخبرنا ببيان ♫♫ حين رأى وحْيَهُ باستفاهم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "حَجَراً قُطِعْ بِغَيْر يَدِ إنسان ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "دعيت يا بيت لحم أفراثا ♫♫ وتشرفني بأسرارٍعِظَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "سَيِّدنْا منك أتى ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "رتل فيك ميخاؤوس ♫♫ ونطق بخفيات عظام ♫♫", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "على مولد باشويس ايسوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "زهرة نبعت من بيت داود ♫♫ وكوكب أشرق من ابرآم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وقَدّْ تَمَّ الوعْدْ المَوعُودْ ♫♫ في إيتاف مَاسْف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "سالومي ويوسِف النجار ♫♫ قَدّْ نالوا كَرامَاتْ عِظامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "ومَجْدْ الرَبّ عَلَيْهُما أنَارْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "أشعياء نَطَقْ بِسِرورْ وأفراحْ ♫♫ عَذْراء فِي عَقِبْ الأيام", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "تَلِدْ راعي شَعْبَهُ بِصَلاحْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "صبيًا ولِدَ وإبْناً أعْطْيناه ♫♫ مَلاكْ المَشُورَة الأعْظَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "رِئَاسَتِهِ على مِنْكَبَاه ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "صوفونيو عَنِّكْ خَبَّرْ ♫♫ ونَطَقْ بِمَجْدِكْ يا مريم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "شَمْسِ البِرِّ مِنْكِ ظَهَرْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "ضُوءْ الكَوكَبْ أشْرَقْ للمجوس ♫♫ وصَار يرشدهم بإلهام", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "إلى حَيْثُ كَان الرَبّ ايسوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "طَغَمَاتْ العَرْشْ العُلُويينْ ♫♫ يُسَبِّحُونْ بِبَهْجَة ونِظَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "بِصَوتْ الفَرَحْ مُبْتَهِجيْنْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "ظَهَرْ سَيِّدنْا وأَوْفَى الوَعْدْ ♫♫ وجَادَ عَليْنَا بالأنْعَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "تَواضَعْ وأَخَذْ شَكْلِ العَبْدْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "عِمَّانوئيلْ نَورْ مِنْ نُورْ ♫♫ نَوَّرْنَا مِنْ بَعْدِ ظَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وصَارْ مَعْنا إلَهْ مَنْظُورْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "غَيْرِ المَرْئي ظَهَرْ الآنْ ♫♫ لِأَجْلِ خَلاصْ عَبْدُه آدم ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وعَتَقْنَا مِنْ أَسْرِ الَشيّطانْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "في المِذّوَد كان مَلْفُوفْ ♫♫ وسَجَدَتْ لَهُ رُعَاة الأَغْنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وسَبَّحَتْهُ كُلِّ الصِفُوفْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "قَالِ المُرَتِلْ في المَزْمُورْ ♫♫ تَسْجُدْ لَهُ سَائِرْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وتُقَدِّمْ لَهُ هَدايا ونِذُورْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "كُلِّ الأَنْفُسْ مُجْتَمِعْينْ اليْومْ ♫♫ في عِيدَكْ الأعْظَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "بأصْواتْ الفَرَحْ مُبْتَهِجينْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "لُوقَا الرَسُولْ أَخْبَرْ ♫♫ بِما قِيلْ نُوراً أشْرَقْ لِلْأُمَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "ومَجْداً لِشَعْبَكْ اسرائيل ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "مِيلادْ إيسوسْ هَكَذا كَانْ ♫♫ بِعَجائِبْ وأسْرارْ عِظْامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "والكَلِمَة قَدّْ صَارْ إنسْانْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "نُؤْمِنْ باسْمِهِ القُدُّوسْ ♫♫ ونُسَبِّحْ بِمَجْدٍ أعْظَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "آنون خْينْ نْي اخرستيانوس ♫♫ في إيتاف ماسف خين فيسليئم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "هِيرُودُسْ ذَلِكَ المَلْعُونْ ♫♫ أرادَ أنْ يَقْتُلْ رَبّ الآنْامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "إبؤرو إنْ إيه بورانيون ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وغَابْ صَوَابُه المَنْجُوسْ ♫♫ وقَتَلْ رِبَّواتْ أطْفَالْ تَمْامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "مِنْ شأن سَيِّدنْا بي اخرستوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وظَهَرْ مَلاكْ اللّه في الحْينْ ♫♫ لِيوسِفْ يَقُولْ اهْرَبّ قَوامْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "إلى أَرْضِ المَصْرِيينْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وأتَى السَيّدْ مِنْ أورْشَلْيمْ ♫♫ حتى بلغ إلى قسقام", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "فُوقْ السَحَابَة الحَقِيقيةْ مُقيْمْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "لا تَنْسي يا أُمِّ القُدُّوسْ ♫♫ إشْفَعِي فِينَا يا مَرْيَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "أمَامْ سَيِّدنْا بي إخرستوس ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "يا مَنْ أتْيَتَ مِنْ عُلُوِّ سَمَاكْ ♫♫ وأشْرَقْتَ مِنْ البَتُولْ مَريَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "تَطَلَّعْ عَلْينا بِعَيْنْ رِضَاكْ ♫♫ في إيتاف ماسف خين فيسليئيم", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "والبِيْعْة تَكونْ فِي طَمأنينتك ♫♫ مَحْفْوظَة دايماً يا مَرْيَمْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "وتَكْونْ مِنْصَانَة بِشَفَاعْتَكْ ♫♫ مَحْروسَة طُول الأيامْ", 
+  ],
+  ],
   [
   [
   Prefix.cymbalVerses+"LordFeastsEnd&D=$copticFeasts.AnyDay&C=Title", 
@@ -14893,8 +14893,8 @@ PrayersArray= [[
   "انعم يا رَبّ بمسرتك على صهيون، ولتُبنَ أسوار أورشليم. حينئذ تسر بذبائح البر قرَبّانا ومحرقات ويقرَبّون على مذابحك العجول.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15047,8 +15047,8 @@ PrayersArray= [[
   "فلهذا لا يقوم المنافقون في الدينونة، ولا الخطاة في مجمع الصديقين. لِأنَّ الرَبّ يعرف طريق الأبرار، وأما طريق المنافقين فتباد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15088,8 +15088,8 @@ PrayersArray= [[
   "فالآن أيُّهَا المُلُوكُ افهموا، وتأدبوا يا جَمِيعْ قضاة الأرْضْ اعبدوا الرَبّ بخشية. وهللوا لَهُ برعدة. الزموا الأدب لئلا يغضب الرَبّ فتضلوا عن طريق الحق. عِنْدَمَا يتقد غضبه بسرعة، طوبى لجميع المتكلين عليه", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15143,8 +15143,8 @@ PrayersArray= [[
   "للرَبّ الخلاص وعلى شعبه بركته.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15184,8 +15184,8 @@ PrayersArray= [[
   " كثيرون يقولون: من يرينا الخَيّْرَاتْ؟ قَدّْ أضاء علينا نور وجهك يا رَبّ. أعطيت سرورا لقلبي أوفر من الذين كثرت حنطتهم وخمرهم وزيتهم. فبالسَّلامُة أضطجع أيضا وأنام، لأنَّكَ أنْتَ وحدك يا رَبّ أسكنتني على الرجاء.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15232,8 +15232,8 @@ PrayersArray= [[
   "وليفرح جَمِيعْ المتكلين عليك، إلى الأبَدْ يسرون وتحل فيهم. ويفتخر بك كُلِّ الذين يحبون اسْمَكْ. لأنَّكَ أنْتَ باركت الصديق يا رَبّ. كما بترس المسرة كللتنا.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15273,8 +15273,8 @@ PrayersArray= [[
   "ابعدوا عني يا جَمِيعْ فاعلي الإثُمَّ. لِأنَّ الرَبّ قَدّْ سمع صوت بكائي. الرَبّ سمع تضرعي، الرَبّ لصلاتي قبل، فليَخزَ وليضطرَبّ جدا جَمِيعْ أعدائي، وليرتدوا إلى ورائهم بالخزي سريعا جدا.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15314,8 +15314,8 @@ PrayersArray= [[
   "أَيُّهَااَلرَبّ رَبّنا. ما أعجب اسمك في الأرْضْ كلها.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15369,8 +15369,8 @@ PrayersArray= [[
   "المنافقون حولنا يمشون. مِثْلَ ارتفاعك أكثرت أعمار بنى البشر.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15410,8 +15410,8 @@ PrayersArray= [[
   "أما أَنا فعلى رَحْمَتُكَ توكُلَّت. يبتهج قَلْبِي بخلاصك. أُسَبِّحْ الرَبّ المحسنَ إلي، وأُرَتِّلُ لاسم الرَبّ العلي. ", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15451,8 +15451,8 @@ PrayersArray= [[
   "الذي يحلف لقريبه ولا يغدر به. ولا يعطى فضته بالرَبّا، ولا يقبل الرشوة على الأبرياء. الذي يصنع هَذا لا يتزعزع إلى الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15520,8 +15520,8 @@ PrayersArray= [[
   "قد عرفتني سبل الحياة. تملأني فرحا مَعَ وجهك. البهجة في يمينك إلى الانقضاء.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15561,8 +15561,8 @@ PrayersArray= [[
   "الهفوات من يشعر بها؟ من الخطايا المستترة يا رَبّ طهرني، ومن الغرَبّاء احفظ عبدك حتى لا يتسلطوا على، فحينئذ أكون بلا عيب، وأتنقى من خطية عظيمة، وتكون جَمِيعْ أقوال فمي وفكر قَلْبِي مرضية أمامك في كُلِّ حين. يا رَبّ أنْتَ مُعِينِي ومخلصي.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15665,8 +15665,8 @@ PrayersArray= [[
   "الذين لا شر فيهم والمستقيمون لصقوا بي، لأني انتظرتك يا رَبّ. يا اللّه أنقذ إسرائيل مِنْ جَمِيعْ شدائده.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15762,8 +15762,8 @@ PrayersArray= [[
   "انتظر الرَبّّ، تقوَّ وليتشدد قلبك وانتظر الرَبّ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15824,8 +15824,8 @@ PrayersArray= [[
   "روحك القُدُّوسْ فليهدني إلى الاستقامة، من أجل اسمك يا رَبّ تحييني. بحقك تخرج من الشدة نَفْسِي، وبرحمتك تستأصل أعدائي. وتهلك جَمِيعْ مضايقي نَفْسِي، لأني أَنا هو عبدك أنا.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15879,8 +15879,8 @@ PrayersArray= [[
   "يوحَنّا شَهدَ لَهُ وصَرَخَ قَائِلاً: هَذا هُوَّ الذي قُلْتُ عَنْهُ إنَّ الذي يَأتْي بَعْديْ كَانَ قَبْلي، لِأنَّهُ كَانَ أَقْدَمْ مِني. ونَحْنُ جَميعَاً أخْذْنَا مِنْ مِلئهِ، ونِعْمَةٌ عِوضَاً عَنْ نِعْمَةٍ. لِأنَّ النَامُوسْ بِموسى أُعْطْى. أَمَّا النعْمَة والحَقّْ فَبِيَسُوعْ المَسِيحْ صَار. والَمْجدُ لله دائمًا أبديًا آمْينْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -15972,43 +15972,43 @@ PrayersArray= [[
   "بِالْنِعْمَة والرأفة ومَحَبَةْ الَبشَرْ اللواتي لابْنَكَ الوَحِيد يَسُوعْ المسيح، وموهبة روحك القُدُّوسْ. الآنْ وكُلَّ أوانْ وإلى الأبد. آمْينْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+'FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay'
-  ]
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay", 
   ],
-  [
-    [
-      Prefix.bookOfHours+"FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay&C=SubTitle", 
-      "", 
-      "Seconde prière d'absolution", 
-      "", 
-      "تَحليلْ آخَرْ", 
-      ],
-      [
-      Prefix.same+"&C=", 
-      "", 
-      "Toi qui envois la lumière qui nous éclaire. Tu fais lever le soleil sur les bons comme sur les méchants. Tu créas la lumière pour éclairer l'univers. Eclaire nos coeurs, Toi, le maître de chacun. ", 
-      "", 
-      "أَيُّهَااَلباعث النور فينطلق، المشرق شمسه على الأبرار والأشرار، الذي صنع النور الذي يضئ على المسكونة، أنر عقولنا وقلوبنا وأفهامنا يا سيد الكل.", 
-      ],
-      [
-      Prefix.same+"&C=", 
-      "", 
-      "Accorde-nous aujourd'hui de Te satisfaire. Protège-nous de tout mal, de tout péché et de toute force de l'ennemi.", 
-      "", 
-      "هب لنا في هَذا اليوم الحاضر أنْ نرضيك فيه، واحرسنا من كُلِّ شيء رديء ومن كُلِّ خطيئة، ومن كُلِّ قوة مضادة.", 
-      ],
-      [
-      Prefix.same+"&C=", 
-      "", 
-      "Par le Christ Jésus notre Seigneur avec qui Tu es béni ainsi que le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen !", 
-      "", 
-      "بِالْمَسِيحْ يَسُوعْ رَبّنا، هَذا الذي أنْتَ مُبَارَكْ مَعَه مَعَ الْرُوحْ القُدُسْ المحيى، المساوي لك، الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
-      ],
   ],
   [
   [
-    Prefix.bookOfHours+"AllHoursFinalPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  Prefix.bookOfHours+"FirstHourEndOfHourPrayer2&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "Seconde prière d'absolution", 
+  "", 
+  "تَحليلْ آخَرْ", 
+  ],
+  [
+  Prefix.same+"&C=", 
+  "", 
+  "Toi qui envois la lumière qui nous éclaire. Tu fais lever le soleil sur les bons comme sur les méchants. Tu créas la lumière pour éclairer l'univers. Eclaire nos coeurs, Toi, le maître de chacun. ", 
+  "", 
+  "أَيُّهَااَلباعث النور فينطلق، المشرق شمسه على الأبرار والأشرار، الذي صنع النور الذي يضئ على المسكونة، أنر عقولنا وقلوبنا وأفهامنا يا سيد الكل.", 
+  ],
+  [
+  Prefix.same+"&C=", 
+  "", 
+  "Accorde-nous aujourd'hui de Te satisfaire. Protège-nous de tout mal, de tout péché et de toute force de l'ennemi.", 
+  "", 
+  "هب لنا في هَذا اليوم الحاضر أنْ نرضيك فيه، واحرسنا من كُلِّ شيء رديء ومن كُلِّ خطيئة، ومن كُلِّ قوة مضادة.", 
+  ],
+  [
+  Prefix.same+"&C=", 
+  "", 
+  "Par le Christ Jésus notre Seigneur avec qui Tu es béni ainsi que le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen !", 
+  "", 
+  "بِالْمَسِيحْ يَسُوعْ رَبّنا، هَذا الذي أنْتَ مُبَارَكْ مَعَه مَعَ الْرُوحْ القُدُسْ المحيى، المساوي لك، الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
+  ],
+  ],
+  [
+  [
+  Prefix.bookOfHours+"AllHoursFinalPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "Conclusion de chaque heure", 
   "", 
@@ -16089,8 +16089,8 @@ PrayersArray= [[
   "يا رَبّ خلص مَلِكك واستجب لنا يوم ندعوك.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16132,13 +16132,13 @@ PrayersArray= [[
   "هيأت قدامى مائدة تجاه مضايقي. مسحت بالزيت رأسي، وكأسك روتني بقوة. ورحمتك تدركني جَمِيعْ أيام حياتي، ومسكني في بيت الرَبّ إلى مدى الأيام.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-  ], 
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -16198,8 +16198,8 @@ PrayersArray= [[
   "من هو هَذا ملك المَجْدُ؟ رَبّ القوات، هَذا هو ملك المَجْدُ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16246,8 +16246,8 @@ PrayersArray= [[
   "أما أَنا فبدعتي سلكت. أنقذني وارحمني لِأنَّ رجلي وقفت في الاستقامة. في الجماعات أُبَارِكُكَ يا رَبّ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16285,11 +16285,11 @@ PrayersArray= [[
   "Au déluge le Seigneur a siégé ; Il siège, le Seigneur, il est Roi pour toujours ! Le Seigneur accorde à son peuple la puissance, le Seigneur bénit son peuple en lui donnant la paix.", 
   "", 
   "الرَبّ يسكن في الطوفان، الرَبّ يجلس ملكا إلى الأبد. الرَبّ يعطى شعبه قوة، الرَبّ يبارك شعبه بالسَّلامُ.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -16342,8 +16342,8 @@ PrayersArray= [[
   "سمع الرَبّ فرحمني، الرَبّ صار لي عونا. حولت نوحي إلى فرح لي، مزقت مسحي ومنطقتني سرورا. لكي ترتل لَكَ نَفْسِي ولا يحزن قَلْبِي. أيُّهَا الرَبّ إلهي إلى الأبَدْ أعترف لك.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16404,8 +16404,8 @@ PrayersArray= [[
   "قريب هو الرَبّ من منسحقي القلب، ويخلص المتواضعين بالروح. كثيرة هي أحزان الصديقين، ومن جميعها ينجيهم الرَبّ. يحفظ الرَبّ جَمِيعْ عظامهم، وواحدة منها لا تنكسر. يموت الخطاة بشرهم، ومبغضو الصديق يندمون. الرَبّ ينقذ نفوس عبيده، ولا يندم جَمِيعْ المتكلين عليه.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16466,8 +16466,8 @@ PrayersArray= [[
   "مبارك الرَبّ إله إسرائيل، من الأزل وإلى الأبَدْ يكون.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16507,8 +16507,8 @@ PrayersArray= [[
   "لماذا أنْتَ حزينة يا نَفْسِي، ولماذا تزعجينني؟ توكُلَّي على اللّه فإني أعترف له، خلاص وجهي هو إلهي.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16576,8 +16576,8 @@ PrayersArray= [[
   "ويكون لَكَ أبناءٌ عوضا عن آبائك، تقيمهم رؤساء على سَائِرْ الأرض، ويذكرون اسمك جيلا بعد جيل. من أجل ذلك تعترف لَكَ الشِعُوبْ يا اللّه إلى الدهر، وإلى دَهْرِ الدِهُورْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16624,8 +16624,8 @@ PrayersArray= [[
   "ثابروا واعلموا أنى أَنا هو اللّه، أرتفع بين الأمم وأتعالى في الأرْضَ. الرَبّ إله القوات مَعَنا، ناصرنا هو إله يعقوب.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16658,8 +16658,8 @@ PrayersArray= [[
   "رؤساء الشِعُوبْ اجتمعوا مَعَ إله إبراهيم، لِأنَّ أعزاء اللّه قَدّْ ارتفعوا في الأرْضْ جدا.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16690,11 +16690,11 @@ PrayersArray= [[
   "Moi Je suis La vraie vigne et Mon Père est le Vigneron. Tout sarment qui est en Moi mais qui ne porte pas de fruit, mon Père l’enlève; et tout sarment qui donne du fruit, Il le nettoie pour qu'il en donne d’avantage. Mais vous, déjà vous voici nets et purifiés grâce à la parole que Je vous ai dite: demeurez en Moi, comme moi en vous.", 
   "", 
   "أنا هو الكرمة الحقيقية وأبى الكرام. كُلِّ غصن فيّ لا يأتي بثُمَّر يقطعه. وكُلَّ ما يأتي بثُمَّر ينقيه لِيأتْي بثُمَّر أكثر. وأنتم من قبْل أنقياءُ من أجل الكلام الذي كلمتكم به. اثبتوا في وأنا أيضا فيكم.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -16859,8 +16859,8 @@ PrayersArray= [[
   "بحقك استأصلهم. فأذبح لَكَ طائعا، وأعترف لاسْمِكَ يا رَبّ فإنه صالح. لأنَّكَ مِنْ جَمِيعْ الشدائد نجيتني، وبأعدائي نظرت عيناي.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16914,8 +16914,8 @@ PrayersArray= [[
   "اَللَّهُمَّ ارتفع على السَّمَواتْ، وليرتفع مَجْدَكْ على سَائِرْ الأرْضَ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16948,8 +16948,8 @@ PrayersArray= [[
   "هكذا أُرَتِّلُ لاسْمِكَ إلى دَهْرِ الدِهُورْ، لأفي نذوري يَومَاً فيوما.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -16982,8 +16982,8 @@ PrayersArray= [[
   "التحقت نَفْسِي وراءك، ويَمِينُكَ عضدتني. أَمَّا الذين طَلَبوا نَفْسِي للهلاك، فيدخلون في أسافل الأرْضَ. ويدفعون إلى يَدِ السيف، ويكونون أنصبة للثعالب. أَمَّا المَلِكْ فيفرح باللّه، ويفتخر كُلِّ من يحلف به. لِأنَّ أفواه المُتَكَلِمِينْ بالظلم تسد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17023,8 +17023,8 @@ PrayersArray= [[
   "الأرض أعْطَتْ ثُمَّرتها، فَليُبَارِكْنا اللّه إلَهْنَا. ليباركنا اللّه، فلتخشه جَمِيعْ أقطار الأرْضَ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17057,8 +17057,8 @@ PrayersArray= [[
   "وأما أَنا فمسكين وفقير، اَللَّهُمَّ أعنى. أنْتَ مُعِينِي ومُخَلِّصي يا رَبّ فلا تبطئ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17098,8 +17098,8 @@ PrayersArray= [[
   "الرَبّ لا يمنع الخَيّْرَاتْ عن السالكين بالدعة. يا رَبّ إله القوات، طوبى للإنسان المتكل عليك.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17139,8 +17139,8 @@ PrayersArray= [[
   "لَيسكن المَجْدُ في أرضنا. الرَحْمَةْ والحق تلاقيا، البر والسَّلامُ تلاثُمَّا. الحق من الأرْضْ أشرق، والبر من السَّمَاء تطلع. لِأنَّ الرَبّ يعطى الخَيّْرَاتْ، وأرضنا تعطى ثُمَّرها. البر أمامه يسلك ويطأ في طريق خطواته.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17180,8 +17180,8 @@ PrayersArray= [[
   "اَللَّهُمَّ إن مخالفي الناموس قَدّْ قاموا علىّ ومجمع الأعزاء طَلَبوا نَفْسِي، ولم يسبقوا أنْ يجعلوك أمامهم. وأنت أيُّهَا الرَبّ الإله أنْتَ رؤوف ورحيم. أنْتَ طويل الروح، وكثير الرَحْمَةْ وصادق. انظر إلي وارحمني. أعطِ عزة لعبدك، وخلص ابن أمتك. اصنع مَعَي آية صالحة، ليرى ذلك مبغضي فيخزوا. لأنَّكَ أنْتَ يا رَبّ أعنتني وعزيتني.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17207,8 +17207,8 @@ PrayersArray= [[
   "أذكر رَهَبَ وبابل اللتين تعرفانني. هوذا القبائل الغريبة وصور وشعب الحبشة، هؤلاء كانوا هناك. صهيون الأم تقول إن إنسانا وإنسانا ولد فيها، وهو العلي الذي أسسها إلى الأبد. الرَبّ يحدّث في كتب الشِعُوبْ والرؤساء، أولئك الذين ولدوا فيها. لِأنَّ سكنى الفرحين جميعهم فيكِ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17234,8 +17234,8 @@ PrayersArray= [[
   "لأنك أنْتَ يا رَبّ رجائي. جعلتَ العليَّ ملجأك. فلا تصيبك الشرور، ولا تدنو ضرَبّة من مسكنك. لِأنَّهُ يوصى ملائكته بك، ليحفظوك في سَائِرْ طرقك. وعلى أيديهم يحملونك، لئلا تعثر بحجر رجلك. تطأ الأفعى وملكَ الحيات، وتسحق الأسد والتنين. لِأنَّهُ على أتكل فأنجيه، أرَفعه (أستره) لِأنَّهُ عرف اسمي. يدعوني فأستجيب له. مَعَه أَنا في الشدة، أنقذه وأمجده. ومن طول الأيام أشبعه، وأريه خلاصي.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17268,8 +17268,8 @@ PrayersArray= [[
   "عجيبة هي أهوال البحر، وعجيب هو الرَبّ في الأعالي. شهاداته صادقة جدا، لبيتك ينبغي التقديس يا رَبّ طول الأيام.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17372,8 +17372,8 @@ PrayersArray= [[
   "هكذا فليضئ نوركم قدام الناس، لكي يروا أعمالكم الصالحة فيمجدوا أباكم الذي في السَّمَواتْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17572,8 +17572,8 @@ PrayersArray= [[
   "فلتفرح السَّمَواتْ ولتبتهج الأرْضْ وليعج البحر وجميع ملئه، تفرح الوديان وكُلَّ ما فيها، حينئذ يبتهج كُلِّ شجر الغاب أمام وَجْهْ الرَبّ، لِأنَّهُ يأتي ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17648,8 +17648,8 @@ PrayersArray= [[
   "افرحوا أيُّهَا الصديقون بالرَبّ. واعترفوا لذكر قدسه.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17703,8 +17703,8 @@ PrayersArray= [[
   "تصفق جَمِيعْ الِأنَّهُار، الجبال تبتهج أمام وَجْهْ الرَبّ، لِأنَّهُ أتى ليدين الأرض، يدين المسكونة بالعدل والشعوب بالاستقامة", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17772,8 +17772,8 @@ PrayersArray= [[
   "ارفعوا الرَبّ إلهنا، واسجدوا في جبله المُقَدَّسْ، فإن الرَبَّّ إلَهْنَا قُدُّوسْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17813,8 +17813,8 @@ PrayersArray= [[
   "اعترفوا له، وباركوا اسمه. فإن الرَبّ صالح هو، والى الأبَدْ رحمته، وإلى جيل فجيل حقه.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17854,8 +17854,8 @@ PrayersArray= [[
   "في أوقَاتْ الغدوات كُنْتُ أقتل جَمِيعْ خطاة الأرض، لأبيد من مدينة الرَبّ جَمِيعْ صانعي الإثُمَّ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17909,8 +17909,8 @@ PrayersArray= [[
   "يسحق رؤوس كثيرين على الأرْضَ. وفي الطريق يشرَبّ الماء من الوادي. لذلكَ يرفع رأسه.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -17978,8 +17978,8 @@ PrayersArray= [[
   "رأس الحكمة مخافة الرَبّ، والفهم صالح لكل من يعمل بِهِ، وتسبحته دائمة إلى الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18033,8 +18033,8 @@ PrayersArray= [[
   "الخاطئ يبصر فيغتاظ ويصر بأسنانه ويذوب، شهوة الخاطئ تبيد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18081,8 +18081,8 @@ PrayersArray= [[
   "الذي يجعل العاقر ساكنة في بيت أم أولادٍ فرحة.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18136,8 +18136,8 @@ PrayersArray= [[
   "أرضي الرَبَّّ أمامه في كورة الأحياء.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18184,8 +18184,8 @@ PrayersArray= [[
   "أوفي للرَبّ نذوري في ديار بيت الرَبّ، قدام كُلِّ شعبه، في وسط أورشليم.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18232,8 +18232,8 @@ PrayersArray= [[
   "ففعلوا هَكَذا وأتكأوهم أجمعين. فأخذ الخمسَ خبزاتٍ والسمكتين، ونظر إلى السَّمَاء، وباركها وقسمها، وأعطى التلاميذ ليضعوا أمام الجموع. فأكلوا جميعهم وشبعوا. ثُمَّ رفعوا ما فضل عَنْهُمْ اثنتي عشرة قفة مملوءة.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18397,8 +18397,8 @@ PrayersArray= [[
   "سَبِّحُوا الرَبَّّ يا جَمِيعْ الأُمَمْ ولتباركه كافة الشعوب. لِأنَّ رحمته قَدّْ ثبتت علينا وحق الرَبّ يدوم إلى الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18515,8 +18515,8 @@ PrayersArray= [[
   "اشكروا الرَبّ فإنه صالح وأن إلى الأبَدْ رحمته.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18563,8 +18563,8 @@ PrayersArray= [[
   "طويلا سكنتْ نَفْسِي في الغرَبّة، ومَعَ مبغضي السَّلامُ كُنْتُ صاحب سَلام، وحين كُنْتُ أكلمهم كانوا يقاتلونني باطلاً.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18604,8 +18604,8 @@ PrayersArray= [[
   "الرَبّ يحفظك من كُلِّ سوء. الرَبّ يحفظ نفسك. الرَبّ يحفظ دخولك وخروجك، من الآنْ والي الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18652,8 +18652,8 @@ PrayersArray= [[
   "من أجل اخوتي وأقرَبّائي تكلمت من أجلك بالسَّلامُ، ومن أجل بيت الرَبّ إلَهْنَا التمست لَكَ الخَيّْرَاتْ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18686,8 +18686,8 @@ PrayersArray= [[
   "العار اردده على المخصبين والهوان على المتعظمين.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18718,11 +18718,11 @@ PrayersArray= [[
   "Béni soit le Seigneur qui n'a pas fait de nous la proie de leurs dents ! Comme un oiseau, nous avons échappé au filet du chasseur ; le filet s'est rompu : nous avons échappé. Notre secours est le nom du Seigneur qui a fait le ciel et la terre.", 
   "", 
   "مبارك الرَبّ الذي لَمّْ يسلمنا فريسة لأسنانهم. نجت أنفسنا مِثْلَ العصفور من فخ الصيادين، الفخ انكسر ونحن نجونا، عوننا باسم الرَبّ الذي صنع السَّمَاء والأرض.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -18754,8 +18754,8 @@ PrayersArray= [[
   "أحسن يا رَبّ إلى الصالحين وإلى المستقيمي القلوب. أَمَّا الذين يميلون إلى العثرات فينزعهم الرَبّ مَعَ فعلة الإثُمَّ. والسَّلامُ على إسرائيل.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18781,8 +18781,8 @@ PrayersArray= [[
   "اردد يا رَبّ سبينا مِثْلَ السيول في الجنوب. الذين يزرعون بالدموع يحصدون بالابتهاج. سيرا كانوا يسيرون وهم باكون حاملين بذارهم، ويعودون بالفرح حاملين أغمارهم.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18815,8 +18815,8 @@ PrayersArray= [[
   "البنون ميراث من الرَبّ أجرة ثُمَّرة البطن. كالسهام بيد القوي كذلك أبناء المتيقظين. مغبوط هو الرجل الذي يملا جعبته منهم. حينئذ لا يخزون إذا كلموا أعداءهم في الأبواب.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18842,8 +18842,8 @@ PrayersArray= [[
   "هكذا يُبارَك الإنسان المتقي الرَبَّّ. يباركك الرَبّ من صهيون، وتبصر خيرات أورشليم جَمِيعْ أيام حياتك، وترى بني بنيك، والسَّلامُ على إسرائيل.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18883,8 +18883,8 @@ PrayersArray= [[
   "باركناكم باسم الرَبّ.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -18917,8 +18917,8 @@ PrayersArray= [[
   "فكان ينتهرهم ولا يدَعهم ينطقون، لِأنَّهُم كانوا قَدّْ عرفوه أنه هو المسيح", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19061,11 +19061,11 @@ PrayersArray= [[
   "C'est lui qui rachètera Israël de toutes ses fautes.", 
   "", 
   "عظيم هو خلاصه وهو يفتدي إسرائيل من كُلِّ آثامه.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -19090,8 +19090,8 @@ PrayersArray= [[
   "فإن كُنْتُ لَمّْ أتضع لَكِنْ رفعت صوتي مِثْلَ الفطيم من اللبن على أمه، كذلك المجازاة على نَفْسِي. فليتكل إسرائيل على الرَبّ من الآنْ والى الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19138,8 +19138,8 @@ PrayersArray= [[
   "لأن الرَبّ اختار صهيون ورضيها مسكنًا له. هَذا هو موضع راحتي إلى أبد الأبد، ههنا أسكن لأني أردته. لصيدها أبارك بركة، لمساكينها أشبع خبزا، لكهنتها ألبس الخلاص وأبرارها يبتهجون ابتهاجا. هناك أقيم قرنا لداود. هيأتُ سراجا لمسيحي. لأعدائه ألبس الخزي وعليه يزهر قدسي.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19172,8 +19172,8 @@ PrayersArray= [[
   "لأن هناك أمر الرَبّ بالبركة والحياة إلى الأبد.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19199,8 +19199,8 @@ PrayersArray= [[
   "في الليالي ارفعوا أيديكم إلى القدس وباركوا الرَبّ. يبارككم الرَبّ من صهيون الذي خلق السَّمَاء والأرض.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19240,8 +19240,8 @@ PrayersArray= [[
   "يا بنت بابل الشقية طوبى لمن يكافئك مكافأتك التي جازيتينا. طوبى لمن يمسك أطفالك ويدفنهم عند الصخرة.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19288,8 +19288,8 @@ PrayersArray= [[
   "الرَبّ يجازي عني، يا رَبّ رَحْمَتُكَ دائمة إلى الأبد. أعمال يديك يا رَبّ لا تتركها.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19334,11 +19334,11 @@ PrayersArray= [[
   "Les impies tomberont dans leur piège ; seul, moi, je passerai.", 
   "", 
   "يسقط الخطاة في شبكتهم، وأكون أَنا وحدي حتى يجوزَ الإثُمَّ.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -19370,8 +19370,8 @@ PrayersArray= [[
   "أنصت إلى طلبتي فإنني قَدّْ تذللتُ جدا. نجني من الذين يضطهدونني لِأنَّهُم قَدّْ اعتزوا أكثر مني. أخرج من الحبس نَفْسِي، لكي أشكر اسمك يا رَبّ. إياي ينتظر الصديقون حتى تجازيني.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19416,11 +19416,11 @@ PrayersArray= [[
   "D'âge en âge, le Seigneur régnera : ton Dieu, ô Sion, pour toujours !", 
   "", 
   "يملك الرَبّ إلى الدهر، وإلهك يا صهيون من جيل إلى جيل.", 
-    ],
-    [
-      Prefix.placeHolder,
-      Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
-    ],
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
+  ],
   ],
   [
   [
@@ -19473,8 +19473,8 @@ PrayersArray= [[
   "لا يؤْثر قوة الفرس ولا يسر بساقي الرجل، بل يسر الرَبّ بخائفيه وبالراجين رحمته.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19514,8 +19514,8 @@ PrayersArray= [[
   "المخبر كلمته ليعقوب وفرائضه وأحكامه لإسرائيل. لم يصنع هَكَذا بِكُلَّ الأمم، وأحكامُه لَمّْ يوضحها لهم.", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19541,8 +19541,8 @@ PrayersArray= [[
   "فأقبل بالروح إلى الهَيْكَلْ. ولما دخل بالطفل يَسُوعْ أبواه ليصنعا عنه كما يجب في الناموس، حمله سمعان على ذراعيه وبارك اللّه قائلا: \"الآن يا سيدي تطلق عبدك بسلام حسب قولك، لِأنَّ عيني قَدّْ أبصرتا خلاصك الذي أعددته قدام جَمِيعْ الشعوب. نورا تجلى للأمم، ومجدا لشعبك إسرائيل.\"", 
   ],
   [
-    Prefix.placeHolder,
-    Prefix.bookOfHours + "GospelEnd&D=$copticFeasts.AnyDay"
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -19628,362 +19628,363 @@ PrayersArray= [[
   ],
   ],
   [
-    [
-    Prefix.massCommon + "Agios&D=$Seasons.Nativity&C=Title", 
-    "", 
-    "Ⲏ̀ ⲡⲁⲣⲑⲉⲛⲟⲥ", 
-    "", 
-    "لحن إيبارثيوس", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲏ̀ ⲡⲁⲣⲑⲉⲛⲟⲥ ⲥⲏⲙⲉⲣⲟⲛ ⲧⲟⲛ ⲩ̀ⲡⲉⲣⲟⲩⲥⲓⲟⲛ ⲧⲓⲕⲧⲓ: ⲕⲉ ⲏ̀ ⲅⲏ ⲧⲟ ⲥ̀ⲡⲏⲗⲉⲟⲛ ⲧⲱ ⲁⲡⲣⲟⲥⲓⲧⲱ ⲡ̀ⲣⲟⲥⲁⲅⲓ:", 
-    "Aujourd'hui la Vierge donne naissance à celui qui est sublime par nature la terre offre une grotte à Celui qui est hors d’atteinte ", 
-    "إى بارثينوس سىميرون طون إى بيرو سيون تيك تى: كي إى جي تو سبىلي أون طو أبرو سيطو إبرو صاجى:", 
-    "اليوم ، البَتُولْ    تَلِدْ    الفَائِقْ الجَوهْرْ،  والأَرْض تُقَرِّبْ المَغَارة لِغَيْرِ المُقْتَرَبْ إليه.  ", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "ⲁⲅⲅⲉⲗⲓ ⲙⲉⲧⲁ  ⲡⲓⲙⲉⲛⲱⲛ ⲇⲟⲝⲟⲗⲟⲅⲟⲩⲥⲓ: ⲙⲁⲅⲓ ⲇⲉ ⲙⲉⲧⲁ ⲁⲥⲧⲉⲣⲟⲥ ⲟ̀ⲇⲓⲡⲟⲣⲟⲩⲥⲓ: ⲇⲓ ⲏ̀ⲙⲁⲥ ⲅⲁⲣ ⲉ̀ⲅⲉⲛⲛⲏⲑⲏ: ⲡⲉⲇⲓⲟⲛ ⲛⲉⲟⲛ: ⲟ̀ⲡ̀ⲣⲟⲉ̀ⲱⲛⲱⲛ ⲑⲉⲟⲥ.", 
-    "les anges et les bergers  louent, les mages cheminent avec l’astre car un nouvel enfant est né, Dieu qui est avant tous les siècles. ", 
-    "أنجلى ميطا بى مينون ذوكسولوغوسى: ماجى ذيه ميطا أستيروس أوذى بوروسى: ذى إيماس غار ايه جين نيثى بي ذيون نيه أون: أو إبرو إي أونون ثيه أوس.", 
-    "المَلائِكَة مَعَ الرُعَاة يُمَجِّدُونْ، والَمجْوسْ مَعَ الكَوكَبْ في الطَريقْ سائِرونْ، لأنَّ مِنْ أجْلِنَا ولِدَ صَبيَّاً جَدِيداً: الإلَهْ الذي قبْلَ الدِهُورْ.  ", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Ⲡⲓϫⲓⲛⲙⲓⲥⲓ", 
-    "", 
-    "لحن بي جيني ميسي", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲡⲓϫⲓⲛⲙⲓⲥⲓ ⲙ̀ⲡⲁⲣⲑⲉⲛⲓⲕⲟⲛ: ⲟⲩⲟϩ ⲛⲓⲛⲁⲕϩⲓ ⲙ̀ⲡ̀ⲛⲉⲩⲙⲁⲧⲓⲕⲟⲛ: ⲟⲩϣ̀ⲫⲏⲣⲓ ⲙ̀ⲡⲁⲣⲁⲇⲟⲝⲟⲛ: ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ.", 
-    "Naissance virginale et douleurs spirituelles surprenant et glorieux selon les prophéties. ", 
-    "بى جين ميسى ام بارثنيكون : أووه نى ناكهى ام بنفماتى كون : أو اشفيرى امباراذوكسون : كاطا نى اسمى ام ابروفيتيكون .", 
-    "المِيلادْ البَتُولي والطَلَقَاتْ الرُوحَانِيَّة عَجَبْ عَجِيبْ كَالأخْبَارْ النَبَوْيَّة.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Ⲅⲉⲛⲉⲑⲗⲓⲟⲛ", 
-    "", 
-    "لحن جينيثليون", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲅⲉⲛⲉⲑⲗⲓⲟⲛ ⲧⲉ ⲑⲁⲩⲙⲁⲥⲧⲟⲛ: ⲅⲉⲛⲛⲏⲧⲟⲛ ⲉ̀ⲱ̀ⲣⲁⲕⲉⲛ: ⲙⲉⲅⲓ̀ⲥⲧⲟⲛ ⲁ̀ⲣⲭⲏⲧⲉⲕⲧⲱⲛ ⲕⲩⲣⲓⲟⲛ ⲧⲉ ⲁⲛⲑ̀ⲣⲱⲡⲟⲛ.", 
-    "Merveilleuse naissance, et grand nouveau-né. Le chef charpentier a vu le Seigneur incarné.", 
-    "جينيثليون تي تاف ماسطون : جين ني طون ايه أوراكين : ميه جيس طون أرشي تيك طون : كيريون تيه آن اثروبون.", 
-    "مِيلاداً عَجِيباً، ومَوْلُوداً عَظِيماً. رَأى الرَئيسْ النَجَّارْ، رباً مُتَأنِسَاً.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Ⲁⲡⲉⲛϭⲟⲓⲥ", 
-    "", 
-    "لحن آبينشويس", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲡⲉⲛϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁⲥⲙⲁⲥϥ ⲛ̀ϫⲉ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ϧⲉⲛ Ⲃⲏⲑⲗⲉⲉⲙ ⲛ̀ⲧⲉ ϯⲒⲟⲩⲇⲉⲁ̀: ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ.", 
-    "Notre Seigneur Jésus Christ qui est né de la vierge à Bethléem de Judée selon les prophéties.", 
-    "آبِنْشويس إيسوس بي إخريستوس : في ايطاسْ مَاسْف إنجيه تي بارثينـوس : خين فيثلئيم إنتيه تي يوذي آ : كاطا ني إسمي إم إبروفيتيكون.", 
-    "يا ربنا يسوع المسيح، الذي ولدته العذراء، فى بيت لحم اليهودية، كالأصوات النبوية.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ ⲛⲉⲙ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ⲛⲉⲙ ⲛⲓⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛⲉⲙ ⲛⲓⲉⲝⲟⲩⲥⲓⲁ: ⲛⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛⲓⲙⲉⲧϭⲟⲓⲥ ⲛⲓϫⲟⲙ.", 
-    "Les chérubins et les séraphins, les anges et les archanges, les armée et les seigneuries, les trônes et les puissances.", 
-    "ني شيروبيم نيم ني سيرافيم : ني آنجيلوس نيم ني أرشي انجيلوس : ني سِتراتِيا نيم ني إكسوسيا : ني إثرونوس ني مِيتْ تشويس نيجوم.", 
-    "الشاروبيم والسيرافيم، الملائكة ورؤساء الملائكة، والعساكر والسلاطين، والكراسى والأرباب.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲟⲩⲱ̀ⲟⲩ ⲙ̀Ⲫ̀ⲛⲟⲩϯ ϧⲉⲛ ⲛⲏⲉⲧϭⲟⲥⲓ: ⲛⲉⲙ ⲟⲩϩⲓⲣⲏⲛⲏ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲟⲩϯⲙⲁϯ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ.", 
-    "S’écrient en disant : gloire à Dieu dans les cieux et Paix sur terre et joie aux hommes. ", 
-    "إفؤش إيفول إفجو إمموس : جيه أو أوأو إم إفنوتي خين ني اتتشوسي : نيم أو هيريني هيجين بي كاهي : نيم أوتي ماتي خين ني رومي.", 
-    "صارخين قائلين، المجد لله في الأعالي، وعلي الارض السلام، وفى الناس المسرة.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
-    "", 
-    "قُدُّوسْ الله", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس. ", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.\n", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس.", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ. ", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس.", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.", 
-        ],
-    ],
   [
-    [
-    Prefix.massCommon+"Agios&D=$Seasons.PentecostalDays&C=Title", 
-    "", 
-    "Ô tous les chœurs célestes", 
-    "", 
-    "يا كُلَِّ الصِفُوفْ السَّمائِيينْ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "(Ⲱ̀ ⲛⲓⲙ ⲛⲁⲓ) (ⲅ̅) ⲥⲩⲙⲫⲱⲛⲓⲁ", 
-    "Quelle harmonieuse symphonie:", 
-    "", 
-    "يا للاتفاقات الآتية:", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲛⲓⲭⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲛ̀ⲛⲁⲛⲓⲫⲏⲟⲩⲓ: ⲁⲣⲓⲯⲁⲗⲓⲛ ⲉ̀ⲡⲉⲛⲛⲟⲩϯ ϧⲉⲛ ⲛⲓⲃⲱϩⲉⲙ ⲛ̀ⲧⲉ ⲛⲓϩⲱⲥ.", 
-    "Ô tous les chœurs célestes, chantez à notre Dieu sur des airs de louanges", 
-    "", 
-    "يا كُلَّ الصِفوف السمائيين، رَتِلِوا لإلَهْنَا بِنَغَمَاتْ التسبيح.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲟⲩⲛⲟϥ ⲙ̀ⲙⲱⲧⲉⲛ ⲛⲉⲙⲁⲛ ⲙ̀ⲫⲟⲟⲩ ⲉⲣⲉⲧⲉⲛⲣⲁϣⲓ: ϧⲉⲛ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲫ̀ⲛⲏⲃ Ⲡⲭ̅ⲥ̅.", 
-    "Et exaltez-vous avec nous en ce jour, réjouis par la résurrection du Christ Seigneur.", 
-    "", 
-    "وابتهجوا مَعَنا اليومَ فَرٍحين، بقيامة السيد المسيح.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲁⲩϫⲱⲕ ⲉⲃⲟⲗ ⲙ̀ⲫⲟⲟⲩ ⲛ̀ϫⲉ ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲓⲁ: ⲟⲩⲟϩ ⲁ̀ⲛⲓⲥⲁϫⲓ ⲛ̀ⲧⲉ ⲛⲉⲛⲓⲟϯ ϣⲱⲡⲓ.", 
-    "Aujourd’hui sont accomplies les prophéties et se sont réalisées les paroles des premiers pères", 
-    "", 
-    "اليومَ قَدْ كَمُلَتْ النبوات، وقَدْ تَمَتْ أقوالُ الآباء الأولين.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲉⲑⲃⲉ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲡ̀ϭⲟⲓⲥ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟ̀ⲩⲧ: ⲉϥⲟ̀ⲓ ⲛ̀ϣⲟⲣⲡ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲉ̀ⲛⲕⲧ.", 
-    "Par la résurrection du Seigneur d’entre les morts; Lui qui est le premier parmi les défunts.", 
-    "", 
-    "بقيامة الرَبِّ مَن بين الأموات، وهو بَدءُ المُضْطَجعين.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲁϥⲧⲱⲛϥ ⲛ̀ϫⲉ Ⲡ̀ⲟ̅ⲥ̅ ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲫⲏⲉⲧⲉⲛⲕⲟⲧ: ⲓⲉ ⲕⲉ ⲟⲩⲁⲓ ⲉϥⲑⲁϧⲓ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡ̀ⲏⲣⲡ.", 
-    "Le Seigneur est ressuscité comme celui qui dors; et comme un ivrogne du vin", 
-    "", 
-    "قَدْ قَامَ الرَبُّ مِثلُ النائِم، وكالثُمَّل من الخمرة.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲁϥⲁ̀ⲓⲧⲉⲛ ⲛ̀ⲣⲉⲙϩⲉ ⲉ̀ⲃⲟⲗ ϩⲁ ϯⲙⲉⲧⲃⲱⲕ ⲛ̀ϣⲁϣⲓ. Ⲁϥⲓ̀ⲛⲓ ⲛ̀ⲁ̀ⲙⲉⲛϯ ⲉ̀ⲟ̀ⲩϫⲓⲛⲥⲱⲛϩ:", 
-    "Il a emmené les captifs, il détruisit les portes de cuivre, et cassa les charnières en fer. Il a changé notre punition en salut.", 
-    "", 
-    "وحَطَّمَ أبوابَهُ النُحاسْ، وكَسَرَ متاريسَهُ الحديد كسراً، وأبَدلَ لنا العُقُوبَةَ بالخلاص.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲁϥϧⲟⲙϧⲉⲙ ⲛ̀ϩⲁⲛⲡⲩⲗⲏ ⲛ̀ϩⲟⲙⲧ:Ⲁϥⲕⲱϣ ⲛϩⲁⲛⲙⲟⲭⲗⲟⲩⲥ ⲙ̀ⲃⲉⲛⲓⲡⲓ: ⲛⲧ̀ϣⲉⲃⲓⲱ ⲙ̀ⲡⲓⲥⲟϩⲓ ⲁϥⲭⲱ ⲛ̀ⲟ̀ⲩⲟ̀ⲩϫⲁⲓ.", 
-    "Il a ramené Adam au paradis, avec joie, allégresse et réjouissance; lui et ses fils qui étaient enfermés (il les a ramenés) au lieu de la joie une autre fois.", 
-    "", 
-    "وأعادَ آدم إلى الفِردوسْ، بِفَرَح وبَهجَة ومَسرّة، هو وبنيه الذين كانوا في المحبوس، مَحَلَ النعِيمَ دُفعَةً أُخرى.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Christ est ressuscité", 
-    "", 
-    "المَسيحُ قامَ من الاموات", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲭⲣⲓⲥⲧⲟⲥ ⲁ̀ⲛⲉⲥⲧⲏ ⲉⲕⲛⲉⲕⲣⲱⲛ: ⲑⲁⲛⲁⲧⲱ ⲑⲁⲛⲁⲧⲟⲛ ⲡⲁⲧⲏⲥⲁⲥ: ⲕⲉ ⲧⲓⲥ ⲉⲛ ⲧⲓⲥ ⲙ̀ⲛⲏⲙⲁⲥⲓ ⲍⲱⲏⲛ ⲭⲁⲣⲓⲥⲁⲙⲉⲛⲟⲥ.", 
-    "Christ est ressuscité des morts. Par la mort, Il a vaincu la mort. A ceux qui sont dans les tombeaux Il a accordé la vie éternelle.", 
-    "خريستوس أنيستي إيكنيكرون ثاناتو ثاناتون باتيساس كي تيس إنتيس إمني ماسي زوئين خاريسا مينوس.", 
-    "المَسيحُ قامَ من الأموات، بالمَوتْ داسَ الموتْ والذين في القُبور أنعمَ لهُمْ بالحياة الأبدية.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲇⲟⲝⲁ ⲡⲁⲧⲣⲓ ⲕⲉ Ⲩ̀Ϯⲓⲱ ⲕⲉ ⲁⲅⲓⲱ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲕⲉ ⲛⲩⲛ ⲕⲉ ⲁ̀ⲓ̀ ⲕⲉ ⲓⲥ ⲧⲟⲩⲥ ⲉ̀ⲱ̀ⲛⲁⲥ ⲧⲱⲛ ⲉ̀ⲱ̀ⲛⲱⲛ:ⳣ ⲁ̀ⲙⲏⲛ:", 
-    "Gloire au Père, au Fils et au Saint Esprit, maintenant, toujours et dans les siècles des siècles. Amen.", 
-    "ذوكصاباتري كى إيو كي آجيو ابنفماتي. كي نين كي آإي، كي استوس إي أوناس طون أؤنون آمْينْ.", 
-    "المَجدُ للآب والابن والْرُوحْ القُدُسْ. الآنْ وكُلَّ أوانْ وإلى دَهرِ الدهور آمْينْ.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Tonsina Narkhon", 
-    "", 
-    "تونسينا نارخون", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲧⲟⲛ ⲥⲩⲛ ⲁⲛⲁⲣⲭⲟⲛ Ⲗⲟⲅⲟⲛ Ⲡⲁⲧⲣⲓ ⲕⲉ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲧⲟⲛ ⲉⲕⲡⲁⲣⲑⲉⲛⲟⲩ ⲧⲉⲭⲑⲉⲛⲧⲁ ⲓⲥ ⲥⲱⲧⲏⲣⲓⲁⲛ ⲏ̀ⲙⲟⲛ:", 
-    "Nous louons et nous glorifions avec foi le Verbe consubstantiel au Père et au Saint-Esprit dans l’éternité, né de la vierge pour notre salut,", 
-    "طون سينا نارخـون لوغون باتري كي ابنيفماتي: تـون إكبارثينو تيك ثيندا يس سوتيريان إيـمون:", 
-    "نُسَبحُكَ نحنُ المؤمنين، ونُمجدُ الكلمة المساوي للآب والروح في الأزلية، المولود من العذراء، لخلاصِنا.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "ⲁⲛⲩⲙⲛⲏⲥⲱⲙⲉⲛ ⲡⲓⲥⲧⲓ ⲕⲉ ⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲱⲙⲉⲛ: ⲟ̀ⲧⲓ ⲏⲩⲇⲟⲕⲏ ⲥⲉ ⲥⲁⲣⲕⲓ: ⲁ̀ⲛⲉⲗⲑⲓⲛ ⲉⲛ ⲧⲱ ⲥ̀ⲧⲁⲩⲣⲟ: ⲕⲉ ⲑⲁⲛⲁⲧⲟⲛ ⲏ̀ⲡⲟⲙⲓⲛⲉ: ⲕⲉ ⲉ̀ⲅⲓⲣⲉ ⲧⲟⲩⲥ ⲧⲉⲑⲛⲉⲱ̀ⲟ̀: ⲧⲁⲥ ⲉⲛⲧⲏ ⲉⲛⲇⲟⲝⲱ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲁⲩⲧⲟⲩ.", 
-    "Parce qu’Il lui a plu d’être crucifié corporellement, et de supporter la mort, et de relever les morts par sa glorieuse résurrection", 
-    "أنيم ني سومين بيستي كى إبروس كى نيسـومين: أوتي إفذوكي سى ساركي: أنيلثين إنتو إستافرو كى ثاناتون إيبو ميني: كى إيجيري تـوس نيثنى أوأوو : طاس إنتي إنذوكسو أناستاسي أفتو.", 
-    "لأنَهُ سُرَّ وارتضى بالجسد أنْ يعلوا على الصليب، ويحتَمِلَ الموت، ويُنهضَ الموتى بقيامَتِهِ المجيدة.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "", 
-    "", 
-    "إن الحَجَرْ لمّا خُتِمَ", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲧⲟⲩ ⲗⲓⲑⲟⲩ ⲥⲫ̀ⲣⲁⲅⲓⲥⲑⲉⲛ ⲧⲟⲥ ⲩ̀ⲡⲟ ⲧⲱⲛ Ⲓ̀ⲟⲩⲇⲉⲱ̀ⲛ: ⲕⲉ ⲥⲧⲣⲁⲧⲓⲱ ⲧⲱⲛ ⲫⲓⲗⲁⲥ ⲥⲟⲛⲧⲱⲛ ⲧⲟ ⲁⲭⲣⲁⲛⲧⲟⲛ ⲥⲟⲩ ⲥⲱⲙⲁ: ⲁ̀ⲛⲉⲥⲧⲏⲥ ⲧⲣⲓⲏ̀ⲙⲉⲣⲟⲥ ⲥⲱⲧⲏⲣ: ⲇⲱⲣⲟⲩⲙⲉⲛⲟⲥ ⲧⲱ ⲕⲟⲥⲙⲱ ⲧⲏⲛ ⲍⲱⲏ̀ⲛ.", 
-    "Pendant que le rocher était scellé par les Juifs et Ton corps était gardé par les soldats, Tu ressuscita le troisième jour O Sauveur, donnant la vie au monde.", 
-    "توليثو سفراجيس ثين توس : إيبو توني أو ذيئون كيه اس تراتيو تون فيلاس سون تونتو اكران تون سـو سوما آنيس تيس تري إي ميروس ذورو مينـوس تو كوزمو تين ذوئين سـوتير.", 
-    "إن الحَجَرْ لمّا خُتِمَ مِنَ اليهود وجسدك الطاهر حُفِظَ مِنَ الجُند، أتيت في اليوم الثَالِثْ أيُّهَا المُخلِص، مانحاً العالم الحياة.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲇⲓⲁ ⲧⲟⲩⲧⲟ ⲉ̀ⲇⲩⲛⲁⲙⲓⲥ ⲧⲱⲛ ⲟ̀ⲩⲣⲁⲛⲱⲛ ⲉ̀ⲃⲟⲱ̀ⲛ ⲥⲓ ⲍⲱⲟ̀ⲇⲟⲧⲁ: ⲇⲟⲝⲁ ⲧⲏ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ: ⲇⲟⲝⲁ ⲧⲏ ⲃⲁⲥⲓⲗⲓⲁ ⲥⲟⲩ: ⲇⲟⲝⲁ ⲧⲏ ⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲥⲟⲩ: ⲙⲟⲛⲉ ⲫⲓⲗⲁⲛⲑ̀ⲣⲱⲡⲉ.", 
-    "Pour cette raison, les forces célestes crient vers Toi: « O donneur de la vie, gloire à Ta résurrection. O Christ, gloire à Ton royaume, gloire à Ton économie, Toi le seul ami du genre humain »", 
-    "ذيا توتـو إيذينا ميس تون اورانون : اف اوؤن: ثي زو أوذوتا. ذوكصاتي اناستاسي سو اخريستيه: ذوكصـاتي فاسيليا سو: ذوكصـاتي إي كونو مياسو، موني فيلان اثروبيه.", 
-    "لأجل هَذا قوات السمَوات هتفوا إليَكَ يا واهب الحياة. المَجْدُ لقيا متك أيُّهَا المسيح، المَجْدُ لمُلكِكَ، المَجْدُ لتدبيرك يا مُحِبْ الَبشَرْ وحدك.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲧⲏⲛ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲛ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ Ⲥⲱⲧⲏⲣ: ⲁⲅⲅⲉⲗⲓⲩⲙⲛⲟⲩⲥⲓⲛ ⲉⲛ ⲟⲩⲣⲁⲛⲓⲥ: ⲕⲉ ⲏ̀ⲙⲁⲥ ⲧⲟⲩⲥ ⲉ̀ⲡⲓ ⲅⲩⲥ ⲕⲁⲧⲁⲝⲓⲱⲥⲟⲛ: ⲉⲛ ⲕⲁⲑⲁⲣⲁ ⲕⲁⲣⲇⲓⲁ̀ ⲥⲉ ⲇⲟⲝⲁⲍⲓⲛ.", 
-    "Ô Christ notre Sauveur, les anges dans les cieux louent Ta résurrection. Nous te demandons de nous rendre dignes, nous qui sommes sur terre, de Te glorifier toujours avec des cœurs purs.", 
-    "تين آناستاسين سو اخريستي سوتير، أنجيليومنوسي إن إن أورانيس، كي إماس توس إبي جوس كاتا ذيوكون، إن كاثارا كارجيا سي ذوكسازين.", 
-    "من أجل قيامتك أيُها المَسِيحْ مُخَلِّصنا، تُسَبِّح ملائكة السَّمَاء. ونَحنُ الذين على الأرض، أَهِّلْنا أنْ نُمَجِّدُكَ بقلوب طَاهِرَة.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Le Christ est ressuscité", 
-    "", 
-    "المَسِيحْ قام من الأموات", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ ⲫⲏⲉ̀ⲧⲁϥⲙⲟⲩ ⲁϥϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲫ̀ⲙⲟⲩ ⲟⲩⲟϩ ⲛⲏⲉⲧ̀ⲭⲏ ϧⲉⲛ ⲛⲓⲙ̀ϩⲁⲩ ⲁϥⲉⲣϩ̀ⲙⲟⲧ ⲛⲱⲟⲩ ⲙ̀ⲡⲓⲱⲛϧ ⲛⲉ̀ⲛⲉϩ.", 
-    "Le Christ est ressuscité des morts, celui qui est mort a écrasé la mort, a ceux qui sont dans les tombeaux, il a accorde la vie éternelle.", 
-    "بى إخرستوس أفتونف إيفول خين نى إثُمَّو أوت. في إيتاف مو أفهومى إيجين إفمو أووه نى إتكى خين نى إمهاف أفئير إهموت نوؤو إمبى أونخ. إن إينيه.", 
-    "المَسيحُ قامَ من بين الأموات، بالموت داس الموت، والذين في القبور انعم لهم بالحياة الأبدية.", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Pashoys Isos", 
-    "", 
-    "باشويس إيسوس", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ: ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩϣⲟⲙⲧ: ⲉⲕⲉ̀ⲧⲟⲩⲛⲟⲥⲧⲉⲛ ϧⲉⲛ ⲧⲉⲕϫⲟⲙ.", 
-    "Ô Seigneur Jesus Christ qui est ressuscité d’entre les morts, le troisième jour, relève-nous par Ta force.", 
-    "باشويس إيسوس بإخرستوس فيئطاف طونف إيفول خين نى إثُمَّوؤت خين بى إيهوؤ إماه شومت إيك إطون أوستين خين تيك جوم.", 
-    "يا رَبّي يَسُوعْ المَسيحْ الذي قامَ من الأموات في اليوم الثالث، أقِمنا بقوتك.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ ⲛⲉⲙ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲛⲓⲁ̀ⲅⲅⲗⲟⲥ ⲛⲉⲙ ⲛⲓⲁ̀ⲣⲭⲏⲁ̀ⲅⲅⲉⲗⲟⲥ: ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛⲉⲙ ⲛⲓⲉ̀ⲝⲟⲩⲥⲓⲁ: ⲛⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛⲓⲙⲉⲧϭⲟⲓⲥ ⲛⲓϫⲟⲙ.", 
-    "Les Chérubins et les Séraphins les anges et les archanges les armées et les seigneuries, les trônes et les puissances.", 
-    "ني شيروفيم نيم ني سيرافيم، ني آنجيلوس نيم ني أرشي آنجيلوس، ني سترتيا، ني إكسوسيا، ني إثرونوس ني متشويش ني جوم،", 
-    "الشاروبيم والسيرافيم، الملائِكة ورؤساء الملائِكة، والعَساكرْ والسلاطين والكراسي والأرَبّاب.", 
-    ],
-    [
-    Prefix.same+"&C=Diacon", 
-    "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ ϫⲉ ⲭ̀ⲟⲩⲁⲃ ⲟⲩⲟϩ ⲭ̀ⲟⲩⲁⲃ ⲭ̀ⲟⲩⲁⲃ Ⲡⲟ̅ⲥ̅ ⲛ̀ⲛⲓⲉ̀ⲱⲛ Ⲭⲣⲓⲥⲧⲟⲥ ⲁⲛⲉⲥⲧⲏ ⲉⲕ ⲉⲛⲕⲣⲱⲛ.", 
-    "Proclamant et disant, « Saint, Saint, Saint Seigneur des siècles Christ est ressuscité d’entre les morts ».", 
-    "إفئوش إفول إفجو إمموس: إكؤواب، اووه إكؤواب، إكؤواب ابشويس إننين أون، باخريستوس آنيستي إكنيكرون.", 
-    "صارخين قائلين: \"قُدّوسْ، قُدّوسْ قُدّوسْ، رَبُ الدهور، المَسيحُ قامَ من الأموات.\"", 
-    ],
-    [
-    Prefix.same+"&C=SubTitle", 
-    "", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
-    "", 
-    "قُدُّوسْ الله", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.\n\n", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-    "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-    "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-    "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
-    ],
-    ],
-    [
-      [
-        Prefix.massCommon+"Agios&D=Seasons.Baptism&C=Title", 
-        "", 
-        "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
-        "", 
-        "قُدُّوسْ الله", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-        "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-        "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-        "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.\n\n", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-        "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-        "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-        "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
-        "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
-        "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
-        "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
-        ],
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-        ],
-        [
-        Prefix.placeHolder, 
-        Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
-        ],
-    ],
+  Prefix.massCommon+"Agios&D=$Seasons.Nativity&C=Title", 
+  "", 
+  "Ⲏ̀ ⲡⲁⲣⲑⲉⲛⲟⲥ", 
+  "", 
+  "لحن إيبارثيوس", 
+  ],
   [
-    [Prefix.massCommon + "Agios&D=Seasons.CrossFeast&C=Title",
-      "",
-      "",
-      "",
-      ""
-    ],
+  Prefix.same+"&C=Assembly", 
+  "Ⲏ̀ ⲡⲁⲣⲑⲉⲛⲟⲥ ⲥⲏⲙⲉⲣⲟⲛ ⲧⲟⲛ ⲩ̀ⲡⲉⲣⲟⲩⲥⲓⲟⲛ ⲧⲓⲕⲧⲓ: ⲕⲉ ⲏ̀ ⲅⲏ ⲧⲟ ⲥ̀ⲡⲏⲗⲉⲟⲛ ⲧⲱ ⲁⲡⲣⲟⲥⲓⲧⲱ ⲡ̀ⲣⲟⲥⲁⲅⲓ:", 
+  "Aujourd'hui la Vierge donne naissance à celui qui est sublime par nature la terre offre une grotte à Celui qui est hors d’atteinte ", 
+  "إى بارثينوس سىميرون طون إى بيرو سيون تيك تى: كي إى جي تو سبىلي أون طو أبرو سيطو إبرو صاجى:", 
+  "اليوم ، البَتُولْ    تَلِدْ    الفَائِقْ الجَوهْرْ،  والأَرْض تُقَرِّبْ المَغَارة لِغَيْرِ المُقْتَرَبْ إليه.  ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "ⲁⲅⲅⲉⲗⲓ ⲙⲉⲧⲁ  ⲡⲓⲙⲉⲛⲱⲛ ⲇⲟⲝⲟⲗⲟⲅⲟⲩⲥⲓ: ⲙⲁⲅⲓ ⲇⲉ ⲙⲉⲧⲁ ⲁⲥⲧⲉⲣⲟⲥ ⲟ̀ⲇⲓⲡⲟⲣⲟⲩⲥⲓ: ⲇⲓ ⲏ̀ⲙⲁⲥ ⲅⲁⲣ ⲉ̀ⲅⲉⲛⲛⲏⲑⲏ: ⲡⲉⲇⲓⲟⲛ ⲛⲉⲟⲛ: ⲟ̀ⲡ̀ⲣⲟⲉ̀ⲱⲛⲱⲛ ⲑⲉⲟⲥ.", 
+  "les anges et les bergers  louent, les mages cheminent avec l’astre car un nouvel enfant est né, Dieu qui est avant tous les siècles. ", 
+  "أنجلى ميطا بى مينون ذوكسولوغوسى: ماجى ذيه ميطا أستيروس أوذى بوروسى: ذى إيماس غار ايه جين نيثى بي ذيون نيه أون: أو إبرو إي أونون ثيه أوس.", 
+  "المَلائِكَة مَعَ الرُعَاة يُمَجِّدُونْ، والَمجْوسْ مَعَ الكَوكَبْ في الطَريقْ سائِرونْ، لأنَّ مِنْ أجْلِنَا ولِدَ صَبيَّاً جَدِيداً: الإلَهْ الذي قبْلَ الدِهُورْ.  ", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Ⲡⲓϫⲓⲛⲙⲓⲥⲓ", 
+  "", 
+  "لحن بي جيني ميسي", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲡⲓϫⲓⲛⲙⲓⲥⲓ ⲙ̀ⲡⲁⲣⲑⲉⲛⲓⲕⲟⲛ: ⲟⲩⲟϩ ⲛⲓⲛⲁⲕϩⲓ ⲙ̀ⲡ̀ⲛⲉⲩⲙⲁⲧⲓⲕⲟⲛ: ⲟⲩϣ̀ⲫⲏⲣⲓ ⲙ̀ⲡⲁⲣⲁⲇⲟⲝⲟⲛ: ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ.", 
+  "Naissance virginale et douleurs spirituelles surprenant et glorieux selon les prophéties. ", 
+  "بى جين ميسى ام بارثنيكون : أووه نى ناكهى ام بنفماتى كون : أو اشفيرى امباراذوكسون : كاطا نى اسمى ام ابروفيتيكون .", 
+  "المِيلادْ البَتُولي والطَلَقَاتْ الرُوحَانِيَّة عَجَبْ عَجِيبْ كَالأخْبَارْ النَبَوْيَّة.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Ⲅⲉⲛⲉⲑⲗⲓⲟⲛ", 
+  "", 
+  "لحن جينيثليون", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲅⲉⲛⲉⲑⲗⲓⲟⲛ ⲧⲉ ⲑⲁⲩⲙⲁⲥⲧⲟⲛ: ⲅⲉⲛⲛⲏⲧⲟⲛ ⲉ̀ⲱ̀ⲣⲁⲕⲉⲛ: ⲙⲉⲅⲓ̀ⲥⲧⲟⲛ ⲁ̀ⲣⲭⲏⲧⲉⲕⲧⲱⲛ ⲕⲩⲣⲓⲟⲛ ⲧⲉ ⲁⲛⲑ̀ⲣⲱⲡⲟⲛ.", 
+  "Merveilleuse naissance, et grand nouveau-né. Le chef charpentier a vu le Seigneur incarné.", 
+  "جينيثليون تي تاف ماسطون : جين ني طون ايه أوراكين : ميه جيس طون أرشي تيك طون : كيريون تيه آن اثروبون.", 
+  "مِيلاداً عَجِيباً، ومَوْلُوداً عَظِيماً. رَأى الرَئيسْ النَجَّارْ، رباً مُتَأنِسَاً.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Ⲁⲡⲉⲛϭⲟⲓⲥ", 
+  "", 
+  "لحن آبينشويس", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲡⲉⲛϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁⲥⲙⲁⲥϥ ⲛ̀ϫⲉ ϯⲡⲁⲣⲑⲉⲛⲟⲥ: ϧⲉⲛ Ⲃⲏⲑⲗⲉⲉⲙ ⲛ̀ⲧⲉ ϯⲒⲟⲩⲇⲉⲁ̀: ⲕⲁⲧⲁ ⲛⲓⲥ̀ⲙⲏ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲓⲕⲟⲛ.", 
+  "Notre Seigneur Jésus Christ qui est né de la vierge à Bethléem de Judée selon les prophéties.", 
+  "آبِنْشويس إيسوس بي إخريستوس : في ايطاسْ مَاسْف إنجيه تي بارثينـوس : خين فيثلئيم إنتيه تي يوذي آ : كاطا ني إسمي إم إبروفيتيكون.", 
+  "يا ربنا يسوع المسيح، الذي ولدته العذراء، فى بيت لحم اليهودية، كالأصوات النبوية.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ ⲛⲉⲙ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲛⲓⲁⲅⲅⲉⲗⲟⲥ ⲛⲉⲙ ⲛⲓⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛⲉⲙ ⲛⲓⲉⲝⲟⲩⲥⲓⲁ: ⲛⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛⲓⲙⲉⲧϭⲟⲓⲥ ⲛⲓϫⲟⲙ.", 
+  "Les chérubins et les séraphins, les anges et les archanges, les armée et les seigneuries, les trônes et les puissances.", 
+  "ني شيروبيم نيم ني سيرافيم : ني آنجيلوس نيم ني أرشي انجيلوس : ني سِتراتِيا نيم ني إكسوسيا : ني إثرونوس ني مِيتْ تشويس نيجوم.", 
+  "الشاروبيم والسيرافيم، الملائكة ورؤساء الملائكة، والعساكر والسلاطين، والكراسى والأرباب.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ: ϫⲉ ⲟⲩⲱ̀ⲟⲩ ⲙ̀Ⲫ̀ⲛⲟⲩϯ ϧⲉⲛ ⲛⲏⲉⲧϭⲟⲥⲓ: ⲛⲉⲙ ⲟⲩϩⲓⲣⲏⲛⲏ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ: ⲛⲉⲙ ⲟⲩϯⲙⲁϯ ϧⲉⲛ ⲛⲓⲣⲱⲙⲓ.", 
+  "S’écrient en disant : gloire à Dieu dans les cieux et Paix sur terre et joie aux hommes. ", 
+  "إفؤش إيفول إفجو إمموس : جيه أو أوأو إم إفنوتي خين ني اتتشوسي : نيم أو هيريني هيجين بي كاهي : نيم أوتي ماتي خين ني رومي.", 
+  "صارخين قائلين، المجد لله في الأعالي، وعلي الارض السلام، وفى الناس المسرة.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
+  "", 
+  "قُدُّوسْ الله", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس. ", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.\n", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: Ⲁⲅⲓⲟⲥ Ⲁⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲉⲕⲡⲁⲣⲑⲉⲛⲟ ⲅⲉⲛⲛⲉⲑⲉⲓⲥ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ. ", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui es né de la Vierge; aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو إكبر ثينو جينيتيس إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ ولِدَ مِنَ العْذرَاءْ ارحمنا.", 
+  ],
+  ],
+  [
+  [
+  Prefix.massCommon+"Agios&D=$Seasons.PentecostalDays&C=Title", 
+  "", 
+  "Ô tous les chœurs célestes", 
+  "", 
+  "يا كُلَِّ الصِفُوفْ السَّمائِيينْ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "(Ⲱ̀ ⲛⲓⲙ ⲛⲁⲓ) (ⲅ̅) ⲥⲩⲙⲫⲱⲛⲓⲁ", 
+  "Quelle harmonieuse symphonie:", 
+  "", 
+  "يا للاتفاقات الآتية:", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲛⲓⲭⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲛ̀ⲛⲁⲛⲓⲫⲏⲟⲩⲓ: ⲁⲣⲓⲯⲁⲗⲓⲛ ⲉ̀ⲡⲉⲛⲛⲟⲩϯ ϧⲉⲛ ⲛⲓⲃⲱϩⲉⲙ ⲛ̀ⲧⲉ ⲛⲓϩⲱⲥ.", 
+  "Ô tous les chœurs célestes, chantez à notre Dieu sur des airs de louanges", 
+  "", 
+  "يا كُلَّ الصِفوف السمائيين، رَتِلِوا لإلَهْنَا بِنَغَمَاتْ التسبيح.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲟⲩⲛⲟϥ ⲙ̀ⲙⲱⲧⲉⲛ ⲛⲉⲙⲁⲛ ⲙ̀ⲫⲟⲟⲩ ⲉⲣⲉⲧⲉⲛⲣⲁϣⲓ: ϧⲉⲛ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲫ̀ⲛⲏⲃ Ⲡⲭ̅ⲥ̅.", 
+  "Et exaltez-vous avec nous en ce jour, réjouis par la résurrection du Christ Seigneur.", 
+  "", 
+  "وابتهجوا مَعَنا اليومَ فَرٍحين، بقيامة السيد المسيح.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲁⲩϫⲱⲕ ⲉⲃⲟⲗ ⲙ̀ⲫⲟⲟⲩ ⲛ̀ϫⲉ ⲛⲓⲡ̀ⲣⲟⲫⲏⲧⲓⲁ: ⲟⲩⲟϩ ⲁ̀ⲛⲓⲥⲁϫⲓ ⲛ̀ⲧⲉ ⲛⲉⲛⲓⲟϯ ϣⲱⲡⲓ.", 
+  "Aujourd’hui sont accomplies les prophéties et se sont réalisées les paroles des premiers pères", 
+  "", 
+  "اليومَ قَدْ كَمُلَتْ النبوات، وقَدْ تَمَتْ أقوالُ الآباء الأولين.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲉⲑⲃⲉ ⲡ̀ⲧⲟⲛϥ ⲙ̀ⲡ̀ϭⲟⲓⲥ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟ̀ⲩⲧ: ⲉϥⲟ̀ⲓ ⲛ̀ϣⲟⲣⲡ ⲛ̀ⲛⲏⲉ̀ⲧⲁⲩⲉ̀ⲛⲕⲧ.", 
+  "Par la résurrection du Seigneur d’entre les morts; Lui qui est le premier parmi les défunts.", 
+  "", 
+  "بقيامة الرَبِّ مَن بين الأموات، وهو بَدءُ المُضْطَجعين.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲁϥⲧⲱⲛϥ ⲛ̀ϫⲉ Ⲡ̀ⲟ̅ⲥ̅ ⲙ̀ⲫ̀ⲣⲏϯ ⲙ̀ⲫⲏⲉⲧⲉⲛⲕⲟⲧ: ⲓⲉ ⲕⲉ ⲟⲩⲁⲓ ⲉϥⲑⲁϧⲓ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲡ̀ⲏⲣⲡ.", 
+  "Le Seigneur est ressuscité comme celui qui dors; et comme un ivrogne du vin", 
+  "", 
+  "قَدْ قَامَ الرَبُّ مِثلُ النائِم، وكالثُمَّل من الخمرة.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲁϥⲁ̀ⲓⲧⲉⲛ ⲛ̀ⲣⲉⲙϩⲉ ⲉ̀ⲃⲟⲗ ϩⲁ ϯⲙⲉⲧⲃⲱⲕ ⲛ̀ϣⲁϣⲓ. Ⲁϥⲓ̀ⲛⲓ ⲛ̀ⲁ̀ⲙⲉⲛϯ ⲉ̀ⲟ̀ⲩϫⲓⲛⲥⲱⲛϩ:", 
+  "Il a emmené les captifs, il détruisit les portes de cuivre, et cassa les charnières en fer. Il a changé notre punition en salut.", 
+  "", 
+  "وحَطَّمَ أبوابَهُ النُحاسْ، وكَسَرَ متاريسَهُ الحديد كسراً، وأبَدلَ لنا العُقُوبَةَ بالخلاص.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲁϥϧⲟⲙϧⲉⲙ ⲛ̀ϩⲁⲛⲡⲩⲗⲏ ⲛ̀ϩⲟⲙⲧ:Ⲁϥⲕⲱϣ ⲛϩⲁⲛⲙⲟⲭⲗⲟⲩⲥ ⲙ̀ⲃⲉⲛⲓⲡⲓ: ⲛⲧ̀ϣⲉⲃⲓⲱ ⲙ̀ⲡⲓⲥⲟϩⲓ ⲁϥⲭⲱ ⲛ̀ⲟ̀ⲩⲟ̀ⲩϫⲁⲓ.", 
+  "Il a ramené Adam au paradis, avec joie, allégresse et réjouissance; lui et ses fils qui étaient enfermés (il les a ramenés) au lieu de la joie une autre fois.", 
+  "", 
+  "وأعادَ آدم إلى الفِردوسْ، بِفَرَح وبَهجَة ومَسرّة، هو وبنيه الذين كانوا في المحبوس، مَحَلَ النعِيمَ دُفعَةً أُخرى.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Christ est ressuscité", 
+  "", 
+  "المَسيحُ قامَ من الاموات", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲭⲣⲓⲥⲧⲟⲥ ⲁ̀ⲛⲉⲥⲧⲏ ⲉⲕⲛⲉⲕⲣⲱⲛ: ⲑⲁⲛⲁⲧⲱ ⲑⲁⲛⲁⲧⲟⲛ ⲡⲁⲧⲏⲥⲁⲥ: ⲕⲉ ⲧⲓⲥ ⲉⲛ ⲧⲓⲥ ⲙ̀ⲛⲏⲙⲁⲥⲓ ⲍⲱⲏⲛ ⲭⲁⲣⲓⲥⲁⲙⲉⲛⲟⲥ.", 
+  "Christ est ressuscité des morts. Par la mort, Il a vaincu la mort. A ceux qui sont dans les tombeaux Il a accordé la vie éternelle.", 
+  "خريستوس أنيستي إيكنيكرون ثاناتو ثاناتون باتيساس كي تيس إنتيس إمني ماسي زوئين خاريسا مينوس.", 
+  "المَسيحُ قامَ من الأموات، بالمَوتْ داسَ الموتْ والذين في القُبور أنعمَ لهُمْ بالحياة الأبدية.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲇⲟⲝⲁ ⲡⲁⲧⲣⲓ ⲕⲉ Ⲩ̀Ϯⲓⲱ ⲕⲉ ⲁⲅⲓⲱ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲕⲉ ⲛⲩⲛ ⲕⲉ ⲁ̀ⲓ̀ ⲕⲉ ⲓⲥ ⲧⲟⲩⲥ ⲉ̀ⲱ̀ⲛⲁⲥ ⲧⲱⲛ ⲉ̀ⲱ̀ⲛⲱⲛ:ⳣ ⲁ̀ⲙⲏⲛ:", 
+  "Gloire au Père, au Fils et au Saint Esprit, maintenant, toujours et dans les siècles des siècles. Amen.", 
+  "ذوكصاباتري كى إيو كي آجيو ابنفماتي. كي نين كي آإي، كي استوس إي أوناس طون أؤنون آمْينْ.", 
+  "المَجدُ للآب والابن والْرُوحْ القُدُسْ. الآنْ وكُلَّ أوانْ وإلى دَهرِ الدهور آمْينْ.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Tonsina Narkhon", 
+  "", 
+  "تونسينا نارخون", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲧⲟⲛ ⲥⲩⲛ ⲁⲛⲁⲣⲭⲟⲛ Ⲗⲟⲅⲟⲛ Ⲡⲁⲧⲣⲓ ⲕⲉ Ⲡ̀ⲛⲉⲩⲙⲁⲧⲓ: ⲧⲟⲛ ⲉⲕⲡⲁⲣⲑⲉⲛⲟⲩ ⲧⲉⲭⲑⲉⲛⲧⲁ ⲓⲥ ⲥⲱⲧⲏⲣⲓⲁⲛ ⲏ̀ⲙⲟⲛ:", 
+  "Nous louons et nous glorifions avec foi le Verbe consubstantiel au Père et au Saint-Esprit dans l’éternité, né de la vierge pour notre salut,", 
+  "طون سينا نارخـون لوغون باتري كي ابنيفماتي: تـون إكبارثينو تيك ثيندا يس سوتيريان إيـمون:", 
+  "نُسَبحُكَ نحنُ المؤمنين، ونُمجدُ الكلمة المساوي للآب والروح في الأزلية، المولود من العذراء، لخلاصِنا.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "ⲁⲛⲩⲙⲛⲏⲥⲱⲙⲉⲛ ⲡⲓⲥⲧⲓ ⲕⲉ ⲡ̀ⲣⲟⲥⲕⲩⲛⲏⲥⲱⲙⲉⲛ: ⲟ̀ⲧⲓ ⲏⲩⲇⲟⲕⲏ ⲥⲉ ⲥⲁⲣⲕⲓ: ⲁ̀ⲛⲉⲗⲑⲓⲛ ⲉⲛ ⲧⲱ ⲥ̀ⲧⲁⲩⲣⲟ: ⲕⲉ ⲑⲁⲛⲁⲧⲟⲛ ⲏ̀ⲡⲟⲙⲓⲛⲉ: ⲕⲉ ⲉ̀ⲅⲓⲣⲉ ⲧⲟⲩⲥ ⲧⲉⲑⲛⲉⲱ̀ⲟ̀: ⲧⲁⲥ ⲉⲛⲧⲏ ⲉⲛⲇⲟⲝⲱ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲁⲩⲧⲟⲩ.", 
+  "Parce qu’Il lui a plu d’être crucifié corporellement, et de supporter la mort, et de relever les morts par sa glorieuse résurrection", 
+  "أنيم ني سومين بيستي كى إبروس كى نيسـومين: أوتي إفذوكي سى ساركي: أنيلثين إنتو إستافرو كى ثاناتون إيبو ميني: كى إيجيري تـوس نيثنى أوأوو : طاس إنتي إنذوكسو أناستاسي أفتو.", 
+  "لأنَهُ سُرَّ وارتضى بالجسد أنْ يعلوا على الصليب، ويحتَمِلَ الموت، ويُنهضَ الموتى بقيامَتِهِ المجيدة.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "", 
+  "", 
+  "إن الحَجَرْ لمّا خُتِمَ", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲧⲟⲩ ⲗⲓⲑⲟⲩ ⲥⲫ̀ⲣⲁⲅⲓⲥⲑⲉⲛ ⲧⲟⲥ ⲩ̀ⲡⲟ ⲧⲱⲛ Ⲓ̀ⲟⲩⲇⲉⲱ̀ⲛ: ⲕⲉ ⲥⲧⲣⲁⲧⲓⲱ ⲧⲱⲛ ⲫⲓⲗⲁⲥ ⲥⲟⲛⲧⲱⲛ ⲧⲟ ⲁⲭⲣⲁⲛⲧⲟⲛ ⲥⲟⲩ ⲥⲱⲙⲁ: ⲁ̀ⲛⲉⲥⲧⲏⲥ ⲧⲣⲓⲏ̀ⲙⲉⲣⲟⲥ ⲥⲱⲧⲏⲣ: ⲇⲱⲣⲟⲩⲙⲉⲛⲟⲥ ⲧⲱ ⲕⲟⲥⲙⲱ ⲧⲏⲛ ⲍⲱⲏ̀ⲛ.", 
+  "Pendant que le rocher était scellé par les Juifs et Ton corps était gardé par les soldats, Tu ressuscita le troisième jour O Sauveur, donnant la vie au monde.", 
+  "توليثو سفراجيس ثين توس : إيبو توني أو ذيئون كيه اس تراتيو تون فيلاس سون تونتو اكران تون سـو سوما آنيس تيس تري إي ميروس ذورو مينـوس تو كوزمو تين ذوئين سـوتير.", 
+  "إن الحَجَرْ لمّا خُتِمَ مِنَ اليهود وجسدك الطاهر حُفِظَ مِنَ الجُند، أتيت في اليوم الثَالِثْ أيُّهَا المُخلِص، مانحاً العالم الحياة.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲇⲓⲁ ⲧⲟⲩⲧⲟ ⲉ̀ⲇⲩⲛⲁⲙⲓⲥ ⲧⲱⲛ ⲟ̀ⲩⲣⲁⲛⲱⲛ ⲉ̀ⲃⲟⲱ̀ⲛ ⲥⲓ ⲍⲱⲟ̀ⲇⲟⲧⲁ: ⲇⲟⲝⲁ ⲧⲏ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ: ⲇⲟⲝⲁ ⲧⲏ ⲃⲁⲥⲓⲗⲓⲁ ⲥⲟⲩ: ⲇⲟⲝⲁ ⲧⲏ ⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲥⲟⲩ: ⲙⲟⲛⲉ ⲫⲓⲗⲁⲛⲑ̀ⲣⲱⲡⲉ.", 
+  "Pour cette raison, les forces célestes crient vers Toi: « O donneur de la vie, gloire à Ta résurrection. O Christ, gloire à Ton royaume, gloire à Ton économie, Toi le seul ami du genre humain »", 
+  "ذيا توتـو إيذينا ميس تون اورانون : اف اوؤن: ثي زو أوذوتا. ذوكصاتي اناستاسي سو اخريستيه: ذوكصـاتي فاسيليا سو: ذوكصـاتي إي كونو مياسو، موني فيلان اثروبيه.", 
+  "لأجل هَذا قوات السمَوات هتفوا إليَكَ يا واهب الحياة. المَجْدُ لقيا متك أيُّهَا المسيح، المَجْدُ لمُلكِكَ، المَجْدُ لتدبيرك يا مُحِبْ الَبشَرْ وحدك.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲧⲏⲛ ⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲛ ⲥⲟⲩ Ⲭ̀ⲣⲓⲥⲧⲉ Ⲥⲱⲧⲏⲣ: ⲁⲅⲅⲉⲗⲓⲩⲙⲛⲟⲩⲥⲓⲛ ⲉⲛ ⲟⲩⲣⲁⲛⲓⲥ: ⲕⲉ ⲏ̀ⲙⲁⲥ ⲧⲟⲩⲥ ⲉ̀ⲡⲓ ⲅⲩⲥ ⲕⲁⲧⲁⲝⲓⲱⲥⲟⲛ: ⲉⲛ ⲕⲁⲑⲁⲣⲁ ⲕⲁⲣⲇⲓⲁ̀ ⲥⲉ ⲇⲟⲝⲁⲍⲓⲛ.", 
+  "Ô Christ notre Sauveur, les anges dans les cieux louent Ta résurrection. Nous te demandons de nous rendre dignes, nous qui sommes sur terre, de Te glorifier toujours avec des cœurs purs.", 
+  "تين آناستاسين سو اخريستي سوتير، أنجيليومنوسي إن إن أورانيس، كي إماس توس إبي جوس كاتا ذيوكون، إن كاثارا كارجيا سي ذوكسازين.", 
+  "من أجل قيامتك أيُها المَسِيحْ مُخَلِّصنا، تُسَبِّح ملائكة السَّمَاء. ونَحنُ الذين على الأرض، أَهِّلْنا أنْ نُمَجِّدُكَ بقلوب طَاهِرَة.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Le Christ est ressuscité", 
+  "", 
+  "المَسِيحْ قام من الأموات", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲡⲓⲭⲣⲓⲥⲧⲟⲥ ⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ ⲫⲏⲉ̀ⲧⲁϥⲙⲟⲩ ⲁϥϩⲱⲙⲓ ⲉ̀ϫⲉⲛ ⲫ̀ⲙⲟⲩ ⲟⲩⲟϩ ⲛⲏⲉⲧ̀ⲭⲏ ϧⲉⲛ ⲛⲓⲙ̀ϩⲁⲩ ⲁϥⲉⲣϩ̀ⲙⲟⲧ ⲛⲱⲟⲩ ⲙ̀ⲡⲓⲱⲛϧ ⲛⲉ̀ⲛⲉϩ.", 
+  "Le Christ est ressuscité des morts, celui qui est mort a écrasé la mort, a ceux qui sont dans les tombeaux, il a accorde la vie éternelle.", 
+  "بى إخرستوس أفتونف إيفول خين نى إثُمَّو أوت. في إيتاف مو أفهومى إيجين إفمو أووه نى إتكى خين نى إمهاف أفئير إهموت نوؤو إمبى أونخ. إن إينيه.", 
+  "المَسيحُ قامَ من بين الأموات، بالموت داس الموت، والذين في القبور انعم لهم بالحياة الأبدية.", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Pashoys Isos", 
+  "", 
+  "باشويس إيسوس", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲡⲁⲟ̅ⲥ̅ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅: ⲫⲏⲉ̀ⲧⲁϥⲧⲱⲛϥ ⲉ̀ⲃⲟⲗϧⲉⲛ ⲛⲏⲉ̀ⲑⲙⲱⲟⲩⲧ: ϧⲉⲛ ⲡⲓⲉ̀ϩⲟⲟⲩ ⲙ̀ⲙⲁϩϣⲟⲙⲧ: ⲉⲕⲉ̀ⲧⲟⲩⲛⲟⲥⲧⲉⲛ ϧⲉⲛ ⲧⲉⲕϫⲟⲙ.", 
+  "Ô Seigneur Jesus Christ qui est ressuscité d’entre les morts, le troisième jour, relève-nous par Ta force.", 
+  "باشويس إيسوس بإخرستوس فيئطاف طونف إيفول خين نى إثُمَّوؤت خين بى إيهوؤ إماه شومت إيك إطون أوستين خين تيك جوم.", 
+  "يا رَبّي يَسُوعْ المَسيحْ الذي قامَ من الأموات في اليوم الثالث، أقِمنا بقوتك.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲛⲓⲭⲉⲣⲟⲩⲃⲓⲙ ⲛⲉⲙ ⲛⲓⲥⲉⲣⲁⲫⲓⲙ: ⲛⲓⲁ̀ⲅⲅⲗⲟⲥ ⲛⲉⲙ ⲛⲓⲁ̀ⲣⲭⲏⲁ̀ⲅⲅⲉⲗⲟⲥ: ⲛⲓⲥ̀ⲧⲣⲁⲧⲓⲁ ⲛⲉⲙ ⲛⲓⲉ̀ⲝⲟⲩⲥⲓⲁ: ⲛⲓⲑ̀ⲣⲟⲛⲟⲥ ⲛⲓⲙⲉⲧϭⲟⲓⲥ ⲛⲓϫⲟⲙ.", 
+  "Les Chérubins et les Séraphins les anges et les archanges les armées et les seigneuries, les trônes et les puissances.", 
+  "ني شيروفيم نيم ني سيرافيم، ني آنجيلوس نيم ني أرشي آنجيلوس، ني سترتيا، ني إكسوسيا، ني إثرونوس ني متشويش ني جوم،", 
+  "الشاروبيم والسيرافيم، الملائِكة ورؤساء الملائِكة، والعَساكرْ والسلاطين والكراسي والأرَبّاب.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "Ⲉⲩⲱϣ ⲉ̀ⲃⲟⲗ ⲉⲩϫⲱ ⲙ̀ⲙⲟⲥ ϫⲉ ⲭ̀ⲟⲩⲁⲃ ⲟⲩⲟϩ ⲭ̀ⲟⲩⲁⲃ ⲭ̀ⲟⲩⲁⲃ Ⲡⲟ̅ⲥ̅ ⲛ̀ⲛⲓⲉ̀ⲱⲛ Ⲭⲣⲓⲥⲧⲟⲥ ⲁⲛⲉⲥⲧⲏ ⲉⲕ ⲉⲛⲕⲣⲱⲛ.", 
+  "Proclamant et disant, « Saint, Saint, Saint Seigneur des siècles Christ est ressuscité d’entre les morts ».", 
+  "إفئوش إفول إفجو إمموس: إكؤواب، اووه إكؤواب، إكؤواب ابشويس إننين أون، باخريستوس آنيستي إكنيكرون.", 
+  "صارخين قائلين: \"قُدّوسْ، قُدّوسْ قُدّوسْ، رَبُ الدهور، المَسيحُ قامَ من الأموات.\"", 
+  ],
+  [
+  Prefix.same+"&C=SubTitle", 
+  "", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
+  "", 
+  "قُدُّوسْ الله", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.\n\n", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
+  ],
+  ],
+  [
+  [
+  Prefix.massCommon+"Agios&D=Seasons.Baptism&C=Title", 
+  "", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ", 
+  "", 
+  "قُدُّوسْ الله", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.\n\n", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Ⲁⲅⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ: ⲁⲅⲓⲟⲥ Ⲓⲥⲭⲩⲣⲟⲥ: ⲁⲅⲓⲟⲥ Ⲁ̀ⲑⲁⲛⲁⲧⲟⲥ: ⲟ̀ ⲁ̀ⲛⲁⲥⲧⲁⲥ ⲉⲕ ⲧⲱⲛ ⲛⲉⲕⲣⲱⲛ: ⲉ̀ⲗⲉⲏ̀ⲥⲟⲛ ⲏ̀ⲙⲁⲥ.", 
+  "Saint Dieu, Saint puissant, Saint immortel, qui as ressuscité aie pitié de nous.", 
+  "آجيوس أوثيئوس. آجيوس إس شيروس. آجيوس آثاناطوس، أو آناسطاس إيكطون نيكرون إليسون إيماس.", 
+  "قُدُّوسْ الله، قُدُّوسْ القوي، قُدُّوسْ الحَيّ الذي لا يَموتْ، يا مَنْ قَامَ مِنْ الأمْواتْ ارْحَمْنا.", 
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+  ],
+  ],
+  [
+  [
+  Prefix.massCommon+"Agios&D=Seasons.CrossFeast&C=Title", 
+  "", 
+  "", 
+  "", 
+  "", 
+  ],
   ],
   [
   [
@@ -26300,1054 +26301,1054 @@ PrayersArray= [[
   ],
   ],
   [
-    [
-    Prefix.bookOfHours+"Psalm118&D=$copticFeasts.AnyDay&C=SubTitle", 
-    "", 
-    "Psaume 118", 
-    "", 
-    "المَزْمُورْ المَائة والثَامِنْ عَشْرْ\n(طُوبَاهُمْ الذينَ بِلا عِيْبْ)", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "1119 Heureux ceux qui sont intègres dans leur voie, Qui marchent selon la loi de l'Éternel! 2 Heureux ceux qui gardent ses préceptes, Qui le cherchent de tout leur coeur, 3 Qui ne commettent point d'iniquité, Et qui marchent dans ses voies! 4 Tu as prescrit tes ordonnances, Pour qu'on les observe avec soin. 5 Puissent mes actions être bien réglées, Afin que je garde tes statuts! 6 Alors je ne rougirai point, A la vue de tous tes commandements. 7 Je te louerai dans la droiture de mon coeur, En apprenant les lois de ta justice. 8 Je veux garder tes statuts: Ne m'abandonne pas entièrement!", 
-    "", 
-    "1ـ طوباهم الذين بِلا عِيْبْ في الطريق، السَالِكُونْ في نَامُوسْ الرَبّ. طُوباهُمْ الذين يَفْحَصْونْ عَنْ شِهادَاتُه، ومن قلوبهم يطلبونه، لأن صانعي الإثم لم يهووا أن يسلكوا في سبله. أنت أمرت أن تحفظ وصاياك جدا، فيا ليت طرقي تستقيم إلى حفظ حقوقك. حينئذ لا أخزى إذا ما اطلعت على جميع وصاياك. أشكرك يا رب باستقامة قلبي، إذ عرفت أحكام عدلك. حقوقك أحفظ، فلا ترفضني إلى الغاية. ذُكْصاسْي فِلا نيثرومبي", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "9 Comment le jeune homme rendra-t-il pur son sentier? En se dirigeant d'après ta parole. 10 Je te cherche de tout mon coeur: Ne me laisse pas égarer loin de tes commandements! 11 Je serre ta parole dans mon coeur, Afin de ne pas pécher contre toi. 12 Béni sois-tu, ô Éternel! Enseigne-moi tes statuts! 13 De mes lèvres j'énumère Toutes les sentences de ta bouche. 14 Je me réjouis en suivant tes préceptes, Comme si je possédais tous les trésors. 15 Je médite tes ordonnances, J'ai tes sentiers sous les yeux. 16 Je fais mes délices de tes statuts, Je n'oublie point ta parole.", 
-    "", 
-    "2ـ بماذا يقوم الشاب طريقه؟ بحفظه أقوالك. من كل قلبي طلبتك، فلا تبعدني عن وصاياك أخفيت أقوالك في قلبي لكي لا أخطئ إليك. مبارك أنت يا رب علمني حقوقك. بشفتي أظهرت كل أحكام فمك، وفرحت بطريق شهاداتك كما بكل غنى. بوصاياك أتكلم وأتفهم في طرقك، بفرائضك ألهج، ولا أنسى كلامك. ذُكْصاسْي فِلا نيثرومبي", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "17 Fais du bien à ton serviteur, pour que je vive Et que j'observe ta parole! 18 Ouvre mes yeux, pour que je contemple Les merveilles de ta loi! 19 Je suis un étranger sur la terre: Ne me cache pas tes commandements! 20 Mon âme est brisée par le désir Qui toujours la porte vers tes lois. 21 Tu menaces les orgueilleux, ces maudits, Qui s'égarent loin de tes commandements. 22 Décharge-moi de l'opprobre et du mépris! Car j'observe tes préceptes. 23 Des princes ont beau s'asseoir et parler contre moi, Ton serviteur médite tes statuts. 24 Tes préceptes font mes délices, Ce sont mes conseillers.", 
-    "", 
-    "3ـ كافئ عبدك فأحيا وأحفظ أقوالك. اكشف عن عيني فـأرى عجائب من ناموسك. غريب أنا في الأرض فلا تخفِ عنى وصاياك. اشتاقت نفسي إلى اشتهاء أحكامك في كل حين. إنك انتهرت المتكبرين الملاعين الذين حادوا عن وصاياك. انزع عنى العار والخزي فإني لشهاداتك ابتغيتُ. جلس الرؤساء وتقاولوا على، أما عبدك فكان يهتمُ بحقوقك، لأن شهاداتك هي درسي وحقوقك هي مشورتي ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "25 Mon âme est attachée à la poussière: Rends-moi la vie selon ta parole! 26 Je raconte mes voies, et tu m'exauces: Enseigne-moi tes statuts! 27 Fais-moi comprendre la voie de tes ordonnances, Et je méditerai sur tes merveilles! 28 Mon âme pleure de chagrin: Relève-moi selon ta parole! 29 Éloigne de moi la voie du mensonge, Et accorde-moi la grâce de suivre ta loi! 30 Je choisis la voie de la vérité, Je place tes lois sous mes yeux. 31 Je m'attache à tes préceptes: Éternel, ne me rends point confus! 32 Je cours dans la voie de tes commandements, Car tu élargis mon coeur.", 
-    "", 
-    "4ـ لصقت بالتراب نفسي فأحيني ككلمتك. أخبرت بطرقك فاستجب لي. علمني حقوقك، وطريق عدلك فهمني، فألهج في عجائبك. ذبلت نفسي من الحزن، فثبتني في أقوالك. طريق الظلم أبعد عنى وبناموسك ارحمني. إني اخترت طريق الحق وأحكامك لم أنس. لصقتُ بشهاداتك يا رب فلا تخزني. في طريق وصاياك سعيتُ عندما وسعتَ قلبي ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "33 Enseigne-moi, Éternel, la voie de tes statuts, pour que je la retienne jusqu'à la fin! 34 Donne-moi l'intelligence, pour que je garde ta loi Et que je l'observe de tout mon coeur! 35 Conduis-moi dans le sentier de tes commandements! Car je l'aime.  36 Incline mon coeur vers tes préceptes, Et non vers le gain!  37 Détourne mes yeux de la vue des choses vaines, Fais-moi vivre dans ta voie! 38 Accomplis envers ton serviteur ta promesse, Qui est pour ceux qui te craignent! 39 Éloigne de moi l'opprobre que je redoute! Car tes jugements sont pleins de bonté. 40 Voici, je désire pratiquer tes ordonnances: Fais-moi vivre dans ta justice!", 
-    "", 
-    "5ـ ضع لي يا رب ناموسا في طريق حقوقك فأتبعَه كل حين. فهمني فأبحث عن ناموسك وأحفظه بكل قلبي. اهدني في سبيل وصاياك فإني إياها هويت. أمل قلبي إلى شهاداتك لا إلى الظلم. اردد عيني لئلا تعاينا الأباطيل، وفى سبلك أحيني. ثبت قولك لعبدك في خوفك، وانزع عنى العار الذي حَذِرْتُ منه، فإن أحكامك حلوة. هاأنذا قد اشتهيتُ وصاياك، فأحيني ببرك ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "41 Éternel, que ta miséricorde vienne sur moi, Ton salut selon ta promesse! 42 Et je pourrai répondre à celui qui m'outrage, Car je me confie en ta parole. 43 N'ôte pas entièrement de ma bouche la parole de la vérité! Car j'espère en tes jugements. 44 Je garderai ta loi constamment, A toujours et à perpétuité. 45 Je marcherai au large, Car je recherche tes ordonnances. 46 Je parlerai de tes préceptes devant les rois, Et je ne rougirai point. 47 Je fais mes délices de tes commandements. Je les aime. 48 Je lève mes mains vers tes commandements que j'aime, Et je veux méditer tes statuts.", 
-    "", 
-    "6ـ  لتأت عليّ رحمتك يا رب وخلاصك كقولك. فأجيب معيري بكلمة. لأني اتكلت على أقوالك، لا تنزع من فمي قول الحق، لأني توكلت على أحكامك، واحفظ شريعتك في كل حين، إلى الأبد والى مدى الدهر. كنتُ أسلك في السعة لأني لوصاياك ابتغيتُ. وتكلمت بشهاداتك قدام الملوك ولم أخزَ. ولهجتُ بوصاياك التي أحببتُها جدا، ورفعت يدي إلى وصاياك التي وددتُها جدا. وتأملتُ فرائضك. ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "49 Souviens-toi de ta promesse à ton serviteur, Puisque tu m'as donné l'espérance! 50 C'est ma consolation dans ma misère, Car ta promesse me rend la vie. 51 Des orgueilleux me chargent de railleries; Je ne m'écarte point de ta loi. 52 Je pense à tes jugements d'autrefois, ô Éternel! Et je me console. 53 Une colère ardente me saisit à la vue des méchants Qui abandonnent ta loi. 54 Tes statuts sont le sujet de mes cantiques, Dans la maison où je suis étranger. 55 La nuit je me rappelle ton nom, ô Éternel! Et je garde ta loi.", 
-    "", 
-    "7ـ اذكر لعبدك كلامك الذي جعلتني عليه أتكل. هذا الذي عزاني في مذلتي. لأن قولك أحياني. إن المتكبرين تجاوزوا الناموس إلى الغاية، أما أنا فعن ناموسك لم أمِل. تذكرتُ أحكامك يا رب منذ الدهر فتعزيتُ. الكآبة ملكتني من أجل الخطاة الذين تركوا ناموسك. حقوقك كانت لي مزاميرَ في موضع غربتي. ذكرتُ في الليل اسمك يا رب، وحفظت شريعتك. هذا صار لي لأني طلبت حقوقك. ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "56 C'est là ce qui m'est propre, Car j'observe tes ordonnances. 57 Ma part, ô Éternel! je le dis, C'est de garder tes paroles. 58 Je t'implore de tout mon coeur: Aie pitié de moi, selon ta promesse! 59 Je réfléchis à mes voies, Et je dirige mes pieds vers tes préceptes. 60 Je me hâte, je ne diffère point D'observer tes commandements. 61 Les pièges des méchants m'environnent; Je n'oublie point ta loi. 62 Au milieu de la nuit je me lève pour te louer, A cause des jugements de ta justice. 63 Je suis l'ami de tous ceux qui te craignent, Et de ceux qui gardent tes ordonnances. 64 La terre, ô Éternel! est pleine de ta bonté; Enseigne-moi tes statuts!", 
-    "", 
-    "8ـ نصيبي أنت يا رب فقلت أن أحفظ وصاياك. ترضيت وجهك بكل قلبي، فارحمني كقولك. لأني تفكرت في طرقك ورددت قدمي إلى شهاداتك. تهيأت ولم أتوانَ لحفظ وصاياك. رباطات الخطاة التفت على، أما شريعتك فلم أنسَها. في نصف الليل نهضت لأشكرك على أحكام عدلك. شريك أنا لكل الذين يخافونك، وللحافظين وصاياك. من رحمتك يا رب امتلأت الأرضُ فعلمني عدلك ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "65 Tu fais du bien à ton serviteur, O Éternel! selon ta promesse. 66 Enseigne-moi le bon sens et l'intelligence! Car je crois à tes commandements. 67 Avant d'avoir été humilié, je m'égarais; Maintenant j'observe ta parole. 68 Tu es bon et bienfaisant; Enseigne-moi tes statuts! 69 Des orgueilleux imaginent contre moi des faussetés; Moi, je garde de tout mon coeur tes ordonnances. 70 Leur coeur est insensible comme la graisse; Moi, je fais mes délices de ta loi. 71 Il m'est bon d'être humilié, Afin que j'apprenne tes statuts. 72 Mieux vaut pour moi la loi de ta bouche Que mille objets d'or et d'argent.", 
-    "", 
-    "9ـ خيرا صنعتَ مع عبدك يا رب حسب قولك، صلاحا وأدبا ومعرفة، علمني فإني قد صدقت وصاياك. قبل أن أتواضع أنا تكاسلتُ. فلهذا حفظتُ كلامك. صالح أنت يا رب فبصلاحك علمني حقوقك. كثر عليّ ظلم المتكبرين، وأنا بكل قلبي أبحث عن وصاياك. تجبن مثل اللبن قلبهم، وأنا لهجت بناموسك. خير لي أنك أذللتني حتى أتعلمَ حقوقك. ناموس فمك خير لي من ألوف ذهب وفضة ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "73 Tes mains m'ont créé, elles m'ont formé; Donne-moi l'intelligence, pour que j'apprenne tes commandements! 74 Ceux qui te craignent me voient et se réjouissent, Car j'espère en tes promesses. 75 Je sais, ô Éternel! que tes jugements sont justes; C'est par fidélité que tu m'as humilié. 76 Que ta bonté soit ma consolation, Comme tu l'as promis à ton serviteur! 77 Que tes compassions viennent sur moi, pour que je vive! Car ta loi fait mes délices. 78 Qu'ils soient confondus, les orgueilleux qui m'oppriment sans cause! Moi, je médite sur tes ordonnances. 79 Qu'ils reviennent à moi, ceux qui te craignent, Et ceux qui connaissent tes préceptes! 80 Que mon coeur soit sincère dans tes statuts, Afin que je ne sois pas couvert de honte!", 
-    "", 
-    "10ـ يداك صنعتاني وجبلتاني. فهمني فأتعلم وصاياك. الذين يخافونك يبصرونني ويفرحون، لأني بكلامك وثقت. قد علمتُ يا رب أن أحكامك عادلة وبحق أذللتني. فلتأتِ عليّ رحمتك لتعزيني، نظير قولك لعبدك. لتأتني رأفتك فأحيا فإن ناموسك هو درسي. وليخز المتكبرون لأنهم خالفوا الشرع عليّ ظلما، وأنا كنت مثابرا على وصاياك. وليرجع إليّ الذين يتقونك ويعرفون عجائبك، وليصر قلبي بلا عيب في عدلك لكي لا أخزي ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "81 Mon âme languit après ton salut; J'espère en ta promesse. 82 Mes yeux languissent après ta promesse; Je dis: Quand me consoleras-tu? 83 Car je suis comme une outre dans la fumée; Je n'oublie point tes statuts. 84 Quel est le nombre des jours de ton serviteur? Quand feras-tu justice de ceux qui me persécutent? 85 Des orgueilleux creusent des fosses devant moi; Ils n'agissent point selon ta loi. 86 Tous tes commandements ne sont que fidélité; Ils me persécutent sans cause: secours-moi! 87 Ils ont failli me terrasser et m'anéantir; Et moi, je n'abandonne point tes ordonnances. 88 Rends-moi la vie selon ta bonté, Afin que j'observe les préceptes de ta bouche!", 
-    "", 
-    "11ـ تاقت نفسي إلى خلاصك وعلى كلامك توكلت. كلت عيناي من انتظار أقوالك قائلتين: \"متى تعزيني ؟\". صرتُ مثل زق في جليد ولحقوقك لم أنس. كم هي أيام عبدك ؟ متى تجري لي حكما على الذين يضطهدونني؟ تكلم معي مخالفو الناموس بكلام هذيان، لكن ليس كناموسك يا رب، لأن كل وصاياك هي حق. وبظلم قد طردوني فأعني؟ كادوا يفنونني على الأرض، أما أنا فلم أترك وصاياك. حسب رحمتك أحيني فأحفظ شهادات فمك ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "89 A toujours, ô Éternel! Ta parole subsiste dans les cieux. 90 De génération en génération ta fidélité subsiste; Tu as fondé la terre, et elle demeure ferme. 91 C'est d'après tes lois que tout subsiste aujourd'hui, Car toutes choses te sont assujetties. 92 Si ta loi n'eût fait mes délices, J'eusse alors péri dans ma misère. 93 Je n'oublierai jamais tes ordonnances, Car c'est par elles que tu me rends la vie. 94 Je suis à toi: sauve-moi! Car je recherche tes ordonnances. 95 Des méchants m'attendent pour me faire périr; Je suis attentif à tes préceptes. 96 Je vois des bornes à tout ce qui est parfait: Tes commandements n'ont point de limite.\n", 
-    "", 
-    "12ـ يا رب كلمتك دائمة في السموات إلى الأبد، وإلى جيل فجيل حقك. أسست الأرض فهي ثابتة بأمرك، والنهار أيضا ثابت. لأن كل الأشياء متعبدة لك. لو لم تكن شريعتك تلاوتي لهلكتُ حينئذ في مذلتي. وإلى الدهر لا أنسى وصاياك لأنك بها أحييتني يا رب. لك أنا فخلصني يا رب، لأني لوصاياك طلبتُ. إياي انتظر الخطاة ليهلكوني، ولشهاداتك فهمت. لكل تمام رأيت منتهى أما وصاياك فواسعة جدا ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "97 Combien j'aime ta loi! Elle est tout le jour l'objet de ma méditation. 98 Tes commandements me rendent plus sage que mes ennemis, Car je les ai toujours avec moi. 99 Je suis plus instruit que tous mes maîtres, Car tes préceptes sont l'objet de ma méditation. 100 J'ai plus d'intelligence que les vieillards, Car j'observe tes ordonnances. 101 Je retiens mon pied loin de tout mauvais chemin, Afin de garder ta parole. 102 Je ne m'écarte pas de tes lois, Car c'est toi qui m'enseignes. 103 Que tes paroles sont douces à mon palais, Plus que le miel à ma bouche! 104 Par tes ordonnances je deviens intelligent, Aussi je hais toute voie de mensonge.\n", 
-    "", 
-    "13ـ محبوب هو اسمك يا رب، فهو طولَ النهار تلاوتي. علمتني وصاياك أفضل من أعدائي، لأنها ثابتة لي إلى الأبد. أكثر من جميع الذين يعلمونني فهمتُ، لأن شهادتك هي درسي. أكثر من الشيوخ فهمتُ، لأني طلبتُ وصاياك. من كل طريق خبيث منعتُ رجليّ لكي أحفظ كلامك. عن كلامك لم أحد، لأنك وضعتَ لي ناموسا. إن كلماتك حلوة في حلقي، أفضل من العسل والشهد في فمي. من وصاياك تفطنتُ، فلهذا أبغضت كل طرق الظلم. (لأنك وضعتَ لي ناموسًا) ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "105 Ta parole est une lampe à mes pieds, Et une lumière sur mon sentier. 106 Je jure, et je le tiendrai, D'observer les lois de ta justice. 107 Je suis bien humilié: Éternel, rends-moi la vie selon ta parole! 108 Agrée, ô Éternel! les sentiments que ma bouche exprime, Et enseigne-moi tes lois! 109 Ma vie est continuellement exposée, Et je n'oublie point ta loi. 110 Des méchants me tendent des pièges, Et je ne m'égare pas loin de tes ordonnances. 111 Tes préceptes sont pour toujours mon héritage, Car ils sont la joie de mon cœur. 112 J'incline mon cœur à pratiquer tes statuts, Toujours, jusqu'à la fin.\n", 
-    "", 
-    "14ـ مصباح لرجلي كلامك ونور لسبلي. حلفت فأقمت على حفظ أحكام عدلك. تذللت جدا إلى الغاية يا رب، أحيني كقولك. تعهدات فمي باركها يا رب، وأحكامك علمني. نفسي في يديك كل حين، وناموسك لم أنسَ، أخفى الخطاة لي فخا، ولم أضل عن وصاياك. ورثت شهاداتك إلى الأبد، لأنها بهجة قلبي. عطفت قلبي لأصنع برك إلى الأبد (من أجل المكافأة) (ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "113 Je hais les hommes indécis, Et j'aime ta loi. 114 Tu es mon asile et mon bouclier; J'espère en ta promesse. 115 Éloignez-vous de moi, méchants, Afin que j'observe les commandements de mon Dieu! 116 Soutiens-moi selon ta promesse, afin que je vive, Et ne me rends point confus dans mon espérance! 117 Sois mon appui, pour que je sois sauvé, Et que je m'occupe sans cesse de tes statuts! 118 Tu méprises tous ceux qui s'écartent de tes statuts, Car leur tromperie est sans effet. 119 Tu enlèves comme de l'écume tous les méchants de la terre; C'est pourquoi j'aime tes préceptes. 120 Ma chair frissonne de l'effroi que tu m'inspires, Et je crains tes jugements.\n", 
-    "", 
-    "15ـ لمتجاوزي الناموس أبغضتُ ولناموسك أحببت. لأنك أنت معيني وناصري. وعلى كلامك توكلت. ابعدوا عني أيها الأشرار فأفحص عن وصايا إلهي. عضدني حسب قولك فأحيا ولا تخيب رجائي. أعني فأخلص، وأدرس في وصاياك كل حين. رذلتَ سائر الذين حادوا عن وصاياك لأن فكرهم ظلم. عصاة حسبتَ سائر خطاة الأرض، فلهذا أحببتُ شهاداتك في كل حين. سمر خوفك في لحمي لأني من أحكامك جزعتُ ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "121 J'observe la loi et la justice: Ne m'abandonne pas à mes oppresseurs! 122 Prends sous ta garantie le bien de ton serviteur, Ne me laisse pas opprimer par des orgueilleux! 123 Mes yeux languissent après ton salut, Et après la promesse de ta justice. 124 Agis envers ton serviteur selon ta bonté, Et enseigne-moi tes statuts! 125 Je suis ton serviteur: donne-moi l'intelligence, Pour que je connaisse tes préceptes! 126 Il est temps que l'Éternel agisse: Ils transgressent ta loi. 127 C'est pourquoi j'aime tes commandements, Plus que l'or et que l'or fin; 128 C'est pourquoi je trouve justes toutes tes ordonnances, Je hais toute voie de mensonge.\n", 
-    "", 
-    "16ـ قد أجريتُ حكما وعدلا فلا تسلمني إلى الذين يظلمونني. كن لعبدك كفيلا في الخير، لئلا يجوزَ عليّ المتكبرون. عيناي قد ذبلتا من انتظار خلاصك وقول عدلك. اصنع مع عبدك حسب رحمتك، وحقوقك علمني. عبدك أنا، فهمني فأعرف شهاداتك. إنه وقتٌ يعمل فيه للرب، لأنهم قد نقضوا ناموسك. لأجل هذا أحببتُ وصاياك أفضل من الذهب والجوهر، ولأجل هذا بازاء كل وصاياك تقومتُ، وكل طريق ظلم أبغضتُ ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "129 Tes préceptes sont admirables: Aussi mon âme les observe. 130 La révélation de tes paroles éclaire, Elle donne de l'intelligence aux simples. 131 J'ouvre la bouche et je soupire, Car je suis avide de tes commandements. 132 Tourne vers moi ta face, et aie pitié de moi, Selon ta coutume à l'égard de ceux qui aiment ton nom! 133 Affermis mes pas dans ta parole, Et ne laisse aucune iniquité dominer sur moi! 134 Délivre-moi de l'oppression des hommes, Afin que je garde tes ordonnances! 135 Fais luire ta face sur ton serviteur, Et enseigne-moi tes statuts! 136 Mes yeux répandent des torrents d'eaux, Parce qu'on n'observe point ta loi.\n", 
-    "", 
-    "17ـ عجيبة هي شهاداتك لذلك حفظتها نفسي. إعلان أقوالك ينير لي، ويفهم الأطفال والصغار. فتحت فهمي واجتذبتُ لي روحا، لأني لوصاياك اشتقتُ. انظر إليّ وارحمني كرحمتك للذين يحبون اسمك. قوم خطواتي كقولك فلا يتسلط على أيُّ إثم. أنقذني من ظلم الناس فأحفظ وصاياك. أضئ بوجهك على عبدك وعلمني حقوقك. غاصت عيناي في مجاري المياه، لأنهم لم يحفظوا ناموسك. ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "137 Tu es juste, ô Éternel! Et tes jugements sont équitables; 138 Tu fondes tes préceptes sur la justice Et sur la plus grande fidélité. 139 Mon zèle me consume, Parce que mes adversaires oublient tes paroles. 140 Ta parole est entièrement éprouvée, Et ton serviteur l'aime. 141 Je suis petit et méprisé; Je n'oublie point tes ordonnances. 142 Ta justice est une justice éternelle, Et ta loi est la vérité. 143 La détresse et l'angoisse m'atteignent: Tes commandements font mes délices. 144 Tes préceptes sont éternellement justes: Donne-moi l'intelligence, pour que je vive!\n", 
-    "", 
-    "18ـ عادل أنت يا رب وقضاؤك مستقيم. أوصيتَ كثيرا بالعدل والحق اللذين هما شهاداتك. غيرة بيتك أكلتني، لأن أعدائي نسوا وصاياك. ممحص قولك جدا، وعبدك أحبه. صغيرٌ أنا ومرذول وحقوقك لم أنسَ. عدلك حق هو إلى الأبد، وكلامك حق هو. ضيق وشدة أدركاني، ووصاياك هي درسي. عادلة هي شهاداتك إلى الأبد. فهمني فأحيا ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "145 Je t'invoque de tout mon coeur: exauce-moi, Éternel, Afin que je garde tes statuts! 146 Je t'invoque: sauve-moi, Afin que j'observe tes préceptes! 147 Je devance l'aurore et je crie; J'espère en tes promesses. 148 Je devance les veilles et j'ouvre les yeux, Pour méditer ta parole. 149 Écoute ma voix selon ta bonté! Rends-moi la vie selon ton jugement! 150 Ils s'approchent, ceux qui poursuivent le crime, Ils s'éloignent de la loi. 151 Tu es proche, ô Éternel! Et tous tes commandements sont la vérité. 152 Dès longtemps je sais par tes préceptes Que tu les as établis pour toujours.\n", 
-    "", 
-    "19ـ صرخت من كل قلبي، فاستجب لي يا رب. إني أبتغي حقوقك. صرختُ إليك فخلصني، لأحفظ شهاداتك. سبقتُ وقمتُ قبل الوقتِ وصرخت، وعلى كلامك توكلتُ. سبقتْ عيناي وقت السحَر، لأتلو في جميع أقوالك، فاسمع صوتي يا رب كرحمتك، وبحسب أحكامك أحيني. اقترب بالإثم الذين يطردونني، وعن ناموسك ابتعدوا. قريب أنت يا رب، وكل وصاياك حق هي. منذ البدء عرفتُ من شهاداتك أنك إلى الدهر أسستها ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "153 Vois ma misère, et délivre-moi! Car je n'oublie point ta loi. 154 Défends ma cause, et rachète-moi; Rends-moi la vie selon ta promesse! 155 Le salut est loin des méchants, Car ils ne recherchent pas tes statuts. 156 Tes compassions sont grandes, ô Éternel! Rends-moi la vie selon tes jugements! 157 Mes persécuteurs et mes adversaires sont nombreux; Je ne m'écarte point de tes préceptes, 158 Je vois avec dégoût des traîtres Qui n'observent pas ta parole. 159 Considère que j'aime tes ordonnances: Éternel, rends-moi la vie selon ta bonté! 160 Le fondement de ta parole est la vérité, Et toutes les lois de ta justice sont éternelles.\n", 
-    "", 
-    "20ـ انظر إلى مذلتي وأنقذني، فإني لم أنس ناموسك. احكم لي في دعواي ونجني. من أجل كلامك أحيني. بعيد هو الخلاص عن الخطاة، لأنهم لم يطلبوا حقوقك. رأفتك كثيرة جدا يا رب. حسب أحكامك أحيني. كثيرون هُمُ الذين يضطهدونني ويحزنونني، وعن شهاداتك لم أجنح. رأيت الذين لا يفهمون فاكتأبت، لأنهم لأقوالك لم يحفظوا. انظر يا رب، فإني أحببت وصاياك. برحمتك يا رب أحيني. بدء كلامك حقٌ، وإلي الأبد كل أحكام عدلك ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "161 Des princes me persécutent sans cause; Mais mon coeur ne tremble qu'à tes paroles. 162 Je me réjouis de ta parole, Comme celui qui trouve un grand butin.  163 Je hais, je déteste le mensonge; J'aime ta loi.  164 Sept fois le jour je te célèbre, A cause des lois de ta justice. 165 Il y a beaucoup de paix pour ceux qui aiment ta loi, Et il ne leur arrive aucun malheur. 166 J'espère en ton salut, ô Éternel! Et je pratique tes commandements. 167 Mon âme observe tes préceptes, Et je les aime beaucoup. 168 Je garde tes ordonnances et tes préceptes, Car toutes mes voies sont devant toi.\n", 
-    "", 
-    "21ـ الرؤساء اضطهدوني بلا سبب. من أقوالك جزع قلبي. أبتهج أنا بكلامك كمن وجد غنائمَ كثيرة. أبغضتُ الظلم ورذلته، أما ناموسك فأحببته. سبع مرات في النهار سبحتك على أحكام عدلك. فليكن سلام عظيم للذين يحبون اسمك، وليس لهم شك. توقعتُ خلاصك يا رب ووصاياك أحببتها. حفظتْ نفسي شهاداتك وأحببتها جدا. حفظتُ وصاياك وشهاداتك، وكل طرقي أمامك يا رب. ذُكْصاسْي فِلا نيثرومبي.", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "169 Que mon cri parvienne jusqu'à toi, ô Éternel! Donne-moi l'intelligence, selon ta promesse! 170 Que ma supplication arrive jusqu'à toi! Délivre-moi, selon ta promesse! 171 Que mes lèvres publient ta louange! Car tu m'enseignes tes statuts. 172 Que ma langue chante ta parole! Car tous tes commandements sont justes. 173 Que ta main me soit en aide! Car j'ai choisi tes ordonnances. 174 Je soupire après ton salut, ô Éternel! Et ta loi fait mes délices. 175 Que mon âme vive et qu'elle te loue! Et que tes jugements me soutiennent! 176 Je suis errant comme une brebis perdue; cherche ton serviteur, Car je n'oublie point tes commandements.", 
-    "", 
-    "22ـ فلتدن وسيلتي قدامك يا رب، كقولك فهمني. فلتدخل طلبتي إلى حضرتك يا رب، ككلمتك أحيني. تفيض شفتاي السبح إذا ما علمتني حقوقك. لساني ينطق بأقوالك لأن جميع وصاياك عادلة. لتكن يدك لخلاصي لأنني اشتهيت وصاياك. اشتقتُ إلى خلاصك يا رب، وناموسك هو تلاوتي. تحيا نفسي وتسبحك، وأحكامك تعينيني. ضللت مثل الخروف الضال، فاطلب عبدك، فإني لوصاياك لم أنسَ هللويا.", 
-    ],
-    ],
-    [
-      [
-      Prefix.communion+"ADoveCameToZacharieHome&D=$Seasons.KiahkWeek3||$Seasons.KiahkWeek4&C=Title", 
-      "", 
-      "", 
-      "", 
-      "مديح خطرت حمامة في بيت ذَكَرِيّا", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "السَماءْ الثانية الجِسْدانية، ♫♫ مَرْيَمْ عَرْشَ الله المُتْعَالْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "قبِلَتْ البُشْرَى الجِبْرائِيلية، ♫♫ حِينَ بَشَّرَها النَذْيرْ وقَالْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "بالابْنِ الخَالِقْ تَحْبَليْنْ، ♫♫ وأعْطَاها عَلامَةْ لِلْتَصْديقْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "أليصَاباتْ عَاقِرْ لِسِنِينْ، ♫♫ واليُومْ حُبْلىَ بِنَبي وصِدِّيقْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "تَمَتْ سِتَّةْ أشْهُرْ بِتَمَامْ، ♫♫ لَهَا مِنْ بَعْدِ العُقُورِيَة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "لا يَقُولْ إلَهِكْ قَطّْ كَلامْ، ♫♫ إلّا وفِيهْ قُدْرَة أزَلِيّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "تَرَآى البَشْيْرْ صَاعِداً لِمَوْلاهْ، ♫♫ فَكَّرَتْ مَرْيَمْ قَائلة أقُومْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "لِأَنْظُرْ هَذَا الحَبَلْ وأرَاهْ، ♫♫ فَتَرَكَتْ النَاصِرة والتُخُومْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "جَاءَتْ الحَمَامَة الوَدِيعَة، ♫♫ كَنَدَي حِرمْونْ فَوّقَ جَبَلْ صِهْيونْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "سَحَابَة وأمْطَارْهَا بَدِيعَة، ♫♫ أمْطَرَتْ طَلّْ الرَخَا في صِهْيونْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "جَذَبْ شَمْسْ البِرِّ سَوَاعِي ضِياه، ♫♫ حَمَلاً لِلعَجَلة النَارِيّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وفي عِينْ كَارِمْ حَلِّ بِرُؤياه، ♫♫ ودَخَلْ إلى بَيْتْ زَكَريّا", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "حَلِّ القَصْرْ النَفْسَاني، ♫♫ وأقْدامُه عَجْلاتْ نَارِيّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "حَامِلْ واحِدْ لَيسَ لُه ثَاني، ♫♫ خالِقْ أزَلي نَارْ مُحْييّةْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "حَمَامَة يَمَامَة كَقوْل سُلَيّمَانْ، ♫♫ ونَخْلَة حَامِلْة أثْمَار الحَياة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "بَشَرَتْنَا بِسَلامْ وطَمَأن، ♫♫ والشِفَاءْ مِنْ مَنْكَبِيّهَا قَبِلْنَاه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "حَمَامَة تَصِيحْ في أرَاضِينْا، ♫♫ وقَفَتْ في بِلادْ الأمْواتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وعَلى مِنْكَبَيّها بَارينَا، ♫♫ لِيَصّيِرْ الأَرْض كَمَا السَّمَواتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَرَجْ العَبْدْ يَتَلَقَى مَوّلاهْ، ♫♫ جُوفِ العَاقِر لُه سِتْر حِجَابْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وجُوفِ الصَبِيّة فِيهِ أَنْشاه، ♫♫ في عَرْشُه اللّحْمِي وفي حِضْنِ الآب", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَرَجَ الصَابِغْ لِلِقاءْ رَبُّه، ♫♫ والصَنْعَة احْتَاجِتْ لِلّصَانِعْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وتَنَازَلْ إليها بِغَزيرْ حُبُّه، ♫♫ فَعَل كُلِّ شِيء بِغَيْرِ مَانِعْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "دَنَتْ العَاقِرْ لِتُعَاينْ الأَمْر، ♫♫ واللّيْل المُظِلِمْ حَضَنْ النَهاَرْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "العَاقِرْ لِيلْ وسِراجْها القَمَرْ، ♫♫ والصَبّي نَهارْ وشَمْسِ الأبْرَارْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "دَلَّ السَيِّدْ القَادِرْ يّدَهُ، ♫♫ وأدنْاها مِنْ دَاخِلْ الجُوفْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وبِيَمِينُه عَمَّدْ عَبْدُهْ، ♫♫ ونَضَحْ عَلِيهْ رَشّاشْ الزُوفْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "دُهِشَ العَبْدِ مِنْ لِقَاءْ مَوّلاهْ، ♫♫ وتَحَرَّكْ وتَهَلَّلْ في الجُوفْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "سَجَدْ المَخْلوقْ لِمَنْ أَنْشاه، ♫♫ وامْتَلأ رَهْبَةْ ورِعْدَة مَعَ خُوفْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ذا مَنْ يُوهِبْ عَبْدُه عَطَايَاهْ، ♫♫ ويَعُودْ يَتْسَوَّلْها مِنْهُ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "إلاّ إلَهْنا المُفْتَقِرْ بِرِضَاه، ♫♫ وبِمَسْكَنَتُه أغْنَى عَبْدُه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "رَبَنَا عَمَّدْ يُوحَنَّا عَبْدُه، ♫♫ فِي الجُوفْ ومَلَأَه بِرُوحْ التَهْليلْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ورَجَعْ سَألْ الصِبْغَة مِنُّه، ♫♫ كَأنُّه مُحْتَاجْ وهوَ مُغْنْي جَليلْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "رَقَصْ دَاوّدْ قُدَّامْ تَابُوتْ العَهْدْ، ♫♫ وهوّ مَحْمُولْ عَلىَ الدَوابْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "رَقَصْ يُوحَّنا قُدَّامْ رَبِّ المَجْدْ، ♫♫ وهْوَ في بَطْنِ أُمُّه وفي حِضْنِ الآبْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "زَمَّرْ يا دَاوّد بِأرْغُنْ وقِيثَارْ، ♫♫ قُلّ الرَحْمَة والعّدْلِ تّلاقَيا", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "الحَقِّ أشْرَقْ مِنْ الأَرْضْ إجْهَارا، ♫♫ والعَدْلْ هو يَسُوعْ إهيا شراهيا", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "سَمِعَتْ العَجْوزْ خَاصْ السَلامْ، ♫♫ وهو خَارِجْ مِنْ فَمِ صَبِيَّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "سَلاَمْ مِنْ فَمِّ حَمَامْ ويَمَامْ، ♫♫ فَامْتَلأتْ بِالنِعْمَة الإلَهِيَّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "شَاهِدْ الصَابِغْ والِدّةَ رَبُّهْ، ♫♫ واِمْتَلأَ حِكْمَةْ وسِرِّ وبُرْهَانْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ولِوّقْتّه صَاحْ عَلىَ فَمْ أُمُّه، ♫♫ قَالْ مُبَارَكَةْ أنْتِ في النِسوانْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "صَارِتْ حَوَّاءْ أُمّ الأحْيّاءْ، ♫♫ وقَدّْ صَارَتْ أُمّ الأمْواتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "لَمَّا لُعْنَتْ بِالمَعْصِيَّة، ♫♫ ولَعَنُوا بِها كُلِّ النِسْواتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وصِرْتِ مُبَارَكَة حِينْ بَارَكّكِ، ♫♫ رّبِّكْ بِمَلاكُه غَبْريّال", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وجَمِيْعْ النِسْوّة تَبارَكوا بِكِ، ♫♫ وعُتِقُوا مِنْ كُلِّ ضَلالْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ضَلالْ آدَمْ أَضَلَّ الرِجَالْ، ♫♫ والجَميعْ صَاروا بِهِ مَلاعينْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وبِيَسُوعْ ابْنِكْ الرَبِّ المُتْعَالْ، ♫♫ تُبَارَكَ جِنْسُهُمْ أجْمَعِينْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ضَمَنْتِ لي كُلِّ البَرَكَاتْ، ♫♫ مِنْ أَيْنَ لي مَجِيءْ أُمِّ رَبِّي إلىّ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "طُوبَاكِ يا مَنْ قَبِلَتْ الكَلِمَاتْ، ♫♫ وآمَنَتْ بِأَنَّكِ أُمِّ الحَيّ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "طَابْ قَلْبِ مَرْيَمْ البَتُولْ، ♫♫ صَاحِتْ لِلّوَقْتِ بِصُوتْ مَا أبْهَاه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وسَبَّحَتْ الله وبَدَتْ تَقُولْ، ♫♫ تَتَعَظَمْ نَفْسِي بِالإلَهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ظَهَرَ تَهليلْ رُوحِي بِالَخلاصْ، ♫♫ خَالِقِي في أحْشَائي وهو الصَانِعْ إيَّاه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "نَظَرَ لِتَواضُعي بِغَيْرِ انْتِقاصْ، ♫♫ أنَا أَمَتُه وأُمُّهُ وسَمَاه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ظَهَرَ فَضْلَهُ لِكُلِّ الأجْيَالْ، ♫♫ ومِنَ الآنْ يُعْطُونْي الطُوبى", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "قَدّّ حَلَّ في أحْشَائِي ابْنٌ مُتَعَالْ، ♫♫ وأَكْمَلَ بي الرُمُوزْ المَكْتُوبَة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "عَظَائِمْ صَنَعْهَا بي المُتَعَالْ، ♫♫ قُدُّوسْ اسْمُه في عِلُوِّ سَمَاهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ومَراحْمُه إلى كُلِّ الأجّْيالْ، ♫♫ وعُهُودُه أكْمَلَها لأصْفِياه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "عُلُوّ ذِرَاعُه صَنَعَ القُوَّاتْ، ♫♫ والأَعِزاءْ مِنَ الرُتَبْ أنْزَلهَُمْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "أسْقَطْ الشَياطِينْ مِنَ السَّمَواتْ، ♫♫ لِيُجْلِسَ النَاسْ في مَرَاتِبِهِمْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "عَالَ الَجائِعْينْ وأشْبَعَهُمْ خَيّراتْ، ♫♫ والأَغْنِياءْ قَدّْ أرْسَلَهُمْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَارِغْينْ فُقْرَاءْ مِنَ الصَالِحَاتْ، ♫♫ لِيَحْتَاجُوا إلَيهْ ويُخَلِّصَهُمْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "عِنْدَمَا تَزَوَّجَتْ رِفْقَةْ بِثَبَاتْ، ♫♫ ودَعُوهَا إخْوَتَها قَائِلينْ:", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "\"أنْتِ يا أُخْتِاً لأِلُوفْ ورَبَواتْ، ♫♫ وزَرْعِكُ يَرِثْ مُدُنْ مُعَانِدِينْ\"", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "غَابَتْ رِفْقَة وظَهَرَتْ مَرْيَمْ، ♫♫ قَالَتْ: \"هَذا القَوّلْ حَقَاً يَقِينْ\"", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "\"طَردَ الُمعُانِدينْ مِنْ جَلالْ أَعْظَمْ، ♫♫ ورَفَعْ عِوَضْهُمْ المُتَواضِعِينْ\"", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَتَاةْ إسْرائيلْ ابْنِ إبراهِيمْ، ♫♫ عَضَّدَهُ ورَفَعُه وبَارَكَ زَرْعُهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "مِنْ نَسْلي أنا ابْنَة يُوّاقِيمْ، ♫♫ ظَهْرْ مِنْهُ رَبُه ورَفَعُه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "قَدّْ صَارْ ولَدْي نَسْلِ لِيَعْقُوبْ، ♫♫ وإبْراهِيمْ واسَحقْ نالا المِيثَاقْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "قَدّْ حَلَّ في أحْشَائي إلَهْ مَرْهُوبْ، ♫♫ وأَكْمَل بِي المَوّعِدْ والميِثَاقْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "أقَامَتْ مَرْيَمْ عِنْدَ اليْصَاباتْ، ♫♫ ثَلاثَةْ أشْهُرْ مُتْوَاليَّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "كَمُلَ الزَمَانْ وجَاءَتْ الآوْقَاتْ، ♫♫ لِميلادْ كَارُوزْ المَعْمُودِيَّة", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "كَلَّمّتْ العَجُوزْ الصَبِيَّة، ♫♫ وقَالَتْ لَها: \"إمْضِ بِسَلامْ\"", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "\"يا مَرْكَبَة لَحْمِيَّةْ ونَارِيَّة، ♫♫ جَالِسْ عَلَيّهْا مُنْشِئ الآنْامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "\"لا يُمْكِنْ أَنَّ الآمَةْ تَجْلِسْ، ♫♫ والسَيَّدَة تَخْدِمْ بِقِيَامْ\"", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "\"إمْضِ لِبَيْتِكِْ باسماء مُقَدَّّسْ\"، ♫♫ رَجِعَتْ البَتُولْ إلى بَيْتِها بِسَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "مَضَتْ رَاجِعَةْ للنَاصِرِيَّةْ، ♫♫ حَمَامَة في فَمِهْا غُصْنْ الزَيْتُونْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "طَرَدَتْ طُوفَانْ كُلِّ خَطِيَّة، ♫♫ قَدّْ بَشَرَتْنَا بِإلَهْ مَكْنُونْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "نَايْمْ غَافِلْ ودَنَي وَقْتِي، ♫♫ وشَمْسِي قَرُبَتْ لِلْمَغِيبْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وتَدَانَتْ وقَرَبُتْ مَسْكَنَتي، ♫♫ وأنْا بِجَميْعْ الخَطايَا مَعِيبْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "هَامَتي مَطْرُوحَة قُدَّامَكْ، ♫♫ وعَلَى قَدَمْي سَاجِدْ وذَلِيْلْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "اتَّخِذْيني مِنْ خُدَّامِكْ، ♫♫ يا وَالِدَة يَسُوعَ عِمَّانُوئِيلْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وّلَّى شَبَابي واقْتَرَبْ الَحصَادْ، ♫♫ والزَارِعْ طَالِبْ حَصَادْ زَرْعُهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وأنَا سَالِكْ في كُلِّ فَسَادْ، ♫♫ حَائِدْ عَنْ أحْكَامُهْ وشَرْعُهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "والسَاعَة اقْتَرَبَتْ مِنّي، ♫♫ والَحاكِمْ عَادِلْ عَدِيمْ الُجورْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ولا صَدْرْ حَنُونْ يَضُمِّنْي، ♫♫ ومَوْضِعْ عَذابي عَمْيقْ بِالغُورْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "لاحِظِينْي يا وَالِدَةُ الإلَهْ، ♫♫ مَنْ غَيْرِكْ أجِدْ لِذَنْبي ضَميْنْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "اسْأَلي ابْنِكْ يُوهِبْ لي حَيّاةْ، ♫♫ يا عُونْ الفُقَراءْ ورَجَاءْ المَسَاكِينْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "يا مَرْيَمْ إنْ كَانْ عَدُوّي يزير، ♫♫ طَالِبَاً حَقْلاً مَا تَعَبْ فِيه", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "والأَوْلَى هُوَ ابْنِكْ رَبِّ قَدِيرْ، ♫♫ جَابِلْنْي وأنَا مِنْ صُنْعِ يَدْيِهْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "يُوّرِثْني ابْنِكْ هُوَ أَوْلَى بي، ♫♫ ولا يُوّْرِثْني عَدِوّ شِريِرْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ابْنِكْ يِمْحِي رِقِّ ذِنُوبي، ♫♫ ويَخْدِمْني في كرْمُه أجْيْرْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ولا يَحْسِبْ عَلَىَّ ذِنُوبِي، ♫♫ ولا يِجْعَلْني ذَلْيْل وأسِيْرْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وإنْ كُنْتْ لا أصْلُحْ لِصَوابي، ♫♫ فَمَرَاحْمُه عَمِيقَة وفَضْلُه غَزْيرْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ولا تُودِعِيني لآخْرْ السُوقْ، ♫♫ لِئَلّا يَضْيْعْ رَأسْ المَالْ والُموتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "اسْتَحِلِفِكْ بِالعَهْدِ المَوْثُوقْ، ♫♫ تَشَفَّعي فيَّ أمْامْ رَبِّ الصَبَاؤوتْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "وسَلامِكْ فَلْيُدْرِكْ شَعْبْ ابْنِكْ، ♫♫ إحْمِيهُمْ أجْمَعْ نِسَاءْ ورِجَالْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "ورُتَبْ مِلِّتْنَا طَالبينْ عَفْوِكْ، ♫♫ وبِكِ يَبْلُغُوا كُلِّ الآمَالْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "يا مَنْ خَلَّصَتَ سَفِينَة نُوحْ، ♫♫ وعَلى رُسُلَكْ حَلِّيْتْ بِالرُوحْ", 
-      ],
-      [
-      Prefix.same+"&C=Assembly", 
-      "", 
-      "", 
-      "", 
-      "إجْعَلْ بَابْ البِيعَةْ دائِماً مَفْتُوحْ، ♫♫ بِصَلاةْ مَرْيَمْ رِيَحانِة النِفُوسْ", 
-      ],
-      ],
-      [
-        [
-        "SpasmosWatesLong&D=$copticFeasts.Pentecoste&C=Title", 
-        "", 
-        "Aspasmos Watos pour le Pentecôte", 
-        "", 
-        "اسبسمس واطس لعيد حلول الروح القدس", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "Afsenaf epswi t~ve n~te t~ve canimansai hina n~tefouwrp nan m~Piparakl/ton && piP~neuma n~te ]meym/i.\nA#l# a#l# a#l#: && P,#c# aftwnf ouoh afsenaf: afouwrp nan m~piParakl/ton. &&  &&  && Cw] m~mon ouoh nai.\nJe a~gioc a~gioc a~gioc: Kurioc cabawy: pl/r/c o~ ouranoc  ke /~ g/: t/c a~giac cou dox/c.\n\n", 
-        "Il est monté aux cieux des cieux, vers l'orient, afin de nous envoyer le Consolateur, l'Esprit de vérité.", 
-        "", 
-        "صَعِدَ إلى سَمَاءِ السَمَاءْ نَاحِيَةْ المَشَارِقْ لِكَي يُرسْلْ لَنا المُعَزّي رُوحْ الحَقْ.", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "", 
-        "Alléluia (3 fois) Le Christ est ressuscité puis est monté et nous a envoyé le Paraclet.", 
-        "", 
-        "هلليلويا هلليلويا هلليلويا، المَسِيحْ قَامَ ثُمَّ صَعِدَ وأرْسَلَ لنَا البَارَقْلْيطْ.", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "", 
-        "Sauve-nous et aie pitié de nous.", 
-        "", 
-        "ارحمنا خلصنا.", 
-        ],
-        [
-        Prefix.same+"&C=Assembly", 
-        "", 
-        "Saint, Saint, Saint Seigneur Sabaoth; le ciel et terre sont remplis de Ta sainte gloire.", 
-        "", 
-        "قُدُّوسْ قُدُّوسْ قُدّوسْ رَبُُ الصَابَاؤوتْ، السَّمَاءْ والأرضُُ مَمْلوءتَانِ مِنْ مََجدِكَ الأقْدَسْ.", 
-        ],
+  [
+  Prefix.bookOfHours+"Psalm118&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "Psaume 118", 
+  "", 
+  "المَزْمُورْ المَائة والثَامِنْ عَشْرْ\n(طُوبَاهُمْ الذينَ بِلا عِيْبْ)", 
   ],
-    [
-    [
-    Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
-    "", 
-    "", 
-    "", 
-    "", 
-    ],
-    [
-    Prefix.same+"&C=Assembly", 
-    "", 
-    "", 
-    "", 
-    "", 
-    ],
-    ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "1119 Heureux ceux qui sont intègres dans leur voie, Qui marchent selon la loi de l'Éternel! 2 Heureux ceux qui gardent ses préceptes, Qui le cherchent de tout leur coeur, 3 Qui ne commettent point d'iniquité, Et qui marchent dans ses voies! 4 Tu as prescrit tes ordonnances, Pour qu'on les observe avec soin. 5 Puissent mes actions être bien réglées, Afin que je garde tes statuts! 6 Alors je ne rougirai point, A la vue de tous tes commandements. 7 Je te louerai dans la droiture de mon coeur, En apprenant les lois de ta justice. 8 Je veux garder tes statuts: Ne m'abandonne pas entièrement!", 
+  "", 
+  "1ـ طوباهم الذين بِلا عِيْبْ في الطريق، السَالِكُونْ في نَامُوسْ الرَبّ. طُوباهُمْ الذين يَفْحَصْونْ عَنْ شِهادَاتُه، ومن قلوبهم يطلبونه، لأن صانعي الإثم لم يهووا أن يسلكوا في سبله. أنت أمرت أن تحفظ وصاياك جدا، فيا ليت طرقي تستقيم إلى حفظ حقوقك. حينئذ لا أخزى إذا ما اطلعت على جميع وصاياك. أشكرك يا رب باستقامة قلبي، إذ عرفت أحكام عدلك. حقوقك أحفظ، فلا ترفضني إلى الغاية. ذُكْصاسْي فِلا نيثرومبي", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "9 Comment le jeune homme rendra-t-il pur son sentier? En se dirigeant d'après ta parole. 10 Je te cherche de tout mon coeur: Ne me laisse pas égarer loin de tes commandements! 11 Je serre ta parole dans mon coeur, Afin de ne pas pécher contre toi. 12 Béni sois-tu, ô Éternel! Enseigne-moi tes statuts! 13 De mes lèvres j'énumère Toutes les sentences de ta bouche. 14 Je me réjouis en suivant tes préceptes, Comme si je possédais tous les trésors. 15 Je médite tes ordonnances, J'ai tes sentiers sous les yeux. 16 Je fais mes délices de tes statuts, Je n'oublie point ta parole.", 
+  "", 
+  "2ـ بماذا يقوم الشاب طريقه؟ بحفظه أقوالك. من كل قلبي طلبتك، فلا تبعدني عن وصاياك أخفيت أقوالك في قلبي لكي لا أخطئ إليك. مبارك أنت يا رب علمني حقوقك. بشفتي أظهرت كل أحكام فمك، وفرحت بطريق شهاداتك كما بكل غنى. بوصاياك أتكلم وأتفهم في طرقك، بفرائضك ألهج، ولا أنسى كلامك. ذُكْصاسْي فِلا نيثرومبي", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "17 Fais du bien à ton serviteur, pour que je vive Et que j'observe ta parole! 18 Ouvre mes yeux, pour que je contemple Les merveilles de ta loi! 19 Je suis un étranger sur la terre: Ne me cache pas tes commandements! 20 Mon âme est brisée par le désir Qui toujours la porte vers tes lois. 21 Tu menaces les orgueilleux, ces maudits, Qui s'égarent loin de tes commandements. 22 Décharge-moi de l'opprobre et du mépris! Car j'observe tes préceptes. 23 Des princes ont beau s'asseoir et parler contre moi, Ton serviteur médite tes statuts. 24 Tes préceptes font mes délices, Ce sont mes conseillers.", 
+  "", 
+  "3ـ كافئ عبدك فأحيا وأحفظ أقوالك. اكشف عن عيني فـأرى عجائب من ناموسك. غريب أنا في الأرض فلا تخفِ عنى وصاياك. اشتاقت نفسي إلى اشتهاء أحكامك في كل حين. إنك انتهرت المتكبرين الملاعين الذين حادوا عن وصاياك. انزع عنى العار والخزي فإني لشهاداتك ابتغيتُ. جلس الرؤساء وتقاولوا على، أما عبدك فكان يهتمُ بحقوقك، لأن شهاداتك هي درسي وحقوقك هي مشورتي ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "25 Mon âme est attachée à la poussière: Rends-moi la vie selon ta parole! 26 Je raconte mes voies, et tu m'exauces: Enseigne-moi tes statuts! 27 Fais-moi comprendre la voie de tes ordonnances, Et je méditerai sur tes merveilles! 28 Mon âme pleure de chagrin: Relève-moi selon ta parole! 29 Éloigne de moi la voie du mensonge, Et accorde-moi la grâce de suivre ta loi! 30 Je choisis la voie de la vérité, Je place tes lois sous mes yeux. 31 Je m'attache à tes préceptes: Éternel, ne me rends point confus! 32 Je cours dans la voie de tes commandements, Car tu élargis mon coeur.", 
+  "", 
+  "4ـ لصقت بالتراب نفسي فأحيني ككلمتك. أخبرت بطرقك فاستجب لي. علمني حقوقك، وطريق عدلك فهمني، فألهج في عجائبك. ذبلت نفسي من الحزن، فثبتني في أقوالك. طريق الظلم أبعد عنى وبناموسك ارحمني. إني اخترت طريق الحق وأحكامك لم أنس. لصقتُ بشهاداتك يا رب فلا تخزني. في طريق وصاياك سعيتُ عندما وسعتَ قلبي ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "33 Enseigne-moi, Éternel, la voie de tes statuts, pour que je la retienne jusqu'à la fin! 34 Donne-moi l'intelligence, pour que je garde ta loi Et que je l'observe de tout mon coeur! 35 Conduis-moi dans le sentier de tes commandements! Car je l'aime.  36 Incline mon coeur vers tes préceptes, Et non vers le gain!  37 Détourne mes yeux de la vue des choses vaines, Fais-moi vivre dans ta voie! 38 Accomplis envers ton serviteur ta promesse, Qui est pour ceux qui te craignent! 39 Éloigne de moi l'opprobre que je redoute! Car tes jugements sont pleins de bonté. 40 Voici, je désire pratiquer tes ordonnances: Fais-moi vivre dans ta justice!", 
+  "", 
+  "5ـ ضع لي يا رب ناموسا في طريق حقوقك فأتبعَه كل حين. فهمني فأبحث عن ناموسك وأحفظه بكل قلبي. اهدني في سبيل وصاياك فإني إياها هويت. أمل قلبي إلى شهاداتك لا إلى الظلم. اردد عيني لئلا تعاينا الأباطيل، وفى سبلك أحيني. ثبت قولك لعبدك في خوفك، وانزع عنى العار الذي حَذِرْتُ منه، فإن أحكامك حلوة. هاأنذا قد اشتهيتُ وصاياك، فأحيني ببرك ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "41 Éternel, que ta miséricorde vienne sur moi, Ton salut selon ta promesse! 42 Et je pourrai répondre à celui qui m'outrage, Car je me confie en ta parole. 43 N'ôte pas entièrement de ma bouche la parole de la vérité! Car j'espère en tes jugements. 44 Je garderai ta loi constamment, A toujours et à perpétuité. 45 Je marcherai au large, Car je recherche tes ordonnances. 46 Je parlerai de tes préceptes devant les rois, Et je ne rougirai point. 47 Je fais mes délices de tes commandements. Je les aime. 48 Je lève mes mains vers tes commandements que j'aime, Et je veux méditer tes statuts.", 
+  "", 
+  "6ـ  لتأت عليّ رحمتك يا رب وخلاصك كقولك. فأجيب معيري بكلمة. لأني اتكلت على أقوالك، لا تنزع من فمي قول الحق، لأني توكلت على أحكامك، واحفظ شريعتك في كل حين، إلى الأبد والى مدى الدهر. كنتُ أسلك في السعة لأني لوصاياك ابتغيتُ. وتكلمت بشهاداتك قدام الملوك ولم أخزَ. ولهجتُ بوصاياك التي أحببتُها جدا، ورفعت يدي إلى وصاياك التي وددتُها جدا. وتأملتُ فرائضك. ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "49 Souviens-toi de ta promesse à ton serviteur, Puisque tu m'as donné l'espérance! 50 C'est ma consolation dans ma misère, Car ta promesse me rend la vie. 51 Des orgueilleux me chargent de railleries; Je ne m'écarte point de ta loi. 52 Je pense à tes jugements d'autrefois, ô Éternel! Et je me console. 53 Une colère ardente me saisit à la vue des méchants Qui abandonnent ta loi. 54 Tes statuts sont le sujet de mes cantiques, Dans la maison où je suis étranger. 55 La nuit je me rappelle ton nom, ô Éternel! Et je garde ta loi.", 
+  "", 
+  "7ـ اذكر لعبدك كلامك الذي جعلتني عليه أتكل. هذا الذي عزاني في مذلتي. لأن قولك أحياني. إن المتكبرين تجاوزوا الناموس إلى الغاية، أما أنا فعن ناموسك لم أمِل. تذكرتُ أحكامك يا رب منذ الدهر فتعزيتُ. الكآبة ملكتني من أجل الخطاة الذين تركوا ناموسك. حقوقك كانت لي مزاميرَ في موضع غربتي. ذكرتُ في الليل اسمك يا رب، وحفظت شريعتك. هذا صار لي لأني طلبت حقوقك. ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "56 C'est là ce qui m'est propre, Car j'observe tes ordonnances. 57 Ma part, ô Éternel! je le dis, C'est de garder tes paroles. 58 Je t'implore de tout mon coeur: Aie pitié de moi, selon ta promesse! 59 Je réfléchis à mes voies, Et je dirige mes pieds vers tes préceptes. 60 Je me hâte, je ne diffère point D'observer tes commandements. 61 Les pièges des méchants m'environnent; Je n'oublie point ta loi. 62 Au milieu de la nuit je me lève pour te louer, A cause des jugements de ta justice. 63 Je suis l'ami de tous ceux qui te craignent, Et de ceux qui gardent tes ordonnances. 64 La terre, ô Éternel! est pleine de ta bonté; Enseigne-moi tes statuts!", 
+  "", 
+  "8ـ نصيبي أنت يا رب فقلت أن أحفظ وصاياك. ترضيت وجهك بكل قلبي، فارحمني كقولك. لأني تفكرت في طرقك ورددت قدمي إلى شهاداتك. تهيأت ولم أتوانَ لحفظ وصاياك. رباطات الخطاة التفت على، أما شريعتك فلم أنسَها. في نصف الليل نهضت لأشكرك على أحكام عدلك. شريك أنا لكل الذين يخافونك، وللحافظين وصاياك. من رحمتك يا رب امتلأت الأرضُ فعلمني عدلك ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "65 Tu fais du bien à ton serviteur, O Éternel! selon ta promesse. 66 Enseigne-moi le bon sens et l'intelligence! Car je crois à tes commandements. 67 Avant d'avoir été humilié, je m'égarais; Maintenant j'observe ta parole. 68 Tu es bon et bienfaisant; Enseigne-moi tes statuts! 69 Des orgueilleux imaginent contre moi des faussetés; Moi, je garde de tout mon coeur tes ordonnances. 70 Leur coeur est insensible comme la graisse; Moi, je fais mes délices de ta loi. 71 Il m'est bon d'être humilié, Afin que j'apprenne tes statuts. 72 Mieux vaut pour moi la loi de ta bouche Que mille objets d'or et d'argent.", 
+  "", 
+  "9ـ خيرا صنعتَ مع عبدك يا رب حسب قولك، صلاحا وأدبا ومعرفة، علمني فإني قد صدقت وصاياك. قبل أن أتواضع أنا تكاسلتُ. فلهذا حفظتُ كلامك. صالح أنت يا رب فبصلاحك علمني حقوقك. كثر عليّ ظلم المتكبرين، وأنا بكل قلبي أبحث عن وصاياك. تجبن مثل اللبن قلبهم، وأنا لهجت بناموسك. خير لي أنك أذللتني حتى أتعلمَ حقوقك. ناموس فمك خير لي من ألوف ذهب وفضة ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "73 Tes mains m'ont créé, elles m'ont formé; Donne-moi l'intelligence, pour que j'apprenne tes commandements! 74 Ceux qui te craignent me voient et se réjouissent, Car j'espère en tes promesses. 75 Je sais, ô Éternel! que tes jugements sont justes; C'est par fidélité que tu m'as humilié. 76 Que ta bonté soit ma consolation, Comme tu l'as promis à ton serviteur! 77 Que tes compassions viennent sur moi, pour que je vive! Car ta loi fait mes délices. 78 Qu'ils soient confondus, les orgueilleux qui m'oppriment sans cause! Moi, je médite sur tes ordonnances. 79 Qu'ils reviennent à moi, ceux qui te craignent, Et ceux qui connaissent tes préceptes! 80 Que mon coeur soit sincère dans tes statuts, Afin que je ne sois pas couvert de honte!", 
+  "", 
+  "10ـ يداك صنعتاني وجبلتاني. فهمني فأتعلم وصاياك. الذين يخافونك يبصرونني ويفرحون، لأني بكلامك وثقت. قد علمتُ يا رب أن أحكامك عادلة وبحق أذللتني. فلتأتِ عليّ رحمتك لتعزيني، نظير قولك لعبدك. لتأتني رأفتك فأحيا فإن ناموسك هو درسي. وليخز المتكبرون لأنهم خالفوا الشرع عليّ ظلما، وأنا كنت مثابرا على وصاياك. وليرجع إليّ الذين يتقونك ويعرفون عجائبك، وليصر قلبي بلا عيب في عدلك لكي لا أخزي ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "81 Mon âme languit après ton salut; J'espère en ta promesse. 82 Mes yeux languissent après ta promesse; Je dis: Quand me consoleras-tu? 83 Car je suis comme une outre dans la fumée; Je n'oublie point tes statuts. 84 Quel est le nombre des jours de ton serviteur? Quand feras-tu justice de ceux qui me persécutent? 85 Des orgueilleux creusent des fosses devant moi; Ils n'agissent point selon ta loi. 86 Tous tes commandements ne sont que fidélité; Ils me persécutent sans cause: secours-moi! 87 Ils ont failli me terrasser et m'anéantir; Et moi, je n'abandonne point tes ordonnances. 88 Rends-moi la vie selon ta bonté, Afin que j'observe les préceptes de ta bouche!", 
+  "", 
+  "11ـ تاقت نفسي إلى خلاصك وعلى كلامك توكلت. كلت عيناي من انتظار أقوالك قائلتين: \"متى تعزيني ؟\". صرتُ مثل زق في جليد ولحقوقك لم أنس. كم هي أيام عبدك ؟ متى تجري لي حكما على الذين يضطهدونني؟ تكلم معي مخالفو الناموس بكلام هذيان، لكن ليس كناموسك يا رب، لأن كل وصاياك هي حق. وبظلم قد طردوني فأعني؟ كادوا يفنونني على الأرض، أما أنا فلم أترك وصاياك. حسب رحمتك أحيني فأحفظ شهادات فمك ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "89 A toujours, ô Éternel! Ta parole subsiste dans les cieux. 90 De génération en génération ta fidélité subsiste; Tu as fondé la terre, et elle demeure ferme. 91 C'est d'après tes lois que tout subsiste aujourd'hui, Car toutes choses te sont assujetties. 92 Si ta loi n'eût fait mes délices, J'eusse alors péri dans ma misère. 93 Je n'oublierai jamais tes ordonnances, Car c'est par elles que tu me rends la vie. 94 Je suis à toi: sauve-moi! Car je recherche tes ordonnances. 95 Des méchants m'attendent pour me faire périr; Je suis attentif à tes préceptes. 96 Je vois des bornes à tout ce qui est parfait: Tes commandements n'ont point de limite.\n", 
+  "", 
+  "12ـ يا رب كلمتك دائمة في السموات إلى الأبد، وإلى جيل فجيل حقك. أسست الأرض فهي ثابتة بأمرك، والنهار أيضا ثابت. لأن كل الأشياء متعبدة لك. لو لم تكن شريعتك تلاوتي لهلكتُ حينئذ في مذلتي. وإلى الدهر لا أنسى وصاياك لأنك بها أحييتني يا رب. لك أنا فخلصني يا رب، لأني لوصاياك طلبتُ. إياي انتظر الخطاة ليهلكوني، ولشهاداتك فهمت. لكل تمام رأيت منتهى أما وصاياك فواسعة جدا ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "97 Combien j'aime ta loi! Elle est tout le jour l'objet de ma méditation. 98 Tes commandements me rendent plus sage que mes ennemis, Car je les ai toujours avec moi. 99 Je suis plus instruit que tous mes maîtres, Car tes préceptes sont l'objet de ma méditation. 100 J'ai plus d'intelligence que les vieillards, Car j'observe tes ordonnances. 101 Je retiens mon pied loin de tout mauvais chemin, Afin de garder ta parole. 102 Je ne m'écarte pas de tes lois, Car c'est toi qui m'enseignes. 103 Que tes paroles sont douces à mon palais, Plus que le miel à ma bouche! 104 Par tes ordonnances je deviens intelligent, Aussi je hais toute voie de mensonge.\n", 
+  "", 
+  "13ـ محبوب هو اسمك يا رب، فهو طولَ النهار تلاوتي. علمتني وصاياك أفضل من أعدائي، لأنها ثابتة لي إلى الأبد. أكثر من جميع الذين يعلمونني فهمتُ، لأن شهادتك هي درسي. أكثر من الشيوخ فهمتُ، لأني طلبتُ وصاياك. من كل طريق خبيث منعتُ رجليّ لكي أحفظ كلامك. عن كلامك لم أحد، لأنك وضعتَ لي ناموسا. إن كلماتك حلوة في حلقي، أفضل من العسل والشهد في فمي. من وصاياك تفطنتُ، فلهذا أبغضت كل طرق الظلم. (لأنك وضعتَ لي ناموسًا) ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "105 Ta parole est une lampe à mes pieds, Et une lumière sur mon sentier. 106 Je jure, et je le tiendrai, D'observer les lois de ta justice. 107 Je suis bien humilié: Éternel, rends-moi la vie selon ta parole! 108 Agrée, ô Éternel! les sentiments que ma bouche exprime, Et enseigne-moi tes lois! 109 Ma vie est continuellement exposée, Et je n'oublie point ta loi. 110 Des méchants me tendent des pièges, Et je ne m'égare pas loin de tes ordonnances. 111 Tes préceptes sont pour toujours mon héritage, Car ils sont la joie de mon cœur. 112 J'incline mon cœur à pratiquer tes statuts, Toujours, jusqu'à la fin.\n", 
+  "", 
+  "14ـ مصباح لرجلي كلامك ونور لسبلي. حلفت فأقمت على حفظ أحكام عدلك. تذللت جدا إلى الغاية يا رب، أحيني كقولك. تعهدات فمي باركها يا رب، وأحكامك علمني. نفسي في يديك كل حين، وناموسك لم أنسَ، أخفى الخطاة لي فخا، ولم أضل عن وصاياك. ورثت شهاداتك إلى الأبد، لأنها بهجة قلبي. عطفت قلبي لأصنع برك إلى الأبد (من أجل المكافأة) (ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "113 Je hais les hommes indécis, Et j'aime ta loi. 114 Tu es mon asile et mon bouclier; J'espère en ta promesse. 115 Éloignez-vous de moi, méchants, Afin que j'observe les commandements de mon Dieu! 116 Soutiens-moi selon ta promesse, afin que je vive, Et ne me rends point confus dans mon espérance! 117 Sois mon appui, pour que je sois sauvé, Et que je m'occupe sans cesse de tes statuts! 118 Tu méprises tous ceux qui s'écartent de tes statuts, Car leur tromperie est sans effet. 119 Tu enlèves comme de l'écume tous les méchants de la terre; C'est pourquoi j'aime tes préceptes. 120 Ma chair frissonne de l'effroi que tu m'inspires, Et je crains tes jugements.\n", 
+  "", 
+  "15ـ لمتجاوزي الناموس أبغضتُ ولناموسك أحببت. لأنك أنت معيني وناصري. وعلى كلامك توكلت. ابعدوا عني أيها الأشرار فأفحص عن وصايا إلهي. عضدني حسب قولك فأحيا ولا تخيب رجائي. أعني فأخلص، وأدرس في وصاياك كل حين. رذلتَ سائر الذين حادوا عن وصاياك لأن فكرهم ظلم. عصاة حسبتَ سائر خطاة الأرض، فلهذا أحببتُ شهاداتك في كل حين. سمر خوفك في لحمي لأني من أحكامك جزعتُ ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "121 J'observe la loi et la justice: Ne m'abandonne pas à mes oppresseurs! 122 Prends sous ta garantie le bien de ton serviteur, Ne me laisse pas opprimer par des orgueilleux! 123 Mes yeux languissent après ton salut, Et après la promesse de ta justice. 124 Agis envers ton serviteur selon ta bonté, Et enseigne-moi tes statuts! 125 Je suis ton serviteur: donne-moi l'intelligence, Pour que je connaisse tes préceptes! 126 Il est temps que l'Éternel agisse: Ils transgressent ta loi. 127 C'est pourquoi j'aime tes commandements, Plus que l'or et que l'or fin; 128 C'est pourquoi je trouve justes toutes tes ordonnances, Je hais toute voie de mensonge.\n", 
+  "", 
+  "16ـ قد أجريتُ حكما وعدلا فلا تسلمني إلى الذين يظلمونني. كن لعبدك كفيلا في الخير، لئلا يجوزَ عليّ المتكبرون. عيناي قد ذبلتا من انتظار خلاصك وقول عدلك. اصنع مع عبدك حسب رحمتك، وحقوقك علمني. عبدك أنا، فهمني فأعرف شهاداتك. إنه وقتٌ يعمل فيه للرب، لأنهم قد نقضوا ناموسك. لأجل هذا أحببتُ وصاياك أفضل من الذهب والجوهر، ولأجل هذا بازاء كل وصاياك تقومتُ، وكل طريق ظلم أبغضتُ ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "129 Tes préceptes sont admirables: Aussi mon âme les observe. 130 La révélation de tes paroles éclaire, Elle donne de l'intelligence aux simples. 131 J'ouvre la bouche et je soupire, Car je suis avide de tes commandements. 132 Tourne vers moi ta face, et aie pitié de moi, Selon ta coutume à l'égard de ceux qui aiment ton nom! 133 Affermis mes pas dans ta parole, Et ne laisse aucune iniquité dominer sur moi! 134 Délivre-moi de l'oppression des hommes, Afin que je garde tes ordonnances! 135 Fais luire ta face sur ton serviteur, Et enseigne-moi tes statuts! 136 Mes yeux répandent des torrents d'eaux, Parce qu'on n'observe point ta loi.\n", 
+  "", 
+  "17ـ عجيبة هي شهاداتك لذلك حفظتها نفسي. إعلان أقوالك ينير لي، ويفهم الأطفال والصغار. فتحت فهمي واجتذبتُ لي روحا، لأني لوصاياك اشتقتُ. انظر إليّ وارحمني كرحمتك للذين يحبون اسمك. قوم خطواتي كقولك فلا يتسلط على أيُّ إثم. أنقذني من ظلم الناس فأحفظ وصاياك. أضئ بوجهك على عبدك وعلمني حقوقك. غاصت عيناي في مجاري المياه، لأنهم لم يحفظوا ناموسك. ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "137 Tu es juste, ô Éternel! Et tes jugements sont équitables; 138 Tu fondes tes préceptes sur la justice Et sur la plus grande fidélité. 139 Mon zèle me consume, Parce que mes adversaires oublient tes paroles. 140 Ta parole est entièrement éprouvée, Et ton serviteur l'aime. 141 Je suis petit et méprisé; Je n'oublie point tes ordonnances. 142 Ta justice est une justice éternelle, Et ta loi est la vérité. 143 La détresse et l'angoisse m'atteignent: Tes commandements font mes délices. 144 Tes préceptes sont éternellement justes: Donne-moi l'intelligence, pour que je vive!\n", 
+  "", 
+  "18ـ عادل أنت يا رب وقضاؤك مستقيم. أوصيتَ كثيرا بالعدل والحق اللذين هما شهاداتك. غيرة بيتك أكلتني، لأن أعدائي نسوا وصاياك. ممحص قولك جدا، وعبدك أحبه. صغيرٌ أنا ومرذول وحقوقك لم أنسَ. عدلك حق هو إلى الأبد، وكلامك حق هو. ضيق وشدة أدركاني، ووصاياك هي درسي. عادلة هي شهاداتك إلى الأبد. فهمني فأحيا ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "145 Je t'invoque de tout mon coeur: exauce-moi, Éternel, Afin que je garde tes statuts! 146 Je t'invoque: sauve-moi, Afin que j'observe tes préceptes! 147 Je devance l'aurore et je crie; J'espère en tes promesses. 148 Je devance les veilles et j'ouvre les yeux, Pour méditer ta parole. 149 Écoute ma voix selon ta bonté! Rends-moi la vie selon ton jugement! 150 Ils s'approchent, ceux qui poursuivent le crime, Ils s'éloignent de la loi. 151 Tu es proche, ô Éternel! Et tous tes commandements sont la vérité. 152 Dès longtemps je sais par tes préceptes Que tu les as établis pour toujours.\n", 
+  "", 
+  "19ـ صرخت من كل قلبي، فاستجب لي يا رب. إني أبتغي حقوقك. صرختُ إليك فخلصني، لأحفظ شهاداتك. سبقتُ وقمتُ قبل الوقتِ وصرخت، وعلى كلامك توكلتُ. سبقتْ عيناي وقت السحَر، لأتلو في جميع أقوالك، فاسمع صوتي يا رب كرحمتك، وبحسب أحكامك أحيني. اقترب بالإثم الذين يطردونني، وعن ناموسك ابتعدوا. قريب أنت يا رب، وكل وصاياك حق هي. منذ البدء عرفتُ من شهاداتك أنك إلى الدهر أسستها ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "153 Vois ma misère, et délivre-moi! Car je n'oublie point ta loi. 154 Défends ma cause, et rachète-moi; Rends-moi la vie selon ta promesse! 155 Le salut est loin des méchants, Car ils ne recherchent pas tes statuts. 156 Tes compassions sont grandes, ô Éternel! Rends-moi la vie selon tes jugements! 157 Mes persécuteurs et mes adversaires sont nombreux; Je ne m'écarte point de tes préceptes, 158 Je vois avec dégoût des traîtres Qui n'observent pas ta parole. 159 Considère que j'aime tes ordonnances: Éternel, rends-moi la vie selon ta bonté! 160 Le fondement de ta parole est la vérité, Et toutes les lois de ta justice sont éternelles.\n", 
+  "", 
+  "20ـ انظر إلى مذلتي وأنقذني، فإني لم أنس ناموسك. احكم لي في دعواي ونجني. من أجل كلامك أحيني. بعيد هو الخلاص عن الخطاة، لأنهم لم يطلبوا حقوقك. رأفتك كثيرة جدا يا رب. حسب أحكامك أحيني. كثيرون هُمُ الذين يضطهدونني ويحزنونني، وعن شهاداتك لم أجنح. رأيت الذين لا يفهمون فاكتأبت، لأنهم لأقوالك لم يحفظوا. انظر يا رب، فإني أحببت وصاياك. برحمتك يا رب أحيني. بدء كلامك حقٌ، وإلي الأبد كل أحكام عدلك ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "161 Des princes me persécutent sans cause; Mais mon coeur ne tremble qu'à tes paroles. 162 Je me réjouis de ta parole, Comme celui qui trouve un grand butin.  163 Je hais, je déteste le mensonge; J'aime ta loi.  164 Sept fois le jour je te célèbre, A cause des lois de ta justice. 165 Il y a beaucoup de paix pour ceux qui aiment ta loi, Et il ne leur arrive aucun malheur. 166 J'espère en ton salut, ô Éternel! Et je pratique tes commandements. 167 Mon âme observe tes préceptes, Et je les aime beaucoup. 168 Je garde tes ordonnances et tes préceptes, Car toutes mes voies sont devant toi.\n", 
+  "", 
+  "21ـ الرؤساء اضطهدوني بلا سبب. من أقوالك جزع قلبي. أبتهج أنا بكلامك كمن وجد غنائمَ كثيرة. أبغضتُ الظلم ورذلته، أما ناموسك فأحببته. سبع مرات في النهار سبحتك على أحكام عدلك. فليكن سلام عظيم للذين يحبون اسمك، وليس لهم شك. توقعتُ خلاصك يا رب ووصاياك أحببتها. حفظتْ نفسي شهاداتك وأحببتها جدا. حفظتُ وصاياك وشهاداتك، وكل طرقي أمامك يا رب. ذُكْصاسْي فِلا نيثرومبي.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "169 Que mon cri parvienne jusqu'à toi, ô Éternel! Donne-moi l'intelligence, selon ta promesse! 170 Que ma supplication arrive jusqu'à toi! Délivre-moi, selon ta promesse! 171 Que mes lèvres publient ta louange! Car tu m'enseignes tes statuts. 172 Que ma langue chante ta parole! Car tous tes commandements sont justes. 173 Que ta main me soit en aide! Car j'ai choisi tes ordonnances. 174 Je soupire après ton salut, ô Éternel! Et ta loi fait mes délices. 175 Que mon âme vive et qu'elle te loue! Et que tes jugements me soutiennent! 176 Je suis errant comme une brebis perdue; cherche ton serviteur, Car je n'oublie point tes commandements.", 
+  "", 
+  "22ـ فلتدن وسيلتي قدامك يا رب، كقولك فهمني. فلتدخل طلبتي إلى حضرتك يا رب، ككلمتك أحيني. تفيض شفتاي السبح إذا ما علمتني حقوقك. لساني ينطق بأقوالك لأن جميع وصاياك عادلة. لتكن يدك لخلاصي لأنني اشتهيت وصاياك. اشتقتُ إلى خلاصك يا رب، وناموسك هو تلاوتي. تحيا نفسي وتسبحك، وأحكامك تعينيني. ضللت مثل الخروف الضال، فاطلب عبدك، فإني لوصاياك لم أنسَ هللويا.", 
+  ],
+  ],
+  [
+  [
+  Prefix.communion+"ADoveCameToZacharieHome&D=$Seasons.KiahkWeek3||$Seasons.KiahkWeek4&C=Title", 
+  "", 
+  "", 
+  "", 
+  "مديح خطرت حمامة في بيت ذَكَرِيّا", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "السَماءْ الثانية الجِسْدانية، ♫♫ مَرْيَمْ عَرْشَ الله المُتْعَالْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "قبِلَتْ البُشْرَى الجِبْرائِيلية، ♫♫ حِينَ بَشَّرَها النَذْيرْ وقَالْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "بالابْنِ الخَالِقْ تَحْبَليْنْ، ♫♫ وأعْطَاها عَلامَةْ لِلْتَصْديقْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "أليصَاباتْ عَاقِرْ لِسِنِينْ، ♫♫ واليُومْ حُبْلىَ بِنَبي وصِدِّيقْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "تَمَتْ سِتَّةْ أشْهُرْ بِتَمَامْ، ♫♫ لَهَا مِنْ بَعْدِ العُقُورِيَة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "لا يَقُولْ إلَهِكْ قَطّْ كَلامْ، ♫♫ إلّا وفِيهْ قُدْرَة أزَلِيّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "تَرَآى البَشْيْرْ صَاعِداً لِمَوْلاهْ، ♫♫ فَكَّرَتْ مَرْيَمْ قَائلة أقُومْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "لِأَنْظُرْ هَذَا الحَبَلْ وأرَاهْ، ♫♫ فَتَرَكَتْ النَاصِرة والتُخُومْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "جَاءَتْ الحَمَامَة الوَدِيعَة، ♫♫ كَنَدَي حِرمْونْ فَوّقَ جَبَلْ صِهْيونْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "سَحَابَة وأمْطَارْهَا بَدِيعَة، ♫♫ أمْطَرَتْ طَلّْ الرَخَا في صِهْيونْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "جَذَبْ شَمْسْ البِرِّ سَوَاعِي ضِياه، ♫♫ حَمَلاً لِلعَجَلة النَارِيّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وفي عِينْ كَارِمْ حَلِّ بِرُؤياه، ♫♫ ودَخَلْ إلى بَيْتْ زَكَريّا", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "حَلِّ القَصْرْ النَفْسَاني، ♫♫ وأقْدامُه عَجْلاتْ نَارِيّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "حَامِلْ واحِدْ لَيسَ لُه ثَاني، ♫♫ خالِقْ أزَلي نَارْ مُحْييّةْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "حَمَامَة يَمَامَة كَقوْل سُلَيّمَانْ، ♫♫ ونَخْلَة حَامِلْة أثْمَار الحَياة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "بَشَرَتْنَا بِسَلامْ وطَمَأن، ♫♫ والشِفَاءْ مِنْ مَنْكَبِيّهَا قَبِلْنَاه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "حَمَامَة تَصِيحْ في أرَاضِينْا، ♫♫ وقَفَتْ في بِلادْ الأمْواتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وعَلى مِنْكَبَيّها بَارينَا، ♫♫ لِيَصّيِرْ الأَرْض كَمَا السَّمَواتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَرَجْ العَبْدْ يَتَلَقَى مَوّلاهْ، ♫♫ جُوفِ العَاقِر لُه سِتْر حِجَابْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وجُوفِ الصَبِيّة فِيهِ أَنْشاه، ♫♫ في عَرْشُه اللّحْمِي وفي حِضْنِ الآب", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَرَجَ الصَابِغْ لِلِقاءْ رَبُّه، ♫♫ والصَنْعَة احْتَاجِتْ لِلّصَانِعْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وتَنَازَلْ إليها بِغَزيرْ حُبُّه، ♫♫ فَعَل كُلِّ شِيء بِغَيْرِ مَانِعْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "دَنَتْ العَاقِرْ لِتُعَاينْ الأَمْر، ♫♫ واللّيْل المُظِلِمْ حَضَنْ النَهاَرْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "العَاقِرْ لِيلْ وسِراجْها القَمَرْ، ♫♫ والصَبّي نَهارْ وشَمْسِ الأبْرَارْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "دَلَّ السَيِّدْ القَادِرْ يّدَهُ، ♫♫ وأدنْاها مِنْ دَاخِلْ الجُوفْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وبِيَمِينُه عَمَّدْ عَبْدُهْ، ♫♫ ونَضَحْ عَلِيهْ رَشّاشْ الزُوفْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "دُهِشَ العَبْدِ مِنْ لِقَاءْ مَوّلاهْ، ♫♫ وتَحَرَّكْ وتَهَلَّلْ في الجُوفْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "سَجَدْ المَخْلوقْ لِمَنْ أَنْشاه، ♫♫ وامْتَلأ رَهْبَةْ ورِعْدَة مَعَ خُوفْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ذا مَنْ يُوهِبْ عَبْدُه عَطَايَاهْ، ♫♫ ويَعُودْ يَتْسَوَّلْها مِنْهُ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "إلاّ إلَهْنا المُفْتَقِرْ بِرِضَاه، ♫♫ وبِمَسْكَنَتُه أغْنَى عَبْدُه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "رَبَنَا عَمَّدْ يُوحَنَّا عَبْدُه، ♫♫ فِي الجُوفْ ومَلَأَه بِرُوحْ التَهْليلْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ورَجَعْ سَألْ الصِبْغَة مِنُّه، ♫♫ كَأنُّه مُحْتَاجْ وهوَ مُغْنْي جَليلْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "رَقَصْ دَاوّدْ قُدَّامْ تَابُوتْ العَهْدْ، ♫♫ وهوّ مَحْمُولْ عَلىَ الدَوابْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "رَقَصْ يُوحَّنا قُدَّامْ رَبِّ المَجْدْ، ♫♫ وهْوَ في بَطْنِ أُمُّه وفي حِضْنِ الآبْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "زَمَّرْ يا دَاوّد بِأرْغُنْ وقِيثَارْ، ♫♫ قُلّ الرَحْمَة والعّدْلِ تّلاقَيا", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "الحَقِّ أشْرَقْ مِنْ الأَرْضْ إجْهَارا، ♫♫ والعَدْلْ هو يَسُوعْ إهيا شراهيا", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "سَمِعَتْ العَجْوزْ خَاصْ السَلامْ، ♫♫ وهو خَارِجْ مِنْ فَمِ صَبِيَّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "سَلاَمْ مِنْ فَمِّ حَمَامْ ويَمَامْ، ♫♫ فَامْتَلأتْ بِالنِعْمَة الإلَهِيَّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "شَاهِدْ الصَابِغْ والِدّةَ رَبُّهْ، ♫♫ واِمْتَلأَ حِكْمَةْ وسِرِّ وبُرْهَانْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ولِوّقْتّه صَاحْ عَلىَ فَمْ أُمُّه، ♫♫ قَالْ مُبَارَكَةْ أنْتِ في النِسوانْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "صَارِتْ حَوَّاءْ أُمّ الأحْيّاءْ، ♫♫ وقَدّْ صَارَتْ أُمّ الأمْواتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "لَمَّا لُعْنَتْ بِالمَعْصِيَّة، ♫♫ ولَعَنُوا بِها كُلِّ النِسْواتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وصِرْتِ مُبَارَكَة حِينْ بَارَكّكِ، ♫♫ رّبِّكْ بِمَلاكُه غَبْريّال", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وجَمِيْعْ النِسْوّة تَبارَكوا بِكِ، ♫♫ وعُتِقُوا مِنْ كُلِّ ضَلالْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ضَلالْ آدَمْ أَضَلَّ الرِجَالْ، ♫♫ والجَميعْ صَاروا بِهِ مَلاعينْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وبِيَسُوعْ ابْنِكْ الرَبِّ المُتْعَالْ، ♫♫ تُبَارَكَ جِنْسُهُمْ أجْمَعِينْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ضَمَنْتِ لي كُلِّ البَرَكَاتْ، ♫♫ مِنْ أَيْنَ لي مَجِيءْ أُمِّ رَبِّي إلىّ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "طُوبَاكِ يا مَنْ قَبِلَتْ الكَلِمَاتْ، ♫♫ وآمَنَتْ بِأَنَّكِ أُمِّ الحَيّ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "طَابْ قَلْبِ مَرْيَمْ البَتُولْ، ♫♫ صَاحِتْ لِلّوَقْتِ بِصُوتْ مَا أبْهَاه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وسَبَّحَتْ الله وبَدَتْ تَقُولْ، ♫♫ تَتَعَظَمْ نَفْسِي بِالإلَهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ظَهَرَ تَهليلْ رُوحِي بِالَخلاصْ، ♫♫ خَالِقِي في أحْشَائي وهو الصَانِعْ إيَّاه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "نَظَرَ لِتَواضُعي بِغَيْرِ انْتِقاصْ، ♫♫ أنَا أَمَتُه وأُمُّهُ وسَمَاه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ظَهَرَ فَضْلَهُ لِكُلِّ الأجْيَالْ، ♫♫ ومِنَ الآنْ يُعْطُونْي الطُوبى", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "قَدّّ حَلَّ في أحْشَائِي ابْنٌ مُتَعَالْ، ♫♫ وأَكْمَلَ بي الرُمُوزْ المَكْتُوبَة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "عَظَائِمْ صَنَعْهَا بي المُتَعَالْ، ♫♫ قُدُّوسْ اسْمُه في عِلُوِّ سَمَاهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ومَراحْمُه إلى كُلِّ الأجّْيالْ، ♫♫ وعُهُودُه أكْمَلَها لأصْفِياه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "عُلُوّ ذِرَاعُه صَنَعَ القُوَّاتْ، ♫♫ والأَعِزاءْ مِنَ الرُتَبْ أنْزَلهَُمْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "أسْقَطْ الشَياطِينْ مِنَ السَّمَواتْ، ♫♫ لِيُجْلِسَ النَاسْ في مَرَاتِبِهِمْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "عَالَ الَجائِعْينْ وأشْبَعَهُمْ خَيّراتْ، ♫♫ والأَغْنِياءْ قَدّْ أرْسَلَهُمْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَارِغْينْ فُقْرَاءْ مِنَ الصَالِحَاتْ، ♫♫ لِيَحْتَاجُوا إلَيهْ ويُخَلِّصَهُمْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "عِنْدَمَا تَزَوَّجَتْ رِفْقَةْ بِثَبَاتْ، ♫♫ ودَعُوهَا إخْوَتَها قَائِلينْ:", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "\"أنْتِ يا أُخْتِاً لأِلُوفْ ورَبَواتْ، ♫♫ وزَرْعِكُ يَرِثْ مُدُنْ مُعَانِدِينْ\"", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "غَابَتْ رِفْقَة وظَهَرَتْ مَرْيَمْ، ♫♫ قَالَتْ: \"هَذا القَوّلْ حَقَاً يَقِينْ\"", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "\"طَردَ الُمعُانِدينْ مِنْ جَلالْ أَعْظَمْ، ♫♫ ورَفَعْ عِوَضْهُمْ المُتَواضِعِينْ\"", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَتَاةْ إسْرائيلْ ابْنِ إبراهِيمْ، ♫♫ عَضَّدَهُ ورَفَعُه وبَارَكَ زَرْعُهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "مِنْ نَسْلي أنا ابْنَة يُوّاقِيمْ، ♫♫ ظَهْرْ مِنْهُ رَبُه ورَفَعُه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "قَدّْ صَارْ ولَدْي نَسْلِ لِيَعْقُوبْ، ♫♫ وإبْراهِيمْ واسَحقْ نالا المِيثَاقْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "قَدّْ حَلَّ في أحْشَائي إلَهْ مَرْهُوبْ، ♫♫ وأَكْمَل بِي المَوّعِدْ والميِثَاقْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "أقَامَتْ مَرْيَمْ عِنْدَ اليْصَاباتْ، ♫♫ ثَلاثَةْ أشْهُرْ مُتْوَاليَّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "كَمُلَ الزَمَانْ وجَاءَتْ الآوْقَاتْ، ♫♫ لِميلادْ كَارُوزْ المَعْمُودِيَّة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "كَلَّمّتْ العَجُوزْ الصَبِيَّة، ♫♫ وقَالَتْ لَها: \"إمْضِ بِسَلامْ\"", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "\"يا مَرْكَبَة لَحْمِيَّةْ ونَارِيَّة، ♫♫ جَالِسْ عَلَيّهْا مُنْشِئ الآنْامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "\"لا يُمْكِنْ أَنَّ الآمَةْ تَجْلِسْ، ♫♫ والسَيَّدَة تَخْدِمْ بِقِيَامْ\"", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "\"إمْضِ لِبَيْتِكِْ باسماء مُقَدَّّسْ\"، ♫♫ رَجِعَتْ البَتُولْ إلى بَيْتِها بِسَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "مَضَتْ رَاجِعَةْ للنَاصِرِيَّةْ، ♫♫ حَمَامَة في فَمِهْا غُصْنْ الزَيْتُونْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "طَرَدَتْ طُوفَانْ كُلِّ خَطِيَّة، ♫♫ قَدّْ بَشَرَتْنَا بِإلَهْ مَكْنُونْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "نَايْمْ غَافِلْ ودَنَي وَقْتِي، ♫♫ وشَمْسِي قَرُبَتْ لِلْمَغِيبْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وتَدَانَتْ وقَرَبُتْ مَسْكَنَتي، ♫♫ وأنْا بِجَميْعْ الخَطايَا مَعِيبْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "هَامَتي مَطْرُوحَة قُدَّامَكْ، ♫♫ وعَلَى قَدَمْي سَاجِدْ وذَلِيْلْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "اتَّخِذْيني مِنْ خُدَّامِكْ، ♫♫ يا وَالِدَة يَسُوعَ عِمَّانُوئِيلْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وّلَّى شَبَابي واقْتَرَبْ الَحصَادْ، ♫♫ والزَارِعْ طَالِبْ حَصَادْ زَرْعُهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وأنَا سَالِكْ في كُلِّ فَسَادْ، ♫♫ حَائِدْ عَنْ أحْكَامُهْ وشَرْعُهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "والسَاعَة اقْتَرَبَتْ مِنّي، ♫♫ والَحاكِمْ عَادِلْ عَدِيمْ الُجورْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ولا صَدْرْ حَنُونْ يَضُمِّنْي، ♫♫ ومَوْضِعْ عَذابي عَمْيقْ بِالغُورْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "لاحِظِينْي يا وَالِدَةُ الإلَهْ، ♫♫ مَنْ غَيْرِكْ أجِدْ لِذَنْبي ضَميْنْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "اسْأَلي ابْنِكْ يُوهِبْ لي حَيّاةْ، ♫♫ يا عُونْ الفُقَراءْ ورَجَاءْ المَسَاكِينْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "يا مَرْيَمْ إنْ كَانْ عَدُوّي يزير، ♫♫ طَالِبَاً حَقْلاً مَا تَعَبْ فِيه", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "والأَوْلَى هُوَ ابْنِكْ رَبِّ قَدِيرْ، ♫♫ جَابِلْنْي وأنَا مِنْ صُنْعِ يَدْيِهْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "يُوّرِثْني ابْنِكْ هُوَ أَوْلَى بي، ♫♫ ولا يُوّْرِثْني عَدِوّ شِريِرْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ابْنِكْ يِمْحِي رِقِّ ذِنُوبي، ♫♫ ويَخْدِمْني في كرْمُه أجْيْرْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "خَطَرِتْ حَمَامَة في بِيتْ زَكَريّا، ♫♫ وفي أَمْيالْها أعْطَتْ سَلامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "فَخَرَجَتْ ذاتْ العُقورِيّة، ♫♫ لِلِقاءْ والِدَةْ مُنْشِئْ الآنَامْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ولا يَحْسِبْ عَلَىَّ ذِنُوبِي، ♫♫ ولا يِجْعَلْني ذَلْيْل وأسِيْرْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وإنْ كُنْتْ لا أصْلُحْ لِصَوابي، ♫♫ فَمَرَاحْمُه عَمِيقَة وفَضْلُه غَزْيرْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ولا تُودِعِيني لآخْرْ السُوقْ، ♫♫ لِئَلّا يَضْيْعْ رَأسْ المَالْ والُموتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "اسْتَحِلِفِكْ بِالعَهْدِ المَوْثُوقْ، ♫♫ تَشَفَّعي فيَّ أمْامْ رَبِّ الصَبَاؤوتْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "وسَلامِكْ فَلْيُدْرِكْ شَعْبْ ابْنِكْ، ♫♫ إحْمِيهُمْ أجْمَعْ نِسَاءْ ورِجَالْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "ورُتَبْ مِلِّتْنَا طَالبينْ عَفْوِكْ، ♫♫ وبِكِ يَبْلُغُوا كُلِّ الآمَالْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "يا مَنْ خَلَّصَتَ سَفِينَة نُوحْ، ♫♫ وعَلى رُسُلَكْ حَلِّيْتْ بِالرُوحْ", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "إجْعَلْ بَابْ البِيعَةْ دائِماً مَفْتُوحْ، ♫♫ بِصَلاةْ مَرْيَمْ رِيَحانِة النِفُوسْ", 
+  ],
+  ],
+  [
+  [
+  "SpasmosWatesLong&D=$copticFeasts.Pentecoste&C=Title", 
+  "", 
+  "Aspasmos Watos pour le Pentecôte", 
+  "", 
+  "اسبسمس واطس لعيد حلول الروح القدس", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "Afsenaf epswi t~ve n~te t~ve canimansai hina n~tefouwrp nan m~Piparakl/ton && piP~neuma n~te ]meym/i.\nA#l# a#l# a#l#: && P,#c# aftwnf ouoh afsenaf: afouwrp nan m~piParakl/ton. &&  &&  && Cw] m~mon ouoh nai.\nJe a~gioc a~gioc a~gioc: Kurioc cabawy: pl/r/c o~ ouranoc  ke /~ g/: t/c a~giac cou dox/c.\n\n", 
+  "Il est monté aux cieux des cieux, vers l'orient, afin de nous envoyer le Consolateur, l'Esprit de vérité.", 
+  "", 
+  "صَعِدَ إلى سَمَاءِ السَمَاءْ نَاحِيَةْ المَشَارِقْ لِكَي يُرسْلْ لَنا المُعَزّي رُوحْ الحَقْ.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "Alléluia (3 fois) Le Christ est ressuscité puis est monté et nous a envoyé le Paraclet.", 
+  "", 
+  "هلليلويا هلليلويا هلليلويا، المَسِيحْ قَامَ ثُمَّ صَعِدَ وأرْسَلَ لنَا البَارَقْلْيطْ.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "Sauve-nous et aie pitié de nous.", 
+  "", 
+  "ارحمنا خلصنا.", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "Saint, Saint, Saint Seigneur Sabaoth; le ciel et terre sont remplis de Ta sainte gloire.", 
+  "", 
+  "قُدُّوسْ قُدُّوسْ قُدّوسْ رَبُُ الصَابَاؤوتْ، السَّمَاءْ والأرضُُ مَمْلوءتَانِ مِنْ مََجدِكَ الأقْدَسْ.", 
+  ],
+  ],
+  [
+  [
+  Prefix.psalmody+"NewTitle&D=$copticFeasts.AnyDay||$Seasons.Kiahk&C=Title", 
+  "", 
+  "", 
+  "", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
+  "", 
+  "", 
+  "", 
+  "", 
+  ],
+  ],
   ];

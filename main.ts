@@ -2357,7 +2357,7 @@ function findTableInPrayersArray(
     
     if(!table)  return console.log(
       "no table with the provided title was found : ", tableTitle,
-      " prayersArray =", PrayersArraysKeys.find(array => array[2]() === prayersArray)[1]);
+      " prayersArray =", PrayersArraysKeys.find(array => array[2]() === prayersArray)[1]|| undefined);
   
   return table
   }

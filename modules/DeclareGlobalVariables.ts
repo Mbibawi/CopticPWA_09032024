@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.2.4 (Added Hymn after the Synaxarium for Nativity and Pentecostal Period)";
+  "v5.2.5 (Fixes to teh 'Editing Mod' and completed Synaxarium until 28 Toubah)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
