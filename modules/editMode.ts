@@ -37,7 +37,10 @@ function startEditingMode(args: {
 
     else if (args.arrayName === args.select.options[3].innerText)return editDayReadings(); //Editing all the readings of ta give Coptic Date
 
-    else args.tablesArray = editSpecificTable() ||[];
+    else args.tablesArray = editSpecificTable() || [];
+    
+    args.select.selectedIndex = 0;
+
   }
 
   else if(!args.tablesArray) args.tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
@@ -188,7 +191,10 @@ function addEdintingButtons() {
 
   containerDiv.insertAdjacentElement('beforebegin', btnsDiv);
 
-    createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), 'Change Title', btnsDiv);
+  
+  createEditingButton(() => modifyAllSelectedText(), 'Modify Selected Text', btnsDiv);
+  
+  createEditingButton(() => changeTitle(document.getSelection().focusNode.parentElement), 'Change Title', btnsDiv);
   
   createEditingButton(() => changeCssClass(document.getSelection().focusNode.parentElement), 'Change Class', btnsDiv);
   
@@ -1266,5 +1272,39 @@ function showBtnInEditingMode(btn: Button) {
 
   if (btn.btnID === btnMain.btnID) addSettingsButton();
   
+}
+
+function modifyAllSelectedText() {
+  let selected = getSelectedText();
+  if (!selected) return;
+  let text = selected.toString();
+  let modified = prompt('Provide the text to replace the selected text', text);
+  if (!modified || modified === text) return;
+  let paragraph = document.getSelection().focusNode.parentElement;
+  if (!paragraph) return;
+  paragraph.innerText = paragraph.innerText.replace(text,modified);//! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
+  paragraph.textContent = paragraph.textContent.replace(text,modified);//! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
+  let htmlRow = getHtmlRow(paragraph) as HTMLDivElement;
+  if (!htmlRow || !htmlRow.dataset.arrayName) return;
+  let arrayName = htmlRow.dataset.arrayName;
+  let index:number = Array.from(htmlRow.children).indexOf(paragraph) +1;//! Caution: we must add 1 because index 0 is the title
+  let array:string[][][] = eval(arrayName);
+  if (!array) return;
+
+  array
+    .forEach(table =>
+      table
+        .forEach(row => {
+          if (!row || !row[index] || !row[index].includes(text)) return;
+          row[index] = row[index].replaceAll(text, modified)
+        }
+    ));
+  
+  saveOrExportArray(array, arrayName, false, true);
+
+}
+
+function getSelectedText():Selection{
+  return window.getSelection();
 }
 
