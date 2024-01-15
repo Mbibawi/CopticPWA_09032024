@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = "v5.2.6 (Completed Synaxarium until 03/06)";
+const version = "v5.2.7 (Completed Synaxarium until 15/06)";
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById("containerDiv");
 const leftSideBar = document.getElementById("leftSideBar");

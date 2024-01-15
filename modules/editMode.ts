@@ -995,11 +995,15 @@ function splitParagraphsToTheRowsBelow(htmlParag:HTMLElement) {
       //if tables rows are less than the number of paragraphs in 'clean', we add a new row to the table, and we push the new row to table
       table.push(addNewRow(table[table.length - 1].querySelector('p[lang="'+lang+'"]'), title));
     }
-    let paragraph = Array.from(table[i + rowIndex].children)
+    let paragraph =
+      Array.from(table[i + rowIndex].children)
       .filter((p: HTMLElement) => p.lang === lang)[0] as HTMLElement;
       paragraph.textContent = '';
       paragraph.innerText = splitted[i];
   }
+  htmlParag.id = 'splittedParagraph';//We give the htmlParag an id in order to be able to jumb again to the paragraph after we finish splitting the text
+  createFakeAnchor(htmlParag.id); //We go to the paragraph after we finished editing the text
+  htmlParag.id = 'finishedEditing'
 }
 
 /**
@@ -1012,7 +1016,8 @@ function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
   while (!htmlParag.classList.contains('Row')
     && htmlParag.parentElement
   && htmlParag.parentElement !== containerDiv) {
-    htmlParag = htmlParag.parentElement};
+    htmlParag = htmlParag.parentElement
+  };
   if (htmlParag.tagName !== 'DIV'
     || !htmlParag.classList.contains('Row'))
     return undefined;
@@ -1275,21 +1280,20 @@ function showBtnInEditingMode(btn: Button) {
 }
 
 function modifyAllSelectedText() {
-  let selected = getSelectedText();
-  if (!selected) return;
-  let text = selected.toString();
-  let modified = prompt('Provide the text to replace the selected text', text);
-  if (!modified || modified === text) return;
   let paragraph = document.getSelection().focusNode.parentElement;
   if (!paragraph) return;
-  paragraph.innerText = paragraph.innerText.replace(text,modified);//! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
-  paragraph.textContent = paragraph.textContent.replace(text,modified);//! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
+  let selected = getSelectedText();
+  if (!selected) return alert('You didn\'t select any text');
+  let text = selected.toString();
+  let modified = prompt('Provide the text to replace the selected text', text);
+  if (!modified || modified === text) return alert('Either you dindn\'t make any change or you provided an invalide string');
+
   let htmlRow = getHtmlRow(paragraph) as HTMLDivElement;
-  if (!htmlRow || !htmlRow.dataset.arrayName) return;
+  if (!htmlRow || !htmlRow.dataset.arrayName) return alert('Couldn\'t retrieve the arrayName');
   let arrayName = htmlRow.dataset.arrayName;
   let index:number = Array.from(htmlRow.children).indexOf(paragraph) +1;//! Caution: we must add 1 because index 0 is the title
   let array:string[][][] = eval(arrayName);
-  if (!array) return;
+  if (!array) return alert('Couldn\'t retrive the array');
 
   array
     .forEach(table =>
@@ -1298,7 +1302,12 @@ function modifyAllSelectedText() {
           if (!row || !row[index] || !row[index].includes(text)) return;
           row[index] = row[index].replaceAll(text, modified)
         }
-    ));
+      ));
+  
+      Array.from(containerDiv.children)
+      .forEach(child =>
+        child.innerHTML = child.innerHTML.replaceAll(text, modified)//! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
+      );
   
   saveOrExportArray(array, arrayName, false, true);
 
