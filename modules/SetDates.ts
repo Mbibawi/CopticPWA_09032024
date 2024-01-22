@@ -3,17 +3,18 @@
  * @param {Date} today  - a Gregorian date provided by the user or set automatically to the date of today if missing
  */
 async function setCopticDates(today?: Date) {
-  if (!today) {
-    today = new Date();
+  
+  todayDate = today || (() => {
     if (localStorage.selectedDate) localStorage.removeItem("selectedDate"); //We do this in order to reset the local storage 'selectedDate' when setCopticDates() is called without a date passed to it
-  }
-  todayDate = today;
+    return new Date()
+  })();
+
   weekDay = todayDate.getDay();
-  convertGregorianDateToCopticDate(today.getTime(), true);
+  convertGregorianDateToCopticDate(todayDate.getTime(), true);
 
   Season = Seasons.NoSeason; //this will be its default value unless it is changed by another function;
   copticReadingsDate = getSeasonAndCopticReadingsDate(copticDate) as string;
-  if (checkIf29thOfCopticMonth()) copticFeasts.Coptic29th = copticDate;
+  if (checkIf29thOfCopticMonth()) copticFeasts.Coptic29th = copticDate; //If we are on the 29th of the coptic Month, we will set the value of copticFeasts.Cotpic29th to today's copticDate in order to able to retrieve the prayers of this day
 
   await setSeasonalTextForAll(Season); //!This must be called here after the dates and seasons were changed
   reloadScriptToBody(["PrayersArray"]);
@@ -134,10 +135,10 @@ function getSeasonAndCopticReadingsDate(
   if (specialSeason) {
     // it means we got a specific date for the Readings associated with a specific period (e.g.: Great Lent, PentecostalDays, etc.)
     return specialSeason;
-  } else if (weekDay === 0) {
+  } else if (today.getDay() === 0) {
     // it means we are on an ordinary  Sunday (any sunday other than Great lent and Pentecostal period Sundays)
     // console.log('We are on a sunday')
-    let sunday: string = checkWhichSundayWeAre(Number(copticDay), weekDay);
+    let sunday: string = checkWhichSundayWeAre(Number(copticDay), today.getDay());
     //the readings for the 5th sunday of any coptic month (other than the 5th sunday of the Great Lent or the Pentecostal Days) are the same. We will then retrieve the readings of the 5th sunday of the first coptic month (Tout)
     sunday === "5thSunday"
       ? (sunday = "01" + sunday)
@@ -366,7 +367,7 @@ function checkForUnfixedEvent(
 
   (function ifNativityFeast() {
     if(todayDate.getMonth() !==0) return; //We are not in January
-    if (Number(copticMonth) === 5 && Number(copticDay) > 6) return;
+    if (Number(copticMonth) === 5 && Number(copticDay) > 5) return;
 
     if (isNativityFeast()) Season = Seasons.Nativity;
 
@@ -414,7 +415,7 @@ function checkForUnfixedEvent(
 
   (function ifBaptismFeast() {
     if (Number(copticMonth) !== 5) return;
-    if (Number(copticDay) > 13) return;
+    if (Number(copticDay) > 12) return;
     
     if (Number(copticDay) >= 11)//i.e., from 11 to 13 Toubah 
       Season = Seasons.Baptism;
@@ -520,7 +521,7 @@ function showDates(
           " Sunday"
         );
 
-      if (copticMonths[Number(copticReadingsDate.slice(2, 4))])
+      if (copticMonths[Number(copticMonth)])
         return (
           copticReadingsDate.slice(0, 2) +
           " " +
@@ -589,7 +590,7 @@ async function changeDate(
   showAlert: boolean = true
 ): Promise<Date> {
   if (date) {
-    if (checkIfDateIsToday(date)) todayDate = new Date();
+    if (!todayDate || checkIfDateIsToday(date)) todayDate = new Date();
     else todayDate.setTime(new Date(date).getTime());
   } else {
     if (next) {
@@ -629,15 +630,17 @@ async function changeDate(
  * @returns {boolean} - returns true if storedDate is same as today
  */
 function checkIfDateIsToday(date: Date): boolean {
-  let newDate = new Date();
-  if (
-    date.getDate() === newDate.getDate() &&
-    date.getMonth() === newDate.getMonth() &&
-    date.getFullYear() === newDate.getFullYear()
-  ) {
-    return true;
-  }
-  return false;
+  if (!date
+    ||
+    (
+    date.getDate() === new Date().getDate()
+    &&
+    date.getMonth() === new Date().getMonth()
+      &&
+      date.getFullYear() === new Date().getFullYear()))
+    return true; //If the date argument is not valid,  or if the date argument refers to the same day, month and year as today, we will return true which means that todayDate will be set to today's date
+
+    return false;
 }
 
 function testReadings() {

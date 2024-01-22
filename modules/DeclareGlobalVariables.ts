@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.2.7 (Completed Synaxarium until 15/06)";
+  "v5.2.8 (Fixes to the Dawn Doxlogies and Cymbal Verses)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -326,6 +326,7 @@ const Seasons = {
   StMaryFast: "StMFast", //stands for Saint Mary Feast
   Nayrouz: "Nay", //Stands for Nayrouz from 1 Tout to 16 Tout
   NativityFast: "NF", //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
+  Kiahk:'KiahkAny', //The whole month of Kiahk
   KiahkWeek1: "Kiahk1", //1st Week of Kiahk
   KiahkWeek2: "Kiahk2", //2nd Week of Kiahk
   KiahkWeek3: "Kiahk3", //3rd Week of Kiahk
@@ -397,10 +398,10 @@ const saintsFeasts = {
   StSourial: "2705",
   StMarc: "3008",
   StSteven: "0105",
-  StSergeBacchus: "",
+  StSergeBacchus: "1002",
   StGeorge: "2708",
   StMina: "1503",
-  StTheodor: "",
+  StTheodor: "1205",
   StPhilopatir: "2503",
   StCome: "",
   OneHudredTwentyFourThousands: "", //The 144000 chast
@@ -409,7 +410,7 @@ const saintsFeasts = {
   StBarbara: "",
   StMarina: "",
   StAnton: "2205",
-  StBishoy: "",
+  StBishoy: "0810",
   StShenoute: "",
   StTeji: "",
   StPersoma: "",
@@ -418,6 +419,18 @@ const saintsFeasts = {
   StMikaelMetropolis: "", //St Mikhael the Metropolis of Assiut
   StJustAnton: "", //St Just of the St. Anton
 };
+
+const AngelsFeasts:string[] = [
+  saintsFeasts.StMaykel,
+  saintsFeasts.StGabriel,
+  saintsFeasts.StRaphael,
+  saintsFeasts.StSourial,
+];
+
+const martyrsFeasts:string[] = [
+  
+]
+
 
 const allLanguages: string[] = ["AR", "FR", "COP", "CA", "CF", "EN"]; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
 
@@ -484,6 +497,7 @@ const lordGreatFeasts = [
   lordMinorFeasts = [
     copticFeasts.Epiphany,
     copticFeasts.Circumcision,
+    copticFeasts.CanaWedding,
     copticFeasts.EntryToEgypt,
     copticFeasts.EntryToTemple,
   ],

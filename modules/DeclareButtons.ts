@@ -268,7 +268,7 @@ const btnIncenseOffice: Button = new Button({
     if (
       (Season === Seasons.GreatLent || Season === Seasons.JonahFast)
       &&
-      (todayDate.getDay() !== 6))
+      (weekDay !== 6))
         btnIncenseOffice.children = btnIncenseOffice.children.filter(btn => btn !== btnIncenseVespers);
   
     if (args.returnBtnChildren) return btnIncenseOffice.children;
@@ -294,7 +294,7 @@ const btnIncenseDawn: Button = new Button({
       [...IncensePrayersSequence]
       .filter(title => !title.startsWith(Prefix.incenseVespers)); //We will remove all the Incense Vespers titles from the prayersSequence Array
 
-    if (todayDate.getDay() === 6)
+    if (weekDay === 6)
       //If we are a Saturday, we pray only the 'Departed Litany', we will hence remove the 'Sick Litany' and the 'Travellers Litany'
       btnIncenseDawn.prayersSequence.splice(
         btnIncenseDawn.prayersSequence.indexOf(
@@ -302,7 +302,7 @@ const btnIncenseDawn: Button = new Button({
         3,//We remove the SickPrayer, the TravelersParayer and the Oblations Prayer
         Prefix.incenseVespers + "DepartedPrayer&D=$copticFeasts.AnyDay"
       );
-    else if (todayDate.getDay() === 0 || lordFeasts.includes(copticDate))
+    else if (weekDay === 0 || lordFeasts.includes(copticDate))
       //If we are a Sunday or the day is a Lord's Feast, or the oblation is present, we remove the 'Travellers Litany' and keep the 'Sick Litany' and the 'Oblation Litany'
       btnIncenseDawn.prayersSequence =
       btnIncenseDawn.prayersSequence
@@ -374,7 +374,7 @@ const btnIncenseDawn: Button = new Button({
     (async function addGreatLentPrayers() {
       if (btn.btnID !== btnIncenseDawn.btnID) return;
       if (Season !== Seasons.GreatLent && Season !== Seasons.JonahFast) return;
-      if (todayDate.getDay() > 0 && todayDate.getDay() < 6) {
+      if (weekDay > 0 && weekDay < 6) {
         console.log("we are not a sunday");
         //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
         (function showPropheciesDawnBtn() {
@@ -717,7 +717,7 @@ const btnMassStBasil: Button = new Button({
       let spasmos: string[][] = MassCommonPrayersArray.filter(
         (tbl) =>
           tbl[0][0].startsWith(spasmosTitle) &&
-          selectFromMultiDatedTitle(splitTitle(tbl[0][0])[0], Season)
+          isMultiDatedTitleMatching(splitTitle(tbl[0][0])[0], Season)
       )[0];
 
       if (!spasmos)
@@ -754,14 +754,14 @@ const btnMassStBasil: Button = new Button({
 
       let filtered: string[][][] = CommunionPrayersArray.filter(
         (tbl) =>
-          selectFromMultiDatedTitle(tbl[0][0], copticDate) === true ||
-          selectFromMultiDatedTitle(tbl[0][0], Season) === true
+          isMultiDatedTitleMatching(tbl[0][0], copticDate) === true ||
+          isMultiDatedTitleMatching(tbl[0][0], Season) === true
       );
 
       if (filtered.length === 0)
         filtered = CommunionPrayersArray.filter(
           (tbl) =>
-            selectFromMultiDatedTitle(tbl[0][0], copticFeasts.AnyDay) === true
+            isMultiDatedTitleMatching(tbl[0][0], copticFeasts.AnyDay) === true
         );
 
       showMultipleChoicePrayersButton({
@@ -963,8 +963,8 @@ const btnMassUnBaptised: Button = new Button({
     (function replaceAllelujahFayBabi() {
       if (
         (Season === Seasons.GreatLent || Season === Seasons.JonahFast) &&
-        todayDate.getDay() !== 0 &&
-        todayDate.getDay() !== 6
+        weekDay !== 0 &&
+        weekDay !== 6
       ) {
         //Inserting "Alleluja E Ikhon" before "Allelujah Fay Bibi"
         btnMassUnBaptised.prayersSequence.splice(
@@ -982,9 +982,9 @@ const btnMassUnBaptised: Button = new Button({
           1
         );
       } else if (
-        (isFast && todayDate.getDay() !== 0 && todayDate.getDay() !== 6) ||
+        (isFast && weekDay !== 0 && weekDay !== 6) ||
         (Season === Seasons.NoSeason &&
-          (todayDate.getDay() === 3 || todayDate.getDay() === 5))
+          (weekDay === 3 || weekDay === 5))
       ) {
         //Removing Hellelujah Fay Bibi
         btnMassUnBaptised.prayersSequence.splice(
@@ -1098,8 +1098,8 @@ const btnMassUnBaptised: Button = new Button({
             table[0][0].includes('ByTheIntercessionOf')
             &&
             (
-              selectFromMultiDatedTitle(table[0][0], copticDate)
-              || selectFromMultiDatedTitle(table[0][0], Season)
+              isMultiDatedTitleMatching(table[0][0], copticDate)
+              || isMultiDatedTitleMatching(table[0][0], Season)
             )
           )
       if (seasonalIntercessions.length < 1) return console.log('No Seasonsal Intercession Hymns');
@@ -1147,9 +1147,9 @@ const btnMassUnBaptised: Button = new Button({
         let specialResponse: string[][][] =
           PraxisResponsesPrayersArray
             .filter(table =>
-              selectFromMultiDatedTitle(table[0][0], copticDate)
+              isMultiDatedTitleMatching(table[0][0], copticDate)
               ||
-              selectFromMultiDatedTitle(table[0][0], Season)
+              isMultiDatedTitleMatching(table[0][0], Season)
             );
 
         if (specialResponse.length === 0)
@@ -1158,7 +1158,7 @@ const btnMassUnBaptised: Button = new Button({
         if (Season === Seasons.GreatLent) {
           //If a Praxis response was found
           // The query should yield to  2 tables ('Sundays', and 'Week') for this season. We will keep the relevant one accoding to the date
-          if (todayDate.getDay() === 0 || todayDate.getDay() === 6)
+          if (weekDay === 0 || weekDay === 6)
             specialResponse = [
               specialResponse.find((table) => table[0][0].includes("Sundays&D=")),
             ];
@@ -1307,13 +1307,13 @@ const btnMassUnBaptised: Button = new Button({
             Seasons.NativityParamoun,
             Seasons.BaptismParamoun,
           ].includes(Season) &&
-          ![0, 6].includes(todayDate.getDay())
+          ![0, 6].includes(weekDay)
           //We are during the Great Lent or during the Nativity Paramoun or the Baptism Paramoun and today is a Friday. In such cases, we pray the 3rd, 6th, 9th, 11th, and 12th hours
         )
           hours.push(hoursBtns[4], hoursBtns[5]);
         else if (
           //We remove the 9th hour in the following days
-          [0, 6].includes(todayDate.getDay()) || //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
+          [0, 6].includes(weekDay) || //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
           lordFeasts.includes(copticDate) || //This is a Lord Feast. We remove the 9th hour
           [
             Seasons.Nativity,
@@ -1322,7 +1322,7 @@ const btnMassUnBaptised: Button = new Button({
             Seasons.Nayrouz,
             Seasons.CrossFeast,
           ].includes(Season) || //These are joyfull seasons
-          (!isFast && ![3, 5].includes(todayDate.getDay())) //We are not during a feast or joyfull season, but we are not neither a Wednesday nor a Firday
+          (!isFast && ![3, 5].includes(weekDay)) //We are not during a feast or joyfull season, but we are not neither a Wednesday nor a Firday
         )
           hours.pop(); //we remove the 9th hour
 
@@ -1763,20 +1763,20 @@ const btnDayReadings: Button = new Button({
       if (Season !==Seasons.GreatLent || copticReadingsDate === copticFeasts.Resurrection) return;
 
       (function ifWeAreNotASaturday() {
-        if (todayDate.getDay() === 6) return;
+        if (weekDay === 6) return;
 
         //We remove the Vespers because there are no Vespers during the Great Lent except for Saturday
         btnDayReadings.children = btnDayReadings.children.filter(btn => btn !== btnIncenseVespers);
 
         //If we are a Sunday and the GospelNight button is not included, we will add it.
       
-      if (todayDate.getDay() === 0
+      if (weekDay === 0
         && !btnDayReadings.children.includes(btnReadingsGospelNight))
         btnDayReadings.children.push(btnReadingsGospelNight);
       
 
         (function ifWeAreNotASunday() {
-          if (todayDate.getDay() === 0) return;
+          if (weekDay === 0) return;
 
           //If we are not a Sunday (i.e., we are during any week day other than Sunday and Saturday), we will  add the Prophecies button to the list of buttons
           if (!btnDayReadings.children.includes(btnReadingsPropheciesDawn))
@@ -2044,9 +2044,9 @@ function setGospelPrayersSequence(liturgy: string, isMass:boolean): string[] {
     let PsalmAndGospelResponses =
       PsalmAndGospelPrayersArray
         .filter(table =>
-          selectFromMultiDatedTitle(table[0][0], copticDate)
+          isMultiDatedTitleMatching(table[0][0], copticDate)
           ||
-          selectFromMultiDatedTitle(table[0][0], Season)
+          isMultiDatedTitleMatching(table[0][0], Season)
         );
 
     let psalmResponse =
@@ -2068,7 +2068,7 @@ function setGospelPrayersSequence(liturgy: string, isMass:boolean): string[] {
       todayDate.getHours() > 15){
       gospelResponse = [gospelResponse.find(table => table[0][0].includes('Vespers&D='))]
     } else if (Season === Seasons.GreatLent) {
-      [0,6].includes(todayDate.getDay()) ?
+      [0,6].includes(weekDay) ?
         gospelResponse =[gospelResponse.find(table => table[0][0].includes('Sundays&D='))]
       :
         gospelResponse = gospelResponse =[gospelResponse.find(table => table[0][0].includes('Week&D='))]  
@@ -2339,7 +2339,7 @@ function showFractionPrayersMasterButton(
       .map(table => {
       if (!table) return;
       if (
-        selectFromMultiDatedTitle(table[0][0], date) === true
+        isMultiDatedTitleMatching(table[0][0], date) === true
         &&
         !filtered.has(table)
       )
@@ -2373,30 +2373,36 @@ function getBtnGospelPrayersArray(btn: Button, readingsArray): string[][][] {
  * @param {string} coptDate - the date that we want to check if it is included in the title. If omitted, it is given the value of the current copticDate
  * @returns {boolean} - return true if the date was found, and false otherwise
  */
-function selectFromMultiDatedTitle(
+function isMultiDatedTitleMatching(
   tableTitle: string,
   coptDate: string = copticDate
 ): boolean {
-  if (!tableTitle.includes("&D=")) return false;
+  if (!tableTitle.includes("&D=")) return false;//This means that the title does not specify any date for the prayer.
 
   tableTitle = splitTitle(tableTitle)[0].split("&D=")[1];
 
-  let dates = tableTitle.split("||");
-  let parseDate =
-    dates
-      .map(date => {
-        if (date === "$Seasons.Kiahk")
-          return [Seasons.KiahkWeek1, Seasons.KiahkWeek2, Seasons.KiahkWeek3, Seasons.KiahkWeek4,
-          ].includes(Season);
+  return tableTitle.split("||")
+    .map(date =>dateIsRelevant(date, coptDate))
+    .includes(true);
+  
+}
 
-        if (date.startsWith("$")) date = eval(date.split('$')[1]);
+/**
+ * Checks if the date argument matches the copticDate or the Season
+ * @param {string} date - the date string that we want to check if it matches the copticDate or the Season
+ * @param {string} coptDate  - the copticDate (or the Season) with which we want the compare the date
+ * @returns  {boolean}
+ */
+function dateIsRelevant(date:string, coptDate:string = copticDate):boolean | void{
+  if (date.startsWith("$")) date = eval(date.replace('$', ''));
 
-        if (date && date === coptDate) return true;
-        else return false;
-  });
+  if (!date) return console.log('date is not valid: ', date);
 
-  if (parseDate.includes(true)) return true;
-  else return false;
+  if (date === Seasons.Kiahk)
+    return [Seasons.KiahkWeek1, Seasons.KiahkWeek2, Seasons.KiahkWeek3, Seasons.KiahkWeek4,
+    ].includes(Season);
+
+  return date === coptDate;
 }
 
 /**
@@ -2407,7 +2413,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
   if (!btn.docFragment)
     return console.log("btn.docFragment is undefined = ", btn.docFragment);
 
-  let feast: string[] =  (() => {
+  let dayFeasts: string[] =  (() => {
     let feast: string[]=[];
       let relevant: [string, string] =
         Object.entries(copticFeasts)
@@ -2441,12 +2447,18 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
       Prefix.cymbalVerses + "&D=$copticFeasts.AnyDay",
     ];
 
-    if (todayDate.getDay() > 2)
+    if (weekDay > 2)
       sequence[0] = sequence[0].replace("Wates&D", "Adam&D");
 
-    if(feast) insertFeastInSequence(sequence, feast, 1);
-
-   
+    
+    if (dayFeasts)
+      dayFeasts
+        .forEach(feast =>
+          lordFeasts.includes(feast) ?
+            insertFeastInSequence(sequence, feast, 1, 1)
+            :
+            insertFeastInSequence(sequence, feast, 1, 0))//We always start with 'Amoyni Marin...' or with 'Tin O'osht...', so we will insert the feast element before the 2nd element, and will not delete anything
+       
     let cymbals: string[][][] = processSequence(sequence, CymbalVersesPrayersArray);
    
     if (cymbals.length < 1) return console.log("no cymbals were found by the provided sequence: ", sequence);
@@ -2496,15 +2508,26 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
     ]; //Those saints feast will be excluded because the doxologies of those saints are already included by default
 
 
-    if (excludedFeasts.includes(copticDate)) {
-      //If today is the feast of the saints included in excludeFeast. ! Notice that we start from 1 not from 0 because 0 is St. Maykel feast and it is already the first doxology in the saints doxologies
-
-      let doxologyIndex = excludedFeasts.indexOf(copticDate) + 2;
-      sequence.splice(2, 0, sequence[doxologyIndex]); //We insert the doxology after St. Maykel's doxology
-      sequence.splice(doxologyIndex + 1, 1); //We remove the original doxology from the sequence
+    if (dayFeasts) {
+      let index: number =2;
+      dayFeasts
+        .forEach(feast => {
+          if ( [...lordFeasts, Seasons.NativityParamoun, Seasons.Nativity, Seasons.BaptismParamoun, Seasons.Baptism, Seasons.KiahkWeek1, Seasons.KiahkWeek2, Seasons.KiahkWeek3, Seasons.KiahkWeek4, Seasons.PentecostalDays].includes(feast)
+          ) index = 0;//If one of the dates in feast[] corresponds to a one of th 'Lord's Feasts', it means we are in a Lord Feast. the doxologies of the feast will be placed at the begining of the doxologies. We do the same for the doxologies of the PentecostalDays and the month of Kiahk
+          else if (excludedFeasts.includes(feast)) {
+            let feastIndex = sequence.indexOf(feast);
+            sequence.splice(2, 0, sequence[feastIndex]);  //If it is one of the doxologies already included by default, we place it after St. Maykel 
+            sequence.splice(feastIndex+1, 1);//We then delete the element itself
+            index = undefined;//We set index to undefined in order to prevent insertFeastSequence from inserting any element in sequence
+          }
+          else if (AngelsFeasts.includes(feast)) index = 1;
+        
+          insertFeastInSequence(sequence, feast, index,0);
+        
+      })
+      
     }
 
-    if (feast && !excludedFeasts.find(f=>feast.includes(f))) insertFeastInSequence(sequence, feast, 1);
 
     let doxologies: string[][][] =
       processSequence(sequence, DoxologiesPrayersArray);
@@ -2515,7 +2538,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
 
     if (Season === Seasons.GreatLent) {
       //For the Great Lent, there is a doxology for the Sundays and 4 doxologies for the week days
-      if (todayDate.getDay() === 0 || todayDate.getDay() === 6)
+      if (weekDay === 0 || weekDay === 6)
         doxologies = doxologies
           .filter((tbl) => tbl[0][0].includes("Seasons.GreatLent"))
           .filter((tbl) => !tbl[0][0].includes("Week"));
@@ -2546,19 +2569,12 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
    */
   function insertFeastInSequence(
     sequence: string[],
-    feastDates: string[],
-    index: number
+    feastDate: string,
+    index: number,
+    remove:number
   ) {
-    feastDates
-      .forEach(feastDate => {
-        if (
-          !lordFeasts.includes(feastDate) &&
-          Season !== Seasons.PentecostalDays
-        )
-          sequence.splice(index, 0, "&Insert=" + feastDate);
-        else sequence.splice(index, 1, "&Insert=" + feastDate);
-      });
-
+    if (!index && index!==0) return;
+    sequence.splice(index, remove, "&Insert=" + feastDate);
     }
 
 /**
@@ -2576,7 +2592,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
           tablesArray
             //!CAUTION: we must use 'filter' not 'find' because for certain feasts there are more than one doxology
             .filter(tbl =>
-              selectFromMultiDatedTitle(
+              isMultiDatedTitleMatching(
                 tbl[0][0],
                 title.split("&Insert=")[1]
               )

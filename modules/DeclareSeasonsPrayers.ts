@@ -9,7 +9,7 @@ type seasonalPrayers = {
 const giakiAll: seasonalPrayers[] = [
     {
         Season: Seasons.NoSeason,
-        AR: 'لأنكَ أتيْتَ وخَلصْتَنا',
+        AR: 'لأنَّكَ أتيْتَ وخَلصْتَنا',
         CA: 'جي آك إي أكسوتي إمّون',
         FR: 'car Tu es venu et nous as sauvés',
         EN: 'for You\'ve come and saved us',
@@ -17,24 +17,24 @@ const giakiAll: seasonalPrayers[] = [
     },
     {
         Season: Seasons.Nativity,
-        AR: 'لأنكَ ولِدتَ وخَلصْتَنا',
+        AR: 'لأنَّكَ ولِدتَ وخَلصْتَنا',
         CA: 'جي آك ماسف أكسوتي إمّون',
         FR: 'car Tu es né et nous as sauvés',
         EN: 'for You\'ve born and saved us',
-        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
+        COP: 'ϫⲉ ⲁⲩⲙⲁⲥⲕ ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
         Season: Seasons.Baptism,
-        AR: 'لأنكَ اعتمدت وخَلصْتَنا',
+        AR: 'لأنَّكَ اعتمدت وخَلصْتَنا',
         CA: 'جي آك أومس أكسوتي إمّون',
         FR: 'car Tu es baptisé et nous as sauvés',
         EN: 'for You\'ve been baptized and saved us',
-        COP: 'ϫⲉ ⲁⲕ̀\' ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
+        COP: 'ϫⲉ ⲁⲕϭⲓⲱⲙⲥ ⲁⲕⲥⲱϯ ⲙ̀ⲙⲟⲛ'
     },
     {
  
         Season: Seasons.PentecostalDays,
-        AR: 'لأنكَ قُمتَ وخَلصْتَنا',
+        AR: 'لأنَّكَ قُمتَ وخَلصْتَنا',
         CA: 'جي آك تونك أكسوتي إمّون',
         FR: 'car Tu es ressuscité et nous as sauvés',
         EN: 'for You\'ve raised and saved us',
@@ -104,7 +104,10 @@ function setSeasonalText(arrayAll: seasonalPrayers[], season: string): seasonalP
     if (!arrayAll) return;
     let found: seasonalPrayers;
     //If we are a Sunday, giAki will be ge aktonk as during the Pentecostal Days
-    if(todayDate.getDay() ===0) return arrayAll.find(resp => resp.Season === Seasons.PentecostalDays);  
+    if(todayDate.getDay() ===0) return arrayAll.find(resp => resp.Season === Seasons.PentecostalDays); 
+
+    //If we it is the Circumcision Feast, giAki will be 'ge ak masf'
+    if(copticDate ===copticFeasts.Circumcision) return arrayAll.find(resp => resp.Season === Seasons.Nativity);  
         
     found = arrayAll.find(resp => resp.Season === season);
 

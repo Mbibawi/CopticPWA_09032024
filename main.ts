@@ -64,18 +64,17 @@ async function startApp() {
   DetectFingerSwipe();
   if (localStorage.selectedDate) {
     let newDate = new Date(),
-      selectedDate: Date;
-    selectedDate = new Date(Number(localStorage.selectedDate)); //We create a date from the date saved in th localStorage
+      selectedDate = new Date(Number(localStorage.selectedDate)); //We create a date from the date saved in th localStorage
     //selectedDate.setTime();
     if (!checkIfDateIsToday(selectedDate)) {
       alert(
         "WARNING ! The date is manually set by the user to " +
-          selectedDate.getDate().toString() +
-          "/" +
-          (selectedDate.getMonth() + 1).toString() +
-          "/" +
-          selectedDate.getFullYear().toString() +
-          ". This choice will not kept. If you want the current date, you have to change the date manually"
+        selectedDate.getDate().toString() +
+        "/" +
+        (selectedDate.getMonth() + 1).toString() +
+        "/" +
+        selectedDate.getFullYear().toString() +
+        ". This choice will not kept. If you want the current date, you have to change the date manually"
       );
       selectedDate.setHours(
         newDate.getHours(),
@@ -87,8 +86,8 @@ async function startApp() {
     }
   } else {
     setCopticDates();
-  }
-
+    
+  };
   showChildButtonsOrPrayers(btnMain); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
   await loadTextScripts();
@@ -2470,6 +2469,7 @@ function showSettingsPanel() {
         fun: () => changeDate(new Date(datePicker.value.toString())),
       },
     }) as HTMLInputElement;
+    if (!todayDate) return;
     datePicker.setAttribute("value", todayDate.toString());
     datePicker.setAttribute("min", "1900-01-01");
   })();
