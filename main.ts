@@ -69,12 +69,12 @@ async function startApp() {
     if (!checkIfDateIsToday(selectedDate)) {
       alert(
         "WARNING ! The date is manually set by the user to " +
-        selectedDate.getDate().toString() +
-        "/" +
-        (selectedDate.getMonth() + 1).toString() +
-        "/" +
-        selectedDate.getFullYear().toString() +
-        ". This choice will not kept. If you want the current date, you have to change the date manually"
+          selectedDate.getDate().toString() +
+          "/" +
+          (selectedDate.getMonth() + 1).toString() +
+          "/" +
+          selectedDate.getFullYear().toString() +
+          ". This choice will not kept. If you want the current date, you have to change the date manually"
       );
       selectedDate.setHours(
         newDate.getHours(),
@@ -86,8 +86,7 @@ async function startApp() {
     }
   } else {
     setCopticDates();
-    
-  };
+  }
   showChildButtonsOrPrayers(btnMain); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
   await loadTextScripts();
@@ -215,7 +214,7 @@ function createHtmlElementForPrayer(args: {
           getTablesArrayFromTitlePrefix(htmlRow.dataset.root)
         ),
         tableTitle: htmlRow.dataset.root,
-        operator:{equal:true} //!We need to look for the table by the exact title beacause some titles like 'NativityParamoun' or 'BaptismParamoun' may be retrieved if the Season is 'Nativity' or 'Baptism'
+        operator: { equal: true }, //!We need to look for the table by the exact title beacause some titles like 'NativityParamoun' or 'BaptismParamoun' may be retrieved if the Season is 'Nativity' or 'Baptism'
       });
     });
     htmlRow.appendChild(p); //the row which is a <div></div>, will encapsulate a <p></p> element for each language in the 'prayer' array (i.e., it will have as many <p></p> elements as the number of elements in the 'prayer' array)
@@ -259,14 +258,10 @@ async function showTitlesInRightSideBar(
   //this function shows the titles in the right side Bar
   if (!rightTitlesDiv) rightTitlesDiv = sideBarTitlesContainer;
 
-  if (clear) {
-    rightTitlesDiv.innerHTML = "";
-  } //we empty the side bar
+  if (clear) rightTitlesDiv.innerHTML = ""; //we empty the side bar
   let bookmark: HTMLAnchorElement;
 
-  titlesArray =
-    titlesCollection
-    .map(titleRow => {
+  titlesArray = titlesCollection.map((titleRow) => {
     titleRow.id += titlesCollection.indexOf(titleRow).toString();
     return addTitle(titleRow);
   });
@@ -276,8 +271,7 @@ async function showTitlesInRightSideBar(
    * @param {HTMLElement} titles - a div including paragraphs, each displaying the title of the section in a given language
    */
   function addTitle(titlesRow: HTMLElement): HTMLDivElement {
-    let text: string = "",
-      titleDiv: HTMLDivElement = document.createElement("div"); //this is just a container
+    let titleDiv: HTMLDivElement = document.createElement("div"); //this is just a container
     titleDiv.role = "button";
     if (dataGroup) titleDiv.dataset.group = dataGroup;
     else titleDiv.dataset.group = titlesRow.id;
@@ -294,33 +288,14 @@ async function showTitlesInRightSideBar(
       closeSideBar(rightSideBar); //when the user clicks on the div, the rightSideBar is closed
       collapseOrExpandText({ titleRow: titlesRow, collapse: false }); //We pass the 'toggleHidden' paramater = false in order to always show/uncollapse the sibligns
     });
-    if (titlesRow.querySelector("." + defaultLanguage)) {
-      //if the titles div has a paragraph child with class="AR", it means this is the paragraph containing the Arabic text of the title
-      text += titlesRow
-        .querySelector("." + defaultLanguage)
-        //@ts-ignore
-        .innerText.split("\n")[0];
-    }
-    if (titlesRow.querySelector("." + foreingLanguage)) {
-      if (text !== "") {
-        text +=
-          "\n" +
-          titlesRow
-            .querySelector("." + foreingLanguage)
-            //@ts-ignore
-            .innerText.split("\n")[0];
-      } else {
-        text += titlesRow
-          .querySelector("." + foreingLanguage)
-          //@ts-ignore
-          .innerText.split("\n")[0];
-      }
-    }
-    //we remove the plus(+) or minus(-) signs from the begining text of the Arabic paragraph;
-    text = text
-      .replaceAll(String.fromCharCode(plusCharCode) + " ", "")
-      .replaceAll(String.fromCharCode(plusCharCode + 1) + " ", "");
-    bookmark.innerText = text;
+
+    let defaultLang = appendTitleTextParagraph(titlesRow, defaultLanguage);
+
+    let foreignLang = appendTitleTextParagraph(titlesRow, foreingLanguage);
+
+    if (defaultLang && foreignLang)
+      foreignLang.innerText = "\n" + foreignLang.innerText;
+
     //If the container is an 'Expandable' container, we hide the title
     if (
       titlesRow.parentElement &&
@@ -329,6 +304,38 @@ async function showTitlesInRightSideBar(
       titleDiv.classList.add(hidden);
     return titleDiv;
   }
+
+  function appendTitleTextParagraph(
+    titlesRow: HTMLElement,
+    className: string,
+    limit: number = 35
+  ) {
+    let parag = titlesRow.querySelector(
+      "." + className
+    ) as HTMLParagraphElement;
+    if (!parag) return;
+    let text: string = parag.innerText
+      .split("\n")
+      .join(" ")
+      .replaceAll(String.fromCharCode(plusCharCode) + " ", "")
+      .replaceAll(String.fromCharCode(plusCharCode + 1) + " ", "")
+      .replaceAll("  ", " ");
+
+    if (!text) return;
+
+    if (text.length > limit) text = text.slice(0, limit - 1) + "..."; //We limit the number of characters of the title
+
+    let titleParag = document.createElement("p");
+    titleParag.innerText = text;
+    titleParag.dir = "auto";
+    titleParag.style.lineHeight = "8pt";
+    titleParag.style.margin = "0px";
+    if (className !== "AR") titleParag.style.textAlign = "left";
+    else titleParag.style.textAlign = "right";
+    bookmark.appendChild(titleParag);
+    return titleParag;
+  }
+
   return titlesArray;
 }
 
@@ -355,11 +362,7 @@ async function showChildButtonsOrPrayers(btn: Button, clear: boolean = true) {
 
   if (btn.onClick) btn.onClick();
 
-  if (
-    btn.prayersSequence
-    && btn.languages 
-    && btn.showPrayers
-  ) {
+  if (btn.prayersSequence && btn.languages && btn.showPrayers) {
     showPrayers({
       btn: btn,
       clearContainerDiv: true,
@@ -638,7 +641,8 @@ function showOrHideSlide(
     if (dataSameSlide)
       slide = Array.from(containerDiv.children).find(
         (child) => child.id === dataSameSlide
-      ) as HTMLDivElement; //!We could not perform a querySelector because the format of the id contains characters that are not allowed in querySelector.
+      ) as HTMLDivElement;
+    //!We could not perform a querySelector because the format of the id contains characters that are not allowed in querySelector.
     else slide = containerDiv.querySelector(".Slide");
 
     if (slide) slide.remove();
@@ -909,9 +913,9 @@ function addSettingsButton() {
 }
 
 /**
- * returns a Button for entering the "Editing Mode" and start editings the text 
+ * returns a Button for entering the "Editing Mode" and start editings the text
  */
-function getEditModeButton(): Button{
+function getEditModeButton(): Button {
   return new Button({
     btnID: "btnEditMode",
     label: {
@@ -953,10 +957,9 @@ function getEditModeButton(): Button{
         select.add(option);
       });
 
-      document
-        containerDiv
-        .insertAdjacentElement('beforebegin', select);
-      select.addEventListener('change', () =>
+      document;
+      containerDiv.insertAdjacentElement("beforebegin", select);
+      select.addEventListener("change", () =>
         startEditingMode({ select: select })
       );
     },
@@ -972,12 +975,21 @@ async function addDataGroupsToContainerChildren(
   if (!titleRow || !titleRow.classList.contains(titleClass)) return;
   //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
   let nextSibling = titleRow.nextElementSibling as HTMLElement;
-  while (nextSibling && !nextSibling.classList.contains(titleClass)) {
+  while (
+    nextSibling &&
+    !isTitlesContainer(nextSibling)
+    //  !nextSibling.classList.contains(titleClass)
+    /*     &&
+    (
+      (nextSibling.dataset.root && nextSibling.dataset.root === titleRow.dataset.root)
+      ||
+      (nextSibling.dataset.isPlaceHolderIn && nextSibling.dataset.isPlaceHolderIn === titleRow.dataset.root)
+    ) */
+  ) {
     nextSibling.dataset.group = titleRow.dataset.root;
     nextSibling = nextSibling.nextElementSibling as HTMLElement;
   }
 }
-
 
 /**
  * Returns an html button element showing a 'Go Back' button. When clicked, this button passes the goTo button or inline button to showchildButtonsOrPrayers(), as if we had clicked on the goTo button
@@ -1551,14 +1563,15 @@ function toggleAmplifyText(target: HTMLElement, myClass: string) {
     return;
   }
   let amplified: [[string, boolean]] = JSON.parse(localStorage.textAmplified);
-  let selector: string = 'p[lang="' + target.lang + '"]';
-  let sameLang = containerDiv.querySelectorAll(
-    selector
-  ) as NodeListOf<HTMLElement>;
-  sameLang.forEach((p) => {
-    p.classList.toggle(myClass);
-    Array.from(p.children).forEach((child) => child.classList.toggle(myClass));
-  });
+  
+
+    Array.from(containerDiv.querySelectorAll('P') as NodeListOf<HTMLParagraphElement>)
+      .filter(p => p.lang === target.lang)
+      .forEach(p => {
+        p.classList.toggle(myClass);
+        Array.from(p.children)
+          .forEach(child => child.classList.toggle(myClass))
+      });
   if (target.classList.contains(myClass)) {
     //it means that the class was added (not removed) when the user dbl clicked
     amplified.filter((el) => el[0] === target.lang.toUpperCase())[0][1] = true;
@@ -1664,16 +1677,14 @@ function showPrayers(args: {
     if (!args.prayersSequence) args.prayersSequence = args.btn.prayersSequence;
     if (!args.prayersSequence) {
       console.log(
-        "The prayersSequenceis missing, we cannot retrieve the tables"
+        "The prayersSequences is missing, we cannot retrieve the tables"
       );
       return;
     }
     args.prayersSequence.forEach((tableTitle) => {
       //If no string[][] was passed in the arguments, we will retrieve the table from its title (prayer)
-      if (!tableTitle) {
-        console.log("No tableTitle : ");
-        return;
-      }
+      if (!tableTitle) return console.log("No tableTitle : ");
+
       //If the date value is already set in the title of the table, we do not add it again
       if (tableTitle.includes("&D=")) date = "";
       else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
@@ -1706,17 +1717,17 @@ function showPrayers(args: {
   function processRow(row: string[], titleBase: string): HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
     if (row[0].startsWith(Prefix.placeHolder))
-      return processPlaceHolder(
-        row
-      ); //If the row is a placeholder, we retrieve the table refrenced in row[1]
+      return processPlaceHolder(row, titleBase) || undefined;
+    //If the row is a placeholder, we retrieve the table refrenced in row[1]
     else return [createElement(row, titleBase)]; //If it is not a placeholder, we created a div element with the text of the row
   }
 
-  function processPlaceHolder(row: string[]): HTMLDivElement[] {
-    if (!row[1]) {
-      console.log(row);
-      return;
-    }
+  function processPlaceHolder(
+    row: string[],
+    mainTitleBase: string
+  ): HTMLDivElement[] | void {
+    if (!row[1]) return console.log(row);
+
     //We retrieve the tables' array (which is a string[][][]) from the title of the table in row[1]
 
     //We retrieve the table itself
@@ -1726,20 +1737,25 @@ function showPrayers(args: {
       { equal: true }
     ) as string[][];
 
-    if (!tbl) {
-      console.log("Could't find the placeHolder table : row[2]  =", row[2]);
-      return;
-    }
+    if (!tbl)
+      return console.log(
+        "Could't find the placeHolder table : row[1]  =",
+        row[1]
+      );
 
     //We create html div elements representing each row (i.e., string[]) in the table
     let titleBase: string = splitTitle(tbl[0][0])[0];
-    return tbl.map((tblRow) => createElement(tblRow, titleBase));
+    return tbl
+      .map((tblRow) => createElement(tblRow, titleBase))
+      .forEach((tblRow) => {
+        if (tblRow) tblRow.dataset.isPlaceHolderIn = mainTitleBase;
+      }); //We give each html row created a data-is-placeholder-in attribute equal to the main table for which the placeHolder is inserted;
   }
 
   function createElement(row: string[], titleBase: string): HTMLDivElement {
     if (!row) return;
     if (row[0] === Prefix.placeHolder) {
-      processPlaceHolder(row);
+      processPlaceHolder(row, titleBase);
       return;
     }
     return createHtmlElementForPrayer({
@@ -1767,7 +1783,9 @@ function getMassPrefix(btnID: string): string {
  * @return {string[][][]} - the array in which a table which title starts with such prefix, should be found
  */
 function getTablesArrayFromTitlePrefix(title: string): string[][][] {
-  let array: [string, string, Function] = PrayersArraysKeys.find(entry =>  title.startsWith(entry[0]));
+  let array: [string, string, Function] = PrayersArraysKeys.find((entry) =>
+    title.startsWith(entry[0])
+  );
   if (array) return array[2]();
 }
 
@@ -1776,7 +1794,7 @@ function getTablesArrayFromTitlePrefix(title: string): string[][][] {
  * @param {string[][][]} array
  */
 function getArrayNameFromArray(array: string[][][]): string {
-  let keys = PrayersArraysKeys.find(key => key[2]() === array);
+  let keys = PrayersArraysKeys.find((key) => key[2]() === array);
   if (keys) return keys[1];
 }
 
@@ -1792,8 +1810,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
   let plusSign = String.fromCharCode(plusCharCode),
     minusSign = String.fromCharCode(plusCharCode + 1);
 
-  htmlRows
-    .forEach(row => {
+  htmlRows.forEach((row) => {
     if (row.children.length === 0) row.classList.add(hidden); //If the row has no children, it means that it is a row created as a name of a table or as a placeholder. We will hide the html element
     //Setting the number of columns and their width for each element having the 'Row' class for each Display Mode
     row.style.gridTemplateColumns = setGridColumnsOrRowsNumber(row);
@@ -1853,21 +1870,27 @@ async function setCSS(htmlRows: HTMLElement[]) {
     let paragraphs = Array.from(row.querySelectorAll("p"));
 
     if (row.classList.contains("Diacon")) replaceMusicalNoteSign(paragraphs);
+
     if (
-      row.dataset.root.startsWith(Prefix.praxis) ||
-      row.dataset.root.startsWith(Prefix.katholikon) ||
-      row.dataset.root.startsWith(Prefix.stPaul) ||
-      row.dataset.root.startsWith(Prefix.gospelDawn) ||
-      row.dataset.root.startsWith(Prefix.gospelVespers) ||
-      row.dataset.root.startsWith(Prefix.gospelNight) ||
-      row.dataset.root.startsWith(Prefix.gospelMass) ||
-      row.dataset.root.startsWith(Prefix.synaxarium) ||
-      row.dataset.root.startsWith(Prefix.propheciesDawn)
+      [
+        Prefix.praxis,
+        Prefix.katholikon,
+        Prefix.stPaul,
+        Prefix.gospelDawn,
+        Prefix.gospelVespers,
+        Prefix.gospelNight,
+        Prefix.gospelMass,
+        Prefix.synaxarium,
+        Prefix.propheciesDawn,
+      ].find((prefix) => row.dataset.root.startsWith(prefix))
     )
-      replaceQuotes(paragraphs);
+      replaceQuotes(paragraphs); //If the text is one of the "Readings", we replace the quotes signs
   });
 }
-
+/**
+ * Replaces the quotes ("") signs in the text by a span containing the relevant quotes sign acording the language
+ * @param {HTMLPargraphElement[]} paragraphs  - the html pragraphs containing the quotes signs that need to be replaced
+ */
 function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
   let splitted: string[];
   paragraphs
@@ -1883,11 +1906,13 @@ function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
           .replaceAll(String.fromCharCode(187), "</q>");
       } else if (paragraph.classList.contains("AR")) {
         splitted = paragraph.innerHTML.split('"');
-        splitted.forEach((part) => {
-          if (splitted.indexOf(part) % 2 !== 0)
-            splitted[splitted.indexOf(part)] = "<q>" + part + "</q>";
-        });
-        if (splitted.length > 0) paragraph.innerHTML = splitted.join("");
+        if (splitted.length < 2) return; //If splitted contains only one element, it means there are no quotes marks in the paragraph's text
+        splitted
+          .filter((part) => splitted.indexOf(part) % 2 !== 0) //This will give an array containing only parts 1, 3, 5, etc.
+          .forEach(
+            (part) => (splitted[splitted.indexOf(part)] = "<q>" + part + "</q>")
+          );
+        paragraph.innerHTML = splitted.join("");
       }
     });
 }
@@ -1920,9 +1945,10 @@ async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
   if (localStorage.displayMode === displayModes[1]) return; //We don't amplify the text if we are in the 'Presentation Mode'
 
   let langs = JSON.parse(localStorage.textAmplified) as [string, boolean][];
-  langs = langs.filter((lang) => lang[1] === true);
+  langs = langs.filter(lang => lang[1] === true);
 
-  htmlRows.forEach((row) => {
+  htmlRows
+    .forEach(row => {
     //looping the rows in the htmlRows []
     Array.from(row.children)
       //looping the children of each row (these children are supposedly paragraph elements)
@@ -1936,7 +1962,6 @@ async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
       });
   });
 }
-
 
 /**
  * Hides all the nextElementSiblings of a title html element (i.e., a div having the class 'Title' or 'SubsTitle') if the nextElementSibling has the same data-group attribute as the title html element
@@ -1964,21 +1989,21 @@ function collapseOrExpandText(params: {
   togglePlusAndMinusSignsForTitles(params.titleRow);
 
   //Hiding or showing the elements linked to the title (titleRow)
-  Array.from(
-    containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
-    .filter(div =>
-      div !== params.titleRow
-      &&
-        !div.classList.contains("Expandable")
-      &&
-      div.dataset.group
-      &&
-        div.dataset.group === params.titleRow.dataset.root)
-    .forEach(div => {
-      if (params.titleRow.dataset.isCollapsed && !div.classList.contains(hidden))
+  Array.from(containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
+    .filter(
+      (div) =>
+        div !== params.titleRow &&
+        !div.classList.contains("Expandable") &&
+        div.dataset.group &&
+        div.dataset.group === params.titleRow.dataset.root
+    )
+    .forEach((div) => {
+      if (
+        params.titleRow.dataset.isCollapsed &&
+        !div.classList.contains(hidden)
+      )
         div.classList.add(hidden);
-      else if (div.classList.contains(hidden))
-        div.classList.remove(hidden);
+      else if (div.classList.contains(hidden)) div.classList.remove(hidden);
     });
 }
 
@@ -2216,9 +2241,7 @@ async function showMultipleChoicePrayersButton(args: {
    */
   async function createInlineBtns() {
     let btns: Button[] = [];
-    btns =
-      args.filteredPrayers
-        .map(prayerTable => {
+    btns = args.filteredPrayers.map((prayerTable) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
       if (prayerTable.length === 0) return;
       let inlineBtn: Button = new Button({
@@ -2289,32 +2312,34 @@ async function showMultipleChoicePrayersButton(args: {
 }
 
 let testArray = [
-  [['OKTitle', 'exclusive'], ['You are']],
-  [['NoTitle Yes', 'admit'], ['You are In']],
-  [['OKTitle', 'so on'], ['You are']],
-  [['NoTitle', 'so on'], ['You are']],
-  [['OK We got Title', 'you fit'], ['You are out']],
-]
+  [["OKTitle", "exclusive"], ["You are"]],
+  [["NoTitle Yes", "admit"], ["You are In"]],
+  [["OKTitle", "so on"], ["You are"]],
+  [["NoTitle", "so on"], ["You are"]],
+  [["OK We got Title", "you fit"], ["You are out"]],
+];
 
-function getUniqueValuesFromArray(array: (string| string[][])[]): (string | string[][])[]{
-  let tempSet = new Set<string|string[][]>();
-  let tempArray:(string|string[][])[] = []
-  for (let i=0; i<array.length; i++){
+function getUniqueValuesFromArray(
+  array: (string | string[][])[]
+): (string | string[][])[] {
+  let tempSet = new Set<string | string[][]>();
+  let tempArray: (string | string[][])[] = [];
+  for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
       //This is a table not a string. We will add the title of the table to the set
       if (!tempSet.has(array[i][0][0])) {
         tempSet.add(array[i][0][0]);
         tempArray.push(array[i]);
-      };
+      }
     } else {
       if (!tempSet.has(array[i])) {
         tempSet.add(array[i]);
         tempArray.push(array[i]);
-      };
+      }
     }
   }
- 
-  return tempArray
+
+  return tempArray;
 }
 
 /**
@@ -2353,13 +2378,18 @@ function findTableInPrayersArray(
     table = prayersArray.find(
       (tbl) => tbl[0][0] && splitTitle(tbl[0][0])[0].includes(tableTitle)
     );
-    
-    if(!table)  return console.log(
-      "no table with the provided title was found : ", tableTitle,
-      " prayersArray =", PrayersArraysKeys.find(array => array[2]() === prayersArray)[1]|| undefined);
-  
-  return table
-  }
+
+  if (!table)
+    return console.log(
+      "no table with the provided title was found : ",
+      tableTitle,
+      " prayersArray =",
+      PrayersArraysKeys.find((array) => array[2]() === prayersArray)[1] ||
+        undefined
+    );
+
+  return table;
+}
 /**
  * Shows the inlineBtnsDiv
  * @param {string} status - a string that is added as a dataset (data-status) to indicated the context in which the inlineBtns div is displayed (settings pannel, optional prayers, etc.)
@@ -2792,11 +2822,10 @@ function showSettingsPanel() {
       tag: "button",
       role: "button",
       btnClass: "settingsBtn",
-      innerText:  editingBtn.label[defaultLanguage],
+      innerText: editingBtn.label[defaultLanguage],
       btnsContainer: btnsContainer,
       id: "editingMode" + localStorage.editingMode.toString(),
-      onClick:
-      {
+      onClick: {
         event: "click",
         fun: editingBtn.onClick,
       },
@@ -2963,8 +2992,7 @@ function insertPrayersAdjacentToExistingElement(args: {
   if (!args.tables) return;
   if (!args.container) args.container = containerDiv;
 
-  return args.tables
-    .map(table => {
+  return args.tables.map((table) => {
     if (!table || table.length === 0) return;
     return showPrayers({
       wordTable: table,
@@ -3026,29 +3054,17 @@ function playingWithInstalation() {
 }
 
 async function populatePrayersArrays() {
- 
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
-  if (PrayersArray.length === 0)
-    return console.log("PrayersArray is empty = ", PrayersArray);
+  if (PrayersArray.length < 1)  return console.log("PrayersArray is empty = ", PrayersArray);
 
   let array: [string, string, Function], BOH;
 
-  PrayersArray
-    .forEach(table => {
-    if (!table[0] || !table[0][0]) return;
-    //each element in PrayersArray represents a table in the Word document from which the text of the prayers was retrieved
-      array =
-        PrayersArraysKeys
-          .find(array => table[0][0].startsWith(array[0]));
+  PrayersArray.forEach(table => {
+    if (table.length < 1 || table[0].length < 1) return;
+    
+    array = PrayersArraysKeys.find(array => table[0][0].startsWith(array[0]));
 
-      if (array) array[2]().push(table);
-
-      if (table[0][0].startsWith(Prefix.bookOfHours)) {
-        BOH = 
-          Object.entries(bookOfHours)
-            .find(entry => table[0][0].includes(entry[0]));
-        if (BOH) BOH[1][0].push(table);
-      }   
+    if (array) array[2]().push(table);
   });
 }
 /**
@@ -3151,7 +3167,6 @@ function goToNextOrPreviousSlide(event?: KeyboardEvent, direction?: string) {
   else if (code === "ArrowUp" || code === "PageUp" || code === "ArrowLeft")
     showNextOrPreviousSildeInPresentationMode(false); //previous slide
 }
-
 
 /**
  * Returns a string representing the query selector for a div element having a data-root attribute equal to root
@@ -3707,7 +3722,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 36,
-        title: "استشهاد القديس فيلكس وريجولا أخته والقديس أكسيوبرانتيوس - 14 توت",
+        title:
+          "استشهاد القديس فيلكس وريجولا أخته والقديس أكسيوبرانتيوس - 14 توت",
         date: null,
         story: "",
         selected: false,
@@ -3879,7 +3895,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 55,
-        title: "استشهاد القديس يوليوس الأقفهصى كاتب سِيَر الشهداء ومن معه - 22 توت",
+        title:
+          "استشهاد القديس يوليوس الأقفهصى كاتب سِيَر الشهداء ومن معه - 22 توت",
         date: null,
         story: "",
         selected: false,
@@ -4006,7 +4023,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 69,
-        title: "تذكار المعجزة التي صنعها الرب مع القديس أثناسيوس الرسولي - 30 توت",
+        title:
+          "تذكار المعجزة التي صنعها الرب مع القديس أثناسيوس الرسولي - 30 توت",
         date: null,
         story: "",
         selected: false,
@@ -4475,7 +4493,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 120,
-        title: "ظهور رأس القديس مار مرقس الإنجيلي الرسول، وتكريس كنيسته - 30 بابه",
+        title:
+          "ظهور رأس القديس مار مرقس الإنجيلي الرسول، وتكريس كنيسته - 30 بابه",
         date: null,
         story: "",
         selected: false,
@@ -4766,7 +4785,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 152,
-        title: "اجتماع مجمع بروما بسبب عيد الغطاس المجيد والصوم الكبير - 10 هاتور",
+        title:
+          "اجتماع مجمع بروما بسبب عيد الغطاس المجيد والصوم الكبير - 10 هاتور",
         date: null,
         story: "",
         selected: false,
@@ -5022,7 +5042,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 180,
-        title: "تكريس بيعتي الأمير تادرس الشُطبى والأمير تادرس المشرقي - 20 هاتور",
+        title:
+          "تكريس بيعتي الأمير تادرس الشُطبى والأمير تادرس المشرقي - 20 هاتور",
         date: null,
         story: "",
         selected: false,
@@ -5078,7 +5099,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 186,
-        title: "نقل جسد القديس الأنبا يحنس كاما من ديره إلى دير السريان - 21 هاتور",
+        title:
+          "نقل جسد القديس الأنبا يحنس كاما من ديره إلى دير السريان - 21 هاتور",
         date: null,
         story: "",
         selected: false,
@@ -5298,7 +5320,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 210,
-        title: "تكريس كنيسة الشهيد أبى فام الجُندي الطحاوي ببلدة أبنوب - 1 كيهك",
+        title:
+          "تكريس كنيسة الشهيد أبى فام الجُندي الطحاوي ببلدة أبنوب - 1 كيهك",
         date: null,
         story: "",
         selected: false,
@@ -5562,7 +5585,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 240,
-        title: "تذكار تكريس كنيسة القديس إقلاديوس بناحية باقور أبو تيج - 11 كيهك",
+        title:
+          "تذكار تكريس كنيسة القديس إقلاديوس بناحية باقور أبو تيج - 11 كيهك",
         date: null,
         story: "",
         selected: false,
@@ -5681,7 +5705,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 253,
-        title: "استشهاد القديسين سمعان المنوفي وأباهور وأبا مينا الشيخ - 14 كيهك",
+        title:
+          "استشهاد القديسين سمعان المنوفي وأباهور وأبا مينا الشيخ - 14 كيهك",
         date: null,
         story: "",
         selected: false,
@@ -6215,7 +6240,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 311,
-        title: "نياحة القديس باسيليوس الكبير رئيس أساقفة قيصرية الكبادوك - 6 طوبه",
+        title:
+          "نياحة القديس باسيليوس الكبير رئيس أساقفة قيصرية الكبادوك - 6 طوبه",
         date: null,
         story: "",
         selected: false,
@@ -6785,7 +6811,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 373,
-        title: "تذكار اجتماع المجمع المسكوني الثاني بمدينة القسطنطينية - 1 امشير",
+        title:
+          "تذكار اجتماع المجمع المسكوني الثاني بمدينة القسطنطينية - 1 امشير",
         date: null,
         story: "",
         selected: false,
@@ -6803,7 +6830,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 375,
-        title: "تكريس كنيسة القديس بطرس خاتم الشهداء بمدينة الإسكندرية - 1 امشير",
+        title:
+          "تكريس كنيسة القديس بطرس خاتم الشهداء بمدينة الإسكندرية - 1 امشير",
         date: null,
         story: "",
         selected: false,
@@ -7313,7 +7341,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 430,
-        title: "استشهاد القديسين تيموثاوس بمدينة غزة ومتياس بمدينة قوص - 24 امشير",
+        title:
+          "استشهاد القديسين تيموثاوس بمدينة غزة ومتياس بمدينة قوص - 24 امشير",
         date: null,
         story: "",
         selected: false,
@@ -8108,7 +8137,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 516,
-        title: "تذكار نقل أعضاء القديس يعقوب الفارسي الشهير بالمقطَّع - 30 برمهات",
+        title:
+          "تذكار نقل أعضاء القديس يعقوب الفارسي الشهير بالمقطَّع - 30 برمهات",
         date: null,
         story: "",
         selected: false,
@@ -8487,7 +8517,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 557,
-        title: "نياحة القديس أبوللو تلميذ القديس الأنبا صموئيل المعترف - 18 برمودة",
+        title:
+          "نياحة القديس أبوللو تلميذ القديس الأنبا صموئيل المعترف - 18 برمودة",
         date: null,
         story: "",
         selected: false,
@@ -8628,7 +8659,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 572,
-        title: "استشهاد القديس تاوضروس العابد والمائة والعشرين شهيداً - 25 برمودة",
+        title:
+          "استشهاد القديس تاوضروس العابد والمائة والعشرين شهيداً - 25 برمودة",
         date: null,
         story: "",
         selected: false,
@@ -9117,7 +9149,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 625,
-        title: "استشهاد الجنود الستة الذين رافقوا الأمير إقلاديوس الشهيد - 20 بشنس",
+        title:
+          "استشهاد الجنود الستة الذين رافقوا الأمير إقلاديوس الشهيد - 20 بشنس",
         date: null,
         story: "",
         selected: false,
@@ -9804,7 +9837,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 700,
-        title: "افتتاح الكاتدرائية الجديدة بدير الأنبا رويس بالقاهرة - 18 بؤونة",
+        title:
+          "افتتاح الكاتدرائية الجديدة بدير الأنبا رويس بالقاهرة - 18 بؤونة",
         date: null,
         story: "",
         selected: false,
@@ -10362,7 +10396,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 761,
-        title: "وضع جسد الشهيد مار جرجس الروماني بكنيسته بمصر القديمة - 16 ابيب",
+        title:
+          "وضع جسد الشهيد مار جرجس الروماني بكنيسته بمصر القديمة - 16 ابيب",
         date: null,
         story: "",
         selected: false,
@@ -10783,7 +10818,8 @@ async function fetchSynaxariumArabic(month: number) {
       },
       {
         id: 807,
-        title: "بشارة الملاك للقديس يواقيم بميلاد القديسة العذراء مريم - 7 مسرى",
+        title:
+          "بشارة الملاك للقديس يواقيم بميلاد القديسة العذراء مريم - 7 مسرى",
         date: null,
         story: "",
         selected: false,
@@ -11259,11 +11295,8 @@ async function fetchSynaxariumArabic(month: number) {
     ];
 
     synaxariumIndex
-      .filter(obj =>
-        obj.day === day
-        &&
-        obj.month === month)
-      .forEach(obj => {
+      .filter((obj) => obj.day === day && obj.month === month)
+      .forEach((obj) => {
         let response = sendHttpRequest(
           apiRoot +
             "GetSynaxariumStory?id=" +
@@ -11417,12 +11450,12 @@ async function fetchSynaxariumFrench(months: string[]) {
 /**
  * Sends an XMLHttpRequest
  * @param  {string} apiURL - the API adress to which the request will be sent
- * @param responseDoc 
+ * @param responseDoc
  * @param {string} method - the request method ('GET', 'PUT', 'POST' etc., ) its default value is 'GET'
  */
 function sendHttpRequest(
   apiURL: string,
-  method:string = 'GET'
+  method: string = "GET"
 ): Document | void {
   let request = new XMLHttpRequest();
   request.open(method, apiURL);
@@ -11434,18 +11467,13 @@ function sendHttpRequest(
   }
   request.onload = async () => {
     if (request.status === 200) {
-      return new DOMParser().parseFromString(
-        request.response,
-        "text/html"
-      );
+      return new DOMParser().parseFromString(request.response, "text/html");
     } else {
       console.log("error status text = ", request.statusText);
       return request.statusText;
     }
   };
 }
-
-
 
 function ReduceArrays(args: {
   arrayName;
@@ -11484,22 +11512,29 @@ function shortenRowsTitles(tbl: string[][], row: string[], tblTitle: string) {
     row[0] = (Prefix.same + "&" + splitTitle(row[0])[1]).replace("&", "&C=");
 }
 
-function HelperPrepareArabicChant(){
-  //temporary function 
-  let text:string = prompt('Enter text');
+function HelperPrepareArabicChant() {
+  //temporary function
+  let text: string = prompt("Enter text");
   if (!text) return;
-  let splitted = text.split('_&_'), array:string[]=[];
-  for (let i = 0; i <splitted.length; i+=20){
-    preparePart(splitted.slice(i, i+20))
+  let splitted = text.split("_&_"),
+    array: string[] = [];
+  for (let i = 0; i < splitted.length; i += 20) {
+    preparePart(splitted.slice(i, i + 20));
   }
 
-  function preparePart(part:string[]){
-  if (part.length % 2 > 0) return console.log('splitted is not even');
-  for (let i = 0; i < (part.length/2); i++){
-    array.push(part[i]);
-    array.push(' ' + String.fromCharCode(beamedEighthNoteCode).repeat(2) + ' '+part[i + (part.length / 2)] + '_&&_');
+  function preparePart(part: string[]) {
+    if (part.length % 2 > 0) return console.log("splitted is not even");
+    for (let i = 0; i < part.length / 2; i++) {
+      array.push(part[i]);
+      array.push(
+        " " +
+          String.fromCharCode(beamedEighthNoteCode).repeat(2) +
+          " " +
+          part[i + part.length / 2] +
+          "_&&_"
+      );
     }
-  };
+  }
   text = array.toString();
   console.log(text);
   localStorage.temp = text;

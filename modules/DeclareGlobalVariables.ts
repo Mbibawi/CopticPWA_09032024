@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.2.8 (Fixes to the Dawn Doxlogies and Cymbal Verses)";
+  "v5.3.0 (Added Setar, 1st Midnight and 2nd Midnight services to the Book of Hours, and changes/fixes to the side bar titles)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -223,48 +223,36 @@ const ReadingsIntrosAndEnds = {
 };
 
 const bookOfHours: {
-  FirstHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
-  ThirdHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
-  SixthHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
-  NinethHour: [string[][][], number[], { AR: string; FR: string; EN: string }];
-  EleventhHour: [
-    string[][][],
-    number[],
-    { AR: string; FR: string; EN: string }
-  ];
-  TwelvethHour: [
-    string[][][],
-    number[],
-    { AR: string; FR: string; EN: string }
-  ];
-  MidNightHour: [
-    string[][][],
-    number[],
-    { AR: string; FR: string; EN: string }
-  ];
+  //The 1st element of each hour is a sequence representing the number of psalms in their order (eg.: [10, 11, 12, etc.] which means, Psalm 10, Psalm 11, Psalm 12, etc.). The 2nd element is the label of the button that will be created for this hour
+  FirstHour: [number[], typeBtnLabel];
+  ThirdHour: [number[], typeBtnLabel];
+  SixthHour: [number[], typeBtnLabel];
+  NinethHour: [number[], typeBtnLabel];
+  EleventhHour: [number[],typeBtnLabel];
+  TwelvethHour: [number[],typeBtnLabel];
+  SetarHour: [number[], typeBtnLabel];
+  MidNight1Hour: [number[], typeBtnLabel];
+  MidNight2Hour:  [number[], typeBtnLabel];
 } = {
   //The first element is the array that will be populated with the text tables. The second element is the sequence of the hour's psalms
 
   FirstHour: [
-    [],
-    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 142],
+    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26,62, 66, 69, 112, 142],
     {
-      AR: "باكر",
+      AR: "بَاكِرْ",
       FR: "Aube",
       EN: "Dawn",
     },
   ],
   ThirdHour: [
-    [],
     [19, 22, 23, 25, 28, 29, 33, 40, 42, 44, 45, 46],
     {
-      AR: "الساعة الثالثة",
+      AR: "السَاعَةِ الثَالِثَةِ",
       FR: "3ème heure",
       EN: "Third Hour",
     },
   ],
   SixthHour: [
-    [],
     [53, 56, 60, 62, 66, 69, 83, 84, 85, 86, 90, 92],
     {
       AR: "الساعة السادسة",
@@ -273,16 +261,14 @@ const bookOfHours: {
     },
   ],
   NinethHour: [
-    [],
     [95, 96, 97, 98, 99, 100, 109, 111, 112, 114, 115],
     {
-      AR: "الساعة التاسعة",
+      AR: "السَاعَةِ التَاسِعَةِ",
       FR: "9ème heure",
       EN: "9th Hour",
     },
   ],
   EleventhHour: [
-    [],
     [116, 117, 119, 120, 121, 122, 124, 25, 26, 27, 28],
     {
       AR: "الساعة الحادية عشر (الغروب)",
@@ -291,21 +277,35 @@ const bookOfHours: {
     },
   ],
   TwelvethHour: [
-    [],
     [129, 130, 131, 132, 136, 137, 140, 141, 145, 146, 147],
     {
-      AR: "الساعة الثانية عشر (النوم)",
+      AR: "السَاعَةِ الثانية عَشْرْ (النوم)",
       FR: "12ème heure",
       EN: "12th Hour",
     },
   ],
-  MidNightHour: [
-    [],
+  SetarHour: [
+    [4, 6, 12, 15, 24, 26, 66, 69, 22, 25, 29, 56, 85, 90, 98, 109, 114, 115, 120, 128, 129, 130, 131,132,133,136,140,147,118],
+    {
+      AR: "صَلاةِ السِتَارْ",
+      FR: "Setar",
+      EN: "Setar",
+    },
+  ],
+  MidNight1Hour: [
     [14, 17, 20, 29, 72, 74, 101, 102, 118],
     {
-      AR: "صلاة نصف الليل",
-      FR: "Minuit",
-      EN: "Mid Night",
+      AR: "الخِدْمَة الأولى مِن صَلاةِ نِصْفِ الليل",
+      FR: "Miniuit 1er service",
+      EN: "Mid Night 1st Service",
+    },
+  ],
+  MidNight2Hour: [
+    [119, 120, 121, 122, 124, 25, 26, 27, 28],
+    {
+      AR: "الخِدْمَة الثانِيَة مِنْ صَلاةِ نِصْفِ الليل",
+      FR: "Miniuit 2ème service",
+      EN: "Mid Night 2nd Service",
     },
   ],
 };
@@ -485,7 +485,7 @@ const PrayersArrays = [
   PsalmodyPrayersArray,
 ]; //All these arrays are populated by elements from PrayersArray
 
-const lordGreatFeasts = [
+const GreatLordFeasts = [
     copticFeasts.Annonciation,
     copticFeasts.Nativity,
     copticFeasts.Baptism,
@@ -494,14 +494,14 @@ const lordGreatFeasts = [
     copticFeasts.Ascension,
     copticFeasts.Pentecoste,
   ],
-  lordMinorFeasts = [
+  MinorLordFeasts = [
     copticFeasts.Epiphany,
     copticFeasts.Circumcision,
     copticFeasts.CanaWedding,
     copticFeasts.EntryToEgypt,
     copticFeasts.EntryToTemple,
   ],
-  lordFeasts = [...lordGreatFeasts, ...lordMinorFeasts],
+  lordFeasts = [...GreatLordFeasts, ...MinorLordFeasts],
   HolyWeek = [
     copticFeasts.HolyMonday,
     copticFeasts.HolyTuseday,

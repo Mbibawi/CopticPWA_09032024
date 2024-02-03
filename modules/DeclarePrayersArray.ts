@@ -1277,7 +1277,7 @@ PrayersArray= [[
   "Ⲡ̀ϭⲟⲓⲥ Ⲫ̀ⲛⲟⲩϯ Ⲡⲓϩⲑⲓⲃ ⲛ̀ⲧⲉ Ⲫ̀ⲛⲟⲩϯ: Ⲡⲓϣⲑⲣⲓ ⲛ̀ⲧⲉ Ⲫ̀ⲓⲱⲧ: ⲫⲑⲉⲧⲱ̀ⲗⲓ ⲙ̀ⲫ̀ⲛⲟⲃⲓ ⲛ̀ⲧⲉ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛⲁⲓ ⲛⲁⲛ. Ⲫⲑⲉⲧⲱ̀ⲗⲓ ⲙ̀ⲫ̀ⲛⲟⲃⲓ ⲛ̀ⲧⲉ ⲡⲓⲕⲟⲥⲙⲟⲥ ϣⲉⲡ ⲛⲉⲛϯϩⲟ ⲉ̀ⲣⲟⲕ. Ⲫⲑⲉⲧϩⲉⲙⲥⲓ ⲥⲁⲟⲩⲓ̀ⲛⲁⲙ ⲙ̀Ⲡⲉϥⲓⲱⲧ ⲛⲁⲓ ⲛⲁⲛ.", 
   "Seigneur Dieu, Agneau de Dieu, le Fils du Père, Toi qui enlève le péché du monde, aie pitié de nous. Toi qui enlève le péché du monde, reçois notre prière. Toi qui es assis à la droite du Père, aie pitié de nous. Toi seul es Saint;", 
   "", 
-  "أَيُّهَااَلرَبّ الإله، حمل اللّه، ابن الآب، رافع خطية العالم، ارْحَمْنَا. يا حامل خطية العالم، اقْبَلْ طلباتنا إليك. أيُّهَا الجالس عن يمين أبيه، ارْحَمْنَا.", 
+  "أَيُّهَاالرَبُّ الإله، حمل اللّه، ابن الآب، رافع خطية العالم، ارْحَمْنَا. يا حامل خطية العالم، اقْبَلْ طلباتنا إليك. أيُّهَا الجالس عن يمين أبيه، ارْحَمْنَا.", 
   ],
   [
   Prefix.same+"&C=Assembly", 
@@ -5241,7 +5241,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.psalmResponse+"&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  Prefix.psalmResponse+"&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "Réponse du Psaume Fête du Nayrouz", 
   "", 
@@ -5393,7 +5393,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.gospelResponse+"&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  Prefix.gospelResponse+"&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "Réponse de l’Évangile de la Fête de Nayrouz", 
   "", 
@@ -6027,11 +6027,7 @@ PrayersArray= [[
   "Rends-nous tous digne, Ô Seigneur, d’échanger un saint baiser, afin que, sans encourir la condamnation, nous recevions de Tes dons immortels et célestes, par Jésus-Christ notre Seigneur.", 
   "أووه آريتين إن إم إبشاتيرين بين نيب إيثرين إير أسبازيستي إنين إيريؤخين أوفي إثؤواب. إى إيجين تين تشي خين أو ميت أت هي تتين إي إبهاب إيفول خين تيك ذوريا إن أثُمَّو أووه إن إيبورانيون خين بي إخرستوس إيسوس بين شويس.", 
   "واجعَلنا مُسْتَحِقِّينْ كلنا يا سَيِّدنْا أنْ نقبّلَ بعضنا بعضاً بقبلةٍ مقدسة. لكي نَنَالَ بِغَيْر وقوع في دينونةٍ من مَوهبتِكَ غَيْرُ المائتة السَمَائِيَّة. بالمَسيح يَسُوعْ رَبنا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.massCommon+"EndOfReconciliation&D=$copticFeasts.AnyDay", 
-  ],
+  ]
   ],
   [
   [
@@ -6076,11 +6072,7 @@ PrayersArray= [[
   "Afin que, sans encourir la condamnation, nous recevions de Tes dons immortels et célestes par Jésus Christ notre Seigneur", 
   "", 
   "لكي ننال بِغَيْر وقوعنا في دينونة، من موهبتك غَيْرُ المائتة السمائية، المَسِيحْ يَسُوعْ رَبّنا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.massCommon+"EndOfReconciliation&D=$copticFeasts.AnyDay", 
-  ],
+  ]
   ],
   [
   [
@@ -6366,6 +6358,10 @@ PrayersArray= [[
   "إيتاف ناف إي بي أوأويني إتكي خين بيف هو آفئيرهوتي أووه آف هي خاراتو إن نيف إتشالفج.", 
   "لما رأي النور الكائن في وجه خاف وسقط تحت رجليه.", 
   ],
+  [
+    Prefix.placeHolder, 
+    Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+    ],
   ],
   [
   [
@@ -6389,6 +6385,10 @@ PrayersArray= [[
   "", 
   "وصرخت إليها بصوت التهليل قائلاً: \"السلام لك يا ممتلئة نعمة، الرب معك\".", 
   ],
+  [
+    Prefix.placeHolder, 
+    Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+    ],
   ],
   [
   [
@@ -6412,10 +6412,88 @@ PrayersArray= [[
   "", 
   "النور أشرق من مَرِيَمْ وأليصابات ولدت السابق.", 
   ],
+  [
+    Prefix.placeHolder, 
+    Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+    ],
   ],
   [
+    [
+      Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.Nativity&C=Title", 
+    "", 
+    "Aspasmos Adam pour la Nativité", 
+    "", 
+    "اسبسمس آدام لعيد الميلاد", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Je aumici nan n~oua~lou: au] nan n~ous/ri v/e~t e~retefa~r,/ ,/ hijen tefnahbi. V] v/e~tjor: n~e~xouciact/c: ouoh pia~ggeloc n~te pinis] n~co[ni.", 
+    "Car un enfant nous est né, un fils nous a été donné, l’insigne du pouvoir est sur son épaule. Dieu fort, le toutpuissant et l’ange du conseil merveilleux.", 
+    "جي أف ميسي نان إن أو آلو أقتي نان إن اوشيري فيئيت إيري تيف أرشي كي هيجين تيف ناهفي إفنوتي في إتجور إن إكسوسياستيس أووه بي أنجيلوس إنتي بي نيشتي إن سوتشني", 
+    "إنَّهُ وُلِدَ لَنَا وَلَدٌ، أُعْطينَا إبْنَاً. الذي رِئَاسَتِهِ على مِنْكَبَيّهِ، الإِلَهِ القَوي المُتَسَلِطْ، ومَلاكُ المَشُورَة العُظْمَى.", 
+    ],
+    [
+      Prefix.placeHolder, 
+      Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+      ],
+    [
+    Prefix.same+"&C=Title", 
+    "", 
+    "2ème Aspasmos Adam pour la Nativité", 
+    "", 
+    "اسبسمس آدام ثاني لعيد الميلاد", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "Pihi/b m~m/i n~te V] V~iwt: a~rio~unai neman: qen tekmetouro. Rwf gar m~Pekiw: t etoi m~meyre qarok: je n~yok pe Pas/ri a~nok aij~vok m~voo~u.\n", 
+    "Ô vrai agneau de Dieu le Père, aie pitié de nous dans Ton Royaume. Car la bouche de Ton Père te rend témoignage : « Tu es Mon Fils et aujourd’hui Je T’ai engendré. »", 
+    "", 
+    "أيُّها الَحمَلِ الَحقيقي، الذي لله الآب، إصنع مَعْنَا رَحْمَةً، في مَلَكُوتَكْ. لِإنَّ فَمِ أَبيكَ يَشْهَدْ لَكَ أَنَّكَ أَنْتَ هُوَ إبني وأنا اليَوْمَ وَلَدْتَكْ.", 
+    ],
+    [
+      Prefix.placeHolder, 
+      Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+      ],
+    [
+    Prefix.same+"&C=Title", 
+    "", 
+    "3ème Aspasmos Adam pour la Nativité", 
+    "", 
+    "اسبسمس آدام ثالث لعيد الميلاد", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "<ere t~ve m~beri: e~tafsai nan e~bol n~q/tc: n~je pir/ n~te ]dikeo~cun/: Po#c# n~te ]k~t/cic t/rc.", 
+    "Salut au nouveau ciel par qui rayonna le soleil de piété, le Seigneur de toutes les contrées.\n", 
+    "", 
+    "السَّلامُ لِلْسَمَاءِ الَجديدَة، التي أشْرَقَ لَنَا مِنْها شَمْسُ البِرِّ، رَبُّ جَمِيعِ البَرِيَة.", 
+    ],
+    [
+      Prefix.placeHolder, 
+      Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+      ],
+    [
+    Prefix.same+"&C=Title", 
+    "", 
+    "4ème Aspasmos Adam pour la Nativité", 
+    "", 
+    "اسبسمس آدام رابع لعيد الميلاد", 
+    ],
+    [
+    Prefix.same+"&C=Assembly", 
+    "<ere B/yleem: t~polic n~niprov/t/c: y/e~taumec P,#c# n~q/tc: pimah c~nau n~Adam.", 
+    "Salut à toi, Bethléem la ville des prophètes, où est né le Christ, le second Adam.", 
+    "", 
+    "السَّلامُ لِبَيَتِ لَحمِ مَدِينَةُ الأنبياء التي وُلِدَ فِيها المَسِيحُ، آدَمُ الثاني.", 
+    ],
+    [
+      Prefix.placeHolder, 
+      Prefix.massCommon+"SpasmosAdamLongEnd&D=$copticFeasts.AnyDay", 
+      ],
+    ],
   [
-  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  [
+  Prefix.massCommon+"SpasmosAdamLong&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "Spasmos Adam Fête du Nayrouz", 
   "", 
@@ -6568,14 +6646,14 @@ PrayersArray= [[
   "", 
   "Seigneur, Dieu des puissances", 
   "", 
-  "أَيُّهَااَلرَبّ إله القوات", 
+  "أَيُّهَاالرَبُّ إله القوات", 
   ],
   [
   Prefix.same+"&C=Assembly", 
   "Ⲡⲟ̅ⲥ̅ Ⲫϯ ⲛ̀ⲧⲉ ⲛⲓϫⲟⲙ : ⲕⲟⲧⲕ ⲟⲩⲟϩ ϫⲟⲩϣⲧ ⲉ̀ⲃⲟⲗ ϧⲉⲛ ⲧ̀ⲫⲉ, ⲁ̀ⲛⲁⲩ ⲟⲩⲟϩ ϫⲉⲙⲡ̀ϣⲓⲛⲓ ⲛ̀ⲧⲁⲓⲃⲱ ⲛ̀ⲁ̀ⲗⲟⲗⲓ : ⲥⲉⲃⲧⲱⲧⲥ ⲟⲩⲟϩ ⲥⲉⲙⲛⲏⲧⲥ ⲑⲁⲓ ⲉ̀ⲧⲁⲥϭⲟⲥ ⲛ̀ϫⲉ ⲧⲉⲕⲟⲩⲓ̀ⲛⲁⲙ.", 
   "Seigneur, Dieu des puissances, viens et observe du haut des cieux, regarde et prends soin de cette vigne que Ta main droite a plantée, émonde-la et fortifie là.", 
   "إبشويس إفنوتي إنتي نيجوم كوتك أووه جوشت إيفول خين إتفي آناف أووه جيم إبشيني إنتاي قو إن ألولي سيقطوطس أووه سيمنتيس ثاي إيطاس إتشوس إنجي تيك أوى نام.", 
-  "أَيُّهَااَلرَبّ إله القوات،ارجع واطلع من السَّمَاء، وانظر وتعهد هَذِهِ الكرمة، أصلحها وثبتها. هَذِهِ التي غرستها يمينك.", 
+  "أَيُّهَاالرَبُّ إله القوات،ارجع واطلع من السَّمَاء، وانظر وتعهد هَذِهِ الكرمة، أصلحها وثبتها. هَذِهِ التي غرستها يمينك.", 
   ],
   [
   Prefix.same+"&C=Assembly", 
@@ -7382,10 +7460,6 @@ PrayersArray= [[
   "Rends-nous tous digne, Ô Seigneur, d’échanger un saint baiser, afin que, sans encourir la condamnation, nous recevions de Tes dons immortels et célestes, par Jésus-Christ notre Seigneur.", 
   "أووه آريتين إن إم إبشاتيرين بين نيب إيثرين إير أسبازيستي إنين إيريؤخين أوفي إثؤواب. إى إيجين تين تشي خين أو ميت أت هي تتين إي إبهاب إيفول خين تيك ذوريا إن أثُمَّو أووه إن إيبورانيون، خين في إيتي فوك إن إهموتي نيم إب تيماتي نيم بيكيوت إن آغاثوس، نيم تي جينيرهوف إنتي بيك ــــــ إيثو. إنثوك غار بي بيريف ساهني، أووه إفريفتي إنني آغاثون تيرو.", 
   "واجعَلنا مُسْتَحِقِّينْ كلنا يا سَيِّدنْا أنْ نقبّلَ بعضنا بعضاً بقبلةٍ طَاهِرَة. لنتناول بِغَيْر انطراح في الحكم من مَوهبتِكَ غَيْرُ المائتة السَمَائِيَّة. بنعمتك ومسرة أبِيكَ الصَالِحْ وفعل رُوحِكَ القُدُّوسْ. لأنََكَ أنْتَ الرازق، ومعطي جَمِيعْ الخَيّْرَاتْ.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.massCommon+"EndOfReconciliation&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -8435,11 +8509,7 @@ PrayersArray= [[
   "", 
   "", 
   "(وأَنْت الذي نرسل لَكَ إلي فوق المَجْدُ والكَرَامَةْ والعزة و السُجُودْ ، أيُّهَا الآب والابن والْرُوحْ القُدُسْ. الآنْ وكُلَّ أوانْ وإلي دَهْرِ الدِهُورْ. آمْينْ", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.massCommon+"EndOfReconciliation&D=$copticFeasts.AnyDay", 
-  ],
+  ]
   ],
   [
   [
@@ -9006,7 +9076,7 @@ PrayersArray= [[
   "", 
   "Oraison de fraction pour le grand carême (Ô maitre Seigneur, Dieu le Pantocrator qui a envoyé Son Fils unique au monde.)", 
   "", 
-  " قسمة للآب تقال في الصوم الكبير (ُّاَلسيد الرَبّ الإله ضَابِطْ الكُلّ الذي أرْسَلَ ابنه الوَحِيد)", 
+  " قسمة للآب تقال في الصوم الكبير (اَلسيد الرَبّ الإله ضَابِطْ الكُلّ الذي أرْسَلَ ابنه الوَحِيد)", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -9085,14 +9155,14 @@ PrayersArray= [[
   "", 
   "Oraison de fraction pour le dimache des rameaux (Ô Seigneur, notre Dieu, Ton nom est admirable par toute la terre)", 
   "", 
-  " قسمة للآب تقال في أحد الشعانين وسنوي (ُّاَلرَبّ رَبّنا، مِثْلَ عجب صار اسمك)", 
+  " قسمة للآب تقال في أحد الشعانين وسنوي (الرَبّ رَبّنا، مِثْلَ عجب صار اسمك)", 
   ],
   [
   Prefix.same+"&C=Priest", 
   "Ⲡ̀ϭⲟⲓⲥ Ⲡⲉⲛϭⲟⲓⲥ ⲙ̀ⲫ̀ⲣⲑϯ ⲛ̀ⲟⲩϣ̀ⲫⲑⲣⲓ ⲁϥϣⲱⲡⲓ ⲛ̀ϫⲉ ⲡⲉⲕⲣⲁⲛ ϩⲓϫⲉⲛ ⲡⲓⲕⲁϩⲓ ⲧⲑⲣϥ. Ϫⲉ ⲁⲥϭⲓⲥⲓ ⲛ̀ϫⲉ ̀ⲙ̀ⲉⲧⲛⲓϣϯ ⲛ̀ⲧⲉ ⲧⲉⲕⲙⲉⲧⲥⲁⲓⲉ ⲥⲁⲡ̀ϣⲱⲓ ⲛ̀ⲛⲓⲫⲑⲟⲩⲓ̀.", 
   "Ô Seigneur, notre Dieu, Ton nom est admirable par toute la terre, car Ta gracieuse gloire s’élève plus haute que les cieux.", 
   "", 
-  "أَيُّهَااَلرَبّ رَبّنا، مِثْلَ عجب صار اسمك على الأرْضْ كلها. لِأنَّهُ قَدّْ ارتفع عِظَم بهائك فوق السَّمَواتْ.", 
+  "أَيُّهَاالرَبُّ رَبّنا، مِثْلَ عجب صار اسمك على الأرْضْ كلها. لِأنَّهُ قَدّْ ارتفع عِظَم بهائك فوق السَّمَواتْ.", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -9301,7 +9371,7 @@ PrayersArray= [[
   "", 
   "Prière au Fils pour la fête de la Résurrection (Ô Christ notre Dieu, Grand Prêtre des grâces à venir)", 
   "", 
-  " قسمة للابن في عيد القيامة (ُّاَلمَسِيحْ إلَهْنَا رئيس كهنة الخَيّْرَاتْ العتيدة)", 
+  " قسمة للابن في عيد القيامة (اَلمَسِيحْ إلَهْنَا رئيس كهنة الخَيّْرَاتْ العتيدة)", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -9359,7 +9429,7 @@ PrayersArray= [[
   "", 
   "Oraison de fraction pour la Résurrection et les 50 jours pascaux (Ô Maitre Seigneur, Dieu Le Pantocrator, Le Père de notre Seigneur)", 
   "", 
-  " قسمة للآب تقال في عيد القيامة والخماسين (ُّاَلسيد الرَبّ الإله الذي من قبل صليبه نزل إلى الجحيم)", 
+  " قسمة للآب تقال في عيد القيامة والخماسين (اَلسيد الرَبّ الإله الذي من قبل صليبه نزل إلى الجحيم)", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -9840,7 +9910,7 @@ PrayersArray= [[
   "", 
   "Oraison de fraction pour la fête de la Nativité (Ô Maître Seigneur, notre Dieu le créateur l’invisible)", 
   "", 
-  " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (ُّاَلسيد الرَبّ إلَهْنَا الخالق غَيْرُ المرئي)", 
+  " قسمة تقال في صوم الميلاد وعيد الميلاد والسنوي (اَلسيد الرَبّ إلَهْنَا الخالق غَيْرُ المرئي)", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -10095,7 +10165,7 @@ PrayersArray= [[
   "", 
   "Oraison de fraction pour le Fils (Ô Fils unique, Dieu Le Logos qui nous a aimé)", 
   "", 
-  "قسمة سنوي للابن (ُّاَلابْنِ الوَحِيد الإله الكلمة الذي أحبنا)", 
+  "قسمة سنوي للابن (اَلابْنِ الوَحِيد الإله الكلمة الذي أحبنا)", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -11260,7 +11330,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.cymbalVerses+"&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  Prefix.cymbalVerses+"&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "Quatrins du carillon pour le Nayrouz", 
   "", 
@@ -11381,10 +11451,6 @@ PrayersArray= [[
   "خين بى ماه إشمين إن إيهواوو♫ إنتى بيف ﭼين ميسى♫ إمباراذوكسون♫ أفشوب اروف امبيسيﭭى♫ كاطا بيت إس شى إمى نوموس .", 
   "في اليوم الثامن♫ لميلاده المجيد♫ قبل إليه الختان♫ كعاده الناموس.", 
   ],
-  [
-  Prefix.placeHolder, 
-  Prefix.cymbalVerses+"LordFeastsEnd&D=$copticFeasts.AnyDay", 
-  ],
   ],
   [
   [
@@ -11448,10 +11514,6 @@ PrayersArray= [[
   "Salut à Jean le grand précurseur♫ salut au prêtre♫ parent d’Emmanuel.", 
   "", 
   "السَّلامُ ليوحنا♫ السابق العظيم♫ السَّلامُ للكاهن♫ نسيب عِمَّانُوئِيلْ.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.cymbalVerses+"LordFeastsEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -11614,15 +11676,17 @@ PrayersArray= [[
   "", 
   "وأيضا وُضع في القبر♫ حسب الأخبار النبوية♫ وفي اليوم الثَالِثْ المَسِيحْ قام من الأموات.", 
   ],
-  ],
   [
-  [
-  Prefix.cymbalVerses+"StMaykel&D=$Seasons.PentecostalDays&C=Diacon", 
-  "Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ: ⲡⲓⲛⲓϣϯ ⲛ̀ⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲡⲓⲭ̀ⲣⲓⲙⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ: ⲛ̀ⲧⲉ ϯⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ.", 
-  "Salut à Michel le chef des archanges celui qui a annoncé le salut obtenu grâce à la Résurrection.", 
-  "", 
-  "السَّلامُ لميخائيل♫ رئيس المَلائِكَةْ العظيم♫ المنادي بالخلاص الذي للقيامة.", 
-  ],
+    Prefix.placeHolder, 
+    Prefix.cymbalVerses+"StMary&D=$copticFeasts.AnyDay", 
+    ],
+    [
+      Prefix.same+"&C=Diacon", 
+      "Ⲭⲉⲣⲉ Ⲙⲓⲭⲁⲏⲗ: ⲡⲓⲛⲓϣϯ ⲛ̀ⲁⲣⲭⲓⲁⲅⲅⲉⲗⲟⲥ: ⲡⲓⲭ̀ⲣⲓⲙⲁⲛ ⲛ̀ⲟⲩϫⲁⲓ: ⲛ̀ⲧⲉ ϯⲁ̀ⲛⲁⲥⲧⲁⲥⲓⲥ.", 
+      "Salut à Michel le chef des archanges celui qui a annoncé le salut obtenu grâce à la Résurrection.", 
+      "", 
+      "السَّلامُ لميخائيل♫ رئيس المَلائِكَةْ العظيم♫ المنادي بالخلاص الذي للقيامة.", 
+      ],
   ],
   [
   [
@@ -11752,14 +11816,6 @@ PrayersArray= [[
   ],
   [
   Prefix.placeHolder, 
-  Prefix.cymbalVerses+"StMary&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.cymbalVerses+"StMaykel&D=$Seasons.PentecostalDays", 
-  ],
-  [
-  Prefix.placeHolder, 
   Prefix.cymbalVerses+"SheroubimSerafim&D=$copticFeasts.AnyDay", 
   ],
   [
@@ -11793,10 +11849,6 @@ PrayersArray= [[
   [
   Prefix.placeHolder, 
   Prefix.cymbalVerses+"StMina&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.cymbalVerses+"LordFeastsEnd&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -11841,7 +11893,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.doxologies+"&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  Prefix.doxologies+"&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "", 
   "", 
@@ -15295,14 +15347,14 @@ PrayersArray= [[
   "", 
   "Psaume 8", 
   "", 
-  "المَزْمُورْ الثامن \n(ُّاَلرَبّ رَبّنا، ما أعجب اسمك)", 
+  "المَزْمُورْ الثامن \n(أَيُّهَاالرَبُّ رَبّنا، ما أعجب اسمك)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
   "", 
   "Ô Seigneur, notre Dieu, qu'il est grand ton nom par toute la terre ! Jusqu'aux cieux, ta splendeur est chantée par la bouche des enfants, des tout-petits : rempart que tu opposes à l'adversaire, où l'ennemi se brise en sa révolte.", 
   "", 
-  "أَيُّهَااَلرَبّ رَبّنا، ما أعجب اسمك في الأرْضْ كلها! لِأنَّهُ قَدّْ ارتفع عظم جلالك فوق السَّمَواتْ. من أفواه الأطفال والرضعان هيأت سبحا، من أجل أعدائك، لتسكت عدوا ومنتقما.", 
+  "أَيُّهَاالرَبُّ رَبّنا، ما أعجب اسمك في الأرْضْ كلها! لِأنَّهُ قَدّْ ارتفع عظم جلالك فوق السَّمَواتْ. من أفواه الأطفال والرضعان هيأت سبحا، من أجل أعدائك، لتسكت عدوا ومنتقما.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -15323,7 +15375,7 @@ PrayersArray= [[
   "", 
   "Ô Seigneur, notre Dieu, qu'il est grand ton nom par toute la terre !", 
   "", 
-  "أَيُّهَااَلرَبّ رَبّنا. ما أعجب اسمك في الأرْضْ كلها.", 
+  "أَيُّهَاالرَبُّ رَبّنا. ما أعجب اسمك في الأرْضْ كلها.", 
   ],
   [
   Prefix.placeHolder, 
@@ -15960,7 +16012,7 @@ PrayersArray= [[
   "", 
   "Ô Seigneur Dieu des puissances, qui es depuis toujours et demeure éternellement. Tu as créé le soleil, pour éclairer le jour et la nuit pour le repos de toute chair. Nous Te rendons grâce, Roi de tout temps, car Tu nous as fait passer cette nuit en paix et nous as fait parvenir au début de ce jour.", 
   "", 
-  "أَيُّهَااَلرَبّ إله القوات، الكائن قبل الدهور والدائم إلى الأبد. الذي خلق الشمس لضياء النهار، والليل راحة لكل البشر، نشكرك يا ملك الدهور لأنَّكَ أجزتنا هَذا الليل بسلام و أتيت بنا إلى مبدأ النهار.", 
+  "أَيُّهَاالرَبُّ إله القوات، الكائن قبل الدهور والدائم إلى الأبد. الذي خلق الشمس لضياء النهار، والليل راحة لكل البشر، نشكرك يا ملك الدهور لأنَّكَ أجزتنا هَذا الليل بسلام و أتيت بنا إلى مبدأ النهار.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -16725,76 +16777,76 @@ PrayersArray= [[
   ],
   ],
   [
-  [
-  Prefix.bookOfHours+"ThirdHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
-  "", 
-  "Litanies de la 3ème heure", 
-  "", 
-  "قَطَعْ السَاعَةْ الثالثة", 
-  ],
-  [
-  Prefix.same+"&C=Priest", 
-  "", 
-  "1) Ton Esprit-Saint Seigneur, que tu a répandu sur tes disciples saints et apôtres vénérables à la troisième heure, ne nous l’enlève pas ô Très Bon mais renouvelle-le en nous. Ô Dieu crée en moi un cœur pur; renouvelle en moi un esprit droit. Ne me rejette pas loin de Ta Face et ne me retire pas Ton Esprit-Saint .", 
-  "", 
-  "رُوحِكَ القُدُّوسْ يا رَبّ الذي أرسلته على تلاميذك القِدِّيسِينْ ورُسُلَكَ المكرمين في السَاعَةْ الثالثة، هَذا لا تنزعه منا أيُّهَا الصالح، لَكِنْ جدده في أحشائنا. قلبا نقيا اخلق فيَّ يا اللّه، وروحا مستقيما جدد في أحشائي. لا تطرحني من قدام وجهك، ورُوحِكَ القُدُّوسْ لا تنزعه منى.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Priest", 
-  "", 
-  "2) Ô Seigneur qui as envoyé Ton Esprit-Saint sur tes saints disciples et apôtres vénérables à la troisième heure ne l’éloigne pas de nous ô très bon. Mais nous T’implorons ô notre Seigneur Jésus-Christ, Fils de Dieu le Verbe, de le renouveler en nous : Esprit droit et vivifiant, esprit filial et de chasteté, esprit de sainteté, de justice et de force. Ô Toi qui peut tout car Tu es la lumière de nos âmes. Ô Toi qui éclaires tout être venant au monde, aie pitié de nous.", 
-  "", 
-  "أَيُّهَاالرَبّ الذي أرسلتَ روح قُدْسَكْ على تَلامِيذَكْ القِدِّيسِينْ ورُسُلَكَ المكرمين في السَاعَةْ الثالثة، هَذا لا تنزعه منا أيُّهَا الصالح. لَكِنْ نسألك أنْ تجدده في أحشائنا، يا رَبّنا يَسُوعْ المَسِيحْ ابنُ اللّه الكلمة، روحا مستقيما ومحييا، روح النبوءة والعفة، روح القداسة والعدالة والسلطة، أيُّهَا القادر على كُلِّ شيء، لأنَّكَ أنْتَ هو ضياء نفوسنا. يا من يضئ لكل إنسان آت إلى العالم، ارْحَمْنَا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Priest", 
-  "", 
-  "3) Ô Mère de Dieu, tu es la vraie vigne portant la grappe de la Vie, nous te demandons ô pleine de grâce avec les apôtres pour le Salut de nos âmes. Béni soit le Seigneur notre Dieu. Béni soit le Seigneur jour après jour. Il prépare notre chemin car il est le Dieu de notre Salut.", 
-  "", 
-  "يا والدة الإله أنْتَ هي الكرمة الحقيقية الحاملة عنقود الحياة، نسألك أَيَّتُهَا المملوءة نعمة، مَعَ الرسل، من أجل خلاص نفوسنا. مُبَارَكْ الرَبّ إلَهْنَا. مُبَارَكْ الرَبّ يَومَاً فيوما، يهيئ طريقنا لِأنَّهُ إله خلاصنا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Diacon", 
-  "", 
-  "4) Ô Roi céleste, Consolateur, Esprit de vérité, qui existes en tout lieu et qui remplis tout, Trésor de bonté et Donateur de vie, daigne venir en nous. Purifie-nous de toute souillure ô très Bon et sauve nos âmes.", 
-  "", 
-  "أَيُّهَااَلملك السمائي المعزى، روح الحق، الحاضر في كُلِّ مكان والمالئ الكل، كنز الصالحات، ومعطى الحياة، هلم تفضل وحل فينا، وطهرنا من كُلِّ دنس أيُّهَا الصالح، وخلص نفوسنا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Diacon", 
-  "", 
-  "5) Comme Tu as été avec tes disciples, ô Sauveur, en leur accordant la paix; viens, sois avec nous, accorde-nous Ta paix, sauve-nous et délivre nos âmes.", 
-  "", 
-  "كما كُنْتُ مَعَ تلاميذك أيُّهَا المخلص وأعطيتهم السَّلامُ، هلم أًيّْضَاً كن مَعَنا وامنحنا سلامك وخلصنا ونج نفوسنا.", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Diacon", 
-  "", 
-  "6) Lorsque nous nous tenons debout dans Ton sanctuaire, nous sommes comptés parmi ceux qui se tiennent dans le ciel. Ô Mère de Dieu, tu es la Porte du ciel, ouvre-nous la porte de la miséricorde.", 
-  "", 
-  "إذا ما وقفنا في هَيْكَلَكَ المُقَدَّسْ نحسب كالقيام في السَّمَاء. يا والدة الإله، أنْتَ هي باب السَّمَاء، افتحي لنا باب الرحمة.", 
-  ],
-  ],
+    [
+    Prefix.bookOfHours+"ThirdHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+    "", 
+    "Litanies de la 3ème heure", 
+    "", 
+    "قَطَعْ السَاعَةْ الثالثة", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "1) Ton Esprit-Saint Seigneur, que tu a répandu sur tes disciples saints et apôtres vénérables à la troisième heure, ne nous l’enlève pas ô Très Bon mais renouvelle-le en nous. Ô Dieu crée en moi un cœur pur; renouvelle en moi un esprit droit. Ne me rejette pas loin de Ta Face et ne me retire pas Ton Esprit-Saint .", 
+    "", 
+    "رُوحِكَ القُدُّوسْ يا رَبّ الذي أرسلته على تلاميذك القِدِّيسِينْ ورُسُلَكَ المكرمين في السَاعَةْ الثالثة، هَذا لا تنزعه منا أيُّهَا الصالح، لَكِنْ جدده في أحشائنا. قلبا نقيا اخلق فيَّ يا اللّه، وروحا مستقيما جدد في أحشائي. لا تطرحني من قدام وجهك، ورُوحِكَ القُدُّوسْ لا تنزعه منى.", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "2) Ô Seigneur qui as envoyé Ton Esprit-Saint sur tes saints disciples et apôtres vénérables à la troisième heure ne l’éloigne pas de nous ô très bon. Mais nous T’implorons ô notre Seigneur Jésus-Christ, Fils de Dieu le Verbe, de le renouveler en nous : Esprit droit et vivifiant, esprit filial et de chasteté, esprit de sainteté, de justice et de force. Ô Toi qui peut tout car Tu es la lumière de nos âmes. Ô Toi qui éclaires tout être venant au monde, aie pitié de nous.", 
+    "", 
+    "أَيُّهَاالرَبُّ الذي أرسلتَ روح قُدْسَكْ على تَلامِيذَكْ القِدِّيسِينْ ورُسُلَكَ المكرمين في السَاعَةْ الثالثة، هَذا لا تنزعه منا أيُّهَا الصالح. لَكِنْ نسألك أنْ تجدده في أحشائنا، يا رَبّنا يَسُوعْ المَسِيحْ ابنُ اللّه الكلمة، روحا مستقيما ومحييا، روح النبوءة والعفة، روح القداسة والعدالة والسلطة، أيُّهَا القادر على كُلِّ شيء، لأنَّكَ أنْتَ هو ضياء نفوسنا. يا من يضئ لكل إنسان آت إلى العالم، ارْحَمْنَا.", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "3) Ô Mère de Dieu, tu es la vraie vigne portant la grappe de la Vie, nous te demandons ô pleine de grâce avec les apôtres pour le Salut de nos âmes. Béni soit le Seigneur notre Dieu. Béni soit le Seigneur jour après jour. Il prépare notre chemin car il est le Dieu de notre Salut.", 
+    "", 
+    "يا والدة الإله أنْتَ هي الكرمة الحقيقية الحاملة عنقود الحياة، نسألك أَيَّتُهَا المملوءة نعمة، مَعَ الرسل، من أجل خلاص نفوسنا. مُبَارَكْ الرَبّ إلَهْنَا. مُبَارَكْ الرَبّ يَومَاً فيوما، يهيئ طريقنا لِأنَّهُ إله خلاصنا.", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.same+"&C=Diacon", 
+    "", 
+    "4) Ô Roi céleste, Consolateur, Esprit de vérité, qui existes en tout lieu et qui remplis tout, Trésor de bonté et Donateur de vie, daigne venir en nous. Purifie-nous de toute souillure ô très Bon et sauve nos âmes.", 
+    "", 
+    "أَيُّهَااَلملك السمائي المعزى، روح الحق، الحاضر في كُلِّ مكان والمالئ الكل، كنز الصالحات، ومعطى الحياة، هلم تفضل وحل فينا، وطهرنا من كُلِّ دنس أيُّهَا الصالح، وخلص نفوسنا.", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.same+"&C=Diacon", 
+    "", 
+    "5) Comme Tu as été avec tes disciples, ô Sauveur, en leur accordant la paix; viens, sois avec nous, accorde-nous Ta paix, sauve-nous et délivre nos âmes.", 
+    "", 
+    "كما كُنْتُ مَعَ تلاميذك أيُّهَا المخلص وأعطيتهم السَّلامُ، هلم أًيّْضَاً كن مَعَنا وامنحنا سلامك وخلصنا ونج نفوسنا.", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.same+"&C=Diacon", 
+    "", 
+    "6) Lorsque nous nous tenons debout dans Ton sanctuaire, nous sommes comptés parmi ceux qui se tiennent dans le ciel. Ô Mère de Dieu, tu es la Porte du ciel, ouvre-nous la porte de la miséricorde.", 
+    "", 
+    "إذا ما وقفنا في هَيْكَلَكَ المُقَدَّسْ نحسب كالقيام في السَّمَاء. يا والدة الإله، أنْتَ هي باب السَّمَاء، افتحي لنا باب الرحمة.", 
+    ],
+    ],  
   [
   [
   Prefix.bookOfHours+"ThirdHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
@@ -17100,7 +17152,7 @@ PrayersArray= [[
   "", 
   "Seigneur, Dieu de l'univers, entends ma prière ; écoute, Dieu de Jacob. Dieu, vois notre bouclier, regarde le visage de ton messie. Oui, un jour dans tes parvis en vaut plus que mille. J'ai choisi de me tenir sur le seuil, dans la maison de mon Dieu, plutôt que d'habiter parmi les infidèles. Le Seigneur Dieu est un soleil, il est un bouclier ; le Seigneur donne la grâce, il donne la gloire.", 
   "", 
-  "أَيُّهَااَلرَبّ إله القوات استمع لصلاتي، أنصت يا إله يعقوب. وانظر أيُّهَا الإله ناصرنا، واطلع إلى وَجْهْ مسيحك. لِأنَّ يَومَاً صالحا في ديارك خير من آلاف. اخترت لنفسي أنْ أطرَح على باب بيت اللّه، أفْضَلْ من أنْ أسكن في مظال الخطاة. لِأنَّ الرَبّ الإله يحب الرَحْمَةْ والحق، ويعطى مجدا ونعمة.", 
+  "أَيُّهَاالرَبُّ إله القوات استمع لصلاتي، أنصت يا إله يعقوب. وانظر أيُّهَا الإله ناصرنا، واطلع إلى وَجْهْ مسيحك. لِأنَّ يَومَاً صالحا في ديارك خير من آلاف. اخترت لنفسي أنْ أطرَح على باب بيت اللّه، أفْضَلْ من أنْ أسكن في مظال الخطاة. لِأنَّ الرَبّ الإله يحب الرَحْمَةْ والحق، ويعطى مجدا ونعمة.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -17774,7 +17826,7 @@ PrayersArray= [[
   "", 
   "Seigneur notre Dieu, tu leur as répondu : avec eux, tu restais un Dieu patient, mais tu les punissais pour leurs fautes.", 
   "", 
-  "أَيُّهَااَلرَبّ إلهنا، أنْتَ استجبت لهم. صِرْتَ لهم يا اللّه غفورا، ومنتقما على جَمِيعْ أعمالهم.", 
+  "أَيُّهَاالرَبُّ إلهنا، أنْتَ استجبت لهم. صِرْتَ لهم يا اللّه غفورا، ومنتقما على جَمِيعْ أعمالهم.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -19591,9 +19643,9 @@ PrayersArray= [[
   "أَيُّهَااَلمَسِيحْ إلَهْنَا لكرسي حكمك المرهوب أفزع، ولمجلس دينونتك أخشع، ولنور شعاع لاهوتك أجزع، أَنا الشقي المتدنس، الراقد على فراشي المتهاون في حياتي. لكنى أتخذ صورة العشار قارعا صدري، قائلا: \"اَللَّهُمَّ اغفر لي فإني خاطئ\".", 
   ],
   [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-  ],
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+    ],
   [
   Prefix.same+"&C=Priest", 
   "", 
@@ -19639,6 +19691,271 @@ PrayersArray= [[
   "هذا الذي مِنْ قِبَلِهِ يليق بك مَعَه المَجْدُ والإكرام والعزة، مَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لك، الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدِهُورْ. آمْينْ.", 
   ],
   ],
+  
+[
+  [
+  Prefix.bookOfHours+"SetarHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "l’Évangile du Setar (Saint Jean 14: 15-26)", 
+  "", 
+  "إنجيل  صلاة الِستَار (يوحنا 14: 15ـ26)", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Mais le Paraclet, l’Esprit Saint que le père enverra en mon nom, lui vous enseignera tout, et il vous fera souvenir de tout ce que je vous ai dit. C’est ma paix que je vous laisse, c’est ma paix que je vous donne. Ce n’est pas à la manière du monde que je vous la donne.", 
+  "", 
+  "متى جاء المعزى الْرُوحْ القُدُسْ الذي سيرسله الآب باسمي، فهو يعلمكم كُلِّ شيء ويذكركم بِكُلَّ ما قلته لكم. سَلامِي أترك لكم . سَلامِي أَنا أعطيكم. لَيْسَ كما يعطى العالمُ أعطيكم.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Ne soyer donc pas bouleversés et effrayés. Vous avez entendu ce que Je vous ai dit : « Je m'en vais, et Je reviens vers vous. ». Si vous M'aimiez, vous seriez dans la joie puisque je pars vers le Père; car le Père est plus grand que Moi. Je vous ai dit toutes ces choses maintenant avant qu'elles n’arrivent, ainsi, lorsqu'elles arriveront, vous croirez. Désormais, Je ne parlerai plus beaucoup avec vous; car le prince du monde va venir. Certes, Il n‘y a rien en Moi qui puisse lui donner prise, mais il faut que le monde sache que J'aime mon Pyre, et que je fais tout ce que mon Père m’a commandé. Levez-vous partons d’ici.", 
+  "", 
+  "لا تضطرَبّ قلوبكم ولا تجزع. سمعتم أنى قُلْت لكم إني أمضى ثُمَّ آتى إليكم. لو كنتم تحبونني لكنتم تفرحون لأني أمضى إلى الآب، لِأنَّ أبي أعظمُ منى. وقد قلتُ لكم الآنْ قبل أنْ يكون، حتى متى كان تؤمنون. لست أكلمكم كلاما كثيرا بعد، لِأنَّ رئيس هَذا العالم آتٍ ولَيس لَهُ في شيءٌ. لَكِنْ لكي يعلمَ العالمُ أنني أحب أبى، وكما أوصاني أبي هَكَذا أفعل، قوموا ننطلق من ههنا.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Moi Je suis La vraie vigne et Mon Père est le Vigneron. Tout sarment qui est en Moi mais qui ne porte pas de fruit, mon Père l’enlève; et tout sarment qui donne du fruit, Il le nettoie pour qu'il en donne d’avantage. Mais vous, déjà vous voici nets et purifiés grâce à la parole que Je vous ai dite: demeurez en Moi, comme moi en vous.", 
+  "", 
+  "أنا هو الكرمة الحقيقية وأبى الكرام. كُلِّ غصن فيّ لا يأتي بثُمَّر يقطعه. وكُلَّ ما يأتي بثُمَّر ينقيه لِيأتْي بثُمَّر أكثر. وأنتم من قبْل أنقياءُ من أجل الكلام الذي كلمتكم به. اثبتوا في وأنا أًيّْضَاً فيكم.", 
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
+  ],
+],
+[
+[
+Prefix.bookOfHours+"SetarHourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+"", 
+"Litanies du Setar", 
+"", 
+"قَطَعْ صلاة الستار", 
+],
+[
+Prefix.same+"&C=Priest", 
+"", 
+"", 
+"", 
+"القطعة الأولى", 
+],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+],
+[
+  Prefix.same+"&C=Priest", 
+  "", 
+  "", 
+  "", 
+  "القطعة الثانية", 
+  ],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+],
+[
+  Prefix.same+"&C=Priest", 
+  "", 
+  "", 
+  "", 
+  "القطعة الثالثة", 
+  ],
+],
+[
+  [
+  Prefix.bookOfHours+"SetarHourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "Absolution du Setar", 
+  "", 
+  "تحليل صَلاةْ السِتَار", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "", 
+  "", 
+  "", 
+  "التحليل", 
+  ],
+],
+[
+[
+Prefix.bookOfHours+"MidNight1HourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+"", 
+"l’Évangile du 1er service de minuit (Saint Jean 14: 15-26)", 
+"", 
+"إنجيل  الخدمة الأولى من نصف الليل (يوحنا 14: 15ـ26)", 
+],
+[
+Prefix.same+"&C=Diacon", 
+"", 
+"Mais le Paraclet, l’Esprit Saint que le père enverra en mon nom, lui vous enseignera tout, et il vous fera souvenir de tout ce que je vous ai dit. C’est ma paix que je vous laisse, c’est ma paix que je vous donne. Ce n’est pas à la manière du monde que je vous la donne.", 
+"", 
+"متى جاء المعزى الْرُوحْ القُدُسْ الذي سيرسله الآب باسمي، فهو يعلمكم كُلِّ شيء ويذكركم بِكُلَّ ما قلته لكم. سَلامِي أترك لكم . سَلامِي أَنا أعطيكم. لَيْسَ كما يعطى العالمُ أعطيكم.", 
+],
+[
+Prefix.same+"&C=Diacon", 
+"", 
+"Ne soyer donc pas bouleversés et effrayés. Vous avez entendu ce que Je vous ai dit : « Je m'en vais, et Je reviens vers vous. ». Si vous M'aimiez, vous seriez dans la joie puisque je pars vers le Père; car le Père est plus grand que Moi. Je vous ai dit toutes ces choses maintenant avant qu'elles n’arrivent, ainsi, lorsqu'elles arriveront, vous croirez. Désormais, Je ne parlerai plus beaucoup avec vous; car le prince du monde va venir. Certes, Il n‘y a rien en Moi qui puisse lui donner prise, mais il faut que le monde sache que J'aime mon Pyre, et que je fais tout ce que mon Père m’a commandé. Levez-vous partons d’ici.", 
+"", 
+"لا تضطرَبّ قلوبكم ولا تجزع. سمعتم أنى قُلْت لكم إني أمضى ثُمَّ آتى إليكم. لو كنتم تحبونني لكنتم تفرحون لأني أمضى إلى الآب، لِأنَّ أبي أعظمُ منى. وقد قلتُ لكم الآنْ قبل أنْ يكون، حتى متى كان تؤمنون. لست أكلمكم كلاما كثيرا بعد، لِأنَّ رئيس هَذا العالم آتٍ ولَيس لَهُ في شيءٌ. لَكِنْ لكي يعلمَ العالمُ أنني أحب أبى، وكما أوصاني أبي هَكَذا أفعل، قوموا ننطلق من ههنا.", 
+],
+[
+Prefix.same+"&C=Diacon", 
+"", 
+"Moi Je suis La vraie vigne et Mon Père est le Vigneron. Tout sarment qui est en Moi mais qui ne porte pas de fruit, mon Père l’enlève; et tout sarment qui donne du fruit, Il le nettoie pour qu'il en donne d’avantage. Mais vous, déjà vous voici nets et purifiés grâce à la parole que Je vous ai dite: demeurez en Moi, comme moi en vous.", 
+"", 
+"أنا هو الكرمة الحقيقية وأبى الكرام. كُلِّ غصن فيّ لا يأتي بثُمَّر يقطعه. وكُلَّ ما يأتي بثُمَّر ينقيه لِيأتْي بثُمَّر أكثر. وأنتم من قبْل أنقياءُ من أجل الكلام الذي كلمتكم به. اثبتوا في وأنا أًيّْضَاً فيكم.", 
+],
+[
+Prefix.placeHolder, 
+Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
+],
+],
+[
+[
+Prefix.bookOfHours+"MidNight1HourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+"", 
+"Litanies du 1er service de minuit", 
+"", 
+"قَطَعْ الخدمة الأولى من نصف الليل", 
+],
+[
+Prefix.same+"&C=Priest", 
+"", 
+"", 
+"", 
+"القطعة الأولى", 
+],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+],
+[
+Prefix.same+"&C=Priest", 
+"", 
+"", 
+"", 
+"القطعة الثانية", 
+],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+],
+[
+Prefix.same+"&C=Priest", 
+"", 
+"", 
+"", 
+"القطعة الثالثة", 
+],
+],
+[
+[
+Prefix.bookOfHours+"MidNight1HourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+"", 
+"Absolution du 1er service de minuit", 
+"", 
+"تحليل الخدمة الأولى من نصف الليل", 
+],
+[
+Prefix.same+"&C=NoActor", 
+"", 
+"", 
+"", 
+"التحليل", 
+],
+],
+[
+  [
+  Prefix.bookOfHours+"MidNight2HourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "l’Évangile du 2ème service de minuit (Saint Jean 14: 15-26)", 
+  "", 
+  "إنجيل الخدمة الثانية من نصف الليل (يوحنا 14: 15ـ26)", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Mais le Paraclet, l’Esprit Saint que le père enverra en mon nom, lui vous enseignera tout, et il vous fera souvenir de tout ce que je vous ai dit. C’est ma paix que je vous laisse, c’est ma paix que je vous donne. Ce n’est pas à la manière du monde que je vous la donne.", 
+  "", 
+  "متى جاء المعزى الْرُوحْ القُدُسْ الذي سيرسله الآب باسمي، فهو يعلمكم كُلِّ شيء ويذكركم بِكُلَّ ما قلته لكم. سَلامِي أترك لكم . سَلامِي أَنا أعطيكم. لَيْسَ كما يعطى العالمُ أعطيكم.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Ne soyer donc pas bouleversés et effrayés. Vous avez entendu ce que Je vous ai dit : « Je m'en vais, et Je reviens vers vous. ». Si vous M'aimiez, vous seriez dans la joie puisque je pars vers le Père; car le Père est plus grand que Moi. Je vous ai dit toutes ces choses maintenant avant qu'elles n’arrivent, ainsi, lorsqu'elles arriveront, vous croirez. Désormais, Je ne parlerai plus beaucoup avec vous; car le prince du monde va venir. Certes, Il n‘y a rien en Moi qui puisse lui donner prise, mais il faut que le monde sache que J'aime mon Pyre, et que je fais tout ce que mon Père m’a commandé. Levez-vous partons d’ici.", 
+  "", 
+  "لا تضطرَبّ قلوبكم ولا تجزع. سمعتم أنى قُلْت لكم إني أمضى ثُمَّ آتى إليكم. لو كنتم تحبونني لكنتم تفرحون لأني أمضى إلى الآب، لِأنَّ أبي أعظمُ منى. وقد قلتُ لكم الآنْ قبل أنْ يكون، حتى متى كان تؤمنون. لست أكلمكم كلاما كثيرا بعد، لِأنَّ رئيس هَذا العالم آتٍ ولَيس لَهُ في شيءٌ. لَكِنْ لكي يعلمَ العالمُ أنني أحب أبى، وكما أوصاني أبي هَكَذا أفعل، قوموا ننطلق من ههنا.", 
+  ],
+  [
+  Prefix.same+"&C=Diacon", 
+  "", 
+  "Moi Je suis La vraie vigne et Mon Père est le Vigneron. Tout sarment qui est en Moi mais qui ne porte pas de fruit, mon Père l’enlève; et tout sarment qui donne du fruit, Il le nettoie pour qu'il en donne d’avantage. Mais vous, déjà vous voici nets et purifiés grâce à la parole que Je vous ai dite: demeurez en Moi, comme moi en vous.", 
+  "", 
+  "أنا هو الكرمة الحقيقية وأبى الكرام. كُلِّ غصن فيّ لا يأتي بثُمَّر يقطعه. وكُلَّ ما يأتي بثُمَّر ينقيه لِيأتْي بثُمَّر أكثر. وأنتم من قبْل أنقياءُ من أجل الكلام الذي كلمتكم به. اثبتوا في وأنا أًيّْضَاً فيكم.", 
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.bookOfHours+"GospelEnd&D=$copticFeasts.AnyDay", 
+  ],
+],
+[
+[
+Prefix.bookOfHours+"MidNight2HourLitanies&D=$copticFeasts.AnyDay&C=SubTitle", 
+"", 
+"Litanies du 2ème service de minuit", 
+"", 
+"قَطَعْ الخدمة الثانية من نصف الليل", 
+],
+[
+Prefix.same+"&C=Priest", 
+"", 
+"", 
+"", 
+"القطعة الأولى", 
+],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
+],
+[
+  Prefix.same+"&C=Priest", 
+  "", 
+  "", 
+  "", 
+  "القطعة الثانية", 
+  ],
+[
+Prefix.placeHolder, 
+Prefix.commonPrayer+"NowAlwaysAndForEver&D=$copticFeasts.AnyDay", 
+],
+[
+  Prefix.same+"&C=Priest", 
+  "", 
+  "", 
+  "", 
+  "القطعة الثالثة", 
+  ],
+],
+[
+  [
+  Prefix.bookOfHours+"MidNight2HourEndOfHourPrayer&D=$copticFeasts.AnyDay&C=SubTitle", 
+  "", 
+  "Absolution du 2ème service de minuit", 
+  "", 
+  "تحليل الخدمة الثانية من نصف الليل", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "", 
+  "", 
+  "", 
+  "التحليل", 
+  ],
+],
   [
   [
   Prefix.massCommon+"Agios&D=$Seasons.Nativity&C=Title", 
@@ -20000,7 +20317,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.praxisResponse+"&D=$Seasons.Nayrouz||$copticFeasts.Nayrouz&C=Title", 
+  Prefix.praxisResponse+"&D=$Seasons.Nayrouz&C=Title", 
   "", 
   "Réponse Praxis Nayrouz", 
   "", 

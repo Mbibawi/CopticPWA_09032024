@@ -490,7 +490,7 @@ br{
 /*the right sidebar*/
 .rightSideBar { 
   right: 0px !important;
-  direction: rtl !important;
+  direction: auto !important;
 }
 /*the left sidebar*/
 .leftSideBar {
@@ -501,7 +501,6 @@ br{
   font-style: italic !important;
   color:white;
   font-size: 11pt !important;
-  text-align: right !important;
   padding: 8px 8px 3px 3px;
   text-decoration: none;
   font-size: 25px;
@@ -509,6 +508,7 @@ br{
   display: block;
   transition: 0.3s;
 }
+
 .sideTitle {
   border: solid;
   border-color: rgb(124, 108, 108);
