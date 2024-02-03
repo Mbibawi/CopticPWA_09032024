@@ -308,7 +308,7 @@ async function showTitlesInRightSideBar(
   function appendTitleTextParagraph(
     titlesRow: HTMLElement,
     className: string,
-    limit: number = 35
+    limit: number = 50
   ) {
     let parag = titlesRow.querySelector(
       "." + className

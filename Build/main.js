@@ -261,7 +261,7 @@ async function showTitlesInRightSideBar(titlesCollection, rightTitlesDiv, clear 
             titleDiv.classList.add(hidden);
         return titleDiv;
     }
-    function appendTitleTextParagraph(titlesRow, className, limit = 35) {
+    function appendTitleTextParagraph(titlesRow, className, limit = 50) {
         let parag = titlesRow.querySelector("." + className);
         if (!parag)
             return;

@@ -3138,7 +3138,7 @@ PrayersArray= [[
   [
   Prefix.massCommon+"BenedictionOfTheLambPart1&D=$copticFeasts.AnyDay&C=Title", 
   "", 
-  "Bénédiction de l'Offrance", 
+  "Bénédiction de l'Offrande", 
   "", 
   " رشومات الحمل", 
   ],
