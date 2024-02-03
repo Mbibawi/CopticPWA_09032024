@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.0 (Added Setar, 1st Midnight and 2nd Midnight services to the Book of Hours, and changes/fixes to the side bar titles)";
+  "v5.3.1 (Added completed Setar Prayer and Midnight prayers)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -228,16 +228,17 @@ const bookOfHours: {
   ThirdHour: [number[], typeBtnLabel];
   SixthHour: [number[], typeBtnLabel];
   NinethHour: [number[], typeBtnLabel];
-  EleventhHour: [number[],typeBtnLabel];
-  TwelvethHour: [number[],typeBtnLabel];
-  SetarHour: [number[], typeBtnLabel];
+  EleventhHour: [number[], typeBtnLabel];
+  TwelvethHour: [number[], typeBtnLabel];
+  VeilHour: [number[], typeBtnLabel];
   MidNight1Hour: [number[], typeBtnLabel];
-  MidNight2Hour:  [number[], typeBtnLabel];
+  MidNight2Hour: [number[], typeBtnLabel];
+  MidNight3Hour: [number[], typeBtnLabel];
 } = {
   //The first element is the array that will be populated with the text tables. The second element is the sequence of the hour's psalms
 
   FirstHour: [
-    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26,62, 66, 69, 112, 142],
+    [1, 2, 3, 4, 5, 6, 8, 11, 12, 14, 15, 18, 24, 26, 62, 66, 69, 112, 142],
     {
       AR: "بَاكِرْ",
       FR: "Aube",
@@ -284,12 +285,15 @@ const bookOfHours: {
       EN: "12th Hour",
     },
   ],
-  SetarHour: [
-    [4, 6, 12, 15, 24, 26, 66, 69, 22, 25, 29, 56, 85, 90, 98, 109, 114, 115, 120, 128, 129, 130, 131,132,133,136,140,147,118],
+  VeilHour: [
+    [
+      4, 6, 12, 15, 24, 26, 66, 69, 22, 25, 29, 56, 85, 90, 98, 109, 114, 115,
+      120, 128, 129, 130, 131, 132, 133, 136, 140, 147, 118,
+    ],
     {
       AR: "صَلاةِ السِتَارْ",
-      FR: "Setar",
-      EN: "Setar",
+      FR: "Femeture du voile",
+      EN: "Closing of the Veil",
     },
   ],
   MidNight1Hour: [
@@ -306,6 +310,14 @@ const bookOfHours: {
       AR: "الخِدْمَة الثانِيَة مِنْ صَلاةِ نِصْفِ الليل",
       FR: "Miniuit 2ème service",
       EN: "Mid Night 2nd Service",
+    },
+  ],
+  MidNight3Hour: [
+    [129, 130, 131, 132, 133, 136, 137, 140, 141, 145, 146, 147],
+    {
+      AR: "الخِدْمَة الثَالِثَةِ مِنْ صَلاةِ نِصْفِ الليل",
+      FR: "Miniuit 3ème service",
+      EN: "Mid Night 3rd Service",
     },
   ],
 };
@@ -326,7 +338,7 @@ const Seasons = {
   StMaryFast: "StMFast", //stands for Saint Mary Feast
   Nayrouz: "Nay", //Stands for Nayrouz from 1 Tout to 16 Tout
   NativityFast: "NF", //(from 16 Hatour until 28 Kiahk included) stands for Nativity Fast
-  Kiahk:'KiahkAny', //The whole month of Kiahk
+  Kiahk: "KiahkAny", //The whole month of Kiahk
   KiahkWeek1: "Kiahk1", //1st Week of Kiahk
   KiahkWeek2: "Kiahk2", //2nd Week of Kiahk
   KiahkWeek3: "Kiahk3", //3rd Week of Kiahk
@@ -420,17 +432,14 @@ const saintsFeasts = {
   StJustAnton: "", //St Just of the St. Anton
 };
 
-const AngelsFeasts:string[] = [
+const AngelsFeasts: string[] = [
   saintsFeasts.StMaykel,
   saintsFeasts.StGabriel,
   saintsFeasts.StRaphael,
   saintsFeasts.StSourial,
 ];
 
-const martyrsFeasts:string[] = [
-  
-]
-
+const martyrsFeasts: string[] = [];
 
 const allLanguages: string[] = ["AR", "FR", "COP", "CA", "CF", "EN"]; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
 

@@ -1882,6 +1882,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
         Prefix.gospelMass,
         Prefix.synaxarium,
         Prefix.propheciesDawn,
+        Prefix.bookOfHours,
       ].find((prefix) => row.dataset.root.startsWith(prefix))
     )
       replaceQuotes(paragraphs); //If the text is one of the "Readings", we replace the quotes signs
