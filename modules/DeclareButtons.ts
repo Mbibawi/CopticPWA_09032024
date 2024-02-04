@@ -1981,7 +1981,8 @@ const btnBookOfHours: Button = new Button({
     btnBookOfHours.children = [];
 
     (function addAChildButtonForEachHour() {
-      Object.entries(bookOfHours).forEach((entry) => {
+      Object.entries(bookOfHours)
+        .forEach(entry => {
         let hourName = entry[0];
         let hourBtn = new Button({
           btnID: "btn" + hourName,
@@ -2007,23 +2008,15 @@ const btnBookOfHours: Button = new Button({
       //Adding the onClick() property to the button
       function hourBtnOnClick(btn: Button, hourName: string, isMass: boolean) {
         (function buildBtnPrayersSequence() {
-          let titleTemplate = Prefix.bookOfHours + "&D=$copticFeasts.AnyDay";
           //We will add the prayers sequence to btn.prayersSequence[]
           btn.prayersSequence = Object.entries(bookOfHours)
             .find((entry) => entry[0] === hourName)[1][0]
-            .map((title) =>
-              titleTemplate.replace("&D=", "Psalm" + title.toString() + "&D=")
-            );
+            .map((title) => getSequence("Psalm" + title.toString()));
+            
+          btn.prayersSequence.unshift(getSequence(hourName + "Title"));//This is the title of the hour prayer
 
-          ["Gospel", "Litanies"].forEach((title) =>
-            btn.prayersSequence.push(
-              titleTemplate.replace("&D=", hourName + title + "&D=")
-            )
-          );
+          ["Gospel", "Litanies"].forEach(title => btn.prayersSequence.push(getSequence(hourName + title)));
 
-          btn.prayersSequence.unshift(
-            titleTemplate.replace("&D=", hourName + "Title" + "&D=")
-          ); //This is the title of the hour prayer
 
           //Then, we add the End of all Hours' prayers (ارحمنا يا الله ثم ارحمنا) except for the 1st and 2nd services of the Midnight Prayer
 
@@ -2052,26 +2045,26 @@ const btnBookOfHours: Button = new Button({
                 Kyrielison41Times,
                 HolyLordOfSabaot,
                 OurFatherWhoArtInHeaven,
+                getSequence(hourName + "EndOfHourPrayer"),
+                AllHoursFinalPrayer,
+                OurFatherWhoArtInHeaven,
               ];
+            
+            btn.prayersSequence.splice(1, 0, ...HourIntro); //We  add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
+            
             if (btn.label === bookOfHours.TwelvethHour[1])
               endOfHourPrayersSequence.splice(0, 1); //If it is the 12th (Night) Hour, we remove the Angels Prayer from endOfHourPrayersSequence
 
             if (btn.label === bookOfHours.MidNight3Hour[1]) {
-              endOfHourPrayersSequence = [
-                Kyrielison41Times,
-                Agios,
-                OurFatherWhoArtInHeaven,
-                titleTemplate.replace("&D=", hourName + "2ndGospel" + "&D="),
-                Creed,
-                KyrielisonIntro,
-                Kyrielison41Times,
+              //Removing all the prayers before the Creed (index = 4) and replacing them with other prayers
+              endOfHourPrayersSequence
+                .splice(0, 5, Kyrielison41Times,
                 HolyLordOfSabaot,
-                OurFatherWhoArtInHeaven,
-              ];
-                
+                  OurFatherWhoArtInHeaven,
+                getSequence(hourName + "2ndGospel"));
+              //Inserting the Priests Absolution at the end
+              endOfHourPrayersSequence.push(getSequence(hourName + "PriestsAbsolution"));
             }
-
-            btn.prayersSequence.splice(1, 0, ...HourIntro); //We  add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
 
             if (
               [
@@ -2096,35 +2089,21 @@ const btnBookOfHours: Button = new Button({
               //If we are in the Setar Hour, we need to remove from Psalm 118 all the paragraphs except paragraphs 20, 21, and 22. We will do this by adding a btn.afterShowPlayers function
               btn.afterShowPrayers = () => {
                 let psalm118 = Array.from(
-                  containerDiv.children as HTMLCollectionOf<HTMLDivElement>
-                ).filter((child) =>
-                  child.dataset.root.startsWith(Prefix.bookOfHours + "Psalm118")
-                );
+                  containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
+                  .filter((child) => child.dataset.root.startsWith(Prefix.bookOfHours + "Psalm118"));
 
                 psalm118
-                  .filter(
-                    (div) =>
-                      psalm118.indexOf(div) > 0 && psalm118.indexOf(div) < 20
-                  )
+                  .filter((div) =>
+                      psalm118.indexOf(div) > 0 && psalm118.indexOf(div) < 20)
                   .forEach((div) => div.remove());
               };
             }
-
-            if (
-              ![
-                bookOfHours.MidNight1Hour[1],
-                bookOfHours.MidNight2Hour[1],
-              ].includes(btn.label)
-            )
-              btn.prayersSequence.push(
-                titleTemplate.replace(
-                  "&D=",
-                  hourName + "EndOfHourPrayer" + "&D="
-                ),
-                AllHoursFinalPrayer
-              );
           })();
         })();
+        function getSequence(replaceWith:string):string {
+          return Prefix.bookOfHours + "&D=$copticFeasts.AnyDay"
+            .replace("&D=", replaceWith + "&D=")
+        }
       }
     })();
 

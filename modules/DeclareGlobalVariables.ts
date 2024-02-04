@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.2 (Fixed 2nd reconciliation in St. Basil mass, and added arabized coptic text in the mass)";
+  "v5.3.3 (Added Priests'Abosolution Prayer to the Book Of Hours + fixes to the Book of Hours)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -278,7 +278,7 @@ const bookOfHours: {
     },
   ],
   TwelvethHour: [
-    [129, 130, 131, 132, 136, 137, 140, 141, 145, 146, 147],
+    [129, 130, 131, 132, 133, 136, 137, 140, 141, 145, 146, 147],
     {
       AR: "السَاعَةِ الثانية عَشْرِ (النوم)",
       FR: "12ème heure",
