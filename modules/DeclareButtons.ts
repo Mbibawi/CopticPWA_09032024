@@ -565,14 +565,14 @@ const btnMassStBasil: Button = new Button({
   },
   afterShowPrayers: async (btn: Button = btnMassStBasil) => {
     //We create a list of the masses to which we will insert redirection button
-    let massButtons: Button[] = [
+    let redirectToList: Button[] = [
       btnMassStBasil,
       btnMassStGregory,
       btnMassStCyril,
       btnMassStJohn,
     ];
-    massButtons.splice(massButtons.indexOf(btn), 1); //We remove the btn of the mass from the redirection list
-    massButtons.splice(massButtons.indexOf(btnMassStJohn), 1); //We remove the mass of st John
+    redirectToList.splice(redirectToList.indexOf(btn), 1); //We remove the btn of the mass from the redirection list
+    redirectToList.splice(redirectToList.indexOf(btnMassStJohn), 1); //We remove the mass of st John
 
     let btnDocFragment = btn.docFragment;
 
@@ -614,7 +614,7 @@ const btnMassStBasil: Button = new Button({
       if (!secondBasilReconciliation)
         return console.log("Didn't find reconciliation");
       let htmlBtn = addExpandablePrayer({
-        insertion: selectElementsByDataRoot(
+          insertion: selectElementsByDataRoot(
           btnDocFragment,
           Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay",
           { equal: true }
@@ -628,22 +628,26 @@ const btnMassStBasil: Button = new Button({
         languages: btn.languages,
       })[0];
       htmlBtn.addEventListener("click", () => {
+        let dataRoot = Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay";
         Array.from(containerDiv.children)
           .filter(
             (row: HTMLDivElement) =>
-              row.dataset.group &&
-              row.dataset.group ===
-                Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay"
-          )
-          .forEach((row) => row.classList.toggle(hidden));
-        //    insertReconcilationEnd();
+              (row.dataset.root
+              &&
+              row.dataset.root === dataRoot)
+                ||
+              (row.dataset.isPlaceHolderIn
+                &&  
+                row.dataset.isPlaceHolderIn === dataRoot)
+              )
+          .forEach(row => row.classList.toggle(hidden));
       });
     })();
 
     (function addRedirectionButtons() {
       //Adding 2 buttons to redirect the other masses at the begining of the Reconciliation
       redirectToAnotherMass(
-        [...massButtons],
+        [...redirectToList],
         {
           beforeOrAfter: "afterend",
           el: selectElementsByDataRoot(
@@ -662,7 +666,7 @@ const btnMassStBasil: Button = new Button({
         { endsWith: true }
       );
       redirectToAnotherMass(
-        [...massButtons],
+        [...redirectToList],
         {
           beforeOrAfter: "afterend",
           el: select[select.length - 1],
@@ -672,7 +676,7 @@ const btnMassStBasil: Button = new Button({
 
       //Adding 2 buttons to redirect to the other masses before Agios
       redirectToAnotherMass(
-        [...massButtons],
+        [...redirectToList],
         {
           beforeOrAfter: "afterend",
           el: selectElementsByDataRoot(
@@ -686,7 +690,7 @@ const btnMassStBasil: Button = new Button({
 
       //Adding 2 buttons to redirect to the other masses before the Call upon the Holy Spirit
       redirectToAnotherMass(
-        [...massButtons],
+        [...redirectToList],
         {
           beforeOrAfter: "afterend",
           el: selectElementsByDataRoot(
@@ -701,7 +705,7 @@ const btnMassStBasil: Button = new Button({
 
       //Adding 2 buttons to redirect to the other masses before the Fraction Introduction
       redirectToAnotherMass(
-        [...massButtons],
+        [...redirectToList],
         {
           beforeOrAfter: "beforebegin",
           el: selectElementsByDataRoot(

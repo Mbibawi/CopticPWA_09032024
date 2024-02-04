@@ -1120,12 +1120,14 @@ function editNextOrPreviousTable(htmlParag: HTMLElement, next: boolean = true) {
 
   let table = array.filter(tbl => splitTitle(tbl[0][0])[0] === splitTitle(title)[0])[0];
   
-  if (!table || table.length < 1) return;
+  if (!table || table.length < 1)  return alert('The current table could not be retrieved from the array by its title from the data-root attribute');
 
   array = eval(arrayName);//!CAUTION we needed to do this in order to unfilter the array again after it had been filtered (P.S.: the spread operator did'nt work)
   
   if (next) table = array[array.indexOf(table) + 1];
   else table = array[array.indexOf(table) - 1];
+
+  if (!table || table.length < 1)  return alert('The next or previous table could not be found');
 
   showTables({
     tablesArray:[table], 

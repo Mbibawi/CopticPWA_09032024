@@ -976,8 +976,11 @@ async function addDataGroupsToContainerChildren(
   //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
   let nextSibling = titleRow.nextElementSibling as HTMLElement;
   while (
-    nextSibling &&
+    nextSibling
+    &&
     !isTitlesContainer(nextSibling)
+    &&
+    nextSibling.dataset.root //We need this in order to exclude all the 'Expandable' divs or inlineBtns divs
     //  !nextSibling.classList.contains(titleClass)
     /*     &&
     (
