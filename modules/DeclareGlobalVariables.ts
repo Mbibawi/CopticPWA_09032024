@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.4 (Added Priests'Abosolution Prayer to the Book Of Hours + fixes to the Book of Hours)";
+  "v5.3.5 (Fixes to the Book of Hours)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"

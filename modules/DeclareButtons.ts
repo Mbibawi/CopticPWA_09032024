@@ -1996,11 +1996,8 @@ const btnBookOfHours: Button = new Button({
               containerDiv.querySelectorAll(
                 ".Row"
               ) as NodeListOf<HTMLDivElement>
-            ).forEach((htmlRow) => {
-              htmlRow.classList.replace("Priest", "NoActor");
-              htmlRow.classList.replace("Diacon", "NoActor");
-              htmlRow.classList.replace("Assembly", "NoActor");
-            }),
+            ).forEach((htmlRow) =>
+              ['Priest', 'Diacon', 'Assembly'].forEach(className => htmlRow.classList.replace(className, 'NoActor'))),
         });
         btnBookOfHours.children.push(hourBtn);
       });
@@ -2022,8 +2019,8 @@ const btnBookOfHours: Button = new Button({
 
           (function addFinalPrayersToSequence() {
             if (isMass) return; //!Important: If the onClick() method is called when the button is displayed in the Unbaptised Mass, we do not add anything else to the btn's prayersSequence
-            let btnLable = btn.label;
-            let HourIntro: string[] = [
+            let btnLable = btn.label,
+                  HourIntro: string[] = [
                 Prefix.commonPrayer +
                   "ThanksGivingPart1&D=$copticFeasts.AnyDay",
                 Prefix.commonPrayer +
@@ -2033,7 +2030,7 @@ const btnBookOfHours: Button = new Button({
                 Prefix.commonPrayer +
                   "ThanksGivingPart4&D=$copticFeasts.AnyDay",
                 Prefix.bookOfHours + "Psalm50&D=$copticFeasts.AnyDay",
-              ],
+                  ],
               endOfHourPrayersSequence: string[] = [
                 AngelsPrayers,
                 Agios,
@@ -2048,15 +2045,14 @@ const btnBookOfHours: Button = new Button({
                 getSequence(hourName + "EndOfHourPrayer"),
                 AllHoursFinalPrayer,
                 OurFatherWhoArtInHeaven,
-              ];
+                  ];
             
             if (btnLable === bookOfHours.MidNight1Hour[1]) HourIntro.push(getSequence(hourName + 'WakeUpSonsOfLight')); //We add the 'Wake Up Sons of Light' for the 1st Service of Midnight
             
-            btn.prayersSequence.splice(1, 0, ...HourIntro); //We  add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
-            
             if (btnLable === bookOfHours.TwelvethHour[1])
-              endOfHourPrayersSequence.splice(0, 1); //If it is the 12th (Night) Hour, we remove the Angels Prayer from endOfHourPrayersSequence
-
+            endOfHourPrayersSequence.splice(0, 1); //If it is the 12th (Night) Hour, we remove the Angels Prayer from endOfHourPrayersSequence
+          
+          btn.prayersSequence.splice(1, 0, ...HourIntro); //We  add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
 
             if (btnLable === bookOfHours.MidNight3Hour[1]) {
               //Removing all the prayers before the Creed (index = 4) and replacing them with other prayers
@@ -2068,7 +2064,7 @@ const btnBookOfHours: Button = new Button({
               //Inserting the Priests Absolution at the end
               endOfHourPrayersSequence.push(getSequence(hourName + "PriestsAbsolution"));
             }
-
+            
             if (
               [
                 bookOfHours.FirstHour[1],
@@ -2090,7 +2086,9 @@ const btnBookOfHours: Button = new Button({
 
             if (btnLable === bookOfHours.VeilHour[1]) {
               //If we are in the Setar Hour, we need to remove from Psalm 118 all the paragraphs except paragraphs 20, 21, and 22. We will do this by adding a btn.afterShowPlayers function
+              let afterShowPrayers = btn.afterShowPrayers;//We need to copy the original btn.afterShowPrayers function otherwise it will be replaced with the new function
               btn.afterShowPrayers = () => {
+                afterShowPrayers();
                 let psalm118 = Array.from(
                   containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
                   .filter((child) => child.dataset.root.startsWith(Prefix.bookOfHours + "Psalm118"));

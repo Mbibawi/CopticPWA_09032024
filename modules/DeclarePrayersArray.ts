@@ -16203,10 +16203,6 @@ PrayersArray= [[
   Prefix.placeHolder, 
   Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
   ],
-  [
-  Prefix.placeHolder, 
-  Prefix.bookOfHours+"PsalmEnd&D=$copticFeasts.AnyDay", 
-  ],
   ],
   [
   [
@@ -19696,12 +19692,21 @@ PrayersArray= [[
   ],
   ],
   [
+    [
+    Prefix.bookOfHours+"VeilHourTitle&D=$copticFeasts.AnyDay&C=Title", 
+    "", 
+    "Prière de la 1ère Heure", 
+    "Prière de la fermeture du voile", 
+    "صلاة الِستَار", 
+    ],
+    ],
+  [
   [
   Prefix.bookOfHours+"VeilHourGospel&D=$copticFeasts.AnyDay&C=SubTitle", 
   "", 
   "l’Évangile de la fermeture du Voile (Saint Jean 6: 15-23)", 
   "", 
-  "إنجيل صلاة الِستَار (يوحنا 6: 15ـ23)", 
+  "إنجيل صلاةالِستَار (يوحنا 6: 15ـ23)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
