@@ -1983,24 +1983,36 @@ const btnBookOfHours: Button = new Button({
     (function addAChildButtonForEachHour() {
       Object.entries(bookOfHours)
         .forEach(entry => {
-        let hourName = entry[0];
+          let hourName = entry[0],
+                btnLabel = entry[1][1];
         let hourBtn = new Button({
           btnID: "btn" + hourName,
-          label: entry[1][1],
+          label: btnLabel,
           languages: btnBookOfHours.languages,
           showPrayers: true,
           onClick: (isMass: boolean = false) =>
             hourBtnOnClick(hourBtn, hourName, isMass),
-          afterShowPrayers: () =>
-            Array.from(
-              containerDiv.querySelectorAll(
-                ".Row"
-              ) as NodeListOf<HTMLDivElement>
-            ).forEach((htmlRow) =>
-              ['Priest', 'Diacon', 'Assembly'].forEach(className => htmlRow.classList.replace(className, 'NoActor'))),
+          afterShowPrayers: ()=>hourBtnAfterShowPrayer(btnLabel),
         });
         btnBookOfHours.children.push(hourBtn);
       });
+
+      function hourBtnAfterShowPrayer(btnLabel){
+        let children = Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>).filter(div => div.dataset.root)
+
+             children.forEach((htmlRow) =>
+              ['Priest', 'Diacon', 'Assembly'].forEach(className => htmlRow.classList.replace(className, 'NoActor')));
+        
+          if (btnLabel !== bookOfHours.VeilHour[1]) return;
+            //If we are in the 'Setar Hour', we need to remove from Psalm 118 all the paragraphs except paragraphs 20, 21, and 22. We will do this by adding a btn.afterShowPlayers function
+              let psalm118 = children.filter((div) => div.dataset.root.startsWith(Prefix.bookOfHours + "Psalm118"));
+  
+                psalm118
+                    .filter((div) =>
+                        psalm118.indexOf(div) > 0 && psalm118.indexOf(div) < 20)
+                    .forEach((div) => div.remove());
+              
+      }
 
       //Adding the onClick() property to the button
       function hourBtnOnClick(btn: Button, hourName: string, isMass: boolean) {
@@ -2084,21 +2096,7 @@ const btnBookOfHours: Button = new Button({
               );
             }
 
-            if (btnLable === bookOfHours.VeilHour[1]) {
-              //If we are in the Setar Hour, we need to remove from Psalm 118 all the paragraphs except paragraphs 20, 21, and 22. We will do this by adding a btn.afterShowPlayers function
-              let afterShowPrayers = btn.afterShowPrayers;//We need to copy the original btn.afterShowPrayers function otherwise it will be replaced with the new function
-              btn.afterShowPrayers = () => {
-                afterShowPrayers();
-                let psalm118 = Array.from(
-                  containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
-                  .filter((child) => child.dataset.root.startsWith(Prefix.bookOfHours + "Psalm118"));
 
-                psalm118
-                  .filter((div) =>
-                      psalm118.indexOf(div) > 0 && psalm118.indexOf(div) < 20)
-                  .forEach((div) => div.remove());
-              };
-            }
           })();
         })();
         function getSequence(replaceWith:string):string {
