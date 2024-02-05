@@ -2022,7 +2022,7 @@ const btnBookOfHours: Button = new Button({
 
           (function addFinalPrayersToSequence() {
             if (isMass) return; //!Important: If the onClick() method is called when the button is displayed in the Unbaptised Mass, we do not add anything else to the btn's prayersSequence
-
+            let btnLable = btn.label;
             let HourIntro: string[] = [
                 Prefix.commonPrayer +
                   "ThanksGivingPart1&D=$copticFeasts.AnyDay",
@@ -2050,12 +2050,15 @@ const btnBookOfHours: Button = new Button({
                 OurFatherWhoArtInHeaven,
               ];
             
+            if (btnLable === bookOfHours.MidNight1Hour[1]) HourIntro.push(getSequence(hourName + 'WakeUpSonsOfLight')); //We add the 'Wake Up Sons of Light' for the 1st Service of Midnight
+            
             btn.prayersSequence.splice(1, 0, ...HourIntro); //We  add the titles of the HourIntro before the 1st element of btn.prayersSequence[]
             
-            if (btn.label === bookOfHours.TwelvethHour[1])
+            if (btnLable === bookOfHours.TwelvethHour[1])
               endOfHourPrayersSequence.splice(0, 1); //If it is the 12th (Night) Hour, we remove the Angels Prayer from endOfHourPrayersSequence
 
-            if (btn.label === bookOfHours.MidNight3Hour[1]) {
+
+            if (btnLable === bookOfHours.MidNight3Hour[1]) {
               //Removing all the prayers before the Creed (index = 4) and replacing them with other prayers
               endOfHourPrayersSequence
                 .splice(0, 5, Kyrielison41Times,
@@ -2071,7 +2074,7 @@ const btnBookOfHours: Button = new Button({
                 bookOfHours.FirstHour[1],
                 bookOfHours.TwelvethHour[1],
                 bookOfHours.MidNight3Hour[1],
-              ].includes(btn.label)
+              ].includes(btnLable)
             ) {
               //If it is the 1st hour (Dawn) or the 12th Hour (Nighth) prayer: We add the End Of Hour Prayers
               btn.prayersSequence.push(...endOfHourPrayersSequence);
@@ -2085,7 +2088,7 @@ const btnBookOfHours: Button = new Button({
               );
             }
 
-            if (btn.label === bookOfHours.VeilHour[1]) {
+            if (btnLable === bookOfHours.VeilHour[1]) {
               //If we are in the Setar Hour, we need to remove from Psalm 118 all the paragraphs except paragraphs 20, 21, and 22. We will do this by adding a btn.afterShowPlayers function
               btn.afterShowPrayers = () => {
                 let psalm118 = Array.from(

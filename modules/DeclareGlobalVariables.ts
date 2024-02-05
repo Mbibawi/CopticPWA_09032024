@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.3 (Added Priests'Abosolution Prayer to the Book Of Hours + fixes to the Book of Hours)";
+  "v5.3.4 (Added Priests'Abosolution Prayer to the Book Of Hours + fixes to the Book of Hours)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -297,7 +297,7 @@ const bookOfHours: {
     },
   ],
   MidNight1Hour: [
-    [14, 17, 20, 29, 72, 74, 101, 102, 118],
+    [3, 6, 12, 69, 85, 90, 116, 117, 118],
     {
       AR: "الخِدْمَة الأولى مِن صَلاةِ نِصْفِ الليل",
       FR: "Miniuit 1er service",
