@@ -10573,6 +10573,94 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   ],
   [
+    [
+    Prefix.gospelDawn+"Psalm&D=Jonah1&C=Title", 
+    "مزمور", 
+    "FR", 
+    "EN", 
+    ]
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah1&C=Title", 
+  "", 
+  "FR", 
+  "Bible", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "", 
+  "FR", 
+  "EN",  
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "",
+  "FR", 
+  "EN",  
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+    "",
+  "FR", 
+  "EN",  
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+    "",
+  "FR", 
+  "EN", 
+  ],
+  ],
+  [
+    [
+    Prefix.gospelDawn+"Psalm&D=Jonah2&C=Title", 
+    "مزمور", 
+    "FR", 
+    "EN", 
+    ]
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah2&C=Title", 
+  "AR", 
+  "FR", 
+  "Tuesday of JonahFast", 
+  ],
+  ],
+  [
+    [
+    Prefix.gospelDawn+"Psalm&D=Jonah3&C=Title", 
+    "مزمور", 
+    "FR", 
+    "EN", 
+    ]
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah3&C=Title", 
+  "", 
+  "FR", 
+  "Wednesday of JonahFast",  
+  ],
+  ],
+  [
+    [
+    Prefix.gospelDawn+"Psalm&D=Jonah4&C=Title", 
+    "مزمور", 
+    "FR", 
+    "EN", 
+    ]
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah4&C=Title", 
+  "", 
+  "FR", 
+  "Thursday of JonahFast", 
+  ],
+  ],
+  [
   [
   Prefix.gospelDawn+"Psalm&D=GL9thSunday&C=Title", 
   " مزمور باكر 78:65, 69", 

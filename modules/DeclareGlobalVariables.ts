@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.7 (Fixes to the multiple choice pannel)";
+  "v5.3.8 (Fixes to Jonah Fast, added Mass Gospel Readings for Jonah Fast)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -42,16 +42,39 @@ const expandableBtnsPannel: HTMLElement = document.getElementById(
   "inlineBtnsContainer"
 );
 const ResurrectionDates: [number, string][] = [
+  [2019, "2022-04-28"],
+  [2020, "2022-04-19"],
+  [2021, "2022-05-02"],
   [2022, "2022-04-24"],
   [2023, "2023-04-16"],
   [2024, "2024-05-05"],
-  [2025, "2025-04-29"],
+  [2025, "2025-04-20"],
   [2026, "2026-04-12"],
   [2027, "2027-05-02"],
-  [2028, "2028-04-23"],
+  [2028, "2028-04-16"],
   [2029, "2029-04-08"],
   [2030, "2030-04-28"],
-]; // these are  the dates of the Ressurection feast caclulated from the end of the Jewish Pessah Feast as got from Google
+  [2031, "2030-04-13"],
+  [2032, "2030-05-02"],
+  [2033, "2030-04-24"],
+  [2034, "2030-04-09"],
+  [2035, "2030-04-29"],
+  [2036, "2030-04-20"],
+  [2037, "2030-04-05"],
+  [2038, "2030-04-25"],
+  [2039, "2030-04-17"],
+  [2040, "2030-05-06"],
+  [2041, "2030-04-21"],
+  [2042, "2030-04-13"],
+  [2043, "2030-05-03"],
+  [2044, "2030-04-24"],
+  [2045, "2030-04-09"],
+  [2046, "2030-04-29"],
+  [2047, "2030-04-21"],
+  [2048, "2030-04-05"],
+  [2049, "2030-04-25"],
+  [2050, "2030-04-17"],
+]; // these are  the dates of the Ressurection feast got from خدمة الشماس والألحان للمعلم فرج عبد المسيح الطبعة 14 سنة 2019
 
 const copticMonths: { AR: string; FR: string; EN: string }[] = [
   {
@@ -270,7 +293,7 @@ const bookOfHours: {
     },
   ],
   EleventhHour: [
-    [116, 117, 119, 120, 121, 122, 124, 25, 26, 27, 28],
+    [116, 117, 119, 120, 121, 122, 124,125,127,128],
     {
       AR: "السَاعَةِ الحَادِيَةِ عَشْرِ (الغروب)",
       FR: "11ème heure",
@@ -679,3 +702,4 @@ const PrayersArraysKeys: [string, string, Function][] = [
   ],
   [Prefix.psalmody, "PsalmodyPrayersArray", () => PsalmodyPrayersArray],
 ];
+    

@@ -13103,8 +13103,8 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Gospel&D=Pntl8&C=Title", 
-  " يوحنا ( 3 : 31 – 36 )", 
-  "John 3:31-36", 
+  "يوحنا ( 3 : 31 – 36 )", 
+  "John (3: 31-36)", 
   "John 3:31-36", 
   ],
   [
@@ -13129,9 +13129,9 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Psalm&D=Pntl8thSunday&C=Title", 
-  " مزمور 47:5, 7", 
-  "Psaume 47:5, 7", 
-  "Psalms 47:5, 7", 
+  "مزمور 47:5, 7", 
+  "Psaume (47:5, 7)", 
+  "Psalms (47:5, 7)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -13143,9 +13143,9 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Gospel&D=Pntl8thSunday&C=Title", 
-  " يوحنا ( 15 : 26 – 16 : 15 )", 
-  "Jean 15:26-16:15", 
-  "John 15:26-16:15", 
+  "يوحنا (15: 26–16 : 15)", 
+  "Jean (15:26-16:15)", 
+  "John (15:26-16:15)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -13193,13 +13193,13 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Psalm&D=Pntl9&C=Title", 
-  " مزمور (7:6, 7-8)", 
-  "Psaume 7:6, 7-8", 
-  "Psalms 7:6, 7-8", 
+  "مزمور (7: 6،8)", 
+  "Psaume (7:6, 7-8)", 
+  "Psalms (7:6, 7-8)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قم يا رب بغضبك ومجمع القبائل يحيط بك فعد فوقها الى العلى.الرب يدين الشعوب. هللويا.", 
+  "قم يا رب بغضبك ومجمع القبائل يحيط بك فعد فوقها الى العلى. الرب يدين الشعوب. هللويا.", 
   "6 Lève-toi, Seigneur mon Dieu,", 
   "6 Arise, O Lord, in Your anger.", 
   ],
@@ -13207,9 +13207,9 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Gospel&D=Pntl9&C=Title", 
-  " يوحنا ( 5 : 22 – 24 )", 
-  "John 5:22-24", 
-  "John 5:22-24", 
+  "يوحنا (5: 22–24)", 
+  "Jean (5: 22-24)", 
+  "John (5: 22-24)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -13226,10 +13226,194 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   [
+  Prefix.gospelMass+"Psalm&D=Jonah1&C=Title", 
+  "مزمور (130: 3-4)", 
+  "Psaume (130: 3,4)", 
+  "Monday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "إن كُنْتَ تُراقِبُ الآثَامِ يا رَبُّ، يا سَيِّدُ فَمَنْ يَقِفُ؟، لأَنَّ عِنْدَكَ المَغْفِرَةِ لِكَيّ يُخَافُ مِنْكَ.", 
+  "03 Si tu retiens les fautes, Seigneur Seigneur, qui subsistera ? 04 Mais près de toi se trouve le pardon pour que l'homme te craigne.", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Gospel&D=Jonah1&C=Title", 
+  "مَتَّى (12: 35-45)", 
+  "Matthieu (12: 35-45)", 
+  "Monday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "اَلإِنْسَانُ الصَّالِحُ مِنَ الْكَنْزِ الصَّالِحِ فِي الْقَلْب يُخْرِجُ الصَّالِحَاتِ، وَالإِنْسَانُ الشِّرِّيرُ مِنَ الْكَنْزِ الشِّرِّيرِ يُخْرِجُ الشُّرُورَ وَلكِنْ أَقُولُ لَكُمْ: \"إِنَّ كُلَّ كَلِمَةٍ بَطَّالَةٍ يَتَكَلَّمُ بِهَا النَّاسُ سَوْفَ يُعْطُونَ عَنْهَا حِسَابًا يَوْمَ الدِّينِ لأَنَّكَ بِكَلاَمِكَ تَتَبَرَّرُ وَبِكَلاَمِكَ تُدَانُ\". ", 
+  "35 L’homme bon, de son trésor qui est bon, tire de bonnes choses ; l’homme mauvais, de son trésor qui est mauvais, tire de mauvaises choses. 36 Je vous le dis : « toute parole creuse que prononceront les hommes, ils devront en rendre compte au jour du Jugement. 37 D’après tes paroles, en effet, tu seras reconnu juste ; d’après tes paroles tu seras condamné. »", 
+  "EN", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "حِينَئِذٍ أَجَابَ قَوْمٌ مِنَ الْكَتَبَةِ وَالْفَرِّيسِيِّينَ قَائِلِينَ: \"يَا مُعَلِّمُ، نُرِيدُ أَنْ نَرَى مِنْكَ آيَةً\". ", 
+  "38 Quelques-uns des scribes et des pharisiens lui adressèrent la parole : « Maître, nous voudrions voir un signe venant de toi ».", 
+  "EN", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "فَأَجابَ وَقَالَ لَهُمْ: \"جِيلٌ شِرِّيرٌ وَفَاسِقٌ يَطْلُبُ آيَةً، وَلاَ تُعْطَى لَهُ آيَةٌ إِلاَّ آيَةَ يُونَانَ النَّبِيِّ لأَنَّهُ كَمَا كَانَ يُونَانُ فِي بَطْنِ الْحُوتِ ثَلاَثَةَ أَيَّامٍ وَثَلاَثَ لَيَال، هكَذَا يَكُونُ ابْنُ الإِنْسَانِ فِي قَلْب الأَرْضِ ثَلاَثَةَ أَيَّامٍ وَثَلاَثَ لَيَال رِجَالُ نِينَوَى سَيَقُومُونَ فِي الدِّينِ مَعَ هذَا الْجِيلِ وَيَدِينُونَهُ، لأَنَّهُمْ تَابُوا بِمُنَادَاةِ يُونَانَ، وَهُوَذَا أَعْظَمُ مِنْ يُونَانَ ههُنَا. مَلِكَةُ التَّيْمَنِ سَتَقُومُ فِي الدِّينِ مَعَ هذَا الْجِيلِ وَتَدِينُهُ، لأَنَّهَا أَتَتْ مِنْ أَقَاصِي الأَرْضِ لِتَسْمَعَ حِكْمَةَ سُلَيْمَانَ، وَهُوَذَا أَعْظَمُ مِنْ سُلَيْمَانَ ههُنَا.\"", 
+  "39 Il leur répondit : « Cette génération mauvaise et adultère réclame un signe, mais, en fait de signe, il ne lui sera donné que le signe du prophète Jonas. 40 En effet, comme Jonas est resté dans le ventre du monstre marin trois jours et trois nuits, le Fils de l’homme restera de même au cœur de la terre trois jours et trois nuits. 41 Lors du Jugement, les habitants de Ninive se lèveront en même temps que cette génération, et ils la condamneront ; en effet, ils se sont convertis en réponse à la proclamation faite par Jonas, et il y a ici bien plus que Jonas. 42 Lors du Jugement, la reine de Saba se dressera en même temps que cette génération, et elle la condamnera ; en effet, elle est venue des extrémités de la terre pour écouter la sagesse de Salomon, et il y a ici bien plus que Salomon. »", 
+  "EN", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"إِذَا خَرَجَ الرُّوحُ النَّجِسُ مِنَ الإِنْسَانِ يَجْتَازُ فِي أَمَاكِنَ لَيْسَ فِيهَا مَاءٌ، يَطْلُبُ رَاحَةً وَلاَ يَجِدُ ثُمَّ يَقُولُ: أَرْجعُ إِلَى بَيْتِي الَّذِي خَرَجْتُ مِنْهُ فَيَأْتِي وَيَجِدُهُ فَارِغًا مَكْنُوسًا مُزَيَّنًا ثُمَّ يَذْهَبُ وَيَأْخُذُ مَعَهُ سَبْعَةَ أَرْوَاحٍ أُخَرَ أَشَرَّ مِنْهُ، فَتَدْخُلُ وَتَسْكُنُ هُنَاكَ، فَتَصِيرُ أَوَاخِرُ ذلِكَ الإِنْسَانِ أَشَرَّ مِنْ أَوَائِلِهِ هكَذَا يَكُونُ أَيْضًا لِهذَا الْجِيلِ الشَّرِّيرِ\".", 
+  "43 Quand l’esprit impur est sorti de l’homme, il parcourt des lieux arides en cherchant où se reposer, et il ne trouve pas.44 Alors il se dit : “Je vais retourner dans ma maison, d’où je suis sorti.” En arrivant, il la trouve inoccupée, balayée et bien rangée. 45 Alors il s’en va, il prend avec lui sept autres esprits, encore plus mauvais que lui ; ils y entrent et s’y installent. Ainsi, l’état de cet homme-là est pire à la fin qu’au début. Voilà ce qui arrivera à cette génération mauvaise.", 
+  "EN", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Psalm&D=Jonah2&C=Title", 
+  "مزمور (85 : 2)", 
+  "Psaume (85: 2)", 
+  "Tuesday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "غَفَرْتَ اثْمَ شَعْبِكَ، سَتَرتَ كُلَّ خَطِيَّتَهِمْ. ", 
+  "02 Tu as ôté le péché de ton peuple, tu as couvert toute sa faute.", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Gospel&D=Jonah2&C=Title", 
+  "لوقا (11 : 29-36)", 
+  "Luc (11: 29-36)", 
+  "Tuesday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَفِيمَا كَانَ الْجُمُوعُ مُزْدَحِمِينَ، ابْتَدَأَ يَقُولُ: \"هذَا الْجِيلُ شِرِّيرٌ يَطْلُبُ آيَةً، وَلاَ تُعْطَى لَهُ آيَةٌ إِلاَّ آيَةُ يُونَانَ النَّبِيِّ. لأَنَّهُ كَمَا كَانَ يُونَانُ آيَةً لأَهْلِ نِينَوَى، كَذلِكَ يَكُونُ ابْنُ الإِنْسَانِ أَيْضًا لِهذَا الْجِيل.\"", 
+  "29 Comme les foules s’amassaient, Jésus se mit à dire : « Cette génération est une génération mauvaise : elle cherche un signe, mais en fait de signe il ne lui sera donné que le signe de Jonas. 30 Car Jonas a été un signe pour les habitants de Ninive ; il en sera de même avec le Fils de l’homme pour cette génération. »", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\n\n\"مَلِكَةُ التَّيْمَنِ سَتَقُومُ فِي الدِّينِ مَعَ رِجَالِ هذَا الْجِيلِ وَتَدِينُهُمْ، لأَنَّهَا أَتَتْ مِنْ أَقَاصِي الأَرْضِ لِتَسْمَعَ حِكْمَةَ سُلَيْمَانَ، وَهُوَذَا أَعْظَمُ مِنْ سُلَيْمَانَ هَهُنَا.\"", 
+  "« 31 Lors du Jugement, la reine de Saba se dressera en même temps que les hommes de cette génération, et elle les condamnera. En effet, elle est venue des extrémités de la terre pour écouter la sagesse de Salomon, et il y a ici bien plus que Salomon. »", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"رِجَالُ نِينَوَى سَيَقُومُونَ فِي الدِّينِ مَعَ هذَا الْجِيلِ وَيَدِينُونَهُ، لأَنَّهُمْ تَابُوا بِمُنَادَاةِ يُونَانَ، وَهُوَذَا أَعْظَمُ مِنْ يُونَانَ ههُنَا.\"", 
+  "« 32 Lors du Jugement, les habitants de Ninive se lèveront en même temps que cette génération, et ils la condamneront ; en effet, ils se sont convertis en réponse à la proclamation faite par Jonas, et il y a ici bien plus que Jonas. »", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"لَيْسَ أَحَدٌ يُوقِدُ سِرَاجًا وَيَضَعُهُ فِي خِفْيَةٍ، وَلاَ تَحْتَ الْمِكْيَالِ، بَلْ عَلَى الْمَنَارَةِ، لِكَيْ يَنْظُرَ الدَّاخِلُونَ النُّورَ سِرَاجُ الْجَسَدِ هُوَ الْعَيْنُ، فَمَتَى كَانَتْ عَيْنُكَ بَسِيطَةً فَجَسَدُكَ كُلُّهُ يَكُونُ نَيِّرًا، وَمَتَى كَانَتْ شِرِّيرَةً فَجَسَدُكَ يَكُونُ مُظْلِمًا.\"", 
+  "« 33 Personne, après avoir allumé une lampe, ne la met dans une cachette ou bien sous le boisseau : on la met sur le lampadaire pour que ceux qui entrent voient la lumière. 34 La lampe de ton corps, c’est ton œil. Quand ton œil est limpide, ton corps tout entier est aussi dans la lumière ; mais quand ton œil est mauvais, ton corps aussi est dans les ténèbres. » ", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"اُنْظُرْ إِذًا لِئَلاَّ يَكُونَ النُّورُ الَّذِي فِيكَ ظُلْمَةً فَإِنْ كَانَ جَسَدُكَ كُلُّهُ نَيِّرًا لَيْسَ فِيهِ جُزْءٌ مُظْلِمٌ، يَكُونُ نَيِّرًا كُلُّهُ، كَمَا حِينَمَا يُضِيءُ لَكَ السِّرَاجُ بِلَمَعَانِهِ\".", 
+  "« 35 Examine donc si la lumière qui est en toi n’est pas ténèbres ; 36 si ton corps tout entier est dans la lumière sans aucune part de ténèbres, alors il sera dans la lumière tout entier, comme lorsque la lampe t’illumine de son éclat. »", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Psalm&D=Jonah3&C=Title", 
+  "مزمور (32: 1،5)", 
+  "Psaume (32: 1,5)", 
+  "Wednesday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "طُوبَى لِلَّذِي غُفِرَ اثْمَهُ وسَتَرتَ خَطِيَّتَهُ. أعْتَرِفُ لَكَ بِخَطِيَّتي ولا أَكْتُمُ إثْمي. قُلْتُ: \"أَعْتَرِفُ لِلرَبِّ بِذَنْبي\". وأَنْتَ رَفَعْتَ آثّامِ خَطِيّتي.", 
+  "01 Heureux l'homme dont la faute est enlevée, et le péché remis ! 05 Je t'ai fait connaître ma faute, je n'ai pas caché mes torts. J'ai dit : « Je rendrai grâce au Seigneur en confessant mes péchés. »  Et toi, tu as enlevé l'offense de ma faute.", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Gospel&D=Jonah3&C=Title", 
+  "مَتَّى (15: 32ـ39، 16: 1ـ4)", 
+  "Matthieu (15: 32-39, 16: 1-4 )", 
+  "Wednesday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَأَمَّا يَسُوعُ فَدَعَا تَلاَمِيذَهُ وَقَالَ: \"إِنِّي أُشْفِقُ عَلَى الْجَمْعِ، لأَنَّ الآنَ لَهُمْ ثَلاَثَةَ أَيَّامٍ يَمْكُثُونَ مَعِي وَلَيْسَ لَهُمْ مَا يَأْكُلُونَ وَلَسْتُ أُرِيدُ أَنْ أَصْرِفَهُمْ صَائِمِينَ لِئَلاَّ يُخَوِّرُوا فِي الطَّرِيقِ\".", 
+  "32 Jésus appela ses disciples et leur dit : « Je suis saisi de compassion pour cette foule, car depuis trois jours déjà ils restent auprès de moi, et n’ont rien à manger. Je ne veux pas les renvoyer à jeun, ils pourraient défaillir en chemin. »", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "فَقَالَ لَهُ تَلاَمِيذُهُ: \"مِنْ أَيْنَ لَنَا فِي الْبَرِّيَّةِ خُبْزٌ بِهذَا الْمِقْدَارِ، حَتَّى يُشْبِعَ جَمْعًا هذَا عَدَدُهُ؟\" فَقَالَ لَهُمْ يَسُوعُ: \"كَمْ عِنْدَكُمْ مِنَ الْخُبْزِ؟\" فَقَالُوا: \"سَبْعَةٌ وَقَلِيلٌ مِنْ صِغَارِ السَّمَكِ\" ", 
+  "33 Les disciples lui disent : « Où trouverons-nous dans un désert assez de pain pour rassasier une telle foule ? » 34 Jésus leur demanda : « Combien de pains avez-vous ? » Ils dirent : « Sept, et quelques petits poissons. »", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "فَأَمَرَ الْجُمُوعَ أَنْ يَتَّكِئُوا عَلَى الأَرْضِ، وَأَخَذَ السَّبْعَ خُبْزَاتٍ وَالسَّمَكَ، وَشَكَرَ وَكَسَّرَ وَأَعْطَى تَلاَمِيذَهُ، وَالتَّلاَمِيذُ أَعْطَوُا الْجَمْعَ فَأَكَلَ الْجَمِيعُ وَشَبِعُوا ثُمَّ رَفَعُوا مَا فَضَلَ مِنَ الْكِسَرِ سَبْعَةَ سِلاَل مَمْلُوءَةٍ، وَالآكِلُونَ كَانُوا أَرْبَعَةَ آلاَفِ رَجُل مَا عَدَا النِّسَاءَ وَالأَوْلاَدَ ثُمَّ صَرَفَ الْجُمُوعَ وَصَعِدَ إِلَى السَّفِينَةِ وَجَاءَ إِلَى تُخُومِ مَجْدَلَ.", 
+  "35 Alors il ordonna à la foule de s’asseoir par terre. 36 Il prit les sept pains et les poissons ; rendant grâce, il les rompit, et il les donnait aux disciples, et les disciples aux foules. 37 Tous mangèrent et furent rassasiés. On ramassa les morceaux qui restaient : cela faisait sept corbeilles pleines. 38 Or, ceux qui avaient mangé étaient quatre mille, sans compter les femmes et les enfants. 39 Après avoir renvoyé la foule, Jésus monta dans la barque et alla dans le territoire de Magadane. ", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَجَاءَ إِلَيْهِ الْفَرِّيسِيُّونَ وَالصَّدُّوقِيُّونَ لِيُجَرِّبُوهُ، فَسَأَلُوهُ أَنْ يُرِيَهُمْ آيَةً مِنَ السَّمَاءِ فَأَجَابَ وَقَالَ لَهُمْ: \"إِذَا كَانَ الْمَسَاءُ قُلْتُمْ: صَحْوٌ لأَنَّ السَّمَاءَ مُحْمَرَّةٌ وَفِي الصَّبَاحِ: الْيَوْمَ شِتَاءٌ لأَنَّ السَّمَاءَ مُحْمَرَّةٌ بِعُبُوسَةٍيَا مُرَاؤُونَ تَعْرِفُونَ أَنْ تُمَيِّزُوا وَجْهَ السَّمَاءِ، وَأَمَّا عَلاَمَاتُ الأَزْمِنَةِ فَلاَ تَسْتَطِيعُونَ جِيلٌ شِرِّيرٌ فَاسِقٌ يَلْتَمِسُ آيَةً، وَلاَ تُعْطَى لَهُ آيَةٌ إِلاَّ آيَةَ يُونَانَ النَّبِيِّ\" ", 
+  "01 Les pharisiens et les sadducéens s’approchèrent pour mettre Jésus à l’épreuve ; ils lui demandèrent de leur montrer un signe venant du ciel. 02 Il leur répondit : « Quand vient le soir, vous dites : “Voici le beau temps, car le ciel est rouge.” 03 Et le matin, vous dites : “Aujourd’hui, il fera mauvais, car le ciel est d’un rouge menaçant.” Ainsi l’aspect du ciel, vous savez en juger ; mais pour les signes des temps, vous n’en êtes pas capables. 04 Cette génération mauvaise et adultère réclame un signe, mais, en fait de signe, il ne lui sera donné que le signe de Jonas. » ", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Psalm&D=Jonah4&C=Title", 
+  "مزمور (118: 5،18)", 
+  "Psaume (118: 5, 18)", 
+  "Thursday of Jonah Fast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "مِنَ الضِيقِ دَعَوْتُ الرَبَّ فَأَجَابَنِي مِنَ الرَحْبِ، تَأدِيبَاً أَدَبَنِي الرَبُّ وإلى المَوْتِ لَمْ يُسَلِّمَنِي.", 
+  "05 Dans mon angoisse j'ai crié vers le Seigneur, et lui m'a exaucé, mis au large. 18 Il m'a frappé, le Seigneur, il m'a frappé, mais sans me livrer à la mort.", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelMass+"Gospel&D=Jonah4&C=Title", 
+  "يوحنا (2: 12-25)", 
+  "Jean (2: 12-25)", 
+  "Thursday of JonahFast", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَبَعْدَ هذَا انْحَدَرَ إِلَى كَفْرِنَاحُومَ، هُوَ وَأُمُّهُ وَإِخْوَتُهُ وَتَلاَمِيذُهُ، وَأَقَامُوا هُنَاكَ أَيَّامًا لَيْسَتْ كَثِيرَةً وَكَانَ فِصْحُ الْيَهُودِ قَرِيبًا، فَصَعِدَ يَسُوعُ إِلَى أُورُشَلِيمَ، وَوَجَدَ فِي الْهَيْكَلِ الَّذِينَ كَانُوا يَبِيعُونَ بَقَرًا وَغَنَمًا وَحَمَامًا، وَالصَّيَارِفَ جُلُوسًا فَصَنَعَ سَوْطًا مِنْ حِبَال وَطَرَدَ الْجَمِيعَ مِنَ الْهَيْكَلِ، اَلْغَنَمَ وَالْبَقَرَ، وَكَبَّ دَرَاهِمَ الصَّيَارِفِ وَقَلَّبَ مَوَائِدَهُمْ وَقَالَ لِبَاعَةِ الْحَمَامِ: \"ارْفَعُوا هذِهِ مِنْ ههُنَا لاَ تَجْعَلُوا بَيْتَ أَبِي بَيْتَ تِجَارَةٍ\" فَتَذَكَّرَ تَلاَمِيذُهُ أَنَّهُ مَكْتُوبٌ: \"غَيْرَةُ بَيْتِكَ أَكَلَتْنِي\".", 
+  "12 Après cela, il descendit à Capharnaüm avec sa mère, ses frères et ses disciples, et ils demeurèrent là-bas quelques jours. 13 Comme la Pâque juive était proche, Jésus monta à Jérusalem. 14 Dans le Temple, il trouva installés les marchands de bœufs, de brebis et de colombes, et les changeurs. 15 Il fit un fouet avec des cordes, et les chassa tous du Temple, ainsi que les brebis et les bœufs ; il jeta par terre la monnaie des changeurs, renversa leurs comptoirs, 16 et dit aux marchands de colombes : « Enlevez cela d’ici. Cessez de faire de la maison de mon Père une maison de commerce. » 17 Ses disciples se rappelèrent qu’il est écrit : L’amour de ta maison fera mon tourment.", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "فَأَجَابَ الْيَهُودُ وَقَالوُا لَهُ: أَيَّةَ آيَةٍ تُرِينَا حَتَّى تَفْعَلَ هذَا؟ أَجَابَ يَسُوعُ وَقَالَ لَهُمْ: انْقُضُوا هذَا الْهَيْكَلَ، وَفِي ثَلاَثَةِ أَيَّامٍ أُقِيمُهُ فَقَالَ الْيَهُودُ: فِي سِتٍّ وَأَرْبَعِينَ سَنَةً بُنِيَ هذَا الْهَيْكَلُ، أَفَأَنْتَ فِي ثَلاَثَةِ أَيَّامٍ تُقِيمُهُ؟ وَأَمَّا هُوَ فَكَانَ يَقُولُ عَنْ هَيْكَلِ جَسَدِهِ فَلَمَّا قَامَ مِنَ الأَمْوَاتِ، تَذَكَّرَ تَلاَمِيذُهُ أَنَّهُ قَالَ هذَا، فَآمَنُوا بِالْكِتَابِ وَالْكَلاَمِ الَّذِي قَالَهُ يَسُوعُ.", 
+  "18 Des Juifs l’interpellèrent : « Quel signe peux-tu nous donner pour agir ainsi ? » 19 Jésus leur répondit : « Détruisez ce sanctuaire, et en trois jours je le relèverai. » 20 Les Juifs lui répliquèrent : « Il a fallu quarante-six ans pour bâtir ce sanctuaire, et toi, en trois jours tu le relèverais ! » 21 Mais lui parlait du sanctuaire de son corps. 22 Aussi, quand il se réveilla d’entre les morts, ses disciples se rappelèrent qu’il avait dit cela ; ils crurent à l’Écriture et à la parole que Jésus avait dite.", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَلَمَّا كَانَ فِي أُورُشَلِيمَ فِي عِيدِ الْفِصْحِ، آمَنَ كَثِيرُونَ بِاسْمِهِ، إِذْ رَأَوْا الآيَاتِ الَّتِي صَنَعَ لكِنَّ يَسُوعَ لَمْ يَأْتَمِنْهُمْ عَلَى نَفْسِهِ، لأَنَّهُ كَانَ يَعْرِفُ الْجَمِيعَ وَلأَنَّهُ لَمْ يَكُنْ مُحْتَاجًا أَنْ يَشْهَدَ أَحَدٌ عَنِ الإِنْسَانِ، لأَنَّهُ عَلِمَ مَا كَانَ فِي الإِنْسَانِ.", 
+  "23 Pendant qu’il était à Jérusalem pour la fête de la Pâque, beaucoup crurent en son nom, à la vue des signes qu’il accomplissait. 24 Jésus, lui, ne se fiait pas à eux, parce qu’il les connaissait tous 25 et n’avait besoin d’aucun témoignage sur l’homme ; lui-même, en effet, connaissait ce qu’il y a dans l’homme.", 
+  "", 
+  ],
+  ],
+  [
+  [
   Prefix.gospelMass+"Psalm&D=GL9thSunday&C=Title", 
-  " مزمور 118:24-25, 27", 
-  "Psaume118:24,25,27", 
-  "Psalms 118:24-25, 27", 
+  "مزمور (118: 24،25،27)", 
+  "Psaume (118: 24,25,27)", 
+  "Psalms (118: 24-25,27)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -13241,9 +13425,9 @@ ReadingsArrays.GospelMassArray= [[
   [
   [
   Prefix.gospelMass+"Gospel&D=GL9thSunday&C=Title", 
-  " يوحنا ( 20 : 1- 18 )", 
-  "Jean 20:1 - 18", 
-  "John 20:1-18", 
+  "يوحنا (20: 1-18)", 
+  "Jean (20: 1- 18)", 
+  "John (20:1-18)", 
   ],
   [
   Prefix.same+"&C=NoActor", 

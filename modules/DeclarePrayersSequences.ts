@@ -11,7 +11,7 @@ const IncensePrayersSequence: string[] =[
     Prefix.commonIncense+"DoxolgiesComment&D=$copticFeasts.AnyDay",
     Prefix.commonPrayer+"AngelsPrayer&D=$copticFeasts.AnyDay", 
     Prefix.incenseVespers+"LordKeepUsThisNightWithoutSin&D=$copticFeasts.AnyDay", 
-    Prefix.commonPrayer + "HolyGodHolyPowerfull&D=$copticFeasts.AnyDay", 
+    Prefix.commonPrayer+"Agios&D=$copticFeasts.AnyDay&D=$copticFeasts.AnyDay",
     Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay", 
     Prefix.commonPrayer + "WeSaluteYouMary&D=$copticFeasts.AnyDay", 
     Prefix.commonIncense+"DoxologiesPlaceHolder&D=$copticFeasts.AnyDay",  
@@ -53,8 +53,7 @@ const MassPrayersSequences = {
         Prefix.massCommon+"Tayshoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"Tishoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon + "IntercessionsHymn&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon + 'ReadingsPlaceHolder&D=&D=$copticFeasts.AnyDay',
-        Prefix.commonPrayer+"HolyGodHolyPowerfull&D=$copticFeasts.AnyDay", 
+        Prefix.massCommon + 'ReadingsPlaceHolder&D=$copticFeasts.AnyDay',
         Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"GospelPrayerPlaceHolder&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"Creed&D=$copticFeasts.AnyDay"
@@ -83,11 +82,8 @@ const MassPrayersSequences = {
         MassStCyril:[
         Prefix.massStCyril+"Reconciliation&D=$copticFeasts.AnyDay",  
         Prefix.massStCyril + "Anaphora&D=$copticFeasts.AnyDay", 
-        Prefix.massStCyril+"InstitutionalNarrative&D=$copticFeasts.AnyDay", 
-        
-
+        Prefix.massStCyril+"Agios&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Part8&D=$copticFeasts.AnyDay", 
-   
         Prefix.massStCyril+"Part9&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Part10&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"LitaniesIntroduction&D=$copticFeasts.AnyDay",

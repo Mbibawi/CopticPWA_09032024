@@ -221,18 +221,18 @@ function checkForUnfixedEvent(
        date = isItSundayOrWeekDay(Seasons.GreatLent, 58, weekDay);
   })();
 
-  (function ifJonahFAst() {
-    if (difference > 69) return;
-    if (difference < 66) return;
+  (function ifJonahFast() {
+    if (difference > 68) return;
+    if (difference < 65) return;  
     
 
     //We are in the Jonah Feast days (3 days + 1)
     //The Jonah feast starts 15 days before the begining of the Great Lent
     //I didn't find the readings for this period in the Power Point presentations
     Season = Seasons.JonahFast;
-    date = isItSundayOrWeekDay(
+    date =  isItSundayOrWeekDay(
       Seasons.JonahFast,
-      Math.abs(70 - difference),
+      Math.abs(69 - difference),
       weekDay
     );
   })();
@@ -258,7 +258,7 @@ function checkForUnfixedEvent(
     if (Math.abs(difference)>49) return;
     // we are during the 50 Pentecostal days
     Season = Seasons.PentecostalDays;
-    date =  isItSundayOrWeekDay(
+    date = isItSundayOrWeekDay(
       Seasons.PentecostalDays,
       Math.abs(difference),
       weekDay
@@ -272,8 +272,7 @@ function checkForUnfixedEvent(
     if (Number(copticMonth) === 11 && Number(copticDay) > 4) return; //We are after the Apostles Feast
     
        //We are more than 50 days after Resurrection, which means that we are during the Apostles lent (i.e. the coptic date is before 05/11 which is the date of the Apostles Feast)
-       Season = Seasons.ApostlesFast;
-
+      Season = Seasons.ApostlesFast;
   })();
 
   (function ifStMaryFast(){
@@ -281,7 +280,7 @@ function checkForUnfixedEvent(
     if (Number(copticDay) > 15) return;
 
       //We are between 01/12 and 15/12, which means that we are during St Mary's Fast
-        Season = Seasons.StMaryFast;
+    Season = Seasons.StMaryFast;
   }) ();
 
   (function ifNayrouzOrCrossFeast() {
@@ -290,7 +289,6 @@ function checkForUnfixedEvent(
 
     if (Number(copticDay) < 17) Season = Seasons.Nayrouz;
     else if (Number(copticDay) > 16) Season = Seasons.CrossFeast;
-
   })();
 
   (function ifNativityFast() {
@@ -299,7 +297,6 @@ function checkForUnfixedEvent(
     
     //We are during the Nativity Fast which starts on 16 Hatour and ends on 29 Kiahk, but we are not during the month of Kiahk. Note that Kiahk is a different Season
     Season = Seasons.NativityFast;
-
   })();
 
   (function ifEarlyKiahk() {
@@ -316,7 +313,7 @@ function checkForUnfixedEvent(
     if (Number(copticMonth) !== 4) return;
     if (Number(copticDay) > 27) return;//We are either in the Paramoun or during the Feast
 
-    date= getKiahkWeek();
+    date = getKiahkWeek();
         
     function getKiahkWeek():string {
     let sunday: string;
@@ -506,6 +503,13 @@ function showDates(
           "Day " +
           copticReadingsDate.split(Seasons.PentecostalDays)[1] +
           " of the 50 Pentecostal Days"
+      );
+    
+      if (copticReadingsDate.startsWith(Seasons.JonahFast))
+        return (
+          "Day " +
+          copticReadingsDate.split(Seasons.JonahFast)[1] +
+          " of Jonah Fast"
         );
 
       if (
@@ -521,7 +525,7 @@ function showDates(
           " Sunday"
         );
 
-      if (copticMonths[Number(copticMonth)])
+    if (copticMonths[Number(copticMonth)])
         return (
           copticReadingsDate.slice(0, 2) +
           " " +

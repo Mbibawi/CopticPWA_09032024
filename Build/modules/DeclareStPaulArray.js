@@ -1,7 +1,8 @@
-ReadingsArrays.StPaulArray = [[
+ReadingsArrays.StPaulArray = [
+    [
         [
             Prefix.stPaul + "&D=0101&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس ( 5 : 11 ـ 6 :1 ـ 13 )",
+            "رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس ( 5 : 11 - 6 :1 - 13 )",
             "2 Corinthiens 5:11 - 6:13",
             "2 Corinthians 5:11-6:13",
         ],
@@ -86,8 +87,104 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
+            Prefix.stPaul + "&D=Jonah1&C=Title",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (6: 17-23)",
+            "Romains (6: 17-23)",
+            "Romans (6: 17-23)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "فَشُكْراً ِللهِ، أَنَّكُمْ كُنْتُمْ عَبِيدًا لِلْخَطِيَّةِ، وَلكِنَّكُمْ أَطَعْتُمْ مِنَ الْقَلْبِ صُورَةَ التَّعْلِيمِ الَّتِي تَسَلَّمْتُمُوهَا.",
+            "17 Mais rendons grâce à Dieu : vous qui étiez esclaves du péché, vous avez maintenant obéi de tout votre cœur au modèle présenté par l’enseignement qui vous a été transmis.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            " وَإِذْ أُعْتِقْتُمْ مِنَ الْخَطِيَّةِ صِرْتُمْ عَبِيدًا لِلْبِرّ.",
+            "18 Libérés du péché, vous êtes devenus esclaves de la justice.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "أَتَكَلَّمُ إِنْسَانِيًّا مِنْ أَجْلِ ضَعْفِ جَسَدِكُمْ لأَنَّهُ كَمَا قَدَّمْتُمْ أَعْضَاءَكُمْ عَبِيدًا لِلنَّجَاسَةِ وَالإِثْمِ لِلإِثْمِ، هكَذَا الآنَ قَدِّمُوا أَعْضَاءَكُمْ عَبِيدًا لِلْبِرِّ لِلْقَدَاسَةِ.",
+            "19 J’emploie un langage humain, adapté à votre faiblesse. Vous aviez mis les membres de votre corps au service de l’impureté et du désordre, ce qui mène au désordre ; de la même manière, mettez-les à présent au service de la justice, ce qui mène à la sainteté.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّكُمْ لَمَّا كُنْتُمْ عَبِيدَ الْخَطِيَّةِ، كُنْتُمْ أَحْرَارًا مِنَ الْبِرِّ. فَأَيُّ ثَمَرٍ كَانَ لَكُمْ حِينَئِذٍ مِنَ الأُمُورِ الَّتِي تَسْتَحُونَ بِهَا الآنَ؟ لأَنَّ نِهَايَةَ تِلْكَ الأُمُورِ هِيَ الْمَوْتُ.",
+            "20 Quand vous étiez esclaves du péché, vous étiez libres par rapport aux exigences de la justice. 21 Qu’avez-vous récolté alors, à commettre des actes dont vous avez honte maintenant ? En effet, ces actes-là aboutissent à la mort.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "وَأَمَّا الآنَ إِذْ أُعْتِقْتُمْ مِنَ الْخَطِيَّةِ، وَصِرْتُمْ عَبِيدًا ِللهِ، فَلَكُمْ ثَمَرُكُمْ لِلْقَدَاسَةِ، وَالنِّهَايَةُ حَيَاةٌ أَبَدِيَّةٌ.",
+            "22 Mais maintenant que vous avez été libérés du péché et que vous êtes devenus les esclaves de Dieu, vous récoltez ce qui mène à la sainteté, et cela aboutit à la vie éternelle.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّ أُجْرَةَ الْخَطِيَّةِ هِيَ مَوْتٌ، وَأَمَّا هِبَةُ اللهِ فَهِيَ حَيَاةٌ أَبَدِيَّةٌ بِالْمَسِيحِ يَسُوعَ رَبِّنَا.",
+            "23 Car le salaire du péché, c’est la mort ; mais le don gratuit de Dieu, c’est la vie éternelle dans le Christ Jésus notre Seigneur.",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.stPaul + "&D=Jonah2&C=Title",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي (1: 21-29)",
+            "Colossiens (1: 21-29)",
+            "Colossiens (1: 21-29)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "وَأَنْتُمُ الَّذِينَ كُنْتُمْ قَبْلاً أَجْنَبِيِّينَ وَأَعْدَاءً فِي الْفِكْرِ، فِي الأَعْمَالِ الشِّرِّيرَةِ، قَدْ صَالَحَكُمُ الآنَ فِي جِسْمِ بَشَرِيَّتِهِ بِالْمَوْتِ، لِيُحْضِرَكُمْ قِدِّيسِينَ وَبِلاَ لَوْمٍ وَلاَ شَكْوَى أَمَامَهُ، إِنْ ثَبَتُّمْ عَلَى الإِيمَانِ، مُتَأَسِّسِينَ وَرَاسِخِينَ وَغَيْرَ مُنْتَقِلِينَ عَنْ رَجَاءِ الإِنْجِيلِ، الَّذِي سَمِعْتُمُوهُ، الْمَكْرُوزِ بِهِ فِي كُلِّ الْخَلِيقَةِ الَّتِي تَحْتَ السَّمَاءِ، الَّذِي صِرْتُ أَنَا بُولُسَ خَادِمًا لَهُ، الَّذِي الآنَ أَفْرَحُ فِي آلاَمِي لأَجْلِكُمْ، وَأُكَمِّلُ نَقَائِصَ شَدَائِدِ الْمَسِيحِ فِي جِسْمِي لأَجْلِ جَسَدِهِ، الَّذِي هُوَ الْكَنِيسَةُ، الَّتِي صِرْتُ أَنَا خَادِمًا لَهَا، حَسَبَ تَدْبِيرِ اللهِ الْمُعْطَى لِي لأَجْلِكُمْ، لِتَتْمِيمِ كَلِمَةِ اللهِ السِّرِّ الْمَكْتُومِ مُنْذُ الدُّهُورِ وَمُنْذُ الأَجْيَالِ، لكِنَّهُ الآنَ قَدْ أُظْهِرَ لِقِدِّيسِيهِ، الَّذِينَ أَرَادَ اللهُ أَنْ يُعَرِّفَهُمْ مَا هُوَ غِنَى مَجْدِ هذَا السِّرِّ فِي الأُمَمِ، الَّذِي هُوَ الْمَسِيحُ فِيكُمْ رَجَاءُ الْمَجْدِ الَّذِي نُنَادِي بِهِ مُنْذِرِينَ كُلَّ إِنْسَانٍ، وَمُعَلِّمِينَ كُلَّ إِنْسَانٍ، بِكُلِّ حِكْمَةٍ، لِكَيْ نُحْضِرَ كُلَّ إِنْسَانٍ كَامِلاً فِي الْمَسِيحِ يَسُوعَ الأَمْرُ الَّذِي لأَجْلِهِ أَتْعَبُ أَيْضًا مُجَاهِدًا، بِحَسَبِ عَمَلِهِ الَّذِي يَعْمَلُ فِيَّ بِقُوَّةٍ.",
+            "21 Et vous, vous étiez jadis étrangers à Dieu, et même ses ennemis, par vos pensées et vos actes mauvais. 22 Mais maintenant, Dieu vous a réconciliés avec lui, dans le corps du Christ, son corps de chair, par sa mort, afin de vous introduire en sa présence, saints, immaculés, irréprochables. 23 Cela se réalise si vous restez solidement fondés dans la foi, sans vous détourner de l’espérance que vous avez reçue en écoutant l’Évangile proclamé à toute créature sous le ciel. De cet Évangile, moi, Paul, je suis devenu ministre. 24 Maintenant je trouve la joie dans les souffrances que je supporte pour vous ; ce qui reste à souffrir des épreuves du Christ dans ma propre chair, je l’accomplis pour son corps qui est l’Église. 25 De cette Église, je suis devenu ministre, et la mission que Dieu m’a confiée, c’est de mener à bien pour vous l’annonce de sa parole, 26 le mystère qui était caché depuis toujours à toutes les générations, mais qui maintenant a été manifesté à ceux qu’il a sanctifiés. 27 Car Dieu a bien voulu leur faire connaître en quoi consiste la gloire sans prix de ce mystère parmi toutes les nations : le Christ est parmi vous, lui, l’espérance de la gloire ! 28 Ce Christ, nous l’annonçons : nous avertissons tout homme, nous instruisons chacun en toute sagesse, afin de l’amener à sa perfection dans le Christ. 29 C’est pour cela que je m’épuise à combattre, avec la force du Christ dont la puissance agit en moi.",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.stPaul + "&D=Jonah3||2409&C=Title",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (2: 1-22)",
+            "Ephésiens (2: 1-22)",
+            "Ephesians Ephésiens (2: 1-22)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "وَأَنْتُمْ إِذْ كُنْتُمْ أَمْوَاتًا بِالذُّنُوبِ وَالْخَطَايَا، الَّتِي سَلَكْتُمْ فِيهَا قَبْلاً حَسَبَ دَهْرِ هذَا الْعَالَمِ، حَسَبَ رَئِيسِ سُلْطَانِ الْهَوَاءِ، الرُّوحِ الَّذِي يَعْمَلُ الآنَ فِي أَبْنَاءِ الْمَعْصِيَةِ، الَّذِينَ نَحْنُ أَيْضًا جَمِيعًا تَصَرَّفْنَا قَبْلاً بَيْنَهُمْ فِي شَهَوَاتِ جَسَدِنَا، عَامِلِينَ مَشِيئَاتِ الْجَسَدِ وَالأَفْكَارِ، وَكُنَّا بِالطَّبِيعَةِ أَبْنَاءَ الْغَضَبِ كَالْبَاقِينَ أَيْضًا، اَللهُ الَّذِي هُوَ غَنِيٌّ فِي الرَّحْمَةِ، مِنْ أَجْلِ مَحَبَّتِهِ الْكَثِيرَةِ الَّتِي أَحَبَّنَا بِهَا، وَنَحْنُ أَمْوَاتٌ بِالْخَطَايَا أَحْيَانَا مَعَ الْمَسِيحِ، بِالنِّعْمَةِ أَنْتُمْ مُخَلَّصُونَ، وَأَقَامَنَا مَعَهُ، وَأَجْلَسَنَا مَعَهُ فِي السَّمَاوِيَّاتِ فِي الْمَسِيحِ يَسُوعَ، لِيُظْهِرَ فِي الدُّهُورِ الآتِيَةِ غِنَى نِعْمَتِهِ الْفَائِقَ، بِاللُّطْفِ عَلَيْنَا فِي الْمَسِيحِ يَسُوعَ.",
+            "01 Et vous, vous étiez des morts, par suite des fautes et des péchés 02 qui marquaient autrefois votre conduite, soumise aux forces mauvaises de ce monde, au prince du mal qui s’interpose entre le ciel et nous, et dont le souffle est maintenant à l’œuvre en ceux qui désobéissent à Dieu. 03 Et nous aussi, nous étions tous de ceux-là, quand nous vivions suivant les convoitises de notre chair, cédant aux caprices de la chair et des pensées, nous qui étions, de par nous-mêmes, voués à la colère comme tous les autres. 04 Mais Dieu est riche en miséricorde ; à cause du grand amour dont il nous a aimés, 05 nous qui étions des morts par suite de nos fautes, il nous a donné la vie avec le Christ : c’est bien par grâce que vous êtes sauvés. 06 Avec lui, il nous a ressuscités et il nous a fait siéger aux cieux, dans le Christ Jésus. 07 Il a voulu ainsi montrer, au long des âges futurs, la richesse surabondante de sa grâce, par sa bonté pour nous dans le Christ Jésus.",
+            "1 And you He made alive, who were dead in trespasses and sins, 2 in which you once walked according to the course of this world, according to the prince of the power of the air, the spirit who now works in the sons of disobedience, 3 among whom also we all once conducted ourselves in the lusts of our flesh, fulfilling the desires of the flesh and of the mind, and were by nature children of wrath, just as the others. 4 But God, who is rich in mercy, because of His great love with which He loved us, 5even when we were dead in trespasses, made us alive together with Christ (by grace you have been saved), 6 and raised us up together, and made us sit together in the heavenly places in Christ Jesus, 7 that in the ages to come He might show the exceeding riches of His grace in His kindness toward us in Christ Jesus. ",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّكُمْ بِالنِّعْمَةِ مُخَلَّصُونَ، بِالإِيمَانِ، وَذلِكَ لَيْسَ مِنْكُمْ هُوَ عَطِيَّةُ اللهِ لَيْسَ مِنْ أَعْمَال كَيْلاَ يَفْتَخِرَ أَحَدٌ لأَنَّنَا نَحْنُ عَمَلُهُ، مَخْلُوقِينَ فِي الْمَسِيحِ يَسُوعَ لأَعْمَال صَالِحَةٍ، قَدْ سَبَقَ اللهُ فَأَعَدَّهَا لِكَيْ نَسْلُكَ فِيهَا.",
+            "08 C’est bien par la grâce que vous êtes sauvés, et par le moyen de la foi. Cela ne vient pas de vous, c’est le don de Dieu. 09 Cela ne vient pas des actes : personne ne peut en tirer orgueil. 10 C’est Dieu qui nous a faits, il nous a créés dans le Christ Jésus, en vue de la réalisation d’œuvres bonnes qu’il a préparées d’avance pour que nous les pratiquions.",
+            "8 For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, 9 not of works, lest anyone should boast. 10 For we are His workmanship, created in Christ Jesus for good works, which God prepared beforehand that we should walk in them. ",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لِذلِكَ اذْكُرُوا أَنَّكُمْ أَنْتُمُ الأُمَمُ قَبْلاً فِي الْجَسَدِ، الْمَدْعُوِّينَ غُرْلَةً مِنَ الْمَدْعُوِّ خِتَانًا مَصْنُوعًا بِالْيَدِ فِي الْجَسَدِ، أَنَّكُمْ كُنْتُمْ فِي ذلِكَ الْوَقْتِ بِدُونِ مَسِيحٍ، أَجْنَبِيِّينَ عَنْ رَعَوِيَّةِ إِسْرَائِيلَ، وَغُرَبَاءَ عَنْ عُهُودِ الْمَوْعِدِ، لاَ رَجَاءَ لَكُمْ، وَبِلاَ إِلهٍ فِي الْعَالَمِ وَلكِنِ الآنَ فِي الْمَسِيحِ يَسُوعَ، أَنْتُمُ الَّذِينَ كُنْتُمْ قَبْلاً بَعِيدِينَ، صِرْتُمْ قَرِيبِينَ بِدَمِ الْمَسِيحِ.",
+            "11 Vous qui autrefois étiez païens, traités de « non-circoncis » par ceux qui se disent circoncis à cause d’une opération pratiquée dans la chair, souvenez-vous donc 12 qu’en ce temps-là vous n’aviez pas le Christ, vous n’aviez pas droit de cité avec Israël, vous étiez étrangers aux alliances et à la promesse, vous n’aviez pas d’espérance et, dans le monde, vous étiez sans Dieu. 13 Mais maintenant, dans le Christ Jésus, vous qui autrefois étiez loin, vous êtes devenus proches par le sang du Christ.",
+            "11 Therefore remember that you, once Gentiles in the flesh- - who are called Uncircumcision by what is called the Circumcision made in the flesh by hands—12 that at that time you were without Christ, being aliens from the commonwealth of Israel and strangers from the covenants of promise, having no hope and without God in the world. 13 But now in Christ Jesus you who once were far off have been brought near by the blood of Christ.",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّهُ هُوَ سَلاَمُنَا، الَّذِي جَعَلَ الاثْنَيْنِ وَاحِدًا، وَنَقَضَ حَائِطَ السِّيَاجِ الْمُتَوَسِّطَ أَيِ الْعَدَاوَةَ مُبْطِلاً بِجَسَدِهِ نَامُوسَ الْوَصَايَا فِي فَرَائِضَ، لِكَيْ يَخْلُقَ الاثْنَيْنِ فِي نَفْسِهِ إِنْسَانًا وَاحِدًا جَدِيدًا، صَانِعًا سَلاَمًا، وَيُصَالِحَ الاثْنَيْنِ فِي جَسَدٍ وَاحِدٍ مَعَ اللهِ بِالصَّلِيبِ، قَاتِلاً الْعَدَاوَةَ بِهِ فَجَاءَ وَبَشَّرَكُمْ بِسَلاَمٍ، أَنْتُمُ الْبَعِيدِينَ وَالْقَرِيبِينَ أَنَّ بِهِ لَنَا كِلَيْنَا قُدُومًا فِي رُوحٍ وَاحِدٍ إِلَى الآبِ.",
+            "14 C’est lui, le Christ, qui est notre paix : des deux, le Juif et le païen, il a fait une seule réalité ; par sa chair crucifiée, il a détruit ce qui les séparait, le mur de la haine ; 15 il a supprimé les prescriptions juridiques de la loi de Moïse. Ainsi, à partir des deux, le Juif et le païen, il a voulu créer en lui un seul Homme nouveau en faisant la paix, 16 et réconcilier avec Dieu les uns et les autres en un seul corps par le moyen de la croix ; en sa personne, il a tué la haine. 17 Il est venu annoncer la bonne nouvelle de la paix, la paix pour vous qui étiez loin, la paix pour ceux qui étaient proches. 18 Par lui, en effet, les uns et les autres, nous avons, dans un seul Esprit, accès auprès du Père.",
+            "14 For He Himself is our peace, who has made both one, and has broken down the middle wall of separation, 15 having abolished in His flesh the enmity, that is, the law of commandments contained in ordinances, so as to create in Himself one new man from the two, thus making peace, 16 and that He might reconcile them both to God in one body through the cross, thereby putting to death the enmity. 17 And He came and preached peace to you who were afar off and to those who were near. 18 For through Him we both have access by one Spirit to the Father.",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "فَلَسْتُمْ إِذًا بَعْدُ غُرَبَاءَ وَنُزُلاً، بَلْ رَعِيَّةٌ مَعَ الْقِدِّيسِينَ وَأَهْلِ بَيْتِ اللهِ، مَبْنِيِّينَ عَلَى أَسَاسِ الرُّسُلِ وَالأَنْبِيَاءِ، وَيَسُوعُ الْمَسِيحُ نَفْسُهُ حَجَرُ الزَّاوِيَةِ، الَّذِي فِيهِ كُلُّ الْبِنَاءِ مُرَكَّبًا مَعًا، يَنْمُو هَيْكَلاً مُقَدَّسًا فِي الرَّبِّ الَّذِي فِيهِ أَنْتُمْ أَيْضًا مَبْنِيُّونَ مَعًا، مَسْكَنًا ِللهِ فِي الرُّوحِ.",
+            "19 Ainsi donc, vous n’êtes plus des étrangers ni des gens de passage, vous êtes concitoyens des saints, vous êtes membres de la famille de Dieu, 20 car vous avez été intégrés dans la construction qui a pour fondations les Apôtres et les prophètes ; et la pierre angulaire, c’est le Christ Jésus lui-même. 21 En lui, toute la construction s’élève harmonieusement pour devenir un temple saint dans le Seigneur. 22 En lui, vous êtes, vous aussi, les éléments d’une même construction pour devenir une demeure de Dieu par l’Esprit Saint.",
+            "19 Now, therefore, you are no longer strangers and foreigners, but fellow citizens with the saints and members of the household of God, 20 having been built on the foundation of the apostles and prophets, Jesus Christ Himself being the chief corner stone, 21 in whom the whole building, being joined together, grows into a holy temple in the Lord, 22 in whom you also are being built together for a dwelling place of God in the Spirit.",
+        ],
+    ],
+    [
+        [
             Prefix.stPaul + "&D=011stSunday&C=Title",
-            " من رسالة بولس الرسول الأولى إلى تيموثاوس 1 : 12 ـ 19",
+            "من رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى تيموثاوس 1 : 12 - 19",
             "1Timothée 1:12-19",
             "",
         ],
@@ -111,35 +208,15 @@ ReadingsArrays.StPaulArray = [[
         ],
     ],
     [
-        [
-            Prefix.stPaul + "&D=012ndSunday",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
+        [Prefix.stPaul + "&D=012ndSunday", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
     ],
     [
         [
             Prefix.stPaul + "&D=013rdSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 2: 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2: 1 - 16 )",
             "1 Corinthiens 2:1-16",
             "1 Corinthians 2:1-16",
         ],
@@ -201,7 +278,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=014thSunday&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس 1 : 1 ـ 14",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس 1 : 1 - 14",
             "2 Corinthiens 1:1-14",
             "2 Corinthians 1:1-14",
         ],
@@ -263,7 +340,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=015thSunday&C=Title",
-            " عبرانيين 7: 1ـ17",
+            " عبرانيين 7: 1-17",
             "Hébreux 7:1-17",
             "Hebrews 7:1-17",
         ],
@@ -299,7 +376,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلو كان بالكهنوت اللاويِّ كمالٌ ـ إذ الشَّعب أخذ النَّاموس عليه ـ ماذا كانت الحاجة بعدُ إلى أن يقوم كاهنٌ آخَرُ على رتبة ملكي صادق، ولا يُقالُ ' على رُتبةِ هارون ' ؟",
+            "فلو كان بالكهنوت اللاويِّ كمالٌ - إذ الشَّعب أخذ النَّاموس عليه - ماذا كانت الحاجة بعدُ إلى أن يقوم كاهنٌ آخَرُ على رتبة ملكي صادق، ولا يُقالُ ' على رُتبةِ هارون ' ؟",
             "11 Si on était parvenu à un parfait accomplissement par le sacerdoce lévitique, car il était la base de la législation donnée au peuple, quel besoin y aurait-il eu encore de susciter un autre prêtre, dans la ligne de Melkisédeq, au lieu de le désigner dans la ligne d'Aaron?",
             "11 Therefore, if perfection were through the Levitical priesthood (for under it the people received the law), what further need was there that another priest should rise according to the order of Melchizedek, and not be called according to the order of Aaron?",
         ],
@@ -325,7 +402,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0201&C=Title",
-            " بولس الرسول إلى العبرانيين( 11 : 32 ـ 12 : 1 ـ 2 )",
+            " بولس الرسول إلى العبرانيين( 11 : 32 - 12 : 1 - 2 )",
             "Hébreux 11:32 - 12:1 - 2",
             "Hebrews 11:32-12:2",
         ],
@@ -381,7 +458,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0801&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين ( 11 : 17 ـ 27 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين ( 11 : 17 - 27 )",
             "Hébreux 11 : 17 - 27",
             "Hebrews 11:17-27",
         ],
@@ -425,7 +502,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1601&C=Title",
-            " عبرانيين 9: 1ـ10",
+            " عبرانيين 9: 1-10",
             "Hébreux 9:1-10",
             "Hebrews 9:1-10",
         ],
@@ -437,7 +514,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبعد الحجاب الثَّاني القُبة التى تُدعَى ' قُدس الأقداس ' وكان فيها مِبخرةٌ من ذهبٍ، وتابوتُ العهـدِ المُصفَّح بالذَّهبِ من كلِّ جانبٍ، وكان فيها قِسطُ الذَّهب الذي فيه المنُّ، وعصاة هارون التى أفرخت، ولوحا العهدِ.",
+            "وبعد الحجاب الثَّاني القُبة التى تُدعَى ' قُدس الأقداس ' وكان فيها مِبخرةٌ من ذهبٍ، وتابوتُ العه-دِ المُصفَّح بالذَّهبِ من كلِّ جانبٍ، وكان فيها قِسطُ الذَّهب الذي فيه المنُّ، وعصاة هارون التى أفرخت، ولوحا العهدِ.",
             "3 Puis, derrière le second voile, se trouvait une tente, appelée Saint des Saints, 4 avec un brûle parfum en or et l'arche de l'alliance toute recouverte d'or; dans celle-ci un vase d'or qui contenait la manne, le bâton d'Aaron qui avait fleuri et les tables de l'alliance.",
             "3 and behind the second veil, the part of the tabernacle which is called the Holiest of All, 4 which had the golden censer and the ark of the covenant overlaid on all sides with gold, in which were the golden pot that had the manna, Aaron's rod that budded, and the tablets of the covenant;",
         ],
@@ -449,7 +526,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أمَّا القبة الثَّانية فيدخلها رئيس الأحبار وحـده مـرَّة فى كـلِّ سـنةٍ، وليـس بغيـر دم الـذي كان يُقدِّمه عن نفسه وعن جهالات الشَّعبِ، وهذا يُظهره الرُّوح القدس أن طريق الأقداس لم يُظهَر بعدُ، ما دامت القُبة الأولى قائمةٌ،",
+            "أمَّا القبة الثَّانية فيدخلها رئيس الأحبار وح-ده م-رَّة فى ك-لِّ س-نةٍ، ولي-س بغي-ر دم ال-ذي كان يُقدِّمه عن نفسه وعن جهالات الشَّعبِ، وهذا يُظهره الرُّوح القدس أن طريق الأقداس لم يُظهَر بعدُ، ما دامت القُبة الأولى قائمةٌ،",
             "7 Mais, dans la seconde, une seule fois par an, seul entre le grand prêtre, et encore, ce n'est pas sans offrir du sang pour ses manquements et pour ceux du peuple.8 Le Saint Esprit a voulu montrer ainsi que le chemin du sanctuaire n'est pas encore manifesté, tant que subsiste la première tente.",
             "7 But into the second part the high priest went alone once a year, not without blood, which he offered for himself and for the people's sins committed in ignorance; 8 the Holy Spirit indicating this, that the way into the Holiest of All was not yet made manifest while the first tabernacle was still standing.",
         ],
@@ -469,13 +546,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1701&C=Title",
-            "رسالة بولس الرسول الأولى إلى أهل كورنثوس: (1: 17ـ31)",
+            "رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس: (1: 17-31)",
             "1 Corinthiens: (1: 17-31)",
             "1 Corinthians: (1: 17-31)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنهُ لَمْ يُرْسِلْنِي الْمَسِيحُ لأُعَمِّدَ بَلْ لأُبشِّرَ، لَيْسَ بِحِكْمَةِ الكَلاَمِ لِكَيْ لا يَكُونَ صَلِيبُ الْمَسِيحِ بَاطِلاً. لأنَّ كَلِمَةَ الصَّلِيبِ عِنْدَ الْهَالِكِينَ جَهَالَةٌ، وَأمَّا عِنْدَنَا نَحْنُ الْمُخَلَّصِينَ فَهُوَ قُوَّةُ اللَّهِ، لأنهُ مَكْتُوبٌ: \" إنِّي سَأُبِيدُ حِكْمَةَ الْحُكَمَاءِ، وَسَأرْذِلُ عِلْمَ الْفُهَمَاءِ \". فَأيْنَ الْحَكِيمُ؟ وَأيْنَ الكَاتِبُ؟ وَأيْنَ مُبَاحِثُ هذَا الدَّهْرِ؟",
+            'لأنهُ لَمْ يُرْسِلْنِي الْمَسِيحُ لأُعَمِّدَ بَلْ لأُبشِّرَ، لَيْسَ بِحِكْمَةِ الكَلاَمِ لِكَيْ لا يَكُونَ صَلِيبُ الْمَسِيحِ بَاطِلاً. لأنَّ كَلِمَةَ الصَّلِيبِ عِنْدَ الْهَالِكِينَ جَهَالَةٌ، وَأمَّا عِنْدَنَا نَحْنُ الْمُخَلَّصِينَ فَهُوَ قُوَّةُ اللَّهِ، لأنهُ مَكْتُوبٌ: " إنِّي سَأُبِيدُ حِكْمَةَ الْحُكَمَاءِ، وَسَأرْذِلُ عِلْمَ الْفُهَمَاءِ ". فَأيْنَ الْحَكِيمُ؟ وَأيْنَ الكَاتِبُ؟ وَأيْنَ مُبَاحِثُ هذَا الدَّهْرِ؟',
             "17 Car Christ ne m'a pas envoyé pour baptiser, mais pour annoncer l'Évangile, et cela sans la sagesse du langage, afin que la croix du Christ ne soit pas rendue vaine. 18 Car la parole de la croix est folie pour ceux qui périssent ; mais pour nous qui sommes sauvés, elle est puissance de Dieu. 19 Aussi est–il écrit : \"Je détruirai la sagesse des sages, Et j’anéantirai l’intelligence des intelligents. 20 Où est le sage? où est le scribe? où est le disputeur de ce siècle?\"",
             " 17 For Christ did not send me to baptize, but to preach the gospel, not with wisdom of words, lest the cross of Christ should be made of no effect. The New King James Version (Nashville: Thomas Nelson, 1982), 1 Co 1:16–17.18 For the message of the cross is foolishness to those who are perishing, but to us who are being saved it is the power of God. 19 For it is written: I will destroy the wisdom of the wise, And bring to nothing the understanding of the prudent. 20 Where is the wise? Where is the scribe? where is the disputer of this world? ",
         ],
@@ -493,7 +570,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وَأنْتُمْ أيْضاً مِنْهُ بِالْمَسِيحِ يَسُوعَ، الَّذِي صَارَ لَنَا حِكْمَةً مِنَ قِبَلِ اللَّهِ بِرَّاً وَطَهَارَةً وَخَلاَصَاً. كَيْ كَمَا هُوَ مَكْتُوبٌ: \" مَنْ يَفْتَخِرْ فَلْيَفْتَخِرْ بِالرَّبّ \"",
+            'وَأنْتُمْ أيْضاً مِنْهُ بِالْمَسِيحِ يَسُوعَ، الَّذِي صَارَ لَنَا حِكْمَةً مِنَ قِبَلِ اللَّهِ بِرَّاً وَطَهَارَةً وَخَلاَصَاً. كَيْ كَمَا هُوَ مَكْتُوبٌ: " مَنْ يَفْتَخِرْ فَلْيَفْتَخِرْ بِالرَّبّ "',
             "30 Or, c’est par lui que vous êtes en Christ–Jésus qui, de par Dieu, a été fait pour nous sagesse, et aussi justice, sanctification et rédemption, 31 afin, comme il est écrit : Que celui qui se glorifie se glorifie dans le Seigneur.",
             "30 But of Him you are in Christ Jesus, who became for us wisdom from God--and righteousness and sanctification and redemption-- 31 that, as it is written, He who glories, let him glory in the Lord.",
         ],
@@ -501,7 +578,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1801&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية ((6:11-18",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية ((6:11-18",
             "Galatians 6:11-18",
             "Galatians 6:11-18",
         ],
@@ -533,7 +610,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1901&C=Title",
-            "رسالة بولس الرسول إلى أهل كولوسي (2: 6ـ19)",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي (2: 6-19)",
             "Colossiens 2: 6-19",
             "Colossiens 2: 6-19",
         ],
@@ -577,7 +654,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2101&C=Title",
-            "رسالة بولس الرسول إلى أهل فيلبي (1: 1ـ11)",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فيلبي (1: 1-11)",
             "Philippiens 1: 1-11",
             "Philippians 1: 1-11",
         ],
@@ -603,37 +680,37 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2601&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل رومية (1:1-17)",
-            "Romains 1:1-17",
-            "Romans 1:1-17",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ رُومِيَّة (1:1-17)",
+            "Romains (1: 1-17)",
+            "Romans (1: 1-17)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بولس، عبدٌ ليسوعَ المسيح، المدعُوُّ رسولاً، المُفرَزُ لإنجيلِ اللـهِ، الذي سبق فوعد به من قبل أنبيائه في الكُتُبِ المُقدَّسةِ، عن ابنه.",
+            "بولس، عبدٌ ليسوعَ المسيح، المدعُوُّ رسولاً، المُفرَزُ لإنجيلِ الل-هِ، الذي سبق فوعد به من قبل أنبيائه في الكُتُبِ المُقدَّسةِ، عن ابنه.",
             "1 Paul, serviteur de Jésus Christ, appelé à être apôtre, mis à part pour annoncer l'Évangile de Dieu. 2 Cet Évangile, qu'il avait déjà promis par ses prophètes dans les Écritures saintes,3 concerne son Fils,",
             "1 Paul, a bondservant of Jesus Christ, called to be an apostle, separated to the gospel of God 2 which He promised before through His prophets in the Holy Scriptures, 3 concerning His Son Jesus Christ our Lord,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي صار مِن نسلِ داود بحسب الجسد، ابنَ اللـهِ المرسوم بقوَّةٍ بحسبِ روح القداسةِ، بقيامةِ الأمواتِ: يسوعَ المسيح ربِّنا. الذي به نُلنا النعمة والرسالة لإطاعة الإيمان في جميع الأمم على اسمه،",
+            "الذي صار مِن نسلِ داود بحسب الجسد، ابنَ الل-هِ المرسوم بقوَّةٍ بحسبِ روح القداسةِ، بقيامةِ الأمواتِ: يسوعَ المسيح ربِّنا. الذي به نُلنا النعمة والرسالة لإطاعة الإيمان في جميع الأمم على اسمه،",
             "issu selon la chair de la lignée de David, établi, 4 selon l'Esprit Saint, Fils de Dieu avec puissance par sa Résurrection d'entre les morts, Jésus Christ notre Seigneur.5 Par lui nous avons reçu la grâce d'être apôtre pour conduire à l'obéissance de la foi, à la gloire de son nom,",
             "who was born of the seed of David according to the flesh, 4 and declared to be the Son of God with power according to the Spirit of holiness, by the resurrection from the dead. 5 Through Him we have received grace and apostleship for obedience to the faith among all nations for His name,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذينَ بينهم أنتم أيضاً مدعُوُّو يسوعَ المسيح. إلى جميع الساكنين برومية، أحبَّاءَ اللـهِ، المدعوِّيين الأطهار: النعمة والسلام من اللـه أبينا وربِّنا يسوعَ المسيح.",
+            "الذينَ بينهم أنتم أيضاً مدعُوُّو يسوعَ المسيح. إلى جميع الساكنين برومية، أحبَّاءَ الل-هِ، المدعوِّيين الأطهار: النعمة والسلام من الل-ه أبينا وربِّنا يسوعَ المسيح.",
             "6 tous les peuples païens, dont vous êtes, vous aussi que Jésus Christ a appelés. 7 A tous les bien-aimés de Dieu qui sont à Rome, aux saints par l'appel de Dieu, à vous, grâce et paix de la part de Dieu notre Père et du Seigneur Jésus Christ.",
             "6 among whom you also are the called of Jesus Christ; 7 To all who are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فأوَّلاً، أشكُرُ إلهي يسوع المسيح مِن جهة جميعكُم، لأنَّ إيمانكُم يُنادى به في كلِّ العالم. لأنَّ شاهدي هو اللـه الذي أعبده بروحي، في إنجيل ابنه،",
+            "فأوَّلاً، أشكُرُ إلهي يسوع المسيح مِن جهة جميعكُم، لأنَّ إيمانكُم يُنادى به في كلِّ العالم. لأنَّ شاهدي هو الل-ه الذي أعبده بروحي، في إنجيل ابنه،",
             "8 Tout d'abord, je rends grâce à mon Dieu par Jésus Christ pour vous tous: dans le monde entier on proclame que vous croyez. 9 Car Dieu m'en est témoin, lui à qui je rends un culte en mon esprit en annonçant l'Évangile de son Fils:",
             "8 First, I thank my God through Jesus Christ for you all, that your faith is spoken of throughout the whole world. 9 For God is my witness, whom I serve with my spirit in the gospel of His Son,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كيف بلا انقطاع أَذكُركُم، مُتَضَرِّعاً كل حين في صلواتي لعل يُسهِّل طريقي بمشيئة اللـه أن آتي إليكُم.لأنِّي مُشتاقٌ أن أراكُم، لكي أعطيكم نعمة روحيَّة لثباتكم،",
+            "كيف بلا انقطاع أَذكُركُم، مُتَضَرِّعاً كل حين في صلواتي لعل يُسهِّل طريقي بمشيئة الل-ه أن آتي إليكُم.لأنِّي مُشتاقٌ أن أراكُم، لكي أعطيكم نعمة روحيَّة لثباتكم،",
             "je fais sans relâche mention de vous, demandant continuellement dans mes prières d'avoir enfin, 10 par sa volonté, l'occasion de me rendre chez vous.11 J'ai en effet un très vif désir de vous voir, afin de vous communiquer quelque don spirituel pour que vous en soyez affermis,",
             "that without ceasing I make mention of you always in my prayers, 10 making request if, by some means, now at last I may find a way in the will of God to come to you. 11 For I long to see you, that I may impart to you some spiritual gift, so that you may be established--",
         ],
@@ -651,7 +728,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنِّي لا أستحي بالإنجيل، لأنَّه قوَّةُ اللـهِ للخلاص لكلِّ مَنْ يؤمنُ: لليهوديِّ أوَّلاً ثمَّ لليونانيِّ. لأنَّ فيهِ برُّ اللـهِ يظهر بإيمانٍ، لإيمانٍ، كما هو مكتوبٌ ' أمَّا البارُّ فبالإيمانِ يحيا '.",
+            "لأنِّي لا أستحي بالإنجيل، لأنَّه قوَّةُ الل-هِ للخلاص لكلِّ مَنْ يؤمنُ: لليهوديِّ أوَّلاً ثمَّ لليونانيِّ. لأنَّ فيهِ برُّ الل-هِ يظهر بإيمانٍ، لإيمانٍ، كما هو مكتوبٌ ' أمَّا البارُّ فبالإيمانِ يحيا '.",
             "16 Car je n'ai pas honte de l'Évangile: il est puissance de Dieu pour le salut de quiconque croit, du Juif d'abord, puis du Grec. 17 C'est en lui en effet que la justice de Dieu est révélée, par la foi et pour la foi, selon qu'il est écrit: Celui qui est juste par la foi vivra.",
             "16 For I am not ashamed of the gospel of Christ, for it is the power of God to salvation for everyone who believes, for the Jew first and also for the Greek. 17 For in it the righteousness of God is revealed from faith to faith; as it is written, The just shall live by faith.",
         ],
@@ -659,7 +736,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=021stSunday&C=Title",
-            "رسالة بولس الرسول الثانية إلى أهل كورنثوس ) 2:12-3:6)",
+            "رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس ) 2:12-3:6)",
             "2 Corinthians 2:12-3:6",
             "2 Corinthians 2:12-3:6",
         ],
@@ -703,7 +780,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=023rdSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس16:12-24",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس16:12-24",
             "1 Corinthiens 16:12-24",
             "1 Corinthians 16:12-24",
         ],
@@ -741,7 +818,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1202&C=Title",
-            " بولس الرسول الثانية إلى أهل أفسس (4:11-19)",
+            " بولس الرسول الثانية إلى أَهْلِ أَفَسُسْ (4:11-19)",
             "Ephesians 4:11-19",
             "Ephesians 4:11-19",
         ],
@@ -785,7 +862,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1402&C=Title",
-            " رسالة بولس الرسول إلى أهل تيطس ( 2 : 11 – 3 : 7 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ تيطس ( 2 : 11 – 3 : 7 )",
             "Titus 2:11-3:7",
             "Titus 2:11-3:7",
         ],
@@ -835,7 +912,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2202&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كولوسى 4:2-18",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كُولُوسِي 4:2-18",
             "Colossians 4:2-18",
             "Colossians 4:2-18",
         ],
@@ -889,7 +966,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وقولوا لارخبس انظر الى الخدمة التي قبلتها في الرب لكي تتممها. السلام بيدي انا بولس.اذكروا وثقي.النعمة معكم.آمين.كتبت الى اهل كولوسي من رومية بيد تيخيكس وأنسيمس.",
+            "وقولوا لارخبس انظر الى الخدمة التي قبلتها في الرب لكي تتممها. السلام بيدي انا بولس.اذكروا وثقي.النعمة معكم.آمين.كتبت الى اهل كُولُوسِي من رُومِيَّة بيد تيخيكس وأنسيمس.",
             "17 Dites à Archippe : Prends garde au service que tu as reçu du Seigneur, afin de le bien remplir. 18 Je vous salue, moi Paul, de ma propre main. Souvenez–vous de mes chaînes. Que la grâce soit avec vous !",
             "17 And say to Archippus, Take heed to the ministry which you have received in the Lord, that you may fulfill it.'' 18 This salutation by my own hand-- Paul. Remember my chains. Grace be with you. Amen.",
         ],
@@ -897,7 +974,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2702&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين(11:17-31)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين(11:17-31)",
             "HEBREWS 11:17-31",
             "HEBREWS 11:17-31",
         ],
@@ -953,7 +1030,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=031stSunday&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 9 : 1 ـ 9)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 9 : 1 - 9)",
             "2 Corinthians 9:1-9",
             "2 Corinthians 9:1-9",
         ],
@@ -971,13 +1048,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كي تكونوا مُستعدَّين كما قلت. حتَّى إذا جاء معي مكدونيُّون ووجدوكم غير مُستعدِّين، لا نخجل نحن ـ حتَّى لا نقول إنكم أنتم ـ بهذا المقدار.",
+            "كي تكونوا مُستعدَّين كما قلت. حتَّى إذا جاء معي مكدونيُّون ووجدوكم غير مُستعدِّين، لا نخجل نحن - حتَّى لا نقول إنكم أنتم - بهذا المقدار.",
             "as I said, you may be ready; 4 lest if some Macedonians come with me and find you unprepared, we (not to mention you!) should be ashamed of this confident boasting.",
             "et que vous soyez prêts, comme je l’ai dit.4 Il ne faudrait pas, si les Macédoniens m’accompagnent et ne vous trouvent pas prêts, que cette assurance tourne à notre confusion, pour ne pas dire à la vôtre.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فرأيتُ لازِماً أن أُرضي الإخوة أن يسبقوا إِليكم، ويهيِّئوا قبلاً بركتكم التي وعدتم بها من الأولٍ، لتكون هي مُعدَّةً هكذا كأنَّها بركةٌ، لا كأنَّها اغـتصابٌ.",
+            "فرأيتُ لازِماً أن أُرضي الإخوة أن يسبقوا إِليكم، ويهيِّئوا قبلاً بركتكم التي وعدتم بها من الأولٍ، لتكون هي مُعدَّةً هكذا كأنَّها بركةٌ، لا كأنَّها اغ-تصابٌ.",
             "5 Therefore I thought it necessary to exhort the brethren to go to you ahead of time, and prepare your generous gift beforehand, which you had previously promised, that it may be ready as a matter of generosity and not as a grudging obligation.",
             "5 J’ai donc estimé nécessaire d’exhorter les frères à me devancer chez vous, et à s’occuper de votre libéralité déjà promise, afin qu’elle soit prête, comme une libéralité, et non comme un acte d’avarice.",
         ],
@@ -997,7 +1074,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=032ndSunday&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين( 6 : 7 ـ 15 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين( 6 : 7 - 15 )",
             "Hebrews 6:7-15",
             "Hebrews 6:7-15",
         ],
@@ -1035,7 +1112,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=033rdSunday&C=Title",
-            "رسالة بولس الرَّسول الثانية إلى أهل تسالونيك (1: 1ـ12)",
+            "رسالة بولس الرَّسول الثانية إلى أَهْلِ تسالونيك (1: 1-12)",
             "2 Thessaloniciens (1: 1-12)",
             "2 Thessalonians (1: 1-12)",
         ],
@@ -1067,7 +1144,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=034thSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 4 : 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 4 : 1 - 16 )",
             "1 Corinthians 4:1-16",
             "1 Corinthians 4:1-16",
         ],
@@ -1141,7 +1218,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0803&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين (12:21 - 13:1-2)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (12:21 - 13:1-2)",
             "Hébreux 12:21 - 13:1-2",
             "Hebrews 12:21-39 &13:1-2",
         ],
@@ -1185,9 +1262,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0903&C=Title",
-            " بولس الرسول إلى أهل رومية (4:13-25&5:1-5)",
-            "Romains 4:13 - 5:1-5",
-            "Romans4:13-25&5:1-5",
+            " بولس الرسول إلى أَهْلِ رُومِيَّة (4:13-25&5:1-5)",
+            "Romains (4: 13 & 5: 1-5)",
+            "Romans (4: 13-25 & 5: 1-5)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -1253,7 +1330,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1203&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين (1 : 1 – 2 : 4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (1 : 1 – 2 : 4 )",
             "Hébreux 1:1 - 2:4",
             "Hebrews 1:1-14 & 2:1-4",
         ],
@@ -1321,7 +1398,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1503&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين (12:3-14)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (12:3-14)",
             "Hebrews 12:3-14",
             "Hebrews 12:3-14",
         ],
@@ -1365,7 +1442,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1703&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل تيطس (3:10 - 4:1-22 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ تيطس (3:10 - 4:1-22 )",
             "2 Timothée 3:10 - 4:1-22",
             "2Timothy 3:10-17& 4:1-22",
         ],
@@ -1462,10 +1539,10 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=2203&C=Title",
-            " رسالة بولس الرسول إلى رومية (8:14-27)",
-            "Romains 8 : 14 - 27",
-            "Romans 8:14-27",
+            Prefix.stPaul + "&D=2203||2612&C=Title",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى رُومِيَّة (8:14-27)",
+            "Romains (8: 14-27)",
+            "Romans (8: 14-27)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -1513,7 +1590,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2403&C=Title",
-            " بولس الرسول الثانية إلى أهل تيموثاوس ( 5 : 17 -6 : 2 )",
+            " بولس الرسول الثانية إلى أَهْلِ تيموثاوس ( 5 : 17 -6 : 2 )",
             "1 Timothée 5:17 - 6:1-2",
             "1 Timothy 5:17-25 & 6:1-2",
         ],
@@ -1557,7 +1634,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2503&C=Title",
-            " بولس الرسول الثانية إلى أهل كورونثوس ( 10 :1 -18 )",
+            " بولس الرسول الثانية إلى أَهْلِ كورونثوس ( 10 :1 -18 )",
             "2 Corinthiens 10 : 1 - 18",
             "2 Corinthians 10:1-18",
         ],
@@ -1625,7 +1702,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2703&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية (1 :1 - 19 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية (1 :1 - 19 )",
             "Galates 1 : 1 - 19",
             "Galatians 1:1-19",
         ],
@@ -1687,7 +1764,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2803&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين (7:18 - 8:1-13 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين (7:18 - 8:1-13 )",
             "Hébreux 7:18 - 8:1-13",
             "Hebrews7:18-28 & 8:1-13",
         ],
@@ -1791,7 +1868,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2903&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل العبرانيين (4:14 - 5:1-14 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ العبرانيين (4:14 - 5:1-14 )",
             "Hébreux 4:14 - 5:1-14",
             "Hebrews 4:14-5:14",
         ],
@@ -1853,19 +1930,19 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=041stSunday&C=Title",
-            " البولس من رسالة بولس الرسول إلى أهل رومية ( 1 : 1 ـ 17 )",
+            " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 1 : 1 - 17 )",
             "Romans 1:1-17",
             "Romans 1:1-17",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بولس، عبدٌ ليسوعَ المسيح، الرسول المدعو المُفرَزُ لإنجيلِ اللـهِ، الذي سبق فوعد به من قبل أنبيائه في الكُتُبِ المُقدَّسةِ، عن ابنه.",
+            "بولس، عبدٌ ليسوعَ المسيح، الرسول المدعو المُفرَزُ لإنجيلِ الل-هِ، الذي سبق فوعد به من قبل أنبيائه في الكُتُبِ المُقدَّسةِ، عن ابنه.",
             "1 Paul, a bondservant of Jesus Christ, called to be an apostle, separated to the gospel of God 2 which He promised before through His prophets in the Holy Scriptures, 3 concerning His Son Jesus Christ our Lord,",
             "1 Paul, serviteur du Christ–Jésus, appelé à être apôtre, mis à part pour l’Évangile de Dieu, 2 cet Évangile, Dieu l’avait promis auparavant par ses prophètes dans les saintes Écritures, 3 il concerne son Fils,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي صار مِن نسلِ داود بحسب الجسد، ابنَ اللـهِ المرسوم بقوَّةٍ بحسبِ روح القداسةِ، بقيامةِ الأمواتِ: يسوعَ المسيح ربِّنا.",
+            "الذي صار مِن نسلِ داود بحسب الجسد، ابنَ الل-هِ المرسوم بقوَّةٍ بحسبِ روح القداسةِ، بقيامةِ الأمواتِ: يسوعَ المسيح ربِّنا.",
             "who was born of the seed of David according to the flesh, 4 and declared to be the Son of God with power according to the Spirit of holiness, by the resurrection from the dead.",
             "né de la descendance de David selon la chair, 4 et déclaré Fils de Dieu avec puissance selon l’Esprit de sainteté, par sa résurrection d’entre les morts : Jésus–Christ notre Seigneur.",
         ],
@@ -1877,13 +1954,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إلى جميع الساكنين في رومية، أحبَّاءَ اللـهِ، المدعوِّين الأطهار: النعمة لكم والسلام من اللـه أبينا وربِّنا يسوعَ المسيح. فأوَّلاً، أشكُرُ إلهي يسوع المسيح مِن جهة جميعكُم، لأنَّ إيمانكُم يُنادى به في كلِّ العالم.",
+            "إلى جميع الساكنين في رومية، أحبَّاءَ الل-هِ، المدعوِّين الأطهار: النعمة لكم والسلام من الل-ه أبينا وربِّنا يسوعَ المسيح. فأوَّلاً، أشكُرُ إلهي يسوع المسيح مِن جهة جميعكُم، لأنَّ إيمانكُم يُنادى به في كلِّ العالم.",
             "7 To all who are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ. 8 First, I thank my God through Jesus Christ for you all, that your faith is spoken of throughout the whole world.",
             "7 à tous ceux qui, à Rome, sont bien–aimés de Dieu, appelés à être saints : Que la grâce et la paix vous soient données de la part de Dieu notre Père et du Seigneur Jésus–Christ ! 8 Je rends d’abord grâces à mon Dieu par Jésus–Christ, au sujet de vous tous, parce que votre foi est renommée dans le monde entier.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّ شاهدي هو اللـه الذي أعبده بروحي، في إنجيل ابنه، كيف بلا انقطاع أَذكُركُم، مُتَضَرِّعاً كل حين في صلواتي أن يُسهِّل طريقي بمشيئة اللـه أن آتي إليكُم.",
+            "لأنَّ شاهدي هو الل-ه الذي أعبده بروحي، في إنجيل ابنه، كيف بلا انقطاع أَذكُركُم، مُتَضَرِّعاً كل حين في صلواتي أن يُسهِّل طريقي بمشيئة الل-ه أن آتي إليكُم.",
             "9 For God is my witness, whom I serve with my spirit in the gospel of His Son, that without ceasing I make mention of you always in my prayers, 10 making request if, by some means, now at last I may find a way in the will of God to come to you",
             "9 Dieu, que je sers en mon esprit, en (annonçant) l’Évangile de son Fils, m’est témoin que je fais mention de vous toujours 10 et continuellement dans mes prières ; je demande d’avoir enfin, Dieu voulant, une occasion favorable d’aller chez vous.",
         ],
@@ -1907,7 +1984,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنِّي لا أستحق بالإنجيل، لأنَّه قوَّةُ اللـهِ للخلاص لكلِّ مَنْ يؤمنُ: لليهوديِّ أوَّلاً ثمَّ لليونانيِّ. لأنَّ فيهِ يظهر برُّ اللـهِ بإيمانٍ، لإيمانٍ، كما هو مكتوبٌ ' أنَّ البارُّ فبالإيمانِ يحيا '.",
+            "لأنِّي لا أستحق بالإنجيل، لأنَّه قوَّةُ الل-هِ للخلاص لكلِّ مَنْ يؤمنُ: لليهوديِّ أوَّلاً ثمَّ لليونانيِّ. لأنَّ فيهِ يظهر برُّ الل-هِ بإيمانٍ، لإيمانٍ، كما هو مكتوبٌ ' أنَّ البارُّ فبالإيمانِ يحيا '.",
             "16 For I am not ashamed of the gospel of Christ, for it is the power of God to salvation for everyone who believes, for the Jew first and also for the Greek.17 For in it the righteousness of God is revealed from faith to faith; as it is written, The just shall live by faith.",
             "16 Car je n’ai pas honte de l’Évangile : c’est une puissance de Dieu pour le salut de quiconque croit, du Juif premièrement, puis du Grec.17 En effet la justice de Dieu s’y révèle par la foi et pour la foi, selon qu’il est écrit : Le juste vivra par la foi.",
         ],
@@ -1915,9 +1992,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=042ndSunday&C=Title",
-            " البولس من رسالة بولس الرسول إلى أهل رومية( 3 : 1ـ 4 : 1ـ 3 )",
-            "Romans 3:1-4:3",
-            "Romains 3:1-4:3",
+            " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 3 : 1- 4 : 1- 3 )",
+            "Romans (3: 1-30 & 4:1-3)",
+            "Romains (3: 1-30 & 4:1-3)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -1939,7 +2016,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فماذا نقول؟ ألعلَّ الله الذي يجلِب الغضب ظالمٌ؟ قُلتُ هذا بحسب الإنسان. حاشا! فكيفَ يدينُ الله العالمَ؟ فإنَّه إن كان صدقُ الله قد ازداد بكذبي لمجدِهِ، فلماذا أُدان أنا بعد كخاطـئٍ؟",
+            "فماذا نقول؟ ألعلَّ الله الذي يجلِب الغضب ظالمٌ؟ قُلتُ هذا بحسب الإنسان. حاشا! فكيفَ يدينُ الله العالمَ؟ فإنَّه إن كان صدقُ الله قد ازداد بكذبي لمجدِهِ، فلماذا أُدان أنا بعد كخاط-ئٍ؟",
             "what shall we say? Is God unjust who inflicts wrath? (I speak as a man.) 6 Certainly not! For then how will God judge the world? 7 For if the truth of God has increased through my lie to His glory, why am I also still judged as a sinner?",
             "que dirons nous ? Dieu est il injuste quand il donne cours à sa colère ? Je parle à la manière des hommes – 6 Certes non ! Autrement, comment Dieu jugerait il le monde ? 7 Et si, par mon mensonge, la vérité de Dieu abonde pour sa gloire, pourquoi suis–je moi–même encore jugé comme pécheur ?",
         ],
@@ -2011,7 +2088,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فماذا نقول عن ابراهيم إذ وجدَ أوُّلُ أبٍ حسب الجسدِ لأنهُ أن كانَ ابراهيم قد تبررَ بالأعمالِ فلهُ فخرٌ، ولكن ليسَ لدى اللهِ. لأنهُ ماذا يقول الكتابِ: ' آمن ابراهيم باللـه فَحُسبَ لهُ براً '.",
+            "فماذا نقول عن ابراهيم إذ وجدَ أوُّلُ أبٍ حسب الجسدِ لأنهُ أن كانَ ابراهيم قد تبررَ بالأعمالِ فلهُ فخرٌ، ولكن ليسَ لدى اللهِ. لأنهُ ماذا يقول الكتابِ: ' آمن ابراهيم بالل-ه فَحُسبَ لهُ براً '.",
             "1 What then shall we say that Abraham our father has found according to the flesh? 2 For if Abraham was justified by works, he has something to boast about, but not before God. 3 For what does the Scripture say? Abraham believed God, and it was accounted to him for righteousness.",
             "1 Que dirons–nous donc d’Abraham, notre ancêtre selon la chair ? Qu’a–t–il obtenu ? 2 Si en effet Abraham a été justifié par les oeuvres, il a sujet de se glorifier. Mais devant Dieu, il n’en est pas ainsi ;3 en effet, que dit l’Écriture ? Abraham crut à Dieu, et cela lui fut compté comme justice.",
         ],
@@ -2019,9 +2096,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=043rdSunday&C=Title",
-            " البولس من رسالة بولس الرسول إلى أهل رومية ( 4 : 4 ـ 24 )",
-            "Romans 4:4-24",
-            "Romains 4:4-24",
+            " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 4 : 4 - 24 )",
+            "Romains (4: 4-24)",
+            "Romans (4: 4-24)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2079,7 +2156,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وإذ لم يضعف في الإيمان ناظراً جسدهُ ـ قد ماتَ وَهوَ ابن نحو مئَةَ سنةٍ ـ ولا موتِ مسـتودع سـارَّةَ.",
+            "وإذ لم يضعف في الإيمان ناظراً جسدهُ - قد ماتَ وَهوَ ابن نحو مئَةَ سنةٍ - ولا موتِ مس-تودع س-ارَّةَ.",
             "19 And not being weak in faith, he did not consider his own body, already dead (since he was about a hundred years old), and the deadness of Sarah's womb.",
             "19 Et, sans faiblir dans la foi, il considéra son corps presque mourant, puisqu’il avait près de cent ans, et le sein maternel de Sara déjà atteint par la mort.",
         ],
@@ -2099,9 +2176,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=044thSunday&C=Title",
-            " البولس من رسالة بولس الرسول إلىأهل رومية( 9 : 6 ـ 33 )",
-            "Romans 9:6-33",
-            "Romains 9:6-33",
+            " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلىأهل رومية( 9 : 6 - 33 )",
+            "Romans (9: 6-33)",
+            "Romains (9: 6-33)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2153,7 +2230,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنْ كانَ اللهُ، وهو يُريدُ أن يُظهِر غضَبهُ ويُرينا قُوَّتهُ، أتى بأناةٍ طويلةٍ آنيةَ غضبٍ مُهيَّأةً للهلاكِ. ولكي يُظهِر غِنَى مجدهِ على آنيةِ رحمةٍ قد سبقَ اللـهُ فأعدَّها للمـجدِ،",
+            "فإنْ كانَ اللهُ، وهو يُريدُ أن يُظهِر غضَبهُ ويُرينا قُوَّتهُ، أتى بأناةٍ طويلةٍ آنيةَ غضبٍ مُهيَّأةً للهلاكِ. ولكي يُظهِر غِنَى مجدهِ على آنيةِ رحمةٍ قد سبقَ الل-هُ فأعدَّها للم-جدِ،",
             "22 What if God, wanting to show His wrath and to make His power known, endured with much longsuffering the vessels of wrath prepared for destruction, 23 and that He might make known the riches of His glory on the vessels of mercy, which He had prepared beforehand for glory,",
             "22 Et si Dieu, voulant montrer sa colère et faire connaître sa puissance, a supporté avec une grande patience des vases de colère formés pour la perdition ? 23 Et s’il a voulu faire connaître la richesse de sa gloire à des vases de miséricorde qu’il a d’avance préparés pour la gloire ?",
         ],
@@ -2197,7 +2274,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2204&C=Title",
-            " بولس الرسول الأولى إلى أهل عبرانين 2:5-18",
+            " بولس الرسول الأولى إلى أَهْلِ عبرانين 2:5-18",
             "Hebrews 2:5-18",
             "Hebrews 2:5-18",
         ],
@@ -2253,7 +2330,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2304&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين ( 11 : 17 ـ 27 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين ( 11 : 17 - 27 )",
             "Hébreux 11 : 17 - 27",
             "Hebrews 11:17-27",
         ],
@@ -2297,7 +2374,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2804&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية ( ( 3:15-29 &4:1-18",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية ( ( 3:15-29 &4:1-18",
             "Galates 3:15 - 4:1-18",
             "Galatians 3:15-29 &4:1-18",
         ],
@@ -2413,7 +2490,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2904&C=Title",
-            " رسالة بولس الرسول إلى أهل عبرانيين (1:1-14 &2:1-4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ عبرانيين (1:1-14 &2:1-4 )",
             "Hebrews 1:1-14 &2:1-4",
             "Hebrews 1:1-14 &2:1-4",
         ],
@@ -2481,7 +2558,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=3004&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية (4:19-31 & 5:1)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية (4:19-31 & 5:1)",
             "Galatians 4:19-31 & 5:1",
             "Galatians 4:19-31 & 5:1",
         ],
@@ -2531,7 +2608,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0105&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورونثوس (11:16-33 &12:1-12)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورونثوس (11:16-33 &12:1-12)",
             "2 Cor 11:16-33 &12:1-12",
             "2 Cor 11:16-33 &12:1-12",
         ],
@@ -2641,7 +2718,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0305&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس 13:11-13 & 14:1-4",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس 13:11-13 & 14:1-4",
             "1 COR 13:11-13 & 14:1-4",
             "1 COR 13:11-13 & 14:1-4",
         ],
@@ -2672,60 +2749,48 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=0405&C=Title",
-            " بولس الرسول الأولى إلى أهل رومية ( 10 : 4 -18 )",
-            "Romains 10 : 4 - 18",
-            "Romans 10 :4-18",
+            Prefix.stPaul + "&D=Jonah4||2609||0511||0113&C=Title",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَةِ (10: 4-18)",
+            "Romains (10: 4-18)",
+            "Romans (10: 4-18)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لان غاية الناموس هي المسيح للبر لكل من يؤمن.لان موسى يكتب في البر الذي بالناموس ان الانسان الذي يفعلها سيحيا بها.",
-            "4 Car la fin de la loi, c'est Christ, pour que soit donnée la justice à tout homme qui croit. 5 Moïse lui-même écrit de la justice qui vient de la loi: L'homme qui l'accomplira vivra par elle.",
-            "4 For Christ is the end of the law for righteousness to everyone who believes. 5 For Moses writes about the righteousness which is of the law, The man who does those things shall live by them.''",
+            'لأَنَّ غَايَةَ النَّامُوسِ هِيَ: الْمَسِيحُ لِلْبِرِّ لِكُلِّ مَنْ يُؤْمِنُ. لأَنَّ مُوسَى يَكْتُبُ فِي الْبِرِّ الَّذِي بِالنَّامُوسِ: "إِنَّ الإِنْسَانَ الَّذِي يَفْعَلُهَا سَيَحْيَا بِهَا". وَأَمَّا الْبِرُّ الَّذِي بِالإِيمَانِ فَيَقُولُ هكَذَا: "لاَ تَقُلْ فِي قَلْبِكَ: مَنْ يَصْعَدُ إِلَى السَّمَاءِ؟" أَيْ لِيُحْدِرَ الْمَسِيحَ، "أَوْ: مَنْ يَهْبِطُ إِلَى الْهَاوِيَةِ؟" أَيْ لِيُصْعِدَ الْمَسِيحَ مِنَ الأَمْوَاتِ.',
+            "04 Car l’aboutissement de la Loi, c’est le Christ, afin que soit donnée la justice à toute personne qui croit. 05 Au sujet de la justice qui vient de la Loi, Moïse écrit : « L’homme qui mettra les commandements en pratique y trouvera la vie ». 06 Mais la justice qui vient de la foi parle ainsi : « Ne dis pas dans ton cœur :  Qui montera aux cieux ? » – c’est-à-dire pour en faire descendre le Christ. 07 Ou bien : « Qui descendra au fond de l’abîme ? » – c’est-à-dire pour faire remonter le Christ d’entre les morts.",
+            "4 For Christ is the end of the law for righteousness to every one that believeth. 5 For Moses describeth the righteousness which is of the law, That the man which doeth those things shall live by them. 6 But the righteousness which is of faith speaketh on this wise, Say not in thine heart, Who shall ascend into heaven? (that is, to bring Christ down from above:) 7 Or, Who shall descend into the deep? (that is, to bring up Christ again from the dead.) ",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "واما البر الذي بالايمان فيقول هكذا لا تقل في قلبك من يصعد الى السماء اي ليحدر المسيح.او من يهبط الى الهاوية اي ليصعد المسيح من الاموات.",
-            "6 Mais la justice qui vient de la foi parle ainsi: Ne dis pas dans ton coeur: Qui montera au ciel? Ce serait en faire descendre Christ; ni: 7 Qui descendra dans l'abîme? Ce serait faire remonter Christ d'entre les morts.",
-            "6 But the righteousness of faith speaks in this way, Do not say in your heart, 'Who will ascend into heaven?' (that is, to bring Christ down from above) 7 or, Who will descend into the abyss?' '' (that is, to bring Christ up from the dead).",
+            'لكِنْ مَاذَا يَقُولُ؟ "اَلْكَلِمَةُ قَرِيبَةٌ مِنْكَ، فِي فَمِكَ وَفِي قَلْبِكَ" أَيْ كَلِمَةُ الإِيمَانِ الَّتِي نَكْرِزُ بِهَا: لأَنَّكَ إِنِ اعْتَرَفْتَ بِفَمِكَ بِالرَّبِّ يَسُوعَ، وَآمَنْتَ بِقَلْبِكَ أَنَّ اللهَ أَقَامَهُ مِنَ الأَمْوَاتِ، خَلَصْتَ.',
+            "08 Mais que dit cette justice ? « Tout près de toi est la Parole, elle est dans ta bouche et dans ton cœur ». Cette Parole, c’est le message de la foi que nous proclamons. 09 En effet, si de ta bouche, tu affirmes que Jésus est Seigneur, si, dans ton cœur, tu crois que Dieu l’a ressuscité d’entre les morts, alors tu seras sauvé. ",
+            "8 But what saith it? The word is nigh thee, even in thy mouth, and in thy heart: that is, the word of faith, which we preach; 9 That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكن ماذا يقول.الكلمة قريبة منك في فمك وفي قلبك اي كلمة الايمان التي نكرز بها. لانك ان اعترفت بفمك بالرب يسوع وآمنت بقلبك ان الله اقامه من الاموات خلصت.",
-            "8 Que dit-elle donc? Tout près de toi est la parole dans ta bouche et dans ton coeur. Cette parole, c'est la parole de la foi que nous proclamons. 9 Si, de ta bouche, tu confesses que Jésus est Seigneur et si, dans ton coeur, tu crois que Dieu l'a ressuscité des morts, tu seras sauvé.",
-            "8 But what does it say? The word is near you, in your mouth and in your heart'' (that is, the word of faith which we preach): 9 that if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved.",
+            'لأَنَّ الْقَلْبَ يُؤْمَنُ بِهِ لِلْبِرِّ، وَالْفَمَ يُعْتَرَفُ بِهِ لِلْخَلاَصِ لأَنَّ الْكِتَابَ يَقُولُ: "كُلُّ مَنْ يُؤْمِنُ بِهِ لاَ يُخْزَى" لأَنَّهُ لاَ فَرْقَ بَيْنَ الْيَهُودِيِّ وَالْيُونَانِيِّ، لأَنَّ رَبًّا وَاحِدًا لِلْجَمِيعِ، غَنِيًّا لِجَمِيعِ الَّذِينَ يَدْعُونَ بِهِ لأَنَّ "كُلَّ مَنْ يَدْعُو بِاسْمِ الرَّبِّ يَخْلُصُ".',
+            "10 Car c’est avec le cœur que l’on croit pour devenir juste, c’est avec la bouche que l’on affirme sa foi pour parvenir au salut. 11 En effet, l’Écriture dit : « Quiconque met en lui sa foi ne connaîtra pas la honte ». 12 Ainsi, entre les Juifs et les païens, il n’y a pas de différence : tous ont le même Seigneur, généreux envers tous ceux qui l’invoquent. 13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.",
+            " 10 For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation. 11 For the scripture saith, Whosoever believeth on him shall not be ashamed. 12 For there is no difference between the Jew and the Greek: for the same Lord over all is rich unto all that call upon him. 13 For whosoever shall call upon the name of the Lord shall be saved.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لان القلب يؤمن به للبر والفم يعترف به للخلاص.لان الكتاب يقول كل من يؤمن به لا يخزى. لانه لا فرق بين اليهودي واليوناني لان ربا واحدا للجميع غنيا لجميع الذين يدعون به.",
-            "10 En effet, croire dans son coeur conduit à la justice et confesser de sa bouche conduit au salutar 11 l'Ecriture dit: Quiconque croit en lui ne sera pas confondu.12 Ainsi, il n'y a pas de différence entre Juif et Grec; tous ont le même Seigneur, riche envers tous ceux qui l'invoquent.",
-            "10 For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation.11 For the Scripture says, Whoever believes on Him will not be put to shame.12 For there is no distinction between Jew and Greek, for the same Lord over all is rich to all who call upon Him.",
+            'فَكَيْفَ يَدْعُونَ بِمَنْ لَمْ يُؤْمِنُوا بِهِ؟ وَكَيْفَ يُؤْمِنُونَ بِمَنْ لَمْ يَسْمَعُوا بِهِ؟ وَكَيْفَ يَسْمَعُونَ بِلاَ كَارِزٍ؟ وَكَيْفَ يَكْرِزُونَ إِنْ لَمْ يُرْسَلُوا؟ كَمَا هُوَ مَكْتُوبٌ: "مَا أَجْمَلَ أَقْدَامَ الْمُبَشِّرِينَ بِالسَّلاَمِ، الْمُبَشِّرِينَ بِالْخَيْرَاتِ".',
+            "14 Or, comment l’invoquer, si on n’a pas mis sa foi en lui ? Comment mettre sa foi en lui, si on ne l’a pas entendu ? Comment entendre si personne ne proclame ? 15 Comment proclamer sans être envoyé ? Il est écrit : « Comme ils sont beaux, les pas des messagers qui annoncent les bonnes nouvelles! ».",
+            "14 How then shall they call on him in whom they have not believed? and how shall they believe in him of whom they have not heard? and how shall they hear without a preacher? 15 And how shall they preach, except they be sent? as it is written, How beautiful are the feet of them that preach the gospel of peace, and bring glad tidings of good things!",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لان كل من يدعو باسم الرب يخلص. فكيف يدعون بمن لم يؤمنوا به.وكيف يؤمنون بمن لم يسمعوا به.وكيف يسمعون بلا كارز.",
-            "13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.14 Or, comment l'invoqueraient-ils, sans avoir cru en lui? Et comment croiraient-ils en lui, sans l'avoir entendu? Et comment l'entendraient-ils, si personne ne le proclame?",
-            "13 For whoever calls on the name of the Lord shall be saved.'' 14 How then shall they call on Him in whom they have not believed? And how shall they believe in Him of whom they have not heard? And how shall they hear without a preacher?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكيف يكرزون ان لم يرسلوا.كما هو مكتوب ما اجمل اقدام المبشرين بالسلام المبشرين بالخيرات. لكن ليس الجميع قد اطاعوا الانجيل لان اشعياء يقول يا رب من صدق خبرنا.",
-            "15 Et comment le proclamer, sans être envoyé? Aussi est-il écrit: Qu'ils sont beaux les pieds de ceux qui annoncent de bonnes nouvelles! 16 Mais tous n'ont pas obéi à l'Évangile. Esaïe dit en effet: Seigneur, qui a cru à notre prédication.",
-            "15 And how shall they preach unless they are sent? As it is written: How beautiful are the feet of those who preach the gospel of peace, who bring glad tidings of good things!'' 16 But they have not all obeyed the gospel. For Isaiah says, Lord, who has believed our report?''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اذا الايمان بالخبر والخبر بكلمة الله. لكنني اقول ألعلهم لم يسمعوا.بلى.الى كل الارض خرج صوتهم والى اقاصي المسكونة اقوالهم.",
-            "17 Ainsi la foi vient de la prédication et la prédication, c'est l'annonce de la parole du Christ.18 Je demande alors: N'auraient-ils pas entendu? Mais si! Par toute la terre a retenti leur voix et jusqu'aux extrémités du monde leurs paroles.",
-            "17 So then faith comes by hearing, and hearing by the word of God. 18 But I say, have they not heard? Yes indeed: Their sound has gone out to all the earth, and their words to the ends of the world.”",
+            'لكِنْ لَيْسَ الْجَمِيعُ قَدْ أَطَاعُوا الإِنْجِيلَ، لأَنَّ إِشَعْيَاءَ يَقُولُ: "يَارَبُّ مَنْ صَدَّقَ خَبَرَنَا؟" إِذًا الإِيمَانُ بِالْخَبَرِ، وَالْخَبَرُ بِكَلِمَةِ اللهِ. لكِنَّنِي أَقُولُ: "أَلَعَلَّهُمْ لَمْ يَسْمَعُوا؟" بَلَى "إِلَى جَمِيعِ الأَرْضِ خَرَجَ صَوْتُهُمْ، وَإِلَى أَقَاصِي الْمَسْكُونَةِ أَقْوَالُهُمْ".',
+            "16 Et pourtant, tous n’ont pas obéi à la Bonne Nouvelle. Isaïe demande en effet : « Qui a cru, Seigneur, en nous entendant parler ? » 17 Or la foi naît de ce que l’on entend ; et ce que l’on entend, c’est la parole du Christ. 18 Alors, je pose la question : « n’aurait-on pas entendu ? » Mais si, bien sûr ! Un psaume le dit : « Sur toute la terre se répand leur message, et leurs paroles, jusqu’aux limites du monde ».",
+            "16 But they have not all obeyed the gospel. For Esaias saith, Lord, who hath believed our report? 17 So then faith cometh by hearing, and hearing by the word of God. 18 But I say, Have they not heard? Yes verily, their sound went into all the earth, and their words unto the ends of the world.",
         ],
     ],
     [
         [
             Prefix.stPaul + "&D=051stSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 15 : 4 ـ 19 )",
-            "Romans 15:4-19",
-            "Romains 15:4-19",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 15 : 4 - 19 )",
+            "Romans (15: 4-19)",
+            "Romains (15: 4-19)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2735,19 +2800,19 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وإلهُ الصَّبرِ والتَّعزيةِ يُعطيكُم فكراً واحداً مُتفقاً فيما بينكُم، بحسبِ المسيح يسوعَ، لكي بنفسٍ واحدةٍ وفم واحدٍ تُمجِّدونَ اللـه أبا ربِّنا يسوعَ المسيح.",
+            "وإلهُ الصَّبرِ والتَّعزيةِ يُعطيكُم فكراً واحداً مُتفقاً فيما بينكُم، بحسبِ المسيح يسوعَ، لكي بنفسٍ واحدةٍ وفم واحدٍ تُمجِّدونَ الل-ه أبا ربِّنا يسوعَ المسيح.",
             "5 Now may the God of patience and comfort grant you to be like-minded toward one another, according to Christ Jesus, 6 that you may with one mind and one mouth glorify the God and Father of our Lord Jesus Christ.",
             "5 Que le Dieu de la patience et de la consolation vous donne d’avoir une même pensée les uns à l’égard des autres selon le Christ Jésus, 6 afin que d’un commun accord, d’une seule voix, vous glorifiiez le Dieu et Père de notre Seigneur Jésus–Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "من أجل ذلك اقبلوا بعضُكُم بعضاً كما أنَّ المسيح قبِلَكُم لمَجد اللـهِ. وأقولُ: ' إنَّ المسيحَ قد صارَ خادماً للختان، من أجل صِدق اللـهِ، لكي يُثبِّت مواعيدَ الآباءِ.",
+            "من أجل ذلك اقبلوا بعضُكُم بعضاً كما أنَّ المسيح قبِلَكُم لمَجد الل-هِ. وأقولُ: ' إنَّ المسيحَ قد صارَ خادماً للختان، من أجل صِدق الل-هِ، لكي يُثبِّت مواعيدَ الآباءِ.",
             "7 Therefore receive one another, just as Christ also received us, to the glory of God. 8 Now I say that Jesus Christ has become a servant to the circumcision for the truth of God, to confirm the promises made to the fathers,",
             "7 Faites vous mutuellement bon accueil, comme Christ vous a accueillis, pour la gloire de Dieu. 8 Je dis, en effet, que Christ est devenu serviteur des circoncis pour prouver la véracité de Dieu, en confirmant les promesses faites aux pères,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا الوثنيونَ فيُمجِّدونَ اللـهَ من أجل الرَّحمةِ، كما هو مكتوبٌ: ' من أجل ذلك سأعترفُ بكَ ياربُّ بين الوثنيينَ وأُرتِّلُ لاسمِكَ ' ويقولُ أيضاً: ' تهلَّلوا أيَّتها الأُمَمُ مع شعبه '.",
+            "وأمَّا الوثنيونَ فيُمجِّدونَ الل-هَ من أجل الرَّحمةِ، كما هو مكتوبٌ: ' من أجل ذلك سأعترفُ بكَ ياربُّ بين الوثنيينَ وأُرتِّلُ لاسمِكَ ' ويقولُ أيضاً: ' تهلَّلوا أيَّتها الأُمَمُ مع شعبه '.",
             "9 and that the Gentiles might glorify God for His mercy, as it is written: For this reason I will confess to You among the Gentiles, And sing to Your name. 10 And again he says: Rejoice, O Gentiles, with His people!",
             "9 tandis que les païens glorifient Dieu pour sa miséricorde, selon qu’il est écrit : C’est pourquoi je te confesserai parmi les nations, Et je chanterai en l’honneur de ton nom. 10 Il est dit encore : Nations, réjouissez vous avec son peuple !",
         ],
@@ -2785,7 +2850,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=052ndSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية ( 5 : 2 ـ 10 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية ( 5 : 2 - 10 )",
             "Galatians 5:2-10",
             "Galates 5:2-10",
         ],
@@ -2817,13 +2882,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=053rdSunday&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين( 10 : 19 ـ 39 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين( 10 : 19 - 39 )",
             "Hebrews 10:19-39",
             "Hébreux 10:19-39",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإذ لنا يا إخوتي ثقةٌ بالدخولِ إلى ' الأقداسِ ' بدمِ يسوعَ، طريقاً جديداً حيَّاً صنعهُ لنا حديثاً، بالحجابِ، أي جسدهِ، وكاهنٌ عظيمٌ على بيتِ اللـهِ،",
+            "فإذ لنا يا إخوتي ثقةٌ بالدخولِ إلى ' الأقداسِ ' بدمِ يسوعَ، طريقاً جديداً حيَّاً صنعهُ لنا حديثاً، بالحجابِ، أي جسدهِ، وكاهنٌ عظيمٌ على بيتِ الل-هِ،",
             "19 Therefore, brethren, having boldness to enter the Holiest by the blood of Jesus, 20 by a new and living way which He consecrated for us, through the veil, that is, His flesh, 21 and having a High Priest over the house of God,",
             "19 Ainsi donc, frères, nous avons l’assurance d’un libre accès au sanctuaire par le sang de Jésus,20 accès que Jésus a inauguré pour nous comme un chemin nouveau et vivant au travers du voile, c’est–à–dire de sa chair ;21 et (nous avons) un souverain sacrificateur établi sur la maison de Dieu.",
         ],
@@ -2835,7 +2900,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولنُلاحِظْ بعضُنا بعضاً للتَّحرِيضِ على المحبَّةِ والأعمـالِ الحسنةِ، غيرَ تاركينَ اجتماعَنا كما لقومٍ عادةٌ. بلْ واعظينَ بعضُكم بعضاً، وبالأكَثر على قدر ما تنظرونَ اليومَ يَقْرُبُ،",
+            "ولنُلاحِظْ بعضُنا بعضاً للتَّحرِيضِ على المحبَّةِ والأعم-الِ الحسنةِ، غيرَ تاركينَ اجتماعَنا كما لقومٍ عادةٌ. بلْ واعظينَ بعضُكم بعضاً، وبالأكَثر على قدر ما تنظرونَ اليومَ يَقْرُبُ،",
             "24 And let us consider one another in order to stir up love and good works, 25 not forsaking the assembling of ourselves together, as is the manner of some, but exhorting one another, and so much the more as you see the Day approaching.",
             "24 Veillons les uns sur les autres pour nous inciter à l’amour et aux œuvres bonnes. 25 N’abandonnons pas notre assemblée, comme c’est la coutume de quelques–uns, mais exhortons–nous mutuellement, et cela d’autant plus que vous voyez le Jour s’approcher.",
         ],
@@ -2847,7 +2912,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّهُ إذا أهانَ واحدٌ ناموسَ موسى، فعلَى شاهِدَيْنِ أو ثلاثةِ شهودٍ يموتُ بدونِ رحمةٍ. فكم عِقاباً أشَرَّ تظنُّونَ، أنَّهُ يُحسَبُ مُستحِقَّاً مَن داسَ ابنَ اللـهِ،",
+            "لأنَّهُ إذا أهانَ واحدٌ ناموسَ موسى، فعلَى شاهِدَيْنِ أو ثلاثةِ شهودٍ يموتُ بدونِ رحمةٍ. فكم عِقاباً أشَرَّ تظنُّونَ، أنَّهُ يُحسَبُ مُستحِقَّاً مَن داسَ ابنَ الل-هِ،",
             "28 Anyone who has rejected Moses' law dies without mercy on the testimony of two or three witnesses. 29 Of how much worse punishment, do you suppose, will he be thought worthy who has trampled the Son of God underfoot,",
             "28 Si quelqu’un a violé la loi de Moïse, il est mis à mort sans pitié, sur la déposition de deux ou trois témoins. 29 Combien pire, ne pensez–vous pas, sera le châtiment mérité par celui qui aura foulé aux pieds le Fils de Dieu,",
         ],
@@ -2859,7 +2924,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مُخِيفٌ هو الوقوعُ في يدي اللـه الحيِّ! ولكن تذكَّروا الأيَّامَ الأولى التي فيها استُنِرتُم وصَبَرتُم على الآلامِ الكثيرةِ بجهادٍ عظيمٍ.",
+            "مُخِيفٌ هو الوقوعُ في يدي الل-ه الحيِّ! ولكن تذكَّروا الأيَّامَ الأولى التي فيها استُنِرتُم وصَبَرتُم على الآلامِ الكثيرةِ بجهادٍ عظيمٍ.",
             "31 It is a fearful thing to fall into the hands of the living God. 32 But recall the former days in which, after you were illuminated, you endured a great struggle with sufferings:",
             "31 Il est terrible de tomber dans les mains du Dieu vivant !32 Mais souvenez vous de ces premiers jours où, après avoir été éclairés, vous avez soutenu un grand et douloureux combat :",
         ],
@@ -2885,9 +2950,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=054thSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 11 : 13 ـ 36 )",
-            "Romans 11:13-36",
-            "Romains 11:13-36",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 11 : 13 - 36 )",
+            "Romans (11: 13-36)",
+            "Romains (11: 13-36)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2909,19 +2974,19 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وإنْ افتخرتَ، فأنتَ لستَ تحملُ الأصلَ، بل الأصلُ هو الحامـلُ لكَ! فستقولُ إذاً: ' إنَّ بعضَ الأغصان قُطِعَت لأُطعَّمَ أنا '. حسناً! مِن أجل عدم الإيمان قُطِعَتْ، وأنتَ بالإيمانِ ثبَتَّ.",
+            "وإنْ افتخرتَ، فأنتَ لستَ تحملُ الأصلَ، بل الأصلُ هو الحام-لُ لكَ! فستقولُ إذاً: ' إنَّ بعضَ الأغصان قُطِعَت لأُطعَّمَ أنا '. حسناً! مِن أجل عدم الإيمان قُطِعَتْ، وأنتَ بالإيمانِ ثبَتَّ.",
             "But if you do boast, remember that you do not support the root, but the root supports you. 19 You will say then, Branches were broken off that I might be grafted in. 20 Well said. Because of unbelief they were broken off, and you stand by faith.",
             "Si tu te glorifies, (sache que) ce n’est pas toi qui portes la racine, mais que c’est la racine qui te porte.19 Tu diras donc : des branches ont été retranchées, afin que moi, je sois greffé. 20 Fort bien ; elles ont été retranchées à cause de leur manque de foi, et toi, tu subsistes par la foi.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلا تَستَكبِر بلْ خَفْ! لأنَّهُ إنْ كان اللهُ لَمْ يُشْفِقْ على الأغْصَانِ الطَّبِيعيَّةِ فلَعَلَّهُ لا يُشْفِقُ عليكَ أنتَ أيضاً! فانظروا لُطْفُ اللـهِ وشدَّتُهُ: أمَّا الشدَّة فعلى الذينَ سقطوا، وأمَّا لُطفَ اللـهِ فلكَ أنتَ،",
+            "فلا تَستَكبِر بلْ خَفْ! لأنَّهُ إنْ كان اللهُ لَمْ يُشْفِقْ على الأغْصَانِ الطَّبِيعيَّةِ فلَعَلَّهُ لا يُشْفِقُ عليكَ أنتَ أيضاً! فانظروا لُطْفُ الل-هِ وشدَّتُهُ: أمَّا الشدَّة فعلى الذينَ سقطوا، وأمَّا لُطفَ الل-هِ فلكَ أنتَ،",
             "Do not be haughty, but fear. 21 For if God did not spare the natural branches, He may not spare you either. 22 Therefore consider the goodness and severity of God: on those who fell, severity; but toward you, goodness,",
             "N’aie pas de pensées hautaines, mais de la crainte ;21 car si Dieu n’a pas épargné les branches naturelles, il ne t’épargnera pas non plus. 22 Considère donc la bonté et la sévérité de Dieu : sévérité envers ceux qui sont tombés, et bonté de Dieu envers toi,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إنْ ثَبتَّ في اللُّطفِ، وإلاَّ فأنتَ أيضاً ستُقطعُ. وهُم أيضاً الآخَرونَ إنْ لم يَثبُتوا في عدمِ الإيمان سَيُطَعَّمونَ. لأنَّ اللـه قادرٌ أن يُطَعِّمَهُم دفعةً أُخرى أيضاً.",
+            "إنْ ثَبتَّ في اللُّطفِ، وإلاَّ فأنتَ أيضاً ستُقطعُ. وهُم أيضاً الآخَرونَ إنْ لم يَثبُتوا في عدمِ الإيمان سَيُطَعَّمونَ. لأنَّ الل-ه قادرٌ أن يُطَعِّمَهُم دفعةً أُخرى أيضاً.",
             "if you continue in His goodness. Otherwise you also will be cut off. 23 And they also, if they do not continue in unbelief, will be grafted in, for God is able to graft them in again.",
             "si tu demeures dans cette bonté ; autrement, toi aussi tu seras retranché. 23 Eux de même, s’ils ne demeurent pas dans l’incrédulité, ils seront greffés ; car Dieu est puissant pour les greffer de nouveau.",
         ],
@@ -2945,19 +3010,19 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وهذا هو عهدي الذي سيكون لهُم متى نَزَعْتُ خطاياهم '. أمَّا من جهةِ الإنجيل فهُمْ أعداءٌ من أجلِكُم، وأمَّا من جهةِ الاختيارِ فهُمْ أحِبَّاءُ من أجل آبائهم، لأنَّ مواهبَ اللـهِ ودعوتَهُ هي بلا ندامةٍ.",
+            "وهذا هو عهدي الذي سيكون لهُم متى نَزَعْتُ خطاياهم '. أمَّا من جهةِ الإنجيل فهُمْ أعداءٌ من أجلِكُم، وأمَّا من جهةِ الاختيارِ فهُمْ أحِبَّاءُ من أجل آبائهم، لأنَّ مواهبَ الل-هِ ودعوتَهُ هي بلا ندامةٍ.",
             "27 For this is My covenant with them, When I take away their sins. 28 Concerning the gospel they are enemies for your sake, but concerning the election they are beloved for the sake of the fathers. 29 For the gifts and the calling of God are irrevocable.",
             "27 Et telle sera mon alliance avec eux, Lorsque j’ôterai leurs péchés.28 En ce qui concerne l’Évangile, ils sont ennemis à cause de vous ; mais en ce qui concerne l’élection, ils sont aimés à cause de leurs pères. 29 Car les dons gratuits et l’appel de Dieu sont irrévocables.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّه كما كنتُم أنتم زماناً لا تُطيعونَ اللـهَ، ولكن الآن رُحِمتُم بعصيان هؤلاءِ، هكذا هؤلاء أيضاً الآن، لم يَطِيعوا لكي يُرحَمُوا هُم أيضاً برحمتِكُم.",
+            "فإنَّه كما كنتُم أنتم زماناً لا تُطيعونَ الل-هَ، ولكن الآن رُحِمتُم بعصيان هؤلاءِ، هكذا هؤلاء أيضاً الآن، لم يَطِيعوا لكي يُرحَمُوا هُم أيضاً برحمتِكُم.",
             "30 For as you were once disobedient to God, yet have now obtained mercy through their disobedience, 31 even so these also have now been disobedient, that through the mercy shown you they also may obtain mercy.",
             "30 De même que vous avez autrefois désobéi à Dieu et que par leur désobéissance vous avez maintenant obtenu miséricorde,31 de même ils ont maintenant désobéi, afin d’obtenir miséricorde, eux aussi maintenant, par la miséricorde qui vous a été faite.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّ اللـهَ أغلقَ على الجميع معاً في العِصيَانِ لكي يَرحمَ الجميعَ. يا لعُمقِ غِنى الله وحكمتهِ وعلِمهِ! ما أبعدَ أحكامَهُ عن الفحصِ وطرقَهُ عن الاستقصاءِ!",
+            "لأنَّ الل-هَ أغلقَ على الجميع معاً في العِصيَانِ لكي يَرحمَ الجميعَ. يا لعُمقِ غِنى الله وحكمتهِ وعلِمهِ! ما أبعدَ أحكامَهُ عن الفحصِ وطرقَهُ عن الاستقصاءِ!",
             "32 For God has committed them all to disobedience, that He might have mercy on all. 33 Oh, the depth of the riches both of the wisdom and knowledge of God! How unsearchable are His judgments and His ways past finding out!",
             "32 Car Dieu a enfermé tous les hommes dans la désobéissance, pour faire miséricorde à tous. 33 O profondeur de la richesse, de la sagesse et de la connaissance de Dieu ! Que ses jugements sont insondables et ses voies incompréhensibles ! En effet,",
         ],
@@ -2971,7 +3036,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0605&C=Title",
-            " رسالة بولس الرسول إلى أهل فليبى ( 3 : 1 – 12 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فليبى ( 3 : 1 – 12 )",
             "Philippians 3:1-12",
             "Philippians 3:1-12",
         ],
@@ -3021,7 +3086,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1005&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس (1:1-17)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس (1:1-17)",
             "1 Corinthians 1:1-17",
             "1 Corinthians 1:1-17",
         ],
@@ -3083,7 +3148,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1105&C=Title",
-            " رسالة بولس الرسول إلى أهل تيطس (2:11-15 & 3:1-7)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ تيطس (2:11-15 & 3:1-7)",
             "Titus 2:11-15 & 3:1-7",
             "Titus 2:11-15 & 3:1-7",
         ],
@@ -3133,7 +3198,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1205&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس (1 : 1 – 14 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (1 : 1 – 14 )",
             "Ephesians 1:1-14",
             "Ephesians 1:1-14",
         ],
@@ -3189,7 +3254,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1305&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 6 : 3 – 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 6 : 3 – 16 )",
             "Romans 6:3-16",
             "Romans 6:3-16",
         ],
@@ -3239,7 +3304,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2205&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل فليبى (3:20 - 4:1-9)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ فليبى (3:20 - 4:1-9)",
             "Philippiens 3:20 - 4:1-9",
             "Philippians 3:20-21&4:1-9",
         ],
@@ -3283,7 +3348,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2605&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين (12:3-14)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (12:3-14)",
             "Hebrews 12:3-14",
             "Hebrews 12:3-14",
         ],
@@ -3333,7 +3398,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=3005&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس ( 5 : 8 - 21 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 5 : 8 - 21 )",
             "Ephésiens 5 : 8 - 21",
             "Ephesians 5:8-21",
         ],
@@ -3365,7 +3430,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0206&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين ( 13 : 7 ـ 24 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين ( 13 : 7 - 24 )",
             "Hébreux 13 : 7 - 24",
             "Hebrews 13:7-25",
         ],
@@ -3433,7 +3498,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=061stSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 5 : 11 ـ 6 : 1 ـ 11 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 5 : 11 - 6 : 1 - 11 )",
             "1 Corinthiens 5:11 - 6:1-11",
             "1 Corinthians 5:11-6:11",
         ],
@@ -3489,7 +3554,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=062ndSunday&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين (7:1-17)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين (7:1-17)",
             "Hébreux 7:1-17",
             "Hebrews 7:1-17",
         ],
@@ -3525,7 +3590,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلو كان بالكهنوت اللاويِّ كمالٌ ـ إذ الشَّعب أخذ النَّاموس عليه ـ ماذا كانت الحاجة بعدُ إلى أن يقوم كاهنٌ آخَرُ على رتبة ملكي صادق، ولا يُقالُ ' على رُتبةِ هارون ' ؟",
+            "فلو كان بالكهنوت اللاويِّ كمالٌ - إذ الشَّعب أخذ النَّاموس عليه - ماذا كانت الحاجة بعدُ إلى أن يقوم كاهنٌ آخَرُ على رتبة ملكي صادق، ولا يُقالُ ' على رُتبةِ هارون ' ؟",
             "11 Si on était parvenu à un parfait accomplissement par le sacerdoce lévitique, car il était la base de la législation donnée au peuple, quel besoin y aurait-il eu encore de susciter un autre prêtre, dans la ligne de Melkisédeq, au lieu de le désigner dans la ligne d'Aaron?",
             "11 Therefore, if perfection were through the Levitical priesthood (for under it the people received the law), what further need was there that another priest should rise according to the order of Melchizedek, and not be called according to the order of Aaron?",
         ],
@@ -3551,7 +3616,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=063rdSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين (3: 1 – 4: 2)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (3: 1 – 4: 2)",
             "Hébreux 3: 1 – 4: 2",
             "Hebrews 3: 1 – 4: 2",
         ],
@@ -3619,7 +3684,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=064thSunday&C=Title",
-            " بولس الرسول إلى أهل كورونثوس الاولى ( 1 : 1 16 )",
+            " بولس الرسول إلى أَهْلِ كورونثوس الاولى ( 1 : 1 16 )",
             "1 Corinthiens 1 : 1-16",
             "1 Corinthians 1: 1 – 16",
         ],
@@ -3669,19 +3734,19 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1307&C=Title",
-            "رسالة بولس الرسول الثانية إلى أهل كورونثوس (10 :1 – 18 )",
+            "رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورونثوس (10 :1 – 18 )",
             "2 Corinthiens 10 : 1 - 18",
             "2 Corinthians 10:1-18",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أنا نفسي بولس أطلُبُ إليكم بوَداعَةِ المسيح وحِلمِهِ، كما أنِّي ذليلٌ بينكم وأمامـكُمْ، ولكـن فيمـا أنا خـارج عنكـم فمتجاســرٌ عَليكُمْ. وأطلـب أن أكـون متجاسراً ولست عندكم بالثِّقة التي بها أظنّ أنِّي سأتجاسر على قوم الذين يحسبوننا كأنَّنا نسلك حسب الجسد. لأنَّنا وإن كُنَّا نسلك حسب الجسد، لا نُحارِب حسب الجسد. إذ أسلحة مُحارَبتنا ليست جسديَّة، بل هى قوات الله تهدم الحصون. وتهدم الآراء وكل عُلو يرتَفع ضِدَّ معرفة الله، ونسبي كلَّ فكر إلى طاعة المسيح، ومستعدِّينَ لأنْ ننتقم على كلِّ عصيان مَتَى كَمِلَتْ طاعتُكُم.",
+            "أنا نفسي بولس أطلُبُ إليكم بوَداعَةِ المسيح وحِلمِهِ، كما أنِّي ذليلٌ بينكم وأمام-كُمْ، ولك-ن فيم-ا أنا خ-ارج عنك-م فمتجاس--رٌ عَليكُمْ. وأطل-ب أن أك-ون متجاسراً ولست عندكم بالثِّقة التي بها أظنّ أنِّي سأتجاسر على قوم الذين يحسبوننا كأنَّنا نسلك حسب الجسد. لأنَّنا وإن كُنَّا نسلك حسب الجسد، لا نُحارِب حسب الجسد. إذ أسلحة مُحارَبتنا ليست جسديَّة، بل هى قوات الله تهدم الحصون. وتهدم الآراء وكل عُلو يرتَفع ضِدَّ معرفة الله، ونسبي كلَّ فكر إلى طاعة المسيح، ومستعدِّينَ لأنْ ننتقم على كلِّ عصيان مَتَى كَمِلَتْ طاعتُكُم.",
             "1 Moi, Paul, en personne, je vous le demande par la douceur et la bonté du Christ, moi si humble quand je suis parmi vous face à face, mais si hardi envers vous quand je suis loin; 2 je vous en prie, que je n'aie pas, une fois présent, à user de cette hardiesse dont je compte faire preuve, avec audace, contre ces gens qui prétendent que notre conduite a des motifs humains. 3 Tout homme que nous sommes, nous ne combattons pas de façon purement humaine. Non, les armes de notre combat ne sont pas d'origine humaine, 4 mais leur puissance vient de Dieu pour la destruction des forteresses. 5 Nous détruisons les raisonnements prétentieux, et toute puissance hautaine qui se dresse contre la connaissance de Dieu. Nous faisons captive toute pensée pour l'amener à obéir au Christ 6 et nous nous tenons prêts à punir toute désobéissance dès que votre obéissance sera totale.",
             "1 Now I, Paul, myself am pleading with you by the meekness and gentleness of Christ--who in presence am lowly among you, but being absent am bold toward you. 2 But I beg you that when I am present I may not be bold with that confidence by which I intend to be bold against some, who think of us as if we walked according to the flesh. 3 For though we walk in the flesh, we do not war according to the flesh. 4 For the weapons of our warfare are not carnal but mighty in God for pulling down strongholds, 5 casting down arguments and every high thing that exalts itself against the knowledge of God, bringing every thought into captivity to the obedience of Christ, 6 and being ready to punish all disobedience when your obedience is fulfilled.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أَتنظرونَ إلى ما هو قُدَّامكم؟ إن كان أحدٌ يثق من نفسه بأنَّه للمسيح، فليفتكر في نفسه أيضاً: أنَّه كما هو للمسيح، كذلك نحن أيضاً! فإنِّى وإن افتخرتُ شيئاً أكثر بالسُّلطان الذي أعطاه لي الربُّ فهو للبنيان وليس لهدمِكُم، لا أُخجَلُ. لئلاَّ أَظهر كواحد يُخيفكُم بالرَّسائِل. لأنَّه يقول: \"الرَّسائل ثقيلةٌ وقويَّةٌ، وحضور الجسد فضعيفٌ، والكلام مرذولٌ\".",
+            'أَتنظرونَ إلى ما هو قُدَّامكم؟ إن كان أحدٌ يثق من نفسه بأنَّه للمسيح، فليفتكر في نفسه أيضاً: أنَّه كما هو للمسيح، كذلك نحن أيضاً! فإنِّى وإن افتخرتُ شيئاً أكثر بالسُّلطان الذي أعطاه لي الربُّ فهو للبنيان وليس لهدمِكُم، لا أُخجَلُ. لئلاَّ أَظهر كواحد يُخيفكُم بالرَّسائِل. لأنَّه يقول: "الرَّسائل ثقيلةٌ وقويَّةٌ، وحضور الجسد فضعيفٌ، والكلام مرذولٌ".',
             "7 Regardez les choses en face. Si quelqu'un est persuadé d'appartenir au Christ, qu'il s'en rende compte une bonne fois: s'il est au Christ, nous aussi! 8 Et même si je suis un peu trop fier du pouvoir que le Seigneur nous a donné pour votre édification, 9 et non pour votre ruine, je n'en rougirai pas. 10 Je ne veux pas avoir l'air de vous effrayer par mes lettres, - car ses lettres, dit-on, ont du poids et de la force; mais, une fois présent, il est faible et sa parole est nulle.",
             "7 Do you look at things according to the outward appearance? If anyone is convinced in himself that he is Christ's, let him again consider this in himself, that just as he is Christ's, even so we are Christ's. 8 For even if I should boast somewhat more about our authority, which the Lord gave us for edification and not for your destruction, I shall not be ashamed-- 9 lest I seem to terrify you by letters. 10 For his letters, they say, are weighty and powerful, but his bodily presence is weak, and his speech contemptible.",
         ],
@@ -3699,7 +3764,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّنا لا نمدِّدُ أنفسنا كأنَّنا لا نَبْلُغُ إليكم. إذ قد وصلنا إليكم أيضاً في إنجيل المسيح. غير مُفتخرينَ إلى ما لا يُقاس في أتعاب آخرين، بل لنا رجاء ـ إذا نما إيمانكم ـ ليتعظَّم فيكم مثل قانوننا بزيادةٍ، لنُبشِّركُم بما هو أعظم من ذلك. لا لِنفتخر بالأمور المُعدَّة في قانون غريب.",
+            "لأنَّنا لا نمدِّدُ أنفسنا كأنَّنا لا نَبْلُغُ إليكم. إذ قد وصلنا إليكم أيضاً في إنجيل المسيح. غير مُفتخرينَ إلى ما لا يُقاس في أتعاب آخرين، بل لنا رجاء - إذا نما إيمانكم - ليتعظَّم فيكم مثل قانوننا بزيادةٍ، لنُبشِّركُم بما هو أعظم من ذلك. لا لِنفتخر بالأمور المُعدَّة في قانون غريب.",
             "14 Car nous ne dépassons pas notre limite, comme si nous n'étions pas venu chez vous. Nous sommes vraiment arrivé le premier jusqu'à vous avec l'Évangile du Christ. 15 Non, nous n'avons pas une fierté démesurée, fondée sur les travaux d'autrui, mais nous avons l'espoir, avec les progrès de votre foi, de grandir de plus en plus en vous selon notre règle, 16 en portant l'Évangile au-delà de chez vous, sans tirer fierté de travaux tout faits sur le terrain des autres.",
             "14 For we are not overextending ourselves (as though our authority did not extend to you), for it was to you that we came with the gospel of Christ; 15 not boasting of things beyond measure, that is, in other men's labors, but having hope, that as your faith is increased, we shall be greatly enlarged by you in our sphere, 16 to preach the gospel in the regions beyond you, and not to boast in another man's sphere of accomplishment.",
         ],
@@ -3713,7 +3778,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2308&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل رومية ( 8 : 28 ـ 39 ) ",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ رُومِيَّة ( 8 : 28 - 39 ) ",
             "Romans 8:28-39",
             "Romans 8:28-39",
         ],
@@ -3737,7 +3802,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَنْ يَقْدِرُ أنْ يَفْصِلَنَا عَنْ مَحَبَّةِ الْمَسِيحِ؟ أَشِدَّةٌ أَمْ ضِيْقٌ أَمْ اضْطِهَادٌ أَمْ جُوعٌ أَمْ عُرْيٌ أَمْ خَطَرٌ أَمْ سَيْفٌ؟ كَمَا هُوَ مَكْتُوبٌ: \" إنَّنَا مِنْ أَجْلِكَ نُقْتَلُ كُلَّ النَّهَارِ. قَدْ حُسِبْنَا مِثْلَ خِرَافٍ لِلذَّبْحِ \". وَلكِنَّنَا في هَذِهِ جَمِيعِهَا تَعْظُمُ غَلْبَتُنَا بِالَّذِي أَحَبَّنَا.",
+            'مَنْ يَقْدِرُ أنْ يَفْصِلَنَا عَنْ مَحَبَّةِ الْمَسِيحِ؟ أَشِدَّةٌ أَمْ ضِيْقٌ أَمْ اضْطِهَادٌ أَمْ جُوعٌ أَمْ عُرْيٌ أَمْ خَطَرٌ أَمْ سَيْفٌ؟ كَمَا هُوَ مَكْتُوبٌ: " إنَّنَا مِنْ أَجْلِكَ نُقْتَلُ كُلَّ النَّهَارِ. قَدْ حُسِبْنَا مِثْلَ خِرَافٍ لِلذَّبْحِ ". وَلكِنَّنَا في هَذِهِ جَمِيعِهَا تَعْظُمُ غَلْبَتُنَا بِالَّذِي أَحَبَّنَا.',
             "35 Qui nous séparera de l’amour de Christ ? La tribulation, ou l’angoisse, ou la persécution, ou la faim, ou le dénuement, ou le péril, ou l’épée ? 36 Selon qu’il est écrit : A cause de toi, l’on nous met à mort tout le jour. On nous considère comme des brebis qu’on égorge. 37 Mais dans toutes ces choses, nous sommes plus que vainqueurs par celui qui nous a aimés.",
             "35 Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword? 36 As it is written: For Your sake we are killed all day long; We are accounted as sheep for the slaughter. 37 Yet in all these things we are more than conquerors through Him who loved us.",
         ],
@@ -3751,9 +3816,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2708&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 8 : 18 ـ 30 )",
-            "Romains 8 : 18 - 30",
-            "Romans 8:18-30",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 8 : 18 - 30 )",
+            "Romains (8: 18-30)",
+            "Romans (8: 18-30)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -3777,7 +3842,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=3008&C=Title",
-            " [[\"رسالة بولس الرسول الثانية إلى تلميذه تيموثاوس (3:10-4:18)",
+            ' [["رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى تلميذه تيموثاوس (3:10-4:18)',
             "2 Timothée 3:10-4:18",
             "2 Timothy 3:10-4:18",
         ],
@@ -3815,13 +3880,13 @@ ReadingsArrays.StPaulArray = [[
             Prefix.same + "&C=NoActor",
             "إسْكَنْدَرُ الْحَدَّادُ فَعَلَ بِي شُرُوراً كَثِيرَةً. لِيُجَازِهِ الرَّبُّ حَسَبَ أَعْمَالِهِ. فَهَذَا احْتَفِظْ مِنْهُ أَنْتَ أيْضاً لأنهُ قَاوَمَ أَقْوَالِي جِدّاً. في احْتِجَاجِي الأَوَّلِ لَمْ يَأْتِ إلَيَّ أَحَدٌ، بَلِ الْجَمِيعُ تَرَكُونِي. لا يُحْسَبْ عَلَيْهِمْ. وَلكِنَّ الرَّبَّ وَقَفَ مَعِي وَقَوَّانِي، لِكَيْ تُتَمَّ بِي الكِرَازَةُ، وَيَسْمَعَ جَمِيعُ الأُمَمِ، فَأُنْقِذْتُ مِنْ فَمِ الأَسَدِ. وَسَيُنجِّينِي الرَّبُّ مِنْ كُلِّ عَمَلٍ رَدِيءٍ وَيُخَلِّصُنِي لِمَلَكُوتِهِ السَّمَاوِيِّ. هذَا الذِي لَهُ الْمَجْدُ إلى دَهْرِ الدُّهُورِ. آمِينَ.",
             "14 Alexandre le fondeur a fait preuve de beaucoup de méchanceté à mon égard. Le Seigneur lui rendra selon ses oeuvres. 15 Toi aussi, prends garde à lui, car il s'est violemment opposé à nos paroles. 16 La première fois que j'ai présenté ma défense, personne ne m'a assisté, tous m'ont abandonné. Qu'il ne leur en soit pas tenu rigueur. 17 Le Seigneur, lui, m'a assisté; il m'a revêtu de force, afin que par moi le message fût pleinement proclamé et qu'il fût entendu de tous les païens. Et j'ai été délivré de la gueule du lion! 18 Le Seigneur me délivrera de toute entreprise perverse et me sauvera pour son Royaume céleste. A lui la gloire dans les siècles des siècles, Amen. ",
-            "14 Alexander the coppersmith did me much harm. May the Lord repay him according to his works. 15 You also must beware of him, for he has greatly resisted our words. 16 At my first defense no one stood with me, but all forsook me. May it not be charged against them. 17 But the Lord stood with me and strengthened me, so that the message might be preached fully through me, and that all the Gentiles might hear. And I was delivered out of the mouth of the lion. 18 And the Lord will deliver me from every evil work and preserve me for His heavenly kingdom. To Him be glory forever and ever. Amen!\",",
+            '14 Alexander the coppersmith did me much harm. May the Lord repay him according to his works. 15 You also must beware of him, for he has greatly resisted our words. 16 At my first defense no one stood with me, but all forsook me. May it not be charged against them. 17 But the Lord stood with me and strengthened me, so that the message might be preached fully through me, and that all the Gentiles might hear. And I was delivered out of the mouth of the lion. 18 And the Lord will deliver me from every evil work and preserve me for His heavenly kingdom. To Him be glory forever and ever. Amen!",',
         ],
     ],
     [
         [
             Prefix.stPaul + "&D=0109&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين ( 9 : 1 - 12)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين ( 9 : 1 - 12)",
             "Hebrews 9:1-12",
             "Hebrews 9:1-12",
         ],
@@ -3833,7 +3898,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "والمائدة، وخبز التَّقدِمةِ. وتُدعَى القُدس. وبعد الحجاب الثَّاني القُبة التى تُدعَى ' قُدس الأقداس ' وكان فيها مِبخرةٌ من ذهبٍ، وتابوتُ العهـدِ المُصفَّح بالذَّهبِ من كلِّ جانبٍ،",
+            "والمائدة، وخبز التَّقدِمةِ. وتُدعَى القُدس. وبعد الحجاب الثَّاني القُبة التى تُدعَى ' قُدس الأقداس ' وكان فيها مِبخرةٌ من ذهبٍ، وتابوتُ العه-دِ المُصفَّح بالذَّهبِ من كلِّ جانبٍ،",
             "la table et les pains de proposition. 3 Puis derrière le second voile, se trouvait la partie appelée Saint des saints. 4 Elle contenait un brûle–parfum en or et l’arche de l’alliance, entièrement recouverte d’or,",
             "the table, and the showbread, which is called the sanctuary; 3 and behind the second veil, the part of the tabernacle which is called the Holiest of All, 4 which had the golden censer and the ark of the covenant overlaid on all sides with gold,",
         ],
@@ -3845,13 +3910,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فهذه لمَّا تُصنع هكذا، يدخل الكهنة إلى القبة الأولى فى كل حين لإتمام الخدمة. أمَّا القبة الثَّانية فيدخلها رئيس الأحبار وحـده مـرَّة فى كـلِّ سـنةٍ،",
+            "فهذه لمَّا تُصنع هكذا، يدخل الكهنة إلى القبة الأولى فى كل حين لإتمام الخدمة. أمَّا القبة الثَّانية فيدخلها رئيس الأحبار وح-ده م-رَّة فى ك-لِّ س-نةٍ،",
             "Il n’y a pas lieu d’en parler maintenant en détail.6 Tout cela ainsi disposé, les sacrificateurs entrent en tout temps dans la première partie du tabernacle, lorsqu’ils accomplissent les cérémonies du culte. 7 Mais, dans la seconde, seul le souverain sacrificateur (pénètre), une fois par an,",
             "Of these things we cannot now speak in detail. 6 Now when these things had been thus prepared, the priests always went into the first part of the tabernacle, performing the services. 7 But into the second part the high priest went alone once a year,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وليـس بغيـر دم الـذي كان يُقدِّمه عن نفسه وعن جهالات الشَّعبِ، وهذا يُظهره الرُّوح القدس أن طريق الأقداس لم يُظهَر بعدُ، ما دامت القُبة الأولى قائمةٌ،",
+            "ولي-س بغي-ر دم ال-ذي كان يُقدِّمه عن نفسه وعن جهالات الشَّعبِ، وهذا يُظهره الرُّوح القدس أن طريق الأقداس لم يُظهَر بعدُ، ما دامت القُبة الأولى قائمةٌ،",
             "non sans y présenter du sang pour lui–même et pour les fautes du peuple. 8 Le Saint–Esprit montrait par là que l’accès du Saint des saints n’était pas encore ouvert, tant que le premier tabernacle subsistait.",
             "not without blood, which he offered for himself and for the people's sins committed in ignorance; 8 the Holy Spirit indicating this, that the way into the Holiest of All was not yet made manifest while the first tabernacle was still standing.",
         ],
@@ -3877,7 +3942,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=093rdSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل رومية ( 15 : 13 ـ 29 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ رُومِيَّة ( 15 : 13 - 29 )",
             "Romans 15:13-29",
             "Romans 15:13-29",
         ],
@@ -3945,7 +4010,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=094thSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 2 : 6 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2 : 6 - 16 )",
             "1 Corinthians 2:6-16",
             "1 Corinthians 2:6-16",
         ],
@@ -3995,7 +4060,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1009&C=Title",
-            " رسالة بولس الرسول إلى أهل الرسول إلى العبرانيين( 11 : 32 ـ 12 : 2 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ الرسول إلى العبرانيين( 11 : 32 - 12 : 2 )",
             "Hébreux 11:32 - 12 : 2",
             "Hebrews 11:32-12:2",
         ],
@@ -4045,7 +4110,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2009&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس ( 3 : 4 ـ 23 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس ( 3 : 4 - 23 )",
             "1 Corinthiens 3 : 4 - 23",
             "1 Corinthians 3:4-23",
         ],
@@ -4063,13 +4128,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إذاً ليس الغارسُ شيئاً ولا السَّاقي، بل الله الذي يُنْمِي، والغارس والسَّاقي هما واحدٌ، ولكن كل واحد سيأخُذُ أُجرته بحسب تعبِهِ. فإنَّنا نحن شركاء عاملان للـه، وأنتم فلاحة اللـه، بناء اللـه.",
+            "إذاً ليس الغارسُ شيئاً ولا السَّاقي، بل الله الذي يُنْمِي، والغارس والسَّاقي هما واحدٌ، ولكن كل واحد سيأخُذُ أُجرته بحسب تعبِهِ. فإنَّنا نحن شركاء عاملان لل-ه، وأنتم فلاحة الل-ه، بناء الل-ه.",
             "7 Ainsi celui qui plante n'est rien, celui qui arrose n'est rien: Dieu seul compte, lui qui fait croître. 8 Celui qui plante et celui qui arrose, c'est tout un, et chacun recevra son salaire à la mesure de son propre travail. 9 Car nous travaillons ensemble à l'oeuvre de Dieu, la construction de Dieu.",
             "7 So then neither he who plants is anything, nor he who waters, but God who gives the increase. 8 Now he who plants and he who waters are one, and each one will receive his own reward according to his own labor. 9 For we are God's fellow workers; you are God's field, you are God's building.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "حسب نعمة اللـه المُعطاة لي كبنَّاءٍ حكيم ماهر قد وضعت أساساً، وآخر يبني عليه. ولكن فلينظر كل واحدٍ كيف يبني عليه. فإنه لا يستطيع أحدٌ أن يضع أساساً آخر غير الذي وُضِعَ، الذي هو يسوع المسيح.",
+            "حسب نعمة الل-ه المُعطاة لي كبنَّاءٍ حكيم ماهر قد وضعت أساساً، وآخر يبني عليه. ولكن فلينظر كل واحدٍ كيف يبني عليه. فإنه لا يستطيع أحدٌ أن يضع أساساً آخر غير الذي وُضِعَ، الذي هو يسوع المسيح.",
             "10 Selon la grâce que Dieu m'a donnée, comme un bon architecte, j'ai posé le fondement, un autre bâtit dessus. Mais que chacun prenne garde à la manière dont il bâtit. 11 Quant au fondement, nul ne peut en poser un autre que celui qui est en place: Jésus Christ.",
             "10 According to the grace of God which was given to me, as a wise master builder I have laid the foundation, and another builds on it. But let each one take heed how he builds on it. 11 For no other foundation can anyone lay than that which is laid, which is Jesus Christ.",
         ],
@@ -4081,13 +4146,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فمَن بقيَ عمله الذي بناه ثابت سينال أجرته. ومَن احترق عمله فسيخسر، وأمَّا هو فسيخلُص، ولكن كما بنارٍ. أمَا تعلمون أنَّكم هيكل اللـه، وروح اللـه ساكن فيكم؟",
+            "فمَن بقيَ عمله الذي بناه ثابت سينال أجرته. ومَن احترق عمله فسيخسر، وأمَّا هو فسيخلُص، ولكن كما بنارٍ. أمَا تعلمون أنَّكم هيكل الل-ه، وروح الل-ه ساكن فيكم؟",
             "14 Celui dont l'oeuvre subsistera recevra un salaire.15 Celui dont l'oeuvre sera consumée en sera privé; lui-même sera sauvé, mais comme on l'est à travers le feu.16 Ne savez-vous pas que vous êtes le temple de Dieu, et que l'Esprit de Dieu habite en vous?",
             "14 If anyone's work which he has built on it endures, he will receive a reward. 15 If anyone's work is burned, he will suffer loss; but he himself will be saved, yet so as through fire. 16 Do you not know that you are the temple of God and that the Spirit of God dwells in you?",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فمَن يُنجَّس هيكل اللـه فسيُفسِده اللـه، لأن هيكل اللـه مُقدَّسٌ الذي أنتم هو. لا يغرنَّ أحدٌ نفسه. إن كان أحدٌ يظنُّ أنه حكيمٌ بينكم في هذا الدَّهر، فَليَصر جاهلاً لكي يصير حكيماً! لأن حكمة هذا العالم جهالةٌ عند الله، لأنه مكتوبٌ: '",
+            "فمَن يُنجَّس هيكل الل-ه فسيُفسِده الل-ه، لأن هيكل الل-ه مُقدَّسٌ الذي أنتم هو. لا يغرنَّ أحدٌ نفسه. إن كان أحدٌ يظنُّ أنه حكيمٌ بينكم في هذا الدَّهر، فَليَصر جاهلاً لكي يصير حكيماً! لأن حكمة هذا العالم جهالةٌ عند الله، لأنه مكتوبٌ: '",
             "17 Si quelqu'un détruit le temple de Dieu, Dieu le détruira. Car le temple de Dieu est saint et ce temple, c'est vous.18 Que personne ne s'abuse; si quelqu'un parmi vous se croit sage à la manière de ce monde, qu'il devienne fou pour être sage; car la sagesse de ce monde est folie devant Dieu.",
             "17 If anyone defiles the temple of God, God will destroy him. For the temple of God is holy, which temple you are. 18 Let no one deceive himself. If anyone among you seems to be wise in this age, let him become a fool that he may become wise.",
         ],
@@ -4106,138 +4171,34 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=2409&C=Title",
-            " رسالة بولس الرسول الى أهل أفسس ( 2 : 1 – 22 )",
-            "Éphésiens 2:1 - 22",
-            "Ephesians 2:1-22",
+            Prefix.stPaul + "&D=Pntl29&C=Title",
+            "رِسَالَةِ بُولِسَ الرَسُولِ إلى أَهْلِ رُومِيَةِ (4: 4-9)",
+            "Romains (4: 4-9)",
+            "Romans (4: 4-9)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وانتم اذ كنتم امواتا بالذنوب والخطايا التي سلكتم فيها قبلا حسب دهر هذا العالم حسب رئيس سلطان الهواء الروح الذي يعمل الآن في ابناء المعصية",
-            "1 Et vous, qui étiez morts à cause de vos fautes et des péchés 2 où vous étiez autrefois engagés, quand vous suiviez le dieu de ce monde, le prince qui s'interpose entre ciel et terre, l'esprit qui agit maintenant parmi les rebelles.",
-            "1And you He made alive, who were dead in trespasses and sins, 2 in which you once walked according to the course of this world, according to the prince of the power of the air, the spirit who now works in the sons of disobedience,",
+            "أَمَّا الَّذِي يَعْمَلُ فَلاَ تُحْسَبُ لَهُ الأُجْرَةُ عَلَى سَبِيلِ نِعْمَةٍ، بَلْ عَلَى سَبِيلِ دَيْنٍ وَأَمَّا الَّذِي لاَ يَعْمَلُ، وَلكِنْ يُؤْمِنُ بِالَّذِي يُبَرِّرُ الْفَاجِرَ، فَإِيمَانُهُ يُحْسَبُ لَهُ بِرًّا.",
+            "04 Si quelqu’un accomplit un travail, son salaire ne lui est pas accordé comme un don gratuit, mais comme un dû. 05 Au contraire, si quelqu’un, sans rien accomplir, a foi en Celui qui rend juste l’homme impie, il lui est accordé d’être juste par sa foi.",
+            "",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذين نحن ايضا جميعا تصرفنا قبلا بينهم في شهوات جسدنا عاملين مشيئات الجسد والافكار وكنا بالطبيعة ابناء الغضب كالباقين ايضا الله الذي هو غني في الرحمة من اجل محبته الكثيرة التي احبنا بها",
-            "3 Nous étions de ce nombre, nous tous aussi, qui nous abandonnions jadis aux désirs de notre chair: nous faisions ses volontés, suivions ses impulsions, et nous étions par nature, tout comme les autres, voués à la colère.4 Mais Dieu est riche en miséricorde; à cause du grand amour dont il nous a aimés,",
-            "3 among whom also we all once conducted ourselves in the lusts of our flesh, fulfilling the desires of the flesh and of the mind, and were by nature children of wrath, just as the others. 4 But God, who is rich in mercy, because of His great love with which He loved us,",
+            'كَمَا يَقُولُ دَاوُدُ أَيْضًا فِي تَطْوِيبِ الإِنْسَانِ الَّذِي يَحْسِبُ لَهُ اللهُ بِرًّا بِدُونِ أَعْمَال: "طُوبَى لِلَّذِينَ غُفِرَتْ آثَامُهُمْ وَسُتِرَتْ خَطَايَاهُمْ طُوبَى لِلرَّجُلِ الَّذِي لاَ يَحْسِبُ لَهُ الرَّبُّ خَطِيَّةً".',
+            "06 C’est ainsi que le psaume de David proclame heureux l’homme à qui Dieu accorde d’être juste, indépendamment de la pratique des œuvres : « 07 Heureux ceux dont les offenses ont été remises, et les péchés, effacés. 08 Heureux l’homme dont le péché n’est pas compté par le Seigneur ».",
+            "",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ونحن اموات بالخطايا احيانا مع المسيح.بالنعمة انتم مخلّصون. واقامنا معه واجلسنا معه في السماويات في المسيح يسوع",
-            "5 alors que nous étions morts à cause de nos fautes, Il nous a donné la vie avec le Christ - c'est par grâce que vous êtes sauvés -,6 avec lui, il nous a ressuscités et fait asseoir dans les cieux, en Jésus Christ.",
-            "5 even when we were dead in trespasses, made us alive together with Christ (by grace you have been saved), 6 and raised us up together, and made us sit together in the heavenly places in Christ Jesus,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ليظهر في الدهور الآتية غنى نعمته الفائق باللطف علينا في المسيح يسوع.",
-            "7 Ainsi, par sa bonté pour nous en Jésus Christ, il a voulu montrer dans les siècles à venir l'incomparable richesse de sa grâce.",
-            "7 that in the ages to come He might show the exceeding riches of His grace in His kindness toward us in Christ Jesus.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانكم بالنعمة مخلّصون بالايمان وذلك ليس منكم.هو عطية الله. ليس من اعمال كي لا يفتخر احد",
-            "8 C'est par la grâce, en effet, que vous êtes sauvés, par le moyen de la foi; vous n'y êtes pour rien, c'est le don de Dieu. 9 Cela ne vient pas des oeuvres, afin que nul n'en tire orgueil.",
-            "8 For by grace you have been saved through faith, and that not of yourselves; it is the gift of God, 9 not of works, lest anyone should boast.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاننا نحن عمله مخلوقين في المسيح يسوع لاعمال صالحة قد سبق الله فاعدها لكي نسلك فيها لذلك اذكروا انكم انتم الامم قبلا في الجسد",
-            "10 Car c'est lui qui nous a faits; nous avions été créés en Jésus Christ pour les oeuvres bonnes que Dieu a préparées d'avance afin que nous nous y engagions. 11 Souvenez-vous donc qu'autrefois, vous qui portiez le signe du paganisme dans votre chair,",
-            "10 For we are His workmanship, created in Christ Jesus for good works, which God prepared beforehand that we should walk in them. 11 Therefore remember that you, once Gentiles in the flesh-",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "المدعوين غرلة من المدعو ختانا مصنوعا باليد في الجسد انكم كنتم في ذلك الوقت بدون مسيح اجنبيين عن رعوية اسرائيل وغرباء عن عهود الموعد",
-            "vous que traitaient d'incirconcis' ceux qui se prétendent les 'circoncis', à la suite d'une opération pratiquée dans la chair,12 souvenez-vous qu'en ce temps-là, vous étiez sans Messie, privés du droit de cité en Israël, étrangers aux alliances de la promesse,",
-            "- who are called Uncircumcision by what is called the Circumcision made in the flesh by hands-- 12 that at that time you were without Christ, being aliens from the commonwealth of Israel and strangers from the covenants of promise,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا رجاء لكم وبلا اله في العالم. ولكن الآن في المسيح يسوع انتم الذين كنتم قبلا بعيدين صرتم قريبين بدم المسيح. لانه هو سلامنا الذي جعل الاثنين واحدا ونقض حائط السياج المتوسط اي العداوة.",
-            "sans espérance et sans Dieu dans le monde.13 Mais maintenant, en Jésus Christ, vous qui jadis étiez loin, vous avez été rendus proches par le sang du Christ. 14 C'est lui, en effet, qui est notre paix: de ce qui était divisé, il a fait une unité. Dans la chair, il a détruit le mur de séparation: la haine.",
-            "having no hope and without God in the world. 13 But now in Christ Jesus you who once were far off have been brought near by the blood of Christ. 14 For He Himself is our peace, who has made both one, and has broken down the middle wall of separation,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبطلا بجسده ناموس الوصايا في فرائض لكي يخلق الاثنين في نفسه انسانا واحدا جديدا صانعا سلاما ويصالح الاثنين في جسد واحد مع الله بالصليب قاتلا العداوة به.",
-            "15 Il a aboli la loi et ses commandements avec leurs observances. Il a voulu ainsi, à partir du Juif et du païen, créer en lui un seul homme nouveau, en établissant la paix,16 et les réconcilier avec Dieu tous les deux en un seul corps, au moyen de la croix: là, il a tué la haine.",
-            "15 having abolished in His flesh the enmity, that is, the law of commandments contained in ordinances, so as to create in Himself one new man from the two, thus making peace, 16 and that He might reconcile them both to God in one body through the cross, thereby putting to death the enmity.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فجاء وبشركم بسلام انتم البعيدين والقريبين. لان به لنا كلينا قدوما في روح واحد الى الآب. فلستم اذا بعد غرباء ونزلا.",
-            "17 Il est venu annoncer la paix à vous qui étiez loin, et la paix à ceux qui étaient proches.18 Et c'est grâce à lui que les uns et les autres, dans un seul Esprit, nous avons l'accès auprès du Père. Ainsi, vous n'êtes plus des étrangers, ni des émigrés;",
-            "17 And He came and preached peace to you who were afar off and to those who were near. 18 For through Him we both have access by one Spirit to the Father. 19 Now, therefore, you are no longer strangers and foreigners,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل رعية مع القديسين واهل بيت الله مبنيين على اساس الرسل والانبياء ويسوع المسيح نفسه حجر الزاوية",
-            "vous êtes concitoyens des saints, vous êtes de la famille de Dieu. 20 Vous avez été intégrés dans la construction qui a pour fondation les apôtres et les prophètes, et Jésus Christ lui-même comme pierre maîtresse.",
-            "but fellow citizens with the saints and members of the household of God, 20 having been built on the foundation of the apostles and prophets, Jesus Christ Himself being the chief corner stone,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي فيه كل البناء مركبا معا ينمو هيكلا مقدسا في الرب. الذي فيه انتم ايضا مبنيون معا مسكنا للّه في الروح",
-            "21 C'est en lui que toute construction s'ajuste et s'élève pour former un temple saint dans le Seigneur. 22 C'est en lui que, vous aussi, vous êtes ensemble intégrés à la construction pour devenir une demeure de Dieu par l'Esprit.",
-            "21 in whom the whole building, being joined together, grows into a holy temple in the Lord, 22 in whom you also are being built together for a dwelling place of God in the Spirit.",
-        ],
-    ],
-    [
-        [
-            Prefix.stPaul + "&D=2609&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (10 :4- 18)",
-            "Romains 10 : 4 - 18",
-            "Romans 10:4-18",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان غاية الناموس هي المسيح للبر لكل من يؤمن. لان موسى يكتب في البر الذي بالناموس ان الانسان الذي يفعلها سيحيا بها.",
-            "4 Car la fin de la loi, c'est Christ, pour que soit donnée la justice à tout homme qui croit. 5 Moïse lui-même écrit de la justice qui vient de la loi: L'homme qui l'accomplira vivra par elle.",
-            "4 For Christ is the end of the law for righteousness to everyone who believes. 5 For Moses writes about the righteousness which is of the law,The man who does those things shall live by them.''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما البر الذي بالايمان فيقول هكذا لا تقل في قلبك من يصعد الى السماء اي ليحدر المسيح. او من يهبط الى الهاوية اي ليصعد المسيح من الاموات.",
-            "6 Mais la justice qui vient de la foi parle ainsi: Ne dis pas dans ton coeur: Qui montera au ciel? Ce serait en faire descendre Christ; ni: Qui descendra dans l'abîme? 7 Ce serait faire remonter Christ d'entre les morts.",
-            "6 But the righteousness of faith speaks in this way, Do not say in your heart, 'Who will ascend into heaven?' '' (that is, to bring Christ down from above) 7 or, 'Who will descend into the abyss?' '' (that is, to bring Christ up from the dead).",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكن ماذا يقول.الكلمة قريبة منك في فمك وفي قلبك اي كلمة الايمان التي نكرز بها. لانك ان اعترفت بفمك بالرب يسوع وآمنت بقلبك ان الله اقامه من الاموات خلصت.",
-            "8 Que dit-elle donc? Tout près de toi est la parole, dans ta bouche et dans ton coeur. 9 Cette parole, c'est la parole de la foi que nous proclamons. Si, de ta bouche, tu confesses que Jésus est Seigneur et si, dans ton coeur, tu crois que Dieu l'a ressuscité des morts, tu seras sauvé.",
-            "8 But what does it say? The word is near you, in your mouth and in your heart'' (that is, the word of faith which we preach): 9 that if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان القلب يؤمن به للبر والفم يعترف به للخلاص. لان الكتاب يقول كل من يؤمن به لا يخزى. لانه لا فرق بين اليهودي واليوناني لان ربا واحدا للجميع غنيا لجميع الذين يدعون به.",
-            "10 En effet, croire dans son coeur conduit à la justice et confesser de sa bouche conduit au salut. 11 Car l'Écriture dit: Quiconque croit en lui ne sera pas confondu. 12 Ainsi, il n'y a pas de différence entre Juif et Grec: tous ont le même Seigneur, riche envers tous ceux qui l'invoquent.",
-            "10 For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. 11 For the Scripture says, Whoever believes on Him will not be put to shame.'' 12 For there is no distinction between Jew and Greek, for the same Lord over all is rich to all who call upon Him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان كل من يدعو باسم الرب يخلص. فكيف يدعون بمن لم يؤمنوا به.وكيف يؤمنون بمن لم يسمعوا به.وكيف يسمعون بلا كارز.",
-            "13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.14 Or, comment l'invoqueraient-ils, sans avoir cru en lui? Et comment croiraient-ils en lui, sans l'avoir entendu? Et comment l'entendraient-ils, si personne ne le proclame?",
-            "13 For whoever calls on the name of the Lord shall be saved.'' 14 How then shall they call on Him in whom they have not believed? And how shall they believe in Him of whom they have not heard? And how shall they hear without a preacher?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكيف يكرزون ان لم يرسلوا.كما هو مكتوب ما اجمل اقدام المبشرين بالسلام المبشرين بالخيرات. لكن ليس الجميع قد اطاعوا الانجيل لان اشعياء يقول يا رب من صدق خبرنا.",
-            "15 Et comment le proclamer, sans être envoyé? Aussi est-il écrit: Qu'ils sont beaux les pieds de ceux qui annoncent de bonnes nouvelles! 16 Mais tous n'ont pas obéi à l'Évangile. Esaïe dit en effet: Seigneur, qui a cru à notre prédication?",
-            "15 And how shall they preach unless they are sent? As it is written: How beautiful are the feet of those who preach the gospel of peace, who bring glad tidings of good things!'' 16 But they have not all obeyed the gospel. For Isaiah says, Lord, who has believed our report?''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اذا الايمان بالخبر والخبر بكلمة الله. لكنني اقول ألعلهم لم يسمعوا. بلى.الى كل الارض خرج صوتهم والى اقاصي المسكونة اقوالهم.",
-            "17 Ainsi la foi vient de la prédication et la prédication c'est l'annonce de la parole du Christ. 18 Je demande alors: N'auraient-ils pas entendu? Mais si! Par toute la terre a retenti leur voix et jusqu'aux extrémités du monde leurs paroles.",
-            "17 So then faith comes by hearing, and hearing by the word of God. 18 But I say, have they not heard? Yes indeed: Their sound has gone out to all the earth, and their words to the ends of the world.'",
+            'أَفَهذَا التَّطْوِيبُ هُوَ عَلَى الْخِتَانِ فَقَطْ أَمْ عَلَى الْغُرْلَةِ أَيْضًا؟ لأَنَّنَا نَقُولُ: "إِنَّهُ حُسِبَ لإِبْرَاهِيمَ الإِيمَانُ بِرًّا".',
+            "09 Cette béatitude-là concerne-t-elle seulement ceux qui ont la circoncision, ou bien aussi ceux qui ne l’ont pas ? Nous disons, en effet : « C’est pour sa foi qu’il a été accordé à Abraham d’être juste. »",
+            "",
         ],
     ],
     [
         [
             Prefix.stPaul + "&D=0210&C=Title",
-            " بولس الرسول إلى أهل العبرانين (11:1-10 )",
+            " بولس الرسول إلى أَهْلِ العبرانين (11:1-10 )",
             "Hébreux 11:1 - 10",
             "Hebrews 11:1-10",
         ],
@@ -4287,9 +4248,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=101stSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل رومية ( 15 : 13 ـ 29 )",
-            "Romans 15:13-29",
-            "Romains 15:13-29",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ رُومِيَّة ( 15 : 13 - 29 )",
+            "Romans (15: 13-29)",
+            "Romains (15: 13-29)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -4355,7 +4316,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=102ndSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 2 : 6 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2 : 6 - 16 )",
             "1 Corinthians 2:6-16",
             "1 Corinthians 2:6-16",
         ],
@@ -4405,7 +4366,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=103rdSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس ( 4:1-16)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس ( 4:1-16)",
             "1 Corinthians 4: 1 – 16",
             "1 Corinthiens 4 : 1 - 16",
         ],
@@ -4461,7 +4422,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=104thSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كولوسى ( 4 : 2 ـ 18 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي ( 4 : 2 - 18 )",
             "Colossians 4: 2 – 18",
             "Colossiens 4: 2 – 18",
         ],
@@ -4515,7 +4476,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "السلام بيدي انا بولس.اذكروا وثقي.النعمة معكم.آمين.كتبت الى اهل كولوسي من رومية بيد تيخيكس وأنسيمس",
+            "السلام بيدي انا بولس.اذكروا وثقي.النعمة معكم.آمين.كتبت الى اهل كُولُوسِي من رُومِيَّة بيد تيخيكس وأنسيمس",
             "This salutation by my own hand; Paul. Remember my chains. Grace be with you. Amen.",
             "La salutation de ma main, à moi Paul, la voici: Souvenez-vous de mes chaînes. La grâce soit avec vous.",
         ],
@@ -4523,7 +4484,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1610&C=Title",
-            " بولس الرسول إلى العبرانيين( 11 : 32 ـ 12 : 1 ـ 2 )",
+            " بولس الرسول إلى العبرانيين( 11 : 32 - 12 : 1 - 2 )",
             "Hébreux 11:32 - 12:1 - 2",
             "Hebrews 11:32-12:2",
         ],
@@ -4579,7 +4540,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=3010&C=Title",
-            " بولس الرسول إلى أهل عبرانين 11:32-12:2",
+            " بولس الرسول إلى أَهْلِ عبرانين 11:32-12:2",
             "Hébreux 11:32 - 12:1 - 2",
             "Hebrews 11:32-12:2",
         ],
@@ -4629,7 +4590,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0311&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورونثوس ( 4 :5 – 5 :11)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورونثوس ( 4 :5 – 5 :11)",
             "2 Corinthiens 4:5 - 5:1-11",
             "2 Corinthians 4:5-18 & 5:1-11",
         ],
@@ -4714,58 +4675,8 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=0511&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (10 :4- 18)",
-            "Romains 10 : 4 - 18",
-            "Romans 10:4-18",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان غاية الناموس هي المسيح للبر لكل من يؤمن. لان موسى يكتب في البر الذي بالناموس ان الانسان الذي يفعلها سيحيا بها.",
-            "4 Car la fin de la loi, c'est Christ, pour que soit donnée la justice à tout homme qui croit. 5 Moïse lui-même écrit de la justice qui vient de la loi: L'homme qui l'accomplira vivra par elle.",
-            "4 For Christ is the end of the law for righteousness to everyone who believes. 5 For Moses writes about the righteousness which is of the law,The man who does those things shall live by them.''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما البر الذي بالايمان فيقول هكذا لا تقل في قلبك من يصعد الى السماء اي ليحدر المسيح. او من يهبط الى الهاوية اي ليصعد المسيح من الاموات.",
-            "6 Mais la justice qui vient de la foi parle ainsi: Ne dis pas dans ton coeur: Qui montera au ciel? Ce serait en faire descendre Christ; ni: Qui descendra dans l'abîme? 7 Ce serait faire remonter Christ d'entre les morts.",
-            "6 But the righteousness of faith speaks in this way, Do not say in your heart, 'Who will ascend into heaven?' '' (that is, to bring Christ down from above) 7 or, 'Who will descend into the abyss?' '' (that is, to bring Christ up from the dead).",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكن ماذا يقول.الكلمة قريبة منك في فمك وفي قلبك اي كلمة الايمان التي نكرز بها. لانك ان اعترفت بفمك بالرب يسوع وآمنت بقلبك ان الله اقامه من الاموات خلصت.",
-            "8 Que dit-elle donc? Tout près de toi est la parole, dans ta bouche et dans ton coeur. 9 Cette parole, c'est la parole de la foi que nous proclamons. Si, de ta bouche, tu confesses que Jésus est Seigneur et si, dans ton coeur, tu crois que Dieu l'a ressuscité des morts, tu seras sauvé.",
-            "8 But what does it say? The word is near you, in your mouth and in your heart'' (that is, the word of faith which we preach): 9 that if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان القلب يؤمن به للبر والفم يعترف به للخلاص. لان الكتاب يقول كل من يؤمن به لا يخزى. لانه لا فرق بين اليهودي واليوناني لان ربا واحدا للجميع غنيا لجميع الذين يدعون به.",
-            "10 En effet, croire dans son coeur conduit à la justice et confesser de sa bouche conduit au salut. 11 Car l'Écriture dit: Quiconque croit en lui ne sera pas confondu. 12 Ainsi, il n'y a pas de différence entre Juif et Grec: tous ont le même Seigneur, riche envers tous ceux qui l'invoquent.",
-            "10 For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. 11 For the Scripture says, Whoever believes on Him will not be put to shame.'' 12 For there is no distinction between Jew and Greek, for the same Lord over all is rich to all who call upon Him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان كل من يدعو باسم الرب يخلص. فكيف يدعون بمن لم يؤمنوا به.وكيف يؤمنون بمن لم يسمعوا به.وكيف يسمعون بلا كارز.",
-            "13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.14 Or, comment l'invoqueraient-ils, sans avoir cru en lui? Et comment croiraient-ils en lui, sans l'avoir entendu? Et comment l'entendraient-ils, si personne ne le proclame?",
-            "13 For whoever calls on the name of the Lord shall be saved.'' 14 How then shall they call on Him in whom they have not believed? And how shall they believe in Him of whom they have not heard? And how shall they hear without a preacher?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكيف يكرزون ان لم يرسلوا.كما هو مكتوب ما اجمل اقدام المبشرين بالسلام المبشرين بالخيرات. لكن ليس الجميع قد اطاعوا الانجيل لان اشعياء يقول يا رب من صدق خبرنا.",
-            "15 Et comment le proclamer, sans être envoyé? Aussi est-il écrit: Qu'ils sont beaux les pieds de ceux qui annoncent de bonnes nouvelles! 16 Mais tous n'ont pas obéi à l'Évangile. Esaïe dit en effet: Seigneur, qui a cru à notre prédication?",
-            "15 And how shall they preach unless they are sent? As it is written: How beautiful are the feet of those who preach the gospel of peace, who bring glad tidings of good things!'' 16 But they have not all obeyed the gospel. For Isaiah says, Lord, who has believed our report?''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اذا الايمان بالخبر والخبر بكلمة الله. لكنني اقول ألعلهم لم يسمعوا. بلى.الى كل الارض خرج صوتهم والى اقاصي المسكونة اقوالهم.",
-            "17 Ainsi la foi vient de la prédication et la prédication c'est l'annonce de la parole du Christ. 18 Je demande alors: N'auraient-ils pas entendu? Mais si! Par toute la terre a retenti leur voix et jusqu'aux extrémités du monde leurs paroles.",
-            "17 So then faith comes by hearing, and hearing by the word of God. 18 But I say, have they not heard? Yes indeed: Their sound has gone out to all the earth, and their words to the ends of the world.'",
-        ],
-    ],
-    [
-        [
             Prefix.stPaul + "&D=111stSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس(9 : 1 ـ 27(",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس(9 : 1 - 27(",
             "1Corinthians 9:1-27",
             "1Corinthians 9:1-27",
         ],
@@ -4789,7 +4700,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَن تَجَنَّدَ قَطُّ بنفقَةِ نَفسِهِ؟ ومَنْ يَغرسُ كرماً ولا يأكُل من ثمره؟ أو مَنْ يَرعى قطيع غنم ولا يأكُل مِن لبنِ القطيع؟ ألعلِّي أتكلَّمُ بِهذا كَإنسـانٍ؟ أَم ليسَ النَّاموسُ نفسـه أيضاً يقولُ هــذا؟",
+            "مَن تَجَنَّدَ قَطُّ بنفقَةِ نَفسِهِ؟ ومَنْ يَغرسُ كرماً ولا يأكُل من ثمره؟ أو مَنْ يَرعى قطيع غنم ولا يأكُل مِن لبنِ القطيع؟ ألعلِّي أتكلَّمُ بِهذا كَإنس-انٍ؟ أَم ليسَ النَّاموسُ نفس-ه أيضاً يقولُ ه--ذا؟",
             "7 Qui donc sert jamais dans une armée à ses propres frais ? Qui plante une vigne et n’en mange pas le fruit ? Qui fait paître un troupeau et ne se nourrit pas du lait du troupeau ? 8 Est–ce en homme que je parle ainsi ? La loi aussi ne le dit–elle pas ?",
             "7 Who ever goes to war at his own expense? Who plants a vineyard and does not eat of its fruit? Or who tends a flock and does not drink of the milk of the flock? 8 Do I say these things as a mere man? Or does not the law say the same also?",
         ],
@@ -4837,7 +4748,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مع أنِّي لستُ تحت النَّاموس لأربح الَّذينَ تَحتَ النَّاموسِ. وصِرت للَّذينَ بلا نَامُوسٍ كأنِّي بلا نَاموسٍ. مع أنِّي لستُ بلا ناموس اللـه، بل تَحتَ ناموسٍ للمسيح لأربَحَ الَّذينَ بلا نَاموسٍ. صِرتُ للضُّعَفاءِ كضعيفٍ لأربح الضُّعَفاءَ. صِرتُ للجميع كل نوع لأُخلِّصَ على كلِّ حالٍ قوماً.",
+            "مع أنِّي لستُ تحت النَّاموس لأربح الَّذينَ تَحتَ النَّاموسِ. وصِرت للَّذينَ بلا نَامُوسٍ كأنِّي بلا نَاموسٍ. مع أنِّي لستُ بلا ناموس الل-ه، بل تَحتَ ناموسٍ للمسيح لأربَحَ الَّذينَ بلا نَاموسٍ. صِرتُ للضُّعَفاءِ كضعيفٍ لأربح الضُّعَفاءَ. صِرتُ للجميع كل نوع لأُخلِّصَ على كلِّ حالٍ قوماً.",
             "21 avec ceux qui sont sans loi, comme sans loi – et pourtant je ne suis pas moi–même sans la loi de Dieu, mais sous la loi de Christ – afin de gagner ceux qui sont sans loi. 22 J’ai été faible avec les faibles, afin de gagner les faibles. Je me suis fait tout à tous, afin d’en sauver de toute manière quelques–uns.",
             "21 to those who are without law, as without law (not being without law toward God, but under law toward Christ), that I might win those who are without law; 22 to the weak I became as weak, that I might win the weak. I have become all things to all men, that I might by all means save some.",
         ],
@@ -4849,7 +4760,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أمَّا أولئك فَلِكـي يأخذوا إكليلاً يَفنَى، وأمَّا نحنُ ( فإكليلاً ) لا يَفنَى.إذاً، أنا أركُضُ هكذا كأنَّهُ ليسَ عَن غير يَقينٍ. هكذا أُلاكم كأنِّي لا أضربُ الهواء. بل أَقمَعُ جَسَدِي وأَستَعبِدُهُ، حتَّى بعدَ مَا بشرتُ للآخرينَ لا أصيرُ أنا نفسي مرفوضاً.",
+            "أمَّا أولئك فَلِك-ي يأخذوا إكليلاً يَفنَى، وأمَّا نحنُ ( فإكليلاً ) لا يَفنَى.إذاً، أنا أركُضُ هكذا كأنَّهُ ليسَ عَن غير يَقينٍ. هكذا أُلاكم كأنِّي لا أضربُ الهواء. بل أَقمَعُ جَسَدِي وأَستَعبِدُهُ، حتَّى بعدَ مَا بشرتُ للآخرينَ لا أصيرُ أنا نفسي مرفوضاً.",
             "eux, pour recevoir une couronne corruptible, nous, pour une couronne incorruptible. 26 Moi donc, je cours, mais non pas à l’aventure ; je donne des coups de poing, mais non pour battre l’air. 27 Au contraire, je traite durement mon corps et je le tiens assujetti, de peur, après avoir prêché aux autres, d’être moi–même disqualifié.",
             "Now they do it to obtain a perishable crown, but we for an imperishable crown. 26 Therefore I run thus: not with uncertainty. Thus I fight: not as one who beats the air. 27 But I discipline my body and bring it into subjection, lest, when I have preached to others, I myself should become disqualified.",
         ],
@@ -4857,7 +4768,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=112ndSunday&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل غلاطية( 1 : 1 ـ 24 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ غلاطية( 1 : 1 - 24 )",
             "Galatians 1:1-24",
             "Galatians 1:1-24",
         ],
@@ -4899,7 +4810,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنِّي لم أقبَلَهُ مِن عندَ إنسانٍ ولا عُلِّمتُهُ. بل بإعلانِ يسوعَ المسيح. فإنَّكُم سَمعتُم بسيرتي قبلاً في الدِّيانة اليهوديَّة أنِّي كُنتُ اضطهدُ كنيسةَ اللـهِ بإفراط وأُخربها.",
+            "لأنِّي لم أقبَلَهُ مِن عندَ إنسانٍ ولا عُلِّمتُهُ. بل بإعلانِ يسوعَ المسيح. فإنَّكُم سَمعتُم بسيرتي قبلاً في الدِّيانة اليهوديَّة أنِّي كُنتُ اضطهدُ كنيسةَ الل-هِ بإفراط وأُخربها.",
             "12 car moi–même je ne l’ai ni reçu ni appris d’un homme, mais par une révélation de Jésus–Christ. 13 Vous avez en effet entendu parler de ma conduite autrefois dans le judaïsme : je persécutais alors à outrance l’Église de Dieu et je la ravageais ;",
             "12 For I neither received it from man, nor was I taught it, but it came through the revelation of Jesus Christ. 13 For you have heard of my former conduct in Judaism, how I persecuted the church of God beyond measure and tried to destroy it.",
         ],
@@ -4917,7 +4828,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ثمَّ بعد ثلاثِ سنينَ صَعدتُ إلى أورشـليمَ لأنظُرَ كيفا أي الصفا، ومكثتُ عنده خمسـةَ عشرَ يوماً. ولكنَّني لم أرَ غيرَهُ مِن الرُّسُلِ إلاَّ يعقوبَ أخا الربِّ. والذي أكتُبُ بهِ إليكُم هوذا قُدَّام اللـهِ أنِّي لستُ أكذبُ فيهِ.",
+            "ثمَّ بعد ثلاثِ سنينَ صَعدتُ إلى أورش-ليمَ لأنظُرَ كيفا أي الصفا، ومكثتُ عنده خمس-ةَ عشرَ يوماً. ولكنَّني لم أرَ غيرَهُ مِن الرُّسُلِ إلاَّ يعقوبَ أخا الربِّ. والذي أكتُبُ بهِ إليكُم هوذا قُدَّام الل-هِ أنِّي لستُ أكذبُ فيهِ.",
             "18 Trois ans plus tard, je suis monté à Jérusalem pour faire la connaissance de Céphas, et je suis resté quinze jours chez lui.19 Mais je n’ai vu aucun autre des apôtres, si ce n’est Jacques, le frère du Seigneur. 20 En vous écrivant cela, voici : devant Dieu, je ne mens pas.",
             "18 Then after three years I went up to Jerusalem to see Peter, and remained with him fifteen days. 19 But I saw none of the other apostles except James, the Lord's brother. 20 (Now concerning the things which I write to you, indeed, before God, I do not lie.)",
         ],
@@ -4929,7 +4840,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "غير أنَّهُم كانوا يسمعونَ أنَّ الذي كان يضطهدُنا قبلاً، يُبشِّرُ الآن بالإيمانِ الذي كان قبلاً يُتلفُه. فكانوا يُمجِّدون اللـهَ فيَّ.",
+            "غير أنَّهُم كانوا يسمعونَ أنَّ الذي كان يضطهدُنا قبلاً، يُبشِّرُ الآن بالإيمانِ الذي كان قبلاً يُتلفُه. فكانوا يُمجِّدون الل-هَ فيَّ.",
             "23 Elles avaient seulement entendu dire : Celui qui autrefois nous persécutait, annonce maintenant la foi qu’il voulait alors détruire. 24 Et elles glorifiaient Dieu à mon sujet.",
             "23 But they were hearing only, He who formerly persecuted us now preaches the faith which he once tried to destroy. 24 And they glorified God in me.",
         ],
@@ -4937,7 +4848,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=113rdSunday&C=Title",
-            " رسالة بولس الرسول إلى تلميذه تيموثاوس ( 6: 3 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى تلميذه تيموثاوس ( 6: 3 - 16 )",
             "1 Timothy 6:3-16",
             "1 Timothy 6:3-16",
         ],
@@ -4973,7 +4884,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فأمَّا أنتَ يا رجل اللـهِ فاهرُب مِن هذا، وأسع في طلب البرَّ والتَّقوى والإيمان والمحبَّة والصَّبر وقبول الآلام بوداعة.",
+            "فأمَّا أنتَ يا رجل الل-هِ فاهرُب مِن هذا، وأسع في طلب البرَّ والتَّقوى والإيمان والمحبَّة والصَّبر وقبول الآلام بوداعة.",
             "11 Pour toi, homme de Dieu, fuis ces choses et recherche la justice, la piété, la foi, l’amour, la patience, la douceur.",
             "11 But you, O man of God, flee these things and pursue righteousness, godliness, faith, love, patience, gentleness.",
         ],
@@ -4985,13 +4896,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أُوصيكَ أمام اللـه الذي يُحيي الكلَّ، والمسيح يسوع هذا الذي شَهِدَ لدَى بيلاطُس البُنطيِّ بالاعتراف الحَسنِ: أنْ تَحفظَ الوصيَّة بلا دنسٍ ولا لوم إلى ظهور ربِّنا يسوعَ المسيح،",
+            "أُوصيكَ أمام الل-ه الذي يُحيي الكلَّ، والمسيح يسوع هذا الذي شَهِدَ لدَى بيلاطُس البُنطيِّ بالاعتراف الحَسنِ: أنْ تَحفظَ الوصيَّة بلا دنسٍ ولا لوم إلى ظهور ربِّنا يسوعَ المسيح،",
             "13 Je te le recommande, devant Dieu qui donne la vie à tous les êtres, et devant le Christ–Jésus qui a rendu témoignage par sa belle confession devant Ponce–Pilate : 14 garde le commandement sans tache, sans reproche, jusqu’à l’apparition de notre Seigneur Jésus–Christ,",
             "13 I urge you in the sight of God who gives life to all things, and before Christ Jesus who witnessed the good confession before Pontius Pilate, 14 that you keep this commandment without spot, blameless until our Lord Jesus Christ's appearing,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي سيُظهِرَهُ في وقتهِ اللـهِ القادر وحده ملكُ المُلوكِ وربُ الأربابِ، الذي وحدهُ لهُ عدمُ الموتِ، ساكِناً في نورٍ لا يُدنَى مِنهُ، الذي لم يَرهُ أحدٌ مِن النَّاس ولا يقدرُ أن يراهُ، الذي له الكرامةُ والسلطان إلى الأبد. آمين.",
+            "الذي سيُظهِرَهُ في وقتهِ الل-هِ القادر وحده ملكُ المُلوكِ وربُ الأربابِ، الذي وحدهُ لهُ عدمُ الموتِ، ساكِناً في نورٍ لا يُدنَى مِنهُ، الذي لم يَرهُ أحدٌ مِن النَّاس ولا يقدرُ أن يراهُ، الذي له الكرامةُ والسلطان إلى الأبد. آمين.",
             "15 que manifestera en son temps le bienheureux et seul Souverain, le Roi des rois et le Seigneur des seigneurs, 16 qui seul possède l’immortalité, qui habite une lumière inaccessible, que nul homme n’a vu, ni ne peut voir : à lui, honneur et puissance éternelle ! Amen !",
             "15 which He will manifest in His own time, He who is the blessed and only Potentate, the King of kings and Lord of lords, 16 who alone has immortality, dwelling in unapproachable light, whom no man has seen or can see, to whom be honor and everlasting power. Amen.",
         ],
@@ -4999,7 +4910,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=114thSunday&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل فيلبي( 1 : 27 ـ 30 ، 2 : 1 ـ 11)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ فيلبي( 1 : 27 - 30 ، 2 : 1 - 11)",
             "Philippians 1:27-2:11",
             "Philippians 1:27-2:11",
         ],
@@ -5011,7 +4922,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "غير مُخَوَّفينَ بشيءٍ مِن المُقاومينَ، الأمرُ الذي هو لهُم بيِّنَةٌ للهلاك، وأمَّا لكُم فَلِلخلاص، وذلكَ مِن اللـه. لأنَّهُ قد وُهِبَ لكُم لأجل المسيح لا أن تُؤمِنوا به فَقَط، بَل أيضاً أن تَتَألَّمُوا لأجلِهِ.",
+            "غير مُخَوَّفينَ بشيءٍ مِن المُقاومينَ، الأمرُ الذي هو لهُم بيِّنَةٌ للهلاك، وأمَّا لكُم فَلِلخلاص، وذلكَ مِن الل-ه. لأنَّهُ قد وُهِبَ لكُم لأجل المسيح لا أن تُؤمِنوا به فَقَط، بَل أيضاً أن تَتَألَّمُوا لأجلِهِ.",
             "28 sans vous laisser aucunement intimider par les adversaires. C’est pour eux une preuve de perdition, mais pour vous de salut, 29 et cela de la part de Dieu ; car il vous a été fait la grâce non seulement de croire en Christ, mais encore de souffrir pour lui,",
             "28 and not in any way terrified by your adversaries, which is to them a proof of perdition, but to you of salvation, and that from God. 29 For to you it has been granted on behalf of Christ, not only to believe in Him, but also to suffer for His sake,",
         ],
@@ -5035,19 +4946,19 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي إذ كان في صورةِ اللـهِ، لم يَحسِب خُلسَةً أن يكونَ مُعادِلاً للـه. لكنَّهُ أخلى نفسهُ، آخذاً صورة عبدٍ، صائِراً في شِبهِ النَّاس.",
+            "الذي إذ كان في صورةِ الل-هِ، لم يَحسِب خُلسَةً أن يكونَ مُعادِلاً لل-ه. لكنَّهُ أخلى نفسهُ، آخذاً صورة عبدٍ، صائِراً في شِبهِ النَّاس.",
             "6 lui dont la condition était celle de Dieu, il n’a pas estimé comme une proie à arracher d’être égal avec Dieu, 7 mais il s’est dépouillé lui–même, en prenant la condition d’esclave, en devenant semblable aux hommes ; après s’être trouvé dans la situation d’un homme,",
             "6 who, being in the form of God, did not consider it robbery to be equal with God, 7 but made Himself of no reputation, taking the form of a bondservant, and coming in the likeness of men.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وإذ وُجِدَ في الهيئةِ كإنسانٍ وضَعَ نفسهُ وأطاعَ حتَّى الموتَ موتَ الصَّليبِ. لذلكَ زادهُ اللـهُ رفعة، وأنعم عليهِ بِاسم فوقَ كلِّ اسم.",
+            "وإذ وُجِدَ في الهيئةِ كإنسانٍ وضَعَ نفسهُ وأطاعَ حتَّى الموتَ موتَ الصَّليبِ. لذلكَ زادهُ الل-هُ رفعة، وأنعم عليهِ بِاسم فوقَ كلِّ اسم.",
             "8 il s’est humilié lui–même en devenant obéissant jusqu’à la mort, la mort sur la croix. 9 C’est pourquoi aussi Dieu l’a souverainement élevé et lui a donné le nom qui est au–dessus de tout nom,",
             "8 And being found in appearance as a man, He humbled Himself and became obedient to the point of death, even the death of the cross. 9 Therefore God also has highly exalted Him and given Him the name which is above every name,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكي تَجثُوا بِاسم يسوعَ كلُّ ركبةٍ ممَّنْ في السَّماءِ ومَن على الأرضِ ومَن تحتَ الأرضِ، ويعترفَ كلُّ لسانٍ أنَّ يسوعَ المسيحَ هو ربٌّ لمجدِ اللـهِ الآبِ.",
+            "لكي تَجثُوا بِاسم يسوعَ كلُّ ركبةٍ ممَّنْ في السَّماءِ ومَن على الأرضِ ومَن تحتَ الأرضِ، ويعترفَ كلُّ لسانٍ أنَّ يسوعَ المسيحَ هو ربٌّ لمجدِ الل-هِ الآبِ.",
             "10 afin qu’au nom de Jésus tout genou fléchisse dans les cieux, sur la terre et sous la terre, 11 et que toute langue confesse que Jésus–Christ est Seigneur, à la gloire de Dieu le Père.",
             "10 that at the name of Jesus every knee should bow, of those in heaven, and of those on earth, and of those under the earth, 11 and that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father.",
         ],
@@ -5055,7 +4966,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2011&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل تيموثاوس ( 2 : 3 – 15 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ تيموثاوس ( 2 : 3 – 15 )",
             "2 Timothée 2 : 3 - 15",
             "2 Timothy 2:3-15",
         ],
@@ -5099,7 +5010,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0312&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس ( 3 : 1 ـ 8 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس ( 3 : 1 - 8 )",
             "1 Corinthiens 3 : 1 - 8",
             "1 Corinthians 3:1-8",
         ],
@@ -5131,7 +5042,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=121stSunday&C=Title",
-            "رسالة بولس الرَّسول الأولى إلى أهل كورنثوس (9: 1ـ27)",
+            "رسالة بولس الرَّسول الأولى إلى أَهْلِ كورنثوس (9: 1-27)",
             "1 Corinthiens (9: 1-27)",
             "1 Corinthians (9: 1-27)",
         ],
@@ -5149,7 +5060,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَنْ تَجَنَّدَ قَطُّ بِنَفَقَةِ نَفْسِهِ؟ وَمَنْ يَغْرِسُ كَرْماً وَلا يَأْكُلُ مِنْ ثَمَرِهِ؟ أَوْ مَنْ يَرْعَى قَطِيعَ غَنَمٍ وَلا يَأْكُلُ مِنْ لَبَنِ الْقَطِيعِ؟ أَلَعَلِّي أَتَكَلَّمُ بِهَذَا كَإنْسَانٍ؟ أَمْ لَيْسَ النَّامُوسُ نَفْسُهُ أيْضاً يَقُولُ هَذَا؟ فَإنَّهُ مَكْتُوبٌ في نَامُوسِ مُوسَى: \" لا تَكُمَّ ثَوْراً دَارِساً\". أَلَعَلَّ اللَّهَ تُهِمُّهُ الثِّيرَانُ؟ أَمْ يَقُولُ مُطْلَقاً مِنْ أَجْلِنَا؟ لأَنهُ مَكْتُوبٌ مِنْ أَجْلِنَا.  فإنهُ يَنْبَغِي لِلْحَرَّاثِ أَنْ يَحْرُثَ عَلَى رَجَاءٍ، وَلِلدَّارِسِ أنْ يَتَرَجَّى أنْ يَأْخُذَ. ",
+            'مَنْ تَجَنَّدَ قَطُّ بِنَفَقَةِ نَفْسِهِ؟ وَمَنْ يَغْرِسُ كَرْماً وَلا يَأْكُلُ مِنْ ثَمَرِهِ؟ أَوْ مَنْ يَرْعَى قَطِيعَ غَنَمٍ وَلا يَأْكُلُ مِنْ لَبَنِ الْقَطِيعِ؟ أَلَعَلِّي أَتَكَلَّمُ بِهَذَا كَإنْسَانٍ؟ أَمْ لَيْسَ النَّامُوسُ نَفْسُهُ أيْضاً يَقُولُ هَذَا؟ فَإنَّهُ مَكْتُوبٌ في نَامُوسِ مُوسَى: " لا تَكُمَّ ثَوْراً دَارِساً". أَلَعَلَّ اللَّهَ تُهِمُّهُ الثِّيرَانُ؟ أَمْ يَقُولُ مُطْلَقاً مِنْ أَجْلِنَا؟ لأَنهُ مَكْتُوبٌ مِنْ أَجْلِنَا.  فإنهُ يَنْبَغِي لِلْحَرَّاثِ أَنْ يَحْرُثَ عَلَى رَجَاءٍ، وَلِلدَّارِسِ أنْ يَتَرَجَّى أنْ يَأْخُذَ. ',
             "7 Qui donc sert jamais dans une armée à ses propres frais ? Qui plante une vigne et n’en mange pas le fruit ? Qui fait paître un troupeau et ne se nourrit pas du lait du troupeau ? 8 Est–ce en homme que je parle ainsi ? La loi aussi ne le dit–elle pas ? 9 Car il est écrit dans la loi de Moïse : Tu n’emmuselleras pas le boeuf quand il foule le grain. Dieu se met–il en peine des boeufs, 10 ou parle–t–il uniquement à cause de nous ? Oui, c’est à cause de nous que cela fut écrit ; celui qui laboure doit labourer avec espérance, et celui qui foule le grain, fouler avec l’espérance d’y avoir part. ",
             "7 Who ever goes to war at his own expense? Who plants a vineyard and does not eat of its fruit? Or who tends a flock and does not drink of the milk of the flock? 8 Do I say these things as a mere man? Or does not the law say the same also? 9 For it is written in the law of Moses, You shall not muzzle an ox while it treads out the grain. Is it oxen God is concerned about? 10 Or does He say it altogether for our sakes? For our sakes, no doubt, this is written, that he who plows should plow in hope, and he who threshes in hope should be partaker of his hope. ",
         ],
@@ -5205,7 +5116,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=122ndSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس ( 6 : 1 – 23 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 6 : 1 – 23 )",
             "Ephesians 6:1-23",
             "Ephesians 6:1-23",
         ],
@@ -5279,9 +5190,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=123rdSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية (20- 17 : 16 )",
-            "Romains 16:17-20",
-            "Romans 16:17-20",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (20- 17 : 16 )",
+            "Romains (16: 17-20)",
+            "Romans (16: 17-20)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5305,7 +5216,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=124thSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل تسالونيكى الأولى( 2 :13: 13 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ تسالونيكى الأولى( 2 :13: 13 )",
             "1 Thessaloniciens 2:13-3:13",
             "1Thessalonians 2:13-3:13",
         ],
@@ -5385,13 +5296,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1312&C=Title",
-            " رسالة بولس الرسول إلى أهل كولوسى (1:1-23)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي (1:1-23)",
             "Colossiens 1 : 1 - 23",
             "Colossians 1:1-23",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بولس رسول يسوع المسيح بمشيئة الله وتيموثاوس الاخ الى القديسين في كولوسي والاخوة المؤمنين في المسيح نعمة لكم وسلام من الله ابينا والرب يسوع المسيح",
+            "بولس رسول يسوع المسيح بمشيئة الله وتيموثاوس الاخ الى القديسين في كُولُوسِي والاخوة المؤمنين في المسيح نعمة لكم وسلام من الله ابينا والرب يسوع المسيح",
             "1 Paul, apôtre de Jésus Christ par la volonté de Dieu, et Timothée, le frère, 2 aux saints de Colosses, frères fidèles en Christ; à vous grâce et paix de la part de Dieu, notre Père.",
             "1 Paul, an apostle of Jesus Christ by the will of God, and Timothy our brother, 2 To the saints and faithful brethren in Christ who are in Colosse: Grace to you and peace from God our Father and the Lord Jesus Christ.",
         ],
@@ -5459,7 +5370,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=1712&C=Title",
-            " رسالة بولس الرسول أهل غلاطية ( 1 : 1 ـ 19 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ أهل غلاطية ( 1 : 1 - 19 )",
             "Galates 1 : 1 - 19",
             "Galatians 1:1-19",
         ],
@@ -5521,13 +5432,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2512&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل فيلبي ( 3 : 20 ، 4 : 1 ـ 9 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ فيلبي ( 3 : 20 ، 4 : 1 - 9 )",
             "Philippiens 3:20-4:1-9",
             "Philippians 3:20-4:9",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا نَحنُ فَسيرتَنَا ( فَوَطِنيـَّـتُنا ) في السَّمَواتِ، الَّتى مِنها نَنتَظِرُ مُخلِّصنا ربنا يَسوعَ المَسيح، هذا الَّذي سيُغَيِّرُ جسد تواضُعِنا ليَكُونَ مُشاركاً لصُورةِ جسدِ مَجدِهِ،",
+            "وأمَّا نَحنُ فَسيرتَنَا ( فَوَطِني-َّ-تُنا ) في السَّمَواتِ، الَّتى مِنها نَنتَظِرُ مُخلِّصنا ربنا يَسوعَ المَسيح، هذا الَّذي سيُغَيِّرُ جسد تواضُعِنا ليَكُونَ مُشاركاً لصُورةِ جسدِ مَجدِهِ،",
             "20 Car notre cité, à nous, est dans les cieux, d'où nous attendons, comme sauveur, le Seigneur Jésus Christ, 21 qui transfigurera notre corps humilié pour le rendre semblable à son corps de gloire,",
             "20 For our citizenship is in heaven, from which we also eagerly wait for the Savior, the Lord Jesus Christ, 21 who will transform our lowly body that it may be conformed to His glorious body,",
         ],
@@ -5545,7 +5456,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الَّذينَ أسماؤُهُمْ مَكتُوبة في سفـرِ الحَياةِ. اِفـرَحُوا في الربِّ كُلَّ حِينٍ وأقُولُ أيضاً افـرَحُوا. وليَظهَر حِلمُكُمْ لِجَميـع النَّاسِ. الربُّ قَريبٌ. لا تَهتمُّوا بشيءٍ، بَـل في كُلِّ شيءٍ بالصَّلوةِ والدُّعاءِ مَعَ الشُّكرِ،",
+            "الَّذينَ أسماؤُهُمْ مَكتُوبة في سف-رِ الحَياةِ. اِف-رَحُوا في الربِّ كُلَّ حِينٍ وأقُولُ أيضاً اف-رَحُوا. وليَظهَر حِلمُكُمْ لِجَمي-ع النَّاسِ. الربُّ قَريبٌ. لا تَهتمُّوا بشيءٍ، بَ-ل في كُلِّ شيءٍ بالصَّلوةِ والدُّعاءِ مَعَ الشُّكرِ،",
             "dont les noms figurent au livre de vie. 4 Réjouissez-vous dans le Seigneur en tout temps; je le répète, réjouissez-vous. 5 Que votre bonté soit reconnue par tous les hommes. Le Seigneur est proche. 6 Ne soyez inquiets de rien, mais, en toute occasion, par la prière et la supplication accompagnées d'action de grâce,",
             "whose names are in the Book of Life. 4 Rejoice in the Lord always. Again I will say, rejoice! 5 Let your gentleness be known to all men. The Lord is at hand. 6 Be anxious for nothing, but in everything by prayer and supplication, with thanksgiving,",
         ],
@@ -5570,64 +5481,8 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=2612&C=Title",
-            " بولس الرسول إلى أهل رومية ( 8 : 14 ـ 27 )",
-            "Romains 8 : 14 - 27",
-            "Romans 8:14-27",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأن كل الذين ينقادون بروح الله، فأولئك هم أولاد الله. إذ لم تأخذوا روح العبوديَّة أيضاً للخوف، بل أخذتم روح التَّبنِّي الذي به نصرخ: ' يا أَبَا الآب '.",
-            "14 En effet, ceux-là sont fils de Dieu qui sont conduits par l'Esprit de Dieu:15 vous n'avez pas reçu un esprit qui vous rende esclaves et vous ramène à la peur, mais un Esprit qui fait de vous des enfants adoptifs et par lequel nous crions: Abba, Père.",
-            "14 For as many as are led by the Spirit of God, these are sons of God. 15 For you did not receive the spirit of bondage again to fear, but you received the Spirit of adoption by whom we cry out, Abba, Father.''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الرُّوح نفسه أيضاً يشهد لأرواحنا أننا أولاد الله. فإن كنَّا أولاداً فنحن ورثةٌ أيضاً، وورثة الله وشركاء المسيح في الميراث. إن كنَّا نتألَّم معه لكي نتمجَّد أيضاً معه.",
-            "16 Cet Esprit lui-même atteste à notre esprit que nous sommes enfants de Dieu. 17 Enfants, et donc héritiers: héritiers de Dieu, cohéritiers de Christ, puisque, ayant part à ses souffrances, nous aurons part aussi à sa gloire.",
-            "16 The Spirit Himself bears witness with our spirit that we are children of God, 17 and if children, then heirs-- heirs of God and joint heirs with Christ, if indeed we suffer with Him, that we may also be glorified together.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأني أظُن أن آلام هذا الزَّمان الحاضر لا تُقاس بالمجد العتيد أن يُستعلن فينا. لأن انتظار الخليقة يتوقَّع استعلان أبناء الله.",
-            "18 J'estime en effet que les souffrances du temps présent sont sans proportion avec la gloire qui doit être révélée en nous. 19 Car la création attend avec impatience la révélation des fils de Dieu:",
-            "18 For I consider that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us. 19 For the earnest expectation of the creation eagerly waits for the revealing of the sons of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأن الخليقة قد أُخضِعت للباطل لا عن إرادة، بل من أجل الذي أخضعها على الرَّجاء. لأن الخليقة نفسها أيضاً ستُعتق من عبوديَّة الفساد إلى حرِّية مجد أولاد الله.",
-            "20 livrée au pouvoir du néant - non de son propre gré, mais par l'autorité de celui qui l'a livrée -, elle garde l'espérance, 21 car elle aussi sera libérée de l'esclavage de la corruption, pour avoir part à la liberté et à la gloire des enfants de Dieu.",
-            "20 For the creation was subjected to futility, not willingly, but because of Him who subjected it in hope; 21 because the creation itself also will be delivered from the bondage of corruption into the glorious liberty of the children of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإننا نعرف أن كلَّ الخليقة تئنُّ وتتمخَّض معاً حتى الآن. وليس هى فقط، بل نحن أيضاً الذين لنا باكورة الرُّوح، نحن أنفسنا أيضاً نئنُّ في أنفسنا، متوقِّعين التَّبنِّي فداءَ أجسادنا.",
-            "22 Nous le savons en effet: la création tout entière gémit maintenant encore dans les douleurs de l'enfantement. 23 Elle n'est pas la seule: nous aussi, qui possédons les prémices de l'Esprit, nous gémissons intérieurement, attendant l'adoption, la délivrance pour notre corps.",
-            "22 For we know that the whole creation groans and labors with birth pangs together until now. 23 Not only that, but we also who have the firstfruits of the Spirit, even we ourselves groan within ourselves, eagerly waiting for the adoption, the redemption of our body.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأننا بالرَّجاء خَلَصنَا. ولكنَّ الرَّجاء المنظــور ليس رجاءً، لأن ما ينظره أحدٌ فإياه يرجو أيضاً ولكن إن كنا نرجو ما لسنا ننظره فإننا نتوقَّعه بالصَّبر.",
-            "24 Car nous avons été sauvés, mais c'est en espérance. Or, voir ce qu'on espère n'est plus espérer: ce que l'on voit, comment l'espérer encore? 25 Mais espérer ce que nous ne voyons pas, c'est l'attendre avec persévérance.",
-            "24 For we were saved in this hope, but hope that is seen is not hope; for why does one still hope for what he sees? 25 But if we hope for what we do not see, we eagerly wait for it with perseverance.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكذلك الرُّوح أيضاً يُعضِّد ضعفنا، لأننا لسنا نعلم ما نُصلِّي لأجله كما ينبغي. ولكن الرُّوح نفسه يشفع فينا بتنهُدات لا يُنطَق بها.",
-            "26 De même, l'Esprit aussi vient en aide à notre faiblesse, car nous ne savons pas prier comme il faut, mais l'Esprit lui-même intercède pour nous en gémissements inexprimables,",
-            "26 Likewise the Spirit also helps in our weaknesses. For we do not know what we should pray for as we ought, but the Spirit Himself makes intercession for us with groanings which cannot be uttered.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكنَّ الذي يَفحص القلوب يعلم ما هو فكر الرُّوح، لأنه تشفع لله عن القدِّيسين.",
-            "27 et celui qui scrute les coeurs sait quelle est l'intention de l'Esprit: c'est selon Dieu en effet que l'Esprit intercède pour les saints.",
-            "27 Now He who searches the hearts knows what the mind of the Spirit is, because He makes intercession for the saints according to the will of God.",
-        ],
-    ],
-    [
-        [
             Prefix.stPaul + "&D=2812&C=Title",
-            " بولس الرسول الأولى إلى أهل عبرانين( 11 :1 - 10 )",
+            " بولس الرسول الأولى إلى أَهْلِ عبرانين( 11 :1 - 10 )",
             "Hébreux 11 : 1 - 10",
             "Hebrews 11:1-10",
         ],
@@ -5645,13 +5500,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بالإيمان نُقِلَ أخنوخُ لكي لا يرَى الموتَ ولمْ يُوجَد لأنَّ اللهَ نقلَهُ. إذ قَبْـلَ نقلِهِ شُهِدَ لهُ بأنَّه قد أرضَى اللهَ. ولكنْ بدونِ إيمانٍ لا يُمكِنُ إرضاؤهُ، لأنَّه يَجـبُ أنَّ الذي يأتي إلى اللـهِ يُؤمنُ بأنَّه موجـودٌ،",
+            "بالإيمان نُقِلَ أخنوخُ لكي لا يرَى الموتَ ولمْ يُوجَد لأنَّ اللهَ نقلَهُ. إذ قَبْ-لَ نقلِهِ شُهِدَ لهُ بأنَّه قد أرضَى اللهَ. ولكنْ بدونِ إيمانٍ لا يُمكِنُ إرضاؤهُ، لأنَّه يَج-بُ أنَّ الذي يأتي إلى الل-هِ يُؤمنُ بأنَّه موج-ودٌ،",
             "5 Par la foi, Hénoch fut enlevé afin d'échapper à la mort et on ne le retrouva pas, parce que Dieu l'avait enlevé; avant son enlèvement, en effet, il avait reçu le témoignage qu'il avait été agréable à Dieu. 6 Or, sans la foi, il est impossible d'être agréable à Dieu, car celui qui s'approche de Dieu doit croire",
             "5 By faith Enoch was taken away so that he did not see death, and was not found, because God had taken him; for before he was taken he had this testimony, that he pleased God. 6 But without faith it is impossible to please Him, for he who comes to God must believe that He is,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأنَّهُ يَصيرُ مُجـازياً للذين يَطلُبونهُ. بالإيمان نوحٌ لمَّا أُوحِيَ إليهِ عن أُمُورٍ لمْ تُرَ بعدُ خافَ وصنعَ فُلكاً لخلاصِ بيتِهِ. فَبِه دانَ العَالمَ وصَارَ وارِثاً للبِرِّ الذي للإيمانِ.",
+            "وأنَّهُ يَصيرُ مُج-ازياً للذين يَطلُبونهُ. بالإيمان نوحٌ لمَّا أُوحِيَ إليهِ عن أُمُورٍ لمْ تُرَ بعدُ خافَ وصنعَ فُلكاً لخلاصِ بيتِهِ. فَبِه دانَ العَالمَ وصَارَ وارِثاً للبِرِّ الذي للإيمانِ.",
             "qu'il existe et qu'il récompense ceux qui le cherchent.7 Par la foi, Noé, divinement averti de ce que l'on ne voyait pas encore, prit l'oracle au sérieux, et construisit une arche pour sauver sa famille. Ainsi, il condamna le monde et devint héritier de la justice qui s'obtient par la foi.",
             "and that He is a rewarder of those who diligently seek Him. 7 By faith Noah, being divinely warned of things not yet seen, moved with godly fear, prepared an ark for the saving of his household, by which he condemned the world and became heir of the righteousness which is according to faith.",
         ],
@@ -5671,13 +5526,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=2912&C=Title",
-            " رسالة بولس الرسول الىأهل كورنثوس ( 10 : 25 ـ 11 : 1 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الىأهل كورنثوس ( 10 : 25 - 11 : 1 )",
             "1Corinthiens 10:25 -11:1",
             "1 Corinthians 10:25-11:1",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كُلُّ شىءٍ يُبَاعُ في الملحمَةِ كُلُوهُ غَيرَ فَاحِصِينَ عَن شىءٍ لأجل الضَّمِير، لأنَّ للـرَّبِّ الأرضَ ومِلأهَا. وإن كانَ أحَدٌ من غَير المُؤمِنِينَ يَدعُوكُم، وتُريدُونَ أن تَذهَبُوا،",
+            "كُلُّ شىءٍ يُبَاعُ في الملحمَةِ كُلُوهُ غَيرَ فَاحِصِينَ عَن شىءٍ لأجل الضَّمِير، لأنَّ لل-رَّبِّ الأرضَ ومِلأهَا. وإن كانَ أحَدٌ من غَير المُؤمِنِينَ يَدعُوكُم، وتُريدُونَ أن تَذهَبُوا،",
             "25 Tout ce qu'on vend au marché, mangez-le sans poser de question par motif de conscience; 26 car la terre et tout ce qu'elle contient sont au Seigneur. 27 Si un non-croyant vous invite et que vous acceptiez d'y aller,",
             "25 Eat whatever is sold in the meat market, asking no questions for conscience' sake; 26 for the earth is the Lord's, and all its fullness. 27 If any of those who do not believe invites you to dinner, and you desire to go,",
         ],
@@ -5695,7 +5550,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإذا كُنتُم تَأكُلُونَ أو تَشرَبُونَ أو تَفعَلُون أي شىءٍ فَافعَلُوا كُلَّ شىءٍ لمَجدِ اللـهِ. وكُونُوا بلا عثرةٍ لليَهُودِ واليُونَانيِّينَ ولكنيسةِ اللـهِ.",
+            "فإذا كُنتُم تَأكُلُونَ أو تَشرَبُونَ أو تَفعَلُون أي شىءٍ فَافعَلُوا كُلَّ شىءٍ لمَجدِ الل-هِ. وكُونُوا بلا عثرةٍ لليَهُودِ واليُونَانيِّينَ ولكنيسةِ الل-هِ.",
             "31Soit donc que vous mangiez, soit que vous buviez, quoi que vous fassiez, faites tout pour la gloire de Dieu. 32 Ne soyez pour personne une occasion de chute ni pour les Juifs, ni pour les Grecs, ni pour l'Église de Dieu.",
             "31 Therefore, whether you eat or drink, or whatever you do, do all to the glory of God. 32 Give no offense, either to the Jews or to the Greeks or to the church of God,",
         ],
@@ -5709,7 +5564,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=3012&C=Title",
-            " البولس من رسالة بولس الرسول إلى أهل أفسس ( 4 : 8 ـ 16 )",
+            " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 4 : 8 - 16 )",
             "Ephésiens 4 : 8 - 16",
             "Ephesians 4:8-16",
         ],
@@ -5727,7 +5582,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأجل تَكمِيل القدِّيسينَ، لعمل الخدمةِ، لبُنيانِ جسدِ المسيح، إلى أن ننتهِيَ جَميعُنا إلى وحدانيَّةِ الإيمان ومعرفةِ ابن اللـهِ. إلى إنسانٍ كاملٍ. إلى قياس قامةِ ملءِ المسيح.",
+            "لأجل تَكمِيل القدِّيسينَ، لعمل الخدمةِ، لبُنيانِ جسدِ المسيح، إلى أن ننتهِيَ جَميعُنا إلى وحدانيَّةِ الإيمان ومعرفةِ ابن الل-هِ. إلى إنسانٍ كاملٍ. إلى قياس قامةِ ملءِ المسيح.",
             "12 afin de mettre les saints en état d'accomplir le ministère pour bâtir le corps du Christ, 13 jusqu'à ce que nous parvenions tous ensemble à l'unité dans la foi et dans la connaissance du Fils de Dieu, à l'état d'adultes, à la taille du Christ dans sa plénitude.",
             "12 for the equipping of the saints for the work of ministry, for the edifying of the body of Christ, 13 till we all come to the unity of the faith and of the knowledge of the Son of God, to a perfect man, to the measure of the stature of the fullness of Christ;",
         ],
@@ -5746,58 +5601,8 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=0113&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 10 : 4 – 18 )",
-            "Romains. 10 : 4 - 18",
-            "Romans 10:4-18",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان غاية الناموس هي المسيح للبر لكل من يؤمن.لان موسى يكتب في البر الذي بالناموس ان الانسان الذي يفعلها سيحيا بها.",
-            "4 Car la fin de la loi, c'est Christ, pour que soit donnée la justice à tout homme qui croit. 5 Moïse lui-même écrit de la justice qui vient de la loi: L'homme qui l'accomplira vivra par elle.",
-            "4 For Christ is the end of the law for righteousness to everyone who believes. 5 For Moses writes about the righteousness which is of the law, The man who does those things shall live by them.''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما البر الذي بالايمان فيقول هكذا لا تقل في قلبك من يصعد الى السماء اي ليحدر المسيح. او من يهبط الى الهاوية اي ليصعد المسيح من الاموات.",
-            "6 Mais la justice qui vient de la foi parle ainsi: Ne dis pas dans ton coeur: Qui montera au ciel? Ce serait en faire descendre Christ; ni: 7 Qui descendra dans l'abîme? Ce serait faire remonter Christ d'entre les morts. Que dit-elle donc?",
-            "6 But the righteousness of faith speaks in this way, Do not say in your heart, 'Who will ascend into heaven?' '' (that is, to bring Christ down from above) 7 or, Who will descend into the abyss?' '' (that is, to bring Christ up from the dead).",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكن ماذا يقول.الكلمة قريبة منك في فمك وفي قلبك اي كلمة الايمان التي نكرز بها. لانك ان اعترفت بفمك بالرب يسوع وآمنت بقلبك ان الله اقامه من الاموات خلصت.",
-            "8 Tout près de toi est la parole, dans ta bouche et dans ton coeur. Cette parole, c'est la parole de la foi que nous proclamons.9 Si, de ta bouche, tu confesses que Jésus est Seigneur et si, dans ton coeur, tu crois que Dieu l'a ressuscité des morts, tu seras sauvé.",
-            "8 But what does it say? The word is near you, in your mouth and in your heart'' (that is, the word of faith which we preach): 9 that if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان القلب يؤمن به للبر والفم يعترف به للخلاص.لان الكتاب يقول كل من يؤمن به لا يخزى. لانه لا فرق بين اليهودي واليوناني لان ربا واحدا للجميع غنيا لجميع الذين يدعون به.",
-            "10 En effet, croire dans son coeur conduit à la justice et confesser de sa bouche conduit au salut.11 Car l'Écriture dit: Quiconque croit en lui ne sera pas confondu.12 Ainsi, il n'y a pas de différence entre Juif et Grec: tous ont le même Seigneur, riche envers tous ceux qui l'invoquent.",
-            "10 For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation. 11 For the Scripture says, Whoever believes on Him will not be put to shame.'' 12 For there is no distinction between Jew and Greek, for the same Lord over all is rich to all who call upon Him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان كل من يدعو باسم الرب يخلص. فكيف يدعون بمن لم يؤمنوا به.وكيف يؤمنون بمن لم يسمعوا به.وكيف يسمعون بلا كارز.",
-            "13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.14 Or, comment l'invoqueraient-ils, sans avoir cru en lui? Et comment croiraient-ils en lui, sans l'avoir entendu? Et comment l'entendraient-ils, si personne ne le proclame?",
-            "13 For whoever calls on the name of the Lord shall be saved.'' 14 How then shall they call on Him in whom they have not believed? And how shall they believe in Him of whom they have not heard? And how shall they hear without a preacher?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكيف يكرزون ان لم يرسلوا.كما هو مكتوب ما اجمل اقدام المبشرين بالسلام المبشرين بالخيرات. لكن ليس الجميع قد اطاعوا الانجيل لان اشعياء يقول يا رب من صدق خبرنا.",
-            "15 Et comment le proclamer, sans être envoyé? Aussi est-il écrit: Qu'ils sont beaux les pieds de ceux qui annoncent de bonnes nouvelles!16 Mais tous n'ont pas obéi à l'Évangile. Esaïe dit en effet: Seigneur, qui a cru à notre prédication?",
-            "15 And how shall they preach unless they are sent? As it is written: How beautiful are the feet of those who preach the gospel of peace, who bring glad tidings of good things!'' 16 But they have not all obeyed the gospel. For Isaiah says, Lord, who has believed our report?''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اذا الايمان بالخبر والخبر بكلمة الله. لكنني اقول ألعلهم لم يسمعوا.بلى.الى كل الارض خرج صوتهم والى اقاصي المسكونة اقوالهم.",
-            "17 Ainsi la foi vient de la prédication et la prédication, c'est l'annonce de la parole du Christ. 18 Je demande alors: N'auraient-ils pas entendu? Mais si! Par toute la terre a retenti leur voix et jusqu'aux extrémités du monde leurs paroles. 17 Ainsi la foi vient de la prédication et la prédication, c'est l'annonce de la parole du Christ. 18 Je demande alors: N'auraient-ils pas entendu? Mais si! Par toute la terre a retenti leur voix et jusqu'aux extrémités du monde leurs paroles.",
-            "17 So then faith comes by hearing, and hearing by the word of God. 18 But I say, have they not heard? Yes indeed: Their sound has gone out to all the earth, and their words to the ends of the world.",
-        ],
-    ],
-    [
-        [
             Prefix.stPaul + "&D=0213&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 3 : 12 ـ 4 :1 ـ 4)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 3 : 12 - 4 :1 - 4)",
             "2 Corinthiens 3:12 - 4:1-4",
             "2 Corinthians 3:12-4:4",
         ],
@@ -5821,19 +5626,19 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كما في مرآةٍ نتغيَّرُ إلى تلكَ الصُّورة، تلكَ الهيئة عينها مِن مَجدٍ إلى مَجدٍ، كما من روح الربِّ. لذلكَ إذ لنا هذه الخدمةُ ـ كما أنَّنا قد رُحِمنا ـ لا نَفشَلُ،",
+            "كما في مرآةٍ نتغيَّرُ إلى تلكَ الصُّورة، تلكَ الهيئة عينها مِن مَجدٍ إلى مَجدٍ، كما من روح الربِّ. لذلكَ إذ لنا هذه الخدمةُ - كما أنَّنا قد رُحِمنا - لا نَفشَلُ،",
             "18 Et nous tous qui, le visage dévoilé, reflétons la gloire du Seigneur, nous sommes transfigurés en cette même image, avec une gloire toujours plus grande par le Seigneur, qui est Esprit. 1 Aussi puisque, par miséricorde, nous détenons ce ministère, nous ne perdons pas courage.",
             "18 But we all, with unveiled face, beholding as in a mirror the glory of the Lord, are being transformed into the same image from glory to glory, just as by the Spirit of the Lord. 1 Therefore, since we have this ministry, as we have received mercy, we do not lose heart.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بل لنرفض خفايا الخِزي، ولا نَسلُكَ في مَكر، ولا نَصنَعُ غشَّاً في كلمةَ اللـه، بل بإظهار الحقِّ، نقوِّم أنفُسنا لدى ضمير كل إنسان قُدَّام اللـه.",
+            "بل لنرفض خفايا الخِزي، ولا نَسلُكَ في مَكر، ولا نَصنَعُ غشَّاً في كلمةَ الل-ه، بل بإظهار الحقِّ، نقوِّم أنفُسنا لدى ضمير كل إنسان قُدَّام الل-ه.",
             "2 Nous avons dit non aux procédés secrets et honteux, nous nous conduisons sans fourberie, et nous ne falsifions pas la parole de Dieu, bien au contraire, c'est en manifestant la vérité que nous cherchons à gagner la confiance de tous les hommes en présence de Dieu.",
             "2 But we have renounced the hidden things of shame, not walking in craftiness nor handling the word of God deceitfully, but by manifestation of the truth commending ourselves to every man's conscience in the sight of God.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولكن إن كان إنجيلُنا مكتوماً فإنَّما هو مكتومٌ في الهالكينَ، وقد أعمَى اللـه أذهان غَير مُؤمني هذا الدَّهر، لئلاَّ ينظروا نور إنجيل مَجد المسيح الذي هو صُورة اللـه.",
+            "ولكن إن كان إنجيلُنا مكتوماً فإنَّما هو مكتومٌ في الهالكينَ، وقد أعمَى الل-ه أذهان غَير مُؤمني هذا الدَّهر، لئلاَّ ينظروا نور إنجيل مَجد المسيح الذي هو صُورة الل-ه.",
             "3 Si cependant notre Évangile demeure voilé, il est voilé pour ceux qui se perdent, pour les incrédules, dont le dieu de ce monde a aveuglé l'intelligence, afin qu'ils ne perçoivent pas l'illumination de l'Évangile de la gloire du Christ, lui qui est l'image de Dieu.",
             "3 But even if our gospel is veiled, it is veiled to those who are perishing, 4 whose minds the god of this age has blinded, who do not believe, lest the light of the gospel of the glory of Christ, who is the image of God, should shine on them",
         ],
@@ -5841,7 +5646,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0313&C=Title",
-            " بولس الرسول الأولى إلى أهل عبرانين 2:5-18",
+            " بولس الرسول الأولى إلى أَهْلِ عبرانين 2:5-18",
             "Hebrews 2:5-18",
             "Hebrews 2:5-18",
         ],
@@ -5897,13 +5702,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0413&C=Title",
-            " بولس الرسول الأولى إلى أهل كورنثوس ( 3 : 9 ـ 23 )",
+            " بولس الرسول الأولى إلى أَهْلِ كورنثوس ( 3 : 9 - 23 )",
             "1 Corinthiens 3:9-23",
             "1 Corinthians 3:9-23",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّنا نحن شركاء عاملان للـه، وأنتم فلاحة اللـه، بناء اللـه. حسب نعمة اللـه المُعطاة لي كبنَّاءٍ حكيم ماهر قد وضعت أساساً، وآخر يبني عليه. ولكن فلينظر كل واحدٍ كيف يبني عليه.",
+            "فإنَّنا نحن شركاء عاملان لل-ه، وأنتم فلاحة الل-ه، بناء الل-ه. حسب نعمة الل-ه المُعطاة لي كبنَّاءٍ حكيم ماهر قد وضعت أساساً، وآخر يبني عليه. ولكن فلينظر كل واحدٍ كيف يبني عليه.",
             "9 Car nous travaillons ensemble à l'oeuvre de Dieu, et vous êtes le champ de Dieu, la construction de Dieu. 10 Selon la grâce que Dieu m'a donnée, comme un bon architecte, j'ai posé le fondement, un autre bâtit dessus. Mais que chacun prenne garde à la manière dont il bâtit.",
             "9 For we are God's fellow workers; you are God's field, you are God's building. 10 According to the grace of God which was given to me, as a wise master builder I have laid the foundation, and another builds on it. But let each one take heed how he builds on it.",
         ],
@@ -5921,7 +5726,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ومَن احترق عمله فسيخسر، وأمَّا هو فسيخلُص، ولكن بنارٍ. أمَا تعلمون أنَّكم هيكل اللـه، وروح اللـه ساكن فيكم؟ فمَن يُنجَّس هيكل اللـه فسيُفسِده اللـه، لأن هيكل اللـه مُقدَّسٌ الذي أنتم هو.",
+            "ومَن احترق عمله فسيخسر، وأمَّا هو فسيخلُص، ولكن بنارٍ. أمَا تعلمون أنَّكم هيكل الل-ه، وروح الل-ه ساكن فيكم؟ فمَن يُنجَّس هيكل الل-ه فسيُفسِده الل-ه، لأن هيكل الل-ه مُقدَّسٌ الذي أنتم هو.",
             "15 Celui dont l'oeuvre sera consumée en sera privé; lui-même sera sauvé, mais comme on l'est à travers le feu. 16 Ne savez-vous pas que vous êtes le temple de Dieu et que l'Esprit de Dieu habite en vous?17 Si quelqu'un détruit le temple de Dieu, Dieu le détruira. Car le temple de Dieu est saint et ce temple, c'est vous.",
             "15 If anyone's work is burned, he will suffer loss; but he himself will be saved, yet so as through fire. 16 Do you not know that you are the temple of God and that the Spirit of God dwells in you? 17 If anyone defiles the temple of God, God will destroy him. For the temple of God is holy, which temple you are.",
         ],
@@ -5941,7 +5746,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=0613&C=Title",
-            " رسالة بولس الرسول إلى أهل كولوسى ( 3 : 8 – 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي ( 3 : 8 – 17 )",
             "Colossiens 3 : 8-17",
             "Colossians 3:8-17",
         ],
@@ -5983,49 +5788,19 @@ ReadingsArrays.StPaulArray = [[
         ],
     ],
     [
-        [
-            Prefix.stPaul + "&D=131stSunday",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
+        [Prefix.stPaul + "&D=131stSunday", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
+        [Prefix.same + "&C=NoActor", "", "", ""],
     ],
     [
         [
             Prefix.stPaul + "&D=GL10&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 1 : 18 ـ 25 )",
-            "Romains 1 : 18 - 25",
-            "Romans 1:18-25",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 1 : 18 - 25 )",
+            "Romains (1: 18-25)",
+            "Romans (1: 18-25)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6061,19 +5836,19 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL11&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس ( 9 : 6 ـ 15 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس ( 9 : 6 - 15 )",
             "2 Corinthians 9:6-15",
             "2 Corinthians 9:6-15",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّ مَن يزرعُ بالشُّحِّ فَبالشُّحِّ أيضاً يَحصدُ، ومَن يَزرعُ بالبركاتِ فبالبركاتِ أيضاً يَحصدُ. كُلُّ امرئٍ كما نوى في قَلبِهِ، ليسَ عَن حُزنٍ أو اضطرارٍ. فإنَّ اللَّـه يُحبُّ المُعطِيَ الفرح.",
+            "فإنَّ مَن يزرعُ بالشُّحِّ فَبالشُّحِّ أيضاً يَحصدُ، ومَن يَزرعُ بالبركاتِ فبالبركاتِ أيضاً يَحصدُ. كُلُّ امرئٍ كما نوى في قَلبِهِ، ليسَ عَن حُزنٍ أو اضطرارٍ. فإنَّ اللَّ-ه يُحبُّ المُعطِيَ الفرح.",
             "6 Sachez-le: Qui sème chichement, chichement aussi moissonnera et qui sème largement, largement aussi moissonnera! 7 Que chacun donne selon la décision de son coeur, sans chagrin ni contrainte,",
             "6 But this I say: He who sows sparingly will also reap sparingly, and he who sows bountifully will also reap bountifully. 7 So let each one give as he purposes in his heart, not grudgingly or of necessity; for God loves a cheerful giver.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "واللَّـهُ قادرٌ أن يزيدكُم كُلَّ نِعمةٍ، حتى تكونُ لكُم كُلُّ كفايةٍ كُلَّ حينٍ في كُلِّ شيءٍ، فتزدادوا في كُلِّ عَمَلٍ صالحٍ. كمَا هُو مَكتُوبٌ:' أنهُ فَرَّقَ. أعطَى المسَاكينَ.",
+            "واللَّ-هُ قادرٌ أن يزيدكُم كُلَّ نِعمةٍ، حتى تكونُ لكُم كُلُّ كفايةٍ كُلَّ حينٍ في كُلِّ شيءٍ، فتزدادوا في كُلِّ عَمَلٍ صالحٍ. كمَا هُو مَكتُوبٌ:' أنهُ فَرَّقَ. أعطَى المسَاكينَ.",
             "8 car Dieu aime celui qui donne avec joie. Dieu a le pouvoir de vous combler de toutes sortes de grâces, pour que, disposant toujours et en tout du nécessaire, vous ayez encore du superflu pour toute oeuvre bonne. 9 Comme il est écrit: il a distribué, il a donné aux pauvres,",
             "8 And God is able to make all grace abound toward you, that you, always having all sufficiency in all things, may have an abundance for every good work. 9 As it is written: He has dispersed abroad, He has given to the poor;",
         ],
@@ -6105,13 +5880,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL12&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 3 : 1 ـ 17 )",
-            "Romains 3 : 1 - 18",
-            "Romans 3:1-17",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 3 : 1 - 17 )",
+            "Romains (3: 1-17)",
+            "Romans (3: 1-17)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فما فضل اليهوديِّ إذاً، أو ما هو نفع الختان؟ إنه كثير على كل وجهٍ! أولاً لأنَّهم اؤتمنوا على أقوال اللَّـه. فماذا إن كان بعضهم لم يؤمنوا؟ ألعلَّ عدم أمانتهُم تُبطِل أمانة اللَّه؟",
+            "فما فضل اليهوديِّ إذاً، أو ما هو نفع الختان؟ إنه كثير على كل وجهٍ! أولاً لأنَّهم اؤتمنوا على أقوال اللَّ-ه. فماذا إن كان بعضهم لم يؤمنوا؟ ألعلَّ عدم أمانتهُم تُبطِل أمانة اللَّه؟",
             "1 Quelle est donc la supériorité du Juif? Quelle est l'utilité de la circoncision?2 Grande à tous égards! 3 Et d'abord, c'est à eux que les révélations de Dieu ont été confiées. Quoi donc? Si certains furent infidèles, leur infidélité va-t-elle annuler la fidélité de Dieu?",
             "3:1 What advantage then has the Jew, or what is the profit of circumcision? 2 Much in every way! Chiefly because to them were committed the oracles of God. 3 For what if some did not believe? Will their unbelief make the faithfulness of God without effect?",
         ],
@@ -6123,7 +5898,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إنما أتكلم بحسب البشرية. حاشا! وإلا فكيفَ يدينُ اللَّه العالمَ؟ ولكن إن كان بكذبي قد ازداد صدقُ اللَّه لمجدِهِ، فلماذا أُدان أنا بعد كخاطـئٍ؟",
+            "إنما أتكلم بحسب البشرية. حاشا! وإلا فكيفَ يدينُ اللَّه العالمَ؟ ولكن إن كان بكذبي قد ازداد صدقُ اللَّه لمجدِهِ، فلماذا أُدان أنا بعد كخاط-ئٍ؟",
             "Je parle selon la logique humaine. Certes, non! 6 Car alors, comment Dieu jugera-t-il le monde? Mais si, par mon mensonge, la vérité de Dieu éclate d'autant plus pour sa gloire, pourquoi donc, moi, suis-je encore condamné comme pécheur?",
             "Is God unjust who inflicts wrath? (I speak as a man.) 6 Certainly not! For then how will God judge the world? 7 For if the truth of God has increased through my lie to His glory, why am I also still judged as a sinner?",
         ],
@@ -6155,9 +5930,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL13&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية 16:17-27",
-            "Romains 16:17-27",
-            "Romans 16:17-27",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة 16:17-27",
+            "Romains (16: 17-27)",
+            "Romans (16: 17-27)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6199,13 +5974,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL14&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين( 12 : 28 ـ 13 : 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين( 12 : 28 - 13 : 1 - 16 )",
             "Hebrews 12:28-13:16",
             "Hebrews 12:28-13:16",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلذلكَ نحنُ إذ قد تسلمنا ملكوتاً لا يَتزعزعُ فلنتمسك بالنعمة التي بها نخدمُ اللَّـه عبادة مَرضيَّةً، بخوفٍ ورعدة.",
+            "فلذلكَ نحنُ إذ قد تسلمنا ملكوتاً لا يَتزعزعُ فلنتمسك بالنعمة التي بها نخدمُ اللَّ-ه عبادة مَرضيَّةً، بخوفٍ ورعدة.",
             "28 C’est pourquoi, puisque nous recevons un royaume inébranlable, ayons de la reconnaissance, en rendant à Dieu un culte qui lui soit agréable, avec piété et avec crainte.",
             "28 Therefore, since we are receiving a kingdom which cannot be shaken, let us have grace, by which we may serve God acceptably with reverence and godly fear.",
         ],
@@ -6217,13 +5992,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وليكُن الزِّواجُ مُكرَّماً في كل شيءٍ، والمَضجعُ غير نجسٍ. فأمَّا الزُّناةُ والفجار فسَيدينُهُمُ اللَّـهُ. لتكُن سِيرتُكُم منزهة عن حب المالِ. واكتفوا بمَا عندكُم فأنَّهُ قال: ' لا أترُكُكَ ولا أُهمِلُكَ ولا أتخلى عنكَ '",
+            "وليكُن الزِّواجُ مُكرَّماً في كل شيءٍ، والمَضجعُ غير نجسٍ. فأمَّا الزُّناةُ والفجار فسَيدينُهُمُ اللَّ-هُ. لتكُن سِيرتُكُم منزهة عن حب المالِ. واكتفوا بمَا عندكُم فأنَّهُ قال: ' لا أترُكُكَ ولا أُهمِلُكَ ولا أتخلى عنكَ '",
             "4 Que le mariage soit honoré de tous, et le lit conjugal exempt de souillure. Car Dieu jugera les débauchés et les adultères.5 Que votre conduite ne soit pas inspirée par l’amour de l’argent ; contentez–vous de vos biens actuels, car Dieu lui–même a dit : Je ne te délaisserai pas ni ne t’abandonnerai.",
             "4 Marriage is honorable among all, and the bed undefiled; but fornicators and adulterers God will judge. 5 Let your conduct be without covetousness; be content with such things as you have. For He Himself has said, I will never leave you nor forsake you.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "حتَّى إنَّنا واثِقين:' الرَّبُّ عوني فلا أخافُ. ماذا يَصنعُ بي الإنسان؟ 'اذكُرُوا مُدبريكُمُ الذين كلَّمُوكُم بكلمة اللَّـه. انظُرُوا إلى نهاية سِيرتِهم واقتدوا بإيمانِهِم.",
+            "حتَّى إنَّنا واثِقين:' الرَّبُّ عوني فلا أخافُ. ماذا يَصنعُ بي الإنسان؟ 'اذكُرُوا مُدبريكُمُ الذين كلَّمُوكُم بكلمة اللَّ-ه. انظُرُوا إلى نهاية سِيرتِهم واقتدوا بإيمانِهِم.",
             "6 C’est pourquoi nous pouvons dire avec courage : Le Seigneur est mon secours ; je n’aurai pas de crainte. Que peut me faire un homme ? 7 Souvenez vous de vos conducteurs qui vous ont annoncé la parole de Dieu ; considérez l’issue de leur vie et imitez leur foi.",
             "6 So we may boldly say: The Lord is my helper; I will not fear. What can man do to me? 7 Remember those who rule over you, who have spoken the word of God to you, whose faith follow, considering the outcome of their conduct.",
         ],
@@ -6247,7 +6022,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنه ليس لنا ههُنا مَدِينةٌ باقيةٌ، لكنَّنا نطلُبُ العتيدة. فلنرفع ذبيحةَ التَّسبيح للَّـه كُلِّ حينٍ، وهي ثمرة الشفاه المعترفة لاسمهِ. لا تَنسوا فِعل الخير والمشاركة، لأنَّهُ بذبائح مثل هذه يرتضى اللَّـهُ.",
+            "لأنه ليس لنا ههُنا مَدِينةٌ باقيةٌ، لكنَّنا نطلُبُ العتيدة. فلنرفع ذبيحةَ التَّسبيح للَّ-ه كُلِّ حينٍ، وهي ثمرة الشفاه المعترفة لاسمهِ. لا تَنسوا فِعل الخير والمشاركة، لأنَّهُ بذبائح مثل هذه يرتضى اللَّ-هُ.",
             "14 Car nous n’avons pas ici de cité permanente, mais nous cherchons celle qui est à venir. 15 Par lui, offrons sans cesse à Dieu un sacrifice de louange, c’est–à–dire le fruit de lèvres qui confessent son nom. 16 Cependant, n’oubliez pas la bienfaisance et la libéralité, car c’est à de tels sacrifices que Dieu prend plaisir.",
             "14 For here we have no continuing city, but we seek the one to come. 15 Therefore by Him let us continually offer the sacrifice of praise to God, that is, the fruit of our lips, giving thanks to His name. 16 But do not forget to do good and to share, for with such sacrifices God is well pleased.",
         ],
@@ -6255,9 +6030,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL15&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 14 : 1 ـ 18 )",
-            "Romains 14 : 1 - 18",
-            "Romans 14:1-18",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 14 : 1 - 18 )",
+            "Romains (14: 1-18)",
+            "Romans (14: 1-18)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6267,31 +6042,31 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلا يَزدرِ الذي يأكُلُ مَن لا يأكُلُ، ولا يَدِن الذي لا يأكُلُ مَن يأكُلُ لأنَّ اللَّـه قد قَبلهُ. مَن أنتَ الذي تَدِينُ عَبدَ غَيركَ؟ إنه لِمولاهُ يَثبُتُ أو يَسقُطُ. ولكنَّهُ سَيُثبَّتُ، لأنَّ الرب قادرٌ على أن يُثبِّتهُ.",
+            "فلا يَزدرِ الذي يأكُلُ مَن لا يأكُلُ، ولا يَدِن الذي لا يأكُلُ مَن يأكُلُ لأنَّ اللَّ-ه قد قَبلهُ. مَن أنتَ الذي تَدِينُ عَبدَ غَيركَ؟ إنه لِمولاهُ يَثبُتُ أو يَسقُطُ. ولكنَّهُ سَيُثبَّتُ، لأنَّ الرب قادرٌ على أن يُثبِّتهُ.",
             "3 Que celui qui mange ne méprise pas celui qui ne mange pas et que celui qui ne mange pas ne juge pas celui qui mange, car Dieu l'a accueilli. 4 Qui es-tu pour juger un serviteur qui ne t'appartient pas? Qu'il tienne bon ou qu'il tombe, cela regarde son propre maître. Et il tiendra bon, car le Seigneur a le pouvoir de le faire tenir.",
             "3 Let not him who eats despise him who does not eat, and let not him who does not eat judge him who eats; for God has received him. 4 Who are you to judge another's servant? To his own master he stands or falls. Indeed, he will be made to stand, for God is able to make him stand.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يوجد من يَعتبرُ يوماً دُونَ يومٍ، وآخرُ يَعتبرُ كُلَّ يومٍ. كُلُّ واحدٍ فليقتنع بعقله: الذي يَهتمُّ باليوم، فلِلرَّبِّ يَهتمُّ. والذي لا يَهتمُّ باليوم، فلِلرَّبِّ لا يَهتمُّ. والذي يَأكُلُ، فلِلرَّبِّ يَأكُلُ لأنَّهُ يَشكُرُ اللَّـه.",
+            "يوجد من يَعتبرُ يوماً دُونَ يومٍ، وآخرُ يَعتبرُ كُلَّ يومٍ. كُلُّ واحدٍ فليقتنع بعقله: الذي يَهتمُّ باليوم، فلِلرَّبِّ يَهتمُّ. والذي لا يَهتمُّ باليوم، فلِلرَّبِّ لا يَهتمُّ. والذي يَأكُلُ، فلِلرَّبِّ يَأكُلُ لأنَّهُ يَشكُرُ اللَّ-ه.",
             "5 Pour l'un, il y a des différences entre les jours; pour l'autre, ils se valent tous. Que chacun, en son jugement personnel, soit animé d'une pleine conviction. 6 Celui qui tient compte des jours le fait pour le Seigneur, en effet, il rend grâce à Dieu.",
             "5 One person esteems one day above another; another esteems every day alike. Let each be fully convinced in his own mind. 6 He who observes the day, observes it to the Lord; and he who does not observe the day, to the Lord he does not observe it.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "والذي لا يَأكُلُ فلِلرَّبِّ لا يَأكُلُ ويشكُرُ اللَّـه. لأن ليس أحدٌ مِنَّا يَعيشُ لنفسهِ، ولا أحَدٌ يَمُوتُ لِذاتهِ. لأنَّنا إن حيينا فلِلرَّبِّ نحيا، وإن مُتنَا فلِلرَّبِّ نَمُوتُ. فإن عِشنا إذاً أو مُتنَا فلِلرَّبِّ نَحنُ.",
+            "والذي لا يَأكُلُ فلِلرَّبِّ لا يَأكُلُ ويشكُرُ اللَّ-ه. لأن ليس أحدٌ مِنَّا يَعيشُ لنفسهِ، ولا أحَدٌ يَمُوتُ لِذاتهِ. لأنَّنا إن حيينا فلِلرَّبِّ نحيا، وإن مُتنَا فلِلرَّبِّ نَمُوتُ. فإن عِشنا إذاً أو مُتنَا فلِلرَّبِّ نَحنُ.",
             "Et celui qui ne mange pas de tout le fait pour le Seigneur, et il rend grâce à Dieu. 7 En effet, aucun de nous ne vit pour soi-même. 8 Car, si nous vivons, nous vivons pour le Seigneur; si nous mourons, nous mourons pour le Seigneur: soit que nous vivions, soit que nous mourions, nous sommes au Seigneur.",
             "He who eats, eats to the Lord, for he gives God thanks; and he who does not eat, to the Lord he does not eat, and gives God thanks. 7 For none of us lives to himself, and no one dies to himself. 8 For if we live, we live to the Lord; and if we die, we die to the Lord. Therefore, whether we live or die, we are the Lord's.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّ لهذا ماتَ المسيحُ وقامَ وعاشَ حياً، ليسُود على الأحياءِ والأمواتِ. وأنتَ، لِمَ تدينُ أخاكَ؟ أو لِمَ تزدري بأخِيكَ؟ فإنَّنا كلنا سنقف أمام منبر اللَّـه،",
+            "لأنَّ لهذا ماتَ المسيحُ وقامَ وعاشَ حياً، ليسُود على الأحياءِ والأمواتِ. وأنتَ، لِمَ تدينُ أخاكَ؟ أو لِمَ تزدري بأخِيكَ؟ فإنَّنا كلنا سنقف أمام منبر اللَّ-ه،",
             "9 Car c'est pour être Seigneur des morts et des vivants que Christ est mort et qu'il a repris vie. 10 Mais toi, pourquoi juges-tu ton frère? Et toi, pourquoi méprises-tu ton frère? Tous, en effet, nous comparaîtrons devant le tribunal de Dieu.",
             "9 For to this end Christ died and rose and lived again, that He might be Lord of both the dead and the living. 10 But why do you judge your brother? Or why do you show contempt for your brother? For we shall all stand before the judgment seat of Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّهُ كتب:' حَيٌّ أنا، يَقُولُ الرَّبُّ، لي تجثُو كُلُّ رُكبةٍ، وكُلُّ لِسان يعترفُ باللَّـه'. فإذاً كُلُّ واحدٍ مِنَّا سَيُعطي عَن نَفسهِ جواباً للَّـه.",
+            "لأنَّهُ كتب:' حَيٌّ أنا، يَقُولُ الرَّبُّ، لي تجثُو كُلُّ رُكبةٍ، وكُلُّ لِسان يعترفُ باللَّ-ه'. فإذاً كُلُّ واحدٍ مِنَّا سَيُعطي عَن نَفسهِ جواباً للَّ-ه.",
             "11 Car il est écrit: Aussi vrai que je vis, dit le Seigneur, tout genou fléchira devant moi et toute langue rendra gloire à Dieu. Ainsi, chacun de nous rendra compte à Dieu pour soi-même.",
             "11 For it is written: As I live, says the Lord, Every knee shall bow to Me, And every tongue shall confess to God. 12 So then each of us shall give account of himself to God.",
         ],
@@ -6309,7 +6084,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلا يُفترَ إذاً على صلاحنا وخيركم، فأن ملكُوتُ اللَّـهِ ليسَ أكلا ولا شُرباً، بل هُو بِرٌّ وسلامٌ وفرحٌ في الرُّوح القُدُس.لأنَّ الذي يخدم المسيح بهذا هو مرضيٌّ عِند اللَّـه، ومُزكًّى عِندَ النَّاسِ",
+            "فلا يُفترَ إذاً على صلاحنا وخيركم، فأن ملكُوتُ اللَّ-هِ ليسَ أكلا ولا شُرباً، بل هُو بِرٌّ وسلامٌ وفرحٌ في الرُّوح القُدُس.لأنَّ الذي يخدم المسيح بهذا هو مرضيٌّ عِند اللَّ-ه، ومُزكًّى عِندَ النَّاسِ",
             "16 Que votre privilège ne puisse être discrédité. 17 Car le Règne de Dieu n'est pas affaire de nourriture ou de boisson; il est justice, paix et joie dans l'Esprit Saint. 18 C'est en servant le Christ de cette manière qu'on est agréable à Dieu et estimé des hommes",
             "16 Therefore do not let your good be spoken of as evil; 17 for the kingdom of God is not eating and drinking, but righteousness and peace and joy in the Holy Spirit. 18 For he who serves Christ in these things is acceptable to God and approved by men.",
         ],
@@ -6317,7 +6092,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL17&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس(5 : 9 ـ 6 :1 ـ 5 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس(5 : 9 - 6 :1 - 5 )",
             "1 Corinthiens 5:9 - 6:1-5",
             "1 Corinthians 5:9-6:5",
         ],
@@ -6335,7 +6110,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أو سكِّيراً أو خاطفاً، فمثل هذا لا تأكلوا معه. لأنه ماذا يعنيني أن أدينَ الذين في الخارج؟ ألستُم أنتُم تدينون الذين في الداخل؟ أمَّا الذين في الخارج فإنَّ اللَّـه يَدينُهُم. ' فاعزلُوا الخبيث مِن بينكُم '.",
+            "أو سكِّيراً أو خاطفاً، فمثل هذا لا تأكلوا معه. لأنه ماذا يعنيني أن أدينَ الذين في الخارج؟ ألستُم أنتُم تدينون الذين في الداخل؟ أمَّا الذين في الخارج فإنَّ اللَّ-ه يَدينُهُم. ' فاعزلُوا الخبيث مِن بينكُم '.",
             "ou ivrogne ou filou, et même de ne pas manger avec un tel homme. 12 Est-ce à moi, en effet, de juger ceux du dehors? N'est-ce pas ceux du dedans que vous avez à juger? 13 Ceux du dehors, Dieu les jugera. Ôtez le méchant du milieu de vous.",
             "or a drunkard, or an extortioner--not even to eat with such a person. 12 For what have I to do with judging those also who are outside? Do you not judge those who are inside? 13 But those who are outside God judges. Therefore put away from yourselves the evil person.",
         ],
@@ -6361,9 +6136,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL18&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 4 : 1 ـ 8 )",
-            "Romains 4 : 1 - 8",
-            "Romans 4:1-8",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 4 : 1 - 8 )",
+            "Romains (4: 1-8)",
+            "Romans (4: 1-8)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6393,13 +6168,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL19&C=Title",
-            " رسالة بولس الرسول إلى أهل تسالونيكي الثانية ( 2 : 9 ـ 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ تسالونيكي الثانية ( 2 : 9 - 17 )",
             "2 Thessalonique 2:9-17",
             "2 Thessalonians 2:9-17",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ويكون مجيئُه بفعل الشَّيطان، بكُلِّ قُـوَّة، وبالآيات والعَجائبَ الكاذبة، وبكُلَّ خدعةِ ظلم في الهَالَكينَ، لأنَّهم لم يقبلوا مَحبَّة الحقِّ ليَخلصُوا بها.",
+            "ويكون مجيئُه بفعل الشَّيطان، بكُلِّ قُ-وَّة، وبالآيات والعَجائبَ الكاذبة، وبكُلَّ خدعةِ ظلم في الهَالَكينَ، لأنَّهم لم يقبلوا مَحبَّة الحقِّ ليَخلصُوا بها.",
             "9 Quant à la venue de l'Impie, marquée par l'activité de Satan, elle se manifestera par toutes sortes d'oeuvres puissantes, de miracles, 10 de prodiges trompeurs et par toutes les séductions de l'injustice pour ceux qui se perdent, faute d'avoir accueilli l'amour de la vérité qui les aurait sauvés.",
             "9 The coming of the lawless one is according to the working of Satan, with all power, signs, and lying wonders, 10 and with all unrighteous deception among those who perish, because they did not receive the love of the truth, that they might be saved.",
         ],
@@ -6431,7 +6206,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL1&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 6 : 14 ـ 7 : 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 6 : 14 - 7 : 1 - 16 )",
             "2 Corinthians 6:14-7:16",
             "2 Corinthiens 6:14-7:16",
         ],
@@ -6479,13 +6254,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "حتى إنِّي ازددت فرحاً. لأنِّي وإنْ كُنتُ قَدْ أحْزَنْتُكُمْ بِالرِّسالةِ لَسْتُ أندَمُ، وإنْ كُنتُ قَدْ نَدِمْتُ. لكوني أرى أنَّ تِـلْكَ الـرِّسالَةَ قَـدْ أحْـزَنَتْكُمْ ولو حيناً يسيراً.",
+            "حتى إنِّي ازددت فرحاً. لأنِّي وإنْ كُنتُ قَدْ أحْزَنْتُكُمْ بِالرِّسالةِ لَسْتُ أندَمُ، وإنْ كُنتُ قَدْ نَدِمْتُ. لكوني أرى أنَّ تِ-لْكَ ال-رِّسالَةَ قَ-دْ أحْ-زَنَتْكُمْ ولو حيناً يسيراً.",
             "your mourning, your zeal for me, so that I rejoiced even more. 8 For even if I made you sorry with my letter, I do not regret it; though I did regret it. For I perceive that the same epistle made you sorry, though only for a while.",
             "au point que j'en ai eu une joie plus vive encore. 8 Oui, si je vous ai attristés par ma lettre, je ne le regrette pas... Et si je l'ai regretté - cette lettre, je le constate, vous a attristés, ne fût-ce qu'un moment -,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الآنَ أنـا أفْـرَحُ، لا لأنَّكُمْ حَزِنْتُمْ، بَلْ لأنَّكُمْ حَزِنْتُمْ للتَّوبةِ. فإنَّكُمْ حَزِنْتُمْ بِحَسَبِ مَشِيئَةِ اللَّهِ لكي لا تخسروا مِنَّا في شيءٍ. لأنَّ الحُزْنَ الذي بِحَسَبِ مَشِيئَةِ اللَّهِ يُنشِئُ تَوبَةً لِخَلاصٍ بِلا نَدامةٍ،",
+            "الآنَ أن-ا أفْ-رَحُ، لا لأنَّكُمْ حَزِنْتُمْ، بَلْ لأنَّكُمْ حَزِنْتُمْ للتَّوبةِ. فإنَّكُمْ حَزِنْتُمْ بِحَسَبِ مَشِيئَةِ اللَّهِ لكي لا تخسروا مِنَّا في شيءٍ. لأنَّ الحُزْنَ الذي بِحَسَبِ مَشِيئَةِ اللَّهِ يُنشِئُ تَوبَةً لِخَلاصٍ بِلا نَدامةٍ،",
             "9 Now I rejoice, not that you were made sorry, but that your sorrow led to repentance. For you were made sorry in a godly manner, that you might suffer loss from us in nothing. 10 For godly sorrow produces repentance leading to salvation, not to be regretted;",
             "9 je me réjouis maintenant, non de votre tristesse, mais du repentir qu'elle a produit. Car votre tristesse a été selon Dieu; ainsi, de notre part, vous n'avez subi aucun dommage. Car la tristesse selon Dieu produit un repentir qui conduit au salut et ne laisse pas place au regret...",
         ],
@@ -6497,7 +6272,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وقد أظهرتم ذواتكُمْ في كُلِّ شيءٍ أنَّكُمْ أبرياءُ في هذا الأمرِ. إذاً وإنْ كُنتُ قد كَتبتُ إلَيكُمْ، فليْسَ مِنْ أجْـلِ الظَّالم ولا مِنْ أجْلِ المظلوم، بَلْ لكي يَتضحَ أمام اللَّه اجتهادكم الذي صنعتموه لأجلنا عندكم",
+            "وقد أظهرتم ذواتكُمْ في كُلِّ شيءٍ أنَّكُمْ أبرياءُ في هذا الأمرِ. إذاً وإنْ كُنتُ قد كَتبتُ إلَيكُمْ، فليْسَ مِنْ أجْ-لِ الظَّالم ولا مِنْ أجْلِ المظلوم، بَلْ لكي يَتضحَ أمام اللَّه اجتهادكم الذي صنعتموه لأجلنا عندكم",
             "In all things you proved yourselves to be clear in this matter. 12 Therefore, although I wrote to you, I did not do it for the sake of him who had done the wrong, nor for the sake of him who suffered wrong, but that our care for you in the sight of God might appear to you.",
             "De toute façon vous avez vous-mêmes prouvé que vous étiez nets dans cette affaire. Bref, si je vous ai écrit, ce n'était ni à cause de l'offenseur, ni à cause de l'offensé, mais pour faire voir devant vous, en présence de Dieu, le zèle que vous avez pour nous.",
         ],
@@ -6517,7 +6292,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL1stSunday&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 11 : 16 ـ 28 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 11 : 16 - 28 )",
             "2 Corinthiens 11 : 16 - 28",
             "2 Corinthians 11:16-28",
         ],
@@ -6529,7 +6304,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبمَا أنَّ كثيرين يَفتخِرونَ بِحَسَبَ الجَسَدِ، أفْتَخِرُ أنا أيضـاً. فإنَّكُمْ بسرورٍ تَحتمِلُون الجُهَّلاء، لأنكم تَحتمِلونَ من يَستعبِدُكم! ومَن يأكُلكُم! ومَن يأخذ منكم! ومَن يَتكبَّر عليكم! ومَن يَضربُكم على وجوهِكُم!",
+            "وبمَا أنَّ كثيرين يَفتخِرونَ بِحَسَبَ الجَسَدِ، أفْتَخِرُ أنا أيض-اً. فإنَّكُمْ بسرورٍ تَحتمِلُون الجُهَّلاء، لأنكم تَحتمِلونَ من يَستعبِدُكم! ومَن يأكُلكُم! ومَن يأخذ منكم! ومَن يَتكبَّر عليكم! ومَن يَضربُكم على وجوهِكُم!",
             "18 Puisque beaucoup se vantent de leurs avantages humains, moi aussi je me vanterai. 19 Volontiers, vous supportez les gens qui perdent la raison, vous si raisonnables. 20 Vous supportez qu'on vous asservisse, qu'on vous dévore, qu'on vous dépouille, qu'on le prenne de haut, qu'on vous frappe au visage;",
             "18 Seeing that many boast according to the flesh, I also will boast. 19 For you put up with fools gladly, since you yourselves are wise! 20 For you put up with it if one brings you into bondage, if one devours you, if one takes from you, if one exalts himself, if one strikes you on the face.",
         ],
@@ -6547,7 +6322,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وانكسرت بي السَّفينَةُ ثلاثَ مَرَّاتٍ. وقضيت ليلاً ونَهاراً في عُمقِ البحرِ. وفي أسفار الطـريق مَـرَّاتٍ كثيرة. وفي أخطـار السيول. وفي معاطب اللصــوص. وفى أخطارٍ مِنْ ذوي جنسـي. وفي أخطـارٍ مِنَ الأمَـمِ. وأخطارٍ في المدينةِ. وأخطارٍ في البرِّيَّةِ. وأخطارٍ في البحرِ. ومعاطب من الإخوةِ الكذبة.",
+            "وانكسرت بي السَّفينَةُ ثلاثَ مَرَّاتٍ. وقضيت ليلاً ونَهاراً في عُمقِ البحرِ. وفي أسفار الط-ريق مَ-رَّاتٍ كثيرة. وفي أخط-ار السيول. وفي معاطب اللص--وص. وفى أخطارٍ مِنْ ذوي جنس-ي. وفي أخط-ارٍ مِنَ الأمَ-مِ. وأخطارٍ في المدينةِ. وأخطارٍ في البرِّيَّةِ. وأخطارٍ في البحرِ. ومعاطب من الإخوةِ الكذبة.",
             "j'ai passé un jour et une nuit sur l'abîme. Voyages à pieds, souvent, dangers des fleuves, dangers des brigands, dangers de mes frères de race, dangers des païens, dangers dans la ville, dangers dans le désert, dangers sur les mers, dangers des faux frères!",
             "three times I was shipwrecked; a night and a day I have been in the deep; 26 in journeys often, in perils of waters, in perils of robbers, in perils of my own countrymen, in perils of the Gentiles, in perils in the city, in perils in the wilderness, in perils in the sea, in perils among false brethren;",
         ],
@@ -6561,13 +6336,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL20&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية 4 :6- 11",
-            "Romains 4 : 6 - 11",
-            "Romans 4:6-11",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة 4 :6- 11",
+            "Romains (4: 6-11)",
+            "Romans (4: 6-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كما يقولُ داودُ أيضاً في تطويبِ الإنسان الذي يَحسب لهُ اللَّـه براً بدون أعمال: ' طوبى للَّذين غُفِرت لهُم آثامهم وسُتِرت خطاياهم.",
+            "كما يقولُ داودُ أيضاً في تطويبِ الإنسان الذي يَحسب لهُ اللَّ-ه براً بدون أعمال: ' طوبى للَّذين غُفِرت لهُم آثامهم وسُتِرت خطاياهم.",
             "6 C'est ainsi que David célèbre le bonheur de l'homme au compte duquel Dieu porte la justice indépendamment de ses oeuvres: 7 Heureux ceux dont les offenses ont été pardonnées et les péchés remis,",
             "6 just as David also describes the blessedness of the man to whom God imputes righteousness apart from works: 7 Blessed are those whose lawless deeds are forgiven, And whose sins are covered;",
         ],
@@ -6593,13 +6368,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL21&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين (11:1-8)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين (11:1-8)",
             "Hebrews 11:1-8",
             "Hebrews 11:1-8",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا الإيمانُ فَهُوَ الثِّقةُ بما يُرجَى والإيقانُ بأُمُور لا تُرى. بهِ شُهِد الشُّيوخ. بالإيمانِ نفهمُ أنَّ الدهور أُتقِنتْ بكلِمةِ اللَّـهِ",
+            "وأمَّا الإيمانُ فَهُوَ الثِّقةُ بما يُرجَى والإيقانُ بأُمُور لا تُرى. بهِ شُهِد الشُّيوخ. بالإيمانِ نفهمُ أنَّ الدهور أُتقِنتْ بكلِمةِ اللَّ-هِ",
             "1 La foi est une manière de posséder déjà ce que l'on espère, un moyen de connaître des réalités que l'on ne voit pas. 2 C'est elle qui valut aux anciens un bon témoignage. 3 Par la foi, nous comprenons que les mondes ont été organisés par la parole de Dieu.",
             "11:1 Now faith is the substance of things hoped for, the evidence of things not seen. 2 For by it the elders obtained a good testimony. 3 By faith we understand that the worlds were framed by the word of God,",
         ],
@@ -6611,13 +6386,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "بالإيمان نُقِلَ أخنوخُ لكي لا يرَى الموتَ ولمْ يُوجَد بعد لأنَّ اللَّهَ نقلَهُ. لأنه من قَبْـلَ نقلِهِ شُهِدَ لهُ بأنَّه قد أرضَى اللَّهَ. وبغيرِ إيمانٍ لا يُمكِنُ إرضاءهُ،",
+            "بالإيمان نُقِلَ أخنوخُ لكي لا يرَى الموتَ ولمْ يُوجَد بعد لأنَّ اللَّهَ نقلَهُ. لأنه من قَبْ-لَ نقلِهِ شُهِدَ لهُ بأنَّه قد أرضَى اللَّهَ. وبغيرِ إيمانٍ لا يُمكِنُ إرضاءهُ،",
             "5 Par la foi, Hénoch fut enlevé afin d'échapper à la mort et on ne le retrouva pas, parce que Dieu l'avait enlevé; avant son enlèvement, en effet, il avait reçu le témoignage qu'il avait été agréable à Dieu. 6 Or, sans la foi, il est impossible d'être agréable à Dieu,",
             "5 By faith Enoch was taken away so that he did not see death, and was not found, because God had taken him; for before he was taken he had this testimony, that he pleased God. 6 But without faith it is impossible to please Him,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّه يَجـبُ أنَّ الذى يأتي إلى اللَّهِ يُؤمنُ بأنَّه موجـودٌ، وأنَّهُ يجـازي الذين يبتغونهُ. بالإيمان نوحٌ لمَّا أُوحِي إليهِ عن أُمُورٍ لمْ تُرَ بعدُ ( اتقى ) خاف فبنَى فُلكاً لخلاصِ بيتِهِ.",
+            "لأنَّه يَج-بُ أنَّ الذى يأتي إلى اللَّهِ يُؤمنُ بأنَّه موج-ودٌ، وأنَّهُ يج-ازي الذين يبتغونهُ. بالإيمان نوحٌ لمَّا أُوحِي إليهِ عن أُمُورٍ لمْ تُرَ بعدُ ( اتقى ) خاف فبنَى فُلكاً لخلاصِ بيتِهِ.",
             "car celui qui s'approche de Dieu doit croire qu'il existe et qu'il récompense ceux qui le cherchent. 7 Par la foi, Noé, divinement averti de ce que l'on ne voyait pas encore, prit l'oracle au sérieux, et construisit une arche pour sauver sa famille",
             "for he who comes to God must believe that He is, and that He is a rewarder of those who diligently seek Him. 7 By faith Noah, being divinely warned of things not yet seen, moved with godly fear, prepared an ark for the saving of his household,",
         ],
@@ -6631,7 +6406,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL22&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس ( 7 : 2 ـ 11 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس ( 7 : 2 - 11 )",
             "2 Corinthiens 7 : 2 – 11",
             "2 Corinthians 7:2-11",
         ],
@@ -6661,13 +6436,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنِّي وإن كُنتُ قد أحزنتُكُم بالرِّسالةِ لستُ أندمُ، وإن كُنتُ قد ندمتُ لأنني أنظر أن تلك الرِّسالة أحزنتكم ولو إلى ساعةٍ. الآن أنا أفرحُ، لا لأنَّكُم حزنتُم، بل لأنَّ حزنكُم للتَّوبةِ. لأنَّكُم حزنتُم للَّـهِ",
+            "لأنِّي وإن كُنتُ قد أحزنتُكُم بالرِّسالةِ لستُ أندمُ، وإن كُنتُ قد ندمتُ لأنني أنظر أن تلك الرِّسالة أحزنتكم ولو إلى ساعةٍ. الآن أنا أفرحُ، لا لأنَّكُم حزنتُم، بل لأنَّ حزنكُم للتَّوبةِ. لأنَّكُم حزنتُم للَّ-هِ",
             "8 Oui, si je vous ai attristés par ma lettre, je ne le regrette pas... Et si je l'ai regretté - cette lettre, je le constate, vous a attristés, ne fût-ce qu'un moment -, 9 je me réjouis maintenant, non de votre tristesse, mais du repentir qu'elle a produit. Car votre tristesse a été selon Dieu;",
             "8 For even if I made you sorry with my letter, I do not regret it; though I did regret it. For I perceive that the same epistle made you sorry, though only for a while. 9 Now I rejoice, not that you were made sorry, but that your sorrow led to repentance.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكي لا تخسروا منَّا في شيءٍ. لأنَّ الحُزن الذي في اللَّـهِ يُنشئُ توبةً للخلاص بلا ندامةٍ، أمَّا حُزنُ العالمِ فيُنشئُ موتاً.",
+            "لكي لا تخسروا منَّا في شيءٍ. لأنَّ الحُزن الذي في اللَّ-هِ يُنشئُ توبةً للخلاص بلا ندامةٍ، أمَّا حُزنُ العالمِ فيُنشئُ موتاً.",
             "ainsi, de notre part, vous n'avez subi aucun dommage. 10 Car la tristesse selon Dieu produit un repentir qui conduit au salut et ne laisse pas place au regret... La tristesse selon ce monde produit la mort.",
             "For you were made sorry in a godly manner, that you might suffer loss from us in nothing. 10 For godly sorrow produces repentance leading to salvation, not to be regretted; but the sorrow of the world produces death.",
         ],
@@ -6681,7 +6456,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL24&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 8 : 12 ـ 26 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 8 : 12 - 26 )",
             "Romans 8:12-26",
             "Romans 8:12-26",
         ],
@@ -6699,7 +6474,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "والرُّوحُ نفسُهُ أيضاً يشهدُ لأرواحنا أنَّنا أولاد اللَّه. فإن كنَّا أولاداً فإنَّنا ورثةٌ أيضاً، ورثةُ اللَّـه ووارثُونَ مع المسيحِ. إن كُنَّا نتألَّم معهُ لكي نتمجَّد أيضاً معهُ.",
+            "والرُّوحُ نفسُهُ أيضاً يشهدُ لأرواحنا أنَّنا أولاد اللَّه. فإن كنَّا أولاداً فإنَّنا ورثةٌ أيضاً، ورثةُ اللَّ-ه ووارثُونَ مع المسيحِ. إن كُنَّا نتألَّم معهُ لكي نتمجَّد أيضاً معهُ.",
             "16 Cet Esprit lui-même atteste à notre esprit que nous sommes enfants de Dieu. 17 Enfants, et donc héritiers: héritiers de Dieu, cohéritiers de Christ, puisque, ayant part à ses souffrances, nous aurons part aussi à sa gloire.",
             "16 The Spirit Himself bears witness with our spirit that we are children of God, 17 and if children, then heirs--heirs of God and joint heirs with Christ, if indeed we suffer with Him, that we may also be glorified together.",
         ],
@@ -6737,7 +6512,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL25&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس ( 4 : 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 4 : 1 - 16 )",
             "Ephésiens 4 : 1 - 16",
             "Ephesians 4:1-16",
         ],
@@ -6787,7 +6562,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL26&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس ( 4 : 17 ـ 32 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 4 : 17 - 32 )",
             "Ephesians 4:17-32",
             "Ephesians 4:17-32",
         ],
@@ -6799,7 +6574,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إذ هُم مُظلِمُو الفِكر، وغرباء عن حَياة اللَّهِ لأجل الجَهل الذي فِيهم وعمى قلوبهم. الذين ـ إذ هُم قد فقدُوا الحِسَّ ـ أسلَمُوا أنفسهم للدَّعَارة لعمل كُلَّ نَجاسةٍ في الطَّمع.",
+            "إذ هُم مُظلِمُو الفِكر، وغرباء عن حَياة اللَّهِ لأجل الجَهل الذي فِيهم وعمى قلوبهم. الذين - إذ هُم قد فقدُوا الحِسَّ - أسلَمُوا أنفسهم للدَّعَارة لعمل كُلَّ نَجاسةٍ في الطَّمع.",
             "18 Leur pensée est la proie des ténèbres et ils sont étrangers à la vie de Dieu, à cause de l'ignorance qu'entraîne chez eux l'endurcissement de leur coeur. 19 Dans leur inconscience, il se sont livrés à la débauche, au point de s'adonner à une impureté effrénée.",
             "18 having their understanding darkened, being alienated from the life of God, because of the ignorance that is in them, because of the blindness of their heart; 19 who, being past feeling, have given themselves over to lewdness, to work all uncleanness with greediness.",
         ],
@@ -6843,7 +6618,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL27&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 12 : 31 ـ 13 : 1 ـ 14 : 1 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 12 : 31 - 13 : 1 - 14 : 1 )",
             "1 Corinthians 12:31-14:1",
             "1 Corinthians 12:31-14:1",
         ],
@@ -6893,7 +6668,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL28&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين(13 : 7 – 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين(13 : 7 – 16 )",
             "Hebrews 13:7 - 16",
             "Hebrews 13:7-16",
         ],
@@ -6931,7 +6706,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL29&C=Title",
-            " رسالة بولس الرسول إلى أهل فيلبي( 4 : 4 ـ 9 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فيلبي( 4 : 4 - 9 )",
             "Philippiens 4 : 4 - 9",
             "Philippians 4:4-9",
         ],
@@ -6963,9 +6738,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL2ndSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 13 : 1 ـ 14 )",
-            "Romains 13 : 1 – 14",
-            "Romans 13:1-14",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 13 : 1 - 14 )",
+            "Romains (13: 1–14)",
+            "Romans (13: 1-14)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7019,7 +6794,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL2&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 11 : 16 ـ 28 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 11 : 16 - 28 )",
             "2 Corinthiens 11 : 16 - 28",
             "2 Corinthians 11:16-28",
         ],
@@ -7031,7 +6806,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبمَا أنَّ كثيرين يَفتخِرونَ بِحَسَبَ الجَسَدِ، أفْتَخِرُ أنا أيضـاً. فإنَّكُمْ بسرورٍ تَحتمِلُون الجُهَّلاء، لأنكم تَحتمِلونَ من يَستعبِدُكم! ومَن يأكُلكُم! ومَن يأخذ منكم! ومَن يَتكبَّر عليكم! ومَن يَضربُكم على وجوهِكُم!",
+            "وبمَا أنَّ كثيرين يَفتخِرونَ بِحَسَبَ الجَسَدِ، أفْتَخِرُ أنا أيض-اً. فإنَّكُمْ بسرورٍ تَحتمِلُون الجُهَّلاء، لأنكم تَحتمِلونَ من يَستعبِدُكم! ومَن يأكُلكُم! ومَن يأخذ منكم! ومَن يَتكبَّر عليكم! ومَن يَضربُكم على وجوهِكُم!",
             "18 Puisque beaucoup se vantent de leurs avantages humains, moi aussi je me vanterai. 19 Volontiers, vous supportez les gens qui perdent la raison, vous si raisonnables. 20 Vous supportez qu'on vous asservisse, qu'on vous dévore, qu'on vous dépouille, qu'on le prenne de haut, qu'on vous frappe au visage;",
             "18 Seeing that many boast according to the flesh, I also will boast. 19 For you put up with fools gladly, since you yourselves are wise! 20 For you put up with it if one brings you into bondage, if one devours you, if one takes from you, if one exalts himself, if one strikes you on the face.",
         ],
@@ -7049,7 +6824,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وانكسرت بي السَّفينَةُ ثلاثَ مَرَّاتٍ. وقضيت ليلاً ونَهاراً في عُمقِ البحرِ. وفي أسفار الطـريق مَـرَّاتٍ كثيرة. وفي أخطـار السيول. وفي معاطب اللصــوص. وفى أخطارٍ مِنْ ذوي جنسـي. وفي أخطـارٍ مِنَ الأمَـمِ. وأخطارٍ في المدينةِ. وأخطارٍ في البرِّيَّةِ.",
+            "وانكسرت بي السَّفينَةُ ثلاثَ مَرَّاتٍ. وقضيت ليلاً ونَهاراً في عُمقِ البحرِ. وفي أسفار الط-ريق مَ-رَّاتٍ كثيرة. وفي أخط-ار السيول. وفي معاطب اللص--وص. وفى أخطارٍ مِنْ ذوي جنس-ي. وفي أخط-ارٍ مِنَ الأمَ-مِ. وأخطارٍ في المدينةِ. وأخطارٍ في البرِّيَّةِ.",
             "j'ai fait naufrage, j'ai passé un jour et une nuit sur l'abîme. Voyages à pieds, souvent, dangers des fleuves, dangers des brigands, dangers de mes frères de race, dangers des païens, dangers dans la ville, dangers dans le désert,",
             "three times I was shipwrecked; a night and a day I have been in the deep; 26 in journeys often, in perils of waters, in perils of robbers, in perils of my own countrymen, in perils of the Gentiles, in perils in the city, in perils in the wilderness,",
         ],
@@ -7063,7 +6838,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL31&C=Title",
-            " رسالة بولس الرسول إلى أهل فيلبي ( 2 : 1 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فيلبي ( 2 : 1 - 16 )",
             "Philippians 2:1-16",
             "Philippians 2:1-16",
         ],
@@ -7119,7 +6894,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL32&C=Title",
-            " رسالة بولس الرسول إلى أهل فيلبي( 2 : 22 ـ 26 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فيلبي( 2 : 22 - 26 )",
             "Philippians 2:22-26",
             "Philippians 2:22-26",
         ],
@@ -7139,9 +6914,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL33&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 4 : 14 ـ 5 : 1 ـ 5 )",
-            "Romains 4:14 - 5:1-5",
-            "Romans 4:14-5:5",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 4 : 14 - 5 : 1 - 5 )",
+            "Romains (4:14 - 5:1-5)",
+            "Romans (4:14-5:5)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7169,7 +6944,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولا مُماتيَّة مســتودع ســارة. ولم يَشُك بعدم إيمان في وعــد اللَّه بل تقـوى في الإيمـان مُعطياً مجداً للَّه. ومتيقَّناً بأنَّه قـادرٌ أن يُنجز ما وعده به.",
+            "ولا مُماتيَّة مس--تودع س--ارة. ولم يَشُك بعدم إيمان في وع--د اللَّه بل تق-وى في الإيم-ان مُعطياً مجداً للَّه. ومتيقَّناً بأنَّه ق-ادرٌ أن يُنجز ما وعده به.",
             "et le sein maternel de Sara, l'un et l'autre atteints par la mort. 20 Devant la promesse divine, il ne succomba pas au doute, mais il fut fortifié par la foi et rendit gloire à Dieu, 21 pleinement convaincu que, ce qu'il a promis, Dieu a aussi la puissance de l'accomplir.",
             "and the deadness of Sarah's womb. 20 He did not waver at the promise of God through unbelief, but was strengthened in faith, giving glory to God, 21 and being fully convinced that what He had promised He was also able to perform.",
         ],
@@ -7181,7 +6956,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي أُسْـلِمَ لأجل خطايانا وأُقيم لأجل تبريرنا. فإذ قد تبرَّرنا بالإيمان فلنا سلامٌ مع اللَّـه بربِّنا يسوع المسيح،",
+            "الذي أُسْ-لِمَ لأجل خطايانا وأُقيم لأجل تبريرنا. فإذ قد تبرَّرنا بالإيمان فلنا سلامٌ مع اللَّ-ه بربِّنا يسوع المسيح،",
             "25 livré pour nos fautes et ressuscité pour notre justification. 1 Ainsi donc, justifiés par la foi, nous sommes en paix avec Dieu par notre Seigneur Jésus Christ;",
             "25 who was delivered up because of our offenses, and was raised because of our justification. 5:1 Therefore, having been justified by faith, we have peace with God through our Lord Jesus Christ,",
         ],
@@ -7201,7 +6976,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL34&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 10 : 14 ـ 11 : 1 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 10 : 14 - 11 : 1 )",
             "1 Corinthiens 10:14 - 11:1",
             "1Corinthians 10:14-11:1",
         ],
@@ -7249,7 +7024,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن كُنتُ أنا أتناولُ بشُكر، فلماذا يُفتري عليَّ فيـم أنا شاكر عليه؟ فإذا أكلتُم أو شـربتُم أو عملتُم شيئاً، فاعمـلُوا كُـلَّ شيءٍ لمجد اللَّهِ. كُونُوا بلا معثرة لليهود ولليونانيِّين ولكنيسةِ اللَّهِ.",
+            "إن كُنتُ أنا أتناولُ بشُكر، فلماذا يُفتري عليَّ في-م أنا شاكر عليه؟ فإذا أكلتُم أو ش-ربتُم أو عملتُم شيئاً، فاعم-لُوا كُ-لَّ شيءٍ لمجد اللَّهِ. كُونُوا بلا معثرة لليهود ولليونانيِّين ولكنيسةِ اللَّهِ.",
             "30 Si je prends de la nourriture en rendant grâce, pourquoi serais-je blâmé pour ce dont je rends grâce? Soit donc que vous mangiez, soit que vous buviez, quoi que vous fassiez, faites tout pour la gloire de Dieu. 32 Ne soyez pour personne une occasion de chute ni pour les Juifs, ni pour les Grecs, ni pour l'Église de Dieu.",
             "30 But if I partake with thanks, why am I evil spoken of for the food over which I give thanks? 31 Therefore, whether you eat or drink, or whatever you do, do all to the glory of God. 32 Give no offense, either to the Jews or to the Greeks or to the church of God,",
         ],
@@ -7263,7 +7038,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL35&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين( 12 : 5 ـ 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين( 12 : 5 - 16 )",
             "Hebrews 12:5-16",
             "Hebrews 12:5-16",
         ],
@@ -7313,7 +7088,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL36&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية( 5 : 16 ـ 6 : 1 ـ 2 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية( 5 : 16 - 6 : 1 - 2 )",
             "Galates 5:16 - 6:1-2",
             "Galatians 5:16-6:2",
         ],
@@ -7357,7 +7132,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL38&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل تسالونيكي( 4 : 1 ـ 18 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ تسالونيكي( 4 : 1 - 18 )",
             "1 Thessalonians 4:1-18",
             "1 Thessalonians 4:1-18",
         ],
@@ -7411,7 +7186,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "سيُحضرُهُمُ اللَّهُ أيضاً معهُ. فإنَّنا نقُولُ لكُم هذا بكلمةِ الـربِّ: إنَّنا نحنُ الأحياء الباقين إلى مجيء الـربِّ، لا نبلغُ الرَّاقـدين.",
+            "سيُحضرُهُمُ اللَّهُ أيضاً معهُ. فإنَّنا نقُولُ لكُم هذا بكلمةِ ال-ربِّ: إنَّنا نحنُ الأحياء الباقين إلى مجيء ال-ربِّ، لا نبلغُ الرَّاق-دين.",
             "15 Voici, en effet, ce que nous vous déclarons, d’après une parole du Seigneur : nous les vivants, restés pour l’avènement du Seigneur, nous ne devancerons pas ceux qui se sont endormis.",
             "15 For this we say to you by the word of the Lord, that we who are alive and remain until the coming of the Lord will by no means precede those who are asleep.",
         ],
@@ -7431,7 +7206,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL39&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 14 : 18 ـ 28 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 14 : 18 - 28 )",
             "1 Corinthians 14:18-28",
             "1 Corinthians 14:18-28",
         ],
@@ -7475,9 +7250,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL3rdSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 14 : 19 ـ 15 : 1 ـ 7 )",
-            "Romains 14:19 - 15:1-7",
-            "Romans 14:19-15:7",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 14 : 19 - 15 : 1 - 7 )",
+            "Romains (14:19 - 15:1-7)",
+            "Romans (14:19-15:7)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7511,7 +7286,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكي بقلبٍ واحدٍ وفمٍ واحدٍ تُمجِّدُوا اللَّه أبا ربِّنا يسُوع المسيح، لذلك اقبلُوا بعضُكُم بعضاً كما قبلكم المسيح، لمجد اللَّـه.",
+            "لكي بقلبٍ واحدٍ وفمٍ واحدٍ تُمجِّدُوا اللَّه أبا ربِّنا يسُوع المسيح، لذلك اقبلُوا بعضُكُم بعضاً كما قبلكم المسيح، لمجد اللَّ-ه.",
             "6 afin que, d'un même coeur et d'une seule voix, vous rendiez gloire à Dieu, le Père de notre Seigneur Jésus Christ. 7 Accueillez-vous donc les uns les autres, comme le Christ vous a accueillis, pour la gloire de Dieu.",
             "6 that you may with one mind and one mouth glorify the God and Father of our Lord Jesus Christ. 7 Therefore receive one another, just as Christ also received us, to the glory of God.",
         ],
@@ -7519,9 +7294,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL3&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية(1:26-2:7)",
-            "Romains 1:26-2:7",
-            "Romans 1:26-2:7",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية(1:26-2:7)",
+            "Romains (1:26-2:7)",
+            "Romans (1:26-2:7)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7575,9 +7350,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL40&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية (2:12-24)",
-            "Romains 2:12-24",
-            "Romans 2:12-24",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (2:12-24)",
+            "Romains (2: 12-24)",
+            "Romans (2: 12-24)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7625,7 +7400,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL41&C=Title",
-            " رسالة بولس الرسول الأولى إلى تلميذه تيموثاوس( 2 : 1 ـ 3 : 1 ـ 4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى تلميذه تيموثاوس( 2 : 1 - 3 : 1 - 4 )",
             "1 Timothy 2:1-3:4",
             "1 Timothy 2:1-3:4",
         ],
@@ -7681,7 +7456,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL42&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 10 : 1 ـ 13 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 10 : 1 - 13 )",
             "1 Corinthians 10:1-13",
             "1 Corinthians 10:1-13",
         ],
@@ -7725,7 +7500,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL43&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية( 5 : 16 ـ 6 : 1 ـ 2 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية( 5 : 16 - 6 : 1 - 2 )",
             "Galates 5:16 - 6:1-2",
             "Galatians 5:16-6:2",
         ],
@@ -7745,9 +7520,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL45&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 14 : 10 ـ 15 : 1 ، 2 )",
-            "Romains 14:10 - 15:1,2",
-            "Romans 14:10-15:2",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 14 : 10 - 15 : 1 ، 2 )",
+            "Romains (14:10 - 15:1,2)",
+            "Romans (14:10-15:2)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7795,7 +7570,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL46&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس(14:5-17)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس(14:5-17)",
             "1 Corinthians 14:5-17",
             "1 Corinthians 14:5-17",
         ],
@@ -7845,51 +7620,45 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL47&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية (10:4-13)",
-            "Romains 10:4-13",
-            "Romans 10:4-13",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَةِ (10: 4-13)",
+            "Romains (10: 4-13)",
+            "Romans (10: 4-13)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إنما غاية النَّامُوس هي: المسيحُ للبرِّ لكُلِّ مَن يؤمِنُ. لأنَّ موسَى كتب عن البرِّ الذي بالنَّامُوس: ' بأنَّ الإنسان الذي يفعلُها سَيحيا بها '. أمَّا البرُّ الذي مِن الإيمان فيقُولُ هكذا: ' لا تقُل في قَلبكَ:",
-            "4 Car la fin de la loi, c'est Christ, pour que soit donnée la justice à tout homme qui croit. Moïse lui-même écrit de la justice qui vient de la loi: 'L'homme qui l'accomplira vivra par elle. Mais la justice qui vient de la foi parle ainsi: Ne dis pas dans ton cœur:",
-            "4 For Christ is the end of the law for righteousness to everyone who believes. 5 For Moses writes about the righteousness which is of the law, The man who does those things shall live by them. 6 But the righteousness of faith speaks in this way, Do not say in your heart,",
+            'لأَنَّ غَايَةَ النَّامُوسِ هِيَ: الْمَسِيحُ لِلْبِرِّ لِكُلِّ مَنْ يُؤْمِنُ. لأَنَّ مُوسَى يَكْتُبُ فِي الْبِرِّ الَّذِي بِالنَّامُوسِ: "إِنَّ الإِنْسَانَ الَّذِي يَفْعَلُهَا سَيَحْيَا بِهَا". وَأَمَّا الْبِرُّ الَّذِي بِالإِيمَانِ فَيَقُولُ هكَذَا: "لاَ تَقُلْ فِي قَلْبِكَ: مَنْ يَصْعَدُ إِلَى السَّمَاءِ؟" أَيْ لِيُحْدِرَ الْمَسِيحَ، "أَوْ: مَنْ يَهْبِطُ إِلَى الْهَاوِيَةِ؟" أَيْ لِيُصْعِدَ الْمَسِيحَ مِنَ الأَمْوَاتِ.',
+            "04 Car l’aboutissement de la Loi, c’est le Christ, afin que soit donnée la justice à toute personne qui croit. 05 Au sujet de la justice qui vient de la Loi, Moïse écrit : « L’homme qui mettra les commandements en pratique y trouvera la vie ». 06 Mais la justice qui vient de la foi parle ainsi : « Ne dis pas dans ton cœur :  Qui montera aux cieux ? » – c’est-à-dire pour en faire descendre le Christ. 07 Ou bien : « Qui descendra au fond de l’abîme ? » – c’est-à-dire pour faire remonter le Christ d’entre les morts.",
+            "4 For Christ is the end of the law for righteousness to every one that believeth. 5 For Moses describeth the righteousness which is of the law, That the man which doeth those things shall live by them. 6 But the righteousness which is of faith speaketh on this wise, Say not in thine heart, Who shall ascend into heaven? (that is, to bring Christ down from above:) 7 Or, Who shall descend into the deep? (that is, to bring up Christ again from the dead.) ",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَن يَصعدُ إلى السَّماء؟ ' أي ليُنزِل المسيح، أو ' مَن يَهبطُ إلى الهاويةِ؟ ' أي ليُصعِد المسيح مِن بين الأموَات لكن ماذا يقُولُ الكتاب؟ ' إنَّ الكلِمة قريبةٌ مِنكَ، هي في فيكَ وفي قلبكَ ' يعني كلمةُ الإيمان التي نُبشر نحن بها‎.",
-            "Qui montera au ciel? Ce serait en faire descendre le Christ; ni: Qui descendra dans l'abîme? Ce serait faire remonter Christ d'entre les morts. Que dit-elle donc? Tout près de toi est la parole, dans ta bouche et dans ton cœur. Cette parole, c'est la parole de la foi que nous proclamons.",
-            "`Who will ascend into heaven?' (that is, to bring Christ down from above) 7 or, `Who will descend into the abyss?' (that is, to bring Christ up from the dead). 8 But what does it say? The word is near you, in your mouth and in your heart (that is, the word of faith which we preach):",
+            'لكِنْ مَاذَا يَقُولُ؟ "اَلْكَلِمَةُ قَرِيبَةٌ مِنْكَ، فِي فَمِكَ وَفِي قَلْبِكَ" أَيْ كَلِمَةُ الإِيمَانِ الَّتِي نَكْرِزُ بِهَا: لأَنَّكَ إِنِ اعْتَرَفْتَ بِفَمِكَ بِالرَّبِّ يَسُوعَ، وَآمَنْتَ بِقَلْبِكَ أَنَّ اللهَ أَقَامَهُ مِنَ الأَمْوَاتِ، خَلَصْتَ.',
+            "08 Mais que dit cette justice ? « Tout près de toi est la Parole, elle est dans ta bouche et dans ton cœur ». Cette Parole, c’est le message de la foi que nous proclamons. 09 En effet, si de ta bouche, tu affirmes que Jésus est Seigneur, si, dans ton cœur, tu crois que Dieu l’a ressuscité d’entre les morts, alors tu seras sauvé. ",
+            "8 But what saith it? The word is nigh thee, even in thy mouth, and in thy heart: that is, the word of faith, which we preach; 9 That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّكَ إن اعترفتَ بفمِكَ بالربِّ يسوعَ، وآمنتَ بقلبكَ أنَّ اللَّهَ قد أقامهُ مِن بين الأموات، تخلص. لأنَّهُ بالقلب يُؤمَن الإنسان بهِ للبرِّ، وبالفَم يُعتَرف بهِ للخَلاص.",
-            "9 Si de ta bouche, tu confesses que Jésus est Seigneur et si, dans ton cœur, tu crois que Dieu l'a ressuscité des morts, tu seras sauvé. En effet, croire dans son cœur conduit à la justice et confesser de sa bouche conduit au salut.",
-            "9 that if you confess with your mouth the Lord Jesus and believe in your heart that God has raised Him from the dead, you will be saved. 10 For with the heart one believes unto righteousness, and with the mouth confession is made unto salvation.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّ الكتابَ يقُولُ: ' إنَّ كُلُّ مَن يُؤمِن بهِ لا يُخزى '. لأنَّهُ لا فرقَ بين اليهُوديِّ واليُونانيِّ، إذ للجميع ربٌّ واحدٌ، غنيٌّ لكُل مَن يدعُوه. لأنَّ مَن يدعُو بِاسم الربِّ يخلُص.",
-            "11 Car l'Ecriture dit: Quiconque croit en lui ne sera pas confondu. Ainsi, il n'y a pas de différence entre Juif et Grec: tous ont le même Seigneur, riche envers tous ceux qui l'invoquent. En effet, quiconque invoquera le nom du Seigneur sera sauvé.",
-            "11 For the Scripture says, Whoever believes on Him will not be put to shame. 12 For there is no distinction between Jew and Greek, for the same Lord over all is rich to all who call upon Him. 13 For whoever calls on the name of the Lord shall be saved.",
+            'لأَنَّ الْقَلْبَ يُؤْمَنُ بِهِ لِلْبِرِّ، وَالْفَمَ يُعْتَرَفُ بِهِ لِلْخَلاَصِ لأَنَّ الْكِتَابَ يَقُولُ: "كُلُّ مَنْ يُؤْمِنُ بِهِ لاَ يُخْزَى" لأَنَّهُ لاَ فَرْقَ بَيْنَ الْيَهُودِيِّ وَالْيُونَانِيِّ، لأَنَّ رَبًّا وَاحِدًا لِلْجَمِيعِ، غَنِيًّا لِجَمِيعِ الَّذِينَ يَدْعُونَ بِهِ لأَنَّ "كُلَّ مَنْ يَدْعُو بِاسْمِ الرَّبِّ يَخْلُصُ".',
+            "10 Car c’est avec le cœur que l’on croit pour devenir juste, c’est avec la bouche que l’on affirme sa foi pour parvenir au salut. 11 En effet, l’Écriture dit : « Quiconque met en lui sa foi ne connaîtra pas la honte ». 12 Ainsi, entre les Juifs et les païens, il n’y a pas de différence : tous ont le même Seigneur, généreux envers tous ceux qui l’invoquent. 13 En effet, quiconque invoquera le nom du Seigneur sera sauvé.",
+            " 10 For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation. 11 For the scripture saith, Whosoever believeth on him shall not be ashamed. 12 For there is no difference between the Jew and the Greek: for the same Lord over all is rich unto all that call upon him. 13 For whosoever shall call upon the name of the Lord shall be saved.",
         ],
     ],
     [
         [
             Prefix.stPaul + "&D=GL48&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل كورنثوس( 4 : 5 ـ 18 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 4 : 5 - 18 )",
             "2 Corinthiens 4:5-18",
             "2 Corinthians 4:5-18",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّنا لَسنا نكرزُ بأنفُسِنا، بل بالمسيح يسوعَ ربّنا، وبأنفُسِنا عبيداً لكُم مِن أجل يسوعَ. لأنَّ اللَّـهَ الذي قالَ: ' أنْ يُشرقَ نُورٌ مِن ظُلمةٍ '، هُو الذي أشرقَ في قُلُوبنا، لإنارَة مَعرفةِ مَجدِ اللَّـهِ في وجهِ يسوعَ المسيح",
+            "فإنَّنا لَسنا نكرزُ بأنفُسِنا، بل بالمسيح يسوعَ ربّنا، وبأنفُسِنا عبيداً لكُم مِن أجل يسوعَ. لأنَّ اللَّ-هَ الذي قالَ: ' أنْ يُشرقَ نُورٌ مِن ظُلمةٍ '، هُو الذي أشرقَ في قُلُوبنا، لإنارَة مَعرفةِ مَجدِ اللَّ-هِ في وجهِ يسوعَ المسيح",
             "5 Non, ce n'est pas nous-mêmes, mais Jésus Christ Seigneur que nous proclamons. Quant à nous-mêmes, nous nous proclamons vos serviteurs à cause de Jésus. Car le Dieu qui a dit: que la lumière brille au milieu des ténèbres, c'est lui-même qui a brillé dans nos cœurs pour faire resplendir la connaissance de sa gloire qui rayonne sur le visage du Christ.",
             "5 For we do not preach ourselves, but Christ Jesus the Lord, and ourselves your bondservants for Jesus' sake. 6 For it is the God who commanded light to shine out of darkness, who has shone in our hearts to give the light of the knowledge of the glory of God in the face of Jesus Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولنا هذا الكنز فى أواني خزفيَّةٍ، ليكُونَ فضلُ القُوَّة للَّـهِ لا منَّا. مُكتئبين في كُلِّ شيءٍ، ولكن غير مُتضايقينَ. مَطرُوحين، لكن غيرَ هَالكين. مُضطَهَدِينَ، لكن غيرَ مَترُوكينَ. ( مُتحيِّرين، لكن غيرَ يائسِين ).",
+            "ولنا هذا الكنز فى أواني خزفيَّةٍ، ليكُونَ فضلُ القُوَّة للَّ-هِ لا منَّا. مُكتئبين في كُلِّ شيءٍ، ولكن غير مُتضايقينَ. مَطرُوحين، لكن غيرَ هَالكين. مُضطَهَدِينَ، لكن غيرَ مَترُوكينَ. ( مُتحيِّرين، لكن غيرَ يائسِين ).",
             "7 Mais ce trésor, nous le portons dans des vases d'argile, pour que cette incomparable puissance soit de Dieu et non de nous. Pressés de toute part, nous ne sommes pas écrasés; dans des impasses, mais nous arrivons à passer; pourchassés, mais non rejoints; terrassés, mais non achevés;",
             "7 But we have this treasure in earthen vessels, that the excellence of the power may be of God and not of us. 8 We are hard pressed on every side, yet not crushed; we are perplexed, but not in despair; 9 persecuted, but not forsaken; struck down, but not destroyed--",
         ],
@@ -7901,13 +7670,13 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فالموت إذن يعملُ فينا، والحياةُ فيكُم. فإذ فينا رُوحُ الإيمان الواحد، كما هُو مكتُوب ' آمنتُ ولذلك تكلَّمت '، فنحنُ أيضاً نُؤمنُ ولذلك نتكلَّمُ. لعِلمنا بأنَّ الذي أقام الربَّ يسوعَ سَـيُقيمُنا نحنُ بيســوعَ،",
+            "فالموت إذن يعملُ فينا، والحياةُ فيكُم. فإذ فينا رُوحُ الإيمان الواحد، كما هُو مكتُوب ' آمنتُ ولذلك تكلَّمت '، فنحنُ أيضاً نُؤمنُ ولذلك نتكلَّمُ. لعِلمنا بأنَّ الذي أقام الربَّ يسوعَ سَ-يُقيمُنا نحنُ بيس--وعَ،",
             "12 Ainsi la mort est à l'oeuvre en nous, mais la vie en vous. Pourtant, forts de ce même esprit de foi dont il est écrit: J'ai cru, c'est pourquoi j'ai parlé, nous croyons, nous aussi, et c'est pourquoi nous parlons. Car nous le savons, celui qui a ressuscité le Seigneur Jésus, nous ressuscitera nous aussi avec Jésus",
             "12 So then death is working in us, but life in you. 13 And since we have the same spirit of faith, according to what is written, I believed and therefore I spoke, we also believe and therefore speak, 14 knowing that He who raised up the Lord Jesus will also raise us up with Jesus,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ويوقفنا معكُـم. لأنَّ جميعَ الأشـياء هيَ مِـن أجلكُم، لكي تتكاثر النِّعمة، لتجعل الشُّكر يتزايد مِن كثيرين لمجدِ اللَّـهِ. ولذلكَ لسنا نَفشلُ، بل وإن كانَ إنسانُنا الخارجُ يَفنَى، فإنسانُنا الدَّاخلُ يتجدَّدُ يوماً فيوماً.",
+            "ويوقفنا معكُ-م. لأنَّ جميعَ الأش-ياء هيَ مِ-ن أجلكُم، لكي تتكاثر النِّعمة، لتجعل الشُّكر يتزايد مِن كثيرين لمجدِ اللَّ-هِ. ولذلكَ لسنا نَفشلُ، بل وإن كانَ إنسانُنا الخارجُ يَفنَى، فإنسانُنا الدَّاخلُ يتجدَّدُ يوماً فيوماً.",
             "et il nous placera avec vous près de lui. Et tout ce que nous vivons, c'est pour vous, afin qu'en s'accroissant la grâce fasse surabonder, par une communauté accrue, l'action de grâce à la gloire de Dieu. C'est pourquoi nous ne perdons pas courage et même si, en nous, l'homme extérieur va vers sa ruine, l'homme intérieur se renouvelle de jour en jour.",
             "and will present us with you. 15 For all things are for your sakes, that grace, having spread through the many, may cause thanksgiving to abound to the glory of God. 16 Therefore we do not lose heart. Even though our outward man is perishing, yet the inward man is being renewed day by day.",
         ],
@@ -7921,7 +7690,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL49&C=Title",
-            " رسالة بولس الرسول الثانية إلى تلميذه تيموثاوس( 3 : ـ 4 :1 ـ 5 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى تلميذه تيموثاوس( 3 : - 4 :1 - 5 )",
             "2 Timothée 3:1 - 4:1-5",
             "2 Timothy 3:1-4:5",
         ],
@@ -7945,7 +7714,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وكما أن يَناس وينبـراس قاوما موسى، كذلك هؤلاء أيضاً يُقاوِمونَ الحقَّ. أُناسٌ آراؤهم فاسدةٌ مرذولةٌ مِن جهةِ الإيمانِ. لكِنَّهُمْ لا يَتقدَّمونَ أكثرَ، لأنَّ حُمقَهُمْ سيكونُ واضِحاً للجميع، كما كان حُمْقُ ذَيْنِكَ أيضاً.",
+            "وكما أن يَناس وينب-راس قاوما موسى، كذلك هؤلاء أيضاً يُقاوِمونَ الحقَّ. أُناسٌ آراؤهم فاسدةٌ مرذولةٌ مِن جهةِ الإيمانِ. لكِنَّهُمْ لا يَتقدَّمونَ أكثرَ، لأنَّ حُمقَهُمْ سيكونُ واضِحاً للجميع، كما كان حُمْقُ ذَيْنِكَ أيضاً.",
             "8 De même que Jannès et Jambrès s'opposèrent à Moïse, ainsi ces gens-là s'opposent à la vérité, ce sont des hommes à l'esprit perverti, à la foi inconsistante. Mais ils n'iront pas plus avant, car leur folie deviendra manifeste pour tous, comme le devint celle de ces deux-là.",
             "8 Now as Jannes and Jambres resisted Moses, so do these also resist the truth: men of corrupt minds, disapproved concerning the faith; 9 but they will progress no further, for their folly will be manifest to all, as theirs also was.",
         ],
@@ -7957,7 +7726,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وجميع الذينَ يريدون أن يعيشوا بالتَّقوى في المسيح يسوع يُضطهـدون. ولكن النَّاس الأشرار الخـدَّاعين سيتقدَّمون فـي الشَّـرِّ، بالأكثر ضالِّين ومُضِلِّينَ. وأمَّا أنتَ فاثبُت على ما تعلَّمته وأُئتمنت عليه، عارفاً ممَّن تعلَّمت.",
+            "وجميع الذينَ يريدون أن يعيشوا بالتَّقوى في المسيح يسوع يُضطه-دون. ولكن النَّاس الأشرار الخ-دَّاعين سيتقدَّمون ف-ي الشَّ-رِّ، بالأكثر ضالِّين ومُضِلِّينَ. وأمَّا أنتَ فاثبُت على ما تعلَّمته وأُئتمنت عليه، عارفاً ممَّن تعلَّمت.",
             "12 D'ailleurs tous ceux qui veulent vivre avec piété dans le Christ Jésus seront persécutés. Quant aux hommes mauvais et aux imposteurs, ils progresseront dans le mal, trompant les autres et trompés eux-mêmes. demeure ferme dans ce que tu as appris et accepté comme certain: tu sais de qui tu l'as appris.",
             "12 Yes, and all who desire to live godly in Christ Jesus will suffer persecution. 13 But evil men and impostors will grow worse and worse, deceiving and being deceived. 14 But you must continue in the things which you have learned and been assured of, knowing from whom you have learned them,",
         ],
@@ -7989,9 +7758,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL4&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 9 : 14 - 29 )",
-            "Romains 9 : 15 – 29",
-            "Romans 9:14-29",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 9 : 14 - 29 )",
+            "Romains (9: 15–29)",
+            "Romans (9: 15–29)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -8019,7 +7788,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "استحضر بأناةٍ كثيرة آنيةَ غضبٍ مُهيَّأةً للهلاكِ. ولكي يُبين غِنَى مجدهِ على آنيةِ الرحمة التي سبقَ فهيأها للمـجدِ،",
+            "استحضر بأناةٍ كثيرة آنيةَ غضبٍ مُهيَّأةً للهلاكِ. ولكي يُبين غِنَى مجدهِ على آنيةِ الرحمة التي سبقَ فهيأها للم-جدِ،",
             "a supporté avec beaucoup de patience des vases de colère tout prêts pour la perdition, 23 et ceci afin de faire connaître la richesse de sa gloire envers des vases de miséricorde que, d'avance, il a préparés pour la gloire,",
             "endured with much longsuffering the vessels of wrath prepared for destruction, 23 and that He might make known the riches of His glory on the vessels of mercy, which He had prepared beforehand for glory",
         ],
@@ -8045,7 +7814,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL4thSunday&C=Title",
-            " بولس الرسول إلى أهل كورنثوس الثانية ( 6 : 2 ـ 13 )",
+            " بولس الرسول إلى أَهْلِ كورنثوس الثانية ( 6 : 2 - 13 )",
             "2 Corinthiens 6 : 2- 13",
             "2 Corinthians 6:2-13",
         ],
@@ -8063,7 +7832,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "في لُطف، في الرُّوح القُدُس، في محبَّة بلا رياء، في كلام الحقِّ، في قوَّة اللَّـهِ بأسلحة البِرِّ لليمين واليسار. بالمجد والهوان، ببركةٍ ولعنة، كمُضلِّين ونحنُ صادقون،",
+            "في لُطف، في الرُّوح القُدُس، في محبَّة بلا رياء، في كلام الحقِّ، في قوَّة اللَّ-هِ بأسلحة البِرِّ لليمين واليسار. بالمجد والهوان، ببركةٍ ولعنة، كمُضلِّين ونحنُ صادقون،",
             "la bonté, par l'Esprit Saint, l'amour sans feinte, 7 la parole de vérité, la puissance de Dieu, par les armes offensives et défensives de la justice, dans la gloire et le mépris, dans la mauvaise et la bonne réputation; tenus pour imposteurs et pourtant véridiques,",
             "by kindness, by the Holy Spirit, by sincere love, 7 by the word of truth, by the power of God, by the armor of righteousness on the right hand and on the left, 8 by honor and dishonor, by evil report and good report; as deceivers, and yet true;",
         ],
@@ -8083,7 +7852,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL50&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورنثوس( 2 : 1 ـ 8 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2 : 1 - 8 )",
             "1 Corinthiens 2 : 1-8",
             "1 Corinthians 2:1-8",
         ],
@@ -8115,9 +7884,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL5&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية(14:19-15:7)",
-            "Romains 14:19-15:7",
-            "Romans 14:19-15:7",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية(14:19-15:7)",
+            "Romains (14:19-15:7)",
+            "Romans (14:19-15:7)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -8159,7 +7928,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL5thSunday&C=Title",
-            " بولس الرسول إلى أهل أفسس( 6 : 10 ـ 24 )",
+            " بولس الرسول إلى أَهْلِ أفسس( 6 : 10 - 24 )",
             "Ephésiens 6 : 10 -24",
             "Ephesians 6:10-24",
         ],
@@ -8209,7 +7978,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL6&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس ( 4 : 16 -5 : 9)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس ( 4 : 16 -5 : 9)",
             "1 Corinthians 4:16-5:9",
             "1 Corinthians 4:16-5:9",
         ],
@@ -8239,7 +8008,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "باسم ربِّنا يسوع المسيح ـ إذ أنتُم وروحي معاً مُجتمعُون وقوَّة ربِّنا يسوع المسيح ـ يُسَلَّم مِثلُ هذا إلى الشَّيطان لِهَلاكِ الجسد، لكي تَخلُص الرُّوح في يوم ربنا يسوع المسيح.",
+            "باسم ربِّنا يسوع المسيح - إذ أنتُم وروحي معاً مُجتمعُون وقوَّة ربِّنا يسوع المسيح - يُسَلَّم مِثلُ هذا إلى الشَّيطان لِهَلاكِ الجسد، لكي تَخلُص الرُّوح في يوم ربنا يسوع المسيح.",
             "4 au nom du Seigneur Jésus, et avec son pouvoir, lors d'une assemblée où je serai spirituellement parmi vous, qu'un tel homme soit livré à Satan pour la destruction de sa chair, afin que l'esprit soit sauvé au jour du Seigneur.",
             "4 In the name of our Lord Jesus Christ, when you are gathered together, along with my spirit, with the power of our Lord Jesus Christ, 5 deliver such a one to Satan for the destruction of the flesh, that his spirit may be saved in the day of the Lord Jesus.",
         ],
@@ -8259,7 +8028,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL6thSunday&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل تسالونيكي( 2 : 1 ـ 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ تسالونيكي( 2 : 1 - 17 )",
             "2 Thessaloniciens 2:1-17",
             "2Thessalonians2:1-17",
         ],
@@ -8277,7 +8046,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لا يخدعنَّكُم أحدٌ على طريقةٍ ما، لأنَّهُ لابد أن يسبق الارتداد أوَّلاً، ويظهر إنسانُ الخطيئة، ابنُ الهلاك، المُعاند المُترَّفع فوق كُلِّ مَن يُدعى إلهاً أو معبُوداً، حتى إنَّهُ يجلسُ في هيكل اللَّـهِ مُظهراً نفسهُ أنَّهُ إلهٌ.",
+            "لا يخدعنَّكُم أحدٌ على طريقةٍ ما، لأنَّهُ لابد أن يسبق الارتداد أوَّلاً، ويظهر إنسانُ الخطيئة، ابنُ الهلاك، المُعاند المُترَّفع فوق كُلِّ مَن يُدعى إلهاً أو معبُوداً، حتى إنَّهُ يجلسُ في هيكل اللَّ-هِ مُظهراً نفسهُ أنَّهُ إلهٌ.",
             "3 Que personne ne vous séduise d'aucune manière. Il faut que vienne d'abord l'apostasie et que se révèle l'Homme de l'impiété, le Fils de la perdition, 4 celui qui se dresse et s'élève contre tout ce qu'on appelle dieu ou qu'on adore, au point de s'asseoir en personne dans le temple de Dieu et de proclamer qu'il est Dieu.",
             "3 Let no one deceive you by any means; for that Day will not come unless the falling away comes first, and the man of sin is revealed, the son of perdition, 4 who opposes and exalts himself above all that is called God or that is worshiped, so that he sits as God in the temple of God, showing himself that he is God.",
         ],
@@ -8295,7 +8064,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبكُلِّ خديعةِ الظُّلم، في الهالكين، لأنَّهُم لم يقبلُوا محبَّة الحقِّ حتى يخلُصُوا. ولذلك يُرسل اللَّـه إليهم عمل الضَّلال، حتى يُصدِّقُوا الكذب،",
+            "وبكُلِّ خديعةِ الظُّلم، في الهالكين، لأنَّهُم لم يقبلُوا محبَّة الحقِّ حتى يخلُصُوا. ولذلك يُرسل اللَّ-ه إليهم عمل الضَّلال، حتى يُصدِّقُوا الكذب،",
             "10 de prodiges trompeurs et par toutes les séductions de l'injustice pour ceux qui se perdent, faute d'avoir accueilli l'amour de la vérité qui les aurait sauvés. 11 C'est pourquoi Dieu leur envoie une puissance d'égarement qui les fait croire au mensonge,",
             "10 and with all unrighteous deception among those who perish, because they did not receive the love of the truth, that they might be saved. 11 And for this reason God will send them strong delusion, that they should believe the lie,",
         ],
@@ -8321,9 +8090,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL7&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 12 : 6 – 21 )",
-            "Romains 12 : 6-21",
-            "Romans 12:6-21",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 12 : 6 – 21 )",
+            "Romains (12: 6-21)",
+            "Romans (12: 6-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -8333,7 +8102,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وإن كان من يعزي فبطيب قلب والمُعطي فبصفاء النية، والمُدَبِّرُ فباجتهادٍ، والرَّاحمُ فبسـُرُورٍ.والمحبَّةُ فلتكُن بلا رياءٍ. وكُونُوا كارهين الشَّرَّ، مُلتصقين بالخير. وادِّينَ بعضُكُم بعضاً بالمحبَّة الأخويَّة، مُقدِّمين بعضُكُم بعضاً في الكرامة",
+            "وإن كان من يعزي فبطيب قلب والمُعطي فبصفاء النية، والمُدَبِّرُ فباجتهادٍ، والرَّاحمُ فبس-ُرُورٍ.والمحبَّةُ فلتكُن بلا رياءٍ. وكُونُوا كارهين الشَّرَّ، مُلتصقين بالخير. وادِّينَ بعضُكُم بعضاً بالمحبَّة الأخويَّة، مُقدِّمين بعضُكُم بعضاً في الكرامة",
             "8 Qu'il enseigne. Tel autre celui d'exhorter? Qu'il exhorte. Que celui qui donne le fasse sans calcul, celui qui préside, avec zèle, celui qui exerce la miséricorde, avec joie. Que l'amour soit sincère. Fuyez le mal avec horreur, attachez-vous au bien. Que l'amour fraternel vous lie d'une mutuelle affection; rivalisez d'estime réciproque.",
             "8 he who exhorts, in exhortation; he who gives, with liberality; he who leads, with diligence; he who shows mercy, with cheerfulness. 9 Let love be without hypocrisy. Abhor what is evil. Cling to what is good. 10 Be kindly affectionate to one another with brotherly love, in honor giving preference to one another;",
         ],
@@ -8365,7 +8134,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL7thSunday&C=Title",
-            " بولس الرسول إلى أهل كولوسي ( 3 : 5 ـ 17 )",
+            " بولس الرسول إلى أَهْلِ كُولُوسِي ( 3 : 5 - 17 )",
             "Colossiens 3 : 5-17",
             "Colossians 3:5-17",
         ],
@@ -8415,13 +8184,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL8&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية (12:1-21)",
-            "Romains 12:1-21",
-            "Romans 12:1-21",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (12:1-21)",
+            "Romains (12: 1-21)",
+            "Romans (12: 1-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فأطلب إليكم يا إخوتي برأفات اللَّه أن تقدموا أجسادكم ذبيحة حية مقدسة مرضية للَّـه عبادتكم العقلية ترضيه ولا تشاكلوا هذا الدهر",
+            "فأطلب إليكم يا إخوتي برأفات اللَّه أن تقدموا أجسادكم ذبيحة حية مقدسة مرضية للَّ-ه عبادتكم العقلية ترضيه ولا تشاكلوا هذا الدهر",
             "Je vous exhorte donc, frères, au nom de la miséricorde de Dieu, à vous offrir vous-mêmes en sacrifice vivant, saint et agréable à Dieu: ce sera là votre culte spirituel. Ne vous conformez pas au monde présent,",
             "12:1 I beseech you therefore, brethren, by the mercies of God, that you present your bodies a living sacrifice, holy, acceptable to God, which is your reasonable service. 2 And do not be conformed to this world,",
         ],
@@ -8433,7 +8202,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كما قسم اللَّـه لكل واحـد مقداراً مِنَ الإيمان فإنه كما لنا في جسد واحد أعضاء كثيرة ولكن ليس جميع الأعضاء لها عمل واحد هكذا أيضاً نحن الكثيرين جسد واحد في المسيح وكل واحد منا أعضاء بعضاً",
+            "كما قسم اللَّ-ه لكل واح-د مقداراً مِنَ الإيمان فإنه كما لنا في جسد واحد أعضاء كثيرة ولكن ليس جميع الأعضاء لها عمل واحد هكذا أيضاً نحن الكثيرين جسد واحد في المسيح وكل واحد منا أعضاء بعضاً",
             "pour n'être pas prétentieux, chacun selon la mesure de foi que Dieu lui a donnée en partage. En effet, comme nous avons plusieurs membres en un seul corps et que ces membres n'ont pas tous la même fonction, ainsi, à plusieurs, nous sommes un seul corps en Christ, étant tous membres les uns des autres, chacun pour sa part.",
             "as God has dealt to each one a measure of faith. 4 For as we have many members in one body, but all the members do not have the same function, 5 so we, being many, are one body in Christ, and individually members of one another.",
         ],
@@ -8477,7 +8246,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL8thSunday&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين( 9 : 11 ـ 28 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين( 9 : 11 - 28 )",
             "Hébreux 9: 11-28",
             "Hebrews 9:11-28",
         ],
@@ -8525,7 +8294,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فالضرورة داعية إلى أن تَتَطهَّر أمثلة الأشياء التي في السَّمَوات بهذه الأمور، فأمَّا السَّماويَّات، فبضحايا أجل من هذه قـدراً. لأنَّ المسيح لمْ يَدخُلْ إلى المقادس المصنوعة بالأيادي التي هيَ أشباه المقادس الحقيقية، بل إلى السَّماء نفسها",
+            "فالضرورة داعية إلى أن تَتَطهَّر أمثلة الأشياء التي في السَّمَوات بهذه الأمور، فأمَّا السَّماويَّات، فبضحايا أجل من هذه ق-دراً. لأنَّ المسيح لمْ يَدخُلْ إلى المقادس المصنوعة بالأيادي التي هيَ أشباه المقادس الحقيقية، بل إلى السَّماء نفسها",
             "23 Si donc les images de ce qui est dans les cieux sont purifiées par ces rites, il est nécessaire que les réalités célestes elles-mêmes le soient par des sacrifices bien meilleurs.24 Ce n'est pas, en effet, dans un sanctuaire fait de main d'homme, simple copie du véritable, que Christ est entré, mais dans le ciel même,",
             "23 Therefore it was necessary that the copies of the things in the heavens should be purified with these, but the heavenly things themselves with better sacrifices than these.24 For Christ has not entered the holy places made with hands, which are copies of the true, but into heaven itself,",
         ],
@@ -8551,7 +8320,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl10&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 1 : 11 – 13 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 1 : 11 – 13 )",
             "Romans 1:11-13",
             "Romans 1:11-13",
         ],
@@ -8571,7 +8340,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl11&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 1 : 16 – 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 1 : 16 – 17 )",
             "Romans 1:16-17",
             "Romans 1:16-17",
         ],
@@ -8585,7 +8354,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl12&C=Title",
-            " رسالة بولس الرسول إلى رومية ( 1 : 19 – 21 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى رُومِيَّة ( 1 : 19 – 21 )",
             "Romans 1:19-21",
             "Romans 1:19-21",
         ],
@@ -8605,7 +8374,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl13&C=Title",
-            " رسالة بولس الرسول الثانية إلى أهل تيطس الثانية ( 2 : 8 – 15 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ تيطس الثانية ( 2 : 8 – 15 )",
             "2 Timothy 2:8-15",
             "2 Timothy 2:8-15",
         ],
@@ -8637,7 +8406,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl15&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 2 : 4 - 7 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 2 : 4 - 7 )",
             "Romans 2:4-7",
             "Romans 2:4-7",
         ],
@@ -8657,9 +8426,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl16&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (2:8-13)",
-            "Romains 2:8-13",
-            "Romans 2:8-13",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (2:8-13)",
+            "Romains (2: 8-13)",
+            "Romans (2: 8-13)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -8683,7 +8452,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl17&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية( 2 : 14 - 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية( 2 : 14 - 16 )",
             "Romans 2:14-16",
             "Romans 2:14-16",
         ],
@@ -8703,7 +8472,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl18&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 2 : 17 - 20 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 2 : 17 - 20 )",
             "Romans 2:17-20",
             "Romans 2:17-20",
         ],
@@ -8723,7 +8492,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl19&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 2 : 25 – 29 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 2 : 25 – 29 )",
             "Romans 2:25-29",
             "Romans 2:25-29",
         ],
@@ -8749,7 +8518,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl1&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل تسالونيكى( 4: 13-5:11 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ تسالونيكى( 4: 13-5:11 )",
             "1 Thessaloniciens 4:13-5:1-11",
             "1 Thessalonians 4:13-5:11",
         ],
@@ -8805,7 +8574,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl1stSunday&C=Title",
-            "رسالة بولس الرسول إلى أهل أفسس (4: 20ـ32)",
+            "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (4: 20-32)",
             "Éphisiens (4: 20-32)",
             "Ephisians (4: 20-32)",
         ],
@@ -8821,12 +8590,7 @@ ReadingsArrays.StPaulArray = [[
             "25 Vous voilà donc débarrassés du mensonge: que chacun dise la vérité à son prochain, car nous sommes membres les uns des autres. 26 Étés-vous en colère? ne péchez pas; que le soleil ne se couche pas sur votre ressentiment. 27 Ne donnez aucune prise au diable. 28 Celui qui volait, qu'il cesse de voler; qu'il prenne plutôt la peine de travailler honnêtement de ses mains, afin d'avoir de quoi partager avec celui qui est dans le besoin.",
             "25 Therefore, putting away lying, Let each one of you speak truth with his neighbor, for we are members of one another. 26 Be angry, and do not sin: do not let the sun go down on your wrath, 27 nor give place to the devil. 28 Let him who stole steal no longer, but rather let him labor, working with his hands what is good, that he may have something to give him who has need.",
         ],
-        [
-            Prefix.same + "&C=NoActor",
-            "",
-            "",
-            "",
-        ],
+        [Prefix.same + "&C=NoActor", "", "", ""],
         [
             Prefix.same + "&C=NoActor",
             "لاَ تَخْرُجْ كَلِمَةٌ رَدِيَّةٌ مِنْ أَفْوَاهِكُمْ، بَلْ كُلُّ مَا كَانَ صَالِحًا لِلْبُنْيَانِ، حَسَبَ الْحَاجَةِ، كَيْ يُعْطِيَ نِعْمَةً لِلسَّامِعِينَ وَلاَ تُحْزِنُوا رُوحَ اللهِ الْقُدُّوسَ الَّذِي بِهِ خُتِمْتُمْ لِيَوْمِ الْفِدَاء.",
@@ -8843,7 +8607,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl20&C=Title",
-            " رسالة بولس الرسول إلى أهل غلاطية ( 3 : 5 - 11 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية ( 3 : 5 - 11 )",
             "Galantins 3:5-11",
             "Galatians 3:5-11",
         ],
@@ -8875,7 +8639,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl22&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 4 : 4 - 8 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 4 : 4 - 8 )",
             "Romans 4:4-8",
             "Romans 4:4-8",
         ],
@@ -8895,9 +8659,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl23&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (3:19-21)",
-            "Romains 3:19-21",
-            "Romans 3:19-21",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (3:19-21)",
+            "Romains (3: 19-21)",
+            "Romans (3: 19-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -8915,7 +8679,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl24&C=Title",
-            " رسالة بولس الرسول إلى أهل افسس ( 2 : 13 - 18 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ افسس ( 2 : 13 - 18 )",
             "Ephesians 2:13-18",
             "Ephesians 2:13-18",
         ],
@@ -8941,7 +8705,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl25&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية (3:21-26)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (3:21-26)",
             "Romans 3:21-26",
             "Romans 3:21-26",
         ],
@@ -8967,7 +8731,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl26&C=Title",
-            " رسالة بولس الرسول إلى رومية ( 3 : 27 – 31 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى رُومِيَّة ( 3 : 27 – 31 )",
             "Romans 3:27-31",
             "Romans 3:27-31",
         ],
@@ -8987,7 +8751,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl27&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس ( 1 : 1 – 14 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 1 : 1 – 14 )",
             "Ephesians 1:1-14",
             "Ephesians 1:1-14",
         ],
@@ -9030,34 +8794,8 @@ ReadingsArrays.StPaulArray = [[
     ],
     [
         [
-            Prefix.stPaul + "&D=Pntl29&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 4 : 4 - 9 )",
-            "Romans 4:4-9",
-            "Romans 4:4-9",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اما الذي يعمل فلا تحسب له الاجرة على سبيل نعمة بل على سبيل دين. واما الذي لا يعمل ولكن يؤمن بالذي يبرر الفاجر فايمانه يحسب له برا.",
-            "4 Or, à celui qui accomplit des oeuvres, le salaire n'est pas compté comme une grâce, mais comme un dû. Par contre, à celui qui n'accomplit pas d'oeuvres mais croit en celui qui justifie l'impie, sa foi est comptée comme justice.",
-            "4 Now to him who works, the wages are not counted as grace but as debt. 5 But to him who does not work but believes on Him who justifies the ungodly, his faith is accounted for righteousness,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كما يقول داود ايضا في تطويب الانسان الذي يحسب له الله برا بدون اعمال.طوبى للذين غفرت آثامهم وسترت خطاياهم.",
-            "6 C'est ainsi que David célèbre le bonheur de l'homme au compte duquel Dieu porte la justice indépendamment des oeuvres: Heureux ceux dont les offenses ont été pardonnées et les péchés remis,",
-            "6 just as David also describes the blessedness of the man to whom God imputes righteousness apart from works: 7 Blessed are those whose lawless deeds are forgiven, And whose sins are covered;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "طوبى للرجل الذي لا يحسب له الرب خطية. أفهذا التطويب هو على الختان فقط ام على الغرلة ايضا. لاننا نقول انه حسب لابراهيم الايمان برا.",
-            "8 Heureux l'homme au compte de qui le Seigneur ne porte pas le péché. 9 Cette déclaration de bonheur ne concerne-t-elle donc que les circoncis? Nous disons en effet: la foi d'Abraham lui fut comptée comme justice.",
-            "8 Blessed is the man to whom the Lord shall not impute sin. 9 Does this blessedness then come upon the circumcised only, or upon the uncircumcised also? For we say that faith was accounted to Abraham for righteousness.",
-        ],
-    ],
-    [
-        [
             Prefix.stPaul + "&D=Pntl2ndSunday&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس (2:19-3:10 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (2:19-3:10 )",
             "Éphésiens 2:19-22 - 3:1-9",
             "Ephesians 2:19-3:10",
         ],
@@ -9101,9 +8839,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl2&C=Title",
-            " رسالة بولس الرسول الى أهل رومية ( 5 : 6 : 21 )",
-            "Romains 5 : 6 à la fin.",
-            "Romans 5:6-21",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة ( 5 : 6 : 21 )",
+            "Romains (5: 6-21)",
+            "Romans (5: 6-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9169,9 +8907,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl30&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (4:9-12)",
-            "Romains 4:9-12",
-            "Romans 4:9-12",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (4:9-12)",
+            "Romains (4: 9-12)",
+            "Romans (4: 9-12)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9195,7 +8933,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl31&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 5 : 20 – 6 : 4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 5 : 20 – 6 : 4 )",
             "Romans 5:20-6:4",
             "Romans 5:20-6:4",
         ],
@@ -9221,7 +8959,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl32&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 6 : 5 : 11 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 6 : 5 : 11 )",
             "Romans 6:5-11",
             "Romans 6:5-11",
         ],
@@ -9247,7 +8985,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl33&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 6 : 17 – 22 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 6 : 17 – 22 )",
             "Romans 6:17-22",
             "Romans 6:17-22",
         ],
@@ -9279,7 +9017,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl34&C=Title",
-            " رسالة بولس الرسول إلى أهل العبرانيين ( 10 1 : 13 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين ( 10 1 : 13 )",
             "Hebrews 10:1-13",
             "Hebrews 10:1-13",
         ],
@@ -9329,9 +9067,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl36&C=Title",
-            " رسالة بولس الرسول إلى أهل رومبة ( 8 : 2 – 5 )",
-            "Romains 8:2-5",
-            "Romans 8:2-5",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومبة ( 8 : 2 – 5 )",
+            "Romains (8: 2-5)",
+            "Romans (8: 2-5)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9355,9 +9093,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl37&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (8:9-11)",
-            "Romains 8:9 - 11",
-            "Romans 8:9-11",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (8:9-11)",
+            "Romains (8: 9-11)",
+            "Romans (8: 9-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9375,9 +9113,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl38&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل رومية (7:1-8)",
-            "Romains 7:1-8",
-            "Romans 7:1-8",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ رُومِيَّة (7:1-8)",
+            "Romains (7: 1-8)",
+            "Romans (7: 1-8)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9419,7 +9157,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl39&C=Title",
-            " رسالة بولس الرسول إلى أهل تيموثاوس الأولى ( 3 : 13 – 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ تيموثاوس الأولى ( 3 : 13 – 16 )",
             "1 Timothée 3:13 - 16",
             "1 Timothy 3:13-16",
         ],
@@ -9445,7 +9183,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl3rdSunday&C=Title",
-            " بولس الرسول إلى أهل كولوسى ( 3 : 1 : 17 )",
+            " بولس الرسول إلى أَهْلِ كُولُوسِي ( 3 : 1 : 17 )",
             "Colossiens 3:1 - 17",
             "Colossians 3:1-17",
         ],
@@ -9501,7 +9239,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl3&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس (15 : 50 – 58 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس (15 : 50 – 58 )",
             "1 Corinthians 15:50-58",
             "1 Corinthians 15:50-58",
         ],
@@ -9539,7 +9277,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl40&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس (11:2-16)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس (11:2-16)",
             "1 Corinthians 11:2-16",
             "1 Corinthians 11:2-16",
         ],
@@ -9589,7 +9327,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl41&C=Title",
-            " رسالة بولس الرسول الى اهل افسس ( 4 : 8 – 16 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى اهل افسس ( 4 : 8 – 16 )",
             "Ephesians 4:8-16",
             "Ephesians 4:8-16",
         ],
@@ -9627,7 +9365,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl43&C=Title",
-            " رسالة بولس الرسول الى أهل رومية ( 8 : 12 - 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة ( 8 : 12 - 17 )",
             "Romans 8:12-17",
             "Romans 8:12-17",
         ],
@@ -9653,9 +9391,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl44&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (8:22 - 27 )",
-            "Romains 8:22 - 27",
-            "Romans 8:22-27",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (8:22 - 27 )",
+            "Romains (8: 22-27)",
+            "Romans (8: 22-27)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9685,9 +9423,9 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl45&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 8 : 28 – 39 )",
-            "Romains 8:28 - 39",
-            "Romans 8:28-39",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 8 : 28 – 39 )",
+            "Romains (8: 28-39)",
+            "Romans (8: 28-39)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -9729,7 +9467,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl46&C=Title",
-            " رسالة بولس الرسول إلى أهل كورونثوس الأولى ( 14 : 5-11)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كورونثوس الأولى ( 14 : 5-11)",
             "1 Corinthiens 14:5-11",
             "1 Corinthians 14:5-11",
         ],
@@ -9761,7 +9499,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl47&C=Title",
-            " رسالة بولس الرسول الأولى إلى أهل كورونثوس ( 14 : 12 – 17 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورونثوس ( 14 : 12 – 17 )",
             "1 Corinthians 14:12-17",
             "1 Corinthians 14:12-17",
         ],
@@ -9787,7 +9525,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl48&C=Title",
-            " رسالة بولس الرسول الأولى الى اهل كورونثوس ( 12 : 31 - 14 : 4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الأولى الى اهل كورونثوس ( 12 : 31 - 14 : 4 )",
             "1 Corinthiens 13:1-13,14:4",
             "1 Corinthians 12:31-14:4",
         ],
@@ -9843,7 +9581,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl4&C=Title",
-            " رسالة بولس الرسول إلى أهل أفسس (1 : 15 – 2 :1 – 3 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (1 : 15 – 2 :1 – 3 )",
             "Éphésiens 1:15 - 2:1-3",
             "Ephesians 1:15-2:3",
         ],
@@ -9887,7 +9625,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl4thSunday&C=Title",
-            " بولس الرسول إلى أهل تسالونيكى الثانية ( 2 : 13 – 3 : 5 )",
+            " بولس الرسول إلى أَهْلِ تسالونيكى الثانية ( 2 : 13 – 3 : 5 )",
             "2 Thessaloniciens 2:13- 3:5",
             "2Thessalonians 2:13-3:5",
         ],
@@ -9925,7 +9663,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl5&C=Title",
-            " رسالة بولس الرسول إلى العبرانيين(13:10 - 21)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين(13:10 - 21)",
             "Hébreux 13:10 - 21",
             "Hebrews 13:10-21",
         ],
@@ -9969,7 +9707,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl5thSunday&C=Title",
-            " بولس الرسول إلى أهل العبرانيين( 10 :19 - 38)",
+            " بولس الرسول إلى أَهْلِ العبرانيين( 10 :19 - 38)",
             "Hébreux 10:19 - 38",
             "Hebrews 10:19-38",
         ],
@@ -10031,7 +9769,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl6&C=Title",
-            " رسالة بولس الرسول إلى أهل كولوسى ( 1 : 12 – 23 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي ( 1 : 12 – 23 )",
             "Colossiens 1:12-23",
             "Colossians 1:12-23",
         ],
@@ -10075,7 +9813,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl6thSunday&C=Title",
-            " بولس الرسول إلى أهل كورونثوس الأولى ( 15 : 57 – 16 : 8 )",
+            " بولس الرسول إلى أَهْلِ كورونثوس الأولى ( 15 : 57 – 16 : 8 )",
             "1Corinthiens15:57-16:8",
             "1 Corinthians 15:57-16:8",
         ],
@@ -10107,7 +9845,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl7thSunday&C=Title",
-            " رسالة بولس الرسول إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
             "1Corinthiens 12:1-21",
             "1Corinthians12:1-1",
         ],
@@ -10193,7 +9931,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl8&C=Title",
-            " رسالة بولس الرسول إلى أهل رومية ( 1 : 1 – 4 )",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 1 : 1 – 4 )",
             "Romans 1:1-4",
             "Romans 1:1-4",
         ],
@@ -10213,7 +9951,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl8thSunday&C=Title",
-            " رسالة بولس الرسول إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
             "1Corinthiens 12:1-21",
             "1Corinthians12:1-1",
         ],
@@ -10299,13 +10037,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=Pntl9&C=Title",
-            " رسالة بولس الرسول الى أهل رومية (1:7-10)",
-            "Romains 1:7 - 10",
-            "Romans 1:7-10",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة (1:7-10)",
+            "Romains (1: 7-10)",
+            "Romans (1: 7-10)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الى جميع الموجودين في رومية احباء الله مدعوين قديسين.نعمة لكم وسلام من الله ابينا والرب يسوع المسيح.اولا اشكر الهي بيسوع المسيح من جهة جميعكم ان ايمانكم ينادى به في كل العالم.",
+            "الى جميع الموجودين في رُومِيَّة احباء الله مدعوين قديسين.نعمة لكم وسلام من الله ابينا والرب يسوع المسيح.اولا اشكر الهي بيسوع المسيح من جهة جميعكم ان ايمانكم ينادى به في كل العالم.",
             "7 A tous les bien-aimés de Dieu qui sont à Rome, aux saints par l'appel de Dieu, à vous, grâce et paix de la part de Dieu notre Père et du Seigneur Jésus Christ. 8 Tout d'abord, je rends grâce à mon Dieu par Jésus Christ pour vous tous: dans le monde entier on proclame que vous croyez.",
             "7 To all who are in Rome, beloved of God, called to be saints: Grace to you and peace from God our Father and the Lord Jesus Christ. 8 First, I thank my God through Jesus Christ for you all, that your faith is spoken of throughout the whole world.",
         ],
@@ -10319,7 +10057,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=GL9thSunday&C=Title",
-            " رسالة بولس الرسول الاولى إلى أهل كورنثوس(15:23-50)",
+            " رِسَالَةِ بُولِسِ الرَسُولِ الاولى إلى أَهْلِ كورنثوس(15:23-50)",
             "1 Corinthiens 15:23-50",
             "1 Corinthians 15:23-50",
         ],
@@ -10393,13 +10131,13 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=022ndSunday&C=Title",
-            "رسالة بولس الرَّسول الثانية إلى أهل كورنثوس (4: 5ـ15)",
+            "رسالة بولس الرَّسول الثانية إلى أَهْلِ كورنثوس (4: 5-15)",
             "2 Corinthiens (4: 5-15)",
             "2 Corinthians (4: 5-15)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فَإنَّنَا لَسْنَا نَكْرِزُ بِأَنْفُسِنَا، بَلْ بِالْمَسِيحِ يَسُوعَ رَبِّنَا، وَنَحْنُ أيْضاً عَبِيدٌ لَكُمْ مِنْ قِبَلِ يَسُوعَ؛ لأنَّ اللَّهَ الَّذِي قَالَ: \" أنْ يُشْرِقَ نُورٌ مِنْ ظُلْمَةٍ \"، هُوَ الَّذِي أَضَاءَ في قُلُوبِنَا، نُورَ مَعْرِفَةِ مَجْدِ اللَّهِ بِوَجْهِ يَسُوعَ الْمَسِيحِ.",
+            'فَإنَّنَا لَسْنَا نَكْرِزُ بِأَنْفُسِنَا، بَلْ بِالْمَسِيحِ يَسُوعَ رَبِّنَا، وَنَحْنُ أيْضاً عَبِيدٌ لَكُمْ مِنْ قِبَلِ يَسُوعَ؛ لأنَّ اللَّهَ الَّذِي قَالَ: " أنْ يُشْرِقَ نُورٌ مِنْ ظُلْمَةٍ "، هُوَ الَّذِي أَضَاءَ في قُلُوبِنَا، نُورَ مَعْرِفَةِ مَجْدِ اللَّهِ بِوَجْهِ يَسُوعَ الْمَسِيحِ.',
             "5 Nous ne nous prêchons pas nous-mêmes ; c'est le Christ-Jésus, le Seigneur, que nous prêchons, et nous nous disons vos serviteurs à cause de Jésus. 6 Car Dieu qui a dit : La lumière brillera du sein des ténèbres ! a brillé dans nos cœurs pour faire resplendir la connaissance de la gloire de Dieu sur la face de Christ.",
             "5 For we do not preach ourselves, but Christ Jesus the Lord, and ourselves your bondservants for Jesus’ sake. 6 For it is the God who commanded light to shine out of darkness, who has shone in our hearts to give the light of the knowledge of the glory of God in the face of Jesus Christ.",
         ],
@@ -10417,7 +10155,7 @@ ReadingsArrays.StPaulArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وَفِينَا هَذَا الرَّوحُ الَّذِي لِلإيمَانِ، حَسَبَ الْمَكْتُوبِ: \"آمَنْتُ لِذلِكَ تَكَلَّمْتُ\"، نَحْنُ أيْضاً نُؤْمِنُ وَلِذلِكَ نَتَكَلَّمُ. عَالِمِينَ أنَّ الَّذِي أَقَامَ الرَّبَّ يَسُوعَ سَيُقِيمُنَا نَحْنُ أيْضاً مَعَ يَسُوعَ، وَيُوقِفُنَا مَعَكُمْ.",
+            'وَفِينَا هَذَا الرَّوحُ الَّذِي لِلإيمَانِ، حَسَبَ الْمَكْتُوبِ: "آمَنْتُ لِذلِكَ تَكَلَّمْتُ"، نَحْنُ أيْضاً نُؤْمِنُ وَلِذلِكَ نَتَكَلَّمُ. عَالِمِينَ أنَّ الَّذِي أَقَامَ الرَّبَّ يَسُوعَ سَيُقِيمُنَا نَحْنُ أيْضاً مَعَ يَسُوعَ، وَيُوقِفُنَا مَعَكُمْ.',
             "13 Et comme nous avons le même esprit de foi, selon ce qui est écrit : J'ai cru, c'est pourquoi j'ai parlé ! nous aussi nous croyons, et c'est aussi pourquoi nous parlons, 14 sachant que celui qui a ressuscité le Seigneur Jésus nous ressuscitera aussi avec Jésus et nous fera paraître avec vous en sa présence.",
             "13 And since we have the same spirit of faith, according to what is written, “I believed and therefore I spoke,” we also believe and therefore speak, 14 knowing that He who raised up the Lord Jesus will also raise us up with Jesus, and will present us with you.",
         ],
@@ -10431,7 +10169,7 @@ ReadingsArrays.StPaulArray = [[
     [
         [
             Prefix.stPaul + "&D=024thSunday&C=Title",
-            "رسالة بولس الرَّسول الأولى إلى تيموثاوس (6: 3ـ21)",
+            "رسالة بولس الرَّسول الأولى إلى تيموثاوس (6: 3-21)",
             "1 Timothée (6: 3-21)",
             "1 Timothy (6: 3-21)",
         ],
@@ -10473,4 +10211,4 @@ ReadingsArrays.StPaulArray = [[
         ],
     ],
 ];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZVN0UGF1bEFycmF5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vbW9kdWxlcy9EZWNsYXJlU3RQYXVsQXJyYXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsY0FBYyxDQUFDLFdBQVcsR0FBRSxDQUFDO1FBQzNCO1lBQ0EsTUFBTSxDQUFDLE1BQU0sR0FBQyxpQkFBaUI7WUFDL0IsbUVBQW1FO1lBQ25FLDJCQUEyQjtZQUMzQix5QkFBeUI7U0FDeEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSUFBbUk7WUFDbkksME1BQTBNO1lBQzFNLG9KQUFvSjtTQUNuSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtIQUFrSDtZQUNsSCxzT0FBc087WUFDdE8sbUxBQW1MO1NBQ2xMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU1BQXlNO1lBQ3pNLDRNQUE0TTtZQUM1TSxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SEFBeUg7WUFDekgsbU5BQW1OO1lBQ25OLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyx1T0FBdU87WUFDdk8sMk5BQTJOO1NBQzFOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkxBQTZMO1lBQzdMLHFUQUFxVDtZQUNyVCx1U0FBdVM7U0FDdFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5R0FBeUc7WUFDekcsNk1BQTZNO1lBQzdNLDhJQUE4STtTQUM3STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSixzUEFBc1A7WUFDdFAsbU5BQW1OO1NBQ2xOO1FBQ0Q7WUFDQSxNQUFN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
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZVN0UGF1bEFycmF5LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vbW9kdWxlcy9EZWNsYXJlU3RQYXVsQXJyYXkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsY0FBYyxDQUFDLFdBQVcsR0FBRztJQUMzQjtRQUNFO1lBQ0UsTUFBTSxDQUFDLE1BQU0sR0FBRyxpQkFBaUI7WUFDakMsbUZBQW1GO1lBQ25GLDJCQUEyQjtZQUMzQix5QkFBeUI7U0FDMUI7UUFDRDtZQUNFLE1BQU0sQ0FBQyxJQUFJLEdBQUcsWUFBWTtZQUMxQixtSUFBbUk7WUFDbkksME1BQTBNO1lBQzFNLG9KQUFvSjtTQUNySjtRQUNEO1lBQ0UsTUFBTSxDQUFDLElBQUksR0FBRyxZQUFZO1lBQzFCLGtIQUFrSDtZQUNsSCxzT0FBc087WUFDdE8sbUxBQW1MO1NBQ3BMO1FBQ0Q7WUFDRSxNQUFNLENBQUMsSUFBSSxHQUFHLFlBQVk7WUFDMUIseU1BQXlNO1lBQ3pNLDRNQUE0TTtZQUM1TSxvTUFBb007U0FDck07UUFDRDtZQUNFLE1BQU0sQ0FBQyxJQUFJLEdBQUcsWUFBWTtZQUMxQix5SEFBeUg7WUFDekgsbU5BQW1OO1lBQ25OLHFNQUFxTTtTQUN0TTtRQUNEO1lBQ0UsTUFBTSxDQUFDLElBQUksR0FBRyxZQUFZO1lBQzFCLG1LQUFtSztZQUNuSyx1T0FBdU87WUFDdk8sMk5BQTJOO1NBQzVOO1FBQ0Q7WUFDRSxNQUFNLENBQUMsSUFBSSxHQUFHLFlBQVk7WUFDMUIsNkxBQTZMO1lBQzdMLHFUQUFxVDtZQUNyVCx1U0FBdVM7U0FDeFM7UUFDRDtZQUNFLE1BQU0sQ0FBQyxJQUFJLEdBQUcsWUFBWTtZQUMxQix5R0FBeUc7WUFDekcsNk1BQTZNO1lBQzdNLDhJQUE4STtTQUMvSTtRQUNEO1lBQ0UsTUFBTSxDQUFDLElBQUksR0FBRyxZQUFZO1lBQzFCLCtKQUErSjtZQUMvSixzUEFBc1A7WUFDdFAsbU5BQW1OO1NBQ3BOO1FBQ0Q7WUFDRSxNQUFN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

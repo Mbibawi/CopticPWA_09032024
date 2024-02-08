@@ -1,9 +1,10 @@
-ReadingsArrays.KatholikonArray = [[
+ReadingsArrays.KatholikonArray = [
+    [
         [
-            Prefix.katholikon + "&D=0101&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 17 )",
-            "1 Jean 2 : 7-17",
-            "1 John 2:7-17",
+            Prefix.katholikon + "&D=0101||043rdSunday||122ndSunday||Pntl1stSunday&C=Title",
+            "الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 7-17)",
+            "1 Jean (2: 7-17)",
+            "1 John (2: 7-17)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -14,7 +15,7 @@ ReadingsArrays.KatholikonArray = [[
         [
             Prefix.same + "&C=NoActor",
             "أيضاً وصيَّةً جديدةً أَكتُبُ إليكمْ، ما هو حقٌّ فيه وفيكُم، أنَّ الظُّلمةَ قد جازتْ، والنُّور الحقيقيَّ الآن يُضيءُ. مَنْ يقول أنَّهُ في النُّور وهو يُبغضُ أخاهُ، فهو إلى الآن في الظُّلمةِ.",
-            "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable.9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.",
+            "8 Néanmoins, c'est un commandement nouveau que je vous écris-cela est vrai en lui et en vous-puisque les ténèbres passent et que déjà luit la lumière véritable.9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.",
             "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.",
         ],
         [
@@ -38,7 +39,7 @@ ReadingsArrays.KatholikonArray = [[
         [
             Prefix.same + "&C=NoActor",
             "لا تحبُّوا العالمَ ولا الأشياءَ التي في العالمِ. إذ أحَبَّ أحدٌ العالمَ فليس فيه مَحبَّةُ الآبِ. لأنَّ كُلَّ ما في العالمِ: شهوةَ الجسدِ، وشهوةَ العُيونِ، وتَعظُّمَ المعيشةِ، فهذه ليست من الآبِ بل مِنْ العالمِ.",
-            "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.",
+            "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, puisque tout ce qui est dans le monde-la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.",
             "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.",
         ],
         [
@@ -50,27 +51,105 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=011stSunday&C=Title",
-            " من رسالة يعقوب الرسول( 1 : 22 ـ 27 )",
-            "Jacques 1:22-27",
+            Prefix.katholikon + "&D=Jonah1||1203&C=Title",
+            "الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1: 1-13)",
+            "Jude (1: 1-13)",
+            "Jude (1: 1-13)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "يَهُوذَا، عَبْدُ يَسُوعَ الْمَسِيحِ، وَأَخُو يَعْقُوبَ، إِلَى الْمَدْعُوِّينَ الْمُقَدَّسِينَ فِي اللهِ الآبِ، وَالْمَحْفُوظِينَ لِيَسُوعَ الْمَسِيحِ: لِتَكْثُرْ لَكُمُ الرَّحْمَةُ وَالسَّلاَمُ وَالْمَحَبَّةُ أَيُّهَا الأَحِبَّاءُ، إِذْ كُنْتُ أَصْنَعُ كُلَّ الْجَهْدِ لأَكْتُبَ إِلَيْكُمْ عَنِ الْخَلاَصِ الْمُشْتَرَكِ، اضْطُرِرْتُ أَنْ أَكْتُبَ إِلَيْكُمْ وَاعِظًا أَنْ تَجْتَهِدُوا لأَجْلِ الإِيمَانِ الْمُسَلَّمِ مَرَّةً لِلْقِدِّيسِينَ، لأَنَّهُ دَخَلَ خُلْسَةً أُنَاسٌ قَدْ كُتِبُوا مُنْذُ الْقَدِيمِ لِهذِهِ الدَّيْنُونَةِ، فُجَّارٌ، يُحَوِّلُونَ نِعْمَةَ إِلهِنَا إِلَى الدَّعَارَةِ، وَيُنْكِرُونَ السَّيِّدَ الْوَحِيدَ: اللهَ وَرَبَّنَا يَسُوعَ الْمَسِيحَ.",
+            "01 Jude, serviteur de Jésus Christ et frère de Jacques, aux appelés qui sont aimés de Dieu le Père et gardés pour Jésus Christ : 02 que la miséricorde, la paix et l’amour vous soient accordés en abondance. 03 Bien-aimés, j’avais la ferme intention de vous écrire au sujet du salut qui nous est commun ; or me voici dans l’obligation de le faire pour vous exhorter à combattre pour la foi qui a été transmise aux fidèles une fois pour toutes. 04 Car il s’est infiltré parmi vous des individus, qui sont marqués depuis longtemps en vue de ce jugement, des impies qui tournent la grâce de notre Dieu en prétexte à la débauche, et qui renient notre seul maître et Seigneur, Jésus Christ.",
+            "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you. 3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints. 4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "فَأُرِيدُ أَنْ أُذَكِّرَكُمْ، وَلَوْ عَلِمْتُمْ هذَا مَرَّةً، أَنَّ الرَّبَّ بَعْدَمَا خَلَّصَ الشَّعْبَ مِنْ أَرْضِ مِصْرَ، أَهْلَكَ أَيْضًا الَّذِينَ لَمْ يُؤْمِنُوا وَالْمَلاَئِكَةُ الَّذِينَ لَمْ يَحْفَظُوا رِيَاسَتَهُمْ، بَلْ تَرَكُوا مَسْكَنَهُمْ حَفِظَهُمْ إِلَى دَيْنُونَةِ الْيَوْمِ الْعَظِيمِ بِقُيُودٍ أَبَدِيَّةٍ تَحْتَ الظَّلاَمِ، كَمَا أَنَّ سَدُومَ وَعَمُورَةَ وَالْمُدُنَ الَّتِي حَوْلَهُمَا، إِذْ زَنَتْ عَلَى طَرِيق مِثْلِهِمَا، وَمَضَتْ وَرَاءَ جَسَدٍ آخَرَ، جُعِلَتْ عِبْرَةً مُكَابِدَةً عِقَابَ نَارٍ أَبَدِيَّةٍ.",
+            "05 Bien que vous sachiez déjà tout cela, je veux néanmoins vous le rappeler : le Seigneur, qui avait sauvé une fois pour toutes son peuple en le faisant sortir du pays d’Égypte, a pourtant supprimé ensuite ceux qui ont refusé de croire ; 06 quant aux anges qui n’ont pas gardé la dignité de leur rang, mais ont quitté la demeure qui était la leur, le Seigneur les maintient enchaînés à perpétuité dans les ténèbres en vue du jugement du grand jour ; 07 il en va de même pour Sodome et Gomorrhe et les villes d’alentour : elles s’étaient livrées à la prostitution d’une manière semblable à ces anges-là et elles étaient allées avec des êtres d’une autre nature ; elles sont soumises pour l’exemple au châtiment du feu éternel.",
+            "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "وَلكِنْ كَذلِكَ هؤُلاَءِ أَيْضًا، الْمُحْتَلِمُونَ، يُنَجِّسُونَ الْجَسَدَ، وَيَتَهَاوَنُونَ بِالسِّيَادَةِ، وَيَفْتَرُونَ عَلَى ذَوِي الأَمْجَادِ. وَأَمَّا مِيخَائِيلُ رَئِيسُ الْمَلاَئِكَةِ، فَلَمَّا خَاصَمَ إِبْلِيسَ مُحَاجًّا عَنْ جَسَدِ مُوسَى، لَمْ يَجْسُرْ أَنْ يُورِدَ حُكْمَ افْتِرَاءٍ، بَلْ قَالَ: \"لِيَنْتَهِرْكَ الرَّبُّ\". وَلكِنَّ هؤُلاَءِ يَفْتَرُونَ عَلَى مَا لاَ يَعْلَمُونَ وَأَمَّا مَا يَفْهَمُونَهُ بِالطَّبِيعَةِ، كَالْحَيَوَانَاتِ غَيْرِ النَّاطِقَةِ، فَفِي ذلِكَ يَفْسُدُونَ. ",
+            "08 Et pourtant, ces coureurs de songes font la même chose : ils souillent la chair, ils méprisent la seigneurie de Dieu, ils outragent les anges appelés Gloires. 09 Or l’archange Michel, discutant avec le démon dans la querelle au sujet du corps de Moïse, n’osa pas porter contre lui un jugement qui l’outrage ; il lui dit seulement : « Que le Seigneur te blâme ! » 10 Eux, au contraire, tout ce qu’ils ne connaissent pas, ils l’outragent ; et tout ce qu’ils savent les corrompt, car ils ne le saisissent que par l’instinct, comme des bêtes privées de raison.",
+            "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries. 9 Yet Michael the archangel, in contending with the devil, when he disputed about the body of Moses, dared not bring against him a reviling accusation, but said, \"The Lord rebuke you!'' 10 But these speak evil of whatever they do not know; and whatever they know naturally, like brute beasts, in these things they corrupt themselves.",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "وَيْلٌ لَهُمْ لأَنَّهُمْ سَلَكُوا طَرِيقَ قَايِينَ، وَانْصَبُّوا إِلَى ضَلاَلَةِ بَلْعَامَ لأَجْلِ أُجْرَةٍ، وَهَلَكُوا فِي مُشَاجَرَةِ قُورَحَ هؤُلاَءِ صُخُورٌ فِي وَلاَئِمِكُمُ الْمَحَبِّيَّةِ، صَانِعِينَ وَلاَئِمَ مَعًا بِلاَ خَوْفٍ، رَاعِينَ أَنْفُسَهُمْ. غُيُومٌ بِلاَ مَاءٍ تَحْمِلُهَا الرِّيَاحُ. أَشْجَارٌ خَرِيفِيَّةٌ بِلاَ ثَمَرٍ مَيِّتَةٌ مُضَاعَفًا، مُقْتَلَعَةٌ. أَمْوَاجُ بَحْرٍ هَائِجَةٌ مُزْبِدَةٌ بِخِزْيِهِمْ. نُجُومٌ تَائِهَةٌ مَحْفُوظٌ لَهَا قَتَامُ الظَّلاَمِ إِلَى الأَبَدِ.",
+            "11 Malheureux sont-ils ! Ils sont partis sur le chemin de Caïn ; pour un salaire, ils se sont laissés emporter par l’égarement de Balaam ; ils ont péri par la même révolte que Coré. 12 Ces individus sont une souillure pour vos repas fraternels, ils font bombance sans pudeur, ils ne se préoccupent que d’eux-mêmes : nuages sans eau emportés par le vent ; arbres de fin d’automne sans fruits, deux fois morts, déracinés ; 13 flots sauvages de la mer, crachant l’écume de leur propre honte ; astres errants, pour lesquels est réservée à jamais l’obscurité des ténèbres.",
+            "11 Woe to them! For they have gone in the way of Cain, have run greedily in the error of Balaam for profit, and perished in the rebellion of Korah. 12 These are spots in your love feasts, while they feast with you without fear, serving only themselves. They are clouds without water, carried about by the winds; late autumn trees without fruit, twice dead, pulled up by the roots; 13 raging waves of the sea, foaming up their own shame; wandering stars for whom is reserved the blackness of darkness forever.",
+        ],
+    ],
+    [
+        [
+            Prefix.katholikon + "&D=Jonah2&C=Title",
+            "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (4: 3-11)",
+            "1 Pierre (4: 3-11)",
+            "1 Peter (4: 3-11)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّ زَمَانَ الْحَيَاةِ الَّذِي مَضَى يَكْفِينَا لِنَكُونَ قَدْ عَمِلْنَا إِرَادَةَ الأُمَمِ، سَالِكِينَ فِي الدَّعَارَةِ وَالشَّهَوَاتِ، وَإِدْمَانِ الْخَمْرِ، وَالْبَطَرِ، وَالْمُنَادَمَاتِ، وَعِبَادَةِ الأَوْثَانِ الْمُحَرَّمَةِ، الأَمْرُ الَّذِي فِيهِ يَسْتَغْرِبُونَ أَنَّكُمْ لَسْتُمْ تَرْكُضُونَ مَعَهُمْ إِلَى فَيْضِ هذِهِ الْخَلاَعَةِ عَيْنِهَا، مُجَدِّفِينَ الَّذِينَ سَوْفَ يُعْطُونَ حِسَابًا لِلَّذِي هُوَ عَلَى اسْتِعْدَادٍ أَنْ يَدِينَ الأَحْيَاءَ وَالأَمْوَاتَ.",
+            "03 Il a assez duré, le temps passé à faire ce que veulent les gens des nations, quand vous vous laissiez aller aux débauches, aux convoitises, à l’ivrognerie, aux orgies, aux beuveries et aux cultes interdits des idoles. 04 À ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers les mêmes débordements d’inconduite, et ils vous couvrent d’injures. 05 Ils auront des comptes à rendre à Celui qui se tient prêt à juger les vivants et les morts.",
             "",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كونوا عَامِلِينَ بالكلمةِ، لا سَامِعِينَ فقط خادِعِينَ نُفوسَكُم وحدَكُم. أنَّ مَنْ يَسمعُ الكلمةَ ولا يَعملُ بها، فهذا يُشبِهُ رَجُلاً نَاظِراً وَجهَ ولادتهِ في مرآةٍ، فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نسِيَ الهيئةَ التي كان فيها.",
-            "22 Pratiquez la parole et ne l’écoutez pas seulement, en vous abusant par de faux raisonnements. 23 Car si quelqu’un écoute la parole et ne la pratique pas, il est semblable à un homme qui regarde dans un miroir son visage naturel",
+            "فَإِنَّهُ لأَجْلِ هذَا بُشِّرَ الْمَوْتى أَيْضًا، لِكَيْ يُدَانُوا حَسَبَ النَّاسِ بِالْجَسَدِ، وَلكِنْ لِيَحْيَوْا حَسَبَ اللهِ بِالرُّوحِ.",
+            "06 C’est pour cela que l’Évangile a été annoncé aussi aux morts, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu dans l’Esprit.",
             "",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا مَنْ تَطلعَ في نَاموسِ الحُرِّيَّةِ الكامِلِ وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسياً بل مُمارِساً للعملِ، فهذا يَكونُ مَغبوطاً في ما يعملهُ. ومَن يَظنُّ في نفسهِ أنَّهُ دَيِّنٌ، ولا يُلجِمُ لِسَانَهُ، بل يَخدَعُ قَلبَهُ، فعِبادةُ هذا بَاطِلةٌ.",
-            "25 Mais celui qui a plongé les regards dans la loi parfaite, la loi de la liberté, et qui persévère, non pas en l’écoutant pour l’oublier, mais en la pratiquant activement, celui–là sera heureux dans son action même. 26 Si quelqu’un pense être religieux, sans tenir sa langue en bride, mais en trompant son cœur, la religion de cet homme est vaine.",
+            "وَإِنَّمَا نِهَايَةُ كُلِّ شَيْءٍ قَدِ اقْتَرَبَتْ، فَتَعَقَّلُوا وَاصْحُوا لِلصَّلَوَاتِ. وَلكِنْ قَبْلَ كُلِّ شَيْءٍ، لِتَكُنْ مَحَبَّتُكُمْ بَعْضِكُمْ لِبَعْضٍ شَدِيدَةً، لأَنَّ الْمَحَبَّةَ تَسْتُرُ كَثْرَةً مِنَ الْخَطَايَا.",
+            "07 La fin de toutes choses est proche. Soyez donc raisonnables et sobres en vue de la prière. 08 Avant tout, ayez entre vous une charité intense, car la charité couvre une multitude de péchés.",
             "",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا الدِّيانةُ الطَّاهِرَةُ غَيرُ الدنِسةِ عندَ اللهِ الآبِ هى هذه: افتِقادُ اليَتامَى والأرَامِلِ في ضِيقَتِهِم، وأنْ يحفظَ الإنسانُ نَفسَهُ مِنَ العالمِ بلا دَنَسٍ.",
-            "27 La religion pure et sans tache, devant Dieu le Père, consiste à visiter les orphelins et les veuves dans leurs afflictions, et à se garder des souillures du monde.",
+            "كُونُوا مُضِيفِينَ بَعْضُكُمْ بَعْضًا بِلاَ دَمْدَمَةٍ لِيَكُنْ كُلُّ وَاحِدٍ بِحَسَبِ مَا أَخَذَ مَوْهِبَةً، يَخْدِمُ بِهَا بَعْضُكُمْ بَعْضًا، كَوُكَلاَءَ صَالِحِينَ عَلَى نِعْمَةِ اللهِ الْمُتَنَوِّعَةِ: إِنْ كَانَ يَتَكَلَّمُ أَحَدٌ فَكَأَقْوَالِ اللهِ وَإِنْ كَانَ يَخْدِمُ أَحَدٌ فَكَأَنَّهُ مِنْ قُوَّةٍ يَمْنَحُهَا اللهُ، لِكَيْ يَتَمَجَّدَ اللهُ فِي كُلِّ شَيْءٍ بِيَسُوعَ الْمَسِيحِ، الَّذِي لَهُ الْمَجْدُ وَالسُّلْطَانُ إِلَى أَبَدِ الآبِدِينَ آمِينَ.\n",
+            "09 Pratiquez l’hospitalité les uns envers les autres sans récriminer. 10 Ce que chacun de vous a reçu comme don de la grâce, mettez-le au service des autres, en bons gérants de la grâce de Dieu qui est si diverse : 11 si quelqu’un parle, qu’il le fasse comme pour des paroles de Dieu ; celui qui assure le service, qu’il s’en acquitte comme avec la force procurée par Dieu. Ainsi, en tout, Dieu sera glorifié par Jésus Christ, à qui appartiennent la gloire et la souveraineté pour les siècles des siècles. Amen. ",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.katholikon + "&D=Jonah3||GL42||Pntl48&C=Title",
+            "الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2: 12-17)",
+            "1 Saint Jean (2: 12-17)",
+            "EN",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَوْلاَدُ، لأَنَّهُ قَدْ غُفِرَتْ لَكُمُ الْخَطَايَا مِنْ أَجْلِ اسْمِهِ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الآبَاءُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الَّذِي مِنَ الْبَدْءِ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَحْدَاثُ، لأَنَّكُمْ قَدْ غَلَبْتُمُ الشِّرِّيرَ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَوْلاَدُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الآبَ.",
+            "12 Je vous l’écris, petits enfants : Vos péchés vous sont remis à cause du nom de Jésus. 13 Je vous l’écris, parents : Vous connaissez celui qui existe depuis le commencement. Je vous l’écris, jeunes gens : Vous avez vaincu le Mauvais. 14 Je vous l’ai écrit, enfants : Vous connaissez le Père.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "كَتَبْتُ إِلَيْكُمْ أَيُّهَا الآبَاءُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الَّذِي مِنَ الْبَدْءِ. كَتَبْتُ إِلَيْكُمْ أَيُّهَا الأَحْدَاثُ، لأَنَّكُمْ أَقْوِيَاءُ، وَكَلِمَةُ اللهِ ثَابِتَةٌ فِيكُمْ، وَقَدْ غَلَبْتُمُ الشِّرِّيرَ.",
+            "Je vous l’ai écrit, parents : Vous connaissez celui qui existe depuis le commencement. Je vous l’ai écrit, jeunes gens : Vous êtes forts, la parole de Dieu demeure en vous, vous avez vaincu le Mauvais.",
+            "",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لاَ تُحِبُّوا الْعَالَمَ وَلاَ الأَشْيَاءَ الَّتِي فِي الْعَالَمِ إِنْ أَحَبَّ أَحَدٌ الْعَالَمَ فَلَيْسَتْ فِيهِ مَحَبَّةُ الآبِ لأَنَّ كُلَّ مَا فِي الْعَالَمِ: شَهْوَةَ الْجَسَدِ، وَشَهْوَةَ الْعُيُونِ، وَتَعَظُّمَ الْمَعِيشَةِ، لَيْسَ مِنَ الآبِ بَلْ مِنَ الْعَالَمِ وَالْعَالَمُ يَمْضِي وَشَهْوَتُهُ، وَأَمَّا الَّذِي يَصْنَعُ مَشِيئَةَ اللهِ فَيَثْبُتُ إِلَى الأَبَدِ.",
+            "15 N’aimez pas le monde, ni ce qui est dans le monde. Si quelqu’un aime le monde, l’amour du Père n’est pas en lui. 16 Tout ce qu’il y a dans le monde – la convoitise de la chair, la convoitise des yeux, l’arrogance de la richesse –, tout cela ne vient pas du Père, mais du monde. 17 Or, le monde passe, et sa convoitise avec lui. Mais celui qui fait la volonté de Dieu demeure pour toujours.",
+            "",
+        ],
+    ],
+    [
+        [
+            Prefix.katholikon + "&D=Jonah4&C=Title",
+            "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3: 17-22)",
+            "1 Saint Pierre (3: 17-22)",
+            "1 Peter (3: 17-22)",
+        ],
+        [
+            Prefix.same + "&C=NoActor",
+            "لأَنَّ تَأَلُّمَكُمْ إِنْ شَاءَتْ مَشِيئَةُ اللهِ، وَأَنْتُمْ صَانِعُونَ خَيْرًا، أَفْضَلُ مِنْهُ وَأَنْتُمْ صَانِعُونَ شَرًّا فَإِنَّ الْمَسِيحَ أَيْضًا تَأَلَّمَ مَرَّةً وَاحِدَةً مِنْ أَجْلِ الْخَطَايَا، الْبَارُّ مِنْ أَجْلِ الأَثَمَةِ، لِكَيْ يُقَرِّبَنَا إِلَى اللهِ، مُمَاتًا فِي الْجَسَدِ وَلكِنْ مُحْيىً فِي الرُّوحِ، الَّذِي فِيهِ أَيْضًا ذَهَبَ فَكَرَزَ لِلأَرْوَاحِ الَّتِي فِي السِّجْنِ، إِذْ عَصَتْ قَدِيمًا، حِينَ كَانَتْ أَنَاةُ اللهِ تَنْتَظِرُ مَرَّةً فِي أَيَّامِ نُوحٍ، إِذْ كَانَ الْفُلْكُ يُبْنَى، الَّذِي فِيهِ خَلَصَ قَلِيلُونَ، أَيْ ثَمَانِي أَنْفُسٍ بِالْمَاءِ الَّذِي مِثَالُهُ يُخَلِّصُنَا نَحْنُ الآنَ، أَيِ الْمَعْمُودِيَّةُ لاَ إِزَالَةُ وَسَخِ الْجَسَدِ، بَلْ سُؤَالُ ضَمِيرٍ صَالِحٍ عَنِ اللهِ، بِقِيَامَةِ يَسُوعَ الْمَسِيحِ، الَّذِي هُوَ فِي يَمِينِ اللهِ، إِذْ قَدْ مَضَى إِلَى السَّمَاءِ، وَمَلاَئِكَةٌ وَسَلاَطِينُ وَقُوَّاتٌ مُخْضَعَةٌ لَهُ.",
+            "17 Car mieux vaudrait souffrir en faisant le bien, si c’était la volonté de Dieu, plutôt qu’en faisant le mal. 18 Car le Christ, lui aussi, a souffert pour les péchés, une seule fois, lui, le juste, pour les injustes, afin de vous introduire devant Dieu ; il a été mis à mort dans la chair, mais vivifié dans l’Esprit. 19 C’est en lui qu’il est parti proclamer son message aux esprits qui étaient en captivité. 20 Ceux-ci, jadis, avaient refusé d’obéir, au temps où se prolongeait la patience de Dieu, quand Noé construisit l’arche, dans laquelle un petit nombre, en tout huit personnes, furent sauvées à travers l’eau. 21 C’était une figure du baptême qui vous sauve maintenant : le baptême ne purifie pas de souillures extérieures, mais il est l’engagement envers Dieu d’une conscience droite et il sauve par la résurrection de Jésus Christ, 22 lui qui est à la droite de Dieu, après s’en être allé au ciel, lui à qui sont soumis les anges, ainsi que les Souverainetés et les Puissances.",
             "",
         ],
     ],
@@ -97,9 +176,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=013rdSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 13 ـ 21 )",
-            "1 Pierre 1 :13-21",
-            "1 Peter 1:13-21",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 13-21)",
+            "1 Pierre (1: 13-21)",
+            "1 Peter (1: 13-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -134,36 +213,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=014thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى 3 : 8 ـ 12",
-            "1 Jean 3:8-12",
-            "1 John 3:8-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأجل هذا أُظهِرَ ابنُ اللـهِ لكي يَنقُضَ أعمَال الشَّيطانَ. كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من اللـهِ.",
-            "8 Le Fils de Dieu est apparu, afin de détruire les œuvres du diable. 9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.",
-            "8 For this purpose the Son of God was manifested, that He might destroy the works of the devil 9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بهذا أولادُ اللـهِ ظاهرونَ وأولادُ الشَّيطان.كُلُّ من لا يفعلُ البرَّ فليسَ من اللـهِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.",
-            "10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable. Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. Voici le message que vous avez entendu dès le commencement : Aimons nous les uns les autres ;",
-            "10 In this the children of God and the children of the devil are manifest: Whoever does not practice righteousness is not of God, nor is he who does not love his brother. For this is the message that you heard from the beginning, that we should love one another,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ليس كَما كانَ قايينُ وقتلَ أخاهُ. ولماذا قَتَلهُ؟ لأنَّ أعمالهُ كانت شرِّيرةً، وأعمالُ أخيهِ كانت بارَّةً",
-            "12 ne faisons pas comme Caïn, qui était du Malin et qui égorgea son frère. Et pourquoi l’égorgea–t–il ? Parce que ses oeuvres étaient mauvaises, et que celles de son frère étaient justes.",
-            "12 not as Cain who was of the wicked one and murdered his brother. And why did he murder him? Because his works were evil and his brother's righteous.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=015thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الثانية 1 : 1 ـ 13",
-            "2 Jean 1 : 1 - 13",
-            "2 John 1:1-13",
+            Prefix.katholikon + "&D=0109||015thSunday||062ndSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الثانية (1: 1-13)",
+            "2 Jean (1: 1-13)",
+            "2 John (1: 1-13)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -185,7 +238,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.",
+            "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّ-دُّ للمسيح.",
             "Tel est le commandement que vous avez entendu depuis le commencement, pour que vous marchiez dans cette voie. 7 Car de nombreux séducteurs se sont répandus dans le monde: ils ne professent pas la foi à la venue de Jésus Christ dans la chair. Le voilà, le séducteur et l'antéchrist!",
             "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.",
         ],
@@ -210,10 +263,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0201&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 5 : 9 ـ 20 )",
-            "Jacques 5:9 - 20",
-            "James 5:9-20",
+            Prefix.katholikon + "&D=0201||2205||1610&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(5 : 9-20)",
+            "Jacques (5: 9-20)",
+            "James (5: 9-20)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -223,7 +276,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ قـد رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.",
+            "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ ق-د رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.",
             "11 Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.",
             "11as an example of suffering and patience. Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.",
         ],
@@ -260,10 +313,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0801&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 19 ـ 2 : 1 ـ 8 )",
-            "2 Pierre 1:19-2:1-8",
-            "2 Peter 1:19-2:8",
+            Prefix.katholikon + "&D=0801||2304&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 19-2 : 1-8)",
+            "2 Pierre (1:19 & 2:1-8)",
+            "2 Peter (1:19 & 2:1-8)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -285,19 +338,19 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.",
+            "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَ-لِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.",
             "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; et, dans leur cupidité, 3 ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.",
             "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وثـاق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُعـذَّبين،",
+            "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وث-اق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُع-ذَّبين،",
             "4 Car Dieu n'a pas épargné les anges coupables, mais les a plongés, les a livrés aux antres ténébreux du Tartare, les gardant en réserve pour le jugement.",
             "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment;",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "والعـالم الأول لم يُشـفِـق عليه، لكن نوحـاً الثَّامـن المُنـادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.",
+            "والع-الم الأول لم يُش-فِ-ق عليه، لكن نوح-اً الثَّام-ن المُن-ادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.",
             "5 Il n'a pas épargné non plus l'ancien monde, mais il préserva, lors du déluge dont il submergea le monde des impies, Noé, le huitième des survivants, lui qui proclamait la justice;",
             "5 and did not spare the ancient world, but saved Noah, one of eight people, a preacher of righteousness, bringing in the flood on the world of the ungodly;",
         ],
@@ -317,9 +370,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=1601&C=Title",
-            " بطرس الأولى(1 : 25 ـ 2 :1 ـ 10",
-            "1 Pierre 2 : 1-10",
-            "1 Peter 2:1-10",
+            " بُطْرُسِ الأولى(1 : 25-2 :1-10",
+            "1 Pierre (2: 1-10)",
+            "1 Peter (2: 1-10)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -329,19 +382,19 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
+            "إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
             "3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu.",
             "3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
+            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
             "5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.6 Car on trouve dans l'Écriture:",
             "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold,.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنه مكتوبٌ في الكتاب: 'إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً الذي يؤمن به لن يُخـزى '. فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة وأمَّا الذين لا يؤمنون",
+            "لأنه مكتوبٌ في الكتاب: 'إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً الذي يؤمن به لن يُخ-زى '. فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة وأمَّا الذين لا يؤمنون",
             "Voici, je pose en Sion une pierre angulaire, choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu. 7 A vous donc, les croyants, l'honneur; mais pour les incrédules",
             "I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame 7 Therefore, to you who believe, He is precious; but to those who are disobedient,",
         ],
@@ -359,17 +412,17 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فقد رُحِمتُمْ.",
+            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فقد رُحِمتُمْ.",
             "10 vous qui jadis n'étiez pas son peuple, mais qui maintenant êtes le peuple de Dieu; vous qui n'aviez pas obtenu miséricorde, mais qui maintenant avez obtenu miséricorde.",
             "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=1701&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(1 : 22 ـ 27 )",
-            "1Peter 2:11-25",
-            "1Peter 2:11-25",
+            Prefix.katholikon + "&D=1701||Pntl1&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 22-27)",
+            "1 Pierre (2: 11-25)",
+            "1 Peter (2: 11-25)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -428,104 +481,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1801&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(1:3-12)",
-            "1 Peter 1:3-12",
-            "1 Peter 1:3-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات .",
-            "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم. انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.",
-            "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.",
-            "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة .لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح .ذلك",
-            "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves, 7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ.",
-            "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد.",
-            "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse,",
-            "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "نائلين غاية ايمانكم خلاص النفوس. الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.",
-            "9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.",
-            "9 receiving the end of your faith--the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.",
-            "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.",
-            "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.",
-            "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=1901&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى 5:13-21",
-            "1 John 5:13-21",
-            "1 John 5:13-21",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كتبت هذا اليكم انتم المؤمنين باسم ابن الله لكي تعلموا ان لكم حياة ابدية ولكي تؤمنوا باسم ابن الله.",
-            "12 Celui qui a le Fils a la vie ; celui qui n’a pas le Fils de Dieu n’a pas la vie. 13 Cela, je vous l’ai écrit, afin que vous sachiez que vous avez la vie éternelle, vous qui croyez au nom du Fils de Dieu.",
-            "13 These things I have written to you who believe in the name of the Son of God, that you may know that you have eternal life, and that you may continue to believe in the name of the Son of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وهذه هي الثقة التي لنا عنده انه ان طلبنا شيئا حسب مشيئته يسمع لنا. وان كنا نعلم انه مهما طلبنا يسمع لنا نعلم ان لنا الطلبات التي طلبناها منه.",
-            "14 Voici l’assurance que nous avons auprès de lui : si nous demandons quelque chose selon sa volonté, il nous écoute. 15 Et si nous savons qu’il nous écoute, quoi que ce soit que nous demandions, nous savons que nous possédons ce que nous lui avons demandé.",
-            "14 Now this is the confidence that we have in Him, that if we ask anything according to His will, He hears us. 15 And if we know that He hears us, whatever we ask, we know that we have the petitions that we have asked of Him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان رأى احد اخاه يخطئ خطية ليست للموت يطلب فيعطيه حياة للذين يخطئون ليس للموت.توجد خطية للموت.",
-            "16 Si quelqu’un voit son frère commettre un péché qui ne mène pas à la mort, qu’il prie, et (Dieu) lui donnera la vie ; (il s’agit de) ceux qui commettent un péché qui ne mène pas à la mort. Il y a un péché qui mène à la mort,",
-            "16 If anyone sees his brother sinning a sin which does not lead to death, he will ask, and He will give him life for those who commit sin not leading to death. There is sin leading to death.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ليس لاجل هذه اقول ان يطلب. كل اثم هو خطية وتوجد خطية ليست للموت.نعلم ان كل من ولد من الله لا يخطئ بل المولود من الله يحفظ نفسه والشرير لا يمسه.",
-            "ce n’est pas pour ce péché–là que je dis de prier.17 Toute injustice est un péché, et il y a tel péché qui ne mène pas à la mort. 18 Nous savons que quiconque est né de Dieu ne pèche pas ; mais Celui qui est engendré de Dieu le garde, et le Malin ne le touche pas.",
-            "I do not say that he should pray about that. 17 All unrighteousness is sin, and there is sin not leading to death. 18 We know that whoever is born of God does not sin; but he who has been born of God keeps himself, and the wicked one does not touch him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "نعلم اننا نحن من الله والعالم كله قد وضع في الشرير.ونعلم ان ابن الله قد جاء واعطانا بصيرة لنعرف الحق.",
-            "19 Nous savons que nous sommes de Dieu, et que le monde entier est au pouvoir du Malin.",
-            "19 We know that we are of God, and the whole world lies under the sway of the wicked one.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ونحن في الحق في ابنه يسوع المسيح.هذا هو الاله الحق والحياة الابدية.ايها الاولاد احفظوا انفسكم من الاصنام.آمين",
-            "20 Nous savons aussi que le Fils de Dieu est venu, et qu’il nous a donné l’intelligence pour connaître (celui qui est) le Véritable ; et nous sommes dans le Véritable, en son Fils Jésus–Christ. C’est lui le Dieu véritable et la vie éternelle. 21 Petits enfants, gardez–vous des idoles.",
-            "20 And we know that the Son of God has come and has given us an understanding, that we may know Him who is true; and we are in Him who is true, in His Son Jesus Christ. This is the true God and eternal life. 21 Little children, keep yourselves from idols. Amen.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2101&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 11 )",
-            "1 Jean 2 : 7 - 11",
-            "1 John 2:7-11",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 7-11)",
+            "1 Jean (2: 7-11)",
+            "1 John (2: 7-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -548,20 +507,20 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2601&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 18 )",
-            "Jacques 1 : 1 - 18",
+            Prefix.katholikon + "&D=2601||041stSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 1-18)",
+            "Jacques 1:1-18",
             "James 1:1-18",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّـتَاتِ. كونوا في فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.",
+            "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّ-تَاتِ. كونوا في فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.",
             "1Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon coeur, 2 mes frères, toutes les épreuves par lesquelles vous passez,3 sachant que le test auquel votre foi est soumise produit de l'endurance.",
             "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.",
+            "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ الل-هِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.",
             "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut.5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.",
             "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.",
         ],
@@ -579,13 +538,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ.",
+            "لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيض-اً في كلِّ طُرُقِهِ.",
             "11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.",
             "11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ أن اللـه قد جرَّبنى، لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً.",
+            "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ أن الل-ه قد جرَّبنى، لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً.",
             "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.13 Que nul, quand il est tenté, ne dise: 'Ma tentation vient de Dieu.' Car Dieu ne peut être tenté de faire le mal et ne tente personne.",
             "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him. 13 Let no one say when he is tempted, I am tempted by God; for God cannot be tempted by evil, nor does He Himself tempt anyone.",
         ],
@@ -605,9 +564,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=021stSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 22 ـ 2 :1 ـ 5 )",
-            "1Pierre 1:22-2:5",
-            "1Peter 1:22-2:5",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 22-2 :1-5)",
+            "1 Pierre (1: 22 & 2: 5)",
+            "1 Peter (1: 22 & 2: 5)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -629,23 +588,23 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مثل أطفال مَولُودِينَ الآن اشتهوا اللبنَ العقليَّ العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس",
+            "مثل أطفال مَولُودِينَ الآن اشتهوا اللبنَ العقليَّ العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس",
             "2 Comme des enfants nouveau-nés, désirez le lait pur de la parole afin que, par lui, vous grandissiez pour le salut,3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes",
             "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولكن مُختارٌ من الله وكريمٌ. كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
+            "ولكن مُختارٌ من الله وكريمٌ. كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
             "mais choisie et précieuse devant Dieu. 5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.",
             "but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=022ndSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول3:13-4:6",
-            "James 3:13-4:6",
-            "James 3:13-4:6",
+            Prefix.katholikon + "&D=022ndSunday||GL29&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3: 13 & 4: 6)",
+            "James (3: 13 & 4: 6)",
+            "James (3: 13 & 4: 6)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -692,10 +651,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=023rdSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول 4 : 7 ـ 17",
-            "James 4:7-17",
-            "James 4:7-17",
+            Prefix.katholikon + "&D=023rdSunday||GL5thSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ 4 : 7-17",
+            "James (4: 7-17)",
+            "James (4: 7-17)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -723,7 +682,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وهناكَ نَصرِفُ سـَنَةً واحِدَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ أمْرَ الغـدِ! لأنَّها ما هيَ حياتُكُم؟ إنَّها مثل غُبار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.",
+            "وهناكَ نَصرِفُ س-َنَةً واحِدَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ أمْرَ الغ-دِ! لأنَّها ما هيَ حياتُكُم؟ إنَّها مثل غُبار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.",
             "nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent', 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît!",
             "spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.",
         ],
@@ -737,7 +696,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=024thSunday&C=Title",
-            " رسالة بولس الرسول الاولى إلى أهل تيموثاوس ( 6 : 3 – 21 )",
+            " رسالة بولس الرَسُولِ الاولى إلى أهل تيموثاوس (6 : 3 – 21)",
             "1 Timothée 6 : 3 – 21",
             "1 Timothy 6: 3 - 22",
         ],
@@ -810,58 +769,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1202&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (1:3-12)",
-            "1Pierre 1:3-12",
-            "1 Peter 1:3-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات. لميراث لا يفنى ولايتدنس",
-            "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولا يضمحل محفوظ في السموات لاجلكم.انتم الذين بقوة الله . محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير. الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.",
-            "ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,",
-            "and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح.",
-            "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu – se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ.",
-            "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ذلك وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.",
-            "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.",
-            "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الخلاص الذي فتش وبحث عنه انبياء. الذين تنبأوا عن النعمة التي لاجلكم.",
-            "10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.",
-            "10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.",
-            "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.",
-            "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها",
-            "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=1402&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى (5 : 5 - 13)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 5-13)",
             "1 Jean 5:5-13",
             "1 John 5:5-13",
         ],
@@ -893,7 +802,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2202&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى 3:15-22",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الاولى 3:15-22",
             "1 PETER 3:15-22",
             "1 PETER 3:15-22",
         ],
@@ -937,7 +846,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2702&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (1:12-21)",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1:12-21)",
             "James 1:12-21",
             "James 1:12-21",
         ],
@@ -975,7 +884,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=031stSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 3 : 1 ـ 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3 : 1-12)",
             "James 3:1-12",
             "James 3:1-12",
         ],
@@ -1011,7 +920,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا اللِّسان فلا يستطيعُ أحدٌ مِن النَّاسِ أن يُذلِّله. هو شرٌّ لا يُضبط، مملوءٌ سُمَ الموت. به نُبارِك اللـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم اللـه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ!",
+            "وأمَّا اللِّسان فلا يستطيعُ أحدٌ مِن النَّاسِ أن يُذلِّله. هو شرٌّ لا يُضبط، مملوءٌ سُمَ الموت. به نُبارِك الل-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم الل-ه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ!",
             "8 But no man can tame the tongue. It is an unruly evil, full of deadly poison. 9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God. 10 Out of the same mouth proceed blessing and cursing.",
             "8 mais la langue, aucun homme ne peut la dompter : c’est un mal qu’on ne peut maîtriser ; elle est pleine d’un venin mortel. 9 Par elle, nous bénissons le Seigneur notre Père, et par elle, nous maudissons les hommes faits à l’image de Dieu. 10 De la même bouche sortent la bénédiction et la malédiction.",
         ],
@@ -1025,7 +934,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=032ndSunday&C=Title",
-            " الكاثوليكون من رسالة يهوذا الرسول( 1 : 14 ـ 25 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرسول(1 : 14-25)",
             "Jude 1:14-25",
             "Jude 1:14-25",
         ],
@@ -1055,13 +964,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.",
+            "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.",
             "20 But you, beloved, building yourselves up on your most holy faith, praying in the Holy Spirit, 21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
             "20 Mais vous, bien–aimés, édifiez–vous vous–mêmes sur votre très sainte foi, priez par le Saint–Esprit, 21 maintenez–vous dans l’amour de Dieu, en attendant la miséricorde de notre Seigneur Jésus–Christ pour la vie éternelle.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبكِّـتوا البعض عندما يكونون مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
+            "وبكِّ-توا البعض عندما يكونون مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
             "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh.",
             "22 Ayez pitié des uns, de ceux qui doutent : 23 sauvez–les en les arrachant au feu. Ayez pour les autres une pitié mêlée de crainte, haïssant jusqu’à la tunique souillée par la chair.",
         ],
@@ -1075,7 +984,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=033rdSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى 4:3-11",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى 4:3-11",
             "1 Peter 4:3-11",
             "1 Peter 4:3-11",
         ],
@@ -1112,14 +1021,14 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=034thSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 : 1 ـ 8 )",
+            Prefix.katholikon + "&D=034thSunday||094thSunday||102ndSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 1-8)",
             "2 Peter 1:1-8",
             "2 Peter 1:1-8",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "سمعان بطرس عبد يسوع المسيح ورسوله الى الذين نالوا معنا ايمانا ثمينا مساويا لنا ببر الهنا والمخلص يسوع المسيح.",
+            "سمعان بُطْرُسِ عبد يسوع المسيح ورسوله الى الذين نالوا معنا ايمانا ثمينا مساويا لنا ببر الهنا والمخلص يسوع المسيح.",
             "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:",
             "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :",
         ],
@@ -1150,8 +1059,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0803&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(3 : 15 - 22)",
+            Prefix.katholikon + "&D=0803||1205||Pntl39&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3 : 15-22)",
             "1 Pierre 3:15-22",
             "1 Peter 3:15-22",
         ],
@@ -1194,9 +1103,9 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0903&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(1 : 3 - 12)",
-            "1 Pierre1:3-12",
+            Prefix.katholikon + "&D=0903||2204||0313||1801||1202||GL17&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 3-12)",
+            "1 Pierre 1:3-12",
             "1 Peter 1:3-12",
         ],
         [
@@ -1238,164 +1147,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1203&C=Title",
-            " الكاثوليكون من رسالة يهوذا الرسول (1 : 1- 13)",
-            "Jude 1:1 - 13",
-            "Jude 1:1-13",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يهوذا عبد يسوع المسيح واخو يعقوب الى المدعوين المقدسين في الله الآب والمحفوظين ليسوع المسيح لتكثر لكم الرحمة والسلام والمحبة",
-            "1 Jude, serviteur de Jésus Christ, frère de Jacques, à ceux qui sont appelés, qui sont aimés de Dieu le Père et gardés pour Jésus Christ. 2 Que la miséricorde, la paixet l'amour vous viennent en abondance.",
-            "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاحباء اذ كنت اصنع كل الجهد لاكتب اليكم عن الخلاص المشترك اضطررت ان اكتب اليكم واعظا ان تجتهدوا لاجل الايمان المسلّم مرة للقديسين.",
-            "3 Mes amis, alors que je désirais vivement vous écrire au sujet du salut qui nous concerne tous, je me suis vu forcé de le faire afin de vous encourager à combattre pour la foi qui a été transmise aux saints définitivement.",
-            "3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه دخل خلسة اناس قد كتبوا منذ القديم لهذه الدينونة فجار يحوّلون نعمة الهنا الى الدعارة وينكرون السيد الوحيد الله وربنا يسوع المسيح فاريد ان اذكّركم ولو علمتم هذا مرة",
-            "4 Car il s'est infiltré parmi vous des individus dont la condamnation est depuis longtemps inscrite à l'avance, impies qui travestissement en débauche la grâce de notre Dieu et qui renient notre seul Maître et Seigneur Jésus Christ. 5 Je veux vous rappeler, bien que vous sachiez tout définitivement,",
-            "4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ. 5 But I want to remind you, though you once knew this,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان الرب بعدما خلّص الشعب من ارض مصر اهلك ايضا الذين لم يؤمنوا. والملائكة الذين لم يحفظوا رياستهم بل تركوا مسكنهم حفظهم الى دينونة اليوم العظيم بقيود ابدية تحت الظلام.",
-            "que le Seigneur, après avoir sauvé son peuple du pays d'Égypte, a fait périr ensuite ceux qui s'étaient montrés incrédules. 6 Les anges qui n'avaient pas gardé leur rang mais qui avaient abandonné leur demeure, il les garde éternellement enchaînés dans les ténèbres pour le jugement du grand Jour.",
-            "that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كما ان سدوم وعمورة والمدن التي حولهما اذ زنت على طريق مثلهما ومضت وراء جسد آخر جعلت عبرة مكابدة عقاب نار ابدية.",
-            "7 Quant à Sodome et Gomorrhe et aux villes d'alentour qui s'étaient livrées de semblable manière à la prostitution et avaient couru après des êtres d'une autre nature, elles gisent comme un exemple sous le châtiment du feu éternel.",
-            "7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن كذلك هؤلاء ايضا المحتلمون ينجسون الجسد ويتهاونون بالسيادة ويفترون على ذوي الامجاد. واما ميخائيل رئيس الملائكة فلما خاصم ابليس محاجا عن جسد موسى لم يجسر ان يورد حكم افتراء بل قال لينتهرك الرب.",
-            "8 C'est de la même façon que ces gens-là, dans leur délire, souillent la chair, méprisent la Souveraineté, insultent les Gloires. 9 Pourtant même l'archange Michaël, alors qu'il contestait avec le diable et disputait au sujet du corps de Moïse, n'osa pas porter contre lui un jugement insultant, mais il dit: 'Que le Seigneur te châtie.'",
-            "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries. 9 Yet Michael the archangel, in contending with the devil, when he disputed about the body of Moses, dared not bring against him a reviling accusation, but said, The Lord rebuke you!''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن هؤلاء يفترون على ما لا يعلمون.واما ما يفهمونه بالطبيعة كالحيوانات غير الناطقة ففي ذلك يفسدون.",
-            "10 Mais ces gens-là, ce qu'ils ne connaissent pas, ils l'insultent; et ce qu'ils savent à la manière instinctive et stupide des bêtes, cela ne sert qu'à les perdre.",
-            "10 But these speak evil of whatever they do not know; and whatever they know naturally, like brute beasts, in these things they corrupt themselves.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ويل لهم لانهم سلكوا طريق قايين وانصبوا الى ضلالة بلعام لاجل اجرة وهلكوا في مشاجرة قورح.",
-            "11 Malheur à eux, parce qu'ils ont suivi le chemin de Caïn; pour un salaire ils se sont abandonnés aux égarements de Balaam et ils ont péri dans la révolte de Coré.",
-            "11 Woe to them! For they have gone in the way of Cain, have run greedily in the error of Balaam for profit, and perished in the rebellion of Korah.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هؤلاء صخور في ولائمكم المحبية صانعين ولائم معا بلا خوف راعين انفسهم.غيوم بلا ماء تحملها الرياح اشجار خريفية بلا ثمر ميتة مضاعفا مقتلعة.",
-            "12 Ce sont bien eux qui souillent vos repas fraternels, lorsqu'ils font bombance et se gavent sans pudeur; nuages sans eau emportés par les vents; arbres de fin d'automne, sans fruits, deux fois morts, déracinés;",
-            "12 These are spots in your love feasts, while they feast with you without fear, serving only themselves. They are clouds without water, carried about by the winds; late autumn trees without fruit, twice dead, pulled up by the roots;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "امواج بحر هائجة مزبدة بخزيهم.نجوم تائهة محفوظ لها قتام الظلام الى الابد.",
-            "13 flots sauvages de la mer cachant l'écume de leur propre honte; astres errants réservés pour l'éternité à l'épaisseur des ténèbres. 13 flots sauvages de la mer cachant l'écume de leur propre honte; astres errants réservés pour l'éternité à l'épaisseur des ténèbres.",
-            "13 raging waves of the sea, foaming up their own shame; wandering stars for whom is reserved the blackness of darkness forever.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=1503&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (4:12-19 )",
-            "1 Peter 4:12-19",
-            "1 Peter 4:12-19",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاحباء لا تستغربوا البلوى المحرقة التي بينكم حادثة لاجل امتحانكم كانه اصابكم امر غريب بل كما اشتركتم في آلام المسيح",
-            "12 Bien–aimés, ne soyez pas surpris de la fournaise qui sévit parmi vous pour vous éprouver, comme s’il vous arrivait quelque chose d’étrange.13 Au contraire, réjouissez–vous de participer aux souffrances du Christ,",
-            "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "افرحوا لكي تفرحوا في استعلان مجده ايضا مبتهجين ان عيّرتم باسم المسيح فطوبى لكم لان روح المجد والله يحل عليكم.اما من جهتهم فيجدّف عليه واما من جهتكم فيمجد.",
-            "afin de vous réjouir aussi avec allégresse, lors de la révélation de sa gloire. 14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !",
-            "that when His glory is revealed, you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فلا يتألم احدكم كقاتل او سارق او فاعل شر او متداخل في امور غيره. ولكن ان كان كمسيحي فلا يخجل بل يمجد الله من هذا القبيل.",
-            "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.",
-            "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه الوقت لابتداء القضاء من بيت الله.فان كان اولا منا فما هي نهاية الذين لا يطيعون انجيل الله. وان كان البار بالجهد يخلص فالفاجر والخاطئ اين يظهران.",
-            "17 Car c’est le moment où le jugement va commencer par la maison de Dieu. Or, si c’est par nous qu’il débute, quelle sera la fin de ceux qui n’obéissent pas à l’Évangile de Dieu ? 18 Et si le juste est sauvé difficilement, que deviendra celui qui est impie et pécheur ?",
-            "17 For the time has come for judgment to begin at the house of God; and if it begins with us first, what will be the end of those who do not obey the gospel of God? 18 Now If the righteous one is scarcely saved, where will the ungodly and the sinner appear?''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فاذا الذين يتألمون بحسب مشيئة الله فليستودعوا انفسهم كما لخالق امين في عمل الخير",
-            "19 Ainsi, que ceux qui souffrent selon la volonté de Dieu, remettent leur âme au fidèle Créateur en faisant le bien.",
-            "19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=1703&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (5 : 1 - 14)",
-            "1 Pierre 5 : 1 - 14",
-            "1 Peter 5:1-14",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اطلب الى الشيوخ الذين بينكم انا الشيخ رفيقهم والشاهد لآلام المسيح وشريك المجد العتيد ان يعلن",
-            "5 J'exhorte donc les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée:",
-            "1The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed:",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ارعوا رعية الله التي بينكم نظّارا لا عن اضطرار بل بالاختيار ولا لربح قبيح بل بنشاط. ولا كمن يسود على الانصبة بل صائرين امثلة للرعية",
-            "2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement.3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau.",
-            "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ومتى ظهر رئيس الرعاة تنالون اكليل المجد الذي لا يبلى. كذلك ايها الاحداث اخضعوا للشيوخ وكونوا جميعا خاضعين بعضكم لبعض وتسربلوا بالتواضع لان الله يقاوم المستكبرين واما المتواضعون فيعطيهم نعمة.",
-            "4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas. 5 De même,jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce.",
-            "4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away. 5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, but gives grace to the humble.''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فتواضعوا تحت يد الله القوية لكي يرفعكم في حينه. ملقين كل همكم عليه لانه هو يعتني بكم. اصحوا واسهروا لان ابليس خصمكم كأسد زائر يجول ملتمسا من يبتلعه هو.",
-            "6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous. 8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer.",
-            "6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, 7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فقاوموه راسخين في الايمان عالمين ان نفس هذه الآلام تجرى على اخوتكم الذين في العالم. واله كل نعمة الذي دعانا الى مجده الابدي في المسيح يسوع بعدما تألمتم يسيرا هو يكملكم ويثبتكم ويقويكم ويمكنكم",
-            "9 Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères, dans le monde.10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps; il vous affermira, vous fortifiera, vous rendra inébranlables.",
-            "9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world. 10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while, perfect, establish, strengthen, and settle you.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "له المجد والسلطان الى ابد الآبدين.آمين بيد سلوانس الاخ الامين كما اظن كتبت اليكم بكلمات قليلة واعظا وشاهدا ان هذه هي نعمة الله الحقيقية التي فيها تقومون.",
-            "11A lui la domination pour les siècles! Amen.12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés.",
-            "11 To Him be the glory and the dominion forever and ever. Amen. 12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "تسلم عليكم التي في بابل المختارة معكم ومرقس ابني. سلموا بعضكم على بعض بقبلة المحبة.سلام لكم جميعكم الذين في المسيح يسوع.آمين",
-            "13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils.14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.",
-            "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2203&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الإولى ( 2 :11 - 17)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الإولى (2 :11-17)",
             "1 Pierre 2 : 11 - 17",
             "1 Peter 2:11-17",
         ],
@@ -1426,146 +1179,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2403&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى(5:1-14 )",
-            "1 Pierre 5:1-14",
-            "1 Peter 5:1-14",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اطلب الى الشيوخ الذين بينكم انا الشيخ رفيقهم والشاهد لآلام المسيح وشريك المجد العتيد ان يعلن ارعوا رعية الله التي بينكم نظّارا",
-            "1 J'exhorte donc les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée: 2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui",
-            "1 The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed: 2 Shepherd the flock of God which is among you, serving as overseers,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا عن اضطرار بل بالاختيار ولا لربح قبيح بل بنشاط. ولا كمن يسود على الانصبة بل صائرين امثلة للرعية ومتى ظهر رئيس الرعاة تنالون اكليل المجد الذي لا يبلى",
-            "non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement. 3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau. 4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas.",
-            "not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock; 4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كذلك ايها الاحداث اخضعوا للشيوخ وكونوا جميعا خاضعين بعضكم لبعض وتسربلوا بالتواضع لان الله يقاوم المستكبرين واما المتواضعون فيعطيهم نعمة. فتواضعوا تحت يد الله القوية لكي يرفعكم في حينه",
-            "5 De même, jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce.6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;",
-            "5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, but gives grace to the humble.'' 6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ملقين كل همكم عليه لانه هو يعتني بكم اصحوا واسهروا لان ابليس خصمكم كأسد زائر يجول ملتمسا من يبتلعه هو. فقاوموه راسخين في الايمان عالمين ان نفس هذه الآلام تجرى على اخوتكم الذين في العالم",
-            "7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous. 8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer. Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères, dans le monde.",
-            "7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour. 9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واله كل نعمة الذي دعانا الى مجده الابدي في المسيح يسوع بعدما تألمتم يسيرا هو يكملكم ويثبتكم ويقويكم ويمكنكم له المجد والسلطان الى ابد الآبدين.آمين",
-            "10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps; il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles! Amen.",
-            "10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while, perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بيد سلوانس الاخ الامين كما اظن كتبت اليكم بكلمات قليلة واعظا وشاهدا ان هذه هي نعمة الله الحقيقية التي فيها تقومون. تسلم عليكم التي في بابل المختارة معكم ومرقس ابني.",
-            "12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés. 13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils.",
-            "12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand. 13 She who is in Babylon, elect together with you, greets you; and so does Mark my son.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "سلموا بعضكم على بعض بقبلة المحبة.سلام لكم جميعكم الذين في المسيح يسوع.آمين",
-            "14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.",
-            "14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=2503&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى( 4 :1 – 11 )",
-            "1 Pierre 4 : 1 - 11",
-            "1 Peter 4:1-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فاذ قد تألم المسيح لاجلنا بالجسد تسلحوا انتم ايضا بهذه النية.فان من تألم في الجسد كفّ عن الخطية.",
-            "1Aussi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché,",
-            "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي لا يعيش ايضا الزمان الباقي في الجسد لشهوات الناس بل لارادة الله.لان زمان الحياة الذي مضى يكفينا لنكون قد عملنا ارادة الامم سالكين في الدعارة والشهوات وادمان الخمر",
-            "2 pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises,",
-            "2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God. 3 For we have spent enough of our past lifetime in doing the will of the Gentiles-- when we walked in lewdness, lusts, drunkenness,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والبطر والمنادمات وعبادة الاوثان المحرمة. الامر الذي فيه يستغربون انكم لستم تركضون معهم الى فيض هذه الخلاعة عينها مجدفين. الذين سوف يعطون حسابا للذي هو على استعداد ان يدين الاحياء والاموات.",
-            "l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes. 4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts.",
-            "revelries, drinking parties, and abominable idolatries. 4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فانه لاجل هذا بشر الموتى ايضا لكي يدانوا حسب الناس بالجسد ولكن ليحيوا حسب الله بالروح. وانما نهاية كل شيء قد اقتربت.فتعقلوا واصحوا للصلوات.",
-            "6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.",
-            "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن قبل كل شيء لتكن محبتكم بعضكم لبعض شديدة لان المحبة تستر كثرة من الخطايا. كونوا مضيفين بعضكم بعضا بلا دمدمة. ليكن كل واحد بحسب ما اخذ موهبة يخدم بها بعضكم بعضا كوكلاء صالحين على نعمة الله المتنوعة.",
-            "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés.9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.",
-            "8 And above all things have fervent love for one another, for love will cover a multitude of sins.'' 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان كان يتكلم احد فكاقوال الله.وان كان يخدم احد فكانه من قوة يمنحها الله لكي يتمجد الله في كل شيء بيسوع المسيح الذي له المجد والسلطان الى ابد الآبدين.آمين",
-            "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !",
-            "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=2703&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 12 )",
-            "Jacques 1 : 1 - 12",
-            "James 1:1-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يعقوب عبد الله والرب يسوع المسيح يهدي السلام الى الاثني عشر سبطا الذين في الشتات. احسبوه كل فرح يا اخوتي حينما تقعون في تجارب متنوعة.عالمين ان امتحان ايمانكم ينشئ صبرا.",
-            "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. 2 Prenez de très bon coeur, mes frères, toutes les épreuves par lesquelles vous passez, sachant que le test auquel votre foi est soumise produit de l'endurance.",
-            "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما الصبر فليكن له عمل تام لكي تكونوا تامّين وكاملين غير ناقصين في شيء. وانما ان كان احد تعوزه حكمة فليطلب من الله الذي يعطي الجميع بسخاء ولا يعيّر فسيعطى له.",
-            "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut. 5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.",
-            "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن ليطلب بايمان غير مرتاب البتة لان المرتاب يشبه موجا من البحر تخبطه الريح وتدفعه. فلا يظن ذلك الانسان انه ينال شيئا من عند الرب.",
-            "6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève. 7 Que ce personnage ne s'imagine pas que le Seigneur",
-            "6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "رجل ذو رايين هو متقلقل في جميع طرقه. وليفتخر الاخ المتضع بارتفاعه.",
-            "8 donnera quoi que ce soit à un homme partagé, fluctuant dans toutes ses démarches. 9 Que le frère de condition modeste tire fierté de son élévation,",
-            "8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما الغني فباتضاعه لانه كزهر العشب يزول. لان الشمس اشرقت بالحرّ فيبّست العشب فسقط زهره وفني جمال منظره.هكذا يذبل الغني ايضا في طرقه.",
-            "10 et le riche, de son déclassement, parce qu'il passera comme la fleur des prés.11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.",
-            "10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "طوبى للرجل الذي يحتمل التجربة.لانه اذا تزكى ينال اكليل الحياة الذي وعد به الرب للذين يحبونه",
-            "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment. 12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.",
-            "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2803&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الثالثة (1: 1- 14 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الثالثة (1: 1- 14)",
             "3 Jean 1:1 - 14",
             "3 John 1:1-14",
         ],
@@ -1620,108 +1235,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2903&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 :1 - 9 )",
-            "1 Pierre 1 : 1 - 9",
-            "1 Peter 1:1-9",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بطرس رسول يسوع المسيح الى المتغربين من شتات بنتس وغلاطية وكبدوكية واسيا وبيثينية المختارين",
-            "1 Pierre, apôtre de Jésus Christ, aux élus qui vivent en étrangers dans la dispersion, dans le Pont, la Galatie, la Cappadoce, l'Asie et la Bithynie,",
-            "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بمقتضى علم الله الآب السابق في تقديس الروح للطاعة ورشّ دم يسوع المسيح.لتكثر لكم النعمة والسلام",
-            "2 élus selon le dessein de Dieu le Père, par la sanctification de l'Esprit, pour obéir à Jésus Christ et avoir part à l'aspersion de son sang. Qua la grâce et la paix vous viennent en abondance.",
-            "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات لميراث لا يفنى",
-            "3 Béni soit Dieu, le Père de notre Seigneur Jésus Christ: dans sa grande miséricorde, il nous a fait renaître pour une espérance vivante, par la résurrection de Jésus Christ d'entre les morts, 4 pour un héritage qui ne se peut corrompre, ni souiller,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير. الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة",
-            "ni flétrir; cet héritage vous est réservé dans les cieux, 5 à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin. 6 Aussi tressaillez-vous d'allégresse même s'il faut que, pour un peu de temps, vous soyez affligés par diverses épreuves,",
-            "and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح",
-            "7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu - obtienne louange, gloire et honneur lors de la révélation de Jésus Christ,",
-            "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ذلك وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد نائلين غاية ايمانكم خلاص النفوس.",
-            "8 Lui que vous aimez sans l'avoir vu, en qui vous croyez sans le voir encore; aussi tressaillez-vous d'une joie ineffable et glorieuse, 9 en remportant, comme prix de la foi, le salut de vos âmes.",
-            "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=041stSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 18 )",
-            "James 1:1-18",
-            "James 1:1-18",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّـتَاتِ. كونوا في كلِّ فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ،",
-            "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,",
-            "1 Jacques, serviteur de Dieu et du Seigneur Jésus–Christ, aux douze tribus dans la dispersion, salut ! 2 Mes frères, considérez comme un sujet de joie complète les diverses épreuves que vous pouvez rencontrer,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً. وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ.",
-            "3 knowing that the testing of your faith produces patience. 4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing.",
-            "3 sachant que la mise à l’épreuve de votre foi produit la patience. 4 Mais il faut que la patience accomplisse une oeuvre parfaite, afin que vous soyez parfaits et accomplis, et qu’il ne vous manque rien.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له. وليسأل بإيمانٍ غير مُرتابٍ.",
-            "5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him. 6 But let him ask in faith, with no doubting,",
-            "5 Si quelqu’un d’entre vous manque de sagesse, qu’il la demande à Dieu qui donne à tous libéralement et sans faire de reproche, et elle lui sera donnée. 6 Mais qu’il la demande avec foi, sans douter ;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّ المُرتابَ يُشبهُ أمواج البحر التي يخبطُها الرِّيحُ ويردها. فلا يَظُنَّ ذلك الإنسانُ أنَّهُ يَنَالُ شيئاً مِنْ عند الرَّبِّ. لأنَّ الرجُلَ ذو الرأيين مُتَقَلقِل في جَمِيع طُرُقِهِ.",
-            "for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,",
-            "car celui qui doute est semblable au flot de la mer, que le vent agite et soulève.7 Qu’un tel homme ne pense pas qu’il recevra quelque chose du Seigneur : 8 c’est un homme irrésolu, inconstant dans toutes ses voies.9 Que le frère de condition humble se glorifie de son élévation.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وليَفتَخِر الأخُ المُتواضع بارتفاعِهِ، وأمَّا الغَنيُّ فباتِّضاعِهِ، لأنَّهُ كزهر العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ.",
-            "9 Let the lowly brother glory in his exaltation, 10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes.",
-            "9 Que le frère de condition humble se glorifie de son élévation.10 Que le riche au contraire (se glorifie) de son humiliation ; car il passera comme la fleur de l’herbe. 11 Le soleil s’est levé avec sa chaleur ardente ; il a desséché l’herbe, sa fleur est tombée, et la beauté de son aspect a disparu",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ. طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ، أن اللـه قد جرَّبنى،",
-            "So the rich man also will fade away in his pursuits. 12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him. 13 Let no one say when he is tempted, I am tempted by God;",
-            "Ainsi le riche se flétrira dans ses entreprises. 12 Heureux l’homme qui endure la tentation ; car après avoir été mis à l’épreuve, il recevra la couronne de vie, que le Seigneur a promise à ceux qui l’aiment. 13 Que personne, lorsqu’il est tenté, ne dise : C’est Dieu qui me tente.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً. ولكنَّ كلَّ واحدٍ يُجرَّبُ إذا انجذبَ وانخدعَ من شهوة نفسه. ثُمَّ إنَّ الشَّهوةُ إذا حبلتْ فإنَّها تلدُ خطيَّئةً، وأمَّا الخطيَّئة إذا كمَلَت فإنَّها تلد الموت.",
-            "for God cannot be tempted by evil, nor does He Himself tempt anyone. 14 But each one is tempted when he is drawn away by his own desires and enticed. 15 Then, when desire has conceived, it gives birth to sin; and sin, when it is full-grown, brings forth death.",
-            "Car Dieu ne peut être tenté par le mal et ne tente lui–même personne.14 Mais chacun est tenté, parce que sa propre convoitise l’attire et le séduit. 15 Puis la convoitise, lorsqu’elle a conçu, enfante le péché ; et le péché, parvenu à son terme, engendre la mort.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا تضلُّوا يا إخوتي وأحبَّائي. كلُّ عطيَّةٍ صالحةٍ وكلُّ موهبةٍ تامَّةٍ فهي من فوقُ، نازلةٌ من عند أبِ الأنوار، الذي ليسَ عندهُ تغييرٌ ولا شبهُ ظل يزولُ. قد شاء فولدنا بكلمةِ الحقِّ لكي نكون باكورةَ خلائقه.",
-            "16 Do not be deceived, my beloved brethren. 17 Every good gift and every perfect gift is from above, and comes down from the Father of lights, with whom there is no variation or shadow of turning. 18 Of His own will He brought us forth by the word of truth, that we might be a kind of firstfruits of His creatures.",
-            "16 Ne vous y trompez pas, mes frères bien–aimés : 17 tout don excellent et tout cadeau parfait viennent d’en–haut, du Père des lumières, chez lequel il n’y a ni changement, ni ombre de variation.18 Il nous a engendrés selon sa volonté, par la parole de vérité, afin que nous soyons en quelque sorte les prémices de ses créatures.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=042ndSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى( 1 : 1 ـ 2 : 1 ـ 2 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(1 : 1-2 : 1-2)",
             "1 John 1:1-2:2",
             "1 Jean 1:1-2:2",
         ],
@@ -1770,58 +1285,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=043rdSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 17 )",
-            "1 John 2:7-17",
-            "1 Jean 2:7-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يا أحبائي، لستُ أكتبُ إليكُم وصيَّةً جديدةً بل وصيَّةً قديمةً التي كانتَ عندكُم من البدء. فإن الوصيَّةُ العتيقةُ هيَ الكلمةُ التي سمعتموها.",
-            "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.",
-            "7 Bien–aimés, ce n’est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez eu dès le commencement ; ce commandement ancien, c’est la parole que vous avez entendue.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أيضاً وصيَّةً جديدةً أكتُبها إليكُم، التي الحقُّ كائنٌ فيها وفيكُم، لأنَّ الظُّلمةَ قد جازت والنُّورَ الحقيقيَّ الآنَ يضيءُ.",
-            "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining.",
-            "8 D’autre part, c’est un commandement nouveau que je vous écris ; ceci est vrai pour lui et pour vous, car les ténèbres passent, et la lumière véritable brille déjà.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مَن يقولُ: إنَّهُ في النُّورِ وهو يبغضُ أخاهُ، فهو إلى الآنَ في الظُّلمةِ. مَن يحبُّ أخاهُ يثبُتُ في النُّورِ وليس فيهِ عثرةٌ. فيثبتُ إلى الأبدِ.",
-            "9 He who says he is in the light, and hates his brother, is in darkness until now. 10 He who loves his brother abides in the light, and there is no cause for stumbling in him.",
-            "9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est encore dans les ténèbres.10 Celui qui aime son frère demeure dans la lumière et ne risque pas de tomber.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وأمَّا مَن يبغضُ أخاهُ فهو في الظلام وفي الظلام يسلُكُ ولا يَعلَمُ أين يمضي، لأنَّ الظُّلمةَ قد أطمستْ عينيهِ. أَكتبُ إليكُم أيُّها الأولادُ، لأنَّهُ قد غُفِرت لكُمُ خطاياكُم من أجل اسمِهِ.",
-            "11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes. 12 I write to you, little children, Because your sins are forgiven you for His name's sake.",
-            "11 Mais celui qui a de la haine pour son frère est dans les ténèbres ; il marche dans les ténèbres et ne sait où il va, parce que les ténèbres ont rendu ses yeux aveugles.12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أَكتبُ إليكُم أيُّها الآباءُ، لأنَّكُم قد عرفتُمُ الذي مِن البدءِ. أَكتُبُ إليكُم أيُّها الشبان، لأنَّكُم قد غلبتُم الشِّرِّيرَ. أَكتُبُ إليكُم أيُّها الأولادُ، لأنَّكُم قد عرفتُم الآبَ.",
-            "13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father.",
-            "13 Je vous écris, pères, parce que vous avez connu celui qui est dès le commencement. Je vous écris, jeunes gens, parce que vous avez vaincu le Malin. Je vous ai écrit, jeunes enfants, parce que vous avez connu le Père.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أكتب إليكُم أيُّها الشُّبان، لأنَّكُم أقوياءُ، وكلمةُ اللـهِ ثابتةٌ فيكُم، وقد غلبتُمُ الشِّرِّيرَ. لا تُحبُّوا العالمَ ولا الأشياءَ التي في العالم.",
-            "14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world.",
-            "14 Je vous ai écrit, pères, parce que vous avez connu celui qui est dès le commencement. Je vous ai écrit, jeunes gens, parce que vous êtes forts, que la parole de Dieu demeure en vous et que vous avez vaincu le Malin. 15 N’aimez pas le monde, ni ce qui est dans le monde.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "إن أحبَّ أحدٌ العالمَ فليستْ فيهِ محبَّةُ الآبِ. لأنَّ كلَّ مَا في العالم: شهوةَ الجسدِ، وشهوةَ العيونِ، وتعظُّم المعيشةِ، فهذه ليستْ مِن الآبِ بل مِن العالم. والعالمُ يمضي وشهوتُهُ، وأمَّا الذي يصنعُ إرادة اللـهِ.",
-            "If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.",
-            "Si quelqu’un aime le monde, l’amour du Père n’est pas en lui ;16 car tout ce qui est dans le monde, la convoitise de la chair, la convoitise des yeux et l’orgueil de la vie, ne vient pas du Père, mais vient du monde.17 Et le monde passe, et sa convoitise aussi ; mais celui qui fait la volonté de Dieu demeure éternellement.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=044thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 24 ـ 3 : 1 ـ 3)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 24-3 : 1-3)",
             "1 John 2:24-3:3",
             "1 Jean 2:24-3:3",
         ],
@@ -1858,114 +1323,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2204&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى ( 1 :3 – 12 )",
-            "1 PETER 1:3-12",
-            "1 PETER 1:3-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات.",
-            "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.",
-            "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.",
-            "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.",
-            "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,",
-            "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح. ذلك وان لم تروه تحبونه. ذلك وان كنتم لا ترونه الآن لكن تؤمنون به",
-            "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui",
-            "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.",
-            "et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.",
-            "you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.",
-            "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.",
-            "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.",
-            "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=2304&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 19 ـ 2 : 1 ـ 8 )",
-            "2 Pierre 1:19-2:1-8",
-            "2 Peter 1:19-2:8",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وثابتٌ عندنا كلام الأنبياء، هذا الذي هو نعم ما تصنعونه إذا تأملتم إليه، كمثل سراج مُضيءٍ في موضع مُظلم، حتى يظهر النَّهار، والنُّور يُشرق ويظهر في قلوبكم،",
-            "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs.",
-            "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وهذا أولاً فاعلموه: أن كل نبوَّات الكتب ليس تأويلها فيها من ذاتها خاصة. وليست بمشيئة البشر جاءت نبوَّة في زمان، بل تكلَّم أُناس بإرادة الله بالروح القدس.",
-            "20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée; 21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.",
-            "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وقد كانت أنبياء كذبة في الشَّعب، مثل ما يكون فيكم مُعلِّمون كذابون، هؤلاء الذين يأتون ببدع هلاك. والسيِّد الذي اشتراهم يجحدونه، ويجلِّبون على أنفسهم هلاكاً سريعاً.",
-            "1Il y eut aussi des faux prophètes dans le peuple; de même, il y aura parmi vous de faux docteurs, qui introduiront sournoisement des doctrines pernicieuses, allant jusqu'à renier le maître qui les a rachetés, attirant sur eux une perdition qui ne saurait tarder;",
-            "1 But there were also false prophets among the people, even as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Lord who bought them, and bring on themselves swift destruction.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.",
-            "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; et, dans leur cupidité, 3 ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.",
-            "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وثـاق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُعـذَّبين،",
-            "4 Car Dieu n'a pas épargné les anges coupables, mais les a plongés, les a livrés aux antres ténébreux du Tartare, les gardant en réserve pour le jugement.",
-            "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والعـالم الأول لم يُشـفِـق عليه، لكن نوحـاً الثَّامـن المُنـادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.",
-            "5 Il n'a pas épargné non plus l'ancien monde, mais il préserva, lors du déluge dont il submergea le monde des impies, Noé, le huitième des survivants, lui qui proclamait la justice;",
-            "5 and did not spare the ancient world, but saved Noah, one of eight people, a preacher of righteousness, bringing in the flood on the world of the ungodly;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والمدن الأُخر سادوم وعامورة أحرقهما وحكم عليهما بالخسف، وجعلهما عِبرةً للمنافقين الذين سيكونون، والصدِّيق لوط خلَّصه من ظلمهم، ومن تقلبهم الرديء وسلوكهم النجس.",
-            "6 puis il condamna à l'anéantissement les villes de Sodome et Gomorrhe en les réduisant en cendres à titre d'exemple pour les impies à venir; 7 et il délivra Loth le juste, accablé par la manière dont vivaient ces criminels débauchés;",
-            "6 and turning the cities of Sodom and Gomorrah into ashes, condemned them to destruction, making them an example to those who afterward would live ungodly; 7 and delivered righteous Lot, who was oppressed by the filthy conduct of the wicked",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّه بالنَّظر والسَّمع كان الصدِّيق ساكناً بينهم، ويوماً فيوماً كانوا يُحزِنون نفس الصدِّيق بأعمال مُخالفة للنَّاموس.",
-            "8 car ce juste, vivant au milieu d'eux, les voyait et les entendait: jour après jour, son âme de juste, était à la torture, à cause de leurs oeuvres scandaleuses.",
-            "8 (for that righteous man, dwelling among them, tormented his righteous soul from day to day by seeing and hearing their lawless deeds).",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2804&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى (4:1-14 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4:1-14)",
             "1 John 4:1-14",
             "1 John 4:1-14",
         ],
@@ -2021,7 +1380,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2904&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 12 – 17 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 12 – 17)",
             "2 Peter 1:12-17",
             "2 Peter 1:12-17",
         ],
@@ -2053,7 +1412,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=3004&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى(4:15 - 5:1-4)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(4:15-5:1-4)",
             "1 Jean 4:15 - 5:1-4",
             "1John 4:15-21& 5:1-4",
         ],
@@ -2102,10 +1461,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0105&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى 1:25 & 2:1-10",
-            "1 Peter 1:25 & 2:1-10",
-            "1 Peter1:25 & 2:1-10",
+            Prefix.katholikon + "&D=0105||0305||0210&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى 1:25 & (2: 1-10)",
+            "1 Peter (1:25 & (2: 1-10)",
+            "1 Peter (1:25 & (2: 1-10)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2152,60 +1511,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0305&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى1:25 & 2:1-10",
-            "1 Peter 1:25 & 2:1-10",
-            "1Peter 1:25 & 2:1-10",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما كلمة الرب فتثبت الى الابد.وهذه هي الكلمة التي بشرتم بها. فاطرحوا كل خبث وكل مكر والرياء والحسد وكل مذمة.",
-            "25 Mais la parole du Seigneur demeure éternellement. Cette parole est celle qui vous a été annoncée par l’Évangile.1 Rejetez donc toute méchanceté et toute fraude, l’hypocrisie, l’envie et toute médisance ;",
-            "25 Now this is the word which by the gospel was preached to you. 1 Therefore, laying aside all malice, all guile, hypocrisy, envy, and all evil speaking,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكاطفال مولودين الآن اشتهوا اللبن العقلي العديم الغش لكي تنموا به. ان كنتم قد ذقتم ان الرب صالح.",
-            "2 désirez comme des enfants nouveaux–nés le lait non frelaté de la parole, afin que par lui vous croissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon.",
-            "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي اذ تأتون اليه حجرا حيّا مرفوضا من الناس ولكن مختار من الله كريم. كونوا انتم ايضا مبنيين كحجارة حية بيتا روحيا كهنوتا مقدسا لتقديم ذبائح روحية مقبولة عند الله بيسوع المسيح.",
-            "4 Approchez–vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu,5 et vous–mêmes, comme des pierres vivantes, édifiez–vous pour former une maison spirituelle, un saint sacerdoce, en vue d’offrir des victimes spirituelles, agréables à Dieu par Jésus–Christ ;",
-            "4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لذلك يتضمن ايضا في الكتاب هانذا اضع في صهيون حجر زاوية مختارا كريما والذي يؤمن به لن يخزى.",
-            "6 car il y a dans l’Écriture: Voici, je pose en Sion une pierre angulaire, choisie, précieuse, Et celui qui croit en elle ne sera pas confondu.",
-            "6 Therefore it is also contained in the Scripture, Behold, I lay in Zion a chief cornerstone, elect, precious, and he who believes on Him will by no means be put to shame",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فلكم انتم الذين تؤمنون الكرامة واما للذين لا يطيعون فالحجر الذي رفضه البناؤون هو قد صار راس الزاوية. وحجر صدمة وصخرة عثرة.",
-            "7 L’honneur est donc pour vous qui croyez. Mais, pour les incrédules, La pierre qu’ont rejetée ceux qui bâtissaient Est devenue la principale, celle de l’angle Et une pierre d’achoppement Et un rocher de scandale. 8 Ils s’y achoppent en désobéissant à la parole,",
-            "7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected has become the chief cornerstone,'' 8 and A stone of stumbling and a rock of offense.'' They stumble,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين يعثرون غير طائعين للكلمة الامر الذي جعلوا له. واما انتم فجنس مختار وكهنوت ملوكي امة مقدسة شعب اقتناء لكي تخبروا بفضائل الذي دعاكم من الظلمة الى نوره العجيب.",
-            "et c’est à quoi ils ont été destinés. 9 Vous, par contre, vous êtes une race élue, un sacerdoce royal, une nation sainte, un peuple racheté, afin d’annoncer les vertus de celui qui vous a appelés des ténèbres à son admirable lumière ;",
-            "being disobedient to the word, to which they also were appointed. 9 But you are a chosen generation, a royal priesthood, a holy nation, His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين قبلا لم تكونوا شعبا واما الآن فانتم شعب الله.الذين كنتم غير مرحومين واما الآن فمرحومون.",
-            "10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde. 10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde.",
-            "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy. 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy. 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=0405&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الاولى 1:1-10 & 2:1-6) )",
-            "1 Jean 1:1-10 & 2:1-6",
-            "1 John 1:1-10 & 2:1-6",
+            Prefix.katholikon + "&D=0405||0113&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الاولى 1:1-10 & (2: 1-6))",
+            "1 Jean (1: 1-10 & 2: 1-6)",
+            "1 John (1: 1-10 & 2: 1-6)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -2265,19 +1574,19 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=051stSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى 3 : 1- 11",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى 3 : 1- 11",
             "1 John 3:1-11",
             "1 Jean 3:1-11",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أُنُظروا أيَّة محبَّةٍ أعطاها لناَ الآبُ حتَّى نُدعَى أبناءَ اللـهِ! وإنَّنا نحنُ كذلك، من أجل هذا لا يَعرفُنا العالم، لأنَّهُ لا يعرفهُ.",
+            "أُنُظروا أيَّة محبَّةٍ أعطاها لناَ الآبُ حتَّى نُدعَى أبناءَ الل-هِ! وإنَّنا نحنُ كذلك، من أجل هذا لا يَعرفُنا العالم، لأنَّهُ لا يعرفهُ.",
             "1 Behold what manner of love the Father has bestowed on us, that we should be called children of God! Therefore the world does not know us, because it did not know Him.",
             "1 Voyez, quel amour le Père nous a donné, puisque nous sommes appelés enfants de Dieu ! Et nous le sommes. Voici pourquoi le monde ne nous connaît pas : c’est qu’il ne l’a pas connu.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يا أحبَّائي، الآنَ نحنُ أولادُ اللـهِ، ولم يُظهَرْ بَعدُ ماذا سنكونُ. ولكن نعلمُ أنَّهُ إذا أُظهِرَ نكُونُ مِثلهُ، لأنَّنا سنراهُ كمَا هو. وكُلُّ مَن عندهُ هذا الرَّجاءُ بهِ، يُطَهِّرُ نَفسهُ كما أنَّ ذاكَ طاهرٌ.",
+            "يا أحبَّائي، الآنَ نحنُ أولادُ الل-هِ، ولم يُظهَرْ بَعدُ ماذا سنكونُ. ولكن نعلمُ أنَّهُ إذا أُظهِرَ نكُونُ مِثلهُ، لأنَّنا سنراهُ كمَا هو. وكُلُّ مَن عندهُ هذا الرَّجاءُ بهِ، يُطَهِّرُ نَفسهُ كما أنَّ ذاكَ طاهرٌ.",
             "2 Beloved, now we are children of God; and it has not yet been revealed what we shall be, but we know that when He is revealed, we shall be like Him, for we shall see Him as He is. 3 And everyone who has this hope in Him purifies himself, just as He is pure.",
             "2 Bien–aimés, nous sommes maintenant enfants de Dieu, et ce que nous serons n’a pas encore été manifesté ; mais nous savons que lorsqu’il sera manifesté, nous serons semblables à lui, parce que nous le verrons tel qu’il est. 3 Quiconque a cette espérance en lui se purifie, comme lui (le Seigneur) est pur.",
         ],
@@ -2289,27 +1598,27 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أيُّها الأولادُ، لا يُضِلَّكُم أحدٌ. مَن يصنعُ البرَّ فهو بارٌّ، كما أنَّ ذاك بارٌّ. مَن يفعلُ الخطيَّةَ فهو مِن الشَّيطان. لأنَّ الشَّيطان مِن البدءِ يُخطئُ. لأجل هذا أُظهِرَ ابنُ اللـهِ لكي يَنقُضَ أعمَال الشَّيطانَ.",
+            "أيُّها الأولادُ، لا يُضِلَّكُم أحدٌ. مَن يصنعُ البرَّ فهو بارٌّ، كما أنَّ ذاك بارٌّ. مَن يفعلُ الخطيَّةَ فهو مِن الشَّيطان. لأنَّ الشَّيطان مِن البدءِ يُخطئُ. لأجل هذا أُظهِرَ ابنُ الل-هِ لكي يَنقُضَ أعمَال الشَّيطانَ.",
             "7 Little children, let no one deceive you. He who practices righteousness is righteous, just as He is righteous. 8 He who sins is of the devil, for the devil has sinned from the beginning. For this purpose the Son of God was manifested, that He might destroy the works of the devil.",
             "7 Petits enfants, que personne ne vous séduise. Celui qui pratique la justice est juste, comme lui (le Seigneur) est juste. 8 Celui qui commet le péché est du diable, car le diable pèche dès le commencement. Le Fils de Dieu est apparu, afin de détruire les œuvres du diable.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من اللـهِ. بهذا أولادُ اللـهِ ظاهرونَ وأولادُ الشَّيطان.",
+            "كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من الل-هِ. بهذا أولادُ الل-هِ ظاهرونَ وأولادُ الشَّيطان.",
             "9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God. 10 In this the children of God and the children of the devil are manifest:",
             "9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كُلُّ من لا يفعلُ البرَّ فليسَ من اللـهِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.",
+            "كُلُّ من لا يفعلُ البرَّ فليسَ من الل-هِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.",
             "Whoever does not practice righteousness is not of God, nor is he who does not love his brother.11 For this is the message that you heard from the beginning, that we should love one another,.",
             "Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. 11 Voici le message que vous avez entendu dès le commencement : Aimons nous les uns les autres ;",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=052ndSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى( 3 : 18 ـ 24 )",
+            Prefix.katholikon + "&D=052ndSunday||Pntl25&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(3 : 18-24)",
             "1 John 3:18-24",
             "1 Jean 3:18-24",
         ],
@@ -2321,7 +1630,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّهُ إنْ لامَنَا قلبُنا فاللـهُ أعْظَمُ مِن قلبِنا، وهو عالمٌ بكُلِّ شيءٍ. يا أحبَّائي، إن لم يَلُمنا قلبُنا، فَلنَا دالةٌ عند اللـهِ.",
+            "لأنَّهُ إنْ لامَنَا قلبُنا فالل-هُ أعْظَمُ مِن قلبِنا، وهو عالمٌ بكُلِّ شيءٍ. يا أحبَّائي، إن لم يَلُمنا قلبُنا، فَلنَا دالةٌ عند الل-هِ.",
             "20 For if our heart condemns us, God is greater than our heart, and knows all things. 21 Beloved, if our heart does not condemn us, we have confidence toward God.",
             "20 de quelque manière que notre coeur nous condamne : Dieu est plus grand que notre coeur et connaît tout. 21 Bien–aimés, si notre coeur ne nous condamne pas, nous avons de l’assurance devant Dieu.",
         ],
@@ -2341,7 +1650,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=053rdSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 4 : 11 ـ 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 11-21)",
             "1 John 4:11-21",
             "1 Jean 4:11-21",
         ],
@@ -2385,19 +1694,19 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=054thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 9 ـ 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 9-21)",
             "1 John 5:9-21",
             "1 Jean 5:9-21",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن كُنَّا نَقبَلُ شهادَةَ النَّاسِ، فَشَهادةُ اللـه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ اللـهِ التي قد شهدَ بها عن ابنهِ. مَن يُؤمِن بِابن اللـهِ فشهادة اللـه ثابتةٌ فيه.",
+            "إن كُنَّا نَقبَلُ شهادَةَ النَّاسِ، فَشَهادةُ الل-ه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ الل-هِ التي قد شهدَ بها عن ابنهِ. مَن يُؤمِن بِابن الل-هِ فشهادة الل-ه ثابتةٌ فيه.",
             "9 If we receive the witness of men, the witness of God is greater; for this is the witness of God which He has testified of His Son. 10 He who believes in the Son of God has the witness in himself;",
             "9 Si nous recevons le témoignage des hommes, le témoignage de Dieu est plus grand ; car voici le témoignage de Dieu : c’est qu’il rend témoignage à son Fils. 10 Celui qui croit au Fils de Dieu, a ce témoignage en lui–même ;",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ومَن لا يُصدِّقُ اللـهَ، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها اللـهُ عن ابنهِ. وهذه هيَ الشَّهادةُ: أنَّ اللـهَ أعطانا الحياة الأبديَّة، وهذهِ الحياةُ هيَ في ابنهِ.",
+            "ومَن لا يُصدِّقُ الل-هَ، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها الل-هُ عن ابنهِ. وهذه هيَ الشَّهادةُ: أنَّ الل-هَ أعطانا الحياة الأبديَّة، وهذهِ الحياةُ هيَ في ابنهِ.",
             "he who does not believe God has made Him a liar, because he has not believed the testimony that God has given of His Son. 11 And this is the testimony: that God has given us eternal life, and this life is in His Son.",
             "celui qui ne croit pas Dieu, le fait menteur, puisqu’il ne croit pas au témoignage que Dieu a rendu à son Fils.11 Et voici ce témoignage : Dieu nous a donné la vie éternelle, et cette vie est en son Fils.",
         ],
@@ -2440,52 +1749,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0605&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية (1:12-21 )",
-            "2 Peter 1:12-21",
-            "2 Peter 1:12-21",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر. ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة.",
-            "12 Voilà pourquoi je vais toujours vous rappeler ces choses, bien que vous les sachiez et que vous soyez affermis dans la vérité présente.13 J’estime juste, aussi longtemps que je suis dans cette tente, de vous tenir en éveil par mes rappels,",
-            "For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.",
-            "14 car je sais, comme notre Seigneur Jésus–Christ me l’a fait connaître, que mon départ de cette tente est imminent. 15 Mais j’aurai soin qu’après mon départ vous puissiez en toute occasion vous en souvenir.",
-            "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته. لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت",
-            "16 Ce n’est pas, en effet, en suivant des fables habilement conçues que nous vous avons fait connaître la puissance et l’avènement de notre Seigneur Jésus–Christ, mais parce que nous avons vu sa majesté de nos propres yeux ; 17 car il a reçu honneur et gloire de Dieu le Père, quand la gloire pleine de majesté lui fit entendre cette voix :",
-            "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty. 17 For He received from God the Father honor and glory when such a voice",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كهذا من المجد الاسنى هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.",
-            "Celui–ci est mon Fils bien–aimé, objet de mon affection. 18 Nous avons entendu cette voix venant du ciel, lorsque nous étions avec lui sur la sainte montagne.",
-            "came to Him from the Excellent Glory: This is My beloved Son, in whom I am well pleased.'' 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكم",
-            "19 Et nous tenons pour d’autant plus certaine la parole prophétique à laquelle vous faites bien de prêter attention comme à une lampe qui brille dans un lieu obscur, jusqu’à ce que le jour commence à poindre, et que l’étoile du matin se lève dans vos coeurs.",
-            "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص. لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس",
-            "20 Avant tout, sachez qu’aucune prophétie de l’Écriture ne peut être l’objet d’interprétation particulière, 21 car ce n’est nullement par une volonté humaine qu’une prophétie a jamais été présentée, mais c’est poussés par le Saint–Esprit que des hommes ont parlé de la part de Dieu.",
-            "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=1005&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية(1 : 12 –19 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 12 –19)",
             "2 Peter 1:12-19",
             "2 Peter 1:12-19",
         ],
@@ -2523,7 +1788,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=1105&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى(5 ; 5 - 21)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(5 ; 5-21)",
             "1 Jean 5:5 - 21",
             "1John 5:5 - 21",
         ],
@@ -2590,46 +1855,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1205&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(3 : 15 – 22 )",
-            "1Peter 3:15-22",
-            "1 Peter 3:15-22",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف",
-            "15 Mais sanctifiez dans vos coeurs Christ le Seigneur ; soyez toujours prêts à vous défendre contre quiconque vous demande raison de l’espérance qui est en vous : mais (faites–le) avec douceur et crainte,",
-            "15 Always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكم ضمير صالح لكي يكون الذين يشتمون سيرتكم الصالحة في المسيح يخزون في ما يفترون عليكم كفاعلي شر. لان تألمكم ان شاءت مشيئة الله وانتم صانعون خيرا افضل منه وانتم صانعون شرا.",
-            "16 en ayant une bonne conscience, afin que là même où l’on vous calomnie, ceux qui diffament votre bonne conduite en Christ soient confondus. 17 Mieux vaut souffrir en faisant le bien, si telle est la volonté de Dieu, qu’en faisant le mal.",
-            "16 having a good conscience, that when they defame you as evildoers, those who revile your good conduct in Christ may be ashamed. 17 For it is better, if it is the will of God, to suffer for doing good than for doing evil.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فان المسيح ايضا تألم مرة واحدة من اجل الخطايا البار من اجل الاثمة لكي يقربنا الى الله مماتا في الجسد ولكن محيى في الروح. الذي فيه ايضا ذهب فكرز للارواح التي في السجن",
-            "18 En effet, Christ aussi est mort une seule fois pour les péchés, lui juste pour des injustes, afin de vous amener à Dieu. Mis à mort selon la chair, il a été rendu vivant selon l’Esprit.19 Par cet Esprit, il est aussi allé prêcher aux esprits en prison,",
-            "18 For Christ also suffered once for sins, the just for the unjust, that He might bring us to God, being put to death in the flesh but made alive by the Spirit, 19 by whom also He went and preached to the spirits in prison,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اذ عصت قديما حين كانت اناة الله تنتظر مرة في ايام نوح اذ كان الفلك يبنى الذي فيه خلص قليلون اي ثماني انفس بالماء. الذي مثاله يخلّصنا نحن الآن اي المعمودية",
-            "20 qui avaient été rebelles autrefois, lorsque la patience de Dieu se prolongeait, aux jours où Noé construisait l’arche dans laquelle un petit nombre de personnes, c’est–à–dire huit, furent sauvées à travers l’eau. 21 C’était une figure du baptême qui vous sauve,",
-            "20 who formerly were disobedient, when once the Divine longsuffering waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight souls, were saved through water. 21 There is also an antitype which now saves us baptism",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا ازالة وسخ الجسد بل سؤال ضمير صالح عن الله بقيامة يسوع المسيح. الذي هو في يمين الله اذ قد مضى الى السماء وملائكة وسلاطين وقوات مخضعة له",
-            "à présent, et par lequel on ne se débarrasse pas de la souillure de la chair, mais qui est la demande (adressée) à Dieu d’une bonne conscience, par la résurrection de Jésus–Christ 22 qui, monté au ciel, est à la droite de Dieu et à qui les anges, les pouvoirs et les puissances ont été soumis.",
-            "(not the removal of the filth of the flesh, but the answer of a good conscience toward God), through the resurrection of Jesus Christ, 22 who has gone into heaven and is at the right hand of God, angels and authorities and powers having been made subject to Him.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=1305&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى(2:20-25)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2:20-25)",
             "1 Jean 2:20-25",
             "1 John 2:20-25",
         ],
@@ -2654,96 +1881,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2205&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (5 : 9 - 20)",
-            "Jacques 5 : 9 - 20",
-            "James 5:9-20",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا يئن بعضكم على بعض ايها الاخوة لئلا تدانوا.هوذا الديان واقف قدام الباب.خذوا يا اخوتي مثالا لاحتمال المشقات والاناة الانبياء الذين تكلموا باسم الرب.",
-            "9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes.10 Pour la souffrance et la patience, le modèle à prendre, frères, ce sont les prophètes, qui ont parlé au nom du Seigneur.",
-            "9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door! 10 My brethren, take the prophets, who spoke in the name of the Lord,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ها نحن نطوّب الصابرين.قد سمعتم بصبر ايوب ورأيتم عاقبة الرب.لان الرب كثير الرحمة ورأوف",
-            "Voyez: nous félicitons les gens endurants; 11 vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.",
-            "as an example of suffering and patience. 11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord-- that the Lord is very compassionate and merciful.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن قبل كل شيء يا اخوتي لا تحلفوا لا بالسماء ولا بالارض ولا بقسم آخر.بل لتكن نعمكم نعم ولاكم لا لئلا تقعوا تحت دينونة. أعلى احد بينكم مشقات فليصلّ.أمسرور احد فليرتل.",
-            "12 Mais avant tout, mes frères, ne jurez pas, ni par le ciel, ni par la terre, ni d'aucune autre manière. Que votre oui soit oui et votre non, non, afin que vous ne tombiez pas sous le jugement.13 L'un de vous souffre-t-il? Qu'il prie. Est-il joyeux? Qu'il chante des cantiques.",
-            "12 But above all, my brethren, do not swear, either by heaven or by earth or with any other oath. But let your Yes,'' be Yes,'' and your No,'' No,'' lest you fall into judgment. 13 Is anyone among you suffering? Let him pray. Is anyone cheerful? Let him sing psalms.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أمريض احد بينكم فليدع شيوخ الكنيسة فيصلّوا عليه ويدهنوه بزيت باسم الرب. وصلاة الايمان تشفي المريض والرب يقيمه وان كان قد فعل خطية تغفر له.",
-            "14 L'un de vous est-il malade? Qu'il fasse appeler les anciens de l'Église et qu'ils prient après avoir fait sur lui une onction d'huile au nom du Seigneur.15 La prière de la foi sauvera le patient; le Seigneur le relèvera et, s'il a des péchés à son actif, il lui sera pardonné.",
-            "14 Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. 15 And the prayer of faith will save the sick, and the Lord will raise him up. And if he has committed sins, he will be forgiven.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اعترفوا بعضكم لبعض بالزلات وصلّوا بعضكم لاجل بعض لكي تشفوا.طلبة البار تقتدر كثيرا في فعلها.",
-            "16 Confessez-vous donc vos péchés les uns aux autres et priez les uns pour les autres, afin d'être guéris. La requête d'un juste agit avec beaucoup de force.",
-            "16 Confess your trespasses to one another, and pray for one another, that you may be healed. The effective, fervent prayer of a righteous man avails much.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كان ايليا انسانا تحت الآلام مثلنا وصلّى صلاة ان لا تمطر فلم تمطر على الارض ثلاث سنين وستة اشهر.",
-            "17 Elie était un homme semblable à nous; il pria avec ferveur pour qu'il ne plût pas, et il ne plut pas sur la terre pendant trois ans et six mois;",
-            "17 Elijah was a man with a nature like ours, and he prayed earnestly that it would not rain; and it did not rain on the land for three years and six months.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ثم صلّى ايضا فاعطت السماء مطرا واخرجت الارض ثمرها. ايها الاخوة ان ضل احد بينكم عن الحق فردّه احد.فليعلم ان من رد خاطئا عن ضلال طريقه يخلّص نفسا من الموت ويستر كثرة من الخطايا ٍ",
-            "18 puis il pria de nouveau, le ciel donna de la pluie, la terre produisit son fruit.19 Mes frères, si l'un de vous s'est égaré loin de la vérité et qu'on le ramène,20 sachez que celui qui ramène un pêcheur du chemin où il s'égarait lui sauvera la vie et fera disparaître une foule de péchés.",
-            "18 And he prayed again, and the heaven gave rain, and the earth produced its fruit. 19 Brethren, if anyone among you wanders from the truth, and someone turns him back, 20 let him know that he who turns a sinner from the error of his way will save a soul from death and cover a multitude of sins.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=2605&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (4:12-19)",
-            "1 Peter 4:12-19",
-            "1 Peter 4:12-19",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاحباء لا تستغربوا البلوى المحرقة التي بينكم حادثة لاجل امتحانكم كانه اصابكم امر غريب بل كما اشتركتم في آلام المسيح",
-            "12 Bien–aimés, ne soyez pas surpris de la fournaise qui sévit parmi vous pour vous éprouver, comme s’il vous arrivait quelque chose d’étrange.13 Au contraire, réjouissez–vous de participer aux souffrances du Christ,",
-            "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings, that when His glory is revealed,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "افرحوا لكي تفرحوا في استعلان مجده ايضا مبتهجين ان عيّرتم باسم المسيح فطوبى لكم لان روح المجد والله يحل عليكم. اما من جهتهم فيجدّف عليه واما من جهتكم فيمجد.",
-            "afin de vous réjouir aussi avec allégresse, lors de la révélation de sa gloire. 14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !",
-            "you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فلا يتألم احدكم كقاتل او سارق او فاعل شر او متداخل في امور غيره.ولكن ان كان كمسيحي فلا يخجل بل يمجد الله من هذا القبيل.",
-            "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.",
-            "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه الوقت لابتداء القضاء من بيت الله.فان كان اولا منا فما هي نهاية الذين لا يطيعون انجيل الله.",
-            "17 Car c’est le moment où le jugement va commencer par la maison de Dieu. Or, si c’est par nous qu’il débute, quelle sera la fin de ceux qui n’obéissent pas à l’Évangile de Dieu ?",
-            "17 For the time has come for judgment to begin at the house of God; and if it begins with us first, what will be the end of those who do not obey the gospel of God?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وان كان البار بالجهد يخلص فالفاجر والخاطئ اين يظهران. فاذا الذين يتألمون بحسب مشيئة الله فليستودعوا انفسهم كما لخالق امين في عمل الخير",
-            "18 Et si le juste est sauvé difficilement, que deviendra celui qui est impie et pécheur ? 19 Ainsi, que ceux qui souffrent selon la volonté de Dieu, remettent leur âme au fidèle Créateur en faisant le bien.",
-            "18 Now If the righteous one is scarcely saved, where will the ungodly and the sinner appear?'' 19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=3005&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (3 : 5 - 14)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3 : 5-14)",
             "1 Pierre 3 : 5 - 14",
             "1 Peter 3:5-14",
         ],
@@ -2792,64 +1931,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0206&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (5 : 1-14)",
-            "1 Pierre 5 : 1-14",
-            "1 Peter 5:1-14",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أطلبُ إلى الشُّيوخ الذين بينكم، أنا الشَّيخَ شريكُكم، والشَّاهدَ لآلام المسيح، وشريكَ المجدِ العتيدِ أن يُعلنَ،",
-            "1 J'exhorte les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée:",
-            "1 The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed:",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ارعوا رَعيَّةَ الله التي بينكم وتعاهدوها، لا بالقهر بل بالاختيار كمثل الله، ولا ببخلٍ بل بنشاطٍ",
-            "2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement.",
-            "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولا كمن يتسلطُ على المواريث بل صائرينَ أمثلةً للرَّعيَّةِ. ومتَى ظهر رئيسُ الرُّعاةِ تنالون إكليلَ المجدِ الذي لا يضمحل.",
-            "3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau.4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas.",
-            "3 nor as being lords over those entrusted to you, but being examples to the flock; 4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كذلك أنتُم أيُّها الشُّبَّان اخضعوا للشُّيوخ، وكونوا جميعاً مُتسربلينَ بالتَّواضع بعضكم لبعضٍ، لأن الله يُقاوِم المُستكبرين، ويُعطِي نعمةً للمتواضعين. فتواضعوا تحت يد الله القويَّة لكي يرفعكُم في زمان الافتقاد،",
-            "5 De même, jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce. 6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;",
-            "5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, But gives grace to the humble. 6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مُلقينَ كلَّ همِّكُم عليه، لأنه هو يعتني بكم. كونوا مُتيقِّظينَ واسهروا. لأن إبليس عدوكم يجول كأسدٍ زائر، يلتمس مَن يبتلعه.",
-            "7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous.8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer.",
-            "7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فقاوِموه، راسخينَ في الإيمان، عالمين أن نفس هذه الآلام تُجرَى على إخوتكم الذين في العالم. وإله كلّ نعمةٍ الذي دعاكُم إلى مجدهِ الأبديِّ في المسيح يسوع، بعدما تألَّمتُم يسيراً،",
-            "9 Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères dans le monde. 10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps;",
-            "9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world. 10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم. له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين، ـ كما أظُنُّ ـ كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ.",
-            "il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles, Amen. 12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés. La communauté des élus",
-            "perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen.12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون ( مصر )، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.",
-            "13 qui est à Babylone vous salue, ainsi que Marc, mon fils?14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.",
-            "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=061stSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية (3:14-18)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (3:14-18)",
             "2 Pierre 3:14-18",
             "2 Peter 3:14-18",
         ],
@@ -2886,58 +1969,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=062ndSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الثانية ( 1 : 1 ـ 13 )",
-            "2 Jean 1 : 1 - 13",
-            "2 John 1:1-13",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "من الشَّيخ إلى السيدة المُختارة، وإلى أولادها الذين أنا أحبُّهم بالحقِّ، ولستُ أنا فقط، بل جميع الذين قد عرَفُوا الحقَّ. من أجل الحقِّ الثَّابت فينا وسيكون معنا إلى الأبد،",
-            "1 L'Ancien, à la Dame élue et à ses enfants, que j'aime dans la lumière de la vérité - non pas moi seulement, mais encore tous ceux qui possèdent la connaissance de la vérité -, 2 en vertu de la vérité qui demeure en nous et sera avec nous à jamais:",
-            "1:1 THE ELDER, To the elect lady and her children, whom I love in truth, and not only I, but also all those who have known the truth, 2 because of the truth which abides in us and will be with us forever:",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "تكون النِّعمةُ والرَّحمةُ والسَّلامُ معنا من الله الآبِ ومن ربِّنا يسوع المسيح، ابن الآبِ بالحقِّ والمحبَّةِ. فرحتُ جدّاً لأني وجدتُ من أولادكِ بعضاً سالكين فى الحقِّ، كما أخذنا وصيَّة من الآبِ.",
-            "3 avec nous seront grâce, miséricorde, paix, qui nous viennent de Dieu le Père, et de Jésus Christ, le Fils du Père, dans la vérité et l'amour. 4 J'ai éprouvé une très grande joie à trouver de tes enfants qui marchent dans la voie de la vérité, selon le commandement que nous avons reçu du Père.",
-            "3 Grace, mercy, and peace will be with you from God the Father and from the Lord Jesus Christ, the Son of the Father, in truth and love. 4 I rejoiced greatly that I have found some of your children walking in truth, as we received commandment from the Father.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والآن أطلب منكِ أيتها السَّيِّدة، لا كأنِّي أكتب إليكِ وصيَّةً جديدةً، بل التي كانت عندنا من البدء: أن نُحبَّ بعضنا بعضاً. وهذه هيَ المحبَّة، أن نسلكَ بحسبِ وصاياه.",
-            "5 Et maintenant, Dame, je te le demande - je ne t'écris pas là un commandement nouveau, mais celui que nous avons depuis le commencement -, aimons-nous les uns les autres; 6 et voici ce qu'est l'amour: que nous marchions dans la voie de ses commandements.",
-            "5 And now I plead with you, lady, not as though I wrote a new commandment to you, but that which we have had from the beginning: that we love one another. 6 This is love, that we walk according to His commandments.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.",
-            "Tel est le commandement que vous avez entendu depuis le commencement, pour que vous marchiez dans cette voie. 7 Car de nombreux séducteurs se sont répandus dans le monde: ils ne professent pas la foi à la venue de Jésus Christ dans la chair. Le voilà, le séducteur et l'antéchrist!",
-            "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فانظروا إلى أنفُسِكم لئلاَّ تفقِدوا ما عملتموه، بل تنالوا أجراً تاماً. كلُّ مَن يتعدَّى ولا يثبت فى تعليم المسيح فليس له إلهٌ. ومَن يثبُت فى تعليم المسيح فهذا له الآبُ والابنُ.",
-            "8 Prenez garde à vous-mêmes, afin de ne pas perdre le fruit de vos oeuvres, mais de recevoir pleine récompense. 9 Quiconque va trop avant et ne demeure pas dans la doctrine du Christ, n'a pas Dieu. Celui qui demeure dans la doctrine, il a, lui, et le Père et le Fils.",
-            "8 Look to yourselves, that we do not lose those things we worked for, but that we may receive a full reward. 9 Whoever transgresses and does not abide in the doctrine of Christ does not have God. He who abides in the doctrine of Christ has both the Father and the Son.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ومَن يأتيكم، ولا يجيء بهذا التَّعليم، فلا تقبلوه في البيت، ولا تقولوا له سلامٌ. ومن يقول له سلامٌ فهو شريكٌ له في أعمالهِ الشِّرِّيرةِ.",
-            "10 Si quelqu'un vient à vous sans être porteur de cette doctrine, ne l'accueillez pas chez vous et ne lui souhaitez pas la bienvenue. 11 Qui lui souhaite la bienvenue communie à ses oeuvres mauvaises.",
-            "10 If anyone comes to you and does not bring this doctrine, do not receive him into your house nor greet him; 11 for he who greets him shares in his evil deeds.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "إذ كانَ لي كثيرٌ لأكتبه إليكم، لم أُرِد أن يكون بورقٍ وحبرٍ، لأنِّي أرجو أن آتيَ إليكم وأتكلَّم فماً لفم، لكي يكونَ فرحكم كاملاً. يُسلِّمُ عليكِ أولاد أُختكِ المُختارةِ.",
-            "12 J'ai bien des choses à vous écrire, pourtant je n'ai pas voulu le faire avec du papier et de l'encre. Car j'espère me rendre chez vous et vous parler de vive voix, afin que notre joie soit complète. 13 Te saluent les enfants de ta Sœur l'élue.",
-            "12 Having many things to write to you, I did not wish to do so with paper and ink; but I hope to come to you and speak face to face, that our joy may be full. 13 The children of your elect sister greet you. Amen.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=063rdSunday&C=Title",
-            " الكاثوليكون من رسالة يهوذا ( 1 : 14 – 25 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا (1 : 14 – 25)",
             "Jude 1 : 14 - 25",
             "Jude 14 – 25",
         ],
@@ -2987,7 +2020,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=064thSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (1 : 3 1- 21)",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 3 1- 21)",
             "Jacques 1 : 13-21",
             "James 1: 13 - 21",
         ],
@@ -3018,36 +2051,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1307&C=Title",
-            "الكاثوليكون من رسالة بطرس الرسول الأولى (4 : 1 ـ 11)",
-            "1 Pierre 4:1-11",
-            "1 Peter 4:1-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإذ قد تألَّم المسيح بالجسد عنَّا، تسلَّحوا أنتُم أيضاً بهذا المثال. فإنَّ مَن تألَّم بالجسد، كُفَّ عن الخطيَّة، لكي لا يعيش أيضاً الزَّمان الباقي في الجسد، لشهوات النَّاس، بل لإرادة الله.",
-            "1 Ainsi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché, pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.",
-            "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّه يكفيكم الزَّمان الذي مَضى إذ كنتم تصنعون فيه إرادة الأُمَم، وتسلكون في النجاسات والشَّهوات، وإدمان المُسكرات المتنوعة، والخلاعة، والدنس، وعبادة الأوثان المرذولة، الأمر الذي فيه يستغربونَ أنَّكُم لستُم تركضون معهم إلى فيض عدم الصَّحة عينها، مُجدِّفينَ. الذين سوف يُعطون جواباً للذي هو على استعدادٍ أن يُدين الأحياء والأموات. فإنَّه لأجل هذا بُشِّرَ الموتى أيضاً، لكي يُدانوا حسب النَّاس بالجسد، ولكن ليَحيَوا حسب الله بالرُّوح.",
-            "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes. 4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts. 6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit.",
-            " 3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries. 4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead. 6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            " وإنَّما نهاية كلِّ شيءٍ قد اقتربت، فتعقَّلوا إذاً واسهروا في الصَّلوات. ولكن قبل كلِّ شيءٍ، فلتكن المحبَّة دائمةً فيكُم بعضكُم لبعضٍ، لأنَّ المحبَّة تستُر كثرةً من الخطايا. كونوا مُحبِّين ضيافة الغُرباء بعضكم لبعضٍ بلا تذمُّر. وليخدم كلُّ واحدٍ الآخرين بما نال من المواهب بعضكم بعضاً، كوكلاء صالحين على نعمة الله المتنوِّعة. مَن يتكلَّم فكأقوال الله. ومَن يخدم فكأنَّه من قوَّةٍ يُهيئها الله، لكي يتمجَّد الله في كلِّ شيءٍ بيسوع المسيح، الذي له المجد والسُّلطان إلى أبدِ الآبدينَ. آمين.",
-            "7 La fin de toutes choses est proche. Montrez donc de la sagesse et soyez sobres afin de pouvoir prier. 8 Ayez avant tout un amour constant les uns pour les autres, car l'amour couvre une multitude de péchés. 9 Pratiquez l'hospitalité les uns envers les autres, sans murmurer. 10 Mettez-vous, chacun selon le don qu'il a reçu, au service les uns des autres, comme de bons administrateurs de la grâce de Dieu, variée en ses effets. 11 Si quelqu'un parle, que ce soit pour transmettre les paroles de Dieu; si quelqu'un assure le service, que ce soit avec la force que Dieu accorde, afin que par Jésus Christ Dieu soit totalement glorifié, lui à qui appartiennent gloire et domination pour les siècles des siècles, Amen.",
-            "7 But the end of all things is at hand; therefore be serious and watchful in your prayers. 8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God. 11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=2308&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 1 ـ 11 )",
-            "1 Pierre 4:1-11",
-            "1 Peter 4:1-11",
+            Prefix.katholikon + "&D=2503||1307||2308||0111||GL8thSunday||Pntl2&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (4 : 1-11)",
+            "1 Pierre (4: 1-11)",
+            "1 Peter (4: 1-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -3076,10 +2083,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2708&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (3:8-15)",
-            "1 Pierre 3:8-15",
-            "1 Peter 3:8-15",
+            Prefix.katholikon + "&D=2708||2011||Pntl4&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3: 8-15)",
+            "1 Pierre (3: 8-15)",
+            "1 Peter (3: 8-15)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -3096,8 +2103,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=3008&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 14 )",
+            Prefix.katholikon + "&D=3008||1703||2403||0206&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 1-14)",
             "1 Pierre 5:1-14",
             "1 Peter 5:1-14",
         ],
@@ -3128,60 +2135,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0109&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الثانية ( 1 : 1 – 13 )",
-            "2 Jean 1:1-13",
-            "2 John 1:1-13",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "من الشَّيخ إلى السيدة المُختارة، وإلى أولادها الذين أنا أحبُّهم بالحقِّ، ولستُ أنا فقط، بل جميع الذين قد عرفوا الحقَّ. من أجل الحقِّ الثَّابت فينا وسيكون معنا إلى الأبد،",
-            "1 L’ancien, à Kyria l’élue et à ses enfants que j’aime dans la vérité –– et non pas moi seulement, mais aussi tous ceux qui ont connu la vérité –2 à cause de la vérité qui demeure en nous et qui sera avec nous pour l’éternité :",
-            "1 THE ELDER, To the elect lady and her children, whom I love in truth, and not only I, but also all those who have known the truth, 2 because of the truth which abides in us and will be with us forever:",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "تكون النِّعمةُ والرَّحمةُ والسَّلامُ معنا من الله الآبِ ومن ربِّنا يسوع المسيح، ابن الآبِ بالحقِّ والمحبَّةِ. فرحتُ جدّاً لأني وجدتُ من أولادك سالكين فى الحقِّ، كما أخذنا وصيَّة من الآبِ.",
-            "3 La grâce, la miséricorde et la paix seront avec nous de la part de Dieu le Père et de la part de Jésus–Christ, le Fils du Père, dans la vérité et l’amour. 4 Je me suis beaucoup réjoui de trouver de tes enfants qui marchent dans la vérité, selon le commandement que nous avons reçu du Père.",
-            "3 Grace, mercy, and peace will be with you from God the Father and from the Lord Jesus Christ, the Son of the Father, in truth and love. 4 I rejoiced greatly that I have found some of your children walking in truth, as we received commandment from the Father.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والآن أطلب منكِ أيتها السَّيِّدة، لا كأنِّي أكتب إليكِ وصيَّةً جديدةً، بل التى كانت عندنا من البدء: أن نحبَّ بعضنا بعضاً. وهذه هى المحبَّة، أن نسلكَ بحسبِ وصاياه.",
-            "5 Et maintenant, Kyria –– ce que je t’écris ainsi n’est pas un commandement nouveau, mais seulement celui que nous avons eu dès le commencement –– je te demande que nous nous aimions les uns les autres. 6 Et l’amour consiste à marcher selon ses commandements.",
-            "5 And now I plead with you, lady, not as though I wrote a new commandment to you, but that which we have had from the beginning: that we love one another. 6 This is love, that we walk according to His commandments.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هذه هيَ الوصيَّة، كما سَمِعتم من البدء أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.",
-            "C’est là le commandement dans lequel vous devez marcher, comme vous l’avez appris dès le commencement. 7 Car dans le monde sont entrés plusieurs séducteurs, qui ne confessent pas Jésus–Christ venu dans la chair. Voilà le séducteur et l’antichrist.",
-            "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فانظروا إلى أنفُسِكـم لئلاَّ تفقـِدوا مـا عمـلتموه، بل تنالوا أجـراً تـامـاً. كلُّ من يتعـدَّى ولا يثبت فى تعليم المسيح فليس له إلهٌ. ومَن يثبُت فى تعليم المسيح فهذا له الآبُ والابنُ.",
-            "8 Prenez garde à vous–mêmes, afin de ne pas perdre le fruit de notre travail, mais de recevoir une pleine récompense. 9 Quiconque va plus loin et ne demeure pas dans la doctrine du Christ n’a pas Dieu ; celui qui demeure dans la doctrine a le Père et le Fils.",
-            "8 Look to yourselves, that we do not lose those things we worked for, but that we may receive a full reward. 9 Whoever transgresses and does not abide in the doctrine of Christ does not have God. He who abides in the doctrine of Christ has both the Father and the Son.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ومَن يأتيكم، ولا يجيء بهذا التَّعليم، فلا تقبلوه في البيت، ولا تقولوا له سلامٌ. ومن يقول له سلامٌ فهو شريكٌ له فى أعمالهِ الشريرةِ.",
-            "10 Si quelqu’un vient à vous et n’apporte pas cette doctrine, ne le recevez pas dans votre maison et ne lui dites pas : Salut ! 11 car celui qui lui dit : Salut ! participe à ses mauvaises oeuvres.",
-            "10 If anyone comes to you and does not bring this doctrine, do not receive him into your house nor greet him; 11 for he who greets him shares in his evil deeds.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "إذ كان لي كثيرٌ لأكتبه إليكم، لم أُرِدْ أن يكون بورقٍ وحبرٍ، لأنِّي أرجو أن آتيَ إليكم وأتكلَّم فماً لفم، لكي يكونَ فرحكم كاملاً. يُسلِّمُ عليكِ أولاد أُختكِ المُختارةِ.",
-            "12 Quoique j’aie beaucoup à vous écrire, je n’ai pas voulu le faire avec le papier et l’encre ; mais j’espère aller chez vous, et vous parler de vive voix, afin que notre joie soit complète. 13 Les enfants de ta soeur, l’élue, te saluent.",
-            "12 Having many things to write to you, I did not wish to do so with paper and ink; but I hope to come to you and speak face to face, that our joy may be full. 13 The children of your elect sister greet you.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=093rdSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 1 ـ 9 )",
-            "1Peter 1:1-9",
-            "1Peter 1:1-9",
+            Prefix.katholikon + "&D=093rdSunday||101stSunday||2903&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 1-9)",
+            "1 Peter (1 :1-9)",
+            "1 Peter (1 :1-9)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -3222,78 +2179,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=094thSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 1 ـ 9 )",
-            "2 Peter 1:1-8",
-            "2 Peter 1:1-8",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.",
-            "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:",
-            "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لتكثر لكم النِّعمة والسَّلام بمعرفة الله ويسوع المسيح ربِّنا. كما أن كلَّ شيءٍ قد صار لنا بقوة لاهوته للحياة والتَّقوى، التى أُعطِيَت لنا مجاناً بمعرفة الذي دعانا بمجده والفضيلة،",
-            "2 Grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord, 3 as His divine power has given to us all things that pertain to life and godliness, through the knowledge of Him who called us by glory and virtue, 4 by which have been given to us exceedingly great and precious promises,",
-            "2 Que la grâce et la paix vous soient multipliées par la connaissance de Dieu et de Jésus notre Seigneur ! 3 Sa divine puissance nous a donné tout ce qui contribue à la vie et à la piété, en nous faisant connaître celui qui nous a appelés par sa propre gloire et par sa vertu.4 Par elles les promesses les plus précieuses",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وبواسطة هذه الأمجاد الجليلة، التي أُعطِيَت لنا للكرامة لكي تصيروا بها شُركاء الطَّبيعة الإلهيَّة، هاربين من شهوة الفساد التي في العالم. ولهذا عينه ـ وأنتم باذلون كلّ اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفي الفضيلة معرفة،",
-            "that through these you may be partakers of the divine nature, having escaped the corruption that is in the world through lust. 5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge,",
-            "et les plus grandes nous ont été données, afin que par elles vous deveniez participants de la nature divine, en fuyant la corruption qui existe dans le monde par la convoitise ;5 à cause de cela même, faites tous vos efforts pour joindre à votre foi la vertu, à la vertu la connaissance,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وفي المعرفة تعفُّفـاً، وفي التَّعفُّف صبراً، وفي الصَّبر تقوى، وفي التَّقوى مودَّة أخويَّةً، وفي المودَّة الأخويَّة محبَّة.",
-            "6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.",
-            "6 à la connaissance la maîtrise de soi, à la maîtrise de soi la persévérance, à la persévérance la piété,7 à la piété la fraternité, à la fraternité l’amour.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأن هذه إذا كانت فيكم وكثرت، تُصَيِّركُمْ لا مُتكاسلين ولا غير مُثمرين لمعرفة ربِّنا يسوع المسيح.",
-            "8 For if these things are yours and abound, you will be neither barren nor unfruitful in the knowledge of our Lord Jesus Christ.",
-            "8 En effet, si ces choses existent en vous et s’y multiplient, elles ne vous laisseront pas sans activité ni sans fruit pour la connaissance de notre Seigneur Jésus–Christ ;",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=1009&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 12 ـ 19 )",
-            "1 Pierre 4:12 - 19",
-            "1 Peter 4:12-19",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يا أحبائي لا تَستغرِبوا مِن البَلوى المُحرِقَة التى تحدث بَينْكُم لأجْلِ تجربتكُم كأنَّهُ أمرٌ غريبٌ قد أصابكُم، بَل كما اشتَرَكتُم في أوجاع المسيح، افرحُوا",
-            "12 Bien-aimés, ne trouvez pas étrange d'être dans la fournaise de l'épreuve, comme s'il vous arrivait quelque chose d'anormal.13 Mais, dans la mesure où vous avez part aux souffrances du Christ, réjouissez-vous,",
-            "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكى تَفرحُوا بِابتهاج في استِعلانِ مَجدِهِ أيضاً. وإنْ عُيِّرتُم بِاسم المسيح، فَطُوبَى لكُم، لأنَّهُ ذا المَجد والقوَّة وروح اللهِ يَحلُّ عليكُم. فلا يَتألَّم أحَدُكُم كقاتِلٍ أو سارِقٍ أو فاعِل شرٍّ",
-            "afin que, lors de la révélation de sa gloire, vous soyez aussi dans la joie et l'allégresse.14 Si l'on vous outrage pour le nom du Christ, heureux êtes-vous, car l'Esprit de gloire, l'Esprit de Dieu, repose sur vous. 15 Que nul d'entre vous n'ait à souffrir comme meurtrier, voleur ou malfaiteur,",
-            "that when His glory is revealed, you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified. 15 But let none of you suffer as a murderer, a thief, an evildoer,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أو كناظِر إلى ما ليسَ لهُ. ولكنْ إنْ كانَ كَمَسيحيٍّ فلا يَخجَلْ، بَل يُمَجِّدُ اللهَ بهَذا الاِسم. لأنَّهُ الوقتُ لابتِداءِ القَضاءِ مِن بَيتِ اللهِ. فإنْ كان قد ابتدأ أوَّلاً مِنَّا،",
-            "ou comme se mêlant des affaires d'autrui,16 mais si c'est comme chrétien, qu'il n'en ait pas honte, qu'il glorifie plutôt Dieu de porter ce nom. 17 C'est le moment, en effet, où le jugement commence par la maison de Dieu: or, s'il débute par nous,",
-            "or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter. 17 For the time has come for judgment to begin at the house of God; and if it begins with us first,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فَمَا هى عاقبةُ الَّذينَ لا يُطِيعُونَ إنجيلَ اللهِ؟ وإنْ كانَ البارُّ بالجَهْدِ يَخلُصُ، فالخاطئُ والمُنافِقُ أينَ يَظهَرانِ؟ فإذاً الَّذينَ يَتألَّمونَ كمشِيئةِ اللهِ، فليَستَودِعوا أنفسَهُم للهِ الخالق الأمين في عملِ الخيرِ.",
-            "quelle sera la fin de ceux qui refusent de croire à l'Évangile de Dieu? 18 Et si le juste est sauvé à grand-peine, qu'adviendra-t-il de l'impie et du pécheur?19 Ainsi, que ceux qui souffrent selon la volonté de Dieu remettent leur âme au fidèle Créateur, en faisant le bien.",
-            "what will be the end of those who do not obey the gospel of God? 18 Now If the righteous one is scarcely saved, Where will the ungodly and the sinner appear? 19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2009&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 5 ـ 14 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 5-14)",
             "1 Pierre 5:5 - 14",
             "1 Peter 5:5-14",
         ],
@@ -3317,13 +2204,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين،ـ كما أظُنُّ ـ كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ. هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم.",
+            "له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين،- كما أظُنُّ-كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ. هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم.",
             "il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles, Amen.12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés.",
             "perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen. 12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون ( مصر )، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.",
+            "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون (مصر)، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.",
             "13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils. Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ. 13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils. Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.",
             "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.",
         ],
@@ -3331,7 +2218,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2409&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 7 – 19 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 7 – 19)",
             "1 Jean 4 : 7 - 19",
             "1 John 4:7-19",
         ],
@@ -3380,10 +2267,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=2609&C=Title",
-            " الكاثوليكون من رسالة بطرس الثانية (1 : 12 – 21 )",
-            "2 Pierre 1 : 12 - 21",
-            "2 Peter 1:12-21",
+            Prefix.katholikon + "&D=2609||1312||0605||0511&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الثانية (1: 12 – 21)",
+            "2 Pierre 1: (12 - 21)",
+            "2 Peter (1: 12-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -3424,134 +2311,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0210&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الاولى 1 :25 – 2: 10 ) )",
-            "1 Pierre 1:25 - 2:1-10",
-            "1 Peter 1:25 & 2:1-10",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما كلمة الرب فتثبت الى الابد.وهذه هي الكلمة التي بشرتم بها فاطرحوا كل خبث وكل مكر والرياء والحسد وكل مذمة",
-            "25 Mais la Parole du Seigneur demeure éternellement. Or, cette Parole, c'est l'Évangile qui vous a été annoncé. 1 Rejetez donc toute méchanceté et toute ruse, toute forme d'hypocrisie, d'envie et de médisance.",
-            "25 But the word of the Lord endures forever. Now this is the word which by the gospel was preached to you. 1 Therefore, laying aside all malice, all guile, hypocrisy, envy, and all evil speaking,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكاطفال مولودين الآن اشتهوا اللبن العقلي العديم الغش لكي تنموا به ان كنتم قد ذقتم ان الرب صالح. الذي اذ تأتون اليه حجرا حيّا مرفوضا من الناس ولكن مختار من الله كريم",
-            "2 Comme des enfants nouveau-nés, désirez le lait pur de la parole afin que, par lui, vous grandissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes mais choisie et précieuse devant Dieu.",
-            "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كونوا انتم ايضا مبنيين كحجارة حية بيتا روحيا كهنوتا مقدسا لتقديم ذبائح روحية مقبولة عند الله بيسوع المسيح. لذلك يتضمن ايضا في الكتاب هانذا اضع في صهيون حجر زاوية",
-            "5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ. 6 Car on trouve dans l'Écriture: Voici, je pose en Sion une pierre angulaire,",
-            "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold, I lay in Zion a chief cornerstone,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مختارا كريما والذي يؤمن به لن يخزى. فلكم انتم الذين تؤمنون الكرامة واما للذين لا يطيعون فالحجر الذي رفضه البناؤون هو قد صار راس الزاوية",
-            "choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu. 7 A vous donc, les croyants, l'honneur; mais pour les incrédules, la pierre qu'ont rejetée les bâtisseurs est devenue la pierre de l'angle,",
-            "elect, precious, and he who believes on Him will by no means be put to shame.' 7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected has become the chief cornerstone,''",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وحجر صدمة وصخرة عثرة.الذين يعثرون غير طائعين للكلمة الامر الذي جعلوا له. واما انتم فجنس مختار وكهنوت ملوكي امة مقدسة شعب اقتناء",
-            "8 et aussi une pierre d'achoppement, un roc qui fait tomber. Ils s'y heurtent, parce qu'ils refusent de croire à la parole, et c'est à cela qu'ils étaient destinés. 9 Mais vous, vous êtes la race élue, la communauté sacerdotale du roi, la nation sainte, le peuple que Dieu s'est acquis,",
-            "8 and A stone of stumbling and a rock of offense.'' They stumble, being disobedient to the word, to which they also were appointed. 9 But you are a chosen generation, a royal priesthood, a holy nation, His own special people,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تخبروا بفضائل الذي دعاكم من الظلمة الى نوره العجيب. الذين قبلا لم تكونوا شعبا واما الآن فانتم شعب الله.الذين كنتم غير مرحومين واما الآن فمرحومون",
-            "pour que vous proclamiez les hauts faits de celui qui vous a appelés des ténèbres à sa merveilleuse lumière, 10 vous qui jadis n'étiez pas son peuple, mais qui maintenant êtes le peuple de Dieu; vous qui n'aviez pas obtenu miséricorde, mais qui maintenant avez obtenu miséricorde.",
-            "that you may proclaim the praises of Him who called you out of darkness into His marvelous light; 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=101stSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 1 ـ 9 )",
-            "1Peter 1:1-9",
-            "1Peter 1:1-9",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بطرس، رسولُ يسوع المسيح، للمُختارين المُتغرِّبين في شتات بُنتُس وغلاطية وكبَّادوكيَّة وآسيَّا وبيثينيَّة،",
-            "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,",
-            "1 Pierre, apôtre de Jésus–Christ, aux élus qui sont étrangers dans la dispersion : au Pont, en Galatie, en Cappadoce, en Asie et en Bithynie,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بمقتضى علم الله الآب السَّابق، في تقديس الرُّوح للطَّاعة، ورشِّ دم يسوع المسيح. لِتُكثَر لكم النِّعمة والسَّلامُ. مباركٌ الله أبو ربِّنا يسوع المسيح،",
-            "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied. 3 Blessed be the God and Father of our Lord Jesus Christ,",
-            "2 (élus) selon la prescience de Dieu le Père, par la sanctification de l’Esprit, pour l’obéissance et l’aspersion du sang de Jésus–Christ : Que la grâce et la paix vous soient multipliées ! 3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي بكثرة رحمته وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات، للميراث الذي لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظاً لكم في السَّموات،",
-            "who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you,",
-            "qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أيُّها المحروسين بقوة الله، بالإيمان للخلاص المُستَعدّ أن يُعلَن في الزمن الأخير. الذي به تبتهجون الآن يسيراً، وإن كان يجب أن تتألموا بتجارب متنوِّعة،",
-            "5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,",
-            "5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تكون صفوة إيمانكم كريمة أفضل من الذَّهب الفاني، المُجرَّب بالنَّار، لتوجَدُوا بفخر ومجدٍ وكرامةٍ عند استعلان يسوع المسيح،",
-            "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,",
-            "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus – Christ.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ذلك الذي وإن لم تعرفوه تحبُّونه. هذا الذي لم تروه وآمنتم به، فتهللوا بفرح لا يُنطق به ومُمجد، وتأخذوا كمال إيمانكم وخلاص أنفسكم.",
-            "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls. 8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.",
-            "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=102ndSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 1 ـ 9 )",
-            "2 Peter 1:1-8",
-            "2 Peter 1:1-8",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح. لتكثر لكم النِّعمة والسَّلام بمعرفة الله ويسوع المسيح ربِّنا.",
-            "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ: 2 Grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord,",
-            "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :2 Que la grâce et la paix vous soient multipliées par la connaissance de Dieu et de Jésus notre Seigneur !",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كما أن كلَّ شيءٍ قد صار لنا بقوة لاهوته للحياة والتَّقوى، التى أُعطِيَت لنا مجاناً بمعرفة الذي دعانا بمجده والفضيلة،",
-            "3 as His divine power has given to us all things that pertain to life and godliness, through the knowledge of Him who called us by glory and virtue, 4 by which have been given to us exceedingly great and precious promises,",
-            "3 Sa divine puissance nous a donné tout ce qui contribue à la vie et à la piété, en nous faisant connaître celui qui nous a appelés par sa propre gloire et par sa vertu.4 Par elles les promesses les plus précieuses",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "التي أُعطِيَت لنا للكرامة لكي تصيروا بها شُركاء الطَّبيعة الإلهيَّة، هاربين من شهوة الفساد التي في العالم. ولهذا عينه ـ وأنتم باذلون كلّ اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفي الفضيلة معرفة،",
-            "that through these you may be partakers of the divine nature, having escaped the corruption that is in the world through lust. 5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge,",
-            "et les plus grandes nous ont été données, afin que par elles vous deveniez participants de la nature divine, en fuyant la corruption qui existe dans le monde par la convoitise ;5 à cause de cela même, faites tous vos efforts pour joindre à votre foi la vertu, à la vertu la connaissance,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وفي المعرفة تعفُّفـاً، وفي التَّعفُّف صبراً، وفي الصَّبر تقوى، وفي التَّقوى مودَّة أخويَّةً، وفي المودَّة الأخويَّة محبَّة.",
-            "6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.",
-            "6 à la connaissance la maîtrise de soi, à la maîtrise de soi la persévérance, à la persévérance la piété,7 à la piété la fraternité, à la fraternité l’amour.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأن هذه إذا كانت فيكم وكثرت، تُصَيِّركُمْ لا مُتكاسلين ولا غير مُثمرين لمعرفة ربِّنا يسوع المسيح.",
-            "8 For if these things are yours and abound, you will be neither barren nor unfruitful in the knowledge of our Lord Jesus Christ.",
-            "8 En effet, si ces choses existent en vous et s’y multiplient, elles ne vous laisseront pas sans activité ni sans fruit pour la connaissance de notre Seigneur Jésus–Christ ;",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=103rdSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول االثانية 1: 19 – 2: 9))",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ االثانية 1: 19 – 2: 9)",
             "2 Peter 1: 19 – 2: 9",
             "2 Peter1: 19 – 2: 9",
         ],
@@ -3607,7 +2368,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=104thSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 5 : 9 ـ 20 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5 : 9-20)",
             "James 5: 9 – 20",
             "Jacques 5 : 9 - 20",
         ],
@@ -3650,58 +2411,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=1610&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 5 : 9 ـ 20 )",
-            "Jacques 5:9 - 20",
-            "James 5:9-20",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا يئنَّ بعضكم على بعضٍ يا إخوتي لئلاَّ تُدانوا. هوذا الدَّيَّان واقف على الأبواب. خذوا لكم يا إخوتي مثالاً لاحتمال المشقَّات وطول الأناة: الأنبياء الذين تكلَّموا بِاسم الربِّ.",
-            "9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes. Pour la souffrance et la patience, le modèle à prendre,10 frères, ce sont les prophètes, qui ont parlé au nom du Seigneur.",
-            "9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door! 10 My brethren, take the prophets, who spoke in the name of the Lord, as an example of suffering and patience.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ قـد رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.",
-            "11 Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.",
-            "11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وقبل كل شيءٍ يا إخوتي، لا تحلفوا، لا بالسَّماء، ولا بالأرض، ولا بقسم آخر. وليكن كلامكم نعم نعم، ولا لا، لئلاَّ تكونوا تحت الحُكم. وإن كان واحد منكم قد ناله تعب فليُصلِّ. والفرح القلب فليُرتِّل.",
-            "12 Mais avant tout, mes frères, ne jurez pas, ni par le ciel, ni par la terre, ni d'aucune autre manière. Que votre oui soit oui et votre non, non, afin que vous ne tombiez pas sous le jugement.13 L'un de vous souffre-t-il? Qu'il prie. Est-il joyeux? Qu'il chante des cantiques.",
-            "12 But above all, my brethren, do not swear, either by heaven or by earth or with any other oath. But let your Yes, be Yes, and your No, No, lest you fall into judgment. 13 Is anyone among you suffering? Let him pray. Is anyone cheerful? Let him sing psalms.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وإن كان واحد منكم مريضاً فليدعُ قسوس الكنيسة وليُصلُّوا عليه ويدهنوه بزيتٍ بِاسم الربِّ، وصلاة الإيمان تُخلِّص المريض، والربُّ يُقيمه، وإن كان قد عمل خطايا تُغفَر له.",
-            "14 L'un de vous est-il malade? Qu'il fasse appeler les anciens de l'Eglise et qu'ils prient après avoir fait sur lui une onction d'huile au nom du Seigneur.15 La prière de la foi sauvera le patient; le Seigneur le relèvera et, s'il a des péchés à son actif, il lui sera pardonné.",
-            "14 Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. 15 And the prayer of faith will save the sick, and the Lord will raise him up. And if he has committed sins, he will be forgiven.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واعترفوا بخطاياكم بعضكم لبعضٍ، وصلُّوا على بعضكم بعضٍ، لكيما تُشفَوا. وصلاة البارِّ فيها قوة عظيمة فعالة.",
-            "16 Confessez-vous donc vos péchés les uns aux autres et priez les uns pour les autres, afin d'être guéris. La requête d'un juste agit avec beaucoup de force.",
-            "16 Confess your trespasses to one another, and pray for one another, that you may be healed. The effective, fervent prayer of a righteous man avails much.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كان إيليَّاس إنساناً تحت الآلام مثلنا، وصلَّى صلاةً كي لا تُمطِر السَّماء، فلم تُمطِر على الأرض ثلاثَ سنينَ وستَّةَ أشهُرٍ. وصلَّى أيضاً، فأعطت السَّماء المطر، والأرض أنبتت ثمرها.",
-            "17 Élie était un homme semblable à nous; il pria avec ferveur pour qu'il ne plût pas, et il ne plut pas sur la terre pendant trois ans et six mois; 18 puis il pria de nouveau, le ciel donna de la pluie, la terre produisit son fruit.",
-            "17 Elijah was a man with a nature like ours, and he prayed earnestly that it would not rain; and it did not rain on the land for three years and six months. 18 And he prayed again, and the heaven gave rain, and the earth produced its fruit.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يا إخوتي، إذا ضلَّ واحدٌ منكم عن سبيل الحقِّ وردَّه واحدٌ، فليعلم أن من يردَّ الخاطئ عن طريق ضلالته، فإنه يُخلِّص نفسه من الموتِ، ويستُر خطايا كثيرة.",
-            "19 Mes frères, si l'un de vous s'est égaré loin de la vérité et qu'on le ramène, 20 sachez que celui qui ramène un pécheur du chemin où il s'égarait lui sauvera la vie et fera disparaître une foule de péchés.",
-            "19 Brethren, if anyone among you wanders from the truth, and someone turns him back, 20 let him know that he who turns a sinner from the error of his way will save a soul from death and cover a multitude of sins.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=3010&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى ( 2 : 11 - 17)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الاولى (2 : 11-17)",
             "1 Pierre 2:11 - 17",
             "1 PETER 2:11-17",
         ],
@@ -3727,7 +2438,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=0311&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى (2 :18 -3 : 1- 7 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (2 :18 -3 : 1- 7)",
             "1Pierre 2:18 - 3:1-7",
             "1Peter 2:18-25 & 3:1-7",
         ],
@@ -3782,102 +2493,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=0511&C=Title",
-            " الكاثوليكون من رسالة بطرس الثانية (1 : 12 – 21 )",
-            "2 Pierre 1 : 12 - 21",
-            "2 Peter 1:12-21",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر. ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة.",
-            "12 Aussi ai-je l'intention de toujours vous rappeler cela, bien que vous le sachiez et que vous demeuriez fermes dans la vérité présente.13 Mais je crois juste, tant que je suis ici-bas, de vous tenir en éveil par mes rappels,",
-            "12 For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.",
-            "14 sachant qu'il est proche pour moi le moment de la séparation, comme notre Seigneur Jésus Christ me l'a fait connaître; 15 mais je veillerai soigneusement à ce qu'après mon départ vous ayez la possibilité, en toute occasion, de conserver le souvenir de ces enseignements.",
-            "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته.",
-            "16 En effet, ce n'est pas en nous mettant à la traîne de fables sophistiquées que nous vous avons fait connaître la venue puissante de notre Seigneur Jésus Christ, mais pour l'avoir vu de nos yeux dans tout son éclat.",
-            "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت كهذا من المجد الاسنى هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.",
-            "17 Car il reçut de Dieu le Père honneur et gloire, quand la voix venue de la splendeur magnifique de Dieu lui dit: 'Celui-ci est mon Fils bien-aimé, celui qu'il m'a plu de choisir. 18 Et cette voix, nous-mêmes nous l'avons entendue venant du ciel quand nous étions avec lui sur la montagne sainte.",
-            "17 For He received from God the Father honor and glory when such a voice came to Him from the Excellent Glory: This is My beloved Son, in whom I am well pleased.'' 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكم",
-            "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs.",
-            "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص. لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس",
-            "20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée; 21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.",
-            "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=111stSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 1 ـ 12 )",
-            "1Pierre 1:1-12",
-            "1Peter 1:1-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بطرس، رسولُ يسوع المسيح، للمُختارين المُتغرِّبين في شتات بُنتُس وغلاطية وكبَّادوكيَّة وآسيَّا وبيثينيَّة،",
-            "1 Pierre, apôtre de Jésus–Christ, aux élus qui sont étrangers dans la dispersion : au Pont, en Galatie, en Cappadoce, en Asie et en Bithynie,",
-            "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بمقتضى علم الله الآب السَّابق، في تقديس الرُّوح للطَّاعة، ورشِّ دم يسوع المسيح. لِتُكثَر لكم النِّعمةوالسَّلامُ. مُباركٌ الله أبو ربِّنا يسوع المسيح،",
-            "2 (élus) selon la prescience de Dieu le Père, par la sanctification de l’Esprit, pour l’obéissance et l’aspersion du sang de Jésus–Christ : Que la grâce et la paix vous soient multipliées ! 3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ",
-            "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied. 3 Blessed be the God and Father of our Lord Jesus Christ,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذى بكثرة رحمته وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات، للميراث الذى لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظاً لكم في السَّموات، أنتم المحروسين بقوة الله،",
-            "qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu,",
-            "who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بالإيمان للخلاص المُستَعدّ أن يُعلَن في الزمن الأخير. الذي به تبتهجون الآن يسيراً، وإن كان يجب أن تتألموا بتجارب متنوِّعة، لكي تكون صفوة إيمانكم كريمة أفضل من الذَّهب الفاني،",
-            "par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves, 7 afin que votre foi éprouvée bien plus précieuse que l’or périssable,",
-            "through faith for salvation ready to be revealed in the last time.6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "المُجرَّب بالنَّار، لتوجَدُوا بفخر ومجدٍ وكرامةٍ عند استعلان يسوع المسيح، ذلك الذي وإن لم تروه تحبُّونه. هذا الذي لم تروه وآمنتم به، فتهللوا بفرح لا يُنطق به ومُمجد، وتأخذوا كمال إيمانكم وخلاص أنفسكم.",
-            "cependant éprouvé par le feu –– se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.",
-            "though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الخلاصَ الذي فَتَّشَ وبَحَثَ عنهُ الأنبياء، الَّذينَ تنبأوا عَن النِّعمَةِ التي صارت فيكم، وبحثوا عن الزمن الذي كان يَدلُّ عليهِ روحُ المسيح المتكلم فيهم. إذ سَبقَ فشَهِدَ على آلام المسيح والأمجاد الآتيـة بعدها.",
-            "10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations. 11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.",
-            "10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you, 11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الَّذينَ أُعلِـنَ لهُـم لأنَّهُم لا لأنفسـهم، كانـوا يعمـلون بل جعلـوا نفوسهم لكُم خُدَاماً بهذه الأمور التي أُخبرتم بها أنتُم الآن بواسطة الذين بَشَّروكُم بالرُّوح القُدُس المُرسَل مِنَ السَّماءِ. والتي تَشتَهي الملائكة أن تَطَّلِعَ عليها.",
-            "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=112ndSunday&C=Title",
-            " الكاثوليكون من رسالة يهوذا( 1 : 14 ـ 25 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يهوذا(1 : 14-25)",
             "Jude 1:14-25",
             "Jude 1:14-25",
         ],
@@ -3907,13 +2524,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.",
+            "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.",
             "20 Mais vous, bien–aimés, édifiez–vous vous–mêmes sur votre très sainte foi, priez par le Saint–Esprit, 21 maintenez vous dans l’amour de Dieu, en attendant la miséricorde de notre Seigneur Jésus–Christ pour la vie éternelle.",
             "20 But you, beloved, building yourselves up on your most holy faith, praying in the Holy Spirit, 21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وبكِّـتوا البعض عندما يكونوا مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
+            "وبكِّ-توا البعض عندما يكونوا مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
             "22 Ayez pitié des uns, de ceux qui doutent : 23 sauvez les en les arrachant au feu. Ayez pour les autres une pitié mêlée de crainte, haïssant jusqu’à la tunique souillée par la chair.",
             "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh.",
         ],
@@ -3927,7 +2544,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=113rdSunday&C=Title",
-            " الكاثوليكون من رسالة رسالة يعقوب الرسول( 3 : 1 ـ 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ رسالة يعقوب الرسول(3 : 1-12)",
             "James 3:1-12",
             "James 3:1-12",
         ],
@@ -3969,7 +2586,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "به نُبارِك اللـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم اللـه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! لا يجب يا إخوتي أن تكونَ هذه الأمورُ هكذا!",
+            "به نُبارِك الل-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم الل-ه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! لا يجب يا إخوتي أن تكونَ هذه الأمورُ هكذا!",
             "9 Par elle, nous bénissons le Seigneur notre Père, et par elle, nous maudissons les hommes faits à l’image de Dieu. 10 De la même bouche sortent la bénédiction et la malédiction. Il ne faut pas, mes frères, qu’il en soit ainsi.",
             "9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God. 10 Out of the same mouth proceed blessing and cursing. My brethren, these things ought not to be so.",
         ],
@@ -3983,7 +2600,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=114thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى( 1 : 25 ـ 2 :1 ـ 10 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(1 : 25-2 :1-10)",
             "1 Peter 1:25-2:10",
             "1 Peter 1:25-2:10",
         ],
@@ -3995,25 +2612,25 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
+            "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
             "2 désirez comme des enfants nouveaux–nés le lait non frelaté de la parole, afin que par lui vous croissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon. 4 Approchez–vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu,",
             "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
+            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
             "5 et vous–mêmes, comme des pierres vivantes, édifiez–vous pour former une maison spirituelle, un saint sacerdoce, en vue d’offrir des victimes spirituelles, agréables à Dieu par Jésus–Christ ;",
             "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً والذي يؤمن به لن يُخـزى،",
+            "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً والذي يؤمن به لن يُخ-زى،",
             "6 car il y a dans l’Écriture : Voici, je pose en Sion une pierre angulaire, choisie, précieuse, Et celui qui croit en elle ne sera pas confondu.",
             "6 Therefore it is also contained in the Scripture, Behold, I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.",
+            "فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.",
             "7 L’honneur est donc pour vous qui croyez. Mais, pour les incrédules, La pierre qu’ont rejetée ceux qui bâtissaient Est devenue la principale, celle de l’angle Et une pierre d’achoppement Et un rocher de scandale. 8 Ils s’y achoppent en désobéissant à la parole, et c’est à quoi ils ont été destinés.",
             "7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected Has become the chief cornerstone, 8 and A stone of stumbling And a rock of offense. They stumble, being disobedient to the word, to which they also were appointed.",
         ],
@@ -4025,53 +2642,21 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
+            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
             "10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde.",
             "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=2011&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الإولى( 3 : 8 – 15 )",
-            "1 Pierre 3:8-15",
-            "1 Peter 3:8-15",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والنهاية كونوا جميعا متحدي الرأي بحس واحد ذوي محبة اخوية مشفقين لطفاء غير مجازين عن شر بشر او عن شتيمة بشتيمة بل بالعكس مباركين",
-            "8 Enfin, soyez tous dans de mêmes dispositions, compatissants, animés d'un amour fraternel, miséricordieux, humbles.9 Ne rendez pas le mal pour le mal, ou l'insulte pour l'insulte;",
-            "8 Finally, all of you be of one mind, having compassion for one another; love as brothers, be tenderhearted, be courteous; 9 not returning evil for evil or reviling for reviling,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالمين انكم لهذا دعيتم لكي ترثوا بركة. لان من اراد ان يحب الحياة ويرى اياما صالحة فليكفف لسانه عن الشر وشفتيه ان تتكلما بالمكر ليعرض عن الشر ويصنع الخير ليطلب السلام ويجدّ في اثره",
-            "au contraire, bénissez, car c'est à cela que vous avez été appelés, afin d'hériter la bénédiction. 10 En effet, qui veut aimer la vie et voir des jours heureux doit garder sa langue du mal et ses lèvres des paroles trompeuses, 11 se détourner du mal et faire le bien, rechercher la paix et la poursuivre.",
-            "but on the contrary blessing, knowing that you were called to this, that you may inherit a blessing. 10 For He who would love life and see good days, let him refrain his tongue from evil, and his lips from speaking deceit. 11 Let him turn away from evil and do good; let him seek peace and pursue it.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان عيني الرب على الابرار واذنيه الى طلبتهم.ولكن وجه الرب ضد فاعلي الشر فمن يؤذيكم ان كنتم متمثلين بالخير.",
-            "12 Car les yeux du Seigneur sont sur les justes, et ses oreilles sont attentives à leur prière; mais la face du Seigneur se tourne contre ceux qui font le mal. 13 Et qui vous fera du mal, si vous vous montrez zélés pour le bien?",
-            "12 For the eyes of the Lord are on the righteous, and His ears are open to their prayers; but the face of the Lord is against those who do evil.'' 13 And who is he who will harm you if you become followers of what is good?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن وان تألمتم من اجل البر فطوباكم.واما خوفهم فلا تخافوه ولا تضطربوا بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف",
-            "14 Bien plus, au cas où vous auriez à souffrir pour la justice, heureux êtes-vous. N'ayez d'eux aucune crainte et ne soyez pas troublés;15 mais sanctifiez dans vos coeurs le Christ qui est Seigneur. Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte.",
-            "14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled.'' 15 But sanctify the Lord God in your hearts. and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=0312&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 : 1 ـ 11 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 1-11)",
             "2 Pierre 1 : 1 - 11",
             "2 Peter 1:1-11",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.",
+            "سمعان بُطْرُسِ عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.",
             "1Syméon Pierre, serviteur et apôtre de Jésus Christ, à ceux qui ont reçu, par la justice de notre Dieu et Sauveur Jésus Christ,",
             "1Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:",
         ],
@@ -4089,7 +2674,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولهذا عينه ـ وأنتم باذلون كل اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفى الفضيلة معرفة، وفى المعرفة تعفُّفـاً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً، وفى المودَّة الأخويَّة محبَّة.",
+            "ولهذا عينه-وأنتم باذلون كل اجتهاد-ق-دِّموا في إيمانكم فضيلة، وفى الفضيلة معرفة، وفى المعرفة تعفُّف-اً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً، وفى المودَّة الأخويَّة محبَّة.",
             "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, à la maîtrise de soi la ténacité, à la ténacité la piété, à la piété l'amitié fraternelle, à l'amitié fraternelle l'amour.",
             "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.",
         ],
@@ -4109,7 +2694,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=121stSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى(3: 8 – 15)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3: 8 – 15)",
             "1Pierre 3: 8 – 15",
             "1Peter 3: 8 – 15",
         ],
@@ -4140,58 +2725,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=122ndSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 2 : 7 ـ 17)",
-            "1 Jean 2:7-17",
-            "1 John 2:7-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاخوة لست اكتب اليكم وصية جديدة بل وصية قديمة كانت عندكم من البدء.الوصية القديمة هي الكلمة التي سمعتموها من البدء.",
-            "7 Mes bien-aimés, ce n'est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez depuis le commencement; ce commandement ancien, c'est la parole que vous avez entendue.",
-            "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايضا وصية جديدة اكتب اليكم ما هو حق فيه وفيكم ان الظلمة قد مضت والنور الحقيقي الآن يضيء. من قال انه في النور وهو يبغض اخاه فهو الى الآن في الظلمة.",
-            "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable. 9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.",
-            "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "من يحب اخاه يثبت في النور وليس فيه عثرة. واما من يبغض اخاه فهو في الظلمة وفي الظلمة يسلك ولا يعلم اين يمضي لان الظلمة اعمت عينيه",
-            "10 Qui aime son frère demeure dans la lumière, et il n'y a rien en lui pour le faire trébucher. 11 Mais qui hait son frère se trouve dans les ténèbres; il marche dans les ténèbres, et il ne sait pas où il va, parce que les ténèbres ont aveuglé ses yeux.",
-            "10 He who loves his brother abides in the light, and there is no cause for stumbling in him. 11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اكتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب",
-            "12 Je vous écris, mes petits enfants: Vos péchés vous sont pardonnés à cause de son nom à lui, Jésus. 13 Je vous l'écris, pères: Vous connaissez celui qui est dès le commencement. Je vous l'écris, jeunes gens: Vous êtes vainqueurs du Mauvais. Je vous l'ai donc écrit, mes petits enfants: Vous connaissez le Père.",
-            "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير.",
-            "14 Je vous l'ai écrit, pères: Vous connaissez celui qui est dès le commencement. Je vous l'ai écrit, jeunes gens: Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais.",
-            "14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب.لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم.",
-            "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, 16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.",
-            "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد",
-            "17 Or, le monde passe, lui et sa convoitise: mais celui qui fait la volonté de Dieu demeure à jamais.",
-            "17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=123rdSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 2 : 18 ـ 7 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(2 : 18-7)",
             "1 Pierre 2:18 - 3:1-7",
             "1 Peter 2:18-3:7",
         ],
@@ -4247,7 +2782,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=124thSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب ( 4 : 7 – 5 : 5 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب (4 : 7 – 5 : 5)",
             "Jacques 4:7 - 5:1-5",
             "James 4:7-5:5",
         ],
@@ -4259,25 +2794,25 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
+            "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.",
             "8 prenez le deuil, pleurez; que votre rire se change en deuil et votre joie en abattement! 10 Humiliez-vous devant le Seigneur, et Il vous élèvera. 11 Ne médisez pas les uns des autres, frères.",
             "9 Lament and mourn and weep! Let your laughter be turned to mourning and your joy to gloom. 10 Humble yourselves in the sight of the Lord, and He will lift you up. 11 Do not speak evil of one another, brethren.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
+            "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.",
             "Celui qui médit d'un frère ou juge son frère médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi. Or un seul est législateur et juge: 12 celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain?",
             "He who speaks evil of a brother and judges his brother, speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. 12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another?",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً والذي يؤمن به لن يُخـزى،",
+            "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً والذي يؤمن به لن يُخ-زى،",
             "13 Alors, vous qui dites: 'Aujourd'hui - ou demain -, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent, 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît.",
             "13 Come now, you who say, Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.",
+            "فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.",
             "15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela', 16 vous tirez fierté de vos fanfaronnades. Toute fierté de ce genre est mauvaise. 17 Qui donc sait faire le bien et ne le fait pas se charge d'un péché.",
             "15 Instead you ought to say, If the Lord wills, we shall live and do this or that. 16 But now you boast in your arrogance. All such boasting is evil. 17 Therefore, to him who knows to do good and does not do it, to him it is sin.",
         ],
@@ -4289,103 +2824,21 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
+            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
             "Vous vous êtes constitué des réserves à la fin des temps! 4 Voyez le salaire des ouvriers qui ont fait la récolte dans vos champs: retenu par vous, il crie et les clameurs des moissonneurs sont parvenues aux oreilles du Seigneur Sabah.",
             "You have heaped up treasure in the last days. 4 Indeed the wages of the laborers who mowed your fields, which you kept back by fraud, cry out; and the cries of the reapers have reached the ears of the Lord of Sabaoth.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
+            "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.",
             "5 Vous avez eu sur terre une vie de confort et de luxe, vous vous êtes repus au jour du carnage.",
             "5 You have lived on the earth in pleasure and luxury; you have fattened your hearts as in a day of slaughter.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=1312&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 :12 -21 )",
-            "2 Pierre 1 : 12 - 21",
-            "2 Peter 1:12-21",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر.ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة",
-            "12 Aussi ai-je l'intention de toujours vous rappeler cela, bien que vous le sachiez et que vous demeuriez fermes dans la vérité présente. 13 Mais je crois juste, tant que je suis ici-bas, de vous tenir en éveil par mes rappels,",
-            "12 For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.",
-            "14 sachant qu'il est proche pour moi le moment de la séparation, comme notre Seigneur Jésus Christ me l'a fait connaître; 15 mais je veillerai soigneusement à ce qu'après mon départ vous ayez la possibilité, en toute occasion, de conserver le souvenir de ces enseignements.",
-            "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته. لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت كهذا من المجد الاسنى",
-            "16 En effet, ce n'est pas en nous mettant à la traîne de fables sophistiquées que nous vous avons fait connaître la venue puissante de notre Seigneur Jésus Christ, mais pour l'avoir vu de nos yeux dans tout son éclat. 17 Car il reçut de Dieu le Père honneur et gloire,",
-            "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty. 17 For He received from God the Father honor and glory when such a voice came to Him from the Excellent Glory:",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.",
-            "quand la voix venue de la splendeur magnifique de Dieu lui dit: 18 Celui-ci est mon Fils bien-aimé, celui qu'il m'a plu de choisir.' Et cette voix, nous-mêmes nous l'avons entendue venant du ciel quand nous étions avec lui sur la montagne sainte.",
-            "This is My beloved Son, in whom I am well pleased. 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكمعالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص.",
-            "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs. 20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée;",
-            "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts; 20 knowing this first, that no prophecy of Scripture is of any private interpretation,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس",
-            "21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.",
-            "21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=1712&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 12 )",
-            "Jacques 1 : 1 - 12",
-            "James 1:1-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الإثني عشرَ سبطاً الذينَ في الشَّتَاتِ. كونوا في كل فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.",
-            "1Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. 2 Prenez de très bon coeur, mes frères, toutes les épreuves par lesquelles vous passez, sachant que le test auquel votre foi est soumise produit de l'endurance.",
-            "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.",
-            "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut. 5 Si la sagesse vient à manquer à l'un de vous, qu'il la demande à Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.",
-            "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وليسأل بإيمانٍ غير مُرتابٍ. لأنَّ المُرتابَ يُشبهُ أمواج البحر التي يخبطُها الرِّيحُ ويردها. فلا يَظُنَّ ذلك الإنسانُ أنَّهُ يَنَالُ شيئاً مِنْ عند الرَّبِّ. لأنَّ الرجُل ذو الرأيين هو مُتَقَلقِل في جَمِيع طُرُقِهِ.",
-            "6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève. 7 Que ce personnage ne s'imagine pas que le Seigneur donnera quoi que ce soit à un homme partagé, fluctuant dans toutes ses démarches.",
-            "6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وليَفتَخِر الأخُ المُتواضع بارتفاعِهِ، وأمَّا الغَنيُّ فباتِّضاعِهِ، لأنَّهُ كزهر العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ.",
-            "9 Que le frère de condition modeste tire fierté de son élévation, et le riche, de son déclassement, parce qu'il passera comme la fleur des prés. 11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.",
-            "9 Let the lowly brother glory in his exaltation, 10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ.",
-            "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.",
-            "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=2512&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (5 : 9 - 12)",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5 : 9-12)",
             "Jacques 5 : 9 - 12",
             "James 5:9-12",
         ],
@@ -4397,7 +2850,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "خُذوا لكُم يا إخوتي مثالَ احتمال المشقَّاتِ وطول أناةٍ: الأنبياءَ الَّذينَ تكلَّموا بِاسم الربِّ. ها نحنُ نُغبِط الَّذينَ صبروا. لأنكُم سَمِعتُم بصبرِ أيُّوبَ وعاقِبةَ الربِّ قـد رأيتُموها. لأنَّ الربَّ هو عظيمُ الرَّأفةِ جداً وهو طويلُ الآناةِ.",
+            "خُذوا لكُم يا إخوتي مثالَ احتمال المشقَّاتِ وطول أناةٍ: الأنبياءَ الَّذينَ تكلَّموا بِاسم الربِّ. ها نحنُ نُغبِط الَّذينَ صبروا. لأنكُم سَمِعتُم بصبرِ أيُّوبَ وعاقِبةَ الربِّ ق-د رأيتُموها. لأنَّ الربَّ هو عظيمُ الرَّأفةِ جداً وهو طويلُ الآناةِ.",
             "Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.",
             "as an example of suffering and patience. 11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.",
         ],
@@ -4411,7 +2864,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2612&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 2 : 11 ـ 17 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(2 : 11-17)",
             "1 Pierre 2 : 11 - 17",
             "1 Peter 2:11-17",
         ],
@@ -4443,7 +2896,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2812&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 2 : 14 ـ 23 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2 : 14-23)",
             "James 2:14-23",
             "James 2:14-23",
         ],
@@ -4461,7 +2914,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكن يَقُولُ واحدٌ: ' أنت لك إيمانٌ، وأنا لي أعمالٌ! ' أرني إيمانكَ بدون أعمالكَ وأنا أريك إيماني بأعمالي. أنت تُؤمنُ أنَّ اللـهَ واحدٌ. حسناً تفعلُ. والشَّيَاطينُ أيضاً يُؤمِنُونَ ويقشَعِرُّونَ!",
+            "لكن يَقُولُ واحدٌ: ' أنت لك إيمانٌ، وأنا لي أعمالٌ! ' أرني إيمانكَ بدون أعمالكَ وأنا أريك إيماني بأعمالي. أنت تُؤمنُ أنَّ الل-هَ واحدٌ. حسناً تفعلُ. والشَّيَاطينُ أيضاً يُؤمِنُونَ ويقشَعِرُّونَ!",
             "18 Mais quelqu’un dira : Toi, tu as la foi ; et moi, j’ai les oeuvres. Montre–moi ta foi sans les oeuvres, et moi, par mes oeuvres, je te montrerai ma foi.19 Tu crois qu’il y a un seul Dieu, tu fais bien ; les démons le croient aussi et ils tremblent.",
             "18 But someone will say, You have faith, and I have works. Show me your faith without your works, and I will show you my faith by my works. 19 You believe that there is one God. You do well. Even the demons believe--and tremble!",
         ],
@@ -4473,7 +2926,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وتَمَّ الكتَابُ القائِلُ: ' فآمنَ إبراهيمُ باللـهِ فَحُسِبَ لهُ بِرّاً ' ودُعِيَ خَلِيلَ اللـهِ.",
+            "وتَمَّ الكتَابُ القائِلُ: ' فآمنَ إبراهيمُ بالل-هِ فَحُسِبَ لهُ بِرّاً ' ودُعِيَ خَلِيلَ الل-هِ.",
             "23 Ainsi s’accomplit ce que dit l’Écriture : Abraham crut à Dieu, et cela lui fut compté comme justice ; et il fut appelé ami de Dieu. 23 Ainsi s’accomplit ce que dit l’Écriture : Abraham crut à Dieu, et cela lui fut compté comme justice ; et il fut appelé ami de Dieu.",
             "23 And the Scripture was fulfilled which says, Abraham believed God, and it was accounted to him for righteousness. And he was called the friend of God.",
         ],
@@ -4481,31 +2934,31 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=2912&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 4 : 15 ـ 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4 : 15-21)",
             "1 Jean 4 : 15 - 21",
             "1 John 4:15-21",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَن يعترفَ أنَّ يسوعَ هو ابنُ اللـهِ فاللـهُ يَثبتُ فيهِ وهو يثبتُ في اللـهِ. قد علمنا وصدَّقناَ المحبَّةَ التي للـهُ فينا.",
+            "مَن يعترفَ أنَّ يسوعَ هو ابنُ الل-هِ فالل-هُ يَثبتُ فيهِ وهو يثبتُ في الل-هِ. قد علمنا وصدَّقناَ المحبَّةَ التي لل-هُ فينا.",
             "15 Quiconque confesse que Jésus est le Fils de Dieu, Dieu demeure en lui et lui en Dieu. 16 Et nous, nous connaissons, pour y avoir cru, l'amour que Dieu manifeste au milieu de nous.",
             "15 Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. 16 And we have known and believed the love that God has for us.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "اللـهُ محبَّةٌ، ومن يَثبتُ في المحبَّةِ، يَثبت في اللـهِ واللـهُ يثبتُ فيهِ. بهذا تكمَّلت المَحبَّةُ فَينَا: أن نَجدُ دالةٌ في يوم الدِّينونةِ، لأنَّهُ كما كانَ ذاكَ فهكذا نحنُ أيضاً نكونُ في هذا العالم،",
+            "الل-هُ محبَّةٌ، ومن يَثبتُ في المحبَّةِ، يَثبت في الل-هِ والل-هُ يثبتُ فيهِ. بهذا تكمَّلت المَحبَّةُ فَينَا: أن نَجدُ دالةٌ في يوم الدِّينونةِ، لأنَّهُ كما كانَ ذاكَ فهكذا نحنُ أيضاً نكونُ في هذا العالم،",
             "Dieu est amour: qui demeure dans l'amour demeure en Dieu et Dieu demeure en lui. 17 En ceci, l'amour, parmi nous, est accompli, que nous avons pleine assurance pour le jour du jugement, parce que, tel il est, lui, tels nous sommes, nous aussi, dans ce monde.",
             "God is love, and he who abides in love abides in God, and God in him. 17 Love has been perfected among us in this: that we may have boldness in the day of judgment; because as He is, so are we in this world.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لا خـوفَ في المحبَّةِ، بل المحبَّةُ الكاملةُ تَطرحُ الخوفَ إلى خارج لأنَّ الخوفَ لهُ عذابٌ. وأمَّا من يخافَ فلم يَتكمَّل في المحبَّةِ. نحنُ نُحِبَّ اللـهَ لأنَّهُ أحَبَّنا أوَّلاً.",
+            "لا خ-وفَ في المحبَّةِ، بل المحبَّةُ الكاملةُ تَطرحُ الخوفَ إلى خارج لأنَّ الخوفَ لهُ عذابٌ. وأمَّا من يخافَ فلم يَتكمَّل في المحبَّةِ. نحنُ نُحِبَّ الل-هَ لأنَّهُ أحَبَّنا أوَّلاً.",
             "18 De crainte, il n'y en a pas dans l'amour; mais le parfait amour jette dehors la crainte, car la crainte implique un châtiment; et celui qui craint n'est pas accompli dans l'amour. 19 Nous, nous aimons, parce que lui, le premier, nous a aimés.",
             "18 There is no fear in love; but perfect love casts out fear, because fear involves torment. But he who fears has not been made perfect in love. 19 We love Him because He first loved us.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن قالَ أحدٌ: ' إنِّي أحبُّ اللـهَ ' وأبغضَ أخاهُ، فهو كاذبٌ. لأنَّ من لا يحبُّ أخاهُ الذي أبصرهُ، كيفَ يقدرُ أن يحبَّ اللـهَ الذي لم يُبصرهُ؟ ولنا هذهِ الوصيَّةُ منهُ: أنَّ من يحبُّ اللـهَ يحبُّ أخاهُ أيضاً.",
+            "إن قالَ أحدٌ: ' إنِّي أحبُّ الل-هَ ' وأبغضَ أخاهُ، فهو كاذبٌ. لأنَّ من لا يحبُّ أخاهُ الذي أبصرهُ، كيفَ يقدرُ أن يحبَّ الل-هَ الذي لم يُبصرهُ؟ ولنا هذهِ الوصيَّةُ منهُ: أنَّ من يحبُّ الل-هَ يحبُّ أخاهُ أيضاً.",
             "20 Si quelqu'un dit: 'J'aime Dieu', et qu'il haïsse son frère, c'est un menteur. En effet, celui qui n'aime pas son frère, qu'il voit, ne peut pas aimer Dieu qu'il ne voit pas. 21 Et voici le commandement que nous tenons de lui: celui qui aime Dieu, qu'il aime aussi son frère.",
             "20 If someone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen, how can he love God whom he has not seen? 21 And this commandment we have from Him: that he who loves God must love his brother also.",
         ],
@@ -4513,7 +2966,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=3012&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية (1 : 19 ـ 2 : 1 ـ 3 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 19-2 : 1-3)",
             "2 Pierre 1:19 - 2 :1-3",
             "2 Peter 1:19-2:3",
         ],
@@ -4537,89 +2990,33 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم منذ البدء لا تبطل، وهلاكهم لا ينعس.",
+            "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَ-لِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم منذ البدء لا تبطل، وهلاكهم لا ينعس.",
             "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; 3 et, dans leur cupidité, ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.",
             "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=0113&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى (1 :1 – 2 : 1 - 6 )",
-            "1 Jean 1:1 - 2:1-6",
-            "1 John 1:1-10 & 2:1-6",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي كان من البدء الذي سمعناه الذي رأيناه بعيوننا الذي شاهدناه ولمسته ايدينا من جهة كلمة الحياة.",
-            "1 Ce qui était dès le commencement, ce que nous avons entendu, ce que nous avons vu de nos yeux, ce que nous avons contemplé et que nos mains ont touché du Verbe de vie -",
-            "1 That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, concerning the Word of life--",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فان الحياة أظهرت وقد رأينا ونشهد ونخبركم بالحياة الابدية التي كانت عند الآب وأظهرت لنا. الذي رأيناه وسمعناه نخبركم به لكي يكون لكم ايضا شركة معنا.",
-            "2 car la vie s'est manifestée, et nous avons vu et nous rendons témoignage et nous vous annonçons la vie éternelle, qui était tournée vers le Père et s'est manifestée à nous -,3 ce que nous avons vu et entendu, nous vous l'annonçons, à vous aussi, afin que vous aussi vous soyez en communion avec nous.",
-            "2 the life was manifested, and we have seen, and bear witness, and declare to you that eternal life which was with the Father and was manifested to us-- 3 that which we have seen and heard we declare to you, that you also may have fellowship with us;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما شركتنا نحن فهي مع الآب ومع ابنه يسوع المسيح. ونكتب اليكم هذا لكي يكون فرحكم كاملا وهذا هو الخبر الذي سمعناه منه ونخبركم به ان الله نور وليس فيه ظلمة البتة.",
-            "Et notre communion est communion avec le Père et avec son Fils Jésus Christ. 4 Et nous vous écrivons cela, pour que notre joie soit complète.5 Et voici le message que nous avons entendu de lui et que nous vous dévoilons: Dieu est lumière, et de ténèbres, il n'y a pas trace en lui.",
-            "and truly our fellowship is with the Father and with His Son Jesus Christ. 4 And these things we write to you that your joy may be full. 5 This is the message which we have heard from Him and declare to you, that God is light and in Him is no darkness at all.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان قلنا ان لنا شركة معه وسلكنا في الظلمة نكذب ولسنا نعمل الحق ولكن ان سلكنا في النور كما هو في النور فلنا شركة بعضنا مع بعض ودم يسوع المسيح ابنه يطهرنا من كل خطية.",
-            "6 Si nous disons: 'Nous sommes en communion avec lui', tout en marchant dans les ténèbres, nous mentons et nous ne faisons pas la vérité. 7 Mais si nous marchons dans la lumière comme lui-même est dans la lumière, nous sommes en communion les uns avec les autres, et le sang de Jésus, son Fils, nous purifie de tout péché.",
-            "6 If we say that we have fellowship with Him, and walk in darkness, we lie and do not practice the truth. 7 But if we walk in the light as He is in the light, we have fellowship with one another, and the blood of Jesus Christ His Son cleanses us from all sin.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان قلنا انه ليس لنا خطية نضل انفسنا وليس الحق فينا. ان اعترفنا بخطايانا فهو امين وعادل حتى يغفر لنا خطايانا ويطهرنا من كل اثم. ان قلنا اننا لم نخطئ نجعله كاذبا وكلمته ليست فينا",
-            "8 Si nous disons: 'Nous n'avons pas de péché', nous nous égarons nous-mêmes et la vérité n'est pas en nous. 9 Si nous confessons nos péchés, fidèle et juste comme il est, il nous pardonnera nos péchés et nous purifiera de toute iniquité.10 Si nous disons: 'Nous ne sommes pas pécheurs', nous faisons de lui un menteur, et sa parole n'est pas en nous.",
-            "8 If we say that we have no sin, we deceive ourselves, and the truth is not in us. 9 If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. 10 If we say that we have not sinned, we make Him a liar, and His word is not in us.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يا اولادي اكتب اليكم هذا لكي لا تخطئوا.وان اخطأ احد فلنا شفيع عند الآب يسوع المسيح البار وهو كفارة لخطايانا.ليس لخطايانا فقط بل لخطايا كل العالم ايضا",
-            "1 Mes petits enfants, je vous écris cela pour que vous ne péchiez pas. Mais si quelqu'un vient à pécher, nous avons un défenseur devant le Père, Jésus Christ, qui est juste;2 car il est, lui, victime d'expiation pour nos péchés; et pas seulement pour les nôtres, mais encore pour ceux du monde entier.",
-            "1 My little children, these things I write to you, so that you may not sin. And if anyone sins, we have an Advocate with the Father, Jesus Christ the righteous. 2 And He Himself is the propitiation for our sins, and not for ours only but also for the whole world.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وبهذا نعرف اننا قد عرفناه ان حفظنا وصاياه. من قال قد عرفته وهو لا يحفظ وصاياه فهو كاذب وليس الحق فيه.",
-            "3 Et à ceci nous savons que nous le connaissons: si nous gardons ses commandements. 4 Celui qui dit: 'Je le connais', mais ne garde pas ses commandements, est un menteur, et la vérité n'est pas en lui.",
-            "3 Now by this we know that we know Him, if we keep His commandments. 4 He who says, I know Him,'' and does not keep His commandments, is a liar, and the truth is not in him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "واما من حفظ كلمته فحقا في هذا قد تكملت محبة الله.بهذا نعرف اننا فيه. من قال انه ثابت فيه ينبغي انه كما سلك ذاك هكذا يسلك هو ايضا.",
-            "5 Mais celui qui garde sa parole, en lui, vraiment, l'amour de Dieu est accompli; à cela nous reconnaissons que nous sommes en lui. 6 Celui qui prétend demeurer en lui, il faut qu'il marche lui-même dans la voie où lui a marché.",
-            "5 But whoever keeps His word, truly the love of God is perfected in him. By this we know that we are in Him. 6 He who says he abides in Him ought himself also to walk just as He walked.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=0213&C=Title",
-            " الكاثوليكون من رسالة يوحنا الاولى ( 5 : 1 ـ 10 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الاولى (5 : 1-10)",
             "1 Jean 5 : 1 - 10",
             "1 John 5:1-10",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كل مَن يُؤمِن أنَّ يسوعَ هو المسيحُ فقد وُلِدَ مِن اللـه، وكل مَن يُحبُّ الوالد يُحبُّ المَولود منه أيضاً. بهذا نَعرف أنَّنا نُحبُّ أولاد اللـه: إذا أحببنا اللـه ونصنع وصاياه.",
+            "كل مَن يُؤمِن أنَّ يسوعَ هو المسيحُ فقد وُلِدَ مِن الل-ه، وكل مَن يُحبُّ الوالد يُحبُّ المَولود منه أيضاً. بهذا نَعرف أنَّنا نُحبُّ أولاد الل-ه: إذا أحببنا الل-ه ونصنع وصاياه.",
             "1 Quiconque croit que Jésus est le Christ est né de Dieu; et quiconque aime Dieu qui engendre aime aussi celui qui est né de Dieu. 2 A ceci nous reconnaissons que nous aimons les enfants de Dieu, si nous aimons Dieu et mettons en pratique ses commandements.",
             "1 Whoever believes that Jesus is the Christ is born of God, and everyone who loves Him who begot also loves him who is begotten of Him. 2 By this we know that we love the children of God, when we love God and keep His commandments.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّ هـذه هي محبَّةُ الله: أن نَحفظ وصايـاه. ووصاياه ليسَت ثقيلةً، لأنَّ كل مَن وُلِدَ من اللـه يَغلُبُ العالم، وهذه هيَ الغَلبَةُ التي تَغلُبُ العالم: إيمانُنا.",
+            "فإنَّ ه-ذه هي محبَّةُ الله: أن نَحفظ وصاي-اه. ووصاياه ليسَت ثقيلةً، لأنَّ كل مَن وُلِدَ من الل-ه يَغلُبُ العالم، وهذه هيَ الغَلبَةُ التي تَغلُبُ العالم: إيمانُنا.",
             "3 Car voici ce qu'est l'amour de Dieu: que nous gardions ses commandements. Et ses commandements ne sont pas un fardeau, 4 puisque tout ce qui est né de Dieu est vainqueur du monde. Et la victoire qui a vaincu le monde, c'est notre foi.",
             "3 For this is the love of God, that we keep His commandments. And His commandments are not burdensome. 4 For whatever is born of God overcomes the world. And this is the victory that has overcome the world--our faith.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَنْ هو الذي يَغلُبُ العالم، إلاَّ الذي يُؤمِن أنَّ يسوع هو ابنَ اللـه؟ هذا هو الذي جاءَ بماءٍ ودمٍ وروح يسوع المسيح. لا بالماء فقط بل بالماء والدَّم، والرُّوح هو الذي يشهد، لأن الرُّوح هو الحقٌّ.",
+            "مَنْ هو الذي يَغلُبُ العالم، إلاَّ الذي يُؤمِن أنَّ يسوع هو ابنَ الل-ه؟ هذا هو الذي جاءَ بماءٍ ودمٍ وروح يسوع المسيح. لا بالماء فقط بل بالماء والدَّم، والرُّوح هو الذي يشهد، لأن الرُّوح هو الحقٌّ.",
             "5 Qui est le vainqueur du monde, sinon celui qui croit que Jésus est le Fils de Dieu? 6 C'est lui qui est venu par l'eau et par le sang, Jésus Christ, non avec l'eau seulement, mais avec l'eau et le sang; et c'est l'Esprit qui rend témoignage, parce que l'Esprit est la vérité.",
             "5 Who is he who overcomes the world, but he who believes that Jesus is the Son of God? 6 This is He who came by water and blood--Jesus Christ; not only by water, but by water and blood. And it is the Spirit who bears witness, because the Spirit is truth.",
         ],
@@ -4631,71 +3028,21 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن كُنَّا نَقبَلُ شهادَةَ النَّاس، فَشَهادةُ اللـه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ اللـه التي قد شهدَ بها عن ابنهِ.",
+            "إن كُنَّا نَقبَلُ شهادَةَ النَّاس، فَشَهادةُ الل-ه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ الل-ه التي قد شهدَ بها عن ابنهِ.",
             "9 si nous recevons le témoignage des hommes, le témoignage de Dieu est plus grand; car tel est le témoignage de Dieu: il a rendu témoignage en faveur de son Fils.",
             "9 If we receive the witness of men, the witness of God is greater; for this is the witness of God which He has testified of His Son.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مَن يُؤمِن بِابن اللـهِ فشهادة اللـه ثابتةٌ فيه. ومَن لا يُصدِّق اللـه، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها اللـه عن ابنهِ. وهذه هيَ الشَّهادةُ أنَّ اللـه أعطانا الحياة الأبديَّة",
+            "مَن يُؤمِن بِابن الل-هِ فشهادة الل-ه ثابتةٌ فيه. ومَن لا يُصدِّق الل-ه، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها الل-ه عن ابنهِ. وهذه هيَ الشَّهادةُ أنَّ الل-ه أعطانا الحياة الأبديَّة",
             "10 Qui croit au Fils de Dieu a ce témoignage en lui-même. Qui ne croit pas Dieu fait de lui un menteur, puisqu'il n'a pas foi dans le témoignage que Dieu a rendu en faveur de son Fils.",
             "10 He who believes in the Son of God has the witness in himself; he who does not believe God has made Him a liar, because he has not believed the testimony that God has given of His Son.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=0313&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الاولى ( 1 :3 – 12 )",
-            "1 PETER 1:3-12",
-            "1 PETER 1:3-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات.",
-            "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.",
-            "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.",
-            "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.",
-            "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,",
-            "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح. ذلك وان لم تروه تحبونه. ذلك وان كنتم لا ترونه الآن لكن تؤمنون به",
-            "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui",
-            "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.",
-            "et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.",
-            "you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.",
-            "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.",
-            "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.",
-            "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=0413&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 11 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 1-11)",
             "1 Pierre. 5 : 1-12",
             "1 Peter 5:1-12",
         ],
@@ -4739,7 +3086,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=0613&C=Title",
-            " الكاثوليكون من رسالة يعقوب ( 5 : 16 – 20 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب (5 : 16 – 20)",
             "Jacques 5 : 16-20",
             "James 5:16-20",
         ],
@@ -4809,95 +3156,33 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL10&C=Title",
-            " الكاثوليكون من رسالة يهوذا الرسول( 1 : 1 ـ 8 )",
-            "Jude 1 : 1 - 8",
-            "Jude 1:1-8",
+            "الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1: 1-8)",
+            "Saint Jude (1: 1-8)",
+            "Jude (1: 1-8)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يهوذا، عَبدُ يسوعَ المسيح، وأخُو يعقوبَ، إلي المدعُوِّينَ المحبوبين في اللَّه الآب، والمحفُوظينَ لِيَسوع المسيح: لِتكثُر لكُم الرَّحمةُ والسَّلامُ والمحبَّةُ.",
-            "1 Jude, serviteur de Jésus Christ, frère de Jacques, à ceux qui sont appelés, qui sont aimés de Dieu le Père et gardés pour Jésus Christ. 2 Que la miséricorde, la paix et l'amour vous viennent en abondance.",
-            "1:1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you.",
+            "يَهُوذَا، عَبْدُ يَسُوعَ الْمَسِيحِ، وَأَخُو يَعْقُوبَ، إِلَى الْمَدْعُوِّينَ الْمُقَدَّسِينَ فِي اللهِ الآبِ، وَالْمَحْفُوظِينَ لِيَسُوعَ الْمَسِيحِ: لِتَكْثُرْ لَكُمُ الرَّحْمَةُ وَالسَّلاَمُ وَالْمَحَبَّةُ أَيُّهَا الأَحِبَّاءُ، إِذْ كُنْتُ أَصْنَعُ كُلَّ الْجَهْدِ لأَكْتُبَ إِلَيْكُمْ عَنِ الْخَلاَصِ الْمُشْتَرَكِ، اضْطُرِرْتُ أَنْ أَكْتُبَ إِلَيْكُمْ وَاعِظًا أَنْ تَجْتَهِدُوا لأَجْلِ الإِيمَانِ الْمُسَلَّمِ مَرَّةً لِلْقِدِّيسِينَ، لأَنَّهُ دَخَلَ خُلْسَةً أُنَاسٌ قَدْ كُتِبُوا مُنْذُ الْقَدِيمِ لِهذِهِ الدَّيْنُونَةِ، فُجَّارٌ، يُحَوِّلُونَ نِعْمَةَ إِلهِنَا إِلَى الدَّعَارَةِ، وَيُنْكِرُونَ السَّيِّدَ الْوَحِيدَ: اللهَ وَرَبَّنَا يَسُوعَ الْمَسِيحَ.",
+            "01 Jude, serviteur de Jésus Christ et frère de Jacques, aux appelés qui sont aimés de Dieu le Père et gardés pour Jésus Christ : 02 que la miséricorde, la paix et l’amour vous soient accordés en abondance. 03 Bien-aimés, j’avais la ferme intention de vous écrire au sujet du salut qui nous est commun ; or me voici dans l’obligation de le faire pour vous exhorter à combattre pour la foi qui a été transmise aux fidèles une fois pour toutes. 04 Car il s’est infiltré parmi vous des individus, qui sont marqués depuis longtemps en vue de ce jugement, des impies qui tournent la grâce de notre Dieu en prétexte à la débauche, et qui renient notre seul maître et Seigneur, Jésus Christ.",
+            "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you. 3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints. 4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يا أحبائي، إذ كُنتُ أضعُ كُلَّ الجهد لأكُتب إليكُم من أجل خلاصكم المُشترك، اضطُررتُ أن اكتُبَ إليكُم واعظاً أن تجتهدوا لأجل الإيمان الذي سلم لكم مرَّةً من القدِّيسين.",
-            "3 Mes amis, alors que je désirais vivement vous écrire au sujet du salut qui nous concerne tous, je me suis vu forcé de le faire afin de vous encourager à combattre pour la foi qui a été transmise aux saints définitivement.",
-            "3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints.",
+            "فَأُرِيدُ أَنْ أُذَكِّرَكُمْ، وَلَوْ عَلِمْتُمْ هذَا مَرَّةً، أَنَّ الرَّبَّ بَعْدَمَا خَلَّصَ الشَّعْبَ مِنْ أَرْضِ مِصْرَ، أَهْلَكَ أَيْضًا الَّذِينَ لَمْ يُؤْمِنُوا وَالْمَلاَئِكَةُ الَّذِينَ لَمْ يَحْفَظُوا رِيَاسَتَهُمْ، بَلْ تَرَكُوا مَسْكَنَهُمْ حَفِظَهُمْ إِلَى دَيْنُونَةِ الْيَوْمِ الْعَظِيمِ بِقُيُودٍ أَبَدِيَّةٍ تَحْتَ الظَّلاَمِ، كَمَا أَنَّ سَدُومَ وَعَمُورَةَ وَالْمُدُنَ الَّتِي حَوْلَهُمَا، إِذْ زَنَتْ عَلَى طَرِيق مِثْلِهِمَا، وَمَضَتْ وَرَاءَ جَسَدٍ آخَرَ، جُعِلَتْ عِبْرَةً مُكَابِدَةً عِقَابَ نَارٍ أَبَدِيَّةٍ.",
+            "05 Bien que vous sachiez déjà tout cela, je veux néanmoins vous le rappeler : le Seigneur, qui avait sauvé une fois pour toutes son peuple en le faisant sortir du pays d’Égypte, a pourtant supprimé ensuite ceux qui ont refusé de croire ; 06 quant aux anges qui n’ont pas gardé la dignité de leur rang, mais ont quitté la demeure qui était la leur, le Seigneur les maintient enchaînés à perpétuité dans les ténèbres en vue du jugement du grand jour ; 07 il en va de même pour Sodome et Gomorrhe et les villes d’alentour : elles s’étaient livrées à la prostitution d’une manière semblable à ces anges-là et elles étaient allées avec des êtres d’une autre nature ; elles sont soumises pour l’exemple au châtiment du feu éternel.",
+            "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّهُ قد اختلط بنا أُناسٌ الذين سبق فكتبوا ( قديماً ) لهذه الدَّينُونةِ، منافقون يُحوِّلون نعمة ربنا إلى الدَّعارة، ويجحدون السَّيّد الوحيد: ربَّنا يسوع المسيح.",
-            "4 Car il s'est infiltré parmi vous des individus dont la condamnation est depuis longtemps inscrite à l'avance, impies qui travestissent en débauche la grâce de notre Dieu et qui renient notre seul Maître et Seigneur Jésus Christ.",
-            "4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فأُريدُ أن تذكروا، إذ قد عرفتم كل شيء مرةً، أنَّ يسوع خلَّصَ شعبه من أرض مصرَ، وفي الثانية أهلك الذين لم يُؤمِنُوا. والملائكةُ الذينَ لم يحفظُوا رئاستهم،",
-            "5 Je veux vous rappeler, bien que vous sachiez tout définitivement, que le Seigneur, après avoir sauvé son peuple du pays d'Égypte, a fait périr ensuite ceux qui s'étaient montrés incrédules.6 Les anges qui n'avaient pas gardé leur rang mais qui avaient abandonné leur demeure,",
-            "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe. 6 And the angels who did not keep their proper domain, but left their own abode,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل تَركُوا مسكنهُم حَفظَهُم تحت الظلمة في قيودٍ أبديَّةٍ إلي دينونة اليوم العظيم. كما أنَّ سَدوم وعمُورة والمُدُنَ التي حولهُما، زنت على مثالهما، ومضت وراء جسدٍ آخر،",
-            "il les garde éternellement enchaînés dans les ténèbres pour le jugement du grand Jour.7 Quant à Sodome et Gomorrhe et aux villes d'alentour qui s'étaient livrées de semblable manière à la prostitution et avaient couru après des êtres d'une autre nature,",
-            "He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "قد جُعلت عبرةً مُكابدَةً عِقابَ نارٍ أبدِيَّةٍ. وكذلك أيضاً هؤُلاء، المُحْتَلِمُونَ، يُنجِّسُون الجسد، ويحتقرون السِّيادةِ، ويجدفون على ذوي الأمجادِ.",
-            "elles gisent comme un exemple sous le châtiment du feu éternel. 8 C'est de la même façon que ces gens-là, dans leur délire, souillent la chair, méprisent la Souveraineté, insultent les Gloires.",
-            "are set forth as an example, suffering the vengeance of eternal fire. 8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=GL11&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 1 : 1 ـ 12 )",
-            "Jacques 1 : 1 - 12",
-            "James 1:1-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّـتَاتِ. احتسبوه كلِّ فرحٍ يا إخوتي حينما تقعون في تَجاربَ مُتَنوِّعةٍ،",
-            "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon coeur, 2 mes frères, toutes les épreuves par lesquelles vous passez,",
-            "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عَالمينَ أنَّ امتحان إيمانكُمْ يُنشئ صبراً. وأمَّا الصَّبرُ فليكُن لهِ عملٌ تامٌّ، بحيث تكونون كاملينَ موقرين غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تنقصهُ حكمةٌ، فليسأل اللَّهِ",
-            "3 sachant que le test auquel votre foi est soumise, produit de l'endurance.4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut.5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu",
-            "3 knowing that the testing of your faith produces patience. 4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي يُعطي الجميعَ بسخاءٍ خالص ولا يُعيِّرُ، فَسيُعْطَى له. ولكن ليسأل بإيمانٍ غير مُرتابٍ في شيء. فإنَّ المُرتابَ يُشبهُ موج البحر الذي تسوقه الرِّيحُ وتخبطه.",
-            "qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée. 6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève.",
-            "who gives to all liberally and without reproach, and it will be given to him. 6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فلا يَظُنَّ مثل هذا أنَّهُ يَنَالُ مِنْ الرَّبِّ شيئاً. إنَّ الرجُل ذا الرأيين مُتَقَلقِلٌ في جَمِيع طُرُقِهِ. وَلْيَفتَخِرْ الأخُ المُتضعُ بارتفاعِهِ،",
-            "7 Que ce personnage ne s'imagine pas que le Seigneur donnera quoi 8 que ce soit à un homme partagé, fluctuant dans toutes ses démarches.9 Que le frère de condition modeste tire fierté de son élévation,",
-            "7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وأمَّا الغَنيُّ فبتواضعِهِ، لأنَّهُ كزهرِ العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقتْ بالحَرِّ فيَبَّسَتْ العُشبَ، فسقط زهرُهُ وفنيَ جَمالُ مَنظَرهِ.",
-            "10 et le riche, de son déclassement, parce qu'il passera comme la fleur des prés. 11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon,",
-            "10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هكذا يَذبُلُ الغَنيُّ أيضـاً في جميعِ طُرُقِهِ. مغبوط هو الرَّجُل الذي يَصبرُ على التَّجربَةِ، لأنَّه إذا تزكى ينالُ إكليلَ الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ.",
-            "le riche, dans ses entreprises, se flétrira. 12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.",
-            "So the rich man also will fade away in his pursuits. 12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.",
-        ],
+            "وَلكِنْ كَذلِكَ هؤُلاَءِ أَيْضًا، الْمُحْتَلِمُونَ، يُنَجِّسُونَ الْجَسَدَ، وَيَتَهَاوَنُونَ بِالسِّيَادَةِ، وَيَفْتَرُونَ عَلَى ذَوِي الأَمْجَادِ.",
+            "08 Et pourtant, ces coureurs de songes font la même chose : ils souillent la chair, ils méprisent la seigneurie de Dieu, ils outragent les anges appelés Gloires.",
+            "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries.",
+        ]
     ],
     [
         [
             Prefix.katholikon + "&D=GL12&C=Title",
-            " الكاثوليكون من رسالة يوحنا الثانية) 1 : 8 ـ 13 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية) 1 : 8-13)",
             "2 Jean 1:8-13",
             "2 John 1:8-13",
         ],
@@ -4929,7 +3214,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL13&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 3 : 1 ـ 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3 : 1-12)",
             "James 3:1-12",
             "James 3:1-12",
         ],
@@ -4953,7 +3238,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فاللِّسانُ هو نارٌ! وزينة الإثم. هكذا جُعِلَ اللِّسانُ في أعضائِنا، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ ميلادنا ( الكون )، ويُضرَمُ مِن جَهنَّمَ.",
+            "فاللِّسانُ هو نارٌ! وزينة الإثم. هكذا جُعِلَ اللِّسانُ في أعضائِنا، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ ميلادنا (الكون)، ويُضرَمُ مِن جَهنَّمَ.",
             "6 La langue aussi est un feu, le monde du mal; la langue est installée parmi les membres, elle qui souille le corps entier, qui embrase le cycle de la nature, qui est elle-même embrasée par la géhenne.",
             "6 And the tongue is a fire, a world of iniquity. The tongue is so set among our members that it defiles the whole body, and sets on fire the course of nature; and it is set on fire by hell.",
         ],
@@ -4971,7 +3256,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ ( الملح ) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً",
+            "ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ (الملح) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً",
             "11 La source produit-elle le doux et l'amer par le même orifice? Un figuier, mes frères, peut-il donner des olives, ou une vigne des figues? Une source saline ne peut pas non plus donner d'eau douce.",
             "11 Does a spring send forth fresh water and bitter from the same opening? 12 Can a fig tree, my brethren, bear olives, or a grapevine bear figs? Thus no spring yields both salt water and fresh.",
         ],
@@ -4979,7 +3264,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL14&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى الرسول( 4 : 7 ـ 16 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى الرسول(4 : 7-16)",
             "1 Peter 4:7-16",
             "1 Peter 4:7-16",
         ],
@@ -4991,13 +3276,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كُونُوا مُضِيفين للغرباء بعضُكُم لبعض بغير تذمر. وليكُن كُلُّ واحدٍ بِحَسبِ ما أخذَ مِن موهبةً، يخدمُ بها كما يليق، كوُكلاء صَالِحين على نِعمة اللَّـه المُتنوَّعة.",
+            "كُونُوا مُضِيفين للغرباء بعضُكُم لبعض بغير تذمر. وليكُن كُلُّ واحدٍ بِحَسبِ ما أخذَ مِن موهبةً، يخدمُ بها كما يليق، كوُكلاء صَالِحين على نِعمة اللَّ-ه المُتنوَّعة.",
             "9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.",
             "9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إن كان أحد يتكلَّمُ فكما يليق بأقوال اللَّـه. ومن يخدمُ فكأنَّهُ مِن قُوَّةٍ يعطيها اللَّـهُ، حتى يتمجَّد اللَّـهُ في كُلِّ شيءٍ بيسوع المسيح، الذي لهُ المجدُ والعزة إلى دهر الداهرين آمين.",
+            "إن كان أحد يتكلَّمُ فكما يليق بأقوال اللَّ-ه. ومن يخدمُ فكأنَّهُ مِن قُوَّةٍ يعطيها اللَّ-هُ، حتى يتمجَّد اللَّ-هُ في كُلِّ شيءٍ بيسوع المسيح، الذي لهُ المجدُ والعزة إلى دهر الداهرين آمين.",
             "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !",
             "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
         ],
@@ -5009,23 +3294,23 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "إذا عُيِّرتُم من أجل اسم المسيح، فطُوبى لكم، لأنَّ المجدِ والقوة وروح اللَّـه يَحلُّ عليكُم.",
+            "إذا عُيِّرتُم من أجل اسم المسيح، فطُوبى لكم، لأنَّ المجدِ والقوة وروح اللَّ-ه يَحلُّ عليكُم.",
             "14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !",
             "14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فلا يتألَّم أحدُكُم كقاتلٍ، أو سارقٍ، أو فاعل شرٍّ، أو مترصد لما هو لغيره. فأما إذا تألم كمسيحيٍّ، فلا يخجل، بل ليُمجِّدُ اللَّـه لأجل هذا الاسم.",
+            "فلا يتألَّم أحدُكُم كقاتلٍ، أو سارقٍ، أو فاعل شرٍّ، أو مترصد لما هو لغيره. فأما إذا تألم كمسيحيٍّ، فلا يخجل، بل ليُمجِّدُ اللَّ-ه لأجل هذا الاسم.",
             "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.",
             "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=GL15&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 27 )",
-            "Jacques 1: 22 -27",
-            "James 1:22-27",
+            Prefix.katholikon + "&D=GL15||011stSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-27)",
+            "Jacques 1: 22-27",
+            "James (1: 22-27)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5035,7 +3320,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّهُ نَظرَ ذاتَهُ ومَضى، فنَسِيَ كيف كان فأمَّا مَنْ يتَطلعَ في النَّاموسِ الكامل ( ناموس) الحُرِّيَّةِ ويثَبَتَ فيه، ولا يكون سامِعاً نَاسِياً بل فاعلاً للعملِ، فهذا يَكونُ مَغبوطاً سعيداً فيما يعملهُ.",
+            "فإنَّهُ نَظرَ ذاتَهُ ومَضى، فنَسِيَ كيف كان فأمَّا مَنْ يتَطلعَ في النَّاموسِ الكامل (ناموس) الحُرِّيَّةِ ويثَبَتَ فيه، ولا يكون سامِعاً نَاسِياً بل فاعلاً للعملِ، فهذا يَكونُ مَغبوطاً سعيداً فيما يعملهُ.",
             "24 il s'est observé, il est parti, il a tout de suite oublié de quoi il avait l'air. 25 Mais celui qui s'est penché sur une loi parfaite, celle de la liberté, et s'y est appliqué, non en auditeur distrait, mais en réalisateur agissant, celui-là trouvera le bonheur dans ce qu'il réalisera.",
             "24 for he observes himself, goes away, and immediately forgets what kind of man he was. 25 But he who looks into the perfect law of liberty and continues in it, and is not a forgetful hearer but a doer of the work, this one will be blessed in what he does.",
         ],
@@ -5054,54 +3339,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL17&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 3 ـ 12 )",
-            "1 Pierre 1 : 3 - 12",
-            "1 Peter 1:3-12",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "مُباركٌ الرب الإله أبو ربِّنا يسوع المسيح، الذى بحسب رحمته الكثيرة وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات،",
-            "3 Béni soit Dieu, le Père de notre Seigneur Jésus Christ: dans sa grande miséricorde, il nous a fait renaître pour une espérance vivante, par la résurrection de Jésus Christ d'entre les morts,",
-            "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لميراثٍ لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ في السَّمَوات لكم، أنتم الذين بقوة اللَّـه محروسون، بالإيمان للخلاص المُعدّ أن يُستعلَن في الزمان الأخير. الذي به تبتهجون الآن قليلاً، إن كان يجب أن تحزنوا يسيراً",
-            "4 pour un héritage qui ne se peut corrompre, ni souiller, ni flétrir; cet héritage vous est réservé dans les cieux, 5 à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin. 6 Aussi, tressaillez vous d'allégresse même s'il faut que,",
-            "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بتجارب متنوِّعة، لكي تكون تزكية إيمانكم وهي أثمن من الذَّهب الفاني، مع كونه مختبراً بالنَّار، فتوجَدُون أهلاً للمديح والمجدٍ والكرامةٍ عند استعلان يسوع المسيح،",
-            "pour un peu de temps, vous soyez affligés par diverses épreuves, 7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu - obtienne louange, gloire et honneur lors de la révélation de Jésus Christ,",
-            "you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي وإن لم تروه تحبُّونه. ذلك وإن كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا يُنطق به ومجيد، نائلين غاية إيمانكم خلاص نفوسكم. الخلاصَ الذي طلبه وفحصه الأنبياء،",
-            "Lui que vous aimez sans l'avoir vu, en qui vous croyez sans le voir encore; aussi tressaillez-vous d'une joie ineffable et glorieuse, en remportant, comme prix de la foi, le salut de vos âmes. 10 Sur ce salut ont porté les recherches et les investigations des prophètes,",
-            "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذينَ تنبأوا من أجل النِّعمَةِ البالغة إليكم، وباحثين عن الوقت الذي تكلم فيهم روحُ المسيح. الذي سَبقَ فشَهِدَ بآلام المسيح والأمجاد الآتيـة بعدها.",
-            "qui ont prophétisé au sujet de la grâce qui vous était destinée:11 ils recherchaient à quel temps et à quelles circonstances se rapportaient les indications données par l'Esprit du Christ qui était présent en eux, quand il attestait par avance les souffrances réservées au Christ et la gloire qui les suivrait.",
-            "who prophesied of the grace that would come to you, 11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذينَ أُعلِـنَ لهُـم أنَّهُم لم يعملوا لأنفسـهم، بل لكم كانـوا يخدمون هذه التي أُخبرتم بها الآن بواسطة الذين بَشَّروكُم في الرُّوح القُدُس المُرسَل مِنَ السَّماءِ. التي تَشتَهي الملائكة أن يطَّلِعوا عليها.",
-            "12 Il leur fut révélé que ce n'était pas pour eux-mêmes, mais pour vous qu'ils transmettaient ce message, que maintenant les prédicateurs de l'Évangile vous ont communiqué sous l'action de l'Esprit Saint envoyé du ciel, et dans lequel les anges désirent plonger leurs regards.",
-            "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=GL18&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى( 2 : 1 ـ 11 )",
-            "1 Jean 2 : 1 - 11",
-            "1 John 2:1-11",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2 : 1-11)",
+            "1 Jean (2: 1-11)",
+            "1 John (2: 1-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5117,7 +3358,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فمَن قال: ' إني قد عرفتُهُ ' ولم يحفظ وصاياهُ، فهو كاذبٌ وليس الحقُّ فيهِ. وأمَّا مَن يحفظ كلمتهُ، فبالحقيقة في هذا قد تكمَّلت محبَّةُ اللَّـهِ. بهذا نعرفُ أنَّنا فيهِ:",
+            "فمَن قال: ' إني قد عرفتُهُ ' ولم يحفظ وصاياهُ، فهو كاذبٌ وليس الحقُّ فيهِ. وأمَّا مَن يحفظ كلمتهُ، فبالحقيقة في هذا قد تكمَّلت محبَّةُ اللَّ-هِ. بهذا نعرفُ أنَّنا فيهِ:",
             "4 Celui qui dit: 'Je le connais', mais ne garde pas ses commandements, est un menteur, et la vérité n'est pas en lui. 5 Mais celui qui garde sa parole en lui, vraiment, l'amour de Dieu est accompli; à cela nous reconnaissons que nous sommes en lui.",
             "4 He who says, I know Him, and does not keep His commandments, is a liar, and the truth is not in him. 5 But whoever keeps His word, truly the love of God is perfected in him. By this we know that we are in Him.",
         ],
@@ -5149,13 +3390,13 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL19&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية ( 2 : 9 ـ 15 )",
-            "2 Peter 2:9-15",
-            "2 Peter 2:9-15",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (2 : 9-15)",
+            "2 Peter (2: 9-15)",
+            "2 Peter (2: 9-15)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يعلمُ الرَّبُّ أنْ يُنجي العابدين ( الأتقياء ) مِن المحنة، وأن يَحفظَ الظالمين ( الآثمة ) إلى يوم الدينونة معذبين،",
+            "يعلمُ الرَّبُّ أنْ يُنجي العابدين (الأتقياء) مِن المحنة، وأن يَحفظَ الظالمين (الآثمة) إلى يوم الدينونة معذبين،",
             "9 C'est donc que le Seigneur peut arracher à l'épreuve les hommes droits et garder en réserve, pour les châtier au jour du jugement,",
             "9 then the Lord knows how to deliver the godly out of temptations and to reserve the unjust under punishment for the day of judgment,",
         ],
@@ -5167,7 +3408,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "جسورين على المتسلطين،لا يخشون أن يجدفوا على الأمجاد، حيثُ ملائكةٌ ـ وهم أعظم قُدرةً وقُوَّةً ـ لا يُقدِّمُونَ على بعضهم حكم افتراءٍ.",
+            "جسورين على المتسلطين،لا يخشون أن يجدفوا على الأمجاد، حيثُ ملائكةٌ-وهم أعظم قُدرةً وقُوَّةً-لا يُقدِّمُونَ على بعضهم حكم افتراءٍ.",
             "Trop sûrs d'eux, arrogants, ils n'ont pas peur d'insulter les Gloires, 11 alors que les anges, qui leur sont supérieurs en force et en puissance, ne portent pas contre elles de jugement insultant devant le Seigneur.",
             "They are presumptuous, self-willed. They are not afraid to speak evil of dignitaries, 11 whereas angels, who are greater in power and might, do not bring a reviling accusation against them before the Lord.",
         ],
@@ -5192,10 +3433,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL1&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 1 ـ 12 )",
-            "1 Peter 1:1-12",
-            "1 Pierre 1 : 1-12",
+            Prefix.katholikon + "&D=GL1||111stSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 1-12)",
+            "1 Peter (1: 1-12)",
+            "1 Pierre (1: 1-12)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5247,7 +3488,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذين أُعلِنَ لهُمْ أنهم ليس لأنْفُسِهِمْ، بَلْ لَكم كانوا يَخدمونها هذه التي أُخْبِرْتُمْ بها أنتُمْ الآن، بواسطتهم الذين بَشَّروكُمْ بالرُّوح القُدُس المُرسَـلِ مِنَ السَّماءِ. التي تشتهي الملائكة أن يَطَّلِعوا عليها.",
+            "الذين أُعلِنَ لهُمْ أنهم ليس لأنْفُسِهِمْ، بَلْ لَكم كانوا يَخدمونها هذه التي أُخْبِرْتُمْ بها أنتُمْ الآن، بواسطتهم الذين بَشَّروكُمْ بالرُّوح القُدُس المُرسَ-لِ مِنَ السَّماءِ. التي تشتهي الملائكة أن يَطَّلِعوا عليها.",
             "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.",
             "12 Il leur fut révélé que ce n'était pas pour eux-mêmes, mais pour vous qu'ils transmettaient ce message, que maintenant les prédicateurs de l'Evangile vous ont communiqué sous l'action de l'Esprit Saint envoyé du ciel, et dans lequel les anges désirent plonger leurs regards",
         ],
@@ -5255,13 +3496,13 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL1stSunday&C=Title",
-            " الكاثوليكون من بطرس الرسول الثانية ( 1 : 1 ـ 11 )",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية (1 : 1-11)",
             "2 Pierre 1 : 1 - 11",
             "2 Peter 1:1-11",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مِنْ سِمعان بُطرس عَبدُ يسوع المسيح ورسوله، إلى الذين هم مُتساوون مَعَنا في الكرامـة بالإيمـانِ. الذي قد حسب لنا بِبِرِّ إلَهِنا ومُخلِّصنا يسوع المسيح.",
+            "مِنْ سِمعان بُطرس عَبدُ يسوع المسيح ورسوله، إلى الذين هم مُتساوون مَعَنا في الكرام-ة بالإيم-انِ. الذي قد حسب لنا بِبِرِّ إلَهِنا ومُخلِّصنا يسوع المسيح.",
             "1 Syméon Pierre, serviteur et apôtre de Jésus Christ, à ceux qui ont reçu, par la justice de notre Dieu et Sauveur Jésus Christ,",
             "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:",
         ],
@@ -5279,7 +3520,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فأضيفوا أنتم إلى ذلك عَينِهَ كل الاجتهاد لتزيدوا على إيمانكم الفضيلة، وفى الفضيلة المعرفة، وفى المعرفةِ تعفُّفـاً، وفى التَّعفُّفِ صبراً، وفى الصَّبرِ تَقوى، وفى التَّقوى مَودَّةً أخَويَّةً، وفى المودَّةِ الأخويَّةِ مَحبَّةً.",
+            "فأضيفوا أنتم إلى ذلك عَينِهَ كل الاجتهاد لتزيدوا على إيمانكم الفضيلة، وفى الفضيلة المعرفة، وفى المعرفةِ تعفُّف-اً، وفى التَّعفُّفِ صبراً، وفى الصَّبرِ تَقوى، وفى التَّقوى مَودَّةً أخَويَّةً، وفى المودَّةِ الأخويَّةِ مَحبَّةً.",
             "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, 6 à la maîtrise de soi la ténacité, à la ténacité la piété, 7 à la piété l'amitié fraternelle, à l'amitié fraternelle l'amour.",
             "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.",
         ],
@@ -5299,7 +3540,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL20&C=Title",
-            " الكاثوليكون من معلمنا يعقوب الرسول ( 4 : 1 ـ 10 )",
+            " الكاثوليكون من معلمنا يعقوب الرَسُولِ (4 : 1-10)",
             "Jacques 4 : 1 – 10",
             "James 4:1-10",
         ],
@@ -5337,7 +3578,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL21&C=Title",
-            " الكاثوليكون من رسالة معلمنا يهوذا الرسول ( 1 : 17 ـ 25 )",
+            " الكاثوليكون مِنْ رِسَالَةِ معلمنا يَهُوذَا الرَسُولِ (1 : 17-25)",
             "Jude 1 : 17 - 25",
             "Jude 1:17-25",
         ],
@@ -5355,13 +3596,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللَّهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.",
+            "مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللَّهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.",
             "21 maintenez-vous dans l'amour de Dieu; placez votre attente dans la miséricorde de notre Seigneur Jésus Christ pour la vie éternelle.",
             "21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فبكِّـتوا بعضاً ممن قضى عليهم، وخلِّصوا بعضاً، وانقذوهم مِن النَّار، وارحموا بعضاً بخوف مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
+            "فبكِّ-توا بعضاً ممن قضى عليهم، وخلِّصوا بعضاً، وانقذوهم مِن النَّار، وارحموا بعضاً بخوف مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.",
             "22 Ceux qui hésitent, prenez-les en pitié; sauvez-les en les arrachant au feu; pour les autres, prenez-les en pitié, mais avec crainte, haïssant jusqu'à la tunique souillée par leur chair. 24 A celui qui peut vous garder de toute chute",
             "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh. 24 Now to Him who is able to keep you from stumbling,",
         ],
@@ -5375,7 +3616,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL22&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (2:14-26)",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2:14-26)",
             "Jacques 2:14-26",
             "James 2:14-26",
         ],
@@ -5419,7 +3660,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL24&C=Title",
-            " الكاثوليكون من رسالة معلمنا يعقوب الرسول( 5 : 16 ـ 20 )",
+            " الكاثوليكون مِنْ رِسَالَةِ معلمنا يعقوب الرسول(5 : 16-20)",
             "Jacques 5 : 16 -20",
             "James 5:16-20",
         ],
@@ -5451,7 +3692,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL25&C=Title",
-            " الكاثوليكون من بطرس الرسول الثانية ( 2 : 2 ـ 8 )",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية (2 : 2-8)",
             "2 Pierre 2 : 2 - 8",
             "2 Peter 2:2-8",
         ],
@@ -5489,7 +3730,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL26&C=Title",
-            " الكاثوليكون من رسالة معلمنا يعقوب الرسول( 3 : 13 ـ 4 : 1 ـ 4 )",
+            " الكاثوليكون مِنْ رِسَالَةِ معلمنا يعقوب الرسول(3 : 13-4 : 1-4)",
             "Jacques 3:13-4:4",
             "James 3:13-4:4",
         ],
@@ -5533,25 +3774,25 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL27&C=Title",
-            " الكاثوليكون من معلمنا يعقوب الرسول( 4 : 11 ـ 5 :1 ـ 3 )",
+            " الكاثوليكون من معلمنا يعقوب الرسول(4 : 11-5 :1-3)",
             "Jacques 4 : 11 – 5 : 3",
             "James 4:11-5:3",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لا تغتابوا بعضُـكُم بعضاً يا أخوتي. فإن الذي يغتاب أخَاهُ أو يدينُ أخاهُ يغتاب النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموس بل ديَّاناً لهُ. وإنَّما المشترع والدَّيان واحد",
+            "لا تغتابوا بعضُ-كُم بعضاً يا أخوتي. فإن الذي يغتاب أخَاهُ أو يدينُ أخاهُ يغتاب النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموس بل ديَّاناً لهُ. وإنَّما المشترع والدَّيان واحد",
             "11 Ne médisez pas les uns des autres, frères. Celui qui médit d'un frère ou juge son frère médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi.",
             "11 Do not speak evil of one another, brethren. He who speaks evil of a brother and judges his brother, speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وهو قادر أن يُخلِّص وأن يُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك؟.هلُمَّوا الآنَ أيُّها القائلون: ' ننطلق اليَوم أو غداً إلى هذهِ المدينةِ، ونقيم هناكَ سـنةً ونَتَّجِرُ ونَربحُ '.",
+            "وهو قادر أن يُخلِّص وأن يُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك؟.هلُمَّوا الآنَ أيُّها القائلون: ' ننطلق اليَوم أو غداً إلى هذهِ المدينةِ، ونقيم هناكَ س-نةً ونَتَّجِرُ ونَربحُ '.",
             "12 Or un seul est législateur et juge: celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain? 13 Alors, vous qui dites: 'Aujourd'hui - ou demain -, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent,",
             "12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another? 13 Come now, you who say, Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit;",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أنتُم الذينَ لا تَعلمون ماذا يكون غـداً؟ لأنَّه ما هيَ حياتُكُم؟ إنَّها هي كبُخارٌ يَظهرُ قليلاً ثُمَّ يَضمحِلُّ. عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشنا نفعلُ هذا أو ذاكَ '.",
+            "أنتُم الذينَ لا تَعلمون ماذا يكون غ-داً؟ لأنَّه ما هيَ حياتُكُم؟ إنَّها هي كبُخارٌ يَظهرُ قليلاً ثُمَّ يَضمحِلُّ. عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشنا نفعلُ هذا أو ذاكَ '.",
             "14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît! 15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela, vous tirez fierté de vos fanfaronnades.",
             "14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away. 15 Instead you ought to say, If the Lord wills, we shall live and do this or that.",
         ],
@@ -5571,7 +3812,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL28&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 4 : 7 ـ 16)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4 : 7-16)",
             "1 Jean 4:7-16",
             "1 John 4:7-16",
         ],
@@ -5601,67 +3842,17 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فمَن اعترف بأن يسوع هو ابن اللَّـهِ، فإنَّ اللَّه يثبُت فيه وهو في اللَّه. ونحنُ قد عرفنا وآمنا بالمحبَّة التى للَّهِ فينا. اللَّه محبَّةٌ، فمَن يثبُت في المحبَّة، يثبُت في اللَّهِ واللَّهُ فيه.",
+            "فمَن اعترف بأن يسوع هو ابن اللَّ-هِ، فإنَّ اللَّه يثبُت فيه وهو في اللَّه. ونحنُ قد عرفنا وآمنا بالمحبَّة التى للَّهِ فينا. اللَّه محبَّةٌ، فمَن يثبُت في المحبَّة، يثبُت في اللَّهِ واللَّهُ فيه.",
             "15 Quiconque confesse que Jésus est le Fils de Dieu, Dieu demeure en lui et lui en Dieu. 16 Et nous, nous connaissons, pour y avoir cru, l'amour que Dieu manifeste au milieu de nous. Dieu est amour: qui demeure dans l'amour demeure en Dieu et Dieu demeure en lui",
             "15 Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. 16 And we have known and believed the love that God has for us. God is love, and he who abides in love abides in God, and God in him.",
         ],
     ],
     [
         [
-            Prefix.katholikon + "&D=GL29&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (3 : 13 – 4 :6)",
-            "Jacques 3 : 13 – 4 :6",
-            "James 3:13-4:6",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "منْ هو حكيمٌ وعالمٌ بينكم، فليُرِنا أعمالَهُ بالتَّصرُّف الحَسنِ في وداعةِ الحكمةِ.",
-            "13 Qui est sage et intelligent parmi vous? Qu'il tire de sa bonne conduite la preuve que la sagesse empreint ses actes de douceur.",
-            "13 Who is wise and understanding among you? Let him show by good conduct that his works are done in the meekness of wisdom.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن إنْ كان لكُمْ غَيْرَةٌ مُرَّةٌ وتَحزُّبٌ في قُلوبِكُمْ، فلا تفتخِروا وتَكذِبوا على الحقِّ.",
-            "14 Mais si vous avez le coeur plein d'aigre jalousie et d'esprit de rivalité, ne faites pas les avantageux et ne nuisez pas à la vérité par vos mensonges.",
-            "14 But if you have bitter envy and self-seeking in your hearts, do not boast and lie against the truth.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ليست هذه الحِكمةُ نَازلةً مِنْ فوقُ، بل هيَ أرضِيَّةٌ نفسانِيَّةٌ شيطانيَّةٌ. لأنَّهُ حيثُ الغَيْرَةُ والتَّحزُّبُ، فهناك التَّشويشُ وكُلُّ أمرٍ رديءٍ. أمَّا الحكمةُ التي هي مِنْ فوقُ فهيَ أوَّلاً طاهِرةٌ، ثُمَّ مُسالِمةٌ، مُترفِّقَةٌ،",
-            "15 Cette sagesse-là ne vient pas d'en haut; elle est terrestre, animale, démoniaque. 16 En effet, la jalousie et l'esprit de rivalité s'accompagnent de remous et de force affaires fâcheuses. 17 Mais la sagesse d'en haut est d'abord pure, puis pacifique, douce,",
-            "15 This wisdom does not descend from above, but is earthly, sensual, demonic. 16 For where envy and self-seeking exist, confusion and every evil thing are there. 17 But the wisdom that is from above is first pure, then peaceable, gentle,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "سهلةٌ، مملوءةٌ رحمةً وثمراً صالحاً، لا تُدين ولا تُراءى. وثمرُ البِرِّ يُزرَعُ في السَّلامِ من الذين يفعلُون السَّلامِ. منْ أينَ فيكم الحُروبُ الخصوماتُ؟",
-            "conciliante, pleine de pitié et de bons fruits, sans façon et sans fard. 18 Le fruit de la justice est semé dans la paix pour ceux qui font oeuvre de paix. 1 D'où viennent les conflits, d'où viennent les combats parmi vous?",
-            "willing to yield, full of mercy and good fruits, without partiality and without hypocrisy. 18 Now the fruit of righteousness is sown in peace by those who make peace. 4:1 Where do wars and fights come from among you?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أليستْ مِنْ هنا: مِنْ لذَّاتِكُمُ المُحَارِبةِ في أعضائِكُمْ؟ تَشتهونَ وليس لكُم. تَقتُلونَ وتَحسِدونَ ولستُمْ تَقدِرونَ أن تنالوا. تُخاصِمونَ وتُحارِبونَ وليس لكُم شيء، لأنَّكُم لا تسألُون.",
-            "N'est-ce pas de vos plaisirs qui guerroient dans vos membres? Vous convoitez et ne possédez pas; vous êtes meurtriers et jaloux, et ne pouvez réussir; vous combattez et bataillez. Vous ne possédez pas parce que vous n'êtes pas demandeurs",
-            "Do they not come from your desires for pleasure that war in your members? 2 You lust and do not have. You murder and covet and cannot obtain. You fight and war. Yet you do not have because you do not ask.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "تسألُون ولستُمْ تأخُذونَ، لأنَّكُم تَطلُبونَ رَدِيّاً لكي تُنفِقوا في لذَّاتِكُم.أيُّها الزُّناةُ، أمَا تَعلَمونَ أنَّ مَحبَّةَ العالم عداوةٌ للَّهِ؟ فمَنْ أرادَ أنْ يكونَ مُحِبّاً للعالم، فقد صَارَ عَدوّاً للَّهِ.",
-            "et ne recevez pas parce que vos demandes ne visent à rien de mieux que de dépenser pour vos plaisirs. 4 Femmes infidèles! Ne savez-vous pas que l'amitié envers le monde est hostilité contre Dieu? Celui qui veut être ami du monde se fait donc ennemi de Dieu.",
-            "3 You ask and do not receive, because you ask amiss, that you may spend it on your pleasures. 4 Adulterers and adulteresses! Do you not know that friendship with the world is enmity with God? Whoever therefore wants to be a friend of the world makes himself an enemy of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أمْ تَظُنُّونَ أنَّ الكِتابَ يَقولُ باطِلاً: إن الرُّوحُ الذي حلَّ فينا يَشتاقُ إلى الحَسدِ؟ ولكنَّهُ يُعطي نعمةً أعظمَ. لذلكَ يقولُ: ' يُقاوِمُ اللَّهُ المُستَكبِرِينَ، وأمَّا المُتواضِعونَ فَيُعطِيهِم نِعمَةً '.",
-            "5 Ou bien pensez-vous que ce soit pour rien que l'Écriture dit: Dieu désire jalousement l'Esprit qu'Il a fait habiter en nous? 6 Mais il fait mieux pour se montrer favorable; voilà pourquoi l'Écriture dit: Dieu résiste aux orgueilleux, mais se montre favorable aux humbles",
-            "5 Or do you think that the Scripture says in vain, The Spirit who dwells in us yearns jealously? 6 But He gives more grace. Therefore He says: God resists the proud, But gives grace to the humble.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=GL2ndSunday&C=Title",
-            " الكاثوليكون من يعقوب الرسول( 1 : 13 ـ 21 )",
-            "Jacques 1 : 13 – 21",
-            "James 1:13-21",
+            Prefix.katholikon + "&D=GL2ndSunday||GL47&C=Title",
+            " الكاثوليكون من يعقوب الرسول(1 : 13-21)",
+            "Jacques (1: 13-21)",
+            "James (1: 13-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5691,9 +3882,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL31&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 10 ـ 18 )",
-            "1 Pierre 3 : 10 - 18",
-            "1 Peter 3:10-18",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3 : 10-18)",
+            "1 Pierre (3: 10-18)",
+            "1 Peter (3: 10-18)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5728,10 +3919,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL32&C=Title",
-            " الكاثوليكون من يوحنا الرسول الأولى( 3 : 2 ـ 11 )",
-            "1 Jean 3:2-11",
-            "1 John 3:2-11",
+            Prefix.katholikon + "&D=GL32||Pntl20&C=Title",
+            " الكاثوليكون من يُوحَنَا الرَسُولِ الأولى(3 : 2-11)",
+            "1 Jean (3: 2-11)",
+            "1 John (3: 2-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5772,10 +3963,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL33&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 12 ـ 19 )",
-            "1 Pierre 4:12-19",
-            "1 Peter 4:12-19",
+            Prefix.katholikon + "&D=1009||1503||2605||GL33&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 12-19)",
+            "1 Pierre (4: 12-19)",
+            "1 Peter (4: 12-19)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5811,9 +4002,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL34&C=Title",
-            " الكاثوليكون من بطرس الرسول الأولى( 1 : 2 ـ 8 )",
-            "1 Pierre 1:2-8",
-            "1 Peter 1:2-8",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الأولى(1 : 2-8)",
+            "1 Pierre (1: 2-8)",
+            "1 Peter (1: 2-8)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5823,13 +4014,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لميراث لا يَفنى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ لكُم في السَّمَوات، أيُّها المحروسُون بقُوَّة اللَّـهِ بالإيمان، للخلاص المُعدّ أن يُستعلَن في الزمن الأخير.",
+            "لميراث لا يَفنى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ لكُم في السَّمَوات، أيُّها المحروسُون بقُوَّة اللَّ-هِ بالإيمان، للخلاص المُعدّ أن يُستعلَن في الزمن الأخير.",
             "4 pour un héritage qui ne se peut corrompre, ni souiller, ni flétrir; cet héritage vous est réservé dans les cieux, à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin.",
             "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذي به تبتهجون الآن قليلاً ـ إن كان يجب ـ أن تحزنُوا بتجارب مُتنوِّعةٍ، لكي يكُون اختبار إيمانكُم كريماً أفضل مِن الذَّهب الفاني، مع كونه مُختبراً بالنَّار،",
+            "الذي به تبتهجون الآن قليلاً-إن كان يجب-أن تحزنُوا بتجارب مُتنوِّعةٍ، لكي يكُون اختبار إيمانكُم كريماً أفضل مِن الذَّهب الفاني، مع كونه مُختبراً بالنَّار،",
             "6 Aussi tressaillez-vous d'allégresse même s'il faut que, pour un peu de temps, vous soyez affligés par diverses épreuves, 7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu -",
             "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire,",
         ],
@@ -5849,9 +4040,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL35&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 15 ـ 5 : 1 ـ5 )",
-            "1 Peter 4:15-5:5",
-            "1 Peter 4:15-5:5",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 15-5 : 1 -5)",
+            "1 Pierre (4:15 & 5:5)",
+            "1 Peter (4:15 & 5:5)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5873,7 +4064,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أن ارعوا رَعيَّة اللَّه التي فيكُم مُتعاهدين لها، لا عن اضطرار بل عن اختيار، كمثل اللَّه ولا لربح قبيح بل بقلب سليم، ولا كمَن يتسلَّط على ميراث اللَّـه، بل صائرينَ أمثلةً للرَّعيَّة.",
+            "أن ارعوا رَعيَّة اللَّه التي فيكُم مُتعاهدين لها، لا عن اضطرار بل عن اختيار، كمثل اللَّه ولا لربح قبيح بل بقلب سليم، ولا كمَن يتسلَّط على ميراث اللَّ-ه، بل صائرينَ أمثلةً للرَّعيَّة.",
             "2 Faites paître le troupeau de Dieu qui est avec vous, non par contrainte, mais volontairement selon Dieu ; ni pour un gain sordide, mais de bon coeur ; 3 non en tyrannisant ceux qui vous sont confiés, mais en devenant les modèles du troupeau ;",
             "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock;",
         ],
@@ -5892,10 +4083,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL36&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (5:7-11)",
-            "Jacques 5:7-11",
-            "James 5:7-11",
+            Prefix.katholikon + "&D=GL36||GL43&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5: 7-11)",
+            "Jacques (5: 7-11)",
+            "James (5: 7-11)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5925,9 +4116,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL38&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 4 : 7 ـ 12 )",
-            "James 4:7-12",
-            "James 4:7-12",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (4 : 7-12)",
+            "James( 4: 7-12)",
+            "James( 4: 7-12)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5951,9 +4142,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL39&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 2 : 1 )",
-            "James 1:22-2:1",
-            "James 1:22-2:1",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-2 : 1)",
+            "James (1: 22 & 2:1)",
+            "James (1: 22 & 2:1)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -5963,7 +4154,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نَسِيَ ما هُو. فأمَّا مَنْ يتَطَّلعَ في النَّامُوسِ الكامِلِ ـ نامُوس الحُرِّيَّةِ ـ وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسِياً بل عامِلاً بالكلمةِ، فهذا يَكُونُ مَغبُوطاً في عَملهِ.",
+            "فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نَسِيَ ما هُو. فأمَّا مَنْ يتَطَّلعَ في النَّامُوسِ الكامِلِ-نامُوس الحُرِّيَّةِ-وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسِياً بل عامِلاً بالكلمةِ، فهذا يَكُونُ مَغبُوطاً في عَملهِ.",
             "24 et qui, après s’être regardé, s’en va et oublie aussitôt comment il est. 25 Mais celui qui a plongé les regards dans la loi parfaite, la loi de la liberté, et qui persévère, non pas en l’écoutant pour l’oublier, mais en la pratiquant activement, celui–là sera heureux dans son action même.",
             "24 for he observes himself, goes away, and immediately forgets what kind of man he was. 25 But he who looks into the perfect law of liberty and continues in it, and is not a forgetful hearer but a doer of the work, this one will be blessed in what he does.",
         ],
@@ -5982,10 +4173,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL3&C=Title",
-            " الكاثوليكون من رسالة يعقوب( 2 : 1 - 13 )",
-            "James 2:1-13",
-            "James 2:1-13",
+            Prefix.katholikon + "&D=GL3||GL3rdSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب(2 : 1-13)",
+            "James (2: 1-13)",
+            "James (2: 1-13)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6026,54 +4217,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL3rdSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول( 2 : 1 ـ 13 )",
-            "Jacques 2 : 1 - 13",
-            "James 2:1-13",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "دخل إلى مجمعِكُم رجُلٌ في إصبعه خاتم ذهبٍ بحلة بهية، ودخل أيضاً مسكين في ثوب رث، فنظرتُم إلى اللاَّبس الحلة البهية",
-            "1 Mes frères, ne mêlez pas des cas de partialité à votre foi en notre glorieux Seigneur Jésus Christ. 2 En effet, s'il entre dans votre assemblée un homme aux bagues d'or, magnifiquement vêtu; s'il entre aussi un pauvre vêtu de haillons;",
-            "1My brethren, do not hold the faith of our Lord Jesus Christ, the Lord of glory, with partiality. 2 For if there should come into your assembly a man with gold rings, in fine apparel, and there should also come in a poor man in filthy clothes,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وتقولون لهُ: ' اجلِس أنت ههنا حسناً '. وتقولون للمسكين: ' قِف أنتَ هُناكَ ' أو: ' اجلِس ههنا تحتَ مؤطىء الأقدام ' أفلا تكونوا قد ميزتم في أنفسكُم، وصرتم قُضاة لأفكارٍ شريرةٍ؟",
-            "3 si vous vous intéressez à l'homme qui porte des vêtements magnifiques et lui dites: 'Toi, assieds-toi à cette bonne place'; et au pauvre vous dites: 'Toi, tiens-toi debout' ou 'Assieds-toi là-bas, au pied de mon escabeau', 4 n'avez-vous pas fait en vous-mêmes une discrimination? N'êtes-vous pas devenus des juges aux raisonnements criminels?",
-            "3 and you pay attention to the one wearing the fine clothes and say to him, You sit here in a good place, and say to the poor man, You stand there, or, Sit here at my footstool, 4 have you not shown partiality among yourselves, and become judges with evil thoughts?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اسمعُوا يا إخوتي الأحِبَّاءَ، أمَا اختَارَ اللَّهُ مساكين هذا العالمِ وهم أغنياءَ في الإيمانِ، وورثةَ للمَلكوتِ الذي وَعَدَ بِهِ الذينَ يُحِبُّونَهُ؟ وأمَّا أنتُمْ فاهنتُمْ المسكينَ. أليسَ الأغنياءُ هم الذين يقهرونكم ويجرونَكُم إلى المَحَاكِمِ؟",
-            "5 Écoutez, mes frères bien-aimés! N'est-ce pas Dieu qui a choisi ceux qui sont pauvres aux yeux du monde pour les rendre riches en foi et héritiers du Royaume qu'il a promis à ceux qui L'aiment? Mais vous, vous avez privé le pauvre de sa dignité. N'est-ce pas les riches qui vous oppriment? Eux encore qui vous traînent devant les tribunaux?",
-            "5 Listen, my beloved brethren: Has God not chosen the poor of this world to be rich in faith and heirs of the kingdom which He promised to those who love Him? 6 But you have dishonored the poor man. Do not the rich oppress you and drag you into the courts?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أليس هُمْ يُجَدِّفونَ على الاسمِ الحسن الذي دُعِيَ بِهِ عَلَيكُمْ؟ فإنْ كنتُمْ تُكَمِّلونَ النَّاموسَ المُلوكِيَّ حَسبَ الكتابِ: ' تُحِبُّ قَرِيبَكَ كنَفسِكَ '. فَحسناً تَفعَلونَ. أما إن حابيتم الوجوه، تفعلونَ خَطِيئةً، إذ يوبخكم النَّاموس كمُتعَدِّينَ.",
-            "7 N'est-ce pas eux qui diffament le beau nom qu'on invoque sur vous? 8 Certes, si vous exécutez la loi royale, conformément au texte: Tu aimeras ton prochain comme toi-même, vous agissez bien. 9 Mais si vous êtes partiaux, vous commettez un péché et la loi vous met en accusation comme transgresseurs.",
-            "7 Do they not blaspheme that noble name by which you are called? 8 If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you do well; 9 but if you show partiality, you commit sin, and are convicted by the law as transgressors.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّ مَنْ حَفِظَ النَّاموسِ كُلَّه ، وعَثَرَ في واحدةٍ، فقد صَارَ مُجرِماً في الكُلِّ. لأنَّ الذي قالَ: ' لا تَزنِ ' قال أيضاً: ' لا تقتلْ '. فإنْ لَم تَزنِ ولكن قَتلتَ فقد صِرتَ مُتعدياً للنَّاموسِ.",
-            "10 En effet, observer toute la loi et trébucher sur un seul point, c'est se rendre passible de tout, 11 car Celui qui a dit: Tu ne commettras pas d'adultère a dit aussi: Tu n'assassineras pas et si, sans commettre d'adultère, tu commets un meurtre, tu contreviens à la loi.",
-            "10 For whoever shall keep the whole law, and yet stumble in one point, he is guilty of all. 11 For He who said, Do not commit adultery, also said, Do not murder. Now if you do not commit adultery, but you do murder, you have become a transgressor of the law.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "هكذا تَكَلَّموا وهكذا اعمَلُوا كعتيدين أن تحاكموا بِنَاموسِ الحُرِّيَّةِ. فأنَّ الدينونة بِلا رَحمةٍ تكون على مَنْ لم يَعمَلْ الرَحمَةً، والرَّحمة تفتخر على الحكم.",
-            "12 Parlez et agissez en hommes appelés à être jugés d'après la loi de liberté. En effet, le jugement est sans pitié pour qui n'a pas eu pitié; la pitié dédaigne le jugement. 12 Parlez et agissez en hommes appelés à être jugés d'après la loi de liberté. En effet, le jugement est sans pitié pour qui n'a pas eu pitié; la pitié dédaigne le jugement.",
-            "12 So speak and so do as those who will be judged by the law of liberty. 13 For judgment is without mercy to the one who has shown no mercy. Mercy triumphs over judgment.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=GL40&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 20 ـ 2 : 1 ـ 6 )",
-            "2 Peter 1:20-2:6",
-            "2 Peter 1:20-2:6",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 20-2 : 1-6)",
+            "2 Peter (1: 20 & 2: 6)",
+            "2 Peter (1: 20 & 2: 6)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6095,7 +4242,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّهُ إن كانَ اللَّهُ لم يُشفِقْ على الملائكةِ الذين أَخطئوا، بل في سلاسِل الظَّلام طرحهُم في جهنَّم، وسلَّمهُم محرُوسين للقضاء، ولم يُشـفِـقْ على العـالم القديم، إنَّما حفظَ نُوحاً",
+            "لأنَّهُ إن كانَ اللَّهُ لم يُشفِقْ على الملائكةِ الذين أَخطئوا، بل في سلاسِل الظَّلام طرحهُم في جهنَّم، وسلَّمهُم محرُوسين للقضاء، ولم يُش-فِ-قْ على الع-الم القديم، إنَّما حفظَ نُوحاً",
             "4 Car, si Dieu n’a pas épargné les anges qui avaient péché, mais les a livrés et précipités dans des abîmes de ténèbres où ils sont retenus en vue du jugement ; 5 s’il n’a pas épargné le monde ancien, mais s’il a préservé huit personnes, dont Noé,",
             "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment; 5 and did not spare the ancient world, but saved Noah, one of eight people,",
         ],
@@ -6109,9 +4256,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL41&C=Title",
-            " الكاثوليكون من رسالة يهوذا الرسول ( 1 : 19 ـ 25 )",
-            "Jude 1:19-25",
-            "Jude 1:19-25",
+            " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1 : 19-25)",
+            "Jude (1: 19-25)",
+            "Jude (1: 19-25)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6134,62 +4281,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL42&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى( 2 : 12 ـ 17 )",
-            "1 John 2:12-17",
-            "1 John 2:12-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أكتبُ إليكُم أيُّها الأبناء لأنَّهُ قد غُفِرتْ لكُمُ خطاياكُمْ مِنْ أجلِ اسمهِ. أكتُبُ إليكُمُ أيُّها الآباءُ لأنَّكُمْ قد عَرَفتُمُ الذي هُو مِن البدءِ.",
-            "12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom. 13 Je vous écris, pères, parce que vous avez connu celui qui est dès le commencement.",
-            "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "أكتُبُ إليكُمْ أيُّها الأحداثُ لأنَّكُمْ قد غَلبتُمُ الشِّرِّيرَ. كتبتُ إليكُم أيُّها الفتيانُ لأنَّكُمْ قد عَرَفتُمُ الآبَ. قد كَتبتُ إليكُم أيُّها الآباءُ لأنَّكُمْ قد عرَفتم الذي هُو مِنَ البدءِ.",
-            "Je vous écris, jeunes gens, parce que vous avez vaincu le Malin. Je vous ai écrit, jeunes enfants, parce que vous avez connu le Père. 14 Je vous ai écrit, pères, parce que vous avez connu celui qui est dès le commencement.",
-            "I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "قد كَتبتُ إليكُم أيُّها الأحداثُ لأنَّكُمْ أقوياءُ، وكلِمةُ اللَّهِ ثابتةٌ فيكُمْ، وقد غَلبتُمُ الشِّرِّيرَ. لا تحبُّوا العالمَ ولا الأشياءَ التي في العالمِ. إن أحَبَّ أحدٌ العالمَ فليست فيه مَحبَّةُ الآبِ.",
-            "Je vous ai écrit, jeunes gens, parce que vous êtes forts, que la parole de Dieu demeure en vous et que vous avez vaincu le Malin. 15 N’aimez pas le monde, ni ce qui est dans le monde. Si quelqu’un aime le monde, l’amour du Père n’est pas en lui ;",
-            "I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّ كُلَّ ما في العالمِ هُو: شهوةَ الجسدِ، وشهوةَ العُيونِ، وتَعظُّمَ المعيشةِ، ليسَ مِن الآبِ بل مِنْ العالمِ. والعالمُ يَمضي وشهوتُهُ، أمَّا الذي يَصنعُ مشيئةَ اللَّهِ فيثبُتُ إلى الأبدِ.",
-            "16 car tout ce qui est dans le monde, la convoitise de la chair, la convoitise des yeux et l’orgueil de la vie, ne vient pas du Père, mais vient du monde.17 Et le monde passe, et sa convoitise aussi ; mais celui qui fait la volonté de Dieu demeure éternellement.",
-            "16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=GL43&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (5:7-11)",
-            "Jacques 5:7-11",
-            "James 5:7-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فتأنَّوا أيُّها الإخوةُ إلى مجيء الربِّ. هوذا الفَّلاحُ ينتظرُ ثمرَ الأرض الكريم، مُتأنَّياً عليهِ حتى ينالَ المطر المُبكِّر والمُتأخِّر.",
-            "7 Prenez donc patience, frères, jusqu'à la venue du Seigneur. Voyez le cultivateur: il attend le fruit précieux de la terre sans s'impatienter à son propos tant qu'il n'en a pas recueilli du précoce et du tardif.",
-            "7 Therefore be patient, brethren, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, waiting patiently for it until it receives the early and latter rain.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فتأنَّوا أنتُم وثبِّتُوا قُلُوبكُم، لأنَّ مجيء الربِّ قد اقترب. لا يَئِنَّ بعضُكُم مِن بعض يا إخوتي لِئَلاَّ تُدانوا. هوَذا الدَّيانُ واقفٌ على الأبوابِ.",
-            "8 Vous aussi, prenez patience, ayez le coeur ferme, car la venue du Seigneur est proche. 9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes.",
-            "8 You also be patient. Establish your hearts, for the coming of the Lord is at hand. 9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door!",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=GL45&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (2:5-13 )",
-            "Jacques 2:5-13",
-            "James 2:5-13",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2: 5-13)",
+            "Jacques (2: 5-13)",
+            "James (2: 5-13)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6219,9 +4314,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL46&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 2 : 1 )",
-            "2 Pierre 3:8-15",
-            "2 Peter 3:8-15",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-2 : 1)",
+            "2 Pierre (3: 8-15)",
+            "2 Peter (3: 8-15)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6250,40 +4345,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL47&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 13 ـ 21 )",
-            "Jacques 1 : 13-21",
-            "James 1:13-21",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا يَقُلْ أحدٌ إذا جُرِّبَ: ' أن اللَّه قد جربني '، لأنَّ اللَّهَ غيرُ مُجرَّبٍ بالشُّرُور، وهُو لا يُجرِّبُ أحداً. بل كُلَّ واحدٍ يُجرَّبُ مِن شهوتهِ الخاصة إذا انجذبَ وانخدعَ بها.",
-            "13 Que nul, quand il est tenté, ne dise: 'Ma tentation vient de Dieu.' Car Dieu ne peut être tenté de faire le mal et ne tente personne. Chacun est tenté par sa propre convoitise, qui l'entraîne et le séduit.",
-            "13 Let no one say when he is tempted, I am tempted by God; for God cannot be tempted by evil, nor does He Himself tempt anyone. 14 But each one is tempted when he is drawn away by his own desires and enticed.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ثُمَّ إن الشَّهوَةُ إذا حَبلتْ تلدُ الخطيَّةُ، والخطيَّةُ إذا تمتْ تُنتجُ الموت. لا تضلُّوا يا إخوتي الأحبَّاء.إنَّ كُل عطيَّةٍ صالحةٍ وكُلُّ مَوهبةٍ كاملةٍ هي مِن فوقُ، نازلةٌ مِن عندِ أبي الأنوار،",
-            "15 Une fois fécondée, la convoitise enfante le péché, et le péché, arrivé à la maturité, engendre la mort. Ne vous y trompez pas, mes frères bien-aimés. Tout don de valeur et tout cadeau parfait descendent d'en haut, du Père des lumières",
-            "15 Then, when desire has conceived, it gives birth to sin; and sin, when it is full-grown, brings forth death. 16 Do not be deceived, my beloved brethren. 17 Every good gift and every perfect gift is from above, and comes down from the Father of lights,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي ليسَ عِندهُ تغييرٌ ولا شبه ظِلُّ يزول. هو شاء فَولدَنا بكلمةِ الحقِّ لنكُون باكُورةً مِن خلائقهِ.إذاً اعلمُوا يا إخوتي الأحبَّاء، ليكُن كُلُّ إنسانٍ سريعاً إلى الاستِماع، بطيئاً عن التَّكلُّم، وبطيئاً عن الغضَب،",
-            "chez lequel il n'y a ni balancement ni ombre due au mouvement. De sa propre volonté, il nous a engendrés par la parole de vérité, afin que nous soyons pour ainsi dire les prémices de ses créatures. Vous êtes savants, mes frères bien-aimés. Pourtant, que nul ne néglige d'être prompt à écouter, lent à parler, lent à se mettre en colère,",
-            "with whom there is no variation or shadow of turning. 18 Of His own will He brought us forth by the word of truth, that we might be a kind of firstfruits of His creatures. 19 So then, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإن غضب الإنسان لا يعملُ برَّ اللَّهِ. لذلكَ اطرحُوا كُلَّ نجاسةٍ وكثرةَ شرٍّ، واقبلُوا بوداعةٍ الكلمةَ المغرُوسةَ ( فيكُم ) القادرةَ أن تُخلِّصَ نُفُوسكُمْ.",
-            "20 car la colère de l'homme ne réalise pas la justice de Dieu. Aussi, débarrassés de toute souillure et de tout débordement de méchanceté, accueillez avec douceur la parole plantée en vous et capable de vous sauver la vie.",
-            "20 for the wrath of man does not produce the righteousness of God. 21 Therefore lay aside all filthiness and overflow of wickedness, and receive with meekness the implanted word, which is able to save your souls.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=GL48&C=Title",
-            " الكاثوليكون من يوحنا الرسول الأولى ( 3 : 13 ـ 24 )",
+            " الكاثوليكون من يُوحَنَا الرَسُولِ الأُولَى (3 : 13-24)",
             "1 Jean 3 : 13-24",
             "1 John 3:13-24",
         ],
@@ -6301,7 +4364,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "وأغلقَ أحشاءهُ عنهُ، فكيفَ تَثبُتُ محبَّةُ اللَّـهِ فيهِ؟ يا أَوْلاَدِي، لا نُحِبَّ بالكَلاَمِ ولا بِاللِّسَانِ، بلْ بالعَمَلِ والحَقِّ! وبهذَا نَعْرِفُ إنَّنا مِن الحَقِّ ونُقنِعُ قُلُوبَنَا أمامه. وإنَّ كان قلبُنا يُبكتنا",
+            "وأغلقَ أحشاءهُ عنهُ، فكيفَ تَثبُتُ محبَّةُ اللَّ-هِ فيهِ؟ يا أَوْلاَدِي، لا نُحِبَّ بالكَلاَمِ ولا بِاللِّسَانِ، بلْ بالعَمَلِ والحَقِّ! وبهذَا نَعْرِفُ إنَّنا مِن الحَقِّ ونُقنِعُ قُلُوبَنَا أمامه. وإنَّ كان قلبُنا يُبكتنا",
             "et qu'il se ferme à toute compassion, comment l'amour de Dieu demeurerait-il en lui? Mes petits enfants, n'aimons pas en paroles et de langue, mais en actes et dans la vérité; à cela nous reconnaîtrons que nous sommes de la vérité, et devant lui nous apaiserons notre cœur, car, si notre cœur nous accuse,",
             "and shuts up his heart from him, how does the love of God abide in him? 18 My little children, let us not love in word or in tongue, but in deed and in truth. 19 And by this we know that we are of the truth, and shall assure our hearts before Him. 20 For if our heart condemns us,",
         ],
@@ -6321,7 +4384,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL49&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (5:7-16)",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5:7-16)",
             "Jacques 5:7-16",
             "James 5:7-16",
         ],
@@ -6365,13 +4428,13 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL4&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 3 - 11)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 3-11)",
             "1 Peter 4:3-11",
             "1 Peter 4:3-11",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّه قد يكفيكم الزَّمان الذي عبر إذ كنتم تعملون فيه هوى الأُمم، متسكعين في الدَّعارة والشَّهوات، والمُسكرات بأنواع كثيرة، واللهو، والدنس، والغواية وعبادة الأوثان ( المُحرَّمة)،",
+            "لأنَّه قد يكفيكم الزَّمان الذي عبر إذ كنتم تعملون فيه هوى الأُمم، متسكعين في الدَّعارة والشَّهوات، والمُسكرات بأنواع كثيرة، واللهو، والدنس، والغواية وعبادة الأوثان (المُحرَّمة)،",
             "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes.",
             "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.",
         ],
@@ -6403,7 +4466,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL4thSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول ( 3 : 1 ـ 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (3 : 1-12)",
             "Jacques 3 : 1 - 12",
             "James 3:1-12",
         ],
@@ -6421,19 +4484,19 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "هوذا نارٌ قليلةٌ، تُحْرِقُ وقُوداً كثيرة ؟ فاللِّسانُ هو نارٌ! وزيته الإثم. جُعِلَ اللِّسانُ في أعضائِنا ، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ بلادنا ( الكون )، ويُضرَمُ مِن جَهنَّمَ.",
+            "هوذا نارٌ قليلةٌ، تُحْرِقُ وقُوداً كثيرة ؟ فاللِّسانُ هو نارٌ! وزيته الإثم. جُعِلَ اللِّسانُ في أعضائِنا ، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ بلادنا (الكون)، ويُضرَمُ مِن جَهنَّمَ.",
             "Voyez comme il faut peu de feu pour faire flamber une vaste forêt! 6 La langue aussi est un feu, le monde du mal; la langue est installée parmi nos membres, elle qui souille le corps entier, qui embrase le cycle de la nature, qui est elle-même embrasée par la géhenne.",
             "See how great a forest a little fire kindles! 6 And the tongue is a fire, a world of iniquity. The tongue is so set among our members that it defiles the whole body, and sets on fire the course of nature; and it is set on fire by hell.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لأنَّ كلَّ طبيعة الوحوش والطُّيور والزَّحَّافاتِ وما في البحار يُذلَّلُ، وقد تَذلَّلَ للطبيعةِ البشريَّةِ. وأمَّا اللِّسان، فلا يستطيعُ أحدٌ في النَّاسِ أن يُقمعه. هو شرٌّ لا يُضبط، مملوءٌ سماً مُميتاً. به نُبارِك اللَّـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ صنعهم اللَّه على مثاله.",
+            "لأنَّ كلَّ طبيعة الوحوش والطُّيور والزَّحَّافاتِ وما في البحار يُذلَّلُ، وقد تَذلَّلَ للطبيعةِ البشريَّةِ. وأمَّا اللِّسان، فلا يستطيعُ أحدٌ في النَّاسِ أن يُقمعه. هو شرٌّ لا يُضبط، مملوءٌ سماً مُميتاً. به نُبارِك اللَّ-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ صنعهم اللَّه على مثاله.",
             "7 Il n'est pas d'espèce, aussi bien de bêtes fauves que d'oiseaux, aussi bien de reptiles que de poissons, que l'espèce humaine n'arrive à dompter. Mais la langue, nul homme ne peut la dompter: fléau fluctuant, plein d'un poison mortel! Avec elle nous bénissons le Seigneur et Père; avec elle aussi nous maudissons les hommes, qui sont à l'image de Dieu;",
             "7 For every kind of beast and bird, of reptile and creature of the sea, is tamed and has been tamed by mankind. 8 But no man can tame the tongue. It is an unruly evil, full of deadly poison. 9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God.",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! فلا ينبغي يا إخوتي أن يكونَ الأمرُ هكذا! ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ ( الملح ) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً.",
+            "مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! فلا ينبغي يا إخوتي أن يكونَ الأمرُ هكذا! ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ (الملح) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً.",
             "10 de la même bouche sortent bénédiction et malédiction. Mes frères, il ne doit pas en être ainsi.11 La source produit-elle le doux et l'amer par le même orifice? Un figuier, mes frères, peut-il donner des olives, ou une vigne des figues? Une source saline ne peut pas non plus donner d'eau douce.",
             "10 Out of the same mouth proceed blessing and cursing. My brethren, these things ought not to be so. 11 Does a spring send forth fresh water and bitter from the same opening? 12 Can a fig tree, my brethren, bear olives, or a grapevine bear figs? Thus no spring yields both salt water and fresh.",
         ],
@@ -6441,8 +4504,8 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL50&C=Title",
-            " الكاثوليكون رسالة بطرس الرسول الأولى ( 1 : 25 ـ 2 : 1 ـ 6 )",
-            "1 Pierre 1:25 - 2:1-6",
+            " الكاثوليكون رسالة بُطْرُسِ الرَسُولِ الأُولَى (1 : 25-2 : 1-6)",
+            "1 Pierre 1:25 - (2: 1-6)",
             "1 Peter 1:25-2:6",
         ],
         [
@@ -6453,13 +4516,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "لكي تَنمُوا بهِ للخلاصِ. إن كُنتُم قَد ذُقتُم أنَّ الربَّ صالحٌ. الذي إذ تأتُونَ إليهِ، حجراً حيَّـاً مَرذولاً مِن النَّاس، ولكن مُختارٌ مِن اللَّـهِ كَريمٌ. كونوا أنتُم أيضاً مَبنِيِّيـنَ ـ كحجارةٍ حيَّةٍ ـ بيتـاً روحياً،",
+            "لكي تَنمُوا بهِ للخلاصِ. إن كُنتُم قَد ذُقتُم أنَّ الربَّ صالحٌ. الذي إذ تأتُونَ إليهِ، حجراً حيَّ-اً مَرذولاً مِن النَّاس، ولكن مُختارٌ مِن اللَّ-هِ كَريمٌ. كونوا أنتُم أيضاً مَبنِيِّي-نَ-كحجارةٍ حيَّةٍ-بيت-اً روحياً،",
             "par lui, vous grandissiez pour le salut, si vous avez goûté que le Seigneur est bon. Approchez-vous de lui, pierre vivante, rejetée par les hommes mais choisie et précieuse devant Dieu. Vous-mêmes, comme des pierre vivantes, entrez dans la construction de la Maison habitée par l'Esprit,",
             "that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "كهنوتاً مُقدَّساً، لتَقدِيم ذبائحَ روحيَّةٍ مقبولةٍ عِندَ اللَّهِ بيسوعَ المسيح. لأنَّهُ مكُتوبٌ في الكتاب: ' هأنذا أضعُ في صِهيونَ حَجَر زاوية مُختاراً كريمـاً، الذي يُؤمنُ بهِ لَنْ يُخـزَى '.",
+            "كهنوتاً مُقدَّساً، لتَقدِيم ذبائحَ روحيَّةٍ مقبولةٍ عِندَ اللَّهِ بيسوعَ المسيح. لأنَّهُ مكُتوبٌ في الكتاب: ' هأنذا أضعُ في صِهيونَ حَجَر زاوية مُختاراً كريم-اً، الذي يُؤمنُ بهِ لَنْ يُخ-زَى '.",
             "pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.Car on trouve dans l'Ecriture: Voici, je pose en Sion une pierre angulaire, choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu.",
             "a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold, I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame.",
         ],
@@ -6467,7 +4530,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL5&C=Title",
-            " الكاثوليكون من رسالة بطرس الثانية ( 1 : 4 ـ 11 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الثانية (1 : 4-11)",
             "2 Peter 1:4-11",
             "2 Peter 1:4-11",
         ],
@@ -6479,7 +4542,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "ولهذا عينه ـ وأنتم باذِلُون كل اجتهادٍ ـ قـدِّموا في إيمانكم فضيلةً، وفى الفضيلة معرفةً، وفى المعرفة تعفُّفـاً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً،",
+            "ولهذا عينه-وأنتم باذِلُون كل اجتهادٍ-ق-دِّموا في إيمانكم فضيلةً، وفى الفضيلة معرفةً، وفى المعرفة تعفُّف-اً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً،",
             "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, à la maîtrise de soi la ténacité, à la ténacité la piété, 7 à la piété l'amitié fraternelle,",
             "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness,",
         ],
@@ -6498,46 +4561,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL5thSunday&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (4 :7 - 17 )",
-            "Jacques 4 :7 - 17",
-            "James 4:7-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فاخضعوا إذاً للَّهِ. قاوِموا إبلِيسَ فيَهرُبَ مِنكُمْ. اقتربوا إلى اللَّهِ فيَقترِبَ إليكُمْ. نَقُّوا أيدِيكُمْ أيُّها الخُطاةُ، وطَهِّرُوا قُلوبَكُم يا ذوي الرَّأيَينِ.",
-            "7 Soumettez-vous donc à Dieu; mais résistez au diable et il fuira loin de vous; 8 approchez-vous de Dieu et il s'approchera de vous. Nettoyez vos mains, pécheurs, et purifiez vos coeurs, hommes partagés!",
-            "7 Therefore submit to God. Resist the devil and he will flee from you. 8 Draw near to God and He will draw near to you. Cleanse your hands, you sinners; and purify your hearts, you double-minded.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اكتئبوا ونُوحُوا وابْكُوا. لِيَتَحوَّلْ ضَحِكُكُمْ إلى نوحٍ، وفَرَحُكُمْ إلى غَمٍّ. اتَّضِعُوا أمام الربِّ فَيَرفَعَكُم. لا يَذُمَّ بَعضُكُمْ بعضاً أيُّها الإخوَةُ فإن الذي يَذُمُّ أخَاهُ ويُدينُ أخاهُ",
-            "9 Reconnaissez votre misère, prenez le deuil, pleurez; que votre rire se change en deuil et votre joie en abattement! Humiliez-vous devant le Seigneur, et Il vous élèvera. 11 Ne médisez pas les uns des autres, frères. Celui qui médit d'un frère ou juge son frère",
-            "9 Lament and mourn and weep! Let your laughter be turned to mourning and your joy to gloom. 10 Humble yourselves in the sight of the Lord, and He will lift you up. 11 Do not speak evil of one another, brethren. He who speaks evil of a brother and judges his brother,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يَذُمُّ النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموسِ، بلْ دَيَّاناً لهُ. واحدٌ هو واضِعُ النَّاموسِ، القادرُ أن يُخَلِّصَ ويُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك ( غيركَ )؟.هَلُموا الآنَ أيُّها القائِلونَ: '",
-            "médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi.12 Or un seul est législateur et juge: celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain?13 Alors, vous qui dites:",
-            "speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. 12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another? 13 Come now, you who say,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "نَذهبُ اليَومَ أو غَداً إلى هذهِ المدينةِ، ونقيم هناكَ سـَنَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ ماذا يكون غـداً! لأنَّهُ ما هيَ حياتُكُم؟ إنَّها بخار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.",
-            "'Aujourd'hui - ou demain-, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent, 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît!",
-            "Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشْنَا نَفعَلُ هذا أو ذاكَ '. لكنَّكُمْ تَفتَخِرونَ بتعَظُّمِكُم. وكُلُّ افتخارٍ مِثلُ هذا رديءٌ. فمَن يَعرِفُ أنْ يَعمَلَ حَسَناً ولا يَعمَلُ، فذلكَ خَطيَّةٌ لهُ.",
-            "15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela', 16 vous tirez fierté de vos fanfaronnades. Toute fierté de ce genre est mauvaise. 17 Qui donc sait faire le bien et ne le fait pas se charge d'un péché.",
-            "15 Instead you ought to say, If the Lord wills, we shall live and do this or that. 16 But now you boast in your arrogance. All such boasting is evil. 17 Therefore, to him who knows to do good and does not do it, to him it is sin",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=GL6&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى(1 : 8 – 2 : 11)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(1 : 8 – 2 : 11)",
             "1 John 1:8-2:11",
             "1 John 1:8-2:11",
         ],
@@ -6587,7 +4612,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL6thSunday&C=Title",
-            " الكاثوليكون من بطرس الرسول الثانية( 3 : 1 ـ 18 )",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية(3 : 1-18)",
             "2 Pierre 3:1 -18",
             "2 Peter 3:1-18",
         ],
@@ -6661,7 +4686,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL7&C=Title",
-            " الكاثوليكون من رسالة يوحنا الثالثة ( 1 : 1 - 14 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثالثة (1 : 1-14)",
             "3 John 1:1-14",
             "3 John 1:1-14",
         ],
@@ -6673,13 +4698,13 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "فقد فَرِحتُ جداً لما قدم الإخوةُ وشَهِدوا بصدقكَ كما أنَّت سالُكُ في الحقِّ. وليسَ لي سرور أعظمَ مِن هذا أَنْ أسمعَ عن أولادي أنهُم سالُكُونَ في الحـقِّ. أيُّها الحبيبُ أنتَ تعمـلُ بالأمانةِ كُلَّ ما تَصنعُهُ بالأخوة والغُرباءِ",
+            "فقد فَرِحتُ جداً لما قدم الإخوةُ وشَهِدوا بصدقكَ كما أنَّت سالُكُ في الحقِّ. وليسَ لي سرور أعظمَ مِن هذا أَنْ أسمعَ عن أولادي أنهُم سالُكُونَ في الح-قِّ. أيُّها الحبيبُ أنتَ تعم-لُ بالأمانةِ كُلَّ ما تَصنعُهُ بالأخوة والغُرباءِ",
             "3 J'ai, en effet, éprouvé une très grande joie, car des frères arrivés ici rendent témoignage à la vérité qui transparaît dans ta vie: toi, tu marches dans la lumière de la vérité. Ma plus grande joie, c'est d'apprendre que mes enfants marchent dans la lumière de la vérité. Cher ami, tu agis selon ta foi dans les soins que tu prends pour les frères, et cela pour des étrangers.",
             "3 For I rejoiced greatly when brethren came and testified of the truth that is in you, just as you walk in the truth. 4 I have no greater joy than to hear that my children walk in truth. 5 Beloved, you do faithfully whatever you do for the brethren and for strangers,",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "الذين شَهِدوا بِمَحَبَّتِكَ أمامَ الكنيسـةِ، وتفعل حسناً إذا شَيَّعتَهُمْ كما يَحقُّ للَّـهِ لأنهم مِن أجلِ اسمِهِ خَرَجوا ولم يَأخُذوا مِن الأُمَم شيئاً.",
+            "الذين شَهِدوا بِمَحَبَّتِكَ أمامَ الكنيس-ةِ، وتفعل حسناً إذا شَيَّعتَهُمْ كما يَحقُّ للَّ-هِ لأنهم مِن أجلِ اسمِهِ خَرَجوا ولم يَأخُذوا مِن الأُمَم شيئاً.",
             "6 Ils ont rendu devant l'Eglise témoignage à ta charité. Tu agiras bien en pourvoyant à leur mission d'une manière digne de Dieu. Car c'est pour le Nom qu'ils se sont mis en route, sans rien recevoir des païens.",
             "6 who have borne witness of your love before the church. If you send them forward on their journey in a manner worthy of God, you will do well, 7 because they went forth for His name's sake, taking nothing from the Gentiles.",
         ],
@@ -6697,7 +4722,7 @@ ReadingsArrays.KatholikonArray = [[
         ],
         [
             Prefix.same + "&C=NoActor",
-            "أيُّها الحبيبُ لا تتمثَّلْ بالشَّرِّ بل بالخيرِ، لأنَّ مَنْ يصنعُ الخيرَ هو مِنَ اللَّـهِ ومَنْ يصنعُ الشَّرَّ لمْ يرَ اللَّـهَ.أمَّا ديمتريوسُ فمشهودٌ لهُ مِنَ الجميع ومِنَ الحقِّ نَفْسِهِ ونَحنُ أيضاً نشهَدُ له وأنت تَعْلَمُ أنَّ شهادتَنا حقُّ.",
+            "أيُّها الحبيبُ لا تتمثَّلْ بالشَّرِّ بل بالخيرِ، لأنَّ مَنْ يصنعُ الخيرَ هو مِنَ اللَّ-هِ ومَنْ يصنعُ الشَّرَّ لمْ يرَ اللَّ-هَ.أمَّا ديمتريوسُ فمشهودٌ لهُ مِنَ الجميع ومِنَ الحقِّ نَفْسِهِ ونَحنُ أيضاً نشهَدُ له وأنت تَعْلَمُ أنَّ شهادتَنا حقُّ.",
             "11 Cher ami, ne prends pas exemple sur le mal mais sur le bien. Celui qui fait le bien est de Dieu. Quant à Démétrius, tout le monde lui rend un bon témoignage. La vérité elle-même témoigne pour lui. Mais nous aussi, nous lui rendons témoignage, et tu sais que notre témoignage est vrai.",
             "11 Beloved, do not imitate what is evil, but what is good. He who does good is of God, but he who does evil has not seen God. 12 Demetrius has a good testimony from all, and from the truth itself. And we also bear witness, and you know that our testimony is true.",
         ],
@@ -6710,10 +4735,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL7thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 13 ـ 21 )",
-            "1 Jean 5 : 13 - 21",
-            "1 John 5:13-21",
+            Prefix.katholikon + "&D=1901||GL7thSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 13-21)",
+            "1 Jean (5:13-21)",
+            "1 John (5:13-21)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6754,14 +4779,14 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL8&C=Title",
-            " الكاثوليكون من رسالة يعقوب الرسول (1:1-12)",
-            "Jacques 1:1-12",
-            "James 1:1-12",
+            Prefix.katholikon + "&D=GL||GL11||2703||1712&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1: 1-12)",
+            "Jacques (1: 1-12)",
+            "James (1: 1-12)",
         ],
         [
             Prefix.same + "&C=NoActor",
-            "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّـتَاتِ. احسبُوهُ كلِّ فرحٍ يا أخوتي حينما تقَعُون في تجارب مُتَنوِّعةٍ،",
+            "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّ-تَاتِ. احسبُوهُ كلِّ فرحٍ يا أخوتي حينما تقَعُون في تجارب مُتَنوِّعةٍ،",
             "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon cœur, mes frères, toutes les épreuves par lesquelles vous passez,",
             "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,",
         ],
@@ -6792,60 +4817,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=GL8thSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 1 ـ 11 )",
-            "1 Pierre 4 : 1-11",
-            "1 Peter 4:1-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإذ قَدْ تألَّم المسيح لأجلنا بالجسدِ، فتسلَّحوا أنتُم أيضاً بهذا المثال. لأنَّ الذي قد تألَّم بِالجَسَدِ، فقد شفى نفسه من الخَطِيَّة، لكي لا يكون بعد في شهوات البشر بل يقضي بَاقِي حياته بالجَسَدِ بهوى اللَّه.",
-            "1 Ainsi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché,2 pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.",
-            "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لأنَّه يكفيكم ذاك الزَّمان الذي عبر إذ كنتم تعملون بهوى الأُمم، متسكعين في الدعارة والشَّهواتِ، وإدمانِ الخمر بأنواع كثيرة، والبطر والمنادمات واللهو، والدَّنس، وعِبادة الأوثان ( المُحرَّمة )،",
-            "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes.",
-            "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الأمر الذي فيه يَستغرِبونَ أنَّكُم لستُم تركضون معهم إلى إنهراق عدم الصَّحة عينها، لأنهم يُجدِّفونَ. أولئك الذين سيعطون الجواب للمستعد أنْ يدين الأحياء والأموات.",
-            "4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts.",
-            "4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فإنَّه من أجْل هذا قد بُشِّرَ الأموات أيضاً، كي يُدانوا مثل النَّاس بِالجَسَدِ، ويحيوا مثل اللَّه بالرُّوح.وإنَّما نِهايةُ كُلِّ شيءٍ قد اقتربتْ، فَتَعقَّلوا واصحوا للصَّلوات.",
-            "6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit. 7 La fin de toutes choses est proche. Montrez donc de la sagesse et soyez sobres afin de pouvoir prier.",
-            "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن قبل كُلِّ شيءٍ، لتكن المحبَّة دائمةً فيكُم بَعضكُم لبعضٍ، لأنَّ المَحبَّة تغطي كثرة الخطايا. وكونوا مُحبِّين الضيافة بعضكم لبعضٍ وتكونوا بغير تذمر",
-            "8 Ayez avant tout un amour constant les uns pour les autres, car l'amour couvre une multitude de péchés. Pratiquez l'hospitalité les uns envers les autres, sans murmurer.",
-            "8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كلُّ واحد وواحد فحسب النعمة التي أخذها تخدمون بها من تلقاء نفوسكم. كوكلاء صالحين بنعمة اللَّه ذات الأنواع الكثيرة.",
-            "10 Mettez-vous, chacun selon le don qu'il a reçu, au service les uns des autres, comme de bons administrateurs de la grâce de Dieu, variée en ses effets.",
-            "10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ومَن يتكلَّم فعلى حسب أقوال اللَّه. ومَن يخدم فعلى حسب القوَّة المهيأة من اللَّه، لكي ما يَتمَجَّدَ اللَّهُ في كُلِّ شيءٍ بيسوع المسيح، ذلك الذي لهُ المَجْدُ والعز إلى أبد الآبِدينَ. آمين.",
-            "11 Si quelqu'un parle, que ce soit pour transmettre les paroles de Dieu; si quelqu'un assure le service, que ce soit avec la force que Dieu accorde, afin que par Jésus Christ Dieu soit totalement glorifié, lui à qui appartiennent gloire et domination pour les siècles des siècles, Amen!",
-            "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl10&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 1 - 6 )",
-            "1 John 2:1-6",
-            "1 John 2:1-6",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 1-6)",
+            "1 John (2: 1-6)",
+            "1 John (2: 1-6)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6869,9 +4844,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl11&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى(2 : 7 ـ 10 )",
-            "1 John 2:7-10",
-            "1 John 2:7-10",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2 : 7-10)",
+            "1 John (2: 7-10)",
+            "1 John (2: 7-10)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6895,9 +4870,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl12&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 11 – 14 )",
-            "1 John 2:11-14",
-            "1 John 2:11-14",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 11 – 14)",
+            "1 John (2: 11-14)",
+            "1 John (2: 11-14)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6920,10 +4895,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl13&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى (2:21-25)",
-            "1 John 2:21-25",
-            "1 John 2:21-25",
+            Prefix.katholikon + "&D=Pntl13||Pntl17&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2: 21-25)",
+            "1 John (2: 21-25)",
+            "1 John (2: 21-25)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6947,9 +4922,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl15&C=Title",
-            " الكاثوليكون من رسالة يوحنا الإولى( 2 :15-17)",
-            "1 John 2:15-17",
-            "1 John 2:15-17",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(2 :15-17)",
+            "1 John (2: 15-17)",
+            "1 John (2: 15-17)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6967,9 +4942,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl16&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 18 - 23)",
-            "1 John 2:18-23",
-            "1 John 2:18-23",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 18-23)",
+            "1 John (2: 18-23)",
+            "1 John (2: 18-23)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -6992,36 +4967,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl17&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 21 - 25 )",
-            "1 John 2:21-25",
-            "1 John 2:21-25",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لم اكتب اليكم لانكم لستم تعلمون الحق بل لانكم تعلمونه وان كل كذب ليس من الحق.من هو الكذاب الا الذي ينكر ان يسوع هو المسيح.هذا هو ضد المسيح الذي ينكر الآب والابن.",
-            "21 Je ne vous ai pas écrit que vous ne savez pas la vérité, mais que vous la savez, et que rien de ce qui est mensonge ne provient de la vérité. 22 Qui est le menteur, sinon celui qui nie que Jésus est le Christ? Voilà l'antéchrist, celui qui nie le Père et le Fils.",
-            "21 I have not written to you because you do not know the truth, but because you know it, and that no lie is of the truth. 22 Who is a liar but he who denies that Jesus is the Christ? He is antichrist who denies the Father and the Son.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كل من ينكر الابن ليس له الآب ايضا ومن يعترف بالابن فله الآب ايضا اما انتم فما سمعتموه من البدء فليثبت اذا فيكم.ان ثبت فيكم ما سمعتموه من البدء فانتم ايضا تثبتون في الابن وفي الآب.",
-            "23 Quiconque nie le Fils n'a pas non plus le Père; qui confesse le Fils a le Père, aussi. Pour vous, que le message entendu dès le commencement demeure en vous. S'il demeure en vous, le message entendu dès le commencement, vous aussi, vous demeurerez dans le Fils et dans le Père;",
-            "23 Whoever denies the Son does not have the Father either; he who acknowledges the Son has the Father also. 24 Therefore let that abide in you which you heard from the beginning. If what you heard from the beginning abides in you, you also will abide in the Son and in the Father.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وهذا هو الوعد الذي وعدنا هو به الحياة الابدية.",
-            "25 et telle est la promesse que lui-même nous a faite, la vie éternelle.",
-            "25 And this is the promise that He has promised us--eternal life.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl18&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 2 : 26 – 3 : 1)",
-            "1 John 2:26-3:1",
-            "1 John 2:26-3:1",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(2 : 26 – 3 : 1)",
+            "1 John (2:26-3:1)",
+            "1 John (2:26-3:1)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7045,9 +4994,9 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl19&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 3 : 2 - 3 )",
-            "1 John 3:2-3",
-            "1 John 3:2-3",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (3 : 2-3)",
+            "1 John (3: 2-3)",
+            "1 John (3: 2-3)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7058,154 +5007,10 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl1&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الإولى( 2 :11-25)",
-            "1 Pierre 2:11 à la fin.",
-            "1 Peter 2:11-25",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاحباء اطلب اليكم كغرباء ونزلاء ان تمتنعوا عن الشهوات الجسدية التي تحارب النفس وان تكون سيرتكم بين الامم حسنة لكي يكونوا في ما يفترون عليكم كفاعلي شر",
-            "11 Bien-aimés, je vous exhorte, comme des gens de passage et des étrangers, à vous abstenir des convoitises charnelles, qui font la guerre à l'âme. 12 Ayez une belle conduite parmi les païens, afin que, sur le point même où ils vous calomnient comme malfaiteurs,",
-            "11 Beloved, I beg you as sojourners and pilgrims, abstain from fleshly lusts which war against the soul, 12 having your conduct honorable among the Gentiles, that when they speak against you as evildoers, they may,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يمجدون الله في يوم الافتقاد من اجل اعمالكم الحسنة التي يلاحظونها. فاخضعوا لكل ترتيب بشري من اجل الرب.ان كان للملك فكمن هو فوق الكل",
-            "ils soient éclairés par vos bonnes oeuvres et glorifient Dieu au jour de sa venue. 13 Soyez soumis à toute institution humaine, à cause du Seigneur; soit au roi, en sa qualité de souverain,",
-            "by your good works which they observe, glorify God in the day of visitation. 13 Therefore submit yourselves to every ordinance of man for the Lord's sake, whether to the king as supreme,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "او للولاة فكمرسلين منه للانتقام من فاعلي الشر وللمدح لفاعلي الخير. لان هكذا هي مشيئة الله ان تفعلوا الخير فتسكّتوا جهالة الناس الاغبياء .كاحرار وليس كالذين الحرية عندهم سترة للشر",
-            "14 soit aux gouverneurs, délégués par lui pour punir les malfaiteurs et louer les gens de bien. Car c'est la volonté de Dieu qu'en faisant le bien vous réduisiez au silence l'ignorance des insensés. 16 Comportez-vous en hommes libres, sans utiliser la liberté comme un voile pour votre méchanceté,",
-            "14 or to governors, as to those who are sent by him for the punishment of evildoers and for the praise of those who do good. 15 For this is the will of God, that by doing good you may put to silence the ignorance of foolish men- 16 as free, yet not using liberty as a cloak for vice,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل كعبيد الله. اكرموا الجميع.احبوا الاخوة.خافوا الله.اكرموا الملك ايها الخدام كونوا خاضعين بكل هيبة للسادة ليس للصالحين المترفقين فقط بل للعنفاء ايضا.",
-            "mais agissez en serviteurs de Dieu. 17 Honorez tous les hommes, aimez vos frères, craignez Dieu, honorez le roi. 18 Serviteurs, soyez soumis avec une profonde crainte à vos maîtres, non seulement aux bons et aux doux, mais aussi aux acariâtres.",
-            "but as bondservants of God. 17 Honor all people. Love the brotherhood. Fear God. Honor the king. 18 Servants, be submissive to your masters with all fear, not only to the good and gentle, but also to the harsh.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان هذا فضل ان كان احد من اجل ضمير نحو الله يحتمل احزانا متألما بالظلم. لانه اي مجد هو ان كنتم تلطمون مخطئين فتصبرون.بل ان كنتم تتألمون عاملين الخير فتصبرون فهذا فضل عند الله",
-            "19 Car c'est une grâce de supporter, par respect pour Dieu, des peines que l'on souffre injustement. Quelle gloire y a-t-il, en effet, à supporter les coups si vous avez commis une faute? Mais si, après avoir fait le bien, vous souffrez avec patience, c'est là une grâce aux yeux de Dieu.",
-            "19 For this is commendable, if because of conscience toward God one endures grief, suffering wrongfully. 20 For what credit is it if, when you are beaten for your faults, you take it patiently? But when you do good and suffer, if you take it patiently, this is commendable before God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانكم لهذا دعيتم فان المسيح ايضا تألم لاجلنا تاركا لنا مثالا لكي تتبعوا خطواته. الذي لم يفعل خطية ولا وجد في فمه مكر",
-            "21 Or, c'est à cela que vous avez été appelés, car le Christ aussi a souffert pour vous, vous laissant un exemple afin que vous suiviez ses traces: Lui qui n'a pas commis de péché et dans la bouche",
-            "21 For to this you were called, because Christ also suffered for us, leaving us an example, that you should follow His steps: 22 Who committed no sin, Nor was deceit found in His mouth;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي اذ شتم لم يكن يشتم عوضا واذ تألم لم يكن يهدد بل كان يسلم لمن يقضي بعدل.",
-            "23 duquel il ne s'est pas trouvé de tromperie; lui qui, insulté, ne rendait pas l'insulte, dans sa souffrance, ne menaçait pas, mais s'en remettait au juste Juge;",
-            "23 who, when He was reviled, did not revile in return; when He suffered, He did not threaten, but committed Himself to Him who judges righteously;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الذي حمل هو نفسه خطايانا في جسده على الخشبة لكي نموت عن الخطايا فنحيا للبر.الذي بجلدته شفيتم. لانكم كنتم كخراف ضالة لكنكم رجعتم الآن الى راعي نفوسكم واسقفها",
-            "24 lui qui, dans son propre corps, a porté nos péchés sur le bois, afin que, morts à nos péchés, nous vivions pour la justice; lui dont les meurtrissures vous ont guéris. 25 Car vous étiez égarés comme des brebis, mais maintenant vous vous êtes tournés vers le berger et le gardien de vos âmes.",
-            "24 who Himself bore our sins in His own body on the tree, that we, having died to sins, might live for righteousness--by whose stripes you were healed. 25 For you were like sheep going astray, but have now returned to the Shepherd and Overseer of your souls.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=Pntl1stSunday&C=Title",
-            " الكاثوليكون من يوحنا الرسول الأولى( 2 : 7 - 17)",
-            "1 Jean 2:7 - 17",
-            "1 John 2:7-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاخوة لست اكتب اليكم وصية جديدة بل وصية قديمة كانت عندكم من البدء.الوصية القديمة هي الكلمة التي سمعتموها من البدء.",
-            "7 Mes bien-aimés, ce n'est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez depuis le commencement; ce commandement ancien, c'est la parole que vous avez entendue.",
-            "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايضا وصية جديدة اكتب اليكم ما هو حق فيه وفيكم ان الظلمة قد مضت والنور الحقيقي الآن يضيء. من قال انه في النور وهو يبغض اخاه فهو الى الآن في الظلمة.",
-            "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable. 9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.",
-            "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "من يحب اخاه يثبت في النور وليس فيه عثرة. واما من يبغض اخاه فهو في الظلمة وفي الظلمة يسلك ولا يعلم اين يمضي لان الظلمة اعمت عينيه",
-            "10 Qui aime son frère demeure dans la lumière, et il n'y a rien en lui pour le faire trébucher. 11 Mais qui hait son frère se trouve dans les ténèbres; il marche dans les ténèbres, et il ne sait pas où il va, parce que les ténèbres ont aveuglé ses yeux.",
-            "10 He who loves his brother abides in the light, and there is no cause for stumbling in him. 11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اكتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.",
-            "12 Je vous l'écris, mes petits enfants: 'Vos péchés vous sont pardonnés à cause de son nom à lui, Jésus.13 Je vous l'écris, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'écris, jeunes gens: 'Vous êtes vainqueurs du Mauvais.'",
-            "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب. كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير.",
-            "Je vous l'ai donc écrit, mes petits enfants: 'Vous connaissez le Père.' 14 Je vous l'ai écrit, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'ai écrit, jeunes gens: 'Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais.'",
-            "I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب. لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم.",
-            "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, 16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.",
-            "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد",
-            "17 Or le monde passe, lui et sa convoitise; mais celui qui fait la volonté de Dieu demeure à jamais.",
-            "17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=Pntl20&C=Title",
-            " الكاثوليكون من رسالة يوجنا الرسول الأولى (3:2-11)",
-            "1 John 3:2-11",
-            "1 John 3:2-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ايها الاحباء الآن نحن اولاد الله ولم يظهر بعد ماذا سنكون.ولكن نعلم انه اذا أظهر نكون مثله لاننا سنراه كما هو.",
-            "2 Bien–aimés, nous sommes maintenant enfants de Dieu, et ce que nous serons n’a pas encore été manifesté ; mais nous savons que lorsqu’il sera manifesté, nous serons semblables à lui, parce que nous le verrons tel qu’il est.",
-            "2 Beloved, now we are children of God; and it has not yet been revealed what we shall be, but we know that when He is revealed, we shall be like Him, for we shall see Him as He is.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "وكل من عنده هذا الرجاء به يطهر نفسه كما هو طاهر. كل من يفعل الخطية يفعل التعدي ايضا.والخطية هي التعدي. وتعلمون ان ذاك أظهر لكي يرفع خطايانا وليس فيه خطية.",
-            "3 Quiconque a cette espérance en lui se purifie, comme lui (le Seigneur) est pur.4 Quiconque commet le péché, commet aussi une violation de la loi, et le péché, c’est la violation de la loi.5 Or, vous le savez, lui (le Seigneur) est apparu pour ôter les péchés ; et il n’y a pas de péché en lui.",
-            "3 And everyone who has this hope in Him purifies himself, just as He is pure. 4 Whoever commits sin also commits lawlessness, and sin is lawlessness. 5 And you know that He was manifested to take away our sins, and in Him there is no sin.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كل من يثبت فيه لا يخطئ.كل من يخطئ لم يبصره ولا عرفه ايها الاولاد لا يضلّكم احد.من يفعل البر فهو بار كما ان ذاك بار من يفعل الخطية فهو من ابليس لان ابليس من البدء يخطئ.",
-            "6 Quiconque demeure en lui ne pèche pas ; quiconque pèche ne l’a pas vu et ne l’a pas connu. 7 Petits enfants, que personne ne vous séduise. Celui qui pratique la justice est juste, comme lui (le Seigneur) est juste.",
-            "6 Whoever abides in Him does not sin. Whoever sins has neither seen Him nor known Him. 7 Little children, let no one deceive you. He who practices righteousness is righteous, just as He is righteous.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاجل هذا أظهر ابن الله لكي ينقض اعمال ابليس. كل من هو مولود من الله لا يفعل خطية لان زرعه يثبت فيه ولا يستطيع ان يخطئ لانه مولود من الله.",
-            "8 Celui qui commet le péché est du diable, car le diable pèche dès le commencement. Le Fils de Dieu est apparu, afin de détruire les oeuvres du diable.9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.",
-            "8 He who sins is of the devil, for the devil has sinned from the beginning. For this purpose the Son of God was manifested, that He might destroy the works of the devil. 9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بهذا اولاد الله ظاهرون واولاد ابليس.كل من لا يفعل البر فليس من الله وكذا من لا يحب اخاه. لان هذا هو الخبر الذي سمعتموه من البدء ان يحب بعضنا بعضا.",
-            "10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable. Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. 11 Voici le message que vous avez entendu dès le commencement : Aimons–nous les uns les autres ;",
-            "10 In this the children of God and the children of the devil are manifest: Whoever does not practice righteousness is not of God, nor is he who does not love his brother. 11 For this is the message that you heard from the beginning, that we should love one another,",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=Pntl22&C=Title",
-            " الكاثوليكون من رسالة يوحنا الإولى( 3 : 8 – 12 )",
-            "1 John 3:8-12",
-            "1 John 3:8-12",
+            Prefix.katholikon + "&D=Pntl22||014thSunday&C=Title",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى (3 : 8 – 12)",
+            "1 John (3: 8-12)",
+            "1 John (3: 8-12)",
         ],
         [
             Prefix.same + "&C=NoActor",
@@ -7229,7 +5034,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl23&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 3 : 13 – 17 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(3 : 13 – 17)",
             "1 John 3:13-17",
             "1 John 3:13-17",
         ],
@@ -7255,7 +5060,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl24&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى (4:8-13)",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (4:8-13)",
             "1 Pierre 4:8-13",
             "1 Peter 4:8-13",
         ],
@@ -7286,40 +5091,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl25&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى(3:18-24)",
-            "1 John 3:18-24",
-            "1 John 3:18-24",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "يا اولادي لا نحب بالكلام ولا باللسان بل بالعمل والحق. وبهذا نعرف اننا من الحق ونسكن قلوبنا قدامه.",
-            "18 Mes petits enfants, n'aimons pas en paroles et de langue, mais en acte et dans la vérité; 19 à cela nous reconnaîtrons que nous sommes de la vérité, et devant lui nous apaiserons notre coeur,",
-            "18 My little children, let us not love in word or in tongue, but in deed and in truth. 19 And by this we know that we are of the truth, and shall assure our hearts before Him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لانه ان لامتنا قلوبنا فالله اعظم من قلوبنا ويعلم كل شيء ايها الاحباء ان لم تلمنا قلوبنا فلنا ثقة من نحو الله ومهما سألنا ننال منه",
-            "20 car, si notre coeur nous accuse, Dieu est plus grand que notre coeur et il discerne tout. 21 Mes bien-aimés, si notre coeur ne nous accuse pas, nous nous adressons à Dieu avec assurance; et quoi que nous demandions, nous l'obtenons de lui,",
-            "20 For if our heart condemns us, God is greater than our heart, and knows all things. 21 Beloved, if our heart does not condemn us, we have confidence toward God. 22 And whatever we ask we receive from Him,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لاننا نحفظ وصاياه ونعمل الاعمال المرضية امامه. وهذه هي وصيته ان نؤمن باسم ابنه يسوع المسيح ونحب بعضنا بعضا كما اعطانا وصية.",
-            "parce que nous gardons ses commandements et faisons ce qui lui agrée. Et voici son commandement: adhérer avec foi à son Fils Jésus Christ et nous aimer les uns les autres, comme il nous en a donné le commandement.",
-            "because we keep His commandments and do those things that are pleasing in His sight. 23 And this is His commandment: that we should believe on the name of His Son Jesus Christ and love one another, as He gave us commandment.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ومن يحفظ وصاياه يثبت فيه وهو فيه.وبهذا نعرف انه يثبت فينا من الروح الذي اعطانا",
-            "24 Celui qui garde ses commandements demeure en Dieu et Dieu en lui et nous reconnaissons à ceci qu’il demeure en nous, par l’Esprit qu’il nous a donné. 24 Celui qui garde ses commandements demeure en Dieu et Dieu en lui et nous reconnaissons à ceci qu’il demeure en nous, par l’Esprit qu’il nous a donné.",
-            "24 Now he who keeps His commandments abides in Him, and He in him. And by this we know that He abides in us, by the Spirit whom He has given us.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl26&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 1 - 6 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 1-6)",
             "1 John 4:1-6",
             "1 John 4:1-6",
         ],
@@ -7345,7 +5118,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl27&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى (4:15-5:1)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4:15-5:1)",
             "1 John 4:15-5:1",
             "1 John 4:15-5:1",
         ],
@@ -7377,7 +5150,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl29&C=Title",
-            " الكاثوليكون من رسالة يوحنا الإولى( 3 : 21 – 24 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(3 : 21 – 24)",
             "1 John 3:21-24",
             "1 John 3:21-24",
         ],
@@ -7396,52 +5169,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl2&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى( 4 : 1 : 11)",
-            "1 Pierre 4:1 - 11",
-            "1 Peter 4:1-11",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فاذ قد تألم المسيح لاجلنا بالجسد تسلحوا انتم ايضا بهذه النية.فان من تألم في الجسد كفّ عن الخطية لكي لا يعيش ايضا الزمان الباقي في الجسد لشهوات الناس بل لارادة الله.",
-            "1 Ainsi donc, puisque Christ a souffert dans la chair, vous aussi armez–vous de la même pensée ; car celui qui a souffert dans la chair en a fini avec le péché,2 afin de vivre, non plus selon les désirs humains, mais selon la volonté de Dieu pendant le temps qui lui reste (à vivre) dans la chair.",
-            "4:1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان زمان الحياة الذي مضى يكفينا لنكون قد عملنا ارادة الامم سالكين في الدعارة والشهوات وادمان الخمر والبطر والمنادمات وعبادة الاوثان المحرمة",
-            "3 C’est suffisant, en effet, d’avoir, dans le passé, accompli la volonté des païens en marchant dans le dérèglement, les convoitises, l’ivrognerie, les orgies, les beuveries et l’idolâtrie criminelle.",
-            "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "الامر الذي فيه يستغربون انكم لستم تركضون معهم الى فيض هذه الخلاعة عينها مجدفين الذين سوف يعطون حسابا للذي هو على استعداد ان يدين الاحياء والاموات.",
-            "4 Ils trouvent étrange que vous ne couriez pas avec eux vers ce débordement de débauche, et ils vous calomnient :5 ils en rendront compte à celui qui est prêt à juger les vivants et les morts.",
-            "4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فانه لاجل هذا بشر الموتى ايضا لكي يدانوا حسب الناس بالجسد ولكن ليحيوا حسب الله بالروح وانما نهاية كل شيء قد اقتربت.فتعقلوا واصحوا للصلوات.",
-            "6 C’est pour cela, en effet, que les morts aussi ont été évangélisés, afin qu’après avoir été jugés selon les hommes quant à la chair, ils vivent selon Dieu quant à l’esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.",
-            "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن قبل كل شيء لتكن محبتكم بعضكم لبعض شديدة لان المحبة تستر كثرة من الخطايا. كونوا مضيفين بعضكم بعضا بلا دمدمة. ليكن كل واحد بحسب ما اخذ موهبة يخدم بها بعضكم بعضا كوكلاء صالحين على نعمة الله المتنوعة.",
-            "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés.9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.",
-            "8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ان كان يتكلم احد فكاقوال الله.وان كان يخدم احد فكانه من قوة يمنحها الله لكي يتمجد الله في كل شيء بيسوع المسيح الذي له المجد والسلطان الى ابد الآبدين.آمين",
-            "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !",
-            "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl2ndSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 10 - 20 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 10-20)",
             "1 Jean 5:10 - 20",
             "1 John 5:10-20",
         ],
@@ -7485,7 +5214,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl30&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 4 : 11 – 17 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 11 – 17)",
             "1 John 4:11-17",
             "1 John 4:11-17",
         ],
@@ -7517,7 +5246,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl31&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 15 - 19 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 15-19)",
             "1 John 4:15-19",
             "1 John 4:15-19",
         ],
@@ -7543,7 +5272,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl32&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 4 : 18 – 5 : 1 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 18 – 5 : 1)",
             "1 John 4:18-5:1",
             "1 John 4:18-5:1",
         ],
@@ -7569,7 +5298,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl33&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 1 - 6 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 1-6)",
             "1 John 5:1-6",
             "1 John 5:1-6",
         ],
@@ -7595,7 +5324,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl34&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 11 – 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 11 – 21)",
             "1 John 5:11-21",
             "1 John 5:11-21",
         ],
@@ -7639,7 +5368,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl36&C=Title",
-            " الكاثوليكون من رسالة يوحنا الإولى( 5 : 9 - 13)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(5 : 9-13)",
             "1 Jean 5:9-13",
             "1 John 5:9-13",
         ],
@@ -7665,7 +5394,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl37&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 9 - 12)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 9-12)",
             "1 Jean 5:9 - 12",
             "1 John 5:9-12",
         ],
@@ -7685,7 +5414,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl38&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 13 – 18 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 13 – 18)",
             "1 John 5:13-18",
             "1 John 5:13-18",
         ],
@@ -7716,46 +5445,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl39&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 15 – 22 )",
-            "1 Pierre 3:15 - 22",
-            "1 Peter 3:15-22",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف",
-            "15 Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte. Mais que ce soit avec douceur et respect,",
-            "15 But sanctify the Lord God in your hearts, and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكم ضمير صالح لكي يكون الذين يشتمون سيرتكم الصالحة في المسيح يخزون في ما يفترون عليكم كفاعلي شر. لان تألمكم ان شاءت مشيئة الله وانتم صانعون خيرا افضل منه وانتم صانعون شرا.",
-            "16 en ayant une bonne conscience, afin que, sur le point même où l'on vous calomnie, ceux qui décrient votre bonne conduite en Christ soient confondus. Car mieux vaut souffrir en faisant le bien, si telle est la volonté de Dieu, qu'en faisant le mal.",
-            "16 having a good conscience, that when they defame you as evildoers, those who revile your good conduct in Christ may be ashamed. 17 For it is better, if it is the will of God, to suffer for doing good than for doing evil.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "فان المسيح ايضا تألم مرة واحدة من اجل الخطايا البار من اجل الاثمة لكي يقربنا الى الله مماتا في الجسد ولكن محيى في الروح الذي فيه ايضا ذهب فكرز للارواح التي في السجن اذ عصت قديما",
-            "18 En effet, le Christ lui-même a souffert pour les péchés, une fois pour toutes, lui le juste pour les injustes, afin de vous présenter à Dieu, lui mis à mort en sa chair, mais rendu à la vie par l'Esprit. C'est alors qu'il est allé prêcher même aux esprits en prison, aux rebelles d'autrefois,",
-            "18 For Christ also suffered once for sins, the just for the unjust, that He might bring us to God, being put to death in the flesh but made alive by the Spirit, 19 by whom also He went and preached to the spirits in prison, 20 who formerly were disobedient,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "حين كانت اناة الله تنتظر مرة في ايام نوح اذ كان الفلك يبنى الذي فيه خلص قليلون اي ثماني انفس بالماء. الذي مثاله يخلّصنا نحن الآن اي المعمودية لا ازالة وسخ الجسد",
-            "quand se prolongeait la patience de Dieu aux jours où Noé construisait l'arche, dans laquelle peu de gens, huit personnes, furent sauvés par l'eau.21 C'était l'image du baptême qui vous sauve maintenant: il n'est pas la purification des souillures du corps,",
-            "when once the Divine longsuffering waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight souls, were saved through water. 21 There is also an antitype which now saves us--baptism (not the removal of the filth of the flesh,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "بل سؤال ضمير صالح عن الله بقيامة يسوع المسيح الذي هو في يمين الله اذ قد مضى الى السماء وملائكة وسلاطين وقوات مخضعة له",
-            "mais l'engagement envers Dieu d'une bonne conscience; il vous sauve par la résurrection de Jésus Christ, qui, parti pour le ciel, est à la droite de Dieu et à qui sont soumis anges, autorités et puissances.",
-            "but the answer of a good conscience toward God), through the resurrection of Jesus Christ, 22 who has gone into heaven and is at the right hand of God, angels and authorities and powers having been made subject to Him.",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl3&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى ( 1 : 10 - 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (1 : 10-21)",
             "1 Pierre 1:10 - 21",
             "1 Peter 1:10-21",
         ],
@@ -7805,7 +5496,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl3rdSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 3 : 13 ـ 24 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (3 : 13-24)",
             "1 Jean 3:13 - 24",
             "1 John 3:13-24",
         ],
@@ -7849,7 +5540,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl40&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 14 – 21 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 14 – 21)",
             "1 John 5:14-21",
             "1 John 5:14-21",
         ],
@@ -7887,7 +5578,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl41&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى ( 5 : 5 - 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (5 : 5-12)",
             "1 Peter 5:5-12",
             "1 Peter 5:5-12",
         ],
@@ -7919,7 +5610,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl43&C=Title",
-            " الكاثوليكون من رسالة يوحنا الثانية ( 1 : 1 – 8 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية (1 : 1 – 8)",
             "2 John 1:1-8",
             "2 John 1:1-8",
         ],
@@ -7957,7 +5648,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl44&C=Title",
-            " الكاثوليكون من رسالة يوحنا الثانية ( 1 : 8 - 13)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية (1 : 8-13)",
             "2 Jean 1: 8:13",
             "2 John 1:8-13",
         ],
@@ -7983,7 +5674,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl45&C=Title",
-            " الكاثوليكون من رسالة يوحنا الثالثة ( 1 : 1 – 8 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثالثة (1 : 1 – 8)",
             "3 Jean 1 - 8",
             "3 John 1:1-8",
         ],
@@ -8015,7 +5706,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl46&C=Title",
-            " الكاثوليكون من رسالةيوحنا الرسول الثالثة( 1: 10 - 15 )",
+            " الكاثوليكون من رسالةيوحنا الرَسُولِ الثالثة(1: 10-15)",
             "3 Jean 10 - 15",
             "3 John 1:10-14",
         ],
@@ -8041,7 +5732,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl47&C=Title",
-            " الكاثوليكون من رسالة يهوذا ( 1 : 22 – 25 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا (1 : 22 – 25)",
             "Jude 1:22-25",
             "Jude 1:22-25",
         ],
@@ -8060,72 +5751,8 @@ ReadingsArrays.KatholikonArray = [[
     ],
     [
         [
-            Prefix.katholikon + "&D=Pntl48&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 12 – 17 )",
-            "1 Jean 2:13 - 17",
-            "1 John 2:12-17",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.",
-            "12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom. 13 Je vous l'écris, pères: 'Vous connaissez celui qui est dès le commencement.'",
-            "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب. كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.",
-            "Je vous l'écris, jeunes gens: 'Vous êtes vainqueurs du Mauvais.' Je vous l'ai donc écrit, mes petits enfants: 'Vous connaissez le Père.' Je vous l'ai écrit, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'ai écrit, jeunes gens:",
-            "I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير. لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب.",
-            "'Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais. N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui,",
-            "Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم. والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد",
-            "16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde. Or, le monde passe, lui et sa convoitise; mais celui qui fait la volonté de Dieu demeure à jamais.",
-            "16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.",
-        ],
-    ],
-    [
-        [
-            Prefix.katholikon + "&D=Pntl4&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 8 ـ 15 )",
-            "1 Pierre 3:8 - 15",
-            "1 Peter 3:8-15",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "والنهاية كونوا جميعا متحدي الرأي بحس واحد ذوي محبة اخوية مشفقين لطفاء غير مجازين عن شر بشر او عن شتيمة بشتيمة بل بالعكس مباركين",
-            "8 Enfin, soyez tous dans de mêmes dispositions, compatissants, animés d'un amour fraternel, miséricordieux, humbles. Ne rendez pas le mal pour le mal, ou l'insulte pour l'insulte; au contraire, bénissez,",
-            "8 Finally, all of you be of one mind, having compassion for one another; love as brothers, be tenderhearted, be courteous; 9 not returning evil for evil or reviling for reviling, but on the contrary blessing,",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "عالمين انكم لهذا دعيتم لكي ترثوا بركة. لان من اراد ان يحب الحياة ويرى اياما صالحة فليكفف لسانه عن الشر وشفتيه ان تتكلما بالمكر ليعرض عن الشر ويصنع الخير ليطلب السلام ويجدّ في اثره",
-            "car c'est à cela que vous avez été appelés, afin d'hériter la bénédiction.10 En effet, qui veut aimer la vie et voir des jours heureux doit garder sa langue du mal et ses lèvres des paroles trompeuses, se détourner du mal et faire le bien, rechercher la paix et la poursuivre.",
-            "knowing that you were called to this, that you may inherit a blessing. 10 For He who would love life And see good days, Let him refrain his tongue from evil, And his lips from speaking deceit. 11 Let him turn away from evil and do good; Let him seek peace and pursue it.",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "لان عيني الرب على الابرار واذنيه الى طلبتهم.ولكن وجه الرب ضد فاعلي الشر فمن يؤذيكم ان كنتم متمثلين بالخير.",
-            "12 Car les yeux du Seigneur sont sur les justes, et ses oreilles sont attentives à leur prière; mais la face du Seigneur se tourne contre ceux qui font le mal. 13 Et qui vous fera du mal, si vous vous montrez zélés pour le bien?",
-            "12 For the eyes of the Lord are on the righteous, And His ears are open to their prayers; But the face of the Lord is against those who do evil. 13 And who is he who will harm you if you become followers of what is good?",
-        ],
-        [
-            Prefix.same + "&C=NoActor",
-            "ولكن وان تألمتم من اجل البر فطوباكم.واما خوفهم فلا تخافوه ولا تضطربوا بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف",
-            "14 Bien plus, au cas où vous auriez à souffrir pour la justice, heureux êtes-vous. N'ayez d'eux aucune crainte et ne soyez pas troublés; mais sanctifiez dans vos coeurs le Christ qui est Seigneur. Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte.",
-            "14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled. 15 But sanctify the Lord God in your hearts, and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;",
-        ],
-    ],
-    [
-        [
             Prefix.katholikon + "&D=Pntl4thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى (4:7-13)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4:7-13)",
             "1 Jean 4:7-13",
             "1 John 4:7-13",
         ],
@@ -8157,8 +5784,8 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl5&C=Title",
-            " الكاثوليكون من رسالة بطرس الأولى الرسول( 1 : 25 – 2 : 10 )",
-            "1 Pierre 1:25 - 2:1-10",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى الرسول(1 : 25 – 2 : 10)",
+            "1 Pierre 1:25 - (2: 1-10)",
             "1 Peter 1:25-2:10",
         ],
         [
@@ -8201,7 +5828,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl5thSunday&C=Title",
-            " الكاثوليكون من بطرس الرسول الأولى( 4 : 6 - 14)",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الأولى(4 : 6-14)",
             "1 Pierre 4 :6 - 14",
             "1 Peter 4:6-14",
         ],
@@ -8245,7 +5872,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl6&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 1 : 1 ـ 7 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (1 : 1-7)",
             "1 John 1:1-7",
             "1 John 1:1-7",
         ],
@@ -8277,7 +5904,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl6thSunday&C=Title",
-            " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 2 - 12 )",
+            " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 2-12)",
             "1 Pierre 1:2 - 12",
             "1 Peter 1:2-12",
         ],
@@ -8327,7 +5954,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl7thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 20- 3: 1 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 20- 3: 1)",
             "1 Jean 2:20-3:1",
             "1 John 2:20-3:1",
         ],
@@ -8371,7 +5998,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl8&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الإولى( 1 : 1 - 7)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الإولى(1 : 1-7)",
             "1 John 1:1-7",
             "1 John 1:1-7",
         ],
@@ -8403,7 +6030,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl8thSunday&C=Title",
-            " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 20- 3: 1 )",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 20- 3: 1)",
             "1 Jean 2:20-3:1",
             "1 John 2:20-3:1",
         ],
@@ -8447,7 +6074,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=Pntl9&C=Title",
-            " الكاثوليكون من رسالة يوحنا الأولى( 1 : 6 - 10)",
+            " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(1 : 6-10)",
             "1 John 1:6-10",
             "1 John 1:6-10",
         ],
@@ -8473,7 +6100,7 @@ ReadingsArrays.KatholikonArray = [[
     [
         [
             Prefix.katholikon + "&D=GL9thSunday&C=Title",
-            " الكاثوليكون من بطرس الرسول الاولى (3 : 15 – 4 : 6 )",
+            " الكاثوليكون من بُطْرُسِ الرَسُولِ الاولى (3 : 15 – 4 : 6)",
             "1 Pierre 3:15 -4:6",
             "1 Peter 3:15-4:6",
         ],
@@ -8533,4 +6160,4 @@ ReadingsArrays.KatholikonArray = [[
         ],
     ],
 ];
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZUthdGhvbGlrb25BcnJheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL21vZHVsZXMvRGVjbGFyZUthdGhvbGlrb25BcnJheS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLENBQUMsZUFBZSxHQUFFLENBQUM7UUFDL0I7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywwREFBMEQ7WUFDMUQsaUJBQWlCO1lBQ2pCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSw4TUFBOE07WUFDOU0sa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0xBQStMO1lBQy9MLDJRQUEyUTtZQUMzUSxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsOFBBQThQO1lBQzlQLG9QQUFvUDtTQUNuUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZOQUE2TjtZQUM3TixzUEFBc1A7WUFDdFAsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU9BQXlPO1lBQ3pPLG9SQUFvUjtZQUNwUixpU0FBaVM7U0FDaFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTkFBb047WUFDcE4sK1NBQStTO1lBQy9TLHNRQUFzUTtTQUNyUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1GQUFtRjtZQUNuRixzR0FBc0c7WUFDdEcsdUdBQXVHO1NBQ3RHO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsdUNBQXVDO1lBQ3ZDLGlCQUFpQjtZQUNqQixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyT0FBMk87WUFDM08sd09BQXdPO1lBQ3hPLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRQQUE0UDtZQUM1UCw4VkFBOFY7WUFDOVYsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLHdLQUF3SztZQUN4SyxFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyxFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQywwREFBMEQ7WUFDMUQsbUJBQW1CO1lBQ25CLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZIQUE2SDtZQUM3SCxxS0FBcUs7WUFDckssZ0tBQWdLO1NBQy9KO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNktBQTZLO1lBQzdLLGtPQUFrTztZQUNsTywwS0FBMEs7U0FDeks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsc1BBQXNQO1lBQ3RQLG1OQUFtTjtTQUNsTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRNQUE0TTtZQUM1TSw4UEFBOFA7WUFDOVAsaVBBQWlQO1NBQ2hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOE1BQThNO1lBQzlNLG1RQUFtUTtZQUNuUSw0T0FBNE87U0FDM087S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxzREFBc0Q7WUFDdEQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxzTkFBc047WUFDdE4sOE5BQThOO1NBQzdOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkxBQTJMO1lBQzNMLHFSQUFxUjtZQUNyUix3UUFBd1E7U0FDdlE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyR0FBMkc7WUFDM0csNkxBQTZMO1lBQzdMLHdKQUF3SjtTQUN2SjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHVEQUF1RDtZQUN2RCxtQkFBbUI7WUFDbkIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNktBQTZLO1lBQzdLLDJQQUEyUDtZQUMzUCw4TUFBOE07U0FDN007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0seVNBQXlTO1lBQ3pTLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SyxpUUFBaVE7WUFDalEsd05BQXdOO1NBQ3ZOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUxBQXlMO1lBQ3pMLDJSQUEyUjtZQUMzUiw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsNlFBQTZRO1lBQzdRLDhRQUE4UTtTQUM3UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSwwTUFBME07WUFDMU0sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLHdQQUF3UDtZQUN4UCxzTkFBc047U0FDck47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxrREFBa0Q7WUFDbEQsa0JBQWtCO1lBQ2xCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCwrT0FBK087WUFDL08seUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILDRMQUE0TDtZQUM1TCx3TkFBd047U0FDdk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTUFBbU07WUFDbk0sd1JBQXdSO1lBQ3hSLG9RQUFvUTtTQUNuUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4Syx5UkFBeVI7WUFDelIsdVJBQXVSO1NBQ3RSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkdBQTJHO1lBQzNHLCtKQUErSjtZQUMvSiw0SkFBNEo7U0FDM0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsME9BQTBPO1lBQzFPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixrTkFBa047WUFDbE4sc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLHFCQUFxQjtZQUNyQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosK1BBQStQO1lBQy9QLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSix5UUFBeVE7WUFDelEsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLHlRQUF5UTtZQUN6USwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssdVJBQXVSO1lBQ3ZSLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCw0SkFBNEo7WUFDNUosdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILHVMQUF1TDtZQUN2TCw2SkFBNko7U0FDNUo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssNE9BQTRPO1lBQzVPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxvS0FBb0s7WUFDcEssMElBQTBJO1NBQ3pJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUNBQWlDO1lBQ2pDLG1CQUFtQjtZQUNuQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhMQUE4TDtZQUM5TCxtUkFBbVI7WUFDblIsNEtBQTRLO1NBQzNLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILHVKQUF1SjtZQUN2SixzSkFBc0o7U0FDcko7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSUFBcUk7WUFDckksdVFBQXVRO1lBQ3ZRLDZOQUE2TjtTQUM1TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdMQUF3TDtZQUN4TCxpTUFBaU07WUFDak0sb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUtBQWlLO1lBQ2pLLGtSQUFrUjtZQUNsUiw4T0FBOE87U0FDN087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSEFBb0g7WUFDcEgsb01BQW9NO1lBQ3BNLDhKQUE4SjtTQUM3SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRIQUE0SDtZQUM1SCw2S0FBNks7WUFDN0ssc0hBQXNIO1NBQ3JIO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNGQUFzRjtZQUN0RixvSUFBb0k7WUFDcEksMEdBQTBHO1NBQ3pHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUlBQXlJO1lBQ3pJLHFMQUFxTDtZQUNyTCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksOE1BQThNO1lBQzlNLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCxtVEFBbVQ7WUFDblQsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLHdRQUF3UTtZQUN4USw0TkFBNE47U0FDM047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5R0FBeUc7WUFDekcseUxBQXlMO1lBQ3pMLHFMQUFxTDtTQUNwTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1KQUFtSjtZQUNuSix1VEFBdVQ7WUFDdlQsa1BBQWtQO1NBQ2pQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0lBQStJO1lBQy9JLHFQQUFxUDtZQUNyUCxxUEFBcVA7U0FDcFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2RkFBNkY7WUFDN0YsNkhBQTZIO1lBQzdILDRHQUE0RztTQUMzRztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGtEQUFrRDtZQUNsRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4R0FBOEc7WUFDOUcsbU1BQW1NO1lBQ25NLDhMQUE4TDtTQUM3TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSwrT0FBK087WUFDL08sZ05BQWdOO1NBQy9NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLG9WQUFvVjtZQUNwVixxVEFBcVQ7U0FDcFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2RkFBNkY7WUFDN0Ysc0lBQXNJO1lBQ3RJLHNJQUFzSTtTQUNySTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNHQUFzRztZQUN0Ryw0TkFBNE47WUFDNU4sNkxBQTZMO1NBQzVMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILDZPQUE2TztZQUM3Tyx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsc1JBQXNSO1lBQ3RSLG9RQUFvUTtTQUNuUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvR0FBb0c7WUFDcEcsZ05BQWdOO1lBQ2hOLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSxtUUFBbVE7WUFDblEsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0ZBQStGO1lBQy9GLG9PQUFvTztZQUNwTyxnTUFBZ007U0FDL0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSkFBaUo7WUFDakosMFFBQTBRO1lBQzFRLCtQQUErUDtTQUM5UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVHQUF1RztZQUN2Ryx5RkFBeUY7WUFDekYsMkZBQTJGO1NBQzFGO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0dBQStHO1lBQy9HLCtSQUErUjtZQUMvUix1UUFBdVE7U0FDdFE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywwREFBMEQ7WUFDMUQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJJQUEySTtZQUMzSSw4TUFBOE07WUFDOU0sa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU1BQXlNO1lBQ3pNLDJRQUEyUTtZQUMzUSxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssOFBBQThQO1lBQzlQLG9QQUFvUDtTQUNuUDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxvQkFBb0I7WUFDcEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME1BQTBNO1lBQzFNLCtRQUErUTtZQUMvUSx3UEFBd1A7U0FDdlA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTUFBcU07WUFDck0sNlFBQTZRO1lBQzdRLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlOQUF5TjtZQUN6Tiw4UUFBOFE7WUFDOVEsNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUdBQW1HO1lBQ25HLG9KQUFvSjtZQUNwSiwwSUFBMEk7U0FDekk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSUFBMEk7WUFDMUksa01BQWtNO1lBQ2xNLGlNQUFpTTtTQUNoTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRPQUE0TztZQUM1Tyw0UUFBNFE7WUFDNVEsbVNBQW1TO1NBQ2xTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLHVPQUF1TztZQUN2Tyw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsZ1NBQWdTO1lBQ2hTLGdSQUFnUjtTQUMvUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLCtEQUErRDtZQUMvRCxrQkFBa0I7WUFDbEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLG9OQUFvTjtZQUNwTix5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSUFBZ0k7WUFDaEksMExBQTBMO1lBQzFMLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlMQUFpTDtZQUNqTCxvUEFBb1A7WUFDcFAsc1BBQXNQO1NBQ3JQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLG1PQUFtTztZQUNuTyx1TUFBdU07U0FDdE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssOFFBQThRO1lBQzlRLGlNQUFpTTtTQUNoTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDRDQUE0QztZQUM1QyxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksa05BQWtOO1lBQ2xOLDZMQUE2TDtTQUM1TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlNQUF5TTtZQUN6TSx5UUFBeVE7WUFDelEsMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLGdKQUFnSjtZQUNoSix3S0FBd0s7U0FDdks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0ssc05BQXNOO1lBQ3ROLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlLQUF5SztZQUN6SyxzTkFBc047WUFDdE4sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkxBQTJMO1lBQzNMLGlQQUFpUDtZQUNqUCxzUEFBc1A7U0FDclA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrTUFBK007WUFDL00sbVJBQW1SO1lBQ25SLHNNQUFzTTtTQUNyTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLCtDQUErQztZQUMvQyxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDJNQUEyTTtZQUMzTSxtTUFBbU07U0FDbE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtRkFBbUY7WUFDbkYsdUhBQXVIO1lBQ3ZILDZGQUE2RjtTQUM1RjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCxpTkFBaU47WUFDak4sMk5BQTJOO1NBQzFOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ1FBQWdRO1lBQ2hRLGlQQUFpUDtZQUNqUCxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2S0FBNks7WUFDN0ssdU5BQXVOO1lBQ3ZOLDZNQUE2TTtTQUM1TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlOQUF5TjtZQUN6TiwrT0FBK087WUFDL08sb09BQW9PO1NBQ25PO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsMkRBQTJEO1lBQzNELHVCQUF1QjtZQUN2QixxQkFBcUI7U0FDcEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbksseVJBQXlSO1lBQ3pSLDJQQUEyUDtTQUMxUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRLQUE0SztZQUM1SyxpUkFBaVI7WUFDalIsK1BBQStQO1NBQzlQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUdBQW1HO1lBQ25HLHdLQUF3SztZQUN4Syx1SkFBdUo7U0FDdEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4R0FBOEc7WUFDOUcsNk5BQTZOO1lBQzdOLDJKQUEySjtTQUMxSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdMQUF3TDtZQUN4TCx3UUFBd1E7WUFDeFEsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkdBQTZHO1lBQzdHLDRMQUE0TDtZQUM1TCxxS0FBcUs7U0FDcEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3RkFBd0Y7WUFDeEYsdUtBQXVLO1lBQ3ZLLCtJQUErSTtTQUM5STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhLQUE4SztZQUM5SyxrU0FBa1M7WUFDbFMsd1JBQXdSO1NBQ3ZSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU5BQW1OO1lBQ25OLDJUQUEyVDtZQUMzVCxxUEFBcVA7U0FDcFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osd05BQXdOO1lBQ3hOLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSw0T0FBNE87WUFDNU8seU9BQXlPO1NBQ3hPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSxtUUFBbVE7WUFDblEsOE9BQThPO1NBQzdPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLDJUQUEyVDtZQUMzVCxtUkFBbVI7U0FDbFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SEFBeUg7WUFDekgsME1BQTBNO1lBQzFNLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSxtTUFBbU07WUFDbk0sdU1BQXVNO1NBQ3RNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0VBQXNFO1lBQ3RFLGdLQUFnSztZQUNoSyw2SEFBNkg7U0FDNUg7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SEFBdUg7WUFDdkgsNk9BQTZPO1lBQzdPLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCxzUkFBc1I7WUFDdFIscVFBQXFRO1NBQ3BRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SEFBOEg7WUFDOUgsNE5BQTROO1lBQzVOLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSywwUUFBMFE7WUFDMVEsc1FBQXNRO1NBQ3JRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLHlRQUF5UTtZQUN6USxvUEFBb1A7U0FDblA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTkFBaU47WUFDak4sK01BQStNO1lBQy9NLDBOQUEwTjtTQUN6TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGtEQUFrRDtZQUNsRCxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUdBQXVHO1lBQ3ZHLDhNQUE4TTtZQUM5TSwyS0FBMks7U0FDMUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4S0FBOEs7WUFDOUssaVBBQWlQO1lBQ2pQLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4SyxpUUFBaVE7WUFDalEsaU9BQWlPO1NBQ2hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILHlOQUF5TjtZQUN6TixvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyR0FBMkc7WUFDM0csdU9BQXVPO1lBQ3ZPLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJFQUEyRTtZQUMzRSxtSEFBbUg7WUFDbkgsaUlBQWlJO1NBQ2hJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsOENBQThDO1lBQzlDLGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4RkFBOEY7WUFDOUYsaUtBQWlLO1lBQ2pLLG1LQUFtSztTQUNsSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSxnT0FBZ087WUFDaE8sb05BQW9OO1NBQ25OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUxBQXVMO1lBQ3ZMLHdUQUF3VDtZQUN4VCxxVEFBcVQ7U0FDcFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksNFBBQTRQO1lBQzVQLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxnT0FBZ087WUFDaE8sc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsa0RBQWtEO1lBQ2xELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssc01BQXNNO1lBQ3RNLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlIQUFpSDtZQUNqSCxrSUFBa0k7WUFDbEksMEtBQTBLO1NBQ3pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0xBQW9MO1lBQ3BMLHNOQUFzTjtZQUN0Tix5T0FBeU87U0FDeE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TEFBdUw7WUFDdkwsNk9BQTZPO1lBQzdPLGdSQUFnUjtTQUMvUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9HQUFvRztZQUNwRyxpSEFBaUg7WUFDakgsMklBQTJJO1NBQzFJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU5BQXFOO1lBQ3JOLHFQQUFxUDtZQUNyUCxpVEFBaVQ7U0FDaFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTkFBZ047WUFDaE4saVBBQWlQO1lBQ2pQLGdSQUFnUjtTQUMvUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLG1EQUFtRDtZQUNuRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0lBQW9JO1lBQ3BJLHVLQUF1SztZQUN2Syx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSEFBcUg7WUFDckgsOExBQThMO1lBQzlMLDhLQUE4SztTQUM3SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBNQUEwTTtZQUMxTSxpUUFBaVE7WUFDalEsc1JBQXNSO1NBQ3JSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLGtNQUFrTTtZQUNsTSwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsMk1BQTJNO1lBQzNNLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSixpS0FBaUs7WUFDaksseUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLHdQQUF3UDtZQUN4UCw4U0FBOFM7U0FDN1M7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxpREFBaUQ7WUFDakQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLDRMQUE0TDtZQUM1TCwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsMlJBQTJSO1lBQzNSLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSix3UEFBd1A7WUFDeFAsZ1FBQWdRO1NBQy9QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLDJNQUEyTTtZQUMzTSxrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosc1FBQXNRO1lBQ3RRLDhRQUE4UTtTQUM3UTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHlEQUF5RDtZQUN6RCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0dBQStHO1lBQy9HLDJLQUEySztZQUMzSywrS0FBK0s7U0FDOUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SUFBOEk7WUFDOUksNE9BQTRPO1lBQzVPLHNSQUFzUjtTQUNyUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCwwTUFBME07WUFDMU0saU9BQWlPO1NBQ2hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEtBQThLO1lBQzlLLGdRQUFnUTtZQUNoUSwrUUFBK1E7U0FDOVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1RkFBdUY7WUFDdkYsa0lBQWtJO1lBQ2xJLDZLQUE2SztTQUM1SztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHVEQUF1RDtZQUN2RCxrQkFBa0I7WUFDbEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0dBQXNHO1lBQ3RHLHlJQUF5STtZQUN6SSwyS0FBMks7U0FDMUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4S0FBOEs7WUFDOUssK1BBQStQO1lBQy9QLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxnTkFBZ047WUFDaE4sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLG1QQUFtUDtZQUNuUCxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwR0FBMEc7WUFDMUcseU5BQXlOO1lBQ3pOLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBFQUEwRTtZQUMxRSwwR0FBMEc7WUFDMUcsaUlBQWlJO1NBQ2hJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsc0RBQXNEO1lBQ3RELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCwrT0FBK087WUFDL08sZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLDJTQUEyUztZQUMzUyxpU0FBaVM7U0FDaFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SEFBd0g7WUFDeEgsMk1BQTJNO1lBQzNNLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSyxvUkFBb1I7WUFDcFIsK1FBQStRO1NBQzlRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLHdUQUF3VDtZQUN4VCw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SEFBOEg7WUFDOUgsc1JBQXNSO1lBQ3RSLHFRQUFxUTtTQUNwUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGdEQUFnRDtZQUNoRCxlQUFlO1lBQ2YsYUFBYTtTQUNaO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILCtNQUErTTtZQUMvTSxtTUFBbU07U0FDbE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSUFBMEk7WUFDMUksaU9BQWlPO1lBQ2pPLDZOQUE2TjtTQUM1TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlLQUF5SztZQUN6Syw4U0FBOFM7WUFDOVMsc1FBQXNRO1NBQ3JRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLDJTQUEyUztZQUMzUyx5UkFBeVI7U0FDeFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgseU9BQXlPO1lBQ3pPLHlPQUF5TztTQUN4TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNNQUFzTTtZQUN0TSxtVkFBbVY7WUFDblYsNFJBQTRSO1NBQzNSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0dBQW9HO1lBQ3BHLHNLQUFzSztZQUN0SyxxSkFBcUo7U0FDcEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5RkFBeUY7WUFDekYsc0tBQXNLO1lBQ3RLLHFKQUFxSjtTQUNwSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSxzTkFBc047WUFDdE4sME9BQTBPO1NBQ3pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEVBQTBFO1lBQzFFLDZRQUE2UTtZQUM3USxpSUFBaUk7U0FDaEk7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxxREFBcUQ7WUFDckQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCx5TkFBeU47WUFDek4seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLCtNQUErTTtZQUMvTSxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSEFBMEg7WUFDMUgsa09BQWtPO1lBQ2xPLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SiwrUUFBK1E7WUFDL1EscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0ZBQWtGO1lBQ2xGLHNIQUFzSDtZQUN0SCxtSUFBbUk7U0FDbEk7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx1REFBdUQ7WUFDdkQscUJBQXFCO1lBQ3JCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLHNLQUFzSztZQUN0SyxvS0FBb0s7U0FDbks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSUFBcUk7WUFDckkscVJBQXFSO1lBQ3JSLCtOQUErTjtTQUM5TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdNQUFnTTtZQUNoTSw0UkFBNFI7WUFDNVIsOFNBQThTO1NBQzdTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUpBQXlKO1lBQ3pKLCtRQUErUTtZQUMvUSwrUUFBK1E7U0FDOVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTUFBaU07WUFDak0sdVVBQXVVO1lBQ3ZVLGdTQUFnUztTQUMvUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSiw0T0FBNE87WUFDNU8sd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILGlMQUFpTDtZQUNqTCxrTEFBa0w7U0FDakw7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsc0JBQXNCO1lBQ3RCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNGQUFzRjtZQUN0RixxSkFBcUo7WUFDckosMEdBQTBHO1NBQ3pHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLHVNQUF1TTtZQUN2TSw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSUFBc0k7WUFDdEksMk1BQTJNO1lBQzNNLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1MQUFtTDtZQUNuTCw2VEFBNlQ7WUFDN1Qsa1FBQWtRO1NBQ2pRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdJQUFnSTtZQUNoSSw2T0FBNk87WUFDN08sMk9BQTJPO1NBQzFPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLG1UQUFtVDtZQUNuVCw2UEFBNlA7U0FDNVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwsbVJBQW1SO1lBQ25SLHlTQUF5UztTQUN4UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJMQUEyTDtZQUMzTCxxU0FBcVM7WUFDclMseVNBQXlTO1NBQ3hTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLHFRQUFxUTtZQUNyUSx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssa1JBQWtSO1lBQ2xSLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRFQUE0RTtZQUM1RSwrRkFBK0Y7WUFDL0YsMkZBQTJGO1NBQzFGO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsdURBQXVEO1lBQ3ZELHFCQUFxQjtZQUNyQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRyw0SkFBNEo7WUFDNUosMkpBQTJKO1NBQzFKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLHNRQUFzUTtZQUN0USxzUEFBc1A7U0FDclA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrTEFBK0w7WUFDL0wsc1JBQXNSO1lBQ3RSLDZRQUE2UTtTQUM1UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSwrUEFBK1A7WUFDL1Asb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLDhSQUE4UjtZQUM5Uix1UUFBdVE7U0FDdFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osOFFBQThRO1lBQzlRLHNRQUFzUTtTQUNyUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxvQkFBb0I7WUFDcEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEtBQTBLO1lBQzFLLCtRQUErUTtZQUMvUSx3UEFBd1A7U0FDdlA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssOFFBQThRO1lBQzlRLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSwwTEFBMEw7WUFDMUwsc01BQXNNO1NBQ3JNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0VBQW9FO1lBQ3BFLHVKQUF1SjtZQUN2Six5R0FBeUc7U0FDeEc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksbVJBQW1SO1lBQ25SLHlSQUF5UjtTQUN4UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZGQUE2RjtZQUM3Rix1UUFBdVE7WUFDdlEsbUtBQW1LO1NBQ2xLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGlCQUFpQjtZQUNqQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csOE5BQThOO1lBQzlOLDRKQUE0SjtTQUMzSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFFQUFxRTtZQUNyRSxzTEFBc0w7WUFDdEwsdUhBQXVIO1NBQ3RIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0lBQWdJO1lBQ2hJLDRNQUE0TTtZQUM1TSx1SkFBdUo7U0FDdEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwRUFBMEU7WUFDMUUsbUlBQW1JO1lBQ25JLGlKQUFpSjtTQUNoSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRMQUE0TDtZQUM1TCwyUkFBMlI7WUFDM1IscVJBQXFSO1NBQ3BSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLHFRQUFxUTtZQUNyUSxvUEFBb1A7U0FDblA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwseVVBQXlVO1lBQ3pVLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdHQUF3RztZQUN4Ryw0UUFBNFE7WUFDNVEsdU5BQXVOO1NBQ3ROO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsdURBQXVEO1lBQ3ZELG9CQUFvQjtZQUNwQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0RkFBNEY7WUFDNUYsdUpBQXVKO1lBQ3ZKLDRIQUE0SDtTQUMzSDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdHQUFnRztZQUNoRyxvTUFBb007WUFDcE0sNkxBQTZMO1NBQzVMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkhBQTJIO1lBQzNILDRQQUE0UDtZQUM1UCxnT0FBZ087U0FDL047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwsOFJBQThSO1lBQzlSLGlTQUFpUztTQUNoUztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCwyTUFBMk07WUFDM00sa01BQWtNO1NBQ2pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUlBQWlJO1lBQ2pJLHNNQUFzTTtZQUN0TSxzTUFBc007U0FDck07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxtREFBbUQ7WUFDbkQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyw0TEFBNEw7WUFDNUwsbU5BQW1OO1NBQ2xOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLDhKQUE4SjtZQUM5Siw4TUFBOE07U0FDN007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SUFBd0k7WUFDeEksK0tBQStLO1lBQy9LLDBNQUEwTTtTQUN6TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJMQUEyTDtZQUMzTCxnUUFBZ1E7WUFDaFEseVJBQXlSO1NBQ3hSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkxBQTZMO1lBQzdMLHFSQUFxUjtZQUNyUiw4U0FBOFM7U0FDN1M7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpT0FBaU87WUFDak8sbVJBQW1SO1lBQ25SLDJSQUEyUjtTQUMxUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZOQUE2TjtZQUM3TixzUUFBc1E7WUFDdFEseVFBQXlRO1NBQ3hRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ05BQWdOO1lBQ2hOLDRUQUE0VDtZQUM1VCwyVUFBMlU7U0FDMVU7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxnRUFBZ0U7WUFDaEUsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEdBQTRHO1lBQzVHLGtMQUFrTDtZQUNsTCwyTEFBMkw7U0FDMUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvR0FBb0c7WUFDcEcseUpBQXlKO1lBQ3pKLDZLQUE2SztTQUM1SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyw0T0FBNE87WUFDNU8sa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLHNPQUFzTztZQUN0TyxxUkFBcVI7U0FDcFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0sOE9BQThPO1lBQzlPLDRTQUE0UztTQUMzUztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSwyTUFBMk07WUFDM00sb09BQW9PO1NBQ25PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0hBQStIO1lBQy9ILHVOQUF1TjtZQUN2TixvTkFBb047U0FDbk47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQywwREFBMEQ7WUFDMUQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSxrTEFBa0w7WUFDbEwsMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILGdLQUFnSztZQUNoSyx1S0FBdUs7U0FDdEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSkFBbUo7WUFDbkosaUxBQWlMO1lBQ2pMLG9MQUFvTDtTQUNuTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtMQUErTDtZQUMvTCxtUEFBbVA7WUFDblAsMlFBQTJRO1NBQzFRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNExBQTRMO1lBQzVMLDROQUE0TjtZQUM1Tiw2TkFBNk47U0FDNU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSkFBc0o7WUFDdEosa1JBQWtSO1lBQ2xSLGtSQUFrUjtTQUNqUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdOQUF3TjtZQUN4Tix1VEFBdVQ7WUFDdlQsc1VBQXNVO1NBQ3JVO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsaUVBQWlFO1lBQ2pFLGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksOEtBQThLO1lBQzlLLCtNQUErTTtTQUM5TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBOQUEwTjtZQUMxTixrUUFBa1E7WUFDbFEsa1BBQWtQO1NBQ2pQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU1BQW1NO1lBQ25NLHdSQUF3UjtZQUN4UiwwVUFBMFU7U0FDelU7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sb1JBQW9SO1lBQ3BSLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRNQUE0TTtZQUM1TSxvUUFBb1E7WUFDcFEsb1RBQW9UO1NBQ25UO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZHQUE2RztZQUM3RyxtTUFBbU07WUFDbk0sOExBQThMO1NBQzdMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLCtPQUErTztZQUMvTyxnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxRUFBcUU7WUFDckUsNklBQTZJO1lBQzdJLG9IQUFvSDtTQUNuSDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBMQUEwTDtZQUMxTCxnUkFBZ1I7WUFDaFIsaVJBQWlSO1NBQ2hSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLHlSQUF5UjtZQUN6UixvUEFBb1A7U0FDblA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SEFBdUg7WUFDdkgsNk9BQTZPO1lBQzdPLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1MQUFtTDtZQUNuTCxzUkFBc1I7WUFDdFIscVFBQXFRO1NBQ3BRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLHFCQUFxQjtZQUNyQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosK1BBQStQO1lBQy9QLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSix5UUFBeVE7WUFDelEsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLHlRQUF5UTtZQUN6USwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssdVJBQXVSO1lBQ3ZSLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCw0SkFBNEo7WUFDNUosdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILHVMQUF1TDtZQUN2TCw2SkFBNko7U0FDNUo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssNE9BQTRPO1lBQzVPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxvS0FBb0s7WUFDcEssMElBQTBJO1NBQ3pJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMscURBQXFEO1lBQ3JELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0R0FBNEc7WUFDNUcsbUxBQW1MO1lBQ25MLGtKQUFrSjtTQUNqSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtKQUFrSjtZQUNsSix5S0FBeUs7WUFDekssc05BQXNOO1NBQ3JOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLHdTQUF3UztZQUN4Uyx5T0FBeU87U0FDeE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUosbVRBQW1UO1lBQ25ULDBPQUEwTztTQUN6TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSx1TkFBdU47WUFDdk4seUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLCtTQUErUztZQUMvUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosaVBBQWlQO1lBQ2pQLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtIQUFrSDtZQUNsSCxpTkFBaU47WUFDak4sd0xBQXdMO1NBQ3ZMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsMERBQTBEO1lBQzFELGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0kscU9BQXFPO1lBQ3JPLHdPQUF3TztTQUN2TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxtUkFBbVI7WUFDblIsb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLDJOQUEyTjtZQUMzTixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4R0FBOEc7WUFDOUcsNldBQTZXO1lBQzdXLHFLQUFxSztTQUNwSztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxxQkFBcUI7WUFDckIsc0JBQXNCO1NBQ3JCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLHFRQUFxUTtZQUNyUSx5TkFBeU47U0FDeE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4RkFBOEY7WUFDOUYsbUxBQW1MO1lBQ25MLDJJQUEySTtTQUMxSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJHQUEyRztZQUMzRyx3TEFBd0w7WUFDeEwsa0pBQWtKO1NBQ2pKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLGdQQUFnUDtZQUNoUCxtTkFBbU47U0FDbE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SUFBd0k7WUFDeEksd09BQXdPO1lBQ3hPLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNIQUFzSDtZQUN0SCx5UEFBeVA7WUFDelAsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEVBQTRFO1lBQzVFLDZWQUE2VjtZQUM3VixxSEFBcUg7U0FDcEg7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsdUJBQXVCO1lBQ3ZCLHNCQUFzQjtTQUNyQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdIQUFnSDtZQUNoSCxnTkFBZ047WUFDaE4sdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLGlSQUFpUjtZQUNqUix1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssOFFBQThRO1lBQzlRLCtQQUErUDtTQUM5UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlGQUF5RjtZQUN6Riw0SUFBNEk7WUFDNUksb0tBQW9LO1NBQ25LO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkhBQTJIO1lBQzNILHdPQUF3TztZQUN4TywrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSEFBZ0g7WUFDaEgsc01BQXNNO1lBQ3RNLGlNQUFpTTtTQUNoTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5RixnTEFBZ0w7WUFDaEwscUhBQXFIO1NBQ3BIO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsdURBQXVEO1lBQ3ZELHVCQUF1QjtZQUN2QixzQkFBc0I7U0FDckI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csZ05BQWdOO1lBQ2hOLDJKQUEySjtTQUMxSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRyx5S0FBeUs7WUFDeksseUlBQXlJO1NBQ3hJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0xBQWtMO1lBQ2xMLHlTQUF5UztZQUN6UywrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0RkFBNEY7WUFDNUYsaUpBQWlKO1lBQ2pKLDRLQUE0SztTQUMzSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRIQUE0SDtZQUM1SCx3UUFBd1E7WUFDeFEsZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDRPQUE0TztZQUM1TyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrRkFBK0Y7WUFDL0YsK1ZBQStWO1lBQy9WLGdXQUFnVztTQUMvVjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDZEQUE2RDtZQUM3RCx1QkFBdUI7WUFDdkIsdUJBQXVCO1NBQ3RCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLDRLQUE0SztZQUM1SyxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5RkFBeUY7WUFDekYsaUxBQWlMO1lBQ2pMLDBKQUEwSjtTQUN6SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1KQUFtSjtZQUNuSiw2UUFBNlE7WUFDN1EsNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLHFSQUFxUjtZQUNyUixzT0FBc087U0FDck87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osc1NBQXNTO1lBQ3RTLDhPQUE4TztTQUM3TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCxxUEFBcVA7WUFDclAsMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUpBQXlKO1lBQ3pKLGdUQUFnVDtZQUNoVCx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1R0FBdUc7WUFDdkcsME1BQTBNO1lBQzFNLCtLQUErSztTQUM5SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1JQUFtSTtZQUNuSSxzT0FBc087WUFDdE8sMkxBQTJMO1NBQzFMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsOENBQThDO1lBQzlDLGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksMEtBQTBLO1lBQzFLLHdMQUF3TDtTQUN2TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNOQUFzTjtZQUN0TixvUUFBb1E7WUFDcFEsb1RBQW9UO1NBQ25UO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU9BQXVPO1lBQ3ZPLHlQQUF5UDtZQUN6UCxzVEFBc1Q7U0FDclQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TkFBNE47WUFDNU4sNFJBQTRSO1lBQzVSLG9SQUFvUjtTQUNuUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SywwTUFBME07WUFDMU0saU9BQWlPO1NBQ2hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLGdNQUFnTTtZQUNoTSx1TUFBdU07U0FDdE07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQywwREFBMEQ7WUFDMUQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLGlMQUFpTDtZQUNqTCw4TEFBOEw7U0FDN0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksb0tBQW9LO1lBQ3BLLHVNQUF1TTtTQUN0TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSiw2TkFBNk47WUFDN04sMk9BQTJPO1NBQzFPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLG1NQUFtTTtZQUNuTSxtUEFBbVA7U0FDbFA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxtREFBbUQ7WUFDbkQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUlBQXVJO1lBQ3ZJLHdHQUF3RztZQUN4RyxrSUFBa0k7U0FDakk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3UEFBd1A7WUFDeFAseVFBQXlRO1lBQ3pRLG1UQUFtVDtTQUNsVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNPQUFzTztZQUN0Tyw0TkFBNE47WUFDNU4sbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU9BQWlPO1lBQ2pPLHdPQUF3TztZQUN4Tyw4T0FBOE87U0FDN087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osb0tBQW9LO1lBQ3BLLCtPQUErTztTQUM5TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSywrTEFBK0w7WUFDL0wsOEtBQThLO1NBQzdLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsMERBQTBEO1lBQzFELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0S0FBNEs7WUFDNUssdU1BQXVNO1lBQ3ZNLGlPQUFpTztTQUNoTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNNQUFzTTtZQUN0TSwwTkFBME47WUFDMU4sOE1BQThNO1NBQzdNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDRSQUE0UjtZQUM1UiwrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsbU9BQW1PO1lBQ25PLGtRQUFrUTtTQUNqUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCxpS0FBaUs7WUFDakssZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILG1KQUFtSjtZQUNuSix1S0FBdUs7U0FDdEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsc09BQXNPO1lBQ3RPLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZMQUE2TDtZQUM3TCxpUUFBaVE7WUFDalEsK1JBQStSO1NBQzlSO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsc0RBQXNEO1lBQ3RELGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksb1BBQW9QO1lBQ3BQLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxpTkFBaU47WUFDak4sb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUpBQWlKO1lBQ2pKLHNWQUFzVjtZQUN0ViwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SEFBNEg7WUFDNUgsZ0tBQWdLO1lBQ2hLLDBMQUEwTDtTQUN6TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSixvUUFBb1E7WUFDcFEsa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLDRSQUE0UjtZQUM1Uix3TUFBd007U0FDdk07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJJQUEySTtZQUMzSSxxT0FBcU87WUFDck8sd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0hBQXdIO1lBQ3hILG1SQUFtUjtZQUNuUixvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4RkFBOEY7WUFDOUYsMk5BQTJOO1lBQzNOLGtLQUFrSztTQUNqSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtLQUErSztZQUMvSyw0UkFBNFI7WUFDNVIsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0pBQWdKO1lBQ2hKLG9RQUFvUTtZQUNwUSxrTEFBa0w7U0FDakw7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx1REFBdUQ7WUFDdkQsaUJBQWlCO1lBQ2pCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0hBQStIO1lBQy9ILDROQUE0TjtZQUM1TiwwTEFBMEw7U0FDekw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SEFBOEg7WUFDOUgsZ01BQWdNO1lBQ2hNLDZMQUE2TDtTQUM1TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9IQUFvSDtZQUNwSCxzTUFBc007WUFDdE0sMExBQTBMO1NBQ3pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLDZQQUE2UDtZQUM3UCw4UEFBOFA7U0FDN1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpT0FBaU87WUFDak8sNFNBQTRTO1lBQzVTLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSxtUUFBbVE7WUFDblEsdVJBQXVSO1NBQ3RSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0ZBQStGO1lBQy9GLG9PQUFvTztZQUNwTyw4UEFBOFA7U0FDN1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSkFBa0o7WUFDbEoseVFBQXlRO1lBQ3pRLCtQQUErUDtTQUM5UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdHQUF3RztZQUN4Ryw4TkFBOE47WUFDOU4sNE1BQTRNO1NBQzNNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0hBQWdIO1lBQ2hILGlUQUFpVDtZQUNqVCwrUkFBK1I7U0FDOVI7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsZ0JBQWdCO1lBQ2hCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNHQUFzRztZQUN0Ryw4TUFBOE07WUFDOU0sNkhBQTZIO1NBQzVIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEtBQThLO1lBQzlLLGlQQUFpUDtZQUNqUCxnT0FBZ087U0FDL047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssaVFBQWlRO1lBQ2pRLGlPQUFpTztTQUNoTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRKQUE0SjtZQUM1SiwwUUFBMFE7WUFDMVEsNFBBQTRQO1NBQzNQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMklBQTJJO1lBQzNJLHVTQUF1UztZQUN2Uyx3UUFBd1E7U0FDdlE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvREFBb0Q7WUFDcEQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkhBQTZIO1lBQzdILDZQQUE2UDtZQUM3UCwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosNE5BQTROO1lBQzVOLDhOQUE4TjtTQUM3TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyw2UUFBNlE7WUFDN1EsMk9BQTJPO1NBQzFPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaURBQWlEO1lBQ2pELG9CQUFvQjtZQUNwQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosK09BQStPO1lBQy9PLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2Riw0TEFBNEw7WUFDNUwsME5BQTBOO1NBQ3pOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLHdSQUF3UjtZQUN4Uiw0UUFBNFE7U0FDM1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUkseVJBQXlSO1lBQ3pSLHVSQUF1UjtTQUN0UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZGQUE2RjtZQUM3RiwrSkFBK0o7WUFDL0osNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUdBQWlHO1lBQ2pHLHFKQUFxSjtZQUNySiw4SkFBOEo7U0FDN0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwscVNBQXFTO1lBQ3JTLDBTQUEwUztTQUN6UztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9EQUFvRDtZQUNwRCxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkhBQTJIO1lBQzNILHlOQUF5TjtZQUN6TiwwT0FBME87U0FDek87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osK01BQStNO1lBQy9NLGlPQUFpTztTQUNoTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxrT0FBa087WUFDbE8seU5BQXlOO1NBQ3hOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUdBQWlHO1lBQ2pHLHFMQUFxTDtZQUNyTCxzS0FBc0s7U0FDcks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SUFBd0k7WUFDeEksZ05BQWdOO1lBQ2hOLGtPQUFrTztTQUNqTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHVEQUF1RDtZQUN2RCxxQkFBcUI7WUFDckIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyRkFBMkY7WUFDM0YsaUhBQWlIO1lBQ2pILDJJQUEySTtTQUMxSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1HQUFtRztZQUNuRyxpTEFBaUw7WUFDakwseUhBQXlIO1NBQ3hIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLHFPQUFxTztZQUNyTyx1TUFBdU07U0FDdE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEsseVJBQXlSO1lBQ3pSLHlSQUF5UjtTQUN4UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSw4TUFBOE07WUFDOU0seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUVBQXlFO1lBQ3pFLGlLQUFpSztZQUNqSyxvSkFBb0o7U0FDbko7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwR0FBMEc7WUFDMUcsK01BQStNO1lBQy9NLGlOQUFpTjtTQUNoTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHFEQUFxRDtZQUNyRCxtQkFBbUI7WUFDbkIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsaUtBQWlLO1lBQ2pLLHFLQUFxSztTQUNwSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlHQUFpRztZQUNqRyxnS0FBZ0s7WUFDaEssNElBQTRJO1NBQzNJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEhBQTBIO1lBQzFILDBOQUEwTjtZQUMxTix3TEFBd0w7U0FDdkw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTkFBb047WUFDcE4sb1JBQW9SO1lBQ3BSLHVTQUF1UztTQUN0UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZIQUE2SDtZQUM3SCxvTEFBb0w7WUFDcEwsZ0xBQWdMO1NBQy9LO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLHdRQUF3UTtZQUN4USxnUEFBZ1A7U0FDL087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2TkFBNk47WUFDN04sb1VBQW9VO1lBQ3BVLHVSQUF1UjtTQUN0UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SywwSkFBMEo7WUFDMUosbUxBQW1MO1NBQ2xMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMscURBQXFEO1lBQ3JELGtCQUFrQjtZQUNsQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SkFBd0o7WUFDeEosME1BQTBNO1lBQzFNLDhMQUE4TDtTQUM3TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZFQUE2RTtZQUM3RSxzR0FBc0c7WUFDdEcsNkZBQTZGO1NBQzVGO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkxBQTZMO1lBQzdMLGtQQUFrUDtZQUNsUCwrTkFBK047U0FDOU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEkscUxBQXFMO1lBQ3JMLGdLQUFnSztTQUMvSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCx3S0FBd0s7WUFDeEssNkhBQTZIO1NBQzVIO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsMkRBQTJEO1lBQzNELG1CQUFtQjtZQUNuQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2S0FBNks7WUFDN0ssMlBBQTJQO1lBQzNQLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSx5U0FBeVM7WUFDelMscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0tBQXNLO1lBQ3RLLGlRQUFpUTtZQUNqUSx3TkFBd047U0FDdk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwsMlJBQTJSO1lBQzNSLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCw2UUFBNlE7WUFDN1EsOFFBQThRO1NBQzdRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUlBQXlJO1lBQ3pJLDBNQUEwTTtZQUMxTSxrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0ssd1BBQXdQO1lBQ3hQLHNOQUFzTjtTQUNyTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDZDQUE2QztZQUM3QyxrQkFBa0I7WUFDbEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0dBQXdHO1lBQ3hHLHNJQUFzSTtZQUN0SSxtS0FBbUs7U0FDbEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSEFBZ0g7WUFDaEgsNkxBQTZMO1lBQzdMLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZLQUE2SztZQUM3Syx3VEFBd1Q7WUFDeFQsMlBBQTJQO1NBQzFQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLDhOQUE4TjtZQUM5Tiw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SkFBeUo7WUFDekosNE9BQTRPO1lBQzVPLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSywwU0FBMFM7WUFDMVMsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0ZBQXdGO1lBQ3hGLDRKQUE0SjtZQUM1Siw2R0FBNkc7U0FDNUc7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxrREFBa0Q7WUFDbEQsbUJBQW1CO1lBQ25CLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSwrTUFBK007WUFDL00sOE1BQThNO1NBQzdNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0xBQXNMO1lBQ3RMLDBTQUEwUztZQUMxUyw0U0FBNFM7U0FDM1M7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssK1VBQStVO1lBQy9VLGdSQUFnUjtTQUMvUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2RixpS0FBaUs7WUFDakssZ0pBQWdKO1NBQy9JO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsc0RBQXNEO1lBQ3RELGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhMQUE4TDtZQUM5TCxnU0FBZ1M7WUFDaFMsNFFBQTRRO1NBQzNRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbWJBQW1iO1lBQ25iLDZqQkFBNmpCO1lBQzdqQix5akJBQXlqQjtTQUN4akI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5ZUFBeWU7WUFDemUsK3NCQUErc0I7WUFDL3NCLHFtQkFBcW1CO1NBQ3BtQjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxpQkFBaUI7WUFDakIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5UUFBeVE7WUFDelEsNFNBQTRTO1lBQzVTLDRRQUE0UTtTQUMzUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRlQUE0ZTtZQUM1ZSw0WUFBNFk7WUFDNVksZ1pBQWdaO1NBQy9ZO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbVBBQW1QO1lBQ25QLHdRQUF3UTtZQUN4USxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnbUJBQWdtQjtZQUNobUIsNmlCQUE2aUI7WUFDN2lCLDBnQkFBMGdCO1NBQ3pnQjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxpQkFBaUI7WUFDakIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qixpc0JBQWlzQjtZQUNqc0Isd29CQUF3b0I7WUFDeG9CLGtuQkFBa25CO1NBQ2puQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNRQUFzUTtZQUN0USw4UUFBOFE7WUFDOVEsNlBBQTZQO1NBQzVQO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMseURBQXlEO1lBQ3pELGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9kQUFvZDtZQUNwZCw4aEJBQThoQjtZQUM5aEIseWVBQXllO1NBQ3hlO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb1hBQW9YO1lBQ3BYLDRWQUE0VjtZQUM1VixnV0FBZ1c7U0FDL1Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1ZUFBdWU7WUFDdmUsbWVBQW1lO1lBQ25lLHVkQUF1ZDtTQUN0ZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9aQUFvWjtZQUNwWixpWEFBaVg7WUFDalgsNlZBQTZWO1NBQzVWO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsMkRBQTJEO1lBQzNELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0sscU9BQXFPO1lBQ3JPLDRNQUE0TTtTQUMzTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZMQUE2TDtZQUM3TCxxU0FBcVM7WUFDclMscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHFRQUFxUTtZQUNyUSx3TkFBd047U0FDdk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwseVBBQXlQO1lBQ3pQLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCxxUUFBcVE7WUFDclEsOFFBQThRO1NBQzdRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLHVNQUF1TTtZQUN2TSxrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0ssZ1BBQWdQO1lBQ2hQLGdOQUFnTjtTQUMvTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHdEQUF3RDtZQUN4RCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkdBQTJHO1lBQzNHLDRIQUE0SDtZQUM1SCwrSUFBK0k7U0FDOUk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosdVBBQXVQO1lBQ3ZQLDBQQUEwUDtTQUN6UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2Siw2T0FBNk87WUFDN08sNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLDBOQUEwTjtZQUMxTixvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsa01BQWtNO1lBQ2xNLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSwyWUFBMlk7WUFDM1ksbU1BQW1NO1NBQ2xNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsd0RBQXdEO1lBQ3hELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSEFBMEg7WUFDMUgsMktBQTJLO1lBQzNLLCtLQUErSztTQUM5SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxzVEFBc1Q7WUFDdFQsbVVBQW1VO1NBQ2xVO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOE5BQThOO1lBQzlOLHNPQUFzTztZQUN0TyxpU0FBaVM7U0FDaFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsMEpBQTBKO1lBQzFKLCtKQUErSjtTQUM5SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1HQUFtRztZQUNuRyxrSUFBa0k7WUFDbEksK0tBQStLO1NBQzlLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsMERBQTBEO1lBQzFELG9CQUFvQjtZQUNwQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUoscU5BQXFOO1lBQ3JOLHlNQUF5TTtTQUN4TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBNQUEwTTtZQUMxTSwwU0FBMFM7WUFDMVMscVVBQXFVO1NBQ3BVO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLHlQQUF5UDtZQUN6UCwwUEFBMFA7U0FDelA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxT0FBcU87WUFDck8sb1JBQW9SO1lBQ3BSLGlTQUFpUztTQUNoUztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxtQkFBbUI7WUFDbkIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SkFBd0o7WUFDeEoseUxBQXlMO1lBQ3pMLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCw4UUFBOFE7WUFDOVEsK1FBQStRO1NBQzlRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLHdRQUF3UTtZQUN4USxnUEFBZ1A7U0FDL087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TkFBNE47WUFDNU4sNFNBQTRTO1lBQzVTLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2Syw2VkFBNlY7WUFDN1YsbUxBQW1MO1NBQ2xMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELG1CQUFtQjtZQUNuQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSUFBaUk7WUFDakksc05BQXNOO1lBQ3ROLHlLQUF5SztTQUN4SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSywrU0FBK1M7WUFDL1MsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0pBQXNKO1lBQ3RKLGlQQUFpUDtZQUNqUCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0sseVNBQXlTO1lBQ3pTLDZRQUE2UTtTQUM1UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFKQUFxSjtZQUNySix5UkFBeVI7WUFDelIsc09BQXNPO1NBQ3JPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0xBQWdMO1lBQ2hMLCtUQUErVDtZQUMvVCx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxzQkFBc0I7WUFDdEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLG9PQUFvTztZQUNwTyx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SEFBd0g7WUFDeEgsbVJBQW1SO1lBQ25SLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5RiwyTkFBMk47WUFDM04sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0tBQStLO1lBQy9LLDJTQUEyUztZQUMzUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSkFBZ0o7WUFDaEosK1BBQStQO1lBQy9QLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdJQUF3STtZQUN4SSx5UUFBeVE7WUFDelEsd01BQXdNO1NBQ3ZNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsNkRBQTZEO1lBQzdELHdCQUF3QjtZQUN4Qix1QkFBdUI7U0FDdEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0csbU5BQW1OO1lBQ25OLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SywyUUFBMlE7WUFDM1EsdU9BQXVPO1NBQ3RPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLHFUQUFxVDtZQUNyVCwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SUFBeUk7WUFDekksK05BQStOO1lBQy9OLDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlJQUFpSTtZQUNqSSxnU0FBZ1M7WUFDaFMsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0pBQXNKO1lBQ3RKLDBSQUEwUjtZQUMxUix1TkFBdU47U0FDdE47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx3REFBd0Q7WUFDeEQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJHQUEyRztZQUMzRyw0SEFBNEg7WUFDNUgsK0lBQStJO1NBQzlJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLHVQQUF1UDtZQUN2UCwwUEFBMFA7U0FDelA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosNk9BQTZPO1lBQzdPLDhQQUE4UDtTQUM3UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SiwwTkFBME47WUFDMU4scVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0hBQStIO1lBQy9ILGtNQUFrTTtZQUNsTSwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksMllBQTJZO1lBQzNZLG1NQUFtTTtTQUNsTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHdEQUF3RDtZQUN4RCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0xBQXdMO1lBQ3hMLGlRQUFpUTtZQUNqUSx5UkFBeVI7U0FDeFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSEFBc0g7WUFDdEgsZ09BQWdPO1lBQ2hPLHdOQUF3TjtTQUN2TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlNQUFpTTtZQUNqTSxzT0FBc087WUFDdE8saVNBQWlTO1NBQ2hTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkhBQTZIO1lBQzdILDBKQUEwSjtZQUMxSiwrSkFBK0o7U0FDOUo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtR0FBbUc7WUFDbkcsa0lBQWtJO1lBQ2xJLCtLQUErSztTQUM5SztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDJEQUEyRDtZQUMzRCxzQkFBc0I7WUFDdEIscUJBQXFCO1NBQ3BCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0pBQWdKO1lBQ2hKLCtLQUErSztZQUMvSyw0UEFBNFA7U0FDM1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SUFBd0k7WUFDeEksa01BQWtNO1lBQ2xNLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFFQUFxRTtZQUNyRSxzR0FBc0c7WUFDdEcsa0dBQWtHO1NBQ2pHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLHNPQUFzTztZQUN0Tyx1UkFBdVI7U0FDdFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSUFBMEk7WUFDMUksdU1BQXVNO1lBQ3ZNLGdOQUFnTjtTQUMvTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSiwrUEFBK1A7WUFDL1AsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLHVRQUF1UTtZQUN2USx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssbVBBQW1QO1lBQ25QLDBUQUEwVDtTQUN6VDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLG1EQUFtRDtZQUNuRCxpQkFBaUI7WUFDakIsb0JBQW9CO1NBQ25CO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLDZOQUE2TjtZQUM3TiwwT0FBME87U0FDek87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUosNFFBQTRRO1lBQzVRLGdTQUFnUztTQUMvUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4Syx3VEFBd1Q7WUFDeFQsc1VBQXNVO1NBQ3JVO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLHdSQUF3UjtZQUN4UixxUkFBcVI7U0FDcFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSkFBbUo7WUFDbkosNE9BQTRPO1lBQzVPLG9PQUFvTztTQUNuTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCxnTkFBZ047WUFDaE4sNE1BQTRNO1NBQzNNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsa0RBQWtEO1lBQ2xELGtCQUFrQjtZQUNsQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsK09BQStPO1lBQy9PLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhIQUE4SDtZQUM5SCw0TEFBNEw7WUFDNUwsZ0xBQWdMO1NBQy9LO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU1BQW1NO1lBQ25NLHdSQUF3UjtZQUN4UixvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEsseVJBQXlSO1lBQ3pSLHVSQUF1UjtTQUN0UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJHQUEyRztZQUMzRywrSkFBK0o7WUFDL0osNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLDBPQUEwTztZQUMxTyxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosa05BQWtOO1lBQ2xOLHNOQUFzTjtTQUNyTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxvQkFBb0I7WUFDcEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUxBQXVMO1lBQ3ZMLHVRQUF1UTtZQUN2USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTkFBbU47WUFDbk4sNFJBQTRSO1lBQzVSLGtSQUFrUjtTQUNqUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSw4VEFBOFQ7WUFDOVQsa1FBQWtRO1NBQ2pRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsNkRBQTZEO1lBQzdELHNCQUFzQjtZQUN0Qix3QkFBd0I7U0FDdkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osdU9BQXVPO1lBQ3ZPLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCxvVkFBb1Y7WUFDcFYsbVRBQW1UO1NBQ2xUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0hBQW9IO1lBQ3BILHlOQUF5TjtZQUN6TixrTkFBa047U0FDak47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osd1NBQXdTO1lBQ3hTLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSwwT0FBME87WUFDMU8sNk5BQTZOO1NBQzVOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLDJPQUEyTztZQUMzTywyUUFBMlE7U0FDMVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2TEFBNkw7WUFDN0wsaVNBQWlTO1lBQ2pTLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSx5Y0FBeWM7WUFDemMsdU1BQXVNO1NBQ3RNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELHNCQUFzQjtZQUN0QixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksb09BQW9PO1lBQ3BPLHdPQUF3TztTQUN2TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxtUkFBbVI7WUFDblIsb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLDJOQUEyTjtZQUMzTixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0ssMlNBQTJTO1lBQzNTLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSiwrUEFBK1A7WUFDL1Asa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLHlRQUF5UTtZQUN6USx3TUFBd007U0FDdk07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx3REFBd0Q7WUFDeEQsZ0JBQWdCO1lBQ2hCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJHQUEyRztZQUMzRywrSUFBK0k7WUFDL0ksNEhBQTRIO1NBQzNIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLDBQQUEwUDtZQUMxUCx1UEFBdVA7U0FDdFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsZ1RBQWdUO1lBQ2hULGdSQUFnUjtTQUMvUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdMQUFnTDtZQUNoTCwwUkFBMFI7WUFDMVIsOFFBQThRO1NBQzdRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME1BQTBNO1lBQzFNLHNVQUFzVTtZQUN0VSwrU0FBK1M7U0FDOVM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4sNFlBQTRZO1lBQzVZLHFUQUFxVDtTQUNwVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtQQUFrUDtZQUNsUCxzUkFBc1I7WUFDdFIsb1FBQW9RO1NBQ25RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsNENBQTRDO1lBQzVDLGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcsa0tBQWtLO1lBQ2xLLHdJQUF3STtTQUN2STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SixzTkFBc047WUFDdE4sNk5BQTZOO1NBQzVOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME1BQTBNO1lBQzFNLHVSQUF1UjtZQUN2UixpUUFBaVE7U0FDaFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osMk1BQTJNO1lBQzNNLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxtT0FBbU87WUFDbk8sMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLHlMQUF5TDtZQUN6TCxpS0FBaUs7U0FDaEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TUFBdU07WUFDdk0sK1NBQStTO1lBQy9TLHdQQUF3UDtTQUN2UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHdEQUF3RDtZQUN4RCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEVBQThFO1lBQzlFLHdIQUF3SDtZQUN4SCx3R0FBd0c7U0FDdkc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SEFBOEg7WUFDOUgsd0pBQXdKO1lBQ3hKLG1JQUFtSTtTQUNsSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTiwwUkFBMFI7WUFDMVIsa1BBQWtQO1NBQ2pQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILHlJQUF5STtZQUN6SSxnSEFBZ0g7U0FDL0c7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSEFBbUg7WUFDbkgsc05BQXNOO1lBQ3ROLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVNQUF1TTtZQUN2TSx3UUFBd1E7WUFDeFEsZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLHFPQUFxTztZQUNyTyxvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssK05BQStOO1lBQy9OLGtNQUFrTTtTQUNqTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGlFQUFpRTtZQUNqRSxtQkFBbUI7WUFDbkIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLGlOQUFpTjtZQUNqTix3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TUFBeU07WUFDek0saVJBQWlSO1lBQ2pSLHVPQUF1TztTQUN0TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSxrTUFBa007WUFDbE0saUtBQWlLO1NBQ2hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILGtKQUFrSjtZQUNsSiw2S0FBNks7U0FDNUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sOFNBQThTO1lBQzlTLDhSQUE4UjtTQUM3UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSixzTUFBc007WUFDdE0saU1BQWlNO1NBQ2hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILGdMQUFnTDtZQUNoTCxzSEFBc0g7U0FDckg7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsaUJBQWlCO1lBQ2pCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUlBQWlJO1lBQ2pJLHNMQUFzTDtZQUN0TCxvTEFBb0w7U0FDbkw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsa1RBQWtUO1lBQ2xULDhTQUE4UztTQUM3UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRHQUE0RztZQUM1RyxzT0FBc087WUFDdE8sZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEtBQTRLO1lBQzVLLG1TQUFtUztZQUNuUyxnVEFBZ1Q7U0FDL1M7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywwREFBMEQ7WUFDMUQscUJBQXFCO1lBQ3JCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEhBQTBIO1lBQzFILGlJQUFpSTtZQUNqSSwwS0FBMEs7U0FDeks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsbVRBQW1UO1lBQ25ULDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSxnUEFBZ1A7WUFDaFAsME1BQTBNO1NBQ3pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU5BQWlOO1lBQ2pOLHVSQUF1UjtZQUN2UixnUUFBZ1E7U0FDL1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0sNlFBQTZRO1lBQzdRLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtMQUErTDtZQUMvTCxzUkFBc1I7WUFDdFIsaVFBQWlRO1NBQ2hRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMscURBQXFEO1lBQ3JELG1CQUFtQjtZQUNuQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssc1JBQXNSO1lBQ3RSLHFSQUFxUjtTQUNwUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBMQUEwTDtZQUMxTCxxU0FBcVM7WUFDclMsMlJBQTJSO1NBQzFSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLHlRQUF5UTtZQUN6USxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcsd0pBQXdKO1lBQ3hKLHdLQUF3SztTQUN2SztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGlEQUFpRDtZQUNqRCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEhBQTBIO1lBQzFILDhNQUE4TTtZQUM5TSxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosNFFBQTRRO1lBQzVRLG1QQUFtUDtTQUNsUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSwrUEFBK1A7WUFDL1Asb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNE1BQTRNO1lBQzVNLDBUQUEwVDtZQUMxVCx3VEFBd1Q7U0FDdlQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksOE1BQThNO1lBQzlNLDZOQUE2TjtTQUM1TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SyxrVEFBa1Q7WUFDbFQsc1FBQXNRO1NBQ3JRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0RBQStEO1lBQy9ELHVHQUF1RztZQUN2Ryx1R0FBdUc7U0FDdEc7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx3REFBd0Q7WUFDeEQsdUJBQXVCO1lBQ3ZCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZKQUE2SjtZQUM3SiwwT0FBME87WUFDMU8sNE5BQTROO1NBQzNOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0xBQXdMO1lBQ3hMLG9WQUFvVjtZQUNwVixtVEFBbVQ7U0FDbFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSEFBbUg7WUFDbkgseU5BQXlOO1lBQ3pOLGdOQUFnTjtTQUMvTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZKQUE2SjtZQUM3Six3U0FBd1M7WUFDeFMsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLDBPQUEwTztZQUMxTywrTkFBK047U0FDOU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssMk9BQTJPO1lBQzNPLDBRQUEwUTtTQUN6UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRMQUE0TDtZQUM1TCxpU0FBaVM7WUFDalMsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLHFPQUFxTztZQUNyTyx1TUFBdU07U0FDdE07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQywrQ0FBK0M7WUFDL0MscUJBQXFCO1lBQ3JCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRyx3T0FBd087WUFDeE8scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU1BQXlNO1lBQ3pNLG1NQUFtTTtZQUNuTSxvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSUFBcUk7WUFDckksMFFBQTBRO1lBQzFRLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1IQUFtSDtZQUNuSCx5U0FBeVM7WUFDelMsNlJBQTZSO1NBQzVSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLGtQQUFrUDtZQUNsUCx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSkFBZ0o7WUFDaEosa1JBQWtSO1lBQ2xSLDRRQUE0UTtTQUMzUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCw2T0FBNk87WUFDN08sMk5BQTJOO1NBQzFOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILGtHQUFrRztZQUNsRywrR0FBK0c7U0FDOUc7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx5REFBeUQ7WUFDekQsc0JBQXNCO1lBQ3RCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBJQUEwSTtZQUMxSSxxT0FBcU87WUFDck8sd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0hBQXdIO1lBQ3hILG1SQUFtUjtZQUNuUixvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssOFFBQThRO1lBQzlRLGlSQUFpUjtTQUNoUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVHQUF1RztZQUN2Ryx3UEFBd1A7WUFDeFAsa0pBQWtKO1NBQ2pKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLG9XQUFvVztZQUNwVyx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtRkFBbUY7WUFDbkYsb0tBQW9LO1lBQ3BLLGlIQUFpSDtTQUNoSDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxvQkFBb0I7WUFDcEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNE1BQTRNO1lBQzVNLDhRQUE4UTtZQUM5USwwUEFBMFA7U0FDelA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTUFBcU07WUFDck0saVJBQWlSO1lBQ2pSLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlOQUF5TjtZQUN6Tiw0UUFBNFE7WUFDNVEsNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNE9BQTRPO1lBQzVPLG1WQUFtVjtZQUNuViwwVUFBMFU7U0FDelU7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksb0lBQW9JO1lBQ3BJLG1LQUFtSztTQUNsSztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGlEQUFpRDtZQUNqRCxvQkFBb0I7WUFDcEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEZBQTRGO1lBQzVGLGdQQUFnUDtZQUNoUCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1UEFBdVA7WUFDdlAseUxBQXlMO1lBQ3pMLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSxvTUFBb007WUFDcE0sMktBQTJLO1NBQzFLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMseURBQXlEO1lBQ3pELHNCQUFzQjtZQUN0QixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsd1FBQXdRO1lBQ3hRLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9JQUFvSTtZQUNwSSw2TEFBNkw7WUFDN0wsc01BQXNNO1NBQ3JNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0pBQXNKO1lBQ3RKLDJNQUEyTTtZQUMzTSx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csa05BQWtOO1lBQ2xOLHlKQUF5SjtTQUN4SjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9EQUFvRDtZQUNwRCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDRMQUE0TDtZQUM1TCxnTEFBZ0w7U0FDL0s7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUssd1BBQXdQO1lBQ3hQLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSw2UEFBNlA7WUFDN1Asc09BQXNPO1NBQ3JPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk5BQTZOO1lBQzdOLHFTQUFxUztZQUNyUyw4UUFBOFE7U0FDN1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsK1FBQStRO1lBQy9RLDBKQUEwSjtTQUN6SjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDJEQUEyRDtZQUMzRCxvQkFBb0I7WUFDcEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsd0xBQXdMO1lBQ3hMLHNKQUFzSjtTQUNySjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZNQUE2TTtZQUM3TSxvUUFBb1E7WUFDcFEsaU5BQWlOO1NBQ2hOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0xBQXNMO1lBQ3RMLHVQQUF1UDtZQUN2UCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTkFBa047WUFDbE4sdVJBQXVSO1lBQ3ZSLG1RQUFtUTtTQUNsUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGlFQUFpRTtZQUNqRSx3QkFBd0I7WUFDeEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLCtQQUErUDtZQUMvUCxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0oseVFBQXlRO1lBQ3pRLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSywwUUFBMFE7WUFDMVEsNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHVSQUF1UjtZQUN2Uiw2UEFBNlA7U0FDNVA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywrREFBK0Q7WUFDL0Qsb0JBQW9CO1lBQ3BCLHVCQUF1QjtTQUN0QjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRyw0S0FBNEs7WUFDNUssa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLGdUQUFnVDtZQUNoVCw0UEFBNFA7U0FDM1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssMlJBQTJSO1lBQzNSLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxvVUFBb1U7WUFDcFUscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0xBQWtMO1lBQ2xMLGdXQUFnVztZQUNoVyw4UkFBOFI7U0FDN1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosK1NBQStTO1lBQy9TLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVHQUF1RztZQUN2RywyTUFBMk07WUFDM00sK0tBQStLO1NBQzlLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUlBQW1JO1lBQ25JLHNPQUFzTztZQUN0TywyTEFBMkw7U0FDMUw7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxtREFBbUQ7WUFDbkQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlMQUFpTDtZQUNqTCxtUUFBbVE7WUFDblEseU9BQXlPO1NBQ3hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDhPQUE4TztZQUM5TywyTkFBMk47U0FDMU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzTUFBc007WUFDdE0sdVJBQXVSO1lBQ3ZSLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlNQUF5TTtZQUN6TSxzUEFBc1A7WUFDdFAsOE9BQThPO1NBQzdPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILG9LQUFvSztZQUNwSyxzSUFBc0k7U0FDckk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4sMExBQTBMO1lBQzFMLDRMQUE0TDtTQUMzTDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHdEQUF3RDtZQUN4RCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0csbU1BQW1NO1lBQ25NLDhMQUE4TDtTQUM3TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNJQUFzSTtZQUN0SSwrT0FBK087WUFDL08sZ05BQWdOO1NBQy9NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUVBQXFFO1lBQ3JFLDZJQUE2STtZQUM3SSxvSEFBb0g7U0FDbkg7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwsZ1JBQWdSO1lBQ2hSLGlSQUFpUjtTQUNoUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSx5UkFBeVI7WUFDelIsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILDZPQUE2TztZQUM3Tyx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsc1JBQXNSO1lBQ3RSLHFRQUFxUTtTQUNwUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxvQkFBb0I7WUFDcEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosd05BQXdOO1lBQ3hOLHFOQUFxTjtTQUNwTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRLQUE0SztZQUM1Syx1VUFBdVU7WUFDdlUsbVJBQW1SO1NBQ2xSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa05BQWtOO1lBQ2xOLG9SQUFvUjtZQUNwUix1U0FBdVM7U0FDdFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosdU5BQXVOO1lBQ3ZOLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCxxTEFBcUw7WUFDckwseUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUdBQW1HO1lBQ25HLDZKQUE2SjtZQUM3SixrSkFBa0o7U0FDako7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw2Q0FBNkM7WUFDN0MsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZGQUE2RjtZQUM3RiwrSkFBK0o7WUFDL0osNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLDBPQUEwTztZQUMxTyxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsK01BQStNO1lBQy9NLHNOQUFzTjtTQUNyTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaURBQWlEO1lBQ2pELGdCQUFnQjtZQUNoQixZQUFZO1NBQ1g7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEssZ05BQWdOO1lBQ2hOLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4SyxpT0FBaU87WUFDak8sNk5BQTZOO1NBQzVOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHdPQUF3TztZQUN4TywrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osdVJBQXVSO1lBQ3ZSLHlQQUF5UDtTQUN4UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SywrUEFBK1A7WUFDL1AsMlBBQTJQO1NBQzFQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLG1NQUFtTTtZQUNuTSx5S0FBeUs7U0FDeEs7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxrREFBa0Q7WUFDbEQsb0JBQW9CO1lBQ3BCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBLQUEwSztZQUMxSyxzTUFBc007WUFDdE0sOExBQThMO1NBQzdMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLHNRQUFzUTtZQUN0USxnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssdU5BQXVOO1lBQ3ZOLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlKQUF5SjtZQUN6SiwyTUFBMk07WUFDM00scUxBQXFMO1NBQ3BMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0pBQWtKO1lBQ2xKLHVPQUF1TztZQUN2TyxvT0FBb087U0FDbk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsaUxBQWlMO1lBQ2pMLHdOQUF3TjtTQUN2TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1EQUFtRDtZQUNuRCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUlBQWlJO1lBQ2pJLHFNQUFxTTtZQUNyTSxxTUFBcU07U0FDcE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTUFBaU07WUFDak0sNlFBQTZRO1lBQzdRLDJPQUEyTztTQUMxTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyx5UEFBeVA7WUFDelAsc05BQXNOO1NBQ3JOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxrREFBa0Q7WUFDbEQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSxpTEFBaUw7WUFDakwsbUxBQW1MO1NBQ2xMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0xBQW9MO1lBQ3BMLG1SQUFtUjtZQUNuUix3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosZ09BQWdPO1lBQ2hPLG1MQUFtTDtTQUNsTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSiwyTUFBMk07WUFDM00sK0xBQStMO1NBQzlMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNE1BQTRNO1lBQzVNLDhPQUE4TztZQUM5TyxnTUFBZ007U0FDL0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEssdU5BQXVOO1lBQ3ZOLG9OQUFvTjtTQUNuTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyx5TUFBeU07WUFDek0sbU1BQW1NO1NBQ2xNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixrTUFBa007WUFDbE0sK0xBQStMO1NBQzlMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLHFMQUFxTDtZQUNyTCxrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsOFFBQThRO1lBQzlRLHNRQUFzUTtTQUNyUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVNQUF1TTtZQUN2TSwwU0FBMFM7WUFDMVMsbVJBQW1SO1NBQ2xSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLCtIQUErSDtZQUMvSCx3TEFBd0w7U0FDdkw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSkFBbUo7WUFDbkosa09BQWtPO1lBQ2xPLHdOQUF3TjtTQUN2TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9EQUFvRDtZQUNwRCxtQkFBbUI7WUFDbkIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLDhQQUE4UDtZQUM5UCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrTUFBK007WUFDL00sbVNBQW1TO1lBQ25TLGtRQUFrUTtTQUNqUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1QQUFtUDtZQUNuUCw0UkFBNFI7WUFDNVIseVNBQXlTO1NBQ3hTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQscUJBQXFCO1lBQ3JCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0lBQWdJO1lBQ2hJLGtNQUFrTTtZQUNsTSw4TEFBOEw7U0FDN0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4sd1JBQXdSO1lBQ3hSLDBSQUEwUjtTQUN6UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSyw0UUFBNFE7WUFDNVEsMk9BQTJPO1NBQzFPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLGdSQUFnUjtZQUNoUiw4UUFBOFE7U0FDN1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSkFBcUo7WUFDckosd1RBQXdUO1lBQ3hULDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdOQUFnTjtZQUNoTixzUkFBc1I7WUFDdFIsb1FBQW9RO1NBQ25RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMseURBQXlEO1lBQ3pELG1CQUFtQjtZQUNuQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSEFBa0g7WUFDbEgsK0tBQStLO1lBQy9LLG9LQUFvSztTQUNuSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSxxTkFBcU47WUFDck4sNktBQTZLO1NBQzVLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEtBQTBLO1lBQzFLLDBQQUEwUDtZQUMxUCxxTkFBcU47U0FDcE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osK09BQStPO1lBQy9PLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9EQUFvRDtZQUNwRCxpRUFBaUU7WUFDakUscUVBQXFFO1NBQ3BFO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOExBQThMO1lBQzlMLDBRQUEwUTtZQUMxUSxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEssNFBBQTRQO1lBQzVQLG9QQUFvUDtTQUNuUDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDBEQUEwRDtZQUMxRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSEFBb0g7WUFDcEgsc0lBQXNJO1lBQ3RJLHVJQUF1STtTQUN0STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlFQUF5RTtZQUN6RSwwSUFBMEk7WUFDMUksMkdBQTJHO1NBQzFHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLHlOQUF5TjtZQUN6TiwrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0ssZ1JBQWdSO1lBQ2hSLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtQQUErUDtZQUMvUCwyUEFBMlA7WUFDM1AsaVFBQWlRO1NBQ2hRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEZBQTBGO1lBQzFGLCtJQUErSTtZQUMvSSw0SUFBNEk7U0FDM0k7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyx3REFBd0Q7WUFDeEQsZ0JBQWdCO1lBQ2hCLG1CQUFtQjtTQUNsQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCw4SEFBOEg7WUFDOUgsdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLDRMQUE0TDtZQUM1TCxtTUFBbU07U0FDbE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSUFBb0k7WUFDcEksOExBQThMO1lBQzlMLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCxnTkFBZ047WUFDaE4sMk5BQTJOO1NBQzFOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLGlRQUFpUTtZQUNqUSx5UEFBeVA7U0FDeFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TkFBOE47WUFDOU4sMFBBQTBQO1lBQzFQLDZRQUE2UTtTQUM1UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRGQUE0RjtZQUM1Riw2SEFBNkg7WUFDN0gsK0lBQStJO1NBQzlJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUdBQXlHO1lBQ3pHLHlMQUF5TDtZQUN6TCx3UEFBd1A7U0FDdlA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2TkFBNk47WUFDN04sb1FBQW9RO1lBQ3BRLHFSQUFxUjtTQUNwUjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLG9EQUFvRDtZQUNwRCxxQkFBcUI7WUFDckIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosa0lBQWtJO1lBQ2xJLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSx1VkFBdVY7WUFDdlYsNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLGdQQUFnUDtZQUNoUCwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtT0FBbU87WUFDbk8sMlJBQTJSO1lBQzNSLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFNQUFxTTtZQUNyTSw2UUFBNlE7WUFDN1EsZ1FBQWdRO1NBQy9QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK05BQStOO1lBQy9OLG9SQUFvUjtZQUNwUixrUUFBa1E7U0FDalE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvREFBb0Q7WUFDcEQsb0JBQW9CO1lBQ3BCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9LQUFvSztZQUNwSyw4TkFBOE47WUFDOU4saU1BQWlNO1NBQ2hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd09BQXdPO1lBQ3hPLDZTQUE2UztZQUM3UyxnUUFBZ1E7U0FDL1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsaVZBQWlWO1lBQ2pWLHlSQUF5UjtTQUN4UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSiw2TUFBNk07WUFDN00scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUdBQXVHO1lBQ3ZHLGdMQUFnTDtZQUNoTCxxS0FBcUs7U0FDcEs7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywyREFBMkQ7WUFDM0Qsa0JBQWtCO1lBQ2xCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlKQUFpSjtZQUNqSiwrT0FBK087WUFDL08sa09BQWtPO1NBQ2pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLDhOQUE4TjtZQUM5Tiw0S0FBNEs7U0FDM0s7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SEFBd0g7WUFDeEgsd0lBQXdJO1lBQ3hJLDBHQUEwRztTQUN6RztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSw2T0FBNk87WUFDN08sdU5BQXVOO1NBQ3ROO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLCtOQUErTjtZQUMvTixrTUFBa007U0FDak07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw4Q0FBOEM7WUFDOUMsaUJBQWlCO1lBQ2pCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyw4TUFBOE07WUFDOU0sZ0xBQWdMO1NBQy9LO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLCtOQUErTjtZQUMvTixrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTUFBZ007WUFDaE0sb1FBQW9RO1lBQ3BRLHNPQUFzTztTQUNyTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZOQUE2TjtZQUM3Tiw0UkFBNFI7WUFDNVIsOFFBQThRO1NBQzdRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLHlOQUF5TjtZQUN6TixtT0FBbU87U0FDbE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsK1JBQStSO1lBQy9SLG1OQUFtTjtTQUNsTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDBEQUEwRDtZQUMxRCxvQkFBb0I7WUFDcEIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILCtKQUErSjtZQUMvSiw0SkFBNEo7U0FDM0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TUFBdU07WUFDdk0seU9BQXlPO1lBQ3pPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZKQUE2SjtZQUM3SixrTkFBa047WUFDbE4sc05BQXNOO1NBQ3JOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxtREFBbUQ7WUFDbkQsb0JBQW9CO1lBQ3BCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlIQUFpSDtZQUNqSCwyTEFBMkw7WUFDM0wsbUtBQW1LO1NBQ2xLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLHFQQUFxUDtZQUNyUCxpUEFBaVA7U0FDaFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csdUxBQXVMO1lBQ3ZMLDZKQUE2SjtTQUM1SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdHQUF3RztZQUN4RywrSUFBK0k7WUFDL0ksNkpBQTZKO1NBQzVKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUxBQXVMO1lBQ3ZMLGdRQUFnUTtZQUNoUSxpT0FBaU87U0FDaE87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxpRUFBaUU7WUFDakUsa0JBQWtCO1lBQ2xCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLCtPQUErTztZQUMvTyw2TEFBNkw7U0FDNUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TUFBdU07WUFDdk0sZ1BBQWdQO1lBQ2hQLDJNQUEyTTtTQUMxTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSx1SEFBdUg7WUFDdkgsOEhBQThIO1NBQzdIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLDJPQUEyTztZQUMzTyxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sMFNBQTBTO1lBQzFTLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlJQUFpSTtZQUNqSSw2SkFBNko7WUFDN0osc0xBQXNMO1NBQ3JMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsMERBQTBEO1lBQzFELHdCQUF3QjtZQUN4QixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVOQUF1TjtZQUN2Tix3TUFBd007WUFDeE0sd05BQXdOO1NBQ3ZOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLGlSQUFpUjtZQUNqUixrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsd1FBQXdRO1lBQ3hRLDJPQUEyTztTQUMxTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1NQUFtTTtZQUNuTSxxTUFBcU07WUFDck0sc09BQXNPO1NBQ3JPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLHVQQUF1UDtZQUN2UCx3T0FBd087U0FDdk87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx5REFBeUQ7WUFDekQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdMQUFnTDtZQUNoTCx1TkFBdU47WUFDdk4seUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK01BQStNO1lBQy9NLCtTQUErUztZQUMvUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0csaVBBQWlQO1lBQ2pQLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlKQUFpSjtZQUNqSixrTkFBa047WUFDbE4sd0xBQXdMO1NBQ3ZMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLHdRQUF3UTtZQUN4USw0TkFBNE47U0FDM047S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvREFBb0Q7WUFDcEQsdUJBQXVCO1lBQ3ZCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUZBQXFGO1lBQ3JGLG9JQUFvSTtZQUNwSSw2SEFBNkg7U0FDNUg7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpR0FBaUc7WUFDakcsNEpBQTRKO1lBQzVKLHlHQUF5RztTQUN4RztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZPQUE2TztZQUM3TyxzUUFBc1E7WUFDdFEsK09BQStPO1NBQzlPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLGlPQUFpTztZQUNqTywwTkFBME47U0FDek47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTUFBZ007WUFDaE0sK09BQStPO1lBQy9PLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdOQUF3TjtZQUN4TixtUUFBbVE7WUFDblEsb1JBQW9SO1NBQ25SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU5BQXVOO1lBQ3ZOLGtSQUFrUjtZQUNsUixzTUFBc007U0FDck07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyw2Q0FBNkM7WUFDN0MscUJBQXFCO1lBQ3JCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSixxTkFBcU47WUFDck4sa05BQWtOO1NBQ2pOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNlBBQTZQO1lBQzdQLG9UQUFvVDtZQUNwVCxxVEFBcVQ7U0FDcFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDaksseVJBQXlSO1lBQ3pSLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSxtT0FBbU87WUFDbk8sc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMseURBQXlEO1lBQ3pELHNCQUFzQjtZQUN0QixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TEFBdUw7WUFDdkwsK01BQStNO1lBQy9NLHlNQUF5TTtTQUN4TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSixzT0FBc087WUFDdE8sOE5BQThOO1NBQzdOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa05BQWtOO1lBQ2xOLG9TQUFvUztZQUNwUyw4U0FBOFM7U0FDN1M7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4seVNBQXlTO1lBQ3pTLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSw2TUFBNk07WUFDN00sbUtBQW1LO1NBQ2xLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksa09BQWtPO1lBQ2xPLHNMQUFzTDtTQUNyTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFOQUFxTjtZQUNyTix5U0FBeVM7WUFDelMsZ1BBQWdQO1NBQy9PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLDBOQUEwTjtZQUMxTix5TUFBeU07U0FDeE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SEFBNEg7WUFDNUgseUpBQXlKO1lBQ3pKLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCxpSkFBaUo7WUFDakosK0hBQStIO1NBQzlIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNExBQTRMO1lBQzVMLHVSQUF1UjtZQUN2Uiw0UUFBNFE7U0FDM1E7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx5REFBeUQ7WUFDekQsa0JBQWtCO1lBQ2xCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9LQUFvSztZQUNwSyxzTkFBc047WUFDdE4seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLDJOQUEyTjtZQUMzTixrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osbU9BQW1PO1lBQ25PLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBJQUEwSTtZQUMxSSxnTEFBZ0w7WUFDaEwsc0tBQXNLO1NBQ3JLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0xBQXdMO1lBQ3hMLDBNQUEwTTtZQUMxTSxnT0FBZ087U0FDL047S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxpREFBaUQ7WUFDakQsZ0JBQWdCO1lBQ2hCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlMQUFpTDtZQUNqTCxtWUFBbVk7WUFDblkscU9BQXFPO1NBQ3BPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLDJOQUEyTjtZQUMzTixnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osMlBBQTJQO1lBQzNQLHlPQUF5TztTQUN4TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdMQUFnTDtZQUNoTCxrTkFBa047WUFDbE4sbU5BQW1OO1NBQ2xOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQywrREFBK0Q7WUFDL0Qsa0JBQWtCO1lBQ2xCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSyxrT0FBa087WUFDbE8seU5BQXlOO1NBQ3hOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK01BQStNO1lBQy9NLDhRQUE4UTtZQUM5USxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzT0FBc087WUFDdE8sa1JBQWtSO1lBQ2xSLHlTQUF5UztTQUN4UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdMQUF3TDtZQUN4TCxzUEFBc1A7WUFDdFAsK05BQStOO1NBQzlOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkRBQTJEO1lBQzNELHVHQUF1RztZQUN2RyxxR0FBcUc7U0FDcEc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5S0FBeUs7WUFDekssa0xBQWtMO1lBQ2xMLHdNQUF3TTtTQUN2TTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDZDQUE2QztZQUM3QyxnQkFBZ0I7WUFDaEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMklBQTJJO1lBQzNJLHNOQUFzTjtZQUN0TixxTUFBcU07U0FDcE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osNk1BQTZNO1lBQzdNLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlOQUF5TjtZQUN6Tix3VEFBd1Q7WUFDeFQsK1JBQStSO1NBQzlSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxtREFBbUQ7WUFDbkQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdMQUFnTDtZQUNoTCwwTUFBME07WUFDMU0scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLDJOQUEyTjtZQUMzTixvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwT0FBME87WUFDMU8seVFBQXlRO1lBQ3pRLHNRQUFzUTtTQUNyUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHVEQUF1RDtZQUN2RCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osd09BQXdPO1lBQ3hPLDRMQUE0TDtTQUMzTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBOQUEwTjtZQUMxTixzU0FBc1M7WUFDdFMsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILHNJQUFzSTtZQUN0SSwySUFBMkk7U0FDMUk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtUEFBbVA7WUFDblAsMFJBQTBSO1lBQzFSLG9RQUFvUTtTQUNuUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLDJDQUEyQztZQUMzQyxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNklBQTZJO1lBQzdJLHVRQUF1UTtZQUN2USx3UEFBd1A7U0FDdlA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssNFZBQTRWO1lBQzVWLDJRQUEyUTtTQUMxUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlNQUFpTTtZQUNqTSw0VEFBNFQ7WUFDNVQsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLDRSQUE0UjtZQUM1Uix5T0FBeU87U0FDeE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksNFJBQTRSO1lBQzVSLHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4SyxxUUFBcVE7WUFDclEsME9BQTBPO1NBQ3pPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsa0RBQWtEO1lBQ2xELG9CQUFvQjtZQUNwQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSEFBb0g7WUFDcEgsK09BQStPO1lBQy9PLHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdMQUFnTDtZQUNoTCwwVkFBMFY7WUFDMVYsMlFBQTJRO1NBQzFRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc1BBQXNQO1lBQ3RQLHVWQUF1VjtZQUN2VixrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrUEFBK1A7WUFDL1AsK1NBQStTO1lBQy9TLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBNQUEwTTtZQUMxTSxtUkFBbVI7WUFDblIsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLDZWQUE2VjtZQUM3Viw0S0FBNEs7U0FDM0s7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxpRUFBaUU7WUFDakUsa0JBQWtCO1lBQ2xCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCw0UkFBNFI7WUFDNVIsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLCtPQUErTztZQUMvTyw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsNlFBQTZRO1lBQzdRLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCx5UEFBeVA7WUFDelAsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLDBOQUEwTjtZQUMxTiw4T0FBOE87U0FDN087S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvREFBb0Q7WUFDcEQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SiwwS0FBMEs7WUFDMUssNEtBQTRLO1NBQzNLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU9BQXFPO1lBQ3JPLHlRQUF5UTtZQUN6USwwUUFBMFE7U0FDelE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TUFBOE07WUFDOU0sbVBBQW1QO1lBQ25QLHdQQUF3UDtTQUN2UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDBEQUEwRDtZQUMxRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osc0xBQXNMO1lBQ3RMLCtLQUErSztTQUM5SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdNQUF3TTtZQUN4TSxnT0FBZ087WUFDaE8sbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ05BQWdOO1lBQ2hOLHdQQUF3UDtZQUN4UCwwUEFBMFA7U0FDelA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTUFBaU07WUFDak0sd1FBQXdRO1lBQ3hRLHNQQUFzUDtTQUNyUDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDZDQUE2QztZQUM3QyxnQkFBZ0I7WUFDaEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMklBQTJJO1lBQzNJLHNOQUFzTjtZQUN0TixxTUFBcU07U0FDcE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osNk1BQTZNO1lBQzdNLHdNQUF3TTtTQUN2TTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLDhDQUE4QztZQUM5QyxnQkFBZ0I7WUFDaEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkxBQTJMO1lBQzNMLHdQQUF3UDtZQUN4UCx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzUUFBc1E7WUFDdFEsNlJBQTZSO1lBQzdSLHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdPQUF3TztZQUN4TyxxUkFBcVI7WUFDclIsZ1FBQWdRO1NBQy9QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk9BQTJPO1lBQzNPLHNSQUFzUjtZQUN0Uiw2UUFBNlE7U0FDNVE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx1REFBdUQ7WUFDdkQsaUJBQWlCO1lBQ2pCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0tBQStLO1lBQy9LLHVQQUF1UDtZQUN2UCw0TUFBNE07U0FDM007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvT0FBb087WUFDcE8saVVBQWlVO1lBQ2pVLCtVQUErVTtTQUM5VTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdMQUF3TDtZQUN4TCx3UUFBd1E7WUFDeFEsdVNBQXVTO1NBQ3RTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa01BQWtNO1lBQ2xNLHNTQUFzUztZQUN0UyxxVEFBcVQ7U0FDcFQ7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvREFBb0Q7WUFDcEQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVMQUF1TDtZQUN2TCxrTkFBa047WUFDbE4sa05BQWtOO1NBQ2pOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd01BQXdNO1lBQ3hNLCtPQUErTztZQUMvTywrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTkFBME47WUFDMU4sa1ZBQWtWO1lBQ2xWLDRRQUE0UTtTQUMzUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSixnT0FBZ087WUFDaE8sc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMscURBQXFEO1lBQ3JELGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtOQUFrTjtZQUNsTixzT0FBc087WUFDdE8sdU9BQXVPO1NBQ3RPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscVBBQXFQO1lBQ3JQLDJTQUEyUztZQUMzUyw4UEFBOFA7U0FDN1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpT0FBaU87WUFDak8sbVRBQW1UO1lBQ25ULDBSQUEwUjtTQUN6UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVOQUF1TjtZQUN2TixpUkFBaVI7WUFDalIsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU9BQW1PO1lBQ25PLGlUQUFpVDtZQUNqVCw4UkFBOFI7U0FDN1I7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw2Q0FBNkM7WUFDN0MsZ0JBQWdCO1lBQ2hCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSxzTkFBc047WUFDdE4scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU9BQW1PO1lBQ25PLDBNQUEwTTtZQUMxTSx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssb1RBQW9UO1lBQ3BULCtSQUErUjtTQUM5UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTixzUkFBc1I7WUFDdFIsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUdBQWlHO1lBQ2pHLDhKQUE4SjtZQUM5SixxSkFBcUo7U0FDcEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEsscU9BQXFPO1lBQ3JPLGdPQUFnTztTQUMvTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLHVEQUF1RDtZQUN2RCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwscU1BQXFNO1lBQ3JNLDRMQUE0TDtTQUMzTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixtTkFBbU47WUFDbk4scU5BQXFOO1NBQ3BOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLCtRQUErUTtZQUMvUSxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtUUFBbVE7WUFDblEsb1VBQW9VO1lBQ3BVLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVMQUF1TDtZQUN2TCxnU0FBZ1M7WUFDaFMsc1FBQXNRO1NBQ3JRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsbURBQW1EO1lBQ25ELG9CQUFvQjtZQUNwQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzTEFBc0w7WUFDdEwsdVBBQXVQO1lBQ3ZQLDBPQUEwTztTQUN6TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtQQUFrUDtZQUNsUCx5V0FBeVc7WUFDelcsbVRBQW1UO1NBQ2xUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLDhRQUE4UTtZQUM5USw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyUkFBMlI7WUFDM1Isb1dBQW9XO1lBQ3BXLDhTQUE4UztTQUM3UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhQQUE4UDtZQUM5UCwyU0FBMlM7WUFDM1Msd1NBQXdTO1NBQ3ZTO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsOERBQThEO1lBQzlELHVCQUF1QjtZQUN2QixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwseU9BQXlPO1lBQ3pPLDhQQUE4UDtTQUM3UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdPQUFnTztZQUNoTyxpU0FBaVM7WUFDalMscVBBQXFQO1NBQ3BQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU1BQW1NO1lBQ25NLDJSQUEyUjtZQUMzUix5UUFBeVE7U0FDeFE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyxtREFBbUQ7WUFDbkQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNENBQTRDO1lBQzVDLGdGQUFnRjtZQUNoRiwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TEFBdUw7WUFDdkwseVBBQXlQO1lBQ3pQLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTix5U0FBeVM7WUFDelMsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkxBQTZMO1lBQzdMLHVSQUF1UjtZQUN2UixpUUFBaVE7U0FDaFE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxpREFBaUQ7WUFDakQsbUJBQW1CO1lBQ25CLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyw2TUFBNk07WUFDN00scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLHdRQUF3UTtZQUN4USw0UUFBNFE7U0FDM1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0UEFBNFA7WUFDNVAscVBBQXFQO1lBQ3JQLHVPQUF1TztTQUN0TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBNQUEwTTtZQUMxTSw4UUFBOFE7WUFDOVEsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLGtQQUFrUDtZQUNsUCxzT0FBc087U0FDck87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyxvREFBb0Q7WUFDcEQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSiw2T0FBNk87WUFDN08seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLGlTQUFpUztZQUNqUyx5UEFBeVA7U0FDeFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSUFBZ0k7WUFDaEksc05BQXNOO1lBQ3ROLDZLQUE2SztTQUM1SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBLQUEwSztZQUMxSyw0UkFBNFI7WUFDNVIscU5BQXFOO1NBQ3BOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk5BQTZOO1lBQzdOLDRRQUE0UTtZQUM1USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwseVFBQXlRO1lBQ3pRLG1QQUFtUDtTQUNsUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlLQUF5SztZQUN6Syw0UEFBNFA7WUFDNVAsb1BBQW9QO1NBQ25QO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsbURBQW1EO1lBQ25ELGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2Six5T0FBeU87WUFDek8sNE1BQTRNO1NBQzNNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLG1QQUFtUDtZQUNuUCw0TkFBNE47U0FDM047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwsaVJBQWlSO1lBQ2pSLDhPQUE4TztTQUM3TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCwrTkFBK047WUFDL04sb09BQW9PO1NBQ25PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa09BQWtPO1lBQ2xPLHNTQUFzUztZQUN0Uyw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSUFBZ0k7WUFDaEksOE5BQThOO1lBQzlOLGdQQUFnUDtTQUMvTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SiwrT0FBK087WUFDL08seVBBQXlQO1NBQ3hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHlPQUF5TztZQUN6Tyx3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsMlVBQTJVO1lBQzNVLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSxnTkFBZ047WUFDaE4sMFJBQTBSO1NBQ3pSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0pBQStKO1lBQy9KLGlUQUFpVDtZQUNqVCxpT0FBaU87U0FDaE87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyxvREFBb0Q7WUFDcEQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4Siw2TkFBNk47WUFDN04sK0pBQStKO1NBQzlKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU9BQXFPO1lBQ3JPLDZYQUE2WDtZQUM3WCw2UUFBNlE7U0FDNVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUoscU5BQXFOO1lBQ3JOLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyxzTUFBc007WUFDdE0sb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLHFRQUFxUTtZQUNyUSxvUEFBb1A7U0FDblA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3UEFBd1A7WUFDeFAsaVNBQWlTO1lBQ2pTLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhNQUE4TTtZQUM5TSx5UUFBeVE7WUFDelEsdU5BQXVOO1NBQ3ROO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsMkRBQTJEO1lBQzNELG9CQUFvQjtZQUNwQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJGQUEyRjtZQUMzRixtSUFBbUk7WUFDbkksb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0xBQWtMO1lBQ2xMLHFQQUFxUDtZQUNyUCxtT0FBbU87U0FDbE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosMFJBQTBSO1lBQzFSLDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9LQUFvSztZQUNwSywwTUFBME07WUFDMU0sa05BQWtOO1NBQ2pOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0xBQW9MO1lBQ3BMLGtRQUFrUTtZQUNsUSxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsb0dBQW9HO1lBQ3BHLDhGQUE4RjtTQUM3RjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLDZDQUE2QztZQUM3QyxnQkFBZ0I7WUFDaEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLG1NQUFtTTtZQUNuTSw4TEFBOEw7U0FDN0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3T0FBd087WUFDeE8scVZBQXFWO1lBQ3JWLDhSQUE4UjtTQUM3UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTiwwUUFBMFE7WUFDMVEsNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ01BQWdNO1lBQ2hNLGlSQUFpUjtZQUNqUixxUkFBcVI7U0FDcFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUssZ01BQWdNO1lBQ2hNLHdOQUF3TjtTQUN2TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHlEQUF5RDtZQUN6RCxtQkFBbUI7WUFDbkIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTkFBbU47WUFDbk4saVNBQWlTO1lBQ2pTLDRRQUE0UTtTQUMzUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlNQUFpTTtZQUNqTSxxTUFBcU07WUFDck0sNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLG1OQUFtTjtZQUNuTixxTkFBcU47U0FDcE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsK1FBQStRO1lBQy9RLG9RQUFvUTtTQUNuUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlKQUF5SjtZQUN6Siw0S0FBNEs7WUFDNUssc0pBQXNKO1NBQ3JKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0hBQW9IO1lBQ3BILDJKQUEySjtZQUMzSixnSEFBZ0g7U0FDL0c7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsZ1NBQWdTO1lBQ2hTLHNRQUFzUTtTQUNyUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGtEQUFrRDtZQUNsRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEZBQTBGO1lBQzFGLCtLQUErSztZQUMvSyxvS0FBb0s7U0FDbks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksNlJBQTZSO1lBQzdSLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSixpUkFBaVI7WUFDalIsbU9BQW1PO1NBQ2xPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsd0RBQXdEO1lBQ3hELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSEFBMEg7WUFDMUgsOE1BQThNO1lBQzlNLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSiwwUUFBMFE7WUFDMVEsbVBBQW1QO1NBQ2xQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMENBQTBDO1lBQzFDLGlHQUFpRztZQUNqRyw4RkFBOEY7U0FDN0Y7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxvREFBb0Q7WUFDcEQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILHdNQUF3TTtZQUN4TSwyTEFBMkw7U0FDMUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwseVJBQXlSO1lBQ3pSLG9SQUFvUjtTQUNuUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSxrTkFBa047WUFDbE4sNk5BQTZOO1NBQzVOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMscURBQXFEO1lBQ3JELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyx5UUFBeVE7WUFDelEsNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLDBSQUEwUjtZQUMxUiwwUkFBMFI7U0FDelI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnREFBZ0Q7WUFDaEQsMEVBQTBFO1lBQzFFLG1FQUFtRTtTQUNsRTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLCtDQUErQztZQUMvQyxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SkFBd0o7WUFDeEosa09BQWtPO1lBQ2xPLGlQQUFpUDtTQUNoUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRFQUE0RTtZQUM1RSwrSEFBK0g7WUFDL0gsNEhBQTRIO1NBQzNIO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsbURBQW1EO1lBQ25ELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSiwwUkFBMFI7WUFDMVIsa09BQWtPO1NBQ2pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLG9TQUFvUztZQUNwUywyUkFBMlI7U0FDMVI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsbVNBQW1TO1lBQ25TLHdSQUF3UjtTQUN2UjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG9EQUFvRDtZQUNwRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssNFFBQTRRO1lBQzVRLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCwwUkFBMFI7WUFDMVIsMFJBQTBSO1NBQ3pSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0RBQWdEO1lBQ2hELDBFQUEwRTtZQUMxRSxtRUFBbUU7U0FDbEU7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxxREFBcUQ7WUFDckQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdIQUFnSDtZQUNoSCx1TUFBdU07WUFDdk0sZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLDhUQUE4VDtZQUM5VCx3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSkFBcUo7WUFDckosOFNBQThTO1lBQzlTLG9SQUFvUjtTQUNuUjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGtEQUFrRDtZQUNsRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLDBTQUEwUztZQUMxUyxvUUFBb1E7U0FDblE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyxxREFBcUQ7WUFDckQseUJBQXlCO1lBQ3pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZKQUE2SjtZQUM3Six3UUFBd1E7WUFDeFEsd05BQXdOO1NBQ3ZOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0lBQW9JO1lBQ3BJLCtMQUErTDtZQUMvTCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsMlNBQTJTO1lBQzNTLDZSQUE2UjtTQUM1UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SixzUEFBc1A7WUFDdFAsb05BQW9OO1NBQ25OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0xBQWdMO1lBQ2hMLGtTQUFrUztZQUNsUyw4UkFBOFI7U0FDN1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSEFBc0g7WUFDdEgsdU1BQXVNO1lBQ3ZNLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhFQUE4RTtZQUM5RSxvS0FBb0s7WUFDcEssb0pBQW9KO1NBQ25KO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLHdTQUF3UztZQUN4UyxvUUFBb1E7U0FDblE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDBCQUEwQjtZQUM1QyxrREFBa0Q7WUFDbEQsaUJBQWlCO1lBQ2pCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCw4TUFBOE07WUFDOU0sa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLDRRQUE0UTtZQUM1USxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksK1BBQStQO1lBQy9QLG9QQUFvUDtTQUNuUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSywwUEFBMFA7WUFDMVAsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0tBQStLO1lBQy9LLDBSQUEwUjtZQUMxUixpU0FBaVM7U0FDaFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssa1RBQWtUO1lBQ2xULHNRQUFzUTtTQUNyUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtEQUErRDtZQUMvRCxzR0FBc0c7WUFDdEcsdUdBQXVHO1NBQ3RHO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsb0RBQW9EO1lBQ3BELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csa09BQWtPO1lBQ2xPLHNMQUFzTDtTQUNyTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRKQUE0SjtZQUM1Six5U0FBeVM7WUFDelMsZ1BBQWdQO1NBQy9PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLDBOQUEwTjtZQUMxTix5TUFBeU07U0FDeE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksd1NBQXdTO1lBQ3hTLHlTQUF5UztTQUN4UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSix3UkFBd1I7WUFDeFIsMlFBQTJRO1NBQzFRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsa0RBQWtEO1lBQ2xELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsaUtBQWlLO1lBQ2pLLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNMQUFzTDtZQUN0TCw2U0FBNlM7WUFDN1MsMFNBQTBTO1NBQ3pTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLGtSQUFrUjtZQUNsUix1UEFBdVA7U0FDdFA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxtREFBbUQ7WUFDbkQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLHlPQUF5TztZQUN6TywyTEFBMkw7U0FDMUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2S0FBNks7WUFDN0ssbU9BQW1PO1lBQ25PLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdGQUF3RjtZQUN4RixzS0FBc0s7WUFDdEssK0lBQStJO1NBQzlJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsNENBQTRDO1lBQzVDLGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlIQUFpSDtZQUNqSCw0S0FBNEs7WUFDNUssc0pBQXNKO1NBQ3JKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDZTQUE2UztZQUM3UyxxUEFBcVA7U0FDcFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0sseVFBQXlRO1lBQ3pRLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhFQUE4RTtZQUM5RSxvTEFBb0w7WUFDcEwsaUpBQWlKO1NBQ2hKO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsNkNBQTZDO1lBQzdDLGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1HQUFtRztZQUNuRyxvTUFBb007WUFDcE0saUxBQWlMO1NBQ2hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUlBQW1JO1lBQ25JLG9QQUFvUDtZQUNwUCxnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsdU5BQXVOO1lBQ3ZOLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdGQUFnRjtZQUNoRixtVEFBbVQ7WUFDblQsa0pBQWtKO1NBQ2pKO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsa0RBQWtEO1lBQ2xELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TEFBNEw7WUFDNUwsb1NBQW9TO1lBQ3BTLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxpUUFBaVE7WUFDalEsd1FBQXdRO1NBQ3ZRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLHVRQUF1UTtZQUN2USwyU0FBMlM7U0FDMVM7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQywrQ0FBK0M7WUFDL0MsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixzUUFBc1E7WUFDdFEsNE5BQTROO1NBQzNOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLDRRQUE0UTtZQUM1USx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrTEFBK0w7WUFDL0wscVVBQXFVO1lBQ3JVLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSw2T0FBNk87WUFDN08sdU9BQXVPO1NBQ3RPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsbURBQW1EO1lBQ25ELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCw2TkFBNk47WUFDN04sK01BQStNO1NBQzlNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkpBQTZKO1lBQzdKLGdUQUFnVDtZQUNoVCw4UkFBOFI7U0FDN1I7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyxnREFBZ0Q7WUFDaEQsbUJBQW1CO1lBQ25CLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0tBQXNLO1lBQ3RLLDJTQUEyUztZQUMzUyw4UUFBOFE7U0FDN1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SUFBNkk7WUFDN0ksME1BQTBNO1lBQzFNLDRMQUE0TDtTQUMzTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSixrTUFBa007WUFDbE0scU5BQXFOO1NBQ3BOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLHdRQUF3UTtZQUN4USxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sOFJBQThSO1lBQzlSLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSiw4UUFBOFE7WUFDOVEsc1FBQXNRO1NBQ3JRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywwQkFBMEI7WUFDNUMsMkRBQTJEO1lBQzNELGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRIQUE0SDtZQUM1SCwwTEFBMEw7WUFDMUwsNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc01BQXNNO1lBQ3RNLHdQQUF3UDtZQUN4UCx1VEFBdVQ7U0FDdFQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5S0FBeUs7WUFDekssbVNBQW1TO1lBQ25TLHVTQUF1UztTQUN0UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtGQUErRjtZQUMvRix5TEFBeUw7WUFDekwsZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0pBQWtKO1lBQ2xKLDhSQUE4UjtZQUM5UiwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0ssNFRBQTRUO1lBQzVULDJTQUEyUztTQUMxUztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG1EQUFtRDtZQUNuRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsbUxBQW1MO1lBQ25MLGlJQUFpSTtTQUNoSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtEQUErRDtZQUMvRCxnSEFBZ0g7WUFDaEgsbUdBQW1HO1NBQ2xHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLDhPQUE4TztZQUM5TyxvT0FBb087U0FDbk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsc1JBQXNSO1lBQ3RSLGlSQUFpUjtTQUNoUjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG9EQUFvRDtZQUNwRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SkFBeUo7WUFDekosZ1FBQWdRO1lBQ2hRLDROQUE0TjtTQUMzTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxxVEFBcVQ7WUFDclQsd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0RBQStEO1lBQy9ELGtIQUFrSDtZQUNsSCwrRkFBK0Y7U0FDOUY7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxzREFBc0Q7WUFDdEQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdJQUF3STtZQUN4SSxvUEFBb1A7WUFDcFAsNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLG1SQUFtUjtZQUNuUixtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzRkFBc0Y7WUFDdEYsb0lBQW9JO1lBQ3BJLDJJQUEySTtTQUMxSTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGtEQUFrRDtZQUNsRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLGlRQUFpUTtZQUNqUSwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSUFBb0k7WUFDcEksNE9BQTRPO1lBQzVPLDJOQUEyTjtTQUMxTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9LQUFvSztZQUNwSyxpUkFBaVI7WUFDalIsZ1FBQWdRO1NBQy9QO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsb0RBQW9EO1lBQ3BELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhIQUE4SDtZQUM5SCxrS0FBa0s7WUFDbEssd0xBQXdMO1NBQ3ZMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLG1JQUFtSTtZQUNuSSxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0RUFBNEU7WUFDNUUsbVBBQW1QO1lBQ25QLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxvVEFBb1Q7WUFDcFQsNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEtBQTBLO1lBQzFLLDZRQUE2UTtZQUM3USw0U0FBNFM7U0FDM1M7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssMlFBQTJRO1lBQzNRLHNRQUFzUTtTQUNyUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGlEQUFpRDtZQUNqRCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLDJOQUEyTjtZQUMzTix1TUFBdU07U0FDdE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTkFBaU47WUFDak4saVNBQWlTO1lBQ2pTLGtUQUFrVDtTQUNqVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9HQUFvRztZQUNwRyxtSUFBbUk7WUFDbkksb01BQW9NO1NBQ25NO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsa0RBQWtEO1lBQ2xELGlCQUFpQjtZQUNqQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksMk5BQTJOO1lBQzNOLHVNQUF1TTtTQUN0TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtNQUErTTtZQUMvTSxnU0FBZ1M7WUFDaFMsa1RBQWtUO1NBQ2pUO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsb0RBQW9EO1lBQ3BELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9HQUFvRztZQUNwRyxtSUFBbUk7WUFDbkksb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0lBQStJO1lBQy9JLG1QQUFtUDtZQUNuUCxtT0FBbU87U0FDbE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SEFBeUg7WUFDekgsaVJBQWlSO1lBQ2pSLDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCx5TUFBeU07WUFDek0sa05BQWtOO1NBQ2pOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMseURBQXlEO1lBQ3pELG9CQUFvQjtZQUNwQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcseUlBQXlJO1lBQ3pJLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhLQUE4SztZQUM5Syw0UEFBNFA7WUFDNVAsZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLHlTQUF5UztZQUN6UyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssbVFBQW1RO1lBQ25RLHVRQUF1UTtTQUN0UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCxnTkFBZ047WUFDaE4sNE5BQTROO1NBQzNOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrQkFBa0I7WUFDcEMsbURBQW1EO1lBQ25ELG9CQUFvQjtZQUNwQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvRUFBb0U7WUFDcEUsZ0pBQWdKO1lBQ2hKLDZIQUE2SDtTQUM1SDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCx3UEFBd1A7WUFDeFAseUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0xBQWtMO1lBQ2xMLHNSQUFzUjtZQUN0UixvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEsscVNBQXFTO1lBQ3JTLDhQQUE4UDtTQUM3UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCw2VUFBNlU7WUFDN1UsOFJBQThSO1NBQzdSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLGdQQUFnUDtZQUNoUCxpUEFBaVA7U0FDaFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUsscVBBQXFQO1lBQ3JQLDRPQUE0TztTQUMzTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLDJEQUEyRDtZQUMzRCxrQkFBa0I7WUFDbEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSUFBc0k7WUFDdEksOExBQThMO1lBQzlMLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZLQUE2SztZQUM3SyxpUkFBaVI7WUFDalIscU9BQXFPO1NBQ3BPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLG1RQUFtUTtZQUNuUSxxT0FBcU87U0FDcE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUoscVNBQXFTO1lBQ3JTLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlJQUFpSTtZQUNqSSxzT0FBc087WUFDdE8sbVBBQW1QO1NBQ2xQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUdBQWlHO1lBQ2pHLDJNQUEyTTtZQUMzTSw0S0FBNEs7U0FDM0s7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxvREFBb0Q7WUFDcEQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0lBQStJO1lBQy9JLG1QQUFtUDtZQUNuUCxtT0FBbU87U0FDbE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SEFBeUg7WUFDekgsMFJBQTBSO1lBQzFSLDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCwwTUFBME07WUFDMU0sa05BQWtOO1NBQ2pOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUlBQXlJO1lBQ3pJLGtRQUFrUTtZQUNsUSxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrRUFBK0U7WUFDL0UsdUdBQXVHO1lBQ3ZHLDhGQUE4RjtTQUM3RjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGtEQUFrRDtZQUNsRCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSUFBMEk7WUFDMUkseUxBQXlMO1lBQ3pMLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2Siw0UUFBNFE7WUFDNVEsK1FBQStRO1NBQzlRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ01BQWdNO1lBQ2hNLDBTQUEwUztZQUMxUyxnU0FBZ1M7U0FDL1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0oscVFBQXFRO1lBQ3JRLHdPQUF3TztTQUN2TztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG1EQUFtRDtZQUNuRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkpBQTZKO1lBQzdKLGlPQUFpTztZQUNqTyw4TUFBOE07U0FDN007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUoscVNBQXFTO1lBQ3JTLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFHQUFxRztZQUNyRyxzTUFBc007WUFDdE0sNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUZBQXFGO1lBQ3JGLGlLQUFpSztZQUNqSyx3SkFBd0o7U0FDdko7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssd1FBQXdRO1lBQ3hRLDhQQUE4UDtTQUM3UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG1EQUFtRDtZQUNuRCxnQkFBZ0I7WUFDaEIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkdBQTZHO1lBQzdHLHFNQUFxTTtZQUNyTSxxTUFBcU07U0FDcE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4S0FBOEs7WUFDOUssNlFBQTZRO1lBQzdRLDJPQUEyTztTQUMxTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSixxUEFBcVA7WUFDclAsc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsbURBQW1EO1lBQ25ELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4R0FBOEc7WUFDOUcsOEtBQThLO1lBQzlLLCtKQUErSjtTQUM5SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFFQUFxRTtZQUNyRSxxS0FBcUs7WUFDckssdUhBQXVIO1NBQ3RIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0pBQStKO1lBQy9KLG1QQUFtUDtZQUNuUCxnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosMFBBQTBQO1lBQzFQLGdRQUFnUTtTQUMvUDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLHlEQUF5RDtZQUN6RCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUoscVFBQXFRO1lBQ3JRLG9QQUFvUDtTQUNuUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCw0VUFBNFU7WUFDNVUseVFBQXlRO1NBQ3hRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUdBQXVHO1lBQ3ZHLHlRQUF5UTtZQUN6USx1TkFBdU47U0FDdE47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyw2Q0FBNkM7WUFDN0MsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5Riw4TEFBOEw7WUFDOUwsaUtBQWlLO1NBQ2hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLDhRQUE4UTtZQUM5USx3UEFBd1A7U0FDdlA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyxvREFBb0Q7WUFDcEQsa0JBQWtCO1lBQ2xCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0hBQWtIO1lBQ2xILGdMQUFnTDtZQUNoTCwrS0FBK0s7U0FDOUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSkFBaUo7WUFDakosMlBBQTJQO1lBQzNQLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyw2TUFBNk07WUFDN00sd05BQXdOO1NBQ3ZOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLGtTQUFrUztZQUNsUyxzUEFBc1A7U0FDclA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyx3REFBd0Q7WUFDeEQsbUJBQW1CO1lBQ25CLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUlBQWlJO1lBQ2pJLDZNQUE2TTtZQUM3TSxrTkFBa047U0FDak47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsc1JBQXNSO1lBQ3RSLGdSQUFnUjtTQUMvUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRHQUE0RztZQUM1RyxzT0FBc087WUFDdE8sOE5BQThOO1NBQzdOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEtBQTRLO1lBQzVLLGlTQUFpUztZQUNqUyw4U0FBOFM7U0FDN1M7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDBCQUEwQjtZQUM1QyxvREFBb0Q7WUFDcEQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSx1TkFBdU47WUFDdk4seUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLCtTQUErUztZQUMvUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosaVBBQWlQO1lBQ2pQLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlEQUF5RDtZQUN6RCx1R0FBdUc7WUFDdkcsK0ZBQStGO1NBQzlGO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrQkFBa0I7WUFDcEMsNkRBQTZEO1lBQzdELHdCQUF3QjtZQUN4QixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0csa05BQWtOO1lBQ2xOLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0Syx5UUFBeVE7WUFDelEsdU9BQXVPO1NBQ3RPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLHdRQUF3UTtZQUN4USxvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxS0FBcUs7WUFDckssMlFBQTJRO1lBQzNRLHFSQUFxUjtTQUNwUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNIQUFzSDtZQUN0SCwrUEFBK1A7WUFDL1AseU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLHdUQUF3VDtZQUN4VCxnUEFBZ1A7U0FDL087S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDBCQUEwQjtZQUM1QyxpREFBaUQ7WUFDakQsb0JBQW9CO1lBQ3BCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUZBQXVGO1lBQ3ZGLHVLQUF1SztZQUN2Syx5S0FBeUs7U0FDeEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssbVJBQW1SO1lBQ25SLGlQQUFpUDtTQUNoUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSyxnVEFBZ1Q7WUFDaFQscVBBQXFQO1NBQ3BQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0tBQStLO1lBQy9LLHlRQUF5UTtZQUN6USxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvR0FBb0c7WUFDcEcsZ09BQWdPO1lBQ2hPLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2RiwrRUFBK0U7WUFDL0UsdUlBQXVJO1NBQ3RJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrQkFBa0I7WUFDcEMseURBQXlEO1lBQ3pELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsMEtBQTBLO1lBQzFLLG9MQUFvTDtTQUNuTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1KQUFtSjtZQUNuSiwrU0FBK1M7WUFDL1MsNFBBQTRQO1NBQzNQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDBQQUEwUDtZQUMxUCxxUUFBcVE7U0FDcFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxS0FBcUs7WUFDckssK1ZBQStWO1lBQy9WLHFRQUFxUTtTQUNwUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLHlEQUF5RDtZQUN6RCxtQkFBbUI7WUFDbkIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnR0FBZ0c7WUFDaEcsMklBQTJJO1lBQzNJLDZMQUE2TDtTQUM1TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxnT0FBZ087WUFDaE8sdVNBQXVTO1NBQ3RTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNklBQTZJO1lBQzdJLG9PQUFvTztZQUNwTywwTkFBME47U0FDek47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUssd1JBQXdSO1lBQ3hSLGtRQUFrUTtTQUNqUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtKQUFrSjtZQUNsSixxUUFBcVE7WUFDclEsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILHdQQUF3UDtZQUN4UCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsc1JBQXNSO1lBQ3RSLG9RQUFvUTtTQUNuUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLDREQUE0RDtZQUM1RCxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkhBQTZIO1lBQzdILG1PQUFtTztZQUNuTyxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosb05BQW9OO1lBQ3BOLDhOQUE4TjtTQUM3TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyw0UUFBNFE7WUFDNVEsZ1BBQWdQO1NBQy9PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILDBNQUEwTTtZQUMxTSxnTUFBZ007U0FDL0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssaVVBQWlVO1lBQ2pVLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFKQUFxSjtZQUNySiw2TUFBNk07WUFDN00sa05BQWtOO1NBQ2pOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrQkFBa0I7WUFDcEMsdURBQXVEO1lBQ3ZELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsNEtBQTRLO1lBQzVLLG9MQUFvTDtTQUNuTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9KQUFvSjtZQUNwSiwrU0FBK1M7WUFDL1MsNFBBQTRQO1NBQzNQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDBSQUEwUjtZQUMxUixxUUFBcVE7U0FDcFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxS0FBcUs7WUFDckssb1VBQW9VO1lBQ3BVLHFRQUFxUTtTQUNwUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLDREQUE0RDtZQUM1RCxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkhBQTZIO1lBQzdILG1PQUFtTztZQUNuTyxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosb05BQW9OO1lBQ3BOLDhOQUE4TjtTQUM3TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyw0UUFBNFE7WUFDNVEsZ1BBQWdQO1NBQy9PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILDBNQUEwTTtZQUMxTSxnTUFBZ007U0FDL0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssaVVBQWlVO1lBQ2pVLHdSQUF3UjtTQUN2UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFKQUFxSjtZQUNySiw2TUFBNk07WUFDN00sa05BQWtOO1NBQ2pOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrQkFBa0I7WUFDcEMsaURBQWlEO1lBQ2pELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsdVFBQXVRO1lBQ3ZRLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxzU0FBc1M7WUFDdFMseVFBQXlRO1NBQ3hRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbURBQW1EO1lBQ25ELG1IQUFtSDtZQUNuSCxzRkFBc0Y7U0FDckY7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxzREFBc0Q7WUFDdEQsb0JBQW9CO1lBQ3BCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdFQUF3RTtZQUN4RSx5SUFBeUk7WUFDekksNEhBQTRIO1NBQzNIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEtBQThLO1lBQzlLLCtQQUErUDtZQUMvUCxnT0FBZ087U0FDL047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssK1FBQStRO1lBQy9RLGlPQUFpTztTQUNoTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1IQUFtSDtZQUNuSCxrTEFBa0w7WUFDbEwsb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEdBQTBHO1lBQzFHLHlOQUF5TjtZQUN6TixpTUFBaU07U0FDaE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyS0FBMks7WUFDM0ssNFFBQTRRO1lBQzVRLDZSQUE2UjtTQUM1UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtOQUFrTjtZQUNsTixvVkFBb1Y7WUFDcFYsNlNBQTZTO1NBQzVTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLG1NQUFtTTtZQUNuTSxxTkFBcU47U0FDcE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1RkFBdUY7WUFDdkYsZ0xBQWdMO1lBQ2hMLHlLQUF5SztTQUN4SztLQUNBO0NBQ0EsQ0FBQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRGVjbGFyZUthdGhvbGlrb25BcnJheS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL21vZHVsZXMvRGVjbGFyZUthdGhvbGlrb25BcnJheS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjLENBQUMsZUFBZSxHQUFHO0lBQy9CO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDBEQUEwRDtZQUM1RSxtRUFBbUU7WUFDbkUsa0JBQWtCO1lBQ2xCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSw4TUFBOE07WUFDOU0sa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0xBQStMO1lBQy9MLHVRQUF1UTtZQUN2USxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsOFBBQThQO1lBQzlQLG9QQUFvUDtTQUNuUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZOQUE2TjtZQUM3TixzUEFBc1A7WUFDdFAsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU9BQXlPO1lBQ3pPLG9SQUFvUjtZQUNwUixpU0FBaVM7U0FDaFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTkFBb047WUFDcE4sNlNBQTZTO1lBQzdTLHNRQUFzUTtTQUNyUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1GQUFtRjtZQUNuRixzR0FBc0c7WUFDdEcsdUdBQXVHO1NBQ3RHO0tBQ0E7SUFDRDtRQUNJO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx5QkFBeUI7WUFDM0MseURBQXlEO1lBQ3pELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJwQkFBMnBCO1lBQzNwQiw2cUJBQTZxQjtZQUM3cUIsNm1CQUE2bUI7U0FDNW1CO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd2hCQUF3aEI7WUFDeGhCLHV0QkFBdXRCO1lBQ3Z0Qix3akJBQXdqQjtTQUN2akI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzZkFBc2Y7WUFDdGYsaWpCQUFpakI7WUFDampCLGtiQUFrYjtTQUNqYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtmQUFrZjtZQUNsZix5akJBQXlqQjtZQUN6akIsOGZBQThmO1NBQzdmO0tBQ0o7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsa0VBQWtFO1lBQ2xFLG9CQUFvQjtZQUNwQixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnZUFBZ2U7WUFDaGUsOGNBQThjO1lBQzljLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSx1SkFBdUo7WUFDdkosRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU9BQXVPO1lBQ3ZPLGtNQUFrTTtZQUNsTSxFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtZEFBbWQ7WUFDbmQsa2dCQUFrZ0I7WUFDbGdCLEVBQUU7U0FDRDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUNBQWlDO1lBQ25ELG1FQUFtRTtZQUNuRSx5QkFBeUI7WUFDekIsSUFBSTtTQUNIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa1dBQWtXO1lBQ2xXLHVTQUF1UztZQUN2UyxFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnT0FBZ087WUFDaE8sMk1BQTJNO1lBQzNNLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdYQUF3WDtZQUN4WCwwWUFBMFk7WUFDMVksRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsbUVBQW1FO1lBQ25FLDJCQUEyQjtZQUMzQixvQkFBb0I7U0FDbkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrM0JBQWszQjtZQUNsM0IsKzlCQUErOUI7WUFDLzlCLEVBQUU7U0FDRDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHFFQUFxRTtZQUNyRSxxQkFBcUI7WUFDckIsb0JBQW9CO1NBQ25CO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkhBQTZIO1lBQzdILHFLQUFxSztZQUNySyxnS0FBZ0s7U0FDL0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2S0FBNks7WUFDN0ssa09BQWtPO1lBQ2xPLDBLQUEwSztTQUN6SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCxzUEFBc1A7WUFDdFAsbU5BQW1OO1NBQ2xOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNE1BQTRNO1lBQzVNLDhQQUE4UDtZQUM5UCxpUEFBaVA7U0FDaFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TUFBOE07WUFDOU0sbVFBQW1RO1lBQ25RLDRPQUE0TztTQUMzTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMkNBQTJDO1lBQzdELGtFQUFrRTtZQUNsRSxrQkFBa0I7WUFDbEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNktBQTZLO1lBQzdLLDJQQUEyUDtZQUMzUCw4TUFBOE07U0FDN007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0seVNBQXlTO1lBQ3pTLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SyxpUUFBaVE7WUFDalEsd05BQXdOO1NBQ3ZOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUxBQXlMO1lBQ3pMLDJSQUEyUjtZQUMzUiw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsNlFBQTZRO1lBQzdRLDhRQUE4UTtTQUM3UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSwwTUFBME07WUFDMU0sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLHdQQUF3UDtZQUN4UCxzTkFBc047U0FDck47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDZCQUE2QjtZQUMvQyxvREFBb0Q7WUFDcEQsbUJBQW1CO1lBQ25CLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCwrT0FBK087WUFDL08seUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILDRMQUE0TDtZQUM1TCx3TkFBd047U0FDdk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTUFBbU07WUFDbk0sd1JBQXdSO1lBQ3hSLG9RQUFvUTtTQUNuUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4Syx5UkFBeVI7WUFDelIsdVJBQXVSO1NBQ3RSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkdBQTJHO1lBQzNHLCtKQUErSjtZQUMvSiw0SkFBNEo7U0FDM0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsME9BQTBPO1lBQzFPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixrTkFBa047WUFDbE4sc05BQXNOO1NBQ3JOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx1QkFBdUI7WUFDekMsd0VBQXdFO1lBQ3hFLHlCQUF5QjtZQUN6Qix3QkFBd0I7U0FDdkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUosK1BBQStQO1lBQy9QLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSix5UUFBeVE7WUFDelEsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLHlRQUF5UTtZQUN6USwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzS0FBc0s7WUFDdEssdVJBQXVSO1lBQ3ZSLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCw0SkFBNEo7WUFDNUosdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILHVMQUF1TDtZQUN2TCw2SkFBNko7U0FDNUo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssNE9BQTRPO1lBQzVPLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxvS0FBb0s7WUFDcEssMElBQTBJO1NBQ3pJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUNBQWlDO1lBQ2pDLG9CQUFvQjtZQUNwQixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsbVJBQW1SO1lBQ25SLDRLQUE0SztTQUMzSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVIQUF1SDtZQUN2SCx1SkFBdUo7WUFDdkosc0pBQXNKO1NBQ3JKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUlBQXFJO1lBQ3JJLHVRQUF1UTtZQUN2USw2TkFBNk47U0FDNU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsaU1BQWlNO1lBQ2pNLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSyxrUkFBa1I7WUFDbFIsOE9BQThPO1NBQzdPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0hBQW9IO1lBQ3BILG9NQUFvTTtZQUNwTSw4SkFBOEo7U0FDN0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SEFBNEg7WUFDNUgsNktBQTZLO1lBQzdLLHNIQUFzSDtTQUNySDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGtFQUFrRTtZQUNsRSxxQkFBcUI7WUFDckIsb0JBQW9CO1NBQ25CO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0ZBQXNGO1lBQ3RGLG9JQUFvSTtZQUNwSSwwR0FBMEc7U0FDekc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SUFBeUk7WUFDekkscUxBQXFMO1lBQ3JMLDRMQUE0TDtTQUMzTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSw4TUFBOE07WUFDOU0sNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLG1UQUFtVDtZQUNuVCxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUosd1FBQXdRO1lBQ3hRLDROQUE0TjtTQUMzTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlHQUF5RztZQUN6Ryx5TEFBeUw7WUFDekwscUxBQXFMO1NBQ3BMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLHVUQUF1VDtZQUN2VCxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSUFBK0k7WUFDL0kscVBBQXFQO1lBQ3JQLHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZGQUE2RjtZQUM3Riw2SEFBNkg7WUFDN0gsNEdBQTRHO1NBQzNHO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0VBQW9FO1lBQ3BFLGtCQUFrQjtZQUNsQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksOE1BQThNO1lBQzlNLGtMQUFrTDtTQUNqTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlNQUF5TTtZQUN6TSwyUUFBMlE7WUFDM1EsbVBBQW1QO1NBQ2xQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDhQQUE4UDtZQUM5UCxvUEFBb1A7U0FDblA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDhCQUE4QjtZQUNoRCx3REFBd0Q7WUFDeEQsZ0JBQWdCO1lBQ2hCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBNQUEwTTtZQUMxTSwrUUFBK1E7WUFDL1Esd1BBQXdQO1NBQ3ZQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU1BQXFNO1lBQ3JNLDZRQUE2UTtZQUM3USxrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TkFBeU47WUFDek4sOFFBQThRO1lBQzlRLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1HQUFtRztZQUNuRyxvSkFBb0o7WUFDcEosMElBQTBJO1NBQ3pJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLGtNQUFrTTtZQUNsTSxpTUFBaU07U0FDaE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0T0FBNE87WUFDNU8sNFFBQTRRO1lBQzVRLG1TQUFtUztTQUNsUztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlNQUFpTTtZQUNqTSx1T0FBdU87WUFDdk8sNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLGdTQUFnUztZQUNoUyxnUkFBZ1I7U0FDL1E7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxzRUFBc0U7WUFDdEUseUJBQXlCO1lBQ3pCLHdCQUF3QjtTQUN2QjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdJQUF3STtZQUN4SSxvTkFBb047WUFDcE4seUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0lBQWdJO1lBQ2hJLDBMQUEwTDtZQUMxTCwyTEFBMkw7U0FDMUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsb1BBQW9QO1lBQ3BQLHNQQUFzUDtTQUNyUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlMQUFpTDtZQUNqTCxtT0FBbU87WUFDbk8sdU1BQXVNO1NBQ3RNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDhRQUE4UTtZQUM5USxpTUFBaU07U0FDaE07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDhCQUE4QjtZQUNoRCx3REFBd0Q7WUFDeEQsc0JBQXNCO1lBQ3RCLHNCQUFzQjtTQUNyQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSxrTkFBa047WUFDbE4sNkxBQTZMO1NBQzVMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU1BQXlNO1lBQ3pNLHlRQUF5UTtZQUN6USwyTUFBMk07U0FDMU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosZ0pBQWdKO1lBQ2hKLHdLQUF3SztTQUN2SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtLQUErSztZQUMvSyxzTkFBc047WUFDdE4sd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLHNOQUFzTjtZQUN0TixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTEFBMkw7WUFDM0wsaVBBQWlQO1lBQ2pQLHNQQUFzUDtTQUNyUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtNQUErTTtZQUMvTSxtUkFBbVI7WUFDblIsc01BQXNNO1NBQ3JNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxxQ0FBcUM7WUFDdkQsc0RBQXNEO1lBQ3RELGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssMk1BQTJNO1lBQzNNLG1NQUFtTTtTQUNsTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1GQUFtRjtZQUNuRix1SEFBdUg7WUFDdkgsNkZBQTZGO1NBQzVGO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLGlOQUFpTjtZQUNqTiwyTkFBMk47U0FDMU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnUUFBZ1E7WUFDaFEsaVBBQWlQO1lBQ2pQLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZLQUE2SztZQUM3Syx1TkFBdU47WUFDdk4sNk1BQTZNO1NBQzVNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseU5BQXlOO1lBQ3pOLCtPQUErTztZQUMvTyxvT0FBb087U0FDbk87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyw0REFBNEQ7WUFDNUQsdUJBQXVCO1lBQ3ZCLHFCQUFxQjtTQUNwQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyx5UkFBeVI7WUFDelIsMlBBQTJQO1NBQzFQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEtBQTRLO1lBQzVLLGlSQUFpUjtZQUNqUiwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtR0FBbUc7WUFDbkcsd0tBQXdLO1lBQ3hLLHVKQUF1SjtTQUN0SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhHQUE4RztZQUM5Ryw2TkFBNk47WUFDN04sMkpBQTJKO1NBQzFKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0xBQXdMO1lBQ3hMLHdRQUF3UTtZQUN4USxnU0FBZ1M7U0FDL1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0csNExBQTRMO1lBQzVMLHFLQUFxSztTQUNwSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdGQUF3RjtZQUN4Rix1S0FBdUs7WUFDdkssK0lBQStJO1NBQzlJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEtBQThLO1lBQzlLLGtTQUFrUztZQUNsUyx3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTkFBbU47WUFDbk4sMlRBQTJUO1lBQzNULHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSix3TkFBd047WUFDeE4sK0xBQStMO1NBQzlMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNklBQTZJO1lBQzdJLDRPQUE0TztZQUM1Tyx5T0FBeU87U0FDeE87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxvRUFBb0U7WUFDcEUsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhIQUE4SDtZQUM5SCw0TkFBNE47WUFDNU4sMkxBQTJMO1NBQzFMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLDBRQUEwUTtZQUMxUSxzUUFBc1E7U0FDclE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUoseVFBQXlRO1lBQ3pRLG9QQUFvUDtTQUNuUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlOQUFpTjtZQUNqTiwrTUFBK007WUFDL00sME5BQTBOO1NBQ3pOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsK0RBQStEO1lBQy9ELGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1R0FBdUc7WUFDdkcsOE1BQThNO1lBQzlNLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhLQUE4SztZQUM5SyxpUEFBaVA7WUFDalAsZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLGlRQUFpUTtZQUNqUSxpT0FBaU87U0FDaE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSEFBbUg7WUFDbkgseU5BQXlOO1lBQ3pOLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJHQUEyRztZQUMzRyx1T0FBdU87WUFDdk8sa01BQWtNO1NBQ2pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkVBQTJFO1lBQzNFLG1IQUFtSDtZQUNuSCxpSUFBaUk7U0FDaEk7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx1REFBdUQ7WUFDdkQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5RixpS0FBaUs7WUFDakssbUtBQW1LO1NBQ2xLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUlBQXVJO1lBQ3ZJLGdPQUFnTztZQUNoTyxvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TEFBdUw7WUFDdkwsd1RBQXdUO1lBQ3hULHFUQUFxVDtTQUNwVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSw0UEFBNFA7WUFDNVAsc05BQXNOO1NBQ3JOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0hBQXdIO1lBQ3hILGdPQUFnTztZQUNoTyxzTkFBc047U0FDck47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyxvREFBb0Q7WUFDcEQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxzTUFBc007WUFDdE0scU9BQXFPO1NBQ3BPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILGtJQUFrSTtZQUNsSSwwS0FBMEs7U0FDeks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsc05BQXNOO1lBQ3ROLHlPQUF5TztTQUN4TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVMQUF1TDtZQUN2TCw2T0FBNk87WUFDN08sZ1JBQWdSO1NBQy9RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0dBQW9HO1lBQ3BHLGlIQUFpSDtZQUNqSCwySUFBMkk7U0FDMUk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4scVBBQXFQO1lBQ3JQLGlUQUFpVDtTQUNoVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdOQUFnTjtZQUNoTixpUEFBaVA7WUFDalAsZ1JBQWdSO1NBQy9RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsd0RBQXdEO1lBQ3hELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSUFBb0k7WUFDcEksdUtBQXVLO1lBQ3ZLLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFIQUFxSDtZQUNySCw4TEFBOEw7WUFDOUwsOEtBQThLO1NBQzdLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME1BQTBNO1lBQzFNLGlRQUFpUTtZQUNqUSxzUkFBc1I7U0FDclI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osa01BQWtNO1lBQ2xNLDBNQUEwTTtTQUN6TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCwyTUFBMk07WUFDM00sbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLGlLQUFpSztZQUNqSyx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0sd1BBQXdQO1lBQ3hQLDhTQUE4UztTQUM3UztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGdFQUFnRTtZQUNoRSxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SUFBOEk7WUFDOUksNExBQTRMO1lBQzVMLDBNQUEwTTtTQUN6TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1MQUFtTDtZQUNuTCwyUkFBMlI7WUFDM1IseVFBQXlRO1NBQ3hRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0pBQStKO1lBQy9KLHdQQUF3UDtZQUN4UCxnUUFBZ1E7U0FDL1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUosMk1BQTJNO1lBQzNNLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRKQUE0SjtZQUM1SixzUUFBc1E7WUFDdFEsOFFBQThRO1NBQzdRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxrREFBa0Q7WUFDcEUsa0VBQWtFO1lBQ2xFLGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSEFBbUg7WUFDbkgsMktBQTJLO1lBQzNLLCtLQUErSztTQUM5SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSw0T0FBNE87WUFDNU8sc1JBQXNSO1NBQ3JSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0hBQStIO1lBQy9ILDBNQUEwTTtZQUMxTSxpT0FBaU87U0FDaE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4S0FBOEs7WUFDOUssZ1FBQWdRO1lBQ2hRLCtRQUErUTtTQUM5UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2RixrSUFBa0k7WUFDbEksNktBQTZLO1NBQzVLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywrQkFBK0I7WUFDakQsa0VBQWtFO1lBQ2xFLGtCQUFrQjtZQUNsQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcseUlBQXlJO1lBQ3pJLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhLQUE4SztZQUM5SywrUEFBK1A7WUFDL1AsZ09BQWdPO1NBQy9OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILGdOQUFnTjtZQUNoTixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEssbVBBQW1QO1lBQ25QLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBHQUEwRztZQUMxRyx5TkFBeU47WUFDek4sa01BQWtNO1NBQ2pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEVBQTBFO1lBQzFFLDBHQUEwRztZQUMxRyxpSUFBaUk7U0FDaEk7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLCtDQUErQztZQUNqRSxpRUFBaUU7WUFDakUsaUJBQWlCO1lBQ2pCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkhBQTJIO1lBQzNILCtPQUErTztZQUMvTyxnT0FBZ087U0FDL047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwsMlNBQTJTO1lBQzNTLGlTQUFpUztTQUNoUztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCwyTUFBMk07WUFDM00sa01BQWtNO1NBQ2pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLG9SQUFvUjtZQUNwUiwrUUFBK1E7U0FDOVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosd1RBQXdUO1lBQ3hULDZPQUE2TztTQUM1TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhIQUE4SDtZQUM5SCxzUkFBc1I7WUFDdFIscVFBQXFRO1NBQ3BRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsa0VBQWtFO1lBQ2xFLHNCQUFzQjtZQUN0QixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzRkFBc0Y7WUFDdEYscUpBQXFKO1lBQ3JKLDBHQUEwRztTQUN6RztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBJQUEwSTtZQUMxSSx1TUFBdU07WUFDdk0sNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLDJNQUEyTTtZQUMzTSw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwsNlRBQTZUO1lBQzdULGtRQUFrUTtTQUNqUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1FQUFtRTtZQUNuRSxpQkFBaUI7WUFDakIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0dBQStHO1lBQy9HLDhOQUE4TjtZQUM5Tiw0SkFBNEo7U0FDM0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxRUFBcUU7WUFDckUsc0xBQXNMO1lBQ3RMLHVIQUF1SDtTQUN0SDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdJQUFnSTtZQUNoSSw0TUFBNE07WUFDNU0sdUpBQXVKO1NBQ3RKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEVBQTBFO1lBQzFFLG1JQUFtSTtZQUNuSSxpSkFBaUo7U0FDaEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TEFBNEw7WUFDNUwsMlJBQTJSO1lBQzNSLHFSQUFxUjtTQUNwUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixxUUFBcVE7WUFDclEsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLHlVQUF5VTtZQUN6VSx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3R0FBd0c7WUFDeEcsNFFBQTRRO1lBQzVRLHVOQUF1TjtTQUN0TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHNFQUFzRTtZQUN0RSxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0R0FBNEc7WUFDNUcsa0xBQWtMO1lBQ2xMLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9HQUFvRztZQUNwRyx5SkFBeUo7WUFDekosNktBQTZLO1NBQzVLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLDRPQUE0TztZQUM1TyxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SkFBOEo7WUFDOUosc09BQXNPO1lBQ3RPLHFSQUFxUjtTQUNwUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSw4T0FBOE87WUFDOU8sNFNBQTRTO1NBQzNTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLDJNQUEyTTtZQUMzTSxvT0FBb087U0FDbk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsdU5BQXVOO1lBQ3ZOLG9OQUFvTjtTQUNuTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDBFQUEwRTtZQUMxRSxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLDhLQUE4SztZQUM5SywrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTkFBME47WUFDMU4sa1FBQWtRO1lBQ2xRLGtQQUFrUDtTQUNqUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1NQUFtTTtZQUNuTSx3UkFBd1I7WUFDeFIsMFVBQTBVO1NBQ3pVO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLG9SQUFvUjtZQUNwUix3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TUFBNE07WUFDNU0sb1FBQW9RO1lBQ3BRLG9UQUFvVDtTQUNuVDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGtFQUFrRTtZQUNsRSxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEdBQTRHO1lBQzVHLG1MQUFtTDtZQUNuTCxrSkFBa0o7U0FDako7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSkFBa0o7WUFDbEoseUtBQXlLO1lBQ3pLLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSx3U0FBd1M7WUFDeFMseU9BQXlPO1NBQ3hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLG1UQUFtVDtZQUNuVCwwT0FBME87U0FDek87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksdU5BQXVOO1lBQ3ZOLHlLQUF5SztTQUN4SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSywrU0FBK1M7WUFDL1MsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLGlQQUFpUDtZQUNqUCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSEFBa0g7WUFDbEgsaU5BQWlOO1lBQ2pOLHdMQUF3TDtTQUN2TDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHFFQUFxRTtZQUNyRSxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMklBQTJJO1lBQzNJLHFPQUFxTztZQUNyTyx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SEFBd0g7WUFDeEgsbVJBQW1SO1lBQ25SLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5RiwyTkFBMk47WUFDM04sa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEdBQThHO1lBQzlHLDZXQUE2VztZQUM3VyxxS0FBcUs7U0FDcEs7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxtRUFBbUU7WUFDbkUscUJBQXFCO1lBQ3JCLHNCQUFzQjtTQUNyQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixxUUFBcVE7WUFDclEseU5BQXlOO1NBQ3hOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLG1MQUFtTDtZQUNuTCwySUFBMkk7U0FDMUk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyR0FBMkc7WUFDM0csd0xBQXdMO1lBQ3hMLGtKQUFrSjtTQUNqSjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRJQUE0STtZQUM1SSxnUEFBZ1A7WUFDaFAsbU5BQW1OO1NBQ2xOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLHdPQUF3TztZQUN4TyxxT0FBcU87U0FDcE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSEFBc0g7WUFDdEgseVBBQXlQO1lBQ3pQLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRFQUE0RTtZQUM1RSw2VkFBNlY7WUFDN1YscUhBQXFIO1NBQ3BIO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyw2QkFBNkI7WUFDL0MsMEVBQTBFO1lBQzFFLDJCQUEyQjtZQUMzQiwyQkFBMkI7U0FDMUI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSEFBZ0g7WUFDaEgsZ05BQWdOO1lBQ2hOLHVKQUF1SjtTQUN0SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxpUkFBaVI7WUFDalIsdU9BQXVPO1NBQ3RPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLDhRQUE4UTtZQUM5USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5RkFBeUY7WUFDekYsNElBQTRJO1lBQzVJLG9LQUFvSztTQUNuSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJIQUEySDtZQUMzSCx3T0FBd087WUFDeE8sK01BQStNO1NBQzlNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0hBQWdIO1lBQ2hILHNNQUFzTTtZQUN0TSxpTUFBaU07U0FDaE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4RkFBOEY7WUFDOUYsZ0xBQWdMO1lBQ2hMLHFIQUFxSDtTQUNwSDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsdUJBQXVCO1lBQ3pDLDBFQUEwRTtZQUMxRSwyQkFBMkI7WUFDM0IsMkJBQTJCO1NBQzFCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLDRLQUE0SztZQUM1SyxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5RkFBeUY7WUFDekYsaUxBQWlMO1lBQ2pMLDBKQUEwSjtTQUN6SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1KQUFtSjtZQUNuSiw2UUFBNlE7WUFDN1EsNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLHFSQUFxUjtZQUNyUixzT0FBc087U0FDck87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osc1NBQXNTO1lBQ3RTLDhPQUE4TztTQUM3TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCxxUEFBcVA7WUFDclAsMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUpBQXlKO1lBQ3pKLGdUQUFnVDtZQUNoVCx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1R0FBdUc7WUFDdkcsME1BQTBNO1lBQzFNLCtLQUErSztTQUM5SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1JQUFtSTtZQUNuSSxzT0FBc087WUFDdE8sMkxBQTJMO1NBQzFMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMseURBQXlEO1lBQ3pELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksMEtBQTBLO1lBQzFLLHdMQUF3TDtTQUN2TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNOQUFzTjtZQUN0TixvUUFBb1E7WUFDcFEsb1RBQW9UO1NBQ25UO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU9BQXVPO1lBQ3ZPLHlQQUF5UDtZQUN6UCxzVEFBc1Q7U0FDclQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TkFBNE47WUFDNU4sNFJBQTRSO1lBQzVSLG9SQUFvUjtTQUNuUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SywwTUFBME07WUFDMU0saU9BQWlPO1NBQ2hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLGdNQUFnTTtZQUNoTSx1TUFBdU07U0FDdE07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdDQUFnQztZQUNsRCxrRUFBa0U7WUFDbEUsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLGlMQUFpTDtZQUNqTCw4TEFBOEw7U0FDN0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0ksb0tBQW9LO1lBQ3BLLHVNQUF1TTtTQUN0TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSiw2TkFBNk47WUFDN04sMk9BQTJPO1NBQzFPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMExBQTBMO1lBQzFMLG1NQUFtTTtZQUNuTSxtUEFBbVA7U0FDbFA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx3REFBd0Q7WUFDeEQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUlBQXVJO1lBQ3ZJLHdHQUF3RztZQUN4RyxrSUFBa0k7U0FDakk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3UEFBd1A7WUFDeFAseVFBQXlRO1lBQ3pRLG1UQUFtVDtTQUNsVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNPQUFzTztZQUN0Tyw0TkFBNE47WUFDNU4sbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU9BQWlPO1lBQ2pPLHdPQUF3TztZQUN4Tyw4T0FBOE87U0FDN087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osb0tBQW9LO1lBQ3BLLCtPQUErTztTQUM5TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSywrTEFBK0w7WUFDL0wsOEtBQThLO1NBQzdLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsb0VBQW9FO1lBQ3BFLGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0S0FBNEs7WUFDNUssdU1BQXVNO1lBQ3ZNLGlPQUFpTztTQUNoTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNNQUFzTTtZQUN0TSwwTkFBME47WUFDMU4sOE1BQThNO1NBQzdNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDRSQUE0UjtZQUM1UiwrTUFBK007U0FDOU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsbU9BQW1PO1lBQ25PLGtRQUFrUTtTQUNqUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCxpS0FBaUs7WUFDakssZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILG1KQUFtSjtZQUNuSix1S0FBdUs7U0FDdEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsc09BQXNPO1lBQ3RPLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZMQUE2TDtZQUM3TCxpUUFBaVE7WUFDalEsK1JBQStSO1NBQzlSO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0VBQW9FO1lBQ3BFLGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySUFBMkk7WUFDM0kscU9BQXFPO1lBQ3JPLHdPQUF3TztTQUN2TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxtUkFBbVI7WUFDblIsb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLDJOQUEyTjtZQUMzTixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0ssNFJBQTRSO1lBQzVSLGtRQUFrUTtTQUNqUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSixvUUFBb1E7WUFDcFEsa0xBQWtMO1NBQ2pMO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCw0TkFBNE47WUFDNU4sMExBQTBMO1NBQ3pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILGdNQUFnTTtZQUNoTSw2TEFBNkw7U0FDNUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSEFBb0g7WUFDcEgsc01BQXNNO1lBQ3RNLDBMQUEwTDtTQUN6TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyw2UEFBNlA7WUFDN1AsOFBBQThQO1NBQzdQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU9BQWlPO1lBQ2pPLDRTQUE0UztZQUM1Uyx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSUFBK0k7WUFDL0ksbVFBQW1RO1lBQ25RLHVSQUF1UjtTQUN0UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtGQUErRjtZQUMvRixvT0FBb087WUFDcE8sOFBBQThQO1NBQzdQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0pBQWtKO1lBQ2xKLHlRQUF5UTtZQUN6USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3R0FBd0c7WUFDeEcsOE5BQThOO1lBQzlOLDRNQUE0TTtTQUMzTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdIQUFnSDtZQUNoSCxpVEFBaVQ7WUFDalQsK1JBQStSO1NBQzlSO0tBQ0E7SUFFRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsZ0VBQWdFO1lBQ2hFLGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZIQUE2SDtZQUM3SCw2UEFBNlA7WUFDN1AsME1BQTBNO1NBQ3pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLDROQUE0TjtZQUM1Tiw4TkFBOE47U0FDN047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssNlFBQTZRO1lBQzdRLDJPQUEyTztTQUMxTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9FQUFvRTtZQUNwRSxxQkFBcUI7WUFDckIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyRkFBMkY7WUFDM0YsaUhBQWlIO1lBQ2pILDJJQUEySTtTQUMxSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1HQUFtRztZQUNuRyxpTEFBaUw7WUFDakwseUhBQXlIO1NBQ3hIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOElBQThJO1lBQzlJLHFPQUFxTztZQUNyTyx1TUFBdU07U0FDdE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEsseVJBQXlSO1lBQ3pSLHlSQUF5UjtTQUN4UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSw4TUFBOE07WUFDOU0seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUVBQXlFO1lBQ3pFLGlLQUFpSztZQUNqSyxvSkFBb0o7U0FDbko7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwR0FBMEc7WUFDMUcsK01BQStNO1lBQy9NLGlOQUFpTjtTQUNoTjtLQUNBO0lBRUQ7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGtFQUFrRTtZQUNsRSxrQkFBa0I7WUFDbEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLDBNQUEwTTtZQUMxTSw4TEFBOEw7U0FDN0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2RUFBNkU7WUFDN0Usc0dBQXNHO1lBQ3RHLDZGQUE2RjtTQUM1RjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZMQUE2TDtZQUM3TCxrUEFBa1A7WUFDbFAsK05BQStOO1NBQzlOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLHFMQUFxTDtZQUNyTCxnS0FBZ0s7U0FDL0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSEFBMEg7WUFDMUgsd0tBQXdLO1lBQ3hLLDZIQUE2SDtTQUM1SDtLQUNBO0lBRUQ7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLG9EQUFvRDtZQUNwRCxrQkFBa0I7WUFDbEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0dBQXdHO1lBQ3hHLHNJQUFzSTtZQUN0SSxtS0FBbUs7U0FDbEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSEFBZ0g7WUFDaEgsNkxBQTZMO1lBQzdMLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZLQUE2SztZQUM3Syx3VEFBd1Q7WUFDeFQsMlBBQTJQO1NBQzFQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLDhOQUE4TjtZQUM5Tiw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SkFBeUo7WUFDekosNE9BQTRPO1lBQzVPLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlLQUFpSztZQUNqSywwU0FBMFM7WUFDMVMsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0ZBQXdGO1lBQ3hGLDRKQUE0SjtZQUM1Siw2R0FBNkc7U0FDNUc7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQywyREFBMkQ7WUFDM0QsbUJBQW1CO1lBQ25CLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSwrTUFBK007WUFDL00sOE1BQThNO1NBQzdNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0xBQXNMO1lBQ3RMLDBTQUEwUztZQUMxUyw0U0FBNFM7U0FDM1M7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssK1VBQStVO1lBQy9VLGdSQUFnUjtTQUMvUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2RixpS0FBaUs7WUFDakssZ0pBQWdKO1NBQy9JO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx1REFBdUQ7WUFDekUsb0VBQW9FO1lBQ3BFLG9CQUFvQjtZQUNwQixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5UUFBeVE7WUFDelEsNFNBQTRTO1lBQzVTLDRRQUE0UTtTQUMzUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRlQUE0ZTtZQUM1ZSw0WUFBNFk7WUFDNVksZ1pBQWdaO1NBQy9ZO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbVBBQW1QO1lBQ25QLHdRQUF3UTtZQUN4USxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnbUJBQWdtQjtZQUNobUIsNmlCQUE2aUI7WUFDN2lCLDBnQkFBMGdCO1NBQ3pnQjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsOEJBQThCO1lBQ2hELG1FQUFtRTtZQUNuRSxvQkFBb0I7WUFDcEIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaXNCQUFpc0I7WUFDanNCLHdvQkFBd29CO1lBQ3hvQixrbkJBQWtuQjtTQUNqbkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzUUFBc1E7WUFDdFEsOFFBQThRO1lBQzlRLDZQQUE2UDtTQUM1UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUNBQW1DO1lBQ3JELG9FQUFvRTtZQUNwRSxpQkFBaUI7WUFDakIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvZEFBb2Q7WUFDcGQsOGhCQUE4aEI7WUFDOWhCLHllQUF5ZTtTQUN4ZTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9YQUFvWDtZQUNwWCw0VkFBNFY7WUFDNVYsZ1dBQWdXO1NBQy9WO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdWVBQXVlO1lBQ3ZlLG1lQUFtZTtZQUNuZSx1ZEFBdWQ7U0FDdGQ7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvWkFBb1o7WUFDcFosaVhBQWlYO1lBQ2pYLDZWQUE2VjtTQUM1VjtLQUNBO0lBRUQ7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMkNBQTJDO1lBQzdELG1FQUFtRTtZQUNuRSxrQkFBa0I7WUFDbEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkdBQTJHO1lBQzNHLDRIQUE0SDtZQUM1SCwrSUFBK0k7U0FDOUk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosdVBBQXVQO1lBQ3ZQLDBQQUEwUDtTQUN6UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2Siw2T0FBNk87WUFDN08sNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLDBOQUEwTjtZQUMxTixvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsa01BQWtNO1lBQ2xNLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSwyWUFBMlk7WUFDM1ksbU1BQW1NO1NBQ2xNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0VBQW9FO1lBQ3BFLG1CQUFtQjtZQUNuQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4Six5TEFBeUw7WUFDekwsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUxBQXlMO1lBQ3pMLDhRQUE4UTtZQUM5USwrUUFBK1E7U0FDOVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsd1FBQXdRO1lBQ3hRLGdQQUFnUDtTQUMvTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBOQUEwTjtZQUMxTiw0U0FBNFM7WUFDNVMsd1JBQXdSO1NBQ3ZSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUtBQXFLO1lBQ3JLLDZWQUE2VjtZQUM3VixtTEFBbUw7U0FDbEw7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw0REFBNEQ7WUFDNUQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlJQUFpSTtZQUNqSSxzTkFBc047WUFDdE4seUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLCtTQUErUztZQUMvUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzSkFBc0o7WUFDdEosaVBBQWlQO1lBQ2pQLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyx5U0FBeVM7WUFDelMsNlFBQTZRO1NBQzVRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLHlSQUF5UjtZQUN6UixzT0FBc087U0FDck87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTEFBZ0w7WUFDaEwsK1RBQStUO1lBQy9ULHVPQUF1TztTQUN0TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQ0FBbUM7WUFDckQsMkRBQTJEO1lBQzNELHVCQUF1QjtZQUN2QixvQkFBb0I7U0FDbkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksb09BQW9PO1lBQ3BPLHdPQUF3TztTQUN2TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdIQUF3SDtZQUN4SCxtUkFBbVI7WUFDblIsb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLDJOQUEyTjtZQUMzTixrS0FBa0s7U0FDaks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0ssMlNBQTJTO1lBQzNTLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSiwrUEFBK1A7WUFDL1Asa0xBQWtMO1NBQ2pMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLHlRQUF5UTtZQUN6USx3TUFBd007U0FDdk07S0FDQTtJQUVEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx1RUFBdUU7WUFDdkUsc0JBQXNCO1lBQ3RCLHFCQUFxQjtTQUNwQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSiwrS0FBK0s7WUFDL0ssNFBBQTRQO1NBQzNQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLGtNQUFrTTtZQUNsTSxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxRUFBcUU7WUFDckUsc0dBQXNHO1lBQ3RHLGtHQUFrRztTQUNqRztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSxzT0FBc087WUFDdE8sdVJBQXVSO1NBQ3RSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMElBQTBJO1lBQzFJLHVNQUF1TTtZQUN2TSxnTkFBZ047U0FDL007UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosK1BBQStQO1lBQy9QLGdTQUFnUztTQUMvUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSx1UUFBdVE7WUFDdlEsd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLG1QQUFtUDtZQUNuUCwwVEFBMFQ7U0FDelQ7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx3REFBd0Q7WUFDeEQsaUJBQWlCO1lBQ2pCLG9CQUFvQjtTQUNuQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4Siw2TkFBNk47WUFDN04sME9BQTBPO1NBQ3pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEpBQThKO1lBQzlKLDRRQUE0UTtZQUM1USxnU0FBZ1M7U0FDL1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEssd1RBQXdUO1lBQ3hULHNVQUFzVTtTQUNyVTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyx3UkFBd1I7WUFDeFIscVJBQXFSO1NBQ3BSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLDRPQUE0TztZQUM1TyxvT0FBb087U0FDbk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsZ05BQWdOO1lBQ2hOLDRNQUE0TTtTQUMzTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1FQUFtRTtZQUNuRSxvQkFBb0I7WUFDcEIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUxBQXVMO1lBQ3ZMLHVRQUF1UTtZQUN2USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTkFBbU47WUFDbk4sNFJBQTRSO1lBQzVSLGtSQUFrUjtTQUNqUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSw4VEFBOFQ7WUFDOVQsa1FBQWtRO1NBQ2pRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsMkVBQTJFO1lBQzNFLHNCQUFzQjtZQUN0Qix3QkFBd0I7U0FDdkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osdU9BQXVPO1lBQ3ZPLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCxvVkFBb1Y7WUFDcFYsbVRBQW1UO1NBQ2xUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0hBQW9IO1lBQ3BILHlOQUF5TjtZQUN6TixrTkFBa047U0FDak47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osd1NBQXdTO1lBQ3hTLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSwwT0FBME87WUFDMU8sNk5BQTZOO1NBQzVOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLDJPQUEyTztZQUMzTywyUUFBMlE7U0FDMVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2TEFBNkw7WUFDN0wsaVNBQWlTO1lBQ2pTLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSx5Y0FBeWM7WUFDemMsdU1BQXVNO1NBQ3RNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsOENBQThDO1lBQzlDLGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcsa0tBQWtLO1lBQ2xLLHdJQUF3STtTQUN2STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SixzTkFBc047WUFDdE4sNk5BQTZOO1NBQzVOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME1BQTBNO1lBQzFNLHVSQUF1UjtZQUN2UixpUUFBaVE7U0FDaFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osMk1BQTJNO1lBQzNNLGtNQUFrTTtTQUNqTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxtT0FBbU87WUFDbk8sMk1BQTJNO1NBQzFNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLHlMQUF5TDtZQUN6TCxpS0FBaUs7U0FDaEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TUFBdU07WUFDdk0sK1NBQStTO1lBQy9TLHdQQUF3UDtTQUN2UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDBEQUEwRDtZQUMxRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEVBQThFO1lBQzlFLHdIQUF3SDtZQUN4SCx3R0FBd0c7U0FDdkc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SEFBOEg7WUFDOUgsd0pBQXdKO1lBQ3hKLG1JQUFtSTtTQUNsSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTiwwUkFBMFI7WUFDMVIsa1BBQWtQO1NBQ2pQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUhBQWlIO1lBQ2pILHlJQUF5STtZQUN6SSxnSEFBZ0g7U0FDL0c7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSEFBbUg7WUFDbkgsc05BQXNOO1lBQ3ROLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVNQUF1TTtZQUN2TSx3UUFBd1E7WUFDeFEsZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLHFPQUFxTztZQUNyTyxvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssK05BQStOO1lBQy9OLGtNQUFrTTtTQUNqTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLHVFQUF1RTtZQUN2RSxtQkFBbUI7WUFDbkIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLGlOQUFpTjtZQUNqTix3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TUFBeU07WUFDek0saVJBQWlSO1lBQ2pSLHVPQUF1TztTQUN0TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSxrTUFBa007WUFDbE0saUtBQWlLO1NBQ2hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILGtKQUFrSjtZQUNsSiw2S0FBNks7U0FDNUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sOFNBQThTO1lBQzlTLDhSQUE4UjtTQUM3UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSixzTUFBc007WUFDdE0saU1BQWlNO1NBQ2hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILGdMQUFnTDtZQUNoTCxzSEFBc0g7U0FDckg7S0FDQTtJQUVEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxtRUFBbUU7WUFDbkUscUJBQXFCO1lBQ3JCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILGlJQUFpSTtZQUNqSSwwS0FBMEs7U0FDeks7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTEFBb0w7WUFDcEwsbVRBQW1UO1lBQ25ULDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlJQUF5STtZQUN6SSxnUEFBZ1A7WUFDaFAsME1BQTBNO1NBQ3pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk1BQTZNO1lBQzdNLHVSQUF1UjtZQUN2UixnUUFBZ1E7U0FDL1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTUFBb007WUFDcE0sNlFBQTZRO1lBQzdRLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtMQUErTDtZQUMvTCxzUkFBc1I7WUFDdFIsaVFBQWlRO1NBQ2hRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsa0VBQWtFO1lBQ2xFLG1CQUFtQjtZQUNuQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssc1JBQXNSO1lBQ3RSLHFSQUFxUjtTQUNwUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBMQUEwTDtZQUMxTCxxU0FBcVM7WUFDclMsMlJBQTJSO1NBQzFSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLHlRQUF5UTtZQUN6USxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzR0FBc0c7WUFDdEcsd0pBQXdKO1lBQ3hKLHdLQUF3SztTQUN2SztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLGlFQUFpRTtZQUNqRSx1QkFBdUI7WUFDdkIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkpBQTZKO1lBQzdKLDBPQUEwTztZQUMxTyw0TkFBNE47U0FDM047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsb1ZBQW9WO1lBQ3BWLG1UQUFtVDtTQUNsVDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1IQUFtSDtZQUNuSCx5TkFBeU47WUFDek4sZ05BQWdOO1NBQy9NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkpBQTZKO1lBQzdKLHdTQUF3UztZQUN4UyxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3SUFBd0k7WUFDeEksME9BQTBPO1lBQzFPLCtOQUErTjtTQUM5TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SywyT0FBMk87WUFDM08sMFFBQTBRO1NBQ3pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNExBQTRMO1lBQzVMLGlTQUFpUztZQUNqUyxtUUFBbVE7U0FDbFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SUFBOEk7WUFDOUkscU9BQXFPO1lBQ3JPLHVNQUF1TTtTQUN0TTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLG1EQUFtRDtZQUNuRCxxQkFBcUI7WUFDckIsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLHdPQUF3TztZQUN4TyxxTUFBcU07U0FDcE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TUFBeU07WUFDek0sbU1BQW1NO1lBQ25NLG9OQUFvTjtTQUNuTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSwwUUFBMFE7WUFDMVEscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILHlTQUF5UztZQUN6Uyw2UkFBNlI7U0FDNVI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyTUFBMk07WUFDM00sa1BBQWtQO1lBQ2xQLHVPQUF1TztTQUN0TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdKQUFnSjtZQUNoSixrUkFBa1I7WUFDbFIsNFFBQTRRO1NBQzNRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILDZPQUE2TztZQUM3TywyTkFBMk47U0FDMU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SEFBeUg7WUFDekgsa0dBQWtHO1lBQ2xHLCtHQUErRztTQUM5RztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHdEQUF3RDtZQUN4RCxvQkFBb0I7WUFDcEIsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEZBQTRGO1lBQzVGLGdQQUFnUDtZQUNoUCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1UEFBdVA7WUFDdlAseUxBQXlMO1lBQ3pMLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZJQUE2STtZQUM3SSxvTUFBb007WUFDcE0sMktBQTJLO1NBQzFLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsa0VBQWtFO1lBQ2xFLHNCQUFzQjtZQUN0QixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTEFBcUw7WUFDckwsd1FBQXdRO1lBQ3hRLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9JQUFvSTtZQUNwSSw2TEFBNkw7WUFDN0wsc01BQXNNO1NBQ3JNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0pBQXNKO1lBQ3RKLDJNQUEyTTtZQUMzTSx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrR0FBK0c7WUFDL0csa05BQWtOO1lBQ2xOLHlKQUF5SjtTQUN4SjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlEQUF5RDtZQUN6RCxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDRMQUE0TDtZQUM1TCxnTEFBZ0w7U0FDL0s7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUssd1BBQXdQO1lBQ3hQLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSw2UEFBNlA7WUFDN1Asc09BQXNPO1NBQ3JPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk5BQTZOO1lBQzdOLHFTQUFxUztZQUNyUyw4UUFBOFE7U0FDN1E7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsK1FBQStRO1lBQy9RLDBKQUEwSjtTQUN6SjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHFFQUFxRTtZQUNyRSxvQkFBb0I7WUFDcEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsd0xBQXdMO1lBQ3hMLHNKQUFzSjtTQUNySjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZNQUE2TTtZQUM3TSxvUUFBb1E7WUFDcFEsaU5BQWlOO1NBQ2hOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0xBQXNMO1lBQ3RMLHVQQUF1UDtZQUN2UCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTkFBa047WUFDbE4sdVJBQXVSO1lBQ3ZSLG1RQUFtUTtTQUNsUTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHlFQUF5RTtZQUN6RSx3QkFBd0I7WUFDeEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLCtQQUErUDtZQUMvUCxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0oseVFBQXlRO1lBQ3pRLHdNQUF3TTtTQUN2TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSywwUUFBMFE7WUFDMVEsNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHVSQUF1UjtZQUN2Uiw2UEFBNlA7U0FDNVA7S0FDQTtJQUVEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3REFBd0Q7WUFDeEQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlMQUFpTDtZQUNqTCxtUUFBbVE7WUFDblEseU9BQXlPO1NBQ3hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLDhPQUE4TztZQUM5TywyTkFBMk47U0FDMU47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzTUFBc007WUFDdE0sdVJBQXVSO1lBQ3ZSLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlNQUF5TTtZQUN6TSxzUEFBc1A7WUFDdFAsOE9BQThPO1NBQzdPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILG9LQUFvSztZQUNwSyxzSUFBc0k7U0FDckk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4sMExBQTBMO1lBQzFMLDRMQUE0TDtTQUMzTDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9FQUFvRTtZQUNwRSxvQkFBb0I7WUFDcEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosd05BQXdOO1lBQ3hOLHFOQUFxTjtTQUNwTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRLQUE0SztZQUM1Syx1VUFBdVU7WUFDdlUsbVJBQW1SO1NBQ2xSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa05BQWtOO1lBQ2xOLG9SQUFvUjtZQUNwUix1U0FBdVM7U0FDdFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSkFBMEo7WUFDMUosdU5BQXVOO1lBQ3ZOLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCxxTEFBcUw7WUFDckwseUtBQXlLO1NBQ3hLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUdBQW1HO1lBQ25HLDZKQUE2SjtZQUM3SixrSkFBa0o7U0FDako7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxpREFBaUQ7WUFDakQsbUJBQW1CO1lBQ25CLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZGQUE2RjtZQUM3RiwrSkFBK0o7WUFDL0osNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLDBPQUEwTztZQUMxTyxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsK01BQStNO1lBQy9NLHNOQUFzTjtTQUNyTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsRUFBRTtZQUNGLEVBQUU7WUFDRixFQUFFO1NBQ0Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixFQUFFO1lBQ0YsRUFBRTtZQUNGLEVBQUU7U0FDRDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNJO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELHFCQUFxQjtZQUNyQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwycEJBQTJwQjtZQUMzcEIsNnFCQUE2cUI7WUFDN3FCLDZtQkFBNm1CO1NBQzVtQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdoQkFBd2hCO1lBQ3hoQix1dEJBQXV0QjtZQUN2dEIsd2pCQUF3akI7U0FDdmpCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLG1LQUFtSztZQUNuSyxtR0FBbUc7U0FDbEc7S0FDQTtJQUNMO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx5REFBeUQ7WUFDekQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlJQUFpSTtZQUNqSSxxTUFBcU07WUFDck0scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLDZRQUE2UTtZQUM3USwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbksseVBBQXlQO1lBQ3pQLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0RBQW9EO1lBQ3BELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksaUxBQWlMO1lBQ2pMLG1MQUFtTDtTQUNsTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxtUkFBbVI7WUFDblIsd09BQXdPO1NBQ3ZPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLGdPQUFnTztZQUNoTyxtTEFBbUw7U0FDbEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SkFBeUo7WUFDekosMk1BQTJNO1lBQzNNLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRNQUE0TTtZQUM1TSw4T0FBOE87WUFDOU8sZ01BQWdNO1NBQy9MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0tBQWdLO1lBQ2hLLHVOQUF1TjtZQUN2TixvTkFBb047U0FDbk47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5S0FBeUs7WUFDeksseU1BQXlNO1lBQ3pNLG1NQUFtTTtTQUNsTTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGdFQUFnRTtZQUNoRSxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SkFBdUo7WUFDdkosa01BQWtNO1lBQ2xNLCtMQUErTDtTQUM5TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxxTEFBcUw7WUFDckwsa0tBQWtLO1NBQ2pLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOExBQThMO1lBQzlMLDhRQUE4UTtZQUM5USxzUUFBc1E7U0FDclE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TUFBdU07WUFDdk0sMFNBQTBTO1lBQzFTLG1SQUFtUjtTQUNsUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhGQUE4RjtZQUM5RiwrSEFBK0g7WUFDL0gsd0xBQXdMO1NBQ3ZMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLGtPQUFrTztZQUNsTyx3TkFBd047U0FDdk47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDhCQUE4QjtZQUNoRCx5REFBeUQ7WUFDekQsa0JBQWtCO1lBQ2xCLGtCQUFrQjtTQUNqQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2Syw4UEFBOFA7WUFDOVAsNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOE1BQThNO1lBQzlNLG1TQUFtUztZQUNuUyxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtUEFBbVA7WUFDblAsNFJBQTRSO1lBQzVSLHlTQUF5UztTQUN4UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLGtCQUFrQjtZQUNsQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSEFBa0g7WUFDbEgsK0tBQStLO1lBQy9LLG9LQUFvSztTQUNuSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhJQUE4STtZQUM5SSxxTkFBcU47WUFDck4sNktBQTZLO1NBQzVLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEtBQTBLO1lBQzFLLDBQQUEwUDtZQUMxUCxxTkFBcU47U0FDcE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osK09BQStPO1lBQy9PLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9EQUFvRDtZQUNwRCxpRUFBaUU7WUFDakUscUVBQXFFO1NBQ3BFO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOExBQThMO1lBQzlMLDBRQUEwUTtZQUMxUSxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3S0FBd0s7WUFDeEssNFBBQTRQO1lBQzVQLG9QQUFvUDtTQUNuUDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG1FQUFtRTtZQUNuRSxtQkFBbUI7WUFDbkIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ0hBQWdIO1lBQ2hILHNJQUFzSTtZQUN0SSx1SUFBdUk7U0FDdEk7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5RUFBeUU7WUFDekUsMElBQTBJO1lBQzFJLDJHQUEyRztTQUMxRztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSx5TkFBeU47WUFDek4sK01BQStNO1NBQzlNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMktBQTJLO1lBQzNLLGdSQUFnUjtZQUNoUix3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrUEFBK1A7WUFDL1AsMlBBQTJQO1lBQzNQLGlRQUFpUTtTQUNoUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBGQUEwRjtZQUMxRiwrSUFBK0k7WUFDL0ksNElBQTRJO1NBQzNJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyw2QkFBNkI7WUFDL0MsaUVBQWlFO1lBQ2pFLG1CQUFtQjtZQUNuQixvQkFBb0I7U0FDbkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SEFBdUg7WUFDdkgsOEhBQThIO1lBQzlILHVKQUF1SjtTQUN0SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBJQUEwSTtZQUMxSSw0TEFBNEw7WUFDNUwsbU1BQW1NO1NBQ2xNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0lBQW9JO1lBQ3BJLDhMQUE4TDtZQUM5TCxrTUFBa007U0FDak07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwsZ05BQWdOO1lBQ2hOLDJOQUEyTjtTQUMxTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyxpUUFBaVE7WUFDalEseVBBQXlQO1NBQ3hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOE5BQThOO1lBQzlOLDBQQUEwUDtZQUMxUCw2UUFBNlE7U0FDNVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0RkFBNEY7WUFDNUYsNkhBQTZIO1lBQzdILCtJQUErSTtTQUM5STtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlHQUF5RztZQUN6Ryx5TEFBeUw7WUFDekwsd1BBQXdQO1NBQ3ZQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk5BQTZOO1lBQzdOLG9RQUFvUTtZQUNwUSxxUkFBcVI7U0FDcFI7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHdCQUF3QjtZQUMxQyx1REFBdUQ7WUFDdkQscUJBQXFCO1lBQ3JCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEpBQTBKO1lBQzFKLGtJQUFrSTtZQUNsSSwyS0FBMks7U0FDMUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTUFBa007WUFDbE0sdVZBQXVWO1lBQ3ZWLDRPQUE0TztTQUMzTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxnUEFBZ1A7WUFDaFAsME1BQTBNO1NBQ3pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU9BQW1PO1lBQ25PLDJSQUEyUjtZQUMzUixnUUFBZ1E7U0FDL1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTUFBcU07WUFDck0sNlFBQTZRO1lBQzdRLGdRQUFnUTtTQUMvUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtOQUErTjtZQUMvTixvUkFBb1I7WUFDcFIsa1FBQWtRO1NBQ2pRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbURBQW1EO1lBQ25ELG9CQUFvQjtZQUNwQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssOE5BQThOO1lBQzlOLGlNQUFpTTtTQUNoTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdPQUF3TztZQUN4Tyw2U0FBNlM7WUFDN1MsZ1FBQWdRO1NBQy9QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLGlWQUFpVjtZQUNqVix5UkFBeVI7U0FDeFI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osNk1BQTZNO1lBQzdNLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVHQUF1RztZQUN2RyxnTEFBZ0w7WUFDaEwscUtBQXFLO1NBQ3BLO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsbUVBQW1FO1lBQ25FLGtCQUFrQjtZQUNsQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSkFBaUo7WUFDakosK09BQStPO1lBQy9PLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4Siw4TkFBOE47WUFDOU4sNEtBQTRLO1NBQzNLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0hBQXdIO1lBQ3hILHdJQUF3STtZQUN4SSwwR0FBMEc7U0FDekc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SUFBdUk7WUFDdkksNk9BQTZPO1lBQzdPLHVOQUF1TjtTQUN0TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSwrTkFBK047WUFDL04sa01BQWtNO1NBQ2pNO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsdURBQXVEO1lBQ3ZELGlCQUFpQjtZQUNqQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxS0FBcUs7WUFDckssOE1BQThNO1lBQzlNLGdMQUFnTDtTQUMvSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SywrTkFBK047WUFDL04sa09BQWtPO1NBQ2pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsZ01BQWdNO1lBQ2hNLG9RQUFvUTtZQUNwUSxzT0FBc087U0FDck87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2TkFBNk47WUFDN04sNFJBQTRSO1lBQzVSLDhRQUE4UTtTQUM3UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyx5TkFBeU47WUFDek4sbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0xBQW9MO1lBQ3BMLCtSQUErUjtZQUMvUixtTkFBbU47U0FDbE47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw0REFBNEQ7WUFDNUQsb0JBQW9CO1lBQ3BCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1IQUFtSDtZQUNuSCwrSkFBK0o7WUFDL0osNEpBQTRKO1NBQzNKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU1BQXVNO1lBQ3ZNLHlPQUF5TztZQUN6TyxrUEFBa1A7U0FDalA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osa05BQWtOO1lBQ2xOLHNOQUFzTjtTQUNyTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsc0RBQXNEO1lBQ3RELG9CQUFvQjtZQUNwQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsMkxBQTJMO1lBQzNMLG1LQUFtSztTQUNsSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlNQUFpTTtZQUNqTSxxUEFBcVA7WUFDclAsaVBBQWlQO1NBQ2hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0dBQStHO1lBQy9HLHVMQUF1TDtZQUN2TCw2SkFBNko7U0FDNUo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3R0FBd0c7WUFDeEcsK0lBQStJO1lBQy9JLDZKQUE2SjtTQUM1SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVMQUF1TDtZQUN2TCxnUUFBZ1E7WUFDaFEsaU9BQWlPO1NBQ2hPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFKQUFxSjtZQUNySiwrT0FBK087WUFDL08sNkxBQTZMO1NBQzVMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdU1BQXVNO1lBQ3ZNLGdQQUFnUDtZQUNoUCwyTUFBMk07U0FDMU07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SUFBNkk7WUFDN0ksdUhBQXVIO1lBQ3ZILDhIQUE4SDtTQUM3SDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBMQUEwTDtZQUMxTCwyT0FBMk87WUFDM08sbVBBQW1QO1NBQ2xQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk1BQTJNO1lBQzNNLDBTQUEwUztZQUMxUyxrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSUFBaUk7WUFDakksNkpBQTZKO1lBQzdKLHNMQUFzTDtTQUNyTDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLG9EQUFvRDtZQUNwRCx3QkFBd0I7WUFDeEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1TkFBdU47WUFDdk4sd01BQXdNO1lBQ3hNLHdOQUF3TjtTQUN2TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1MQUFtTDtZQUNuTCxpUkFBaVI7WUFDalIsa09BQWtPO1NBQ2pPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUxBQW1MO1lBQ25MLHdRQUF3UTtZQUN4USwyT0FBMk87U0FDMU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTUFBbU07WUFDbk0scU1BQXFNO1lBQ3JNLHNPQUFzTztTQUNyTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRKQUE0SjtZQUM1Six1UEFBdVA7WUFDdlAsd09BQXdPO1NBQ3ZPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0VBQW9FO1lBQ3BFLGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTEFBZ0w7WUFDaEwsdU5BQXVOO1lBQ3ZOLHlLQUF5SztTQUN4SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtNQUErTTtZQUMvTSwrU0FBK1M7WUFDL1MsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkdBQTZHO1lBQzdHLGlQQUFpUDtZQUNqUCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSkFBaUo7WUFDakosa05BQWtOO1lBQ2xOLHdMQUF3TDtTQUN2TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9NQUFvTTtZQUNwTSx3UUFBd1E7WUFDeFEsNE5BQTROO1NBQzNOO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyw4QkFBOEI7WUFDaEQseUNBQXlDO1lBQ3pDLG9CQUFvQjtZQUNwQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEoscU5BQXFOO1lBQ3JOLGtOQUFrTjtTQUNqTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZQQUE2UDtZQUM3UCxvVEFBb1Q7WUFDcFQscVRBQXFUO1NBQ3BUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUtBQWlLO1lBQ2pLLHlSQUF5UjtZQUN6UixzTkFBc047U0FDck47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksbU9BQW1PO1lBQ25PLHNOQUFzTjtTQUNyTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLGtFQUFrRTtZQUNsRSxxQkFBcUI7WUFDckIsb0JBQW9CO1NBQ25CO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUxBQXVMO1lBQ3ZMLCtNQUErTTtZQUMvTSx5TUFBeU07U0FDeE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosc09BQXNPO1lBQ3RPLDhOQUE4TjtTQUM3TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtOQUFrTjtZQUNsTixvU0FBb1M7WUFDcFMsOFNBQThTO1NBQzdTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU5BQXFOO1lBQ3JOLHlTQUF5UztZQUN6UyxnT0FBZ087U0FDL047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SUFBOEk7WUFDOUksNk1BQTZNO1lBQzdNLG1LQUFtSztTQUNsSztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMseUJBQXlCO1lBQzNDLHFEQUFxRDtZQUNyRCxrQkFBa0I7WUFDbEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUlBQXVJO1lBQ3ZJLGtPQUFrTztZQUNsTyxzTEFBc0w7U0FDckw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxTkFBcU47WUFDck4seVNBQXlTO1lBQ3pTLGdQQUFnUDtTQUMvTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdLQUF3SztZQUN4SywwTkFBME47WUFDMU4seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEhBQTRIO1lBQzVILHlKQUF5SjtZQUN6SiwyS0FBMks7U0FDMUs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSEFBK0g7WUFDL0gsaUpBQWlKO1lBQ2pKLCtIQUErSDtTQUM5SDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRMQUE0TDtZQUM1TCx1UkFBdVI7WUFDdlIsNFFBQTRRO1NBQzNRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQ0FBbUM7WUFDckQsa0VBQWtFO1lBQ2xFLHFCQUFxQjtZQUNyQixvQkFBb0I7U0FDbkI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssc05BQXNOO1lBQ3ROLHlNQUF5TTtTQUN4TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFJQUFxSTtZQUNySSwyTkFBMk47WUFDM04sa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0pBQStKO1lBQy9KLG1PQUFtTztZQUNuTyx5TkFBeU47U0FDeE47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwSUFBMEk7WUFDMUksZ0xBQWdMO1lBQ2hMLHNLQUFzSztTQUNySztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdMQUF3TDtZQUN4TCwwTUFBME07WUFDMU0sZ09BQWdPO1NBQy9OO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsb0RBQW9EO1lBQ3BELG1CQUFtQjtZQUNuQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpTEFBaUw7WUFDakwsbVlBQW1ZO1lBQ25ZLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhKQUE4SjtZQUM5SiwyTkFBMk47WUFDM04sZ05BQWdOO1NBQy9NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLDJQQUEyUDtZQUMzUCx5T0FBeU87U0FDeE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTEFBZ0w7WUFDaEwsa05BQWtOO1lBQ2xOLG1OQUFtTjtTQUNsTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0VBQXdFO1lBQ3hFLHVCQUF1QjtZQUN2QixzQkFBc0I7U0FDckI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpS0FBaUs7WUFDakssa09BQWtPO1lBQ2xPLHlOQUF5TjtTQUN4TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtNQUErTTtZQUMvTSw4UUFBOFE7WUFDOVEsbVFBQW1RO1NBQ2xRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc09BQXNPO1lBQ3RPLGtSQUFrUjtZQUNsUix5U0FBeVM7U0FDeFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsc1BBQXNQO1lBQ3RQLCtOQUErTjtTQUM5TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJEQUEyRDtZQUMzRCx1R0FBdUc7WUFDdkcscUdBQXFHO1NBQ3BHO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLGtMQUFrTDtZQUNsTCx3TUFBd007U0FDdk07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLHVCQUF1QjtZQUN6Qyx1REFBdUQ7WUFDdkQsbUJBQW1CO1lBQ25CLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJJQUEySTtZQUMzSSxzTkFBc047WUFDdE4scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLDZNQUE2TTtZQUM3TSx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TkFBeU47WUFDek4sd1RBQXdUO1lBQ3hULCtSQUErUjtTQUM5UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLEVBQUU7WUFDRixFQUFFO1lBQ0YsRUFBRTtTQUNEO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsd0RBQXdEO1lBQ3hELGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTEFBZ0w7WUFDaEwsME1BQTBNO1lBQzFNLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1MQUFtTDtZQUNuTCwyTkFBMk47WUFDM04sb05BQW9OO1NBQ25OO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsME9BQTBPO1lBQzFPLHlRQUF5UTtZQUN6USxzUUFBc1E7U0FDclE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw0REFBNEQ7WUFDNUQscUJBQXFCO1lBQ3JCLHFCQUFxQjtTQUNwQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSix3T0FBd087WUFDeE8sNExBQTRMO1NBQzNMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc05BQXNOO1lBQ3ROLHNTQUFzUztZQUN0UyxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsc0lBQXNJO1lBQ3RJLDJJQUEySTtTQUMxSTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1QQUFtUDtZQUNuUCwwUkFBMFI7WUFDMVIsb1FBQW9RO1NBQ25RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyw2QkFBNkI7WUFDL0MsNkNBQTZDO1lBQzdDLGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SUFBNkk7WUFDN0ksdVFBQXVRO1lBQ3ZRLHdQQUF3UDtTQUN2UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSyw0VkFBNFY7WUFDNVYsMlFBQTJRO1NBQzFRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaU1BQWlNO1lBQ2pNLDRUQUE0VDtZQUM1VCxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osNFJBQTRSO1lBQzVSLHlPQUF5TztTQUN4TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSw0UkFBNFI7WUFDNVIscVBBQXFQO1NBQ3BQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0tBQXdLO1lBQ3hLLHFRQUFxUTtZQUNyUSwwT0FBME87U0FDek87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyx3RUFBd0U7WUFDeEUsd0JBQXdCO1lBQ3hCLHdCQUF3QjtTQUN2QjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCw0UkFBNFI7WUFDNVIsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLCtPQUErTztZQUMvTyw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TEFBOEw7WUFDOUwsNlFBQTZRO1lBQzdRLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCx5UEFBeVA7WUFDelAsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLDBOQUEwTjtZQUMxTiw4T0FBOE87U0FDN087S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw0REFBNEQ7WUFDNUQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SiwwS0FBMEs7WUFDMUssNEtBQTRLO1NBQzNLO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU9BQXFPO1lBQ3JPLHlRQUF5UTtZQUN6USwwUUFBMFE7U0FDelE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4TUFBOE07WUFDOU0sbVBBQW1QO1lBQ25QLHdQQUF3UDtTQUN2UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsaUJBQWlCO1lBQ25DLHVEQUF1RDtZQUN2RCxtQkFBbUI7WUFDbkIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkxBQTJMO1lBQzNMLHdQQUF3UDtZQUN4UCx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzUUFBc1E7WUFDdFEsNlJBQTZSO1lBQzdSLHFQQUFxUDtTQUNwUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdPQUF3TztZQUN4TyxxUkFBcVI7WUFDclIsZ1FBQWdRO1NBQy9QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMk9BQTJPO1lBQzNPLHNSQUFzUjtZQUN0Uiw2UUFBNlE7U0FDNVE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyw0REFBNEQ7WUFDNUQsb0JBQW9CO1lBQ3BCLG1CQUFtQjtTQUNsQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtLQUErSztZQUMvSyx1UEFBdVA7WUFDdlAsNE1BQTRNO1NBQzNNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb09BQW9PO1lBQ3BPLGlVQUFpVTtZQUNqVSwrVUFBK1U7U0FDOVU7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsd1FBQXdRO1lBQ3hRLHVTQUF1UztTQUN0UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSxzU0FBc1M7WUFDdFMscVRBQXFUO1NBQ3BUO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMseURBQXlEO1lBQ3pELGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtOQUFrTjtZQUNsTixzT0FBc087WUFDdE8sdU9BQXVPO1NBQ3RPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscVBBQXFQO1lBQ3JQLDJTQUEyUztZQUMzUyw4UEFBOFA7U0FDN1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpT0FBaU87WUFDak8sbVRBQW1UO1lBQ25ULDBSQUEwUjtTQUN6UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVOQUF1TjtZQUN2TixpUkFBaVI7WUFDalIsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU9BQW1PO1lBQ25PLGlUQUFpVDtZQUNqVCw4UkFBOFI7U0FDN1I7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlCQUFpQjtZQUNuQyxzREFBc0Q7WUFDdEQsZ0JBQWdCO1lBQ2hCLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtJQUErSTtZQUMvSSxzTkFBc047WUFDdE4scU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU9BQW1PO1lBQ25PLDBNQUEwTTtZQUMxTSx3TUFBd007U0FDdk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssb1RBQW9UO1lBQ3BULCtSQUErUjtTQUM5UjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTixzUkFBc1I7WUFDdFIsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUdBQWlHO1lBQ2pHLDhKQUE4SjtZQUM5SixxSkFBcUo7U0FDcEo7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEsscU9BQXFPO1lBQ3JPLGdPQUFnTztTQUMvTjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsZ0JBQWdCO1lBQ2xDLGlFQUFpRTtZQUNqRSxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwscU1BQXFNO1lBQ3JNLDRMQUE0TDtTQUMzTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixtTkFBbU47WUFDbk4scU5BQXFOO1NBQ3BOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLCtRQUErUTtZQUMvUSxvUUFBb1E7U0FDblE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtUUFBbVE7WUFDblEsb1VBQW9VO1lBQ3BVLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVMQUF1TDtZQUN2TCxnU0FBZ1M7WUFDaFMsc1FBQXNRO1NBQ3JRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsd0RBQXdEO1lBQ3hELG9CQUFvQjtZQUNwQixjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzTEFBc0w7WUFDdEwsdVBBQXVQO1lBQ3ZQLDBPQUEwTztTQUN6TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtQQUFrUDtZQUNsUCx5V0FBeVc7WUFDelcsbVRBQW1UO1NBQ2xUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0xBQStMO1lBQy9MLDhRQUE4UTtZQUM5USw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyUkFBMlI7WUFDM1Isb1dBQW9XO1lBQ3BXLDhTQUE4UztTQUM3UztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRQQUE0UDtZQUM1UCwyU0FBMlM7WUFDM1Msd1NBQXdTO1NBQ3ZTO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxpQkFBaUI7WUFDbkMsaUVBQWlFO1lBQ2pFLDBCQUEwQjtZQUMxQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwseU9BQXlPO1lBQ3pPLDhQQUE4UDtTQUM3UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDROQUE0TjtZQUM1TixpU0FBaVM7WUFDalMscVBBQXFQO1NBQ3BQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbU1BQW1NO1lBQ25NLDJSQUEyUjtZQUMzUix5UUFBeVE7U0FDeFE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyx5REFBeUQ7WUFDekQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNENBQTRDO1lBQzVDLGdGQUFnRjtZQUNoRiwwTUFBME07U0FDek07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtTEFBbUw7WUFDbkwseVBBQXlQO1lBQ3pQLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9OQUFvTjtZQUNwTix5U0FBeVM7WUFDelMsZ1NBQWdTO1NBQy9SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkxBQTZMO1lBQzdMLHVSQUF1UjtZQUN2UixpUUFBaVE7U0FDaFE7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyw2REFBNkQ7WUFDN0QsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtKQUErSjtZQUMvSiw2T0FBNk87WUFDN08seU1BQXlNO1NBQ3hNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUtBQXlLO1lBQ3pLLGlTQUFpUztZQUNqUyx5UEFBeVA7U0FDeFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSUFBZ0k7WUFDaEksc05BQXNOO1lBQ3ROLDZLQUE2SztTQUM1SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBLQUEwSztZQUMxSyw0UkFBNFI7WUFDNVIscU5BQXFOO1NBQ3BOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNk5BQTZOO1lBQzdOLDRRQUE0UTtZQUM1USwrUEFBK1A7U0FDOVA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwTEFBMEw7WUFDMUwseVFBQXlRO1lBQ3pRLG1QQUFtUDtTQUNsUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlLQUF5SztZQUN6Syw0UEFBNFA7WUFDNVAsb1BBQW9QO1NBQ25QO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyx3QkFBd0I7WUFDMUMsc0RBQXNEO1lBQ3RELGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2Six5T0FBeU87WUFDek8sNE1BQTRNO1NBQzNNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLG1QQUFtUDtZQUNuUCw0TkFBNE47U0FDM047UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5TEFBeUw7WUFDekwsaVJBQWlSO1lBQ2pSLDhPQUE4TztTQUM3TztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlMQUF5TDtZQUN6TCwrTkFBK047WUFDL04sb09BQW9PO1NBQ25PO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa09BQWtPO1lBQ2xPLHNTQUFzUztZQUN0Uyw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSUFBZ0k7WUFDaEksOE5BQThOO1lBQzlOLGdQQUFnUDtTQUMvTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4SiwrT0FBK087WUFDL08seVBBQXlQO1NBQ3hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLHlPQUF5TztZQUN6Tyx3UkFBd1I7U0FDdlI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3TEFBd0w7WUFDeEwsMlVBQTJVO1lBQzNVLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtNQUFrTTtZQUNsTSxnTkFBZ047WUFDaE4sMFJBQTBSO1NBQ3pSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0pBQStKO1lBQy9KLGlUQUFpVDtZQUNqVCxpT0FBaU87U0FDaE87S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGdCQUFnQjtZQUNsQyx5REFBeUQ7WUFDekQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdKQUF3SjtZQUN4Siw2TkFBNk47WUFDN04sK0pBQStKO1NBQzlKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscU9BQXFPO1lBQ3JPLDZYQUE2WDtZQUM3WCw2UUFBNlE7U0FDNVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SkFBNEo7WUFDNUoscU5BQXFOO1lBQ3JOLGtPQUFrTztTQUNqTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSyxzTUFBc007WUFDdE0sb01BQW9NO1NBQ25NO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUxBQWlMO1lBQ2pMLHFRQUFxUTtZQUNyUSxvUEFBb1A7U0FDblA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix3UEFBd1A7WUFDeFAsaVNBQWlTO1lBQ2pTLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhNQUE4TTtZQUM5TSx5UUFBeVE7WUFDelEsdU5BQXVOO1NBQ3ROO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyw4QkFBOEI7WUFDaEQscUVBQXFFO1lBQ3JFLGtCQUFrQjtZQUNsQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwyRkFBMkY7WUFDM0YsbUlBQW1JO1lBQ25JLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCxxUEFBcVA7WUFDclAsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEpBQTRKO1lBQzVKLDBSQUEwUjtZQUMxUiw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvS0FBb0s7WUFDcEssME1BQTBNO1lBQzFNLGtOQUFrTjtTQUNqTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9MQUFvTDtZQUNwTCxrUUFBa1E7WUFDbFEsb1FBQW9RO1NBQ25RO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0dBQWtHO1lBQ2xHLG9HQUFvRztZQUNwRyw4RkFBOEY7U0FDN0Y7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGlDQUFpQztZQUNuRCx1REFBdUQ7WUFDdkQsbUJBQW1CO1lBQ25CLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyxtTUFBbU07WUFDbk0sOExBQThMO1NBQzdMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd09BQXdPO1lBQ3hPLHFWQUFxVjtZQUNyViw4UkFBOFI7U0FDN1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvTkFBb047WUFDcE4sMFFBQTBRO1lBQzFRLDZQQUE2UDtTQUM1UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdNQUFnTTtZQUNoTSxpUkFBaVI7WUFDalIscVJBQXFSO1NBQ3BSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEtBQTBLO1lBQzFLLGdNQUFnTTtZQUNoTSx3TkFBd047U0FDdk47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyx5REFBeUQ7WUFDekQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBGQUEwRjtZQUMxRiwrS0FBK0s7WUFDL0ssb0tBQW9LO1NBQ25LO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNElBQTRJO1lBQzVJLDZSQUE2UjtZQUM3Uiw0T0FBNE87U0FDM087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osaVJBQWlSO1lBQ2pSLG1PQUFtTztTQUNsTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLGlFQUFpRTtZQUNqRSxrQkFBa0I7WUFDbEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMEhBQTBIO1lBQzFILDhNQUE4TTtZQUM5TSxrTEFBa0w7U0FDakw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosMFFBQTBRO1lBQzFRLG1QQUFtUDtTQUNsUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBDQUEwQztZQUMxQyxpR0FBaUc7WUFDakcsOEZBQThGO1NBQzdGO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsNkRBQTZEO1lBQzdELG1CQUFtQjtZQUNuQixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsd01BQXdNO1lBQ3hNLDJMQUEyTDtTQUMxTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFMQUFxTDtZQUNyTCx5UkFBeVI7WUFDelIsb1JBQW9SO1NBQ25SO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLGtOQUFrTjtZQUNsTiw2TkFBNk47U0FDNU47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDJCQUEyQjtZQUM3QyxvRUFBb0U7WUFDcEUsbUJBQW1CO1lBQ25CLG1CQUFtQjtTQUNsQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyx5UUFBeVE7WUFDelEsNE9BQTRPO1NBQzNPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLDBSQUEwUjtZQUMxUiwwUkFBMFI7U0FDelI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnREFBZ0Q7WUFDaEQsMEVBQTBFO1lBQzFFLG1FQUFtRTtTQUNsRTtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLHVEQUF1RDtZQUN2RCxtQkFBbUI7WUFDbkIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0pBQXdKO1lBQ3hKLGtPQUFrTztZQUNsTyxpUEFBaVA7U0FDaFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0RUFBNEU7WUFDNUUsK0hBQStIO1lBQy9ILDRIQUE0SDtTQUMzSDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLDJEQUEyRDtZQUMzRCxtQkFBbUI7WUFDbkIsbUJBQW1CO1NBQ2xCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsMkpBQTJKO1lBQzNKLDBSQUEwUjtZQUMxUixrT0FBa087U0FDak87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosb1NBQW9TO1lBQ3BTLDJSQUEyUjtTQUMxUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtIQUErSDtZQUMvSCxtU0FBbVM7WUFDblMsd1JBQXdSO1NBQ3ZSO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsNkRBQTZEO1lBQzdELG1CQUFtQjtZQUNuQixtQkFBbUI7U0FDbEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnSEFBZ0g7WUFDaEgsdU1BQXVNO1lBQ3ZNLGdNQUFnTTtTQUMvTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyw4VEFBOFQ7WUFDOVQsd1JBQXdSO1NBQ3ZSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLDhTQUE4UztZQUM5UyxvUkFBb1I7U0FDblI7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyx5REFBeUQ7WUFDekQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdLQUFnSztZQUNoSywwU0FBMFM7WUFDMVMsb1FBQW9RO1NBQ25RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxnQ0FBZ0M7WUFDbEQsMERBQTBEO1lBQzFELGtCQUFrQjtZQUNsQixrQkFBa0I7U0FDakI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrR0FBa0c7WUFDbEcsaUtBQWlLO1lBQ2pLLDJLQUEySztTQUMxSztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNMQUFzTDtZQUN0TCw2U0FBNlM7WUFDN1MsMFNBQTBTO1NBQ3pTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLGtSQUFrUjtZQUNsUix1UEFBdVA7U0FDdFA7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQywwREFBMEQ7WUFDMUQsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0lBQXNJO1lBQ3RJLHlPQUF5TztZQUN6TywyTEFBMkw7U0FDMUw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2S0FBNks7WUFDN0ssbU9BQW1PO1lBQ25PLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHdGQUF3RjtZQUN4RixzS0FBc0s7WUFDdEssK0lBQStJO1NBQzlJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsd0RBQXdEO1lBQ3hELGlCQUFpQjtZQUNqQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlIQUFpSDtZQUNqSCw0S0FBNEs7WUFDNUssc0pBQXNKO1NBQ3JKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLDZTQUE2UztZQUM3UyxxUEFBcVA7U0FDcFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0sseVFBQXlRO1lBQ3pRLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhFQUE4RTtZQUM5RSxvTEFBb0w7WUFDcEwsaUpBQWlKO1NBQ2hKO0tBQ0E7SUFFRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMseURBQXlEO1lBQ3pELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0TEFBNEw7WUFDNUwsb1NBQW9TO1lBQ3BTLHlRQUF5UTtTQUN4UTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxpUUFBaVE7WUFDalEsd1FBQXdRO1NBQ3ZRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb01BQW9NO1lBQ3BNLHVRQUF1UTtZQUN2USwyU0FBMlM7U0FDMVM7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQywwREFBMEQ7WUFDMUQsaUJBQWlCO1lBQ2pCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixzUUFBc1E7WUFDdFEsNE5BQTROO1NBQzNOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLDRRQUE0UTtZQUM1USx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrTEFBK0w7WUFDL0wscVVBQXFVO1lBQ3JVLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVJQUF1STtZQUN2SSw2T0FBNk87WUFDN08sdU9BQXVPO1NBQ3RPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsMERBQTBEO1lBQzFELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBIQUEwSDtZQUMxSCw2TkFBNk47WUFDN04sK01BQStNO1NBQzlNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNkpBQTZKO1lBQzdKLGdUQUFnVDtZQUNoVCw4UkFBOFI7U0FDN1I7S0FDQTtJQUVEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLDBCQUEwQjtZQUM1QyxxRUFBcUU7WUFDckUsa0JBQWtCO1lBQ2xCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNEhBQTRIO1lBQzVILDBMQUEwTDtZQUMxTCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixzTUFBc007WUFDdE0sd1BBQXdQO1lBQ3hQLHVUQUF1VDtTQUN0VDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlLQUF5SztZQUN6SyxtU0FBbVM7WUFDblMsdVNBQXVTO1NBQ3RTO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0ZBQStGO1lBQy9GLHlMQUF5TDtZQUN6TCxnTUFBZ007U0FDL0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSkFBa0o7WUFDbEosOFJBQThSO1lBQzlSLCtQQUErUDtTQUM5UDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyw0VEFBNFQ7WUFDNVQsMlNBQTJTO1NBQzFTO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsMERBQTBEO1lBQzFELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlIQUFpSDtZQUNqSCxtTEFBbUw7WUFDbkwsaUlBQWlJO1NBQ2hJO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK0RBQStEO1lBQy9ELGdIQUFnSDtZQUNoSCxtR0FBbUc7U0FDbEc7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSkFBbUo7WUFDbkosOE9BQThPO1lBQzlPLG9PQUFvTztTQUNuTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhMQUE4TDtZQUM5TCxzUkFBc1I7WUFDdFIsaVJBQWlSO1NBQ2hSO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsMkRBQTJEO1lBQzNELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlKQUF5SjtZQUN6SixnUUFBZ1E7WUFDaFEsNE5BQTROO1NBQzNOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLHFUQUFxVDtZQUNyVCx3T0FBd087U0FDdk87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrREFBK0Q7WUFDL0Qsa0hBQWtIO1lBQ2xILCtGQUErRjtTQUM5RjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLDZEQUE2RDtZQUM3RCxpQkFBaUI7WUFDakIsaUJBQWlCO1NBQ2hCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0lBQXdJO1lBQ3hJLG9QQUFvUDtZQUNwUCw0TEFBNEw7U0FDM0w7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnS0FBZ0s7WUFDaEssbVJBQW1SO1lBQ25SLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNGQUFzRjtZQUN0RixvSUFBb0k7WUFDcEksMklBQTJJO1NBQzFJO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMseURBQXlEO1lBQ3pELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtSkFBbUo7WUFDbkosaVFBQWlRO1lBQ2pRLDJPQUEyTztTQUMxTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9JQUFvSTtZQUNwSSw0T0FBNE87WUFDNU8sMk5BQTJOO1NBQzFOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0tBQW9LO1lBQ3BLLGlSQUFpUjtZQUNqUixnUUFBZ1E7U0FDL1A7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyw2REFBNkQ7WUFDN0QsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEhBQThIO1lBQzlILGtLQUFrSztZQUNsSyx3TEFBd0w7U0FDdkw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1S0FBdUs7WUFDdkssbUlBQW1JO1lBQ25JLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRFQUE0RTtZQUM1RSxtUEFBbVA7WUFDblAsbU9BQW1PO1NBQ2xPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUhBQXlIO1lBQ3pILG9UQUFvVDtZQUNwVCw2T0FBNk87U0FDNU87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwS0FBMEs7WUFDMUssNlFBQTZRO1lBQzdRLDRTQUE0UztTQUMzUztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSywyUUFBMlE7WUFDM1Esc1FBQXNRO1NBQ3JRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsdURBQXVEO1lBQ3ZELGVBQWU7WUFDZixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrSUFBa0k7WUFDbEksMk5BQTJOO1lBQzNOLHVNQUF1TTtTQUN0TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGlOQUFpTjtZQUNqTixpU0FBaVM7WUFDalMsa1RBQWtUO1NBQ2pUO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0dBQW9HO1lBQ3BHLG1JQUFtSTtZQUNuSSxvTUFBb007U0FDbk07S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQywwREFBMEQ7WUFDMUQsaUJBQWlCO1lBQ2pCLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtJQUFrSTtZQUNsSSwyTkFBMk47WUFDM04sdU1BQXVNO1NBQ3RNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsK01BQStNO1lBQy9NLGdTQUFnUztZQUNoUyxrVEFBa1Q7U0FDalQ7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQyw2REFBNkQ7WUFDN0QsZ0JBQWdCO1lBQ2hCLGdCQUFnQjtTQUNmO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0dBQW9HO1lBQ3BHLG1JQUFtSTtZQUNuSSxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSUFBK0k7WUFDL0ksbVBBQW1QO1lBQ25QLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCxpUkFBaVI7WUFDalIsNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILHlNQUF5TTtZQUN6TSxrTkFBa047U0FDak47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQywyREFBMkQ7WUFDM0Qsb0JBQW9CO1lBQ3BCLGlCQUFpQjtTQUNoQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9FQUFvRTtZQUNwRSxnSkFBZ0o7WUFDaEosNkhBQTZIO1NBQzVIO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILHdQQUF3UDtZQUN4UCx5TEFBeUw7U0FDeEw7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrTEFBa0w7WUFDbEwsc1JBQXNSO1lBQ3RSLG9RQUFvUTtTQUNuUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSyxxU0FBcVM7WUFDclMsOFBBQThQO1NBQzdQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUxBQXFMO1lBQ3JMLDZVQUE2VTtZQUM3VSw4UkFBOFI7U0FDN1I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw0SUFBNEk7WUFDNUksZ1BBQWdQO1lBQ2hQLGlQQUFpUDtTQUNoUDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBLQUEwSztZQUMxSyxxUEFBcVA7WUFDclAsNE9BQTRPO1NBQzNPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywwQkFBMEI7WUFDNUMscUVBQXFFO1lBQ3JFLGtCQUFrQjtZQUNsQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNJQUFzSTtZQUN0SSw4TEFBOEw7WUFDOUwsMkxBQTJMO1NBQzFMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsNktBQTZLO1lBQzdLLGlSQUFpUjtZQUNqUixxT0FBcU87U0FDcE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4SUFBOEk7WUFDOUksbVFBQW1RO1lBQ25RLHFPQUFxTztTQUNwTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixxU0FBcVM7WUFDclMsNlBBQTZQO1NBQzVQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsaUlBQWlJO1lBQ2pJLHNPQUFzTztZQUN0TyxtUEFBbVA7U0FDbFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpR0FBaUc7WUFDakcsMk1BQTJNO1lBQzNNLDRLQUE0SztTQUMzSztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLDZEQUE2RDtZQUM3RCxnQkFBZ0I7WUFDaEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSUFBK0k7WUFDL0ksbVBBQW1QO1lBQ25QLG1PQUFtTztTQUNsTztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHlIQUF5SDtZQUN6SCwwUkFBMFI7WUFDMVIsNk9BQTZPO1NBQzVPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUhBQXVIO1lBQ3ZILDBNQUEwTTtZQUMxTSxrTkFBa047U0FDak47UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix5SUFBeUk7WUFDekksa1FBQWtRO1lBQ2xRLG9RQUFvUTtTQUNuUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLCtFQUErRTtZQUMvRSx1R0FBdUc7WUFDdkcsOEZBQThGO1NBQzdGO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsMERBQTBEO1lBQzFELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBJQUEwSTtZQUMxSSx5TEFBeUw7WUFDekwsd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUpBQXVKO1lBQ3ZKLDRRQUE0UTtZQUM1USwrUUFBK1E7U0FDOVE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixnTUFBZ007WUFDaE0sMFNBQTBTO1lBQzFTLGdTQUFnUztTQUMvUjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJKQUEySjtZQUMzSixxUUFBcVE7WUFDclEsd09BQXdPO1NBQ3ZPO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsMERBQTBEO1lBQzFELGNBQWM7WUFDZCxjQUFjO1NBQ2I7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SkFBNko7WUFDN0osaU9BQWlPO1lBQ2pPLDhNQUE4TTtTQUM3TTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhKQUE4SjtZQUM5SixxU0FBcVM7WUFDclMscVFBQXFRO1NBQ3BRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUdBQXFHO1lBQ3JHLHNNQUFzTTtZQUN0TSw0SkFBNEo7U0FDM0o7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxRkFBcUY7WUFDckYsaUtBQWlLO1lBQ2pLLHdKQUF3SjtTQUN2SjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtLQUFrSztZQUNsSyx3UUFBd1E7WUFDeFEsOFBBQThQO1NBQzdQO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMseURBQXlEO1lBQ3pELGdCQUFnQjtZQUNoQixlQUFlO1NBQ2Q7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2R0FBNkc7WUFDN0cscU1BQXFNO1lBQ3JNLHFNQUFxTTtTQUNwTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhLQUE4SztZQUM5Syw2UUFBNlE7WUFDN1EsMk9BQTJPO1NBQzFPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLHFQQUFxUDtZQUNyUCxzTkFBc047U0FDck47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLG1CQUFtQjtZQUNyQywwREFBMEQ7WUFDMUQsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDhHQUE4RztZQUM5Ryw4S0FBOEs7WUFDOUssK0pBQStKO1NBQzlKO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUVBQXFFO1lBQ3JFLHFLQUFxSztZQUNySyx1SEFBdUg7U0FDdEg7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrSkFBK0o7WUFDL0osbVBBQW1QO1lBQ25QLGdOQUFnTjtTQUMvTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDRKQUE0SjtZQUM1SiwwUEFBMFA7WUFDMVAsZ1FBQWdRO1NBQy9QO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQyxtQkFBbUI7WUFDckMsd0RBQXdEO1lBQ3hELGdCQUFnQjtZQUNoQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBKQUEwSjtZQUMxSixxUUFBcVE7WUFDclEsb1BBQW9QO1NBQ25QO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseUxBQXlMO1lBQ3pMLDRVQUE0VTtZQUM1VSx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1R0FBdUc7WUFDdkcseVFBQXlRO1lBQ3pRLHVOQUF1TjtTQUN0TjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsbUJBQW1CO1lBQ3JDLG9EQUFvRDtZQUNwRCxjQUFjO1lBQ2QsY0FBYztTQUNiO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsOEZBQThGO1lBQzlGLDhMQUE4TDtZQUM5TCxpS0FBaUs7U0FDaEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwySkFBMko7WUFDM0osOFFBQThRO1lBQzlRLHdQQUF3UDtTQUN2UDtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLGtFQUFrRTtZQUNsRSxlQUFlO1lBQ2YsZUFBZTtTQUNkO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0lBQWtJO1lBQ2xJLHVOQUF1TjtZQUN2Tix5S0FBeUs7U0FDeEs7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtS0FBbUs7WUFDbkssK1NBQStTO1lBQy9TLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixpUEFBaVA7WUFDalAseUxBQXlMO1NBQ3hMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIseURBQXlEO1lBQ3pELHVHQUF1RztZQUN2RywrRkFBK0Y7U0FDOUY7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyx1RUFBdUU7WUFDdkUsMkJBQTJCO1lBQzNCLG1CQUFtQjtTQUNsQjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZHQUE2RztZQUM3RyxrTkFBa047WUFDbE4sd01BQXdNO1NBQ3ZNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0tBQXNLO1lBQ3RLLHlRQUF5UTtZQUN6USx1T0FBdU87U0FDdE87UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixxSUFBcUk7WUFDckksd1FBQXdRO1lBQ3hRLG9OQUFvTjtTQUNuTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySywyUUFBMlE7WUFDM1EscVJBQXFSO1NBQ3BSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsc0hBQXNIO1lBQ3RILCtQQUErUDtZQUMvUCx5TUFBeU07U0FDeE07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssd1RBQXdUO1lBQ3hULGdQQUFnUDtTQUMvTztLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsMEJBQTBCO1lBQzVDLHFEQUFxRDtZQUNyRCxvQkFBb0I7WUFDcEIsZ0JBQWdCO1NBQ2Y7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1RkFBdUY7WUFDdkYsdUtBQXVLO1lBQ3ZLLHlLQUF5SztTQUN4SztRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVLQUF1SztZQUN2SyxtUkFBbVI7WUFDblIsaVBBQWlQO1NBQ2hQO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0tBQWtLO1lBQ2xLLGdUQUFnVDtZQUNoVCxxUEFBcVA7U0FDcFA7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwrS0FBK0s7WUFDL0sseVFBQXlRO1lBQ3pRLG1RQUFtUTtTQUNsUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG9HQUFvRztZQUNwRyxnT0FBZ087WUFDaE8sa01BQWtNO1NBQ2pNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUZBQXVGO1lBQ3ZGLCtFQUErRTtZQUMvRSx1SUFBdUk7U0FDdEk7S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyxtRUFBbUU7WUFDbkUsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRywwS0FBMEs7WUFDMUssb0xBQW9MO1NBQ25MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUpBQW1KO1lBQ25KLCtTQUErUztZQUMvUyw0UEFBNFA7U0FDM1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssMFBBQTBQO1lBQzFQLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySywrVkFBK1Y7WUFDL1YscVFBQXFRO1NBQ3BRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywwQkFBMEI7WUFDNUMsb0VBQW9FO1lBQ3BFLG1CQUFtQjtZQUNuQixnQkFBZ0I7U0FDZjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGdHQUFnRztZQUNoRywySUFBMkk7WUFDM0ksNkxBQTZMO1NBQzVMO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLGdPQUFnTztZQUNoTyx1U0FBdVM7U0FDdFM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SUFBNkk7WUFDN0ksb09BQW9PO1lBQ3BPLDBOQUEwTjtTQUN6TjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDBLQUEwSztZQUMxSyx3UkFBd1I7WUFDeFIsa1FBQWtRO1NBQ2pRO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa0pBQWtKO1lBQ2xKLHFRQUFxUTtZQUNyUSxrUUFBa1E7U0FDalE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qix1SEFBdUg7WUFDdkgsd1BBQXdQO1lBQ3hQLHlMQUF5TDtTQUN4TDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtMQUFrTDtZQUNsTCxzUkFBc1I7WUFDdFIsb1FBQW9RO1NBQ25RO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywwQkFBMEI7WUFDNUMsd0VBQXdFO1lBQ3hFLGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsbU9BQW1PO1lBQ25PLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixvTkFBb047WUFDcE4sOE5BQThOO1NBQzdOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLDRRQUE0UTtZQUM1USxnUEFBZ1A7U0FDL087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsME1BQTBNO1lBQzFNLGdNQUFnTTtTQUMvTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyxpVUFBaVU7WUFDalUsd1JBQXdSO1NBQ3ZSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLDZNQUE2TTtZQUM3TSxrTkFBa047U0FDak47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyxnRUFBZ0U7WUFDaEUsY0FBYztZQUNkLGNBQWM7U0FDYjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLGtHQUFrRztZQUNsRyw0S0FBNEs7WUFDNUssb0xBQW9MO1NBQ25MO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsb0pBQW9KO1lBQ3BKLCtTQUErUztZQUMvUyw0UEFBNFA7U0FDM1A7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixrS0FBa0s7WUFDbEssMFJBQTBSO1lBQzFSLHFRQUFxUTtTQUNwUTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHFLQUFxSztZQUNySyxvVUFBb1U7WUFDcFUscVFBQXFRO1NBQ3BRO0tBQ0E7SUFDRDtRQUNBO1lBQ0EsTUFBTSxDQUFDLFVBQVUsR0FBQywwQkFBMEI7WUFDNUMsd0VBQXdFO1lBQ3hFLGlCQUFpQjtZQUNqQixpQkFBaUI7U0FDaEI7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw2SEFBNkg7WUFDN0gsbU9BQW1PO1lBQ25PLG9NQUFvTTtTQUNuTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVKQUF1SjtZQUN2SixvTkFBb047WUFDcE4sOE5BQThOO1NBQzdOO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUtBQW1LO1lBQ25LLDRRQUE0UTtZQUM1USxnUEFBZ1A7U0FDL087UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixpSEFBaUg7WUFDakgsME1BQTBNO1lBQzFNLGdNQUFnTTtTQUMvTDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLG1LQUFtSztZQUNuSyxpVUFBaVU7WUFDalUsd1JBQXdSO1NBQ3ZSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIscUpBQXFKO1lBQ3JKLDZNQUE2TTtZQUM3TSxrTkFBa047U0FDak47S0FDQTtJQUNEO1FBQ0E7WUFDQSxNQUFNLENBQUMsVUFBVSxHQUFDLGtCQUFrQjtZQUNwQyx1REFBdUQ7WUFDdkQsZUFBZTtZQUNmLGVBQWU7U0FDZDtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDZIQUE2SDtZQUM3SCx1UUFBdVE7WUFDdlEscU1BQXFNO1NBQ3BNO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsdUtBQXVLO1lBQ3ZLLHNTQUFzUztZQUN0Uyx5UUFBeVE7U0FDeFE7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixtREFBbUQ7WUFDbkQsbUhBQW1IO1lBQ25ILHNGQUFzRjtTQUNyRjtLQUNBO0lBQ0Q7UUFDQTtZQUNBLE1BQU0sQ0FBQyxVQUFVLEdBQUMsd0JBQXdCO1lBQzFDLDREQUE0RDtZQUM1RCxvQkFBb0I7WUFDcEIsa0JBQWtCO1NBQ2pCO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsd0VBQXdFO1lBQ3hFLHlJQUF5STtZQUN6SSw0SEFBNEg7U0FDM0g7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4Qiw4S0FBOEs7WUFDOUssK1BBQStQO1lBQy9QLGdPQUFnTztTQUMvTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHNLQUFzSztZQUN0SywrUUFBK1E7WUFDL1EsaU9BQWlPO1NBQ2hPO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsbUhBQW1IO1lBQ25ILGtMQUFrTDtZQUNsTCxvTUFBb007U0FDbk07UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QiwwR0FBMEc7WUFDMUcseU5BQXlOO1lBQ3pOLGlNQUFpTTtTQUNoTTtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLDJLQUEySztZQUMzSyw0UUFBNFE7WUFDNVEsNlJBQTZSO1NBQzVSO1FBQ0Q7WUFDQSxNQUFNLENBQUMsSUFBSSxHQUFDLFlBQVk7WUFDeEIsa05BQWtOO1lBQ2xOLG9WQUFvVjtZQUNwViw2U0FBNlM7U0FDNVM7UUFDRDtZQUNBLE1BQU0sQ0FBQyxJQUFJLEdBQUMsWUFBWTtZQUN4QixvSkFBb0o7WUFDcEosbU1BQW1NO1lBQ25NLHFOQUFxTjtTQUNwTjtRQUNEO1lBQ0EsTUFBTSxDQUFDLElBQUksR0FBQyxZQUFZO1lBQ3hCLHVGQUF1RjtZQUN2RixnTEFBZ0w7WUFDaEwseUtBQXlLO1NBQ3hLO0tBQ0E7Q0FDQSxDQUFDIn0=

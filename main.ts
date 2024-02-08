@@ -169,7 +169,7 @@ function createHtmlElementForPrayer(args: {
 
   if (args.titleBase)
     htmlRow.dataset.root = args.titleBase.replace(/Part\d+/, "");
-
+    
   if (args.actorClass) htmlRow.classList.add(args.actorClass);
   if (args.actorClass && args.actorClass.includes("Title")) {
     htmlRow.addEventListener("click", (e) => {
@@ -976,10 +976,8 @@ async function addDataGroupsToContainerChildren(
   //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
   let nextSibling = titleRow.nextElementSibling as HTMLElement;
   while (
-    nextSibling
-    &&
-    !isTitlesContainer(nextSibling)
-    &&
+    nextSibling &&
+    !isTitlesContainer(nextSibling) &&
     nextSibling.dataset.root //We need this in order to exclude all the 'Expandable' divs or inlineBtns divs
     //  !nextSibling.classList.contains(titleClass)
     /*     &&
@@ -1566,15 +1564,17 @@ function toggleAmplifyText(target: HTMLElement, myClass: string) {
     return;
   }
   let amplified: [[string, boolean]] = JSON.parse(localStorage.textAmplified);
-  
 
-    Array.from(containerDiv.querySelectorAll('P') as NodeListOf<HTMLParagraphElement>)
-      .filter(p => p.lang === target.lang)
-      .forEach(p => {
-        p.classList.toggle(myClass);
-        Array.from(p.children)
-          .forEach(child => child.classList.toggle(myClass))
-      });
+  Array.from(
+    containerDiv.querySelectorAll("P") as NodeListOf<HTMLParagraphElement>
+  )
+    .filter((p) => p.lang === target.lang)
+    .forEach((p) => {
+      p.classList.toggle(myClass);
+      Array.from(p.children).forEach((child) =>
+        child.classList.toggle(myClass)
+      );
+    });
   if (target.classList.contains(myClass)) {
     //it means that the class was added (not removed) when the user dbl clicked
     amplified.filter((el) => el[0] === target.lang.toUpperCase())[0][1] = true;
@@ -1693,7 +1693,7 @@ function showPrayers(args: {
       else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
       tableTitle += date; //we add the date to the title of the table
       tables.push(
-        findTableInPrayersArray(
+        findTable(
           tableTitle,
           getTablesArrayFromTitlePrefix(tableTitle)
         ) as string[][]
@@ -1719,6 +1719,7 @@ function showPrayers(args: {
 
   function processRow(row: string[], titleBase: string): HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
+    
     if (row[0].startsWith(Prefix.placeHolder))
       return processPlaceHolder(row, titleBase) || undefined;
     //If the row is a placeholder, we retrieve the table refrenced in row[1]
@@ -1734,11 +1735,9 @@ function showPrayers(args: {
     //We retrieve the tables' array (which is a string[][][]) from the title of the table in row[1]
 
     //We retrieve the table itself
-    let tbl = findTableInPrayersArray(
-      row[1],
-      getTablesArrayFromTitlePrefix(row[1]),
-      { equal: true }
-    ) as string[][];
+    let tbl = findTable(row[1], getTablesArrayFromTitlePrefix(row[1]), {
+      equal: true,
+    }) as string[][];
 
     if (!tbl)
       return console.log(
@@ -1949,10 +1948,9 @@ async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
   if (localStorage.displayMode === displayModes[1]) return; //We don't amplify the text if we are in the 'Presentation Mode'
 
   let langs = JSON.parse(localStorage.textAmplified) as [string, boolean][];
-  langs = langs.filter(lang => lang[1] === true);
+  langs = langs.filter((lang) => lang[1] === true);
 
-  htmlRows
-    .forEach(row => {
+  htmlRows.forEach((row) => {
     //looping the rows in the htmlRows []
     Array.from(row.children)
       //looping the children of each row (these children are supposedly paragraph elements)
@@ -2071,16 +2069,17 @@ function collapseAllTitles(
 function selectElementsByDataRoot(
   container: HTMLElement | DocumentFragment,
   dataRoot: string,
-  options: {
+  options?: {
     equal?: boolean;
     includes?: boolean;
     startsWith?: boolean;
     endsWith?: boolean;
-  } = { equal: true }
+  }
 ): HTMLDivElement[] {
-  let children =
-    Array.from(container.querySelectorAll("div"))
-    .filter(div => div.dataset.root) as HTMLDivElement[];
+  let children = Array.from(container.querySelectorAll("div")).filter(
+    (div) => div.dataset.root
+  ) as HTMLDivElement[];
+  if (!options) options = { equal: true };
   if (options.equal)
     return children.filter((div) => div.dataset.root === dataRoot);
   else if (options.includes)
@@ -2089,7 +2088,7 @@ function selectElementsByDataRoot(
     return children.filter((div) => div.dataset.root.startsWith(dataRoot));
   else if (options.endsWith)
     return children.filter((div) => div.dataset.root.endsWith(dataRoot));
-  }
+}
 
 /**
  *
@@ -2156,25 +2155,24 @@ async function showMultipleChoicePrayersButton(args: {
     let childBtn: Button;
 
     (function createButtonNext() {
-      if (prayersMasterBtn.children.length <= groupOfNumber ) return;//We don't create next button if the nubmer of optional prayers is less or equal to the defined number of prayers to be displayed each time
+      if (prayersMasterBtn.children.length <= groupOfNumber) return; //We don't create next button if the nubmer of optional prayers is less or equal to the defined number of prayers to be displayed each time
       let next: Button = new Button({
         btnID: "btnNext",
         label: { AR: "التالي", FR: "Suivants" },
-        cssClass: inlineBtnClass
+        cssClass: inlineBtnClass,
       });
 
-       //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
-    if (prayersMasterBtn.children.length - startAt > groupOfNumber
-      ) {
+      //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
+      if (prayersMasterBtn.children.length - startAt > groupOfNumber) {
         //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
         next.onClick = () => btnNextOnClick(true);
-      } else if (prayersMasterBtn.children.length - startAt <= groupOfNumber){
+      } else if (prayersMasterBtn.children.length - startAt <= groupOfNumber) {
         next.label.AR = "عودة";
         next.label.FR = "Retour";
         next.onClick = () => btnNextOnClick(false);
       }
 
-      if (!next.onClick) return;//If no onClick function was assigned to next, we do not create the next button
+      if (!next.onClick) return; //If no onClick function was assigned to next, we do not create the next button
       createBtn({
         btn: next,
         btnsContainer: expandableBtnsPannel,
@@ -2183,19 +2181,18 @@ async function showMultipleChoicePrayersButton(args: {
         onClick: next.onClick,
       }); //notice that we are appending next to inlineBtnsDiv directly not to newDiv (because newDiv has a display = 'grid' of 2 columns. If we append to it, 'next' button will be placed in the 1st cell of the last row. It will not be centered). Notice also that we are setting the 'clear' argument of createBtn() to false in order to prevent removing the 'Go Back' button when 'next' is passed to showchildButtonsOrPrayers()
 
-      function btnNextOnClick(forward:boolean = true) {
+      function btnNextOnClick(forward: boolean = true) {
         //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
-            newDiv.innerHTML = "";
-            //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
-            expandableBtnsPannel.querySelector("#" + next.btnID).remove();
-            //We set the starting index for the next group of inline buttons
-            if (forward) startAt += groupOfNumber;
-            else startAt = 0;
-        
-            //We call showGroupOfSixPrayers() with the new startAt index
-            showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
+        newDiv.innerHTML = "";
+        //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
+        expandableBtnsPannel.querySelector("#" + next.btnID).remove();
+        //We set the starting index for the next group of inline buttons
+        if (forward) startAt += groupOfNumber;
+        else startAt = 0;
+
+        //We call showGroupOfSixPrayers() with the new startAt index
+        showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
       }
-      
     })();
 
     (function createPrayersButtons() {
@@ -2215,7 +2212,7 @@ async function showMultipleChoicePrayersButton(args: {
         });
       }
     })();
-    }
+  }
 
   //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
   createBtn({
@@ -2263,9 +2260,15 @@ async function showMultipleChoicePrayersButton(args: {
 
           if (masterBtn.dataset.shown) {
             //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute, which  we had is stored as data-displayed-Fraction attribued of the masterBtnDiv
-            Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
-              .filter(div =>div.dataset.optionalPrayer && div.dataset.optionalPrayer === masterBtn.dataset.shown)
-              .forEach(div => div.remove());
+            Array.from(
+              containerDiv.children as HTMLCollectionOf<HTMLDivElement>
+            )
+              .filter(
+                (div) =>
+                  div.dataset.optionalPrayer &&
+                  div.dataset.optionalPrayer === masterBtn.dataset.shown
+              )
+              .forEach((div) => div.remove());
           }
 
           //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
@@ -2338,7 +2341,7 @@ function getUniqueValuesFromArray(
  * @param {equal?:boolean, startsWith?:boolean, endsWith?:boolean, includes?:boolean} Options - the matching options by which the function will search for the table: equal means the title of table in the array mush be exactly matching tableTitle, startsWith, means it must start with tableTitle, etc.
  * @returns {string[][] | void} - an array representing the Word Table if found or 'undefined' if not found
  */
-function findTableInPrayersArray(
+function findTable(
   tableTitle: string,
   prayersArray: string[][][],
   options: {
@@ -3044,14 +3047,15 @@ function playingWithInstalation() {
 
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
-  if (PrayersArray.length < 1)  return console.log("PrayersArray is empty = ", PrayersArray);
+  if (PrayersArray.length < 1)
+    return console.log("PrayersArray is empty = ", PrayersArray);
 
   let array: [string, string, Function], BOH;
 
-  PrayersArray.forEach(table => {
+  PrayersArray.forEach((table) => {
     if (table.length < 1 || table[0].length < 1) return;
-    
-    array = PrayersArraysKeys.find(array => table[0][0].startsWith(array[0]));
+
+    array = PrayersArraysKeys.find((array) => table[0][0].startsWith(array[0]));
 
     if (array) array[2]().push(table);
   });

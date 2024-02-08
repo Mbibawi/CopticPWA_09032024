@@ -1,9 +1,10 @@
-ReadingsArrays.KatholikonArray= [[
+ReadingsArrays.KatholikonArray = [
   [
-  Prefix.katholikon+"&D=0101&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 17 )", 
-  "1 Jean 2 : 7-17", 
-  "1 John 2:7-17", 
+  [
+  Prefix.katholikon+"&D=0101||043rdSunday||122ndSunday||Pntl1stSunday&C=Title", 
+  "الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 7-17)", 
+  "1 Jean (2: 7-17)",
+  "1 John (2: 7-17)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -14,7 +15,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   Prefix.same+"&C=NoActor", 
   "أيضاً وصيَّةً جديدةً أَكتُبُ إليكمْ، ما هو حقٌّ فيه وفيكُم، أنَّ الظُّلمةَ قد جازتْ، والنُّور الحقيقيَّ الآن يُضيءُ. مَنْ يقول أنَّهُ في النُّور وهو يُبغضُ أخاهُ، فهو إلى الآن في الظُّلمةِ.", 
-  "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable.9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.", 
+  "8 Néanmoins, c'est un commandement nouveau que je vous écris-cela est vrai en lui et en vous-puisque les ténèbres passent et que déjà luit la lumière véritable.9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.", 
   "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.", 
   ],
   [
@@ -38,7 +39,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   Prefix.same+"&C=NoActor", 
   "لا تحبُّوا العالمَ ولا الأشياءَ التي في العالمِ. إذ أحَبَّ أحدٌ العالمَ فليس فيه مَحبَّةُ الآبِ. لأنَّ كُلَّ ما في العالمِ: شهوةَ الجسدِ، وشهوةَ العُيونِ، وتَعظُّمَ المعيشةِ، فهذه ليست من الآبِ بل مِنْ العالمِ.", 
-  "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.", 
+  "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, puisque tout ce qui est dans le monde-la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.", 
   "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.", 
   ],
   [
@@ -49,28 +50,106 @@ ReadingsArrays.KatholikonArray= [[
   ],
   ],
   [
+      [
+      Prefix.katholikon+"&D=Jonah1||1203&C=Title", 
+      "الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1: 1-13)", 
+      "Jude (1: 1-13)", 
+      "Jude (1: 1-13)", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "يَهُوذَا، عَبْدُ يَسُوعَ الْمَسِيحِ، وَأَخُو يَعْقُوبَ، إِلَى الْمَدْعُوِّينَ الْمُقَدَّسِينَ فِي اللهِ الآبِ، وَالْمَحْفُوظِينَ لِيَسُوعَ الْمَسِيحِ: لِتَكْثُرْ لَكُمُ الرَّحْمَةُ وَالسَّلاَمُ وَالْمَحَبَّةُ أَيُّهَا الأَحِبَّاءُ، إِذْ كُنْتُ أَصْنَعُ كُلَّ الْجَهْدِ لأَكْتُبَ إِلَيْكُمْ عَنِ الْخَلاَصِ الْمُشْتَرَكِ، اضْطُرِرْتُ أَنْ أَكْتُبَ إِلَيْكُمْ وَاعِظًا أَنْ تَجْتَهِدُوا لأَجْلِ الإِيمَانِ الْمُسَلَّمِ مَرَّةً لِلْقِدِّيسِينَ، لأَنَّهُ دَخَلَ خُلْسَةً أُنَاسٌ قَدْ كُتِبُوا مُنْذُ الْقَدِيمِ لِهذِهِ الدَّيْنُونَةِ، فُجَّارٌ، يُحَوِّلُونَ نِعْمَةَ إِلهِنَا إِلَى الدَّعَارَةِ، وَيُنْكِرُونَ السَّيِّدَ الْوَحِيدَ: اللهَ وَرَبَّنَا يَسُوعَ الْمَسِيحَ.", 
+      "01 Jude, serviteur de Jésus Christ et frère de Jacques, aux appelés qui sont aimés de Dieu le Père et gardés pour Jésus Christ : 02 que la miséricorde, la paix et l’amour vous soient accordés en abondance. 03 Bien-aimés, j’avais la ferme intention de vous écrire au sujet du salut qui nous est commun ; or me voici dans l’obligation de le faire pour vous exhorter à combattre pour la foi qui a été transmise aux fidèles une fois pour toutes. 04 Car il s’est infiltré parmi vous des individus, qui sont marqués depuis longtemps en vue de ce jugement, des impies qui tournent la grâce de notre Dieu en prétexte à la débauche, et qui renient notre seul maître et Seigneur, Jésus Christ.", 
+      "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you. 3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints. 4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "فَأُرِيدُ أَنْ أُذَكِّرَكُمْ، وَلَوْ عَلِمْتُمْ هذَا مَرَّةً، أَنَّ الرَّبَّ بَعْدَمَا خَلَّصَ الشَّعْبَ مِنْ أَرْضِ مِصْرَ، أَهْلَكَ أَيْضًا الَّذِينَ لَمْ يُؤْمِنُوا وَالْمَلاَئِكَةُ الَّذِينَ لَمْ يَحْفَظُوا رِيَاسَتَهُمْ، بَلْ تَرَكُوا مَسْكَنَهُمْ حَفِظَهُمْ إِلَى دَيْنُونَةِ الْيَوْمِ الْعَظِيمِ بِقُيُودٍ أَبَدِيَّةٍ تَحْتَ الظَّلاَمِ، كَمَا أَنَّ سَدُومَ وَعَمُورَةَ وَالْمُدُنَ الَّتِي حَوْلَهُمَا، إِذْ زَنَتْ عَلَى طَرِيق مِثْلِهِمَا، وَمَضَتْ وَرَاءَ جَسَدٍ آخَرَ، جُعِلَتْ عِبْرَةً مُكَابِدَةً عِقَابَ نَارٍ أَبَدِيَّةٍ.", 
+      "05 Bien que vous sachiez déjà tout cela, je veux néanmoins vous le rappeler : le Seigneur, qui avait sauvé une fois pour toutes son peuple en le faisant sortir du pays d’Égypte, a pourtant supprimé ensuite ceux qui ont refusé de croire ; 06 quant aux anges qui n’ont pas gardé la dignité de leur rang, mais ont quitté la demeure qui était la leur, le Seigneur les maintient enchaînés à perpétuité dans les ténèbres en vue du jugement du grand jour ; 07 il en va de même pour Sodome et Gomorrhe et les villes d’alentour : elles s’étaient livrées à la prostitution d’une manière semblable à ces anges-là et elles étaient allées avec des êtres d’une autre nature ; elles sont soumises pour l’exemple au châtiment du feu éternel.", 
+      "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "وَلكِنْ كَذلِكَ هؤُلاَءِ أَيْضًا، الْمُحْتَلِمُونَ، يُنَجِّسُونَ الْجَسَدَ، وَيَتَهَاوَنُونَ بِالسِّيَادَةِ، وَيَفْتَرُونَ عَلَى ذَوِي الأَمْجَادِ. وَأَمَّا مِيخَائِيلُ رَئِيسُ الْمَلاَئِكَةِ، فَلَمَّا خَاصَمَ إِبْلِيسَ مُحَاجًّا عَنْ جَسَدِ مُوسَى، لَمْ يَجْسُرْ أَنْ يُورِدَ حُكْمَ افْتِرَاءٍ، بَلْ قَالَ: \"لِيَنْتَهِرْكَ الرَّبُّ\". وَلكِنَّ هؤُلاَءِ يَفْتَرُونَ عَلَى مَا لاَ يَعْلَمُونَ وَأَمَّا مَا يَفْهَمُونَهُ بِالطَّبِيعَةِ، كَالْحَيَوَانَاتِ غَيْرِ النَّاطِقَةِ، فَفِي ذلِكَ يَفْسُدُونَ. ", 
+      "08 Et pourtant, ces coureurs de songes font la même chose : ils souillent la chair, ils méprisent la seigneurie de Dieu, ils outragent les anges appelés Gloires. 09 Or l’archange Michel, discutant avec le démon dans la querelle au sujet du corps de Moïse, n’osa pas porter contre lui un jugement qui l’outrage ; il lui dit seulement : « Que le Seigneur te blâme ! » 10 Eux, au contraire, tout ce qu’ils ne connaissent pas, ils l’outragent ; et tout ce qu’ils savent les corrompt, car ils ne le saisissent que par l’instinct, comme des bêtes privées de raison.", 
+      "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries. 9 Yet Michael the archangel, in contending with the devil, when he disputed about the body of Moses, dared not bring against him a reviling accusation, but said, \"The Lord rebuke you!'' 10 But these speak evil of whatever they do not know; and whatever they know naturally, like brute beasts, in these things they corrupt themselves.", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "وَيْلٌ لَهُمْ لأَنَّهُمْ سَلَكُوا طَرِيقَ قَايِينَ، وَانْصَبُّوا إِلَى ضَلاَلَةِ بَلْعَامَ لأَجْلِ أُجْرَةٍ، وَهَلَكُوا فِي مُشَاجَرَةِ قُورَحَ هؤُلاَءِ صُخُورٌ فِي وَلاَئِمِكُمُ الْمَحَبِّيَّةِ، صَانِعِينَ وَلاَئِمَ مَعًا بِلاَ خَوْفٍ، رَاعِينَ أَنْفُسَهُمْ. غُيُومٌ بِلاَ مَاءٍ تَحْمِلُهَا الرِّيَاحُ. أَشْجَارٌ خَرِيفِيَّةٌ بِلاَ ثَمَرٍ مَيِّتَةٌ مُضَاعَفًا، مُقْتَلَعَةٌ. أَمْوَاجُ بَحْرٍ هَائِجَةٌ مُزْبِدَةٌ بِخِزْيِهِمْ. نُجُومٌ تَائِهَةٌ مَحْفُوظٌ لَهَا قَتَامُ الظَّلاَمِ إِلَى الأَبَدِ.", 
+      "11 Malheureux sont-ils ! Ils sont partis sur le chemin de Caïn ; pour un salaire, ils se sont laissés emporter par l’égarement de Balaam ; ils ont péri par la même révolte que Coré. 12 Ces individus sont une souillure pour vos repas fraternels, ils font bombance sans pudeur, ils ne se préoccupent que d’eux-mêmes : nuages sans eau emportés par le vent ; arbres de fin d’automne sans fruits, deux fois morts, déracinés ; 13 flots sauvages de la mer, crachant l’écume de leur propre honte ; astres errants, pour lesquels est réservée à jamais l’obscurité des ténèbres.", 
+      "11 Woe to them! For they have gone in the way of Cain, have run greedily in the error of Balaam for profit, and perished in the rebellion of Korah. 12 These are spots in your love feasts, while they feast with you without fear, serving only themselves. They are clouds without water, carried about by the winds; late autumn trees without fruit, twice dead, pulled up by the roots; 13 raging waves of the sea, foaming up their own shame; wandering stars for whom is reserved the blackness of darkness forever.", 
+      ],
+  ],
   [
-  Prefix.katholikon+"&D=011stSunday&C=Title", 
-  " من رسالة يعقوب الرسول( 1 : 22 ـ 27 )", 
-  "Jacques 1:22-27", 
+  [
+  Prefix.katholikon+"&D=Jonah2&C=Title", 
+  "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (4: 3-11)", 
+  "1 Pierre (4: 3-11)", 
+  "1 Peter (4: 3-11)", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "لأَنَّ زَمَانَ الْحَيَاةِ الَّذِي مَضَى يَكْفِينَا لِنَكُونَ قَدْ عَمِلْنَا إِرَادَةَ الأُمَمِ، سَالِكِينَ فِي الدَّعَارَةِ وَالشَّهَوَاتِ، وَإِدْمَانِ الْخَمْرِ، وَالْبَطَرِ، وَالْمُنَادَمَاتِ، وَعِبَادَةِ الأَوْثَانِ الْمُحَرَّمَةِ، الأَمْرُ الَّذِي فِيهِ يَسْتَغْرِبُونَ أَنَّكُمْ لَسْتُمْ تَرْكُضُونَ مَعَهُمْ إِلَى فَيْضِ هذِهِ الْخَلاَعَةِ عَيْنِهَا، مُجَدِّفِينَ الَّذِينَ سَوْفَ يُعْطُونَ حِسَابًا لِلَّذِي هُوَ عَلَى اسْتِعْدَادٍ أَنْ يَدِينَ الأَحْيَاءَ وَالأَمْوَاتَ.", 
+  "03 Il a assez duré, le temps passé à faire ce que veulent les gens des nations, quand vous vous laissiez aller aux débauches, aux convoitises, à l’ivrognerie, aux orgies, aux beuveries et aux cultes interdits des idoles. 04 À ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers les mêmes débordements d’inconduite, et ils vous couvrent d’injures. 05 Ils auront des comptes à rendre à Celui qui se tient prêt à juger les vivants et les morts.", 
   "", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كونوا عَامِلِينَ بالكلمةِ، لا سَامِعِينَ فقط خادِعِينَ نُفوسَكُم وحدَكُم. أنَّ مَنْ يَسمعُ الكلمةَ ولا يَعملُ بها، فهذا يُشبِهُ رَجُلاً نَاظِراً وَجهَ ولادتهِ في مرآةٍ، فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نسِيَ الهيئةَ التي كان فيها.", 
-  "22 Pratiquez la parole et ne l’écoutez pas seulement, en vous abusant par de faux raisonnements. 23 Car si quelqu’un écoute la parole et ne la pratique pas, il est semblable à un homme qui regarde dans un miroir son visage naturel", 
+  "فَإِنَّهُ لأَجْلِ هذَا بُشِّرَ الْمَوْتى أَيْضًا، لِكَيْ يُدَانُوا حَسَبَ النَّاسِ بِالْجَسَدِ، وَلكِنْ لِيَحْيَوْا حَسَبَ اللهِ بِالرُّوحِ.", 
+  "06 C’est pour cela que l’Évangile a été annoncé aussi aux morts, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu dans l’Esprit.", 
   "", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا مَنْ تَطلعَ في نَاموسِ الحُرِّيَّةِ الكامِلِ وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسياً بل مُمارِساً للعملِ، فهذا يَكونُ مَغبوطاً في ما يعملهُ. ومَن يَظنُّ في نفسهِ أنَّهُ دَيِّنٌ، ولا يُلجِمُ لِسَانَهُ، بل يَخدَعُ قَلبَهُ، فعِبادةُ هذا بَاطِلةٌ.", 
-  "25 Mais celui qui a plongé les regards dans la loi parfaite, la loi de la liberté, et qui persévère, non pas en l’écoutant pour l’oublier, mais en la pratiquant activement, celui–là sera heureux dans son action même. 26 Si quelqu’un pense être religieux, sans tenir sa langue en bride, mais en trompant son cœur, la religion de cet homme est vaine.", 
+  "وَإِنَّمَا نِهَايَةُ كُلِّ شَيْءٍ قَدِ اقْتَرَبَتْ، فَتَعَقَّلُوا وَاصْحُوا لِلصَّلَوَاتِ. وَلكِنْ قَبْلَ كُلِّ شَيْءٍ، لِتَكُنْ مَحَبَّتُكُمْ بَعْضِكُمْ لِبَعْضٍ شَدِيدَةً، لأَنَّ الْمَحَبَّةَ تَسْتُرُ كَثْرَةً مِنَ الْخَطَايَا.", 
+  "07 La fin de toutes choses est proche. Soyez donc raisonnables et sobres en vue de la prière. 08 Avant tout, ayez entre vous une charité intense, car la charité couvre une multitude de péchés.", 
   "", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا الدِّيانةُ الطَّاهِرَةُ غَيرُ الدنِسةِ عندَ اللهِ الآبِ هى هذه: افتِقادُ اليَتامَى والأرَامِلِ في ضِيقَتِهِم، وأنْ يحفظَ الإنسانُ نَفسَهُ مِنَ العالمِ بلا دَنَسٍ.", 
-  "27 La religion pure et sans tache, devant Dieu le Père, consiste à visiter les orphelins et les veuves dans leurs afflictions, et à se garder des souillures du monde.", 
+  "كُونُوا مُضِيفِينَ بَعْضُكُمْ بَعْضًا بِلاَ دَمْدَمَةٍ لِيَكُنْ كُلُّ وَاحِدٍ بِحَسَبِ مَا أَخَذَ مَوْهِبَةً، يَخْدِمُ بِهَا بَعْضُكُمْ بَعْضًا، كَوُكَلاَءَ صَالِحِينَ عَلَى نِعْمَةِ اللهِ الْمُتَنَوِّعَةِ: إِنْ كَانَ يَتَكَلَّمُ أَحَدٌ فَكَأَقْوَالِ اللهِ وَإِنْ كَانَ يَخْدِمُ أَحَدٌ فَكَأَنَّهُ مِنْ قُوَّةٍ يَمْنَحُهَا اللهُ، لِكَيْ يَتَمَجَّدَ اللهُ فِي كُلِّ شَيْءٍ بِيَسُوعَ الْمَسِيحِ، الَّذِي لَهُ الْمَجْدُ وَالسُّلْطَانُ إِلَى أَبَدِ الآبِدِينَ آمِينَ.\n", 
+  "09 Pratiquez l’hospitalité les uns envers les autres sans récriminer. 10 Ce que chacun de vous a reçu comme don de la grâce, mettez-le au service des autres, en bons gérants de la grâce de Dieu qui est si diverse : 11 si quelqu’un parle, qu’il le fasse comme pour des paroles de Dieu ; celui qui assure le service, qu’il s’en acquitte comme avec la force procurée par Dieu. Ainsi, en tout, Dieu sera glorifié par Jésus Christ, à qui appartiennent la gloire et la souveraineté pour les siècles des siècles. Amen. ", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.katholikon+"&D=Jonah3||GL42||Pntl48&C=Title", 
+  "الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2: 12-17)", 
+  "1 Saint Jean (2: 12-17)", 
+  "EN", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَوْلاَدُ، لأَنَّهُ قَدْ غُفِرَتْ لَكُمُ الْخَطَايَا مِنْ أَجْلِ اسْمِهِ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الآبَاءُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الَّذِي مِنَ الْبَدْءِ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَحْدَاثُ، لأَنَّكُمْ قَدْ غَلَبْتُمُ الشِّرِّيرَ. أَكْتُبُ إِلَيْكُمْ أَيُّهَا الأَوْلاَدُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الآبَ.", 
+  "12 Je vous l’écris, petits enfants : Vos péchés vous sont remis à cause du nom de Jésus. 13 Je vous l’écris, parents : Vous connaissez celui qui existe depuis le commencement. Je vous l’écris, jeunes gens : Vous avez vaincu le Mauvais. 14 Je vous l’ai écrit, enfants : Vous connaissez le Père.", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "كَتَبْتُ إِلَيْكُمْ أَيُّهَا الآبَاءُ، لأَنَّكُمْ قَدْ عَرَفْتُمُ الَّذِي مِنَ الْبَدْءِ. كَتَبْتُ إِلَيْكُمْ أَيُّهَا الأَحْدَاثُ، لأَنَّكُمْ أَقْوِيَاءُ، وَكَلِمَةُ اللهِ ثَابِتَةٌ فِيكُمْ، وَقَدْ غَلَبْتُمُ الشِّرِّيرَ.", 
+  "Je vous l’ai écrit, parents : Vous connaissez celui qui existe depuis le commencement. Je vous l’ai écrit, jeunes gens : Vous êtes forts, la parole de Dieu demeure en vous, vous avez vaincu le Mauvais.", 
+  "", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "لاَ تُحِبُّوا الْعَالَمَ وَلاَ الأَشْيَاءَ الَّتِي فِي الْعَالَمِ إِنْ أَحَبَّ أَحَدٌ الْعَالَمَ فَلَيْسَتْ فِيهِ مَحَبَّةُ الآبِ لأَنَّ كُلَّ مَا فِي الْعَالَمِ: شَهْوَةَ الْجَسَدِ، وَشَهْوَةَ الْعُيُونِ، وَتَعَظُّمَ الْمَعِيشَةِ، لَيْسَ مِنَ الآبِ بَلْ مِنَ الْعَالَمِ وَالْعَالَمُ يَمْضِي وَشَهْوَتُهُ، وَأَمَّا الَّذِي يَصْنَعُ مَشِيئَةَ اللهِ فَيَثْبُتُ إِلَى الأَبَدِ.", 
+  "15 N’aimez pas le monde, ni ce qui est dans le monde. Si quelqu’un aime le monde, l’amour du Père n’est pas en lui. 16 Tout ce qu’il y a dans le monde – la convoitise de la chair, la convoitise des yeux, l’arrogance de la richesse –, tout cela ne vient pas du Père, mais du monde. 17 Or, le monde passe, et sa convoitise avec lui. Mais celui qui fait la volonté de Dieu demeure pour toujours.", 
+  "", 
+  ],
+  ],
+  [
+  [
+  Prefix.katholikon+"&D=Jonah4&C=Title", 
+  "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3: 17-22)", 
+  "1 Saint Pierre (3: 17-22)", 
+  "1 Peter (3: 17-22)", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "لأَنَّ تَأَلُّمَكُمْ إِنْ شَاءَتْ مَشِيئَةُ اللهِ، وَأَنْتُمْ صَانِعُونَ خَيْرًا، أَفْضَلُ مِنْهُ وَأَنْتُمْ صَانِعُونَ شَرًّا فَإِنَّ الْمَسِيحَ أَيْضًا تَأَلَّمَ مَرَّةً وَاحِدَةً مِنْ أَجْلِ الْخَطَايَا، الْبَارُّ مِنْ أَجْلِ الأَثَمَةِ، لِكَيْ يُقَرِّبَنَا إِلَى اللهِ، مُمَاتًا فِي الْجَسَدِ وَلكِنْ مُحْيىً فِي الرُّوحِ، الَّذِي فِيهِ أَيْضًا ذَهَبَ فَكَرَزَ لِلأَرْوَاحِ الَّتِي فِي السِّجْنِ، إِذْ عَصَتْ قَدِيمًا، حِينَ كَانَتْ أَنَاةُ اللهِ تَنْتَظِرُ مَرَّةً فِي أَيَّامِ نُوحٍ، إِذْ كَانَ الْفُلْكُ يُبْنَى، الَّذِي فِيهِ خَلَصَ قَلِيلُونَ، أَيْ ثَمَانِي أَنْفُسٍ بِالْمَاءِ الَّذِي مِثَالُهُ يُخَلِّصُنَا نَحْنُ الآنَ، أَيِ الْمَعْمُودِيَّةُ لاَ إِزَالَةُ وَسَخِ الْجَسَدِ، بَلْ سُؤَالُ ضَمِيرٍ صَالِحٍ عَنِ اللهِ، بِقِيَامَةِ يَسُوعَ الْمَسِيحِ، الَّذِي هُوَ فِي يَمِينِ اللهِ، إِذْ قَدْ مَضَى إِلَى السَّمَاءِ، وَمَلاَئِكَةٌ وَسَلاَطِينُ وَقُوَّاتٌ مُخْضَعَةٌ لَهُ.", 
+  "17 Car mieux vaudrait souffrir en faisant le bien, si c’était la volonté de Dieu, plutôt qu’en faisant le mal. 18 Car le Christ, lui aussi, a souffert pour les péchés, une seule fois, lui, le juste, pour les injustes, afin de vous introduire devant Dieu ; il a été mis à mort dans la chair, mais vivifié dans l’Esprit. 19 C’est en lui qu’il est parti proclamer son message aux esprits qui étaient en captivité. 20 Ceux-ci, jadis, avaient refusé d’obéir, au temps où se prolongeait la patience de Dieu, quand Noé construisit l’arche, dans laquelle un petit nombre, en tout huit personnes, furent sauvées à travers l’eau. 21 C’était une figure du baptême qui vous sauve maintenant : le baptême ne purifie pas de souillures extérieures, mais il est l’engagement envers Dieu d’une conscience droite et il sauve par la résurrection de Jésus Christ, 22 lui qui est à la droite de Dieu, après s’en être allé au ciel, lui à qui sont soumis les anges, ainsi que les Souverainetés et les Puissances.", 
   "", 
   ],
   ],
@@ -97,9 +176,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=013rdSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 13 ـ 21 )", 
-  "1 Pierre 1 :13-21", 
-  "1 Peter 1:13-21", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 13-21)", 
+  "1 Pierre (1: 13-21)", 
+  "1 Peter (1: 13-21)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -134,36 +213,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=014thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى 3 : 8 ـ 12", 
-  "1 Jean 3:8-12", 
-  "1 John 3:8-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأجل هذا أُظهِرَ ابنُ اللـهِ لكي يَنقُضَ أعمَال الشَّيطانَ. كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من اللـهِ.", 
-  "8 Le Fils de Dieu est apparu, afin de détruire les œuvres du diable. 9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.", 
-  "8 For this purpose the Son of God was manifested, that He might destroy the works of the devil 9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بهذا أولادُ اللـهِ ظاهرونَ وأولادُ الشَّيطان.كُلُّ من لا يفعلُ البرَّ فليسَ من اللـهِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.", 
-  "10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable. Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. Voici le message que vous avez entendu dès le commencement : Aimons nous les uns les autres ;", 
-  "10 In this the children of God and the children of the devil are manifest: Whoever does not practice righteousness is not of God, nor is he who does not love his brother. For this is the message that you heard from the beginning, that we should love one another,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ليس كَما كانَ قايينُ وقتلَ أخاهُ. ولماذا قَتَلهُ؟ لأنَّ أعمالهُ كانت شرِّيرةً، وأعمالُ أخيهِ كانت بارَّةً", 
-  "12 ne faisons pas comme Caïn, qui était du Malin et qui égorgea son frère. Et pourquoi l’égorgea–t–il ? Parce que ses oeuvres étaient mauvaises, et que celles de son frère étaient justes.", 
-  "12 not as Cain who was of the wicked one and murdered his brother. And why did he murder him? Because his works were evil and his brother's righteous.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=015thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الثانية 1 : 1 ـ 13", 
-  "2 Jean 1 : 1 - 13", 
-  "2 John 1:1-13", 
+  Prefix.katholikon+"&D=0109||015thSunday||062ndSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الثانية (1: 1-13)", 
+  "2 Jean (1: 1-13)", 
+  "2 John (1: 1-13)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -185,7 +238,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.", 
+  "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّ-دُّ للمسيح.", 
   "Tel est le commandement que vous avez entendu depuis le commencement, pour que vous marchiez dans cette voie. 7 Car de nombreux séducteurs se sont répandus dans le monde: ils ne professent pas la foi à la venue de Jésus Christ dans la chair. Le voilà, le séducteur et l'antéchrist!", 
   "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.", 
   ],
@@ -210,10 +263,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0201&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 5 : 9 ـ 20 )", 
-  "Jacques 5:9 - 20", 
-  "James 5:9-20", 
+  Prefix.katholikon+"&D=0201||2205||1610&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(5 : 9-20)", 
+  "Jacques (5: 9-20)", 
+  "James (5: 9-20)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -223,7 +276,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ قـد رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.", 
+  "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ ق-د رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.", 
   "11 Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.", 
   "11as an example of suffering and patience. Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.", 
   ],
@@ -260,10 +313,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0801&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 19 ـ 2 : 1 ـ 8 )", 
-  "2 Pierre 1:19-2:1-8", 
-  "2 Peter 1:19-2:8", 
+  Prefix.katholikon+"&D=0801||2304&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 19-2 : 1-8)", 
+  "2 Pierre (1:19 & 2:1-8)", 
+  "2 Peter (1:19 & 2:1-8)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -285,19 +338,19 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.", 
+  "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَ-لِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.", 
   "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; et, dans leur cupidité, 3 ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.", 
   "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وثـاق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُعـذَّبين،", 
+  "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وث-اق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُع-ذَّبين،", 
   "4 Car Dieu n'a pas épargné les anges coupables, mais les a plongés, les a livrés aux antres ténébreux du Tartare, les gardant en réserve pour le jugement.", 
   "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment;", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "والعـالم الأول لم يُشـفِـق عليه، لكن نوحـاً الثَّامـن المُنـادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.", 
+  "والع-الم الأول لم يُش-فِ-ق عليه، لكن نوح-اً الثَّام-ن المُن-ادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.", 
   "5 Il n'a pas épargné non plus l'ancien monde, mais il préserva, lors du déluge dont il submergea le monde des impies, Noé, le huitième des survivants, lui qui proclamait la justice;", 
   "5 and did not spare the ancient world, but saved Noah, one of eight people, a preacher of righteousness, bringing in the flood on the world of the ungodly;", 
   ],
@@ -317,9 +370,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=1601&C=Title", 
-  " بطرس الأولى(1 : 25 ـ 2 :1 ـ 10", 
-  "1 Pierre 2 : 1-10", 
-  "1 Peter 2:1-10", 
+  " بُطْرُسِ الأولى(1 : 25-2 :1-10", 
+  "1 Pierre (2: 1-10)", 
+  "1 Peter (2: 1-10)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -329,19 +382,19 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
+  "إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
   "3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu.", 
   "3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
+  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
   "5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.6 Car on trouve dans l'Écriture:", 
   "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold,.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنه مكتوبٌ في الكتاب: 'إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً الذي يؤمن به لن يُخـزى '. فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة وأمَّا الذين لا يؤمنون", 
+  "لأنه مكتوبٌ في الكتاب: 'إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً الذي يؤمن به لن يُخ-زى '. فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة وأمَّا الذين لا يؤمنون", 
   "Voici, je pose en Sion une pierre angulaire, choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu. 7 A vous donc, les croyants, l'honneur; mais pour les incrédules", 
   "I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame 7 Therefore, to you who believe, He is precious; but to those who are disobedient,", 
   ],
@@ -359,17 +412,17 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فقد رُحِمتُمْ.", 
+  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فقد رُحِمتُمْ.", 
   "10 vous qui jadis n'étiez pas son peuple, mais qui maintenant êtes le peuple de Dieu; vous qui n'aviez pas obtenu miséricorde, mais qui maintenant avez obtenu miséricorde.", 
   "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=1701&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(1 : 22 ـ 27 )", 
-  "1Peter 2:11-25", 
-  "1Peter 2:11-25", 
+  Prefix.katholikon+"&D=1701||Pntl1&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 22-27)", 
+  "1 Pierre (2: 11-25)", 
+  "1 Peter (2: 11-25)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -428,104 +481,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=1801&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(1:3-12)", 
-  "1 Peter 1:3-12", 
-  "1 Peter 1:3-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات .", 
-  "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم. انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.", 
-  "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.", 
-  "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة .لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح .ذلك", 
-  "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves, 7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ.", 
-  "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد.", 
-  "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse,", 
-  "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "نائلين غاية ايمانكم خلاص النفوس. الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.", 
-  "9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.", 
-  "9 receiving the end of your faith--the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.", 
-  "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.", 
-  "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.", 
-  "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=1901&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى 5:13-21", 
-  "1 John 5:13-21", 
-  "1 John 5:13-21", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كتبت هذا اليكم انتم المؤمنين باسم ابن الله لكي تعلموا ان لكم حياة ابدية ولكي تؤمنوا باسم ابن الله.", 
-  "12 Celui qui a le Fils a la vie ; celui qui n’a pas le Fils de Dieu n’a pas la vie. 13 Cela, je vous l’ai écrit, afin que vous sachiez que vous avez la vie éternelle, vous qui croyez au nom du Fils de Dieu.", 
-  "13 These things I have written to you who believe in the name of the Son of God, that you may know that you have eternal life, and that you may continue to believe in the name of the Son of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وهذه هي الثقة التي لنا عنده انه ان طلبنا شيئا حسب مشيئته يسمع لنا. وان كنا نعلم انه مهما طلبنا يسمع لنا نعلم ان لنا الطلبات التي طلبناها منه.", 
-  "14 Voici l’assurance que nous avons auprès de lui : si nous demandons quelque chose selon sa volonté, il nous écoute. 15 Et si nous savons qu’il nous écoute, quoi que ce soit que nous demandions, nous savons que nous possédons ce que nous lui avons demandé.", 
-  "14 Now this is the confidence that we have in Him, that if we ask anything according to His will, He hears us. 15 And if we know that He hears us, whatever we ask, we know that we have the petitions that we have asked of Him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان رأى احد اخاه يخطئ خطية ليست للموت يطلب فيعطيه حياة للذين يخطئون ليس للموت.توجد خطية للموت.", 
-  "16 Si quelqu’un voit son frère commettre un péché qui ne mène pas à la mort, qu’il prie, et (Dieu) lui donnera la vie ; (il s’agit de) ceux qui commettent un péché qui ne mène pas à la mort. Il y a un péché qui mène à la mort,", 
-  "16 If anyone sees his brother sinning a sin which does not lead to death, he will ask, and He will give him life for those who commit sin not leading to death. There is sin leading to death.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ليس لاجل هذه اقول ان يطلب. كل اثم هو خطية وتوجد خطية ليست للموت.نعلم ان كل من ولد من الله لا يخطئ بل المولود من الله يحفظ نفسه والشرير لا يمسه.", 
-  "ce n’est pas pour ce péché–là que je dis de prier.17 Toute injustice est un péché, et il y a tel péché qui ne mène pas à la mort. 18 Nous savons que quiconque est né de Dieu ne pèche pas ; mais Celui qui est engendré de Dieu le garde, et le Malin ne le touche pas.", 
-  "I do not say that he should pray about that. 17 All unrighteousness is sin, and there is sin not leading to death. 18 We know that whoever is born of God does not sin; but he who has been born of God keeps himself, and the wicked one does not touch him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "نعلم اننا نحن من الله والعالم كله قد وضع في الشرير.ونعلم ان ابن الله قد جاء واعطانا بصيرة لنعرف الحق.", 
-  "19 Nous savons que nous sommes de Dieu, et que le monde entier est au pouvoir du Malin.", 
-  "19 We know that we are of God, and the whole world lies under the sway of the wicked one.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ونحن في الحق في ابنه يسوع المسيح.هذا هو الاله الحق والحياة الابدية.ايها الاولاد احفظوا انفسكم من الاصنام.آمين", 
-  "20 Nous savons aussi que le Fils de Dieu est venu, et qu’il nous a donné l’intelligence pour connaître (celui qui est) le Véritable ; et nous sommes dans le Véritable, en son Fils Jésus–Christ. C’est lui le Dieu véritable et la vie éternelle. 21 Petits enfants, gardez–vous des idoles.", 
-  "20 And we know that the Son of God has come and has given us an understanding, that we may know Him who is true; and we are in Him who is true, in His Son Jesus Christ. This is the true God and eternal life. 21 Little children, keep yourselves from idols. Amen.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2101&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 11 )", 
-  "1 Jean 2 : 7 - 11", 
-  "1 John 2:7-11", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 7-11)", 
+  "1 Jean (2: 7-11)", 
+  "1 John (2: 7-11)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -548,20 +507,20 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2601&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 18 )", 
-  "Jacques 1 : 1 - 18", 
+  Prefix.katholikon+"&D=2601||041stSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 1-18)", 
+  "Jacques 1:1-18", 
   "James 1:1-18", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّـتَاتِ. كونوا في فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.", 
+  "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّ-تَاتِ. كونوا في فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.", 
   "1Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon coeur, 2 mes frères, toutes les épreuves par lesquelles vous passez,3 sachant que le test auquel votre foi est soumise produit de l'endurance.", 
   "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.", 
+  "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ الل-هِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.", 
   "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut.5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.", 
   "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.", 
   ],
@@ -579,13 +538,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ.", 
+  "لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيض-اً في كلِّ طُرُقِهِ.", 
   "11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.", 
   "11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ أن اللـه قد جرَّبنى، لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً.", 
+  "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ أن الل-ه قد جرَّبنى، لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً.", 
   "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.13 Que nul, quand il est tenté, ne dise: 'Ma tentation vient de Dieu.' Car Dieu ne peut être tenté de faire le mal et ne tente personne.", 
   "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him. 13 Let no one say when he is tempted, I am tempted by God; for God cannot be tempted by evil, nor does He Himself tempt anyone.", 
   ],
@@ -605,9 +564,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=021stSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 22 ـ 2 :1 ـ 5 )", 
-  "1Pierre 1:22-2:5", 
-  "1Peter 1:22-2:5", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 22-2 :1-5)", 
+  "1 Pierre (1: 22 & 2: 5)", 
+  "1 Peter (1: 22 & 2: 5)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -629,23 +588,23 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مثل أطفال مَولُودِينَ الآن اشتهوا اللبنَ العقليَّ العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس", 
+  "مثل أطفال مَولُودِينَ الآن اشتهوا اللبنَ العقليَّ العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس", 
   "2 Comme des enfants nouveau-nés, désirez le lait pur de la parole afin que, par lui, vous grandissiez pour le salut,3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes", 
   "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men,", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن مُختارٌ من الله وكريمٌ. كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
+  "ولكن مُختارٌ من الله وكريمٌ. كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
   "mais choisie et précieuse devant Dieu. 5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.", 
   "but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=022ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول3:13-4:6", 
-  "James 3:13-4:6", 
-  "James 3:13-4:6", 
+  Prefix.katholikon+"&D=022ndSunday||GL29&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3: 13 & 4: 6)", 
+  "James (3: 13 & 4: 6)", 
+  "James (3: 13 & 4: 6)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -692,10 +651,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=023rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول 4 : 7 ـ 17", 
-  "James 4:7-17", 
-  "James 4:7-17", 
+  Prefix.katholikon+"&D=023rdSunday||GL5thSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ 4 : 7-17", 
+  "James (4: 7-17)", 
+  "James (4: 7-17)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -723,7 +682,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وهناكَ نَصرِفُ سـَنَةً واحِدَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ أمْرَ الغـدِ! لأنَّها ما هيَ حياتُكُم؟ إنَّها مثل غُبار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.", 
+  "وهناكَ نَصرِفُ س-َنَةً واحِدَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ أمْرَ الغ-دِ! لأنَّها ما هيَ حياتُكُم؟ إنَّها مثل غُبار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.", 
   "nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent', 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît!", 
   "spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.", 
   ],
@@ -737,7 +696,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=024thSunday&C=Title", 
-  " رسالة بولس الرسول الاولى إلى أهل تيموثاوس ( 6 : 3 – 21 )", 
+  " رسالة بولس الرَسُولِ الاولى إلى أهل تيموثاوس (6 : 3 – 21)", 
   "1 Timothée 6 : 3 – 21", 
   "1 Timothy 6: 3 - 22", 
   ],
@@ -810,58 +769,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=1202&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (1:3-12)", 
-  "1Pierre 1:3-12", 
-  "1 Peter 1:3-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات. لميراث لا يفنى ولايتدنس", 
-  "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولا يضمحل محفوظ في السموات لاجلكم.انتم الذين بقوة الله . محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير. الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.", 
-  "ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,", 
-  "and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح.", 
-  "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu – se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ.", 
-  "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ذلك وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.", 
-  "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.", 
-  "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الخلاص الذي فتش وبحث عنه انبياء. الذين تنبأوا عن النعمة التي لاجلكم.", 
-  "10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.", 
-  "10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.", 
-  "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.", 
-  "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها", 
-  "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=1402&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى (5 : 5 - 13)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 5-13)", 
   "1 Jean 5:5-13", 
   "1 John 5:5-13", 
   ],
@@ -893,7 +802,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2202&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى 3:15-22", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الاولى 3:15-22", 
   "1 PETER 3:15-22", 
   "1 PETER 3:15-22", 
   ],
@@ -937,7 +846,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2702&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (1:12-21)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1:12-21)", 
   "James 1:12-21", 
   "James 1:12-21", 
   ],
@@ -975,7 +884,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=031stSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 3 : 1 ـ 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3 : 1-12)", 
   "James 3:1-12", 
   "James 3:1-12", 
   ],
@@ -1011,7 +920,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا اللِّسان فلا يستطيعُ أحدٌ مِن النَّاسِ أن يُذلِّله. هو شرٌّ لا يُضبط، مملوءٌ سُمَ الموت. به نُبارِك اللـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم اللـه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ!", 
+  "وأمَّا اللِّسان فلا يستطيعُ أحدٌ مِن النَّاسِ أن يُذلِّله. هو شرٌّ لا يُضبط، مملوءٌ سُمَ الموت. به نُبارِك الل-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم الل-ه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ!", 
   "8 But no man can tame the tongue. It is an unruly evil, full of deadly poison. 9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God. 10 Out of the same mouth proceed blessing and cursing.", 
   "8 mais la langue, aucun homme ne peut la dompter : c’est un mal qu’on ne peut maîtriser ; elle est pleine d’un venin mortel. 9 Par elle, nous bénissons le Seigneur notre Père, et par elle, nous maudissons les hommes faits à l’image de Dieu. 10 De la même bouche sortent la bénédiction et la malédiction.", 
   ],
@@ -1025,7 +934,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=032ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يهوذا الرسول( 1 : 14 ـ 25 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرسول(1 : 14-25)", 
   "Jude 1:14-25", 
   "Jude 1:14-25", 
   ],
@@ -1055,13 +964,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.", 
+  "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.", 
   "20 But you, beloved, building yourselves up on your most holy faith, praying in the Holy Spirit, 21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.", 
   "20 Mais vous, bien–aimés, édifiez–vous vous–mêmes sur votre très sainte foi, priez par le Saint–Esprit, 21 maintenez–vous dans l’amour de Dieu, en attendant la miséricorde de notre Seigneur Jésus–Christ pour la vie éternelle.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبكِّـتوا البعض عندما يكونون مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
+  "وبكِّ-توا البعض عندما يكونون مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
   "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh.", 
   "22 Ayez pitié des uns, de ceux qui doutent : 23 sauvez–les en les arrachant au feu. Ayez pour les autres une pitié mêlée de crainte, haïssant jusqu’à la tunique souillée par la chair.", 
   ],
@@ -1075,7 +984,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=033rdSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى 4:3-11", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى 4:3-11", 
   "1 Peter 4:3-11", 
   "1 Peter 4:3-11", 
   ],
@@ -1112,14 +1021,14 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=034thSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 : 1 ـ 8 )", 
+  Prefix.katholikon+"&D=034thSunday||094thSunday||102ndSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 1-8)", 
   "2 Peter 1:1-8", 
   "2 Peter 1:1-8", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "سمعان بطرس عبد يسوع المسيح ورسوله الى الذين نالوا معنا ايمانا ثمينا مساويا لنا ببر الهنا والمخلص يسوع المسيح.", 
+  "سمعان بُطْرُسِ عبد يسوع المسيح ورسوله الى الذين نالوا معنا ايمانا ثمينا مساويا لنا ببر الهنا والمخلص يسوع المسيح.", 
   "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:", 
   "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :", 
   ],
@@ -1150,8 +1059,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0803&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(3 : 15 - 22)", 
+  Prefix.katholikon+"&D=0803||1205||Pntl39&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3 : 15-22)", 
   "1 Pierre 3:15-22", 
   "1 Peter 3:15-22", 
   ],
@@ -1194,9 +1103,9 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0903&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(1 : 3 - 12)", 
-  "1 Pierre1:3-12", 
+  Prefix.katholikon+"&D=0903||2204||0313||1801||1202||GL17&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 3-12)", 
+  "1 Pierre 1:3-12", 
   "1 Peter 1:3-12", 
   ],
   [
@@ -1238,164 +1147,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=1203&C=Title", 
-  " الكاثوليكون من رسالة يهوذا الرسول (1 : 1- 13)", 
-  "Jude 1:1 - 13", 
-  "Jude 1:1-13", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يهوذا عبد يسوع المسيح واخو يعقوب الى المدعوين المقدسين في الله الآب والمحفوظين ليسوع المسيح لتكثر لكم الرحمة والسلام والمحبة", 
-  "1 Jude, serviteur de Jésus Christ, frère de Jacques, à ceux qui sont appelés, qui sont aimés de Dieu le Père et gardés pour Jésus Christ. 2 Que la miséricorde, la paixet l'amour vous viennent en abondance.", 
-  "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاحباء اذ كنت اصنع كل الجهد لاكتب اليكم عن الخلاص المشترك اضطررت ان اكتب اليكم واعظا ان تجتهدوا لاجل الايمان المسلّم مرة للقديسين.", 
-  "3 Mes amis, alors que je désirais vivement vous écrire au sujet du salut qui nous concerne tous, je me suis vu forcé de le faire afin de vous encourager à combattre pour la foi qui a été transmise aux saints définitivement.", 
-  "3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه دخل خلسة اناس قد كتبوا منذ القديم لهذه الدينونة فجار يحوّلون نعمة الهنا الى الدعارة وينكرون السيد الوحيد الله وربنا يسوع المسيح فاريد ان اذكّركم ولو علمتم هذا مرة", 
-  "4 Car il s'est infiltré parmi vous des individus dont la condamnation est depuis longtemps inscrite à l'avance, impies qui travestissement en débauche la grâce de notre Dieu et qui renient notre seul Maître et Seigneur Jésus Christ. 5 Je veux vous rappeler, bien que vous sachiez tout définitivement,", 
-  "4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ. 5 But I want to remind you, though you once knew this,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان الرب بعدما خلّص الشعب من ارض مصر اهلك ايضا الذين لم يؤمنوا. والملائكة الذين لم يحفظوا رياستهم بل تركوا مسكنهم حفظهم الى دينونة اليوم العظيم بقيود ابدية تحت الظلام.", 
-  "que le Seigneur, après avoir sauvé son peuple du pays d'Égypte, a fait périr ensuite ceux qui s'étaient montrés incrédules. 6 Les anges qui n'avaient pas gardé leur rang mais qui avaient abandonné leur demeure, il les garde éternellement enchaînés dans les ténèbres pour le jugement du grand Jour.", 
-  "that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كما ان سدوم وعمورة والمدن التي حولهما اذ زنت على طريق مثلهما ومضت وراء جسد آخر جعلت عبرة مكابدة عقاب نار ابدية.", 
-  "7 Quant à Sodome et Gomorrhe et aux villes d'alentour qui s'étaient livrées de semblable manière à la prostitution et avaient couru après des êtres d'une autre nature, elles gisent comme un exemple sous le châtiment du feu éternel.", 
-  "7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن كذلك هؤلاء ايضا المحتلمون ينجسون الجسد ويتهاونون بالسيادة ويفترون على ذوي الامجاد. واما ميخائيل رئيس الملائكة فلما خاصم ابليس محاجا عن جسد موسى لم يجسر ان يورد حكم افتراء بل قال لينتهرك الرب.", 
-  "8 C'est de la même façon que ces gens-là, dans leur délire, souillent la chair, méprisent la Souveraineté, insultent les Gloires. 9 Pourtant même l'archange Michaël, alors qu'il contestait avec le diable et disputait au sujet du corps de Moïse, n'osa pas porter contre lui un jugement insultant, mais il dit: 'Que le Seigneur te châtie.'", 
-  "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries. 9 Yet Michael the archangel, in contending with the devil, when he disputed about the body of Moses, dared not bring against him a reviling accusation, but said, The Lord rebuke you!''", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن هؤلاء يفترون على ما لا يعلمون.واما ما يفهمونه بالطبيعة كالحيوانات غير الناطقة ففي ذلك يفسدون.", 
-  "10 Mais ces gens-là, ce qu'ils ne connaissent pas, ils l'insultent; et ce qu'ils savent à la manière instinctive et stupide des bêtes, cela ne sert qu'à les perdre.", 
-  "10 But these speak evil of whatever they do not know; and whatever they know naturally, like brute beasts, in these things they corrupt themselves.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ويل لهم لانهم سلكوا طريق قايين وانصبوا الى ضلالة بلعام لاجل اجرة وهلكوا في مشاجرة قورح.", 
-  "11 Malheur à eux, parce qu'ils ont suivi le chemin de Caïn; pour un salaire ils se sont abandonnés aux égarements de Balaam et ils ont péri dans la révolte de Coré.", 
-  "11 Woe to them! For they have gone in the way of Cain, have run greedily in the error of Balaam for profit, and perished in the rebellion of Korah.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هؤلاء صخور في ولائمكم المحبية صانعين ولائم معا بلا خوف راعين انفسهم.غيوم بلا ماء تحملها الرياح اشجار خريفية بلا ثمر ميتة مضاعفا مقتلعة.", 
-  "12 Ce sont bien eux qui souillent vos repas fraternels, lorsqu'ils font bombance et se gavent sans pudeur; nuages sans eau emportés par les vents; arbres de fin d'automne, sans fruits, deux fois morts, déracinés;", 
-  "12 These are spots in your love feasts, while they feast with you without fear, serving only themselves. They are clouds without water, carried about by the winds; late autumn trees without fruit, twice dead, pulled up by the roots;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "امواج بحر هائجة مزبدة بخزيهم.نجوم تائهة محفوظ لها قتام الظلام الى الابد.", 
-  "13 flots sauvages de la mer cachant l'écume de leur propre honte; astres errants réservés pour l'éternité à l'épaisseur des ténèbres. 13 flots sauvages de la mer cachant l'écume de leur propre honte; astres errants réservés pour l'éternité à l'épaisseur des ténèbres.", 
-  "13 raging waves of the sea, foaming up their own shame; wandering stars for whom is reserved the blackness of darkness forever.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=1503&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (4:12-19 )", 
-  "1 Peter 4:12-19", 
-  "1 Peter 4:12-19", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاحباء لا تستغربوا البلوى المحرقة التي بينكم حادثة لاجل امتحانكم كانه اصابكم امر غريب بل كما اشتركتم في آلام المسيح", 
-  "12 Bien–aimés, ne soyez pas surpris de la fournaise qui sévit parmi vous pour vous éprouver, comme s’il vous arrivait quelque chose d’étrange.13 Au contraire, réjouissez–vous de participer aux souffrances du Christ,", 
-  "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "افرحوا لكي تفرحوا في استعلان مجده ايضا مبتهجين ان عيّرتم باسم المسيح فطوبى لكم لان روح المجد والله يحل عليكم.اما من جهتهم فيجدّف عليه واما من جهتكم فيمجد.", 
-  "afin de vous réjouir aussi avec allégresse, lors de la révélation de sa gloire. 14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !", 
-  "that when His glory is revealed, you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فلا يتألم احدكم كقاتل او سارق او فاعل شر او متداخل في امور غيره. ولكن ان كان كمسيحي فلا يخجل بل يمجد الله من هذا القبيل.", 
-  "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.", 
-  "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه الوقت لابتداء القضاء من بيت الله.فان كان اولا منا فما هي نهاية الذين لا يطيعون انجيل الله. وان كان البار بالجهد يخلص فالفاجر والخاطئ اين يظهران.", 
-  "17 Car c’est le moment où le jugement va commencer par la maison de Dieu. Or, si c’est par nous qu’il débute, quelle sera la fin de ceux qui n’obéissent pas à l’Évangile de Dieu ? 18 Et si le juste est sauvé difficilement, que deviendra celui qui est impie et pécheur ?", 
-  "17 For the time has come for judgment to begin at the house of God; and if it begins with us first, what will be the end of those who do not obey the gospel of God? 18 Now If the righteous one is scarcely saved, where will the ungodly and the sinner appear?''", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فاذا الذين يتألمون بحسب مشيئة الله فليستودعوا انفسهم كما لخالق امين في عمل الخير", 
-  "19 Ainsi, que ceux qui souffrent selon la volonté de Dieu, remettent leur âme au fidèle Créateur en faisant le bien.", 
-  "19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=1703&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (5 : 1 - 14)", 
-  "1 Pierre 5 : 1 - 14", 
-  "1 Peter 5:1-14", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اطلب الى الشيوخ الذين بينكم انا الشيخ رفيقهم والشاهد لآلام المسيح وشريك المجد العتيد ان يعلن", 
-  "5 J'exhorte donc les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée:", 
-  "1The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed:", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ارعوا رعية الله التي بينكم نظّارا لا عن اضطرار بل بالاختيار ولا لربح قبيح بل بنشاط. ولا كمن يسود على الانصبة بل صائرين امثلة للرعية", 
-  "2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement.3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau.", 
-  "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ومتى ظهر رئيس الرعاة تنالون اكليل المجد الذي لا يبلى. كذلك ايها الاحداث اخضعوا للشيوخ وكونوا جميعا خاضعين بعضكم لبعض وتسربلوا بالتواضع لان الله يقاوم المستكبرين واما المتواضعون فيعطيهم نعمة.", 
-  "4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas. 5 De même,jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce.", 
-  "4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away. 5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, but gives grace to the humble.''", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فتواضعوا تحت يد الله القوية لكي يرفعكم في حينه. ملقين كل همكم عليه لانه هو يعتني بكم. اصحوا واسهروا لان ابليس خصمكم كأسد زائر يجول ملتمسا من يبتلعه هو.", 
-  "6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous. 8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer.", 
-  "6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time, 7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فقاوموه راسخين في الايمان عالمين ان نفس هذه الآلام تجرى على اخوتكم الذين في العالم. واله كل نعمة الذي دعانا الى مجده الابدي في المسيح يسوع بعدما تألمتم يسيرا هو يكملكم ويثبتكم ويقويكم ويمكنكم", 
-  "9 Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères, dans le monde.10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps; il vous affermira, vous fortifiera, vous rendra inébranlables.", 
-  "9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world. 10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while, perfect, establish, strengthen, and settle you.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "له المجد والسلطان الى ابد الآبدين.آمين بيد سلوانس الاخ الامين كما اظن كتبت اليكم بكلمات قليلة واعظا وشاهدا ان هذه هي نعمة الله الحقيقية التي فيها تقومون.", 
-  "11A lui la domination pour les siècles! Amen.12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés.", 
-  "11 To Him be the glory and the dominion forever and ever. Amen. 12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "تسلم عليكم التي في بابل المختارة معكم ومرقس ابني. سلموا بعضكم على بعض بقبلة المحبة.سلام لكم جميعكم الذين في المسيح يسوع.آمين", 
-  "13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils.14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.", 
-  "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2203&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الإولى ( 2 :11 - 17)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الإولى (2 :11-17)", 
   "1 Pierre 2 : 11 - 17", 
   "1 Peter 2:11-17", 
   ],
@@ -1426,146 +1179,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2403&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى(5:1-14 )", 
-  "1 Pierre 5:1-14", 
-  "1 Peter 5:1-14", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اطلب الى الشيوخ الذين بينكم انا الشيخ رفيقهم والشاهد لآلام المسيح وشريك المجد العتيد ان يعلن ارعوا رعية الله التي بينكم نظّارا", 
-  "1 J'exhorte donc les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée: 2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui", 
-  "1 The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed: 2 Shepherd the flock of God which is among you, serving as overseers,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا عن اضطرار بل بالاختيار ولا لربح قبيح بل بنشاط. ولا كمن يسود على الانصبة بل صائرين امثلة للرعية ومتى ظهر رئيس الرعاة تنالون اكليل المجد الذي لا يبلى", 
-  "non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement. 3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau. 4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas.", 
-  "not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock; 4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كذلك ايها الاحداث اخضعوا للشيوخ وكونوا جميعا خاضعين بعضكم لبعض وتسربلوا بالتواضع لان الله يقاوم المستكبرين واما المتواضعون فيعطيهم نعمة. فتواضعوا تحت يد الله القوية لكي يرفعكم في حينه", 
-  "5 De même, jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce.6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;", 
-  "5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, but gives grace to the humble.'' 6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ملقين كل همكم عليه لانه هو يعتني بكم اصحوا واسهروا لان ابليس خصمكم كأسد زائر يجول ملتمسا من يبتلعه هو. فقاوموه راسخين في الايمان عالمين ان نفس هذه الآلام تجرى على اخوتكم الذين في العالم", 
-  "7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous. 8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer. Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères, dans le monde.", 
-  "7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour. 9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واله كل نعمة الذي دعانا الى مجده الابدي في المسيح يسوع بعدما تألمتم يسيرا هو يكملكم ويثبتكم ويقويكم ويمكنكم له المجد والسلطان الى ابد الآبدين.آمين", 
-  "10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps; il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles! Amen.", 
-  "10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while, perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بيد سلوانس الاخ الامين كما اظن كتبت اليكم بكلمات قليلة واعظا وشاهدا ان هذه هي نعمة الله الحقيقية التي فيها تقومون. تسلم عليكم التي في بابل المختارة معكم ومرقس ابني.", 
-  "12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés. 13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils.", 
-  "12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand. 13 She who is in Babylon, elect together with you, greets you; and so does Mark my son.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "سلموا بعضكم على بعض بقبلة المحبة.سلام لكم جميعكم الذين في المسيح يسوع.آمين", 
-  "14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.", 
-  "14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=2503&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى( 4 :1 – 11 )", 
-  "1 Pierre 4 : 1 - 11", 
-  "1 Peter 4:1-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فاذ قد تألم المسيح لاجلنا بالجسد تسلحوا انتم ايضا بهذه النية.فان من تألم في الجسد كفّ عن الخطية.", 
-  "1Aussi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché,", 
-  "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي لا يعيش ايضا الزمان الباقي في الجسد لشهوات الناس بل لارادة الله.لان زمان الحياة الذي مضى يكفينا لنكون قد عملنا ارادة الامم سالكين في الدعارة والشهوات وادمان الخمر", 
-  "2 pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises,", 
-  "2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God. 3 For we have spent enough of our past lifetime in doing the will of the Gentiles-- when we walked in lewdness, lusts, drunkenness,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والبطر والمنادمات وعبادة الاوثان المحرمة. الامر الذي فيه يستغربون انكم لستم تركضون معهم الى فيض هذه الخلاعة عينها مجدفين. الذين سوف يعطون حسابا للذي هو على استعداد ان يدين الاحياء والاموات.", 
-  "l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes. 4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts.", 
-  "revelries, drinking parties, and abominable idolatries. 4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فانه لاجل هذا بشر الموتى ايضا لكي يدانوا حسب الناس بالجسد ولكن ليحيوا حسب الله بالروح. وانما نهاية كل شيء قد اقتربت.فتعقلوا واصحوا للصلوات.", 
-  "6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.", 
-  "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن قبل كل شيء لتكن محبتكم بعضكم لبعض شديدة لان المحبة تستر كثرة من الخطايا. كونوا مضيفين بعضكم بعضا بلا دمدمة. ليكن كل واحد بحسب ما اخذ موهبة يخدم بها بعضكم بعضا كوكلاء صالحين على نعمة الله المتنوعة.", 
-  "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés.9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.", 
-  "8 And above all things have fervent love for one another, for love will cover a multitude of sins.'' 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان كان يتكلم احد فكاقوال الله.وان كان يخدم احد فكانه من قوة يمنحها الله لكي يتمجد الله في كل شيء بيسوع المسيح الذي له المجد والسلطان الى ابد الآبدين.آمين", 
-  "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !", 
-  "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=2703&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 12 )", 
-  "Jacques 1 : 1 - 12", 
-  "James 1:1-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يعقوب عبد الله والرب يسوع المسيح يهدي السلام الى الاثني عشر سبطا الذين في الشتات. احسبوه كل فرح يا اخوتي حينما تقعون في تجارب متنوعة.عالمين ان امتحان ايمانكم ينشئ صبرا.", 
-  "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. 2 Prenez de très bon coeur, mes frères, toutes les épreuves par lesquelles vous passez, sachant que le test auquel votre foi est soumise produit de l'endurance.", 
-  "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما الصبر فليكن له عمل تام لكي تكونوا تامّين وكاملين غير ناقصين في شيء. وانما ان كان احد تعوزه حكمة فليطلب من الله الذي يعطي الجميع بسخاء ولا يعيّر فسيعطى له.", 
-  "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut. 5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.", 
-  "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن ليطلب بايمان غير مرتاب البتة لان المرتاب يشبه موجا من البحر تخبطه الريح وتدفعه. فلا يظن ذلك الانسان انه ينال شيئا من عند الرب.", 
-  "6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève. 7 Que ce personnage ne s'imagine pas que le Seigneur", 
-  "6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "رجل ذو رايين هو متقلقل في جميع طرقه. وليفتخر الاخ المتضع بارتفاعه.", 
-  "8 donnera quoi que ce soit à un homme partagé, fluctuant dans toutes ses démarches. 9 Que le frère de condition modeste tire fierté de son élévation,", 
-  "8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما الغني فباتضاعه لانه كزهر العشب يزول. لان الشمس اشرقت بالحرّ فيبّست العشب فسقط زهره وفني جمال منظره.هكذا يذبل الغني ايضا في طرقه.", 
-  "10 et le riche, de son déclassement, parce qu'il passera comme la fleur des prés.11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.", 
-  "10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "طوبى للرجل الذي يحتمل التجربة.لانه اذا تزكى ينال اكليل الحياة الذي وعد به الرب للذين يحبونه", 
-  "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment. 12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.", 
-  "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2803&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الثالثة (1: 1- 14 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الثالثة (1: 1- 14)", 
   "3 Jean 1:1 - 14", 
   "3 John 1:1-14", 
   ],
@@ -1620,108 +1235,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2903&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 :1 - 9 )", 
-  "1 Pierre 1 : 1 - 9", 
-  "1 Peter 1:1-9", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بطرس رسول يسوع المسيح الى المتغربين من شتات بنتس وغلاطية وكبدوكية واسيا وبيثينية المختارين", 
-  "1 Pierre, apôtre de Jésus Christ, aux élus qui vivent en étrangers dans la dispersion, dans le Pont, la Galatie, la Cappadoce, l'Asie et la Bithynie,", 
-  "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بمقتضى علم الله الآب السابق في تقديس الروح للطاعة ورشّ دم يسوع المسيح.لتكثر لكم النعمة والسلام", 
-  "2 élus selon le dessein de Dieu le Père, par la sanctification de l'Esprit, pour obéir à Jésus Christ et avoir part à l'aspersion de son sang. Qua la grâce et la paix vous viennent en abondance.", 
-  "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات لميراث لا يفنى", 
-  "3 Béni soit Dieu, le Père de notre Seigneur Jésus Christ: dans sa grande miséricorde, il nous a fait renaître pour une espérance vivante, par la résurrection de Jésus Christ d'entre les morts, 4 pour un héritage qui ne se peut corrompre, ni souiller,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير. الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة", 
-  "ni flétrir; cet héritage vous est réservé dans les cieux, 5 à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin. 6 Aussi tressaillez-vous d'allégresse même s'il faut que, pour un peu de temps, vous soyez affligés par diverses épreuves,", 
-  "and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح", 
-  "7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu - obtienne louange, gloire et honneur lors de la révélation de Jésus Christ,", 
-  "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ذلك وان لم تروه تحبونه.ذلك وان كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا ينطق به ومجيد نائلين غاية ايمانكم خلاص النفوس.", 
-  "8 Lui que vous aimez sans l'avoir vu, en qui vous croyez sans le voir encore; aussi tressaillez-vous d'une joie ineffable et glorieuse, 9 en remportant, comme prix de la foi, le salut de vos âmes.", 
-  "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=041stSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 18 )", 
-  "James 1:1-18", 
-  "James 1:1-18", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الاثني عشرَ سبطاً الذينَ في الشَّـتَاتِ. كونوا في كلِّ فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ،", 
-  "1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,", 
-  "1 Jacques, serviteur de Dieu et du Seigneur Jésus–Christ, aux douze tribus dans la dispersion, salut ! 2 Mes frères, considérez comme un sujet de joie complète les diverses épreuves que vous pouvez rencontrer,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً. وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ.", 
-  "3 knowing that the testing of your faith produces patience. 4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing.", 
-  "3 sachant que la mise à l’épreuve de votre foi produit la patience. 4 Mais il faut que la patience accomplisse une oeuvre parfaite, afin que vous soyez parfaits et accomplis, et qu’il ne vous manque rien.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له. وليسأل بإيمانٍ غير مُرتابٍ.", 
-  "5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him. 6 But let him ask in faith, with no doubting,", 
-  "5 Si quelqu’un d’entre vous manque de sagesse, qu’il la demande à Dieu qui donne à tous libéralement et sans faire de reproche, et elle lui sera donnée. 6 Mais qu’il la demande avec foi, sans douter ;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّ المُرتابَ يُشبهُ أمواج البحر التي يخبطُها الرِّيحُ ويردها. فلا يَظُنَّ ذلك الإنسانُ أنَّهُ يَنَالُ شيئاً مِنْ عند الرَّبِّ. لأنَّ الرجُلَ ذو الرأيين مُتَقَلقِل في جَمِيع طُرُقِهِ.", 
-  "for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,", 
-  "car celui qui doute est semblable au flot de la mer, que le vent agite et soulève.7 Qu’un tel homme ne pense pas qu’il recevra quelque chose du Seigneur : 8 c’est un homme irrésolu, inconstant dans toutes ses voies.9 Que le frère de condition humble se glorifie de son élévation.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وليَفتَخِر الأخُ المُتواضع بارتفاعِهِ، وأمَّا الغَنيُّ فباتِّضاعِهِ، لأنَّهُ كزهر العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ.", 
-  "9 Let the lowly brother glory in his exaltation, 10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes.", 
-  "9 Que le frère de condition humble se glorifie de son élévation.10 Que le riche au contraire (se glorifie) de son humiliation ; car il passera comme la fleur de l’herbe. 11 Le soleil s’est levé avec sa chaleur ardente ; il a desséché l’herbe, sa fleur est tombée, et la beauté de son aspect a disparu", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ. طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ. فلا يقُل أحدٌ إذا جُرِّبَ، أن اللـه قد جرَّبنى،", 
-  "So the rich man also will fade away in his pursuits. 12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him. 13 Let no one say when he is tempted, I am tempted by God;", 
-  "Ainsi le riche se flétrira dans ses entreprises. 12 Heureux l’homme qui endure la tentation ; car après avoir été mis à l’épreuve, il recevra la couronne de vie, que le Seigneur a promise à ceux qui l’aiment. 13 Que personne, lorsqu’il est tenté, ne dise : C’est Dieu qui me tente.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّ الله غيرُ مُجرَّبٍ بالشُّرور، وهو لا يُجرِّبُ أحداً. ولكنَّ كلَّ واحدٍ يُجرَّبُ إذا انجذبَ وانخدعَ من شهوة نفسه. ثُمَّ إنَّ الشَّهوةُ إذا حبلتْ فإنَّها تلدُ خطيَّئةً، وأمَّا الخطيَّئة إذا كمَلَت فإنَّها تلد الموت.", 
-  "for God cannot be tempted by evil, nor does He Himself tempt anyone. 14 But each one is tempted when he is drawn away by his own desires and enticed. 15 Then, when desire has conceived, it gives birth to sin; and sin, when it is full-grown, brings forth death.", 
-  "Car Dieu ne peut être tenté par le mal et ne tente lui–même personne.14 Mais chacun est tenté, parce que sa propre convoitise l’attire et le séduit. 15 Puis la convoitise, lorsqu’elle a conçu, enfante le péché ; et le péché, parvenu à son terme, engendre la mort.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا تضلُّوا يا إخوتي وأحبَّائي. كلُّ عطيَّةٍ صالحةٍ وكلُّ موهبةٍ تامَّةٍ فهي من فوقُ، نازلةٌ من عند أبِ الأنوار، الذي ليسَ عندهُ تغييرٌ ولا شبهُ ظل يزولُ. قد شاء فولدنا بكلمةِ الحقِّ لكي نكون باكورةَ خلائقه.", 
-  "16 Do not be deceived, my beloved brethren. 17 Every good gift and every perfect gift is from above, and comes down from the Father of lights, with whom there is no variation or shadow of turning. 18 Of His own will He brought us forth by the word of truth, that we might be a kind of firstfruits of His creatures.", 
-  "16 Ne vous y trompez pas, mes frères bien–aimés : 17 tout don excellent et tout cadeau parfait viennent d’en–haut, du Père des lumières, chez lequel il n’y a ni changement, ni ombre de variation.18 Il nous a engendrés selon sa volonté, par la parole de vérité, afin que nous soyons en quelque sorte les prémices de ses créatures.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=042ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى( 1 : 1 ـ 2 : 1 ـ 2 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(1 : 1-2 : 1-2)", 
   "1 John 1:1-2:2", 
   "1 Jean 1:1-2:2", 
   ],
@@ -1770,58 +1285,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=043rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 7 ـ 17 )", 
-  "1 John 2:7-17", 
-  "1 Jean 2:7-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا أحبائي، لستُ أكتبُ إليكُم وصيَّةً جديدةً بل وصيَّةً قديمةً التي كانتَ عندكُم من البدء. فإن الوصيَّةُ العتيقةُ هيَ الكلمةُ التي سمعتموها.", 
-  "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.", 
-  "7 Bien–aimés, ce n’est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez eu dès le commencement ; ce commandement ancien, c’est la parole que vous avez entendue.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أيضاً وصيَّةً جديدةً أكتُبها إليكُم، التي الحقُّ كائنٌ فيها وفيكُم، لأنَّ الظُّلمةَ قد جازت والنُّورَ الحقيقيَّ الآنَ يضيءُ.", 
-  "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining.", 
-  "8 D’autre part, c’est un commandement nouveau que je vous écris ; ceci est vrai pour lui et pour vous, car les ténèbres passent, et la lumière véritable brille déjà.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مَن يقولُ: إنَّهُ في النُّورِ وهو يبغضُ أخاهُ، فهو إلى الآنَ في الظُّلمةِ. مَن يحبُّ أخاهُ يثبُتُ في النُّورِ وليس فيهِ عثرةٌ. فيثبتُ إلى الأبدِ.", 
-  "9 He who says he is in the light, and hates his brother, is in darkness until now. 10 He who loves his brother abides in the light, and there is no cause for stumbling in him.", 
-  "9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est encore dans les ténèbres.10 Celui qui aime son frère demeure dans la lumière et ne risque pas de tomber.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وأمَّا مَن يبغضُ أخاهُ فهو في الظلام وفي الظلام يسلُكُ ولا يَعلَمُ أين يمضي، لأنَّ الظُّلمةَ قد أطمستْ عينيهِ. أَكتبُ إليكُم أيُّها الأولادُ، لأنَّهُ قد غُفِرت لكُمُ خطاياكُم من أجل اسمِهِ.", 
-  "11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes. 12 I write to you, little children, Because your sins are forgiven you for His name's sake.", 
-  "11 Mais celui qui a de la haine pour son frère est dans les ténèbres ; il marche dans les ténèbres et ne sait où il va, parce que les ténèbres ont rendu ses yeux aveugles.12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أَكتبُ إليكُم أيُّها الآباءُ، لأنَّكُم قد عرفتُمُ الذي مِن البدءِ. أَكتُبُ إليكُم أيُّها الشبان، لأنَّكُم قد غلبتُم الشِّرِّيرَ. أَكتُبُ إليكُم أيُّها الأولادُ، لأنَّكُم قد عرفتُم الآبَ.", 
-  "13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father.", 
-  "13 Je vous écris, pères, parce que vous avez connu celui qui est dès le commencement. Je vous écris, jeunes gens, parce que vous avez vaincu le Malin. Je vous ai écrit, jeunes enfants, parce que vous avez connu le Père.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أكتب إليكُم أيُّها الشُّبان، لأنَّكُم أقوياءُ، وكلمةُ اللـهِ ثابتةٌ فيكُم، وقد غلبتُمُ الشِّرِّيرَ. لا تُحبُّوا العالمَ ولا الأشياءَ التي في العالم.", 
-  "14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world.", 
-  "14 Je vous ai écrit, pères, parce que vous avez connu celui qui est dès le commencement. Je vous ai écrit, jeunes gens, parce que vous êtes forts, que la parole de Dieu demeure en vous et que vous avez vaincu le Malin. 15 N’aimez pas le monde, ni ce qui est dans le monde.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "إن أحبَّ أحدٌ العالمَ فليستْ فيهِ محبَّةُ الآبِ. لأنَّ كلَّ مَا في العالم: شهوةَ الجسدِ، وشهوةَ العيونِ، وتعظُّم المعيشةِ، فهذه ليستْ مِن الآبِ بل مِن العالم. والعالمُ يمضي وشهوتُهُ، وأمَّا الذي يصنعُ إرادة اللـهِ.", 
-  "If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.", 
-  "Si quelqu’un aime le monde, l’amour du Père n’est pas en lui ;16 car tout ce qui est dans le monde, la convoitise de la chair, la convoitise des yeux et l’orgueil de la vie, ne vient pas du Père, mais vient du monde.17 Et le monde passe, et sa convoitise aussi ; mais celui qui fait la volonté de Dieu demeure éternellement.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=044thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 24 ـ 3 : 1 ـ 3)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 24-3 : 1-3)", 
   "1 John 2:24-3:3", 
   "1 Jean 2:24-3:3", 
   ],
@@ -1858,114 +1323,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2204&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى ( 1 :3 – 12 )", 
-  "1 PETER 1:3-12", 
-  "1 PETER 1:3-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات.", 
-  "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.", 
-  "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.", 
-  "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.", 
-  "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,", 
-  "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح. ذلك وان لم تروه تحبونه. ذلك وان كنتم لا ترونه الآن لكن تؤمنون به", 
-  "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui", 
-  "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.", 
-  "et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.", 
-  "you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.", 
-  "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.", 
-  "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.", 
-  "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=2304&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 19 ـ 2 : 1 ـ 8 )", 
-  "2 Pierre 1:19-2:1-8", 
-  "2 Peter 1:19-2:8", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وثابتٌ عندنا كلام الأنبياء، هذا الذي هو نعم ما تصنعونه إذا تأملتم إليه، كمثل سراج مُضيءٍ في موضع مُظلم، حتى يظهر النَّهار، والنُّور يُشرق ويظهر في قلوبكم،", 
-  "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs.", 
-  "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وهذا أولاً فاعلموه: أن كل نبوَّات الكتب ليس تأويلها فيها من ذاتها خاصة. وليست بمشيئة البشر جاءت نبوَّة في زمان، بل تكلَّم أُناس بإرادة الله بالروح القدس.", 
-  "20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée; 21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.", 
-  "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وقد كانت أنبياء كذبة في الشَّعب، مثل ما يكون فيكم مُعلِّمون كذابون، هؤلاء الذين يأتون ببدع هلاك. والسيِّد الذي اشتراهم يجحدونه، ويجلِّبون على أنفسهم هلاكاً سريعاً.", 
-  "1Il y eut aussi des faux prophètes dans le peuple; de même, il y aura parmi vous de faux docteurs, qui introduiront sournoisement des doctrines pernicieuses, allant jusqu'à renier le maître qui les a rachetés, attirant sur eux une perdition qui ne saurait tarder;", 
-  "1 But there were also false prophets among the people, even as there will be false teachers among you, who will secretly bring in destructive heresies, even denying the Lord who bought them, and bring on themselves swift destruction.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم مُنذ البدءِ لا تبطل، وهلاكهم لا ينعس.", 
-  "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; et, dans leur cupidité, 3 ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.", 
-  "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فإن كان الله لم يُشفِق على الملائكة الذين أخطأوا، لكن أسلَّمهم في وثـاق الظُّلمة والزمهرير ليُحفَظوا للدينونة مُعـذَّبين،", 
-  "4 Car Dieu n'a pas épargné les anges coupables, mais les a plongés, les a livrés aux antres ténébreux du Tartare, les gardant en réserve pour le jugement.", 
-  "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والعـالم الأول لم يُشـفِـق عليه، لكن نوحـاً الثَّامـن المُنـادِي بالبِّر حفظه، وأتى بماء الطُّوفان على العالم المُنافق.", 
-  "5 Il n'a pas épargné non plus l'ancien monde, mais il préserva, lors du déluge dont il submergea le monde des impies, Noé, le huitième des survivants, lui qui proclamait la justice;", 
-  "5 and did not spare the ancient world, but saved Noah, one of eight people, a preacher of righteousness, bringing in the flood on the world of the ungodly;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والمدن الأُخر سادوم وعامورة أحرقهما وحكم عليهما بالخسف، وجعلهما عِبرةً للمنافقين الذين سيكونون، والصدِّيق لوط خلَّصه من ظلمهم، ومن تقلبهم الرديء وسلوكهم النجس.", 
-  "6 puis il condamna à l'anéantissement les villes de Sodome et Gomorrhe en les réduisant en cendres à titre d'exemple pour les impies à venir; 7 et il délivra Loth le juste, accablé par la manière dont vivaient ces criminels débauchés;", 
-  "6 and turning the cities of Sodom and Gomorrah into ashes, condemned them to destruction, making them an example to those who afterward would live ungodly; 7 and delivered righteous Lot, who was oppressed by the filthy conduct of the wicked", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّه بالنَّظر والسَّمع كان الصدِّيق ساكناً بينهم، ويوماً فيوماً كانوا يُحزِنون نفس الصدِّيق بأعمال مُخالفة للنَّاموس.", 
-  "8 car ce juste, vivant au milieu d'eux, les voyait et les entendait: jour après jour, son âme de juste, était à la torture, à cause de leurs oeuvres scandaleuses.", 
-  "8 (for that righteous man, dwelling among them, tormented his righteous soul from day to day by seeing and hearing their lawless deeds).", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2804&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى (4:1-14 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4:1-14)", 
   "1 John 4:1-14", 
   "1 John 4:1-14", 
   ],
@@ -2021,7 +1380,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2904&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 12 – 17 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 12 – 17)", 
   "2 Peter 1:12-17", 
   "2 Peter 1:12-17", 
   ],
@@ -2053,7 +1412,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=3004&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى(4:15 - 5:1-4)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(4:15-5:1-4)", 
   "1 Jean 4:15 - 5:1-4", 
   "1John 4:15-21& 5:1-4", 
   ],
@@ -2102,10 +1461,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0105&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى 1:25 & 2:1-10", 
-  "1 Peter 1:25 & 2:1-10", 
-  "1 Peter1:25 & 2:1-10", 
+  Prefix.katholikon+"&D=0105||0305||0210&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى 1:25 & (2: 1-10)", 
+  "1 Peter (1:25 & (2: 1-10)", 
+  "1 Peter (1:25 & (2: 1-10)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -2152,60 +1511,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0305&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى1:25 & 2:1-10", 
-  "1 Peter 1:25 & 2:1-10", 
-  "1Peter 1:25 & 2:1-10", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما كلمة الرب فتثبت الى الابد.وهذه هي الكلمة التي بشرتم بها. فاطرحوا كل خبث وكل مكر والرياء والحسد وكل مذمة.", 
-  "25 Mais la parole du Seigneur demeure éternellement. Cette parole est celle qui vous a été annoncée par l’Évangile.1 Rejetez donc toute méchanceté et toute fraude, l’hypocrisie, l’envie et toute médisance ;", 
-  "25 Now this is the word which by the gospel was preached to you. 1 Therefore, laying aside all malice, all guile, hypocrisy, envy, and all evil speaking,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وكاطفال مولودين الآن اشتهوا اللبن العقلي العديم الغش لكي تنموا به. ان كنتم قد ذقتم ان الرب صالح.", 
-  "2 désirez comme des enfants nouveaux–nés le lait non frelaté de la parole, afin que par lui vous croissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon.", 
-  "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي اذ تأتون اليه حجرا حيّا مرفوضا من الناس ولكن مختار من الله كريم. كونوا انتم ايضا مبنيين كحجارة حية بيتا روحيا كهنوتا مقدسا لتقديم ذبائح روحية مقبولة عند الله بيسوع المسيح.", 
-  "4 Approchez–vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu,5 et vous–mêmes, comme des pierres vivantes, édifiez–vous pour former une maison spirituelle, un saint sacerdoce, en vue d’offrir des victimes spirituelles, agréables à Dieu par Jésus–Christ ;", 
-  "4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لذلك يتضمن ايضا في الكتاب هانذا اضع في صهيون حجر زاوية مختارا كريما والذي يؤمن به لن يخزى.", 
-  "6 car il y a dans l’Écriture: Voici, je pose en Sion une pierre angulaire, choisie, précieuse, Et celui qui croit en elle ne sera pas confondu.", 
-  "6 Therefore it is also contained in the Scripture, Behold, I lay in Zion a chief cornerstone, elect, precious, and he who believes on Him will by no means be put to shame", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فلكم انتم الذين تؤمنون الكرامة واما للذين لا يطيعون فالحجر الذي رفضه البناؤون هو قد صار راس الزاوية. وحجر صدمة وصخرة عثرة.", 
-  "7 L’honneur est donc pour vous qui croyez. Mais, pour les incrédules, La pierre qu’ont rejetée ceux qui bâtissaient Est devenue la principale, celle de l’angle Et une pierre d’achoppement Et un rocher de scandale. 8 Ils s’y achoppent en désobéissant à la parole,", 
-  "7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected has become the chief cornerstone,'' 8 and A stone of stumbling and a rock of offense.'' They stumble,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين يعثرون غير طائعين للكلمة الامر الذي جعلوا له. واما انتم فجنس مختار وكهنوت ملوكي امة مقدسة شعب اقتناء لكي تخبروا بفضائل الذي دعاكم من الظلمة الى نوره العجيب.", 
-  "et c’est à quoi ils ont été destinés. 9 Vous, par contre, vous êtes une race élue, un sacerdoce royal, une nation sainte, un peuple racheté, afin d’annoncer les vertus de celui qui vous a appelés des ténèbres à son admirable lumière ;", 
-  "being disobedient to the word, to which they also were appointed. 9 But you are a chosen generation, a royal priesthood, a holy nation, His own special people, that you may proclaim the praises of Him who called you out of darkness into His marvelous light;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين قبلا لم تكونوا شعبا واما الآن فانتم شعب الله.الذين كنتم غير مرحومين واما الآن فمرحومون.", 
-  "10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde. 10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde.", 
-  "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy. 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy. 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=0405&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الاولى 1:1-10 & 2:1-6) )", 
-  "1 Jean 1:1-10 & 2:1-6", 
-  "1 John 1:1-10 & 2:1-6", 
+  Prefix.katholikon+"&D=0405||0113&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الاولى 1:1-10 & (2: 1-6))", 
+  "1 Jean (1: 1-10 & 2: 1-6)", 
+  "1 John (1: 1-10 & 2: 1-6)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -2265,19 +1574,19 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=051stSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى 3 : 1- 11", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى 3 : 1- 11", 
   "1 John 3:1-11", 
   "1 Jean 3:1-11", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أُنُظروا أيَّة محبَّةٍ أعطاها لناَ الآبُ حتَّى نُدعَى أبناءَ اللـهِ! وإنَّنا نحنُ كذلك، من أجل هذا لا يَعرفُنا العالم، لأنَّهُ لا يعرفهُ.", 
+  "أُنُظروا أيَّة محبَّةٍ أعطاها لناَ الآبُ حتَّى نُدعَى أبناءَ الل-هِ! وإنَّنا نحنُ كذلك، من أجل هذا لا يَعرفُنا العالم، لأنَّهُ لا يعرفهُ.", 
   "1 Behold what manner of love the Father has bestowed on us, that we should be called children of God! Therefore the world does not know us, because it did not know Him.", 
   "1 Voyez, quel amour le Père nous a donné, puisque nous sommes appelés enfants de Dieu ! Et nous le sommes. Voici pourquoi le monde ne nous connaît pas : c’est qu’il ne l’a pas connu.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يا أحبَّائي، الآنَ نحنُ أولادُ اللـهِ، ولم يُظهَرْ بَعدُ ماذا سنكونُ. ولكن نعلمُ أنَّهُ إذا أُظهِرَ نكُونُ مِثلهُ، لأنَّنا سنراهُ كمَا هو. وكُلُّ مَن عندهُ هذا الرَّجاءُ بهِ، يُطَهِّرُ نَفسهُ كما أنَّ ذاكَ طاهرٌ.", 
+  "يا أحبَّائي، الآنَ نحنُ أولادُ الل-هِ، ولم يُظهَرْ بَعدُ ماذا سنكونُ. ولكن نعلمُ أنَّهُ إذا أُظهِرَ نكُونُ مِثلهُ، لأنَّنا سنراهُ كمَا هو. وكُلُّ مَن عندهُ هذا الرَّجاءُ بهِ، يُطَهِّرُ نَفسهُ كما أنَّ ذاكَ طاهرٌ.", 
   "2 Beloved, now we are children of God; and it has not yet been revealed what we shall be, but we know that when He is revealed, we shall be like Him, for we shall see Him as He is. 3 And everyone who has this hope in Him purifies himself, just as He is pure.", 
   "2 Bien–aimés, nous sommes maintenant enfants de Dieu, et ce que nous serons n’a pas encore été manifesté ; mais nous savons que lorsqu’il sera manifesté, nous serons semblables à lui, parce que nous le verrons tel qu’il est. 3 Quiconque a cette espérance en lui se purifie, comme lui (le Seigneur) est pur.", 
   ],
@@ -2289,27 +1598,27 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أيُّها الأولادُ، لا يُضِلَّكُم أحدٌ. مَن يصنعُ البرَّ فهو بارٌّ، كما أنَّ ذاك بارٌّ. مَن يفعلُ الخطيَّةَ فهو مِن الشَّيطان. لأنَّ الشَّيطان مِن البدءِ يُخطئُ. لأجل هذا أُظهِرَ ابنُ اللـهِ لكي يَنقُضَ أعمَال الشَّيطانَ.", 
+  "أيُّها الأولادُ، لا يُضِلَّكُم أحدٌ. مَن يصنعُ البرَّ فهو بارٌّ، كما أنَّ ذاك بارٌّ. مَن يفعلُ الخطيَّةَ فهو مِن الشَّيطان. لأنَّ الشَّيطان مِن البدءِ يُخطئُ. لأجل هذا أُظهِرَ ابنُ الل-هِ لكي يَنقُضَ أعمَال الشَّيطانَ.", 
   "7 Little children, let no one deceive you. He who practices righteousness is righteous, just as He is righteous. 8 He who sins is of the devil, for the devil has sinned from the beginning. For this purpose the Son of God was manifested, that He might destroy the works of the devil.", 
   "7 Petits enfants, que personne ne vous séduise. Celui qui pratique la justice est juste, comme lui (le Seigneur) est juste. 8 Celui qui commet le péché est du diable, car le diable pèche dès le commencement. Le Fils de Dieu est apparu, afin de détruire les œuvres du diable.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من اللـهِ. بهذا أولادُ اللـهِ ظاهرونَ وأولادُ الشَّيطان.", 
+  "كُلُّ مَن وُلِدَ مِن اللهِ لا يفعلُ خطيَّةً، لأنَّ زَرعَهُ ثابتٌ فيهِ، ولا يستطيعُ أن يُخطئ لأنَّهُ مَولودٌ من الل-هِ. بهذا أولادُ الل-هِ ظاهرونَ وأولادُ الشَّيطان.", 
   "9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God. 10 In this the children of God and the children of the devil are manifest:", 
   "9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كُلُّ من لا يفعلُ البرَّ فليسَ من اللـهِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.", 
+  "كُلُّ من لا يفعلُ البرَّ فليسَ من الل-هِ، وكذا مَن لا يُحبُّ أخاهُ. لأنَّ هذا هو الوعد الذي سمِعتُموهُ من البدءِ: أن تُحِبُّوا بعضُكم بعضاً.", 
   "Whoever does not practice righteousness is not of God, nor is he who does not love his brother.11 For this is the message that you heard from the beginning, that we should love one another,.", 
   "Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. 11 Voici le message que vous avez entendu dès le commencement : Aimons nous les uns les autres ;", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=052ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى( 3 : 18 ـ 24 )", 
+  Prefix.katholikon+"&D=052ndSunday||Pntl25&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(3 : 18-24)", 
   "1 John 3:18-24", 
   "1 Jean 3:18-24", 
   ],
@@ -2321,7 +1630,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّهُ إنْ لامَنَا قلبُنا فاللـهُ أعْظَمُ مِن قلبِنا، وهو عالمٌ بكُلِّ شيءٍ. يا أحبَّائي، إن لم يَلُمنا قلبُنا، فَلنَا دالةٌ عند اللـهِ.", 
+  "لأنَّهُ إنْ لامَنَا قلبُنا فالل-هُ أعْظَمُ مِن قلبِنا، وهو عالمٌ بكُلِّ شيءٍ. يا أحبَّائي، إن لم يَلُمنا قلبُنا، فَلنَا دالةٌ عند الل-هِ.", 
   "20 For if our heart condemns us, God is greater than our heart, and knows all things. 21 Beloved, if our heart does not condemn us, we have confidence toward God.", 
   "20 de quelque manière que notre coeur nous condamne : Dieu est plus grand que notre coeur et connaît tout. 21 Bien–aimés, si notre coeur ne nous condamne pas, nous avons de l’assurance devant Dieu.", 
   ],
@@ -2341,7 +1650,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=053rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 4 : 11 ـ 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 11-21)", 
   "1 John 4:11-21", 
   "1 Jean 4:11-21", 
   ],
@@ -2385,19 +1694,19 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=054thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 9 ـ 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 9-21)", 
   "1 John 5:9-21", 
   "1 Jean 5:9-21", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إن كُنَّا نَقبَلُ شهادَةَ النَّاسِ، فَشَهادةُ اللـه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ اللـهِ التي قد شهدَ بها عن ابنهِ. مَن يُؤمِن بِابن اللـهِ فشهادة اللـه ثابتةٌ فيه.", 
+  "إن كُنَّا نَقبَلُ شهادَةَ النَّاسِ، فَشَهادةُ الل-ه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ الل-هِ التي قد شهدَ بها عن ابنهِ. مَن يُؤمِن بِابن الل-هِ فشهادة الل-ه ثابتةٌ فيه.", 
   "9 If we receive the witness of men, the witness of God is greater; for this is the witness of God which He has testified of His Son. 10 He who believes in the Son of God has the witness in himself;", 
   "9 Si nous recevons le témoignage des hommes, le témoignage de Dieu est plus grand ; car voici le témoignage de Dieu : c’est qu’il rend témoignage à son Fils. 10 Celui qui croit au Fils de Dieu, a ce témoignage en lui–même ;", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومَن لا يُصدِّقُ اللـهَ، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها اللـهُ عن ابنهِ. وهذه هيَ الشَّهادةُ: أنَّ اللـهَ أعطانا الحياة الأبديَّة، وهذهِ الحياةُ هيَ في ابنهِ.", 
+  "ومَن لا يُصدِّقُ الل-هَ، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها الل-هُ عن ابنهِ. وهذه هيَ الشَّهادةُ: أنَّ الل-هَ أعطانا الحياة الأبديَّة، وهذهِ الحياةُ هيَ في ابنهِ.", 
   "he who does not believe God has made Him a liar, because he has not believed the testimony that God has given of His Son. 11 And this is the testimony: that God has given us eternal life, and this life is in His Son.", 
   "celui qui ne croit pas Dieu, le fait menteur, puisqu’il ne croit pas au témoignage que Dieu a rendu à son Fils.11 Et voici ce témoignage : Dieu nous a donné la vie éternelle, et cette vie est en son Fils.", 
   ],
@@ -2440,52 +1749,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0605&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية (1:12-21 )", 
-  "2 Peter 1:12-21", 
-  "2 Peter 1:12-21", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر. ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة.", 
-  "12 Voilà pourquoi je vais toujours vous rappeler ces choses, bien que vous les sachiez et que vous soyez affermis dans la vérité présente.13 J’estime juste, aussi longtemps que je suis dans cette tente, de vous tenir en éveil par mes rappels,", 
-  "For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.", 
-  "14 car je sais, comme notre Seigneur Jésus–Christ me l’a fait connaître, que mon départ de cette tente est imminent. 15 Mais j’aurai soin qu’après mon départ vous puissiez en toute occasion vous en souvenir.", 
-  "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته. لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت", 
-  "16 Ce n’est pas, en effet, en suivant des fables habilement conçues que nous vous avons fait connaître la puissance et l’avènement de notre Seigneur Jésus–Christ, mais parce que nous avons vu sa majesté de nos propres yeux ; 17 car il a reçu honneur et gloire de Dieu le Père, quand la gloire pleine de majesté lui fit entendre cette voix :", 
-  "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty. 17 For He received from God the Father honor and glory when such a voice", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كهذا من المجد الاسنى هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.", 
-  "Celui–ci est mon Fils bien–aimé, objet de mon affection. 18 Nous avons entendu cette voix venant du ciel, lorsque nous étions avec lui sur la sainte montagne.", 
-  "came to Him from the Excellent Glory: This is My beloved Son, in whom I am well pleased.'' 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكم", 
-  "19 Et nous tenons pour d’autant plus certaine la parole prophétique à laquelle vous faites bien de prêter attention comme à une lampe qui brille dans un lieu obscur, jusqu’à ce que le jour commence à poindre, et que l’étoile du matin se lève dans vos coeurs.", 
-  "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص. لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس", 
-  "20 Avant tout, sachez qu’aucune prophétie de l’Écriture ne peut être l’objet d’interprétation particulière, 21 car ce n’est nullement par une volonté humaine qu’une prophétie a jamais été présentée, mais c’est poussés par le Saint–Esprit que des hommes ont parlé de la part de Dieu.", 
-  "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=1005&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية(1 : 12 –19 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 12 –19)", 
   "2 Peter 1:12-19", 
   "2 Peter 1:12-19", 
   ],
@@ -2523,7 +1788,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=1105&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى(5 ; 5 - 21)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(5 ; 5-21)", 
   "1 Jean 5:5 - 21", 
   "1John 5:5 - 21", 
   ],
@@ -2588,48 +1853,11 @@ ReadingsArrays.KatholikonArray= [[
   "and we are in Him who is true, in His Son Jesus Christ. This is the true God and eternal life. 21 Little children, keep yourselves from idols. and we are in Him who is true, in His Son Jesus Christ. This is the true God and eternal life. 21 Little children, keep yourselves from idols.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=1205&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(3 : 15 – 22 )", 
-  "1Peter 3:15-22", 
-  "1 Peter 3:15-22", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف", 
-  "15 Mais sanctifiez dans vos coeurs Christ le Seigneur ; soyez toujours prêts à vous défendre contre quiconque vous demande raison de l’espérance qui est en vous : mais (faites–le) avec douceur et crainte,", 
-  "15 Always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكم ضمير صالح لكي يكون الذين يشتمون سيرتكم الصالحة في المسيح يخزون في ما يفترون عليكم كفاعلي شر. لان تألمكم ان شاءت مشيئة الله وانتم صانعون خيرا افضل منه وانتم صانعون شرا.", 
-  "16 en ayant une bonne conscience, afin que là même où l’on vous calomnie, ceux qui diffament votre bonne conduite en Christ soient confondus. 17 Mieux vaut souffrir en faisant le bien, si telle est la volonté de Dieu, qu’en faisant le mal.", 
-  "16 having a good conscience, that when they defame you as evildoers, those who revile your good conduct in Christ may be ashamed. 17 For it is better, if it is the will of God, to suffer for doing good than for doing evil.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فان المسيح ايضا تألم مرة واحدة من اجل الخطايا البار من اجل الاثمة لكي يقربنا الى الله مماتا في الجسد ولكن محيى في الروح. الذي فيه ايضا ذهب فكرز للارواح التي في السجن", 
-  "18 En effet, Christ aussi est mort une seule fois pour les péchés, lui juste pour des injustes, afin de vous amener à Dieu. Mis à mort selon la chair, il a été rendu vivant selon l’Esprit.19 Par cet Esprit, il est aussi allé prêcher aux esprits en prison,", 
-  "18 For Christ also suffered once for sins, the just for the unjust, that He might bring us to God, being put to death in the flesh but made alive by the Spirit, 19 by whom also He went and preached to the spirits in prison,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اذ عصت قديما حين كانت اناة الله تنتظر مرة في ايام نوح اذ كان الفلك يبنى الذي فيه خلص قليلون اي ثماني انفس بالماء. الذي مثاله يخلّصنا نحن الآن اي المعمودية", 
-  "20 qui avaient été rebelles autrefois, lorsque la patience de Dieu se prolongeait, aux jours où Noé construisait l’arche dans laquelle un petit nombre de personnes, c’est–à–dire huit, furent sauvées à travers l’eau. 21 C’était une figure du baptême qui vous sauve,", 
-  "20 who formerly were disobedient, when once the Divine longsuffering waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight souls, were saved through water. 21 There is also an antitype which now saves us baptism", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا ازالة وسخ الجسد بل سؤال ضمير صالح عن الله بقيامة يسوع المسيح. الذي هو في يمين الله اذ قد مضى الى السماء وملائكة وسلاطين وقوات مخضعة له", 
-  "à présent, et par lequel on ne se débarrasse pas de la souillure de la chair, mais qui est la demande (adressée) à Dieu d’une bonne conscience, par la résurrection de Jésus–Christ 22 qui, monté au ciel, est à la droite de Dieu et à qui les anges, les pouvoirs et les puissances ont été soumis.", 
-  "(not the removal of the filth of the flesh, but the answer of a good conscience toward God), through the resurrection of Jesus Christ, 22 who has gone into heaven and is at the right hand of God, angels and authorities and powers having been made subject to Him.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=1305&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى(2:20-25)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2:20-25)", 
   "1 Jean 2:20-25", 
   "1 John 2:20-25", 
   ],
@@ -2654,96 +1882,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2205&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (5 : 9 - 20)", 
-  "Jacques 5 : 9 - 20", 
-  "James 5:9-20", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا يئن بعضكم على بعض ايها الاخوة لئلا تدانوا.هوذا الديان واقف قدام الباب.خذوا يا اخوتي مثالا لاحتمال المشقات والاناة الانبياء الذين تكلموا باسم الرب.", 
-  "9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes.10 Pour la souffrance et la patience, le modèle à prendre, frères, ce sont les prophètes, qui ont parlé au nom du Seigneur.", 
-  "9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door! 10 My brethren, take the prophets, who spoke in the name of the Lord,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ها نحن نطوّب الصابرين.قد سمعتم بصبر ايوب ورأيتم عاقبة الرب.لان الرب كثير الرحمة ورأوف", 
-  "Voyez: nous félicitons les gens endurants; 11 vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.", 
-  "as an example of suffering and patience. 11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord-- that the Lord is very compassionate and merciful.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن قبل كل شيء يا اخوتي لا تحلفوا لا بالسماء ولا بالارض ولا بقسم آخر.بل لتكن نعمكم نعم ولاكم لا لئلا تقعوا تحت دينونة. أعلى احد بينكم مشقات فليصلّ.أمسرور احد فليرتل.", 
-  "12 Mais avant tout, mes frères, ne jurez pas, ni par le ciel, ni par la terre, ni d'aucune autre manière. Que votre oui soit oui et votre non, non, afin que vous ne tombiez pas sous le jugement.13 L'un de vous souffre-t-il? Qu'il prie. Est-il joyeux? Qu'il chante des cantiques.", 
-  "12 But above all, my brethren, do not swear, either by heaven or by earth or with any other oath. But let your Yes,'' be Yes,'' and your No,'' No,'' lest you fall into judgment. 13 Is anyone among you suffering? Let him pray. Is anyone cheerful? Let him sing psalms.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أمريض احد بينكم فليدع شيوخ الكنيسة فيصلّوا عليه ويدهنوه بزيت باسم الرب. وصلاة الايمان تشفي المريض والرب يقيمه وان كان قد فعل خطية تغفر له.", 
-  "14 L'un de vous est-il malade? Qu'il fasse appeler les anciens de l'Église et qu'ils prient après avoir fait sur lui une onction d'huile au nom du Seigneur.15 La prière de la foi sauvera le patient; le Seigneur le relèvera et, s'il a des péchés à son actif, il lui sera pardonné.", 
-  "14 Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. 15 And the prayer of faith will save the sick, and the Lord will raise him up. And if he has committed sins, he will be forgiven.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اعترفوا بعضكم لبعض بالزلات وصلّوا بعضكم لاجل بعض لكي تشفوا.طلبة البار تقتدر كثيرا في فعلها.", 
-  "16 Confessez-vous donc vos péchés les uns aux autres et priez les uns pour les autres, afin d'être guéris. La requête d'un juste agit avec beaucoup de force.", 
-  "16 Confess your trespasses to one another, and pray for one another, that you may be healed. The effective, fervent prayer of a righteous man avails much.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كان ايليا انسانا تحت الآلام مثلنا وصلّى صلاة ان لا تمطر فلم تمطر على الارض ثلاث سنين وستة اشهر.", 
-  "17 Elie était un homme semblable à nous; il pria avec ferveur pour qu'il ne plût pas, et il ne plut pas sur la terre pendant trois ans et six mois;", 
-  "17 Elijah was a man with a nature like ours, and he prayed earnestly that it would not rain; and it did not rain on the land for three years and six months.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ثم صلّى ايضا فاعطت السماء مطرا واخرجت الارض ثمرها. ايها الاخوة ان ضل احد بينكم عن الحق فردّه احد.فليعلم ان من رد خاطئا عن ضلال طريقه يخلّص نفسا من الموت ويستر كثرة من الخطايا ٍ", 
-  "18 puis il pria de nouveau, le ciel donna de la pluie, la terre produisit son fruit.19 Mes frères, si l'un de vous s'est égaré loin de la vérité et qu'on le ramène,20 sachez que celui qui ramène un pêcheur du chemin où il s'égarait lui sauvera la vie et fera disparaître une foule de péchés.", 
-  "18 And he prayed again, and the heaven gave rain, and the earth produced its fruit. 19 Brethren, if anyone among you wanders from the truth, and someone turns him back, 20 let him know that he who turns a sinner from the error of his way will save a soul from death and cover a multitude of sins.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=2605&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (4:12-19)", 
-  "1 Peter 4:12-19", 
-  "1 Peter 4:12-19", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاحباء لا تستغربوا البلوى المحرقة التي بينكم حادثة لاجل امتحانكم كانه اصابكم امر غريب بل كما اشتركتم في آلام المسيح", 
-  "12 Bien–aimés, ne soyez pas surpris de la fournaise qui sévit parmi vous pour vous éprouver, comme s’il vous arrivait quelque chose d’étrange.13 Au contraire, réjouissez–vous de participer aux souffrances du Christ,", 
-  "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings, that when His glory is revealed,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "افرحوا لكي تفرحوا في استعلان مجده ايضا مبتهجين ان عيّرتم باسم المسيح فطوبى لكم لان روح المجد والله يحل عليكم. اما من جهتهم فيجدّف عليه واما من جهتكم فيمجد.", 
-  "afin de vous réjouir aussi avec allégresse, lors de la révélation de sa gloire. 14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !", 
-  "you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فلا يتألم احدكم كقاتل او سارق او فاعل شر او متداخل في امور غيره.ولكن ان كان كمسيحي فلا يخجل بل يمجد الله من هذا القبيل.", 
-  "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.", 
-  "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه الوقت لابتداء القضاء من بيت الله.فان كان اولا منا فما هي نهاية الذين لا يطيعون انجيل الله.", 
-  "17 Car c’est le moment où le jugement va commencer par la maison de Dieu. Or, si c’est par nous qu’il débute, quelle sera la fin de ceux qui n’obéissent pas à l’Évangile de Dieu ?", 
-  "17 For the time has come for judgment to begin at the house of God; and if it begins with us first, what will be the end of those who do not obey the gospel of God?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وان كان البار بالجهد يخلص فالفاجر والخاطئ اين يظهران. فاذا الذين يتألمون بحسب مشيئة الله فليستودعوا انفسهم كما لخالق امين في عمل الخير", 
-  "18 Et si le juste est sauvé difficilement, que deviendra celui qui est impie et pécheur ? 19 Ainsi, que ceux qui souffrent selon la volonté de Dieu, remettent leur âme au fidèle Créateur en faisant le bien.", 
-  "18 Now If the righteous one is scarcely saved, where will the ungodly and the sinner appear?'' 19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=3005&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (3 : 5 - 14)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3 : 5-14)", 
   "1 Pierre 3 : 5 - 14", 
   "1 Peter 3:5-14", 
   ],
@@ -2790,66 +1930,11 @@ ReadingsArrays.KatholikonArray= [[
   "13 And who is he who will harm you if you become followers of what is good? 14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled.”", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=0206&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (5 : 1-14)", 
-  "1 Pierre 5 : 1-14", 
-  "1 Peter 5:1-14", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أطلبُ إلى الشُّيوخ الذين بينكم، أنا الشَّيخَ شريكُكم، والشَّاهدَ لآلام المسيح، وشريكَ المجدِ العتيدِ أن يُعلنَ،", 
-  "1 J'exhorte les anciens qui sont parmi vous, moi qui suis ancien avec eux et témoin des souffrances du Christ, moi qui ai part à la gloire qui va être révélée:", 
-  "1 The elders who are among you I exhort, I who am a fellow elder and a witness of the sufferings of Christ, and also a partaker of the glory that will be revealed:", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ارعوا رَعيَّةَ الله التي بينكم وتعاهدوها، لا بالقهر بل بالاختيار كمثل الله، ولا ببخلٍ بل بنشاطٍ", 
-  "2 paissez le troupeau de Dieu qui vous est confié, en veillant sur lui non par contrainte, mais de bon gré, selon Dieu; non par cupidité, mais par dévouement.", 
-  "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولا كمن يتسلطُ على المواريث بل صائرينَ أمثلةً للرَّعيَّةِ. ومتَى ظهر رئيسُ الرُّعاةِ تنالون إكليلَ المجدِ الذي لا يضمحل.", 
-  "3 N'exercez pas un pouvoir autoritaire sur ceux qui vous sont échus en partage, mais devenez les modèles du troupeau.4 Et quand paraîtra le souverain berger, vous recevrez la couronne de gloire qui ne se flétrit pas.", 
-  "3 nor as being lords over those entrusted to you, but being examples to the flock; 4 and when the Chief Shepherd appears, you will receive the crown of glory that does not fade away.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كذلك أنتُم أيُّها الشُّبَّان اخضعوا للشُّيوخ، وكونوا جميعاً مُتسربلينَ بالتَّواضع بعضكم لبعضٍ، لأن الله يُقاوِم المُستكبرين، ويُعطِي نعمةً للمتواضعين. فتواضعوا تحت يد الله القويَّة لكي يرفعكُم في زمان الافتقاد،", 
-  "5 De même, jeunes gens, soyez soumis aux anciens. Et tous, dans vos rapports mutuels, revêtez-vous d'humilité, car Dieu s'oppose aux orgueilleux, mais aux humbles il accorde sa grâce. 6 Humiliez-vous donc sous la main puissante de Dieu, afin qu'il vous élève au moment fixé;", 
-  "5 Likewise you younger people, submit yourselves to your elders. Yes, all of you be submissive to one another, and be clothed with humility, for God resists the proud, But gives grace to the humble. 6 Therefore humble yourselves under the mighty hand of God, that He may exalt you in due time,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مُلقينَ كلَّ همِّكُم عليه، لأنه هو يعتني بكم. كونوا مُتيقِّظينَ واسهروا. لأن إبليس عدوكم يجول كأسدٍ زائر، يلتمس مَن يبتلعه.", 
-  "7 déchargez-vous sur lui de tous vos soucis, car il prend soin de vous.8 Soyez sobres, veillez! Votre adversaire, le diable, comme un lion rugissant, rôde, cherchant qui dévorer.", 
-  "7 casting all your care upon Him, for He cares for you. 8 Be sober, be vigilant; because your adversary the devil walks about like a roaring lion, seeking whom he may devour.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فقاوِموه، راسخينَ في الإيمان، عالمين أن نفس هذه الآلام تُجرَى على إخوتكم الذين في العالم. وإله كلّ نعمةٍ الذي دعاكُم إلى مجدهِ الأبديِّ في المسيح يسوع، بعدما تألَّمتُم يسيراً،", 
-  "9 Résistez-lui, fermes dans la foi, sachant que les mêmes souffrances sont réservées à vos frères dans le monde. 10 Le Dieu de toute grâce, qui vous a appelés à sa gloire éternelle en Christ, vous rétablira lui-même après que vous aurez souffert un peu de temps;", 
-  "9 Resist him, steadfast in the faith, knowing that the same sufferings are experienced by your brotherhood in the world. 10 But may the God of all grace, who called us to His eternal glory by Christ Jesus, after you have suffered a while,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم. له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين، ـ كما أظُنُّ ـ كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ.", 
-  "il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles, Amen. 12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés. La communauté des élus", 
-  "perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen.12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون ( مصر )، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.", 
-  "13 qui est à Babylone vous salue, ainsi que Marc, mon fils?14 Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.", 
-  "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=061stSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية (3:14-18)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (3:14-18)", 
   "2 Pierre 3:14-18", 
   "2 Peter 3:14-18", 
   ],
@@ -2884,60 +1969,11 @@ ReadingsArrays.KatholikonArray= [[
   "18 but grow in the grace and knowledge of our Lord and Savior Jesus Christ. To Him be the glory both now and forever. Amen.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=062ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الثانية ( 1 : 1 ـ 13 )", 
-  "2 Jean 1 : 1 - 13", 
-  "2 John 1:1-13", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "من الشَّيخ إلى السيدة المُختارة، وإلى أولادها الذين أنا أحبُّهم بالحقِّ، ولستُ أنا فقط، بل جميع الذين قد عرَفُوا الحقَّ. من أجل الحقِّ الثَّابت فينا وسيكون معنا إلى الأبد،", 
-  "1 L'Ancien, à la Dame élue et à ses enfants, que j'aime dans la lumière de la vérité - non pas moi seulement, mais encore tous ceux qui possèdent la connaissance de la vérité -, 2 en vertu de la vérité qui demeure en nous et sera avec nous à jamais:", 
-  "1:1 THE ELDER, To the elect lady and her children, whom I love in truth, and not only I, but also all those who have known the truth, 2 because of the truth which abides in us and will be with us forever:", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "تكون النِّعمةُ والرَّحمةُ والسَّلامُ معنا من الله الآبِ ومن ربِّنا يسوع المسيح، ابن الآبِ بالحقِّ والمحبَّةِ. فرحتُ جدّاً لأني وجدتُ من أولادكِ بعضاً سالكين فى الحقِّ، كما أخذنا وصيَّة من الآبِ.", 
-  "3 avec nous seront grâce, miséricorde, paix, qui nous viennent de Dieu le Père, et de Jésus Christ, le Fils du Père, dans la vérité et l'amour. 4 J'ai éprouvé une très grande joie à trouver de tes enfants qui marchent dans la voie de la vérité, selon le commandement que nous avons reçu du Père.", 
-  "3 Grace, mercy, and peace will be with you from God the Father and from the Lord Jesus Christ, the Son of the Father, in truth and love. 4 I rejoiced greatly that I have found some of your children walking in truth, as we received commandment from the Father.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والآن أطلب منكِ أيتها السَّيِّدة، لا كأنِّي أكتب إليكِ وصيَّةً جديدةً، بل التي كانت عندنا من البدء: أن نُحبَّ بعضنا بعضاً. وهذه هيَ المحبَّة، أن نسلكَ بحسبِ وصاياه.", 
-  "5 Et maintenant, Dame, je te le demande - je ne t'écris pas là un commandement nouveau, mais celui que nous avons depuis le commencement -, aimons-nous les uns les autres; 6 et voici ce qu'est l'amour: que nous marchions dans la voie de ses commandements.", 
-  "5 And now I plead with you, lady, not as though I wrote a new commandment to you, but that which we have had from the beginning: that we love one another. 6 This is love, that we walk according to His commandments.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هذه هيَ الوصيَّة، كما سَمِعتم من البدءِ أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.", 
-  "Tel est le commandement que vous avez entendu depuis le commencement, pour que vous marchiez dans cette voie. 7 Car de nombreux séducteurs se sont répandus dans le monde: ils ne professent pas la foi à la venue de Jésus Christ dans la chair. Le voilà, le séducteur et l'antéchrist!", 
-  "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فانظروا إلى أنفُسِكم لئلاَّ تفقِدوا ما عملتموه، بل تنالوا أجراً تاماً. كلُّ مَن يتعدَّى ولا يثبت فى تعليم المسيح فليس له إلهٌ. ومَن يثبُت فى تعليم المسيح فهذا له الآبُ والابنُ.", 
-  "8 Prenez garde à vous-mêmes, afin de ne pas perdre le fruit de vos oeuvres, mais de recevoir pleine récompense. 9 Quiconque va trop avant et ne demeure pas dans la doctrine du Christ, n'a pas Dieu. Celui qui demeure dans la doctrine, il a, lui, et le Père et le Fils.", 
-  "8 Look to yourselves, that we do not lose those things we worked for, but that we may receive a full reward. 9 Whoever transgresses and does not abide in the doctrine of Christ does not have God. He who abides in the doctrine of Christ has both the Father and the Son.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ومَن يأتيكم، ولا يجيء بهذا التَّعليم، فلا تقبلوه في البيت، ولا تقولوا له سلامٌ. ومن يقول له سلامٌ فهو شريكٌ له في أعمالهِ الشِّرِّيرةِ.", 
-  "10 Si quelqu'un vient à vous sans être porteur de cette doctrine, ne l'accueillez pas chez vous et ne lui souhaitez pas la bienvenue. 11 Qui lui souhaite la bienvenue communie à ses oeuvres mauvaises.", 
-  "10 If anyone comes to you and does not bring this doctrine, do not receive him into your house nor greet him; 11 for he who greets him shares in his evil deeds.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "إذ كانَ لي كثيرٌ لأكتبه إليكم، لم أُرِد أن يكون بورقٍ وحبرٍ، لأنِّي أرجو أن آتيَ إليكم وأتكلَّم فماً لفم، لكي يكونَ فرحكم كاملاً. يُسلِّمُ عليكِ أولاد أُختكِ المُختارةِ.", 
-  "12 J'ai bien des choses à vous écrire, pourtant je n'ai pas voulu le faire avec du papier et de l'encre. Car j'espère me rendre chez vous et vous parler de vive voix, afin que notre joie soit complète. 13 Te saluent les enfants de ta Sœur l'élue.", 
-  "12 Having many things to write to you, I did not wish to do so with paper and ink; but I hope to come to you and speak face to face, that our joy may be full. 13 The children of your elect sister greet you. Amen.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=063rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يهوذا ( 1 : 14 – 25 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا (1 : 14 – 25)", 
   "Jude 1 : 14 - 25", 
   "Jude 14 – 25", 
   ],
@@ -2987,7 +2023,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=064thSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (1 : 3 1- 21)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 3 1- 21)", 
   "Jacques 1 : 13-21", 
   "James 1: 13 - 21", 
   ],
@@ -3018,36 +2054,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=1307&C=Title", 
-  "الكاثوليكون من رسالة بطرس الرسول الأولى (4 : 1 ـ 11)", 
-  "1 Pierre 4:1-11", 
-  "1 Peter 4:1-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فإذ قد تألَّم المسيح بالجسد عنَّا، تسلَّحوا أنتُم أيضاً بهذا المثال. فإنَّ مَن تألَّم بالجسد، كُفَّ عن الخطيَّة، لكي لا يعيش أيضاً الزَّمان الباقي في الجسد، لشهوات النَّاس، بل لإرادة الله.", 
-  "1 Ainsi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché, pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.", 
-  "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّه يكفيكم الزَّمان الذي مَضى إذ كنتم تصنعون فيه إرادة الأُمَم، وتسلكون في النجاسات والشَّهوات، وإدمان المُسكرات المتنوعة، والخلاعة، والدنس، وعبادة الأوثان المرذولة، الأمر الذي فيه يستغربونَ أنَّكُم لستُم تركضون معهم إلى فيض عدم الصَّحة عينها، مُجدِّفينَ. الذين سوف يُعطون جواباً للذي هو على استعدادٍ أن يُدين الأحياء والأموات. فإنَّه لأجل هذا بُشِّرَ الموتى أيضاً، لكي يُدانوا حسب النَّاس بالجسد، ولكن ليَحيَوا حسب الله بالرُّوح.", 
-  "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes. 4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts. 6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit.", 
-  " 3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries. 4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead. 6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  " وإنَّما نهاية كلِّ شيءٍ قد اقتربت، فتعقَّلوا إذاً واسهروا في الصَّلوات. ولكن قبل كلِّ شيءٍ، فلتكن المحبَّة دائمةً فيكُم بعضكُم لبعضٍ، لأنَّ المحبَّة تستُر كثرةً من الخطايا. كونوا مُحبِّين ضيافة الغُرباء بعضكم لبعضٍ بلا تذمُّر. وليخدم كلُّ واحدٍ الآخرين بما نال من المواهب بعضكم بعضاً، كوكلاء صالحين على نعمة الله المتنوِّعة. مَن يتكلَّم فكأقوال الله. ومَن يخدم فكأنَّه من قوَّةٍ يُهيئها الله، لكي يتمجَّد الله في كلِّ شيءٍ بيسوع المسيح، الذي له المجد والسُّلطان إلى أبدِ الآبدينَ. آمين.", 
-  "7 La fin de toutes choses est proche. Montrez donc de la sagesse et soyez sobres afin de pouvoir prier. 8 Ayez avant tout un amour constant les uns pour les autres, car l'amour couvre une multitude de péchés. 9 Pratiquez l'hospitalité les uns envers les autres, sans murmurer. 10 Mettez-vous, chacun selon le don qu'il a reçu, au service les uns des autres, comme de bons administrateurs de la grâce de Dieu, variée en ses effets. 11 Si quelqu'un parle, que ce soit pour transmettre les paroles de Dieu; si quelqu'un assure le service, que ce soit avec la force que Dieu accorde, afin que par Jésus Christ Dieu soit totalement glorifié, lui à qui appartiennent gloire et domination pour les siècles des siècles, Amen.", 
-  "7 But the end of all things is at hand; therefore be serious and watchful in your prayers. 8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God. 11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=2308&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 1 ـ 11 )", 
-  "1 Pierre 4:1-11", 
-  "1 Peter 4:1-11", 
+  Prefix.katholikon+"&D=2503||1307||2308||0111||GL8thSunday||Pntl2&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (4 : 1-11)", 
+  "1 Pierre (4: 1-11)", 
+  "1 Peter (4: 1-11)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -3076,10 +2086,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2708&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (3:8-15)", 
-  "1 Pierre 3:8-15", 
-  "1 Peter 3:8-15", 
+  Prefix.katholikon+"&D=2708||2011||Pntl4&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3: 8-15)", 
+  "1 Pierre (3: 8-15)", 
+  "1 Peter (3: 8-15)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -3096,8 +2106,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=3008&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 14 )", 
+  Prefix.katholikon+"&D=3008||1703||2403||0206&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 1-14)", 
   "1 Pierre 5:1-14", 
   "1 Peter 5:1-14", 
   ],
@@ -3126,62 +2136,13 @@ ReadingsArrays.KatholikonArray= [[
   "12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand. 13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.\".", 
   ],
   ],
+  
   [
   [
-  Prefix.katholikon+"&D=0109&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الثانية ( 1 : 1 – 13 )", 
-  "2 Jean 1:1-13", 
-  "2 John 1:1-13", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "من الشَّيخ إلى السيدة المُختارة، وإلى أولادها الذين أنا أحبُّهم بالحقِّ، ولستُ أنا فقط، بل جميع الذين قد عرفوا الحقَّ. من أجل الحقِّ الثَّابت فينا وسيكون معنا إلى الأبد،", 
-  "1 L’ancien, à Kyria l’élue et à ses enfants que j’aime dans la vérité –– et non pas moi seulement, mais aussi tous ceux qui ont connu la vérité –2 à cause de la vérité qui demeure en nous et qui sera avec nous pour l’éternité :", 
-  "1 THE ELDER, To the elect lady and her children, whom I love in truth, and not only I, but also all those who have known the truth, 2 because of the truth which abides in us and will be with us forever:", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "تكون النِّعمةُ والرَّحمةُ والسَّلامُ معنا من الله الآبِ ومن ربِّنا يسوع المسيح، ابن الآبِ بالحقِّ والمحبَّةِ. فرحتُ جدّاً لأني وجدتُ من أولادك سالكين فى الحقِّ، كما أخذنا وصيَّة من الآبِ.", 
-  "3 La grâce, la miséricorde et la paix seront avec nous de la part de Dieu le Père et de la part de Jésus–Christ, le Fils du Père, dans la vérité et l’amour. 4 Je me suis beaucoup réjoui de trouver de tes enfants qui marchent dans la vérité, selon le commandement que nous avons reçu du Père.", 
-  "3 Grace, mercy, and peace will be with you from God the Father and from the Lord Jesus Christ, the Son of the Father, in truth and love. 4 I rejoiced greatly that I have found some of your children walking in truth, as we received commandment from the Father.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والآن أطلب منكِ أيتها السَّيِّدة، لا كأنِّي أكتب إليكِ وصيَّةً جديدةً، بل التى كانت عندنا من البدء: أن نحبَّ بعضنا بعضاً. وهذه هى المحبَّة، أن نسلكَ بحسبِ وصاياه.", 
-  "5 Et maintenant, Kyria –– ce que je t’écris ainsi n’est pas un commandement nouveau, mais seulement celui que nous avons eu dès le commencement –– je te demande que nous nous aimions les uns les autres. 6 Et l’amour consiste à marcher selon ses commandements.", 
-  "5 And now I plead with you, lady, not as though I wrote a new commandment to you, but that which we have had from the beginning: that we love one another. 6 This is love, that we walk according to His commandments.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هذه هيَ الوصيَّة، كما سَمِعتم من البدء أن تسلكوا فيها. لأنه قد جاء إلى العالم مُضِلُّونَ كثيرون، الذين لا يعترفون أن يسوع المسيح قد جاء فى الجسد. هذا هو المُضِلُّ. والضِّـدُّ للمسيح.", 
-  "C’est là le commandement dans lequel vous devez marcher, comme vous l’avez appris dès le commencement. 7 Car dans le monde sont entrés plusieurs séducteurs, qui ne confessent pas Jésus–Christ venu dans la chair. Voilà le séducteur et l’antichrist.", 
-  "This is the commandment, that as you have heard from the beginning, you should walk in it. 7 For many deceivers have gone out into the world who do not confess Jesus Christ as coming in the flesh. This is a deceiver and an antichrist.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فانظروا إلى أنفُسِكـم لئلاَّ تفقـِدوا مـا عمـلتموه، بل تنالوا أجـراً تـامـاً. كلُّ من يتعـدَّى ولا يثبت فى تعليم المسيح فليس له إلهٌ. ومَن يثبُت فى تعليم المسيح فهذا له الآبُ والابنُ.", 
-  "8 Prenez garde à vous–mêmes, afin de ne pas perdre le fruit de notre travail, mais de recevoir une pleine récompense. 9 Quiconque va plus loin et ne demeure pas dans la doctrine du Christ n’a pas Dieu ; celui qui demeure dans la doctrine a le Père et le Fils.", 
-  "8 Look to yourselves, that we do not lose those things we worked for, but that we may receive a full reward. 9 Whoever transgresses and does not abide in the doctrine of Christ does not have God. He who abides in the doctrine of Christ has both the Father and the Son.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ومَن يأتيكم، ولا يجيء بهذا التَّعليم، فلا تقبلوه في البيت، ولا تقولوا له سلامٌ. ومن يقول له سلامٌ فهو شريكٌ له فى أعمالهِ الشريرةِ.", 
-  "10 Si quelqu’un vient à vous et n’apporte pas cette doctrine, ne le recevez pas dans votre maison et ne lui dites pas : Salut ! 11 car celui qui lui dit : Salut ! participe à ses mauvaises oeuvres.", 
-  "10 If anyone comes to you and does not bring this doctrine, do not receive him into your house nor greet him; 11 for he who greets him shares in his evil deeds.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "إذ كان لي كثيرٌ لأكتبه إليكم، لم أُرِدْ أن يكون بورقٍ وحبرٍ، لأنِّي أرجو أن آتيَ إليكم وأتكلَّم فماً لفم، لكي يكونَ فرحكم كاملاً. يُسلِّمُ عليكِ أولاد أُختكِ المُختارةِ.", 
-  "12 Quoique j’aie beaucoup à vous écrire, je n’ai pas voulu le faire avec le papier et l’encre ; mais j’espère aller chez vous, et vous parler de vive voix, afin que notre joie soit complète. 13 Les enfants de ta soeur, l’élue, te saluent.", 
-  "12 Having many things to write to you, I did not wish to do so with paper and ink; but I hope to come to you and speak face to face, that our joy may be full. 13 The children of your elect sister greet you.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=093rdSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 1 ـ 9 )", 
-  "1Peter 1:1-9", 
-  "1Peter 1:1-9", 
+  Prefix.katholikon+"&D=093rdSunday||101stSunday||2903&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 1-9)", 
+  "1 Peter (1 :1-9)", 
+  "1 Peter (1 :1-9)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -3222,78 +2183,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=094thSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 1 ـ 9 )", 
-  "2 Peter 1:1-8", 
-  "2 Peter 1:1-8", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.", 
-  "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:", 
-  "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لتكثر لكم النِّعمة والسَّلام بمعرفة الله ويسوع المسيح ربِّنا. كما أن كلَّ شيءٍ قد صار لنا بقوة لاهوته للحياة والتَّقوى، التى أُعطِيَت لنا مجاناً بمعرفة الذي دعانا بمجده والفضيلة،", 
-  "2 Grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord, 3 as His divine power has given to us all things that pertain to life and godliness, through the knowledge of Him who called us by glory and virtue, 4 by which have been given to us exceedingly great and precious promises,", 
-  "2 Que la grâce et la paix vous soient multipliées par la connaissance de Dieu et de Jésus notre Seigneur ! 3 Sa divine puissance nous a donné tout ce qui contribue à la vie et à la piété, en nous faisant connaître celui qui nous a appelés par sa propre gloire et par sa vertu.4 Par elles les promesses les plus précieuses", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وبواسطة هذه الأمجاد الجليلة، التي أُعطِيَت لنا للكرامة لكي تصيروا بها شُركاء الطَّبيعة الإلهيَّة، هاربين من شهوة الفساد التي في العالم. ولهذا عينه ـ وأنتم باذلون كلّ اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفي الفضيلة معرفة،", 
-  "that through these you may be partakers of the divine nature, having escaped the corruption that is in the world through lust. 5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge,", 
-  "et les plus grandes nous ont été données, afin que par elles vous deveniez participants de la nature divine, en fuyant la corruption qui existe dans le monde par la convoitise ;5 à cause de cela même, faites tous vos efforts pour joindre à votre foi la vertu, à la vertu la connaissance,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وفي المعرفة تعفُّفـاً، وفي التَّعفُّف صبراً، وفي الصَّبر تقوى، وفي التَّقوى مودَّة أخويَّةً، وفي المودَّة الأخويَّة محبَّة.", 
-  "6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.", 
-  "6 à la connaissance la maîtrise de soi, à la maîtrise de soi la persévérance, à la persévérance la piété,7 à la piété la fraternité, à la fraternité l’amour.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأن هذه إذا كانت فيكم وكثرت، تُصَيِّركُمْ لا مُتكاسلين ولا غير مُثمرين لمعرفة ربِّنا يسوع المسيح.", 
-  "8 For if these things are yours and abound, you will be neither barren nor unfruitful in the knowledge of our Lord Jesus Christ.", 
-  "8 En effet, si ces choses existent en vous et s’y multiplient, elles ne vous laisseront pas sans activité ni sans fruit pour la connaissance de notre Seigneur Jésus–Christ ;", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=1009&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 12 ـ 19 )", 
-  "1 Pierre 4:12 - 19", 
-  "1 Peter 4:12-19", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا أحبائي لا تَستغرِبوا مِن البَلوى المُحرِقَة التى تحدث بَينْكُم لأجْلِ تجربتكُم كأنَّهُ أمرٌ غريبٌ قد أصابكُم، بَل كما اشتَرَكتُم في أوجاع المسيح، افرحُوا", 
-  "12 Bien-aimés, ne trouvez pas étrange d'être dans la fournaise de l'épreuve, comme s'il vous arrivait quelque chose d'anormal.13 Mais, dans la mesure où vous avez part aux souffrances du Christ, réjouissez-vous,", 
-  "12 Beloved, do not think it strange concerning the fiery trial which is to try you, as though some strange thing happened to you; 13 but rejoice to the extent that you partake of Christ's sufferings,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكى تَفرحُوا بِابتهاج في استِعلانِ مَجدِهِ أيضاً. وإنْ عُيِّرتُم بِاسم المسيح، فَطُوبَى لكُم، لأنَّهُ ذا المَجد والقوَّة وروح اللهِ يَحلُّ عليكُم. فلا يَتألَّم أحَدُكُم كقاتِلٍ أو سارِقٍ أو فاعِل شرٍّ", 
-  "afin que, lors de la révélation de sa gloire, vous soyez aussi dans la joie et l'allégresse.14 Si l'on vous outrage pour le nom du Christ, heureux êtes-vous, car l'Esprit de gloire, l'Esprit de Dieu, repose sur vous. 15 Que nul d'entre vous n'ait à souffrir comme meurtrier, voleur ou malfaiteur,", 
-  "that when His glory is revealed, you may also be glad with exceeding joy. 14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified. 15 But let none of you suffer as a murderer, a thief, an evildoer,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أو كناظِر إلى ما ليسَ لهُ. ولكنْ إنْ كانَ كَمَسيحيٍّ فلا يَخجَلْ، بَل يُمَجِّدُ اللهَ بهَذا الاِسم. لأنَّهُ الوقتُ لابتِداءِ القَضاءِ مِن بَيتِ اللهِ. فإنْ كان قد ابتدأ أوَّلاً مِنَّا،", 
-  "ou comme se mêlant des affaires d'autrui,16 mais si c'est comme chrétien, qu'il n'en ait pas honte, qu'il glorifie plutôt Dieu de porter ce nom. 17 C'est le moment, en effet, où le jugement commence par la maison de Dieu: or, s'il débute par nous,", 
-  "or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter. 17 For the time has come for judgment to begin at the house of God; and if it begins with us first,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فَمَا هى عاقبةُ الَّذينَ لا يُطِيعُونَ إنجيلَ اللهِ؟ وإنْ كانَ البارُّ بالجَهْدِ يَخلُصُ، فالخاطئُ والمُنافِقُ أينَ يَظهَرانِ؟ فإذاً الَّذينَ يَتألَّمونَ كمشِيئةِ اللهِ، فليَستَودِعوا أنفسَهُم للهِ الخالق الأمين في عملِ الخيرِ.", 
-  "quelle sera la fin de ceux qui refusent de croire à l'Évangile de Dieu? 18 Et si le juste est sauvé à grand-peine, qu'adviendra-t-il de l'impie et du pécheur?19 Ainsi, que ceux qui souffrent selon la volonté de Dieu remettent leur âme au fidèle Créateur, en faisant le bien.", 
-  "what will be the end of those who do not obey the gospel of God? 18 Now If the righteous one is scarcely saved, Where will the ungodly and the sinner appear? 19 Therefore let those who suffer according to the will of God commit their souls to Him in doing good, as to a faithful Creator.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2009&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 5 ـ 14 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 5-14)", 
   "1 Pierre 5:5 - 14", 
   "1 Peter 5:5-14", 
   ],
@@ -3317,13 +2208,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين،ـ كما أظُنُّ ـ كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ. هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم.", 
+  "له السُّلطان والمجد إلى الأبدِ. آمين. بيد سلوانس الأخ الأمين،- كما أظُنُّ-كتبتُ إليكُم بكلماتٍ قليلةٍ واعظاً وشاهداً، أن هذه هيَ نعمة الله بالحقِّ التي فيها تَقُومُونَ. هو يهيئكُم، ويثبِّتكُم، ويقوِّيكُم، ويمكِّنكُم.", 
   "il vous affermira, vous fortifiera, vous rendra inébranlables. 11 A lui la domination pour les siècles, Amen.12 Je vous ai écrit ces quelques mots par Silvain, que je considère comme un frère fidèle, pour vous exhorter et vous attester que c'est à la véritable grâce de Dieu que vous êtes attachés.", 
   "perfect, establish, strengthen, and settle you. 11 To Him be the glory and the dominion forever and ever. Amen. 12 By Silvanus, our faithful brother as I consider him, I have written to you briefly, exhorting and testifying that this is the true grace of God in which you stand.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون ( مصر )، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.", 
+  "تُسلِّم عليكُم الصِّدِّيقة المُختارة التي في بابلون (مصر)، ومرقس ابني. سلِّموا بعضُكُم على بعضٍ بقبلة المحبَّة. السَّلامُ لكُم جميعاً أيُّها الذينَ في المسيح يسوع.", 
   "13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils. Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ. 13 La communauté des élus qui est à Babylone vous salue, ainsi que Marc, mon fils. Saluez-vous les uns les autres d'un baiser fraternel. Paix à vous tous qui êtes en Christ.", 
   "13 She who is in Babylon, elect together with you, greets you; and so does Mark my son. 14 Greet one another with a kiss of love. Peace to you all who are in Christ Jesus. Amen.", 
   ],
@@ -3331,7 +2222,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2409&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 7 – 19 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 7 – 19)", 
   "1 Jean 4 : 7 - 19", 
   "1 John 4:7-19", 
   ],
@@ -3380,10 +2271,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=2609&C=Title", 
-  " الكاثوليكون من رسالة بطرس الثانية (1 : 12 – 21 )", 
-  "2 Pierre 1 : 12 - 21", 
-  "2 Peter 1:12-21", 
+  Prefix.katholikon+"&D=2609||1312||0605||0511&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الثانية (1: 12 – 21)", 
+  "2 Pierre 1: (12 - 21)", 
+  "2 Peter (1: 12-21)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -3422,136 +2313,11 @@ ReadingsArrays.KatholikonArray= [[
   "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=0210&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الاولى 1 :25 – 2: 10 ) )", 
-  "1 Pierre 1:25 - 2:1-10", 
-  "1 Peter 1:25 & 2:1-10", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما كلمة الرب فتثبت الى الابد.وهذه هي الكلمة التي بشرتم بها فاطرحوا كل خبث وكل مكر والرياء والحسد وكل مذمة", 
-  "25 Mais la Parole du Seigneur demeure éternellement. Or, cette Parole, c'est l'Évangile qui vous a été annoncé. 1 Rejetez donc toute méchanceté et toute ruse, toute forme d'hypocrisie, d'envie et de médisance.", 
-  "25 But the word of the Lord endures forever. Now this is the word which by the gospel was preached to you. 1 Therefore, laying aside all malice, all guile, hypocrisy, envy, and all evil speaking,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وكاطفال مولودين الآن اشتهوا اللبن العقلي العديم الغش لكي تنموا به ان كنتم قد ذقتم ان الرب صالح. الذي اذ تأتون اليه حجرا حيّا مرفوضا من الناس ولكن مختار من الله كريم", 
-  "2 Comme des enfants nouveau-nés, désirez le lait pur de la parole afin que, par lui, vous grandissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon. 4 Approchez-vous de lui, pierre vivante, rejetée par les hommes mais choisie et précieuse devant Dieu.", 
-  "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كونوا انتم ايضا مبنيين كحجارة حية بيتا روحيا كهنوتا مقدسا لتقديم ذبائح روحية مقبولة عند الله بيسوع المسيح. لذلك يتضمن ايضا في الكتاب هانذا اضع في صهيون حجر زاوية", 
-  "5 Vous-mêmes, comme des pierres vivantes, entrez dans la construction de la Maison habitée par l'Esprit, pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ. 6 Car on trouve dans l'Écriture: Voici, je pose en Sion une pierre angulaire,", 
-  "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold, I lay in Zion a chief cornerstone,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مختارا كريما والذي يؤمن به لن يخزى. فلكم انتم الذين تؤمنون الكرامة واما للذين لا يطيعون فالحجر الذي رفضه البناؤون هو قد صار راس الزاوية", 
-  "choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu. 7 A vous donc, les croyants, l'honneur; mais pour les incrédules, la pierre qu'ont rejetée les bâtisseurs est devenue la pierre de l'angle,", 
-  "elect, precious, and he who believes on Him will by no means be put to shame.' 7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected has become the chief cornerstone,''", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وحجر صدمة وصخرة عثرة.الذين يعثرون غير طائعين للكلمة الامر الذي جعلوا له. واما انتم فجنس مختار وكهنوت ملوكي امة مقدسة شعب اقتناء", 
-  "8 et aussi une pierre d'achoppement, un roc qui fait tomber. Ils s'y heurtent, parce qu'ils refusent de croire à la parole, et c'est à cela qu'ils étaient destinés. 9 Mais vous, vous êtes la race élue, la communauté sacerdotale du roi, la nation sainte, le peuple que Dieu s'est acquis,", 
-  "8 and A stone of stumbling and a rock of offense.'' They stumble, being disobedient to the word, to which they also were appointed. 9 But you are a chosen generation, a royal priesthood, a holy nation, His own special people,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تخبروا بفضائل الذي دعاكم من الظلمة الى نوره العجيب. الذين قبلا لم تكونوا شعبا واما الآن فانتم شعب الله.الذين كنتم غير مرحومين واما الآن فمرحومون", 
-  "pour que vous proclamiez les hauts faits de celui qui vous a appelés des ténèbres à sa merveilleuse lumière, 10 vous qui jadis n'étiez pas son peuple, mais qui maintenant êtes le peuple de Dieu; vous qui n'aviez pas obtenu miséricorde, mais qui maintenant avez obtenu miséricorde.", 
-  "that you may proclaim the praises of Him who called you out of darkness into His marvelous light; 10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=101stSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 1 ـ 9 )", 
-  "1Peter 1:1-9", 
-  "1Peter 1:1-9", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بطرس، رسولُ يسوع المسيح، للمُختارين المُتغرِّبين في شتات بُنتُس وغلاطية وكبَّادوكيَّة وآسيَّا وبيثينيَّة،", 
-  "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,", 
-  "1 Pierre, apôtre de Jésus–Christ, aux élus qui sont étrangers dans la dispersion : au Pont, en Galatie, en Cappadoce, en Asie et en Bithynie,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بمقتضى علم الله الآب السَّابق، في تقديس الرُّوح للطَّاعة، ورشِّ دم يسوع المسيح. لِتُكثَر لكم النِّعمة والسَّلامُ. مباركٌ الله أبو ربِّنا يسوع المسيح،", 
-  "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied. 3 Blessed be the God and Father of our Lord Jesus Christ,", 
-  "2 (élus) selon la prescience de Dieu le Père, par la sanctification de l’Esprit, pour l’obéissance et l’aspersion du sang de Jésus–Christ : Que la grâce et la paix vous soient multipliées ! 3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي بكثرة رحمته وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات، للميراث الذي لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظاً لكم في السَّموات،", 
-  "who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you,", 
-  "qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أيُّها المحروسين بقوة الله، بالإيمان للخلاص المُستَعدّ أن يُعلَن في الزمن الأخير. الذي به تبتهجون الآن يسيراً، وإن كان يجب أن تتألموا بتجارب متنوِّعة،", 
-  "5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,", 
-  "5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تكون صفوة إيمانكم كريمة أفضل من الذَّهب الفاني، المُجرَّب بالنَّار، لتوجَدُوا بفخر ومجدٍ وكرامةٍ عند استعلان يسوع المسيح،", 
-  "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,", 
-  "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus – Christ.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ذلك الذي وإن لم تعرفوه تحبُّونه. هذا الذي لم تروه وآمنتم به، فتهللوا بفرح لا يُنطق به ومُمجد، وتأخذوا كمال إيمانكم وخلاص أنفسكم.", 
-  "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls. 8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.", 
-  "8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=102ndSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 1 ـ 9 )", 
-  "2 Peter 1:1-8", 
-  "2 Peter 1:1-8", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح. لتكثر لكم النِّعمة والسَّلام بمعرفة الله ويسوع المسيح ربِّنا.", 
-  "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ: 2 Grace and peace be multiplied to you in the knowledge of God and of Jesus our Lord,", 
-  "1 Simon Pierre, serviteur et apôtre de Jésus–Christ, à ceux qui ont reçu en partage une foi du même prix que la nôtre, par la justice de notre Dieu et Sauveur Jésus–Christ :2 Que la grâce et la paix vous soient multipliées par la connaissance de Dieu et de Jésus notre Seigneur !", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كما أن كلَّ شيءٍ قد صار لنا بقوة لاهوته للحياة والتَّقوى، التى أُعطِيَت لنا مجاناً بمعرفة الذي دعانا بمجده والفضيلة،", 
-  "3 as His divine power has given to us all things that pertain to life and godliness, through the knowledge of Him who called us by glory and virtue, 4 by which have been given to us exceedingly great and precious promises,", 
-  "3 Sa divine puissance nous a donné tout ce qui contribue à la vie et à la piété, en nous faisant connaître celui qui nous a appelés par sa propre gloire et par sa vertu.4 Par elles les promesses les plus précieuses", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "التي أُعطِيَت لنا للكرامة لكي تصيروا بها شُركاء الطَّبيعة الإلهيَّة، هاربين من شهوة الفساد التي في العالم. ولهذا عينه ـ وأنتم باذلون كلّ اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفي الفضيلة معرفة،", 
-  "that through these you may be partakers of the divine nature, having escaped the corruption that is in the world through lust. 5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge,", 
-  "et les plus grandes nous ont été données, afin que par elles vous deveniez participants de la nature divine, en fuyant la corruption qui existe dans le monde par la convoitise ;5 à cause de cela même, faites tous vos efforts pour joindre à votre foi la vertu, à la vertu la connaissance,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وفي المعرفة تعفُّفـاً، وفي التَّعفُّف صبراً، وفي الصَّبر تقوى، وفي التَّقوى مودَّة أخويَّةً، وفي المودَّة الأخويَّة محبَّة.", 
-  "6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.", 
-  "6 à la connaissance la maîtrise de soi, à la maîtrise de soi la persévérance, à la persévérance la piété,7 à la piété la fraternité, à la fraternité l’amour.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأن هذه إذا كانت فيكم وكثرت، تُصَيِّركُمْ لا مُتكاسلين ولا غير مُثمرين لمعرفة ربِّنا يسوع المسيح.", 
-  "8 For if these things are yours and abound, you will be neither barren nor unfruitful in the knowledge of our Lord Jesus Christ.", 
-  "8 En effet, si ces choses existent en vous et s’y multiplient, elles ne vous laisseront pas sans activité ni sans fruit pour la connaissance de notre Seigneur Jésus–Christ ;", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=103rdSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول االثانية 1: 19 – 2: 9))", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ االثانية 1: 19 – 2: 9)", 
   "2 Peter 1: 19 – 2: 9", 
   "2 Peter1: 19 – 2: 9", 
   ],
@@ -3607,7 +2373,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=104thSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 5 : 9 ـ 20 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5 : 9-20)", 
   "James 5: 9 – 20", 
   "Jacques 5 : 9 - 20", 
   ],
@@ -3650,58 +2416,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=1610&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 5 : 9 ـ 20 )", 
-  "Jacques 5:9 - 20", 
-  "James 5:9-20", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا يئنَّ بعضكم على بعضٍ يا إخوتي لئلاَّ تُدانوا. هوذا الدَّيَّان واقف على الأبواب. خذوا لكم يا إخوتي مثالاً لاحتمال المشقَّات وطول الأناة: الأنبياء الذين تكلَّموا بِاسم الربِّ.", 
-  "9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes. Pour la souffrance et la patience, le modèle à prendre,10 frères, ce sont les prophètes, qui ont parlé au nom du Seigneur.", 
-  "9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door! 10 My brethren, take the prophets, who spoke in the name of the Lord, as an example of suffering and patience.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ها نحن نُغبِط الذين صبروا. لأنكم سَمِعتم بصبر أيُّوب وعاقبة الربِّ قـد رأيتموها. لأن الربَّ عظيم الرَّأفة جداً وطويل الآناة.", 
-  "11 Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.", 
-  "11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وقبل كل شيءٍ يا إخوتي، لا تحلفوا، لا بالسَّماء، ولا بالأرض، ولا بقسم آخر. وليكن كلامكم نعم نعم، ولا لا، لئلاَّ تكونوا تحت الحُكم. وإن كان واحد منكم قد ناله تعب فليُصلِّ. والفرح القلب فليُرتِّل.", 
-  "12 Mais avant tout, mes frères, ne jurez pas, ni par le ciel, ni par la terre, ni d'aucune autre manière. Que votre oui soit oui et votre non, non, afin que vous ne tombiez pas sous le jugement.13 L'un de vous souffre-t-il? Qu'il prie. Est-il joyeux? Qu'il chante des cantiques.", 
-  "12 But above all, my brethren, do not swear, either by heaven or by earth or with any other oath. But let your Yes, be Yes, and your No, No, lest you fall into judgment. 13 Is anyone among you suffering? Let him pray. Is anyone cheerful? Let him sing psalms.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وإن كان واحد منكم مريضاً فليدعُ قسوس الكنيسة وليُصلُّوا عليه ويدهنوه بزيتٍ بِاسم الربِّ، وصلاة الإيمان تُخلِّص المريض، والربُّ يُقيمه، وإن كان قد عمل خطايا تُغفَر له.", 
-  "14 L'un de vous est-il malade? Qu'il fasse appeler les anciens de l'Eglise et qu'ils prient après avoir fait sur lui une onction d'huile au nom du Seigneur.15 La prière de la foi sauvera le patient; le Seigneur le relèvera et, s'il a des péchés à son actif, il lui sera pardonné.", 
-  "14 Is anyone among you sick? Let him call for the elders of the church, and let them pray over him, anointing him with oil in the name of the Lord. 15 And the prayer of faith will save the sick, and the Lord will raise him up. And if he has committed sins, he will be forgiven.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واعترفوا بخطاياكم بعضكم لبعضٍ، وصلُّوا على بعضكم بعضٍ، لكيما تُشفَوا. وصلاة البارِّ فيها قوة عظيمة فعالة.", 
-  "16 Confessez-vous donc vos péchés les uns aux autres et priez les uns pour les autres, afin d'être guéris. La requête d'un juste agit avec beaucoup de force.", 
-  "16 Confess your trespasses to one another, and pray for one another, that you may be healed. The effective, fervent prayer of a righteous man avails much.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كان إيليَّاس إنساناً تحت الآلام مثلنا، وصلَّى صلاةً كي لا تُمطِر السَّماء، فلم تُمطِر على الأرض ثلاثَ سنينَ وستَّةَ أشهُرٍ. وصلَّى أيضاً، فأعطت السَّماء المطر، والأرض أنبتت ثمرها.", 
-  "17 Élie était un homme semblable à nous; il pria avec ferveur pour qu'il ne plût pas, et il ne plut pas sur la terre pendant trois ans et six mois; 18 puis il pria de nouveau, le ciel donna de la pluie, la terre produisit son fruit.", 
-  "17 Elijah was a man with a nature like ours, and he prayed earnestly that it would not rain; and it did not rain on the land for three years and six months. 18 And he prayed again, and the heaven gave rain, and the earth produced its fruit.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا إخوتي، إذا ضلَّ واحدٌ منكم عن سبيل الحقِّ وردَّه واحدٌ، فليعلم أن من يردَّ الخاطئ عن طريق ضلالته، فإنه يُخلِّص نفسه من الموتِ، ويستُر خطايا كثيرة.", 
-  "19 Mes frères, si l'un de vous s'est égaré loin de la vérité et qu'on le ramène, 20 sachez que celui qui ramène un pécheur du chemin où il s'égarait lui sauvera la vie et fera disparaître une foule de péchés.", 
-  "19 Brethren, if anyone among you wanders from the truth, and someone turns him back, 20 let him know that he who turns a sinner from the error of his way will save a soul from death and cover a multitude of sins.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=3010&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى ( 2 : 11 - 17)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الاولى (2 : 11-17)", 
   "1 Pierre 2:11 - 17", 
   "1 PETER 2:11-17", 
   ],
@@ -3727,7 +2443,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=0311&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى (2 :18 -3 : 1- 7 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (2 :18 -3 : 1- 7)", 
   "1Pierre 2:18 - 3:1-7", 
   "1Peter 2:18-25 & 3:1-7", 
   ],
@@ -3782,102 +2498,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=0511&C=Title", 
-  " الكاثوليكون من رسالة بطرس الثانية (1 : 12 – 21 )", 
-  "2 Pierre 1 : 12 - 21", 
-  "2 Peter 1:12-21", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر. ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة.", 
-  "12 Aussi ai-je l'intention de toujours vous rappeler cela, bien que vous le sachiez et que vous demeuriez fermes dans la vérité présente.13 Mais je crois juste, tant que je suis ici-bas, de vous tenir en éveil par mes rappels,", 
-  "12 For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.", 
-  "14 sachant qu'il est proche pour moi le moment de la séparation, comme notre Seigneur Jésus Christ me l'a fait connaître; 15 mais je veillerai soigneusement à ce qu'après mon départ vous ayez la possibilité, en toute occasion, de conserver le souvenir de ces enseignements.", 
-  "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته.", 
-  "16 En effet, ce n'est pas en nous mettant à la traîne de fables sophistiquées que nous vous avons fait connaître la venue puissante de notre Seigneur Jésus Christ, mais pour l'avoir vu de nos yeux dans tout son éclat.", 
-  "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت كهذا من المجد الاسنى هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.", 
-  "17 Car il reçut de Dieu le Père honneur et gloire, quand la voix venue de la splendeur magnifique de Dieu lui dit: 'Celui-ci est mon Fils bien-aimé, celui qu'il m'a plu de choisir. 18 Et cette voix, nous-mêmes nous l'avons entendue venant du ciel quand nous étions avec lui sur la montagne sainte.", 
-  "17 For He received from God the Father honor and glory when such a voice came to Him from the Excellent Glory: This is My beloved Son, in whom I am well pleased.'' 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكم", 
-  "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs.", 
-  "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص. لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس", 
-  "20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée; 21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.", 
-  "20 knowing this first, that no prophecy of Scripture is of any private interpretation, 21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=111stSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 1 ـ 12 )", 
-  "1Pierre 1:1-12", 
-  "1Peter 1:1-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بطرس، رسولُ يسوع المسيح، للمُختارين المُتغرِّبين في شتات بُنتُس وغلاطية وكبَّادوكيَّة وآسيَّا وبيثينيَّة،", 
-  "1 Pierre, apôtre de Jésus–Christ, aux élus qui sont étrangers dans la dispersion : au Pont, en Galatie, en Cappadoce, en Asie et en Bithynie,", 
-  "1 Peter, an apostle of Jesus Christ, To the pilgrims of the Dispersion in Pontus, Galatia, Cappadocia, Asia, and Bithynia,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بمقتضى علم الله الآب السَّابق، في تقديس الرُّوح للطَّاعة، ورشِّ دم يسوع المسيح. لِتُكثَر لكم النِّعمةوالسَّلامُ. مُباركٌ الله أبو ربِّنا يسوع المسيح،", 
-  "2 (élus) selon la prescience de Dieu le Père, par la sanctification de l’Esprit, pour l’obéissance et l’aspersion du sang de Jésus–Christ : Que la grâce et la paix vous soient multipliées ! 3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ", 
-  "2 elect according to the foreknowledge of God the Father, in sanctification of the Spirit, for obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied. 3 Blessed be the God and Father of our Lord Jesus Christ,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذى بكثرة رحمته وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات، للميراث الذى لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظاً لكم في السَّموات، أنتم المحروسين بقوة الله،", 
-  "qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante, 4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu,", 
-  "who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead, 4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بالإيمان للخلاص المُستَعدّ أن يُعلَن في الزمن الأخير. الذي به تبتهجون الآن يسيراً، وإن كان يجب أن تتألموا بتجارب متنوِّعة، لكي تكون صفوة إيمانكم كريمة أفضل من الذَّهب الفاني،", 
-  "par la foi, pour le salut prêt à être révélé dans les derniers temps. 6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves, 7 afin que votre foi éprouvée bien plus précieuse que l’or périssable,", 
-  "through faith for salvation ready to be revealed in the last time.6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "المُجرَّب بالنَّار، لتوجَدُوا بفخر ومجدٍ وكرامةٍ عند استعلان يسوع المسيح، ذلك الذي وإن لم تروه تحبُّونه. هذا الذي لم تروه وآمنتم به، فتهللوا بفرح لا يُنطق به ومُمجد، وتأخذوا كمال إيمانكم وخلاص أنفسكم.", 
-  "cependant éprouvé par le feu –– se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.", 
-  "though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الخلاصَ الذي فَتَّشَ وبَحَثَ عنهُ الأنبياء، الَّذينَ تنبأوا عَن النِّعمَةِ التي صارت فيكم، وبحثوا عن الزمن الذي كان يَدلُّ عليهِ روحُ المسيح المتكلم فيهم. إذ سَبقَ فشَهِدَ على آلام المسيح والأمجاد الآتيـة بعدها.", 
-  "10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations. 11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.", 
-  "10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you, 11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الَّذينَ أُعلِـنَ لهُـم لأنَّهُم لا لأنفسـهم، كانـوا يعمـلون بل جعلـوا نفوسهم لكُم خُدَاماً بهذه الأمور التي أُخبرتم بها أنتُم الآن بواسطة الذين بَشَّروكُم بالرُّوح القُدُس المُرسَل مِنَ السَّماءِ. والتي تَشتَهي الملائكة أن تَطَّلِعَ عليها.", 
-  "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=112ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يهوذا( 1 : 14 ـ 25 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يهوذا(1 : 14-25)", 
   "Jude 1:14-25", 
   "Jude 1:14-25", 
   ],
@@ -3907,13 +2529,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.", 
+  "وأمَّا أنتُم يا أحبَّائي فابنوا أنفسكُم على إيمانكُم الأقدسِ، مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.", 
   "20 Mais vous, bien–aimés, édifiez–vous vous–mêmes sur votre très sainte foi, priez par le Saint–Esprit, 21 maintenez vous dans l’amour de Dieu, en attendant la miséricorde de notre Seigneur Jésus–Christ pour la vie éternelle.", 
   "20 But you, beloved, building yourselves up on your most holy faith, praying in the Holy Spirit, 21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبكِّـتوا البعض عندما يكونوا مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
+  "وبكِّ-توا البعض عندما يكونوا مُدانين، وخلِّصوا البعض، واختطفوهم مِن النَّار، وارحموا البعض بالتَّقوى مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
   "22 Ayez pitié des uns, de ceux qui doutent : 23 sauvez les en les arrachant au feu. Ayez pour les autres une pitié mêlée de crainte, haïssant jusqu’à la tunique souillée par la chair.", 
   "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh.", 
   ],
@@ -3927,7 +2549,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=113rdSunday&C=Title", 
-  " الكاثوليكون من رسالة رسالة يعقوب الرسول( 3 : 1 ـ 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ رسالة يعقوب الرسول(3 : 1-12)", 
   "James 3:1-12", 
   "James 3:1-12", 
   ],
@@ -3969,7 +2591,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "به نُبارِك اللـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم اللـه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! لا يجب يا إخوتي أن تكونَ هذه الأمورُ هكذا!", 
+  "به نُبارِك الل-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ خلقهم الل-ه على شبهه. مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! لا يجب يا إخوتي أن تكونَ هذه الأمورُ هكذا!", 
   "9 Par elle, nous bénissons le Seigneur notre Père, et par elle, nous maudissons les hommes faits à l’image de Dieu. 10 De la même bouche sortent la bénédiction et la malédiction. Il ne faut pas, mes frères, qu’il en soit ainsi.", 
   "9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God. 10 Out of the same mouth proceed blessing and cursing. My brethren, these things ought not to be so.", 
   ],
@@ -3983,7 +2605,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=114thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى( 1 : 25 ـ 2 :1 ـ 10 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(1 : 25-2 :1-10)", 
   "1 Peter 1:25-2:10", 
   "1 Peter 1:25-2:10", 
   ],
@@ -3995,25 +2617,25 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
+  "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
   "2 désirez comme des enfants nouveaux–nés le lait non frelaté de la parole, afin que par lui vous croissiez pour le salut, 3 si vous avez goûté que le Seigneur est bon. 4 Approchez–vous de lui, pierre vivante, rejetée par les hommes, mais choisie et précieuse devant Dieu,", 
   "2 as newborn babes, desire the pure milk of the word, that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious,", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
+  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
   "5 et vous–mêmes, comme des pierres vivantes, édifiez–vous pour former une maison spirituelle, un saint sacerdoce, en vue d’offrir des victimes spirituelles, agréables à Dieu par Jésus–Christ ;", 
   "5 you also, as living stones, are being built up a spiritual house, a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً والذي يؤمن به لن يُخـزى،", 
+  "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً والذي يؤمن به لن يُخ-زى،", 
   "6 car il y a dans l’Écriture : Voici, je pose en Sion une pierre angulaire, choisie, précieuse, Et celui qui croit en elle ne sera pas confondu.", 
   "6 Therefore it is also contained in the Scripture, Behold, I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.", 
+  "فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.", 
   "7 L’honneur est donc pour vous qui croyez. Mais, pour les incrédules, La pierre qu’ont rejetée ceux qui bâtissaient Est devenue la principale, celle de l’angle Et une pierre d’achoppement Et un rocher de scandale. 8 Ils s’y achoppent en désobéissant à la parole, et c’est à quoi ils ont été destinés.", 
   "7 Therefore, to you who believe, He is precious; but to those who are disobedient, The stone which the builders rejected Has become the chief cornerstone, 8 and A stone of stumbling And a rock of offense. They stumble, being disobedient to the word, to which they also were appointed.", 
   ],
@@ -4025,53 +2647,22 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
+  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
   "10 vous qui, autrefois, n’étiez pas un peuple et qui, maintenant, êtes le peuple de Dieu ; vous qui n’aviez pas obtenu miséricorde et qui, maintenant avez obtenu miséricorde.", 
   "10 who once were not a people but are now the people of God, who had not obtained mercy but now have obtained mercy.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=2011&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الإولى( 3 : 8 – 15 )", 
-  "1 Pierre 3:8-15", 
-  "1 Peter 3:8-15", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والنهاية كونوا جميعا متحدي الرأي بحس واحد ذوي محبة اخوية مشفقين لطفاء غير مجازين عن شر بشر او عن شتيمة بشتيمة بل بالعكس مباركين", 
-  "8 Enfin, soyez tous dans de mêmes dispositions, compatissants, animés d'un amour fraternel, miséricordieux, humbles.9 Ne rendez pas le mal pour le mal, ou l'insulte pour l'insulte;", 
-  "8 Finally, all of you be of one mind, having compassion for one another; love as brothers, be tenderhearted, be courteous; 9 not returning evil for evil or reviling for reviling,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالمين انكم لهذا دعيتم لكي ترثوا بركة. لان من اراد ان يحب الحياة ويرى اياما صالحة فليكفف لسانه عن الشر وشفتيه ان تتكلما بالمكر ليعرض عن الشر ويصنع الخير ليطلب السلام ويجدّ في اثره", 
-  "au contraire, bénissez, car c'est à cela que vous avez été appelés, afin d'hériter la bénédiction. 10 En effet, qui veut aimer la vie et voir des jours heureux doit garder sa langue du mal et ses lèvres des paroles trompeuses, 11 se détourner du mal et faire le bien, rechercher la paix et la poursuivre.", 
-  "but on the contrary blessing, knowing that you were called to this, that you may inherit a blessing. 10 For He who would love life and see good days, let him refrain his tongue from evil, and his lips from speaking deceit. 11 Let him turn away from evil and do good; let him seek peace and pursue it.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لان عيني الرب على الابرار واذنيه الى طلبتهم.ولكن وجه الرب ضد فاعلي الشر فمن يؤذيكم ان كنتم متمثلين بالخير.", 
-  "12 Car les yeux du Seigneur sont sur les justes, et ses oreilles sont attentives à leur prière; mais la face du Seigneur se tourne contre ceux qui font le mal. 13 Et qui vous fera du mal, si vous vous montrez zélés pour le bien?", 
-  "12 For the eyes of the Lord are on the righteous, and His ears are open to their prayers; but the face of the Lord is against those who do evil.'' 13 And who is he who will harm you if you become followers of what is good?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن وان تألمتم من اجل البر فطوباكم.واما خوفهم فلا تخافوه ولا تضطربوا بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف", 
-  "14 Bien plus, au cas où vous auriez à souffrir pour la justice, heureux êtes-vous. N'ayez d'eux aucune crainte et ne soyez pas troublés;15 mais sanctifiez dans vos coeurs le Christ qui est Seigneur. Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte.", 
-  "14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled.'' 15 But sanctify the Lord God in your hearts. and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=0312&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 : 1 ـ 11 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 1-11)", 
   "2 Pierre 1 : 1 - 11", 
   "2 Peter 1:1-11", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "سمعان بطرس عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.", 
+  "سمعان بُطْرُسِ عبد يسوع المسيح ورسوله، إلى الذين نالوا معنا إيماناً مُكرماً مساوياً لنا. ببرِّ إلهنا والمُخلِّص يسوع المسيح.", 
   "1Syméon Pierre, serviteur et apôtre de Jésus Christ, à ceux qui ont reçu, par la justice de notre Dieu et Sauveur Jésus Christ,", 
   "1Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:", 
   ],
@@ -4089,7 +2680,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولهذا عينه ـ وأنتم باذلون كل اجتهاد ـ قـدِّموا في إيمانكم فضيلة، وفى الفضيلة معرفة، وفى المعرفة تعفُّفـاً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً، وفى المودَّة الأخويَّة محبَّة.", 
+  "ولهذا عينه-وأنتم باذلون كل اجتهاد-ق-دِّموا في إيمانكم فضيلة، وفى الفضيلة معرفة، وفى المعرفة تعفُّف-اً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً، وفى المودَّة الأخويَّة محبَّة.", 
   "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, à la maîtrise de soi la ténacité, à la ténacité la piété, à la piété l'amitié fraternelle, à l'amitié fraternelle l'amour.", 
   "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.", 
   ],
@@ -4109,7 +2700,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=121stSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى(3: 8 – 15)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3: 8 – 15)", 
   "1Pierre 3: 8 – 15", 
   "1Peter 3: 8 – 15", 
   ],
@@ -4140,58 +2731,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=122ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 2 : 7 ـ 17)", 
-  "1 Jean 2:7-17", 
-  "1 John 2:7-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاخوة لست اكتب اليكم وصية جديدة بل وصية قديمة كانت عندكم من البدء.الوصية القديمة هي الكلمة التي سمعتموها من البدء.", 
-  "7 Mes bien-aimés, ce n'est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez depuis le commencement; ce commandement ancien, c'est la parole que vous avez entendue.", 
-  "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايضا وصية جديدة اكتب اليكم ما هو حق فيه وفيكم ان الظلمة قد مضت والنور الحقيقي الآن يضيء. من قال انه في النور وهو يبغض اخاه فهو الى الآن في الظلمة.", 
-  "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable. 9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.", 
-  "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "من يحب اخاه يثبت في النور وليس فيه عثرة. واما من يبغض اخاه فهو في الظلمة وفي الظلمة يسلك ولا يعلم اين يمضي لان الظلمة اعمت عينيه", 
-  "10 Qui aime son frère demeure dans la lumière, et il n'y a rien en lui pour le faire trébucher. 11 Mais qui hait son frère se trouve dans les ténèbres; il marche dans les ténèbres, et il ne sait pas où il va, parce que les ténèbres ont aveuglé ses yeux.", 
-  "10 He who loves his brother abides in the light, and there is no cause for stumbling in him. 11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اكتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب", 
-  "12 Je vous écris, mes petits enfants: Vos péchés vous sont pardonnés à cause de son nom à lui, Jésus. 13 Je vous l'écris, pères: Vous connaissez celui qui est dès le commencement. Je vous l'écris, jeunes gens: Vous êtes vainqueurs du Mauvais. Je vous l'ai donc écrit, mes petits enfants: Vous connaissez le Père.", 
-  "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير.", 
-  "14 Je vous l'ai écrit, pères: Vous connaissez celui qui est dès le commencement. Je vous l'ai écrit, jeunes gens: Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais.", 
-  "14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب.لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم.", 
-  "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, 16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.", 
-  "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد", 
-  "17 Or, le monde passe, lui et sa convoitise: mais celui qui fait la volonté de Dieu demeure à jamais.", 
-  "17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=123rdSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 2 : 18 ـ 7 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(2 : 18-7)", 
   "1 Pierre 2:18 - 3:1-7", 
   "1 Peter 2:18-3:7", 
   ],
@@ -4247,7 +2788,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=124thSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب ( 4 : 7 – 5 : 5 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب (4 : 7 – 5 : 5)", 
   "Jacques 4:7 - 5:1-5", 
   "James 4:7-5:5", 
   ],
@@ -4259,25 +2800,25 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّـاً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
+  "وكأطفال مَولُودِينَ الآن اشتهوا اللبن العقلي العديم الغشِّ لكي تَنموا به للخلاصِ. إن كنتم قد ذُقتُم أن الربَّ صالحٌ. الذي إذ تأتونَ إليه حجراً حيَّ-اً مَرذولاً من النَّاس ولكن مُختارٌ من الله وكريمٌ.", 
   "8 prenez le deuil, pleurez; que votre rire se change en deuil et votre joie en abattement! 10 Humiliez-vous devant le Seigneur, et Il vous élèvera. 11 Ne médisez pas les uns des autres, frères.", 
   "9 Lament and mourn and weep! Let your laughter be turned to mourning and your joy to gloom. 10 Humble yourselves in the sight of the Lord, and He will lift you up. 11 Do not speak evil of one another, brethren.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّيـن بيتـاً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
+  "كونوا أنتُم أيضاً كحجارةٍ حيَّةٍ مَبنِيِّي-ن بيت-اً روحانياً، كهنوتاً طاهراً لتقديم ذبائحَ روحيَّةٍ مقبولةٍ عند اللهِ بيسوع المسيح.", 
   "Celui qui médit d'un frère ou juge son frère médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi. Or un seul est législateur et juge: 12 celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain?", 
   "He who speaks evil of a brother and judges his brother, speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. 12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another?", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريمـاً والذي يؤمن به لن يُخـزى،", 
+  "لأنه مكتوبٌ في الكتاب إنِّي هأنذا أضعُ في صِهيونَ حجراً مُختاراً في رأس الزاويةِ كريم-اً والذي يؤمن به لن يُخ-زى،", 
   "13 Alors, vous qui dites: 'Aujourd'hui - ou demain -, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent, 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît.", 
   "13 Come now, you who say, Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلكُم أنتُم أيُّهـا الذين تُؤمنـون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.", 
+  "فلكُم أنتُم أيُّه-ا الذين تُؤمن-ون الكرامة، وأمَّا الذين لا يؤمنون فالحجرُ الذي رذَلَهُ البنَّاؤون هو قد صار رأس الزَّاوية وحجر عثرةٍ وصخرةَ شكٍ. الذين يَعثُرونَ بالكلمة غير موافقينَ للذى وُضِعُوا لهُ.", 
   "15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela', 16 vous tirez fierté de vos fanfaronnades. Toute fierté de ce genre est mauvaise. 17 Qui donc sait faire le bien et ne le fait pas se charge d'un péché.", 
   "15 Instead you ought to say, If the Lord wills, we shall live and do this or that. 16 But now you boast in your arrogance. All such boasting is evil. 17 Therefore, to him who knows to do good and does not do it, to him it is sin.", 
   ],
@@ -4289,103 +2830,21 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
+  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
   "Vous vous êtes constitué des réserves à la fin des temps! 4 Voyez le salaire des ouvriers qui ont fait la récolte dans vos champs: retenu par vous, il crie et les clameurs des moissonneurs sont parvenues aux oreilles du Seigneur Sabah.", 
   "You have heaped up treasure in the last days. 4 Indeed the wages of the laborers who mowed your fields, which you kept back by fraud, cry out; and the cries of the reapers have reached the ears of the Lord of Sabaoth.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ اللـه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
+  "الذينَ قَبْلاً لمْ تكونوا شَعباً وأمَّا الآن فأنتُم صِرتُم شعبُ الل-ه، الذين كنتُم غير مرحومينَ وأمَّا الآن فمرحُومونَ.", 
   "5 Vous avez eu sur terre une vie de confort et de luxe, vous vous êtes repus au jour du carnage.", 
   "5 You have lived on the earth in pleasure and luxury; you have fattened your hearts as in a day of slaughter.", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=1312&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية ( 1 :12 -21 )", 
-  "2 Pierre 1 : 12 - 21", 
-  "2 Peter 1:12-21", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لذلك لا اهمل ان اذكّركم دائما بهذه الامور وان كنتم عالمين ومثبتين في الحق الحاضر.ولكني احسبه حقا ما دمت في هذا المسكن ان انهضكم بالتذكرة", 
-  "12 Aussi ai-je l'intention de toujours vous rappeler cela, bien que vous le sachiez et que vous demeuriez fermes dans la vérité présente. 13 Mais je crois juste, tant que je suis ici-bas, de vous tenir en éveil par mes rappels,", 
-  "12 For this reason I will not be negligent to remind you always of these things, though you know and are established in the present truth. 13 Yes, I think it is right, as long as I am in this tent, to stir you up by reminding you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالما ان خلع مسكني قريب كما اعلن لي ربنا يسوع المسيح ايضا. فأجتهد ايضا ان تكونوا بعد خروجي تتذكرون كل حين بهذه الامور.", 
-  "14 sachant qu'il est proche pour moi le moment de la séparation, comme notre Seigneur Jésus Christ me l'a fait connaître; 15 mais je veillerai soigneusement à ce qu'après mon départ vous ayez la possibilité, en toute occasion, de conserver le souvenir de ces enseignements.", 
-  "14 knowing that shortly I must put off my tent, just as our Lord Jesus Christ showed me. 15 Moreover I will be careful to ensure that you always have a reminder of these things after my decease.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لاننا لم نتبع خرافات مصنعة اذ عرّفناكم بقوة ربنا يسوع المسيح ومجيئه بل قد كنا معاينين عظمته. لانه اخذ من الله الآب كرامة ومجدا اذ اقبل عليه صوت كهذا من المجد الاسنى", 
-  "16 En effet, ce n'est pas en nous mettant à la traîne de fables sophistiquées que nous vous avons fait connaître la venue puissante de notre Seigneur Jésus Christ, mais pour l'avoir vu de nos yeux dans tout son éclat. 17 Car il reçut de Dieu le Père honneur et gloire,", 
-  "16 For we did not follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but were eyewitnesses of His majesty. 17 For He received from God the Father honor and glory when such a voice came to Him from the Excellent Glory:", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هذا هو ابني الحبيب الذي انا سررت به. ونحن سمعنا هذا الصوت مقبلا من السماء اذ كنا معه في الجبل المقدس.", 
-  "quand la voix venue de la splendeur magnifique de Dieu lui dit: 18 Celui-ci est mon Fils bien-aimé, celui qu'il m'a plu de choisir.' Et cette voix, nous-mêmes nous l'avons entendue venant du ciel quand nous étions avec lui sur la montagne sainte.", 
-  "This is My beloved Son, in whom I am well pleased. 18 And we heard this voice which came from heaven when we were with Him on the holy mountain.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وعندنا الكلمة النبوية وهي اثبت التي تفعلون حسنا ان انتبهتم اليها كما الى سراج منير في موضع مظلم الى ان ينفجر النهار ويطلع كوكب الصبح في قلوبكمعالمين هذا اولا ان كل نبوة الكتاب ليست من تفسير خاص.", 
-  "19 De plus, nous avons la parole des prophètes qui est la solidité même, sur laquelle vous avez raison de fixer votre regard comme sur une lampe brillant dans un lieu obscur, jusqu'à ce que luise le jour et que l'étoile du matin se lève dans vos coeurs. 20 Avant tout, sachez-le bien: aucune prophétie de l'Écriture n'est affaire d'interprétation privée;", 
-  "19 And so we have the prophetic word confirmed, which you do well to heed as a light that shines in a dark place, until the day dawns and the morning star rises in your hearts; 20 knowing this first, that no prophecy of Scripture is of any private interpretation,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه لم تأت نبوة قط بمشيئة انسان بل تكلم اناس الله القديسون مسوقين من الروح القدس", 
-  "21 en effet, ce n'est pas la volonté humaine qui a jamais produit une prophétie, mais c'est portés par l'Esprit Saint que des hommes ont parlé de la part de Dieu.", 
-  "21 for prophecy never came by the will of man, but holy men of God spoke as they were moved by the Holy Spirit.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=1712&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 1 ـ 12 )", 
-  "Jacques 1 : 1 - 12", 
-  "James 1:1-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يعقوبُ، عبدُ اللهِ وربنا يسوعَ المسيح، يُهدي السَّلامَ إلى الإثني عشرَ سبطاً الذينَ في الشَّتَاتِ. كونوا في كل فرح يا إخوتي إذا وقعتُم في تَجاربَ مُتَنوِّعةٍ، عَالمينَ أنَّ تجرُبة إيمانكُمْ تُنشئ صبراً.", 
-  "1Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. 2 Prenez de très bon coeur, mes frères, toutes les épreuves par lesquelles vous passez, sachant que le test auquel votre foi est soumise produit de l'endurance.", 
-  "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials, 3 knowing that the testing of your faith produces patience.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وأمَّا الصَّبرُ فليكُن فيهِ عملٌ تامٌّ، لكي تكونوا كاملينَ وأصحاءِ غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تُعوزُهُ حكمةٌ، فليطلُبْ مِنَ اللـهِ الذي يُعطي الجميعَ بسخاءٍ ولا يُعيِّرُ، فسيُعْطى له.", 
-  "4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut. 5 Si la sagesse vient à manquer à l'un de vous, qu'il la demande à Dieu qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée.", 
-  "4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God, who gives to all liberally and without reproach, and it will be given to him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وليسأل بإيمانٍ غير مُرتابٍ. لأنَّ المُرتابَ يُشبهُ أمواج البحر التي يخبطُها الرِّيحُ ويردها. فلا يَظُنَّ ذلك الإنسانُ أنَّهُ يَنَالُ شيئاً مِنْ عند الرَّبِّ. لأنَّ الرجُل ذو الرأيين هو مُتَقَلقِل في جَمِيع طُرُقِهِ.", 
-  "6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève. 7 Que ce personnage ne s'imagine pas que le Seigneur donnera quoi que ce soit à un homme partagé, fluctuant dans toutes ses démarches.", 
-  "6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind. 7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وليَفتَخِر الأخُ المُتواضع بارتفاعِهِ، وأمَّا الغَنيُّ فباتِّضاعِهِ، لأنَّهُ كزهر العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقت مع الحَرِّ فيَبَّسَتِ العُشبَ، وأنتثر زهرُهُ وفَسد جَمالُ مَنظَرهِ. هكذا يَذبُلُ الغَنيُّ أيضـاً في كلِّ طُرُقِهِ.", 
-  "9 Que le frère de condition modeste tire fierté de son élévation, et le riche, de son déclassement, parce qu'il passera comme la fleur des prés. 11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon, le riche, dans ses entreprises, se flétrira.", 
-  "9 Let the lowly brother glory in his exaltation, 10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes. So the rich man also will fade away in his pursuits.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "طُوبي للرَّجُل الذي يَصبر في التَّجربَة، لأنَّه إذا صار مُختاراً ينال إكليل الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ.", 
-  "12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.", 
-  "12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=2512&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (5 : 9 - 12)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5 : 9-12)", 
   "Jacques 5 : 9 - 12", 
   "James 5:9-12", 
   ],
@@ -4397,7 +2856,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "خُذوا لكُم يا إخوتي مثالَ احتمال المشقَّاتِ وطول أناةٍ: الأنبياءَ الَّذينَ تكلَّموا بِاسم الربِّ. ها نحنُ نُغبِط الَّذينَ صبروا. لأنكُم سَمِعتُم بصبرِ أيُّوبَ وعاقِبةَ الربِّ قـد رأيتُموها. لأنَّ الربَّ هو عظيمُ الرَّأفةِ جداً وهو طويلُ الآناةِ.", 
+  "خُذوا لكُم يا إخوتي مثالَ احتمال المشقَّاتِ وطول أناةٍ: الأنبياءَ الَّذينَ تكلَّموا بِاسم الربِّ. ها نحنُ نُغبِط الَّذينَ صبروا. لأنكُم سَمِعتُم بصبرِ أيُّوبَ وعاقِبةَ الربِّ ق-د رأيتُموها. لأنَّ الربَّ هو عظيمُ الرَّأفةِ جداً وهو طويلُ الآناةِ.", 
   "Voyez: nous félicitons les gens endurants; vous avez entendu l'histoire de l'endurance de Job et vu le but du Seigneur parce que le Seigneur a beaucoup de coeur et montre de la pitié.", 
   "as an example of suffering and patience. 11 Indeed we count them blessed who endure. You have heard of the perseverance of Job and seen the end intended by the Lord--that the Lord is very compassionate and merciful.", 
   ],
@@ -4411,7 +2870,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2612&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 2 : 11 ـ 17 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(2 : 11-17)", 
   "1 Pierre 2 : 11 - 17", 
   "1 Peter 2:11-17", 
   ],
@@ -4443,7 +2902,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2812&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 2 : 14 ـ 23 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2 : 14-23)", 
   "James 2:14-23", 
   "James 2:14-23", 
   ],
@@ -4461,7 +2920,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن يَقُولُ واحدٌ: ' أنت لك إيمانٌ، وأنا لي أعمالٌ! ' أرني إيمانكَ بدون أعمالكَ وأنا أريك إيماني بأعمالي. أنت تُؤمنُ أنَّ اللـهَ واحدٌ. حسناً تفعلُ. والشَّيَاطينُ أيضاً يُؤمِنُونَ ويقشَعِرُّونَ!", 
+  "لكن يَقُولُ واحدٌ: ' أنت لك إيمانٌ، وأنا لي أعمالٌ! ' أرني إيمانكَ بدون أعمالكَ وأنا أريك إيماني بأعمالي. أنت تُؤمنُ أنَّ الل-هَ واحدٌ. حسناً تفعلُ. والشَّيَاطينُ أيضاً يُؤمِنُونَ ويقشَعِرُّونَ!", 
   "18 Mais quelqu’un dira : Toi, tu as la foi ; et moi, j’ai les oeuvres. Montre–moi ta foi sans les oeuvres, et moi, par mes oeuvres, je te montrerai ma foi.19 Tu crois qu’il y a un seul Dieu, tu fais bien ; les démons le croient aussi et ils tremblent.", 
   "18 But someone will say, You have faith, and I have works. Show me your faith without your works, and I will show you my faith by my works. 19 You believe that there is one God. You do well. Even the demons believe--and tremble!", 
   ],
@@ -4473,7 +2932,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وتَمَّ الكتَابُ القائِلُ: ' فآمنَ إبراهيمُ باللـهِ فَحُسِبَ لهُ بِرّاً ' ودُعِيَ خَلِيلَ اللـهِ.", 
+  "وتَمَّ الكتَابُ القائِلُ: ' فآمنَ إبراهيمُ بالل-هِ فَحُسِبَ لهُ بِرّاً ' ودُعِيَ خَلِيلَ الل-هِ.", 
   "23 Ainsi s’accomplit ce que dit l’Écriture : Abraham crut à Dieu, et cela lui fut compté comme justice ; et il fut appelé ami de Dieu. 23 Ainsi s’accomplit ce que dit l’Écriture : Abraham crut à Dieu, et cela lui fut compté comme justice ; et il fut appelé ami de Dieu.", 
   "23 And the Scripture was fulfilled which says, Abraham believed God, and it was accounted to him for righteousness. And he was called the friend of God.", 
   ],
@@ -4481,31 +2940,31 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=2912&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 4 : 15 ـ 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4 : 15-21)", 
   "1 Jean 4 : 15 - 21", 
   "1 John 4:15-21", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مَن يعترفَ أنَّ يسوعَ هو ابنُ اللـهِ فاللـهُ يَثبتُ فيهِ وهو يثبتُ في اللـهِ. قد علمنا وصدَّقناَ المحبَّةَ التي للـهُ فينا.", 
+  "مَن يعترفَ أنَّ يسوعَ هو ابنُ الل-هِ فالل-هُ يَثبتُ فيهِ وهو يثبتُ في الل-هِ. قد علمنا وصدَّقناَ المحبَّةَ التي لل-هُ فينا.", 
   "15 Quiconque confesse que Jésus est le Fils de Dieu, Dieu demeure en lui et lui en Dieu. 16 Et nous, nous connaissons, pour y avoir cru, l'amour que Dieu manifeste au milieu de nous.", 
   "15 Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. 16 And we have known and believed the love that God has for us.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اللـهُ محبَّةٌ، ومن يَثبتُ في المحبَّةِ، يَثبت في اللـهِ واللـهُ يثبتُ فيهِ. بهذا تكمَّلت المَحبَّةُ فَينَا: أن نَجدُ دالةٌ في يوم الدِّينونةِ، لأنَّهُ كما كانَ ذاكَ فهكذا نحنُ أيضاً نكونُ في هذا العالم،", 
+  "الل-هُ محبَّةٌ، ومن يَثبتُ في المحبَّةِ، يَثبت في الل-هِ والل-هُ يثبتُ فيهِ. بهذا تكمَّلت المَحبَّةُ فَينَا: أن نَجدُ دالةٌ في يوم الدِّينونةِ، لأنَّهُ كما كانَ ذاكَ فهكذا نحنُ أيضاً نكونُ في هذا العالم،", 
   "Dieu est amour: qui demeure dans l'amour demeure en Dieu et Dieu demeure en lui. 17 En ceci, l'amour, parmi nous, est accompli, que nous avons pleine assurance pour le jour du jugement, parce que, tel il est, lui, tels nous sommes, nous aussi, dans ce monde.", 
   "God is love, and he who abides in love abides in God, and God in him. 17 Love has been perfected among us in this: that we may have boldness in the day of judgment; because as He is, so are we in this world.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لا خـوفَ في المحبَّةِ، بل المحبَّةُ الكاملةُ تَطرحُ الخوفَ إلى خارج لأنَّ الخوفَ لهُ عذابٌ. وأمَّا من يخافَ فلم يَتكمَّل في المحبَّةِ. نحنُ نُحِبَّ اللـهَ لأنَّهُ أحَبَّنا أوَّلاً.", 
+  "لا خ-وفَ في المحبَّةِ، بل المحبَّةُ الكاملةُ تَطرحُ الخوفَ إلى خارج لأنَّ الخوفَ لهُ عذابٌ. وأمَّا من يخافَ فلم يَتكمَّل في المحبَّةِ. نحنُ نُحِبَّ الل-هَ لأنَّهُ أحَبَّنا أوَّلاً.", 
   "18 De crainte, il n'y en a pas dans l'amour; mais le parfait amour jette dehors la crainte, car la crainte implique un châtiment; et celui qui craint n'est pas accompli dans l'amour. 19 Nous, nous aimons, parce que lui, le premier, nous a aimés.", 
   "18 There is no fear in love; but perfect love casts out fear, because fear involves torment. But he who fears has not been made perfect in love. 19 We love Him because He first loved us.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إن قالَ أحدٌ: ' إنِّي أحبُّ اللـهَ ' وأبغضَ أخاهُ، فهو كاذبٌ. لأنَّ من لا يحبُّ أخاهُ الذي أبصرهُ، كيفَ يقدرُ أن يحبَّ اللـهَ الذي لم يُبصرهُ؟ ولنا هذهِ الوصيَّةُ منهُ: أنَّ من يحبُّ اللـهَ يحبُّ أخاهُ أيضاً.", 
+  "إن قالَ أحدٌ: ' إنِّي أحبُّ الل-هَ ' وأبغضَ أخاهُ، فهو كاذبٌ. لأنَّ من لا يحبُّ أخاهُ الذي أبصرهُ، كيفَ يقدرُ أن يحبَّ الل-هَ الذي لم يُبصرهُ؟ ولنا هذهِ الوصيَّةُ منهُ: أنَّ من يحبُّ الل-هَ يحبُّ أخاهُ أيضاً.", 
   "20 Si quelqu'un dit: 'J'aime Dieu', et qu'il haïsse son frère, c'est un menteur. En effet, celui qui n'aime pas son frère, qu'il voit, ne peut pas aimer Dieu qu'il ne voit pas. 21 Et voici le commandement que nous tenons de lui: celui qui aime Dieu, qu'il aime aussi son frère.", 
   "20 If someone says, I love God, and hates his brother, he is a liar; for he who does not love his brother whom he has seen, how can he love God whom he has not seen? 21 And this commandment we have from Him: that he who loves God must love his brother also.", 
   ],
@@ -4513,7 +2972,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=3012&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية (1 : 19 ـ 2 : 1 ـ 3 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (1 : 19-2 : 1-3)", 
   "2 Pierre 1:19 - 2 :1-3", 
   "2 Peter 1:19-2:3", 
   ],
@@ -4537,89 +2996,34 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَـلِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم منذ البدء لا تبطل، وهلاكهم لا ينعس.", 
+  "وكثيرون ينجذبون نحو نجاساتهم، ومن قِبَ-لِهم يُجدَّف على طريق الحقِّ. وبالظُّلم وكلام الباطل يتَّجرون بكم، هؤلاء الذين دينونتهم منذ البدء لا تبطل، وهلاكهم لا ينعس.", 
   "2 et beaucoup les suivront dans leurs débauches: à cause d'eux, le chemin de la vérité sera l'objet de blasphèmes; 3 et, dans leur cupidité, ils vous exploiteront par des discours truqués; pour eux, depuis longtemps déjà, le jugement ne chôme pas et leur perdition ne dort pas.", 
   "2 And many will follow their destructive ways, because of whom the way of truth will be blasphemed. 3 By covetousness they will exploit you with deceptive words; for a long time their judgment has not been idle, and their destruction does not slumber.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=0113&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى (1 :1 – 2 : 1 - 6 )", 
-  "1 Jean 1:1 - 2:1-6", 
-  "1 John 1:1-10 & 2:1-6", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي كان من البدء الذي سمعناه الذي رأيناه بعيوننا الذي شاهدناه ولمسته ايدينا من جهة كلمة الحياة.", 
-  "1 Ce qui était dès le commencement, ce que nous avons entendu, ce que nous avons vu de nos yeux, ce que nous avons contemplé et que nos mains ont touché du Verbe de vie -", 
-  "1 That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, concerning the Word of life--", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فان الحياة أظهرت وقد رأينا ونشهد ونخبركم بالحياة الابدية التي كانت عند الآب وأظهرت لنا. الذي رأيناه وسمعناه نخبركم به لكي يكون لكم ايضا شركة معنا.", 
-  "2 car la vie s'est manifestée, et nous avons vu et nous rendons témoignage et nous vous annonçons la vie éternelle, qui était tournée vers le Père et s'est manifestée à nous -,3 ce que nous avons vu et entendu, nous vous l'annonçons, à vous aussi, afin que vous aussi vous soyez en communion avec nous.", 
-  "2 the life was manifested, and we have seen, and bear witness, and declare to you that eternal life which was with the Father and was manifested to us-- 3 that which we have seen and heard we declare to you, that you also may have fellowship with us;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما شركتنا نحن فهي مع الآب ومع ابنه يسوع المسيح. ونكتب اليكم هذا لكي يكون فرحكم كاملا وهذا هو الخبر الذي سمعناه منه ونخبركم به ان الله نور وليس فيه ظلمة البتة.", 
-  "Et notre communion est communion avec le Père et avec son Fils Jésus Christ. 4 Et nous vous écrivons cela, pour que notre joie soit complète.5 Et voici le message que nous avons entendu de lui et que nous vous dévoilons: Dieu est lumière, et de ténèbres, il n'y a pas trace en lui.", 
-  "and truly our fellowship is with the Father and with His Son Jesus Christ. 4 And these things we write to you that your joy may be full. 5 This is the message which we have heard from Him and declare to you, that God is light and in Him is no darkness at all.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان قلنا ان لنا شركة معه وسلكنا في الظلمة نكذب ولسنا نعمل الحق ولكن ان سلكنا في النور كما هو في النور فلنا شركة بعضنا مع بعض ودم يسوع المسيح ابنه يطهرنا من كل خطية.", 
-  "6 Si nous disons: 'Nous sommes en communion avec lui', tout en marchant dans les ténèbres, nous mentons et nous ne faisons pas la vérité. 7 Mais si nous marchons dans la lumière comme lui-même est dans la lumière, nous sommes en communion les uns avec les autres, et le sang de Jésus, son Fils, nous purifie de tout péché.", 
-  "6 If we say that we have fellowship with Him, and walk in darkness, we lie and do not practice the truth. 7 But if we walk in the light as He is in the light, we have fellowship with one another, and the blood of Jesus Christ His Son cleanses us from all sin.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان قلنا انه ليس لنا خطية نضل انفسنا وليس الحق فينا. ان اعترفنا بخطايانا فهو امين وعادل حتى يغفر لنا خطايانا ويطهرنا من كل اثم. ان قلنا اننا لم نخطئ نجعله كاذبا وكلمته ليست فينا", 
-  "8 Si nous disons: 'Nous n'avons pas de péché', nous nous égarons nous-mêmes et la vérité n'est pas en nous. 9 Si nous confessons nos péchés, fidèle et juste comme il est, il nous pardonnera nos péchés et nous purifiera de toute iniquité.10 Si nous disons: 'Nous ne sommes pas pécheurs', nous faisons de lui un menteur, et sa parole n'est pas en nous.", 
-  "8 If we say that we have no sin, we deceive ourselves, and the truth is not in us. 9 If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. 10 If we say that we have not sinned, we make Him a liar, and His word is not in us.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا اولادي اكتب اليكم هذا لكي لا تخطئوا.وان اخطأ احد فلنا شفيع عند الآب يسوع المسيح البار وهو كفارة لخطايانا.ليس لخطايانا فقط بل لخطايا كل العالم ايضا", 
-  "1 Mes petits enfants, je vous écris cela pour que vous ne péchiez pas. Mais si quelqu'un vient à pécher, nous avons un défenseur devant le Père, Jésus Christ, qui est juste;2 car il est, lui, victime d'expiation pour nos péchés; et pas seulement pour les nôtres, mais encore pour ceux du monde entier.", 
-  "1 My little children, these things I write to you, so that you may not sin. And if anyone sins, we have an Advocate with the Father, Jesus Christ the righteous. 2 And He Himself is the propitiation for our sins, and not for ours only but also for the whole world.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وبهذا نعرف اننا قد عرفناه ان حفظنا وصاياه. من قال قد عرفته وهو لا يحفظ وصاياه فهو كاذب وليس الحق فيه.", 
-  "3 Et à ceci nous savons que nous le connaissons: si nous gardons ses commandements. 4 Celui qui dit: 'Je le connais', mais ne garde pas ses commandements, est un menteur, et la vérité n'est pas en lui.", 
-  "3 Now by this we know that we know Him, if we keep His commandments. 4 He who says, I know Him,'' and does not keep His commandments, is a liar, and the truth is not in him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "واما من حفظ كلمته فحقا في هذا قد تكملت محبة الله.بهذا نعرف اننا فيه. من قال انه ثابت فيه ينبغي انه كما سلك ذاك هكذا يسلك هو ايضا.", 
-  "5 Mais celui qui garde sa parole, en lui, vraiment, l'amour de Dieu est accompli; à cela nous reconnaissons que nous sommes en lui. 6 Celui qui prétend demeurer en lui, il faut qu'il marche lui-même dans la voie où lui a marché.", 
-  "5 But whoever keeps His word, truly the love of God is perfected in him. By this we know that we are in Him. 6 He who says he abides in Him ought himself also to walk just as He walked.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=0213&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الاولى ( 5 : 1 ـ 10 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الاولى (5 : 1-10)", 
   "1 Jean 5 : 1 - 10", 
   "1 John 5:1-10", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كل مَن يُؤمِن أنَّ يسوعَ هو المسيحُ فقد وُلِدَ مِن اللـه، وكل مَن يُحبُّ الوالد يُحبُّ المَولود منه أيضاً. بهذا نَعرف أنَّنا نُحبُّ أولاد اللـه: إذا أحببنا اللـه ونصنع وصاياه.", 
+  "كل مَن يُؤمِن أنَّ يسوعَ هو المسيحُ فقد وُلِدَ مِن الل-ه، وكل مَن يُحبُّ الوالد يُحبُّ المَولود منه أيضاً. بهذا نَعرف أنَّنا نُحبُّ أولاد الل-ه: إذا أحببنا الل-ه ونصنع وصاياه.", 
   "1 Quiconque croit que Jésus est le Christ est né de Dieu; et quiconque aime Dieu qui engendre aime aussi celui qui est né de Dieu. 2 A ceci nous reconnaissons que nous aimons les enfants de Dieu, si nous aimons Dieu et mettons en pratique ses commandements.", 
   "1 Whoever believes that Jesus is the Christ is born of God, and everyone who loves Him who begot also loves him who is begotten of Him. 2 By this we know that we love the children of God, when we love God and keep His commandments.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإنَّ هـذه هي محبَّةُ الله: أن نَحفظ وصايـاه. ووصاياه ليسَت ثقيلةً، لأنَّ كل مَن وُلِدَ من اللـه يَغلُبُ العالم، وهذه هيَ الغَلبَةُ التي تَغلُبُ العالم: إيمانُنا.", 
+  "فإنَّ ه-ذه هي محبَّةُ الله: أن نَحفظ وصاي-اه. ووصاياه ليسَت ثقيلةً، لأنَّ كل مَن وُلِدَ من الل-ه يَغلُبُ العالم، وهذه هيَ الغَلبَةُ التي تَغلُبُ العالم: إيمانُنا.", 
   "3 Car voici ce qu'est l'amour de Dieu: que nous gardions ses commandements. Et ses commandements ne sont pas un fardeau, 4 puisque tout ce qui est né de Dieu est vainqueur du monde. Et la victoire qui a vaincu le monde, c'est notre foi.", 
   "3 For this is the love of God, that we keep His commandments. And His commandments are not burdensome. 4 For whatever is born of God overcomes the world. And this is the victory that has overcome the world--our faith.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مَنْ هو الذي يَغلُبُ العالم، إلاَّ الذي يُؤمِن أنَّ يسوع هو ابنَ اللـه؟ هذا هو الذي جاءَ بماءٍ ودمٍ وروح يسوع المسيح. لا بالماء فقط بل بالماء والدَّم، والرُّوح هو الذي يشهد، لأن الرُّوح هو الحقٌّ.", 
+  "مَنْ هو الذي يَغلُبُ العالم، إلاَّ الذي يُؤمِن أنَّ يسوع هو ابنَ الل-ه؟ هذا هو الذي جاءَ بماءٍ ودمٍ وروح يسوع المسيح. لا بالماء فقط بل بالماء والدَّم، والرُّوح هو الذي يشهد، لأن الرُّوح هو الحقٌّ.", 
   "5 Qui est le vainqueur du monde, sinon celui qui croit que Jésus est le Fils de Dieu? 6 C'est lui qui est venu par l'eau et par le sang, Jésus Christ, non avec l'eau seulement, mais avec l'eau et le sang; et c'est l'Esprit qui rend témoignage, parce que l'Esprit est la vérité.", 
   "5 Who is he who overcomes the world, but he who believes that Jesus is the Son of God? 6 This is He who came by water and blood--Jesus Christ; not only by water, but by water and blood. And it is the Spirit who bears witness, because the Spirit is truth.", 
   ],
@@ -4631,71 +3035,21 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إن كُنَّا نَقبَلُ شهادَةَ النَّاس، فَشَهادةُ اللـه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ اللـه التي قد شهدَ بها عن ابنهِ.", 
+  "إن كُنَّا نَقبَلُ شهادَةَ النَّاس، فَشَهادةُ الل-ه أعظَمُ جدَّاً، لأنَّ هذه هيَ شهادةُ الل-ه التي قد شهدَ بها عن ابنهِ.", 
   "9 si nous recevons le témoignage des hommes, le témoignage de Dieu est plus grand; car tel est le témoignage de Dieu: il a rendu témoignage en faveur de son Fils.", 
   "9 If we receive the witness of men, the witness of God is greater; for this is the witness of God which He has testified of His Son.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مَن يُؤمِن بِابن اللـهِ فشهادة اللـه ثابتةٌ فيه. ومَن لا يُصدِّق اللـه، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها اللـه عن ابنهِ. وهذه هيَ الشَّهادةُ أنَّ اللـه أعطانا الحياة الأبديَّة", 
+  "مَن يُؤمِن بِابن الل-هِ فشهادة الل-ه ثابتةٌ فيه. ومَن لا يُصدِّق الل-ه، فَقَد جَعَلهُ كاذباً، لأنَّه لم يُؤمِن بالشَّهادة التي قَد شَهدَ بها الل-ه عن ابنهِ. وهذه هيَ الشَّهادةُ أنَّ الل-ه أعطانا الحياة الأبديَّة", 
   "10 Qui croit au Fils de Dieu a ce témoignage en lui-même. Qui ne croit pas Dieu fait de lui un menteur, puisqu'il n'a pas foi dans le témoignage que Dieu a rendu en faveur de son Fils.", 
   "10 He who believes in the Son of God has the witness in himself; he who does not believe God has made Him a liar, because he has not believed the testimony that God has given of His Son.", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=0313&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الاولى ( 1 :3 – 12 )", 
-  "1 PETER 1:3-12", 
-  "1 PETER 1:3-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مبارك الله ابو ربنا يسوع المسيح الذي حسب رحمته الكثيرة ولدنا ثانية لرجاء حيّ بقيامة يسوع المسيح من الاموات.", 
-  "3 Béni soit le Dieu et Père de notre Seigneur Jésus–Christ qui, selon sa grande miséricorde, nous a régénérés, par la résurrection de Jésus–Christ d’entre les morts, pour une espérance vivante,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لميراث لا يفنى ولا يتدنس ولا يضمحل محفوظ في السموات لاجلكم انتم الذين بقوة الله محروسون بايمان لخلاص مستعد ان يعلن في الزمان الاخير.", 
-  "4 pour un héritage qui ne peut ni se corrompre, ni se souiller, ni se flétrir et qui vous est réservé dans les cieux, 5 à vous qui êtes gardés en la puissance de Dieu, par la foi, pour le salut prêt à être révélé dans les derniers temps.", 
-  "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي به تبتهجون مع انكم الآن ان كان يجب تحزنون يسيرا بتجارب متنوعة.", 
-  "6 Vous en tressaillez d’allégresse, quoique vous soyez maintenant, pour un peu de temps, puisqu’il le faut, affligés par diverses épreuves,", 
-  "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لكي تكون تزكية ايمانكم وهي اثمن من الذهب الفاني مع انه يمتحن بالنار توجد للمدح والكرامة والمجد عند استعلان يسوع المسيح. ذلك وان لم تروه تحبونه. ذلك وان كنتم لا ترونه الآن لكن تؤمنون به", 
-  "7 afin que votre foi éprouvée bien plus précieuse que l’or périssable, cependant éprouvé par le feu se trouve être un sujet de louange, de gloire et d’honneur, lors de la révélation de Jésus–Christ. 8 Vous l’aimez sans l’avoir vu. Sans le voir encore, vous croyez en lui", 
-  "7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ, 8 whom having not seen you love. Though now you do not see Him, yet believing,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فتبتهجون بفرح لا ينطق به ومجيد. نائلين غاية ايمانكم خلاص النفوس.الخلاص الذي فتش وبحث عنه انبياء.الذين تنبأوا عن النعمة التي لاجلكم.", 
-  "et vous tressaillez d’une allégresse indicible et glorieuse, 9 en remportant pour prix de votre foi le salut de vos âmes.10 Les prophètes, qui ont prophétisé au sujet de la grâce qui vous était destinée ont fait de ce salut l’objet de leurs recherches et de leurs investigations.", 
-  "you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith-- the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully, who prophesied of the grace that would come to you,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "باحثين اي وقت او ما الوقت الذي كان يدل عليه روح المسيح الذي فيهم اذ سبق فشهد بالآلام التي للمسيح والامجاد التي بعدها.", 
-  "11 Ils se sont appliqués à découvrir à quelle époque et à quelles circonstances se rapportaient les indications de l’Esprit de Christ qui était en eux et qui, d’avance, attestait les souffrances de Christ et la gloire qui s’ensuivrait.", 
-  "11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذين أعلن لهم انهم ليس لانفسهم بل لنا كانوا يخدمون بهذه الامور التي أخبرتم بها انتم الآن بواسطة الذين بشروكم في الروح القدس المرسل من السماء التي تشتهي الملائكة ان تطّلع عليها.", 
-  "12 Il leur fut révélé que ce n’était pas pour eux–mêmes, mais pour vous, qu’ils étaient ministres de ces choses. Maintenant, elles vous ont été annoncées par ceux qui vous ont prêché l’Évangile par le Saint–Esprit envoyé du ciel, et les anges désirent y plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven-- things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=0413&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 5 : 1 ـ 11 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (5 : 1-11)", 
   "1 Pierre. 5 : 1-12", 
   "1 Peter 5:1-12", 
   ],
@@ -4739,7 +3093,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=0613&C=Title", 
-  " الكاثوليكون من رسالة يعقوب ( 5 : 16 – 20 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب (5 : 16 – 20)", 
   "Jacques 5 : 16-20", 
   "James 5:16-20", 
   ],
@@ -4807,97 +3161,35 @@ ReadingsArrays.KatholikonArray= [[
   ],
   ],
   [
-  [
-  Prefix.katholikon+"&D=GL10&C=Title", 
-  " الكاثوليكون من رسالة يهوذا الرسول( 1 : 1 ـ 8 )", 
-  "Jude 1 : 1 - 8", 
-  "Jude 1:1-8", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يهوذا، عَبدُ يسوعَ المسيح، وأخُو يعقوبَ، إلي المدعُوِّينَ المحبوبين في اللَّه الآب، والمحفُوظينَ لِيَسوع المسيح: لِتكثُر لكُم الرَّحمةُ والسَّلامُ والمحبَّةُ.", 
-  "1 Jude, serviteur de Jésus Christ, frère de Jacques, à ceux qui sont appelés, qui sont aimés de Dieu le Père et gardés pour Jésus Christ. 2 Que la miséricorde, la paix et l'amour vous viennent en abondance.", 
-  "1:1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا أحبائي، إذ كُنتُ أضعُ كُلَّ الجهد لأكُتب إليكُم من أجل خلاصكم المُشترك، اضطُررتُ أن اكتُبَ إليكُم واعظاً أن تجتهدوا لأجل الإيمان الذي سلم لكم مرَّةً من القدِّيسين.", 
-  "3 Mes amis, alors que je désirais vivement vous écrire au sujet du salut qui nous concerne tous, je me suis vu forcé de le faire afin de vous encourager à combattre pour la foi qui a été transmise aux saints définitivement.", 
-  "3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّهُ قد اختلط بنا أُناسٌ الذين سبق فكتبوا ( قديماً ) لهذه الدَّينُونةِ، منافقون يُحوِّلون نعمة ربنا إلى الدَّعارة، ويجحدون السَّيّد الوحيد: ربَّنا يسوع المسيح.", 
-  "4 Car il s'est infiltré parmi vous des individus dont la condamnation est depuis longtemps inscrite à l'avance, impies qui travestissent en débauche la grâce de notre Dieu et qui renient notre seul Maître et Seigneur Jésus Christ.", 
-  "4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فأُريدُ أن تذكروا، إذ قد عرفتم كل شيء مرةً، أنَّ يسوع خلَّصَ شعبه من أرض مصرَ، وفي الثانية أهلك الذين لم يُؤمِنُوا. والملائكةُ الذينَ لم يحفظُوا رئاستهم،", 
-  "5 Je veux vous rappeler, bien que vous sachiez tout définitivement, que le Seigneur, après avoir sauvé son peuple du pays d'Égypte, a fait périr ensuite ceux qui s'étaient montrés incrédules.6 Les anges qui n'avaient pas gardé leur rang mais qui avaient abandonné leur demeure,", 
-  "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe. 6 And the angels who did not keep their proper domain, but left their own abode,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بل تَركُوا مسكنهُم حَفظَهُم تحت الظلمة في قيودٍ أبديَّةٍ إلي دينونة اليوم العظيم. كما أنَّ سَدوم وعمُورة والمُدُنَ التي حولهُما، زنت على مثالهما، ومضت وراء جسدٍ آخر،", 
-  "il les garde éternellement enchaînés dans les ténèbres pour le jugement du grand Jour.7 Quant à Sodome et Gomorrhe et aux villes d'alentour qui s'étaient livrées de semblable manière à la prostitution et avaient couru après des êtres d'une autre nature,", 
-  "He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "قد جُعلت عبرةً مُكابدَةً عِقابَ نارٍ أبدِيَّةٍ. وكذلك أيضاً هؤُلاء، المُحْتَلِمُونَ، يُنجِّسُون الجسد، ويحتقرون السِّيادةِ، ويجدفون على ذوي الأمجادِ.", 
-  "elles gisent comme un exemple sous le châtiment du feu éternel. 8 C'est de la même façon que ces gens-là, dans leur délire, souillent la chair, méprisent la Souveraineté, insultent les Gloires.", 
-  "are set forth as an example, suffering the vengeance of eternal fire. 8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=GL11&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 1 : 1 ـ 12 )", 
-  "Jacques 1 : 1 - 12", 
-  "James 1:1-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّـتَاتِ. احتسبوه كلِّ فرحٍ يا إخوتي حينما تقعون في تَجاربَ مُتَنوِّعةٍ،", 
-  "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon coeur, 2 mes frères, toutes les épreuves par lesquelles vous passez,", 
-  "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عَالمينَ أنَّ امتحان إيمانكُمْ يُنشئ صبراً. وأمَّا الصَّبرُ فليكُن لهِ عملٌ تامٌّ، بحيث تكونون كاملينَ موقرين غير نَاقصينَ في شيءٍ. وإن كانَ أحدُكُم تنقصهُ حكمةٌ، فليسأل اللَّهِ", 
-  "3 sachant que le test auquel votre foi est soumise, produit de l'endurance.4 Mais que l'endurance soit parfaitement opérante, afin que vous soyez parfaits et accomplis, exempts de tout défaut.5 Si la sagesse fait défaut à l'un de vous, qu'il la demande au Dieu", 
-  "3 knowing that the testing of your faith produces patience. 4 But let patience have its perfect work, that you may be perfect and complete, lacking nothing. 5 If any of you lacks wisdom, let him ask of God,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي يُعطي الجميعَ بسخاءٍ خالص ولا يُعيِّرُ، فَسيُعْطَى له. ولكن ليسأل بإيمانٍ غير مُرتابٍ في شيء. فإنَّ المُرتابَ يُشبهُ موج البحر الذي تسوقه الرِّيحُ وتخبطه.", 
-  "qui donne à tous avec simplicité et sans faire de reproche; elle lui sera donnée. 6 Mais qu'il demande avec foi, sans éprouver le moindre doute; car celui qui doute ressemble à la houle marine que le vent soulève.", 
-  "who gives to all liberally and without reproach, and it will be given to him. 6 But let him ask in faith, with no doubting, for he who doubts is like a wave of the sea driven and tossed by the wind.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فلا يَظُنَّ مثل هذا أنَّهُ يَنَالُ مِنْ الرَّبِّ شيئاً. إنَّ الرجُل ذا الرأيين مُتَقَلقِلٌ في جَمِيع طُرُقِهِ. وَلْيَفتَخِرْ الأخُ المُتضعُ بارتفاعِهِ،", 
-  "7 Que ce personnage ne s'imagine pas que le Seigneur donnera quoi 8 que ce soit à un homme partagé, fluctuant dans toutes ses démarches.9 Que le frère de condition modeste tire fierté de son élévation,", 
-  "7 For let not that man suppose that he will receive anything from the Lord; 8 he is a double-minded man, unstable in all his ways. 9 Let the lowly brother glory in his exaltation,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وأمَّا الغَنيُّ فبتواضعِهِ، لأنَّهُ كزهرِ العُشبِ يَزولُ. لأنَّ الشَّمسَ أشرَقتْ بالحَرِّ فيَبَّسَتْ العُشبَ، فسقط زهرُهُ وفنيَ جَمالُ مَنظَرهِ.", 
-  "10 et le riche, de son déclassement, parce qu'il passera comme la fleur des prés. 11 Car le soleil s'est levé avec le sirocco et a desséché l'herbe, dont la fleur est tombée et dont la belle apparence a disparu; de la même façon,", 
-  "10 but the rich in his humiliation, because as a flower of the field he will pass away. 11 For no sooner has the sun risen with a burning heat than it withers the grass; its flower falls, and its beautiful appearance perishes.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هكذا يَذبُلُ الغَنيُّ أيضـاً في جميعِ طُرُقِهِ. مغبوط هو الرَّجُل الذي يَصبرُ على التَّجربَةِ، لأنَّه إذا تزكى ينالُ إكليلَ الحياة الذي وعَدَ بِهِ الرَّبُّ للذِينَ يُحبُّونَهُ.", 
-  "le riche, dans ses entreprises, se flétrira. 12 Heureux l'homme qui endure l'épreuve, parce que, une fois testé, il recevra la couronne de la vie, promise à ceux qui L'aiment.", 
-  "So the rich man also will fade away in his pursuits. 12 Blessed is the man who endures temptation; for when he has been approved, he will receive the crown of life which the Lord has promised to those who love Him.", 
-  ],
-  ],
+      [
+      Prefix.katholikon+"&D=GL10&C=Title", 
+      "الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1: 1-8)", 
+      "Saint Jude (1: 1-8)", 
+      "Jude (1: 1-8)", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "يَهُوذَا، عَبْدُ يَسُوعَ الْمَسِيحِ، وَأَخُو يَعْقُوبَ، إِلَى الْمَدْعُوِّينَ الْمُقَدَّسِينَ فِي اللهِ الآبِ، وَالْمَحْفُوظِينَ لِيَسُوعَ الْمَسِيحِ: لِتَكْثُرْ لَكُمُ الرَّحْمَةُ وَالسَّلاَمُ وَالْمَحَبَّةُ أَيُّهَا الأَحِبَّاءُ، إِذْ كُنْتُ أَصْنَعُ كُلَّ الْجَهْدِ لأَكْتُبَ إِلَيْكُمْ عَنِ الْخَلاَصِ الْمُشْتَرَكِ، اضْطُرِرْتُ أَنْ أَكْتُبَ إِلَيْكُمْ وَاعِظًا أَنْ تَجْتَهِدُوا لأَجْلِ الإِيمَانِ الْمُسَلَّمِ مَرَّةً لِلْقِدِّيسِينَ، لأَنَّهُ دَخَلَ خُلْسَةً أُنَاسٌ قَدْ كُتِبُوا مُنْذُ الْقَدِيمِ لِهذِهِ الدَّيْنُونَةِ، فُجَّارٌ، يُحَوِّلُونَ نِعْمَةَ إِلهِنَا إِلَى الدَّعَارَةِ، وَيُنْكِرُونَ السَّيِّدَ الْوَحِيدَ: اللهَ وَرَبَّنَا يَسُوعَ الْمَسِيحَ.", 
+      "01 Jude, serviteur de Jésus Christ et frère de Jacques, aux appelés qui sont aimés de Dieu le Père et gardés pour Jésus Christ : 02 que la miséricorde, la paix et l’amour vous soient accordés en abondance. 03 Bien-aimés, j’avais la ferme intention de vous écrire au sujet du salut qui nous est commun ; or me voici dans l’obligation de le faire pour vous exhorter à combattre pour la foi qui a été transmise aux fidèles une fois pour toutes. 04 Car il s’est infiltré parmi vous des individus, qui sont marqués depuis longtemps en vue de ce jugement, des impies qui tournent la grâce de notre Dieu en prétexte à la débauche, et qui renient notre seul maître et Seigneur, Jésus Christ.", 
+      "1 Jude, a bondservant of Jesus Christ, and brother of James, To those who are called, sanctified by God the Father, and preserved in Jesus Christ: 2 Mercy, peace, and love be multiplied to you. 3 Beloved, while I was very diligent to write to you concerning our common salvation, I found it necessary to write to you exhorting you to contend earnestly for the faith which was once for all delivered to the saints. 4 For certain men have crept in unnoticed, who long ago were marked out for this condemnation, ungodly men, who turn the grace of our God into lewdness and deny the only Lord God and our Lord Jesus Christ.", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "فَأُرِيدُ أَنْ أُذَكِّرَكُمْ، وَلَوْ عَلِمْتُمْ هذَا مَرَّةً، أَنَّ الرَّبَّ بَعْدَمَا خَلَّصَ الشَّعْبَ مِنْ أَرْضِ مِصْرَ، أَهْلَكَ أَيْضًا الَّذِينَ لَمْ يُؤْمِنُوا وَالْمَلاَئِكَةُ الَّذِينَ لَمْ يَحْفَظُوا رِيَاسَتَهُمْ، بَلْ تَرَكُوا مَسْكَنَهُمْ حَفِظَهُمْ إِلَى دَيْنُونَةِ الْيَوْمِ الْعَظِيمِ بِقُيُودٍ أَبَدِيَّةٍ تَحْتَ الظَّلاَمِ، كَمَا أَنَّ سَدُومَ وَعَمُورَةَ وَالْمُدُنَ الَّتِي حَوْلَهُمَا، إِذْ زَنَتْ عَلَى طَرِيق مِثْلِهِمَا، وَمَضَتْ وَرَاءَ جَسَدٍ آخَرَ، جُعِلَتْ عِبْرَةً مُكَابِدَةً عِقَابَ نَارٍ أَبَدِيَّةٍ.", 
+      "05 Bien que vous sachiez déjà tout cela, je veux néanmoins vous le rappeler : le Seigneur, qui avait sauvé une fois pour toutes son peuple en le faisant sortir du pays d’Égypte, a pourtant supprimé ensuite ceux qui ont refusé de croire ; 06 quant aux anges qui n’ont pas gardé la dignité de leur rang, mais ont quitté la demeure qui était la leur, le Seigneur les maintient enchaînés à perpétuité dans les ténèbres en vue du jugement du grand jour ; 07 il en va de même pour Sodome et Gomorrhe et les villes d’alentour : elles s’étaient livrées à la prostitution d’une manière semblable à ces anges-là et elles étaient allées avec des êtres d’une autre nature ; elles sont soumises pour l’exemple au châtiment du feu éternel.", 
+      "5 But I want to remind you, though you once knew this, that the Lord, having saved the people out of the land of Egypt, afterward destroyed those who did not believe.6 And the angels who did not keep their proper domain, but left their own abode, He has reserved in everlasting chains under darkness for the judgment of the great day; 7 as Sodom and Gomorrah, and the cities around them in a similar manner to these, having given themselves over to sexual immorality and gone after strange flesh, are set forth as an example, suffering the vengeance of eternal fire.", 
+      ],
+      [
+      Prefix.same+"&C=NoActor", 
+      "وَلكِنْ كَذلِكَ هؤُلاَءِ أَيْضًا، الْمُحْتَلِمُونَ، يُنَجِّسُونَ الْجَسَدَ، وَيَتَهَاوَنُونَ بِالسِّيَادَةِ، وَيَفْتَرُونَ عَلَى ذَوِي الأَمْجَادِ.", 
+      "08 Et pourtant, ces coureurs de songes font la même chose : ils souillent la chair, ils méprisent la seigneurie de Dieu, ils outragent les anges appelés Gloires.", 
+      "8 Likewise also these dreamers defile the flesh, reject authority, and speak evil of dignitaries.", 
+      ]
+      ],
   [
   [
   Prefix.katholikon+"&D=GL12&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الثانية) 1 : 8 ـ 13 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية) 1 : 8-13)", 
   "2 Jean 1:8-13", 
   "2 John 1:8-13", 
   ],
@@ -4929,7 +3221,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL13&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 3 : 1 ـ 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرسول(3 : 1-12)", 
   "James 3:1-12", 
   "James 3:1-12", 
   ],
@@ -4953,7 +3245,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاللِّسانُ هو نارٌ! وزينة الإثم. هكذا جُعِلَ اللِّسانُ في أعضائِنا، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ ميلادنا ( الكون )، ويُضرَمُ مِن جَهنَّمَ.", 
+  "فاللِّسانُ هو نارٌ! وزينة الإثم. هكذا جُعِلَ اللِّسانُ في أعضائِنا، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ ميلادنا (الكون)، ويُضرَمُ مِن جَهنَّمَ.", 
   "6 La langue aussi est un feu, le monde du mal; la langue est installée parmi les membres, elle qui souille le corps entier, qui embrase le cycle de la nature, qui est elle-même embrasée par la géhenne.", 
   "6 And the tongue is a fire, a world of iniquity. The tongue is so set among our members that it defiles the whole body, and sets on fire the course of nature; and it is set on fire by hell.", 
   ],
@@ -4971,7 +3263,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ ( الملح ) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً", 
+  "ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ (الملح) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً", 
   "11 La source produit-elle le doux et l'amer par le même orifice? Un figuier, mes frères, peut-il donner des olives, ou une vigne des figues? Une source saline ne peut pas non plus donner d'eau douce.", 
   "11 Does a spring send forth fresh water and bitter from the same opening? 12 Can a fig tree, my brethren, bear olives, or a grapevine bear figs? Thus no spring yields both salt water and fresh.", 
   ],
@@ -4979,7 +3271,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL14&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى الرسول( 4 : 7 ـ 16 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى الرسول(4 : 7-16)", 
   "1 Peter 4:7-16", 
   "1 Peter 4:7-16", 
   ],
@@ -4991,13 +3283,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كُونُوا مُضِيفين للغرباء بعضُكُم لبعض بغير تذمر. وليكُن كُلُّ واحدٍ بِحَسبِ ما أخذَ مِن موهبةً، يخدمُ بها كما يليق، كوُكلاء صَالِحين على نِعمة اللَّـه المُتنوَّعة.", 
+  "كُونُوا مُضِيفين للغرباء بعضُكُم لبعض بغير تذمر. وليكُن كُلُّ واحدٍ بِحَسبِ ما أخذَ مِن موهبةً، يخدمُ بها كما يليق، كوُكلاء صَالِحين على نِعمة اللَّ-ه المُتنوَّعة.", 
   "9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.", 
   "9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إن كان أحد يتكلَّمُ فكما يليق بأقوال اللَّـه. ومن يخدمُ فكأنَّهُ مِن قُوَّةٍ يعطيها اللَّـهُ، حتى يتمجَّد اللَّـهُ في كُلِّ شيءٍ بيسوع المسيح، الذي لهُ المجدُ والعزة إلى دهر الداهرين آمين.", 
+  "إن كان أحد يتكلَّمُ فكما يليق بأقوال اللَّ-ه. ومن يخدمُ فكأنَّهُ مِن قُوَّةٍ يعطيها اللَّ-هُ، حتى يتمجَّد اللَّ-هُ في كُلِّ شيءٍ بيسوع المسيح، الذي لهُ المجدُ والعزة إلى دهر الداهرين آمين.", 
   "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !", 
   "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
   ],
@@ -5009,23 +3301,23 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إذا عُيِّرتُم من أجل اسم المسيح، فطُوبى لكم، لأنَّ المجدِ والقوة وروح اللَّـه يَحلُّ عليكُم.", 
+  "إذا عُيِّرتُم من أجل اسم المسيح، فطُوبى لكم، لأنَّ المجدِ والقوة وروح اللَّ-ه يَحلُّ عليكُم.", 
   "14 Si vous êtes outragés pour le nom de Christ, vous êtes heureux, car l’Esprit de gloire, l’Esprit de Dieu repose sur vous !", 
   "14 If you are reproached for the name of Christ, blessed are you, for the Spirit of glory and of God rests upon you. On their part He is blasphemed, but on your part He is glorified.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلا يتألَّم أحدُكُم كقاتلٍ، أو سارقٍ، أو فاعل شرٍّ، أو مترصد لما هو لغيره. فأما إذا تألم كمسيحيٍّ، فلا يخجل، بل ليُمجِّدُ اللَّـه لأجل هذا الاسم.", 
+  "فلا يتألَّم أحدُكُم كقاتلٍ، أو سارقٍ، أو فاعل شرٍّ، أو مترصد لما هو لغيره. فأما إذا تألم كمسيحيٍّ، فلا يخجل، بل ليُمجِّدُ اللَّ-ه لأجل هذا الاسم.", 
   "15 Que nul de vous ne souffre comme meurtrier, comme voleur, comme malfaiteur ou comme se mêlant des affaires d’autrui ;16 mais si c’est comme chrétien, qu’il n’en rougisse pas ; qu’il glorifie plutôt Dieu à cause de ce nom.", 
   "15 But let none of you suffer as a murderer, a thief, an evildoer, or as a busybody in other people's matters. 16 Yet if anyone suffers as a Christian, let him not be ashamed, but let him glorify God in this matter", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=GL15&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 27 )", 
-  "Jacques 1: 22 -27", 
-  "James 1:22-27", 
+  Prefix.katholikon+"&D=GL15||011stSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-27)", 
+  "Jacques 1: 22-27", 
+  "James (1: 22-27)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5035,7 +3327,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإنَّهُ نَظرَ ذاتَهُ ومَضى، فنَسِيَ كيف كان فأمَّا مَنْ يتَطلعَ في النَّاموسِ الكامل ( ناموس) الحُرِّيَّةِ ويثَبَتَ فيه، ولا يكون سامِعاً نَاسِياً بل فاعلاً للعملِ، فهذا يَكونُ مَغبوطاً سعيداً فيما يعملهُ.", 
+  "فإنَّهُ نَظرَ ذاتَهُ ومَضى، فنَسِيَ كيف كان فأمَّا مَنْ يتَطلعَ في النَّاموسِ الكامل (ناموس) الحُرِّيَّةِ ويثَبَتَ فيه، ولا يكون سامِعاً نَاسِياً بل فاعلاً للعملِ، فهذا يَكونُ مَغبوطاً سعيداً فيما يعملهُ.", 
   "24 il s'est observé, il est parti, il a tout de suite oublié de quoi il avait l'air. 25 Mais celui qui s'est penché sur une loi parfaite, celle de la liberté, et s'y est appliqué, non en auditeur distrait, mais en réalisateur agissant, celui-là trouvera le bonheur dans ce qu'il réalisera.", 
   "24 for he observes himself, goes away, and immediately forgets what kind of man he was. 25 But he who looks into the perfect law of liberty and continues in it, and is not a forgetful hearer but a doer of the work, this one will be blessed in what he does.", 
   ],
@@ -5054,54 +3346,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL17&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 3 ـ 12 )", 
-  "1 Pierre 1 : 3 - 12", 
-  "1 Peter 1:3-12", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "مُباركٌ الرب الإله أبو ربِّنا يسوع المسيح، الذى بحسب رحمته الكثيرة وَلَدَنَا ثانيةً لرجاء حيٍّ، بقيامة يسوع المسيح من الأموات،", 
-  "3 Béni soit Dieu, le Père de notre Seigneur Jésus Christ: dans sa grande miséricorde, il nous a fait renaître pour une espérance vivante, par la résurrection de Jésus Christ d'entre les morts,", 
-  "3 Blessed be the God and Father of our Lord Jesus Christ, who according to His abundant mercy has begotten us again to a living hope through the resurrection of Jesus Christ from the dead,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لميراثٍ لا يَبلى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ في السَّمَوات لكم، أنتم الذين بقوة اللَّـه محروسون، بالإيمان للخلاص المُعدّ أن يُستعلَن في الزمان الأخير. الذي به تبتهجون الآن قليلاً، إن كان يجب أن تحزنوا يسيراً", 
-  "4 pour un héritage qui ne se peut corrompre, ni souiller, ni flétrir; cet héritage vous est réservé dans les cieux, 5 à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin. 6 Aussi, tressaillez vous d'allégresse même s'il faut que,", 
-  "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time. 6 In this you greatly rejoice, though now for a little while, if need be,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بتجارب متنوِّعة، لكي تكون تزكية إيمانكم وهي أثمن من الذَّهب الفاني، مع كونه مختبراً بالنَّار، فتوجَدُون أهلاً للمديح والمجدٍ والكرامةٍ عند استعلان يسوع المسيح،", 
-  "pour un peu de temps, vous soyez affligés par diverses épreuves, 7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu - obtienne louange, gloire et honneur lors de la révélation de Jésus Christ,", 
-  "you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire, may be found to praise, honor, and glory at the revelation of Jesus Christ,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي وإن لم تروه تحبُّونه. ذلك وإن كنتم لا ترونه الآن لكن تؤمنون به فتبتهجون بفرح لا يُنطق به ومجيد، نائلين غاية إيمانكم خلاص نفوسكم. الخلاصَ الذي طلبه وفحصه الأنبياء،", 
-  "Lui que vous aimez sans l'avoir vu, en qui vous croyez sans le voir encore; aussi tressaillez-vous d'une joie ineffable et glorieuse, en remportant, comme prix de la foi, le salut de vos âmes. 10 Sur ce salut ont porté les recherches et les investigations des prophètes,", 
-  "8 whom having not seen you love. Though now you do not see Him, yet believing, you rejoice with joy inexpressible and full of glory, 9 receiving the end of your faith--the salvation of your souls. 10 Of this salvation the prophets have inquired and searched carefully,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذينَ تنبأوا من أجل النِّعمَةِ البالغة إليكم، وباحثين عن الوقت الذي تكلم فيهم روحُ المسيح. الذي سَبقَ فشَهِدَ بآلام المسيح والأمجاد الآتيـة بعدها.", 
-  "qui ont prophétisé au sujet de la grâce qui vous était destinée:11 ils recherchaient à quel temps et à quelles circonstances se rapportaient les indications données par l'Esprit du Christ qui était présent en eux, quand il attestait par avance les souffrances réservées au Christ et la gloire qui les suivrait.", 
-  "who prophesied of the grace that would come to you, 11 searching what, or what manner of time, the Spirit of Christ who was in them was indicating when He testified beforehand the sufferings of Christ and the glories that would follow.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذينَ أُعلِـنَ لهُـم أنَّهُم لم يعملوا لأنفسـهم، بل لكم كانـوا يخدمون هذه التي أُخبرتم بها الآن بواسطة الذين بَشَّروكُم في الرُّوح القُدُس المُرسَل مِنَ السَّماءِ. التي تَشتَهي الملائكة أن يطَّلِعوا عليها.", 
-  "12 Il leur fut révélé que ce n'était pas pour eux-mêmes, mais pour vous qu'ils transmettaient ce message, que maintenant les prédicateurs de l'Évangile vous ont communiqué sous l'action de l'Esprit Saint envoyé du ciel, et dans lequel les anges désirent plonger leurs regards.", 
-  "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=GL18&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى( 2 : 1 ـ 11 )", 
-  "1 Jean 2 : 1 - 11", 
-  "1 John 2:1-11", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2 : 1-11)", 
+  "1 Jean (2: 1-11)", 
+  "1 John (2: 1-11)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5117,7 +3365,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فمَن قال: ' إني قد عرفتُهُ ' ولم يحفظ وصاياهُ، فهو كاذبٌ وليس الحقُّ فيهِ. وأمَّا مَن يحفظ كلمتهُ، فبالحقيقة في هذا قد تكمَّلت محبَّةُ اللَّـهِ. بهذا نعرفُ أنَّنا فيهِ:", 
+  "فمَن قال: ' إني قد عرفتُهُ ' ولم يحفظ وصاياهُ، فهو كاذبٌ وليس الحقُّ فيهِ. وأمَّا مَن يحفظ كلمتهُ، فبالحقيقة في هذا قد تكمَّلت محبَّةُ اللَّ-هِ. بهذا نعرفُ أنَّنا فيهِ:", 
   "4 Celui qui dit: 'Je le connais', mais ne garde pas ses commandements, est un menteur, et la vérité n'est pas en lui. 5 Mais celui qui garde sa parole en lui, vraiment, l'amour de Dieu est accompli; à cela nous reconnaissons que nous sommes en lui.", 
   "4 He who says, I know Him, and does not keep His commandments, is a liar, and the truth is not in him. 5 But whoever keeps His word, truly the love of God is perfected in him. By this we know that we are in Him.", 
   ],
@@ -5149,13 +3397,13 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL19&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية ( 2 : 9 ـ 15 )", 
-  "2 Peter 2:9-15", 
-  "2 Peter 2:9-15", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية (2 : 9-15)", 
+  "2 Peter (2: 9-15)", 
+  "2 Peter (2: 9-15)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يعلمُ الرَّبُّ أنْ يُنجي العابدين ( الأتقياء ) مِن المحنة، وأن يَحفظَ الظالمين ( الآثمة ) إلى يوم الدينونة معذبين،", 
+  "يعلمُ الرَّبُّ أنْ يُنجي العابدين (الأتقياء) مِن المحنة، وأن يَحفظَ الظالمين (الآثمة) إلى يوم الدينونة معذبين،", 
   "9 C'est donc que le Seigneur peut arracher à l'épreuve les hommes droits et garder en réserve, pour les châtier au jour du jugement,", 
   "9 then the Lord knows how to deliver the godly out of temptations and to reserve the unjust under punishment for the day of judgment,", 
   ],
@@ -5167,7 +3415,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "جسورين على المتسلطين،لا يخشون أن يجدفوا على الأمجاد، حيثُ ملائكةٌ ـ وهم أعظم قُدرةً وقُوَّةً ـ لا يُقدِّمُونَ على بعضهم حكم افتراءٍ.", 
+  "جسورين على المتسلطين،لا يخشون أن يجدفوا على الأمجاد، حيثُ ملائكةٌ-وهم أعظم قُدرةً وقُوَّةً-لا يُقدِّمُونَ على بعضهم حكم افتراءٍ.", 
   "Trop sûrs d'eux, arrogants, ils n'ont pas peur d'insulter les Gloires, 11 alors que les anges, qui leur sont supérieurs en force et en puissance, ne portent pas contre elles de jugement insultant devant le Seigneur.", 
   "They are presumptuous, self-willed. They are not afraid to speak evil of dignitaries, 11 whereas angels, who are greater in power and might, do not bring a reviling accusation against them before the Lord.", 
   ],
@@ -5192,10 +3440,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL1&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 1 : 1 ـ 12 )", 
-  "1 Peter 1:1-12", 
-  "1 Pierre 1 : 1-12", 
+  Prefix.katholikon+"&D=GL1||111stSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(1 : 1-12)", 
+  "1 Peter (1: 1-12)", 
+  "1 Pierre (1: 1-12)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5247,7 +3495,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذين أُعلِنَ لهُمْ أنهم ليس لأنْفُسِهِمْ، بَلْ لَكم كانوا يَخدمونها هذه التي أُخْبِرْتُمْ بها أنتُمْ الآن، بواسطتهم الذين بَشَّروكُمْ بالرُّوح القُدُس المُرسَـلِ مِنَ السَّماءِ. التي تشتهي الملائكة أن يَطَّلِعوا عليها.", 
+  "الذين أُعلِنَ لهُمْ أنهم ليس لأنْفُسِهِمْ، بَلْ لَكم كانوا يَخدمونها هذه التي أُخْبِرْتُمْ بها أنتُمْ الآن، بواسطتهم الذين بَشَّروكُمْ بالرُّوح القُدُس المُرسَ-لِ مِنَ السَّماءِ. التي تشتهي الملائكة أن يَطَّلِعوا عليها.", 
   "12 To them it was revealed that, not to themselves, but to us they were ministering the things which now have been reported to you through those who have preached the gospel to you by the Holy Spirit sent from heaven--things which angels desire to look into.", 
   "12 Il leur fut révélé que ce n'était pas pour eux-mêmes, mais pour vous qu'ils transmettaient ce message, que maintenant les prédicateurs de l'Evangile vous ont communiqué sous l'action de l'Esprit Saint envoyé du ciel, et dans lequel les anges désirent plonger leurs regards", 
   ],
@@ -5255,13 +3503,13 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL1stSunday&C=Title", 
-  " الكاثوليكون من بطرس الرسول الثانية ( 1 : 1 ـ 11 )", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية (1 : 1-11)", 
   "2 Pierre 1 : 1 - 11", 
   "2 Peter 1:1-11", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مِنْ سِمعان بُطرس عَبدُ يسوع المسيح ورسوله، إلى الذين هم مُتساوون مَعَنا في الكرامـة بالإيمـانِ. الذي قد حسب لنا بِبِرِّ إلَهِنا ومُخلِّصنا يسوع المسيح.", 
+  "مِنْ سِمعان بُطرس عَبدُ يسوع المسيح ورسوله، إلى الذين هم مُتساوون مَعَنا في الكرام-ة بالإيم-انِ. الذي قد حسب لنا بِبِرِّ إلَهِنا ومُخلِّصنا يسوع المسيح.", 
   "1 Syméon Pierre, serviteur et apôtre de Jésus Christ, à ceux qui ont reçu, par la justice de notre Dieu et Sauveur Jésus Christ,", 
   "1 Simon Peter, a bondservant and apostle of Jesus Christ, To those who have obtained like precious faith with us by the righteousness of our God and Savior Jesus Christ:", 
   ],
@@ -5279,7 +3527,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فأضيفوا أنتم إلى ذلك عَينِهَ كل الاجتهاد لتزيدوا على إيمانكم الفضيلة، وفى الفضيلة المعرفة، وفى المعرفةِ تعفُّفـاً، وفى التَّعفُّفِ صبراً، وفى الصَّبرِ تَقوى، وفى التَّقوى مَودَّةً أخَويَّةً، وفى المودَّةِ الأخويَّةِ مَحبَّةً.", 
+  "فأضيفوا أنتم إلى ذلك عَينِهَ كل الاجتهاد لتزيدوا على إيمانكم الفضيلة، وفى الفضيلة المعرفة، وفى المعرفةِ تعفُّف-اً، وفى التَّعفُّفِ صبراً، وفى الصَّبرِ تَقوى، وفى التَّقوى مَودَّةً أخَويَّةً، وفى المودَّةِ الأخويَّةِ مَحبَّةً.", 
   "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, 6 à la maîtrise de soi la ténacité, à la ténacité la piété, 7 à la piété l'amitié fraternelle, à l'amitié fraternelle l'amour.", 
   "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness, and to brotherly kindness love.", 
   ],
@@ -5299,7 +3547,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL20&C=Title", 
-  " الكاثوليكون من معلمنا يعقوب الرسول ( 4 : 1 ـ 10 )", 
+  " الكاثوليكون من معلمنا يعقوب الرَسُولِ (4 : 1-10)", 
   "Jacques 4 : 1 – 10", 
   "James 4:1-10", 
   ],
@@ -5337,7 +3585,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL21&C=Title", 
-  " الكاثوليكون من رسالة معلمنا يهوذا الرسول ( 1 : 17 ـ 25 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ معلمنا يَهُوذَا الرَسُولِ (1 : 17-25)", 
   "Jude 1 : 17 - 25", 
   "Jude 1:17-25", 
   ],
@@ -5355,13 +3603,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللَّهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المسـيح للحياةِ الأبديَّةِ.", 
+  "مُصلِّينَ في الرُّوح القُدُس، ولنحفظَ أنفسنا في محبةِ اللَّهِ، مُنتظرينَ رحمة ربِّنا يسوعَ المس-يح للحياةِ الأبديَّةِ.", 
   "21 maintenez-vous dans l'amour de Dieu; placez votre attente dans la miséricorde de notre Seigneur Jésus Christ pour la vie éternelle.", 
   "21 keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فبكِّـتوا بعضاً ممن قضى عليهم، وخلِّصوا بعضاً، وانقذوهم مِن النَّار، وارحموا بعضاً بخوف مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
+  "فبكِّ-توا بعضاً ممن قضى عليهم، وخلِّصوا بعضاً، وانقذوهم مِن النَّار، وارحموا بعضاً بخوف مُبغضينَ حتَّى الثَّوبَ المُدنَّس مِن الجسدِ.", 
   "22 Ceux qui hésitent, prenez-les en pitié; sauvez-les en les arrachant au feu; pour les autres, prenez-les en pitié, mais avec crainte, haïssant jusqu'à la tunique souillée par leur chair. 24 A celui qui peut vous garder de toute chute", 
   "22 And on some have compassion, making a distinction; 23 but others save with fear, pulling them out of the fire, hating even the garment defiled by the flesh. 24 Now to Him who is able to keep you from stumbling,", 
   ],
@@ -5375,7 +3623,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL22&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (2:14-26)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2:14-26)", 
   "Jacques 2:14-26", 
   "James 2:14-26", 
   ],
@@ -5419,7 +3667,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL24&C=Title", 
-  " الكاثوليكون من رسالة معلمنا يعقوب الرسول( 5 : 16 ـ 20 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ معلمنا يعقوب الرسول(5 : 16-20)", 
   "Jacques 5 : 16 -20", 
   "James 5:16-20", 
   ],
@@ -5451,7 +3699,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL25&C=Title", 
-  " الكاثوليكون من بطرس الرسول الثانية ( 2 : 2 ـ 8 )", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية (2 : 2-8)", 
   "2 Pierre 2 : 2 - 8", 
   "2 Peter 2:2-8", 
   ],
@@ -5489,7 +3737,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL26&C=Title", 
-  " الكاثوليكون من رسالة معلمنا يعقوب الرسول( 3 : 13 ـ 4 : 1 ـ 4 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ معلمنا يعقوب الرسول(3 : 13-4 : 1-4)", 
   "Jacques 3:13-4:4", 
   "James 3:13-4:4", 
   ],
@@ -5533,25 +3781,25 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL27&C=Title", 
-  " الكاثوليكون من معلمنا يعقوب الرسول( 4 : 11 ـ 5 :1 ـ 3 )", 
+  " الكاثوليكون من معلمنا يعقوب الرسول(4 : 11-5 :1-3)", 
   "Jacques 4 : 11 – 5 : 3", 
   "James 4:11-5:3", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لا تغتابوا بعضُـكُم بعضاً يا أخوتي. فإن الذي يغتاب أخَاهُ أو يدينُ أخاهُ يغتاب النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموس بل ديَّاناً لهُ. وإنَّما المشترع والدَّيان واحد", 
+  "لا تغتابوا بعضُ-كُم بعضاً يا أخوتي. فإن الذي يغتاب أخَاهُ أو يدينُ أخاهُ يغتاب النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموس بل ديَّاناً لهُ. وإنَّما المشترع والدَّيان واحد", 
   "11 Ne médisez pas les uns des autres, frères. Celui qui médit d'un frère ou juge son frère médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi.", 
   "11 Do not speak evil of one another, brethren. He who speaks evil of a brother and judges his brother, speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وهو قادر أن يُخلِّص وأن يُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك؟.هلُمَّوا الآنَ أيُّها القائلون: ' ننطلق اليَوم أو غداً إلى هذهِ المدينةِ، ونقيم هناكَ سـنةً ونَتَّجِرُ ونَربحُ '.", 
+  "وهو قادر أن يُخلِّص وأن يُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك؟.هلُمَّوا الآنَ أيُّها القائلون: ' ننطلق اليَوم أو غداً إلى هذهِ المدينةِ، ونقيم هناكَ س-نةً ونَتَّجِرُ ونَربحُ '.", 
   "12 Or un seul est législateur et juge: celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain? 13 Alors, vous qui dites: 'Aujourd'hui - ou demain -, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent,", 
   "12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another? 13 Come now, you who say, Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit;", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنتُم الذينَ لا تَعلمون ماذا يكون غـداً؟ لأنَّه ما هيَ حياتُكُم؟ إنَّها هي كبُخارٌ يَظهرُ قليلاً ثُمَّ يَضمحِلُّ. عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشنا نفعلُ هذا أو ذاكَ '.", 
+  "أنتُم الذينَ لا تَعلمون ماذا يكون غ-داً؟ لأنَّه ما هيَ حياتُكُم؟ إنَّها هي كبُخارٌ يَظهرُ قليلاً ثُمَّ يَضمحِلُّ. عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشنا نفعلُ هذا أو ذاكَ '.", 
   "14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît! 15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela, vous tirez fierté de vos fanfaronnades.", 
   "14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away. 15 Instead you ought to say, If the Lord wills, we shall live and do this or that.", 
   ],
@@ -5571,7 +3819,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL28&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 4 : 7 ـ 16)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4 : 7-16)", 
   "1 Jean 4:7-16", 
   "1 John 4:7-16", 
   ],
@@ -5601,67 +3849,17 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فمَن اعترف بأن يسوع هو ابن اللَّـهِ، فإنَّ اللَّه يثبُت فيه وهو في اللَّه. ونحنُ قد عرفنا وآمنا بالمحبَّة التى للَّهِ فينا. اللَّه محبَّةٌ، فمَن يثبُت في المحبَّة، يثبُت في اللَّهِ واللَّهُ فيه.", 
+  "فمَن اعترف بأن يسوع هو ابن اللَّ-هِ، فإنَّ اللَّه يثبُت فيه وهو في اللَّه. ونحنُ قد عرفنا وآمنا بالمحبَّة التى للَّهِ فينا. اللَّه محبَّةٌ، فمَن يثبُت في المحبَّة، يثبُت في اللَّهِ واللَّهُ فيه.", 
   "15 Quiconque confesse que Jésus est le Fils de Dieu, Dieu demeure en lui et lui en Dieu. 16 Et nous, nous connaissons, pour y avoir cru, l'amour que Dieu manifeste au milieu de nous. Dieu est amour: qui demeure dans l'amour demeure en Dieu et Dieu demeure en lui", 
   "15 Whoever confesses that Jesus is the Son of God, God abides in him, and he in God. 16 And we have known and believed the love that God has for us. God is love, and he who abides in love abides in God, and God in him.", 
   ],
   ],
   [
   [
-  Prefix.katholikon+"&D=GL29&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (3 : 13 – 4 :6)", 
-  "Jacques 3 : 13 – 4 :6", 
-  "James 3:13-4:6", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "منْ هو حكيمٌ وعالمٌ بينكم، فليُرِنا أعمالَهُ بالتَّصرُّف الحَسنِ في وداعةِ الحكمةِ.", 
-  "13 Qui est sage et intelligent parmi vous? Qu'il tire de sa bonne conduite la preuve que la sagesse empreint ses actes de douceur.", 
-  "13 Who is wise and understanding among you? Let him show by good conduct that his works are done in the meekness of wisdom.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن إنْ كان لكُمْ غَيْرَةٌ مُرَّةٌ وتَحزُّبٌ في قُلوبِكُمْ، فلا تفتخِروا وتَكذِبوا على الحقِّ.", 
-  "14 Mais si vous avez le coeur plein d'aigre jalousie et d'esprit de rivalité, ne faites pas les avantageux et ne nuisez pas à la vérité par vos mensonges.", 
-  "14 But if you have bitter envy and self-seeking in your hearts, do not boast and lie against the truth.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ليست هذه الحِكمةُ نَازلةً مِنْ فوقُ، بل هيَ أرضِيَّةٌ نفسانِيَّةٌ شيطانيَّةٌ. لأنَّهُ حيثُ الغَيْرَةُ والتَّحزُّبُ، فهناك التَّشويشُ وكُلُّ أمرٍ رديءٍ. أمَّا الحكمةُ التي هي مِنْ فوقُ فهيَ أوَّلاً طاهِرةٌ، ثُمَّ مُسالِمةٌ، مُترفِّقَةٌ،", 
-  "15 Cette sagesse-là ne vient pas d'en haut; elle est terrestre, animale, démoniaque. 16 En effet, la jalousie et l'esprit de rivalité s'accompagnent de remous et de force affaires fâcheuses. 17 Mais la sagesse d'en haut est d'abord pure, puis pacifique, douce,", 
-  "15 This wisdom does not descend from above, but is earthly, sensual, demonic. 16 For where envy and self-seeking exist, confusion and every evil thing are there. 17 But the wisdom that is from above is first pure, then peaceable, gentle,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "سهلةٌ، مملوءةٌ رحمةً وثمراً صالحاً، لا تُدين ولا تُراءى. وثمرُ البِرِّ يُزرَعُ في السَّلامِ من الذين يفعلُون السَّلامِ. منْ أينَ فيكم الحُروبُ الخصوماتُ؟", 
-  "conciliante, pleine de pitié et de bons fruits, sans façon et sans fard. 18 Le fruit de la justice est semé dans la paix pour ceux qui font oeuvre de paix. 1 D'où viennent les conflits, d'où viennent les combats parmi vous?", 
-  "willing to yield, full of mercy and good fruits, without partiality and without hypocrisy. 18 Now the fruit of righteousness is sown in peace by those who make peace. 4:1 Where do wars and fights come from among you?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أليستْ مِنْ هنا: مِنْ لذَّاتِكُمُ المُحَارِبةِ في أعضائِكُمْ؟ تَشتهونَ وليس لكُم. تَقتُلونَ وتَحسِدونَ ولستُمْ تَقدِرونَ أن تنالوا. تُخاصِمونَ وتُحارِبونَ وليس لكُم شيء، لأنَّكُم لا تسألُون.", 
-  "N'est-ce pas de vos plaisirs qui guerroient dans vos membres? Vous convoitez et ne possédez pas; vous êtes meurtriers et jaloux, et ne pouvez réussir; vous combattez et bataillez. Vous ne possédez pas parce que vous n'êtes pas demandeurs", 
-  "Do they not come from your desires for pleasure that war in your members? 2 You lust and do not have. You murder and covet and cannot obtain. You fight and war. Yet you do not have because you do not ask.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "تسألُون ولستُمْ تأخُذونَ، لأنَّكُم تَطلُبونَ رَدِيّاً لكي تُنفِقوا في لذَّاتِكُم.أيُّها الزُّناةُ، أمَا تَعلَمونَ أنَّ مَحبَّةَ العالم عداوةٌ للَّهِ؟ فمَنْ أرادَ أنْ يكونَ مُحِبّاً للعالم، فقد صَارَ عَدوّاً للَّهِ.", 
-  "et ne recevez pas parce que vos demandes ne visent à rien de mieux que de dépenser pour vos plaisirs. 4 Femmes infidèles! Ne savez-vous pas que l'amitié envers le monde est hostilité contre Dieu? Celui qui veut être ami du monde se fait donc ennemi de Dieu.", 
-  "3 You ask and do not receive, because you ask amiss, that you may spend it on your pleasures. 4 Adulterers and adulteresses! Do you not know that friendship with the world is enmity with God? Whoever therefore wants to be a friend of the world makes himself an enemy of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أمْ تَظُنُّونَ أنَّ الكِتابَ يَقولُ باطِلاً: إن الرُّوحُ الذي حلَّ فينا يَشتاقُ إلى الحَسدِ؟ ولكنَّهُ يُعطي نعمةً أعظمَ. لذلكَ يقولُ: ' يُقاوِمُ اللَّهُ المُستَكبِرِينَ، وأمَّا المُتواضِعونَ فَيُعطِيهِم نِعمَةً '.", 
-  "5 Ou bien pensez-vous que ce soit pour rien que l'Écriture dit: Dieu désire jalousement l'Esprit qu'Il a fait habiter en nous? 6 Mais il fait mieux pour se montrer favorable; voilà pourquoi l'Écriture dit: Dieu résiste aux orgueilleux, mais se montre favorable aux humbles", 
-  "5 Or do you think that the Scripture says in vain, The Spirit who dwells in us yearns jealously? 6 But He gives more grace. Therefore He says: God resists the proud, But gives grace to the humble.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=GL2ndSunday&C=Title", 
-  " الكاثوليكون من يعقوب الرسول( 1 : 13 ـ 21 )", 
-  "Jacques 1 : 13 – 21", 
-  "James 1:13-21", 
+  Prefix.katholikon+"&D=GL2ndSunday||GL47&C=Title", 
+  " الكاثوليكون من يعقوب الرسول(1 : 13-21)", 
+  "Jacques (1: 13-21)", 
+  "James (1: 13-21)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5691,9 +3889,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL31&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 10 ـ 18 )", 
-  "1 Pierre 3 : 10 - 18", 
-  "1 Peter 3:10-18", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(3 : 10-18)", 
+  "1 Pierre (3: 10-18)", 
+  "1 Peter (3: 10-18)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5728,10 +3926,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL32&C=Title", 
-  " الكاثوليكون من يوحنا الرسول الأولى( 3 : 2 ـ 11 )", 
-  "1 Jean 3:2-11", 
-  "1 John 3:2-11", 
+  Prefix.katholikon+"&D=GL32||Pntl20&C=Title", 
+  " الكاثوليكون من يُوحَنَا الرَسُولِ الأولى(3 : 2-11)", 
+  "1 Jean (3: 2-11)", 
+  "1 John (3: 2-11)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5772,10 +3970,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL33&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 12 ـ 19 )", 
-  "1 Pierre 4:12-19", 
-  "1 Peter 4:12-19", 
+  Prefix.katholikon+"&D=1009||1503||2605||GL33&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 12-19)", 
+  "1 Pierre (4: 12-19)", 
+  "1 Peter (4: 12-19)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5811,9 +4009,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL34&C=Title", 
-  " الكاثوليكون من بطرس الرسول الأولى( 1 : 2 ـ 8 )", 
-  "1 Pierre 1:2-8", 
-  "1 Peter 1:2-8", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الأولى(1 : 2-8)", 
+  "1 Pierre (1: 2-8)", 
+  "1 Peter (1: 2-8)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5823,13 +4021,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لميراث لا يَفنى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ لكُم في السَّمَوات، أيُّها المحروسُون بقُوَّة اللَّـهِ بالإيمان، للخلاص المُعدّ أن يُستعلَن في الزمن الأخير.", 
+  "لميراث لا يَفنى ولا يتدنَّس ولا يضمحلُّ، محفوظٌ لكُم في السَّمَوات، أيُّها المحروسُون بقُوَّة اللَّ-هِ بالإيمان، للخلاص المُعدّ أن يُستعلَن في الزمن الأخير.", 
   "4 pour un héritage qui ne se peut corrompre, ni souiller, ni flétrir; cet héritage vous est réservé dans les cieux, à vous que la puissance de Dieu garde par la foi pour le salut prêt à se révéler au moment de la fin.", 
   "4 to an inheritance incorruptible and undefiled and that does not fade away, reserved in heaven for you, 5 who are kept by the power of God through faith for salvation ready to be revealed in the last time.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذي به تبتهجون الآن قليلاً ـ إن كان يجب ـ أن تحزنُوا بتجارب مُتنوِّعةٍ، لكي يكُون اختبار إيمانكُم كريماً أفضل مِن الذَّهب الفاني، مع كونه مُختبراً بالنَّار،", 
+  "الذي به تبتهجون الآن قليلاً-إن كان يجب-أن تحزنُوا بتجارب مُتنوِّعةٍ، لكي يكُون اختبار إيمانكُم كريماً أفضل مِن الذَّهب الفاني، مع كونه مُختبراً بالنَّار،", 
   "6 Aussi tressaillez-vous d'allégresse même s'il faut que, pour un peu de temps, vous soyez affligés par diverses épreuves, 7 afin que la valeur éprouvée de votre foi - beaucoup plus précieuse que l'or périssable qui pourtant est éprouvé par le feu -", 
   "6 In this you greatly rejoice, though now for a little while, if need be, you have been grieved by various trials, 7 that the genuineness of your faith, being much more precious than gold that perishes, though it is tested by fire,", 
   ],
@@ -5849,9 +4047,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL35&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 15 ـ 5 : 1 ـ5 )", 
-  "1 Peter 4:15-5:5", 
-  "1 Peter 4:15-5:5", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 15-5 : 1 -5)", 
+  "1 Pierre (4:15 & 5:5)", 
+  "1 Peter (4:15 & 5:5)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5873,7 +4071,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أن ارعوا رَعيَّة اللَّه التي فيكُم مُتعاهدين لها، لا عن اضطرار بل عن اختيار، كمثل اللَّه ولا لربح قبيح بل بقلب سليم، ولا كمَن يتسلَّط على ميراث اللَّـه، بل صائرينَ أمثلةً للرَّعيَّة.", 
+  "أن ارعوا رَعيَّة اللَّه التي فيكُم مُتعاهدين لها، لا عن اضطرار بل عن اختيار، كمثل اللَّه ولا لربح قبيح بل بقلب سليم، ولا كمَن يتسلَّط على ميراث اللَّ-ه، بل صائرينَ أمثلةً للرَّعيَّة.", 
   "2 Faites paître le troupeau de Dieu qui est avec vous, non par contrainte, mais volontairement selon Dieu ; ni pour un gain sordide, mais de bon coeur ; 3 non en tyrannisant ceux qui vous sont confiés, mais en devenant les modèles du troupeau ;", 
   "2 Shepherd the flock of God which is among you, serving as overseers, not by compulsion but willingly, not for dishonest gain but eagerly; 3 nor as being lords over those entrusted to you, but being examples to the flock;", 
   ],
@@ -5892,10 +4090,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL36&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (5:7-11)", 
-  "Jacques 5:7-11", 
-  "James 5:7-11", 
+  Prefix.katholikon+"&D=GL36||GL43&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5: 7-11)", 
+  "Jacques (5: 7-11)", 
+  "James (5: 7-11)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5925,9 +4123,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL38&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 4 : 7 ـ 12 )", 
-  "James 4:7-12", 
-  "James 4:7-12", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (4 : 7-12)", 
+  "James( 4: 7-12)", 
+  "James( 4: 7-12)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5951,9 +4149,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL39&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 2 : 1 )", 
-  "James 1:22-2:1", 
-  "James 1:22-2:1", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-2 : 1)", 
+  "James (1: 22 & 2:1)", 
+  "James (1: 22 & 2:1)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -5963,7 +4161,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نَسِيَ ما هُو. فأمَّا مَنْ يتَطَّلعَ في النَّامُوسِ الكامِلِ ـ نامُوس الحُرِّيَّةِ ـ وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسِياً بل عامِلاً بالكلمةِ، فهذا يَكُونُ مَغبُوطاً في عَملهِ.", 
+  "فإنَّهُ نَظرَ ذاتَهُ ومَضى، وللوقتِ نَسِيَ ما هُو. فأمَّا مَنْ يتَطَّلعَ في النَّامُوسِ الكامِلِ-نامُوس الحُرِّيَّةِ-وثَبَتَ فيه، وصَارَ ليس سامِعاً نَاسِياً بل عامِلاً بالكلمةِ، فهذا يَكُونُ مَغبُوطاً في عَملهِ.", 
   "24 et qui, après s’être regardé, s’en va et oublie aussitôt comment il est. 25 Mais celui qui a plongé les regards dans la loi parfaite, la loi de la liberté, et qui persévère, non pas en l’écoutant pour l’oublier, mais en la pratiquant activement, celui–là sera heureux dans son action même.", 
   "24 for he observes himself, goes away, and immediately forgets what kind of man he was. 25 But he who looks into the perfect law of liberty and continues in it, and is not a forgetful hearer but a doer of the work, this one will be blessed in what he does.", 
   ],
@@ -5982,10 +4180,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL3&C=Title", 
-  " الكاثوليكون من رسالة يعقوب( 2 : 1 - 13 )", 
-  "James 2:1-13", 
-  "James 2:1-13", 
+  Prefix.katholikon+"&D=GL3||GL3rdSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب(2 : 1-13)", 
+  "James (2: 1-13)", 
+  "James (2: 1-13)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6026,54 +4224,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL3rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول( 2 : 1 ـ 13 )", 
-  "Jacques 2 : 1 - 13", 
-  "James 2:1-13", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "دخل إلى مجمعِكُم رجُلٌ في إصبعه خاتم ذهبٍ بحلة بهية، ودخل أيضاً مسكين في ثوب رث، فنظرتُم إلى اللاَّبس الحلة البهية", 
-  "1 Mes frères, ne mêlez pas des cas de partialité à votre foi en notre glorieux Seigneur Jésus Christ. 2 En effet, s'il entre dans votre assemblée un homme aux bagues d'or, magnifiquement vêtu; s'il entre aussi un pauvre vêtu de haillons;", 
-  "1My brethren, do not hold the faith of our Lord Jesus Christ, the Lord of glory, with partiality. 2 For if there should come into your assembly a man with gold rings, in fine apparel, and there should also come in a poor man in filthy clothes,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وتقولون لهُ: ' اجلِس أنت ههنا حسناً '. وتقولون للمسكين: ' قِف أنتَ هُناكَ ' أو: ' اجلِس ههنا تحتَ مؤطىء الأقدام ' أفلا تكونوا قد ميزتم في أنفسكُم، وصرتم قُضاة لأفكارٍ شريرةٍ؟", 
-  "3 si vous vous intéressez à l'homme qui porte des vêtements magnifiques et lui dites: 'Toi, assieds-toi à cette bonne place'; et au pauvre vous dites: 'Toi, tiens-toi debout' ou 'Assieds-toi là-bas, au pied de mon escabeau', 4 n'avez-vous pas fait en vous-mêmes une discrimination? N'êtes-vous pas devenus des juges aux raisonnements criminels?", 
-  "3 and you pay attention to the one wearing the fine clothes and say to him, You sit here in a good place, and say to the poor man, You stand there, or, Sit here at my footstool, 4 have you not shown partiality among yourselves, and become judges with evil thoughts?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اسمعُوا يا إخوتي الأحِبَّاءَ، أمَا اختَارَ اللَّهُ مساكين هذا العالمِ وهم أغنياءَ في الإيمانِ، وورثةَ للمَلكوتِ الذي وَعَدَ بِهِ الذينَ يُحِبُّونَهُ؟ وأمَّا أنتُمْ فاهنتُمْ المسكينَ. أليسَ الأغنياءُ هم الذين يقهرونكم ويجرونَكُم إلى المَحَاكِمِ؟", 
-  "5 Écoutez, mes frères bien-aimés! N'est-ce pas Dieu qui a choisi ceux qui sont pauvres aux yeux du monde pour les rendre riches en foi et héritiers du Royaume qu'il a promis à ceux qui L'aiment? Mais vous, vous avez privé le pauvre de sa dignité. N'est-ce pas les riches qui vous oppriment? Eux encore qui vous traînent devant les tribunaux?", 
-  "5 Listen, my beloved brethren: Has God not chosen the poor of this world to be rich in faith and heirs of the kingdom which He promised to those who love Him? 6 But you have dishonored the poor man. Do not the rich oppress you and drag you into the courts?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أليس هُمْ يُجَدِّفونَ على الاسمِ الحسن الذي دُعِيَ بِهِ عَلَيكُمْ؟ فإنْ كنتُمْ تُكَمِّلونَ النَّاموسَ المُلوكِيَّ حَسبَ الكتابِ: ' تُحِبُّ قَرِيبَكَ كنَفسِكَ '. فَحسناً تَفعَلونَ. أما إن حابيتم الوجوه، تفعلونَ خَطِيئةً، إذ يوبخكم النَّاموس كمُتعَدِّينَ.", 
-  "7 N'est-ce pas eux qui diffament le beau nom qu'on invoque sur vous? 8 Certes, si vous exécutez la loi royale, conformément au texte: Tu aimeras ton prochain comme toi-même, vous agissez bien. 9 Mais si vous êtes partiaux, vous commettez un péché et la loi vous met en accusation comme transgresseurs.", 
-  "7 Do they not blaspheme that noble name by which you are called? 8 If you really fulfill the royal law according to the Scripture, You shall love your neighbor as yourself, you do well; 9 but if you show partiality, you commit sin, and are convicted by the law as transgressors.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّ مَنْ حَفِظَ النَّاموسِ كُلَّه ، وعَثَرَ في واحدةٍ، فقد صَارَ مُجرِماً في الكُلِّ. لأنَّ الذي قالَ: ' لا تَزنِ ' قال أيضاً: ' لا تقتلْ '. فإنْ لَم تَزنِ ولكن قَتلتَ فقد صِرتَ مُتعدياً للنَّاموسِ.", 
-  "10 En effet, observer toute la loi et trébucher sur un seul point, c'est se rendre passible de tout, 11 car Celui qui a dit: Tu ne commettras pas d'adultère a dit aussi: Tu n'assassineras pas et si, sans commettre d'adultère, tu commets un meurtre, tu contreviens à la loi.", 
-  "10 For whoever shall keep the whole law, and yet stumble in one point, he is guilty of all. 11 For He who said, Do not commit adultery, also said, Do not murder. Now if you do not commit adultery, but you do murder, you have become a transgressor of the law.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هكذا تَكَلَّموا وهكذا اعمَلُوا كعتيدين أن تحاكموا بِنَاموسِ الحُرِّيَّةِ. فأنَّ الدينونة بِلا رَحمةٍ تكون على مَنْ لم يَعمَلْ الرَحمَةً، والرَّحمة تفتخر على الحكم.", 
-  "12 Parlez et agissez en hommes appelés à être jugés d'après la loi de liberté. En effet, le jugement est sans pitié pour qui n'a pas eu pitié; la pitié dédaigne le jugement. 12 Parlez et agissez en hommes appelés à être jugés d'après la loi de liberté. En effet, le jugement est sans pitié pour qui n'a pas eu pitié; la pitié dédaigne le jugement.", 
-  "12 So speak and so do as those who will be judged by the law of liberty. 13 For judgment is without mercy to the one who has shown no mercy. Mercy triumphs over judgment.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=GL40&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الثانية( 1 : 20 ـ 2 : 1 ـ 6 )", 
-  "2 Peter 1:20-2:6", 
-  "2 Peter 1:20-2:6", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الثانية(1 : 20-2 : 1-6)", 
+  "2 Peter (1: 20 & 2: 6)", 
+  "2 Peter (1: 20 & 2: 6)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6095,7 +4249,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّهُ إن كانَ اللَّهُ لم يُشفِقْ على الملائكةِ الذين أَخطئوا، بل في سلاسِل الظَّلام طرحهُم في جهنَّم، وسلَّمهُم محرُوسين للقضاء، ولم يُشـفِـقْ على العـالم القديم، إنَّما حفظَ نُوحاً", 
+  "لأنَّهُ إن كانَ اللَّهُ لم يُشفِقْ على الملائكةِ الذين أَخطئوا، بل في سلاسِل الظَّلام طرحهُم في جهنَّم، وسلَّمهُم محرُوسين للقضاء، ولم يُش-فِ-قْ على الع-الم القديم، إنَّما حفظَ نُوحاً", 
   "4 Car, si Dieu n’a pas épargné les anges qui avaient péché, mais les a livrés et précipités dans des abîmes de ténèbres où ils sont retenus en vue du jugement ; 5 s’il n’a pas épargné le monde ancien, mais s’il a préservé huit personnes, dont Noé,", 
   "4 For if God did not spare the angels who sinned, but cast them down to hell and delivered them into chains of darkness, to be reserved for judgment; 5 and did not spare the ancient world, but saved Noah, one of eight people,", 
   ],
@@ -6109,9 +4263,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL41&C=Title", 
-  " الكاثوليكون من رسالة يهوذا الرسول ( 1 : 19 ـ 25 )", 
-  "Jude 1:19-25", 
-  "Jude 1:19-25", 
+  " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1 : 19-25)", 
+  "Jude (1: 19-25)", 
+  "Jude (1: 19-25)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6134,62 +4288,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL42&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى( 2 : 12 ـ 17 )", 
-  "1 John 2:12-17", 
-  "1 John 2:12-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أكتبُ إليكُم أيُّها الأبناء لأنَّهُ قد غُفِرتْ لكُمُ خطاياكُمْ مِنْ أجلِ اسمهِ. أكتُبُ إليكُمُ أيُّها الآباءُ لأنَّكُمْ قد عَرَفتُمُ الذي هُو مِن البدءِ.", 
-  "12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom. 13 Je vous écris, pères, parce que vous avez connu celui qui est dès le commencement.", 
-  "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "أكتُبُ إليكُمْ أيُّها الأحداثُ لأنَّكُمْ قد غَلبتُمُ الشِّرِّيرَ. كتبتُ إليكُم أيُّها الفتيانُ لأنَّكُمْ قد عَرَفتُمُ الآبَ. قد كَتبتُ إليكُم أيُّها الآباءُ لأنَّكُمْ قد عرَفتم الذي هُو مِنَ البدءِ.", 
-  "Je vous écris, jeunes gens, parce que vous avez vaincu le Malin. Je vous ai écrit, jeunes enfants, parce que vous avez connu le Père. 14 Je vous ai écrit, pères, parce que vous avez connu celui qui est dès le commencement.", 
-  "I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "قد كَتبتُ إليكُم أيُّها الأحداثُ لأنَّكُمْ أقوياءُ، وكلِمةُ اللَّهِ ثابتةٌ فيكُمْ، وقد غَلبتُمُ الشِّرِّيرَ. لا تحبُّوا العالمَ ولا الأشياءَ التي في العالمِ. إن أحَبَّ أحدٌ العالمَ فليست فيه مَحبَّةُ الآبِ.", 
-  "Je vous ai écrit, jeunes gens, parce que vous êtes forts, que la parole de Dieu demeure en vous et que vous avez vaincu le Malin. 15 N’aimez pas le monde, ni ce qui est dans le monde. Si quelqu’un aime le monde, l’amour du Père n’est pas en lui ;", 
-  "I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّ كُلَّ ما في العالمِ هُو: شهوةَ الجسدِ، وشهوةَ العُيونِ، وتَعظُّمَ المعيشةِ، ليسَ مِن الآبِ بل مِنْ العالمِ. والعالمُ يَمضي وشهوتُهُ، أمَّا الذي يَصنعُ مشيئةَ اللَّهِ فيثبُتُ إلى الأبدِ.", 
-  "16 car tout ce qui est dans le monde, la convoitise de la chair, la convoitise des yeux et l’orgueil de la vie, ne vient pas du Père, mais vient du monde.17 Et le monde passe, et sa convoitise aussi ; mais celui qui fait la volonté de Dieu demeure éternellement.", 
-  "16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=GL43&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (5:7-11)", 
-  "Jacques 5:7-11", 
-  "James 5:7-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فتأنَّوا أيُّها الإخوةُ إلى مجيء الربِّ. هوذا الفَّلاحُ ينتظرُ ثمرَ الأرض الكريم، مُتأنَّياً عليهِ حتى ينالَ المطر المُبكِّر والمُتأخِّر.", 
-  "7 Prenez donc patience, frères, jusqu'à la venue du Seigneur. Voyez le cultivateur: il attend le fruit précieux de la terre sans s'impatienter à son propos tant qu'il n'en a pas recueilli du précoce et du tardif.", 
-  "7 Therefore be patient, brethren, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, waiting patiently for it until it receives the early and latter rain.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فتأنَّوا أنتُم وثبِّتُوا قُلُوبكُم، لأنَّ مجيء الربِّ قد اقترب. لا يَئِنَّ بعضُكُم مِن بعض يا إخوتي لِئَلاَّ تُدانوا. هوَذا الدَّيانُ واقفٌ على الأبوابِ.", 
-  "8 Vous aussi, prenez patience, ayez le coeur ferme, car la venue du Seigneur est proche. 9 Frères, ne gémissez pas les uns contre les autres, pour éviter d'être jugés. Voyez: le juge se tient aux portes.", 
-  "8 You also be patient. Establish your hearts, for the coming of the Lord is at hand. 9 Do not grumble against one another, brethren, lest you be condemned. Behold, the Judge is standing at the door!", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=GL45&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (2:5-13 )", 
-  "Jacques 2:5-13", 
-  "James 2:5-13", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (2: 5-13)", 
+  "Jacques (2: 5-13)", 
+  "James (2: 5-13)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6219,9 +4321,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL46&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 22 ـ 2 : 1 )", 
-  "2 Pierre 3:8-15", 
-  "2 Peter 3:8-15", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1 : 22-2 : 1)", 
+  "2 Pierre (3: 8-15)", 
+  "2 Peter (3: 8-15)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6250,40 +4352,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL47&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 1 : 13 ـ 21 )", 
-  "Jacques 1 : 13-21", 
-  "James 1:13-21", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا يَقُلْ أحدٌ إذا جُرِّبَ: ' أن اللَّه قد جربني '، لأنَّ اللَّهَ غيرُ مُجرَّبٍ بالشُّرُور، وهُو لا يُجرِّبُ أحداً. بل كُلَّ واحدٍ يُجرَّبُ مِن شهوتهِ الخاصة إذا انجذبَ وانخدعَ بها.", 
-  "13 Que nul, quand il est tenté, ne dise: 'Ma tentation vient de Dieu.' Car Dieu ne peut être tenté de faire le mal et ne tente personne. Chacun est tenté par sa propre convoitise, qui l'entraîne et le séduit.", 
-  "13 Let no one say when he is tempted, I am tempted by God; for God cannot be tempted by evil, nor does He Himself tempt anyone. 14 But each one is tempted when he is drawn away by his own desires and enticed.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ثُمَّ إن الشَّهوَةُ إذا حَبلتْ تلدُ الخطيَّةُ، والخطيَّةُ إذا تمتْ تُنتجُ الموت. لا تضلُّوا يا إخوتي الأحبَّاء.إنَّ كُل عطيَّةٍ صالحةٍ وكُلُّ مَوهبةٍ كاملةٍ هي مِن فوقُ، نازلةٌ مِن عندِ أبي الأنوار،", 
-  "15 Une fois fécondée, la convoitise enfante le péché, et le péché, arrivé à la maturité, engendre la mort. Ne vous y trompez pas, mes frères bien-aimés. Tout don de valeur et tout cadeau parfait descendent d'en haut, du Père des lumières", 
-  "15 Then, when desire has conceived, it gives birth to sin; and sin, when it is full-grown, brings forth death. 16 Do not be deceived, my beloved brethren. 17 Every good gift and every perfect gift is from above, and comes down from the Father of lights,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي ليسَ عِندهُ تغييرٌ ولا شبه ظِلُّ يزول. هو شاء فَولدَنا بكلمةِ الحقِّ لنكُون باكُورةً مِن خلائقهِ.إذاً اعلمُوا يا إخوتي الأحبَّاء، ليكُن كُلُّ إنسانٍ سريعاً إلى الاستِماع، بطيئاً عن التَّكلُّم، وبطيئاً عن الغضَب،", 
-  "chez lequel il n'y a ni balancement ni ombre due au mouvement. De sa propre volonté, il nous a engendrés par la parole de vérité, afin que nous soyons pour ainsi dire les prémices de ses créatures. Vous êtes savants, mes frères bien-aimés. Pourtant, que nul ne néglige d'être prompt à écouter, lent à parler, lent à se mettre en colère,", 
-  "with whom there is no variation or shadow of turning. 18 Of His own will He brought us forth by the word of truth, that we might be a kind of firstfruits of His creatures. 19 So then, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فإن غضب الإنسان لا يعملُ برَّ اللَّهِ. لذلكَ اطرحُوا كُلَّ نجاسةٍ وكثرةَ شرٍّ، واقبلُوا بوداعةٍ الكلمةَ المغرُوسةَ ( فيكُم ) القادرةَ أن تُخلِّصَ نُفُوسكُمْ.", 
-  "20 car la colère de l'homme ne réalise pas la justice de Dieu. Aussi, débarrassés de toute souillure et de tout débordement de méchanceté, accueillez avec douceur la parole plantée en vous et capable de vous sauver la vie.", 
-  "20 for the wrath of man does not produce the righteousness of God. 21 Therefore lay aside all filthiness and overflow of wickedness, and receive with meekness the implanted word, which is able to save your souls.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=GL48&C=Title", 
-  " الكاثوليكون من يوحنا الرسول الأولى ( 3 : 13 ـ 24 )", 
+  " الكاثوليكون من يُوحَنَا الرَسُولِ الأُولَى (3 : 13-24)", 
   "1 Jean 3 : 13-24", 
   "1 John 3:13-24", 
   ],
@@ -6301,7 +4371,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأغلقَ أحشاءهُ عنهُ، فكيفَ تَثبُتُ محبَّةُ اللَّـهِ فيهِ؟ يا أَوْلاَدِي، لا نُحِبَّ بالكَلاَمِ ولا بِاللِّسَانِ، بلْ بالعَمَلِ والحَقِّ! وبهذَا نَعْرِفُ إنَّنا مِن الحَقِّ ونُقنِعُ قُلُوبَنَا أمامه. وإنَّ كان قلبُنا يُبكتنا", 
+  "وأغلقَ أحشاءهُ عنهُ، فكيفَ تَثبُتُ محبَّةُ اللَّ-هِ فيهِ؟ يا أَوْلاَدِي، لا نُحِبَّ بالكَلاَمِ ولا بِاللِّسَانِ، بلْ بالعَمَلِ والحَقِّ! وبهذَا نَعْرِفُ إنَّنا مِن الحَقِّ ونُقنِعُ قُلُوبَنَا أمامه. وإنَّ كان قلبُنا يُبكتنا", 
   "et qu'il se ferme à toute compassion, comment l'amour de Dieu demeurerait-il en lui? Mes petits enfants, n'aimons pas en paroles et de langue, mais en actes et dans la vérité; à cela nous reconnaîtrons que nous sommes de la vérité, et devant lui nous apaiserons notre cœur, car, si notre cœur nous accuse,", 
   "and shuts up his heart from him, how does the love of God abide in him? 18 My little children, let us not love in word or in tongue, but in deed and in truth. 19 And by this we know that we are of the truth, and shall assure our hearts before Him. 20 For if our heart condemns us,", 
   ],
@@ -6321,7 +4391,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL49&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (5:7-16)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (5:7-16)", 
   "Jacques 5:7-16", 
   "James 5:7-16", 
   ],
@@ -6365,13 +4435,13 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL4&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 4 : 3 - 11)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأولى(4 : 3-11)", 
   "1 Peter 4:3-11", 
   "1 Peter 4:3-11", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّه قد يكفيكم الزَّمان الذي عبر إذ كنتم تعملون فيه هوى الأُمم، متسكعين في الدَّعارة والشَّهوات، والمُسكرات بأنواع كثيرة، واللهو، والدنس، والغواية وعبادة الأوثان ( المُحرَّمة)،", 
+  "لأنَّه قد يكفيكم الزَّمان الذي عبر إذ كنتم تعملون فيه هوى الأُمم، متسكعين في الدَّعارة والشَّهوات، والمُسكرات بأنواع كثيرة، واللهو، والدنس، والغواية وعبادة الأوثان (المُحرَّمة)،", 
   "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes.", 
   "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.", 
   ],
@@ -6403,7 +4473,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL4thSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول ( 3 : 1 ـ 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (3 : 1-12)", 
   "Jacques 3 : 1 - 12", 
   "James 3:1-12", 
   ],
@@ -6421,19 +4491,19 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هوذا نارٌ قليلةٌ، تُحْرِقُ وقُوداً كثيرة ؟ فاللِّسانُ هو نارٌ! وزيته الإثم. جُعِلَ اللِّسانُ في أعضائِنا ، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ بلادنا ( الكون )، ويُضرَمُ مِن جَهنَّمَ.", 
+  "هوذا نارٌ قليلةٌ، تُحْرِقُ وقُوداً كثيرة ؟ فاللِّسانُ هو نارٌ! وزيته الإثم. جُعِلَ اللِّسانُ في أعضائِنا ، وهو يُدنِّسُ الجسد كُلَّهُ، ويحرق دَائِرَةَ بلادنا (الكون)، ويُضرَمُ مِن جَهنَّمَ.", 
   "Voyez comme il faut peu de feu pour faire flamber une vaste forêt! 6 La langue aussi est un feu, le monde du mal; la langue est installée parmi nos membres, elle qui souille le corps entier, qui embrase le cycle de la nature, qui est elle-même embrasée par la géhenne.", 
   "See how great a forest a little fire kindles! 6 And the tongue is a fire, a world of iniquity. The tongue is so set among our members that it defiles the whole body, and sets on fire the course of nature; and it is set on fire by hell.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كلَّ طبيعة الوحوش والطُّيور والزَّحَّافاتِ وما في البحار يُذلَّلُ، وقد تَذلَّلَ للطبيعةِ البشريَّةِ. وأمَّا اللِّسان، فلا يستطيعُ أحدٌ في النَّاسِ أن يُقمعه. هو شرٌّ لا يُضبط، مملوءٌ سماً مُميتاً. به نُبارِك اللَّـهُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ صنعهم اللَّه على مثاله.", 
+  "لأنَّ كلَّ طبيعة الوحوش والطُّيور والزَّحَّافاتِ وما في البحار يُذلَّلُ، وقد تَذلَّلَ للطبيعةِ البشريَّةِ. وأمَّا اللِّسان، فلا يستطيعُ أحدٌ في النَّاسِ أن يُقمعه. هو شرٌّ لا يُضبط، مملوءٌ سماً مُميتاً. به نُبارِك اللَّ-هُ الآبَ، وبهِ نلعَنُ النَّاسَ الذينَ صنعهم اللَّه على مثاله.", 
   "7 Il n'est pas d'espèce, aussi bien de bêtes fauves que d'oiseaux, aussi bien de reptiles que de poissons, que l'espèce humaine n'arrive à dompter. Mais la langue, nul homme ne peut la dompter: fléau fluctuant, plein d'un poison mortel! Avec elle nous bénissons le Seigneur et Père; avec elle aussi nous maudissons les hommes, qui sont à l'image de Dieu;", 
   "7 For every kind of beast and bird, of reptile and creature of the sea, is tamed and has been tamed by mankind. 8 But no man can tame the tongue. It is an unruly evil, full of deadly poison. 9 With it we bless our God and Father, and with it we curse men, who have been made in the similitude of God.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! فلا ينبغي يا إخوتي أن يكونَ الأمرُ هكذا! ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ ( الملح ) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً.", 
+  "مِن الفم الواحدِ تخرجُ البركةُ واللعنةُ! فلا ينبغي يا إخوتي أن يكونَ الأمرُ هكذا! ألعلَّ يَنبوعاً يفيض العذبَ والمُرَّ (الملح) من ذات العين الواحدة ؟ أم هل يمكن يا إخوتي أن تثمر شجرة تين زيتوناً، أو الكرمةٌ تيناً؟ وكذلكَ المالح لا يمكن أن يصير عذباً.", 
   "10 de la même bouche sortent bénédiction et malédiction. Mes frères, il ne doit pas en être ainsi.11 La source produit-elle le doux et l'amer par le même orifice? Un figuier, mes frères, peut-il donner des olives, ou une vigne des figues? Une source saline ne peut pas non plus donner d'eau douce.", 
   "10 Out of the same mouth proceed blessing and cursing. My brethren, these things ought not to be so. 11 Does a spring send forth fresh water and bitter from the same opening? 12 Can a fig tree, my brethren, bear olives, or a grapevine bear figs? Thus no spring yields both salt water and fresh.", 
   ],
@@ -6441,8 +4511,8 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL50&C=Title", 
-  " الكاثوليكون رسالة بطرس الرسول الأولى ( 1 : 25 ـ 2 : 1 ـ 6 )", 
-  "1 Pierre 1:25 - 2:1-6", 
+  " الكاثوليكون رسالة بُطْرُسِ الرَسُولِ الأُولَى (1 : 25-2 : 1-6)", 
+  "1 Pierre 1:25 - (2: 1-6)", 
   "1 Peter 1:25-2:6", 
   ],
   [
@@ -6453,13 +4523,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكي تَنمُوا بهِ للخلاصِ. إن كُنتُم قَد ذُقتُم أنَّ الربَّ صالحٌ. الذي إذ تأتُونَ إليهِ، حجراً حيَّـاً مَرذولاً مِن النَّاس، ولكن مُختارٌ مِن اللَّـهِ كَريمٌ. كونوا أنتُم أيضاً مَبنِيِّيـنَ ـ كحجارةٍ حيَّةٍ ـ بيتـاً روحياً،", 
+  "لكي تَنمُوا بهِ للخلاصِ. إن كُنتُم قَد ذُقتُم أنَّ الربَّ صالحٌ. الذي إذ تأتُونَ إليهِ، حجراً حيَّ-اً مَرذولاً مِن النَّاس، ولكن مُختارٌ مِن اللَّ-هِ كَريمٌ. كونوا أنتُم أيضاً مَبنِيِّي-نَ-كحجارةٍ حيَّةٍ-بيت-اً روحياً،", 
   "par lui, vous grandissiez pour le salut, si vous avez goûté que le Seigneur est bon. Approchez-vous de lui, pierre vivante, rejetée par les hommes mais choisie et précieuse devant Dieu. Vous-mêmes, comme des pierre vivantes, entrez dans la construction de la Maison habitée par l'Esprit,", 
   "that you may grow thereby, 3 if indeed you have tasted that the Lord is gracious. 4 Coming to Him as to a living stone, rejected indeed by men, but chosen by God and precious, 5 you also, as living stones, are being built up a spiritual house,", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كهنوتاً مُقدَّساً، لتَقدِيم ذبائحَ روحيَّةٍ مقبولةٍ عِندَ اللَّهِ بيسوعَ المسيح. لأنَّهُ مكُتوبٌ في الكتاب: ' هأنذا أضعُ في صِهيونَ حَجَر زاوية مُختاراً كريمـاً، الذي يُؤمنُ بهِ لَنْ يُخـزَى '.", 
+  "كهنوتاً مُقدَّساً، لتَقدِيم ذبائحَ روحيَّةٍ مقبولةٍ عِندَ اللَّهِ بيسوعَ المسيح. لأنَّهُ مكُتوبٌ في الكتاب: ' هأنذا أضعُ في صِهيونَ حَجَر زاوية مُختاراً كريم-اً، الذي يُؤمنُ بهِ لَنْ يُخ-زَى '.", 
   "pour constituer une sainte communauté sacerdotale, pour offrir des sacrifices spirituels, agréables à Dieu par Jésus Christ.Car on trouve dans l'Ecriture: Voici, je pose en Sion une pierre angulaire, choisie et précieuse, et celui qui met en elle sa confiance ne sera pas confondu.", 
   "a holy priesthood, to offer up spiritual sacrifices acceptable to God through Jesus Christ. 6 Therefore it is also contained in the Scripture, Behold, I lay in Zion A chief cornerstone, elect, precious, And he who believes on Him will by no means be put to shame.", 
   ],
@@ -6467,7 +4537,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL5&C=Title", 
-  " الكاثوليكون من رسالة بطرس الثانية ( 1 : 4 ـ 11 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الثانية (1 : 4-11)", 
   "2 Peter 1:4-11", 
   "2 Peter 1:4-11", 
   ],
@@ -6479,7 +4549,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولهذا عينه ـ وأنتم باذِلُون كل اجتهادٍ ـ قـدِّموا في إيمانكم فضيلةً، وفى الفضيلة معرفةً، وفى المعرفة تعفُّفـاً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً،", 
+  "ولهذا عينه-وأنتم باذِلُون كل اجتهادٍ-ق-دِّموا في إيمانكم فضيلةً، وفى الفضيلة معرفةً، وفى المعرفة تعفُّف-اً، وفى التَّعفُّف صبراً، وفى الصَّبر تقوى، وفى التَّقوى مودَّة أخويَّةً،", 
   "5 Et pour cette raison même, concentrant tous vos efforts, joignez à votre foi la vertu, à la vertu la connaissance, à la connaissance la maîtrise de soi, à la maîtrise de soi la ténacité, à la ténacité la piété, 7 à la piété l'amitié fraternelle,", 
   "5 But also for this very reason, giving all diligence, add to your faith virtue, to virtue knowledge, 6 to knowledge self-control, to self-control perseverance, to perseverance godliness, 7 to godliness brotherly kindness,", 
   ],
@@ -6498,46 +4568,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL5thSunday&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (4 :7 - 17 )", 
-  "Jacques 4 :7 - 17", 
-  "James 4:7-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فاخضعوا إذاً للَّهِ. قاوِموا إبلِيسَ فيَهرُبَ مِنكُمْ. اقتربوا إلى اللَّهِ فيَقترِبَ إليكُمْ. نَقُّوا أيدِيكُمْ أيُّها الخُطاةُ، وطَهِّرُوا قُلوبَكُم يا ذوي الرَّأيَينِ.", 
-  "7 Soumettez-vous donc à Dieu; mais résistez au diable et il fuira loin de vous; 8 approchez-vous de Dieu et il s'approchera de vous. Nettoyez vos mains, pécheurs, et purifiez vos coeurs, hommes partagés!", 
-  "7 Therefore submit to God. Resist the devil and he will flee from you. 8 Draw near to God and He will draw near to you. Cleanse your hands, you sinners; and purify your hearts, you double-minded.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اكتئبوا ونُوحُوا وابْكُوا. لِيَتَحوَّلْ ضَحِكُكُمْ إلى نوحٍ، وفَرَحُكُمْ إلى غَمٍّ. اتَّضِعُوا أمام الربِّ فَيَرفَعَكُم. لا يَذُمَّ بَعضُكُمْ بعضاً أيُّها الإخوَةُ فإن الذي يَذُمُّ أخَاهُ ويُدينُ أخاهُ", 
-  "9 Reconnaissez votre misère, prenez le deuil, pleurez; que votre rire se change en deuil et votre joie en abattement! Humiliez-vous devant le Seigneur, et Il vous élèvera. 11 Ne médisez pas les uns des autres, frères. Celui qui médit d'un frère ou juge son frère", 
-  "9 Lament and mourn and weep! Let your laughter be turned to mourning and your joy to gloom. 10 Humble yourselves in the sight of the Lord, and He will lift you up. 11 Do not speak evil of one another, brethren. He who speaks evil of a brother and judges his brother,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يَذُمُّ النَّاموسَ ويُدينُ النَّاموسَ. فإن كُنتَ تَدينُ النَّاموسَ، فَلستَ عَامِلاً بالنَّاموسِ، بلْ دَيَّاناً لهُ. واحدٌ هو واضِعُ النَّاموسِ، القادرُ أن يُخَلِّصَ ويُهلِكَ. فمَن أنتَ يا مَن تَدينُ قريبك ( غيركَ )؟.هَلُموا الآنَ أيُّها القائِلونَ: '", 
-  "médit d'une loi et juge une loi; mais si tu juges une loi, tu agis en juge et non en réalisateur de la loi.12 Or un seul est législateur et juge: celui qui peut sauver et perdre. Qui es-tu, toi, pour juger le prochain?13 Alors, vous qui dites:", 
-  "speaks evil of the law and judges the law. But if you judge the law, you are not a doer of the law but a judge. 12 There is one Lawgiver, who is able to save and to destroy. Who are you to judge another? 13 Come now, you who say,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "نَذهبُ اليَومَ أو غَداً إلى هذهِ المدينةِ، ونقيم هناكَ سـَنَةً ونَتَّجِرُ ونَرْبَحُ '. أنتُم الذينَ لا تَعرِفُونَ ماذا يكون غـداً! لأنَّهُ ما هيَ حياتُكُم؟ إنَّها بخار، يَظهَرُ قليلاً ثُمَّ يَضمحِلُّ.", 
-  "'Aujourd'hui - ou demain-, nous irons dans telle ville, nous y passerons un an, nous ferons du commerce, nous gagnerons de l'argent, 14 et qui ne savez même pas, le jour suivant, ce que sera votre vie, car vous êtes une vapeur, qui paraît un instant et puis disparaît!", 
-  "Today or tomorrow we will go to such and such a city, spend a year there, buy and sell, and make a profit; 14 whereas you do not know what will happen tomorrow. For what is your life? It is even a vapor that appears for a little time and then vanishes away.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عِوَضَ أن تقولوا: ' إنْ شاءَ الربُّ وعِشْنَا نَفعَلُ هذا أو ذاكَ '. لكنَّكُمْ تَفتَخِرونَ بتعَظُّمِكُم. وكُلُّ افتخارٍ مِثلُ هذا رديءٌ. فمَن يَعرِفُ أنْ يَعمَلَ حَسَناً ولا يَعمَلُ، فذلكَ خَطيَّةٌ لهُ.", 
-  "15 Au lieu de dire: 'Si le Seigneur le veut bien, nous vivrons et ferons ceci ou cela', 16 vous tirez fierté de vos fanfaronnades. Toute fierté de ce genre est mauvaise. 17 Qui donc sait faire le bien et ne le fait pas se charge d'un péché.", 
-  "15 Instead you ought to say, If the Lord wills, we shall live and do this or that. 16 But now you boast in your arrogance. All such boasting is evil. 17 Therefore, to him who knows to do good and does not do it, to him it is sin", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=GL6&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى(1 : 8 – 2 : 11)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(1 : 8 – 2 : 11)", 
   "1 John 1:8-2:11", 
   "1 John 1:8-2:11", 
   ],
@@ -6587,7 +4619,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL6thSunday&C=Title", 
-  " الكاثوليكون من بطرس الرسول الثانية( 3 : 1 ـ 18 )", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الثانية(3 : 1-18)", 
   "2 Pierre 3:1 -18", 
   "2 Peter 3:1-18", 
   ],
@@ -6661,7 +4693,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL7&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الثالثة ( 1 : 1 - 14 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثالثة (1 : 1-14)", 
   "3 John 1:1-14", 
   "3 John 1:1-14", 
   ],
@@ -6673,13 +4705,13 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقد فَرِحتُ جداً لما قدم الإخوةُ وشَهِدوا بصدقكَ كما أنَّت سالُكُ في الحقِّ. وليسَ لي سرور أعظمَ مِن هذا أَنْ أسمعَ عن أولادي أنهُم سالُكُونَ في الحـقِّ. أيُّها الحبيبُ أنتَ تعمـلُ بالأمانةِ كُلَّ ما تَصنعُهُ بالأخوة والغُرباءِ", 
+  "فقد فَرِحتُ جداً لما قدم الإخوةُ وشَهِدوا بصدقكَ كما أنَّت سالُكُ في الحقِّ. وليسَ لي سرور أعظمَ مِن هذا أَنْ أسمعَ عن أولادي أنهُم سالُكُونَ في الح-قِّ. أيُّها الحبيبُ أنتَ تعم-لُ بالأمانةِ كُلَّ ما تَصنعُهُ بالأخوة والغُرباءِ", 
   "3 J'ai, en effet, éprouvé une très grande joie, car des frères arrivés ici rendent témoignage à la vérité qui transparaît dans ta vie: toi, tu marches dans la lumière de la vérité. Ma plus grande joie, c'est d'apprendre que mes enfants marchent dans la lumière de la vérité. Cher ami, tu agis selon ta foi dans les soins que tu prends pour les frères, et cela pour des étrangers.", 
   "3 For I rejoiced greatly when brethren came and testified of the truth that is in you, just as you walk in the truth. 4 I have no greater joy than to hear that my children walk in truth. 5 Beloved, you do faithfully whatever you do for the brethren and for strangers,", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذين شَهِدوا بِمَحَبَّتِكَ أمامَ الكنيسـةِ، وتفعل حسناً إذا شَيَّعتَهُمْ كما يَحقُّ للَّـهِ لأنهم مِن أجلِ اسمِهِ خَرَجوا ولم يَأخُذوا مِن الأُمَم شيئاً.", 
+  "الذين شَهِدوا بِمَحَبَّتِكَ أمامَ الكنيس-ةِ، وتفعل حسناً إذا شَيَّعتَهُمْ كما يَحقُّ للَّ-هِ لأنهم مِن أجلِ اسمِهِ خَرَجوا ولم يَأخُذوا مِن الأُمَم شيئاً.", 
   "6 Ils ont rendu devant l'Eglise témoignage à ta charité. Tu agiras bien en pourvoyant à leur mission d'une manière digne de Dieu. Car c'est pour le Nom qu'ils se sont mis en route, sans rien recevoir des païens.", 
   "6 who have borne witness of your love before the church. If you send them forward on their journey in a manner worthy of God, you will do well, 7 because they went forth for His name's sake, taking nothing from the Gentiles.", 
   ],
@@ -6697,7 +4729,7 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أيُّها الحبيبُ لا تتمثَّلْ بالشَّرِّ بل بالخيرِ، لأنَّ مَنْ يصنعُ الخيرَ هو مِنَ اللَّـهِ ومَنْ يصنعُ الشَّرَّ لمْ يرَ اللَّـهَ.أمَّا ديمتريوسُ فمشهودٌ لهُ مِنَ الجميع ومِنَ الحقِّ نَفْسِهِ ونَحنُ أيضاً نشهَدُ له وأنت تَعْلَمُ أنَّ شهادتَنا حقُّ.", 
+  "أيُّها الحبيبُ لا تتمثَّلْ بالشَّرِّ بل بالخيرِ، لأنَّ مَنْ يصنعُ الخيرَ هو مِنَ اللَّ-هِ ومَنْ يصنعُ الشَّرَّ لمْ يرَ اللَّ-هَ.أمَّا ديمتريوسُ فمشهودٌ لهُ مِنَ الجميع ومِنَ الحقِّ نَفْسِهِ ونَحنُ أيضاً نشهَدُ له وأنت تَعْلَمُ أنَّ شهادتَنا حقُّ.", 
   "11 Cher ami, ne prends pas exemple sur le mal mais sur le bien. Celui qui fait le bien est de Dieu. Quant à Démétrius, tout le monde lui rend un bon témoignage. La vérité elle-même témoigne pour lui. Mais nous aussi, nous lui rendons témoignage, et tu sais que notre témoignage est vrai.", 
   "11 Beloved, do not imitate what is evil, but what is good. He who does good is of God, but he who does evil has not seen God. 12 Demetrius has a good testimony from all, and from the truth itself. And we also bear witness, and you know that our testimony is true.", 
   ],
@@ -6710,10 +4742,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL7thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 13 ـ 21 )", 
-  "1 Jean 5 : 13 - 21", 
-  "1 John 5:13-21", 
+  Prefix.katholikon+"&D=1901||GL7thSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 13-21)", 
+  "1 Jean (5:13-21)", 
+  "1 John (5:13-21)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6754,14 +4786,14 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL8&C=Title", 
-  " الكاثوليكون من رسالة يعقوب الرسول (1:1-12)", 
-  "Jacques 1:1-12", 
-  "James 1:1-12", 
+  Prefix.katholikon+"&D=GL||GL11||2703||1712&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يعقوب الرَسُولِ (1: 1-12)", 
+  "Jacques (1: 1-12)", 
+  "James (1: 1-12)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّـتَاتِ. احسبُوهُ كلِّ فرحٍ يا أخوتي حينما تقَعُون في تجارب مُتَنوِّعةٍ،", 
+  "يعقوبُ، عبدُ اللَّهِ وربِّنا يسوعَ المسيح، يُهدي السَّلامَ إلى الأسباط الاثني عشرَ الذينَ في الشَّ-تَاتِ. احسبُوهُ كلِّ فرحٍ يا أخوتي حينما تقَعُون في تجارب مُتَنوِّعةٍ،", 
   "1 Jacques, serviteur de Dieu et du Seigneur Jésus Christ, aux douze tribus vivant dans la dispersion, salut. Prenez de très bon cœur, mes frères, toutes les épreuves par lesquelles vous passez,", 
   "1:1 James, a bondservant of God and of the Lord Jesus Christ, To the twelve tribes which are scattered abroad: Greetings. 2 My brethren, count it all joy when you fall into various trials,", 
   ],
@@ -6792,60 +4824,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=GL8thSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 4 : 1 ـ 11 )", 
-  "1 Pierre 4 : 1-11", 
-  "1 Peter 4:1-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فإذ قَدْ تألَّم المسيح لأجلنا بالجسدِ، فتسلَّحوا أنتُم أيضاً بهذا المثال. لأنَّ الذي قد تألَّم بِالجَسَدِ، فقد شفى نفسه من الخَطِيَّة، لكي لا يكون بعد في شهوات البشر بل يقضي بَاقِي حياته بالجَسَدِ بهوى اللَّه.", 
-  "1 Ainsi, puisque le Christ a souffert dans la chair, vous aussi armez-vous de la même conviction: celui qui a souffert dans la chair a rompu avec le péché,2 pour vivre le temps qui lui reste à passer dans la chair non plus selon les convoitises des hommes, mais selon la volonté de Dieu.", 
-  "1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لأنَّه يكفيكم ذاك الزَّمان الذي عبر إذ كنتم تعملون بهوى الأُمم، متسكعين في الدعارة والشَّهواتِ، وإدمانِ الخمر بأنواع كثيرة، والبطر والمنادمات واللهو، والدَّنس، وعِبادة الأوثان ( المُحرَّمة )،", 
-  "3 C'est bien assez, en effet, d'avoir accompli dans le passé la volonté des païens, en vivant dans la débauche, les convoitises, l'ivrognerie, les orgies, les beuveries et les idolâtries infâmes.", 
-  "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الأمر الذي فيه يَستغرِبونَ أنَّكُم لستُم تركضون معهم إلى إنهراق عدم الصَّحة عينها، لأنهم يُجدِّفونَ. أولئك الذين سيعطون الجواب للمستعد أنْ يدين الأحياء والأموات.", 
-  "4 A ce propos, ils trouvent étrange que vous ne couriez plus avec eux vers la même débauche effrénée, et ils vous outragent. 5 Mais ils en rendront compte à celui qui est prêt à juger les vivants et les morts.", 
-  "4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فإنَّه من أجْل هذا قد بُشِّرَ الأموات أيضاً، كي يُدانوا مثل النَّاس بِالجَسَدِ، ويحيوا مثل اللَّه بالرُّوح.وإنَّما نِهايةُ كُلِّ شيءٍ قد اقتربتْ، فَتَعقَّلوا واصحوا للصَّلوات.", 
-  "6 C'est pour cela, en effet, que même aux morts la bonne nouvelle a été annoncée, afin que, jugés selon les hommes dans la chair, ils vivent selon Dieu par l'Esprit. 7 La fin de toutes choses est proche. Montrez donc de la sagesse et soyez sobres afin de pouvoir prier.", 
-  "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن قبل كُلِّ شيءٍ، لتكن المحبَّة دائمةً فيكُم بَعضكُم لبعضٍ، لأنَّ المَحبَّة تغطي كثرة الخطايا. وكونوا مُحبِّين الضيافة بعضكم لبعضٍ وتكونوا بغير تذمر", 
-  "8 Ayez avant tout un amour constant les uns pour les autres, car l'amour couvre une multitude de péchés. Pratiquez l'hospitalité les uns envers les autres, sans murmurer.", 
-  "8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كلُّ واحد وواحد فحسب النعمة التي أخذها تخدمون بها من تلقاء نفوسكم. كوكلاء صالحين بنعمة اللَّه ذات الأنواع الكثيرة.", 
-  "10 Mettez-vous, chacun selon le don qu'il a reçu, au service les uns des autres, comme de bons administrateurs de la grâce de Dieu, variée en ses effets.", 
-  "10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ومَن يتكلَّم فعلى حسب أقوال اللَّه. ومَن يخدم فعلى حسب القوَّة المهيأة من اللَّه، لكي ما يَتمَجَّدَ اللَّهُ في كُلِّ شيءٍ بيسوع المسيح، ذلك الذي لهُ المَجْدُ والعز إلى أبد الآبِدينَ. آمين.", 
-  "11 Si quelqu'un parle, que ce soit pour transmettre les paroles de Dieu; si quelqu'un assure le service, que ce soit avec la force que Dieu accorde, afin que par Jésus Christ Dieu soit totalement glorifié, lui à qui appartiennent gloire et domination pour les siècles des siècles, Amen!", 
-  "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=Pntl10&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 1 - 6 )", 
-  "1 John 2:1-6", 
-  "1 John 2:1-6", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 1-6)", 
+  "1 John (2: 1-6)", 
+  "1 John (2: 1-6)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6869,9 +4851,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl11&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى(2 : 7 ـ 10 )", 
-  "1 John 2:7-10", 
-  "1 John 2:7-10", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأولى(2 : 7-10)", 
+  "1 John (2: 7-10)", 
+  "1 John (2: 7-10)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6895,9 +4877,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl12&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 11 – 14 )", 
-  "1 John 2:11-14", 
-  "1 John 2:11-14", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 11 – 14)", 
+  "1 John (2: 11-14)", 
+  "1 John (2: 11-14)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6920,10 +4902,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=Pntl13&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى (2:21-25)", 
-  "1 John 2:21-25", 
-  "1 John 2:21-25", 
+  Prefix.katholikon+"&D=Pntl13||Pntl17&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2: 21-25)", 
+  "1 John (2: 21-25)", 
+  "1 John (2: 21-25)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6947,9 +4929,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl15&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الإولى( 2 :15-17)", 
-  "1 John 2:15-17", 
-  "1 John 2:15-17", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(2 :15-17)", 
+  "1 John (2: 15-17)", 
+  "1 John (2: 15-17)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6967,9 +4949,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl16&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 18 - 23)", 
-  "1 John 2:18-23", 
-  "1 John 2:18-23", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (2 : 18-23)", 
+  "1 John (2: 18-23)", 
+  "1 John (2: 18-23)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -6992,36 +4974,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=Pntl17&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 21 - 25 )", 
-  "1 John 2:21-25", 
-  "1 John 2:21-25", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لم اكتب اليكم لانكم لستم تعلمون الحق بل لانكم تعلمونه وان كل كذب ليس من الحق.من هو الكذاب الا الذي ينكر ان يسوع هو المسيح.هذا هو ضد المسيح الذي ينكر الآب والابن.", 
-  "21 Je ne vous ai pas écrit que vous ne savez pas la vérité, mais que vous la savez, et que rien de ce qui est mensonge ne provient de la vérité. 22 Qui est le menteur, sinon celui qui nie que Jésus est le Christ? Voilà l'antéchrist, celui qui nie le Père et le Fils.", 
-  "21 I have not written to you because you do not know the truth, but because you know it, and that no lie is of the truth. 22 Who is a liar but he who denies that Jesus is the Christ? He is antichrist who denies the Father and the Son.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كل من ينكر الابن ليس له الآب ايضا ومن يعترف بالابن فله الآب ايضا اما انتم فما سمعتموه من البدء فليثبت اذا فيكم.ان ثبت فيكم ما سمعتموه من البدء فانتم ايضا تثبتون في الابن وفي الآب.", 
-  "23 Quiconque nie le Fils n'a pas non plus le Père; qui confesse le Fils a le Père, aussi. Pour vous, que le message entendu dès le commencement demeure en vous. S'il demeure en vous, le message entendu dès le commencement, vous aussi, vous demeurerez dans le Fils et dans le Père;", 
-  "23 Whoever denies the Son does not have the Father either; he who acknowledges the Son has the Father also. 24 Therefore let that abide in you which you heard from the beginning. If what you heard from the beginning abides in you, you also will abide in the Son and in the Father.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وهذا هو الوعد الذي وعدنا هو به الحياة الابدية.", 
-  "25 et telle est la promesse que lui-même nous a faite, la vie éternelle.", 
-  "25 And this is the promise that He has promised us--eternal life.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=Pntl18&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 2 : 26 – 3 : 1)", 
-  "1 John 2:26-3:1", 
-  "1 John 2:26-3:1", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(2 : 26 – 3 : 1)", 
+  "1 John (2:26-3:1)", 
+  "1 John (2:26-3:1)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -7045,9 +5001,9 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl19&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 3 : 2 - 3 )", 
-  "1 John 3:2-3", 
-  "1 John 3:2-3", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (3 : 2-3)", 
+  "1 John (3: 2-3)", 
+  "1 John (3: 2-3)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -7058,154 +5014,10 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=Pntl1&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الإولى( 2 :11-25)", 
-  "1 Pierre 2:11 à la fin.", 
-  "1 Peter 2:11-25", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاحباء اطلب اليكم كغرباء ونزلاء ان تمتنعوا عن الشهوات الجسدية التي تحارب النفس وان تكون سيرتكم بين الامم حسنة لكي يكونوا في ما يفترون عليكم كفاعلي شر", 
-  "11 Bien-aimés, je vous exhorte, comme des gens de passage et des étrangers, à vous abstenir des convoitises charnelles, qui font la guerre à l'âme. 12 Ayez une belle conduite parmi les païens, afin que, sur le point même où ils vous calomnient comme malfaiteurs,", 
-  "11 Beloved, I beg you as sojourners and pilgrims, abstain from fleshly lusts which war against the soul, 12 having your conduct honorable among the Gentiles, that when they speak against you as evildoers, they may,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يمجدون الله في يوم الافتقاد من اجل اعمالكم الحسنة التي يلاحظونها. فاخضعوا لكل ترتيب بشري من اجل الرب.ان كان للملك فكمن هو فوق الكل", 
-  "ils soient éclairés par vos bonnes oeuvres et glorifient Dieu au jour de sa venue. 13 Soyez soumis à toute institution humaine, à cause du Seigneur; soit au roi, en sa qualité de souverain,", 
-  "by your good works which they observe, glorify God in the day of visitation. 13 Therefore submit yourselves to every ordinance of man for the Lord's sake, whether to the king as supreme,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "او للولاة فكمرسلين منه للانتقام من فاعلي الشر وللمدح لفاعلي الخير. لان هكذا هي مشيئة الله ان تفعلوا الخير فتسكّتوا جهالة الناس الاغبياء .كاحرار وليس كالذين الحرية عندهم سترة للشر", 
-  "14 soit aux gouverneurs, délégués par lui pour punir les malfaiteurs et louer les gens de bien. Car c'est la volonté de Dieu qu'en faisant le bien vous réduisiez au silence l'ignorance des insensés. 16 Comportez-vous en hommes libres, sans utiliser la liberté comme un voile pour votre méchanceté,", 
-  "14 or to governors, as to those who are sent by him for the punishment of evildoers and for the praise of those who do good. 15 For this is the will of God, that by doing good you may put to silence the ignorance of foolish men- 16 as free, yet not using liberty as a cloak for vice,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بل كعبيد الله. اكرموا الجميع.احبوا الاخوة.خافوا الله.اكرموا الملك ايها الخدام كونوا خاضعين بكل هيبة للسادة ليس للصالحين المترفقين فقط بل للعنفاء ايضا.", 
-  "mais agissez en serviteurs de Dieu. 17 Honorez tous les hommes, aimez vos frères, craignez Dieu, honorez le roi. 18 Serviteurs, soyez soumis avec une profonde crainte à vos maîtres, non seulement aux bons et aux doux, mais aussi aux acariâtres.", 
-  "but as bondservants of God. 17 Honor all people. Love the brotherhood. Fear God. Honor the king. 18 Servants, be submissive to your masters with all fear, not only to the good and gentle, but also to the harsh.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لان هذا فضل ان كان احد من اجل ضمير نحو الله يحتمل احزانا متألما بالظلم. لانه اي مجد هو ان كنتم تلطمون مخطئين فتصبرون.بل ان كنتم تتألمون عاملين الخير فتصبرون فهذا فضل عند الله", 
-  "19 Car c'est une grâce de supporter, par respect pour Dieu, des peines que l'on souffre injustement. Quelle gloire y a-t-il, en effet, à supporter les coups si vous avez commis une faute? Mais si, après avoir fait le bien, vous souffrez avec patience, c'est là une grâce aux yeux de Dieu.", 
-  "19 For this is commendable, if because of conscience toward God one endures grief, suffering wrongfully. 20 For what credit is it if, when you are beaten for your faults, you take it patiently? But when you do good and suffer, if you take it patiently, this is commendable before God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانكم لهذا دعيتم فان المسيح ايضا تألم لاجلنا تاركا لنا مثالا لكي تتبعوا خطواته. الذي لم يفعل خطية ولا وجد في فمه مكر", 
-  "21 Or, c'est à cela que vous avez été appelés, car le Christ aussi a souffert pour vous, vous laissant un exemple afin que vous suiviez ses traces: Lui qui n'a pas commis de péché et dans la bouche", 
-  "21 For to this you were called, because Christ also suffered for us, leaving us an example, that you should follow His steps: 22 Who committed no sin, Nor was deceit found in His mouth;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي اذ شتم لم يكن يشتم عوضا واذ تألم لم يكن يهدد بل كان يسلم لمن يقضي بعدل.", 
-  "23 duquel il ne s'est pas trouvé de tromperie; lui qui, insulté, ne rendait pas l'insulte, dans sa souffrance, ne menaçait pas, mais s'en remettait au juste Juge;", 
-  "23 who, when He was reviled, did not revile in return; when He suffered, He did not threaten, but committed Himself to Him who judges righteously;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الذي حمل هو نفسه خطايانا في جسده على الخشبة لكي نموت عن الخطايا فنحيا للبر.الذي بجلدته شفيتم. لانكم كنتم كخراف ضالة لكنكم رجعتم الآن الى راعي نفوسكم واسقفها", 
-  "24 lui qui, dans son propre corps, a porté nos péchés sur le bois, afin que, morts à nos péchés, nous vivions pour la justice; lui dont les meurtrissures vous ont guéris. 25 Car vous étiez égarés comme des brebis, mais maintenant vous vous êtes tournés vers le berger et le gardien de vos âmes.", 
-  "24 who Himself bore our sins in His own body on the tree, that we, having died to sins, might live for righteousness--by whose stripes you were healed. 25 For you were like sheep going astray, but have now returned to the Shepherd and Overseer of your souls.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl1stSunday&C=Title", 
-  " الكاثوليكون من يوحنا الرسول الأولى( 2 : 7 - 17)", 
-  "1 Jean 2:7 - 17", 
-  "1 John 2:7-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاخوة لست اكتب اليكم وصية جديدة بل وصية قديمة كانت عندكم من البدء.الوصية القديمة هي الكلمة التي سمعتموها من البدء.", 
-  "7 Mes bien-aimés, ce n'est pas un commandement nouveau que je vous écris, mais un commandement ancien, que vous avez depuis le commencement; ce commandement ancien, c'est la parole que vous avez entendue.", 
-  "7 Brethren, I write no new commandment to you, but an old commandment which you have had from the beginning. The old commandment is the word which you heard from the beginning.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايضا وصية جديدة اكتب اليكم ما هو حق فيه وفيكم ان الظلمة قد مضت والنور الحقيقي الآن يضيء. من قال انه في النور وهو يبغض اخاه فهو الى الآن في الظلمة.", 
-  "8 Néanmoins, c'est un commandement nouveau que je vous écris - cela est vrai en lui et en vous - puisque les ténèbres passent et que déjà luit la lumière véritable. 9 Celui qui prétend être dans la lumière, tout en haïssant son frère, est toujours dans les ténèbres.", 
-  "8 Again, a new commandment I write to you, which thing is true in Him and in you, because the darkness is passing away, and the true light is already shining. 9 He who says he is in the light, and hates his brother, is in darkness until now.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "من يحب اخاه يثبت في النور وليس فيه عثرة. واما من يبغض اخاه فهو في الظلمة وفي الظلمة يسلك ولا يعلم اين يمضي لان الظلمة اعمت عينيه", 
-  "10 Qui aime son frère demeure dans la lumière, et il n'y a rien en lui pour le faire trébucher. 11 Mais qui hait son frère se trouve dans les ténèbres; il marche dans les ténèbres, et il ne sait pas où il va, parce que les ténèbres ont aveuglé ses yeux.", 
-  "10 He who loves his brother abides in the light, and there is no cause for stumbling in him. 11 But he who hates his brother is in darkness and walks in darkness, and does not know where he is going, because the darkness has blinded his eyes.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اكتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.", 
-  "12 Je vous l'écris, mes petits enfants: 'Vos péchés vous sont pardonnés à cause de son nom à lui, Jésus.13 Je vous l'écris, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'écris, jeunes gens: 'Vous êtes vainqueurs du Mauvais.'", 
-  "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning. I write to you, young men, Because you have overcome the wicked one.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب. كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير.", 
-  "Je vous l'ai donc écrit, mes petits enfants: 'Vous connaissez le Père.' 14 Je vous l'ai écrit, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'ai écrit, jeunes gens: 'Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais.'", 
-  "I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men, Because you are strong, and the word of God abides in you, And you have overcome the wicked one.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب. لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم.", 
-  "15 N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui, 16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde.", 
-  "15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him. 16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد", 
-  "17 Or le monde passe, lui et sa convoitise; mais celui qui fait la volonté de Dieu demeure à jamais.", 
-  "17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl20&C=Title", 
-  " الكاثوليكون من رسالة يوجنا الرسول الأولى (3:2-11)", 
-  "1 John 3:2-11", 
-  "1 John 3:2-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ايها الاحباء الآن نحن اولاد الله ولم يظهر بعد ماذا سنكون.ولكن نعلم انه اذا أظهر نكون مثله لاننا سنراه كما هو.", 
-  "2 Bien–aimés, nous sommes maintenant enfants de Dieu, et ce que nous serons n’a pas encore été manifesté ; mais nous savons que lorsqu’il sera manifesté, nous serons semblables à lui, parce que nous le verrons tel qu’il est.", 
-  "2 Beloved, now we are children of God; and it has not yet been revealed what we shall be, but we know that when He is revealed, we shall be like Him, for we shall see Him as He is.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "وكل من عنده هذا الرجاء به يطهر نفسه كما هو طاهر. كل من يفعل الخطية يفعل التعدي ايضا.والخطية هي التعدي. وتعلمون ان ذاك أظهر لكي يرفع خطايانا وليس فيه خطية.", 
-  "3 Quiconque a cette espérance en lui se purifie, comme lui (le Seigneur) est pur.4 Quiconque commet le péché, commet aussi une violation de la loi, et le péché, c’est la violation de la loi.5 Or, vous le savez, lui (le Seigneur) est apparu pour ôter les péchés ; et il n’y a pas de péché en lui.", 
-  "3 And everyone who has this hope in Him purifies himself, just as He is pure. 4 Whoever commits sin also commits lawlessness, and sin is lawlessness. 5 And you know that He was manifested to take away our sins, and in Him there is no sin.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كل من يثبت فيه لا يخطئ.كل من يخطئ لم يبصره ولا عرفه ايها الاولاد لا يضلّكم احد.من يفعل البر فهو بار كما ان ذاك بار من يفعل الخطية فهو من ابليس لان ابليس من البدء يخطئ.", 
-  "6 Quiconque demeure en lui ne pèche pas ; quiconque pèche ne l’a pas vu et ne l’a pas connu. 7 Petits enfants, que personne ne vous séduise. Celui qui pratique la justice est juste, comme lui (le Seigneur) est juste.", 
-  "6 Whoever abides in Him does not sin. Whoever sins has neither seen Him nor known Him. 7 Little children, let no one deceive you. He who practices righteousness is righteous, just as He is righteous.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لاجل هذا أظهر ابن الله لكي ينقض اعمال ابليس. كل من هو مولود من الله لا يفعل خطية لان زرعه يثبت فيه ولا يستطيع ان يخطئ لانه مولود من الله.", 
-  "8 Celui qui commet le péché est du diable, car le diable pèche dès le commencement. Le Fils de Dieu est apparu, afin de détruire les oeuvres du diable.9 Quiconque est né de Dieu ne commet pas le péché, parce que la semence de Dieu demeure en lui, et il ne peut pécher, puisqu’il est né de Dieu.", 
-  "8 He who sins is of the devil, for the devil has sinned from the beginning. For this purpose the Son of God was manifested, that He might destroy the works of the devil. 9 Whoever has been born of God does not sin, for His seed remains in him; and he cannot sin, because he has been born of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بهذا اولاد الله ظاهرون واولاد ابليس.كل من لا يفعل البر فليس من الله وكذا من لا يحب اخاه. لان هذا هو الخبر الذي سمعتموه من البدء ان يحب بعضنا بعضا.", 
-  "10 C’est par là que se manifestent les enfants de Dieu et les enfants du diable. Quiconque ne pratique pas la justice n’est pas de Dieu, non plus que celui qui n’aime pas son frère. 11 Voici le message que vous avez entendu dès le commencement : Aimons–nous les uns les autres ;", 
-  "10 In this the children of God and the children of the devil are manifest: Whoever does not practice righteousness is not of God, nor is he who does not love his brother. 11 For this is the message that you heard from the beginning, that we should love one another,", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl22&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الإولى( 3 : 8 – 12 )", 
-  "1 John 3:8-12", 
-  "1 John 3:8-12", 
+  Prefix.katholikon+"&D=Pntl22||014thSunday&C=Title", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى (3 : 8 – 12)", 
+  "1 John (3: 8-12)", 
+  "1 John (3: 8-12)", 
   ],
   [
   Prefix.same+"&C=NoActor", 
@@ -7229,7 +5041,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl23&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 3 : 13 – 17 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(3 : 13 – 17)", 
   "1 John 3:13-17", 
   "1 John 3:13-17", 
   ],
@@ -7255,7 +5067,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl24&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى (4:8-13)", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (4:8-13)", 
   "1 Pierre 4:8-13", 
   "1 Peter 4:8-13", 
   ],
@@ -7284,42 +5096,11 @@ ReadingsArrays.KatholikonArray= [[
   "13 but rejoice to the extent that you partake of Christ's sufferings, that when His glory is revealed, you may also be glad with exceeding joy.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl25&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى(3:18-24)", 
-  "1 John 3:18-24", 
-  "1 John 3:18-24", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا اولادي لا نحب بالكلام ولا باللسان بل بالعمل والحق. وبهذا نعرف اننا من الحق ونسكن قلوبنا قدامه.", 
-  "18 Mes petits enfants, n'aimons pas en paroles et de langue, mais en acte et dans la vérité; 19 à cela nous reconnaîtrons que nous sommes de la vérité, et devant lui nous apaiserons notre coeur,", 
-  "18 My little children, let us not love in word or in tongue, but in deed and in truth. 19 And by this we know that we are of the truth, and shall assure our hearts before Him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لانه ان لامتنا قلوبنا فالله اعظم من قلوبنا ويعلم كل شيء ايها الاحباء ان لم تلمنا قلوبنا فلنا ثقة من نحو الله ومهما سألنا ننال منه", 
-  "20 car, si notre coeur nous accuse, Dieu est plus grand que notre coeur et il discerne tout. 21 Mes bien-aimés, si notre coeur ne nous accuse pas, nous nous adressons à Dieu avec assurance; et quoi que nous demandions, nous l'obtenons de lui,", 
-  "20 For if our heart condemns us, God is greater than our heart, and knows all things. 21 Beloved, if our heart does not condemn us, we have confidence toward God. 22 And whatever we ask we receive from Him,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لاننا نحفظ وصاياه ونعمل الاعمال المرضية امامه. وهذه هي وصيته ان نؤمن باسم ابنه يسوع المسيح ونحب بعضنا بعضا كما اعطانا وصية.", 
-  "parce que nous gardons ses commandements et faisons ce qui lui agrée. Et voici son commandement: adhérer avec foi à son Fils Jésus Christ et nous aimer les uns les autres, comme il nous en a donné le commandement.", 
-  "because we keep His commandments and do those things that are pleasing in His sight. 23 And this is His commandment: that we should believe on the name of His Son Jesus Christ and love one another, as He gave us commandment.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ومن يحفظ وصاياه يثبت فيه وهو فيه.وبهذا نعرف انه يثبت فينا من الروح الذي اعطانا", 
-  "24 Celui qui garde ses commandements demeure en Dieu et Dieu en lui et nous reconnaissons à ceci qu’il demeure en nous, par l’Esprit qu’il nous a donné. 24 Celui qui garde ses commandements demeure en Dieu et Dieu en lui et nous reconnaissons à ceci qu’il demeure en nous, par l’Esprit qu’il nous a donné.", 
-  "24 Now he who keeps His commandments abides in Him, and He in him. And by this we know that He abides in us, by the Spirit whom He has given us.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=Pntl26&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 1 - 6 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 1-6)", 
   "1 John 4:1-6", 
   "1 John 4:1-6", 
   ],
@@ -7345,7 +5126,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl27&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى (4:15-5:1)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4:15-5:1)", 
   "1 John 4:15-5:1", 
   "1 John 4:15-5:1", 
   ],
@@ -7377,7 +5158,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl29&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الإولى( 3 : 21 – 24 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(3 : 21 – 24)", 
   "1 John 3:21-24", 
   "1 John 3:21-24", 
   ],
@@ -7394,54 +5175,11 @@ ReadingsArrays.KatholikonArray= [[
   "23 And this is His commandment: that we should believe on the name of His Son Jesus Christ and love one another, as He gave us commandment. 24 Now he who keeps His commandments abides in Him, and He in him. And by this we know that He abides in us, by the Spirit whom He has given us.", 
   ],
   ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl2&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى( 4 : 1 : 11)", 
-  "1 Pierre 4:1 - 11", 
-  "1 Peter 4:1-11", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فاذ قد تألم المسيح لاجلنا بالجسد تسلحوا انتم ايضا بهذه النية.فان من تألم في الجسد كفّ عن الخطية لكي لا يعيش ايضا الزمان الباقي في الجسد لشهوات الناس بل لارادة الله.", 
-  "1 Ainsi donc, puisque Christ a souffert dans la chair, vous aussi armez–vous de la même pensée ; car celui qui a souffert dans la chair en a fini avec le péché,2 afin de vivre, non plus selon les désirs humains, mais selon la volonté de Dieu pendant le temps qui lui reste (à vivre) dans la chair.", 
-  "4:1 Therefore, since Christ suffered for us in the flesh, arm yourselves also with the same mind, for he who has suffered in the flesh has ceased from sin, 2 that he no longer should live the rest of his time in the flesh for the lusts of men, but for the will of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لان زمان الحياة الذي مضى يكفينا لنكون قد عملنا ارادة الامم سالكين في الدعارة والشهوات وادمان الخمر والبطر والمنادمات وعبادة الاوثان المحرمة", 
-  "3 C’est suffisant, en effet, d’avoir, dans le passé, accompli la volonté des païens en marchant dans le dérèglement, les convoitises, l’ivrognerie, les orgies, les beuveries et l’idolâtrie criminelle.", 
-  "3 For we have spent enough of our past lifetime in doing the will of the Gentiles--when we walked in lewdness, lusts, drunkenness, revelries, drinking parties, and abominable idolatries.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "الامر الذي فيه يستغربون انكم لستم تركضون معهم الى فيض هذه الخلاعة عينها مجدفين الذين سوف يعطون حسابا للذي هو على استعداد ان يدين الاحياء والاموات.", 
-  "4 Ils trouvent étrange que vous ne couriez pas avec eux vers ce débordement de débauche, et ils vous calomnient :5 ils en rendront compte à celui qui est prêt à juger les vivants et les morts.", 
-  "4 In regard to these, they think it strange that you do not run with them in the same flood of dissipation, speaking evil of you. 5 They will give an account to Him who is ready to judge the living and the dead.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فانه لاجل هذا بشر الموتى ايضا لكي يدانوا حسب الناس بالجسد ولكن ليحيوا حسب الله بالروح وانما نهاية كل شيء قد اقتربت.فتعقلوا واصحوا للصلوات.", 
-  "6 C’est pour cela, en effet, que les morts aussi ont été évangélisés, afin qu’après avoir été jugés selon les hommes quant à la chair, ils vivent selon Dieu quant à l’esprit. 7 La fin de toutes choses est proche ; soyez donc sensés et sobres en vue de la prière.", 
-  "6 For this reason the gospel was preached also to those who are dead, that they might be judged according to men in the flesh, but live according to God in the spirit. 7 But the end of all things is at hand; therefore be serious and watchful in your prayers.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن قبل كل شيء لتكن محبتكم بعضكم لبعض شديدة لان المحبة تستر كثرة من الخطايا. كونوا مضيفين بعضكم بعضا بلا دمدمة. ليكن كل واحد بحسب ما اخذ موهبة يخدم بها بعضكم بعضا كوكلاء صالحين على نعمة الله المتنوعة.", 
-  "8 Avant tout, ayez les uns pour les autres un amour constant, car l’amour couvre une multitude de péchés.9 Exercez l’hospitalité les uns envers les autres, sans murmurer.10 Puisque chacun a reçu un don mettez–le au service des autres en bons intendants de la grâce si diverse de Dieu.", 
-  "8 And above all things have fervent love for one another, for love will cover a multitude of sins. 9 Be hospitable to one another without grumbling. 10 As each one has received a gift, minister it to one another, as good stewards of the manifold grace of God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ان كان يتكلم احد فكاقوال الله.وان كان يخدم احد فكانه من قوة يمنحها الله لكي يتمجد الله في كل شيء بيسوع المسيح الذي له المجد والسلطان الى ابد الآبدين.آمين", 
-  "11 Si quelqu’un parle, que ce soit selon les oracles de Dieu ; si quelqu’un sert, que ce soit par la force que Dieu lui accorde, afin qu’en toutes choses Dieu soit glorifié par Jésus–Christ, à qui appartiennent la gloire et la puissance aux siècles des siècles. Amen !", 
-  "11 If anyone speaks, let him speak as the oracles of God. If anyone ministers, let him do it as with the ability which God supplies, that in all things God may be glorified through Jesus Christ, to whom belong the glory and the dominion forever and ever. Amen.", 
-  ],
-  ],
+  
   [
   [
   Prefix.katholikon+"&D=Pntl2ndSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 5 : 10 - 20 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (5 : 10-20)", 
   "1 Jean 5:10 - 20", 
   "1 John 5:10-20", 
   ],
@@ -7485,7 +5223,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl30&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 4 : 11 – 17 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 11 – 17)", 
   "1 John 4:11-17", 
   "1 John 4:11-17", 
   ],
@@ -7517,7 +5255,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl31&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 4 : 15 - 19 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (4 : 15-19)", 
   "1 John 4:15-19", 
   "1 John 4:15-19", 
   ],
@@ -7543,7 +5281,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl32&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 4 : 18 – 5 : 1 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(4 : 18 – 5 : 1)", 
   "1 John 4:18-5:1", 
   "1 John 4:18-5:1", 
   ],
@@ -7569,7 +5307,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl33&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 1 - 6 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 1-6)", 
   "1 John 5:1-6", 
   "1 John 5:1-6", 
   ],
@@ -7595,7 +5333,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl34&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 11 – 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 11 – 21)", 
   "1 John 5:11-21", 
   "1 John 5:11-21", 
   ],
@@ -7639,7 +5377,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl36&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الإولى( 5 : 9 - 13)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الإولى(5 : 9-13)", 
   "1 Jean 5:9-13", 
   "1 John 5:9-13", 
   ],
@@ -7665,7 +5403,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl37&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 9 - 12)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 9-12)", 
   "1 Jean 5:9 - 12", 
   "1 John 5:9-12", 
   ],
@@ -7685,7 +5423,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl38&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 13 – 18 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 13 – 18)", 
   "1 John 5:13-18", 
   "1 John 5:13-18", 
   ],
@@ -7716,46 +5454,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=Pntl39&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 15 – 22 )", 
-  "1 Pierre 3:15 - 22", 
-  "1 Peter 3:15-22", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف", 
-  "15 Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte. Mais que ce soit avec douceur et respect,", 
-  "15 But sanctify the Lord God in your hearts, and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكم ضمير صالح لكي يكون الذين يشتمون سيرتكم الصالحة في المسيح يخزون في ما يفترون عليكم كفاعلي شر. لان تألمكم ان شاءت مشيئة الله وانتم صانعون خيرا افضل منه وانتم صانعون شرا.", 
-  "16 en ayant une bonne conscience, afin que, sur le point même où l'on vous calomnie, ceux qui décrient votre bonne conduite en Christ soient confondus. Car mieux vaut souffrir en faisant le bien, si telle est la volonté de Dieu, qu'en faisant le mal.", 
-  "16 having a good conscience, that when they defame you as evildoers, those who revile your good conduct in Christ may be ashamed. 17 For it is better, if it is the will of God, to suffer for doing good than for doing evil.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "فان المسيح ايضا تألم مرة واحدة من اجل الخطايا البار من اجل الاثمة لكي يقربنا الى الله مماتا في الجسد ولكن محيى في الروح الذي فيه ايضا ذهب فكرز للارواح التي في السجن اذ عصت قديما", 
-  "18 En effet, le Christ lui-même a souffert pour les péchés, une fois pour toutes, lui le juste pour les injustes, afin de vous présenter à Dieu, lui mis à mort en sa chair, mais rendu à la vie par l'Esprit. C'est alors qu'il est allé prêcher même aux esprits en prison, aux rebelles d'autrefois,", 
-  "18 For Christ also suffered once for sins, the just for the unjust, that He might bring us to God, being put to death in the flesh but made alive by the Spirit, 19 by whom also He went and preached to the spirits in prison, 20 who formerly were disobedient,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "حين كانت اناة الله تنتظر مرة في ايام نوح اذ كان الفلك يبنى الذي فيه خلص قليلون اي ثماني انفس بالماء. الذي مثاله يخلّصنا نحن الآن اي المعمودية لا ازالة وسخ الجسد", 
-  "quand se prolongeait la patience de Dieu aux jours où Noé construisait l'arche, dans laquelle peu de gens, huit personnes, furent sauvés par l'eau.21 C'était l'image du baptême qui vous sauve maintenant: il n'est pas la purification des souillures du corps,", 
-  "when once the Divine longsuffering waited in the days of Noah, while the ark was being prepared, in which a few, that is, eight souls, were saved through water. 21 There is also an antitype which now saves us--baptism (not the removal of the filth of the flesh,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "بل سؤال ضمير صالح عن الله بقيامة يسوع المسيح الذي هو في يمين الله اذ قد مضى الى السماء وملائكة وسلاطين وقوات مخضعة له", 
-  "mais l'engagement envers Dieu d'une bonne conscience; il vous sauve par la résurrection de Jésus Christ, qui, parti pour le ciel, est à la droite de Dieu et à qui sont soumis anges, autorités et puissances.", 
-  "but the answer of a good conscience toward God), through the resurrection of Jesus Christ, 22 who has gone into heaven and is at the right hand of God, angels and authorities and powers having been made subject to Him.", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=Pntl3&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى ( 1 : 10 - 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (1 : 10-21)", 
   "1 Pierre 1:10 - 21", 
   "1 Peter 1:10-21", 
   ],
@@ -7805,7 +5505,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl3rdSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 3 : 13 ـ 24 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (3 : 13-24)", 
   "1 Jean 3:13 - 24", 
   "1 John 3:13-24", 
   ],
@@ -7849,7 +5549,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl40&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 5 : 14 – 21 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأُولَى (5 : 14 – 21)", 
   "1 John 5:14-21", 
   "1 John 5:14-21", 
   ],
@@ -7887,7 +5587,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl41&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى ( 5 : 5 - 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى (5 : 5-12)", 
   "1 Peter 5:5-12", 
   "1 Peter 5:5-12", 
   ],
@@ -7919,7 +5619,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl43&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الثانية ( 1 : 1 – 8 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية (1 : 1 – 8)", 
   "2 John 1:1-8", 
   "2 John 1:1-8", 
   ],
@@ -7957,7 +5657,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl44&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الثانية ( 1 : 8 - 13)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثانية (1 : 8-13)", 
   "2 Jean 1: 8:13", 
   "2 John 1:8-13", 
   ],
@@ -7983,7 +5683,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl45&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الثالثة ( 1 : 1 – 8 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الثالثة (1 : 1 – 8)", 
   "3 Jean 1 - 8", 
   "3 John 1:1-8", 
   ],
@@ -8015,7 +5715,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl46&C=Title", 
-  " الكاثوليكون من رسالةيوحنا الرسول الثالثة( 1: 10 - 15 )", 
+  " الكاثوليكون من رسالةيوحنا الرَسُولِ الثالثة(1: 10-15)", 
   "3 Jean 10 - 15", 
   "3 John 1:10-14", 
   ],
@@ -8041,7 +5741,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl47&C=Title", 
-  " الكاثوليكون من رسالة يهوذا ( 1 : 22 – 25 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا (1 : 22 – 25)", 
   "Jude 1:22-25", 
   "Jude 1:22-25", 
   ],
@@ -8060,72 +5760,8 @@ ReadingsArrays.KatholikonArray= [[
   ],
   [
   [
-  Prefix.katholikon+"&D=Pntl48&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى ( 2 : 12 – 17 )", 
-  "1 Jean 2:13 - 17", 
-  "1 John 2:12-17", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كتب اليكم ايها الاولاد لانه قد غفرت لكم الخطايا من اجل اسمه اكتب اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.", 
-  "12 Je vous écris, petits enfants, parce que vos péchés vous sont pardonnés à cause de son nom. 13 Je vous l'écris, pères: 'Vous connaissez celui qui est dès le commencement.'", 
-  "12 I write to you, little children, Because your sins are forgiven you for His name's sake. 13 I write to you, fathers, Because you have known Him who is from the beginning.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "اكتب اليكم ايها الاحداث لانكم قد غلبتم الشرير.اكتب اليكم ايها الاولاد لانكم قد عرفتم الآب. كتبت اليكم ايها الآباء لانكم قد عرفتم الذي من البدء.", 
-  "Je vous l'écris, jeunes gens: 'Vous êtes vainqueurs du Mauvais.' Je vous l'ai donc écrit, mes petits enfants: 'Vous connaissez le Père.' Je vous l'ai écrit, pères: 'Vous connaissez celui qui est dès le commencement.' Je vous l'ai écrit, jeunes gens:", 
-  "I write to you, young men, Because you have overcome the wicked one. I write to you, little children, Because you have known the Father. 14 I have written to you, fathers, Because you have known Him who is from the beginning. I have written to you, young men,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "كتبت اليكم ايها الاحداث لانكم اقوياء وكلمة الله ثابتة فيكم وقد غلبتم الشرير. لا تحبوا العالم ولا الاشياء التي في العالم.ان احب احد العالم فليست فيه محبة الآب.", 
-  "'Vous êtes forts, et la parole de Dieu demeure en vous, et vous êtes vainqueurs du Mauvais. N'aimez pas le monde ni ce qui est dans le monde. Si quelqu'un aime le monde, l'amour du Père n'est pas en lui,", 
-  "Because you are strong, and the word of God abides in you, And you have overcome the wicked one. 15 Do not love the world or the things in the world. If anyone loves the world, the love of the Father is not in him.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لان كل ما في العالم شهوة الجسد وشهوة العيون وتعظم المعيشة ليس من الآب بل من العالم. والعالم يمضي وشهوته واما الذي يصنع مشيئة الله فيثبت الى الابد", 
-  "16 puisque tout ce qui est dans le monde - la convoitise de la chair, la convoitise des yeux, et la confiance orgueilleuse dans les biens -, ne provient pas du Père, mais provient du monde. Or, le monde passe, lui et sa convoitise; mais celui qui fait la volonté de Dieu demeure à jamais.", 
-  "16 For all that is in the world--the lust of the flesh, the lust of the eyes, and the pride of life--is not of the Father but is of the world. 17 And the world is passing away, and the lust of it; but he who does the will of God abides forever.", 
-  ],
-  ],
-  [
-  [
-  Prefix.katholikon+"&D=Pntl4&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى( 3 : 8 ـ 15 )", 
-  "1 Pierre 3:8 - 15", 
-  "1 Peter 3:8-15", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "والنهاية كونوا جميعا متحدي الرأي بحس واحد ذوي محبة اخوية مشفقين لطفاء غير مجازين عن شر بشر او عن شتيمة بشتيمة بل بالعكس مباركين", 
-  "8 Enfin, soyez tous dans de mêmes dispositions, compatissants, animés d'un amour fraternel, miséricordieux, humbles. Ne rendez pas le mal pour le mal, ou l'insulte pour l'insulte; au contraire, bénissez,", 
-  "8 Finally, all of you be of one mind, having compassion for one another; love as brothers, be tenderhearted, be courteous; 9 not returning evil for evil or reviling for reviling, but on the contrary blessing,", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "عالمين انكم لهذا دعيتم لكي ترثوا بركة. لان من اراد ان يحب الحياة ويرى اياما صالحة فليكفف لسانه عن الشر وشفتيه ان تتكلما بالمكر ليعرض عن الشر ويصنع الخير ليطلب السلام ويجدّ في اثره", 
-  "car c'est à cela que vous avez été appelés, afin d'hériter la bénédiction.10 En effet, qui veut aimer la vie et voir des jours heureux doit garder sa langue du mal et ses lèvres des paroles trompeuses, se détourner du mal et faire le bien, rechercher la paix et la poursuivre.", 
-  "knowing that you were called to this, that you may inherit a blessing. 10 For He who would love life And see good days, Let him refrain his tongue from evil, And his lips from speaking deceit. 11 Let him turn away from evil and do good; Let him seek peace and pursue it.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "لان عيني الرب على الابرار واذنيه الى طلبتهم.ولكن وجه الرب ضد فاعلي الشر فمن يؤذيكم ان كنتم متمثلين بالخير.", 
-  "12 Car les yeux du Seigneur sont sur les justes, et ses oreilles sont attentives à leur prière; mais la face du Seigneur se tourne contre ceux qui font le mal. 13 Et qui vous fera du mal, si vous vous montrez zélés pour le bien?", 
-  "12 For the eyes of the Lord are on the righteous, And His ears are open to their prayers; But the face of the Lord is against those who do evil. 13 And who is he who will harm you if you become followers of what is good?", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "ولكن وان تألمتم من اجل البر فطوباكم.واما خوفهم فلا تخافوه ولا تضطربوا بل قدسوا الرب الاله في قلوبكم مستعدين دائما لمجاوبة كل من يسألكم عن سبب الرجاء الذي فيكم بوداعة وخوف", 
-  "14 Bien plus, au cas où vous auriez à souffrir pour la justice, heureux êtes-vous. N'ayez d'eux aucune crainte et ne soyez pas troublés; mais sanctifiez dans vos coeurs le Christ qui est Seigneur. Soyez toujours prêts à justifier votre espérance devant ceux qui vous en demandent compte.", 
-  "14 But even if you should suffer for righteousness' sake, you are blessed. And do not be afraid of their threats, nor be troubled. 15 But sanctify the Lord God in your hearts, and always be ready to give a defense to everyone who asks you a reason for the hope that is in you, with meekness and fear;", 
-  ],
-  ],
-  [
-  [
   Prefix.katholikon+"&D=Pntl4thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى (4:7-13)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (4:7-13)", 
   "1 Jean 4:7-13", 
   "1 John 4:7-13", 
   ],
@@ -8157,8 +5793,8 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl5&C=Title", 
-  " الكاثوليكون من رسالة بطرس الأولى الرسول( 1 : 25 – 2 : 10 )", 
-  "1 Pierre 1:25 - 2:1-10", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الأُولَى الرسول(1 : 25 – 2 : 10)", 
+  "1 Pierre 1:25 - (2: 1-10)", 
   "1 Peter 1:25-2:10", 
   ],
   [
@@ -8201,7 +5837,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl5thSunday&C=Title", 
-  " الكاثوليكون من بطرس الرسول الأولى( 4 : 6 - 14)", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الأولى(4 : 6-14)", 
   "1 Pierre 4 :6 - 14", 
   "1 Peter 4:6-14", 
   ],
@@ -8245,7 +5881,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl6&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 1 : 1 ـ 7 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (1 : 1-7)", 
   "1 John 1:1-7", 
   "1 John 1:1-7", 
   ],
@@ -8277,7 +5913,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl6thSunday&C=Title", 
-  " الكاثوليكون من رسالة بطرس الرسول الأولى ( 1 : 2 - 12 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (1 : 2-12)", 
   "1 Pierre 1:2 - 12", 
   "1 Peter 1:2-12", 
   ],
@@ -8327,7 +5963,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl7thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 20- 3: 1 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 20- 3: 1)", 
   "1 Jean 2:20-3:1", 
   "1 John 2:20-3:1", 
   ],
@@ -8371,7 +6007,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl8&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الإولى( 1 : 1 - 7)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الإولى(1 : 1-7)", 
   "1 John 1:1-7", 
   "1 John 1:1-7", 
   ],
@@ -8403,7 +6039,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl8thSunday&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الرسول الأولى ( 2 : 20- 3: 1 )", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2 : 20- 3: 1)", 
   "1 Jean 2:20-3:1", 
   "1 John 2:20-3:1", 
   ],
@@ -8447,7 +6083,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=Pntl9&C=Title", 
-  " الكاثوليكون من رسالة يوحنا الأولى( 1 : 6 - 10)", 
+  " الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الأولى(1 : 6-10)", 
   "1 John 1:6-10", 
   "1 John 1:6-10", 
   ],
@@ -8473,7 +6109,7 @@ ReadingsArrays.KatholikonArray= [[
   [
   [
   Prefix.katholikon+"&D=GL9thSunday&C=Title", 
-  " الكاثوليكون من بطرس الرسول الاولى (3 : 15 – 4 : 6 )", 
+  " الكاثوليكون من بُطْرُسِ الرَسُولِ الاولى (3 : 15 – 4 : 6)", 
   "1 Pierre 3:15 -4:6", 
   "1 Peter 3:15-4:6", 
   ],

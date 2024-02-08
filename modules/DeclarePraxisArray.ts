@@ -1,4 +1,5 @@
-ReadingsArrays.PraxisArray= [[
+ReadingsArrays.PraxisArray = [
+  [
   [
   Prefix.praxis+"&D=0101&C=Title", 
   " الإبركسيس فصل من أعمال آبائنا الرسل الأطهار (17:16-34)", 
@@ -77,6 +78,62 @@ ReadingsArrays.PraxisArray= [[
   "d'autres déclarèrent: 'Nous t'entendrons là-dessus une autre fois.' 33 C'est ainsi que Paul les quitta. 34 Certains pourtant s'étaient attachés à lui et étaient devenus croyants: parmi eux il y avait Denys l'Aréopagiste, une femme nommée Damaris, et d'autres encore.", 
   "while others said, We will hear you again on this matter. 33 So Paul departed from among them. 34 However, some men joined him and believed, among them Dionysius the Areopagite, a woman named Damaris, and others with them.", 
   ],
+  ],
+  [
+    [
+      Prefix.praxis + "&D=Jonah1&C=Title",
+      "AR",
+      "FR",
+      "EN"
+    ],
+    [
+      "&D=Jonah1&C=NoActor",
+      "AR",
+      "FR",
+      "EN"
+    ],
+  ],
+  [
+    [
+      Prefix.praxis + "&D=Jonah2&C=Title",
+      "AR",
+      "FR",
+      "EN"
+    ],
+    [
+      "&D=Jonah1&C=NoActor",
+      "AR",
+      "FR",
+      "EN"
+    ],
+  ],
+  [
+    [
+      Prefix.praxis + "&D=Jonah3&C=Title",
+      "AR",
+      "FR",
+      "EN"
+    ],
+    [
+      "&D=Jonah1&C=NoActor",
+      "AR",
+      "FR",
+      "EN"
+    ],
+  ],
+  [
+    [
+      Prefix.praxis + "&D=Jonah4&C=Title",
+      "AR",
+      "FR",
+      "EN"
+    ],
+    [
+      "&D=Jonah1&C=NoActor",
+      "AR",
+      "FR",
+      "EN"
+    ],
   ],
   [
   [
