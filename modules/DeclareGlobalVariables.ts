@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.8 (Fixes to Jonah Fast, added Mass Gospel Readings for Jonah Fast)";
+  "v5.3.9 (Major fixes to the readings. Completed mass readings for Jonah Fast. Fixed Agios and Helleluja Faybibi for Great Lent, etc.)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -413,15 +413,15 @@ const copticFeasts = {
   Coptic29th: "000000", //This value will be set to copticDate by setCopticDates() if today is 29th of the Coptic month and we are in a month where this feast is celebrated
 };
 const copticFasts = [
-  Seasons.GreatLent,
   Seasons.NativityFast,
   Seasons.KiahkWeek1,
   Seasons.KiahkWeek2,
   Seasons.KiahkWeek3,
   Seasons.KiahkWeek4,
+  Seasons.JonahFast,
+  Seasons.GreatLent,
   Seasons.ApostlesFast,
   Seasons.StMaryFast,
-  Seasons.JonahFast,
 ];
 const saintsFeasts = {
   StJohnBaptist: "0201",

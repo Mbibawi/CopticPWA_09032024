@@ -26,10 +26,14 @@ async function setCopticDates(today?: Date) {
     );
   //copticDay = copticDate.slice(0, 2);
   isFast = (() => {
-    if (Season === Seasons.PentecostalDays) return false;
+    if (Season === Seasons.PentecostalDays)
+      return false;
+    else if (Number(copticReadingsDate.split(Seasons.JonahFast)[1]) === 4)
+      return false; //The last day of Jonah Fast Season is not a fast day. It is the Jonah Pessah
     else if (copticFasts.indexOf(Season) > -1)
-      return true; //i.e. if we are during a fast period
-    else if (weekDay === (3 || 5)) return true;
+      return true; //i.e. if we are obviously during a fast period
+    else if ([3, 5].includes(weekDay))
+      return true;//We are not during a fast period but we are a Wednesday or a Friday. Notice that we excluded the Pentecostal period case from the begining
     else return false;
   })();
   //Showing the dates and the version
@@ -228,7 +232,6 @@ function checkForUnfixedEvent(
 
     //We are in the Jonah Feast days (3 days + 1)
     //The Jonah feast starts 15 days before the begining of the Great Lent
-    //I didn't find the readings for this period in the Power Point presentations
     Season = Seasons.JonahFast;
     date =  isItSundayOrWeekDay(
       Seasons.JonahFast,

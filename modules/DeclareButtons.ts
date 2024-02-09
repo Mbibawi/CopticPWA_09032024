@@ -381,19 +381,14 @@ const btnIncenseDawn: Button = new Button({
         (async function insertEklonominTaghonata() {
           let efnotiNaynan: HTMLDivElement[] = selectElementsByDataRoot(
             btnDocFragment,
-            Prefix.commonPrayer + "EfnotiNaynan&D=$copticFeasts.AnyDay",
-            { startsWith: true }
+            Prefix.commonPrayer + "EfnotiNaynan&D=$copticFeasts.AnyDay"
           );
 
           let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling
             .nextSibling as HTMLElement; //This is the html div after "Kyrie Elison 3 times"
-          let godHaveMercy: string[][] = IncensePrayersArray.find(
-            (table) =>
-              table[0][0].startsWith(
-                Prefix.incenseDawn+"GodHaveMercyOnUs&D=$Seasons.GreatLent"
-              )
-          ); //This will give us all the prayers
-          if(!godHaveMercy) return console.log("Didn't find God Have Mercy for Great Lent");
+          let godHaveMercy = findTable(Prefix.incenseDawn + "GodHaveMercyOnUs&D=$Seasons.GreatLent", IncensePrayersArray);
+
+          if (!godHaveMercy) return console.log("Didn't find God Have Mercy for Great Lent");
 
           insertPrayersAdjacentToExistingElement({
             tables: [godHaveMercy],
@@ -406,7 +401,7 @@ const btnIncenseDawn: Button = new Button({
             btnDocFragment,
             Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent")
             .filter((htmlRow) => htmlRow.classList.contains("Title"));
-          
+
           refrains.forEach((htmlRow) => {
             if (refrains.indexOf(htmlRow) > 0) htmlRow.remove();
           });
@@ -477,7 +472,6 @@ const btnMassStCyril: Button = new Button({
   onClick: (): string[] => {
     //Setting the standard mass prayers sequence
     btnMassStCyril.prayersSequence = [
-      ...MassPrayersSequences.MassCommonIntro,
       ...MassPrayersSequences.MassStCyril,
       ...[
         Prefix.massCommon +
@@ -508,7 +502,6 @@ const btnMassStGregory: Button = new Button({
   onClick: (): string[] => {
     //Setting the standard mass prayers sequence
     btnMassStGregory.prayersSequence = [
-      ...MassPrayersSequences.MassCommonIntro,
       ...MassPrayersSequences.MassStGregory,
       ...MassPrayersSequences.MassCallOfHolySpirit,
       ...MassPrayersSequences.MassLitanies,
@@ -542,7 +535,6 @@ const btnMassStBasil: Button = new Button({
   onClick: (): string[] => {
     //Setting the standard mass prayers sequence
     btnMassStBasil.prayersSequence = [
-      ...MassPrayersSequences.MassCommonIntro,
       ...MassPrayersSequences.MassStBasil,
       ...MassPrayersSequences.MassCallOfHolySpirit,
       ...MassPrayersSequences.MassLitanies,
@@ -983,67 +975,59 @@ const btnMassUnBaptised: Button = new Button({
         ].includes(btn)
     );
 
-    btnMassUnBaptised.prayersSequence = [
+    let btnsPrayersSequence = [
       ...MassPrayersSequences.MassUnbaptized,
     ];
 
-    //Replacing AllelujaFayBabi according to the day
-    (function replaceAllelujahFayBabi() {
-      if (
-        (Season === Seasons.GreatLent || Season === Seasons.JonahFast) &&
-        weekDay !== 0 &&
-        weekDay !== 6
-      ) {
-        //Inserting "Alleluja E Ikhon" before "Allelujah Fay Bibi"
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"
-          ),
-          2,
-          Prefix.massCommon + "HallelujahFayBiBiGreatLent&D=$Seasons.GreatLent"
-        );
-        //Removing "Allelujah Fay Bibi" and "Allelujha Ge Ef Mev'i"
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"
-          ),
-          1
-        );
-      } else if (
-        (isFast && weekDay !== 0 && weekDay !== 6) ||
-        (Season === Seasons.NoSeason && (weekDay === 3 || weekDay === 5))
-      ) {
-        //Removing Hellelujah Fay Bibi
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"
-          ),
-          1
-        );
-        //Remove TayShouray
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"
-          ),
-          1
-        );
-      } else {
-        //Removing 'Hallelujah Ji Efmefi'
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay"
-          ) + 1,
-          1
-        );
-        //Remove Tishoury
-        btnMassUnBaptised.prayersSequence.splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "Tishoury&D=$copticFeasts.AnyDay"
-          ),
-          1
-        );
-      }
+    (function adaptFaybibiAndTayshoury() {
+
+      btnMassUnBaptised.prayersSequence = adaptHallelujaFayBibiAndTayshoury();
+
+      function adaptHallelujaFayBibiAndTayshoury(): string[] {
+        //If we are not during a fast period or we are during a fast period but today is either Saturday or Sunday, or a Lord Feast, we will remove Hallelujah Ge Evmevi and Tishoury, in order to keep Hallelujah Faybibi and Tayshouri
+        if (!isFast
+          ||
+          [0, 6].includes(weekDay)
+          ||
+          lordFeasts.find(date => [copticDate, copticReadingsDate].includes(date)))
+          return btnsPrayersSequence
+            .filter(title =>
+              ![Prefix.massCommon + "HallelujahFayBiBiFast&D=$copticFeasts.AnyDay", Prefix.massCommon + "Tishoury&D=$copticFeasts.AnyDay"].includes(splitTitle(title)[0]));
+
+              //! If the function did not return before reaching this point, it means that are neccessarily on a fast day (isFast === true). This also necessarily means that we are not on the last day of Jonah Fast, because on this day, isFast is set to false
+          
+            if ([Seasons.GreatLent, Seasons.JonahFast].includes(Season)) {
+              
+              //We are either during the week days of the Great Lent, or the 3 days of Jonah Fast
+
+              //Replacing "Halleljah Ge Evmevi" with "Halleluja E Ikhon"
+            btnsPrayersSequence[btnsPrayersSequence.indexOf(Prefix.massCommon + "HallelujahFayBiBiFast&D=$copticFeasts.AnyDay")] = Prefix.massCommon + "HallelujahFayBiBi&D=$Seasons.GreatLent";
+            }
+
+        //We will remove 'Hellulja Fay Bibi'and keep only 'Hellulja Ge Evmev'i". We will also remove Tayshoury in order to keep only Tishoury 
+        return btnsPrayersSequence
+          .filter(title =>
+            ![Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay", Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"].includes(splitTitle(title)[0]));
+
+      };
+
+
     })();
+
+    (function insertHisFoundationsAndIGodHaveMercy() {
+      if (!isFast || ![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
+
+      btnMassUnBaptised.prayersSequence
+        .splice(
+        btnMassUnBaptised.prayersSequence.indexOf(
+          Prefix.massCommon+"AbsolutionForTheFather&D=$copticFeasts.AnyDay") + 1, //We insert it after "Sotis Ameen"
+        0,
+        Prefix.massCommon + "HisFoundations&D=$Seasons.GreatLent",
+        Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent"
+      );
+
+    })();
+
     scrollToTop();
     return btnMassUnBaptised.prayersSequence;
   },
@@ -1087,27 +1071,6 @@ const btnMassUnBaptised: Button = new Button({
       });
     })();
 
-    (function insertHisFoundationsInTheHolyMountain() {
-      if (![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;
-      //Inserting psaume 'His Foundations In the Holy Montains' before the absolution prayers
-      insertPrayersAdjacentToExistingElement({
-        tables: [
-          findTable(
-            Prefix.massCommon+"HisFoundations&D=$Seasons.GreatLent",
-            MassCommonPrayersArray,
-            { equal: true }
-          ) as string[][],
-        ],
-        languages: btnMassUnBaptised.languages,
-        position: {
-          beforeOrAfter: "beforebegin",
-          el: selectElementsByDataRoot(
-            btnDocFragment,
-            Prefix.massCommon + "AbsolutionForTheFather&D=$copticFeasts.AnyDay")[0],
-        },
-        container: btnDocFragment,
-      });
-    })();
 
     let readingsAnchor: HTMLElement = selectElementsByDataRoot(
       btnDocFragment,
@@ -1595,7 +1558,7 @@ const btnMassUnBaptised: Button = new Button({
           PrayersArraysKeys.find((array) => array[0] === readingPrefix)[1]
         );
 
-      readings = fetchMassReadingOtherThanGospel(
+      readings = findMassReadingOtherThanGospel(
         readingPrefix,
         readingArray,
         { beforeOrAfter: "beforebegin", el: readingsAnchor },
@@ -1726,7 +1689,7 @@ const btnReadingsPropheciesDawn: Button = new Button({
   },
   showPrayers: true,
   onClick: () => {
-    fetchMassReadingOtherThanGospel(
+    findMassReadingOtherThanGospel(
       Prefix.propheciesDawn,
       ReadingsArrays.PropheciesDawnArray,
       { beforeOrAfter: undefined, el: undefined },
@@ -1760,7 +1723,7 @@ const btnDayReadings: Button = new Button({
         },
         showPrayers: true,
         onClick: () => {
-          fetchMassReadingOtherThanGospel(
+          findMassReadingOtherThanGospel(
             Prefix.stPaul,
             ReadingsArrays.StPaulArray,
             { beforeOrAfter: undefined, el: undefined },
@@ -1779,7 +1742,7 @@ const btnDayReadings: Button = new Button({
         },
         showPrayers: true,
         onClick: () => {
-          fetchMassReadingOtherThanGospel(
+          findMassReadingOtherThanGospel(
             Prefix.katholikon,
             ReadingsArrays.KatholikonArray,
             { beforeOrAfter: undefined, el: undefined },
@@ -1797,7 +1760,7 @@ const btnDayReadings: Button = new Button({
         },
         showPrayers: true,
         onClick: () => {
-          fetchMassReadingOtherThanGospel(
+          findMassReadingOtherThanGospel(
             Prefix.praxis,
             ReadingsArrays.PraxisArray,
             { beforeOrAfter: undefined, el: undefined },
@@ -1815,7 +1778,7 @@ const btnDayReadings: Button = new Button({
         },
         showPrayers: true,
         onClick: function (this: Button) {
-          fetchMassReadingOtherThanGospel(
+          findMassReadingOtherThanGospel(
             Prefix.synaxarium,
             ReadingsArrays.SynaxariumArray,
             { beforeOrAfter: undefined, el: undefined },
@@ -2095,7 +2058,7 @@ const btnPsalmody: Button = new Button({
  * @param {boolean} clearContainer - specifies whether the container should be cleared or not before the reading is displayed
  * @returns
  */
-function fetchMassReadingOtherThanGospel(
+function findMassReadingOtherThanGospel(
   readingPrefix: string,
   readingArray: string[][][],
   position: { beforeOrAfter: InsertPosition; el: HTMLElement },
@@ -2353,8 +2316,8 @@ async function getGospelReadingAndResponses(args: {
 
   let gospel: string[][][] =
     args.prayersArray
-    .filter((table) =>
-    isMultiDatedTitleMatching(splitTitle(table[0][0])[0], date));
+      .filter((table) =>
+        isMultiDatedTitleMatching(splitTitle(table[0][0])[0], date));
 
   if (gospel.length === 0) return console.log("gospel.length = 0"); //if no readings are returned from the filtering process, then we end the function
 
@@ -2839,12 +2802,14 @@ function addExpandablePrayer(args: {
       });
     });
 
-    Array.from(prayersContainerDiv.children)
-      .filter((child) => isTitlesContainer(child as HTMLElement))
-      .forEach((child) => {
+    let htmlRows = Array.from(prayersContainerDiv.children) as HTMLDivElement[];
+    htmlRows
+      .filter((div) => isTitlesContainer(div))
+      .forEach((div) => {
         addDataGroupsToContainerChildren(
-          child.classList[child.classList.length - 1],
-          prayersContainerDiv
+          div.classList[div.classList.length - 1],
+          prayersContainerDiv,
+          htmlRows
         );
       });
     return [createdButton, prayersContainerDiv];

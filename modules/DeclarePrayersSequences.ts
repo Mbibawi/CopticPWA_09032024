@@ -1,9 +1,7 @@
 const IncensePrayersSequence: string[] =[ 
     Prefix.commonIncense + "EleysonImas&D=$copticFeasts.AnyDay", 
     Prefix.commonIncense+"CymbalVersesPlaceHolder&D=$copticFeasts.AnyDay", 
-    Prefix.commonIncense+"Comment1&D=$copticFeasts.AnyDay", 
-    Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
-    Prefix.incenseVespers + "PriestLitaniesComment&D=$copticFeasts.AnyDay", 
+    Prefix.commonIncense+"LitaniesComment1&D=$copticFeasts.AnyDay", 
     Prefix.incenseDawn+"SickPrayer&D=$copticFeasts.AnyDay", 
     Prefix.incenseDawn + "TravelersPrayer&D=$copticFeasts.AnyDay", 
     Prefix.incenseDawn + "OblationsPrayer&D=$copticFeasts.AnyDay", 
@@ -36,40 +34,26 @@ const MassPrayersSequences = {
         Prefix.massCommon+"GloryAndHonor&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"HallelujahFayBiBi&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"HallelujahFayBiBiFast&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"BenedictionOfTheLambPart1&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"BenedictionOfTheLambPart2&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"BenedictionOfTheLambPart3&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"Amen&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart1&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart2&D=$copticFeasts.AnyDay", 
-        Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart3&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
+        Prefix.massCommon+"BenedictionOfTheLamb&D=$copticFeasts.AnyDay", 
         Prefix.commonPrayer + "ThanksGiving&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"AbsolutionForTheFather&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer+"WeHaveBeenSavedWithYou&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"Tayshoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon+"Tishoury&D=$copticFeasts.AnyDay", 
         Prefix.massCommon + "IntercessionsHymn&D=$copticFeasts.AnyDay", 
         Prefix.massCommon + 'ReadingsPlaceHolder&D=$copticFeasts.AnyDay',
-        Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"GospelPrayerPlaceHolder&D=$copticFeasts.AnyDay",
         Prefix.commonPrayer+"Creed&D=$copticFeasts.AnyDay"
         ], //Those are the prayers of the 'Unbaptized Mass'
-        MassCommonIntro:[
+    MassStBasil: [
         Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
-        Prefix.commonPrayer + "BlockShlilIriniPassi&D=$copticFeasts.AnyDay",
-        ], //the introduction of reconciliation for all masses
-        MassStBasil: [
         Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay", 
         Prefix.massStBasil  + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStBasil + "Agios&D=$copticFeasts.AnyDay", 
         Prefix.massStBasil+"InstitutionNarrative&D=$copticFeasts.AnyDay",  
         Prefix.massCommon + "AsWeAlsoCommemorateHisHolyPassionPart1&D=$copticFeasts.AnyDay", 
         ], //The sequence of prayers of St Basil Mass (starting from Reconciliation)
-        MassStGregory: [
+    MassStGregory: [
+        Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"Reconciliation&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"Agios&D=$copticFeasts.AnyDay", 
@@ -79,7 +63,8 @@ const MassPrayersSequences = {
         Prefix.massStGregory + "Litanies&D=$copticFeasts.AnyDay",
         Prefix.massStGregory + "FractionIntroduction&D=$copticFeasts.AnyDay"
         ], //The sequence of prayers of St Gregory Mass (starting from reconciliation)
-        MassStCyril:[
+    MassStCyril: [
+        Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Reconciliation&D=$copticFeasts.AnyDay",  
         Prefix.massStCyril + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Agios&D=$copticFeasts.AnyDay", 

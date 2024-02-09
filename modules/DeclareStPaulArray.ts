@@ -279,8 +279,8 @@ ReadingsArrays.StPaulArray = [
     [
       Prefix.stPaul + "&D=014thSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس 1 : 1 - 14",
-      "2 Corinthiens 1:1-14",
-      "2 Corinthians 1:1-14",
+      "2 Corinthiens (1: 1-14)",
+      "2 Corinthians (1: 1-14)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -339,7 +339,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=015thSunday&C=Title",
+      Prefix.stPaul + "&D=015thSunday||062ndSunday&C=Title",
       " عبرانيين 7: 1-17",
       "Hébreux 7:1-17",
       "Hebrews 7:1-17",
@@ -399,65 +399,10 @@ ReadingsArrays.StPaulArray = [
       "16 who has come, not according to the law of a fleshly commandment, but according to the power of an endless life. 17 For He testifies: You are a priest forever According to the order of Melchizedek.",
     ],
   ],
+
   [
     [
-      Prefix.stPaul + "&D=0201&C=Title",
-      " بولس الرسول إلى العبرانيين( 11 : 32 - 12 : 1 - 2 )",
-      "Hébreux 11:32 - 12:1 - 2",
-      "Hebrews 11:32-12:2",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ماذا أقولُ أيضاً؟ لأنه يُعوزُني الوقت إن أخبَرت عن جدعون، وباراق، وشَمشُون، ويَفتاحَ، وداود، وصَموئيل، والأنبياء الأُخر،",
-      "32 Et que dire encore? Le temps me manquerait pour parler en détail de Gédéon, Barak, Samson, Jephté, David, Samuel et les prophètes,",
-      "32 And what more shall I say? For the time would fail me to tell of Gideon and Barak and Samson and Jephthah, also of David and Samuel and the prophets:",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذين بالإيمان قَهَروا مَمالِك، وعملوا البر، ونالوا المواعيد، وسدُّوا أفواه أُسودٍ، أخمدوا قوَّة النَّار، ونجوا مِن حدِّ السَّيف، وتقوُّوا فى الضَّعف، صاروا أقوياء فى الحرب، وهزموا جيوش الغُرباء،",
-      "33 eux qui, grâce à la foi, conquirent des royaumes, mirent en oeuvre la justice, virent se réaliser des promesses, muselèrent la gueule des lions,34 éteignirent la puissance du feu, échappèrent au tranchant de l'épée, reprirent vigueur après la maladie, se montrèrent vaillants à la guerre, repoussèrent les armées étrangères;",
-      "33 who through faith subdued kingdoms, worked righteousness, obtained promises, stopped the mouths of lions, 34 quenched the violence of fire, escaped the edge of the sword, out of weakness were made strong, became valiant in battle, turned to flight the armies of the aliens.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أَخَذَت نِساءٌ أمواتَهُنَّ من بعد قيامةٍ. وآخرون ضُربوا مثل الطُّبول ولم يقبلوا إليهم النَّجاة لكى ينالوا القيامة الفاضِلة. وآخرون صُلبوا بالهزء والجلد، ثم فى قُيودٍ أيضاً وحَبسٍ.",
-      "35 des femmes retrouvèrent leurs morts par résurrection. Mais d'autres subirent l'écartèlement, refusant la délivrance pour aboutir à une meilleure résurrection; 36 d'autres encore subirent l'épreuve des moqueries et du fouet et celle des liens et de la prison;",
-      "35 Women received their dead raised to life again. And others were tortured, not accepting deliverance, that they might obtain a better resurrection. 36 Still others had trial of mockings and scourgings, yes, and of chains and imprisonment.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ورُجموا، ونُشِروا بالمناشِير، وجُرِّبوا، وماتوا بقتل السَّيف، وطافُوا فى فراء وجُلودِ مِعزَى، معُوزين مُتضايقين مُتألِّمين،",
-      "37 ils furent lapidés, ils furent sciés; ils moururent tués à coups d'épée; ils menèrent une vie errante, vêtus de peaux de moutons ou de toisons de chèvres; ils étaient soumis aux privations, opprimés, maltraités,",
-      "37 They were stoned, they were sawn in two, were tempted, were slain with the sword. They wandered about in sheepskins and goatskins, being destitute, afflicted, tormented",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "هؤلاء الذين لم يكن العالم يستحقَّهمْ. تائهين فى القفار والجبال والمغاير وشقوق الأرض.",
-      "38 eux dont le monde n'était pas digne; ils erraient dans les déserts et les montagnes, dans les grottes et les cavités de la terre.",
-      "38 of whom the world was not worthy. They wandered in deserts and mountains, in dens and caves of the earth.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فهؤلاء كلُّهُم، شُهِد لهم من قِبل الإيمان، ولم ينالوا الموعد. لأن الله منذ البدء تقدَّم فنظر من أجلنا أمراً مختاراً، لكى لا يُكمَلُوا بدوننا.",
-      "39 Eux tous, s'ils ont reçu bon témoignage grâce à leur foi, n'ont cependant pas obtenu la réalisation de la promesse. 40 Puisque Dieu prévoyait pour nous mieux encore, ils ne devaient pas arriver sans nous à l'accomplissement.",
-      "39 And all these, having obtained a good testimony through faith, did not receive the promise, 40 God having provided something better for us, that they should not be made perfect apart from us.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "من أجل هذا نحن أيضاً الذين لنا سحابةُ شهداء هذا مقدارها مُحيطة بنا، فلنطرح عنَّا كلَّ تكبُّر، والخطيَّة القائمة علينا جداً، وبالصَّبر فلنسعى فى الجهاد الموضوع لنا،",
-      "1Ainsi donc, nous aussi, qui avons autour de nous une telle nuée de témoins, rejetons tout fardeau et le péché qui sait si bien nous entourer, et courons avec endurance l'épreuve qui nous est proposée,",
-      "1 Therefore we also, since we are surrounded by so great a cloud of witnesses, let us lay aside every weight, and the sin which so easily ensnares us, and let us run with endurance the race that is set before us,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وننظر إلى رئيس الإيمان ومُكمِّله يسوع، هذا الذى عوض ما كان قُدَّامه من الفرح صبر على الصَّليب واستهان بالعار، وجلس عن يمين عرش الله.",
-      "2 les regards fixés sur celui qui est l'initiateur de la foi et qui la mène à son accomplissement, Jésus, lui qui, renonçant à la joie qui lui revenait, endura la croix au mépris de la honte et s'est assis à la droite du trône de Dieu.",
-      "2 looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=0801&C=Title",
+      Prefix.stPaul + "&D=0801||2304&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين ( 11 : 17 - 27 )",
       "Hébreux 11 : 17 - 27",
       "Hebrews 11:17-27",
@@ -1329,10 +1274,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1203&C=Title",
+      Prefix.stPaul + "&D=1203||2904&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (1 : 1 – 2 : 4 )",
       "Hébreux 1:1 - 2:4",
-      "Hebrews 1:1-14 & 2:1-4",
+      "Hebrews (1: 1-14)&2:1-4",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -1397,10 +1342,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1503&C=Title",
+      Prefix.stPaul + "&D=1503||2605&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (12:3-14)",
-      "Hebrews 12:3-14",
-      "Hebrews 12:3-14",
+      "Hebrews (12: 3-14)",
+      "Hebrews (12: 3-14)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -1629,136 +1574,6 @@ ReadingsArrays.StPaulArray = [
       "والذين لهم سادة مؤمنون لا يستهينوا بهم لانهم اخوة بل ليخدموهم اكثر لان الذين يتشاركون في الفائدة هم مؤمنون ومحبوبون.علّم وعظ بهذا",
       "2 Ceux qui ont des maîtres croyants, qu'ils ne leur manquent pas de considération sous prétexte qu'ils sont frères. Au contraire, qu'ils les servent encore mieux, puisque ce sont des croyants et frères bien-aimés qui bénéficient de leurs bons offices. Voilà ce que tu dois enseigner et recommander.",
       "2 And those who have believing masters, let them not despise them because they are brethren, but rather serve them because those who are benefited are believers and beloved. Teach and exhort these things.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=2503&C=Title",
-      " بولس الرسول الثانية إلى أَهْلِ كورونثوس ( 10 :1 -18 )",
-      "2 Corinthiens 10 : 1 - 18",
-      "2 Corinthians 10:1-18",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ثم اطلب اليكم بوداعة المسيح وحلمه انا نفسي بولس الذي في الحضرة ذليل بينكم واما في الغيبة فمتجاسر عليكم.",
-      "1 Moi, Paul, en personne, je vous le demande par la douceur et la bonté du Christ, moi si humble quand je suis parmi vous face à face, mais si hardi envers vous quand je suis loin;",
-      "1 Now I, Paul, myself am pleading with you by the meekness and gentleness of Christ-- who in presence am lowly among you, but being absent am bold toward you.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكن اطلب ان لا اتجاسر وانا حاضر بالثقة التي بها ارى اني ساجترئ على قوم يحسبوننا كاننا نسلك حسب الجسد. لاننا وان كنا نسلك في الجسد لسنا حسب الجسد نحارب.",
-      "2 je vous en prie, que je n'aie pas, une fois présent, à user de cette hardiesse dont je compte faire preuve, avec audace, contre ces gens qui prétendent que notre conduite a des motifs humains.3 Tout homme que nous sommes, nous ne combattons pas de façon purement humaine.",
-      "2 But I beg you that when I am present I may not be bold with that confidence by which I intend to be bold against some, who think of us as if we walked according to the flesh. 3 For though we walk in the flesh, we do not war according to the flesh.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "اذ اسلحة محاربتنا ليست جسدية بل قادرة بالله على هدم حصون. هادمين ظنونا وكل علو يرتفع ضد معرفة الله ومستأسرين كل فكر الى طاعة المسيح",
-      "4 Non, les armes de notre combat ne sont pas d'origine humaine, mais leur puissance vient de Dieu pour la destruction des forteresses.5 Nous détruisons les raisonnements prétentieux, et toute puissance hautaine qui se dresse contre la connaissance de Dieu. Nous faisons captive toute pensée pour l'amener à obéir au Christ",
-      "4 For the weapons of our warfare are not carnal but mighty in God for pulling down strongholds, 5 casting down arguments and every high thing that exalts itself against the knowledge of God, bringing every thought into captivity to the obedience of Christ,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ومستعدين لان ننتقم على كل عصيان متى كملت طاعتكم اتنظرون الى ما هو حسب الحضرة.ان وثق احد بنفسه انه للمسيح فليحسب هذا ايضا من نفسه انه كما هو للمسيح كذلك نحن ايضا للمسيح.",
-      "6 et nous nous tenons prêts à punir toute désobéissance dès que votre obéissance sera totale.7 Regardez les choses en face. Si quelqu'un est persuadé d'appartenir au Christ, qu'il s'en rende compte une bonne fois: s'il est au Christ, nous aussi!",
-      "6 and being ready to punish all disobedience when your obedience is fulfilled. 7 Do you look at things according to the outward appearance? If anyone is convinced in himself that he is Christ's, let him again consider this in himself, that just as he is Christ's, even so we are Christ's.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فاني وان افتخرت شيئا اكثر بسلطاننا الذي اعطانا اياه الرب لبنيانكم لا لهدمكم لا أخجل. لئلا اظهر كاني اخيفكم بالرسائل. لانه يقول الرسائل ثقيلة وقوية واما حضور الجسد فضعيف والكلام حقير.",
-      "8 Et même si je suis un peu trop fier du pouvoir que le Seigneur nous a donné pour votre édification, et non pour votre ruine, je n'en rougirai pas. 9 Je ne veux pas avoir l'air de vous effrayer par mes lettres, 10 car ses lettres, dit-on, ont du poids et de la force; mais, une fois présent, il est faible et sa parole est nulle.",
-      "8 For even if I should boast somewhat more about our authority, which the Lord gave us for edification and not for your destruction, I shall not be ashamed 9 lest I seem to terrify you by letters. 10 For his letters,'' they say, are weighty and powerful, but his bodily presence is weak, and his speech contemptible",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "مثل هذا فليحسب هذا اننا كما نحن في الكلام بالرسائل ونحن غائبون هكذا نكون ايضا بالفعل ونحن حاضرون.لاننا لا نجترئ ان نعد انفسنا بين قوم من الذين يمدحون انفسهم ولا ان نقابل انفسنا بهم.",
-      "11 Qu'il s'en rende bien compte, cet individu: tel nous sommes en parole, de loin, dans nos lettres, tel nous serons, présent, dans nos actes.12 Car nous n'avons pas l'audace de nous égaler ou de nous comparer à certaines gens qui se recommandent eux-mêmes; en se prenant eux-mêmes",
-      "11 Let such a person consider this, that what we are in word by letters when we are absent, such we will also be in deed when we are present. 12 For we dare not class ourselves or compare ourselves with those who commend themselves.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بل هم اذ يقيسون انفسهم على انفسهم ويقابلون انفسهم بانفسهم لا يفهمون. ولكن نحن لا نفتخر الى ما لا يقاس بل حسب قياس القانون الذي قسمه لنا الله قياسا للبلوغ اليكم ايضا.",
-      "comme unité de mesure et de comparaison, ils perdent la tête! 13 Pour nous, nous ne passerons pas la mesure dans la fierté que nous montrons, mais nous nous servirons comme mesure de la règle même que Dieu nous a attribuée, en nous faisant parvenir jusqu'à vous.",
-      "But they, measuring themselves by themselves, and comparing themselves among themselves, are not wise. 13 We, however, will not boast beyond measure, but within the limits of the sphere which God appointed us-- a sphere which especially includes you.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لاننا لا نمدد انفسنا كاننا لسنا نبلغ اليكم.اذ قد وصلنا اليكم ايضا في انجيل المسيح.",
-      "14 Car nous ne dépassons pas notre limite, comme si nous n'étions pas venu chez vous. Nous sommes vraiment arrivé le premier jusqu'à vous avec l'Évangile du Christ.",
-      "14 For we are not overextending ourselves (as though our authority did not extend to you), for it was to you that we came with the gospel of Christ;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "غير مفتخرين الى ما لا يقاس في اتعاب آخرين بل راجين اذا نما ايمانكم ان نتعظم بينكم حسب قانوننا بزيادة",
-      "15 Nous n'avons pas une fierté démesurée, fondée sur les travaux d'autrui; mais nous avons l'espoir, avec les progrès de votre foi, de grandir de plus en plus en vous selon notre règle,",
-      "15 not boasting of things beyond measure, that is, in other men's labors, but having hope, that as your faith is increased, we shall be greatly enlarged by you in our sphere,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لنبشر الى ما وراءكم.لا لنفتخر بالامور المعدة في قانون غيرنا واما من افتخر فليفتخر بالرب. لانه ليس من مدح نفسه هو المزكى بل من يمدحه الرب",
-      "16 en portant l'Évangile au-delà de chez vous, sans tirer fierté de travaux tout faits sur le terrain des autres. 17 Que celui qui s'enorgueillit mette son orgueil dans le Seigneur. 18 Ce n'est pas celui qui se recommande lui-même qui a fait ses preuves, mais celui que le Seigneur recommande.",
-      "16 to preach the gospel in the regions beyond you, and not to boast in another man's sphere of accomplishment. 17 But he who glories, let him glory in the Lord.'' 18 For not he who commends himself is approved, but whom the Lord commends.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=2703&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية (1 :1 - 19 )",
-      "Galates 1 : 1 - 19",
-      "Galatians 1:1-19",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بولس رسول لا من الناس ولا بانسان بل بيسوع المسيح والله الآب الذي اقامه من الاموات. وجميع الاخوة الذين معي الى كنائس غلاطية.",
-      "1Paul, apôtre, non de la part des hommes, ni par un homme, mais par Jésus Christ et Dieu le Père qui l'a ressuscité d'entre les morts, 2 et tous les frères qui sont avec moi, aux Églises de Galatie:",
-      "1Paul, an apostle (not from men nor through man, but through Jesus Christ and God the Father who raised Him from the dead), 2 and all the brethren who are with me, To the churches of Galatia:",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "نعمة لكم وسلام من الله الآب ومن ربنا يسوع المسيح. الذي بذل نفسه لاجل خطايانا لينقذنا من العالم الحاضر الشرير حسب ارادة الله وابينا الذي له المجد الى ابد الآبدين.آمين",
-      "3 à vous grâce et paix de la part de Dieu notre Père et du Seigneur Jésus Christ, 4 qui s'est livré pour nos péchés, afin de nous arracher à ce monde du mal, conformément à la volonté de Dieu, qui est notre Père. 5 A lui soit la gloire pour les siècles des siècles, Amen.",
-      "3 Grace to you and peace from God the Father and our Lord Jesus Christ, 4 who gave Himself for our sins, that He might deliver us from this present evil age, according to the will of our God and Father, 5 to whom be glory forever and ever. Amen.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "اني اتعجب انكم تنتقلون هكذا سريعا عن الذي دعاكم بنعمة المسيح الى انجيل آخر. ليس هو آخر غير انه يوجد قوم يزعجونكم ويريدون ان يحوّلوا انجيل المسيح.",
-      "6 J'admire avec quelle rapidité vous vous détournez de celui qui vous a appelés par la grâce du Christ, pour passer à un autre évangile .7 Non pas qu'il y en ait un autre; il y a seulement des gens qui jettent le trouble parmi vous et qui veulent renverser l'Évangile du Christ.",
-      "6 I marvel that you are turning away so soon from Him who called you in the grace of Christ, to a different gospel, 7 which is not another; but there are some who trouble you and want to pervert the gospel of Christ.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكن ان بشرناكم نحن او ملاك من السماء بغير ما بشرناكم فليكن اناثيما. كما سبقنا فقلنا اقول الآن ايضا ان كان احد يبشركم في غير ما قبلتم فليكن اناثيما.",
-      "8 Mais si quelqu'un, même nous ou un ange du ciel, vous annonçait un évangile différent de celui que nous vous avons annoncé, qu'il soit anathème! 9 Nous l'avons déjà dit, et je le redis maintenant: si quelqu'un vous annonce un évangile différent de celui que vous avez reçu, qu'il soit anathème!",
-      "8 But even if we, or an angel from heaven, preach any other gospel to you than what we have preached to you, let him be accursed. 9 As we have said before, so now I say again, if anyone preaches any other gospel to you than what you have received, let him be accursed.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أفاستعطف الآن الناس ام الله.ام اطلب ان ارضي الناس.فلو كنت بعد ارضي الناس لم اكن عبدا للمسيح. واعرّفكم ايها الاخوة الانجيل الذي بشرت به انه ليس بحسب انسان.",
-      "10 Car, maintenant, est-ce que je cherche la faveur des hommes ou celle de Dieu? Est-ce que je cherche à plaire aux hommes? Si j'en étais encore à plaire aux hommes, je ne serais plus serviteur de Christ.11 Car, je vous le déclare, frères: cet Évangile que je vous ai annoncé n'est pas de l'homme;",
-      "10 For do I now persuade men, or God? Or do I seek to please men? For if I still pleased men, I would not be a bondservant of Christ. 11 But I make known to you, brethren, that the gospel which was preached by me is not according to man.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لاني لم اقبله من عند انسان ولا علّمته بل باعلان يسوع المسيح. فانكم سمعتم بسيرتي قبلا في الديانة اليهودية اني كنت اضطهد كنيسة الله بافراط واتلفها.",
-      "12 et d'ailleurs, ce n'est pas par un homme qu'il m'a été transmis ni enseigné, mais par une révélation de Jésus Christ. 13 Car vous avez entendu parler de mon comportement naguère dans le judaïsme: avec quelle frénésie je persécutais l'Église de Dieu et je cherchais à la détruire;",
-      "12 For I neither received it from man, nor was I taught it, but it came through the revelation of Jesus Christ. 13 For you have heard of my former conduct in Judaism, how I persecuted the church of God beyond measure and tried to destroy it.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وكنت اتقدم في الديانة اليهودية على كثيرين من اترابي في جنسي اذ كنت اوفر غيرة في تقليدات آبائي.ولكن لما سرّ الله الذي افرزني من بطن امي ودعاني بنعمته. ان يعلن ابنه فيّ",
-      "14 je faisais des progrès dans le judaïsme, surpassant la plupart de ceux de mon âge et de ma race par mon zèle débordant pour les traditions de mes pères. 15 Mais lorsque Celui qui m'a mis à part depuis le sein de ma mère et m'a appelé par sa grâce a jugé bon de révéler en moi son Fils",
-      "14 And I advanced in Judaism beyond many of my contemporaries in my own nation, being more exceedingly zealous for the traditions of my fathers. 15 But when it pleased God, who separated me from my mother's womb and called me through His grace, 16 to reveal His Son in me,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لابشر به بين الامم للوقت لم استشر لحما ودما. ولا صعدت الى اورشليم الى الرسل الذين قبلي بل انطلقت الى العربية ثم رجعت ايضا الى دمشق.",
-      "afin que je l'annonce parmi les païens, aussitôt, loin de recourir à aucun conseil humain,17 ou de monter à Jérusalem auprès de ceux qui étaient apôtres avant moi, je suis parti pour l'Arabie, puis je suis revenu à Damas.",
-      "that I might preach Him among the Gentiles, I did not immediately confer with flesh and blood, 17 nor did I go up to Jerusalem to those who were apostles before me; but I went to Arabia, and returned again to Damascus.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ثم بعد ثلاث سنين صعدت الى اورشليم لأتعرّف ببطرس فمكثت عنده خمسة عشر يوما. ولكنني لم ار غيره من الرسل الا يعقوب اخا الرب.",
-      "18 Ensuite, trois ans après, je suis monté à Jérusalem pour faire la connaissance de Céphas et je suis resté quinze jours auprès de lui, sans voir cependant aucun autre apôtre, mais seulement Jacques, le frère du Seigneur.",
-      "18 Then after three years I went up to Jerusalem to see Peter, and remained with him fifteen days. 19 But I saw none of the other apostles except James, the Lord's brother.",
     ],
   ],
   [
@@ -2273,7 +2088,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=2204&C=Title",
+      Prefix.stPaul + "&D=2204||0313&C=Title",
       " بولس الرسول الأولى إلى أَهْلِ عبرانين 2:5-18",
       "Hebrews 2:5-18",
       "Hebrews 2:5-18",
@@ -2325,50 +2140,6 @@ ReadingsArrays.StPaulArray = [
       "من ثم كان ينبغي ان يشبه اخوته في كل شيء لكي يكون رحيما ورئيس كهنة امينا في ما للّه حتى يكفّر خطايا الشعب. لانه في ما هو قد تألم مجربا يقدر ان يعين المجربين",
       "17 Aussi devait–il devenir, en tout, semblable à ses frères, afin d’être un souverain sacrificateur miséricordieux et fidèle dans le service de Dieu, pour faire l’expiation des péchés du peuple.18 Car du fait qu’il a souffert lui–même quand il fut tenté, il peut secourir ceux qui sont tentés.",
       "17 Therefore, in all things He had to be made like His brethren, that He might be a merciful and faithful High Priest in things pertaining to God, to make propitiation for the sins of the people. 18 For in that He Himself has suffered, being tempted, He is able to aid those who are tempted.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=2304&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين ( 11 : 17 - 27 )",
-      "Hébreux 11 : 17 - 27",
-      "Hebrews 11:17-27",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وبالإيمان قرَّب إبراهيم إسحق حين جُرِّبَ. وقرَّب ابنه الوحيد ذاك الذي قَبِلَ المواعيد بسببه، الذي قيل له: ' أنه بإسحق يُدعى لك زرعٌ'.",
-      "17 Par la foi, Abraham, mis à l'épreuve, a offert Isaac; il offrait le fils unique, alors qu'il avait reçu les promesses et qu'on lui avait dit: 18 C'est par Isaac qu'une descendance te sera assurée. Même un mort, se disait-il,",
-      "17 By faith Abraham, when he was tested, offered up Isaac, and he who had received the promises offered up his only begotten son, 18 of whom it was said, In Isaac your seed shall be called,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وافتكر في نفسه أنَّ الله قادرٌ أن يقيمه من الأموات، فمن أجل هذا أخذه بمثلٍ. بالإيمان من أجل ما سيكون بَارَكَ إسحق يعقوب وعيسو.",
-      "19 Dieu est capable de le ressusciter; aussi, dans une sorte de préfiguration, il retrouva son fils. 20 Par la foi aussi, Isaac bénit Jacob et Esaü en vue de l'avenir.",
-      "19 concluding that God was able to raise him up, even from the dead, from which he also received him in a figurative sense. 20 By faith Isaac blessed Jacob and Esau concerning things to come.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالإيمان يعقوب عند موته بَارَكَ كل واحد من ابني يوسف، وسجَد على رأس عصاه. بالإيمان يوسف عند موته ذكر خروج بني إسرائيل وأوصى من أجل عظامه.",
-      "21 Par la foi, Jacob, sur le point de mourir, bénit chacun des fils de Joseph et se prosterna appuyé sur l'extrémité de son bâton. 22 Par la foi, Joseph, approchant de sa fin, évoqua l'exode des fils d'Israël, et donna des ordres au sujet de ses ossements.",
-      "21 By faith Jacob, when he was dying, blessed each of the sons of Joseph, and worshiped, leaning on the top of his staff. 22 By faith Joseph, when he was dying, made mention of the departure of the children of Israel, and gave instructions concerning his bones",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالإيمان موسى، لمَّا وُلِدَ، أخفاه أبواه ثلاثة أشهر، لأنَّهم رأيا أنَّ الصَّبيَّ جميلاً، ولم يخافوا من أمر الملك.",
-      "23 Par la foi, Moïse, après sa naissance, fut caché trois mois durant par ses parents, car ils avaient vu la beauté de leur enfant et ils ne craignirent pas le décret du roi.",
-      "23 By faith Moses, when he was born, was hidden three months by his parents, because they saw he was a beautiful child; and they were not afraid of the king's command.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالإيمان موسى لمَّا كَبِرَ أنكر أن يُدعَى ابناً لابنة فرعون، وشاء بالأحرَى أن يتألم مع شعب الله أفضل من أن يتنعَّم بالخطيَّة زمناً يسيراً،",
-      "24 Par la foi, Moïse, devenu grand, renonça à être appelé fils de la fille du Pharaon. 25 Il choisit d'être maltraité avec le peuple de Dieu plutôt que de jouir pour un temps du péché.",
-      "24 By faith Moses, when he became of age, refused to be called the son of Pharaoh's daughter, 25 choosing rather to suffer affliction with the people of God than to enjoy the passing pleasures of sin,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "إذ جعل عار المسيح عنده أنه غنىً عظيماً أوفر من كنوز مصر، لأنه كان ينتظر حُسن المُجازاة. بالإيمان ترك مصر ولم يَخفْ من غضب الملك، لأنه كان مداوماً للغير منظور كأنَّهُ واحدٌ منظورٌ.",
-      "26 Il considéra l'humiliation du Christ comme une richesse plus grande que les trésors de l'Égypte, car il avait les yeux fixés sur la récompense. 27 Par la foi, il quitta l'Égypte sans craindre la colère du roi et, en homme qui voit celui qui est invisible, il tint ferme.",
-      "26 esteeming the reproach of Christ greater riches than the treasures in Egypt; for he looked to the reward. 27 By faith he forsook Egypt, not fearing the wrath of the king; for he endured as seeing Him who is invisible.",
     ],
   ],
   [
@@ -2485,74 +2256,6 @@ ReadingsArrays.StPaulArray = [
       "يغارون لكم ليس حسنا بل يريدون ان يصدوكم لكي تغاروا لهم. حسنة هي الغيرة في الحسنى كل حين وليس حين حضوري عندكم فقط.",
       "17 L'empressement qu'on vous témoigne n'est pas de bon aloi; ils veulent seulement vous détacher de moi pour devenir eux-mêmes l'objet de votre empressement. 18 Ce qui est bon c'est de se voir témoigner un empressement bien intentionné, en tout temps, et pas seulement quand j'étais présent parmi vous.",
       "17 They zealously court you, but for no good; yes, they want to exclude you, that you may be zealous for them. 18 But it is good to be zealous in a good thing always, and not only when I am present with you.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=2904&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ عبرانيين (1:1-14 &2:1-4 )",
-      "Hebrews 1:1-14 &2:1-4",
-      "Hebrews 1:1-14 &2:1-4",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الله بعد ما كلم الآباء بالانبياء قديما بانواع وطرق كثيرة. كلمنا في هذه الايام الاخيرة في ابنه الذي جعله وارثا لكل شيء الذي به ايضا عمل العالمين.",
-      "1 Après avoir, à bien des reprises et de bien de manières, parlé autrefois aux pères dans les prophètes, Dieu, 2 en la période finale où nous sommes, nous a parlé à nous en un Fils qu'il a établi héritier de tout, par qui aussi il a créé les mondes.",
-      "1God, who at various times and in various ways spoke in time past to the fathers by the prophets, 2 has in these last days spoken to us by His Son, whom He has appointed heir of all things, through whom also He made the worlds;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذي وهو بهاء مجده ورسم جوهره وحامل كل الاشياء بكلمة قدرته بعدما صنع بنفسه تطهيرا لخطايانا جلس في يمين العظمة في الاعالي.",
-      "3 Ce Fils est resplendissement de sa gloire et expression de son être et il porte l'univers par la puissance de sa parole. Après avoir accompli la purification des péchés, il s'est assis à la droite de la Majesté dans les hauteurs,",
-      "3 who being the brightness of His glory and the express image of His person, and upholding all things by the word of His power, when He had by Himself purged our sins, sat down at the right hand of the Majesty on high",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "صائرا اعظم من الملائكة بمقدار ما ورث اسما افضل منهم . لانه لمن من الملائكة قال قط انت ابني انا اليوم ولدتك.وايضا انا اكون له ابا وهو يكون لي ابنا.",
-      "4 devenu d'autant supérieur aux anges qu'il a hérité d'un nom bien différent du leur.5 Auquel des anges, en effet, a-t-il jamais dit: Tu es mon fils, moi, aujourd'hui, je t'ai engendré? Et encore: Moi, je serai pour lui un père et lui sera pour moi un fils?",
-      "4 having become so much better than the angels, as He has by inheritance obtained a more excellent name than they. 5 For to which of the angels did He ever say: You are My Son, today I have begotten You''? And again: I will be to Him a Father, and He shall be to Me a Son''?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وايضا متى ادخل البكر الى العالم يقول ولتسجد له كل ملائكة الله. وعن الملائكة يقول الصانع ملائكته رياحا وخدامه لهيب نار.",
-      "6 Par contre, lorsqu'il introduit le premier-né dans le monde, il dit: Et que se prosternent devant lui tous les anges de Dieu. 7 Pour les anges, il a cette parole: Celui qui fait de ses anges des esprits et de ses serviteurs une flamme de feu.",
-      "6 But when He again brings the firstborn into the world, He says: Let all the angels of God worship Him.'' 7 And of the angels He says: Who makes His angels spirits and His ministers a flame of fire.''",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واما عن الابن كرسيك يا الله الى دهر الدهور.قضيب استقامة قضيب ملكك. احببت البر وابغضت الاثم من اجل ذلك مسحك الله الهك بزيت الابتهاج اكثر من شركائك.",
-      "8 Mais pour le Fils, celle-ci: Ton trône, Dieu, est établi à tout jamais! Et Le sceptre de la droiture est sceptre de ton règne. 9 Tu aimas la justice et détestas l'iniquité, c'est pourquoi, ô Dieu, ton Dieu te donna l'onction d'une huile d'allégresse, de préférence à tes compagnons.",
-      "8 But to the Son He says: Your throne, O God, is forever and ever; a scepter of righteousness is the scepter of Your Kingdom. 9 You have loved righteousness and hated lawlessness; therefore God, Your God, has anointed You with the oil of gladness more than Your companions.''",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وانت يا رب في البدء اسست الارض والسموات هي عمل يديك. هي تبيد ولكن انت تبقى وكلها كثوب تبلى.",
-      "10 Et encore: C'est toi qui, aux origines, Seigneur, fondas la terre, et les cieux sont l'oeuvre de tes mains. 11 Eux périront, mais toi, tu demeures. Oui, tous comme un vêtement vieilliront et comme on fait d'un manteau,",
-      "10 And: You, Lord, in the beginning laid the foundation of the earth, and the heavens are the work of Your hands. 11 They will perish, but You remain; and they will all grow old like a garment;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وكرداء تطويها فتتغيّر ولكن انت انت وسنوك لن تفنى. ثم لمن من الملائكة قال قط اجلس عن يميني حتى اضع اعداءك موطئا لقدميك.",
-      "12 tu les enrouleras, comme un vêtement, oui, ils seront changés, mais toi, tu es le même et tes années ne tourneront pas court.13 Et auquel des anges a-t-il jamais dit: Siège à ma droite, de tes ennemis, je vais faire ton marchepied?",
-      "12 Like a cloak You will fold them up, and they will be changed. But You are the same, and Your years will not fail.'' 13 But to which of the angels has He ever said: Sit at My right hand, till I make Your enemies Your footstool''?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أليس جميعهم ارواحا خادمة مرسلة للخدمة لاجل العتيدين ان يرثوا الخلاص. لذلك يجب ان نتنبه اكثر الى ما سمعنا لئلا نفوته.",
-      "14 Ne sont-ils pas tous des esprits remplissant des fonctions et envoyés en service pour le bien de ceux qui doivent recevoir en héritage le salut? 1 Il s'ensuit que nous devons prendre plus au sérieux le message entendu, si nous ne voulons pas aller à la dérive.",
-      "14 Are they not all ministering spirits sent forth to minister for those who will inherit salvation?1 Therefore we must give the more earnest heed to the things we have heard, lest we drift away.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لانه ان كانت الكلمة التي تكلم بها ملائكة قد صارت ثابتة وكل تعد ومعصية نال مجازاة عادلة. فكيف ننجو نحن ان اهملنا خلاصا هذا مقداره",
-      "2 Car si la parole annoncée par des anges entra en vigueur et si toute transgression et toute désobéissance reçurent une juste rétribution, 3 comment échapperons-nous, si nous négligeons un pareil salut,",
-      "2 For if the word spoken through angels proved steadfast, and every transgression and disobedience received a just reward, 3 how shall we escape if we neglect so great a salvation,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "قد ابتدأ الرب بالتكلم به ثم تثبت لنا من الذين سمعوا. شاهدا الله معهم بآيات وعجائب وقوات متنوعة ومواهب الروح القدس حسب ارادته.",
-      "qui commença à être annoncé par le Seigneur, puis fut confirmé pour nous par ceux qui l'avaient entendu, 4 et fut appuyé aussi du témoignage de Dieu par des signes et des prodiges, des miracles de toute sorte, et par des dons de l'Esprit Saint répartis selon sa volonté!",
-      "which at the first began to be spoken by the Lord, and was confirmed to us by those who heard Him, 4 God also bearing witness both with signs and wonders, with various miracles, and gifts of the Holy Spirit, according to His own will?",
     ],
   ],
   [
@@ -3197,10 +2900,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1205&C=Title",
+      Prefix.stPaul + "&D=1205||Pntl27&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (1 : 1 – 14 )",
-      "Ephesians 1:1-14",
-      "Ephesians 1:1-14",
+      "Ephesians (1: 1-14)",
+      "Ephesians (1: 1-14)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -3343,56 +3046,6 @@ ReadingsArrays.StPaulArray = [
       "وان كان مدح ففي هذه افتكروا. وما تعلمتموه وتسلمتموه وسمعتموه ورأيتموه فيّ فهذا افعلوا واله السلام يكون معكم.",
       "ce qui s'appelle vertu, ce qui mérite l'éloge, tout cela, portez-le à votre actif. 9 Ce que vous avez appris, reçu, entendu de moi, observé en moi, tout cela, mettez-le en pratique. Et le Dieu de la paix sera avec vous.",
       "if there is any virtue and if there is anything praiseworthy-- meditate on these things. 9 The things which you learned and received and heard and saw in me, these do, and the God of peace will be with you 9 The things which you learned and received and heard and saw in me, these do, and the God of peace will be with you",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=2605&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (12:3-14)",
-      "Hebrews 12:3-14",
-      "Hebrews 12:3-14",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فتفكروا في الذي احتمل من الخطاة مقاومة لنفسه مثل هذه لئلا تكلوا وتخوروا في نفوسكم لم تقاوموا بعد حتى الدم مجاهدين ضد الخطية",
-      "3 Considérez en effet celui qui a enduré de la part des pécheurs une telle opposition contre sa personne, afin que vous ne vous fatiguiez pas, l’âme découragée. 4 Vous n’avez pas encore résisté jusqu’au sang en combattant contre le péché.",
-      "3 For consider Him who endured such hostility from sinners against Himself, lest you become weary and discouraged in your souls. 4 You have not yet resisted to bloodshed, striving against sin.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وقد نسيتم الوعظ الذي يخاطبكم كبنين يا ابني لا تحتقر تأديب الرب ولا تخر اذا وبخك.لان الذي يحبه الرب يؤدبه ويجلد كل ابن يقبله.",
-      "5 Et vous avez oublié l’exhortation qui vous est adressée comme à des fils : Mon fils, ne prends pas à la légère la correction du Seigneur, Et ne te décourage pas lorsqu’il te reprend. 6 Car le Seigneur corrige celui qu’il aime, Et frappe de verges tout fils qu’il agrée.",
-      "5 And you have forgotten the exhortation which speaks to you as to sons: My son, do not despise the chastening of the Lord, nor be discouraged when you are rebuked by Him; 6 For whom the Lord loves He chastens, and scourges every son whom He receives.''",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ان كنتم تحتملون التأديب يعاملكم الله كالبنين.فاي ابن لا يؤدبه ابوه. ولكن ان كنتم بلا تأديب قد صار الجميع شركاء فيه فانتم نغول لا بنون.",
-      "7 Supportez la correction : c’est comme des fils que Dieu vous traite. Car quel est le fils que le père ne corrige pas ? 8 Mais si vous êtes exempts de la correction à laquelle tous ont part, alors vous êtes des bâtards et non des fils.",
-      "7 If you endure chastening, God deals with you as with sons; for what son is there whom a father does not chasten? 8 But if you are without chastening, of which all have become partakers, then you are illegitimate and not sons.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ثم قد كان لنا آباء اجسادنا مؤدبين وكنا نهابهم.أفلا نخضع بالأولى جدا لأبي الارواح فنحيا.",
-      "9 Puisque nous avons eu des pères selon la chair, qui nous corrigeaient et que nous avons respectés, ne devons–nous pas, à plus forte raison, nous soumettre au Père des esprits pour avoir la vie ?",
-      "9 Furthermore, we have had human fathers who corrected us, and we paid them respect. Shall we not much more readily be in subjection to the Father of spirits and live?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لان اولئك أدبونا اياما قليلة حسب استحسانهم.واما هذا فلاجل المنفعة لكي نشترك في قداسته. ولكن كل تأديب في الحاضر لا يرى انه للفرح بل للحزن.",
-      "10 Nos pères, en effet, nous corrigeaient pour peu de temps, comme ils le jugeaient bon ; mais Dieu nous corrige pour notre véritable intérêt, afin de nous faire participer à sa sainteté.",
-      "10 For they indeed for a few days chastened us as seemed best to them, but He for our profit, that we may be partakers of His holiness.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واما اخيرا فيعطي الذين يتدربون به ثمر بر للسلام. لذلك قوّموا الايادي المسترخية والركب المخلّعة",
-      "11 Toute correction, il est vrai, paraît être au premier abord un sujet de tristesse et non de joie ; mais plus tard elle procure un paisible fruit de justice à ceux qu’elle a formés.12 C’est pourquoi redressez les mains abattues et les genoux paralysés.",
-      "11 Now no chastening seems to be joyful for the present, but painful; nevertheless, afterward it yields the peaceable fruit of righteousness to those who have been trained by it. 12 Therefore strengthen the hands which hang down, and the feeble knees,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واصنعوا لارجلكم مسالك مستقيمة لكي لا يعتسف الاعرج بل بالحري يشفى. اتبعوا السلام مع الجميع والقداسة التي بدونها لن يرى احد الرب.",
-      "13 Que vos pieds suivent des pistes droites, afin que ce qui est boiteux ne dévie pas, mais plutôt soit guéri. 14 Recherchez la paix avec tous, et la sanctification sans laquelle personne ne verra le Seigneur.",
-      "13 and make straight paths for your feet, so that what is lame may not be dislocated, but rather be healed. 14 Pursue peace with all people, and holiness, without which no one will see the Lord:",
     ],
   ],
   [
@@ -3553,68 +3206,6 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=062ndSunday&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى العبرانيين (7:1-17)",
-      "Hébreux 7:1-17",
-      "Hebrews 7:1-17",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لأنَّ مَلكي صادقَ هذا، مَلِكَ ساليمَ، كاهِنَ اللهِ العليِّ، الذي خرجَ لاستقبال إبراهيمَ حالَ رجوعه من كَسرَةِ المُلوكِ وبارَكهُ، الذي قَسَمَ لهُ إبراهيمُ عُشراً مِنْ كُلِّ شيءٍ يمتلكه. المُتَرْجَمَ أوَّلاً ' مَلِكَ البرِّ '",
-      "1 Ce Melkisédeq, roi de Salem, prêtre du Dieu très haut, est allé à la rencontre d'Abraham, lorsque celui-ci revenait du combat contre les rois, et l'a béni. 2 C'est à lui qu'Abraham remit la dîme de tout. D'abord, il porte un nom qui se traduit 'roi de justice',",
-      "1 For this Melchizedek, king of Salem, priest of the Most High God, who met Abraham returning from the slaughter of the kings and blessed him, 2 to whom also Abraham gave a tenth part of all, first being translated king of righteousness,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ثُمَّ أيضاً مَلِكَ ساليمَ ' الذي معناه ' مَلِكَ السَّلام ' بلا أبٍ، بلا أُمٍّ، بلا نسبٍ. لا بداءَةَ أيَّام لهُ ولا نهايَةَ حياةٍ. بل هو مُشبَّهٌ بِابنِ اللهِ، يبقَى كاهناً إلى الأبدِ.",
-      "et ensuite, il est aussi roi de Salem, c'est-à-dire roi de paix. 3 Lui qui n'a ni père, ni mère, ni généalogie, ni commencement pour ses jours, ni fin pour sa vie, mais qui est assimilé au Fils de Dieu reste prêtre à perpétuité.",
-      "and then also king of Salem, meaning king of peace, 3 without father, without mother, without genealogy, having neither beginning of days nor end of life, but made like the Son of God, remains a priest continually.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ثُمَّ انظروا مَا أعظمَ هذا الذي أعطاهُ إبراهيمُ رئيسُ الآباءِ، عُشراً مِنْ خيار مالهُ! وأمَّا الذينَ هُم مِن بني لاوي، عِندما يأخذونَ الكهنوتَ، فلهُمْ وصيَّةٌ أنْ يأخذوا مِن الشَّعب",
-      "4 Contemplez la grandeur de ce personnage, à qui Abraham a donné en dîme la meilleure part du butin, lui, le patriarche. 5 Or, ceux des fils de Lévi qui reçoivent le sacerdoce ont ordre, de par la loi, de prélever la dîme sur le peuple,",
-      "4 Now consider how great this man was, to whom even the patriarch Abraham gave a tenth of the spoils. 5 And indeed those who are of the sons of Levi, who receive the priesthood, have a commandment to receive tithes from the people according to the law,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أي إخوتهم بمقتضَى النَّاموس، مع أنَّهم قد خرجوا من صُلبِ إبراهيم. ولكنَّ الذي ليسَ له نسبٌ منهُم، قد أخذ عُشراً من إبراهيم، وبارَك الذي له المواعيدُ! وبدونَ كلّ جدالٍ: الأصغرُ يُبَارَكُ مِن الأكبر منه،",
-      "c'est-à-dire sur leurs frères, qui sont pourtant des descendants d'Abraham.6 Mais lui, qui ne figure pas dans leurs généalogies, a soumis Abraham à la dîme et a béni le titulaire des promesses. 7 Or, sans aucune contestation, c'est l'inférieur qui est béni par le supérieur.",
-      "that is, from their brethren, though they have come from the loins of Abraham; 6 but he whose genealogy is not derived from them received tithes from Abraham and blessed him who had the promises. 7 Now beyond all contradiction the lesser is blessed by the better.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وهنا أُناسٌ مائتونَ يأخذون عُشوراً، وأمَّا هُناكَ فالمشهودُ له بأنَّه حيٌّ. كقول مَن يقول عن إبراهيم، ولاوي أيضاً الآخذ العشور قد أعطى العشور. لأنَّه كان بعدُ في صُلبِ أبيه حين استقبله ملكي صادق.",
-      "8 Et ici, ceux qui perçoivent la dîme sont des hommes qui meurent, là c'est quelqu'un dont on atteste qu'il vit. 9 Et pour tout dire, en la personne d'Abraham, même Lévi, qui perçoit la dîme, a été soumis à la dîme. Car il était encore dans les reins de son ancêtre, lorsque eut lieu la rencontre avec Melkisédeq.",
-      "8 Here mortal men receive tithes, but there he receives them, of whom it is witnessed that he lives. 9 Even Levi, who receives tithes, paid tithes through Abraham, so to speak, 10 for he was still in the loins of his father when Melchizedek met him.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فلو كان بالكهنوت اللاويِّ كمالٌ - إذ الشَّعب أخذ النَّاموس عليه - ماذا كانت الحاجة بعدُ إلى أن يقوم كاهنٌ آخَرُ على رتبة ملكي صادق، ولا يُقالُ ' على رُتبةِ هارون ' ؟",
-      "11 Si on était parvenu à un parfait accomplissement par le sacerdoce lévitique, car il était la base de la législation donnée au peuple, quel besoin y aurait-il eu encore de susciter un autre prêtre, dans la ligne de Melkisédeq, au lieu de le désigner dans la ligne d'Aaron?",
-      "11 Therefore, if perfection were through the Levitical priesthood (for under it the people received the law), what further need was there that another priest should rise according to the order of Melchizedek, and not be called according to the order of Aaron?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لأنَّه إنْ تغيَّرَ الكهنوتُ، فبالضَّرورةِ يَصيرُ تغيُّرٌ للنَّاموس أيضاً. لأنَّ الذي يُقال عنه هذا كان أُخِذَ من سبط آخَرَ لم يُلازم أحدٌ منه المذبح. فإنَّه واضحٌ أنَّ ربَّنا قد طلعَ من سبطِ يهوذا،",
-      "12 Car un changement de sacerdoce entraîne forcément un changement de loi. 13 Et celui que vise le texte cité fait partie d'une tribu dont aucun membre n'a été affecté au service de l'autel. 14 Il est notoire, en effet, que notre Seigneur est issu de Juda,",
-      "12 For the priesthood being changed, of necessity there is also a change of the law. 13 For He of whom these things are spoken belongs to another tribe, from which no man has officiated at the altar. 14 For it is evident that our Lord arose from Judah,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذي لم يَتكلَّم عنه موسى شيئاً من جهة الكهنوت. وذلك أكثر وضوحاً أيضاً إنْ كان على شبهِ ملكي صادق يقوم كاهنٌ آخَرُ،",
-      "d'une tribu pour laquelle Moïse n'a rien dit dans ses textes sur les prêtres. 15 Et l'évidence est plus grande encore si l'autre prêtre suscité ressemble à Melkisédeq,",
-      "of which tribe Moses spoke nothing concerning priesthood. 15 And it is yet far more evident if, in the likeness of Melchizedek, there arises another priest",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وهذا قد صار ليسَ بحَسبِ ناموس وصيَّةٍ جسديَّةٍ، بل بحسبِ قوَّة حياةٍ لا تزول. لأنَّه يشهد عنه أنكَ: ' الكاهن إلى الأبدِ على رُتبةِ ملكي صادق '.",
-      "16 et n'accède pas à la prêtrise en vertu d'une loi de filiation humaine, mais en vertu de la puissance d'une vie indestructible. 17 Ce témoignage, en effet, lui est rendu: Tu es prêtre pour l'éternité à la manière de Melkisédeq.",
-      "16 who has come, not according to the law of a fleshly commandment, but according to the power of an endless life. 17 For He testifies: You are a priest forever According to the order of Melchizedek.",
-    ],
-  ],
-  [
-    [
       Prefix.stPaul + "&D=063rdSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ العبرانيين (3: 1 – 4: 2)",
       "Hébreux 3: 1 – 4: 2",
@@ -3733,10 +3324,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1307&C=Title",
+      Prefix.stPaul + "&D=1307||2503&C=Title",
       "رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورونثوس (10 :1 – 18 )",
-      "2 Corinthiens 10 : 1 - 18",
-      "2 Corinthians 10:1-18",
+      "2 Corinthiens (10: 1-18)",
+      "2 Corinthians (10: 1-18)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -4009,10 +3600,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=094thSunday&C=Title",
+      Prefix.stPaul + "&D=094thSunday||102ndSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2 : 6 - 16 )",
-      "1 Corinthians 2:6-16",
-      "1 Corinthians 2:6-16",
+      "1 Corinthians (2: 6-16)",
+      "1 Corinthians (2: 6-16)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -4055,56 +3646,6 @@ ReadingsArrays.StPaulArray = [
       "لأنَّه مَن عرفَ فكرَ الربِّ ومَن يمكنه أن يُعلِّمه؟ وأمَّا نحنُ فلنا فكرُ المسيحِ.",
       "16 For who has known the mind of the Lord that he may instruct Him? But we have the mind of Christ.",
       "16 En effet : Qui a connu la pensée du Seigneur, Pour l’instruire ? Or nous, nous avons la pensée de Christ. 16 En effet : Qui a connu la pensée du Seigneur, Pour l’instruire ? Or nous, nous avons la pensée de Christ.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=1009&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ الرسول إلى العبرانيين( 11 : 32 - 12 : 2 )",
-      "Hébreux 11:32 - 12 : 2",
-      "Hebrews 11:32-12:2",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ماذا أقولُ أيضاً؟ لأنه يُعوزُني الوقت إن أخبَرت عن جدعون، وباراق، وشَمشُون، ويَفتاحَ، وداود، وصَموئيل، والأنبياء الأُخر، الذين بالإيمان قَهَروا مَمالِك، وعملوا البر، ونالوا المواعيد،",
-      "32 Et que dire encore? Le temps me manquerait pour parler en détail de Gédéon, Barak, Samson, Jephté, David, Samuel et les prophètes, 33 eux qui, grâce à la foi, conquirent des royaumes, mirent en oeuvre la justice, virent se réaliser des promesses,",
-      "32 And what more shall I say? For the time would fail me to tell of Gideon and Barak and Samson and Jephthah, also of David and Samuel and the prophets: 33 who through faith subdued kingdoms, worked righteousness, obtained promises,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وسدُّوا أفواه أُسودٍ، أخمدوا قوَّة النَّار، ونجوا مِن حدِّ السَّيف، وتقوُّوا في الضَّعف، صاروا أقوياء في الحرب، وهزموا جيوش الغُرباء، أَخَذَت نِساءٌ أمواتَهُنَّ من بعد قيامةٍ.",
-      "muselèrent la gueule des lions, 34 éteignirent la puissance du feu, échappèrent au tranchant de l'épée, reprirent vigueur après la maladie, se montrèrent vaillants à la guerre, repoussèrent les armées étrangères; 35 des femmes retrouvèrent leurs morts par résurrection.",
-      "stopped the mouths of lions, 34 quenched the violence of fire, escaped the edge of the sword, out of weakness were made strong, became valiant in battle, turned to flight the armies of the aliens. 35 Women received their dead raised to life again.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وآخرون ضُربوا مثل الطُّبول ولم يقبلوا إليهم النَّجاة لكى ينالوا القيامة الفاضِلة. وآخرون صُلبوا بالهزء والجلد، ثم في قُيودٍ أيضاً وحَبسٍ. ورُجموا، ونُشِروا بالمناشِير، وجُرِّبوا، وماتوا بقتل السَّيف،",
-      "Mais d'autres subirent l'écartèlement, refusant la délivrance pour aboutir à une meilleure résurrection; 36 d'autres encore subirent l'épreuve des moqueries et du fouet et celle des liens et de la prison; 37 ils furent lapidés, ils furent sciés; ils moururent tués à coups d'épée;",
-      "And others were tortured, not accepting deliverance, that they might obtain a better resurrection. 36 Still others had trial of mockings and scourgings, yes, and of chains and imprisonment. 37 They were stoned, they were sawn in two, were tempted, were slain with the sword.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وطافُوا في فراء وجُلودِ مِعزَى، معُوزين مُتضايقين مُتألِّمين، هؤلاء الذين لم يكن العالم يستحقَّهمْ. تائهين في القفار والجبال والمغاير وشقوق الأرض.",
-      "ils menèrent une vie errante, vêtus de peaux de moutons ou de toisons de chèvres; ils étaient soumis aux privations, opprimés, maltraités,38 eux dont le monde n'était pas digne; ils erraient dans les déserts et les montagnes, dans les grottes et les cavités de la terre.",
-      "They wandered about in sheepskins and goatskins, being destitute, afflicted, tormented--38 of whom the world was not worthy. They wandered in deserts and mountains, in dens and caves of the earth.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فهؤلاء كلُّهُم، شُهِد لهم من قِبل الإيمان، ولم ينالوا الموعد. لأن الله منذ البدء تقدَّم فنظر من أجلنا أمراً مختاراً، لكى لا يُكمَلُوا بدوننا.",
-      "39 Eux tous, s'ils ont reçu bon témoignage grâce à leur foi, n'ont cependant pas obtenu la réalisation de la promesse. 40 Puisque Dieu prévoyait pour nous mieux encore, ils ne devaient pas arriver sans nous à l'accomplissement.",
-      "39 And all these, having obtained a good testimony through faith, did not receive the promise, 40 God having provided something better for us, that they should not be made perfect apart from us.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "من أجل هذا نحن أيضاً الذين لنا سحابةُ شهداء هذا مقدارها مُحيطة بنا، فلنطرح عنَّا كلَّ تكبُّر، والخطيَّة القائمة علينا جداً، وبالصَّبر فلنسعى في الجهاد الموضوع لنا،",
-      "1 Ainsi donc, nous aussi, qui avons autour de nous une telle nuée de témoins, rejetons tout fardeau et le péché qui sait si bien nous entourer, et courons avec endurance l'épreuve qui nous est proposée,",
-      "1 Therefore we also, since we are surrounded by so great a cloud of witnesses, let us lay aside every weight, and the sin which so easily ensnares us, and let us run with endurance the race that is set before us,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وننظر إلى رئيس الإيمان ومُكمِّله يسوع، هذا الذي عوض ما كان قُدَّامه من الفرح صبر على الصَّليب واستهان بالعار، وجلس عن يمين عرش الله.",
-      "les regard fixés sur celui qui est l'initiateur de la foi et qui la mène à son accomplissement, 2 Jésus, lui qui, renonçant à la joie qui lui revenait, endura la croix au mépris de la honte et s'est assis à la droite du trône de Dieu.",
-      "2 looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God.",
     ],
   ],
   [
@@ -4197,56 +3738,6 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=0210&C=Title",
-      " بولس الرسول إلى أَهْلِ العبرانين (11:1-10 )",
-      "Hébreux 11:1 - 10",
-      "Hebrews 11:1-10",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واما الايمان فهو الثقة بما يرجى والايقان بامور لا ترى. فانه في هذه شهد للقدماء.",
-      "1 La foi est une manière de posséder déjà ce que l'on espère, un moyen de connaître des réalités que l'on ne voit pas. 2 C'est elle qui valut aux anciens un bon témoignage.",
-      "1 Now faith is the substance of things hoped for, the evidence of things not seen. 2 For by it the elders obtained a good testimony.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالايمان نفهم ان العالمين أتقنت بكلمة الله حتى لم يتكون ما يرى مما هو ظاهر. بالايمان قدم هابيل للّه ذبيحة افضل من قايين.",
-      "3 Par la foi, nous comprenons que les mondes ont été organisés par la parole de Dieu. Il s'ensuit que le monde visible ne prend pas son origine en des apparences. 4 Par la foi, Abel offrit à Dieu un sacrifice meilleur que celui de Caïn.",
-      "3 By faith we understand that the worlds were framed by the word of God, so that the things which are seen were not made of things which are visible. 4 By faith Abel offered to God a more excellent sacrifice than Cain,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فبه شهد له انه بار اذ شهد الله لقرابينه.وبه وان مات يتكلم بعد. الايمان نقل اخنوخ لكي لا يرى الموت ولم يوجد لان الله نقله.",
-      "Grâce à elle, il reçut le témoignage qu'il était juste et Dieu rendit témoignage à ses dons. Grâce à elle, bien que mort, il parle encore. 5 Par la foi, Hénoch fut enlevé afin d'échapper à la mort et on ne le retrouva pas, parce que Dieu l'avait enlevé;",
-      "through which he obtained witness that he was righteous, God testifying of his gifts; and through it he being dead still speaks. 5 By faith Enoch was taken away so that he did not see death, and was not found, because God had taken him'';",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "اذ قبل نقله شهد له بانه قد ارضى الله.ولكن بدون ايمان لا يمكن ارضاؤه لانه يجب ان الذي يأتي الى الله يؤمن بانه موجود وانه يجازي الذين يطلبونه.",
-      "avant son enlèvement, en effet, il avait reçu le témoignage qu'il avait été agréable à Dieu. 6 Or, sans la foi, il est impossible d'être agréable à Dieu, car celui qui s'approche de Dieu doit croire qu'il existe et qu'il récompense ceux qui le cherchent.",
-      "for before he was taken he had this testimony, that he pleased God. 6 But without faith it is impossible to please Him, for he who comes to God must believe that He is, and that He is a rewarded of those who diligently seek Him.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالايمان نوح لما أوحي اليه عن امور لم ترى بعد خاف فبنى فلكا لخلاص بيته فبه دان العالم وصار وارثا للبر الذي حسب الايمان.",
-      "7 Par la foi, Noé, divinement averti de ce que l'on ne voyait pas encore, prit l'oracle au sérieux, et construisit une arche pour sauver sa famille. Ainsi, il condamna le monde et devint héritier de la justice qui s'obtient par la foi.",
-      "7 By faith Noah, being divinely warned of things not yet seen, moved with godly fear, prepared an ark for the saving of his household, by which he condemned the world and became heir of the righteousness which is according to faith.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالايمان ابراهيم لما دعي اطاع ان يخرج الى المكان الذي كان عتيدا ان يأخذه ميراثا فخرج وهو لا يعلم الى اين يأتي.",
-      "8 Par la foi, répondant à l'appel, Abraham obéit et partit pour un pays qu'il devait recevoir en héritage, et il partit sans savoir où il allait.",
-      "8 By faith Abraham obeyed when he was called to go out to the place which he would receive as an inheritance. And he went out, not knowing where he was going.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بالايمان تغرب في ارض الموعد كانها غريبة ساكنا في خيام مع اسحق ويعقوب الوارثين معه لهذا الموعد عينه. لانه كان ينتظر المدينة التي لها الاساسات التي صانعها وبارئها الله.",
-      "9 Par la foi, il vint résider en étranger dans la terre promise, habitant sous la tente avec Isaac et Jacob, les cohéritiers de la même promesse. 10 Car il attendait la ville munie de fondations, qui a pour architecte et constructeur Dieu lui-même.",
-      "9 By faith he dwelt in the land of promise as in a foreign country, dwelling in tents with Isaac and Jacob, the heirs with him of the same promise; 10 for he waited for the city which has foundations, whose builder and maker is God.",
-    ],
-  ],
-  [
-    [
       Prefix.stPaul + "&D=101stSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ رُومِيَّة ( 15 : 13 - 29 )",
       "Romans (15: 13-29)",
@@ -4311,56 +3802,6 @@ ReadingsArrays.StPaulArray = [
       "فمَتَى أتممت ذلك، وختمت لهم هذا الثَّمر، فسأمضي مارّاً بكم إلى أسبانيا. وأنا أعلم أني إذا جئتُ إليكم، سأجيءُ في ملء بركة المسيح.",
       "28 Therefore, when I have performed this and have sealed to them this fruit, I shall go by way of you to Spain. 29 But I know that when I come to you, I shall come in the fullness of the blessing of the gospel of Christ.",
       "28 Cela fait, et les produits de la collecte une fois remis, je partirai pour l’Espagne en passant chez vous. 29 Je sais qu’en allant chez vous, c’est avec une pleine bénédiction de Christ que j’irai.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=102ndSunday&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ الأولى إلى أَهْلِ كورنثوس( 2 : 6 - 16 )",
-      "1 Corinthians 2:6-16",
-      "1 Corinthians 2:6-16",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لكنَّنا نتكلَّم بحكمةٍ بين الكاملين. لا بحكمةٍ هذا الدَّهر، ولا بحكمة رؤساء هذا الدَّهر، الذين يُبطَلونَ.",
-      "6 However, we speak wisdom among those who are mature, yet not the wisdom of this age, nor of the rulers of this age, who are coming to nothing.",
-      "6 Cependant, c’est une sagesse que nous prêchons parmi les parfaits, sagesse qui n’est pas de ce siècle, ni des princes de ce siècle, qui vont être réduits à l’impuissance ;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بل ننطق بحكمة الله في سرٍّ: الحكمة المكتومة، التى سبق الله فعيَّنها قبل الدُّهور لمجدنا، التي لم يعرفها أحدٌ من رؤساء هذا الدَّهر. لأنهم لو عرفوها لمَا صلبوا ربَّ المجد.",
-      "7 But we speak the wisdom of God in a mystery, the hidden wisdom which God ordained before the ages for our glory, 8 which none of the rulers of this age knew; for had they known, they would not have crucified the Lord of glory.",
-      "7 nous prêchons la sagesse de Dieu, mystérieuse et cachée, que Dieu avait prédestinée avant les siècles, pour notre gloire ; 8 aucun des princes de ce siècle ne l’a connue, car s’ils l’avaient connue, ils n’auraient pas crucifié le Seigneur de gloire.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بل كما هو مكتوبٌ: ' مالم تراه عينٌ، ولم تسمع به أُذنٌ، ولم يخطر على قلب بشرٍ: ما أعدَّه الله للذين يُحبُّونه '. فأعلَنَه الله لنا نحن بروحه. لأنَّ الرُّوح يفحص كلَّ شىءٍ، حتَّى أعماق الله.",
-      "9 But as it is written: Eye has not seen, nor ear heard, Nor have entered into the heart of man The things which God has prepared for those who love Him. 10 But God has revealed them to us through His Spirit. For the Spirit searches all things, yes, the deep things of God.",
-      "9 Mais c’est, comme il est écrit : Ce que l’oeil n’a pas vu, Ce que l’oreille n’a pas entendu, Et ce qui n’est pas monté au coeur de l’homme, Tout ce que Dieu a préparé pour ceux qui l’aiment.10 A nous, Dieu nous l’a révélé par l’Esprit. Car l’Esprit sonde tout, même les profondeurs de Dieu.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لأنَّه مَن مِن النَّاس يعرف أُمور الإنسان إلاَّ روح الإنسان السَّاكن فيه؟ هكذا أيضاً أُمورُ الله لا يعرفها أحدٌ إلاَّ روح الله. ونحن لم نأخذ روح العالم، بل الرُّوح الذي من الله، لنعرف الأشياء الموهوبة لنا من الله.",
-      "11 For what man knows the things of a man except the spirit of the man which is in him? Even so no one knows the things of God except the Spirit of God. 12 Now we have received, not the spirit of the world, but the Spirit who is from God, that we might know the things that have been freely given to us by God.",
-      "11 Qui donc, parmi les hommes, sait ce qui concerne l’homme, si ce n’est l’esprit de l’homme qui est en lui ? De même, personne ne connaît ce qui concerne Dieu, si ce n’est l’Esprit de Dieu.12 Or nous, nous n’avons pas reçu l’esprit du monde, mais l’Esprit qui vient de Dieu, afin de savoir ce que Dieu nous a donné par grâce.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "التي نتكلَّم بها أيضاً، ليس بتعليم أقوال حكمة بشريَّة، بل بتعليم الرُّوح، مُقارنين الرُّوحيَّات بالرُّوحيَّات.",
-      "13 These things we also speak, not in words which man's wisdom teaches but which the Holy Spirit teaches, comparing spiritual things with spiritual.",
-      "13 Et nous en parlons, non avec des discours qu’enseigne la sagesse humaine, mais avec ceux qu’enseigne l’Esprit, en expliquant les réalités spirituelles à des hommes spirituels.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكنَّ الإنسان النفساني لا يقبل ما لروح الله، لأنَّه عنده جهالةٌ، ولا يقدر أن يعرفه لأنَّه حُكِمَ فيه روحياً. وأمَّا الرُّوحانيُّ فيَحْكُمُ في كلِّ شىءٍ، وهو لا يُحْكَمُ فيه من أحدٍ.",
-      "14 But the natural man does not receive the things of the Spirit of God, for they are foolishness to him; nor can he know them, because they are spiritually discerned. 15 But he who is spiritual judges all things, yet he himself is rightly judged by no one.",
-      "14 Mais l’homme naturel ne reçoit pas les choses de l’Esprit de Dieu, car elles sont une folie pour lui, et il ne peut les connaître, parce que c’est spirituellement qu’on en juge.15 L’homme spirituel, au contraire, juge de tout, et il n’est lui–même jugé par personne.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لأنَّه مَن عرفَ فكرَ الربِّ ومَن يمكنه أن يُعلِّمه؟ وأمَّا نحنُ فلنا فكرُ المسيحِ.",
-      "16 For who has known the mind of the Lord that he may instruct Him? But we have the mind of Christ.",
-      "16 En effet : Qui a connu la pensée du Seigneur, Pour l’instruire ? Or nous, nous avons la pensée de Christ. 16 En effet : Qui a connu la pensée du Seigneur, Pour l’instruire ? Or nous, nous avons la pensée de Christ.",
     ],
   ],
   [
@@ -4483,10 +3924,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1610&C=Title",
+      Prefix.stPaul + "&D=1610||1009||0201||3010&C=Title",
       " بولس الرسول إلى العبرانيين( 11 : 32 - 12 : 1 - 2 )",
-      "Hébreux 11:32 - 12:1 - 2",
-      "Hebrews 11:32-12:2",
+      "Hébreux (11:32 & 12:2)",
+      "Hebrews (11:32 & 12:2)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -4534,56 +3975,6 @@ ReadingsArrays.StPaulArray = [
       Prefix.same + "&C=NoActor",
       "وننظر إلى رئيس الإيمان ومُكمِّله يسوع، هذا الذى عوض ما كان قُدَّامه من الفرح صبر على الصَّليب واستهان بالعار، وجلس عن يمين عرش الله.",
       "2 les regards fixés sur celui qui est l'initiateur de la foi et qui la mène à son accomplissement, Jésus, lui qui, renonçant à la joie qui lui revenait, endura la croix au mépris de la honte et s'est assis à la droite du trône de Dieu.",
-      "2 looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=3010&C=Title",
-      " بولس الرسول إلى أَهْلِ عبرانين 11:32-12:2",
-      "Hébreux 11:32 - 12:1 - 2",
-      "Hebrews 11:32-12:2",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ماذا أقولُ أيضاً؟ لأنه يُعوزُني الوقت إن أخبَرت عن جدعون، وباراق، وشَمشُون، ويَفتاحَ، وداود، وصَموئيل، والأنبياء الأُخر، الذينَ بالإيمان قَهَروا مَمالِك، وعملوا البر،",
-      "32 Et que dire encore? Le temps me manquerait pour parler en détail de Gédéon, Barak, Samson, Jephté, David, Samuel et les prophètes, 33 eux qui, grâce à la foi, conquirent des royaumes, mirent en oeuvre la justice,",
-      "32 And what more shall I say? For the time would fail me to tell of Gideon and Barak and Samson and Jephthah, also of David and Samuel and the prophets: 33 who through faith subdued kingdoms, worked righteousness,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ونالوا المواعيد، وسدُّوا أفواه أُسودٍ، أخمدوا قوَّة النَّار، ونجوا مِن حدِّ السَّيف، وتقوُّوا في الضَّعف، صاروا أقوياء في الحرب، وهزموا جيوش الغُرباء، أَخَذَت نِساءٌ أمواتَهُنَّ من بعد قيامةٍ.",
-      "virent se réaliser des promesses, muselèrent la gueule des lions, 34 éteignirent la puissance du feu, échappèrent au tranchant de l'épée, reprirent vigueur après la maladie, se montrèrent vaillants à la guerre, repoussèrent les armées étrangères.35 Des femmes retrouvèrent leurs morts par résurrection.",
-      "obtained promises, stopped the mouths of lions, 34 quenched the violence of fire, escaped the edge of the sword, out of weakness were made strong, became valiant in battle, turned to flight the armies of the aliens. 35 Women received their dead raised to life again.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وآخرون ضُربوا مثل الطُّبول ولم يقبلوا إليهم النَّجاة لكى ينالوا القيامة الفاضِلة. وآخرون صُلبوا بالهزء والجلد، ثم في قُيودٍ أيضاً وحَبسٍ. ورُجموا، ونُشِروا بالمناشِير،",
-      "Mais d'autres subirent l'écartèlement, refusant la délivrance pour aboutir à une meilleure résurrection; 36 d'autres encore subirent l'épreuve des moqueries et du fouet et celle des liens et de la prison; 37 ils furent lapidés, ils furent sciés;",
-      "And others were tortured, not accepting deliverance, that they might obtain a better resurrection. 36 Still others had trial of mockings and scourgings, yes, and of chains and imprisonment.. 37 They were stoned, they were sawn in two,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وجُرِّبوا، وماتوا بقتل السَّيف، وطافُوا في فراء وجُلودِ مِعزَى، معُوزين مُتضايقين مُتألِّمين، هؤلاء الذين لم يكن العالم يستحقَّهمْ. تائهين في القفار والجبال والمغاير وشقوق الأرض.",
-      "ils moururent tués à coups d'épée; ils menèrent une vie errante, vêtus de peaux de moutons ou de toisons de chèvres; ils étaient soumis aux privations, opprimés, maltraités,38 eux dont le monde n'était pas digne; ils erraient dans les déserts et les montagnes, dans les grottes et les cavités de le terre.",
-      "were tempted, were slain with the sword. They wandered about in sheepskins and goatskins, being destitute, afflicted, tormented-- 38 of whom the world was not worthy. They wandered in deserts and mountains, in dens and caves of the earth.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فهؤلاء كلُّهُم، شُهِد لهم من قِبل الإيمان، ولم ينالوا الموعد. لأن الله منذ البدء تقدَّم فنظر من أجلنا أمراً مختاراً، لكى لا يُكمَلُوا بدوننا.",
-      "39 Eux tous, s'ils ont reçu bon témoignage grâce à leur foi, n'ont cependant pas obtenu la réalisation de la promesse.40 Puisque Dieu prévoyait pour nous mieux encore, ils ne devaient pas arriver sans nous à l'accomplissement.",
-      "39 And all these, having obtained a good testimony through faith, did not receive the promise, 40 God having provided something better for us, that they should not be made perfect apart from us.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "من أجل هذا نحن أيضاً الذين لنا سحابةُ شهداء هذا مقدارها مُحيطة بنا، فلنطرح عنَّا كلَّ تكبُّر، والخطيَّة القائمة علينا جداً، وبالصَّبر فلنسعى في الجهاد الموضوع لنا،",
-      "1 Ainsi donc, nous aussi, qui avons autour de nous une telle nuée de témoins, rejetons tout fardeau et le péché qui sait si bien nous entourer, et courons avec endurance l'épreuve qui nous est proposée, les regards fixés sur celui qui est l'initiateur de la foi",
-      "12:1 Therefore we also, since we are surrounded by so great a cloud of witnesses, let us lay aside every weight, and the sin which so easily ensnares us, and let us run with endurance the race that is set before us,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وننظر إلى رئيس الإيمان ومُكمِّله يسوع، هذا الذي عوض ما كان قُدَّامه من الفرح صبر على الصَّليب واستهان بالعار، وجلس عن يمين عرش الله.",
-      "2 et qui la mène à son accomplissement, Jésus, lui qui, renonçant à la joie qui lui revenait, endura la croix au mépris de la honte et s'est assis à la droite du trône de Dieu.",
       "2 looking unto Jesus, the author and finisher of our faith, who for the joy that was set before Him endured the cross, despising the shame, and has sat down at the right hand of the throne of God",
     ],
   ],
@@ -5369,10 +4760,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=1712&C=Title",
+      Prefix.stPaul + "&D=1712&||2703C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ أهل غلاطية ( 1 : 1 - 19 )",
-      "Galates 1 : 1 - 19",
-      "Galatians 1:1-19",
+      "Galates (1: 1-19)",
+      "Galatians (1: 1-19)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -5481,10 +4872,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=2812&C=Title",
+      Prefix.stPaul + "&D=2812||0210&C=Title",
       " بولس الرسول الأولى إلى أَهْلِ عبرانين( 11 :1 - 10 )",
-      "Hébreux 11 : 1 - 10",
-      "Hebrews 11:1-10",
+      "Hébreux (11: 1-10)",
+      "Hebrews (11: 1-10)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -5563,10 +4954,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=3012&C=Title",
+      Prefix.stPaul + "&D=3012||Pntl41&C=Title",
       " البولس من رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 4 : 8 - 16 )",
-      "Ephésiens 4 : 8 - 16",
-      "Ephesians 4:8-16",
+      "Ephésiens (4: 8-16)",
+      "Ephesians (4: 8-16)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -5641,62 +5032,6 @@ ReadingsArrays.StPaulArray = [
       "ولكن إن كان إنجيلُنا مكتوماً فإنَّما هو مكتومٌ في الهالكينَ، وقد أعمَى الل-ه أذهان غَير مُؤمني هذا الدَّهر، لئلاَّ ينظروا نور إنجيل مَجد المسيح الذي هو صُورة الل-ه.",
       "3 Si cependant notre Évangile demeure voilé, il est voilé pour ceux qui se perdent, pour les incrédules, dont le dieu de ce monde a aveuglé l'intelligence, afin qu'ils ne perçoivent pas l'illumination de l'Évangile de la gloire du Christ, lui qui est l'image de Dieu.",
       "3 But even if our gospel is veiled, it is veiled to those who are perishing, 4 whose minds the god of this age has blinded, who do not believe, lest the light of the gospel of the glory of Christ, who is the image of God, should shine on them",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=0313&C=Title",
-      " بولس الرسول الأولى إلى أَهْلِ عبرانين 2:5-18",
-      "Hebrews 2:5-18",
-      "Hebrews 2:5-18",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فانه لملائكة لم يخضع العالم العتيد الذي نتكلم عنه.لكن شهد واحد في موضع قائلا ما هو الانسان حتى تذكره او ابن الانسان حتى تفتقده.",
-      "5 En effet, ce n’est pas à des anges que Dieu a soumis le monde à venir dont nous parlons.6 Mais quelqu’un a rendu quelque part ce témoignage : Qu’est–ce que l’homme, pour que tu te souviennes de lui, Le fils de l’homme, pour que tu prennes soin de lui ?",
-      "5 For He has not put the world to come, of which we speak, in subjection to angels. 6 But one testified in a certain place, saying: What is man that You are mindful of him, or the son of man that You take care of him?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وضعته قليلا عن الملائكة. بمجد وكرامة كللته واقمته على اعمال يديك.اخضعت كل شيء تحت قدميه.لانه اذ أخضع الكل له لم يترك شيئا غير خاضع له.",
-      "7 Tu l’as fait pour un peu de temps inférieur aux anges, Tu l’as couronné de gloire et d’honneur, Tu l’as établi sur les oeuvres de tes mains ;8 Tu as mis toutes choses sous ses pieds. En lui soumettant ainsi toutes choses, Dieu n’a rien laissé qui reste insoumis.",
-      "7 You have made him a little lower than the angels; you have crowned him with glory and honor, and set him over the works of Your hands. 8 You have put all things in subjection under his feet.'' For in that He put all in subjection under him, He left nothing that is not put under him.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "على اننا الآن لسنا نرى الكل بعد مخضعا له. ولكن الذي وضع قليلا عن الملائكة يسوع نراه مكللا بالمجد والكرامة من اجل ألم الموت لكي يذوق بنعمة الله الموت لاجل كل واحد.",
-      "Cependant, nous ne voyons pas encore maintenant que toutes choses lui soient soumises.9 Mais celui qui a été fait pour un peu de temps inférieur aux anges, Jésus, nous le contemplons, couronné de gloire et d’honneur, à cause de la mort qu’il a soufferte ; ainsi, par la grâce de Dieu, il a goûté la mort pour tous.",
-      "But now we do not yet see all things put under him. 9 But we see Jesus, who was made a little lower than the angels, for the suffering of death crowned with glory and honor, that He, by the grace of God, might taste death for everyone.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لانه لاق بذاك الذي من اجله الكل وبه الكل وهو آت بابناء كثيرين الى المجد ان يكمل رئيس خلاصهم بالآلام.",
-      "10 Il convenait en effet à Celui par qui et pour qui tout existe, et qui a conduit beaucoup de fils à la gloire, d’élever à la perfection, par la souffrance, l’auteur de leur salut.",
-      "10 For it was fitting for Him, for whom are all things and by whom are all things, in bringing many sons to glory, to make the captain of their salvation perfect through sufferings.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لان المقدس والمقدسين جميعهم من واحد فلهذا السبب لا يستحي ان يدعوهم اخوة. قائلا اخبر باسمك اخوتي وفي وسط الكنيسة اسبحك. وايضا انا اكون متوكلا عليه.",
-      "11 Car celui qui sanctifie et ceux qui sont sanctifiés sont tous issus d’un seul. C’est la raison pour laquelle il n’a pas honte de les appeler frères, 12 lorsqu’il dit : J’annoncerai ton nom à mes frères, Je te louerai au milieu de l’assemblée. 13 Et encore : Je placerai ma confiance en lui.",
-      "11 For both He who sanctifies and those who are being sanctified are all of one, for which reason He is not ashamed to call them brethren, 12 saying: I will declare Your name to My brethren; in the midst of the assembly I will sing praise to You.'' 13 And again: I will put My trust in Him.''",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وايضا ها انا والاولاد الذين اعطانيهم الله. فاذ قد تشارك الاولاد في اللحم والدم اشترك هو ايضا كذلك فيهما لكي يبيد بالموت ذاك الذي له سلطان الموت اي ابليس.",
-      "Et encore : Me voici, moi et les enfants que Dieu m’a donnés.14 Ainsi donc, puisque les enfants participent au sang et à la chair, lui aussi, d’une manière semblable y a participé, afin d’écraser par sa mort celui qui détenait le pouvoir de la mort, c’est–à–dire le diable,",
-      "And again: Here am I and the children whom God has given Me.''14 Inasmuch then as the children have partaken of flesh and blood, He Himself likewise shared in the same, that through death He might destroy him who had the power of death, that is, the devil,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ويعتق اولئك الذين خوفا من الموت كانوا جميعا كل حياتهم تحت العبودية.لانه حقا ليس يمسك الملائكة بل يمسك نسل ابراهيم.",
-      "15 et de délivrer tous ceux qui, par crainte de la mort, étaient toute leur vie retenus dans l’esclavage.16 Car ce n’est pas à des anges, assurément, qu’il vient en aide, mais c’est à la descendance d’Abraham qu’il vient en aide.",
-      "15 and release those who through fear of death were all their lifetime subject to bondage. 16 For indeed He does not give aid to angels, but He does give aid to the seed of Abraham.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "من ثم كان ينبغي ان يشبه اخوته في كل شيء لكي يكون رحيما ورئيس كهنة امينا في ما للّه حتى يكفّر خطايا الشعب. لانه في ما هو قد تألم مجربا يقدر ان يعين المجربين",
-      "17 Aussi devait–il devenir, en tout, semblable à ses frères, afin d’être un souverain sacrificateur miséricordieux et fidèle dans le service de Dieu, pour faire l’expiation des péchés du peuple.18 Car du fait qu’il a souffert lui–même quand il fut tenté, il peut secourir ceux qui sont tentés.",
-      "17 Therefore, in all things He had to be made like His brethren, that He might be a merciful and faithful High Priest in things pertaining to God, to make propitiation for the sins of the people. 18 For in that He Himself has suffered, being tempted, He is able to aid those who are tempted.",
     ],
   ],
   [
@@ -6291,7 +5626,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=GL1stSunday&C=Title",
+      Prefix.stPaul + "&D=GL1stSunday||GL2&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 11 : 16 - 28 )",
       "2 Corinthiens 11 : 16 - 28",
       "2 Corinthians 11:16-28",
@@ -6793,50 +6128,6 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=GL2&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ الثَانِيَةِ إلى أَهْلِ كورنثوس( 11 : 16 - 28 )",
-      "2 Corinthiens 11 : 16 - 28",
-      "2 Corinthians 11:16-28",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أقول أيضاً: لئلاَّ يَظُنَّ أحدٌ أنِّي جاهلٌ. وإلاَّ فاقبَلوني ولو كجاهلٍ، لأفتَخِرَ أنا أيضاً قليلاً. الذي أتَكلَّمُ بِهِ لَستُ أتَكَلَّمُ به بِحَسَبِ الرَّبِّ، بَلْ كَأنَّهُ عن جهلٍ، بهذا المقدار في أمر الافتخارِ هذا.",
-      "16 Je le répète, que l'on ne pense pas que je suis fou - ou bien alors acceptez que je sois fou, que je puisse moi aussi me vanter un peu. 17 Ce que je vais dire, je ne le dis pas selon le Seigneur, mais comme en pleine folie, dans mon assurance d'avoir de quoi me vanter.",
-      "16 I say again, let no one think me a fool. If otherwise, at least receive me as a fool, that I also may boast a little. 17 What I speak, I speak not according to the Lord, but as it were, foolishly, in this confidence of boasting.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وبمَا أنَّ كثيرين يَفتخِرونَ بِحَسَبَ الجَسَدِ، أفْتَخِرُ أنا أيض-اً. فإنَّكُمْ بسرورٍ تَحتمِلُون الجُهَّلاء، لأنكم تَحتمِلونَ من يَستعبِدُكم! ومَن يأكُلكُم! ومَن يأخذ منكم! ومَن يَتكبَّر عليكم! ومَن يَضربُكم على وجوهِكُم!",
-      "18 Puisque beaucoup se vantent de leurs avantages humains, moi aussi je me vanterai. 19 Volontiers, vous supportez les gens qui perdent la raison, vous si raisonnables. 20 Vous supportez qu'on vous asservisse, qu'on vous dévore, qu'on vous dépouille, qu'on le prenne de haut, qu'on vous frappe au visage;",
-      "18 Seeing that many boast according to the flesh, I also will boast. 19 For you put up with fools gladly, since you yourselves are wise! 20 For you put up with it if one brings you into bondage, if one devours you, if one takes from you, if one exalts himself, if one strikes you on the face.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أقولُ هذا على سبيل الهَوَانِ كأنَّنا كُنَّا ضُعفاءَ. ولكِنَّ الذي يَجترئُ فيه أحدٌ، أقول في غباوةٍ: أنا أيضاً أجترئ فيه. أَعبرانيون هم؟ فأنا كذلك. أَإسرائيليون هم؟ فأنا كذلك. أَذرية إبراهيم هم؟ فأنا كذلك.",
-      "21 je le dis à notre honte, comme si nous avions été faibles. Ce qu'on ose dire - je parle comme un fou - je l'ose moi aussi. 22 Ils sont Hébreux? moi aussi! Israélites? moi aussi! de la descendance d'Abraham? moi aussi!",
-      "21 To our shame, I say that we were too weak for that! But in whatever anyone is bold--I speak foolishly--I am bold also. 22 Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "أَخُدَّام المسيح هم؟ فأقول كَمُختلِّ العقلِ: إنِّي في ذلك أفضل منهم. أنا في الأتعاب أكثر. وفي الضَّرَباتِ أوفرُ. وفي السُّجونِ أكثَرُ. وفي الميتات مِراراً كثيرة. جَلدني اليهود خمس مرَّاتٍ أربعين جَلدة إلاَّ واحدةً. وضُرِبتُ بالعِصيِّ ثلاث مرات. ورُجِمتُ مرَّةً.",
-      "23 Ministres du Christ? - je vais dire une folie - moi bien plus! Dans les fatigues - bien davantage, dans les prisons - bien davantage, sous les coups - infiniment plus, dans les dangers de mort - bien des fois! 24 Des Juifs, j'ai reçu cinq fois les trente-neuf coups, trois fois, j'ai été flagellé, une fois, lapidé, trois fois,",
-      "23 Are they ministers of Christ?--I speak as a fool--I am more: in labors more abundant, in stripes above measure, in prisons more frequently, in deaths often. 24 From the Jews five times I received forty stripes minus one. 25 Three times I was beaten with rods; once I was stoned;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وانكسرت بي السَّفينَةُ ثلاثَ مَرَّاتٍ. وقضيت ليلاً ونَهاراً في عُمقِ البحرِ. وفي أسفار الط-ريق مَ-رَّاتٍ كثيرة. وفي أخط-ار السيول. وفي معاطب اللص--وص. وفى أخطارٍ مِنْ ذوي جنس-ي. وفي أخط-ارٍ مِنَ الأمَ-مِ. وأخطارٍ في المدينةِ. وأخطارٍ في البرِّيَّةِ.",
-      "j'ai fait naufrage, j'ai passé un jour et une nuit sur l'abîme. Voyages à pieds, souvent, dangers des fleuves, dangers des brigands, dangers de mes frères de race, dangers des païens, dangers dans la ville, dangers dans le désert,",
-      "three times I was shipwrecked; a night and a day I have been in the deep; 26 in journeys often, in perils of waters, in perils of robbers, in perils of my own countrymen, in perils of the Gentiles, in perils in the city, in perils in the wilderness,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وأخطارٍ في البحرِ. ومعاطب من الإخوةِ الكذبة. في التعب والكد. والأسهار الكثيرة. والجوع والعطش. والأصوام الكثيرة. والبرد والعُري. وما عدا هذه التي هى من خارج: ما يتراكم عليَّ كُلِّ يومٍ، مِنَ الاهتمام بجميع الكنائس.",
-      "dangers sur les mers, dangers des faux frères! 27 Fatigues et peine, veilles souvent; faim et soif, jeune souvent; froid et dénuement; sans compter tout le reste, ma préoccupation de toutes les Églises.",
-      "in perils in the sea, in perils among false brethren; 27 in weariness and toil, in sleeplessness often, in hunger and thirst, in fastings often, in cold and nakedness-- 28 besides the other things, what comes upon me daily: my deep concern for all the churches.",
-    ],
-  ],
-  [
-    [
       Prefix.stPaul + "&D=GL31&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ فيلبي ( 2 : 1 - 16 )",
       "Philippians 2:1-16",
@@ -7087,10 +6378,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=GL36&C=Title",
+      Prefix.stPaul + "&D=GL36||GL43&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية( 5 : 16 - 6 : 1 - 2 )",
-      "Galates 5:16 - 6:1-2",
-      "Galatians 5:16-6:2",
+      "Galates (5: 16-6:2)",
+      "Galatians (5: 16-6:2)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -7245,50 +6536,6 @@ ReadingsArrays.StPaulArray = [
       "إن كان أحدٌ يتكلَّمُ بلسان، فاثنان اثنان، أو على الأكثر ثلاثةً، وبترتيبٍ وليُترجم واحدٌ. فإن لم يكُن مُترجمٌ فليصمُت في الكنيسةِ، وليُكلِّم نفسهُ واللَّهَ.",
       "27 Si l’un parle en langues, tout au plus deux ou trois, et encore chacun à son tour, qu’il y en ait un aussi qui interprète.28 S’il n’y a pas d’interprète, qu’on se taise dans l’Église, qu’on parle à soi–même et à Dieu.",
       "27 If anyone speaks in a tongue, let there be two or at the most three, each in turn, and let one interpret. 28 But if there is no interpreter, let him keep silent in church, and let him speak to himself and to God.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=GL3rdSunday&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ( 14 : 19 - 15 : 1 - 7 )",
-      "Romains (14:19 - 15:1-7)",
-      "Romans (14:19-15:7)",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فلنتبع ما هو للسَّلام، وما هُو لبُنيان بعضُنا لبعضٍ. لا تنقُض عمل اللَّه لأجل الطَّعام. كُلُّ شيء طاهر، ولكنَّهُ شرٌّ للإنسان الذي يأكُلُ بعثرةٍ.",
-      "19 Recherchons donc ce qui convient à la paix et à l'édification mutuelle. 20 Pour une question de nourriture, ne détruis pas l'oeuvre de Dieu. Tout est pur, certes, mais il est mal de manger quelque chose lorsqu'on est ainsi cause de chute.",
-      "19 Therefore let us pursue the things which make for peace and the things by which one may edify another. 20 Do not destroy the work of God for the sake of food. All things indeed are pure, but it is evil for the man who eats with offense.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "حسنٌ أن لا يؤكل لحم ولا يشرب خمر ولا مما يعثر به أخوك ( أو يضعُفُ ). أأنت لك إيمان؟ فليكُن لك في نفسكَ أمام اللَّه! مغبوط من لا يدينُ نفسهُ فيما يستحسنُهُ.",
-      "21 Ce qui est bien, c'est de ne pas manger de viande, de ne pas boire de vin, rien qui puisse faire tomber ton frère. 22 Garde pour toi, devant Dieu, la conviction que la foi te donne. Heureux celui qui ne se condamne pas lui-même en exerçant son discernement.",
-      "21 It is good neither to eat meat nor drink wine nor do anything by which your brother stumbles or is offended or is made weak. 22 Do you have faith? Have it to yourself before God. Happy is he who does not condemn himself in what he approves.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وأمَّا الذي يرتابُ فإن أكل فإنه يُدانُ، لأنَّ ذلك ليسَ مِنَ الإيمان وكُلُّ ما ليسَ مِنَ الإيمان فهُو خطيئةٌ. فيجب عَلينَا نَحنُ الأقوياء أنْ نحتملَ ضعف الضُّعفاء، ولا نُرضي أنفُسنَا.",
-      "23 Mais celui qui mange, alors qu'il a des doutes, est condamné, parce que son comportement ne procède pas d'une conviction de foi. Or, tout ce qui ne procède pas d'une conviction de foi est péché. 1 Mais c'est un devoir pour nous, les forts, de porter l'infirmité des faibles et de ne pas rechercher ce qui nous plaît;",
-      "23 But he who doubts is condemned if he eats, because he does not eat from faith; for whatever is not from faith is sin. 1 We then who are strong ought to bear with the scruples of the weak, and not to please ourselves.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فليُرض كُلُّ واحدٍ مِنَّا قريبهُ للخير، للبُنيان. فإنَّ المسيح لم يُرضِ نفسهُ، ولكن كما كتب:' تعييراتُ مُعَيِّريكَ وقعت علىَّ'.",
-      "2 que chacun de nous cherche à plaire à son prochain en vue du bien, pour édifier. 3 Le Christ, en effet, n'a pas recherché ce qui lui plaisait, mais, comme il est écrit, les insultes de tes insulteurs sont tombées sur moi.",
-      "2 Let each of us please his neighbor for his good, leading to edification. 3 For even Christ did not please Himself; but as it is written, The reproaches of those who reproached You fell on Me.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لأنَّ كُلَّ ما كُتبَ من قبل إنما كُتبَ لتعليمنَا، لكي يكون لنا الرجاء بالصَّبر وبتعزية الكُتُب. وإلهُ الصبر والتَّعزية يُعطيكُم فكراً واحداً بعضكم لبعض، بحسبِ المسيح يسوع،",
-      "4 Or, tout ce qui a été écrit jadis l'a été pour notre instruction, afin que, par la persévérance et la consolation apportées par les Écritures, nous possédions l'espérance. 5 Que le Dieu de la persévérance et de la consolation vous donne d'être bien d'accord entre vous, comme le veut Jésus Christ,",
-      "4 For whatever things were written before were written for our learning, that we through the patience and comfort of the Scriptures might have hope. 5 Now may the God of patience and comfort grant you to be like-minded toward one another, according to Christ Jesus,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لكي بقلبٍ واحدٍ وفمٍ واحدٍ تُمجِّدُوا اللَّه أبا ربِّنا يسُوع المسيح، لذلك اقبلُوا بعضُكُم بعضاً كما قبلكم المسيح، لمجد اللَّ-ه.",
-      "6 afin que, d'un même coeur et d'une seule voix, vous rendiez gloire à Dieu, le Père de notre Seigneur Jésus Christ. 7 Accueillez-vous donc les uns les autres, comme le Christ vous a accueillis, pour la gloire de Dieu.",
-      "6 that you may with one mind and one mouth glorify the God and Father of our Lord Jesus Christ. 7 Therefore receive one another, just as Christ also received us, to the glory of God.",
     ],
   ],
   [
@@ -7495,26 +6742,6 @@ ReadingsArrays.StPaulArray = [
       "لم تُصبكُم تجربةٌ إلاَّ بشريَّةٌ. لكنَّ اللَّهَ أمينٌ، الذي لا يدعُكُم تُجرَّبُون فوق ما تستطيعُون، بل يعضدكم مع التَّجربةِ، لتستطيعُوا أن تحتملُوا إلى أن تخرجُوا مِنها.",
       "13 Aucune tentation ne vous est survenue qui n’ait été humaine ; Dieu est fidèle et ne permettra pas que vous soyez tentés au–delà de vos forces ; mais avec la tentation, il donnera aussi le moyen d’en sortir, pour que vous puissiez la supporter.",
       "13 No temptation has overtaken you except such as is common to man; but God is faithful, who will not allow you to be tempted beyond what you are able, but with the temptation will also make the way of escape, that you may be able to bear it.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=GL43&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ غلاطية( 5 : 16 - 6 : 1 - 2 )",
-      "Galates 5:16 - 6:1-2",
-      "Galatians 5:16-6:2",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فأقولُ اسلُكوا بحسب الرُّوح ولا تُكمِّلوا شهوة الجسد. فإنَّ الجسد يشتهي ضدَّ الرُّوح والرُّوحُ يشتهي ضدَّ الجسد، وهذان يُقاومُ أحدُهُما الآخر، حتى تفعلُون ما لا تُريدُون.",
-      "16 Écoutez-moi: marchez sous l'impulsion de l'Esprit et vous n'accomplirez plus ce que la chair désire. 17 Car la chair, en ses désirs, s'oppose à l'Esprit et l'Esprit à la chair; entre eux, c'est l'antagonisme; aussi ne faites-vous pas ce que vous voulez.",
-      "16 I say then: Walk in the Spirit, and you shall not fulfill the lust of the flesh. 17 For the flesh lusts against the Spirit, and the Spirit against the flesh; and these are contrary to one another, so that you do not do the things that you wish.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكن إذا انقدتُم بالرُّوح فلستُم تحت النَّاموس. وأعمالُ الجسد واضحةٌ، التي هي: الزنى والنجاسة والعهر وعبادةُ الأوثان والسحر والعداوة والخصام والغيرة والغضب والسخط والتحزُّب والانشقاق والبدع",
-      "18 Mais si vous êtes conduits par l'Esprit, vous n'êtes plus soumis à la loi. 19 On les connaît, les oeuvres de la chair: libertinage, impureté, débauche, idolâtrie, magie, haines, discorde, jalousie, emportements, rivalités, dissensions,",
-      "18 But if you are led by the Spirit, you are not under the law. 19 Now the works of the flesh are evident, which are: adultery, fornication, uncleanness, lewdness, 20 idolatry, sorcery, hatred, contentions, jealousies, outbursts of wrath, selfish ambitions, dissensions, heresies,",
     ],
   ],
   [
@@ -7883,10 +7110,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=GL5&C=Title",
+      Prefix.stPaul + "&D=GL5||GL3rdSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية(14:19-15:7)",
-      "Romains (14:19-15:7)",
-      "Romans (14:19-15:7)",
+      "Romains (14: 19 & 15:7)",
+      "Romans (14: 19 & 15:7)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -8184,7 +7411,7 @@ ReadingsArrays.StPaulArray = [
   [
     [
       Prefix.stPaul + "&D=GL8&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (12:1-21)",
+      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة ((12: 1-21))",
       "Romains (12: 1-21)",
       "Romans (12: 1-21)",
     ],
@@ -8750,50 +7977,6 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Pntl27&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ ( 1 : 1 – 14 )",
-      "Ephesians 1:1-14",
-      "Ephesians 1:1-14",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بولس رسول يسوع المسيح بمشيئة الله الى القديسين الذين في افسس والمؤمنون في المسيح يسوع نعمة لكم وسلام من الله ابينا والرب يسوع المسيح",
-      "1 Paul, apôtre de Jésus Christ par la volonté de Dieu, aux saints et fidèles en Jésus Christ: à vous grâce et paix de la part de notre Père et du Seigneur Jésus Christ.",
-      "1:1 Paul, an apostle of Jesus Christ by the will of God, To the saints who are in Ephesus, and faithful in Christ Jesus: 2 Grace to you and peace from God our Father and the Lord Jesus Christ.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "مبارك الله ابو ربنا يسوع المسيح الذي باركنا بكل بركة روحية في السماويات في المسيح كما اختارنا فيه قبل تأسيس العالم لنكون قديسين وبلا لوم قدامه في المحبة",
-      "3 Béni soit Dieu, le Père de notre Seigneur Jésus Christ: Il nous a bénis de toute bénédiction spirituelle dans les cieux en Christ. Il nous a choisis en lui avant la fondation du monde pour que nous soyons saints et irréprochables sous son regard, dans l'amour.",
-      "3 Blessed be the God and Father of our Lord Jesus Christ, who has blessed us with every spiritual blessing in the heavenly places in Christ, 4 just as He chose us in Him before the foundation of the world, that we should be holy and without blame before Him in love,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "اذ سبق فعيّننا للتبني بيسوع المسيح لنفسه حسب مسرة مشيئته لمدح مجد نعمته التي انعم بها علينا في المحبوب الذي فيه لنا الفداء بدمه غفران الخطايا حسب غنى نعمته",
-      "5 Il nous a prédestinés à être pour lui des fils adoptifs par Jésus Christ; ainsi l'a voulu sa bienveillance à la louange de sa gloire, et de la grâce dont il nous a comblés en son Bien-aimé: en lui, par son sang, nous sommes délivrés, en lui, nos fautes sont pardonnées, selon la richesse de sa grâce.",
-      "5 having predestined us to adoption as sons by Jesus Christ to Himself, according to the good pleasure of His will, 6 to the praise of the glory of His grace, by which He has made us accepted in the Beloved. 7 In Him we have redemption through His blood, the forgiveness of sins, according to the riches of His grace",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "التي اجزلها لنا بكل حكمة وفطنة اذ عرّفنا بسر مشيئته حسب مسرته التي قصدها في نفسه لتدبير ملء الازمنة ليجمع كل شيء في المسيح",
-      "8 Dieu nous l'a prodiguée, nous ouvrant à toute sagesse et intelligence. Il nous a fait connaître le mystère de sa volonté, le dessein bienveillant qu'il a d'avance arrêté en lui-même pour mener les temps à leur accomplissement: réunir l'univers entier sous un seul chef, le Christ,",
-      "8 which He made to abound toward us in all wisdom and prudence, 9 having made known to us the mystery of His will, according to His good pleasure which He purposed in Himself, 10 that in the dispensation of the fullness of the times He might gather together in one all things in Christ,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ما في السموات وما على الارض في ذاك الذي فيه ايضا نلنا نصيبا معيّنين سابقا حسب قصد الذي يعمل كل شيء حسب رأي مشيئته لنكون لمدح مجده نحن الذين قد سبق رجاؤنا في المسيح.",
-      "ce qui est dans les cieux et ce qui est sur la terre. En lui aussi, nous avons reçu notre part: suivant le projet de celui qui mène tout au gré de sa volonté: nous avons été prédestinés pour être à la louange de sa gloire ceux qui ont d'avance espéré dans le Christ.",
-      "both which are in heaven and which are on earth--in Him. 11 In Him also we have obtained an inheritance, being predestined according to the purpose of Him who works all things according to the counsel of His will, 12 that we who first trusted in Christ should be to the praise of His glory.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذي فيه ايضا انتم اذ سمعتم كلمة الحق انجيل خلاصكم الذي فيه ايضا اذ آمنتم ختمتم بروح الموعد القدوس الذي هو عربون ميراثنا لفداء المقتنى لمدح مجده",
-      "13 En lui, encore, vous avez entendu la parole de vérité, l'Évangile qui vous sauve. En lui, encore, vous avez cru et vous avez été marqués du sceau de l'Esprit promis, l'Esprit Saint, acompte de notre héritage jusqu'à la délivrance finale où nous en prendrons possession, à la louange de sa gloire.",
-      "13 In Him you also trusted, after you heard the word of truth, the gospel of your salvation; in whom also, having believed, you were sealed with the Holy Spirit of promise, 14 who is the guarantee of our inheritance until the redemption of the purchased possession, to the praise of His glory.",
-    ],
-  ],
-  [
-    [
       Prefix.stPaul + "&D=Pntl2ndSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (2:19-3:10 )",
       "Éphésiens 2:19-22 - 3:1-9",
@@ -9326,44 +8509,6 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Pntl41&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ الى اهل افسس ( 4 : 8 – 16 )",
-      "Ephesians 4:8-16",
-      "Ephesians 4:8-16",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لذلك يقول.اذ صعد الى العلاء سبى سبيا واعطى الناس عطايا.واما انه صعد فما هو الا انه نزل ايضا اولا الى اقسام الارض السفلى.",
-      "8 D'où cette parole: Monté dans les hauteurs, il a capturé des prisonniers; il a fait des dons aux hommes. Il est monté. Qu'est-ce à dire, sinon qu'il est aussi descendu jusqu'en bas sur la terre?",
-      "8 Therefore He says: When He ascended on high, He led captivity captive, And gave gifts to men. 9 (Now this, He ascended--what does it mean but that He also first descended into the lower parts of the earth?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذي نزل هو الذي صعد ايضا فوق جميع السموات لكي يملأ الكل. وهو اعطى البعض ان يكونوا رسلا والبعض انبياء والبعض مبشرين والبعض رعاة ومعلّمين",
-      "10 Celui qui est descendu, est aussi celui qui est monté plus haut que tous les cieux, afin de remplir l'univers. Et les dons qu'il a faits, ce sont des apôtres, des prophètes, des évangélistes, des pasteurs et catéchètes,",
-      "10 He who descended is also the One who ascended far above all the heavens, that He might fill all things.) 11 And He Himself gave some to be apostles, some prophets, some evangelists, and some pastors and teachers,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لاجل تكميل القديسين لعمل الخدمة لبنيان جسد المسيح الى ان ننتهي جميعنا الى وحدانية الايمان ومعرفة ابن الله.الى انسان كامل.الى قياس قامة ملء المسيح.",
-      "12 afin de mettre les saints en état d'accomplir le ministère pour bâtir le corps du Christ, jusqu'à ce que nous parvenions tous ensemble à l'unité dans la foi et dans la connaissance du Fils de Dieu, à l'état d'adultes, à la taille du Christ dans sa plénitude.",
-      "12 for the equipping of the saints for the work of ministry, for the edifying of the body of Christ, 13 till we all come to the unity of the faith and of the knowledge of the Son of God, to a perfect man, to the measure of the stature of the fullness of Christ;",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "كي لا نكون فيما بعد اطفالا مضطربين ومحمولين بكل ريح تعليم بحيلة الناس بمكر الى مكيدة الضلال. بل صادقين في المحبة ننمو في كل شيء الى ذاك الذي هو الراس المسيح",
-      "14 Ainsi, nous ne serons plus des enfants, ballottés, menés à la dérive à tout vent de doctrine, joués par les hommes et leur astuce à fourvoyer dans l'erreur. Mais, confessant la vérité dans l'amour, nous grandirons à tous égards vers celui qui est la tête, le Christ.",
-      "14 that we should no longer be children, tossed to and fro and carried about with every wind of doctrine, by the trickery of men, in the cunning craftiness of deceitful plotting, 15 but, speaking the truth in love, may grow up in all things into Him who is the head--Christ--",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "الذي منه كل الجسد مركبا معا ومقترنا بموازرة كل مفصل حسب عمل على قياس كل جزء يحصّل نمو الجسد لبنيانه في المحبة",
-      "16 Et c'est de lui que le corps tout entier, coordonné et bien uni grâce à toutes les articulations qui le desservent, selon une activité répartie à la mesure de chacun, réalise sa propre croissance pour se construire lui-même dans l'amour.",
-      "16 from whom the whole body, joined and knit together by what every joint supplies, according to the effective working by which every part does its share, causes growth of the body for the edifying of itself in love.",
-    ],
-  ],
-  [
-    [
       Prefix.stPaul + "&D=Pntl43&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ الى أهل رُومِيَّة ( 8 : 12 - 17 )",
       "Romans 8:12-17",
@@ -9844,10 +8989,10 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Pntl7thSunday&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
-      "1Corinthiens 12:1-21",
-      "1Corinthians12:1-1",
+      Prefix.stPaul + "&D=Pntl7thSunday||Pntl8thSunday&C=Title",
+      " رِسَالَةِ بُولِسِ الرَسُولِ إلى الأولى أهل كورونثوس ( 12 : 1 - 21)",
+      "1 Corinthiens (12: 1-21)",
+      "1 Corinthians (12: 1-21)",
     ],
     [
       Prefix.same + "&C=NoActor",
@@ -9946,92 +9091,6 @@ ReadingsArrays.StPaulArray = [
       "الذي صار من نسل داود من جهة الجسد وتعيّن ابن الله بقوة من جهة روح القداسة بالقيامة من الاموات.يسوع المسيح ربنا",
       "issu selon la chair de la lignée de David, établi, selon l'Esprit Saint, Fils de Dieu avec puissance par sa Résurrection d'entre les morts, Jésus Christ notre Seigneur.",
       "who was born of the seed of David according to the flesh, 4 and declared to be the Son of God with power according to the Spirit of holiness, by the resurrection from the dead.",
-    ],
-  ],
-  [
-    [
-      Prefix.stPaul + "&D=Pntl8thSunday&C=Title",
-      " رِسَالَةِ بُولِسِ الرَسُولِ إلى الأولى أهل كورونثوس( 12 : 1 - 21)",
-      "1Corinthiens 12:1-21",
-      "1Corinthians12:1-1",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واما من جهة المواهب الروحية ايها الاخوة فلست اريد ان تجهلوا. انتم تعلمون انكم كنتم امما منقادين الى الاوثان البكم كما كنتم تساقون.",
-      "11Au sujet des phénomènes spirituels, je ne veux pas, frères, que vous soyez dans l'ignorance.2 Vous savez que, lorsque vous étiez païens, vous étiez entraînés, comme au hasard, vers les idoles muettes.",
-      "1 Now concerning spiritual gifts, brethren, I do not want you to be ignorant: 2 You know that you were Gentiles, carried away to these dumb idols, however you were led.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لذلك اعرفكم ان ليس احد وهو يتكلم بروح الله يقول يسوع ناثيما.وليس احد يقدر ان يقول يسوع رب الا بالروح القدس. فانواع مواهب موجودة ولكن الروح واحد.وانواع خدم موجودة ولكن الرب واحد.",
-      "3 C'est pourquoi je vous le déclare: personne, parlant sous l'inspiration de l'Esprit de Dieu, ne dit: 'Maudit soit Jésus', et nul ne peut dire: 'Jésus est Seigneur', si ce n'est par l'Esprit Saint.4 Il y a diversité de dons de la grâce, mais c'est le même Esprit; 5 diversité de ministères, mais c'est le même Seigneur;",
-      "3 Therefore I make known to you that no one speaking by the Spirit of God calls Jesus accursed, and no one can say that Jesus is Lord except by the Holy Spirit. 4 There are diversities of gifts, but the same Spirit. 5 There are differences of ministries, but the same Lord.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وانواع اعمال موجودة ولكن الله واحد الذي يعمل الكل في الكل. ولكنه لكل واحد يعطى اظهار الروح للمنفعة.فانه لواحد يعطى بالروح كلام حكمة.ولآخر كلام علم بحسب الروح الواحد.",
-      "6 diversité de modes d'action, mais c'est le même Dieu qui, en tous, met tout en oeuvre. 7 A chacun est donnée la manifestation de l'Esprit en vue du bien de tous. 8 A l'un, par l'Esprit, est donné un message de sagesse, à l'autre, un message de connaissance, selon le même Esprit;",
-      "6 And there are diversities of activities, but it is the same God who works all in all. 7 But the manifestation of the Spirit is given to each one for the profit of all: 8 for to one is given the word of wisdom through the Spirit, to another the word of knowledge through the same Spirit,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولآخر ايمان بالروح الواحد.ولآخر مواهب شفاء بالروح الواحد. ولآخر عمل قوات ولآخر نبوة ولآخر تمييز الارواح.ولآخر انواع ألسنة.ولآخر ترجمة ألسنة.",
-      "9 à l'un, dans le même Esprit, c'est la foi; à un autre, dans l'unique Esprit, 10 ce sont des dons de guérison; à tel autre, d'opérer des miracles, à tel autre, de prophétiser, à tel autre, de discerner les esprits, à tel autre encore, de parler en langues;",
-      "9 to another faith by the same Spirit, to another gifts of healings by the same Spirit, 10 to another the working of miracles, to another prophecy, to another discerning of spirits, to another different kinds of tongues, to another the interpretation of tongues.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكن هذه كلها يعملها الروح الواحد بعينه قاسما لكل واحد بمفرده كما يشاء.لانه كما ان الجسد هو واحد وله اعضاء كثيرة وكل اعضاء الجسد الواحد اذا كانت كثيرة هي جسد واحد كذلك المسيح ايضا.",
-      "11 enfin à tel autre, de les interpréter. Mais tout cela, c'est l'unique et même Esprit qui le met en oeuvre, accordant à chacun des dons personnels divers, comme il veut.12 En effet, prenons une comparaison: le corps est un, et pourtant il a plusieurs membres; mais tous les membres du corps, malgré leur nombre, ne forment qu'un seul corps: il en est de même du Christ.",
-      "11 But one and the same Spirit works all these things, distributing to each one individually as He wills. 12 For as the body is one and has many members, but all the members of that one body, being many, are one body, so also is Christ.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "لاننا جميعنا بروح واحد ايضا اعتمدنا الى جسد واحد يهودا كنا ام يونانيين عبيدا ام احرارا وجميعنا سقينا روحا واحدا. فان الجسد ايضا ليس عضوا واحدا بل اعضاء كثيرة.ان قالت الرجل لاني لست يدا لست من الجسد.أفلم تكن لذلكمن الجسد.",
-      "13 Car nous avons tous été baptisés dans un seul Esprit en un seul corps, Juifs ou Grecs, esclaves ou hommes libres, et nous avons tous été abreuvés d'un seul Esprit.14 Le corps, en effet, ne se compose pas d'un seul membre, mais de plusieurs. 15 Si le pied disait: 'Comme je ne suis pas une main, je ne fais pas partie du corps',",
-      "13 For by one Spirit we were all baptized into one body--whether Jews or Greeks, whether slaves or free--and have all been made to drink into one Spirit. 14 For in fact the body is not one member but many. 15 If the foot should say, Because I am not a hand, I am not of the body, is it therefore not of the body?",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "وان قالت الأذن لاني لست عينا لست من الجسد.أفلم تكن لذلك من الجسد.لو كان كل الجسد عينا فاين السمع.لو كان الكل سمعا فاين الشم. واما الآن فقد وضع الله الاعضاء كل واحد منها في الجسد كما اراد.",
-      "16 cesserait-il pour autant d'appartenir au corps? 17 Si le corps entier était œil, où serait l'ouïe? Si tout était oreille, où serait l'odorat? 18 Mais Dieu a disposé dans le corps de chacun des membres, selon sa volonté.",
-      "16 And if the ear should say, Because I am not an eye, I am not of the body, is it therefore not of the body? 17 If the whole body were an eye, where would be the hearing? If the whole were hearing, where would be the smelling? 18 But now God has set the members, each one of them, in the body just as He pleased.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ولكن لو كان جميعها عضوا واحدا اين الجسد. فالآن اعضاء كثيرة ولكن جسد واحد. لا تقدر العين ان تقول لليد لا حاجة لي اليك.او الراس ايضا للرجلين لا حاجة لي اليكما.",
-      "19 Si l'ensemble était un seul membre, où serait le corps? 20 Il y a donc plusieurs membres, mais un seul corps. 21 L'œil ne peut pas dire à la main: 'Je n'ai pas besoin de toi', - ni la tête aux pieds: 'Je n'ai pas besoin de vous.'",
-      "19 And if they were all one member, where would the body be? 20 But now indeed there are many members, yet one body. 21 And the eye cannot say to the hand, I have no need of you; nor again the head to the feet, I have no need of you.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "بل بالأولى اعضاء الجسد التي تظهر اضعف هي ضرورية. واعضاء الجسد التي نحسب انها بلا كرامة نعطيها كرامة افضل.والاعضاء القبيحة فينا لها جمال افضل.",
-      "22 Bien plus, même les membres du corps qui paraissent les plus faibles sont nécessaires,23 et ceux que nous tenons pour les moins honorables, c'est à eux que nous faisons le plus d'honneur. Moins ils sont décents, plus décemment nous les traitons:",
-      "22 No, much rather, those members of the body which seem to be weaker are necessary. 23 And those members of the body which we think to be less honorable, on these we bestow greater honor; and our unpresentable parts have greater modesty,",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "واما الجميلة فينا فليس لها احتياج.لكن الله مزج الجسد معطيا الناقص كرامة افضل لكي لا يكون انشقاق في الجسد بل تهتم الاعضاء اهتماما واحدا بعضها لبعض.",
-      "24 ceux qui sont décents n'ont pas besoin de ces égards. Mais Dieu a composé le corps en donnant plus d'honneur à ce qui en manque, 25 afin qu'il n'y ait pas de division dans le corps, mais que les membres aient un commun souci les uns des autres.",
-      "24 but our presentable parts have no need. But God composed the body, having given greater honor to that part which lacks it, 25 that there should be no schism in the body, but that the members should have the same care for one another.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فان كان عضو واحد يتألم فجميع الاعضاء تتألم معه.وان كان عضو واحد يكرم فجميع الاعضاء تفرح معه. واما انتم فجسد المسيح واعضاؤه افرادا.",
-      "26 Si un membre souffre, tous les membres partagent sa souffrance; si un membre est glorifié, tous les membres partagent sa joie. 27 Or vous êtes le corps de Christ et vous êtes ses membres, chacun pour sa part.",
-      "26 And if one member suffers, all the members suffer with it; or if one member is honored, all the members rejoice with it. 27 Now you are the body of Christ, and members individually.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "فوضع الله اناسا في الكنيسة اولا رسلا ثانيا انبياء ثالثا معلمين ثم قوات وبعد ذلك مواهب شفاء اعوانا تدابير وانواع ألسنة.",
-      "28 Et ceux que Dieu a disposés dans l'Église sont premièrement des apôtres, deuxièmement des prophètes, troisièmement des hommes chargés de l'enseignement; vient ensuite le don des miracles, puis de guérison, d'assistance, de direction, et le don de parler en langues.",
-      "28 And God has appointed these in the church: first apostles, second prophets, third teachers, after that miracles, then gifts of healings, helps, administrations, varieties of tongues.",
-    ],
-    [
-      Prefix.same + "&C=NoActor",
-      "ألعل الجميع رسل.ألعل الجميع انبياء. ألعل الجميع معلمون.ألعل الجميع اصحاب قوات.ألعل للجميع مواهب شفاء.ألعل الجميع يتكلمون بألسنة.ألعل الجميع يترجمون.ولكن جدوا للمواهب الحسنى.وايضا اريكم طريقا افضل",
-      "29 Tous sont-ils apôtres? Tous prophètes? Tous enseignent-ils? Tous font-ils des miracles?30 Tous ont-ils le don de guérison? Tous parlent-ils en langues? Tous interprètent-ils? 31 Ayez pour ambition les dons les meilleurs.",
-      "29 Are all apostles? Are all prophets? Are all teachers? Are all workers of miracles? 30 Do all have gifts of healings? Do all speak with tongues? Do all interpret? 31 But earnestly desire the best gifts. And yet I show you a more excellent way.",
     ],
   ],
   [

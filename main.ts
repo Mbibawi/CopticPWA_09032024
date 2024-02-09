@@ -970,9 +970,28 @@ function getEditModeButton(): Button {
  */
 async function addDataGroupsToContainerChildren(
   titleClass: string = "Title",
-  titleRow: HTMLElement
+  titleRow: HTMLElement,
+  htmlRows:HTMLElement[]
 ) {
-  if (!titleRow || !titleRow.classList.contains(titleClass)) return;
+  if (!titleRow || !isTitlesContainer(titleRow)) return;
+  htmlRows
+    .filter(div =>
+      (div.dataset.root && div.dataset.root === titleRow.dataset.root)
+    ||
+    (div.dataset.isPlaceHolderIn && div.dataset.isPlaceHolderIn === titleRow.dataset.root)
+    )
+    .forEach(div=>div.dataset.group = titleRow.dataset.root);
+
+  htmlRows.forEach(div => {
+    if (div.dataset.group) return;
+    if (!div.previousElementSibling) return;
+    let previous = div.previousElementSibling as HTMLDivElement;
+    if (!previous.dataset.group) return;
+    div.dataset.group = previous.dataset.group
+  });
+  
+
+  return;
   //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
   let nextSibling = titleRow.nextElementSibling as HTMLElement;
   while (
@@ -1839,7 +1858,8 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
       addDataGroupsToContainerChildren(
         row.classList[row.classList.length - 1],
-        row
+        row,
+        htmlRows
       );
 
       (async function addPlusAndMinusSigns() {
@@ -1994,9 +2014,14 @@ function collapseOrExpandText(params: {
   Array.from(containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
     .filter(
       (div) =>
-        div !== params.titleRow &&
-        !div.classList.contains("Expandable") &&
-        div.dataset.group &&
+      div.dataset.group
+      &&
+      div !== params.titleRow
+        &&
+      !div.classList.contains("Expandable")
+        &&
+        div.children.length>0
+        &&
         div.dataset.group === params.titleRow.dataset.root
     )
     .forEach((div) => {
@@ -11531,4 +11556,40 @@ function HelperPrepareArabicChant() {
   text = array.toString();
   console.log(text);
   localStorage.temp = text;
+}
+
+function cleanReadingArray(readingArray:string[][][]){
+  let date: string,
+    titles: string[],
+    similar: Set<string[]> = new Set();
+  
+  readingArray
+    .forEach(table => {
+      if (table.length < 1) return;
+      date = removeSpaces(table[0][3]);
+      if (!date) return;
+
+      titles =
+        readingArray
+          .filter(table => removeSpaces(table[0][3]) === date)
+          .map(table => table[0][0]);
+
+      if (titles.length < 2) return;
+      
+    
+
+      if (!similar.has(titles)
+        && !Array.from(similar).find(array=>array.includes(titles[0]))
+      ) {
+        titles.push(date);
+        similar.add(titles)
+      };
+      
+    });  
+  console.log(Array.from(similar));
+
+  function removeSpaces(text:string):string{
+    return text.replaceAll(' ', '')
+  }
+
 }

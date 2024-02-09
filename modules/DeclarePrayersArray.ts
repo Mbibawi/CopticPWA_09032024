@@ -39,9 +39,13 @@ PrayersArray= [[
   "ثُمَّ يَسْجُدْ أمام باب الهَيْكَلْ قَائِلاً:", 
   ],
   [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"BlockShlilIriniPassi&D=$copticFeasts.AnyDay", 
-  ],
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
+    ],
   [
   Prefix.placeHolder, 
   Prefix.commonPrayer+"ThanksGiving&D=$copticFeasts.AnyDay", 
@@ -749,10 +753,22 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.commonIncense+"Comment1&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.commonIncense+"LitaniesComment1&D=$copticFeasts.AnyDay&C=Comments", 
   "", 
   "وعند فراغ الشَعْبْ من الترتيل، يلتفت الكاهن إلى الشَرْقِ والشماس واقف خلفه ويقول الكاهن:ـ", 
-  ],
+    ],
+    [
+      Prefix.placeHolder, 
+      Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
+      ],
+      [
+      Prefix.placeHolder, 
+      Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
+      ],
+    [
+      Prefix.placeHolder,
+      Prefix.incenseVespers + "PriestLitaniesComment&D=$copticFeasts.AnyDay"
+    ], 
   ],
   [
   [
@@ -2152,8 +2168,16 @@ PrayersArray= [[
   ],
   ],
   [
+    [
+      Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Title",
+      "",
+      "Ⲫⲛⲟⲩϯⲛⲁⲓ ⲛⲁⲛ",
+      "",
+      "إفنوتي ناي نان",
+
+    ],
   [
-  Prefix.commonPrayer+"EfnotiNaynan&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.same+"&C=Comments", 
   "", 
   "يرفع الكاهن الصَلِيبْ وعليه ثلاث شمعات موقدة ووجهه إلى الشَرْقِ ويقول:", 
   ],
@@ -2277,7 +2301,7 @@ PrayersArray= [[
   "Ⲡⲓⲣⲉϥⲱ̀ⲟⲩⲛ̀ϩⲏⲧ: ⲫⲁ ⲡⲓⲙⲏϣ ⲛ̀ⲛⲁⲓ ⲟⲩⲟϩ ⲛ̀ⲁ̀ⲗⲏⲑⲓⲛⲟⲥ: ϭⲓ ⲛ̀ⲛⲉⲛϯϩⲟ ⲛⲉⲙ ⲛⲉⲛⲧⲱⲃϩ ⲛ̀ⲧⲟⲧⲉⲛ: ϭⲓⲛ̀ⲧⲉⲛⲡⲁⲣⲁⲕⲗⲏⲥⲓⲥ ⲛ̀ⲧⲟⲧⲉⲛ: ⲛⲉⲙ ⲧⲉⲛⲙⲉ-ⲧⲁⲛⲟⲓⲁ: ⲛⲉⲙ ⲡⲉⲛⲟⲩⲱⲛϩ ⲉ̀ⲃⲟⲗ: ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲉⲛ ⲡⲉⲕⲙⲁ ⲛ̀ⲉⲣϣⲱⲟⲩϣⲓ ⲉ̅ⲑ̅ⲩ̅ ⲛ̀ⲁⲧⲑⲱⲗⲉⲃ: ⲛ̀ⲧⲉ ⲧ̀ⲫⲉ.", 
   "Toi qui es patient et véritablement miséricordieux, reçois nos demandes et nos supplications. Accepte nos implorations, notre pénitence, notre confession sur Ton saint autel pur et céleste.", 
   "", 
-  "أَيُّهَااَلطويل الأناة، الكثير الرَحْمَةْ الحقيقي، اقْبَلْ سؤلتنا وطلباتنا منا، اقْبَلْ ابتهالاتنا، وتوبتنا واعترفنا عَلَى مذبحك المُقَدَّسْ الغير الدنس السمائي.", 
+  "أَيُّهَا اَلطويل الأناة، الكثير الرَحْمَةْ الحقيقي، اقْبَلْ سؤلتنا وطلباتنا منا، اقْبَلْ ابتهالاتنا، وتوبتنا واعترفنا عَلَى مذبحك المُقَدَّسْ الغير الدنس السمائي.", 
   ],
   [
   Prefix.same+"&C=Priest", 
@@ -2582,9 +2606,13 @@ PrayersArray= [[
   "يقدم الشماس للكاهن درج البخور فيضع يَدِ بَخُورفي المجمرة ويقول:.", 
   ],
   [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"BlockShlilIriniPassi&D=$copticFeasts.AnyDay", 
-  ],
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
+    ],
   [
   Prefix.same+"&C=Title", 
   "", 
@@ -3120,7 +3148,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"HallelujahFayBiBiGreatLent&D=$Seasons.GreatLent&C=Title", 
+  Prefix.massCommon+"HallelujahFayBiBi&D=$Seasons.GreatLent&C=Title", 
   "", 
   "Réponse de la procession de l'Agneau", 
   "", 
@@ -3136,7 +3164,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"BenedictionOfTheLambPart1&D=$copticFeasts.AnyDay&C=Title", 
+  Prefix.massCommon+"BenedictionOfTheLamb&D=$copticFeasts.AnyDay&C=Title", 
   "", 
   "Bénédiction de l'Offrance", 
   "", 
@@ -3149,46 +3177,66 @@ PrayersArray= [[
   "خين افران إم افيوت نيم ابشيري نيم بي ابنيفما اثؤواب أونوتي إن أوأوت اف اسمارؤوت إنجي افنوتي افيوتي بي بانتوكراطور.", 
   "باسم الآب والابن والْرُوحْ القُدُسْ إله واحد. مُبَارك اللّه الآب ضَابِطْ الكُلّ.", 
   ],
-  ],
+    [
+      Prefix.placeHolder,
+      Prefix.commonPrayer + "Amen&D=$copticFeasts.AnyDay"
+    ], 
   [
-  [
-  Prefix.massCommon+"BenedictionOfTheLambPart2&D=$copticFeasts.AnyDay&C=Priest", 
+    Prefix.same + "&C=Priest",, 
   "Ϥⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ϫⲉ ⲡⲉϥⲙⲟⲛⲟⲅⲉⲛⲏⲥ ⲛ̀ϣⲏⲣⲓ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅ ⲡⲉⲛϭⲟⲓⲥ.", 
   "Béni soit Son Fils unique Jésus Christ notre Seigneur.", 
   "افسمارؤوت إنجي بيف ممونو جينيس انشيري ايسوس بيخرستوس بين تشويس.", 
   "مُبَارك ابنهُ الوَحِيد يَسُوعْ المَسِيحْ رَبَّنَا.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.commonPrayer + "Amen&D=$copticFeasts.AnyDay"
   ],
   [
-  [
-  Prefix.massCommon+"BenedictionOfTheLambPart3&D=$copticFeasts.AnyDay&C=Priest", 
+  Prefix.same + "&C=Priest", 
   "Ϥⲥ̀ⲙⲁⲣⲱⲟⲩⲧ ⲛ̀ϫⲉ ⲡⲓⲡ̀ⲛⲉⲩⲙⲁ ⲉⲑⲟⲩⲁⲃ ⲙ̀ⲡⲁⲣⲁⲕⲗⲏⲧⲟⲛ", 
   "Béni soit Le Saint Esprit, Le Paraclet.", 
   "افسمارؤوت انجي بي ابنيفما اثؤواب امباراكليتون.", 
   "مُبَارك الْرُوحْ القُدُسْ المُعزّى.", 
   ],
+  [
+    Prefix.placeHolder,
+    Prefix.commonPrayer + "Amen&D=$copticFeasts.AnyDay"
+  ],
+  [
+    Prefix.placeHolder,
+    Prefix.massCommon+"DiaconResponseOneIsTheHolyGod&D=$copticFeasts.AnyDay"
+  ],
+  [
+    Prefix.placeHolder,
+    Prefix.commonPrayer+"GloryToTheFatherTheSonAndTheSpirit&D=$copticFeasts.AnyDay"
+  ],
+  [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
+    ],
+    [
+    Prefix.placeHolder, 
+    Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
+    ],
   ],
   [
   [
-  Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart1&D=$copticFeasts.AnyDay&C=Diacon", 
+  Prefix.massCommon+"DiaconResponseOneIsTheHolyGod&D=$copticFeasts.AnyDay&C=Diacon", 
   "Ⲓⲥ Ⲡⲁⲧⲏⲣ ⲁ̀ⲅⲓⲟⲥ: ⲓⲥ Ⲩⲓⲟⲥ ⲁ̀ⲅⲓⲟⲥ: ⲉⲛ Ⲡⲛⲉⲩⲙⲁ ⲁ̀ⲅⲓⲟⲛ: ⲁ̀ⲙⲏⲛ:", 
   "Un est Le Père saint. Un est Le Fils saint. Un est L’Esprit-Saint. Amen.", 
   "اسباتير آجيوس، يس إيوس آجيوس، إن ابنيفما آجيون آمْينْ.", 
   "واحدٌ هُوَ الآب القُدُّوسْ. واحدٌ هُوَ الابْنِ القُدُّوسْ. واحدٌ هُوَ الْرُوحْ القُدُسْ آمْينْ.", 
-  ],
-  ],
-  [
-  [
-  Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart2&D=$copticFeasts.AnyDay&C=Diacon", 
+    ],
+  [ 
+    Prefix.same +"&C=Diacon", 
   "Ⲉⲩⲗⲟⲅⲏⲧⲟⲥ Ⲕⲩⲣⲓⲟⲥ ⲟ̀ Ⲑⲉⲟⲥ ⲓⲥ ⲧⲟⲩⲥ ⲉ̀ⲱ̀ⲛⲁⲥ: ⲁ̀ⲙⲏⲛ.", 
   "Béni soit Le Seigneur Dieu éternellement. Amen.", 
   "افلوجيتوس كيريوس. أو ثيؤس يس توس. إي أوناس آمْينْ.", 
   "مُبَاركُ الرَبُّ الإلَهَ إلى الأَبَدْ. آمْينْ.", 
   ],
-  ],
   [
-  [
-  Prefix.massCommon+"DiaconResponseOneIsTheHolyGodPart3&D=$copticFeasts.AnyDay&C=Diacon", 
+    Prefix.same + "&C=Diacon", 
   "Ⲛⲓⲉⲑⲛⲟⲥ ⲧⲏⲣⲟⲩ ⲥ̀ⲙⲟⲩ ⲉ̀Ⲡϭⲟⲓⲥ: ⲙⲁⲣⲟⲩⲥ̀ⲙⲟⲩ ⲉ̀ⲣⲟϥ ⲛ̀ϫⲉ ⲛⲓⲗⲁⲟⲥ ⲧⲏⲣⲟⲩ: ϫⲉ ⲁ̀ ⲡⲉϥⲛⲁⲓ ⲧⲁϫⲣⲟ ⲉ̀ϩ̀ⲣⲏⲓ ⲉ̀ϫⲱⲛ: ⲟⲩⲟϩ ϯⲙⲉⲑⲙⲏⲓ ⲛ̀ⲧⲉ ⲡ̀ϭⲟⲓⲥ ϣⲟⲡ ϣⲁ ⲉ̀ⲛⲉϩ: ⲁ̀ⲙⲏⲛ ⲁⲗⲗⲏⲗⲟⲩⲓⲁ.", 
   "Toutes les nations bénissez Le Seigneur et que le bénissent tous les peuples; car Sa miséricorde s’est affermie sur nous, et sa justice demeure éternellement. Amen Alléluia.", 
   "ني اثنوس تيرو اسمو إبتشويس، مارو اسمو إروك إنجي نيلاؤس تيرو، جي آ بيفناي تاجرو إي اهري إيجون، أوه تي ميثُمَّي انتي إبتشويس، شوب شا إنيه، آمْينْ الليلويا.", 
@@ -3197,7 +3245,14 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"HisFoundations&D=$Seasons.GreatLent&C=Assembly", 
+  Prefix.massCommon+"HisFoundations&D=$Seasons.GreatLent&C=Title", 
+  "", 
+  "Ⲛⲉϥⲥⲉⲛϯ ϧⲉⲛ ⲛⲓⲧⲱⲟ̀ⲩ ⲉⲑ̅ⲩ̅", 
+  "", 
+  "أساساته في الجبال المُقَدَّسْة", 
+  ],
+  [
+  Prefix.same+"&C=Assembly", 
   "Ⲛⲉϥⲥⲉⲛϯ ϧⲉⲛ ⲛⲓⲧⲱⲟ̀ⲩ ⲉⲑ̅ⲩ̅. ⲀⲠⲟ̅ⲥ̅ ⲙⲉⲓ ⲛ̀ⲛⲓⲡⲩⲗⲏ ⲛ̀ⲧⲉ Ⲥⲓⲱⲛ: ⲉ̀ϩⲟⲧⲉ ⲛⲓⲙⲁ ⲛ̀ϣⲱⲡⲓ ⲧⲏⲣⲟⲩ ⲛ̀ⲧⲉ Ⲓⲁⲕⲱⲃ. Ⲁϥⲥⲁϫⲓ ⲉ̀ⲑⲃⲏϯ ⲛ̀ϩⲁⲛ ⲛ̀ⲃⲏⲟⲩⲓ̀ ⲉⲩⲧⲁⲓⲏⲟⲩⲧ: ϯⲃⲁⲕⲓ ⲛ̀ⲧⲉ Ⲫϯ. Ⲁⲗⲗⲏⲗⲟⲩⲓⲁ.", 
   "Elle est fondée sur les montagnes saintes. L’Éternel aime les portes de Sion plus que toutes les demeures de Jacob. Des choses glorieuses ont été dites sur toi, Ville de Dieu !", 
   "نيف سينتى خين نى طو أو اثؤواب، أ إبشويس ميى ان نيبى لى انتية سيون، إيهوتي نى ما انشوبى تيرو إنتية ياكوب، آفساچى اثڤيتى ان هان اهڤى أووى افطايوت، تى ڤاكى إنتية افنوتى. الليلويا.", 
@@ -3232,6 +3287,10 @@ PrayersArray= [[
   "Par la parole de Saint Sévère le patriarche, notre maître Dioscore, Saint Athanase l’apostolique, Saint Pierre le sceau des martyrs et grand prêtre, Saint Jean Chrysostome, Saint Cyrille, Saint Basile et Saint Grégoire. Par la parole des trois-cent-dix huit pères réunis en concile à Nicée, des cent cinquante à Constantinople et des deux-cents à Éphèse. Par la parole de notre honorable père le grand prêtre pape Abba Tawadros II et par ma parole, moi le pêcheur Car il est béni et plein de gloire Ton nom saint, O Père, Fils et Saint Esprit maintenant, toujours et dans les siècles des siècles. Amen.", 
   "", 
   "والبطريرك القديس ساويرس ومعلمنا ديوسقورس والقديس أثناسيوس الرسولى والقديس بطرس خاتم الشهداء ورئيس الكهنة. والقديس يوحنا ذهبى الفم والقديس كيرلس والقديس باسيليوس والقديس اغريغوريوس ومن أفواه الثلاثُمَّائة والثُمَّانية عشر المجتمعين بنيقية والمائة والخمسين بالقسطنطينية والمئتين بأفسس. ومن فم أبينا المُكرّم رَئِيسُ الكَهَنَةِ البابا أَنْبَا تاوضروس ومن فم حقارتى لِأنَّهُُ مُبَارك ومملوء مجداً اسمك القُدُّوسْ أيُّهَا الآب والابن والْرُوحْ القُدُسْ الآنْ وكُلَّ أوانْ ...", 
+    ],
+  [
+    Prefix.placeHolder,
+    Prefix.commonPrayer + "WeHaveBeenSavedWithYou&D=$copticFeasts.AnyDay"
   ],
   ],
   [
@@ -3494,7 +3553,7 @@ PrayersArray= [[
   "", 
   "des sept archanges", 
   "", 
-  "هيتنية رؤساءالملائكة", 
+  "هيتنية رؤساء الملائكة", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -3526,7 +3585,7 @@ PrayersArray= [[
   "", 
   "Archidiacre Etienne", 
   "", 
-  "هيتنيةاسطفانوس رئيس الشمامسة", 
+  "هيتنية اسطفانوس رئيس الشمامسة", 
   ],
   [
   Prefix.same+"&C=Diacon", 
@@ -3670,6 +3729,14 @@ PrayersArray= [[
   Prefix.same+"&C=Comments", 
   "", 
   "ثُمَّ ينفضها وبهذا كأنه يحذر الشَعْبْ لئلا ينكر أحد إيمانه بالسيد المَسِيحْ أو أنْ يكون قانون الإيمان من الفم فقط، ويعلن بنفض يديه براءته من المخالف، وبعد ذلك ينشف يديه جيداً ويقف أمام المَذْبَحْ بخشوع.", 
+  ],
+    [
+      Prefix.placeHolder, 
+  Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
+  ],
+  [
+  Prefix.placeHolder, 
+  Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
@@ -4980,19 +5047,6 @@ PrayersArray= [[
   "Alléluia: Alléluia: Gloire à notre Dieu.", 
   "هلليلويا، هلليلويا، ذوكساسي أو ثيؤس إممون.", 
   "هَلِّليلُويا هَلِّليلُويا الَمْجُدُ لإلهنا.", 
-  ],
-  ],
-  [
-  [
-  Prefix.commonPrayer+"BlockShlilIriniPassi&D=$copticFeasts.AnyDay&C=", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.placeHolder, 
-  Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
   ],
   ],
   [
