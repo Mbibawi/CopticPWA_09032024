@@ -409,7 +409,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فرجعَ المُرسَلون إلى البيتِ، فوجَدوا العَبدَ المريضَ قد برأ. ( والمجد للـه دائماً ).", 
+  "فرجعَ المُرسَلون إلى البيتِ، فوجَدوا العَبدَ المريضَ قد برأ...", 
   "10 Et de retour à la maison, les envoyés trouvèrent l'esclave en bonne santé.", 
   "10 And those who were sent, returning to the house, found the servant well who had been sick.", 
   ],
@@ -1171,7 +1171,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإنَّ هذه كلها تَطلُبها أُمم العالم. وأمَّا أنتم فأبوكم يَعلَمُ أنَّكم تحتاجونَ إلى هذه. بل اطلبوا ملكوتَ الله، وهذه جميعها تُزادُ لكُم. ( والمجد للـه دائماً )", 
+  "فإنَّ هذه كلها تَطلُبها أُمم العالم. وأمَّا أنتم فأبوكم يَعلَمُ أنَّكم تحتاجونَ إلى هذه. بل اطلبوا ملكوتَ الله، وهذه جميعها تُزادُ لكُم..", 
   "30 For all these things the nations of the world seek after, and your Father knows that you need these things. 31 But seek the kingdom of God, and all these things shall be added to you.", 
   "30 Car tout cela, ce sont les païens du monde qui le recherchent. Votre Père sait que vous en avez besoin. 31 Cherchez plutôt son royaume ; et cela vous sera donné par surcroît.", 
   ],
@@ -1217,7 +1217,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احملوا نيري عليكم وتعلموا مني لاني وديع ومتواضع القلب فتجدوا راحة لنفوسكم. لان نيري هين وحملي خفيف. ( والمجد للـه دائماً )", 
+  "احملوا نيري عليكم وتعلموا مني لاني وديع ومتواضع القلب فتجدوا راحة لنفوسكم. لان نيري هين وحملي خفيف..", 
   "29 Take My yoke upon you and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls. 30 For My yoke is easy and My burden is light.", 
   "29 Prenez mon joug sur vous et recevez mes instructions, car je suis doux et humble de coeur, et vous trouverez du repos pour vos âmes. 30 Car mon joug est aisé, et mon fardeau léger.", 
   ],
@@ -1309,7 +1309,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال لهم الحق اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله قد أتى بقوة. ( والمجد للـه دائماً ).", 
+  "وقال لهم الحق اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله قد أتى بقوة...", 
   "1 Et il leur disait: 'En vérité, je vous le déclare, parmi ceux qui sont ici, certains ne mourront pas avant de voir le Règne de Dieu venu avec puissance.'", 
   "1 And He said to them, Assuredly, I say to you that there are some standing here who will not taste death till they see the kingdom of God present with power.", 
   ],
@@ -1367,7 +1367,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قال له سيده نعمّا ايها العبد الصالح والامين.كنت امينا في القليل فاقيمك على الكثير.ادخل الى فرح سيدك. ( والمجد للـه دائماً ).", 
+  "قال له سيده نعمّا ايها العبد الصالح والامين.كنت امينا في القليل فاقيمك على الكثير.ادخل الى فرح سيدك...", 
   "23 voici deux autres talents que j'ai gagnés.' Son maître lui dit: ' C'est bien, bon et fidèle serviteur, tu as été fidèle en peu de choses, sur beaucoup je t'établirai; viens te réjouir avec ton maître.", 
   "23 His lord said to him, 'Well done, good and faithful servant; you have been faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord (Glory be to God forever.)", 
   ],
@@ -1419,7 +1419,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهم.من اجل ذلك كل كاتب متعلم في ملكوت السموات يشبه رجلا رب بيت يخرج من كنزه جددا وعتقاء. ( والمجد للـه دائماً ).", 
+  "فقال لهم.من اجل ذلك كل كاتب متعلم في ملكوت السموات يشبه رجلا رب بيت يخرج من كنزه جددا وعتقاء...", 
   "52 Et il leur dit: 'Ainsi donc, tout scribe instruit du Royaume des cieux est comparable à un maître de maison qui tire de son trésor du neuf et du vieux.'", 
   "52 Then He said to them, Therefore every scribe instructed concerning the kingdom of heaven is like a householder who brings out of his treasure things new and old.", 
   ],
@@ -1465,7 +1465,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن الذي يصبر الى المنتهى فهذا يخلص. ومتى طردوكم في هذه المدينة فاهربوا الى الاخرى. فاني الحق اقول لكم لا تكملون مدن اسرائيل حتى يأتي ابن الانسان ( والمجد للـه دائماً )", 
+  "ولكن الذي يصبر الى المنتهى فهذا يخلص. ومتى طردوكم في هذه المدينة فاهربوا الى الاخرى. فاني الحق اقول لكم لا تكملون مدن اسرائيل حتى يأتي ابن الانسان.", 
   "mais celui qui persévérera jusqu’à la fin sera sauvé.23 Quand on vous persécutera dans cette ville–ci, fuyez dans une autre. En vérité je vous le dis, vous n’aurez point achevé (de parcourir) les villes d’Israël, que le Fils de l’homme viendra.", 
   "But he who endures to the end will be saved. 23 When they persecute you in this city, flee to another. For assuredly, I say to you, you will not have gone through the cities of Israel before the Son of Man comes.", 
   ],
@@ -1541,7 +1541,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فليضئ نوركم هكذا قدام الناس لكي يروا اعمالكم الحسنة ويمجدوا اباكم الذي في السموات ( والمجد للـه دائماً ).", 
+  "فليضئ نوركم هكذا قدام الناس لكي يروا اعمالكم الحسنة ويمجدوا اباكم الذي في السموات..", 
   "16 De même, que votre lumière brille aux yeux des hommes, pour qu'en voyant vos bonnes actions, ils rendent gloire à votre Père qui est aux cieux.", 
   "16 Let your light so shine before men, that they may see your good works and glorify your Father in heaven.", 
   ],
@@ -1731,7 +1731,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فبهتوا من تعليمه لانه كان يعلّمهم كمن له سلطان وليس كالكتبة. ( والمجد للـه دائماً ).", 
+  "فبهتوا من تعليمه لانه كان يعلّمهم كمن له سلطان وليس كالكتبة...", 
   "22 Ils étaient frappés de son enseignement, car il les enseignait en homme qui a autorité et non pas comme les scribes.", 
   "22 And they were astonished at His teaching, for He taught them as one having authority, and not as the scribes. 22 And they were astonished at His teaching, for He taught them as one having authority, and not as the scribes.", 
   ],
@@ -1783,7 +1783,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره ( والمجد للـه دائماً )", 
+  "ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره.", 
   "42 Quiconque donnera à boire, ne serait-ce qu'un verre d'eau fraîche, à l'un de ces petits en sa qualité de disciple, en vérité, je vous le déclare, il ne perdra pas sa récompense.'", 
   "42 “And whoever gives one of these little ones only a cup of cold water in the name of a disciple, assuredly, I say to you, he shall by no means lose his reward.", 
   ],
@@ -1835,7 +1835,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لان من استحى بي وبكلامي فبهذا يستحي ابن الانسان متى جاء بمجده ومجد الآب والملائكة القديسين. حقا اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله ( والمجد للـه دائماً ).", 
+  "لان من استحى بي وبكلامي فبهذا يستحي ابن الانسان متى جاء بمجده ومجد الآب والملائكة القديسين. حقا اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله..", 
   "le Fils de l'homme aura honte de lui quand il viendra dans sa gloire, et dans celle du Père et des saints anges. 27 Vraiment, je vous le déclare, parmi ceux qui sont ici, certains ne mourront pas avant de voir le Règne de Dieu.", 
   "of him the Son of Man will be ashamed when He comes in His own glory, and in His Father's, and of the holy angels 27 But I tell you truly, there are some standing here who shall not taste death till they see the kingdom of God.", 
   ],
@@ -1881,7 +1881,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "عملت ما عندها. لأنَّها سبقَت ودهنت بالطِّيب جسدي لدفني. الحقَّ أقولُ لكُم: حيثما يُكرز بهذا الإنجيل في كلِّ العالم، يُخبَر أيضاً بما فعلته هذه تذكاراً لها. ( والمجد للـه دائماً ).", 
+  "عملت ما عندها. لأنَّها سبقَت ودهنت بالطِّيب جسدي لدفني. الحقَّ أقولُ لكُم: حيثما يُكرز بهذا الإنجيل في كلِّ العالم، يُخبَر أيضاً بما فعلته هذه تذكاراً لها...", 
   "8 Elle a fait ce qu’elle a pu ; elle a d’avance embaumé mon corps pour la sépulture. 9 En vérité, je vous le dis, partout où la bonne nouvelle sera prêchée dans le monde entier, on racontera aussi en mémoire de cette femme ce qu’elle a fait.", 
   "8 She has done what she could. She has come beforehand to anoint My body for burial. 9 Assuredly, I say to you, wherever this gospel is preached in the whole world, what this woman has done will also be told as a memorial to her", 
   ],
@@ -1957,7 +1957,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثمَّ قال لها: ' مغفورةٌ لكِ خطاياكِ '. فابتدأ المُتَّكئون يقولون في أنفُسهم: ' مَن هو هذا الذي يغفِر خطايا أيضاً؟ '. فقال للمرأة: ' إيمانُكِ قد خلَّصكِ! اذهبي بسلام. ( والمجد للـه دائماً )", 
+  "ثمَّ قال لها: ' مغفورةٌ لكِ خطاياكِ '. فابتدأ المُتَّكئون يقولون في أنفُسهم: ' مَن هو هذا الذي يغفِر خطايا أيضاً؟ '. فقال للمرأة: ' إيمانُكِ قد خلَّصكِ! اذهبي بسلام..", 
   "48 Et il dit à la femme : Tes péchés sont pardonnés. 49 Ceux qui étaient à table avec lui se mirent à dire en eux–mêmes : Qui est celui–ci, qui pardonne même les péchés. 50 Mais il dit à la femme : Ta foi t’a sauvée, va en paix.", 
   "48 Then He said to her, Your sins are forgiven. 49 And those who sat at the table with Him began to say to themselves, Who is this who even forgives sins? 50 Then He said to the woman, Your faith has saved you. Go in peace.", 
   ],
@@ -2009,7 +2009,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكانت حماةُ سمعانَ مُضطجعةً محمومةً، وللوقتِ أخبروهُ عنها. فتقدَّمَ وأقامَها ماسكاً بيدِها، فتركتها الحُمَّى وصارت تخدمهم. ( والمجد للـه دائماً )", 
+  "وكانت حماةُ سمعانَ مُضطجعةً محمومةً، وللوقتِ أخبروهُ عنها. فتقدَّمَ وأقامَها ماسكاً بيدِها، فتركتها الحُمَّى وصارت تخدمهم..", 
   "30 La belle–mère de Simon était couchée, elle avait de la fièvre ; aussitôt on parla d’elle à Jésus.31 Il s’approcha, la fit lever en lui saisissant la main ; la fièvre la quitta, et elle se mit à les servir.", 
   "30 But Simon's wife's mother lay sick with a fever, and they told Him about her at once.31 So He came and took her by the hand and lifted her up, and immediately the fever left her. And she served them.", 
   ],
@@ -2043,7 +2043,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مريمُ التي تُدعَى المجدليَّةَ التي أخرجَ منها سبعةَ شياطينَ. ويؤنَّا امرأةُ خوزي وكيلِ هيرودس، وسوسنَّةُ، وأُخَرُ كَثِيراتٌ كُنَّ يخدمنَهُ مِن أموالهِنَّ ( والمجد للـه دائماً )", 
+  "مريمُ التي تُدعَى المجدليَّةَ التي أخرجَ منها سبعةَ شياطينَ. ويؤنَّا امرأةُ خوزي وكيلِ هيرودس، وسوسنَّةُ، وأُخَرُ كَثِيراتٌ كُنَّ يخدمنَهُ مِن أموالهِنَّ.", 
   "Marie, appelée Madeleine, de qui étaient sortis sept démons,3 Jeanne, femme de Chuza, intendant d’Hérode, Suzanne, et plusieurs autres qui les assistaient de leurs biens.", 
   "Mary called Magdalene, out of whom had come seven demons, 3 and Joanna the wife of Chuza, Herod's steward, and Susanna, and many others who provided for Him from their substance", 
   ],
@@ -2159,7 +2159,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كيما يُنتقم من هذا الجيل لدم جميع الأنبياء المسفوك منذ إنشاء العالم، من دم هابيل إلى دم زكريَّا بن برخيا الذي أُهلِكَ بين المذبح والبيت. نعم إني أقول لكم: إنه سيُطلب من هذا الجيل! ( والمجد للـه دائماً )", 
+  "كيما يُنتقم من هذا الجيل لدم جميع الأنبياء المسفوك منذ إنشاء العالم، من دم هابيل إلى دم زكريَّا بن برخيا الذي أُهلِكَ بين المذبح والبيت. نعم إني أقول لكم: إنه سيُطلب من هذا الجيل!.", 
   "50 afin qu'il soit demandé compte à cette génération du sang de tous les prophètes qui a été versé depuis la fondation du monde, 51 depuis le sang d'Abel jusqu'au sang de Zacharie qui a péri entre l'autel et le sanctuaire. Oui, je vous le déclare, il en sera demandé compte à cette génération.", 
   "50 that the blood of all the prophets which was shed from the foundation of the world may be required of this generation, 51 from the blood of Abel to the blood of Zechariah who perished between the altar and the temple. Yes, I say to you, it shall be required of this generation.", 
   ],
@@ -2327,7 +2327,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فبهت كل الجموع وقالوا ألعل هذا هو ابن داود. ( والمجد للـه دائماً ).", 
+  "فبهت كل الجموع وقالوا ألعل هذا هو ابن داود...", 
   "il le guérit, en sorte que le muet parlait et voyait. Bouleversées, toutes les foules disaient: 'Celui-ci n'est-il pas le Fils de David?'", 
   "23 And all the multitudes were amazed and said, Could this be the Son of David?”", 
   ],
@@ -2385,7 +2385,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن من ينكرني قدام الناس انكره انا ايضا قدام ابي الذي في السموات. ( والمجد للـه دائماً ).", 
+  "ولكن من ينكرني قدام الناس انكره انا ايضا قدام ابي الذي في السموات...", 
   "33 mais quiconque me reniera devant les hommes, je le renierai moi aussi devant mon Père qui est dans les cieux.", 
   "33 But whoever denies Me before men, him I will also deny before My Father who is in heaven.", 
   ],
@@ -2431,7 +2431,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ويل للعالم من العثرات.فلا بد ان تأتي العثرات ولكن ويل لذلك الانسان الذي به تأتي العثرة. ( والمجد للـه دائماً ).", 
+  "ويل للعالم من العثرات.فلا بد ان تأتي العثرات ولكن ويل لذلك الانسان الذي به تأتي العثرة...", 
   "7 Malheur au monde à cause des occasions de chute ! Car il est inévitable qu’il se produise des occasions de chute, mais malheur à l’homme par qui elles se produisent !", 
   "7 Woe to the world because of offenses! For offenses must come, but woe to that man by whom the offense comes.", 
   ],
@@ -2587,7 +2587,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأرسلوا إلى جَميع تلك الكورةِ المُحيطةِ، وقدَّموا إليهِ جميع السُّقماء. وطلبوا إليهِ أن يلمسوا هُدْبَ ثوبه فقط. فجميعُ الذينَ لمسُوهُ خلصوا. ( والمجد للـه دائماً )", 
+  "وأرسلوا إلى جَميع تلك الكورةِ المُحيطةِ، وقدَّموا إليهِ جميع السُّقماء. وطلبوا إليهِ أن يلمسوا هُدْبَ ثوبه فقط. فجميعُ الذينَ لمسُوهُ خلصوا..", 
   "they sent out into all that surrounding region, brought to Him all who were sick, 36 and begged Him that they might only touch the hem of His garment. And as many as touched it were made perfectly well,", 
   "dans tous les environs, et on lui amena tous les malades. 36 Ils le suppliaient afin de toucher seulement la frange de son vêtement. Et tous ceux qui le touchèrent furent pleinement délivrés.", 
   ],
@@ -2779,7 +2779,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واما مريم فكانت تحفظ جميع هذا الكلام متفكرة به في قلبها. ثم رجع الرعاة وهم يمجدون الله ويسبحونه على كل ما سمعوه ورأوه كما قيل لهم ( والمجد للـه دائماً ).", 
+  "واما مريم فكانت تحفظ جميع هذا الكلام متفكرة به في قلبها. ثم رجع الرعاة وهم يمجدون الله ويسبحونه على كل ما سمعوه ورأوه كما قيل لهم..", 
   "19 Marie conservait toutes ces choses, et les repassait dans son coeur. 20 Et les bergers s’en retournèrent en glorifiant et louant Dieu pour tout ce qu’ils avaient entendu et vu, conformément à ce qui leur avait été dit.", 
   "19 But Mary kept all these things and pondered them in her heart. 20 Then the shepherds returned, glorifying and praising God for all the things that they had heard and seen, as it was told them.", 
   ],
@@ -2831,7 +2831,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم اجتاز من هناك فرأى اخوين آخرين يعقوب بن زبدي ويوحنا اخاه في السفينة مع زبدي ابيهما يصلحان شباكهما فدعاهما. فللوقت تركا السفينة واباهما وتبعاه ( والمجد للـه دائماً ).", 
+  "ثم اجتاز من هناك فرأى اخوين آخرين يعقوب بن زبدي ويوحنا اخاه في السفينة مع زبدي ابيهما يصلحان شباكهما فدعاهما. فللوقت تركا السفينة واباهما وتبعاه..", 
   "21 En allant plus loin, il vit deux autres frères, Jacques, fils de Zébédée, et Jean son frère, qui étaient dans une barque avec Zébédée, leur père, et qui réparaient leurs filets. 22 Il les appela, et aussitôt ils laissèrent la barque et leur père, et le suivirent.", 
   "21 Going on from there, He saw two other brothers, James the son of Zebedee, and John his brother, in the boat with Zebedee their father, mending their nets. And He called them, 22 and immediately they left the boat and their father, and followed Him.", 
   ],
@@ -2895,7 +2895,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذي رفشه في يده وسينقي بيدره ويجمع قمحه الى المخزن.واما التبن فيحرقه بنار لا تطفأ ( والمجد للـه دائماً ).", 
+  "الذي رفشه في يده وسينقي بيدره ويجمع قمحه الى المخزن.واما التبن فيحرقه بنار لا تطفأ..", 
   "12 Il a son van à la main, il nettoiera son aire, il amassera son blé dans le grenier, mais il brûlera la paille dans un feu qui ne s’éteint pas.", 
   "12 His winnowing fan is in His hand, and He will thoroughly clean out His threshing floor, and gather His wheat into the barn; but He will burn up the chaff with unquenchable fire.”", 
   ],
@@ -2929,7 +2929,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ونزل عليه الروح القدس بهيئة جسمية مثل حمامة وكان صوت من السماء قائلا انت ابني الحبيب بك سررت ( والمجد للـه دائماً ).", 
+  "ونزل عليه الروح القدس بهيئة جسمية مثل حمامة وكان صوت من السماء قائلا انت ابني الحبيب بك سررت..", 
   "22 et l’Esprit Saint descendit sur lui sous une forme corporelle, comme une colombe. Et il vint une voix du ciel : Tu es mon Fils bien–aimé, objet de mon affection. désert :", 
   "22 And the Holy Spirit descended in bodily form like a dove upon Him, and a voice came from heaven which said, You are My beloved Son; in You I am well pleased.” 22 And the Holy Spirit descended in bodily form like a dove upon Him, and a voice came from heaven which said, You are My beloved Son; in You I am well pleased.”", 
   ],
@@ -2993,7 +2993,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لانه يوجد خصيان ولدوا هكذا من بطون امهاتهم.ويوجد خصيان خصاهم الناس.ويوجد خصيان خصوا انفسهم لاجل ملكوت السموات.من استطاع ان يقبل فليقبل ( والمجد للـه دائماً ).", 
+  "لانه يوجد خصيان ولدوا هكذا من بطون امهاتهم.ويوجد خصيان خصاهم الناس.ويوجد خصيان خصوا انفسهم لاجل ملكوت السموات.من استطاع ان يقبل فليقبل..", 
   "12 Car il y a des eunuques qui le sont dès le sein de leur mère ; il y en a qui le sont devenus par (la main) des hommes, et il y en a qui se sont rendus eunuques, à cause du royaume des cieux. Que celui qui peut comprendre comprenne.", 
   "12 For there are eunuchs who were born thus from their mother's womb, and there are eunuchs who were made eunuchs by men, and there are eunuchs who have made themselves eunuchs for the kingdom of heaven's sake. He who is able to accept it, let him accept it.", 
   ],
@@ -3045,7 +3045,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قال له سيده نعمّا ايها العبد الصالح والامين.كنت امينا في القليل فاقيمك على الكثير.ادخل الى فرح سيدك. ( والمجد للـه دائماً ).", 
+  "قال له سيده نعمّا ايها العبد الصالح والامين.كنت امينا في القليل فاقيمك على الكثير.ادخل الى فرح سيدك...", 
   "23 Son maître lui dit: ' C'est bien, bon et fidèle serviteur, tu as été fidèle en peu de choses, sur beaucoup je t'établirai; viens te réjouir avec ton maître.'", 
   "23 His lord said to him, 'Well done, good and faithful servant; you have been faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord.”", 
   ],
@@ -3097,7 +3097,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره ( والمجد للـه دائماً )", 
+  "ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره.", 
   "42 Quiconque donnera à boire même un seul verre d’eau froide à l’un de ces petits en qualité de disciple, en vérité je vous le dis, il ne perdra point sa récompense.", 
   "42 And whoever gives one of these little ones only a cup of cold water in the name of a disciple, assuredly, I say to you, he shall by no means lose his reward.", 
   ],
@@ -3143,7 +3143,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الحق اقول لكم حيثما يكرز بهذا الانجيل في كل العالم يخبر ايضا بما فعلته هذه تذكارا لها ( والمجد للـه دائماً )", 
+  "الحق اقول لكم حيثما يكرز بهذا الانجيل في كل العالم يخبر ايضا بما فعلته هذه تذكارا لها.", 
   "13 En vérité, je vous le déclare: partout où sera proclamé cet Evangile dans le monde entier, on racontera aussi, en souvenir d'elle, ce qu'elle a fait.", 
   "13 Assuredly, I say to you, wherever this gospel is preached in the whole world, what this woman has done will also be told as a memorial to her.”", 
   ],
@@ -3183,7 +3183,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنتُم الذين ثبتُم معي في تجَارِبي، وأنا أيضاً أُقرِّرُ لكُم ملكوتاً كما قرر لي أبي، لتأكُلوا وتشربوا معي على مائدتي في ملكوتي، وتجلسوا على كراسيَّ وتَدِينُونَ أسباطَ إسرائيلَ الاثني عشرَ'. ( والمجد للـه دائماً )", 
+  "أنتُم الذين ثبتُم معي في تجَارِبي، وأنا أيضاً أُقرِّرُ لكُم ملكوتاً كما قرر لي أبي، لتأكُلوا وتشربوا معي على مائدتي في ملكوتي، وتجلسوا على كراسيَّ وتَدِينُونَ أسباطَ إسرائيلَ الاثني عشرَ'..", 
   "28 Vous êtes, vous, ceux qui avez tenu bon avec moi dans mes épreuves.29 Et moi, je dispose pour vous du Royaume comme mon Père en a disposé pour moi:30 ainsi vous mangerez et boirez à ma table dans mon royaume, et vous siégerez sur des trônes pour juger les douze tribus d'Israël.", 
   "28 But you are those who have continued with Me in My trials. 29 And I bestow upon you a kingdom, just as My Father bestowed one upon Me, 30 that you may eat and drink at My table in My kingdom, and sit on thrones judging the twelve tribes of Israel.", 
   ],
@@ -3275,7 +3275,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ففهِمَ أبوه أنَّه في تلكَ السَّاعةِ التي قال له فيها يسوعُ إنَّ ابنَكَ حيٌّ. فآمنَ هو وبيتهُ كلُّه. ( والمجد للـه دائماً )", 
+  "ففهِمَ أبوه أنَّه في تلكَ السَّاعةِ التي قال له فيها يسوعُ إنَّ ابنَكَ حيٌّ. فآمنَ هو وبيتهُ كلُّه..", 
   "53 Le père constata que c'était à cette heure même que Jésus lui avait dit: 'Ton fils vit.' Dès lors il crut, lui et toute sa maisonnée.", 
   "53 So the father knew that it was at the same hour in which Jesus said to him, Your son lives. And he himself believed, and his whole household.", 
   ],
@@ -3321,7 +3321,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لانكم لو كنتم تصدقون موسى لكنتم تصدقونني لانه هو كتب عني.فان كنتم لستم تصدقون كتب ذاك فكيف تصدقون كلامي ( والمجد للـه دائماً ).", 
+  "لانكم لو كنتم تصدقون موسى لكنتم تصدقونني لانه هو كتب عني.فان كنتم لستم تصدقون كتب ذاك فكيف تصدقون كلامي..", 
   "46 En effet, si vous croyiez en Moïse, vous croiriez en moi, car c'est à mon sujet qu'il a écrit. 47 Si vous ne croyez pas ce qu'il a écrit, comment croiriez-vous ce que je dis?", 
   "46 For had ye believed Moses, ye would have believed me: for he wrote of me.47 But if ye believe not his writings, how shall ye believe my words?", 
   ],
@@ -3373,7 +3373,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فهل لذلك العبد فضل لانه فعل ما امر به لا اظن كذلك انتم ايضا متى فعلتم كل ما أمرتم به فقولوا اننا عبيد بطالون.لاننا انما عملنا ما كان يجب علينا ( والمجد للـه دائماً ).", 
+  "فهل لذلك العبد فضل لانه فعل ما امر به لا اظن كذلك انتم ايضا متى فعلتم كل ما أمرتم به فقولوا اننا عبيد بطالون.لاننا انما عملنا ما كان يجب علينا..", 
   "9 A-t-il de la reconnaissance envers ce serviteur parce qu'il a fait ce qui lui était ordonné?10 De même, vous aussi, quand vous avez fait tout ce qui vous était ordonné, dites: 'Nous sommes des serviteurs quelconques. Nous avons fait seulement ce que nous devions faire.", 
   "9 Doth he thank that servant because he did the things that were commanded him? I trow not.10 So likewise ye, when ye shall have done all those things which are commanded you, say, We are unprofitable servants: we have done that which was our duty to do. (Glory be to God forever.)", 
   ],
@@ -3717,7 +3717,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احملوا نيري عليكُم وتعلَّموا منِّي، لأنِّي وديعٌ ومتواضعُ القلبِ فتجِدُوا راحةً لنُفوسكم. لأنَّ نيري هيِّنٌ وحملِي خفيفٌ '. ( والمجد للـه دائماً ).", 
+  "احملوا نيري عليكُم وتعلَّموا منِّي، لأنِّي وديعٌ ومتواضعُ القلبِ فتجِدُوا راحةً لنُفوسكم. لأنَّ نيري هيِّنٌ وحملِي خفيفٌ '...", 
   "29 Prenez sur vous mon joug et mettez-vous à mon école, car je suis doux et humble de coeur, et vous trouverez le repos de vos âmes. Oui, mon joug est facile à porter et mon fardeau léger.", 
   "29 Take My yoke upon you and learn from Me, for I am gentle and lowly in heart, and you will find rest for your souls. 30 For My yoke is easy and My burden is light.", 
   ],
@@ -3757,7 +3757,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طوبى لذلك العبد الذي إذا جاء سيِّده يجده يفعل هكذا! الحقَّ أقولُ لكُم: إنه يُقيمه على جميع أمواله. ( والمجد للـه دائماً ).", 
+  "طوبى لذلك العبد الذي إذا جاء سيِّده يجده يفعل هكذا! الحقَّ أقولُ لكُم: إنه يُقيمه على جميع أمواله...", 
   "46 Heureux ce serviteur que son maître en arrivant trouvera en train de faire ce travail. 47 En vérité, je vous le déclare, il l'établira sur tous ses biens.", 
   "46 Blessed is that servant whom his master, when he comes, will find so doing. 47 Assuredly, I say to you that he will make him ruler over all his goods.", 
   ],
@@ -3797,7 +3797,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الشعب الجالس في ظلمة ابصر نورا عظيما.والجالسون في كورة الموت وظلاله اشرق عليهم نور. من ذلك الزمان ابتدأ يسوع يكرز ويقول توبوا لانه قد اقترب ملكوت السموات ( والمجد للـه دائماً ).", 
+  "الشعب الجالس في ظلمة ابصر نورا عظيما.والجالسون في كورة الموت وظلاله اشرق عليهم نور. من ذلك الزمان ابتدأ يسوع يكرز ويقول توبوا لانه قد اقترب ملكوت السموات..", 
   "16 Le peuple qui se trouvait dans les ténèbres a vu une grande lumière; pour ceux qui se trouvaient dans le sombre pays de la mort, une lumière s'est levée.17 A partir de ce moment, Jésus commença à proclamer: 'Convertissez-vous: le Règne des cieux s'est approché.", 
   "16 The people who sat in darkness have seen a great light, and upon those who sat in the region and shadow of death light has dawned.'' 17 From that time Jesus began to preach and to say, Repent, for the kingdom of heaven is at hand.", 
   ],
@@ -3855,7 +3855,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاجتمع ايضا جمع حتى لم يقدروا ولا على اكل خبز. ولما سمع اقرباؤه خرجوا ليمسكوه لانهم قالوا انه مختل. ( والمجد للـه دائماً ).", 
+  "فاجتمع ايضا جمع حتى لم يقدروا ولا على اكل خبز. ولما سمع اقرباؤه خرجوا ليمسكوه لانهم قالوا انه مختل...", 
   "20 et de nouveau la foule se rassemble, à tel point qu'ils ne pouvaient même pas prendre leur repas. 21 A cette nouvelle, les gens de sa parenté vinrent pour s'emparer de lui. Car ils disaient: 'Il a perdu la tête.'", 
   "20 Then the multitude came together again, so that they could not so much as eat bread. 21 But when His own people heard about this, they went out to lay hold of Him, for they said, He is out of His mind.”", 
   ],
@@ -4063,7 +4063,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فكل ما تريدون ان يفعل الناس بكم افعلوا هكذا انتم ايضا بهم.لان هذا هو الناموس والانبياء ( والمجد للـه دائماً )", 
+  "فكل ما تريدون ان يفعل الناس بكم افعلوا هكذا انتم ايضا بهم.لان هذا هو الناموس والانبياء.", 
   "12 Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.", 
   "12 Ainsi, tout ce que vous voulez que les hommes fassent pour vous, faites-le vous mêmes pour eux: c'est la Loi et les Prophètes.", 
   ],
@@ -4259,7 +4259,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات ( والمجد للـه دائماً )", 
+  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات.", 
   "19 Je te donnerai les clefs du Royaume des cieux; tout ce que tu lieras sur la terre sera lié aux cieux, et tout ce que tu délieras sur la terre sera délié aux cieux.", 
   "19 And I will give you the keys of the kingdom of heaven, and whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.", 
   ],
@@ -4317,7 +4317,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاجتمع ايضا جمع حتى لم يقدروا ولا على اكل خبز. ولما سمع اقرباؤه خرجوا ليمسكوه لانهم قالوا انه مختل. ( والمجد للـه دائماً ).", 
+  "فاجتمع ايضا جمع حتى لم يقدروا ولا على اكل خبز. ولما سمع اقرباؤه خرجوا ليمسكوه لانهم قالوا انه مختل...", 
   "20 et de nouveau la foule se rassemble, à tel point qu'ils ne pouvaient même pas prendre leur repas. 21 A cette nouvelle, les gens de sa parenté vinrent pour s'emparer de lui. Car ils disaient: 'Il a perdu la tête.'", 
   "20 Then the multitude came together again, so that they could not so much as eat bread. 21 But when His own people heard about this, they went out to lay hold of Him, for they said, He is out of His mind.”", 
   ],
@@ -4357,7 +4357,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكلُّ مَنْ لا يَقبَلكُم فاخرُجوا مِنْ تِلكَ المدينةِ، وانفُضوا غبار أرجُلِكُم شهادةً عليهم '. فَلمَّا خَرَجُوا كانُوا يَطوفونَ كلَّ قريةٍ يُبشِّرونَ ويَشفونَ في كلِّ مَوضِع. ( والمجد للـه دائماً ).", 
+  "وكلُّ مَنْ لا يَقبَلكُم فاخرُجوا مِنْ تِلكَ المدينةِ، وانفُضوا غبار أرجُلِكُم شهادةً عليهم '. فَلمَّا خَرَجُوا كانُوا يَطوفونَ كلَّ قريةٍ يُبشِّرونَ ويَشفونَ في كلِّ مَوضِع...", 
   "5 Et partout où les gens ne vous reçoivent pas, en sortant de cette ville, secouez la poussière de vos pieds en témoignage contre eux. 6 Ils partirent et allèrent de village en village ; ils annonçaient la bonne nouvelle et opéraient .", 
   "5 And whoever will not receive you, when you go out of that city, shake off the very dust from your feet as a testimony against them. 6 So they departed and went through the towns, preaching the gospel and healing everywhere.", 
   ],
@@ -4515,7 +4515,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إذ ليسَ لهُم حتَّى يُكافوكَ لأنَّكَ سـتُكافأ في قيامةِ الأبرارِ '. فلمَّا سمعَ ذلكَ واحدٌ مِن المُتَّكئينَ معه قال له: ' طُوبى لمَن يأكُل خُبزاً في ملكوتِ اللهِ '. ( والمجد للـه دائماً )", 
+  "إذ ليسَ لهُم حتَّى يُكافوكَ لأنَّكَ سـتُكافأ في قيامةِ الأبرارِ '. فلمَّا سمعَ ذلكَ واحدٌ مِن المُتَّكئينَ معه قال له: ' طُوبى لمَن يأكُل خُبزاً في ملكوتِ اللهِ '..", 
   "puisqu’ils n’ont pas de quoi te rétribuer ; car tu seras rétribué à la résurrection des justes.15 Un de ceux qui étaient à table, après avoir entendu ces paroles, dit à Jésus : Heureux celui qui prendra son repas dans le royaume de Dieu !", 
   "because they cannot repay you; for you shall be repaid at the resurrection of the just. 15 Now when one of those who sat at the table with Him heard these things, he said to Him, Blessed is he who shall eat bread in the kingdom of God!.", 
   ],
@@ -4619,7 +4619,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن الذي يصبر الى المنتهى فهذا يخلص. ومتى طردوكم في هذه المدينة فاهربوا الى الاخرى. فاني الحق اقول لكم لا تكملون مدن اسرائيل حتى يأتي ابن الانسان ( والمجد للـه دائماً )", 
+  "ولكن الذي يصبر الى المنتهى فهذا يخلص. ومتى طردوكم في هذه المدينة فاهربوا الى الاخرى. فاني الحق اقول لكم لا تكملون مدن اسرائيل حتى يأتي ابن الانسان.", 
   "Mais celui qui tiendra jusqu'à la fin, celui-là sera sauvé. 23 Quand on vous pourchassera dans telle ville, fuyez dans telle autre; en vérité, je vous le déclare, vous n'achèverez pas le tour des villes d'Israël avant que ne vienne le Fils de l'homme.", 
   "But he who endures to the end will be saved. 23 When they persecute you in this city, flee to another. For assuredly, I say to you, you will not have gone through the cities of Israel before the Son of Man comes.", 
   ],
@@ -4659,7 +4659,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فنزل المطر، وجاءت الأنهارُ، وهبَّت الرِّياحُ، وصدمت ذلك البيت فلم يسقُط، لأنَّ أساسه كان ثابتاً على الصَّخرِ. ( والمجد للـه دائماً ).", 
+  "فنزل المطر، وجاءت الأنهارُ، وهبَّت الرِّياحُ، وصدمت ذلك البيت فلم يسقُط، لأنَّ أساسه كان ثابتاً على الصَّخرِ...", 
   "25 La pluie est tombée, les torrents sont venus, les vents ont soufflé; ils se sont précipités contre cette maison et elle ne s'est pas écroulée, car ses fondations étaient sur le roc.", 
   "25 and the rain descended, the floods came, and the winds blew and beat on that house; and it did not fall, for it was founded on the rock. 25 and the rain descended, the floods came, and the winds blew and beat on that house; and it did not fall, for it was founded on the rock.", 
   ],
@@ -4885,7 +4885,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاجابوا وقالوا له اين يا رب.فقال لهم حيث تكون الجثّة هناك تجتمع النسور ( والمجد للـه دائماً )", 
+  "فاجابوا وقالوا له اين يا رب.فقال لهم حيث تكون الجثّة هناك تجتمع النسور.", 
   "37 Prenant la parole, les disciples lui demandèrent: 'Où donc, Seigneur?' Il leur dit: 'Où sera le corps, c'est là que se rassembleront les vautours.", 
   "37 And they answered and said to Him, Where, Lord? So He said to them, Wherever the body is, there the eagles will be gathered together.", 
   ],
@@ -4971,7 +4971,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثمَّ دخَلُوا كفرَ ناحومَ، وللوَقتِ دخَلا المَجمَعَ في السَّبتِ وصَارَ يُعلِّمُ. فبهتوا مِنْ تَعلِيمِهِ لأنَّهُ كانَ يُعَلِّمُهُمْ كَمَنْ لهُ سُلطانٌ وليسَ كالكَتَبةِ. ( والمجد للـه دائماً )", 
+  "ثمَّ دخَلُوا كفرَ ناحومَ، وللوَقتِ دخَلا المَجمَعَ في السَّبتِ وصَارَ يُعلِّمُ. فبهتوا مِنْ تَعلِيمِهِ لأنَّهُ كانَ يُعَلِّمُهُمْ كَمَنْ لهُ سُلطانٌ وليسَ كالكَتَبةِ..", 
   "21 Ils pénètrent dans Capharnaüm. Et dès le jour du sabbat, entré dans la synagogue, Jésus enseignait. 22 Ils étaient frappés de son enseignement, car il les enseignait en homme qui a autorité et non pas comme les scribes.", 
   "21 Then they went into Capernaum, and immediately on the Sabbath He entered the synagogue and taught. 22 And they were astonished at His teaching, for He taught them as one having authority, and not as the scribes.", 
   ],
@@ -5023,7 +5023,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هُوَذا وزنتانِ أُخريانِ ربِحتُهُما. قال له سيِّدُهُ: نِعِمَّا أيُّها العبدُ الصَّالحُ والأمينُ. كُنتَ أميناً على القليلِ فأُقيمُكَ على الكثيرِ. اُدخُلْ إلى فرحِ سيِّدكَ. ( والمجد للـه دائماً ).", 
+  "هُوَذا وزنتانِ أُخريانِ ربِحتُهُما. قال له سيِّدُهُ: نِعِمَّا أيُّها العبدُ الصَّالحُ والأمينُ. كُنتَ أميناً على القليلِ فأُقيمُكَ على الكثيرِ. اُدخُلْ إلى فرحِ سيِّدكَ...", 
   "voici deux autres que j'ai gagnés. 23 Son maître lui dit: 'C'est bien, bon et fidèle serviteur, tu as été fidèle en peu de choses, sur beaucoup je t'établirai; viens te réjouir avec ton maître.", 
   "I have gained two more talents besides them. 23 His lord said to him, `Well done, good and faithful servant; you have been faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord.'", 
   ],
@@ -5075,7 +5075,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومَن ينكرني قُدَّام النَّاس أُنكِره أنا أيضاً قُدَّام أبي الذي في السَّموات . ( والمجد للـه دائماً ).", 
+  "ومَن ينكرني قُدَّام النَّاس أُنكِره أنا أيضاً قُدَّام أبي الذي في السَّموات ...", 
   "33 mais quiconque me reniera devant les hommes, je le renierai moi aussi devant mon Père qui est aux cieux.", 
   "33 But whoever denies Me before men, him I will also deny before My Father who is in heaven.", 
   ],
@@ -5127,7 +5127,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لستم أنتُمُ اخترتُموني بل أنا أخترتُكُم وأُطلِقكُم لِتَذهبوا وتأتوا بثَمَرٍ ويَدومَ ثَمَرُكُم. لكي يُعطيكُم الآب كلَّ ما تسألونه باسمي. ( والمجد للـه دائماً ).", 
+  "لستم أنتُمُ اخترتُموني بل أنا أخترتُكُم وأُطلِقكُم لِتَذهبوا وتأتوا بثَمَرٍ ويَدومَ ثَمَرُكُم. لكي يُعطيكُم الآب كلَّ ما تسألونه باسمي...", 
   "16 Ce n’est pas vous qui m’avez choisi, mais moi, je vous ai choisis et je vous ai établis, afin que vous alliez, que vous portiez du fruit, et que votre fruit demeure, pour que tout ce que vous demanderez au Père en mon nom, il vous le donne.", 
   "16 You did not choose Me, but I chose you and appointed you that you should go and bear fruit, and that your fruit should remain, that whatever you ask the Father in My name He may give you.", 
   ],
@@ -5179,7 +5179,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ليسَ ما يَدخلُ الفَمَ يُنَجِّسُ الإنسانَ، بَل ما يَخرُجُ مِنَ الفَم هذا يُنَجِّسُ الإنسانَ '. ( والمجد للـه دائماً ).", 
+  "ليسَ ما يَدخلُ الفَمَ يُنَجِّسُ الإنسانَ، بَل ما يَخرُجُ مِنَ الفَم هذا يُنَجِّسُ الإنسانَ '...", 
   "11Ce n'est pas ce qui entre dans la bouche qui rend l'homme impur; mais ce qui sort de la bouche, voilà ce qui rend l'homme impur.", 
   "11 Not what goes into the mouth defiles a man; but what comes out of the mouth, this defiles a man.", 
   ],
@@ -5225,7 +5225,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولم يصنع هناكَ قوَّاتٍ كثيرةً لعدم إيمانهم. ( والمجد للـه دائماً )", 
+  "ولم يصنع هناكَ قوَّاتٍ كثيرةً لعدم إيمانهم..", 
   "58 Et là, il ne fit pas beaucoup de miracles, parce qu'ils ne croyaient pas.", 
   "58 Now He did not do many mighty works there because of their unbelief.", 
   ],
@@ -5271,7 +5271,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن يقبل بارا باسم بار فأجر بار ياخذ. ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره ( والمجد للـه دائماً )", 
+  "ومن يقبل بارا باسم بار فأجر بار ياخذ. ومن سقى احد هؤلاء الصغار كاس ماء بارد فقط باسم تلميذ فالحق اقول لكم انه لا يضيع اجره.", 
   "et qui accueille un juste en sa qualité de juste recevra une récompense de juste. 42 Quiconque donnera à boire, ne serait-ce qu'un verre d'eau fraîche, à l'un de ces petits en sa qualité de disciple, en vérité, je vous le déclare, il ne perdra pas sa récompense.", 
   "And he who receives a righteous man in the name of a righteous man shall receive a righteous man's reward. 42 And whoever gives one of these little ones only a cup of cold water in the name of a disciple, assuredly, I say to you, he shall by no means lose his reward.", 
   ],
@@ -5311,7 +5311,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكانت أيضاً شياطين تَخرُجُ من كثيرينَ وهيَ تَصرُخ قائلة: ' أنتَ هو المَسيحُ ابن اللـه! '. فكان ينتهرهُم ولم يَدعهُم يَتكلَّمونَ، لأنَّهم عَرَفوهُ أنَّه هو المسيحُ. ( والمجد للـه دائماً )", 
+  "وكانت أيضاً شياطين تَخرُجُ من كثيرينَ وهيَ تَصرُخ قائلة: ' أنتَ هو المَسيحُ ابن اللـه! '. فكان ينتهرهُم ولم يَدعهُم يَتكلَّمونَ، لأنَّهم عَرَفوهُ أنَّه هو المسيحُ..", 
   "41 Des démons aussi sortaient d'un grand nombre en criant: 'Tu es le Fils de Dieu!' Alors, leur commandant sévèrement, il ne leur permettait pas de parler, parce qu'ils savaient qu'il était le Christ.", 
   "41 And demons also came out of many, crying out and saying, You are the Christ, the Son of God! And He, rebuking them, did not allow them to speak, for they knew that He was the Christ.", 
   ],
@@ -5391,7 +5391,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طوبى لذلك العبد الذي إذا جاء سيِّدهُ يجده يفعل هكذا. الحقَّ أقول لكم: إنه يُقيمه على جميع أمواله. ( والمجد للـه دائماً )", 
+  "طوبى لذلك العبد الذي إذا جاء سيِّدهُ يجده يفعل هكذا. الحقَّ أقول لكم: إنه يُقيمه على جميع أمواله..", 
   "46 Heureux ce serviteur, que son maître, à son arrivée, trouvera occupé de la sorte ! 47 En vérité, je vous le dis, il l’établira sur tout ce qu’il possède. 46 Heureux ce serviteur, que son maître, à son arrivée, trouvera occupé de la sorte ! 47 En vérité, je vous le dis, il l’établira sur tout ce qu’il possède.", 
   "46 Blessed is that servant whom his master, when he comes, will find so doing. 47 Assuredly, I say to you that he will make him ruler over all his goods.", 
   ],
@@ -5443,7 +5443,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قد ربطها الشيطان ثماني عشرة سنة أما كان ينبغي ان تحل من هذا الرباط في يوم السبت. واذ قال هذا اخجل جميع الذين كانوا يعاندونه وفرح كل الجمع بجميع الاعمال المجيدة الكائنة منه ( والمجد للـه دائماً )", 
+  "قد ربطها الشيطان ثماني عشرة سنة أما كان ينبغي ان تحل من هذا الرباط في يوم السبت. واذ قال هذا اخجل جميع الذين كانوا يعاندونه وفرح كل الجمع بجميع الاعمال المجيدة الكائنة منه.", 
   "que Satan a liée voici dix-huit ans, n'est-ce pas le jour du sabbat qu'il fallait la détacher de ce lien? 17 A ces paroles, tous ses adversaires étaient couverts de honte, et toute la foule se réjouissait de toutes les merveilles qu'il faisait.", 
   "whom Satan has bound-- think of it-- for eighteen years, be loosed from this bond on the Sabbath?'' 17 And when He said these things, all His adversaries were put to shame; and all the multitude rejoiced for all the glorious things that were done by Him.", 
   ],
@@ -5631,7 +5631,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإذا كُنتُم وأنتُم أشرارٌ تعرفُون أن تُعطُـوا أبناءكُم العطايـا الجيِّـدةً، فـكم بالحريِّ أبُوكُم الـذي في السَّمَـواتِ،يمنح الصالحات للذين يسألُونهُ! فكُلُّ ما تُريدُون أن يفعل النَّاسُ بكُم فافعلُوه أنتُم بهم، فإنَّ هذا هو النامُوسُ والأنبياءُ. ( والمجد للـه دائماً )", 
+  "فإذا كُنتُم وأنتُم أشرارٌ تعرفُون أن تُعطُـوا أبناءكُم العطايـا الجيِّـدةً، فـكم بالحريِّ أبُوكُم الـذي في السَّمَـواتِ،يمنح الصالحات للذين يسألُونهُ! فكُلُّ ما تُريدُون أن يفعل النَّاسُ بكُم فافعلُوه أنتُم بهم، فإنَّ هذا هو النامُوسُ والأنبياءُ..", 
   "11 Si donc vous, qui êtes mauvais, savez donner de bonnes choses à vos enfants, combien plus votre Père qui est aux cieux, donnera-t-il de bonnes choses à ceux qui le lui demandent. 12 Ainsi, tout ce que vous voulez que les hommes fassent pour vous, faites-le vous-mêmes pour eux: c'est la Loi et les Prophètes.", 
   "11 If you then, being evil, know how to give good gifts to your children, how much more will your Father who is in heaven give good things to those who ask Him! 12 Therefore, whatever you want men to do to you, do also to them, for this is the Law and the Prophets.", 
   ],
@@ -5665,7 +5665,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبَعدما أُسلم يُوحَنَّا جاء يسُوعُ إلي الجليل يكرزُ بإنجيل ملكُوتِ اللَّهِ قائلاً: ' قد كَملَ الزَّمانُ واقتربَ ملكُوتُ اللَّهِ، فتُوبُوا وآمِنُوا بالإنجيل '. ( والمجد للـه دائماً ).", 
+  "وبَعدما أُسلم يُوحَنَّا جاء يسُوعُ إلي الجليل يكرزُ بإنجيل ملكُوتِ اللَّهِ قائلاً: ' قد كَملَ الزَّمانُ واقتربَ ملكُوتُ اللَّهِ، فتُوبُوا وآمِنُوا بالإنجيل '...", 
   "14 Après que Jean eut été livré, Jésus vint en Galilée. Il proclamait l'Évangile de Dieu et disait: 'Le temps est accompli, et le Règne de Dieu s'est approché: convertissez-vous et croyez à l'Évangile.", 
   "14 Now after John was put in prison, Jesus came to Galilee, preaching the gospel of the kingdom of God, 15 and saying, The time is fulfilled, and the kingdom of God is at hand. Repent, and believe in the gospel.", 
   ],
@@ -5735,7 +5735,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنه مِن القلب تصدر الأفكار الشريرة: القتل، الزنى، الفسق، السرقة، شهادة الزور، التجديف. هذه هي التي تُنجِّسُ الإنسان. وأمَّا الأكلُ بأيدٍ غير مغسُولةٍ فلا يُنجِّسُ الإنسان ( والمجد للـه دائماً ).", 
+  "لأنه مِن القلب تصدر الأفكار الشريرة: القتل، الزنى، الفسق، السرقة، شهادة الزور، التجديف. هذه هي التي تُنجِّسُ الإنسان. وأمَّا الأكلُ بأيدٍ غير مغسُولةٍ فلا يُنجِّسُ الإنسان..", 
   "19 Du coeur en effet proviennent intentions mauvaises, meurtres, adultères, inconduites, vols, faux témoignages, injures. 20 C'est là ce qui rend l'homme impur; mais manger sans s'être lavé les mains ne rend pas l'homme impur.", 
   "19 For out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, blasphemies. 20 These are the things which defile a man, but to eat with unwashed hands does not defile a man.", 
   ],
@@ -5787,7 +5787,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن اطلبوا ملكُوته، وهذه جميعها تُزادُ لكُم. ( والمجد للـه دائماً ).", 
+  "لكن اطلبوا ملكُوته، وهذه جميعها تُزادُ لكُم...", 
   "31 Cherchez plutôt son Royaume, et cela vous sera donné par surcroît.", 
   "31 But seek the kingdom of God, and all these things shall be added to you.", 
   ],
@@ -5833,7 +5833,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إنَّهُ ينتقم لهُم سريعاً! ولكن إذا جاء ابنُ الإنسان، أترى يجدُ الإيمانَ على الأرض؟ '. ( والمجد للـه دائماً ).", 
+  "إنَّهُ ينتقم لهُم سريعاً! ولكن إذا جاء ابنُ الإنسان، أترى يجدُ الإيمانَ على الأرض؟ '...", 
   "8 il leur fera justice bien vite. Mais le Fils de l'homme, quand il viendra, trouvera-t-il la foi sur la terre?", 
   "8 I tell you that He will avenge them speedily. Nevertheless, when the Son of Man comes, will He really find faith on the earth?.", 
   ],
@@ -5909,7 +5909,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هُوذا بيتُكُم يُتركُ لكُم خراباً! وأقُولُ لكُم: إنَّكُم لا ترَونني مُنذُ الآن حتَّى تقُولُوا: مُباركٌ الآتي بِاسم الربِّ! '. ( والمجد للـه دائماً ).", 
+  "هُوذا بيتُكُم يُتركُ لكُم خراباً! وأقُولُ لكُم: إنَّكُم لا ترَونني مُنذُ الآن حتَّى تقُولُوا: مُباركٌ الآتي بِاسم الربِّ! '...", 
   "35 Eh bien! elle va vous être abandonnée, votre maison. Et je vous le dis, vous ne me verrez plus jusqu'à ce que vienne le temps où vous direz: Béni soit, au nom du Seigneur, Celui qui vient!", 
   "35 See! Your house is left to you desolate; and assuredly, I say to you, you shall not see Me until the time comes when you say, `Blessed is He who comes in the name of the Lord!'.", 
   ],
@@ -5961,7 +5961,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فتشاور رؤساء الكهنة أن يقتلوا لعازر أيضاً، لأن كثيرين من اليهود كانوا من أجله يمضون ويؤمنون بيسوع. ( والمجد للـه دائماً ).", 
+  "فتشاور رؤساء الكهنة أن يقتلوا لعازر أيضاً، لأن كثيرين من اليهود كانوا من أجله يمضون ويؤمنون بيسوع...", 
   "10 Les grands prêtres dès lors décidèrent de faire mourir aussi Lazare, puisque c'était à cause de lui qu'un grand nombre de Juifs les quittaient et croyaient en Jésus.", 
   "10 But the chief priests plotted to put Lazarus to death also, 11 because on account of him many of the Jews went away and believed in Jesus.", 
   ],
@@ -6149,7 +6149,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن قبل ولدا واحدا مثل هذا باسمي فقد قبلني. ( والمجد للـه دائماً )", 
+  "ومن قبل ولدا واحدا مثل هذا باسمي فقد قبلني..", 
   "5 Qui accueille en mon nom un enfant comme celui-là, m'accueille moi-même.", 
   "5 Whoever receives one little child like this in My name receives Me.", 
   ],
@@ -6183,7 +6183,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ويل للعالم من العثرات.فلا بد ان تأتي العثرات ولكن ويل لذلك الانسان الذي به تأتي العثرة. ( والمجد للـه دائماً )", 
+  "ويل للعالم من العثرات.فلا بد ان تأتي العثرات ولكن ويل لذلك الانسان الذي به تأتي العثرة..", 
   "7 Malheureux le monde qui cause tant de chutes! Certes il est nécessaire qu'il y en ait, mais malheureux l'homme par qui la chute arrive.", 
   "7 Woe to the world because of offenses! For offenses must come, but woe to that man by whom the offense comes!.", 
   ],
@@ -6343,7 +6343,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولما قال هذا نفخ وقال لهم اقبلوا الروح القدس. من غفرتم خطاياه تغفر له. ومن امسكتم خطاياه أمسكت ( والمجد للـه دائماً )", 
+  "ولما قال هذا نفخ وقال لهم اقبلوا الروح القدس. من غفرتم خطاياه تغفر له. ومن امسكتم خطاياه أمسكت.", 
   "22 Ayant ainsi parlé, il souffla sur eux et leur dit: 'Recevez l'Esprit Saint; ceux à qui vous remettrez les péchés, ils leur seront remis. Ceux à qui vous les retiendrez, ils leur seront retenus.", 
   "22 And when He had said this, He breathed on them, and said to them, Receive the Holy Spirit. 23 If you forgive the sins of any, they are forgiven them; if you retain the sins of any, they are retained.", 
   ],
@@ -6395,7 +6395,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكذلك ايضا يعقوب ويوحنا ابنا زبدي اللذان كانا شريكي سمعان.فقال يسوع لسمعان لا تخف.من الآن تكون تصطاد الناس. ولما جاءوا بالسفينتين الى البر تركوا كل شيء وتبعوه ( والمجد للـه دائماً )", 
+  "وكذلك ايضا يعقوب ويوحنا ابنا زبدي اللذان كانا شريكي سمعان.فقال يسوع لسمعان لا تخف.من الآن تكون تصطاد الناس. ولما جاءوا بالسفينتين الى البر تركوا كل شيء وتبعوه.", 
   "10 de même Jacques et Jean, fils de Zébédée, qui étaient les compagnons de Simon. Jésus dit à Simon: 'Sois sans crainte, désormais ce sont des hommes que tu auras à capturer.' Ramenant alors les barques à terre, laissant tout, ils le suivirent.", 
   "10 and so also were James and John, the sons of Zebedee, who were partners with Simon. And Jesus said to Simon, Do not be afraid. From now on you will catch men. 11 So when they had brought their boats to land, they forsook all and followed Him.", 
   ],
@@ -6463,7 +6463,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم ان الرب بعدما كلمهم ارتفع الى السماء وجلس عن يمين الله. واما هم فخرجوا وكرزوا في كل مكان والرب يعمل معهم ويثبت الكلام بالآيات التابعة.آمين ( والمجد للـه دائماً )", 
+  "ثم ان الرب بعدما كلمهم ارتفع الى السماء وجلس عن يمين الله. واما هم فخرجوا وكرزوا في كل مكان والرب يعمل معهم ويثبت الكلام بالآيات التابعة.آمين.", 
   "19 Donc le Seigneur Jésus, après leur avoir parlé, fut enlevé au ciel et s'assit à la droite de Dieu. Quant à eux, ils partirent prêcher partout: le Seigneur agissait avec eux et confirmait la Parole par les signes qui l'accompagnaient.", 
   "19 So then, after the Lord had spoken to them, He was received up into heaven, and sat down at the right hand of God. 20 And they went out and preached everywhere, the Lord working with them and confirming the word through the accompanying signs. Amen.", 
   ],
@@ -6503,7 +6503,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال للبحر اسكت.ابكم.فسكنت الريح وصار هدوء عظيم. وقال لهم ما بالكم خائفين هكذا.كيف لا ايمان لكم. فخافوا خوفا عظيما وقالوا بعضهم لبعض من هو هذا.فان الريح ايضا والبحر يطيعانه ( والمجد للـه دائماً )", 
+  "وقال للبحر اسكت.ابكم.فسكنت الريح وصار هدوء عظيم. وقال لهم ما بالكم خائفين هكذا.كيف لا ايمان لكم. فخافوا خوفا عظيما وقالوا بعضهم لبعض من هو هذا.فان الريح ايضا والبحر يطيعانه.", 
   "et dit à la mer: 'Silence! Tais-toi!' Le vent tomba, et il se fit un grand calme. Jésus leur dit: 'Pourquoi avez-vous si peur? Vous n'avez pas encore de foi?' Ils furent saisis d'une grande crainte, et ils se disaient entre eux: 'Qui donc est-il, pour que même le vent et la mer lui obéissent?'", 
   "and said to the sea, Peace, be still! And the wind ceased and there was a great calm. 40 But He said to them, Why are you so fearful? How is it that you have no faith? 41 And they feared exceedingly, and said to one another, Who can this be, that even the wind and the sea obey Him!.", 
   ],
@@ -6757,7 +6757,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وللوقت قامت الصبية ومشت.لانها كانت ابنة اثنتي عشر سنة.فبهتوا بهتا عظيما. فاوصاهم كثيرا ان لا يعلم احد بذلك.وقال ان تعطى لتأكل ( والمجد للـه دائماً )", 
+  "وللوقت قامت الصبية ومشت.لانها كانت ابنة اثنتي عشر سنة.فبهتوا بهتا عظيما. فاوصاهم كثيرا ان لا يعلم احد بذلك.وقال ان تعطى لتأكل.", 
   "42 Aussitôt la fillette se leva et se mit à marcher, - car elle avait douze sans. Sur le coup, ils furent tout bouleversés. Et Jésus leur fit de vives recommandations pour que personne ne le sache, et il leur dit de donner à manger à la fillette.", 
   "42 Immediately the girl arose and walked, for she was twelve years of age. And they were overcome with great amazement. 43 But He commanded them strictly that no one should know it, and said that something should be given her to eat.", 
   ],
@@ -6849,7 +6849,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وان يسوع لم يدخل السفينة مع تلاميذه بل مضى تلاميذه وحدهم. غير انه جاءت سفن من طبرية الى قرب الموضع الذي اكلوا فيه الخبز اذ شكر الرب ( والمجد للـه دائماً ).", 
+  "وان يسوع لم يدخل السفينة مع تلاميذه بل مضى تلاميذه وحدهم. غير انه جاءت سفن من طبرية الى قرب الموضع الذي اكلوا فيه الخبز اذ شكر الرب..", 
   "et que Jésus n'avait pas accompagné ses disciples dans leur barque; ceux-ci étaient partis seuls. Toutefois, venant de Tibériade, d'autres barques arrivèrent près de l'endroit où ils avaient mangé le pain après que le Seigneur eut rendu grâce.", 
   "and that Jesus had not entered the boat with His disciples, but His disciples had gone away alone-- 23 however, other boats came from Tiberias, near the place where they ate bread after the Lord had given thanks", 
   ],
@@ -6889,7 +6889,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذي يؤمن بالابن له حياة ابدية.والذي لا يؤمن بالابن لن يرى حياة بل يمكث عليه غضب الله ( والمجد للـه دائماً )", 
+  "الذي يؤمن بالابن له حياة ابدية.والذي لا يؤمن بالابن لن يرى حياة بل يمكث عليه غضب الله.", 
   "36 Celui qui croit au Fils a la vie éternelle celui qui ne se confie pas au Fils ne verra pas la vie, mais la colère de Dieu demeure sur lui.", 
   "36 He who believes in the Son has everlasting life; and he who does not believe the Son shall not see life, but the wrath of God abides on him.", 
   ],
@@ -7089,7 +7089,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وسبقوهم واجتمعوا اليه. فلما خرج يسوع رأى جمعا كثيرا فتحنن عليهم اذ كانوا كخراف لا راعي لها فابتدأ يعلّمهم كثيرا. ( والمجد للـه دائماً )", 
+  "وسبقوهم واجتمعوا اليه. فلما خرج يسوع رأى جمعا كثيرا فتحنن عليهم اذ كانوا كخراف لا راعي لها فابتدأ يعلّمهم كثيرا..", 
   "et arrivèrent avant eux. En débarquant, Jésus vit une grande foule. Il fut pris de pitié pour eux parce qu'ils étaient comme des brebis qui n'ont pas de berger, et il se mit à leur enseigner beaucoup de choses.", 
   "They arrived before them and came together to Him. 34 And Jesus, when He came out, saw a great multitude and was moved with compassion for them, because they were like sheep not having a shepherd. So He began to teach them many things.", 
   ],
@@ -7129,7 +7129,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهم هذا الجنس لا يمكن ان يخرج بشيء الا بالصلاة والصوم ( والمجد للـه دائماً )", 
+  "فقال لهم هذا الجنس لا يمكن ان يخرج بشيء الا بالصلاة والصوم.", 
   "29 Il leur dit: 'Ce genre d'esprit, rien ne peut le faire sortir, que la prière et le jeûne'", 
   "29 So He said to them, This kind can come out by nothing but prayer and fasting.", 
   ],
@@ -7319,7 +7319,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هذا الكلام قاله يسوع في الخزانة وهو يعلّم في الهيكل.ولم يمسكه احد لان ساعته لم تكن قد جاءت بعد ( والمجد للـه دائماً ).", 
+  "هذا الكلام قاله يسوع في الخزانة وهو يعلّم في الهيكل.ولم يمسكه احد لان ساعته لم تكن قد جاءت بعد..", 
   "20 Il prononça ces paroles au lieu dit du Trésor, alors qu'il enseignait dans le temple. Personne ne mit la main sur lui, parce que son heure n'était pas encore venue.", 
   "20 These words Jesus spoke in the treasury, as He taught in the temple; and no one laid hands on Him, for His hour had not yet come.", 
   ],
@@ -7445,7 +7445,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكانت شياطين ايضا تخرج من كثيرين وهي تصرخ وتقول انت المسيح ابن الله.فانتهرهم ولم يدعهم يتكلمون لانهم عرفوه انه المسيح ( والمجد للـه دائماً )", 
+  "وكانت شياطين ايضا تخرج من كثيرين وهي تصرخ وتقول انت المسيح ابن الله.فانتهرهم ولم يدعهم يتكلمون لانهم عرفوه انه المسيح.", 
   "41 Des démons aussi sortaient de beaucoup de personnes, en criant et en disant : Tu es le Fils de Dieu. Mais il les menaçait et ne leur permettait pas de parler, parce qu’ils savaient qu’il était le Christ.", 
   "41 And demons also came out of many, crying out and saying, You are the Christ, the Son of God! And He, rebuking them, did not allow them to speak, for they knew that He was the Christ.", 
   ],
@@ -7515,7 +7515,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهم هذا الجنس لا يمكن ان يخرج بشيء الا بالصلاة والصوم ( والمجد للـه دائماً )", 
+  "فقال لهم هذا الجنس لا يمكن ان يخرج بشيء الا بالصلاة والصوم.", 
   "29 Il leur dit: 'Ce genre d'esprit, rien ne peut le faire sortir, que la prière et le jeûne'", 
   "29 So He said to them, This kind can come out by nothing but prayer and fasting.", 
   ],
@@ -7809,7 +7809,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال يسوع للاثني عشر ألعلكم انتم ايضا تريدون ان تمضوا. فاجابه سمعان بطرس يا رب الى من نذهب.كلام الحياة الابدية عندك. ونحن قد آمنّا وعرفنا انك انت المسيح ابن الله الحي. ( والمجد للـه دائماً ).", 
+  "فقال يسوع للاثني عشر ألعلكم انتم ايضا تريدون ان تمضوا. فاجابه سمعان بطرس يا رب الى من نذهب.كلام الحياة الابدية عندك. ونحن قد آمنّا وعرفنا انك انت المسيح ابن الله الحي...", 
   "67 Alors Jésus dit aux douze: 'Et vous, ne voulez-vous pas partir?' Simon Pierre lui répondit: 'Seigneur, à qui irions-nous? Tu as des paroles de vie éternelle. Et nous, nous avons cru et nous avons connu que tu es le Saint de Dieu.", 
   "67 Then Jesus said to the twelve, Do you also want to go away? 68 But Simon Peter answered Him, Lord, to whom shall we go? You have the words of eternal life. 69 Also we have come to believe and know that You are the Christ, the Son of the living God.", 
   ],
@@ -7895,7 +7895,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذي لا يحبني لا يحفظ كلامي.والكلام الذي تسمعونه ليس لي بل للآب الذي ارسلني. بهذا كلمتكم وانا عندكم. ( والمجد للـه دائماً ).", 
+  "الذي لا يحبني لا يحفظ كلامي.والكلام الذي تسمعونه ليس لي بل للآب الذي ارسلني. بهذا كلمتكم وانا عندكم...", 
   "24 Celui qui ne m'aime pas n'observe pas mes paroles; or, cette parole que vous entendez, elle n'est pas de moi mais du Père qui m'a envoyé. 25 Je vous ai dit ces choses tandis que je demeurais auprès de vous.", 
   "24 He who does not love Me does not keep My words; and the word which you hear is not Mine but the Father's who sent Me. 25 These things I have spoken to you while being present with you.", 
   ],
@@ -7993,7 +7993,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لان داود نفسه قال بالروح القدس قال الرب لربي اجلس عن يميني حتى اضع اعداءك موطئا لقدميك. فداود نفسه يدعوه ربا.فمن اين هو ابنه. وكان الجمع الكثير يسمعه بسرور ( والمجد للـه دائماً ).", 
+  "لان داود نفسه قال بالروح القدس قال الرب لربي اجلس عن يميني حتى اضع اعداءك موطئا لقدميك. فداود نفسه يدعوه ربا.فمن اين هو ابنه. وكان الجمع الكثير يسمعه بسرور..", 
   "36 David lui-même, inspiré par l'Esprit Saint, à dit: Le Seigneur a dit à mon Seigneur: Siège à ma droite jusqu'à ce que j'aie mis tes ennemis sous tes pieds. David lui-même l'appelle Seigneur; alors, de quelle façon est-il son fils?", 
   "36 For David himself said by the Holy Spirit: `The Lord said to my Lord, Sit at My right hand, Till I make Your enemies Your footstool. ' 37 Therefore David himself calls Him `Lord'; how is He then his Son? And the common people heard Him gladly.", 
   ],
@@ -8039,7 +8039,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فحدث انشقاق في الجمع لسببه. وكان قوم منهم يريدون ان يمسكوه ولكن لم يلق احد عليه الايادي ( والمجد للـه دائماً ).", 
+  "فحدث انشقاق في الجمع لسببه. وكان قوم منهم يريدون ان يمسكوه ولكن لم يلق احد عليه الايادي..", 
   "43 C'est ainsi que la foule se divisa à son sujet. 44 Quelques-uns d'entre eux voulurent l'arrêter, mais personne ne mit la main sur lui.", 
   "43 So there was a division among the people because of Him. 44 Now some of them wanted to take Him, but no one laid hands on Him.", 
   ],
@@ -8091,7 +8091,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولما دخلا السفينة سكنت الريح. والذين في السفينة جاءوا وسجدوا له قائلين بالحقيقة انت ابن الله ( والمجد للـه دائماً )", 
+  "ولما دخلا السفينة سكنت الريح. والذين في السفينة جاءوا وسجدوا له قائلين بالحقيقة انت ابن الله.", 
   "Et quand ils furent montés dans la barque, le vent tomba. Ceux qui étaient dans la barque se prosternèrent devant lui et lui dirent: 'Vraiment, tu es Fils de Dieu'.", 
   "32 And when they got into the boat, the wind ceased. 33 Then those who were in the boat came and worshiped Him, saying, Truly You are the Son of God.", 
   ],
@@ -8137,7 +8137,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فحدث انشقاق في الجمع لسببه. وكان قوم منهم يريدون ان يمسكوه ولكن لم يلق احد عليه الايادي ( والمجد للـه دائماً ).", 
+  "فحدث انشقاق في الجمع لسببه. وكان قوم منهم يريدون ان يمسكوه ولكن لم يلق احد عليه الايادي..", 
   "43 C'est ainsi que la foule se divisa à son sujet. 44 Quelques-uns d'entre eux voulurent l'arrêter, mais personne ne mit la main sur lui.", 
   "43 So there was a division among the people because of Him. 44 Now some of them wanted to take Him, but no one laid hands on Him.", 
   ],
@@ -8177,7 +8177,7 @@ ReadingsArrays.GospelVespersArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وفيما هم يترددون في الجليل قال لهم يسوع.ابن الانسان سوف يسلم الى ايدي الناس فيقتلونه وفي اليوم الثالث يقوم.فحزنوا جدا ( والمجد للـه دائماً )", 
+  "وفيما هم يترددون في الجليل قال لهم يسوع.ابن الانسان سوف يسلم الى ايدي الناس فيقتلونه وفي اليوم الثالث يقوم.فحزنوا جدا.", 
   "22 Comme ils s'étaient rassemblés en Galilée, Jésus leur dit: 'Le Fils de l'homme va être livré aux mains des hommes; ils le tueront et, le troisième jour, il ressuscitera.' Et ils furent profondément attristés.", 
   "22 Now while they were staying in Galilee, Jesus said to them, The Son of Man is about to be betrayed into the hands of men, 23 and they will kill Him, and the third day He will be raised up. And they were exceedingly sorrowful.", 
   ],

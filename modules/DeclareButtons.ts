@@ -1252,21 +1252,16 @@ const btnMassUnBaptised: Button = new Button({
     })();
 
     (function insertSynaxarium() {
-      let intro = ReadingsIntrosAndEnds.synaxariumIntro;
-      intro.AR.replace("theday", Number(copticDay).toString()).replace(
-        "themonth",
-        copticMonths[Number(copticMonth)].AR
-      );
-
-      intro.FR = intro.FR.replace(
-        "theday",
-        Number(copticDay).toString()
-      ).replace("themonth", copticMonths[Number(copticMonth)].FR);
-
-      intro.EN.replace("theday", Number(copticDay).toString()).replace(
-        "themonth",
-        copticMonths[Number(copticMonth)].EN
-      );
+      let intro = {...ReadingsIntrosAndEnds.synaxariumIntro};
+      Object.entries(intro)
+        .forEach(entry =>
+          intro[entry[0]] =
+          entry[1]
+            .replace("theday", Number(copticDay).toString())
+            .replace("themonth",
+              copticMonths[Number(copticMonth)][entry[0]]
+            ));
+ 
 
       insertMassReading(
         Prefix.synaxarium,
@@ -1280,10 +1275,11 @@ const btnMassUnBaptised: Button = new Button({
       let introHTML = selectElementsByDataRoot(
         btnDocFragment,
         Prefix.synaxarium + "&D=" + copticDate)[1];
-
+      
+      if (!introHTML || introHTML.children.length<1 ) return console.log('Didn\'t find the Synaxarium');
       introHTML.children[0].insertAdjacentElement(
         "beforebegin",
-        introHTML.children[1]
+        introHTML.children[0]
       );
     })();
 
@@ -1334,17 +1330,10 @@ const btnMassUnBaptised: Button = new Button({
         )
           hours.push(hoursBtns[4], hoursBtns[5]);
         else if (
+          !isFast
+            ||
           //We remove the 9th hour in the following days/periods
-          [0, 6].includes(weekDay) || //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
-          lordFeasts.includes(copticDate) || //This is a Lord Feast. We remove the 9th hour
-          [
-            Seasons.Nativity,
-            Seasons.Baptism,
-            Seasons.PentecostalDays,
-            Seasons.Nayrouz,
-            Seasons.CrossFeast,
-          ].includes(Season) || //These are feast/joyfull seasons
-          (!isFast && ![3, 5].includes(weekDay)) //We are not during a feast or joyfull season, but we are not neither a Wednesday nor a Firday
+          [0, 6].includes(weekDay) //Whatever the period, if we are a Saturday or a Sunday, we pray only the 3rd and 6th Hours
         )
           hours.pop(); //we remove the 9th hour
 
@@ -1387,9 +1376,8 @@ const btnMassUnBaptised: Button = new Button({
       ); //We add the master button to the bookOfHoursMasterDiv
 
       //We will create a button and an expandable div for each hour
-      hoursBtns
-        .reverse() //We reverse the buttons in order to get them arranged in the order from right to left (i.e: 3rdHour, 6thHour, etc.)
-        .forEach(async (btn) => {
+      let htmlBtns = hoursBtns
+        .map((btn) => {
           btn.onClick(true); //We call the onClick() method of the btn in order to build its prayersSequence and prayersArray properties. Notice that we passs
 
           InsertHourFinalPrayers(btn); //Inserting Kyrielison 41 times, Agios, Holy God of Sabaot, etc.
@@ -1425,12 +1413,21 @@ const btnMassUnBaptised: Button = new Button({
 
           addOnClickToHourBtn(createdElements[0]); //This is the button that will show or hid each hour's button
 
-          btnsDiv.appendChild(createdElements[0]); //We add all the buttons to the same div instead of 3 divs;
 
           collapseAllTitles(
             Array.from(createdElements[1].children) as HTMLDivElement[]
           ); //We collapse all the titles
+          return createdElements[0];
         });
+
+      if(htmlBtns) htmlBtns.forEach(btn => btnsDiv.appendChild(btn));
+      
+/*         for (let i = 0; i < htmlBtns.length; i+=3){
+          //We need to reverse the order of the prayers ion
+          if(i)
+          htmlBtns.slice(i,i+3).reverse().forEach(btn=>  btnsDiv.appendChild(btn)); //We add all the buttons to the same div instead of 3 divs;)
+          
+        } */
 
       function addOnClickToHourBtn(hourBtn: HTMLElement) {
         hourBtn.addEventListener("click", async () => {
@@ -1582,7 +1579,7 @@ const btnMassUnBaptised: Button = new Button({
               ],
             ],
           ],
-          languages: language,
+          languages: ['AR', 'FR', 'EN'],
           position: { beforeOrAfter: "beforebegin", el: readings[0][1] },
           container: btnDocFragment,
         });
@@ -1600,7 +1597,7 @@ const btnMassUnBaptised: Button = new Button({
               ],
             ],
           ],
-          languages: language,
+          languages: ['AR', 'FR', 'EN'],
           position: { beforeOrAfter: "beforebegin", el: readingsAnchor },
           container: btnDocFragment,
         });

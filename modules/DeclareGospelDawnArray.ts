@@ -10581,37 +10581,31 @@ ReadingsArrays.GospelDawnArray= [[
     ]
   ],
   [
-  [
-  Prefix.gospelDawn+"Gospel&D=Jonah1&C=Title", 
-  "", 
-  "FR", 
-  "Bible", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "", 
-  "FR", 
-  "EN",  
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "",
-  "FR", 
-  "EN",  
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-    "",
-  "FR", 
-  "EN",  
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-    "",
-  "FR", 
-  "EN", 
-  ],
-  ],
+    [
+    Prefix.incenseDawn+"Gospel&D=Jonah1&C=Title", 
+    " متى) 7 : 7 – 12 )", 
+    "Matthew (7: 6-12)", 
+    "Mathieu (7: 6-12)", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "اسألوا تعطوا.اطلبوا تجدوا.اقرعوا يفتح لكم.لان كل من يسأل يأخذ.ومن يطلب يجد.ومن يقرع يفتح له.", 
+    "7 Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: 8 For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.", 
+    "7 Demandez, on vous donnera; cherchez, vous trouverez; frappez, on vous ouvrira. 8 En effet, quiconque demande reçoit, qui cherche trouve, à qui frappe on ouvrira.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "ام اي انسان منكم اذا سأله ابنه خبزا يعطيه حجرا. وان سأله سمكة يعطيه حية. فان كنتم وانتم اشرار تعرفون ان تعطوا اولادكم عطايا جيدة فكم بالحري ابوكم الذي في السموات يهب خيرات للذين يسألونه.", 
+    "9 Or what man is there of you, whom if his son ask bread, will he give him a stone? 10 Or if he ask a fish, will he give him a serpent? 11 If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?", 
+    "9 Ou encore, qui d'entre vous, si son fils lui demande du pain, lui donnera une pierre? 10 Ou s'il demande un poisson, lui donnera-t-il un serpent? 11 Si donc vous, qui êtes mauvais, savez donner de bonnes choses à vos enfants, combien plus votre Père qui est aux cieux, donnera-t-il de bonnes choses à ceux qui le lui demandent.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "فكل ما تريدون ان يفعل الناس بكم افعلوا هكذا انتم ايضا بهم.لان هذا هو الناموس والانبياء.", 
+    "12 Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.", 
+    "12 Ainsi, tout ce que vous voulez que les hommes fassent pour vous, faites-le vous mêmes pour eux: c'est la Loi et les Prophètes.", 
+    ],
+    ],
   [
     [
     Prefix.gospelDawn+"Psalm&D=Jonah2&C=Title", 
@@ -10621,13 +10615,25 @@ ReadingsArrays.GospelDawnArray= [[
     ]
   ],
   [
-  [
-  Prefix.gospelDawn+"Gospel&D=Jonah2&C=Title", 
-  "AR", 
-  "FR", 
-  "Tuesday of JonahFast", 
-  ],
-  ],
+    [
+    Prefix.incenseDawn+"Gospel&D=Jonah2&C=Title", 
+    " لوقا ( 13 : 6 ـ 9 )", 
+    "Luc 13:6-9", 
+    "Luke 13:6-9", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "وقال لهُم هذا المثل، كان لواحد شجرةُ تين مغروسةٌ في كرمةِ، فجاء يطلُبُ ثمرة فيها فلم يجد. فقال للكرَّام ها هي ثلاثُ سنين مُنذُ آتياني وأطلُب ثمرةً في شجرة التين هذه ولا أجد،", 
+    "Et il dit cette parabole: \"Un homme avait un figuier planté dans sa vigne. Il vint y chercher du fruit et n'en trouva pas. 7 Il dit alors au vigneron: \"Voilà trois ans que je viens chercher du fruit sur ce figuier et je n'en trouve pas.", 
+    "6 He also spoke this parable: A certain man had a fig tree planted in his vineyard, and he came seeking fruit on it and found none. 7 Then he said to the keeper of his vineyard, `Look, for three years I have come seeking fruit on this fig tree and find none.", 
+    ],
+    [
+    Prefix.same+"&C=NoActor", 
+    "اقطعها، فلماذا تُعطل الأرض أيضاً. فأجاب وقال لهُ يا سيِّدُ دعها هذه السَّنة أيضاً حتَّى أعزق تحتها وأسمدها، لعلها تُثمر في السَّنة الآتية فإن لم تُثمر تقطعها.", 
+    "Coupe-le. Pourquoi faut-il encore qu'il épuise la terre? 8 Mais l'autre lui répond: \"Maître, laisse-le encore cette année, le temps que je bêche tout autour et que je mette du fumier. 9 Peut-être donnera-t-il du fruit à l'avenir. Sinon, tu le couperas.\"", 
+    "Cut it down; why does it use up the ground?' 8 But he answered and said to him, `Sir, let it alone this year also, until I dig around it and fertilize it. 9 `And if it bears fruit, well. But if not, after that you can cut it down.'.", 
+    ],
+    ],
   [
     [
     Prefix.gospelDawn+"Psalm&D=Jonah3&C=Title", 

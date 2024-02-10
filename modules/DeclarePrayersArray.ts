@@ -207,9 +207,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "En présence du Patriarche de métropolites ou d'évêques", 
-  "", 
   " وفي حضور البطرك أو الأسقف أو المطران", 
   ],
   [
@@ -347,9 +345,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "Après la fin du troisième tour, il embrasse l’autel, sort du sanctuaire en regardant vers l’est (le diacre étant sorti avant lui), il encense en direction des 4 points cardinaux", 
-  "", 
   "ثُمَّ ينزل أَمَامْ بَابُ الهَيْكَلْ ويعطي ثلاث أياد بَخُورشرقاً وفي كُلِّ مرة يخضع برأسه يقول في اليد الأولى:ـ", 
   ],
   [
@@ -361,9 +357,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "la deuxième fois il dit :", 
-  "", 
   "في اليد الثانية:ـ", 
   ],
   [
@@ -375,9 +369,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "la troisième fois il dit :", 
-  "", 
   "وفي اليد الثالثة:", 
   ],
   [
@@ -389,9 +381,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "Puis il encense vers le nord (à sa gauche) en disant :", 
-  "", 
   "ثُمَّ يبخر لجهة بحري لأجل السَيِّدَةْ العَذْراءْ قَائِلاً:", 
   ],
   [
@@ -402,10 +392,8 @@ PrayersArray= [[
   "نعطيكي السَّلامُ مَعَ جبرائيل المَلاكْ قائلين: السَّلامُ لَكَ يا مُمْتَلِئَةْ نِعْمَةْ الرَبّ مَعَك.", 
   ],
   [
-  Prefix.same+"&C=Comments", 
-  "", 
-  "Puis il encense vers l’ouest (l’assemblée) en disant :", 
-  "", 
+  Prefix.same+"&C=Comments",  
+  "Puis il encense vers l’ouest (l’assemblée) en disant :",  
   "ثُمَّ يبخر إلى جهة الغرَبّ ويقول:", 
   ],
   [
@@ -416,10 +404,8 @@ PrayersArray= [[
   "السَّلامُ لمصاف المَلائِكَةْ وسادتي الآبَاءْ الرُسُلْ وصفوف الشهداء وجَمِيعِ القِدِّيسِينْ.", 
   ],
   [
-  Prefix.same+"&C=Comments", 
-  "", 
-  "Salut à Jean fils de Zacharie, salut au prêtre fils du prêtre.", 
-  "", 
+  Prefix.same+"&C=Comments",  
+  "Salut à Jean fils de Zacharie, salut au prêtre fils du prêtre.",  
   "ثُمَّ يبخر إلى جهة قبلي ويقول:ـ", 
   ],
   [
@@ -430,10 +416,8 @@ PrayersArray= [[
   "السَّلامُ ليوحنا بن زكريا، السَّلامُ للكاهن ابن الكاهن؛", 
   ],
   [
-  Prefix.same+"&C=Comments", 
-  "", 
-  "Puis il encense vers l’est en disant :", 
-  "", 
+  Prefix.same+"&C=Comments",  
+  "Puis il encense vers l’est en disant :",  
   "ثُمَّ يبخر إلى جهة الشَرْقِ ويقول:ـ", 
   ],
   [
@@ -3730,8 +3714,8 @@ PrayersArray= [[
   "", 
   "ثُمَّ ينفضها وبهذا كأنه يحذر الشَعْبْ لئلا ينكر أحد إيمانه بالسيد المَسِيحْ أو أنْ يكون قانون الإيمان من الفم فقط، ويعلن بنفض يديه براءته من المخالف، وبعد ذلك ينشف يديه جيداً ويقف أمام المَذْبَحْ بخشوع.", 
   ],
-    [
-      Prefix.placeHolder, 
+  [
+    Prefix.placeHolder, 
   Prefix.commonPrayer+"BlockShlil&D=$copticFeasts.AnyDay", 
   ],
   [
@@ -9620,9 +9604,7 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
   "Entre la fête de l’ascension et les Pentecôtes", 
-  "", 
   "من عيد الصعود إلى العنصرة يضيف الكَاهِنْ الاتى:", 
   ],
   [
@@ -9634,8 +9616,6 @@ PrayersArray= [[
   ],
   [
   Prefix.same+"&C=Comments", 
-  "", 
-  "", 
   "", 
   "ثُمَّ يكمل الكاهن:ـ", 
   ],

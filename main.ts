@@ -1,58 +1,5 @@
 const copticReadingsDates: string[][] = getCopticReadingsDates();
 
-/**
- * Adds or removes a language to the userLanguages Array
- * @param el {HTMLElement} - the html button on which the user clicked to add or remove the language. The language is retrieved from the element's dataset
- */
-function addOrRemoveLanguage(el: HTMLElement) {
-  let lang: string;
-  lang = el.lang;
-  //we check that the language that we need to add is included in the userLanguages array
-  if (userLanguages.indexOf(lang) > -1) {
-    //The language is included in the userLanguages
-    if (lang === "CA" && userLanguages.indexOf("COP") === -1) {
-      userLanguages.splice(userLanguages.indexOf(lang), 1, "COP");
-    } else if (lang === "EN" && userLanguages.indexOf("FR") === -1) {
-      userLanguages.splice(userLanguages.indexOf(lang), 1, "FR");
-    } else {
-      userLanguages.splice(userLanguages.indexOf(lang), 1);
-    }
-    el.innerText = el.innerText.replace("Remove", "Add");
-  } else if (userLanguages.indexOf(lang) === -1) {
-    //The language is not included in user languages, we will add it
-    //if the user adds the Coptic in Arabic characters, we assume he doesn't need the Coptic text we do the same for English and French
-    if (lang === "CA" && userLanguages.indexOf("COP") > -1) {
-      userLanguages.splice(userLanguages.indexOf("COP"), 1, lang);
-    } else if (lang === "EN" && userLanguages.indexOf("FR") > -1) {
-      userLanguages.splice(userLanguages.indexOf("FR"), 1, lang);
-    } else {
-      userLanguages.push(lang);
-    }
-    el.innerText = el.innerText.replace("Add", "Remove");
-  }
-  localStorage.userLanguages = JSON.stringify(userLanguages);
-
-  //in order to refresh the view after adding or removing a language, we call the showChildButtonsOrPrayers passing to it the lasClickedButton which is a variable storing the last clicked sideBar Button (its class is Button) that is displaying its prayers/children/inlineBtns, etc.,
-  showChildButtonsOrPrayers(lastClickedButton);
-}
-
-/**
- * Removed (if included) or adds (if missing) a given language from/to userLanguages[]
- * @param {string} lang - the language that will be removed or added to userLanguages[]
- */
-function modifyUserLanguages(lang: string) {
-  if (userLanguages.indexOf(lang) > -1) {
-    //lang is included, we will remove it
-    userLanguages.splice(userLanguages.indexOf(lang), 1);
-  } else if (userLanguages.indexOf(lang) < 0) {
-    //lang is not included, we will add it
-    userLanguages.splice(allLanguages.indexOf(lang), 0, lang);
-  }
-  localStorage.userLanguages = JSON.stringify(userLanguages);
-}
-
-function modifyDefaultAndForeignLanguages() {}
-
 document.addEventListener("DOMContentLoaded", startApp);
 
 /**
@@ -181,22 +128,24 @@ function createHtmlElementForPrayer(args: {
 
   //looping the elemparams.ents containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < args.tblRow.length; x++) {
-    //x starts from 1 because prayers[0] is the id
+    //x starts from 1 because prayers[0] is the title of the row
     if (!args.tblRow[x] || args.tblRow[x] === " ") continue; //we escape the empty strings if the text is not available in all the button's languages
-    if (args.actorClass && args.actorClass === "Comments") {
+    if (args.actorClass && args.actorClass === "Comments") 
       //this means it is a comment
-      x === 1 ? (lang = foreingLanguage) : (lang = defaultLanguage);
-    } else {
-      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, redrethat's why we start from x-1.
-    } //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
-    if (args.userLanguages.indexOf(lang) < 0) continue;
+      x === 1 ? lang = 'FR' : lang = "AR"
+   else 
+        lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, redrethat's why we start from x-1.
+      
+   
+    //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
+    if (!args.userLanguages.includes(lang)) continue;
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
     if (!args.actorClass) p.classList.add("PrayerText"); //The 'prayer' array includes a paragraph of ordinary core text of the array. We give it 'PrayerText' as class
 
     p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     text = args.tblRow[x];
-    p.lang = lang.toLowerCase();
-    p.classList.add(lang);
+    if(lang) p.classList.add(lang);
+    if(lang) p.lang = lang.toLowerCase();
     p.innerText = text;
     p.addEventListener("dblclick", (ev: MouseEvent) => {
       ev.preventDefault();
@@ -2662,36 +2611,43 @@ function showSettingsPanel() {
      * @param {number} index - the index of the language in the userLanguages array stored in the localStorage. This index indicated whether the language is the defaultLanguage (index=0) or the foreignLanguage (index=1), or the version of the Coptic text (index=2)
      */
     function setLanguage(lang: string, index: number) {
-      let stored: string[] = JSON.parse(localStorage.userLanguages);
-      if (index > 0 && stored.indexOf(lang) === index) {
+      let userLanguages: string[] = JSON.parse(localStorage.userLanguages);
+      if (!userLanguages) userLanguages = [];
+      if (index > 0 && userLanguages.indexOf(lang) === index)
         //If the language is already defined at the same index, we will set the element at the same index to undefined (i.e., we will desactivate the language and remove it from the list of userLanguages). We never set the default language (i.e. stored[0]) to undefined that's why we exclude the case where index = 0
-        stored[index] = undefined;
-      } else if (index === 0 && stored.indexOf(lang) === index) {
+        userLanguages[index] = undefined;
+
+      else if (index === 0 && userLanguages.indexOf(lang) === index)
         return alert(
           "You cannot not desactivate the default language. You can replace it by choosing another language"
         );
-      } else if (stored.indexOf(lang) === 0 && index === 1 && stored[index]) {
+
+      else if (userLanguages.indexOf(lang) === 0 && index === 1 && userLanguages[index]){
         //If the language is already set as defaultLanguage (it is set at index 0), and we want to make it the foreign language (index = 1), we check if the value of index 1 (the index of the foreign language) is not undefined. If so, we make the foreign language default language and we replace it with lang
-        stored[0] = stored[index];
-        stored[index] = lang;
-      } else if (stored.indexOf(lang) === 0 && index === 1 && !stored[index]) {
-        return alert(
-          "You must first replace the default langauge by another language before being able to set it as foreign language"
-        );
-      } else if (stored.indexOf(lang) === 1 && index === 0) {
-        //If the language is already set as foreignLanguage (it is set at index 1), and we want to make it the default language (index = 0). If so, we set the foreign language as undefined default language and we set the language as default language
-        stored[1] = undefined;
-        stored[index] = lang;
-      } else if (stored.indexOf(lang) < 0) {
-        //If the array does not contain the language at any of its indexes, we add it at the index passed as argument
-        stored[index] = lang;
+        userLanguages[0] = userLanguages[index];
+        userLanguages[index] = lang
       }
 
-      defaultLanguage = stored[0];
-      foreingLanguage = stored[1];
-      copticLanguage = stored[2];
+       else if (userLanguages.indexOf(lang) === 0 && index === 1 && !userLanguages[index])
+        return alert(
+          "You must first replace the default language by another language before being able to set it as foreign language"
+        );
 
-      localStorage.userLanguages = JSON.stringify(stored);
+       else if (userLanguages.indexOf(lang) === 1 && index === 0) {
+        //If the language is already set as foreignLanguage (it is set at index 1), and we want to make it the default language (index = 0). If so, we set the foreign language as undefined default language and we set the language as default language
+        userLanguages[1] = undefined;
+        userLanguages[index] = lang;
+      }
+      else if (userLanguages.indexOf(lang) < 0)
+        //If the array does not contain the language at any of its indexes, we add it at the index passed as argument
+        userLanguages[index] = lang;
+      
+
+      defaultLanguage = userLanguages[0];
+      foreingLanguage = userLanguages[1];
+      copticLanguage = userLanguages[2];
+
+      localStorage.userLanguages = JSON.stringify(userLanguages);
       console.log(localStorage.userLanguages);
     }
 
@@ -3009,7 +2965,8 @@ function insertPrayersAdjacentToExistingElement(args: {
   if (!args.tables) return;
   if (!args.container) args.container = containerDiv;
 
-  return args.tables.map((table) => {
+  return args.tables
+    .map((table) => {
     if (!table || table.length === 0) return;
     return showPrayers({
       wordTable: table,
@@ -11576,8 +11533,7 @@ function cleanReadingArray(readingArray:string[][][]){
 
       if (titles.length < 2) return;
       
-    
-
+  
       if (!similar.has(titles)
         && !Array.from(similar).find(array=>array.includes(titles[0]))
       ) {

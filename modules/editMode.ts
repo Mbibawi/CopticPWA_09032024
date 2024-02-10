@@ -16,9 +16,9 @@ function startEditingMode(args: {
   tablesArray?: string[][][];
   languages?: string[];
   operator?:
-    | { includes: boolean }
-    | { equal: boolean }
-    | { startsWith: boolean };
+  | { includes: boolean }
+  | { equal: boolean }
+  | { startsWith: boolean };
 }) {
   if (args.clear !== false) args.clear = true;
   containerDiv.dataset.specificTables = "false";
@@ -54,7 +54,7 @@ function startEditingMode(args: {
   containerDiv.style.gridTemplateColumns = "100%";
 
   if (!args.languages)
-    args.languages = getLanguages(args.arrayName) || allLanguages;
+    args.languages = getLanguages(args.arrayName) || allLanguages.map(lang=>lang[0]);
 
   function addNewTable() {
     args.arrayName = "PrayersArray"; //!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
@@ -146,9 +146,9 @@ function showTables(args: {
   tablesArray: string[][][];
   languages?: string[];
   position?:
-    | HTMLElement
-    | DocumentFragment
-    | { el: HTMLElement; beforeOrAfter: InsertPosition };
+  | HTMLElement
+  | DocumentFragment
+  | { el: HTMLElement; beforeOrAfter: InsertPosition };
   container?: HTMLElement | DocumentFragment;
   clear?: boolean;
 }) {
@@ -204,10 +204,10 @@ function showTables(args: {
   titles.forEach((div) =>
     Array.from(div.getElementsByTagName("P")).forEach(
       (p: HTMLElement) =>
-        (p.innerText = p.innerText.replaceAll(
-          String.fromCharCode(plusCharCode + 1),
-          ""
-        ))
+      (p.innerText = p.innerText.replaceAll(
+        String.fromCharCode(plusCharCode + 1),
+        ""
+      ))
     )
   );
 
@@ -272,6 +272,11 @@ function addEdintingButtons() {
   createEditingButton(
     () => addNewRow(document.getSelection().focusNode.parentElement),
     "Add Row",
+    btnsDiv
+  );
+  createEditingButton(
+    () => addNewRow(document.getSelection().focusNode.parentElement, true),
+    "Add PlaceHolder",
     btnsDiv
   );
   createEditingButton(
@@ -735,41 +740,85 @@ function replaceHtmlQuotes(innerHtml: string, lang: string): string {
  * @param {HTMLElement} row - the div (row) below which we will add a row
  * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
  */
-function addNewRow(htmlParag: HTMLElement, title?: string): HTMLElement {
+function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title?: string): HTMLElement|void {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
 
   let newRow = document.createElement("div"),
-    p: HTMLParagraphElement;
+    p: HTMLParagraphElement,
+    rowClass: string = 'Row',
+    gridColumns: string = htmlRow.style.gridTemplateColumns,
+    gridAreas: string = htmlRow.style.gridTemplateAreas;
 
-  newRow.classList.add("Row");
+  if (isPlaceHolder) {
+    rowClass = 'PlaceHolder';
+    gridColumns = '1';
+    gridAreas = 'FR';
+    newRow.dataset.root = htmlRow.dataset.root;
+    newRow.title = htmlRow.dataset.title;
+
+    if (htmlRow.dataset.displayedPlaceHolder)
+      //If htmlRow is a row in a table displayed from a PlaceHolder element, we will go up until we find the first row of the main table to which the PlaceHolder table is attached, and will retrieve its dataset.root
+      Object.entries(getMainTableTitle(htmlRow))
+        .forEach(entry =>
+          entry[0] === 'title' ? newRow.title = entry[1] : newRow.dataset.arrayName = entry[1]);
+    
+        newRow.dataset.root = splitTitle(newRow.title)[0];
+        newRow.dataset.group = newRow.dataset.root;
+    
+    function getMainTableTitle(div: HTMLDivElement): {
+      title: string; arrayName:string}{
+      let previous = div.previousElementSibling as HTMLDivElement;
+      while (
+        //We go up as long as the previous element has dataset.displayedPlaceHolder === div.dataset.displayedPlaceHolder
+        previous.dataset.displayedPlaceHolder
+        &&
+        previous.dataset.displayedPlaceHolder === div.dataset.displayedPlaceHolder)
+        getMainTableTitle(previous as HTMLDivElement);
+        
+      return {title: previous.title, arrayName: previous.dataset.arrayName};//This is the main div where the PlaceHolder is displayed before being extended when clicked on
+    }
+  }
+
+  newRow.classList.add(rowClass);
   newRow.dataset.isNewRow = "isNewRow";
   newRow.style.display = htmlRow.style.display;
-  newRow.style.gridTemplateColumns = htmlRow.style.gridTemplateColumns;
-  newRow.style.gridTemplateAreas = htmlRow.style.gridTemplateAreas;
+  newRow.style.gridTemplateColumns = gridColumns;
+  newRow.style.gridTemplateAreas = gridAreas;
 
   if (!title) title = prompt("Provide the Title of the new Row", htmlRow.title);
-  newRow.dataset.root = splitTitle(title)[0];
-  let arrayName = prompt(
-    "Provide the name of the array",
-    htmlRow.dataset.arrayName
-  );
-  newRow.dataset.arrayName = arrayName;
-  newRow.title = title;
-  let cssClass = splitTitle(title)[1];
-  if (cssClass) newRow.classList.add(cssClass);
-  if (cssClass.includes("Title")) newRow.id = title;
+  if (!title) return alert('You must provide a valide name for the table that will be put as PlaceHolder');
+  
+  if (isPlaceHolder) newRow.dataset.isPlaceHolder = title;
 
-  Array.from(htmlRow.children).forEach((child: HTMLElement) => {
-    if (!child.lang || child.tagName !== "P") return;
-    p = newRow.appendChild(document.createElement("p"));
-    p.title = title;
-    p.dataset.root = newRow.dataset.root;
-    p.lang = child.lang;
-    p.classList.add(p.lang.toUpperCase());
-    p.contentEditable = "true";
-  });
+  
+  if (!newRow.dataset.root) //If not already set because it is a new PlaceHolder row
+    newRow.dataset.root = splitTitle(title)[0];
+  
+  
+  if (!newRow.title) //If not already set because it is a new PlaceHolder row
+    newRow.title = title;
 
+  if(!newRow.dataset.arrayName) //If not already set because it is a new PlaceHolder row
+    newRow.dataset.arrayName = prompt("Provide the name of the array", htmlRow.dataset.arrayName);
+  
+  if (!isPlaceHolder && splitTitle(title)[1])
+    newRow.classList.add(splitTitle(title)[1]);
+
+  let children = Array.from(htmlRow.children);
+  children
+    .forEach((child: HTMLElement) => {
+      if (isPlaceHolder && newRow.children.length > 0) return;
+      if (!child.lang || child.tagName !== "P") return;
+      p = newRow.appendChild(document.createElement("p"));
+      if (isPlaceHolder) p.innerText = splitTitle(title)[0];
+      p.title = newRow.title;
+      p.dataset.root = newRow.dataset.root;
+      isPlaceHolder ? p.lang = 'FR' : p.lang = child.lang;
+      p.classList.add(p.lang.toUpperCase());
+      p.contentEditable = "true";
+    });
+  
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
 function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
@@ -815,9 +864,9 @@ function createHtmlElementForPrayerEditingMode(args: {
   titleBase: string;
   languagesArray: string[];
   position?:
-    | HTMLElement
-    | DocumentFragment
-    | { beforeOrAfter: InsertPosition; el: HTMLElement };
+  | HTMLElement
+  | DocumentFragment
+  | { beforeOrAfter: InsertPosition; el: HTMLElement };
   container?: HTMLElement | DocumentFragment;
   arrayName?: string;
   actorClass?: string;
@@ -960,10 +1009,7 @@ function createHtmlElementForPrayerEditingMode(args: {
   //looping the elements containing the text of the prayer in different languages,  starting by 1 since 0 is the id/title of the table
   for (let x = 1; x < args.tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the id
-    if (
-      actorClass &&
-      (actorClass === "Comment" || actorClass === "CommentText")
-    ) {
+    if (actorClass && actorClass === "Comments") {
       //this means it is a comment
       x == 1
         ? (lang = args.languagesArray[1])
@@ -991,10 +1037,10 @@ function createHtmlElementForPrayerEditingMode(args: {
     ?
     //@ts-ignore
     args.position.el.insertAdjacentElement(args.position.beforeOrAfter,
-        htmlRow
-      )
+      htmlRow
+    )
     : //@ts-ignore
-      args.position.appendChild(htmlRow);
+    args.position.appendChild(htmlRow);
 
   return htmlRow;
 }
@@ -1025,7 +1071,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
       createHtmlElementForPrayerEditingMode({
         tblRow: Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
         titleBase: row.dataset.root,
-        languagesArray: allLanguages,
+        languagesArray: allLanguages.map(lang=>lang[0]),
         position: document.getElementById("showSequence") as HTMLElement,
       });
     });
@@ -1084,7 +1130,7 @@ function showSequence(
           (p: HTMLElement) => p.innerText
         ),
         titleBase: title,
-        languagesArray: allLanguages,
+        languagesArray: allLanguages.map(lang=>lang[0]),
         position: newDiv,
       });
     });
@@ -1159,10 +1205,10 @@ function splitParagraphsToTheRowsBelow(htmlParag: HTMLElement) {
 
   if (htmlParag.tagName !== "P") return showAlert();
   let title: string =
-      htmlParag.parentElement.dataset.title ||
-      htmlParag.parentElement.dataset.root +
-        "&C=" +
-        Array.from(htmlParag.parentElement.classList).find((c) => c !== "Row"),
+    htmlParag.parentElement.dataset.title ||
+    htmlParag.parentElement.dataset.root +
+    "&C=" +
+    Array.from(htmlParag.parentElement.classList).find((c) => c !== "Row"),
     lang: string = htmlParag.lang,
     table: HTMLElement[] = Array.from(containerDiv.children).filter(
       (htmlRow: HTMLDivElement) =>
@@ -1171,7 +1217,7 @@ function splitParagraphsToTheRowsBelow(htmlParag: HTMLElement) {
   if (!table || table.length === 0)
     return alert(
       "We didn't find any elements having the same data-root as the selected paragraph: " +
-        title
+      title
     );
 
   let rowIndex: number = table.indexOf(htmlParag.parentElement);
@@ -1185,8 +1231,9 @@ function splitParagraphsToTheRowsBelow(htmlParag: HTMLElement) {
       table.push(
         addNewRow(
           table[table.length - 1].querySelector('p[lang="' + lang + '"]'),
+          false,
           title
-        )
+        ) || undefined
       );
     }
     let paragraph = Array.from(table[i + rowIndex].children).filter(
@@ -1255,9 +1302,9 @@ function convertCopticFontFromAPI(htmlElement: HTMLElement) {
   request.setRequestHeader("accept", "text");
   request.send(
     "from=" +
-      encodeURI(fontFrom) +
-      "&encoding=unicode&action=translate&data=" +
-      encodeURI(text)
+    encodeURI(fontFrom) +
+    "&encoding=unicode&action=translate&data=" +
+    encodeURI(text)
   );
   request.responseType = "text";
   request.onload = () => {
@@ -1279,7 +1326,7 @@ function goToTableByTitle() {
   saveModifiedArray({ exportToFile: false, exportToStorage: true });
   let title: string = "";
   //@ts-ignore
-  if (containerDiv.children.length > 0 && containerDiv.children[0].dataset.root)  title = containerDiv.children[0].dataset.root;
+  if (containerDiv.children.length > 0 && containerDiv.children[0].dataset.root) title = containerDiv.children[0].dataset.root;
 
   title = prompt(
     'Provide the title you want to go to. If you want to show the readings of a given day, you provide the date of the readings in this format"ReadignsDate = [date]"',

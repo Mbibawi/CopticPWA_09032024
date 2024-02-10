@@ -7,7 +7,7 @@ ReadingsArrays.GospelNightArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "امتلأت بطونهم من خفاياتك. وأفعموا بطونهم من لحم الخنازير، وتركوا الفضلات لأطفالهم.        هللويا. ", 
+  "امتلأت بطونهم من خفاياتك. وأفعموا بطونهم من لحم الخنازير، وتركوا الفضلات لأطفالهم. ", 
   "14 Gave-les de ce que tu tiens en réserve, Que leurs fils en soient rassasiés. Et qu'ils en laissent pour leurs nourrissons,   ", 
   "14 And whose belly You fill with Your hidden treasure. They are satisfied with children, And leave the rest of their possession for their babes.      Alleluia ", 
   ],
@@ -65,7 +65,7 @@ ReadingsArrays.GospelNightArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يمينك مملؤة عدلاً. فليفرح جبل صهيون ولتتهلل بنات اليهودية من أجل أحكامك يارب        هللويا. ", 
+  "يمينك مملؤة عدلاً. فليفرح جبل صهيون ولتتهلل بنات اليهودية من أجل أحكامك يارب . ", 
   "10 Ta droite est pleine de justice, 11 la montagne de Sion se réjouit, Les villes de Juda exultent, à cause de tes jugements,    ", 
   "10 Your right hand is full of righteousness  11 Let Mount Zion rejoice, Let the daughters of Judah be glad, Because of Your judgments.      Alleluia ", 
   ],
@@ -123,7 +123,7 @@ ReadingsArrays.GospelNightArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طوبَى للذي يَتَفهَّم في أمرِ المسكينِ والفقيرِ، في يَوم السوءِ يُنَجِّيهِ الرَّبُّ    هللويا. ", 
+  "طوبَى للذي يَتَفهَّم في أمرِ المسكينِ والفقيرِ، في يَوم السوءِ يُنَجِّيهِ الرَّ. ", 
   "1 Heureux qui pense au pauvre et au faible: Le Seigneur le sauve au jour du malheur,    ", 
   "41:1 Blessed is he who considers the poor; The Lord will deliver him in time of trouble.  Alleluia ", 
   ],
@@ -175,7 +175,7 @@ ReadingsArrays.GospelNightArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أُعَظِّمُكَ ياربَّ، لأنَّكَ احْتَضَنْتَنِي ولمْ تُشْمِتْ بِي أعدَائِي. أيُّها الرَّبُّ إلهِي صَرختُ إليكَ فَشَفَيتَنِي. ياربُّ أَصْعَدتَ نَفسِي مِنَ الجَحيمِ.     هللويا ", 
+  "أُعَظِّمُكَ ياربَّ، لأنَّكَ احْتَضَنْتَنِي ولمْ تُشْمِتْ بِي أعدَائِي. أيُّها الرَّبُّ إلهِي صَرختُ إليكَ فَشَفَيتَنِي. ياربُّ أَصْعَدتَ نَفسِي مِنَ الجَحيم ", 
   "1 Je t'exalte, Seigneur, car tu m'as repêché, Tu n'as pas réjoui mes ennemis à mes dépens.   2 Seigneur mon Dieu, j'ai crié vers toi, et  tu m'as guéri, 3 Seigneur, tu m'as fait  remonter des enfers,   ", 
   "1 I will extol You, O Lord, for You have lifted me up, And have not let my foes rejoice over me.  2 O Lord my God, I cried out to You, And You healed me. 3 O Lord, You brought my soul up from the grave.  Alleluia ", 
   ],
@@ -255,7 +255,7 @@ ReadingsArrays.GospelNightArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "بصَوتي إلى الرَّبِّ هتفت، بِصَوتي إلى الرَّبِّ تَضَرَّعتُ. أسْكُبُ أمَامَهُ تَوَسُّلِي، وحزني قُدَّامهُ أُفرغُ.     هللويا ", 
+  "بصَوتي إلى الرَّبِّ هتفت، بِصَوتي إلى الرَّبِّ تَضَرَّعتُ. أسْكُبُ أمَامَهُ تَوَسُّلِي، وحزني قُدَّامهُ أُفرغ ", 
   "1 A pleine voix, je crie vers le Seigneur, à pleine voix, je supplie le Seigneur. 2 Je répands devant lui ma plainte, devant lui j'expose ma détresse,  ", 
   "142:1 I cry out to the Lord with my voice; With my voice to the Lord I make my supplication. 2 I pour out my complaint before Him; I declare before Him my trouble Alleluia ", 
   ],

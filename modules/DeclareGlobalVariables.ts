@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.9 (Major fixes to the readings. Completed mass readings for Jonah Fast. Fixed Agios and Helleluja Faybibi for Great Lent, etc.)";
+  "v5.3.9 (Major fixes to the readings and the userLanguages setting. Completed mass readings for Jonah Fast. Fixed Agios and Helleluja Faybibi for Great Lent, etc.)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -196,31 +196,31 @@ const ReadingsIntrosAndEnds = {
     FR: "Levons-nous avec crainte de Dieu pour écouter le Saint Évangile. Lecture du Saint évangile selon Saint (....), Que sa bénédiction soit sur nous tous, Amen !",
   },
   gospelEnd: {
-    AR: "والمجد لله دائماً",
+    AR: "والمَجْدُ لِلّهِ دَائِمَاً",
     FR: "Gloire à Dieu éternellement, Amen !",
   },
   stPaulIntro: {
-    AR: "البولس فصل من رسالة معلمنا بولس الرسول  (الأولى/الثانية) إلى (......)، بركته على جميعنا آمين",
+    AR: "البُولِسْ فُصْلٌ مِنْ رِسَالَةِ مُعَلِمِنَا بُولِسَ الرَسُولِ  (الأولى/الثانية) إلى (......)، بَرَكَتْهُ عَلى جَمِيعِنَا آمْينْ.",
     FR: "Lecture de l’Epître de Saint Paul à () que sa bénédiction soit sur nous tous, Amen!",
     EN: "",
   },
   stPaulEnd: {
-    AR: "نعمة الله الآب فلتكن معكم يا آبائي واختوي آمين.",
+    AR: "نِعْمَةِ اللّهِ الآبِ فَلْتَكُنْ مَعْكُمْ يا آبَائِي وإخْوَتِي آمْينْ.",
     FR: "Que la grâce de Dieu soit avec vous tous, mes père et mes frères, Amen!",
     EN: "",
   },
   katholikonIntro: {
-    AR: "الكاثوليكون، فصل من رسالة القديس (الأولى/الثانية/الثالثة)  بركته على جميعنا آمين",
+    AR: "الكَاثُولِيكُون، فَصْلٌ مِنْ رِسَالَةِ القِدِّيسِ (....) (الأولى/الثانية/الثالثة)  بَرَكَتْهُ عَلَى جَمِيعِنَا آمْينْ",
     FR: "Katholikon, (1ère/2ème/3ème) épître à l’Église Universelle de notre père St.(....), que sa bénédiction repose sur nous tous, Amen!",
     EN: "",
   },
   katholikonEnd: {
-    AR: "لا تحبو العالم ولا الأشياء التي في العالم لأن العالم يمضي وشهوته معه أما من يصنع مشيئة الله فيثبت إلى الأبد",
+    AR: "لا تُحِبُّو العَالَمَ ولا الأَشْيَاءَ التِي في العَالَمِ لأَنَّ العَالَمَ يَمْضِي وشَهْوَتَهُ مَعَهُ أَمَّا مَنْ يَصْنَعَ مَشِيئَةَ اللّهِ فَيَثْبُتُ إلى الأَبَدِ.",
     FR: "N’aimez pas le monde et ce qui est dans le monde, le monde passe, lui et sa convoitise, mais celui qui fait la volonté de Dieu demeure à jamais. Amen !",
     EN: "",
   },
   psalmIntro: {
-    AR: "من مزامير تراتيل أبيناداوود النبي والملك، بركاته على جميعنا آمين.",
+    AR: "مِنْ مَزامِيرِ وتَراتِيلِ أَبِينَادَاوودُ الَنبِيِّ والمَلْكِ، بَرَكَاتُهُ عَلَى جَمِيعِنَا آمْينْ.",
     FR: "Psaume de notre père David, le prophète et le roi, que sa bénédiction soit sur nous tous, Amen!",
     EN: "",
   },
@@ -229,17 +229,17 @@ const ReadingsIntrosAndEnds = {
     FR: "Halleluja",
   },
   praxisIntro: {
-    AR: "الإبركسيس فصل من أعمال آبائنا الرسل الأطهار، الحوارين، المشمولين بنعمة الروح القدس، بركتهم المقدسة فلتكن معكم يا آبائي واخوتي آمين.",
+    AR: "الإبركسيس فَصْلٌ مِنْ أَعْمَالِ آبِائِنَا الرُسُلِ الأَطْهَارِ، الحَوارِيِّنَ، المَشْمُولِينَ بِنِعْمَةِ الرُّوحِ القُدُسِ، بَرَكَتْهُمُ المُقَدَّسَةِ فَلْتَكُنْ مَعْكُمْ يا آبَائِي وإخْوَتِي آمْينْ.",
     FR: "Praxis, Actes de nos pères les apôtres, que leurs saintes bénédictions reposent sur nous. Amen!",
     EN: "",
   },
   praxisEnd: {
-    AR: "لم تزل كلمة الرب تنمو وتعتز وتكثر في هذا البيعة وكل بيعة يا آبائي وإخوتي آمين.",
+  AR: "لَمْ تَزَلْ كَلِمَةُ الرَبِّ تَنْموُ وتَعْتَزُ وتَكْثُر في هَذِه البَيْعَةِ وكُلِّ بَيْعَةٍ يا آبَائِي وإخْوَتِي آمين.",
     FR: "La parole du Seigneur croît, se multiplie et s’enracine dans la sainte Église de Dieu. Amen!",
     EN: "",
   },
   synaxariumIntro: {
-    AR: `اليوم theday من شهر themonth المبارك، أحسن الله استقباله وأعاده علينا وأنتم مغفوري الخطايا والآثام من قبل مراحم الرب يا آبائي واختوي آمين.`,
+    AR: `اليوم theday من شهر themonth المبارك، أحسن الله استقباله وأعاده علينا وأَنْتُمْ مَغْفُورِي الخَطَايَا والآثَامِ مِنْ قِبَلْ مَرَاحِمْ الرَبِّ يا آبَائِي وإخْوتِي آمين.`,
     FR: "Le theday du mois copte themonth ",
     EN: "We are the theday day of the themonth of () ",
   },
@@ -293,7 +293,7 @@ const bookOfHours: {
     },
   ],
   EleventhHour: [
-    [116, 117, 119, 120, 121, 122, 124,125,127,128],
+    [116, 117, 119, 120, 121, 122, 124, 125, 127, 128],
     {
       AR: "السَاعَةِ الحَادِيَةِ عَشْرِ (الغروب)",
       FR: "11ème heure",
@@ -464,22 +464,53 @@ const AngelsFeasts: string[] = [
 
 const martyrsFeasts: string[] = [];
 
-const allLanguages: string[] = ["AR", "FR", "COP", "CA", "CF", "EN"]; //AR = Arabic, FR = French, COP = Coptic, CA = Coptic in Arabic characters, CF = Coptic in French characters, EN = English
+const nonCopticLanguages = [['AR', 'Arabic'], ['FR', 'French'], ['EN', 'English']];
+const copticLanguages = [['COP', 'Coptic'], ['CA', 'قبطي مُعَرَبْ'], ['CF', 'Copte en charachères français']];
+const allLanguages: string[][] = [...nonCopticLanguages, ...copticLanguages];
 
-const userLanguages: string[] = [];
-if (localStorage.userLanguages !== null)
-  localStorage.userLanguages = JSON.stringify(["AR", "FR", "COP"]);
-JSON.parse(localStorage.userLanguages).forEach((lang) =>
-  userLanguages.push(lang)
-);
 
-var defaultLanguage: string = userLanguages[0];
-var foreingLanguage: string = userLanguages[1];
-var copticLanguage: string = userLanguages[2];
+
+
+var defaultLanguage: string = setLanguage(0, 'your default', nonCopticLanguages)||'AR';
+var foreingLanguage: string = setLanguage(1, 'a foreign', nonCopticLanguages);
+var copticLanguage: string = setLanguage(2, 'the characters in which you want the coptic text to be displayed', copticLanguages);
+
+
+localStorage.userLanguages = JSON.stringify([defaultLanguage, foreingLanguage, copticLanguage]);//We do this in case it has been changed
+
+
+function setLanguage(index: number, text: string, languages: string[][]): string {
+  let userLanguages: string[]=[];
+  
+  if(localStorage.userLanguages) userLanguages = JSON.parse(localStorage.userLanguages) as string[];
+
+  if (userLanguages[index]) return userLanguages[index];//We return the value storaged in the localStorage if it is null. When it is null, it means that the user had willingly ignored setting the foreign language when he installed the app for the first time. We do this for any other language than the default language because it must be set.
+  
+  if (index > 0 && userLanguages[index] === null) return userLanguages[index];
+  
+  let choices = languages.map(lang => lang[1]);
+
+  if (defaultLanguage && index <2)  choices.splice(choices.indexOf(languages.find(lang=>lang[0]===defaultLanguage)[1]), 1)//If the function is called while the defaultLanguage was set, we remove the chosen language from the list
+  
+
+  let choice = prompt('Choose ' + text + ' language from the following: ', choices.join(', '));
+
+  if (!choice || !choices.includes(choice)) return undefined;
+
+
+  let found = allLanguages.find(lang => lang[1] === choice);
+  if (!found) return undefined;
+
+  userLanguages[index] = found[0];
+  return userLanguages[index];
+
+}
+
+const prayersLanguages: string[] = ["COP", "FR", "CA", "AR"];
+const readingsLanguages: string[] = ["AR", "FR", "EN"];
+
 var lastScrollTop: number = 0;
 
-const prayersLanguages: string[] = ["COP", foreingLanguage, "CA", "AR"];
-const readingsLanguages: string[] = ["AR", foreingLanguage, "EN"];
 const displayModes = ["Normal", "Presentation", "Priest"];
 
 const CommonPrayersArray: string[][][] = []; //an array in which we will group all the common prayers of all the liturgies. It is a subset o PrayersArray
@@ -518,14 +549,14 @@ const PrayersArrays = [
 ]; //All these arrays are populated by elements from PrayersArray
 
 const GreatLordFeasts = [
-    copticFeasts.Annonciation,
-    copticFeasts.Nativity,
-    copticFeasts.Baptism,
-    copticFeasts.PalmSunday,
-    copticFeasts.Resurrection,
-    copticFeasts.Ascension,
-    copticFeasts.Pentecoste,
-  ],
+  copticFeasts.Annonciation,
+  copticFeasts.Nativity,
+  copticFeasts.Baptism,
+  copticFeasts.PalmSunday,
+  copticFeasts.Resurrection,
+  copticFeasts.Ascension,
+  copticFeasts.Pentecoste,
+],
   MinorLordFeasts = [
     copticFeasts.Epiphany,
     copticFeasts.Circumcision,
@@ -595,7 +626,7 @@ showActors[4][1] = false; //same comment as above concerning the 'CommentText'
 if (localStorage.showActors === undefined) {
   localStorage.showActors = JSON.stringify(showActors);
 }
-allLanguages.map((lang) => textAmplified.push([lang, false]));
+allLanguages.map((lang) => textAmplified.push([lang[0], false]));
 if (localStorage.textAmplified === undefined) {
   localStorage.textAmplified = JSON.stringify(textAmplified);
 }
@@ -702,4 +733,3 @@ const PrayersArraysKeys: [string, string, Function][] = [
   ],
   [Prefix.psalmody, "PsalmodyPrayersArray", () => PsalmodyPrayersArray],
 ];
-    
