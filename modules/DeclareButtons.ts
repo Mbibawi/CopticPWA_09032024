@@ -483,8 +483,7 @@ const btnMassStCyril: Button = new Button({
       ],
       ...MassPrayersSequences.Communion,
     ];
-    /*     btnsPrayersSequences.splice(btns.indexOf(btnMassStCyril), 1, btnMassStCyril.prayersSequence);
-    btnMassStCyril.retrieved = true; */
+ 
     return btnMassStCyril.prayersSequence;
   },
   afterShowPrayers: async () => {
@@ -515,9 +514,7 @@ const btnMassStGregory: Button = new Button({
       9
     );
     scrollToTop();
-    /*     btnsPrayersSequences.splice(btns.indexOf(btnMassStGregory), 1, btnMassStGregory.prayersSequence);
-    btnMassStGregory.retrieved = true;
- */
+
     return btnMassStGregory.prayersSequence;
   },
   afterShowPrayers: async () => {
@@ -1580,7 +1577,7 @@ const btnMassBaptised: Button = new Button({
     EN: "Baptized Mass",
   },
   parentBtn: btnMass,
-  children: [btnMassStBasil, btnMassStCyril, btnMassStGregory], //We are removing Mass StJohn for now
+  children: [btnMassStBasil, btnMassStGregory, btnMassStCyril], //We are removing Mass StJohn for now
 });
 
 const btnReadingsGospelIncenseVespers: Button = new Button({
