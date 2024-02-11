@@ -46,7 +46,8 @@ const MassPrayersSequences = {
         ], //Those are the prayers of the 'Unbaptized Mass'
     MassStBasil: [
         Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
-        Prefix.massStBasil+"Reconciliation&D=$copticFeasts.AnyDay", 
+        Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay",
+        Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
         Prefix.massStBasil  + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStBasil + "Agios&D=$copticFeasts.AnyDay", 
         Prefix.massStBasil+"InstitutionNarrative&D=$copticFeasts.AnyDay",  
@@ -54,7 +55,8 @@ const MassPrayersSequences = {
         ], //The sequence of prayers of St Basil Mass (starting from Reconciliation)
     MassStGregory: [
         Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
-        Prefix.massStGregory+"Reconciliation&D=$copticFeasts.AnyDay", 
+        Prefix.massStGregory + "Reconciliation&D=$copticFeasts.AnyDay", 
+        Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
         Prefix.massStGregory + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"Agios&D=$copticFeasts.AnyDay", 
         Prefix.massStGregory+"AsWeCommemorateYourHolyPassionPart1&D=$copticFeasts.AnyDay", 
@@ -65,7 +67,8 @@ const MassPrayersSequences = {
         ], //The sequence of prayers of St Gregory Mass (starting from reconciliation)
     MassStCyril: [
         Prefix.massCommon+"ReconciliationComment&D=$copticFeasts.AnyDay", 
-        Prefix.massStCyril+"Reconciliation&D=$copticFeasts.AnyDay",  
+        Prefix.massStCyril + "Reconciliation&D=$copticFeasts.AnyDay",  
+        Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
         Prefix.massStCyril + "Anaphora&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Agios&D=$copticFeasts.AnyDay", 
         Prefix.massStCyril+"Part8&D=$copticFeasts.AnyDay", 

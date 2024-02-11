@@ -281,9 +281,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قَدِّموا للرَّبِّ يا جميعَ قبائلَ الشُّعوب. قدِّموا للرَّبِّ مَجْداً وكرامةً. قدِّموا للرَّبِّ مجداً لاسمِهِ. احملوا الذبائح وانطلقوا فادخُلُوا ديَارَهُ. اسجُدُوا للـرَّبِّ في دارهِ المُقدَّس. هللويا.", 
+  "قَدِّموا للرَّبِّ يا جميعَ قبائلَ الشُّعوب. قدِّموا للرَّبِّ مَجْداً وكرامةً. قدِّموا للرَّبِّ مجداً لاسمِهِ. احملوا الذبائح وانطلقوا فادخُلُوا ديَارَهُ. اسجُدُوا للـرَّبِّ في دارهِ المُقدَّس.", 
   "7 Donnez au Seigneur, familles des peuples, Donnez au Seigneur gloire et force. 8 Donnez au Seigneur la gloire de son nom. Apportez votre offrande, entrez dans ses parvis; 9 prosternez-vous devant le Seigneur quand éclate sa sainteté.", 
-  "7 Give to the Lord, O families of the peoples, Give to the Lord glory and strength. 8 Give to the Lord the glory due His name; Bring an offering, and come into His courts. 9 Oh, worship the Lord in the beauty of holiness!. Alleluia", 
+  "7 Give to the Lord, O families of the peoples, Give to the Lord glory and strength. 8 Give to the Lord the glory due His name; Bring an offering, and come into His courts. 9 Oh, worship the Lord in the beauty of holiness!.", 
   ],
   ],
   [
@@ -421,7 +421,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مُوسَى وهارونُ في كهنتهِ. وصَموئيلُ في الَّذينَ يَدعونَ بِاسمهِ. كانوا يَدعونَ الربَّ وهو كانَ يَستجيبُ لهُم. بعمودِ الغمام كان يُكلِّمهُم. هللويا.", 
+  "مُوسَى وهارونُ في كهنتهِ. وصَموئيلُ في الَّذينَ يَدعونَ بِاسمهِ. كانوا يَدعونَ الربَّ وهو كانَ يَستجيبُ لهُم. بعمودِ الغمام كان يُكلِّمهُم.", 
   "6 Moïse et Aaron parmi ses prêtres, et Samuel parmi ceux qui invoquaient son nom, faisaient appel au Seigneur, et il leur répondait.", 
   "6 Moses and Aaron were among His priests, And Samuel was among those who called upon His name; They called upon the Lord, and He answered them.", 
   ],
@@ -521,7 +521,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكَ ينبغي التَّسبيحُ يا اللـهُ في صهيون. ولكَ تُوفى النذورُ في أورشليم. استمع يا اللـهُ صلواتي. لأنَّه إليكَ يأتي كلُّ بشرٍ. هللويا.", 
+  "لكَ ينبغي التَّسبيحُ يا اللـهُ في صهيون. ولكَ تُوفى النذورُ في أورشليم. استمع يا اللـهُ صلواتي. لأنَّه إليكَ يأتي كلُّ بشرٍ.", 
   "1 Dieu qui es en Sion, la louange te convient, et pour toi on accomplit des voeux.", 
   "1 Praise is awaiting You, O God, in Zion; And to You the vow shall be performed.", 
   ],
@@ -553,7 +553,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأُعطيكَ مفاتيحَ ملكوتِ السَّمواتِ، وما تربُطهُ على الأرض يكون مربُوطاً فى السَّموات. وما تحلُّهُ على الأرضِ يكون محلولاً فى السَّموات '.( والمجد للـه دائماً ).", 
+  "وأُعطيكَ مفاتيحَ ملكوتِ السَّمواتِ، وما تربُطهُ على الأرض يكون مربُوطاً فى السَّموات. وما تحلُّهُ على الأرضِ يكون محلولاً فى السَّموات '.", 
   "19 Je te donnerai les clefs du Royaume des cieux; tout ce que tu lieras sur la terre sera lié aux cieux, et tout ce que tu délieras sur la terre sera délié aux cieux.", 
   "19 And I will give you the keys of the kingdom of heaven, and whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.", 
   ],
@@ -567,7 +567,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لك ينبغي التسبيح يا الله في صهيون ولك يوفى النذر. يا سامع الصلاة اليك يأتي كل بشر. هللويا.", 
+  "لك ينبغي التسبيح يا الله في صهيون ولك يوفى النذر. يا سامع الصلاة اليك يأتي كل بشر.", 
   "1 Pour toi le silence est louange ô Dieu, dans Sion, Et l’on accomplira le voeu", 
   "1 Praise is awaiting You, O God, in Zion; And to You the vow shall be performed.", 
   ],
@@ -623,7 +623,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ان كنت لست اعمل اعمال ابي فلا تؤمنوا بي. ولكن ان كنت اعمل فان لم تؤمنوا بي فآمنوا بالاعمال لكي تعرفوا وتؤمنوا ان الآب فيّ وانا فيه ( والمجد للـه دائماً )", 
+  "ان كنت لست اعمل اعمال ابي فلا تؤمنوا بي. ولكن ان كنت اعمل فان لم تؤمنوا بي فآمنوا بالاعمال لكي تعرفوا وتؤمنوا ان الآب فيّ وانا فيه ", 
   "37 Si je ne fais pas les œuvres de mon Père, ne me croyez pas ! 38 Mais si je les fais, quand même vous ne me croiriez pas, croyez à ces oeuvres, afin de savoir et de reconnaître que le Père est en moi, et moi dans le Père.", 
   "37 If I do not do the works of My Father, do not believe Me; 38 but if I do, though you do not believe Me, believe the works, that you may know and believe that the Father is in Me, and I in Him.", 
   ],
@@ -637,7 +637,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ارفعك يا الهي الملك وابارك اسمك الى الدهر والابد. في كل يوم اباركك واسبح اسمك الى الدهر والابد. هللويا.", 
+  "ارفعك يا الهي الملك وابارك اسمك الى الدهر والابد. في كل يوم اباركك واسبح اسمك الى الدهر والابد.", 
   "1 Je t’exalterai, mon Dieu, (mon) roi ! Et je bénirai ton nom à toujours et à perpétuité.", 
   "1 I will extol You, my God, O King; And I will bless Your name forever and ever.", 
   ],
@@ -693,7 +693,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "( والمجد للـه دائماً )", 
+  "", 
   "", 
   "", 
   ],
@@ -707,7 +707,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الى صخرة ارفع مني تهديني. لانك كنت ملجأ لي.برج قوة من وجه العدو.لانك انت يا الله استمعت نذوري.اعطيت ميراث خائفي اسمك. هللويا.", 
+  "الى صخرة ارفع مني تهديني. لانك كنت ملجأ لي.برج قوة من وجه العدو.لانك انت يا الله استمعت نذوري.اعطيت ميراث خائفي اسمك.", 
   "2 Conduis–moi sur le rocher trop élevé pour moi !", 
   "2 Lead me to the rock that is higher than I", 
   ],
@@ -751,7 +751,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لا يصلح لارض ولا لمزبلة فيطرحونه خارجا. من له اذنان للسمع فليسمع. ( والمجد للـه دائماً )", 
+  "لا يصلح لارض ولا لمزبلة فيطرحونه خارجا. من له اذنان للسمع فليسمع. ", 
   "Il n’est utile ni pour la terre, ni pour le fumier ; on le jette dehors.", 
   "35 It is neither fit for the land nor for the dunghill, but men throw it out.", 
   ],
@@ -791,7 +791,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فأجابهم وقال: ' مَن هيَ أُمِّي وإخوتي؟ '. ثمَّ نظر إلى الجالسينَ حوله وقال: ' ها أُمِّي وإخوتي، لأنَّ من يَصنعُ مشيئة اللـه هو أخي وأُختي وأُمِّي '.( والمجد للـه دائماً )", 
+  "فأجابهم وقال: ' مَن هيَ أُمِّي وإخوتي؟ '. ثمَّ نظر إلى الجالسينَ حوله وقال: ' ها أُمِّي وإخوتي، لأنَّ من يَصنعُ مشيئة اللـه هو أخي وأُختي وأُمِّي '.", 
   "33 Il leur répond: \"Qui sont ma mère et mes frères? 34 Et, parcourant du regard ceux qui étaient assis en cercle autour de lui, il dit: \"Voici ma mère et mes frères. Quiconque fait la volonté de Dieu, voilà mon frère, ma soeur, ma mère.", 
   "33 But He answered them, saying, Who is My mother, or My brothers? 34 And He looked around in a circle at those who sat about Him, and said, Here are My mother and My brothers! 35 For whoever does the will of God is My brother and My sister and mother", 
   ],
@@ -805,7 +805,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنتَ يا اللـهُ ترجعُ وتترأَّفُ على صهيون، لأنَّهُ وقتُ التراؤف عليها لأنَّ الزمانَ قد حضرَ. لأنَّ الربَّ يبني صهيونَ ويظهرُ بمجدِه. لأنَّهُ نظرَ إلى صلاةِ المساكين. هللويا.", 
+  "أنتَ يا اللـهُ ترجعُ وتترأَّفُ على صهيون، لأنَّهُ وقتُ التراؤف عليها لأنَّ الزمانَ قد حضرَ. لأنَّ الربَّ يبني صهيونَ ويظهرُ بمجدِه. لأنَّهُ نظرَ إلى صلاةِ المساكين.", 
   "13 Tu te lèveras, par amour pour Sion,car il est temps d'en avoir pitié:", 
   "13 You will arise and have mercy on Zion; For the time to favor her, Yes, the set time, has come.", 
   ],
@@ -891,7 +891,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبعد تلكَ الأيَّام حبِلت أليصابات امرأتهُ، وأخفتْ نفسها خمسة أشهر قائلةً: ' أنَّه هكذا قد صنَعَ بي الربُّ في الأيَّام التي فيها نظرَ إلىَّ، لينزعَ عاري مِن بين النَّاسِ '.(والمجد للـه دائماً )", 
+  "وبعد تلكَ الأيَّام حبِلت أليصابات امرأتهُ، وأخفتْ نفسها خمسة أشهر قائلةً: ' أنَّه هكذا قد صنَعَ بي الربُّ في الأيَّام التي فيها نظرَ إلىَّ، لينزعَ عاري مِن بين النَّاسِ '.", 
   "24 Après quoi Elizabeth sa femme, devint enceinte; cinq mois durant elle s'en cacha; elle se disait: 25\"Voilà ce qu'a fait pour moi le Seigneur au temps où il a jeté les yeux sur moi pour mettre fin à ce qui faisait ma honte devant les hommes.", 
   "24 Now after those days his wife Elizabeth conceived; and she hid herself five months, saying, 25 Thus the Lord has dealt with me, in the days when He looked on me, to take away my reproach among people", 
   ],
@@ -905,7 +905,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أُبارِكُ الربَّ في كلِّ وقتٍ، في كلِّ حينٍ تَسبحتُهُ في فَمي. بالربِّ تَفتخِرُ نَفْسِي، يَسمَعُ الوُدَعاءُ ويَفْرَحُونَ. هللويا.", 
+  "أُبارِكُ الربَّ في كلِّ وقتٍ، في كلِّ حينٍ تَسبحتُهُ في فَمي. بالربِّ تَفتخِرُ نَفْسِي، يَسمَعُ الوُدَعاءُ ويَفْرَحُونَ.", 
   "1 Je bénirai le Seigneur en tout temps, sa louange sans cesse à la bouche.", 
   "1 I will bless the Lord at all times; His praise shall continually be in my mouth.", 
   ],
@@ -949,7 +949,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قال للمفلوجِ: ' لكَ أقولُ قُمْ واحمِل سَريركَ واذهبْ إلى بيتكَ '. فقامَ للوقتِ وحملَ سَريرهُ وخرجَ قُدَّامَ الكلِّ، حتى بُهِتَ الجميعُ ومجَّدوا اللهَ قائلينَ: ' ما رأينا واحداً هكذا قطُّ! '.( والمجد للـه دائماً )", 
+  "قال للمفلوجِ: ' لكَ أقولُ قُمْ واحمِل سَريركَ واذهبْ إلى بيتكَ '. فقامَ للوقتِ وحملَ سَريرهُ وخرجَ قُدَّامَ الكلِّ، حتى بُهِتَ الجميعُ ومجَّدوا اللهَ قائلينَ: ' ما رأينا واحداً هكذا قطُّ! '.", 
   "11 il dit au paralysé: \"Je te dis: lève-toi, prends ton brancard et va dans ta maison.12 L'homme se leva, il prit aussitôt son brancard et il sortit devant tout le monde, si bien que tous étaient bouleversés et rendaient gloire à Dieu en disant: \"Nous n'avons jamais rien vu de pareil!", 
   "11 He said to the paralytic, I say to you, arise, take up your bed, and go to your house. 12 Immediately he arose, took up the bed, and went out in the presence of them all, so that all were amazed and glorified God, saying, We never saw anything like this!.", 
   ],
@@ -963,7 +963,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هَـلِّلُوا للهِ يا كلَّ الأرضِ، ورتِّلوا لاِسمِهِ، واعطوا مَجداً لتسبيحهِ. فلتسـجُدْ لـكَ الأرضُ كلُّها. هللويا.", 
+  "هَـلِّلُوا للهِ يا كلَّ الأرضِ، ورتِّلوا لاِسمِهِ، واعطوا مَجداً لتسبيحهِ. فلتسـجُدْ لـكَ الأرضُ كلُّها.", 
   "1 Acclamez Dieu, toute la terre;", 
   "1 Make a joyful shout to God, all the earth!", 
   ],
@@ -1019,7 +1019,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "( والمجد للـه دائماً )", 
+  "", 
   "( Gloire à Dieu éternellement.)", 
   "", 
   ],
@@ -1033,7 +1033,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنتَ مُعينٌ عزيزٌ، فليمتَلِئ فمي سبحاً. لكيما أُسبِّحُ مجدَكَ، اليومَ كُلّهُ لعظيمِ جلالِكَ. هللويا.", 
+  "أنتَ مُعينٌ عزيزٌ، فليمتَلِئ فمي سبحاً. لكيما أُسبِّحُ مجدَكَ، اليومَ كُلّهُ لعظيمِ جلالِكَ.", 
   "7 Tu es mon refuge fortifié,", 
   "7 But You are my strong refuge", 
   ],
@@ -1065,7 +1065,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لذلك هم يصيرون قضاتكُم! وإن كنتُ أنا بروح الله أُخرِج الشَّياطين، فقد وصل إليكم ملكوت الله! ( والمجد للـه دائماً )", 
+  "لذلك هم يصيرون قضاتكُم! وإن كنتُ أنا بروح الله أُخرِج الشَّياطين، فقد وصل إليكم ملكوت الله! ", 
   "Ils seront donc eux-mêmes vos juges. 28 Mais si c'est par l'Esprit de Dieu que je chasse les démons, alors le Règne de Dieu vient de vous atteindre.", 
   "Therefore they shall be your judges. 28 But if I cast out demons by the Spirit of God, surely the kingdom of God has come upon you.", 
   ],
@@ -1111,7 +1111,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاخذ الجميع خوف ومجدوا الله قائلين قد قام فينا نبي عظيم وافتقد الله شعبه. وخرج هذا الخبر عنه في كل اليهودية وفي جميع الكورة المحيطة ( والمجد للـه دائماً ).", 
+  "فاخذ الجميع خوف ومجدوا الله قائلين قد قام فينا نبي عظيم وافتقد الله شعبه. وخرج هذا الخبر عنه في كل اليهودية وفي جميع الكورة المحيطة ", 
   "Tous furent saisis de crainte, et ils rendaient gloire à Dieu en disant: \"Un grand prophète s'est levé parmi nous et Dieu a visité son peuple.\"Et ce propos sur Jésus se répandit dans toute la Judée et dans toute la région.", 
   "Then fear came upon all, and they glorified God, saying, \"A great prophet has risen up among us\"; and, \"God has visited His people.\" And this report about Him went throughout all Judea and all the surrounding region.", 
   ],
@@ -1151,7 +1151,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاجاب يسوع وقال لهم لا يحتاج الاصحاء الى طبيب بل المرضى.لم آت لأدعو ابرارا بل خطاة الى التوبة ( والمجد للـه دائماً )", 
+  "فاجاب يسوع وقال لهم لا يحتاج الاصحاء الى طبيب بل المرضى.لم آت لأدعو ابرارا بل خطاة الى التوبة ", 
   "31 Jésus prit la parole et leur dit : Ce ne sont pas ceux qui sont en bonne santé qui ont besoin de médecin, mais les malades. 32 Je ne suis pas venu appeler des justes, mais des pécheurs à la repentance.", 
   "31 Jesus answered and said to them, Those who are well have no need of a physician, but those who are sick. 32 I have not come to call the righteous, but sinners, to repentance.", 
   ],
@@ -1255,7 +1255,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "رنموا للرب باركوا اسمه بشروا من يوم الى يوم بخلاصه. حدثوا بين الامم بمجده بين جميع الشعوب بعجائبه. هللويا.", 
+  "رنموا للرب باركوا اسمه بشروا من يوم الى يوم بخلاصه. حدثوا بين الامم بمجده بين جميع الشعوب بعجائبه.", 
   "2 Chantez à l’Éternel, bénissez son nom, Annoncez de jour en jour la bonne nouvelle de son salut !", 
   "2 Sing to the LORD, bless His name; proclaim the good news of His salvation from day to day.", 
   ],
@@ -1329,7 +1329,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن لا تفرحوا بهذا ان الارواح تخضع لكم بل افرحوا بالحري ان اسماءكم كتبت في السموات ( والمجد للـه دائماً )", 
+  "ولكن لا تفرحوا بهذا ان الارواح تخضع لكم بل افرحوا بالحري ان اسماءكم كتبت في السموات ", 
   "20 Cependant, ne vous réjouissez pas de ce que les esprits vous sont soumis, mais réjouissez–vous de ce que vos noms sont inscrits dans les cieux.", 
   "20 Nevertheless do not rejoice in this, that the spirits are subject to you, but rather rejoice because your names are written in heaven.", 
   ],
@@ -1405,7 +1405,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولا يوقدون سراجا ويضعونه تحت المكيال بل على المنارة فيضيء لجميع الذين في البيت. فليضئ نوركم هكذا قدام الناس لكي يروا اعمالكم الحسنة ويمجدوا اباكم الذي في السموات. ( والمجد للـه دائماً ).", 
+  "ولا يوقدون سراجا ويضعونه تحت المكيال بل على المنارة فيضيء لجميع الذين في البيت. فليضئ نوركم هكذا قدام الناس لكي يروا اعمالكم الحسنة ويمجدوا اباكم الذي في السموات. ", 
   "15 On n’allume pas une lampe pour la mettre sous le boisseau, mais on la met sur le chandelier, et elle brille pour tous ceux qui sont dans la maison.16 Que votre lumière brille ainsi devant les hommes, afin qu’ils voient vos oeuvres bonnes, et glorifient votre Père qui est dans les cieux.", 
   "15 Nor do they light a lamp and put it under a basket, but on a lampstand, and it gives light to all who are in the house. 16 Let your light so shine before men, that they may see your good works and glorify your Father in heaven.", 
   ],
@@ -1419,7 +1419,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلتروَ أتلامها ولتكثرْ أثمارُها. وتفرحُ بقطراتِها وتَنبتُ. باركْ إكليلَ السنةِ بصلاحِكَ. وبقاعُك تمتلئُ مِن الدسم. هللويا.", 
+  "فلتروَ أتلامها ولتكثرْ أثمارُها. وتفرحُ بقطراتِها وتَنبتُ. باركْ إكليلَ السنةِ بصلاحِكَ. وبقاعُك تمتلئُ مِن الدسم.", 
   "10 You water its ridges abundantly, You settle its furrows; You make it soft with showers, You bless its growth.", 
   "10 En arrosant ses sillons, en aplanissant ses mottes, Tu la détrempes par des ondées, tu bénis ses germes.", 
   ],
@@ -1469,7 +1469,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فيختنقون من هموم الحياة وغِنَاها ولذَّاتها، ولا يثمرون ثمراً. والذي سقط على الأرض الجيِّدة، هُم الذين يسمعون الكلمة فيحفظونها في قلبٍ جيِّدٍ صالح، ويُثمرون بالصَّبرِ. ( والمجد للـه دائماً )", 
+  "فيختنقون من هموم الحياة وغِنَاها ولذَّاتها، ولا يثمرون ثمراً. والذي سقط على الأرض الجيِّدة، هُم الذين يسمعون الكلمة فيحفظونها في قلبٍ جيِّدٍ صالح، ويُثمرون بالصَّبرِ. ", 
   "go out and are choked with cares, riches, and pleasures of life, and bring no fruit to maturity. 15 But the ones that fell on the good ground are those who, having heard the word with a noble and good heart, keep it and bear fruit with patience.", 
   "sont étouffés par les soucis, les richesses et les plaisirs de la vie, et ne donnent pas de fruits mûrs.15 Ce qui est dans la bonne terre, ce sont ceux qui entendent la parole avec un coeur bon et honnête, la retiennent et portent du fruit par la persévérance.", 
   ],
@@ -1483,9 +1483,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأنت أيها الرب الإله أنت رحوم ورؤوف، أنت طويل الروح وكثير الرحمة وصادق، أنظر إلىّ وارحمنى، إعط عزة لعبدك وخلص ابن أمتك. هليلويا", 
-  "15 But You, O Lord, are a God full of compassion, and gracious, Longsuffering and abundant in mercy and truth. 16 Oh, turn to me, and have mercy on me! Give Your strength to Your servant, And save the son of Your maidservant. Alleluia", 
-  "15 Mais toi, Seigneur, tu es un Dieu compatissant et qui fait grâce, Lent à la colère, riche en bienveillance et en fidélité ;16 Tourne vers moi les regards et fais–moi grâce, Donne ta force à ton serviteur Et sauve le fils de ta servante !Alleluia", 
+  "وأنت أيها الرب الإله أنت رحوم ورؤوف، أنت طويل الروح وكثير الرحمة وصادق، أنظر إلىّ وارحمنى، إعط عزة لعبدك وخلص ابن أمتك.", 
+  "15 But You, O Lord, are a God full of compassion, and gracious, Longsuffering and abundant in mercy and truth. 16 Oh, turn to me, and have mercy on me! Give Your strength to Your servant, And save the son of Your maidservant.", 
+  "15 Mais toi, Seigneur, tu es un Dieu compatissant et qui fait grâce, Lent à la colère, riche en bienveillance et en fidélité ;16 Tourne vers moi les regards et fais–moi grâce, Donne ta force à ton serviteur Et sauve le fils de ta servante !", 
   ],
   ],
   [
@@ -1527,7 +1527,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الملح جيد ولكن اذا فسد الملح فبماذا يصلح. لا يصلح لارض ولا لمزبلة فيطرحونه خارجا من له اذنان للسمع فليسمع.) والمجد للـه دائماً)", 
+  "الملح جيد ولكن اذا فسد الملح فبماذا يصلح. لا يصلح لارض ولا لمزبلة فيطرحونه خارجا من له اذنان للسمع فليسمع.", 
   "34 Salt is good; but if the salt has lost its flavor, how shall it be seasoned? 35 It is neither fit for the land nor for the dunghill, but men throw it out. He who has ears to hear, let him hear!.", 
   "34 Le sel est une bonne chose ; mais si le sel devient fade, avec quoi l’assaisonnera–t–on ? 35 Il n’est utile ni pour la terre, ni pour le fumier ; on le jette dehors. Que celui qui a des oreilles pour entendre, entende !", 
   ],
@@ -1541,7 +1541,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنت أيها الرب الإله خلقتنا، وليس نحن، ونحن شعبك، وغنم رعيتك. هليلويا", 
+  "أنت أيها الرب الإله خلقتنا، وليس نحن، ونحن شعبك، وغنم رعيتك.", 
   "3 Know that the Lord, He is God; It is He who has made us, and not we ourselves; We are His people and the sheep of His pasture.", 
   "3 Reconnaissez que l’Éternel est Dieu ! C’est lui qui nous a faits, et nous sommes à lui : Son peuple et le troupeau de son pâturage.", 
   ],
@@ -1629,7 +1629,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يا راعي اسرائيل اصغ يا قائد يوسف كالضأن يا جالسا على الكروبيم اشرق قدام افرايم وبنيامين ومنسّى ايقظ جبروتك وهلم لخلاصنا. هللويا.", 
+  "يا راعي اسرائيل اصغ يا قائد يوسف كالضأن يا جالسا على الكروبيم اشرق قدام افرايم وبنيامين ومنسّى ايقظ جبروتك وهلم لخلاصنا.", 
   "1 Toi qui sièges sur les chérubins, relève-toi,", 
   "1 You who dwell between the cherubim, shine forth!", 
   ],
@@ -1667,7 +1667,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال له الحق الحق اقول لكم من الآن ترون السماء مفتوحة وملائكة الله يصعدون وينزلون على ابن الانسان (والمجد للـه دائماً )", 
+  "وقال له الحق الحق اقول لكم من الآن ترون السماء مفتوحة وملائكة الله يصعدون وينزلون على ابن الانسان ", 
   "51 Et il ajouta: \"En vérité, en vérité, je vous le dis, vous verrez le ciel ouvert et les anges de Dieu monter et descendre au-dessus du Fils de l'homme.", 
   "51 And He said to him, Most assuredly, I say to you, hereafter you shall see heaven open, and the angels of God ascending and descending upon the Son of Man.", 
   ],
@@ -1713,7 +1713,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات. ( والمجد للـه دائماً )", 
+  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات. ", 
   "19 Je te donnerai les clefs du Royaume des cieux; tout ce que tu lieras sur la terre sera lié aux cieux, et tout ce que tu délieras sur la terre sera délié aux cieux.", 
   "19 And I will give you the keys of the kingdom of heaven, and whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.", 
   ],
@@ -1727,7 +1727,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "باركوا الرب يا ملائكته المقتدرين قوة الفاعلين امره عند سماع صوت كلامه. باركوا الرب يا جميع جنوده خدامه العاملين مرضاته. هللويا.", 
+  "باركوا الرب يا ملائكته المقتدرين قوة الفاعلين امره عند سماع صوت كلامه. باركوا الرب يا جميع جنوده خدامه العاملين مرضاته.", 
   "20 Bénissez le Seigneur, vous les anges, force d'élite au service de sa parole.", 
   "20 Bless the LORD, you His angels, who excel in strength, who do His word, Heeding the voice of His word.", 
   ],
@@ -1813,7 +1813,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حينئذ يضيء الابرار كالشمس في ملكوت ابيهم.من له اذنان للسمع فليسمع (والمجد للـه دائماً )", 
+  "حينئذ يضيء الابرار كالشمس في ملكوت ابيهم.من له اذنان للسمع فليسمع ", 
   "43 Alors les justes resplendiront comme le soleil dans le Royaume de leur Père. Entende, qui a des oreilles.", 
   "43 Then the righteous will shine forth as the sun in the kingdom of their Father. He who has ears to hear, let him hear!", 
   ],
@@ -1827,7 +1827,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. يحفظ جميع عظامه.واحد منها لا ينكسر. هللويا.", 
+  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. يحفظ جميع عظامه.واحد منها لا ينكسر.", 
   "19 De nombreux malheurs (atteignent) le juste, Mais de tous, l’Éternel le délivre.", 
   "19 Many are the afflictions of the righteous, but the LORD delivers him out of them all.", 
   ],
@@ -1959,7 +1959,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولي خراف أخر ليست من هذه الحظيرة ينبغي ان آتي بتلك ايضا فتسمع صوتي وتكون رعية واحدة وراع واحد. (والمجد للـه دائماً )", 
+  "ولي خراف أخر ليست من هذه الحظيرة ينبغي ان آتي بتلك ايضا فتسمع صوتي وتكون رعية واحدة وراع واحد. ", 
   "16 J'ai d'autres brebis qui ne sont pas de cet enclos et celles-là aussi, il faut que je les mène; elles écouteront ma voix et il y aura un seul troupeau et un seul berger.", 
   "16 And other sheep I have which are not of this fold; them also I must bring, and they will hear My voice; and there will be one flock and one shepherd.", 
   ],
@@ -2015,7 +2015,7 @@ ReadingsArrays.GospelMassArray= [[
   Prefix.same+"&C=NoActor", 
   "كهنتك يلبسون البر واتقياؤك يهتفون. من اجل داود عبدك هناك انبت قرنا لداود.رتبت سراجا لمسيحي. اعداءه البس خزيا وعليه يزهر اكليله هللويا.", 
   "9 Que tes prêtres soient vêtus de justice,Que tes fidèles crient leur joie,", 
-  "9 Let Your priests be clothed with righteousness, and let Your saints shout for joy. 10 For Your servant David's sake, 17 I will prepare a lamp for My Anointed, 18 but upon Himself His crown shall flourish. Alleluia", 
+  "9 Let Your priests be clothed with righteousness, and let Your saints shout for joy. 10 For Your servant David's sake, 17 I will prepare a lamp for My Anointed, 18 but upon Himself His crown shall flourish.", 
   ],
   ],
   [
@@ -2071,7 +2071,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "تقلد سيفك على فخذك ايها الجبار جلالك وبهاءك. وبجلالك اقتحم.اركب.من اجل الحق والدعة والبر فتريك يمينك مخاوف. هللويا.", 
+  "تقلد سيفك على فخذك ايها الجبار جلالك وبهاءك. وبجلالك اقتحم.اركب.من اجل الحق والدعة والبر فتريك يمينك مخاوف.", 
   "3 O brave, ceins ton épée au côté, ta splendeur et ton éclat.", 
   "3 Gird Your sword upon Your thigh, O Mighty One, with Your glory and Your majesty.", 
   ],
@@ -2129,7 +2129,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اقام شهادة في يعقوب ووضع شريعة في اسرائيل.لاني انا قد عرفت ان الرب عظيم وربنا فوق جميع الآلهة. هللويا.", 
+  "اقام شهادة في يعقوب ووضع شريعة في اسرائيل.لاني انا قد عرفت ان الرب عظيم وربنا فوق جميع الآلهة.", 
   "5 Il a fixé une règle en Jacob, établi une loi en Israël.", 
   "5 For He established a testimony in Jacob, and appointed a law in Israel,", 
   ],
@@ -2181,7 +2181,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "موسى وهرون بين كهنته وصموئيل بين الذين يدعون باسمه.دعوا الرب‏ وهو استجاب لهم. بعمود السحاب كلمهم. هللويا.", 
+  "موسى وهرون بين كهنته وصموئيل بين الذين يدعون باسمه.دعوا الرب‏ وهو استجاب لهم. بعمود السحاب كلمهم.", 
   "6 Moïse et Aaron parmi ses prêtres, et Samuel parmi ceux qui invoquaient son nom, faisaient appel au Seigneur, et", 
   "6 Moses and Aaron were among His priests, and Samuel was among those who called upon His name; they called upon the LORD, and He answered them.", 
   ],
@@ -2289,7 +2289,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات. ( والمجد للـه دائماً ).", 
+  "وأعطيك مفاتيح ملكوت السموات.فكل ما تربطه على الارض يكون مربوطا في السموات.وكل ما تحله على الارض يكون محلولا في السموات. ", 
   "19 Je te donnerai les clefs du Royaume des cieux; tout ce que tu lieras sur la terre sera lié aux cieux, et tout ce que tu délieras sur la terre sera délié aux cieux.", 
   "19 And I will give you the keys of the kingdom of heaven, and whatever you bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.", 
   ],
@@ -2303,7 +2303,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنتَ ياربُّ ترجعُ وترأفُ على صِهيونَ، لأنَّهُ وقتُ التحنُّن عليها. لأنَّ الربَّ يبني صِهيونَ ويَظهرُ بمجدِهِ. هللويا.", 
+  "أنتَ ياربُّ ترجعُ وترأفُ على صِهيونَ، لأنَّهُ وقتُ التحنُّن عليها. لأنَّ الربَّ يبني صِهيونَ ويَظهرُ بمجدِهِ.", 
   "13 You will arise and have mercy on Zion; For the time to favor her, Yes, the set time, has come.", 
   "13 Tu te lèveras, tu auras compassion de Sion ; Car le temps de lui faire grâce, Le moment fixé est arrivé ; 16 Oui, l’Éternel rebâtit Sion, Il se montre dans sa gloire.", 
   ],
@@ -2377,7 +2377,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبعد تلكَ الأيَّام حبِلت أليصابات امرأتهُ، وأخفتْ نفسها خمسة أشهر قائلةً: ' أنَّه هكذا قد صنَعَ بي الربُّ في الأيَّام التي فيها نظرَ إليَّ، لينزعَ عاري مِن بين النَّاسِ '. ) والمجد للـه دائماً )", 
+  "وبعد تلكَ الأيَّام حبِلت أليصابات امرأتهُ، وأخفتْ نفسها خمسة أشهر قائلةً: ' أنَّه هكذا قد صنَعَ بي الربُّ في الأيَّام التي فيها نظرَ إليَّ، لينزعَ عاري مِن بين النَّاسِ '.", 
   "24 Quelque temps après, sa femme Élisabeth devint enceinte. Elle se cacha pendant cinq mois, en disant : 25 Voilà ce que le Seigneur a fait pour moi, au temps où il a décidé d’enlever ce qui était ma honte parmi les hommes.", 
   "24 Now after those days his wife Elizabeth conceived; and she hid herself five months, saying, 25 Thus the Lord has dealt with me, in the days when He looked on me, to take away my reproach among people.", 
   ],
@@ -2391,7 +2391,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اسمعي يا ابنتي وانظُري وأمِيلي سمعكِ، وانسي شَعبَكِ وكلَّ بيتِ أبيكِ. فإنَّ المَلِكَ قد اشتهى حُسنَكِ، لأنَّه هـو ربُّـكِ. هللويا.", 
+  "اسمعي يا ابنتي وانظُري وأمِيلي سمعكِ، وانسي شَعبَكِ وكلَّ بيتِ أبيكِ. فإنَّ المَلِكَ قد اشتهى حُسنَكِ، لأنَّه هـو ربُّـكِ.", 
   "10 Listen, O daughter, Consider and incline your ear; Forget your own people also, and your father's house;", 
   "10 Écoute, ma fille, vois et prête l’oreille ; Oublie ton peuple et la maison de ton père.", 
   ],
@@ -2441,7 +2441,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقالت مريم للملاكَ:' هوذا أنا أَمَةُ الربِّ. وليكُن لي كقولِكَ. فانصرف عنها الملاك. ( والمجد للـه دائماً )", 
+  "فقالت مريم للملاكَ:' هوذا أنا أَمَةُ الربِّ. وليكُن لي كقولِكَ. فانصرف عنها الملاك. ", 
   "38 Marie dit : Voici la servante du Seigneur ; qu’il me soit fait selon ta parole. Et l’ange s’éloigna d’elle.", 
   "38 Then Mary said, Behold the maidservant of the Lord! Let it be to me according to your word. And the angel departed from her.", 
   ],
@@ -2455,7 +2455,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الرحمةٌ والحقُّ إلتقيا. والعدل والسلامُ تلاثما. الحقُّ من الأرضِ أشرقَ والعدلُ من السماءِ تطلعَ. هللويا.", 
+  "الرحمةٌ والحقُّ إلتقيا. والعدل والسلامُ تلاثما. الحقُّ من الأرضِ أشرقَ والعدلُ من السماءِ تطلعَ.", 
   "10 Mercy and truth have met together; Righteousness and peace have kissed.", 
   "10 La bienveillance et la vérité se rencontrent, La justice et la paix s’embrassent ;", 
   ],
@@ -2511,7 +2511,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  ") والمجد للـه دائماً )", 
+  "", 
   "", 
   "", 
   ],
@@ -2525,9 +2525,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يا جالساً على الشاروبيمِ اظهر قُدَّامَ أفرايمَ وبنيامينَ ومنسَّى. لِخَلاصِنا يا اللـهُ أَرددنَا. ولِينرْ وجهُكَ علينا فنخلُصَ. هللويا.", 
-  "1 You who dwell between the cherubim, shine forth. 2 Before Ephraim, Benjamin, and Manasseh, Stir up Your strength, And come and save us! 3 Restore us, O God; Cause Your face to shine, And we shall be saved!. Alleluia", 
-  "1 Toi qui sièges (entre) les chérubins ! Parais dans ta splendeur. 2 Devant Éphraïm, Benjamin et Manassé, réveille ta force, Mets toi en marche pour notre salut ! 3 O Dieu, fais nous revenir ! Fais briller ta face, et nous serons sauvés ! Alleluia", 
+  "يا جالساً على الشاروبيمِ اظهر قُدَّامَ أفرايمَ وبنيامينَ ومنسَّى. لِخَلاصِنا يا اللـهُ أَرددنَا. ولِينرْ وجهُكَ علينا فنخلُصَ.", 
+  "1 You who dwell between the cherubim, shine forth. 2 Before Ephraim, Benjamin, and Manasseh, Stir up Your strength, And come and save us! 3 Restore us, O God; Cause Your face to shine, And we shall be saved!.", 
+  "1 Toi qui sièges (entre) les chérubins ! Parais dans ta splendeur. 2 Devant Éphraïm, Benjamin et Manassé, réveille ta force, Mets toi en marche pour notre salut ! 3 O Dieu, fais nous revenir ! Fais briller ta face, et nous serons sauvés !", 
   ],
   ],
   [
@@ -2593,7 +2593,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أمَّا الصَّبيُّ فكان ينمُو ويتقوَّى بالرُّوح، وكان مُقيمٌ في البراري إلى يوم ظُهورهِ لإسرائيلَ . ) والمجد للـه دائماً ).", 
+  "أمَّا الصَّبيُّ فكان ينمُو ويتقوَّى بالرُّوح، وكان مُقيمٌ في البراري إلى يوم ظُهورهِ لإسرائيلَ ..", 
   "80 Or le petit enfant grandissait et se fortifiait en esprit. Il demeurait dans les déserts, jusqu’au jour où il se présenta devant Israël.", 
   "80 So the child grew and became strong in spirit, and was in the deserts till the day of his manifestation to Israel.", 
   ],
@@ -2607,7 +2607,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احمدك من كل قلبي. قدام الآلهة ارنم لك. اسجد في هيكل قدسك. هللويا.", 
+  "احمدك من كل قلبي. قدام الآلهة ارنم لك. اسجد في هيكل قدسك.", 
   "1 Je te célèbre de tout mon coeur, Je psalmodie en la présence de Dieu.", 
   "1 I will praise You with my whole heart; before the gods I will sing praises to You.", 
   ],
@@ -2669,7 +2669,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مُوسَى وهارونُ في كهنتهِ. وصَموئيلُ في الَّذينَ يَدعونَ بِاسمهِ. كانوا يَدعونَ الربَّ وهو كانَ يَستجيبُ لهُم. بعمودِ الغمام كان يُكلِّمهُم. هللويا.", 
+  "مُوسَى وهارونُ في كهنتهِ. وصَموئيلُ في الَّذينَ يَدعونَ بِاسمهِ. كانوا يَدعونَ الربَّ وهو كانَ يَستجيبُ لهُم. بعمودِ الغمام كان يُكلِّمهُم.", 
   "6 Moïse et Aaron parmi ses prêtres, et Samuel parmi ceux qui invoquaient son nom, faisaient appel au Seigneur, et il leur répondait.", 
   "6 Moses and Aaron were among His priests, And Samuel was among those who called upon His name; They called upon the Lord, and He answered them.", 
   ],
@@ -2769,7 +2769,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "معك الرئاسة فى يوم قوتك. فى بهاء القديسين . من البطن قبل كوكب الصبح ولدتُك. هللويا.", 
+  "معك الرئاسة فى يوم قوتك. فى بهاء القديسين . من البطن قبل كوكب الصبح ولدتُك.", 
   "3 Avec une sainte splendeur, le jour où", 
   "3 In the day of Your power; in the beauties of holiness, from the womb of the morning, you have the dew of Your youth.", 
   ],
@@ -2831,7 +2831,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واما مريم فكانت تحفظ جميع هذا الكلام متفكرة به في قلبها. ثم رجع الرعاة وهم يمجدون الله ويسبحونه على كل ما سمعوه ورأوه كما قيل لهم. ( والمجد للـه دائماً ).", 
+  "واما مريم فكانت تحفظ جميع هذا الكلام متفكرة به في قلبها. ثم رجع الرعاة وهم يمجدون الله ويسبحونه على كل ما سمعوه ورأوه كما قيل لهم. ", 
   "19 Quant à Marie, elle retenait tous ces événements en en cherchant le sens. Puis, les bergers s'en retournèrent, chantant la gloire et les louanges de Dieu pour tout ce qu'ils avaient entendu et vu, en accord avec ce qui leur avait été annoncé.", 
   "19 But Mary kept all these things and pondered them in her heart. 20 Then the shepherds returned, glorifying and praising God for all the things that they had heard and seen, as it was told them.", 
   ],
@@ -2845,7 +2845,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الرب قال لي انت ابني.انا اليوم ولدتك. اسألني فاعطيك الامم ميراثا و ساطانك الى أقطار الارض. هللويا.", 
+  "الرب قال لي انت ابني.انا اليوم ولدتك. اسألني فاعطيك الامم ميراثا و ساطانك الى أقطار الارض.", 
   "7 Le Seigneur m'a dit: Tu es mon fils; moi, aujourd'hui, je t'ai engendré.", 
   "7 The LORD has said to Me, \"You are My Son, today I have begotten You.", 
   ],
@@ -2901,7 +2901,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم اذ أوحي اليهم في حلم ان لا يرجعوا الى هيرودس انصرفوا في طريق اخرى الى كورتهم . ) والمجد للـه دائماً )", 
+  "ثم اذ أوحي اليهم في حلم ان لا يرجعوا الى هيرودس انصرفوا في طريق اخرى الى كورتهم .", 
   "12 Puis, divinement avertis en songe de ne pas retourner auprès d'Hérode, ils se retirèrent dans leur pays par un autre chemin.", 
   "12 Then, being divinely warned in a dream that they should not return to Herod, they departed for their own country another way.", 
   ],
@@ -2915,7 +2915,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يكون اسمه الى الدهر.قدام الشمس يمتد اسمه.ويتباركون به.كل امم الارض يطوّبونه. هللويا.", 
+  "يكون اسمه الى الدهر.قدام الشمس يمتد اسمه.ويتباركون به.كل امم الارض يطوّبونه.", 
   "17 Qu'il se fasse un nom éternel, Qu'il le propage sous le soleil. Et que toutes les nations le disent bienheureux,", 
   "17 His name shall endure forever; his name shall continue as long as the sun. And men shall be blessed in Him; all nations shall call Him blessed.", 
   ],
@@ -2947,7 +2947,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واما كل الذين قبلوه فاعطاهم سلطانا ان يصيروا اولاد الله اي المؤمنون باسمه.الذين ولدوا ليس من دم ولا من مشيئة جسد ولا من مشيئة رجل بل من الله.) والمجد للـه دائماً )", 
+  "واما كل الذين قبلوه فاعطاهم سلطانا ان يصيروا اولاد الله اي المؤمنون باسمه.الذين ولدوا ليس من دم ولا من مشيئة جسد ولا من مشيئة رجل بل من الله.", 
   "12 Mais à ceux qui l'ont reçu, à ceux qui croient en son nom, il a donné le pouvoir de devenir enfants de Dieu.13 Ceux-là ne sont pas nés du sang, ni d'un vouloir de chair, ni d'un vouloir d'homme, mais de Dieu.", 
   "12 But as many as received Him, to them He gave the right to become children of God, to those who believe in His name: 13 who were born, not of blood, nor of the will of the flesh, nor of the will of man, but of God.", 
   ],
@@ -2961,7 +2961,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لانك تتقدمه ببركات خير.وضعت على راسه تاجا من ابريز. عظيم مجده بخلاصك جلالا وبهاء تضع عليه. هللويا.", 
+  "لانك تتقدمه ببركات خير.وضعت على راسه تاجا من ابريز. عظيم مجده بخلاصك جلالا وبهاء تضع عليه.", 
   "3 Car tu viens au–devant de lui avec des bénédictions excellentes, Tu mets sur sa tête une couronne d’or pur.", 
   "3 For You meet him with the blessings of goodness; You set a crown of pure gold upon his head.", 
   ],
@@ -3039,7 +3039,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن لا تفرحوا بهذا ان الارواح تخضع لكم بل افرحوا بالحري ان اسماءكم كتبت في السموات ( والمجد للـه دائماً )", 
+  "ولكن لا تفرحوا بهذا ان الارواح تخضع لكم بل افرحوا بالحري ان اسماءكم كتبت في السموات ", 
   "20 Cependant, ne vous réjouissez pas de ce que les esprits vous sont soumis, mais réjouissez–vous de ce que vos noms sont inscrits dans les cieux", 
   "20 Nevertheless do not rejoice in this, that the spirits are subject to you, but rather rejoice because your names are written in heaven.", 
   ],
@@ -3107,7 +3107,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأتى وسكن في مدينة يقال لها ناصرة.لكي يتم ما قيل بالانبياء انه سيدعى ناصريا (والمجد للـه دائماً )", 
+  "وأتى وسكن في مدينة يقال لها ناصرة.لكي يتم ما قيل بالانبياء انه سيدعى ناصريا ", 
   "23 et vint demeurer dans une ville appelée Nazareth, afin que s’accomplisse ce qui avait été annoncé par les prophètes : Il sera appelé Nazaréen.", 
   "23 And he came and dwelt in a city called Nazareth, that it might be fulfilled which was spoken by the prophets, He shall be called a Nazarene", 
   ],
@@ -3127,7 +3127,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ما اكرم افكارك يا الله عندي ما اكثر جملتها. ان احصها فهي اكثر من الرمل. هللويا.", 
+  "ما اكرم افكارك يا الله عندي ما اكثر جملتها. ان احصها فهي اكثر من الرمل.", 
   "17 Dieu, que tes projets sont difficiles pour moi, Que leur somme est élevée.", 
   "17 How precious also are Your thoughts to me, O God! How great is the sum of them!", 
   ],
@@ -3197,7 +3197,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أعلنَ الرَّبُّ خلاصَهُ قُدَّامَ الوثنيينَ. وكشفَ عدلهُ لهُمْ. ذَكَرَ رَحْمَتَهُ ليعقوبَ. وحقّهُ لبيتِ إسرائيلَ. هللويا.", 
+  "أعلنَ الرَّبُّ خلاصَهُ قُدَّامَ الوثنيينَ. وكشفَ عدلهُ لهُمْ. ذَكَرَ رَحْمَتَهُ ليعقوبَ. وحقّهُ لبيتِ إسرائيلَ.", 
   "2 The Lord has made known His salvation; His righteousness He has revealed in the sight of the nations.", 
   "2 L’Éternel a fait connaître son salut, Il a révélé sa justice aux yeux des nations.", 
   ],
@@ -3253,7 +3253,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "( والمجد للـه دائماً )", 
+  "", 
   "", 
   "", 
   ],
@@ -3268,12 +3268,12 @@ ReadingsArrays.GospelMassArray= [[
   [
   Prefix.same+"&C=NoActor", 
   "عابرين في وادي البكاء يصيرونه ينبوعا.ايضا ببركات يغطون مورة", 
-  "6 As they pass through the Valley of Baca, They make it a spring; The rain also covers it with pools. They go from strength to strength;7 Each one appears before God in Zion. 2 You who hear prayer, To You all flesh will come. Alleluia", 
-  "6 Lorsqu’ils traversent la vallée du Baka, Ils en font une oasis, Et la pluie la couvre aussi de bénédictions. 7 Leur vigueur ne cesse de croître, Ils se présenteront devant Dieu à Sion. 2 Toi, qui écoutes la prière ! Tous les hommes viendront à toi. Alleluia", 
+  "6 As they pass through the Valley of Baca, They make it a spring; The rain also covers it with pools. They go from strength to strength;7 Each one appears before God in Zion. 2 You who hear prayer, To You all flesh will come.", 
+  "6 Lorsqu’ils traversent la vallée du Baka, Ils en font une oasis, Et la pluie la couvre aussi de bénédictions. 7 Leur vigueur ne cesse de croître, Ils se présenteront devant Dieu à Sion. 2 Toi, qui écoutes la prière ! Tous les hommes viendront à toi.", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يذهبون من قوة الى قوة.يرون قدام الله في صهيون يا سامع الصلاة اليك يأتي كل بشر. هللويا.", 
+  "يذهبون من قوة الى قوة.يرون قدام الله في صهيون يا سامع الصلاة اليك يأتي كل بشر.", 
   ],
   ],
   [
@@ -3327,7 +3327,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اُنظُر إذاً لئلاَّ يكونَ النُّور الذي فيكَ ظلاماً. فإن كان جسدُكَ كلُّهُ نيِّراً ليس فيهِ جزءٌ مُظلِمٌ يكونُ نيِّراً كلُّهُ، كما أن السِّراج يُضيءُ لكَ في البرق '.( والمجد للـه دائماً )", 
+  "اُنظُر إذاً لئلاَّ يكونَ النُّور الذي فيكَ ظلاماً. فإن كان جسدُكَ كلُّهُ نيِّراً ليس فيهِ جزءٌ مُظلِمٌ يكونُ نيِّراً كلُّهُ، كما أن السِّراج يُضيءُ لكَ في البرق '.", 
   "36 If then your whole body is full of light, having no part dark, the whole body will be full of light, as when the bright shining of a lamp gives you light.", 
   "36 Si donc tout ton corps est illuminé, sans avoir aucune partie dans les ténèbres, il sera entièrement illuminé, comme lorsque la lampe t’illumine de son éclat.", 
   ],
@@ -3341,7 +3341,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "جُزنا في النَّارِ والماءِ وأَخْرَجْتَنَا إلى الراحةِ. بارِكُوا أيُّها الشُّعُوبُ إلهَنَا. واسمَعوا صَوْتَ تَسْبِيِحِهِ. هللويا.", 
+  "جُزنا في النَّارِ والماءِ وأَخْرَجْتَنَا إلى الراحةِ. بارِكُوا أيُّها الشُّعُوبُ إلهَنَا. واسمَعوا صَوْتَ تَسْبِيِحِهِ.", 
   "12 We went through fire and through water; But You brought us out to rich fulfillment.", 
   "Nous avions passé par le feu et par l’eau, Mais tu nous en as fait sortir pour (nous donner) l’abondance.", 
   ],
@@ -3391,7 +3391,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّهُ ليسَ بكيلٍ يُعطِي اللهُ الرُّوحَ. الآبُ يُحِبُّ الابنَ وقد دَفعَ كُلَّ شيءٍ في يديهِ. ومَن يُؤمِنُ بالابنِ فلهُ حياةٌ أبديَّةٌ. ) والمجد للـه دائماً )", 
+  "لأنَّهُ ليسَ بكيلٍ يُعطِي اللهُ الرُّوحَ. الآبُ يُحِبُّ الابنَ وقد دَفعَ كُلَّ شيءٍ في يديهِ. ومَن يُؤمِنُ بالابنِ فلهُ حياةٌ أبديَّةٌ.", 
   "for God does not give the Spirit by measure. 35 The Father loves the Son, and has given all things into His hand. 36 He who believes in the Son has everlasting life; and he who does not believe the Son shall not see life, but the wrath of God abides on him.", 
   "parce que Dieu donne l’Esprit sans mesure.35 Le Père aime le Fils et a tout remis dans sa main.", 
   ],
@@ -3405,7 +3405,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ ينبوعَ الحياةِ عندكَ. بنورِكَ ياربُّ نُعاينُ النُّورَ. فابسِطْ رحمتَكَ على الذينَ يعرِفُونَكَ، وعدْلَكَ على المُستقيمينَ في قلوبِهِمْ. هللويا.", 
+  "لأنَّ ينبوعَ الحياةِ عندكَ. بنورِكَ ياربُّ نُعاينُ النُّورَ. فابسِطْ رحمتَكَ على الذينَ يعرِفُونَكَ، وعدْلَكَ على المُستقيمينَ في قلوبِهِمْ.", 
   "9 For with You is the fountain of life; In Your light we see light.", 
   "9 Car auprès de toi est la source de la vie ; Par ta lumière nous voyons la lumière.", 
   ],
@@ -3527,7 +3527,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أجابَ وقالَ لهُ: ' مَن هو يا سيِّدي لأؤمِن به؟ '. فقالَ لهُ يسوعُ: ' قد رأيتهُ، وهو الذي يتكلَّمُ معكَ '. فقالَ: ' أُؤمِنُ يا سيِّدي '.وسجدَ لهُ. )والمجد للـه دائماً )", 
+  "أجابَ وقالَ لهُ: ' مَن هو يا سيِّدي لأؤمِن به؟ '. فقالَ لهُ يسوعُ: ' قد رأيتهُ، وهو الذي يتكلَّمُ معكَ '. فقالَ: ' أُؤمِنُ يا سيِّدي '.وسجدَ لهُ.", 
   "36 He answered and said, Who is He, Lord, that I may believe in Him? 37 And Jesus said to him, You have both seen Him and it is He who is talking with you. 38 Then he said, Lord, I believe! And he worshiped Him.", 
   "36 Il répondit : Qui est il, Seigneur, afin que je croie en lui ? 37 Tu l’as vu, lui dit Jésus, et celui qui te parle, c’est lui. 38 Alors il dit : Je crois, Seigneur. Et il l’adora.", 
   ],
@@ -3541,7 +3541,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اذبح لله حمدا واوف العلي نذورك. ذابح الحمد يمجدني والمقوم طريقه اريه خلاص الله. هللويا.", 
+  "اذبح لله حمدا واوف العلي نذورك. ذابح الحمد يمجدني والمقوم طريقه اريه خلاص الله.", 
   "14 En sacrifice à Dieu, offre la reconnaissance, Accomplis tes voeux envers le Très–Haut,", 
   "14Offer to God thanksgiving, and pay your vows to the Most High.", 
   ],
@@ -3609,7 +3609,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولما اكملوا كل شيء حسب ناموس الرب رجعوا الى الجليل الى مدينتهم الناصرة. ( والمجد للـه دائماً ).", 
+  "ولما اكملوا كل شيء حسب ناموس الرب رجعوا الى الجليل الى مدينتهم الناصرة. ", 
   "39 Lorsqu’ils eurent tout accompli selon la loi du Seigneur, ils retournèrent en Galilée, à Nazareth, leur ville.", 
   "39 So when they had performed all things according to the law of the Lord, they returned to Galilee, to their own city, Nazareth.", 
   ],
@@ -3623,7 +3623,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "انت ابرع جمالا من بني البشر.انسكبت النعمة على شفتيك لذلك باركك الله الى الابد. هللويا.", 
+  "انت ابرع جمالا من بني البشر.انسكبت النعمة على شفتيك لذلك باركك الله الى الابد.", 
   "2 Tu es le plus beau des fils d’homme, La grâce est répandue sur tes lèvres : C’est pourquoi Dieu t’a béni pour toujours.", 
   "2 You are fairer than the sons of men; Grace is poured upon Your lips; Therefore God has blessed You forever", 
   ],
@@ -3703,7 +3703,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وباشياء أخر كثيرة كان يعظ الشعب ويبشرهم.)والمجد للـه دائماً )", 
+  "وباشياء أخر كثيرة كان يعظ الشعب ويبشرهم.", 
   "18 Jean annonçait la bonne nouvelle au peuple avec beaucoup d’autres exhortations.", 
   "18 And with many other exhortations he preached to the people.", 
   ],
@@ -3773,7 +3773,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وانا لم اكن اعرفه.لكن الذي ارسلني لاعمد بالماء ذاك قال لي الذي ترى الروح نازلا ومستقرا عليه فهذا هو الذي يعمد بالروح القدس. وانا قد رأيت وشهدت ان هذا هو ابن الله) والمجد للـه دائماً )", 
+  "وانا لم اكن اعرفه.لكن الذي ارسلني لاعمد بالماء ذاك قال لي الذي ترى الروح نازلا ومستقرا عليه فهذا هو الذي يعمد بالروح القدس. وانا قد رأيت وشهدت ان هذا هو ابن الله", 
   "33 et moi, je ne le connaissais pas, mais celui qui m’a envoyé baptiser d’eau m’a dit : Celui sur qui tu verras l’Esprit descendre et demeurer, c’est lui qui baptise d’Esprit Saint.34 Et moi, j’ai vu et j’ai rendu témoignage que c’est lui le Fils de Dieu.", 
   "33 I did not know Him, but He who sent me to baptize with water said to me, Upon whom you see the Spirit descending, and remaining on Him, this is He who baptizes with the Holy Spirit.' 34 And I have seen and testified that this is the Son of God.”", 
   ],
@@ -3855,7 +3855,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال له الحق الحق اقول لكم من الآن ترون السماء مفتوحة وملائكة الله يصعدون وينزلون على ابن الانسان ) والمجد للـه دائماً )", 
+  "وقال له الحق الحق اقول لكم من الآن ترون السماء مفتوحة وملائكة الله يصعدون وينزلون على ابن الانسان", 
   "51 En vérité, en vérité, je vous le dis, vous verrez le ciel ouvert, et les anges de Dieu monter et descendre sur le Fils de l’homme.", 
   "51 And He said to him, Most assuredly, I say to you, hereafter you shall see heaven open, and the angels of God ascending and descending upon the Son of Man.", 
   ],
@@ -3871,7 +3871,7 @@ ReadingsArrays.GospelMassArray= [[
   Prefix.same+"&C=NoActor", 
   "انت الاله الصانع العجائب.عرفت بين الشعوب قوتك. فككت بذراعك شعبك. ابصرتك المياه يا الله ابصرتك المياه ففزعت ارتعدت ايضا اللجج هللويا.", 
   "14 C’est toi le Dieu qui opère le miracle ; Tu as parmi les peuples fait reconnaître ta puissance.15 Par ton bras tu as racheté ton peuple, 16 Les eaux t’ont vu, ô Dieu ! Les eaux t’ont vu, elles ont bouillonné", 
-  "14 You are the God who does wonders; You have declared Your strength among the peoples.15 You have with Your arm redeemed Your people.16 The waters saw You, O God; the waters saw You, they were afraid. Alleluia", 
+  "14 You are the God who does wonders; You have declared Your strength among the peoples.15 You have with Your arm redeemed Your people.16 The waters saw You, O God; the waters saw You, they were afraid.", 
   ],
   ],
   [
@@ -3907,7 +3907,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هذه بداية الآيات فعلها يسوع في قانا الجليل واظهر مجده فآمن به تلاميذه ) والمجد للـه دائماً )", 
+  "هذه بداية الآيات فعلها يسوع في قانا الجليل واظهر مجده فآمن به تلاميذه", 
   "11 Tel fut à Cana en Galilée, le commencement des miracles que fit Jésus. Il manifesta sa gloire, et ses disciples crurent en lui.", 
   "11 This beginning of signs Jesus did in Cana of Galilee, and manifested His glory; and His disciples believed in Him.", 
   ],
@@ -3921,7 +3921,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. والصديقون يفرحون يبتهجون امام الله ويطفرون فرحا. هللويا.", 
+  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. والصديقون يفرحون يبتهجون امام الله ويطفرون فرحا.", 
   "19 Le Seigneur est près des coeurs brisés,", 
   "19 Many are the afflictions of the righteous, but the LORD delivers him out of them all.", 
   ],
@@ -3979,7 +3979,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الذي يقيمه سيده على خدمه ليعطيهم العلوفة في حينها. طوبى لذلك العبد الذي اذا جاء سيده يجده يفعل هكذا. بالحق اقول لكم انه يقيمه على جميع امواله. (والمجد للـه دائماً )", 
+  "الذي يقيمه سيده على خدمه ليعطيهم العلوفة في حينها. طوبى لذلك العبد الذي اذا جاء سيده يجده يفعل هكذا. بالحق اقول لكم انه يقيمه على جميع امواله. ", 
   "que le maître établira sur sa domesticité pour distribuer en temps voulu les rations de blé? 43 Heureux ce serviteur, que son maître en arrivant trouvera en train de faire ce travail! Vraiment, je vous le déclare, il l'établira sur tous ses biens.", 
   "whom his master will make ruler over his household, to give them their portion of food in due season? 43 Blessed is that servant whom his master will find so doing when he comes. 44 Truly, I say to you that he will make him ruler over all that he has.”", 
   ],
@@ -3993,7 +3993,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. يحفظ جميع عظامه.واحد منها لا ينكسر. هللويا.", 
+  "كثيرة هي بلايا الصدّيق ومن جميعها ينجيه الرب. يحفظ جميع عظامه.واحد منها لا ينكسر.", 
   "19 De nombreux malheurs (atteignent) le juste, Mais de tous, l’Éternel le délivre.", 
   "19 Many are the afflictions of the righteous, but the LORD delivers him out of them all.", 
   ],
@@ -4129,9 +4129,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كهنتُكَ يَلبسُونَ العدلَ، وأبرارُكَ يبتهجونَ. من أجل داودَ عبدكَ. اُذكُر ياربُّ داودَ وكلَّ دعتهِ، كما أقسم للرب ونذرَ لإلهِ يعقوبَ. هللويا.", 
+  "كهنتُكَ يَلبسُونَ العدلَ، وأبرارُكَ يبتهجونَ. من أجل داودَ عبدكَ. اُذكُر ياربُّ داودَ وكلَّ دعتهِ، كما أقسم للرب ونذرَ لإلهِ يعقوبَ.", 
   "9 Que tes prêtres soient vêtus de justice,Que tes fidèles crient leur joie.10 A cause de David ton serviteur.1 Seigneur, souviens-toi de David,2 Rappelle-toi toute sa peine. C'est lui qui jura au Seigneur et fit ce voeu au Dieu de Jacob,", 
-  "9 Let Your priests be clothed with righteousness, And let Your saints shout for joy.10 For Your servant David's sake.1 Lord, remember David And all his afflictions; 2 How he swore to the Lord, And vowed to the Mighty One of Jacob: Alleluia", 
+  "9 Let Your priests be clothed with righteousness, And let Your saints shout for joy.10 For Your servant David's sake.1 Lord, remember David And all his afflictions; 2 How he swore to the Lord, And vowed to the Mighty One of Jacob.", 
   ],
   ],
   [
@@ -4181,7 +4181,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الاعترافُ والبَهاءُ قُدَّامَهُ. الطُّهرُ والجَلالُ العَظيمُ في قُدْسِهِ. لأنَّ الربَّ عَظيمٌ ومُسبَّحٌ جداً. ومَهوبٌ على كُلِّ الآلِهَةِ. هللويا.", 
+  "الاعترافُ والبَهاءُ قُدَّامَهُ. الطُّهرُ والجَلالُ العَظيمُ في قُدْسِهِ. لأنَّ الربَّ عَظيمٌ ومُسبَّحٌ جداً. ومَهوبٌ على كُلِّ الآلِهَةِ.", 
   "6 Splendeur et éclat sont devant sa face, Force et majesté dans son sanctuaire.", 
   "6 Honor and majesty are before Him; Strength and beauty are in His sanctuary.", 
   ],
@@ -4237,9 +4237,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قَدِّموا للرَّبِّ يا جميعَ قبائلَ الشُّعوب. قدِّموا للرَّبِّ مَجْداً وكرامةً. قدِّموا للرَّبِّ مجداً لاسمِهِ. احملوا الذبائح وانطلقوا فادخُلُوا ديَارَهُ. اسجُدُوا للـرَّبِّ في دارهِ المُقدَّس. هللويا.", 
+  "قَدِّموا للرَّبِّ يا جميعَ قبائلَ الشُّعوب. قدِّموا للرَّبِّ مَجْداً وكرامةً. قدِّموا للرَّبِّ مجداً لاسمِهِ. احملوا الذبائح وانطلقوا فادخُلُوا ديَارَهُ. اسجُدُوا للـرَّبِّ في دارهِ المُقدَّس.", 
   "7 Donnez au Seigneur, familles des peuples, Donnez au Seigneur gloire et force. 8 Donnez au Seigneur la gloire de son nom. Apportez votre offrande, entrez dans ses parvis; 9 prosternez-vous devant le Seigneur quand éclate sa sainteté.", 
-  "7 Give to the Lord, O families of the peoples, Give to the Lord glory and strength. 8 Give to the Lord the glory due His name; Bring an offering, and come into His courts. 9 Oh, worship the Lord in the beauty of holiness!. Alleluia", 
+  "7 Give to the Lord, O families of the peoples, Give to the Lord glory and strength. 8 Give to the Lord the glory due His name; Bring an offering, and come into His courts. 9 Oh, worship the Lord in the beauty of holiness!.", 
   ],
   ],
   [
@@ -4357,7 +4357,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فكل من سمع من الآب وتعلّم يقبل اليّ. ليس ان احدا رأى الآب الا الذي من الله.هذا قد رأى الآب. ( والمجد للـه دائماً ).", 
+  "فكل من سمع من الآب وتعلّم يقبل اليّ. ليس ان احدا رأى الآب الا الذي من الله.هذا قد رأى الآب. ", 
   "Quiconque a entendu ce qui vient du Père et reçoit son enseignement vient à moi. C'est que nul n'a vu le Père, si ce n'est celui qui vient de Dieu. Lui, il a vu le Père.", 
   "Therefore everyone who has heard and learned from the Father comes to Me. \"Not that anyone has seen the Father, except He who is from God; He has seen the Father.", 
   ],
@@ -4403,7 +4403,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وان كنت قد وشيت باحد ارد اربعة اضعاف. فقال له يسوع اليوم حصل خلاص لهذا البيت اذ هو ايضا ابن ابراهيم.لان ابن الانسان قد جاء لكي يطلب ويخلّص ما قد هلك ( والمجد للـه دائماً )", 
+  "وان كنت قد وشيت باحد ارد اربعة اضعاف. فقال له يسوع اليوم حصل خلاص لهذا البيت اذ هو ايضا ابن ابراهيم.لان ابن الانسان قد جاء لكي يطلب ويخلّص ما قد هلك ", 
   "si j'ai fait tort à quelqu'un, je lui rends le quadruple. Alors Jésus dit à son propos: \"Aujourd'hui, le salut est venu pour cette maison, car lui aussi est un fils d'Abraham. En effet, le Fils de l'homme est venu chercher et sauver ce qui était perdu.", 
   "and if I have taken anything from anyone by false accusation, I restore fourfold.\" And Jesus said to him, \"Today salvation has come to this house, because he also is a son of Abraham; \"for the Son of Man has come to seek and to save that which was lost.\"", 
   ],
@@ -4417,7 +4417,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولهُ تسجُد بناتُ صور بالهدايا. ويتلقونَ وجهَهُ أغنياءُ شعبِ الأرض. كلُّ مجدِ ابنة الملك مِن داخلٍ. مُشتملة مُتزينة بأشكالٍ كثيرةٍ. هللويا.", 
+  "ولهُ تسجُد بناتُ صور بالهدايا. ويتلقونَ وجهَهُ أغنياءُ شعبِ الأرض. كلُّ مجدِ ابنة الملك مِن داخلٍ. مُشتملة مُتزينة بأشكالٍ كثيرةٍ.", 
   "12 Et, avec des présents, la fille de Tyr, Les plus riches du peuple rechercheront ta faveur ?", 
   "12 And the daughter of Tyre will come with a gift; The rich among the people will seek your favor.", 
   ],
@@ -4677,7 +4677,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "رُوحُكَ القُدُّوسُ يهديني إلى الاستقامةِ. فلأسمع بالغدواتِ رحمتَكَ. فإنِّي عليكَ تَوَكَّلتُ. هللويا.", 
+  "رُوحُكَ القُدُّوسُ يهديني إلى الاستقامةِ. فلأسمع بالغدواتِ رحمتَكَ. فإنِّي عليكَ تَوَكَّلتُ.", 
   "10 Your Spirit is good. Lead me in the land of uprightness.", 
   "10 Que ton bon Esprit me conduise sur une terre aplanie !", 
   ],
@@ -6113,7 +6113,7 @@ ReadingsArrays.GospelMassArray= [[
   Prefix.same+"&C=NoActor", 
   "يا اله الجنود ارجعنّ اطّلع من السماء وانظر وتعهد هذه الكرمة والغرس الذي غرسته يمينك والابن الذي اخترته لنفسك.", 
   "Dieu le tout-puissant, reviens donc ; regarde du haut des cieux et vois.", 
-  "Return, we beseech You, O God of hosts; Look down from heaven and see, And visit this vine And the vineyard which Your right hand has planted, And the branch that You made strong for Yourself. Alleluia", 
+  "Return, we beseech You, O God of hosts; Look down from heaven and see, And visit this vine And the vineyard which Your right hand has planted, And the branch that You made strong for Yourself.", 
   ],
   ],
   [
@@ -6309,7 +6309,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لك السموات.لك ايضا الارض .المسكونة وملؤها انت اسّستهما‏.الشمال والجنوب انت خلقتهما.تابور وحرمون باسمك يهتفان. لك ذراع القدرة.قوية يدك.مرتفعة يمينك. هللويا", 
+  "لك السموات.لك ايضا الارض .المسكونة وملؤها انت اسّستهما‏.الشمال والجنوب انت خلقتهما.تابور وحرمون باسمك يهتفان. لك ذراع القدرة.قوية يدك.مرتفعة يمينك", 
   "11 A toi les cieux, à toi aussi la terre, Le monde et ses richesses, c'est toi qui les fondas.", 
   "11 The heavens are Yours, the earth also is Yours; The world and all its fullness, You have founded them.", 
   ],
@@ -6427,7 +6427,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "( والمجد للـه دائماً ).", 
+  "", 
   "", 
   "", 
   ],
@@ -6441,7 +6441,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اساسه في الجبال المقدسة الرب احب ابواب صهيون اكثر من جميع مساكن يعقوب. ولصهيون يقال هذا الانسان وهذا الانسان ولد فيها وهي العلي يثبتها. هللويا.", 
+  "اساسه في الجبال المقدسة الرب احب ابواب صهيون اكثر من جميع مساكن يعقوب. ولصهيون يقال هذا الانسان وهذا الانسان ولد فيها وهي العلي يثبتها.", 
   "1Le Seigneur a fondé Sion sur les montagnes saintes; 2 il en aime les portes.", 
   "1His foundation is in the holy mountains. 2 The LORD loves the gates of Zion.", 
   ],
@@ -6499,7 +6499,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن اقول لكم ان ايليا ايضا قد أتى وعملوا به كل ما ارادوا كما هو مكتوب عنه ( والمجد للـه دائماً ).", 
+  "لكن اقول لكم ان ايليا ايضا قد أتى وعملوا به كل ما ارادوا كما هو مكتوب عنه ", 
   "13 Eh bien! je vous le déclare, Élie est venu et ils lui ont fait tout ce qu'ils voulaient, selon ce qui est écrit de lui.", 
   "13 But I say to you that Elijah has also come, and they did to him whatever they wished, as it is written of him.", 
   ],
@@ -6513,7 +6513,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "نُورٌ أَشرقَ للصدِّيقين. وفرحٌ للمُستقيمين بقلبهِم. افرحوا أيُّها الصدِّيقونَ بالربِّ. واعترفوا لذكرِ قُدسِهِ. هللويا.", 
+  "نُورٌ أَشرقَ للصدِّيقين. وفرحٌ للمُستقيمين بقلبهِم. افرحوا أيُّها الصدِّيقونَ بالربِّ. واعترفوا لذكرِ قُدسِهِ.", 
   "11 Pour le juste une lumière est semée, et c'est une joie pour les coeurs droits. Justes,", 
   "11 Light is sown for the righteous, And gladness for the upright in heart.", 
   ],
@@ -6621,7 +6621,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طوبى لذلك العبد الذي إذا جاء سيِّده يجده يفعل هكذا! حقاً أقول لكُم: أنَّه يُقيمه على جميع أمواله. (والمجد للـه دائماً )", 
+  "طوبى لذلك العبد الذي إذا جاء سيِّده يجده يفعل هكذا! حقاً أقول لكُم: أنَّه يُقيمه على جميع أمواله. ", 
   "43 Heureux ce serviteur, que son maître en arrivant trouvera en train de faire ce travail. 44 Je vous le dis en vérité, il l’établira sur tous ses biens.", 
   "43 Blessed is that servant whom his master will find so doing when he comes. 44 Truly, I say to you that he will make him ruler over all that he has.", 
   ],
@@ -6635,7 +6635,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "جُزنا في النَّار والماء. وأخرجتنا إلى الراحة. أَدخل إلى بيتكَ بالمُحرَقاتِ. وأُفيكَ النذورَ التي نَطَقت بها شفَتاي. هللويا.", 
+  "جُزنا في النَّار والماء. وأخرجتنا إلى الراحة. أَدخل إلى بيتكَ بالمُحرَقاتِ. وأُفيكَ النذورَ التي نَطَقت بها شفَتاي.", 
   "5 Que tes fidèles exultent en te rendant gloire. Que sur leurs toits ils crient de joie.", 
   "5 Let the saints be joyful in glory; Let them sing aloud on their beds.", 
   ],
@@ -6661,7 +6661,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وسوف تُسلَّمون من الوالدين والإخوة والأقرباء والأصدقاء، ويقتلون منكم. وتكونون مُبغَضِين من الجميع من أجل اسمي. وشعرة من رؤوسكم لا تسقط. بصبركم تقتنون أنفسكم. )والمجد للـه دائماً )", 
+  "وسوف تُسلَّمون من الوالدين والإخوة والأقرباء والأصدقاء، ويقتلون منكم. وتكونون مُبغَضِين من الجميع من أجل اسمي. وشعرة من رؤوسكم لا تسقط. بصبركم تقتنون أنفسكم. ", 
   "16 Vous serez livrés même par vos pères et mères, par vos frères, vos parents et vos amis, et ils feront condamner à mort plusieurs d'entre vous. 17 Vous serez haïs de tous à cause de mon nom; 18 mais pas un cheveu de votre tête ne sera perdu.19 C'est par votre persévérance que vous gagnerez la vie.", 
   "16 You will be betrayed even by parents and brothers, relatives and friends; and they will put some of you to death. 17 And you will be hated by all for My name's sake. 18 But not a hair of your head shall be lost. 19 By your patience possess your souls.", 
   ],
@@ -6677,7 +6677,7 @@ ReadingsArrays.GospelMassArray= [[
   Prefix.same+"&C=NoActor", 
   "الكلمةُ التي أَوصى بها إلى آلافِ الأجيال، الذي عهد به لإبراهيم، وقسمَهُ لإسحقَ أقامَه ليعقوبَ أمراً، ولإسرائيلَ عهداً إلى الأبـدِ.هللويا.", 
   "8 Il se souvient à toujours de son alliance, De sa parole pour mille générations, 9 (De l’alliance) qu’il a conclue avec Abraham, Et de son serment à Isaac ;10 Il l’a établi comme une prescription pour Jacob, Pour Israël en alliance éternelle,", 
-  "8 The word which He commanded, for a thousand generations 9 The covenant which He made with Abraham, And His oath to Isaac, 10 And confirmed it to Jacob for a statute, To Israel as an everlasting covenant, Alleluia", 
+  "8 The word which He commanded, for a thousand generations 9 The covenant which He made with Abraham, And His oath to Isaac, 10 And confirmed it to Jacob for a statute, To Israel as an everlasting covenant.", 
   ],
   ],
   [
@@ -6719,7 +6719,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قائلاً. ' أنا إلهُ إبراهيمَ وإلهُ ‘إسحق وإلهُ يعقوبَ؟ ليسَ هو إلهَ أمواتٍ بل إلهُ أحيَاءٍ فأنتُم إذاً تَضِلُّونَ كَثِيراً '. (والمجد للـه دائماً )", 
+  "قائلاً. ' أنا إلهُ إبراهيمَ وإلهُ ‘إسحق وإلهُ يعقوبَ؟ ليسَ هو إلهَ أمواتٍ بل إلهُ أحيَاءٍ فأنتُم إذاً تَضِلُّونَ كَثِيراً '. ", 
   "\"Je suis le Dieu d'Abraham, le Dieu d'Isaac et le Dieu de Jacob? 27 Il n'est pas le Dieu des morts, mais des vivants. Vous êtes complètement dans l'erreur.", 
   "saying, `I am the God of Abraham, the God of Isaac, and the God of Jacob'? 27 He is not the God of the dead, but the God of the living. You are therefore greatly mistaken.", 
   ],
@@ -6733,7 +6733,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مُباركٌ الربُّ الإلهُ. مُباركٌ الربُّ يوماً فيوماً. يُسِّهلُ لنا سبيلنَا. إلهُ خلاصِنا. هللويا.", 
+  "مُباركٌ الربُّ الإلهُ. مُباركٌ الربُّ يوماً فيوماً. يُسِّهلُ لنا سبيلنَا. إلهُ خلاصِنا.", 
   "19 Béni soit Dieu, béni soit le Seigneur chaque jour. Ce Dieu nous apporte la victoire,", 
   "19 Blessed be the Lord, Who daily loads us with benefits, The God of our salvation!.", 
   ],
@@ -6771,7 +6771,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولم يفهموا أنَّهُ كانَ يقولُ لهُم عن الآبِ. ( والمجد للـه دائماً )", 
+  "ولم يفهموا أنَّهُ كانَ يقولُ لهُم عن الآبِ. ", 
   "", 
   "", 
   ],
@@ -6785,7 +6785,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ذبيحةُ التَّسبيح تُمَّجدِني، وهناك الطَّريقُ حيثُ أُريه خلاصَ اللـهِ. أَوفِ العليَّ نُذورَكَ. هللويا.", 
+  "ذبيحةُ التَّسبيح تُمَّجدِني، وهناك الطَّريقُ حيثُ أُريه خلاصَ اللـهِ. أَوفِ العليَّ نُذورَكَ.", 
   "23 Qui offre la louange comme sacrifice me glorifie, et il prend le chemin où je lui ferai voir le salut de Dieu.", 
   "23 Whoever offers praise glorifies Me; And to him who orders his conduct aright I will show the salvation of God.", 
   ],
@@ -6837,7 +6837,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فم الصدّيق يلهج بالحكمة ولسانه ينطق بالحق. شريعة الهه في قلبه.لا تتقلقل خطواته. هللويا.", 
+  "فم الصدّيق يلهج بالحكمة ولسانه ينطق بالحق. شريعة الهه في قلبه.لا تتقلقل خطواته.", 
   "30 La bouche du juste répète la sagesse? Et sa langue énonce le droit.", 
   "30 The mouth of the righteous speaks wisdom, and his tongue talks of justice.", 
   ],
@@ -6901,7 +6901,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اعترفوا للربِّ وادعوا بِاسمه، نادوا في الأُمم بأعمالهِ. الربُّ يُعطِي كلمةً للمُبَشِّرينَ، بقوةٍ عظيمةٍ. هللويا.", 
+  "اعترفوا للربِّ وادعوا بِاسمه، نادوا في الأُمم بأعمالهِ. الربُّ يُعطِي كلمةً للمُبَشِّرينَ، بقوةٍ عظيمةٍ.", 
   "10 Célébrez le Seigneur, proclamez son nom, Faites connaître ses exploits parmi les peuples.", 
   "1 Oh, give thanks to the Lord! Call upon His name; Make known His deeds among the peoples!.", 
   ],
@@ -6959,7 +6959,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احمدك من كل قلبي. قدام الآلهة ارنم لك. اسجد في هيكل قدسك واحمد اسمك على رحمتك وحقك لانك قد عظمت كلمتك على كل اسمك. هللويا.", 
+  "احمدك من كل قلبي. قدام الآلهة ارنم لك. اسجد في هيكل قدسك واحمد اسمك على رحمتك وحقك لانك قد عظمت كلمتك على كل اسمك.", 
   "1 Je te célèbre de tout mon coeur, Je psalmodie en la présence de Dieu.", 
   "1 I will praise You with my whole heart; before the gods I will sing praises to You.", 
   ],
@@ -7021,7 +7021,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "(والمجد للـه دائماً )", 
+  "", 
   "", 
   "", 
   ],
@@ -7035,7 +7035,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كريمٌ أمام الربِّ موتُ قدِّيسيه. ياربُّ أنا عبدُكَ، وابنُ أمتِكَ. هللويا.", 
+  "كريمٌ أمام الربِّ موتُ قدِّيسيه. ياربُّ أنا عبدُكَ، وابنُ أمتِكَ.", 
   "15 Il en coûte au Seigneur de voir mourir ses fidèles.", 
   "15 Precious in the sight of the Lord Is the death of His saints.", 
   ],
@@ -7111,7 +7111,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كم احببت شريعتك.اليوم كله هي لهجي. وصيتك جعلتني احكم من اعدائي لانها الى الدهر هي لي. هللويا.", 
+  "كم احببت شريعتك.اليوم كله هي لهجي. وصيتك جعلتني احكم من اعدائي لانها الى الدهر هي لي.", 
   "97 Combien j'aime ta loi; tous les jours je la médite.", 
   "97 Oh, how I love Your law! It is my meditation all the day.", 
   ],
@@ -7231,7 +7231,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قَدِّموا للرَّبِّ يا أبناءَ اللَّهِ. قَدِّموا للرَّبِّ أبناءَ الكِباشِ. قَدِّموا للرَّبِّ مجداً وكرامةً. قَدِّموا للرَّبِّ مجداً لاسمهِ. هللويا.", 
+  "قَدِّموا للرَّبِّ يا أبناءَ اللَّهِ. قَدِّموا للرَّبِّ أبناءَ الكِباشِ. قَدِّموا للرَّبِّ مجداً وكرامةً. قَدِّموا للرَّبِّ مجداً لاسمهِ.", 
   "1 Donnez au Seigneur, vous les enfants du Seigneur, donnez au Seigneur gloire et force. Donnez au Seigneur la gloire de son nom,", 
   "29:1 Give unto the Lord, O you mighty ones, Give unto the Lord glory and strength. 2 Give unto the Lord the glory due to His name.", 
   ],
@@ -7401,7 +7401,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يمينك مملؤة عدلاً. فليفرح جبل صهيون ولتتهلل بنات اليهودية لأجل أحكامك يارب. هللويا.", 
+  "يمينك مملؤة عدلاً. فليفرح جبل صهيون ولتتهلل بنات اليهودية لأجل أحكامك يارب.", 
   "10 Ta droite est pleine de justice;", 
   "10 Your right hand is full of righteousness", 
   ],
@@ -7553,7 +7553,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اِفتَحُوا لي أبْوابَ العدلِ، لكيما أدخُلَ فيها، وأعتَرف للرَّبِّ. هللويا.", 
+  "اِفتَحُوا لي أبْوابَ العدلِ، لكيما أدخُلَ فيها، وأعتَرف للرَّبِّ.", 
   "19 Ouvrez-moi les portes de la justice, J'entrerai pour célébrer le Seigneur.", 
   "19 Open to me the gates of righteousness; I will go through them, And I will praise", 
   ],
@@ -7605,7 +7605,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أعترف لك بخطيئتي ولم أكتم إثمي. قلت أعترف للرب بإثمي، وأنت صفحت لي عن نفاقات قلبي. هللويا.", 
+  "أعترف لك بخطيئتي ولم أكتم إثمي. قلت أعترف للرب بإثمي، وأنت صفحت لي عن نفاقات قلبي.", 
   "5 Je t'ai fait connaître ma faute, je n'ai pas caché mes torts. J'ai dit: je rendrai grâce au Seigneur en confessant mes péchés", 
   "5 I acknowledged my sin to You, And my iniquity I have not hidden. I said, I will confess my transgressions to the Lord, And You forgave the iniquity of my sin.", 
   ],
@@ -7651,7 +7651,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ُطوبى للرَّجل الذي لم يحسب لهُ الرَّب خطيئة، ولا في فمهِ غش. أنا سكتُّ فبليت عظامي. هللويا.", 
+  "ُطوبى للرَّجل الذي لم يحسب لهُ الرَّب خطيئة، ولا في فمهِ غش. أنا سكتُّ فبليت عظامي.", 
   "2 Heureux l'homme dont le Seigneur ne retient pas l'offense, dont l'esprit est sans fraude.", 
   "2 Blessed is the man to whom the Lord does not impute iniquity, And in whose spirit there is no deceit.", 
   ],
@@ -7769,7 +7769,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هَلُمُّوا فلنبتهج بالرَّبِّ، ولنُهلل للَّهِ مُخلِّصنا. ولنُبادر فنبلغ إلى وجههِ بالاعترافِ، ولنُهلل له بالمزاميرِ. هلليلويا", 
+  "هَلُمُّوا فلنبتهج بالرَّبِّ، ولنُهلل للَّهِ مُخلِّصنا. ولنُبادر فنبلغ إلى وجههِ بالاعترافِ، ولنُهلل له بالمزاميرِ.", 
   "95:1 Oh come, let us sing to the Lord! Let us shout joyfully to the Rock of our salvation.", 
   "1 Venez, crions de joie pour le Seigneur, acclamons le rocher qui nous sauve.", 
   ],
@@ -7789,7 +7789,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أمْ تظنون أنَّ الثَّمانيةَ عشرَ رجلاً الذين سَقطَ عليهم البُرجُ في سِلوامَ وقتلهُمْ، كانوا مُذنِبين أكثرَ مِنْ جميع النَّاسِ السَّاكنينَ في أورُشَليم ؟ كلاَّ! أقول لَكُمْ: بَلْ إنْ لم تَتوبوا فَجَمِيعُكُمْ كذلِكَ تَهلِكُونَ '. ( والمجد للـه دائماً )", 
+  "أمْ تظنون أنَّ الثَّمانيةَ عشرَ رجلاً الذين سَقطَ عليهم البُرجُ في سِلوامَ وقتلهُمْ، كانوا مُذنِبين أكثرَ مِنْ جميع النَّاسِ السَّاكنينَ في أورُشَليم ؟ كلاَّ! أقول لَكُمْ: بَلْ إنْ لم تَتوبوا فَجَمِيعُكُمْ كذلِكَ تَهلِكُونَ '. ", 
   "4 Or those eighteen on whom the tower in Siloam fell and killed them, do you think that they were worse sinners than all other men who dwelt in Jerusalem? 5 I tell you, no; but unless you repent you will all likewise perish.", 
   "4 Et ces dix-huit personnes sur lesquelles est tombée la tour à Siloé, et qu'elle a tué, pensez-vous qu'elles étaient plus coupables que tous les autres habitants de Jérusalem? Non, je vous le dis, mais si vous ne vous convertissez pas, vous périrez tous de la même manière.", 
   ],
@@ -7803,7 +7803,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اعبدوا الرب بخشية وهللوا له برعدة. فالآن أيها الملوك افهموا وتأدبوا يا جميع قضاة الأرض. هللويا.", 
+  "اعبدوا الرب بخشية وهللوا له برعدة. فالآن أيها الملوك افهموا وتأدبوا يا جميع قضاة الأرض.", 
   "11 Servez le Seigneur avec crainte, exultez en tremblant.", 
   "11 Serve the Lord with fear, And rejoice with trembling.", 
   ],
@@ -7879,7 +7879,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الرَّبّ إلى الدَّهرِ يثبت، أعدَّ بالقضاءِ منبره وهو يدين المسكونة كُلّها بالعدلِ. هللويا.", 
+  "الرَّبّ إلى الدَّهرِ يثبت، أعدَّ بالقضاءِ منبره وهو يدين المسكونة كُلّها بالعدلِ.", 
   "7 Mais il siège le Seigneur à jamais, Pour juger, il affermit son trône.", 
   "7 But the Lord shall endure forever; He has prepared His throne for judgment.", 
   ],
@@ -7931,7 +7931,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احفظني يارب فأني عليك توكلتُ، قلت للرب أنتَ ربي وليس تحتاج إلى خيراتي. هللويا.", 
+  "احفظني يارب فأني عليك توكلتُ، قلت للرب أنتَ ربي وليس تحتاج إلى خيراتي.", 
   "1 Dieu, garde-moi, car j'ai fait de toi mon refuge.", 
   "16:1 Preserve me, O God, for in You I put my trust.", 
   ],
@@ -8129,7 +8129,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أنا صرخت لأنَّك قد سمعتني يا اللَّـه، أَمِلْ أُذُنَيْكَ يارب واستمع كلامي. هللويا.", 
+  "أنا صرخت لأنَّك قد سمعتني يا اللَّـه، أَمِلْ أُذُنَيْكَ يارب واستمع كلامي.", 
   "6 Je t'appelle car tu me répondras, mon Dieu. Tends l'oreille vers moi, écoute ma parole,", 
   "6 I have called upon You, for You will hear me, O God; Incline Your ear to me, and hear my speech.", 
   ],
@@ -8169,7 +8169,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يُخلِّصني مِن أعدائي الأشدَّاءِ، ومِن أيدي الذين يبغضونني. لأنَّهم تقوّوا أكثر منِّي، أدركوني في يوم ضري. هللويا.", 
+  "يُخلِّصني مِن أعدائي الأشدَّاءِ، ومِن أيدي الذين يبغضونني. لأنَّهم تقوّوا أكثر منِّي، أدركوني في يوم ضري.", 
   "17 Il me délivre de mon ennemi puissant, De ceux qui me haïssent, et qui sont plus forts que moi.", 
   "17 He delivered me from my strong enemy, From those who hated me, For they were too strong for me. 18 They confronted me in the day of my calamity.", 
   ],
@@ -8215,7 +8215,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يمينك مملوءة عدلاً. فليفرح جبل صهيون. ولتتهلَّل بنات اليهودية من أجل أحكامك يارب. هللويا.", 
+  "يمينك مملوءة عدلاً. فليفرح جبل صهيون. ولتتهلَّل بنات اليهودية من أجل أحكامك يارب.", 
   "10 Ta droite est pleine de justice,", 
   "10 Your right hand is full of righteousness", 
   ],
@@ -8267,7 +8267,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "استمع يارب صوت تضرُّعي إذ أبتهل إليك، وإذ أرفع يديَّ إلى هيكل قُدسك. هللويا.", 
+  "استمع يارب صوت تضرُّعي إذ أبتهل إليك، وإذ أرفع يديَّ إلى هيكل قُدسك.", 
   "2 Seigneur, écoute ma voix suppliante quand je crie vers toi, quand je lève les mains vers le fond de ton sanctuaire,", 
   "2 Hear the voice of my supplications When I cry to You, When I lift up my hands toward Your holy sanctuary.", 
   ],
@@ -8331,7 +8331,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "استَمعْ يا اللهُ طلبَتي. أَصْغِ إلى صَلاتِي. أَعطَيتَ مِيراثاً للذين يرهبون اسمِك. هللويا.", 
+  "استَمعْ يا اللهُ طلبَتي. أَصْغِ إلى صَلاتِي. أَعطَيتَ مِيراثاً للذين يرهبون اسمِك.", 
   "1 Ô Dieu, écoute mes cris, sois attentif à ma prière.", 
   "61:1 Hear my cry, O God; Attend to my prayer.", 
   ],
@@ -8407,7 +8407,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "إليك ياربُّ رَفعتُ نَفسِي. إلَهي عليكَ تَوَكَّلتُ فلا تُخزني إلى الأبدِ. أظهِر لي ياربُّ طُرقَكَ. وعَلِّمِني سُبُلكَ. أهدِني إلى عَدلكَ. هللويا.", 
+  "إليك ياربُّ رَفعتُ نَفسِي. إلَهي عليكَ تَوَكَّلتُ فلا تُخزني إلى الأبدِ. أظهِر لي ياربُّ طُرقَكَ. وعَلِّمِني سُبُلكَ. أهدِني إلى عَدلكَ.", 
   "1 Seigneur, je suis tendu vers toi,", 
   "25:1 To You, O Lord, I lift up my soul.", 
   ],
@@ -8471,7 +8471,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ارحمني ياربُّ فإنِّي صرخت إليكَ النهار كُلَّهُ. فرِّح نَفسَ عبدِكَ، فإنِّي رفعتُ نَفسِي إليكَ ياربُّ. هللويا.", 
+  "ارحمني ياربُّ فإنِّي صرخت إليكَ النهار كُلَّهُ. فرِّح نَفسَ عبدِكَ، فإنِّي رفعتُ نَفسِي إليكَ ياربُّ.", 
   "3 Aie pitié de moi, Seigneur, C'est toi que j'appelle chaque jour.", 
   "3 Be merciful to me, O Lord, For I cry to You all day long.", 
   ],
@@ -8517,7 +8517,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اصنَعْ مَعِي آيةً صَالِحة فليرَ الذين يشنوني وليَخزُوا. هللويا.", 
+  "اصنَعْ مَعِي آيةً صَالِحة فليرَ الذين يشنوني وليَخزُوا.", 
   "17 Opère un signe en ma faveur ! Que ceux qui me haïssent le voient et soient honteux !", 
   "17 Show me a sign for good, That those who hate me may see it and be ashamed.", 
   ],
@@ -8609,7 +8609,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اصنَعْ مَعِي آيةً صَالِحة فليرَ الذين يشنوني وليَخزُوا. لأنَّك أنت ياربُّ أعنتني وعزَّيتني. هللويا.", 
+  "اصنَعْ مَعِي آيةً صَالِحة فليرَ الذين يشنوني وليَخزُوا. لأنَّك أنت ياربُّ أعنتني وعزَّيتني.", 
   "17 Agis avec éclat en ma faveur, alors mes ennemis seront confondus en voyant que toi, Seigneur, tu me secours et me consoles,", 
   "17 Show me a sign for good, That those who hate me may see it and be ashamed, Because You, Lord, have helped me and comforted me.", 
   ],
@@ -8671,7 +8671,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أَعترفُ لكَ ياربُّ مِن كُلِّ قلبي، لأنَّكَ استمعتَ كُلَّ كلماتِ فمي، أمامَ الملائكةِ أُرتِّلُ لكَ، وأسجُد قُدَّام هيكلِكَ المُقدَّس. هللويا.", 
+  "أَعترفُ لكَ ياربُّ مِن كُلِّ قلبي، لأنَّكَ استمعتَ كُلَّ كلماتِ فمي، أمامَ الملائكةِ أُرتِّلُ لكَ، وأسجُد قُدَّام هيكلِكَ المُقدَّس.", 
   "1 Je te célèbre de tout mon coeur, 3 Le jour où je t’ai invoqué, tu m’as répondu,", 
   "138:1 I will praise You with my whole heart. 3 In the day when I cried out, You answered me. 138:1 Before the gods I will sing praises to You 2 I will worship toward Your holy temple.", 
   ],
@@ -8735,7 +8735,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولا تَدْخُلْ في المُحاكَمَةِ مع عَبْدِكَ. هللويا.", 
+  "ولا تَدْخُلْ في المُحاكَمَةِ مع عَبْدِكَ.", 
   "ta justice écoute mes appels, dans ta fidélité réponds-moi.", 
   "2 Do not enter into judgment with Your servant.", 
   ],
@@ -8893,15 +8893,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "كَما يَشتاقُ الأيَّلُ إلى ينابيع المياه، كذلك تاقت نَفسي أن تأتي إليك", 
+  "كَما يَشتاقُ الأيَّلُ إلى ينابيع المياه، كذلك تاقت نَفسي أن تأتي إليك يا اللَّه.", 
   "1 Comme une biche soupire après des courants d’eau, Ainsi mon âme soupire après toi, ô Dieu !", 
   "42:1 As the deer pants for the water brooks, So pants my soul for You, O God.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "يا اللَّه. هللويا.", 
-  "", 
-  "Alleluia", 
   ],
   ],
   [
@@ -8942,12 +8936,6 @@ ReadingsArrays.GospelMassArray= [[
   "يأكل الودعاء ويشبعون.يسبح الرب طالبوه.تحيا قلوبكم الى الابد.", 
   "26 Les humbles mangeront et se rassasieront, Ils loueront l’Éternel, ceux qui le cherchent. Que votre coeur vive à toujours !", 
   "26 The poor shall eat and be satisfied; Those who seek Him will praise the Lord. Let your heart live forever!.", 
-  ],
-  [
-  Prefix.same+"&C=NoActor", 
-  "هللويا.", 
-  "", 
-  "Alleluia", 
   ],
   ],
   [
@@ -9025,7 +9013,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "طلبتُ وجهَكَ، ولوجهِكَ ياربُّ ألتمسُ. لا تصرفْ وجهَكَ عَنِّي. كنْ لي مُعيناً. لا تقصني ولا تَرفُضني يا اللَّهُ مُخلِّصي. هللويا.", 
+  "طلبتُ وجهَكَ، ولوجهِكَ ياربُّ ألتمسُ. لا تصرفْ وجهَكَ عَنِّي. كنْ لي مُعيناً. لا تقصني ولا تَرفُضني يا اللَّهُ مُخلِّصي.", 
   "8 C'est ta face, Seigneur, que je cherche:", 
   "8 Your face, Lord, I will seek", 
   ],
@@ -9069,7 +9057,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حينئذٍ تركهُ إبليسُ، وإذ ملائكةٌ قد جاءت وخدمتهُ. ( والمجد للـه دائماً ).", 
+  "حينئذٍ تركهُ إبليسُ، وإذ ملائكةٌ قد جاءت وخدمتهُ. ", 
   "11 Alors le diable le laisse, et voici que les anges s'approchèrent, et ils le servaient.", 
   "11 Then the devil left Him, and behold, angels came and ministered to Him.", 
   ],
@@ -9083,7 +9071,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "رتلوا للربِّ السَّاكن في صهيونَ، واخبرُوا في الأُمم بأعمالهِ. لأنَّهُ طلب الدِّماء وتذكرها. هللويا.", 
+  "رتلوا للربِّ السَّاكن في صهيونَ، واخبرُوا في الأُمم بأعمالهِ. لأنَّهُ طلب الدِّماء وتذكرها.", 
   "11 Psalmodiez (en l’honneur) de l’Éternel, qui réside en Sion, Proclamez parmi les peuples ses hauts faits !", 
   "11 Sing praises to the Lord, who dwells in Zion! Declare His deeds among the people.", 
   ],
@@ -9135,7 +9123,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يا رافعِي مِن أبوَاب المَوت لكيما أُخبر بجميع تسابيحكَ في أبَواب ابنةِ صِهيَونَ. هللويا.", 
+  "يا رافعِي مِن أبوَاب المَوت لكيما أُخبر بجميع تسابيحكَ في أبَواب ابنةِ صِهيَونَ.", 
   "13 Toi qui me fais remonter des portes de la mort,", 
   "13 You who lift me up from the gates of death 14 That I may tell of all Your praise In the gates of the daughter of Zion.", 
   ],
@@ -9233,7 +9221,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "تقدَّمُوا إليهِ واستنيرُوا، ووُجُوهكُم لا تُخزَى. طلبتُ إلى الرَّبِّ فاستجابَ لي. هللويا.", 
+  "تقدَّمُوا إليهِ واستنيرُوا، ووُجُوهكُم لا تُخزَى. طلبتُ إلى الرَّبِّ فاستجابَ لي.", 
   "5 Quand on regarde à lui, on resplendit de joie, Et le visage n’a pas à rougir.", 
   "5 They looked to Him and were radiant, And their faces were not ashamed.", 
   ],
@@ -9297,7 +9285,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولا تَدْخُلْ في المُحاكَمَةِ مع عَبْدِكَ. هللويا.", 
+  "ولا تَدْخُلْ في المُحاكَمَةِ مع عَبْدِكَ.", 
   "ta justice écoute mes appels, dans ta fidélité réponds-moi.", 
   "2 Do not enter into judgment with Your servant.", 
   ],
@@ -9343,7 +9331,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أعتَرفُ لكَ أيُّها الرَّبُّ إلَهِي مِنْ كُلِّ قَلبي، وأُمَجِّدُ اسمَكَ إلى الأبَدِ. لأنَّ رحْمَتَكَ عَظِيمَةٌ عليَّ، وقَدْ نَجَّيْتَ نَفسي مِنَ الجَحِيم السُّفلَيِّ. هللويا.", 
+  "أعتَرفُ لكَ أيُّها الرَّبُّ إلَهِي مِنْ كُلِّ قَلبي، وأُمَجِّدُ اسمَكَ إلى الأبَدِ. لأنَّ رحْمَتَكَ عَظِيمَةٌ عليَّ، وقَدْ نَجَّيْتَ نَفسي مِنَ الجَحِيم السُّفلَيِّ.", 
   "12 Seigneur mon Dieu, je veux te célébrer de tout mon cœur, et glorifier ton nom pour toujours,", 
   "12 I will praise You, O Lord my God, with all my heart, And I will glorify Your name forevermore.", 
   ],
@@ -9401,7 +9389,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وتغسِلني كثيراً مِن إثْمِي، ومِن خَطيئتي تطهِّرني. لأنِّي أنا عارفٌ بإثْمِي، وخَطيِّئتي أمامي في كُلِّ حين. هللويا.", 
+  "وتغسِلني كثيراً مِن إثْمِي، ومِن خَطيئتي تطهِّرني. لأنِّي أنا عارفٌ بإثْمِي، وخَطيِّئتي أمامي في كُلِّ حين.", 
   "2 Lave-moi sans cesse de ma faute et purifie-moi de mon péché.", 
   "2 Wash me thoroughly from my iniquity, And cleanse me from my sin.", 
   ],
@@ -9447,7 +9435,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وتغسِلني كثيراً مِن إثْمِي، ومِنْ خَطيئتي تطهِّرني. لأنِّي أنا عارفٌ بإثْمِي، وخَطيئتي أمامي في كُلِّ حينٍ. هللويا", 
+  "وتغسِلني كثيراً مِن إثْمِي، ومِنْ خَطيئتي تطهِّرني. لأنِّي أنا عارفٌ بإثْمِي، وخَطيئتي أمامي في كُلِّ حينٍ", 
   "2 Lave-moi sans cesse de ma faute et purifie-moi de mon péché.", 
   "2 Wash me thoroughly from my iniquity, And cleanse me from my sin.", 
   ],
@@ -9505,7 +9493,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فَرِحْتُ بالقَائِلينَ لي إلى بَيْتِ الربِّ إلَهنا نَذهبُ. وَقفَتْ أرْجُلُنا في دِيارِ أُورُشَلِيم. هللويا", 
+  "فَرِحْتُ بالقَائِلينَ لي إلى بَيْتِ الربِّ إلَهنا نَذهبُ. وَقفَتْ أرْجُلُنا في دِيارِ أُورُشَلِيم", 
   "1 Quelle joie quand on m'a dit: Allons à la maison du Seigneur.", 
   "122:1 I was glad when they said to me, Let us go into the house of the Lord. 2 Our feet have been standing Within your gates, O Jerusalem!.", 
   ],
@@ -9597,7 +9585,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "انظر إليَّ وارحمني، لأنِّي ابن وحيد وفقير أنا. أحزان قلبي قد كثرت. هللويا.", 
+  "انظر إليَّ وارحمني، لأنِّي ابن وحيد وفقير أنا. أحزان قلبي قد كثرت.", 
   "16 Tourne-toi vers moi, aie pitié, car je suis seul et humilié.", 
   "16 Turn Yourself to me, and have mercy on me, For I am desolate and afflicted.", 
   ],
@@ -9661,7 +9649,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لا تذكر آثامنا الأولى، فلتسبق لتدركنا رأفاتك سريعاً، لأننا قد افتقرنا جداً. أعنا يا اللَّه مخلصنا من أجل مجد اسمك. هللويا", 
+  "لا تذكر آثامنا الأولى، فلتسبق لتدركنا رأفاتك سريعاً، لأننا قد افتقرنا جداً. أعنا يا اللَّه مخلصنا من أجل مجد اسمك", 
   "8 N'invoque pas contre nous les fautes anciennes. Vite, que ta pitié vienne au-devant de nous, car nous sommes au plus bas.", 
   "8 Oh, do not remember former iniquities against us! Let Your tender mercies come speedily to meet us, For we have been brought very low.", 
   ],
@@ -9735,7 +9723,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكان ينبغي أن نفرح ونُسرَّ، لأنَّ أخاكَ هذا كان ميِّتاً فعاش، وكان ضالاًّ فوجدناه. ( والمجد للـه دائماً )", 
+  "وكان ينبغي أن نفرح ونُسرَّ، لأنَّ أخاكَ هذا كان ميِّتاً فعاش، وكان ضالاًّ فوجدناه. ", 
   "32 Mais il fallait festoyer et se réjouir, parce que ton frère que voici était mort et il est vivant, il était perdu et il est retrouvé.", 
   "32 `It was right that we should make merry and be glad, for your brother was dead and is alive again, and was lost and is found.", 
   ],
@@ -9749,7 +9737,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "بَرَكة الرَّبّ عليكُمْ، بَارَكْنَاكُمْ بِاسْمِ الرَّبِّ. مِراراً كثيرةً حَارَبُونِي مُنذُ صِبايَ. وإنَّهُمْ لمْ يَقدِروا عليَّ. هللويا", 
+  "بَرَكة الرَّبّ عليكُمْ، بَارَكْنَاكُمْ بِاسْمِ الرَّبِّ. مِراراً كثيرةً حَارَبُونِي مُنذُ صِبايَ. وإنَّهُمْ لمْ يَقدِروا عليَّ", 
   "8 Le Seigneur vous a bénis; nous vous", 
   "8 The blessing of the Lord be upon you; We bless you in the name of the Lord.", 
   ],
@@ -9873,7 +9861,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احفظ نفسي ونجني، لا أخزى لأنِّي عليك توكلت. انظر إليَّ وارحمني. هللويا.", 
+  "احفظ نفسي ونجني، لا أخزى لأنِّي عليك توكلت. انظر إليَّ وارحمني.", 
   "20 Garde-moi en vie et délivre-moi,", 
   "20 Keep my soul, and deliver me; Let me not be ashamed, for I put my trust in You.", 
   ],
@@ -9913,7 +9901,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وليفرح قلب الذين يلتمسُون الربَّ، ابتغُوا الربَّ واعتزُّوا، اُطلُبُوا وجههُ في كُلِّ حين. اذكُرُوا عجائبهُ التي صنعها، آياتهِ وأحكامَ فيهِ. هللويا", 
+  "وليفرح قلب الذين يلتمسُون الربَّ، ابتغُوا الربَّ واعتزُّوا، اُطلُبُوا وجههُ في كُلِّ حين. اذكُرُوا عجائبهُ التي صنعها، آياتهِ وأحكامَ فيهِ", 
   "3 Que le coeur de ceux qui cherchent l’Éternel se réjouisse ! 4 Recherchez l’Éternel et sa force, Cherchez continuellement sa face ! 5 Souvenez–vous des merveilles qu’il a faites, De ses prodiges et des jugements de sa bouche,", 
   "3 Let the hearts of those rejoice who seek the Lord 4 Seek the Lord and His strength; Seek His face evermore!", 
   ],
@@ -10035,7 +10023,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "( والمجد للـه دائماً )", 
+  "", 
   "42 et ils disaient à la femme: \"Ce n'est plus seulement à cause de tes dires que nous croyons; nous savons qu'il est vraiment le Sauveur du monde.", 
   "", 
   ],
@@ -10049,7 +10037,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قوَّتي وتسبحتي هو الرَّبّ، وقد صار لي خلاصاً. إن أدباً أدَّبني الرَّبّ، وإلى الموت لم يسلمني. هللويا.", 
+  "قوَّتي وتسبحتي هو الرَّبّ، وقد صار لي خلاصاً. إن أدباً أدَّبني الرَّبّ، وإلى الموت لم يسلمني.", 
   "14 Ma force et ma joie, c'est le Seigneur, Je lui dois la victoire.", 
   "14 The Lord is my strength and song, And He has become my salvation.", 
   ],
@@ -10169,7 +10157,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهُم يسوعُ: ' أبي يعملُ حتَّى الآنَ وأنا أيضاً أعملُ '. فمِن أجلِ هذا كانَ اليهودُ يطلبونَ أنَّ يقتلوهُ، ليس لأنَّهُ يَنقُض السَّبتَ فقط، بلْ لأنَّهُ كانَ يقولُ إنَّ اللَّه أبي، مُساوياً نفسهُ باللَّه.( والمجد للـه دائماً )", 
+  "فقال لهُم يسوعُ: ' أبي يعملُ حتَّى الآنَ وأنا أيضاً أعملُ '. فمِن أجلِ هذا كانَ اليهودُ يطلبونَ أنَّ يقتلوهُ، ليس لأنَّهُ يَنقُض السَّبتَ فقط، بلْ لأنَّهُ كانَ يقولُ إنَّ اللَّه أبي، مُساوياً نفسهُ باللَّه.", 
   "17 Mais Jésus leur répondit: \"Mon Père, jusqu'à présent, est à l'oeuvre et moi aussi je suis à l'oeuvre.18 Dès lors, les Juifs n'en cherchaient que davantage à le faire périr car, non seulement il violait le sabbat, mais encore il appelait Dieu son propre Père, se faisant ainsi l'égal de Dieu.", 
   "17 But Jesus answered them, My Father has been working until now, and I have been working. 18 Therefore the Jews sought all the more to kill Him, because He not only broke the Sabbath, but also said that God was His Father, making Himself equal with God.", 
   ],
@@ -10183,7 +10171,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أمَّا أنا فعلى رَحْمَتِكَ تَوكَّلتُ. يَبتَهِـجُ قلبي بِخلاصِكَ. أُسَبِّحُ الرَّبَّ المُحسِن إليَّ، وأُرَتِّلُ لاِسم الرَّبِّ العالي. هللويا.", 
+  "أمَّا أنا فعلى رَحْمَتِكَ تَوكَّلتُ. يَبتَهِـجُ قلبي بِخلاصِكَ. أُسَبِّحُ الرَّبَّ المُحسِن إليَّ، وأُرَتِّلُ لاِسم الرَّبِّ العالي.", 
   "5 Moi, je compte sur ta fidélité: que mon cœur jouisse de ton salut,", 
   "5 But I have trusted in Your mercy; My heart shall rejoice in Your salvation.", 
   ],
@@ -10241,7 +10229,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "استجب لي ياربُّ عاجلاً، فقد فَنيَتْ رُوحي، لا تصرف وجهكَ عنِّي. ياربُّ استمع صَلاتي، أنصت بحقك إلى طلبتي. هللويا", 
+  "استجب لي ياربُّ عاجلاً، فقد فَنيَتْ رُوحي، لا تصرف وجهكَ عنِّي. ياربُّ استمع صَلاتي، أنصت بحقك إلى طلبتي", 
   "7 Vite, réponds-moi, Seigneur! mon souffle s'est arrêté. Ne me cache pas ta face.", 
   "7 Answer me speedily, O Lord; My spirit fails! Do not hide Your face from me.", 
   ],
@@ -10377,7 +10365,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهُم يسوعُ: ' لو كُنتُم عُمياناً لمَا كانت لكُم خطيَّةٌ. والآن تقُولُون إنَّنا نُبصرُ، فخطيَّتُكُم باقيةٌ. ( والمجد للـه دائماً )", 
+  "فقال لهُم يسوعُ: ' لو كُنتُم عُمياناً لمَا كانت لكُم خطيَّةٌ. والآن تقُولُون إنَّنا نُبصرُ، فخطيَّتُكُم باقيةٌ. ", 
   "41 Jésus leur répondit: \"Si vous étiez aveugles, vous n'auriez pas de péché. Mais à présent vous dites \"nous voyons\": votre péché demeure.", 
   "41 Jesus said to them, If you were blind, you would have no sin; but now you say, `We see.' Therefore your sin remains.", 
   ],
@@ -10443,9 +10431,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "بوِّقوا في رأسِ الشَّهر بالبوقِ، في يوم عِيدكُمْ المَشهور. ابتهجوا بِاللَّهِ مُعيننا، هلِّلوا لإله يَعقوب. خُذوا مِزماراً وأضربوا دفاً، مِزماراً مُطرِباً مع قيثار. هللويا", 
+  "بوِّقوا في رأسِ الشَّهر بالبوقِ، في يوم عِيدكُمْ المَشهور. ابتهجوا بِاللَّهِ مُعيننا، هلِّلوا لإله يَعقوب. خُذوا مِزماراً وأضربوا دفاً، مِزماراً مُطرِباً مع قيثار", 
   "3 Sonnez du cor au mois nouveau, pour notre jour de fête, 1Criez de joie pour Dieu, notre force, acclamez le Dieu de Jacob. 2 Mettez-vous à jouer, faites donner le tambour, avec la cithare mélodieuse, avec la harpe,", 
-  "3 Blow the trumpet at the time of the New Moon, At the full moon, on our solemn feast day.1 Sing aloud to God our strength; Make a joyful shout to the God of Jacob. 2 Raise a song and strike the timbrel, The pleasant harp with the lute. Alleluia", 
+  "3 Blow the trumpet at the time of the New Moon, At the full moon, on our solemn feast day.1 Sing aloud to God our strength; Make a joyful shout to the God of Jacob. 2 Raise a song and strike the timbrel, The pleasant harp with the lute.", 
   ],
   ],
   [
@@ -10499,7 +10487,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقالَ لَهُمْ يَسوعُ: ' نعم! أمَا قَرَأْتُمْ قَطُّ في الكتب أنه: مِنْ أفواه الأطفالِ والرُّضعانِ هَيَّأتَ سبحاً؟ '. ثُمَّ تَرَكهُمْ وخَرَجَ ظاهر المَدينَةِ إلى بَيْتِ عَنْيَا وبَاتَ هُناكَ.( والمجد للـه دائماً )", 
+  "فقالَ لَهُمْ يَسوعُ: ' نعم! أمَا قَرَأْتُمْ قَطُّ في الكتب أنه: مِنْ أفواه الأطفالِ والرُّضعانِ هَيَّأتَ سبحاً؟ '. ثُمَّ تَرَكهُمْ وخَرَجَ ظاهر المَدينَةِ إلى بَيْتِ عَنْيَا وبَاتَ هُناكَ.", 
   "16 et ils lui dirent: \"Tu entends ce qu'ils disent?\" Mais Jésus leur dit: \"Oui; n'avez-vous jamais lu ce texte: Par la bouche des tout-petits et des nourrissons, tu t'es préparé une louange?17 Puis il les planta là et sortit de la ville pour se rendre à Béthanie, où il passa la nuit.", 
   "16 and said to Him, Do You hear what these are saying? And Jesus said to them, Yes. Have you never read, `Out of the mouth of babes and nursing infants You have perfected praise'? 17 Then He left them and went out of the city to Bethany, and He lodged there.", 
   ],
@@ -10667,7 +10655,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احمد الرب بكل قلبي.احدث بجميع عجائبك. افرح وابتهج بك ارنم لاسمك ايها العلي. هللويا.", 
+  "احمد الرب بكل قلبي.احدث بجميع عجائبك. افرح وابتهج بك ارنم لاسمك ايها العلي.", 
   "1 Seigneur, je rendrai grâce de tout mon coeur, je redirai toutes tes merveilles.", 
   "9:1 I will praise You, O Lord, with my whole heart; I will tell of all Your marvelous works.", 
   ],
@@ -10713,7 +10701,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فمن هو الانسان حتى تذكره وابن آدم حتى تفتقده. وتنقصه قليلا عن الملائكة وبمجد وبهاء تكلله. هللويا", 
+  "فمن هو الانسان حتى تذكره وابن آدم حتى تفتقده. وتنقصه قليلا عن الملائكة وبمجد وبهاء تكلله", 
   "4 Qu'est donc l'homme pour que tu penses à lui, l'être humain pour que tu t'en soucies?", 
   "4 What is man that You are mindful of him, And the son of man that You visit him?.", 
   ],
@@ -10765,7 +10753,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ويتكل عليك العارفون اسمك.لانك لم تترك طالبيك يا رب رنموا للرب الساكن في صهيون.اخبروا بين الشعوب بافعاله. هللويا.", 
+  "ويتكل عليك العارفون اسمك.لانك لم تترك طالبيك يا رب رنموا للرب الساكن في صهيون.اخبروا بين الشعوب بافعاله.", 
   "10 Qu'ils comptent sur toi, ceux qui connaissent ton nom, car tu n'abandonnes pas ceux qui te cherchent, Seigneur.", 
   "10 And those who know Your name will put their trust in You; For You, Lord, have not forsaken those who seek You.", 
   ],
@@ -10799,7 +10787,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ارسل كلمته فشفاهم ونجاهم من تهلكاتهم. وليذبحوا له ذبائح الحمد وليعدوا اعماله بترنم. هللويا.", 
+  "ارسل كلمته فشفاهم ونجاهم من تهلكاتهم. وليذبحوا له ذبائح الحمد وليعدوا اعماله بترنم.", 
   "20 Il a envoyé sa parole pour les guérir et les soustraire à la fosse. 22 Qu'ils célèbrent le Seigneur pour sa fidélité", 
   "20 He sent His word and healed them, And delivered them from their destructions.", 
   ],
@@ -10895,7 +10883,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ترسي عند الله مخلّص مستقيمي القلوب الله قاض عادل واله يسخط في كل يوم. هللويا.", 
+  "ترسي عند الله مخلّص مستقيمي القلوب الله قاض عادل واله يسخط في كل يوم.", 
   "10 Mon bouclier est près de Dieu, le sauveur des coeurs droits.", 
   "10 My defense is of God, Who saves the upright in heart.", 
   ],
@@ -10981,7 +10969,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "انفسنا انتظرت الرب.معونتنا وترسنا هو. لانه به تفرح قلوبنا لاننا على اسمه القدوس اتكلنا. هللويا", 
+  "انفسنا انتظرت الرب.معونتنا وترسنا هو. لانه به تفرح قلوبنا لاننا على اسمه القدوس اتكلنا", 
   "20 Nous, nous attendons le Seigneur: notre aide et notre bouclier, c'est lui.", 
   "20 Our soul waits for the Lord; He is our help and our shield.", 
   ],
@@ -11077,7 +11065,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يكون مجد الرب الى الدهر.يفرح الرب باعماله. هللويا.", 
+  "يكون مجد الرب الى الدهر.يفرح الرب باعماله.", 
   "31 Que la gloire du Seigneur dure toujours, que le Seigneur se réjouisse de ses oeuvres,", 
   "31 May the glory of the Lord endure forever; May the Lord rejoice in His works.", 
   ],
@@ -11177,7 +11165,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "رنموا للرب ترنيمة جديدة لانه صنع عجائب.خلصته يمينه وذراع قدسه.اهتفي للرب يا كل الارض اهتفوا ورنموا وغنوا. هللويا.", 
+  "رنموا للرب ترنيمة جديدة لانه صنع عجائب.خلصته يمينه وذراع قدسه.اهتفي للرب يا كل الارض اهتفوا ورنموا وغنوا.", 
   "1 Chantez au Seigneur un chant nouveau, car il a fait des merveilles.", 
   "1 Oh, sing to the Lord a new song! For He has done marvelous things.", 
   ],
@@ -11241,7 +11229,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ليكمّل الرب كل سؤلك الآن عرفت ان الرب مخلّص مسيحه يستجيبه من سماء قدسه بجبروت خلاص يمينه. هللويا.", 
+  "ليكمّل الرب كل سؤلك الآن عرفت ان الرب مخلّص مسيحه يستجيبه من سماء قدسه بجبروت خلاص يمينه.", 
   "5 L’Éternel accomplira toutes tes demandes.", 
   "5 May the Lord fulfill all your petitions", 
   ],
@@ -11287,7 +11275,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "سراج لرجلي كلامك ونور لسبيلي. اضئ بوجهك على عبدك وعلمني فرائضك. هللويا.", 
+  "سراج لرجلي كلامك ونور لسبيلي. اضئ بوجهك على عبدك وعلمني فرائضك.", 
   "105 Ta parole est une lampe pour mes pas, une lumière pour mon sentier.", 
   "105 Your word is a lamp to my feet And a light to my path.", 
   ],
@@ -11333,7 +11321,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اللهم باسمك خلصني وبقوتك احكم لي.اسمع يا الله صلاتي اصغ الى كلام فمي. هللويا.", 
+  "اللهم باسمك خلصني وبقوتك احكم لي.اسمع يا الله صلاتي اصغ الى كلام فمي.", 
   "1 Dieu, sauve-moi par ton nom; par ta bravoure, rends-moi justice.", 
   "54:1 Save me, O God, by Your name, And vindicate me by Your strength.", 
   ],
@@ -11379,7 +11367,7 @@ ReadingsArrays.GospelMassArray= [[
   Prefix.same+"&C=NoActor", 
   "والله ملكي منذ القدم فاعل الخلاص في وسط الارض. انت شققت البحر بقوتك.كسرت رؤوس التنانين على المياه.قم يا الله.اقم دعواك.اذكر تعيير الجاهل اياك اليوم كله.هللويا.", 
   "12 Toi pourtant, Dieu, mon roi dès l'origine, et l'auteur des victoires au sein du pays,13 tu as maîtrisé la mer par ta force, 22 Lève-toi, Dieu, défends ma cause. N'oublie pas les clameurs de ceux qui t'invoquent,", 
-  "12 For God is my King from of old, Working salvation in the midst of the earth. 13 You divided the sea by Your strength; You broke the heads of the sea serpents in the waters.22 Arise, O God, plead Your own cause; Remember how the foolish man reproaches You daily. Alleluia", 
+  "12 For God is my King from of old, Working salvation in the midst of the earth. 13 You divided the sea by Your strength; You broke the heads of the sea serpents in the waters.22 Arise, O God, plead Your own cause; Remember how the foolish man reproaches You daily.", 
   ],
   ],
   [
@@ -11447,7 +11435,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ليتحنن الله علينا وليباركنا.لينر بوجهه علينا.سلاه. يباركنا الله. هللويا", 
+  "ليتحنن الله علينا وليباركنا.لينر بوجهه علينا.سلاه. يباركنا الله", 
   "1 Que Dieu nous prenne en pitié et nous bénisse; qu'il fasse briller sa face parmi nous. Dieu, notre Dieu, nous bénit.", 
   "67:1 God be merciful to us and bless us, And cause His face to shine upon us.", 
   ],
@@ -11487,7 +11475,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "للرب الارض وملؤها.المسكونة وكل الساكنين فيها. الطاهر اليدين والنقي القلب. هللويا.", 
+  "للرب الارض وملؤها.المسكونة وكل الساكنين فيها. الطاهر اليدين والنقي القلب.", 
   "1 Au Seigneur la terre et ses richesses, le monde et ses habitants.", 
   "24:1 The earth is the Lord's, and all its fullness, The world and those who dwell therein.", 
   ],
@@ -11715,7 +11703,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لا يقدر احد ان يقبل اليّ ان لم يجتذبه الآب الذي ارسلني وانا اقيمه في اليوم الاخير. انه مكتوب في الانبياء ويكون الجميع متعلمين من الله.فكل من سمع من الآب وتعلّم يقبل اليّ. ( والمجد للـه دائماً ).", 
+  "لا يقدر احد ان يقبل اليّ ان لم يجتذبه الآب الذي ارسلني وانا اقيمه في اليوم الاخير. انه مكتوب في الانبياء ويكون الجميع متعلمين من الله.فكل من سمع من الآب وتعلّم يقبل اليّ. ", 
   "44 Nul ne peut venir à moi si le Père qui m'a envoyé ne l'attire, et moi je le ressusciterai au dernier jour. 45 Dans les prophètes il est écrit: Tous seront instruits par Dieu. Quiconque a entendu ce qui vient du Père et reçoit son enseignement vient à moi.", 
   "44 No one can come to Me unless the Father who sent Me draws him; and I will raise him up at the last day. 45 It is written in the prophets, `And they shall all be taught by God.' Therefore everyone who has heard and learned from the Father comes to Me.", 
   ],
@@ -11729,7 +11717,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "نظروا اليه واستناروا ووجوههم لم تخجل. ذوقوا وانظروا ما اطيب الرب.طوبى للرجل المتوكل عليه. هللويا.", 
+  "نظروا اليه واستناروا ووجوههم لم تخجل. ذوقوا وانظروا ما اطيب الرب.طوبى للرجل المتوكل عليه.", 
   "5 Ceux qui ont regardé vers lui sont radieux et leur visage n'a plus à rougir.", 
   "5 They looked to Him and were radiant, And their faces were not ashamed.", 
   ],
@@ -11769,7 +11757,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لاحتماء بالرب خير من التوكل على انسان الاحتماء بالرب خير من التوكل على الرؤساء. هللويا.", 
+  "لاحتماء بالرب خير من التوكل على انسان الاحتماء بالرب خير من التوكل على الرؤساء.", 
   "8 Mieux vaut se réfugier près du Seigneur, que compter sur les hommes.", 
   "8 It is better to trust in the Lord Than to put confidence in man.", 
   ],
@@ -11843,7 +11831,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "صرخت من كل قلبي.استجب لي يا رب.فرائضك احفظ. دعوتك. خلّصني فاحفظ شهاداتك. هللويا.", 
+  "صرخت من كل قلبي.استجب لي يا رب.فرائضك احفظ. دعوتك. خلّصني فاحفظ شهاداتك.", 
   "145 De tout mon coeur je t'ai cherché, ne me laisse pas errer loin de tes commandements.", 
   "145 I cry out with my whole heart; Hear me, O Lord! I will keep Your statutes.", 
   ],
@@ -11883,7 +11871,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "سبحوا الرب لان الرب صالح.رنموا لاسمه لان ذاك حلو. لاني انا قد عرفت ان الرب عظيم وربنا فوق جميع الآلهة. هللويا.", 
+  "سبحوا الرب لان الرب صالح.رنموا لاسمه لان ذاك حلو. لاني انا قد عرفت ان الرب عظيم وربنا فوق جميع الآلهة.", 
   "3 Louez le Seigneur car il est bon, chantezson nom car il est aimable.", 
   "3 Praise the Lord, for the Lord is good; Sing praises to His name, for it is pleasant.", 
   ],
@@ -11993,7 +11981,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احببت لان الرب يسمع صوتي تضرعاتي. لانه امال اذنه اليّ.فادعوه مدة حياتي. هللويا.", 
+  "احببت لان الرب يسمع صوتي تضرعاتي. لانه امال اذنه اليّ.فادعوه مدة حياتي.", 
   "1 J'aime le Seigneur, car il entend ma voix suppliante,", 
   "116:1 I love the Lord, because He has heard My voice and my supplications.", 
   ],
@@ -12161,7 +12149,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حمدوا الرب لانه صالح لان الى الابد رحمته. من يتكلم بجبروت الرب من يخبر بكل تسابيحه. هللويا.", 
+  "حمدوا الرب لانه صالح لان الى الابد رحمته. من يتكلم بجبروت الرب من يخبر بكل تسابيحه.", 
   "1Célébrez le Seigneur, car il est bon, car sa fidélité est pour toujours. 2 Qui peut dire les prouesses du Seigneur, et faire entendre toutes ses louanges,", 
   "106:1 Praise the Lord! Oh, give thanks to the Lord, for He is good! For His mercy endures forever.", 
   ],
@@ -12233,7 +12221,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الرب قد ذكرنا فيبارك.يبارك بيت اسرائيل يبارك بيت هرون. يبارك متقي الرب الصغار مع الكبار. هللويا", 
+  "الرب قد ذكرنا فيبارك.يبارك بيت اسرائيل يبارك بيت هرون. يبارك متقي الرب الصغار مع الكبار", 
   "12 Le Seigneur se souvient de nous; il bénira. Il bénira la maison d'Israël, il bénira la maison d'Aaron,", 
   "12 The Lord has been mindful of us; He will bless us; He will bless the house of Israel; He will bless the house of Aaron.", 
   ],
@@ -12355,7 +12343,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقالوا للمرأة اننا لسنا بعد بسبب كلامك نؤمن.لاننا نحن قد سمعنا ونعلم ان هذا هو بالحقيقة المسيح مخلّص العالم ( والمجد للـه دائماً )", 
+  "وقالوا للمرأة اننا لسنا بعد بسبب كلامك نؤمن.لاننا نحن قد سمعنا ونعلم ان هذا هو بالحقيقة المسيح مخلّص العالم ", 
   "42 et ils disaient à la femme: \"Ce n'est plus seulement à cause de tes dires que nous croyons; nous l'avons entendu nous-mêmes et nous savons qu'il est vraiment le Sauveur du monde.", 
   "42 Then they said to the woman, Now we believe, not because of what you said, for we ourselves have heard Him and we know that this is indeed the Christ, the Savior of the world.", 
   ],
@@ -12529,7 +12517,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مبارك الرب الى الدهر.آمين فآمين اين مراحمك الأول يا رب التي حلفت بها لداود بامانتك. هللويا.", 
+  "مبارك الرب الى الدهر.آمين فآمين اين مراحمك الأول يا رب التي حلفت بها لداود بامانتك.", 
   "52 Béni soit le Seigneur pour toujours, Amen, Amen.", 
   "52 Blessed be the Lord forevermore! Amen and Amen.", 
   ],
@@ -12609,7 +12597,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يا رب ارفع نفسي. يا الهي عليك توكلت.فلا تدعني اخزى.لا تشمت بي اعدائي. ايضا كل منتظريك لا يخزوا. هللويا.", 
+  "يا رب ارفع نفسي. يا الهي عليك توكلت.فلا تدعني اخزى.لا تشمت بي اعدائي. ايضا كل منتظريك لا يخزوا.", 
   "1 Seigneur, je suis tendu vers toi.", 
   "25:1 To You, O Lord, I lift up my soul.", 
   ],
@@ -12649,7 +12637,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احمدك بين الشعوب يا رب وارنم لك بين الامم. لان رحمتك قد عظمت فوق السموات والى الغمام حقك. هللويا.", 
+  "احمدك بين الشعوب يا رب وارنم لك بين الامم. لان رحمتك قد عظمت فوق السموات والى الغمام حقك.", 
   "3 Je te rendrai grâce parmi les peuples, Seigneur, je te chanterai parmi les nations.", 
   "3 I will praise You, O Lord, among the peoples, And I will sing praises to You among the nations.", 
   ],
@@ -12711,8 +12699,8 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "مبارك الرب اله اسرائيل من الازل والى الابد.ويقول كل الشعب آمين. هللويا", 
-  "48 Béni soit le Seigneur, le Dieu d'Israël, depuis toujours et pour toujours. Et tout le peuple dira: \"Amen Alléluia\",", 
+  "مبارك الرب اله اسرائيل من الازل والى الابد. ويقول كل الشعب: \" آمين هلليلويا\"", 
+  "48 Béni soit le Seigneur, le Dieu d'Israël, depuis toujours et pour toujours. Et tout le peuple dira: \"Amen Alléluia\"", 
   "48 Blessed be the Lord God of Israel From everlasting to everlasting! And let all the people say, Amen! Praise the Lord!.", 
   ],
   ],
@@ -12757,9 +12745,9 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قوتي وترنمي الرب وقد صار لي خلاصا. صوت ترنم وخلاص في خيام الصديقين.يمين الرب صانعة ببأس يمين الرب مرتفعة.يمين الرب صانعة ببأس. هللويا", 
+  "قوتي وترنمي الرب وقد صار لي خلاصا. صوت ترنم وخلاص في خيام الصديقين.يمين الرب صانعة ببأس يمين الرب مرتفعة.يمين الرب صانعة ببأس", 
   "14 Ma force et mon chant c'est le Seigneur, il fut pour moi le salut. 15 Clameurs de joie et de salut sous les tentes des justes. La droite du Seigneur fait un exploit, la droite du Seigneur est levée, 16 La droite de l’Éternel est élevée ! La droite de l’Éternel agit avec puissance !", 
-  "14 The Lord is my strength and song, And He has become my salvation. 15 The voice of rejoicing and salvation Is in the tents of the righteous; The right hand of the Lord does valiantly. 16 The right hand of the Lord is exalted; The right hand of the Lord does valiantly. Alleluia", 
+  "14 The Lord is my strength and song, And He has become my salvation. 15 The voice of rejoicing and salvation Is in the tents of the righteous; The right hand of the Lord does valiantly. 16 The right hand of the Lord is exalted; The right hand of the Lord does valiantly.", 
   ],
   ],
   [
@@ -12827,7 +12815,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وانا اعلم ان وصيته هي حياة ابدية.فما اتكلم انا به فكما قال لي الآب هكذا اتكلم ( والمجد للـه دائماً )", 
+  "وانا اعلم ان وصيته هي حياة ابدية.فما اتكلم انا به فكما قال لي الآب هكذا اتكلم ", 
   "50 Et je sais que son commandement est vie éternelle: ce que je dis, je le dis comme le Père me l'a dit.", 
   "50 And I know that His command is everlasting life. Therefore, whatever I speak, just as the Father has told Me, so I speak.", 
   ],
@@ -12887,7 +12875,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "احمدوا الرب لانه صالح لان الى الابد رحمته‏.احمدوا اله الآلهة لان الى الابد رحمته. هللويا", 
+  "احمدوا الرب لانه صالح لان الى الابد رحمته‏.احمدوا اله الآلهة لان الى الابد رحمته", 
   "1 Célébrez le Seigneur, car il est bon et sa fidélité est pour toujours.", 
   "136:1 Oh, give thanks to the Lord, for He is good! For His mercy endures forever.", 
   ],
@@ -12925,7 +12913,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الكلام الذي اكلمكم به لست اتكلم به من نفسي لكن الآب الحال فيّ هو يعمل الاعمال.صدقوني اني في الآب والآب فيّ.وإلا فصدقوني لسبب الاعمال نفسها. ( والمجد للـه دائماً )", 
+  "الكلام الذي اكلمكم به لست اتكلم به من نفسي لكن الآب الحال فيّ هو يعمل الاعمال.صدقوني اني في الآب والآب فيّ.وإلا فصدقوني لسبب الاعمال نفسها. ", 
   "Les paroles que je vous dis, je ne les dis pas de moi-même! Au contraire, c'est le Père qui, demeurant en moi, accomplit ses propres œuvres. 11 Croyez-moi, je suis dans le Père et le Père est en moi; et si vous ne croyez pas ma parole, croyez du moins à cause de ces œuvres.", 
   "The words that I speak to you I do not speak on My own authority; but the Father who dwells in Me does the works. 11 Believe Me that I am in the Father and the Father in Me, or else believe Me for the sake of the works themselves.", 
   ],
@@ -12939,7 +12927,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "يداك صنعتاني وانشأتاني.فهمني فاتعلّم وصاياك. هللويا.", 
+  "يداك صنعتاني وانشأتاني.فهمني فاتعلّم وصاياك.", 
   "73 Je lève les mains vers tes commandements que j'aime tant, je méditerai tes décrets,", 
   "73 Your hands have made me and fashioned me; Give me understanding, that I may learn Your commandments.", 
   ],
@@ -13031,7 +13019,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "صعد الله بهتاف الرب بصوت الصور. لان الله ملك الارض كلها. هللويا", 
+  "صعد الله بهتاف الرب بصوت الصور. لان الله ملك الارض كلها", 
   "5 Dieu est monté parmi les ovations, à la sonnerie du cor, lui, le Seigneur.", 
   "5 God has gone up with a shout, The Lord with the sound of a trumpet.", 
   ],
@@ -13081,7 +13069,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ذاك يمجدني لانه يأخذ مما لي ويخبركم. كل ما للآب هو لي.لهذا قلت انه يأخذ مما لي ويخبركم. ( والمجد للـه دائماً )", 
+  "ذاك يمجدني لانه يأخذ مما لي ويخبركم. كل ما للآب هو لي.لهذا قلت انه يأخذ مما لي ويخبركم. ", 
   "14 Il me glorifiera car il recevra de ce qui est à moi et il vous le communiquera. 15 Tout ce que possède mon Père est à moi; c'est pourquoi j'ai dit qu'il vous communiquera ce qu'il reçoit de moi.", 
   "14 He will glorify Me, for He will take of what is Mine and declare it to you. 15 All things that the Father has are Mine. Therefore I said that He will take of Mine and declare it to you.", 
   ],
@@ -13135,7 +13123,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "صعد الله بهتاف الرب بصوت الصور. لان الله ملك الارض كلها. هللويا", 
+  "صعد الله بهتاف الرب بصوت الصور. لان الله ملك الارض كلها", 
   "5 Dieu est monté parmi les ovations, à la sonnerie du cor, lui, le Seigneur.", 
   "5 God has gone up with a shout, The Lord with the sound of a trumpet.", 
   ],
@@ -13185,7 +13173,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ذاك يمجدني لانه يأخذ مما لي ويخبركم. كل ما للآب هو لي.لهذا قلت انه يأخذ مما لي ويخبركم. ( والمجد للـه دائماً )", 
+  "ذاك يمجدني لانه يأخذ مما لي ويخبركم. كل ما للآب هو لي.لهذا قلت انه يأخذ مما لي ويخبركم. ", 
   "14 Il me glorifiera car il recevra de ce qui est à moi et il vous le communiquera. 15 Tout ce que possède mon Père est à moi; c'est pourquoi j'ai dit qu'il vous communiquera ce qu'il reçoit de moi.", 
   "14 He will glorify Me, for He will take of what is Mine and declare it to you. 15 All things that the Father has are Mine. Therefore I said that He will take of Mine and declare it to you.", 
   ],
@@ -13199,7 +13187,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قم يا رب بغضبك ومجمع القبائل يحيط بك فعد فوقها الى العلى. الرب يدين الشعوب. هللويا.", 
+  "قم يا رب بغضبك ومجمع القبائل يحيط بك فعد فوقها الى العلى. الرب يدين الشعوب.", 
   "6 Lève-toi, Seigneur mon Dieu,", 
   "6 Arise, O Lord, in Your anger.", 
   ],

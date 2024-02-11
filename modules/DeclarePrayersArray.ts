@@ -2584,8 +2584,15 @@ PrayersArray= [[
   ],
   ],
   [
+    [
+      Prefix.commonPrayer+"GospelPrayer&D=$copticFeasts.AnyDay&C=Title", 
+      "", 
+      "Oraison de l’Evangile", 
+      "", 
+      "أوشية الإنجيل", 
+      ],
   [
-  Prefix.commonPrayer+"GospelPrayer&D=$copticFeasts.AnyDay&C=Comments", 
+  Prefix.same+"&C=Comments", 
   "", 
   "يقدم الشماس للكاهن درج البخور فيضع يَدِ بَخُورفي المجمرة ويقول:.", 
   ],
@@ -2597,13 +2604,6 @@ PrayersArray= [[
     Prefix.placeHolder, 
     Prefix.commonPrayer+"BlockIriniPassi&D=$copticFeasts.AnyDay", 
     ],
-  [
-  Prefix.same+"&C=Title", 
-  "", 
-  "Oraison de l’Evangile", 
-  "", 
-  " أوشية الإنجيل", 
-  ],
   [
   Prefix.same+"&C=Priest", 
   "Ⲫⲛⲏⲃ ⲡ̀ϭⲟⲓⲥ Ⲓⲏ̅ⲥ̅ Ⲡⲭ̅ⲥ̅ Ⲡⲉⲛⲛⲟⲩϯ ⲫⲏⲉ̀ⲧⲁϥϫⲟⲥ ⲛ̀ⲛⲉϥⲁ̀ⲅⲓⲟⲥ ⲉⲧⲧⲁⲓⲏⲟⲩⲧ ⲙ̀ⲙⲁⲑⲏⲧⲏⲥ ⲟⲩⲟϩ ⲛ̀ⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲉⲑⲟⲩⲁⲃ Ϫⲉ ϩⲁⲛⲙⲏϣ ⲙ̀ⲡ̀ⲣⲟⲫⲏⲧⲏⲥ ⲛⲉⲙ ϩⲁⲛⲑ̀ⲙⲏⲓ ⲁⲩⲉⲣ ⲉ̀ⲡⲓⲑⲩⲙⲓⲛ ⲉ̀ⲛⲁⲩ ⲉ̀ⲛⲏ ⲉ̀ⲧⲉⲧⲉⲛⲛⲁⲩ ⲉ̀ⲣⲱⲟⲩ ⲟⲩⲟϩ ⲙ̀ⲡⲟⲩⲛⲁⲩ: ⲟⲩⲟϩ ⲉ̀ⲥⲱⲧⲉⲙ ⲉ̀ⲛⲏ ⲉ̀ⲧⲉⲧⲉⲛⲥⲱⲧⲉⲙ ⲉ̀ⲣⲱⲟⲩ ⲟⲩⲟϩ ⲙ̀ⲡⲟⲩⲥⲱⲧⲉⲙ.", 
@@ -2840,7 +2840,7 @@ PrayersArray= [[
   "", 
   "Oui Seigneur, Seigneur, Toi qui nous a donné le pouvoir de fouler aux pieds les serpents, les scorpions et toute la puissance de l'ennemi. écrase vite leurs têtes sous nos pieds et écarte les mauvais desseins qu'ils dressent contre nous car Tu es notre Roi ô Christ notre Dieu et à Toi nous rendons gloire, honneur et adoration avec Ton Père très bon et le Saint-Esprit vivifiant et consubstantiel à Toi, Maintenant et toujours et pour les siècles des siècles. Amen.", 
   "", 
-  "نعم يا رَبّ، يا رَبُّ الذي أعطانا السلطان أنْ ندوس الحيات والعقارَبّ وكُلَّ قُوَّة العدو، اسحق رؤوسه تَحْتَ أقدامنا سريعاً وبدد عَنَّا كُلِّ مَعَقولاته الشريرة المُقَاوَمَةِ لَنَا. لأنَّكَ أنْتَ هُوَ ملكنا أيُّهَا المَسِيحْ إلهنا، وأَنْت الذي نرسل لَكَ إلى فَوْقَ المَجْدُ والكَرَامَةْ والسجةود  مَعَ أب يك الصَالِحْ ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدُهُورْ كلها آمْينْ.", 
+  "نعم يا رَبّ، يا رَبُّ الذي أعطانا السلطان أنْ ندوس الحيات والعقارَبّ وكُلَّ قُوَّة العدو، اسحق رؤوسه تَحْتَ أقدامنا سريعاً وبدد عَنَّا كُلِّ مَعَقولاته الشريرة المُقَاوَمَةِ لَنَا. لأنَّكَ أنْتَ هُوَ ملكنا أيُّهَا المَسِيحْ إلهنا، وأَنْت الذي نرسل لَكَ إلى فَوْقَ المَجْدُ والكَرَامَةْ والسِجُودِ  مَعَ أب يك الصَالِحْ ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدُهُورْ كلها آمْينْ.", 
   ],
   ],
   [
@@ -6217,15 +6217,15 @@ PrayersArray= [[
   "par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dûs avec Lui et le Saint Esprit vivifiant et consubstantiel à Toi, maintenant et toujours et dans les siècles des siècles. Amen.", 
   "", 
   "هَذَا الذي مِنْ قِبَلِهِ المَجْدُ والكَرَامَةْ والعزة  والسجو د، تليق بك مَعَه ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دَهْرِ الدُهُورْ كلها آمْينْ.", 
-  ],
+    ],
+  [
+    Prefix.same+"&C=Comments", 
+    "", 
+    "إذا أرادوا، يقول الشَعْبْ الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام", 
+    ],
   [
   Prefix.placeHolder, 
   Prefix.massCommon+"DiaconResponseKissEachOther&D=$copticFeasts.AnyDay", 
-  ],
-  [
-  Prefix.same+"&C=Comments", 
-  "", 
-  "إذا أرادوا، يقول الشَعْبْ الاسبسمس الآدام السنوي، أو غيره من الاسبسمسمات السنوية أو اسبسمسات الآحاد والأعياد السيدية والغير سيدية والأصوام", 
   ],
   [
   Prefix.placeHolder, 

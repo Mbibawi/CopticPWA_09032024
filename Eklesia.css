@@ -689,8 +689,8 @@ br{
 }
 .ReadingEnd{
   background-color: burlywood;
-  margin-bottom: 20px;
-  border-bottom: #111 solid 3pt;
+  margin-bottom: 1px;
+  border-bottom: #111 solid 4pt;
 
 }
 

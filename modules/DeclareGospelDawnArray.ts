@@ -39,7 +39,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولا تُصَبُّ خمرٌ جديدةٌ في زقاقٍ قديمةٍ، لئلاَّ تَشُقُّ الخمرُ الجديدةُ الزِّقاقَ، فتتلفُ الخمرُ مع الزِّقاقِ. بل تُصبُّ خمرٌ جديدةٌ في زقاقٍ جديدةٍ. ( والمجد للـه دائماً )", 
+  "ولا تُصَبُّ خمرٌ جديدةٌ في زقاقٍ قديمةٍ، لئلاَّ تَشُقُّ الخمرُ الجديدةُ الزِّقاقَ، فتتلفُ الخمرُ مع الزِّقاقِ. بل تُصبُّ خمرٌ جديدةٌ في زقاقٍ جديدةٍ. ", 
   "22 Personne ne met de vin nouveau dans de vieilles outres; sinon, le vin fera éclater les outres, et l'on perd à la fois le vin et les outres; mais à vin nouveau, outres neuves.", 
   "22 And no one puts new wine into old wineskins; or else the new wine bursts the wineskins, the wine is spilled, and the wineskins are ruined. But new wine must be put into new wineskins.", 
   ],
@@ -229,7 +229,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كلَّ مَن يَعملُ الشَّر يُبغِضُ النُّور، ولا يأتى إلى النُّور، لئلاَّ توبَّخ أعماله لأنَّها شرِّيرة. والذي يفعل الحقَّ فيأتي إلى النُّور، لكي تَظهر أعمالَهُ أنَّها باللهِ مَعمولةٌ. ( والمجد للـه دائماً )", 
+  "لأنَّ كلَّ مَن يَعملُ الشَّر يُبغِضُ النُّور، ولا يأتى إلى النُّور، لئلاَّ توبَّخ أعماله لأنَّها شرِّيرة. والذي يفعل الحقَّ فيأتي إلى النُّور، لكي تَظهر أعمالَهُ أنَّها باللهِ مَعمولةٌ. ", 
   "20 En effet, quiconque fait le mal hait la lumière et ne vient pas à la lumière, de crainte que ses oeuvres soient démasquées. 21 Celui qui fait la vérité vient à la lumière pour que ses oeuvres soient manifestées, elles qui ont été accomplies en Dieu.", 
   "20 For everyone practicing evil hates the light and does not come to the light, lest his deeds should be exposed. 21 But he who does the truth comes to the light, that his deeds may be clearly seen, that they have been done in God.", 
   ],
@@ -269,7 +269,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلمَّا عَلِمتْ الجُموعُ تَبِعوهُ، فَقبِلَهُم وخاطبَهُم مِن أجل ملكوتِ اللهِ، والمُحتاجونَ إلى الشِّفاءِ شفَاهُم. وكان النَّهارُ قد بدأَ يَميلُ. ( والمجد للـه دائماً )", 
+  "فلمَّا عَلِمتْ الجُموعُ تَبِعوهُ، فَقبِلَهُم وخاطبَهُم مِن أجل ملكوتِ اللهِ، والمُحتاجونَ إلى الشِّفاءِ شفَاهُم. وكان النَّهارُ قد بدأَ يَميلُ. ", 
   "11 L'ayant su, les foules le suivirent. Jésus les accueillit; il leur parlait du Règne de Dieu et il guérissait ceux qui en avaient besoin. 12 Mais le jour commença de baisser.", 
   "11 But when the multitudes knew it, they followed Him; and He received them and spoke to them about the kingdom of God, and healed those who had need of healing. 12 When the day began to wear away.", 
   ],
@@ -749,7 +749,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هناك ترونه كما قال لكم '. فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهُنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ. ( والمجد للـه دائماً (", 
+  "هناك ترونه كما قال لكم '. فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهُنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "c'est là que vous le verrez, comme il vous l'a dit. 8 Elles sortirent et s'enfuirent loin du tombeau, car elles étaient toutes tremblantes et bouleversées; et elles ne dirent rien à personne, car elles avaient peur.", 
   "there you will see Him, as He said to you. 8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid.", 
   ],
@@ -929,7 +929,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلما سمع يسوع قال لهم.لا يحتاج الاصحاء الى طبيب بل المرضى. لم آت لادعو ابرارا بل خطاة الى التوبة. ( والمجد للـه دائماً )", 
+  "فلما سمع يسوع قال لهم.لا يحتاج الاصحاء الى طبيب بل المرضى. لم آت لادعو ابرارا بل خطاة الى التوبة. ", 
   "17 Jésus, qui avait entendu, leur dit: 'Ce ne sont pas les bien-portants qui ont besoin de médecin, mais les malades; je suis venu appeler non pas les justes, mais les pécheurs à la repentance", 
   "17 When Jesus heard it, He said to them, Those who are well have no need of a physician, but those who are sick. I did not come to call the righteous, but sinners, to repentance", 
   ],
@@ -1161,7 +1161,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين ( والمجد للـه دائماً )", 
+  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين ", 
   "20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age.", 
   "20 et enseignez–leur à garder tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu’à la fin du monde.", 
   ],
@@ -1207,7 +1207,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هناك ترونه كما قال لكم '. فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهُنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ. ) والمجد للـه دائماً)", 
+  "هناك ترونه كما قال لكم '. فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهُنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "there you will see Him, as He said to you. 8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid.", 
   "C’est là que vous le verrez, comme il vous l’a dit.8 Elles sortirent du tombeau et s’enfuirent tremblantes et hors d’elles–mêmes mais elles ne dirent rien à personne à cause de leur effroi.", 
   ],
@@ -1251,7 +1251,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقام بطرس وركض الى القبر فانحنى ونظر الاكفان موضوعة وحدها فمضى متعجبا في نفسه مما كان. ) والمجد للـه دائماً )", 
+  "فقام بطرس وركض الى القبر فانحنى ونظر الاكفان موضوعة وحدها فمضى متعجبا في نفسه مما كان.", 
   "12 But Peter arose and ran to the tomb; and stooping down, he saw the linen cloths lying by themselves; and he departed, marveling to himself at what had happened.", 
   "12 Mais Pierre se leva et courut au tombeau. En se baissant il ne vit que les bandelettes qui étaient à terre ; puis il s’en alla chez lui, dans l’étonnement de ce qui était arrivé.", 
   ],
@@ -1333,7 +1333,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن اذهبي الى اخوتي وقولي لهم اني اصعد الى ابي وابيكم والهي والهكم. فجاءت مريم المجدلية واخبرت التلاميذ انها رات الرب وانه قال لها هذا.) والمجد للـه دائماً )", 
+  "ولكن اذهبي الى اخوتي وقولي لهم اني اصعد الى ابي وابيكم والهي والهكم. فجاءت مريم المجدلية واخبرت التلاميذ انها رات الرب وانه قال لها هذا.", 
   "but go to My brethren and say to them, `I am ascending to My Father and your Father, and to My God and your God.' 18 Mary Magdalene came and told the disciples that she had seen the Lord, and that He had spoken these things to her.", 
   "Mais va vers mes frères et dis–leur que je monte vers mon Père et votre Père, vers mon Dieu et votre Dieu.18 Marie–Madeleine vint annoncer aux disciples qu’elle avait vu le Seigneur, et qu’il lui avait dit ces choses.", 
   ],
@@ -1391,7 +1391,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فسيروا ما دام لكم النور لئلا يدرككم الظلام.والذي يسير في الظلام لا يعلم الى اين يذهب. ما دام لكم النور آمنوا بالنور لتصيروا ابناء النور. تكلم يسوع بهذا ثم مضى واختفى عنهم ( والمجد للـه دائماً )", 
+  "فسيروا ما دام لكم النور لئلا يدرككم الظلام.والذي يسير في الظلام لا يعلم الى اين يذهب. ما دام لكم النور آمنوا بالنور لتصيروا ابناء النور. تكلم يسوع بهذا ثم مضى واختفى عنهم ", 
   "Marchez pendant que vous avez la lumière, pour que les ténèbres ne s'emparent pas de vous: car celui qui marche dans les ténèbres ne sait pas où il va.36 Pendant que vous avez la lumière croyez en la lumière, pour devenir des fils de lumière.", 
   "Walk while you have the light, lest darkness overtake you; he who walks in darkness does not know where he is going. 36 While you have the light, believe in the light, that you may become sons of light.", 
   ],
@@ -1443,7 +1443,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez-vous ce jour-là et bondissez de joie, car voici, votre récompense est grande dans le ciel; c'est en effet de la même manière que leurs pères traitaient les prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -1495,7 +1495,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واذا وجدته تدعو الصديقات والجارات قائلة افرحن معي لاني وجدت الدرهم الذي اضعته. هكذا اقول لكم يكون فرح قدام ملائكة الله بخاطئ واحد يتوب ( والمجد للـه دائماً )", 
+  "واذا وجدته تدعو الصديقات والجارات قائلة افرحن معي لاني وجدت الدرهم الذي اضعته. هكذا اقول لكم يكون فرح قدام ملائكة الله بخاطئ واحد يتوب ", 
   "9 Et quand elle l'a retrouvée, elle réunit ses amies et ses voisines, et leur dit: 'Réjouissez-vous avec moi, car je l'ai retrouvée, la pièce que j'avais perdue.10 C'est ainsi, je vous le déclare, qu'il y a de la joie chez les anges de Dieu pour un seul pécheur qui se convertit.", 
   "9 And when she has found it, she calls her friends and neighbors together, saying, Rejoice with me, for I have found the piece which I lost!' 10 Likewise, I say to you, there is joy in the presence of the angels of God over one sinner who repents.", 
   ],
@@ -1535,7 +1535,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وسيسلم الاخ اخاه الى الموت والاب ولده.ويقوم الاولاد على والديهم ويقتلونهم. وتكونون مبغضين من الجميع من اجل اسمي.ولكن الذي يصبر الى المنتهى فهذا يخلص. ( والمجد للـه دائماً )", 
+  "وسيسلم الاخ اخاه الى الموت والاب ولده.ويقوم الاولاد على والديهم ويقتلونهم. وتكونون مبغضين من الجميع من اجل اسمي.ولكن الذي يصبر الى المنتهى فهذا يخلص. ", 
   "12 Le frère livrera son frère à la mort, et le père son enfant : les enfants se soulèveront contre leurs parents et les feront mourir.13 Vous serez haïs de tous à cause de mon nom, mais celui qui persévérera jusqu’à la fin sera sauvé.", 
   "12 Now brother will betray brother to death, and a father his child; and children will rise up against parents and cause them to be put to death. 13 And you will be hated by all men for My name's sake. But he who endures to the end shall be saved.", 
   ],
@@ -1581,7 +1581,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez-vous ce jour-là et bondissez de joie, car voici, votre récompense est grande dans le ciel; c'est en effet de la même manière que leurs pères traitaient les prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -1627,7 +1627,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال لهم الحق اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله قد أتى بقوة ( والمجد للـه دائماً )", 
+  "وقال لهم الحق اقول لكم ان من القيام ههنا قوما لا يذوقون الموت حتى يروا ملكوت الله قد أتى بقوة ", 
   "1 Et il leur disait: 'En vérité, je vous le déclare, parmi ceux qui sont ici, certains ne mourront pas avant de voir le Règne de Dieu venu avec puissance.'", 
   "1And He said to them, Assuredly, I say to you that there are some standing here who will not taste death till they see the kingdom of God present with power.", 
   ],
@@ -1673,7 +1673,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن اقول لكم ان ههنا اعظم من الهيكل.فلو علمتم ما هو.اني اريد رحمة لا ذبيحة.لما حكمتم على الابرياء. فان ابن الانسان هو رب السبت ايضا ( والمجد للـه دائماً )", 
+  "ولكن اقول لكم ان ههنا اعظم من الهيكل.فلو علمتم ما هو.اني اريد رحمة لا ذبيحة.لما حكمتم على الابرياء. فان ابن الانسان هو رب السبت ايضا ", 
   "6 Or, je vous le déclare, il y a ici plus grand que le temple. Si vous aviez compris ce que signifie: C'est la miséricorde que je veux, non le sacrifice, vous n'auriez pas condamné ces hommes qui ne sont pas en faute. Car il est maître du sabbat, le Fils de l'homme.", 
   "6 Yet I say to you that in this place there is One greater than the temple. 7 But if you had known what this means, 'I desire mercy and not sacrifice,' you would not have condemned the guiltless. 8 For the Son of Man is Lord even of the Sabbath.", 
   ],
@@ -1725,7 +1725,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومتى قدموكم الى المجامع والرؤساء والسلاطين فلا تهتموا كيف او بما تحتجّون او بما تقولون. لان الروح القدس يعلّمكم في تلك الساعة ما يجب ان تقولوه. ( والمجد للـه دائماً )", 
+  "ومتى قدموكم الى المجامع والرؤساء والسلاطين فلا تهتموا كيف او بما تحتجّون او بما تقولون. لان الروح القدس يعلّمكم في تلك الساعة ما يجب ان تقولوه. ", 
   "11 Lorsqu'on vous amènera devant les synagogues, les chefs et les autorités, ne vous inquiétez pas de savoir comment vous défendre et que dire. Car le Saint Esprit vous enseignera à l'heure même ce qu'il faut dire.", 
   "11 Now when they bring you to the synagogues and magistrates and authorities, do not worry about how or what you should answer, or what you should say. 12 For the Holy Spirit will teach you in that very hour what you ought to say", 
   ],
@@ -1765,7 +1765,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم اجتاز من هناك فرأى اخوين آخرين يعقوب بن زبدي ويوحنا اخاه في السفينة مع زبدي ابيهما يصلحان شباكهما فدعاهما. فللوقت تركا السفينة واباهما وتبعاه. ( والمجد للـه دائماً )", 
+  "ثم اجتاز من هناك فرأى اخوين آخرين يعقوب بن زبدي ويوحنا اخاه في السفينة مع زبدي ابيهما يصلحان شباكهما فدعاهما. فللوقت تركا السفينة واباهما وتبعاه. ", 
   "21 Avançant encore, il vit deux autres frères: Jacques, fils de Zébédée, et Jean son frère, dans leur barque, avec Zébédée leur père, en train d'arranger leurs filets. Il les appela. 22 Laissant aussitôt leur barque et leur père, ils le suivirent.", 
   "21 Going on from there, He saw two other brothers, James the son of Zebedee, and John his brother, in the boat with Zebedee their father, mending their nets. And He called them, 22 and immediately they left the boat and their father, and followed Him.", 
   ],
@@ -1811,7 +1811,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez-vous ce jour-là et bondissez de joie, car voici, votre récompense est grande dans le ciel; c'est en effet de la même manière que leurs pères traitaient les prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -1857,7 +1857,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "من يقول الناس اني انا. فاجابوا.يوحنا المعمدان.وآخرون ايليا.وآخرون واحد من الانبياء. فقال لهم وانتم من تقولون اني انا.فاجاب بطرس وقال له انت المسيح. ( والمجد للـه دائماً )", 
+  "من يقول الناس اني انا. فاجابوا.يوحنا المعمدان.وآخرون ايليا.وآخرون واحد من الانبياء. فقال لهم وانتم من تقولون اني انا.فاجاب بطرس وقال له انت المسيح. ", 
   "'Qui suis-je, au dire des hommes? 28 Ils lui dirent: 'Jean le Baptiste; pour d'autres, Elie; pour d'autres, l'un des prophètes. 29 Et il leur demandait: 'Et vous, qui dites-vous que je suis.' Prenant la parole, Pierre lui répond: 'Tu es le Christ.'", 
   "Who do men say that I am? 28 So they answered, John the Baptist; but some say, Elijah; and others, one of the prophets. 29 He said to them, But who do you say that I am? Peter answered and said to Him, You are the Christ", 
   ],
@@ -1897,7 +1897,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ الجميعَ من فضلتُهُم ألقوا. وأمَّا هذه فمن إعوازِها ألقت كلَّ ما عِندها وكلَّ مَعِيشتها '. ( والمجد للـه دائماً )", 
+  "لأنَّ الجميعَ من فضلتُهُم ألقوا. وأمَّا هذه فمن إعوازِها ألقت كلَّ ما عِندها وكلَّ مَعِيشتها '. ", 
   "44 car tous ont mis de leur superflu, mais elle a mis de son nécessaire, tout ce qu’elle possédait, tout ce qu’elle avait pour vivre.", 
   "44 for they all put in out of their abundance, but she out of her poverty put in all that she had, her whole livelihood.", 
   ],
@@ -1949,7 +1949,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقالت لَهُ: ' طُوبَى للبَطنِ الذي حَمَلكَ والثَّديَيْنِ اللذين رَضِعتَهُمَا '. أَمَّا هُوَ فَقَال لها: ' بَل طُوبَى للذينَ يَسمَعُونَ كَلامَ الله ويَحفَظونَه. ( والمجد للـه دائماً )", 
+  "وقالت لَهُ: ' طُوبَى للبَطنِ الذي حَمَلكَ والثَّديَيْنِ اللذين رَضِعتَهُمَا '. أَمَّا هُوَ فَقَال لها: ' بَل طُوبَى للذينَ يَسمَعُونَ كَلامَ الله ويَحفَظونَه. ", 
   "et lui dit : Heureux le sein qui t’a porté et les mamelles qui t’ont allaité ! 28 Mais il répondit : Heureux plutôt ceux qui écoutent la parole de Dieu et qui la gardent !", 
   "and said to Him, Blessed is the womb that bore You, and the breasts which nursed You! 28 But He said, More than that, blessed are those who hear the word of God and keep it!.", 
   ],
@@ -2007,7 +2007,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حتى تعجبَ الجموعُ إذ رأوا الخُرسَ يتكلَّمونَ، والعُرجَ يمشونَ، والعُميَ يُبصرونَ، والصُّمَ يسمَعُونَ، ومجَّدوا إله إسرائيل. ) والمجد للـه دائماً )", 
+  "حتى تعجبَ الجموعُ إذ رأوا الخُرسَ يتكلَّمونَ، والعُرجَ يمشونَ، والعُميَ يُبصرونَ، والصُّمَ يسمَعُونَ، ومجَّدوا إله إسرائيل. ", 
   "31 So the multitude marveled when they saw the mute speaking, the maimed made whole, the lame walking, and the blind seeing; and they glorified the God of Israel.", 
   "31 aussi la foule était–elle en admiration en voyant les sourds–muets parler, les estropiés trouver la santé, les boiteux marcher, les aveugles voir ; et elle glorifiait le Dieu d’Israël.", 
   ],
@@ -2059,7 +2059,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فأجابهم وقال: ' مَن هيَ أُمِّي وإخوتي؟ '. ثمَّ نظر إلى الجالسينَ حوله وقال: ' ها أُمِّي وإخوتي، لأنَّ من يَصنعُ مشيئة اللـه هو أخي وأُختي وأُمِّي '. ( والمجد للـه دائماً )", 
+  "فأجابهم وقال: ' مَن هيَ أُمِّي وإخوتي؟ '. ثمَّ نظر إلى الجالسينَ حوله وقال: ' ها أُمِّي وإخوتي، لأنَّ من يَصنعُ مشيئة اللـه هو أخي وأُختي وأُمِّي '. ", 
   "33 Et il répondit : Qui est ma mère et qui sont mes frères ? 34 Puis promenant les regards sur ceux qui étaient assis tout autour de lui, il dit : Voici ma mère et mes frères. 35 Quiconque fait la volonté de Dieu, celui–là est mon frère, ma sœur et ma mère.", 
   "33 But He answered them, saying, Who is My mother, or My brothers? 34 And He looked around in a circle at those who sat about Him, and said, Here are My mother and My brothers! 35 For whoever does the will of God is My brother and My sister and mother.", 
   ],
@@ -2117,7 +2117,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واقول لكم ايضا ان اتفق اثنان منكم على الارض في اي شيء يطلبانه فانه يكون لهما من قبل ابي الذي في السموات.لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم.( والمجد للـه دائماً )", 
+  "واقول لكم ايضا ان اتفق اثنان منكم على الارض في اي شيء يطلبانه فانه يكون لهما من قبل ابي الذي في السموات.لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم.", 
   "19 En vérité je vous dis encore que si deux d’entre vous s’accordent sur la terre pour demander quoi que ce soit, cela leur sera donné par mon Père qui est dans les cieux. 20 Car là où deux ou trois sont assemblés en mon nom, je suis au milieu d’eux.", 
   "19 Again I say to you that if two of you agree on earth concerning anything that they ask, it will be done for them by My Father in heaven. 20 For where two or three are gathered together in My name, I am there in the midst of them.", 
   ],
@@ -2169,7 +2169,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وفيما هم منحدرين من الجبل أوصاهم يسوع قائلاً: ' لا تُعلِموا أحداً بالرؤية إلى أن يقوم ابن البشر من الأموات '. ( والمجد للـه دائماً )", 
+  "وفيما هم منحدرين من الجبل أوصاهم يسوع قائلاً: ' لا تُعلِموا أحداً بالرؤية إلى أن يقوم ابن البشر من الأموات '. ", 
   "9 Comme ils descendaient de la montagne, Jésus leur donna cet ordre: 'Ne dites mot à personne de ce qui s'est fait voir de vous, jusqu'à ce que le Fils de l'homme soit ressuscité des morts.'", 
   "9 Now as they came down from the mountain, Jesus commanded them, saying, Tell the vision to no one until the Son of Man is risen from the dead.", 
   ],
@@ -2227,7 +2227,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولم يعرفها حتى ولدت ابنها البكر.ودعا اسمه يسوع. ( والمجد للـه دائماً )", 
+  "ولم يعرفها حتى ولدت ابنها البكر.ودعا اسمه يسوع. ", 
   "25 mais il ne la connut pas jusqu'à ce qu'elle eût enfanté un fils, auquel il donna le nom de Jésus.", 
   "25 and did not know her till she had brought forth her firstborn Son. And he called His name Jesus.", 
   ],
@@ -2267,7 +2267,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة. لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا.. ( والمجد للـه دائماً(", 
+  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة. لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا.. ", 
   "16 De sa plénitude en effet, tous, nous avons reçu, et grâce sur grâce. 17 Si la Loi fut donnée par Moïse, la grâce et la vérité sont venues par Jésus Christ.", 
   "16 And of His fullness we have all received, and grace for grace. 17 For the law was given through Moses, but grace and truth came through Jesus Christ.", 
   ],
@@ -2307,7 +2307,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلم يستطع احد ان يجيبه بكلمة.ومن ذلك اليوم لم يجسر احد ان يسأله بتة ( والمجد للـه دائماً(", 
+  "فلم يستطع احد ان يجيبه بكلمة.ومن ذلك اليوم لم يجسر احد ان يسأله بتة ", 
   "46 Personne ne fut capable de lui répondre un mot. Et, depuis ce jour-là, nul n'osa plus l'interroger. 46 Personne ne fut capable de lui répondre un mot. Et, depuis ce jour-là, nul n'osa plus l'interroger.", 
   "46 And no one was able to answer Him a word, nor from that day on did anyone dare question Him anymore.", 
   ],
@@ -2353,7 +2353,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ان كان احد يخدمني فليتبعني.وحيث اكون انا هناك ايضا يكون خادمي.وان كان احد يخدمني يكرمه الآب. ( والمجد للـه دائماً )", 
+  "ان كان احد يخدمني فليتبعني.وحيث اكون انا هناك ايضا يكون خادمي.وان كان احد يخدمني يكرمه الآب. ", 
   "26 Si quelqu’un me sert, qu’il me suive, et là où je suis, là aussi sera mon serviteur. Si quelqu’un me sert, le Père l’honorera.", 
   "26 If anyone serves Me, let him follow Me; and where I am, there My servant will be also. If anyone serves Me, him My Father will honor.", 
   ],
@@ -2411,7 +2411,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فانه يكون لهما من قبل ابي الذي في السموات. لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم ( والمجد للـه دائماً(", 
+  "فانه يكون لهما من قبل ابي الذي في السموات. لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم ", 
   "cela leur sera donné par mon Père qui est dans les cieux. 20 Car là où deux ou trois sont assemblés en mon nom, je suis au milieu d’eux.", 
   "it will be done for them by My Father in heaven. 20 For where two or three are gathered together in My name, I am there in the midst of them.", 
   ],
@@ -2469,7 +2469,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة. لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا. ( والمجد للـه دائماً )", 
+  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة. لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا. ", 
   "16 De sa plénitude en effet, tous, nous avons reçu, et grâce sur grâce. 17 Si la Loi fut donnée par Moïse, la grâce et la vérité sont venues par Jésus Christ.", 
   "16 And of His fullness we have all received, and grace for grace. 17 For the law was given through Moses, but grace and truth came through Jesus Christ.", 
   ],
@@ -2515,7 +2515,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكانوا يَتكلَّمونَ مع بعضهم بعض قائلينَ: ' ما هذا الكلامُ! لأنَّهُ بسُلطانٍ وقُوَّةٍ يأمُر الأرواحَ النَّجسةَ فتخرجُ '. فذاع صيتٌ عنهُ في كُلِّ موضعٍ في الكورةِ المُحيطةِ. ) والمجد للـه دائماً)", 
+  "وكانوا يَتكلَّمونَ مع بعضهم بعض قائلينَ: ' ما هذا الكلامُ! لأنَّهُ بسُلطانٍ وقُوَّةٍ يأمُر الأرواحَ النَّجسةَ فتخرجُ '. فذاع صيتٌ عنهُ في كُلِّ موضعٍ في الكورةِ المُحيطةِ.", 
   "and spoke among themselves, saying, What a word this is! For with authority and power He commands the unclean spirits, and they come out. 37 And the report about Him went out into every place in the surrounding region.", 
   "et ils se disaient les uns aux autres : Quelle est cette parole ? Il commande avec autorité et puissance aux esprits impurs, et ils sortent. 37 Et sa renommée se répandait dans toute la région.", 
   ],
@@ -2561,7 +2561,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "والأرواح النَّجسة حينما نظرتهُ خرَّت قُدَّامه وصرخت قائلةً: ' إنَّكَ أنتَ هو ابن الله! ونهاهم كثيراً حتَّى لا يظهروه. )والمجد للـه دائماً )", 
+  "والأرواح النَّجسة حينما نظرتهُ خرَّت قُدَّامه وصرخت قائلةً: ' إنَّكَ أنتَ هو ابن الله! ونهاهم كثيراً حتَّى لا يظهروه.", 
   "11 And the unclean spirits, whenever they saw Him, fell down before Him and cried out, saying, You are the Son of God. 12 But He sternly warned them that they should not make Him known.", 
   "11 Les esprits impurs, quand ils le voyaient, se prosternaient devant lui et s’écriaient : Tu es le Fils de Dieu.12 Mais il leur recommandait avec beaucoup de sévérité de ne pas le faire connaître.", 
   ],
@@ -2649,7 +2649,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كُلَّ مَن يعملُ الشرَّ يُبغِضُ النُّورَ، ولا يأتي إلى النُّورِ، لئلاَّ توبَّخَ أعمالُهُ. لأنَّها شريرةٌ. وأمَّا من يصنعُ الحقَّ فيُقبِلُ إلى النُّورِ، لكي تظهرَ أعمالُهُ أنَّها باللهِ معمولةٌ '. ) والمجد للـه دائماً )", 
+  "لأنَّ كُلَّ مَن يعملُ الشرَّ يُبغِضُ النُّورَ، ولا يأتي إلى النُّورِ، لئلاَّ توبَّخَ أعمالُهُ. لأنَّها شريرةٌ. وأمَّا من يصنعُ الحقَّ فيُقبِلُ إلى النُّورِ، لكي تظهرَ أعمالُهُ أنَّها باللهِ معمولةٌ '. ", 
   "20 For everyone practicing evil hates the light and does not come to the light, lest his deeds should be exposed. 21 But he who does the truth comes to the light, that his deeds may be clearly seen, that they have been done in God.", 
   "20 Car quiconque fait le mal a de la haine pour la lumière et ne vient pas à la lumière, de peur que ses œuvres ne soient réprouvées ;21 mais celui qui pratique la vérité vient à la lumière, afin qu’il soit manifeste que ses œuvres sont faites en Dieu.", 
   ],
@@ -2707,7 +2707,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هذا هو الخبزُ الذي نَزَلَ مِنَ السَّماءِ. ليسَ كمَا أكلَ آباؤُكُمُ المَنَّ في البرِّيةِ وماتوا. مَنْ يَأكُلْ هذا الخُبزَ فإنَّهُ يَحيا إلى الأبدِ'. )والمجد للـه دائماً )", 
+  "هذا هو الخبزُ الذي نَزَلَ مِنَ السَّماءِ. ليسَ كمَا أكلَ آباؤُكُمُ المَنَّ في البرِّيةِ وماتوا. مَنْ يَأكُلْ هذا الخُبزَ فإنَّهُ يَحيا إلى الأبدِ'. ", 
   "58 This is the bread which came down from heaven--not as your fathers ate the manna, and are dead. He who eats this bread will live forever.", 
   "58 C’est ici le pain descendu du ciel. Il n’est pas comme celui qu’ont mangé vos pères : ils sont morts. Celui qui mange ce pain vivra éternellement.", 
   ],
@@ -2771,7 +2771,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واما يسوع فكان يتقدم في الحكمة والقامة والنعمة عند الله والناس. ( والمجد للـه دائماً )", 
+  "واما يسوع فكان يتقدم في الحكمة والقامة والنعمة عند الله والناس. ", 
   "52 Et Jésus croissait en sagesse, en stature et en grâce, devant Dieu et devant les hommes.", 
   "52 And Jesus increased in wisdom and stature, and in favor with God and men.", 
   ],
@@ -2817,7 +2817,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "من له العروس فهو العريس.واما صديق العريس الذي يقف ويسمعه فيفرح فرحا من اجل صوت العريس.اذا فرحي هذا قد كمل. ( والمجد للـه دائماً(", 
+  "من له العروس فهو العريس.واما صديق العريس الذي يقف ويسمعه فيفرح فرحا من اجل صوت العريس.اذا فرحي هذا قد كمل. ", 
   "29 Celui qui a l’épouse, c’est l’époux ; mais l’ami de l’époux qui se tient là et qui l’entend, éprouve une grande joie à cause de la voix de l’époux ; aussi cette joie qui est la mienne est complète.", 
   "29 He who has the bride is the bridegroom; but the friend of the bridegroom, who stands and hears him, rejoices greatly because of the bridegroom's voice. Therefore this joy of mine is fulfilled.", 
   ],
@@ -2875,7 +2875,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وكان صوت من السموات.انت ابني الحبيب الذي به سررت ( والمجد للـه دائماً(", 
+  "وكان صوت من السموات.انت ابني الحبيب الذي به سررت ", 
   "11 Et une voix (se fit entendre) des cieux : Tu es mon Fils bien–aimé, objet de mon affection.", 
   "11 Then a voice came from heaven, You are My beloved Son, in whom I am well pleased.”", 
   ],
@@ -2915,7 +2915,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فرأى روح الله نازلا مثل حمامة وآتيا عليه. وصوت من السموات قائلا هذا هو ابني الحبيب الذي به سررت ( والمجد للـه دائماً(", 
+  "فرأى روح الله نازلا مثل حمامة وآتيا عليه. وصوت من السموات قائلا هذا هو ابني الحبيب الذي به سررت ", 
   "il vit l’Esprit de Dieu descendre comme une colombe et venir sur lui. 17 Et voici qu’une voix fit entendre des cieux ces paroles : Celui–ci est mon Fils bien–aimé, en qui j’ai mis toute mon affection.", 
   "and He saw the Spirit of God descending like a dove and alighting upon Him. 17 And suddenly a voice came from heaven, saying, This is My beloved Son, in whom I am well pleased.”", 
   ],
@@ -2973,7 +2973,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "هذه ايضا آية ثانية صنعها يسوع لما جاء من اليهودية الى الجليل ( والمجد للـه دائماً(", 
+  "هذه ايضا آية ثانية صنعها يسوع لما جاء من اليهودية الى الجليل ", 
   "54 Jésus fit encore ce second miracle après être venu de Judée en Galilée. 54 Jésus fit encore ce second miracle après être venu de Judée en Galilée.", 
   "54 This again is the second sign Jesus did when He had come out of Judea into Galilee.", 
   ],
@@ -3025,7 +3025,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم جاء الثاني قائلا يا سيد مناك عمل خمسة امناء. فقال لهذا ايضا وكن انت على خمس مدن. ( والمجد للـه دائماً )", 
+  "ثم جاء الثاني قائلا يا سيد مناك عمل خمسة امناء. فقال لهذا ايضا وكن انت على خمس مدن. ", 
   "18 Le second vint et dit: 'Ta mine, Seigneur, a produit cinq mines'.19 Il dit de même à celui-là: 'Toi, sois à la tête de cinq villes.'", 
   "18 And the second came, saying, 'Master, your mina has earned five minas.' 19 Likewise he said to him, 'You also be over five cities.”", 
   ],
@@ -3077,7 +3077,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez–vous en ce jour–là et tressaillez de joie, parce que votre récompense sera grande dans le ciel ; car c’est ainsi que leurs pères agissaient à l’égard des prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -3123,7 +3123,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكن تأتي ساعة وهي الآن حين الساجدون الحقيقيون يسجدون للآب بالروح والحق.لان الآب طالب مثل هؤلاء الساجدين له. الله روح.والذين يسجدون له فبالروح والحق ينبغي ان يسجدوا. ( والمجد للـه دائماً )", 
+  "ولكن تأتي ساعة وهي الآن حين الساجدون الحقيقيون يسجدون للآب بالروح والحق.لان الآب طالب مثل هؤلاء الساجدين له. الله روح.والذين يسجدون له فبالروح والحق ينبغي ان يسجدوا. ", 
   "23 Mais l'heure vient, elle est là, où les vrais adorateurs adoreront le Père en esprit et en vérité; tels sont, en effet, les adorateurs que cherche le Père. 24 Dieu est esprit et c'est pourquoi ceux qui l'adorent doivent adorer en esprit et en vérité.", 
   "23 But the hour is coming, and now is, when the true worshipers will worship the Father in spirit and truth; for the Father is seeking such to worship Him. 24 God is Spirit, and those who worship Him must worship in spirit and truth.”", 
   ],
@@ -3175,7 +3175,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قال لهُ سيِّدُهُ: نِعِمَّاً أيُّها العبدُ الصَّالحُ والأمين. كُنتَ أميناً على القليلِ فأُقيمكَ على الكثير. ادخل إلى فرح سيِّدكَ. ( والمجد للـه دائماً )", 
+  "قال لهُ سيِّدُهُ: نِعِمَّاً أيُّها العبدُ الصَّالحُ والأمين. كُنتَ أميناً على القليلِ فأُقيمكَ على الكثير. ادخل إلى فرح سيِّدكَ. ", 
   "23 Son maître lui dit: ' C'est bien, bon et fidèle serviteur, tu as été fidèle en peu de choses, sur beaucoup je t'établirai; viens te réjouir avec ton maître.'", 
   "23 His lord said to him, `Well done, good and faithful servant; you have been faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord.'.", 
   ],
@@ -3233,7 +3233,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فرَفعوا حِجَارةً لِيرجُمُوهُ. أمَّا يَسوعُ فاختفَى وخَرجَ مِنْ الهَيكَلِ واجتازَ، وكان يَسير في وسطِهِمْ مُجتازاً هكذا.( والمجد للـه دائماً )", 
+  "فرَفعوا حِجَارةً لِيرجُمُوهُ. أمَّا يَسوعُ فاختفَى وخَرجَ مِنْ الهَيكَلِ واجتازَ، وكان يَسير في وسطِهِمْ مُجتازاً هكذا.", 
   "59 Alors, ils ramassèrent des pierres pour les lancer contre lui, mais Jésus se déroba et sortit du temple. 59 Alors, ils ramassèrent des pierres pour les lancer contre lui, mais Jésus se déroba et sortit du temple.", 
   "59 Then they took up stones to throw at Him; but Jesus hid Himself and went out of the temple, going through the midst of them, and so passed by.", 
   ],
@@ -3273,7 +3273,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كلَّ مَن يَعملُ الشَّر يُبغِضُ النُّور، ولا يأتى إلى النُّور، لئلاَّ توبَّخ أعماله لأنَّها شرِّيرة. والذي يفعل الحقَّ فيأتي إلى النُّور، لكي تَظهر أعمالَهُ أنَّها باللهِ مَعمولةٌ. ( والمجد للـه دائماً )", 
+  "لأنَّ كلَّ مَن يَعملُ الشَّر يُبغِضُ النُّور، ولا يأتى إلى النُّور، لئلاَّ توبَّخ أعماله لأنَّها شرِّيرة. والذي يفعل الحقَّ فيأتي إلى النُّور، لكي تَظهر أعمالَهُ أنَّها باللهِ مَعمولةٌ. ", 
   "20 En effet, quiconque fait le mal hait la lumière et ne vient pas à la lumière, de crainte que ses oeuvres soient démasquées. 21 Celui qui fait la vérité vient à la lumière pour que ses oeuvres soient manifestées, elles qui ont été accomplies en Dieu.", 
   "20 For everyone practicing evil hates the light and does not come to the light, lest his deeds should be exposed. 21 But he who does the truth comes to the light, that his deeds may be clearly seen, that they have been done in God.", 
   ],
@@ -3319,7 +3319,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لاني لم اتكلم من نفسي لكن الآب الذي ارسلني هو اعطاني وصية ماذا اقول وبماذا اتكلم. وانا اعلم ان وصيته هي حياة ابدية.فما اتكلم انا به فكما قال لي الآب هكذا اتكلم ( والمجد للـه دائماً )", 
+  "لاني لم اتكلم من نفسي لكن الآب الذي ارسلني هو اعطاني وصية ماذا اقول وبماذا اتكلم. وانا اعلم ان وصيته هي حياة ابدية.فما اتكلم انا به فكما قال لي الآب هكذا اتكلم ", 
   "49 Je n'ai pas parlé de moi-même, mais le Père qui m'a envoyé m'a prescrit ce que j'ai à dire et à déclarer. 50 Et je sais que son commandement est vie éternelle; ce que je dis, je le dis comme le Père me l'a dit", 
   "49 For I have not spoken of myself; but the Father which sent me, he gave me a commandment, what I should say, and what I should speak. 50 And I know that his commandment is life everlasting: whatsoever I speak therefore, even as the Father said unto me, so I speak.", 
   ],
@@ -3365,7 +3365,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاين التسعة.ألم يوجد من يرجع ليعطي مجدا للّه غير هذا الغريب الجنس.ثم قال له قم وامض.ايمانك خلصك ( والمجد للـه دائماً )", 
+  "فاين التسعة.ألم يوجد من يرجع ليعطي مجدا للّه غير هذا الغريب الجنس.ثم قال له قم وامض.ايمانك خلصك ", 
   "Et les neuf autres, où sont-ils? Il ne s'est trouvé parmi eux personne pour revenir rendre gloire à Dieu: il n'y a que cet étranger!' Et il lui dit: 'Relève-toi, va. Ta foi t'a sauvé.", 
   "But where are the nine? 'Were there not any found who returned to give glory to God except this foreigner?' And He said to him, 'Arise, go your way. Your faith has made you well.'", 
   ],
@@ -3441,7 +3441,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثُمَّ مدَّ يده نحو تلاميذِهِ وقال: ' ها أُمِّي وإخوتي. لأن كلَّ مَن يصنع إرادة أبي الذى فى السَّمواتِ هو أخي وأختي وأُمِّي '. ( والمجد للـه دائماً )", 
+  "ثُمَّ مدَّ يده نحو تلاميذِهِ وقال: ' ها أُمِّي وإخوتي. لأن كلَّ مَن يصنع إرادة أبي الذى فى السَّمواتِ هو أخي وأختي وأُمِّي '. ", 
   "49 Puis il étendit la main sur ses disciples et dit : Voici ma mère et mes frères. 50 En effet, quiconque fait la volonté de mon Père qui est dans les cieux, celui–là est mon frère et ma soeur et ma mère.", 
   "49 And He stretched out His hand toward His disciples and said, Here are My mother and My brothers! 50 For whoever does the will of My Father in heaven is My brother and sister and mother.", 
   ],
@@ -3681,7 +3681,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين. ) والمجد للـه دائماً)", 
+  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين.", 
   "20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age. Amen.", 
   "20 et enseignez–leur à garder tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu’à la fin du monde. Amen.", 
   ],
@@ -3721,7 +3721,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن اذهبنَ، وقُلنَ لتلاميذه ولبطرس إنَّه يسبقكم إلى الجليل. هناك ترونه كما قال لكم '. فخرجنَ سريعاً من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ. (والمجد للـه دائماً(", 
+  "لكن اذهبنَ، وقُلنَ لتلاميذه ولبطرس إنَّه يسبقكم إلى الجليل. هناك ترونه كما قال لكم '. فخرجنَ سريعاً من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "7 But go, tell His disciples--and Peter--that He is going before you into Galilee; there you will see Him, as He said to you. 8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid.", 
   "7 Mais allez dire à ses disciples et à Pierre qu’il vous précède en Galilée : C’est là que vous le verrez, comme il vous l’a dit.8 Elles sortirent du tombeau et s’enfuirent tremblantes et hors d’elles–mêmes mais elles ne dirent rien à personne à cause de leur effroi.", 
   ],
@@ -3755,7 +3755,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ لمثل هؤلاء تكون ملكوتَ اللـهِ. الحقَّ أقولُ لكُم: أن مَن لا يقبلُ ملكوت اللـهِ مثلَ ولدٍ فلن يدخُلَهُ '. فاحتضنهُم وباركهُم ووضعَ يده عليهِم. ( والمجد للـه دائماً )", 
+  "لأنَّ لمثل هؤلاء تكون ملكوتَ اللـهِ. الحقَّ أقولُ لكُم: أن مَن لا يقبلُ ملكوت اللـهِ مثلَ ولدٍ فلن يدخُلَهُ '. فاحتضنهُم وباركهُم ووضعَ يده عليهِم. ", 
   "car le Royaume de Dieu est à ceux qui sont comme eux. 15 En vérité, je vous le déclare, qui n'accueille pas le Royaume de Dieu comme un enfant n'y entrera pas.16 Et il les embrassait et les bénissait en leur imposant les mains.", 
   "for of such is the kingdom of God. 15 Assuredly, I say to you, whoever does not receive the kingdom of God as a little child will by no means enter it. 16 And He took them up in His arms, put His hands on them, and blessed them", 
   ],
@@ -3789,7 +3789,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اِسهروا إذاً فانَّكم لا تعرفون متى يأتي ربُّ البيتِ، أمساءً، أم نصف اللَّيل، أم صياح الدِّيك، أم صباحاً. لئلاَّ يأتي بغتةً فيجدكم نياماً! وما أقوله لكم أقوله للجميع: اسهَرُوا. ( والمجد للـه دائماً )", 
+  "اِسهروا إذاً فانَّكم لا تعرفون متى يأتي ربُّ البيتِ، أمساءً، أم نصف اللَّيل، أم صياح الدِّيك، أم صباحاً. لئلاَّ يأتي بغتةً فيجدكم نياماً! وما أقوله لكم أقوله للجميع: اسهَرُوا. ", 
   "35 Veillez donc, car vous ne savez pas quand le maître de la maison va venir, le soir ou au milieu de la nuit, au chant du coq ou le matin,36 de peur qu'il n'arrive à l'improviste et ne vous trouve en train de dormir. 37 Ce que je vous dis je le dis à tous: veillez.", 
   "35 Watch therefore, for you do not know when the master of the house is coming--in the evening, at midnight, at the crowing of the rooster, or in the morning 36 lest, coming suddenly, he find you sleeping. 37 And what I say to you, I say to all: Watch!", 
   ],
@@ -3841,7 +3841,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فشفاه حتى ان الاعمى الاخرس تكلم وابصر.فبهت كل الجموع وقالوا ألعل هذا هو ابن داود. ( والمجد للـه دائماً )", 
+  "فشفاه حتى ان الاعمى الاخرس تكلم وابصر.فبهت كل الجموع وقالوا ألعل هذا هو ابن داود. ", 
   "il le guérit, en sorte que le muet parlait et voyait. 23 Bouleversées, toutes les foules disaient: Celui-ci n'est-il pas le Fils de David?", 
   "and He healed him, so that the blind and mute man both spoke and saw. 23 And all the multitudes were amazed and said, Could this be the Son of David?", 
   ],
@@ -3905,7 +3905,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez-vous ce jour-là et bondissez de joie, car voici, votre récompense est grande dans le ciel; c'est en effet de la même manière que leurs pères traitaient les prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -3963,7 +3963,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "الآب يحب الابن وقد دفع كل شيء في يده. الذي يؤمن بالابن له حياة ابدية. ( والمجد للـه دائماً )", 
+  "الآب يحب الابن وقد دفع كل شيء في يده. الذي يؤمن بالابن له حياة ابدية. ", 
   "35 Le Père aime le Fils et il a tout remis en sa main. 36 Celui qui croit au Fils a la vie éternelle;", 
   "35 The Father loves the Son, and has given all things into His hand. 36 He who believes in the Son has everlasting life.", 
   ],
@@ -4045,7 +4045,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين. ) والمجد للـه دائماً)", 
+  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين.", 
   "20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age.", 
   "20 et enseignez–leur à garder tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu’à la fin du monde.", 
   ],
@@ -4085,7 +4085,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن اذهبنَ، وقُلنَ لتلاميذه ولبطرس إنَّه يسبقكم إلى الجليل. هناك ترونه كما قال لكم '. فخرجنَ سريعاً من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ. ) والمجد للـه دائماً(", 
+  "لكن اذهبنَ، وقُلنَ لتلاميذه ولبطرس إنَّه يسبقكم إلى الجليل. هناك ترونه كما قال لكم '. فخرجنَ سريعاً من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "7 But go, tell His disciples--and Peter--that He is going before you into Galilee; there you will see Him, as He said to you. 8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid", 
   "7 Mais allez dire à ses disciples et à Pierre qu’il vous précède en Galilée : C’est là que vous le verrez, comme il vous l’a dit.8 Elles sortirent du tombeau et s’enfuirent tremblantes et hors d’elles–mêmes mais elles ne dirent rien à personne à cause de leur effroi.", 
   ],
@@ -4225,7 +4225,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فجاءت مريم المجدلية واخبرت التلاميذ انها رات الرب وانه قال لها هذا . ) والمجد للـه دائماً )", 
+  "فجاءت مريم المجدلية واخبرت التلاميذ انها رات الرب وانه قال لها هذا . ", 
   "18 Mary Magdalene came and told the disciples that she had seen the Lord, and that He had spoken these things to her.", 
   "18 Marie–Madeleine vint annoncer aux disciples qu’elle avait vu le Seigneur, et qu’il lui avait dit ces choses.", 
   ],
@@ -4277,7 +4277,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنكَ كُنتَ أميناً فى القليلِ، فليكُنْ لكَ سُلطانٌ على عشرِ مُدنٍ. ثُمَّ جاءَ الثاني قائلاً: يا سيِّدي، إنَّ مَنَاكَ قد رَبِحَ خمسةَ أَمْنَاءٍ. فقالَ لهذا أيضاً: وكُنْ أنتَ على خمسِ مُدنٍ. ( والمجد للـه دائماً(", 
+  "لأنكَ كُنتَ أميناً فى القليلِ، فليكُنْ لكَ سُلطانٌ على عشرِ مُدنٍ. ثُمَّ جاءَ الثاني قائلاً: يا سيِّدي، إنَّ مَنَاكَ قد رَبِحَ خمسةَ أَمْنَاءٍ. فقالَ لهذا أيضاً: وكُنْ أنتَ على خمسِ مُدنٍ. ", 
   "puisque tu as été fidèle dans une toute petite affaire, reçois autorité sur dix villes.'18 Le second vint et dit: 'Ta mine, Seigneur, a produit cinq mines'. 19 Il dit de même à celui-là: 'Toi, sois à la tête de cinq villes.'", 
   "because you were faithful in a very little, have authority over ten cities.'18 And the second came, saying, `Master, your mina has earned five minas.' 19 Likewise he said to him, `You also be over five cities.‘", 
   ],
@@ -4323,7 +4323,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنه جاء يوحنَّا لا يأكُل خُبزاً ولا يشرب خمراً، فقالوا: إن فيه شيطانٌ. جاء ابن الإنسان يأكل ويشرب، فقالوا: هوذا إنسانٌ أَكُولٌ وشِرِّيبُ خمرٍ، مُحبٌّ للعشَّارين والخطاةِ. والحكمة تبرَّرت من جميع بنيها '. ( والمجد للـه دائماً )", 
+  "لأنه جاء يوحنَّا لا يأكُل خُبزاً ولا يشرب خمراً، فقالوا: إن فيه شيطانٌ. جاء ابن الإنسان يأكل ويشرب، فقالوا: هوذا إنسانٌ أَكُولٌ وشِرِّيبُ خمرٍ، مُحبٌّ للعشَّارين والخطاةِ. والحكمة تبرَّرت من جميع بنيها '. ", 
   "18 En effet, Jean est venu, il ne mange ni ne boit, et l'on dit: 'Il a perdu la tête.19 Le Fils de l'homme est venu, il mange, il boit, et l'on dit: 'Voilà un glouton et un ivrogne, un ami des collecteurs d'impôts et des pécheurs.' Mais la Sagesse a été reconnue juste d'après ses oeuvres.", 
   "18 For John came neither eating nor drinking, and they say, `He has a demon.' 19 The Son of Man came eating and drinking, and they say, `Look, a glutton and a winebibber, a friend of tax collectors and sinners!' But wisdom is justified by her children.", 
   ],
@@ -4375,7 +4375,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لم تكن لهم خطية. واما الآن فقد رأوا وابغضوني انا وابي. لكن لكي تتم الكلمة المكتوبة في ناموسهم انهم ابغضوني بلا سبب ( والمجد للـه دائماً )", 
+  "لم تكن لهم خطية. واما الآن فقد رأوا وابغضوني انا وابي. لكن لكي تتم الكلمة المكتوبة في ناموسهم انهم ابغضوني بلا سبب ", 
   "ils n'auraient pas de péché; mais à présent qu'ils les ont vues, ils continuent à nous haïr et moi et mon Père; 25 mais c'est pour que s'accomplisse la Parole qui est écrite dans leur Loi: Ils m'ont haï sans raison.", 
   "they would have no sin; but now they have seen and also hated both Me and My Father. 25 But this happened that the word might be fulfilled which is written in their law, 'They hated Me without a cause.", 
   ],
@@ -4439,7 +4439,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ( والمجد للـه دائماً )", 
+  "افرحوا في ذلك اليوم وتهللوا.فهوذا اجركم عظيم في السماء.لان آباءهم هكذا كانوا يفعلون بالانبياء. ", 
   "23 Réjouissez-vous ce jour-là et bondissez de joie, car voici, votre récompense est grande dans le ciel; c'est en effet de la même manière que leurs pères traitaient les prophètes.", 
   "23 Rejoice in that day and leap for joy! For indeed your reward is great in heaven, for in like manner their fathers did to the prophets.", 
   ],
@@ -4515,7 +4515,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين. ( والمجد للـه دائماً )", 
+  "وعلِّموهم أن يحفظوا جميع الأُمور التي أوصيتكم بها. وها أنا معكُم كلَّ الأيَّام إلى انقضاء الدَّهر '. آمين. ", 
   "20 et enseignez leur à garder tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu’à la fin du monde.", 
   "20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age. Amen.", 
   ],
@@ -4561,7 +4561,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.( والمجد للـه دائماً )", 
+  "فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "8 Elles sortirent du tombeau et s’enfuirent tremblantes et hors d’elles–mêmes mais elles ne dirent rien à personne à cause de leur effroi.", 
   "8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid.", 
   ],
@@ -4619,7 +4619,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقامَ بُطرس وركضَ إلى القبرِ، وتطلعَ داخلاً ورأى الثيابَ وحدها فمضى إلى بيته مُتعجِّباً ممَّا كانَ. ( والمجد للـه دائماً ).", 
+  "فقامَ بُطرس وركضَ إلى القبرِ، وتطلعَ داخلاً ورأى الثيابَ وحدها فمضى إلى بيته مُتعجِّباً ممَّا كانَ. .", 
   "12 Mais Pierre se leva et courut au tombeau. En se baissant il ne vit que les bandelettes qui étaient à terre ; puis il s’en alla chez lui, dans l’étonnement de ce qui était arrivé.", 
   "12 But Peter arose and ran to the tomb; and stooping down, he saw the linen cloths lying by themselves; and he departed, marveling to himself at what had happened.", 
   ],
@@ -4695,7 +4695,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فجاءت مريم المجدليَّة، وأخبرت التَّلاميذ أنَّها رأت الربَّ، وأنَّه قال لها هذا.( والمجد للـه دائماً ).", 
+  "فجاءت مريم المجدليَّة، وأخبرت التَّلاميذ أنَّها رأت الربَّ، وأنَّه قال لها هذا..", 
   "18 Marie–Madeleine vint annoncer aux disciples qu’elle avait vu le Seigneur, et qu’il lui avait dit ces choses.", 
   "18 Mary Magdalene came and told the disciples that she had seen the Lord, and that He had spoken these things to her.", 
   ],
@@ -4741,7 +4741,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وخرج هذا الخبر عنه في كل اليهودية وفي جميع الكورة المحيطة ( والمجد للـه دائماً )", 
+  "وخرج هذا الخبر عنه في كل اليهودية وفي جميع الكورة المحيطة ", 
   "17 Et ce propos sur Jésus se répandit dans toute la Judée et dans toute la région.", 
   "17 And this report about Him went throughout all Judea and all the surrounding region.", 
   ],
@@ -4793,7 +4793,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ويأتون من المشارق والمغارب ومن الشمال والجنوب، ويَتَّكِئُونَ في ملكوت اللهِ. هوذا آخِرُونَ يكونون أوَّلين. وأوَّلون يكونون آخِرِينَ. ( والمجد للـه دائماً )", 
+  "ويأتون من المشارق والمغارب ومن الشمال والجنوب، ويَتَّكِئُونَ في ملكوت اللهِ. هوذا آخِرُونَ يكونون أوَّلين. وأوَّلون يكونون آخِرِينَ. ", 
   "29 Alors il en viendra du levant et du couchant, du nord et du midi, pour prendre place au festin dans le Royaume de Dieu. 30 Et ainsi, il y a des derniers qui seront premiers et il y a des premiers qui seront derniers.", 
   "29 They will come from the east and the west, from the north and the south, and sit down in the kingdom of God. 30 And indeed there are last who will be first, and there are first who will be last. 29 They will come from the east and the west, from the north and the south, and sit down in the kingdom of God. 30 And indeed there are last who will be first, and there are first who will be last.", 
   ],
@@ -4885,7 +4885,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.( والمجد للـه دائماً )", 
+  "فخرجنَ سريعاً وهربنَ من القبر، لأنَّ الرِّعدة والحيرة أخذتاهنَّ. ولم يَقلنَ لأحدٍ شيئاً، لأنَّهُنَّ كُنَّ خائفاتٍ.", 
   "8 Elles sortirent du tombeau et s’enfuirent tremblantes et hors d’elles–mêmes mais elles ne dirent rien à personne à cause de leur effroi.", 
   "8 So they went out quickly and fled from the tomb, for they trembled and were amazed. And they said nothing to anyone, for they were afraid.", 
   ],
@@ -4943,7 +4943,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقامَ بُطرس وركضَ إلى القبرِ، وتطلعَ داخلاً ورأى الثيابَ وحدها فمضى إلى بيته مُتعجِّباً ممَّا كانَ. ( والمجد للـه دائماً ).", 
+  "فقامَ بُطرس وركضَ إلى القبرِ، وتطلعَ داخلاً ورأى الثيابَ وحدها فمضى إلى بيته مُتعجِّباً ممَّا كانَ. .", 
   "12 Mais Pierre se leva et courut au tombeau. En se baissant il ne vit que les bandelettes qui étaient à terre ; puis il s’en alla chez lui, dans l’étonnement de ce qui était arrivé.", 
   "12 But Peter arose and ran to the tomb; and stooping down, he saw the linen cloths lying by themselves; and he departed, marvelling to himself at what had happened.", 
   ],
@@ -5019,7 +5019,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فجاءت مريم المجدليَّة، وأخبرت التَّلاميذ أنَّها رأت الربَّ، وأنَّه قال لها هذا.( والمجد للـه دائماً ).", 
+  "فجاءت مريم المجدليَّة، وأخبرت التَّلاميذ أنَّها رأت الربَّ، وأنَّه قال لها هذا..", 
   "18 Marie–Madeleine vint annoncer aux disciples qu’elle avait vu le Seigneur, et qu’il lui avait dit ces choses.", 
   "18 Mary Magdalene came and told the disciples that she had seen the Lord, and that He had spoken these things to her.", 
   ],
@@ -5071,7 +5071,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وفيما هم نازلون من الجبل اوصاهم يسوع قائلا لا تعلموا احدا بما رأيتم حتى يقوم ابن الانسان من الاموات. ( والمجد للـه دائماً )", 
+  "وفيما هم نازلون من الجبل اوصاهم يسوع قائلا لا تعلموا احدا بما رأيتم حتى يقوم ابن الانسان من الاموات. ", 
   "9 Comme ils descendaient de la montagne, Jésus leur donna cet ordre: 'Ne dites mot à personne de ce qui s'est fait voir de vous, jusqu'à ce que le Fils de l'homme soit ressuscité des morts.", 
   "9 Now as they came down from the mountain, Jesus commanded them, saying, Tell the vision to no one until the Son of Man is risen from the dead.", 
   ],
@@ -5111,7 +5111,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فللوقتِ تَرَكا السَّفِينَةَ وأباهُما زَبدي وتَبِعَاهُ. ( والمجد للـه دائماً )", 
+  "فللوقتِ تَرَكا السَّفِينَةَ وأباهُما زَبدي وتَبِعَاهُ. ", 
   "22 Laissant aussitôt leur barque et leur père, ils le suivirent.", 
   "22 and immediately they left the boat and their father, and followed Him", 
   ],
@@ -5163,7 +5163,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثُمَّ جاءَ الثاني قائلاً: يا سيِّدي، إنَّ مَنَاكَ قد رَبِحَ خمسةَ أَمْنَاءٍ. فقالَ لهذا أيضاً: وكُنْ أنتَ على خمسِ مُدنٍ. ( والمجد للـه دائماً )", 
+  "ثُمَّ جاءَ الثاني قائلاً: يا سيِّدي، إنَّ مَنَاكَ قد رَبِحَ خمسةَ أَمْنَاءٍ. فقالَ لهذا أيضاً: وكُنْ أنتَ على خمسِ مُدنٍ. ", 
   "18 Le second vint et dit: 'Ta mine, Seigneur, a produit cinq mines'. Il dit de même à celui-là: 'Toi, sois à la tête de cinq villes. 18 Le second vint et dit: 'Ta mine, Seigneur, a produit cinq mines'. Il dit de même à celui-là: 'Toi, sois à la tête de cinq villes.", 
   "18 And the second came, saying, `Master, your mina has earned five minas.' 19 Likewise he said to him, `You also be over five cities.", 
   ],
@@ -5209,7 +5209,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ان كان احد يخدمني فليتبعني.وحيث اكون انا هناك ايضا يكون خادمي.وان كان احد يخدمني يكرمه الآب. ( والمجد للـه دائماً(", 
+  "ان كان احد يخدمني فليتبعني.وحيث اكون انا هناك ايضا يكون خادمي.وان كان احد يخدمني يكرمه الآب. ", 
   "26 Si quelqu'un veut me servir, qu'il se mette à ma suite, et là où je suis, là aussi sera mon serviteur. Si quelqu'un me sert, le Père l'honorera.", 
   "26 If anyone serves Me, let him follow Me; and where I am, there My servant will be also. If anyone serves Me, him My Father will honor.", 
   ],
@@ -5273,7 +5273,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقالَ لهُ: إن كانُوا لا يسمعُونَ من مُوسَى والأنبياءِ، ولا إن قامَ واحِدُ مِنَ الأموَاتِ يُصَدِّقُونَ '. ( والمجد للـه دائماً )", 
+  "فقالَ لهُ: إن كانُوا لا يسمعُونَ من مُوسَى والأنبياءِ، ولا إن قامَ واحِدُ مِنَ الأموَاتِ يُصَدِّقُونَ '. ", 
   "31 Abraham lui dit: 'S'ils n'écoutent pas Moïse, ni les prophètes, même si quelqu'un ressuscite des morts, ils ne seront pas convaincus.", 
   "31 But he said to him, `If they do not hear Moses and the prophets, neither will they be persuaded though one rise from the dead.'", 
   ],
@@ -5319,7 +5319,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأن مِنَ القلبِ تَخرُجُ أفكَارٌ شِرِّيرَةٌ: القتلُ الزنى الفسقُ السرقة الشهادات الزور التجاديف هذه هيَ التي تُنَجِّسُ الإنسانَ. وأمَّا الأكلُ بأيـدٍ غير مغسُولةٍ فَلا تُنَجِّسُ الإنسانَ '.( والمجد للـه دائماً )", 
+  "لأن مِنَ القلبِ تَخرُجُ أفكَارٌ شِرِّيرَةٌ: القتلُ الزنى الفسقُ السرقة الشهادات الزور التجاديف هذه هيَ التي تُنَجِّسُ الإنسانَ. وأمَّا الأكلُ بأيـدٍ غير مغسُولةٍ فَلا تُنَجِّسُ الإنسانَ '.", 
   "19 Du coeur en effet proviennent intentions mauvaises, meurtres, adultères, inconduites, vols, faux témoignages, injures. 20 C'est là ce qui rend l'homme impur; mais manger sans s'être lavé les mains ne rend pas l'homme impur. 19 Du coeur en effet proviennent intentions mauvaises, meurtres, adultères, inconduites, vols, faux témoignages, injures. 20 C'est là ce qui rend l'homme impur; mais manger sans s'être lavé les mains ne rend pas l'homme impur.", 
   "19 For out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, blasphemies. 20 These are the things which defile a man, but to eat with unwashed hands does not defile a man.", 
   ],
@@ -5359,7 +5359,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأرادَ أن يَقتلهُ فخافَ من الجمع، لأنَّهُ كانَ عندهُم مثلَ نبيٍّ. ( والمجد للـه دائماً )", 
+  "وأرادَ أن يَقتلهُ فخافَ من الجمع، لأنَّهُ كانَ عندهُم مثلَ نبيٍّ. ", 
   "5 Bien qu'il voulût le faire mourir, Hérode eut peur de la foule qui tenait Jean pour un prophète. 5 Bien qu'il voulût le faire mourir, Hérode eut peur de la foule qui tenait Jean pour un prophète.", 
   "5 And although he wanted to put him to death, he feared the multitude, because they counted him as a prophet.", 
   ],
@@ -5417,7 +5417,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة.لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا. ( والمجد للـه دائماً )", 
+  "ومن ملئه نحن جميعا اخذنا.ونعمة فوق نعمة.لان الناموس بموسى اعطي.اما النعمة والحق فبيسوع المسيح صارا. ", 
   "16 il était.' De sa plénitude en effet, tous, nous avons reçu, et grâce sur grâce. 17 Si la Loi fut donnée par Moïse, la grâce et la vérité sont venues par Jésus Christ.", 
   "16 And of His fullness we have all received, and grace for grace. 17 For the law was given through Moses, but grace and truth came through Jesus Christ.", 
   ],
@@ -5469,7 +5469,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومَضَى إلى بَيتهِ وهو يُمَجِّد اللـه. فاعترى الجميعَ حَيرةٌ ومَجَّدوا اللـه، وامتلأُوا خوفاً قائلينَ: ' إنَّنا قد رأينا اليومَ عجائبَ! '. ( والمجد للـه دائماً )", 
+  "ومَضَى إلى بَيتهِ وهو يُمَجِّد اللـه. فاعترى الجميعَ حَيرةٌ ومَجَّدوا اللـه، وامتلأُوا خوفاً قائلينَ: ' إنَّنا قد رأينا اليومَ عجائبَ! '. ", 
   "et il partit pour sa maison en rendant gloire à Dieu. 26 La stupeur les saisit tous et ils rendaient gloire à Dieu; remplis de crainte, ils disaient:' Nous avons vu aujourd'hui des choses extraordinaires.", 
   "and departed to his own house, glorifying God. 26 And they were all amazed, and they glorified God and were filled with fear, saying, We have seen strange things today!.", 
   ],
@@ -5527,7 +5527,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "واقول لكم ايضا ان اتفق اثنان منكم على الارض في اي شيء يطلبانه فانه يكون لهما من قبل ابي الذي في السموات.لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم.( والمجد للـه دائماً )", 
+  "واقول لكم ايضا ان اتفق اثنان منكم على الارض في اي شيء يطلبانه فانه يكون لهما من قبل ابي الذي في السموات.لانه حيثما اجتمع اثنان او ثلاثة باسمي فهناك اكون في وسطهم.", 
   "19 En vérité je vous dis encore que si deux d’entre vous s’accordent sur la terre pour demander quoi que ce soit, cela leur sera donné par mon Père qui est dans les cieux. 20 Car là où deux ou trois sont assemblés en mon nom, je suis au milieu d’eux.", 
   "19 Again I say to you that if two of you agree on earth concerning anything that they ask, it will be done for them by My Father in heaven. 20 For where two or three are gathered together in My name, I am there in the midst of them.", 
   ],
@@ -5561,7 +5561,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اِسهروا إذاً فانَّكم لا تعرفون متى يأتي ربُّ البيتِ، أمساءً، أم نصف اللَّيل، أم صياح الدِّيك، أم صباحاً. لئلاَّ يأتي بغتةً فيجدكم نياماً! وما أقوله لكم أقوله للجميع: اسهَرُوا. ( والمجد للـه دائماً )", 
+  "اِسهروا إذاً فانَّكم لا تعرفون متى يأتي ربُّ البيتِ، أمساءً، أم نصف اللَّيل، أم صياح الدِّيك، أم صباحاً. لئلاَّ يأتي بغتةً فيجدكم نياماً! وما أقوله لكم أقوله للجميع: اسهَرُوا. ", 
   "35 Veillez donc, car vous ne savez pas quand le maître de la maison va venir, le soir ou au milieu de la nuit, au chant du coq ou le matin, 36 de peur qu'il n'arrive à l'improviste et ne vous trouve en train de dormir. 37 Ce que je vous dis, je le dis à tous: veillez.", 
   "35 Watch therefore, for you do not know when the master of the house is coming--in the evening, at midnight, at the crowing of the rooster, or in the morning-- 36 lest, coming suddenly, he find you sleeping. 37 And what I say to you, I say to all: Watch!.", 
   ],
@@ -5613,7 +5613,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اما هو فجاز في وسطهم ومضى ( والمجد للـه دائماً )", 
+  "اما هو فجاز في وسطهم ومضى ", 
   "30 Mais lui, passant au milieu d'eux, alla son chemin.", 
   "30 Then passing through the midst of them, He went His way.", 
   ],
@@ -5673,7 +5673,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهُم: ' إن هذا الجنسُ لا يُمكنُ أن يَخرُج إلاَّ بالصَّلاةِ والصَّوم. فقال لهُم: ' إن هذا الجنسُ لا يُمكنُ أن يَخرُج إلاَّ بالصَّلاةِ والصَّوم. ( والمجد للـه دائماً )", 
+  "فقال لهُم: ' إن هذا الجنسُ لا يُمكنُ أن يَخرُج إلاَّ بالصَّلاةِ والصَّوم. فقال لهُم: ' إن هذا الجنسُ لا يُمكنُ أن يَخرُج إلاَّ بالصَّلاةِ والصَّوم. ", 
   "29 Il leur dit: 'Ce genre d'esprit, rien ne peut le faire sortir, que la prière et le jeûne.'", 
   "29 So He said to them, This kind can come out by nothing but prayer and fasting.", 
   ],
@@ -5725,7 +5725,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأن هذه جميعها تَطلُبها أُمم العالم. وأمَّا أنتم فأبوكم يَعلَمُ أنَّكم تحتاجونَ إلى هذه لكن اطلبوا ملكوته، وهذه كلها ستُزادُ لكُم. ( والمجد للـه دائماً )", 
+  "لأن هذه جميعها تَطلُبها أُمم العالم. وأمَّا أنتم فأبوكم يَعلَمُ أنَّكم تحتاجونَ إلى هذه لكن اطلبوا ملكوته، وهذه كلها ستُزادُ لكُم. ", 
   "30 Tout cela, les païens de ce monde le recherchent sans répit, mais vous, votre Père sait que vous en avez besoin. Cherchez plutôt son Royaume, et cela vous sera donné par surcroît.", 
   "30 For all these things the nations of the world seek after, and your Father knows that you need these things. 31 But seek the kingdom of God, and all these things shall be added to you.", 
   ],
@@ -5905,7 +5905,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حينئذٍ فهمُوا أنهُ لم يوصهم أنْ يَتَحذَّروا مِنْ خمير الخُبز، بل من تعليم الفرِّيسيِّين والصَّدُّوقيِّين. ( والمجد للـه دائماً )", 
+  "حينئذٍ فهمُوا أنهُ لم يوصهم أنْ يَتَحذَّروا مِنْ خمير الخُبز، بل من تعليم الفرِّيسيِّين والصَّدُّوقيِّين. ", 
   "12 Alors ils comprirent qu'il n'avait pas dit de se garder du levain des pains, mais de l'enseignement des Pharisiens et des Sadducéens.", 
   "12 Then they understood that He did not tell them to beware of the leaven of bread, but of the doctrine of the Pharisees and Sadducees.", 
   ],
@@ -5951,7 +5951,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كُلَّ واحدٍ يُملَّحُ بالنَار، وكُلَّ ذبيحةٍ تُملَّحُ بالملح. المِلحُ جَيِّدٌ. فإذا صارَ المِلحُ بلاَ مُلُوحةٍ، فبماذا يُملح فليكُن فيكُم مِلحٌ، وليسالم بعضُكُم بعضاً. ( والمجد للـه دائماً )", 
+  "لأنَّ كُلَّ واحدٍ يُملَّحُ بالنَار، وكُلَّ ذبيحةٍ تُملَّحُ بالملح. المِلحُ جَيِّدٌ. فإذا صارَ المِلحُ بلاَ مُلُوحةٍ، فبماذا يُملح فليكُن فيكُم مِلحٌ، وليسالم بعضُكُم بعضاً. ", 
   "49 Car tout homme sera salé de feu.50 Le sel est une bonne chose ; mais si le sel perd sa saveur, avec quoi l’assaisonnerez–vous ? (9–51) Ayez du sel en vous–mêmes, et soyez en paix les uns avec les autres.", 
   "49 For everyone will be seasoned with fire, and every sacrifice will be seasoned with salt. 50 Salt is good, but if the salt loses its flavor, how will you season it? Have salt in yourselves, and have peace with one another.", 
   ],
@@ -6027,7 +6027,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لكن أعدائي، أُولئِكَ الذين لم يُريدُوا أن أملِكَ عَليهِم، إيتوني بهم ههنا واذبَحُوهُم أمامي '. ولمَّا قالَ هذا تَقدَّم صاعداً إلى أُورشليم. ( والمجد للـه دائماً )", 
+  "لكن أعدائي، أُولئِكَ الذين لم يُريدُوا أن أملِكَ عَليهِم، إيتوني بهم ههنا واذبَحُوهُم أمامي '. ولمَّا قالَ هذا تَقدَّم صاعداً إلى أُورشليم. ", 
   "27 Quant à mes ennemis, ces gens qui ne voulaient pas que je règne sur eux, amenez-les ici, et égorgez-les devant moi.' Sur ces mots, Jésus partit en avant pour monter à Jérusalem.", 
   "27 But bring here those enemies of mine, who did not want me to reign over them, and slay them before me.' 28 When He had said this, He went on ahead, going up to Jerusalem.", 
   ],
@@ -6067,7 +6067,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فأعطهِ في الطَّريق ما تتخلَّص به مِنهُ، لئلاَّ يَجُرَّكَ إلى الحاكم، فيُسلِّمكَ الحاكم إلى الشرطي، والشرطي يُلقيكَ في السِّجن. أقولُ لكَ: إنك لا تخرجُ مِن هُناك حتَّى تُوفي الفلسَ الأخير'. ( والمجد للـه دائماً )", 
+  "فأعطهِ في الطَّريق ما تتخلَّص به مِنهُ، لئلاَّ يَجُرَّكَ إلى الحاكم، فيُسلِّمكَ الحاكم إلى الشرطي، والشرطي يُلقيكَ في السِّجن. أقولُ لكَ: إنك لا تخرجُ مِن هُناك حتَّى تُوفي الفلسَ الأخير'. ", 
   "tâche de te dégager de lui en chemin, de peur qu'il ne te traîne devant le juge, que le juge ne te livre au garde et que le garde ne te jette en prison. 59 Je te le déclare: 'Tu n'en sortiras pas tant que tu n'auras pas payé jusqu'au dernier centime.'", 
   "make every effort along the way to settle with him, lest he drag you to the judge, the judge deliver you to the officer, and the officer throw you into prison. 59 I tell you, you shall not depart from there till you have paid the very last mite.", 
   ],
@@ -6141,7 +6141,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاسهروا إذاً لأنَّكُمْ لا تَعلمونَ متى يأتِي رَبُّ البيتِ، أمساءً، أم نِصفَ اللَّيلِ، أم عند صِياحَ الدِّيكِ، أمْ صَباحاً. لِئلاَّ يأتِي بَغْتَةً فيَجِدكُمْ نِيَاماً! ومَا أقولُهُ لَكُمْ أقولُهُ للجميع: اِسهَرُوا '.) والمجد للـه دائماً)", 
+  "فاسهروا إذاً لأنَّكُمْ لا تَعلمونَ متى يأتِي رَبُّ البيتِ، أمساءً، أم نِصفَ اللَّيلِ، أم عند صِياحَ الدِّيكِ، أمْ صَباحاً. لِئلاَّ يأتِي بَغْتَةً فيَجِدكُمْ نِيَاماً! ومَا أقولُهُ لَكُمْ أقولُهُ للجميع: اِسهَرُوا '.", 
   "35 Watch therefore, for you do not know when the master of the house is coming--in the evening, at midnight, at the crowing of the rooster, or in the morning-- 36 lest, coming suddenly, he find you sleeping. 37 And what I say to you, I say to all: Watch!.", 
   "Veillez donc, car vous ne savez pas quand le maître de la maison va venir, le soir ou au milieu de la nuit, au chant du coq ou le matin, de peur qu'il n'arrive à l'improviste et ne vous trouve en train de dormir. Ce que je vous dis, je le dis à tous: veillez.'", 
   ],
@@ -6187,7 +6187,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فهل لذلِكَ العَبدِ فَضُلٌ لأنَّهُ فَعلَ ما أُمِرَ بِهِ؟ لا أظُنُّ. وكَذلِكَ أنتُمْ أيضاً، متى فَعلتُم جميع ما أُمِرْتُمْ بِهِ فقولوا: إنَّنا عبيدٌ بَطَّالونَ، إنما فعلنا ما كان يجب علينا فعله '.( والمجد للـه دائماً )", 
+  "فهل لذلِكَ العَبدِ فَضُلٌ لأنَّهُ فَعلَ ما أُمِرَ بِهِ؟ لا أظُنُّ. وكَذلِكَ أنتُمْ أيضاً، متى فَعلتُم جميع ما أُمِرْتُمْ بِهِ فقولوا: إنَّنا عبيدٌ بَطَّالونَ، إنما فعلنا ما كان يجب علينا فعله '.", 
   "9 et après tu mangeras et tu boiras à ton tour'? A-t-il de la reconnaissance envers ce serviteur parce qu'il a fait ce qui lui était ordonné?10 De même, vous aussi, quand vous avez fait tout ce qui vous était ordonné, dites: 'Nous sommes des serviteurs quelconques. Nous avons fait seulement ce que nous devions faire", 
   "9 Does he thank that servant because he did the things that were commanded him? I think not. 10 So likewise you, when you have done all those things which you are commanded, say, `We are unprofitable servants. We have done what was our duty to do.", 
   ],
@@ -6291,7 +6291,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وأمَّا أنَّ الموتى يقومون، فموسى أيضاً قد أشار ( إلى ذلك ) في العُلَّيقةِ إذ يقول: إنَّ الرَّبُّ إلهُ إبراهيم وإلهُ اسحق وإلهُ يعقُوب. ليس هُو إلهَ أمواتٍ بل إلهُ أحياءٍ، لأنَّ الجميع يحيون لهُ '.( والمجد للـه دائماً )", 
+  "وأمَّا أنَّ الموتى يقومون، فموسى أيضاً قد أشار ( إلى ذلك ) في العُلَّيقةِ إذ يقول: إنَّ الرَّبُّ إلهُ إبراهيم وإلهُ اسحق وإلهُ يعقُوب. ليس هُو إلهَ أمواتٍ بل إلهُ أحياءٍ، لأنَّ الجميع يحيون لهُ '.", 
   "37 Et que les morts doivent ressusciter, Moïse lui-même l'a indiqué dans le récit du buisson ardent, quand il appelle le Seigneur le Dieu d'Abraham, le Dieu d'Isaac et le Dieu de Jacob. 38 Dieu n'est pas le Dieu des morts, mais des vivants, car tous sont vivants pour lui.", 
   "37 But even Moses showed in the burning bush passage that the dead are raised, when he called the Lord `the God of Abraham, the God of Isaac, and the God of Jacob.' 38 For He is not the God of the dead but of the living, for all live to Him.", 
   ],
@@ -6349,7 +6349,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أما هم فازدادوا دهشاً قائلين له: مَنْ يقدرُ أن يَخلُص؟ فنظر إليهم يسوع وقال: ' إنهُ عند النَّاس غيرُ مُستطاعٍ، ولكن ليس عند اللَّه، لأنَّ الكُلَّ مُستطاعٌ عند اللَّه '. ( والمجد للـه دائماً )", 
+  "أما هم فازدادوا دهشاً قائلين له: مَنْ يقدرُ أن يَخلُص؟ فنظر إليهم يسوع وقال: ' إنهُ عند النَّاس غيرُ مُستطاعٍ، ولكن ليس عند اللَّه، لأنَّ الكُلَّ مُستطاعٌ عند اللَّه '. ", 
   "26 Ils étaient de plus en plus impressionnés; ils se disaient entre eux: 'Alors qui peut être sauvé? 27 Fixant sur eux son regard, Jésus dit: 'Aux hommes, c'est impossible, mais pas à Dieu, car tout est possible à Dieu.", 
   "26 And they were greatly astonished, saying among themselves, Who then can be saved? 27 But Jesus looked at them and said, With men it is impossible, but not with God; for with God all things are possible.", 
   ],
@@ -6407,7 +6407,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلمَّا سمعَ هذا أحد المُتَّكئينَ قال: ' طُوبى لمَن يأكُل خُبزاً في ملكوتِ اللَّهِ '. ( والمجد للـه دائماً )", 
+  "فلمَّا سمعَ هذا أحد المُتَّكئينَ قال: ' طُوبى لمَن يأكُل خُبزاً في ملكوتِ اللَّهِ '. ", 
   "15 En entendant ces mots, un des convives dit à Jésus: 'Heureux qui prendra part au repas dans le Royaume de Dieu!'.", 
   "15 Now when one of those who sat at the table with Him heard these things, he said to Him, Blessed is he who shall eat bread in the kingdom of God!.", 
   ],
@@ -6453,7 +6453,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّه قد جاءَكُم يُوحنَّا في سبيل الحقِّ فَلم تُؤمنُوا بهِ، وأمَّا العشَّارُونَ والزُّناة فآمنُوا بهِ. وأنتُم إذ رأيتُم ( ذلك ) لم تَندمُوا أخيراً حتى تُؤمنُوا بهِ. ( والمجد للـه دائماً )", 
+  "لأنَّه قد جاءَكُم يُوحنَّا في سبيل الحقِّ فَلم تُؤمنُوا بهِ، وأمَّا العشَّارُونَ والزُّناة فآمنُوا بهِ. وأنتُم إذ رأيتُم ( ذلك ) لم تَندمُوا أخيراً حتى تُؤمنُوا بهِ. ", 
   "32 En effet, Jean est venu à vous dans le chemin de la justice, et vous ne l'avez pas cru; collecteurs d'impôts et prostituées, au contraire, l'ont cru. Et vous, voyant cela, vous ne vous êtes pas dans la suite davantage repentis pour le croire.'", 
   "32 For John came to you in the way of righteousness, and you did not believe him; but tax collectors and harlots believed him; and when you saw it, you did not afterward relent and believe him.", 
   ],
@@ -6591,7 +6591,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإنَّهُ بسُلطانٍ وقُوَّةٍ يأمُرُ الأرواحَ النَّجسةَ فتخرُجُ! '. وذاع صيته في كُلِّ مكان من الكورةِ المُحيطةِ. ( والمجد للـه دائماً )", 
+  "فإنَّهُ بسُلطانٍ وقُوَّةٍ يأمُرُ الأرواحَ النَّجسةَ فتخرُجُ! '. وذاع صيته في كُلِّ مكان من الكورةِ المُحيطةِ. ", 
   "'Qu'est-ce que cette parole! Il commande avec autorité et puissance aux esprits impurs, et ils sortent.' 37 Et son renom se propageait en tout lieu de la région.", 
   "For with authority and power He commands the unclean spirits, and they come out. 37 And the report about Him went out into every place in the surrounding region.", 
   ],
@@ -6655,7 +6655,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقالَ لهُ: إن كانُوا لا يسمعُونَ لمُوسَى والأنبياءِ، فإنَّهم ولا إن قامَ واحِدُ مِنَ الأموَاتِ يقتنعُون '. ( والمجد للـه دائماً )", 
+  "فقالَ لهُ: إن كانُوا لا يسمعُونَ لمُوسَى والأنبياءِ، فإنَّهم ولا إن قامَ واحِدُ مِنَ الأموَاتِ يقتنعُون '. ", 
   "31 Abraham lui dit: 'S'ils n'écoutent pas Moïse, ni les prophètes, même si quelqu'un ressuscite des morts, ils ne seront pas convaincus.'", 
   "31 But he said to him, `If they do not hear Moses and the prophets, neither will they be persuaded though one rise from the dead.'.", 
   ],
@@ -6707,7 +6707,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولما أكمل يسوع هذا الكلام كله بُهِتَ الجمع من تعليمه، لأنَّهُ كان يُعَلِّمُهُم كَمَن لهُ سُلطانٌ وليسَ ككتبتهم. ( والمجد للـه دائماً )", 
+  "ولما أكمل يسوع هذا الكلام كله بُهِتَ الجمع من تعليمه، لأنَّهُ كان يُعَلِّمُهُم كَمَن لهُ سُلطانٌ وليسَ ككتبتهم. ", 
   "28 Or, quand Jésus eut achevé ces instructions, les foules restèrent frappées de son enseignement; car il les enseignait en homme qui a autorité et non pas comme leurs scribes.", 
   "28 And so it was, when Jesus had ended these sayings, that the people were astonished at His teaching, 29 for He taught them as one having authority, and not as the scribes.", 
   ],
@@ -6747,7 +6747,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال اللَّه لهُ: يا جاهل! في هذه الليلة تُنزع نفسُك مِنك، فهذه التي أعددتها لمَن تكُون؟ هذا كمن يدخر لنفسهِ وليس هُو غني للَّهِ. ( والمجد للـه دائماً )", 
+  "فقال اللَّه لهُ: يا جاهل! في هذه الليلة تُنزع نفسُك مِنك، فهذه التي أعددتها لمَن تكُون؟ هذا كمن يدخر لنفسهِ وليس هُو غني للَّهِ. ", 
   "20 Mais Dieu lui dit: 'Insensé, cette nuit même on te redemande ta vie, et ce que tu as préparé, qui donc l'aura?' 21 Voilà ce qui arrive à celui qui amasse un trésor pour lui-même au lieu de s'enrichir auprès de Dieu.'", 
   "20 But God said to him, `Fool! This night your soul will be required of you; then whose will those things be which you have provided?' 21 So is he who lays up treasure for himself, and is not rich toward God.", 
   ],
@@ -6805,7 +6805,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فصاح أبو الصبي لوقته بدُمُوع وقال: ' أُؤمنُ ياربُّ فأعن عدم إيماني '.( والمجد للـه دائماً )", 
+  "فصاح أبو الصبي لوقته بدُمُوع وقال: ' أُؤمنُ ياربُّ فأعن عدم إيماني '.", 
   "24 Aussitôt le père de l’enfant s’écria : Je crois ! viens au secours de mon incrédulité !", 
   "24 Immediately the father of the child cried out and said with tears, Lord, I believe; help my unbelief!.", 
   ],
@@ -6955,7 +6955,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلمَّا رآهُ يسوعُ قد أجاب بعقل، قال لهُ: ' لست بعيداً مِن ملكُوت اللَّهِ '. ولم يجسُر أحدٌ أن يسألهُ بعد. ( والمجد للـه دائماً )", 
+  "فلمَّا رآهُ يسوعُ قد أجاب بعقل، قال لهُ: ' لست بعيداً مِن ملكُوت اللَّهِ '. ولم يجسُر أحدٌ أن يسألهُ بعد. ", 
   "34 Jésus, voyant qu’il avait répondu avec intelligence, lui dit : Tu n’es pas loin du royaume de Dieu. Et personne n’osa plus lui poser de questions.", 
   "34 Now when Jesus saw that he answered wisely, He said to him, You are not far from the kingdom of God. But after that no one dared question Him.", 
   ],
@@ -7007,7 +7007,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإذا وجدتهُ دعت صديقاتها وجاراتها الصَّديقات قائلةً: افرحن معي فإنِّى قد وجدتُ درهمي الضائع. هكذا أقُولُ لكُم: إنَّهُ يكُون فرحٌ قُدَّام ملائكةِ اللَّه بخاطئٍ واحدٍ يتوبُ. ( والمجد للـه دائماً )", 
+  "فإذا وجدتهُ دعت صديقاتها وجاراتها الصَّديقات قائلةً: افرحن معي فإنِّى قد وجدتُ درهمي الضائع. هكذا أقُولُ لكُم: إنَّهُ يكُون فرحٌ قُدَّام ملائكةِ اللَّه بخاطئٍ واحدٍ يتوبُ. ", 
   "9 Et quand elle l'a retrouvée, elle réunit ses amies et ses voisines, et leur dit: 'Réjouissez-vous avec moi, car je l'ai retrouvée, la pièce que j'avais perdue!' 10 C'est ainsi, je vous le déclare, qu'il y a de la joie chez les anges de Dieu pour un seul pécheur qui se convertit.", 
   "9 And when she has found it, she calls her friends and neighbors together, saying, `Rejoice with me, for I have found the piece which I lost!' 10 Likewise, I say to you, there is joy in the presence of the angels of God over one sinner who repents.", 
   ],
@@ -7071,7 +7071,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فطلبوا ان يمسكوه ولكنهم خافوا من الجمع.لانهم عرفوا انه قال المثل عليهم.فتركوه ومضوا ( والمجد للـه دائماً )", 
+  "فطلبوا ان يمسكوه ولكنهم خافوا من الجمع.لانهم عرفوا انه قال المثل عليهم.فتركوه ومضوا ", 
   "12 Ils cherchaient à se saisir de lui, mais ils craignaient la foule. Ils avaient compris que c’était pour eux que Jésus avait dit cette parabole. Ils le quittèrent et s’en allèrent.", 
   "12 And they sought to lay hands on Him, but feared the multitude, for they knew He had spoken the parable against them. So they left Him and went away.", 
   ],
@@ -7129,7 +7129,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقامُوا فأخرجُوهُ خارج المدينةِ، ومضوا بهِ إلى أعلى الجبل الذي كانت مَدينتُهُم مبنيةً عليهِ ليطرحوهُ إلى أسفل. أمَّا هو فجازَ في وسطهم ومضَى. ( والمجد للـه دائماً )", 
+  "وقامُوا فأخرجُوهُ خارج المدينةِ، ومضوا بهِ إلى أعلى الجبل الذي كانت مَدينتُهُم مبنيةً عليهِ ليطرحوهُ إلى أسفل. أمَّا هو فجازَ في وسطهم ومضَى. ", 
   "29 Ils se levèrent, le poussèrent hors de la ville et le menèrent jusqu’à un escarpement de la montagne sur laquelle leur ville était bâtie afin de le précipiter en bas. 30 Mais lui, passant au milieu d’eux, s’en alla.", 
   "29 and rose up and thrust Him out of the city; and they led Him to the brow of the hill on which their city was built, that they might throw Him down over the cliff. 30 Then passing through the midst of them, He went His way.", 
   ],
@@ -7187,7 +7187,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "او اجعلوا الشجرة رديّة وثمرها رديّا.لان من الثمر تعرف الشجرة. يا اولاد الافاعي كيف تقدرون ان تتكلموا بالصالحات وانتم اشرار.فانه من فضلة القلب يتكلم الفم. ( والمجد للـه دائماً )", 
+  "او اجعلوا الشجرة رديّة وثمرها رديّا.لان من الثمر تعرف الشجرة. يا اولاد الافاعي كيف تقدرون ان تتكلموا بالصالحات وانتم اشرار.فانه من فضلة القلب يتكلم الفم. ", 
   "ou dites que l’arbre est mauvais et que son fruit est mauvais, car on connaît l’arbre à son fruit. 34 Races de vipères, comment pourriez–vous dire de bonnes choses, mauvais comme vous l’êtes ? Car c’est de l’abondance du coeur que la bouche parle.", 
   "or else make the tree bad and its fruit bad; for a tree is known by its fruit. 34 Brood of vipers! How can you, being evil, speak good things? For out of the abundance of the heart the mouth speaks.", 
   ],
@@ -7245,7 +7245,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلمَّا أتمَ إبليس كُلَّ تَجربةٍ انصرف عنه إلى حينٍ. ( والمجد للـه دائماً )", 
+  "فلمَّا أتمَ إبليس كُلَّ تَجربةٍ انصرف عنه إلى حينٍ. ", 
   "13 Ayant alors épuisé toute tentation possible, le diable s'écarta de lui jusqu'au moment fixé.", 
   "13 Now when the devil had ended every temptation, he departed from Him until an opportune time.", 
   ],
@@ -7443,7 +7443,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لأنَّ كُلَّ مَن يعملُ الشرَّ يُبغِضُ النُّورَ، ولا يقبل إلى النُّورِ، لئلاَّ تبكت أعمالُهُ. لأنَّها شرِّيرةٌ. وأمَّا مَنْ يعملُ الحقَّ فيُقبِلُ إلى النُّورِ، لكي تظهرَ أعمالُهُ أنَّها باللَّهِ معمولةٌ '.( والمجد للـه دائماً )", 
+  "لأنَّ كُلَّ مَن يعملُ الشرَّ يُبغِضُ النُّورَ، ولا يقبل إلى النُّورِ، لئلاَّ تبكت أعمالُهُ. لأنَّها شرِّيرةٌ. وأمَّا مَنْ يعملُ الحقَّ فيُقبِلُ إلى النُّورِ، لكي تظهرَ أعمالُهُ أنَّها باللَّهِ معمولةٌ '.", 
   "20 Car quiconque fait le mal a de la haine pour la lumière et ne vient pas à la lumière, de peur que ses oeuvres ne soient réprouvées ;21 mais celui qui pratique la vérité vient à la lumière, afin qu’il soit manifeste que ses oeuvres sont faites en Dieu.", 
   "20 For everyone practicing evil hates the light and does not come to the light, lest his deeds should be exposed. 21 But he who does the truth comes to the light, that his deeds may be clearly seen, that they have been done in God.", 
   ],
@@ -7483,7 +7483,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فإذا وجدتهُ دعت صديقاتها وجاراتها الصَّديقات قائلةً: افرحن معي فإنِّى قد وجدتُ درهمي الضائع. هكذا أقُولُ لكُم: إنَّهُ يكُون فرحٌ قُدَّام ملائكةِ اللَّه بخاطئٍ واحدٍ يتوبُ. ( والمجد للـه دائماً )", 
+  "فإذا وجدتهُ دعت صديقاتها وجاراتها الصَّديقات قائلةً: افرحن معي فإنِّى قد وجدتُ درهمي الضائع. هكذا أقُولُ لكُم: إنَّهُ يكُون فرحٌ قُدَّام ملائكةِ اللَّه بخاطئٍ واحدٍ يتوبُ. ", 
   "9 Et quand elle l'a retrouvée, elle réunit ses amies et ses voisines, et leur dit: 'Réjouissez-vous avec moi, car je l'ai retrouvée, la pièce que j'avais perdue!' 10 C'est ainsi, je vous le déclare, qu'il y a de la joie chez les anges de Dieu pour un seul pécheur qui se convertit.", 
   "9 And when she has found it, she calls her friends and neighbors together, saying, `Rejoice with me, for I have found the piece which I lost!' 10 Likewise, I say to you, there is joy in the presence of the angels of God over one sinner who repents.", 
   ],
@@ -7547,7 +7547,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقالَ: لا يا أبتِ إبراهيمَ. بل إذا مَضَى إليِهم واحدٌ مِن الموتى يَتُوبُونَ. فقالَ لهُ: إن كانُوا لا يسمعُونَ لمُوسَى والأنبياءِ، فإنَّهُم ولا إن قامَ واحِدٌ مِنَ الموتى يقتنعُونَ '. ( والمجد للـه دائماً )", 
+  "فقالَ: لا يا أبتِ إبراهيمَ. بل إذا مَضَى إليِهم واحدٌ مِن الموتى يَتُوبُونَ. فقالَ لهُ: إن كانُوا لا يسمعُونَ لمُوسَى والأنبياءِ، فإنَّهُم ولا إن قامَ واحِدٌ مِنَ الموتى يقتنعُونَ '. ", 
   "30 L'autre reprit: 'Non, Abraham, mon père, mais si quelqu'un vient à eux de chez les morts, 31 ils se convertiront.' Abraham lui dit: 'S'ils n'écoutent pas Moïse, ni les prophètes, même si quelqu'un ressuscite des morts, ils ne seront pas convaincus.'", 
   "30 And he said, `No, father Abraham; but if one goes to them from the dead, they will repent.' 31 But he said to him, `If they do not hear Moses and the prophets, neither will they be persuaded though one rise from the dead.'", 
   ],
@@ -7599,7 +7599,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فهل للعبد فضلٌ لأنَّهُ فعلَ ما أُمر بهِ؟ كذلك أنتُم أيضاً إذا فعلتُم جميع ما أُمرتُم بهِ فقُولُوا: إنَّنا عبيدٌ بطَّالُون، إنَّنا عَمِلنا ما عَلينا أن نعمله '. ( والمجد للـه دائماً )", 
+  "فهل للعبد فضلٌ لأنَّهُ فعلَ ما أُمر بهِ؟ كذلك أنتُم أيضاً إذا فعلتُم جميع ما أُمرتُم بهِ فقُولُوا: إنَّنا عبيدٌ بطَّالُون، إنَّنا عَمِلنا ما عَلينا أن نعمله '. ", 
   "9 A-t-il de la reconnaissance envers ce serviteur parce qu'il a fait ce qui lui était ordonné? De même, vous aussi, quand vous avez fait tout ce qui vous était ordonné, dites: 'Nous sommes des serviteurs quelconques. Nous avons fait seulement ce que nous devions faire.'", 
   "9 Does he thank that servant because he did the things that were commanded him? I think not. 10 So likewise you, when you have done all those things which you are commanded, say, `We are unprofitable servants. We have done what was our duty to do.’", 
   ],
@@ -7789,7 +7789,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهم يسوع هل يستطيع بنو العرس ان ينوحوا ما دام العريس معهم.ولكن ستأتي ايام حين يرفع العريس عنهم فحينئذ يصومون. ( والمجد للـه دائماً )", 
+  "فقال لهم يسوع هل يستطيع بنو العرس ان ينوحوا ما دام العريس معهم.ولكن ستأتي ايام حين يرفع العريس عنهم فحينئذ يصومون. ", 
   "15 Jésus leur répondit : Les amis de l’époux peuvent–ils mener deuil tant que l’époux est avec eux ? Les jours viendront où l’époux leur sera enlevé, et alors ils jeûneront.", 
   "15 And Jesus said to them, Can the friends of the bridegroom mourn as long as the bridegroom is with them? But the days will come when the bridegroom will be taken away from them, and then they will fast.", 
   ],
@@ -7853,7 +7853,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "أو ما يحق لي أن أفعل ما أُريدُ بما لي؟ أم عينُك شرِّيرةٌ لأنِّي أنا صالحٌ؟ هكذا يكونُ الآخرون أوَّلين والأوَّلون آخرين، لأنَّ المدعوين كثيرون والمختارون قليلون '. ( والمجد للـه دائماً ).", 
+  "أو ما يحق لي أن أفعل ما أُريدُ بما لي؟ أم عينُك شرِّيرةٌ لأنِّي أنا صالحٌ؟ هكذا يكونُ الآخرون أوَّلين والأوَّلون آخرين، لأنَّ المدعوين كثيرون والمختارون قليلون '. .", 
   "15 Ne m'est-il pas permis de faire ce que je veux de mon bien? Ou alors ton œil est-il mauvais parce que je suis bon?' 16 Ainsi les derniers seront premiers, et les premiers seront derniers.", 
   "15 `Is it not lawful for me to do what I wish with my own things? Or is your eye evil because I am good?' 16 So the last will be first, and the first last. For many are called, but few chosen. (Glory be to God forever.)", 
   ],
@@ -8003,7 +8003,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "حينئذٍ قال المَلِكُ للخُدَّام: أوثقُوا يديهِ ورجليهِ واطرحُوهُ في الظُّلمةِ الخارجيَّةِ. هُناك يكُون البُكاءُ وصريرُ الأسنان. لأنَّ كثيرينَ يُدعونَ والمختارون قليلُون '. ( والمجد للـه دائماً ).", 
+  "حينئذٍ قال المَلِكُ للخُدَّام: أوثقُوا يديهِ ورجليهِ واطرحُوهُ في الظُّلمةِ الخارجيَّةِ. هُناك يكُون البُكاءُ وصريرُ الأسنان. لأنَّ كثيرينَ يُدعونَ والمختارون قليلُون '. .", 
   "13 Alors le roi dit aux servants: 'Jetez-le pieds et poings liés, dans les ténèbres du dehors: là seront les pleurs et les grincements de dents. Certes, la multitude est appelée, mais peu sont élus.", 
   "13 Then the king said to the servants, `Bind him hand and foot, take him away, and cast him into outer darkness; there will be weeping and gnashing of teeth.' 14 For many are called, but few are chosen. (Glory be to God forever.)", 
   ],
@@ -8101,7 +8101,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وإذ كانُوا يطلُبُون أن يُمسكُوهُ، خافُوا مِن الجمع، لأنَّهُ كان عندهُم كنبي ( والمجد للـه دائماً ).", 
+  "وإذ كانُوا يطلُبُون أن يُمسكُوهُ، خافُوا مِن الجمع، لأنَّهُ كان عندهُم كنبي .", 
   "46 Ils cherchaient à l'arrêter, mais ils eurent peur des foules, car elles le tenaient pour un prophète.", 
   "46 But when they sought to lay hands on Him, they feared the multitudes, because they took Him for a prophet. (Glory be to God forever.)", 
   ],
@@ -8141,7 +8141,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فذاع الخبرُ عنه شيوعاً. واجتمعت جموع كثيرة ليستمعوا وشفاهم من أمراضهم. فأمَّا هو فكان يمضي إلى البراري ليُصلِّي. ( والمجد للـه دائماً )", 
+  "فذاع الخبرُ عنه شيوعاً. واجتمعت جموع كثيرة ليستمعوا وشفاهم من أمراضهم. فأمَّا هو فكان يمضي إلى البراري ليُصلِّي. ", 
   "15 On parlait de lui de plus en plus, et de grandes foules s'assemblaient pour l'entendre et se faire guérir de leurs maladies. Et lui se retirait dans les lieux déserts et il priait.", 
   "15 However, the report went around concerning Him all the more; and great multitudes came together to hear, and to be healed by Him of their infirmities. 16 So He Himself often withdrew into the wilderness and prayed.", 
   ],
@@ -8295,7 +8295,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وإنِّي أقُولُ لكُم إنَّكُم مِن الآن لا ترُونني حتَّى تقُولُوا: مُباركٌ الآتي بِاسم الرَّبِّ!'. ( والمجد للـه دائماً ).", 
+  "وإنِّي أقُولُ لكُم إنَّكُم مِن الآن لا ترُونني حتَّى تقُولُوا: مُباركٌ الآتي بِاسم الرَّبِّ!'. .", 
   "39 Car, je vous le dis, désormais vous ne me verrez plus, jusqu'à ce que vous disiez: 'Béni soit, au nom du Seigneur, Celui qui vient!", 
   "39 for I say to you, you shall see Me no more till you say, `Blessed is He who comes in the name of the Lord!'. (Glory be to God forever.)", 
   ],
@@ -8359,7 +8359,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولا تحلف برأسكَ لأنَّك لا تقدر أن تجعل شَعرةً واحدةً بيضاءَ أو سوداءَ. بل فليكُن كلامُكم نَعَم نَعَم، ولا لا. وما زادَ على ذلك فهو من الشِّرِّير.( والمجد للـه دائماً )", 
+  "ولا تحلف برأسكَ لأنَّك لا تقدر أن تجعل شَعرةً واحدةً بيضاءَ أو سوداءَ. بل فليكُن كلامُكم نَعَم نَعَم، ولا لا. وما زادَ على ذلك فهو من الشِّرِّير.", 
   "36 Ne jure pas non plus par ta tête, car tu ne peux en rendre un seul cheveu blanc ou noir. Quand vous parlez, dites: 'oui' ou 'non': Tout le reste vient du Malin.", 
   "36 Nor shall you swear by your head, because you cannot make one hair white or black. 37 But let your `Yes' be `Yes,' and your `No,' `No.' For whatever is more than these is from the evil one.", 
   ],
@@ -8507,7 +8507,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فأخذه بطرس اليه وابتدأ ينتهره قائلا حاشاك يا رب.لا يكون لك هذا. فالتفت وقال لبطرس اذهب عني يا شيطان.انت معثرة لي لانك لا تهتم بما لله لكن بما للناس( والمجد للـه دائماً )", 
+  "فأخذه بطرس اليه وابتدأ ينتهره قائلا حاشاك يا رب.لا يكون لك هذا. فالتفت وقال لبطرس اذهب عني يا شيطان.انت معثرة لي لانك لا تهتم بما لله لكن بما للناس", 
   "22 Pierre, le tirant à part, se mit à le réprimander, en disant: 'Dieu t'en préserve, Seigneur. Non, cela ne t'arrivera pas.' Mais lui, se retournant, dit à Pierre: 'Retire-toi. Derrière moi, Satan. Tu es pour moi occasion de chute, car tes vues ne sont pas celles de Dieu, mais celles des hommes'", 
   "22 Then Peter took Him aside and began to rebuke Him, saying, Far be it from You, Lord; this shall not happen to You! 23 But He turned and said to Peter, Get behind Me, Satan! You are an offense to Me, for you are not mindful of the things of God, but the things of men.", 
   ],
@@ -8593,7 +8593,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكني اقول لكم ان ايليا قد جاء ولم يعرفوه بل عملوا به كل ما ارادوا.كذلك ابن الانسان ايضا سوف يتألم منهم. حينئذ فهم التلاميذ انه قال لهم عن يوحنا المعمدان.( والمجد للـه دائماً )", 
+  "ولكني اقول لكم ان ايليا قد جاء ولم يعرفوه بل عملوا به كل ما ارادوا.كذلك ابن الانسان ايضا سوف يتألم منهم. حينئذ فهم التلاميذ انه قال لهم عن يوحنا المعمدان.", 
   "12 mais, je vous le déclare, Elie est déjà venu, et, au lieu de le reconnaître, ils ont fait de lui tout ce qu'ils ont voulu. Le Fils de l'homme lui aussi va souffrir par eux. Alors les disciples comprirent qu'il leur parlait de Jean le Baptiste.", 
   "12 But I say to you that Elijah has come already, and they did not know him but did to him whatever they wished. Likewise the Son of Man is also about to suffer at their hands. 13 Then the disciples understood that He spoke to them of John the Baptist.", 
   ],
@@ -8633,7 +8633,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فيقتلونه وفي اليوم الثالث يقوم.فحزنوا جدا ( والمجد للـه دائماً )", 
+  "فيقتلونه وفي اليوم الثالث يقوم.فحزنوا جدا ", 
   "23 ils le tueront et, le troisième jour, il ressuscitera.' Et ils furent profondément attristés.", 
   "23 and they will kill Him, and the third day He will be raised up. And they were exceedingly sorrowful.", 
   ],
@@ -8747,7 +8747,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فان كان داود يدعوه ربا فكيف يكون ابنه. فلم يستطع احد ان يجيبه بكلمة.ومن ذلك اليوم لم يجسر احد ان يسأله بتة ( والمجد للـه دائماً )", 
+  "فان كان داود يدعوه ربا فكيف يكون ابنه. فلم يستطع احد ان يجيبه بكلمة.ومن ذلك اليوم لم يجسر احد ان يسأله بتة ", 
   "45 Si donc David l'appelle Seigneur, comment est-il son fils?' Personne ne fut capable de lui répondre un mot. Et, depuis ce jour-là, nul n'osa plus l'interroger.", 
   "45 If David then calls Him `Lord,' how is He his Son? 46 And no one was able to answer Him a word, nor from that day on did anyone dare question Him anymore.", 
   ],
@@ -8799,7 +8799,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فتراءى كلامهنّ لهم كالهذيان ولم يصدقوهنّ. فقام بطرس وركض الى القبر فانحنى ونظر الاكفان موضوعة وحدها فمضى متعجبا في نفسه مما كان.( والمجد للـه دائماً )", 
+  "فتراءى كلامهنّ لهم كالهذيان ولم يصدقوهنّ. فقام بطرس وركض الى القبر فانحنى ونظر الاكفان موضوعة وحدها فمضى متعجبا في نفسه مما كان.", 
   "11 Aux yeux de ceux-ci ces paroles semblèrent un délire et ils ne croyaient pas ces femmes. Pierre cependant partit et courut au tombeau; en se penchant, il ne vit que les bandelettes, et il s'en alla de son côté en s'étonnant de ce qui était arrivé", 
   "11 And their words seemed to them like idle tales, and they did not believe them. 12 But Peter arose and ran to the tomb; and stooping down, he saw the linen cloths lying by themselves; and he departed, marveling to himself at what had happened.", 
   ],
@@ -8863,7 +8863,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولم يجسر احد من التلاميذ ان يسأله من انت اذ كانوا يعلمون انه الرب.ثم جاء يسوع واخذ الخبز واعطاهم وكذلك السمك. هذه مرة ثالثة ظهر يسوع لتلاميذه بعد ما قام من الاموات( والمجد للـه دائماً )", 
+  "ولم يجسر احد من التلاميذ ان يسأله من انت اذ كانوا يعلمون انه الرب.ثم جاء يسوع واخذ الخبز واعطاهم وكذلك السمك. هذه مرة ثالثة ظهر يسوع لتلاميذه بعد ما قام من الاموات", 
   "Aucun des disciples n'osait lui poser la question: 'Qui es-tu?': ils savaient bien que c'était le Seigneur.13 Alors Jésus vient; il prend le pain et le leur donne; il fit de même avec le poisson.14 Ce fut la troisième fois que Jésus se manifesta à ses disciples depuis qu'il s'était relevé d'entre les morts.", 
   "Yet none of the disciples dared ask Him, Who are You?--knowing that it was the Lord. 13 Jesus then came and took the bread and gave it to them, and likewise the fish. 14 This is now the third time Jesus showed Himself to His disciples after He was raised from the dead.", 
   ],
@@ -8943,7 +8943,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبدون مثل لم يكن يكلمهم.واما على انفراد فكان يفسر لتلاميذه كل شيء.( والمجد للـه دائماً )", 
+  "وبدون مثل لم يكن يكلمهم.واما على انفراد فكان يفسر لتلاميذه كل شيء.", 
   "33 Par de nombreuses paraboles de ce genre, il leur annonçait la Parole, dans la mesure où ils étaient capables d'entendre. 34 Il ne leur parlait pas sans parabole, mais, en particulier, il expliquait tout à ses disciples.", 
   "33 And with many such parables He spoke the word to them as they were able to hear it. 34 But without a parable He did not speak to them. And when they were alone, He explained all things to His disciples.", 
   ],
@@ -8983,7 +8983,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال له انظر لا تقل لاحد شيئا بل اذهب أر نفسك للكاهن وقدّم عن تطهيرك ما أمر به موسى شهادة لهم.( والمجد للـه دائماً )", 
+  "وقال له انظر لا تقل لاحد شيئا بل اذهب أر نفسك للكاهن وقدّم عن تطهيرك ما أمر به موسى شهادة لهم.", 
   "44 Il lui dit: 'Garde-toi de rien dire à personne, mais va te montrer au prêtre et offre pour ta purification ce que Moïse a prescrit: ils auront là un témoignage.", 
   "44 and said to him, See that you say nothing to anyone; but go your way, show yourself to the priest, and offer for your cleansing those things which Moses commanded, as a testimony to them.", 
   ],
@@ -9091,7 +9091,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لان الارض من ذاتها تأتي بثمر.اولا نباتا ثم سنبلا ثم قمحا ملآن في السنبل. واما متى ادرك الثمر فللوقت يرسل المنجل لان الحصاد قد حضر( والمجد للـه دائماً )", 
+  "لان الارض من ذاتها تأتي بثمر.اولا نباتا ثم سنبلا ثم قمحا ملآن في السنبل. واما متى ادرك الثمر فللوقت يرسل المنجل لان الحصاد قد حضر", 
   "28 D'elle-même, la terre produit d'abord l'herbe, puis l'épi, enfin du blé plein l'épi. Et dès que le blé est mûr, on y met la faucille, car c'est le temps de la moisson.'", 
   "28 For the earth yields crops by itself: first the blade, then the head, after that the full grain in the head. 29 But when the grain ripens, immediately he puts in the sickle, because the harvest has come.", 
   ],
@@ -9177,7 +9177,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبدون مثل لم يكن يكلمهم.واما على انفراد فكان يفسر لتلاميذه كل شيء.( والمجد للـه دائماً )", 
+  "وبدون مثل لم يكن يكلمهم.واما على انفراد فكان يفسر لتلاميذه كل شيء.", 
   "34 Il ne leur parlait pas sans parabole, mais, en particulier, il expliquait tout à ses disciples.", 
   "34 But without a parable He did not speak to them. And when they were alone, He explained all things to His disciples.", 
   ],
@@ -9217,7 +9217,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وعلموهم ان يحفظوا جميع ما اوصيتكم به.وها انا معكم كل الايام الى انقضاء الدهر.آمين ( والمجد للـه دائماً )", 
+  "وعلموهم ان يحفظوا جميع ما اوصيتكم به.وها انا معكم كل الايام الى انقضاء الدهر.آمين ", 
   "20 leur apprenant à garder tout ce que je vous ai prescrit. Et moi, je suis avec vous tous les jours jusqu'à la fin des temps.", 
   "20 teaching them to observe all things that I have commanded you; and lo, I am with you always, even to the end of the age. Amen.", 
   ],
@@ -9269,7 +9269,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فقال لهم يسوع الحق الحق اقول لكم ليس موسى اعطاكم الخبز من السماء بل ابي يعطيكم الخبز الحقيقي من السماء. لان خبز الله هو النازل من السماء الواهب حياة للعالم.( والمجد للـه دائماً )", 
+  "فقال لهم يسوع الحق الحق اقول لكم ليس موسى اعطاكم الخبز من السماء بل ابي يعطيكم الخبز الحقيقي من السماء. لان خبز الله هو النازل من السماء الواهب حياة للعالم.", 
   "32 Mais Jésus leur dit: 'En vérité, en vérité, je vous le dis, ce n'est pas Moïse qui vous a donné le pain du ciel, mais c'est mon Père qui vous donne le véritable pain du ciel. 33 Car le pain de Dieu, c'est celui qui descend du ciel et qui donne la vie au monde.", 
   "32 Then Jesus said to them, Most assuredly, I say to you, Moses did not give you the bread from heaven, but My Father gives you the true bread from heaven. 33 For the bread of God is He who comes down from heaven and gives life to the world.", 
   ],
@@ -9309,7 +9309,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وقال للبحر اسكت.ابكم.فسكنت الريح وصار هدوء عظيم. وقال لهم ما بالكم خائفين هكذا.كيف لا ايمان لكم. فخافوا خوفا عظيما وقالوا بعضهم لبعض من هو هذا.فان الريح ايضا والبحر يطيعانه ( والمجد للـه دائماً )", 
+  "وقال للبحر اسكت.ابكم.فسكنت الريح وصار هدوء عظيم. وقال لهم ما بالكم خائفين هكذا.كيف لا ايمان لكم. فخافوا خوفا عظيما وقالوا بعضهم لبعض من هو هذا.فان الريح ايضا والبحر يطيعانه ", 
   "et dit à la mer: 'Silence! Tais-toi!'' Le vent tomba, et il se fit un grand calme. Jésus leur dit: 'Pourquoi avez-vous si peur?' Ils furent saisis d'une grande crainte, et ils se disaient entre eux: 'Qui donc est-il, pour que même le vent et la mer lui obéissent?", 
   "and said to the sea, Peace, be still! And the wind ceased and there was a great calm. 40 But He said to them, Why are you so fearful? How is it that you have no faith? 41 And they feared exceedingly, and said to one another, Who can this be, that even the wind and the sea obey Him!.", 
   ],
@@ -9441,7 +9441,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فلما سمع ذلك واحد من المتكئين قال له طوبى لمن يأكل خبزا في ملكوت الله. ( والمجد للـه دائماً )", 
+  "فلما سمع ذلك واحد من المتكئين قال له طوبى لمن يأكل خبزا في ملكوت الله. ", 
   "15 En entendant ces mots, un des convives dit à Jésus: 'Heureux qui prendra part au repas dans le Royaume de Dieu.", 
   "15 Now when one of those who sat at the table with Him heard these things, he said to Him, Blessed is he who shall eat bread in the kingdom of God!.", 
   ],
@@ -9527,7 +9527,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم وضع يديه ايضا على عينيه وجعله يتطلع فعاد صحيحا وابصر كل انسان جليّا. فارسله الى بيته قائلا لا تدخل القرية ولا تقل لاحد في القرية .( والمجد للـه دائماً )", 
+  "ثم وضع يديه ايضا على عينيه وجعله يتطلع فعاد صحيحا وابصر كل انسان جليّا. فارسله الى بيته قائلا لا تدخل القرية ولا تقل لاحد في القرية .", 
   "25 Puis, Jésus lui posa de nouveau les mains sur les yeux et l'homme vit clair; il était guéri et voyait tout distinctement. Jésus le renvoya chez lui en disant: 'N'entre même pas dans le village.", 
   "25 Then He put His hands on his eyes again and made him look up. And he was restored and saw everyone clearly. 26 Then He sent him away to his house, saying, Neither go into the town, nor tell anyone in the town.", 
   ],
@@ -9561,7 +9561,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "وبعد ان يقتل يقوم في اليوم الثالث. واما هم فلم يفهموا القول وخافوا ان يسألوه ( والمجد للـه دائماً )", 
+  "وبعد ان يقتل يقوم في اليوم الثالث. واما هم فلم يفهموا القول وخافوا ان يسألوه ", 
   "trois jours après il ressuscitera.' 32 Mais ils ne comprenaient pas cette parole et craignaient de l'interroger.", 
   "And after He is killed, He will rise the third day. 32 But they did not understand this saying, and were afraid to ask Him.", 
   ],
@@ -9745,7 +9745,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "والذي ارسلني هو معي ولم يتركني الآب وحدي لاني في كل حين افعل ما يرضيه وبينما هو يتكلم بهذا آمن به كثيرون. ( والمجد للـه دائماً ).", 
+  "والذي ارسلني هو معي ولم يتركني الآب وحدي لاني في كل حين افعل ما يرضيه وبينما هو يتكلم بهذا آمن به كثيرون. .", 
   "29 Celui qui m'a envoyé est avec moi: il ne m'a pas laissé seul, parce que je fais toujours ce qui lui plaît. 30 Alors qu'il parlait ainsi, beaucoup crurent en lui.", 
   "29 And He who sent Me is with Me. The Father has not left Me alone, for I always do those things that please Him. 30 As He spoke these words, many believed in Him. (Glory be to God forever.)", 
   ],
@@ -9785,7 +9785,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "لانه لم يكن يعلم ما يتكلم به اذ كانوا مرتعبين. وكانت سحابة تظللهم.فجاء صوت من السحابة قائلا هذا هو ابني الحبيب له اسمعوا. ( والمجد للـه دائماً )", 
+  "لانه لم يكن يعلم ما يتكلم به اذ كانوا مرتعبين. وكانت سحابة تظللهم.فجاء صوت من السحابة قائلا هذا هو ابني الحبيب له اسمعوا. ", 
   "6 Il ne savait que dire car ils étaient saisis de crainte. Une nuée vint les recouvrir et il y eut une voix venant de la nuée: 'Celui-ci est mon Fils bien-aimé. Écoutez-le!", 
   "6 because he did not know what to say, for they were greatly afraid. 7 And a cloud came and overshadowed them; and a voice came out of the cloud, saying, This is My beloved Son. Hear Him!.", 
   ],
@@ -9871,7 +9871,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "والصيادون قد خرجوا منهما وغسلوا الشباك. فدخل احدى السفينتين التي كانت لسمعان وسأله ان يبعد قليلا عن البر.ثم جلس وصار يعلّم الجموع من السفينة. ( والمجد للـه دائماً )", 
+  "والصيادون قد خرجوا منهما وغسلوا الشباك. فدخل احدى السفينتين التي كانت لسمعان وسأله ان يبعد قليلا عن البر.ثم جلس وصار يعلّم الجموع من السفينة. ", 
   "d’où les pêcheurs étaient descendus pour laver leurs filets. 3 Il monta dans l’une de ces barques, qui était à Simon, et il lui demanda de s’éloigner un peu de terre. Puis il s’assit, et de la barque il enseignait les foules.", 
   "but the fishermen had gone from them and were washing their nets. 3 Then He got into one of the boats, which was Simon's, and asked him to put out a little from the land. And He sat down and taught the multitudes from the boat.", 
   ],
@@ -9905,7 +9905,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "سمعان الذي سماه ايضا بطرس واندراوس اخاه.يعقوب ويوحنا.فيلبس وبرثولماوس. متّى وتوما.يعقوب بن حلفى وسمعان الذي يدعى الغيور. يهوذا اخا يعقوب ويهوذا الاسخريوطي الذي صار مسلما ايضا. ( والمجد للـه دائماً )", 
+  "سمعان الذي سماه ايضا بطرس واندراوس اخاه.يعقوب ويوحنا.فيلبس وبرثولماوس. متّى وتوما.يعقوب بن حلفى وسمعان الذي يدعى الغيور. يهوذا اخا يعقوب ويهوذا الاسخريوطي الذي صار مسلما ايضا. ", 
   "14 Simon, auquel il donna le nom de Pierre, André son frère, Jacques, Jean, Philippe, Barthélemy, 15 Matthieu, Thomas, Jacques fils d'Alphée, Simon qu'on appelait le zélote, Judas fils de Jacques et Judas Iscariote qui devint traître.", 
   "14 Simon, whom He also named Peter, and Andrew his brother; James and John; Philip and Bartholomew; 15 Matthew and Thomas; James the son of Alphaeus, and Simon called the Zealot; 16 Judas the son of James, and Judas Iscariot who also became a traitor.", 
   ],
@@ -10013,7 +10013,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاخبروه قائلين امك واخوتك واقفون خارجا يريدون ان يروك. فاجاب وقال لهم امي واخوتي هم الذين يسمعون كلمة الله ويعملون بها ( والمجد للـه دائماً )", 
+  "فاخبروه قائلين امك واخوتك واقفون خارجا يريدون ان يروك. فاجاب وقال لهم امي واخوتي هم الذين يسمعون كلمة الله ويعملون بها ", 
   "mais ils ne pouvaient le rejoindre à cause de la foule. 20 On lui annonça: 'Ta mère et tes frères se tiennent dehors; ils veulent te voir.' Il leur répondit: 'Ma mère et mes frères, ce sont ceux qui écoutent la parole de Dieu et qui la mettent en pratique.", 
   "and could not approach Him because of the crowd. 20 And it was told Him by some, who said, Your mother and Your brothers are standing outside, desiring to see You. 21 But He answered and said to them, My mother and My brothers are these who hear the word of God and do it.", 
   ],
@@ -10187,7 +10187,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "قال لهم يسوع الحق الحق اقول لكم قبل ان يكون ابراهيم انا كائن. فرفعوا حجارة ليرجموه.اما يسوع فاختفى وخرج من الهيكل مجتازا في وسطهم ومضى هكذا ( والمجد للـه دائماً ).", 
+  "قال لهم يسوع الحق الحق اقول لكم قبل ان يكون ابراهيم انا كائن. فرفعوا حجارة ليرجموه.اما يسوع فاختفى وخرج من الهيكل مجتازا في وسطهم ومضى هكذا .", 
   "58 Jésus leur répondit: 'En vérité, en vérité, je vous le dis, avant qu'Abraham fût, Je Suis. 59 Alors, ils ramassèrent des pierres pour les lancer contre lui, mais Jésus se déroba et sortit du temple.", 
   "58 Jesus said to them, Most assuredly, I say to you, before Abraham was, I AM. 59 Then they took up stones to throw at Him; but Jesus hid Himself and went out of the temple, going through the midst of them, and so passed by. (Glory be to God forever.)", 
   ],
@@ -10245,7 +10245,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاجاب قوما من الكتبة وقالوا يا معلّم حسنا قلت. ( والمجد للـه دائماً )", 
+  "فاجاب قوما من الكتبة وقالوا يا معلّم حسنا قلت. ", 
   "39 Quelques scribes, prenant la parole, dirent: 'Maître, tu as bien parlé.", 
   "39 Then some of the scribes answered and said, Teacher, You have spoken well.", 
   ],
@@ -10285,7 +10285,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ان ثبتم فيّ وثبت كلامي فيكم تطلبون ما تريدون فيكون لكم. بهذا يتمجد ابي ان تأتوا بثمر كثير فتكونون تلاميذي. ( والمجد للـه دائماً ).", 
+  "ان ثبتم فيّ وثبت كلامي فيكم تطلبون ما تريدون فيكون لكم. بهذا يتمجد ابي ان تأتوا بثمر كثير فتكونون تلاميذي. .", 
   "7 Si vous demeurez en moi et que mes paroles demeurent en vous, vous demanderez ce que vous voudrez et cela vous arrivera. 8 Ce qui glorifie mon Père, c'est que vous portiez du fruit en abondance et que vous soyez pour moi des disciples.", 
   "7 If you abide in Me, and My words abide in you, you will ask what you desire, and it shall be done for you. 8 By this My Father is glorified, that you bear much fruit; so you will be My disciples. (Glory be to God forever.)", 
   ],
@@ -10371,7 +10371,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ومهما سألتم باسمي فذلك افعله ليتمجد الآب بالابن. ان سألتم شيئا باسمي فاني افعله ( والمجد للـه دائماً ).", 
+  "ومهما سألتم باسمي فذلك افعله ليتمجد الآب بالابن. ان سألتم شيئا باسمي فاني افعله .", 
   "13 Tout ce que vous demanderez en mon nom, je le ferai, de sorte que le Père soit glorifié dans le Fils. 14 Si vous me demandez quelque chose en mon nom, je le ferai.", 
   "13 And whatever you ask in My name, that I will do, that the Father may be glorified in the Son. 14 If you ask anything in My name, I will do it. (Glory be to God forever.)", 
   ],
@@ -10429,7 +10429,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اثبتوا فيّ وانا فيكم.كما ان الغصن لا يقدر ان يأتي بثمر من ذاته ان لم يثبت في الكرمة كذلك انتم ايضا ان لم تثبتوا فيّ. ( والمجد للـه دائماً ).", 
+  "اثبتوا فيّ وانا فيكم.كما ان الغصن لا يقدر ان يأتي بثمر من ذاته ان لم يثبت في الكرمة كذلك انتم ايضا ان لم تثبتوا فيّ. .", 
   "4 Demeurez en moi comme je demeure en vous. De même que le sarment, s'il ne demeure sur la vigne, ne peut de lui-même porter du fruit, ainsi vous non plus si vous ne demeurez pas en moi.", 
   "4 Abide in Me, and I in you. As the branch cannot bear fruit of itself, unless it abides in the vine, neither can you, unless you abide in Me.", 
   ],
@@ -10469,7 +10469,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ثم قام وانتهر الرياح والبحر فصار هدوء عظيم. فتعجب الناس قائلين اي انسان هذا.فان الرياح والبحر جميعا تطيعه ( والمجد للـه دائماً )", 
+  "ثم قام وانتهر الرياح والبحر فصار هدوء عظيم. فتعجب الناس قائلين اي انسان هذا.فان الرياح والبحر جميعا تطيعه ", 
   "Alors, debout, il menaça les vents et la mer, et il se fit un grand calme. Les hommes s'émerveillèrent, et ils disaient: 'Quel est-il, celui-ci, pour que même les vents et la mer lui obéissent!'.", 
   "Then He arose and rebuked the winds and the sea, and there was a great calm. 27 So the men marveled, saying, Who can this be, that even the winds and the sea obey Him?.", 
   ],
@@ -10527,7 +10527,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "اثبتوا فيّ وانا فيكم.كما ان الغصن لا يقدر ان يأتي بثمر من ذاته ان لم يثبت في الكرمة كذلك انتم ايضا ان لم تثبتوا فيّ. ( والمجد للـه دائماً ).", 
+  "اثبتوا فيّ وانا فيكم.كما ان الغصن لا يقدر ان يأتي بثمر من ذاته ان لم يثبت في الكرمة كذلك انتم ايضا ان لم تثبتوا فيّ. .", 
   "4 Demeurez en moi comme je demeure en vous. De même que le sarment, s'il ne demeure sur la vigne, ne peut de lui-même porter du fruit, ainsi vous non plus si vous ne demeurez pas en moi.", 
   "4 Abide in Me, and I in you. As the branch cannot bear fruit of itself, unless it abides in the vine, neither can you, unless you abide in Me.", 
   ],
@@ -10567,7 +10567,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكنهما خرجا واشاعاه في تلك الارض كلها ( والمجد للـه دائماً )", 
+  "ولكنهما خرجا واشاعاه في تلك الارض كلها ", 
   "31 Mais eux, à peine sortis, parlèrent de lui dans toute cette région.", 
   "31 But when they had departed, they spread the news about Him in all that country.", 
   ],
@@ -10713,7 +10713,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فذهبت هذه واخبرت الذين كانوا معه وهم ينوحون ويبكون. فلما سمع اولئك انه حيّ وقد نظرته لم يصدقوا ( والمجد للـه دائماً )", 
+  "فذهبت هذه واخبرت الذين كانوا معه وهم ينوحون ويبكون. فلما سمع اولئك انه حيّ وقد نظرته لم يصدقوا ", 
   "10 Celle-ci partit l'annoncer à ceux qui avaient été avec lui et qui étaient dans le deuil et les pleurs.11 Mais, entendant dire qu'il vivait et qu'elle l'avait vu, ceux-ci ne la crurent pas.", 
   "10 She went and told those who had been with Him, as they mourned and wept. 11 And when they heard that He was alive and had been seen by her, they did not believe.", 
   ],

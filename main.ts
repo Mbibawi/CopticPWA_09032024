@@ -76,7 +76,8 @@ async function startApp() {
  */
 function createHtmlElementForPrayer(args: {
   tblRow: string[];
-  titleBase: string;
+  dataGroup: string;
+  dataRoot: string;
   languagesArray: string[];
   userLanguages?: string[];
   position?:
@@ -114,8 +115,11 @@ function createHtmlElementForPrayer(args: {
   if (localStorage.displayMode === displayModes[1])
     htmlRow.classList.replace("Row", "SlideRow");
 
-  if (args.titleBase)
-    htmlRow.dataset.root = args.titleBase.replace(/Part\d+/, "");
+  if (args.dataGroup)
+    htmlRow.dataset.group = args.dataGroup.replace(/Part\d+/, "");
+  if (args.dataRoot)
+    htmlRow.dataset.root = args.dataRoot.replace(/Part\d+/, "");
+  
     
   if (args.actorClass) htmlRow.classList.add(args.actorClass);
   if (args.actorClass && args.actorClass.includes("Title")) {
@@ -1642,6 +1646,7 @@ function showPrayers(args: {
   if (args.clearRightSideBar === true) sideBarTitlesContainer.innerHTML = ""; //this is the right side bar where the titles are displayed for navigation purposes
 
   let date: string,
+        dataRoot:string,
     tables: string[][][] = [];
 
   if (!args.wordTable) {
@@ -1673,30 +1678,65 @@ function showPrayers(args: {
 
   //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
 
-  let tblHtmlDivs: HTMLDivElement[] = [];
+  let tblHtmlDivs: HTMLDivElement[] = [], entireTable:string[][];
   tables.forEach((table) => {
     if (!table) return;
-    let titleBase: string = splitTitle(table[0][0])[0];
-    table.map((row) => {
-      let divs = processRow(row, titleBase);
+    entireTable = unfoldPlaceHolders(table);
+    let dataGroup: string = splitTitle(entireTable[0][0])[0];//This will not change and will serve to set the dataset.group property of all the div elements that will be created for the table
+    entireTable
+      .map((row) => {
+        if (!row[0].startsWith(Prefix.same)) dataRoot = splitTitle(row[0])[0];//Each time a row has its own title (which means the row is the first row in a table), we will set the dataset.root of this row and the following rows to the value of row[0]
+      let divs = processRow(row, dataGroup, dataRoot);
       if (!divs || divs.length === 0) return;
       tblHtmlDivs.push(...divs);
     });
   });
-  return tblHtmlDivs;
 
-  function processRow(row: string[], titleBase: string): HTMLDivElement[] {
+  return tblHtmlDivs;
+  
+  function unfoldPlaceHolders(table:string[][]):string[][]{
+    if(!table.find(row=>row[0].startsWith(Prefix.placeHolder))) return table;
+    
+    let newTable: string[][] = [...table],
+      placeHolder: string[][],
+      placeHolders = table.filter(row => row[0].startsWith(Prefix.placeHolder));
+
+    placeHolders
+      .forEach(row => {
+      placeHolder = findTable(row[1], getTablesArrayFromTitlePrefix(row[1])) || undefined;
+      
+      if (!placeHolder) return;
+
+      if (placeHolder.find(row=>row[0].startsWith(Prefix.placeHolder)))
+      //If the returned table also has placeHolders amongst its rows, we will unfold the placeHolders.
+        placeHolder = unfoldPlaceHolders(placeHolder);
+      
+        newTable.splice(newTable.indexOf(row), 1, ...placeHolder);
+    
+    });
+    
+    return newTable
+
+  };
+
+  function processRow(row: string[], dataGroup: string, dataRoot): HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
     
     if (row[0].startsWith(Prefix.placeHolder))
-      return processPlaceHolder(row, titleBase) || undefined;
+      return processPlaceHolder(row, dataGroup) || undefined;
     //If the row is a placeholder, we retrieve the table refrenced in row[1]
-    else return [createElement(row, titleBase)]; //If it is not a placeholder, we created a div element with the text of the row
+    else return [createElement(row, dataGroup, dataRoot)]; //If it is not a placeholder, we created a div element with the text of the row
   }
 
+  /**
+   * !This function is normally not called any more since we added unfoldPlaceHolders(). We are keeping it in case any PlaceHolder element woud have remained despite passing by unfoldPlaceHolders()
+   * @param row 
+   * @param dataGroup 
+   * @returns 
+   */
   function processPlaceHolder(
     row: string[],
-    mainTitleBase: string
+    dataGroup: string
   ): HTMLDivElement[] | void {
     if (!row[1]) return console.log(row);
 
@@ -1714,23 +1754,24 @@ function showPrayers(args: {
       );
 
     //We create html div elements representing each row (i.e., string[]) in the table
-    let titleBase: string = splitTitle(tbl[0][0])[0];
+    let dataRoot: string = splitTitle(tbl[0][0])[0];
     return tbl
-      .map((tblRow) => createElement(tblRow, titleBase))
+      .map((tblRow) => createElement(tblRow, dataRoot, dataRoot))
       .forEach((tblRow) => {
-        if (tblRow) tblRow.dataset.isPlaceHolderIn = mainTitleBase;
+        if (tblRow) tblRow.dataset.isPlaceHolderIn = dataGroup;
       }); //We give each html row created a data-is-placeholder-in attribute equal to the main table for which the placeHolder is inserted;
   }
 
-  function createElement(row: string[], titleBase: string): HTMLDivElement {
+  function createElement(row: string[], dataGroup: string, dataRoot:string): HTMLDivElement {
     if (!row) return;
     if (row[0] === Prefix.placeHolder) {
-      processPlaceHolder(row, titleBase);
+      processPlaceHolder(row, dataGroup);
       return;
     }
     return createHtmlElementForPrayer({
       tblRow: row,
-      titleBase: titleBase,
+      dataGroup: dataGroup,
+      dataRoot: dataRoot,
       languagesArray: args.languages,
       position: args.position,
       container: args.container,
@@ -1805,11 +1846,11 @@ async function setCSS(htmlRows: HTMLElement[]) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
 
-      addDataGroupsToContainerChildren(
+     /*  addDataGroupsToContainerChildren(
         row.classList[row.classList.length - 1],
         row,
         htmlRows
-      );
+      ); */
 
       (async function addPlusAndMinusSigns() {
         let defLangParag = row.querySelector(
@@ -1843,6 +1884,8 @@ async function setCSS(htmlRows: HTMLElement[]) {
     if (row.classList.contains("Diacon")) replaceMusicalNoteSign(paragraphs);
 
     if (
+      row.dataset.root
+        &&
       [
         Prefix.praxis,
         Prefix.katholikon,
@@ -2972,6 +3015,7 @@ function insertPrayersAdjacentToExistingElement(args: {
       wordTable: table,
       position: args.position,
       languages: args.languages,
+      container: args.container,
       clearRightSideBar: false,
       clearContainerDiv: false,
     });

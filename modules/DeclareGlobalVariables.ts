@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.3.9 (Major fixes to the readings and the userLanguages setting. Completed mass readings for Jonah Fast. Fixed Agios and Helleluja Faybibi for Great Lent, etc.)";
+  "v5.4.0 (Major change in the hadling of PlaceHolder elements: added unfoldPlaceHolder(). Fixed the GodHaveMercyOnUsForBishop issue)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -194,10 +194,12 @@ const ReadingsIntrosAndEnds = {
   gospelIntro: {
     AR: "قفوا بخوف أمام الله وانصتوا لنسمع الإنجيل المقدس، فصل من بشارة الإنجيل لمعلمنا مار (....) البشير، والتلميذ الطاهر، بركاته على جميعنا",
     FR: "Levons-nous avec crainte de Dieu pour écouter le Saint Évangile. Lecture du Saint évangile selon Saint (....), Que sa bénédiction soit sur nous tous, Amen !",
+    EN: ""
   },
   gospelEnd: {
     AR: "والمَجْدُ لِلّهِ دَائِمَاً",
     FR: "Gloire à Dieu éternellement, Amen !",
+    EN: "Glory to God Forever"
   },
   stPaulIntro: {
     AR: "البُولِسْ فُصْلٌ مِنْ رِسَالَةِ مُعَلِمِنَا بُولِسَ الرَسُولِ  (الأولى/الثانية) إلى (......)، بَرَكَتْهُ عَلى جَمِيعِنَا آمْينْ.",
@@ -225,8 +227,9 @@ const ReadingsIntrosAndEnds = {
     EN: "",
   },
   psalmEnd: {
-    AR: "هلليلويا",
-    FR: "Halleluja",
+    AR: "هَلَِيلُويا",
+    FR: "Alléluia",
+    EN: "Hallelujah",
   },
   praxisIntro: {
     AR: "الإبركسيس فَصْلٌ مِنْ أَعْمَالِ آبِائِنَا الرُسُلِ الأَطْهَارِ، الحَوارِيِّنَ، المَشْمُولِينَ بِنِعْمَةِ الرُّوحِ القُدُسِ، بَرَكَتْهُمُ المُقَدَّسَةِ فَلْتَكُنْ مَعْكُمْ يا آبَائِي وإخْوَتِي آمْينْ.",
@@ -234,7 +237,7 @@ const ReadingsIntrosAndEnds = {
     EN: "",
   },
   praxisEnd: {
-  AR: "لَمْ تَزَلْ كَلِمَةُ الرَبِّ تَنْموُ وتَعْتَزُ وتَكْثُر في هَذِه البَيْعَةِ وكُلِّ بَيْعَةٍ يا آبَائِي وإخْوَتِي آمين.",
+    AR: "لَمْ تَزَلْ كَلِمَةُ الرَبِّ تَنْموُ وتَعْتَزُ وتَكْثُر في هَذِه البَيْعَةِ وكُلِّ بَيْعَةٍ يا آبَائِي وإخْوَتِي آمين.",
     FR: "La parole du Seigneur croît, se multiplie et s’enracine dans la sainte Église de Dieu. Amen!",
     EN: "",
   },
@@ -471,7 +474,7 @@ const allLanguages: string[][] = [...nonCopticLanguages, ...copticLanguages];
 
 
 
-var defaultLanguage: string = setLanguage(0, 'your default', nonCopticLanguages)||'AR';
+var defaultLanguage: string = setLanguage(0, 'your default', nonCopticLanguages) || 'AR';
 var foreingLanguage: string = setLanguage(1, 'a foreign', nonCopticLanguages);
 var copticLanguage: string = setLanguage(2, 'the characters in which you want the coptic text to be displayed', copticLanguages);
 
@@ -480,18 +483,18 @@ localStorage.userLanguages = JSON.stringify([defaultLanguage, foreingLanguage, c
 
 
 function setLanguage(index: number, text: string, languages: string[][]): string {
-  let userLanguages: string[]=[];
-  
-  if(localStorage.userLanguages) userLanguages = JSON.parse(localStorage.userLanguages) as string[];
+  let userLanguages: string[] = [];
+
+  if (localStorage.userLanguages) userLanguages = JSON.parse(localStorage.userLanguages) as string[];
 
   if (userLanguages[index]) return userLanguages[index];//We return the value storaged in the localStorage if it is null. When it is null, it means that the user had willingly ignored setting the foreign language when he installed the app for the first time. We do this for any other language than the default language because it must be set.
-  
+
   if (index > 0 && userLanguages[index] === null) return userLanguages[index];
-  
+
   let choices = languages.map(lang => lang[1]);
 
-  if (defaultLanguage && index <2)  choices.splice(choices.indexOf(languages.find(lang=>lang[0]===defaultLanguage)[1]), 1)//If the function is called while the defaultLanguage was set, we remove the chosen language from the list
-  
+  if (defaultLanguage && index < 2) choices.splice(choices.indexOf(languages.find(lang => lang[0] === defaultLanguage)[1]), 1)//If the function is called while the defaultLanguage was set, we remove the chosen language from the list
+
 
   let choice = prompt('Choose ' + text + ' language from the following: ', choices.join(', '));
 
