@@ -271,7 +271,7 @@ const btnIncenseOffice: Button = new Button({
 const btnIncenseDawn: Button = new Button({
   btnID: "btnIncenseDawn",
   label: {
-    AR: "بخور باكر",
+    AR: "بُخُورِ بَاكِرِ",
     FR: "Encens Aube",
   },
   showPrayers: true,
@@ -437,7 +437,7 @@ const btnIncenseDawn: Button = new Button({
 const btnIncenseVespers: Button = new Button({
   btnID: "btnIncenseVespers",
   label: {
-    AR: "بخور عشية",
+    AR: "بُخُورِ عَشِيَّةَ",
     FR: "Incense Vespers",
   },
   showPrayers: true,
@@ -702,8 +702,8 @@ const btnMassStBasil: Button = new Button({
         insertion: anchor,
         btnID: spasmosTitle.split("&D=")[0],
         label: {
-          AR: spasmos[0][btn.languages.indexOf(defaultLanguage) + 1],
-          FR: spasmos[0][btn.languages.indexOf(foreingLanguage) + 1],
+          FR: spasmos[0][2],
+          AR: spasmos[0][4],
         },
         prayers: [spasmos],
         languages: btn.languages,
@@ -919,8 +919,8 @@ const goToAnotherMass: Button[] = [
 const btnMassUnBaptised: Button = new Button({
   btnID: "btnMassUnBaptised",
   label: {
-    AR: "قداس الموعوظين",
-    FR: "Messe des non baptisés",
+    AR: "قٌدَّاسِ المَوْعُوظِينَ",
+    FR: "Liturgie du Verbe",
     EN: "Unbaptised Mass",
   },
   docFragment: new DocumentFragment(),
@@ -1568,15 +1568,15 @@ const btnMassUnBaptised: Button = new Button({
     //collapseAllTitles(Array.from(btnDocFragment.children) as HTMLDivElement[]);
 
     let BOHMasterButton = btnDocFragment.getElementById("masterBOHBtn");
-   // if (BOHMasterButton) BOHMasterButton.classList.toggle(hidden); //We remove hidden from btnsDiv
+    // if (BOHMasterButton) BOHMasterButton.classList.toggle(hidden); //We remove hidden from btnsDiv
   },
 });
 
 const btnMassBaptised: Button = new Button({
   btnID: "btnMassBaptised",
   label: {
-    AR: "قداس المؤمنين",
-    FR: "Messe des Croyants",
+    AR: "قٌدَّاسِ المُؤْمِنينَ",
+    FR: "Liturgie des Croyants",
     EN: "Baptized Mass",
   },
   parentBtn: btnMass,
