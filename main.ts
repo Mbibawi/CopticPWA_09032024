@@ -16,12 +16,12 @@ async function startApp() {
     if (!checkIfDateIsToday(selectedDate)) {
       alert(
         "WARNING ! The date is manually set by the user to " +
-          selectedDate.getDate().toString() +
-          "/" +
-          (selectedDate.getMonth() + 1).toString() +
-          "/" +
-          selectedDate.getFullYear().toString() +
-          ". This choice will not kept. If you want the current date, you have to change the date manually"
+        selectedDate.getDate().toString() +
+        "/" +
+        (selectedDate.getMonth() + 1).toString() +
+        "/" +
+        selectedDate.getFullYear().toString() +
+        ". This choice will not kept. If you want the current date, you have to change the date manually"
       );
       selectedDate.setHours(
         newDate.getHours(),
@@ -81,9 +81,9 @@ function createHtmlElementForPrayer(args: {
   languagesArray: string[];
   userLanguages?: string[];
   position?:
-    | HTMLElement
-    | DocumentFragment
-    | { beforeOrAfter: InsertPosition; el: HTMLElement };
+  | HTMLElement
+  | DocumentFragment
+  | { beforeOrAfter: InsertPosition; el: HTMLElement };
   actorClass?: string;
   container?: HTMLElement | DocumentFragment;
 }): HTMLDivElement | void {
@@ -119,8 +119,8 @@ function createHtmlElementForPrayer(args: {
     htmlRow.dataset.group = args.dataGroup.replace(/Part\d+/, "");
   if (args.dataRoot)
     htmlRow.dataset.root = args.dataRoot.replace(/Part\d+/, "");
-  
-    
+
+
   if (args.actorClass) htmlRow.classList.add(args.actorClass);
   if (args.actorClass && args.actorClass.includes("Title")) {
     htmlRow.addEventListener("click", (e) => {
@@ -134,13 +134,13 @@ function createHtmlElementForPrayer(args: {
   for (let x = 1; x < args.tblRow.length; x++) {
     //x starts from 1 because prayers[0] is the title of the row
     if (!args.tblRow[x] || args.tblRow[x] === " ") continue; //we escape the empty strings if the text is not available in all the button's languages
-    if (args.actorClass && args.actorClass === "Comments") 
+    if (args.actorClass && args.actorClass === "Comments")
       //this means it is a comment
       x === 1 ? lang = 'FR' : lang = "AR"
-   else 
-        lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, redrethat's why we start from x-1.
-      
-   
+    else
+      lang = args.languagesArray[x - 1]; //we select the language in the button's languagesArray, starting from 0 not from 1, redrethat's why we start from x-1.
+
+
     //we check that the language is included in the allLanguages array, i.e. if it has not been removed by the user, which means that he does not want this language to be displayed. If the language is not removed, we retrieve the text in this language. otherwise we will not retrieve its text.
     if (!args.userLanguages.includes(lang)) continue;
     p = document.createElement("p"); //we create a new <p></p> element for the text of each language in the 'prayer' array (the 'prayer' array is constructed like ['prayer id', 'text in AR, 'text in FR', ' text in COP', 'text in Language', etc.])
@@ -148,8 +148,8 @@ function createHtmlElementForPrayer(args: {
 
     p.dataset.root = htmlRow.dataset.root; //we do this in order to be able later to retrieve all the divs containing the text of the prayers with similar id as the title
     text = args.tblRow[x];
-    if(lang) p.classList.add(lang);
-    if(lang) p.lang = lang.toLowerCase();
+    if (lang) p.classList.add(lang);
+    if (lang) p.lang = lang.toLowerCase();
     p.innerText = text;
     p.addEventListener("dblclick", (ev: MouseEvent) => {
       ev.preventDefault();
@@ -176,13 +176,13 @@ function createHtmlElementForPrayer(args: {
     //@ts-ignore
     args.position.el
       ? //@ts-ignore
-        args.position.el.insertAdjacentElement(
-          //@ts-ignore
-          args.position.beforeOrAfter,
-          htmlRow
-        )
+      args.position.el.insertAdjacentElement(
+        //@ts-ignore
+        args.position.beforeOrAfter,
+        htmlRow
+      )
       : //@ts-ignore
-        args.position.appendChild(htmlRow);
+      args.position.appendChild(htmlRow);
     return htmlRow;
   } catch (error) {
     console.log(
@@ -455,8 +455,8 @@ async function showSlidesInPresentationMode() {
 
     sameSlideGroup.forEach(
       (div) =>
-        (div.dataset.sameSlide =
-          hasDataRoot.dataset.root + children.indexOf(hasDataRoot))
+      (div.dataset.sameSlide =
+        hasDataRoot.dataset.root + children.indexOf(hasDataRoot))
     ); //We give each slideRow in toMerge[] a data-sameSlide attribute equal to the data-root attribute of the first element having a data-root attribute.
 
     if (sameSlideGroup.length >= 1)
@@ -668,7 +668,7 @@ function showOrHideSlide(
       if (
         (slideChildren.indexOf(slideChild) > 0 &&
           actor ===
-            getActor(slideChildren[slideChildren.indexOf(slideChild) - 1])) ||
+          getActor(slideChildren[slideChildren.indexOf(slideChild) - 1])) ||
         (lastActor &&
           slideChildren.indexOf(slideChild) === 0 &&
           actor === lastActor) ||
@@ -820,9 +820,9 @@ function showOrHideSlide(
 
             children.forEach(
               (child) =>
-                (child.dataset.sameSlide =
-                  child.dataset.root +
-                  Array.from(containerDiv.children).indexOf(children[0]))
+              (child.dataset.sameSlide =
+                child.dataset.root +
+                Array.from(containerDiv.children).indexOf(children[0]))
             );
 
             showOrHideSlide(true, children[0].dataset.sameSlide);
@@ -924,16 +924,16 @@ function getEditModeButton(): Button {
 async function addDataGroupsToContainerChildren(
   titleClass: string = "Title",
   titleRow: HTMLElement,
-  htmlRows:HTMLElement[]
+  htmlRows: HTMLElement[]
 ) {
   if (!titleRow || !isTitlesContainer(titleRow)) return;
   htmlRows
     .filter(div =>
       (div.dataset.root && div.dataset.root === titleRow.dataset.root)
-    ||
-    (div.dataset.isPlaceHolderIn && div.dataset.isPlaceHolderIn === titleRow.dataset.root)
+      ||
+      (div.dataset.isPlaceHolderIn && div.dataset.isPlaceHolderIn === titleRow.dataset.root)
     )
-    .forEach(div=>div.dataset.group = titleRow.dataset.root);
+    .forEach(div => div.dataset.group = titleRow.dataset.root);
 
   htmlRows.forEach(div => {
     if (div.dataset.group) return;
@@ -942,7 +942,7 @@ async function addDataGroupsToContainerChildren(
     if (!previous.dataset.group) return;
     div.dataset.group = previous.dataset.group
   });
-  
+
 
   return;
   //If a titleRow div is passed, we will give all its siblings a data-group = the data-root of titleRow, and will then return
@@ -1605,12 +1605,12 @@ function showPrayers(args: {
   clearContainerDiv?: boolean;
   clearRightSideBar?: boolean;
   position?:
-    | {
-        el: HTMLElement;
-        beforeOrAfter: InsertPosition;
-      }
-    | HTMLElement
-    | DocumentFragment;
+  | {
+    el: HTMLElement;
+    beforeOrAfter: InsertPosition;
+  }
+  | HTMLElement
+  | DocumentFragment;
   wordTable?: string[][];
   languages?: string[];
 }): HTMLDivElement[] {
@@ -1646,7 +1646,7 @@ function showPrayers(args: {
   if (args.clearRightSideBar === true) sideBarTitlesContainer.innerHTML = ""; //this is the right side bar where the titles are displayed for navigation purposes
 
   let date: string,
-        dataRoot:string,
+    dataRoot: string,
     tables: string[][][] = [];
 
   if (!args.wordTable) {
@@ -1678,7 +1678,7 @@ function showPrayers(args: {
 
   //We will return an HTMLDivElement[] of all the divs that will be created from wordTable
 
-  let tblHtmlDivs: HTMLDivElement[] = [], entireTable:string[][];
+  let tblHtmlDivs: HTMLDivElement[] = [], entireTable: string[][];
   tables.forEach((table) => {
     if (!table) return;
     entireTable = unfoldPlaceHolders(table);
@@ -1686,42 +1686,42 @@ function showPrayers(args: {
     entireTable
       .map((row) => {
         if (!row[0].startsWith(Prefix.same)) dataRoot = splitTitle(row[0])[0];//Each time a row has its own title (which means the row is the first row in a table), we will set the dataset.root of this row and the following rows to the value of row[0]
-      let divs = processRow(row, dataGroup, dataRoot);
-      if (!divs || divs.length === 0) return;
-      tblHtmlDivs.push(...divs);
-    });
+        let divs = processRow(row, dataGroup, dataRoot);
+        if (!divs || divs.length === 0) return;
+        tblHtmlDivs.push(...divs);
+      });
   });
 
   return tblHtmlDivs;
-  
-  function unfoldPlaceHolders(table:string[][]):string[][]{
-    if(!table.find(row=>row[0].startsWith(Prefix.placeHolder))) return table;
-    
+
+  function unfoldPlaceHolders(table: string[][]): string[][] {
+    if (!table.find(row => row[0].startsWith(Prefix.placeHolder))) return table;
+
     let newTable: string[][] = [...table],
       placeHolder: string[][],
       placeHolders = table.filter(row => row[0].startsWith(Prefix.placeHolder));
 
     placeHolders
       .forEach(row => {
-      placeHolder = findTable(row[1], getTablesArrayFromTitlePrefix(row[1])) || undefined;
-      
-      if (!placeHolder) return;
+        placeHolder = findTable(row[1], getTablesArrayFromTitlePrefix(row[1])) || undefined;
 
-      if (placeHolder.find(row=>row[0].startsWith(Prefix.placeHolder)))
-      //If the returned table also has placeHolders amongst its rows, we will unfold the placeHolders.
-        placeHolder = unfoldPlaceHolders(placeHolder);
-      
+        if (!placeHolder) return;
+
+        if (placeHolder.find(row => row[0].startsWith(Prefix.placeHolder)))
+          //If the returned table also has placeHolders amongst its rows, we will unfold the placeHolders.
+          placeHolder = unfoldPlaceHolders(placeHolder);
+
         newTable.splice(newTable.indexOf(row), 1, ...placeHolder);
-    
-    });
-    
+
+      });
+
     return newTable
 
   };
 
   function processRow(row: string[], dataGroup: string, dataRoot): HTMLDivElement[] {
     //We check if the row (string[]) is not a mere placeholder for another table
-    
+
     if (row[0].startsWith(Prefix.placeHolder))
       return processPlaceHolder(row, dataGroup) || undefined;
     //If the row is a placeholder, we retrieve the table refrenced in row[1]
@@ -1762,7 +1762,7 @@ function showPrayers(args: {
       }); //We give each html row created a data-is-placeholder-in attribute equal to the main table for which the placeHolder is inserted;
   }
 
-  function createElement(row: string[], dataGroup: string, dataRoot:string): HTMLDivElement {
+  function createElement(row: string[], dataGroup: string, dataRoot: string): HTMLDivElement {
     if (!row) return;
     if (row[0] === Prefix.placeHolder) {
       processPlaceHolder(row, dataGroup);
@@ -1846,11 +1846,11 @@ async function setCSS(htmlRows: HTMLElement[]) {
       //This is the div where the titles of the prayer are displayed. We will add an 'on click' listner that will collapse the prayers
       row.role = "button";
 
-     /*  addDataGroupsToContainerChildren(
-        row.classList[row.classList.length - 1],
-        row,
-        htmlRows
-      ); */
+      /*  addDataGroupsToContainerChildren(
+         row.classList[row.classList.length - 1],
+         row,
+         htmlRows
+       ); */
 
       (async function addPlusAndMinusSigns() {
         let defLangParag = row.querySelector(
@@ -1885,7 +1885,7 @@ async function setCSS(htmlRows: HTMLElement[]) {
 
     if (
       row.dataset.root
-        &&
+      &&
       [
         Prefix.praxis,
         Prefix.katholikon,
@@ -2006,13 +2006,13 @@ function collapseOrExpandText(params: {
   Array.from(containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
     .filter(
       (div) =>
-      div.dataset.group
-      &&
-      div !== params.titleRow
+        div.dataset.group
         &&
-      !div.classList.contains("Expandable")
+        div !== params.titleRow
         &&
-        div.children.length>0
+        !div.classList.contains("Expandable")
+        &&
+        div.children.length > 0
         &&
         div.dataset.group === params.titleRow.dataset.root
     )
@@ -2079,32 +2079,35 @@ function collapseAllTitles(
 /**
  * Creates an array from all the children of a given html element (container), and filteres the array based on the data-root attribute provided, and on the criteria provided in options
  * @param {HTMLElement | DocumentFragment} container - the html element containing the children that we want to filter based on their data-root attributed
- * @param {string} dataRoot - the data-root attribute based on which we want to filter the children of container
+ * @param {string} dataSet - the data-root attribute based on which we want to filter the children of container
  * @param {{equal?:boolean, includes?:boolean, startsWith?:boolean, endsWith?:boolean}} options - the criteria according to which we want the data-root attribute of each child element to mach dataRoot: absolutely equal (===)? startsWith(dataRoot)?, etc.
  * @returns {HTMLDivElement[]} - the children of container filtered based on their data-root attributes
  */
-function selectElementsByDataRoot(
+function selectElementsByDataSetValue(
   container: HTMLElement | DocumentFragment,
-  dataRoot: string,
+  dataSet: string,
   options?: {
     equal?: boolean;
     includes?: boolean;
     startsWith?: boolean;
     endsWith?: boolean;
-  }
+  },
+  dataSetName:string = 'root',
 ): HTMLDivElement[] {
-  let children = Array.from(container.querySelectorAll("div")).filter(
-    (div) => div.dataset.root
+  dataSetName = [["root", "data-root"], ["group", 'data-group']].find(el => el[0] === dataSetName)[1];
+  
+    let children = Array.from(container.querySelectorAll("div")).filter(
+    (div) => div.attributes[dataSetName]
   ) as HTMLDivElement[];
   if (!options) options = { equal: true };
   if (options.equal)
-    return children.filter((div) => div.dataset.root === dataRoot);
+    return children.filter((div) => div.attributes[dataSetName].value === dataSet);
   else if (options.includes)
-    return children.filter((div) => div.dataset.root.includes(dataRoot));
+    return children.filter((div) => div.attributes[dataSetName].value.includes(dataSet));
   else if (options.startsWith)
-    return children.filter((div) => div.dataset.root.startsWith(dataRoot));
+    return children.filter((div) => div.attributes[dataSetName].value.startsWith(dataSet));
   else if (options.endsWith)
-    return children.filter((div) => div.dataset.root.endsWith(dataRoot));
+    return children.filter((div) => div.attributes[dataSetName].value.endsWith(dataSet));
 }
 
 /**
@@ -2394,7 +2397,7 @@ function findTable(
       tableTitle,
       " prayersArray =",
       PrayersArraysKeys.find((array) => array[2]() === prayersArray)[1] ||
-        undefined
+      undefined
     );
 
   return table;
@@ -2665,18 +2668,18 @@ function showSettingsPanel() {
           "You cannot not desactivate the default language. You can replace it by choosing another language"
         );
 
-      else if (userLanguages.indexOf(lang) === 0 && index === 1 && userLanguages[index]){
+      else if (userLanguages.indexOf(lang) === 0 && index === 1 && userLanguages[index]) {
         //If the language is already set as defaultLanguage (it is set at index 0), and we want to make it the foreign language (index = 1), we check if the value of index 1 (the index of the foreign language) is not undefined. If so, we make the foreign language default language and we replace it with lang
         userLanguages[0] = userLanguages[index];
         userLanguages[index] = lang
       }
 
-       else if (userLanguages.indexOf(lang) === 0 && index === 1 && !userLanguages[index])
+      else if (userLanguages.indexOf(lang) === 0 && index === 1 && !userLanguages[index])
         return alert(
           "You must first replace the default language by another language before being able to set it as foreign language"
         );
 
-       else if (userLanguages.indexOf(lang) === 1 && index === 0) {
+      else if (userLanguages.indexOf(lang) === 1 && index === 0) {
         //If the language is already set as foreignLanguage (it is set at index 1), and we want to make it the default language (index = 0). If so, we set the foreign language as undefined default language and we set the language as default language
         userLanguages[1] = undefined;
         userLanguages[index] = lang;
@@ -2684,7 +2687,7 @@ function showSettingsPanel() {
       else if (userLanguages.indexOf(lang) < 0)
         //If the array does not contain the language at any of its indexes, we add it at the index passed as argument
         userLanguages[index] = lang;
-      
+
 
       defaultLanguage = userLanguages[0];
       foreingLanguage = userLanguages[1];
@@ -3010,16 +3013,16 @@ function insertPrayersAdjacentToExistingElement(args: {
 
   return args.tables
     .map((table) => {
-    if (!table || table.length === 0) return;
-    return showPrayers({
-      wordTable: table,
-      position: args.position,
-      languages: args.languages,
-      container: args.container,
-      clearRightSideBar: false,
-      clearContainerDiv: false,
+      if (!table || table.length === 0) return;
+      return showPrayers({
+        wordTable: table,
+        position: args.position,
+        languages: args.languages,
+        container: args.container,
+        clearRightSideBar: false,
+        clearContainerDiv: false,
+      });
     });
-  });
 }
 
 /**
@@ -11318,9 +11321,9 @@ async function fetchSynaxariumArabic(month: number) {
       .forEach((obj) => {
         let response = sendHttpRequest(
           apiRoot +
-            "GetSynaxariumStory?id=" +
-            String(obj.id) +
-            "&synaxariumSourceId=1"
+          "GetSynaxariumStory?id=" +
+          String(obj.id) +
+          "&synaxariumSourceId=1"
         );
         if (!response) return;
 
@@ -11413,8 +11416,8 @@ async function fetchSynaxariumFrench(months: string[]) {
       .filter((link: HTMLAnchorElement) =>
         link.href.includes(
           "/index.php/livre-1-les-temoins-de-la-foi/le-synaxaire/" +
-            monthQuery +
-            "/"
+          monthQuery +
+          "/"
         )
       )
       .forEach(async (link) => {
@@ -11547,10 +11550,10 @@ function HelperPrepareArabicChant() {
       array.push(part[i]);
       array.push(
         " " +
-          String.fromCharCode(beamedEighthNoteCode).repeat(2) +
-          " " +
-          part[i + part.length / 2] +
-          "_&&_"
+        String.fromCharCode(beamedEighthNoteCode).repeat(2) +
+        " " +
+        part[i + part.length / 2] +
+        "_&&_"
       );
     }
   }
@@ -11559,11 +11562,11 @@ function HelperPrepareArabicChant() {
   localStorage.temp = text;
 }
 
-function cleanReadingArray(readingArray:string[][][]){
+function cleanReadingArray(readingArray: string[][][]) {
   let date: string,
     titles: string[],
     similar: Set<string[]> = new Set();
-  
+
   readingArray
     .forEach(table => {
       if (table.length < 1) return;
@@ -11576,19 +11579,19 @@ function cleanReadingArray(readingArray:string[][][]){
           .map(table => table[0][0]);
 
       if (titles.length < 2) return;
-      
-  
+
+
       if (!similar.has(titles)
-        && !Array.from(similar).find(array=>array.includes(titles[0]))
+        && !Array.from(similar).find(array => array.includes(titles[0]))
       ) {
         titles.push(date);
         similar.add(titles)
       };
-      
-    });  
+
+    });
   console.log(Array.from(similar));
 
-  function removeSpaces(text:string):string{
+  function removeSpaces(text: string): string {
     return text.replaceAll(' ', '')
   }
 

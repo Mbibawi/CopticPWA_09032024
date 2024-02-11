@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = "v5.4.0 (Major change in the hadling of PlaceHolder elements: added unfoldPlaceHolder(). Fixed the GodHaveMercyOnUsForBishop issue)";
+const version = "v5.4.1 (Major change in the hadling of PlaceHolder elements: added unfoldPlaceHolder(). Fixed the GodHaveMercyOnUsForBishop issue)";
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById("containerDiv");
 const leftSideBar = document.getElementById("leftSideBar");
