@@ -116,7 +116,7 @@ class Button {
   }
 }
 
-const btnMain: Button = new Button({
+const btnMainMenu: Button = new Button({
   btnID: "btnMain",
   label: {
     AR: "العودة إلى القائمة الرئيسية",
@@ -124,7 +124,7 @@ const btnMain: Button = new Button({
     EN: "Back to the main menu",
   },
   onClick: () => {
-    btnMain.children = [
+    btnMainMenu.children = [
       btnMass,
       btnIncenseOffice,
       btnDayReadings,
@@ -133,7 +133,7 @@ const btnMain: Button = new Button({
     ];
 
     if (localStorage.editingMode === "true")
-      btnMain.children.push(getEditModeButton());
+      btnMainMenu.children.push(getEditModeButton());
 
     if (Season === Seasons.KiahkWeek1 || Season === Seasons.KiahkWeek2)
       btnPsalmody.label = {
@@ -162,7 +162,7 @@ const btnMain: Button = new Button({
       ).repeat(3);
 
       //We create html elemements representing each of btnMain children. The created buttons will be appended to containerDiv directly
-      btnMain.children
+      btnMainMenu.children
         .map((btn) => {
           return createBtn({
             btn: btn,
@@ -214,7 +214,7 @@ const btnMain: Button = new Button({
           });
 
         createBtn({
-          btn: btnMain,
+          btn: btnMainMenu,
           btnsContainer: containerDiv,
           btnClass: "mainPageBtns",
         }).style.backgroundImage = images[0]; //Finlay, we create and extra html button for btnMain, in order for the user to be able to navigate back to the btnMain menu of buttons
@@ -223,7 +223,7 @@ const btnMain: Button = new Button({
   },
 });
 
-const btnGoBack: Button = new Button({
+const btnGoToPreviousMenu: Button = new Button({
   btnID: "btnGoBack",
   label: { AR: "السابق", FR: "Retour", EN: "Go Back" },
   onClick: () => {
@@ -482,7 +482,7 @@ const btnMassStCyril: Button = new Button({
       ],
       ...MassPrayersSequences.Communion,
     ];
- 
+
     return btnMassStCyril.prayersSequence;
   },
   afterShowPrayers: async () => {
@@ -573,8 +573,8 @@ const btnMassStBasil: Button = new Button({
         btnID: "secondStBasilReconciliation",
         label:
         {
-            FR: secondBasilReconciliation[0][2],
-            AR: secondBasilReconciliation[0][4],
+          FR: secondBasilReconciliation[0][2],
+          AR: secondBasilReconciliation[0][4],
         },
         prayers: [secondBasilReconciliation],
         languages: btn.languages,
@@ -663,7 +663,7 @@ const btnMassStBasil: Button = new Button({
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
       let spasmosTitle: string = Prefix.massCommon + "SpasmosAdamLong";
 
-      let anchorTitle = Prefix.massCommon+"DiaconResponseKissEachOther&D=$copticFeasts.AnyDay";
+      let anchorTitle = Prefix.massCommon + "DiaconResponseKissEachOther&D=$copticFeasts.AnyDay";
 
       insertSpasmos(
         spasmosTitle,
@@ -2300,7 +2300,7 @@ async function getGospelReadingAndResponses(args: {
 
           else if (table[0][0].includes("Psalm&D="))
             //We are within a Mass or liturgy context, and need to display the Psalm. We will hence change the place in which the text will be inserted.
-            el = gospelIntroduction[gospelIntroduction.length-1];
+            el = gospelIntroduction[gospelIntroduction.length - 1];
         })();
 
         if (!el) return console.log('The insertion point is not valid');

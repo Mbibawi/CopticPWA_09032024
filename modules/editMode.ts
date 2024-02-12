@@ -54,7 +54,7 @@ function startEditingMode(args: {
   containerDiv.style.gridTemplateColumns = "100%";
 
   if (!args.languages)
-    args.languages = getLanguages(args.arrayName) || allLanguages.map(lang=>lang[0]);
+    args.languages = getLanguages(args.arrayName) || allLanguages.map(lang => lang[0]);
 
   function addNewTable() {
     args.arrayName = "PrayersArray"; //!CAUTION: if we do not set the arrayName to an existing array, it will yeild to an error when the array name will be evaluated by eval(arrayName), and the saveModifiedArray() will stop without exporting the text to file
@@ -740,7 +740,7 @@ function replaceHtmlQuotes(innerHtml: string, lang: string): string {
  * @param {HTMLElement} row - the div (row) below which we will add a row
  * @param {string} dataRoot - a string representing the data-root value that will be givent to the new div (row) added. If missing, the user will be prompted to provide the dataRoot, with, as default value, the data-root value of 'row'
  */
-function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title?: string): HTMLElement|void {
+function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title?: string): HTMLElement | void {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
 
@@ -762,12 +762,13 @@ function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title
       Object.entries(getMainTableTitle(htmlRow))
         .forEach(entry =>
           entry[0] === 'title' ? newRow.title = entry[1] : newRow.dataset.arrayName = entry[1]);
-    
-        newRow.dataset.root = splitTitle(newRow.title)[0];
-        newRow.dataset.group = newRow.dataset.root;
-    
+
+    newRow.dataset.root = splitTitle(newRow.title)[0];
+    newRow.dataset.group = newRow.dataset.root;
+
     function getMainTableTitle(div: HTMLDivElement): {
-      title: string; arrayName:string}{
+      title: string; arrayName: string
+    } {
       let previous = div.previousElementSibling as HTMLDivElement;
       while (
         //We go up as long as the previous element has dataset.displayedPlaceHolder === div.dataset.displayedPlaceHolder
@@ -775,8 +776,8 @@ function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title
         &&
         previous.dataset.displayedPlaceHolder === div.dataset.displayedPlaceHolder)
         getMainTableTitle(previous as HTMLDivElement);
-        
-      return {title: previous.title, arrayName: previous.dataset.arrayName};//This is the main div where the PlaceHolder is displayed before being extended when clicked on
+
+      return { title: previous.title, arrayName: previous.dataset.arrayName };//This is the main div where the PlaceHolder is displayed before being extended when clicked on
     }
   }
 
@@ -788,20 +789,20 @@ function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title
 
   if (!title) title = prompt("Provide the Title of the new Row", htmlRow.title);
   if (!title) return alert('You must provide a valide name for the table that will be put as PlaceHolder');
-  
+
   if (isPlaceHolder) newRow.dataset.isPlaceHolder = title;
 
-  
+
   if (!newRow.dataset.root) //If not already set because it is a new PlaceHolder row
     newRow.dataset.root = splitTitle(title)[0];
-  
-  
+
+
   if (!newRow.title) //If not already set because it is a new PlaceHolder row
     newRow.title = title;
 
-  if(!newRow.dataset.arrayName) //If not already set because it is a new PlaceHolder row
+  if (!newRow.dataset.arrayName) //If not already set because it is a new PlaceHolder row
     newRow.dataset.arrayName = prompt("Provide the name of the array", htmlRow.dataset.arrayName);
-  
+
   if (!isPlaceHolder && splitTitle(title)[1])
     newRow.classList.add(splitTitle(title)[1]);
 
@@ -818,7 +819,7 @@ function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title
       p.classList.add(p.lang.toUpperCase());
       p.contentEditable = "true";
     });
-  
+
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
 function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
@@ -901,7 +902,7 @@ function createHtmlElementForPrayerEditingMode(args: {
     htmlRow.dataset.root = args.titleBase;
     htmlRow.dataset.group = args.titleBase; //The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
     if (args.tblRow[0].startsWith(Prefix.same)) htmlRow.dataset.isPrefixSame = 'true';//We need this in order to be able to determine whether when exporting the table, the row should be a row starting with Prefix.same, or should be given the full title as the 1st row of the table
-    
+
     if (actorClass) htmlRow.classList.add(actorClass);
   } else if (isPlaceHolder) {
     args.tblRow = [...args.tblRow]; //We create a copy of the row
@@ -1072,7 +1073,7 @@ function addTableToSequence(htmlParag: HTMLElement) {
       createHtmlElementForPrayerEditingMode({
         tblRow: Array.from(row.querySelectorAll("p")).map((p) => p.innerText),
         titleBase: row.dataset.root,
-        languagesArray: allLanguages.map(lang=>lang[0]),
+        languagesArray: allLanguages.map(lang => lang[0]),
         position: document.getElementById("showSequence") as HTMLElement,
       });
     });
@@ -1131,7 +1132,7 @@ function showSequence(
           (p: HTMLElement) => p.innerText
         ),
         titleBase: title,
-        languagesArray: allLanguages.map(lang=>lang[0]),
+        languagesArray: allLanguages.map(lang => lang[0]),
         position: newDiv,
       });
     });
@@ -1506,7 +1507,7 @@ function showBtnInEditingMode(btn: Button) {
 
     btn.children.forEach((childBtn: Button) => {
       //for each child button that will be created, we set btn as its parent in case we need to use this property on the button
-      if (btn.btnID != btnGoBack.btnID) childBtn.parentBtn = btn;
+      if (btn.btnID != btnGoToPreviousMenu.btnID) childBtn.parentBtn = btn;
       //We create the html element reprsenting the childBtn and append it to btnsDiv
       createBtn({
         btn: childBtn,
@@ -1524,8 +1525,8 @@ function showBtnInEditingMode(btn: Button) {
 
   if (
     btn.parentBtn &&
-    btn.btnID !== btnGoBack.btnID &&
-    !sideBarBtnsContainer.querySelector("#" + btnGoBack.btnID)
+    btn.btnID !== btnGoToPreviousMenu.btnID &&
+    !sideBarBtnsContainer.querySelector("#" + btnGoToPreviousMenu.btnID)
   ) {
     //i.e., if the button passed to showChildButtonsOrPrayers() has a parentBtn property and it is not itself a btnGoback (which we check by its btnID property), we wil create a goBack button and append it to the sideBar
     //the goBack Button will only show the children of btn in the sideBar: it will not call showChildButonsOrPrayers() passing btn to it as a parameter. Instead, it will call a function that will show its children in the SideBar
@@ -1533,21 +1534,21 @@ function showBtnInEditingMode(btn: Button) {
     lastClickedButton = btn;
   }
   if (
-    btn.btnID !== btnMain.btnID && //The button itself is not btnMain
-    btn.btnID !== btnGoBack.btnID && //The button itself is not btnGoBack
+    btn.btnID !== btnMainMenu.btnID && //The button itself is not btnMain
+    btn.btnID !== btnGoToPreviousMenu.btnID && //The button itself is not btnGoBack
     !sideBarBtnsContainer.querySelector("#" + "settings") &&
-    !sideBarBtnsContainer.querySelector("#" + btnMain.btnID) //No btnMain is displayed in the sideBar
+    !sideBarBtnsContainer.querySelector("#" + btnMainMenu.btnID) //No btnMain is displayed in the sideBar
   ) {
     createBtn({
-      btn: btnMain,
+      btn: btnMainMenu,
       btnsContainer: sideBarBtnsContainer,
-      btnClass: btnMain.cssClass,
+      btnClass: btnMainMenu.cssClass,
     });
   }
 
   if (btn.docFragment) containerDiv.appendChild(btn.docFragment);
 
-  if (btn.btnID === btnMain.btnID) addSettingsButton();
+  if (btn.btnID === btnMainMenu.btnID) addSettingsButton();
 }
 
 function modifyAllSelectedText() {

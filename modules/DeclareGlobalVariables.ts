@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.4.3 (Fixes to the collapsing of tables, and the positining of some elements: Psalm, Great Lent Gode Have Mercy, etc.)";
+  "v5.4.5 (Fixed navigation buttons issue)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
