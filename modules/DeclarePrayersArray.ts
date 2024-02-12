@@ -3522,7 +3522,7 @@ PrayersArray= [[
   Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay", 
   ],
   [
-  Prefix.same+"&C=Priest", 
+    Prefix.commonIncense+"LiturgyEnd&D=$copticFeasts.AnyDay&C=Priest", 
   "", 
   "Que l’amour de Dieu le Père, la grâce du Fils unique notre Seigneur, notre Dieu et notre Sauveur Jésus-Christ, la communion et les dons du Saint-Esprit soient avec vous tous. Allez en paix, que le Seigneur soit avec vous tous, Amen !", 
   "", 

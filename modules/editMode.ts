@@ -900,7 +900,8 @@ function createHtmlElementForPrayerEditingMode(args: {
     htmlRow.title = args.titleBase + "&C=" + actorClass; //We need to record the full title of each row (i.e. row[0]) in order to be able to add it when we convert the html element into an element in an Array
     htmlRow.dataset.root = args.titleBase;
     htmlRow.dataset.group = args.titleBase; //The data-group attribute aims at making the row part of the same of group of rows that will be shown or hidden when we click on the title
-
+    if (args.tblRow[0].startsWith(Prefix.same)) htmlRow.dataset.isPrefixSame = 'true';//We need this in order to be able to determine whether when exporting the table, the row should be a row starting with Prefix.same, or should be given the full title as the 1st row of the table
+    
     if (actorClass) htmlRow.classList.add(actorClass);
   } else if (isPlaceHolder) {
     args.tblRow = [...args.tblRow]; //We create a copy of the row

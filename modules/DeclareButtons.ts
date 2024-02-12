@@ -380,11 +380,10 @@ const btnIncenseDawn: Button = new Button({
         (async function insertEklonominTaghonata() {
           let efnotiNaynan: HTMLDivElement[] = selectElementsByDataSetValue(
             btnDocFragment,
-            Prefix.commonPrayer + "EfnotiNaynan&D=$copticFeasts.AnyDay"
+            Prefix.commonPrayer + "EfnotiNaynan&D=$copticFeasts.AnyDay", undefined, 'group'
           );
 
-          let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling
-            .nextSibling as HTMLElement; //This is the html div after "Kyrie Elison 3 times"
+          let insertion = efnotiNaynan[efnotiNaynan.length - 1].nextSibling as HTMLElement; //This is the end of the efnotiNaynan
           let godHaveMercy = findTable(Prefix.incenseDawn + "GodHaveMercyOnUs&D=$Seasons.GreatLent", IncensePrayersArray);
 
           if (!godHaveMercy) return console.log("Didn't find God Have Mercy for Great Lent");
@@ -572,9 +571,10 @@ const btnMassStBasil: Button = new Button({
           Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay"
         )[0].nextElementSibling as HTMLDivElement, //We insert the button after the title
         btnID: "secondStBasilReconciliation",
-        label: {
-          AR: secondBasilReconciliation[0][2],
-          FR: secondBasilReconciliation[0][4],
+        label:
+        {
+            FR: secondBasilReconciliation[0][2],
+            AR: secondBasilReconciliation[0][4],
         },
         prayers: [secondBasilReconciliation],
         languages: btn.languages,
@@ -663,11 +663,11 @@ const btnMassStBasil: Button = new Button({
       //We insert it during the Saint Mary Fast and on every 21th of the coptic month
       let spasmosTitle: string = Prefix.massCommon + "SpasmosAdamLong";
 
-      let anchorTitle = Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay";
+      let anchorTitle = Prefix.massCommon+"DiaconResponseKissEachOther&D=$copticFeasts.AnyDay";
 
       insertSpasmos(
         spasmosTitle,
-        selectElementsByDataSetValue(btnDocFragment, anchorTitle, undefined, 'group')[3]
+        selectElementsByDataSetValue(btnDocFragment, anchorTitle)[0]
       );
       anchorTitle = Prefix.massCommon + "SpasmosWatesShort&D=$copticFeasts.AnyDay"
       //Insert Wates Spasmoses
@@ -2252,7 +2252,8 @@ async function getGospelReadingAndResponses(args: {
     Prefix.commonPrayer + "GospelIntroduction&D=$copticFeasts.AnyDay";
 
   let gospelIntroduction =
-    selectElementsByDataSetValue(args.container, anchorDataRoot, undefined, 'group');
+    selectElementsByDataSetValue(args.container, anchorDataRoot, undefined, 'group')
+      .filter(div => !isCommentContainer(div));//!We do not include the comments because if the user hides them, the index of the elements will change
 
 
   if (args.isMass && gospelIntroduction.length < 1)
@@ -2299,7 +2300,7 @@ async function getGospelReadingAndResponses(args: {
 
           else if (table[0][0].includes("Psalm&D="))
             //We are within a Mass or liturgy context, and need to display the Psalm. We will hence change the place in which the text will be inserted.
-            el = gospelIntroduction[gospelIntroduction.length - 2];
+            el = gospelIntroduction[gospelIntroduction.length-1];
         })();
 
         if (!el) return console.log('The insertion point is not valid');

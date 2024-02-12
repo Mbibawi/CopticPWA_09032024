@@ -1957,28 +1957,37 @@ function collapseOrExpandText(params: {
   }
   togglePlusAndMinusSignsForTitles(params.titleRow);
 
-  //Hiding or showing the elements linked to the title (titleRow)
-  Array.from(containerDiv.querySelectorAll("div") as NodeListOf<HTMLDivElement>)
-    .filter(
-      (div) =>
-        div.dataset.group
+  let children =
+    Array.from(containerDiv.querySelectorAll('div') as NodeListOf<HTMLElement>)
+    .filter(div => div.dataset.group); //!We must use querySelectorAll because some elements are not direct children of containerDiv (e.g. they may be nested in an expandable element)
+
+  let sameDataGroupTitles =
+    children
+      .filter((div) =>
+      isTitlesContainer(div)
         &&
-        div !== params.titleRow
-        &&
-        !div.classList.contains("Expandable")
-        &&
-        div.children.length > 0
-        &&
-        div.dataset.group === params.titleRow.dataset.root
-    )
-    .forEach((div) => {
-      if (
-        params.titleRow.dataset.isCollapsed &&
-        !div.classList.contains(hidden)
-      )
+        div.dataset.group === params.titleRow.dataset.group
+        );//Those are the "Title" divs having the same data-group as params.titleRow
+    
+  if(sameDataGroupTitles.indexOf(params.titleRow) ===0){
+    //if params.titleRow is the first title having the same data-group, we will toggle the 'hidden' class for all the div elements with the same data-group.
+    toggleHidden(children.filter(div => div !==params.titleRow && div.dataset.group === params.titleRow.dataset.group));  
+  }else{
+    //we will toggle the 'hidden' class for all the div elements with the same data-root.
+    toggleHidden(children.filter(div => div !==params.titleRow && div.dataset.root === params.titleRow.dataset.root));
+  }
+
+
+    function toggleHidden(htmlElements:HTMLElement[]){
+      htmlElements
+      .forEach(div=>
+     {
+      if (params.titleRow.dataset.isCollapsed && !div.classList.contains(hidden))
         div.classList.add(hidden);
-      else if (div.classList.contains(hidden)) div.classList.remove(hidden);
-    });
+      else if (div.classList.contains(hidden))
+        div.classList.remove(hidden)
+      });
+    };
 }
 
 /**
@@ -3208,11 +3217,9 @@ function convertHtmlDivElementsIntoArrayTable(
       })
     );
     let first: string;
-    if (row.dataset.isPlaceHolder) first = Prefix.placeHolder;
-    else if (
-      htmlRows.indexOf(row) > 0 &&
-      row.dataset.root === htmlRows[0].dataset.root
-    )
+    if (row.dataset.isPlaceHolder)
+      first = Prefix.placeHolder;
+    else if (row.dataset.isPrefixSame )
       first = Prefix.same + row.title.split(row.dataset.root)[1];
     else first = row.title;
 
