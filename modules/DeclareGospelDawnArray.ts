@@ -10535,7 +10535,7 @@ ReadingsArrays.GospelDawnArray= [[
   [
   [
   Prefix.gospelDawn+"Psalm&D=Pntl9&C=Title", 
-  " مزمور باكر (7:6, 8)", 
+  "مزمور باكر (7:6, 8)", 
   "Psaume 7:6, 8", 
   "Psalms 7:6, 8", 
   ],
@@ -10549,7 +10549,7 @@ ReadingsArrays.GospelDawnArray= [[
   [
   [
   Prefix.gospelDawn+"Gospel&D=Pntl9&C=Title", 
-  " متى (9:27-31)", 
+  "متى (9:27-31)", 
   "Mattieu 9:27-31", 
   "Matthew 9:27-31", 
   ],
@@ -10567,115 +10567,175 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "ولكنهما خرجا واشاعاه في تلك الارض كلها ", 
+  "ولكنهما خرجا واشاعاه في تلك الارض كلها", 
   "31 Mais eux, à peine sortis, parlèrent de lui dans toute cette région.", 
   "31 But when they had departed, they spread the news about Him in all that country.", 
   ],
   ],
   [
-    [
-    Prefix.gospelDawn+"Psalm&D=Jonah1&C=Title", 
-    "مزمور", 
-    "FR", 
-    "EN", 
-    ]
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah1&C=Title", 
+  "مزمور (103: 1،8)", 
+  "Psaume (103: 1,8)", 
+  "Psalm (103: 1,8)", 
   ],
   [
-    [
-    Prefix.incenseDawn+"Gospel&D=Jonah1&C=Title", 
-    " متى) 7 : 7 – 12 )", 
-    "Matthew (7: 6-12)", 
-    "Mathieu (7: 6-12)", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    "اسألوا تعطوا.اطلبوا تجدوا.اقرعوا يفتح لكم.لان كل من يسأل يأخذ.ومن يطلب يجد.ومن يقرع يفتح له.", 
-    "7 Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: 8 For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.", 
-    "7 Demandez, on vous donnera; cherchez, vous trouverez; frappez, on vous ouvrira. 8 En effet, quiconque demande reçoit, qui cherche trouve, à qui frappe on ouvrira.", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    "ام اي انسان منكم اذا سأله ابنه خبزا يعطيه حجرا. وان سأله سمكة يعطيه حية. فان كنتم وانتم اشرار تعرفون ان تعطوا اولادكم عطايا جيدة فكم بالحري ابوكم الذي في السموات يهب خيرات للذين يسألونه.", 
-    "9 Or what man is there of you, whom if his son ask bread, will he give him a stone? 10 Or if he ask a fish, will he give him a serpent? 11 If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?", 
-    "9 Ou encore, qui d'entre vous, si son fils lui demande du pain, lui donnera une pierre? 10 Ou s'il demande un poisson, lui donnera-t-il un serpent? 11 Si donc vous, qui êtes mauvais, savez donner de bonnes choses à vos enfants, combien plus votre Père qui est aux cieux, donnera-t-il de bonnes choses à ceux qui le lui demandent.", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    "فكل ما تريدون ان يفعل الناس بكم افعلوا هكذا انتم ايضا بهم.لان هذا هو الناموس والانبياء.", 
-    "12 Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.", 
-    "12 Ainsi, tout ce que vous voulez que les hommes fassent pour vous, faites-le vous mêmes pour eux: c'est la Loi et les Prophètes.", 
-    ],
-    ],
-  [
-    [
-    Prefix.gospelDawn+"Psalm&D=Jonah2&C=Title", 
-    "مزمور", 
-    "FR", 
-    "EN", 
-    ]
+  Prefix.gospelDawn+"Psalm&D=Jonah1&C=NoActor", 
+  "باركي يا نَفْسي الرَبَّ وكُلِّّ ما في بَاطِني لِيُبَارِكْ اسْمَهُ القُدُّوسْ، الرَبُّ رَحِيمٌ ورَؤوفْ، طَويلُ الرُّوحِ وكَثْيرِ الرَحْمَة.", 
+  "01 Bénis le Seigneur, ô mon âme, bénis son nom très saint, tout mon être ! 08 Le Seigneur est tendresse et pitié, lent à la colère et plein d'amour.", 
+  "01 Praise the Lord, my soul; all my inmost being, praise his holy name. 08 The Lord is compassionate and gracious, slow to anger, abounding in love.", 
+  ],
   ],
   [
-    [
-    Prefix.incenseDawn+"Gospel&D=Jonah2&C=Title", 
-    " لوقا ( 13 : 6 ـ 9 )", 
-    "Luc 13:6-9", 
-    "Luke 13:6-9", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    "وقال لهُم هذا المثل، كان لواحد شجرةُ تين مغروسةٌ في كرمةِ، فجاء يطلُبُ ثمرة فيها فلم يجد. فقال للكرَّام ها هي ثلاثُ سنين مُنذُ آتياني وأطلُب ثمرةً في شجرة التين هذه ولا أجد،", 
-    "Et il dit cette parabole: \"Un homme avait un figuier planté dans sa vigne. Il vint y chercher du fruit et n'en trouva pas. 7 Il dit alors au vigneron: \"Voilà trois ans que je viens chercher du fruit sur ce figuier et je n'en trouve pas.", 
-    "6 He also spoke this parable: A certain man had a fig tree planted in his vineyard, and he came seeking fruit on it and found none. 7 Then he said to the keeper of his vineyard, `Look, for three years I have come seeking fruit on this fig tree and find none.", 
-    ],
-    [
-    Prefix.same+"&C=NoActor", 
-    "اقطعها، فلماذا تُعطل الأرض أيضاً. فأجاب وقال لهُ يا سيِّدُ دعها هذه السَّنة أيضاً حتَّى أعزق تحتها وأسمدها، لعلها تُثمر في السَّنة الآتية فإن لم تُثمر تقطعها.", 
-    "Coupe-le. Pourquoi faut-il encore qu'il épuise la terre? 8 Mais l'autre lui répond: \"Maître, laisse-le encore cette année, le temps que je bêche tout autour et que je mette du fumier. 9 Peut-être donnera-t-il du fruit à l'avenir. Sinon, tu le couperas.\"", 
-    "Cut it down; why does it use up the ground?' 8 But he answered and said to him, `Sir, let it alone this year also, until I dig around it and fertilize it. 9 `And if it bears fruit, well. But if not, after that you can cut it down.'.", 
-    ],
-    ],
   [
-    [
-    Prefix.gospelDawn+"Psalm&D=Jonah3&C=Title", 
-    "مزمور", 
-    "FR", 
-    "EN", 
-    ]
+  Prefix.gospelDawn+"Gospel&D=Jonah1&C=Title", 
+  "متى (7: 6–12)", 
+  "Mathieu (7: 6-12)", 
+  "Matthew (7: 6-12)", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"لاَ تُعْطُوا الْقُدْسَ لِلْكِلاَب، وَلاَ تَطْرَحُوا دُرَرَكُمْ قُدَّامَ الْخَنَازِيرِ، لِئَلاَّ تَدُوسَهَا بِأَرْجُلِهَا وَتَلْتَفِتَ فَتُمَزِّقَكُمْ اِسْأَلُوا تُعْطَوْا اُطْلُبُوا تَجِدُوا اِقْرَعُوا يُفْتَحْ لَكُمْ لأَنَّ كُلَّ مَنْ يَسْأَلُ يَأْخُذُ، وَمَنْ يَطْلُبُ يَجِدُ، وَمَنْ يَقْرَعُ يُفْتَحُ لَهُ.\" ", 
+  "06 « Ne donnez pas aux chiens ce qui est sacré ; ne jetez pas vos perles aux pourceaux, de peur qu’ils ne les piétinent, puis se retournent pour vous déchirer. 7 Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you: 8 For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened.»", 
+  "6 Give not that which is holy unto the dogs, neither cast ye your pearls before swine, lest they trample them under their feet, and turn again and rend you. 7 Demandez, on vous donnera; cherchez, vous trouverez; frappez, on vous ouvrira. 8 En effet, quiconque demande reçoit, qui cherche trouve, à qui frappe on ouvrira.", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"أَمْ أَيُّ إِنْسَانٍ مِنْكُمْ إِذَا سَأَلَهُ ابْنُهُ خُبْزًا، يُعْطِيهِ حَجَرًا؟ وَإِنْ سَأَلَهُ سَمَكَةً، يُعْطِيهِ حَيَّةً؟ فَإِنْ كُنْتُمْ وَأَنْتُمْ أَشْرَارٌ تَعْرِفُونَ أَنْ تُعْطُوا أَوْلاَدَكُمْ عَطَايَا جَيِّدَةً، فَكَمْ بِالْحَرِيِّ أَبُوكُمُ الَّذِي فِي السَّمَاوَاتِ، يَهَبُ خَيْرَاتٍ لِلَّذِينَ يَسْأَلُونَهُ.\"", 
+  "9 Or what man is there of you, whom if his son ask bread, will he give him a stone? 10 Or if he ask a fish, will he give him a serpent? 11 If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?", 
+  "9 Ou encore, qui d'entre vous, si son fils lui demande du pain, lui donnera une pierre? 10 Ou s'il demande un poisson, lui donnera-t-il un serpent? 11 Si donc vous, qui êtes mauvais, savez donner de bonnes choses à vos enfants, combien plus votre Père qui est aux cieux, donnera-t-il de bonnes choses à ceux qui le lui demandent.", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "\"فَكُلُّ مَا تُرِيدُونَ أَنْ يَفْعَلَ النَّاسُ بِكُمُ افْعَلُوا هكَذَا أَنْتُمْ أَيْضًا بِهِمْ، لأَنَّ هذَا هُوَ النَّامُوسُ وَالأَنْبِيَاءُ.\"", 
+  "12 Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.", 
+  "12 Ainsi, tout ce que vous voulez que les hommes fassent pour vous, faites-le vous mêmes pour eux: c'est la Loi et les Prophètes.", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah2&C=Title", 
+  "مزمور (103: 9،14)", 
+  "Psaume (103: 14,9)", 
+  "Psalm (103: 14,9)", 
+  ],
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah2&C=NoActor", 
+  "لِأَنَّهُ يَعْرِفُ جِبْلَتَنَا. يَذْكُرُ أَنَّنَا تُرَابٌ نَحْنُ.لا يُحَاكِمُ إِلَى ٱلْأَبَدِ، وَلَا يَحْقِدُ إِلَى ٱلدَّهْرِ.", 
+  "14 Il sait de quoi nous sommes pétris, il se souvient que nous sommes poussière. 09 il n'est pas pour toujours en procès, ne maintient pas sans fin ses reproches ;", 
+  "14 for he knows how we are formed, he remembers that we are dust. 09 He will not always accuse, nor will he harbour his anger for ever.", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah2&C=Title", 
+  "لوقا (13: 6–9)", 
+  "Luc (13: 6-9)", 
+  "Luke (13: 6-9)", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "وَقَالَ هذَا الْمَثَلَ: كَانَتْ لِوَاحِدٍ شَجَرَةُ تِينٍ مَغْرُوسَةٌ فِي كَرْمِهِ، فَأَتَى يَطْلُبُ فِيهَا ثَمَرًا وَلَمْ يَجِدْ. فَقَالَ لِلْكَرَّامِ: \"هُوَذَا ثَلاَثُ سِنِينَ آتِي أَطْلُبُ ثَمَرًا فِي هذِهِ التِّينَةِ وَلَمْ أَجِدْ اِقْطَعْهَا لِمَاذَا تُبَطِّلُ الأَرْضَ أَيْضًا؟\".", 
+  "Et il dit cette parabole: \"Un homme avait un figuier planté dans sa vigne. Il vint y chercher du fruit et n'en trouva pas. 7 Il dit alors au vigneron: \"Voilà trois ans que je viens chercher du fruit sur ce figuier et je n'en trouve pas. Coupe-le. Pourquoi faut-il encore qu'il épuise la terre?", 
+  "6 He also spoke this parable: A certain man had a fig tree planted in his vineyard, and he came seeking fruit on it and found none. 7 Then he said to the keeper of his vineyard, \"Look, for three years I have come seeking fruit on this fig tree and find none. Cut it down; why does it use up the ground?\". ", 
+  ],
+  [
+  Prefix.same+"&C=NoActor", 
+  "فَأَجَابَ وَقَالَ لَهُ: \"يَا سَيِّدُ، اتْرُكْهَا هذِهِ السَّنَةَ أَيْضًا، حَتَّى أَنْقُبَ حَوْلَهَا وَأَضَعَ زِبْلاً فَإِنْ صَنَعَتْ ثَمَرًا، وَإِلاَّ فَفِيمَا بَعْدُ تَقْطَعُهَا\".", 
+  "8 Mais l'autre lui répond: \"Maître, laisse-le encore cette année, le temps que je bêche tout autour et que je mette du fumier. 9 Peut-être donnera-t-il du fruit à l'avenir. Sinon, tu le couperas.\"", 
+  "8 But he answered and said to him, `Sir, let it alone this year also, until I dig around it and fertilize it. 9 \"And if it bears fruit, well. But if not, after that you can cut it down\".", 
+  ],
+  ],
+  [
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah3&C=Title", 
+  "مزمور (103: 12،13)", 
+  "Psaume (103: 12,13)", 
+  "Psalm (103: 12,13)", 
+  ],
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah3&C=NoActor", 
+  "كَمَا يَتَرَأَفُ ٱلْأَبُ عَلَى ٱلْبَنِينَ يَتَرَأَفُ ٱلرَّبُّ عَلَى خَائِفِيهِ. كَبُعْدِ ٱلْمَشْرِقِ مِنَ ٱلْمَغْرِبِ أَبْعَدَ عَنَّا مَعَاصِيَنَا.", 
+  "13 comme la tendresse du père pour ses fils, la tendresse du Seigneur pour qui le craint ! 12 aussi loin qu'est l'orient de l'occident, il met loin de nous nos péchés.", 
+  "13 As a father has compassion on his children, so the Lord has compassion on those who fear him; as far as the east is from the west. 12 So far has he removed our transgressions from us.", 
+  ],
   ],
   [
   [
   Prefix.gospelDawn+"Gospel&D=Jonah3&C=Title", 
-  "", 
-  "FR", 
-  "Wednesday of JonahFast",  
+  "متى (11: 25–30)", 
+  "Matthieu (11: 25-30)", 
+  "Wednesday of JonahFast", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  "فِي ذلِكَ الْوَقْتِ أَجَابَ يَسُوعُ وَقَالَ: \"أَحْمَدُكَ أَيُّهَا الآبُ رَبُّ السَّمَاءِ وَالأَرْضِ، لأَنَّكَ أَخْفَيْتَ هذِهِ عَنِ الْحُكَمَاءِ وَالْفُهَمَاءِ وَأَعْلَنْتَهَا لِلأَطْفَالِ. نَعَمْ أَيُّهَا الآبُ، لأَنْ هكَذَا صَارَتِ الْمَسَرَّةُ أَمَامَكَ\".", 
+  "25 En ce temps-là, Jésus prit la parole et dit : « Père, Seigneur du ciel et de la terre, je proclame ta louange : ce que tu as caché aux sages et aux savants, tu l’as révélé aux tout-petits. 26 Oui, Père, tu l’as voulu ainsi dans ta bienveillance.»", 
+  "25 At that time Jesus answered and said, \"I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes\".", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  "\"كُلُّ شَيْءٍ قَدْ دُفِعَ إِلَيَّ مِنْ أَبِي، وَلَيْسَ أَحَدٌ يَعْرِفُ الابْنَ إِلاَّ الآبُ، وَلاَ أَحَدٌ يَعْرِفُ الآبَ إِلاَّ الابْنُ وَمَنْ أَرَادَ الابْنُ أَنْ يُعْلِنَ لَهُ\".", 
+  "27 « Tout m’a été remis par mon Père ; personne ne connaît le Fils, sinon le Père, et personne ne connaît le Père, sinon le Fils, et celui à qui le Fils veut le révéler ».", 
+  "26 \"Even so, Father: for so it seemed good in thy sight. 27 All things are delivered unto me of my Father: and no man knoweth the Son, but the Father; neither knoweth any man the Father, save the Son, and he to whomsoever the Son will reveal him\".", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  "\"تَعَالَوْا إِلَيَّ يَا جَمِيعَ الْمُتْعَبِينَ وَالثَّقِيلِي الأَحْمَالِ، وَأَنَا أُرِيحُكُمْ. اِحْمِلُوا نِيرِي عَلَيْكُمْ وَتَعَلَّمُوا مِنِّي، لأَنِّي وَدِيعٌ وَمُتَوَاضِعُ الْقَلْبِ، فَتَجِدُوا رَاحَةً لِنُفُوسِكُمْ لأَنَّ نِيرِي هَيِّنٌ وَحِمْلِي خَفِيفٌ\".", 
+  "28 « Venez à moi, vous tous qui peinez sous le poids du fardeau, et moi, je vous procurerai le repos. 29 Prenez sur vous mon joug, devenez mes disciples, car je suis doux et humble de cœur, et vous trouverez le repos pour votre âme. 30 Oui, mon joug est facile à porter, et mon fardeau, léger. »", 
+  "28 \"Come unto me, all ye that labour and are heavy laden, and I will give you rest. 29 Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. 30 For my yoke is easy, and my burden is light\".", 
   ],
   ],
   [
-    [
-    Prefix.gospelDawn+"Psalm&D=Jonah4&C=Title", 
-    "مزمور", 
-    "FR", 
-    "EN", 
-    ]
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah4&C=Title", 
+  "مزمور (30: 10،11)", 
+  "Psaume (30: 10,11)", 
+  "Psalm (30: 10,11)", 
+  ],
+  [
+  Prefix.gospelDawn+"Psalm&D=Jonah4&C=NoActor", 
+  "ٱسْتَمِعْ يَا رَبُّ وَٱرْحَمْنِي. يَا رَبُّ، كُنْ مُعِينًا لِي. حَوَّلْتَ نَوْحِي إِلَى رَقْصٍ لِي. حَلَلْتَ مِسْحِي وَمَنْطَقْتَنِي فَرَحًا.", 
+  "10 «Écoute, Seigneur, pitié pour moi ! Seigneur, viens à mon aide ! 11 Tu as changé mon deuil en une danse, mes habits funèbres en parure de joie.»", 
+  "10 \"Hear, Lord, and be merciful to me; Lord, be my help. 11 You turned my wailing into dancing;you removed my sackcloth and clothed me with joy\".", 
+  ],
   ],
   [
   [
   Prefix.gospelDawn+"Gospel&D=Jonah4&C=Title", 
-  "", 
-  "FR", 
+  "مرقس (8: 10-21)", 
+  "Marc (8: 10-21)", 
   "Thursday of JonahFast", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  "وَلِلْوَقْتِ دَخَلَ السَّفِينَةَ مَعَ تَلاَمِيذِهِ وَجَاءَ إِلَى نَوَاحِي دَلْمَانُوثَةَ، فَخَرَجَ الْفَرِّيسِيُّونَ وَابْتَدَأُوا يُحَاوِرُونَهُ طَالِبِينَ مِنْهُ آيَةً مِنَ السَّمَاءِ، لِكَيْ يُجَرِّبُوهُ. فَتَنَهَّدَ بِرُوحِهِ وَقَالَ: \"لِمَاذَا يَطْلُبُ هذَا الْجِيلُ آيَةً؟ اَلْحَقَّ أَقُولُ لَكُمْ: لَنْ يُعْطَى هذَا الْجِيلُ آيَةً\".", 
+  "10 Aussitôt, montant dans la barque avec ses disciples, il alla dans la région de Dalmanoutha. 11 Les pharisiens survinrent et se mirent à discuter avec Jésus ; pour le mettre à l’épreuve, ils cherchaient à obtenir de lui un signe venant du ciel. 12 Jésus soupira au plus profond de lui-même et dit : « Pourquoi cette génération cherche-t-elle un signe ? Amen, je vous le déclare : aucun signe ne sera donné à cette génération. »", 
+  "10 And straightway he entered into a ship with his disciples, and came into the parts of Dalmanutha. 11 And the Pharisees came forth, and began to question with him, seeking of him a sign from heaven, tempting him. 12 And he sighed deeply in his spirit, and saith, \"Why doth this generation seek after a sign? verily I say unto you, There shall no sign be given unto this generation\".", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  "ثُمَّ تَرَكَهُمْ وَدَخَلَ أَيْضًا السَّفِينَةَ وَمَضَى إِلَى الْعَبْرِ، وَنَسُوا أَنْ يَأْخُذُوا خُبْزًا، وَلَمْ يَكُنْ مَعَهُمْ فِي السَّفِينَةِ إِلاَّ رَغِيفٌ وَاحِدٌ. وَأَوْصَاهُمْ قَائِلاً: \"انْظُرُوا وَتَحَرَّزُوا مِنْ خَمِيرِ الْفَرِّيسِيِّينَ وَخَمِيرِ هِيرُودُسَ\".", 
+  "13 Puis il les quitta, remonta en barque, et il partit vers l’autre rive. 14 Les disciples avaient oublié d’emporter des pains ; ils n’avaient qu’un seul pain avec eux dans la barque. 15 Or Jésus leur faisait cette recommandation : « Attention ! Prenez garde au levain des pharisiens et au levain d’Hérode ! »", 
+  "13 And he left them, and entering into the ship again departed to the other side. 14 Now the disciples had forgotten to take bread, neither had they in the ship with them more than one loaf. 15 And he charged them, saying, \"Take heed, beware of the leaven of the Pharisees, and of the leaven of Herod\".", 
+  ],
+  [
+  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  "فَفَكَّرُوا قَائِلِينَ بَعْضُهُمْ لِبَعْضٍ: لَيْسَ عِنْدَنَا خُبْزٌ. فَعَلِمَ يَسُوعُ وَقَالَ لَهُمْ: \"لِمَاذَا تُفَكِّرُونَ أَنْ لَيْسَ عِنْدَكُمْ خُبْزٌ؟ أَلاَ تَشْعُرُونَ بَعْدُ وَلاَ تَفْهَمُونَ؟ أَحَتَّى الآنَ قُلُوبُكُمْ غَلِيظَةٌ؟ أَلَكُمْ أَعْيُنٌ وَلاَ تُبْصِرُونَ، وَلَكُمْ آذَانٌ وَلاَ تَسْمَعُونَ، وَلاَ تَذْكُرُونَ؟ حِينَ كَسَّرْتُ الأَرْغِفَةَ الْخَمْسَةَ لِلْخَمْسَةِ الآلاَفِ، كَمْ قُفَّةً مَمْلُوَّةً كِسَرًا رَفَعْتُمْ؟\". قَالُوا لَهُ: \"اثْنَتَيْ عَشْرَةَ\". \"وَحِينَ السَّبْعَةِ لِلأَرْبَعَةِ الآلاَفِ، كَمْ سَلَّ كِسَرٍ مَمْلُوًّا رَفَعْتُمْ؟\". قَالُوا: \"سَبْعَةً\" فَقَالَ لَهُمْ: كَيْفَ لاَ تَفْهَمُونَ؟. ", 
+  "16 Mais ils discutaient entre eux sur ce manque de pains. 17 Jésus s’en rend compte et leur dit : « Pourquoi discutez-vous sur ce manque de pains ? Vous ne saisissez pas ? Vous ne comprenez pas encore ? Vous avez le cœur endurci ? 18 Vous avez des yeux et vous ne voyez pas, vous avez des oreilles et vous n’entendez pas ! Vous ne vous rappelez pas ? 19 Quand j’ai rompu les cinq pains pour cinq mille personnes, combien avez-vous ramassé de paniers pleins de morceaux ? » Ils lui répondirent : « Douze». 20 « Et quand j’en ai rompu sept pour quatre mille, combien avez-vous rempli de corbeilles en ramassant les morceaux ? »  Ils lui répondirent : « Sept. » 21 Il leur disait : « Vous ne comprenez pas encore ? »", 
+  "16 And they reasoned among themselves, saying, It is because we have no bread. 17 And when Jesus knew it, he saith unto them, \"Why reason ye, because ye have no bread? perceive ye not yet, neither understand? have ye your heart yet hardened? 18 Having eyes, see ye not? and having ears, hear ye not? and do ye not remember? 19 When I brake the five loaves among five thousand, how many baskets full of fragments took ye up?\" They say unto him, \"Twelve\". 20 \"And when the seven among four thousand, how many baskets full of fragments took ye up?\" And they said, \"Seven\". 21 And he said unto them, \"How is it that ye do not understand?\".", 
   ],
   ],
   [
   [
   Prefix.gospelDawn+"Psalm&D=GL9thSunday&C=Title", 
-  " مزمور باكر 78:65, 69", 
+  "مزمور باكر 78:65, 69", 
   "Psaume 78:65, 69", 
   "Psalms 78:65, 69", 
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فاستيقظ الرب كنائم كجبار معّيط من الخمر. وبنى مثل مرتفعات مقدسه كالارض التي اسسها الى الابد هللويا.", 
+  "فَٱسْتَيْقَظَ ٱلرَّبُّ كَنَائِمٍ، كَجَبَّارٍ مُعَيِّطٍ مِنَ ٱلْخَمْرِ. وَبَنَى مِثْلَ مُرْتَفَعَاتٍ مَقْدِسَهُ، كَٱلْأَرْضِ ٱلَّتِي أَسَّسَهَا إِلَى ٱلْأَبَدِ.\n", 
   "65 Tel un dormeur, le Seigneur s'éveilla, tel un brave que le vin ragaillardit. 69 Il bâtit son sanctuaire pareil aux cimes, et comme la terre, il l'a fondé pour toujours.", 
   "65 Then the Lord awoke as from sleep, Like a mighty man who shouts because of wine. 69 And He built His sanctuary like the heights, Like the earth which He has established forever. Alleluia", 
   ],
@@ -10683,7 +10743,7 @@ ReadingsArrays.GospelDawnArray= [[
   [
   [
   Prefix.gospelDawn+"Gospel&D=GL9thSunday&C=Title", 
-  " مرقس ( 16 : 2- 11 )", 
+  "مرقس ( 16 : 2- 11 )", 
   "Marc 16:2 - 11", 
   "Mark 16 : 2 -11", 
   ],
@@ -10713,7 +10773,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "فذهبت هذه واخبرت الذين كانوا معه وهم ينوحون ويبكون. فلما سمع اولئك انه حيّ وقد نظرته لم يصدقوا ", 
+  "فذهبت هذه واخبرت الذين كانوا معه وهم ينوحون ويبكون. فلما سمع اولئك انه حيّ وقد نظرته لم يصدقوا", 
   "10 Celle-ci partit l'annoncer à ceux qui avaient été avec lui et qui étaient dans le deuil et les pleurs.11 Mais, entendant dire qu'il vivait et qu'elle l'avait vu, ceux-ci ne la crurent pas.", 
   "10 She went and told those who had been with Him, as they mourned and wept. 11 And when they heard that He was alive and had been seen by her, they did not believe.", 
   ],
