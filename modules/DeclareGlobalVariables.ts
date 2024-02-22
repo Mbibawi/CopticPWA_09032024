@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.4.7 (Fixes and completed Jonah Fast Readings)";
+  "v5.4.8 (Fixed Book of Hours issue in the Unbaptized mass)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"

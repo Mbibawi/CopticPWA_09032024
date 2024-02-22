@@ -1370,7 +1370,7 @@ const btnMassUnBaptised: Button = new Button({
             if (!createdElements[0]) return;
 
               
-            createdElements[0].onclick = () => hourBtnOnClick(createdElements[0]);//This is the button that will show or hid each hour's button
+            createdElements[0].addEventListener("click", () => hourBtnOnClick(createdElements[0].id));//!Caution, we must ADD a new onClick eventListner because the created buton already have one attached to it when it was created by addExpandablePrayer(); 
 
             btnsDiv.appendChild(createdElements[0]);
 
@@ -1413,14 +1413,14 @@ const btnMassUnBaptised: Button = new Button({
         return hours;
       };
       
-      async function hourBtnOnClick(hourBtn: HTMLElement) {
+      async function hourBtnOnClick(hourBtnId: string) {
         let expandables = selectElementsByDataSetValue(containerDiv, 'HourExpandable', { endsWith: true }, 'group').filter(div => div.classList.contains('Expandable'));
         
         if (expandables.length < 1) return;
 
         expandables
           .forEach(expandable =>
-            expandable.id.startsWith(hourBtn.id) ?
+            expandable.id.startsWith(hourBtnId) ?
               showOrHideHour(expandable)
               : hideHour(expandable)
           );
@@ -1430,12 +1430,15 @@ const btnMassUnBaptised: Button = new Button({
           
           expandable.classList.add(hidden);
 
-          Array.from(sideBarTitlesContainer.children).filter((div: HTMLDivElement) => div.dataset.group === expandable.id).forEach(div => div.remove());
+          Array.from(sideBarTitlesContainer.children)
+            .filter((div: HTMLDivElement) => div.dataset.group === expandable.id)
+            .forEach(div => div.remove());
           
         };
         
         async function showOrHideHour(expandable: HTMLDivElement) {
           (async function showHour() {
+            
             if (expandable.classList.contains(hidden)) return;
 
             let children = Array.from(expandable.children) as HTMLDivElement[];
@@ -1451,8 +1454,11 @@ const btnMassUnBaptised: Button = new Button({
                 false
               );
             
-            rightSideBarTitles.forEach(titleDiv => titleDiv.classList.remove(hidden));
-            makeExpandableButtonContainerFloatOnTop(btnsDiv, "5px");//Making the hours buttons container float on top
+            rightSideBarTitles
+              .forEach(titleDiv => 
+                titleDiv.classList.remove(hidden));
+            
+            floatOnTop(btnsDiv, "5px");//Making the hours buttons container float on top
 
             masterBtnDiv.classList.add(hidden); //Hiding the master button
 
@@ -2049,6 +2055,20 @@ const btnPsalmody: Button = new Button({
       btnPsalmody.prayersSequence = PsalmodyPrayersSequences.PsalmodyKiahk;
   },
 });
+
+/**
+ * Makes a buttons div container floating on the top of the page
+ * @param {HTMLDivElement} btnContainer - the buttons div container we want to make float;
+ * @param {string} top - the value of the btnConainer.style.top
+ */
+function floatOnTop(
+  btnContainer: HTMLDivElement,
+  top: string
+) {
+  btnContainer.style.position = "fixed";
+  btnContainer.style.top = top;
+  btnContainer.style.justifySelf = "center";
+};
 
 /**
  * Fetchs and displaying any readings other than the Gospel and the Psalm
@@ -2882,13 +2902,7 @@ function addExpandablePrayer(args: {
         .forEach(htmlTable => setCSS(htmlTable));
     })();
 
-    (function toggleHideExpandableAndTitles() {
       expandableContainer.classList.toggle(hidden);
-  
- /*      expandableContainer.classList.contains(hidden)?
-      hideOrShowAllTitlesInAContainer(expandableContainer, true)
-    : hideOrShowAllTitlesInAContainer(expandableContainer, false);     */  
-    })();
-
+   
   }
 }

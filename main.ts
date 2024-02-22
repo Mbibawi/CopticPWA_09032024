@@ -3325,14 +3325,7 @@ function removeDuplicates(array: string[][][]) {
   });
 }
 
-function makeExpandableButtonContainerFloatOnTop(
-  btnContainer: HTMLDivElement,
-  top: string
-) {
-  btnContainer.style.position = "fixed";
-  btnContainer.style.top = top;
-  btnContainer.style.justifySelf = "center";
-}
+
 
 /**
  * Checks whether the html element passed as argument, has either the class 'Title', or 'SubTitle' and returns true if this is the case
