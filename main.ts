@@ -1872,21 +1872,18 @@ function replaceQuotes(paragraphs: HTMLParagraphElement[]) {
  * @returns {string} representing the grid areas based on the "lang" attribute of the html element children
  */
 function setGridAreas(row: HTMLElement): string {
-  let areas: string[] = [],
-    child: HTMLElement;
-  for (let i = 0; i < row.children.length; i++) {
-    child = row.children[i] as HTMLElement;
-    areas.push(child.lang.toUpperCase());
-  }
+  if (!row || row.children.length < 1) return;
+
+  let areas = Array.from(row.children as HTMLCollectionOf<HTMLParagraphElement>).map(child => child.lang.toUpperCase());
+
   if (
-    areas.indexOf(defaultLanguage) === 0 &&
+    areas.indexOf('AR') === 0 &&
     !row.classList.contains("Comments") &&
     !row.classList.contains("CommentText")
-  ) {
-    //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
-    areas.reverse();
-  }
-  return '"' + areas.toString().split(",").join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
+  )  areas.reverse();  //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
+
+
+  return '"' + areas.join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
 }
 
 async function applyAmplifiedText(htmlRows: HTMLDivElement[]) {
@@ -2951,7 +2948,7 @@ function setGridColumnsOrRowsNumber(
  */
 function insertPrayersAdjacentToExistingElement(args: {
   tables: string[][][];
-  languages: string[];
+  languages?: string[];
   position: { beforeOrAfter: InsertPosition; el: HTMLElement };
   container: HTMLElement | DocumentFragment;
 }): HTMLElement[][] {
@@ -2964,7 +2961,7 @@ function insertPrayersAdjacentToExistingElement(args: {
       return showPrayers({
         table: table,
         position: args.position,
-        languages: args.languages,
+        languages: args.languages || getLanguages(PrayersArraysKeys.find(array=>table[0][0].startsWith(array[0]))[1])||prayersLanguages,
         container: args.container,
         clearRightSideBar: false,
         clearContainerDiv: false,

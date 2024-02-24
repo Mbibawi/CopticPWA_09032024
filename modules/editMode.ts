@@ -275,6 +275,11 @@ function addEdintingButtons() {
     btnsDiv
   );
   createEditingButton(
+    () => addNewCell(document.getSelection().focusNode.parentElement),
+    "Add Cell",
+    btnsDiv
+  );
+  createEditingButton(
     () => addNewRow(document.getSelection().focusNode.parentElement, true),
     "Add PlaceHolder",
     btnsDiv
@@ -287,6 +292,11 @@ function addEdintingButtons() {
   createEditingButton(
     () => deleteRow(document.getSelection().focusNode.parentElement),
     "Delete Row",
+    btnsDiv
+  );
+  createEditingButton(
+    () => deleteCell(document.getSelection().focusNode.parentElement),
+    "Delete Cell",
     btnsDiv
   );
   createEditingButton(
@@ -356,6 +366,21 @@ function deleteRow(htmlParag: HTMLElement) {
   if (!htmlRow) return;
   if (confirm("Are you sure you want to delete this row?") === false) return; //We ask the user to confirm before deletion
   htmlRow.remove();
+}
+/**
+ * Deletes a cell in a row
+ * @param {HTMLElement} htmlParag - the paragraph that we want to delete 
+ * @returns
+ */
+function deleteCell(htmlParag: HTMLElement) {
+  if (htmlParag.tagName !== 'P') return alert('The selection is not a paragraph');
+  let htmlRow = getHtmlRow(htmlParag) as HTMLElement;
+  if (!htmlRow) return;
+
+  if (!confirm("Are you sure you want to delete this paragraph?")) return; //We ask the user to confirm before deletion
+  htmlParag.remove();
+  htmlRow.style.gridTemplateColumns = setGridColumnsOrRowsNumber(htmlRow);//We adapt the number of columns of the parent div 
+  htmlRow.style.gridTemplateAreas = setGridAreas(htmlRow);//We adapt the grid areas of the parent div
 }
 
 /**
@@ -822,6 +847,21 @@ function addNewRow(htmlParag: HTMLElement, isPlaceHolder: boolean = false, title
 
   return htmlRow.insertAdjacentElement("afterend", newRow) as HTMLElement;
 }
+function addNewCell(htmlParag: HTMLElement): HTMLElement | void {
+  let htmlRow = getHtmlRow(htmlParag);
+  if (!htmlRow) return;
+  let p = document.createElement("p"),
+    lang: string = prompt('Provide the language of the paragraph')||'FR';
+    p.contentEditable = 'true';
+    p.dataset.root = htmlParag.dataset.root;
+    p.title = htmlParag.title;
+    p.classList.add(lang);
+    p.lang = lang;
+    p.innerText = 'New paragraph added';
+  htmlParag.insertAdjacentElement("afterend", p) as HTMLElement;
+  htmlRow.style.gridTemplateAreas = setGridAreas(htmlRow);
+  htmlRow.style.gridTemplateColumns = setGridColumnsOrRowsNumber(htmlRow);
+}
 function addNewColumn(htmlParag: HTMLElement): HTMLElement | void {
   if (htmlParag.tagName !== "P")
     return alert("The html element passed to addNewColumn is not a paragraph");
@@ -1276,7 +1316,7 @@ function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
  * @param {string} arrayName - the name of a string[][][], for which we will return the languages corresponding to it
  * @returns {string[]} - an array of languages
  */
-function getLanguages(arrayName): string[] {
+function getLanguages(arrayName?): string[] {
   let languages: string[] = prayersLanguages;
   if (!arrayName) return languages;
   if (arrayName.startsWith("ReadingsArrays.")) languages = readingsLanguages;

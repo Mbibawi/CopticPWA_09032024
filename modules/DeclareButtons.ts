@@ -990,25 +990,13 @@ const btnMassUnBaptised: Button = new Button({
 
     })();
 
-    (function insertHisFoundationsAndIGodHaveMercy() {
-      if (!isFast || ![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
-
-      btnMassUnBaptised.prayersSequence
-        .splice(
-          btnMassUnBaptised.prayersSequence.indexOf(
-            Prefix.massCommon + "AbsolutionForTheFather&D=$copticFeasts.AnyDay") + 1, //We insert it after "Sotis Ameen"
-          0,
-          Prefix.massCommon + "HisFoundations&D=$Seasons.GreatLent",
-          Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent"
-        );
-
-    })();
 
     scrollToTop();
     return btnMassUnBaptised.prayersSequence;
   },
   afterShowPrayers: () => {
     let btnDocFragment = btnMassUnBaptised.docFragment;
+
 
     (function hideGodHaveMercyOnUsIfBishop() {
       let dataRoot =
@@ -1047,6 +1035,36 @@ const btnMassUnBaptised: Button = new Button({
       });
     })();
 
+    (function insertHisFoundationsAndIGodHaveMercy() {
+      if (!isFast || ![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
+
+      let titles: string[] = [
+        Prefix.commonPrayer + "WeHaveBeenSavedWithYou&D=$copticFeasts.AnyDay",
+        Prefix.massCommon + "HisFoundations&D=$Seasons.GreatLent",
+        Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent",
+      ];
+
+      selectElementsByDataSetValue(btnDocFragment, titles[0], { equal: true }, 'root').forEach(el => el.remove());//We remove the existing 'Sotis Amen' prayer
+      
+      let tables: string[][][] = titles.map(title => findTable(title, getTablesArrayFromTitlePrefix(title))||undefined);//We retrieve the 3 tables by their titles
+      
+      if (!tables || tables.length < 1) return;
+        
+      let anchor = selectElementsByDataSetValue(btnDocFragment, Prefix.massCommon + "AbsolutionForTheFather&D=$copticFeasts.AnyDay", { equal: true }, 'root')[0];//This is the html element before which we will insert the retrived tables
+      if (!anchor) return;
+
+      insertPrayersAdjacentToExistingElement(
+        {
+          tables: tables,
+          languages: prayersLanguages,
+          position: {
+            beforeOrAfter: 'beforebegin',
+            el: anchor
+          },
+          container:btnDocFragment
+        }
+      );
+    })();
 
     let readingsAnchor: HTMLElement = selectElementsByDataSetValue(
       btnDocFragment,
@@ -1063,23 +1081,33 @@ const btnMassUnBaptised: Button = new Button({
       if (seasonalIntercessions.length < 1)
         return console.log("No Seasonsal Intercession Hymns");
 
-      let stMary = selectElementsByDataSetValue(
-        btnDocFragment,
-        Prefix.massCommon + "ByTheIntercessionOfStMary&D=$copticFeasts.AnyDay");
+      let anchor = setAnchorAccordingToOccasion();
 
-      if (!stMary) return;
+      if (!anchor) return;
 
       insertPrayersAdjacentToExistingElement({
-        tables: getUniqueValuesFromArray(
-          seasonalIntercessions.reverse()
-        ) as string[][][],
+        tables: getUniqueValuesFromArray(seasonalIntercessions) as string[][][],
         languages: getLanguages(getArrayNameFromArray(MassCommonPrayersArray)),
         position: {
-          beforeOrAfter: "afterend",
-          el: stMary[stMary.length - 1],
+          beforeOrAfter: "beforebegin",
+          el: anchor,
         },
         container: btnDocFragment,
       });
+
+      function setAnchorAccordingToOccasion():HTMLDivElement {
+        let title: string = Prefix.massCommon + "ByTheIntercessionOfStMary&D=$copticFeasts.AnyDay";
+
+        if ([Seasons.JonahFast].includes(Season)) title = Prefix.massCommon + "ByTheIntercessionOfStJohnBaptist&D=$copticFeasts.AnyDay";
+
+        let htmlDivs = selectElementsByDataSetValue(
+          btnDocFragment,
+          title);
+        
+        if(!htmlDivs || htmlDivs.length<1) return;
+        
+        return htmlDivs[htmlDivs.length-1].nextElementSibling as HTMLDivElement
+      }
     })();
 
     (function insertStPaulReading() {
