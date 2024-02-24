@@ -9,7 +9,7 @@ const IncensePrayersSequence: string[] =[
     Prefix.commonIncense+"DoxolgiesComment&D=$copticFeasts.AnyDay",
     Prefix.commonPrayer+"AngelsPrayer&D=$copticFeasts.AnyDay", 
     Prefix.incenseVespers+"LordKeepUsThisNightWithoutSin&D=$copticFeasts.AnyDay", 
-    Prefix.commonPrayer+"Agios&D=$copticFeasts.AnyDay&D=$copticFeasts.AnyDay",
+    Prefix.commonPrayer+"Agios&D=$copticFeasts.AnyDay",
     Prefix.commonPrayer+"OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay", 
     Prefix.commonPrayer + "WeSaluteYouMary&D=$copticFeasts.AnyDay", 
     Prefix.commonIncense+"DoxologiesPlaceHolder&D=$copticFeasts.AnyDay",  

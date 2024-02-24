@@ -166,7 +166,7 @@ const btnMainMenu: Button = new Button({
             images[btnMainMenu.children.indexOf(btn)];//We give it as background image, an image from the images list
         });
 
-      function getBtnsDiv():HTMLDivElement {
+      function getBtnsDiv(): HTMLDivElement {
         let btnsDiv = document.createElement('div');
         btnsDiv.id = 'btnsMainPageDiv'
         btnsDiv.style.display = 'grid';
@@ -182,19 +182,19 @@ const btnMainMenu: Button = new Button({
         : HTMLButtonElement {
         let btnsDiv = containerDiv.querySelector('#btnsMainPageDiv') as HTMLDivElement;
         if (!btnsDiv) btnsDiv = getBtnsDiv();
-          return createBtn({
-            btn: btn,
-            btnsContainer: btnsDiv,
-            btnClass: "mainPageBtns",
-            clear: false,
-            onClick: () => onClickBtnFunction(btn),
-          }) as HTMLButtonElement
-        }
+        return createBtn({
+          btn: btn,
+          btnsContainer: btnsDiv,
+          btnClass: "mainPageBtns",
+          clear: false,
+          onClick: () => onClickBtnFunction(btn),
+        }) as HTMLButtonElement
+      }
 
       function onClickBtnFunction(btn: Button) {
         if (!btn.children || btn.children.length === 0)
           btn.onClick(true); //if btn doesn't have childre, we call its onClick() function beacuse the children of some btns are added when tis function is called. We pass 'true' as argument, because it makes the function return the children and do not execute until its end
-        
+
         let parentHtmlBtn = containerDiv.querySelector(
           "#" + btn.btnID
         ) as HTMLElement;
@@ -205,31 +205,31 @@ const btnMainMenu: Button = new Button({
 
         (function showBtnPrayers() {
           if (btn.children && !btn.prayersSequence) return showChildButtons();
-         // if (!btn.prayersSequence || btn.prayersSequence.length < 1) return;
+          // if (!btn.prayersSequence || btn.prayersSequence.length < 1) return;
           showChildButtonsOrPrayers(btn, true); //If btn does not have children, it means that it shows prayers. We pass it to showChildButtonsOrPrayers
-          
+
         })();
 
         function showChildButtons() {
-          if (btn.children.length<1) return;
+          if (btn.children.length < 1) return;
           containerDiv.innerHTML = "";
           btn.children
-          //for each child button of btn
+            //for each child button of btn
             .forEach((childBtn) => {
               childBtn.parentBtn = btn;
-            //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
-           createMainPageButton(childBtn)
-            .style.backgroundImage = backgroundImage;
-          });
+              //We create an html element representing this button and give it 'mainPageBtns', and append it to containerDiv. It will have as background, the same image as the background image of btn
+              createMainPageButton(childBtn)
+                .style.backgroundImage = backgroundImage;
+            });
           let goBackBtns =
             [btnGoToPreviousMenu, btnMainMenu];
           if (goBackBtns.includes(btn)) return;
 
           goBackBtns
-          .forEach(btn=>
-            createMainPageButton(btn)
-            .style.backgroundImage = images[0]) //Finlay, we create an extra html button for btnGoToPreviousMenu and btnMainMenu, in order for the user to be able to navigate back to the btnMain menu of buttons
-          
+            .forEach(btn =>
+              createMainPageButton(btn)
+                .style.backgroundImage = images[0]) //Finlay, we create an extra html button for btnGoToPreviousMenu and btnMainMenu, in order for the user to be able to navigate back to the btnMain menu of buttons
+
         };
       }
 
@@ -248,7 +248,7 @@ const btnGoToPreviousMenu: Button = new Button({
 const btnMass: Button = new Button({
   btnID: "btnMass",
   label: { AR: "القداسات", FR: "Messes" },
-  onClick: (returnBtnChildren:boolean = false ) => {
+  onClick: (returnBtnChildren: boolean = false) => {
     btnMass.children = [btnIncenseDawn, btnMassUnBaptised, btnMassBaptised];
     if (returnBtnChildren) return btnMass.children;
   },
@@ -260,7 +260,7 @@ const btnIncenseOffice: Button = new Button({
     AR: "رفع بخور باكر أو عشية",
     FR: "Office des Encens Aube et Vêpres",
   },
-  onClick: (returnBtnChildren:boolean = false) => {
+  onClick: (returnBtnChildren: boolean = false) => {
     //setting the children of the btnIncenseOffice. This must be done by the onClick() in order to reset them each time the button is clicked
     btnIncenseOffice.children = [btnIncenseDawn, btnIncenseVespers];
     //show or hide the PropheciesDawn button if we are in the Great Lent or JonahFast:
@@ -566,15 +566,15 @@ const btnMassStBasil: Button = new Button({
 
     (function insertStBasilSecondReconciliationBtn() {
       if (btn !== btnMassStBasil) return;
-      
+
       let secondBasilReconciliation = findTable(
-        Prefix.massStBasil+"Reconciliation2&D=$copticFeasts.AnyDay",
+        Prefix.massStBasil + "Reconciliation2&D=$copticFeasts.AnyDay",
         MassStBasilPrayersArray);
 
       if (!secondBasilReconciliation)
         return console.log("Didn't find reconciliation");
-        
-     
+
+
       let htmlBtn = addExpandablePrayer({
         insertion: selectElementsByDataSetValue(
           btnDocFragment,
@@ -1292,17 +1292,17 @@ const btnMassUnBaptised: Button = new Button({
       let masterBtnDiv: HTMLDivElement,
         btnsDiv: HTMLDivElement;
 
-      
+
       (function createMasterButton() {
         masterBtnDiv = document.createElement("div"); //This is the div that will contain the master button which shows or hides the Book of Hours sub buttons
         masterBtnDiv.classList.add(inlineBtnsContainerClass);
         masterBtnDiv.id = "masterBOHBtn";
-  
+
         btnsDiv = document.createElement("div"); //This is the div that contains the sub buttons for each Hour of the Book of Hours
         btnsDiv.style.display = "grid";
         btnsDiv.classList.add(inlineBtnsContainerClass);
         btnsDiv.classList.add(hidden);
-  
+
         let masterBtn = new Button({
           btnID: "BOH_Master",
           label: {
@@ -1319,7 +1319,7 @@ const btnMassUnBaptised: Button = new Button({
             }
           },
         });
-  
+
         masterBtnDiv.prepend(
           createBtn({
             btn: masterBtn,
@@ -1329,7 +1329,7 @@ const btnMassUnBaptised: Button = new Button({
             onClick: masterBtn.onClick,
           })
         ); //We add the master button to the bookOfHoursMasterDiv
-      
+
         btnDocFragment.prepend(btnsDiv);
         btnDocFragment.prepend(masterBtnDiv);
       })();
@@ -1340,14 +1340,14 @@ const btnMassUnBaptised: Button = new Button({
         hoursBtns
           .map((btn) => {
             btn.onClick(true); //We call the onClick() method of the btn in order to build its prayersSequence properties. Notice that we passs 'true' as argument to the onClick() function
-            
+
             if (localStorage.displayMode === displayModes[1])
               //If we are in the 'Presentation Mode', we remove all the psalms and keep only the Gospel and the Litanies
               btn.prayersSequence = btn.prayersSequence
                 .filter((title) => !title.includes("Psalm"));
-  
+
             InsertHourFinalPrayers(btn); //Inserting Kyrielison 41 times, Agios, Holy God of Sabaot, etc.
-  
+
             let btnPrayers: string[][][] =
               btn.prayersSequence.map(
                 (title) =>
@@ -1356,7 +1356,7 @@ const btnMassUnBaptised: Button = new Button({
                     getTablesArrayFromTitlePrefix(title)
                   ) as string[][]
               ); //We create an array containing all the tables includes in the button's prayersSequence.
-  
+
             //We will create an 'expandable' html button and div for the hour button
             let createdElements: [HTMLElement, HTMLDivElement] =
               addExpandablePrayer({
@@ -1366,27 +1366,27 @@ const btnMassUnBaptised: Button = new Button({
                 prayers: btnPrayers,
                 languages: btnBookOfHours.languages,
               }) as [HTMLElement, HTMLDivElement];
-              
+
             if (!createdElements[0]) return;
 
-              
+
             createdElements[0].addEventListener("click", () => hourBtnOnClick(createdElements[0].id));//!Caution, we must ADD a new onClick eventListner because the created buton already have one attached to it when it was created by addExpandablePrayer(); 
 
             btnsDiv.appendChild(createdElements[0]);
 
             if (!createdElements[1]) return;
-              
+
             createdElements[1].dataset.group = createdElements[1].id;
-          
-              
+
+
           });
-        
+
         //Finally we set the grid-Template for btnsDiv
         btnsDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
           btnsDiv,
           3);
       })();
-        
+
       function selectRelevantHoursAccordingToTheDay(): Button[] {
         //args.mass is a boolean that tells whether the button prayersArray should include all the hours of the Book Of Hours, or only those pertaining to the mass according to the season and the day on which the mass is celebrated
         let hours = [hoursBtns[1], hoursBtns[2], hoursBtns[3]]; //Those are the 3rd, 6th and 9th hours
@@ -1412,10 +1412,10 @@ const btnMassUnBaptised: Button = new Button({
 
         return hours;
       };
-      
+
       async function hourBtnOnClick(hourBtnId: string) {
         let expandables = selectElementsByDataSetValue(containerDiv, 'HourExpandable', { endsWith: true }, 'group').filter(div => div.classList.contains('Expandable'));
-        
+
         if (expandables.length < 1) return;
 
         expandables
@@ -1427,18 +1427,18 @@ const btnMassUnBaptised: Button = new Button({
 
         function hideHour(expandable: HTMLDivElement) {
           if (expandable.classList.contains(hidden)) return;
-          
+
           expandable.classList.add(hidden);
 
           Array.from(sideBarTitlesContainer.children)
             .filter((div: HTMLDivElement) => div.dataset.group === expandable.id)
             .forEach(div => div.remove());
-          
+
         };
-        
+
         async function showOrHideHour(expandable: HTMLDivElement) {
           (async function showHour() {
-            
+
             if (expandable.classList.contains(hidden)) return;
 
             let children = Array.from(expandable.children) as HTMLDivElement[];
@@ -1453,11 +1453,11 @@ const btnMassUnBaptised: Button = new Button({
                 expandable.id,
                 false
               );
-            
+
             rightSideBarTitles
-              .forEach(titleDiv => 
+              .forEach(titleDiv =>
                 titleDiv.classList.remove(hidden));
-            
+
             floatOnTop(btnsDiv, "5px");//Making the hours buttons container float on top
 
             masterBtnDiv.classList.add(hidden); //Hiding the master button
@@ -1476,7 +1476,7 @@ const btnMassUnBaptised: Button = new Button({
               .forEach(div => div.remove());
           })();
         };
-        
+
       };
 
       function InsertHourFinalPrayers(hourBtn: Button) {
@@ -1709,7 +1709,7 @@ const btnDayReadings: Button = new Button({
     FR: "Lectures du jour",
     EN: "Day's Readings",
   },
-  onClick: ( returnBtnChildren:boolean = false) => {
+  onClick: (returnBtnChildren: boolean = false) => {
     //We set the button's children
     btnDayReadings.children = [
       btnReadingsGospelIncenseDawn,
@@ -1722,7 +1722,7 @@ const btnDayReadings: Button = new Button({
           EN: "Pauline Epistle",
         },
         showPrayers: true,
-        onClick: (returnBtnChildren:boolean = false) => {
+        onClick: (returnBtnChildren: boolean = false) => {
           if (returnBtnChildren) return;
           findMassReadingOtherThanGospel(
             Prefix.stPaul,
@@ -1742,9 +1742,9 @@ const btnDayReadings: Button = new Button({
           FR: "Katholikon",
         },
         showPrayers: true,
-        onClick: (returnBtnChildren:boolean = false) => {
+        onClick: (returnBtnChildren: boolean = false) => {
           if (returnBtnChildren) return;
-          
+
           findMassReadingOtherThanGospel(
             Prefix.katholikon,
             ReadingsArrays.KatholikonArray,
@@ -1762,7 +1762,7 @@ const btnDayReadings: Button = new Button({
           FR: "Praxis",
         },
         showPrayers: true,
-        onClick: (returnBtnChildren:boolean =false) => {
+        onClick: (returnBtnChildren: boolean = false) => {
           if (returnBtnChildren) return;
           findMassReadingOtherThanGospel(
             Prefix.praxis,
@@ -1781,7 +1781,7 @@ const btnDayReadings: Button = new Button({
           FR: "Synaxarium",
         },
         showPrayers: true,
-        onClick: function (returnBtnChildren:boolean = false) {
+        onClick: function (returnBtnChildren: boolean = false) {
           if (returnBtnChildren) return;
           findMassReadingOtherThanGospel(
             Prefix.synaxarium,
@@ -1803,7 +1803,7 @@ const btnDayReadings: Button = new Button({
         },
         showPrayers: true,
 
-        onClick: (returnBtnChildren:boolean = false) => {
+        onClick: (returnBtnChildren: boolean = false) => {
           if (returnBtnChildren) return;
           btnReadingsGospelIncenseDawn.onClick(Prefix.gospelMass);
           scrollToTop(); //scrolling to the top of the page
@@ -2823,43 +2823,43 @@ function addExpandablePrayer(args: {
     label: args.label,
     cssClass: inlineBtnClass,
     languages: args.languages,
-    prayersSequence: args.prayers.map(tbl=>tbl[0][0]),
+    prayersSequence: args.prayers.map(tbl => tbl[0][0]),
     onClick: btnOnClick,
   });
 
   return createHtmlBtnAndExpandableDiv();
 
   function createHtmlBtnAndExpandableDiv(): [HTMLElement, HTMLDivElement] {
-    htmlButton = createHtmlButon(); 
+    htmlButton = createHtmlButon();
     expandableContainer = createExpandableContainer();
-    
+
     function createHtmlButon() {
       let btnDiv = createDivForTheHtmlButon();
 
       let btn = createBtn({
-      btn: btnExpand,
-      btnsContainer: btnDiv,
-      btnClass: btnExpand.cssClass,
-      clear: true,
-      onClick: btnExpand.onClick,
-    }); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
-      
+        btn: btnExpand,
+        btnsContainer: btnDiv,
+        btnClass: btnExpand.cssClass,
+        clear: true,
+        onClick: btnExpand.onClick,
+      }); //creating the html element representing the button. Notice that we give it as 'click' event, the btn.onClick property, otherwise, the createBtn will set it to the default call back function which is showChildBtnsOrPrayers(btn, clear)
+
       btn.classList.add("expand"); //We need this class in order to retrieve the btn in Display Presentation Mode
       return btn;
 
       function createDivForTheHtmlButon() {
         let div = document.createElement("div"); //Creating a div container in which the btn will be displayed
         div.classList.add(inlineBtnsContainerClass);
-      
+
         if (args.dataGroup) div.dataset.group = args.dataGroup;
-      
-          args.insertion.insertAdjacentElement("beforebegin", div); //Inserting the div containing the button as 1st element of containerDiv
-          return div
+
+        args.insertion.insertAdjacentElement("beforebegin", div); //Inserting the div containing the button as 1st element of containerDiv
+        return div
       };
-    }; 
+    };
     function createExpandableContainer() {
       //We will create a newDiv to which we will append all the elements in order to avoid the reflow as much as possible
-      let expandable  = document.createElement("div");
+      let expandable = document.createElement("div");
       expandable.id = btnExpand.btnID + "Expandable";
       expandable.classList.add(hidden);
       expandable.classList.add("Expandable");
@@ -2885,13 +2885,13 @@ function addExpandablePrayer(args: {
 
   async function btnOnClick(): Promise<HTMLElement[] | void> {
     if (!expandableContainer) return console.log("no collapsable div was found");
-    
+
     (function showPrayersInExpandableDiv() {
       if (expandableContainer.children.length > 0) return;
       args.prayers
         .map(table => {
           return showPrayers({
-            wordTable: table,
+            table: table,
             languages: args.languages,
             position: expandableContainer,
             container: expandableContainer,
@@ -2899,10 +2899,10 @@ function addExpandablePrayer(args: {
             clearRightSideBar: false
           });
         })
-        .forEach(htmlTable => setCSS(htmlTable));
+        .forEach((htmlTable: HTMLDivElement[]) => setCSS(htmlTable));
     })();
 
-      expandableContainer.classList.toggle(hidden);
-   
+    expandableContainer.classList.toggle(hidden);
+
   }
 }
