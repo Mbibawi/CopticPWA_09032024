@@ -2,7 +2,6 @@ const copticReadingsDates: string[][] = getCopticReadingsDates();
 
 document.addEventListener("DOMContentLoaded", startApp);
 
-document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
 
 /**
  * This function starts the App by setting a number of global variables like the dates, displaying the home page/main menu buttons, etc.
@@ -69,8 +68,8 @@ async function startApp() {
 
   addKeyDownListnerToElement(document, "keydown", undefined);
 
-
-
+  document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
+  alert(version)
 }
 
 /**
@@ -11672,39 +11671,14 @@ async function createHtmlArray() {
     if (!confirm('Do you want to test the array?')) return;
     let now = new Date().getMilliseconds();
     let docFrag = new DocumentFragment();
-    let tablesTitles: string[] = [
-      Prefix.psalmody + "ChantAgiosOsiOs&D=$Seasons.Kiahk",
-      Prefix.communion + "Chant&D=$Seasons.Kiahk||$Seasons.StMaryFast",
-      Prefix.praxisResponse + "&D=$saintsFeasts.StCome",
-      Prefix.praxisResponse + "&D=$saintsFeasts.StGabriel",
-      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
-      Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massStBasil + "Anaphora&D=$copticFeasts.AnyDay",
-      Prefix.massStBasil + "Agios&D=$copticFeasts.AnyDay",
-      Prefix.massStBasil + "InstitutionNarrative&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "AsWeAlsoCommemorateHisHolyPassionPart1&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "Reconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "Anaphora&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "Agios&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "AsWeCommemorateYourHolyPassionPart1&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "LitaniesIntroduction&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "Litanies&D=$copticFeasts.AnyDay",
-      Prefix.massStGregory + "FractionIntroduction&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Reconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Anaphora&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Agios&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Part8&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Part9&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "Part10&D=$copticFeasts.AnyDay",
-      Prefix.massStCyril + "LitaniesIntroduction&D=$copticFeasts.AnyDay"
-    ];
+    let tablesTitles: string[] = [];
 
+    [Prefix.psalmody, Prefix.communion, Prefix.massCommon, Prefix.massStBasil]
+      .forEach(prefix =>{
+        PrayersArray.filter(table => splitTitle(table[0][0])[0].startsWith(prefix))
+          .forEach(tbl => tablesTitles.push(splitTitle(tbl[0][0])[0]))
+      });
+  
     if(confirm('Do you want to test as BUTTON')){
       let btn: Button = new Button({
         btnID: 'TestBtn',
@@ -11717,7 +11691,7 @@ async function createHtmlArray() {
       showChildButtonsOrPrayers(btn, true);
 
       return alert((new Date().getMilliseconds() - now).toString());
-    }
+    }s
 
     (async function testHtml() {
       let div = document.createElement('div');
