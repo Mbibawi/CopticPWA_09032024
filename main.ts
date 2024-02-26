@@ -33,11 +33,12 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-    setCopticDates();
+    await setCopticDates();
   }
-  showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
-
+  
   await loadTextScripts();
+  
+  showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
   async function loadTextScripts() {
     //! We must load the text scripts after the dates were set and the 'giaki' variable was defined
@@ -68,7 +69,7 @@ async function startApp() {
 
   addKeyDownListnerToElement(document, "keydown", undefined);
 
-  document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
+//  document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
   alert(version)
 }
 
@@ -11669,11 +11670,11 @@ async function createHtmlArray() {
 
   async function testRetrieveTables() {
     if (!confirm('Do you want to test the array?')) return;
-    let now = new Date().getMilliseconds();
+    let now = new Date().getTime();
     let docFrag = new DocumentFragment();
     let tablesTitles: string[] = [];
 
-    [Prefix.psalmody, Prefix.communion, Prefix.massCommon, Prefix.massStBasil]
+    [Prefix.psalmody, Prefix.communion, Prefix.bookOfHours, Prefix.massCommon, Prefix.massStBasil]
       .forEach(prefix =>{
         PrayersArray.filter(table => splitTitle(table[0][0])[0].startsWith(prefix))
           .forEach(tbl => tablesTitles.push(splitTitle(tbl[0][0])[0]))
@@ -11688,10 +11689,10 @@ async function createHtmlArray() {
         label: { AR: '', FR: '' },
         showPrayers:true,  
       });
-      showChildButtonsOrPrayers(btn, true);
+      await showChildButtonsOrPrayers(btn, true);
 
-      return alert((new Date().getMilliseconds() - now).toString());
-    }s
+      return alert((new Date().getTime() - now).toString());
+    }
 
     (async function testHtml() {
       let div = document.createElement('div');
@@ -11725,7 +11726,8 @@ async function createHtmlArray() {
     
         await setCSS(Array.from(div.children as HTMLCollectionOf<HTMLDivElement>));
       containerDiv.appendChild(docFrag);
-      alert((new Date().getMilliseconds() - now).toString())
+
+      return alert((new Date().getTime() - now).toString());
     
         function retrieveRowsHTML(table: string[][]): string {
           if (!table) return '';
