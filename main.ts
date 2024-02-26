@@ -33,7 +33,7 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-    await setCopticDates();
+    setCopticDates();
   }
   
   await loadTextScripts();
