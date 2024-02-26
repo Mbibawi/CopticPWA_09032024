@@ -1327,6 +1327,7 @@ const btnMassUnBaptised: Button = new Button({
         masterBtnDiv.id = "masterBOHBtn";
 
         btnsDiv = document.createElement("div"); //This is the div that contains the sub buttons for each Hour of the Book of Hours
+        if (defaultLanguage === 'AR') btnsDiv.dir = 'rtl';
         btnsDiv.style.display = "grid";
         btnsDiv.classList.add(inlineBtnsContainerClass);
         btnsDiv.classList.add(hidden);
@@ -1401,7 +1402,7 @@ const btnMassUnBaptised: Button = new Button({
             createdElements[0].addEventListener("click", () => hourBtnOnClick(createdElements[0].id));//!Caution, we must ADD a new onClick eventListner because the created buton already have one attached to it when it was created by addExpandablePrayer(); 
 
             btnsDiv.appendChild(createdElements[0]);
-
+            
             if (!createdElements[1]) return;
 
             createdElements[1].dataset.group = createdElements[1].id;

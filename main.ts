@@ -33,7 +33,7 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-    setCopticDates();
+     setCopticDates();
   }
   
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
