@@ -36,11 +36,9 @@ async function startApp() {
     setCopticDates();
   }
   
-  await loadTextScripts();
-  
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
-  async function loadTextScripts() {
+  (async function loadTextScripts() {
     //! We must load the text scripts after the dates were set and the 'giaki' variable was defined
     let textFiles: string[] = [
       "./Build/modules/DeclarePrayersArray.js",
@@ -65,7 +63,7 @@ async function startApp() {
         script.onload = () => populatePrayersArrays(); //! We must wait that the PrayersArray script is loaded before calling populatePrayersArrays
       return document.getElementsByTagName("body")[0].appendChild(script);
     });
-  }
+  })();
 
   addKeyDownListnerToElement(document, "keydown", undefined);
 
