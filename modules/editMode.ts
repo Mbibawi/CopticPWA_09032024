@@ -1593,7 +1593,8 @@ function showBtnInEditingMode(btn: Button) {
 
 function modifyAllSelectedText() {
   let paragraph = document.getSelection().focusNode.parentElement;
-  if (!paragraph) return;
+  while (paragraph.tagName !== 'P' && paragraph.parentElement) paragraph = paragraph.parentElement;//We go up until we reach the parent html paragraph element
+  if (!paragraph) return alert('Could not select the paragraph');
   let selected = getSelectedText();
   if (!selected) return alert("You didn't select any text");
   let text = selected.toString();
@@ -1611,18 +1612,34 @@ function modifyAllSelectedText() {
   let array: string[][][] = eval(arrayName);
   if (!array) return alert("Couldn't retrive the array");
 
+  saveModifiedArray({ exportToFile: false, exportToStorage: true });//We update the array by including what has been edited and is still displayed but not saved yet
+
   array.forEach((table) =>
     table.forEach((row) => {
       if (!row || !row[index] || !row[index].includes(text)) return;
       row[index] = row[index].replaceAll(text, modified);
     })
   );
+  
+  (function reloadCurrentlyEditedTables() {
+    //We will reload the currently displayed table(s)
+    
+    let titles = new Set(
+      Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
+        .filter((htmlRow) => htmlRow.title)
+        .map((htmlRow) => htmlRow.title));//We retrieve the titles of the all the displayed tables
+    
+    containerDiv.dataset.arrayName = '';//We do this in order to avoid that startEditingMode() triggers the alert for the user to confirm that he wants to reload another table from the sama array
+  
+    startEditingMode({
+      tableTitle: Array.from(titles).join(', '),
+      arrayName: arrayName,
+      languages: getLanguages(arrayName),
+      clear: true
+    });
+  
+  })();
 
-  Array.from(containerDiv.children).forEach(
-    (child) => (child.innerHTML = child.innerHTML.replaceAll(text, modified)) //! We must modify the text of the edited paragraph, othewise, when we will go to next or previous table, the text of the table will replace the modified text
-  );
-
-  saveOrExportArray(array, arrayName, false, true);
 }
 
 function getSelectedText(): Selection {

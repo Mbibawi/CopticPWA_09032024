@@ -2,6 +2,8 @@ const copticReadingsDates: string[][] = getCopticReadingsDates();
 
 document.addEventListener("DOMContentLoaded", startApp);
 
+document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
+
 /**
  * This function starts the App by setting a number of global variables like the dates, displaying the home page/main menu buttons, etc.
  */
@@ -37,6 +39,7 @@ async function startApp() {
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
   await loadTextScripts();
+
   async function loadTextScripts() {
     //! We must load the text scripts after the dates were set and the 'giaki' variable was defined
     let textFiles: string[] = [
@@ -52,7 +55,7 @@ async function startApp() {
       "./Build/modules/DeclareGospelNightArray.js",
       "./Build/modules/DeclarePropheciesDawnArray.js",
     ];
-    textFiles.forEach(async (link) => {
+    return textFiles.map((link) => {
       let script: HTMLScriptElement = document.createElement("script");
       script.src = link;
       script.id = link.split("/Declare")[1].split(".js")[0];
@@ -60,11 +63,14 @@ async function startApp() {
       script.onload = () => console.log(script.id + " has been loaded");
       if (script.id === "PrayersArray")
         script.onload = () => populatePrayersArrays(); //! We must wait that the PrayersArray script is loaded before calling populatePrayersArrays
-      return await document.getElementsByTagName("body")[0].appendChild(script);
+      return document.getElementsByTagName("body")[0].appendChild(script);
     });
   }
 
   addKeyDownListnerToElement(document, "keydown", undefined);
+
+
+
 }
 
 /**
@@ -1631,20 +1637,20 @@ function showPrayers(args: {
     if (!args.prayersSequence) return console.log("The prayersSequences is missing, we cannot retrieve the tables");
     args.prayersSequence
       .forEach((tableTitle) => {
-      //If no string[][] was passed in the arguments, we will retrieve the table from its title (prayer)
-      if (!tableTitle) return console.log("No tableTitle");
+        //If no string[][] was passed in the arguments, we will retrieve the table from its title (prayer)
+        if (!tableTitle) return console.log("No tableTitle");
 
-      //If the date value is already set in the title of the table, we do not add it again
-      if (tableTitle.includes("&D=")) date = "";
-      else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
-      tableTitle += date; //we add the date to the title of the table
-      tables.push(
-        findTable(
-          tableTitle,
-          getTablesArrayFromTitlePrefix(tableTitle)
-        ) as string[][]
-      );
-    });
+        //If the date value is already set in the title of the table, we do not add it again
+        if (tableTitle.includes("&D=")) date = "";
+        else date = "&D=" + copticReadingsDate; //this is the default case where the date is not set, and will hence be given the value of the copticReadingsDate.
+        tableTitle += date; //we add the date to the title of the table
+        tables.push(
+          findTable(
+            tableTitle,
+            getTablesArrayFromTitlePrefix(tableTitle)
+          ) as string[][]
+        );
+      });
   })();
 
   if (args.table) tables.push(args.table);
@@ -1666,7 +1672,7 @@ function showPrayers(args: {
       dataGroup = splitTitle(entireTable[0][0])[0];//This will not change and will serve to set the dataset.group property of all the div elements that will be created for the table
       entireTable.forEach((row) => htmlDivs.push(processRow(row)));
     });
-    
+
     return htmlDivs;
 
     function processRow(row: string[]): HTMLDivElement {
@@ -1880,7 +1886,7 @@ function setGridAreas(row: HTMLElement): string {
     areas.indexOf('AR') === 0 &&
     !row.classList.contains("Comments") &&
     !row.classList.contains("CommentText")
-  )  areas.reverse();  //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
+  ) areas.reverse();  //if the 'AR' is the first language, it means it will be displayed in the first column from left to right. We need to reverse the array in order to have the Arabic language on the last column from left to right
 
 
   return '"' + areas.join(" ") + '"'; //we should get a string like ' "AR COP FR" ' (notice that the string marks " in the beginning and the end must appear, otherwise the grid-template-areas value will not be valid)
@@ -2961,7 +2967,7 @@ function insertPrayersAdjacentToExistingElement(args: {
       return showPrayers({
         table: table,
         position: args.position,
-        languages: args.languages || getLanguages(PrayersArraysKeys.find(array=>table[0][0].startsWith(array[0]))[1])||prayersLanguages,
+        languages: args.languages || getLanguages(PrayersArraysKeys.find(array => table[0][0].startsWith(array[0]))[1]) || prayersLanguages,
         container: args.container,
         clearRightSideBar: false,
         clearContainerDiv: false,
@@ -11585,4 +11591,183 @@ function cleanReadingArray(readingArray: string[][][]) {
     return text.replaceAll(' ', '')
   }
 
+}
+
+/**
+ * This function is part of an alternative idea consisting of working with an array of html elements instead of an array of text. The idea is to accelerate the lodding of the page by avoiding the creation of divs and paragraphs. The function retruns a string containg the a paragraph element for each text element in each row. This function is par
+ */
+async function createHtmlArray() {
+  if (!confirm('Do you want to create an html elements array?')) return;
+  var PrayersArrayHtml = await buildArray();
+  console.log('PrayersArrayHtml = ', PrayersArrayHtml);
+  testRetrieveTables();
+
+  async function buildArray() {
+    let arrayName = 'PrayersArray'
+    let array: string[][][] = eval(arrayName);
+    let newArray: string[][][] = [];
+    let newTable: string[][];
+    let newRow: string[];
+    let languages = getLanguages(arrayName);
+    let langs: string[], className: string, dataRoot: string;
+    array.forEach(table => {
+      newArray.push([]);//Adding a table array
+      newTable = newArray[newArray.length - 1];
+      dataRoot = splitTitle(table[0][0])[0];
+      newTable.push([dataRoot]);//Adding a row to the table array including the table title
+
+      table.forEach(row => {
+        langs = languages;
+        newTable.push([]);//Adding a row to the table array
+        newRow = newTable[newTable.length - 1];
+        className = splitTitle(row[0])[1];//Retrieving the class of the row
+        if (row[0] === Prefix.placeHolder) className = 'PlaceHolder';
+        if (!className) className = 'NoActor';
+        if (['Comments'].includes(className)) langs = ['FR', 'AR'];
+        let div = getDivInnerHtml();//Builiding a div container for the row
+        let index = 0;
+
+        newRow[0] =
+          div + processElements(row).join(' ') +
+          '</div>';
+
+      })
+
+      function processElements(row: string[]):string[] {
+        let text: string[] = [];
+          for (let i = 1; i < row.length; i++){
+            text.push(getParagraphInnerHtml(row[i], langs[i-1]) || '')
+          }
+          return text
+        }
+      
+
+      function getParagraphInnerHtml(element: string, lang: string): string | void {
+
+        let p =
+          '<p class="' + lang + '" ' +
+          'data-root="' + dataRoot + '" ' +
+          'lang="' + lang.toLowerCase() + '" >' +
+          element + "</p>"
+
+        return p
+
+      }
+
+      function getDivInnerHtml(): string {
+        let div =
+          '<div class="Row ' + className + '" ' +
+          'data-root="' + dataRoot + '" ' +
+          'role="button">'
+
+        return div
+      }
+
+    });
+
+    return newArray;
+  }
+
+  async function testRetrieveTables() {
+    if (!confirm('Do you want to test the array?')) return;
+    let docFrag = new DocumentFragment();
+    let tablesTitles: string[] = [
+      Prefix.psalmody + "ChantAgiosOsiOs&D=$Seasons.Kiahk",
+      Prefix.communion + "Chant&D=$Seasons.Kiahk||$Seasons.StMaryFast",
+      Prefix.praxisResponse + "&D=$saintsFeasts.StCome",
+      Prefix.praxisResponse + "&D=$saintsFeasts.StGabriel",
+      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
+      Prefix.massStBasil + "Reconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massStBasil + "Anaphora&D=$copticFeasts.AnyDay",
+      Prefix.massStBasil + "Agios&D=$copticFeasts.AnyDay",
+      Prefix.massStBasil + "InstitutionNarrative&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "AsWeAlsoCommemorateHisHolyPassionPart1&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "Reconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "Anaphora&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "Agios&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "AsWeCommemorateYourHolyPassionPart1&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "CallOfTheHolySpiritPart1&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "LitaniesIntroduction&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "Litanies&D=$copticFeasts.AnyDay",
+      Prefix.massStGregory + "FractionIntroduction&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "ReconciliationComment&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Reconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massCommon + "EndOfReconciliation&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Anaphora&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Agios&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Part8&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Part9&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "Part10&D=$copticFeasts.AnyDay",
+      Prefix.massStCyril + "LitaniesIntroduction&D=$copticFeasts.AnyDay"
+    ];
+
+    if(confirm('Do you want to test as BUTTON')){
+      let btn: Button = new Button({
+        btnID: 'TestBtn',
+        docFragment: docFrag,
+        prayersSequence:tablesTitles,
+        languages: prayersLanguages,
+        label: { AR: '', FR: '' },
+        showPrayers:true,  
+      });
+      showChildButtonsOrPrayers(btn, true);
+
+      return
+    }
+
+    (async function testHtml() {
+      let div = document.createElement('div');
+      docFrag.appendChild(div);
+      containerDiv.innerHTML = '';
+      let title: string,
+        tbl: string[][],
+        userLangs = JSON.parse(localStorage.userLanguages),
+        actors = JSON.parse(localStorage.showActors).filter(el=>el[1] === true).map(el=>el[0].EN);
+
+      let innerHTML =
+      tablesTitles.map(title=> PrayersArrayHtml.find(table=>splitTitle(table[0][0])[0] === title))
+      .map(table => retrieveRowsHTML(table)).join(' ');
+  
+  
+      div.innerHTML = innerHTML;
+      actors.push('Row', 'Title', 'SubTitle');
+      Array.from(div.querySelectorAll('div'))
+        .forEach(div => {
+          if (
+            Array.from(div.classList)
+              .map(c => actors.includes(c))
+              .includes(false))
+          div.remove();
+      })
+      Array.from(div.querySelectorAll('p')).forEach(parag => {
+        if (!userLangs.includes(parag.lang.toUpperCase()) ||!parag.innerText)
+          parag.remove()
+      });
+
+    
+        await setCSS(Array.from(div.children as HTMLCollectionOf<HTMLDivElement>));
+        containerDiv.appendChild(docFrag);
+    
+        function retrieveRowsHTML(table: string[][]): string {
+          if (!table) return '';
+          let html: string =
+            table
+              .filter(row => table.indexOf(row) > 0)
+              .map(row => {
+                if (!row[0].includes('PlaceHolder')) return row[0];
+                title = row[0].split('>')[2];
+                title = title.split('</')[0];
+                tbl = PrayersArrayHtml.find(table => table[0][0].includes(title));
+                return retrieveRowsHTML(tbl);
+              })
+              .join(' ');
+          return html
+        };
+    })();
+
+
+  };
 }
