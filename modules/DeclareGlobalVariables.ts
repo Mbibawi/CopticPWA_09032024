@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.51 (Completed Synaxarium until 06/07)";
+"v5.5.2 (Completed Synaxarium until 08/07 + testing html option)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"

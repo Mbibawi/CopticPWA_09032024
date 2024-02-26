@@ -11670,6 +11670,7 @@ async function createHtmlArray() {
 
   async function testRetrieveTables() {
     if (!confirm('Do you want to test the array?')) return;
+    let now = new Date().getMilliseconds();
     let docFrag = new DocumentFragment();
     let tablesTitles: string[] = [
       Prefix.psalmody + "ChantAgiosOsiOs&D=$Seasons.Kiahk",
@@ -11715,7 +11716,7 @@ async function createHtmlArray() {
       });
       showChildButtonsOrPrayers(btn, true);
 
-      return
+      return alert((new Date().getMilliseconds() - now).toString());
     }
 
     (async function testHtml() {
@@ -11749,7 +11750,8 @@ async function createHtmlArray() {
 
     
         await setCSS(Array.from(div.children as HTMLCollectionOf<HTMLDivElement>));
-        containerDiv.appendChild(docFrag);
+      containerDiv.appendChild(docFrag);
+      alert((new Date().getMilliseconds() - now).toString())
     
         function retrieveRowsHTML(table: string[][]): string {
           if (!table) return '';
