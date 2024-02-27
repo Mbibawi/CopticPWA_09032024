@@ -128,7 +128,7 @@ width: 40%;
 }
 
 
-.addLang, .langBtnAdd, .settingsBtn, .colorbtn {
+.addLang, .langBtnAdd, .colorbtn {
   display: grid;
   background-color: rgba(161, 9, 29, 0.705);
   border-radius: 10px;
@@ -673,27 +673,28 @@ br{
   background-color: red !important;
 }
 
-.settingsBtn{
+.settingsBtn, .updateBtn{
   background-color: green;
-  outline-width: 2px;
+  border-color: white;
+  border-width: 4px;
+  outline-color: grey;
+  outline-width: 3px;
   border-radius: 10px;
   color:white;
-  padding: 12pt;
+  padding: 3px;
+  width: fit-content;
+  font-size: 2.8cqmin;
+  font-family: DCO;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .updateBtn{
-  background-color: rgb(88, 132, 202);
-  outline-color: #003187;
-  outline-width: 2px;
-  border-radius: 10px;
-  color:white;
-  padding: 12pt;
+  background-color: rgb(190, 66, 175);
 }
 
 .ReadingIntro{
   background-color: darkgoldenrod;
   margin-top: 0px;
- /* border-top: #111 solid 2pt;
-  border-bottom: #111 solid 2pt;*/
   border-left: #111 solid 4pt;
   border-right: #111 solid 4pt;
 }
@@ -852,6 +853,14 @@ q{
   margin: 5px 5px;
   text-align: center;
   text-justify: auto;
+  width: 70%;
+  background-color: #ccc5c5;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.settingsLabel>h3{
+  font-size: 2cqi !important;
 }
 
 h3{

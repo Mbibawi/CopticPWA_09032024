@@ -33,9 +33,9 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-     setCopticDates();
+    setCopticDates();
   }
-  
+
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
 
   (async function loadTextScripts() {
@@ -67,7 +67,7 @@ async function startApp() {
 
   addKeyDownListnerToElement(document, "keydown", undefined);
 
-//  document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
+  //  document.getElementById('homeImg').addEventListener('dblclick', createHtmlArray);
   alert(version)
 }
 
@@ -2356,12 +2356,11 @@ function findTable(
  * @param {boolean} clear - indicates whether the content of the inlineBtns div should be cleared when shwoInlineBtns is called. Its value is set to 'false' by default
  */
 function showExpandableBtnsPannel(status: string, clear: boolean = false) {
-  if (clear) {
-    expandableBtnsPannel.innerHTML = "";
-  }
+  if (clear) expandableBtnsPannel.innerHTML = "";
 
-  expandableBtnsPannel.style.backgroundImage =
-    "url(./assets/PageBackgroundCross.jpg)";
+
+  status !== 'settingsPanel' ? expandableBtnsPannel.style.backgroundImage = "url(./assets/PageBackgroundCross.jpg)" : expandableBtnsPannel.style.backgroundColor = 'grey';
+
   expandableBtnsPannel.style.backgroundSize = "10%";
   expandableBtnsPannel.style.backgroundRepeat = "repeat";
 
@@ -2450,7 +2449,7 @@ function showSettingsPanel() {
   //Appending date picker
   (function showDatePicker() {
     let datePicker: HTMLInputElement = createSettingsBtn({
-      innerText:'',
+      innerText: '',
       tag: "input",
       btnsContainer: expandableBtnsPannel,
       id: "datePicker",
@@ -2472,23 +2471,23 @@ function showSettingsPanel() {
       EN: "Move to the next or previous day of the Coptic calendar",
     });
 
-    let btnLable:typeBtnLabel = {
-      AR:'التالي',
-      FR:'Suivant',
-      EN:'Next',
+    let btnLable: typeBtnLabel = {
+      AR: 'التالي',
+      FR: 'Suivant',
+      EN: 'Next',
     }
 
     createBtn(btnLable, 'nextDay', true);
-    
+
     btnLable = {
-      AR:'السابق',
-      FR:'Précédent',
-      EN:'Previous',
+      AR: 'السابق',
+      FR: 'Précédent',
+      EN: 'Previous',
     }
 
     createBtn(btnLable, 'previousDay', false);
 
-    function createBtn(lable:typeBtnLabel, id:string, next:boolean){
+    function createBtn(lable: typeBtnLabel, id: string, next: boolean) {
       createSettingsBtn({
         tag: "button",
         role: "button",
@@ -2515,7 +2514,7 @@ function showSettingsPanel() {
       EN: "Increase or decrease the fonts size",
     });
     let input = createSettingsBtn({
-      innerText:'',
+      innerText: '',
       tag: "input",
       btnsContainer: btnsContainer,
       id: "fontsSize",
@@ -2692,10 +2691,10 @@ function showSettingsPanel() {
       EN: "Show or hide an actor",
     });
     let userActors: [Actor, boolean][] = JSON.parse(localStorage.showActors);
-    
+
     userActors.map((actor) => {
       if (['CommentText', 'NoActor'].includes(actor[0].EN)) return;//CommentText will be handled at the same time by the button for 'Comments'
-  
+
       btn = createSettingsBtn({
         tag: "button",
         role: "button",
@@ -2737,7 +2736,7 @@ function showSettingsPanel() {
       EN: "Change the display mode",
     });
 
-   
+
     expandableBtnsPannel.appendChild(btnsContainer);
     displayModes.map((mode) => {
       btn = createSettingsBtn({
@@ -2752,6 +2751,17 @@ function showSettingsPanel() {
           fun: () => {
             if (localStorage.displayMode !== mode) {
               localStorage.displayMode = mode;
+
+              let userActors:[Actor, boolean][] = JSON.parse(localStorage.showActors);
+
+              if (mode === displayModes[2] && localStorage.displayMode === mode)
+                //If mode = 'Priest Mode', we set the value of 'Diacon' in the 'showActors' localStorage to false in order to hide all the 'Diacon' response
+                userActors.find(actor => actor[0].EN === actors[1].EN)[1] = false;
+                
+                else userActors.find(actor => actor[0].EN === actors[1].EN)[1] = true;
+                
+              localStorage.showActors = JSON.stringify(userActors);
+              
               Array.from(btnsContainer.children).map((btn) => {
                 btn.id !== localStorage.displayMode
                   ? btn.classList.add("langBtnAdd")
@@ -2810,11 +2820,11 @@ function showSettingsPanel() {
 
     let userActors: Actor[] =
       JSON.parse(localStorage.showActors)
-        .filter(actor => actor[1] === true && !['CommentText', 'NoActor'].includes(actor[0].EN)).map(actor=>actor[0]);
-    
+        .filter(actor => actor[1] === true && !['CommentText', 'NoActor'].includes(actor[0].EN)).map(actor => actor[0]);
+
     userActors.map((actor) => {
       let newBtn = createSettingsBtn({
-        innerText:'',
+        innerText: '',
         tag: "button",
         btnClass: "colorbtn",
         btnsContainer: btnsContainer,
@@ -2840,22 +2850,22 @@ function showSettingsPanel() {
     });
     expandableBtnsPannel.appendChild(btnsContainer);
 
-    let btnLable:typeBtnLabel = {
-      AR:'تحديث',
-      FR:'Mettre à jour',
-      EN:'Update',
+    let btnLable: typeBtnLabel = {
+      AR: 'تحديث',
+      FR: 'Mettre à jour',
+      EN: 'Update',
     }
 
     btn = createSettingsBtn({
       tag: "button",
       role: "button",
       btnClass: "updateBtn",
-      innerText:  btnLable[defaultLanguage],
+      innerText: btnLable[defaultLanguage],
       btnsContainer: btnsContainer,
       id: "updateApp",
       onClick: {
         event: "click",
-        fun: ()=>location.reload(),
+        fun: () => location.reload(),
       },
     });
 
@@ -2884,12 +2894,12 @@ function showSettingsPanel() {
     label.innerText = labelText[defaultLanguage];
     labelsDiv.appendChild(label);
 
-    (function addForeignLanguage(){
+    (function addForeignLanguage() {
       return //Desactiviting it for the moment
       if (!foreingLanguage) return;
-        let foreignLabel = document.createElement("h3");
-        foreignLabel.innerText = labelText[foreingLanguage];
-        labelsDiv.appendChild(foreignLabel);
+      let foreignLabel = document.createElement("h3");
+      foreignLabel.innerText = labelText[foreingLanguage];
+      labelsDiv.appendChild(foreignLabel);
     })();
 
     return btnsContainer;
@@ -2912,20 +2922,20 @@ function showSettingsPanel() {
     let btn = document.createElement(args.tag);
 
     if (!args.role) args.role = args.tag;
-    
+
     if (args.role) btn.role = args.role;
-    
+
     if (args.innerText) btn.innerHTML = args.innerText;
-    
+
     if (args.btnClass) btn.classList.add(args.btnClass);
-    
+
     if (args.id) btn.id = args.id;
-    
-    if (args.lang)  btn.lang = args.lang.toLowerCase();
+
+    if (args.lang) btn.lang = args.lang.toLowerCase();
 
     //@ts-ignore
     if (args.type && btn.nodeType) btn.type = args.type;
-    
+
     //@ts-ignore
     if (args.size) btn.size = args.size;
 
@@ -2939,7 +2949,7 @@ function showSettingsPanel() {
     }
 
     if (args.btnsContainer) args.btnsContainer.appendChild(btn);
-  
+
     return btn;
   }
 }
@@ -11661,14 +11671,14 @@ async function createHtmlArray() {
 
       })
 
-      function processElements(row: string[]):string[] {
+      function processElements(row: string[]): string[] {
         let text: string[] = [];
-          for (let i = 1; i < row.length; i++){
-            text.push(getParagraphInnerHtml(row[i], langs[i-1]) || '')
-          }
-          return text
+        for (let i = 1; i < row.length; i++) {
+          text.push(getParagraphInnerHtml(row[i], langs[i - 1]) || '')
         }
-      
+        return text
+      }
+
 
       function getParagraphInnerHtml(element: string, lang: string): string | void {
 
@@ -11703,19 +11713,19 @@ async function createHtmlArray() {
     let tablesTitles: string[] = [];
 
     [Prefix.psalmody, Prefix.communion, Prefix.bookOfHours, Prefix.massCommon, Prefix.massStBasil]
-      .forEach(prefix =>{
+      .forEach(prefix => {
         PrayersArray.filter(table => splitTitle(table[0][0])[0].startsWith(prefix))
           .forEach(tbl => tablesTitles.push(splitTitle(tbl[0][0])[0]))
       });
-  
-    if(confirm('Do you want to test as BUTTON')){
+
+    if (confirm('Do you want to test as BUTTON')) {
       let btn: Button = new Button({
         btnID: 'TestBtn',
         docFragment: docFrag,
-        prayersSequence:tablesTitles,
+        prayersSequence: tablesTitles,
         languages: prayersLanguages,
         label: { AR: '', FR: '' },
-        showPrayers:true,  
+        showPrayers: true,
       });
       await showChildButtonsOrPrayers(btn, true);
 
@@ -11729,13 +11739,13 @@ async function createHtmlArray() {
       let title: string,
         tbl: string[][],
         userLangs = JSON.parse(localStorage.userLanguages),
-        actors = JSON.parse(localStorage.showActors).filter(el=>el[1] === true).map(el=>el[0].EN);
+        actors = JSON.parse(localStorage.showActors).filter(el => el[1] === true).map(el => el[0].EN);
 
       let innerHTML =
-      tablesTitles.map(title=> PrayersArrayHtml.find(table=>splitTitle(table[0][0])[0] === title))
-      .map(table => retrieveRowsHTML(table)).join(' ');
-  
-  
+        tablesTitles.map(title => PrayersArrayHtml.find(table => splitTitle(table[0][0])[0] === title))
+          .map(table => retrieveRowsHTML(table)).join(' ');
+
+
       div.innerHTML = innerHTML;
       actors.push('Row', 'Title', 'SubTitle');
       Array.from(div.querySelectorAll('div'))
@@ -11744,34 +11754,34 @@ async function createHtmlArray() {
             Array.from(div.classList)
               .map(c => actors.includes(c))
               .includes(false))
-          div.remove();
-      })
+            div.remove();
+        })
       Array.from(div.querySelectorAll('p')).forEach(parag => {
-        if (!userLangs.includes(parag.lang.toUpperCase()) ||!parag.innerText)
+        if (!userLangs.includes(parag.lang.toUpperCase()) || !parag.innerText)
           parag.remove()
       });
 
-    
-        await setCSS(Array.from(div.children as HTMLCollectionOf<HTMLDivElement>));
+
+      await setCSS(Array.from(div.children as HTMLCollectionOf<HTMLDivElement>));
       containerDiv.appendChild(docFrag);
 
       return alert((new Date().getTime() - now).toString());
-    
-        function retrieveRowsHTML(table: string[][]): string {
-          if (!table) return '';
-          let html: string =
-            table
-              .filter(row => table.indexOf(row) > 0)
-              .map(row => {
-                if (!row[0].includes('PlaceHolder')) return row[0];
-                title = row[0].split('>')[2];
-                title = title.split('</')[0];
-                tbl = PrayersArrayHtml.find(table => table[0][0].includes(title));
-                return retrieveRowsHTML(tbl);
-              })
-              .join(' ');
-          return html
-        };
+
+      function retrieveRowsHTML(table: string[][]): string {
+        if (!table) return '';
+        let html: string =
+          table
+            .filter(row => table.indexOf(row) > 0)
+            .map(row => {
+              if (!row[0].includes('PlaceHolder')) return row[0];
+              title = row[0].split('>')[2];
+              title = title.split('</')[0];
+              tbl = PrayersArrayHtml.find(table => table[0][0].includes(title));
+              return retrieveRowsHTML(tbl);
+            })
+            .join(' ');
+        return html
+      };
     })();
 
 
