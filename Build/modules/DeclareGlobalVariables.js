@@ -1,5 +1,5 @@
 //CONSTANTS
-const version = "v5.5.9.1 (Testing the coptic date problem on different devices)";
+const version = "v5.5.9.2 (Testing the coptic date problem on different devices)";
 const calendarDay = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv = document.getElementById("containerDiv");
 const leftSideBar = document.getElementById("leftSideBar");

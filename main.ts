@@ -33,7 +33,7 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-    setCopticDates();
+      setCopticDates();
   }
 
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
@@ -2761,7 +2761,7 @@ function showSettingsPanel() {
                 else userActors.find(actor => actor[0].EN === actors[1].EN)[1] = true;
                 
               localStorage.showActors = JSON.stringify(userActors);
-              
+
               Array.from(btnsContainer.children).map((btn) => {
                 btn.id !== localStorage.displayMode
                   ? btn.classList.add("langBtnAdd")

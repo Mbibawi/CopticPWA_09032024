@@ -2481,7 +2481,7 @@ async function getGospelReadingAndResponses(args: {
     let today: Date = new Date(todayDate.getTime() + calendarDay); //We create a date corresponding to the  the next day. This is because in the PowerPoint presentations from which the gospel text was retrieved, the Vespers gospel of each day is linked to the day itself not to the day before it: i.e., if we are a Monday and want the gospel that will be read in the Vespers incense office, we should look for the Vespers gospel of the next day (Tuesday).
 
     return getSeasonAndCopticReadingsDate(
-      convertGregorianDateToCopticDate(today.getTime(), false)[1],
+      convertGregorianDateToCopticDate(today, false)[1],
       today
     ) as string;
   }
