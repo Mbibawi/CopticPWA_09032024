@@ -2450,6 +2450,7 @@ function showSettingsPanel() {
   //Appending date picker
   (function showDatePicker() {
     let datePicker: HTMLInputElement = createSettingsBtn({
+      innerText:'',
       tag: "input",
       btnsContainer: expandableBtnsPannel,
       id: "datePicker",
@@ -2464,48 +2465,47 @@ function showSettingsPanel() {
     datePicker.setAttribute("min", "1900-01-01");
   })();
 
-  //Appending 'Next Coptic Day' button
-  (async function showNextCopticDayButton() {
+  (async function showNextAndPreviousCopticDayButtons() {
     let btnsContainer = createBtnsContainer("showNextCopticDate", {
-      AR: "انتقل إلى اليوم التالي أو السابق",
-      FR: "Aller au jour suivant ou précédant",
-      EN: "Move to the next or previous day",
+      AR: "اليوم التالي أو السابق في التقويم القبطي",
+      FR: "Aller au jour suivant ou précédant du calendrier copte",
+      EN: "Move to the next or previous day of the Coptic calendar",
     });
-    btn = createSettingsBtn({
-      tag: "button",
-      role: "button",
-      btnClass: "settingsBtn",
-      innerText: "Next Coptic Day",
-      btnsContainer: btnsContainer,
-      id: "nextDay",
-      type: "submit",
-      onClick: {
-        event: "click",
-        fun: () => changeDate(undefined, true, 1),
-      },
-    });
-    setStyle(btn);
-    btn = createSettingsBtn({
-      tag: "button",
-      role: "button",
-      btnClass: "settingsBtn",
-      innerText: "Previous Coptic Day",
-      btnsContainer: btnsContainer,
-      id: "previousDay",
-      type: "submit",
-      onClick: {
-        event: "click",
-        fun: () => changeDate(undefined, false, 1),
-      },
-    });
-    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
-      btnsContainer,
-      3
-    );
-    setStyle(btn);
-    function setStyle(htmlBtn: HTMLElement) {
-      htmlBtn.style.backgroundColor = "saddlebrown";
+
+    let btnLable:typeBtnLabel = {
+      AR:'التالي',
+      FR:'Suivant',
+      EN:'Next',
     }
+
+    createBtn(btnLable, 'nextDay', true);
+    
+    btnLable = {
+      AR:'السابق',
+      FR:'Précédent',
+      EN:'Previous',
+    }
+
+    createBtn(btnLable, 'previousDay', false);
+
+    function createBtn(lable:typeBtnLabel, id:string, next:boolean){
+      createSettingsBtn({
+        tag: "button",
+        role: "button",
+        btnClass: "settingsBtn",
+        innerText: lable[defaultLanguage],
+        btnsContainer: btnsContainer,
+        id: id,
+        type: "submit",
+        onClick: {
+          event: "click",
+          fun: () => changeDate(undefined, next, 1),
+        },
+      }).style.backgroundColor = "saddlebrown";;
+    }
+
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer);
+
   })();
 
   (function showChangeFontSizeBtn() {
@@ -2515,6 +2515,7 @@ function showSettingsPanel() {
       EN: "Increase or decrease the fonts size",
     });
     let input = createSettingsBtn({
+      innerText:'',
       tag: "input",
       btnsContainer: btnsContainer,
       id: "fontsSize",
@@ -2690,32 +2691,28 @@ function showSettingsPanel() {
       FR: "Afficher ou cacher un acteur",
       EN: "Show or hide an actor",
     });
-    actors.map((actor) => {
-      if (actor.EN === "CommentText") return; //we will not show a button for 'CommentText' class, it will be handled by the 'Comment' button
-      let show = JSON.parse(localStorage.getItem("showActors")).filter(
-        (el) => el[0].AR === actor.AR
-      );
-      if (show.length > 0) show = show[0][1] as boolean;
+    let userActors: [Actor, boolean][] = JSON.parse(localStorage.showActors);
+    
+    userActors.map((actor) => {
+      if (['CommentText', 'NoActor'].includes(actor[0].EN)) return;//CommentText will be handled at the same time by the button for 'Comments'
+  
       btn = createSettingsBtn({
         tag: "button",
         role: "button",
         btnClass: "settingsBtn",
-        innerText: actor[foreingLanguage],
+        innerText: actor[0][defaultLanguage],
         btnsContainer: btnsContainer,
-        id: actor.EN,
-        lang: actor.EN,
+        id: actor[0].EN,
+        lang: actor[0].EN,
         onClick: {
           event: "click",
           fun: () => {
-            show = !show;
-            showActors.filter((el) => el[0].EN === actor.EN)[0][1] = show;
+            actor[1] = !actor[1]; //inversing the value of the boolean
             btn.classList.toggle("langBtnAdd");
             //changing the background color of the button to red by adding 'langBtnAdd' as a class
-            if (actor.EN === "Comments") {
-              showActors.filter((el) => el[0].EN === "CommentText")[0][1] =
-                show;
-            } //setting the value of 'CommentText' same as 'Comment'
-            localStorage.showActors = JSON.stringify(showActors); //adding the new values to local storage
+            if (actor[0].EN === "Comments")
+              userActors.find((el) => el[0].EN === "CommentText")[1] = actor[1]; //setting the value of 'CommentText' same as 'Comment'
+            localStorage.showActors = JSON.stringify(userActors); //adding the new values to local storage
             if (containerDiv.children) {
               //Only if some prayers text is already displayed
               showChildButtonsOrPrayers(lastClickedButton); //we re-click the last button to refresh the displayed text by adding or removing the actor according to the new setings chice made by the user.
@@ -2724,9 +2721,8 @@ function showSettingsPanel() {
           },
         },
       });
-      if (show === false) {
-        btn.classList.add("langBtnAdd");
-      }
+
+      if (!actor[1]) btn.classList.add("langBtnAdd");
     });
     btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
       btnsContainer,
@@ -2736,11 +2732,12 @@ function showSettingsPanel() {
 
   (async function showDisplayModeBtns() {
     let btnsContainer = createBtnsContainer("changeDisplayMode", {
-      AR: "اختار نظام العرض",
+      AR: "اختر نظام العرض",
       FR: "Changer le mode d'affichage",
       EN: "Change the display mode",
     });
 
+   
     expandableBtnsPannel.appendChild(btnsContainer);
     displayModes.map((mode) => {
       btn = createSettingsBtn({
@@ -2803,6 +2800,70 @@ function showSettingsPanel() {
     );
   })();
 
+  //Appending colors keys for actors
+  (async function addActorsKeys() {
+    let btnsContainer = createBtnsContainer("actorsKeys", {
+      AR: "مفاتيح الألوان",
+      FR: "Clés des couleurs",
+      EN: "Colors keys",
+    });
+
+    let userActors: Actor[] =
+      JSON.parse(localStorage.showActors)
+        .filter(actor => actor[1] === true && !['CommentText', 'NoActor'].includes(actor[0].EN)).map(actor=>actor[0]);
+    
+    userActors.map((actor) => {
+      let newBtn = createSettingsBtn({
+        innerText:'',
+        tag: "button",
+        btnClass: "colorbtn",
+        btnsContainer: btnsContainer,
+        id: actor.EN + "Color",
+      });
+      for (let key in actor) {
+        let p = document.createElement("p");
+        if (actor[key]) p.innerText = actor[key];
+        newBtn.appendChild(p);
+      }
+    });
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
+      btnsContainer,
+      4
+    );
+  })();
+
+  (async function addReloadPageBtn() {
+    let btnsContainer = createBtnsContainer("enterEditingMode", {
+      AR: "تحديث التطبيق",
+      FR: "Mettre à jour l'application",
+      EN: "Update App",
+    });
+    expandableBtnsPannel.appendChild(btnsContainer);
+
+    let btnLable:typeBtnLabel = {
+      AR:'تحديث',
+      FR:'Mettre à jour',
+      EN:'Update',
+    }
+
+    btn = createSettingsBtn({
+      tag: "button",
+      role: "button",
+      btnClass: "updateBtn",
+      innerText:  btnLable[defaultLanguage],
+      btnsContainer: btnsContainer,
+      id: "updateApp",
+      onClick: {
+        event: "click",
+        fun: ()=>location.reload(),
+      },
+    });
+
+    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(btnsContainer);
+  })();
+
+  closeSideBar(leftSideBar);
+
   function createBtnsContainer(
     id: string,
     labelText: { AR?: string; FR?: string; EN?: string }
@@ -2823,11 +2884,14 @@ function showSettingsPanel() {
     label.innerText = labelText[defaultLanguage];
     labelsDiv.appendChild(label);
 
-    if (foreingLanguage) {
-      let foreignLabel = document.createElement("h3");
-      foreignLabel.innerText = labelText[foreingLanguage];
-      labelsDiv.appendChild(foreignLabel);
-    }
+    (function addForeignLanguage(){
+      return //Desactiviting it for the moment
+      if (!foreingLanguage) return;
+        let foreignLabel = document.createElement("h3");
+        foreignLabel.innerText = labelText[foreingLanguage];
+        labelsDiv.appendChild(foreignLabel);
+    })();
+
     return btnsContainer;
   }
 
@@ -2835,7 +2899,7 @@ function showSettingsPanel() {
     tag: string;
     role?: string;
     btnClass?: string;
-    innerText?: string;
+    innerText: string;
     btnsContainer?: HTMLElement;
     id?: string;
     lang?: string;
@@ -2844,74 +2908,40 @@ function showSettingsPanel() {
     backgroundColor?: string;
     onClick?: { event: string; fun: Function };
   }): HTMLElement {
+
     let btn = document.createElement(args.tag);
+
     if (!args.role) args.role = args.tag;
-    if (args.role) {
-      btn.role = args.role;
-    }
-    if (args.innerText) {
-      btn.innerHTML = args.innerText;
-    }
-    if (args.btnClass) {
-      btn.classList.add(args.btnClass);
-    }
-    if (args.id) {
-      btn.id = args.id;
-    }
-    if (args.lang) {
-      btn.lang = args.lang.toLowerCase();
-    }
-    if (args.type && btn.nodeType) {
-      //@ts-ignore
-      btn.type = args.type;
-    }
-    if (args.size) {
-      //@ts-ignore
-      btn.size = args.size;
-    }
-    if (args.backgroundColor) {
-      btn.style.backgroundColor = args.backgroundColor;
-    }
+    
+    if (args.role) btn.role = args.role;
+    
+    if (args.innerText) btn.innerHTML = args.innerText;
+    
+    if (args.btnClass) btn.classList.add(args.btnClass);
+    
+    if (args.id) btn.id = args.id;
+    
+    if (args.lang)  btn.lang = args.lang.toLowerCase();
+
+    //@ts-ignore
+    if (args.type && btn.nodeType) btn.type = args.type;
+    
+    //@ts-ignore
+    if (args.size) btn.size = args.size;
+
+    if (args.backgroundColor) btn.style.backgroundColor = args.backgroundColor;
+
     if (args.onClick) {
       btn.addEventListener(args.onClick.event, (e) => {
         e.preventDefault;
         args.onClick.fun();
       });
     }
-    if (args.btnsContainer) {
-      args.btnsContainer.appendChild(btn);
-    }
 
+    if (args.btnsContainer) args.btnsContainer.appendChild(btn);
+  
     return btn;
   }
-  //Appending colors keys for actors
-  (async function addActorsKeys() {
-    let btnsContainer = createBtnsContainer("actorsKeys", {
-      AR: "مفاتيح الألوان",
-      FR: "Clés des couleurs",
-      EN: "Colors keys",
-    });
-    btnsContainer.style.width = "fit-content";
-    actors.map((actor) => {
-      if (actor.EN === "CommentText") return;
-      let newBtn = createSettingsBtn({
-        tag: "button",
-        btnClass: "colorbtn",
-        btnsContainer: btnsContainer,
-        id: actor.EN + "Color",
-      });
-      for (let key in actor) {
-        let p = document.createElement("p");
-        if (actor[key]) p.innerText = actor[key];
-        newBtn.appendChild(p);
-      }
-    });
-    btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
-      btnsContainer,
-      5
-    );
-  })();
-  closeSideBar(leftSideBar);
 }
 
 /**

@@ -675,6 +675,16 @@ br{
 
 .settingsBtn{
   background-color: green;
+  outline-width: 2px;
+  border-radius: 10px;
+  color:white;
+  padding: 12pt;
+}
+.updateBtn{
+  background-color: rgb(88, 132, 202);
+  outline-color: #003187;
+  outline-width: 2px;
+  border-radius: 10px;
   color:white;
   padding: 12pt;
 }
