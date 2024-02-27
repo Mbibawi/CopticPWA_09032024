@@ -1627,7 +1627,7 @@ function modifyAllSelectedText() {
     let titles = new Set(
       Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
         .filter((htmlRow) => htmlRow.title)
-        .map((htmlRow) => htmlRow.title));//We retrieve the titles of the all the displayed tables
+        .map((htmlRow) => splitTitle(htmlRow.title)[0]));//We retrieve the titles of the all the displayed tables
     
     containerDiv.dataset.arrayName = '';//We do this in order to avoid that startEditingMode() triggers the alert for the user to confirm that he wants to reload another table from the sama array
   
