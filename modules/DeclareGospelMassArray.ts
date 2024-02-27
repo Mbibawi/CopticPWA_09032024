@@ -13287,7 +13287,7 @@ ReadingsArrays.GospelMassArray= [[
   ],
   [
   Prefix.same+"&C=NoActor", 
-  "\n\n\"مَلِكَةُ التَّيْمَنِ سَتَقُومُ فِي الدِّينِ مَعَ رِجَالِ هذَا الْجِيلِ وَتَدِينُهُمْ، لأَنَّهَا أَتَتْ مِنْ أَقَاصِي الأَرْضِ لِتَسْمَعَ حِكْمَةَ سُلَيْمَانَ، وَهُوَذَا أَعْظَمُ مِنْ سُلَيْمَانَ هَهُنَا.\"", 
+  "مَلِكَةُ التَّيْمَنِ سَتَقُومُ فِي الدِّينِ مَعَ رِجَالِ هذَا الْجِيلِ وَتَدِينُهُمْ، لأَنَّهَا أَتَتْ مِنْ أَقَاصِي الأَرْضِ لِتَسْمَعَ حِكْمَةَ سُلَيْمَانَ، وَهُوَذَا أَعْظَمُ مِنْ سُلَيْمَانَ هَهُنَا.\"", 
   "« 31 Lors du Jugement, la reine de Saba se dressera en même temps que les hommes de cette génération, et elle les condamnera. En effet, elle est venue des extrémités de la terre pour écouter la sagesse de Salomon, et il y a ici bien plus que Salomon. »", 
   "", 
   ],

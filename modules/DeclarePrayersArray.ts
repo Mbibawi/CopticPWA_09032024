@@ -7279,7 +7279,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.massCommon+"SpasmosWatesLong&D=$Seasons.GreatLent&C=Title", 
+  Prefix.massCommon+"SpasmosWatesLong&D=$Seasons.GreatLent||$Seasons.JonahFast&C=Title", 
   "", 
   "", 
   "", 
@@ -9774,7 +9774,7 @@ PrayersArray= [[
   ],
   [
   [
-  Prefix.fractionPrayer+"&D=$Seasons.GreatLent&C=Title", 
+  Prefix.fractionPrayer+"&D=$Seasons.GreatLent||$Seasons.JonahFast&C=Title", 
   "", 
   "Oraison de fraction pour le grand carême (Ô maitre Seigneur, Dieu le Pantocrator qui a envoyé Son Fils unique au monde.)", 
   "", 

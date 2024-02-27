@@ -83,8 +83,8 @@ function convertGregorianDateToCopticDate(
   let year: number = 1600; //this is the coptic year starting on Sept 11, 1883
 
   today
-    ? (today = new Date(today).setHours(0, 0, 0, 0))
-    : (today = new Date().setHours(0, 0, 0, 0));
+    ? (today = new Date(today).setUTCHours(0, 0, 0, 0))
+    : (today = new Date().setUTCHours(0, 0, 0, 0));
 
   let differenceInDays = (today - tout1) / calendarDay;
 
