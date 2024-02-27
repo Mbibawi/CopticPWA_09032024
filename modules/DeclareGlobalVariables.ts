@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.5.9 (Fixes. Synaxarium updated to 14/7)";
+"v5.5.9.1 (Testing the coptic date problem on different devices)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"

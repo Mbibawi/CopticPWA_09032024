@@ -79,28 +79,45 @@ function convertGregorianDateToCopticDate(
   changeDates: boolean = true
 ): [number[], string] {
   let tout1: number = new Date("1883.09.11").setUTCHours(0, 0, 0, 0); //this is the Gregorian date for the 1st of Tout of the Coptic year 1600
-
+    //!    
+    alert('tout1= ' + tout1);
+  
   let year: number = 1600; //this is the coptic year starting on Sept 11, 1883
 
   today
     ? (today = new Date(today).setUTCHours(0, 0, 0, 0))
     : (today = new Date().setUTCHours(0, 0, 0, 0));
 
+  //!
+  alert('today= ' + today);
+
   let differenceInDays = (today - tout1) / calendarDay;
+  //!  
+  alert('differenceInDays = ' + differenceInDays)
 
   let diffrenceInYears = Math.floor(differenceInDays / 365.25); //This gives the number of full Coptic years (based on 365.25 day/year)
+
+  //!  
+  alert('diffrenceInYears = ' + diffrenceInYears)
 
   year += diffrenceInYears;
 
   let daysInCurrentYear =
     (differenceInDays / 365.25 - Math.trunc(differenceInDays / 365.25)) *
     365.25;
-  if (daysInCurrentYear === 0) daysInCurrentYear += 1;
-  daysInCurrentYear = Math.ceil(daysInCurrentYear);
-
+    
+    if (daysInCurrentYear === 0) daysInCurrentYear += 1;
+    daysInCurrentYear = Math.ceil(daysInCurrentYear);
+    
+  //!
+        alert('daysInCurrentYear = '+ daysInCurrentYear)
+    
   let month = daysInCurrentYear / 30;
   if (daysInCurrentYear / 30 === 0) month = 1;
   month = Math.ceil(month);
+
+  //!
+  alert('month = ' + month)
 
   let day = Math.ceil(daysInCurrentYear % 30);
   if (day > 30) day -= 30;
@@ -114,13 +131,19 @@ function convertGregorianDateToCopticDate(
   }
 
   let dayString = day.toString().padStart(2, "0");
+  //!
+    alert('dayString = ' + dayString)
   let monthString = month.toString().padStart(2, "0");
+  //!
+    alert('monthString = '+ monthString)
   if (changeDates) {
     copticDay = dayString;
     copticMonth = monthString;
     copticDate = dayString + monthString;
     copticYear = year.toString();
   }
+  //!
+    alert ('year = '+ year)
   return [[day, month, year], dayString + monthString];
 }
 
