@@ -970,26 +970,28 @@ const btnMassUnBaptised: Button = new Button({
             .filter(title =>
               ![Prefix.massCommon + "HallelujahFayBiBiFast&D=$copticFeasts.AnyDay", Prefix.massCommon + "Tishoury&D=$copticFeasts.AnyDay"].includes(splitTitle(title)[0]));
 
-        //! If the function did not return before reaching this point, it means that are neccessarily on a fast day (isFast === true). This also necessarily means that we are not on the last day of Jonah Fast, because on this day, isFast is set to false
+       
+       else return ifIsFast();
 
-        if ([Seasons.GreatLent, Seasons.JonahFast].includes(Season)) {
+        function ifIsFast(): string[] {
+          if (!isFast) return;  //! If the function did not return before reaching this point, it means that we are neccessarily on a fast day (isFast === true). This also necessarily means that we are not on the last day of Jonah Fast, because on this day, isFast is set to false
+          if ([Seasons.GreatLent, Seasons.JonahFast].includes(Season)) {
+            //We are either during the week days of the Great Lent, or the 3 days of Jonah Fast
+            [
+              ["HallelujahFayBiBiFast&D=$copticFeasts.AnyDay", "HallelujahFayBiBi&D=$Seasons.GreatLent"], //Replacing "Halleljah Ge Evmevi" with "Halleluja E Ikhon"
+              ["Tishoury&D=$copticFeasts.AnyDay", "EnsotyTishoury&D=$Seasons.GreatLent"]]   //Replacing "Tishoury" with "Ensoty Tishoury"
+              .forEach(array => btnsPrayersSequence[btnsPrayersSequence.indexOf(Prefix.massCommon + array[0])] = Prefix.massCommon + array[1]);
+          }
 
-          //We are either during the week days of the Great Lent, or the 3 days of Jonah Fast
-
-          //Replacing "Halleljah Ge Evmevi" with "Halleluja E Ikhon"
-          btnsPrayersSequence[btnsPrayersSequence.indexOf(Prefix.massCommon + "HallelujahFayBiBiFast&D=$copticFeasts.AnyDay")] = Prefix.massCommon + "HallelujahFayBiBi&D=$Seasons.GreatLent";
+  
+          //We will remove 'Hellulja Fay Bibi'and keep only 'Hellulja Ge Evmev'i". We will also remove Tayshoury in order to keep only Tishoury 
+          return btnsPrayersSequence
+            .filter(title =>
+              ![Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay", Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"].includes(splitTitle(title)[0]));
         }
-
-        //We will remove 'Hellulja Fay Bibi'and keep only 'Hellulja Ge Evmev'i". We will also remove Tayshoury in order to keep only Tishoury 
-        return btnsPrayersSequence
-          .filter(title =>
-            ![Prefix.massCommon + "HallelujahFayBiBi&D=$copticFeasts.AnyDay", Prefix.massCommon + "Tayshoury&D=$copticFeasts.AnyDay"].includes(splitTitle(title)[0]));
-
       };
 
-
     })();
-
 
     scrollToTop();
     return btnMassUnBaptised.prayersSequence;
@@ -1095,6 +1097,21 @@ const btnMassUnBaptised: Button = new Button({
         container: btnDocFragment,
       });
 
+      (function insertBiEhmotGharExpandable() {
+        //After inserting the Intercessions hyms, we will isnert an expandable for Bi Ehmot Ghar
+      
+        addExpandablePrayer({
+          btnID: 'btnBiEhmotGhar',
+          insertion: readingsAnchor,
+          prayers: [findTable(Prefix.massCommon + "BiEhmotGhar&D=$Seasons.GreatLent", MassCommonPrayersArray)|| undefined],
+          label: {
+            AR: "بي إهموت غار",
+            FR: "Ⲡⲓϩ̀ⲙⲟⲧ ⲅⲁⲣ"
+          },
+          languages: prayersLanguages
+        })
+      })();
+
       function setAnchorAccordingToOccasion():HTMLDivElement {
         let title: string = Prefix.massCommon + "ByTheIntercessionOfStMary&D=$copticFeasts.AnyDay";
 
@@ -1109,6 +1126,8 @@ const btnMassUnBaptised: Button = new Button({
         return htmlDivs[htmlDivs.length-1].nextElementSibling as HTMLDivElement
       }
     })();
+
+ 
 
     (function insertStPaulReading() {
       insertMassReading(

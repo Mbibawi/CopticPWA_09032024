@@ -1049,8 +1049,9 @@ function createBtn(args: {
   //Adding the labels to the button
   if (args.btn.label[defaultLanguage])
     editBtnInnerText(args.btn.label[defaultLanguage], defaultLanguage);
-  if (args.btn.label[foreingLanguage])
-    editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage);
+  
+/*   if (args.btn.label[foreingLanguage])
+    editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage); */
 
   args.btnsContainer.appendChild(newBtn);
 

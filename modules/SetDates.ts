@@ -97,8 +97,7 @@ function convertGregorianDateToCopticDate(
   let daysInCurrentYear =
     (differenceInDays - (diffrenceInYears * 365.25));
 
-  daysInCurrentYear += 1;
-  daysInCurrentYear = Math.ceil(daysInCurrentYear);
+  daysInCurrentYear = Math.ceil(daysInCurrentYear+1);//Why +1? I don't know. Need to sort it out to know why the dates don't match unless I add 1
 
 
   let month = daysInCurrentYear / 30;

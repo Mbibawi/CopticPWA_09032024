@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.5.9.2 (Testing the coptic date problem on different devices)";
+"v5.6.0 (Fixed Coptic date issue, added \"Ensoty Tishoury\" and \"Bi Ehmot Ghar\" )";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
