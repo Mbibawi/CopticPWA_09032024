@@ -726,9 +726,12 @@ function showOrHideSlide(
         return;
 
       Array.from(slideChild.children).forEach((parag: HTMLParagraphElement) => {
+        let label:string = actor[parag.lang.toUpperCase()];
+        if(!label) label = actor[defaultLanguage];
+        if (!label) return;
         parag.innerHTML =
           '<span class="actorSpan">' +
-          actor[parag.lang.toUpperCase()] +
+          label +
           ": </span>" +
           '<span class="textSpan">' +
           parag.innerHTML +
@@ -1049,7 +1052,7 @@ function createBtn(args: {
   //Adding the labels to the button
   if (args.btn.label[defaultLanguage])
     editBtnInnerText(args.btn.label[defaultLanguage], defaultLanguage);
-  
+
 /*   if (args.btn.label[foreingLanguage])
     editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage); */
 
@@ -2825,17 +2828,12 @@ function showSettingsPanel() {
 
     userActors.map((actor) => {
       let newBtn = createSettingsBtn({
-        innerText: '',
+        innerText: actor[defaultLanguage],
         tag: "button",
         btnClass: "colorbtn",
         btnsContainer: btnsContainer,
         id: actor.EN + "Color",
       });
-      for (let key in actor) {
-        let p = document.createElement("p");
-        if (actor[key]) p.innerText = actor[key];
-        newBtn.appendChild(p);
-      }
     });
     btnsContainer.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
       btnsContainer,

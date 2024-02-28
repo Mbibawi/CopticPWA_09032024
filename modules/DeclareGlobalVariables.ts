@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.6.0 (Fixed Coptic date issue, added \"Ensoty Tishoury\" and \"Bi Ehmot Ghar\" )";
+"v5.6.1 (Fixes to St Cyril Mass and other fixes)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv"
@@ -589,25 +589,22 @@ let selectedDate: number, //This is the date that the user might have manually s
   weekDay: number; //This is today's day of the week (Sunday, Monday, etc.) expressed in number starting from 0
 var todayDate: Date;
 let isFast: boolean;
-type Actor = { EN: string; FR?: string; AR?: string; COP?: string };
+type Actor = { EN: string; FR?: string; AR?: string };
 
 let actors: Actor[] = [
   {
     EN: "Priest",
     FR: "Prêtre",
-    COP: "Prêtre",
     AR: "الكاهن",
   },
   {
     EN: "Diacon",
     FR: "Diacre",
-    COP: "Diacre",
     AR: "الشماس",
   },
   {
     EN: "Assembly",
     FR: "Assemblée",
-    COP: "Assemblée",
     AR: "الشعب",
   },
   {

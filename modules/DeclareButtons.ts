@@ -596,6 +596,37 @@ const btnMassStBasil: Button = new Button({
           .forEach((row) => row.classList.toggle(hidden));
       });
     })();
+    (function insertStCyrilSecondReconciliationBtn() {
+      if (btn !== btnMassStCyril) return;
+
+      let secondCyrilReconciliation = findTable(
+        Prefix.massStCyril + "Reconciliation2&D=$copticFeasts.AnyDay",
+        MassStCyrilPrayersArray);
+
+      if (!secondCyrilReconciliation)
+        return console.log("Didn't find reconciliation");
+
+      let htmlBtn = addExpandablePrayer({
+        insertion: selectElementsByDataSetValue(
+          btnDocFragment,
+          Prefix.massStCyril + "Reconciliation&D=$copticFeasts.AnyDay"
+        )[0].nextElementSibling as HTMLDivElement, //We insert the button after the title
+        btnID: "secondStBasilReconciliation",
+        label:
+        {
+          FR: secondCyrilReconciliation[0][2],
+          AR: secondCyrilReconciliation[0][4],
+        },
+        prayers: [secondCyrilReconciliation],
+        languages: btn.languages,
+      })[0];
+      htmlBtn.addEventListener("click", () => {
+        let dataGroup =
+          Prefix.massStCyril + "Reconciliation&D=$copticFeasts.AnyDay";
+        selectElementsByDataSetValue(containerDiv, dataGroup, undefined, 'group')
+          .forEach((row) => row.classList.toggle(hidden));
+      });
+    })();
 
     (function addRedirectionButtons() {
       //Adding 2 buttons to redirect the other masses at the begining of the Reconciliation
