@@ -6422,7 +6422,7 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.gospelResponse + "Dawn4&D=$Seasons.JonahFast&C=Title",
+            Prefix.gospelResponse + "Dawn&D=$Seasons.JonahFeast&C=Title",
             "",
             "Réponse de l’Évangile du matin de la Pessah de Ninive",
             "",
@@ -6438,7 +6438,7 @@ PrayersArray = [[
     ],
     [
         [
-            Prefix.gospelResponse + "Mass4&D=$Seasons.JonahFast&C=Title",
+            Prefix.gospelResponse + "Mass&D=$Seasons.JonahFeast&C=Title",
             "",
             "Réponse de l’Évangile de la messe de la Pessah de Ninive",
             "",

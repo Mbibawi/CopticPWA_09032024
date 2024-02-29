@@ -10574,13 +10574,13 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah1&C=Title", 
+  Prefix.gospelDawn+"Psalm&D=JFast1&C=Title", 
   "مزمور (103: 1،8)", 
   "Psaume (103: 1,8)", 
   "Psalm (103: 1,8)", 
   ],
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah1&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "باركي يا نَفْسي الرَبَّ وكُلِّّ ما في بَاطِني لِيُبَارِكْ اسْمَهُ القُدُّوسْ، الرَبُّ رَحِيمٌ ورَؤوفْ، طَويلُ الرُّوحِ وكَثْيرِ الرَحْمَة.", 
   "01 Bénis le Seigneur, ô mon âme, bénis son nom très saint, tout mon être ! 08 Le Seigneur est tendresse et pitié, lent à la colère et plein d'amour.", 
   "01 Praise the Lord, my soul; all my inmost being, praise his holy name. 08 The Lord is compassionate and gracious, slow to anger, abounding in love.", 
@@ -10588,7 +10588,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah1&C=Title", 
+  Prefix.gospelDawn+"Gospel&D=JFast1&C=Title", 
   "متى (7: 6–12)", 
   "Mathieu (7: 6-12)", 
   "Matthew (7: 6-12)", 
@@ -10614,13 +10614,13 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah2&C=Title", 
+  Prefix.gospelDawn+"Psalm&D=JFast2&C=Title", 
   "مزمور (103: 9،14)", 
   "Psaume (103: 14,9)", 
   "Psalm (103: 14,9)", 
   ],
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah2&C=NoActor", 
+  Prefix.same+"C=NoActor", 
   "لِأَنَّهُ يَعْرِفُ جِبْلَتَنَا. يَذْكُرُ أَنَّنَا تُرَابٌ نَحْنُ.لا يُحَاكِمُ إِلَى ٱلْأَبَدِ، وَلَا يَحْقِدُ إِلَى ٱلدَّهْرِ.", 
   "14 Il sait de quoi nous sommes pétris, il se souvient que nous sommes poussière. 09 il n'est pas pour toujours en procès, ne maintient pas sans fin ses reproches ;", 
   "14 for he knows how we are formed, he remembers that we are dust. 09 He will not always accuse, nor will he harbour his anger for ever.", 
@@ -10628,7 +10628,7 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah2&C=Title", 
+  Prefix.gospelDawn+"Gospel&D=JFast2&C=Title", 
   "لوقا (13: 6–9)", 
   "Luc (13: 6-9)", 
   "Luke (13: 6-9)", 
@@ -10648,13 +10648,13 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah3&C=Title", 
+  Prefix.gospelDawn+"Psalm&D=JFast3&C=Title", 
   "مزمور (103: 12،13)", 
   "Psaume (103: 12,13)", 
   "Psalm (103: 12,13)", 
   ],
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah3&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "كَمَا يَتَرَأَفُ ٱلْأَبُ عَلَى ٱلْبَنِينَ يَتَرَأَفُ ٱلرَّبُّ عَلَى خَائِفِيهِ. كَبُعْدِ ٱلْمَشْرِقِ مِنَ ٱلْمَغْرِبِ أَبْعَدَ عَنَّا مَعَاصِيَنَا.", 
   "13 comme la tendresse du père pour ses fils, la tendresse du Seigneur pour qui le craint ! 12 aussi loin qu'est l'orient de l'occident, il met loin de nous nos péchés.", 
   "13 As a father has compassion on his children, so the Lord has compassion on those who fear him; as far as the east is from the west. 12 So far has he removed our transgressions from us.", 
@@ -10662,25 +10662,25 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah3&C=Title", 
+  Prefix.gospelDawn+"Gospel&D=JFast3&C=Title", 
   "متى (11: 25–30)", 
   "Matthieu (11: 25-30)", 
   "Wednesday of JonahFast", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "فِي ذلِكَ الْوَقْتِ أَجَابَ يَسُوعُ وَقَالَ: \"أَحْمَدُكَ أَيُّهَا الآبُ رَبُّ السَّمَاءِ وَالأَرْضِ، لأَنَّكَ أَخْفَيْتَ هذِهِ عَنِ الْحُكَمَاءِ وَالْفُهَمَاءِ وَأَعْلَنْتَهَا لِلأَطْفَالِ. نَعَمْ أَيُّهَا الآبُ، لأَنْ هكَذَا صَارَتِ الْمَسَرَّةُ أَمَامَكَ\".", 
   "25 En ce temps-là, Jésus prit la parole et dit : « Père, Seigneur du ciel et de la terre, je proclame ta louange : ce que tu as caché aux sages et aux savants, tu l’as révélé aux tout-petits. 26 Oui, Père, tu l’as voulu ainsi dans ta bienveillance.»", 
   "25 At that time Jesus answered and said, \"I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes\".", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "\"كُلُّ شَيْءٍ قَدْ دُفِعَ إِلَيَّ مِنْ أَبِي، وَلَيْسَ أَحَدٌ يَعْرِفُ الابْنَ إِلاَّ الآبُ، وَلاَ أَحَدٌ يَعْرِفُ الآبَ إِلاَّ الابْنُ وَمَنْ أَرَادَ الابْنُ أَنْ يُعْلِنَ لَهُ\".", 
   "27 « Tout m’a été remis par mon Père ; personne ne connaît le Fils, sinon le Père, et personne ne connaît le Père, sinon le Fils, et celui à qui le Fils veut le révéler ».", 
   "26 \"Even so, Father: for so it seemed good in thy sight. 27 All things are delivered unto me of my Father: and no man knoweth the Son, but the Father; neither knoweth any man the Father, save the Son, and he to whomsoever the Son will reveal him\".", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah3&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "\"تَعَالَوْا إِلَيَّ يَا جَمِيعَ الْمُتْعَبِينَ وَالثَّقِيلِي الأَحْمَالِ، وَأَنَا أُرِيحُكُمْ. اِحْمِلُوا نِيرِي عَلَيْكُمْ وَتَعَلَّمُوا مِنِّي، لأَنِّي وَدِيعٌ وَمُتَوَاضِعُ الْقَلْبِ، فَتَجِدُوا رَاحَةً لِنُفُوسِكُمْ لأَنَّ نِيرِي هَيِّنٌ وَحِمْلِي خَفِيفٌ\".", 
   "28 « Venez à moi, vous tous qui peinez sous le poids du fardeau, et moi, je vous procurerai le repos. 29 Prenez sur vous mon joug, devenez mes disciples, car je suis doux et humble de cœur, et vous trouverez le repos pour votre âme. 30 Oui, mon joug est facile à porter, et mon fardeau, léger. »", 
   "28 \"Come unto me, all ye that labour and are heavy laden, and I will give you rest. 29 Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. 30 For my yoke is easy, and my burden is light\".", 
@@ -10688,13 +10688,13 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah4&C=Title", 
+  Prefix.gospelDawn+"Psalm&D=JFast4&C=Title", 
   "مزمور (30: 10،11)", 
   "Psaume (30: 10,11)", 
   "Psalm (30: 10,11)", 
   ],
   [
-  Prefix.gospelDawn+"Psalm&D=Jonah4&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "ٱسْتَمِعْ يَا رَبُّ وَٱرْحَمْنِي. يَا رَبُّ، كُنْ مُعِينًا لِي. حَوَّلْتَ نَوْحِي إِلَى رَقْصٍ لِي. حَلَلْتَ مِسْحِي وَمَنْطَقْتَنِي فَرَحًا.", 
   "10 «Écoute, Seigneur, pitié pour moi ! Seigneur, viens à mon aide ! 11 Tu as changé mon deuil en une danse, mes habits funèbres en parure de joie.»", 
   "10 \"Hear, Lord, and be merciful to me; Lord, be my help. 11 You turned my wailing into dancing;you removed my sackcloth and clothed me with joy\".", 
@@ -10702,25 +10702,25 @@ ReadingsArrays.GospelDawnArray= [[
   ],
   [
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah4&C=Title", 
+  Prefix.gospelDawn+"Gospel&D=JFast4&C=Title", 
   "مرقس (8: 10-21)", 
   "Marc (8: 10-21)", 
   "Thursday of JonahFast", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "وَلِلْوَقْتِ دَخَلَ السَّفِينَةَ مَعَ تَلاَمِيذِهِ وَجَاءَ إِلَى نَوَاحِي دَلْمَانُوثَةَ، فَخَرَجَ الْفَرِّيسِيُّونَ وَابْتَدَأُوا يُحَاوِرُونَهُ طَالِبِينَ مِنْهُ آيَةً مِنَ السَّمَاءِ، لِكَيْ يُجَرِّبُوهُ. فَتَنَهَّدَ بِرُوحِهِ وَقَالَ: \"لِمَاذَا يَطْلُبُ هذَا الْجِيلُ آيَةً؟ اَلْحَقَّ أَقُولُ لَكُمْ: لَنْ يُعْطَى هذَا الْجِيلُ آيَةً\".", 
   "10 Aussitôt, montant dans la barque avec ses disciples, il alla dans la région de Dalmanoutha. 11 Les pharisiens survinrent et se mirent à discuter avec Jésus ; pour le mettre à l’épreuve, ils cherchaient à obtenir de lui un signe venant du ciel. 12 Jésus soupira au plus profond de lui-même et dit : « Pourquoi cette génération cherche-t-elle un signe ? Amen, je vous le déclare : aucun signe ne sera donné à cette génération. »", 
   "10 And straightway he entered into a ship with his disciples, and came into the parts of Dalmanutha. 11 And the Pharisees came forth, and began to question with him, seeking of him a sign from heaven, tempting him. 12 And he sighed deeply in his spirit, and saith, \"Why doth this generation seek after a sign? verily I say unto you, There shall no sign be given unto this generation\".", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "ثُمَّ تَرَكَهُمْ وَدَخَلَ أَيْضًا السَّفِينَةَ وَمَضَى إِلَى الْعَبْرِ، وَنَسُوا أَنْ يَأْخُذُوا خُبْزًا، وَلَمْ يَكُنْ مَعَهُمْ فِي السَّفِينَةِ إِلاَّ رَغِيفٌ وَاحِدٌ. وَأَوْصَاهُمْ قَائِلاً: \"انْظُرُوا وَتَحَرَّزُوا مِنْ خَمِيرِ الْفَرِّيسِيِّينَ وَخَمِيرِ هِيرُودُسَ\".", 
   "13 Puis il les quitta, remonta en barque, et il partit vers l’autre rive. 14 Les disciples avaient oublié d’emporter des pains ; ils n’avaient qu’un seul pain avec eux dans la barque. 15 Or Jésus leur faisait cette recommandation : « Attention ! Prenez garde au levain des pharisiens et au levain d’Hérode ! »", 
   "13 And he left them, and entering into the ship again departed to the other side. 14 Now the disciples had forgotten to take bread, neither had they in the ship with them more than one loaf. 15 And he charged them, saying, \"Take heed, beware of the leaven of the Pharisees, and of the leaven of Herod\".", 
   ],
   [
-  Prefix.gospelDawn+"Gospel&D=Jonah4&C=NoActor", 
+  Prefix.same+"&C=NoActor", 
   "فَفَكَّرُوا قَائِلِينَ بَعْضُهُمْ لِبَعْضٍ: لَيْسَ عِنْدَنَا خُبْزٌ. فَعَلِمَ يَسُوعُ وَقَالَ لَهُمْ: \"لِمَاذَا تُفَكِّرُونَ أَنْ لَيْسَ عِنْدَكُمْ خُبْزٌ؟ أَلاَ تَشْعُرُونَ بَعْدُ وَلاَ تَفْهَمُونَ؟ أَحَتَّى الآنَ قُلُوبُكُمْ غَلِيظَةٌ؟ أَلَكُمْ أَعْيُنٌ وَلاَ تُبْصِرُونَ، وَلَكُمْ آذَانٌ وَلاَ تَسْمَعُونَ، وَلاَ تَذْكُرُونَ؟ حِينَ كَسَّرْتُ الأَرْغِفَةَ الْخَمْسَةَ لِلْخَمْسَةِ الآلاَفِ، كَمْ قُفَّةً مَمْلُوَّةً كِسَرًا رَفَعْتُمْ؟\". قَالُوا لَهُ: \"اثْنَتَيْ عَشْرَةَ\". \"وَحِينَ السَّبْعَةِ لِلأَرْبَعَةِ الآلاَفِ، كَمْ سَلَّ كِسَرٍ مَمْلُوًّا رَفَعْتُمْ؟\". قَالُوا: \"سَبْعَةً\" فَقَالَ لَهُمْ: كَيْفَ لاَ تَفْهَمُونَ؟. ", 
   "16 Mais ils discutaient entre eux sur ce manque de pains. 17 Jésus s’en rend compte et leur dit : « Pourquoi discutez-vous sur ce manque de pains ? Vous ne saisissez pas ? Vous ne comprenez pas encore ? Vous avez le cœur endurci ? 18 Vous avez des yeux et vous ne voyez pas, vous avez des oreilles et vous n’entendez pas ! Vous ne vous rappelez pas ? 19 Quand j’ai rompu les cinq pains pour cinq mille personnes, combien avez-vous ramassé de paniers pleins de morceaux ? » Ils lui répondirent : « Douze». 20 « Et quand j’en ai rompu sept pour quatre mille, combien avez-vous rempli de corbeilles en ramassant les morceaux ? »  Ils lui répondirent : « Sept. » 21 Il leur disait : « Vous ne comprenez pas encore ? »", 
   "16 And they reasoned among themselves, saying, It is because we have no bread. 17 And when Jesus knew it, he saith unto them, \"Why reason ye, because ye have no bread? perceive ye not yet, neither understand? have ye your heart yet hardened? 18 Having eyes, see ye not? and having ears, hear ye not? and do ye not remember? 19 When I brake the five loaves among five thousand, how many baskets full of fragments took ye up?\" They say unto him, \"Twelve\". 20 \"And when the seven among four thousand, how many baskets full of fragments took ye up?\" And they said, \"Seven\". 21 And he said unto them, \"How is it that ye do not understand?\".", 

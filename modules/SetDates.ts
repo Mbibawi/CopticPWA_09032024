@@ -28,8 +28,6 @@ async function setCopticDates(today?: Date) {
   isFast = (() => {
     if (Season === Seasons.PentecostalDays)
       return false;
-    else if (Number(copticReadingsDate.split(Seasons.JonahFast)[1]) === 4)
-      return false; //The last day of Jonah Fast Season is not a fast day. It is the Jonah Pessah
     else if (copticFasts.indexOf(Season) > -1)
       return true; //i.e. if we are obviously during a fast period
     else if ([3, 5].includes(weekDay))
@@ -190,7 +188,7 @@ function checkIfInASpecificSeason(today: Date): string {
   //We filter the ResurrectionDates array for the resurrection date for the current year:
   let resurrectionDate: string = ResurrectionDates.find(
     (date) => date[0] === today.getFullYear()
-  )[1];
+  ).join('-');
 
   //We create a new Date from the selected resurrection date, and will set its hour to UTC 0
   let resurrection = new Date(resurrectionDate).setHours(0, 0, 0, 0);
@@ -235,10 +233,12 @@ function checkForUnfixedEvent(
     if (difference > 68) return;
     if (difference < 65) return;
 
-
-    //We are in the Jonah Feast days (3 days + 1)
+    //We are in the Jonah Fast days (3 days + 1)
     //The Jonah feast starts 15 days before the begining of the Great Lent
-    Season = Seasons.JonahFast;
+    
+    difference === 65
+      ? Season = Seasons.JonahFeast//We are on the Jonah Feast
+      : Season = Seasons.JonahFast; //We are during the 3 days of Jonah Fast
     date = isItSundayOrWeekDay(
       Seasons.JonahFast,
       Math.abs(69 - difference),

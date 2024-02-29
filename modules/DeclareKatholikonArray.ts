@@ -51,7 +51,7 @@ ReadingsArrays.KatholikonArray = [
   ],
   [
       [
-      Prefix.katholikon+"&D=Jonah1||1203&C=Title", 
+      Prefix.katholikon+"&D=JFast1||1203&C=Title", 
       "الكاثوليكون مِنْ رِسَالَةِ يَهُوذَا الرَسُولِ (1: 1-13)", 
       "Jude (1: 1-13)", 
       "Jude (1: 1-13)", 
@@ -83,7 +83,7 @@ ReadingsArrays.KatholikonArray = [
   ],
   [
   [
-  Prefix.katholikon+"&D=Jonah2&C=Title", 
+  Prefix.katholikon+"&D=JFast2&C=Title", 
   "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (4: 3-11)", 
   "1 Pierre (4: 3-11)", 
   "1 Peter (4: 3-11)", 
@@ -115,7 +115,7 @@ ReadingsArrays.KatholikonArray = [
   ],
   [
   [
-  Prefix.katholikon+"&D=Jonah3||GL42||Pntl48&C=Title", 
+  Prefix.katholikon+"&D=JFast3||GL42||Pntl48&C=Title", 
   "الكاثوليكون مِنْ رِسَالَةِ يُوحَنَا الرَسُولِ الأُولَى (2: 12-17)", 
   "1 Saint Jean (2: 12-17)", 
   "EN", 
@@ -141,7 +141,7 @@ ReadingsArrays.KatholikonArray = [
   ],
   [
   [
-  Prefix.katholikon+"&D=Jonah4&C=Title", 
+  Prefix.katholikon+"&D=JFast4&C=Title", 
   "الكاثوليكون مِنْ رِسَالَةِ بُطْرُسِ الرَسُولِ الأُولَى (3: 17-22)", 
   "1 Saint Pierre (3: 17-22)", 
   "1 Peter (3: 17-22)", 

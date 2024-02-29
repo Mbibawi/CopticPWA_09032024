@@ -87,7 +87,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Jonah1&C=Title",
+      Prefix.stPaul + "&D=JFast1&C=Title",
       "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَّة (6: 17-23)",
       "Romains (6: 17-23)",
       "Romans (6: 17-23)",
@@ -131,7 +131,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Jonah2&C=Title",
+      Prefix.stPaul + "&D=JFast2&C=Title",
       "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ كُولُوسِي (1: 21-29)",
       "Colossiens (1: 21-29)",
       "Colossiens (1: 21-29)",
@@ -145,7 +145,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Jonah3||2409&C=Title",
+      Prefix.stPaul + "&D=JFast3||2409&C=Title",
       "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ أَفَسُسْ (2: 1-22)",
       "Ephésiens (2: 1-22)",
       "Ephesians Ephésiens (2: 1-22)",
@@ -2452,7 +2452,7 @@ ReadingsArrays.StPaulArray = [
   ],
   [
     [
-      Prefix.stPaul + "&D=Jonah4||2609||0511||0113&C=Title",
+      Prefix.stPaul + "&D=JFast4||2609||0511||0113&C=Title",
       "رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رُومِيَةِ (10: 4-18)",
       "Romains (10: 4-18)",
       "Romans (10: 4-18)",

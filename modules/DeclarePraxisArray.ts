@@ -1831,7 +1831,7 @@ ReadingsArrays.PraxisArray = [
   ],
   [
   [
-  Prefix.praxis+"&D=053rdSunday||Jonah1&C=Title", 
+  Prefix.praxis+"&D=053rdSunday||JFast1&C=Title", 
   "الإبرَكْسِيسْ مِنْ أَعْمَالِ الرُسُلِ( 2 : 38 - 45 )", 
   "Actes (2: 38-45)", 
   "Acts (2: 38-45)", 
@@ -1863,7 +1863,7 @@ ReadingsArrays.PraxisArray = [
   ],
   [
   [
-  Prefix.praxis+"&D=Jonah2&C=Title", 
+  Prefix.praxis+"&D=JFast2&C=Title", 
   "الإبرَكْسِيسْ مِنْ أَعْمَالِ الرُسُلِ(17: 30–34)", 
   "Actes (17: 30–34)", 
   "Acts (17: 30–34)", 
@@ -1883,7 +1883,7 @@ ReadingsArrays.PraxisArray = [
   ],
   [
   [
-  Prefix.praxis+"&D=Jonah3&C=Title", 
+  Prefix.praxis+"&D=JFast3&C=Title", 
   "الإبركسيس من أعمال الرسل (15: 12-20)", 
   "Actes (15: 12-20)", 
   "Acts (15: 12-20)", 
@@ -1903,7 +1903,7 @@ ReadingsArrays.PraxisArray = [
   ],
   [
   [
-  Prefix.praxis+"&D=Jonah4&C=Title", 
+  Prefix.praxis+"&D=JFast4&C=Title", 
   "الإبركسيس من أعمال الرسل (3: 22-26)", 
   "Actes (3: 22-26)", 
   "Acts (3: 22-26)", 

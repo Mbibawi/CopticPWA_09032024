@@ -377,7 +377,7 @@ const btnIncenseDawn: Button = new Button({
 
     (async function addGreatLentPrayers() {
       if (btn.btnID !== btnIncenseDawn.btnID) return;
-      if (Season !== Seasons.GreatLent && Season !== Seasons.JonahFast) return;
+      if (![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;
       if (weekDay > 0 && weekDay < 6) {
         console.log("we are not a sunday");
         //We are neither a Saturday nor a Sunday, we will hence display the Prophecies dawn buton
@@ -405,6 +405,7 @@ const btnIncenseDawn: Button = new Button({
             container: btnDocFragment,
           });
 
+          //We will remove all the refrains except the 1st one
           let refrains = selectElementsByDataSetValue(
             btnDocFragment,
             Prefix.incenseDawn + "GodHaveMercyOnUsRefrain&D=$Seasons.GreatLent")
@@ -415,6 +416,7 @@ const btnIncenseDawn: Button = new Button({
           });
         })();
       } else {
+        //If we are Saturday or Sunday, we remove the "Prophecies Dawn" button from the readings' buttons
         if (btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn) > -1)
           btnIncenseDawn.children.splice(
             btnIncenseDawn.children.indexOf(btnReadingsPropheciesDawn),
@@ -424,6 +426,7 @@ const btnIncenseDawn: Button = new Button({
     })();
 
     (async function addExpandableBtnForAdamDoxolgies() {
+      //We add an expandable button for the Incense Dawn Adam Doxologies
       if (btn !== btnIncenseDawn) return;
       if (btnDocFragment.children.length === 0) return;
 
@@ -1005,7 +1008,7 @@ const btnMassUnBaptised: Button = new Button({
        else return ifIsFast();
 
         function ifIsFast(): string[] {
-          if (!isFast) return;  //! If the function did not return before reaching this point, it means that we are neccessarily on a fast day (isFast === true). This also necessarily means that we are not on the last day of Jonah Fast, because on this day, isFast is set to false
+          if (!isFast) return;
           if ([Seasons.GreatLent, Seasons.JonahFast].includes(Season)) {
             //We are either during the week days of the Great Lent, or the 3 days of Jonah Fast
             [
@@ -1069,7 +1072,7 @@ const btnMassUnBaptised: Button = new Button({
     })();
 
     (function insertHisFoundationsAndIGodHaveMercy() {
-      if (!isFast || ![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
+      if (![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
 
       let titles: string[] = [
         Prefix.commonPrayer + "WeHaveBeenSavedWithYou&D=$copticFeasts.AnyDay",
@@ -2231,7 +2234,7 @@ function setGospelPrayersSequence(liturgy: string, isMass: boolean): string[] {
         : (gospelResponse = gospelResponse =
           [gospelResponse.find((table) => table[0][0].includes("Week&D="))]);
     } else if (
-      [Seasons.JonahFast, Seasons.StMaryFast].includes(Season)
+      [Seasons.JonahFast, Seasons.JonahFeast, Seasons.StMaryFast].includes(Season)
       ||
       [copticFeasts.EndOfGreatLentFriday, copticFeasts.LazarusSaturday,
       ].includes(copticReadingsDate)
@@ -2654,90 +2657,98 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
 
   let dayFeasts: string[] = (() => {
     let feast: string[] = [];
-    let relevant: [string, string] = Object.entries(copticFeasts).find(
+    let matching: [string, string] = Object.entries(copticFeasts).find(
       (entry) => [copticDate, copticReadingsDate].includes(entry[1])
     ); //We check if today is a feast. We also check by the copticReadingsDate because some feast are referrenced by the copticReadings date : eg. Pntl39
 
-    if (relevant) feast.push(relevant[1]); //We push the date
+    if (matching) feast.push(matching[1]); //We push the date
 
-    relevant = Object.entries(Seasons).find((entry) => entry[1] === Season); //We check also for the season
+    matching = Object.entries(Seasons).find((entry) => entry[1] === Season); //We check also for the season
 
-    if (Season !== Seasons.NoSeason) feast.push(Season); //We also push the Season
+    if (matching) feast.push(matching[1]); //We push the Season
 
     if (feast.length > 0) return getUniqueValuesFromArray(feast) as string[];
   })();
 
   (async function InsertCymbalVerses() {
-    let cymbalsPlaceHolder: HTMLElement = selectElementsByDataSetValue(
+    let cymbalsAnchor: HTMLElement = selectElementsByDataSetValue(
       btn.docFragment,
       Prefix.commonIncense + "CymbalVersesPlaceHolder&D=$copticFeasts.AnyDay")[0];
-    if (!cymbalsPlaceHolder)
-      return console.log("Didn't find cymbalsPlaceHolder");
-
-    if (!cymbalsPlaceHolder)
+    
+    if (!cymbalsAnchor)
       return console.log("We didn't find the cymbal verses placeholder");
 
-    let sequence = [
-      Prefix.cymbalVerses + "Wates&D=$copticFeasts.AnyDay",
-      Prefix.cymbalVerses + "&D=$copticFeasts.AnyDay",
-    ];
+    let cymbals: string[][][];
 
-    //If we are during any of the Lord Feasts (or any season where we follow the same pattern), we add "Jesus Christ is the same for ever...",
-    if (
-      [...lordFeasts, copticFeasts.Coptic29th].includes(copticDate) ||
-      [Seasons.Nativity, Seasons.Baptism, Seasons.PentecostalDays].includes(
-        Season
-      )
-    )
-      sequence.push(
-        Prefix.cymbalVerses + "LordFeastsEnd&D=$copticFeasts.AnyDay"
-      );
-
-    if (weekDay > 2) sequence[0] = sequence[0].replace("Wates&D", "Adam&D");
-
-    if (dayFeasts)
-      dayFeasts.forEach((feast) =>
-        [
-          ...lordFeasts,
-          Seasons.Nativity,
-          Seasons.Baptism,
-          Seasons.PentecostalDays,
-        ].includes(feast) //During Seasons.Nativity (i.e., between Nativity and Circumcision) and Seasons.Baptism(from Baptism to Cana Wedding), the Cymbals verses follow the pattern of any Lord Feast: it starts with "Amoyni Marin..." or "Ten O'osht", then the cymbal verses of the feast, and finally, the "Eb'oro enti ti hirini". We will hence remove the 2nd element from the sequence
-          ? insertFeastInSequence(sequence, feast, 1, 1)
-          : insertFeastInSequence(sequence, feast, 1, 0)
-      ); //We always start with 'Amoyni Marin...' or with 'Tin O'osht...', so we will insert the feast element before the 2nd element, and will not delete anything
-
-    let cymbals: string[][][] = processSequence(
-      sequence,
-      CymbalVersesPrayersArray
-    );
+    Season === Seasons.JonahFast
+    ? cymbals = CommonPrayersArray.filter(table => table[0][0].startsWith(Prefix.commonPrayer + "KyrieElieson&D=$copticFeasts.AnyDay")) //If we are during the Jonah Fast, the Cymbal Verses are not chanted, they are replaced by the Long Kyrielison
+      : cymbals = getCymbalVerses();
+    console.log('Cymbals = ', cymbals);
 
     if (cymbals.length < 1)
-      return console.log(
-        "no cymbals were found by the provided sequence: ",
-        sequence
-      );
+    return console.log(
+      "no cymbals were found by the provided sequence: "
+    );
 
     insertPrayersAdjacentToExistingElement({
       tables: getUniqueValuesFromArray(cymbals) as string[][][],
       languages: btn.languages,
       position: {
         beforeOrAfter: "beforebegin",
-        el: cymbalsPlaceHolder.nextElementSibling as HTMLElement,
+        el: cymbalsAnchor.nextElementSibling as HTMLElement,
       },
       container: btn.docFragment,
     });
+
+    function getCymbalVerses():string[][][] {
+      let sequence = [
+        Prefix.cymbalVerses + "Wates&D=$copticFeasts.AnyDay",
+        Prefix.cymbalVerses + "&D=$copticFeasts.AnyDay",
+      ];
+      
+          //If we are during any of the Lord Feasts (or any season where we follow the same pattern), we add "Jesus Christ is the same for ever...",
+          if (
+            [...lordFeasts, copticFeasts.Coptic29th].includes(copticDate) ||
+            [Seasons.Nativity, Seasons.Baptism, Seasons.PentecostalDays].includes(
+              Season
+            )
+          )
+            sequence.push(
+              Prefix.cymbalVerses + "LordFeastsEnd&D=$copticFeasts.AnyDay"
+            );
+      
+          if (weekDay > 2) sequence[0] = sequence[0].replace("Wates&D", "Adam&D");
+      
+          if (dayFeasts)
+            dayFeasts.forEach((feast) =>
+              [
+                ...lordFeasts,
+                Seasons.Nativity,
+                Seasons.Baptism,
+                Seasons.PentecostalDays,
+              ].includes(feast) //During Seasons.Nativity (i.e., between Nativity and Circumcision) and Seasons.Baptism(from Baptism to Cana Wedding), the Cymbals verses follow the pattern of any Lord Feast: it starts with "Amoyni Marin..." or "Ten O'osht", then the cymbal verses of the feast, and finally, the "Eb'oro enti ti hirini". We will hence remove the 2nd element from the sequence
+                ? insertFeastInSequence(sequence, feast, 1, 1)
+                : insertFeastInSequence(sequence, feast, 1, 0)
+            ); //We always start with 'Amoyni Marin...' or with 'Tin O'osht...', so we will insert the feast element before the 2nd element, and will not delete anything
+      
+            return processSequence(
+              sequence,
+              CymbalVersesPrayersArray
+            );
+
+    }
+
   })();
 
   (async function InsertCommonDoxologies() {
-    let doxologiesPlaceHolder: HTMLElement = selectElementsByDataSetValue(
+    let doxologiesAnchor: HTMLElement = selectElementsByDataSetValue(
       btn.docFragment,
       Prefix.commonIncense + "DoxologiesPlaceHolder&D=$copticFeasts.AnyDay")[0];
 
-    if (!doxologiesPlaceHolder)
+    if (!doxologiesAnchor)
       return console.log("Didn't find doxologiesPlaceholder");
 
-    if (!doxologiesPlaceHolder) return;
+    if (!doxologiesAnchor) return;
 
     let sequence: string[] = [
       Prefix.doxologies + "DawnWatesStMary&D=$copticFeasts.AnyDay",
@@ -2775,9 +2786,10 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
             Seasons.KiahkWeek3,
             Seasons.KiahkWeek4,
             Seasons.PentecostalDays,
+            Seasons.JonahFast //The Jonah doxology comes before St. Mary Doxolgy according to some sources
           ].includes(feast)
         )
-          index = 0; //If one of the dates in feast[] corresponds to a one of th 'Lord's Feasts', it means we are in a Lord Feast. the doxologies of the feast will be placed at the begining of the doxologies. We follow the same rule for the doxologies of the PentecostalDays and the month of Kiahk
+          index = 0; //If one of the dates in feast[] corresponds to a one of the 'Lord's Feasts', it means we are in a Lord Feast. the doxologies of the feast will be placed at the begining of the doxologies. We follow the same rule for the doxologies of the PentecostalDays and the month of Kiahk
         else if (excludedFeasts.includes(feast)) {
           let feastIndex = sequence.indexOf(feast);
           sequence.splice(2, 0, sequence[feastIndex]); //If it is one of the doxologies already included by default, we place it after St. Maykel
@@ -2814,7 +2826,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
       languages: btn.languages,
       position: {
         beforeOrAfter: "beforebegin",
-        el: doxologiesPlaceHolder.nextElementSibling as HTMLElement,
+        el: doxologiesAnchor.nextElementSibling as HTMLElement,
       },
       container: btn.docFragment,
     });
@@ -2842,6 +2854,7 @@ async function insertCymbalVersesAndDoxologies(btn: Button) {
    * @returns {string[][][]} - an array of the tables[][] found
    */
   function processSequence(sequence: string[], tablesArray: string[][][]) {
+    console.log(sequence);
     let tables: string[][][] = [];
 
     sequence.map((title) => {

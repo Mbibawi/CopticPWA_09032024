@@ -13214,7 +13214,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Psalm&D=Jonah1&C=Title",
+            Prefix.gospelMass + "Psalm&D=JFast1&C=Title",
             "مزمور (130: 3-4)",
             "Psaume (130: 3,4)",
             "Monday of Jonah Fast",
@@ -13228,7 +13228,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Gospel&D=Jonah1&C=Title",
+            Prefix.gospelMass + "Gospel&D=JFast1&C=Title",
             "مَتَّى (12: 35-45)",
             "Matthieu (12: 35-45)",
             "Monday of Jonah Fast",
@@ -13260,7 +13260,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Psalm&D=Jonah2&C=Title",
+            Prefix.gospelMass + "Psalm&D=JFast2&C=Title",
             "مزمور (85 : 2)",
             "Psaume (85: 2)",
             "Tuesday of Jonah Fast",
@@ -13274,7 +13274,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Gospel&D=Jonah2&C=Title",
+            Prefix.gospelMass + "Gospel&D=JFast2&C=Title",
             "لوقا (11 : 29-36)",
             "Luc (11: 29-36)",
             "Tuesday of Jonah Fast",
@@ -13312,7 +13312,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Psalm&D=Jonah3&C=Title",
+            Prefix.gospelMass + "Psalm&D=JFast3&C=Title",
             "مزمور (32: 1،5)",
             "Psaume (32: 1,5)",
             "Wednesday of Jonah Fast",
@@ -13326,7 +13326,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Gospel&D=Jonah3&C=Title",
+            Prefix.gospelMass + "Gospel&D=JFast3&C=Title",
             "مَتَّى (15: 32ـ39، 16: 1ـ4)",
             "Matthieu (15: 32-39, 16: 1-4 )",
             "Wednesday of Jonah Fast",
@@ -13358,7 +13358,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Psalm&D=Jonah4&C=Title",
+            Prefix.gospelMass + "Psalm&D=JFast4&C=Title",
             "مزمور (118: 5،18)",
             "Psaume (118: 5, 18)",
             "Thursday of Jonah Fast",
@@ -13372,7 +13372,7 @@ ReadingsArrays.GospelMassArray = [[
     ],
     [
         [
-            Prefix.gospelMass + "Gospel&D=Jonah4&C=Title",
+            Prefix.gospelMass + "Gospel&D=JFast4&C=Title",
             "يوحنا (2: 12-25)",
             "Jean (2: 12-25)",
             "Thursday of JonahFast",
