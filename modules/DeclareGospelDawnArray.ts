@@ -10477,7 +10477,7 @@ ReadingsArrays.GospelDawnArray= [[
   [
   [
   Prefix.gospelDawn+"Psalm&D=Pntl8thSunday&C=Title", 
-  " مزمور باكر 104:30-31", 
+  " مز  مور باكر 104:30-31", 
   "Psalms 104:30-31", 
   "Psalms 104:30-31", 
   ],

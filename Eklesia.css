@@ -614,19 +614,25 @@ br{
   width:95%;
 }
 .multipleChoicePrayersBtn{
-  background-color: rgb(41, 43, 43) !important;
-  width: 41vw;
-  margin: 2px 2px;
+  background-color: rgb(3, 87, 87) !important;
+  width: 44vw;
+  margin: 4px 4px;
   height: fit-content;
-  min-height: 40vh;
+  min-height: 38vh;
   justify-items: center;
-  border-radius: 20px;
+  border-radius: 40%;
+  border-color: goldenrod;
+  border-width: 6px;
+  outline-color: #012723;
+  outline-style: solid;
+  outline-width: 2px;
+  padding: 2.5cqi;
 }
 .multipleChoicePrayersBtn >p{
   color:white;
   font-weight: 600;
-  font-size: 11pt;
-  line-height: 14pt;
+  font-size: 70cqi;
+  line-height: 6cqh;
   margin:1px 1px;
   border-right: none !important ;
 }

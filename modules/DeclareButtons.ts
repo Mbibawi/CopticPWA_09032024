@@ -1586,11 +1586,11 @@ const btnMassUnBaptised: Button = new Button({
             Prefix.commonPrayer +
             "OurFatherWhoArtInHeaven&D=$copticFeasts.AnyDay";
 
-        //!CAUTION, the order of the buttons in hourBtn is reversed (eg.: [9th, 6th, 3rd] instead of [3rd, 6th, 9th])
 
         let sequence: string[];
 
-        if (hoursBtns.indexOf(hourBtn) === 0) {
+        if (hoursBtns.indexOf(hourBtn) === hoursBtns.length - 1) {
+          //This is the last hour btn
           sequence = [
             WeExaltYou,
             Creed,
@@ -1599,8 +1599,8 @@ const btnMassUnBaptised: Button = new Button({
             HolyLordOfSabaot,
             OurFatherWhoArtInHeaven,
           ];
-        } else if (hoursBtns.indexOf(hourBtn) === 1) {
-          //this is the before last
+        } else if (hoursBtns.indexOf(hourBtn) === hoursBtns.length-2) {
+          //this is the before last hour btn
           sequence = [Agios, OurFatherWhoArtInHeaven, HailToYouMaria];
         } else {
           //Any other hour before the 2 last
