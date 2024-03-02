@@ -33,7 +33,7 @@ async function startApp() {
       setCopticDates(selectedDate);
     }
   } else {
-      setCopticDates();
+    setCopticDates();
   }
 
   showChildButtonsOrPrayers(btnMainMenu); //!Caution: btnMain must be displayed after the dates and the Season have been set. Otherwise, btn Psalmody will not change its title
@@ -726,8 +726,8 @@ function showOrHideSlide(
         return;
 
       Array.from(slideChild.children).forEach((parag: HTMLParagraphElement) => {
-        let label:string = actor[parag.lang.toUpperCase()];
-        if(!label) label = actor[defaultLanguage];
+        let label: string = actor[parag.lang.toUpperCase()];
+        if (!label) label = actor[defaultLanguage];
         if (!label) return;
         parag.innerHTML =
           '<span class="actorSpan">' +
@@ -1053,8 +1053,8 @@ function createBtn(args: {
   if (args.btn.label[defaultLanguage])
     editBtnInnerText(args.btn.label[defaultLanguage], defaultLanguage);
 
-/*   if (args.btn.label[foreingLanguage])
-    editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage); */
+  /*   if (args.btn.label[foreingLanguage])
+      editBtnInnerText(args.btn.label[foreingLanguage], foreingLanguage); */
 
   args.btnsContainer.appendChild(newBtn);
 
@@ -2100,10 +2100,10 @@ async function showMultipleChoicePrayersButton(args: {
           undefined,
           2
         );
-  
+
         //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
         expandableBtnsPannel.appendChild(newDiv);
-  
+
         expandableBtnsPannel.style.borderRadius = "10px";
         let startAt: number = 0;
         //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
@@ -2111,18 +2111,18 @@ async function showMultipleChoicePrayersButton(args: {
       },
     });
 
-  (function createMasterBtnHtml(){//Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
-    createBtn({
-      btn: btn,
-      btnsContainer: args.masterBtnDiv,
-      btnClass: btn.cssClass,
-      clear: false,
-      onClick: btn.onClick,
-    });
-    args.masterBtnDiv.classList.add(inlineBtnsContainerClass);
-    args.masterBtnDiv.classList.add("masterBtnDiv");
-    args.masterBtnDiv.style.gridTemplateColumns = "100%"
-      ;
+    (function createMasterBtnHtml() {//Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
+      createBtn({
+        btn: btn,
+        btnsContainer: args.masterBtnDiv,
+        btnClass: btn.cssClass,
+        clear: false,
+        onClick: btn.onClick,
+      });
+      args.masterBtnDiv.classList.add(inlineBtnsContainerClass);
+      args.masterBtnDiv.classList.add("masterBtnDiv");
+      args.masterBtnDiv.style.gridTemplateColumns = "100%"
+        ;
     })();
     return btn
   })();
@@ -2131,7 +2131,7 @@ async function showMultipleChoicePrayersButton(args: {
    * Shows a group of html buttons, each button shows a prayer. A button next permits to navigate through the list of html buttons
    */
   function showGroupOfNumberOfPrayers(
-    masterBtn:Button,
+    masterBtn: Button,
     startAt: number,
     btnsDiv: HTMLDivElement,
     groupOfNumber: number
@@ -2205,7 +2205,7 @@ async function showMultipleChoicePrayersButton(args: {
    *Creates a new Button for each optional prayer
    @return {Promise<Button[]>}
    */
-  async function createBtnsForPrayers():Promise<Button[]> {
+  async function createBtnsForPrayers(): Promise<Button[]> {
     let btns: Button[];
     btns = args.filteredPrayers.map((table) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
@@ -2219,25 +2219,25 @@ async function showMultipleChoicePrayersButton(args: {
         },
         languages: args.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
         cssClass: "multipleChoicePrayersBtn",
-        onClick: ()=>btnOnClick(btn, title),
+        onClick: () => btnOnClick(btn, title),
       });
       return btn;
     });
 
     if (foreingLanguage)
       btns
-      .filter(btn=>!btn.label[defaultLanguage] && btn.label[foreingLanguage])//For any button which prayer is not available in the defaultLanguage, but is available in the foreignLanguage, we will set its defaultLanguage label to be equal to its foreignLanguage lable. We do this, because any button that doesn't have a defaulLangauge label will be excluded from the btns array that the function will return
-          .map(btn => {
-            btn.label[defaultLanguage] = btn.label[foreingLanguage];
-            btns.splice(btns.indexOf(btn), 1);//We remove the button from btns array, and will push it to the array later in order to move it to the end
-            return btn
-          })
+        .filter(btn => !btn.label[defaultLanguage] && btn.label[foreingLanguage])//For any button which prayer is not available in the defaultLanguage, but is available in the foreignLanguage, we will set its defaultLanguage label to be equal to its foreignLanguage lable. We do this, because any button that doesn't have a defaulLangauge label will be excluded from the btns array that the function will return
+        .map(btn => {
+          btn.label[defaultLanguage] = btn.label[foreingLanguage];
+          btns.splice(btns.indexOf(btn), 1);//We remove the button from btns array, and will push it to the array later in order to move it to the end
+          return btn
+        })
         .forEach(btn => btns.push(btn));
 
     return btns.filter(btn => btn.label[defaultLanguage]);//!We return only the btns having a lable in the defaultLanguage
-    
-    function btnOnClick(btn:Button, title: string){
-      let table = findTable(title, getTablesArrayFromTitlePrefix(title))|| undefined
+
+    function btnOnClick(btn: Button, title: string) {
+      let table = findTable(title, getTablesArrayFromTitlePrefix(title)) || undefined
       console.log(title);
       let container = document.createElement('div');
       if (!table) return;
@@ -2249,7 +2249,7 @@ async function showMultipleChoicePrayersButton(args: {
       //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
       hideExpandableButtonsPannel();
 
-      let shown = 
+      let shown =
         Array.from(
           containerDiv.children as HTMLCollectionOf<HTMLDivElement>
         )
@@ -2257,10 +2257,10 @@ async function showMultipleChoicePrayersButton(args: {
             (div) =>
               div.dataset.optionalPrayer &&
               div.dataset.optionalPrayer === masterBtn.dataset.shown
-        )
-      
-          if(shown) shown.remove();
-      
+          )
+
+      if (shown) shown.remove();
+
       //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
       let createdElements = showPrayers({
         table: table,
@@ -2271,7 +2271,7 @@ async function showMultipleChoicePrayersButton(args: {
       }) || undefined;
 
       if (!createdElements) return;
-      
+
       container.dataset.optionalPrayer = title;
       masterBtn.dataset.shown = title;
       args.masterBtnDiv.insertAdjacentElement('afterend', container);
@@ -2770,14 +2770,14 @@ function showSettingsPanel() {
             if (localStorage.displayMode !== mode) {
               localStorage.displayMode = mode;
 
-              let userActors:[Actor, boolean][] = JSON.parse(localStorage.showActors);
+              let userActors: [Actor, boolean][] = JSON.parse(localStorage.showActors);
 
               if (mode === displayModes[2] && localStorage.displayMode === mode)
                 //If mode = 'Priest Mode', we set the value of 'Diacon' in the 'showActors' localStorage to false in order to hide all the 'Diacon' response
                 userActors.find(actor => actor[0].EN === actors[1].EN)[1] = false;
-                
-                else userActors.find(actor => actor[0].EN === actors[1].EN)[1] = true;
-                
+
+              else userActors.find(actor => actor[0].EN === actors[1].EN)[1] = true;
+
               localStorage.showActors = JSON.stringify(userActors);
 
               Array.from(btnsContainer.children).map((btn) => {
@@ -3077,12 +3077,12 @@ function playingWithInstalation() {
 
 async function populatePrayersArrays() {
   //We are populating subset arrays of PrayersArray in order to speed up the parsing of the prayers when the button is clicked
-  if (PrayersArray.length < 1)
-    return console.log("PrayersArray is empty = ", PrayersArray);
+  if (PrayersArrayFR.length < 1)
+    return console.log("PrayersArray is empty = ", PrayersArrayFR);
 
   let array: [string, string, Function], BOH;
 
-  PrayersArray.forEach((table) => {
+  PrayersArrayFR.forEach((table) => {
     if (table.length < 1 || table[0].length < 1) return;
 
     array = PrayersArraysKeys.find((array) => table[0][0].startsWith(array[0]));
@@ -3443,7 +3443,7 @@ async function callFetchSynaxariumArabic() {
   for (let i = 5; i < 8; i++) {
     await fetchSynaxariumArabic(i);
   }
-  console.log(ReadingsArrays.SynaxariumArray);
+  console.log(ReadingsArrays.SynaxariumArrayFR);
 }
 /**
  * Fetches the Synaxarium text from http://katamars.avabishoy.com/api/katamars/
@@ -3458,7 +3458,7 @@ async function fetchSynaxariumArabic(month: number) {
     daystring = day.toString();
     if (day < 10) daystring = "0" + daystring;
 
-    tbl = ReadingsArrays.SynaxariumArray.filter((tbl) =>
+    tbl = ReadingsArrays.SynaxariumArrayFR.filter((tbl) =>
       tbl[0][0].includes("&D=" + daystring + monthstring)
     )[0];
 
@@ -11428,7 +11428,6 @@ async function fetchSynaxariumFrench(months: string[]) {
     if (Number(month) < 10) month = "0" + month;
     console.log("month =", month);
     await processMonth(query, month);
-    // console.log(ReadingsArrays.SynaxariumArray);
   });
 
   async function processMonth(monthQuery: string, month) {
@@ -11490,7 +11489,7 @@ async function fetchSynaxariumFrench(months: string[]) {
     let day: string = i.toString();
     if (i < 10) day = "0" + day;
     console.log("day=", day, " and month =", month);
-    table = ReadingsArrays.SynaxariumArray.filter((tbl) =>
+    table = ReadingsArrays.SynaxariumArrayFR.filter((tbl) =>
       tbl[0][0].includes("&D=" + day + month)
     )[0];
     console.log("table = ", table);
@@ -11645,6 +11644,57 @@ function cleanReadingArray(readingArray: string[][][]) {
 }
 
 /**
+ * This is a function that tests the scenario of replacing the text of a given language in all the arrays with the corresponding text in another language. It aims at testing the extendablitiy of the project to other languages 
+ */
+async function testReplaceLanguageText() {
+  let en: string = 'Lorem ipsum dolor sit amet. Est itaque incidunt ex adipisci consequatur est libero eius eos laboriosam odit. Quo quas facere cum illum dolorem ut voluptate provident ea minima exercitationem ad aspernatur explicabo est internos quia vel pariatur voluptatem? Qui atque aliquam qui numquam voluptatem et recusandae architecto qui sequi exercitationem et enim ipsam. Ea enim omnis non itaque exercitationem sit alias ullam et internos quod? Eos aperiam laboriosam ut dolorum voluptatem nam velit provident.';
+  let prefixes = [
+    Prefix.prayersArray,
+    Prefix.gospelDawn,
+    Prefix.gospelMass,
+    Prefix.gospelNight,
+    Prefix.gospelVespers,
+    Prefix.katholikon,
+    Prefix.praxis,
+    Prefix.propheciesDawn,
+    Prefix.stPaul,
+    Prefix.synaxarium];
+
+  let languages: string[], array: string[][][], keys: [string, string, Function], newArray: string[][][], index: number;
+  let lorem: string[][][];//This is the array that contains the english version of our text
+
+  prefixes.forEach(prefix => {
+    keys = PrayersArraysKeys.find(array => array[0] === prefix);
+    languages = getLanguages(keys[1]);//The languages[] of the array
+
+    array = keys[2]();
+    lorem = [];
+
+    array.forEach(table => {
+      lorem.push([[table[0][0]]]);
+      table.forEach(row => lorem[lorem.length - 1].push([en]));
+    });//For each table in array, we add a table in lorem having as its first element a string[] row containing the title of the table. We then add a new row for each row in the table and push the English text to it.
+
+    newArray = structuredClone(array);//This is a copy to work with
+
+    newArray.forEach(table => {
+      table
+        .filter(row =>
+          row[0] !== Prefix.placeHolder)
+        .forEach(row => {
+          row[0].endsWith('&C=Comments')
+            ? index = 1
+            : index = languages.indexOf('FR') + 1;
+          row[index] = lorem[newArray.indexOf(table)][table.indexOf(row) + 1][0];
+        });
+    });
+    console.log(newArray);
+
+  })
+
+}
+
+/**
  * This function is part of an alternative idea consisting of working with an array of html elements instead of an array of text. The idea is to accelerate the lodding of the page by avoiding the creation of divs and paragraphs. The function retruns a string containg the a paragraph element for each text element in each row. This function is par
  */
 async function createHtmlArray() {
@@ -11654,7 +11704,7 @@ async function createHtmlArray() {
   testRetrieveTables();
 
   async function buildArray() {
-    let arrayName = 'PrayersArray'
+    let arrayName = 'PrayersArrayFR'
     let array: string[][][] = eval(arrayName);
     let newArray: string[][][] = [];
     let newTable: string[][];
@@ -11727,7 +11777,7 @@ async function createHtmlArray() {
 
     [Prefix.psalmody, Prefix.communion, Prefix.bookOfHours, Prefix.massCommon, Prefix.massStBasil]
       .forEach(prefix => {
-        PrayersArray.filter(table => splitTitle(table[0][0])[0].startsWith(prefix))
+        PrayersArrayFR.filter(table => splitTitle(table[0][0])[0].startsWith(prefix))
           .forEach(tbl => tablesTitles.push(splitTitle(tbl[0][0])[0]))
       });
 

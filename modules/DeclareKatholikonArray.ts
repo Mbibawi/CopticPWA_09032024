@@ -1,4 +1,4 @@
-ReadingsArrays.KatholikonArray = [
+ReadingsArrays.KatholikonArrayFR = [
   [
   [
   Prefix.katholikon+"&D=0101||043rdSunday||122ndSunday||Pntl1stSunday&C=Title", 

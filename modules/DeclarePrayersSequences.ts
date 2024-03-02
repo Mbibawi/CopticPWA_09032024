@@ -132,5 +132,22 @@ const PsalmodyPrayersSequences = {
         
         Prefix.psalmody+"ChantLetsSingWithDavid&D=$copticFeasts.AnyDay||$Seasons.KiahkWeek1||$Seasons.KiahkWeek2",
     ],
-}   
+}  
+
+const HolyWeekPrayersSequences = {
+    HourSequence: [
+        Prefix.HolyWeek + "HourIntroduction&D=$Seasons.HolyWeek",
+
+        Prefix.HolyWeek + "HourCopticPsalm&D=$Seasons.HolyWeek",
+
+        Prefix.HolyWeek + "HourCopticGospel&D=$Seasons.HolyWeek",
+
+        Prefix.HolyWeek + "GospelCommentary&D=$Seasons.HolyWeek",
+
+        Prefix.HolyWeek + "DayLitany&D=$Seasons.HolyWeek",
+        
+        Prefix.HolyWeek + "PassoverEnd&D=$Seasons.HolyWeek",
+
+    ]
+}
 

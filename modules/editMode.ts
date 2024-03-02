@@ -551,7 +551,7 @@ function saveModifiedArray(args: {
 
     tablesArray = eval(htmlRow.dataset.arrayName);
 
-    if (PrayersArrays.includes(tablesArray)) tablesArray = PrayersArray; //If the array is one of the arrays in PrayersArrays, the Array that need to be saved is Prayers Array not the sub array itself
+    if (PrayersArrays.includes(tablesArray)) tablesArray = PrayersArrayFR; //If the array is one of the arrays in PrayersArrays, the Array that need to be saved is Prayers Array not the sub array itself
 
     if (!tablesArray)
       return console.log(
@@ -851,13 +851,13 @@ function addNewCell(htmlParag: HTMLElement): HTMLElement | void {
   let htmlRow = getHtmlRow(htmlParag);
   if (!htmlRow) return;
   let p = document.createElement("p"),
-    lang: string = prompt('Provide the language of the paragraph')||'FR';
-    p.contentEditable = 'true';
-    p.dataset.root = htmlParag.dataset.root;
-    p.title = htmlParag.title;
-    p.classList.add(lang);
-    p.lang = lang;
-    p.innerText = 'New paragraph added';
+    lang: string = prompt('Provide the language of the paragraph') || 'FR';
+  p.contentEditable = 'true';
+  p.dataset.root = htmlParag.dataset.root;
+  p.title = htmlParag.title;
+  p.classList.add(lang);
+  p.lang = lang;
+  p.innerText = 'New paragraph added';
   htmlParag.insertAdjacentElement("afterend", p) as HTMLElement;
   htmlRow.style.gridTemplateAreas = setGridAreas(htmlRow);
   htmlRow.style.gridTemplateColumns = setGridColumnsOrRowsNumber(htmlRow);
@@ -1319,7 +1319,8 @@ function getHtmlRow(htmlParag: HTMLElement): HTMLDivElement | undefined | void {
 function getLanguages(arrayName?): string[] {
   let languages: string[] = prayersLanguages;
   if (!arrayName) return languages;
-  if (arrayName.startsWith("ReadingsArrays.")) languages = readingsLanguages;
+  if (arrayName.startsWith("ReadingsArrays."))
+    languages = readingsLanguages;
   if (arrayName.startsWith("ReadingsArrays.SynaxariumArray"))
     languages = ["FR", "AR"];
   if (arrayName === "NewTable") languages = ["COP", "FR", "EN", "CA", "AR"];
@@ -1496,16 +1497,17 @@ function editDayReadings(date?: string) {
     });
   });
 
-  for (let arrayName in ReadingsArrays) {
-    ReadingsArrays[arrayName]
-      .filter((table) => table[0][0].includes(date))
+  Object.entries(ReadingsArrays)
+    .forEach(readingArray => {
+      readingArray[1].filter((table) => table[0][0].includes(date))
       .forEach((table) => {
         startEditingMode({
-          tableTitle: table[0][0],
+          tableTitle: splitTitle(table[0][0])[0],
+          arrayName:'ReadingsArrays.' + readingArray[0],
           clear: false,
         });
       });
-  }
+    });
 }
 function showBtnInEditingMode(btn: Button) {
   if (containerDiv.children.length > 0)
@@ -1620,24 +1622,24 @@ function modifyAllSelectedText() {
       row[index] = row[index].replaceAll(text, modified);
     })
   );
-  
+
   (function reloadCurrentlyEditedTables() {
     //We will reload the currently displayed table(s)
-    
+
     let titles = new Set(
       Array.from(containerDiv.children as HTMLCollectionOf<HTMLDivElement>)
         .filter((htmlRow) => htmlRow.title)
         .map((htmlRow) => splitTitle(htmlRow.title)[0]));//We retrieve the titles of the all the displayed tables
-    
+
     containerDiv.dataset.arrayName = '';//We do this in order to avoid that startEditingMode() triggers the alert for the user to confirm that he wants to reload another table from the sama array
-  
+
     startEditingMode({
       tableTitle: Array.from(titles).join(', '),
       arrayName: arrayName,
       languages: getLanguages(arrayName),
       clear: true
     });
-  
+
   })();
 
 }

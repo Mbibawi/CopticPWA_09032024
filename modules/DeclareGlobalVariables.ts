@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.6.4 (Added buttons to the Book of Hours, changes to the \"Multiple Choice\" button)";
+  "v5.6.5 (Started adding Holy Week buttons and prayers)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv") as HTMLDivElement;
@@ -181,6 +181,7 @@ const Prefix = {
   HolyWeek: "HW_", //Stands for Holy Week
   placeHolder: "PlaceHolder_",
   psalmody: "Psalmody_",
+  prayersArray: 'PrayersArray_',
 };
 const plusCharCode: number = 10133;
 const btnClass = "sideBarBtn";
@@ -348,15 +349,15 @@ const bookOfHours: {
 };
 
 const ReadingsArrays = {
-  PraxisArray: [],
-  KatholikonArray: [],
-  StPaulArray: [],
-  SynaxariumArray: [],
-  GospelMassArray: [],
-  GospelVespersArray: [],
-  GospelDawnArray: [],
-  GospelNightArray: [],
-  PropheciesDawnArray: [],
+  PraxisArrayFR: [] as string[][][],
+  KatholikonArrayFR: [] as string[][][],
+  StPaulArrayFR: [] as string[][][],
+  SynaxariumArrayFR: [] as string[][][],
+  GospelMassArrayFR: [] as string[][][],
+  GospelVespersArrayFR: [] as string[][][],
+  GospelDawnArrayFR: [] as string[][][],
+  GospelNightArrayFR: [] as string[][][],
+  PropheciesDawnArrayFR: [] as string[][][],
 };
 const Seasons = {
   //Seasons are periods of more than 1 day, for which we have specific prayers (e.g.: cymbal verses, doxologies, praxis response, etc.)
@@ -577,7 +578,7 @@ const GreatLordFeasts = [
   ],
   textAmplified = [];
 //VARS
-let PrayersArray: string[][][] = [];
+let PrayersArrayFR: string[][][] = [];
 let lastClickedButton: Button;
 let selectedDate: number, //This is the date that the user might have manually selected
   copticDate: string, //The Coptic date is stored in a string not in a number like the gregorian date, this is to avoid complex calculations
@@ -687,49 +688,50 @@ const PrayersArraysKeys: [string, string, Function][] = [
   [Prefix.commonIncense, "IncensePrayersArray", () => IncensePrayersArray],
   [
     Prefix.gospelMass,
-    "ReadingsArrays.GospelMassArray",
-    () => ReadingsArrays.GospelMassArray,
+    "ReadingsArrays.GospelMassArrayFR",
+    () => ReadingsArrays.GospelMassArrayFR,
   ],
   [
     Prefix.gospelDawn,
-    "ReadingsArrays.GospelDawnArray",
-    () => ReadingsArrays.GospelDawnArray,
+    "ReadingsArrays.GospelDawnArrayFR",
+    () => ReadingsArrays.GospelDawnArrayFR,
   ],
   [
     Prefix.gospelVespers,
-    "ReadingsArrays.GospelVespersArray",
-    () => ReadingsArrays.GospelVespersArray,
+    "ReadingsArrays.GospelVespersArrayFR",
+    () => ReadingsArrays.GospelVespersArrayFR,
   ],
   [
     Prefix.gospelNight,
-    "ReadingsArrays.GospelNightArray",
-    () => ReadingsArrays.GospelNightArray,
+    "ReadingsArrays.GospelNightArrayFR",
+    () => ReadingsArrays.GospelNightArrayFR,
   ],
   [
     Prefix.stPaul,
-    "ReadingsArrays.StPaulArray",
-    () => ReadingsArrays.StPaulArray,
+    "ReadingsArrays.StPaulArrayFR",
+    () => ReadingsArrays.StPaulArrayFR,
   ],
   [
     Prefix.katholikon,
-    "ReadingsArrays.KatholikonArray",
-    () => ReadingsArrays.KatholikonArray,
+    "ReadingsArrays.KatholikonArrayFR",
+    () => ReadingsArrays.KatholikonArrayFR,
   ],
   [
     Prefix.praxis,
-    "ReadingsArrays.PraxisArray",
-    () => ReadingsArrays.PraxisArray,
+    "ReadingsArrays.PraxisArrayFR",
+    () => ReadingsArrays.PraxisArrayFR,
   ],
 
   [
     Prefix.synaxarium,
-    "ReadingsArrays.SynaxariumArray",
-    () => ReadingsArrays.SynaxariumArray,
+    "ReadingsArrays.SynaxariumArrayFR",
+    () => ReadingsArrays.SynaxariumArrayFR,
   ],
   [
     Prefix.propheciesDawn,
-    "ReadingsArrays.PropheciesDawnArray",
-    () => ReadingsArrays.PropheciesDawnArray,
+    "ReadingsArrays.PropheciesDawnArrayFR",
+    () => ReadingsArrays.PropheciesDawnArrayFR,
   ],
   [Prefix.psalmody, "PsalmodyPrayersArray", () => PsalmodyPrayersArray],
+  [Prefix.prayersArray, 'PrayersArray', () => PrayersArrayFR],
 ];

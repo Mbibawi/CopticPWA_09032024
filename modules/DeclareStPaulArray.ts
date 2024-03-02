@@ -1,4 +1,4 @@
-ReadingsArrays.StPaulArray = [
+ReadingsArrays.StPaulArrayFR = [
   [
     [
       Prefix.stPaul + "&D=0101&C=Title",
