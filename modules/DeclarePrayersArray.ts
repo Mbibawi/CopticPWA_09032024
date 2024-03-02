@@ -5290,7 +5290,7 @@ PrayersArray = [[
         "",
         "Oui, nous Te supplions ô Père saint et bon, ne nous soumets pas à la tentation et que toute iniquité n’ait aucun pouvoir sur nous. Mais délivre-nous des futilités, leurs pensées, leurs actions, leurs images et leurs sensations. Inhibe le tentateur, éloigne-le de nous. Interpelle les mouvements qu’il cherche à nous inculper. Détourne de nous les raisons qui conduisent au péché. Délivre-nous par Ta sainte Puissance, par le Christ Jésus notre Seigneur par Qui la gloire, l’honneur, la magnificence et la prosternation Te sont dus avec Lui et le Saint- Esprit vivifiant et consubstantiel à Toi. Maintenant et toujours et pour les siècles des siècles. Amen",
         "",
-        "نعم نسألَكَ أيھا الآب القُدُّوسْ الصَالِحْ مُحِبْ الصلاح لا تُدْخِلْنَا في تَجْرِبَة ولا يتسلط علينا كُلِّ إثُمَّ، لَكِنْ نَجِّنَا من الأعمال الغير النافعة وأفكارھا وحركاتھا ومناظرھا وملامسھا، والمجرَبّ ابطله واطرده عنا، وانتھر أيّْضَاً حركاته المغروسة فينا، واقطع عَنَّا الأسباب التي تسوقنا إلى الخطية، ونجنا بقوتك المُقَدَّسْة، بِالْمَسِيحْ يَسُوعْ رَبِّنَا، ھذا الذي مِنَ قِبَلِهِ المَجْدُ والكَرَامَةْ والعزة  والسجو د تليق بك مَعَه ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دھر الدھور آمْينْ.",
+        "نعم نسألَكَ أَيُّھَا الآب القُدُّوسْ الصَالِحْ مُحِبْ الصلاح لا تُدْخِلْنَا في تَجْرِبَة ولا يتسلط علينا كُلِّ إثُمَّ، لَكِنْ نَجِّنَا من الأعمال الغير النافعة وأفكارھا وحركاتھا ومناظرھا وملامسھا، والمجرَبّ ابطله واطرده عنا، وانتھر أيّْضَاً حركاته المغروسة فينا، واقطع عَنَّا الأسباب التي تسوقنا إلى الخطية، ونجنا بقوتك المُقَدَّسْة، بِالْمَسِيحْ يَسُوعْ رَبِّنَا، ھذا الذي مِنَ قِبَلِهِ المَجْدُ والكَرَامَةْ والعزة  والسجو د تليق بك مَعَه ومَعَ الْرُوحْ القُدُسْ المُحْيّي المُسَاوي لَكَ الآنْ وكُلَّ أوانْ وإلى دھر الدھور آمْينْ.",
     ],
     [
         Prefix.same + "&C=CommentText",
@@ -10402,18 +10402,55 @@ PrayersArray = [[
 ],
 [
     [
-        Prefix.fractionPrayer + "&D=$copticFeasts.AnyDay&C=Title",
+    Prefix.fractionPrayer+"StBasil&D=$copticFeasts.AnyDay&C=Title", 
+    "", 
+    "Oraison de fraction de Saint Basil (Ô Maître, Seigneur, notre Dieu, grand et éternel, dont la gloire est admirable)", 
+    "", 
+    " القسمة الباسيلي السنوي) أيُّهَا السيد الرَبّ إلَهْنَا العَظِيمُ الأَبَدِي والمتعجب منه بالمجد)", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "Ô Maître, Seigneur, notre Dieu, grand et éternel, dont la gloire est admirable. Toi qui gardes fidèlement Son alliance et Sa pitié pour ceux qui L’aiment de tout leur cœur. Toi qui nous as sauvé de nos péchés par Ton Fils unique Jésus Christ notre Seigneur, la vie de chacun.", 
+    "", 
+    "أيُها السيدُ الرَبُّ إلهُنا العظيمُ الأَبَدِي والمُتعَجّب منهُ بالمجد حَافظ عهده ورحمَتِهِ للذينَ يُحبونَهُ بِكُلَّ قلبهم. الذي أعطانا الخلاص من خَطَايَانَا بابنِهِ الوَحِيد الجِنْسْ يَسُوعْ المَسِيحْ رَبَّنا حياة كُلِّ أحد.", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "Toi le soutien de ceux qui cherchent Ton refuge, l’espérance de ceux qui crient vers Toi. Toi devant qui se tiennent des milliers et des myriades de saints anges et d’archanges, les Chérubins, et les Séraphins, et les foules innombrables de puissances célestes.", 
+    "", 
+    "يا مُعين الملتجئين إليه ورجاء الذينَ يصرُخونَ نحوه. الذي يقفُ أمامهُ أُلوفْ أُلوفْ ورَبّوات رَبّوات المَلائِكَةْ ورؤساء المَلائِكَةْ المُقَدَّسْين الشَارُوبِيمْ والسِيرافِيمْ وكُلَّ الجمع غَيْرُ المحصى الذي للقوات السَمَائِيَّة.", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "Ô Dieu qui a rendu saintes ces offrandes par la descente de Ton Esprit Saint et les a rendus pures, purifie nous aussi, Ô Seigneur, de nos péchés, visibles et invisibles, que toute pensée non complaisante à Ta bonté soit écartée de nous, Ô Dieu ami du genre humain.", 
+    "", 
+    "يا اللّه الذي قدّس هَذِهِ القرابين الموضوعة بحلول روحِكَ القُدُّوسْ عليها وطهّرتها، طهّرنا نحنُ أيّْضَاً يا سَيِّدنْا من خَطَايَانَا الخفية والظاهرة، وكُلَّ فكر لا يرضى صلاحك يا اللّه مُحِبْ الَبشَرْ فليبعد عنا.", 
+    ],
+    [
+    Prefix.same+"&C=Priest", 
+    "", 
+    "Purifie nos âmes, nos corps, nos esprits, nos cœurs, nos yeux, notre compréhension, nos pensées et nos intentions afin qu’avec un cœur net, une âme éclairée, une face sans honte, une foi sans hypocrisie, un amour parfait et une espérance qui demeure, nous osions par faveur et sans crainte nous adresser à Toi, Ô Père Saint qui êtes aux cieux et te dire:", 
+    "", 
+    "طهّر نفوسنا وأجْسَادِنَا وأرواحنا وقلوبنا وعيونا وأفهامنا وأفكارنا ونياتنا. لِكَيّ بقلبٍ طاهر ونفسٍ مستنيرة ووجهٍ غَيْرُ مخزى وإيمانٍ بلا رياء ومحبةٍ كاملة ورجاءٍ ثابت نجسرُ بدالة بِغَيّْرِ خوف أنْ نَطْلُبْ إليكَ يا اللّه الآب القُدُّوسْ الذي في السَّمَواتْ ونقول :", 
+    ],
+    ],
+[
+    [
+        Prefix.fractionPrayer + "ForSon&D=$copticFeasts.AnyDay&C=Title",
         "",
         "Oraison de fraction pour le Fils\n(Ô Fils unique, Dieu Le Logos qui nous a aimé)",
         "",
-        "قِسمة سنوي للابن\n(اَلابْنِ الوَحِيد الإلَهَ الكلمة الذي أحبنا)",
+        "قِسمة سنوي للابن\n(أَيُّھَا الابنُ الوَحِيد الإلَهَ الكلمة الذي أحبنا)",
     ],
     [
         Prefix.same + "&C=Priest",
         "",
         "Ô Fils unique, Dieu Le Logos qui nous a aimé et qui par Son amour a voulu nous racheter de la perdition éternelle. Et comme la mort était dans le chemin de notre salut, Il désira y passer par Ton amour pour nous.",
         "",
-        "أيھا الابنُ الوَحِيد الإلَهَ الكلمة الذي أحبنا، وحبه أرادَ أنْ يُخلصنا من الھلاك الأبدى. ولَمّا كان المَوْتَ في طريق خَلاصِنَا، اشتھى أنْ يجوز فيه حباً بنا.",
+        "أَيُّھَا الابنُ الوَحِيد الإلَهَ الكلمة الذي أحبنا، وحبه أرادَ أنْ يُخلصنا من الھلاك الأبدى. ولَمّا كان المَوْتَ في طريق خَلاصِنَا، اشتھى أنْ يجوز فيه حباً بنا.",
     ],
     [
         Prefix.same + "&C=Priest",

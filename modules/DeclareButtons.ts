@@ -857,14 +857,33 @@ const btnMassStBasil: Button = new Button({
         .forEach((row) => row.remove());
     })();
 
-    showFractionPrayersMasterButton(
-      btn,
-      Array.from(btnDocFragment.children)
+    (function showFractionPrayersMasterButton() {
+      //We will insert a button displaying a pannel of choices for the different Fraction prayers according to the day/season, etc.s
+ 
+
+      showMultipleChoicePrayersButton({
+        filteredPrayers: filter(),
+        languages: prayersLanguages,
+        btnLabels: { AR: "صلوات القسمة", FR: "Oraisons de la Fraction" },
+        masterBtnID: "btnFractionPrayers",
+        anchor: Array.from(btnDocFragment.children)
         .find(child => child.id && child.id.startsWith(Prefix.massCommon + "FractionPrayerPlaceholder&D=$copticFeasts.AnyDay")) as HTMLElement,
-      { AR: "صلوات القسمة", FR: "Oraisons de la Fraction" },
-      "btnFractionPrayers",
-      FractionsPrayersArray
-    );
+      });
+
+      function filter(): string[][][] {
+        let filtered: string[][][] = [];
+        let dates = [copticDate, Season, copticFeasts.AnyDay];
+
+        if (Number(copticDay) === 29 && ![4, 5, 6].includes(Number(copticMonth))) dates.unshift(copticFeasts.Coptic29th);
+        
+          dates.forEach(date =>
+          filtered.push(...FractionsPrayersArray.filter(table => isMultiDatedTitleMatching(table[0][0], date)))
+          );
+        return getUniqueValuesFromArray(filtered) as string[][][];
+      };
+      
+    })();
+
 
     (function insertCommunionChants() {
       //Inserting the Communion Chants after the Psalm 150
@@ -879,7 +898,7 @@ const btnMassStBasil: Button = new Button({
       });
     
       showMultipleChoicePrayersButton({
-        filteredPrayers: Array.from(new Set(filtered)),
+        filteredPrayers: getUniqueValuesFromArray(filtered) as string[][][],
         languages: btn.languages,
         btnLabels: {
           AR: "مدائح التوزيع",
@@ -2582,43 +2601,7 @@ async function getGospelReadingAndResponses(args: {
   }
 }
 
-/**
- * Filters the FractionsPrayersArray and Insert a button (a "Master Button") in the specified place (i.e. the anchor). This button when clicked, opens a panel displaying buttons. Each button represents a Fraction. User choises a prayer by clicking on the button.
- * @param {Button} - btn
- * @param {HTMLElement} anchor - the html element after which the "Master Button" will be inserted
- * @param {typeBtnLabel} lable - the lable of the "Master Button"
- * @param {string} masterBtnID - the id that will be given to the html element created for the "Master Button"
- * @param {string[][][]} prayersArray - the array that will be filtered in order to retrieve the prayers that will be displayed by the buttons
- */
-function showFractionPrayersMasterButton(
-  btn: Button,
-  anchor: HTMLElement,
-  label: typeBtnLabel,
-  masterBtnID: string,
-  prayersArray: string[][][]
-) {
- 
-  showMultipleChoicePrayersButton({
-    filteredPrayers: Array.from(filter()),
-    languages: btn.languages,
-    btnLabels: label,
-    masterBtnID: masterBtnID,
-    anchor: anchor,
-  });
 
-  function filter():Set<string[][]> {
-    let filtered: string[][][] = [];
-    let dates = [copticDate, Season, copticFeasts.AnyDay];
-
-    if (Number(copticDay) === 29 && ![4, 5, 6].includes(Number(copticMonth))) dates.unshift(copticFeasts.Coptic29th);
-    
-      dates.forEach(date =>
-      filtered.push(...prayersArray.filter(table => isMultiDatedTitleMatching(table[0][0], date)))
-      );
-
-    return new Set(filtered);
-  };
-}
 /**
  * Filters the array containing the gospel text for each liturgie (e.g., Incense Dawn, Vepspers, etc.) and returns the text of the gospel and the psaume. The fil
  * @param {Button} btn - the button of the liturgie within which we want to show the gospel text and the psaume text
