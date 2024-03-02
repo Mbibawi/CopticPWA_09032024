@@ -2058,7 +2058,7 @@ function selectElementsByDataSetValue(
 
 /**
  *
- * @param {string[][][]} selectedPrayers - An array containing the optional prayers for which we want to display html button elements in order for the user to choose which one to show
+ * @param {string[][][]} filteredPrayers - An array containing the optional prayers for which we want to display html button elements in order for the user to choose which one to show
  * @param {Button} btn
  * @param {HTMLElement} btnsDiv - The html element in which each prayer will be displayed when the user clicks an inline button representing this prayer
  * @param {Object{AR:string, FR:'string'}} btnLabels - An object containing the labels of the master button that the user will click to show a list of buttons, each representing a prayer in selectedPrayers[]
@@ -2066,7 +2066,7 @@ function selectElementsByDataSetValue(
  */
 async function showMultipleChoicePrayersButton(args: {
   filteredPrayers: string[][][];
-  btn: Button;
+  languages: string[];
   btnLabels: typeBtnLabel;
   masterBtnID: string;
   masterBtnDiv?: HTMLElement;
@@ -2078,50 +2078,68 @@ async function showMultipleChoicePrayersButton(args: {
     args.anchor.insertAdjacentElement("afterend", args.masterBtnDiv); //we insert the div after the insertion position
   }
 
-  let prayersMasterBtn: Button;
+  (async function createMasterBtn() {
+    let btn: Button = new Button({
+      btnID: args.masterBtnID,
+      label: args.btnLabels,
+      children: await createBtnsForPrayers(), //The inlineBtns are not added immediately, they are added later by createInlineBtns() below
+      pursue: false, //!CAUTION: we must keep it false in order to stop the showChildButtonsOrPrayers() from continuing the execution after calling the onClick() property of the master button. Otherwise, this will show again the inlineButtons of the master button
+      cssClass: inlineBtnClass,
+      onClick: () => {
+        let groupOfNumber: number = 4;
+        //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
+        showExpandableBtnsPannel(args.masterBtnID, true);
+        //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
+        let newDiv = document.createElement("div");
+        newDiv.id = args.masterBtnID + "Container";
+        //Customizing the style of newDiv
+        newDiv.classList.add(inlineBtnsContainerClass);
+        //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
+        newDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
+          newDiv,
+          undefined,
+          2
+        );
+  
+        //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
+        expandableBtnsPannel.appendChild(newDiv);
+  
+        expandableBtnsPannel.style.borderRadius = "10px";
+        let startAt: number = 0;
+        //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
+        showGroupOfNumberOfPrayers(btn, startAt, newDiv, groupOfNumber);
+      },
+    });
 
-  //Creating a new Button to which we will attach as many inlineBtns as there are optional prayers suitable for the day (if it is a feast or if it falls during a Season)
-  prayersMasterBtn = new Button({
-    btnID: args.masterBtnID,
-    label: args.btnLabels,
-    children: await createBtnsForPrayers(), //The inlineBtns are not added immediately, they are added later by createInlineBtns() below
-    pursue: false, //!CAUTION: we must keep it false in order to stop the showChildButtonsOrPrayers() from continuing the execution after calling the onClick() property of the master button. Otherwise, this will show again the inlineButtons of the master button
-    cssClass: inlineBtnClass,
-    onClick: () => {
-      let groupOfNumber: number = 4;
-      //We show the inlineBtnsDiv (bringing it in front of the containerDiv by giving it a zIndex = 3)
-      showExpandableBtnsPannel(args.masterBtnID, true);
-      //When the prayersMasterBtn is clicked, it will create a new div element to which it will append html buttons element for each inlineBtn in its inlineBtns[] property
-      let newDiv = document.createElement("div");
-      newDiv.id = args.masterBtnID + "Container";
-      //Customizing the style of newDiv
-      newDiv.classList.add(inlineBtnsContainerClass);
-      //We set the gridTemplateColumns of newDiv to a grid of 3 columns. The inline buttons will be displayed in rows of 3 inline buttons each
-      newDiv.style.gridTemplateColumns = setGridColumnsOrRowsNumber(
-        newDiv,
-        undefined,
-        2
-      );
+  (function createMasterBtnHtml(){//Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
+    createBtn({
+      btn: btn,
+      btnsContainer: args.masterBtnDiv,
+      btnClass: btn.cssClass,
+      clear: false,
+      onClick: btn.onClick,
+    });
+    args.masterBtnDiv.classList.add(inlineBtnsContainerClass);
+    args.masterBtnDiv.classList.add("masterBtnDiv");
+    args.masterBtnDiv.style.gridTemplateColumns = "100%"
+      ;
+    })();
+    return btn
+  })();
 
-      //We append newDiv  to inlineBtnsDiv before appending the 'next' button, in order for the "next" html button to appear at the buttom of the inlineBtnsDiv. Notice that inlineBtnsDiv is a div having a 'fixed' position, a z-index = 3 (set by the showInlineBtns() function that we called). It hence remains visible in front of, and hides the other page's html elements in the containerDiv
-      expandableBtnsPannel.appendChild(newDiv);
-
-      expandableBtnsPannel.style.borderRadius = "10px";
-      let startAt: number = 0;
-      //We call showGroupOfSisxPrayers() starting at inlineBtns[0]
-      showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
-    },
-  });
-
+  /**
+   * Shows a group of html buttons, each button shows a prayer. A button next permits to navigate through the list of html buttons
+   */
   function showGroupOfNumberOfPrayers(
+    masterBtn:Button,
     startAt: number,
-    newDiv: HTMLDivElement,
+    btnsDiv: HTMLDivElement,
     groupOfNumber: number
   ) {
     let childBtn: Button;
 
-    (function createButtonNext() {
-      if (prayersMasterBtn.children.length <= groupOfNumber) return; //We don't create next button if the nubmer of optional prayers is less or equal to the defined number of prayers to be displayed each time
+    (function createHtmlButtonNext() {
+      if (masterBtn.children.length <= groupOfNumber) return; //We don't create next button if the nubmer of optional prayers is less or equal to the defined number of prayers to be displayed each time
       let next: Button = new Button({
         btnID: "btnNext",
         label: { AR: "التالي", FR: "Suivants" },
@@ -2129,10 +2147,10 @@ async function showMultipleChoicePrayersButton(args: {
       });
 
       //if the number of prayers is > than the groupOfNumber AND the remaining prayers are >0 then we show the next button
-      if (prayersMasterBtn.children.length - startAt > groupOfNumber) {
+      if (masterBtn.children.length - startAt > groupOfNumber) {
         //We create the "next" Button only if there is more than 6 inlineBtns in the prayersBtn.inlineBtns[] property
         next.onClick = () => btnNextOnClick(true);
-      } else if (prayersMasterBtn.children.length - startAt <= groupOfNumber) {
+      } else if (masterBtn.children.length - startAt <= groupOfNumber) {
         next.label.AR = "عودة";
         next.label.FR = "Retour";
         next.onClick = () => btnNextOnClick(false);
@@ -2149,7 +2167,7 @@ async function showMultipleChoicePrayersButton(args: {
 
       function btnNextOnClick(forward: boolean = true) {
         //When next is clicked, we remove all the html buttons displayed in newDiv (we empty newDiv)
-        newDiv.innerHTML = "";
+        btnsDiv.innerHTML = "";
         //We then remove the "next" html button itself (the "next" button is appended to inlineBtnsDiv directly not to newDiv)
         expandableBtnsPannel.querySelector("#" + next.btnID).remove();
         //We set the starting index for the next group of inline buttons
@@ -2157,121 +2175,117 @@ async function showMultipleChoicePrayersButton(args: {
         else startAt = 0;
 
         //We call showGroupOfSixPrayers() with the new startAt index
-        showGroupOfNumberOfPrayers(startAt, newDiv, groupOfNumber);
+        showGroupOfNumberOfPrayers(masterBtn, startAt, btnsDiv, groupOfNumber);
       }
     })();
 
-    (function createPrayersButtons() {
+    (function createPrayersHtmlButtons() {
       for (
         let n = startAt;
-        n < startAt + groupOfNumber && n < prayersMasterBtn.children.length;
+        n < startAt + groupOfNumber && n < masterBtn.children.length;
         n++
       ) {
         //We create html buttons for the 1st 6 inline buttons and append them to newDiv
-        childBtn = prayersMasterBtn.children[n];
+        childBtn = masterBtn.children[n];
         if (!foreingLanguage && !childBtn.label[defaultLanguage]) return;//If no foreign language has been set by the user, and the prayer is not availble in the defaultLanguage (we check this by seeing if there is a label in this language), we will not create the btn
         if (!childBtn.label[defaultLanguage] && !childBtn.label[foreingLanguage]) return; //Also if a foreign language has been set by the user, but the prayer is not availble in neither the defaultLanguage  nor the default language (we check this by seeing if there is a label in each language), we will not create the btn
         createBtn({
           btn: childBtn,
-          btnsContainer: newDiv,
+          btnsContainer: btnsDiv,
           btnClass: childBtn.cssClass,
           clear: false,
           onClick: childBtn.onClick,
         });
       }
     })();
-  }
+  };
 
-  //Creating an html button element for prayersMasterBtn and displaying it in btnsDiv (which is an html element passed to the function)
-  createBtn({
-    btn: prayersMasterBtn,
-    btnsContainer: args.masterBtnDiv,
-    btnClass: prayersMasterBtn.cssClass,
-    clear: false,
-    onClick: prayersMasterBtn.onClick,
-  });
-  args.masterBtnDiv.classList.add(inlineBtnsContainerClass);
-  args.masterBtnDiv.classList.add("masterBtnDiv");
-  args.masterBtnDiv.style.gridTemplateColumns = "100%";
 
   /**
-   *Creates a new inlineBtn for each optional prayer and pushing it to fractionBtn.inlineBtns[]
+   *Creates a new Button for each optional prayer
+   @return {Promise<Button[]>}
    */
-  async function createBtnsForPrayers() {
-    let btns: Button[] = [];
-    btns = args.filteredPrayers.map((prayerTable) => {
+  async function createBtnsForPrayers():Promise<Button[]> {
+    let btns: Button[];
+    btns = args.filteredPrayers.map((table) => {
       //for each string[][][] representing a table in the Word document from which the text was extracted, we create an inlineButton to display the text of the table
-      if (prayerTable.length === 0) return;
-      let tblTitle = splitTitle(prayerTable[0][0])[0];
-      let inlineBtn: Button = new Button({
-        btnID: tblTitle, //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
+      if (table.length === 0) return;
+      let title = splitTitle(table[0][0])[0];
+      let btn = new Button({
+        btnID: title, //prayerTable[0] is the 1st row, and prayerTable[0][0] is the 1st element, which represents the title of the table + the cssClass preceded by "&C="
         label: {
-          AR: prayerTable[0][args.btn.languages.indexOf('AR') + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
-          FR: prayerTable[0][args.btn.languages.indexOf('FR') + 1], //same logic and comment as above
+          AR: table[0][args.languages.indexOf('AR') + 1], //prayerTable[0] is the first row of the Word table from which the text of the prayer was retrieved. The 1st element of each row contains  the title of the prayer (i.e. the title of the table) + the CSS class of the row, preceded by "&C=". We look for the Arabic title by the index of 'AR' in the btn.languages property. We add 1 to the index because the prayerTable[0][0] is the title of the table as mentioned before
+          FR: table[0][args.languages.indexOf('FR') + 1], //same logic and comment as above
         },
-        prayersSequence: [tblTitle], //this gives the title of the table without '&C=*'
-        prayersArray: [[...prayerTable].reverse()], //Notice that we are reversing the order of the array. This is because we are appending the created html element after btnsDiv, we need to start by the last element of prayerTable
-        languages: args.btn.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
+        languages: args.languages, //we keep the languages of the btn since the fraction prayers are retrieved from a table having the same number of columns and same order for the languages
         cssClass: "multipleChoicePrayersBtn",
-        children: (() => {
-          if (args.btn.parentBtn && args.btn.parentBtn.children)
-            return [...args.btn.parentBtn.children];
-        })(), //we give it btn as a child in order to show the buttons tree of btn.parentBtn.children in the leftSideBar menu
-        onClick: (tableTitle) => {
-          let masterBtn: HTMLButtonElement = (
-            Array.from(
-              containerDiv.querySelectorAll("." + inlineBtnClass)
-            ) as HTMLButtonElement[]
-          ).find((child) => child.id === args.masterBtnID);
-          //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
-          hideExpandableButtonsPannel();
-
-          if (masterBtn.dataset.shown) {
-            //If a fraction is already displayed, we will retrieve all its divs (or rows) by their data-root attribute, which  we had is stored as data-displayed-Fraction attribued of the masterBtnDiv
-            Array.from(
-              containerDiv.children as HTMLCollectionOf<HTMLDivElement>
-            )
-              .filter(
-                (div) =>
-                  div.dataset.optionalPrayer &&
-                  div.dataset.optionalPrayer === masterBtn.dataset.shown
-              )
-              .forEach((div) => div.remove());
-          }
-
-          //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
-          let createdElements = showPrayers({
-            table: inlineBtn.prayersArray[0],
-            languages: inlineBtn.languages,
-            container: containerDiv,
-            clearContainerDiv: false,
-            clearRightSideBar: false,
-            position: { el: args.masterBtnDiv, beforeOrAfter: "afterend" },
-          }) || undefined;
-
-          if (!createdElements) return;
-
-          masterBtn.dataset.shown = tableTitle; //After the fraction is inserted, we add data-displayed-optional-Prayer to the masterBtnDiv in order to use it later to retrieve all the rows/divs of the optional prayer that was inserted, and remove them
-
-          createdElements.forEach((htmlRow) => {
-            //We will add to each created element a data-optional-prayer attribute, which we will use to retrieve these elements and delete them when another inline button is clicked
-            if (!htmlRow) return;
-            htmlRow.dataset.optionalPrayer = tableTitle;
-          });
-
-          //We format the grid template of the newly added divs
-          setCSS(createdElements);
-          //We apply the amplification of text
-          applyAmplifiedText(createdElements);
-
-
-          //We scroll to the button
-          createFakeAnchor(args.masterBtnID);
-        },
+        onClick: ()=>btnOnClick(btn, title),
       });
-      return inlineBtn;
+      return btn;
     });
-    return btns;
+
+    if (foreingLanguage)
+      btns
+      .filter(btn=>!btn.label[defaultLanguage] && btn.label[foreingLanguage])//For any button which prayer is not available in the defaultLanguage, but is available in the foreignLanguage, we will set its defaultLanguage label to be equal to its foreignLanguage lable. We do this, because any button that doesn't have a defaulLangauge label will be excluded from the btns array that the function will return
+          .map(btn => {
+            btn.label[defaultLanguage] = btn.label[foreingLanguage];
+            btns.splice(btns.indexOf(btn), 1);//We remove the button from btns array, and will push it to the array later in order to move it to the end
+            return btn
+          })
+        .forEach(btn => btns.push(btn));
+
+    return btns.filter(btn => btn.label[defaultLanguage]);//!We return only the btns having a lable in the defaultLanguage
+    
+    function btnOnClick(btn:Button, title: string){
+      let table = findTable(title, getTablesArrayFromTitlePrefix(title))|| undefined
+      console.log(title);
+      let container = document.createElement('div');
+      if (!table) return;
+      let masterBtn: HTMLButtonElement = (
+        Array.from(
+          containerDiv.querySelectorAll("." + inlineBtnClass)
+        ) as HTMLButtonElement[]
+      ).find((child) => child.id === args.masterBtnID);
+      //When the prayer button is clicked, we empty and hide the inlineBtnsDiv
+      hideExpandableButtonsPannel();
+
+      let shown = 
+        Array.from(
+          containerDiv.children as HTMLCollectionOf<HTMLDivElement>
+        )
+          .find(
+            (div) =>
+              div.dataset.optionalPrayer &&
+              div.dataset.optionalPrayer === masterBtn.dataset.shown
+        )
+      
+          if(shown) shown.remove();
+      
+      //We call showPrayers and pass inlinBtn to it in order to display the fraction prayer
+      let createdElements = showPrayers({
+        table: table,
+        languages: btn.languages,
+        container: container,
+        clearContainerDiv: false,
+        clearRightSideBar: false,
+      }) || undefined;
+
+      if (!createdElements) return;
+      
+      container.dataset.optionalPrayer = title;
+      masterBtn.dataset.shown = title;
+      args.masterBtnDiv.insertAdjacentElement('afterend', container);
+
+
+      //We format the grid template of the newly added divs
+      setCSS(createdElements);
+      //We apply the amplification of text
+      applyAmplifiedText(createdElements);
+
+
+      //We scroll to the button
+      createFakeAnchor(args.masterBtnID);
+    };
   }
 }
 

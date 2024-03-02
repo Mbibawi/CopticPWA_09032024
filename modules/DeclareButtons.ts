@@ -868,32 +868,25 @@ const btnMassStBasil: Button = new Button({
 
     (function insertCommunionChants() {
       //Inserting the Communion Chants after the Psalm 150
-      let psalm = selectElementsByDataSetValue(
+      let psalm150 = selectElementsByDataSetValue(
         btnDocFragment,
         Prefix.massCommon + "CommunionPsalm150&D=$copticFeasts.AnyDay"
       );
-
-      let filtered: string[][][] = CommunionPrayersArray.filter(
-        (tbl) =>
-          isMultiDatedTitleMatching(tbl[0][0], copticDate) === true ||
-          isMultiDatedTitleMatching(tbl[0][0], Season) === true
-      );
-
-      if (filtered.length === 0)
-        filtered = CommunionPrayersArray.filter(
-          (tbl) =>
-            isMultiDatedTitleMatching(tbl[0][0], copticFeasts.AnyDay) === true
-        );
-
+      let filtered: string[][][]=[];
+      [copticDate, Season, copticFeasts.AnyDay]
+        .forEach(date => {
+        filtered.push(...CommunionPrayersArray.filter(table => isMultiDatedTitleMatching(table[0][0], date)))
+      });
+    
       showMultipleChoicePrayersButton({
-        filteredPrayers: filtered,
-        btn: btn,
+        filteredPrayers: Array.from(new Set(filtered)),
+        languages: btn.languages,
         btnLabels: {
           AR: "مدائح التوزيع",
           FR: "Chants de la communion",
         },
         masterBtnID: "communionChants",
-        anchor: psalm[psalm.length - 1] as HTMLElement,
+        anchor: psalm150[psalm150.length - 1] as HTMLElement,
       });
     })();
   },
@@ -1946,6 +1939,7 @@ const btnBookOfHours: Button = new Button({
   btnID: "btnBookOfHours",
   label: { AR: "الأجبية", FR: "Agpia", EN: "Book of Hours" },
   docFragment: new DocumentFragment(),
+  parentBtn:btnMainMenu,
   showPrayers: true,
   languages: [...prayersLanguages],
   children: [],
@@ -1977,20 +1971,68 @@ const btnBookOfHours: Button = new Button({
     btnBookOfHours.children = [];
 
     (function addAChildButtonForEachHour() {
-      Object.entries(bookOfHours).forEach((entry) => {
-        let hourName = entry[0],
-          btnLabel = entry[1][1];
-        let hourBtn = new Button({
-          btnID: "btn" + hourName,
-          label: btnLabel,
-          languages: btnBookOfHours.languages,
-          showPrayers: true,
-          onClick: (isMass: boolean = false) =>
-            hourBtnOnClick(hourBtn, hourName, isMass),
-          afterShowPrayers: () => hourBtnAfterShowPrayer(btnLabel),
+      (function addHoursBtns(){
+
+        Object.entries(bookOfHours)
+          .forEach((entry) => {
+          let hourName = entry[0],
+            btnLabel = entry[1][1];
+          let hourBtn = new Button({
+            btnID: "btn" + hourName,
+            label: btnLabel,
+            languages: btnBookOfHours.languages,
+            showPrayers: true,
+            parentBtn:btnBookOfHours,
+            onClick: (isMass: boolean = false) =>
+              hourBtnOnClick(hourBtn, hourName, isMass),
+            afterShowPrayers: () => hourBtnAfterShowPrayer(btnLabel),
+          });
+          
+          btnBookOfHours.children.push(hourBtn);
         });
-        btnBookOfHours.children.push(hourBtn);
-      });
+
+      })();
+
+      (function addOtherPrayersBtns() {
+        let otherPrayers = [Prefix.bookOfHours + 'BeforeCommunion&D=$copticFeasts.AnyDay', Prefix.bookOfHours + 'AfterCommunion&D=$copticFeasts.AnyDay'];
+        let otherPrayersBtn = new Button({
+          btnID: 'otherPrayersBtn',
+          label: {
+            AR: 'صلوات أخرى',
+            FR: 'Diverses prières',
+            EN: 'Various Prayers'
+          },
+          children: otherPrayers.map(title => otherPrayerBtn(title))
+        });
+  
+        btnBookOfHours.children.push(otherPrayersBtn);
+        
+    
+        function otherPrayerBtn(title: string):Button {
+          let table = findTable(title, BookOfHoursPrayersArray) || undefined;
+          if (!table) return undefined;
+          return new Button({
+            btnID: "btnOtherPrayer" + otherPrayers.indexOf(title)+1,
+            label: {
+              AR: table[0][btnBookOfHours.languages.indexOf('AR') + 1],
+              FR: table[0][btnBookOfHours.languages.indexOf('FR') + 1]
+            },
+            onClick: () => {
+              setCSS(
+                showPrayers({
+                table: table,
+                languages: btnBookOfHours.languages,
+                container: containerDiv,
+                clearContainerDiv: true,
+                clearRightSideBar: true
+              })||[]);
+              scrollToTop();
+            },
+          });
+        }
+      })();
+
+     
 
       function hourBtnAfterShowPrayer(btnLabel) {
         let children = Array.from(
@@ -2555,39 +2597,27 @@ function showFractionPrayersMasterButton(
   masterBtnID: string,
   prayersArray: string[][][]
 ) {
-  let filtered: Set<string[][]> = new Set();
-
-  if (Number(copticDay) === 29 && ![4, 5, 6].includes(Number(copticMonth)))
-    filterPrayersArray(copticFeasts.Coptic29th, prayersArray, filtered); //We start by adding the fraction of the 29th of each coptic month if we are on the 29th of the month
-  //console.log('filteredSet = ', filtered)
-
-  filterPrayersArray(copticDate, prayersArray, filtered); //we then add the fractions (if any) having the same date as the current copticDate
-
-  filterPrayersArray(Season, prayersArray, filtered); //We then add the fractions (if any) having a date = to the current Season
-
-  filterPrayersArray(copticFeasts.AnyDay, prayersArray, filtered); //We finally add the fractions having as date copticFeasts.AnyDay
-
-  function filterPrayersArray(
-    date: string,
-    prayersArray: string[][][],
-    filtered: Set<string[][]>
-  ) {
-    prayersArray.map((table) => {
-      if (!table) return;
-      if (
-        isMultiDatedTitleMatching(table[0][0], date) === true &&
-        !filtered.has(table)
-      )
-        filtered.add(table);
-    });
-  }
+ 
   showMultipleChoicePrayersButton({
-    filteredPrayers: Array.from(filtered),
-    btn: btn,
+    filteredPrayers: Array.from(filter()),
+    languages: btn.languages,
     btnLabels: label,
     masterBtnID: masterBtnID,
     anchor: anchor,
   });
+
+  function filter():Set<string[][]> {
+    let filtered: string[][][] = [];
+    let dates = [copticDate, Season, copticFeasts.AnyDay];
+
+    if (Number(copticDay) === 29 && ![4, 5, 6].includes(Number(copticMonth))) dates.unshift(copticFeasts.Coptic29th);
+    
+      dates.forEach(date =>
+      filtered.push(...prayersArray.filter(table => isMultiDatedTitleMatching(table[0][0], date)))
+      );
+
+    return new Set(filtered);
+  };
 }
 /**
  * Filters the array containing the gospel text for each liturgie (e.g., Incense Dawn, Vepspers, etc.) and returns the text of the gospel and the psaume. The fil

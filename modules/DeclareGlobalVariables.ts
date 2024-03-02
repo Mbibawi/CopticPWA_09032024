@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-"v5.6.2 (Fixes to Jonah Fast and Jonah Feasts)";
+"v5.6.3 (Added buttons to the Book of Hours, changes to the \"Multiple Choice\" button)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv") as HTMLDivElement;
@@ -258,7 +258,7 @@ const bookOfHours: {
   VeilHour: [number[], typeBtnLabel];
   MidNight1Hour: [number[], typeBtnLabel];
   MidNight2Hour: [number[], typeBtnLabel];
-  MidNight3Hour: [number[], typeBtnLabel];
+  MidNight3Hour: [number[], typeBtnLabel]
 } = {
   //The first element is the array that will be populated with the text tables. The second element is the sequence of the hour's psalms
 
