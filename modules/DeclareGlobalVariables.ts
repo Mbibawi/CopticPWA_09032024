@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.6.6 (Started working on HolyWeek Passover prayers up to GL55 morning)";
+  "v5.6.7 (Fixes to the Great Lent calculation, + some CSS)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv") as HTMLDivElement;
@@ -40,39 +40,39 @@ const toggleDevBtn = document.getElementById("toggleDev") as HTMLButtonElement;
 const expandableBtnsPannel: HTMLElement = document.getElementById(
   "inlineBtnsContainer"
 );
-const ResurrectionDates: [number, string][] = [
-  [2019, "04-28"],
-  [2020, "04-19"],
-  [2021, "05-02"],
-  [2022, "04-24"],
-  [2023, "04-16"],
-  [2024, "05-05"],
-  [2025, "04-20"],
-  [2026, "04-12"],
-  [2027, "05-02"],
-  [2028, "04-16"],
-  [2029, "04-08"],
-  [2030, "04-28"],
-  [2031, "04-13"],
-  [2032, "05-02"],
-  [2033, "04-24"],
-  [2034, "04-09"],
-  [2035, "04-29"],
-  [2036, "04-20"],
-  [2037, "04-05"],
-  [2038, "04-25"],
-  [2039, "04-17"],
-  [2040, "05-06"],
-  [2041, "04-21"],
-  [2042, "04-13"],
-  [2043, "05-03"],
-  [2044, "04-24"],
-  [2045, "04-09"],
-  [2046, "04-29"],
-  [2047, "04-21"],
-  [2048, "04-05"],
-  [2049, "04-25"],
-  [2050, "04-17"],
+const ResurrectionDates: number[][] = [
+  [2019, 4, 28],
+  [2020, 4, 19],
+  [2021, 5, 2],
+  [2022, 4, 24],
+  [2023, 4, 16],
+  [2024, 5, 5],
+  [2025, 4, 20],
+  [2026, 4, 12],
+  [2027, 5, 2],
+  [2028, 4, 16],
+  [2029, 4, 8],
+  [2030, 4, 28],
+  [2031, 4, 13],
+  [2032, 5, 2],
+  [2033, 4, 24],
+  [2034, 4, 9],
+  [2035, 4, 29],
+  [2036, 4, 20],
+  [2037, 4, 5],
+  [2038, 4, 25],
+  [2039, 4, 17],
+  [2040, 5, 6],
+  [2041, 4, 21],
+  [2042, 4, 13],
+  [2043, 5, 3],
+  [2044, 4, 24],
+  [2045, 4, 9],
+  [2046, 4, 29],
+  [2047, 4, 21],
+  [2048, 4, 5],
+  [2049, 4, 25],
+  [2050, 4, 17],
 ]; // these are  the dates of the Ressurection feast got from خدمة الشماس والألحان للمعلم فرج عبد المسيح الطبعة 14 سنة 2019
 
 const copticMonths: { AR: string; FR: string; EN: string }[] = [

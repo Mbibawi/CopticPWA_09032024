@@ -186,14 +186,15 @@ function checkWhichSundayWeAre(day: number, theWeekDay: number = 0): string {
 function checkIfInASpecificSeason(today: Date): string {
   let readingsDate: string;
   //We filter the ResurrectionDates array for the resurrection date for the current year:
-  let resurrectionDate: string = ResurrectionDates.find(
+  let resurrectionDate: number[] = ResurrectionDates.find(
     (date) => date[0] === today.getFullYear()
-  ).join('-');
+  );
 
   //We create a new Date from the selected resurrection date, and will set its hour to UTC 0
-  let resurrection = new Date(resurrectionDate).setHours(0, 0, 0, 0);
+  let resurrection = Date.UTC(resurrectionDate[0],resurrectionDate[1]-1, resurrectionDate[2], 0, 0, 0, 0);
   //We create a new date equal to "today", and will set its hour to 0
-  let todayUTC: number = new Date(today).setHours(0, 0, 0, 0);
+  
+  let todayUTC: number = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate(), 0, 0, 0);
   readingsDate = checkForUnfixedEvent(
     todayUTC, //this is a number reflecting the date of today at UTC 0 hour
     resurrection, //we get a number reflecting the resurrection date at UTC 0 hour
@@ -246,9 +247,14 @@ function checkForUnfixedEvent(
     );
   })();
 
+  (function ifGreatLentPreparation() {
+    if (![57, 56].includes(difference)) return; //the 57th and the 56th days before Resurrection correspond to the Saturday and the Sunday preceding the first day of the Great Lent (which is a Monday = Resurrection - 55 days). The readings of those 2 days are linked to the Great Lent Season.
+    date = Seasons.GreatLent + (58-difference).toString();
+  })();
+
   (function ifGreatLent() {
-    if (difference < 1) return;//If <1 it means we are either during the Pentecostal days, or on the Resurrection day
-    if (difference > 57) return; //if>57, it means the Great Lent did not start
+    if (difference < 1) return;//If <1 it means we are after the Great Lent Preiod (potentially during the Pentecostal days, or on the Resurrection day itself)
+    if (difference > 55) return; //it means we are before the begining of the Great Lent
     //We are during the Great Lent period which counts 56 days from the Saturday preceding the 1st Sunday (which is the begining of the so called "preparation week") until the Resurrection day
     if (copticDate === "1007")
       Season =
@@ -478,9 +484,9 @@ function showDates(
   //Inserting the Gregorian date
   let date: string =
     "Date: " +
-    todayDate.getDate().toString() +
+    todayDate.getDate().toLocaleString() +
     "/" +
-    (todayDate.getMonth() + 1).toLocaleString("en-US") +
+    (todayDate.getMonth() + 1).toString() +
     "/" +
     todayDate.getFullYear().toString();
 
@@ -505,7 +511,7 @@ function showDates(
         return (
           "Day " +
           copticReadingsDate.split(Seasons.GreatLent)[1] +
-          "of the Great Lent"
+          " of the Great Lent"
         );
 
       if (copticReadingsDate.startsWith(Seasons.PentecostalDays))

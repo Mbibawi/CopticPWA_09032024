@@ -1214,11 +1214,11 @@ const btnMassUnBaptised: Button = new Button({
       ...MassPrayersSequences.MassUnbaptized,
     ];
 
-    (function adaptFaybibiAndTayshoury() {
+    (function adaptHallelujahFaybibiAndTayshoury() {
 
-      btnMassUnBaptised.prayersSequence = adaptHallelujaFayBibiAndTayshoury();
+      btnMassUnBaptised.prayersSequence = adaptPrayersSequence();
 
-      function adaptHallelujaFayBibiAndTayshoury(): string[] {
+      function adaptPrayersSequence(): string[] {
         //If we are not during a fast period or we are during a fast period but today is either Saturday or Sunday, or a Lord Feast, we will remove Hallelujah Ge Evmevi and Tishoury, in order to keep Hallelujah Faybibi and Tayshouri
         if (!isFast
           ||
@@ -1298,6 +1298,7 @@ const btnMassUnBaptised: Button = new Button({
 
     (function insertHisFoundationsAndIGodHaveMercy() {
       if (![Seasons.GreatLent, Seasons.JonahFast].includes(Season)) return;//The following only applies during the Great Lent the 3 days of Jonah Fast (not the 4th day) that's why we check if isFast === true
+      if ([6, 0].includes(todayDate.getDay())) return;
 
       let titles: string[] = [
         Prefix.commonPrayer + "WeHaveBeenSavedWithYou&D=$copticFeasts.AnyDay",
@@ -1332,7 +1333,7 @@ const btnMassUnBaptised: Button = new Button({
       Prefix.massCommon + "ReadingsPlaceHolder&D=$copticFeasts.AnyDay"
     )[0]; //this is the html element before which we will insert all the readings and responses
 
-    (function insertIntercessionsHymns() {
+    (function insertIntercessionsHymnsForSeasons() {
       let seasonalIntercessions = MassCommonPrayersArray.filter(
         (table) =>
           table[0][0].includes("ByTheIntercessionOf") &&
@@ -1534,6 +1535,7 @@ const btnMassUnBaptised: Button = new Button({
     })();
 
     (function insertSynaxarium() {
+      if(Season === Seasons.PentecostalDays) return;//We do not read the Synaxarium during the 50 Pentecostal days
       let intro = { ...ReadingsIntrosAndEnds.synaxariumIntro };
       Object.entries(intro)
         .forEach(entry =>
@@ -2484,7 +2486,7 @@ function setGospelPrayersSequence(liturgy: string, isMass: boolean): string[] {
 
   //setting the psalm and gospel responses
   (function setPsalmAndGospelResponses() {
-    if (Number(copticDay) === 29 && [4, 5, 6].includes(Number(copticMonth)))
+      if (Number(copticDay) === 29 && [4, 5, 6].includes(Number(copticMonth)))
       return; //we are on the 29th of any coptic month except Kiahk (because the 29th of kiahk is the nativity feast), and Touba and Amshir (they are excluded because they precede the annonciation)
 
     let PsalmAndGospelResponses = PsalmAndGospelPrayersArray.filter(
@@ -2664,9 +2666,9 @@ async function getGospelReadingAndResponses(args: {
 
 
 
-  if (args.isMass &&
+ /*  if (args.isMass &&
     new Map(JSON.parse(localStorage.showActors)).get("Diacon") === false)
-    return alert("Diacon Prayers are set to hidden, we cannot show the gospel"); //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers
+    return alert("Diacon Prayers are set to hidden, we cannot show the gospel"); //If the user wants to hide the Diacon prayers, we cannot add the gospel because it is anchored to one of the Diacon's prayers */
 
   let anchorDataRoot =
     Prefix.commonPrayer + "GospelIntroduction&D=$copticFeasts.AnyDay";

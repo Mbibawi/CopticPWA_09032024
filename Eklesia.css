@@ -157,7 +157,8 @@ box-shadow: 0px 0px 5px 5px rgb(181, 179, 179), 0px 0px 6px 6px rgba(3, 36, 87, 
   display:none !important;
 }
 .NoActor{
-  background: cornsilk;
+  background-image: linear-gradient(to bottom, rgb(192, 182, 140), rgb(235, 223, 175) );
+  /*background: cornsilk;*/
 }
 .Row {
   display: grid;
@@ -187,8 +188,8 @@ p{
   direction: rtl !important;
   font-family: Amiri;
   font-weight: 100;
-  font-size: calc(var(--fSize)* 3.4cqi);
-  line-height: calc(var(--fSize) *5cqi);
+  font-size: calc(var(--fSize)* 3.3cqw);
+  line-height: calc(var(--fSize) *6cqw);
 }
 
 .AR{
@@ -205,8 +206,8 @@ p{
 {
  grid-area: FR;
  font-family: DCO;
- font-size: calc(var(--fSize)*3cqi);
- line-height: calc(var(--fSize) * 4cqi);
+ font-size: calc(var(--fSize)*3cqw);
+ line-height: calc(var(--fSize) *4.7cqw);
  font-weight: normal;
 }
 
@@ -214,8 +215,8 @@ p{
 {
   grid-area: COP;
   font-family: ArialCoptic;
-  font-size: calc(var(--fSize) * 2.8cqi);
-  line-height: calc(var(--fSize) *4cqi);
+  font-size: calc(var(--fSize) * 2.6cqw);
+  line-height: calc(var(--fSize) *4.6cqw);
   font-stretch: condensed;
 }
 .EN{
@@ -290,6 +291,7 @@ color:white;
 .credentialsDiv{
   font-style: italic;
   font-size: 8pt;
+  color:white
 }
 
 .sign {
@@ -670,7 +672,7 @@ br{
 
 .dateDiv{
   display:grid;
-  grid-template-columns: 33% 24% 38%;
+  grid-template-columns: 32cqw 28cqw 32cqw;
   margin-bottom: 5px;
   width: 98%;
   align-items: top;
@@ -697,6 +699,7 @@ br{
   justify-items: center !important;
   align-self: top;
   justify-self: stretch;
+  margin-top: 2px;
   padding: 3px;
   line-height: 4cqh;
 }
