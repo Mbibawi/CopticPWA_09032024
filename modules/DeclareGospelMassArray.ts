@@ -9851,7 +9851,42 @@ ReadingsArrays.GospelMassArrayFR = [[
     "44 Et celui qui avait été mort sortit, les pieds et les mains attachés par des bandes, et le visage enveloppé d'un linge. Jésus dit aux gens: \"Déliez-le et laissez-le aller!\". Beaucoup de ces Juifs qui étaient venus auprès de Marie et qui avaient vu ce que Jésus avait fait, crurent en lui.",
     "44 And he who had died came out bound hand and foot with graveclothes, and his face was wrapped with a cloth. Jesus said to them, Loose him, and let him go. 45 Then many of the Jews who had come to Mary, and had seen the things Jesus did, believed in Him.",
   ],
-],
+  ],
+  [
+    [
+      Prefix.gospelMass + "Psalm&D=GL55&C=Title",
+      "  مزامير 22: 4-5 و 40: 8",
+      "Psaume (22: 5 & 40: 10)",
+      "",
+    ],
+    
+    [
+    Prefix.same + "&C=NoActor",
+    "\nهيأت قدامى مائدةً مقابل الذين يضايقوننى. الذى أكل خبزى رفع علىّ عقبه. هلليلويا.",
+    "Psaume 22 : 5 et 40 : 10\nTu prépares la table devant moi, devant mes ennemis. Même l'ami, qui avait ma confiance et partageait mon pain, lève le talon contre moi.\nAlléluia !",
+    "Akcob] n~outrapeza m~pam~yo e~bol: m~pem~yo n~nhethojhej m~moi. V/eyouwm m~pawik: aftwoun m~pefyibc e~hr/i e~jwi: a~llhlouia~.",
+    ],
+    ],
+  [
+    [
+      Prefix.gospelMass + "Gospel&D=GL55&C=Title",
+      " متى ( 26: 20–29)",
+      "Matthieu (26: 20-29)",
+      "",
+    ],
+    [
+    Prefix.same + "&C=NoActor",
+    "",
+    "وَلَمَّا كَانَ الْمَسَاءُ اتَّكَأَ مَعَ الاِثْنَيْ عَشَرَ. وَفِيمَا هُمْ يَأْكُلُونَ قَالَ: «الْحَقَّ أَقُولُ لَكُمْ إِنَّ وَاحِداً مِنْكُمْ يُسَلِّمُنِي». فَحَزِنُوا جِدّاً وَابْتَدَأَ كُلُّ وَاحِدٍ مِنْهُمْ يَقُولُ لَهُ: «هَلْ أَنَا هُوَ يَا رَبُّ؟» فَأَجَابَ: «الَّذِي يَغْمِسُ يَدَهُ مَعِي فِي الصَّحْفَةِ هُوَ يُسَلِّمُنِي. إِنَّ ابْنَ الإِنْسَانِ مَاضٍ كَمَا هُوَ مَكْتُوبٌ عَنْهُ وَلَكِنْ وَيْلٌ لِذَلِكَ الرَّجُلِ الَّذِي بِهِ يُسَلَّمُ ابْنُ الإِنْسَانِ. كَانَ خَيْراً لِذَلِكَ الرَّجُلِ لَوْ لَمْ يُولَدْ».",
+    "Le soir venu, il était à table avec les Douze. Et tandis qu’ils mangeaient, il dit : \" En vérité je vous le dis, l'un de vous me livrera. \" Fort attristés, ils se mirent chacun à lui dire : \" Serait-ce moi, Seigneur? «  Il répondit : «Quelqu'un qui a plongé avec moi la main dans le plat, voilà celui qui va me livrer ! Le Fils de l'homme s'en va selon qu'il est écrit de lui ; mais malheur à cet homme-là par qui le Fils de l'homme est livré ! Mieux eût valu pour cet homme-là de ne pas naître ! \"\n",
+    ],
+    [
+    Prefix.same + "&C=NoActor",
+    "",
+    "A son tour, Judas, celui qui allait le livrer, lui demanda : \" Serait-ce moi, Rabbi ? \" - \" Tu l'as dit \", répond Jésus. Or, tandis qu'ils mangeaient, Jésus prit du pain, le bénit, le rompit et le donna aux disciples en disant : \" Prenez, mangez, ceci est mon corps.«  Puis, prenant une coupe, il rendit grâces et la leur donna en disant : \" Buvez-en tous ; car ceci est mon sang, le sang de l'alliance, qui va être répandu pour une multitude en rémission des péchés. Je vous le dis, je ne boirai plus désormais de ce produit de la vigne jusqu'au jour où je le boirai avec vous, nouveau, dans le Royaume de mon Père.\"",
+    "فَسَأَلَ يَهُوذَا مُسَلِّمُهُ: «هَلْ أَنَا هُوَ يَا سَيِّدِي؟» قَالَ لَهُ: «أَنْتَ قُلْتَ». وَفِيمَا هُمْ يَأْكُلُونَ أَخَذَ يَسُوعُ الْخُبْزَ وَبَارَكَ وَكَسَّرَ وَأَعْطَى التَّلاَمِيذَ وَقَالَ: «خُذُوا كُلُوا. هَذَا هُوَ جَسَدِي». وَأَخَذَ الْكَأْسَ وَشَكَرَ وَأَعْطَاهُمْ قَائِلاً: «اشْرَبُوا مِنْهَا كُلُّكُمْ لأَنَّ هَذَا هُوَ دَمِي الَّذِي لِلْعَهْدِ الْجَدِيدِ الَّذِي يُسْفَكُ مِنْ أَجْلِ كَثِيرِينَ لِمَغْفِرَةِ الْخَطَايَا. وَأَقُولُ لَكُمْ: إِنِّي مِنَ الآنَ لاَ أَشْرَبُ مِنْ نِتَاجِ الْكَرْمَةِ هَذَا إِلَى ذَلِكَ الْيَوْمِ حِينَمَا أَشْرَبُهُ مَعَكُمْ جَدِيداً فِي مَلَكُوتِ أَبِي».\n",
+    ],
+    ],
 [
   [
     Prefix.gospelMass + "Psalm&D=GL5&C=Title",

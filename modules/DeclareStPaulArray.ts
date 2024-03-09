@@ -7110,6 +7110,32 @@ ReadingsArrays.StPaulArrayFR = [
   ],
   [
     [
+      Prefix.stPaul + "&D=GL55&C=Title",
+      "كورنثوس الأولى ( 11: 23 الخ)",
+      "1 Corinthiens (11: 23-34)",
+      "",
+    ],
+    [
+      Prefix.same + "&C=NoActor",
+      "لأَنَّنِي تَسَلَّمْتُ مِنَ الرَّبِّ مَا سَلَّمْتُكُمْ أَيْضاً: إِنَّ الرَّبَّ يَسُوعَ فِي اللَّيْلَةِ الَّتِي أُسْلِمَ فِيهَا أَخَذَ خُبْزاً وَشَكَرَ فَكَسَّرَ وَقَالَ: \"خُذُوا كُلُوا هَذَا هُوَ جَسَدِي الْمَكْسُورُ لأَجْلِكُمُ. اصْنَعُوا هَذَا لِذِكْرِي\". كَذَلِكَ الْكَأْسَ أَيْضاً بَعْدَمَا تَعَشَّوْا قَائِلاً: \"هَذِهِ الْكَأْسُ هِيَ الْعَهْدُ الْجَدِيدُ بِدَمِي. اصْنَعُوا هَذَا كُلَّمَا شَرِبْتُمْ لِذِكْرِي\".",
+      "Pour moi, en effet, j'ai reçu du Seigneur ce qu'à mon tour je vous ai transmis : le Seigneur Jésus, la nuit où il était livré, prit du pain et, après avoir rendu grâce, le rompit et dit : « Ceci est mon corps, qui est pour vous ; faites ceci en mémoire de moi ». De même, après le repas, il prit la coupe, en disant : « Cette coupe est la nouvelle Alliance en mon sang ; chaque fois que vous en boirez, faites-le en mémoire de moi ».",
+    "",
+    ],
+    [
+    Prefix.same + "&C=NoActor",
+    "فَإِنَّكُمْ كُلَّمَا أَكَلْتُمْ هَذَا الْخُبْزَ وَشَرِبْتُمْ هَذِهِ الْكَأْسَ تُخْبِرُونَ بِمَوْتِ الرَّبِّ إِلَى أَنْ يَجِيءَ. إِذاً أَيُّ مَنْ أَكَلَ هَذَا الْخُبْزَ أَوْ شَرِبَ كَأْسَ الرَّبِّ بِدُونِ اسْتِحْقَاقٍ يَكُونُ مُجْرِماً فِي جَسَدِ الرَّبِّ وَدَمِهِ. وَلَكِنْ لِيَمْتَحِنِ الإِنْسَانُ نَفْسَهُ وَهَكَذَا يَأْكُلُ مِنَ الْخُبْزِ وَيَشْرَبُ مِنَ الْكَأْسِ. لأَنَّ الَّذِي يَأْكُلُ وَيَشْرَبُ بِدُونِ اسْتِحْقَاقٍ يَأْكُلُ وَيَشْرَبُ دَيْنُونَةً لِنَفْسِهِ غَيْرَ مُمَيِّزٍ جَسَدَ الرَّبِّ. مِنْ أَجْلِ هَذَا فِيكُمْ كَثِيرُونَ ضُعَفَاءُ وَمَرْضَى وَكَثِيرُونَ يَرْقُدُونَ.",
+      "Chaque fois en effet que vous mangez ce pain et que vous buvez cette coupe, vous annoncez la mort du Seigneur, jusqu'à ce qu'il vienne. Ainsi donc, quiconque mange le pain ou boit la coupe du Seigneur indignement aura à répondre du corps et du sang du Seigneur. Que chacun donc s'éprouve soi-même, et qu'ainsi il mange de ce pain et boive de cette coupe ; car celui qui mange et boit, mange et boit sa propre condamnation, s'il ne discerne le Corps. Voilà pourquoi il y a parmi vous beaucoup de malades et d'infirmes, et que bon nombre sont morts.",
+    "",
+    ],
+    [
+    Prefix.same + "&C=NoActor",
+    "لأَنَّنَا لَوْ كُنَّا حَكَمْنَا عَلَى أَنْفُسِنَا لَمَا حُكِمَ عَلَيْنَا وَلَكِنْ إِذْ قَدْ حُكِمَ عَلَيْنَا نُؤَدَّبُ مِنَ الرَّبِّ لِكَيْ لاَ نُدَانَ مَعَ الْعَالَمِ. إِذاً يَا إِخْوَتِي حِينَ تَجْتَمِعُونَ لِلأَكْلِ انْتَظِرُوا بَعْضُكُمْ بَعْضاً. إِنْ كَانَ أَحَدٌ يَجُوعُ فَلْيَأْكُلْ فِي الْبَيْتِ كَيْ لاَ تَجْتَمِعُوا لِلدَّيْنُونَةِ. وَأَمَّا الأُمُورُ الْبَاقِيَةُ فَعِنْدَمَا أَجِيءُ أُرَتِّبُهَا.",
+    "Si nous nous examinions nous-mêmes, nous ne serrions pas jugés. Mais par ses jugements le Seigneur nous corrige, pour que nous ne soyons point condamnés avec le monde. Ainsi donc, mes frères, quand vous vous réunissez pour le Repas, attendez-vous les uns les autres. Si quelqu'un a faim, qu'il mange chez lui, afin de ne pas vous réunir pour votre condamnation. Quant au reste, je le réglerai lors de ma venue.",
+    "",
+    ],
+    ],
+  [
+    [
       Prefix.stPaul + "&D=GL5||GL3rdSunday&C=Title",
       " رِسَالَةِ بُولِسِ الرَسُولِ إلى أَهْلِ رومية(14:19-15:7)",
       "Romains (14: 19 & 15:7)",

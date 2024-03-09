@@ -24,7 +24,7 @@ type typeButton = {
 };
 //CONSTANTS
 const version: string =
-  "v5.6.5 (Started adding Holy Week buttons and prayers)";
+  "v5.6.6 (Started working on HolyWeek Passover prayers up to GL55 morning)";
 const calendarDay: number = 24 * 60 * 60 * 1000; //this is a day in milliseconds
 const containerDiv: HTMLDivElement = document.getElementById(
   "containerDiv") as HTMLDivElement;
@@ -398,7 +398,7 @@ const copticFeasts = {
   Annonciation: "2907",
   EndOfGreatLentFriday: Seasons.GreatLent + " 49",
   LazarusSaturday: Seasons.GreatLent + "50",
-  PalmSunday: Seasons.GreatLent + "8thSunday",
+  PalmSunday: Seasons.GreatLent + "7thSunday",
   HolyMonday: Seasons.GreatLent + "52",
   HolyTuseday: Seasons.GreatLent + "53",
   HolyWednsday: Seasons.GreatLent + "54",
@@ -733,5 +733,5 @@ const PrayersArraysKeys: [string, string, Function][] = [
     () => ReadingsArrays.PropheciesDawnArrayFR,
   ],
   [Prefix.psalmody, "PsalmodyPrayersArray", () => PsalmodyPrayersArray],
-  [Prefix.prayersArray, 'PrayersArray', () => PrayersArrayFR],
+  [Prefix.prayersArray, 'PrayersArrayFR', () => PrayersArrayFR],
 ];

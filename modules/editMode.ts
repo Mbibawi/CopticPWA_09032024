@@ -36,7 +36,10 @@ function startEditingMode(args: {
     //under development : the user will provide a function and the function will be called when he press enter
     else if (args.arrayName === args.select.options[3].innerText)
       return editDayReadings(); //Editing all the readings of ta give Coptic Date
-    else args.tablesArray = editSpecificTable() || [];
+    else {
+      args.arrayName === 'PrayersArray' ? args.arrayName = 'PrayersArrayFR' :  args.arrayName = 'ReadingsArrays.' + args.arrayName + 'FR';
+      args.tablesArray = editSpecificTable() || []
+    };
 
     args.select.selectedIndex = 0;
   } else if (!args.tablesArray) args.tablesArray = editSpecificTable() || []; //If the arrayName and the tableTitle are provided, it means the user wants to edit a specific table
@@ -78,12 +81,15 @@ function startEditingMode(args: {
   }
 
   function editSpecificTable(
-    arrayName: string = args.arrayName
+    arrayName: string = args.arrayName 
   ): string[][][] | void {
+   
+    alert(arrayName);
     if (
       !args.tableTitle && //args.tableTitle was not already provided as argument
       confirm("Do you want to edit a single or specific table(s) in the array?")
     )
+    
       args.tableTitle = prompt(
         'Provide the name of the table you want to edit  (if more than one table, provide the titles separated by ", " '
       );
@@ -96,7 +102,7 @@ function startEditingMode(args: {
         "No tableTitle is provided, do you want to edit the entire tables array?"
       )
     )
-      return eval(arrayName); //If no tableTitle if provided, we will return the entire array
+      return eval(arrayName); //If no tableTitle is provided, we will return the entire array
 
     let titles = args.tableTitle.split(", "); //if tableTitle is a comma separated string, it means there are multiple table titles provided
 
@@ -108,7 +114,7 @@ function startEditingMode(args: {
       (title) =>
         findTable(
           title,
-          args.arrayName ? eval(args.arrayName) : undefined,
+          arrayName ? eval(arrayName) : undefined,
           args.operator || { includes: true }
         ) || undefined
     );
@@ -166,7 +172,7 @@ function showTables(args: {
     titleBase = splitTitle(table[0][0])[0] || "NoTitle";
     prayersArray = getTablesArrayFromTitlePrefix(titleBase);
     PrayersArrays.includes(prayersArray)
-      ? (arrayName = "PrayersArray")
+      ? (arrayName = "PrayersArrayFR")
       : (arrayName = getArrayNameFromArray(prayersArray)); //If the array of tables that includes the table is one of the arrays in the 'PrayersArrays' list, we set the arrayName to 'PrayersArray', or otherwise, we retrieve its name from the PrayersArraysKeys by calling getArrayNameFromArray(prayersArray)
     if (
       !arrayName &&
@@ -715,7 +721,8 @@ function processArrayTextForJsFile(
     //for each string element in row[]
     element = element
       .replaceAll('"', '\\"') //replacing '"" by '\"'
-      .replaceAll("\n", "\\n");
+      .replaceAll("\n", "\\n")
+      .replaceAll("\r", "\\r") ;
 
     if (splitTitle(row[0])[1] === "Title")
       element = element
@@ -919,6 +926,9 @@ function createHtmlElementForPrayerEditingMode(args: {
       getTablesArrayFromTitlePrefix(args.titleBase)
     );
   if (!args.arrayName) return;
+
+  if (args.titleBase.startsWith(Prefix.HolyWeek) && args.arrayName === 'ReadingsArrays.GospelNightArrayFR') args.languagesArray = getLanguages('PrayersArrayFR');
+
 
   let htmlRow: HTMLDivElement,
     p: HTMLParagraphElement,
@@ -1331,14 +1341,15 @@ function getLanguages(arrayName?): string[] {
  * Converts the coptic font of the text in the selected html element, to a unicode font
  * @param {HTMLElement} htmlElement - an editable html element in which the cursor is placed, containing coptic text in a non unicode font, that we need to convert
  */
-function convertCopticFontFromAPI(htmlElement: HTMLElement) {
+async function convertCopticFontFromAPI(htmlElement: HTMLElement, fontFrom?: string) {
+  let text: string;
   const apiURL: string =
     "https://www.copticchurch.net/coptic_language/fonts/convert";
-  let fontFrom: string = prompt("Provide the font", "Coptic1/CS Avva Shenouda");
+  if(!fontFrom) fontFrom = prompt("Provide the font", "Coptic1/CS Avva Shenouda");
 
   while (htmlElement.tagName !== "P" && htmlElement.parentElement)
     htmlElement = htmlElement.parentElement;
-  let text: string = htmlElement.textContent;
+  text = htmlElement.textContent;
   let request = new XMLHttpRequest();
   request.open("POST", apiURL);
   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -1350,19 +1361,24 @@ function convertCopticFontFromAPI(htmlElement: HTMLElement) {
     encodeURI(text)
   );
   request.responseType = "text";
-  request.onload = () => {
-    if (request.status === 200) {
-      let textArea: HTMLElement = new DOMParser()
-        .parseFromString(request.response, "text/html")
-        .getElementsByTagName("textarea")[0];
-      console.log("converted text = ", textArea.innerText);
-      htmlElement.innerText = textArea.innerText;
-      return textArea.innerText;
-    } else {
-      console.log("error status text = ", request.statusText);
-      return request.statusText;
-    }
-  };
+  request.onload = () => {return onLoad()};
+  
+    function onLoad() {
+      if (request.status === 200) {
+        let textArea: HTMLElement = new DOMParser()
+          .parseFromString(request.response, "text/html")
+          .getElementsByTagName("textarea")[0];
+        console.log("converted text = ", textArea.innerText);
+        htmlElement.innerText = textArea.innerText;
+        text = textArea.innerText;
+        return textArea.innerText;
+      } else {
+        console.log("error status text = ", request.statusText);
+        text = 'Failed and got error : ' + request.statusText
+        return request.statusText;
+      }
+  }
+  return text
 }
 
 function goToTableByTitle() {
